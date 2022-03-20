@@ -29,4 +29,4 @@ jobs:
     - name: install firebase
       run: npm i firebase-tools -g  
     - name: deploy
-      run: firebase deploy --token ${{ secrets.FIREBASE_SERVICE_ACCOUNT_QUICKSTART_1575011705477 }}
+      run: firebase deploy --project quickstart-1575011705477 --token ${{ secrets.FIREBASE_SERVICE_ACCOUNT_QUICKSTART_1575011705477 }}
