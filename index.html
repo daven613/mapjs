@@ -1,0 +1,1043 @@
+<meta charset="UTF-8">
+
+<!-- START SIGMA IMPORTS -->
+<script src="./src/sigma.core.js"></script>
+<script src="./src/conrad.js"></script>
+<script src="./src/utils/sigma.utils.js"></script>
+<script src="./src/utils/sigma.polyfills.js"></script>
+<script src="./src/sigma.settings.js"></script>
+<script src="./src/classes/sigma.classes.dispatcher.js"></script>
+<script src="./src/classes/sigma.classes.configurable.js"></script>
+<script src="./src/classes/sigma.classes.graph.js"></script>
+<script src="./src/classes/sigma.classes.camera.js"></script>
+<script src="./src/classes/sigma.classes.quad.js"></script>
+<script src="./src/captors/sigma.captors.mouse.js"></script>
+<script src="./src/captors/sigma.captors.touch.js"></script>
+<script src="./src/renderers/sigma.renderers.canvas.js"></script>
+<script src="./src/renderers/sigma.renderers.webgl.js"></script>
+<script src="./src/renderers/sigma.renderers.svg.js"></script>
+<script src="./src/renderers/sigma.renderers.def.js"></script>
+<script src="./src/renderers/webgl/sigma.webgl.nodes.def.js"></script>
+<script src="./src/renderers/webgl/sigma.webgl.nodes.fast.js"></script>
+<script src="./src/renderers/webgl/sigma.webgl.edges.def.js"></script>
+<script src="./src/renderers/webgl/sigma.webgl.edges.fast.js"></script>
+<script src="./src/renderers/webgl/sigma.webgl.edges.arrow.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.labels.def.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.hovers.def.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.nodes.def.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.edges.def.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.edges.curve.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.edges.arrow.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.edges.curvedArrow.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.edgehovers.def.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.edgehovers.curve.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.edgehovers.arrow.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js"></script>
+<script src="./src/renderers/canvas/sigma.canvas.extremities.def.js"></script>
+<script src="./src/renderers/svg/sigma.svg.utils.js"></script>
+<script src="./src/renderers/svg/sigma.svg.nodes.def.js"></script>
+<script src="./src/renderers/svg/sigma.svg.edges.def.js"></script>
+<script src="./src/renderers/svg/sigma.svg.edges.curve.js"></script>
+<script src="./src/renderers/svg/sigma.svg.labels.def.js"></script>
+<script src="./src/renderers/svg/sigma.svg.hovers.def.js"></script>
+<script src="./src/middlewares/sigma.middlewares.rescale.js"></script>
+<script src="./src/middlewares/sigma.middlewares.copy.js"></script>
+<script src="./src/misc/sigma.misc.animation.js"></script>
+<script src="./src/misc/sigma.misc.bindEvents.js"></script>
+<script src="./src/misc/sigma.misc.bindDOMEvents.js"></script>
+<script src="./src/misc/sigma.misc.drawHovers.js"></script>
+<!-- END SIGMA IMPORTS -->
+
+<script src="./src/plugins/sigma.parsers.json/sigma.parsers.json.js"></script>
+<script src="./src/plugins/sigma.parsers.cypher/sigma.parsers.cypher.js"></script>
+<script src="./src/plugins/sigma.plugins.dragNodes/sigma.plugins.dragNodes.js"></script>
+<script src="./src/plugins/sigma.plugins.animate/sigma.plugins.animate.js"></script>
+<script src="./src/plugins/sigma.plugins.select/sigma.plugins.select.js"></script>
+<script src="./src/plugins/sigma.plugins.keyboard/sigma.plugins.keyboard.js"></script>
+<script src="./src/plugins/sigma.plugins.activeState/sigma.plugins.activeState.js"></script>
+<script src="./src/plugins/sigma.renderers.edgeLabels/settings.js"></script>
+<script src="./src/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.def.js"></script>
+<script src="./src/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.curve.js"></script>
+<script src="./src/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.curvedArrow.js"></script>
+<script src="./src/plugins/sigma.exporters.svg/sigma.exporters.svg.js"></script>
+
+<script src="./src/plugins/sigma.layout.forceAtlas2/worker.js"></script>
+<script src="./src/plugins/sigma.layout.forceAtlas2/supervisor.js"></script>
+<script src="./src/plugins/sigma.layout.forceLink/supervisor.js"></script>
+<script src="./src/plugins/sigma.layout.forceLink/worker.js"></script>
+<script src="./src/plugins/sigma.plugins.filter/sigma.plugins.filter.js"></script>
+<script src="./src/plugins/sigma.plugins.tooltips/sigma.plugins.tooltips.js"></script>
+
+<script src="./src/plugins/sigma.layout.fruchtermanReingold/sigma.layout.fruchtermanReingold.js"></script>
+
+<script src="./src/plugins/sigma.renderers.linkurious/settings.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.labels.def.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.hovers.def.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.nodes.def.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.edges.def.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.edges.curve.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.edges.arrow.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.edges.curvedArrow.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.edgehovers.def.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.edgehovers.curve.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.edgehovers.arrow.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.edgehovers.curvedArrow.js"></script>
+<script src="./src/plugins/sigma.renderers.linkurious/canvas/sigma.canvas.edges.autoCurve.js"></script>
+
+<link rel="stylesheet" href="./js/jquery-ui.css">
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery-ui.js"></script>
+
+<script src="torah2.js"></script>
+<script src="hello-sigma.js"></script>
+<script src="torah_query_funcs.js"></script>
+<script src="create_adjacency_object.js"></script>
+<style>
+
+	kbd {
+		background-color: #e7e7e7;
+		background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+		background-image: linear-gradient(#fefefe, #e7e7e7);
+		background-repeat: repeat-x;
+		display: inline-lsblock;
+		padding: 3px 5px;
+		font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+		line-height: 10px;
+		color: #000;
+		border: 1px solid #cfcfcf;
+		border-radius: 2px;
+	}
+
+	.key.arrow {
+		 font-size: 15px;
+		 font-weight: bold
+	}
+	
+	#div_toggle_keyboard_shortcuts {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 3;
+	}
+	
+	#div_keyboard_shortcuts {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		line-height: 30px;
+		border: 1px solid #ccc;
+		padding: 10px 20px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 13px;
+		z-index: 2;
+	}
+	
+	.alpha60 {
+		/* Fallback for web browsers that doesn't support RGBa */
+		background:rgb(255,255,255);
+		/* For IE8 and below */
+		background: transparent\9;
+		/* RGBa with 0.6 opacity */
+		background:rgba(255,255,255,0.6);
+		/* For IE 5.5 - 7*/
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF,endColorstr=#99FFFFFF);
+		/* For IE 6-7 */
+		zoom: 1;
+	}
+	.alpha60:nth-child(n) {
+		/* Don't use filter for IE 9 (Use RGBa Instead) */
+		filter: none;
+	}
+	
+	#div_connection_info {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		line-height: 30px;
+		border: 1px solid #ccc;
+		padding: 10px 20px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 13px;
+		z-index: 3;
+		max-width: 100%;
+	}
+	
+	#overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		display: none;
+		z-index: 1;
+	}
+	
+	#div_toggle_cypher_query {
+		position: absolute;
+		top: 0;
+		right: 58;
+		z-index: 5;
+	}
+	
+	#div_cypher_query {
+		direction:ltr;
+		position: absolute;
+		top: 0;
+		left: 0;
+		line-height: 30px;
+		border: 1px solid #ccc;
+		padding: 10px 20px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 13px;
+		z-index: 4;
+		width: -moz-calc(100% - 100px);
+		width: -webkit-calc(100% - 100px);
+		width: calc(100% - 100px);
+	}
+	
+	#heb_donate_req{
+		direction:rtl;
+		position: absolute;
+		top: 0;
+		left: 0;
+		line-height: 30px;
+		text-align: center;
+		border: 4px solid red;
+		padding: 10px 20px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 13px;
+		z-index: 15;
+		background-color:#ffff99;
+		width: -moz-calc(100% - 100px);
+		width: -webkit-calc(100% - 100px);
+		width: calc(100% - 100px);
+	}
+	
+	#select_query_type {
+		font-size: 14px;
+	}
+	
+	.ui-autocomplete {
+		font-size: 12px;
+		direction: rtl;
+		width: -moz-calc(100% - 205px);
+		width: -webkit-calc(100% - 205px);
+		width: calc(100% - 205px);
+	}
+	
+	.ui-autocomplete-input {
+		font-size: 14px;
+		width: -moz-calc(100% - 100px);
+		width: -webkit-calc(100% - 100px);
+		width: calc(100% - 100px);
+		direction: rtl;
+	}
+	
+	#select_torah {
+		width: 100px;
+		font-size: 14px;
+	}
+	
+	#select_depth_1 {
+		font-size: 14px;
+	}
+	
+	#select_depth_2 {
+		font-size: 14px;
+	}
+	
+	#button_search {
+		font-size: 14px;
+	}
+	
+	.left {
+		display: inline-block;
+	}
+	
+	#div_status {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border: 1px solid #ccc;
+		padding: 10px 20px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 30px;
+		z-index: 10;
+		display: none;
+	}
+	
+	#div_version {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		color: #cccccc;
+		letter-spacing: 1px;
+		z-index: 5;
+	}
+	
+	#graph-container {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		max-width: 100%;
+	}
+
+	/*Uncomment to remove browser outline on focus*/
+	/*#graph-container:focus {
+		outline: none;
+	}*/
+	
+	th {
+		display: table-cell;
+		vertical-align: top;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+</style>
+
+<div id="heb_donate_req" style="direction:rtl" ;>
+	<h1>התוכנה הזאת ניתנת בחינם לזיכוי הרבים, אבל יש הרבה הוצאות, אנא תרמו בעין יפה</h1>
+	<h1>
+		<p>תרומה מומלצת 100 שקל אם אפשר</p>
+	</h1>
+	<h2>
+		<p>אפשר לתרום דרך אתר paypal.com למשתמש "jakerosen111@gmail.com"</p>
+		<p>או לשלוח אימייל לdaven613@gmail.com</p>
+		<p>או לטלפן ל 054-852-0563</p>
+		<p>יש אפשרות להנצחה</p>
+	</h2>
+	<button type="button" id="button_remove_donate" onclick="hide_heb_donate()">בעזרת ה' אני תורם/תרמתי</button>
+	<button type="button" id="button_remove_donate" onclick="hide_heb_donate()">לא תודה אבל בהצלחה :(</button>
+</div>
+
+<div id="div_toggle_cypher_query"><button type="button" id="button_toggle_cypher_query" onclick="func_toggle_cypher_query()">X</button></div>
+<div id="div_cypher_query" class="alpha60">
+	<div style="display: flex">
+		<select id="select_query_type" onchange="func_change_query_type(value)">
+			<option id="option_advice" value="advice" selected>Get Advice</option>
+			<option id="option_effects" value="effects">Get Effects</option>
+			<option id="option_by_torah" value="by_torah">Search By Torah</option>
+			<option id="option_bechinos" value="bechinos">Get Bechinos</option>
+			<option id="option_connected" value="connected">Get All Connected Topics</option>
+			<option id="option_connect_two" value="connect_two">Connect Two Bechinos</option>
+			<option id="option_likutay" value="likutay">Likutay Halachos Style</option>
+			<option id="option_query" value="query">Raw Query</option>
+		</select>
+		<button type="button" id="button_english" onclick="funk_turn_english()">English</button>
+		<button type="button" id="button_hebrew" onclick="funk_turn_hebrew()">עברית</button>
+	</div>
+	<hr>
+	<div id="div_select_topic_advice"><b id="label_select_topic_advice"> Select Topic: </b><input id="input_topic_advice"></div>
+
+
+	<div id="div_select_topic_effects"><b id="label_select_topic_effects"> Select Topic: </b><input id="input_topic_effects"></div>
+	<div id="div_select_topic_bechinos"><b id="label_select_topic_bechinos"> Select Topic: </b><input id="input_topic_bechinos"></div>
+	<div id="div_select_topic_1"><b id="label_select_topic_1"> Select Topic 1: </b><input id="input_topic_1"></div>
+	<div id="div_select_topic_2"><b id="label_select_topic_2"> Select Topic 2: </b><input id="input_topic_2"></div>
+	<div id="div_select_torah"><b id="label_select_torah_num">Select Torah #: </b><select id="select_torah"></select></div>
+
+	<div id="div_select_depth_1"><b id="label_select_depth_1"></b>
+		<select id="select_depth_1">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+		</select>
+	</div>
+	<div id="div_select_depth_2"><b id="label_select_depth_2">Select Depth 2: </b>
+		<select id="select_depth_2">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+		</select>
+	</div>
+	<div id="div_raw_query"><b>Only use this if you know what you are doing!</b><br>Enter Cypher Query<br><textarea id="txt_raw_query"
+		 rows="4" cols="100" style="direction: ltr;"></textarea></div>
+	<div style="padding: 10px 0px;"><button type="button" id="button_search" onclick="func_run_query()">Run Search</button></div>
+
+</div>
+
+<div id="div_connection_info" class="alpha60" style="display:none;direction:rtl;">
+	<table>
+		<tr>
+			<th>מנושא</th>
+			<td>
+				<p id="txt_from_node"></p>
+			</td>
+		</tr>
+		<tr>
+			<th>לנושא</th>
+			<td>
+				<p id="txt_to_node"></p>
+			</td>
+		</tr>
+		<tr>
+			<th>ראיה</th>
+			<td>
+				<p id="txt_proof"></p>
+			</td>
+		</tr>
+		<tr>
+			<th>מקור</th>
+			<td>
+				<p id="txt_reference"></p>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div id="div_status" class="alpha60"></div>
+<div id="div_version">Version 0.6.10</div>
+
+<div id="div_toggle_keyboard_shortcuts"><button type="button" id="button_toggle_keyboard_shortcuts" onclick="func_toggle_keyboard_shortcuts()">X</button></div>
+<div id="div_keyboard_shortcuts" class="alpha60">
+	<div><span class="left"><kbd>&larr;</kbd></span> Move camera left</div>
+	<div><span class="left"><kbd>&uarr;</kbd></span> Move camera up</div>
+	<div><span class="left"><kbd>&rarr;</kbd></span> Move camera right</div>
+	<div><span class="left"><kbd>&darr;</kbd></span> Move camera down</div>
+	<div><span class="left"><kbd>spacebar</kbd> + <kbd>&uarr;</kbd></span> Zoom in</div>
+	<div><span class="left"><kbd>spacebar</kbd> + <kbd>&darr;</kbd></span> Zoom out</div>
+</div>
+
+<div id="overlay"></div>
+<div id="graph-container"></div>
+
+<script type="application/javascript">
+
+	var neo4jurl = 'http://localhost:7474'
+	var neo4juser = 'neo4j'
+	var neo4jpassword = '1234'
+	var neo4jcypher = ''
+	var lang_select_topic_1 = ''
+
+	function hide_heb_donate() {
+		//$(heb_donate_req).css("display","none");
+		$(heb_donate_req).slideToggle("slow");//.effects.effect.slide;
+		//$(heb_donate_req).hide()//.effects.effect.slide;
+	}
+
+
+	func_hide('button_english');
+
+	// Run on load
+	func_show_status('Loading...');
+	func_change_query_type(document.getElementById('select_query_type').value);
+
+	// Hide keyboard shortcuts
+	func_toggle_keyboard_shortcuts()
+
+	// Neo4j cypher get topics with advice
+	var arr_topics_advice = [];
+
+	//arr_topics_advice = autofill_advice(torah1);
+	arr_topics_advice = get_autofill_data(torah1, ["eitza"], ["node2_id"])
+
+	// Delete duplacates arr_topics_advice
+	var seen = {};
+	arr_topics_advice = arr_topics_advice.filter(
+		function (item) {
+			return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+		}
+	);
+	// Sort
+	arr_topics_advice.sort();
+	// Add to autocomplete
+	$("#input_topic_advice").autocomplete({
+		source: arr_topics_advice,
+		minLength: 0,
+		// show overlay to prevent sigma from acting on mouse hover and closing the live search dropdown
+		open: function (event, ui) { func_show('overlay'); },
+		close: function (event, ui) { func_hide('overlay'); },
+	});
+	//.bind('focus', function(){ $(this).autocomplete("search"); } );
+
+	// Neo4j cypher get topics with effects
+	var arr_topics_effects = [];
+
+	arr_topics_effects = get_autofill_data(torah1, ["eitza"], ["node1_id"])
+
+	// Dedup arr_topics_effects
+	var seen = {};
+	arr_topics_effects = arr_topics_effects.filter(
+		function (item) {
+			return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+		}
+	);
+	// Sort
+	arr_topics_effects.sort();
+	// Add to autocomplete
+	$("#input_topic_effects").autocomplete({
+		source: arr_topics_effects,
+		minLength: 0,
+		// show overlay to prevent sigma from acting on mouse hover and closing the live search dropdown
+		open: function (event, ui) { func_show('overlay'); },
+		close: function (event, ui) { func_hide('overlay'); },
+	});
+
+
+	// Neo4j cypher get topics with bechinos
+	var arr_topics_bechinos = [];
+	arr_topics_bechinos = get_autofill_data(torah1, ["bechina"], ["node1_id", "node2_id"])
+	// Dedup arr_topics_bechinos
+	var seen = {};
+
+	// Sort
+	arr_topics_bechinos.sort();
+	// Add to autocomplete
+	$("#input_topic_bechinos").autocomplete({
+		source: arr_topics_bechinos,
+		minLength: 0,
+		// show overlay to prevent sigma from acting on mouse hover and closing the live search dropdown
+		open: function (event, ui) { func_show('overlay'); },
+		close: function (event, ui) { func_hide('overlay'); },
+	});
+
+	// Neo4j cypher get topics
+	var arr_topics = [];
+	arr_topics = get_autofill_data(torah1, ["bechina", "eitza"], ["node1_id", "node2_id"])
+	// Sort
+	arr_topics.sort();
+	// Add to autocompletes
+	$("#input_topic_1").autocomplete({
+		source: arr_topics,
+		minLength: 0,
+		// show overlay to prevent sigma from acting on mouse hover and closing the live search dropdown
+		open: function (event, ui) { func_show('overlay'); },
+		close: function (event, ui) { func_hide('overlay'); },
+	});
+	$("#input_topic_2").autocomplete({
+		source: arr_topics,
+		minLength: 0,
+		// show overlay to prevent sigma from acting on mouse hover and closing the live search dropdown
+		open: function (event, ui) { func_show('overlay'); },
+		close: function (event, ui) { func_hide('overlay'); },
+	});
+
+	// Neo4j cypher get torahs
+	var arr_torahs = [];
+	arr_torahs = get_autofill_data(torah1, ["bechina", "eitza"], ['reference'])
+	// Sort
+	arr_torahs.sort(function (a, b) { return a - b });
+	// Add to select
+	arr_torahs.forEach(
+		function (torah) {
+			var z = document.createElement("option");
+			z.setAttribute("value", torah);
+			var t = document.createTextNode(torah);
+			z.appendChild(t);
+			document.getElementById("select_torah").appendChild(z);
+		}
+	);
+	//Instantiate sigma
+	var init_sigma = new sigma({
+		renderer: {
+			container: document.getElementById('graph-container'),
+			type: 'canvas'
+		},
+		settings: {
+			doubleClickEnabled: false,
+			//			autoCurveSortByDirection: true,
+			//			mouseEnabled: false,
+			enableHovering: true,
+			minNodeSize: 1.0,
+			maxNodeSize: 15.0,
+			labelAlignment: 'center',
+			labelThreshold: 2,
+			labelSize: 'fixed',
+			defaultLabelSize: 13,
+			defaultLabelColor: '#000000',
+			minEdgeSize: 0.5,
+			maxEdgeSize: 1.8,
+			enableEdgeHovering: true,
+			//			defaultEdgeHoverColor: '#000',
+			//			edgeHoverColor: 'edge',
+			edgeHoverSizeRatio: 1,
+			edgeHoverExtremities: true,
+			animationsTime: 1500,
+			drawEdgeLabels: true,
+			autoCurveRatio: 2,
+			// 			dragNodeStickiness: 0.01,
+			// 			minArrowSize: 15,
+			// 			drawEdges: true,
+			// 			sideMargin: 2,
+			// 			scalingMode: 'outside',
+			// 			animationsTime: 1000,
+			// 			defaultEdgeLabelSize: 12,
+			// 			edgeLabelSize: 'fixed',
+			// 			edgeLabelThreshold: 2.0,
+		}
+	});
+	var activeState = sigma.plugins.activeState(init_sigma);
+	var dragListener = sigma.plugins.dragNodes(init_sigma, init_sigma.renderers[0], activeState);
+	//var select = sigma.plugins.select(init_sigma, activeState);
+	//var keyboard = sigma.plugins.keyboard(init_sigma, init_sigma.renderers[0]);
+	//select.bindKeyboard(keyboard);
+	// Bind the events
+	init_sigma.bind('clickNode doubleClickNode rightClickNode', function (e) {
+		//console.log(e.type, e.data.node.label, e.data.captor);
+		if (e.type == "clickNode") {
+			func_hide("div_connection_info")
+		}
+	});
+
+	init_sigma.bind('clickEdge doubleClickEdge rightClickEdge', function (e) {
+		//console.log(e.type, e.data.edge, e.data.captor);
+		if (e.type == "clickEdge") {
+			document.getElementById("txt_from_node").innerHTML = e.data.edge.node1_text;
+			document.getElementById("txt_to_node").innerHTML = e.data.edge.node2_text;
+			document.getElementById("txt_proof").innerHTML = e.data.edge.proof;
+			document.getElementById("txt_reference").innerHTML = e.data.edge.reference;
+			func_show("div_connection_info")
+		}
+	});
+
+	init_sigma.bind('clickStage doubleClickStage rightClickStage', function (e) {
+		//console.log(e.type, e.data.captor);
+		if (e.type == "clickStage") {
+			func_hide("div_connection_info");
+		}
+	});
+
+	// 	init_sigma.bind('hovers', function(e) {
+	// 		console.log(e.type, e.data.captor, e.data);
+	// 	});
+
+	var kbd = sigma.plugins.keyboard(init_sigma, init_sigma.renderers[0], {
+		zoomingRatio: 1.3
+	});
+
+	func_hide('div_status');
+
+	// ------- Functions --------
+	function func_center(id) {
+		var e = document.getElementById(id);
+		half_height = document.getElementById(id).offsetHeight / 2;
+		e.style.top = '-moz-calc(50% - ' + half_height + 'px)';
+		e.style.top = '-webkit-calc(50% - ' + half_height + 'px)';
+		e.style.top = 'calc(50% - ' + half_height + 'px)';
+		half_width = document.getElementById(id).offsetWidth / 2;
+		e.style.left = '-moz-calc(50% - ' + half_width + 'px)';
+		e.style.left = '-webkit-calc(50% - ' + half_width + 'px)';
+		e.style.left = 'calc(50% - ' + half_width + 'px)';
+	}
+
+	function func_show(id) {
+		var e = document.getElementById(id);
+		e.style.display = 'block';
+	}
+
+	function func_hide(id) {
+		var e = document.getElementById(id);
+		e.style.display = 'none';
+	}
+
+	function func_show_hide(id) {
+		var e = document.getElementById(id);
+		e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+	}
+
+	function func_escape_chars(string) {
+		return string.toString().replace(/"/g, '\\"').replace(/'/g, "\\'");
+	}
+
+	function func_show_status(text) {
+		document.getElementById('div_status').innerHTML = text;
+		func_show('div_status');
+		func_center('div_status');
+	}
+
+	function func_toggle_cypher_query() {
+		var e = document.getElementById('div_cypher_query');
+		if (e.style.display != 'none') {
+			e.style.display = 'none';
+			document.getElementById('button_toggle_cypher_query').innerHTML = lang_show_cypher_box;
+		} else {
+			e.style.display = '';
+			document.getElementById('button_toggle_cypher_query').innerHTML = 'X';
+		}
+	}
+
+	function func_toggle_keyboard_shortcuts() {
+		var e = document.getElementById('div_keyboard_shortcuts');
+		if (e.style.display != 'none') {
+			e.style.display = 'none';
+			document.getElementById('button_toggle_keyboard_shortcuts').innerHTML = '&#708;';
+		} else {
+			e.style.display = '';
+			document.getElementById('button_toggle_keyboard_shortcuts').innerHTML = 'X';
+		}
+	}
+
+	function func_change_query_type(value) {
+		switch (value) {
+			case "advice":
+				func_show('div_select_topic_advice');
+				func_hide('div_select_topic_effects');
+				func_hide('div_select_topic_bechinos');
+				//func_hide('div_select_topic');
+				func_hide('div_select_topic_1');
+				func_hide('div_select_topic_2');
+				func_hide('div_select_torah');
+				func_hide('div_select_depth_1');
+				func_hide('div_select_depth_2');
+				func_hide('div_raw_query');
+				break;
+			case "effects":
+				func_hide('div_select_topic_advice');
+				func_show('div_select_topic_effects');
+				func_hide('div_select_topic_bechinos');
+				//func_hide('div_select_topic');
+				func_hide('div_select_topic_1');
+				func_hide('div_select_topic_2');
+				func_hide('div_select_torah');
+				func_hide('div_select_depth_1');
+				func_hide('div_select_depth_2');
+				func_hide('div_raw_query');
+				break;
+			case "by_torah":
+				func_hide('div_select_topic_advice');
+				func_hide('div_select_topic_effects');
+				func_hide('div_select_topic_bechinos');
+				//func_hide('div_select_topic');
+				func_hide('div_select_topic_1');
+				func_hide('div_select_topic_2');
+				func_show('div_select_torah');
+				func_hide('div_select_depth_1');
+				func_hide('div_select_depth_2');
+				func_hide('div_raw_query');
+				break;
+			case "bechinos":
+				func_hide('div_select_topic_advice');
+				func_hide('div_select_topic_effects');
+				func_show('div_select_topic_bechinos');
+				//func_hide('div_select_topic');
+				func_hide('div_select_topic_1');
+				func_hide('div_select_topic_2');
+				func_hide('div_select_torah');
+				func_hide('div_select_depth_1');
+				func_hide('div_select_depth_2');
+				func_hide('div_raw_query');
+				break;
+			case "connected":
+				func_hide('div_select_topic_advice');
+				func_hide('div_select_topic_effects');
+				func_hide('div_select_topic_bechinos');
+				//func_show('div_select_topic');
+				func_show('div_select_topic_1');
+				document.getElementById("label_select_topic_1").innerHTML = lang_select_topic;
+				func_hide('div_select_topic_2');
+				func_hide('div_select_torah');
+				func_hide('div_select_depth_1');
+				func_hide('div_select_depth_2');
+				func_hide('div_raw_query');
+				break;
+			case "connect_two":
+				func_hide('div_select_topic_advice');
+				func_hide('div_select_topic_effects');
+				func_hide('div_select_topic_bechinos');
+				func_show('div_select_topic_1');
+				document.getElementById("label_select_topic_1").innerHTML = lang_select_topic_1;
+				func_show('div_select_topic_2');
+				func_hide('div_select_torah');
+				func_show('div_select_depth_1');
+				document.getElementById("label_select_depth_1").innerHTML = lang_select_depth;
+				func_hide('div_select_depth_2');
+				func_hide('div_raw_query');
+				break;
+			case "likutay":
+				func_hide('div_select_topic_advice');
+				func_hide('div_select_topic_effects');
+				func_hide('div_select_topic_bechinos');
+				func_show('div_select_topic_1');
+				document.getElementById("label_select_topic_1").innerHTML = lang_select_topic_1;
+				func_show('div_select_topic_2');
+				func_hide('div_select_torah');
+				func_show('div_select_depth_1');
+				document.getElementById("label_select_depth_1").innerHTML = lang_select_depth_1;
+				func_show('div_select_depth_2');
+				func_hide('div_raw_query');
+				break;
+			case "query":
+				func_hide('div_select_topic_advice');
+				func_hide('div_select_topic_effects');
+				func_hide('div_select_topic_bechinos');
+				func_hide('div_select_topic_1');
+				func_hide('div_select_topic_2');
+				func_hide('div_select_torah');
+				func_hide('div_select_depth_1');
+				func_hide('div_select_depth_2');
+				func_show('div_raw_query');
+				break;
+		}
+	}
+
+	function func_run_query() {
+		init_sigma.graph.clear();
+		init_sigma.refresh();
+		func_show_status('Running Query...'); //מחפש
+		switch (document.getElementById("select_query_type").value) {
+			case "advice":
+				var str_topic = func_escape_chars(document.getElementById("input_topic_advice").value);
+				neo4jcypher = 'match (e1)<-[z1:eitza]-(e2) where e1.name =~ "' + str_topic + '" return *';
+				var gr = query_advice(str_topic, torah1);
+				break;
+			case "effects":
+				var str_topic = func_escape_chars(document.getElementById("input_topic_effects").value);
+				neo4jcypher = 'match (e1)-[z1:eitza]->(e2) where e1.name =~ "' + str_topic + '" return *';
+				var gr = query_effects(str_topic, torah1);
+				break;
+			case "by_torah":
+				var str_torah = func_escape_chars(document.getElementById("select_torah").value);
+				neo4jcypher = 'match (e1)-[z1 {reference:"' + str_torah + '"}]-(e2) return *';
+				var gr = query_by_torah(str_torah, torah1);
+				break;
+			case "bechinos":
+				var str_topic = func_escape_chars(document.getElementById("input_topic_bechinos").value);
+				neo4jcypher = 'match (e1)-[z1:bechina]-(e2) where e1.name =~ "' + str_topic + '" return *';
+				var gr = query_bechinos(str_topic, torah1);
+				break;
+			case "connected":
+				var str_topic = func_escape_chars(document.getElementById("input_topic_1").value);
+				neo4jcypher = 'match (e1)-[z1]-(e2) where e1.name =~ "' + str_topic + '" return *';
+				var gr = query_connected(str_topic, torah1);
+				break;
+			case "connect_two":
+				var str_topic1 = func_escape_chars(document.getElementById("input_topic_1").value);
+				var str_topic2 = func_escape_chars(document.getElementById("input_topic_2").value);
+				var str_depth = func_escape_chars(document.getElementById("select_depth_1").value);
+				neo4jcypher = 'match (e1)-[z1:bechina*0..' + str_depth + ']-(e2) where e1.name =~ "' + str_topic1 + '" AND e2.name =~ "' + str_topic2 + '" return *';
+				var gr = query_connect_two(str_depth,str_topic1,str_topic2, torah1);
+				break;
+			case "likutay":
+				var str_topic1 = func_escape_chars(document.getElementById("input_topic_1").value);
+				var str_topic2 = func_escape_chars(document.getElementById("input_topic_2").value);
+				var str_depth1 = func_escape_chars(document.getElementById("select_depth_1").value);
+				var str_depth2 = func_escape_chars(document.getElementById("select_depth_2").value);
+				neo4jcypher = 'match (e1)-[z1:bechina*0..' + str_depth1 + ']-(a1)-[q1:eitza]->(a2)-[z2:bechina*0..' + str_depth2 + ']-(e2) where e1.name =~ "' + str_topic1 + '" AND e2.name =~ "' + str_topic2 + '" return *'
+				var gr = query_likutay(str_depth1,str_depth1,str_topic1,str_topic2, torah1);
+				break;
+			case "query":
+				neo4jcypher = document.getElementById("txt_raw_query").value;
+				break;
+		}
+
+		document.getElementById("txt_raw_query").value = neo4jcypher
+
+
+		//gr = create_sigma_graph_from_torah_edges(torah1);
+		adj_list = create_adjacency_object(torah1)
+		init_sigma.graph.read(gr)
+		func_customize_graph(init_sigma);
+	}
+
+	function func_customize_graph(s, e) {
+
+		if (e) {
+			func_show_status(e[0]['message']);
+		} else if (s) {
+			// Auto-curve parallel edges:
+			sigma.canvas.edges.autoCurve(s);
+
+			s.graph.nodes().forEach(function (node) {
+				//node.label = node.neo4j_data['name'];
+				node.color = '#6cbef4';
+				//node.border_color = '#000';
+				//node.border_size = 1.0;
+				//node.size = 25.0;
+				//node.fixed = false;
+				switch (document.getElementById("select_query_type").value) {
+					case "advice":
+						var str_topic = func_escape_chars(document.getElementById("input_topic_advice").value);
+						if (node.label == str_topic) {
+							node.color = '#f5963e';
+						}
+						break;
+					case "effects":
+						var str_topic = func_escape_chars(document.getElementById("input_topic_effects").value);
+						if (node.label == str_topic) {
+							node.color = '#f5963e';
+						}
+						break;
+					case "by_torah":
+						var str_torah = func_escape_chars(document.getElementById("select_torah").value);
+						if (node.label == str_torah) {
+							node.color = '#f5963e';
+						}
+						break;
+					case "bechinos":
+						var str_topic = func_escape_chars(document.getElementById("input_topic_bechinos").value);
+						if (node.label == str_topic) {
+							node.color = '#f5963e';
+						}
+						break;
+					case "connected":
+						var str_topic = func_escape_chars(document.getElementById("input_topic_1").value);
+						if (node.label == str_topic) {
+							node.color = '#f5963e';
+						}
+						break;
+					case "connect_two":
+						var str_topic1 = func_escape_chars(document.getElementById("input_topic_1").value);
+						var str_topic2 = func_escape_chars(document.getElementById("input_topic_2").value);
+						if (node.label == str_topic1) {
+							node.color = '#f5963e';
+						}
+						if (node.label == str_topic2) {
+							node.color = '#f5963e';
+						}
+						break;
+					case "likutay":
+						var str_topic1 = func_escape_chars(document.getElementById("input_topic_1").value);
+						var str_topic2 = func_escape_chars(document.getElementById("input_topic_2").value);
+						if (node.label == str_topic1) {
+							node.color = '#f5963e';
+						}
+						if (node.label == str_topic2) {
+							node.color = '#f5963e';
+						}
+						break;
+					case "query":
+						break;
+				}
+			});
+
+			s.graph.edges().forEach(function (edge) {
+				var hebrewTrue = document.getElementById('button_english')
+				if (edge.type == 'bechina' || edge.cc_prev_type == 'bechina') {
+					edge.color = '#4acfc8';
+					edge.size = 2.1;
+					edge.type = 'curve';
+					if (hebrewTrue.style.display == "block") {
+						edge.label = 'בחינה';
+					} else {
+						edge.label = 'Aspect';
+					}
+				}
+				if (edge.type == 'eitza' || edge.cc_prev_type == 'eitza') {
+					//edge.color = '#FF6C7C';
+					edge.color = '#cf4ac8';
+					edge.size = 6.1;
+					edge.type = 'curvedArrow';
+					if (hebrewTrue.style.display == "block") {
+						edge.label = 'עצה';
+					} else {
+						edge.label = 'Advice';
+					}
+				}
+				edge.hover_color = '#000000';
+				//edge.label = edge.neo4j_type;
+			});
+
+			var cam = s.camera;
+			sigma.misc.animation.camera(cam, {
+				ratio: 1.3
+			});
+
+			s.refresh();
+			console.log('Number of nodes :' + s.graph.nodes().length);
+			console.log('Number of edges :' + s.graph.edges().length);
+
+			// Configure the Fruchterman-Reingold algorithm:
+			var frListener = sigma.layouts.fruchtermanReingold.configure(s, {
+				iterations: 500,
+				easing: 'quadraticInOut',
+				duration: 800
+			});
+
+			// Bind the events:
+			frListener.bind('start stop interpolate', function (e) {
+				console.log(e.type);
+				if (e.type == 'stop') {
+					func_hide('div_status');
+				}
+			});
+
+			// Start the Fruchterman-Reingold algorithm:
+			sigma.layouts.fruchtermanReingold.start(s);
+
+		} else {
+			func_show_status('Unspecified Error');
+		}
+	}
+	function funk_turn_hebrew() {
+		lang_select_topic = "בחר נושא"//"Select Topic: "
+		lang_select_topic_1 = "בחר נושא 1"//"Select Topic 1: "
+		lang_select_depth = "בחר עומק"//"Select Depth: "
+		lang_select_depth_1 = "בחר עומק 1"//"Select Depth 1: "
+		lang_show_cypher_box = "גלה חלון חיפוש"//'Show Cypher Query Box &#709;'
+		$(div_cypher_query).css("direction", "rtl");//direction: rtl;
+		$(select_query_type).css("margin-right", "10px");//direction: rtl;
+
+		//set all text to hebrew 
+		$(button_search).html("חפש")
+		$(option_advice).html("קבל עצה")
+		$(option_effects).html("קבל נמשך (מסובב)")
+		$(option_by_torah).html("חפש לפי תורה")
+		$(option_bechinos).html("בחינות")
+		$(option_connected).html("קבל כל הנושאים הקשורים")
+		$(option_connect_two).html("קשר ב' בחינות")
+		$(option_likutay).html("חידושים בסיגנון לקוטי הלכות")
+		$(option_query).html("חפש עם קוד")
+
+		//$(label_select_topic).html("בחר נושא")
+		$(label_select_topic_advice).html("בחר נושא")
+		$(label_select_topic_bechinos).html("בחר נושא")
+		$(label_select_topic_effects).html("בחר נושא")
+		$(label_select_topic_2).html("בחר נושא 2")
+		$(label_select_topic_1).html("בחר נושא 1")
+		$(label_select_torah_num).html("מספר תורה")
+		$(label_select_depth_2).html("בחר עומק 2")
+		func_show('button_english');
+		func_hide('button_hebrew');
+		if (init_sigma.graph.nodes().length > 0) {
+			func_run_query()
+		}
+	}
+
+	function funk_turn_english() {
+		lang_select_topic = "Select Topic:"//"Select Topic: "
+		lang_select_topic_1 = "Select Topic 1:"//"Select Topic 1: "
+		lang_select_depth = "Select Depth:"//"Select Depth: "
+		lang_select_depth_1 = "Select Depth 1:"//"Select Depth 1: "
+		lang_show_cypher_box = "Show Cypher Query Box &#709;"//'Show Cypher Query Box &#709;'
+		$(div_cypher_query).css("direction", "ltr");//direction: rtl;
+		$(select_query_type).css("margin-left", "10px");//direction: rtl;
+
+		//set all text to hebrew 
+		$(button_search).html("Run Search")
+		$(option_advice).html("Get Advice")
+		$(option_effects).html("Get Effects")
+		$(option_by_torah).html("Search By Torah")
+		$(option_bechinos).html("Get Bechinos")
+		$(option_connected).html("Get All Connected Topics")
+		$(option_connect_two).html("Connect Two Bechinos")
+		$(option_likutay).html("Likutay Halachos Style")
+		$(option_query).html("Raw Query")
+
+		//$(label_select_topic).html("בחר נושא")
+		$(label_select_topic_advice).html("Select Topic:")
+		$(label_select_topic_bechinos).html("Select Topic:")
+		$(label_select_topic_effects).html("Select Topic:")
+		$(label_select_topic_2).html("Select Topic 2:")
+		$(label_select_topic_1).html("Select Topic 1:")
+		$(label_select_torah_num).html("Select Torah #:")
+		$(label_select_depth_2).html("Select Depth 2:")
+		func_show('button_hebrew');
+		func_hide('button_english');
+		if (init_sigma.graph.nodes().length > 0) {
+			func_run_query()
+		}
+	}
+</script>
