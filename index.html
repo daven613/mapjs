@@ -268,6 +268,7 @@ function runQuery() {
 
 function buildGraph(edges) {
     var nodes = {};
+    var degrees = {};
 
     // Build nodes from edges
     edges.forEach(function(edge, idx) {
@@ -275,9 +276,9 @@ function buildGraph(edges) {
             nodes[edge.node1_id] = {
                 id: edge.node1_id,
                 label: edge.node1_text || edge.node1_id,
-                x: Math.random() * 100,
-                y: Math.random() * 100,
-                size: 3,
+                x: 0,
+                y: 0,
+                size: 1,
                 color: '#6cbef4'
             };
         }
@@ -286,12 +287,20 @@ function buildGraph(edges) {
             nodes[edge.node2_id] = {
                 id: edge.node2_id,
                 label: edge.node2_text || edge.node2_id,
-                x: Math.random() * 100,
-                y: Math.random() * 100,
-                size: 3,
+                x: 0,
+                y: 0,
+                size: 1,
                 color: '#6cbef4'
             };
         }
+    });
+
+    // Place nodes on a circle so the layout starts evenly spaced
+    var nodeIds = Object.keys(nodes);
+    nodeIds.forEach(function(id, index) {
+        var angle = (2 * Math.PI * index) / nodeIds.length;
+        nodes[id].x = Math.cos(angle);
+        nodes[id].y = Math.sin(angle);
     });
 
     // Add nodes to graph
@@ -315,9 +324,19 @@ function buildGraph(edges) {
                     color: edge.type === 'eitza' ? '#cf4ac8' : '#999',
                     size: 1
                 });
+                degrees[edge.node1_id] = (degrees[edge.node1_id] || 0) + 1;
+                degrees[edge.node2_id] = (degrees[edge.node2_id] || 0) + 1;
             } catch(e) {
                 // Skip duplicate edges
             }
+        }
+    });
+
+    // Scale node sizes based on degree for better visibility
+    Object.keys(degrees).forEach(function(id) {
+        var node = init_sigma.graph.nodes(id);
+        if (node) {
+            node.size = 1 + Math.sqrt(degrees[id]);
         }
     });
 
@@ -326,20 +345,67 @@ function buildGraph(edges) {
 
     // Apply force layout if available
     if (init_sigma.startForceAtlas2) {
+        var useBarnesHut = init_sigma.graph.nodes().length > 50;
         init_sigma.startForceAtlas2({
-            worker: false,
-            barnesHutOptimize: false,
-            gravity: 1,
-            scalingRatio: 10
+            worker: true,
+            barnesHutOptimize: useBarnesHut,
+            barnesHutTheta: 0.8,
+            gravity: 0.6,
+            scalingRatio: 18,
+            slowDown: 4,
+            strongGravityMode: true
         });
 
         setTimeout(function() {
             init_sigma.stopForceAtlas2();
-        }, 2000);
+            fitToScreen();
+        }, Math.min(5000, 1000 + edges.length * 15));
+    } else {
+        fitToScreen();
     }
 
     showStatus('Found ' + Object.keys(nodes).length + ' nodes, ' + edges.length + ' connections');
     setTimeout(() => $('#div_status').hide(), 3000);
+}
+
+function fitToScreen() {
+    if (!init_sigma) return;
+    var graphNodes = init_sigma.graph.nodes();
+    if (!graphNodes.length) return;
+
+    var bounds = graphNodes.reduce(function(acc, node) {
+        acc.minX = Math.min(acc.minX, node.x);
+        acc.maxX = Math.max(acc.maxX, node.x);
+        acc.minY = Math.min(acc.minY, node.y);
+        acc.maxY = Math.max(acc.maxY, node.y);
+        return acc;
+    }, { minX: Infinity, maxX: -Infinity, minY: Infinity, maxY: -Infinity });
+
+    var renderer = init_sigma.renderers[0];
+    var width = renderer.width || renderer.container.offsetWidth;
+    var height = renderer.height || renderer.container.offsetHeight;
+
+    if (!width || !height) return;
+
+    var padding = 40;
+    var sizeX = bounds.maxX - bounds.minX;
+    var sizeY = bounds.maxY - bounds.minY;
+    var ratioX = sizeX ? (sizeX + padding) / width : 1;
+    var ratioY = sizeY ? (sizeY + padding) / height : 1;
+    var ratio = Math.max(ratioX, ratioY);
+
+    var target = {
+        x: (bounds.minX + bounds.maxX) / 2,
+        y: (bounds.minY + bounds.maxY) / 2,
+        ratio: ratio || 1
+    };
+
+    if (sigma.misc && sigma.misc.animation && typeof sigma.misc.animation.camera === 'function') {
+        sigma.misc.animation.camera(init_sigma.camera, target, { duration: 300 });
+    } else {
+        init_sigma.camera.goTo(target);
+    }
+    init_sigma.refresh();
 }
 
 function showStatus(msg) {
