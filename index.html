@@ -28,9 +28,29 @@
     <script src="./js/hello-sigma.js"></script>
 </head>
 <body>
-    <!-- Query Interface -->
-    <div id="div_toggle_cypher_query"><button type="button" onclick="$('#div_cypher_query').toggle()">✕</button></div>
-    <div id="div_cypher_query" class="alpha60 control-panel">
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Graph Container -->
+        <div id="graph-container"></div>
+
+        <!-- Panel Container -->
+        <div class="panel-container" id="panelContainer">
+            <div class="resize-handle" id="resizeHandle"></div>
+
+            <button class="toggle-panel-btn" id="togglePanelBtn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+
+            <div class="panel-tabs">
+                <button class="panel-tab active" id="tab_search" onclick="switchToTab('search')">Search</button>
+                <button class="panel-tab" id="tab_details" onclick="switchToTab('details')">Details</button>
+            </div>
+
+            <!-- Search Panel Content -->
+            <div class="panel-content active" id="searchPanel">
+    <div id="div_cypher_query" class="control-panel">
         <div class="panel-header">
             <div class="panel-title">
                 <h1>Torah Map Explorer</h1>
@@ -99,9 +119,11 @@
             <p class="hint">Tip: Use at least two characters to see smart suggestions.</p>
         </div>
     </div>
+            </div>
 
-    <!-- Connection Info Display -->
-    <div id="div_connection_info" class="alpha60 connection-card" style="display:none;direction:rtl;">
+            <!-- Details Panel Content -->
+            <div class="panel-content" id="detailsPanel">
+    <div id="div_connection_info" class="connection-card" style="direction:rtl;">
         <div class="connection-header">
             <h2>פרטי החיבור</h2>
             <p>Explore the relationship between the selected topics.</p>
@@ -125,12 +147,12 @@
             </div>
         </dl>
     </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Status -->
     <div id="div_status" class="alpha60" style="display:none"></div>
-
-    <!-- Graph Container -->
-    <div id="graph-container"></div>
 
     <script>
 var init_sigma;
@@ -221,12 +243,16 @@ function initSigma() {
             $('#txt_to_node').text(edge.node2_text || '');
             $('#txt_proof').text(edge.proof || '');
             $('#txt_reference').text(edge.reference || '');
+
+            // Show connection info and switch to Details tab
             $('#div_connection_info').show();
+            switchToTab('details');
         });
 
         // Hide info on stage click
         init_sigma.bind('clickStage', function(e) {
-            $('#div_connection_info').hide();
+            // Don't hide the panel, just clear selection
+            // Users can manually switch back to Search tab if needed
         });
 
         console.log('Sigma initialized successfully');
@@ -777,6 +803,8 @@ function toHebrew() {
     $('#select_query_type option[value="cause_effect_path"]').text('מסלול סיבה-תוצאה');
     $('#label_start_node').text('נושא התחלה:');
     $('#label_end_node').text('נושא סיום:');
+    $('#tab_search').text('חיפוש');
+    $('#tab_details').text('פרטים');
     $('#button_english').show();
     $('#button_hebrew').hide();
 }
@@ -792,9 +820,74 @@ function toEnglish() {
     $('#select_query_type option[value="cause_effect_path"]').text('Cause-Effect Path');
     $('#label_start_node').text('Start Node:');
     $('#label_end_node').text('End Node:');
+    $('#tab_search').text('Search');
+    $('#tab_details').text('Details');
     $('#button_hebrew').show();
     $('#button_english').hide();
 }
+
+// ===== Tab Panel Functions =====
+
+// Tab switching
+function switchToTab(tabName) {
+    // Update tab buttons
+    $('.panel-tab').removeClass('active');
+
+    if (tabName === 'search') {
+        $('#tab_search').addClass('active');
+        $('#searchPanel').addClass('active');
+        $('#detailsPanel').removeClass('active');
+    } else if (tabName === 'details') {
+        $('#tab_details').addClass('active');
+        $('#detailsPanel').addClass('active');
+        $('#searchPanel').removeClass('active');
+    }
+}
+
+// Toggle panel collapse/expand
+$(document).ready(function() {
+    $('#togglePanelBtn').click(function() {
+        $('#panelContainer').toggleClass('collapsed');
+    });
+
+    // Resize functionality
+    var isResizing = false;
+    var resizeHandle = $('#resizeHandle');
+    var panelContainer = $('#panelContainer');
+
+    resizeHandle.on('mousedown', function(e) {
+        isResizing = true;
+        resizeHandle.addClass('dragging');
+        $('body').css({
+            'cursor': 'ew-resize',
+            'user-select': 'none'
+        });
+        e.preventDefault();
+    });
+
+    $(document).on('mousemove', function(e) {
+        if (!isResizing) return;
+
+        var containerRect = $('.main-container')[0].getBoundingClientRect();
+        var newWidth = e.clientX - containerRect.left;
+
+        if (newWidth >= 300 && newWidth <= 600) {
+            panelContainer.css('width', newWidth + 'px');
+            $('#togglePanelBtn').css('left', newWidth + 'px');
+        }
+    });
+
+    $(document).on('mouseup', function() {
+        if (isResizing) {
+            isResizing = false;
+            resizeHandle.removeClass('dragging');
+            $('body').css({
+                'cursor': '',
+                'user-select': ''
+            });
+        }
+    });
+});
     </script>
 </body>
 </html>

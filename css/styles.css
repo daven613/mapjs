@@ -422,3 +422,265 @@ th {
     font-weight: bold;
     text-align: center;
 }
+
+/* ===== Tab Panel Layout Styles ===== */
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Graph Container - updated */
+#graph-container {
+    flex: 1;
+    background: radial-gradient(circle at top left, #eff6ff 0%, #e0f2fe 40%, #e2e8f0 100%);
+    position: relative;
+}
+
+/* Panel Container */
+.panel-container {
+    width: 400px;
+    background: white;
+    border-right: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s ease;
+    order: 1;
+}
+
+.panel-container.collapsed {
+    width: 0;
+    border: none;
+}
+
+#graph-container {
+    order: 2;
+}
+
+/* Panel Tabs */
+.panel-tabs {
+    display: flex;
+    background: #f8fafc;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.panel-tab {
+    flex: 1;
+    padding: 14px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.panel-tab:hover {
+    color: #1e293b;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.panel-tab.active {
+    color: #2563eb;
+    background: white;
+}
+
+.panel-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #2563eb;
+}
+
+/* Panel Content */
+.panel-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+    display: none;
+}
+
+.panel-content.active {
+    display: block;
+}
+
+/* Update existing panel styles */
+#div_cypher_query {
+    position: static;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+#div_connection_info {
+    position: static;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: 100%;
+    background: transparent;
+}
+
+/* Toggle Button */
+.toggle-panel-btn {
+    position: fixed;
+    top: 50%;
+    left: 400px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 100px;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    border: none;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 0 16px rgba(37, 99, 235, 0.4);
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.toggle-panel-btn:hover {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    box-shadow: 2px 0 20px rgba(37, 99, 235, 0.6);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.toggle-panel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.toggle-panel-btn svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
+    stroke: white;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.panel-container.collapsed .toggle-panel-btn {
+    left: 0;
+    border-radius: 0 12px 12px 0;
+}
+
+.panel-container.collapsed .toggle-panel-btn svg {
+    transform: rotate(0deg);
+}
+
+/* Add a subtle pulse animation when panel is collapsed */
+.panel-container.collapsed .toggle-panel-btn {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 2px 0 16px rgba(37, 99, 235, 0.4);
+    }
+    50% {
+        box-shadow: 2px 0 24px rgba(37, 99, 235, 0.6);
+    }
+}
+
+/* Resize Handle */
+.resize-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    cursor: ew-resize;
+    background: transparent;
+    transition: background 0.2s ease;
+}
+
+.resize-handle:hover,
+.resize-handle.dragging {
+    background: #2563eb;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .panel-container {
+        width: 100%;
+        height: 50vh;
+        border-right: none;
+        border-bottom: 1px solid #e2e8f0;
+        order: 1;
+    }
+
+    .panel-container.collapsed {
+        height: 0;
+        border: none;
+    }
+
+    #graph-container {
+        order: 2;
+    }
+
+    .toggle-panel-btn {
+        top: 50vh;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 40px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .toggle-panel-btn:hover {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+
+    .toggle-panel-btn:active {
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+
+    .panel-container.collapsed .toggle-panel-btn {
+        top: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 0 0 12px 12px;
+    }
+
+    .panel-container.collapsed .toggle-panel-btn:hover {
+        transform: translateX(-50%) scale(1.05);
+    }
+
+    .panel-container.collapsed .toggle-panel-btn:active {
+        transform: translateX(-50%) scale(0.95);
+    }
+
+    .toggle-panel-btn svg {
+        transform: rotate(-90deg);
+    }
+
+    .panel-container.collapsed .toggle-panel-btn svg {
+        transform: rotate(90deg);
+    }
+
+    .resize-handle {
+        display: none;
+    }
+}
