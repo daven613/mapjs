@@ -37,6 +37,7 @@
                 <option value="by_torah">Search By Torah</option>
                 <option value="bechinos">Get Bechinos</option>
                 <option value="connected">Get All Connected Topics</option>
+                <option value="cause_effect_path">Cause-Effect Path</option>
             </select>
             <button type="button" id="button_hebrew" onclick="toHebrew()">עברית</button>
             <button type="button" id="button_english" onclick="toEnglish()" style="display:none">English</button>
@@ -47,6 +48,10 @@
         <div id="div_select_topic_bechinos" style="display:none"><b>Select Topic:</b> <input id="input_topic_bechinos"></div>
         <div id="div_select_topic_1" style="display:none"><b>Select Topic:</b> <input id="input_topic_1"></div>
         <div id="div_select_torah" style="display:none"><b>Select Torah #:</b> <select id="select_torah"></select></div>
+        <div id="div_select_cause_effect" style="display:none">
+            <b id="label_start_node">Start Node:</b> <input id="input_start_node"><br>
+            <b id="label_end_node">End Node:</b> <input id="input_end_node">
+        </div>
         <div style="padding: 10px 0px;"><button type="button" onclick="runQuery()">Run Search</button></div>
     </div>
 
@@ -95,7 +100,7 @@ $(document).ready(function() {
     console.log('Found', allTopics.length, 'unique topics');
 
     // Setup autocomplete
-    $("#input_topic_advice, #input_topic_effects, #input_topic_bechinos, #input_topic_1").autocomplete({
+    $("#input_topic_advice, #input_topic_effects, #input_topic_bechinos, #input_topic_1, #input_start_node, #input_end_node").autocomplete({
         source: allTopics,
         minLength: 2
     });
@@ -189,8 +194,228 @@ function changeQueryType(type) {
         case 'connected':
             $('#div_select_topic_1').show();
             break;
+        case 'cause_effect_path':
+            $('#div_select_cause_effect').show();
+            break;
     }
     $('div:has(button[onclick="runQuery()"])').show();
+}
+
+function findCauseEffectPaths(startNodeSearch, endNodeSearch, torah1Data) {
+    // Build adjacency list for efficient traversal
+    var adjList = {};
+    var edgeMap = {}; // Map to store actual edge data for reconstruction
+
+    // Initialize adjacency list
+    torah1Data.forEach(function(edge) {
+        if (!adjList[edge.node1_id]) {
+            adjList[edge.node1_id] = { bechina: [], child_eitza: [] };
+        }
+        if (!adjList[edge.node2_id]) {
+            adjList[edge.node2_id] = { bechina: [], child_eitza: [] };
+        }
+
+        // Store edge data for later retrieval
+        var edgeKey = edge.node1_id + '||' + edge.node2_id + '||' + edge.type;
+        edgeMap[edgeKey] = edge;
+
+        if (edge.type === 'bechina') {
+            adjList[edge.node1_id].bechina.push(edge.node2_id);
+            adjList[edge.node2_id].bechina.push(edge.node1_id);
+            // Store reverse edge too
+            edgeMap[edge.node2_id + '||' + edge.node1_id + '||bechina'] = edge;
+        } else if (edge.type === 'eitza') {
+            adjList[edge.node1_id].child_eitza.push(edge.node2_id);
+        }
+    });
+
+    // Find actual node IDs using partial matching
+    var startNodes = Object.keys(adjList).filter(function(nodeId) {
+        return nodeId.includes(startNodeSearch);
+    });
+    var endNodes = Object.keys(adjList).filter(function(nodeId) {
+        return nodeId.includes(endNodeSearch);
+    });
+
+    if (startNodes.length === 0 || endNodes.length === 0) {
+        return { edges: [], startNode: null, endNode: null };
+    }
+
+    console.log('Found', startNodes.length, 'start nodes and', endNodes.length, 'end nodes');
+
+    var allPaths = [];
+    var allStartNodes = [];
+    var allEndNodes = new Set(endNodes);
+
+    // Phase 1: BFS from ALL matching start nodes up to 5 bechina edges to find potential cause nodes
+    var queue = [];
+    var globalVisited = new Map(); // node -> min depth seen
+    var causeNodes = [];
+
+    // Initialize queue with all matching start nodes
+    startNodes.forEach(function(startNode) {
+        queue.push({node: startNode, path: [startNode], depth: 0, visited: new Set([startNode]), startNode: startNode});
+        allStartNodes.push(startNode);
+    });
+
+    while (queue.length > 0) {
+        var current = queue.shift();
+
+        // Create a unique key with start node to allow different paths from different starts
+        var visitKey = current.startNode + '::' + current.node + '::' + current.depth;
+        if (globalVisited.has(visitKey)) {
+            continue;
+        }
+        globalVisited.set(visitKey, true);
+
+        // This node could be a cause if it has eitza connections
+        if (adjList[current.node].child_eitza.length > 0) {
+            causeNodes.push({
+                node: current.node,
+                pathFromStart: current.path,
+                visitedNodes: current.visited,
+                originalStart: current.startNode
+            });
+        }
+
+        // Continue exploring if depth < 5
+        if (current.depth < 5 && adjList[current.node].bechina) {
+            adjList[current.node].bechina.forEach(function(neighbor) {
+                if (!current.visited.has(neighbor)) {
+                    var newVisited = new Set(current.visited);
+                    newVisited.add(neighbor);
+                    queue.push({
+                        node: neighbor,
+                        path: current.path.concat([neighbor]),
+                        depth: current.depth + 1,
+                        visited: newVisited,
+                        startNode: current.startNode
+                    });
+                }
+            });
+        }
+    }
+
+    // Early exit if no cause nodes found
+    if (causeNodes.length === 0) {
+        console.log('No cause nodes found');
+        return { edges: [], startNode: null, endNode: null };
+    }
+
+    // Phase 2: For each cause node, follow eitza edge to effect, then BFS to endNode
+    // Limit cause nodes if there are too many to prevent explosion
+    var maxCauseNodes = 100;
+    if (causeNodes.length > maxCauseNodes) {
+        console.log('Too many cause nodes (' + causeNodes.length + '), limiting to ' + maxCauseNodes);
+        causeNodes = causeNodes.slice(0, maxCauseNodes);
+    }
+
+    causeNodes.forEach(function(causeInfo) {
+        // Early exit if we already found 20 paths
+        if (allPaths.length >= 20) return;
+
+        var causeNode = causeInfo.node;
+
+        // Get all effect nodes from this cause
+        adjList[causeNode].child_eitza.forEach(function(effectNode) {
+            // Skip if effect node was already visited in the path from start
+            if (causeInfo.visitedNodes.has(effectNode)) return;
+
+            // Phase 3: BFS from effect node up to 5 bechina edges to find endNode
+            var queue2 = [{node: effectNode, path: [effectNode], depth: 0, visited: new Set([effectNode])}];
+            var globalVisited2 = new Map();
+
+            while (queue2.length > 0) {
+                var current2 = queue2.shift();
+
+                // Prune if we've seen this node at a lower depth
+                if (globalVisited2.has(current2.node) && globalVisited2.get(current2.node) < current2.depth) {
+                    continue;
+                }
+                globalVisited2.set(current2.node, current2.depth);
+
+                // Check if we reached ANY of the matching end nodes
+                if (allEndNodes.has(current2.node)) {
+                    var fullPath = causeInfo.pathFromStart.concat([effectNode]).concat(current2.path.slice(1));
+                    allPaths.push({
+                        path: fullPath,
+                        causeNode: causeNode,
+                        effectNode: effectNode,
+                        startNode: causeInfo.originalStart,
+                        endNode: current2.node,
+                        length: fullPath.length - 1
+                    });
+                    // Continue exploring to find other end nodes, don't break
+                    continue;
+                }
+
+                // Continue exploring if depth < 5
+                if (current2.depth < 5 && adjList[current2.node].bechina) {
+                    adjList[current2.node].bechina.forEach(function(neighbor) {
+                        // Use Set for O(1) lookups instead of .includes()
+                        if (!current2.visited.has(neighbor) && !causeInfo.visitedNodes.has(neighbor)) {
+                            var newVisited2 = new Set(current2.visited);
+                            newVisited2.add(neighbor);
+                            queue2.push({
+                                node: neighbor,
+                                path: current2.path.concat([neighbor]),
+                                depth: current2.depth + 1,
+                                visited: newVisited2
+                            });
+                        }
+                    });
+                }
+            }
+        });
+    });
+
+    // Sort by length and take top 20
+    allPaths.sort(function(a, b) { return a.length - b.length; });
+    allPaths = allPaths.slice(0, 20);
+
+    // Convert paths to edges for visualization
+    var resultEdges = [];
+    var edgeSet = new Set();
+
+    allPaths.forEach(function(pathInfo) {
+        var path = pathInfo.path;
+        for (var i = 0; i < path.length - 1; i++) {
+            var from = path[i];
+            var to = path[i + 1];
+
+            // Determine edge type
+            var edgeType = (from === pathInfo.causeNode && to === pathInfo.effectNode) ? 'eitza' : 'bechina';
+
+            // Try both directions for the edge
+            var edgeKey1 = from + '||' + to + '||' + edgeType;
+            var edgeKey2 = to + '||' + from + '||' + edgeType;
+
+            var edge = edgeMap[edgeKey1] || edgeMap[edgeKey2];
+            if (edge) {
+                var edgeId = edge.node1_id + '-' + edge.node2_id + '-' + edge.type;
+                if (!edgeSet.has(edgeId)) {
+                    edgeSet.add(edgeId);
+                    resultEdges.push(edge);
+                }
+            }
+        }
+    });
+
+    console.log('Found', allPaths.length, 'cause-effect paths');
+
+    // Collect all unique start and end nodes from found paths
+    var actualStartNodes = new Set();
+    var actualEndNodes = new Set();
+    allPaths.forEach(function(pathInfo) {
+        actualStartNodes.add(pathInfo.startNode);
+        actualEndNodes.add(pathInfo.endNode);
+    });
+
+    return {
+        edges: resultEdges,
+        startNodes: Array.from(actualStartNodes),
+        endNodes: Array.from(actualEndNodes)
+    };
 }
 
 function runQuery() {
@@ -278,6 +503,26 @@ function runQuery() {
                 (item.node2_id && item.node2_id.includes(topic))
             );
             break;
+
+        case 'cause_effect_path':
+            var startNode = $('#input_start_node').val();
+            var endNode = $('#input_end_node').val();
+            if (!startNode || !endNode) {
+                showStatus('Please enter both start and end nodes');
+                return;
+            }
+            var pathResult = findCauseEffectPaths(startNode, endNode, torah1);
+            if (!pathResult || pathResult.edges.length === 0) {
+                showStatus('No cause-effect path found between these nodes');
+                setTimeout(() => $('#div_status').hide(), 3000);
+                return;
+            }
+            // Build graph with highlighted nodes (now arrays)
+            buildGraph(pathResult.edges, {
+                startNodes: pathResult.startNodes,
+                endNodes: pathResult.endNodes
+            });
+            return; // Skip the normal buildGraph call below
     }
 
     console.log('Query returned', results.length, 'results');
@@ -292,9 +537,10 @@ function runQuery() {
     buildGraph(results.slice(0, 150));
 }
 
-function buildGraph(edges) {
+function buildGraph(edges, highlightNodes) {
     var nodes = {};
     var degrees = {};
+    highlightNodes = highlightNodes || {};
 
     // Build nodes from edges
     edges.forEach(function(edge, idx) {
@@ -366,6 +612,26 @@ function buildGraph(edges) {
             node.size = 1 + Math.sqrt(degrees[id]);
         }
     });
+
+    // Apply special highlighting to start/end nodes (after degree scaling)
+    if (highlightNodes.startNodes) {
+        highlightNodes.startNodes.forEach(function(nodeId) {
+            var startNode = init_sigma.graph.nodes(nodeId);
+            if (startNode) {
+                startNode.color = '#00ff00';  // Bright green for start
+                startNode.size = Math.max(startNode.size, 10);  // Ensure it's large
+            }
+        });
+    }
+    if (highlightNodes.endNodes) {
+        highlightNodes.endNodes.forEach(function(nodeId) {
+            var endNode = init_sigma.graph.nodes(nodeId);
+            if (endNode) {
+                endNode.color = '#ff0000';  // Bright red for end
+                endNode.size = Math.max(endNode.size, 10);  // Ensure it's large
+            }
+        });
+    }
 
     // Refresh display
     init_sigma.refresh();
@@ -456,6 +722,9 @@ function toHebrew() {
     $('#select_query_type option[value="by_torah"]').text('חפש לפי תורה');
     $('#select_query_type option[value="bechinos"]').text('בחינות');
     $('#select_query_type option[value="connected"]').text('כל הקשורים');
+    $('#select_query_type option[value="cause_effect_path"]').text('מסלול סיבה-תוצאה');
+    $('#label_start_node').text('נושא התחלה:');
+    $('#label_end_node').text('נושא סיום:');
     $('#button_english').show();
     $('#button_hebrew').hide();
 }
@@ -468,6 +737,9 @@ function toEnglish() {
     $('#select_query_type option[value="by_torah"]').text('Search By Torah');
     $('#select_query_type option[value="bechinos"]').text('Get Bechinos');
     $('#select_query_type option[value="connected"]').text('Get All Connected');
+    $('#select_query_type option[value="cause_effect_path"]').text('Cause-Effect Path');
+    $('#label_start_node').text('Start Node:');
+    $('#label_end_node').text('End Node:');
     $('#button_hebrew').show();
     $('#button_english').hide();
 }
