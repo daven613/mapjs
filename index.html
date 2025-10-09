@@ -134,7 +134,12 @@ function initSigma() {
             defaultEdgeColor: '#999',
             labelThreshold: 4,
             labelSize: 'fixed',
-            defaultLabelSize: 13
+            defaultLabelSize: 13,
+            drawEdges: true,
+            drawEdgeLabels: false,
+            edgesPowRatio: 0.8,
+            edgesArrowSize: 8,
+            minArrowSize: 5
         });
 
         // Enable drag nodes
@@ -195,7 +200,28 @@ function runQuery() {
     }
 
     showStatus('Searching...');
+
+    // Stop any running layout from previous search
+    if (init_sigma.isForceAtlas2Running && init_sigma.isForceAtlas2Running()) {
+        init_sigma.stopForceAtlas2();
+    }
+
+    // Kill the ForceAtlas2 worker to fully reset it
+    if (init_sigma.killForceAtlas2) {
+        init_sigma.killForceAtlas2();
+    }
+
+    // Clear the graph completely
     init_sigma.graph.clear();
+    init_sigma.refresh();
+
+    // Reset camera to default position
+    init_sigma.camera.goTo({
+        x: 0,
+        y: 0,
+        angle: 0,
+        ratio: 1
+    });
 
     var queryType = $('#select_query_type').val();
     var results = [];
@@ -316,6 +342,7 @@ function buildGraph(edges) {
                     id: 'e' + idx,
                     source: edge.node1_id,
                     target: edge.node2_id,
+                    type: edge.type === 'eitza' ? 'arrow' : 'line',
                     // Store all data for click handler
                     node1_text: edge.node1_text,
                     node2_text: edge.node2_text,
@@ -387,11 +414,15 @@ function fitToScreen() {
 
     if (!width || !height) return;
 
-    var padding = 40;
     var sizeX = bounds.maxX - bounds.minX;
     var sizeY = bounds.maxY - bounds.minY;
-    var ratioX = sizeX ? (sizeX + padding) / width : 1;
-    var ratioY = sizeY ? (sizeY + padding) / height : 1;
+
+    // Use proportional padding (20% of viewport on each side = 40% total)
+    var paddingX = width * 0.4;
+    var paddingY = height * 0.4;
+
+    var ratioX = sizeX ? (sizeX + paddingX) / width : 1;
+    var ratioY = sizeY ? (sizeY + paddingY) / height : 1;
     var ratio = Math.max(ratioX, ratioY);
 
     var target = {
