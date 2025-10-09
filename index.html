@@ -347,8 +347,8 @@ function buildGraph(edges) {
     if (init_sigma.startForceAtlas2) {
         var nodeCount = init_sigma.graph.nodes().length;
         var useBarnesHut = nodeCount > 50;
-        var scalingRatio = nodeCount > 150 ? 10 : nodeCount > 75 ? 7 : 5;
-        var gravity = nodeCount > 150 ? 1.2 : 1.8;
+        var scalingRatio = nodeCount > 200 ? 6 : nodeCount > 120 ? 4 : 2.2;
+        var gravity = nodeCount > 200 ? 3 : nodeCount > 120 ? 2.4 : 2.1;
 
         init_sigma.startForceAtlas2({
             worker: true,
@@ -362,11 +362,13 @@ function buildGraph(edges) {
 
         setTimeout(function() {
             init_sigma.stopForceAtlas2();
-            pullClustersTowardCenter(0.75);
+            compressClusters(4, 0.18);
+            pullClustersTowardCenter(0.6);
             fitToScreen();
         }, Math.min(5000, 1000 + edges.length * 15));
     } else {
-        pullClustersTowardCenter(0.75);
+        compressClusters(4, 0.18);
+        pullClustersTowardCenter(0.6);
         fitToScreen();
     }
 
@@ -432,6 +434,94 @@ function pullClustersTowardCenter(strength) {
         node.x = centroid.x + (node.x - centroid.x) * strength;
         node.y = centroid.y + (node.y - centroid.y) * strength;
     });
+
+    init_sigma.refresh();
+}
+
+function compressClusters(iterations, strength) {
+    if (!init_sigma || typeof init_sigma.graph.nodes !== 'function' || typeof init_sigma.graph.edges !== 'function') return;
+    var nodes = init_sigma.graph.nodes();
+    var edges = init_sigma.graph.edges();
+    if (!nodes.length || !edges.length) return;
+
+    var adjacency = {};
+    nodes.forEach(function(node) {
+        adjacency[node.id] = new Set();
+    });
+
+    edges.forEach(function(edge) {
+        if (adjacency[edge.source] && adjacency[edge.target]) {
+            adjacency[edge.source].add(edge.target);
+            adjacency[edge.target].add(edge.source);
+        }
+    });
+
+    var visited = new Set();
+    var components = [];
+
+    nodes.forEach(function(node) {
+        if (visited.has(node.id)) return;
+        var stack = [node.id];
+        var component = [];
+
+        while (stack.length) {
+            var current = stack.pop();
+            if (visited.has(current)) continue;
+            visited.add(current);
+            component.push(current);
+            adjacency[current].forEach(function(neighbor) {
+                if (!visited.has(neighbor)) {
+                    stack.push(neighbor);
+                }
+            });
+        }
+
+        components.push(component);
+    });
+
+    if (components.length <= 1) return;
+
+    var iters = Math.max(1, iterations || 1);
+    var pullStrength = typeof strength === 'number' ? strength : 0.15;
+
+    for (var i = 0; i < iters; i++) {
+        var centroid = nodes.reduce(function(acc, node) {
+            acc.x += node.x;
+            acc.y += node.y;
+            return acc;
+        }, { x: 0, y: 0 });
+
+        centroid.x /= nodes.length;
+        centroid.y /= nodes.length;
+
+        components.forEach(function(component) {
+            var componentCentroid = component.reduce(function(acc, nodeId) {
+                var node = init_sigma.graph.nodes(nodeId);
+                if (node) {
+                    acc.x += node.x;
+                    acc.y += node.y;
+                    acc.count += 1;
+                }
+                return acc;
+            }, { x: 0, y: 0, count: 0 });
+
+            if (!componentCentroid.count) return;
+
+            componentCentroid.x /= componentCentroid.count;
+            componentCentroid.y /= componentCentroid.count;
+
+            var shiftX = (centroid.x - componentCentroid.x) * pullStrength;
+            var shiftY = (centroid.y - componentCentroid.y) * pullStrength;
+
+            component.forEach(function(nodeId) {
+                var node = init_sigma.graph.nodes(nodeId);
+                if (node) {
+                    node.x += shiftX;
+                    node.y += shiftY;
+                }
+            });
+        });
+    }
 
     init_sigma.refresh();
 }
