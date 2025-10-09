@@ -5,6 +5,7 @@
     <title>Torah Map - Fixed</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="./css/styles.css">
 
     <!-- jQuery and jQuery UI -->
@@ -28,9 +29,21 @@
 </head>
 <body>
     <!-- Query Interface -->
-    <div id="div_toggle_cypher_query"><button type="button" onclick="$('#div_cypher_query').toggle()">X</button></div>
-    <div id="div_cypher_query" class="alpha60">
-        <div style="display: flex">
+    <div id="div_toggle_cypher_query"><button type="button" onclick="$('#div_cypher_query').toggle()">✕</button></div>
+    <div id="div_cypher_query" class="alpha60 control-panel">
+        <div class="panel-header">
+            <div class="panel-title">
+                <h1>Torah Map Explorer</h1>
+                <p>Choose a discovery mode, refine your search, and uncover meaningful connections.</p>
+            </div>
+            <div class="language-toggle">
+                <button type="button" id="button_hebrew" class="ghost" onclick="toHebrew()">עברית</button>
+                <button type="button" id="button_english" class="ghost" onclick="toEnglish()" style="display:none">English</button>
+            </div>
+        </div>
+
+        <div class="query-type">
+            <label for="select_query_type">Discovery Mode</label>
             <select id="select_query_type" onchange="changeQueryType(this.value)">
                 <option value="advice" selected>Get Advice</option>
                 <option value="effects">Get Effects</option>
@@ -39,30 +52,78 @@
                 <option value="connected">Get All Connected Topics</option>
                 <option value="cause_effect_path">Cause-Effect Path</option>
             </select>
-            <button type="button" id="button_hebrew" onclick="toHebrew()">עברית</button>
-            <button type="button" id="button_english" onclick="toEnglish()" style="display:none">English</button>
         </div>
-        <hr>
-        <div id="div_select_topic_advice"><b>Select Topic:</b> <input id="input_topic_advice"></div>
-        <div id="div_select_topic_effects" style="display:none"><b>Select Topic:</b> <input id="input_topic_effects"></div>
-        <div id="div_select_topic_bechinos" style="display:none"><b>Select Topic:</b> <input id="input_topic_bechinos"></div>
-        <div id="div_select_topic_1" style="display:none"><b>Select Topic:</b> <input id="input_topic_1"></div>
-        <div id="div_select_torah" style="display:none"><b>Select Torah #:</b> <select id="select_torah"></select></div>
-        <div id="div_select_cause_effect" style="display:none">
-            <b id="label_start_node">Start Node:</b> <input id="input_start_node"><br>
-            <b id="label_end_node">End Node:</b> <input id="input_end_node">
+
+        <div class="query-sections">
+            <div id="div_select_topic_advice" class="query-section active">
+                <label for="input_topic_advice">Select Topic</label>
+                <input id="input_topic_advice" placeholder="Start typing to search topics">
+            </div>
+
+            <div id="div_select_topic_effects" class="query-section">
+                <label for="input_topic_effects">Select Topic</label>
+                <input id="input_topic_effects" placeholder="Start typing to search topics">
+            </div>
+
+            <div id="div_select_topic_bechinos" class="query-section">
+                <label for="input_topic_bechinos">Select Topic</label>
+                <input id="input_topic_bechinos" placeholder="Start typing to search topics">
+            </div>
+
+            <div id="div_select_topic_1" class="query-section">
+                <label for="input_topic_1">Select Topic</label>
+                <input id="input_topic_1" placeholder="Start typing to search topics">
+            </div>
+
+            <div id="div_select_torah" class="query-section">
+                <label for="select_torah">Select Torah #</label>
+                <select id="select_torah"></select>
+            </div>
+
+            <div id="div_select_cause_effect" class="query-section">
+                <div class="field-pair">
+                    <div class="field">
+                        <label for="input_start_node" id="label_start_node">Start Node</label>
+                        <input id="input_start_node" placeholder="Choose where the path begins">
+                    </div>
+                    <div class="field">
+                        <label for="input_end_node" id="label_end_node">End Node</label>
+                        <input id="input_end_node" placeholder="Choose where the path ends">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div style="padding: 10px 0px;"><button type="button" onclick="runQuery()">Run Search</button></div>
+
+        <div class="query-actions">
+            <button type="button" class="primary" onclick="runQuery()">Run Search</button>
+            <p class="hint">Tip: Use at least two characters to see smart suggestions.</p>
+        </div>
     </div>
 
     <!-- Connection Info Display -->
-    <div id="div_connection_info" class="alpha60" style="display:none;direction:rtl;">
-        <table>
-            <tr><th>מנושא</th><td><p id="txt_from_node"></p></td></tr>
-            <tr><th>לנושא</th><td><p id="txt_to_node"></p></td></tr>
-            <tr><th>ראיה</th><td><p id="txt_proof"></p></td></tr>
-            <tr><th>מקור</th><td><p id="txt_reference"></p></td></tr>
-        </table>
+    <div id="div_connection_info" class="alpha60 connection-card" style="display:none;direction:rtl;">
+        <div class="connection-header">
+            <h2>פרטי החיבור</h2>
+            <p>Explore the relationship between the selected topics.</p>
+        </div>
+        <dl class="connection-details">
+            <div>
+                <dt>מנושא</dt>
+                <dd id="txt_from_node"></dd>
+            </div>
+            <div>
+                <dt>לנושא</dt>
+                <dd id="txt_to_node"></dd>
+            </div>
+            <div>
+                <dt>ראיה</dt>
+                <dd id="txt_proof"></dd>
+            </div>
+            <div>
+                <dt>מקור</dt>
+                <dd id="txt_reference"></dd>
+            </div>
+        </dl>
     </div>
 
     <!-- Status -->
@@ -113,6 +174,9 @@ $(document).ready(function() {
 
     // Initialize Sigma
     initSigma();
+
+    // Ensure the correct section is visible
+    changeQueryType($('#select_query_type').val());
 
     console.log('Ready!');
 });
@@ -172,33 +236,21 @@ function initSigma() {
 }
 
 function changeQueryType(type) {
-    // Hide all input divs
-    $('#div_cypher_query > div').hide();
-    $('#div_cypher_query > div:first').show(); // Keep dropdown visible
-    $('hr').show();
+    var sectionMap = {
+        'advice': 'div_select_topic_advice',
+        'effects': 'div_select_topic_effects',
+        'by_torah': 'div_select_torah',
+        'bechinos': 'div_select_topic_bechinos',
+        'connected': 'div_select_topic_1',
+        'cause_effect_path': 'div_select_cause_effect'
+    };
 
-    // Show relevant input
-    switch(type) {
-        case 'advice':
-            $('#div_select_topic_advice').show();
-            break;
-        case 'effects':
-            $('#div_select_topic_effects').show();
-            break;
-        case 'by_torah':
-            $('#div_select_torah').show();
-            break;
-        case 'bechinos':
-            $('#div_select_topic_bechinos').show();
-            break;
-        case 'connected':
-            $('#div_select_topic_1').show();
-            break;
-        case 'cause_effect_path':
-            $('#div_select_cause_effect').show();
-            break;
+    $('.query-section').removeClass('active');
+
+    var targetId = sectionMap[type];
+    if (targetId) {
+        $('#' + targetId).addClass('active');
     }
-    $('div:has(button[onclick="runQuery()"])').show();
 }
 
 function findCauseEffectPaths(startNodeSearch, endNodeSearch, torah1Data) {
