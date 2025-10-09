@@ -186,6 +186,13 @@ kbd {
     right: 0;
     position: absolute;
     max-width: 100%;
+    opacity: 1;
+    transition: opacity 0.35s ease;
+}
+
+#graph-container.graph-loading {
+    opacity: 0;
+    pointer-events: none;
 }
 
 /*Uncomment to remove browser outline on focus*/

@@ -195,7 +195,6 @@ function runQuery() {
     }
 
     showStatus('Searching...');
-    init_sigma.graph.clear();
 
     var queryType = $('#select_query_type').val();
     var results = [];
@@ -261,6 +260,10 @@ function runQuery() {
         setTimeout(() => $('#div_status').hide(), 2000);
         return;
     }
+
+    showStatus('Arranging layout...');
+    setGraphLoading(true);
+    init_sigma.graph.clear();
 
     // Build graph
     buildGraph(results.slice(0, 150));
@@ -365,11 +368,15 @@ function buildGraph(edges) {
             compressClusters(4, 0.18);
             pullClustersTowardCenter(0.6);
             fitToScreen();
+            setTimeout(function() {
+                setGraphLoading(false);
+            }, 100);
         }, Math.min(5000, 1000 + edges.length * 15));
     } else {
         compressClusters(4, 0.18);
         pullClustersTowardCenter(0.6);
         fitToScreen();
+        setGraphLoading(false);
     }
 
     showStatus('Found ' + Object.keys(nodes).length + ' nodes, ' + edges.length + ' connections');
@@ -532,6 +539,16 @@ function showStatus(msg) {
     if (elem) {
         elem.style.top = 'calc(50% - ' + (elem.offsetHeight/2) + 'px)';
         elem.style.left = 'calc(50% - ' + (elem.offsetWidth/2) + 'px)';
+    }
+}
+
+function setGraphLoading(isLoading) {
+    var container = document.getElementById('graph-container');
+    if (!container) return;
+    if (isLoading) {
+        container.classList.add('graph-loading');
+    } else {
+        container.classList.remove('graph-loading');
     }
 }
 
