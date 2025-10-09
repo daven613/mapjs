@@ -345,22 +345,28 @@ function buildGraph(edges) {
 
     // Apply force layout if available
     if (init_sigma.startForceAtlas2) {
-        var useBarnesHut = init_sigma.graph.nodes().length > 50;
+        var nodeCount = init_sigma.graph.nodes().length;
+        var useBarnesHut = nodeCount > 50;
+        var scalingRatio = nodeCount > 150 ? 10 : nodeCount > 75 ? 7 : 5;
+        var gravity = nodeCount > 150 ? 1.2 : 1.8;
+
         init_sigma.startForceAtlas2({
             worker: true,
             barnesHutOptimize: useBarnesHut,
             barnesHutTheta: 0.8,
-            gravity: 0.6,
-            scalingRatio: 18,
-            slowDown: 4,
+            gravity: gravity,
+            scalingRatio: scalingRatio,
+            slowDown: 6,
             strongGravityMode: true
         });
 
         setTimeout(function() {
             init_sigma.stopForceAtlas2();
+            pullClustersTowardCenter(0.75);
             fitToScreen();
         }, Math.min(5000, 1000 + edges.length * 15));
     } else {
+        pullClustersTowardCenter(0.75);
         fitToScreen();
     }
 
@@ -405,6 +411,28 @@ function fitToScreen() {
     } else {
         init_sigma.camera.goTo(target);
     }
+    init_sigma.refresh();
+}
+
+function pullClustersTowardCenter(strength) {
+    if (!init_sigma || typeof strength !== 'number') return;
+    var nodes = init_sigma.graph.nodes();
+    if (!nodes.length) return;
+
+    var centroid = nodes.reduce(function(acc, node) {
+        acc.x += node.x;
+        acc.y += node.y;
+        return acc;
+    }, { x: 0, y: 0 });
+
+    centroid.x /= nodes.length;
+    centroid.y /= nodes.length;
+
+    nodes.forEach(function(node) {
+        node.x = centroid.x + (node.x - centroid.x) * strength;
+        node.y = centroid.y + (node.y - centroid.y) * strength;
+    });
+
     init_sigma.refresh();
 }
 
