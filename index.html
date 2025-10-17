@@ -70,6 +70,7 @@
                 <option value="by_torah">Search By Torah</option>
                 <option value="bechinos">Get Bechinos</option>
                 <option value="connected">Get All Connected Topics</option>
+                <option value="bechina_connections">Bechina Connections</option>
                 <option value="cause_effect_path">Cause-Effect Path</option>
             </select>
         </div>
@@ -93,6 +94,23 @@
             <div id="div_select_topic_1" class="query-section">
                 <label for="input_topic_1">Select Topic</label>
                 <input id="input_topic_1" placeholder="Start typing to search topics">
+            </div>
+
+            <div id="div_select_bechina_connections" class="query-section">
+                <div class="field-pair">
+                    <div class="field">
+                        <label for="input_bechina_start" id="label_bechina_start">Start Bechina</label>
+                        <input id="input_bechina_start" placeholder="Choose the starting bechina">
+                    </div>
+                    <div class="field">
+                        <label for="input_bechina_end" id="label_bechina_end">End Bechina</label>
+                        <input id="input_bechina_end" placeholder="Choose the ending bechina">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="input_node_limit" id="label_node_limit">Maximum Bechinas (default 100)</label>
+                    <input id="input_node_limit" type="number" min="10" max="500" step="10" value="100">
+                </div>
             </div>
 
             <div id="div_select_torah" class="query-section">
@@ -183,7 +201,7 @@ $(document).ready(function() {
     console.log('Found', allTopics.length, 'unique topics');
 
     // Setup autocomplete
-    $("#input_topic_advice, #input_topic_effects, #input_topic_bechinos, #input_topic_1, #input_start_node, #input_end_node").autocomplete({
+    $("#input_topic_advice, #input_topic_effects, #input_topic_bechinos, #input_topic_1, #input_start_node, #input_end_node, #input_bechina_start, #input_bechina_end").autocomplete({
         source: allTopics,
         minLength: 2
     });
@@ -268,6 +286,7 @@ function changeQueryType(type) {
         'by_torah': 'div_select_torah',
         'bechinos': 'div_select_topic_bechinos',
         'connected': 'div_select_topic_1',
+        'bechina_connections': 'div_select_bechina_connections',
         'cause_effect_path': 'div_select_cause_effect'
     };
 
@@ -277,6 +296,180 @@ function changeQueryType(type) {
     if (targetId) {
         $('#' + targetId).addClass('active');
     }
+}
+
+function findBechinaConnections(startQuery, endQuery, torahData, options) {
+    options = options || {};
+    var maxDepth = options.maxDepth || 6;
+    var nodeLimit = options.nodeLimit || 100;
+
+    if (!startQuery || !endQuery) {
+        return { edges: [], nodes: [], startNode: null, endNode: null };
+    }
+
+    var adjacency = {};
+    var edgeLookup = {};
+
+    torahData.forEach(function(edge) {
+        if (edge.type !== 'bechina') {
+            return;
+        }
+        if (!edge.node1_id || !edge.node2_id) {
+            return;
+        }
+
+        if (!adjacency[edge.node1_id]) {
+            adjacency[edge.node1_id] = new Set();
+        }
+        if (!adjacency[edge.node2_id]) {
+            adjacency[edge.node2_id] = new Set();
+        }
+        adjacency[edge.node1_id].add(edge.node2_id);
+        adjacency[edge.node2_id].add(edge.node1_id);
+
+        var keyParts = [edge.node1_id, edge.node2_id].sort();
+        var key = keyParts[0] + '||' + keyParts[1];
+        if (!edgeLookup[key]) {
+            edgeLookup[key] = [];
+        }
+        edgeLookup[key].push(edge);
+    });
+
+    var allNodes = Object.keys(adjacency);
+
+    function matchNode(query) {
+        if (!query) return null;
+        var exact = allNodes.find(function(node) { return node === query; });
+        if (exact) return exact;
+        var lower = query.toLowerCase();
+        var exactInsensitive = allNodes.find(function(node) { return node.toLowerCase() === lower; });
+        if (exactInsensitive) return exactInsensitive;
+        var partial = allNodes.find(function(node) { return node.toLowerCase().includes(lower); });
+        return partial || null;
+    }
+
+    var startNode = matchNode(startQuery);
+    var endNode = matchNode(endQuery);
+
+    if (!startNode || !endNode || startNode === endNode) {
+        return { edges: [], nodes: [], startNode: startNode, endNode: endNode };
+    }
+
+    function bfsDistances(source) {
+        var distances = {};
+        if (!source) {
+            return distances;
+        }
+        var queue = [source];
+        distances[source] = 0;
+
+        while (queue.length > 0) {
+            var current = queue.shift();
+            var depth = distances[current];
+            if (depth >= maxDepth) {
+                continue;
+            }
+            var neighbors = adjacency[current] ? Array.from(adjacency[current]) : [];
+            neighbors.forEach(function(neighbor) {
+                if (distances.hasOwnProperty(neighbor)) {
+                    return;
+                }
+                distances[neighbor] = depth + 1;
+                queue.push(neighbor);
+            });
+        }
+
+        return distances;
+    }
+
+    var distFromStart = bfsDistances(startNode);
+    var distFromEnd = bfsDistances(endNode);
+
+    if (!distFromStart.hasOwnProperty(endNode)) {
+        return { edges: [], nodes: [], startNode: startNode, endNode: endNode };
+    }
+
+    var candidateNodes = [];
+    Object.keys(distFromStart).forEach(function(node) {
+        if (distFromEnd.hasOwnProperty(node) && (distFromStart[node] + distFromEnd[node] <= maxDepth)) {
+            candidateNodes.push(node);
+        }
+    });
+
+    candidateNodes.push(startNode, endNode);
+    candidateNodes = Array.from(new Set(candidateNodes));
+
+    function nodeScore(node) {
+        if (node === startNode || node === endNode) {
+            return -1;
+        }
+        var startScore = distFromStart.hasOwnProperty(node) ? distFromStart[node] : maxDepth + 1;
+        var endScore = distFromEnd.hasOwnProperty(node) ? distFromEnd[node] : maxDepth + 1;
+        return startScore + endScore;
+    }
+
+    candidateNodes.sort(function(a, b) {
+        return nodeScore(a) - nodeScore(b);
+    });
+
+    var allowedNodes = new Set(candidateNodes.slice(0, Math.max(nodeLimit, 10)));
+    allowedNodes.add(startNode);
+    allowedNodes.add(endNode);
+
+    if (allowedNodes.size > nodeLimit) {
+        var removable = Array.from(allowedNodes).filter(function(node) {
+            return node !== startNode && node !== endNode;
+        });
+        removable.sort(function(a, b) {
+            return nodeScore(b) - nodeScore(a);
+        });
+        while (allowedNodes.size > nodeLimit && removable.length > 0) {
+            var toRemove = removable.shift();
+            allowedNodes.delete(toRemove);
+        }
+    }
+
+    var results = [];
+    var seenEdgeIds = new Set();
+
+    Object.keys(edgeLookup).forEach(function(key) {
+        var parts = key.split('||');
+        var nodeA = parts[0];
+        var nodeB = parts[1];
+
+        if (!allowedNodes.has(nodeA) || !allowedNodes.has(nodeB)) {
+            return;
+        }
+
+        var validForPath = false;
+        if (distFromStart.hasOwnProperty(nodeA) && distFromEnd.hasOwnProperty(nodeB) &&
+            (distFromStart[nodeA] + 1 + distFromEnd[nodeB] <= maxDepth)) {
+            validForPath = true;
+        }
+        if (!validForPath && distFromStart.hasOwnProperty(nodeB) && distFromEnd.hasOwnProperty(nodeA) &&
+            (distFromStart[nodeB] + 1 + distFromEnd[nodeA] <= maxDepth)) {
+            validForPath = true;
+        }
+
+        if (!validForPath) {
+            return;
+        }
+
+        edgeLookup[key].forEach(function(edge) {
+            if (!edge || seenEdgeIds.has(edge.id)) {
+                return;
+            }
+            seenEdgeIds.add(edge.id);
+            results.push(edge);
+        });
+    });
+
+    return {
+        edges: results,
+        nodes: Array.from(allowedNodes),
+        startNode: startNode,
+        endNode: endNode
+    };
 }
 
 function findCauseEffectPaths(startNodeSearch, endNodeSearch, torah1Data) {
@@ -582,6 +775,58 @@ function runQuery() {
             );
             break;
 
+        case 'bechina_connections':
+            var startBechina = $('#input_bechina_start').val();
+            var endBechina = $('#input_bechina_end').val();
+            var nodeLimit = parseInt($('#input_node_limit').val(), 10);
+            if (isNaN(nodeLimit) || nodeLimit <= 0) {
+                nodeLimit = 100;
+            }
+            nodeLimit = Math.min(Math.max(nodeLimit, 10), 500);
+
+            if (!startBechina || !endBechina) {
+                showStatus('Please enter both bechinas');
+                return;
+            }
+
+            var bechinaResult = findBechinaConnections(startBechina, endBechina, torah1, {
+                maxDepth: 6,
+                nodeLimit: nodeLimit
+            });
+
+            if (!bechinaResult) {
+                showStatus('No bechina path found within the selected depth');
+                setTimeout(() => $('#div_status').hide(), 3000);
+                return;
+            }
+
+            if (!bechinaResult.startNode || !bechinaResult.endNode) {
+                showStatus('Could not find matching bechinas in the data');
+                setTimeout(() => $('#div_status').hide(), 3000);
+                return;
+            }
+
+            if (bechinaResult.startNode === bechinaResult.endNode) {
+                showStatus('Please choose two different bechinas');
+                setTimeout(() => $('#div_status').hide(), 3000);
+                return;
+            }
+
+            if (bechinaResult.edges.length === 0) {
+                showStatus('No bechina path found within the selected depth');
+                setTimeout(() => $('#div_status').hide(), 3000);
+                return;
+            }
+
+            buildGraph(bechinaResult.edges, {
+                startNodes: [bechinaResult.startNode],
+                endNodes: [bechinaResult.endNode],
+                startColor: '#f5963e',
+                endColor: '#4acfc8',
+                statusMessage: 'Found ' + bechinaResult.nodes.length + ' bechinas and ' + bechinaResult.edges.length + ' connections'
+            });
+            return;
+
         case 'cause_effect_path':
             var startNode = $('#input_start_node').val();
             var endNode = $('#input_end_node').val();
@@ -692,11 +937,14 @@ function buildGraph(edges, highlightNodes) {
     });
 
     // Apply special highlighting to start/end nodes (after degree scaling)
+    var startColor = highlightNodes.startColor || '#00ff00';
+    var endColor = highlightNodes.endColor || '#ff0000';
+
     if (highlightNodes.startNodes) {
         highlightNodes.startNodes.forEach(function(nodeId) {
             var startNode = init_sigma.graph.nodes(nodeId);
             if (startNode) {
-                startNode.color = '#00ff00';  // Bright green for start
+                startNode.color = startColor;
                 startNode.size = Math.max(startNode.size, 10);  // Ensure it's large
             }
         });
@@ -705,7 +953,7 @@ function buildGraph(edges, highlightNodes) {
         highlightNodes.endNodes.forEach(function(nodeId) {
             var endNode = init_sigma.graph.nodes(nodeId);
             if (endNode) {
-                endNode.color = '#ff0000';  // Bright red for end
+                endNode.color = endColor;
                 endNode.size = Math.max(endNode.size, 10);  // Ensure it's large
             }
         });
@@ -735,7 +983,11 @@ function buildGraph(edges, highlightNodes) {
         fitToScreen();
     }
 
-    showStatus('Found ' + Object.keys(nodes).length + ' nodes, ' + edges.length + ' connections');
+    if (highlightNodes.statusMessage) {
+        showStatus(highlightNodes.statusMessage);
+    } else {
+        showStatus('Found ' + Object.keys(nodes).length + ' nodes, ' + edges.length + ' connections');
+    }
     setTimeout(() => $('#div_status').hide(), 3000);
 }
 
@@ -800,9 +1052,13 @@ function toHebrew() {
     $('#select_query_type option[value="by_torah"]').text('חפש לפי תורה');
     $('#select_query_type option[value="bechinos"]').text('בחינות');
     $('#select_query_type option[value="connected"]').text('כל הקשורים');
+    $('#select_query_type option[value="bechina_connections"]').text('חיבורי בחינה');
     $('#select_query_type option[value="cause_effect_path"]').text('מסלול סיבה-תוצאה');
     $('#label_start_node').text('נושא התחלה:');
     $('#label_end_node').text('נושא סיום:');
+    $('#label_bechina_start').text('בחינת התחלה:');
+    $('#label_bechina_end').text('בחינת סיום:');
+    $('#label_node_limit').text('מספר בחינות מקסימלי (ברירת מחדל 100)');
     $('#tab_search').text('חיפוש');
     $('#tab_details').text('פרטים');
     $('#button_english').show();
@@ -817,9 +1073,13 @@ function toEnglish() {
     $('#select_query_type option[value="by_torah"]').text('Search By Torah');
     $('#select_query_type option[value="bechinos"]').text('Get Bechinos');
     $('#select_query_type option[value="connected"]').text('Get All Connected');
+    $('#select_query_type option[value="bechina_connections"]').text('Bechina Connections');
     $('#select_query_type option[value="cause_effect_path"]').text('Cause-Effect Path');
     $('#label_start_node').text('Start Node:');
     $('#label_end_node').text('End Node:');
+    $('#label_bechina_start').text('Start Bechina:');
+    $('#label_bechina_end').text('End Bechina:');
+    $('#label_node_limit').text('Maximum Bechinas (default 100)');
     $('#tab_search').text('Search');
     $('#tab_details').text('Details');
     $('#button_hebrew').show();
