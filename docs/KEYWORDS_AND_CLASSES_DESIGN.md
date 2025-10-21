@@ -28,54 +28,115 @@ Currently, similar concepts are treated as completely separate entities:
 - Torah topics (e.g., "shabbat", "kashrut", "holidays")
 - Support hierarchical classification
 
+## Handling Homonyms: The Critical Challenge
+
+**The Problem:** The same Hebrew word can have completely different meanings:
+- **שנה** = "sleep" (sheina) OR "year" (shana)
+- **אלף** = "letter alef" OR "one thousand" (elef)
+- Words with different vowel marks (nikud) are written the same without vowels
+
+**The Solution:** Use the rich contextual data already in your torah1.js and torah2.js files:
+- **node1_text / node2_text** - Hebrew with vowel marks (שֵׁנָה vs שָׁנָה)
+- **node1_text_en / node2_text_en** - English translations disambiguate meaning
+- **proof** - The source text provides deep context
+- **Connected nodes** - What this concept relates to
+- **Reference number** - Torah source provides additional context
+
 ## Enhanced Data Structure
 
 ### Current Node Structure (Edges)
 ```javascript
 {
     "id": 1.0,
-    "node1_id": "תורה",
-    "node2_id": "להסתכל בהשכל",
-    "node1_text": "תּוֹרָה",
-    "node2_text": "לִזְכּוֹת לְהִסְתַּכֵּל",
-    "node1_text_en": "Torah",
-    "node2_text_en": "To be able to look",
-    "proof": "וְזֶהוּ...",
-    "reference": 1,
+    "node1_id": "שנה",              // Ambiguous: could be sleep or year
+    "node2_id": "חדוש השכל",
+    "node1_text": "שֵׁנָה",          // ✓ With vowels: this is "sleep"
+    "node2_text": "וְחִדּוּשׁ הַשֵּׂכֶל",
+    "node1_text_en": "Sleep",       // ✓ English confirms: sleep, not year
+    "node2_text_en": "Renewal of intellect",
+    "proof": "וְחִדּוּשׁ הַשֵּׂכֶל...הוּא עַל־יְדֵי שֵׁנָה...",  // ✓ Context!
+    "reference": 35,
     "type": "eitza"
 }
 ```
 
-### NEW: Node Metadata Structure
-We will create a separate `node_metadata.json` file to store keywords and classes:
+### NEW: Context-Aware Node Metadata Structure
+
+We will create a separate `node_metadata.json` file to store keywords and classes.
+
+**Two storage approaches to handle homonyms:**
+
+#### Approach 1: Edge-Level Metadata (RECOMMENDED)
+Store metadata per edge occurrence, using the edge ID or combination of node_id + reference:
+
+```javascript
+{
+    "edge_metadata": {
+        // Key: edge ID or "node_id:reference" for precision
+        "שנה:35": {
+            "node_id": "שנה",
+            "reference": 35,
+            "meaning": "sleep",  // Disambiguate the meaning
+            "keywords": ["sleep", "rest", "renewal"],
+            "keywords_he": ["שינה", "מנוחה"],
+            "classes": ["physical-needs", "spiritual-rest"]
+        },
+        "שנה:12": {  // If שנה appeared as "year" in reference 12
+            "node_id": "שנה",
+            "reference": 12,
+            "meaning": "year",
+            "keywords": ["year", "time", "cycle"],
+            "keywords_he": ["שנה", "זמן"],
+            "classes": ["time", "calendar"]
+        }
+    }
+}
+```
+
+#### Approach 2: Node-Level with Sense Variants (Alternative)
+Store at node level but include multiple "senses" for homonyms:
 
 ```javascript
 {
     "nodes": {
-        "תורה": {
+        "שנה": {
+            "senses": [
+                {
+                    "sense_id": "sleep",
+                    "meaning": "Sleep, rest",
+                    "hebrew_form": "שֵׁנָה",
+                    "keywords": ["sleep", "rest", "renewal"],
+                    "keywords_he": ["שינה", "מנוחה"],
+                    "classes": ["physical-needs", "spiritual-rest"],
+                    "references": [35, 54],  // Where this meaning appears
+                    "context": "Physical sleep as spiritual renewal"
+                },
+                {
+                    "sense_id": "year",
+                    "meaning": "Year, annual cycle",
+                    "hebrew_form": "שָׁנָה",
+                    "keywords": ["year", "time", "cycle"],
+                    "keywords_he": ["שנה", "זמן"],
+                    "classes": ["time", "calendar"],
+                    "references": [12, 18],  // Where this meaning appears
+                    "context": "Annual cycle and time periods"
+                }
+            ]
+        },
+        "תורה": {  // Simple case: no homonyms
             "keywords": ["torah", "study", "learning"],
             "keywords_he": ["תורה", "לימוד"],
             "classes": ["spiritual-practice", "mitzvot"],
             "aliases": ["התורה", "תורתינו"],
-            "color": "#4CAF50",  // Optional: visual theming
-            "icon": "📖",         // Optional: emoji icon
             "description": "Torah study and learning",
             "last_modified": "2025-10-21T10:30:00Z"
-        },
-        "תפילה": {
-            "keywords": ["prayer", "tefillah", "davening"],
-            "keywords_he": ["תפילה", "תפלה"],
-            "classes": ["spiritual-practice", "daily-service"],
-            "aliases": ["התפילה"],
-            "description": "Prayer and connection to Hashem"
         }
-        // ... more nodes
     },
     "class_definitions": {
         "spiritual-practice": {
             "label": "Spiritual Practice",
             "label_he": "עבודה רוחנית",
-            "description": "Practices for spiritual growth",
+            "description": "Practices for spiritual development",
             "parent": null,
             "color": "#9C27B0"
         },
@@ -99,6 +160,27 @@ We will create a separate `node_metadata.json` file to store keywords and classe
     }
 }
 ```
+
+### Recommendation: Which Approach to Use?
+
+**Use Approach 1 (Edge-Level Metadata)** for maximum precision:
+
+**Pros:**
+- ✓ Each occurrence can be tagged independently with full context
+- ✓ Simple key structure: `"node_id:reference"` or edge ID
+- ✓ Editor can show the exact proof text and connections for that occurrence
+- ✓ No risk of mixing different meanings
+- ✓ Easy to browse: "שנה in Torah 35" vs "שנה in Torah 54"
+
+**Cons:**
+- More entries in the metadata file (one per edge occurrence)
+- Need to aggregate when searching by keyword
+
+**Use Approach 2 (Senses)** only if:
+- You want a more compact metadata file
+- You're willing to manually group occurrences by meaning
+
+**Recommended:** Start with Approach 1 (edge-level). It matches your data structure perfectly and gives you the most control when tagging with the full context visible.
 
 ## Module Architecture
 
@@ -124,12 +206,13 @@ We will create a separate `node_metadata.json` file to store keywords and classe
 ```javascript
 class KeywordsClassesModule {
     constructor(torahData, metadataPath) {
-        this.torahData = torahData;
+        this.torahData = torahData;  // Array of edges from torah1.js/torah2.js
         this.metadata = null;
         this.metadataPath = metadataPath;
-        this.nodeIndex = new Map(); // node_id -> metadata
-        this.keywordIndex = new Map(); // keyword -> Set(node_ids)
-        this.classIndex = new Map(); // class -> Set(node_ids)
+        this.edgeIndex = new Map(); // "node_id:reference" -> metadata
+        this.keywordIndex = new Map(); // keyword -> Set(edge_keys)
+        this.classIndex = new Map(); // class -> Set(edge_keys)
+        this.nodeOccurrences = new Map(); // node_id -> Array of edge objects
     }
 
     // Load metadata from JSON
@@ -138,41 +221,84 @@ class KeywordsClassesModule {
     // Save metadata to JSON
     async saveMetadata() { }
 
-    // Get metadata for a specific node
-    getNodeMetadata(nodeId) { }
+    // Get all edges (occurrences) for a node_id
+    getNodeOccurrences(nodeId) {
+        // Returns array of edges where node appears
+        // Each edge includes: id, node1_id, node2_id, proof, reference, etc.
+    }
 
-    // Update metadata for a node
-    updateNodeMetadata(nodeId, updates) { }
+    // Get metadata for specific edge occurrence
+    getEdgeMetadata(nodeId, reference) {
+        // Key: "nodeId:reference"
+        // Returns: { keywords, classes, meaning, etc. }
+    }
 
-    // Add keyword to a node
-    addKeyword(nodeId, keyword) { }
+    // Update metadata for a specific edge
+    updateEdgeMetadata(nodeId, reference, updates) {
+        // Updates keywords/classes for this specific occurrence
+    }
 
-    // Remove keyword from a node
-    removeKeyword(nodeId, keyword) { }
+    // Get contextual data for editing (includes proof, connections, etc.)
+    getEdgeContext(nodeId, reference) {
+        // Returns full edge data + current metadata
+        // Used to display context in editor
+    }
 
-    // Add class to a node
-    addClass(nodeId, className) { }
+    // Add keyword to a specific edge
+    addKeywordToEdge(nodeId, reference, keyword) { }
 
-    // Remove class from a node
-    removeClass(nodeId, className) { }
+    // Remove keyword from a specific edge
+    removeKeywordFromEdge(nodeId, reference, keyword) { }
 
-    // Find all nodes with a keyword
-    findNodesByKeyword(keyword) { }
+    // Add class to a specific edge
+    addClassToEdge(nodeId, reference, className) { }
 
-    // Find all nodes in a class
-    findNodesByClass(className) { }
+    // Remove class from a specific edge
+    removeClassFromEdge(nodeId, reference, className) { }
 
-    // Find related nodes (shared keywords/classes)
-    findRelatedNodes(nodeId, options = {}) { }
+    // Find all edges with a keyword
+    findEdgesByKeyword(keyword) {
+        // Returns edges (with full context) that have this keyword
+    }
 
-    // Auto-suggest keywords for a node based on text
-    suggestKeywords(nodeId) { }
+    // Find all edges in a class
+    findEdgesByClass(className) {
+        // Returns edges (with full context) in this class
+    }
+
+    // Find related edges (shared keywords/classes)
+    findRelatedEdges(nodeId, reference, options = {}) {
+        // Find edges with shared keywords or classes
+    }
+
+    // Auto-suggest keywords based on proof text and English translation
+    suggestKeywords(nodeId, reference) {
+        // Extract keywords from node_text_en and proof
+        // Use simple NLP or keyword extraction
+    }
+
+    // Detect homonyms (same node_id, different meanings)
+    detectHomonyms() {
+        // Find node_ids that appear with different English translations
+        // Flag for manual review
+    }
 
     // Build search indices
-    buildIndices() { }
+    buildIndices() {
+        // Build keyword and class indices
+        // Build node occurrence map
+    }
 
-    // Get all unique nodes from torah data
-    extractAllNodes() { }
+    // Extract all unique nodes and their occurrences
+    extractAllNodes() {
+        // Create map of node_id -> array of occurrences
+        // Each occurrence includes full edge data for context
+    }
+
+    // Apply metadata to all occurrences of a node
+    applyToAllOccurrences(nodeId, metadata) {
+        // Bulk apply keywords/classes to all edges with this node_id
+    }
 }
 ```
 
@@ -242,47 +368,93 @@ class KeywordsClassesModule {
 
 ## User Interface Design
 
-### Metadata Editor Modal
+### Metadata Editor Modal (WITH CONTEXT)
+
+The editor MUST show all contextual information from the original data to help disambiguate homonyms (words with multiple meanings):
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│  Edit Node: תּוֹרָה (Torah)                              │
-├─────────────────────────────────────────────────────────┤
-│                                                          │
-│  Node ID: תורה                                           │
-│  Hebrew: תּוֹרָה                                          │
-│  English: Torah                                          │
-│                                                          │
-│  Keywords (English):                                     │
-│  ┌────────────────────────────────────────────────┐     │
-│  │ [torah] [study] [learning] [+Add]              │     │
-│  └────────────────────────────────────────────────┘     │
-│                                                          │
-│  Keywords (Hebrew):                                      │
-│  ┌────────────────────────────────────────────────┐     │
-│  │ [תורה] [לימוד] [+Add]                          │     │
-│  └────────────────────────────────────────────────┘     │
-│                                                          │
-│  Classes:                                                │
-│  ┌────────────────────────────────────────────────┐     │
-│  │ [spiritual-practice] [mitzvot] [+Add]          │     │
-│  └────────────────────────────────────────────────┘     │
-│                                                          │
-│  Aliases (will map to this node):                       │
-│  ┌────────────────────────────────────────────────┐     │
-│  │ [התורה] [תורתינו] [+Add]                       │     │
-│  └────────────────────────────────────────────────┘     │
-│                                                          │
-│  Auto-suggest:                                           │
-│  [ Generate Keywords ] [ Suggest Classes ]              │
-│                                                          │
-│  Related Nodes (sharing keywords):                       │
-│  • תלמוד (Talmud) - shared: study, learning              │
-│  • מצווה (Mitzvah) - shared: mitzvot                     │
-│                                                          │
-│  [Save] [Cancel] [Save & Next]                          │
-└─────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────┐
+│  Edit Node: שנה (Occurrences: 4)                          [1/4]   │
+├───────────────────────────────────────────────────────────────────┤
+│  Context from Torah Data:                                         │
+│  ┌─────────────────────────────────────────────────────────────┐ │
+│  │ Node ID: שנה                                                 │ │
+│  │ Hebrew Text: שֵׁנָה                                           │ │
+│  │ English: Sleep                                               │ │
+│  │                                                              │ │
+│  │ Connected to: חדוש השכל, הינו חדוש הנשמה                     │ │
+│  │    (Renewal of intellect, renewal of the soul)              │ │
+│  │                                                              │ │
+│  │ Proof Text (excerpt):                                        │ │
+│  │ "וְחִדּוּשׁ הַשֵּׂכֶל...הוּא עַל־יְדֵי שֵׁנָה, כַּמּוּבָא        │ │
+│  │  בַּזֹּהַר הַקָּדוֹשׁ...כִּי כְּשֶׁהַמֹּחִין מִתְיַגְּעִים,        │ │
+│  │  אָז עַל־יְדֵי הַשֵּׁנָה הֵם מִתְחַדְּשִׁים"                     │ │
+│  │                                                              │ │
+│  │ Reference: Torah 35                                          │
+│  │ Type: eitza (advice)                                         │ │
+│  │                                                              │ │
+│  │ [< Prev Occurrence] [Next Occurrence >]                     │ │
+│  └─────────────────────────────────────────────────────────────┘ │
+│                                                                   │
+│  Keywords (English):                                              │
+│  ┌─────────────────────────────────────────────────────────────┐ │
+│  │ [sleep] [rest] [renewal] [+Add]                              │ │
+│  └─────────────────────────────────────────────────────────────┘ │
+│                                                                   │
+│  Keywords (Hebrew):                                               │
+│  ┌─────────────────────────────────────────────────────────────┐ │
+│  │ [שינה] [מנוחה] [+Add]                                        │ │
+│  └─────────────────────────────────────────────────────────────┘ │
+│                                                                   │
+│  Classes:                                                         │
+│  ┌─────────────────────────────────────────────────────────────┐ │
+│  │ [physical-needs] [renewal] [spiritual-rest] [+Add]          │ │
+│  └─────────────────────────────────────────────────────────────┘ │
+│                                                                   │
+│  ⚠ Disambiguation Note:                                          │
+│  This node appears 4 times in the data. Review each occurrence   │
+│  to ensure consistent tagging, or add occurrence-specific notes. │
+│                                                                   │
+│  Occurrence Notes:                                                │
+│  ┌─────────────────────────────────────────────────────────────┐ │
+│  │ Occ 1 (Torah 35): Sleep as spiritual renewal                │ │
+│  │ Occ 2 (Torah 35): Sleep connecting to faith                 │ │
+│  │ Occ 3 (Torah 54): Sleep attaching thought to world to come  │ │
+│  │ Occ 4 (Torah 35): Sleep as business dealings in faith       │ │
+│  └─────────────────────────────────────────────────────────────┘ │
+│                                                                   │
+│  Other nodes with this ID:                                        │
+│  • שנה (year) - NOT FOUND IN CURRENT DATA                        │
+│                                                                   │
+│  [Apply to All Occurrences] [Apply to This Only]                │
+│  [Save] [Cancel] [Save & Next Node]                             │
+└───────────────────────────────────────────────────────────────────┘
 ```
+
+**Key Features for Context-Aware Editing:**
+
+1. **Show ALL contextual data:**
+   - node1_text / node2_text (Hebrew with vowel marks)
+   - node1_text_en / node2_text_en (English translations)
+   - proof (source text - critical for understanding meaning!)
+   - reference (Torah number)
+   - Connected nodes (what this connects to)
+   - Relationship type (eitza/bechina/cause)
+
+2. **Browse all occurrences:**
+   - If node_id appears multiple times, show counter: [1/4]
+   - Navigate between occurrences: [< Prev | Next >]
+   - See if different occurrences need different keywords
+
+3. **Disambiguation support:**
+   - Warning when same node_id has multiple meanings
+   - Option to add occurrence-specific notes
+   - Ability to apply keywords to all or individual occurrences
+
+4. **Context panel:**
+   - Always visible while editing
+   - Shows proof text (the most important context!)
+   - Shows relationships (what connects to what)
 
 ### Enhanced Search Interface
 
@@ -422,33 +594,69 @@ function generateInitialMetadata(torahData) {
 
 ## Appendix: Example Metadata Entries
 
-### Example 1: Torah Node
+### Example 1: Homonym - שנה (Sleep vs Year)
+
+Using Edge-Level Metadata (Approach 1 - RECOMMENDED):
+
 ```json
 {
-    "nodes": {
-        "תורה": {
-            "keywords": ["torah", "study", "learning", "wisdom", "teaching"],
-            "keywords_he": ["תורה", "לימוד", "חכמה"],
-            "classes": ["spiritual-practice", "mitzvot", "wisdom-path"],
-            "aliases": ["התורה", "תורתינו", "תורת ה'"],
-            "description": "Torah study is the foundation of spiritual growth",
+    "edge_metadata": {
+        "שנה:35:1": {
+            "node_id": "שנה",
+            "reference": 35,
+            "edge_index": 1,
+            "meaning": "sleep",
+            "hebrew_form": "שֵׁנָה",
+            "english": "Sleep",
+            "keywords": ["sleep", "rest", "renewal", "mind-renewal"],
+            "keywords_he": ["שינה", "מנוחה", "חידוש"],
+            "classes": ["physical-needs", "spiritual-rest", "renewal"],
+            "context_note": "Sleep as means of renewing the intellect",
+            "connected_to": "חדוש השכל",
             "last_modified": "2025-10-21T10:30:00Z"
+        },
+        "שנה:35:2": {
+            "node_id": "שנה",
+            "reference": 35,
+            "edge_index": 2,
+            "meaning": "sleep",
+            "hebrew_form": "שֵׁנָה",
+            "english": "Sleep",
+            "keywords": ["sleep", "faith", "business-dealings"],
+            "keywords_he": ["שינה", "אמונה", "משא ומתן"],
+            "classes": ["physical-needs", "emuna-practice"],
+            "context_note": "Sleep in context of business dealings in faith",
+            "connected_to": "משא ומתן באמונה",
+            "last_modified": "2025-10-21T10:32:00Z"
         }
+        // If שנה appears as "year", it would be a separate entry:
+        // "שנה:12:1": {
+        //     "meaning": "year",
+        //     "keywords": ["year", "time", "rosh-hashana"],
+        //     ...
+        // }
     }
 }
 ```
 
-### Example 2: Prayer Node
+### Example 2: Simple Node - תורה (No Homonyms)
 ```json
 {
-    "nodes": {
-        "תפילה": {
-            "keywords": ["prayer", "tefillah", "davening", "connection", "communication"],
-            "keywords_he": ["תפילה", "תפלה", "התפללות"],
-            "classes": ["spiritual-practice", "daily-service", "connection"],
-            "aliases": ["התפילה", "תפלתינו"],
-            "description": "Prayer creates a direct connection with Hashem",
-            "last_modified": "2025-10-21T10:31:00Z"
+    "edge_metadata": {
+        "תורה:1:1": {
+            "node_id": "תורה",
+            "reference": 1,
+            "edge_index": 1,
+            "meaning": "Torah",
+            "hebrew_form": "תּוֹרָה",
+            "english": "Torah",
+            "keywords": ["torah", "study", "learning", "wisdom", "intellect"],
+            "keywords_he": ["תורה", "לימוד", "חכמה", "שכל"],
+            "classes": ["spiritual-practice", "mitzvot", "wisdom"],
+            "context_note": "Torah enables seeing intellect in everything",
+            "connected_to": "להסתכל בהשכל שיש בכל דבר",
+            "proof_excerpt": "אַשְׁרֵי תְמִימֵי דָרֶךְ...זֶה זוֹכִין עַל-יְדֵי הַתּוֹרָה",
+            "last_modified": "2025-10-21T10:35:00Z"
         }
     }
 }
