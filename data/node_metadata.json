@@ -1,0 +1,164 @@
+{
+  "_schema_version": "1.0",
+  "_description": "Edge-level metadata for Torah concept nodes. Each edge occurrence can have unique keywords and classes based on context.",
+  "_last_updated": "2025-10-21T00:00:00Z",
+
+  "edge_metadata": {
+    "_comment": "Key format: 'node_id:reference:edgeIndex' - Each edge occurrence has independent metadata"
+  },
+
+  "class_definitions": {
+    "spiritual-practice": {
+      "label": "Spiritual Practice",
+      "label_he": "עבודה רוחנית",
+      "description": "Practices for spiritual development",
+      "parent": null,
+      "color": "#9C27B0"
+    },
+    "mitzvot": {
+      "label": "Mitzvot",
+      "label_he": "מצוות",
+      "description": "Torah commandments and observances",
+      "parent": "spiritual-practice",
+      "color": "#2196F3"
+    },
+    "emuna": {
+      "label": "Faith & Belief",
+      "label_he": "אמונה",
+      "description": "Concepts related to faith and trust in Hashem",
+      "parent": null,
+      "color": "#4CAF50"
+    },
+    "prayer": {
+      "label": "Prayer & Tefillah",
+      "label_he": "תפילה",
+      "description": "Prayer, davening, and communication with Hashem",
+      "parent": "spiritual-practice",
+      "color": "#FF9800"
+    },
+    "torah-study": {
+      "label": "Torah Study",
+      "label_he": "לימוד תורה",
+      "description": "Torah learning and wisdom",
+      "parent": "mitzvot",
+      "color": "#3F51B5"
+    },
+    "tikkun-habris": {
+      "label": "Tikkun HaBris",
+      "label_he": "תיקון הברית",
+      "description": "Covenant rectification and purity",
+      "parent": "spiritual-practice",
+      "color": "#E91E63"
+    },
+    "joy": {
+      "label": "Simcha & Joy",
+      "label_he": "שמחה",
+      "description": "Spiritual joy and happiness",
+      "parent": null,
+      "color": "#FFEB3B"
+    },
+    "tzedakah": {
+      "label": "Tzedakah & Charity",
+      "label_he": "צדקה",
+      "description": "Charity and giving",
+      "parent": "mitzvot",
+      "color": "#00BCD4"
+    },
+    "repentance": {
+      "label": "Teshuvah",
+      "label_he": "תשובה",
+      "description": "Repentance and return to Hashem",
+      "parent": "spiritual-practice",
+      "color": "#9E9E9E"
+    },
+    "holiness": {
+      "label": "Holiness & Kedushah",
+      "label_he": "קדושה",
+      "description": "Holiness and sanctity",
+      "parent": null,
+      "color": "#673AB7"
+    },
+    "eretz-yisrael": {
+      "label": "Eretz Yisrael",
+      "label_he": "ארץ ישראל",
+      "description": "Land of Israel",
+      "parent": null,
+      "color": "#795548"
+    },
+    "shabbat": {
+      "label": "Shabbat & Holidays",
+      "label_he": "שבת",
+      "description": "Shabbat and Jewish holidays",
+      "parent": "mitzvot",
+      "color": "#607D8B"
+    },
+    "wisdom": {
+      "label": "Chochmah & Wisdom",
+      "label_he": "חכמה",
+      "description": "Wisdom, understanding, and intellect",
+      "parent": null,
+      "color": "#FFC107"
+    },
+    "tzaddik": {
+      "label": "Tzaddik & Righteous",
+      "label_he": "צדיק",
+      "description": "The righteous person and their role",
+      "parent": null,
+      "color": "#8BC34A"
+    },
+    "malchus": {
+      "label": "Malchus & Kingdom",
+      "label_he": "מלכות",
+      "description": "Kingdom, sovereignty, and Divine rule",
+      "parent": null,
+      "color": "#F44336"
+    }
+  },
+
+  "keyword_definitions": {
+    "torah": {
+      "label": "Torah",
+      "label_he": "תורה",
+      "description": "Torah study, learning, and wisdom",
+      "related_keywords": ["study", "learning", "wisdom"]
+    },
+    "prayer": {
+      "label": "Prayer",
+      "label_he": "תפילה",
+      "description": "Prayer and connection to Hashem",
+      "related_keywords": ["tefillah", "davening", "connection"]
+    },
+    "faith": {
+      "label": "Faith",
+      "label_he": "אמונה",
+      "description": "Faith, belief, and trust in Hashem",
+      "related_keywords": ["emuna", "belief", "trust"]
+    },
+    "charity": {
+      "label": "Charity",
+      "label_he": "צדקה",
+      "description": "Charity and giving to others",
+      "related_keywords": ["tzedakah", "giving", "kindness"]
+    },
+    "repentance": {
+      "label": "Repentance",
+      "label_he": "תשובה",
+      "description": "Repentance and return",
+      "related_keywords": ["teshuvah", "return", "correction"]
+    },
+    "joy": {
+      "label": "Joy",
+      "label_he": "שמחה",
+      "description": "Spiritual joy and happiness",
+      "related_keywords": ["simcha", "happiness", "gladness"]
+    }
+  },
+
+  "statistics": {
+    "total_edges": 4234,
+    "total_unique_nodes": 4299,
+    "total_occurrences": 8468,
+    "tagged_edges": 0,
+    "coverage_percentage": 0
+  }
+}
