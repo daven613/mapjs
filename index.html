@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Torah Map - Fixed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torah Map Explorer</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="./css/styles.css">
 
-    <!-- jQuery and jQuery UI -->
+    <!-- jQuery + jQuery UI -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
-    <!-- Sigma.js Core -->
+    <!-- Sigma.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
-
-    <!-- Working Sigma.js plugins -->
     <script src="https://cdn.jsdelivr.net/gh/jacomyal/sigma.js@v1.2.1/plugins/sigma.plugins.dragNodes/sigma.plugins.dragNodes.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/jacomyal/sigma.js@v1.2.1/plugins/sigma.layout.forceAtlas2/worker.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/jacomyal/sigma.js@v1.2.1/plugins/sigma.layout.forceAtlas2/supervisor.js"></script>
@@ -24,870 +23,353 @@
     <!-- Data -->
     <script src="./data/torah2.js"></script>
 
-    <!-- Helper Scripts -->
-    <script src="./js/hello-sigma.js"></script>
+    <!-- Search Engine -->
+    <script src="./js/search-engine.js"></script>
 </head>
 <body>
-    <!-- Main Container -->
-    <div class="main-container">
-        <!-- Graph Container -->
-        <div id="graph-container"></div>
-
-        <!-- Panel Container -->
-        <div class="panel-container" id="panelContainer">
-            <div class="resize-handle" id="resizeHandle"></div>
-
-            <button class="toggle-panel-btn" id="togglePanelBtn">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </button>
-
-            <div class="panel-tabs">
-                <button class="panel-tab active" id="tab_search" onclick="switchToTab('search')">Search</button>
-                <button class="panel-tab" id="tab_details" onclick="switchToTab('details')">Details</button>
-            </div>
-
-            <!-- Search Panel Content -->
-            <div class="panel-content active" id="searchPanel">
-    <div id="div_cypher_query" class="control-panel">
-        <div class="panel-header">
-            <div class="panel-title">
-                <h1>Torah Map Explorer</h1>
-                <p>Choose a discovery mode, refine your search, and uncover meaningful connections.</p>
-            </div>
-            <div class="language-toggle">
-                <button type="button" id="button_hebrew" class="ghost" onclick="toHebrew()">עברית</button>
-                <button type="button" id="button_english" class="ghost" onclick="toEnglish()" style="display:none">English</button>
-            </div>
-        </div>
-
-        <div class="query-type">
-            <label for="select_query_type">Discovery Mode</label>
-            <select id="select_query_type" onchange="changeQueryType(this.value)">
-                <option value="advice" selected>Get Advice</option>
-                <option value="effects">Get Effects</option>
-                <option value="by_torah">Search By Torah</option>
-                <option value="bechinos">Get Bechinos</option>
-                <option value="connected">Get All Connected Topics</option>
-                <option value="cause_effect_path">Cause-Effect Path</option>
-            </select>
-        </div>
-
-        <div class="query-sections">
-            <div id="div_select_topic_advice" class="query-section active">
-                <label for="input_topic_advice">Select Topic</label>
-                <input id="input_topic_advice" placeholder="Start typing to search topics">
-            </div>
-
-            <div id="div_select_topic_effects" class="query-section">
-                <label for="input_topic_effects">Select Topic</label>
-                <input id="input_topic_effects" placeholder="Start typing to search topics">
-            </div>
-
-            <div id="div_select_topic_bechinos" class="query-section">
-                <label for="input_topic_bechinos">Select Topic</label>
-                <input id="input_topic_bechinos" placeholder="Start typing to search topics">
-            </div>
-
-            <div id="div_select_topic_1" class="query-section">
-                <label for="input_topic_1">Select Topic</label>
-                <input id="input_topic_1" placeholder="Start typing to search topics">
-            </div>
-
-            <div id="div_select_torah" class="query-section">
-                <label for="select_torah">Select Torah #</label>
-                <select id="select_torah"></select>
-            </div>
-
-            <div id="div_select_cause_effect" class="query-section">
-                <div class="field-pair">
-                    <div class="field">
-                        <label for="input_start_node" id="label_start_node">Start Node</label>
-                        <input id="input_start_node" placeholder="Choose where the path begins">
+    <div class="app">
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Header -->
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <div class="brand-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                        </svg>
                     </div>
-                    <div class="field">
-                        <label for="input_end_node" id="label_end_node">End Node</label>
-                        <input id="input_end_node" placeholder="Choose where the path ends">
+                    <div>
+                        <h1 class="brand-title">Torah Map</h1>
+                        <p class="brand-subtitle">Explore connections</p>
                     </div>
                 </div>
+                <div class="header-actions">
+                    <button class="icon-btn" id="btnLang" onclick="toggleLanguage()" title="Toggle Hebrew/English">
+                        <span id="langLabel">עב</span>
+                    </button>
+                </div>
             </div>
-        </div>
 
-        <div class="query-actions">
-            <button type="button" class="primary" onclick="runQuery()">Run Search</button>
-            <p class="hint">Tip: Use at least two characters to see smart suggestions.</p>
-        </div>
+            <!-- Stats Bar -->
+            <div class="stats-bar" id="statsBar">
+                <div class="stat">
+                    <span class="stat-value" id="statTopics">--</span>
+                    <span class="stat-label">Topics</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="statConnections">--</span>
+                    <span class="stat-label">Links</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="statTorahs">--</span>
+                    <span class="stat-label">Torahs</span>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="sidebar-tabs">
+                <button class="sidebar-tab active" data-tab="search" onclick="switchTab('search')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    Search
+                </button>
+                <button class="sidebar-tab" data-tab="details" onclick="switchTab('details')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                    Details
+                </button>
+                <button class="sidebar-tab" data-tab="history" onclick="switchTab('history')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    History
+                </button>
+            </div>
+
+            <!-- ===== SEARCH TAB ===== -->
+            <div class="tab-content active" id="tab-search">
+                <!-- Search Mode Selection -->
+                <div class="search-modes" id="searchModes">
+                    <button class="mode-card active" data-mode="explore" onclick="selectMode('explore')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                        <span>Explore</span>
+                    </button>
+                    <button class="mode-card" data-mode="advice" onclick="selectMode('advice')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/><path d="M10 21h4"/></svg>
+                        <span>Advice</span>
+                    </button>
+                    <button class="mode-card" data-mode="effects" onclick="selectMode('effects')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <span>Effects</span>
+                    </button>
+                    <button class="mode-card" data-mode="aspects" onclick="selectMode('aspects')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></svg>
+                        <span>Aspects</span>
+                    </button>
+                    <button class="mode-card" data-mode="torah" onclick="selectMode('torah')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        <span>By Torah</span>
+                    </button>
+                    <button class="mode-card" data-mode="path" onclick="selectMode('path')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="12" r="3"/><circle cx="19" cy="12" r="3"/><path d="M8 12h8"/></svg>
+                        <span>Find Path</span>
+                    </button>
+                    <button class="mode-card" data-mode="common" onclick="selectMode('common')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="12" r="6"/><circle cx="15" cy="12" r="6"/></svg>
+                        <span>Common</span>
+                    </button>
+                    <button class="mode-card" data-mode="multi" onclick="selectMode('multi')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+                        <span>Filters</span>
+                    </button>
+                </div>
+
+                <!-- Mode Description -->
+                <p class="mode-description" id="modeDescription">Find everything connected to a topic.</p>
+
+                <!-- Search Inputs (dynamic per mode) -->
+                <div class="search-form" id="searchForm">
+                    <!-- Single topic input (explore, advice, effects, aspects) -->
+                    <div class="form-group" id="inputSingleTopic">
+                        <label for="inputTopic">Topic</label>
+                        <input type="text" id="inputTopic" placeholder="Start typing to search topics..." autocomplete="off">
+                    </div>
+
+                    <!-- Torah dropdown (torah mode) -->
+                    <div class="form-group hidden" id="inputTorahGroup">
+                        <label for="selectTorah">Torah Number</label>
+                        <select id="selectTorah"></select>
+                    </div>
+
+                    <!-- Two topic inputs (path, common) -->
+                    <div class="form-group hidden" id="inputTwoTopics">
+                        <label for="inputTopicA">Start Topic</label>
+                        <input type="text" id="inputTopicA" placeholder="First concept..." autocomplete="off">
+                        <div class="input-spacer"></div>
+                        <label for="inputTopicB">End Topic</label>
+                        <input type="text" id="inputTopicB" placeholder="Second concept..." autocomplete="off">
+                    </div>
+
+                    <!-- Multi-filter inputs -->
+                    <div class="form-group hidden" id="inputMultiFilter">
+                        <label for="filterKeyword">Keyword (optional)</label>
+                        <input type="text" id="filterKeyword" placeholder="Search in text..." autocomplete="off">
+                        <div class="input-spacer"></div>
+                        <label for="filterType">Connection Type</label>
+                        <select id="filterType">
+                            <option value="all">All Types</option>
+                            <option value="bechina">Aspect (Bechina)</option>
+                            <option value="eitza">Advice (Eitza)</option>
+                        </select>
+                        <div class="input-spacer"></div>
+                        <label for="filterTorah">Torah Number (optional)</label>
+                        <select id="filterTorah">
+                            <option value="">Any Torah</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Search Button -->
+                <button class="search-btn" id="runSearchBtn" onclick="runSearch()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    Run Search
+                </button>
+
+                <p class="search-hint">Tip: Click any node on the graph to expand its neighborhood.</p>
+
+                <!-- Results Summary -->
+                <div class="results-summary hidden" id="resultsSummary">
+                    <div class="results-header">
+                        <span class="results-title">Results</span>
+                        <button class="clear-btn" onclick="clearGraph()">Clear</button>
+                    </div>
+                    <div class="results-stats" id="resultsStats"></div>
+                </div>
+            </div>
+
+            <!-- ===== DETAILS TAB ===== -->
+            <div class="tab-content" id="tab-details">
+                <!-- Placeholder -->
+                <div class="details-placeholder" id="detailsPlaceholder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="placeholder-icon">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <p>Click a node or edge on the graph to see details here.</p>
+                </div>
+
+                <!-- Node Details -->
+                <div class="node-details hidden" id="nodeDetailsPanel">
+                    <h3 class="detail-title" id="nodeTitle"></h3>
+                    <p class="detail-subtitle" id="nodeSubtitle"></p>
+
+                    <div class="detail-stats">
+                        <div class="detail-stat">
+                            <span class="detail-stat-value" id="nodeConnCount">0</span>
+                            <span class="detail-stat-label">Connections</span>
+                        </div>
+                        <div class="detail-stat">
+                            <span class="detail-stat-value" id="nodeAspectCount">0</span>
+                            <span class="detail-stat-label">Aspects</span>
+                        </div>
+                        <div class="detail-stat">
+                            <span class="detail-stat-value" id="nodeAdviceCount">0</span>
+                            <span class="detail-stat-label">Advice</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-section" id="nodeTorahRefs">
+                        <h4>Referenced in Torahs</h4>
+                        <div class="tag-list" id="nodeTorahList"></div>
+                    </div>
+
+                    <div class="detail-actions">
+                        <button class="action-btn" onclick="expandNode()">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+                            Expand Neighborhood
+                        </button>
+                        <button class="action-btn" onclick="searchFromNode()">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                            Search This Topic
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Edge Details -->
+                <div class="edge-details hidden" id="edgeDetailsPanel" style="direction:rtl;">
+                    <div class="edge-type-badge" id="edgeTypeBadge"></div>
+                    <h3 class="detail-title" id="edgeTitle">Connection Details</h3>
+
+                    <dl class="edge-fields">
+                        <div class="edge-field">
+                            <dt>From (Source)</dt>
+                            <dd id="edgeFrom"></dd>
+                        </div>
+                        <div class="edge-field">
+                            <dt>To (Target)</dt>
+                            <dd id="edgeTo"></dd>
+                        </div>
+                        <div class="edge-field">
+                            <dt>Proof Text</dt>
+                            <dd id="edgeProof"></dd>
+                        </div>
+                        <div class="edge-field">
+                            <dt>Torah Reference</dt>
+                            <dd id="edgeRef"></dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- ===== HISTORY TAB ===== -->
+            <div class="tab-content" id="tab-history">
+                <div class="history-empty" id="historyEmpty">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="placeholder-icon">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    <p>Your search history will appear here.</p>
+                </div>
+                <div class="history-list" id="historyList"></div>
+            </div>
+        </aside>
+
+        <!-- Toggle sidebar button -->
+        <button class="toggle-sidebar" id="toggleSidebar" onclick="toggleSidebar()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+
+        <!-- ===== MAIN GRAPH AREA ===== -->
+        <main class="graph-area">
+            <!-- Graph Controls -->
+            <div class="graph-controls" id="graphControls">
+                <button class="graph-ctrl-btn" onclick="zoomIn()" title="Zoom In">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <button class="graph-ctrl-btn" onclick="zoomOut()" title="Zoom Out">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <div class="ctrl-divider"></div>
+                <button class="graph-ctrl-btn" onclick="fitToScreen()" title="Fit to Screen">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 00-2 2v3M21 8V5a2 2 0 00-2-2h-3M3 16v3a2 2 0 002 2h3M16 21h3a2 2 0 002-2v-3"/></svg>
+                </button>
+                <button class="graph-ctrl-btn" onclick="clearGraph()" title="Clear Graph">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
+
+            <!-- Legend -->
+            <div class="graph-legend" id="graphLegend">
+                <div class="legend-item">
+                    <span class="legend-line bechina-line"></span>
+                    <span>Aspect (Bechina)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-line eitza-line"></span>
+                    <span>Advice (Eitza)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot start-dot"></span>
+                    <span>Start Node</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot end-dot"></span>
+                    <span>End Node</span>
+                </div>
+            </div>
+
+            <!-- Graph Container -->
+            <div id="graph-container"></div>
+
+            <!-- Welcome Screen -->
+            <div class="welcome-screen" id="welcomeScreen">
+                <div class="welcome-content">
+                    <div class="welcome-icon">
+                        <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="40" cy="40" r="6" fill="#3b82f6" stroke="none"/>
+                            <circle cx="20" cy="20" r="4" fill="#8b5cf6" stroke="none"/>
+                            <circle cx="60" cy="20" r="4" fill="#8b5cf6" stroke="none"/>
+                            <circle cx="15" cy="50" r="3" fill="#06b6d4" stroke="none"/>
+                            <circle cx="65" cy="50" r="3" fill="#06b6d4" stroke="none"/>
+                            <circle cx="40" cy="65" r="4" fill="#10b981" stroke="none"/>
+                            <circle cx="25" cy="35" r="2.5" fill="#f59e0b" stroke="none"/>
+                            <circle cx="55" cy="35" r="2.5" fill="#f59e0b" stroke="none"/>
+                            <line x1="40" y1="40" x2="20" y2="20" stroke="#cbd5e1" stroke-width="1"/>
+                            <line x1="40" y1="40" x2="60" y2="20" stroke="#cbd5e1" stroke-width="1"/>
+                            <line x1="40" y1="40" x2="15" y2="50" stroke="#cbd5e1" stroke-width="1"/>
+                            <line x1="40" y1="40" x2="65" y2="50" stroke="#cbd5e1" stroke-width="1"/>
+                            <line x1="40" y1="40" x2="40" y2="65" stroke="#cbd5e1" stroke-width="1"/>
+                            <line x1="20" y1="20" x2="25" y2="35" stroke="#e2e8f0" stroke-width="0.8"/>
+                            <line x1="60" y1="20" x2="55" y2="35" stroke="#e2e8f0" stroke-width="0.8"/>
+                            <line x1="25" y1="35" x2="15" y2="50" stroke="#e2e8f0" stroke-width="0.8"/>
+                            <line x1="55" y1="35" x2="65" y2="50" stroke="#e2e8f0" stroke-width="0.8"/>
+                        </svg>
+                    </div>
+                    <h2>Welcome to Torah Map Explorer</h2>
+                    <p class="welcome-text">Discover hidden connections between Torah concepts from Likutay Halachos. Search for topics, trace paths between ideas, and explore how concepts interrelate.</p>
+                    <div class="welcome-stats" id="welcomeStats">
+                        <div class="welcome-stat">
+                            <span class="ws-value" id="wsTopics">--</span>
+                            <span class="ws-label">Unique Topics</span>
+                        </div>
+                        <div class="welcome-stat">
+                            <span class="ws-value" id="wsConnections">--</span>
+                            <span class="ws-label">Connections</span>
+                        </div>
+                        <div class="welcome-stat">
+                            <span class="ws-value" id="wsTorahs">--</span>
+                            <span class="ws-label">Torah Sources</span>
+                        </div>
+                    </div>
+                    <p class="welcome-cta">Choose a search mode in the sidebar to begin exploring.</p>
+                </div>
+            </div>
+
+            <!-- Status Toast -->
+            <div class="status-toast hidden" id="statusToast"></div>
+        </main>
     </div>
-            </div>
 
-            <!-- Details Panel Content -->
-            <div class="panel-content" id="detailsPanel">
-    <div id="div_connection_info" class="connection-card" style="direction:rtl;">
-        <div class="connection-header">
-            <h2>פרטי החיבור</h2>
-            <p>Explore the relationship between the selected topics.</p>
-        </div>
-        <dl class="connection-details">
-            <div>
-                <dt>מנושא</dt>
-                <dd id="txt_from_node"></dd>
-            </div>
-            <div>
-                <dt>לנושא</dt>
-                <dd id="txt_to_node"></dd>
-            </div>
-            <div>
-                <dt>ראיה</dt>
-                <dd id="txt_proof"></dd>
-            </div>
-            <div>
-                <dt>מקור</dt>
-                <dd id="txt_reference"></dd>
-            </div>
-        </dl>
-    </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Status -->
-    <div id="div_status" class="alpha60" style="display:none"></div>
-
-    <script>
-var init_sigma;
-var allTopics = [];
-
-// Initialize on document ready
-$(document).ready(function() {
-    console.log('Initializing...');
-
-    // Check if data loaded
-    if (typeof torah1 === 'undefined') {
-        alert('Torah data not loaded!');
-        return;
-    }
-    console.log('Torah data loaded:', torah1.length, 'entries');
-
-    // Extract topics for autocomplete
-    var topicSet = new Set();
-    var torahSet = new Set();
-
-    torah1.forEach(function(item) {
-        if (item.node1_id) topicSet.add(item.node1_id);
-        if (item.node2_id) topicSet.add(item.node2_id);
-        if (item.reference) torahSet.add(item.reference);
-    });
-
-    allTopics = Array.from(topicSet).sort();
-    console.log('Found', allTopics.length, 'unique topics');
-
-    // Setup autocomplete
-    $("#input_topic_advice, #input_topic_effects, #input_topic_bechinos, #input_topic_1, #input_start_node, #input_end_node").autocomplete({
-        source: allTopics,
-        minLength: 2
-    });
-
-    // Populate Torah dropdown
-    var torahNums = Array.from(torahSet).sort((a,b) => a-b);
-    torahNums.forEach(function(num) {
-        $('#select_torah').append('<option value="' + num + '">' + num + '</option>');
-    });
-
-    // Initialize Sigma
-    initSigma();
-
-    // Ensure the correct section is visible
-    changeQueryType($('#select_query_type').val());
-
-    console.log('Ready!');
-});
-
-function initSigma() {
-    try {
-        // Initialize with CANVAS renderer to fix edge click issues
-        init_sigma = new sigma({
-            renderer: {
-                container: document.getElementById('graph-container'),
-                type: 'canvas'  // CRITICAL: Use canvas, not webgl
-            }
-        });
-
-        // Configure settings
-        init_sigma.settings({
-            minNodeSize: 1,
-            maxNodeSize: 10,
-            minEdgeSize: 0.5,
-            maxEdgeSize: 2,
-            enableEdgeHovering: true,
-            edgeHoverSizeRatio: 2,
-            defaultNodeColor: '#6cbef4',
-            defaultEdgeColor: '#999',
-            labelThreshold: 4,
-            labelSize: 'fixed',
-            defaultLabelSize: 13,
-            drawEdges: true,
-            drawEdgeLabels: false,
-            edgesPowRatio: 0.8,
-            edgesArrowSize: 8,
-            minArrowSize: 5
-        });
-
-        // Enable drag nodes
-        var dragListener = sigma.plugins.dragNodes(init_sigma, init_sigma.renderers[0]);
-
-        // Bind edge click
-        init_sigma.bind('clickEdge', function(e) {
-            var edge = e.data.edge;
-            $('#txt_from_node').text(edge.node1_text || '');
-            $('#txt_to_node').text(edge.node2_text || '');
-            $('#txt_proof').text(edge.proof || '');
-            $('#txt_reference').text(edge.reference || '');
-
-            // Show connection info and switch to Details tab
-            $('#div_connection_info').show();
-            switchToTab('details');
-        });
-
-        // Hide info on stage click
-        init_sigma.bind('clickStage', function(e) {
-            // Don't hide the panel, just clear selection
-            // Users can manually switch back to Search tab if needed
-        });
-
-        console.log('Sigma initialized successfully');
-    } catch(e) {
-        console.error('Failed to init sigma:', e);
-    }
-}
-
-function changeQueryType(type) {
-    var sectionMap = {
-        'advice': 'div_select_topic_advice',
-        'effects': 'div_select_topic_effects',
-        'by_torah': 'div_select_torah',
-        'bechinos': 'div_select_topic_bechinos',
-        'connected': 'div_select_topic_1',
-        'cause_effect_path': 'div_select_cause_effect'
-    };
-
-    $('.query-section').removeClass('active');
-
-    var targetId = sectionMap[type];
-    if (targetId) {
-        $('#' + targetId).addClass('active');
-    }
-}
-
-function findCauseEffectPaths(startNodeSearch, endNodeSearch, torah1Data) {
-    // Build adjacency list for efficient traversal
-    var adjList = {};
-    var edgeMap = {}; // Map to store actual edge data for reconstruction
-
-    // Initialize adjacency list
-    torah1Data.forEach(function(edge) {
-        if (!adjList[edge.node1_id]) {
-            adjList[edge.node1_id] = { bechina: [], child_eitza: [] };
-        }
-        if (!adjList[edge.node2_id]) {
-            adjList[edge.node2_id] = { bechina: [], child_eitza: [] };
-        }
-
-        // Store edge data for later retrieval
-        var edgeKey = edge.node1_id + '||' + edge.node2_id + '||' + edge.type;
-        edgeMap[edgeKey] = edge;
-
-        if (edge.type === 'bechina') {
-            adjList[edge.node1_id].bechina.push(edge.node2_id);
-            adjList[edge.node2_id].bechina.push(edge.node1_id);
-            // Store reverse edge too
-            edgeMap[edge.node2_id + '||' + edge.node1_id + '||bechina'] = edge;
-        } else if (edge.type === 'eitza') {
-            adjList[edge.node1_id].child_eitza.push(edge.node2_id);
-        }
-    });
-
-    // Find actual node IDs using partial matching
-    var startNodes = Object.keys(adjList).filter(function(nodeId) {
-        return nodeId.includes(startNodeSearch);
-    });
-    var endNodes = Object.keys(adjList).filter(function(nodeId) {
-        return nodeId.includes(endNodeSearch);
-    });
-
-    if (startNodes.length === 0 || endNodes.length === 0) {
-        return { edges: [], startNode: null, endNode: null };
-    }
-
-    console.log('Found', startNodes.length, 'start nodes and', endNodes.length, 'end nodes');
-
-    var allPaths = [];
-    var allStartNodes = [];
-    var allEndNodes = new Set(endNodes);
-
-    // Phase 1: BFS from ALL matching start nodes up to 5 bechina edges to find potential cause nodes
-    var queue = [];
-    var globalVisited = new Map(); // node -> min depth seen
-    var causeNodes = [];
-
-    // Initialize queue with all matching start nodes
-    startNodes.forEach(function(startNode) {
-        queue.push({node: startNode, path: [startNode], depth: 0, visited: new Set([startNode]), startNode: startNode});
-        allStartNodes.push(startNode);
-    });
-
-    while (queue.length > 0) {
-        var current = queue.shift();
-
-        // Create a unique key with start node to allow different paths from different starts
-        var visitKey = current.startNode + '::' + current.node + '::' + current.depth;
-        if (globalVisited.has(visitKey)) {
-            continue;
-        }
-        globalVisited.set(visitKey, true);
-
-        // This node could be a cause if it has eitza connections
-        if (adjList[current.node].child_eitza.length > 0) {
-            causeNodes.push({
-                node: current.node,
-                pathFromStart: current.path,
-                visitedNodes: current.visited,
-                originalStart: current.startNode
-            });
-        }
-
-        // Continue exploring if depth < 5
-        if (current.depth < 5 && adjList[current.node].bechina) {
-            adjList[current.node].bechina.forEach(function(neighbor) {
-                if (!current.visited.has(neighbor)) {
-                    var newVisited = new Set(current.visited);
-                    newVisited.add(neighbor);
-                    queue.push({
-                        node: neighbor,
-                        path: current.path.concat([neighbor]),
-                        depth: current.depth + 1,
-                        visited: newVisited,
-                        startNode: current.startNode
-                    });
-                }
-            });
-        }
-    }
-
-    // Early exit if no cause nodes found
-    if (causeNodes.length === 0) {
-        console.log('No cause nodes found');
-        return { edges: [], startNode: null, endNode: null };
-    }
-
-    // Phase 2: For each cause node, follow eitza edge to effect, then BFS to endNode
-    // Limit cause nodes if there are too many to prevent explosion
-    var maxCauseNodes = 100;
-    if (causeNodes.length > maxCauseNodes) {
-        console.log('Too many cause nodes (' + causeNodes.length + '), limiting to ' + maxCauseNodes);
-        causeNodes = causeNodes.slice(0, maxCauseNodes);
-    }
-
-    causeNodes.forEach(function(causeInfo) {
-        // Early exit if we already found 20 paths
-        if (allPaths.length >= 20) return;
-
-        var causeNode = causeInfo.node;
-
-        // Get all effect nodes from this cause
-        adjList[causeNode].child_eitza.forEach(function(effectNode) {
-            // Skip if effect node was already visited in the path from start
-            if (causeInfo.visitedNodes.has(effectNode)) return;
-
-            // Phase 3: BFS from effect node up to 5 bechina edges to find endNode
-            var queue2 = [{node: effectNode, path: [effectNode], depth: 0, visited: new Set([effectNode])}];
-            var globalVisited2 = new Map();
-
-            while (queue2.length > 0) {
-                var current2 = queue2.shift();
-
-                // Prune if we've seen this node at a lower depth
-                if (globalVisited2.has(current2.node) && globalVisited2.get(current2.node) < current2.depth) {
-                    continue;
-                }
-                globalVisited2.set(current2.node, current2.depth);
-
-                // Check if we reached ANY of the matching end nodes
-                if (allEndNodes.has(current2.node)) {
-                    var fullPath = causeInfo.pathFromStart.concat([effectNode]).concat(current2.path.slice(1));
-                    allPaths.push({
-                        path: fullPath,
-                        causeNode: causeNode,
-                        effectNode: effectNode,
-                        startNode: causeInfo.originalStart,
-                        endNode: current2.node,
-                        length: fullPath.length - 1
-                    });
-                    // Continue exploring to find other end nodes, don't break
-                    continue;
-                }
-
-                // Continue exploring if depth < 5
-                if (current2.depth < 5 && adjList[current2.node].bechina) {
-                    adjList[current2.node].bechina.forEach(function(neighbor) {
-                        // Use Set for O(1) lookups instead of .includes()
-                        if (!current2.visited.has(neighbor) && !causeInfo.visitedNodes.has(neighbor)) {
-                            var newVisited2 = new Set(current2.visited);
-                            newVisited2.add(neighbor);
-                            queue2.push({
-                                node: neighbor,
-                                path: current2.path.concat([neighbor]),
-                                depth: current2.depth + 1,
-                                visited: newVisited2
-                            });
-                        }
-                    });
-                }
-            }
-        });
-    });
-
-    // Sort by length and take top 20
-    allPaths.sort(function(a, b) { return a.length - b.length; });
-    allPaths = allPaths.slice(0, 20);
-
-    // Convert paths to edges for visualization
-    var resultEdges = [];
-    var edgeSet = new Set();
-
-    allPaths.forEach(function(pathInfo) {
-        var path = pathInfo.path;
-        for (var i = 0; i < path.length - 1; i++) {
-            var from = path[i];
-            var to = path[i + 1];
-
-            // Determine edge type
-            var edgeType = (from === pathInfo.causeNode && to === pathInfo.effectNode) ? 'eitza' : 'bechina';
-
-            // Try both directions for the edge
-            var edgeKey1 = from + '||' + to + '||' + edgeType;
-            var edgeKey2 = to + '||' + from + '||' + edgeType;
-
-            var edge = edgeMap[edgeKey1] || edgeMap[edgeKey2];
-            if (edge) {
-                var edgeId = edge.node1_id + '-' + edge.node2_id + '-' + edge.type;
-                if (!edgeSet.has(edgeId)) {
-                    edgeSet.add(edgeId);
-                    resultEdges.push(edge);
-                }
-            }
-        }
-    });
-
-    console.log('Found', allPaths.length, 'cause-effect paths');
-
-    // Collect all unique start and end nodes from found paths
-    var actualStartNodes = new Set();
-    var actualEndNodes = new Set();
-    allPaths.forEach(function(pathInfo) {
-        actualStartNodes.add(pathInfo.startNode);
-        actualEndNodes.add(pathInfo.endNode);
-    });
-
-    return {
-        edges: resultEdges,
-        startNodes: Array.from(actualStartNodes),
-        endNodes: Array.from(actualEndNodes)
-    };
-}
-
-function runQuery() {
-    if (!init_sigma) {
-        alert('Graph not initialized');
-        return;
-    }
-
-    showStatus('Searching...');
-
-    // Stop any running layout from previous search
-    if (init_sigma.isForceAtlas2Running && init_sigma.isForceAtlas2Running()) {
-        init_sigma.stopForceAtlas2();
-    }
-
-    // Kill the ForceAtlas2 worker to fully reset it
-    if (init_sigma.killForceAtlas2) {
-        init_sigma.killForceAtlas2();
-    }
-
-    // Clear the graph completely
-    init_sigma.graph.clear();
-    init_sigma.refresh();
-
-    // Reset camera to default position
-    init_sigma.camera.goTo({
-        x: 0,
-        y: 0,
-        angle: 0,
-        ratio: 1
-    });
-
-    var queryType = $('#select_query_type').val();
-    var results = [];
-
-    switch(queryType) {
-        case 'advice':
-            var topic = $('#input_topic_advice').val();
-            if (!topic) {
-                showStatus('Please enter a topic');
-                return;
-            }
-            results = torah1.filter(item =>
-                item.type === 'eitza' && item.node2_id && item.node2_id.includes(topic)
-            );
-            break;
-
-        case 'effects':
-            var topic = $('#input_topic_effects').val();
-            if (!topic) {
-                showStatus('Please enter a topic');
-                return;
-            }
-            results = torah1.filter(item =>
-                item.type === 'eitza' && item.node1_id && item.node1_id.includes(topic)
-            );
-            break;
-
-        case 'by_torah':
-            var torahNum = parseInt($('#select_torah').val());
-            results = torah1.filter(item => item.reference === torahNum);
-            break;
-
-        case 'bechinos':
-            var topic = $('#input_topic_bechinos').val();
-            if (!topic) {
-                showStatus('Please enter a topic');
-                return;
-            }
-            results = torah1.filter(item =>
-                item.type === 'bechina' &&
-                ((item.node1_id && item.node1_id.includes(topic)) ||
-                 (item.node2_id && item.node2_id.includes(topic)))
-            );
-            break;
-
-        case 'connected':
-            var topic = $('#input_topic_1').val();
-            if (!topic) {
-                showStatus('Please enter a topic');
-                return;
-            }
-            results = torah1.filter(item =>
-                (item.node1_id && item.node1_id.includes(topic)) ||
-                (item.node2_id && item.node2_id.includes(topic))
-            );
-            break;
-
-        case 'cause_effect_path':
-            var startNode = $('#input_start_node').val();
-            var endNode = $('#input_end_node').val();
-            if (!startNode || !endNode) {
-                showStatus('Please enter both start and end nodes');
-                return;
-            }
-            var pathResult = findCauseEffectPaths(startNode, endNode, torah1);
-            if (!pathResult || pathResult.edges.length === 0) {
-                showStatus('No cause-effect path found between these nodes');
-                setTimeout(() => $('#div_status').hide(), 3000);
-                return;
-            }
-            // Build graph with highlighted nodes (now arrays)
-            buildGraph(pathResult.edges, {
-                startNodes: pathResult.startNodes,
-                endNodes: pathResult.endNodes
-            });
-            return; // Skip the normal buildGraph call below
-    }
-
-    console.log('Query returned', results.length, 'results');
-
-    if (results.length === 0) {
-        showStatus('No results found');
-        setTimeout(() => $('#div_status').hide(), 2000);
-        return;
-    }
-
-    // Build graph
-    buildGraph(results.slice(0, 150));
-}
-
-function buildGraph(edges, highlightNodes) {
-    var nodes = {};
-    var degrees = {};
-    highlightNodes = highlightNodes || {};
-
-    // Build nodes from edges
-    edges.forEach(function(edge, idx) {
-        if (edge.node1_id && !nodes[edge.node1_id]) {
-            nodes[edge.node1_id] = {
-                id: edge.node1_id,
-                label: edge.node1_text || edge.node1_id,
-                x: 0,
-                y: 0,
-                size: 1,
-                color: '#6cbef4'
-            };
-        }
-
-        if (edge.node2_id && !nodes[edge.node2_id]) {
-            nodes[edge.node2_id] = {
-                id: edge.node2_id,
-                label: edge.node2_text || edge.node2_id,
-                x: 0,
-                y: 0,
-                size: 1,
-                color: '#6cbef4'
-            };
-        }
-    });
-
-    // Place nodes on a circle so the layout starts evenly spaced
-    var nodeIds = Object.keys(nodes);
-    nodeIds.forEach(function(id, index) {
-        var angle = (2 * Math.PI * index) / nodeIds.length;
-        nodes[id].x = Math.cos(angle);
-        nodes[id].y = Math.sin(angle);
-    });
-
-    // Add nodes to graph
-    Object.values(nodes).forEach(node => {
-        init_sigma.graph.addNode(node);
-    });
-
-    // Add edges with all properties
-    edges.forEach(function(edge, idx) {
-        if (edge.node1_id && edge.node2_id) {
-            try {
-                init_sigma.graph.addEdge({
-                    id: 'e' + idx,
-                    source: edge.node1_id,
-                    target: edge.node2_id,
-                    type: edge.type === 'eitza' ? 'arrow' : 'line',
-                    // Store all data for click handler
-                    node1_text: edge.node1_text,
-                    node2_text: edge.node2_text,
-                    proof: edge.proof,
-                    reference: edge.reference,
-                    color: edge.type === 'eitza' ? '#cf4ac8' : '#999',
-                    size: 1
-                });
-                degrees[edge.node1_id] = (degrees[edge.node1_id] || 0) + 1;
-                degrees[edge.node2_id] = (degrees[edge.node2_id] || 0) + 1;
-            } catch(e) {
-                // Skip duplicate edges
-            }
-        }
-    });
-
-    // Scale node sizes based on degree for better visibility
-    Object.keys(degrees).forEach(function(id) {
-        var node = init_sigma.graph.nodes(id);
-        if (node) {
-            node.size = 1 + Math.sqrt(degrees[id]);
-        }
-    });
-
-    // Apply special highlighting to start/end nodes (after degree scaling)
-    if (highlightNodes.startNodes) {
-        highlightNodes.startNodes.forEach(function(nodeId) {
-            var startNode = init_sigma.graph.nodes(nodeId);
-            if (startNode) {
-                startNode.color = '#00ff00';  // Bright green for start
-                startNode.size = Math.max(startNode.size, 10);  // Ensure it's large
-            }
-        });
-    }
-    if (highlightNodes.endNodes) {
-        highlightNodes.endNodes.forEach(function(nodeId) {
-            var endNode = init_sigma.graph.nodes(nodeId);
-            if (endNode) {
-                endNode.color = '#ff0000';  // Bright red for end
-                endNode.size = Math.max(endNode.size, 10);  // Ensure it's large
-            }
-        });
-    }
-
-    // Refresh display
-    init_sigma.refresh();
-
-    // Apply force layout if available
-    if (init_sigma.startForceAtlas2) {
-        var useBarnesHut = init_sigma.graph.nodes().length > 50;
-        init_sigma.startForceAtlas2({
-            worker: true,
-            barnesHutOptimize: useBarnesHut,
-            barnesHutTheta: 0.8,
-            gravity: 0.6,
-            scalingRatio: 18,
-            slowDown: 4,
-            strongGravityMode: true
-        });
-
-        setTimeout(function() {
-            init_sigma.stopForceAtlas2();
-            fitToScreen();
-        }, Math.min(5000, 1000 + edges.length * 15));
-    } else {
-        fitToScreen();
-    }
-
-    showStatus('Found ' + Object.keys(nodes).length + ' nodes, ' + edges.length + ' connections');
-    setTimeout(() => $('#div_status').hide(), 3000);
-}
-
-function fitToScreen() {
-    if (!init_sigma) return;
-    var graphNodes = init_sigma.graph.nodes();
-    if (!graphNodes.length) return;
-
-    var bounds = graphNodes.reduce(function(acc, node) {
-        acc.minX = Math.min(acc.minX, node.x);
-        acc.maxX = Math.max(acc.maxX, node.x);
-        acc.minY = Math.min(acc.minY, node.y);
-        acc.maxY = Math.max(acc.maxY, node.y);
-        return acc;
-    }, { minX: Infinity, maxX: -Infinity, minY: Infinity, maxY: -Infinity });
-
-    var renderer = init_sigma.renderers[0];
-    var width = renderer.width || renderer.container.offsetWidth;
-    var height = renderer.height || renderer.container.offsetHeight;
-
-    if (!width || !height) return;
-
-    var sizeX = bounds.maxX - bounds.minX;
-    var sizeY = bounds.maxY - bounds.minY;
-
-    // Use proportional padding (20% of viewport on each side = 40% total)
-    var paddingX = width * 0.4;
-    var paddingY = height * 0.4;
-
-    var ratioX = sizeX ? (sizeX + paddingX) / width : 1;
-    var ratioY = sizeY ? (sizeY + paddingY) / height : 1;
-    var ratio = Math.max(ratioX, ratioY);
-
-    var target = {
-        x: (bounds.minX + bounds.maxX) / 2,
-        y: (bounds.minY + bounds.maxY) / 2,
-        ratio: ratio || 1
-    };
-
-    if (sigma.misc && sigma.misc.animation && typeof sigma.misc.animation.camera === 'function') {
-        sigma.misc.animation.camera(init_sigma.camera, target, { duration: 300 });
-    } else {
-        init_sigma.camera.goTo(target);
-    }
-    init_sigma.refresh();
-}
-
-function showStatus(msg) {
-    $('#div_status').text(msg).show();
-    var elem = document.getElementById('div_status');
-    if (elem) {
-        elem.style.top = 'calc(50% - ' + (elem.offsetHeight/2) + 'px)';
-        elem.style.left = 'calc(50% - ' + (elem.offsetWidth/2) + 'px)';
-    }
-}
-
-function toHebrew() {
-    $('#div_cypher_query').css('direction', 'rtl');
-    $('button[onclick="runQuery()"]').text('חפש');
-    $('#select_query_type option[value="advice"]').text('קבל עצה');
-    $('#select_query_type option[value="effects"]').text('קבל נמשך');
-    $('#select_query_type option[value="by_torah"]').text('חפש לפי תורה');
-    $('#select_query_type option[value="bechinos"]').text('בחינות');
-    $('#select_query_type option[value="connected"]').text('כל הקשורים');
-    $('#select_query_type option[value="cause_effect_path"]').text('מסלול סיבה-תוצאה');
-    $('#label_start_node').text('נושא התחלה:');
-    $('#label_end_node').text('נושא סיום:');
-    $('#tab_search').text('חיפוש');
-    $('#tab_details').text('פרטים');
-    $('#button_english').show();
-    $('#button_hebrew').hide();
-}
-
-function toEnglish() {
-    $('#div_cypher_query').css('direction', 'ltr');
-    $('button[onclick="runQuery()"]').text('Run Search');
-    $('#select_query_type option[value="advice"]').text('Get Advice');
-    $('#select_query_type option[value="effects"]').text('Get Effects');
-    $('#select_query_type option[value="by_torah"]').text('Search By Torah');
-    $('#select_query_type option[value="bechinos"]').text('Get Bechinos');
-    $('#select_query_type option[value="connected"]').text('Get All Connected');
-    $('#select_query_type option[value="cause_effect_path"]').text('Cause-Effect Path');
-    $('#label_start_node').text('Start Node:');
-    $('#label_end_node').text('End Node:');
-    $('#tab_search').text('Search');
-    $('#tab_details').text('Details');
-    $('#button_hebrew').show();
-    $('#button_english').hide();
-}
-
-// ===== Tab Panel Functions =====
-
-// Tab switching
-function switchToTab(tabName) {
-    // Update tab buttons
-    $('.panel-tab').removeClass('active');
-
-    if (tabName === 'search') {
-        $('#tab_search').addClass('active');
-        $('#searchPanel').addClass('active');
-        $('#detailsPanel').removeClass('active');
-    } else if (tabName === 'details') {
-        $('#tab_details').addClass('active');
-        $('#detailsPanel').addClass('active');
-        $('#searchPanel').removeClass('active');
-    }
-}
-
-// Toggle panel collapse/expand
-$(document).ready(function() {
-    $('#togglePanelBtn').click(function() {
-        $('#panelContainer').toggleClass('collapsed');
-    });
-
-    // Resize functionality
-    var isResizing = false;
-    var resizeHandle = $('#resizeHandle');
-    var panelContainer = $('#panelContainer');
-
-    resizeHandle.on('mousedown', function(e) {
-        isResizing = true;
-        resizeHandle.addClass('dragging');
-        $('body').css({
-            'cursor': 'ew-resize',
-            'user-select': 'none'
-        });
-        e.preventDefault();
-    });
-
-    $(document).on('mousemove', function(e) {
-        if (!isResizing) return;
-
-        var containerRect = $('.main-container')[0].getBoundingClientRect();
-        var newWidth = e.clientX - containerRect.left;
-
-        if (newWidth >= 300 && newWidth <= 600) {
-            panelContainer.css('width', newWidth + 'px');
-            $('#togglePanelBtn').css('left', newWidth + 'px');
-        }
-    });
-
-    $(document).on('mouseup', function() {
-        if (isResizing) {
-            isResizing = false;
-            resizeHandle.removeClass('dragging');
-            $('body').css({
-                'cursor': '',
-                'user-select': ''
-            });
-        }
-    });
-});
-    </script>
+    <!-- ===== APPLICATION LOGIC ===== -->
+    <script src="./js/app.js"></script>
 </body>
 </html>

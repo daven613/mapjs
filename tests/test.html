@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Torah Map Explorer - Test Suite</title>
+    <style>
+        body { font-family: 'Inter', -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; background: #f8fafc; color: #0f172a; }
+        h1 { font-size: 24px; margin-bottom: 8px; }
+        .subtitle { color: #64748b; margin-bottom: 24px; }
+        .summary { padding: 16px 20px; border-radius: 12px; margin-bottom: 24px; font-weight: 600; font-size: 16px; }
+        .summary.pass { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+        .summary.fail { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+        .log { background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 12px; font-family: 'Consolas', monospace; font-size: 13px; line-height: 1.6; white-space: pre-wrap; overflow-x: auto; }
+        .pass-line { color: #4ade80; }
+        .fail-line { color: #f87171; }
+        .section-line { color: #60a5fa; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Torah Map Explorer - Test Suite</h1>
+    <p class="subtitle">Testing the search engine algorithms</p>
+    <div class="summary" id="summary">Running tests...</div>
+    <div class="log" id="log"></div>
+
+    <!-- Load real data for integration tests -->
+    <script src="../data/torah2.js"></script>
+    <!-- Load search engine -->
+    <script src="../js/search-engine.js"></script>
+    <!-- Load tests -->
+    <script src="tests.js"></script>
+    <script>
+        // Capture console output
+        var logEl = document.getElementById('log');
+        var originalLog = console.log;
+        var originalError = console.error;
+        var logLines = [];
+
+        console.log = function() {
+            var msg = Array.prototype.join.call(arguments, ' ');
+            logLines.push(msg);
+            originalLog.apply(console, arguments);
+        };
+        console.error = function() {
+            var msg = Array.prototype.join.call(arguments, ' ');
+            logLines.push(msg);
+            originalError.apply(console, arguments);
+        };
+
+        // Run tests
+        var results = runAllTests();
+
+        // Render output
+        var html = '';
+        logLines.forEach(function(line) {
+            if (line.indexOf('PASS:') !== -1) {
+                html += '<span class="pass-line">' + escapeHtml(line) + '</span>\n';
+            } else if (line.indexOf('FAIL:') !== -1 || line.indexOf('ERROR') !== -1) {
+                html += '<span class="fail-line">' + escapeHtml(line) + '</span>\n';
+            } else if (line.indexOf('---') !== -1) {
+                html += '<span class="section-line">' + escapeHtml(line) + '</span>\n';
+            } else {
+                html += escapeHtml(line) + '\n';
+            }
+        });
+        logEl.innerHTML = html;
+
+        // Summary
+        var summaryEl = document.getElementById('summary');
+        if (results.failed === 0) {
+            summaryEl.className = 'summary pass';
+            summaryEl.textContent = 'All ' + results.passed + ' tests passed!';
+        } else {
+            summaryEl.className = 'summary fail';
+            summaryEl.textContent = results.passed + ' passed, ' + results.failed + ' failed';
+        }
+
+        function escapeHtml(str) {
+            var div = document.createElement('div');
+            div.appendChild(document.createTextNode(str));
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>

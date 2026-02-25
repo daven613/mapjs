@@ -1,606 +1,794 @@
-// Main application logic
-// Data is loaded from torah1.js and torah2.js files
+/**
+ * Torah Map Explorer - Main Application Logic
+ * Manages graph visualization, UI state, and user interactions
+ */
 
-func_hide('button_english');
+// ===== Global State =====
+var searchEngine = null;
+var sigmaInstance = null;
+var currentMode = 'explore';
+var currentLanguage = 'hebrew';
+var searchHistory = [];
+var selectedNodeId = null;
 
-// Run on load
-func_show_status('Loading...');
-func_change_query_type(document.getElementById('select_query_type').value);
+// ===== Mode Descriptions =====
+var modeDescriptions = {
+    explore:  'Find everything connected to a topic - all aspects and advice links.',
+    advice:   'Discover what advice relates to this topic (incoming eitza connections).',
+    effects:  'See what this topic leads to or causes (outgoing eitza connections).',
+    aspects:  'Explore deeper aspects and meanings of a topic (bechina connections).',
+    torah:    'Browse all connections found in a specific Torah from Likutay Halachos.',
+    path:     'Trace the chain of connections from one concept to another.',
+    common:   'Find what two topics share in common - their overlapping connections.',
+    multi:    'Combine keyword, type, and Torah number filters for precise searches.'
+};
 
-// Hide keyboard shortcuts
-func_toggle_keyboard_shortcuts()
+var modeDescriptionsHeb = {
+    explore:  '\u05de\u05e6\u05d0 \u05d0\u05ea \u05db\u05dc \u05de\u05d4 \u05e9\u05e7\u05e9\u05d5\u05e8 \u05dc\u05e0\u05d5\u05e9\u05d0 - \u05db\u05dc \u05d4\u05d1\u05d7\u05d9\u05e0\u05d5\u05ea \u05d5\u05e7\u05e9\u05e8\u05d9 \u05d4\u05e2\u05e6\u05d5\u05ea.',
+    advice:   '\u05d2\u05dc\u05d4 \u05d0\u05d9\u05d6\u05d5 \u05e2\u05e6\u05d4 \u05e7\u05e9\u05d5\u05e8\u05d4 \u05dc\u05e0\u05d5\u05e9\u05d0 \u05d4\u05d6\u05d4 (\u05d7\u05d9\u05d1\u05d5\u05e8\u05d9 \u05e2\u05e6\u05d4 \u05e0\u05db\u05e0\u05e1\u05d9\u05dd).',
+    effects:  '\u05e8\u05d0\u05d4 \u05dc\u05de\u05d4 \u05d4\u05e0\u05d5\u05e9\u05d0 \u05d4\u05d6\u05d4 \u05de\u05d5\u05d1\u05d9\u05dc \u05d0\u05d5 \u05d2\u05d5\u05e8\u05dd (\u05d7\u05d9\u05d1\u05d5\u05e8\u05d9 \u05e2\u05e6\u05d4 \u05d9\u05d5\u05e6\u05d0\u05d9\u05dd).',
+    aspects:  '\u05d7\u05e7\u05d5\u05e8 \u05d1\u05d7\u05d9\u05e0\u05d5\u05ea \u05e2\u05de\u05d5\u05e7\u05d5\u05ea \u05d9\u05d5\u05ea\u05e8 \u05e9\u05dc \u05e0\u05d5\u05e9\u05d0 (\u05d7\u05d9\u05d1\u05d5\u05e8\u05d9 \u05d1\u05d7\u05d9\u05e0\u05d4).',
+    torah:    '\u05e2\u05d9\u05d9\u05df \u05d1\u05db\u05dc \u05d4\u05d7\u05d9\u05d1\u05d5\u05e8\u05d9\u05dd \u05d4\u05e0\u05de\u05e6\u05d0\u05d9\u05dd \u05d1\u05ea\u05d5\u05e8\u05d4 \u05de\u05e1\u05d5\u05d9\u05de\u05ea \u05de\u05dc\u05d9\u05e7\u05d5\u05d8\u05d9 \u05d4\u05dc\u05db\u05d5\u05ea.',
+    path:     '\u05e2\u05e7\u05d5\u05d1 \u05d0\u05d7\u05e8 \u05e9\u05e8\u05e9\u05e8\u05ea \u05d4\u05d7\u05d9\u05d1\u05d5\u05e8\u05d9\u05dd \u05de\u05de\u05d5\u05e9\u05d2 \u05d0\u05d7\u05d3 \u05dc\u05de\u05e9\u05e0\u05d4\u05d5.',
+    common:   '\u05de\u05e6\u05d0 \u05d0\u05ea \u05de\u05d4 \u05e9\u05e9\u05e0\u05d9 \u05e0\u05d5\u05e9\u05d0\u05d9\u05dd \u05d7\u05d5\u05dc\u05e7\u05d9\u05dd - \u05d4\u05d7\u05d9\u05d1\u05d5\u05e8\u05d9\u05dd \u05d4\u05d7\u05d5\u05e4\u05e4\u05d9\u05dd \u05e9\u05dc\u05d4\u05dd.',
+    multi:    '\u05e9\u05dc\u05d1 \u05de\u05d9\u05dc\u05ea \u05de\u05e4\u05ea\u05d7, \u05e1\u05d5\u05d2 \u05d5\u05de\u05e1\u05e4\u05e8 \u05ea\u05d5\u05e8\u05d4 \u05dc\u05d7\u05d9\u05e4\u05d5\u05e9 \u05de\u05d3\u05d5\u05d9\u05e7.'
+};
 
-// Neo4j cypher get topics with advice
-var arr_topics_advice = [];
-
-//arr_topics_advice = autofill_advice(torah1);
-arr_topics_advice = get_autofill_data(torah1, ["eitza"], ["node2_id"])
-
-// Delete duplacates arr_topics_advice
-var seen = {};
-arr_topics_advice = arr_topics_advice.filter(
-    function (item) {
-        return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+// ===== Initialization =====
+$(document).ready(function() {
+    if (typeof torah1 === 'undefined') {
+        showToast('Error: Torah data not loaded');
+        return;
     }
-);
-// Sort
-arr_topics_advice.sort();
-// Add to autocomplete
-$("#input_topic_advice").autocomplete({
-    source: arr_topics_advice,
-    minLength: 0,
-    // show overlay to prevent sigma from acting on mouse hover and closing the live search dropdown
-    open: function (event, ui) { func_show('overlay'); },
-    close: function (event, ui) { func_hide('overlay'); },
-});
-//.bind('focus', function(){ $(this).autocomplete("search"); } );
 
-// Neo4j cypher get topics with effects
-var arr_topics_effects = [];
+    // Initialize search engine
+    searchEngine = new TorahSearchEngine(torah1);
 
-arr_topics_effects = get_autofill_data(torah1, ["eitza"], ["node1_id"])
+    // Display stats
+    var stats = searchEngine.getStats();
+    $('#statTopics').text(stats.totalTopics);
+    $('#statConnections').text(stats.totalConnections);
+    $('#statTorahs').text(stats.torahCount);
+    $('#wsTopics').text(stats.totalTopics);
+    $('#wsConnections').text(stats.totalConnections);
+    $('#wsTorahs').text(stats.torahCount);
 
-// Dedup arr_topics_effects
-var seen = {};
-arr_topics_effects = arr_topics_effects.filter(
-    function (item) {
-        return seen.hasOwnProperty(item) ? false : (seen[item] = true);
-    }
-);
-// Sort
-arr_topics_effects.sort();
-// Add to autocomplete
-$("#input_topic_effects").autocomplete({
-    source: arr_topics_effects,
-    minLength: 0,
-    // show overlay to prevent sigma from acting on mouse hover and closing the live search dropdown
-    open: function (event, ui) { func_show('overlay'); },
-    close: function (event, ui) { func_hide('overlay'); },
-});
+    // Setup autocomplete on all inputs
+    var acOptions = {
+        source: function(request, response) {
+            var suggestions = searchEngine.getSuggestions(request.term, 20);
+            response(suggestions);
+        },
+        minLength: 2
+    };
 
+    $('#inputTopic, #inputTopicA, #inputTopicB, #filterKeyword').autocomplete(acOptions);
 
-// Neo4j cypher get topics with bechinos
-var arr_topics_bechinos = [];
-arr_topics_bechinos = get_autofill_data(torah1, ["bechina"], ["node1_id", "node2_id"])
-// Dedup arr_topics_bechinos
-var seen = {};
+    // Populate Torah dropdowns
+    searchEngine.allTorahNumbers.forEach(function(num) {
+        var opt = '<option value="' + num + '">' + num + '</option>';
+        $('#selectTorah').append(opt);
+        $('#filterTorah').append(opt);
+    });
 
-// Sort
-arr_topics_bechinos.sort();
-// Add to autocomplete
-$("#input_topic_bechinos").autocomplete({
-    source: arr_topics_bechinos,
-    minLength: 0,
-    // show overlay to prevent sigma from acting on mouse hover and closing the live search dropdown
-    open: function (event, ui) { func_show('overlay'); },
-    close: function (event, ui) { func_hide('overlay'); },
-});
+    // Initialize Sigma
+    initSigma();
 
-// Neo4j cypher get topics
-var arr_topics = [];
-arr_topics = get_autofill_data(torah1, ["bechina", "eitza"], ["node1_id", "node2_id"])
-// Sort
-arr_topics.sort();
-// Add to autocompletes
-$("#input_topic_1").autocomplete({
-    source: arr_topics,
-    minLength: 0,
-    // show overlay to prevent sigma from acting on mouse hover and closing the live search dropdown
-    open: function (event, ui) { func_show('overlay'); },
-    close: function (event, ui) { func_hide('overlay'); },
-});
-$("#input_topic_2").autocomplete({
-    source: arr_topics,
-    minLength: 0,
-    // show overlay to prevent sigma from acting on mouse hover and closing the live search dropdown
-    open: function (event, ui) { func_show('overlay'); },
-    close: function (event, ui) { func_hide('overlay'); },
+    // Set initial mode
+    selectMode('explore');
+
+    // Keyboard shortcuts
+    $(document).on('keydown', function(e) {
+        if (e.key === 'Enter' && $(e.target).is('input')) {
+            runSearch();
+        }
+    });
 });
 
-// Neo4j cypher get torahs
-var arr_torahs = [];
-arr_torahs = get_autofill_data(torah1, ["bechina", "eitza"], ['reference'])
-// Sort
-arr_torahs.sort(function (a, b) { return a - b });
-// Add to select
-arr_torahs.forEach(
-    function (torah) {
-        var z = document.createElement("option");
-        z.setAttribute("value", torah);
-        var t = document.createTextNode(torah);
-        z.appendChild(t);
-        document.getElementById("select_torah").appendChild(z);
-    }
-);
-//Instantiate sigma
-var init_sigma = new sigma({
-    renderer: {
-        container: document.getElementById('graph-container'),
-        type: 'canvas'
-    },
-    settings: {
-        doubleClickEnabled: false,
-        //			autoCurveSortByDirection: true,
-        //			mouseEnabled: false,
-        enableHovering: true,
-        minNodeSize: 1.0,
-        maxNodeSize: 15.0,
-        labelAlignment: 'center',
-        labelThreshold: 2,
-        labelSize: 'fixed',
-        defaultLabelSize: 13,
-        defaultLabelColor: '#000000',
-        minEdgeSize: 0.5,
-        maxEdgeSize: 1.8,
-        enableEdgeHovering: true,
-        //			defaultEdgeHoverColor: '#000',
-        //			edgeHoverColor: 'edge',
-        edgeHoverSizeRatio: 1,
-        edgeHoverExtremities: true,
-        animationsTime: 1500,
-        drawEdgeLabels: true,
-        autoCurveRatio: 2,
-        // 			dragNodeStickiness: 0.01,
-        // 			minArrowSize: 15,
-        // 			drawEdges: true,
-        // 			sideMargin: 2,
-        // 			scalingMode: 'outside',
-        // 			animationsTime: 1000,
-        // 			defaultEdgeLabelSize: 12,
-        // 			edgeLabelSize: 'fixed',
-        // 			edgeLabelThreshold: 2.0,
-    }
-});
-var activeState = sigma.plugins.activeState(init_sigma);
-var dragListener = sigma.plugins.dragNodes(init_sigma, init_sigma.renderers[0], activeState);
-//var select = sigma.plugins.select(init_sigma, activeState);
-//var keyboard = sigma.plugins.keyboard(init_sigma, init_sigma.renderers[0]);
-//select.bindKeyboard(keyboard);
-// Bind the events
-init_sigma.bind('clickNode doubleClickNode rightClickNode', function (e) {
-    //console.log(e.type, e.data.node.label, e.data.captor);
-    if (e.type == "clickNode") {
-        func_hide("div_connection_info")
-    }
-});
-
-init_sigma.bind('clickEdge doubleClickEdge rightClickEdge', function (e) {
-    //console.log(e.type, e.data.edge, e.data.captor);
-    if (e.type == "clickEdge") {
-        document.getElementById("txt_from_node").innerHTML = e.data.edge.node1_text;
-        document.getElementById("txt_to_node").innerHTML = e.data.edge.node2_text;
-        document.getElementById("txt_proof").innerHTML = e.data.edge.proof;
-        document.getElementById("txt_reference").innerHTML = e.data.edge.reference;
-        func_show("div_connection_info")
-    }
-});
-
-init_sigma.bind('clickStage doubleClickStage rightClickStage', function (e) {
-    //console.log(e.type, e.data.captor);
-    if (e.type == "clickStage") {
-        func_hide("div_connection_info");
-    }
-});
-
-// 	init_sigma.bind('hovers', function(e) {
-// 		console.log(e.type, e.data.captor, e.data);
-// 	});
-
-var kbd = sigma.plugins.keyboard(init_sigma, init_sigma.renderers[0], {
-    zoomingRatio: 1.3
-});
-
-func_hide('div_status');
-
-// ------- Functions --------
-function func_center(id) {
-    var e = document.getElementById(id);
-    half_height = document.getElementById(id).offsetHeight / 2;
-    e.style.top = '-moz-calc(50% - ' + half_height + 'px)';
-    e.style.top = '-webkit-calc(50% - ' + half_height + 'px)';
-    e.style.top = 'calc(50% - ' + half_height + 'px)';
-    half_width = document.getElementById(id).offsetWidth / 2;
-    e.style.left = '-moz-calc(50% - ' + half_width + 'px)';
-    e.style.left = '-webkit-calc(50% - ' + half_width + 'px)';
-    e.style.left = 'calc(50% - ' + half_width + 'px)';
-}
-
-function func_show(id) {
-    var e = document.getElementById(id);
-    e.style.display = 'block';
-}
-
-function func_hide(id) {
-    var e = document.getElementById(id);
-    e.style.display = 'none';
-}
-
-function func_show_hide(id) {
-    var e = document.getElementById(id);
-    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
-}
-
-function func_escape_chars(string) {
-    return string.toString().replace(/"/g, '\\"').replace(/'/g, "\\'");
-}
-
-function func_show_status(text) {
-    document.getElementById('div_status').innerHTML = text;
-    func_show('div_status');
-    func_center('div_status');
-}
-
-function func_toggle_cypher_query() {
-    var e = document.getElementById('div_cypher_query');
-    if (e.style.display != 'none') {
-        e.style.display = 'none';
-        document.getElementById('button_toggle_cypher_query').innerHTML = lang_show_cypher_box;
-    } else {
-        e.style.display = '';
-        document.getElementById('button_toggle_cypher_query').innerHTML = 'X';
-    }
-}
-
-function func_toggle_keyboard_shortcuts() {
-    var e = document.getElementById('div_keyboard_shortcuts');
-    if (e.style.display != 'none') {
-        e.style.display = 'none';
-        document.getElementById('button_toggle_keyboard_shortcuts').innerHTML = '&#708;';
-    } else {
-        e.style.display = '';
-        document.getElementById('button_toggle_keyboard_shortcuts').innerHTML = 'X';
-    }
-}
-
-function func_change_query_type(value) {
-    switch (value) {
-        case "advice":
-            func_show('div_select_topic_advice');
-            func_hide('div_select_topic_effects');
-            func_hide('div_select_topic_bechinos');
-            //func_hide('div_select_topic');
-            func_hide('div_select_topic_1');
-            func_hide('div_select_topic_2');
-            func_hide('div_select_torah');
-            func_hide('div_select_depth_1');
-            func_hide('div_select_depth_2');
-            func_hide('div_raw_query');
-            break;
-        case "effects":
-            func_hide('div_select_topic_advice');
-            func_show('div_select_topic_effects');
-            func_hide('div_select_topic_bechinos');
-            //func_hide('div_select_topic');
-            func_hide('div_select_topic_1');
-            func_hide('div_select_topic_2');
-            func_hide('div_select_torah');
-            func_hide('div_select_depth_1');
-            func_hide('div_select_depth_2');
-            func_hide('div_raw_query');
-            break;
-        case "by_torah":
-            func_hide('div_select_topic_advice');
-            func_hide('div_select_topic_effects');
-            func_hide('div_select_topic_bechinos');
-            //func_hide('div_select_topic');
-            func_hide('div_select_topic_1');
-            func_hide('div_select_topic_2');
-            func_show('div_select_torah');
-            func_hide('div_select_depth_1');
-            func_hide('div_select_depth_2');
-            func_hide('div_raw_query');
-            break;
-        case "bechinos":
-            func_hide('div_select_topic_advice');
-            func_hide('div_select_topic_effects');
-            func_show('div_select_topic_bechinos');
-            //func_hide('div_select_topic');
-            func_hide('div_select_topic_1');
-            func_hide('div_select_topic_2');
-            func_hide('div_select_torah');
-            func_hide('div_select_depth_1');
-            func_hide('div_select_depth_2');
-            func_hide('div_raw_query');
-            break;
-        case "connected":
-            func_hide('div_select_topic_advice');
-            func_hide('div_select_topic_effects');
-            func_hide('div_select_topic_bechinos');
-            //func_show('div_select_topic');
-            func_show('div_select_topic_1');
-            document.getElementById("label_select_topic_1").innerHTML = lang_select_topic;
-            func_hide('div_select_topic_2');
-            func_hide('div_select_torah');
-            func_hide('div_select_depth_1');
-            func_hide('div_select_depth_2');
-            func_hide('div_raw_query');
-            break;
-        case "connect_two":
-            func_hide('div_select_topic_advice');
-            func_hide('div_select_topic_effects');
-            func_hide('div_select_topic_bechinos');
-            func_show('div_select_topic_1');
-            document.getElementById("label_select_topic_1").innerHTML = lang_select_topic_1;
-            func_show('div_select_topic_2');
-            func_hide('div_select_torah');
-            func_show('div_select_depth_1');
-            document.getElementById("label_select_depth_1").innerHTML = lang_select_depth;
-            func_hide('div_select_depth_2');
-            func_hide('div_raw_query');
-            break;
-        case "likutay":
-            func_hide('div_select_topic_advice');
-            func_hide('div_select_topic_effects');
-            func_hide('div_select_topic_bechinos');
-            func_show('div_select_topic_1');
-            document.getElementById("label_select_topic_1").innerHTML = lang_select_topic_1;
-            func_show('div_select_topic_2');
-            func_hide('div_select_torah');
-            func_show('div_select_depth_1');
-            document.getElementById("label_select_depth_1").innerHTML = lang_select_depth_1;
-            func_show('div_select_depth_2');
-            func_hide('div_raw_query');
-            break;
-        case "query":
-            func_hide('div_select_topic_advice');
-            func_hide('div_select_topic_effects');
-            func_hide('div_select_topic_bechinos');
-            func_hide('div_select_topic_1');
-            func_hide('div_select_topic_2');
-            func_hide('div_select_torah');
-            func_hide('div_select_depth_1');
-            func_hide('div_select_depth_2');
-            func_show('div_raw_query');
-            break;
-    }
-}
-
-function func_run_query() {
-    init_sigma.graph.clear();
-    init_sigma.refresh();
-    func_show_status('Running Query...'); //מחפש
-    switch (document.getElementById("select_query_type").value) {
-        case "advice":
-            var str_topic = func_escape_chars(document.getElementById("input_topic_advice").value);
-            var gr = query_advice(str_topic, torah1);
-            break;
-        case "effects":
-            var str_topic = func_escape_chars(document.getElementById("input_topic_effects").value);
-            var gr = query_effects(str_topic, torah1);
-            break;
-        case "by_torah":
-            var str_torah = func_escape_chars(document.getElementById("select_torah").value);
-            var gr = query_by_torah(str_torah, torah1);
-            break;
-        case "bechinos":
-            var str_topic = func_escape_chars(document.getElementById("input_topic_bechinos").value);
-            var gr = query_bechinos(str_topic, torah1);
-            break;
-        case "connected":
-            var str_topic = func_escape_chars(document.getElementById("input_topic_1").value);
-            var gr = query_connected(str_topic, torah1);
-            break;
-        case "connect_two":
-            var str_topic1 = func_escape_chars(document.getElementById("input_topic_1").value);
-            var str_topic2 = func_escape_chars(document.getElementById("input_topic_2").value);
-            var str_depth = func_escape_chars(document.getElementById("select_depth_1").value);
-            var gr = query_connect_two(str_depth,str_topic1,str_topic2, torah1);
-            break;
-        case "likutay":
-            var str_topic1 = func_escape_chars(document.getElementById("input_topic_1").value);
-            var str_topic2 = func_escape_chars(document.getElementById("input_topic_2").value);
-            var str_depth1 = func_escape_chars(document.getElementById("select_depth_1").value);
-            var str_depth2 = func_escape_chars(document.getElementById("select_depth_2").value);
-            var gr = query_likutay(str_depth1,str_depth1,str_topic1,str_topic2, torah1);
-            break;
-        case "query":
-            // Raw query mode - no longer uses Neo4j
-            break;
-    }
-
-    document.getElementById("txt_raw_query").value = "Query mode (Neo4j no longer used)"
-
-    //gr = create_sigma_graph_from_torah_edges(torah1);
-    adj_list = create_adjacency_object(torah1)
-    init_sigma.graph.read(gr)
-    func_customize_graph(init_sigma);
-}
-
-function func_customize_graph(s, e) {
-
-    if (e) {
-        func_show_status(e[0]['message']);
-    } else if (s) {
-        // Auto-curve parallel edges:
-        sigma.canvas.edges.autoCurve(s);
-
-        s.graph.nodes().forEach(function (node) {
-            //node.label = node.neo4j_data['name'];
-            node.color = '#6cbef4';
-            //node.border_color = '#000';
-            //node.border_size = 1.0;
-            //node.size = 25.0;
-            //node.fixed = false;
-            switch (document.getElementById("select_query_type").value) {
-                case "advice":
-                    var str_topic = func_escape_chars(document.getElementById("input_topic_advice").value);
-                    if (node.label == str_topic) {
-                        node.color = '#f5963e';
-                    }
-                    break;
-                case "effects":
-                    var str_topic = func_escape_chars(document.getElementById("input_topic_effects").value);
-                    if (node.label == str_topic) {
-                        node.color = '#f5963e';
-                    }
-                    break;
-                case "by_torah":
-                    var str_torah = func_escape_chars(document.getElementById("select_torah").value);
-                    if (node.label == str_torah) {
-                        node.color = '#f5963e';
-                    }
-                    break;
-                case "bechinos":
-                    var str_topic = func_escape_chars(document.getElementById("input_topic_bechinos").value);
-                    if (node.label == str_topic) {
-                        node.color = '#f5963e';
-                    }
-                    break;
-                case "connected":
-                    var str_topic = func_escape_chars(document.getElementById("input_topic_1").value);
-                    if (node.label == str_topic) {
-                        node.color = '#f5963e';
-                    }
-                    break;
-                case "connect_two":
-                    var str_topic1 = func_escape_chars(document.getElementById("input_topic_1").value);
-                    var str_topic2 = func_escape_chars(document.getElementById("input_topic_2").value);
-                    if (node.label == str_topic1) {
-                        node.color = '#f5963e';
-                    }
-                    if (node.label == str_topic2) {
-                        node.color = '#f5963e';
-                    }
-                    break;
-                case "likutay":
-                    var str_topic1 = func_escape_chars(document.getElementById("input_topic_1").value);
-                    var str_topic2 = func_escape_chars(document.getElementById("input_topic_2").value);
-                    if (node.label == str_topic1) {
-                        node.color = '#f5963e';
-                    }
-                    if (node.label == str_topic2) {
-                        node.color = '#f5963e';
-                    }
-                    break;
-                case "query":
-                    break;
+// ===== Sigma.js Setup =====
+function initSigma() {
+    try {
+        sigmaInstance = new sigma({
+            renderer: {
+                container: document.getElementById('graph-container'),
+                type: 'canvas'
             }
         });
 
-        s.graph.edges().forEach(function (edge) {
-            var hebrewTrue = document.getElementById('button_english')
-            if (edge.type == 'bechina' || edge.cc_prev_type == 'bechina') {
-                edge.color = '#4acfc8';
-                edge.size = 2.1;
-                edge.type = 'curve';
-                if (hebrewTrue.style.display == "block") {
-                    edge.label = 'בחינה';
-                } else {
-                    edge.label = 'Aspect';
+        sigmaInstance.settings({
+            minNodeSize: 2,
+            maxNodeSize: 14,
+            minEdgeSize: 0.5,
+            maxEdgeSize: 2.5,
+            enableEdgeHovering: true,
+            edgeHoverSizeRatio: 2,
+            defaultNodeColor: '#3b82f6',
+            defaultEdgeColor: '#94a3b8',
+            labelThreshold: 5,
+            labelSize: 'fixed',
+            defaultLabelSize: 13,
+            labelColor: 'node',
+            drawEdges: true,
+            drawEdgeLabels: false,
+            edgesPowRatio: 0.8,
+            edgesArrowSize: 8,
+            minArrowSize: 5,
+            zoomMin: 0.02,
+            zoomMax: 10,
+            mouseZoomDuration: 300,
+            doubleClickZoomDuration: 300
+        });
+
+        // Enable drag
+        sigma.plugins.dragNodes(sigmaInstance, sigmaInstance.renderers[0]);
+
+        // Edge click -> show details
+        sigmaInstance.bind('clickEdge', function(e) {
+            var edge = e.data.edge;
+            showEdgeDetails(edge);
+        });
+
+        // Node click -> show details + highlight
+        sigmaInstance.bind('clickNode', function(e) {
+            var node = e.data.node;
+            selectedNodeId = node.id;
+            showNodeDetails(node.id);
+        });
+
+        // Stage click -> clear selection
+        sigmaInstance.bind('clickStage', function() {
+            selectedNodeId = null;
+        });
+
+        // Double-click node -> expand neighborhood
+        sigmaInstance.bind('doubleClickNode', function(e) {
+            var node = e.data.node;
+            doExpandNode(node.id);
+        });
+
+    } catch(err) {
+        console.error('Sigma init error:', err);
+    }
+}
+
+// ===== Search Mode Selection =====
+function selectMode(mode) {
+    currentMode = mode;
+
+    // Update mode cards
+    $('.mode-card').removeClass('active');
+    $('.mode-card[data-mode="' + mode + '"]').addClass('active');
+
+    // Update description
+    var desc = currentLanguage === 'hebrew' ? modeDescriptionsHeb[mode] : modeDescriptions[mode];
+    $('#modeDescription').text(desc || '');
+
+    // Show correct input group
+    $('#inputSingleTopic, #inputTorahGroup, #inputTwoTopics, #inputMultiFilter').addClass('hidden');
+
+    if (mode === 'explore' || mode === 'advice' || mode === 'effects' || mode === 'aspects') {
+        $('#inputSingleTopic').removeClass('hidden');
+    } else if (mode === 'torah') {
+        $('#inputTorahGroup').removeClass('hidden');
+    } else if (mode === 'path' || mode === 'common') {
+        $('#inputTwoTopics').removeClass('hidden');
+    } else if (mode === 'multi') {
+        $('#inputMultiFilter').removeClass('hidden');
+    }
+}
+
+// ===== Run Search =====
+function runSearch() {
+    if (!searchEngine || !sigmaInstance) return;
+
+    var btn = $('#runSearchBtn');
+    btn.addClass('loading');
+
+    // Short delay so the UI updates before heavy computation
+    setTimeout(function() {
+        doSearch();
+        btn.removeClass('loading');
+    }, 50);
+}
+
+function doSearch() {
+    // Stop and clean up any existing layout
+    stopLayout();
+    sigmaInstance.graph.clear();
+    sigmaInstance.refresh();
+    resetCamera();
+
+    var results, highlightNodes = {};
+    var searchLabel = '';
+
+    switch (currentMode) {
+        case 'explore': {
+            var topic = $('#inputTopic').val().trim();
+            if (!topic) { showToast('Please enter a topic'); return; }
+            results = searchEngine.explore(topic);
+            searchLabel = topic;
+            break;
+        }
+        case 'advice': {
+            var topic = $('#inputTopic').val().trim();
+            if (!topic) { showToast('Please enter a topic'); return; }
+            results = searchEngine.getAdvice(topic);
+            searchLabel = topic;
+            break;
+        }
+        case 'effects': {
+            var topic = $('#inputTopic').val().trim();
+            if (!topic) { showToast('Please enter a topic'); return; }
+            results = searchEngine.getEffects(topic);
+            searchLabel = topic;
+            break;
+        }
+        case 'aspects': {
+            var topic = $('#inputTopic').val().trim();
+            if (!topic) { showToast('Please enter a topic'); return; }
+            results = searchEngine.getAspects(topic);
+            searchLabel = topic;
+            break;
+        }
+        case 'torah': {
+            var num = parseInt($('#selectTorah').val());
+            if (isNaN(num)) { showToast('Please select a Torah number'); return; }
+            results = searchEngine.searchByTorah(num);
+            searchLabel = 'Torah #' + num;
+            break;
+        }
+        case 'path': {
+            var a = $('#inputTopicA').val().trim();
+            var b = $('#inputTopicB').val().trim();
+            if (!a || !b) { showToast('Please enter both start and end topics'); return; }
+            var pathResult = searchEngine.findPath(a, b);
+            if (!pathResult || pathResult.edges.length === 0) {
+                showToast('No path found between these topics');
+                return;
+            }
+            results = pathResult.edges;
+            highlightNodes = { startNodes: pathResult.startNodes, endNodes: pathResult.endNodes };
+            searchLabel = a + ' \u2192 ' + b;
+            break;
+        }
+        case 'common': {
+            var a = $('#inputTopicA').val().trim();
+            var b = $('#inputTopicB').val().trim();
+            if (!a || !b) { showToast('Please enter both topics'); return; }
+            var commonResult = searchEngine.findCommonGround(a, b);
+            if (!commonResult || commonResult.edges.length === 0) {
+                showToast('No common connections found');
+                return;
+            }
+            results = commonResult.edges;
+            searchLabel = a + ' & ' + b;
+            break;
+        }
+        case 'multi': {
+            var filters = {
+                keyword: $('#filterKeyword').val().trim(),
+                type: $('#filterType').val(),
+                torahNum: $('#filterTorah').val()
+            };
+            if (!filters.keyword && filters.type === 'all' && !filters.torahNum) {
+                showToast('Please set at least one filter');
+                return;
+            }
+            results = searchEngine.multiFilter(filters);
+            var parts = [];
+            if (filters.keyword) parts.push(filters.keyword);
+            if (filters.type !== 'all') parts.push(filters.type);
+            if (filters.torahNum) parts.push('Torah #' + filters.torahNum);
+            searchLabel = parts.join(', ');
+            break;
+        }
+    }
+
+    if (!results || results.length === 0) {
+        showToast('No results found');
+        return;
+    }
+
+    // Hide welcome screen
+    $('#welcomeScreen').addClass('hidden');
+
+    // Build graph
+    buildGraph(results, highlightNodes);
+
+    // Show results summary
+    var nodeCount = sigmaInstance.graph.nodes().length;
+    var edgeCount = sigmaInstance.graph.edges().length;
+    $('#resultsStats').html(
+        '<strong>' + nodeCount + '</strong> nodes and <strong>' + edgeCount + '</strong> connections found.'
+    );
+    $('#resultsSummary').removeClass('hidden');
+
+    showToast(nodeCount + ' nodes, ' + edgeCount + ' connections');
+
+    // Add to history
+    addToHistory(currentMode, searchLabel, nodeCount, edgeCount);
+}
+
+// ===== Graph Building =====
+function buildGraph(edges, highlightNodes) {
+    highlightNodes = highlightNodes || {};
+    var nodes = {};
+    var degrees = {};
+
+    // Create nodes from edges
+    edges.forEach(function(edge) {
+        if (edge.node1_id && !nodes[edge.node1_id]) {
+            nodes[edge.node1_id] = {
+                id: edge.node1_id,
+                label: currentLanguage === 'hebrew' ? (edge.node1_text || edge.node1_id) : (edge.node1_text_en || edge.node1_id),
+                x: 0, y: 0, size: 1,
+                color: '#3b82f6'
+            };
+        }
+        if (edge.node2_id && !nodes[edge.node2_id]) {
+            nodes[edge.node2_id] = {
+                id: edge.node2_id,
+                label: currentLanguage === 'hebrew' ? (edge.node2_text || edge.node2_id) : (edge.node2_text_en || edge.node2_id),
+                x: 0, y: 0, size: 1,
+                color: '#3b82f6'
+            };
+        }
+    });
+
+    // Layout nodes on circle
+    var nodeIds = Object.keys(nodes);
+    nodeIds.forEach(function(id, i) {
+        var angle = (2 * Math.PI * i) / nodeIds.length;
+        nodes[id].x = Math.cos(angle) * 10;
+        nodes[id].y = Math.sin(angle) * 10;
+    });
+
+    // Add nodes
+    Object.values(nodes).forEach(function(node) {
+        sigmaInstance.graph.addNode(node);
+    });
+
+    // Add edges
+    edges.forEach(function(edge, idx) {
+        if (!edge.node1_id || !edge.node2_id) return;
+        try {
+            var isEitza = edge.type === 'eitza';
+            sigmaInstance.graph.addEdge({
+                id: 'e' + idx,
+                source: edge.node1_id,
+                target: edge.node2_id,
+                type: isEitza ? 'arrow' : 'line',
+                color: isEitza ? '#a855f7' : '#06b6d4',
+                size: isEitza ? 1.5 : 1,
+                // Store data for details panel
+                node1_text: edge.node1_text,
+                node2_text: edge.node2_text,
+                node1_text_en: edge.node1_text_en,
+                node2_text_en: edge.node2_text_en,
+                proof: edge.proof,
+                reference: edge.reference,
+                edgeType: edge.type
+            });
+            degrees[edge.node1_id] = (degrees[edge.node1_id] || 0) + 1;
+            degrees[edge.node2_id] = (degrees[edge.node2_id] || 0) + 1;
+        } catch(e) {
+            // duplicate edge
+        }
+    });
+
+    // Scale node size by degree
+    Object.keys(degrees).forEach(function(id) {
+        var node = sigmaInstance.graph.nodes(id);
+        if (node) {
+            node.size = 2 + Math.sqrt(degrees[id]) * 1.5;
+        }
+    });
+
+    // Highlight start/end nodes for path search
+    if (highlightNodes.startNodes) {
+        highlightNodes.startNodes.forEach(function(nodeId) {
+            var n = sigmaInstance.graph.nodes(nodeId);
+            if (n) {
+                n.color = '#22c55e';
+                n.size = Math.max(n.size, 12);
+            }
+        });
+    }
+    if (highlightNodes.endNodes) {
+        highlightNodes.endNodes.forEach(function(nodeId) {
+            var n = sigmaInstance.graph.nodes(nodeId);
+            if (n) {
+                n.color = '#ef4444';
+                n.size = Math.max(n.size, 12);
+            }
+        });
+    }
+
+    sigmaInstance.refresh();
+
+    // Run force layout
+    if (sigmaInstance.startForceAtlas2) {
+        var useBarnesHut = sigmaInstance.graph.nodes().length > 50;
+        sigmaInstance.startForceAtlas2({
+            worker: true,
+            barnesHutOptimize: useBarnesHut,
+            barnesHutTheta: 0.8,
+            gravity: 0.8,
+            scalingRatio: 20,
+            slowDown: 5,
+            strongGravityMode: true
+        });
+
+        var duration = Math.min(5000, 1000 + edges.length * 15);
+        setTimeout(function() {
+            stopLayout();
+            fitToScreen();
+        }, duration);
+    } else {
+        fitToScreen();
+    }
+}
+
+// ===== Expand Node Neighborhood =====
+function expandNode() {
+    if (!selectedNodeId || !searchEngine) return;
+    doExpandNode(selectedNodeId);
+}
+
+function doExpandNode(nodeId) {
+    var edges = searchEngine.getNeighborhood(nodeId, 1);
+    if (edges.length === 0) {
+        showToast('No additional connections found');
+        return;
+    }
+
+    // Hide welcome screen
+    $('#welcomeScreen').addClass('hidden');
+
+    var addedNodes = 0;
+    var addedEdges = 0;
+
+    edges.forEach(function(edge, idx) {
+        // Add nodes if new
+        [
+            { id: edge.node1_id, text: edge.node1_text, textEn: edge.node1_text_en },
+            { id: edge.node2_id, text: edge.node2_text, textEn: edge.node2_text_en }
+        ].forEach(function(n) {
+            if (!n.id) return;
+            try {
+                var existing = sigmaInstance.graph.nodes(n.id);
+                if (!existing) {
+                    // Position near the expanded node
+                    var source = sigmaInstance.graph.nodes(nodeId);
+                    var sx = source ? source.x : 0;
+                    var sy = source ? source.y : 0;
+                    sigmaInstance.graph.addNode({
+                        id: n.id,
+                        label: currentLanguage === 'hebrew' ? (n.text || n.id) : (n.textEn || n.id),
+                        x: sx + (Math.random() - 0.5) * 4,
+                        y: sy + (Math.random() - 0.5) * 4,
+                        size: 3,
+                        color: '#3b82f6'
+                    });
+                    addedNodes++;
                 }
-            }
-            if (edge.type == 'eitza' || edge.cc_prev_type == 'eitza') {
-                //edge.color = '#FF6C7C';
-                edge.color = '#cf4ac8';
-                edge.size = 6.1;
-                edge.type = 'curvedArrow';
-                if (hebrewTrue.style.display == "block") {
-                    edge.label = 'עצה';
-                } else {
-                    edge.label = 'Advice';
-                }
-            }
-            edge.hover_color = '#000000';
-            //edge.label = edge.neo4j_type;
+            } catch(e) {}
         });
 
-        var cam = s.camera;
-        sigma.misc.animation.camera(cam, {
-            ratio: 1.3
+        // Add edge if new
+        try {
+            var edgeId = 'expand_' + edge.node1_id + '_' + edge.node2_id + '_' + edge.type;
+            var isEitza = edge.type === 'eitza';
+            sigmaInstance.graph.addEdge({
+                id: edgeId,
+                source: edge.node1_id,
+                target: edge.node2_id,
+                type: isEitza ? 'arrow' : 'line',
+                color: isEitza ? '#a855f7' : '#06b6d4',
+                size: isEitza ? 1.5 : 1,
+                node1_text: edge.node1_text,
+                node2_text: edge.node2_text,
+                node1_text_en: edge.node1_text_en,
+                node2_text_en: edge.node2_text_en,
+                proof: edge.proof,
+                reference: edge.reference,
+                edgeType: edge.type
+            });
+            addedEdges++;
+        } catch(e) {
+            // duplicate
+        }
+    });
+
+    // Highlight expanded node
+    var expandedNode = sigmaInstance.graph.nodes(nodeId);
+    if (expandedNode) {
+        expandedNode.color = '#f59e0b';
+        expandedNode.size = Math.max(expandedNode.size, 10);
+    }
+
+    sigmaInstance.refresh();
+
+    // Brief layout to settle new nodes
+    if (sigmaInstance.startForceAtlas2) {
+        stopLayout();
+        sigmaInstance.startForceAtlas2({
+            worker: true,
+            barnesHutOptimize: true,
+            gravity: 1,
+            scalingRatio: 15,
+            slowDown: 8,
+            strongGravityMode: true
         });
+        setTimeout(function() {
+            stopLayout();
+        }, 2000);
+    }
 
-        s.refresh();
-        console.log('Number of nodes :' + s.graph.nodes().length);
-        console.log('Number of edges :' + s.graph.edges().length);
-
-        // Configure the Fruchterman-Reingold algorithm:
-        var frListener = sigma.layouts.fruchtermanReingold.configure(s, {
-            iterations: 500,
-            easing: 'quadraticInOut',
-            duration: 800
-        });
-
-        // Bind the events:
-        frListener.bind('start stop interpolate', function (e) {
-            console.log(e.type);
-            if (e.type == 'stop') {
-                func_hide('div_status');
-            }
-        });
-
-        // Start the Fruchterman-Reingold algorithm:
-        sigma.layouts.fruchtermanReingold.start(s);
-
+    if (addedNodes > 0 || addedEdges > 0) {
+        showToast('Added ' + addedNodes + ' nodes, ' + addedEdges + ' connections');
+        // Update summary
+        var totalNodes = sigmaInstance.graph.nodes().length;
+        var totalEdges = sigmaInstance.graph.edges().length;
+        $('#resultsStats').html(
+            '<strong>' + totalNodes + '</strong> nodes and <strong>' + totalEdges + '</strong> connections on graph.'
+        );
+        $('#resultsSummary').removeClass('hidden');
     } else {
-        func_show_status('Unspecified Error');
-    }
-}
-function funk_turn_hebrew() {
-    lang_select_topic = "בחר נושא"//"Select Topic: "
-    lang_select_topic_1 = "בחר נושא 1"//"Select Topic 1: "
-    lang_select_depth = "בחר עומק"//"Select Depth: "
-    lang_select_depth_1 = "בחר עומק 1"//"Select Depth 1: "
-    lang_show_cypher_box = "גלה חלון חיפוש"//'Show Cypher Query Box &#709;'
-    $(div_cypher_query).css("direction", "rtl");//direction: rtl;
-    $(select_query_type).css("margin-right", "10px");//direction: rtl;
-
-    //set all text to hebrew
-    $(button_search).html("חפש")
-    $(option_advice).html("קבל עצה")
-    $(option_effects).html("קבל נמשך (מסובב)")
-    $(option_by_torah).html("חפש לפי תורה")
-    $(option_bechinos).html("בחינות")
-    $(option_connected).html("קבל כל הנושאים הקשורים")
-    $(option_connect_two).html("קשר ב' בחינות")
-    $(option_likutay).html("חידושים בסיגנון לקוטי הלכות")
-    $(option_query).html("חפש עם קוד")
-
-    //$(label_select_topic).html("בחר נושא")
-    $(label_select_topic_advice).html("בחר נושא")
-    $(label_select_topic_bechinos).html("בחר נושא")
-    $(label_select_topic_effects).html("בחר נושא")
-    $(label_select_topic_2).html("בחר נושא 2")
-    $(label_select_topic_1).html("בחר נושא 1")
-    $(label_select_torah_num).html("מספר תורה")
-    $(label_select_depth_2).html("בחר עומק 2")
-    func_show('button_english');
-    func_hide('button_hebrew');
-    if (init_sigma.graph.nodes().length > 0) {
-        func_run_query()
+        showToast('All connections already shown');
     }
 }
 
-function funk_turn_english() {
-    lang_select_topic = "Select Topic:"//"Select Topic: "
-    lang_select_topic_1 = "Select Topic 1:"//"Select Topic 1: "
-    lang_select_depth = "Select Depth:"//"Select Depth: "
-    lang_select_depth_1 = "Select Depth 1:"//"Select Depth 1: "
-    lang_show_cypher_box = "Show Cypher Query Box &#709;"//'Show Cypher Query Box &#709;'
-    $(div_cypher_query).css("direction", "ltr");//direction: rtl;
-    $(select_query_type).css("margin-left", "10px");//direction: rtl;
+function searchFromNode() {
+    if (!selectedNodeId) return;
+    $('#inputTopic').val(selectedNodeId);
+    selectMode('explore');
+    switchTab('search');
+    runSearch();
+}
 
-    //set all text to hebrew
-    $(button_search).html("Run Search")
-    $(option_advice).html("Get Advice")
-    $(option_effects).html("Get Effects")
-    $(option_by_torah).html("Search By Torah")
-    $(option_bechinos).html("Get Bechinos")
-    $(option_connected).html("Get All Connected Topics")
-    $(option_connect_two).html("Connect Two Bechinos")
-    $(option_likutay).html("Likutay Halachos Style")
-    $(option_query).html("Raw Query")
+// ===== Show Details =====
+function showNodeDetails(nodeId) {
+    var details = searchEngine.getNodeDetails(nodeId);
+    if (!details) return;
 
-    //$(label_select_topic).html("בחר נושא")
-    $(label_select_topic_advice).html("Select Topic:")
-    $(label_select_topic_bechinos).html("Select Topic:")
-    $(label_select_topic_effects).html("Select Topic:")
-    $(label_select_topic_2).html("Select Topic 2:")
-    $(label_select_topic_1).html("Select Topic 1:")
-    $(label_select_torah_num).html("Select Torah #:")
-    $(label_select_depth_2).html("Select Depth 2:")
-    func_show('button_hebrew');
-    func_hide('button_english');
-    if (init_sigma.graph.nodes().length > 0) {
-        func_run_query()
+    // Switch to details tab
+    switchTab('details');
+
+    // Hide placeholders, show node panel
+    $('#detailsPlaceholder').addClass('hidden');
+    $('#edgeDetailsPanel').addClass('hidden');
+    $('#nodeDetailsPanel').removeClass('hidden');
+
+    // Populate
+    $('#nodeTitle').text(currentLanguage === 'hebrew' ? (details.text || details.id) : (details.textEn || details.id));
+    $('#nodeSubtitle').text(details.id);
+    $('#nodeConnCount').text(details.totalConnections);
+    $('#nodeAspectCount').text(details.aspects);
+    $('#nodeAdviceCount').text(details.adviceGiven + details.adviceReceived);
+
+    // Torah references
+    var tagHtml = '';
+    details.torahReferences.forEach(function(ref) {
+        tagHtml += '<span class="tag">' + ref + '</span>';
+    });
+    $('#nodeTorahList').html(tagHtml || '<span style="color:var(--color-text-muted);font-size:12px;">None</span>');
+}
+
+function showEdgeDetails(edge) {
+    switchTab('details');
+
+    $('#detailsPlaceholder').addClass('hidden');
+    $('#nodeDetailsPanel').addClass('hidden');
+    $('#edgeDetailsPanel').removeClass('hidden');
+
+    var isEitza = edge.edgeType === 'eitza';
+    var badge = $('#edgeTypeBadge');
+    badge.text(isEitza ? 'Advice (Eitza)' : 'Aspect (Bechina)');
+    badge.removeClass('bechina eitza').addClass(isEitza ? 'eitza' : 'bechina');
+
+    if (currentLanguage === 'hebrew') {
+        $('#edgeFrom').text(edge.node1_text || '');
+        $('#edgeTo').text(edge.node2_text || '');
+    } else {
+        $('#edgeFrom').text(edge.node1_text_en || edge.node1_text || '');
+        $('#edgeTo').text(edge.node2_text_en || edge.node2_text || '');
     }
+    $('#edgeProof').text(edge.proof || '');
+    $('#edgeRef').text(edge.reference || '');
+}
+
+// ===== Tab Switching =====
+function switchTab(tabName) {
+    $('.sidebar-tab').removeClass('active');
+    $('.sidebar-tab[data-tab="' + tabName + '"]').addClass('active');
+    $('.tab-content').removeClass('active');
+    $('#tab-' + tabName).addClass('active');
+}
+
+// ===== Search History =====
+function addToHistory(mode, label, nodeCount, edgeCount) {
+    var entry = {
+        mode: mode,
+        label: label,
+        nodes: nodeCount,
+        edges: edgeCount,
+        time: new Date()
+    };
+    searchHistory.unshift(entry);
+    if (searchHistory.length > 50) searchHistory.pop();
+
+    renderHistory();
+}
+
+function renderHistory() {
+    if (searchHistory.length === 0) {
+        $('#historyEmpty').show();
+        return;
+    }
+    $('#historyEmpty').hide();
+
+    var html = '';
+    searchHistory.forEach(function(entry, idx) {
+        html += '<div class="history-item" onclick="replaySearch(' + idx + ')">' +
+            '<div class="history-mode">' + escapeHtml(entry.mode) + '</div>' +
+            '<div class="history-query">' + escapeHtml(entry.label) + '</div>' +
+            '<div class="history-result">' + entry.nodes + ' nodes, ' + entry.edges + ' connections</div>' +
+            '</div>';
+    });
+    $('#historyList').html(html);
+}
+
+function replaySearch(idx) {
+    var entry = searchHistory[idx];
+    if (!entry) return;
+
+    selectMode(entry.mode);
+    switchTab('search');
+
+    // Fill in the search fields based on mode
+    if (entry.mode === 'explore' || entry.mode === 'advice' || entry.mode === 'effects' || entry.mode === 'aspects') {
+        $('#inputTopic').val(entry.label);
+    } else if (entry.mode === 'torah') {
+        var num = entry.label.replace('Torah #', '');
+        $('#selectTorah').val(num);
+    } else if (entry.mode === 'path') {
+        var parts = entry.label.split(' \u2192 ');
+        if (parts.length === 2) {
+            $('#inputTopicA').val(parts[0]);
+            $('#inputTopicB').val(parts[1]);
+        }
+    } else if (entry.mode === 'common') {
+        var parts = entry.label.split(' & ');
+        if (parts.length === 2) {
+            $('#inputTopicA').val(parts[0]);
+            $('#inputTopicB').val(parts[1]);
+        }
+    }
+
+    runSearch();
+}
+
+// ===== Language Toggle =====
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'hebrew' ? 'english' : 'hebrew';
+    $('#langLabel').text(currentLanguage === 'hebrew' ? 'EN' : '\u05e2\u05d1');
+
+    // Update mode description
+    var desc = currentLanguage === 'hebrew' ? modeDescriptionsHeb[currentMode] : modeDescriptions[currentMode];
+    $('#modeDescription').text(desc || '');
+
+    // Re-render node labels if graph has nodes
+    if (sigmaInstance && sigmaInstance.graph.nodes().length > 0) {
+        showToast('Language switched. Run search again to update labels.');
+    }
+}
+
+// ===== Sidebar Toggle =====
+function toggleSidebar() {
+    $('#sidebar').toggleClass('collapsed');
+
+    // Resize sigma after animation
+    setTimeout(function() {
+        if (sigmaInstance) sigmaInstance.refresh();
+    }, 350);
+}
+
+// ===== Graph Controls =====
+function zoomIn() {
+    if (!sigmaInstance) return;
+    var camera = sigmaInstance.camera;
+    camera.goTo({ ratio: camera.ratio / 1.5 });
+}
+
+function zoomOut() {
+    if (!sigmaInstance) return;
+    var camera = sigmaInstance.camera;
+    camera.goTo({ ratio: camera.ratio * 1.5 });
+}
+
+function fitToScreen() {
+    if (!sigmaInstance) return;
+    var nodes = sigmaInstance.graph.nodes();
+    if (!nodes.length) return;
+
+    var bounds = nodes.reduce(function(acc, node) {
+        acc.minX = Math.min(acc.minX, node.x);
+        acc.maxX = Math.max(acc.maxX, node.x);
+        acc.minY = Math.min(acc.minY, node.y);
+        acc.maxY = Math.max(acc.maxY, node.y);
+        return acc;
+    }, { minX: Infinity, maxX: -Infinity, minY: Infinity, maxY: -Infinity });
+
+    var renderer = sigmaInstance.renderers[0];
+    var width = renderer.width || renderer.container.offsetWidth;
+    var height = renderer.height || renderer.container.offsetHeight;
+    if (!width || !height) return;
+
+    var sizeX = bounds.maxX - bounds.minX;
+    var sizeY = bounds.maxY - bounds.minY;
+    var paddingX = width * 0.35;
+    var paddingY = height * 0.35;
+    var ratioX = sizeX ? (sizeX + paddingX) / width : 1;
+    var ratioY = sizeY ? (sizeY + paddingY) / height : 1;
+    var ratio = Math.max(ratioX, ratioY);
+
+    var target = {
+        x: (bounds.minX + bounds.maxX) / 2,
+        y: (bounds.minY + bounds.maxY) / 2,
+        ratio: ratio || 1
+    };
+
+    if (sigma.misc && sigma.misc.animation && typeof sigma.misc.animation.camera === 'function') {
+        sigma.misc.animation.camera(sigmaInstance.camera, target, { duration: 400 });
+    } else {
+        sigmaInstance.camera.goTo(target);
+    }
+    sigmaInstance.refresh();
+}
+
+function resetCamera() {
+    if (!sigmaInstance) return;
+    sigmaInstance.camera.goTo({ x: 0, y: 0, angle: 0, ratio: 1 });
+}
+
+function clearGraph() {
+    if (!sigmaInstance) return;
+    stopLayout();
+    sigmaInstance.graph.clear();
+    sigmaInstance.refresh();
+    resetCamera();
+    $('#resultsSummary').addClass('hidden');
+    $('#welcomeScreen').removeClass('hidden');
+
+    // Reset details
+    $('#detailsPlaceholder').removeClass('hidden');
+    $('#nodeDetailsPanel').addClass('hidden');
+    $('#edgeDetailsPanel').addClass('hidden');
+    selectedNodeId = null;
+}
+
+// ===== Helpers =====
+function stopLayout() {
+    if (sigmaInstance && sigmaInstance.isForceAtlas2Running && sigmaInstance.isForceAtlas2Running()) {
+        sigmaInstance.stopForceAtlas2();
+    }
+    if (sigmaInstance && sigmaInstance.killForceAtlas2) {
+        sigmaInstance.killForceAtlas2();
+    }
+}
+
+function showToast(msg) {
+    var toast = $('#statusToast');
+    toast.text(msg).removeClass('hidden');
+    clearTimeout(showToast._timer);
+    showToast._timer = setTimeout(function() {
+        toast.addClass('hidden');
+    }, 3000);
+}
+
+function escapeHtml(str) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
 }
