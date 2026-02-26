@@ -172,6 +172,10 @@ function selectMode(mode) {
         $('#inputTorahGroup').removeClass('hidden');
     } else if (mode === 'path' || mode === 'common') {
         $('#inputTwoTopics').removeClass('hidden');
+        // Show depth selector only for common ground
+        var showDepth = mode === 'common' ? 'block' : 'none';
+        document.getElementById('commonDepthSpacer').style.display = showDepth;
+        document.getElementById('commonDepthGroup').style.display = showDepth;
     } else if (mode === 'multi') {
         $('#inputMultiFilter').removeClass('hidden');
     }
@@ -255,13 +259,14 @@ function doSearch() {
             var a = $('#inputTopicA').val().trim();
             var b = $('#inputTopicB').val().trim();
             if (!a || !b) { showToast('Please enter both topics'); return; }
-            var commonResult = searchEngine.findCommonGround(a, b);
+            var depth = parseInt($('#commonDepth').val()) || 2;
+            var commonResult = searchEngine.findCommonGround(a, b, depth);
             if (!commonResult || commonResult.edges.length === 0) {
-                showToast('No common connections found');
+                showToast('No common connections found (try increasing depth)');
                 return;
             }
             results = commonResult.edges;
-            searchLabel = a + ' & ' + b;
+            searchLabel = a + ' & ' + b + ' (depth ' + depth + ')';
             break;
         }
         case 'multi': {

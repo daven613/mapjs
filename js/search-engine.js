@@ -337,43 +337,71 @@ var TorahSearchEngine = (function() {
         };
     };
 
-    // 7. Common Ground - Find shared connections between two topics
-    TorahSearchEngine.prototype.findCommonGround = function(topic1, topic2) {
-        if (!topic1 || !topic2) return { edges: [], commonNodes: [], topic1Connections: 0, topic2Connections: 0 };
+    // 7. Common Ground - Find shared connections between two topics via BFS
+    // depth controls how many hops from each topic to explore (default 2)
+    TorahSearchEngine.prototype.findCommonGround = function(topic1, topic2, depth) {
+        if (!topic1 || !topic2) return { edges: [], commonNodes: [], topic1Connections: 0, topic2Connections: 0, depth: 0 };
+        depth = (depth !== undefined && depth !== null) ? depth : 2;
 
-        var connected1 = new Set();
-        var edges1 = [];
-        var connected2 = new Set();
-        var edges2 = [];
+        var self = this;
 
-        this.data.forEach(function(edge) {
-            var matchesTopic1 = (edge.node1_id && edge.node1_id.includes(topic1)) ||
-                                (edge.node2_id && edge.node2_id.includes(topic1));
-            var matchesTopic2 = (edge.node1_id && edge.node1_id.includes(topic2)) ||
-                                (edge.node2_id && edge.node2_id.includes(topic2));
+        // BFS to collect all reachable nodes and their edges up to given depth
+        function bfsCollect(searchTerm, maxDepth) {
+            // Find seed nodes matching the search term
+            var seeds = [];
+            self.data.forEach(function(edge) {
+                if (edge.node1_id && edge.node1_id.includes(searchTerm) && seeds.indexOf(edge.node1_id) === -1) seeds.push(edge.node1_id);
+                if (edge.node2_id && edge.node2_id.includes(searchTerm) && seeds.indexOf(edge.node2_id) === -1) seeds.push(edge.node2_id);
+            });
 
-            if (matchesTopic1) {
-                if (edge.node1_id) connected1.add(edge.node1_id);
-                if (edge.node2_id) connected1.add(edge.node2_id);
-                edges1.push(edge);
+            var visited = new Set(seeds);
+            var queue = [];
+            var collectedEdges = [];
+            var edgeSet = new Set();
+
+            seeds.forEach(function(s) { queue.push({ node: s, d: 0 }); });
+
+            while (queue.length > 0) {
+                var current = queue.shift();
+                if (current.d >= maxDepth) continue;
+
+                self.data.forEach(function(edge) {
+                    var isSource = edge.node1_id === current.node;
+                    var isTarget = edge.node2_id === current.node;
+                    if (!isSource && !isTarget) return;
+
+                    var key = edge.node1_id + '-' + edge.node2_id + '-' + edge.type;
+                    if (!edgeSet.has(key)) {
+                        edgeSet.add(key);
+                        collectedEdges.push(edge);
+                    }
+
+                    var neighbor = isSource ? edge.node2_id : edge.node1_id;
+                    if (!visited.has(neighbor)) {
+                        visited.add(neighbor);
+                        queue.push({ node: neighbor, d: current.d + 1 });
+                    }
+                });
             }
-            if (matchesTopic2) {
-                if (edge.node1_id) connected2.add(edge.node1_id);
-                if (edge.node2_id) connected2.add(edge.node2_id);
-                edges2.push(edge);
-            }
-        });
 
+            return { nodes: visited, edges: collectedEdges };
+        }
+
+        var result1 = bfsCollect(topic1, depth);
+        var result2 = bfsCollect(topic2, depth);
+
+        // Find common nodes (intersection of reachable sets)
         var commonNodes = [];
-        connected1.forEach(function(node) {
-            if (connected2.has(node)) commonNodes.push(node);
+        result1.nodes.forEach(function(node) {
+            if (result2.nodes.has(node)) commonNodes.push(node);
         });
 
+        // Collect edges that connect through common nodes
         var resultEdges = [];
         var edgeSet = new Set();
         var commonNodeSet = new Set(commonNodes);
 
-        edges1.concat(edges2).forEach(function(edge) {
+        result1.edges.concat(result2.edges).forEach(function(edge) {
             if (commonNodeSet.has(edge.node1_id) || commonNodeSet.has(edge.node2_id)) {
                 var key = edge.node1_id + '-' + edge.node2_id + '-' + edge.type;
                 if (!edgeSet.has(key)) {
@@ -386,8 +414,9 @@ var TorahSearchEngine = (function() {
         return {
             edges: resultEdges,
             commonNodes: commonNodes,
-            topic1Connections: edges1.length,
-            topic2Connections: edges2.length
+            topic1Connections: result1.edges.length,
+            topic2Connections: result2.edges.length,
+            depth: depth
         };
     };
 

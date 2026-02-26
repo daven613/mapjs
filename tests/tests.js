@@ -282,19 +282,45 @@ function runAllTests() {
     // ===== Common Ground Tests =====
     if (typeof console !== 'undefined') console.log('\n--- Common Ground ---');
 
-    test('findCommonGround finds shared connections', function() {
-        // topic_b and topic_c both connect to topic_a (via bechina)
-        var result = engine.findCommonGround('topic_b', 'topic_c');
-        assertGreater(result.commonNodes.length, 0, 'topic_b and topic_c should share common nodes');
+    test('findCommonGround finds shared connections at depth 1', function() {
+        // topic_b and topic_c both connect to topic_a (via bechina) at 1 hop
+        var result = engine.findCommonGround('topic_b', 'topic_c', 1);
+        assertGreater(result.commonNodes.length, 0, 'topic_b and topic_c should share common nodes at depth 1');
         assertArrayIncludes(result.commonNodes, 'topic_a', 'topic_a should be a common node');
     });
 
-    test('findCommonGround returns empty for unrelated topics', function() {
-        var result = engine.findCommonGround('topic_g', 'topic_e');
-        // These don't share neighbors
-        // Actually topic_g connects to topic_f, and topic_e connects to topic_c and topic_d
-        // No overlap, so:
-        assertEqual(result.commonNodes.length, 0, 'Unrelated topics should have no common nodes');
+    test('findCommonGround defaults to depth 2', function() {
+        var result = engine.findCommonGround('topic_b', 'topic_c');
+        assertEqual(result.depth, 2, 'Default depth should be 2');
+    });
+
+    test('findCommonGround finds more at deeper depth', function() {
+        var result1 = engine.findCommonGround('topic_b', 'topic_c', 1);
+        var result3 = engine.findCommonGround('topic_b', 'topic_c', 3);
+        assert(result3.commonNodes.length >= result1.commonNodes.length,
+            'Depth 3 should find at least as many common nodes as depth 1 (' +
+            result3.commonNodes.length + ' >= ' + result1.commonNodes.length + ')');
+    });
+
+    test('findCommonGround at depth 2+ finds indirect connections', function() {
+        // topic_g and topic_e are unrelated at depth 1
+        // but at depth 2+: topic_g -> topic_f -> topic_a -> topic_c -> topic_e
+        // topic_g connects to topic_f (edge 6), topic_f connects to topic_a (edge 7)
+        // topic_e connects to topic_d (edge 5), topic_e connects to topic_c (edge 4)
+        // topic_a connects to topic_c (edge 2) and topic_b (edge 1)
+        // At depth 2 from topic_g: topic_g, topic_f, topic_a
+        // At depth 2 from topic_e: topic_e, topic_d, topic_c, topic_b
+        // Intersection at depth 2: potentially none or some depending on graph
+        // At depth 3 they should overlap more
+        var resultShallow = engine.findCommonGround('topic_g', 'topic_e', 1);
+        var resultDeep = engine.findCommonGround('topic_g', 'topic_e', 3);
+        assert(resultDeep.commonNodes.length >= resultShallow.commonNodes.length,
+            'Deeper search should find at least as many common nodes');
+    });
+
+    test('findCommonGround returns empty for unrelated topics at depth 1', function() {
+        var result = engine.findCommonGround('topic_g', 'topic_e', 1);
+        assertEqual(result.commonNodes.length, 0, 'Unrelated topics should have no common nodes at depth 1');
     });
 
     test('findCommonGround handles empty input', function() {

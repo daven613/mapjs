@@ -145,6 +145,17 @@
                         <div class="input-spacer"></div>
                         <label for="inputTopicB">End Topic</label>
                         <input type="text" id="inputTopicB" placeholder="Second concept..." autocomplete="off">
+                        <!-- Depth selector for Common Ground -->
+                        <div class="input-spacer" id="commonDepthSpacer" style="display:none;"></div>
+                        <div id="commonDepthGroup" style="display:none;">
+                            <label for="commonDepth">Search Depth</label>
+                            <select id="commonDepth">
+                                <option value="1">1 hop (direct only)</option>
+                                <option value="2" selected>2 hops (recommended)</option>
+                                <option value="3">3 hops (broader)</option>
+                                <option value="4">4 hops (very broad)</option>
+                            </select>
+                        </div>
                     </div>
 
                     <!-- Multi-filter inputs -->
