@@ -145,6 +145,16 @@
                         <div class="input-spacer"></div>
                         <label for="inputTopicB">End Topic</label>
                         <input type="text" id="inputTopicB" placeholder="Second concept..." autocomplete="off">
+                        <!-- Depth selector for Find Path -->
+                        <div class="input-spacer" id="pathDepthSpacer" style="display:none;"></div>
+                        <div id="pathDepthGroup" style="display:none;">
+                            <label for="pathDepth">Search Depth</label>
+                            <select id="pathDepth">
+                                <option value="5">5 hops (default)</option>
+                                <option value="7" selected>7 hops (deeper)</option>
+                                <option value="10">10 hops (very deep)</option>
+                            </select>
+                        </div>
                         <!-- Depth selector for Common Ground -->
                         <div class="input-spacer" id="commonDepthSpacer" style="display:none;"></div>
                         <div id="commonDepthGroup" style="display:none;">

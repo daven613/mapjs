@@ -172,10 +172,11 @@ function selectMode(mode) {
         $('#inputTorahGroup').removeClass('hidden');
     } else if (mode === 'path' || mode === 'common') {
         $('#inputTwoTopics').removeClass('hidden');
-        // Show depth selector only for common ground
-        var showDepth = mode === 'common' ? 'block' : 'none';
-        document.getElementById('commonDepthSpacer').style.display = showDepth;
-        document.getElementById('commonDepthGroup').style.display = showDepth;
+        // Show depth selectors per mode
+        document.getElementById('pathDepthSpacer').style.display = mode === 'path' ? 'block' : 'none';
+        document.getElementById('pathDepthGroup').style.display = mode === 'path' ? 'block' : 'none';
+        document.getElementById('commonDepthSpacer').style.display = mode === 'common' ? 'block' : 'none';
+        document.getElementById('commonDepthGroup').style.display = mode === 'common' ? 'block' : 'none';
     } else if (mode === 'multi') {
         $('#inputMultiFilter').removeClass('hidden');
     }
@@ -245,7 +246,8 @@ function doSearch() {
             var a = $('#inputTopicA').val().trim();
             var b = $('#inputTopicB').val().trim();
             if (!a || !b) { showToast('Please enter both start and end topics'); return; }
-            var pathResult = searchEngine.findPath(a, b);
+            var pathDepth = parseInt($('#pathDepth').val()) || 7;
+            var pathResult = searchEngine.findPath(a, b, pathDepth);
             if (!pathResult || pathResult.edges.length === 0) {
                 showToast('No path found between these topics');
                 return;
