@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "source": "Torah #1",
+    "type": "dataset_review",
+    "generated": "2026-03-02",
+    "total": 3
+  },
+  "changes": [
+    {
+      "id": 1,
+      "type": "companion",
+      "nodes": ["חן", "חשיבות"],
+      "reason": "The source text of Torah #1 always pairs these two concepts together as a single teaching unit: 'הַחֵן וְהַחֲשִׁיבוּת'. In the dataset they appear as separate nodes connecting to the same targets (מלכות, ספינה, תורה) with identical proof texts — which means they are currently treated as unrelated duplicates rather than as intentionally linked concepts. They are NOT the same thing: חן is grace/charm and חשיבות is importance/esteem. But Rebbe Nachman pairs them deliberately. A direct connection between them would reflect that pairing.",
+      "evidence": "Source text line 25: 'דְּמַטְבַּע לִסְפִינְתָּא הוּא הַחֵן וְהַחֲשִׁיבוּת, לְשׁוֹן סָפוּן וְחָשׁוּב'. Line 2: 'הַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל נִתְעַלֶּה'. The Rebbe never mentions one without the other in this Torah.",
+      "proposed_action": "add_edge",
+      "affected_edges": {
+        "node1_edges": 7,
+        "node2_edges": 6,
+        "existing_connection": false
+      },
+      "edge_diff": [
+        {
+          "action": "add",
+          "old": null,
+          "new": {
+            "id": "NEW",
+            "node1_id": "חן",
+            "node2_id": "חשיבות",
+            "type": "bechina",
+            "reference": 1,
+            "proof": "הַחֵן וְהַחֲשִׁיבוּת — always taught as a paired unit in Torah #1"
+          }
+        }
+      ],
+      "status": "pending",
+      "notes": "There is currently no direct edge between חן and חשיבות. Adding a חן↔חשיבות edge would make the cluster visible in the map."
+    },
+    {
+      "id": 2,
+      "type": "alias",
+      "canonical": "אש לבנה",
+      "aliases": ["צוציתא דנורא חורתא"],
+      "reason": "The source text (Torah #1, line 26) explicitly equates these two terms in the same sentence: 'וְזֶהוּ בְּחִינַת צוּצִיתָא דְּנוּרָא חִוַּרְתָּא אֵשׁ לְבָנָה'. The Aramaic phrase 'צוציתא דנורא חורתא' comes from a Talmudic story (Bava Batra 73a) and 'אש לבנה' is its Hebrew translation, provided immediately after by Rebbe Nachman himself. They are the same image: the white tip of a wave that looks like fire — a metaphor for the yetzer hara disguising itself as a mitzvah. This is a translation, not two distinct concepts.",
+      "evidence": "Source text line 26: 'כִּי מִתְּחִלָּה הַיֵּצֶר הָרָע מִתְלַבֵּשׁ עַצְמוֹ בְּמִצְווֹת... וְזֶהוּ בְּחִינַת צוּצִיתָא דְּנוּרָא חִוַּרְתָּא, אֵשׁ לְבָנָה'. The dataset proof for both edges 472 and 473 is identical, confirming they describe the same thing.",
+      "affected_edges": {
+        "canonical_count": 3,
+        "alias_counts": {"צוציתא דנורא חורתא": 1},
+        "alias_edge_ids": [473]
+      },
+      "edge_diff": [
+        {
+          "action": "delete",
+          "note": "This row directly connects the two alias nodes. After the merge both names become one node, so this row would be a self-connection and must be removed.",
+          "old": {
+            "id": 473,
+            "node1_id": "צוציתא דנורא חורתא",
+            "node2_id": "אש לבנה",
+            "type": "bechina",
+            "reference": 1,
+            "proof": "כִּי מִתְּחִלָּה הַיֵּצֶר הָרָע מִתְלַבֵּשׁ עַצְמוֹ בְּמִצְווֹת... וְזֶהוּ בְּחִינַת צוּצִיתָא דְּנוּרָא חִוַּרְתָּא אֵשׁ לְבָנָה..."
+          },
+          "new": null
+        }
+      ],
+      "status": "pending",
+      "notes": "Edge 473 directly connects the two nodes as a bechina — this edge itself documents the equivalence and would be removed after the merge."
+    },
+    {
+      "id": 3,
+      "type": "alias",
+      "canonical": "אות ת\"ו",
+      "aliases": ["ת\"ו"],
+      "reason": "Both node IDs refer to the Hebrew letter Tav. This is a data-entry inconsistency: every other letter in the dataset uses the 'אות' prefix convention (אות חי\"ת, אות נו\"ן, אות וא\"ו, אות יו\"ד). One edge (3065) uses the bare form 'ת\"ו' without the prefix. Same concept, different label — classic alias.",
+      "evidence": "Dataset naming convention: אות חי\"ת, אות נו\"ן, אות וא\"ו, אות יו\"ד. Edge 3065 proof text is identical to edges 1225 and 2794, all about the letter Tav as inscription/marking.",
+      "affected_edges": {
+        "canonical_count": 2,
+        "alias_counts": {"ת\"ו": 1},
+        "alias_edge_ids": [3065]
+      },
+      "edge_diff": [
+        {
+          "action": "modify",
+          "changed_fields": ["node2_id"],
+          "old": {
+            "id": 3065,
+            "node1_id": "חן",
+            "node2_id": "ת\"ו",
+            "type": "eitza",
+            "reference": 1,
+            "proof": "וְזֶה בְּחִינַת ת. הַיְנוּ עַל-יְדֵי שֶׁנִּתְחַבְּרוּ וְנִתְקַשְּׁרוּ הַחֵי\"ת וְהַנּוּ\"ן וְנַעֲשָׂה בְּחִינַת חֵ\"ן עַל-יְדֵי-זֶה נַעֲשֶׂה בְּחִינַת תָּ\"ו..."
+          },
+          "new": {
+            "id": 3065,
+            "node1_id": "חן",
+            "node2_id": "אות ת\"ו",
+            "type": "eitza",
+            "reference": 1,
+            "proof": "וְזֶה בְּחִינַת ת. הַיְנוּ עַל-יְדֵי שֶׁנִּתְחַבְּרוּ וְנִתְקַשְּׁרוּ הַחֵי\"ת וְהַנּוּ\"ן וְנַעֲשָׂה בְּחִינַת חֵ\"ן עַל-יְדֵי-זֶה נַעֲשֶׂה בְּחִינַת תָּ\"ו..."
+          }
+        }
+      ],
+      "status": "pending",
+      "notes": "Only 1 edge uses the bare form. Simple label fix: update edge 3065's node2_id from 'ת\"ו' to 'אות ת\"ו'."
+    }
+  ]
+}
