@@ -191,7 +191,9 @@
     text-decoration: line-through;
     text-decoration-color: #ef4444;
   }
-  .chip-text { white-space: nowrap; }
+  .chip-text { white-space: nowrap; cursor: pointer; }
+  .chip-text:hover { text-decoration: underline dotted #94a3b8; }
+  .node-chip.selected { outline: 2px solid #3b82f6; outline-offset: 2px; }
   .dominant-star {
     font-size: 0.65rem;
     color: #f59e0b;
@@ -230,6 +232,61 @@
     background: #ef4444;
     color: white;
   }
+
+  /* ── Proof panel ── */
+  .pkg-proof-panel {
+    display: none;
+    padding: 14px 20px;
+    border-top: 2px solid #bfdbfe;
+    background: #eff6ff;
+  }
+  .pkg-proof-panel.open { display: block; }
+  .proof-panel-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #1d4ed8;
+    direction: ltr;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .proof-close {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .proof-close:hover { color: #ef4444; }
+  .proof-entry {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #bfdbfe;
+  }
+  .proof-entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .proof-nodes {
+    font-size: 0.72rem;
+    color: #3b82f6;
+    direction: ltr;
+    margin-bottom: 5px;
+    font-family: monospace;
+  }
+  .proof-quote {
+    font-size: 0.88rem;
+    color: #1e3a5f;
+    line-height: 1.75;
+    direction: rtl;
+    text-align: right;
+    background: white;
+    border-right: 3px solid #3b82f6;
+    padding: 7px 12px 7px 8px;
+    border-radius: 4px 0 0 4px;
+  }
+  .proof-none { font-size: 0.8rem; color: #94a3b8; direction: ltr; }
 
   /* ── Addition cards ── */
   .addition-card {
@@ -433,11 +490,14 @@
   <button class="export-btn" onclick="exportDecisions()" id="export-btn">Export Decisions</button>
 </div>
 
+<script src="../torahData.js"></script>
 <script>
 'use strict';
 
 let packagesData = null;
 let additionsData = null;
+let nodeProofs = {}; // nodeId -> [edge, ...]
+let selectedChipKey = null; // "pkgId:nodeId"
 // decisions[key] = 'accept' | 'reject'
 // keys: "node:{pkgId}:{nodeId}" or "addition:{nodeId}"
 const decisions = {};
@@ -448,11 +508,84 @@ Promise.all([
 ]).then(([pkgs, adds]) => {
   packagesData = pkgs;
   additionsData = adds;
+  buildNodeProofsIndex();
   renderAll();
 }).catch(err => {
   document.getElementById('packages-container').innerHTML =
     '<div style="color:red;padding:20px;direction:ltr">Error loading data: ' + err.message + '</div>';
 });
+
+/* ───── Proof index ───── */
+
+function buildNodeProofsIndex() {
+  nodeProofs = {};
+  if (typeof torahData === 'undefined') return;
+  const ref1 = torahData.filter(e => e.reference === 1 && e.type === 'bechina');
+  for (const edge of ref1) {
+    if (!nodeProofs[edge.node1_id]) nodeProofs[edge.node1_id] = [];
+    if (!nodeProofs[edge.node2_id]) nodeProofs[edge.node2_id] = [];
+    nodeProofs[edge.node1_id].push(edge);
+    nodeProofs[edge.node2_id].push(edge);
+  }
+}
+
+function toggleNodeProof(pkgId, nodeId) {
+  const panelEl = document.getElementById('proof-panel-pkg-' + pkgId);
+  if (!panelEl) return;
+  const key = pkgId + ':' + nodeId;
+
+  if (selectedChipKey === key) {
+    // Close
+    panelEl.classList.remove('open');
+    panelEl.innerHTML = '';
+    selectedChipKey = null;
+    clearChipSelected();
+    return;
+  }
+
+  clearChipSelected();
+  selectedChipKey = key;
+
+  // Mark chip selected
+  const chips = document.querySelectorAll('.node-chip[data-pkg-id="' + pkgId + '"]');
+  for (const c of chips) {
+    if (c.dataset.nodeId === nodeId) c.classList.add('selected');
+  }
+
+  // Build proof content
+  const proofs = nodeProofs[nodeId] || [];
+  let html = '<div class="proof-panel-title">'
+    + 'Proof sources for: ' + escapeHtml(nodeId) + ' (' + proofs.length + ' bechina edge' + (proofs.length !== 1 ? 's' : '') + ')'
+    + '<span class="proof-close" onclick="closeProofPanel(' + pkgId + ')">✕ close</span>'
+    + '</div>';
+
+  if (proofs.length === 0) {
+    html += '<div class="proof-none">No bechina edges found for this node in Torah #1.</div>';
+  } else {
+    for (const edge of proofs) {
+      const otherId = edge.node1_id === nodeId ? edge.node2_id : edge.node1_id;
+      html += '<div class="proof-entry">'
+        + '<div class="proof-nodes">Edge #' + Math.round(edge.id) + ' — '
+        + escapeHtml(nodeId) + ' ↔ ' + escapeHtml(otherId) + '</div>'
+        + '<div class="proof-quote">' + escapeHtml(edge.proof || '(no proof text)') + '</div>'
+        + '</div>';
+    }
+  }
+
+  panelEl.innerHTML = html;
+  panelEl.classList.add('open');
+}
+
+function closeProofPanel(pkgId) {
+  const panelEl = document.getElementById('proof-panel-pkg-' + pkgId);
+  if (panelEl) { panelEl.classList.remove('open'); panelEl.innerHTML = ''; }
+  clearChipSelected();
+  selectedChipKey = null;
+}
+
+function clearChipSelected() {
+  document.querySelectorAll('.node-chip.selected').forEach(c => c.classList.remove('selected'));
+}
 
 /* ───── Rendering ───── */
 
@@ -501,7 +634,8 @@ function buildPackageCard(pkg) {
       '<div class="pkg-reason-toggle" data-pkg-id="' + pkg.id + '">▸ Show reasoning</div>' +
       '<div class="pkg-reason" id="reason-pkg-' + pkg.id + '">' + escapeHtml(pkg.reason) + '</div>' +
     '</div>' +
-    '<div class="node-chips" id="chips-pkg-' + pkg.id + '"></div>';
+    '<div class="node-chips" id="chips-pkg-' + pkg.id + '"></div>' +
+    '<div class="pkg-proof-panel" id="proof-panel-pkg-' + pkg.id + '"></div>';
 
   // Add event listeners
   card.querySelector('.accept-all-btn').addEventListener('click', () => acceptAllInPackage(pkg.id));
@@ -527,14 +661,16 @@ function buildNodeChip(pkgId, nodeId, isDominant) {
   chip.dataset.pkgId = pkgId;
   chip.dataset.nodeId = nodeId;
 
+  const hasProof = nodeProofs[nodeId] && nodeProofs[nodeId].length > 0;
   chip.innerHTML =
-    '<span class="chip-text">' + escapeHtml(nodeId) + '</span>' +
+    '<span class="chip-text" title="' + (hasProof ? 'Click to see proof quotes' : 'No proofs indexed') + '">' + escapeHtml(nodeId) + '</span>' +
     (isDominant ? '<span class="dominant-star" title="Dominant node">★</span>' : '') +
     '<div class="chip-btns">' +
       '<button class="chip-btn chip-accept" title="Accept in package">✓</button>' +
       '<button class="chip-btn chip-reject" title="Reject from package">✗</button>' +
     '</div>';
 
+  chip.querySelector('.chip-text').addEventListener('click', () => toggleNodeProof(pkgId, nodeId));
   chip.querySelector('.chip-accept').addEventListener('click', () => setNodeDecision(pkgId, nodeId, 'accept'));
   chip.querySelector('.chip-reject').addEventListener('click', () => setNodeDecision(pkgId, nodeId, 'reject'));
   return chip;
