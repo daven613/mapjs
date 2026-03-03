@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "source": "Torah #1",
+    "type": "package_proposals",
+    "generated": "2026-03-02",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===1 AND type==='bechina'. Four small isolated pairs/components merged into thematically closest large components per merge reasoning documented in each package."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 1,
+      "label": "חָכְמָה וְיַעֲקֹב",
+      "label_en": "Wisdom and Jacob",
+      "polarity": "good",
+      "reason": "The largest connected component in Torah #1 centers on חכמה (divine intellect/sekhel) as the life-force of all things, with Jacob as the archetypal figure who attaches himself to the sekhel in every object. This cluster encompasses the firstborn/reishit concept (sekhel as primary), the sun-metaphor (sekhel illuminates all paths), the chet letter (cognate of chiyut/vitality), and the practice of hispaklut — gazing at the sekhel hidden within each thing to draw close to God.",
+      "dominant_node": "חכמה",
+      "nodes": [
+        "חכמה",
+        "חיות",
+        "אות חי\"ת",
+        "בכור",
+        "יעקב",
+        "ראשית",
+        "שמש",
+        "\"תמימי דרך\"",
+        "יוסף",
+        "להסתכל בהשכל שיש בכל דבר",
+        "תם",
+        "הסתכלות",
+        "אשרי"
+      ],
+      "node_degrees": {
+        "חכמה": 8,
+        "יעקב": 6,
+        "חיות": 3,
+        "להסתכל בהשכל שיש בכל דבר": 2,
+        "הסתכלות": 2,
+        "אות חי\"ת": 2,
+        "בכור": 2,
+        "ראשית": 2,
+        "שמש": 2,
+        "\"תמימי דרך\"": 1,
+        "יוסף": 1,
+        "תם": 1,
+        "אשרי": 1
+      }
+    },
+    {
+      "id": 2,
+      "torah_ref": 1,
+      "label": "מַלְכוּת וְחֵן",
+      "label_en": "Kingship and Grace",
+      "polarity": "good",
+      "reason": "This cluster orbits מלכות (divine kingship) as the nun-letter that receives illumination from the chet (חכמה/sun) and becomes the moon (לבנה) shining with reflected light. When malkhut receives from chokhmah, it generates חן (grace/favor) — the quality that causes prayers to be accepted. The ספינה metaphor (the ship whose worthiness/honor the wave tries to sink) belongs here, as does the yetzer tov identified with malkhut as 'misken v'chakham'. The tav letter (engraving/marking) and the small isolated pair 'צריך לתן כח למלכות דקדשה ↔ לעולם ירגיז' are merged here because both describe the mechanism of empowering holy malkhut over the evil kingdom.",
+      "dominant_node": "מלכות",
+      "nodes": [
+        "מלכות",
+        "\"מסכן וחכם\"",
+        "אות נו\"ן",
+        "דל",
+        "דלית לה מגרמה כלום",
+        "חן",
+        "חשיבות",
+        "יצר טוב",
+        "לבנה",
+        "עני",
+        "ספינה",
+        "ספון",
+        "צריך כל אחד לתן כח לבחינת מלכות דקדשה להתגבר על מלכות דסטרא אחרא",
+        "לעולם ירגיז אדם יצר טוב על יצר הרע"
+      ],
+      "node_degrees": {
+        "מלכות": 9,
+        "ספינה": 3,
+        "\"מסכן וחכם\"": 2,
+        "חן": 2,
+        "חשיבות": 2,
+        "יצר טוב": 2,
+        "אות נו\"ן": 1,
+        "דל": 1,
+        "דלית לה מגרמה כלום": 1,
+        "לבנה": 1,
+        "עני": 1,
+        "ספון": 1,
+        "צריך כל אחד לתן כח לבחינת מלכות דקדשה להתגבר על מלכות דסטרא אחרא": 1,
+        "לעולם ירגיז אדם יצר טוב על יצר הרע": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["אות ת\"ו", "חקיקה", "רשימה"],
+          "reason": "The tav-letter means 'engraving and marking' (chakika u-reshima). In the Torah's argument, when chen is produced (chet+nun=malkhut receiving chokhmah), it engraves a place in the heart of the petitioned person. The tav is the seal/outcome of the malkhut-chokhmah union generating chen. Thematically it is an extension of the chen-malkhut nexus."
+        },
+        {
+          "merged_nodes": ["צריך כל אחד לתן כח לבחינת מלכות דקדשה להתגבר על מלכות דסטרא אחרא", "לעולם ירגיז אדם יצר טוב על יצר הרע"],
+          "reason": "This bechina-pair directly states the practical imperative: one must empower holy malkhut over the evil kingdom by rousing the good inclination. It is a positive counterpart to the yetzer hara cluster and belongs with the malkhut/chen package because it describes what malkhut is supposed to do."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 1,
+      "label": "יֵצֶר הָרָע וּמַלְכוּת הָרְשָׁעָה",
+      "label_en": "The Evil Inclination and the Wicked Kingdom",
+      "polarity": "evil",
+      "reason": "This cluster groups all nodes in Torah #1 that represent the negative pole: the yetzer hara (called 'melekh zaken u-kesil'), the wave (gal) that tries to sink the ship of Israel's honor, the evil malkhut (sitra achra's moon), Esav who despised the firstborn/sekhel, and the descriptions of sin-caused madness (ruach shtut, meshugga, baal aveira). Four small isolated pairs are merged here: 'baal aveira ↔ meshugga', 'eish levana ↔ yetzer hara disguising as mitzva', and 'shiga'on ↔ ruach shtut', all of which describe the same domain — the destructive force that Torah must overcome.",
+      "dominant_node": "יצר הרע",
+      "nodes": [
+        "יצר הרע",
+        "\"מלך זקן וכסיל\"",
+        "גל",
+        "מלכות הרשעה",
+        "לבנה דסטרא אחרא",
+        "מי שאינו מקשר עצמו אל השכל והחכמה והחיות, שיש בכל דבר",
+        "עשו",
+        "בעל עברה",
+        "משוגע",
+        "אש לבנה",
+        "מתחלה היצר הרע מתלבש עצמו במצוות",
+        "שגעון",
+        "רוח שטות"
+      ],
+      "node_degrees": {
+        "יצר הרע": 3,
+        "מלכות הרשעה": 3,
+        "מי שאינו מקשר עצמו אל השכל והחכמה והחיות, שיש בכל דבר": 2,
+        "\"מלך זקן וכסיל\"": 1,
+        "גל": 1,
+        "לבנה דסטרא אחרא": 1,
+        "עשו": 1,
+        "בעל עברה": 1,
+        "משוגע": 1,
+        "אש לבנה": 1,
+        "מתחלה היצר הרע מתלבש עצמו במצוות": 1,
+        "שגעון": 1,
+        "רוח שטות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["בעל עברה", "משוגע"],
+          "reason": "The sinner is equated to a madman (Sota 3a — ein adam over aveira ela im ken nikhnas bo ruach shtut). This bechina-pair is the direct theological link between sin and madness that the Torah yetzer-hara-as-ruach-shtut narrative depends on. It is part of the evil domain description."
+        },
+        {
+          "merged_nodes": ["אש לבנה", "מתחלה היצר הרע מתלבש עצמו במצוות"],
+          "reason": "White fire (eish levana) is the disguise of the yetzer hara — it appears as a mitzvah but is a damaging angel. This is a direct bechina of the yetzer hara's deceptive tactic and belongs squarely in the evil inclination cluster."
+        },
+        {
+          "merged_nodes": ["שגעון", "רוח שטות"],
+          "reason": "Madness (shiga'on) is the ruach shtut — the spirit of folly that the yetzer hara injects into a person. This pair describes the symptom of the yetzer hara's dominance and is part of the evil kingdom's effect on the human soul."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 1,
+      "label": "תּוֹרָה וָמַקֵּל",
+      "label_en": "Torah and the Staff",
+      "polarity": "good",
+      "reason": "This cluster centers on the Torah as the instrument of subduing the yetzer hara, expressed through three overlapping metaphors: (1) the vav-letter (whose shape is a staff/makel), (2) the Tablets being six-by-six handbreadths (arokhan vav, rakhban vav), and (3) the Torah as 'maklot v'shemot' — sticks and divine names used to beat back the madness of the evil inclination, as Rabbah bar bar Chanah's alwata (club) inscribed with 'Ehyeh asher Ehyeh'. Derakhei Hashem and Luchot are included as synonyms for Torah in this context.",
+      "dominant_node": "תורה",
+      "nodes": [
+        "תורה",
+        "אות וא\"ו",
+        "מקל",
+        "שמות",
+        "דרכי ה'",
+        "לוחות"
+      ],
+      "node_degrees": {
+        "תורה": 6,
+        "מקל": 4,
+        "אות וא\"ו": 3,
+        "שמות": 2,
+        "דרכי ה'": 1,
+        "לוחות": 1
+      }
+    },
+    {
+      "id": 5,
+      "torah_ref": 1,
+      "label": "אוֹת תָּ\"ו וְהַחֲקִיקָה",
+      "label_en": "The Letter Tav and the Engraving",
+      "polarity": "good",
+      "reason": "These three nodes (the tav-letter, engraving, and marking/reshima) all share the same essential domain: the seal or imprint that is left when prayer is accepted. The tav means 'engraving and marking' — it is the conceptual domain of impression-left-behind. This is a separate package from מלכות וחן because although grace (חן) *produces* the engraving (cause-and-effect / eitza), the engraving itself is a different essential nature from grace. Grace is receptive kingship; engraving is the mark of impact. One causes the other — that is an eitza connection between packages, not a shared nature within a package.",
+      "dominant_node": "אות ת\"ו",
+      "nodes": [
+        "אות ת\"ו",
+        "חקיקה",
+        "רשימה"
+      ],
+      "node_degrees": {
+        "אות ת\"ו": 2,
+        "חקיקה": 1,
+        "רשימה": 1
+      },
+      "correction_note": "Originally these 3 nodes were merged into Package 2 (מלכות וחן) by the algorithm. Corrected per framework rule: packages represent shared nature (bechina/parallel), not cause-and-effect chains (eitza). The tav/engraving cluster is the *result* of grace, not an aspect sharing the same nature as grace."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 48,
+    "total_nodes": 49,
+    "total_packages": 5,
+    "raw_connected_components": 8,
+    "components_merged_into_packages": 5,
+    "note_on_merges": "8 raw components: (A) 13 nodes - chokhmah/Yaakov [Pkg 1], (B) 12 nodes - malkhut/chen [Pkg 2], (C) 7 nodes - yetzer hara/evil kingdom [Pkg 3], (D) 6 nodes - Torah/vav/makel [Pkg 4], (E) 3 nodes - tav/chakika/reshima [Pkg 5 — kept separate, eitza connection to Pkg 2 not bechina parallel], (F) 2 nodes - tzarich/leolam pair [merged into Pkg 2], (G) 2 nodes - baal aveira/meshugga [merged into Pkg 3], (H) 2 nodes - eish levana/yetzer disguise [merged into Pkg 3], (I) 2 nodes - shiga'on/ruach shtut [merged into Pkg 3]"
+  }
+}

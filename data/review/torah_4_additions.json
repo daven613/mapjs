@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "source": "Torah #4",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "עצבות (Sadness/Depression)",
+      "suggested_package": 6,
+      "source_quote": "עַצְבוּת וְתוֹלְדוֹתֵיהֶן נִמְשָׁכִין מִדּוֹמֵם",
+      "reasoning": "The text explicitly states that sadness (עצבות) and its offspring derive from the domem (earth/mineral) element. In section 8, the night-walking parable is introduced with the parable of someone 'fearing thorns, pits, evil beasts, and bandits' — and the analysis maps these to the four elements' bad middot. While פחתים (pits) is in the dataset as a bechina of דומם, the actual bad middah it produces (עצבות, sadness) is not represented as a bechina node for Torah #4. The text says: 'עצבות ותולדותיהן נמשכין מדומם' — sadness derives from domem. This בחינת relationship belongs in Package 6 (evil elements). Suggested edge: עצבות ↔ דומם (bechina).",
+      "gap_severity": "moderate"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "תאוות רעות (Evil Desires)",
+      "suggested_package": 6,
+      "source_quote": "תַּאֲווֹת רָעוֹת וְתוֹלְדוֹתֵיהֶן נִמְשָׁכִין מִצּוֹמֵחַ",
+      "reasoning": "The text explicitly states that evil desires (תאוות רעות) and their offspring derive from the tzomea'ch (plant) element. While קוצים (thorns) is in the dataset as a bechina of צומח, the actual bad middah (תאוות רעות) is not represented as a bechina node for Torah #4. The relationship is the same structural pattern as: דברים בטלים ↔ חי and גאוה ↔ מדבר. The missing edge: תאוות רעות ↔ צומח (bechina).",
+      "gap_severity": "moderate"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "ארץ מצרים / גלות (Egypt/Exile as Evil Kingdom)",
+      "suggested_package": 1,
+      "source_quote": "כִּי עַכְשָׁו הַמַּלְכוּת וְהַמֶּמְשָׁלָה לְהָעֲכּוּ\"ם",
+      "reasoning": "The text repeatedly describes the exile of malkhut 'among the nations' (העכו\"ם) as the fundamental problem. The phrase 'ארץ מצרים' and 'גלות' are used as bechinot of the exile-state of malkhut. The verse 'אשר הוצאתיך מארץ מצרים מבית עבדים' is parsed: Egypt = the nations who oppress (מצרים = מצרים = those who constrain), 'מבית עבדים' = slavery to the four evil middot. These concepts describe the evil state of malkhut in exile. Suggested edges: ארץ מצרים ↔ מלכות בגלות (bechina), or מצרים ↔ עכו\"ם (bechina).",
+      "gap_severity": "low"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "רָצוֹא וָשׁוֹב (Running and Returning)",
+      "suggested_package": 3,
+      "source_quote": "וְהָיָה מְדַבֵּק אֶת עַצְמוֹ בְּאוֹר אֵין סוֹף, אֲבָל הַהִתְפַּשְּׁטוּת הָיָה בִּבְחִינַת: וְהַחַיּוֹת רָצוֹא וָשׁוֹב",
+      "reasoning": "The concept of 'ratzo vaShov' (running and returning, from Ezekiel's vision of the living creatures) is central to Torah #4's teaching on cleaving to Ein Sof. Moshe's hitpashetut (dissolution into the Infinite) had to be in the mode of ratzo vaShov — complete immersion followed by return to the world. This is described as a bechina: the tzaddik's cleaving to Ein Sof is a bechina of 'ratzo vaShov.' No bechina edges for Torah #4 capture this. Suggested edge: התפשטות הגשמיות ↔ רצוא ושוב (bechina) or רצוא ושוב ↔ אין סוף (bechina).",
+      "gap_severity": "moderate"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "הִסְתַּלְּקוּת משֶׁה בְּשַׁבָּת בְּשַׁעְתָּא דְּמִנְחָה (Moses's departure on Shabbat at Mincha)",
+      "suggested_package": 3,
+      "source_quote": "שֶׁהִסְתַּלְּקוּת מֹשֶׁה בְּשַׁבָּת בְּשַׁעְתָּא דְּמִנְחָה, שֶׁאָז הִתְגַּלּוּת רַעֲוָא דְּרַעֲוִין",
+      "reasoning": "The Zohar's teaching that Moshe departed on Shabbat at the time of Mincha prayer — when the 'ra'ava de-ra'avin' (will of all wills / ratsón ein sof) is revealed — is cited as a bechina: Moshe's departure IS the moment of highest Ein Sof revelation because Moshe annihilated his yesh (existence). This is a specific bechina of the Ein Sof cluster (Package 3) not captured in the dataset.",
+      "gap_severity": "low"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "צֵרוּפֵי אוֹתִיּוֹת / צֵרוּפִים רָעִים (Letter-Combinations / Evil Permutations)",
+      "suggested_package": 1,
+      "source_quote": "וְכָל עֲבֵרָה יֵשׁ לָהּ צֵרוּף אוֹתִיּוֹת. וּכְשֶׁעָבַר אֵיזֶה עֲבֵרָה, אֲזַי נֶחְקָק צֵרוּף רַע עַל עַצְמוֹתָיו",
+      "reasoning": "The concept of 'tziruf otiyot' (letter-permutations/combinations) is central to the sin-mechanism in Torah #4: every sin has a letter-combination, and transgressing engraves an evil permutation on one's bones. The good letter-combination is destroyed and an evil one is built. Since מלכות = אותיות (letters/speech), and 'צרוף רע' represents the corruption of speech/malkhut, this belongs in Package 1. The bechina relationship: צרוף רע ↔ חטא/עברה, or עצמות ↔ צרוף אותיות. Some related eitza edges exist in the dataset but the bechina aspect (what evil letter-combinations essentially ARE) is underdeveloped.",
+      "gap_severity": "moderate"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "עֲנָוָה / שִׂים עַצְמוֹ כְּשִׁירַיִם (Humility / Making Oneself as Leftovers)",
+      "suggested_package": 1,
+      "source_quote": "וְהַתַּלְמִיד חָכָם הוּא בְּחִינַת מֹשֶׁה, שֶׁמֵּשִׂים עַצְמוֹ כְּשִׁירַיִם, כְּמוֹ שֶׁכָּתוּב: וְהָאִישׁ מֹשֶׁה עָנָו מְאֹד",
+      "reasoning": "Humility (ענוה) and 'making oneself as leftovers' (שים עצמו כשירים) are described as the essential quality of the talmid chakham/Moshe that gives him the power to atone. The text explicitly states: 'כי זה מן הנמנע שלא יבוא לאדם איזה גדלות' — when praised, inevitably pride comes. But Moshe was 'עָנָו מְאֹד' (very humble), and this IS what made him capable of atonement. The bechina: ענוה ↔ כח לכפר (humility = power to atone), or ענוה ↔ חכמה מאין תמצא. This connects the משה/אין cluster to ענוה as its defining quality. Missing bechina edge for reference=4.",
+      "gap_severity": "high"
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 63,
+    "nodes_in_dataset_not_in_packages": [],
+    "all_63_edges_assigned": true,
+    "concepts_in_source_text_not_in_dataset": [
+      "עצבות (sadness) as a bechina of דומם — text explicitly states this pairing",
+      "תאוות רעות (evil desires) as a bechina of צומח — parallel to other element-middah pairs",
+      "ארץ מצרים / גלות as bechina of evil-malkhut-in-exile",
+      "רצוא ושוב as the mode of the tzaddik's divine cleaving",
+      "הסתלקות משה בשבת at mincha = revelation of ra'ava de-ra'avin",
+      "צרופים רעים (evil letter-combinations) as the essential nature of sin engraved on bones",
+      "ענוה (humility) as the essential bechina of the talmid chakham that enables atonement"
+    ],
+    "note_on_duplicates": "Edges 1030 and 1031 represent the same bechina (מיתה ↔ ודוי דברים) with slightly different node text (מִּיתָה vs מֵתָה — different grammatical forms from the same Aramaic story). Both counted; nodes normalized to single 'מיתה' node in the package.",
+    "note_on_null_id_edges": "Two edges with null IDs were found and confirmed as Torah #4 bechina: (1) גרבי דמשחא ↔ דעת and (2) יום המיתה ↔ ודוי דברים. Both are legitimate bechina statements from the source text."
+  }
+}

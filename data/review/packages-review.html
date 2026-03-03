@@ -457,11 +457,12 @@
 
 <div class="header">
   <div>
-    <h1>Package Review — Torah #1</h1>
+    <h1 id="page-title">Package Review — Torah #…</h1>
     <div class="header-meta">Review node membership · Accept or reject each concept</div>
   </div>
   <div class="header-nav">
-    <a href="review.html" class="nav-link">← Changes Review</a>
+    <a href="review-index.html" class="nav-link">← All Torahs</a>
+    <a href="review.html" class="nav-link">Changes Review</a>
   </div>
   <div class="progress-wrap">
     <div id="progress-label" class="progress-label">0 / 0 reviewed</div>
@@ -494,6 +495,10 @@
 <script>
 'use strict';
 
+const torahNum = parseInt(new URLSearchParams(location.search).get('torah') || '1', 10);
+document.getElementById('page-title').textContent = 'Package Review — Torah #' + torahNum;
+document.title = 'Package Review — Torah #' + torahNum;
+
 let packagesData = null;
 let additionsData = null;
 let nodeProofs = {}; // nodeId -> [edge, ...]
@@ -502,9 +507,12 @@ let selectedChipKey = null; // "pkgId:nodeId"
 // keys: "node:{pkgId}:{nodeId}" or "addition:{nodeId}"
 const decisions = {};
 
+const pkgFile  = 'torah_' + torahNum + '_packages.json';
+const addFile  = 'torah_' + torahNum + '_additions.json';
+
 Promise.all([
-  fetch('proposed_packages.json').then(r => r.json()),
-  fetch('proposed_package_additions.json').then(r => r.json())
+  fetch(pkgFile).then(r => r.json()),
+  fetch(addFile).then(r => { if (!r.ok) return { additions: [], unassigned_dataset_nodes: [] }; return r.json(); })
 ]).then(([pkgs, adds]) => {
   packagesData = pkgs;
   additionsData = adds;
@@ -520,7 +528,7 @@ Promise.all([
 function buildNodeProofsIndex() {
   nodeProofs = {};
   if (typeof torahData === 'undefined') return;
-  const ref1 = torahData.filter(e => e.reference === 1 && e.type === 'bechina');
+  const ref1 = torahData.filter(e => e.reference === torahNum && e.type === 'bechina');
   for (const edge of ref1) {
     if (!nodeProofs[edge.node1_id]) nodeProofs[edge.node1_id] = [];
     if (!nodeProofs[edge.node2_id]) nodeProofs[edge.node2_id] = [];
@@ -884,7 +892,7 @@ function exportDecisions() {
   const blob = new Blob([JSON.stringify(result, null, 2)], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = 'package_decisions.json';
+  a.download = 'torah_' + torahNum + '_decisions.json';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Torah Map — Review Center</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; min-height: 100vh; }
+
+  .header {
+    background: #1a1a2e;
+    color: white;
+    padding: 20px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .header h1 { font-size: 1.3rem; font-weight: 700; }
+  .header-meta { font-size: 0.83rem; color: #94a3b8; margin-top: 3px; }
+  .nav-link {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 5px 14px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    transition: all 0.15s;
+    direction: ltr;
+  }
+  .nav-link:hover { background: #334155; color: white; }
+
+  .main { max-width: 860px; margin: 36px auto; padding: 0 20px 60px; }
+
+  .section-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin: 32px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    direction: ltr;
+  }
+
+  .torah-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+  }
+
+  .torah-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border: 2px solid #e2e8f0;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .torah-card:hover { border-color: #94a3b8; box-shadow: 0 3px 10px rgba(0,0,0,0.12); }
+
+  .card-header {
+    padding: 12px 16px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .torah-num {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #64748b;
+    direction: ltr;
+  }
+  .pkg-count {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    direction: ltr;
+  }
+  .card-body { padding: 14px 16px; }
+  .torah-title-he {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+    direction: rtl;
+  }
+  .torah-title-en {
+    font-size: 0.75rem;
+    color: #64748b;
+    direction: ltr;
+    margin-bottom: 12px;
+  }
+  .pkg-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    direction: rtl;
+    margin-bottom: 14px;
+  }
+  .pkg-pill {
+    font-size: 0.68rem;
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-weight: 600;
+    border: 1px solid transparent;
+  }
+  .pill-good    { background: #dcfce7; color: #15803d; border-color: #86efac; }
+  .pill-evil    { background: #fee2e2; color: #b91c1c; border-color: #fca5a5; }
+  .pill-neutral { background: #f1f5f9; color: #475569; border-color: #cbd5e1; }
+
+  .card-actions {
+    display: flex;
+    gap: 8px;
+    direction: ltr;
+  }
+  .btn-review {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 7px 12px;
+    border-radius: 7px;
+    border: none;
+    background: #1a1a2e;
+    color: white;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .btn-review:hover { background: #2d2d4e; }
+
+  .changes-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    border: 2px solid #e2e8f0;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    transition: border-color 0.15s;
+  }
+  .changes-card:hover { border-color: #94a3b8; }
+  .changes-info { direction: ltr; }
+  .changes-title { font-size: 1rem; font-weight: 700; color: #1a1a2e; }
+  .changes-desc { font-size: 0.8rem; color: #64748b; margin-top: 3px; }
+
+  .loading-card {
+    background: #f8fafc;
+    border: 2px dashed #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.82rem;
+    direction: ltr;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Torah Map — Review Center</h1>
+    <div class="header-meta">Likutay Moharan · Package analysis &amp; dataset review</div>
+  </div>
+  <a href="review.html" class="nav-link">Edge Changes Review</a>
+</div>
+
+<div class="main">
+
+  <div class="section-title">Torah Package Reviews</div>
+  <div class="torah-grid" id="torah-grid">
+    <div class="loading-card">Loading available analyses…</div>
+  </div>
+
+  <div class="section-title">Dataset Changes</div>
+  <a href="review.html" class="changes-card" style="display:flex;text-decoration:none;">
+    <div class="changes-info">
+      <div class="changes-title">Edge Changes Review</div>
+      <div class="changes-desc">Review proposed alias merges, companion edges, and other dataset corrections</div>
+    </div>
+    <span style="font-size:1.4rem;color:#94a3b8;direction:ltr">→</span>
+  </a>
+
+</div>
+
+<script>
+'use strict';
+
+// Torahs we know about — try to load their package files
+const knownTorahs = [1, 2, 3, 4];
+
+async function loadTorahCard(num) {
+  try {
+    const res = await fetch('torah_' + num + '_packages.json');
+    if (!res.ok) return null;
+    return await res.json();
+  } catch { return null; }
+}
+
+function buildCard(num, data) {
+  const packages = data.packages || [];
+  const stats = data.stats || {};
+
+  const card = document.createElement('div');
+  card.className = 'torah-card';
+
+  // Build package pills (max 4 visible)
+  const pillsHtml = packages.slice(0, 5).map(p => {
+    const cls = p.polarity === 'evil' ? 'pill-evil' : p.polarity === 'neutral' ? 'pill-neutral' : 'pill-good';
+    return '<span class="pkg-pill ' + cls + '">' + escHtml(p.label) + '</span>';
+  }).join('');
+
+  card.innerHTML =
+    '<div class="card-header">' +
+      '<span class="torah-num">Torah #' + num + '</span>' +
+      '<span class="pkg-count">' + packages.length + ' packages · ' + (stats.total_nodes || '?') + ' nodes</span>' +
+    '</div>' +
+    '<div class="card-body">' +
+      '<div class="pkg-pills">' + pillsHtml + '</div>' +
+      '<div class="card-actions">' +
+        '<a href="packages-review.html?torah=' + num + '" class="btn-review">Review Packages →</a>' +
+      '</div>' +
+    '</div>';
+
+  return card;
+}
+
+function buildMissingCard(num) {
+  const card = document.createElement('div');
+  card.className = 'loading-card';
+  card.style.textAlign = 'left';
+  card.innerHTML = '<strong>Torah #' + num + '</strong><br>Analysis not yet available';
+  return card;
+}
+
+function escHtml(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+async function init() {
+  const grid = document.getElementById('torah-grid');
+  grid.innerHTML = '';
+  const results = await Promise.all(knownTorahs.map(n => loadTorahCard(n)));
+  for (let i = 0; i < knownTorahs.length; i++) {
+    const num = knownTorahs[i];
+    const data = results[i];
+    grid.appendChild(data ? buildCard(num, data) : buildMissingCard(num));
+  }
+}
+
+init();
+</script>
+</body>
+</html>
