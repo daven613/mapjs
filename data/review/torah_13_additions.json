@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "source": "Torah #13",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "concept_he": "אַרְיֵה שֶׁבִּבְחִינַת נֶפֶשׁ",
+      "concept_en": "Aryeh-of-the-Nefesh",
+      "missing_edge": {
+        "node1": "אריה שבנפש",
+        "node2": "מרת נפש / פגם הנפש",
+        "relation": "bechina"
+      },
+      "source_text_quote": "אַרְיֵה שֶׁבִּבְחִינַת נֶפֶשׁ, זֶה בְּחִינַת אָרִיתִי מוֹרִי עִם בְּשָׂמִי; מוֹרִי זֶה בְּחִינַת מָרַת נָפֶשׁ",
+      "source_line": 29,
+      "target_package": 1,
+      "note": "The Aryeh-of-the-Nefesh is explicitly named as a bechina of 'ariti mori' / marat nefesh (bitterness of soul / soul-wound). This is one of the four chayot assigned to nefesh in section ה, but its bechina-equation with marat nefesh is missing from the dataset. The Aryeh-shebaNefesh node itself is also absent. This is the highest-priority gap: Aryeh is one of four chayot; all three others (Shor, Nesher, Adam) have bechina edges in the dataset."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "concept_he": "אַרְיֵה שֶׁבַּתּוֹרָה",
+      "concept_en": "Aryeh-of-the-Torah",
+      "missing_edge": {
+        "node1": "אריה שבתורה",
+        "node2": "עוז / מה עז מארי",
+        "relation": "bechina"
+      },
+      "source_text_quote": "אַרְיֵה שֶׁבַּתּוֹרָה, כִּי הַתּוֹרָה נִקְרָא עֹז, וּמֶה עַז מֵאֲרִי",
+      "source_line": 40,
+      "target_package": 2,
+      "note": "The Aryeh-of-the-Torah is equated with 'oz' (strength) via 'mah az me-ari'. All four chayot are described in both Torah and nefesh dimensions in section ה, but only Aryeh-shebaTorah has no bechina edge. The node itself is also absent. This creates an asymmetric gap in the Torah-Merkavah package alongside the parallel gap in Package 1."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "medium",
+      "concept_he": "אַשְׁרֵי הָעָם",
+      "concept_en": "Ashrei ha'am (Psalm verse-opening)",
+      "missing_edge": {
+        "node1": "אשרי העם",
+        "node2": "השגחה",
+        "relation": "bechina"
+      },
+      "source_text_quote": "אַשְׁרֵי הָעָם – זֶה בְּחִינַת הַשְׁגָּחָה",
+      "source_line": 73,
+      "target_package": "would anchor a Hashgachah package or join Package 4",
+      "note": "The opening verse of the Psalm being expounded ('Ashrei ha'am') is explicitly equated with hashgachah (divine providence). This is the hermeneutic anchor of the Torah's closing exegesis (section ז). Hashgachah itself appears only as a target of eitza edges (edge 972: shvirat ta'avat mamon → hashgachah shleimah) but has no bechina equating it with any parallel concept. The 'Ashrei ha'am = hashgachah' bechina is entirely absent."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "medium",
+      "concept_he": "קְטֹרֶת",
+      "concept_en": "Incense / Ketoret",
+      "missing_edge": {
+        "node1": "קטורת",
+        "node2": "קישור חמום הלב עם הרוח",
+        "relation": "bechina"
+      },
+      "source_text_quote": "וְזֶה בְּחִינַת קְטֹרֶת, שֶׁמְּקַשֵּׁר חִמּוּם הַלֵּב עִם הָרוּחַ",
+      "source_line": 6,
+      "target_package": 5,
+      "note": "The ketoret (incense) is explicitly equated with the binding of the heart's heat (chamimut) with the spirit (ruach). This is in section א, closely tied to the tzedakah/nigun cluster. The incense joins the Levite-song and commercial-contentment concepts. Missing from dataset entirely."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "medium",
+      "concept_he": "חֶדְוָה",
+      "concept_en": "Chedvah (Joy)",
+      "missing_edge": {
+        "node1": "חדוה",
+        "node2": "שמח בחלקו",
+        "relation": "bechina"
+      },
+      "source_text_quote": "חֶדְוָה – זֶה שֶׁשָּׂמֵחַ בְּחֶלְקוֹ",
+      "source_line": 5,
+      "target_package": 5,
+      "note": "Chedvah (joy, from the Zohar passage 'liba mekabel lei bechedvah') is equated with 'being satisfied with one's portion'. This is part of the tzedakah/breaking-money-lust cluster. The word 'chedvah' here is the joy that characterizes the Levite-song / honest-commerce state of mind. Missing from dataset."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "low",
+      "concept_he": "נוּרִיאֵ\"ל",
+      "concept_en": "Nuriel (angelic name)",
+      "missing_edge": {
+        "node1": "נוריאל",
+        "node2": "חמימות תאות ממון",
+        "relation": "bechina"
+      },
+      "source_text_quote": "נוּרִיאֵ\"ל דָּא נוּר דָּלוּק בַּחֲמִימוּת תַּאֲוַת מָמוֹן",
+      "source_line": 15,
+      "target_package": "evil mirror — would form anti-tzedakah cluster",
+      "note": "Nuriel is equated with a burning fire of money-lust. This is the ratzo (forward-rushing) aspect of the nefesh in its corrupted state. From the Tikkunei Zohar: 'ratzo da Nuriel, vashov da Metatron.' Nuriel represents the negative pole — unbroken passion for wealth. This could anchor an evil-mirror package (polarity: evil) corresponding to Package 5's tzedakah cluster."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "low",
+      "concept_he": "מְטַטְרוֹן שַׂר הַפָּנִים",
+      "concept_en": "Metatron Prince of the Face",
+      "missing_edge": {
+        "node1": "מטטרון שר הפנים",
+        "node2": "משה / מלשיח",
+        "relation": "bechina"
+      },
+      "source_text_quote": "וָשׁוֹב – דָּא מְטַ\"ט שַׂר הַפָּנִים, דְּאִיהוּ רָשִׁים בְּשֵׁם מֹשֶׁה, דְּאִיהוּ מָשִׁיחַ",
+      "source_line": 15,
+      "target_package": 1,
+      "note": "Metatron (the shov/returning aspect) is equated with Moshe, who is equated with Mashiach, who is the Tzaddik-of-the-generation. This connects to the ratzo/shov structure of the soul-gathering. Missing bechina: Metatron = Moshe = Mashiach. The Moshe-Mashiach identity is partially covered in section ב of the text but not as a bechina edge in the dataset."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "low",
+      "concept_he": "אַתְרָא צְנִיעָא",
+      "concept_en": "The Hidden Place",
+      "missing_edge": {
+        "node1": "אתרא צניעא",
+        "node2": "בית המקדש / שכל",
+        "relation": "bechina"
+      },
+      "source_text_quote": "אַתְרָא צְנִיעָא, שֶׁהוּא בֵּית הַמִּקְדָּשׁ, שֶׁהוּא הַשֵּׂכֶל, כְּמוֹ שֶׁכָּתוּב: וְאֶת צְנוּעִים חָכְמָה",
+      "source_line": 47,
+      "target_package": 3,
+      "note": "In the R. Yona story exegesis (section ו), 'atra tzni'a' (hidden place) = Beit haMikdash = sekhel. This is a second layer equating the hidden place with wisdom, parallel to the daat=bayit bechina in Package 3. Missing from dataset."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "low",
+      "concept_he": "בֵּין גַּלָּא לְגַלָּא — שִׁין",
+      "concept_en": "Distance between waves = letter Shin",
+      "missing_edge": {
+        "node1": "בין גלא לגלא תלת מאה פרסי",
+        "node2": "שין (אחת)",
+        "relation": "bechina"
+      },
+      "source_text_quote": "בֵּין גַּלָּא לְגַלָּא תְּלָת מֵאָה פַּרְסֵי – שֶׁהוּא בְּחִינַת שִׁין הַנַּ\"ל",
+      "source_line": 55,
+      "target_package": 1,
+      "note": "The Rabba bar bar Chana sea-story exegesis (section ו) equates the distance between waves with one Shin (representing the sekhel of gathering souls) and the height of waves with the second Shin (sekhel of elevating souls). These two Shin-bechinot are explicitly marked in the text. Missing from dataset. The two Shins correspond to the two sekhels of the Tzaddik."
+    }
+  ],
+  "unassigned_dataset_nodes": [
+    {
+      "node_id": "שבירת תאות ממון",
+      "appears_in": "eitza edges only (sources: edges 972, 2252, 2278, 2818, 2819, 2820)",
+      "note": "Appears only as eitza source/target. It is the eitza-mechanism connecting Package 5 (tzedakah) to hashgachah and chesed. Not packageable by bechina rules — it is the between-package flow."
+    },
+    {
+      "node_id": "השגחה שלמה",
+      "appears_in": "eitza edge 972 (target)",
+      "note": "Hashgachah appears as the eitza-destination of breaking money-lust. Its bechina with 'Ashrei ha'am' is missing (see additions). Not in any package currently."
+    },
+    {
+      "node_id": "נתבטל החרון אף",
+      "appears_in": "eitza edge 2252 (target)",
+      "note": "Cancellation of divine anger is an eitza outcome. Eitza-only node, not packageable."
+    },
+    {
+      "node_id": "נתמשך חסד בעולם",
+      "appears_in": "eitza edge 2278 (target)",
+      "note": "The drawing of chesed into the world is an eitza outcome. Eitza-only node, not packageable."
+    },
+    {
+      "node_id": "מקרירין חמימות תאות ממון",
+      "appears_in": "eitza edges 2819, 2820 (target)",
+      "note": "Cooling of money-lust is an eitza outcome. Eitza-only node, not packageable."
+    },
+    {
+      "node_id": "רוח נדיבה",
+      "appears_in": "eitza edge 2820 (source)",
+      "note": "Ruach nedivah appears as an eitza source (generous spirit produces cooling of money-lust) but not as a bechina node in Torah 13. Note: 'רוח' (node_id) = tzedakah IS in the dataset as a bechina (edge 2557); 'רוח נדיבה' is a different, more specific node that appears only in an eitza edge."
+    }
+  ],
+  "analysis_notes": {
+    "total_bechina_edges": 24,
+    "total_eitza_edges": 6,
+    "total_edges_in_dataset": 30,
+    "nodes_in_dataset_not_in_packages": [
+      "שבירת תאות ממון",
+      "השגחה שלמה",
+      "נתבטל החרון אף",
+      "נתמשך חסד בעולם",
+      "מקרירין חמימות תאות ממון",
+      "רוח נדיבה"
+    ],
+    "concepts_in_source_text_not_in_dataset": [
+      "אריה שבנפש (with bechina: מרת נפש / פגם הנפש)",
+      "אריה שבתורה (with bechina: עוז / מה עז מארי)",
+      "אשרי העם (bechina: השגחה)",
+      "קטורת (bechina: קישור חמום הלב עם הרוח)",
+      "חדוה (bechina: שמח בחלקו)",
+      "נוריאל (bechina: חמימות תאות ממון)",
+      "מטטרון שר הפנים (bechina: משה / משיח)",
+      "אתרא צניעא (bechina: בית המקדש / שכל)",
+      "בין גלא לגלא תלת מאה פרסי (bechina: שין אחת)",
+      "ורומיא דגלא תלת מאה פרסי (bechina: שין שנייה)"
+    ],
+    "structural_observation": "The most significant gap is the complete absence of Aryeh-shebaNefesh and Aryeh-shebaTorah bechina edges. Torah #13 is built around the parallel structure of four chayot existing in both nefesh and Torah. The dataset captures three of four chayot (Shor, Nesher, Adam) in both dimensions, but Aryeh — the first and most prominent — is entirely missing from both Merkavah packages.",
+    "evil_mirror_observation": "Torah #13 has no evil-polarity bechina edges in the current dataset. The text does contain evil-domain content: Nuriel = burning money-lust (section ג, line 15), the waves threatening to destroy the world (section ו), and the implicit evil mirror of the whole teaching (unbroken money-lust = idolatry = divine anger). If Nuriel bechina edges were added, they would seed an evil-mirror Package 6. Currently, no evil-polarity package is warranted because all existing bechina data is positive."
+  }
+}

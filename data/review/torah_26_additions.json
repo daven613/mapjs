@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "source": "Torah #26",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "רציצא",
+      "node_text": "רְצִיצָא",
+      "polarity": "good",
+      "reason": "The very first word of Torah #26's body is 'רְצִיצָא' — the Aramaic word for the chick that is pressed/crushed inside its egg ('רְצִיצָא דְּמָיֵת בְּבֵיעוּתֵהּ'). The Rebbe immediately decodes it: 'רְצִיצָא, זֶה אֶפְרוֹחַ' — this IS the chick (אפרוח). רציצא is therefore explicitly equated with אפרוח through bechina language ('זֶה' = this is, an identity statement), and since אפרוח = צדיק, רציצא forms one end of a three-node bechina chain: רציצא = אפרוח = צדיק. The absence of רציצא from the dataset means the opening bechina equation of the Torah is unrepresented. It belongs in Package 1 as a third node, and a bechina edge 'רציצא ↔ אפרוח' should be added for reference 26.",
+      "source_quote": "רְצִיצָא, זֶה אֶפְרוֹחַ. זֶה בְּחִינַת צַדִּיק",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "יפרח",
+      "node_text": "יִפְרַח",
+      "polarity": "good",
+      "reason": "The verse cited as proof — 'יִפְרַח בְּיָמָיו צַדִּיק' (Psalms 72:7) — is invoked not merely as a scriptural support but as a bechina identification: the root פרח (to blossom, to burst forth, to fly) is the phonetic and semantic ground for the equation of the chick (אפרוח — from the same root פרח) with the tzaddik. The citation 'בְּחִינַת (תהילים ע\"ב:ז): יִפְרַח בְּיָמָיו צַדִּיק' uses explicit bechina-framing — the verse is presented as the bechina of the tzaddik's nature. However, since this is primarily a verse-citation rather than a standalone concept-node (the equation is אפרוח=צדיק, with the verse as proof), יפרח is a weaker addition candidate than רציצא. It is noted here for completeness; a dataset enricher should determine whether to create a node for this verse-fragment.",
+      "source_quote": "בְּחִינַת (תהילים ע\"ב:ז): יִפְרַח בְּיָמָיו צַדִּיק",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 1,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "רציצא (Aramaic: the pressed/crushed chick inside the egg) — the opening term of the riddle, explicitly equated to אפרוח via bechina language. Missing from dataset as a node for Torah #26. Priority: HIGH — this is the primary bechina equation of the teaching.",
+      "מחשבות זרות (alien/foreign thoughts that enter during prayer) — described as the 'place where entry occurs' (היכא דעל). The teaching's answer equates the place of alien thoughts' entry with the place where holy sparks must be elevated. This is eitza-adjacent framing (the alien thoughts are what the tzaddik confronts), but the deeper identification 'היכא דעל = היכא שנכנסים מחשבות זרות' has a bechina quality — the point of entry IS defined as the moment of alien thought. Consider adding as a bechina node for Torah #26 with relationship to ניצוצי הקדושה.",
+      "ניצוצי הקדושה (sparks of holiness) — described as what must be elevated at the point where alien thoughts enter. The text uses 'הַיְנוּ' (meaning/that is) twice — first equating the place of elevation with the point of entry, then equating the point of entry with where alien thoughts penetrate. This 'הַיְנוּ' language implies a bechina identity: ניצוצי הקדושה (the sparks to be elevated) are located precisely at the same locus as מחשבות זרות (the alien thoughts entering). These are two faces of the same moment in prayer.",
+      "תפלה (prayer) — mentioned as the context ('בצלותיה ובעותיה') of the tzaddik's self-surrender. No explicit bechina identification is made for תפלה in this Torah — it is the arena of action rather than a bechina-equated concept. Eitza role only in Torah #26.",
+      "מסירת נפש (surrendering/giving over the soul) — the act the tzaddik performs ('ממית את עצמו, ומוסר את נפשו'). This is the practical response (eitza) to the question, not a bechina identity. Not a candidate for Package 1 addition via bechina."
+    ]
+  }
+}

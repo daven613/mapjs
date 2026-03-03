@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "source": "Torah #10",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 46,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      {
+        "concept": "אבימלך",
+        "context": "Section ד: the ba'al gaavah is called by the name Avimeleich — 'avi leshon ratzon ki hu rotzeh limloch'. Avimeleich is a character-name/alias for the ba'al gaavah. The text explicitly equates the ba'al gaavah with Avimeleich using bechina-type language. No bechina edge in the dataset links אבימלך ↔ בעל גאוה for reference=10.",
+        "source_text_ref": "Section ד (lines 10-11)",
+        "priority": "medium",
+        "recommended_action": "Consider adding bechina edge: אבימלך ↔ בעל גאוה (ref=10). The text states 'ze habaal-gaavah mekhunieh bilshon Avimeleich: avi leshon ratzon ki hu rotzeh limloch'."
+      },
+      {
+        "concept": "בנימין",
+        "context": "Section ד: 've'et Binyamin tikahu — zeh moreh al gadlut, ki Binyamin al shem Eretz Yisrael, ben yamin'. The text equates בנימין with גדלות (greatness/arrogance appropriated by the ba'alei gaavah). No bechina edge for ref=10.",
+        "source_text_ref": "Section ד (lines 22-23)",
+        "priority": "medium",
+        "recommended_action": "Consider adding bechina edge: בנימין ↔ גדלות (ref=10). The sekhel rebukes: 've'et Binyamin tikahu = shem ata lokchim lachem gadlut'."
+      },
+      {
+        "concept": "קרח ועדתו / בלועי דקרח",
+        "context": "Section ט: The story of Korach is discussed at length. Korach = min = avodah zarah. The Gemara (BM about Rabbah bar bar Chana) is expounded: the two crevices emitting smoke = the two nostrils of divine anger. No bechina edge in dataset links קרח ↔ מינות or קרח ↔ עבודה זרה for reference=10.",
+        "source_text_ref": "Section ט (lines 47-57)",
+        "priority": "high",
+        "recommended_action": "Consider adding bechina edge: קרח ↔ מינות (ref=10) based on 'Korach min hayah, hainu bechina ha'avodah zarah, minut'. Also: תרי בזעי (the two crevices) ↔ תרי נקבי האף (the two nostrils) — bechina of divine anger from idolatry."
+      },
+      {
+        "concept": "חרון אף",
+        "context": "Section ו/ט: 'kol zman sheyesh avodah zarah ba'olam, charon af ba'olam'. The text repeatedly states this as a principle. The dataset has the eitza edges (avodah zarah → charon af) but may lack a bechina edge for this Torah. Check: is חרון אף present in the dataset for ref=10 in bechina?",
+        "source_text_ref": "Sections ו, ט",
+        "priority": "low",
+        "recommended_action": "Verify dataset has חרון אף node connected in ref=10. The relationship here is eitza (cause-effect), not bechina, so no addition needed if correctly classified."
+      },
+      {
+        "concept": "האלה / וְאֵלֶּה",
+        "context": "Section י: 've'eleh — kol makom she'ne'emar ve'eleh mosif al harishonim, bechina tosefot veribui, bechina gaavah, avodah zarah'. The word 've'eleh' itself is equated with gaavah/Haman-Amalek. No bechina edge for ve'eleh ↔ gaavah in ref=10.",
+        "source_text_ref": "Section י (line 61)",
+        "priority": "medium",
+        "recommended_action": "Consider adding bechina edge: וְאֵלֶּה ↔ גַּאֲוָה (ref=10) and וְאֵלֶּה ↔ הָמָן-עֲמָלֵק (ref=10). The text: 'bechina tosefot veribui, bechina gaavah, avodah zarah... zeh bechina Haman-Amalek'."
+      },
+      {
+        "concept": "ראש חדש / תשובה",
+        "context": "Section ט: 'shoresh hateshuvah hu rosh chodesh... zeh bechina teshuvah'. Rosh Chodesh = root of teshuvah (bechina-type language). No bechina edge for ref=10.",
+        "source_text_ref": "Section ט (line 56)",
+        "priority": "low",
+        "recommended_action": "Consider adding bechina edge: רֹאשׁ חֹדֶשׁ ↔ שׁוֹרֶשׁ הַתְּשׁוּבָה (ref=10). The text says 'shoresh hateshuvah hu rosh chodesh'."
+      },
+      {
+        "concept": "רמח (lance/spear) as מֵ\"ם",
+        "context": "Section ט: 've'ancheihu beireish derumacha — romach da ruach mem, shehu me'arba ruchot bo'i haruach, ki hamem hi arba ruchot'. The lance = mem-letter = four winds = ruach of the tzaddik. This is explicit bechina language. No bechina edge in dataset for ref=10 linking רֹמַח ↔ מֵ\"ם or רֹמַח ↔ אַרְבַּע רוּחוֹת.",
+        "source_text_ref": "Section ט (line 53)",
+        "priority": "medium",
+        "recommended_action": "Consider adding bechina edges: רֹמַח ↔ רוּחַ מֵ\"ם (ref=10); מֵ\"ם ↔ אַרְבַּע רוּחוֹת (ref=10)."
+      },
+      {
+        "concept": "גבבא דעמרא (the wool bundle) and מַיָּא (water)",
+        "context": "Section ט: The Aramaic story elements are explicitly decoded. Wool bundle = omer (bechina). Water (mashyeih bema'ya) = se'orim = Esther beruach hakodesh = raglayin. These bechina mappings appear in the text but check if covered by existing edges 408/2675.",
+        "source_text_ref": "Section ט (lines 51-52)",
+        "priority": "low",
+        "recommended_action": "Edge 408 covers שעורים ↔ אסתר ברוח הקדש and 2675 covers אסתר ברוח הקדש ↔ רגלים. The specific 'mashyeih bema'ya' ↔ se'orim may need: מַיָּא ↔ שְׂעוֹרִים or מַיָּא ↔ רַגְלַיִן (ref=10)."
+      }
+    ],
+    "summary": "All nodes with reference=10 bechina edges are assigned to packages. The main gaps are: (1) Korach/minut explicitly stated as bechina but no edge in dataset; (2) Avimeleich as bechina for ba'al gaavah; (3) ve'eleh as bechina for gaavah/Amalek; (4) the lance/mem/four-winds bechina chain in section tet. The תפלה/בית pair is present (null-id edge for אשת↔תפלה at line 32877). No nodes are orphaned from packages — all dataset nodes with reference=10 bechina edges have been assigned."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "source": "Torah #28",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "8 bechina edges extracted (reference===28, type==='bechina'). 4 raw connected components identified: CC-A = {אמונה, אברהם, חסד, תולע} (4 nodes), CC-B = {לאה, אלפין בקדשה, קרבן עולה} (3 nodes), CC-C = {כפירות, עבודה זרה} (2 nodes), CC-D = {עולת תמיד, תולעת יעקב} (2 nodes). CC-D was merged into CC-A because both clusters share the same essential bechina nature: the holy crimson/worm (תולע דקדושה). The post-text commentary (lines 29-35 of source text) makes this explicit: עולת תמיד = תולע דקדושה = בחינת חסד = בחינת אברהם. The תולעת יעקב (Isaiah 41:14) and the תולע of CC-A are two expressions of the same underlying holiness — both the worm-of-faith that subdues the evil counterpart. CC-B (Leah cluster) stands independently as a 3-node structural vessel concept. CC-C stands independently as the evil domain. Result: 3 packages."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 28,
+      "label": "אֱמוּנָה וְחֶסֶד וְתוֹלַעַת יַעֲקֹב",
+      "label_en": "Faith, Lovingkindness, and the Worm of Jacob",
+      "polarity": "good",
+      "reason": "All six nodes share one essential nature: they are all expressions of the foundational holy force that defeats heresy and shame. The teaching explicitly states that תולע (the crimson worm) IS אמונה (Lamentations 4:5 — 'הָאֱמֻנִים עֲלֵי תּוֹלָע'); that אמונה IS אברהם ('וְהֶאֱמִין בַּה''); that אברהם IS חסד; and that חסד IS אמונה. These four form one cluster (CC-A). The two additional nodes — עולת תמיד and תולעת יעקב — are the ritual/prophetic names for the same reality: the post-text commentary states explicitly 'תּוֹלָע דִּקְדֻשָּׁה, בְּחִינַת עוֹלַת תָּמִד, הוּא בְּחִינַת חֶסֶד, בְּחִינַת אַבְרָהָם.' The worm of Jacob (Isaiah 41:14 'אַל תִּירְאִי תּוֹלַעַת יַעֲקֹב') is the same worm as the תולע of CC-A. The daily burnt offering IS this holy worm. All six nodes are thus two faces of one reality: the holy crimson-faith-lovingkindness cluster, expressed through person (Abraham), attribute (chesed), spiritual quality (emunah), symbol (worm/crimson), prophetic image (Worm of Jacob), and ritual act (daily burnt offering).",
+      "dominant_node": "אמונה",
+      "nodes": [
+        "אמונה",
+        "אברהם",
+        "חסד",
+        "תולע",
+        "עולת תמיד",
+        "תולעת יעקב"
+      ],
+      "node_degrees": {
+        "אמונה": 3,
+        "אברהם": 2,
+        "חסד": 2,
+        "תולע": 1,
+        "עולת תמיד": 1,
+        "תולעת יעקב": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["עולת תמיד", "תולעת יעקב"],
+          "reason": "CC-D ({עולת תמיד, תולעת יעקב}) merges into CC-A because these nodes share essential nature with the core cluster. The post-text commentary of Torah #28 (lines 29-35) states explicitly: 'תּוֹלָע דִּקְדֻשָּׁה, בְּחִינַת עוֹלַת תָּמִד, הוּא בְּחִינַת חֶסֶד, בְּחִינַת אַבְרָהָם.' The עולת תמיד IS the holy worm (תולע דקדושה), which IS the תולע of CC-A (already established as אמונה), which IS אברהם and חסד. The dataset has the edge 'עולת תמיד — תולעת יעקב' (bechina, ref 28) and the main text has 'תולע — אמונה' (bechina, ref 28). The reason for the gap is that the dataset did not encode the cross-component bechina (e.g., 'תולע — תולעת יעקב' or 'עולת תמיד — תולע') explicitly, though both are stated in the source text commentary. This is a SHARED NATURE merge, not cause-effect: the daily offering does not produce faith — it IS an expression of the same holy worm-nature."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 28,
+      "label": "לֵאָה וְהָאַלְפִין בִּקְדֻשָּׁה",
+      "label_en": "Leah and the Holy Alephs",
+      "polarity": "good",
+      "reason": "The three nodes share the essential nature of the supernal feminine vessel (Leah as a Kabbalistic partzuf) and its associated holy content. 'אַלְפִין בִּקְדֻשָּׁה הֵם בְּחִינַת לֵאָה' — the holy alephs ARE Leah; they are the thousand-fold wisdom that descended from Leah's domain in holiness, made holy through Solomon's verse ('וַיְדַבֵּר שְׁלֹמֹה שְׁלֹשֶׁת אֲלָפִים מָשָׁל'). 'כָּל קָרְבָּן עוֹלָה, הִיא בִּבְחִינַת לֵאָה' — every burnt offering IS Leah. The עולה (ascending offering) is structurally identified with Leah because it rises (עולה = ascends) as Leah's harsh judgments must be sweetened and elevated. All three nodes are aspects of the same structural/Kabbalistic domain: the Leah-vessel that contains and generates the holy alephs and whose rectification is the burnt offering.",
+      "dominant_node": "לאה",
+      "nodes": [
+        "לאה",
+        "אלפין בקדשה",
+        "קרבן עולה"
+      ],
+      "node_degrees": {
+        "לאה": 2,
+        "אלפין בקדשה": 1,
+        "קרבן עולה": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 28,
+      "label": "כְּפִירוּת וַעֲבוֹדָה זָרָה",
+      "label_en": "Heresy and Idolatry",
+      "polarity": "evil",
+      "reason": "The two nodes share the essential nature of spiritual falsehood and the sitra achra's claim on human consciousness. 'כְּפִירוּת בְּחִינַת עֲבוֹדָה זָרָה' — heresy IS idolatry. They are not cause-and-effect (heresy does not produce idolatry as a sequence); rather, they are two names for the same spiritual reality: the rejection of God's presence and the substitution of alien authority. The teaching explicitly equates them as two aspects of the same thing (the word 'בְּחִינַת' used). This is the evil mirror of Package 1's faith cluster: where Package 1 is faith/chesed/Abraham (holy ground), Package 3 is heresy/idolatry (sitra achra ground).",
+      "dominant_node": "עבודה זרה",
+      "nodes": [
+        "כפירות",
+        "עבודה זרה"
+      ],
+      "node_degrees": {
+        "כפירות": 1,
+        "עבודה זרה": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 8,
+    "total_nodes": 11,
+    "total_packages": 3,
+    "raw_connected_components": 4
+  }
+}

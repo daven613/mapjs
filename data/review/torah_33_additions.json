@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "source": "Torah #33",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "אהבה",
+      "node_text": "אַהֲבָה",
+      "polarity": "good",
+      "reason": "The text explicitly states 'הַחֶסֶד הַיְנוּ הָאַהֲבָה' (section ד, line 23) — chesed IS ahavah. This is unambiguous bechina language (הַיְנוּ = that is to say, equating the two). Since חסד is already in Package 1, אהבה belongs there as its other name/face. The entire Torah revolves around 'אַהֲבָה שֶׁבְּדַעַת' as the central concept.",
+      "source_quote": "הַחֶסֶד, הַיְנוּ הָאַהֲבָה, כְּמוֹ שֶׁכָּתוּב: אַהֲבַת עוֹלָם אֲהַבְתִּיךְ",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "חפץ",
+      "node_text": "חֵפֶץ",
+      "polarity": "good",
+      "reason": "The text explicitly states 'חָפֵץ הוּא בְּחִינַת לֵב, שֶׁהַחֵפֶץ הוּא בַּלֵּב' (section ז, line 44) — desire (chefetz) IS an aspect of the heart, for desire resides in the heart. This is bechina language ('הוּא בְּחִינַת'). The heart is the root of the midot, and linking the heart's desire (חפץ) to the da'at-cluster (Package 1) is the Torah's own exegesis of Psalm 34:13: 'מִי הָאִישׁ הֶחָפֵץ חַיִּים' — whose desire (חפץ = heart) for life (חיים = da'at) ties the lev to da'at.",
+      "source_quote": "חָפֵץ הוּא בְּחִינַת לֵב, שֶׁהַחֵפֶץ הוּא בַּלֵּב",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "לב",
+      "node_text": "לֵב",
+      "polarity": "good",
+      "reason": "The heart (לב) is repeatedly identified as the root of the midot ('עִקָּרָן שֶׁל הַמִּדּוֹת הוּא הַלֵּב', line 41) and as what receives the light of ahavah-she-b'da'at when connected to da'at. The verse 'חָפֵץ הוּא בְּחִינַת לֵב' equates chefetz with lev. The text also states 'שֶׁלִּבּוֹ בִּרְשׁוּתוֹ' (when his heart is under his control) as the precondition for the teaching's fulfillment. The leb belongs in Package 1 as the relational/emotive complement to da'at (the knowing-mind), forming the heart-mind unity the Torah calls for.",
+      "source_quote": "כִּי עִקָּרָן שֶׁל הַמִּדּוֹת הוּא הַלֵּב",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "שלום",
+      "node_text": "שָׁלוֹם",
+      "polarity": "good",
+      "reason": "Torah is 'called shalom' ('הַתּוֹרָה הַנִּקְרֵאת שָׁלוֹם', line 3), and tzaddikim are 'called brit shalom' ('בְּרִית שָׁלוֹם', line 3). This is bechina language (נקראת = is called). The Torah as shalom and the tzaddikim as brit-shalom are both expressions of the same inner reality: the ahavah-she-b'da'at when revealed produces shalom. Shalom is explicitly equated with the revealed state of Torah and the tzaddik. It belongs in Package 1 as the relational/harmonious face of the good cluster.",
+      "source_quote": "עַל-יְדֵי הַתּוֹרָה הַנִּקְרֵאת שָׁלוֹם, כְּמָה דְּאַתְּ אָמַר: וְכָל נְתִיבוֹתֶיהָ שָׁלוֹם",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 2,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "אהבה — 'הַחֶסֶד הַיְנוּ הָאַהֲבָה' (section ד): chesed IS ahavah — explicit bechina equation; belongs in Package 1 alongside חסד",
+      "חפץ — 'חָפֵץ הוּא בְּחִינַת לֵב' (section ז): desire IS an aspect of the heart — explicit bechina language ('הוּא בְּחִינַת'); belongs in Package 1",
+      "לב — 'עִקָּרָן שֶׁל הַמִּדּוֹת הוּא הַלֵּב' (section ז) and 'חָפֵץ הוּא בְּחִינַת לֵב': heart is the root of midot and IS desire — bechina; belongs in Package 1",
+      "שלום — 'הַתּוֹרָה הַנִּקְרֵאת שָׁלוֹם' (section א): Torah IS called shalom — explicit bechina (נקראת); belongs in Package 1",
+      "ימים — 'הַיָּמִים נִקְרָאִים מִדּוֹת' (section ג): days ARE called midot — bechina; candidate for new package (see torah_33_new_packages.json)",
+      "מידות — 'הַמִּדּוֹת הֵם הַתּוֹרָה' (section ג): midot ARE the Torah — bechina; same triple cluster candidate",
+      "תורה — 'הַתּוֹרָה, הַיְנוּ הַמִּדּוֹת, הַיְנוּ הַיָּמִים' (section ד): Torah = midot = yamim triple equation — bechina; candidate for new package",
+      "טוב — 'הַתּוֹרָה נִקְרָא טוֹב' and 'צַדִּיק נִקְרָא טוֹב' (section ה): both Torah and tzaddik are called 'tov' — bechina; candidate for new package",
+      "אור — 'הַתּוֹרָה נִקְרָא... אוֹר' and 'אוֹר זָרוּעַ לַצַּדִּיק' (section ה): both Torah and tzaddik are called 'or' — bechina; candidate for new package",
+      "צדיק — 'צַדִּיק נִקְרָא טוֹב' and 'צַדִּיק... נִקְרָא אוֹר' (section ה): tzaddik IS tov and IS or — multiple bechina statements; candidate for new package",
+      "לולב — 'הוּא בְּחִינַת הַלּוּלָב' (section זappendix): the tzaddik who subdues his yetzer IS an aspect of the lulav — bechina; candidate for new package with צדיק"
+    ]
+  }
+}

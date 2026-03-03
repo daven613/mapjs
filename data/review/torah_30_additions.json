@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "source": "Torah #30",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "package_id": 4,
+      "node_id": "שחרית כנוטריקון חכם רשע תם שאינו יודע",
+      "node_text": "שַׁחֲרִית, נוֹטְרִיקוֹן חָכָם רָשָׁע תָּם שֶׁאֵינוֹ יוֹדֵעַ",
+      "polarity": "neutral",
+      "reason": "The Torah explicitly states that 'Abraham instituted shacharit — notarikon: chakham, rasha, tam, she'eino yodea' (line 45). Shacharit IS, by bechina, the four sons as an acronym. This bechina connects the festival/prayer domain (shacharit) to the four-sons typology. Currently שחרית is in Package 1 (as shacharut = sekhel tachton), but this additional bechina — shacharit as acronym for four sons — would attach it also to Package 4. The node as stated in the source is the compound concept 'shacharit interpreted as notarikon of the four son-types.'",
+      "source_quote": "אַבְרָהָם תִּקֵּן שַׁחֲרִית, נוֹטְרִיקוֹן חָכָם רָשָׁע תָּם שֶׁאֵינוֹ יוֹדֵעַ – שֶׁהֵם בְּחִינַת הָאַרְבַּע מַלְכֻיּוֹת",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "אור הפנים",
+      "node_text": "אוֹר הַפָּנִים",
+      "polarity": "good",
+      "reason": "The source text repeatedly invokes 'or hapanim' (light of the face/countenance) as what Malkhut must be elevated to at the three festivals (lines 30, 33, 35). 'Be'or pnei melekh chayyim' — the light of the king's face = life. The festivals = the light of the face shining. This is a bechina: the festivals' essential nature is the or-hapanim. Currently Package 1 (Malkhut) lacks this node. It would be: אור הפנים = שמחת המועדות = חיים. Belongs in Package 1 as the destination/telos of malkhut's elevation.",
+      "source_quote": "וְעִקַּר הַחִיּוּת הוּא מֵאוֹר הַפָּנִים, בְּחִינוֹת: בְּאוֹר פְּנֵי מֶלֶךְ חַיִּים",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 3,
+      "node_id": "עזות דקדשה",
+      "node_text": "עַזּוּת דִּקְדֻשָּׁה",
+      "polarity": "good",
+      "reason": "The source text identifies 'azut diqdushah' as the bechina of receiving the Torah and of prayer (lines 60-67, source lines 58-60). 'The Torah was given to Israel because they are brazen (azzin).' The tzaddik discerns azut diqdushah in each person's prayer and Torah, and through this recognizes who to rebuke. Azut diqdushah shares essential nature with the Tzaddik-Mashiach package (Package 3): it is the holy boldness that enables one to stand before God in prayer and receive Torah — the same quality Mashiach sees. This node appears in the dataset with ref=30 but as eitza (edge 2589), not bechina.",
+      "source_quote": "כִּי יֵשׁ עַזּוּת דִּקְדֻשָּׁה, שֶׁאִי אֶפְשָׁר לְקַבֵּל אֶת הַתּוֹרָה כִּי אִם עַל יְדֵי זֶה",
+      "in_dataset_already": true
+    },
+    {
+      "package_id": 3,
+      "node_id": "עזות דסטרא אחרא",
+      "node_text": "עַזּוּת מִן הַסִּטְרָא אָחֳרָא",
+      "polarity": "evil",
+      "reason": "The evil mirror of azut diqdushah. The source explicitly contrasts: 'and against this (holy azut) there is the opposite — azut from the sitra achra, from which come the foreign toroth, which are bechina of pesilim' (line 60). This evil azut IS the essential nature of the foreign toroth (Package 5). The tzaddik discerns evil azut in a person's prayer/Torah and knows they need rebuke. This concept connects Packages 3 and 5 via the tzaddik's discernment.",
+      "source_quote": "וּכְנֶגֶד זֶה יֵשׁ לְהִפּוּךְ, עַזּוּת מִן הַסִּטְרָא אָחֳרָא, שֶׁמִּשָּׁם בָּאִין תּוֹרוֹת אֲחֵרוֹת. שֶׁהֵן תּוֹרוֹת שֶׁלָּהֶן, שֶׁהֵם בְּחִינַת פְּסִילִים",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 34,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "אור הפנים (or hapanim — the light of the face, the life-force that the three festivals draw down to Malkhut; appears in bechina language in source lines 30, 33, 35 but not encoded as a ref=30 bechina edge in torahData.js)",
+      "עזות דסטרא אחרא (evil audacity — explicitly stated as bechina of foreign toroth/pesilim in source line 60, but not encoded as a ref=30 bechina edge)",
+      "שחרית כנוטריקון חכם רשע תם שאינו יודע (shacharit as acronym for four sons; source line 45 uses explicit bechina language 'notarikon' but this edge is not in torahData.js for ref=30)"
+    ],
+    "cross_package_observation": "Shacharit appears in two distinct bechina domains within Torah #30: (1) as shacharut = sekhel tachton = malkhut (Package 1, edge 2857), and (2) as a notarikon acronym for the four son-types (Package 4, line 45, not yet in dataset). This dual membership reflects a deep structural feature of the Torah: Abraham's morning prayer service embeds within itself the full four-type taxonomy of souls.",
+    "evil_mirror_observation": "Package 5 (foreign toroth/pesilim) is the explicit evil mirror of Package 3 (holy Torah/tzaddik). The source text presents them in direct contrast: azut diqdushah → holy Torah received → tzaddik recognizes it; azut de-sitra achra → foreign toroth = pesilim. The tzaddik's nose-function (Package 3) operates precisely by discerning this polarity."
+  }
+}

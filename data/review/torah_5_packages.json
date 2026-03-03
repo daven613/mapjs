@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "source": "Torah #5",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===5 AND type==='bechina'. 25 bechina edges found across 83 total reference=5 edges. 13 raw connected components reduced to 7 final packages after merging small isolated 1-2-node components into thematically closest large packages by shared nature. The three dominant large components are: gvurot/thunder (7 nodes), mochin/matzah (4 nodes), and yirah/importance (4 nodes). The aspeklaria prophecy cluster forms two packages (illuminating/non-illuminating mirrors). Two evil packages emerge: sitra de-mota/chametz (evil mirror of mochin) and yirah chitzonit/external fear (evil mirror of yirah). Small pairs merged by thematic nature as described in merge_notes."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 5,
+      "label": "אַסְפַּקְלַרְיָא הַמְּאִירָה — The Illuminating Mirror",
+      "label_en": "The Clear Prophetic Vision: Doing Mitzvot for Their Own Sake",
+      "polarity": "good",
+      "reason": "This 2-node package represents the higher level of prophetic consciousness described at the opening of Torah #5. Moses prophesied in the mode of 'זֶה הַדָּבָר' (This is the word) — the illuminating mirror (אַסְפַּקְלַרְיָא הַמְּאִירָה). This corresponds to a person who performs mitzvot out of pure love for the commandment itself, wanting no reward except another mitzvah. The two nodes are bechina-identical: 'זֶה הַדָּבָר' IS the illuminating mirror — one sees the divine command up close, clearly, and immediately. This package is the spiritual apex of Torah #5 — the ultimate good. Its evil mirror is Package 2 (כֹּה / non-illuminating mirror). The distinction between the two prophetic modes (זה הדבר vs כה) is the Torah's opening premise and structural spine.",
+      "dominant_node": "זה הדבר",
+      "nodes": [
+        "זה הדבר",
+        "אספקלריא המאירה"
+      ],
+      "node_degrees": {
+        "זה הדבר": 1,
+        "אספקלריא המאירה": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 5,
+      "label": "כֹּה וְאַסְפַּקְלַרְיָא שֶׁאֵינָהּ מְאִירָה — The Non-Illuminating Mirror",
+      "label_en": "The Distant Prophetic Vision: Doing Mitzvot for Future Reward",
+      "polarity": "neutral",
+      "reason": "This 3-node package represents the lower level of prophetic vision in Torah #5. Other prophets (besides Moses) used the formula 'כֹּה אָמַר ה'' (Thus says God) — the non-illuminating mirror. This corresponds to a person who performs mitzvot only for the reward of the World to Come, not experiencing joy in the mitzvah itself. Such a person 'sees from a distance' — his reward is far off, after death. The node 'אָדָם הָעוֹשֶׂה הַמִּצְוָה בִּשְׂכַר עוֹלָם הַבָּא...' is explicitly equated with 'כֹּה' (bechina). This is not evil — it is a lower but valid rung of divine service. Its polarity is neutral/lower because the Rebbe presents it as legitimate but incomplete, the starting point one should aspire to transcend rather than the enemy to defeat.",
+      "dominant_node": "כה",
+      "nodes": [
+        "כה",
+        "אספקלריא שאינה מאירה",
+        "אדם העושה המצוה בשכר עולם הבא, שאינו נהנה מהמצוה בעצמה, אלו לא היו נותנין לו עולם הבא בשכרה, לא היה עושה אותה"
+      ],
+      "node_degrees": {
+        "כה": 2,
+        "אספקלריא שאינה מאירה": 1,
+        "אדם העושה המצוה בשכר עולם הבא, שאינו נהנה מהמצוה בעצמה, אלו לא היו נותנין לו עולם הבא בשכרה, לא היה עושה אותה": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 5,
+      "label": "יִרְאָה וַחֲשִׁיבוּת — Fear and Importance",
+      "label_en": "True Fear of Heaven: The Weighty Inner Seriousness",
+      "polarity": "good",
+      "reason": "This package is built around the conceptual cluster of true, inner, healthy fear of God (יִרְאָה) as the fundamental spiritual quality that enables the voice of prayer to become thunder. The core chain: חֲשִׁיבוּת (importance / weight) is a bechina of גְּבוּרָה (inner strength), and חֲשִׁיבוּת is also a bechina of יִרְאָה (fear), and יִרְאָה is a bechina of אִשָּׁה (the feminine principle — the receiving, devoted, faithful partner). These four nodes form a 4-node connected component. Merged into this package: the 2-node pair אַהֲבָה (love) ↔ אִישׁ (man) — because the text explicitly makes love/אהבה the masculine principle (אִישׁ) that is paired with fear/יראה (אִשָּׁה), teaching that love seeks fear the way a husband seeks a lost wife. The אהבה/איש pair shares the exact same structural nature (gendered cosmic pair) as the יראה/אשה pair in this Torah. Together, the 6-node package represents the full אהבה-יראה cosmic pair that must be united for the voice of prayer to ascend properly. This is the good/evil mirror of Package 7 (external fear).",
+      "dominant_node": "יראה",
+      "nodes": [
+        "יראה",
+        "חשיבות",
+        "גבורה",
+        "אשה",
+        "אהבה",
+        "איש"
+      ],
+      "node_degrees": {
+        "יראה": 2,
+        "חשיבות": 2,
+        "גבורה": 1,
+        "אשה": 1,
+        "אהבה": 1,
+        "איש": 1
+      },
+      "merge_notes": [
+        "Component (אהבה, איש): Merged into Package 3 because in Torah #5, love (אהבה = איש/masculine) and fear (יראה = אשה/feminine) are explicitly described as a cosmic married pair. The teaching states: 'כִּי אַהֲבָה הוּא בְּחִינַת אִישׁ וְיִרְאָה הִיא בְּחִינַת אִשָּׁה' — love pursues fear the way a husband pursues a lost wife (בַּעַל אֲבֵדָה מַחֲזִיר עַל אֲבֵדָתוֹ). The two pairs share the same essential nature: the gendered polarity of the cosmic love-fear relationship. Merged by shared nature: two faces of the divine אהבה-יראה union."
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 5,
+      "label": "גְּבוּרוֹת וּרְעָמִים — Divine Powers and Thunder",
+      "label_en": "The Holy Gevurot: Voice, Thunder, and the Name of Power",
+      "polarity": "good",
+      "reason": "This is the largest and most central package of Torah #5, describing the mechanism by which the forceful voice of prayer (קוֹל שֶׁאָדָם מוֹצִיא בְּכֹחַ בִּתְפִלָּתוֹ) hits the clouds of the intellect (עָבֵי מִטְרָא / מֹחִין) and produces thunder (רְעָמִים). Thunder straightens the crookedness of the heart and brings joy and prayer. The dominant node is גְּבוּרוֹת (divine powers) with 4 bechina connections. The cluster includes: שֵׁם אגל\"א (the divine name AGLA = 'Atah Gibor Le'olam Adonai' = gevurot) and גִּילְדְּנָא (the Talmudic 'gildana de-yama' = the sea-creature of the aggadah = identified as AGLA). The cluster also includes: הָרְעִים (the divine thundering) as bechina of רְעָמִים, and רְעָמִים as bechina of קוֹל שֶׁאָדָם מוֹצִיא בְּכֹחַ. The קָנֶה (windpipe/reed) is the bechina of the voice itself. Merged small components: (1) the יִּרְעַם / הָרִים pair — the mountains (הָרִים = צַדִּיקִים) who receive and amplify the thunder into prayer-song; (2) the קָנֶה / קוֹל הַיּוֹצֵא מֵהַקָּנֶה pair — the holy reed/windpipe from which the voice emerges. The good/evil mirror of the holy reed (Package 6) is the קָנֶה דְּסִטְרָא אָחֳרָא (evil reed of foreign thought).",
+      "dominant_node": "גבורות",
+      "nodes": [
+        "גבורות",
+        "שם אג\"לא",
+        "גילדנא",
+        "רעמים",
+        "הרעים",
+        "קול שאדם מוציא בכח בתפלתו",
+        "כח וגבורה, שאדם מוציא את הקול בכח גדול",
+        "הרים",
+        "צדיק",
+        "קנה",
+        "קול היוצא מהקנה"
+      ],
+      "node_degrees": {
+        "גבורות": 4,
+        "שם אג\"לא": 2,
+        "רעמים": 3,
+        "הרעים": 1,
+        "קול שאדם מוציא בכח בתפלתו": 1,
+        "כח וגבורה, שאדם מוציא את הקול בכח גדול": 1,
+        "גילדנא": 1,
+        "הרים": 1,
+        "צדיק": 1,
+        "קנה": 1,
+        "קול היוצא מהקנה": 1
+      },
+      "merge_notes": [
+        "Component (הרים, צדיק): Merged into Package 4 because the text states 'הָרִים בְּחִינַת צַדִּיקִים' in the context of thunder-prayer: 'יַחַד הָרִים יְרַנֵּנוּ' — the tzaddikim (mountains) rejoice together in prayer after the thunder of the gevurot straightens the heart. The mountains/tzaddikim receive the thunder-sound and transform it into tefillah/rinah. Merged by shared nature: the tzaddik as the mountain-resonator of the holy voice.",
+        "Component (קנה, קול היוצא מהקנה): Merged into Package 4 because the holy reed (קָנֶה) is the physical source of the voice/sound — the throat-windpipe from which the holy voice emerges. The text explains the Zoharic proof: 'כַּד קָלָא נָפִיק וְאַעָרָא בְּעָבֵי מִטְרָא' — the voice going forth from the קָנֶה and striking the brain-clouds (מחין) is the mechanism of the gevurot. The קנה is structurally identical to the גבורות/voice theme. Merged by shared nature: the windpipe as the physical vessel of the holy voice."
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 5,
+      "label": "מֹחִין וּמַצָּה — Intellect and Matzah",
+      "label_en": "The Open Brain: Pure Consciousness Free of Foreign Thought",
+      "polarity": "good",
+      "reason": "This package describes the second major structural element of Torah #5: the intellect/brain (מֹחִין) that must remain open and unpolluted so that the voice-thunder can resonate within it. The core: מֹחִין = עָבֵי מִטְרָא (rain-clouds = the dense brain-cloud), and מַצָּה = מֹחִין (matzah = intellect; the letters of מַצָּה vs חָמֵץ differ by the gap between ה and ח — an open vs a closed brain). Also: מֵי מְרִיבָה (waters of Meribah) is a bechina of מַצָּה in this Torah (both are 'strife for the sake of heaven' = an open brain engaged in proper spiritual combat). The good/evil mirror of this package is Package 6 (חָמֵץ / sitra de-mota). Merged into this package: (1) שֵׁשֶׁת יְמֵי הַמַּעֲשֶׂה / מַעֲשֵׂה הַמִּצְווֹת — the six weekdays are bechinot of the mitzvot (the text: 'שֵׁשֶׁת יְמֵי הַמַּעֲשֶׂה שֶׁהֵן בְּחִינַת מַעֲשֵׂה הַמִּצְווֹת') — the mitzvot are the practical dimension of keeping the brain open; (2) שִׂמְחַת וְתַעֲנוּג עוֹלָם הַבָּא / שַׁבָּת — the joy of the World to Come is a bechina of Shabbat (the text: 'שִׂמְחַת וְתַעֲנוּג עוֹלָם הַבָּא שֶׁהוּא בְּחִינַת שַׁבָּת'), the culmination and reward of the mitzvot-joy; (3) פַּרְשָׁא / חֶסֶד — the 'rider' (פַּרְשָׁא) is a bechina of חֶסֶד (love/mercy) that fires an arrow (גִּירָא = the reaching-out of chesed) which precedes the thunder, softening the brain for reception. Chesed/parsha belongs with the open-intellect theme since it is the masculine activating force that opens the receiving brain.",
+      "dominant_node": "מחין",
+      "nodes": [
+        "מחין",
+        "מצה",
+        "בעבי מטרא",
+        "מי מריבה",
+        "ששת ימי המעשה",
+        "מעשה המצוות",
+        "שמחת ותענוג עולם הבא",
+        "שבת",
+        "פרשא",
+        "חסד"
+      ],
+      "node_degrees": {
+        "מחין": 2,
+        "מצה": 2,
+        "בעבי מטרא": 1,
+        "מי מריבה": 1,
+        "ששת ימי המעשה": 1,
+        "מעשה המצוות": 1,
+        "שמחת ותענוג עולם הבא": 1,
+        "שבת": 1,
+        "פרשא": 1,
+        "חסד": 1
+      },
+      "merge_notes": [
+        "Component (ששת ימי המעשה, מעשה המצוות): The text explicitly states 'שֵׁשֶׁת יְמֵי הַמַּעֲשֶׂה שֶׁהֵן בְּחִינַת מַעֲשֵׂה הַמִּצְווֹת' — the six weekdays ARE the domain of mitzvah-action, and the mitzvot vivify the three dimensions of world-year-soul (עוֹלָם שָׁנָה נֶפֶשׁ). The essential nature: weekdays are the time of practical mitzvot which keep the brain open and alive. Merged into Package 5 by shared nature: the mitzvot as the maintenance mechanism for open (matzah) consciousness.",
+        "Component (שמחת ותענוג עולם הבא, שבת): The Shabbat / World-to-Come pair is the reward and culmination of the mitzvot-joy theme: 'שִׂמְחַת וְתַעֲנוּג עוֹלָם הַבָּא, שֶׁהוּא בְּחִינַת שַׁבָּת, יַרְגִּישׁ בְּשֵׁשֶׁת יְמֵי הַמַּעֲשֶׂה.' The instruction is to FEEL Shabbat-joy (World-to-Come) already during the weekday mitzvot — i.e., to access the illuminating mirror even now. This pair is structurally continuous with the mitzvot pair above and with the intellect-joy theme of Package 5. Merged by shared nature: the experience of World-to-Come joy as the living reality inside matzah consciousness.",
+        "Component (פרשא, חסד): In the Rabbah bar bar Chana parable, 'וְשָׁדִי פַּרְשָׁא גִּירָא' — the 'rider' (פַּרְשָׁא) fires an arrow: text states 'פַּרְשָׁא דָּא בְּחִינַת חֶסֶד' (chesed). Chesed is the activating power that 'spreads out hidden things' (מְפָרֵשׁ אוֹתָם). Structurally, chesed is the positive force that softens and opens the intellect for reception of the gevurot-thunder. It belongs with the open-brain/matzah package as the activating principle of the receptive intellect. Merged by shared nature: chesed as the force that opens and purifies the mind for holy reception."
+      ]
+    },
+    {
+      "id": 6,
+      "torah_ref": 5,
+      "label": "סִטְרָא דְּמוֹתָא וְחָמֵץ — The Side of Death and Chametz",
+      "label_en": "The Closed, Fermenting Brain: Foreign Thought and Death",
+      "polarity": "evil",
+      "reason": "This is the evil mirror of Package 5 (מֹחִין וּמַצָּה). Where matzah = the open, pure intellect, chametz = the closed, fermenting, blocked intellect. The Zohar teaches: 'מַחְמֶצֶת, תַּמָּן סִטְרָא דְּמוֹתָא' — fermentation = the side of death. When the brain (מֹחִין) is blocked by chametz (foreign thoughts, impure wisdom), the voice cannot resonate within it and produce thunder. The evil reed (קָנֶה דְּסִטְרָא אָחֳרָא) = evil thoughts (הִרְהוּרִים רָעִים) that penetrate the sea of wisdom and block the voice — the exact mirror of the holy reed (Package 4) which opens the voice. The text explicitly: 'שֶׁלֹּא תְּהַרְהֵר בְּהִרְהוּרִים רָעִים, שֶׁהֵם בְּחִינַת קָנֶה דְּסִטְרָא אָחֳרָא.' Merged into this package: the 2-node pair (הִרְהוּרִים רָעִים, קָנֶה דְּסִטְרָא אָחֳרָא) — the evil reed of foreign thought is the chametz that clogs the brain, the mechanism of the sitra de-mota. Evil reed and evil brain/chametz share the same essential nature: corruption of the intellectual vessel.",
+      "dominant_node": "חמץ",
+      "nodes": [
+        "חמץ",
+        "סטרא דמותא",
+        "הרהורים רעים",
+        "קנה דסטרא אחרא"
+      ],
+      "node_degrees": {
+        "חמץ": 1,
+        "סטרא דמותא": 1,
+        "הרהורים רעים": 1,
+        "קנה דסטרא אחרא": 1
+      },
+      "merge_notes": [
+        "Component (הרהורים רעים, קנה דסטרא אחרא): The evil thoughts (הִרְהוּרִים רָעִים) are the bechina of the evil reed (קָנֶה דְּסִטְרָא אָחֳרָא) — the impure 'reed' that Gabriel drove into the sea of wisdom (as in the Talmudic story 'יָרַד גַּבְרִיאֵל וְנָעַץ קָנֶה'). The essential nature of both is: foreign/evil thought penetrating and blocking the intellect. This is the same evil domain as chametz/sitra de-mota — all four nodes describe the clogged, chametz-brain in which the holy voice cannot resonate. Merged by shared nature: evil intellectual contamination."
+      ]
+    },
+    {
+      "id": 7,
+      "torah_ref": 5,
+      "label": "יִרְאָה חִיצוֹנִית — External Fear",
+      "label_en": "External/Fallen Fear: The Descended Powers That Block the Voice",
+      "polarity": "evil",
+      "reason": "This 3-node package is the evil mirror of Package 3 (יִרְאָה וַחֲשִׁיבוּת — true inner fear). External fear (יִרְאָה חִיצוֹנִית) is described in Torah #5 as the danger that blocks the voice of prayer from producing thunder. The text says: 'שֶׁלֹּא יִהְיֶה לוֹ יִרְאָה חִיצוֹנִיּוּת' — one must not have external fear. This external fear = the downward flow/descent of the gevurot (הִשְׁתַּלְשְׁלוּת הַגְּבוּרוֹת) — when the divine powers cascade downward without proper inner foundation, they produce a superficial fear that is the sitra achra's imitation of true fear. The image in the text: 'יָרַד גַּבְרִיאֵל וְנָעַץ קָנֶה' — Gabriel descended and drove a reed into the sea: this descent of Gabriel = the הִשְׁתַּלְשְׁלוּת הַגְּבוּרוֹת = יִרְאָה חִיצוֹנִית = סוּסְפִיתָּא דְּדַהֲבָא (the 'golden lance/boat' = external/ornamented fear, impressive on the surface but hollow within). All three nodes are bechina-identical: descended gevurot = external fear = the golden lance/boat.",
+      "dominant_node": "השתלשלות הגבורות",
+      "nodes": [
+        "השתלשלות הגבורות",
+        "יראה חיצונית",
+        "סוספיתא דדהבא"
+      ],
+      "node_degrees": {
+        "השתלשלות הגבורות": 2,
+        "יראה חיצונית": 1,
+        "סוספיתא דדהבא": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 25,
+    "total_nodes_in_packages": 39,
+    "total_packages": 7,
+    "raw_connected_components": 13,
+    "good_evil_mirror_pairs": [
+      "Package 1 (illuminating mirror / good) ↔ Package 2 (non-illuminating mirror / neutral-lower)",
+      "Package 3 (true inner fear / good) ↔ Package 7 (external fear / evil)",
+      "Package 5 (matzah-intellect / good) ↔ Package 6 (chametz-death / evil)"
+    ],
+    "notes_on_counting": "Package 4 (גבורות/thunder) has no direct evil mirror package — its evil counterpart is distributed: the evil reed (קנה דסטרא אחרא) is merged into Package 6, and the external fear that blocks the thunder is Package 7. The Torah's argument flows: Packages 1/2 (prophetic mode) → Package 3 (fear-love inner state) → Package 4 (thunder-prayer mechanism) → Package 5 (open brain required) while Package 6 (chametz) and Package 7 (external fear) oppose packages 5 and 3 respectively."
+  }
+}

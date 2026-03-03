@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "source": "Torah #7",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 28,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      {
+        "concept": "גאולה",
+        "hebrew": "גְּאֻלָּה",
+        "context": "The redemption (geulah) is the Torah's conclusion and goal — explicitly named many times in the text ('עַל־יְדֵי אֱמוּנָה בָּא הַגְּאֻלָּה'). However, all edges connecting to גאולה in the dataset for Torah 7 are eitza-type (cause and effect: emunah leads to geulah, tzitzit leads to geulah, etc.). No bechina edge equates geulah to another node within Torah 7. The concept therefore correctly has no package membership.",
+        "recommendation": "No addition needed. Geulah is an eitza destination, not a bechina cluster member."
+      },
+      {
+        "concept": "אפיקורסים",
+        "hebrew": "אֶפִּיקוֹרְסִים",
+        "context": "The epikorsim (skeptics who cover miracles with natural explanations) are discussed explicitly in section 9 of the text. They are the agents of שכחה. However, no bechina edge links them to another node in Torah 7 in the dataset. Their nature is expressed through the מס/שכחה package implicitly.",
+        "recommendation": "A potential bechina edge could be: אפיקורסים — שכחה (they are the 'face' of the forgetting/naturalism force). This is supported by the text: 'שֶׁיִּכְלוּ הָאֶפִּיקוֹרְסִים שֶׁאֵין לָהֶם אֱמוּנָה בְּנִסִּים, וּמְכַסִּים כָּל הַנִּסִּים בְּדֶרֶךְ הַטֶּבַע'. Consider adding edge: אפיקורסים — שכחה, reference 7, type bechina."
+      },
+      {
+        "concept": "ישמעאל (as prayer figure)",
+        "hebrew": "יִשְׁמָעֵאל",
+        "context": "Edge 3184 captures: ישמעאל — תפלה (reference 7, bechina). This is in the dataset and is assigned to Package 1 (Emunah and Tefilla).",
+        "recommendation": "Already captured in edge 3184. Assigned to Package 1. No gap."
+      },
+      {
+        "concept": "סוחר ישמעאל / מקיפים",
+        "hebrew": "סוֹחֵר",
+        "context": "The text identifies 'socher' (merchant) as an expression of 'sechur sechur' (circling/surrounding) = bechina of emunah. This connects to עגול (circles) already in Package 1. No separate bechina edge for 'socher' is in the dataset.",
+        "recommendation": "Consider adding: סוחר — עגול or סוחר — אמונה, reference 7, bechina. Text: 'סוֹחֵר מִלְּשׁוֹן סְחוֹר סְחוֹר (בְּחִינַת מַקִּיפִים), שֶׁהוּא בְּחִינַת אֱמוּנָה'."
+      },
+      {
+        "concept": "שמלה",
+        "hebrew": "שִׂמְלָה",
+        "context": "The simlah (garment) is explicitly stated as בחינת ציצית in the text: 'וְהַשִּׂמְלָה הַיְנוּ צִיצִית'. Edge 2995 captures this as an eitza edge. A bechina edge for שמלה — ציצית would be appropriate. Currently edge 2995 is typed eitza.",
+        "recommendation": "Consider reclassifying edge 2995 from eitza to bechina, since the text uses 'הַיְנוּ' (meaning 'that is') which is definitional/parallel-nature language, not causal."
+      },
+      {
+        "concept": "כנפי מצוה",
+        "hebrew": "כַּנְפֵי מִצְוָה",
+        "context": "The text in the additions section says 'צִיצִית דִקְדֻשָּׁה, שֶׁהֵם כַּנְפֵי מִצְוָה, הוּא שְׁמִירַת הַבְּרִית'. This equates כנפי מצוה (wings of the mitzvah) with ציצית and שמירת הברית. No separate bechina edge for this concept exists in the dataset for Torah 7.",
+        "recommendation": "Consider adding: כנפי מצוה — ציצית, reference 7, bechina."
+      },
+      {
+        "concept": "תרי\"ג עיטין",
+        "hebrew": "תַּרְיַ\"ג עֵטִין",
+        "context": "The 613 counsels are explicitly said to be received at Har Sinai. Edge 2430 captures הר סיני — עצה. But 'תריג עיטין' as a concept is not separately linked via bechina to a node in Torah 7.",
+        "recommendation": "The existing edge (הר סיני — עצה, edge 2430) adequately represents this. No new edge needed."
+      },
+      {
+        "concept": "כלית הנחש / זוהמת הנחש",
+        "hebrew": "זֻהֲמַת הַנָּחָשׁ",
+        "context": "Zuhama (the pollution of the serpent) is discussed explicitly as the result of receiving evil counsel. However, it appears only in eitza edges in the dataset (evil counsel leads to pollution). No bechina edge equates zuhama to another concept.",
+        "recommendation": "No bechina addition needed. Zuhama is a consequence (eitza target), not a parallel-nature concept."
+      }
+    ]
+  }
+}

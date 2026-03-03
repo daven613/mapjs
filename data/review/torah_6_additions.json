@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "source": "Torah #6",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "type": "alias_note",
+      "description": "Node 'הנקדה התחתונה של תמונת א' is a likely alias for 'נקדה התחתונה'. Both refer to the lower dot of the letter Aleph, but appear as distinct node IDs in the dataset. They are connected through 'דמימה' and 'חיריק' respectively but not directly to each other by bechina in Torah 6. Consider whether these should be merged as a single canonical node.",
+      "nodes_affected": ["הנקדה התחתונה של תמונת א", "נקדה התחתונה"],
+      "recommendation": "Alias fix: merge into single node 'נקדה התחתונה'."
+    },
+    {
+      "type": "alias_note",
+      "description": "Two bechina edges connect 'וא\"ו שבתוך האלף' to blushing: one uses node2_id 'בושה', another uses node2_id 'נשתנה פניו לכמה גונין'. Both node2_text fields describe the same phenomenon (the blushing shame that changes face colors). These are likely the same concept encoded twice with different node IDs. Counted as 2 separate nodes in the connected component, though they represent the same teaching.",
+      "nodes_affected": ["בושה", "נשתנה פניו לכמה גונין"],
+      "recommendation": "Alias fix: merge into single node 'בושה'."
+    },
+    {
+      "type": "alias_note",
+      "description": "'יכלו זרעו של עמלק' and 'להכרית זרעו של עמלק' are two distinct node IDs both referring to the destruction of Amalek's seed, which is equated with Yehoshua (lower point). Both appear in separate bechina edges. They are effectively the same concept stated with different verb forms.",
+      "nodes_affected": ["יכלו זרעו של עמלק", "להכרית זרעו של עמלק"],
+      "recommendation": "Alias fix: merge into single node 'להכרית זרעו של עמלק'."
+    },
+    {
+      "type": "missing_bechina",
+      "description": "The Torah text (section ב) explicitly states: 'כִּי לֵית כָּבוֹד בְּלֹא כָּ\"ף. וְהַכָּ\"ף הוּא כֶּתֶר' — the letter Kaf of the word Kavod IS Keter. This is an explicit בְּחִינַת relationship between אוֹת כָּ\"ף and כֶּתֶר. No bechina edge between 'אות כ\"ף' (or 'כ\"ף') and 'כתר' appears in the Torah 6 bechina edge set.",
+      "source_text_reference": "Section ב: 'וְהַכָּ\"ף הוּא כֶּתֶר'",
+      "suggested_edge": {
+        "node1_id": "אות כ\"ף",
+        "node2_id": "כתר",
+        "type": "bechina",
+        "reference": 6
+      }
+    },
+    {
+      "type": "missing_bechina",
+      "description": "The text states: 'כֶּתֶר לְשׁוֹן הַמְתָּנָה' — Keter is the language of waiting/patience (from Job 36:2: 'כַּתַּר לִי זְעֵיר'). This explicitly equates כֶּתֶר with the concept of הַמְתָּנָה (waiting/patience). No bechina edge between 'כתר' and 'המתנה' or 'לשון המתנה' appears in the dataset.",
+      "source_text_reference": "Section ב: 'כֶּתֶר לְשׁוֹן הַמְתָּנָה, בְּחִינַת תְּשׁוּבָה'",
+      "suggested_edge": {
+        "node1_id": "כתר",
+        "node2_id": "המתנה",
+        "type": "bechina",
+        "reference": 6
+      }
+    },
+    {
+      "type": "missing_bechina",
+      "description": "The text identifies three conditions of teshuvah from Isaiah 6:10 ('פֶּן יִרְאֶה בְעֵינָיו, וּבְאָזְנָיו יִשְׁמָע, וּלְבָבוֹ יָבִין וְשָׁב') as corresponding to the three dots of the Segol vowel. The text states: 'אֵלּוּ הַשָּׁלֹשׁ בְּחִינוֹת הֵם נְקֻדַּת סֶגּוֹ\"ל'. No bechina edge between 'שלש תנאים של תשובה' (or the three conditions: עיניו, אזניו, לבבו) and 'סגול' or 'נקדת סגול' appears in the bechina edge set.",
+      "source_text_reference": "Section ה: 'אֵלּוּ הַשָּׁלֹשׁ בְּחִינוֹת הֵם נְקֻדַּת סֶגּוֹ\"ל, וְסֶגּוֹל דָּא חַמָּה'",
+      "suggested_edge": {
+        "node1_id": "שלש תנאים של תשובה",
+        "node2_id": "נקדת סגול",
+        "type": "bechina",
+        "reference": 6
+      }
+    },
+    {
+      "type": "missing_bechina",
+      "description": "The Torah states: 'מֹשֶׁה הוּא נְקֻדָּה הָעֶלְיוֹנָה, וִיהוֹשֻׁעַ הוּא נְקֻדָּה הַתַּחְתּוֹנָה' (section after section ז). While both nodes 'משה' and 'נקדה העליונה שעל האלף' are connected to each other by bechina (edge 1965), and 'יהושע' and 'נקדה התחתונה' are connected (edge 1261), there is no bechina edge explicitly pairing 'משה ↔ חמה' in the sense of 'פְּנֵי מֹשֶׁה כִּפְנֵי חַמָּה' — though this edge (id ~2192) DOES exist. This is covered. No gap here.",
+      "source_text_reference": "Section ה: 'פְּנֵי מֹשֶׁה כִּפְנֵי חַמָּה'",
+      "status": "already_covered"
+    },
+    {
+      "type": "missing_bechina",
+      "description": "The Torah discusses 'צִמְצוּם עַצְמוֹ לְמַעֵט בִּכְבוֹד עַצְמוֹ' (self-diminishment) and the parable of Rabba bar bar Chana seeing geese whose oil flowed beneath them. The oil beneath the geese = נַחֲלֵי דְּמִשְׁחָא = כָּבוֹד אֱלֹקִי (divine honor). The explicit בְּחִינַת chain: שֶׁמֶן ↔ כָּבוֹד אֱלֹקִי is captured (edge 3001). However, the intermediate identification of 'נַחֲלֵי דְּמִשְׁחָא' (streams of oil) as a node is not present in the bechina edges. This may be a minor gap.",
+      "source_text_reference": "Section ו: 'וְנַגְדֵּי נַחֲלֵי דְּמִשְׁחָא מִתְּחוֹתַיְהוּ, הַיְנוּ עַל יְדֵי הַשְּׁתִיקָה זוֹכִין לְכָבוֹד אֱלֹקִי'",
+      "suggested_node": "נחלי דמשחא",
+      "recommended_package": 1
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 68,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "אות כ\"ף (the letter Kaf explicitly called Keter in section ב)",
+      "המתנה (patience — Keter described as 'leshon hamtanah' in section ב)",
+      "נחלי דמשחא (streams of oil = divine honor, from the Rabba bar bar Chana story, section ו)",
+      "שלש תנאים של תשובה as a composite node (the three conditions: eye/ear/heart from Isaiah 6:10, equated with the three dots of segol in section ה)",
+      "אפרסמון (balsam tree — appears in a parable about teshuvah, 'wait a moment and I will show you' — not modeled as a bechina node but conceptually represents the waiting-nature of keter)"
+    ],
+    "edge_count_verification": "68 bechina edges confirmed via grep count (grep -A2 '\"reference\": 6,' | grep '\"type\": \"bechina\"' = 68). Total Torah 6 edges = 109 (68 bechina + 41 eitza).",
+    "duplicate_edges_noted": [
+      "Two edges both connect 'וא\"ו שבתוך האלף' ↔ 'רקיע' with reference 6 (IDs 2791 and 2792, different proof texts) — likely the same bechina encoded from two sections of the Torah",
+      "Two edges encode 'וא\"ו שבתוך האלף' → blushing: one with node2_id 'בושה' (id null) and one with node2_id 'נשתנה פניו לכמה גונין' (id 2242) — same concept, two node IDs"
+    ]
+  }
+}

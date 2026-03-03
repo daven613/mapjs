@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "source": "Torah #38",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 38,
+      "label": "תְּפִלִּין וּבוּשָׁה",
+      "label_en": "Tefillin and Shame",
+      "polarity": "good",
+      "reason": "All these concepts share the same essential nature: they are different expressions of the luminous quality that appears on the forehead — the revealed 'or ha-panim' that is simultaneously the radiance of tefillin, the blushing of shame before God, the Divine Name Adoshem radiating outward, and the quality of awe/yir'ah. The Torah equates them explicitly: 'this shame is a bechina of the light of tefillin'; 'yir'at Hashem — this is tefillin'; 'bushah — bechina of tefillin'; 'teshuvah brings tefillin which is keron or ha-panim'. They all share the single quality of the face that reveals inward connection to God.",
+      "dominant_node": "תפלין",
+      "nodes": [
+        "תפלין",
+        "בושה",
+        "\"יראת ה\"",
+        "מתביש ביותר, ונתגלה הבושה על פניו",
+        "אמא על ברא",
+        "עץ החיים",
+        "קרון עור הפנים",
+        "שבת"
+      ],
+      "node_degrees": {
+        "תפלין": 5,
+        "בושה": 2,
+        "\"יראת ה\"": 1,
+        "מתביש ביותר, ונתגלה הבושה על פניו": 1,
+        "אמא על ברא": 1,
+        "עץ החיים": 1,
+        "קרון עור הפנים": 1,
+        "שבת": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["\"יראת ה\""],
+          "reason": "Edge id=3202 equates yir'at Hashem directly with tefillin via the Gemara quote in Berakhot 6. Yir'ah IS bushah (Nedarim 20), and both are tefillin. Single node joins the large component."
+        },
+        {
+          "merged_nodes": ["מתביש ביותר, ונתגלה הבושה על פניו"],
+          "reason": "Edge id=167 equates this state directly with or ha-tefillin. This is the activated form of bushah — they share the same essential nature."
+        },
+        {
+          "merged_nodes": ["אמא על ברא"],
+          "reason": "Edge id=287 equates tefillin with imma al bera. In the Torah's kabbalistic framework, tefillin ARE the expression of binah-imma shining on the son. Same essential nature as tefillin."
+        },
+        {
+          "merged_nodes": ["עץ החיים"],
+          "reason": "Edge id=2419 equates tefillin with the Tree of Life (Yeshayah 38:16). Tefillin = life = etz ha-chayyim. Joins the tefillin component."
+        },
+        {
+          "merged_nodes": ["קרון עור הפנים"],
+          "reason": "Edge id=2646 equates tefillin directly with the radiance of the skin of the face. Same concept: tefillin as the shining forehead-light."
+        },
+        {
+          "merged_nodes": ["שבת"],
+          "reason": "Edge id=508 equates Shabbat with bushah. Since bushah = tefillin in this Torah, Shabbat shares this essential nature. Shabbat is the cessation from the 39 melakhot (zuhmat ha-nachash) which is precisely the quality of holy speech and tefillin that the Torah develops."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 38,
+      "label": "דִּבּוּר, יָם וּמַלְכוּת פֶּה",
+      "label_en": "Speech, Sea, and Malkhut-Mouth",
+      "polarity": "good",
+      "reason": "These concepts share the same essential nature as the holy vessel of speech — malkhut, the mouth, the sea that receives all rivers, the Name Adoshem (which is the mouth of speech). Rua'h piv shel ha-Kadosh Barukh Hu, Yam, Malkhut-Peh, and Adoshem are all different faces of the same Divine-human speech dimension. The Torah states them as direct bechinot of each other.",
+      "dominant_node": "דבור",
+      "nodes": [
+        "דבור",
+        "ים",
+        "מלכות פה",
+        "אדני",
+        "רוח פיו של הקדוש ברוך הוא"
+      ],
+      "node_degrees": {
+        "דבור": 4,
+        "ים": 2,
+        "מלכות פה": 1,
+        "אדני": 1,
+        "רוח פיו של הקדוש ברוך הוא": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["ים", "מלכות פה"],
+          "reason": "Edge id=1356 equates malkhut-peh with yam. Edge id=659 equates yam with dibur. These three form a tight triangle: malkhut-peh = yam = dibur."
+        },
+        {
+          "merged_nodes": ["אדני"],
+          "reason": "Edge id=130 equates dibur with Adoshem (the Name associated with speech and the mouth). All share the same domain: the holy vessel of divine speech."
+        },
+        {
+          "merged_nodes": ["רוח פיו של הקדוש ברוך הוא"],
+          "reason": "Edge id=660 equates rua'h piv shel HaKadosh Barukh Hu with dibur. They are the same reality from different perspectives."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 38,
+      "label": "קֵץ כָּל בָּשָׂר וְרוּחַ סְעָרָה",
+      "label_en": "The End of All Flesh and the Storm Wind",
+      "polarity": "evil",
+      "reason": "These concepts share the same essential nature as the evil accusing force — the serpent's pollution, the storm wind, the accuser that sucks from speech when it finds an opening. The Torah equates them explicitly and repeatedly: ketz kol basar IS rua'h se'arah, IS achar ha-devarim, IS zuhmat ha-nachash. They are all different names for the same demonic force that opposes holy speech.",
+      "dominant_node": "קץ כל בשר",
+      "nodes": [
+        "קץ כל בשר",
+        "רוח סערה",
+        "אחר הדברים",
+        "זהמת הנחש",
+        "סוף"
+      ],
+      "node_degrees": {
+        "קץ כל בשר": 5,
+        "רוח סערה": 3,
+        "אחר הדברים": 1,
+        "זהמת הנחש": 1,
+        "סוף": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["רוח סערה"],
+          "reason": "Edges id=2642 and id=2713 establish bidirectional bechina: ketz kol basar = rua'h se'arah. These are explicitly equated in the Torah text."
+        },
+        {
+          "merged_nodes": ["אחר הדברים"],
+          "reason": "Edge id=211 equates ketz kol basar with achar ha-devarim — the accuser after speech. Same essential nature as the evil sucking force."
+        },
+        {
+          "merged_nodes": ["זהמת הנחש"],
+          "reason": "Edge id=2640 equates zuhmat ha-nachash with ketz kol basar. The serpent's pollution IS the end-of-all-flesh force. Same component."
+        },
+        {
+          "merged_nodes": ["סוף"],
+          "reason": "Edge id=2641 equates suf (end/sea of reeds) with ketz kol basar. The 'end' hidden in yam suf = the same evil force. Same essential nature."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 38,
+      "label": "גְּבוּרוֹת וּמוֹצָאוֹת הַפֶּה",
+      "label_en": "Gevurot and the Mouth's Articulations",
+      "polarity": "good",
+      "reason": "The five gevurot, the five fingers of the left hand (zerov'a), and the five articulations of the mouth share the same essential nature: they are all the sefiratic dimension of gevurah as it manifests in speech. The Torah identifies them as bechinot of each other — the arm, the fingers, and the mouth-sounds are all the same gevurah-force expressing itself.",
+      "dominant_node": "חמשה גבורות",
+      "nodes": [
+        "חמשה גבורות",
+        "חמשת מוצאות הפה",
+        "חמש אצבעין שביד שמאל"
+      ],
+      "node_degrees": {
+        "חמשה גבורות": 2,
+        "חמשת מוצאות הפה": 1,
+        "חמש אצבעין שביד שמאל": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 5,
+      "torah_ref": 38,
+      "label": "גְּוָנִין וְאֵשׁ וּמַיִם",
+      "label_en": "Colors, Fire, and Water",
+      "polarity": "good",
+      "reason": "Ash u-mayim (fire and water = shamayim) and gvanim (colors) share the same essential nature in this Torah. The blushing of shame produces multiple colors on the face; shamayim = esh u-mayim = the spectrum of gvanim. They are the visual-material expression of the glory (tiferet/pe'er) that is tefillin. The Torah in section 5 (pe'er) explicitly links them.",
+      "dominant_node": "גונין",
+      "nodes": [
+        "גונין",
+        "אש ומים"
+      ],
+      "node_degrees": {
+        "גונין": 1,
+        "אש ומים": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 6,
+      "torah_ref": 38,
+      "label": "לַיְלָה, עֲנִיּוּת וְצַר",
+      "label_en": "Night, Poverty, and Distress",
+      "polarity": "neutral",
+      "reason": "Layla, aniyyut u-dachakut, and tzar share the same essential nature in this Torah: they all denote the state of constriction and darkness that is the time when ketz kol basar has dominion. The Torah calls study in distress 'bechina of layla.' These are not evil per se — they are the neutral condition of darkness/night that is the testing ground where the evil force rules, and within which holy study (Torah she-bi-leil) operates.",
+      "dominant_node": "לילה",
+      "nodes": [
+        "לילה",
+        "עניות ובדחקות",
+        "צר"
+      ],
+      "node_degrees": {
+        "לילה": 2,
+        "עניות ובדחקות": 1,
+        "צר": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 7,
+      "torah_ref": 38,
+      "label": "תְּפִלָּה וְעַמּוּדִים",
+      "label_en": "Prayer and Pillars",
+      "polarity": "good",
+      "reason": "Tefilah and amudim share the same essential nature in this Torah: the pillars upon which the earth stands (from Chagigah 12b) are called tefilah in the Torah's exposition of the cosmic stacking structure (the earth on pillars, pillars on water, water on mountains, mountains on ruach, ruach on se'arah, se'arah on the arm of God). The prayer-pillar is the holy counterforce to the storm-wind.",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תפלה",
+        "עמודים"
+      ],
+      "node_degrees": {
+        "תפלה": 1,
+        "עמודים": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 21,
+    "total_nodes": 28,
+    "total_packages": 7,
+    "raw_connected_components": 7
+  }
+}

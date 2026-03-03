@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "source": "Torah #7",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 7,
+      "label": "אֱמוּנָה וּתְפִלָּה",
+      "label_en": "Emunah and Tefilla",
+      "polarity": "good",
+      "reason": "All these concepts share the same essential nature: the domain of faith, prayer, and miracles that transcend nature. The Torah opens by equating emunah, tefilla, and nisim as a single reality. Circles (egulim) express emunah's encompassing quality; isha is the receptive emunah; ish/emet are its masculine counterpart; Yaakov u-vanav are the 12 nuschaot of prayer; tehomot upper and lower are the two registers of miracles; prita sifvateih is the angel of prayer. All are faces of the same transcendent, supra-natural dimension.",
+      "dominant_node": "אמונה",
+      "nodes": [
+        "אמונה",
+        "תפלה",
+        "נסים",
+        "עגול",
+        "אשה",
+        "למעלה מהטבע",
+        "פריטא שפותה",
+        "נסים תתאין",
+        "תהומא תתאה",
+        "נסין עלאין",
+        "תהום עלאה",
+        "יעקב ובניו",
+        "שנים עשר נסחאות התפלה",
+        "איש",
+        "אמת",
+        "ישמעאל"
+      ],
+      "node_degrees": {
+        "אמונה": 5,
+        "תפלה": 5,
+        "נסים": 3,
+        "עגול": 1,
+        "אשה": 1,
+        "למעלה מהטבע": 2,
+        "פריטא שפותה": 1,
+        "נסים תתאין": 1,
+        "תהומא תתאה": 1,
+        "נסין עלאין": 1,
+        "תהום עלאה": 1,
+        "יעקב ובניו": 1,
+        "שנים עשר נסחאות התפלה": 1,
+        "איש": 1,
+        "אמת": 1,
+        "ישמעאל": 1
+      },
+      "merge_notes": [
+        "יעקב ובניו / שנים עשר נסחאות התפלה: merged in because יעקב ובניו is explicitly בחינת תפלה in the text (s.1) — 2-node component absorbed into the tefilla cluster.",
+        "איש / אמת: merged in because the text explicitly equates אשה=אמונה and איש=אמת as one pair ('הִתְחַבְּרוּת אֱמֶת וֶאֱמוּנָה'); אשה is already in this package.",
+        "ישמעאל: merged in via edge 3184 (ישמעאל — תפלה, reference 7, bechina). Yishmael's name encodes 'God heard my prayer' and the Targum renders this explicitly as tefilla.",
+        "This package is the Torah's primary positive teaching about the supra-natural dimension of faith, prayer, and redemption."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 7,
+      "label": "יוֹסֵף וְצִיצִית",
+      "label_en": "Yosef and Tzitzit",
+      "polarity": "good",
+      "reason": "These concepts share the nature of shmirat ha-brit — the guarding of the covenant of holiness. Yosef is the archetype of shmirat ha-brit; tzitzit is its practical expression (covering/protecting against sexual impurity); shekhem is the body location of tzitzit (shoulders); 'v'eleh' (the additive word) is its exegetical marker. The group forms the domain of holy guarding that enables receiving emet from tzaddikim.",
+      "dominant_node": "יוסף",
+      "nodes": [
+        "יוסף",
+        "תקון הברית",
+        "ציצית",
+        "שכם",
+        "\"ואלה\" כל מקום שנאמר ואלה מוסיף"
+      ],
+      "node_degrees": {
+        "יוסף": 3,
+        "תקון הברית": 3,
+        "ציצית": 2,
+        "שכם": 1,
+        "\"ואלה\" כל מקום שנאמר ואלה מוסיף": 1
+      },
+      "merge_notes": [
+        "Note: edges 1290 and 3222 are both יוסף—תקון הברית (duplicate bechina stating the same equivalence); counted as 1 unique connection for degree purposes.",
+        "Tzitzit is the practical guardian against the serpent's counsel — it enables passage from this package to the eitza package (counsel from tzaddikim)."
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 7,
+      "label": "עֵצָה וְנִשּׂוּאִין",
+      "label_en": "Counsel and Marriage — the Holy Side",
+      "polarity": "good",
+      "reason": "These concepts share the nature of holy counsel: the metaphysical structure whereby receiving advice from a tzaddik is like receiving seed (zera emet). Har Sinai is the prototype of holy counsel (613 eitin); the shureq vowel = 3 drops = 3 brains, embodying how the tzaddik's sekhel flows into the receiver through counsel. All are expressions of the same receptive, intellectual-generative structure of holy advice.",
+      "dominant_node": "נשואין",
+      "nodes": [
+        "הר סיני",
+        "עצה",
+        "נשואין",
+        "העצות שמקבל מהם",
+        "זווג",
+        "שורק",
+        "תלת טפין",
+        "תלת מחין"
+      ],
+      "node_degrees": {
+        "הר סיני": 1,
+        "עצה": 2,
+        "נשואין": 4,
+        "העצות שמקבל מהם": 2,
+        "זווג": 1,
+        "שורק": 1,
+        "תלת טפין": 2,
+        "תלת מחין": 1
+      },
+      "merge_notes": [
+        "שורק / תלת טפין / תלת מחין: 3-node component merged into the counsel package because the shureq appears explicitly in the context of receiving the tzaddik's intellectual drops (tipei ha-sekhel) through counsel — same essential nature as the advice-as-seed metaphor.",
+        "נשואין serves as the pivot node between the good and evil counsel packages (Package 4). The node 'נשואין' is shared in nature — advice has a marriage-structure regardless of whether it is holy or impure."
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 7,
+      "label": "עֲצַת הַנָּחָשׁ",
+      "label_en": "The Serpent's Counsel — Evil Marriage",
+      "polarity": "evil",
+      "reason": "These concepts share the nature of impure counsel: receiving advice from the wicked is structurally a marriage with the klipa — it implants spiritual impurity (zuhama). The serpent's counsel to Eve is the prototype; 'nisuin ba-klipa' and niuf are its downstream expressions. This is the direct evil mirror of Package 3.",
+      "dominant_node": "עצות הנחש",
+      "nodes": [
+        "עצות הנחש",
+        "כשמקבלין עצות מרשעים",
+        "נשואין בקלפה",
+        "מנשואין של רשע",
+        "נאוף"
+      ],
+      "node_degrees": {
+        "עצות הנחש": 1,
+        "כשמקבלין עצות מרשעים": 1,
+        "נשואין בקלפה": 1,
+        "מנשואין של רשע": 1,
+        "נאוף": 1
+      },
+      "merge_notes": [
+        "This is the evil mirror of Package 3 (Counsel and Marriage). The node נשואין appears in Package 3; נשואין בקלפה is its impure counterpart — a separate node representing the same structural reality oriented toward evil.",
+        "מנשואין של רשע connects to נאוף — the direct manifestation of evil counsel in sexual misconduct."
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 7,
+      "label": "שִׁכְחָה",
+      "label_en": "Forgetting — the Anti-Emunah Force",
+      "polarity": "evil",
+      "reason": "מס (the letter-pair mem-samekh) and שכחה (forgetting) share the same essential nature: they are both expressions of the force that covers and negates the renewal that emunah embodies. The appendix explicitly says: 'מס הוא בחינת השכחה' and that nes (miracle) is the opposite of shikcha — because miracles embody emunah's perception of constant renewal, while forgetting embodies the naturalistic/astrological mindset that is the opposite of emunah. This 2-node component is preserved as its own package because it forms the explicit evil mirror of Package 1 (Emunah).",
+      "dominant_node": "שכחה",
+      "nodes": [
+        "מס",
+        "שכחה"
+      ],
+      "node_degrees": {
+        "מס": 1,
+        "שכחה": 1
+      },
+      "merge_notes": [
+        "2-node component retained as a separate evil package rather than merged into Package 1 because it represents a distinct evil domain (the anti-emunah force of forgetting/naturalism) that mirrors Package 1's positive content.",
+        "Would merge into Package 1 only if a polarity-neutral approach were taken, but the teaching's structure makes this a standalone evil counterpart."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 28,
+    "total_nodes": 36,
+    "total_packages": 5,
+    "raw_connected_components": 5
+  }
+}
