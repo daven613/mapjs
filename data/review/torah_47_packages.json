@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "source": "Torah #47 (Likutay Moharan Vol. 1)",
+    "torah_ref": 47,
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #47 contains 17 bechina-typed edges (16 unique pairs; edges 2987 and 2988 are duplicate records for מדת תפארת ↔ שמים). These yield 3 raw connected components: CC1 = 14 nodes centered on יעקב/אמת; CC2 = {הסתרת פנים, דין} (2 nodes, evil); CC3 = {הארות ונשיאות פנים, המתקת הדינים} (2 nodes, good). CC3 is merged into Package 1 because 'הארות ונשיאות פנים' shares essential nature with 'נשיאות פנים' already in CC1 — both are the same concept (divine face-illumination) expressed at different granularities of the text; the merge is warranted by shared nature, not by eitza. CC2 remains a standalone evil package — it represents the negative pole (concealment = judgment) which is the exact structural mirror of the positive truth-cluster, but with opposite polarity; it cannot merge into the good package and has no other evil partner to merge with. The Torah's argument has a single dominant axis: shviras ta'avas achila (breaking the desire for food) → אמת / נשיאות פנים / יעקב / תפארת / תפלין / ארץ ישראל / גוונין / כלליות. The evil mirror axis is: taavas achila → הסתרת פנים = דין."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 47,
+      "label": "אֱמֶת, יַעֲקֹב וּתְפִלִּין — כְּלָלוּת הַגְּוָנִין",
+      "label_en": "Truth, Jacob, and Tefillin — the Fullness of Colors",
+      "polarity": "good",
+      "reason": "All 16 nodes in this package are different expressions of the single meta-concept that Torah #47 calls 'אמת' (Truth in its cosmic dimension). The Torah explicitly constructs the following identity chain through direct bechina statements: אמת = יעקב ('תתן אמת ליעקב') = מדת תפארת ('יעקב הוא תפארת') = כלליות הגונין ('תפארת הוא כלליות הגונין') = שמים ('כלליות הגונין הוא שמים, אש ומים') = ארץ ישראל ('ארץ ישראל מקבל שפעה ממדת יעקב') = אילה שלוחה ('ארץ ישראל היא אילה שלוחה' which IS אמת) = תפלין ('יעקב הוא תפארת, כלליות הגונין, בחינת תפלין הנקראים פאר') = פאר = שפר ('שפר זה בחינת פאר בחינת תפלין') = נשיאות פנים ('נשיאות פנים הוא בחינות אמת') = הארות ונשיאות פנים ('הארות ונשיאות פנים שהוא בחינות המתקת ובטול הדינים') = המתקת הדינים. The two peripheral bechina pairs — דבורי אמת = יעקב (truth-speech IS Jacob) and בושה = כלליות הגונין (shame IS the fallen expression of the totality of colors, the 'מדות הנפולין' inversion of the same quality) — anchor the package in the Torah's concluding movement: when a person speaks words of truth (nourished by Eretz Yisrael's shefa flowing through Jacob's quality) they become a partner with God in creating new heavens and earth; and their faces will not be ashamed, because shame (the fallen colors) is the exact inversion of the glorious tiferet-colors of truth. This is one unified conceptual cluster — the positive ontological axis of Torah #47.",
+      "dominant_node": "יעקב",
+      "nodes": [
+        "אמת",
+        "יעקב",
+        "מדת תפארת",
+        "ארץ ישראל",
+        "\"אילה שלוחה\"",
+        "נשיאות פנים",
+        "כללות הגונין",
+        "שמים",
+        "אש ומים",
+        "תפלין",
+        "פאר",
+        "שפר",
+        "דבורי אמת",
+        "בושה",
+        "הארות ונשיאות פנים",
+        "המתקת הדינים"
+      ],
+      "node_degrees": {
+        "אמת": 3,
+        "יעקב": 5,
+        "מדת תפארת": 3,
+        "ארץ ישראל": 2,
+        "\"אילה שלוחה\"": 2,
+        "נשיאות פנים": 1,
+        "כללות הגונין": 2,
+        "שמים": 2,
+        "אש ומים": 1,
+        "תפלין": 2,
+        "פאר": 2,
+        "שפר": 1,
+        "דבורי אמת": 1,
+        "בושה": 1,
+        "הארות ונשיאות פנים": 1,
+        "המתקת הדינים": 1
+      },
+      "merge_notes": [
+        "CC3 ({הארות ונשיאות פנים, המתקת הדינים}) merged into Package 1. Justification: 'הארות ונשיאות פנים' shares essential nature with 'נשיאות פנים' (already in CC1 via נשיאות פנים = אמת). Both are the same spiritual quality — the illumination of the divine face — expressed with slightly different emphasis ('הארות ונשיאות' = illuminations-and-lifting, 'נשיאות פנים' = lifting of the face). The bechina 'הארות ונשיאות פנים הוא בחינות המתקת ובטול הדינים' confirms that face-illumination is the positive pole of the dinin-dimension, belonging to the same truth-and-face-light domain as CC1. The merge is warranted by shared conceptual nature (both = divine face illumination = aspect of אמת), NOT by eitza reasoning."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 47,
+      "label": "הַסְתָּרַת פָּנִים וְדִינִים",
+      "label_en": "Concealment of the Face and Harsh Judgments",
+      "polarity": "evil",
+      "reason": "This 2-node package is the evil mirror of Package 1's dominant axis. The bechina 'הסתרת פנים = דינים' (concealment of the divine face IS harsh judgments) is the exact negative counterpart to 'נשיאות פנים = אמת' (illumination of the face IS truth). Torah #47 explicitly constructs the opposition: when Israel wallows in the desire for food, 'והסתרתי פני' (I will hide my face) — and this concealment IS judgment/strictness (דינים). The Torah connects this to 'כי הם משוקעים בתאות אכילה, אזי הסתרת פנים, בחינות דינים.' The package stands as the structural evil counter to Package 1: where Package 1 has face-illumination = truth = abundance, Package 2 has face-concealment = judgment = poverty/shame. The dominant node is הסתרת פנים (degree 1, but it is the more theologically charged and specific concept — 'הסתרת פנים' is the primary term the Torah uses for God's withdrawal; 'דינים' is its essential nature/consequence at the cosmic level). This small package is not merged into CC1 because its polarity is opposite — it represents the evil dimension, which must remain separate per the framework's good/evil mirror structure.",
+      "dominant_node": "הסתרת פנים",
+      "nodes": [
+        "הסתרת פנים",
+        "דין"
+      ],
+      "node_degrees": {
+        "הסתרת פנים": 1,
+        "דין": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 17,
+    "total_nodes": 18,
+    "total_packages": 2,
+    "raw_connected_components": 3
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "source": "Torah #57",
+    "type": "new_package_proposals",
+    "generated": "2026-03-03"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": "NP-57-1",
+      "torah_ref": 57,
+      "label": "יְדֵי הַמַּלְאָךְ וְהָאָבוֹת",
+      "label_en": "The Angel's Hands and the Patriarchs",
+      "polarity": "good",
+      "reason": "Torah #57 has an extensive bechina domain centered on the HANDS of the angels — a domain that has no bechina edges in the current dataset for reference=57. The hands are the central structural concept of the Torah: the two powers of each angel (to receive vitality and to transmit it) ARE the hands ('מְכֻנִּים בִּבְחִינַת יָדַיִם'). The text then explicitly identifies the hands with the Patriarchs: 'יָדַיִם הֵם אַבְרָהָם וְיִצְחָק, שֶׁהֵם יָמִין וּשְׂמֹאל' — the hands ARE Abraham and Isaac (right and left). The angels are called 'abirim' (mighty ones), and their 28 joints (כ\"ח פִּרְקִין דְּיָדַיִם) are the measure of their strength. Further, 'בָּמֳתֵי אָרֶץ הֵם אַבְרָהָם וְיִצְחָק, שֶׁהֵם הַיָּדַיִם, שֶׁהֵם זְרוֹעוֹת עוֹלָם' (text line 24) — the heights of the land ARE Abraham and Isaac = the hands = the arms of the world. This forms an independent bechina domain with 5+ concepts (ידים, יד ימין, יד שמאל, אבירים/מלאכים, אברהם, יצחק, כ\"ח פרקין, במותי ארץ) that is NOT covered by any existing package. The existing 'אבות' node in Package 1 covers only the shin-letter = patriarchs dimension; the yadayim/Avraham-Yitzchak domain is a distinct bechina cluster about the cosmic architecture of how divine vitality flows through angelic hands.",
+      "proposed_nodes": [
+        {
+          "node_id": "ידים",
+          "node_text": "יָדַיִם (שֶׁל הַמַּלְאָךְ)",
+          "bechina_statement": "כֹּחַ שֶׁיֵּשׁ לַמַּלְאָךְ לְקַבֵּל וְלְהַשְׁפִּיעַ מְכֻנִּים בִּבְחִינַת יָדַיִם",
+          "source_line": 5
+        },
+        {
+          "node_id": "יד ימין (= אברהם)",
+          "node_text": "יַד יָמִין (הַמַּלְאָךְ) — אַבְרָהָם",
+          "bechina_statement": "יָדַיִם הֵם אַבְרָהָם וְיִצְחָק, שֶׁהֵם יָמִין וּשְׂמֹאל",
+          "source_line": 22
+        },
+        {
+          "node_id": "יד שמאל (= יצחק)",
+          "node_text": "יַד שְׂמֹאל (הַמַּלְאָךְ) — יִצְחָק",
+          "bechina_statement": "יָדַיִם הֵם אַבְרָהָם וְיִצְחָק, שֶׁהֵם יָמִין וּשְׂמֹאל",
+          "source_line": 22
+        },
+        {
+          "node_id": "אבירים",
+          "node_text": "אַבִּירִים (= מַלְאָכִים)",
+          "bechina_statement": "הַמַּלְאָכִים הַנִּקְרָאִים אַבִּירִים",
+          "source_line": 15
+        },
+        {
+          "node_id": "במותי ארץ",
+          "node_text": "בָּמֳתֵי אָרֶץ",
+          "bechina_statement": "בָּמֳתֵי אָרֶץ הֵם אַבְרָהָם וְיִצְחָק, שֶׁהֵם הַיָּדַיִם, שֶׁהֵם זְרוֹעוֹת עוֹלָם",
+          "source_line": 24
+        },
+        {
+          "node_id": "כח פרקין דידים",
+          "node_text": "כ\"ח פִּרְקִין דְּיָדַיִם",
+          "bechina_statement": "כָּל אֶחָד וְאֶחָד נֶחֱזַר לוֹ כֹּחוֹ, הַיְנוּ כ\"ח פִּרְקִין דְּיָדַיִם",
+          "source_line": 15
+        }
+      ],
+      "proposed_bechina_edges": [
+        { "node1_id": "ידים", "node2_id": "כח הקבלה וההשפעה של מלאך", "type": "bechina", "reference": 57 },
+        { "node1_id": "יד ימין", "node2_id": "אברהם", "type": "bechina", "reference": 57 },
+        { "node1_id": "יד שמאל", "node2_id": "יצחק", "type": "bechina", "reference": 57 },
+        { "node1_id": "מלאכים", "node2_id": "אבירים", "type": "bechina", "reference": 57 },
+        { "node1_id": "במותי ארץ", "node2_id": "אברהם ויצחק", "type": "bechina", "reference": 57 }
+      ],
+      "independence_justification": "The yadayim/avot domain is structurally independent from all five proposed packages: Package 1 (Yaakov/neder/emunah) covers Yaakov's role and faith but not the Avraham/Yitzchak/yadayim cosmic architecture. Package 2 (matzah/speech) covers the mouth-power domain. Package 3 (oneg Shabbat) covers eating/rest/peace. Package 4 (chametz/fast) covers fasting. Package 5 (kaved/Esav) covers the evil. The yadayim-as-Patriarchs domain is about the MECHANISM by which the cosmic flow of vitality works — the right hand (Abraham) receives vitality from the divine speech, the left hand (Isaac) channels it to plants and remedies. This is a distinct structural cluster with 5+ nodes and explicit bechina language throughout sections aleph through gimel of the Torah."
+    },
+    {
+      "id": "NP-57-2",
+      "torah_ref": 57,
+      "label": "צֶלֶם אֱלֹקִים וְחָכְמַת הַבּוֹרֵא",
+      "label_en": "The Divine Image and the Creator's Wisdom",
+      "polarity": "good",
+      "reason": "Torah #57 section vav (lines 29-34) develops a rich bechina domain about the divine image (tzelem Elokim) in the human face — a domain with no bechina edges in the current reference=57 dataset. The Rebbe explicitly states: 'עִקַּר הַצֶּלֶם הַמֵּאִיר בִּפְנֵי הָאָדָם, הִיא חָכְמוֹת הַבּוֹרֵא' — the core of the divine image that illuminates the human face IS the wisdom of the Creator ('הִיא' = bechina equivalence). Further: 'חָכְמַת אָדָם תָּאִיר פָּנָיו' — the wisdom of a person illuminates his face. And: 'הַמֹּחַ, שֶׁהִיא הַצֶּלֶם הַמֵּאִיר בְּפָנָיו' — the brain IS the divine image that illuminates the face. These constitute a three-node bechina cluster (tzelem = chokhmah = brain/moach) that is explicitly stated in bechina language and forms an independent domain. This domain is crucial to the Torah's argument: it explains why anger removes the divine image (chokhmah departs → tzelem gone → no fear from enemies), which is the evil side's mechanism. The cluster is distinct from Package 5 (Esav/kaved/evil) because it describes the GOOD dimension — what the human face normally possesses and what fasting restores.",
+      "proposed_nodes": [
+        {
+          "node_id": "צלם אלקים",
+          "node_text": "הַצֶּלֶם אֱלֹקִים שֶׁבִּפְנֵי הָאָדָם",
+          "bechina_statement": "עִקַּר הַצֶּלֶם הַמֵּאִיר בִּפְנֵי הָאָדָם, הִיא חָכְמוֹת הַבּוֹרֵא",
+          "source_line": 30
+        },
+        {
+          "node_id": "חכמת הבורא",
+          "node_text": "חָכְמוֹת הַבּוֹרֵא",
+          "bechina_statement": "עִקַּר הַצֶּלֶם הַמֵּאִיר בִּפְנֵי הָאָדָם, הִיא חָכְמוֹת הַבּוֹרֵא",
+          "source_line": 30
+        },
+        {
+          "node_id": "מוח",
+          "node_text": "הַמֹּחַ",
+          "bechina_statement": "הַמֹּחַ, שֶׁהִיא הַצֶּלֶם הַמֵּאִיר בְּפָנָיו",
+          "source_line": 34
+        },
+        {
+          "node_id": "פנים (האדם)",
+          "node_text": "פְּנֵי הָאָדָם",
+          "bechina_statement": "חָכְמַת אָדָם תָּאִיר פָּנָיו — the wisdom illuminates the face (face = the manifestation of the tzelem)",
+          "source_line": 30
+        }
+      ],
+      "proposed_bechina_edges": [
+        { "node1_id": "צלם אלקים", "node2_id": "חכמת הבורא", "type": "bechina", "reference": 57 },
+        { "node1_id": "מוח", "node2_id": "צלם אלקים", "type": "bechina", "reference": 57 },
+        { "node1_id": "פנים (האדם)", "node2_id": "צלם אלקים", "type": "bechina", "reference": 57 }
+      ],
+      "independence_justification": "The tzelem/chokhmah/moach cluster is structurally independent from all five proposed packages. Package 1 (Yaakov/neder/emunah) does not include the divine-image dimension. Package 3 (oneg Shabbat) and Package 4 (chametz/fasting) deal with eating, peace, and the liver — not the face/wisdom/tzelem. Package 5 (Esav/kaved/evil) covers the LOSS of the tzelem as a consequence of anger, but not the positive nature of the tzelem itself. The tzelem-chokhmah-moach triad is a distinct bechina domain about what the human face ontologically IS in its holy state — the manifestation of divine wisdom. It has 3+ concepts with explicit bechina language (הִיא, בְּחִינַת) and forms a thematic family around the concept of divine-image-as-wisdom that is not captured by any existing package."
+    }
+  ],
+  "observations": "Torah #57 reveals two clear gaps in the current bechina dataset that constitute independent new packages:\n\n1. The HANDS domain (Package NP-57-1): The yadayim-as-cosmic-architecture is the central mechanism of the entire Torah — every angel has two hands (right = receives, left = transmits). The Patriarchs ARE the hands (Avraham = right, Yitzchak = left, Yaakov = the vow that connects them). This is a 5-6 node cluster with explicit bechina language in sections aleph, bet, gimel, and dalet. Its absence from the bechina edge dataset is a significant structural gap.\n\n2. The DIVINE IMAGE domain (Package NP-57-2): The tzelem/chokhmah/moach cluster in section vav describes the positive nature of the human face — what makes a human feared by enemies. This 4-node cluster with clear bechina language (הִיא used as equivalence) forms an independent domain about the cosmic-psychological architecture of humanity's divine image.\n\nThe Torah's good/evil mirror structure in Torah #57:\n- Good mirror: tzelem/chokhmah/moach (human face as divine image) ↔ Evil mirror: kaved/anger (liver-anger that removes the tzelem)\n- Good mirror: yadayim/Avraham-Yitzchak (hands that transmit healing) ↔ Evil mirror: removal of yadayim from angel (when one departs from Sages' words, the hand's power is removed)\n- Good mirror: oneg Shabbat/matzah/speech (full peace with voice) ↔ Evil mirror: chametz/fasting (partial peace, animal-level, without speech)\n\nThe Torah's argument in five stages:\n  Stage 1 — Torah → angels → herbs → healing; breaking sages' authority → angels' hands removed → no healing [Pkg existing: emunah chakhamim]\n  Stage 2 — Raising fallen emunah via Yaakov's vow (neder = peleh = Patriarchal light) [Pkg 1: good]\n  Stage 3 — Through Patriarchal light, attaining oneg Shabbat (sacred eating, peace-with-speech) [Pkgs 2+3: good]\n  Stage 4 — Fasting as the alternative/partial tikkun (subdues liver/kaved, produces animal-peace) [Pkg 4: neutral]\n  Stage 5 — The evil structure: Esav/kaved/anger → removes tzelem/chokhmah → sitra achra gate [Pkg 5: evil]\n  Background architecture — Angel hands = Avraham/Yitzchak; tzelem = chokhmah/moach [NP-57-1 and NP-57-2: good]"
+}

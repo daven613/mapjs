@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "source": "Torah #17",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===17 AND type==='bechina'. 35 bechina edges extracted, yielding 21 raw connected components across 55 unique nodes. Components merged into 6 thematic packages based on shared bechina nature. The Torah's argument: Tzaddik reveals God's tiferet in Israel (Pkg 1) → this reveals yirah and ahavah (Pkg 3) → holy eating/altar enables sekhel that carries the tzaddik's word on the pure air (Pkg 4) → through tzedakah the voice spreads (Pkg 5) → sparks of Israel's souls hidden among nations return through gerim and teshuvah (Pkg 2) → universal recognition of God = shleimut hada'at (Pkg 5). The neshamah/machshava/chokhmah cluster (Pkg 6) is the metaphysical backdrop — the soul's descent into creation and its path back."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 17,
+      "label": "הַצַּדִּיק וְגִלּוּי אוֹרוֹ",
+      "label_en": "The Tzaddik and the Revelation of His Light",
+      "polarity": "good",
+      "reason": "The dominant thread of Torah #17 is the tzaddik who seeks out and reveals the glory (tiferet) of God hidden in every Jew. This cluster groups the concrete names/images the Rebbe assigns to the tzaddik's function: the biblical Mordechai (who 'searches' = dibchisha), Tzror ha-kessef (the bundle of silver = the tzaddik's concentrated holiness), and the act of denying idol worship (כפירה בעבודה זרה) which is what makes someone a Jew/tzaddik. These four nodes plus the tzaddik node itself all share the same essential nature: they are faces of the tzaddik's being and activity — one who concentrates and seeks and refuses to bow. This is the largest single connected component in the Torah (5 nodes, with צדיק having 3 connections).",
+      "dominant_node": "צדיק",
+      "nodes": [
+        "צדיק",
+        "מרדכי",
+        "דבחישא",
+        "צרור כספו",
+        "כפירה בעבודה זרה"
+      ],
+      "node_degrees": {
+        "צדיק": 3,
+        "מרדכי": 2,
+        "דבחישא": 1,
+        "צרור כספו": 1,
+        "כפירה בעבודה זרה": 1
+      }
+    },
+    {
+      "id": 2,
+      "torah_ref": 17,
+      "label": "הִתְפָּאֲרוּת יִשְׂרָאֵל וְנִשְׁמוֹת הַגְּנוּזוֹת",
+      "label_en": "The Glory of Israel and the Hidden Soul-Sparks",
+      "polarity": "good",
+      "reason": "Torah #17's central theological claim is that God's glory (hitpaarut) is expressed through Israel — this is the very reason for creation. This package clusters all bechina-equivalents of that glory and its structural consequences: the hitpaarut of God with Israel = the birthday of the king (yom huledeth hamelekh), = God's tefillin. Equally part of this domain: the hitpaarut of Israel itself = Israel's tefillin. And 'all goodness' = souls of Israel, plus the hidden good (sparks of Israel's souls captured among the nations). The revelation of the glory = revelation of yirah (edge 993) belongs here because the two are stated as the same thing (the moment the tiferet is uncovered IS the moment yirah emerges — they share one essential nature). Seven isolated smaller components are merged into this package: Component I (3), Component T (2), Component U (2), Component H (2), Component E (2) = total 11 nodes. All share the nature: divine glory, Israel's essential holiness, and the sacred equivalence between hitpaarut and yirah.",
+      "dominant_node": "התפארות של השם יתברך שמתפאר בישראל",
+      "nodes": [
+        "התפארות של השם יתברך שמתפאר בישראל",
+        "יום הלדת המלך",
+        "תפלין של השם יתברך",
+        "התפארות של ישראל",
+        "תפלין",
+        "כל הטוב",
+        "נשמות ישראל",
+        "טוב הכבוש תחת ידם",
+        "חלקי נשמות ישראל הכבוש אצלם",
+        "התגלות ההתפארות",
+        "התגלות היראה"
+      ],
+      "node_degrees": {
+        "התפארות של השם יתברך שמתפאר בישראל": 2,
+        "התגלות ההתפארות": 1,
+        "התגלות היראה": 1,
+        "יום הלדת המלך": 1,
+        "תפלין של השם יתברך": 1,
+        "התפארות של ישראל": 1,
+        "תפלין": 1,
+        "כל הטוב": 1,
+        "נשמות ישראל": 1,
+        "טוב הכבוש תחת ידם": 1,
+        "חלקי נשמות ישראל הכבוש אצלם": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["התגלות ההתפארות", "התגלות היראה"],
+          "reason": "Edge 993 (ref=17, bechina): 'hitgalut hahitpaarut, zeh bechina hitgalut hayirah'. The revelation of God's glory and the revelation of fear are stated as bechina-equivalents — two names for the same moment. This is structurally a face of the hitpaarut cluster: when glory is uncovered, yirah emerges as its twin. Merged into Package 2 because the shared nature is 'hitpaarut' — the revelation that flows from God glorifying Himself with Israel."
+        },
+        {
+          "merged_nodes": ["יום הלדת המלך", "תפלין של השם יתברך"],
+          "reason": "Both are explicitly stated as bechinot of 'hitpaarut of God with Israel' (edges 1284 and 3208). Yom huledeth hamelekh = the moment kingship is born = when the tzaddik reveals the glory; God's tefillin = the parchment inside which IS the statement 'who is like your people Israel' = the hitpaarut encoded in leather and parchment. Same nature as the hitpaarut package."
+        },
+        {
+          "merged_nodes": ["התפארות של ישראל", "תפלין"],
+          "reason": "Edge 3207 (ref=17, bechina): 'hitpaarut of Israel = tefillin, which are called pe'er (glory)'. Israel's glory is the nature of tefillin — same domain as the God-Israel hitpaarut. Merged into Package 2."
+        },
+        {
+          "merged_nodes": ["כל הטוב", "נשמות ישראל"],
+          "reason": "Edge 2230 (ref=17, bechina): 'kol hatov hu rak bechina nishmat Yisrael'. All goodness = Israel's souls. This is the metaphysical ground of the hitpaarut doctrine: Israel's holiness (= all goodness in the world) is the content of God's glorification. Merged into Package 2."
+        },
+        {
+          "merged_nodes": ["טוב הכבוש תחת ידם", "חלקי נשמות ישראל הכבוש אצלם"],
+          "reason": "Edge 1184 (ref=17, bechina): the good hidden among the nations = the captive Israel-soul-sparks. This is the narrative of how the hitpaarut-content (Israel's holiness) gets captured by the klipot and must be redeemed — the very problem the tzaddik's work of revealing glory is meant to solve. Same bechina domain: the stuff of Israel's essential holiness. Merged into Package 2."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 17,
+      "label": "יִרְאָה וְאַהֲבָה וְאֲוִיר הַנָּח",
+      "label_en": "Fear, Love, and the Calm Air",
+      "polarity": "good",
+      "reason": "Yirah and ahavah are the Torah's opening and closing theme — the two inner spiritual states that the tzaddik reveals. This package groups all concepts that are essentially the same as yirah and ahavah: 'shamayim' = fire and water = yirah and ahavah (edges 467, 1413); 'oz' = yirah (edges 1403, 1404); 'ezah' = the goat of the sea (the tzaddik's searching creature whose strength is yirah); 'ahavah' = avir hanach (love is cleaving spirit to spirit = calm transparent air, edge 147); 'ratzon' = ahavah (edge 133). The three sub-components all share the essential nature of yirah-ahavah as a unified spiritual force that can be present (calm air) or absent (stormy wind). Component A (3 nodes: אהבה, רצון, אויר הנח), Component C (3 nodes: שמים, אש ומים, יראה ואהבה), Component J (3 nodes: עז, יראה, עזא) = 9 nodes total.",
+      "dominant_node": "יראה ואהבה",
+      "nodes": [
+        "יראה ואהבה",
+        "שמים",
+        "אש ומים",
+        "אהבה",
+        "רצון",
+        "אויר הנח",
+        "יראה",
+        "עז",
+        "עזא"
+      ],
+      "node_degrees": {
+        "שמים": 2,
+        "אהבה": 2,
+        "עז": 3,
+        "יראה ואהבה": 1,
+        "אש ומים": 1,
+        "רצון": 1,
+        "אויר הנח": 1,
+        "יראה": 1,
+        "עזא": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["אהבה", "רצון", "אויר הנח"],
+          "reason": "Edge 133: ratzon = ahavah. Edge 147: ahavah = avir hanach. These three form a bechina triangle: God's will/desire is love, and love is the calm transparent air through which the tzaddik's voice travels. All three are expressions of the same quality: the spiritual adhesion (itdabkut rucha be-rucha) that enables transmission. Merged into Package 3."
+        },
+        {
+          "merged_nodes": ["שמים", "אש ומים", "יראה ואהבה"],
+          "reason": "Edges 467 and 1413: shamayim = esh u-mayim = yirah ve-ahavah. The word 'shamayim' (heaven) is explicitly unpacked twice as the union of fire (yirah) and water (ahavah). This is the same bechina nature as the main yirah-ahavah cluster. Merged into Package 3."
+        },
+        {
+          "merged_nodes": ["יראה", "עז", "עזא"],
+          "reason": "Edges 1403, 1404, and the null-id edge: oz = yirah (stated twice for emphasis), and iza (the sea-goat creature) = oz. So iza = oz = yirah — all three are faces of the same spiritual quality: the 'strength of fear' that the tzaddik reveals (ki tiferet uzamo atah). Merged into Package 3."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 17,
+      "label": "מִזְבֵּחַ וַאֲכִילָה וְשֵׂכֶל",
+      "label_en": "The Altar, Holy Eating, and Intellect",
+      "polarity": "good",
+      "reason": "Torah #17 teaches that the Jew's dining table atones like the altar (shulchano shel adam mechaper ke-mizbeach). This cluster encompasses: the mizbeach = eating (edge 243), the table = mizbeach (edge 2937), the 'wolf in Benjamin's portion / Torah's territory' = completeness of the altar (edges 1730, 2942), and proper eating = 'teref natan lire'av' = the portion of the altar in the wolf's territory. Through proper eating (not gluttony), the sekhel is purified and the klipot/kessilut are subdued. The companion isolated components F (אבא, חכמה) and G (אות יו"ד, חכמה שמתפשט בכל העולמות) also belong here: chokhmah = the intellect that proper eating supports; 'av be-chokhmah' = the sekhel that is called father (the text at line 93 explicitly links the mezuman's father — avihems — to sekhel called 'av be-chokhmah'). So the mizbeach cluster and the chokhmah cluster share the same nature in this Torah: they are both about the sekhel's clarity that is damaged by gluttony and protected by holy eating. Total 7 (B+L components) + 4 (F+G) = 11 nodes.",
+      "dominant_node": "מזבח",
+      "nodes": [
+        "מזבח",
+        "אכילה",
+        "\"טרף נתן ליראיו\"",
+        "שלחנו של אדם",
+        "שלמות המזבח",
+        "מזבח בחלקו של טורף",
+        "יאכל טרף",
+        "אבא",
+        "חכמה",
+        "אות יו\"ד",
+        "חכמה שמתפשט בכל העולמות"
+      ],
+      "node_degrees": {
+        "מזבח": 2,
+        "שלמות המזבח": 2,
+        "אכילה": 2,
+        "\"טרף נתן ליראיו\"": 1,
+        "שלחנו של אדם": 1,
+        "מזבח בחלקו של טורף": 1,
+        "יאכל טרף": 1,
+        "אבא": 1,
+        "חכמה": 1,
+        "אות יו\"ד": 1,
+        "חכמה שמתפשט בכל העולמות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["שלמות המזבח", "מזבח בחלקו של טורף", "יאכל טרף"],
+          "reason": "Edges 1730 and 2942: 'shleimut hamizbeach = mizbeach be-chelko shel toref' (the altar's territory being in Benjamin's tribal land = the altar's wholeness), and 'yokhal teref = shleimut hamizbeach'. These three are the same concept viewed from different scriptural angles: the altar is complete precisely when it occupies the territory of the 'wolf' (binyamin/toref) — the paradox of holiness sustained within wildness. Same nature as the mizbeach/eating cluster."
+        },
+        {
+          "merged_nodes": ["אבא", "חכמה"],
+          "reason": "Edge 1153: 'avihema hu ha-sekhel she-nikra av, bechina av be-chokhmah'. In this Torah the 'father' = sekhel (intellect/chokhmah). The text (line 93) explicitly connects the father-figure to the sekhel that must be pure for the tzaddik's light to be visible. Chokhmah/sekhel is what proper eating at the mizbeach supports and gluttony damages. Merged into Package 4."
+        },
+        {
+          "merged_nodes": ["אות יו\"ד", "חכמה שמתפשט בכל העולמות"],
+          "reason": "Edge 1171: yud = chokhmah that spreads through all the worlds (kulam be-chokhmah asita). This appears in the 'yam' (sea) exposition (line 77): the yod of 'yam' = chokhmah spreading through all worlds. In this Torah, the yod-chokhmah is the spiritual intellect behind creation, which is exactly what the sekhel of the av/father represents — the same quality. Same domain as the chokhmah/mizbeach package."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 17,
+      "label": "גֵּרִים וּצְדָקָה וּשְׁלֵמוּת הַדַּעַת",
+      "label_en": "Converts, Charity, and the Completion of Knowledge",
+      "polarity": "good",
+      "reason": "The middle movement of Torah #17 (sections ד-ז) is devoted to the tzaddik's voice spreading through the world via tzedakah (charity creates love, love creates pure air, pure air carries the voice). The result: gerim (converts) — people who find the opposite of their old faith in their own books and abandon idolatry. The 'horn' (karna) = tzedakah = raising the horn of Israel. The gerim are identified with 'the evil that separates from the nations along with the good it was holding' (רע שנתלש). The final result of the gerim-process: 'yakiru ve-yeid'u kol yoshvei tevel' — universal recognition = shleimut hada'at. All these concepts share the same bechina nature: they are all the outcome of the tzaddik's voice spreading via the pure-air of love/tzedakah, drawing the lost sparks back. Components D (3), P (2), S (2) = 7 nodes.",
+      "dominant_node": "גרים",
+      "nodes": [
+        "גרים",
+        "\"להפנות אליך כל רשעי ארץ\"",
+        "רע שנתלש מהם עם הטוב, על - ידי שחזר הטוב למקומו",
+        "קרן",
+        "צדקה",
+        "\"יכירו וידעו כל יושבי תבל\"",
+        "שלמות הדעת"
+      ],
+      "node_degrees": {
+        "גרים": 2,
+        "\"להפנות אליך כל רשעי ארץ\"": 1,
+        "רע שנתלש מהם עם הטוב, על - ידי שחזר הטוב למקומו": 1,
+        "קרן": 1,
+        "צדקה": 1,
+        "\"יכירו וידעו כל יושבי תבל\"": 1,
+        "שלמות הדעת": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["קרן", "צדקה"],
+          "reason": "Edge 2555: 'karna = tzedakah, she-hu bechina hon yosif reim rabim'. The horn (karna) of the sea-goat creature is tzedakah — because tzedakah is the principal (keren kayemet) and what builds friendships. These two are bechinically identical in the context of this Torah: the raised horn = the tzedakah that multiplies friends = the avir hanach that carries the voice. Tzedakah is the instrument of the gerim process (the voice spreading), so it belongs in the gerim package."
+        },
+        {
+          "merged_nodes": ["\"יכירו וידעו כל יושבי תבל\"", "שלמות הדעת"],
+          "reason": "Edge 2940: 'yakiru ve-yeidu kol yoshvei tevel = shleimut hada'at'. This verse from the Aleinu prayer describes the ultimate goal of the gerim process: when all nations recognize God = complete knowledge. It is the telos of the tzedakah/gerim/voice chain. Merged into Package 5 as the culminating bechina of what gerim achieve."
+        },
+        {
+          "merged_nodes": ["גרים", "\"להפנות אליך כל רשעי ארץ\"", "רע שנתלש מהם עם הטוב, על - ידי שחזר הטוב למקומו"],
+          "reason": "Edges 632 and 2749: 'lehafnot elekha kol rish'ei aretz = gerim' and 'gerim = the evil that tears loose from them along with the good, when the good returns to its root'. These three describe the same phenomenon — the wicked of the earth being turned to God = the convert phenomenon = what happens when the stolen sparks of Israel's souls return home dragging the evil shell with them. All three are faces of the gerim bechina."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "torah_ref": 17,
+      "label": "תְּשׁוּבָה וְנֶפֶשׁ הַיּוֹרֶדֶת",
+      "label_en": "Repentance and the Descending Soul",
+      "polarity": "good",
+      "reason": "Section ח of the Torah (the Leviathan midrash) is devoted to the soul's metaphysical journey: it descends through the four worlds (mem = 4 worlds, yud = chokhmah spreading through them), remembers its divine origin via the shin-machshava (thought), is reminded of divine counsel via the parsah-regel-etzah (the hooves = foot = advice), faces extinction (puma de-livyatan = the leviathan's mouth), and repents, becoming ba'alei teshuvah and gerim. The concepts in this package — thought/shin, foot/advice/parsah, teshuvah/Shaddai — all share the nature of the soul's interior process of descent and return. Components M (2), N (3), and R (3) = 8 nodes. The three components connect thematically through the text of the 'sea-creature' midrash: the animal's hoof (parsah) = foot = advice that the soul needs; the shin = the three-headed thought that splits into intellect/emotion/action; teshuvah = Shaddai = the cosmic reconciliation of 'there is enough in My divinity for every being' (ein tzarich le-shum avoda acheret).",
+      "dominant_node": "תשובה",
+      "nodes": [
+        "תשובה",
+        "שדי",
+        "\"לתקן עולם במלכות שדי וכל בני בשר יקראו בשמך\"",
+        "אות שין",
+        "מחשבה",
+        "רגל",
+        "עצה",
+        "פרסה"
+      ],
+      "node_degrees": {
+        "תשובה": 2,
+        "רגל": 2,
+        "שדי": 1,
+        "\"לתקן עולם במלכות שדי וכל בני בשר יקראו בשמך\"": 1,
+        "אות שין": 1,
+        "מחשבה": 1,
+        "עצה": 1,
+        "פרסה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["תשובה", "שדי", "\"לתקן עולם במלכות שדי וכל בני בשר יקראו בשמך\""],
+          "reason": "Edges 2842 and 3248: teshuvah = Shaddai (because Shaddai = 'there is enough in My divinity for every creature', meaning one needs no other avodah — this is the inner logic of abandoning idolatry = teshuvah), and 'letaken olam be-malkhut Shaddai = teshuvah, when the good returns to its place'. These three share the bechina of teshuvah: the return of the stolen good to its root. Shaddai is the divine name that encodes this sufficiency."
+        },
+        {
+          "merged_nodes": ["אות שין", "מחשבה"],
+          "reason": "Null-id edge (ref=17, bechina): 'shin = machshava she-necheleket le-shalosh rashim: machshavot sikhli'ot, machshavot midoti'ot, machshavot ma'asiyot'. The three-pronged letter shin is explicitly an aspect of thought — the threefold subdivision of the soul's interior life. In the midrash context this is the soul remembering its origin in divine thought. Merged into Package 6 as the mental/interior dimension of the soul's descent."
+        },
+        {
+          "merged_nodes": ["רגל", "עצה", "פרסה"],
+          "reason": "Edges 2429 and 2662: regel = etzah, parsah = regel. So parsah (hoof) = regel (foot) = etzah (advice/counsel). In the midrash, the sea-creature's hoof reminds the descending soul of the divine counsel (etzah) at the beginning of creation — that the soul was 'consulted' in the creation of the world. This is the soul's reminder of its purpose. All three are bechina-equivalents describing the same concept: the foot/hoof as the organ of guidance-following. Merged into Package 6."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "torah_ref": 17,
+      "label": "שִׂנְאָה וְרוּחַ רָעָה — פְּגַם הָאַהֲבָה",
+      "label_en": "Hatred and the Evil Wind — the Defect in Love",
+      "polarity": "evil",
+      "reason": "Torah #17 teaches that love is the calm air (avir hanach) through which the tzaddik's voice travels. Its evil mirror is hatred (sinah), which is explicitly equated to a 'ruach ra'ah' (evil wind) that scatters the air-particles and makes it impossible to hear even a voice, let alone speech. Edge 2717: sinah = ruach ra'ah. This is the exact negative of the love/avir-hanach cluster (Package 3) — same structural quality, opposite orientation. A separate evil package is warranted because this is an independent bechina (the evil wind), not merely absence of good. It is the active force opposing the tzaddik's voice-transmission.",
+      "dominant_node": "שנאה",
+      "nodes": [
+        "שנאה",
+        "רוח רעה"
+      ],
+      "node_degrees": {
+        "שנאה": 1,
+        "רוח רעה": 1
+      }
+    },
+    {
+      "id": 8,
+      "torah_ref": 17,
+      "label": "אֲכִילַת זוֹלֵל וְסוֹבֵא — פְּגַם הַמִּזְבֵּחַ",
+      "label_en": "Gluttonous Eating — Defiling the Altar",
+      "polarity": "evil",
+      "reason": "The evil mirror of Package 4 (holy eating = purifying the altar/sekhel): when one eats like a glutton and drunkard (zolel ve-soveh), this is a bechina of 'pgam hamizbeach' — desecrating the altar. Edge 2474: 'ke-she-okhel ke-zolel ve-soveh, zeh bechina pgam hamizbeach'. The consequence is that the klipot suck from the altar more than their due, and the kessilut (foolishness/klipah) overpowers the sekhel. This is structurally the evil counterpart of Package 4's holy eating theme. The two nodes (gluttony and desecration of the altar) form an isolated bechina pair and constitute their own evil domain — the klipah of the eating-table.",
+      "dominant_node": "פגם המזבח",
+      "nodes": [
+        "אוכל כזולל וסובא",
+        "פגם המזבח"
+      ],
+      "node_degrees": {
+        "אוכל כזולל וסובא": 1,
+        "פגם המזבח": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 35,
+    "total_nodes": 55,
+    "total_packages": 8,
+    "raw_connected_components": 21,
+    "components_merged_into_packages": 8,
+    "note_on_merges": "21 raw components: (A) 3 nodes — אהבה/רצון/אויר הנח [Pkg 3], (B) 4 nodes — מזבח/אכילה/טרף/שלחן [Pkg 4], (C) 3 nodes — שמים/אש ומים/יראה ואהבה [Pkg 3], (D) 3 nodes — גרים/להפנות/רע שנתלש [Pkg 5], (E) 2 nodes — התגלות ההתפארות/התגלות היראה [merged Pkg 2], (F) 2 nodes — אבא/חכמה [merged Pkg 4], (G) 2 nodes — אות יו\"ד/חכמה שמתפשט [merged Pkg 4], (H) 2 nodes — טוב הכבוש/חלקי נשמות ישראל [merged Pkg 2], (I) 3 nodes — התפארות של השם יתברך/יום הלדת/תפלין של השי\"ת [Pkg 2 core], (J) 3 nodes — עז/יראה/עזא [Pkg 3], (K) 5 nodes — צדיק/מרדכי/דבחישא/צרור כספו/כפירה [Pkg 1 — largest component], (L) 3 nodes — שלמות המזבח/מזבח בחלקו של טורף/יאכל טרף [merged Pkg 4], (M) 2 nodes — אות שין/מחשבה [merged Pkg 6], (N) 3 nodes — רגל/עצה/פרסה [merged Pkg 6], (O) 2 nodes — אוכל כזולל וסובא/פגם המזבח [Pkg 8 evil], (P) 2 nodes — קרן/צדקה [merged Pkg 5], (Q) 2 nodes — שנאה/רוח רעה [Pkg 7 evil], (R) 3 nodes — תשובה/שדי/לתקן עולם [Pkg 6 core], (S) 2 nodes — יכירו וידעו/שלמות הדעת [merged Pkg 5], (T) 2 nodes — התפארות של ישראל/תפלין [merged Pkg 2], (U) 2 nodes — כל הטוב/נשמות ישראל [merged Pkg 2]"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "source": "Torah #50 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===50 AND type==='bechina'. Produced 3 raw connected components: (A) 7 nodes centered on מי שפגם בבריתו, (B) 4 nodes centered on מיין מתיקין/מיין דדכין, (C) 2-node isolated pair עצם/אריה. Component C merged into Package 2 by shared essential nature: the bone-lion pair belongs to the holy/positive domain of covenant-keeping and is structurally parallel to the pure-waters cluster. The merge is by shared nature (bechina), not by cause-and-effect (eitza). Torah #50 is a two-package Torah with perfect good/evil symmetry."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 50,
+      "label": "פְּגַם הַבְּרִית",
+      "label_en": "Violation of the Covenant",
+      "polarity": "evil",
+      "reason": "All seven nodes in this cluster share the same essential nature: they are different faces of the single spiritual reality of defilement produced by covenant-transgression. The hub concept מי שפגם בבריתו (the covenant-violator) is directly equated via bechina edges to: מיין מרירין (bitter waters), מרה (bitterness), חרב פיות (the double-edged sword), and גיהנם (Gehinnom). Radiating outward from מיין מרירין are two further bechina-equivalents: מיין מסאבין (defiled waters) and זרע טמא (impure seed). Every node in this component is an aspect of the same reality — the spiritual pollution of the person who has violated the covenant. The Rebbe's proof-text structure makes this explicit: the covenant-violator IS bitter waters (line 6), and bitter waters IS the dog (line 7), IS Mara (line 7), IS the double-edged sword (line 7), IS Gehinnom (line 7). The dominant node is מי שפגם בבריתו with 4 direct bechina connections.",
+      "dominant_node": "מי שפגם בבריתו",
+      "nodes": [
+        "מי שפגם בבריתו",
+        "מיין מרירין",
+        "מיין מסאבין",
+        "זרע טמא",
+        "מרה",
+        "\"חרב פיות\"",
+        "גיהנם"
+      ],
+      "node_degrees": {
+        "מי שפגם בבריתו": 4,
+        "מיין מרירין": 2,
+        "מיין מסאבין": 2,
+        "זרע טמא": 1,
+        "מרה": 1,
+        "\"חרב פיות\"": 1,
+        "גיהנם": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 50,
+      "label": "שְׁמִירַת הַבְּרִית",
+      "label_en": "Guarding the Covenant",
+      "polarity": "good",
+      "reason": "This package groups all nodes in Torah #50 belonging to the positive/holy domain. Component B (4 nodes) forms the core: מיין מתיקין (sweet waters) = מיין דדכין (pure/clean waters) = זרע קדש (holy seed) = תקון הברית (guarding the covenant). These four are parallel names for the same spiritual reality — the purity that flows from guarding the covenant. The bechina equations are explicit in line 3 of the source text: 'מַיִּין מְתִיקִין זֶה בְּחִינַת מַיִּין דְּדַכְיָן, זֶרַע קֹדֶשׁ, שְׁמִירַת הַבְּרִית.' The dominant nodes are מיין דדכין and זרע קדש, each with 2 bechina connections, sharing the hub role. Component C (2 nodes: עצם, אריה) is merged into this package by shared essential nature: the Rebbe teaches that when a person has pure waters (the covenant-keeper's essence), his words enter his bones and the bones feel their sweetness — bone IS a bechina of lion (line 5: 'עֶצֶם זֶה בְּחִינַת אַרְיֵה'). The lion (not the dog) accepts the covenant-keeper's sacrifice as salvation. Bones and lion are not cause-and-effect extensions of the pure-waters cluster — they are parallel aspects of the same holy domain: the spiritual dimension of covenant-keeping as it manifests in speech, body, and divine reception. The merge is by shared essential nature, not by eitza flow.",
+      "dominant_node": "מיין דדכין",
+      "nodes": [
+        "מיין מתיקין",
+        "מיין דדכין",
+        "זרע קדש",
+        "תקון הברית",
+        "עצם",
+        "אריה"
+      ],
+      "node_degrees": {
+        "מיין דדכין": 2,
+        "זרע קדש": 2,
+        "מיין מתיקין": 1,
+        "תקון הברית": 1,
+        "עצם": 1,
+        "אריה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["עצם", "אריה"],
+          "source_component": "Component C (isolated 2-node pair)",
+          "reason": "The bone-lion pair (Component C) was isolated from Component B in the raw graph — no direct bechina edge connects עצם or אריה to any node in Component B. The framework requires merging 2-node isolated components into the thematically nearest larger package by shared nature. The nature of עצם-אריה is unambiguously the positive/holy domain: line 5 of the source text states 'עֶצֶם זֶה בְּחִינַת אַרְיֵה' in the context of the covenant-keeper's prayer. When the covenant-keeper has pure/sweet waters, his words enter his bones and the lion (not the dog) accepts his sacrifice as salvation. The lion is explicitly the positive counterpart of the dog: where the dog (Package 1, evil) devours the prayer of the covenant-violator, the lion (holy) receives the sacrifice of the covenant-keeper. The bone-lion pair shares its essential spiritual nature with the pure-waters cluster — both are aspects of holiness and covenant-keeping. This is a merge by shared essential nature (bechina domain), not by causal flow (eitza)."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 10,
+    "total_nodes": 13,
+    "total_packages": 2,
+    "raw_connected_components": 3,
+    "components_merged_into_packages": 2,
+    "bechina_edge_ids": [59, 432, 624, "null", 1090, 1784, 1785, 1786, 1949, 3215],
+    "excluded_edges": [
+      {
+        "id": 1327,
+        "type": "eitza",
+        "nodes": ["תקון הברית", "יכול לטעם מתיקות בתפלה"],
+        "reason": "Excluded: type=eitza, not bechina. This edge describes a causal flow (covenant-repair PRODUCES ability to taste sweetness in prayer), not a parallel-nature equation."
+      }
+    ],
+    "note_on_components": "Component A (7 nodes) — מי שפגם בבריתו cluster → Package 1 (evil, polarity=evil). Component B (4 nodes) — מיין מתיקין/מיין דדכין/זרע קדש/תקון הברית → Package 2 core (good). Component C (2 nodes) — עצם/אריה → merged into Package 2 by shared nature (good). No component merged across polarity lines.",
+    "note_on_mirror": "The good/evil mirror structure in Torah #50 is structurally perfect: Package 1 (bitter/defiled waters, evil seed, sword, Gehinnom, bitterness) is the exact evil mirror of Package 2 (sweet/pure waters, holy seed, guarding covenant, bones, lion). Every concept in Package 1 has a direct parallel in Package 2 — מיין מרירין mirrors מיין מתיקין, זרע טמא mirrors זרע קדש, and the dog (כלבא, not yet in dataset) mirrors the lion (אריה)."
+  }
+}

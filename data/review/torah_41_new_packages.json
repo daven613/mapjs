@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "source": "Torah #41",
+    "type": "new_package_proposals",
+    "generated": "2026-03-03"
+  },
+  "verdict": "PROPOSE_NEW_PACKAGE",
+  "new_packages": [
+    {
+      "proposed_id": 3,
+      "torah_ref": 41,
+      "label": "יַיִן הַמְשַׁכֵּר וְאֵשׁ זָרָה",
+      "label_en": "The Intoxicating Wine and Strange Fire — Evil Enthusiasm",
+      "polarity": "evil",
+      "reason": "The source text of Torah #41 explicitly identifies three concepts as the evil mirror of Package 1 (Binah / יין המשמח), connected by direct bechina language: (1) 'אש זרה, נקרא יין המשכר' — strange fire IS CALLED the intoxicating wine; (2) 'יין המשכר, התלהבות היצר' — the intoxicating wine IS the enthusiasm of the evil inclination; (3) 'מי שמרקד בהתלהבות היצר, זה נקרא חטא של נדב ואביהוא' — evil-enthusiasm dancing IS CALLED the sin of Nadab and Abihu, which IS אש זרה. These three concepts — יין המשכר, אש זרה, התלהבות היצר — are three different names for the same evil reality: the profane, unholified enthusiasm that mimics Package 1's holy joy but is filled with the evil inclination instead. This satisfies the criterion for a new package: 3+ concepts connected by bechina language forming an independent domain that is NOT a subset of Package 1 (the good domain) or Package 2 (the neutral domain). This is the structural evil mirror of Package 1 (good/evil parallel structure per framework section 4). Note: none of these three nodes currently exist in the dataset as bechina-linked nodes for reference=41; they would need to be added first.",
+      "candidate_nodes": [
+        "יין המשכר",
+        "אש זרה",
+        "התלהבות היצר"
+      ],
+      "proposed_bechina_edges": [
+        {
+          "node1": "אש זרה",
+          "node2": "יין המשכר",
+          "proof": "אֵשׁ זָרָה, נִקְרָא יַיִן הַמְשַׁכֵּר, הִתְלַהֲבוּת הַיֵּצֶר",
+          "source_line": 6
+        },
+        {
+          "node1": "יין המשכר",
+          "node2": "התלהבות היצר",
+          "proof": "יַיִן הַמְשַׁכֵּר, הִתְלַהֲבוּת הַיֵּצֶר",
+          "source_line": 6
+        }
+      ],
+      "mirror_of": "Package 1 (בינה ויין המשמח)",
+      "mirror_logic": "Package 1 describes the holy domain: holy enthusiasm (התלהבות שבקדושה) = wine of joy (יין המשמח) = root of Binah's sweetening. Package 3 (proposed) describes the evil domain: evil enthusiasm (התלהבות היצר) = intoxicating wine (יין המשכר) = strange fire (אש זרה). The parallel is exact and structurally mirrors the good/evil framework: same category (enthusiasm/wine), opposite polarity (holy vs. profane). The Rebbe deliberately juxtaposes these in lines 5-6: holy dancing (with יין המשמח) vs. evil dancing (with אש זרה / יין המשכר). This is not a causal relationship but a structural equivalence — evil enthusiasm IS strange fire, just as holy enthusiasm IS the wine of joy."
+    }
+  ],
+  "observations": "Torah #41 (Rikudin) is architecturally a three-package teaching with a clear good/evil polarity structure:\n\n1. CONFIRMED PACKAGES IN DATASET: Two packages emerge from the bechina subgraph — Package 1 (good: Binah/wine of joy cluster, 5 nodes) and Package 2 (neutral: legs/pillars/scholars domain, 6 nodes after merging Component C into B).\n\n2. THE EVIL MIRROR: The teaching's central argument is the contrast between holy dancing and profane dancing. Holy dancing draws Binah's wine (יין המשמח) into the legs and sweetens the judgments (eitza from Package 1 → Package 2). Profane dancing fills the legs with evil wine (יין המשכר = אש זרה = התלהבות היצר) and gives the external forces (חיצונים) a stronger hold. This creates a clear proposed Package 3 (evil mirror of Package 1).\n\n3. WHY PACKAGE 3 NEEDS NEW EDGES: The three evil nodes (יין המשכר, אש זרה, התלהבות היצר) are present in the source text with explicit bechina language but are NOT currently in the dataset as bechina edges for reference=41. The dataset does have edge ID 2096 (reference=41, eitza type) whose proof text CONTAINS these bechina statements, but the bechina edge itself was not extracted. This means Package 3 is a genuine proposal requiring new dataset entries.\n\n4. THE TEACHING'S ARCHITECTURE:\n   - Package 1 (good) ←eitza→ Package 2 (neutral): drawing Binah's wine DOWN into the legs — the act of holy dancing or pidyon.\n   - Package 3 (evil) ←eitza→ Package 2 (neutral): filling the legs with evil fire — the act of profane dancing.\n   - The same Package 2 (legs/pillars) is the arena for BOTH the holy and evil operations. This is precisely why Package 2 is classified as neutral — it is the contested domain between Package 1 and Package 3.\n\n5. THE NAME OF 42 (שם מ\"ב): This is an additional good node in Package 1's domain (Binah IS the Name of 42 IS 370 lights). The pidyon mechanism works by drawing שם מ\"ב through the pillars/mammon — Package 1 flowing into Package 2 through the practical act of redemption. This confirms the eitza structure between the packages.\n\n6. CONDITION FOR IMPLEMENTATION: Adding the proposed Package 3 requires first adding 3 bechina edges to the dataset:\n   - אש זרה ↔ יין המשכר (reference=41, bechina)\n   - יין המשכר ↔ התלהבות היצר (reference=41, bechina)\n   - אש זרה ↔ התלהבות היצר (reference=41, bechina — implied by the chain; the source text states all three as the same thing)"
+}

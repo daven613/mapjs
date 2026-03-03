@@ -1,0 +1,310 @@
+{
+  "meta": {
+    "source": "Torah #56",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_56_packages.json, all reference===56 edges from torahData.js, and the full source text torah_56.txt (98 lines). For each bechina statement in the source text, verified whether the concept appears as a node in the dataset. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ, נִקְרָא used as identity statements) were considered for addition. Concepts that are purely eitza (causal, 'על ידי') or are verse-proof citations rather than conceptual equivalences were excluded."
+  },
+  "additions": [
+    {
+      "package_id": 2,
+      "package_label": "מַלְכוּת דִּקְדֻשָּׁה",
+      "node_id": "מרדכי — מר דרור",
+      "node_text": "מַרְדְּכַי / מָר דְּרוֹר",
+      "polarity": "good",
+      "reason": "Source text line 6: 'וְזֶה בְּחִינַת מָרְדֳּכַי, בְּחִינַת מָר דְּרוֹר.' The Rebbe identifies מרדכי (= מר דרור in Chullin 139b) as a specific bechina. The connection is: מר = מרות = bitterness = malkhut; דרור = freedom. The node מרדכי is already in the dataset (edge 1833: מרדכי ↔ מלכות). The ADDITION is the equating of מרדכי with מר דרור as a specific conceptual identity. This is a new bechina pair not currently in the dataset: מרדכי — מר דרור.",
+      "source_quote": "וְזֶה בְּחִינַת מָרְדֳּכַי, בְּחִינַת מָר דְּרוֹר",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "מרדכי",
+        "node2_id": "מר דרור",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "מַלְכוּת דִּקְדֻשָּׁה",
+      "node_id": "מלכות — צוֹפֶה",
+      "node_text": "מַלְכוּת / צוֹפֶה",
+      "polarity": "good",
+      "reason": "Source text line 8: 'כָּל אֶחָד לְפִי בְּחִינַת הַמַּלְכוּת שֶׁיֵּשׁ לוֹ, הוּא בְּחִינַת צוֹפֶה.' Each person according to their measure of malkhut IS a tzofeh (watchman) — this is an identity statement (הוא בחינת = IS a bechina of). The tzofeh (citing Ezekiel 3:19 'צֹפֶה נְתַתִּיךָ לְבֵית יִשְׂרָאֵל') is the one charged with warning those under their malkhut. The bechina מלכות = צופה is not currently in the dataset for Torah #56.",
+      "source_quote": "הוּא בְּחִינַת צוֹפֶה, שֶׁמֻּטָּל עָלָיו לְהַזְהִיר וּלְהוֹכִיחַ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "מלכות",
+        "node2_id": "צופה",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 5,
+      "package_label": "תּוֹרָה וּמִדּוֹת",
+      "node_id": "תורה — מדות",
+      "node_text": "תּוֹרָה / מִדּוֹת",
+      "polarity": "good",
+      "reason": "Source text line 15: 'כִּי הַתּוֹרָה הִיא בְּחִינַת מִדּוֹת.' This is an explicit identity statement: Torah IS measures/attributes. The dataset has edges מדות ↔ ימים (edge 1358) and תורה ↔ שמו של הקדוש ברוך הוא (edge 2966), but there is no direct edge תורה — מדות in the dataset for Torah #56. This is a missing hub connection in the Package 5 cluster.",
+      "source_quote": "כִּי הַתּוֹרָה הִיא בְּחִינַת מִדּוֹת, כִּי יֵשׁ בְּהַתּוֹרָה אוֹתִיּוֹת וְתֵבוֹת וּפְסוּקִים וּפָרָשִׁיּוֹת וּסְדָרִים, שֶׁהֵם בְּחִינַת מִדּוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "תורה",
+        "node2_id": "מדות",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 5,
+      "package_label": "תּוֹרָה וּמִדּוֹת",
+      "node_id": "בכל יום ויום — תורה",
+      "node_text": "בְּכָל יוֹם וָיוֹם / תּוֹרָה",
+      "polarity": "good",
+      "reason": "Source text line 34: 'וּבְכָל יוֹם וָיוֹם – זֶה בְּחִינַת הַתּוֹרָה, שֶׁעַל יָדָהּ מַמְשִׁיכִין הַחִיּוּת לְהַיָּמִים וְהַמִּדּוֹת.' The phrase 'בכל יום ויום' (from Esther 2:11 — Mordecai walking 'every day') is decoded as a bechina of Torah. Not in the dataset.",
+      "source_quote": "וּבְכָל יוֹם וָיוֹם – זֶה בְּחִינַת הַתּוֹרָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "בכל יום ויום",
+        "node2_id": "תורה",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 3,
+      "package_label": "מַלְכוּת הָרְשָׁעָה",
+      "node_id": "מלכות דסטרא אחרא — מאסף ממון",
+      "node_text": "מַלְכוּת דְּסִטְרָא אָחֳרָא / מְאַסֵּף מָמוֹן",
+      "polarity": "evil",
+      "reason": "Source text line 45: 'וּמַלְכוּת דְּסִטְרָא אָחֳרָא הוּא מְאַסֵּף מָמוֹן.' The evil kingdom IS a gatherer of money/mammon. This is a bechina statement establishing the essential nature of evil malkhut in Torah #56: it gathers material wealth (as a strategy to capture holy sparks). Not in the dataset as an explicit edge.",
+      "source_quote": "וּמַלְכוּת דְּסִטְרָא אָחֳרָא הוּא מְאַסֵּף מָמוֹן",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "מלכות דסטרא אחרא",
+        "node2_id": "מאסף ממון",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "דַּעַת וּמֹשֶׁה",
+      "node_id": "שבועות — חסד עליון",
+      "node_text": "שָׁבוּעוֹת / חֶסֶד עֶלְיוֹן",
+      "polarity": "good",
+      "reason": "Source text line 52: 'שָׁבוּעוֹת הוּא בְּחִינַת שֵׂכֶל גָּדוֹל וְגָּבוֹהַּ מְאֹד, שֶׁהוּא חֶסֶד עֶלְיוֹן וְרַחֲמִים גְּדוֹלִים.' Shavuot = supernal chesed/great rachamim. The שכל גדול already connects to שבועות (edge 2894). The additional bechina חסד עליון is not in the dataset as a node connected to שבועות in Torah #56.",
+      "source_quote": "שָׁבוּעוֹת הוּא בְּחִינַת שֵׂכֶל גָּדוֹל וְגָּבוֹהַּ מְאֹד, שֶׁהוּא חֶסֶד עֶלְיוֹן וְרַחֲמִים גְּדוֹלִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "שבועות",
+        "node2_id": "חסד עליון",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "דַּעַת וּמֹשֶׁה",
+      "node_id": "מקוה של שער החמשים — חסד עליון",
+      "node_text": "מִקְוֶה שֶׁל שַׁעַר הַחֲמִשִּׁים / חֶסֶד עֶלְיוֹן",
+      "polarity": "good",
+      "reason": "Source text line 53: 'שֶׁהוּא בְּחִינוֹת שֵׂכֶל וְדַעַת עֶלְיוֹן, בְּחִינַת חֶסֶד עֶלְיוֹן וְרַחֲמִים גְּדוֹלִים.' The mikveh of the 50th gate IS supernal chesed. Not in the dataset as a direct edge for Torah #56.",
+      "source_quote": "שֶׁהוּא בְּחִינוֹת שֵׂכֶל וְדַעַת עֶלְיוֹן, בְּחִינַת חֶסֶד עֶלְיוֹן וְרַחֲמִים גְּדוֹלִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "מקוה של שער החמשים",
+        "node2_id": "חסד עליון",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "דַּעַת וּמֹשֶׁה",
+      "node_id": "עוגה — מצה",
+      "node_text": "עוּגָה / מַצָּה",
+      "polarity": "good",
+      "reason": "Source text line 64: 'וְזֶה בְּחִינַת עוּגָה, דְּהַיְנוּ מַצּוֹת.' The 'ugah' (round bread/cake) that the Israelites brought from Egypt is explicitly identified as matzot (using the 'דהיינו' = 'that is' formula which marks a bechina equivalence). מצה is already in the dataset (edge 1764: מצה ↔ מחלקת), but the equation עוגה — מצה is not.",
+      "source_quote": "וְזֶה בְּחִינַת עוּגָה, דְּהַיְנוּ מַצּוֹת, שֶׁהוֹצִיאוּ מִמִּצְרַיִם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "עוגה",
+        "node2_id": "מצה",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 4,
+      "package_label": "רוּחַ הַדּוֹפֵק וְדַרְכֵי ה'",
+      "node_id": "שמים — אש ומים",
+      "node_text": "שָׁמַיִם / אֵשׁ וּמַיִם",
+      "polarity": "good",
+      "reason": "Source text line 77: 'כִּי הַיָּדַיִם הֵם בְּחִינַת שָׁמַיִם, אֵשׁ וּמַיִם, שֶׁהֵם בְּחִינַת יַד יָמִין וְיַד שְׂמֹאל.' The shamayim = esh umayim (the classic etymology: שמים = אש + מים) is given a bechina equating shamayim with fire-and-water, which in turn equals right-and-left hand. The שמים node is already in the dataset (edge 2760: שמים ↔ רעמים; edge 38: ידים ↔ שמים). The ADDITION is the specific אש ומים bechina for שמים in Torah #56.",
+      "source_quote": "כִּי הַיָּדַיִם הֵם בְּחִינַת שָׁמַיִם, אֵשׁ וּמַיִם, שֶׁהֵם בְּחִינַת יַד יָמִין וְיַד שְׂמֹאל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "שמים",
+        "node2_id": "אש ומים",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "מַלְכוּת דִּקְדֻשָּׁה",
+      "node_id": "יום הביכורים — מלכות",
+      "node_text": "יוֹם הַבִּכּוּרִים / מַלְכוּת",
+      "polarity": "good",
+      "reason": "Source text line 95: 'וּבְיוֹם הַבִּכּוּרִים – זֶה בְּחִינַת מַלְכוּת, כְּמוֹ שֶׁכָּתוּב (תהלים פט): אַף אֲנִי בְּכוֹר אֶתְּנֵהוּ עֶלְיוֹן לְמַלְכֵי אָרֶץ.' The day of first-fruits = malkhut. Not in the dataset for Torah #56.",
+      "source_quote": "וּבְיוֹם הַבִּכּוּרִים – זֶה בְּחִינַת מַלְכוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "יום הביכורים",
+        "node2_id": "מלכות",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 5,
+      "package_label": "תּוֹרָה וּמִדּוֹת",
+      "node_id": "מנחה חדשה — תורה חדשה",
+      "node_text": "מִנְחָה חֲדָשָׁה / תּוֹרָה חֲדָשָׁה",
+      "polarity": "good",
+      "reason": "Source text line 96: 'בְּהַקְרִיבְכֶם מִנְחָה חֲדָשָׁה לַה' – זֶה בְּחִינַת תּוֹרָה חֲדָשָׁה, תּוֹרַת ה'.' The new minchah offering = new Torah. This is a bechina statement (זה בחינת). Not in the dataset.",
+      "source_quote": "בְּהַקְרִיבְכֶם מִנְחָה חֲדָשָׁה לַה' – זֶה בְּחִינַת תּוֹרָה חֲדָשָׁה, תּוֹרַת ה'",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "מנחה חדשה",
+        "node2_id": "תורה חדשה",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "דַּעַת וּמֹשֶׁה",
+      "node_id": "שבועות — עצרת",
+      "node_text": "שָׁבוּעוֹת / עֲצֶרֶת",
+      "polarity": "good",
+      "reason": "Source text line 97: 'וְעַל כֵּן נִקְרָא שָׁבוּעוֹת עֲצֶרֶת, מִלְּשׁוֹן מַלְכוּת.' Shavuot is called עצרת (literally 'assembly/restrain') from the root of malkhut ('זֶה יַעֲצֹר בְּעַמִּי' = this one will reign over my people). The 'נקרא' formula marks a naming/identity bechina. This gives a new bechina: שבועות — עצרת (and transitively, עצרת = לשון מלכות, connecting Shavuot further to the malkhut cluster of Package 1). Not in the dataset.",
+      "source_quote": "וְעַל כֵּן נִקְרָא שָׁבוּעוֹת עֲצֶרֶת, מִלְּשׁוֹן מַלְכוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "שבועות",
+        "node2_id": "עצרת",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 4,
+      "package_label": "רוּחַ הַדּוֹפֵק וְדַרְכֵי ה'",
+      "node_id": "מקרא קדש — רוח הקדש",
+      "node_text": "מִקְרָא קֹדֶשׁ / רוּחַ הַקֹּדֶשׁ",
+      "polarity": "good",
+      "reason": "Source text line 98: 'מִקְרָא קֹדֶשׁ יִהְיֶה לָכֶם – זֶה בְּחִינַת רוּחַ הַקֹּדֶשׁ.' The holy convocation (מקרא קדש) = ruach hakodesh. The Rebbe decodes the verse's opening phrase as a bechina: calling out to holiness IS the holy spirit/ruach hakodesh. Not in the dataset.",
+      "source_quote": "מִקְרָא קֹדֶשׁ יִהְיֶה לָכֶם – זֶה בְּחִינַת רוּחַ הַקֹּדֶשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "מקרא קדש",
+        "node2_id": "רוח הקדש",
+        "type": "bechina",
+        "reference": 56
+      }
+    },
+    {
+      "package_id": 5,
+      "package_label": "תּוֹרָה וּמִדּוֹת",
+      "node_id": "תורה — מה",
+      "node_text": "תּוֹרָה / מָה",
+      "polarity": "good",
+      "reason": "Source text line 16: 'כִּי הַתּוֹרָה שֶׁהִיא בְּחִינַת מִדּוֹת' and line 40: 'שֶׁעוֹשֶׂה מֵהַהַסְתָּרָה, בְּחִינַת מָה, הַיְנוּ תּוֹרָה, כְּמוֹ שֶׁכָּתוּב: מָה הָעֵדוֹת.' The word 'מה' (what/how-much) is explicitly decoded as a bechina of Torah: the verse 'מָה הָעֵדוֹת וְהַחֻקִּים וְהַמִּשְׁפָּטִים' uses 'מה' to mean Torah. The Torah-as-measure (מדות) produces Torah-as-מה. Not in the dataset for Torah #56.",
+      "source_quote": "שֶׁעוֹשֶׂה מֵהַהַסְתָּרָה, בְּחִינַת מָה, הַיְנוּ תּוֹרָה, כְּמוֹ שֶׁכָּתוּב: מָה הָעֵדוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_new_edge": {
+        "node1_id": "תורה",
+        "node2_id": "מה",
+        "type": "bechina",
+        "reference": 56
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_56_edges": 63,
+    "total_reference_56_bechina_edges": 38,
+    "total_reference_56_eitza_edges": 25,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["דעת", "מן", "משה", "דעת גדול", "מקוה של שער החמשים", "מקוה של שבועות", "שכל ודעת עליון", "מחלקת לשם שמים", "מחלוקת שמאי הלל", "שלום", "ארבעים", "בינה ודעת", "הסתרה שבתוך הסתרה", "אסתר", "שבועות", "שכל גדול וגבוה מאד", "מצה", "מחלקת"],
+      "package_2": ["מלכות", "סוף דבר", "מאסף לכל המחנות דקדשה", "מחנה דן", "ירא אלקים", "מרדכי"],
+      "package_3": ["מלכות דסטרא אחרא", "המן", "תאות עשירות"],
+      "package_4": ["רעמים", "רוח הדופק", "שמים", "ידים", "רוח הקדש", "דרכי ה'", "צדיק ורע לו", "צדיק שאין הלכה כמותו", "צדיק וטוב לו", "צדיק שהלכה כמותו", "רשע ורע לו", "רשע שמקרב להצדיק שאין הלכה כמותו", "רשע וטוב לו", "רשע שמקרב להצדיק שהלכה כמותו"],
+      "package_5": ["תורה", "שמו של הקדוש ברוך הוא", "מדות", "ימים"],
+      "package_6": ["פנימיות", "מחשבה", "בית", "חיצוניות", "דבור", "חצר"],
+      "package_7": ["ל\"ט מלאכות", "זהמת הנחש", "עצבות"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "מר דרור",
+      "צופה",
+      "תורה — מדות (direct edge)",
+      "בכל יום ויום",
+      "מאסף ממון",
+      "חסד עליון",
+      "עוגה",
+      "אש ומים",
+      "יום הביכורים",
+      "מנחה חדשה",
+      "תורה חדשה",
+      "עצרת",
+      "מקרא קדש",
+      "מה (as Torah)"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "מרות — מלכות",
+        "reason": "Source text line 6: 'שֶׁהַמָּרוּת, הַיְנוּ הַמַּלְכוּת' — the 'bitterness/lordship' (מרות, the etymology of מרדכי = מר) is explained as malkhut. This is a wordplay explanation of why Mordecai = malkhut, not a standalone bechina establishing 'מרות' as a separate concept node. The bechina מרדכי ↔ מלכות already exists (edge 1833). No new node needed."
+      },
+      {
+        "concept": "פרנסה תלויה בדעת",
+        "reason": "Source text line 50: 'פַּרְנָסָה בְּנָקֵל תּוֹלָה בְּדַעַת.' This is eitza language ('תלוי' = depends on, caused by) not bechina (not 'פרנסה IS a bechina of daat'). Parnas is enabled/caused by daat, not identical in nature to it."
+      },
+      {
+        "concept": "שלום תלוי בדעת",
+        "reason": "The BECHINA of דעת ↔ שלום is already in the dataset (edge 2916: דעת ↔ שלום). The additional statement 'שָׁלוֹם תָּלוּי בְּדַעַת' (line 51) is confirming/explaining the bechina, not adding a new one. Already covered."
+      },
+      {
+        "concept": "מחלקת that is NOT לשם שמים",
+        "reason": "The plain מחלקת (controversy) that is NOT for heaven's sake is the OPPOSITE of daat (line 61: 'מַחֲלֹקֶת הוּא הֶפֶךְ הַדַּעַת'). However, in the dataset the node מחלקת is connected to מצה (edge 1764) which is the HOLY controversy brought out of Egypt. The plain-evil-machloket is referenced only as the opposite of daat, not given its own bechina equivalence statement. Not added as a separate evil node."
+      },
+      {
+        "concept": "לחם עני — מצה",
+        "reason": "Source text line 70: 'וְזֶה שֶׁנִּקְרָא מַצָּה לֶחֶם עֹנִי.' This is a naming statement (נקרא = is called), establishing that matzah is called 'bread of affliction.' However, this is a biblical phrase (Deut. 16:3) that serves as a proof-text rather than the Rebbe establishing a new conceptual equivalence. The connection is: מצה = machloket = daat (already in dataset via edge 1764 + edge 1769-related cluster). Adding לחם עני as a separate node would not enrich the graph meaningfully."
+      },
+      {
+        "concept": "אנחה (sigh) — healing of ruach hadofek",
+        "reason": "The sighing (אנחה) is described as eitza: 'עַל יְדֵי הָאֲנָחָה, הוּא מְחַיֶּה וּמַבְרִיא אֶת הָרוּחַ הַדּוֹפֵק' (line 76) — through sighing one heals the pulse. This is a causal/eitza relationship, not a bechina identity. No new bechina node."
+      },
+      {
+        "concept": "אריכות ימים בחינת דעת",
+        "reason": "Line 27 and 41: 'אֲרִיכוּת יָמִים... שֶׁהוּא בְּחִינַת דַּעַת.' The longevity/length-of-days is described as a bechina of daat. However, 'אריכות ימים' in this Torah operates as an eitza-bridge concept (Torah → length of days → daat → ability to rebuke) rather than as a standalone bechina node. The concept 'ימים' is already in the dataset (edge 1358: מדות ↔ ימים) and belongs to Package 5. Adding 'אריכות ימים' as a separate node that is bechina of daat would create redundancy with the ימים/מדות cluster. Excluded pending review."
+      }
+    ]
+  }
+}

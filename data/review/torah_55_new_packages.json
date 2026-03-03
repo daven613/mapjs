@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "source": "Torah #55",
+    "type": "new_package_proposals",
+    "generated": "2026-03-03"
+  },
+  "verdict": "NEW_PACKAGE_PROPOSED",
+  "new_packages": [
+    {
+      "id": "55_new_1",
+      "torah_ref": 55,
+      "label": "פָּרָה אֲדֻמָּה — רְכִיבֶיהָ כְּמִשְׁנֵה הַתְּפִלָּה",
+      "label_en": "The Red Cow — Its Components as the Structure of Prayer",
+      "polarity": "neutral",
+      "reason": "Sections ד-ו of Torah #55 contain a sustained cluster of bechina-language statements that decode the physical components of the Parah Adumah (Red Cow) ritual as structural elements of prayer. Each named component of the ritual is given an explicit bechina equivalence by the Rebbe:\n\n1. פָּרָה (the cow itself) = תְּפִלָּה — already in the dataset (edge 3149)\n2. שׁוֹר (receiving from the ox) = הִסְתַּכְּלוּת (gazing/contemplation)\n3. אֲדֻמָּה (the redness) = גְּזֵרַת דִּינָא (harsh divine decree)\n4. תְּמִימָה (wholeness) = שׁוֹר תָּם / דִּינָא רַפְיָא (mitigated judgment)\n5. אֲשֶׁר לֹא עָלָה עָלֶיהָ עֹל (no yoke upon it) = שְׁלוּמֵי אֱמוּנֵי יִשְׂרָאֵל (complete believers of Israel)\n6. אֶרֶז (cedar wood) = קוֹל כְּסִיל (voice of the fool / false beliefs)\n7. אֵזוֹב (hyssop) = קְטַנֵּי קוֹמָה (short-statured / philosophers with weak hearts) — already in dataset (edge 2629)\n8. שְׁנִי תוֹלַעַת (scarlet thread) = קוֹל שְׁלִישִׁי (third voice / voice of shame from enemies)\n9. שְׁחִיטָה (slaughter) = בִּטּוּל אֱמוּנַת כְּסִילִים (nullification of foolish false beliefs)\n10. שְׂרֵפָה (burning) = חִזּוּק הַלֵּב (strengthening of the heart)\n11. אֲסִיפָה (gathering of ashes) = בִּטּוּל הַבִּזְיוֹנוֹת (nullification of humiliations)\n\nThis forms a coherent independent domain of 9+ concepts (excluding those already in Package 2) all sharing the same essential nature: they are names for the ritual acts and physical materials of the Parah Adumah that the Rebbe has decoded as aspects of prayer-structure. They are NOT aspects of prayer itself (that is Package 2), but rather names for the STRUCTURE and MECHANICS of what prayer must accomplish — the ritual vocabulary of correction. The Parah Adumah as a whole serves as the organizing metaphor for the prayer-rectification process, and its components form a conceptual cluster with its own internal logic: three materials (ארז, אזוב, שני תולעת) correspond to three voices (קולות); three actions (שחיטה, שרפה, אסיפה) correspond to three rectifications; and three qualities of the cow itself (אדומה, תמימה, אשר לא עלה עליה עול) correspond to three aspects of how divine judgment is managed.\n\nPolarity is 'neutral' because the Parah Adumah components function as a structural framework that encompasses both good elements (the rectification actions) and evil elements (the voices they must correct) simultaneously — this is precisely why the Parah is called a 'chok' (חוק), a supra-rational law: it purifies the impure and renders impure the pure. The package as a whole is a neutral structural-ritual domain.",
+      "dominant_node": "פרה אדומה",
+      "proposed_nodes": [
+        "פרה אדומה",
+        "שור / הסתכלות",
+        "אדומה / גזירת דינא",
+        "תמימה / שור תם / דינא רפיא",
+        "אשר לא עלה עליה עול / שלומי אמוני ישראל",
+        "ארז / קול כסיל",
+        "אזוב / קטני קומה",
+        "שני תולעת / קול שלישי",
+        "שחיטה / ביטול אמונת כסילים",
+        "שרפה / חיזוק הלב",
+        "אסיפה / ביטול הבזיונות"
+      ],
+      "nodes_already_in_dataset_ref55": [
+        {
+          "node_id": "אזוב",
+          "edge_id": 2629,
+          "current_package": 2,
+          "note": "This node is currently assigned to Package 2 (תפלה). If this new package is approved, אזוב should be reassigned to the Parah Adumah package (55_new_1) because its essential nature is 'a component of the Parah ritual with a bechina meaning', not 'an aspect of prayer itself'. The eitza connection is: the Parah components, when rectified through prayer, produce the tikkun. The bechina connection is: אזוב = קטני קומה (a component of the ritual, a name in the ritual vocabulary)."
+        },
+        {
+          "node_id": "פרה",
+          "edge_id": 3149,
+          "current_package": 2,
+          "note": "פרה = תפלה is the master bechina that LINKS this package to Package 2. פרה belongs in this new package as the dominant/central node. The eitza connection between packages is: the Parah Adumah components CONSTITUTE the structure of prayer (Package 55_new_1) → leading to actual prayer (Package 2). Alternatively, פרה can remain in both packages as a bridge node — it is the unique node that is itself a bechina of תפלה AND simultaneously the name of the ritual whose components form this cluster. If kept in Package 2, then 55_new_1's dominant node becomes one of the component nodes instead."
+        }
+      ],
+      "bechina_language_sources": [
+        {
+          "source_line": "16-17",
+          "quote": "פָּרָה דְּקָבֵילַת מִשּׁוֹר. פָּרָה, זֶהוּ בְּחִינַת תְּפִלָּה. דְּקָבֵילַת מִשּׁוֹר, בְּחִינַת הִסְתַּכְּלוּת"
+        },
+        {
+          "source_line": "19",
+          "quote": "אֲדֻמָּה, דָּא גְּזֵרַת דִּינָא. תְּמִימָה, דָּא שׁוֹר תָּם, דִּינָא רַפְיָא"
+        },
+        {
+          "source_line": "20",
+          "quote": "אֲשֶׁר לֹא עָלָה עָלֶיהָ עֹל, דָּא שְׁלוּמֵי אֱמוּנֵי יִשְׂרָאֵל"
+        },
+        {
+          "source_line": "29",
+          "quote": "אֶרֶז זֶה בְּחִינַת: קוֹל כְּסִיל בְּרֹב דְּבָרִים"
+        },
+        {
+          "source_line": "31",
+          "quote": "'אֵזוֹב', זֶה בְּחִינַת קְטַנֵּי קוֹמָה"
+        },
+        {
+          "source_line": "33",
+          "quote": "שְׁנִי תוֹלַעַת – זֶהוּ בְּחִינַת קוֹל שְׁלִישִׁי"
+        },
+        {
+          "source_line": "35",
+          "quote": "שְׁחִיטָה, זֶהוּ בְּחִינַת בִּטּוּל אֱמוּנַת כְּסִילִים"
+        },
+        {
+          "source_line": "36",
+          "quote": "שְׂרֵפָה, זֶהוּ בְּחִינַת חִזּוּק הַלֵּב"
+        },
+        {
+          "source_line": "37",
+          "quote": "וַאֲסִיפָה, זֶהוּ בְּחִינַת בִּטּוּל הַבִּזְיוֹנוֹת שֶׁל הַשּׂוֹנְאִים"
+        }
+      ],
+      "threshold_check": {
+        "minimum_required": 3,
+        "concepts_found": 11,
+        "threshold_met": true,
+        "independent_domain": "Yes — the Parah Adumah ritual components form a domain distinct from 'prayer' (Package 2) and from 'Eretz Yisrael' (Package 1). They are the STRUCTURAL VOCABULARY of the prayer-rectification system, not prayer itself. Each concept in this cluster is a ritual-name-decoded-as-concept, sharing the essential nature of 'a named component of the Parah Adumah purification ritual that has a bechina equivalence in the human spiritual domain'.",
+        "not_covered_by_existing_packages": "Package 2 (תפלה) captures prayer as the ACTIVITY and its enabling conditions (emunah, straight heart, tzaddikim). Package 55_new_1 captures the STRUCTURE and VOCABULARY of what prayer must repair — the three voices, the three ritual actions, and the qualities of the cow itself. These are different levels: Package 2 is the what-and-why of prayer; Package 55_new_1 is the how-it-works and what-it-repairs."
+      }
+    }
+  ],
+  "observations": "Torah #55 contains an unusually rich cluster of bechina statements concentrated in sections ד-ז, all centered on the Parah Adumah ritual. The Rebbe is using the entire anatomy of the Parah Adumah — the cow's physical qualities, the accompanying materials, and the procedural actions — as a map of the inner structure of prayer. Each component receives an explicit 'זֶהוּ בְּחִינַת' or 'דָּא' identification. This creates a second-order bechina package: not 'what is prayer' (Package 2) but 'what are the names for the components of how prayer works' (Package 55_new_1). The 9 source-text bechinas that are currently missing from the dataset all belong to this cluster, making it the primary gap in the Torah #55 data coverage.\n\nNote on polarity: Some components of this package are clearly evil (ארז = קול כסיל = false beliefs; שני תולעת = voice of shame) while others are clearly good (שחיטה = nullification of false beliefs; שרפה = strengthening of heart). The cow itself (אדומה/תמימה) straddles both poles — its redness is harsh judgment while its wholeness is mitigated judgment. The 'neutral' polarity assignment reflects this inherently dual structure, consistent with the Parah Adumah's status as the paradigmatic chok (a law that transcends rational polarity)."
+}

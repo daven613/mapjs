@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "source": "Torah #55",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===55 AND type==='bechina'. 10 bechina edges yielded 7 raw connected components. Components D (3 nodes: גם/חלה/ירשת-ארץ-ישראל) merged into Component C (4 nodes: ימין/ארץ-ישראל/תמיד/בנימין) by shared bechina nature of Land holiness. Small pairs A (ישרת-לב/אמונה), E (צדיק/עפר), F (אזוב/קטני-קומה) merged into G (פרה/תפלה) as all are aspects of the prayer-domain. Pair B (רשעים/אפר) is the evil mirror of the prayer domain and assigned polarity=evil within its own package."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 55,
+      "label": "אֶרֶץ יִשְׂרָאֵל וּקְדֻשָּׁתָהּ",
+      "label_en": "The Land of Israel and Its Holiness",
+      "polarity": "good",
+      "reason": "The largest connected component in Torah #55 centers on ארץ ישראל as the dominant node (3 direct bechina connections). The Torah teaches that seeing the downfall of the wicked is only possible through the bechina of Eretz Yisrael — the right side (ימין), the permanent divine gaze (תמיד), and Binyamin (who was born in Eretz Yisrael, being the son-of-the-right-hand). The concept of חלה merges here because the Torah explicitly equates חלה with ירשת ארץ ישראל — the chalah offering is the concrete mitzvah of inheriting the Land, and where the Avot are, the Shekhinah is. Together ימין, תמיד, בנימין, חלה, and ירשת ארץ ישראל are all expressions of the same essential domain: the holiness of Eretz Yisrael present even in exile. The word גם (from 'גם זאת' of Vayikra 26:41) is the halachic/scriptural expression for this presence of Eretz Yisrael holiness in exile and belongs in this package.",
+      "dominant_node": "ארץ ישראל",
+      "nodes": [
+        "ארץ ישראל",
+        "ימין",
+        "תמיד",
+        "בנימין",
+        "חלה",
+        "ירשת ארץ ישראל",
+        "גם"
+      ],
+      "node_degrees": {
+        "ארץ ישראל": 3,
+        "חלה": 2,
+        "ימין": 1,
+        "תמיד": 1,
+        "בנימין": 1,
+        "ירשת ארץ ישראל": 1,
+        "גם": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["גם", "חלה", "ירשת ארץ ישראל"],
+          "reason": "These three nodes form a chain: גם ↔ חלה ↔ ירשת ארץ ישראל. The Torah explicitly states that the Shekhinah (= בחינת חלה) is where the Avot are, and that חלה = ירשת ארץ ישראל. The word גם (from 'וְאַף גַּם זֹאת בְּאֶרֶץ אֹיְבֵיהֶם') is defined as the ability to reveal ארץ ישראל holiness even in exile — it is a bechina of the chalah measure (שיעור מ\"ג ביצים = גם numerically). All three are expressions of the same domain as ארץ ישראל and are properly merged into this package rather than standing as a separate 3-node package, because their shared nature IS the Land's holiness."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 55,
+      "label": "תְּפִלָּה וֶאֱמוּנָה",
+      "label_en": "Prayer and Faith",
+      "polarity": "good",
+      "reason": "This package centers on תפלה as the dominant concept, built from four separate small bechina pairs merged by shared nature. The פרה (red cow) is a bechina of prayer (explicitly: 'פָּרָה, זֶהוּ בְחִינַת תְּפִלָּה'). ישרת לב is a bechina of אמונה, and אמונה is the essential foundation of prayer — the Torah states 'עִקַּר הַתְּפִלָּה הִיא עַל יְדֵי אֱמוּנָה'. The צדיקים = עפר bechina belongs here because in section ה, the עפר of prayer is defined as connecting with the souls of the righteous (שוכני עפר) — the tzaddikim ARE the dust that prayer incorporates. The אזוב = קטני קומה bechina belongs here because אזוב is one of the three ritual items of the פרה אדומה that the prayer must repair (the three voices/kolot), and the פרה = תפלה is this package's dominant bechina. All these nodes share the same essential nature: aspects of the structure, components, and conditions of holy prayer.",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תפלה",
+        "פרה",
+        "אמונה",
+        "ישרת לב",
+        "צדיק",
+        "עפר",
+        "אזוב",
+        "קטני קומה"
+      ],
+      "node_degrees": {
+        "תפלה": 1,
+        "פרה": 1,
+        "אמונה": 1,
+        "ישרת לב": 1,
+        "צדיק": 1,
+        "עפר": 1,
+        "אזוב": 1,
+        "קטני קומה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["אמונה", "ישרת לב"],
+          "reason": "Direct bechina pair: 'יִשְׁרַת לֵב, שֶׁהִיא בְחִינַת אֱמוּנָה'. The Torah argues that straightened heart (ישרת לב) IS emunah, and emunah is the essential basis of prayer. These belong with the תפלה package because both describe the inner quality that enables prayer."
+        },
+        {
+          "merged_nodes": ["צדיק", "עפר"],
+          "reason": "Section ה explicitly says: 'צַדִּיקִים, זֶהוּ בְחִינַת עָפָר' — the tzaddikim of the dead (שוכני עפר) are the עפר dimension of prayer. The entire section on עפר ואפר is about prayer's components. The צדיקים/עפר pair is an aspect of prayer: prayer incorporates the dust-souls of righteous predecessors. Belongs in the prayer package."
+        },
+        {
+          "merged_nodes": ["אזוב", "קטני קומה"],
+          "reason": "Section ו-ז: אזוב is one of the three items of the פרה אדומה used in prayer-rectification; it represents the short-statured philosophers (קטני קומה) whose misaligned intellect the prayer of the tzaddik must repair. Since פרה = תפלה is already in this package, the components of the פרה ritual that bear explicit bechina language also belong here. The אזוב/קטני קומה pair is a bechina-defined sub-component of the פרה-as-prayer complex."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 55,
+      "label": "רְשָׁעִים וְאֵפֶר",
+      "label_en": "The Wicked and Ash",
+      "polarity": "evil",
+      "reason": "This two-node package is the evil mirror of Package 2 (prayer). The Torah states explicitly: 'רְשָׁעִים, זֶהוּ בְחִינַת אֵפֶר' — the wicked are the ash-dimension of prayer. The 'tzibur' (ציבור) acronym — Tzaddikim, Beinonim, Resha'im — defines the three components of communal prayer. Package 2 contains the tzaddikim (= עפר/good). This package contains the resha'im (= אפר/evil). The ash (אפר) is produced by burning — it is the transformed state of evil once the prayer has subdued it: 'וַעֲסוֹתֶם רְשָׁעִים כִּי יִהְיוּ אֵפֶר תַּחַת כַּפּוֹת רַגְלֵיכֶם'. The wicked are not absent from prayer — the tzaddik who prays for the community must incorporate and subdue the prayers of the resha'im, converting their 'evil' into a 'throne for holiness'. This is the negative pole of the prayer structure. The רשעים ↔ אפר bechina stands as its own small but structurally essential package precisely because it is the evil counterpart to the good prayer domain of Package 2.",
+      "dominant_node": "רשעים",
+      "nodes": [
+        "רשעים",
+        "אפר"
+      ],
+      "node_degrees": {
+        "רשעים": 1,
+        "אפר": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 10,
+    "total_nodes": 17,
+    "total_packages": 3,
+    "raw_connected_components": 7,
+    "components_merged_into_packages": 3,
+    "note_on_merges": "7 raw components: (C) 4 nodes - ארץ ישראל/ימין/תמיד/בנימין [Pkg 1 base], (D) 3 nodes - גם/חלה/ירשת-ארץ-ישראל [merged into Pkg 1 — same Land holiness domain], (G) 2 nodes - פרה/תפלה [Pkg 2 base], (A) 2 nodes - ישרת-לב/אמונה [merged into Pkg 2 — prayer requires emunah], (E) 2 nodes - צדיק/עפר [merged into Pkg 2 — tzaddikim are the עפר of prayer], (F) 2 nodes - אזוב/קטני-קומה [merged into Pkg 2 — אזוב is a component of פרה=תפלה], (B) 2 nodes - רשעים/אפר [Pkg 3 — evil mirror of prayer domain]"
+  }
+}

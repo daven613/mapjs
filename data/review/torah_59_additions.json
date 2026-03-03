@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "source": "Torah #59",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_59_packages.json, all reference===59 edges from torahData.js (19 total edges: 13 bechina, 6 eitza), and the full source text torah_59.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset with a bechina edge for reference===59. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ, נִקְרָא, בְּחִינָה אַחַת) were considered for addition. Pure eitza statements, proof-text citations, and positional/locational claims were excluded."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "עִגּוּלָא וְרִבּוּעָא וְכִסֵּא הַכָּבוֹד",
+      "node_id": "אות מם",
+      "node_text": "אוֹת מֵ\"ם",
+      "polarity": "good",
+      "reason": "Section ד (lines 17–18): 'וְעִקַּר הַכֹּחַ שֶׁל הַסָּמֶךְ אֵינָהּ אֶלָּא מֵרִבּוּעָא, הַיְנוּ מֵהַמֵּם... שֶׁהִיא כִּסְאוֹת לַמִּשְׁפָּט' and line 18: 'מֵם זֶה רִבּוּעָא, וְסָמֶךְ זֶה עִגּוּלָא הַנַּ\"ל'. This is an explicit bechina statement using 'הַיְנוּ' and 'זֶה' formulas: the letter מ\"ם IS the ריבועא (square), just as the letter סמ\"ך is the עיגולא (circle). The אות מ\"ם is not in the dataset as a bechina node for Torah #59. Since ריבועא = משפט and יד = ריבועא are already captured (edges 1992 and 2658), the missing link is the letter מ\"ם as the square-letter that parallels the circle-letter סמ\"ך. The bechina מם ↔ ריבועא is the exact mirror of the captured בchina עגול ↔ אות סמ\"ך (edge 197). Both should be in the dataset. The source also implies מם ↔ כסאות למשפט (= כסא כבוד domain). Suggested new edge: אות מ\"ם ↔ רבוע, reference=59, type=bechina.",
+      "source_quote": "מֵם זֶה רִבּוּעָא, וְסָמֶךְ זֶה עִגּוּלָא הַנַּ\"ל, שֶׁבְּלוּחוֹת הַלֵּב",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "עִגּוּלָא וְרִבּוּעָא וְכִסֵּא הַכָּבוֹד",
+      "node_id": "כבוד",
+      "node_text": "כָּבוֹד",
+      "polarity": "good",
+      "reason": "Section א (line 3): 'הַכָּבוֹד זֶהוּ בְּחִינַת הֵיכָל, בִּבְחִינַת (תְּהִלִּים כ\"ט): וּבְהֵיכָלוֹ כֻּלּוֹ אוֹמֵר כָּבוֹד'. Section ב (line 10): 'יוֹשֵׁב עַל כִּסֵּא... שֶׁהוּא בְּחִינַת כָּבוֹד הַנַּ\"ל, בִּבְחִינַת כִּסֵּא כָבוֹד' and line 11: 'בְּמַעְגְּלוֹתֶיךָ זֶה בְּחִינַת כִּסֵּא כָּבוֹד'. כבוד is repeatedly defined as the bechina of כסא כבוד and as the content of the הֵיכָל. In the dataset, 'כסא כבוד' exists as a node (edge 1514), but 'כבוד' as a standalone bechina-equivalent of the Throne is not captured. The text equates: כבוד ↔ כסא ↔ עיגולא. Suggested new edge: כבוד ↔ כסא כבוד, reference=59, type=bechina.",
+      "source_quote": "יוֹשֵׁב עַל כִּסֵּא, בִּבְחִינַת כּוֹנֵן לַמִּשְׁפָּט כִּסְאוֹ, שֶׁהוּא בְּחִינַת כָּבוֹד הַנַּ\"ל, בִּבְחִינַת כִּסֵּא כָבוֹד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "חוֹמָה וּכְבִישַׁת כַּעַס וַעֲשִׁירוּת",
+      "node_id": "נפש",
+      "node_text": "נֶפֶשׁ",
+      "polarity": "good",
+      "reason": "Section ה (line 22): 'הַשֵּׁם הוּא הַנֶּפֶשׁ, בִּבְחִינַת (בְּרֵאשִׁית ב): נֶפֶשׁ חַיָּה הוּא שְׁמוֹ'. The Rebbe states explicitly: 'the Name IS the soul' — using the 'הוא/היא' formula that is characteristic of bechina declarations. This bechina equates שם (already in Package 1 as a bechina of עגולא) with נפש. The soul-name connection is then extended to the wealth-wall complex: 'כִּי כָּל הַנְּפָשׁוֹת שָׁרְשָׁם בַּעֲשִׁירוּת' (line 26) — all souls are rooted in wealth. The נפש bechina belongs in Package 3 because it is the soul-dimension of the חומה/עשירות domain (the wall protects the soul-name, and all souls have their root in wealth). Note: this bechina also links שם (Pkg 1) to נפש (Pkg 3) — שם is the bridge node between packages. Suggested new edge: שם ↔ נפש, reference=59, type=bechina.",
+      "source_quote": "הַשֵּׁם הוּא הַנֶּפֶשׁ, בִּבְחִינַת (בְּרֵאשִׁית ב): נֶפֶשׁ חַיָּה הוּא שְׁמוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "חוֹמָה וּכְבִישַׁת כַּעַס וַעֲשִׁירוּת",
+      "node_id": "חכמה",
+      "node_text": "חָכְמָה",
+      "polarity": "good",
+      "reason": "Section ו (line 37): 'כִּי עַיִן עַל שֵׁם הַחָכְמָה נֶאֱמַר, כְּמוֹ שֶׁכָּתוּב: וַתִּפָּקַחְנָה עֵינֵי שְׁנֵיהֶם'. The text explicitly states that עַיִן (eye) is called (נֶאֱמַר) by the name of חָכְמָה — this is the 'נִקְרָא' formula for bechina: eyes are called wisdom, wisdom is called eyes. Since עינים is already in Package 3 (bechina of חומה, edge 2382), and the text gives עינים = חכמה as an explicit bechina statement, חכמה belongs in Package 3 as the wisdom-dimension of the eyes/wall complex. The semantic chain is: suppressing anger preserves the חומה → the חומה is the עינים → the עינים is the חכמה. Suggested new edge: עינים ↔ חכמה, reference=59, type=bechina.",
+      "source_quote": "כִּי עַיִן עַל שֵׁם הַחָכְמָה נֶאֱמַר, כְּמוֹ שֶׁכָּתוּב (בְּרֵאשִׁית ג): וַתִּפָּקַחְנָה עֵינֵי שְׁנֵיהֶם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "עִגּוּלָא וְרִבּוּעָא וְכִסֵּא הַכָּבוֹד",
+      "node_id": "מסלה",
+      "node_text": "מְסִלָּה",
+      "polarity": "good",
+      "reason": "Section א (line 6): 'מְסִלָּה דַּיְקָא, שֶׁהוּא מְקוֹם הָרַגְלִין' and line 11: 'אֲשׁוּרַי זֶה בְּחִינַת רַגְלִין הַנַּ\"ל; בְּמַעְגְּלוֹתֶיךָ זֶה בְּחִינַת כִּסֵּא כָּבוֹד'. The text establishes: מְסִלָּה = place of the feet = the lower dimension of the רוּחַ. Then 'בְּמַעְגְּלוֹתֶיךָ' (from 'תָּמוֹךְ אֲשׁוּרַי בְּמַעְגְּלוֹתֶיךָ') = בחינת כסא כבוד. The מַעְגָּל (circular path) is explicitly linked to the Throne of Glory. The מְסִלָּה/רַגְלִין bechina is not in the dataset for Torah #59. The concept of רַגְלִין appears in the source text as the lower level of the holy ruach, and מְסִלּוֹת בִּלְבָבָם is the path by which the tzaddik guides people. The bechina is: מְסִלָּה ↔ רַגְלִין. Suggested new edge: מסלה ↔ רגלים, reference=59, type=bechina.",
+      "source_quote": "מְסִלָּה דַּיְקָא, שֶׁהוּא מְקוֹם הָרַגְלִין. וְזֶהוּ בְּחִינַת (תְּהִלִּים פ\"ד): מְסִלּוֹת בִּלְבָבָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "עִגּוּלָא וְרִבּוּעָא וְכִסֵּא הַכָּבוֹד",
+      "node_id": "קדש",
+      "node_text": "קֹדֶשׁ",
+      "polarity": "good",
+      "reason": "Section א (line 2): 'קֹדֶשׁ זֶה בְּחִינַת (יְשַׁעְיָה ד): וְהַנּוֹתָר בִּירוּשָׁלַיִם קָדוֹשׁ יֵאָמֵר לוֹ; הַיְנוּ זֶה שֶׁבְּנֵי אָדָם נִשְׁאָרִים דְּבוּקִים בְּיִרְאָה שְׁלֵמָה עַל יָדוֹ'. The text explicitly defines קֹדֶשׁ using 'זֶה בְּחִינַת' — holiness is the bechina of those who remain attached in complete awe. And line 3: 'הַכָּבוֹד זֶהוּ בְּחִינַת הֵיכָל... וְהַכָּבוֹד זֶהוּ בְּחִינַת הֵיכָל'. The teaching opens with: the tzaddik builds הֵיכַל הַקֹּדֶשׁ. קֹדֶשׁ = those who remain in awe = holy dimension of the Temple. The קֹדֶשׁ concept belongs in Package 1 because the text in section ג explicitly connects קֹדֶשׁ to שַׁבָּת: 'שַׁבְּתוֹתַי דָּא עִגּוּלָא וְרִבּוּעַ דִּלְגוֹ' and 'קֹדֶשׁ הוּא' in the Zohar passage. Not in the dataset as a bechina node for Torah #59.",
+      "source_quote": "קֹדֶשׁ זֶה בְּחִינַת (יְשַׁעְיָה ד): וְהַנּוֹתָר בִּירוּשָׁלַיִם קָדוֹשׁ יֵאָמֵר לוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_59_edges": 19,
+    "total_reference_59_bechina_edges": 13,
+    "total_reference_59_eitza_edges": 6,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["עגול", "אות סמ\"ך", "כסא כבוד", "שם", "ששים", "רבוע", "משפט", "יד", "בנס", "שבת"],
+      "package_2": ["מלאכי לבו", "התלהבות הלב", "התלהבות", "מלאכים"],
+      "package_3": ["חומה", "ממון", "כבישת כעס", "עינים"]
+    },
+    "eitza_only_nodes_not_in_packages": [
+      {
+        "node": "האיש המשתדל לקרב ולעשות נפשות",
+        "edge_id": "null (eitza)",
+        "note": "The teacher/mekarev appears as an eitza source: his drawing-close action produces the Holy Temple. He is the agent, not a bechina-concept. Not a package member."
+      },
+      {
+        "node": "אדם שופט את עצמו",
+        "edge_id": "465 (eitza)",
+        "note": "Appears as eitza source: self-judgment produces the angel-fire. This is the action, not a bechina-parallel concept. The bechina of self-judgment is mishpat (already in Package 1). Not a separate package member."
+      },
+      {
+        "node": "שמירת השם, שמירת הנפש",
+        "edge_id": "3000 (eitza)",
+        "note": "Appears as eitza target of 'guard from anger'. This is an outcome, not a bechina. Its conceptual content is captured via the שם ↔ עגולא and שם ↔ נפש bechinas in additions above."
+      }
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "היכל",
+        "reason": "Section א-ג uses 'הֵיכָל' extensively as both the object being built and as a bechina of כָּבוֹד ('הַכָּבוֹד זֶהוּ בְּחִינַת הֵיכָל'). However, the reverse (כבוד = היכל) is explicitly in the text and flagged under the 'כבוד' addition above. Adding both 'היכל' and 'כבוד' separately would create a pair. Since 'כבוד' is more conceptually active in the teaching (it is described as the substance of the Throne: 'כִּסֵּא כָּבוֹד') while 'היכל' is more the structural form, and the dominant bechina for the Temple-concept in this Torah is expressed through the עיגולא-כסא cluster, the 'כבוד' addition captures the essential gap. If adding 'כבוד ↔ כסא כבוד', one could also add 'היכל ↔ כבוד' as a second bechina edge. Suggested but not listed separately to avoid duplication — the 'כבוד' node addition effectively bridges this."
+      },
+      {
+        "concept": "ירושלים",
+        "reason": "Section ב (line 12): 'קִרְיָה זֶה בְּחִינַת יְרוּשָׁלַיִם עִיר הַקֹּדֶשׁ' and section ב cites Jeremiah 3:17 'בָּעֵת הַהִיא יִקְרְאוּ לִירוּשָׁלַיִם כִּסֵּא ה''. Jerusalem is explicitly named as a bechina of the Holy City AND of כסא ה'. This is a strong bechina statement. However, ירושלים here is used primarily as a proof-text location (the verse from Isaiah identifying Jerusalem = קרייה = faithful city) and as the Throne-city. The bechina of ירושלים = כסא is a verse-citation (Jeremiah), not a new independent declaration from the Rebbe. The כסא כבוד is already captured in the dataset. Marginal case — excluded from definitive additions but flagged as a candidate."
+      },
+      {
+        "concept": "אש / כבוד ה' כאש אוכלת",
+        "reason": "Section א (line 8): 'וְאָז גַּם הֵיכַל הַקֹּדֶשׁ מְקַבֵּל כֹּחַ הָאֵשׁ... בִּבְחִינַת (שמות כד): וּכְבוֹד ה' כְּאֵשׁ אֹכֶלֶת'. This verse equates כבוד with אש. However, the Rebbe cites it as a proof-text supporting the mechanism (fire burns the klipot), not as a new bechina declaration. The אש here is the fire that the angels produce (= Package 2) and that burns away the impure. The אש ↔ כבוד equivalence comes from the verse, not from the Rebbe's own bechina statement. Excluded per strict methodology."
+      },
+      {
+        "concept": "רוח / לב חדש ורוח חדשה",
+        "reason": "Section א (line 5): 'הָרוּחַ הוּא בַּלֵּב, בִּבְחִינַת: וְנָתַתִּי לָכֶם לֵב חָדָשׁ וְרוּחַ חֲדָשָׁה'. The location 'the ruach is in the heart' is stated, and the verse identifies lev and ruach as paired. But 'הוּא בַּלֵּב' is a positional claim (the ruach RESIDES in the heart), not a bechina equation (ruach IS the heart). The connection is structural/locational. Excluded."
+      },
+      {
+        "concept": "בית / בית ה'",
+        "reason": "Section ה (line 21): 'כִּי מַעְיַן הַחָכְמָה יוֹצֵא מִבֵּית ה'' and 'בְּחָכְמָה יִבָּנֶה בָּיִת'. The 'בית ה'' is used as a proof-text supporting the eitza chain (wisdom flows from the House of God). The phrase 'בחכמה יבנה בית' is a verse citation, not a Rebbe-declared bechina for Torah #59. Excluded."
+      },
+      {
+        "concept": "כעס פוגם בנפשו",
+        "reason": "Section ה (line 26): 'כִּי הַכַּעַס פּוֹגֵם בְּנַפְשׁוֹ, בִּבְחִינַת (אִיּוֹב יח): טוֹרֵף נַפְשׁוֹ בְּאַפּוֹ'. This is a causal statement (anger damages the soul) supported by a verse, not a bechina (anger IS the soul). The connection between כעס and נפש here is eitza (cause: anger; effect: soul damage). Excluded."
+      },
+      {
+        "concept": "עינים = נפש (טוב מראה עינים)",
+        "reason": "Section ו (line 37): 'וְעַל הַנֶּפֶשׁ נֶאֱמַר (קהלת ו): טוֹב מַרְאֵה עֵינַיִם מֵהֲלָךְ נָפֶשׁ'. The verse from Kohelet uses 'עינים' as a metaphor for seeing over 'wandering of the soul'. The Rebbe uses this verse to connect the eye-concept to the soul-concept. However, the formula is 'נֶאֱמַר' (it is said), not 'הַיְנוּ' or 'זֶה בְּחִינַת'. It reads more like a verse-citation illustration than a direct bechina declaration from the Rebbe. The connection נפש ↔ שם (which IS a direct Rebbe-declaration) is captured in the 'נפש' addition above. Not listed separately."
+      }
+    ]
+  }
+}

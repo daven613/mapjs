@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "source": "Torah #51 (Likutay Moharan, Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_51_packages.json, all reference===51 edges from torahData.js, and the full source text torah_51.txt. For each bechina statement in the source text (language: בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, הוּא), verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language or direct definitional equations (הוּא, זֶה בְּחִינַת) were considered."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "שֶׁקֶר וְרִבּוּי",
+      "node_id": "רע",
+      "node_text": "הָרָע",
+      "polarity": "evil",
+      "reason": "Lines 9 and 19 of the source text contain the direct equation: 'הַשֶּׁקֶר, שֶׁהוּא הָרָע, שֶׁהוּא הַטֻּמְאָה'. The construction 'שֶׁהוּא הָרָע' is a bechina declaration — sheker IS the evil. This is not eitza (sheker does not produce evil; sheker IS evil in this Torah's framework). The Rebbe further develops this: 'הָרָע הוּא נֶגְדִּיּוּת' (line 10) and 'יִתְבַּטֵּל הָרָע' (line 13) as the eschatological abolition, parallel to the abolition of שקר and דמעות. רע belongs in Package 1 as a bechina of שקר.",
+      "source_quote": "הַשֶּׁקֶר, שֶׁהוּא הָרָע, שֶׁהוּא הַטֻּמְאָה, הוּא מֵחֲמַת הָרִחוּק מֵאֶחָד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "שֶׁקֶר וְרִבּוּי",
+      "node_id": "טומאה",
+      "node_text": "הַטֻּמְאָה",
+      "polarity": "evil",
+      "reason": "Lines 9 and 14 of the source text contain the direct equation: 'הַשֶּׁקֶר, שֶׁהוּא הָרָע, שֶׁהוּא הַטֻּמְאָה'. The construction 'שֶׁהוּא הַטֻּמְאָה' is a bechina declaration — sheker IS the impurity. The Rebbe further develops this in lines 14–17: impurity arises from distance from the One (רחוק מאחד), and 'יִתְבַּטֵּל הַטֻּמְאָה' in the future just as sheker will be abolished. Separately, line 14: 'יִתְבַּטֵּל הַטֻּמְאָה, כְּמוֹ שֶׁכָּתוּב: וְאֶת רוּחַ הַטֻּמְאָה אַעֲבִיר מִן הָאָרֶץ'. Impurity belongs in Package 1 as a bechina of שקר/רע. Note: טומאה also appears in Package 3 conceptually (as the thing against which טהרה is the intermediary) — but in the Package 1 context it is the full evil manifestation, parallel to שקר. These are two different bechinot of the same node: its evil nature (Pkg 1) and its structural role in the purification chain (Pkg 3).",
+      "source_quote": "הִתְהַוּוּת הַשֶּׁקֶר, שֶׁהוּא הָרָע, שֶׁהוּא הַטֻּמְאָה, הוּא מֵחֲמַת הָרִחוּק מֵאֶחָד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "שֶׁקֶר וְרִבּוּי",
+      "node_id": "נגדיות",
+      "node_text": "נֶגְדִּיּוּת",
+      "polarity": "evil",
+      "reason": "Line 10: 'הָרָע הוּא נֶגְדִּיּוּת, לְמָשָׁל: כָּל מַה שֶּׁהוּא נֶגֶד רְצוֹנוֹ שֶׁל אָדָם הוּא רַע'. The Rebbe defines רע as נגדיות (opposition/antagonism). This is a bechina of רע (which is itself a bechina of שקר). Negdiyut = opposition is the essential nature of evil: before the One there is no opposition (כלו אחד), but once there is multiplicity/plurality, opposition arises. Belongs in Package 1 as part of the evil/falsehood/multiplicity cluster.",
+      "source_quote": "הָרָע הוּא נֶגְדִּיּוּת, לְמָשָׁל: כָּל מַה שֶּׁהוּא נֶגֶד רְצוֹנוֹ שֶׁל אָדָם הוּא רַע. וּבְאֶחָד אֵין שַׁיָּךְ נֶגְדִּיּוּת, אֶלָּא כֻּלּוֹ טוֹב",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "יְשׁוּת וְשַׁיִשׁ טָהוֹר",
+      "node_id": "אב ובן כאחד",
+      "node_text": "אָב וּבֵן כְּאֶחָד",
+      "polarity": "good",
+      "reason": "Lines 21 and 23-24 of the source text: 'שֶׁיִּהְיֶה אָב וּבֵן כְּאֶחָד, כְּמוֹ שֶׁהָיָה מִקֹּדֶם כְּשֶׁהָיָה בְּכֹחַ'. The Rebbe uses 'אב ובן כאחד' as the bechina for the state of pre-creation unity: Father (God) and Son (creation) as one. The phrase 'לְאַבְנֵי' in R. Akiva's statement is explicitly interpreted as 'אָב וּבֵן כַּחֲדָא' (line 24) — a wordplay bechina where the word אַבְנֵי encodes Father-and-Son-as-One. This is the goal-state that post-creation (שיש טהור = Package 2) must reach: from the world of ישות/שיש טהור (post-creation) back to אב ובן כאחד (pre-creation unity). It is therefore the positive target concept of Package 2 — what שיש טהור/אחר הפעלה aspires to become through truth. Polarity: good, because it represents the ideal unity.",
+      "source_quote": "כְּשֶׁאַתֶּם מַגִּיעִין לְאַבְנֵי – הוּא בְּחִינַת אָב וּבֵן כַּחֲדָא, שֶׁהוּא בְּחִינַת קֹדֶם הַבְּרִיאָה שֶׁהָיָה בְּכֹחַ, שֶׁהָיָה הַכֹּל אֶחָד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "אֱמֶת וְהַשְׁגָּחָה",
+      "node_id": "קדם הבריאה",
+      "node_text": "קֹדֶם הַבְּרִיאָה",
+      "polarity": "good",
+      "reason": "Line 15: 'קֹדֶם הַבְּרִיאָה, כְּשֶׁהָיָה הַבְּרִיאָה בְּכֹחַ... הָיָה כֻּלּוֹ אֶחָד, וְכֻלּוֹ אֱמֶת, וְכֻלּוֹ טוֹב, וְכֻלּוֹ קֹדֶשׁ'. The Rebbe stacks these equations: pre-creation = כלו אחד = כלו אמת = כלו טוב = כלו קדש. Since אמת is already in Package 4 (bechina of כלו אחד), and כלו אחד is the bechina of pre-creation unity, קדם הבריאה is a bechina of the same domain (כלו אחד = אמת). The construction is explicitly bechina-language (הָיָה כֻּלּוֹ אֶחָד... כֻּלּוֹ אֱמֶת — definitional stacking). Belongs in Package 4 as the temporal/metaphysical name for the state of absolute truth/oneness.",
+      "source_quote": "קֹדֶם הַבְּרִיאָה, כְּשֶׁהָיָה הַבְּרִיאָה בְּכֹחַ, כִּבְיָכוֹל, קֹדֶם שֶׁהוֹצִיא אֶל הַפֹּעַל, הָיָה כֻּלּוֹ אֶחָד, וְכֻלּוֹ אֱמֶת, וְכֻלּוֹ טוֹב, וְכֻלּוֹ קֹדֶשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_51_edges": 16,
+    "total_reference_51_bechina_edges": 12,
+    "total_reference_51_eitza_edges": 4,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["שקר", "\"בקשו חשבנות רבים\"", "דמעות", "\"מלוח\"", "מים מים"],
+      "package_2": ["שיש טהור", "אחר הפעלה", "ישות וטהרה"],
+      "package_3": ["טהרה", "בחירה", "ממצע בין הקדש והטמאה, שעל ידו נתתקן הטמאה", "שמאל", "לוי"],
+      "package_4": ["אמת", "כלו אחד", "עינים", "השגחה"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["רע", "טומאה", "נגדיות", "אב ובן כאחד", "קדם הבריאה"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "מרה שחורה (melancholy/black bile)",
+        "reason": "Lines 3-4: 'הַמָּרָה שְׁחוֹרָה הִיא שׁוֹאֶבֶת מֵעֲכִירַת הַדָּמִים'. This is eitza (cause-and-effect in the physiological chain: turbid blood → melancholy → tears), not bechina. The source text does not say מרה שחורה IS turbid blood or IS sheker; it says melancholy DRAWS FROM turbid blood. Excluded as eitza, not bechina."
+      },
+      {
+        "concept": "עכירת הדמים (turbid/murky blood)",
+        "reason": "Lines 3-4: 'וַעֲכִירַת הַדָּמִים הוּא עַל-יְדֵי הַשֶּׁקֶר'. This is eitza — turbid blood comes THROUGH sheker. The text does not say blood IS sheker (that would be bechina); it says turbid blood comes THROUGH speaking sheker. Excluded as eitza."
+      },
+      {
+        "concept": "נפש (soul)",
+        "reason": "Line 4: 'עִקַּר הַדִּבּוּר הוּא הַנֶּפֶשׁ... וְהַנֶּפֶשׁ הוּא הַדָּם'. This is a bechina chain: speech = soul, soul = blood. However, this appears to be cited from Shir HaShirim (5:6) and Vayikra (17:11) as supporting proof-texts for the physiological chain, not as a new conceptual bechina unique to Torah 51. The relevant bechina (speech = soul = blood) is a general halachic/kabbalistic axiom being invoked, not a new bechina being defined in this Torah's argument. The teaching's focus is on blood/speech in the eitza chain (turbid blood → false speech), not on establishing a new conceptual equivalence. Excluded — not a Torah-51-specific bechina concept."
+      },
+      {
+        "concept": "שפת אמת תכון לעד (the truthful lip will be established forever)",
+        "reason": "Line 11: this is a verse citation (Proverbs 12) used to prove that in the future there will be only truth. It is cited as scriptural support for the eschatological claim, not as a new bechina node in the teaching's conceptual framework."
+      },
+      {
+        "concept": "כלו טוב / כלו קדש",
+        "reason": "Line 15: these are part of the stacking equation for קדם הבריאה ('כֻּלּוֹ אֶחָד, וְכֻלּוֹ אֱמֶת, וְכֻלּוֹ טוֹב, וְכֻלּוֹ קֹדֶשׁ'). Since קדם הבריאה is proposed as an addition to Package 4 (which already has כלו אחד and אמת), and since כלו טוב and כלו קדש are effectively compound epithets of the same pre-creation state rather than independent conceptual nodes being developed in the teaching, they could be sub-aspects of קדם הבריאה. They are candidates for dataset addition as aliases/bechinot of קדם הבריאה but are not independently developed as concepts in this Torah beyond their mention in the stacking formula."
+      },
+      {
+        "concept": "היתנגדות (opposition/contradiction)",
+        "reason": "Line 13: 'יִתְבַּטֵּל הַהִתְנַגְּדוּת' — this describes what will be abolished in the future, parallel to הרע and הדמעות. However, the Rebbe does not use explicit bechina language ('הוא בחינת' / 'הוא') to equate התנגדות with שקר. Line 10 says הרע הוא נגדיות, which links רע to opposition. התנגדות is the abstract noun for the same concept as נגדיות and is effectively the same node. Already captured under the proposed addition of נגדיות."
+      }
+    ]
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "source": "Torah #42",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "שכינה",
+      "node_text": "הַשְּׁכִינָה",
+      "polarity": "good",
+      "reason": "The source text states 'הקשת היא השכינה' — the bow IS the Shekhinah. This is direct bechina language ('היא'). Since קשת is the dominant node of Package 1, and the bow IS the Shekhinah, the Shekhinah is a co-equal member of this bechina cluster. This would be bechina edge: שכינה ↔ קשת. The Zohar (Pinchas 215) is the explicit source. שכינה is also identified as = אותיות התפלה in the same paragraph (see separate addition below).",
+      "source_quote": "הַקֶּשֶׁת הִיא הַשְּׁכִינָה, וּתְלָת גְּוָנִין דְּקֶשֶׁת הֵם הָאָבוֹת, וְהֵם לְבוּשִׁין דִּשְׁכִינְתָּא",
+      "in_dataset_already": false,
+      "proposed_edge": {
+        "node1_id": "שכינה",
+        "node2_id": "קשת",
+        "type": "bechina",
+        "reference": 42
+      }
+    },
+    {
+      "package_id": 1,
+      "node_id": "האבות",
+      "node_text": "הָאָבוֹת",
+      "polarity": "good",
+      "reason": "The source text states 'ותלת גוונין דקשת הם האבות' — the three colors of the bow ARE the Patriarchs. This is direct bechina language ('הם'). Additionally: 'האבות הם לבושין דשכינתא' — the Patriarchs ARE the garments of the Shekhinah. The Patriarchs thus sit in the bechina cluster as: האבות = תלת גוונין דקשת = לבושין דשכינתא. Two separate bechina edges should be recorded: (A) האבות ↔ תלת גוונין דקשת, and (B) האבות ↔ לבושין דשכינתא. Since 'תלת גוונין דקשת' is itself a form of 'קשת', the Patriarchs are bechina of the bow/Shekhinah cluster.",
+      "source_quote": "וּתְלָת גְּוָנִין דְּקֶשֶׁת הֵם הָאָבוֹת, וְהֵם לְבוּשִׁין דִּשְׁכִינְתָּא",
+      "in_dataset_already": false,
+      "proposed_edge": {
+        "node1_id": "האבות",
+        "node2_id": "קשת",
+        "type": "bechina",
+        "reference": 42,
+        "note": "Via the identity: האבות = תלת גוונין דקשת, which is an aspect/face of the bow. Two edges are justified: (A) האבות ↔ תלת גוונין דקשת and (B) האבות ↔ לבושין דשכינתא."
+      }
+    },
+    {
+      "package_id": 1,
+      "node_id": "אותיות התפלה",
+      "node_text": "אוֹתִיּוֹת הַתְּפִלָּה",
+      "polarity": "good",
+      "reason": "The source text states 'ואותיות התפלה היא השכינה' — the letters of prayer ARE the Shekhinah. This uses the word 'היא' (IS), which is direct bechina language. The proof is from Psalms 51: 'Adonai open my lips' — because speech (דיבור) is the divine name Adonai. The letters of prayer = the Shekhinah = the bow = the tzaddik. This node closes the bechina ring: אותיות התפלה ↔ שכינה ↔ קשת ↔ צדיק.",
+      "source_quote": "וְאוֹתִיּוֹת הַתְּפִלָּה הִיא הַשְּׁכִינָה, כְּמוֹ שֶׁכָּתוּב: אֲדֹנָי שְׂפָתַי תִּפְתָּח, שֶׁהַדִּבּוּר הוּא שֵׁם אֲדֹנָי",
+      "in_dataset_already": false,
+      "proposed_edge": {
+        "node1_id": "אותיות התפלה",
+        "node2_id": "שכינה",
+        "type": "bechina",
+        "reference": 42
+      }
+    },
+    {
+      "package_id": 1,
+      "node_id": "תפלה",
+      "node_text": "תְּפִלָּה",
+      "polarity": "good",
+      "reason": "The source text states 'ונקרא קשת' — and it [the bow, i.e. the letters of prayer] is CALLED bow. Rashi (on Gen. 48:22) explains 'be-charbi u-ve-kashti' as 'prayer and supplication (תפלה ובקשה)'. The word 'נקרא' (is called) is standard bechina language in the Likutay Moharan schema. This yields: תפלה ↔ קשת. Prayer IS the bow and the bow IS prayer. Note: the dataset already records תפלה ↔ קשת for Torah #2 (edge 1819's sibling); for Torah #42, the connection is also explicit via Rashi.",
+      "source_quote": "וְנִקְרָא קֶשֶׁת, כְּמוֹ שֶׁפֵּרֵשׁ רַשִׁ\"י: בְּחַרְבִּי וּבְקַשְׁתִּי — לְשׁוֹן תְּפִלָּה",
+      "in_dataset_already": false,
+      "proposed_edge": {
+        "node1_id": "תפלה",
+        "node2_id": "קשת",
+        "type": "bechina",
+        "reference": 42
+      }
+    },
+    {
+      "package_id": 1,
+      "node_id": "קול הנגינה",
+      "node_text": "קוֹל הַנְּגִינָה",
+      "polarity": "good",
+      "reason": "The source text states 'וקול הנגינה הם תלת גוונין דקשת' — the voice of melody ARE the three colors of the bow. This is direct bechina language ('הם'). The voice of melody IS the three colors of the bow. Since the three colors = the Patriarchs = the garments of the Shekhinah, the voice of melody is a bechina of all of these. This makes קול הנגינה ↔ תלת גוונין דקשת a bechina edge for Torah #42.",
+      "source_quote": "וְקוֹל הַנְּגִינָה הֵם תְּלָת גְּוָנִין דְּקֶשֶׁת, שֶׁיֵּשׁ בַּקּוֹל אֵשׁ, מַיִם, רוּחַ, שֶׁהֵם שְׁלֹשָׁה אָבוֹת",
+      "in_dataset_already": false,
+      "proposed_edge": {
+        "node1_id": "קול הנגינה",
+        "node2_id": "האבות",
+        "type": "bechina",
+        "reference": 42,
+        "note": "Via identity: קול הנגינה = תלת גוונין דקשת = האבות. A direct edge קול הנגינה ↔ תלת גוונין דקשת may be preferred."
+      }
+    },
+    {
+      "package_id": 1,
+      "node_id": "אש מים רוח",
+      "node_text": "אֵשׁ, מַיִם, רוּחַ",
+      "polarity": "good",
+      "reason": "The source text identifies the three elements within the voice of melody: 'שיש בקול אש, מים, רוח, שהם שלשה אבות' — that there are in the voice fire, water, wind, which ARE the three Patriarchs. This is explicit bechina language: אש מים רוח (in the voice) = שלשה אבות = תלת גוונין דקשת. The three elements of sound ARE the Patriarchs. This node (or three separate nodes for fire/water/wind = each Patriarch) belongs in Package 1 as part of the Patriarchs/bow cluster.",
+      "source_quote": "שֶׁיֵּשׁ בַּקּוֹל אֵשׁ, מַיִם, רוּחַ, שֶׁהֵם שְׁלֹשָׁה אָבוֹת",
+      "in_dataset_already": false,
+      "proposed_edge": {
+        "node1_id": "אש מים רוח",
+        "node2_id": "האבות",
+        "type": "bechina",
+        "reference": 42
+      }
+    },
+    {
+      "package_id": 1,
+      "node_id": "תקיעה שברים תרועה",
+      "node_text": "תְּקִיעָה שְׁבָרִים תְּרוּעָה",
+      "polarity": "good",
+      "reason": "The source text states: 'כי תקיעה שברים תרועה, הם האבות אברהם יצחק יעקב, וסימנך \"קשת\"' — the shofar blasts ARE the Patriarchs Abraham, Isaac, and Jacob, and the mnemonic is the word 'keshet' (bow). This is direct bechina language: תקיעה שברים תרועה = האבות = קשת. The shofar blasts ARE a bechina of the bow, with the word 'keshet' explicitly serving as the mnemonic that links the two. This is one of the most explicit bechina identities in the Torah.",
+      "source_quote": "גַּם זֶה בְּחִינוֹת תְּקִיעוֹת, כִּי תְּקִיעָה שְׁבָרִים תְּרוּעָה, הֵם הָאָבוֹת אַבְרָהָם יִצְחָק יַעֲקֹב, וְסִימָנָךְ \"קֶשֶׁת\"",
+      "in_dataset_already": false,
+      "proposed_edge": {
+        "node1_id": "תקיעה שברים תרועה",
+        "node2_id": "האבות",
+        "type": "bechina",
+        "reference": 42,
+        "note": "A second edge: תקיעה שברים תרועה ↔ קשת is equally justified by the explicit mnemonic 'וסימנך קשת'."
+      }
+    },
+    {
+      "package_id": 1,
+      "node_id": "שדי",
+      "node_text": "שַׁדַּי",
+      "polarity": "good",
+      "reason": "The source text states: 'כי שם שדי הם האבות' — the name Shadai IS the Patriarchs (Zohar Pinchas 231). The shin of Shadai = three branches of the tree = the three Patriarchs. The yod-dalet of Shadai = fourteen letters = the fourteen letters of the three names of the Shema (ה', אלקינו, ה'). Thus שדי = האבות = שמות היחוד = לבושין דשכינתא = קשת. This is direct bechina: שם שדי IS the Patriarchs. The Patriarchs' initials (א-י-י for Avraham, Yitzchak, Yaakov) correspond to the initials of 'ה' אלקינו ה'' (explicit in the text).",
+      "source_quote": "כִּי שֵׁם שַׁדַּי הֵם הָאָבוֹת... שִׁי\"ן תְּלָת עַנְפֵי הָאִילָן, שֶׁהֵם הָאָבוֹת",
+      "in_dataset_already": false,
+      "proposed_edge": {
+        "node1_id": "שדי",
+        "node2_id": "האבות",
+        "type": "bechina",
+        "reference": 42
+      }
+    },
+    {
+      "package_id": 1,
+      "node_id": "שמות היחוד",
+      "node_text": "שְׁלֹשָׁה שְׁמוֹת הַיִּחוּד: ה', אֱלֹקֵינוּ, ה'",
+      "polarity": "good",
+      "reason": "The source text states: 'הם שלשה שמות היחוד: ה', אלקינו, ה', שהם יד אותיות, והם יד של שדי. וראשי-תיבות של אברהם יצחק יעקב, הם הראשי-תיבות של יי אלקינו יי' — the three names of the Shema unity ARE the Patriarchs (via acronym identity). The three divine names (Hashem/Elokeinu/Hashem) and the three Patriarchs share the same initial letters — this is an explicit bechina identity through acronym parallelism. Thus: שמות היחוד ↔ האבות is a bechina edge.",
+      "source_quote": "וְהֵם שְׁלֹשָׁה שְׁמוֹת הַיִּחוּד: ה', אֱלֹקֵינוּ, ה', שֶׁהֵם י\"ד אוֹתִיּוֹת... וְרָאשֵׁי-תֵּבוֹת שֶׁל אַבְרָהָם יִצְחָק יַעֲקֹב, הֵם הָרָאשֵׁי-תֵּבוֹת שֶׁל יְיָ אֱלֹקֵינוּ יְיָ",
+      "in_dataset_already": false,
+      "proposed_edge": {
+        "node1_id": "שמות היחוד",
+        "node2_id": "האבות",
+        "type": "bechina",
+        "reference": 42
+      }
+    },
+    {
+      "package_id": 1,
+      "node_id": "לבושין דנהירין",
+      "node_text": "לְבוּשִׁין דִּנְהִירִין",
+      "polarity": "good",
+      "reason": "The text states: 'כשהיא מתלבשת בלבושין דנהירין, אזי: \"וראיתיה לזכר ברית עולם\"' — when the Shekhinah is dressed in luminous garments, then God recalls the covenant. The luminous garments ARE the Patriarchs (האבות = לבושין דשכינתא). When the garments are luminous/purified (בזכות ובבהירות גדול), they are 'luminous garments' (לבושין דנהירין). This concept is repeatedly invoked in the text as the mechanism of sweetening. While the connection 'luminous garments = Patriarchs in their bright state' uses 'בחינת'-adjacent language ('נקרא זכות האבות'), the exact word 'בחינת' is not used here — the identification is implicit through the structure. Still, this is a strong candidate for a bechina addition, as 'זכות האבות' = 'לבושין נהירין' is stated as an identity.",
+      "source_quote": "וּכְשֶׁהַלְּבוּשִׁין נְהִירִין בְּזַכּוּת וּבִבְהִירוּת, נִקְרָא זְכוּת הָאָבוֹת",
+      "in_dataset_already": false,
+      "proposed_edge": {
+        "node1_id": "לבושין דנהירין",
+        "node2_id": "זכות האבות",
+        "type": "bechina",
+        "reference": 42,
+        "note": "The word 'נקרא' (is called) is explicit bechina language. Luminous garments IS CALLED the merit of the Patriarchs."
+      }
+    },
+    {
+      "package_id": 1,
+      "node_id": "\"אין אומר ואין דברים בלי נשמע קולם\"",
+      "node_text": "אֵין אֹמֶר וְאֵין דְּבָרִים בְּלִי נִשְׁמָע קוֹלָם (תהלים יט)",
+      "polarity": "good",
+      "reason": "The final paragraph of the source text (paragraph 13) states: 'אין אומר ואין דברים בלי נשמע קולם, זה בחינת קשת וקול, תלת גוונין דקשת' — this verse IS a bechina of bow/voice/three colors of the bow. The use of 'זה בחינת' is the clearest possible bechina language. The verse from Psalms 19 (where the heavens speak soundlessly) is identified as the archetype of the voice of melody that contains the three Patriarchal colors without articulated words. This is a direct bechina: the verse/concept 'אין אומר ואין דברים' = קשת = קול = תלת גוונין.",
+      "source_quote": "אֵין אֹמֶר וְאֵין דְּבָרִים בְּלִי נִשְׁמָע קוֹלָם (תהלים יט), זֶה בְּחִינַת קֶשֶׁת וְקוֹל, תְּלָת גְּוָנִין דְּקֶשֶׁת",
+      "in_dataset_already": false,
+      "proposed_edge": {
+        "node1_id": "\"אין אומר ואין דברים בלי נשמע קולם\"",
+        "node2_id": "קשת",
+        "type": "bechina",
+        "reference": 42
+      }
+    },
+    {
+      "package_id": 1,
+      "node_id": "לבוש נאה לצדיק",
+      "node_text": "לְבוּשׁ נָאֶה לַצַּדִּיק",
+      "polarity": "good",
+      "reason": "The source text says: 'גם מי שעושה לבוש נאה לצדיק, על-ידי-זה נמתק הדינים'. The mechanism is: making a beautiful garment for the tzaddik (who = קשת = שכינה) clothes the Shekhinah in luminous garments — the garment for the tzaddik IS the luminous garment for the Shekhinah. While the primary connective here is eitza ('על-ידי-זה'), the implicit identity is: the physical beautiful garment for the tzaddik IS a form of clothing the Shekhinah in luminous garments. This is expressed in the Zohar text cited: 'ul'kasheita bi-levushin di-gvanin nehirin de-razin de-oraita' — clothing her in luminous garments of the secrets of Torah. The earthly beautiful garment for the tzaddik and the supernal luminous garment for the Shekhinah are two faces of the same act. However, the connecting language in the source text is 'על-ידי-זה' (eitza) rather than 'בחינת', so this is a candidate rather than a confirmed bechina.",
+      "source_quote": "גַּם מִי שֶׁעוֹשֶׂה לְבוּשׁ נָאֶה לַצַּדִּיק, עַל־יְדֵי־זֶה נִמְתָּק הַדִּינִים",
+      "in_dataset_already": true,
+      "note": "Already in dataset as eitza edge 2093 (שעושה לבוש נאה לצדיק → נמתק הדינים). The eitza categorization is correct — the text uses 'על-ידי-זה' language. However, the implicit bechina (beautiful garment for tzaddik = luminous garment for Shekhinah) is not yet recorded. This addition is a lower-confidence candidate compared to the ones above."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges_in_dataset": 1,
+    "nodes_in_dataset_not_in_packages": [],
+    "all_dataset_bechina_nodes_assigned": true,
+    "confirmed_missing_bechina_edges_count": 11,
+    "concepts_in_source_text_not_in_dataset": [
+      "שכינה — 'הקשת היא השכינה': the bow IS the Shekhinah. Direct bechina. Not in dataset for reference=42.",
+      "האבות — 'ותלת גוונין דקשת הם האבות': the three colors ARE the Patriarchs. Direct bechina. Not in dataset for reference=42.",
+      "לבושין דשכינתא — 'האבות הם לבושין דשכינתא': the Patriarchs ARE garments of the Shekhinah. Direct bechina. Not in dataset for reference=42.",
+      "אותיות התפלה — 'ואותיות התפלה היא השכינה': the letters of prayer ARE the Shekhinah. Direct bechina with 'היא'. Not in dataset for reference=42.",
+      "תפלה — 'ונקרא קשת... לשון תפלה': the bow is called prayer. Direct bechina via 'נקרא'. Not in dataset for reference=42 (present for reference=2).",
+      "קול הנגינה — 'וקול הנגינה הם תלת גוונין דקשת': the voice of melody IS the three colors of the bow. Direct bechina. Not in dataset.",
+      "אש מים רוח — 'שיש בקול אש, מים, רוח, שהם שלשה אבות': fire, water, wind ARE the three Patriarchs. Direct bechina. Not in dataset for reference=42.",
+      "תקיעה שברים תרועה — 'תקיעה שברים תרועה, הם האבות... וסימנך קשת': the shofar blasts ARE the Patriarchs and the mnemonic is 'keshet'. Explicit bechina. Not in dataset.",
+      "שדי — 'כי שם שדי הם האבות': the name Shadai IS the Patriarchs. Direct bechina with 'הם'. Not in dataset for reference=42.",
+      "שמות היחוד — 'והם שלשה שמות היחוד... ראשי-תיבות של אברהם יצחק יעקב': the three Patriarchs = the three names of the Shema by acronym identity. Bechina via ראשי-תיבות parallelism. Not in dataset.",
+      "לבושין דנהירין — 'כשהלבושין נהירין... נקרא זכות האבות': luminous garments IS CALLED the merit of the Patriarchs. Direct bechina via 'נקרא'. Not in dataset.",
+      "אין אומר ואין דברים — 'זה בחינת קשת וקול, תלת גוונין דקשת': the Psalms 19 verse IS a bechina of the bow/voice. Explicit 'זה בחינת' language. Not in dataset."
+    ],
+    "structural_note": "Torah #42 is the most bechina-sparse Torah in the reviewed dataset to date (1 recorded bechina edge for the entire Torah). Yet the source text is extraordinarily rich in bechina language — nearly every sentence contains 'הם', 'היא', 'נקרא', or 'זה בחינת' equating concepts. This suggests a significant data entry gap rather than a genuinely sparse teaching. The teaching's structure is: one central bechina ring (קשת = שכינה = אותיות התפלה = צדיק, with האבות = תלת גוונין as the sub-cluster), and a series of eitza chains showing how cleaving to this ring through melody/prayer/faith produces the sweetening of judgments. With all missing bechina edges added, Torah #42 would have approximately 12-13 bechina edges clustered into a single large good-domain package, with no evil package.",
+    "polarity_note": "Torah #42 has no explicit evil bechina domain. The evil dimension (harsh judgments = דינין קשים) is the target of the eitza chain (through X, the judgments are sweetened) but there are no bechina equivalences stated for the evil concepts. This makes Torah #42 structurally a single-polarity teaching (all bechinas are good-domain), unlike Torahs #1, #4, etc., which have explicit evil bechina clusters."
+  }
+}

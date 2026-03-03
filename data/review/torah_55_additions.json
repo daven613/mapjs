@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "source": "Torah #55",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_55_packages.json, all reference===55 edges from torahData.js, and the full source text torah_55.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ, נִקְרָא) were considered for addition. Concepts that are purely eitza (causal) or are verse-proof citations rather than conceptual equivalences were excluded."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "אֶרֶץ יִשְׂרָאֵל וּקְדֻשָּׁתָהּ",
+      "node_id": "גם זאת",
+      "node_text": "גַּם זֹאת",
+      "polarity": "good",
+      "reason": "Section ב (line 3): 'הַיְנוּ אֲפִלּוּ בַּגָּלוּת הַמַּר, יְכוֹלִין לְגַלּוֹת בְּחִינַת גַּם זֹאת'. The Rebbe defines 'גַּם זֹאת' (from Vayikra 26:41) as the specific name for the capacity to reveal Eretz Yisrael's holiness in exile. The dataset node is 'גם' (connected to 'חלה') — but the full bechina term used in the source is 'גַּם זֹאת'. The Zohar (cited in section ח) also equates 'גַּם זֹאת' with the Shekhinah = חלה. The node in the dataset (id 1179, node1_id='גם') partially captures this but the fuller conceptual name 'גם זאת' as a distinct bechina label for Shekhinah-in-exile deserves explicit inclusion. Suggested as an alias/expansion of the 'גם' node in the existing dataset rather than a new independent node.",
+      "source_quote": "הַיְנוּ אֲפִלּוּ בַּגָּלוּת הַמַּר, יְכוֹלִין לְגַלּוֹת בְּחִינַת גַּם זֹאת",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 1179,
+      "note": "The existing node 'גם' (edge 1179) is effectively the same concept but abbreviated. Flag as alias: 'גם' = 'גם זאת' = Shekhinah-in-exile = חלה."
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וֶאֱמוּנָה",
+      "node_id": "שור / הסתכלות",
+      "node_text": "שׁוֹר / הִסְתַּכְּלוּת",
+      "polarity": "good",
+      "reason": "Section ד-ה (line 18): 'דְּקָבֵילַת מִשּׁוֹר, בְּחִינַת הִסְתַּכְּלוּת, לְשׁוֹן (בְּמִדְבַּר כ\"ד): אֲשׁוּרֶנּוּ וְלֹא קָרוֹב'. The Rebbe explicitly defines שור (the word used in Balaam's vision) as bechina of הִסְתַּכְּלוּת (gazing/contemplation). The context is that the פרה אדומה receives from the 'שור' (ox), which is the bechina of gazing upward ('אֶשָּׂא עֵינַי אֶל הֶהָרִים' = gazing toward the mountains = perceiving God's justice = the action that leads to prayer). This הסתכלות is the act of seeing God's righteousness that straightens the heart (ישרת לב = אמונה = prayer). The שור/הסתכלות bechina is NOT currently in the dataset for Torah #55 and belongs in the prayer package as the cognitive act that enables emunah and prayer.",
+      "source_quote": "דְּקָבֵילַת מִשּׁוֹר, בְּחִינַת הִסְתַּכְּלוּת, לְשׁוֹן (בְּמִדְבַּר כ\"ד): אֲשׁוּרֶנּוּ וְלֹא קָרוֹב",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וֶאֱמוּנָה",
+      "node_id": "שבעה שבעה שבפרה / שבע ביום",
+      "node_text": "שִׁבְעָה שֶׁבַּפָּרָה / שֶׁבַע בַּיּוֹם הִלַּלְתִּיךָ",
+      "polarity": "good",
+      "reason": "Section ה (line 27): 'זֶהוּ בְּחִינַת תְּפִלָּה, בְּחִינַת (תְּהִלִּים קי\"ט:קס\"ד): שֶׁבַע בַּיּוֹם הִלַּלְתִּיךָ'. The Rebbe explicitly states that the 'שִׁבְעָה שִׁבְעָה' (the groups of sevens in the Parah Adumah ritual) is a bechina of prayer (the seven daily praises). This is a clear bechina statement equating the sevens of the Parah ritual with the seven daily prayers/praises. Not in the dataset for Torah #55.",
+      "source_quote": "זֶהוּ בְּחִינַת תְּפִלָּה, בְּחִינַת (תְּהִלִּים קי\"ט): שֶׁבַע בַּיּוֹם הִלַּלְתִּיךָ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וֶאֱמוּנָה",
+      "node_id": "ארז",
+      "node_text": "אֶרֶז",
+      "polarity": "evil",
+      "reason": "Section ו (line 29): 'אֶרֶז זֶה בְּחִינַת: קוֹל כְּסִיל בְּרֹב דְּבָרִים'. The Rebbe explicitly states that the cedar-wood (ארז) is a bechina of the 'voice of the fool in the multitude of words' (Kohelet 5:2) — the first of three voices/kolot that pollute prayer and must be repaired. The ארז = קול כסיל bechina is not in the dataset for Torah #55. In the teaching's framework, ארז belongs with the prayer domain because the three items of the Parah Adumah (ארז, אזוב, שני תולעת) each correspond to a type of 'false voice' that prayer must rectify. Since אזוב is already in the dataset (edge 2629, reference=55), ארז should be added alongside it. Polarity is evil because it represents the fool's false speech that contaminates prayer.",
+      "source_quote": "אֶרֶז זֶה בְּחִינַת: קוֹל כְּסִיל בְּרֹב דְּבָרִים; בְּרֹב הַהַנְהָגוֹת וֶאֱמוּנוֹת כּוֹזְבוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וֶאֱמוּנָה",
+      "node_id": "שני תולעת",
+      "node_text": "שְׁנִי תוֹלַעַת",
+      "polarity": "evil",
+      "reason": "Section ו (line 33): 'שְׁנִי תוֹלַעַת – זֶהוּ בְּחִינַת קוֹל שְׁלִישִׁי, שֶׁיֵּשׁ לָאָדָם בִּזְיוֹנוֹת וַחֲרָפוֹת מִשּׂוֹנְאִים'. The scarlet thread (שני תולעת) of the Parah ritual is explicitly defined as the bechina of the third voice — the voice of shame and humiliation from enemies (based on Ps 44:16: 'כָּל הַיּוֹם כְּלִמָּתִי נֶגְדִּי'). This is a direct bechina statement. It is not in the dataset for Torah #55. This belongs in the prayer package because it is the third of three elements of the Parah (after ארז and אזוב) corresponding to the three types of contaminating voices that proper prayer must incorporate and transform.",
+      "source_quote": "שְׁנִי תוֹלַעַת – זֶהוּ בְּחִינַת קוֹל שְׁלִישִׁי, שֶׁיֵּשׁ לָאָדָם בִּזְיוֹנוֹת וַחֲרָפוֹת מִשּׂוֹנְאִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וֶאֱמוּנָה",
+      "node_id": "שחיטה",
+      "node_text": "שְׁחִיטָה",
+      "polarity": "good",
+      "reason": "Section ו (line 35): 'שְׁחִיטָה, זֶהוּ בְּחִינַת בִּטּוּל אֱמוּנַת כְּסִילִים, בִּבְחִינַת (הוֹשֵׁעַ ה): וְשַׁחֲטָה שֵׂטִים הֶעְמִיקוּ'. Slaughter (שחיטה) is explicitly defined as the bechina of nullifying false beliefs (ביטול אמונת כסילים) — the rectification of the first voice (ארז = קול כסיל). This is a direct bechina statement. Not in the dataset for Torah #55. Polarity is good because it describes the rectification/action of correcting the false voice.",
+      "source_quote": "שְׁחִיטָה, זֶהוּ בְּחִינַת בִּטּוּל אֱמוּנַת כְּסִילִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וֶאֱמוּנָה",
+      "node_id": "שרפה",
+      "node_text": "שְׂרֵפָה",
+      "polarity": "good",
+      "reason": "Section ו (line 36): 'שְׂרֵפָה, זֶהוּ בְּחִינַת חִזּוּק הַלֵּב, שֶׁיּוּכַל לְהָכִיל אֶת דִּבְרֵי הַחָכְמָה בְּתוֹכוֹ, בִּבְחִינַת (תְּהִלִּים ל\"ט): חַם לִבִּי בְּקִרְבִּי; כִּי עַל־יְדֵי שֶׁנֶּעֱצָר דִּבְרֵי הַשֵּׂכֶל בַּלֵּב, נִתְחַמֵּם הַלֵּב'. Burning (שרפה) is explicitly defined as the bechina of strengthening the heart (חיזוק הלב) — the rectification of the second voice (אזוב = קטני קומה = philosophers whose heart cannot contain their intellect). This is a direct bechina statement. Not in the dataset for Torah #55.",
+      "source_quote": "שְׂרֵפָה, זֶהוּ בְּחִינַת חִזּוּק הַלֵּב, שֶׁיּוּכַל לְהָכִיל אֶת דִּבְרֵי הַחָכְמָה בְּתוֹכוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וֶאֱמוּנָה",
+      "node_id": "אסיפה",
+      "node_text": "אֲסִיפָה",
+      "polarity": "good",
+      "reason": "Section ו (line 37): 'וַאֲסִיפָה, זֶהוּ בְּחִינַת בִּטּוּל הַבִּזְיוֹנוֹת שֶׁל הַשּׂוֹנְאִים, בִּבְחִינַת (בְּרֵאשִׁית ל): אָסַף אֱלֹקִים אֶת חֶרְפָּתִי'. Gathering (אסיפה) is explicitly defined as the bechina of nullifying the humiliations from enemies — the rectification of the third voice (שני תולעת = voice of shame). This is a direct bechina statement. Not in the dataset for Torah #55.",
+      "source_quote": "וַאֲסִיפָה, זֶהוּ בְּחִינַת בִּטּוּל הַבִּזְיוֹנוֹת שֶׁל הַשּׂוֹנְאִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וֶאֱמוּנָה",
+      "node_id": "רגל",
+      "node_text": "רֶגֶל",
+      "polarity": "good",
+      "reason": "Section ה (line 21): 'וְרֶגֶל זֶה בְּחִינַת תְּפִלָּה, בִּבְחִינַת (תְּהִלִּים כ\"ו): רַגְלִי עָמְדָה וְכוּ''. The Rebbe explicitly states that רגל (foot/leg) is a bechina of prayer, citing Psalms 26:12. This is a clear bechina statement (using the formula 'זֶה בְּחִינַת') linking רגל to the prayer domain. Not in the dataset for Torah #55.",
+      "source_quote": "וְרֶגֶל זֶה בְּחִינַת תְּפִלָּה, בִּבְחִינַת (תְּהִלִּים כ\"ו): רַגְלִי עָמְדָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_55_edges": 25,
+    "total_reference_55_bechina_edges": 10,
+    "total_reference_55_eitza_edges": 15,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["ארץ ישראל", "ימין", "תמיד", "בנימין", "חלה", "ירשת ארץ ישראל", "גם"],
+      "package_2": ["תפלה", "פרה", "אמונה", "ישרת לב", "צדיק", "עפר", "אזוב", "קטני קומה"],
+      "package_3": ["רשעים", "אפר"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "שור / הסתכלות",
+      "שבעה שבעה שבפרה",
+      "ארז",
+      "שני תולעת",
+      "שחיטה",
+      "שרפה",
+      "אסיפה",
+      "רגל"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "אדומה = גזירת דינא",
+        "reason": "Section ד (line 19): 'אֲדֻמָּה, דָּא גְּזֵרַת דִּינָא'. The Zohar's identification of the red cow's redness with harsh divine judgment (גזירת דינא) is a bechina statement. However, this is a Zohar-cited teaching integrated into the proof-text of the teaching rather than a new bechina introduced by the Rebbe himself. Furthermore, אדומה here is an aspect of the פרה (which IS in the dataset as a tpilah bechina) and gzeirat dina is a concept from a different register (it describes the mystery/chok dimension). This is filed as part of the new package proposal (torah_55_new_packages.json) rather than an addition to Package 2, because it forms part of the independent Parah Adumah components cluster."
+      },
+      {
+        "concept": "תמימה = שור תם / דינא רפיא",
+        "reason": "Section ד (line 19): 'תְּמִימָה, דָּא שׁוֹר תָּם, דִּינָא רַפְיָא'. Similarly a Zohar-sourced bechina about the Parah's quality of completeness. Deferred to the new_packages proposal as part of the Parah Adumah component cluster."
+      },
+      {
+        "concept": "אשר לא עלה עליה עול = שלומי אמוני ישראל",
+        "reason": "Section ד (line 20): 'אֲשֶׁר לֹא עָלָה עָלֶיהָ עֹל, דָּא שְׁלוּמֵי אֱמוּנֵי יִשְׂרָאֵל'. Another Zohar-sourced bechina about a component of the Parah ritual. Deferred to new_packages."
+      },
+      {
+        "concept": "מלאך סנד\"ל / מט\"ט שר הפנים",
+        "reason": "Section ט (line 63): 'וְזֶהוּ בְּחִינַת כְּלָלִיּוּת מַלְאָךְ סנד\"ל בַּמַּלְאָךְ מט\"ט שַׂר הַפָּנִים, כְּלָלִיּוּת עֲשִׂיָּה בִּיצִירָה'. This introduces the Sandalfon/Metatron angelological framework as a bechina of the relationship between עשיה (action) and יצירה (formation). While structurally interesting, this appears at the very end of the teaching as a kabbalistic framework reference rather than as a primary bechina node the Rebbe is establishing. The 'זֶהוּ בְּחִינַת' formula is used but the referent is a kabbalah-technical cross-reference. This would require adding 4+ nodes from a different conceptual domain (angels, sefirot-worlds) that are not developed in the body of this Torah. Excluded from additions; flagged as potential future enrichment."
+      },
+      {
+        "concept": "נשימה כפולה = רע עין",
+        "reason": "Section ט (line 64): 'עַל יְדֵי עַיִן הָרָע נִכְפָּל הַנְּשִׁימָה'. This is an eitza (causal) statement — ayin hara causes doubled breathing — not a bechina. Not a parallel-nature equivalence."
+      },
+      {
+        "concept": "תפלה בציבור = ציבור ראשי תיבות",
+        "reason": "Section ה (line 25): 'וְזֶהוּ נִקְרָא תְּפִלָּה בְּצִבּוּר, כִּי אוֹתִיּוֹת צִבֻּר רָאשֵׁי-תֵּבוֹת צַדִּיקִים, בֵּינוֹנִים, רְשָׁעִים'. The word ציבור is defined as an acronym. This is an in-the-teaching explanation of a term rather than a bechina establishing a new concept. The ציבור notion IS captured through the package structure (Package 2 = tzaddikim/עפר; Package 3 = rsha'im/אפר). Not a new bechina node."
+      },
+      {
+        "concept": "קשת = תפלה",
+        "reason": "Section ח (line 46): 'זֶה בְּחִינַת תִּקּוּן הַתְּפִלָּה, בְּחִינַת דְּרִיכַת הַקֶּשֶׁת, בְּחִינַת הַתְּפִלָּה'. The bow (קשת) and its three colors = the Avot's light are identified with tikkun ha-tefillah. However, this appears in an eitza context ('על ידי זה' = through prayer, you inherit the Land). The קשת here is used as a metaphor for the three-colored bow = three Avot = three daily prayers, serving as the mechanism by which tefillah illuminates. While 'בְּחִינַת הַתְּפִלָּה' is used, it is applied to the entire clause of 'קַוֵּה אֶל ה' וּשְׁמֹר דַּרְכּוֹ' (tikkun ha-tefillah), not specifically a new node. This could be a dataset addition (קשת = תפלה) but it operates primarily in the eitza chain rather than as an independent bechina package member. Excluded pending further review."
+      }
+    ]
+  }
+}

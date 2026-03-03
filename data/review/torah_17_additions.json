@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "source": "Torah #17",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read all 35 bechina edges for reference===17 from torahData.js. Read the full source text torah_17.txt, scanning every line for explicit bechina language: בְּחִינַת, הַיְנוּ (used as bechina marker), זֶה בְּחִינַת, נִקְרָא. For each such statement in the source text, verified whether it appears as a node-pair in the dataset with reference===17 and type===bechina. Only statements with genuine bechina language (parallel nature, not cause-and-effect) were considered. Eitza-only relationships in the source text were excluded."
+  },
+  "additions": [
+    {
+      "package_id": 5,
+      "package_label": "גֵּרִים וּצְדָקָה וּשְׁלֵמוּת הַדַּעַת",
+      "node_id": "יוסף",
+      "node_text": "יוֹסֵף",
+      "polarity": "good",
+      "reason": "Line 96 of the source text states: 'יוֹסֵף אֵינֶנּוּ — זֶה בְּחִינַת: הוֹן יֹסִיף רֵעִים רַבִּים הַנַּ\"ל.' This is explicit bechina language ('zeh bechina'): the patriarch Yosef (whose absence Jacob laments) = the concept of hon yosif reim rabim = wealth-adding-friends = tzedakah's effect of building love-bonds. This bechina is in the tzedakah/gerim cluster of the Torah's closing section (§ט), explaining that when the tzaddik's light is hidden (the sack of darkness), what is 'absent' is the tzedakah-spreading effect that makes friends and opens hearts. The concept belongs in Package 5 (gerim/tzedakah) because Yosef = the friend-building capacity = tzedakah = karna. No bechina edge Yosef ↔ hon-yosif-reim-rabim exists for reference===17 in the dataset.",
+      "source_quote": "יוֹסֵף אֵינֶנּוּ – זֶה בְּחִינַת: הוֹן יֹסִיף רֵעִים רַבִּים הַנַּ\"ל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 5,
+      "package_label": "גֵּרִים וּצְדָקָה וּשְׁלֵמוּת הַדַּעַת",
+      "node_id": "שמעון",
+      "node_text": "שִׁמְעוֹן",
+      "polarity": "good",
+      "reason": "Line 97 of the source text states: 'וְשִׁמְעוֹן אֵינֶנּוּ — זֶה בְּחִינַת: וְשָׁמְעוֹ הוֹלֵךְ בְּכָל הַמְּדִינוֹת, הַנַּעֲשֶׂה עַל־יְדֵי בְּחִינַת הוֹן יֹסִיף כַּנַּ\"ל.' Explicit bechina language: Shimon (the absent son) = shim'o holek be-khol ha-medinot = his voice/reputation travels through all the provinces. This is the result of the friend-making tzedakah (Yosef bechina): once love-bonds are built through tzedakah, the tzaddik's voice travels everywhere. Shimon's very name contains 'shema' (hearing/voice) — this bechina encodes that auditory transmission that Package 5 is about. Belongs in Package 5. No reference===17 bechina edge for Shimon in dataset.",
+      "source_quote": "וְשִׁמְעוֹן אֵינֶנּוּ – זֶה בְּחִינַת: וְשָׁמְעוֹ הוֹלֵךְ בְּכָל הַמְּדִינוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "יִרְאָה וְאַהֲבָה וְאֲוִיר הַנָּח",
+      "node_id": "קרן (אהבה)",
+      "node_text": "קַרְנָא — הָאַהֲבָה",
+      "polarity": "good",
+      "reason": "Line 86 of the source text states: 'וְאִית לָהּ קַרְנָא — הַיְנוּ בְּחִינַת: וּבִרְצוֹנְךָ תָּרוּם קַרְנֵנוּ; הַיְנוּ הָאַהֲבָה שֶׁנִּתְגַּלֶּה עַל־יְדֵי הַצַּדִּיק.' The horn (karna) of the sea-goat = 'ubirtzonekha tarum karnenu' = the love revealed by the tzaddik. Note: the dataset already has karna=tzedakah (edge 2555, ref=17, bechina). This is a SECOND bechina for karna: karna=ahavah. The text states both — karna is the love lifted up by divine will, AND karna is tzedakah (the instrument of lifting it). This second bechina arm (karna=ahavah) is not in the dataset. In this Torah, ahavah is the essential nature of Package 3 and the karna-as-ahavah bechina should be added there. The dataset node_id to add is a new edge: קרן ↔ אהבה.",
+      "source_quote": "וְאִית לָהּ קַרְנָא — הַיְנוּ בְּחִינַת: וּבִרְצוֹנְךָ תָּרוּם קַרְנֵנוּ; הַיְנוּ הָאַהֲבָה שֶׁנִּתְגַּלֶּה עַל־יְדֵי הַצַּדִּיק כַּנַּ\"ל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "This adds a bechina edge קרן ↔ אהבה for ref=17. It would connect Package 3 (ahavah) and Package 5 (tzedakah) through the shared hub node 'קרן', which appears in both as ahavah AND as tzedakah. This reveals karna as a bridge concept: the same horn is both love and charity."
+    },
+    {
+      "package_id": 4,
+      "package_label": "מִזְבֵּחַ וַאֲכִילָה וְשֵׂכֶל",
+      "node_id": "נְשָׁמָה",
+      "node_text": "נְשָׁמָה — הַטּוֹב",
+      "polarity": "good",
+      "reason": "Line 78 of the source text states: 'הַנְּשָׁמָה, שֶׁהוּא הַטּוֹב, הוּא לְמַעְלָה מִכָּל הָעוֹלָמוֹת.' This uses the equational formula 'she-hu ha-tov' (that it is the good) as a bechina-identification: the soul = the good = what floats above all worlds. The context (§ח, the sea-creature midrash) explains that the 'light creature' that floats on the sea = the neshamah = the good that is above the four worlds. While the dataset has 'kol ha-tov = nishmat Yisrael' (edge 2230, ref=17), it does NOT have 'neshamah = ha-tov' as an explicit separate bechina edge. The concept 'neshamah' here belongs in Package 4 (the chokhmah/intellect cluster) because the midrash is about the soul's relationship to the four worlds traversed by divine wisdom, and the 'good' (= neshamah) is what proper eating at the mizbeach protects. This addition would create the edge: נְשָׁמָה ↔ הַטּוֹב (or alternatively: נְשָׁמָה ↔ כָּל הַטּוֹב, connecting to the Package 2 node).",
+      "source_quote": "הַנְּשָׁמָה, שֶׁהוּא הַטּוֹב, הוּא לְמַעְלָה מִכָּל הָעוֹלָמוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "מִזְבֵּחַ וַאֲכִילָה וְשֵׂכֶל",
+      "node_id": "אות מ\"ם",
+      "node_text": "מֵ\"ם",
+      "polarity": "neutral",
+      "reason": "Line 77 of the source text states: 'הַמֵּ\"ם הוּא אַרְבַּע עוֹלָמוֹת.' This is explicit bechina language: the letter mem = the four worlds (ABYA — Atzilut, Beriah, Yetzirah, Asiyah). The letter mem is being decoded as the four worlds within the word 'yam' (sea). This is a neutral bechina (a letter of the alphabet representing a structural reality) that belongs alongside the yud-chokhmah edge (1171) and the shin-machshava edge — they are all letter-to-concept bechinot appearing in the same midrashic passage. The mem-to-four-worlds bechina is part of the same 'yam' word analysis: yam = yud (chokhmah) + mem (four worlds). Package 4 is where the yud-chokhmah pair was merged; the mem = four worlds is its companion letter in the same word-analysis. Not in dataset for reference===17.",
+      "source_quote": "יָם — הַיְנוּ: הַמֵּ\"ם הוּא אַרְבַּע עוֹלָמוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "מִזְבֵּחַ וַאֲכִילָה וְשֵׂכֶל",
+      "node_id": "הֵמָּה",
+      "node_text": "הֵמָּה — הַחֹמֶר, כְּלֵי הַמַּעֲשֶׂה",
+      "polarity": "neutral",
+      "reason": "Lines 91-92 of the source text: 'שֶׁצְּרוֹרוֹת כַּסְפֵּיהֶם תָּלוּי בְּהַחֹמֶר וְהַצּוּרָה, שֶׁנִּקְרָא הֵמָּה וַאֲבִיהֶם. הֵמָּה — זֶה הַחֹמֶר, שֶׁהֵם כְּלֵי הַמַּעֲשֶׂה.' Explicit bechina-language 'nikra... hemah' and 'hemah — zeh ha-chomer': the word 'hemah' (they/them in the verse) = the matter/material substance = the vessels of action (kelei hama'aseh). This bechina pairs with the already-present 'avihema = sekhel/chokhmah' (edge 1153, ref=17): avihema = the father = sekhel/chokhmah, while hemah = the matter = the vessels. Together they describe the form-matter duality at the end of the Torah. 'Hemah' as chomer belongs in Package 4 as the material counterpart of the chokhmah/sekhel concept. The pair hemah(chomer) ↔ avihema(sekhel/chokhmah) is the Torah's closing structural image. Not in dataset.",
+      "source_quote": "הֵמָּה – זֶה הַחֹמֶר, שֶׁהֵם כְּלֵי הַמַּעֲשֶׂה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_17_edges": 62,
+    "total_reference_17_bechina_edges": 35,
+    "total_reference_17_eitza_edges": 27,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["צדיק", "מרדכי", "דבחישא", "צרור כספו", "כפירה בעבודה זרה"],
+      "package_2": ["התפארות של השם יתברך שמתפאר בישראל", "יום הלדת המלך", "תפלין של השם יתברך", "התפארות של ישראל", "תפלין", "כל הטוב", "נשמות ישראל", "טוב הכבוש תחת ידם", "חלקי נשמות ישראל הכבוש אצלם", "התגלות ההתפארות", "התגלות היראה"],
+      "package_3": ["יראה ואהבה", "שמים", "אש ומים", "אהבה", "רצון", "אויר הנח", "יראה", "עז", "עזא"],
+      "package_4": ["מזבח", "אכילה", "\"טרף נתן ליראיו\"", "שלחנו של אדם", "שלמות המזבח", "מזבח בחלקו של טורף", "יאכל טרף", "אבא", "חכמה", "אות יו\"ד", "חכמה שמתפשט בכל העולמות"],
+      "package_5": ["גרים", "\"להפנות אליך כל רשעי ארץ\"", "רע שנתלש מהם עם הטוב, על - ידי שחזר הטוב למקומו", "קרן", "צדקה", "\"יכירו וידעו כל יושבי תבל\"", "שלמות הדעת"],
+      "package_6": ["תשובה", "שדי", "\"לתקן עולם במלכות שדי וכל בני בשר יקראו בשמך\"", "אות שין", "מחשבה", "רגל", "עצה", "פרסה"],
+      "package_7": ["שנאה", "רוח רעה"],
+      "package_8": ["אוכל כזולל וסובא", "פגם המזבח"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "יוסף (=הון יוסיף רעים)",
+      "שמעון (=ושמעו הולך)",
+      "קרן = אהבה (second bechina; first bechina קרן=צדקה is already in dataset)",
+      "נשמה = הטוב",
+      "אות מ\"ם = ארבע עולמות",
+      "הֵמָּה = חֹמֶר/כלי המעשה"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "פומא דלויתן = כלייון והפסד",
+        "reason": "Line 82: 'azlina le-puma de-livyatan — haynu le-killayon ve-hefsed.' Uses 'haynu' bechina language. However, the leviathan's mouth is introduced as a teaching-in-the-making (the neshamah going to the leviathan's mouth as a metaphor for death/destruction that triggers teshuvah). It is not assigned as a bechina node in any reference-17 edge in the dataset, nor is it a concept that receives any further bechina development in this Torah — it functions as a causal step in the neshamah's journey (going to the mouth = triggering teshuvah via self-mercy). Classified as eitza context, not a bechina parallel worth adding as a dataset node without further internal bechina equating."
+      },
+      {
+        "concept": "אות יו\"ד = חכמה שמתפשט (already in dataset)",
+        "reason": "Already captured as edge 1171 (ref=17, bechina). Not a gap."
+      },
+      {
+        "concept": "\"ובשת פנים לגן עדן\" / עזות דקדושה",
+        "reason": "Lines in the text about boldness (azut) and shame (boshet) — while these appear in the text, they are not stated with explicit bechina-equating language for reference=17. The related edges in the dataset belong to other Torah references. Excluded."
+      },
+      {
+        "concept": "בנימין = זאב יטרף",
+        "reason": "Line 98 appears to be the next passage (binyamin verse, since yosef and shimon were lines 96-97 and the Torah finishes with binyamin). Even if binyamin = ze'ev yitraf appears (it would be on the omitted line 98), the 'yoakhel teref' = shleimut hamizbeach connection is ALREADY in the dataset (edge 2942, ref=17, bechina: 'yokhal teref = shleimut hamizbeach'). So if binyamin = ze'ev yitraf, it would connect to the existing shleimut hamizbeach node. Flagged as probable addition pending confirmation of line 98 content, but since the teref-shleimut-mizbeach connection is already captured, this is a lower-priority gap."
+      }
+    ]
+  }
+}

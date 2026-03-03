@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "source": "Torah #57",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_57_packages.json, all reference===57 edges from torahData.js, and the full source text torah_57.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ, נִקְרָא, הִיא) were considered. Six addition-candidates identified; three are flagged for new-package proposals (see torah_57_new_packages.json)."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "יַעֲקֹב הַנֶּדֶר וְהָאֱמוּנָה",
+      "node_id": "אמונה (נקרא רועה)",
+      "node_text": "הָאֱמוּנָה הַנִּקְרָא רוֹעֶה",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly states: 'עַל יְדֵי הַנֶּדֶר נִתְתַּקֵּן הָאֱמוּנָה הַנִּקְרָא רוֹעֶה, בִּבְחִינַת: וּרְעֵה אֱמוּנָה (תהילים ל\"ז)' — the faith (emunah) is CALLED a shepherd (ro'eh). This is an explicit 'נִקְרָא' bechina. The concept belongs in Package 1 alongside the emunah node. However, the node_id 'אמונה' already exists in Package 1 (edge reference=57, 'בַּת זֶה בְּחִינוֹת אֱמוּנָה'). The question is whether 'אמונה נקרא רועה' should be a separate node or an additional edge. It should be a separate bechina edge: אמונה ↔ רועה (reference=57, type=bechina). The node 'רועה' as a distinct symbol for faith/emunah is not in the current dataset for Torah #57.",
+      "source_quote": "עַל יְדֵי הַנֶּדֶר נִתְתַּקֵּן הָאֱמוּנָה הַנִּקְרָא רוֹעֶה, בִּבְחִינַת: וּרְעֵה אֱמוּנָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "אמונה",
+        "node2_id": "רועה",
+        "type": "bechina",
+        "reference": 57
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "יַעֲקֹב הַנֶּדֶר וְהָאֱמוּנָה",
+      "node_id": "תלמידי חכמים (נקראים חיים)",
+      "node_text": "תַּלְמִידֵי חֲכָמִים הַנִּקְרָאִים חַיִּים",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly states: 'תַּלְמִידֵי חֲכָמִים הַנִּקְרָאִים חַיִּים, כְּמָה שֶׁאָמְרוּ חֲכָמֵינוּ (ברכות יח): צַדִּיקִים אֲפִלּוּ בְּמִיתָתָם נִקְרָאִים חַיִּים' — the Sages ARE CALLED 'living' (chayim). This is an explicit 'נִקְרָאִים' bechina equating talmidei chakhamim with chayim. This pair (talmidei chakhamim ↔ chayim) has no bechina edge in the reference=57 dataset. It belongs in Package 1 because the faith in the Sages (emunah chakhamim) is the central theme, and the fact that the Sages ARE CALLED 'living' explains WHY lack of faith in them leads to illness — one does not believe in the Living Ones.",
+      "source_quote": "תַּלְמִידֵי חֲכָמִים הַנִּקְרָאִים חַיִּים, כְּמָה שֶׁאָמְרוּ חֲכָמֵינוּ: צַדִּיקִים אֲפִלּוּ בְּמִיתָתָם נִקְרָאִים חַיִּים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "תלמידי חכמים",
+        "node2_id": "חיים",
+        "type": "bechina",
+        "reference": 57
+      }
+    },
+    {
+      "package_id": 3,
+      "package_label": "עֹנֶג שַׁבָּת וְשָׁלוֹם",
+      "node_id": "שבת (נקרא מלשון להשבית אויב)",
+      "node_text": "שַׁבָּת נִקְרָא שַׁבָּת כִּי בִּסְגֻלָּתוֹ לְהַשְׁבִּית אוֹיֵב",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly states: 'וְעַל שֵׁם זֶה נִקְרָא שַׁבָּת, כִּי בִּסְגֻלָּתוֹ לְהַשְׁבִּית אוֹיֵב וּמִתְנַקֵּם (תהילים ח)' — Shabbat IS CALLED Shabbat because of its power to 'hashbit' (cease/silence) enemies. This is a 'נִקְרָא' etymological bechina equating Shabbat's name with the silencing of enemies. The concept of Shabbat as 'hashbat oyev' is distinct from oneg Shabbat (eating) but is a bechina of Shabbat's nature in this Torah. It belongs in Package 3 (Shabbat Delight), as an additional characterization of the Shabbat node's essential power.",
+      "source_quote": "וְעַל שֵׁם זֶה נִקְרָא שַׁבָּת, כִּי בִּסְגֻלָּתוֹ לְהַשְׁבִּית אוֹיֵב וּמִתְנַקֵּם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "שבת",
+        "node2_id": "להשבית אויב ומתנקם",
+        "type": "bechina",
+        "reference": 57
+      }
+    },
+    {
+      "package_id": 5,
+      "package_label": "עֵשָׂו הַכָּבֵד וְשַׁעַר אֲרָם",
+      "node_id": "כועס (נדמה כבהמה)",
+      "node_text": "הַכּוֹעֵס נִדְמֶה כִּבְהֵמָה",
+      "polarity": "evil",
+      "reason": "The Rebbe explicitly states: 'כִּי עַל יְדֵי הַכַּעַס נִדְמֶה לָהֶם כִּבְהֵמָה, בִּבְחִינַת (תהילים מ\"ט): נִמְשַׁל כַּבְּהֵמוֹת נִדְמוּ' — through anger one IS COMPARED to an animal ('בְּחִינַת'). The angry person = animal is an explicit bechina in this Torah. The angry person, by losing his divine image (tzelem), exits the category of human and enters the category of animal — enemies no longer fear him. This bechina pair (koes/angry-person ↔ behema/animal) has no edge in the reference=57 dataset. It belongs in Package 5 (the evil/Esav/liver cluster) because anger comes from the liver (kaved = Esav), and the result of anger is the loss of the tzelem/chokhmah that makes humans human.",
+      "source_quote": "כִּי עַל יְדֵי הַכַּעַס נִדְמֶה לָהֶם כִּבְהֵמָה, בִּבְחִינַת (תהילים מ\"ט): נִמְשַׁל כַּבְּהֵמוֹת נִדְמוּ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "כועס",
+        "node2_id": "בהמה",
+        "type": "bechina",
+        "reference": 57
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_57_edges": 46,
+    "total_reference_57_bechina_edges": 19,
+    "total_reference_57_eitza_edges": 27,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["יעקב", "נדר", "פלא", "הסתלקות החכמים", "אין לו אמונת חכמים", "אות שין", "אבות", "בת", "אמונה"],
+      "package_2": ["מצה", "אכילת ענג שבת", "חמשת מוצאות הפה", "כח הדבור"],
+      "package_3": ["ענג שבת", "אכילה", "גורל", "שמש", "שלום"],
+      "package_4": ["חמץ", "שלום שאין לו פה", "חי", "תענית", "תקון הכעס על ידי התענית"],
+      "package_5": ["כבד", "אדום", "כבד כועס", "שולטני רגזין", "שער ארם", "שער דסטרא אחרא"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "רועה (= אמונה)",
+      "חיים (= תלמידי חכמים)",
+      "להשבית אויב (= שבת name-origin)",
+      "בהמה (= כועס — the angry person becomes an animal)",
+      "ידים (= אברהם ויצחק) — flagged for new package, see torah_57_new_packages.json",
+      "צלם / חכמת הבורא / מוח — flagged for new package, see torah_57_new_packages.json"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "אבירים (= מלאכים)",
+        "reason": "Line 15: 'הַמַּלְאָכִים הַנִּקְרָאִים אַבִּירִים' — the angels ARE CALLED mighty ones (abirim). This IS a נקרא bechina and should add the pair מלאכים ↔ אבירים. However, this concept belongs with the proposed new package about the angel-hands domain (see torah_57_new_packages.json), not with any existing package. Deferred there rather than assigned to an existing package."
+      },
+      {
+        "concept": "בְּשֶׁמֶן קָדְשִׁי מְשַׁחְתִּיו = acrostic of Avraham/Yitzchak/Yaakov",
+        "reason": "Line 23: The Rebbe notes that the final letters of the three Patriarchs' names (בקם) form the notarikon 'בְּשֶׁמֶן קָדְשִׁי מְשַׁחְתִּיו' — 'I anointed him with my holy oil.' This IS a bechina of the neder-Patriarchs connection. However, it is a notarikon/gematria device rather than a standalone concept node, and the content (anointing with oil through the vow) is already captured in the eitza structure (neder → orot ha-avot). Not a gap addition but a proof-text for existing structure."
+      },
+      {
+        "concept": "כ\"ח פרקין דידים = strength of angels",
+        "reason": "Line 15: 'כָּל אֶחָד וְאֶחָד נֶחֱזַר לוֹ כֹּחוֹ, הַיְנוּ כ\"ח פִּרְקִין דְּיָדַיִם' — 28 joints of the hands are the strength returned to each angel. This is part of the yadayim/avot domain discussed in the new packages section. It is a bechina of the cosmic hand-structure, not a standalone addition to existing packages."
+      },
+      {
+        "concept": "יסורין של אהבה",
+        "reason": "Line 10: 'יֵשׁ יִסּוּרִין שֶׁל אַהֲבָה' — afflictions of love. The Rebbe discusses this as a distinct category of illness (the tzaddik who is ill from love, whose hands are intact). This is discussed but NOT formulated with 'בְּחִינַת' as an equivalence; it is a categorization, not a bechina equation. Excluded per framework strictness."
+      },
+      {
+        "concept": "שלום בדיבור (= שלום של שבת vs. שלום של תענית)",
+        "reason": "Line 43: The Torah distinguishes shalom-with-speech vs. shalom-without-speech. The distinction is captured via the chametz/matzah bechinas. The 'shalom with mouth' concept is already encoded by 'shalom she-yesh lo peh' and its mirror in Package 2 (five mouth-positions = speech-power). Not a new gap."
+      }
+    ]
+  }
+}

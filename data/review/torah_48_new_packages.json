@@ -1,0 +1,56 @@
+{
+  "torah_ref": 48,
+  "new_packages": [
+    {
+      "id": "torah_48_pkg_evil",
+      "torah_ref": 48,
+      "label": "סֻכַּת הַקְּלִפָּה וְיְמִין שֶׁקֶר",
+      "label_en": "The Sukka of the Klipa and the False Right Hand",
+      "polarity": "evil",
+      "reason": "This is the evil mirror of Package 1 (סכה, חסד, חבוק). Torah 48's structural argument has a clear good/evil bifurcation: the holy sukka (covering, embrace, divine speech) has an exact evil counterpart. The evil sukka (סכת נוצרים / סכה דקלפה) arises from unholy speech; the false right hand (ימין שקר) is the evil embrace; the foreign tongues (ריב לשונות) that drown out holy prayer are the anti-prayer. The place 'מדבר צין' decodes as 'תמורה' — the substitution/replacement, the transformation of holy sukka into evil sukka. All these concepts share the essential nature of 'counterfeit sacred covering' — the klipa that mimics and inverts the holy sukka/chesed/embrace. This package requires the five additions listed in torah_48_additions.json.",
+      "dominant_node": "סכה דקלפה",
+      "proposed_nodes": [
+        "סכה דקלפה",
+        "תמורת סכה דקדשה",
+        "מדבר צין",
+        "תמורה וחילוף",
+        "חבוק דסטרא אחרא",
+        "ימין שקר",
+        "ריב לשונות",
+        "גלות / שכינה בגלות"
+      ],
+      "node_degrees_proposed": {
+        "סכה דקלפה": 2,
+        "תמורת סכה דקדשה": 1,
+        "מדבר צין": 1,
+        "תמורה וחילוף": 2,
+        "חבוק דסטרא אחרא": 1,
+        "ימין שקר": 1,
+        "ריב לשונות": 1,
+        "גלות / שכינה בגלות": 1
+      },
+      "requires_additions": true,
+      "addition_refs": [
+        "addition_2",
+        "addition_3",
+        "addition_4",
+        "addition_5"
+      ],
+      "mirror_of": "torah_48_pkg_1",
+      "mirror_structure": {
+        "סכה (pkg 1)": "סכה דקלפה (evil pkg)",
+        "חבוק יד ימין / צל יד (pkg 1)": "חבוק דסטרא אחרא / ימין שקר (evil pkg)",
+        "מי החסדים (pkg 1)": "מי מריבה / ריב לשונות (evil pkg)",
+        "צירי / בינה / יצירה (pkg 1)": "מדבר צין / תמורה (evil pkg — the false formation/substitution)"
+      },
+      "source_lines": [7, 8, 9, 27, 28],
+      "threshold_check": {
+        "qualifies": true,
+        "reasoning": "5 proposed nodes with bechina language. Forms an independent evil domain (klipa/false covering). Has structural parallels to Package 1. Every proposed node has explicit bechina phrasing in the source text. Even at minimum (3 nodes: סכה דקלפה, ימין שקר, תמורה), it qualifies as an independent domain.",
+        "minimum_nodes_for_package": 3,
+        "actual_proposed_nodes": 8
+      }
+    }
+  ],
+  "notes": "The new package is conditioned on the five additions in torah_48_additions.json being accepted. If only the three most strongly attested evil nodes are accepted (סכה דקלפה = תמורה וחילוף, ימין שקר = חבוק דסטרא אחרא, מדבר צין = תמורה), the package still qualifies with 3+ nodes forming a clear independent evil domain. This is the most structurally significant gap in the current Torah 48 dataset: the entire evil mirror is unrepresented."
+}

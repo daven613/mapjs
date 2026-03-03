@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "source": "Torah #42",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #42 has exactly 1 bechina edge in the dataset (edge 2651: צדיק ↔ קשת, reference=42, type=bechina), yielding 1 raw connected component of 2 nodes. This is the sparsest bechina dataset of any Torah analyzed so far — the teaching is heavily eitza-dominant (4 eitza edges recorded for reference=42, 1 bechina). The single component {צדיק, קשת} forms the nucleus of what is actually a very rich conceptual cluster in the source text: the bow (קשת) IS the Shekhinah IS the letters of prayer IS the tzaddik, and the three colors of the bow ARE the Patriarchs ARE garments of the Shekhinah ARE the voice of melody. The source text is packed with bechina language that is not yet recorded in the dataset. The single dataset bechina edge is placed into Package 1 as its nucleus. No merge of distinct components is needed (there is only one component). The gap analysis (torah_42_additions.json) identifies 12+ missing bechina edges. There is no evil package in Torah #42 — the teaching has no explicit bechina nodes assigned to the evil domain. All identified bechina concepts belong to the good domain of divine song, prayer, and the Patriarchs as cosmic garments."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 42,
+      "label": "קֶשֶׁת וְצַדִּיק — The Bow and the Tzaddik",
+      "label_en": "The Rainbow, the Tzaddik, the Shekhinah, and the Patriarchs as Garments of Light",
+      "polarity": "good",
+      "reason": "The single bechina edge in the dataset (צדיק ↔ קשת) captures the axial identity of Torah #42: the tzaddik IS the bow (rainbow). This identity is sourced from the Talmud (Ketubot 77b: Rabbi Shimon bar Yochai said to Rabbi Yehoshua ben Levi, 'Has a rainbow appeared in your days?' — meaning: a tzaddik of your level). The Zohar (Pinchas 215) then unfolds the bow-nature: the bow IS the Shekhinah, and the three colors of the bow ARE the Patriarchs, who ARE the luminous garments of the Shekhinah. Since the tzaddik = the bow = the Shekhinah = the three colors = the Patriarchs, all these identities share a single essential nature in this Torah: they are all different facets of the divine feminine presence clothed in the light of the righteous. Furthermore: the letters of prayer ARE the Shekhinah (Psalms 51: 'Adonai sefatai tiftach' — speech is the name Adonai = the Shekhinah), and the bow IS called prayer (Rashi, Gen. 48: 'be-charbi u-ve-kashti' = prayer and supplication). This makes the complete bechina ring: צדיק = קשת = שכינה = אותיות התפלה. The three colors of the bow = האבות = קול הנגינה (the voice of melody contains fire/water/wind = the three Patriarchs). The name שדי = the Patriarchs (three branches of the letter shin = three divine names of the Shema). Teki'ah-shevarim-teru'ah = the Patriarchs = keshet (the shofar-blasts' mnemonic is the word 'keshet'). All of these are good-domain concepts: the holy bow/tzaddik, the Shekhinah, the Patriarchs, prayer, melody. There is no evil counterpart package in Torah #42 — the teaching describes a positive mechanism (sweetening the judgments) without naming an evil bechina cluster. The dominant node is קשת, which connects to צדיק (dataset), שכינה, אותיות התפלה, תלת גוונין, and האבות (all from source text).",
+      "dominant_node": "קשת",
+      "nodes": [
+        "צדיק",
+        "קשת"
+      ],
+      "node_degrees": {
+        "צדיק": 1,
+        "קשת": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["צדיק", "קשת"],
+          "reason": "Raw Component 1 — these two nodes are directly linked by bechina edge 2651: 'הצדיק הוא בחינת קשת' (the tzaddik IS a bechina of the bow). This is the only dataset bechina edge for Torah #42. The component is the nucleus of Package 1 and is not merged with any other component (there are no other components)."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "notes_on_counting": "Torah #42 is the sparsest bechina-recorded Torah in the dataset to date: only 1 bechina edge (vs. 2 for Torah #40, 63 for Torah #4). The source text contains at minimum 12 additional explicit bechina statements (see torah_42_additions.json). The 4 reference=42 eitza edges (ids 895, 1816, 1817, 2093) describe the causal mechanisms of the teaching (how melody/prayer/faith clothe the Shekhinah → sweetening of judgments) and are not included in package formation."
+  }
+}

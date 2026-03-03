@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "source": "Torah #41",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #41 (Rikudin — Dancing) has 8 unique bechina edges in the dataset for reference=41 (edges 529, 735, 1312, 1313, 2185, 2437, 2438, 2670, 3046; IDs 735 and 2437 are the same pair reversed, deduplicated to 8 distinct edges across 11 unique nodes). Raw connected components: (A) {יין, בינה, שרש הבכורה, יין המשמח, שרש הגבורות} — 5 nodes; (B) {עמודים, רגלים, עקבים, דין} — 4 nodes; (C) {תלמידי חכמים, נצח הוד} — 2 nodes. Component C is a small (2-node) component and must be merged by SHARED NATURE into the most appropriate larger component. The source text explicitly states: 'תלמידי חכמים נקראים נצח הוד, רגלין' (line 21), placing נצח הוד directly in the legs/pillars domain of Component B. Since נצח הוד IS רגלין (bechina language in the source text), Component C merges into Component B, yielding 2 final packages."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 41,
+      "label": "בִּינָה וְיַיִן הַמְשַׂמֵּחַ",
+      "label_en": "Binah and the Joyful Wine — The Holy Root of Sweetening",
+      "polarity": "good",
+      "reason": "All five nodes share the essential nature of the holy upper source that sweetens all judgments. Binah (the upper mother, source of all gevurot) IS the root of firstborn blessing (שרש הבכורה), which IS the wine of joy (יין המשמח), which IS the root of gevurot (שרש הגבורות), and wine (יין) IS Binah — these are five different names for the same cosmic reality: the holy source of joyful power that, when drawn down into the lower limbs, expels the external forces. The Torah establishes this entire cluster as a single domain: the holy intoxication (התלהבות שבקדושה, which is יין המשמח) that is the antidote to judgment. Binah is the dominant node because it is explicitly named as the definition of this entire cluster: 'יין, זה בחינת בינה, שרש הבכורה, יין המשמח' (line 16), making Binah the hub to which יין, שרש הבכורה, and יין המשמח all directly attach, plus שרש הגבורות chains through יין המשמח.",
+      "dominant_node": "בינה",
+      "nodes": [
+        "יין",
+        "בינה",
+        "שרש הבכורה",
+        "יין המשמח",
+        "שרש הגבורות"
+      ],
+      "node_degrees": {
+        "יין": 1,
+        "בינה": 2,
+        "שרש הבכורה": 2,
+        "יין המשמח": 2,
+        "שרש הגבורות": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 41,
+      "label": "רַגְלִין וְעַמּוּדִים",
+      "label_en": "Legs and Pillars — The Lower Domain of Judgment and Scholars",
+      "polarity": "neutral",
+      "reason": "All six nodes share the essential nature of 'the lower limbs' — the domain of Netzach and Hod in kabbalistic anatomy, which the Torah identifies as the site of cosmic conflict: the place where judgment takes hold and from which it must be sweetened by drawing Binah down into it. עמודים (pillars = mammon = legs per Deuteronomy 11:6), רגלים (legs = the lower sefirot), עקבים (heels = gematria of 2x Elohim = judgment), דין (judgment itself), תלמידי חכמים (called 'legs and pillars' in Midrash — 'שוקיו עמודי שש'), and נצח הוד (the kabbalistic sefirot that ARE the knees/legs per Etz Chaim) — all are different expressions of the same cosmic locus. The package is classified as neutral (not purely good or evil) because it is the contested arena: the heels carry judgment and give the external forces a foothold, yet the Torah scholars who fill this domain are holy pillars. This is the lower terrain that needs to be sanctified — not inherently evil but the battleground where the sweetening must occur. Package 2 connects to Package 1 via eitza: drawing Binah's wine DOWN into the legs (Package 2's domain) is the practical act (dancing, pidyon) that resolves the problem.",
+      "dominant_node": "נצח הוד",
+      "nodes": [
+        "עמודים",
+        "רגלים",
+        "עקבים",
+        "דין",
+        "תלמידי חכמים",
+        "נצח הוד"
+      ],
+      "node_degrees": {
+        "עמודים": 1,
+        "רגלים": 2,
+        "עקבים": 2,
+        "דין": 1,
+        "תלמידי חכמים": 1,
+        "נצח הוד": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["תלמידי חכמים", "נצח הוד"],
+          "reason": "Raw Component C ({תלמידי חכמים, נצח הוד}, edge ID 2185) is a 2-node component that must merge by shared nature into the larger Component B. The source text of Torah #41 explicitly states: 'תלמידי חכמים נקראים נצח הוד, רגלין' (line 21) — Torah scholars ARE Netzach-Hod, ARE the legs. This is direct bechina language ('נקראים') equating נצח הוד with רגלין — precisely the node that anchors Component B's chain (עמודים — רגלים — עקבים — דין). The merge is by shared nature: נצח הוד and רגלים are the same cosmic reality (the lower sefirot/limbs domain), not two things causally related. This is confirmed by the Etz Chaim citation that opens the Torah itself: 'הברכים, הינו הרגלין, הם נצח הוד' — a direct bechina statement. Component C belongs in Package 2, not Package 1, because תלמידי חכמים / נצח הוד share the LOCATION (legs/lower domain) with Component B — they are part of the contested terrain — not the upper holy source (Package 1)."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 8,
+    "total_nodes": 11,
+    "total_packages": 2,
+    "raw_connected_components": 3
+  }
+}
