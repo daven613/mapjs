@@ -16,6 +16,16 @@ Parse the argument at the start:
 
 All path and filename references below use VOLUME and NUM.
 
+### Reference offset for edge data
+
+LM2 torahs are stored in `torahData.js` with a **+1000 offset** on the `reference` field. So:
+- LM1 Torah #42 → filter by `reference === 42`
+- LM2 Torah #5 → filter by `reference === 1005`
+
+Compute: **REF = NUM** if VOLUME is lm1, **REF = NUM + 1000** if VOLUME is lm2.
+
+Use REF (not NUM) when filtering edges. Use NUM for file names and display labels.
+
 ---
 
 ## Batch Mode
@@ -60,7 +70,7 @@ Read `/home/user/mapjs/docs/framework.md` first for the full conceptual framewor
 ## Input files
 
 - **Edge data**: `/home/user/mapjs/data/torahData.js`
-  - Filter: `reference === NUM` AND `type === 'bechina'` AND `volume === 'VOLUME'` (if volume field exists) — or just `reference === NUM` AND `type === 'bechina'` if no volume field
+  - Filter: `reference === REF` AND `type === 'bechina'` (where REF = NUM for LM1, NUM + 1000 for LM2)
   - Each edge has: `id`, `node1_id`, `node2_id`, `node1_text`, `node2_text`, `proof`, `is_good`, `is_bad`
 - **Torah source text**: `/home/user/mapjs/data/torah_texts/VOLUME/torah_NUM.txt`
   - Read the full text to understand the Torah's argument and themes
@@ -75,7 +85,7 @@ Create the output directory if it does not exist.
 ## Algorithm
 
 ### Step 1 — Extract the bechina subgraph
-From `torahData.js`, collect all edges where `reference === NUM` AND `type === 'bechina'`. List every unique node and every edge.
+From `torahData.js`, collect all edges where `reference === REF` AND `type === 'bechina'` (REF = NUM for LM1, NUM + 1000 for LM2). List every unique node and every edge.
 
 ### Step 2 — Find connected components
 Build an adjacency graph from those edges. Find all connected components (sets of nodes reachable from each other through bechina edges). List each component with its nodes and their degrees (number of bechina edges).
