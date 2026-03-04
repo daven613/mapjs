@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "source": "Torah #114 (Likutay Moharan Vol. 1)",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04",
+    "status": "NEW_PACKAGES_PROPOSED",
+    "methodology": "Full source text gap analysis (torah_114_additions.json) combined with the single existing dataset bechina edge (id: 2528). The 1 existing dataset edge yields 1 minimal package from connected components alone (Package 1 stub: שמים ↔ צדיק). The source text gap analysis identifies 6 additional bechina nodes and 11 new bechina edges, which yield 2 packages in total (the existing one expanded, plus 1 new one). The teaching has a simple binary structure: Package 1 (the tzaddik as heaven, constituted by love-and-awe) and Package 2 (the covering mechanism — clouds/controversy/watching-rasha — that enables the tzaddik to draw shefa unimpeded). The good/evil mirror is present but structurally inverted: the opposition/evil force does not form an independent evil package but is instrumentalized into a neutral covering-cluster that SERVES the tzaddik's good mission."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 114,
+      "label": "שָׁמַיִם וְצַדִּיק — אֵשׁ וּמַיִם, אַהֲבָה וְיִרְאָה",
+      "label_en": "Heaven and the Tzaddik — Fire and Water, Love and Awe",
+      "polarity": "good",
+      "reason": "This cluster represents the positive pole of Torah #114 — the tzaddik and his essential spiritual constitution. The core bechina chain is stated explicitly in line 4: שמים הוא בחינת הצדיק / על-שם אש ומים / הינו אהבה ויראה. This is a three-step identification: (1) שמים IS a bechina of the tzaddik; (2) שמים is named after (i.e., essentially constituted by) אש ומים (fire and water); (3) fire and water ARE (heynu) love and awe. The result is a cluster where all four concepts — צדיק, שמים, אש ומים, and אהבה ויראה — are expressions of a single underlying reality: the holy synthesis of opposites that the tzaddik embodies. The heavens hold fire and water in tension without one destroying the other; the tzaddik holds love and awe in union without one extinguishing the other. This is the tzaddik's defining spiritual quality and the reason he can channel divine abundance (shefa) to the world — he is the point of synthesis, the meeting of two opposites, the shamayim. The dominant node is צדיק because the entire Torah's argument is about the tzaddik's role and protection, and because the concept appears most frequently throughout the text (lines 2–8 reference the tzaddik repeatedly). שמים is the second most central node (it is the portal through which the bechina identification is made), and אהבה ויראה is the innermost characterization of the tzaddik's essence.",
+      "dominant_node": "צדיק",
+      "nodes": [
+        "שמים",
+        "צדיק",
+        "אש ומים",
+        "אהבה ויראה"
+      ],
+      "node_degrees": {
+        "שמים": 3,
+        "צדיק": 3,
+        "אש ומים": 2,
+        "אהבה ויראה": 2
+      },
+      "merge_notes": [
+        "The existing dataset component (edge 2528: שמים ↔ צדיק, 2 nodes) is expanded to 4 nodes by incorporating the source text bechinot. אש ומים and אהבה ויראה are connected to שמים via 'על-שם' and 'הינו' markers respectively — these are proposed new edges in torah_114_additions.json. No components were merged from another cluster; this expansion is purely within the same chain of bechina identifications in line 4."
+      ],
+      "source_bechinot": [
+        {
+          "pair": ["שמים", "צדיק"],
+          "source_quote": "שָׁמַיִם הוּא בְּחִינַת הַצַּדִּיק",
+          "bechina_marker": "בְּחִינַת (explicit bechina marker)",
+          "dataset_status": "IN DATASET — edge id: 2528"
+        },
+        {
+          "pair": ["שמים", "אש ומים"],
+          "source_quote": "עַל-שֵׁם אֵשׁ וּמַיִם",
+          "bechina_marker": "עַל-שֵׁם (named for — etymology reveals essential nature; shamayim IS its fire-and-water constitution)",
+          "dataset_status": "MISSING — proposed new edge"
+        },
+        {
+          "pair": ["אש ומים", "אהבה ויראה"],
+          "source_quote": "הַיְנוּ אַהֲבָה וְיִרְאָה",
+          "bechina_marker": "הַיְנוּ (definitional equivalence — fire-and-water IS love-and-awe; 'heynu' is one of the Rebbe's primary bechina markers)",
+          "dataset_status": "MISSING — proposed new edge"
+        }
+      ],
+      "good_evil_mirror": "The corresponding evil force is the rasha and machloket (Package 2). However, unlike typical Rebbe Nachman structures where the evil mirror is a standalone evil package, here the evil forces are INSTRUMENTALIZED into a covering function that SERVES Package 1. The mirror is inverted: the evil opposes the tzaddik but God uses the opposition as a covering to enable the tzaddik's mission. The rasha intends to destroy; God converts his opposition into a shield."
+    },
+    {
+      "id": 2,
+      "torah_ref": 114,
+      "label": "כִּסּוּי וּמַחֲלֹקֶת — עָבִים, צוֹפֶה וָרָשָׁע",
+      "label_en": "Concealment and Controversy — Clouds, the Watching Wicked",
+      "polarity": "neutral",
+      "reason": "This cluster represents the covering/concealment mechanism that protects the tzaddik and enables his mission. The covering (כיסוי) is the dominant concept; it is embodied by three distinct images that the Rebbe identifies as sharing the same essential nature: (1) עָבִים (clouds), identified via 'מִלְּשׁוֹן עָבְיּוּת וְגַשְׁמִיּוּת' (line 5) as the thick, heavy force that covers the shamayim/tzaddik; (2) מַחֲלֹקֶת (controversy/opposition), identified via the repeating root כסה ('הַמַּחֲלֹקֶת מְכַסָּה עָלָיו', line 3) as the covering force; and (3) צוֹפֶה רָשָׁע (the watching rasha), identified via 'הַיְנוּ צִפּוּי וְכִסּוּי עַל הַצַּדִּיק' (line 7) as also being a covering. The three are connected by the shared essential nature of כיסוי (concealment): clouds, controversy, and the rasha's surveillance are all expressions of the same phenomenon — a force that conceals the tzaddik from public scrutiny and thereby prevents kitrrug (accusation from above). The polarity is 'neutral' — not 'evil' — because the covering, while rooted in evil intent (the rasha mevakesh lahamito, seeks to kill the tzaddik — line 8), functions providentially as the tzaddik's protection. The Rebbe explicitly states this: 'הוּא תֹּעֶלֶת לָזֶה' (it is a benefit to him — line 3). The covering mechanism is evil in its origin but beneficial in its function, making it structurally neutral in the Torah's teaching. The dominant node of this package is כיסוי because it is the hub connecting all three other nodes through shared root identity and through the explicit heynu statement in line 7.",
+      "dominant_node": "כיסוי",
+      "nodes": [
+        "כיסוי",
+        "עבים",
+        "מחלוקת",
+        "צופה רשע"
+      ],
+      "node_degrees": {
+        "כיסוי": 3,
+        "עבים": 2,
+        "מחלוקת": 2,
+        "צופה רשע": 2
+      },
+      "merge_notes": [
+        "No dataset edges exist for this package — all 4 nodes and all connecting bechina edges are proposed new additions (see torah_114_additions.json). The package is built entirely from source text gap analysis.",
+        "This package is internally coherent: its three peripheral nodes (עבים, מחלוקת, צופה רשע) are connected through three independent instances of bechina-as-covering across lines 3, 5, and 7, all converging on the shared identity of כיסוי.",
+        "The question of polarity: one might classify this as 'evil' (since the agents are a rasha and machloket). However, the Rebbe's argument turns the covering into a providential good: 'הוּא תֹּעֶלֶת לָזֶה' and 'כְּדֵי שֶׁיּוּכַל לְהַמְשִׁיךְ שֶׁפַע'. The covering itself, as a mechanism, is neutral — it can arise from evil and serve good. Marking it 'neutral' rather than 'evil' preserves this structural complexity."
+      ],
+      "source_bechinot": [
+        {
+          "pair": ["מחלוקת", "כיסוי"],
+          "source_quote": "כִּי הַמַּחֲלֹקֶת מְכַסָּה עָלָיו",
+          "bechina_marker": "root identity (כסה) — the controversy IS the covering of the tzaddik",
+          "dataset_status": "MISSING — proposed new edge"
+        },
+        {
+          "pair": ["עבים", "כיסוי"],
+          "source_quote": "הַמְכַסֶּה שָׁמַיִם בְּעָבִים... שֶׁמְּכַסֶּה אֶת הַצַּדִּיק בְּעָבְיוּת וְקַשְׁיוּת",
+          "bechina_marker": "root identity (כסה) and מִלְּשׁוֹן — the clouds ARE the covering; their name encodes their covering nature",
+          "dataset_status": "MISSING — proposed new edge"
+        },
+        {
+          "pair": ["צופה רשע", "כיסוי"],
+          "source_quote": "הָרָשָׁע שֶׁחוֹלֵק עַל הַצַּדִּיק הוּא רַק צוֹפֶה, הַיְנוּ צִפּוּי וְכִסּוּי עַל הַצַּדִּיק",
+          "bechina_marker": "הַיְנוּ (definitional equivalence) — the watching rasha IS (heynu) a coating and covering",
+          "dataset_status": "MISSING — proposed new edge"
+        },
+        {
+          "pair": ["עבים", "מחלוקת"],
+          "source_quote": "שֶׁמְּכַסֶּה אֶת הַצַּדִּיק בְּעָבְיוּת וְקַשְׁיוּת, שֶׁמַּקְשִׁין וְחוֹלְקִין עָלָיו",
+          "bechina_marker": "structural substitution — the clouds covering the tzaddik ARE those who make machloket against him; shared essential nature through role identity",
+          "dataset_status": "MISSING — proposed new edge"
+        }
+      ],
+      "good_evil_mirror": "This package is the functional instrument that enables Package 1 (the tzaddik) to operate. In the typical good/evil mirror structure, Package 2 would be a straightforward evil counterpart — the forces opposing the good. Here the structure is more nuanced: the evil opposition is re-framed by Providence as the covering that enables the good. The rasha's evil intent ('וּמְבַקֵּשׁ לַהֲמִיתוֹ' — seeks to kill the tzaddik, line 8) is the bottom of the evil impulse; but its practical effect (the covering/machloket) is instrumentalized as a shield. The Torah's closing statement — 'ה' לֹא יַעַזְבֶנּוּ בְּיָדוֹ' (God will not abandon the tzaddik to the rasha's hand) — confirms this: the rasha acts in evil, but God overrides, using the evil action as a covering tool. The package is therefore the 'instrumentalized evil' structure — the evil mirror that is not destroyed but repurposed."
+    }
+  ],
+  "good_evil_mirror_structure": {
+    "present": true,
+    "description": "Torah #114 has a modified good/evil mirror structure. Package 1 (the tzaddik = shamayim = love and awe) is the positive pole. Package 2 (the covering mechanism: clouds, machloket, the watching rasha) is the opposing force that has been instrumentalized by Providence into the tzaddik's protection. This is not the typical mirror where evil simply counters good — rather, the evil is absorbed into the service of good. The structural innovation of Torah #114 (relative to the standard good/evil mirror of e.g. Torah #1) is that there is NO standalone evil package: the opposition is reconstituted as a covering, making the 'evil' into a tool of the 'good'. The rasha's ultimate intention (line 8: 'וּמְבַקֵּשׁ לַהֲמִיתוֹ') is the true evil node, but it is thwarted: 'ה' לֹא יַעַזְבֶנּוּ בְּיָדוֹ'. The teaching's message is that the evil is real and dangerous (hence why the Torah ends with God's protection) but is structurally converted into a covering. This is the 'converted mirror' pattern.",
+    "good_packages": [1],
+    "neutral_packages": [2],
+    "evil_packages": [],
+    "mirror_pairs": [
+      {
+        "good": "שמים (the tzaddik's spiritual nature — the open heavens)",
+        "covering": "עבים (the clouds that cover the shamayim — the tzaddik's opponents)"
+      },
+      {
+        "good": "צדיק (the righteous channel of shefa)",
+        "covering": "מחלוקת (the controversy that covers him, instrumentalized as a shield)"
+      },
+      {
+        "good": "אהבה ויראה (the tzaddik's holy synthesis of love and awe)",
+        "covering": "צופה רשע (the rasha's watching — his malicious surveillance converted into a coating that prevents kitrrug)"
+      }
+    ],
+    "note": "The eitza flow between packages is: Package 1 (tzaddik) → [receives covering from] Package 2 (covering mechanism) → [produces] shefa (abundance for the world, excluded as eitza consequence). The covering (Package 2) does not generate Package 1 causally — the tzaddik exists independently — but it ENABLES Package 1's mission by shielding it from kitrrug. This is a protective eitza: Package 2 → eitza → ability of Package 1 to operate freely."
+  },
+  "eitza_chain": {
+    "description": "The teaching's argument in three steps:",
+    "steps": [
+      {
+        "step": 1,
+        "content": "Package 1 — the tzaddik (shamayim, love-and-awe) wants to draw down shefa to the world",
+        "type": "state"
+      },
+      {
+        "step": 2,
+        "content": "Package 2 — covering mechanism (machloket/avim/tzofeh rasha) conceals the tzaddik",
+        "type": "eitza instrument (protective)"
+      },
+      {
+        "step": 3,
+        "content": "Result — the tzaddik draws shefa freely ('יָכוֹל לְהַמְשִׁיךְ שֶׁפַע לְהָעוֹלָם') without kitrrug",
+        "type": "eitza consequence (shefa, matar — excluded from packages)"
+      }
+    ]
+  },
+  "stats": {
+    "total_bechina_edges_in_dataset": 1,
+    "total_eitza_edges_in_dataset": 0,
+    "total_nodes_from_dataset": 2,
+    "total_nodes_from_source_text": 8,
+    "total_packages_from_dataset": 1,
+    "total_packages_after_gap_analysis": 2,
+    "new_packages_identified": 1,
+    "new_nodes_proposed": 6,
+    "new_bechina_edges_proposed": 11,
+    "source_text_lines": 8,
+    "dataset_status": "SPARSE — 1 bechina edge, 0 eitza edges for Torah 114. The Torah is critically under-represented in the dataset. Full enrichment requires adding 6 new nodes and 11 new bechina edges.",
+    "package_polarity_distribution": {
+      "good": 1,
+      "evil": 0,
+      "neutral": 1
+    },
+    "note": "The 0 evil packages is structurally significant: Torah #114 is one of the teachings where the Rebbe instrumentalizes the evil force rather than simply opposing it. The rasha and machloket are real (the Torah ends with a warning about the rasha's homicidal intent), but structurally they are absorbed into the covering mechanism, making their package neutral rather than evil. This pattern — 'instrumentalized evil becomes a neutral covering' — may be a useful category for future cross-Torah traversal."
+  }
+}

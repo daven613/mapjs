@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "source": "Torah #108 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #108 contains 4 bechina edges across 5 unique edge-records (the 5th record for reference=108 is type='eitza' and is excluded). The raw graph yields two connected components: Component A (3 edges, 4 nodes: עולה as hub with זבחי אלהים, רוח נשברה, and כשמשבר את רוחו) and Component B (1 edge, 2 nodes: נסירה ↔ שם חת\"ך). Component B is merged into Component A on thematic grounds: the source text explicitly equates נסירה to עולה ('וזהו בחינות עולה'), placing both in the same essential domain of inward breaking/severing-for-renewal. The result is a single package. Torah #108 is extremely short (8 lines of source text) and presents a unified conceptual core: the sacrificial act of breaking the spirit inward is the עולה, the nesira, the שם חת\"ך, and the זבחי אלהים — all one domain. No evil-polarity package exists in the dataset for this Torah, though the source text names הרהורי עכו\"ם and קלקול האמונה as the negative states the עולה addresses (see additions file)."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 108,
+      "label": "עוֹלָה וְרוּחַ נִשְׁבָּרָה",
+      "label_en": "The Burnt Offering and the Broken Spirit",
+      "polarity": "good",
+      "reason": "All nodes in this package share the essential nature of the inward act of self-breaking/self-severing that constitutes genuine repentance and spiritual re-ascent. The Torah establishes a series of explicit bechina equations: זבחי אלהים = עולה = רוח נשברה = the act of breaking one's spirit in shame after a fall. The nesira (נסירה) and שם חת\"ך are the kabbalistic mechanism underlying this same act — the Name חת\"ך (= 2 × רוח in gematria) IS the nesira, and the nesira IS what the עולה accomplishes (transformation from back-to-back to face-to-face). All nodes thus share the same essential nature: the spiritual technology of self-breaking as the vehicle for reconciliation with God.",
+      "dominant_node": "עולה",
+      "nodes": [
+        "עולה",
+        "זבחי אלהים",
+        "רוח נשברה",
+        "כשמשבר את רוחו בקרבו, ומתביש וחושב בעצמו איך נפלתי ונשלכתי משמים לארץ",
+        "נסירה",
+        "שם חת\"ך"
+      ],
+      "node_degrees": {
+        "עולה": 3,
+        "זבחי אלהים": 1,
+        "רוח נשברה": 1,
+        "כשמשבר את רוחו בקרבו, ומתביש וחושב בעצמו איך נפלתי ונשלכתי משמים לארץ": 1,
+        "נסירה": 1,
+        "שם חת\"ך": 1
+      },
+      "raw_component_membership": {
+        "component_A_nodes": ["עולה", "זבחי אלהים", "רוח נשברה", "כשמשבר את רוחו בקרבו, ומתביש וחושב בעצמו איך נפלתי ונשלכתי משמים לארץ"],
+        "component_B_nodes": ["נסירה", "שם חת\"ך"],
+        "merge_basis": "Component B merged into Component A: the source text states 'וְזֶהוּ בְחִינוֹת נְסִירָה, וּבָא אֶל בְּחִינוֹת פָּנִים בְּפָנִים, וְזֶהוּ בְּחִינוֹת עוֹלָה' — nesira and שם חת\"ך are explicitly identified as bechinot of עולה. The eitza edge (id 2958: משבר את לבו → שם חת\"ך) shows the causal mechanism, but the bechina identity ('וְהַנְּסִירָה הוּא בְּחִינַת שֵׁם חֲתַ\"ךְ') and the equation of nesira with עולה confirm shared essential nature."
+      },
+      "merge_notes": [
+        "Component B (נסירה ↔ שם חת\"ך) merged into Package 1. Basis: SHARED NATURE — all are expressions of the same spiritual reality: the inward cutting/severing/breaking that turns back-to-back into face-to-face. The source text makes this explicit: 'וְזֶהוּ בְחִינוֹת נְסִירָה, וּבָא אֶל בְּחִינוֹת פָּנִים בְּפָנִים, וְזֶהוּ בְּחִינוֹת עוֹלָה'. The Name חת\"ך (whose gematria = 2×רוח, the two breaths of a sighing heart) IS the nesira, and the nesira IS the עולה. These are not cause-and-effect but different linguistic faces of the same act."
+      ],
+      "source_bechina_edges": [
+        {
+          "edge_id": 1525,
+          "node1": "עולה",
+          "node2": "כשמשבר את רוחו בקרבו, ומתביש וחושב בעצמו איך נפלתי ונשלכתי משמים לארץ",
+          "proof": "וּבְחִינוֹת עוֹלָה הוּא כְּשֶׁמְּשַׁבֵּר אֶת רוּחוֹ בְּקִרְבּוֹ, וּמִתְבַּיֵּשׁ וְחוֹשֵׁב בְּעַצְמוֹ אֵיךְ נָפַלְתִּי וְנִשְׁלַכְתִּי מִשָּׁמַיִם לָאָרֶץ"
+        },
+        {
+          "edge_id": 2352,
+          "node1": "זבחי אלהים",
+          "node2": "עולה",
+          "proof": "וְזֶהוּ זִבְחֵי אֶלֹהִים, הַיְנוּ בְחִינוֹת עוֹלָה, הוּא רוּחַ נִשְׁבָּרָה כַּנַּ\"ל"
+        },
+        {
+          "edge_id": 2712,
+          "node1": "עולה",
+          "node2": "רוח נשברה",
+          "proof": "וְזֶהוּ בְחִינוֹת עוֹלָה: וְזֶהוּ זִבְחֵי אֶלֹהִים, הַיְנוּ בְחִינוֹת עוֹלָה, הוּא רוּחַ נִשְׁבָּרָה כַּנַּ\"ל"
+        },
+        {
+          "edge_id": 2959,
+          "node1": "נסירה",
+          "node2": "שם חת\"ך",
+          "proof": "וְהַנְּסִירָה הוּא בְחִינַת שֵׁם חֲתַ\"ךְ, כְּמוֹ שֶׁכָּתוּב בַּכַּוָּנוֹת 'פּוֹתֵ'חַ אֶ'ת יָדֶ'ךָ', סוֹפֵי-תֵּבוֹת חֲתַ\"ךְ, הַיְנוּ שֶׁחוֹתֵךְ וּמְנַסֵּר אֶת עַצְמוֹ"
+        }
+      ]
+    }
+  ],
+  "good_evil_mirror_structure": {
+    "present": true,
+    "description": "Torah #108 implicitly contains a good/evil mirror, but the evil pole is not represented in the dataset's bechina graph. The good pole (Package 1) is the act of breaking the spirit inward to return to God. The evil pole is the state that makes the עולה necessary: הרהורי עכו\"ם (= falling mid-prayer), קלקול האמונה (corrupted faith), and אחור באחור (back-to-back estrangement). These evil-pole concepts are named in the source text but have no bechina edges in the dataset. See additions file for proposed additions of the evil-pole nodes.",
+    "good_packages": [1],
+    "evil_packages": [],
+    "mirror_pairs": [
+      {"good": "עולה / רוח נשברה (broken spirit as repair)", "evil_absent": "הרהורי עכו\"ם / נפילה מן המדרגה (the fall that requires the repair)"},
+      {"good": "פנים בפנים (face-to-face — the result of nesira)", "evil_absent": "אחור באחור (back-to-back — the state of estrangement from God)"},
+      {"good": "נסירה / שם חת\"ך (the cutting that heals)", "evil_absent": "קלקול האמונה (corrupted faith — the root cause of falling)"}
+    ]
+  },
+  "excluded_eitza_edge": {
+    "edge_id": 2958,
+    "node1": "משבר את לבו",
+    "node2": "שם חת\"ך",
+    "type": "eitza",
+    "reason": "This edge describes a cause-and-effect: breaking one's heart (eitza) causes/generates the Name חת\"ך. Excluded from bechina subgraph. Note: node1_id 'משבר את לבו' is a paraphrase/alias for the longer node 'כשמשבר את רוחו בקרבו...' — they represent the same act."
+  },
+  "stats": {
+    "total_reference_108_edges": 5,
+    "total_bechina_edges": 4,
+    "total_eitza_edges": 1,
+    "total_nodes_in_bechina_graph": 6,
+    "total_packages": 1,
+    "raw_connected_components": 2,
+    "components_after_merge": 1
+  }
+}

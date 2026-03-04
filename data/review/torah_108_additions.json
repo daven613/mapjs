@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "source": "Torah #108 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all reference===108 edges from torahData.js (5 edges: 4 bechina, 1 eitza), and the full source text torah_108.txt (9 lines). Identified all explicit bechina-language in the source text and compared against the dataset. The dataset covers the good-pole bechina cluster well (עולה, זבחי אלהים, רוח נשברה, נסירה, שם חת\"ך) but is completely missing the evil-pole concepts (the negative states that necessitate the עולה): הרהורי עכו\"ם (falling mid-prayer), אחור באחור (back-to-back estrangement), and their root קלקול האמונה. Additionally, the concept of פנים בפנים (face-to-face) — the positive outcome state — is named in the text with bechina language but absent from the dataset."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "עוֹלָה וְרוּחַ נִשְׁבָּרָה",
+      "node_id": "פנים בפנים",
+      "node_text": "פָּנִים בְּפָנִים",
+      "polarity": "good",
+      "reason": "The state of face-to-face (פנים בפנים) is the direct outcome of the nesira and is equated with the עולה via bechina language: 'וּבָא אֶל בְּחִינוֹת פָּנִים בְּפָנִים, וְזֶהוּ בְּחִינוֹת עוֹלָה'. The text uses 'בְּחִינוֹת' to link פנים בפנים with עולה, establishing them as aspects of the same spiritual reality: the state of reconciliation and restored orientation toward God. The paradigm is Adam HaRishon, who was created back-to-back and then severed (nesira) into face-to-face — a primordial archetype explicitly cited ('וְאַחַר-כָּךְ נִנְּסַר וְהָיָה פָּנִים בְּפָנִים'). Belongs to Package 1 as a bechina of עולה.",
+      "source_quote": "וּבָא אֶל בְּחִינוֹת פָּנִים בְּפָנִים, וְזֶהוּ בְּחִינוֹת עוֹלָה",
+      "bechina_marker": "וְזֶהוּ בְּחִינוֹת (this is a bechina of)",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "פנים בפנים",
+          "node2": "עולה",
+          "proof_text": "וּבָא אֶל בְּחִינוֹת פָּנִים בְּפָנִים, וְזֶהוּ בְּחִינוֹת עוֹלָה",
+          "type": "bechina"
+        }
+      ]
+    },
+    {
+      "package_id": "evil_mirror",
+      "package_label": "proposed: הִרְהוּרֵי עַכּוּ\"ם וְקִלְקוּל הָאֱמוּנָה (Evil-Pole Package — not yet in dataset)",
+      "node_id": "הרהורי עכו\"ם",
+      "node_text": "הִרְהוּרֵי עַכּוּ\"ם",
+      "polarity": "evil",
+      "reason": "The Rebbe explicitly uses bechina language to define הרהורי עכו\"ם (idolatrous thoughts): 'זֶהוּ בְּחִינוֹת הִרְהוּרֵי עַכּוּ\"ם' — referring to the experience of falling mid-prayer or mid-hitbodedut from one's level. This is the evil-pole concept that requires the עולה as its remedy. הרהורי עכו\"ם is not foreign idol-worship but the internal spiritual fall that mirrors the external concept: the mind abandoning its attachment to God mid-prayer. This is the evil mirror of the עולה (Package 1) — the state that the עולה corrects.",
+      "source_quote": "וּבְאֶמְצַע הַתְּפִלָּה אוֹ הַהִתְבּוֹדְדוּת נוֹפֵל מִמַּדְרֵגָתוֹ, זֶהוּ בְּחִינוֹת הִרְהוּרֵי עַכּוּ\"ם",
+      "bechina_marker": "זֶהוּ בְּחִינוֹת (this is a bechina of)",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "הרהורי עכו\"ם",
+          "node2": "נפילה מן המדרגה",
+          "proof_text": "וּבְאֶמְצַע הַתְּפִלָּה אוֹ הַהִתְבּוֹדְדוּת נוֹפֵל מִמַּדְרֵגָתוֹ, זֶהוּ בְּחִינוֹת הִרְהוּרֵי עַכּוּ\"ם",
+          "type": "bechina"
+        }
+      ]
+    },
+    {
+      "package_id": "evil_mirror",
+      "package_label": "proposed: הִרְהוּרֵי עַכּוּ\"ם וְקִלְקוּל הָאֱמוּנָה (Evil-Pole Package — not yet in dataset)",
+      "node_id": "אחור באחור",
+      "node_text": "אָחוֹר בְּאָחוֹר",
+      "polarity": "evil",
+      "reason": "The state of back-to-back (אחור באחור) is the central spatial metaphor for the estrangement from God that results from קלקול האמונה. The text establishes it as a bechina through implicit equation: the person turns his face away (מַחֲזִיר פָּנָיו מֵהַשֵּׁם יִתְבָּרַךְ) and God hides His face in return (מַסְתִּיר פָּנָיו מִמֶּנּוּ) — leaving them both 'אָחוֹר בְּאָחוֹר'. This concept is further reinforced by the Adam HaRishon archetype ('שֶׁנִּבְרְאוּ דּוּ פַּרְצוּפִין אָחוֹר בְּאָחוֹר'). אחור באחור is the evil mirror of פנים בפנים (Package 1) — the same spatial-relational dimension, reversed. The text uses it to name the state being remedied by the עולה/נסירה.",
+      "source_quote": "וְנִשְׁאַרְתִּי אָחוֹר בְּאָחוֹר... וְצָרִיךְ לָזֶה נְסִירָה, כְּמוֹ שֶׁהָיָה אֵצֶל אָדָם הָרִאשׁוֹן, שֶׁנִּבְרְאוּ דּוּ פַּרְצוּפִין אָחוֹר בְּאָחוֹר",
+      "bechina_marker": "Named as the state being remedied; mirror of פנים בפנים (which is explicitly bechina of עולה)",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "אחור באחור",
+          "node2": "הרהורי עכו\"ם",
+          "proof_text": "כִּי כָּל הַנְּפִילוֹת בָּאִין מֵחֲמַת קִלְקוּל הָאֱמוּנָה... וְנִשְׁאַרְתִּי אָחוֹר בְּאָחוֹר — these are the same state of estrangement",
+          "type": "bechina",
+          "note": "The causal root is קלקול האמונה (eitza), but הרהורי עכו\"ם and אחור באחור are the same state from different angles (bechina)"
+        }
+      ]
+    },
+    {
+      "package_id": "evil_mirror",
+      "package_label": "proposed: הִרְהוּרֵי עַכּוּ\"ם וְקִלְקוּל הָאֱמוּנָה (Evil-Pole Package — not yet in dataset)",
+      "node_id": "נפילה מן המדרגה",
+      "node_text": "נְפִילָה מִן הַמַּדְרֵגָה",
+      "polarity": "evil",
+      "reason": "Falling from one's spiritual level (נפילה מן המדרגה) is established as identical to הרהורי עכו\"ם via explicit bechina language. The text describes: starting to pray or do hitbodedut with devekut, and then in the middle falling from one's level — 'זֶהוּ בְּחִינוֹת הִרְהוּרֵי עַכּוּ\"ם'. The fall IS the idolatrous thought — they share the same essential nature. This concept belongs to the evil-pole cluster alongside הרהורי עכו\"ם and אחור באחור.",
+      "source_quote": "וּבְאֶמְצַע הַתְּפִלָּה אוֹ הַהִתְבּוֹדְדוּת נוֹפֵל מִמַּדְרֵגָתוֹ, זֶהוּ בְּחִינוֹת הִרְהוּרֵי עַכּוּ\"ם",
+      "bechina_marker": "זֶהוּ בְּחִינוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "נפילה מן המדרגה",
+          "node2": "הרהורי עכו\"ם",
+          "proof_text": "וּבְאֶמְצַע הַתְּפִלָּה אוֹ הַהִתְבּוֹדְדוּת נוֹפֵל מִמַּדְרֵגָתוֹ, זֶהוּ בְּחִינוֹת הִרְהוּרֵי עַכּוּ\"ם",
+          "type": "bechina"
+        }
+      ]
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "קִלְקוּל הָאֱמוּנָה (corrupted faith)",
+      "reason": "The text states 'כִּי כָּל הַנְּפִילוֹת בָּאִין מֵחֲמַת קִלְקוּל הָאֱמוּנָה' — 'all falls come from corrupted faith'. This is an eitza (cause-and-effect), not a bechina. קלקול האמונה PRODUCES the falls; it is not the same nature as the fall itself. Excluded from bechina additions. However it is the conceptual root of the evil pole and could be added as an eitza source node."
+    },
+    {
+      "concept": "הִרְהוּר הַלֵּב (thought of the heart / mental intention)",
+      "reason": "The text opens: 'עוֹלָה בָּאָה עַל הִרְהוּר הַלֵּב' — the burnt offering COMES FOR (על = on account of) the thought of the heart. This is an eitza relationship: הרהור הלב → requires → עולה. The midrash source supports this. It is not a bechina. Excluded."
+    },
+    {
+      "concept": "אָדָם הָרִאשׁוֹן / דּוּ פַּרְצוּפִין (Adam the First / dual-faced being)",
+      "reason": "Adam HaRishon and the concept of dual-partzufim are cited as the paradigmatic archetype for the nesira, not as bechina-equated concepts. The text says 'כְּמוֹ שֶׁהָיָה אֵצֶל אָדָם הָרִאשׁוֹן' — 'as it was with Adam' — using him as an analogy (paradigm), not equating the person to Adam via bechina. Excluded."
+    },
+    {
+      "concept": "שְׁנֵי פְּעָמִים רוּחַ / תְּרֵין רוּחִין (two breaths/spirits)",
+      "reason": "The two breaths (exhaling and inhaling when sighing) are cited as the gematria mechanism: 2 × רוח = 208+208 = gematria of חת\"ך. This is a numerical/structural proof for the bechina of נסירה with שם חת\"ך — it is the evidence, not a separate concept node. Excluded as a standalone node."
+    },
+    {
+      "concept": "מְרַחֵם עַל עַצְמוֹ / רַחֲמָנוּת (self-compassion)",
+      "reason": "The text says 'וּמְרַחֵם עַל עַצְמוֹ, כִּי אֵין רַחֲמָנוּת גְּדוֹלָה מִזּוֹ' — having compassion on oneself when one has fallen. This is part of the description of the עולה-act but framed as an instruction within the bechina of עולה, not as a separate concept equated to עולה via bechina language. The compassion is part of the emotional content of the act, not a parallel domain. Excluded."
+    },
+    {
+      "concept": "פּוֹתֵחַ אֶת יָדֶךָ (the verse used for שם חת\"ך)",
+      "reason": "The verse 'פּוֹתֵחַ אֶת יָדֶךָ' is cited as the Kabbalistic source for the Name חת\"ך (end-letters of the three words). It is a proof-text, not a separate bechina concept. Excluded."
+    }
+  ],
+  "dataset_nodes_not_in_source_text_bechinot": [],
+  "analysis_notes": {
+    "total_reference_108_edges": 5,
+    "total_reference_108_bechina_edges": 4,
+    "total_reference_108_eitza_edges": 1,
+    "source_text_explicit_bechina_pairs_found": 5,
+    "source_text_pairs_already_in_dataset": 4,
+    "source_text_pairs_missing_from_dataset": 1,
+    "new_nodes_proposed": 4,
+    "new_bechina_edges_proposed": 4,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "פנים בפנים",
+      "הרהורי עכו\"ם",
+      "אחור באחור",
+      "נפילה מן המדרגה"
+    ],
+    "coverage_assessment": "The dataset captures the good-pole cluster of Torah #108 well (4 bechina edges covering עולה, זבחי אלהים, רוח נשברה, נסירה, שם חת\"ך). The gap is entirely on the evil-pole side: the three concepts that name the state being remedied (הרהורי עכו\"ם, נפילה מן המדרגה, אחור באחור) and the good-pole outcome concept (פנים בפנים) are absent from the dataset. This creates an asymmetric representation: the healing act is mapped but the wound it heals is not."
+  }
+}

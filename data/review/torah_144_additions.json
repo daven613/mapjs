@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "source": "Torah #144",
+    "volume": "Likutay Moharan Vol. 1",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_144_packages.json, and the full source text torah_144.txt. Verified that torahData.js contains ZERO edges with reference===144. All concepts in this analysis are sourced from the text itself. For each statement in the source text, the bechina markers were checked: בְּחִינַת, נִקְרָא, הוּא (in equating sense), תָּמִיד, and related equivalence language. Each bechina-language concept was checked against the dataset (no reference-144 edges exist) and proposed as an addition if it constitutes a genuine bechina (parallel aspect) rather than an eitza (cause-effect) or descriptive element."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "צדיק",
+      "node_text": "צַדִּיק",
+      "polarity": "good",
+      "reason": "The Tzaddik is the subject of the entire teaching and is the dominant node of Package 1. The text defines the Tzaddik by his essential property: he is always alive (תָּמִיד חַי), even after death, because for him there is no distinction between life and death — he serves God continually. The teaching uses 'this is certainly not dead, but always alive' (בְּוַדַּאי זֶה אֵין מֵת, אֶלָּא תָּמִיד חַי) as a definitional bechina statement: this person IS life. The צַדִּיק is not a supporting concept but the anchor of the entire good pole. Already a known node in the broader dataset (appears in many other Torahs), but has no edge entry in reference 144.",
+      "source_quote": "כִּי אֵצֶל הַצַּדִּיק אֵין חִלּוּק בֵּין הַחַיִּים וּבֵין לְאַחַר מִיתָה, כִּי גַּם לְאַחַר מִיתָה הוּא עוֹבֵד אֶת הַשֵּׁם יִתְבָּרַךְ",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "note": "The node 'צדיק' exists elsewhere in torahData.js (other references) but has no edge for reference 144. It needs to be added as a node participating in reference-144 bechina edges."
+    },
+    {
+      "package_id": 1,
+      "node_id": "תמיד חי",
+      "node_text": "תָּמִיד חַי",
+      "polarity": "good",
+      "reason": "The concept 'always alive' (תָּמִיד חַי) is the direct bechina-equate of the Tzaddik in this teaching. The text says: 'בְּוַדַּאי זֶה אֵין מֵת, אֶלָּא תָּמִיד חַי, אֲפִלּוּ לְאַחַר מִיתָה' — this person is not dead but IS always alive, even after death. The IS-language (אֶלָּא... הוּא) declares the Tzaddik to BE this quality. This is a bechina: Tzaddik = תָּמִיד חַי. The phrase 'always alive even after death' captures the metaphysical claim of the teaching — that the Tzaddik's life is not biological but spiritual, and therefore uninterrupted. This is structurally the same node-type as 'תָּמִיד עוֹבֵד הַשֵּׁם' (always serves God), which is mentioned in both lines 2 and 6.",
+      "source_quote": "בְּוַדַּאי זֶה אֵין מֵת, אֶלָּא תָּמִיד חַי, אֲפִלּוּ לְאַחַר מִיתָה. וְאֵין חִלּוּק אֶצְלוֹ בֵּין מִיתָה לְחַיִּים, כִּי תָּמִיד הוּא עוֹבֵד הַשֵּׁם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "node_id": "כובש יצרו / אוחז תאוותו בידו",
+      "node_text": "כּוֹבֵשׁ אֶת יִצְרוֹ / אוֹחֵז תַּאֲוָתוֹ בְּיָדוֹ",
+      "polarity": "good",
+      "reason": "The Tzaddik's defining action in this teaching is holding his desire in his hand (אוֹחֵז אֶת תַּאֲוָתוֹ בְּיָדוֹ) and subduing his inclination (כּוֹבֵשׁ אֶת יִצְרוֹ). This is presented as the essential quality of the Tzaddik — what makes him the Tzaddik. The midrashic phrase 'חֲצִי תַאֲוָתוֹ בְּיָדוֹ' (half his desire in his hand) is given a bechina re-reading: 'וְזֶהוּ: וַחֲצִי תַאֲוָתוֹ בְּיָדוֹ' — THIS IS what the phrase means: even the permitted half he holds mastered. The holding of desire IS the identity of the Tzaddik. While this concept has a causal dimension (mastery of desire → being alive), within the package it functions as a bechina: the Tzaddik IS the one who holds his desire. The two phrases (כּוֹבֵשׁ יִצְרוֹ and אוֹחֵז תַּאֲוָתוֹ) are used interchangeably in lines 4-5 as parallel expressions of the same action.",
+      "source_quote": "וְהַצַּדִּיק, אֲפִלּוּ בְּזֹאת הַחֲצִי הוּא כּוֹבֵשׁ אֶת יִצְרוֹ, וְאוֹחֵז אֶת תַּאֲוָתוֹ בְּיָדוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "node_id": "האדם שנמשך אחר תאוות אכילה ושתיה",
+      "node_text": "הָאָדָם שֶׁנִּמְשָׁךְ אַחַר תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה",
+      "polarity": "evil",
+      "reason": "The person who was drawn after desires of eating and drinking (הָאָדָם שֶׁנִּמְשָׁךְ אַחַר תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה) is explicitly declared to BE dead (זֶה נִקְרָא מֵת). The text contrasts this person directly with the Tzaddik. This figure represents the anti-Tzaddik, the counterpart of Package 1's Tzaddik. The desire-chaser's entire identity was eating and drinking — his 'life' was purely biological desire. After death, when eating and drinking cease, death is recognizable in him (הַמִּיתָה נִכֶּרֶת אֶצְלוֹ) — because his life WAS the desire, and the desire is now gone. This node is the subject of the bechina declaration 'זֶה נִקְרָא מֵת.'",
+      "source_quote": "אֶלָּא אֵצֶל זֶה הָאָדָם שֶׁנִּמְשָׁךְ אַחַר תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה כָּל יָמָיו, וּלְאַחַר מִיתָה אֵין אוֹכֵל וְשׁוֹתֶה, זֶה נִקְרָא מֵת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "node_id": "מת",
+      "node_text": "מֵת",
+      "polarity": "evil",
+      "reason": "The concept of 'the dead / death' (מֵת) is the bechina-equate of the desire-chaser in this teaching. The declaration 'זֶה נִקְרָא מֵת' ('this is called dead') uses נִקְרָא — one of the canonical bechina markers in the framework. The teaching is not simply describing physical death; it is making a metaphysical claim: that the desire-driven person IS death, that his life already has the character of death because it is entirely defined by bodily cessation (eating and drinking). The concept of מֵת (death) in this Torah stands for spiritual/existential death — the state of a life that serves only physical desire and therefore ends when the body ends.",
+      "source_quote": "זֶה נִקְרָא מֵת, וְהַמִּיתָה נִכֶּרֶת אֶצְלוֹ",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "note": "The node 'מת' / 'מות' may exist in torahData.js for other references, but has no edge for reference 144. Needs a reference-144 bechina edge."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "תמיד חי",
+      "כובש יצרו / אוחז תאוותו בידו",
+      "האדם שנמשך אחר תאוות אכילה ושתיה"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "חֶצְיוֹ לַה' וְחֶצְיוֹ לָכֶם (the halakhic principle of festival eating)",
+        "reason": "Line 4 cites the Talmudic ruling (Pesachim 68b) that on festivals one should divide the day between God and physical enjoyment (חֶצְיוֹ לַה' וְחֶצְיוֹ לָכֶם). This is cited as context to explain what 'days when eating and drinking are permitted' means. It is not established as a bechina node — the Rebbe does not say 'the festival half IS a bechina of X.' It is a halakhic reference that provides the context within which the Tzaddik's mastery is demonstrated. Not a bechina gap."
+      },
+      {
+        "concept": "אֵין אָדָם מֵת וַחֲצִי תַּאֲוָתוֹ בְּיָדוֹ (the midrashic dictum)",
+        "reason": "The opening phrase — 'No person dies with half his desire in his hand' (Midrash Rabbah, Kohelet, seder 1) — is the base text being interpreted, not a concept being defined via bechina. The Rebbe re-reads it as a statement about the Tzaddik: 'he IS the one who holds half his desire in hand, and therefore IS never truly dead.' The midrashic dictum itself is not a bechina node; it is the lemma from which bechina-nodes are extracted (the Tzaddik, תָּמִיד חַי, כּוֹבֵשׁ יִצְרוֹ). Not a bechina gap."
+      },
+      {
+        "concept": "עֲבוֹדַת הַשֵּׁם (serving God)",
+        "reason": "Lines 2 and 6 state that the Tzaddik 'serves God' (עוֹבֵד אֶת הַשֵּׁם) both in life and after death. This is used descriptively to define what makes the Tzaddik's life continuous — it is through service of God that there is no break. The phrase is used in a functional/descriptive sense, not via explicit bechina language (no 'הוּא בְּחִינַת עֲבוֹדַת הַשֵּׁם' or 'נִקְרָא עֶבֶד ה''). It is part of the definition of תָּמִיד חַי rather than a separate node. Could be considered implicit, but the teaching does not formally declare it as a bechina concept in its own right. Excluded as borderline; could be added as a variant/aspect of Package 1's 'תָּמִיד חַי' node.",
+        "borderline": true
+      },
+      {
+        "concept": "יָמִים שֶׁהֻתְּרָה אֲכִילָה וּשְׁתִיָּה (days when eating is permitted)",
+        "reason": "This phrase (line 4) refers to the festival days where eating and drinking are halakhically permitted. It is a contextual qualifier, not a concept being equated. It sets the scenario in which the Tzaddik's mastery is demonstrated. Not a bechina node."
+      }
+    ]
+  }
+}

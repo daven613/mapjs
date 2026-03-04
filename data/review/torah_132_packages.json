@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "source": "Torah #132 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #132 has ZERO pre-existing bechina edges in the dataset (reference===132 AND type==='bechina' yields no results). The entire package structure is derived exclusively from source-text analysis. The teaching is exceptionally brief — two sentences — presenting a single sustained metaphor: the tzaddik is like an underground spring. The equivalence operator used is 'הוּא עִנְיָן' (this is the matter of), which functions in Rebbe Nachman's style as a bechina identity statement. Because there are no dataset edges, there are no raw connected components to merge; all nodes are proposed from the text. The teaching has one thematic core (tzaddik-as-spring), with a single positive package and no evil mirror detectable in this brief text. The 'underground' aspect of the spring (the hidden phase) has a nuanced neutral/positive quality: even when underground, the spring waters tree roots — the hidden tzaddik still nourishes those spiritually connected to him."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 132,
+      "label": "הַצַּדִּיק וְהַמַּעְיָן",
+      "label_en": "The Tzaddik and the Spring",
+      "polarity": "good",
+      "reason": "The entire Torah consists of a single bechina equation: the tzaddik IS the spring (מעיין). Both share the same essential nature — a spiritual/life-giving force that does not flow uniformly or visibly but follows hidden underground channels, emerging with full power in distant places while simultaneously nourishing (invisibly) those over whom it passes underground. The tzaddik who is 'famous' in one place and 'unknown' in the adjacent place IS the spring that gushes visibly in one location but flows hidden underground through the neighboring terrain. The specific nodes that share this nature are: (1) הצדיק — the tzaddik himself as the carrier of the spiritual force; (2) המעיין — the spring/fountain as the Zoharic image of the same reality; (3) פרסום הצדיק — the tzaddik's fame/public recognition, which IS the spring's visible gushing forth (נביעה); (4) היעלמות הצדיק — the tzaddik's hiddenness/lack of recognition, which IS the spring flowing underground (תחות ארעא); (5) השפעה נסתרת — the hidden influence, which IS the watering of tree roots underground (השקאת שרשי אילנא) — even in the hidden phase the spring/tzaddik nourishes. These five concepts are all different expressions of the same metaphysical reality: a tzaddik's spiritual power flows like water, undiminished by hiddenness, nourishing the world through both visible and invisible channels. The package polarity is 'good' because the tzaddik and his influence are the subject of the teaching, and the underground phase is not evil but mysterious/hidden-good (the tree roots are nourished even then).",
+      "dominant_node": "הצדיק",
+      "nodes": [
+        "הצדיק",
+        "המעיין",
+        "פרסום הצדיק",
+        "היעלמות הצדיק",
+        "השפעה נסתרת"
+      ],
+      "node_degrees": {
+        "הצדיק": 4,
+        "המעיין": 4,
+        "פרסום הצדיק": 1,
+        "היעלמות הצדיק": 1,
+        "השפעה נסתרת": 1
+      },
+      "merge_notes": [
+        "No dataset edges exist for Torah #132. All nodes are proposed from source text analysis. The five nodes form a single natural bechina cluster: tzaddik = spring, tzaddik's fame = spring gushing visibly, tzaddik's hiddenness = spring underground, hidden influence = watering of tree roots. No small isolated components require merging — the entire teaching is one integrated metaphor.",
+        "הצדיק and המעיין are co-dominant (both have degree 4 conceptually — each maps to all aspects of the other), but הצדיק is chosen as dominant_node because the tzaddik is the explicit human subject of the teaching; the spring is the metaphorical image.",
+        "פרסום הצדיק (the tzaddik's fame/recognition) = נביעת המעיין בגלוי (the spring's visible gushing): these are the same reality — the moment when the hidden spiritual force breaks through to visible public recognition.",
+        "היעלמות הצדיק (the tzaddik's being hidden/unrecognized in the neighboring country) = הליכה תחות ארעא (the spring flowing underground): same nature — the force is present but invisible to those directly above it.",
+        "השפעה נסתרת (hidden influence) = השקאת שרשי אילנא (watering tree roots underground): even in the hidden/underground phase, the tzaddik's force nourishes those spiritually rooted in his path — this is the positive resolution of the apparent paradox of hiddenness."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_proposed": 5,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "source_text_length": "2 sentences",
+    "note": "All packages are entirely text-derived; no dataset graph traversal was possible due to zero pre-existing bechina edges for reference 132."
+  }
+}

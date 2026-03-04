@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "source": "Torah #128 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #128 has ZERO edges in torahData.js (no bechina or eitza edges exist for reference===128 in the current dataset). The entire package structure is derived from source-text analysis (torah_128.txt) alone. The Torah is 3 lines / 1 paragraph — a very short teaching. It contains exactly one core bechina statement, yielding a single tightly coupled concept cluster. No connected-component graph algorithm can be run on empty edge data; the package below is constructed entirely from the בְּחִינַת language parsed from the source text and is therefore simultaneously a package proposal and a gap-analysis proposal."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 128,
+      "label": "הַשְׁפָּלַת הָעֵינַיִם וְעֵינֵי הַיֵּצֶר",
+      "label_en": "Lowering the Eyes and the Yetzer's Eyes",
+      "polarity": "mixed",
+      "reason": "Torah #128 presents a single conceptual equation: the act of a partially-righteous person who lowers his eyes to avoid gazing at women (מַשְׁפִּיל עֵינָיו) is a bechina of 'כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא' — blinding the eyes of the yetzer hara (of sexual desire). These two concepts share the same essential nature: they are both the same act of ocular suppression, one framed in human behavioral terms and the other in the Talmudic metaphor of blinding the captured yetzer. The package is 'mixed' in polarity because it encompasses both the good impulse (yirat Hashem causing the lowering of eyes, the positive act of restraint) and the evil force (the yetzer hara of niyuf that remains and looks sideways even after its eyes are blinded). The dominant node is the Talmudic phrase כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא since the entire Torah is structured as an explanation of what that Aramaic phrase means behaviorally. The yetzer's persistence — that it 'looks from the side' (מִסְתַּכֵּל מִן הַצַּד) even after its eyes are blinded — is not a separate package but the completing half of the same bechina: the blinded yetzer = the somewhat-righteous man who steals a sideways glance. Both aspects belong to one cluster because they are two descriptions of the same reality.",
+      "dominant_node": "כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא",
+      "nodes": [
+        "כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא",
+        "הַשְׁפָּלַת עֵינַיִם",
+        "מְסַמֵּא עֵינֵי הַיֵּצֶר הָרָע",
+        "יֵצֶר הָרָע דְּנִאוּף",
+        "מִסְתַּכֵּל מִן הַצַּד"
+      ],
+      "node_degrees": {
+        "כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא": 3,
+        "הַשְׁפָּלַת עֵינַיִם": 2,
+        "מְסַמֵּא עֵינֵי הַיֵּצֶר הָרָע": 2,
+        "יֵצֶר הָרָע דְּנִאוּף": 1,
+        "מִסְתַּכֵּל מִן הַצַּד": 1
+      },
+      "merge_notes": [],
+      "source_derived": true,
+      "source_note": "All nodes and edges for this package are derived from source-text analysis only. None exist in torahData.js. The bechina connections inferred from the text are: (A) כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא ↔ הַשְׁפָּלַת עֵינַיִם [Line 2-3: 'וְזֶה בְּחִינַת... שֶׁמְּסַמֵּא עֵינֵי הַיֵּצֶר הָרָע']; (B) הַשְׁפָּלַת עֵינַיִם ↔ מְסַמֵּא עֵינֵי הַיֵּצֶר הָרָע [same passage — the act of suppressing one's gaze IS the blinding of the yetzer's eyes]; (C) יֵצֶר הָרָע דְּנִאוּף ↔ מִסְתַּכֵּל מִן הַצַּד [Line 3: even after blinding, the yetzer remains and looks sideways — this sideways-glancing IS the blinded-yet-surviving yetzer]."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_from_source_text": 3,
+    "total_nodes": 5,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "source_text_derived_packages": 1,
+    "note": "Torah #128 is the shortest teaching in the analyzed corpus (3 lines). The entire conceptual structure is a single explanatory equation: blinding the yetzer hara's eyes = the behavior of the somewhat-righteous person who suppresses his gaze due to yirat Hashem yet still steals a sidelong look. yirat Hashem is present as the cause (eitza) of the eye-lowering, not as a bechina-equivalent concept, so it is not included in the package nodes — it flows into this package from outside via eitza."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "source": "Torah #129 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 129,
+      "label": "אֶרֶץ וֶאֱמוּנָה — הַצַּדִּיק כְּאֶרֶץ",
+      "label_en": "Land and Faith — the Tzaddik as Land",
+      "polarity": "good",
+      "reason": "The single bechina edge in the dataset establishes the foundational identity of this Torah: ארץ ↔ אמונה. The teaching opens with this identification (Psalm 37: 'שְׁכָן אֶרֶץ וּרְעֵה אֱמוּנָה') and the entire Torah is built upon it. Crucially, the source text adds a second-order bechina that is not yet in the dataset: the Tzaddik is a bechina of ארץ ('כְּשֶׁדָּבוּק לְהַצַּדִּיק וּמַאֲמִין בּוֹ, שֶׁהוּא בְּחִינַת אֶרֶץ'). This three-node cluster — ארץ, אמונה, and הצדיק — forms one conceptual package: they all share the same essential nature. They are the 'nourishing reality' that absorbs and transforms whoever enters/attaches to it. ארץ is the pivot node connecting אמונה (equated directly) and הצדיק (equated as a bechina of ארץ). Eretz Yisrael is also explicitly brought as a parallel (line 7: 'וְכֵן אֶרֶץ יִשְׂרָאֵל בְּעַצְמָהּ, יֵשׁ לָהּ גַּם כֵּן הַכֹּחַ הַזֶּה') — it participates in the same ארץ nature. ארץ ישראל is therefore the extension of ארץ in the physical domain, and belongs to this same package.",
+      "dominant_node": "ארץ",
+      "nodes": [
+        "ארץ",
+        "אמונה",
+        "הצדיק",
+        "ארץ ישראל"
+      ],
+      "node_degrees": {
+        "ארץ": 3,
+        "אמונה": 2,
+        "הצדיק": 1,
+        "ארץ ישראל": 1
+      },
+      "merge_notes": [
+        "This package is formed from one explicit bechina edge in the dataset (ארץ↔אמונה, edge #294) plus two bechina identifications found in the source text not yet in the dataset.",
+        "הצדיק is identified as a bechina of ארץ in line 6: 'כְּשֶׁדָּבוּק לְהַצַּדִּיק וּמַאֲמִין בּוֹ, שֶׁהוּא בְּחִינַת אֶרֶץ'. This is explicit bechina language. The Tzaddik IS ארץ — he has the same transformative absorption capacity. This bechina edge (הצדיק↔ארץ) is missing from the dataset and is proposed in torah_129_additions.json.",
+        "ארץ ישראל is treated as co-extensive with ארץ in this Torah. Line 7 says Eretz Yisrael 'has this same power' (the power of ארץ/אמונה to absorb and transform inhabitants). It is the same package membership — a face of ארץ in the physical/national domain.",
+        "The teaching's analogies (vegetation eaten by animals, animals eaten by humans, food distributing to organs) are all metaphors for the MECHANISM — they are not bechina-equated nodes but illustrative comparisons. They do not form a separate bechina package.",
+        "No small components to merge — this Torah has only 1 bechina edge in the dataset; the package is formed by combining the dataset edge with the gap-analysis findings."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 129,
+      "label": "מֹחַ וְדַעַת קְדוֹשָׁה — תְּרֵין רֵעִין",
+      "label_en": "Holy Mind and Knowledge — the Two Inseparable Companions",
+      "polarity": "good",
+      "reason": "In line 9, the Rebbe explicitly identifies 'תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין' (the two inseparable companions from Shir HaShirim 5:1 'אִכְלוּ רֵעִים') as 'הַמֹּחִין הַקְּדוֹשִׁים' — the holy minds/intellect: 'שֶׁהֵם הַמֹּחִין הַקְּדוֹשִׁים'. This is bechina identification language ('שֶׁהֵם' = they are). The Rebbe then further specifies: 'שֶׁהוּא הַמֹּחַ וְהַדַּעַת' — the mochin are specifically מוח (mind) and דעת (knowledge/awareness). These are not cause-and-effect; they are three names for the same spiritual reality: the two-companions = the holy mochin = מוח + דעת. This cluster — תרין רעין דלא מתפרשין, מוחין קדושים, מוח, דעת — forms the second package of this Torah. It represents the spiritual 'dominant partner' in the eating/transformation metaphor: the holy mind that absorbs the body and transforms it into its own nature, just as ארץ/אמונה absorbs those who dwell within it.",
+      "dominant_node": "מוחין קדושים",
+      "nodes": [
+        "תרין רעין דלא מתפרשין",
+        "מוחין קדושים",
+        "מוח",
+        "דעת"
+      ],
+      "node_degrees": {
+        "מוחין קדושים": 2,
+        "תרין רעין דלא מתפרשין": 1,
+        "מוח": 1,
+        "דעת": 1
+      },
+      "merge_notes": [
+        "All four bechina identifications for this package are from the source text (not yet in the dataset). They belong in torah_129_additions.json as proposed new bechina edges.",
+        "The Rebbe explicitly says 'תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין, שֶׁהֵם הַמֹּחִין הַקְּדוֹשִׁים' — this is canonical bechina language (שהם = they are).",
+        "Then: 'שֶׁהוּא הַמֹּחַ וְהַדַּעַת' — the holy mochin = מוח + דעת specifically.",
+        "This package is the parallel to the צדיק/ארץ/אמונה package: just as ארץ/אמונה/הצדיק is the external transformative reality (one attaches to a Tzaddik), מוח/דעת/תרין רעין is the internal transformative reality (one's mind absorbs and transforms the body). The teaching bridges both: external closeness to the Tzaddik (Package 1) AND internal dominance of mind over body (Package 2) both work through the same eatting/transformation principle.",
+        "No merge with Package 1: these are distinct conceptual clusters. Package 1 concerns the Tzaddik/Land/Faith as the 'nourishing reality'. Package 2 concerns the mind/intellect as the internal agent of transformation. They are connected by the common mechanism (bechina of eating) but are not themselves bechinot of each other in this Torah."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 1,
+    "total_bechina_identifications_in_source_text": 7,
+    "bechina_identifications_in_dataset": 1,
+    "bechina_identifications_missing_from_dataset": 6,
+    "total_nodes": 8,
+    "total_packages": 2,
+    "raw_connected_components_from_dataset": 1,
+    "notes": "Torah #129 is a short, densely argued Torah with only 1 bechina edge currently in the dataset. However, the source text contains multiple explicit bechina identifications that are absent from the dataset. After gap analysis, two conceptual packages emerge: (1) ארץ/אמונה/הצדיק — the external transformative reality (Tzaddik as Land/Faith), and (2) תרין רעין/מוחין/מוח/דעת — the internal transformative reality (holy mind over body). The teaching's main argument is entirely eitza (cause-and-effect): closeness to the Tzaddik + will-to-serve-God → absorption/transformation. The bechina structure supports this by identifying the poles of transformation: what does the absorbing (ארץ/אמונה/הצדיק, Package 1; מוח/דעת, Package 2) vs. what gets absorbed (the body, the person, the nation — not yet bechina-equated nodes in the dataset)."
+  }
+}

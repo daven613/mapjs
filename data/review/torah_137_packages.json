@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "source": "Torah #137",
+    "volume": "Likutay Moharan, Volume 1",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #137 has ZERO edges in torahData.js (no reference===137 entries exist at all). The Torah is an aphorism of two lines only. The entire package structure is derived exclusively from the source text torah_137.txt. The text contains no explicit בְּחִינַת language; the equivalence is signaled by 'הַיְנוּ' (meaning: 'that is'). The single interpretive move of the Torah — reattributing the word 'אָמַרְתִּי' from the human speaker to 'הַחֵלֶק אֱלֹקַּי מִמַּעַל' — yields one coherent bechina cluster. No connected-component algorithm is needed; the Torah contains one package only."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 137,
+      "label": "חֵלֶק אֱלֹקִּי מִמַּעַל וְהַקּוֹל הַפְּנִימִי",
+      "label_en": "The Divine Portion from Above and the Inner Voice",
+      "polarity": "good",
+      "reason": "The entire Torah rests on a single bechina: 'חֶלְקִי יְיָ' (My portion is God, Psalms 119:57) IS 'הַחֵלֶק אֱלֹקַּי מִמַּעַל שֶׁיֵּשׁ לִי' — the divine spark that each person carries from above. The Rebbe reinterprets the verse's 'אָמַרְתִּי' (I said) not as the human speaker declaring his intention, but as the divine portion SPEAKING to the person: it tells him and teaches him 'לִשְׁמֹר דְּבָרֶיךָ' (to keep Your words). This yields two interrelated bechina identities: (1) 'חֶלְקִי יְיָ' IS 'הַחֵלֶק אֱלֹקַּי מִמַּעַל' — the verse-phrase and the interpretive phrase are two names for the same metaphysical reality: the divine portion within the person. (2) 'אָמַרְתִּי' (the saying/teaching) IS attributed to this divine portion — the divine portion shares the nature of an inner teacher who speaks and instructs. These three concepts — the divine portion, the inner voice/saying, and the teaching/instruction — are all aspects of one thematic cluster: the divine inner-teacher who guides the soul toward observance of the commandments. The polarity is entirely positive (good): this is a teaching about the divine light within every person guiding him toward Torah and mitzvot; there is no evil mirror developed in this two-line Torah.",
+      "dominant_node": "חלק אלקי ממעל",
+      "nodes": [
+        "חלק אלקי ממעל",
+        "חלקי ה'",
+        "אמרתי — קול הנשמה המלמד"
+      ],
+      "node_degrees": {
+        "חלק אלקי ממעל": 2,
+        "חלקי ה'": 1,
+        "אמרתי — קול הנשמה המלמד": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_extracted_from_text": 2,
+    "total_nodes": 3,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "note_on_zero_dataset_edges": "Torah #137 is entirely absent from torahData.js. All edges, nodes, and packages are derived from the source text alone. This Torah requires full initial data entry — it is a complete gap in the dataset. The Torah is among the briefest in Likutay Moharan volume 1 (two lines), consisting of a single interpretive aphorism with no elaboration.",
+    "text_extracted_bechinas": [
+      {
+        "edge": "A",
+        "node1": "חלקי ה'",
+        "node2": "חלק אלקי ממעל",
+        "source_text": "הַיְנוּ שֶׁהַחֵלֶק אֱלֹקַּי מִמַּעַל שֶׁיֵּשׁ לִי",
+        "line": 2,
+        "bechina_marker": "הַיְנוּ",
+        "explanation": "The verse phrase 'חֶלְקִי יְיָ' (My portion is God) IS the 'חֵלֶק אֱלֹקַּי מִמַּעַל שֶׁיֵּשׁ לִי' (the divine portion from above that I have). The Rebbe expands the compressed verse into its full Kabbalistic content: each person possesses a divine portion from above (ref. Job 31:2 — 'וְחֵלֶק אֱלֹהַּ מִמָּעַל'), and this is what 'חֶלְקִי יְיָ' means. The two phrases are different names for the same entity."
+      },
+      {
+        "edge": "B",
+        "node1": "חלק אלקי ממעל",
+        "node2": "אמרתי — קול הנשמה המלמד",
+        "source_text": "אוֹמֵר לִי וּמְלַמֵּד אוֹתִי לִשְׁמֹר דְּבָרֶיךָ",
+        "line": 2,
+        "bechina_marker": "הַיְנוּ (reattribution of אָמַרְתִּי)",
+        "explanation": "The verse's 'אָמַרְתִּי' (I said) is reattributed by the Rebbe to the subject 'הַחֵלֶק אֱלֹקַּי מִמַּעַל' — making the divine portion the one who SAYS and TEACHES. The divine portion IS the inner voice/teacher (אוֹמֵר לִי וּמְלַמֵּד אוֹתִי). These are not two separate things — the divine spark that each person possesses shares its essential nature with the inner teaching-voice that guides toward mitzvot. The Rebbe collapses the human's 'I said' into 'my divine portion said to me', equating the divine portion with the act/function of spiritual instruction."
+      }
+    ],
+    "good_evil_mirror": "No evil mirror is present in this Torah. The text is a two-line aphorism with no development of an evil counterforce. The implied negative pole — a person who lacks connection to his divine portion, or who does not listen to the inner voice — is structurally implicit but not textually developed. No bechina edges can be extracted for an evil mirror in Torah #137."
+  }
+}

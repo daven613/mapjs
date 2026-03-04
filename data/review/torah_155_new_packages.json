@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "source": "Torah #155",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NO_NEW_PACKAGES",
+  "new_packages": [],
+  "observations": "Torah #155 has only 5 bechina edges involving 6 nodes, all of which form a single connected component. There is no subset of 3+ bechina-connected concepts that is both independent from Package 1 and forms a self-sufficient thematic domain of its own.\n\nOne candidate cluster was examined: the 'Moshe Rabbeinu / הִשְׁתּוֹקְקוּת' (longing) motif. Lines 13-14 of the source text describe Moshe's intense longing for Eretz Yisrael as being motivated specifically by the quality of ארך אפים available there. The Rebbe frames this through two Talmudic passages (Sanhedrin 111): 'וַיְמַהֵר מֹשֶׁה וַיִּקֹּד אַרְצָה וַיִּשְׁתַּחוּ, מָה רָאָה — אֶרֶךְ אַפַּיִם רָאָה.' However, in the dataset for Torah #155, these references to Moshe appear only in eitza edges (Moshe's longing → serves as an example of the teaching), not as bechina declarations. There is no edge stating 'Moshe Rabbeinu is a bechina of ארך אפים' or similar. Without bechina edges, no independent package can be formed around this figure.\n\nA second candidate was the 'negative domain' cluster: עצבות (sadness), עצלות (laziness), כבדות (heaviness), חרון אף (divine anger), עבודה זרה (idolatry). These could in principle form an evil-mirror package for the אמונה package. However, as documented in torah_155_additions.json, none of these concepts are given bechina-language declarations in Torah #155 — they appear only as eitza effects of חסרון אמונה (lack of faith). The teaching's polemical structure here is entirely causal: 'because of lack of faith → sadness → failure to pray / visit the tzaddik.' This does not generate bechina edges and thus no evil-mirror package can be constituted from the dataset.\n\nConclusion: Torah #155 contains a single bechina package (Package 1: אֱמוּנָה וְאֶרֶץ יִשְׂרָאֵל). The teaching's short, direct structure — essentially one sustained equation of אמונה with its synonyms — does not produce the multi-cluster bechina topology needed for a second or third package."
+}

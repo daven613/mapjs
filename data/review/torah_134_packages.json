@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "source": "Torah #134",
+    "volume": "Likutay Moharan, Volume 1",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #134 has ZERO edges in torahData.js (no reference===134 entries exist at all). The entire package structure is derived exclusively from the source text torah_134.txt. The Torah is extremely short (6 lines / ~200 words) and structurally compact. All bechina relationships were extracted directly from the text. Because there are no dataset edges, 'connected components' are built from scratch from the text-extracted bechinas. The Torah contains a single dominant bechina equation (inappropriate Torah transmission = niuf/adultery) with several subordinate equalities. The result is essentially one coherent conceptual cluster — the Niuf Package — with an evil-pole sub-distinction built into the text itself."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 134,
+      "label": "אֲמִירַת תּוֹרָה וְנִאוּף",
+      "label_en": "Torah Teaching and Adultery — Sekhel as Seed",
+      "polarity": "neutral",
+      "reason": "This Torah is built on a single central bechina: the act of saying Torah to someone whose intellect cannot receive it IS בְּחִינַת נִאוּף (adultery/illegitimate seminal emission). The Rebbe equates the process of Torah transmission with a biological-spiritual generative act: the teacher transmits 'drops of sekhel' (טִפֵּי הַשֵּׂכֶל) into the student, exactly as a father transmits seed into a mother. When the recipient's sekhel is fit, this generates spiritual offspring (new understanding, new deeds at the correct level). When it is not fit, the transmission is either (a) entirely barren — 'נִקְרָא לְבַטָּלָה' (called in vain — nothing is generated at all), or (b) generates something pasul/pagum (flawed/disqualified) — 'נִאוּף מַמָּשׁ' (actual adultery: the student acts on the teaching but at the wrong level for his madrega). The package is marked NEUTRAL because the core bechina (Torah-saying = seed-transmission) is a structural description of how teaching works — it is neither intrinsically good nor evil. Both the positive dimension (appropriate transmission generates proper offspring) and the negative dimension (inappropriate transmission is niuf) emerge from the same neutral structural fact. The teacher-student-sekhel triad functions exactly like father-mother-seed.",
+      "dominant_node": "נִאוּף",
+      "nodes": [
+        "אמירת תורה לבלתי ראוי",
+        "ניאוף",
+        "טיפי השכל",
+        "לבטלה",
+        "ניאוף ממש",
+        "פסול ופגום"
+      ],
+      "node_degrees": {
+        "ניאוף": 3,
+        "אמירת תורה לבלתי ראוי": 2,
+        "טיפי השכל": 2,
+        "לבטלה": 1,
+        "ניאוף ממש": 1,
+        "פסול ופגום": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["לבטלה", "ניאוף ממש", "פסול ופגום"],
+          "reason": "These three nodes each appear in the text as qualifications of the single bechina 'inappropriate Torah-saying IS niuf'. They are not independent bechina components — the text names two varieties of the niuf-situation: (1) the barren case (לבטלה — nothing is produced), and (2) the producing-something-flawed case (ניאוף ממש / פסול ופגום). Both are aspects of the core niuf concept: the first describes niuf-without-offspring, the second describes niuf-with-corrupt-offspring. They share the same essential domain — the illegitimate spiritual generative act — and are not large enough (2 nodes together) to stand alone. They are merged into Package 1 per the merge rule for 1-2-node components that share the same essential nature."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 134,
+      "label": "תַּאֲוַת נִאוּף וְהַיֵּצֶר הָרָע",
+      "label_en": "The Desire for Adultery and the Evil Inclination",
+      "polarity": "evil",
+      "reason": "This package captures the evil mirror and consequence of the core teaching: because saying Torah inappropriately IS a form of niuf, the yetzer hara can exploit the very act of Torah-saying to strengthen itself in the domain of actual sexual desire (תַּאֲוַת נִאוּף). The text states explicitly: 'וְעַל כֵּן עַל יְדֵי שֶׁאוֹמֵר תּוֹרָה, יוּכַל, חַס וְשָׁלוֹם, לְהִתְגַּבֵּר עָלָיו הַיֵּצֶר בְּתַאֲוַת נִאוּף.' This is the evil side of the Torah's structural insight: the same metaphysical channel that should carry sekhel as holy seed becomes the very opening through which the yetzer penetrates when the teacher is careless. The Rebbe returns to this in line 5-6: 'כָּל הַגָּדוֹל מֵחֲבֵרוֹ... יִצְרוֹ גָּדוֹל מִמֶּנּוּ' — the greater the Torah scholar, the greater his yetzer specifically in teshuka/niuf. This is the evil package: it groups the yetzer, its specific manifestation in sexual desire, and the teaching that the greater one is, the larger this yetzer becomes. The bechina here is implicit but structurally present: the yetzer hara IS בְּחִינַת תַּאֲוַת נִאוּף for the Torah teacher — the two are equated through the same structural logic that equates inappropriate teaching with niuf.",
+      "dominant_node": "יצר הרע",
+      "nodes": [
+        "יצר הרע",
+        "תאוות ניאוף",
+        "כל הגדול מחברו יצרו גדול ממנו"
+      ],
+      "node_degrees": {
+        "יצר הרע": 2,
+        "תאוות ניאוף": 2,
+        "כל הגדול מחברו יצרו גדול ממנו": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["כל הגדול מחברו יצרו גדול ממנו"],
+          "reason": "This Talmudic principle (Sukkah 52a), cited in line 5-6 of the Torah text, is applied specifically to the context of Torah-saying and the niuf-yetzer. The Rebbe interprets it as: the one who is 'gadol' (i.e., the great Torah teacher who says Torah) has a yetzer that is specifically stronger in taavas niuf — because the careless act of Torah-saying opened the channel. This principle IS an aspect of the yetzer hara's specific character in this Torah context. It is a 1-node component that shares the essential nature of the yetzer-taavas-niuf cluster and is merged here per the merge rule."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_extracted_from_text": 5,
+    "total_nodes": 9,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 2,
+    "note_on_zero_dataset_edges": "Torah #134 is entirely absent from torahData.js. All edges, nodes, and packages are derived from the source text alone. This Torah requires full initial data entry — it is a complete gap in the dataset.",
+    "text_extracted_bechinas": [
+      {
+        "edge": "A",
+        "node1": "אמירת תורה לבלתי ראוי",
+        "node2": "ניאוף",
+        "source_text": "כִּי הוּא בְּחִינַת נִאוּף, שֶׁמַּשְׁלִיךְ טִפֵּי הַשֵּׂכֶל בַּאֲתָר דְּלָא אִצְטְרִיךְ",
+        "line": 2
+      },
+      {
+        "edge": "B",
+        "node1": "ניאוף (הסוג הראשון)",
+        "node2": "לבטלה",
+        "source_text": "וְנִקְרָא לְבַטָּלָה, כִּי אֵינוֹ מוֹלִיד אֶצְלוֹ כְּלוּם",
+        "line": 2
+      },
+      {
+        "edge": "C",
+        "node1": "ניאוף (הסוג השני)",
+        "node2": "ניאוף ממש",
+        "source_text": "וְלִפְעָמִים נִקְרָא נִאוּף מַמָּשׁ, שֶׁמּוֹלִיד וּמוֹצִיא פָּסוּל וּפָגוּם",
+        "line": 2
+      },
+      {
+        "edge": "D",
+        "node1": "ניאוף ממש",
+        "node2": "פסול ופגום",
+        "source_text": "שֶׁמּוֹלִיד וּמוֹצִיא פָּסוּל וּפָגוּם, הַיְנוּ שֶׁהַמְּקַבֵּל עוֹשֶׂה עַל יְדֵי זֶה דָּבָר שֶׁאֵינוֹ צָרִיךְ לוֹ לְפִי מַדְרֵגָתוֹ",
+        "line": 2
+      },
+      {
+        "edge": "E",
+        "node1": "יצר הרע",
+        "node2": "תאוות ניאוף",
+        "source_text": "יוּכַל, חַס וְשָׁלוֹם, לְהִתְגַּבֵּר עָלָיו הַיֵּצֶר בְּתַאֲוַת נִאוּף",
+        "line": 2
+      }
+    ]
+  }
+}

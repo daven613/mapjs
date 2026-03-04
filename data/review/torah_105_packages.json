@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "source": "Torah #105",
+    "volume": "Likutay Moharan Volume 1",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===105 AND type==='bechina'. Result: 2 bechina edges, 3 unique nodes, 1 connected component. No merges required. Torah #105 is among the smallest bechina subgraphs in the dataset — the teaching's conceptual structure is carried almost entirely through eitza (cause-and-effect) edges; the bechina layer captures only the essential identity equivalences at the heart of the mercy-prayer nexus."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 105,
+      "label": "רַחֲמִים פְּשׁוּטִים וּתְפִלַּת הַשֵּׁם",
+      "label_en": "Simple Mercy and God's Prayer",
+      "polarity": "good",
+      "reason": "The three nodes in this Torah's bechina subgraph all express the same essential identity: the dimension of simple/plain divine mercy (רחמים פשוטים), which the Zohar identifies with Zeir Anpin. The Rebbe teaches that this mercy is structurally identical to 'God's prayer' — the dynamic by which the simple mercy of Zeir Anpin intercedes upward to arouse the Great Mercy of Atika Stima'ah. רחמים פשוטים is the pivot: it is what we can arouse through prayer, it is called 'rachamin stam d'Zeir Anpin' by the Zohar, and it is what constitutes God's own 'prayer' (God's simple mercy beseeching His own Great Mercy on our behalf). All three nodes share the same essential nature — they are different names and descriptions of the same cosmic dimension of accessible, bounded mercy that serves as the vehicle for infinite redemption.",
+      "dominant_node": "רחמים פשוטים",
+      "nodes": [
+        "רחמים פשוטים",
+        "רחמים סתם דזעיר אנפין",
+        "תפלת הקדוש ברוך הוא"
+      ],
+      "node_degrees": {
+        "רחמים פשוטים": 2,
+        "רחמים סתם דזעיר אנפין": 1,
+        "תפלת הקדוש ברוך הוא": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 2,
+    "total_nodes": 3,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "note_on_merges": "1 raw component with all 3 nodes. No merges needed — single unified package. All eitza edges (8 total for reference 105) describe the causal flow of the Torah's argument: Torah → Teshuva → Da'at → Rachamim → God's prayer → Great Mercy → Yeshua. The bechina layer captures only the conceptual identity at the mercy-prayer nexus."
+  }
+}

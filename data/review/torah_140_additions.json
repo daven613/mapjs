@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source": "Torah #140",
+    "volume": "Likutay Moharan Vol. 1",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_140_packages.json, the single reference===140 bechina edge from torahData.js, and the full source text torah_140.txt. For each bechina statement in the source text (identified by the markers: בְּחִינַת, נִקְרָא, הוּא בְּחִינַת, כְּמוֹ שֶׁכָּתוּב used in an equating sense), verified whether the concept appears as a node in the dataset and whether it is assigned to a package."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "הַצַּדִּיק וְהַחוֹתָם",
+      "node_id": "\"כל האדם\"",
+      "node_text": "\"כִּי זֶה כָּל הָאָדָם\"",
+      "polarity": "good",
+      "reason": "The source text (line 4) states: 'הַצַּדִּיק נִקְרָא כָּל אָדָם כְּמוֹ שֶׁכָּתוּב (קֹהֶלֶת י\"ב): כִּי זֶה כָּל הָאָדָם'. The word נִקְרָא ('is called') is explicit bechina language as defined in the framework. The Tzaddik IS כָּל הָאָדָם — not merely compared to him, but named and identified as him. This is structurally parallel to the edge already in the dataset (צדיק ↔ חותם). Both equate the Tzaddik with another concept: the seal (חותם) captures his unknowable-yet-impressable nature, and 'כל האדם' (all of humanity) captures his cosmic representational role — he contains all of humanity within himself, which is why one can know him only through his disciples (who are the human dimension of him). The two bechinot together form the full theological claim of Torah #140: the Tzaddik transcends individual intellect (he is 'כָּל הָאָדָם' — the totality) yet his impression can be received (he is 'חוֹתָם' — a seal that leaves its mark). This node belongs in Package 1 (הַצַּדִּיק וְהַחוֹתָם) alongside צדיק and חותם.",
+      "source_quote": "הַצַּדִּיק נִקְרָא כָּל אָדָם, כְּמוֹ שֶׁכָּתוּב (קֹהֶלֶת י\"ב): כִּי זֶה כָּל הָאָדָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_140_edges": 2,
+    "total_reference_140_bechina_edges": 1,
+    "total_reference_140_eitza_edges": 1,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["צדיק", "חותם"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["\"כל האדם\""],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "אנשיו המקרבין אליו / אנשי מעשה",
+        "reason": "The source text discusses the Tzaddik's close disciples (אֲנָשָׁיו הַמְקֹרָבִין אֵלָיו) and his people of action (אַנְשֵׁי מַעֲשֶׂה יְרֵאִים וּשְׁלֵמִים) as the means by which one can know the Tzaddik — this is already captured in eitza edge 1271 (אנשיו המקרבין אליו → יוכל להבין מעלת הצדיק). This is a cause-and-effect relationship (eitza), not a bechina. The disciples are not declared to be a bechina/aspect of the Tzaddik; they are functionally used to enable knowledge of him. Not a bechina gap."
+      },
+      {
+        "concept": "שעוה (wax in the seal analogy)",
+        "reason": "Line 3 uses the metaphor of pressing a seal into wax (שַׁעֲוָה) to make the letters readable. The wax is used in the analogy as a simile vehicle, not established as a bechina node in its own right. The Rebbe does not say 'the disciples are a bechina of שעוה' — the wax is the explanatory parable mechanism, not a concept being equated. Not a bechina declaration."
+      },
+      {
+        "concept": "אותיות הפוכות (inverted letters on the seal)",
+        "reason": "Line 3 notes that the letters engraved on a seal appear in reverse (הָאוֹתִיּוֹת בְּהֶפֶךְ) and are therefore unreadable. This is a descriptive detail within the mashal (parable) explaining WHY the seal needs wax to be read. It is not framed as a bechina concept — no language of 'X הוא בחינת Y' or 'X נקרא Y' is used. Not a bechina gap."
+      },
+      {
+        "concept": "תפיסה / השגה",
+        "reason": "Lines 1-2 use the words תְּפִיסָה (grasp) and הַשָּׂגָה (attainment) to describe what ordinary people lack with the Tzaddik and possess with his disciples. These are used descriptively to explain the accessibility differential, not established as bechina nodes via equating language. Not a bechina gap."
+      }
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "source": "Torah #136",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Torah #136 has zero edges in torahData.js. This file documents ALL bechina-language concepts found in the source text (torah_136.txt) that need to be added to the dataset. Every proposed edge below is a new entry required for reference 136. Gap analysis was performed by scanning the complete source text for בְּחִינַת, הַיְנוּ, נִקְרָא, and structural identity language. The Torah is 9 lines long with sparse but precise bechina language."
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "critical",
+      "description": "דָּן לְכַף זְכוּת = בְּחִינַת דִּין וּמִשְׁפָּט מַמָּשׁ (judging favorably = actual judgment and justice)",
+      "source_text_ref": "Line 9: 'הֱוֵי דָּן אֶת כָּל אָדָם לְכַף זְכוּת — דָּן דַּיְקָא, כִּי הוּא בְּחִינַת דִּין וּמִשְׁפָּט מַמָּשׁ'",
+      "proposed_edge": {
+        "node1_id": "דן לכף זכות",
+        "node1_text": "דָּן לְכַף זְכוּת",
+        "node2_id": "דין ומשפט",
+        "node2_text": "דִּין וּמִשְׁפָּט",
+        "proof": "הֱוֵי דָּן אֶת כָּל אָדָם לְכַף זְכוּת — דָּן דַּיְקָא, כִּי הוּא בְּחִינַת דִּין וּמִשְׁפָּט מַמָּשׁ",
+        "type": "bechina",
+        "reference": 136,
+        "is_good": true,
+        "is_bad": null
+      },
+      "package_assignment": 1,
+      "notes": "This is the single most explicit bechina statement in the entire Torah. The Rebbe uses 'בְּחִינַת' directly and underscores it with 'דַּיְקָא' (precisely) and 'מַמָּשׁ' (literally/actually) — language reserved for emphasizing that this identification is not metaphorical but essential. Judging favorably IS judgment. This edge is the conceptual core of the whole teaching and must be the primary edge added for reference 136."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "מָקוֹם = מַדְרֵגָה (place = spiritual level/standing)",
+      "source_text_ref": "Lines 4, 5, 7: 'וְאָז הֵם בְּמָקוֹם אֶחָד הַיְנוּ בְּמַדְרֵגָה אַחַת' (line 4); 'אִם יִהְיוּ שְׁנֵיהֶם בְּמָקוֹם אֶחָד בְּמַדְרֵגָה אַחַת' (line 5); 'הַיְנוּ שֶׁתִּשְׁתַּדֵּל שֶׁתִּהְיֶה עִמּוֹ בְּמָקוֹם אֶחָד, בְּמַדְרֵגָה אַחַת' (line 7)",
+      "proposed_edge": {
+        "node1_id": "מקום",
+        "node1_text": "מָקוֹם",
+        "node2_id": "מדרגה",
+        "node2_text": "מַדְרֵגָה",
+        "proof": "הַיְנוּ שֶׁתִּשְׁתַּדֵּל שֶׁתִּהְיֶה עִמּוֹ בְּמָקוֹם אֶחָד, בְּמַדְרֵגָה אַחַת — the Mishnah's 'until you reach his place' is interpreted as: until you reach the same madrege/level. The הַיְנוּ makes the equation explicit.",
+        "type": "bechina",
+        "reference": 136,
+        "is_good": null,
+        "is_bad": null
+      },
+      "package_assignment": 2,
+      "notes": "The Mishnah's word 'מְקוֹמוֹ' (his place) is the Rebbe's interpretive entry point. He defines 'place' as 'level' (מַדְרֵגָה) using הַיְנוּ three times across the teaching. This is a classical Rebbe Nachman reinterpretation of a talmudic term — transforming a literal place into a spiritual-ontological position. The bechina is repeated and foundational."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "דָּן לְכַף זְכוּת = מַעֲלֶה חֲבֵרוֹ לְמַדְרֵגָה יוֹתֵר גָּבוֹהַּ (judging favorably = elevating the other to a higher spiritual level)",
+      "source_text_ref": "Lines 4, 9: 'הוּא מַעֲלֶה חֲבֵרוֹ לְכַף זְכוּת, וְאָז הֵם בְּמָקוֹם אֶחָד הַיְנוּ בְּמַדְרֵגָה אַחַת' (line 4); 'בָּזֶה שֶׁאַתָּה דָּן אוֹתוֹ לְכַף זְכוּת, וְאַתָּה מַעֲלֵהוּ לְמַדְרֵגָה יוֹתֵר גָּבוֹהַּ' (line 9)",
+      "proposed_edge": {
+        "node1_id": "דן לכף זכות",
+        "node1_text": "דָּן לְכַף זְכוּת",
+        "node2_id": "מעלה חברו למדרגה יותר גבוהה",
+        "node2_text": "מַעֲלֶה חֲבֵרוֹ לְמַדְרֵגָה יוֹתֵר גָּבוֹהַּ",
+        "proof": "בָּזֶה שֶׁאַתָּה דָּן אוֹתוֹ לְכַף זְכוּת, וְאַתָּה מַעֲלֵהוּ לְמַדְרֵגָה יוֹתֵר גָּבוֹהַּ — judging favorably is itself the elevation. The Rebbe treats these as the same act: to judge favorably = to raise to a higher level.",
+        "type": "bechina",
+        "reference": 136,
+        "is_good": true,
+        "is_bad": null
+      },
+      "package_assignment": 1,
+      "notes": "The relationship between judging favorably and raising the other's madrege is stated both as bechina (same act = same identity) and as mechanism. In line 9, the Rebbe makes clear that the dan l'chaf zekhut IS the elevation: 'אַתָּה מַעֲלֵהוּ'. This is a shared-nature bechina (the evaluation-act and the elevation are one and the same), not merely cause-and-effect."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "דִּין וּמִשְׁפָּט = קֹדֶם שֶׁעוֹלִין לְאֵיזֶה מַדְרֵגָה (judgment is what precedes elevation to a new level)",
+      "source_text_ref": "Line 9: 'כִּי יָדוּעַ, שֶׁקֹּדֶם שֶׁעוֹלִין לְאֵיזֶה מַדְרֵגָה, דָּנִין אֶת הָאָדָם'",
+      "proposed_edge": {
+        "node1_id": "דין ומשפט",
+        "node1_text": "דִּין וּמִשְׁפָּט",
+        "node2_id": "קודם שעולין לאיזו מדרגה דנין את האדם",
+        "node2_text": "קֹדֶם שֶׁעוֹלִין לְאֵיזֶה מַדְרֵגָה, דָּנִין אֶת הָאָדָם",
+        "proof": "כִּי יָדוּעַ, שֶׁקֹּדֶם שֶׁעוֹלִין לְאֵיזֶה מַדְרֵגָה, דָּנִין אֶת הָאָדָם — the din/mishpat IS the gateway-judgment before madrege-elevation. This 'known principle' (כִּי יָדוּעַ) identifies judgment-as-gate-to-elevation as the essential nature of din itself.",
+        "type": "bechina",
+        "reference": 136,
+        "is_good": true,
+        "is_bad": null
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe cites this as a known (יָדוּעַ) principle — before any elevation in madrege, the person is judged. This is not incidental to the Torah; it is the structural hinge on which the whole teaching turns. Dan l'chaf zekhut = din = the judgment before elevation = the mechanism by which the favorable judgment has real effect. This bechina connects the human act (favorable judgment) to the divine act (judgment before elevation)."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "medium",
+      "description": "מַחֲלֹקֶת = מְשֻׁנִּים זֶה מִזֶּה (conflict = being different from each other / unequal in madrege)",
+      "source_text_ref": "Line 5: 'כִּי מַחֲלֹקֶת הוּא רַק מֵחֲמַת שֶׁהֵם מְשֻׁנִּים זֶה מִזֶּה'",
+      "proposed_edge": {
+        "node1_id": "מחלקת",
+        "node1_text": "מַחֲלֹקֶת",
+        "node2_id": "משונים זה מזה",
+        "node2_text": "מְשֻׁנִּים זֶה מִזֶּה",
+        "proof": "כִּי מַחֲלֹקֶת הוּא רַק מֵחֲמַת שֶׁהֵם מְשֻׁנִּים זֶה מִזֶּה — conflict IS (nothing but) the condition of being different from each other. The 'רַק' (only) makes this an essential definition, not a contingent cause.",
+        "type": "bechina",
+        "reference": 136,
+        "is_good": null,
+        "is_bad": true
+      },
+      "package_assignment": 3,
+      "notes": "The Rebbe defines machlokes by its essential nature: difference/separateness. The word 'רַק' (only) transforms what appears to be a causal statement into an identity statement — machlokes IS difference, and difference IS machlokes. This is the evil-side bechina that mirrors the good-side bechina of Package 1."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "medium",
+      "description": "גֶּחָלִים עַל רֹאשׁוֹ = מַפָּלָה (burning coals on his head = the downfall/defeat of the opponent)",
+      "source_text_ref": "Line 8: 'אוֹ שֶׁיִּהְיֶה לוֹ מַפָּלָה, כִּי יוּכַל לִהְיוֹת שֶׁגֶּחָלִים אַתָּה חוֹתֶה עַל רֹאשׁוֹ בָּזֶה שֶׁאַתָּה מַעֲלֵהוּ לְכַף זְכוּת'",
+      "proposed_edge": {
+        "node1_id": "גחלים על ראשו",
+        "node1_text": "גֶּחָלִים עַל רֹאשׁוֹ",
+        "node2_id": "מפלה",
+        "node2_text": "מַפָּלָה",
+        "proof": "יוּכַל לִהְיוֹת שֶׁגֶּחָלִים אַתָּה חוֹתֶה עַל רֹאשׁוֹ — the Rebbe cites Proverbs 25:22 ('for you are heaping coals on his head') as the bechina of the מַפָּלָה (downfall/defeat) that can befall the opponent of the one who judges favorably. The 'coals' metaphor IS the מַפָּלָה.",
+        "type": "bechina",
+        "reference": 136,
+        "is_good": null,
+        "is_bad": null
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe uses the Proverbs image as a possible outcome when judging favorably. The 'coals on the head' = the mafala (defeat) of the one who was creating machlokes. This is part of Package 1 (good) as a consequence/aspect of dan l'chaf zekhut's power — it can either bring the opponent back (positive outcome, line 8 first part) or bring about his defeat (second outcome). Both outcomes belong to the favorable-judgment cluster."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "low",
+      "description": "כַּף זְכוּת = מְקוֹמוֹ / מַדְרֵגָה (the scale of merit = his place = his level)",
+      "source_text_ref": "Lines 2-4, 9: the Rebbe consistently treats 'raising to kaf zekhut' as identical to 'raising to the same madrege.' Line 4: 'הוּא מַעֲלֶה חֲבֵרוֹ לְכַף זְכוּת, וְאָז הֵם בְּמָקוֹם אֶחָד הַיְנוּ בְּמַדְרֵגָה אַחַת'",
+      "proposed_edge": {
+        "node1_id": "כף זכות",
+        "node1_text": "כַּף זְכוּת",
+        "node2_id": "מדרגה",
+        "node2_text": "מַדְרֵגָה",
+        "proof": "הוּא מַעֲלֶה חֲבֵרוֹ לְכַף זְכוּת, וְאָז הֵם בְּמָקוֹם אֶחָד הַיְנוּ בְּמַדְרֵגָה אַחַת — raising to kaf zekhut and reaching the same madrege are stated as the same result, connected by הַיְנוּ.",
+        "type": "bechina",
+        "reference": 136,
+        "is_good": true,
+        "is_bad": null
+      },
+      "package_assignment": 1,
+      "notes": "This edge bridges Package 1 (dan l'chaf zekhut / kaf zekhut) and Package 2 (madrege/makom). It reflects the Torah's argument that the favorable judgment is simultaneously a spiritual placement — raising a person on kaf zekhut IS placing them at the same madrege. Lower priority because it is implicit rather than marked by an explicit single בְּחִינַת statement, though the הַיְנוּ chain makes it clear."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_136_edges_in_dataset": 0,
+    "total_reference_136_bechina_edges_in_dataset": 0,
+    "total_reference_136_eitza_edges_in_dataset": 0,
+    "proposed_new_bechina_edges": 7,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["דן לכף זכות", "דין ומשפט", "מעלה חברו למדרגה יותר גבוהה", "קודם שעולין לאיזו מדרגה דנין את האדם", "וכפי שיצא המשפט כן יקום", "גחלים על ראשו", "מפלה", "כף זכות"],
+      "package_2": ["מדרגה", "מקום", "במקום אחד במדרגה אחת"],
+      "package_3": ["מחלקת", "משונים זה מזה", "מתקנא בו"]
+    },
+    "concepts_in_source_text_not_in_dataset": [
+      "דן לכף זכות", "דין ומשפט", "מדרגה", "מקום", "מחלקת", "כף זכות", "מעלה חברו למדרגה יותר גבוהה", "קודם שעולין לאיזו מדרגה דנין את האדם", "משונים זה מזה", "גחלים על ראשו", "מפלה"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "חַחֲזֹר בּוֹ (returning/repenting)",
+        "reason": "Line 8: 'יוּכַל לִהְיוֹת שֶׁחֲבֵרוֹ יַחֲזֹר בּוֹ וְלֹא יִהְיֶה שׁוּב מַחֲלֹקֶת' — this is an eitza (cause-effect) outcome of judging favorably, not a bechina-equivalent concept. Excluded from bechina graph per framework rule."
+      },
+      {
+        "concept": "גָּדוֹל מִמֶּנּוּ / גָּדוֹל מֵחֲבֵרוֹ (being greater / lesser than one's fellow)",
+        "reason": "These are descriptions of the structural situation that causes machlokes, not independent bechina concepts. They are subsumed under 'מְשֻׁנִּים זֶה מִזֶּה' (being different from each other), which is the generalized bechina the Rebbe gives for the cause of machlokes."
+      },
+      {
+        "concept": "כְּוַנַּת קִנְאָה (jealousy)",
+        "reason": "The Rebbe mentions jealousy ('מִתְקַנֵּא בּוֹ') as a description of one scenario of machlokes-causation, but does not establish it as an independent bechina concept with its own node-identity in this Torah. It is a sub-case of 'משונים זה מזה' in Package 3."
+      },
+      {
+        "concept": "שְׁנֵי פָּנִים (two aspects/faces — the two scenarios of machlokes)",
+        "reason": "A structural organizing phrase in the teaching, not a concept with bechina-identity. The Rebbe uses 'שְׁנֵי פָּנִים' to introduce the two cases, but does not say this phrase IS anything. It is rhetorical structure, not a bechina node."
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "source": "Torah #135",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all reference===135 edges from torahData.js (both bechina and eitza), and the full source text torah_135.txt. For each explicit bechina statement in the source text (using language: בְּחִינַת, הוּא בְּחִינַת, שֶׁהִיא בִּינָה, נִקְרֵאת, הֵם בְּחִינַת), verified whether the concept appears as a node in the dataset for this Torah and whether it is assigned to a package. Repeated invocations of the same bechina are counted once. Source line references are to the 34-line torah_135.txt file."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "מַלְכוּת וַעֲנָוָה",
+      "node_id": "יום טוב",
+      "node_text": "יוֹם-טוֹב",
+      "polarity": "good",
+      "reason": "Line 3 of the source text states explicitly: 'וְיוֹם-טוֹב מֹחִין דְּאִמָּא, שֶׁהִיא בִּינָה.' This is unambiguous bechina language equating Yom Tov with Mochin deImma (the supernal mind of the Mother / Binah). The Rebbe establishes Yom Tov as a bechina of Binah — the 49 gates of Binah that Moshe attained led to humility; Yom Tov IS those Mochin deImma. In the dataset for Torah #135, 'יום טוב' appears only as part of compound node phrases (e.g. 'אור הגדול של יום טוב', 'קדשת יום טוב') but never as a standalone concept node with a bechina edge in its own right. The bechina יוֹם-טוֹב ↔ מֹחִין דְּאִמָּא / בִּינָה is the theological foundation of the entire Torah — it explains WHY receiving Yom Tov produces humility — yet it is absent from the bechina edge data for reference 135. This node belongs in Package 1 (מלכות/ענוה) because Yom Tov as Binah/Mochin deImma is the supernal source of the humility that flows into the domain of malkhut/yirah.",
+      "source_quote": "וְיוֹם-טוֹב מֹחִין דְּאִמָּא, שֶׁהִיא בִּינָה",
+      "proposed_edge": {
+        "node1_id": "יום טוב",
+        "node2_id": "בינה",
+        "type": "bechina",
+        "proof": "וְיוֹם-טוֹב מֹחִין דְּאִמָּא, שֶׁהִיא בִּינָה. וְעַל כֵּן כְּשֶׁמְּקַבֵּל אֶת הַיּוֹם-טוֹב, שֶׁהִיא בִּינָה, זוֹכֶה לַעֲנָוָה"
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "מַלְכוּת וַעֲנָוָה",
+      "node_id": "ימי דין",
+      "node_text": "יְמֵי דִּין",
+      "polarity": "neutral",
+      "reason": "Line 26 states: 'כִּי הַיָּמִים טוֹבִים הֵם יְמֵי דִּין, שֶׁהִיא בְּחִינַת יִרְאָה, בְּחִינַת מַלְכוּת.' The Yomim Tovim are called days of judgment (ימי דין), and this is explicitly identified as a bechina of יִרְאָה and of מַלְכוּת. This gives ימי דין (or equivalently: Yamim Tovim in their aspect as days of judgment) a double bechina connection: to יראה (which is in Package 1 via edge 1824) and to מלכות (the dominant node of Package 1). The concept 'ימי דין' as a standalone bechina node with edges to יראה and מלכות is absent from the dataset for reference 135. It belongs in Package 1 (מלכות/יראה) since it is the temporal-cosmic manifestation of the same quality: the awesome, judgment-laden, fearful aspect of holiness that IS the malkhut. Polarity is marked 'neutral' because ימי דין (days of judgment) is a structural feature that can apply either to the positive experience of the holy calendar or to the threatening presence of divine judgment — its full valence in Torah #135 is positive (these are days when malkhut dikdusha rises), but the concept itself is structurally neutral.",
+      "source_quote": "כִּי הַיָּמִים טוֹבִים הֵם יְמֵי דִּין, שֶׁהִיא בְּחִינַת יִרְאָה, בְּחִינַת מַלְכוּת",
+      "proposed_edge": {
+        "node1_id": "ימי דין",
+        "node2_id": "יראה",
+        "type": "bechina",
+        "proof": "כִּי הַיָּמִים טוֹבִים הֵם יְמֵי דִּין, שֶׁהִיא בְּחִינַת יִרְאָה, בְּחִינַת מַלְכוּת"
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_135_edges_all_types": 10,
+    "total_reference_135_bechina_edges": 7,
+    "total_reference_135_eitza_edges": 3,
+    "bechina_edge_ids": [172, 1792, 1824, 1825, 2490, 2527, 2610],
+    "eitza_edge_ids": [1275, 1292, 1337],
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["מלכות", "אות דל\"ת", "יראה", "תלמידי חכמים", "ענוה", "מישרים אשפט"],
+      "package_2": ["צדיק", "קדשת יום טוב", "אור הגדול של יום טוב", "פני רבו"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["יום טוב (as standalone bechina node)", "מוחין דאמא", "בינה", "ימי דין"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "רָאוּנִי נְעָרִים וְנֶחְבָּאוּ (Job 29:8)",
+        "reason": "Line 4 uses the verse citation as proof-text for the phenomenon of 'small things hiding before greatness' (קטנות מתבטל לפני גדלות). The verse is introduced with 'וְהוּא בְּחִינַת' but this is a rhetorical bechina of a behavioral phenomenon, not a concept-node being equated in parallel. The content is already captured in the eitza chain (near-ness to the tzaddik → annulment of arrogance). The verse reference is not establishing a new standalone concept node."
+      },
+      {
+        "concept": "גַּס רוּחַ / גַּדְלוּת (arrogance)",
+        "reason": "Line 3 mentions that Yom Tov's gematria (63 + 10 letters = 73) is the opposite of גַּס רוּחַ. This is a gematria observation, not a bechina statement. גַּדְלוּת appears throughout as the thing that gets annulled, but is never the subject of a 'היא בחינת' statement in this Torah — it is described through eitza (cause-effect: receiving Yom Tov → annulment of gaavah). Not a bechina node for this Torah."
+      },
+      {
+        "concept": "אַרְבַּע מַלְכֻיּוֹת דְּסִטְרָא אָחֳרָא / מַלְכוּת עֲמָלֵק",
+        "reason": "Lines 19-27 discuss the four kingdoms of the sitra achra and Amalek's kingdom extensively, but no explicit 'היא בחינת' equative statement is made that would create a new bechina node for this Torah specifically. The four kingdoms are described through narrative (how Yom Tov elevates malkhut dikdusha from among them) and through the Samuel/Agag narrative. Their role in Torah #135 is as the target of eitza (what is being fought), not as bechina-equivalent concepts. These concepts may exist in the dataset from other Torahs but generate no new bechina edges for reference 135."
+      },
+      {
+        "concept": "שָׁבוּעוֹת סֻכּוֹת פֶּסַח (the three festivals as the acrostic שס\"ף)",
+        "reason": "Line 26 identifies the acrostic of וַיְשַׁסֵּף as Shavuot/Sukkot/Pesach. These are identified by allusion/gematria/acrostic, not through a bechina equative statement. Not a bechina gap."
+      },
+      {
+        "concept": "מְקַשָּׁה לֵילֵד / צִירִים וּדְלָתוֹת / אות מֵ\"ם סְתוּמָה",
+        "reason": "Lines 33-34 contain an addendum about a woman in difficult labor (מקשה לילד) and the kabbalistic homily about the closed mem (ם) that is formed by two dalet letters. This section is explicitly noted as referring to material explained elsewhere (לְעֵיל... סִימָן ל). The text says the mem needs to be split into two dalets to allow birth. While the word דָּלֶת appears, this is a kabbalistic-anatomical homily using the letter's shape, not establishing a new bechina for Torah #135. The section is marked as an addendum (בֵּאוּר עִנְיָן זֶה... יִתְבָּאֵר בְּמָקוֹם אַחֵר)."
+      },
+      {
+        "concept": "אַהֲבָה (love for the tzaddik)",
+        "reason": "Lines 17-18 describe that the bond with the tzaddik (התקשרות) is fundamentally love (אהבה), and that this love should exceed the love of women. The texts from Jonathan/David and the verse נַפְשׁוֹ קְשׁוּרָה בְּנַפְשׁוֹ are cited. However, no בְּחִינַת statement is made equating אהבה with another concept. The role of אהבה is via eitza (the vehicle of attachment, not its nature-equivalent). Not a bechina gap."
+      }
+    ]
+  }
+}

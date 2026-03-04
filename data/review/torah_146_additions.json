@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "source": "Torah #146",
+    "volume": "Likutay Moharan Vol. 1",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_146_packages.json, and the full source text torah_146.txt. Verified that torahData.js contains ZERO edges with reference===146. All concepts in this analysis are sourced from the text itself. For each statement in the source text, bechina markers were checked: בְּחִינַת, הַנִּקְרֵאת, זֶה בְּחִינַת, הָיָה בּוֹ (in equating sense), and related equivalence language. Each concept was checked against the full dataset (cross-reference search) to determine if its node_id already appears in torahData.js for other references, and proposed as a gap addition if it constitutes a genuine bechina node rather than a descriptive or eitza element. Since reference 146 has zero dataset coverage, ALL 10 proposed nodes are gaps."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וּמַחְכִּימַת פֶּתִי",
+      "node_id": "תורה",
+      "node_text": "תּוֹרָה",
+      "polarity": "good",
+      "reason": "Torah is the dominant node of Package 1 and the subject of the entire teaching. The text establishes three bechina-faces of Torah in this Torah: (a) Torah IS CALLED (הַנִּקְרֵאת) a woman (אִשָּׁה) — this is the opening paradox; (b) Torah IS the one that 'makes the simple wise' (מַחְכִּימַת פֶּתִי) — cited from Psalm 19:8 as Torah's defining quality; (c) Torah IS the one standing in the secret place calling out 'mi peti yasur hena' — she IS present where men are not accustomed to be. All of these are bechina-faces of Torah in this specific Torah. Torah is a known node across the dataset (appears in dozens of references) but has no edge for reference 146.",
+      "source_quote": "הַדָּבָר קָשֶׁה, אֵיךְ הַתּוֹרָה, הַנִּקְרֵאת אִשָּׁה, יְכוֹלָה לְהָעִיד",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "note": "The node 'תורה' exists extensively in torahData.js for other references. Needs bechina edges for reference 146 pairing it with: אישה, עדות, מחכימת פתי."
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וּמַחְכִּימַת פֶּתִי",
+      "node_id": "אישה",
+      "node_text": "אִשָּׁה",
+      "polarity": "good",
+      "reason": "The Torah is explicitly called (נִקְרֵאת) a woman — this is canonical bechina language ('X נִקְרָא Y — X is called Y' per the framework). The paradox the Torah opens with is that an אִשָּׁה is normally invalid for testimony (פְּסוּלָה לְעֵדוּת), yet the Torah (called אִשָּׁה) testifies. The resolution is that her woman-nature IS the key: like a woman who testifies in the place men don't go, Torah testifies in the secret domain of lust. The אִשָּׁה identity IS the bechina of Torah in this teaching — it defines Torah's relationship to testimony and to the hidden domain. Polarity is good: the Torah-as-woman is the holy Shekhinah/Torah pole, not the evil side.",
+      "source_quote": "אֵיךְ הַתּוֹרָה, הַנִּקְרֵאת אִשָּׁה, יְכוֹלָה לְהָעִיד, הֲלֹא אִשָּׁה פְּסוּלָה לְעֵדוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "The node 'אישה' as a bechina of Torah appears here uniquely. The identification of Torah with אישה is rooted in the Zohar and kabbalistic literature but has not been encoded in the dataset. This is a new bechina edge: תורה ↔ אישה (reference 146)."
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וּמַחְכִּימַת פֶּתִי",
+      "node_id": "עדות",
+      "node_text": "עֵדוּת",
+      "polarity": "good",
+      "reason": "The verse cited — 'עֵדוּת ה' נֶאֱמָנָה מַחְכִּימַת פֶּתִי' (Psalm 19:8) — defines Torah as 'the testimony of God' (עֵדוּת ה'). The teaching's whole argument turns on the fact that Torah IS testimony (עֵדוּת) — it IS the faithful witness to what happens in the hidden domain of sin. The identity Torah = עֵדוּת is the foundational bechina of the entire teaching: Torah is the one who SEES what happens in the secret, and therefore can TESTIFY. The text closes with this: 'בִּשְׁבִיל זֶה הַתּוֹרָה... יְכוֹלָה לְהָעִיד' — Torah can bear witness (עֵדוּת) precisely because of her identity as the one standing where others don't go. עֵדוּת IS Torah's identity in this teaching.",
+      "source_quote": "עֵדוּת ה' נֶאֱמָנָה וְכוּ' ... בִּשְׁבִיל זֶה הַתּוֹרָה אַף־עַל־פִּי שֶׁהִיא אִשָּׁה יְכוֹלָה לְהָעִיד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "A bechina edge is needed: תורה ↔ עדות (reference 146). The concept 'עדות' as an aspect of Torah specifically appears here."
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וּמַחְכִּימַת פֶּתִי",
+      "node_id": "מחכימת פתי",
+      "node_text": "מַחְכִּימַת פֶּתִי",
+      "polarity": "good",
+      "reason": "The phrase 'מַחְכִּימַת פֶּתִי' (making the simple wise) serves a double function in this teaching: (1) it IS a bechina of Torah — the verse says Torah IS 'עֵדוּת ה' נֶאֱמָנָה מַחְכִּימַת פֶּתִי', meaning making-the-simple-wise IS what Torah essentially is in this context; and (2) it IS the bechina of חֲרָטָה (regret) — the text explicitly states 'הַחֲרָטָה, זֶה בְּחִינַת מַחְכִּימַת פֶּתִי'. This dual role — Torah's quality AND the essential equivalent of regret — makes מַחְכִּימַת פֶּתִי the pivotal concept of Package 1. It is the bridge between Torah's nature and the human experience of post-sin wisdom. Its degree (3 connections) reflects these two explicit bechina links: to Torah and to חֲרָטָה, plus the implicit link to the concept of פֶּתִי as recipient.",
+      "source_quote": "וְהַתֵּרוּץ עַל זֶה, שֶׁהִיא מַחְכִּימַת פֶּתִי ... וְזֹאת הַחֲרָטָה, זֶה בְּחִינַת מַחְכִּימַת פֶּתִי",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "New bechina edges needed: (a) תורה ↔ מחכימת פתי (reference 146); (b) חרטה ↔ מחכימת פתי (reference 146). This phrase is unique to Torah 146 in this configuration."
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וּמַחְכִּימַת פֶּתִי",
+      "node_id": "חרטה",
+      "node_text": "חֲרָטָה",
+      "polarity": "good",
+      "reason": "The Rebbe declares: 'וְזֹאת הַחֲרָטָה, זֶה בְּחִינַת מַחְכִּימַת פֶּתִי' — 'this regret IS a bechina of making-the-simple-wise.' This is the most explicit bechina statement in the Torah text, using the canonical formula 'זֶה בְּחִינַת.' The regret (חֲרָטָה) that comes immediately after the completion of the transgression IS the moment when the peti becomes a chakham — when the ruach shtut leaves and Torah's call penetrates. Regret IS the making-wise in action. This places חֲרָטָה in Package 1 as the human experiential face of Torah's מַחְכִּימַת פֶּתִי. The polarity is good: regret and return (teshuva) belong to the domain of holiness. Note that חֲרָטָה IS the first stage of teshuva and represents the turning from the evil pole (Package 2) toward the good pole (Package 1).",
+      "source_quote": "וְזֹאת הַחֲרָטָה, זֶה בְּחִינַת מַחְכִּימַת פֶּתִי, כִּי בִּשְׁעַת הָעֲבֵרָה הָיָה בּוֹ רוּחַ שְׁטוּת, וְאַחַר גְּמַר הָעֲבֵרָה הִטָּה אָזְנוֹ לַאֲמָרֶיהָ שֶׁל הַתּוֹרָה, וְהֶחְכִּים וּמִתְחָרֵט",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "New bechina edge needed: חרטה ↔ מחכימת פתי (reference 146). The concept of חרטה does not appear in torahData.js for any reference — this is a new node."
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּאֲווֹת וְרוּחַ שְׁטוּת",
+      "node_id": "תאוות",
+      "node_text": "תַּאֲווֹת",
+      "polarity": "evil",
+      "reason": "Lusts (תַּאֲווֹת) are the dominant node of Package 2 and the primary subject of the evil pole of this teaching. The text states: 'עִקַּר תַּאֲווֹת הֵם בַּסֵּתֶר, בִּבְחִינַת מַיִם גְּנוּבִים יִמְתָּקוּ' — the essence of lusts IS in hiddenness, IS (בחינת) 'stolen waters are sweet.' This IS-language (הֵם בַּסֵּתֶר בִּבְחִינַת) is canonical bechina language. The lusts' essential nature IS to be hidden, stolen, sweet in their concealment. They draw a person toward the transgression while Torah's voice goes unheard. The concept of תַּאֲווֹת in this Torah is not a neutral concept (the teaching is specifically about the sexual/physical lusts that operate in secret — מַיִם גְּנוּבִים), so its polarity is evil.",
+      "source_quote": "וְזֶה יָדוּעַ, שֶׁעִקַּר תַּאֲווֹת הֵם בַּסֵּתֶר, בִּבְחִינַת (משלי ט׳:י״ז): מַיִם גְּנוּבִים יִמְתָּקוּ",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "note": "The node 'תאוות' (or variants like 'שבירת תאות') appears in torahData.js for other references (e.g., reference 27, 144). Needs a bechina edge for reference 146 pairing it with: מים גנובים and/or הסתר."
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּאֲווֹת וְרוּחַ שְׁטוּת",
+      "node_id": "מים גנובים",
+      "node_text": "מַיִם גְּנוּבִים",
+      "polarity": "evil",
+      "reason": "The verse from Proverbs 9:17 — 'מַיִם גְּנוּבִים יִמְתָּקוּ' (stolen waters are sweet) — is cited as the explicit bechina of lusts operating in secret. The text uses the formula 'בִּבְחִינַת מַיִם גְּנוּבִים יִמְתָּקוּ' — lusts in secret ARE (בחינת) stolen waters. The stolen-waters image IS the essential nature of the desire that operates in hiding: it is sweeter precisely because it is stolen, secret, forbidden. This is a classic Rebbe Nachman bechina — a scriptural phrase becomes the conceptual node that captures the essential quality of another concept. The bechina: תַּאֲווֹת ↔ מַיִם גְּנוּבִים. Polarity is evil: stolen waters represent the domain of forbidden desire, the sitra achra of physical pleasure.",
+      "source_quote": "עִקַּר תַּאֲווֹת הֵם בַּסֵּתֶר, בִּבְחִינַת (משלי ט׳:י״ז): מַיִם גְּנוּבִים יִמְתָּקוּ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "New bechina edge needed: תאוות ↔ מים גנובים (reference 146). This node does not appear in torahData.js for any reference."
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּאֲווֹת וְרוּחַ שְׁטוּת",
+      "node_id": "הסתר",
+      "node_text": "הַסֵּתֶר",
+      "polarity": "evil",
+      "reason": "The text establishes the 'hidden domain' (הַסֵּתֶר) as the essential location of lusts: 'עִקַּר תַּאֲווֹת הֵם בַּסֵּתֶר' (the essence of lusts is in the hidden place). The Seter IS where no ordinary people (אֲנָשִׁים) go, and this IS where Torah must stand to testify. The Seter IS the quality shared between lusts, stolen waters, and the transgression — they all happen in the realm of concealment, away from public witness. As a spatial/domain concept, הַסֵּתֶר is neutral in its surface form (hiddenness can be holy, as in seter Elyon), but in this Torah its bechina is entirely with the evil domain — it IS the domain of תַּאֲווֹת and עֲבֵרָה. Polarity here is evil because in Torah 146's specific framing, the Seter IS the space claimed by lust. Torah enters it to reclaim it, but the Seter's essential nature in this teaching is the concealed domain of desire.",
+      "source_quote": "עִקַּר תַּאֲווֹת הֵם בַּסֵּתֶר ... וְאֵין בְּנֵי אָדָם רְגִילִים שָׁם. אֲבָל הַתּוֹרָה הִיא עוֹמֶדֶת שָׁם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "New bechina edge needed: תאוות ↔ הסתר (reference 146). This node does not appear in torahData.js for any reference under this name."
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּאֲווֹת וְרוּחַ שְׁטוּת",
+      "node_id": "רוח שטות",
+      "node_text": "רוּחַ שְׁטוּת",
+      "polarity": "evil",
+      "reason": "The Rebbe states explicitly: 'כִּי בִּשְׁעַת הָעֲבֵרָה הָיָה בּוֹ רוּחַ שְׁטוּת' — at the moment of the transgression, the spirit of folly WAS IN HIM. This is the IS-equation between the transgressor's state and ruach shtut: being in a peti-state IS having ruach shtut. The ruach shtut prevents the sinner from hearing Torah's call, just as the power of lust at the moment of desire blocks wisdom. The ruach shtut IS the internal-state equivalent of the external domain of הַסֵּתֶר — both prevent the person from being connected to Torah's call. The source of this identification is the Talmud (Sota 3a): 'ein adam over aveira ela im ken nikhnas bo ruach shtut' — no person sins unless a spirit of folly enters him. This Talmudic principle is the grounding for the bechina: עֲבֵרָה ↔ רוּחַ שְׁטוּת. The node 'רוח שטות' already exists in torahData.js for references 1, 19, 54, and 176. Polarity is evil per those existing entries (is_bad=1 in edge 2721 for reference 1).",
+      "source_quote": "כִּי בִּשְׁעַת הָעֲבֵרָה הָיָה בּוֹ רוּחַ שְׁטוּת, וְאַחַר גְּמַר הָעֲבֵרָה הִטָּה אָזְנוֹ לַאֲמָרֶיהָ שֶׁל הַתּוֹרָה, וְהֶחְכִּים וּמִתְחָרֵט",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "note": "The node 'רוח שטות' already exists in torahData.js with bechina edges for references 1 (edge 2721), 19 (edges 2720, 2825), and 54 (edge 2719). Needs a new bechina edge for reference 146 pairing it with: עברה."
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּאֲווֹת וְרוּחַ שְׁטוּת",
+      "node_id": "עברה",
+      "node_text": "עֲבֵרָה",
+      "polarity": "evil",
+      "reason": "The transgression (עֲבֵרָה) is the event that defines the moment of ruach shtut — it IS the moment when the peti cannot hear Torah. The text refers to 'שְׁעַת הָעֲבֵרָה' (the moment of the transgression) as the defining characteristic of the ruach-shtut state. The Talmudic dictum cited in the proof context (Sota 3a) equates sin with ruach shtut as IS-language: the person who sins IS (by definition) in the ruach-shtut state. In Torah 146, עֲבֵרָה IS the bechina partner of רוּחַ שְׁטוּת — they are two faces of the same event: the ruach shtut IS what makes the transgression happen; the transgression IS the ruach-shtut manifested in action. The node 'בעל עברה' already exists in torahData.js (edge 1969, reference 1) where it is paired with 'משוגע' in a bechina using the same Sota 3a proof text. In Torah 146 the Rebbe uses the same Talmudic grounding to establish עֲבֵרָה ↔ רוּחַ שְׁטוּת. Polarity is evil: transgression belongs to the domain of the sitra achra.",
+      "source_quote": "מֵחֲמַת תְּשׁוּקַת תַּאֲוָתוֹ אֵינוֹ שׁוֹמֵעַ קְרִיאָתָהּ, וְאַחַר גְּמַר תַּאֲוָתוֹ הוּא מַרְגִּישׁ תֵּכֶף קְרִיאָתָהּ, וּמִתְחָרֵט תֵּכֶף עַל הָעֲבֵרָה",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "note": "The node 'בעל עברה' exists in torahData.js (edge 1969, reference 1, bechina with 'משוגע'). The related node 'עברה' (as a standalone node) needs a bechina edge for reference 146 pairing it with: רוח שטות. The Sota 3a proof text that grounds edge 1969 is the same one implicitly invoked in Torah 146."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_in_dataset_for_ref_146": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "אישה — Torah IS CALLED (נִקְרֵאת) a woman; explicit bechina marker; new node for reference 146",
+      "עדות — the testimony of God (עֵדוּת ה') IS Torah's identity in this teaching; new node for reference 146",
+      "מחכימת פתי — making the simple wise; IS a bechina of Torah AND of חרטה; new node for reference 146",
+      "חרטה — regret after transgression; IS a bechina of מחכימת פתי per explicit statement; new node for all references",
+      "מים גנובים — stolen waters (Prov. 9:17); IS the bechina of lusts in the hidden domain; new node for all references",
+      "הסתר — the hidden/secret domain; IS the essential domain of lusts; new node for reference 146"
+    ],
+    "nodes_already_in_dataset_needing_ref_146_edges": [
+      "תורה — exists in many references; needs bechina edges to אישה, עדות, מחכימת פתי for reference 146",
+      "תאוות — exists in references 27, 144 and others; needs bechina edges to מים גנובים, הסתר for reference 146",
+      "רוח שטות — exists in references 1, 19, 54, 176; needs bechina edge to עברה for reference 146",
+      "עברה (or בעל עברה) — exists in reference 1 (edge 1969); needs bechina edge to רוח שטות for reference 146"
+    ],
+    "proposed_bechina_edges_for_reference_146": [
+      {"node1": "תורה", "node2": "אישה", "proof_summary": "Torah IS CALLED (הַנִּקְרֵאת) a woman — explicit נִקְרֵאת language"},
+      {"node1": "תורה", "node2": "עדות", "proof_summary": "'עֵדוּת ה' נֶאֱמָנָה' — Torah IS testimony of God"},
+      {"node1": "תורה", "node2": "מחכימת פתי", "proof_summary": "Torah IS described as 'מַחְכִּימַת פֶּתִי' per Psalm 19:8 and the teaching's resolution"},
+      {"node1": "חרטה", "node2": "מחכימת פתי", "proof_summary": "'וְזֹאת הַחֲרָטָה, זֶה בְּחִינַת מַחְכִּימַת פֶּתִי' — explicit בְּחִינַת formula"},
+      {"node1": "תאוות", "node2": "מים גנובים", "proof_summary": "'עִקַּר תַּאֲווֹת הֵם בַּסֵּתֶר, בִּבְחִינַת מַיִם גְּנוּבִים יִמְתָּקוּ' — explicit בְּחִינַת formula"},
+      {"node1": "תאוות", "node2": "הסתר", "proof_summary": "'עִקַּר תַּאֲווֹת הֵם בַּסֵּתֶר' — IS-language equating lusts with the hidden domain"},
+      {"node1": "עברה", "node2": "רוח שטות", "proof_summary": "'בִּשְׁעַת הָעֲבֵרָה הָיָה בּוֹ רוּחַ שְׁטוּת' + Sota 3a: sin IS ruach shtut"}
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "פֶּתִי (the simple/fool)",
+        "reason": "The פֶּתִי is mentioned as the recipient of Torah's action ('מַחְכִּימַת פֶּתִי' — making the simple wise; 'מִי פֶּתִי יָסוּר הֵנָּה' — who is simple, let him turn here). The פֶּתִי is the battleground concept: Torah calls to him from the good side, and ruach shtut inhabits him from the evil side. However, the term פֶּתִי is not itself established as a bechina node via explicit bechina language in this Torah — it appears as the object/recipient of the teaching's actions rather than as an entity whose essential nature is being equated with another concept via 'בְּחִינַת' or 'נִקְרָא' language. 'מַחְכִּימַת פֶּתִי' is already captured as a node in Package 1; the פֶּתִי as a standalone concept is descriptive context rather than a bechina node. Excluded.",
+        "borderline": true
+      },
+      {
+        "concept": "מִי פֶּתִי יָסוּר הֵנָּה (Prov. 9:16 / Zohar Acharei)",
+        "reason": "This verse is cited as Torah's call to the sinner in the secret domain — 'who is simple, let him turn here.' It is quoted as a proof-text showing that Torah calls from the hidden domain, not as a concept whose essential nature is being equated with another concept via bechina language. It supports the eitza structure (Torah stands there and CALLS) rather than defining a new bechina node. Excluded as proof-text, not a bechina gap.",
+        "borderline": false
+      },
+      {
+        "concept": "תַּאֲוָתוֹ (his desire, singular possessive form)",
+        "reason": "The text uses 'תְּשׁוּקַת תַּאֲוָתוֹ' (the longing of his desire) and 'גְּמַר תַּאֲוָתוֹ' (the completion of his desire). These are the singular, possessive forms of the same concept covered by תַּאֲווֹת (Package 2). They are not separate bechina nodes — they are the same concept expressed in context. Already captured under תַּאֲווֹת. Not a gap.",
+        "borderline": false
+      },
+      {
+        "concept": "חֹשֶׁן מִשְׁפָּט / הִלְכוֹת עֵדוּת סִימָן ל\"ה סָעִיף י\"ד",
+        "reason": "The Choshen Mishpat ruling (§35:14 — the ancient enactment that women are believed in places men don't go) is cited as the halakhic proof for the teaching's resolution. It is a legal source providing the rule, not a concept being equated via bechina. It is the mechanism of proof, not a bechina node. Excluded.",
+        "borderline": false
+      },
+      {
+        "concept": "תַּקָּנַת קַדְמוֹנִים (ancient enactment)",
+        "reason": "This is the halakhic category ('takanat kadmonim') cited in the Choshen Mishpat ruling. It is a legal framework concept used as proof, not established as a bechina of any concept in the teaching. Excluded.",
+        "borderline": false
+      },
+      {
+        "concept": "הֶחְכִּים (he became wise / he returned to wisdom)",
+        "reason": "The text says 'וְהֶחְכִּים וּמִתְחָרֵט' — he became wise and regretted. 'הֶחְכִּים' is a verbal form describing the moment of return to wisdom (the anti-ruach-shtut state). It is the same conceptual event as חֲרָטָה — becoming-wise IS the regret, and both are already captured under the bechina 'חֲרָטָה IS מַחְכִּימַת פֶּתִי.' The concept of 'becoming wise' is the verbal form of what 'מַחְכִּימַת פֶּתִי' describes as Torah's action. This is an aspect of Package 1 already captured, not a separate node.",
+        "borderline": false
+      },
+      {
+        "concept": "הַזּוֹהַר (Zohar Acharei, daf 58) citation",
+        "reason": "The Zohar on Acharei (folio 58) is cited as the source for 'מִי פֶּתִי יָסוּר הֵנָּה.' It is a source citation, not a concept being equated via bechina. Not a gap.",
+        "borderline": false
+      }
+    ],
+    "good_evil_mirror_note": "Torah #146 follows the classic good/evil mirror structure perfectly. The evil pole (Package 2: תַּאֲווֹת, מַיִם גְּנוּבִים, הַסֵּתֶר, רוּחַ שְׁטוּת, עֲבֵרָה) is the domain where the sinner lives at the moment of sin. The good pole (Package 1: תּוֹרָה, אִשָּׁה, עֵדוּת, מַחְכִּימַת פֶּתִי, חֲרָטָה) is the domain of Torah's redemptive power that reaches into the evil domain. The eitza arc between them: [Pkg 2: evil lust in secret] → [BRIDGE: Torah stands in that secret place] → [Pkg 1: Torah's testimony and wisdom-making draw forth regret]. The point of fracture — the concept that can tip either way — is הַסֵּתֶר (the hidden domain): it is where evil operates, but also where Torah stands as witness.",
+    "structural_note": "Torah #146 is one of the shortest teachings in LM Volume 1: 5 sentences, 0 dataset edges. Despite its brevity, it is conceptually dense: the entire teaching rests on a paradox (woman testifying) resolved by a structural insight (Torah as witness in the hidden domain of lust). The teaching has a complete good/evil binary structure with a clear eitza flow from evil to good through the mechanism of post-sin regret."
+  }
+}

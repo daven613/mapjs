@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "source": "Torah #149 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===149 AND type==='bechina'. Result: zero bechina edges found in the dataset for reference 149. The single dataset edge for this Torah (id 2477) is of type 'eitza' (chatzot → pidyon/sweetening of judgments). Torah #149 is among the shortest teachings in Likutay Moharan Volume 1: five lines, one verse, one practical teaching, and one brief addendum on gazing at the heavens in the morning. Despite the zero bechina count in the current dataset, the source text contains three bechina-language identifications (see torah_149_additions.json): (1) צֶדֶק – דִּינָא, (2) מִשְׁפָּט – רַחֲמֵי, and (3) חֲצוֹת IS הַמְתָּקַת הַדִּינִים. These three missing bechina pairs, once added, yield three conceptual clusters distributed across two clear thematic packages and a third possible package. The packages are defined here based on source text analysis and the bechina-language concepts identified in the gap analysis. Because the current dataset has zero bechina edges for this Torah, no raw connected components exist to process algorithmically — all package structures are derived from the gap analysis and the structural argument of the teaching."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 149,
+      "label": "חֲצוֹת וְהַמְתָּקַת הַדִּינִים",
+      "label_en": "Midnight Prayer and the Sweetening of Judgments",
+      "polarity": "good",
+      "reason": "This package centers on חֲצוֹת לַיְלָה (the midnight hour / midnight prayer practice) as the practice that sweetens din (strict judgment) and achieves the rectification of the verse. The text declares 'כִּי הוּא הַמְתָּקַת הַדִּינִים' — IT IS the sweetening of judgments — using the bechina formula. Chatzot shares its essential nature with המתקת הדינים: they are two expressions of the same rectifying reality. The analogy with פִּדְיוֹן (redemption/ransom payment) further enriches this cluster: chatzot functions with the same essential dynamic as pidyon — a payment/neutralization that releases the held captive (here: souls held under strict din). The practical halakhic detail in the teaching (chatzot always begins 6 hours after nightfall, extends through the second watch) belongs to this same thematic cluster as the contextual definition of the practice. The dominant node is חֲצוֹת because it is the named subject of the entire Torah and has the most conceptual connections within this package. The polarity is good: chatzot is an act of holiness, arising to praise God at midnight (as David did — cf. Psalm 119:62, the verse cited), and it achieves sweetening of judgments, a positive rectification.",
+      "dominant_node": "חצות",
+      "nodes": [
+        "חצות",
+        "המתקת הדינים",
+        "פדיון, כי הוא המתקת הדינים"
+      ],
+      "node_degrees": {
+        "חצות": 0,
+        "המתקת הדינים": 0,
+        "פדיון, כי הוא המתקת הדינים": 0
+      },
+      "merge_notes": [
+        "The node 'פדיון, כי הוא המתקת הדינים' (id node2 of edge 2477) already includes the identification with המתקת הדינים in its node label. Once the bechina edge {חצות ↔ המתקת הדינים} is added to the dataset (see torah_149_additions.json, addition #3), this package will have one bechina edge anchoring its two primary nodes. The pidyon analogy is structurally close to a bechina but the source text uses 'מסגל כמו' (is endowed/suited like) for pidyon, which is analogical rather than an identity statement. The true bechina identity is chatzot ↔ המתקת הדינים."
+      ],
+      "note": "חצות is the only node currently in the dataset for reference 149 (as node1 of the eitza edge 2477). The other two nodes in this package are proposed additions from the gap analysis. Once the bechina edge is added, the component will have 2 directly connected nodes (חצות and המתקת הדינים) with פדיון serving as a closely related concept in the same domain."
+    },
+    {
+      "id": 2,
+      "torah_ref": 149,
+      "label": "צֶדֶק וָדִין",
+      "label_en": "Tzedek and Strict Judgment",
+      "polarity": "evil",
+      "reason": "The text states explicitly: 'כִּי צֶדֶק – דִּינָא' — Tzedek IS din. This is a bechina equation in the classic 'X – Y' formula that Rebbe Nachman uses throughout Likutay Moharan. Tzedek (the quality of righteousness/justice, also associated with the sefirah Malkhut in its strict aspect) and דין (strict judgment, the harsh face of heavenly law) share the same essential nature in this Torah's context: they are both the force of strict accounting that requires sweetening through chatzot. The polarity of this package is evil (or more precisely: the side that requires rectification) — not that tzedek is intrinsically evil, but in this Torah's structural argument, tzedek/din is the force of harshness that suppresses and constricts, the force that chatzot (Package 1) is brought to sweeten and overcome. The teaching frames the verse 'על מִשְׁפְּטֵי צִדְקֶךָ' as 'mishpat prevailing over tzedek' — i.e., rachamim overcoming din. Tzedek/din is the force being overcome: it is the negative pole in this Torah's polarity structure. Both nodes (צדק and דין) are proposed additions to the dataset for this Torah (see torah_149_additions.json, additions #1 and related). They share a single essential nature: strict judgment / the attribute of stern divine accounting.",
+      "dominant_node": "צדק",
+      "nodes": [
+        "צדק",
+        "דין"
+      ],
+      "node_degrees": {
+        "צדק": 0,
+        "דין": 0
+      },
+      "merge_notes": [
+        "This 2-node component is self-sufficient. Merge with Package 3 (משפט/רחמים) is explicitly ruled out: they represent opposite cosmic poles (din vs. rachamim). They are the structural opposites of the teaching, not the same essential nature. Merge with Package 1 is also ruled out: chatzot sweetens din but is not the same essential nature as din."
+      ],
+      "note": "Both nodes צדק and דין are already present in the broader dataset for other Torahs but have no bechina edge for reference 149. A new bechina edge {צדק ↔ דין} for reference 149 is proposed in the additions file."
+    },
+    {
+      "id": 3,
+      "torah_ref": 149,
+      "label": "מִשְׁפָּט וְרַחֲמִים",
+      "label_en": "Mishpat and Divine Mercy",
+      "polarity": "good",
+      "reason": "The text states explicitly: 'וּמִשְׁפָּט – רַחֲמֵי' — Mishpat IS rachamim. This is the second bechina equation in the Torah, parallel in structure to the צדק–דין equation of Package 2. Mishpat (legal rule / divine judgment in its merciful mode) and רַחֲמִים (compassion/mercy) share the same essential nature in this context. The teaching's entire resolution — 'שֶׁצֶּדֶק גּוֹבֵר עַל מִשְׁפָּט' is explained as tzedek/din being overridden by mishpat/rachamim — depends on this identification. Mishpat here is the merciful counterpart: it is the divine attribute that looks beyond strict accounting toward compassion. The polarity is good: rachamim and mishpat in this Torah's usage are the positive, life-giving divine attribute that the practice of chatzot activates against the harshness of din/tzedek. Package 3 is the direct good-mirror of Package 2 (evil): same structural category (divine attribute/judgment mode), opposite cosmic orientation. Together, Packages 2 and 3 constitute the good/evil mirror structure that the framework mandates identifying. Both nodes (משפט and רחמים/רחמי) are proposed additions for reference 149 (see torah_149_additions.json, additions #2 and related).",
+      "dominant_node": "משפט",
+      "nodes": [
+        "משפט",
+        "רחמים"
+      ],
+      "node_degrees": {
+        "משפט": 0,
+        "רחמים": 0
+      },
+      "merge_notes": [
+        "This 2-node component is self-sufficient as the direct good-mirror of Package 2. Merge with Package 2 is ruled out (opposite polarities; the framework forbids merging across the good/evil polarity boundary when they represent opposing cosmic forces). Merge with Package 1 is possible conceptually (chatzot achieves rachamim), but that is an eitza relationship (cause-effect), not a bechina (shared nature). The essential nature of Package 1 (chatzot / the practice of sweetening) is distinct from the essential nature of Package 3 (the attribute of mercy itself). They are kept separate."
+      ],
+      "note": "The existing dataset edge 2477 (type: eitza) already encodes the causal flow from chatzot to המתקת הדינים, which structurally connects Package 1 → Package 2/3 axis (chatzot sweetens din and activates rachamim). The eitza flows between packages; the bechina pairs are within packages. This structural separation is maintained here."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_in_dataset": 1,
+    "total_packages": 3,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "packages_from_gap_analysis": 3,
+    "note_on_structure": "Torah #149 has zero bechina edges in the current dataset. Its three packages are derived entirely from the gap analysis of the source text's bechina-language statements. The good/evil mirror structure is: Package 2 (צדק/דין, evil — strict judgment) ↔ Package 3 (משפט/רחמים, good — merciful judgment). Package 1 (חצות/המתקת הדינים, good — the midnight practice) is the practical bridge: it is the act that activates the transition from Package 2's reign to Package 3's reign. The eitza flow of the Torah is: Chatzot (Package 1) —eitza→ sweetens din / activates rachamim —result→ משפט prevails over tzedek.",
+    "good_evil_mirror": "Package 2 (צדק/דין) ↔ Package 3 (משפט/רחמים). Same structural domain (divine judgment attributes), opposite cosmic orientations: din constricts and demands strict accounting; rachamim/mishpat extends beyond strict accounting toward compassion and redemption.",
+    "eitza_summary": "The existing edge (id 2477, eitza) encodes: חצות → {פדיון / המתקת הדינים}. This is the causal flow connecting Package 1 (source: chatzot) to the resolution of the din/rachamim polarity. An additional eitza implicit in the text: looking at the heavens in the morning → draws da'at (Line 5 addendum — this is a separate, structurally independent teaching appended to the main Torah)."
+  }
+}

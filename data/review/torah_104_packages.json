@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "source": "Torah #104 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "ZERO edges exist in torahData.js with reference===104 AND type==='bechina'. The dataset has not yet been populated for this Torah. All packages below are derived entirely from Step 5 (gap analysis of the source text torah_104.txt) and Step 6 (new package check). Torah #104 is a 5-line aggadic-halakhic teaching from a Midrash (cited in Sefer Chassidim §137 and Reishit Chokhmah, Shaar HaAnavah ch. 5) about Moses's false accusation of Bnei Gad. The teaching's bechina structure is built on two Talmudic identity declarations — Ketubot 110b ('dwelling outside Eretz Yisrael is as if having no God') and Shabbat 97 ('one who suspects the innocent is struck in his body') — and their structural mirror (the punishment reflects the sin's essential nature). Two packages emerge: a good cluster (connection to God through Eretz Yisrael) and its evil mirror (disconnection from God = exile = idol worship). These packages are proposed pending data entry."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 104,
+      "label": "אֶרֶץ יִשְׂרָאֵל וְחֵלֶק בֵּאלֹהִים",
+      "label_en": "Eretz Yisrael and a Portion in God",
+      "polarity": "good",
+      "reason": "The positive pole of Torah #104's teaching centers on the essential equivalence between desiring a portion in Eretz Yisrael and having a relationship with God. The Gemara (Ketubot 110b) — 'כָּל הַדָּר בְּחוּץ לָאָרֶץ כְּאִלּוּ אֵין לוֹ אֱלוֹהַּ' — is a bechina-declaration in the classic Talmudic 'כְּאִלּוּ' form: the inverse of this statement is the positive identity: dwelling IN Eretz Yisrael IS, in its essential nature, having God. The Torah explicitly states that Bnei Reuven and Bnei Gad WERE כְּשֵׁרִים (innocent/worthy) because they DID want a portion in the Land — their wanting a portion in the Land is what makes them people who have God. These three concepts share a single essential nature: the connection between Israel's people and their divine inheritance through the Land. כְּשֵׁרִים (worthy people) is the human embodiment of this connection — those who have God because they cleave to the Land. חֵלֶק בָּאָרֶץ (a portion in the Land) is the concrete form of that divine connection. The dominant node is אֶרֶץ יִשְׂרָאֵל because the entire teaching's structure pivots on the Land as the medium of divine presence — it is the concept with the highest connectivity in this cluster (connecting both to 'having God' and to the innocent people who want it).",
+      "dominant_node": "אֶרֶץ יִשְׂרָאֵל",
+      "nodes": [
+        "אֶרֶץ יִשְׂרָאֵל",
+        "יֶשׁ לוֹ אֱלוֹהַּ",
+        "כְּשֵׁרִים"
+      ],
+      "node_degrees": {
+        "אֶרֶץ יִשְׂרָאֵל": 2,
+        "יֶשׁ לוֹ אֱלוֹהַּ": 2,
+        "כְּשֵׁרִים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["אֶרֶץ יִשְׂרָאֵל", "יֶשׁ לוֹ אֱלוֹהַּ"],
+          "reason": "The Gemara (Ketubot 110b) declares: 'כָּל הַדָּר בְּחוּץ לָאָרֶץ כְּאִלּוּ אֵין לוֹ אֱלוֹהַּ'. The inverse is the positive bechina: dwelling in the Land = having God. The Land and divine connection are two faces of the same essential reality — not one causing the other, but both expressing the same spiritual state of belonging to the covenant. This 'כְּאִלּוּ' identity is treated as a true bechina, consistent with the framework's treatment of 'כְּאִלּוּ' in Torah #103."
+        },
+        {
+          "merged_nodes": ["כְּשֵׁרִים"],
+          "reason": "Line 5 explicitly establishes the innocence (כְּשֵׁרוּת) of Bnei Reuven and Bnei Gad by the criterion of their desiring a portion in Eretz Yisrael. The shared nature: כְּשֵׁרִים (those who are worthy) ARE those who have God because they want Eretz Yisrael. כְּשֵׁרוּת in this Torah is not a general moral term but a specific identity — those who cleave to the divine inheritance of the Land. It belongs in the good cluster because it names the human type who embodies the Land-God connection."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 104,
+      "label": "חוּץ לָאָרֶץ וְאֵין לוֹ אֱלוֹהַּ",
+      "label_en": "Exile and Having No God — The Disconnection Cluster",
+      "polarity": "evil",
+      "reason": "The evil mirror of Package 1. The Gemara's identity declaration (Ketubot 110b) makes exile from the Land equivalent in essential nature to having no God. This cluster groups three concepts that are all facets of the same essential reality: spiritual disconnection from the divine. 'אֵין לוֹ אֱלוֹהַּ' (has no God) is the central concept because the whole teaching's structure depends on it — it is what Moshe falsely attributed to Bnei Gad (they have no God because they don't want the Land), and it is what his grandson truly embodied through idol worship. Dwelling in exile (חוּץ לָאָרֶץ) IS, in its essential nature, having no God — they are the same spiritual state viewed from different dimensions (geographic vs. theological). Idol worship (עֲבוֹדָה זָרָה / עֲבַד לְפֶסֶל) is the concrete, visible expression of having no God — not the cause or consequence but the direct embodiment. All three nodes share the same essential nature: absence of divine connection. The dominant node is 'אֵין לוֹ אֱלוֹהַּ' because it is the conceptual hub that connects both the geographic (exile) and the ritual (idol worship) dimensions. The good/evil mirror is perfect and explicit: Package 1 (אֶרֶץ יִשְׂרָאֵל → יֶשׁ לוֹ אֱלוֹהַּ → כְּשֵׁרִים) mirrors Package 2 (חוּץ לָאָרֶץ → אֵין לוֹ אֱלוֹהַּ → עֲבוֹדָה זָרָה) exactly.",
+      "dominant_node": "אֵין לוֹ אֱלוֹהַּ",
+      "nodes": [
+        "אֵין לוֹ אֱלוֹהַּ",
+        "חוּץ לָאָרֶץ",
+        "עֲבוֹדָה זָרָה"
+      ],
+      "node_degrees": {
+        "אֵין לוֹ אֱלוֹהַּ": 2,
+        "חוּץ לָאָרֶץ": 1,
+        "עֲבוֹדָה זָרָה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["חוּץ לָאָרֶץ", "אֵין לוֹ אֱלוֹהַּ"],
+          "reason": "Directly declared by the Gemara (Ketubot 110b): 'כָּל הַדָּר בְּחוּץ לָאָרֶץ כְּאִלּוּ אֵין לוֹ אֱלוֹהַּ'. The 'כְּאִלּוּ' (as if) is a bechina-identity in Talmudic language — the Rabbis are declaring that these two states share the same essential spiritual nature. Exile from the Land IS, ontologically, being without God. Not cause-and-effect: one who lives outside the Land does not thereby LOSE God sequentially — rather, the state of exile and the state of having no God are the same spiritual condition expressed in two registers (geographic and theological)."
+        },
+        {
+          "merged_nodes": ["עֲבוֹדָה זָרָה"],
+          "reason": "The grandson's idol worship (עֲבַד לְפֶסֶל מִיכָה — 'served Micha's idol') is explicitly presented as the concrete realization of 'אֵין לוֹ אֱלוֹהַּ'. It is not that idol worship CAUSES having no God; rather, idol worship IS having no God in its most visible form — they share the same essential nature. The punishment's fitness (middah kenegged middah) works precisely because the grandson's idol worship is not merely a consequence of something but is the same state (having no God) that Moshe falsely attributed to Bnei Gad. The structural identity of sin and punishment is itself a bechina: they are the same essential thing manifested at two different points in time."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_from_dataset": 0,
+    "total_nodes_from_source_text": 6,
+    "total_packages": 2,
+    "raw_connected_components_from_dataset": 0,
+    "note": "Torah #104 (Likutay Moharan Vol. 1) has ZERO edges in torahData.js. All 6 nodes and both packages are derived exclusively from the source text gap analysis (Step 5). The bechina language is of the classical Talmudic 'כְּאִלּוּ' identity form (Ketubot 110b), which this framework treats as genuine bechina-declarations (cf. Torah #103's treatment of 'כְּאִלּוּ גּוֹזְלוֹ' as a real identity). The good/evil mirror structure is fully explicit: Package 1 (אֶרֶץ יִשְׂרָאֵל — having God — being worthy) mirrors Package 2 (exile — having no God — idol worship). The teaching's argument: desiring Eretz Yisrael = having God → Moshe wrongly said Bnei Gad don't want it → wrongly said they have no God → was punished by his grandson truly having no God (= idol worship). The binary is the teaching's entire structure. A third implicit concept (חוֹשֵׁד בִּכְשֵׁרִים — suspecting the innocent) was evaluated and determined to be an eitza node (the mechanism linking Moshe's sin to his punishment), not a bechina node — it appears in torah_104_additions.json."
+  }
+}

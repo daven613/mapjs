@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "source": "Torah #109 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all reference===109 edges from torahData.js, and the full source text torah_109.txt. FINDING: The dataset contains exactly 1 bechina edge for Torah #109 (id 1795: נה והאנחה ↔ מיתה בגוף ונפש) and 4 eitza edges. The source text contains at least 3 additional explicit bechina pairs not in the dataset. These are identified below. The Torah is structured around the concept that the breath-vapor (הבל) IS the rope (חבל) of the soul, and that sighing enacts a mini-death that severs one soul-connection and establishes another. Two opposing rope-domains (קדושה / טומאה) form the good/evil mirror."
+  },
+  "additions": [
+    {
+      "package_id": "109-GAP-A",
+      "package_label": "הֶבֶל וְחֶבֶל הַנְּשָׁמָה — The Breath as Soul-Rope",
+      "node_id": "הבל של האדם",
+      "node_text": "הַהֶבֶל שֶׁל הָאָדָם",
+      "polarity": "neutral",
+      "reason": "The Rebbe explicitly identifies the breath-vapor (הבל) of a person as the rope (חבל) that connects the soul to its root — using the bechina marker 'הוּא': 'הַהֶבֶל שֶׁל הָאָדָם, הוּא חֶבֶל הַמְקַשֵּׁר הַנְּשָׁמָה לִמְקוֹם שָׁרְשָׁהּ, לְטוֹב אוֹ לְהֵפֶךְ, חַס וְשָׁלוֹם'. This is a direct bechina: the vapor/breath IS the connecting rope. Polarity is neutral because this rope-function operates in both directions (toward holiness or toward impurity). This node is entirely missing from the dataset.",
+      "source_quote": "כִּי הַהֶבֶל שֶׁל הָאָדָם, הוּא חֶבֶל הַמְקַשֵּׁר הַנְּשָׁמָה לִמְקוֹם שָׁרְשָׁהּ, לְטוֹב אוֹ לְהֵפֶךְ, חַס וְשָׁלוֹם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "הבל של האדם",
+          "node2": "חבל המקשר הנשמה למקום שרשה",
+          "proof_text": "כִּי הַהֶבֶל שֶׁל הָאָדָם, הוּא חֶבֶל הַמְקַשֵּׁר הַנְּשָׁמָה לִמְקוֹם שָׁרְשָׁהּ, לְטוֹב אוֹ לְהֵפֶךְ",
+          "bechina_marker": "הוּא"
+        }
+      ]
+    },
+    {
+      "package_id": "109-GAP-A",
+      "package_label": "הֶבֶל וְחֶבֶל הַנְּשָׁמָה — The Breath as Soul-Rope",
+      "node_id": "חבל המקשר הנשמה למקום שרשה",
+      "node_text": "חֶבֶל הַמְקַשֵּׁר הַנְּשָׁמָה לִמְקוֹם שָׁרְשָׁהּ",
+      "polarity": "neutral",
+      "reason": "This is the second node in the הבל = חבל bechina. The rope that connects the soul to its root is the same reality as the breath/vapor — one describes the physical phenomenon (vapor from the mouth), the other describes its spiritual function (soul-connecting rope). Polarity neutral: this rope connects to holiness OR to impurity depending on the sigh's direction. Entirely missing from dataset.",
+      "source_quote": "הַהֶבֶל שֶׁל הָאָדָם, הוּא חֶבֶל הַמְקַשֵּׁר הַנְּשָׁמָה לִמְקוֹם שָׁרְשָׁהּ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "חבל המקשר הנשמה למקום שרשה",
+          "node2": "הבל של האדם",
+          "proof_text": "הַהֶבֶל שֶׁל הָאָדָם, הוּא חֶבֶל הַמְקַשֵּׁר הַנְּשָׁמָה לִמְקוֹם שָׁרְשָׁהּ",
+          "bechina_marker": "הוּא"
+        }
+      ]
+    },
+    {
+      "package_id": "109-GAP-A",
+      "package_label": "הֶבֶל וְחֶבֶל הַנְּשָׁמָה — The Breath as Soul-Rope",
+      "node_id": "אנחה (כנמשכת אל הגרון)",
+      "node_text": "הָאֲנָחָה כְּשֶׁנִּמְשֶׁכֶת אֶל הַגָּרוֹן",
+      "polarity": "neutral",
+      "reason": "The Rebbe makes a second explicit bechina in the text: the sigh as it draws toward the throat is a bechina of 'תוסף רוחם יגועון' (the spirit gathering before expiration). This is stated twice — once in the body of the teaching (line 6) and once in the addendum from the students' manuscript (line 17). The essential nature shared: the moment of inhalation/gathering before the breath releases = the moment before spiritual death/severance. This is a distinct node from 'נה והאנחה' in the dataset — it specifies the sigh at the moment it draws toward the throat (the drawing-in motion, the brief intensification).",
+      "source_quote": "הַנֹּהַּ וְהָאֲנָחָה, אִם תְּדַקְדֵּק וּתְעַיֵּן בָּהּ, אֵיךְ הִיא נִמְשֶׁכֶת אֶל הַגָּרוֹן, הִיא בִּבְחִינַת תּוֹסֵף רוּחָם, כִּי לְפִי שָׁעָה קַלָּה נִתּוֹסֵף רוּחוֹ, וְכִמְעַט רֶגַע תִּגְוַע וְתֵאָסֵף",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "אנחה (כנמשכת אל הגרון)",
+          "node2": "תוסף רוחם יגועון",
+          "proof_text": "הִיא בִּבְחִינַת תּוֹסֵף רוּחָם, כִּי לְפִי שָׁעָה קַלָּה נִתּוֹסֵף רוּחוֹ, וְכִמְעַט רֶגַע תִּגְוַע וְתֵאָסֵף",
+          "bechina_marker": "הִיא בִּבְחִינַת"
+        },
+        {
+          "node1": "אנחה (כנמשכת אל הגרון)",
+          "node2": "הבל של האדם",
+          "proof_text": "Conceptual link: the sigh IS the breath-vapor that acts as the soul-connecting rope. Both describe the same reality of breath that precedes spiritual transition."
+        }
+      ]
+    },
+    {
+      "package_id": "109-GAP-A",
+      "package_label": "הֶבֶל וְחֶבֶל הַנְּשָׁמָה — The Breath as Soul-Rope",
+      "node_id": "תוסף רוחם יגועון",
+      "node_text": "תּוֹסֵף רוּחָם יִגְוָעוּן (תהלים קד:כט)",
+      "polarity": "neutral",
+      "reason": "The verse from Tehillim 104:29 — 'when You gather their spirit, they expire' — is explicitly named as the bechina that the sigh (as it draws to the throat) resembles. This is not merely a prooftext; the Rebbe uses it as a bechina marker: 'הִיא בִּבְחִינַת תּוֹסֵף רוּחָם'. The essential nature: the brief intensification of breath/spirit just before release/death. The sigh-moment shares the essential nature of pre-death spirit-gathering. This verse-concept is missing from the dataset as a bechina node for Torah #109.",
+      "source_quote": "הִיא בִּבְחִינַת תּוֹסֵף רוּחָם, כִּי לְפִי שָׁעָה קַלָּה נִתּוֹסֵף רוּחוֹ, וְכִמְעַט רֶגַע תִּגְוַע וְתֵאָסֵף",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "תוסף רוחם יגועון",
+          "node2": "אנחה (כנמשכת אל הגרון)",
+          "proof_text": "הִיא בִּבְחִינַת תּוֹסֵף רוּחָם — the sigh IS this verse-moment",
+          "bechina_marker": "בִּבְחִינַת"
+        },
+        {
+          "node1": "תוסף רוחם יגועון",
+          "node2": "מיתה בגוף ונפש",
+          "proof_text": "Both describe the spiritual death-moment: מיתה (death) in the body and soul is what 'תוסף רוחם יגועון' expresses — spirit gathers, then expires. They are two expressions of the same death-process. The Rebbe explicitly connects them (lines 5-6 of the text)."
+        }
+      ]
+    },
+    {
+      "package_id": "109-GAP-B",
+      "package_label": "חֶבֶל דִּקְדֻשָּׁה — The Holy Rope",
+      "node_id": "חבל דקדשה",
+      "node_text": "חֶבֶל דִּקְדֻשָּׁה",
+      "polarity": "good",
+      "reason": "The Rebbe opens the structural teaching with 'יֵשׁ שְׁנֵי חֲבָלִים: חֶבֶל דִּקְדֻשָּׁה, וּכְנֶגְדּוֹ דְּטֻמְאָה'. The Holy Rope is the positive pole of the Torah's core binary. It is the domain to which the soul is connected when one sanctifies oneself, and to which the penitent's sigh re-connects the soul. It is the good mirror of חבל דטומאה. Not explicitly called a bechina of a specific concept, but it is one of the two fundamental structural realities around which the entire Torah is built. It belongs to a package with the other holy-connection nodes.",
+      "source_quote": "יֵשׁ שְׁנֵי חֲבָלִים: חֶבֶל דִּקְדֻשָּׁה, וּכְנֶגְדּוֹ דְּטֻמְאָה. וְהַבְּחִירָה חָפְשִׁית, מִי שֶׁמְּקַדֵּשׁ עַצְמוֹ מְקַשֵּׁר עַצְמוֹ בְּחֶבֶל דִּקְדֻשָּׁה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "חבל דקדשה",
+          "node2": "חיות / מקור חיות הנשמה בקדושה",
+          "proof_text": "וְצָרִיךְ לִהְיוֹת לוֹ חִיּוּת מֵחֶבֶל מֵאֶחָד שֶׁבִּשְׁנֵיהֶם — the rope IS the source of vitality for the soul. This implicit bechina is stated in line 14."
+        }
+      ]
+    },
+    {
+      "package_id": "109-GAP-B",
+      "package_label": "חֶבֶל דִּקְדֻשָּׁה — The Holy Rope",
+      "node_id": "מקדש עצמו",
+      "node_text": "מִי שֶׁמְּקַדֵּשׁ עַצְמוֹ",
+      "polarity": "good",
+      "reason": "The one who sanctifies himself is, by this act, defined as the one connected to the Holy Rope ('מְקַשֵּׁר עַצְמוֹ בְּחֶבֶל דִּקְדֻשָּׁה'). This is an implicit bechina: sanctifying oneself IS being connected to the holy rope. The act and the state share the same essential nature. This node is already captured in the dataset as an eitza node (edge 1943), but the relationship between 'מקדש עצמו' and 'חבל דקדשה' has the quality of bechina, not just eitza — they describe the same reality from different angles (the subjective act and the objective connection).",
+      "source_quote": "מִי שֶׁמְּקַדֵּשׁ עַצְמוֹ מְקַשֵּׁר עַצְמוֹ בְּחֶבֶל דִּקְדֻשָּׁה",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 1943,
+      "edge_type_in_dataset": "eitza",
+      "reclassification_note": "Edge 1943 is classified as eitza (מי שמקדש עצמו → מקשר עצמו בחבל דקדשה). The relationship is debatable — sanctifying oneself and being connected to the holy rope could be read as two faces of the same state (bechina) rather than cause-and-effect. However, since the dataset has already classified this as eitza, it is noted here for review rather than definitively reclassified. The eitza reading is: the act of sanctifying (cause) produces the connection (effect). The bechina reading is: sanctifying oneself and being connected to holiness are the same state described from two angles.",
+      "proposed_bechina_edges": []
+    },
+    {
+      "package_id": "109-GAP-C",
+      "package_label": "חֶבֶל דְּטֻמְאָה — The Impurity Rope",
+      "node_id": "חבל דטמאה",
+      "node_text": "חֶבֶל דְּטֻמְאָה",
+      "polarity": "evil",
+      "reason": "The Impurity Rope is the evil mirror of חבל דקדשה. The Rebbe states explicitly: 'יֵשׁ שְׁנֵי חֲבָלִים: חֶבֶל דִּקְדֻשָּׁה, וּכְנֶגְדּוֹ דְּטֻמְאָה'. The word 'כְּנֶגְדּוֹ' (opposite/mirror) is itself a structural bechina marker — the two ropes are bechina mirrors of each other. The soul is always connected to exactly one rope, and the impure rope is the domain of tumah/sitra achra. Missing from dataset as a bechina node.",
+      "source_quote": "יֵשׁ שְׁנֵי חֲבָלִים: חֶבֶל דִּקְדֻשָּׁה, וּכְנֶגְדּוֹ דְּטֻמְאָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "חבל דטמאה",
+          "node2": "סטרא אחרא",
+          "proof_text": "The text explicitly names the evil rope's destination as 'הַסִּטְרָא אָחֳרָא וְהַטֻּמְאָה' (line 11). The impurity rope IS the sitra achra connection."
+        }
+      ]
+    },
+    {
+      "package_id": "109-GAP-C",
+      "package_label": "חֶבֶל דְּטֻמְאָה — The Impurity Rope",
+      "node_id": "מטמא עצמו",
+      "node_text": "מִי שֶׁמְּטַמֵּא עַצְמוֹ",
+      "polarity": "evil",
+      "reason": "The parallel (evil mirror) of מקדש עצמו. One who defiles himself IS connected to the impurity rope — same structural relationship as מקדש עצמו and חבל דקדשה, but at the evil pole. 'מִי שֶׁמְּטַמֵּא עַצְמוֹ מְקַשֵּׁר עַצְמוֹ בְּחֶבֶל דְּטֻמְאָה.' Defilement and connection to the impurity rope share the same essential nature (bechina), describing the same spiritual state from two angles.",
+      "source_quote": "מִי שֶׁמְּטַמֵּא עַצְמוֹ מְקַשֵּׁר עַצְמוֹ בְּחֶבֶל דְּטֻמְאָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "מטמא עצמו",
+          "node2": "חבל דטמאה",
+          "proof_text": "מִי שֶׁמְּטַמֵּא עַצְמוֹ מְקַשֵּׁר עַצְמוֹ בְּחֶבֶל דְּטֻמְאָה — defilement IS connection to the impurity rope",
+          "bechina_marker": "implicit equation (same state, two descriptions)"
+        }
+      ]
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "eitza_nodes_excluded": [
+    {
+      "node_id": "מי שמקדש עצמו",
+      "edge_id": 1943,
+      "note": "Captured in dataset as eitza. Flagged above for possible bechina reclassification review."
+    },
+    {
+      "node_id": "מקשר עצמו בחבל דקדשה",
+      "edge_id": 1943,
+      "note": "Result-end of eitza edge 1943. Describes the state of holy connection — overlaps with חבל דקדשה package node."
+    },
+    {
+      "node_id": "מי שמתאנח ונה על עברות שבידו, ורוצה לשוב בתשובה",
+      "edge_id": 2038,
+      "note": "Eitza source node (edge 2038). Describes the penitent who sighs. The eitza is: this person's sigh (cause) → severs from evil and attaches to holiness (effect)."
+    },
+    {
+      "node_id": "נגוע ונאסף מן הרע שהיה בידו, בבחינת: \"תוסף רוחם יגועון\", ונדבק אל הקדשה",
+      "edge_id": 2038,
+      "note": "Eitza result node (edge 2038). The word 'בבחינת' here is used within an eitza result description, not as a standalone bechina — it describes what happens to the penitent (the mechanism of the effect). Excluded from bechina package analysis."
+    },
+    {
+      "node_id": "אנחה",
+      "edge_id": 2149,
+      "note": "Eitza source node (edge 2149). The sigh (cause) → severs from original rope and attaches to another (effect). This is a different instance from the bechina node 'נה והאנחה' in the dataset — it is the same concept as an eitza actor."
+    },
+    {
+      "node_id": "נפסק מהחבל שהיה מקשר מתחלה ונתקשר לחבל אחר כפי האנחה",
+      "edge_id": 2149,
+      "note": "Eitza result node (edge 2149). Describes the mechanical effect of sighing. The rope-switching is the eitza outcome of the sigh."
+    },
+    {
+      "node_id": "להתאנח על מעשיו שאינם טובים, ולכסף ולהשתוקק בתקף אנחתו לשוב להשם יתברך",
+      "edge_id": 2150,
+      "note": "Eitza source node (edge 2150). The practical instruction — sighing with longing (cause) → severs from impurity rope and attaches to holy rope (effect). This is the Torah's practical conclusion (eitza level)."
+    },
+    {
+      "node_id": "נפסק מחבל דטמאה, ונתקשר בחבל דקדשה",
+      "edge_id": 2150,
+      "note": "Eitza result node (edge 2150). The outcome of the proper penitential sigh. Describes movement from Package C (evil rope) to Package B (holy rope) via the sigh mechanism of Package 1."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_109_edges": 5,
+    "total_reference_109_bechina_edges": 1,
+    "total_reference_109_eitza_edges": 4,
+    "dataset_bechina_pairs_captured": 1,
+    "source_text_bechina_pairs_found": 4,
+    "source_text_bechina_pairs_in_dataset": 1,
+    "source_text_bechina_pairs_missing": 3,
+    "missing_pairs": [
+      "הבל של האדם ↔ חבל המקשר הנשמה למקום שרשה",
+      "אנחה (כנמשכת אל הגרון) ↔ תוסף רוחם יגועון",
+      "תוסף רוחם יגועון ↔ מיתה בגוף ונפש (implicit extension of existing edge)"
+    ],
+    "new_nodes_proposed": 7,
+    "new_bechina_edges_proposed": 6,
+    "concepts_in_source_text_not_in_dataset": [
+      "הבל של האדם (the breath/vapor as soul-rope — central metaphor)",
+      "חבל המקשר הנשמה למקום שרשה (the rope connecting the soul to its root)",
+      "תוסף רוחם יגועון (verse-concept of spirit-gathering before death)",
+      "חבל דקדשה (the holy rope — structural anchor of good pole)",
+      "חבל דטמאה (the impurity rope — structural anchor of evil pole)",
+      "מטמא עצמו (the one who defiles himself — evil mirror of מקדש עצמו)",
+      "אנחה דקדושה (holy sigh — mentioned in the addendum as distinct concept)"
+    ]
+  }
+}

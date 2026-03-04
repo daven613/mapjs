@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "source": "Torah #116 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md and the full source text torah_116.txt. Searched for every statement using explicit bechina language: בְּחִינַת / בְּחִינוֹת / נִקְרָא / הַיְנוּ [as equivalence marker] / הוּא בְּחִינַת. Cross-referenced against all edges with reference === 116 in torahData.js. The source text contains 0 bechina-language statements. The single dataset edge (id: 2176) is an eitza edge, correctly classified."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_116_edges": 1,
+    "total_reference_116_bechina_edges": 0,
+    "total_reference_116_eitza_edges": 1,
+    "existing_eitza_edge": {
+      "id": 2176,
+      "node1_id": "הנותן צדקה",
+      "node2_id": "נצול מעברות",
+      "proof": "הַנּוֹתֵן צְדָקָה נִצּוֹל מֵעֲבֵרוֹת. כִּי 'כָּל הַמְרַחֵם עַל הַבְּרִיּוֹת מְרַחֲמִין עָלָיו מִן הַשָּׁמַיִם', 'וְכָל מִי שֶׁאֵין בּוֹ דֵּעָה אָסוּר לְרַחֵם עָלָיו', וְכֵיוָן שֶׁמְּרַחֲמִין עָלָיו בְּהֶכְרֵחַ נוֹתְנִין לוֹ דַּעַת. וַאֲזַי נִצּוֹל מִלָּבוֹא לִידֵי עֲבֵרָה, כִּי 'אֵין אָדָם עוֹבֵר עֲבֵרָה אֶלָּא אִם כֵּן נִכְנַס בּוֹ רוּחַ שְׁטוּת', אֲבָל כְּשֶׁיֵּשׁ לוֹ דֵּעָה נִצּוֹל מֵעֲבֵרוֹת."
+    },
+    "bechina_language_scan": {
+      "result": "NO_BECHINA_LANGUAGE_FOUND",
+      "scanned_markers": [
+        "בְּחִינַת",
+        "בְּחִינוֹת",
+        "הוּא בְּחִינַת",
+        "נִקְרָא",
+        "נִקְרֵאת",
+        "הַיְנוּ [as equivalence]"
+      ],
+      "notes": "None of these markers appear anywhere in the 3-line source text. The Torah is a compact syllogism using 'כִּי' (because/for), 'וְכֵיוָן שֶׁ' (and since/therefore), 'אֶלָּא אִם כֵּן' (unless), and 'אֲבָל' (but) — all of which are logical connectives indicating causality and conditionality, not parallel-nature identity."
+    },
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "צְדָקָה and רַחֲמִים",
+        "reason": "Giving charity is the ACT that generates compassion from heaven. The relationship is directional — צדקה (charity/justice) produces or demonstrates רחמים (compassion) but the two are not identified as sharing the same essential nature in this Torah. The Torah does not say 'charity IS compassion' or 'charity is an aspect of compassion' — it says 'one who shows compassion [through charity] receives compassion [from heaven]'. This is reciprocal causality, not bechina.",
+        "excluded": true
+      },
+      {
+        "concept": "דַּעַת and רוּחַ שְׁטוּת",
+        "reason": "Daat (knowledge/awareness) and ruach shtut (spirit of foolishness) are opposites — their relationship is one of mutual exclusion, not bechina identity. The Torah states that sin only enters when ruach shtut is present AND that daat prevents this. This is a logical contrapositive structure (if no daat → ruach shtut can enter; if daat is present → ruach shtut cannot enter), not a shared-nature identification. One could argue they are 'mirror concepts' but neither the text nor standard bechina convention treats logical opposites-as-mirrors as bechina edges — they would require explicit equating language.",
+        "excluded": true
+      },
+      {
+        "concept": "הַמְרַחֵם עַל הַבְּרִיּוֹת and הַנּוֹתֵן צְדָקָה",
+        "reason": "The opening statement 'הַנּוֹתֵן צְדָקָה' is essentially expanded by 'כָּל הַמְרַחֵם עַל הַבְּרִיּוֹת' in line 2 — giving charity IS showing compassion on creatures. One could read this as an implicit bechina (charity = compassion-on-creatures). However, the Rebbe does not use any bechina language marker to establish this equivalence. He simply uses the rabbinic statement (Shabbat 151b) as a proof-text for the principle that the giver of charity is the one who shows compassion, and the response follows automatically. In the absence of explicit bechina language, this should be classified as contextual elaboration rather than a formal bechina edge.",
+        "excluded": true
+      }
+    ],
+    "eitza_chain_structure": {
+      "description": "The full eitza (causal) chain of Torah #116, which accounts for all the conceptual content of this Torah:",
+      "chain": [
+        {
+          "step": 1,
+          "from": "הנותן צדקה / המרחם על הבריות",
+          "to": "מרחמין עליו מן השמים",
+          "mechanism": "Talmudic principle: Shabbat 151b — measure for measure, one who shows compassion receives compassion"
+        },
+        {
+          "step": 2,
+          "from": "מרחמין עליו מן השמים",
+          "to": "נותנין לו דעת",
+          "mechanism": "Talmudic principle: Berakhot 33 — one who lacks daat it is forbidden to have compassion on him; therefore heavenly compassion necessarily brings the gift of daat"
+        },
+        {
+          "step": 3,
+          "from": "יש לו דעת",
+          "to": "נצול מעברות / נצול מרוח שטות",
+          "mechanism": "Talmudic principle: Sotah 3a — a person only sins if a spirit of foolishness (ruach shtut) enters him; one who has daat is protected from the spirit of foolishness and therefore from sin"
+        }
+      ],
+      "note": "All three steps are eitza relationships. The dataset correctly captures only one edge (the summary eitza: הנותן צדקה → נצול מעברות). The intermediate steps (steps 1 and 2) could be added as additional eitza edges but are not needed for bechina/package analysis."
+    }
+  }
+}

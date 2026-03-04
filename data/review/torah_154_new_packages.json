@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "source": "Torah #154",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "CONDITIONAL_NEW_PACKAGE",
+  "new_packages": [
+    {
+      "id": "154-NEW-1",
+      "torah_ref": 154,
+      "label": "יִרְאוֹת נְפוּלוֹת וְחָמֵשׁ אֵימוֹת",
+      "label_en": "Fallen Fears and the Five Terrors",
+      "polarity": "evil",
+      "condition": "PENDING_BECHINA_ENCODING — this package is proposed for creation only after the gap concepts from torah_154_additions.json are encoded as bechina edges in torahData.js. Until then, the underlying bechina connections do not yet exist in the dataset.",
+      "proposed_nodes": [
+        "יראות נפולות",
+        "חמש אימות"
+      ],
+      "proposed_dominant_node": "יראות נפולות",
+      "rationale": "The Torah's evil-mirror structure is clear: Package 1 (יִרְאָה וְאֶרֶץ) describes yirah in its elevated, positive form. The evil counterpart is the fallen fears — yirah that descended from its root and clothed itself in worldly objects, producing all suffering and judgment. The Rebbe explicitly identifies יִרְאוֹת נְפוּלוֹת as a bechina of חָמֵשׁ אֵימוֹת. These two concepts share the same essential nature (the fallen, distorted form of divine gevurah operating as irrational worldly terror) and are bechina-parallel to each other, distinct from the positive package by polarity. They form an independent evil domain of exactly 2 concepts. Per the algorithm, a 2-node component is a 'small component' that should be evaluated for merger. Merger into Package 1 is REJECTED because they are the evil mirror of Package 1, not the same nature — the framework explicitly states the same concept can appear in both a good and evil package. However, as a standalone 2-node evil component it is below the 3+ threshold for a NEW independent package. Verdict: merge into Package 1 as an evil sub-component with distinct polarity notation, OR keep separate if a second bechina connection materializes when additional gap concepts (חָמֵשׁ גְּבוּרוֹת, אוֹתִיּוֹת מַנְצְפַ\"ךְ) are encoded, which would then yield a 3-4 node component meeting the threshold.",
+      "merge_alternative": "If it is decided NOT to create a separate evil package, the 2-node fallen-fears cluster should be noted within Package 1 as its evil mirror dimension. The framework permits this — it explicitly states the same concept (yirah) can appear in both a good and evil context. Package 1's label could be expanded to 'יִרְאָה — מִנְּפִילָה לְרוֹמְמוּת' (Fear — From Falling to Exaltation) to capture the full arc."
+    }
+  ],
+  "observations": "Torah #154 is one of the most structurally compact teachings in Likutay Moharan. The Rebbe explicitly closes with a cross-reference: 'עַיֵּן כָּל זֶה לְעֵיל בְּהַתּוֹרָה \"מִי שֶׁרוֹצֶה לִטְעֹם טַעַם אוֹר הַגָּנוּז\" בְּסִימָן טו, שָׁם מְבֹאָר כָּל זֶה בַּאֲרִיכוּת' — 'See all this above in Torah #15, where this is explained at length.' This means Torah 154 is consciously a summary/pointer, not a full independent development. The sparse dataset (1 bechina edge) accurately reflects the teaching's brevity.\n\nThe teaching's conceptual structure, as read from the source text, is:\n  Stage 1 — There exist fallen fears that cause all suffering [evil package: יִרְאוֹת נְפוּלוֹת / חָמֵשׁ אֵימוֹת]\n  Stage 2 — These correspond to the 5 gevurot / 5 final letters [bridge concept: חָמֵשׁ גְּבוּרוֹת / מַנְצְפַ\"ךְ]\n  Stage 3 — Yirah's root and home is the heart; daat must accompany yirah [good package: יִרְאָה / אֶרֶץ / לֵב / דַּעַת]\n  Stage 4 — Self-judgment (mishpat) elevates yirah, removing heavenly din [eitza mechanism: מִשְׁפָּט → elevated yirah]\n  Stage 5 — The result: only transcendent awe remains [apex: יִרְאַת הָרוֹמְמוּת]\n\nThe good/evil mirror structure is present and clear:\n  Good: יִרְאָה / יִרְאַת הָרוֹמְמוּת / לֵב / דַּעַת [Package 1]\n  Evil: יִרְאוֹת נְפוּלוֹת / חָמֵשׁ אֵימוֹת [Proposed evil package, pending encoding]\n  Bridge: חָמֵשׁ גְּבוּרוֹת / מַנְצְפַ\"ךְ [neutral structural concept linking both]\n\nThe 3+ node threshold for a new independent package is not yet met by the evil cluster (only 2 confirmed bechina-connected nodes: יִרְאוֹת נְפוּלוֹת ↔ חָמֵשׁ אֵימוֹת). If חָמֵשׁ גְּבוּרוֹת and אוֹתִיּוֹת מַנְצְפַ\"ךְ are encoded as bechina-nodes connected to the fallen-fears cluster, that raises the component to 4 nodes, fully justifying a separate evil package. This depends on encoding decisions (the gevurot are the ROOT of the fallen fears — same structure, opposite polarity — which may warrant bechina connection or may not, depending on whether the Rebbe states it as such rather than merely numerically parallel).\n\nConclusion: ONE firm new package (the evil cluster) is conditionally proposed, pending bechina encoding. It does not meet the 3+ threshold on currently encoded edges alone."
+}

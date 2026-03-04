@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "source": "Torah #148",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #148 has zero bechina edges in torahData.js (reference === 148 yields no results). All edges and concept identifications are derived from the source text torah_148.txt. The Torah is three lines long and constitutes a self-contained philosophical aphorism about the infinite regress of יִרְאָה. All bechina-language equalities are identified directly from the source text. Because the dataset has no prior edges for this Torah, the connected component graph is built from scratch from the source text."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 148,
+      "label": "יִרְאָה וְאֵין סוֹף",
+      "label_en": "Fear of God and the Infinite",
+      "polarity": "good",
+      "reason": "The entire Torah #148 is a single unified teaching about the infinite recursive nature of יִרְאָה (fear of God). The Rebbe's central claim is that יִרְאָה itself is afraid of God — the midah has its own yirah — and so each level of fear contains a higher fear, ascending endlessly. From this he draws the two supporting verses: (1) 'עֵקֶב עֲנָוָה יִרְאַת ה'' — the heel of humility is fear, meaning יִרְאָה is the essential nature and endpoint of עֲנָוָה; (2) 'רֵאשִׁית חָכְמָה יִרְאַת ה'' — the beginning of wisdom is fear, meaning יִרְאָה is also the starting-point of חָכְמָה. Both verses show יִרְאָה appearing at a different position relative to its neighboring virtue, which the Rebbe reads as evidence that fear has an infinite depth: it is simultaneously the heel/outcome (עָקֵב) of humility AND the crown/beginning (רֵאשִׁית/עֲטָרָה) of wisdom — positions that cannot coexist unless fear is infinite and transcends fixed hierarchical location. All three concepts — יִרְאָה, עֲנָוָה, and חָכְמָה — are aspects of the same positive domain of divine service. חָכְמָה and עֲנָוָה are the two virtues that meet יִרְאָה from opposite directions (one from above/beginning, one from below/heel), and they are both faces of the same holy reality described by יִרְאָה. The concept of אֵין סוֹף (infinity) is the structural descriptor of how high yirah reaches — it is the qualitative dimension of the package. All nodes are positive/good.",
+      "dominant_node": "יראה",
+      "nodes": [
+        "יראה",
+        "ענוה",
+        "חכמה",
+        "אין סוף"
+      ],
+      "node_degrees": {
+        "יראה": 3,
+        "ענוה": 1,
+        "חכמה": 1,
+        "אין סוף": 1
+      },
+      "source_edges": [
+        {
+          "node1": "ענוה",
+          "node2": "יראה",
+          "proof": "נִמְצָא שֶׁעֲקֵב הָעֲנָוָה הִיא יִרְאָה",
+          "source_quote": "עֵקֶב עֲנָוָה יִרְאַת ה'"
+        },
+        {
+          "node1": "חכמה",
+          "node2": "יראה",
+          "proof": "כֵן רֵאשִׁית חָכְמָה הִיא גַּם־כֵּן יִרְאָה",
+          "source_quote": "רֵאשִׁית חָכְמָה יִרְאַת ה'"
+        },
+        {
+          "node1": "יראה",
+          "node2": "אין סוף",
+          "proof": "וְכֵן נִכְלָל יִרְאָה אַחַת בַּחֲבֶרְתָּהּ, לְמַעְלָה לְמַעְלָה עַד אֵין סוֹף",
+          "source_quote": "לְמַעְלָה לְמַעְלָה עַד אֵין סוֹף"
+        }
+      ],
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_from_source_text": 3,
+    "total_nodes": 4,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "note_on_merges": "Single connected component — no merges required. All three concept-nodes (יִרְאָה, עֲנָוָה, חָכְמָה) plus the structural qualifier (אֵין סוֹף) form one thematic cluster centered on יִרְאָה.",
+    "note_on_evil_mirror": "Torah #148 contains no evil counterpart or opposing domain. The teaching is a pure metaphysical observation about the infinite nature of יִרְאָה with no negative/evil pole developed. The Midrash cited (what humility did vs. what wisdom did with fear) contrasts two positive virtues — not good vs. evil. No evil package is proposed.",
+    "note_on_dataset": "Reference 148 yields zero edges in torahData.js. All concept edges identified here are new (not yet in dataset) and should be added via the additions file."
+  }
+}

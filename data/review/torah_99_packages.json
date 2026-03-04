@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "source": "Torah #99",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #99 is an extremely short teaching (7 lines). The dataset contains exactly one bechina edge for reference===99 (Edge ID 2839). The source text likewise contains exactly one bechina declaration (line 7: 'שֶׁהוּא בְחִינַת שְׁגוּרָה תְּפִלָּתִי בְּפִי'), equating prayer-with-devekut to the quality of fluent/flowing prayer. This yields a single connected component of 2 nodes and a single package. There is no evil mirror in this Torah — the opposite state (prayer without devekut) is presented in eitza/narrative context as a problem to be overcome through persistent prayer, not as a bechina cluster forming a parallel evil domain."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 99,
+      "label": "תְּפִלָּה בִּדְבֵקוּת וּשְׁגִירַת הַפֶּה",
+      "label_en": "Prayer with Devekut and Fluency of the Mouth",
+      "polarity": "good",
+      "reason": "The single bechina equation in Torah #99 links two expressions of the same spiritual quality: prayer conducted with devekut (attachment to God) and the experience of prayer being שְׁגוּרָה בְּפִיו — fluent, flowing, and easily articulated in one's mouth. The Rebbe cites Rabbi Chanina ben Dosa's rule (Berakhot 34b): when his prayer was fluent in his mouth he knew it was accepted; when not, he knew it was not. The Rebbe interprets this as a single bechina: fluency of prayer IS devekut, and devekut IS fluency of prayer. They are two faces of the same inner state — the condition in which the soul's attachment to God expresses itself as words that pour forth naturally and freely from the mouth. Neither produces the other; they are the same reality seen from two angles: the inner spiritual state (devekut) and its outer linguistic expression (shlimut/shgura). Both nodes are positive, belonging to the domain of authentic prayer and cleaving to God.",
+      "dominant_node": "תפלה בדבקות",
+      "nodes": [
+        "תפלה בדבקות",
+        "שגורה תפלתי בפי"
+      ],
+      "node_degrees": {
+        "תפלה בדבקות": 1,
+        "שגורה תפלתי בפי": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_bechina_edges_from_dataset": 1,
+    "total_bechina_edges_from_source_text": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "dataset_status": "ONE_BECHINA_EDGE_IN_DATASET — Edge ID 2839: תפלה בדבקות ↔ שגורה תפלתי בפי",
+    "eitza_edges_in_dataset": 1,
+    "eitza_edge_details": "Edge ID 3196: דבקות → תפלה שגורה ומרצה בפיו, מקבלת — devekut produces accepted/flowing prayer; correctly classified as eitza (cause-and-effect), not bechina. This edge is structurally parallel to the bechina edge but captures the directional outcome dimension.",
+    "note_on_merges": "Only one connected component exists. No merges were needed. The 2-node component directly constitutes Package 1.",
+    "good_evil_mirror": "ABSENT. Torah #99 has no evil bechina cluster. Prayer without devekut (תְּפִלָּה שֶׁלֹּא בִּדְבֵקוּת) is discussed as a recurring human condition that must still be practiced, but the Rebbe does not assign it bechina language equating it to an evil concept. It is handled in the teaching's eitza dimension (the practical instruction to pray always regardless). No negative-polarity bechina domain is present."
+  }
+}

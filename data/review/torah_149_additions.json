@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "source": "Torah #149 (Likutay Moharan Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, filtered all reference===149 edges from torahData.js (found: 1 edge, id 2477, type eitza — zero bechina edges). Read full source text torah_149.txt (5 lines). Scanned all lines for bechina-language patterns: 'X הוא בחינת Y', 'X הוא Y', 'X – Y' (dash-equation), 'X נקרא Y', 'על ידי X נמשך Y' (eitza, excluded). Verified each candidate against the bechina/eitza distinction test from framework.md: does one produce the other (eitza) or are they both expressions of the same thing (bechina)? Checked whether identified concepts are already present in the dataset with reference 149 bechina edges."
+  },
+  "additions": [
+    {
+      "addition_id": 1,
+      "package_id": 2,
+      "proposed_edge": {
+        "node1_id": "צדק",
+        "node2_id": "דין",
+        "node1_text": "צֶדֶק",
+        "node2_text": "דִּינָא",
+        "type": "bechina",
+        "reference": 149,
+        "proof": "כִּי צֶדֶק – דִּינָא"
+      },
+      "polarity": "evil",
+      "reason": "The source text states: 'כִּי צֶדֶק – דִּינָא' (line 2) — 'for tzedek IS din.' This is the classic bechina dash-equation formula: X – Y (literally: X is Y, they share the same essential nature). Tzedek (the quality of righteousness-as-strict-justice, associated with Malkhut in its aspect of divine accounting) and דין (strict heavenly judgment) share the same essential nature in this Torah's context. They are not cause and effect — the text is explaining WHY the verse 'על מִשְׁפְּטֵי צִדְקֶךָ' means 'din being sweetened': because tzedek = din and mishpat = rachamim, the verse speaks of rachamim prevailing over din. Both nodes exist in the broader dataset for other Torahs but have no bechina edge for reference 149. This edge is missing from the dataset. The polarity is evil/constricting in this Torah's context: tzedek/din is the force that requires sweetening, the harsh pole.",
+      "source_quote": "כִּי צֶדֶק – דִּינָא, וּמִשְׁפָּט – רַחֲמֵי",
+      "in_dataset_already": false,
+      "nodes_exist_in_dataset": {
+        "צדק": true,
+        "דין": true,
+        "note": "Both nodes appear in other Torahs. No bechina edge with reference 149 exists for this pair."
+      }
+    },
+    {
+      "addition_id": 2,
+      "package_id": 3,
+      "proposed_edge": {
+        "node1_id": "משפט",
+        "node2_id": "רחמים",
+        "node1_text": "מִשְׁפָּט",
+        "node2_text": "רַחֲמֵי",
+        "type": "bechina",
+        "reference": 149,
+        "proof": "וּמִשְׁפָּט – רַחֲמֵי"
+      },
+      "polarity": "good",
+      "reason": "The source text states: 'וּמִשְׁפָּט – רַחֲמֵי' (line 2) — 'and mishpat IS rachamim.' This is the parallel bechina equation to addition #1, in the same sentence. Mishpat (legal rule / divine judgment in its quality of extending beyond strict accounting) and רַחֲמִים (compassion/mercy) share the same essential nature in this Torah. They are the good-pole counterpart to the din/tzedek pair: together additions #1 and #2 define the two poles of the Torah's central teaching. The verse 'על מִשְׁפְּטֵי צִדְקֶךָ' means 'the mishpat/rachamim aspect prevailing over the tzedek/din aspect' — which is the goal that chatzot achieves. Both nodes exist in the broader dataset. No bechina edge with reference 149 exists. The polarity is good: rachamim/mishpat is the holy, life-giving divine attribute.",
+      "source_quote": "כִּי צֶדֶק – דִּינָא, וּמִשְׁפָּט – רַחֲמֵי",
+      "in_dataset_already": false,
+      "nodes_exist_in_dataset": {
+        "משפט": true,
+        "רחמים": true,
+        "note": "Both nodes appear in other Torahs. No bechina edge with reference 149 exists for this pair."
+      }
+    },
+    {
+      "addition_id": 3,
+      "package_id": 1,
+      "proposed_edge": {
+        "node1_id": "חצות",
+        "node2_id": "המתקת הדינים",
+        "node1_text": "חֲצוֹת",
+        "node2_text": "הַמְתָּקַת הַדִּינִים",
+        "type": "bechina",
+        "reference": 149,
+        "proof": "חֲצוֹת הוּא מְסֻגָּל כְּמוֹ פִּדְיוֹן, כִּי הוּא הַמְתָּקַת הַדִּינִים"
+      },
+      "polarity": "good",
+      "reason": "The source text states: 'חֲצוֹת הוּא מְסֻגָּל כְּמוֹ פִּדְיוֹן, כִּי הוּא הַמְתָּקַת הַדִּינִים' — 'Chatzot is endowed like pidyon, for IT IS the sweetening of judgments.' The second clause 'כִּי הוּא הַמְתָּקַת הַדִּינִים' uses 'הוּא' (is) in the bechina-identity sense: chatzot IS (shares its essential nature with) the sweetening of judgments. This is distinct from the first clause ('mesugal kemo pidyon') which is analogical comparison. The existing dataset edge (id 2477) classified the full sentence as eitza, capturing the causal dimension (chatzot produces/achieves the sweetening), but missed the bechina dimension: chatzot and המתקת הדינים are also the same thing from different angles — the midnight practice IS the sweetening, not merely an instrument that produces it. They share the same essential nature as the cosmic-rectifying force that neutralizes din. Note on existing edge 2477: that edge encodes node2_id as 'פדיון, כי הוא המתקת הדינים' (a composite label). The proposed addition here uses the cleaner canonical node 'המתקת הדינים' and encodes the bechina relationship properly as a separate bechina edge, complementing the existing eitza edge rather than replacing it.",
+      "source_quote": "חֲצוֹת הוּא מְסֻגָּל כְּמוֹ פִּדְיוֹן, כִּי הוּא הַמְתָּקַת הַדִּינִים",
+      "in_dataset_already": false,
+      "nodes_exist_in_dataset": {
+        "חצות": true,
+        "המתקת הדינים": true,
+        "note": "Both nodes exist in the dataset. חצות appears as node1 in edge 2477 (reference 149, eitza). המתקת הדינים appears as node2 in multiple edges across other Torahs (e.g., reference 65 area). No bechina edge for reference 149 links these two."
+      }
+    }
+  ],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "פִּדְיוֹן (pidyon/redemption)",
+      "reason": "The text says chatzot is 'מְסֻגָּל כְּמוֹ פִּדְיוֹן' — 'endowed/suited like pidyon.' The word 'כְּמוֹ' (like, analogous to) is explicitly analogical comparison, not the bechina identity formula 'X הוא בחינת Y.' Pidyon is an analogy used to explain chatzot's mode of operation, not a parallel-essence declaration. The existing edge 2477 already includes 'פדיון, כי הוא המתקת הדינים' as a composite node, reflecting the analogical connection. Excluded from bechina additions. However, pidyon is included in Package 1's nodes as a contextually associated concept through that existing edge."
+    },
+    {
+      "concept": "הִסְתַּכְּלוּת עַל הַשָּׁמַיִם (gazing at the heavens in the morning)",
+      "reason": "Line 5: 'וּבַבֹּקֶר טוֹב לְהִסְתַּכֵּל עַל הַשָּׁמַיִם, וְעַל־יְדֵי־זֶה נִמְשָׁךְ הַדַּעַת.' The phrase 'עַל יְדֵי זֶה נִמְשָׁךְ' (through this it draws/flows) is pure eitza language — cause-and-effect, not bechina. Gazing at the sky produces/draws da'at; it is not the same essential nature as da'at. This is an eitza relationship and is excluded from bechina additions."
+    },
+    {
+      "concept": "דַּעַת (da'at/knowledge) — drawn from heavenly gazing",
+      "reason": "Da'at appears as the result of looking at the heavens (eitza). The text does not use bechina language to equate da'at with any other concept in this Torah. Excluded from bechina additions. The teaching is structurally appended to the main Torah (introduced as 'וּבַבֹּקֶר' — a separate addendum); it does not participate in the din/rachamim/chatzot bechina structure of lines 1-3."
+    },
+    {
+      "concept": "לַיְלָה (night) / אַשְׁמוּרָה שְׁנִיָּה (second watch of the night)",
+      "reason": "Lines 3-4 define the halakhic timing of chatzot (6 hours after nightfall, extends through the second watch). These are definitions/specifications of when chatzot occurs, not bechina equations equating night or the second watch to another conceptual domain. The language is prescriptive/halakhic, not 'X הוא בחינת Y.'"
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_149_edges_in_dataset": 1,
+    "total_reference_149_bechina_edges": 0,
+    "total_reference_149_eitza_edges": 1,
+    "nodes_in_dataset_for_reference_149": ["חצות"],
+    "nodes_in_dataset_not_in_packages": [],
+    "bechina_pairs_found_in_source_text": 3,
+    "concepts_in_source_text_not_in_dataset": [
+      "צדק ↔ דין — the core bechina of Package 2; 'tzedek IS din'; both nodes exist in the broader dataset but not with a bechina edge for reference 149",
+      "משפט ↔ רחמים — the core bechina of Package 3; 'mishpat IS rachamim'; both nodes exist in the broader dataset but not with a bechina edge for reference 149",
+      "חצות ↔ המתקת הדינים — the core bechina of Package 1; 'chatzot IS the sweetening of judgments'; בechina dimension was not captured by the existing eitza edge 2477"
+    ],
+    "good_evil_mirror_note": "Torah #149 has a clear good/evil mirror structure. Package 2 (צדק/דין, evil: strict judgment that constricts and demands full accounting) mirrors Package 3 (משפט/רחמים, good: merciful judgment that extends beyond strict accounting). Package 1 (חצות/המתקת הדינים, good: the midnight practice) is the practical vehicle by which the good Package 3 is activated over Package 2. The entire Torah is a three-part argument: (1) identify the tension between din/tzedek and rachamim/mishpat; (2) resolve it in favor of rachamim; (3) prescribe chatzot as the practice that achieves this.",
+    "structural_note": "Torah #149 is extremely compact (5 lines) but contains rich bechina content that was entirely absent from the dataset. The zero-bechina situation in the dataset is a coverage gap, not an absence of bechina structure in the teaching. Three bechina pairs are clearly present in the text: additions #1, #2, and #3 above. The teaching's conceptual architecture is: din/rachamim polarity (existing in the divine attribute domain) + chatzot as the practice bridging these poles."
+  }
+}

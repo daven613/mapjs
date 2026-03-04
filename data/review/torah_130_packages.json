@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "source": "Torah #130 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===130 AND type==='bechina'. Result: ZERO bechina edges found in the current dataset for Torah #130. Both recorded edges for this reference (IDs 2175 and 3214) are of type 'eitza'. Torah #130 is therefore a bechina-empty Torah in the current dataset — it contributes two causal (eitza) relationships but no conceptual-equivalence (bechina) edges. With zero bechina edges, the connected-components algorithm yields zero components, and no packages can be formed from the existing dataset alone. This file documents that state. Gap analysis (see torah_130_additions.json) identifies three bechina relationships present in the source text that are missing from the dataset. If those edges were added, two packages would emerge — see torah_130_new_packages.json."
+  },
+  "packages": [],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_eitza_edges": 2,
+    "total_edges_in_dataset_for_ref_130": 2,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0,
+    "existing_eitza_edges": [
+      {
+        "id": 2175,
+        "node1_id": "ענוה",
+        "node2_id": "נצול מנאוף, וזוכה לשמירת הברית",
+        "type": "eitza",
+        "note": "ענוה → שמירת הברית / נצול מנאוף. Causal flow, not conceptual equivalence."
+      },
+      {
+        "id": 3214,
+        "node1_id": "ענוה",
+        "node2_id": "תקון הברית",
+        "type": "eitza",
+        "note": "ענוה → נצול מפגם הברית. Causal flow, not conceptual equivalence. Duplicate of the same eitza argument recorded under a different node2_id variant."
+      }
+    ],
+    "torah_summary": "Torah #130 opens with the Talmudic maxim 'kol ha-gadol me-chavero, yitzro gadol mimenu' (the greater a person is, the greater his evil inclination — Sukkah 52). The Rebbe's teaching is a single, tight eitza argument: humility (ענוה) → sexual purity / shmirat ha-brit (שמירת הברית). The proof moves through: (1) the Talmudic teaching that arrogance leads to adultery (Sotah 4b); (2) the biblical juxtaposition of 'Moshe was very humble' with 'Miriam and Aaron spoke about Moshe' regarding his Kushite wife — the Torah answers that Moshe's total humility enabled complete abstinence (perישut); (3) the Talmudic teaching that 'Yosef's strength was Boaz's humility / Boaz's strength was Palti ben Laish's humility' (Sanhedrin 19b); (4) the re-reading of the opening maxim: 'gadol' = one who has gaavah (pride), 'yitzro gadol' = the yetzer hara overpowers him in sexual lust — because as the Zohar states (Vayikra 15b): 'the essence of the evil inclination is to expose nakedness/illicit relations'. The Torah's entire structure is eitza (causal): gadlut/gaavah → yetzer dominates through niuf; its inverse (ענוה) → saved from niuf / shmirat ha-brit."
+  }
+}

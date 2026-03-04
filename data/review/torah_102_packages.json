@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "source": "Torah #102 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===102 AND type==='bechina'. Result: ZERO bechina edges exist in the current dataset for Torah #102. All four existing edges for reference 102 are type 'eitza'. The packages below are derived entirely from Step 5 gap analysis — reading the source text of torah_102.txt for explicit bechina language (בְּחִינַת, הוּא, נִקְרָא, הַיְנוּ) and clustering the concepts found therein. Since there are no dataset bechina edges to drive connected-component analysis, each package is sourced exclusively from the source text and documented with textual evidence."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 102,
+      "label": "יִרְאָה וּבֵית",
+      "label_en": "Fear of God and the House",
+      "polarity": "good",
+      "reason": "The central teaching of Torah #102 is that earned, self-generated fear of God (יִרְאָה שֶׁבָּאָה לָאָדָם מִכֹּחַ אָדָם עַצְמוֹ) is the condition under which prayer is heard and divine abundance descends. The Rebbe explicitly equates this yira with three things that share the same essential nature: (1) the 'house' (בֵּית) in the verse 'You shall be over MY HOUSE' — יִרְאָה is bechina of בֵּית, because the Talmud says 'woe to one who has a house but no courtyard' (i.e., Torah without yira is a building without a perimeter fence — yira IS the containing structure); (2) the צַדִּיק who 'rules through the fear of God' — this earned yira is called/named צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים; (3) implicitly, the 'higher fear' (יִרְאָה עֶלְיוֹנָה) is the counterpart — same word, different essential nature, hence the contrast between the two types of yira is structural to the Torah. All these concepts share the domain of yira as a containing, ruling, earned quality — they are different expressions of the same essential dimension.",
+      "dominant_node": "יִרְאָה",
+      "nodes": [
+        "יִרְאָה",
+        "בֵּית",
+        "צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים"
+      ],
+      "node_degrees": {
+        "יִרְאָה": 3,
+        "בֵּית": 1,
+        "צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים": 1
+      },
+      "merge_notes": [],
+      "source_evidence": [
+        {
+          "quote": "אַתָּה תִּהְיֶה עַל בֵּיתִי. בֵּיתִי הוּא יִרְאָה",
+          "bechina_statement": "בֵּיתִי = יִרְאָה (explicit equation using הוּא)"
+        },
+        {
+          "quote": "וְיִרְאָה זוֹ נִקְרָא: צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים",
+          "bechina_statement": "יִרְאָה עַצְמִית = צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים (explicit equation using נִקְרָא)"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 102,
+      "label": "מַלְכוּת וְכִסֵּא",
+      "label_en": "Kingship and the Throne",
+      "polarity": "good",
+      "reason": "Torah #102 is explicitly about the revelation and growth of divine malkhut (God's kingship). The Rebbe equates the כִּסֵּא (throne) with מַלְכוּת — they share the same essential nature: both denote the royal/governing dimension. The 'diminution' (מִעוּט הַמַּלְכוּת) described by 'רַק הַכִּסֵּא' (only the throne exceeds you) is also the same concept expressed as meiut — reduced but inherent malkhut. Furthermore, the entire purpose of the teaching is that everything God created was for the revelation of His malkhut, and when He sends shefa to Israel they acknowledge 'מַלְכוּתוֹ בַּכֹּל מָשָׁלָה'. Malkhut is the destination-concept of the Torah's entire argument. The kisse and malkhut share the same essential domain: the governing, royal, feminine-receptive divine dimension.",
+      "dominant_node": "מַלְכוּת",
+      "nodes": [
+        "מַלְכוּת",
+        "כִּסֵּא",
+        "מִעוּט הַמַּלְכוּת"
+      ],
+      "node_degrees": {
+        "מַלְכוּת": 3,
+        "כִּסֵּא": 2,
+        "מִעוּט הַמַּלְכוּת": 1
+      },
+      "merge_notes": [],
+      "source_evidence": [
+        {
+          "quote": "רַק הַכִּסֵּא – הַיְנוּ מִעוּט הַמַּלְכוּת, כִּי 'רַק' הוּא מִעוּט, 'כִּסֵּא' הוּא מַלְכוּת",
+          "bechina_statement": "כִּסֵּא = מַלְכוּת (explicit equation using הוּא)"
+        },
+        {
+          "quote": "כְּדֵי לְגַלּוֹת מַלְכוּתוֹ",
+          "bechina_statement": "The entire creation is bechina of the vessel/domain of revealing malkhut"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 102,
+      "label": "תְּפִלָּה וְתֵבוֹת",
+      "label_en": "Prayer and the Words as Vessels",
+      "polarity": "good",
+      "reason": "The Rebbe teaches that prayer-words (תֵּבוֹת) are vessels (כֵּלִים) for receiving divine abundance (שֶׁפַע). The mouth-speech (פֶּה/פִּיךָ) is equated with prayer through the Onkelos translation ('וְעַל מֵימַר פֻּמָּךְ' = the prayer). These three — תְּפִלָּה, תֵּבוֹת, and פֶּה/מֵימַר פֻּמָּךְ — are all expressions of the same essential domain: the verbal/prayer dimension through which shefa is drawn down. They are not cause-and-effect (one does not produce the other); they are parallel aspects of the same thing — prayer IS words, words ARE vessels, and the mouth IS the prayer instrument. שֶׁפַע (abundance) is the content that flows through the vessel; it is included here as the paired concept to תֵּבוֹת-as-vessel.",
+      "dominant_node": "תְּפִלָּה",
+      "nodes": [
+        "תְּפִלָּה",
+        "תֵּבוֹת",
+        "שֶׁפַע",
+        "פֶּה"
+      ],
+      "node_degrees": {
+        "תְּפִלָּה": 3,
+        "תֵּבוֹת": 2,
+        "שֶׁפַע": 2,
+        "פֶּה": 1
+      },
+      "merge_notes": [],
+      "source_evidence": [
+        {
+          "quote": "הַתֵּבוֹת הֵם כֵּלִים לְקַבֵּל הַשֶּׁפַע",
+          "bechina_statement": "תֵּבוֹת = כֵּלִים לְקַבֵּל הַשֶּׁפַע (explicit equation: words ARE vessels)"
+        },
+        {
+          "quote": "וְעַל פִּיךָ יִשַּׁק כָּל עַמִּי, וְתַרְגּוּם אוּנְקְלוֹס: וְעַל מֵימַר פֻּמָּךְ, הַיְנוּ הַתְּפִלָּה",
+          "bechina_statement": "פִּיךָ / מֵימַר פֻּמָּךְ = תְּפִלָּה (explicit equation using הַיְנוּ)"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 102,
+      "label": "קְּלִפּוֹת תַּחַת הַשְּׁכִינָה",
+      "label_en": "The Klipot Subdued under the Shechina",
+      "polarity": "evil",
+      "reason": "Torah #102 opens with the statement that God created everything only to reveal His kingship, 'and through this the klipot are subdued under the Shechina.' The klipot are the evil counterpart to malkhut — they are the domain of spiritual husks/impurity that oppose the Shechina's revelation. This is a two-concept package: the klipot themselves, and their subdued state (כְּנִיפִיּוּת / נִכְפָּפִין) under the Shechina. Though small (only 2 explicit nodes), this constitutes a genuine evil package because: (a) it is explicitly named in the source text in contrast to the positive malkhut revelation, (b) it reflects the good/evil mirror structure — Package 2 (malkhut revealed) mirrors Package 4 (klipot subdued). The klipot are not merely an eitza-obstacle; they are a bechina domain of the evil/husks dimension that the Torah structurally opposes to the Shechina.",
+      "dominant_node": "קְּלִפּוֹת",
+      "nodes": [
+        "קְּלִפּוֹת",
+        "נִכְפָּפִין תַּחַת הַשְּׁכִינָה"
+      ],
+      "node_degrees": {
+        "קְּלִפּוֹת": 2,
+        "נִכְפָּפִין תַּחַת הַשְּׁכִינָה": 1
+      },
+      "merge_notes": [],
+      "source_evidence": [
+        {
+          "quote": "וְעַל יְדֵי זֶה, נִכְפָפִין הַקְּלִפּוֹת תַּחַת הַשְּׁכִינָה",
+          "bechina_statement": "The klipot subdued state is the evil-mirror of malkhut's revelation — it names the domain that is the structural opposite of holy kingship in this Torah"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_used": 0,
+    "total_eitza_edges_in_dataset": 4,
+    "total_nodes_from_dataset": 0,
+    "total_nodes_from_source_text_gap_analysis": 12,
+    "total_packages": 4,
+    "raw_connected_components_from_dataset": 0,
+    "packages_source": "100% derived from source text gap analysis — no bechina edges exist in the dataset for Torah #102",
+    "note_on_situation": "Torah #102 is entirely uncharted in the bechina layer of the dataset. The four existing dataset edges (IDs 538, 1280, 1343, 1725) are all type eitza (cause-and-effect flows) correctly recording the Torah's argument structure. The bechina layer — the conceptual identity equations that form packages — has not yet been encoded. This output proposes the initial set of packages derived entirely from close reading of the source text.",
+    "good_evil_mirror": "Package 2 (מַלְכוּת וְכִסֵּא, good) mirrors Package 4 (קְּלִפּוֹת תַּחַת הַשְּׁכִינָה, evil). Package 1 (יִרְאָה וּבֵית, good) has an implicit evil mirror in יִרְאָה עֶלְיוֹנָה (the spontaneous higher fear that comes unbidden and generates no reward) — not sufficiently developed in the source text to form an independent package."
+  }
+}

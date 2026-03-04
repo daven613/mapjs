@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "source": "Torah #120 (Likutay Moharan Vol. 1)",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04",
+    "decision": "NO_NEW_PACKAGES"
+  },
+  "determination": "NO_NEW_PACKAGES",
+  "reasoning": "The gap analysis (torah_120_additions.json) found zero uncaptured bechina edges in the source text. The three existing dataset bechina edges (ids 2114, 2231, 2454) already form the two packages identified in torah_120_packages.json. No additional bechina identifications were found that would either (a) expand the existing packages, or (b) form a new third cluster. Torah #120 is a 4-line teaching with a binary structure — two clusters, two packages, no remainder. The dataset for Torah #120 is complete at the bechina level.",
+  "new_packages": [],
+  "structural_note": {
+    "torah_type": "binary_bechina_contrast",
+    "description": "Torah #120 is a short, structurally binary teaching. Its entire argument rests on the contrast between two Sinaitic categories — נַעֲשֶׂה and נִשְׁמַע — and maps each to a mode of Torah engagement (book-learning vs. hearing from the tzaddik). This binary structure means the teaching's full package map is exactly two packages (Package 1: עֲשִׂיָּה/נַעֲשֶׂה cluster; Package 2: נִשְׁמַע cluster), with the Torah's practical instruction serving as the implicit eitza arrow between them. There is no third domain and no uncaptured bechina cluster.",
+    "good_evil_mirror": "Torah #120 does not have a good/evil mirror structure in the conventional sense. Its polarity structure is preserved/lost or empowered/weakened rather than holy/evil. Package 1 (עֲשִׂיָּה/נַעֲשֶׂה) represents the dimension that was 'lost' or 'weakened' at the golden calf — not a demonic force but a structural limitation. Package 2 (נִשְׁמַע) is the preserved crown — the holy path. This asymmetric polarity (neutral vs. good rather than evil vs. good) is consistent with the Torah's tone: it does not condemn books; it explains their post-Calf structural limitation and identifies the path that transcends it.",
+    "eitza_enrichment_note": "A future eitza enrichment pass could add the missing causal edges: (1) [אִבְּדוּ אֶת נַעֲשֶׂה / the loss of the action-crown] → [weakening of book-learning's power to arouse]; (2) [שְׁמִיעָה מִפֶּה הַצַּדִּיק / hearing from the tzaddik] → [arousal and awakening of the person]. These eitza arrows would complete the dataset's representation of Torah #120's argument-structure."
+  }
+}

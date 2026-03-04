@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "source": "Torah #152 (Likutay Moharan Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md. Confirmed zero bechina edges and zero nodes in torahData.js for reference 152 (the reference does not appear in the dataset at all). Read full source text torah_152.txt (9 lines). Scanned every line for bechina-language patterns: 'X הוא בחינת Y', 'X דְּהַיְנוּ Y', 'X שֶׁהוּא Y', 'X כִּי הַכֹּל אֶחָד עִם Y'. Applied the bechina/eitza distinction test from framework.md to each candidate: does one produce the other (eitza) or are they both expressions of the same essential reality (bechina)? Since no edges exist in the dataset for reference 152, all proposed additions are new edges for this Torah reference."
+  },
+  "additions": [
+    {
+      "addition_id": 1,
+      "package_id": 1,
+      "proposed_edge": {
+        "node1_id": "פתח (שער האמונה)",
+        "node2_id": "אמונה",
+        "node1_text": "פֶּתַח (שַׁעַר הָאֱמוּנָה)",
+        "node2_text": "אֱמוּנָה",
+        "type": "bechina",
+        "reference": 152,
+        "proof": "סְתִימַת הַפֶּתַח הַנַּ\"ל, דְּהַיְנוּ הָאֱמוּנָה"
+      },
+      "polarity": "good",
+      "reason": "Line 4 of the source text: 'וְהִנֵּה סְתִימַת הַפֶּתַח הַנַּ\"ל, דְּהַיְנוּ הָאֱמוּנָה' — 'the sealing of the gateway mentioned, that is (dehavinu), emuna.' The dehavinu formula (דְּהַיְנוּ) is the standard bechina identity marker throughout Likutay Moharan. The gateway (פֶּתַח) IS emuna: they are two expressions of the same essential reality. The gateway is the structural face of emuna — emuna is the spiritual quality that the gateway embodies. This is the core conceptual identity of the entire Torah: the klipa surrounds the holy soul but cannot seal the emuna-gateway. Note: 'פתח' by itself is used as the Hebrew vowel patach in other contexts in the dataset (see edges 2523-2524). To avoid ambiguity, the proposed node_id for this Torah's specific concept should be 'פתח (שער האמונה)' — the gateway of emuna — rather than plain 'פתח'.",
+      "source_quote": "סְתִימַת הַפֶּתַח הַנַּ\"ל, דְּהַיְנוּ הָאֱמוּנָה",
+      "in_dataset_already": false,
+      "nodes_exist_in_dataset": {
+        "אמונה": true,
+        "פתח (שער האמונה)": false,
+        "note": "The node 'אמונה' (id: 'אמונה') appears in the dataset (e.g., edge 80, reference 54, type bechina: 'אמונה' ↔ '\"לקרא כלם בשם ה\"'). The gateway-concept for Torah #152 should use the disambiguated form 'פתח (שער האמונה)' rather than plain 'פתח' to distinguish from the vowel patach nodes."
+      }
+    },
+    {
+      "addition_id": 2,
+      "package_id": 1,
+      "proposed_edge": {
+        "node1_id": "נשמה קדושה",
+        "node2_id": "שרש (של הענפים)",
+        "node1_text": "נְשָׁמָה קְדוֹשָׁה",
+        "node2_text": "שֹׁרֶשׁ (שֶׁל הָעֲנָפִים)",
+        "type": "bechina",
+        "reference": 152,
+        "proof": "לְהִתְקָרֵב אֶל שָׁרְשָׁם, שֶׁהוּא הַנְּשָׁמָה הַנַּ\"ל"
+      },
+      "polarity": "good",
+      "reason": "Line 2: 'דְּהַיְנוּ לְהִתְקָרֵב אֶל שָׁרְשָׁם, שֶׁהוּא הַנְּשָׁמָה הַנַּ\"ל' — 'that is, to draw close to their root, which IS (שֶׁהוּא) the holy soul mentioned.' The שֶׁהוּא (which is) formula establishes bechina identity: the root IS the holy soul; the holy soul IS the root toward which the branches must return. These are two expressions of the same sacred reality — the divine origin-point that the branches seek to reconnect with. The root names the relational aspect (what the branches reach toward); the soul names the essential nature (what that root IS). This bechina pair is established using the 'שֶׁהוּא' formula, which the framework recognizes as equivalent to 'X הוא בחינת Y' in establishing parallel-nature identity.",
+      "source_quote": "לְהִתְקָרֵב אֶל שָׁרְשָׁם, שֶׁהוּא הַנְּשָׁמָה הַנַּ\"ל",
+      "in_dataset_already": false,
+      "nodes_exist_in_dataset": {
+        "נשמה קדושה": false,
+        "שרש (של הענפים)": false,
+        "note": "Neither node appears in the dataset as a standalone concept with reference 152. The word 'נשמה' and root-concepts appear elsewhere but 'נשמה קדושה' as a specific node for Torah 152's context (the holy soul as root of the branches) is new."
+      }
+    },
+    {
+      "addition_id": 3,
+      "package_id": 1,
+      "proposed_edge": {
+        "node1_id": "ירא שמים",
+        "node2_id": "פריסא קלישא",
+        "node1_text": "יְרֵא שָׁמַיִם",
+        "node2_text": "פְּרִיסָא קַלִּישָׁא",
+        "type": "bechina",
+        "reference": 152,
+        "proof": "הוּא בְּחִינַת הַיְרֵא שָׁמַיִם, שֶׁהוּא בְּחִינַת: פְּרִיסָא קַלִּישָׁא"
+      },
+      "polarity": "good",
+      "reason": "Line 8 — the ONLY line in Torah #152 that uses the explicit word 'בְּחִינַת' (bechina): 'וְעַל פִּי הַסּוֹד הַנַּ\"ל הוּא בְּחִינַת הַיְרֵא שָׁמַיִם, שֶׁהוּא בְּחִינַת: פְּרִיסָא קַלִּישָׁא' — 'And according to the secret mentioned above, it is a bechina of the God-fearing person, which is a bechina of: perisa kalisha (the thin veil).' This is the most explicitly labeled bechina pair in the Torah. The yirei shamayim (God-fearing person stationed at the gateway) shares its essential nature with the perisa kalisha (the thin membrane/veil that the Zohar describes as spread over the gateway). Both are the same spiritual reality viewed from two angles: the human embodiment (yirei shamayim) and the Kabbalistic-structural manifestation (perisa kalisha). The Rebbe confirms the equivalence in the same passage: 'וְהוּא מַמָּשׁ מַה שֶּׁכָּתוּב לְעֵיל בְּעִנְיַן הַיְרֵא שָׁמַיִם' — it is exactly what was described above regarding the yirei shamayim. The Zohar source (Teruma 140b-141a) describes the perisa kalisha as: from above it cannot enter; and the klipa cannot spread over the gateway because of the perisa kalisha. This exactly parallels the Torah's earlier description of the yirei shamayim (line 6): he is beneficial against the klipa; it cannot approach the gateway because of him.",
+      "source_quote": "הוּא בְּחִינַת הַיְרֵא שָׁמַיִם, שֶׁהוּא בְּחִינַת: פְּרִיסָא קַלִּישָׁא",
+      "in_dataset_already": false,
+      "nodes_exist_in_dataset": {
+        "ירא שמים": false,
+        "פריסא קלישא": false,
+        "note": "Neither node appears as a standalone concept in the dataset. 'יְרֵא שָׁמַיִם' and 'פְּרִיסָא קַלִּישָׁא' are distinct Kabbalistic concepts specific to this Torah's teaching. The Aramaic perisa kalisha is a technical term from Zohar Teruma."
+      }
+    },
+    {
+      "addition_id": 4,
+      "package_id": 1,
+      "proposed_edge": {
+        "node1_id": "ארץ ישראל",
+        "node2_id": "פתח (שער האמונה)",
+        "node1_text": "אֶרֶץ יִשְׂרָאֵל",
+        "node2_text": "פֶּתַח (שַׁעַר הָאֱמוּנָה)",
+        "type": "bechina",
+        "reference": 152,
+        "proof": "לְדַמּוֹת מִלְּתָא לְמִלְּתָא, כִּי הַכֹּל אֶחָד עִם הַנַּ\"ל"
+      },
+      "polarity": "good",
+      "reason": "Line 9: 'וְהָבֵן הַדָּבָר הֵיטֵב לְדַמּוֹת מִלְּתָא לְמִלְּתָא, כִּי הַכֹּל אֶחָד עִם הַנַּ\"ל' — 'And understand the matter well, to compare matter to matter, for everything is ONE with the above.' The phrase 'כִּי הַכֹּל אֶחָד' (for all is one) is the Rebbe's strongest possible assertion of identity — it goes beyond analogy to bechina equivalence. The reference to Sefer Tuv HaAretz (which discusses Eretz Yisrael's spiritual nature) is introduced immediately after the core teaching, and the Rebbe says 'for it is all one with the above.' Additionally, in line 3, the Eretz Yisrael parallel was introduced using the Zohar Acharei quotation about those unworthy to be buried in Eretz Yisrael being cast out — exactly mirroring the casting out from emuna described in lines 1-2. Eretz Yisrael is thus the macrocosmic/geographic expression of the same emuna-gateway-soul structure: (i) a holy domain with a protecting gateway; (ii) a boundary that admits the worthy (those with intact branches / those fit for burial); (iii) rejection of the unworthy preserves the holiness of the inner domain. ארץ ישראל shares the essential nature of the emuna-gateway cluster. The proposed bechina edge links ארץ ישראל directly to the gateway/emuna concept.",
+      "source_quote": "כִּי הַכֹּל אֶחָד עִם הַנַּ\"ל",
+      "in_dataset_already": false,
+      "nodes_exist_in_dataset": {
+        "ארץ ישראל": true,
+        "פתח (שער האמונה)": false,
+        "note": "ארץ ישראל is an established node in the dataset (appears as node1_id in edge 3, reference 47, bechina; and in multiple other edges). The connection to Torah 152's emuna-gateway is new."
+      }
+    },
+    {
+      "addition_id": 5,
+      "package_id": 3,
+      "proposed_edge": {
+        "node1_id": "מסירת נפש",
+        "node2_id": "נסיעה והתקרבות לצדיק",
+        "node1_text": "מְסִירַת נֶפֶשׁ",
+        "node2_text": "נְסִיעָה וְהִתְקָרְבוּת לְהַצַּדִּיק",
+        "type": "bechina",
+        "reference": 152,
+        "proof": "וְעַל יְדֵי מְסִירַת נֶפֶשׁ, דְּהַיְנוּ שֶׁמּוֹסֵר נַפְשׁוֹ בִּשְׁבִיל לִנְסֹעַ וּלְהִתְקָרֵב לְהַצַּדִּיק"
+      },
+      "polarity": "good",
+      "reason": "Line 7: 'וְעַל יְדֵי מְסִירַת נֶפֶשׁ, דְּהַיְנוּ שֶׁמּוֹסֵר נַפְשׁוֹ בִּשְׁבִיל לִנְסֹעַ וּלְהִתְקָרֵב לְהַצַּדִּיק' — 'And through mesirut nefesh (self-sacrifice), that is (dehavinu), one who devotes himself to travel and draw close to the tzaddik.' The dehavinu formula establishes bechina identity. In Torah #152's context, mesirut nefesh IS the act of traveling to and drawing close to the tzaddik — these are not cause and effect (mesirut nefesh does not PRODUCE the journey; it IS the journey). The inner quality (total self-dedication) and the outer expression (physical travel and approach to the tzaddik) are two faces of the same essential reality. Note: this דְּהַיְנוּ is partly definitional (explaining what the Rebbe means by mesirut nefesh in this context), but in Rebbe Nachman's usage, defining a concept with dehavinu establishes its bechina-nature in that Torah's specific framework, not merely a dictionary gloss.",
+      "source_quote": "וְעַל יְדֵי מְסִירַת נֶפֶשׁ, דְּהַיְנוּ שֶׁמּוֹסֵר נַפְשׁוֹ בִּשְׁבִיל לִנְסֹעַ וּלְהִתְקָרֵב לְהַצַּדִּיק",
+      "in_dataset_already": false,
+      "nodes_exist_in_dataset": {
+        "מסירת נפש": true,
+        "נסיעה והתקרבות לצדיק": false,
+        "note": "The node 'מסירת נפש' appears in the dataset (e.g., edge 1901, reference not 152: יוסף ↔ 'מסירת נפש על קדוש השם'). The specific formulation 'נסיעה והתקרבות לצדיק' is unique to Torah #152's teaching and does not appear to exist as a node."
+      }
+    },
+    {
+      "addition_id": 6,
+      "package_id": 2,
+      "proposed_edge": {
+        "node1_id": "חכמה",
+        "node2_id": "מוח",
+        "node1_text": "חָכְמָה",
+        "node2_text": "מֹחַ",
+        "type": "bechina",
+        "reference": 152,
+        "proof": "חָכְמָה, דְּהַיְנוּ הַמֹּחַ בְּעַצְמוֹ"
+      },
+      "polarity": "good",
+      "reason": "Line 7: 'אַךְ אִי אֶפְשָׁר שֶׁיָּאִיר אֵלָיו חָכְמָה, דְּהַיְנוּ הַמֹּחַ בְּעַצְמוֹ' — 'But it is impossible for wisdom (chokhmah) to shine upon him — that is (dehavinu), the intellect (moch) itself.' The dehavinu establishes the bechina identity: chokhmah IS the moch (the divine intellect). These are two expressions of the same essential reality — the highest level of divine intellectual illumination that the soul can receive. Chokhmah (the Kabbalistic sefirah of primal wisdom) and moch (the brain/intellect as the vessel of that wisdom) share the same essential nature: both designate the innermost divine understanding that transcends ordinary spiritual attachment. This bechina pair is the capstone of the Torah's teaching: even with mesirut nefesh, chokhmah/moch cannot shine — it is the unreachable transcendent dimension that stands beyond the emuna-gateway-mesirut nefesh pathway. This bechina also echoes Torah #1 (Package 1, where חכמה is the dominant node equated with חיות/life-force and the sun of sekhel), establishing a cross-Torah bridge.",
+      "source_quote": "חָכְמָה, דְּהַיְנוּ הַמֹּחַ בְּעַצְמוֹ",
+      "in_dataset_already": false,
+      "nodes_exist_in_dataset": {
+        "חכמה": true,
+        "מוח": true,
+        "note": "Both 'חכמה' and 'מוח' are established nodes in the dataset, appearing in multiple Torahs. No bechina edge for reference 152 exists for this pair."
+      }
+    }
+  ],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "קְלִפָּה מְסַבֶּבֶת (the surrounding klipa)",
+      "reason": "The klipa appears throughout the text (lines 1, 4, 5, 6, 8) as the active negative force that surrounds the holy soul and threatens the emuna-gateway. However, all language describing the klipa is functional/behavioral: it 'surrounds' (מְסַבֶּבֶת), 'strengthens' (מִתְגַּבֶּרֶת), 'spreads' (מִתְפַּשֶּׁטֶת), 'approaches' (מִתְקָרֶבֶת). There is no bechina identity statement: nowhere does the text say 'the klipa IS X' or 'X is a bechina of the klipa.' The klipa is described through its actions, not through parallel-nature equivalences. Excluded from bechina additions. It is a narratively present evil concept without bechina-language identification."
+    },
+    {
+      "concept": "פְּגַם הָעֲנָפִים (blemish of the branches)",
+      "reason": "The blemish of the branches appears in lines 1-2, 4 as the cause that gives the klipa power: 'מֵחֲמַת פְּגַם הָעֲנָפִים... מַשְׁלִיכִין אוֹתָם מִן הָאֱמוּנָה.' The 'מֵחֲמַת' (because of) formula is pure eitza (causal) language. The blemish is not equated to any other concept by shared nature — it is the cause of the casting-out, not an expression of the same reality as something else. Excluded from bechina additions."
+    },
+    {
+      "concept": "עֲנָפִים (branches) — the branches belonging to the soul",
+      "reason": "The ענפים are the soul's dependent branches that come into the world with it (line 1: 'נְשָׁמָה קְדוֹשָׁה... עִם הָעֲנָפִים הַשַּׁיָּכִים לָהּ'). The text does not establish a bechina identity for the branches — it does not say 'the branches ARE X.' They are described structurally (dependent appendages of the soul) but not equated to another concept using bechina language. The relationship between the soul and its branches appears to be ontological structure, not bechina identity. Excluded."
+    },
+    {
+      "concept": "מִי שֶׁאֵין רָאוּי לְהִתְקָרֵב (those unworthy to draw close)",
+      "reason": "Line 4 describes 'those unworthy to draw close' as the ones to be cast out. This is a descriptive category of persons, not a bechina equivalence with another spiritual concept. No 'X הוא בחינת Y' language is used. The parallel to those 'unfit to be buried in Eretz Yisrael' (from line 3) is implicit comparison ('כְּעֵין') — analogy, not bechina identity. Excluded."
+    },
+    {
+      "concept": "הַגְּאֻלָּה (the redemption) — 'הַשֵּׁם יִתְבָּרַךְ יְמַהֵר הַגְּאֻלָּה'",
+      "reason": "Line 7 ends with a prayer/aspiration: 'may God hasten the redemption.' This is not a bechina statement — it is a closing blessing/prayer appended to the main teaching. The redemption is mentioned aspirationally, not equated to any concept. Excluded."
+    },
+    {
+      "concept": "הָאֱמוּנָה — Eretz Yisrael parallel (line 3: 'כְּעֵין')",
+      "reason": "Line 3 introduces Eretz Yisrael with 'כְּעֵין מַה שֶּׁמָּצִינוּ' — 'like what we find.' The word 'כְּעֵין' is analogical comparison ('like,' 'similar to'), not bechina identity. However, line 9's 'כִּי הַכֹּל אֶחָד עִם הַנַּ\"ל' upgrades this from analogy to identity. The line 3 usage alone would be excluded; the line 9 explicit identity declaration is what justifies addition #4 above."
+    },
+    {
+      "concept": "צַדִּיק (the tzaddik) — the one to whom one draws close",
+      "reason": "The tzaddik appears in line 7 as the destination of mesirut nefesh: one devotes oneself to travel and draw close to the tzaddik. However, the tzaddik is mentioned as the object/destination of the approach, not equated to any concept using bechina language. The text does not say 'the tzaddik IS X' or 'X is a bechina of the tzaddik.' The tzaddik's relationship to the emuna-gateway system is implied (the tzaddik is the one who can transmit attachment but not chokhmah itself) but not formalized in bechina language. Excluded from bechina additions."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_152_edges_in_dataset": 0,
+    "total_reference_152_bechina_edges": 0,
+    "total_reference_152_eitza_edges": 0,
+    "nodes_in_dataset_for_reference_152": [],
+    "nodes_in_dataset_not_in_packages": [],
+    "bechina_pairs_found_in_source_text": 6,
+    "bechina_pairs_detail": [
+      "פֶּתַח ↔ אֱמוּנָה — line 4, דְּהַיְנוּ formula",
+      "נְשָׁמָה קְדוֹשָׁה ↔ שֹׁרֶשׁ — line 2, שֶׁהוּא formula",
+      "יְרֵא שָׁמַיִם ↔ פְּרִיסָא קַלִּישָׁא — line 8, explicit בְּחִינַת × 2",
+      "ארץ ישראל ↔ emuna-gateway system — line 9, כִּי הַכֹּל אֶחָד",
+      "מְסִירַת נֶפֶשׁ ↔ נְסִיעָה לְהַצַּדִּיק — line 7, דְּהַיְנוּ formula",
+      "חָכְמָה ↔ מֹחַ — line 7, דְּהַיְנוּ formula"
+    ],
+    "evil_domain_note": "Torah #152's evil domain (klipa, blemish, unworthy ones) is entirely expressed through eitza/functional language. No bechina identity pairs were found on the evil side. This means the evil domain cannot generate bechina-based packages — it is present as the antagonist of the good packages but is not itself structured through bechina equivalences within this Torah.",
+    "structural_observation": "Torah #152 is structurally unusual: it is entirely a positive teaching about how the holy soul's emuna-gateway functions, with the evil force (klipa) described only behaviorally as the antagonist. The teaching does not analyze or categorize the evil force conceptually (unlike, e.g., Torah #1 where the yetzer hara cluster has rich bechina analysis). All bechina content is on the good side. The three good packages (emuna/soul/gateway, chokhmah/moch, mesirut nefesh/tzaddik-approach) reflect the Torah's threefold structural argument: (1) the holy soul has an emuna-gateway that the klipa cannot permanently close; (2) one can draw close through mesirut nefesh (Package 3); (3) but chokhmah/moch itself (Package 2) transcends this pathway."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "source": "Torah #136",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #136 has ZERO edges in torahData.js (reference===136 returns no records). Packages are constructed entirely from direct analysis of the source text (torah_136.txt). The Torah is very short (9 lines) with minimal bechina language — only one explicit בְּחִינַת statement (line 9) and two הַיְנוּ equalities (lines 7, 9). Because there are no graph edges to run a connected-components algorithm over, the packages represent the conceptual clusters identified by close reading of the bechina and הַיְנוּ language, supplemented by the Torah's thematic structure. No graph merging was needed. All proposed bechina edges are candidates for addition to the dataset (see torah_136_additions.json)."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 136,
+      "label": "דָּן לְכַף זְכוּת וְדִין אֱמֶת",
+      "label_en": "Judging Favorably and True Justice",
+      "polarity": "good",
+      "reason": "The explicit and central bechina of this Torah is stated on line 9: 'הֱוֵי דָּן אֶת כָּל אָדָם לְכַף זְכוּת — דָּן דַּיְקָא, כִּי הוּא בְּחִינַת דִּין וּמִשְׁפָּט מַמָּשׁ.' Judging favorably (דָּן לְכַף זְכוּת) IS, in essence, actual judgment and justice (דִּין וּמִשְׁפָּט). This is not cause-and-effect — it is an identification of shared nature: the act of favorable judging IS a judicial act. The cluster includes the הַיְנוּ statement that one who judges favorably 'raises his fellow to a higher madrege' (מַעֲלֶה חֲבֵרוֹ לְמַדְרֵגָה יוֹתֵר גָּבוֹהַּ), which the Rebbe identifies as the mechanism by which the heavenly court judges the person. Before any elevation in madrege, a din (heavenly judgment) takes place — so the favorable judgment the person below enacts on earth directly triggers and shapes the heavenly judgment above. The result: 'וּכְפִי שֶׁיֵּצֵא הַמִּשְׁפָּט כֵּן יָקוּם' — as the verdict issues, so it stands. The dominant concept is דָּן לְכַף זְכוּת as the most active and instructionally central node.",
+      "dominant_node": "דן לכף זכות",
+      "nodes": [
+        "דן לכף זכות",
+        "דין ומשפט",
+        "מעלה חברו למדרגה יותר גבוהה",
+        "קודם שעולין לאיזו מדרגה דנין את האדם",
+        "וכפי שיצא המשפט כן יקום"
+      ],
+      "node_degrees": {
+        "דן לכף זכות": 3,
+        "דין ומשפט": 2,
+        "מעלה חברו למדרגה יותר גבוהה": 2,
+        "קודם שעולין לאיזו מדרגה דנין את האדם": 1,
+        "וכפי שיצא המשפט כן יקום": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 136,
+      "label": "מָקוֹם וּמַדְרֵגָה",
+      "label_en": "Place and Spiritual Level",
+      "polarity": "neutral",
+      "reason": "The Mishnah's phrase 'עַד שֶׁתַּגִּיעַ לִמְקוֹמוֹ' (until you reach his place) is interpreted by the Rebbe through a הַיְנוּ equality: 'הַיְנוּ שֶׁתִּשְׁתַּדֵּל שֶׁתִּהְיֶה עִמּוֹ בְּמָקוֹם אֶחָד, בְּמַדְרֵגָה אַחַת' (line 7). This makes מָקוֹם (place) and מַדְרֵגָה (spiritual level/standing) structural equivalents — two expressions of the same locational reality. The Torah consistently uses these two terms as parallel: 'בְּמָקוֹם אֶחָד הַיְנוּ בְּמַדְרֵגָה אַחַת' (lines 4, 5, 7). This cluster is polarity-neutral because the concept of madrege-equality is the structural mechanism the Torah describes — it is neither good nor evil in itself; it is the condition that either resolves machlokes (when present) or generates it (when absent). The dominant concept is מַדְרֵגָה, which appears more often and carries the heavier explanatory weight.",
+      "dominant_node": "מדרגה",
+      "nodes": [
+        "מדרגה",
+        "מקום",
+        "במקום אחד במדרגה אחת"
+      ],
+      "node_degrees": {
+        "מדרגה": 3,
+        "מקום": 2,
+        "במקום אחד במדרגה אחת": 2
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 136,
+      "label": "מַחֲלֹקֶת",
+      "label_en": "Conflict and Dispute",
+      "polarity": "evil",
+      "reason": "מַחֲלֹקֶת (dispute/conflict) is the problem the entire Torah is designed to resolve. The Rebbe identifies its cause: 'מַחֲלֹקֶת הוּא רַק מֵחֲמַת שֶׁהֵם מְשֻׁנִּים זֶה מִזֶּה' — conflict exists only because people differ from each other (line 5). Two related bechina-adjacent concepts belong here: (1) the aggressor who stirs conflict from jealousy ('מִתְקַנֵּא בּוֹ' — envying the other's greater level, line 4), and (2) the person whose machlokes arises because he has not reached the other's madrege (lines 3-4). This package is polarity 'evil' because machlokes is the opposing force in this Torah — the thing that is overcome by the practice of favorable judgment. The dominant concept is מַחֲלֹקֶת itself.",
+      "dominant_node": "מחלקת",
+      "nodes": [
+        "מחלקת",
+        "משונים זה מזה",
+        "מתקנא בו"
+      ],
+      "node_degrees": {
+        "מחלקת": 4,
+        "משונים זה מזה": 1,
+        "מתקנא בו": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["משונים זה מזה", "מתקנא בו"],
+          "reason": "Both are defined as bechina-expressions of the underlying cause of machlokes: difference in madrege produces either envy (jealousy at not reaching the other's level) or the other's failure to recognize the lower person's stage. Both share the essential nature of 'separation between people due to unequal standing' and are therefore part of the conflict-cluster, not independent packages."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_proposed": 7,
+    "total_nodes": 11,
+    "total_packages": 3,
+    "raw_connected_components": 0,
+    "note": "Because the dataset contains zero edges for Torah #136, connected components analysis was not possible. Packages were derived directly from bechina and הַיְנוּ language in the source text. All 7 proposed bechina edges and all 11 nodes are new additions to the dataset (see torah_136_additions.json). The Torah's argument is linear: Package 3 (evil: machlokes) is the problem; Package 2 (neutral: madrege-equality) is the structural condition that resolves it; Package 1 (good: favorable judgment = actual justice) is the practice that achieves it.",
+    "good_evil_mirror": "Package 1 (judging favorably as true justice) mirrors Package 3 (machlokes as the force that distorts judgment). The positive practice of dan l'chaf zekhut is the exact counterforce to machlokes — it transforms the evaluative lens from accusation to merit, from separation to shared standing."
+  }
+}

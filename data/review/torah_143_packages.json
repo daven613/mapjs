@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "source": "Torah #143",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===143 AND type==='bechina'. 3 bechina edges yielded 2 raw connected components. CC1 has 3 nodes (צמצום as hub, plus כשצריך לעצה ואינו יודע איך לעשות and דין). CC2 is an isolated pair (the wise-man's-counsel phrase node and חסדים). No merge between CC1 and CC2 is valid: they represent structurally opposed poles (dinim/tzimtzum vs. chasadim/expansion) that are connected causally (eitza edge 888) not by shared nature. CC2 is retained as its own package despite being a 2-node component because it names a distinct positive pole (chasadim) that is explicitly distinguished from CC1's evil/constriction pole."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 143,
+      "label": "צִמְצוּם וְדִינִים",
+      "label_en": "Contraction and Judgment",
+      "polarity": "evil",
+      "reason": "This cluster contains all concepts that share the essential nature of 'not knowing / constricted intellect / strict judgment.' The state of needing advice and not knowing what to do IS tzimtzum (contraction of the sekhel) and tzimtzum IS dinim. These three nodes are all expressions of the same underlying reality: the contracted, un-illuminated, strict-judgment dimension of a person's inner state. The Torah identifies this triad using explicit bechina language twice: 'היא בחינת צמצום ... והוא בחינת דינים' and 'הוא בחינת צמצום'. Polarity is evil/problematic — these are the conditions of spiritual constriction that the Torah describes as the danger one faces without the Tzaddik's counsel. The dinim here are not cosmic divine justice but the internal judgment-dimension (strict, contracted) that afflicts a person who lacks guidance.",
+      "dominant_node": "צמצום",
+      "nodes": [
+        "כשצריך לעצה, ואינו יודע איך לעשות",
+        "צמצום",
+        "דין"
+      ],
+      "node_degrees": {
+        "צמצום": 2,
+        "כשצריך לעצה, ואינו יודע איך לעשות": 1,
+        "דין": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 143,
+      "label": "חֲסָדִים וְהֶאָרַת הַחָכְמָה",
+      "label_en": "Chasadim and the Illumination of Wisdom",
+      "polarity": "good",
+      "reason": "This pair contains two nodes that share the essential nature of 'the wise man's counsel illuminating the recipient's sekhel.' The action of the wise man — he expands (מרחיב) and illuminates (מאיר) the person's wisdom — IS chasadim, because chesed is 'nehiru d'chokhmeta' (the illumination of wisdom), as cited from the Zohar (Lech Lecha 94a) and Psalms 52:3. Both nodes are different expressions of the same positive reality: when the Tzaddik/Chacham gives advice, it is not merely practical guidance but the flow of chesed, which is the light of wisdom itself pouring into the contracted intellect. Polarity is good — this is the remedy, the expansion, the chesed-dimension that sweetens the dinim of Package 1. CC2 is retained as its own package rather than absorbed into CC1, because the two poles (dinim/tzimtzum and chasadim/expansion) are structurally opposed in Kabbalistic teaching — they must not be collapsed into a single package. Their connection is causal (eitza): receiving counsel FROM the Tzaddik PRODUCES (eitza edge 888) the sweetening of dinim.",
+      "dominant_node": "חסדים",
+      "nodes": [
+        "על ידי שהחכם נותן לו עצה, הוא מרחיב לו, ומאיר בו חכמתו",
+        "חסדים"
+      ],
+      "node_degrees": {
+        "חסדים": 1,
+        "על ידי שהחכם נותן לו עצה, הוא מרחיב לו, ומאיר בו חכמתו": 1
+      },
+      "merge_notes": [
+        "CC2 not merged into CC1 despite being only 2 nodes: the two components represent opposite poles (dinim/tzimtzum vs. chasadim) that are explicitly distinguished in the Torah. Merging by 'shared nature' would be a category error — these concepts do not share nature, they are structural opposites connected by causal flow (eitza). The 2-node threshold for merging applies only when the shared nature is genuine; here the natures are antithetical."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 3,
+    "total_nodes": 5,
+    "total_packages": 2,
+    "raw_connected_components": 2
+  }
+}

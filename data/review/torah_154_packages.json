@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "source": "Torah #154",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===154 AND type==='bechina'. Only 1 bechina edge exists in the dataset for Torah 154 (edge id 444: יראה ↔ ארץ), yielding a single 2-node component. The Torah text is very short (9 lines) and is essentially a summary cross-reference to Torah #15. The dataset is severely undergapped — the source text contains multiple bechina-language statements that are not yet encoded. The 1 raw component maps to 1 package. Propose merging all bechina-evident concepts from the source text into a single unified package representing the core theme of yirah, eretz, and the elevation mechanism. See torah_154_additions.json for gap analysis."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 154,
+      "label": "יִרְאָה וְאֶרֶץ",
+      "label_en": "Fear and Earth",
+      "polarity": "good",
+      "reason": "The single bechina edge in the dataset (edge 444) connects יִרְאָה (divine fear/awe) with אֶרֶץ (the earth). This represents the Torah's core bechina equation: fear of God is the earth-quality — grounded, receptive, the lowest dimension that holds everything above it. The Rebbe derives this from Tehillim 76: 'אֶרֶץ יָרְאָה' — the earth itself is fear. This is the positive package: it describes the desired state of elevated yirah, namely יִרְאַת הָרוֹמְמוּת (transcendent awe of God's majesty), which is the root and proper home of all fear. The lev (heart) is identified as the root-place of yirah, and daat as the quality that must accompany it. The dataset captures only the outer shell of this teaching — the full component (after gap-filling) would include יִרְאָה, אֶרֶץ, לֵב, דַּעַת, and יִרְאַת הָרוֹמְמוּת as the apex concept.",
+      "dominant_node": "יראה",
+      "nodes": [
+        "יראה",
+        "ארץ"
+      ],
+      "node_degrees": {
+        "יראה": 1,
+        "ארץ": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "note_on_merges": "1 raw component: {יראה, ארץ} — kept as Package 1. No merges required because there is only one component. NOTE: The Torah 154 dataset is very sparse. The source text contains numerous bechina statements for concepts not yet encoded (see torah_154_additions.json): יִרְאוֹת נְפוּלוֹת, חָמֵשׁ אֵימוֹת, חָמֵשׁ גְּבוּרוֹת, מַנְצְפַ\"ךְ, לֵב, דַּעַת, and יִרְאַת הָרוֹמְמוּת. When those additions are incorporated, all belong to Package 1 by shared nature (they all describe the domain of yirah, its fallen form, its elevation, and its proper seat in the heart). The evil counterpart — יִרְאוֹת נְפוּלוֹת embedded in worldly fears producing yisurin — is captured in the additions as a negative sub-component within Package 1's domain description."
+  }
+}

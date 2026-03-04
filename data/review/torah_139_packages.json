@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "source": "Torah #139 (Likutay Moharan, Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #139 has ZERO bechina edges in torahData.js — the Torah has not yet been encoded in the dataset. All packages are derived directly from the source text (torah_139.txt). The Torah is brief (9 lines), built around Psalms 85:14: 'צֶדֶק לְפָנָיו יְהַלֵּךְ וְיָשֵׂם לְדֶרֶךְ פְּעָמָיו.' The opening line (line 2) identifies the verse with the Aramaic phrase 'יִקְרָא דְּשַׁבַּתָּא' (the honor/glory of Shabbat). The bechina language is sparse but precise: (1) line 3 uses 'בִּבְחִינַת' to equate the klipa's raglayim with Proverbs 5:5 ('רַגְלֶיהָ יוֹרְדוֹת מָוֶת'); (2) line 3 uses the IS-statement 'כָּל מִצְוָה הִיא קוֹמָה שְׁלֵמָה' to identify a mitzva with a complete form/stature; (3) line 3 uses 'בְּחִינַת רַגְלִין' as a mode of the mitzva; (4) line 7 uses 'נִקְרָאִים' to name mitzvot as tzedek. The eitza structure is clear: during the week (chol) the klipa sucks from the mitzva's raglayim → the mitzva cannot ascend → Shabbat nullifies the chitzonim → raglayim return → mitzva ascends before God → God takes great pleasure → from the footsteps God makes a well-trodden communal path. Three packages are proposed: (1) the mitzva-tzedek cluster incorporating Shabbat via the line-2 verse-identification; (2) the klipa-chitzonim cluster as the evil mirror; (3) the divine-response cluster (taanug + derech k'vushah) as the culminating good result."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 139,
+      "label": "מִצְוָה, צֶדֶק, וְיִקְרָא דְּשַׁבַּתָּא",
+      "label_en": "The Mitzva, Righteousness, and the Honor of Shabbat",
+      "polarity": "good",
+      "reason": "This package clusters all the bechina-equivalent concepts that constitute the positive subject of Torah #139. Three explicit bechina relationships anchor the cluster: (A) 'כָּל מִצְוָה הִיא קוֹמָה שְׁלֵמָה' (line 3) — every mitzva IS a complete stature/form. This is a strict identity statement: the mitzva and the komah sh'lemah are two names for the same essential reality. (B) 'וְהַמִּצְווֹת נִקְרָאִים צֶדֶק' (line 7) — mitzvot are CALLED tzedek. The 'נִקְרָאִים' formula is a canonical bechina marker in Rebbe Nachman's language, equating mitzvot and tzedek in essential nature. This identification is proven from Psalms 119:172 ('כָּל מִצְוֹתֶיךָ צֶדֶק') and allows the Rebbe to re-read the verse 'צֶדֶק לְפָנָיו יְהַלֵּךְ' as 'the mitzva walks before God.' (C) 'אֵין לְהַמִּצְוָה הַהִיא בְּחִינַת רַגְלִין, לַעֲלוֹת בָּהֶם וְלֵילֵךְ לִפְנֵי הַקָּדוֹשׁ-בָּרוּךְ-הוּא' (line 3) — the mitzva has, as its ascending dimension, a 'bechina of raglayim' (feet). The raglayim are not a separate object but a modal aspect (bechina) of the mitzva itself, through which it rises and walks before God. The parallel: just as a person walks on their feet, the mitzva's 'feet' are its mode of ascent. The connection of Shabbat to this cluster: line 2 states 'כִּי יִקְרָא דְּשַׁבַּתָּא הוּא' — the verse (and therefore its subject, tzedek/the mitzva going before God) IS what constitutes the 'Yikra d'Shabata,' the honor/aura of Shabbat. This is an identification: the spectacle of the mitzva ascending before God IS the glory of Shabbat. Lines 4-5 confirm this structurally — it is on Shabbat that this ascent takes place. The verse-content (tzedek walking before God) and Shabbat's honor are two names for the same event. Thus שַׁבָּת / יִקְרָא דְּשַׁבַּתָּא belongs to this cluster by shared nature: both are expressions of the same holy reality — the mitzva's ascent before God. The dominant node is מִצְוָה, with the most bechina connections within this Torah: it is equated to קוֹמָה שְׁלֵמָה, to צֶדֶק, and characterized as having בְּחִינַת רַגְלִין.",
+      "dominant_node": "מִצְוָה",
+      "nodes": [
+        "מִצְוָה",
+        "קוֹמָה שְׁלֵמָה",
+        "צֶדֶק",
+        "בְּחִינַת רַגְלִין",
+        "שַׁבָּת",
+        "יִקְרָא דְּשַׁבַּתָּא",
+        "פַּעֲמֵי רַגְלִין"
+      ],
+      "node_degrees": {
+        "מִצְוָה": 4,
+        "צֶדֶק": 2,
+        "קוֹמָה שְׁלֵמָה": 2,
+        "בְּחִינַת רַגְלִין": 2,
+        "שַׁבָּת": 2,
+        "יִקְרָא דְּשַׁבַּתָּא": 2,
+        "פַּעֲמֵי רַגְלִין": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["שַׁבָּת", "יִקְרָא דְּשַׁבַּתָּא"],
+          "reason": "שַׁבָּת and יִקְרָא דְּשַׁבַּתָּא have no bechina peers outside of their identification with the mitzva-ascent. Line 2 ('כִּי יִקְרָא דְּשַׁבַּתָּא הוּא') identifies the verse's content — i.e., tzedek/the mitzva walking before God — with the honor of Shabbat. The ascending mitzva before God IS Shabbat's glory. This is a bechina (shared nature): the mitzva-ascent and the honor of Shabbat are two faces of the same reality. Shabbat is not merely the mechanism that enables ascent (that would be eitza); it IS the occasion whose essential meaning consists in the mitzva's ascent. Because no second bechina domain exists for Shabbat in this Torah, and because its essential nature is identified with the mitzva's ascent, it merges into Package 1 by shared nature."
+        },
+        {
+          "merged_nodes": ["פַּעֲמֵי רַגְלִין"],
+          "reason": "פַּעֲמֵי רַגְלִין (the footsteps/foot-beats of the mitzva) is the cumulative form of the mitzva's bechina-raglayim. The verse 'וְיָשֵׂם לְדֶרֶךְ פְּעָמָיו' is read as referring to the mitzva's foot-movements. As such, פַּעֲמֵי רַגְלִין is not a new concept but the collective expression of 'בְּחִינַת רַגְלִין' — the same ascending mode, now accumulated across many mitzvot, generating the communal path. Its essential nature (ascending movement of the mitzva before God) is the same as the broader mitzva cluster. Merged into Package 1 by shared nature."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 139,
+      "label": "קְלִפָּה וְחִיצוֹנִים — רַגְלֶיהָ יוֹרְדוֹת מָוֶת",
+      "label_en": "The Klipa and External Forces — 'Her Feet Go Down to Death'",
+      "polarity": "evil",
+      "reason": "This is the evil mirror of Package 1. Where Package 1 consists of the mitzva's feet ascending before God, Package 2 consists of the klipa's feet descending toward death. The anchor bechina is explicit in line 3: '[בִּבְחִינַת (משלי ה׳:ה׳): רַגְלֶיהָ יוֹרְדוֹת מָוֶת]' — the klipa's possession of the mitzva's raglayim is characterized by the verse 'her feet go down to death' (Proverbs 5:5, referring originally to the 'foreign woman,' the feminine embodiment of the sitra achra). The 'בִּבְחִינַת' formula equates the klipa to the entity whose feet descend to death — not an incidental proof-text, but a structural identification: the klipa IS the entity described by this verse. The חִיצוֹנִים (external/alien forces) and the קְלִפָּה are used interchangeably throughout this Torah (lines 3, 4, 5 — 'שְׁלִיטַת הַחִיצוֹנִים,' 'הַחִיצוֹנִים,' 'יוֹנֶקֶת הַקְּלִפָּה'). They are different names for the same negative reality: the domain of impurity that is active during the weekdays and sucks vitality from the mitzva's ascending dimension. The dominant node is קְלִפָּה, the most active and explicitly named agent in the evil cluster. The good/evil structural mirror: Package 1's 'בְּחִינַת רַגְלִין לַעֲלוֹת' (feet ascending) is the direct mirror-opposite of Package 2's 'רַגְלֶיהָ יוֹרְדוֹת מָוֶת' (feet descending to death). The mitzva's feet rise; the klipa's feet fall. Shabbat's role in the teaching is precisely to remove the raglayim from Package 2's grip (the klipa's downward pull) and restore them to Package 1's upward movement.",
+      "dominant_node": "קְלִפָּה",
+      "nodes": [
+        "קְלִפָּה",
+        "חִיצוֹנִים",
+        "רַגְלֶיהָ יוֹרְדוֹת מָוֶת"
+      ],
+      "node_degrees": {
+        "קְלִפָּה": 3,
+        "חִיצוֹנִים": 2,
+        "רַגְלֶיהָ יוֹרְדוֹת מָוֶת": 2
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 139,
+      "label": "תַּעֲנוּג הַקָּדוֹשׁ-בָּרוּךְ-הוּא וְדֶרֶךְ כְּבוּשָׁה",
+      "label_en": "God's Delight and the Established Communal Path",
+      "polarity": "good",
+      "reason": "This package clusters the two culminating nodes of the teaching — both expressing the divine response to the mitzva's ascent before God. (A) תַּעֲנוּג / שַׁעֲשׁוּעִים (divine pleasure/delight): Lines 6 and 9 repeatedly emphasize that God derives 'תַּעֲנוּג גָּדוֹל' (great pleasure) and 'שַׁעֲשׁוּעִים' (delight) from every mitzva, even one performed imperfectly. The analogy is a father whose delight in his child's first steps surpasses his concern about their clumsiness. This delight is the immediate divine response to the ascending mitzva. (B) דֶּרֶךְ כְּבוּשָׁה (well-established communal path): Lines 7-9 develop the walking metaphor — just as a person walking repeatedly through a pathless wilderness eventually creates a worn path for others, God, from the accumulated 'פַּעֲמֵי רַגְלָיו' (foot-movements of the mitzva), makes a 'דֶּרֶךְ כְּבוּשָׁה' (a trampled, established path) accessible to the many. The re-reading of 'וְיָשֵׂם לְדֶרֶךְ פְּעָמָיו' is: God MAKES a derech from the footsteps. The text links taanug to derech via eitza: 'מֵחֲמַת גֹּדֶל הַתַּעֲנוּגִים... עוֹשֶׂה מִפַּעֲמֵי רַגְלָיו דֶּרֶךְ כְּבוּשָׁה' (line 9) — BECAUSE of the great pleasure, God makes the established path. The connection between taanug and derech k'vushah within this package is not explicit bechina but shared-nature grouping of two singleton concepts that both belong to the same conceptual domain: the divine engagement with the mitzva produces delight AND an enduring communal path. Neither taanug nor derech k'vushah has a bechina peer elsewhere in this Torah. By shared-nature merge: both are expressions of how God's relationship to the ascending mitzva manifests — one as immediate subjective response (delight), one as objective communal outcome (established path). The dominant node is תַּעֲנוּג, which is the stated cause of the derech.",
+      "dominant_node": "תַּעֲנוּג",
+      "nodes": [
+        "תַּעֲנוּג",
+        "דֶּרֶךְ כְּבוּשָׁה"
+      ],
+      "node_degrees": {
+        "תַּעֲנוּג": 2,
+        "דֶּרֶךְ כְּבוּשָׁה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["תַּעֲנוּג", "דֶּרֶךְ כְּבוּשָׁה"],
+          "reason": "Neither תַּעֲנוּג nor דֶּרֶךְ כְּבוּשָׁה has a bechina peer within Torah #139. Their connection is eitza (taanug → derech) per line 9 ('מֵחֲמַת גֹּדֶל הַתַּעֲנוּגִים... עוֹשֶׂה... דֶּרֶךְ כְּבוּשָׁה'). However, both are singleton-node eitza-downstream concepts that share the essential domain of 'divine response to the ascending mitzva.' The framework instructs: 'Merge small (1-2 node) components by SHARED NATURE only (not eitza/cause-effect).' Their shared nature is: they are both expressions of how God's engagement with the mitzva manifests outwardly — the immediate response (taanug/delight) and the enduring outcome (derech k'vushah). Both are 'what God produces from the mitzva's ascent.' This is a conceptual family by shared nature, not by eitza (the eitza relationship is between them internally, but the reason for their grouping into one package is their common membership in the domain of 'God's mitzva-response'). Merged into Package 3 as a two-node small package."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_from_source_text": 4,
+    "total_nodes": 12,
+    "total_packages": 3,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 3,
+    "dataset_encoding_status": "NOT_ENCODED — Torah #139 has no edges in torahData.js. All analysis is source-text-only.",
+    "note_on_merges": "Package 1 (7 nodes) is the primary good cluster: mitzva = tzedek = komah sh'lemah, with bechina-raglayim as ascending mode, and Shabbat/Yikra d'Shabata merged in by shared nature (the mitzva's ascent before God IS the glory of Shabbat). Package 2 (3 nodes) is the evil mirror: klipa = chitzonim = 'raglehah yoredot mavet'. Package 3 (2 nodes) pairs taanug and derech k'vushah by shared-nature grouping — both are what God produces from the mitzva's ascent. The teaching's eitza spine is: klipa sucks raglayim of mitzva (chol) → Shabbat nullifies chitzonim → raglayim return → mitzva ascends before God (tzedek goes before Him = Yikra d'Shabata) → God takes great taanug → from accumulated footsteps God makes derech k'vushah for the many. Good/evil mirror: Package 1's 'raglayim la'alot' (feet ascending) is the exact structural inverse of Package 2's 'raglehah yoredot mavet' (feet descending to death). The raglayim-concept pivots between the two poles: when the klipa has them, they descend; when Shabbat restores them, they ascend. The polarity of the raglayim is the crux of the entire Torah."
+  }
+}

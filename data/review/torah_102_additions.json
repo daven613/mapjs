@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "source": "Torah #102 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_102_packages.json, all reference===102 edges from torahData.js, and the full source text torah_102.txt. Because there are zero bechina edges in the dataset for Torah #102, the gap analysis is entirely driven by the source text. For each explicit bechina statement in the source text (using language: בְּחִינַת, הוּא, הַיְנוּ, נִקְרָא), verified whether the concept appears as a node in the dataset and whether it is assigned to a package. All proposed packages in torah_102_packages.json were formed entirely from this gap analysis."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וּבֵית",
+      "node_id": "יִרְאָה",
+      "node_text": "יִרְאָה",
+      "polarity": "good",
+      "reason": "Central concept of Torah #102. The Rebbe teaches there are two kinds of yira: (1) spontaneous higher fear (יִרְאָה עֶלְיוֹנָה) which brings no reward, and (2) earned yira generated through one's own effort, which IS the condition for prayer being heard. This earned yira is explicitly equated with both בֵּית (house) and with צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים. Must be added as a bechina node.",
+      "source_quote": "וְיֵשׁ יִרְאָה, שֶׁבָּאָה לָאָדָם מִכֹּחַ אָדָם עַצְמוֹ, וְיִרְאָה זוֹ נִקְרָא: צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 1280,
+      "dataset_note": "Node 'יראה' exists as node1_id in edge 1280 (reference=102, type=eitza). It appears as an eitza source-node but has no bechina edges connecting it to its parallel concepts (בֵּית, כִּסֵּא). The bechina edges need to be added."
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וּבֵית",
+      "node_id": "בֵּית",
+      "node_text": "בֵּית",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly states 'בֵּיתִי הוּא יִרְאָה' — my house IS fear of God. This is an explicit bechina equation (using הוּא, parallel to 'כִּסֵּא הוּא מַלְכוּת'). The house/bayit metaphor is used to denote the containing structure of yira: just as a house surrounds and protects, yira surrounds and enables all divine service. The Talmudic source quoted is Shabbat 31b ('חֲבָל עַל דְּלֵית לֵהּ דַּרְתָא') — the courtyard/house is the metaphor for yira as the prerequisite container of Torah.",
+      "source_quote": "אַתָּה תִּהְיֶה עַל בֵּיתִי. בֵּיתִי הוּא יִרְאָה, כְּמוֹ שֶׁאָמְרוּ חֲכָמֵינוּ זִכְרוֹנָם לִבְרָכָה (שבת לא:): חֲבָל עַל דְּלֵית לֵהּ דַּרְתָא",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "new_bechina_edge_proposed": {
+        "node1_id": "יִרְאָה",
+        "node2_id": "בֵּית",
+        "proof": "אַתָּה תִּהְיֶה עַל בֵּיתִי. בֵּיתִי הוּא יִרְאָה",
+        "reference": 102,
+        "type": "bechina"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וּבֵית",
+      "node_id": "צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים",
+      "node_text": "צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים",
+      "polarity": "good",
+      "reason": "The Rebbe cites the verse from Shmuel II 23:3 and says 'וְיִרְאָה זוֹ נִקְרָא: צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים.' The earned yira IS called/named 'the tzaddik who rules through fear of God.' This is an explicit bechina (using נִקְרָא). The tzaddik-who-rules is the personification of the domain of earned yira — it is the same essential quality expressed through a person, just as the house is the same quality expressed through a spatial metaphor. All three (יִרְאָה, בֵּית, צַדִּיק מוֹשֵׁל) are bechina of the same domain.",
+      "source_quote": "וְיִרְאָה זוֹ נִקְרָא: צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים (שמואל ב כ״ג:ג׳)",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "new_bechina_edge_proposed": {
+        "node1_id": "יִרְאָה",
+        "node2_id": "צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים",
+        "proof": "וְיִרְאָה זוֹ נִקְרָא: צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים",
+        "reference": 102,
+        "type": "bechina"
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "מַלְכוּת וְכִסֵּא",
+      "node_id": "מַלְכוּת",
+      "node_text": "מַלְכוּת",
+      "polarity": "good",
+      "reason": "Malkhut is the explicit purpose of all creation in Torah #102 ('לִכְבוֹדוֹ... לְגַלּוֹת מַלְכוּתוֹ'). It is the destination of the entire chain: yira → prayer heard → shefa → malkhut revealed. The throne (כִּסֵּא) is explicitly equated with malkhut. The phrase 'מַלְכוּתוֹ בַּכֹּל מָשָׁלָה' describes the same domain. Must be added as a bechina node for this Torah.",
+      "source_quote": "כְּדֵי לְגַלּוֹת מַלְכוּתוֹ... אָז מוֹדִים כָּל אֶחָד וְאֶחָד כִּי מַלְכוּתוֹ בַּכֹּל מָשָׁלָה",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 1725,
+      "dataset_note": "Node 'מוריד שפע בעולם, ונתגדל מלכותו' exists as node2_id in edge 1725 (reference=102, type=eitza). Malkhut is referenced within a complex eitza node-label but never appears as its own bechina node for this Torah. The bechina of מַלְכוּת = כִּסֵּא needs to be added."
+    },
+    {
+      "package_id": 2,
+      "package_label": "מַלְכוּת וְכִסֵּא",
+      "node_id": "כִּסֵּא",
+      "node_text": "כִּסֵּא",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly states 'כִּסֵּא הוּא מַלְכוּת' — the throne IS kingship. This is the clearest bechina statement in the entire Torah, using the identical formula as 'בֵּיתִי הוּא יִרְאָה'. The throne and kingship are two faces of the same essential domain: the royal governing dimension of divinity. The throne IS the governing seat; malkhut IS the quality of governance. Neither produces the other — they are parallel aspects.",
+      "source_quote": "רַק הַכִּסֵּא – הַיְנוּ מִעוּט הַמַּלְכוּת, כִּי 'רַק' הוּא מִעוּט, 'כִּסֵּא' הוּא מַלְכוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "new_bechina_edge_proposed": {
+        "node1_id": "כִּסֵּא",
+        "node2_id": "מַלְכוּת",
+        "proof": "כִּסֵּא הוּא מַלְכוּת",
+        "reference": 102,
+        "type": "bechina"
+      }
+    },
+    {
+      "package_id": 3,
+      "package_label": "תְּפִלָּה וְתֵבוֹת",
+      "node_id": "תְּפִלָּה",
+      "node_text": "תְּפִלָּה",
+      "polarity": "good",
+      "reason": "Prayer is the central vehicle of the Torah's teaching. The Rebbe explicitly equates פִּיךָ / מֵימַר פֻּמָּךְ with תְּפִלָּה (using הַיְנוּ = meaning/bechina). The prayer-words are described as vessels for receiving shefa. Tefillah already appears as node1_id in edge 1343 (type=eitza) but has no bechina connections for Torah #102.",
+      "source_quote": "וְעַל פִּיךָ יִשַּׁק כָּל עַמִּי, וְתַרְגּוּם אוּנְקְלוֹס: וְעַל מֵימַר פֻּמָּךְ, הַיְנוּ הַתְּפִלָּה, יִתְּזַן כָּל עַמִּי",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 1343,
+      "dataset_note": "Node 'תפלה' exists as node1_id in edge 1343 (reference=102, type=eitza, linking תְּפִלּוֹת → יְכוֹלִים לְהוֹרִיד הַשֶּׁפַע). It is an eitza source-node. The bechina connections to תֵּבוֹת and פֶּה need to be added."
+    },
+    {
+      "package_id": 3,
+      "package_label": "תְּפִלָּה וְתֵבוֹת",
+      "node_id": "תֵּבוֹת",
+      "node_text": "תֵּבוֹת",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly states 'הַתֵּבוֹת הֵם כֵּלִים לְקַבֵּל הַשֶּׁפַע' — the prayer-words ARE vessels for receiving divine abundance. This is a bechina equation: words of prayer and vessels-for-abundance share the same essential nature (receptive containers). The word תֵּבוֹת (words) as a concept-node does not appear in the dataset for Torah #102.",
+      "source_quote": "הַתֵּבוֹת הֵם כֵּלִים לְקַבֵּל הַשֶּׁפַע",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "new_bechina_edge_proposed": {
+        "node1_id": "תֵּבוֹת",
+        "node2_id": "כֵּלִים לְקַבֵּל הַשֶּׁפַע",
+        "proof": "הַתֵּבוֹת הֵם כֵּלִים לְקַבֵּל הַשֶּׁפַע",
+        "reference": 102,
+        "type": "bechina"
+      }
+    },
+    {
+      "package_id": 3,
+      "package_label": "תְּפִלָּה וְתֵבוֹת",
+      "node_id": "פֶּה",
+      "node_text": "פֶּה",
+      "polarity": "good",
+      "reason": "The verse 'וְעַל פִּיךָ יִשַּׁק כָּל עַמִּי' is interpreted via the Onkelos Aramaic translation as 'וְעַל מֵימַר פֻּמָּךְ' — meaning the mouth/speech, which the Rebbe immediately equates (הַיְנוּ הַתְּפִלָּה) with prayer. The פֶּה (mouth/speech organ) shares the same essential nature as תְּפִלָּה in this context: both are expressions of the verbal dimension through which shefa is drawn down. Neither causes the other — they are parallel aspects of the same domain.",
+      "source_quote": "וְעַל פִּיךָ יִשַּׁק כָּל עַמִּי, וְתַרְגּוּם אוּנְקְלוֹס: וְעַל מֵימַר פֻּמָּךְ, הַיְנוּ הַתְּפִלָּה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "new_bechina_edge_proposed": {
+        "node1_id": "פֶּה",
+        "node2_id": "תְּפִלָּה",
+        "proof": "וְעַל פִּיךָ יִשַּׁק כָּל עַמִּי, הַיְנוּ הַתְּפִלָּה",
+        "reference": 102,
+        "type": "bechina"
+      }
+    },
+    {
+      "package_id": 4,
+      "package_label": "קְּלִפּוֹת תַּחַת הַשְּׁכִינָה",
+      "node_id": "קְּלִפּוֹת",
+      "node_text": "קְּלִפּוֹת",
+      "polarity": "evil",
+      "reason": "The klipot are mentioned in the opening line of Torah #102 as the structural counterforce to divine malkhut. They are the evil domain that stands in contrast to the Shechina's revelation. The teaching structure positions klipot as the negative-pole mirror of malkhut: wherever malkhut is revealed, klipot are subdued. The klipot are not produced by something else in this Torah — they ARE the domain of evil/husks that structurally opposes the Shechina.",
+      "source_quote": "וְעַל יְדֵי זֶה, נִכְפָפִין הַקְּלִפּוֹת תַּחַת הַשְּׁכִינָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "new_bechina_edge_proposed": {
+        "node1_id": "קְּלִפּוֹת",
+        "node2_id": "נִכְפָּפִין תַּחַת הַשְּׁכִינָה",
+        "proof": "וְעַל יְדֵי זֶה, נִכְפָפִין הַקְּלִפּוֹת תַּחַת הַשְּׁכִינָה",
+        "reference": 102,
+        "type": "bechina"
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_102_edges": 4,
+    "total_reference_102_bechina_edges": 0,
+    "total_reference_102_eitza_edges": 4,
+    "dataset_edge_summary": [
+      {
+        "id": 538,
+        "type": "eitza",
+        "description": "יִרְאָה שֶׁבָּאָה לָאָדָם מִכֹּחַ אָדָם עַצְמוֹ → וּבְיִרְאָה כָּזוֹ הַתְּפִלָּה נִשְׁמַעַת, וְשֶׁפַע יוֹרֵד לָעוֹלָם, וְנִתְגַּלֶּה מַלְכוּתוֹ"
+      },
+      {
+        "id": 1280,
+        "type": "eitza",
+        "description": "יִרְאָה → יוּכַל לְעוֹרֵר הַשֶּׁפַע בָּעוֹלָם"
+      },
+      {
+        "id": 1343,
+        "type": "eitza",
+        "description": "הַתְּפִלּוֹת → יְכוֹלִים לְהוֹרִיד הַשֶּׁפַע"
+      },
+      {
+        "id": 1725,
+        "type": "eitza",
+        "description": "מִכֹּחַ הַתְּפִלָּה שֶׁהִיא בְּיִרְאָה → מוֹרִיד שֶׁפַע בָּעוֹלָם, וְנִתְגַּדֵּל מַלְכוּתוֹ"
+      }
+    ],
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["יִרְאָה", "בֵּית", "צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים"],
+      "package_2": ["מַלְכוּת", "כִּסֵּא", "מִעוּט הַמַּלְכוּת"],
+      "package_3": ["תְּפִלָּה", "תֵּבוֹת", "שֶׁפַע", "פֶּה"],
+      "package_4": ["קְּלִפּוֹת", "נִכְפָּפִין תַּחַת הַשְּׁכִינָה"]
+    },
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "יִרְאָה עֶלְיוֹנָה (higher spontaneous fear)",
+        "reason": "The source text contrasts this with earned yira but does not establish it as a bechina of something else. It is simply named as the other type of yira. It could be an evil-mirror concept (yira that is not self-generated = gift that creates no spiritual building) but the source does not use bechina language to equate it with another concept. Not included per strict framework rule."
+      },
+      {
+        "concept": "כְּבוֹדוֹ (God's glory)",
+        "reason": "The Torah opens 'לֹא בָּרָא אֶלָּא לִכְבוֹדוֹ' — but כָּבוֹד is given as the purpose/goal, not equated via bechina language with another concept within this Torah. The verse is citing Avot 6; it is support-text, not a bechina statement about כָּבוֹד itself."
+      },
+      {
+        "concept": "בִּשְׁבִילִי נִבְרָא הָעוֹלָם",
+        "reason": "This Talmudic statement (Sanhedrin 37a) is quoted to explain the mode of prayer — 'every person must say the world was created for my sake.' It is an eitza-instruction (how to pray to arouse shefa), not a bechina equation. The Rebbe does not say X is a bechina of this concept."
+      },
+      {
+        "concept": "שְׁכִינָה (Shechina)",
+        "reason": "The Shechina is mentioned as the opposite pole to the klipot ('נִכְפָּפִין הַקְּלִפּוֹת תַּחַת הַשְּׁכִינָה') but is not equated via explicit bechina language with another concept in this Torah. It is the receiving/feminine divine presence, closely related to מַלְכוּת across Rebbe Nachman's corpus, but in this short Torah it is only named, not developed through bechina equations."
+      }
+    ],
+    "critical_finding": "Torah #102 has ZERO bechina edges in the current dataset. This is a significant gap. The four existing eitza edges correctly capture the teaching's causal flow (yira → prayer heard → shefa → malkhut revealed), but the entire bechina/conceptual-identity layer is missing. The gap analysis proposes 5 new bechina edges to add to the dataset."
+  }
+}

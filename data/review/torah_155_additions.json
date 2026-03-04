@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "source": "Torah #155",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_155_packages.json, all reference===155 edges from torahData.js, and the full source text torah_155.txt. Every bechina-language statement in the source text was checked: explicit language בְּחִינַת, הַיְנוּ, הוּא X, לְשׁוֹן, נִקְרָא. Only genuine bechina declarations (not causal, not translational, not simile) were treated as candidates. Checked whether each appears in the dataset and whether it is assigned to a package."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "אֱמוּנָה וְאֶרֶץ יִשְׂרָאֵל",
+      "node_id": "קריאת שמע",
+      "node_text": "קְרִיאַת שְׁמַע",
+      "polarity": "good",
+      "reason": "In the final line of the Torah (line 17), the Rebbe states: 'וְעַל-יְדֵי-זֶה זוֹכִים לֶאֱמוּנָה, הַיְנוּ קְרִיאַת-שְׁמַע, שֶׁהוּא אֱמוּנָה' — 'and through this [longing for Eretz Yisrael before Shema] one merits faith, namely Kriat Shema, which IS faith.' The word 'הַיְנוּ' (that is, namely) functions as a bechina-equivalence marker here: Kriat Shema is defined as the embodiment of אֱמוּנַת הַיִּחוּד (faith in divine unity). The phrase 'שֶׁהוּא אֱמוּנָה' is a direct parallel-nature identification. קריאת שמע does not appear as a bechina node in the reference-155 dataset, yet the Rebbe explicitly equates it to אמונה using הַיְנוּ + הוּא — the same language that defines a bechina edge. It belongs in Package 1 as a bechina of אמונה.",
+      "source_quote": "וְעַל-יְדֵי-זֶה זוֹכִים לֶאֱמוּנָה, הַיְנוּ קְרִיאַת-שְׁמַע, שֶׁהוּא אֱמוּנָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_155_edges": 15,
+    "total_reference_155_bechina_edges": 5,
+    "total_reference_155_eitza_edges": 10,
+    "nodes_accounted_for_in_packages": {
+      "package_1": [
+        "אמונה",
+        "ארך אפים",
+        "ארץ ישראל",
+        "כח הגודל וכח הצומח",
+        "אמת",
+        "מה שאינו ירא משום דבר, ואינו משגיח על שום בטול ובלבול בעבודתו, רק עושה את שלו"
+      ]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["קריאת שמע"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "עבודה זרה",
+        "reason": "Line 8 says 'כִּי כָּל זְמַן שֶׁיֵּשׁ עֲבוֹדָה זָרָה בָּעוֹלָם חֲרוֹן אַף בָּעוֹלָם', and line 16 says 'כָּל הַכּוֹעֵס כְּאִלּוּ עוֹבֵד עַכּוּ\"ם' — this uses כְּאִלּוּ (as if), which is simile language, not a bechina equivalence declaration. The Rebbe does not say עבודה זרה הוא בחינת כעס or vice versa. It is a rabbinic citation used to motivate avoiding anger, not a bechina-structure identification. Excluded."
+      },
+      {
+        "concept": "כעס (anger)",
+        "reason": "Mentioned as the antithesis of ארך אפים and as a consequence of lacking faith, but never with בְּחִינַת or הַיְנוּ or הוּא as a bechina-equivalence marker. The statement 'הֶפֶךְ הַכַּעַס' (the opposite of anger) identifies it as a contrast, not as a parallel-nature bechina partner. It appears only in eitza context: 'אֶרֶץ יִשְׂרָאֵל הוּא... הֶפֶךְ הַכַּעַס' is a contrast statement, not a bechina equation. Excluded."
+      },
+      {
+        "concept": "גַּעְגּוּעִים לְאֶרֶץ יִשְׂרָאֵל (longing for Eretz Yisrael)",
+        "reason": "Line 16-17: the Rebbe instructs one to ask God for 'כִּסּוּפִין וְגַעְגּוּעִים לְאֶרֶץ-יִשְׂרָאֵל'. This is a practical instruction (eitza direction) — longing for Eretz Yisrael is the means by which one attains the emunah of Kriat Shema. The longing itself is not declared a bechina of emunah or of ארץ ישראל; it is the causal mechanism. Excluded as eitza, not bechina."
+      },
+      {
+        "concept": "חסרון אמונה (lack of faith)",
+        "reason": "Appears repeatedly as the cause of עצבות, עצלות, and כבדות. This is a causal (eitza) framing throughout. The Rebbe never says 'עצבות היא בחינת חסרון אמונה' — he says 'עצבות is FROM lack of faith'. Directional causation, not parallel-nature identification. Excluded."
+      },
+      {
+        "concept": "חיטה (wheat) and ארץ טובה (good soil)",
+        "reason": "Lines 4-6: the wheat/soil parable is a mashal (metaphor/analogy), not a bechina declaration. The Rebbe says 'כְּמוֹ לְמָשָׁל' — 'like a parable' — and uses the analogy to illustrate the concept of כח הגודל וכח הצומח. The wheat and soil are illustrative, not identified as bechina-concepts themselves. Excluded."
+      },
+      {
+        "concept": "זריזות ושמחה (alacrity and joy)",
+        "reason": "Line 10 mentions that through ארך אפים one acts 'בִּזְרִיזוּת וְשִׂמְחָה' (with alacrity and joy). These are described as outcomes/qualities of one who has ארך אפים, not identified as bechinot of any package node. No בְּחִינַת language is used. Excluded."
+      }
+    ]
+  }
+}

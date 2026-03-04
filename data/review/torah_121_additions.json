@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "source": "Torah #121 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_121_packages.json, all reference === 121 edges from torahData.js (0 edges found), and the full source text torah_121.txt (3 lines). Performed a complete line-by-line scan for all explicit bechina language: בְּחִינַת / מִבְּחִינַת / בִּבְחִינַת / הוּא בְּחִינַת / הַיְנוּ [as equivalence marker] / נִקְרָא [as shared-nature marker] / כַּנַּ\"ל [as cross-reference equivalence marker]. Result: no bechina language found anywhere in the text. The additions list is empty because there are no bechina statements to add."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_121_edges": 0,
+    "total_reference_121_bechina_edges": 0,
+    "total_reference_121_eitza_edges": 0,
+    "bechina_language_scan": {
+      "line_1": "Opening verse citation: 'אָז אָמַרְתִּי הִנֵּה בָאתִי בִּמְגִלַּת סֵפֶר כָּתוּב עָלָי, לַעֲשׂוֹת רְצוֹנְךָ וְכוּ' (Psalm 40:8-9). This is a verse citation, not a bechina declaration. No bechina language.",
+      "line_2": "Core teaching: 'כְּשֶׁאָדָם רוֹאֶה וְלוֹמֵד בְּסֵפֶר, וּבְכָל מָקוֹם שֶׁהוּא רוֹאֶה וְלוֹמֵד, מוֹצֵא אֶת עַצְמוֹ, הַיְנוּ שֶׁלּוֹקֵחַ לְעַצְמוֹ מוּסָר, וְרוֹאֶה פְּחִיתוּתוֹ וְשִׁפְלוּתוֹ, בְּכָל מָקוֹם בְּאֵיזֶה סֵפֶר שֶׁהוּא בָּא וּמְעַיֵּן שָׁם, זֶה סִימָן שֶׁחָפֵץ לַעֲשׂוֹת רְצוֹנוֹ יִתְבָּרַךְ.' The word הַיְנוּ appears once, functioning as an explicative gloss ('meaning: he takes mussar for himself'). This is not a bechina equation between two conceptual nodes — it is an internal clarification of what 'finds himself' means in practical behavioral terms. No bechina language.",
+      "line_3": "Conclusive verse-reading: 'וְזֶה: אָז אָמַרְתִּי הִנֵּה בָאתִי בִּמְגִלַּת סֵפֶר כָּתוּב עָלָי – זֶה סִימָן: לַעֲשׂוֹת רְצוֹנְךָ אֱלֹקַי חָפָצְתִּי כַּנַּ\"ל.' The phrase 'כַּנַּ\"ל' (as stated above) refers back to the conclusion of line 2 — it is a textual cross-reference marker ('as said above'), not a bechina equation between concepts. 'זֶה סִימָן' (this is a sign) is a logical inference marker, not a bechina declaration. No bechina language."
+    },
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "מוֹצֵא אֶת עַצְמוֹ (finding oneself) ↔ מוּסָר (moral instruction / self-rebuke)",
+        "reason": "The הַיְנוּ in line 2 ('מוֹצֵא אֶת עַצְמוֹ, הַיְנוּ שֶׁלּוֹקֵחַ לְעַצְמוֹ מוּסָר') could superficially appear as an equation: 'finding oneself = taking mussar for oneself.' However, this is an explicative gloss within a single behavioral description, not a conceptual bechina between two distinct spiritual domains. The Rebbe is not saying that the act of self-finding IS an aspect of the concept-class 'mussar' — he is saying what the person DOES when he finds himself. This is definitional clarification, not parallel-aspect identification. Per framework.md §1.1, bechina equates two concepts that 'share the same essential nature' and are 'different expressions of the same underlying reality.' Here, 'finding oneself' and 'taking mussar' are the same act described from two perspectives within a single behavioral moment, not two independent concepts illuminating the same spiritual domain. Excluded.",
+        "excluded": true
+      },
+      {
+        "concept": "בִּמְגִלַּת סֵפֶר (in the scroll of the book) ↔ עָלָי (written about me / concerning me)",
+        "reason": "The Rebbe's interpretation of the verse is that 'written about me' means the book speaks to the reader personally — wherever he opens it, he finds a message for himself. This is a hermeneutic reading of a verse, not a bechina equation. The Rebbe does not say 'בִּמְגִלַּת סֵפֶר הוּא בְּחִינַת X' — he reads the verse as a description of the quality of authentic Torah engagement. No bechina language; excluded.",
+        "excluded": true
+      },
+      {
+        "concept": "הַבָּא וּמְעַיֵּן בַּסֵּפֶר (one who comes and studies in the book) ↔ חָפֵץ לַעֲשׂוֹת רְצוֹנוֹ יִתְבָּרַךְ (desires to do God's will)",
+        "reason": "The relationship between these two is 'זֶה סִימָן' — this is a sign. This is not a bechina equation (same essential nature) nor an eitza (cause-and-effect flow). A 'sign' relationship is semiotic/indicative: finding oneself in the book is a DIAGNOSTIC of the person's spiritual state, not a claim that these two concepts are parallel aspects of the same underlying reality. The sign-relationship is distinct from both bechina and eitza and is not modeled in the graph's edge types. Excluded.",
+        "excluded": true
+      },
+      {
+        "concept": "פְּחִיתוּתוֹ וְשִׁפְלוּתוֹ (his smallness and lowliness) as a bechina node",
+        "reason": "These two words ('his smallness and his lowliness') describe the content of what the person sees when he 'finds himself' in the book — they are a single compound description of anavah (humility)-awareness, not a bechina equation between two named concepts. No explicit 'X הוּא בְּחִינַת Y' formulation. Not a bechina node. Excluded.",
+        "excluded": true
+      }
+    ],
+    "structural_observations": [
+      "Torah #121 is the most compact Torah analyzed to date — only 3 lines. It belongs to a genre of sign-based practical instruction: action X is a sign of spiritual state Y.",
+      "The teaching has zero bechina architecture. Its entire structure is a single semiotic claim: [reading a book and finding oneself = mussar-taking / seeing one's smallness] is a sign of [desire to do God's will]. This is neither a conceptual equation (bechina) nor a causal chain (eitza); it is a diagnostic-indicator relationship.",
+      "The verse Psalm 40:8-9 serves as both the opening citation and the concluding proof-text, creating a chiastic structure: verse → teaching → re-read verse. This is a literary feature of many short Torahs in Likutay Moharan.",
+      "The gap analysis yields NO additions. There are no bechina statements in the text that are absent from the dataset. The dataset is trivially complete for Torah #121 because it has zero edges.",
+      "The key concepts that COULD theoretically become nodes in a future enrichment are: 'מוּסָר' (mussar/self-rebuke), 'פְּחִיתוּת וְשִׁפְלוּת' (smallness and lowliness), 'רְצוֹן ה' (will of God), 'רוֹאֶה אֶת עַצְמוֹ' (finding/seeing oneself). However, none of these appear in a bechina relationship within the text of Torah #121, and therefore none qualify for addition under the framework rules.",
+      "The teaching's theological claim is profound despite its brevity: authentic Torah study is auto-referential — the person who reads correctly finds himself addressed by every text. This auto-referential quality (seeing oneself everywhere) is the criterion by which one may know that one's desire to serve God is genuine."
+    ]
+  }
+}

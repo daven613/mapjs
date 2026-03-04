@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "source": "Torah #107 (Likutay Moharan Vol. 1)",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NO_NEW_PACKAGES",
+  "new_packages": [],
+  "explanation": "Step 6 asks: are there any concepts in the source text that form a coherent bechina-connected cluster of 3 or more nodes that is NOT represented anywhere in the existing dataset?\n\nFor Torah #107 the answer is NO, for two reasons:\n\n1. The source text (5 lines) contains zero explicit bechina pairs. There are no new clusters to propose from the source text because no bechina language appears there. The teaching is pure eitza from start to finish.\n\n2. The dataset already contains rich bechina coverage across all 8 commentary sections (1071–1079) of this Torah. The existing packages (1–10 in torah_107_packages.json) already capture the full conceptual structure revealed by the dataset edges. No concept domain from the Torah's content is unrepresented in those packages.\n\nThe only concepts from Torah #107's source text that have conceptual weight are:\n- יצר הרע (the yetzer hara / evil inclination) — already present as a major cross-Torah concept; does not need a new package here since it appears as the antagonist in the eitza structure, not as part of a bechina cluster in this Torah\n- גאוה/גדלות (arrogance/pride) — the weapon the yetzer uses; appears in 1072 as 'גדולה' connected to 'מלכות' (Package 1), but in the source text it appears only as an eitza tool\n- אין ה' שורה עמו (God does not dwell with one who has arrogance) — this is a practical observation in the eitza chain, not a bechina concept\n\nConclusion: NO new packages are warranted. All new package candidates identified above are either already captured in the dataset packages or are pure eitza concepts that belong to the causal flow layer of the Torah, not the bechina/package layer.",
+  "source_text_concepts_not_in_dataset": [
+    {
+      "concept": "יצר הרע",
+      "status": "ALREADY_MAJOR_CROSS_TORAH_NODE",
+      "reason": "The yetzer hara is the central antagonist of Torah #107's source text ('the enemy = the yetzer hara'). However, it functions purely as the eitza target — there are no bechina statements about the yetzer hara in the 5-line source text. It is not connected to other source-text concepts via bechina. It would require at least 3 bechina-connected nodes to form a new package. The yetzer hara does appear in other Torah #107 dataset edges but as an eitza node. No new package warranted."
+    },
+    {
+      "concept": "גאוה (arrogance)",
+      "status": "EITZA_ONLY_IN_SOURCE_TEXT",
+      "reason": "Arrogance (gaavah) appears in the source text as the practical tool of the eitza: 'say to it: how can I rule when I have arrogance?' It is not equated with another concept via bechina language. In the dataset, גדולה is connected to מלכות (Package 1), and שפלות is connected to עניוות (Package 4), but גאוה itself as used in the source text is an eitza-layer concept. No new package warranted."
+    }
+  ],
+  "observations": "Torah #107 is a teaching about defeating the yetzer hara using its own weapon — turning the enemy's pride against itself. This is a masterful strategic insight (eitza), not a metaphysical map (bechina). The source text's structure is: verse → interpretation → the Torah gives advice (eitza) → the advice itself. This pure-eitza structure explains why the source text has zero bechina language. The rich bechina content of this Torah all lives in the commentary sections written by Reb Nosson, which systematically elaborate the conceptual connections that underlie and support the eitza teaching. Those connections are already fully captured in the 10 packages identified from the dataset (torah_107_packages.json)."
+}

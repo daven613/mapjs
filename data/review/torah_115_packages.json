@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "source": "Torah #115 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #115 has exactly 2 bechina edges in the dataset (reference === 115): edge 774 (משה ↔ דעת כל ישראל) and edge 2410 (מניעה ↔ ענן וערפל). These yield two disconnected 2-node components. Gap analysis of the source text (torah_115.txt, 13 lines) identifies one additional bechina statement that expands Component 2 to 3 nodes: ענן וערפל הַיְנוּ חֹשֶׁךְ and חֹשֶׁךְ הוּא לְשׁוֹן מְנִיעָה (line 4), establishing that מניעה, ענן וערפל, and חושך are three expressions of the same essential reality. The two components cannot be merged by shared nature — they represent opposite poles of the teaching: the wisdom-pole (משה as da'at that enters the arafel) and the obstacle-pole (meni'ah as the arafel itself, the hiddenness). They are connected by eitza (the wise person WITH da'at can find God WITHIN the obstacle), not by bechina. The teaching's core theological move is that the arafel/meni'ah, though a site of hiddenness, is also the place where God hides — making Package 2 structurally neutral (neither purely good nor purely evil) since the same obstacle serves both middat hadin (the blocking force) and God's loving concealment."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 115,
+      "label": "מֹשֶׁה וְדַעַת כָּל יִשְׂרָאֵל",
+      "label_en": "Moses and the Da'at of All Israel",
+      "polarity": "good",
+      "reason": "The single bechina in this component (edge 774) equates Moshe with 'da'at kol Yisrael' — Moses IS the da'at (knowledge/wisdom) of all Israel. The teaching makes this identification in two places: line 7 (commentary on 'u'Moshe nigash el ha-arafel') and line 8 (restating the same point). The bechina marker is 'שֶׁהוּא בְחִינוֹת' — Moshe is an aspect of / is essentially da'at kol Yisrael. Moshe is the dominant node: he is named in the verse (Exodus 20) that anchors the entire teaching, he is the person who can approach the arafel while the nation stands back, and his essential quality is precisely da'at — the wisdom/discernment that enables a bar da'at to find God within the obstacle. The polarity is clearly good: Moshe approaching the arafel is the positive act of the teaching, the eitza recommendation. The da'at that belongs to Moshe is the quality needed to find God within the meni'ah. This is the holy wisdom pole of the teaching.",
+      "dominant_node": "משה",
+      "nodes": [
+        "משה",
+        "דעת כל ישראל"
+      ],
+      "node_degrees": {
+        "משה": 1,
+        "דעת כל ישראל": 1
+      },
+      "merge_notes": [
+        "This 2-node component cannot be merged with Package 2 by shared nature. Moshe/da'at and meni'ah/arafel/choshekh are the opposite poles of the teaching. Their connection is eitza (through da'at one can enter the meni'ah and find God there), not bechina. They do not share the same essential nature."
+      ],
+      "source_edge": {
+        "id": 774,
+        "proof": "מֹשֶׁה, שֶׁהוּא בְחִינַת דַּעַת כָּל יִשְׂרָאֵל"
+      }
+    },
+    {
+      "id": 2,
+      "torah_ref": 115,
+      "label": "מְנִיעָה וַעֲרָפֶל וְחֹשֶׁךְ",
+      "label_en": "The Obstacle, the Cloud-Darkness, and Concealment",
+      "polarity": "neutral",
+      "reason": "This package clusters the three expressions of the same paradoxical reality: the obstacle (מניעה), the cloud-and-thick-darkness (ענן וערפל), and darkness (חושך). The dataset contains edge 2410 equating מניעה ↔ ענן וערפל. The source text provides the chain: 'מניעה הוא בחינת ענן וערפל, כי ענן וערפל הַיְנוּ חֹשֶׁךְ, חֹשֶׁךְ הוּא לְשׁוֹן מְנִיעָה' (line 4) — making all three a single conceptual cluster by two additional bechina markers (הַיְנוּ and לְשׁוֹן). The dominant node is מניעה: it is the teaching's central subject, named most frequently (appears 8+ times across lines 2-13), and it is what the arafel and choshekh are said to BE. The polarity is neutral rather than purely evil because of the teaching's crucial paradox: the meni'ah is simultaneously (a) the obstacle erected by middat hadin to prevent the unworthy from approaching God, AND (b) the hiding-place where God Himself conceals His presence. The same arafel is both the instrument of judgment and the vessel of divine love. God hides WITHIN the very obstacle (line 12: 'be-tokef ha-meni'ot be-atsman nistar HaShem'). This dual nature — obstacle AND divine hiding-place — prevents a simple 'evil' classification. The meni'ah is the locus of the teaching's tension: it is the negative pole relative to the nation that stands back, but it contains the positive divine presence relative to the one who has da'at and enters it.",
+      "dominant_node": "מניעה",
+      "nodes": [
+        "מניעה",
+        "ענן וערפל",
+        "חושך"
+      ],
+      "node_degrees": {
+        "מניעה": 2,
+        "ענן וערפל": 2,
+        "חושך": 1
+      },
+      "merge_notes": [
+        "חושך is not in the dataset for reference 115 but is identified from the source text gap analysis (see torah_115_additions.json). It is included in this package because the source text explicitly equates it with ענן וערפל (via הַיְנוּ) and with מניעה (via לְשׁוֹן מְנִיעָה), making it the third node of the same essential cluster.",
+        "This 3-node component (2 from dataset + 1 from gap analysis) is not merged with Package 1 because Moshe/da'at and meni'ah/arafel/choshekh are structurally opposite poles. They are joined by eitza, not bechina."
+      ],
+      "source_edges": [
+        {
+          "id": 2410,
+          "proof": "וּמְנִיעָה הוּא בְחִינַת עָנָן וַעֲרָפֶל, כִּי עָנָן וַעֲרָפֶל הַיְנוּ חׂשֶׁךְ, חׂשֶׁךְ הוּא לְשׁוֹן מְנִיעָה, כְּמוֹ שֶׁכָּתוּב (בְּרֵאשִׁית כ\"ב): \"וְלֹא חָשַֹכְתָּ\"."
+        }
+      ]
+    }
+  ],
+  "good_evil_mirror_structure": {
+    "present": true,
+    "description": "Torah #115 has a classic good/evil (or rather, wisdom/obstacle) mirror, though it is more nuanced than a simple good/evil binary. The two poles are: Package 1 (Moshe = da'at kol Yisrael — the wisdom that approaches) vs. Package 2 (meni'ah = arafel = choshekh — the obstacle/darkness that conceals). The mirror is expressed structurally through the contrast between 'ha-am' (the nation) that stands back before the arafel and 'Moshe' who enters it. The person WITHOUT da'at retreats; the bar da'at advances. Package 1 represents the positive pole of wisdom/approach; Package 2 is the structural obstacle that can be either the negative force of middat hadin OR the vessel of divine concealment — it is both the mirror-opposite of Moshe and, paradoxically, the place where he finds what he seeks. The good/evil mirror here is not simple opposition but interpenetration: God hides within the very obstacle that was meant to block.",
+    "good_packages": [1],
+    "neutral_packages": [2],
+    "evil_packages": [],
+    "mirror_pairs": [
+      {
+        "good": "משה (the one who enters the obstacle with da'at)",
+        "mirror": "מניעה (the obstacle itself — which is also God's hiding place)"
+      },
+      {
+        "good": "דעת כל ישראל (the collective wisdom that enables approach)",
+        "mirror": "ענן וערפל (the cloud-darkness that the unwise cannot penetrate)"
+      },
+      {
+        "structural_observation": "The 'people standing back' (הָעָם מֵרָחֹק) is the evil/failing pole — those without da'at who retreat before the obstacle. However, this is not a bechina node (no bechina language is used for it), so it does not appear in a package. It is an eitza-layer participant: the absence of da'at PRODUCES the retreat."
+      }
+    ]
+  },
+  "eitza_structure": {
+    "description": "The eitza flow of the teaching runs: those who walk in gashmiyut encounter a meni'ah (obstacle from middat hadin) → those WITHOUT bar da'at turn back → those WITH bar da'at (da'at kol Yisrael / Moshe) enter the arafel → they find God WITHIN the meni'ah → the meni'ah itself becomes the path of approach. The teaching's practical eitza is that a bar da'at can find God precisely within the obstacle, because God hides within it out of love for Israel (line 11-12). The eitza connects Package 1 (da'at pole) to Package 2 (meni'ah pole): THROUGH da'at (Package 1) one can find God WITHIN the meni'ah (Package 2).",
+    "eitza_nodes_excluded_from_packages": [
+      {
+        "node": "הָעָם (those standing back)",
+        "reason": "The people who stand at a distance from the arafel are a narrative participant illustrating the eitza consequence of lacking da'at, not a bechina node. No bechina language is used for them. They represent the outcome of lacking Package 1."
+      },
+      {
+        "node": "מִדַּת הַדִּין (middat hadin — the attribute of judgment)",
+        "reason": "Middat hadin is introduced as the force that 'mekatreg' (prosecutes/accuses) and arranges the meni'ah. It is the causal agent that produces the meni'ah — an eitza cause. It is not identified as a bechina of the meni'ah itself; rather, it CAUSES the meni'ah. Excluded as eitza cause."
+      },
+      {
+        "node": "הַסְתָּרַת פָּנִים (divine self-concealment)",
+        "reason": "God's self-concealment within the meni'ah is described as a loving act (lines 3 and 11-12), but it is presented as what God DOES within the meni'ah, not as a bechina of it. The relationship is: God hides INSIDE the meni'ah → eitza. Not identified as a bechina equivalence."
+      },
+      {
+        "node": "בַּר דַּעַת (one possessing da'at)",
+        "reason": "Bar da'at is the qualitative descriptor of the person who CAN find God in the meni'ah. The text uses it as a condition/type (lines 3, 7, 12) but never says 'bar da'at is a bechina of Moshe' — rather, Moshe IS da'at kol Yisrael (edge 774). Bar da'at is the eitza-layer person who possesses Package 1 and can therefore navigate Package 2. Not a separate bechina node."
+      }
+    ]
+  },
+  "stats": {
+    "total_bechina_edges_in_dataset": 2,
+    "total_nodes_from_dataset": 4,
+    "total_nodes_after_gap_analysis": 5,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 2,
+    "nodes_added_from_gap_analysis": 1,
+    "note": "Torah #115 is a short 13-line teaching on Exodus 20 ('and Moses approached the thick darkness where God was'). It is structurally simple: two bechina clusters forming two packages, connected by an eitza (through da'at one finds God within the obstacle). The dataset captures 2 of the 3 bechina pairs in the source text (missing: ענן וערפל ↔ חושך). One gap addition is proposed in torah_115_additions.json. No new packages are proposed beyond what the gap analysis extends — the existing 2 components + 1 gap node form all packages in this Torah."
+  }
+}

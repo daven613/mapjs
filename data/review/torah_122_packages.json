@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "source": "Torah #122 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference === 122 AND type === 'bechina'. Result: ZERO bechina edges found in torahData.js for reference 122. The dataset has not yet been populated for this Torah. Torah #122 is an aphoristic micro-teaching of 4 lines. It cites the verse 'וְגַם נֵצַח יִשְׂרָאֵל לֹא יְשַׁקֵּר' (I Samuel 15:29), observes that the quality of contentiousness/victory (נִצָּחוֹן) in human beings cannot tolerate truth — a contentious person will reject even evident truth to avoid losing — and then contrasts this with God's attribute: even in His eternal winning (נֵצַח יִשְׂרָאֵל), He is truth. The verse's double meaning (נֵצַח = victory/contentiousness, AND the Eternal One of Israel) is the hermeneutic fulcrum of the entire teaching. The teaching operates through structural contrast and a homiletic re-reading of the verse, NOT through formal בְּחִינַת language. A complete bechina-language scan of all 4 lines found zero occurrences of the standard markers (בְּחִינַת, בִּבְחִינַת, בְּחִינוֹת, הוּא בְּחִינַת, נִקְרָא as shared-nature marker, הַיְנוּ as equivalence). The implicit conceptual pairs that emerge from the text's logic — (human-nitzachon : falsehood) and (divine-nitzachon : truth) — are proposed as gap additions in torah_122_additions.json because, while they lack the formal keyword, they possess the semantic structure of bechina equations in the sense that God's nitzachon IS His truth and human nitzachon IS the rejection of truth. Packages cannot be formed from the current dataset (zero edges); they are derived entirely from the gap analysis and proposed additions. Because the source text's two implicit bechina pairs are each 2-node components, they are treated as two small components eligible for merge-by-shared-nature. They are NOT merged, however, because they are the two opposing structural poles of the teaching (human vs. divine, falsehood vs. truth) — merging them would destroy the entire argument. They constitute two minimal packages."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 122,
+      "label": "נֵצַח יִשְׂרָאֵל וֶאֱמֶת",
+      "label_en": "The Eternal of Israel and Truth",
+      "polarity": "good",
+      "reason": "The teaching's central positive thesis is that God's nitzachon — 'נֵצַח יִשְׂרָאֵל' — IS truth (אֱמֶת). The verse is re-read: the Eternal One of Israel does not lie. God does not abandon truth even when contending or prevailing. These two concepts — divine nitzachon (נֵצַח יִשְׂרָאֵל / מִדַּת הַקָּדוֹשׁ בָּרוּךְ הוּא בְּנִצָּחוֹן) and אֱמֶת — are the two faces of the same reality in this Torah: God's eternal nature is not separable from His truthfulness. The structural equivalence 'הַקָּדוֹשׁ בָּרוּךְ הוּא אַף בְּהַנִּצָּחוֹן הוּא אֱמֶת' operates exactly as a bechina identification: it does not say that divine nitzachon produces truth (eitza), but rather that divine nitzachon IS truth — they are the same thing from two angles. The polarity is 'good' because this is the holy dimension of the teaching: the attribute of the divine that transcends the human failing. The dominant node is נֵצַח יִשְׂרָאֵל because the entire Torah is an explication of this phrase from the verse, and because it carries the double-meaning (eternal nature + winning) that makes the teaching possible. Within this teaching, אֱמֶת is the paired counterpart: 'does not lie' = IS truth.",
+      "dominant_node": "נצח ישראל",
+      "nodes": [
+        "נצח ישראל",
+        "אמת"
+      ],
+      "node_degrees": {
+        "נצח ישראל": 1,
+        "אמת": 1
+      },
+      "merge_notes": [
+        "This is a 2-node component derived from the implicit bechina structure of the source text (no formal בְּחִינַת keyword present — see torah_122_additions.json for proposed edge). The two nodes form the positive pole of the teaching's binary axis.",
+        "This package was NOT merged with Package 2 (the human nitzachon/falsehood cluster) despite both being minimal 2-node components. The reason: these two packages are the two structural poles of the Torah's argument — divine truth vs. human falsehood. They are definitionally opposed; merging them would obliterate the teaching's entire point. Their relationship is one of radical contrast, not shared essential nature. Per framework.md §3.2 and the merge criterion (shared nature only, not opposition), no merge is warranted.",
+        "The good/evil mirror: Package 1 (divine nitzachon = truth) is directly mirrored by Package 2 (human nitzachon = inability to bear truth). This is one of the most explicit good/evil mirror structures in the corpus — the same concept (nitzachon) appears in both its holy form (God's eternal nature) and its fallen form (human contentiousness that rejects truth). The two packages are the two faces of the same word from the verse, split along the axis of holy vs. human.",
+        "Note: The dataset for Torah #122 contains zero edges (reference 122 is not yet populated in torahData.js). The packages in this file are derived entirely from the gap analysis of the source text and represent the proposed dataset enrichment. The source edges listed below are proposed additions."
+      ],
+      "source_edges": [
+        {
+          "id": "proposed_122_01",
+          "node1_id": "נצח ישראל",
+          "node2_id": "אמת",
+          "proof": "הַקָּדוֹשׁ בָּרוּךְ הוּא אַף בְּהַנִּצָּחוֹן הוּא אֱמֶת, וְאֵינוֹ מְשַׁקֵּר — וְזֶהוּ: וְגַם נֵצַח יִשְׂרָאֵל לֹא יְשַׁקֵּר",
+          "status": "proposed — no formal בְּחִינַת keyword in source; structural bechina equation inferred from text logic and hermeneutic re-reading of verse"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 122,
+      "label": "נִצָּחוֹן בָּשָׂר וָדָם וְדַחִיַּת הָאֱמֶת",
+      "label_en": "Human Contentiousness and the Rejection of Truth",
+      "polarity": "evil",
+      "reason": "The teaching's negative thesis is that the attribute of nitzachon (contentiousness, the drive to win) in human beings is structurally incompatible with truth. 'מִדַּת הַנִּצָּחוֹן אֵינָהּ סוֹבֶלֶת הָאֱמֶת' — the attribute of winning/contention does not tolerate truth. Even when truth is plainly visible, a contentious person will reject it because of their nitzachon. The teaching names this explicitly and declares it 'מְבֹרָר מְאֹד' (very well-established). The two concepts in this cluster — מִדַּת הַנִּצָּחוֹן (the human attribute of contentiousness) and דְּחִיַּת הָאֱמֶת / שֶׁקֶר (the rejection of truth / falsehood) — are structurally paired: in this Torah, the contentious mode IS the truth-rejecting mode. They share the same essential nature in the domain of human failing. The polarity is 'evil' because this is the negative human attribute — the teaching presents it as a known flaw, something that departs from God's standard. The dominant node is מדת הנצחון because it is the named quality being dissected; the rejection of truth is its necessary consequence/manifestation (which at the bechina level means: human nitzachon IS the rejection of truth — they are two descriptions of the same human failing).",
+      "dominant_node": "מדת הנצחון",
+      "nodes": [
+        "מדת הנצחון",
+        "דחיית האמת"
+      ],
+      "node_degrees": {
+        "מדת הנצחון": 1,
+        "דחיית האמת": 1
+      },
+      "merge_notes": [
+        "This is a 2-node component derived from the implicit bechina structure of the source text. No formal בְּחִינַת language is present in the source for this pair — see torah_122_additions.json for proposed edge and the careful distinction between bechina and eitza formulations in the source.",
+        "NOT merged with Package 1 — see Package 1 merge_notes for full reasoning.",
+        "This package is the evil mirror of Package 1. The same word (נִצָּחוֹן) takes a holy form in Package 1 (God's eternal winning = truth) and a fallen form here (human contentiousness = rejection of truth). This is the good/evil mirror operating at maximum compression — the entire teaching is structured around the bifurcation of a single concept into its divine and human expressions.",
+        "Node naming note: The source text says 'יִדְחֶה אוֹתוֹ מֵחֲמַת הַנִּצָּחוֹן' — he pushes truth away because of the contentiousness. The active noun 'דְּחִיַּת הָאֱמֶת' (rejection of truth) is the implicit complementary node to מִדַּת הַנִּצָּחוֹן in this Torah. The phrase שֶׁקֶר (falsehood) is not used explicitly in the text (only 'לֹא יְשַׁקֵּר' — 'does not lie' — as the negation in the verse), but the semantic content is equivalent: human nitzachon = lying = rejection of truth. The node is proposed as 'דחיית האמת' to match the source's specific phrasing."
+      ],
+      "source_edges": [
+        {
+          "id": "proposed_122_02",
+          "node1_id": "מדת הנצחון",
+          "node2_id": "דחיית האמת",
+          "proof": "מִדַּת הַנִּצָּחוֹן אֵינָהּ סוֹבֶלֶת הָאֱמֶת, כִּי אַף אִם יֵרָאֶה לָעֵינַיִם דְּבַר אֱמֶת, יִדְחֶה אוֹתוֹ מֵחֲמַת הַנִּצָּחוֹן",
+          "status": "proposed — no formal בְּחִינַת keyword in source; the relationship is stated as causal/behavioral in the text but the structural equivalence (human nitzachon = truth-rejection) justifies a bechina classification at the level of shared essential nature — see torah_122_additions.json for full analysis"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 4,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "dataset_status": "EMPTY — reference 122 has zero edges in torahData.js. All packages are derived from gap analysis of source text and represent proposed dataset enrichment.",
+    "note_on_merges": "No merges were performed. The two 2-node packages (Package 1: divine-nitzachon/truth; Package 2: human-nitzachon/rejection-of-truth) represent the two opposing structural poles of the Torah's argument. Their relationship is definitional contrast, not shared essential nature. Merging them would collapse the teaching's entire argument.",
+    "eitza_edges_excluded": [],
+    "note_on_eitza": "Torah #122 is aphoristic — it does not have a formal eitza chain. The teaching's argument moves from the observation (human nitzachon rejects truth) to the contrast (God's nitzachon IS truth) to the verse re-reading. There is no 'through X, achieve Y' practical instruction. No eitza edges exist or are expected for this Torah."
+  }
+}

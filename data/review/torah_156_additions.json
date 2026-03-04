@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "source": "Torah #156",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_156_packages.json, all reference===156 edges from torahData.js, and the full source text torah_156.txt. For each bechina statement in the source text — marked by the language הוא בְּחִינַת, שֶׁהוּא בְּחִינַת, appositional equating constructions, and הַיְנוּ — verified whether the concept appears as a node in a bechina edge for Torah #156 in the dataset. Only concepts with explicit bechina-language were considered for inclusion. Causal (על ידי / ועל ידי זה) statements were excluded as eitza."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "רוּחַ הַקֹּדֶשׁ וְהַדִּבּוּר",
+      "node_id": "דבורים חדשים",
+      "node_text": "דִּבּוּרִים חֲדָשִׁים",
+      "polarity": "good",
+      "reason": "The source text twice states that 'renewed speech' is a bechina of Ruach HaKodesh. Line 5: 'זוֹכֶה לְדַבֵּר בְּכָל פַּעַם דִּבּוּרִים חֲדָשִׁים, שֶׁהוּא בְּחִינַת רוּחַ הַקֹּדֶשׁ.' Line 7: 'שֶׁיִּזְכֶּה לְחַדֵּשׁ דִּבּוּרִים חֲדָשִׁים, שֶׁהֵם בְּחִינַת רוּחַ הַקֹּדֶשׁ כַּנַּ\"ל.' The formula 'שֶׁהוּא / שֶׁהֵם בְּחִינַת' is the standard bechina declaration. The node is distinct from 'מה שמדברים בינו לבין קונו' (edge 2694) because that edge describes the ACT of speaking to one's Creator as the locus of the Holy Spirit, whereas דבורים חדשים describes the QUALITY of novelty/freshness in the speech as itself being the Holy Spirit. Both are aspects of the same package: the essential nature of holy speech. The node does not currently appear as a bechina edge for Torah #156 in the dataset — only as a node in eitza edges (edges 1059 and 2693, where טהרת הלב leads to זוכה לדבר דבורים חדשים). A new bechina edge should be added: דבורים חדשים ↔ רוח הקדש (reference 156).",
+      "source_quote": "זוֹכֶה לְדַבֵּר בְּכָל פַּעַם דִּבּוּרִים חֲדָשִׁים, שֶׁהוּא בְּחִינַת רוּחַ הַקֹּדֶשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "דבורים חדשים",
+        "node2_id": "רוח הקדש",
+        "type": "bechina",
+        "reference": 156
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "רוּחַ טֻמְאָה וְשִׁטּוּת",
+      "node_id": "רוח הטמאה",
+      "node_text": "רוּחַ הַטֻּמְאָה",
+      "polarity": "evil",
+      "reason": "The source text (line 14, bracketed editorial passage) states: 'וְעַל יְדֵי הִתְלַהֲבוּת הַלֵּב זוֹכֶה לְגָרֵשׁ הָרוּחַ הַטֻּמְאָה רוּחַ שְׁטוּת כַּנַּ\"ל.' The phrase 'הָרוּחַ הַטֻּמְאָה רוּחַ שְׁטוּת' is an appositional construction that equates the two — 'the spirit of impurity, [which is] the spirit of folly.' This is a bechina statement: both names refer to the same essential entity. רוח הטמאה is not currently a bechina-edge node for Torah #156. A new bechina edge should be added pairing it with רוח שטות.",
+      "source_quote": "זוֹכֶה לְגָרֵשׁ הָרוּחַ הַטֻּמְאָה רוּחַ שְׁטוּת כַּנַּ\"ל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "רוח הטמאה",
+        "node2_id": "רוח שטות",
+        "type": "bechina",
+        "reference": 156
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "רוּחַ טֻמְאָה וְשִׁטּוּת",
+      "node_id": "רוח שטות",
+      "node_text": "רוּחַ שְׁטוּת",
+      "polarity": "evil",
+      "reason": "Partner of the above entry. The spirit of folly (רוח שטות) is equated with the spirit of impurity in the same appositional phrase (line 14). רוח שטות does not currently appear as a bechina-edge node for Torah #156. Note that this concept appears in Torah #1's dataset (Package 3 of Torah #1 contains רוח שטות as a bechina of שגעון/יצר הרע). In Torah #156, the same concept appears in a structurally analogous position — it is the evil spirit that must be expelled by the fire of holy hitlahavut, the exact mirror of the Ruach HaKodesh that the fire produces. This confirms its placement in Package 2 (evil polarity).",
+      "source_quote": "זוֹכֶה לְגָרֵשׁ הָרוּחַ הַטֻּמְאָה רוּחַ שְׁטוּת כַּנַּ\"ל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "רוח הטמאה",
+        "node2_id": "רוח שטות",
+        "type": "bechina",
+        "reference": 156
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_156_edges": 8,
+    "total_reference_156_bechina_edges": 1,
+    "total_reference_156_eitza_edges": 7,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["מה שמדברים בינו לבין קונו", "רוח הקדש", "דבורים חדשים"],
+      "package_2": ["רוח הטמאה", "רוח שטות"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "דבורים חדשים — twice declared 'הוא / הם בחינת רוח הקדש'; appears only in eitza edges in the dataset (as outcome of טהרת הלב)",
+      "רוח הטמאה — equated with רוח שטות by apposition in the bracketed editorial (line 14); not a bechina edge node for Torah #156",
+      "רוח שטות — partner of the above; its Torah #156 bechina with רוח הטמאה is missing from the dataset even though רוח שטות appears as a bechina node in Torah #1"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "לב טהור / טהרת הלב (pure heart)",
+        "reason": "The Torah opens with 'לֵב טָהוֹר בְּרָא לִי אֱלֹקִים' (Psalm 51:12). The concept טהרת הלב appears as the subject and endpoint of multiple eitza edges (cause: שמתלהב ובוער לבו → effect: נטהר הלב). The text does NOT use 'בחינת' for the heart itself in relation to ruach hakodesh in a symmetric/parallel way — instead it says 'when there is purity of heart, ONE THEN MERITS to speak new words which are a bechina of Ruach HaKodesh.' This is cause-and-effect (eitza), not parallel nature (bechina). טהרת הלב is not a bechina of Ruach HaKodesh; it is the precondition that produces it. Therefore excluded from packages."
+      },
+      {
+        "concept": "חמימות / התלהבות (warmth / fervent burning)",
+        "reason": "The Torah's central mechanism is that hitlahavut (fervent burning toward God) purifies the heart. This concept appears only in eitza edges: תנועה → חמימות, חמימות → טהרת הלב, חמימות → גירוש רוח הטמאה. The text never says 'חמימות הוא בחינת X' in a parallel-nature way. Excluded as eitza-only."
+      },
+      {
+        "concept": "תנועה (movement)",
+        "reason": "Appears in eitza edge 3140: התלהבות וחמימות is achieved VIA תנועה. The teaching describes a physical/intellectual movement that generates warmth. No bechina language equates תנועה to any parallel concept. Excluded."
+      },
+      {
+        "concept": "מצדיק הרבים / כוכבים (one who justifies the many / stars)",
+        "reason": "The verse from Daniel 12:3 ('וּמַצְדִּיקֵי הָרַבִּים כַּכּוֹכָבִים') is cited as proof that one who draws others to God's service is like the stars that receive warmth from above and transmit it below. This is an analogy/mashal used to explain the eitza relationship. The text does not use 'בחינת' to equate מצדיק הרבים with anything in a parallel-nature sense. Its dataset edge (1724) is correctly typed as eitza. Excluded."
+      },
+      {
+        "concept": "יסוד האש / גלגלים (element of fire / celestial spheres)",
+        "reason": "The physics of fire (which drives away air) and the celestial spheres (each receiving from the one above it) are analogies used to explain how warmth is transmitted. These are illustrative comparisons in the body of a physical digression (note the editor's caveat in line 13 that this section was not heard directly from the Rebbe's mouth). No bechina declarations are made about יסוד האש or גלגלים in their own right. Excluded."
+      },
+      {
+        "concept": "ספר תהלים / דוד המלך (Book of Psalms / King David)",
+        "reason": "David is mentioned as the supreme example of one whose greatness enabled him to compose Tehillim from personal heart-speech (i.e., Ruach HaKodesh). He is an illustration of the principle, not a separate bechina concept. No 'בחינת' formula is used. Excluded."
+      }
+    ],
+    "note_on_eitza_heavy_torah": "Torah #156 is structurally dominated by its causal chain. The Rebbe constructs a tight pathway: תנועה → חמימות → טהרת הלב → גירוש רוח הטמאה → דבורים חדשים = רוח הקדש. Every link in this chain is eitza. The bechina layer is reduced to two paired identity statements: (1) private speech to God IS Ruach HaKodesh, (2) the spirit of impurity IS the spirit of folly. These two pairs constitute the Torah's ontological anchors — the beginning (what holy speech IS) and the obstacle (what the defiling spirit IS) — while the entire middle of the Torah is how-to causality.",
+    "note_on_bracketed_section": "Lines 8-13 of the source text are enclosed in parentheses with an editorial note by Reb Noson (line 13) that 'this section was not written properly in order, because I did not hear this matter from his holy mouth himself, but from another in his name.' This caveat does not affect the bechina identification in line 14 (which is NOT bracketed), but does reduce the weight assigned to the physical analogies about arrows and wax (line 8) as primary theological statements."
+  }
+}

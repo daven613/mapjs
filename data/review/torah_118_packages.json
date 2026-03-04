@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "source": "Torah #118 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===118 AND type==='bechina'. Total: 3 bechina edges, 4 nodes, 1 raw connected component. No merges required — all nodes are already in one component. The single component forms one package: the tzaddik-Moshe-Mashiach identity cluster."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 118,
+      "label": "צַדִּיק הַדּוֹר, מֹשֶׁה, וּמָשִׁיחַ",
+      "label_en": "The Tzaddik of the Generation, Moses, and Mashiach",
+      "polarity": "good",
+      "reason": "Torah #118 establishes a single, unified identity equation: every tzaddik of the generation is a bechina of Moses, Moses is a bechina of Mashiach, and therefore the Torah novelties (chidushei Torah) that the tzaddik innovates are themselves a bechina of Mashiach — because Mashiach's spirit hovers over them. The gematria proof (Shiloh = Moshe) and the Talmudic practice of Tannaim calling each other 'Moshe' are both cited to ground this identity. All four nodes (צדיק הדור, משה, משיח, חדושי תורה שמחדש) form one connected component via three bechina edges and are expressions of a single domain: the perpetual re-embodiment of the Moshe-Mashiach archetype in every generation through Torah renewal. The dominant node is משיח/משה (co-dominant, each with degree 2), with the tzaddik and the chidushei Torah as the two poles by which this archetype is accessed in lived reality.",
+      "dominant_node": "משה",
+      "nodes": [
+        "צדיק הדור",
+        "משה",
+        "משיח",
+        "חדושי תורה שמחדש"
+      ],
+      "node_degrees": {
+        "משה": 2,
+        "משיח": 2,
+        "צדיק הדור": 1,
+        "חדושי תורה שמחדש": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 4,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 0,
+    "note_on_merges": "No merges required. Torah #118 is a short, concentrated teaching (7 lines) with a single tight bechina cluster. The one eitza edge (edge 2118: לפרש הדבר בלשון שמבין → נעשה בבחינת חל) is a causal consequence of the tzaddik's Mashiach-identity suffering via the act of lowering the teaching, not a bechina of shared nature — correctly excluded from packages.",
+    "eitza_edges_excluded": [
+      {
+        "edge_id": 2118,
+        "node1_id": "לפרש הדבר בלשון שמבין",
+        "node2_id": "נעשה בבחינת חל",
+        "reason": "Type is eitza (cause-and-effect), not bechina. The act of translating/explaining the Torah in the vernacular *causes* it to become bechina of chol (profane/lowered level) — this is a directional flow (the translation produces the lowering), not a parallel shared-nature equivalence. The word בִּבְחִינַת in the proof text here means 'in the manner of' or 'acquires the quality of', not 'is an aspect of' in the symmetric structural sense."
+      }
+    ]
+  }
+}

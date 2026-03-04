@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "source": "Torah #153 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===153 AND type==='bechina'. Result: 4 bechina edges found (ids: 1185, 1564, 1944, 2002). These produce 4 raw connected components, all 2-node pairs: (A) רב ↔ חמה, (B) תלמיד ↔ לבנה, (C) אנפין נהירין ↔ מראה מלטשת, (D) אנפין חשוכין ↔ משקע בתאות ממון. The source text (torah_153.txt) reveals that components A, B, and C belong to the same thematic cluster — the teaching is explicitly about קבלת פני תלמיד חכם and the Rav/Talmid relationship as expressed through the chamah/levanah metaphor and the polished mirror metaphor. Components A and B are explicitly joined by a single bechina sentence: 'הַתַּלְמִיד וְהָרַב הֵם בְּחִינַת חַמָּה וּלְבָנָה' — both appear in the same bechina declaration and describe the two poles of the same teacher-student light-transmission relationship. Component C (אנפין נהירין = מראה מלטשת) is the defining quality that enables the student (Component B: תלמיד/לבנה) to receive — the text declares: 'אִם הַתַּלְמִיד יֵשׁ לוֹ פָּנִים, הַיְנוּ בְּחִינַת אַנְפִּין נְהִירִין, בְּחִינַת מַרְאָה מְלֻטֶּשֶׁת' — these three concepts (תלמיד with פנים, אנפין נהירין, מראה מלטשת) are identified as the same thing in sequence. Components A+B+C form one unified good package of 6 nodes: the cosmic teacher-student light-transmission system. Component D (אנפין חשוכין ↔ משקע בתאות ממון) is the exact evil mirror: the darkened-face / money-sunk state that prevents reception. Two packages proposed."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 153,
+      "label": "רַב וְתַלְמִיד — אוֹר הַחַמָּה וְהַמַּרְאָה הַמְּלֻטֶּשֶׁת",
+      "label_en": "Rav and Talmid — The Sunlight and the Polished Mirror",
+      "polarity": "good",
+      "reason": "This package contains the entire positive teaching cluster of Torah #153. The Torah opens with the chamah/levanah metaphor: the moon has no light of its own but receives light from the sun because it is like a polished mirror. The Rebbe then declares the Rav and Talmid to be bechina chamah and levanah respectively ('הַתַּלְמִיד וְהָרַב הֵם בְּחִינַת חַמָּה וּלְבָנָה' — edge 1185 and edge 1564). The talmid's face having אנפין נהירין is immediately identified as being בחינת מראה מלטשת (edge 1944). These three pairs all share the same essential nature: they are all different expressions of the one phenomenon of a receiver that is refined enough to accept and reflect back the light of its source. The Rav IS the chamah — the light-giver; the Talmid IS the levanah — the receiver; the Talmid's אנפין נהירין IS the polished mirror — the condition of refined, transparent receptivity. All six nodes exist on the positive side: they all describe the state of holy reception, the capacity of the student to receive the face/light of the teacher and reflect it back ('שֶׁיִּתְרָאֶה בְּתוֹכוֹ פְּנֵי הָרַב'). The text reinforces this by citing the Sinai theophany: 'פָּנִים בְּפָנִים' — at the moment of Torah-giving, Israel had אנפין נהירין and could receive the divine face. The nodes רב, חמה, תלמיד, לבנה, אנפין נהירין, and מראה מלטשת all illuminate the same cosmic structure from different domains: human relationship, celestial metaphor, and facial-aura language from the kabbalistic tradition. The dominant node is רב because it is the source/transmitter of the light — all other nodes in the cluster are defined relative to what the Rav represents. Equivalently, תלמיד could be considered central as the subject-agent of the receiving act. The Rav has 1 direct bechina edge (to חמה); the Talmid has 1 direct bechina edge (to לבנה); but the Rav and Talmid appear together in the same bechina sentence and are structurally symmetric. The אנפין נהירין ↔ מראה מלטשת pair is subordinate — it describes the quality of the תלמיד side of the dyad. Merge rationale: Components A (רב/חמה) and B (תלמיד/לבנה) must merge because the original bechina sentence declares them jointly ('הַתַּלְמִיד וְהָרַב הֵם בְּחִינַת חַמָּה וּלְבָנָה') — they share the same essential nature as the two poles of a single light-transmission dyad. Component C (אנפין נהירין/מראה מלטשת) merges into this cluster by shared nature: the teaching explicitly identifies אנפין נהירין as the quality that defines the תלמיד/לבנה when she is capable of receiving — they are the same thing from different angles (the talmid's face with אנפין נהירין IS the lev'anah-as-polished-mirror).",
+      "dominant_node": "רב",
+      "nodes": [
+        "רב",
+        "חמה",
+        "תלמיד",
+        "לבנה",
+        "אנפין נהירין",
+        "מראה מלטשת"
+      ],
+      "node_degrees": {
+        "רב": 1,
+        "חמה": 1,
+        "תלמיד": 1,
+        "לבנה": 1,
+        "אנפין נהירין": 1,
+        "מראה מלטשת": 1
+      },
+      "merge_notes": [
+        "Components A (רב/חמה, edge 1185) and B (תלמיד/לבנה, edge 1564) are merged into one package because the source text declares them jointly in a single bechina sentence. They represent the two poles of the same phenomenon: the teacher-student light-transmission dyad. The Rav being chamah and the Talmid being levanah are not independent facts — they are a paired statement about a single relational structure. Neither can stand alone as a package without the other.",
+        "Component C (אנפין נהירין/מראה מלטשת, edge 1944) merges with A+B because the text explicitly equates אנפין נהירין with the quality of the Talmid/Levanah that enables reception: 'אִם הַתַּלְמִיד יֵשׁ לוֹ פָּנִים, הַיְנוּ בְּחִינַת אַנְפִּין נְהִירִין, בְּחִינַת מַרְאָה מְלֻטֶּשֶׁת.' The three concepts (face, shining face, polished mirror) are introduced in the same sentence as sequential bechina identifications: having face = having אנפין נהירין = being a מראה מלטשת. These are the same thing viewed from three angles. Merging C into A+B by SHARED NATURE: the polished mirror IS the levanah IS the talmid's shining face — they are different vocabulary for the same essential quality."
+      ],
+      "note": "All 6 nodes already exist in the dataset with bechina edges for reference 153 (edges 1185, 1564, 1944). An additional bechina edge connecting אנפין נהירין to תלמיד, or to לבנה directly, is not in the dataset but is strongly implied by the text — see torah_153_additions.json for proposed additions. The nodes פנים (face) and קבלת פנים (reception of the face) appear prominently in the source text but are not currently in the dataset as bechina nodes for reference 153 — these are candidates for addition (gap analysis)."
+    },
+    {
+      "id": 2,
+      "torah_ref": 153,
+      "label": "אַנְפִּין חֲשׁוּכִין וְתַאֲוַת מָמוֹן",
+      "label_en": "Darkened Face and the Lust for Money",
+      "polarity": "evil",
+      "reason": "This package contains the evil-mirror cluster of Torah #153. Edge 2002 declares: 'אַנְפִּין חֲשׁוּכִין, שֶׁהוּא בְּחִינַת הַמְשֻׁקָּע בְּתַאֲוַת מָמוֹן' — the darkened face IS the state of being sunk in money-lust. This is the direct structural mirror of Package 1: where Package 1 has אנפין נהירין (shining face = polished mirror = good receptivity), Package 2 has אנפין חשוכין (darkened face = inability to receive = sunk in monetary desire). The teaching makes the mirror explicit: the Rav who does not see his reflection in the Talmid's face knows the Talmid is in a state of אנפין חשוכין, which IS being 'מְשֻׁקָּע בְּתַאֲוַת מָמוֹן.' The metaphor is taken from the opening celestial passage: just as a body that is 'עָב וְחָשׁוּךְ' (opaque and dark) cannot receive the sun's light, the talmid with a darkened face (metaphysical opacity) cannot receive the Rav's face. The two nodes are: אנפין חשוכין (the structural negative mirror of אנפין נהירין in Package 1) and משקע בתאות ממון (the specific moral cause of the darkness — sinking in money-lust). These share the same essential nature: they are both descriptions of spiritual opacity from different angles — one structural (darkened face), one etiological (the cause: money-lust). The Rebbe cites Torah 23 for further elaboration ('כַּמְבֹאָר בְּמָקוֹם אַחֵר — לְעֵיל בְּסִימָן כ\"ג'). Also related: the text introduces 'עַזּוּת פָּנִים' (brazenness) at the end of the teaching, stating that עזות corresponds to lacking holy face and inability to receive. This is a third node in the evil cluster — see gap analysis.",
+      "dominant_node": "אנפין חשוכין",
+      "nodes": [
+        "אנפין חשוכין",
+        "משקע בתאות ממון"
+      ],
+      "node_degrees": {
+        "אנפין חשוכין": 1,
+        "משקע בתאות ממון": 1
+      },
+      "merge_notes": [
+        "This 2-node component stands on its own as the evil mirror of Package 1's אנפין נהירין/מראה מלטשת sub-cluster. No merge into Package 1 is possible: they represent opposite polarities (the framework explicitly identifies these as the good/evil mirror pair). The merge rule (by SHARED NATURE only) actually reinforces their separation: אנפין חשוכין and אנפין נהירין do NOT share the same nature — they are precise negations of each other. Component D is kept as a standalone 2-node evil package.",
+        "A potential third node for this package is עזות פנים — the text explicitly states that one with עזות has no holy face (אין לו פנים דקדשה) and cannot receive faces (Nedarin 20 is cited). The teaching says those with עזות did not have their ancestors stand at Mount Sinai — the inverse of Israel at Sinai having אנפין נהירין (Package 1). עזות פנים IS the condition of having אנפין חשוכין, just as משקע בתאות ממון IS. See gap analysis for proposed addition of this node to Package 2."
+      ],
+      "note": "Both nodes in this package are currently in the dataset for reference 153 (edge 2002). The addition of עזות פנים as a third node is proposed in torah_153_additions.json — it would expand this evil package to 3 nodes and one additional bechina edge."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 4,
+    "total_nodes_in_dataset": 8,
+    "total_packages": 2,
+    "raw_connected_components": 4,
+    "components_merged_into_packages": 3,
+    "packages_from_dataset_components": 2,
+    "packages_from_gap_analysis": 0,
+    "note_on_structure": "Torah #153 has 4 bechina edges producing 4 two-node components. Three components (A: רב/חמה, B: תלמיד/לבנה, C: אנפין נהירין/מראה מלטשת) are merged into Package 1 (good) based on their shared nature as facets of the same light-transmission dyad. One component (D: אנפין חשוכין/משקע בתאות ממון) stands alone as Package 2 (evil). The good/evil mirror is explicit in the text: the entire teaching contrasts the Talmid who has אנפין נהירין (good: Package 1) with the one who has אנפין חשוכין (evil: Package 2). Gap analysis proposes two additional bechina concepts from the source text that are not in the current dataset: פנים/קבלת פנים (for Package 1) and עזות פנים (for Package 2).",
+    "good_evil_mirror": "Package 1 (good: רב/חמה, תלמיד/לבנה, אנפין נהירין/מראה מלטשת) ↔ Package 2 (evil: אנפין חשוכין, משקע בתאות ממון). The mirror structure is the core of the Torah's argument: the polished mirror that receives vs. the opaque body that cannot receive. Positive face (אנפין נהירין) enables reception of the Rav's face and the divine face (at Sinai). Darkened face (אנפין חשוכין) blocks reception and is identified with the spiritual opacity caused by money-lust. The teaching's culminating verse ('פָּנִים בְּפָנִים') and the Talmudic citation about עזות at Mount Sinai both reinforce this binary.",
+    "eitza_summary": "The Torah's causal structure flows between the two packages: one who has אנפין נהירין (Package 1) can perform קבלת פנים, receiving the Rav's face into themselves. The eitza (cause-effect) flows from Package 1 into the spiritual outcome of the teaching. The negative eitza flows from Package 2: אנפין חשוכין → inability to receive → the Rav cannot see himself reflected in the Talmid. These eitza flows connect the two packages but do not belong within either package — they are the narrative arrows between the thematic clusters."
+  }
+}

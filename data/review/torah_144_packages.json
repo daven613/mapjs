@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "source": "Torah #144",
+    "volume": "Likutay Moharan Vol. 1",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===144 AND type==='bechina'. Result: ZERO edges found in torahData.js for reference 144. The dataset contains no entries at all for Torah #144. All package structure is derived directly from the source text (torah_144.txt), which is a brief, tightly-focused teaching (6 lines) in the name of the Rebbe, expounding on the midrash 'No person dies with half his desire in his hand' (Midrash Rabbah, Kohelet, seder 1). Because there are no dataset edges to form connected components from, the algorithm operates on the source text's explicit bechina language (נִקְרָא, הוּא, תָּמִיד) to identify two natural thematic poles — the good pole (Tzaddik / life / subduing desire) and the evil pole (desire-chaser / death). These two poles are structurally opposed in the teaching and are connected by contrast (not by bechina), so they form two separate packages."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 144,
+      "label": "הַצַּדִּיק וְהַחַיִּים",
+      "label_en": "The Tzaddik and Life",
+      "polarity": "good",
+      "reason": "This cluster groups all concepts that share the essential nature of 'the one who controls his desire and therefore is always alive.' The teaching's central bechina declaration is: the Tzaddik is never dead — he is תָּמִיד חַי (always alive), even after physical death. This is because for him, life consists in serving God (עֲבוֹדַת הַשֵּׁם), which continues uninterrupted beyond the grave. The text further defines the Tzaddik's quality: he כּוֹבֵשׁ אֶת יִצְרוֹ (subdues his inclination) and אוֹחֵז אֶת תַּאֲוָתוֹ בְּיָדוֹ (holds his desire in his hand) — even regarding the permitted half (חֶצְיוֹ לָכֶם), he maintains mastery. These three dimensions — Tzaddik, life/always-alive, and the subduing of desire — all express the same essential reality: the axis of holiness and spiritual vitality that transcends death. The explicit bechina marker is the statement 'בְּוַדַּאי זֶה אֵין מֵת, אֶלָּא תָּמִיד חַי' — this person IS not dead, IS always alive. This IS-language equates the Tzaddik's type with the concept of enduring life. The axis of this package is: Tzaddik = control of desire = life. Polarity is good — this is the positive pole of the teaching.",
+      "dominant_node": "צדיק",
+      "nodes": [
+        "צדיק",
+        "תמיד חי",
+        "כובש יצרו / אוחז תאוותו בידו"
+      ],
+      "node_degrees": {
+        "צדיק": 2,
+        "תמיד חי": 1,
+        "כובש יצרו / אוחז תאוותו בידו": 1
+      },
+      "merge_notes": [
+        "Package 1 is derived from the source text, not from dataset bechina edges (none exist for reference 144). The three nodes all share the same essential nature: the domain of 'life through mastery of desire.' The Tzaddik IS the one who subdues desire; that subduing IS the reason he IS always alive. These are three facets of a single reality, not a causal chain — the Tzaddik does not 'produce' life by subduing desire in an eitza sense within this package; rather, they are all bechina-expressions of the same person/quality."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 144,
+      "label": "תַּאֲוַת אֲכִילָה וּשְׁתִיָּה וְהַמָּוֶת",
+      "label_en": "Desires of Eating and Drinking and Death",
+      "polarity": "evil",
+      "reason": "This cluster groups all concepts that share the essential nature of 'being enslaved to physical desire, which constitutes a form of death.' The teaching's most explicit bechina statement is: 'זֶה נִקְרָא מֵת' — the person who followed desires of eating and drinking all his days IS CALLED (נִקְרָא) dead. The word נִקְרָא is one of the canonical bechina markers in the framework ('X נִקְרָא Y — X is called Y'). The equation made here is: the desire-chaser = מֵת (the dead). After physical death his lack of eating/drinking shows that death has occurred — death is recognizable (נִכֶּרֶת) in him, because his entire identity was eating and drinking, and now that is gone. The two concepts in this package — תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה (desires of eating and drinking) and מֵת (the dead / death) — share the same essential nature: both represent existence without inner life, without transcendence, without the axis that connects a person to God. The desire is the death-orientation expressed in life; the death is the desire-orientation made manifest. This is not a causal chain (desires do not 'produce' death as an eitza mechanism in this text) — rather, the Rebbe is saying they ARE the same thing: to live for desire IS death. Polarity is evil — this is the negative pole of the teaching, the anti-life axis.",
+      "dominant_node": "תאוות אכילה ושתיה",
+      "nodes": [
+        "האדם שנמשך אחר תאוות אכילה ושתיה",
+        "מת"
+      ],
+      "node_degrees": {
+        "האדם שנמשך אחר תאוות אכילה ושתיה": 1,
+        "מת": 1
+      },
+      "merge_notes": [
+        "Package 2 is derived from the source text's explicit bechina statement 'זֶה נִקְרָא מֵת.' This is a 2-node component. The merge question is: should it be merged into Package 1? Answer: NO. These two packages represent structurally opposed poles of the teaching — good vs. evil, life vs. death. They share NO nature (one is the axis of life/mastery, the other is the axis of desire/death). The connection between them is one of contrast/opposition, not shared essence. Merging them would violate the fundamental rule that packages are built on shared nature (bechina), not on contrast."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes": 5,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "note": "Zero dataset edges exist for reference 144. Packages are reconstructed entirely from source text bechina language. Node count is 5 (3 in Package 1 + 2 in Package 2), all proposed for addition to the dataset."
+  }
+}

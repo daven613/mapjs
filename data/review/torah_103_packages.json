@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "source": "Torah #103 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "ZERO edges exist in torahData.js with reference===103 AND type==='bechina'. The dataset has not yet been populated for this Torah. All packages below are derived entirely from Step 5 (gap analysis of the source text) and Step 6 (new package check). The source text (torah_103.txt) is 6 lines and is an aggadic teaching from the Gemara (Sanhedrin 91b and Bava Batra 8b) about teachers who withhold Torah — a moral/relational teaching, not a kabbalistic teaching with sefirot or body-part symbolism. Bechina-equivalent language (identity declarations using 'אֵלּוּ', 'הֵם', Onkelos translations, and mirrored opposites) yields two thematic clusters: (1) the righteous teacher and Torah-as-inheritance [good], (2) the corrupt teacher and his disciples [evil]. These are proposed as new packages pending data entry."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 103,
+      "label": "הֲלָכוֹת וְנַחֲלַת אָבוֹת",
+      "label_en": "Halakhot and Ancestral Inheritance",
+      "polarity": "good",
+      "reason": "The central domain of Torah #103's positive teaching is the equation: הֲלָכוֹת (halakhot) ARE נַחֲלַת אָבוֹת (ancestral inheritance). The Gemara (Sanhedrin 91b) establishes this as an explicit identity — Torah/halakhot are not merely commanded but are the inheritance of Israel, received through the lineage of ancestors. The righteous teacher (מַצְדִּיקֵי הָרַבִּים) who transmits halakhot to his students is identified in Bava Batra 8b as מְלַמְּדֵי תִּינוֹקוֹת (children's teachers), and they are compared to the stars (כַּכּוֹכָבִים) — an explicit bechina-equivalence using 'אֵלּוּ' (these are...). Stars are the bechina of the teachers who make many righteous, because they illuminate the night and give light to many. The dominant node is הֲלָכוֹת (the teaching content = the inheritance) because the entire teaching pivots on whether halachic content is transmitted or withheld. Good/evil mirror: the good teacher who gives halakhot (this package) is the mirror of the corrupt teacher who withholds/steals them (Package 2).",
+      "dominant_node": "הֲלָכוֹת",
+      "nodes": [
+        "הֲלָכוֹת",
+        "נַחֲלַת אָבוֹת",
+        "מַצְדִּיקֵי הָרַבִּים",
+        "מְלַמְּדֵי תִּינוֹקוֹת",
+        "כַּכּוֹכָבִים"
+      ],
+      "node_degrees": {
+        "הֲלָכוֹת": 2,
+        "נַחֲלַת אָבוֹת": 2,
+        "מַצְדִּיקֵי הָרַבִּים": 2,
+        "מְלַמְּדֵי תִּינוֹקוֹת": 1,
+        "כַּכּוֹכָבִים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["מַצְדִּיקֵי הָרַבִּים", "מְלַמְּדֵי תִּינוֹקוֹת", "כַּכּוֹכָבִים"],
+          "reason": "These three form a tight bechina cluster: Bava Batra 8b declares 'מַצְדִּיקֵי הָרַבִּים כַּכּוֹכָבִים — אֵלּוּ מְלַמְּדֵי תִּינוֹקוֹת'. The 'אֵלּוּ' is the classical bechina-declaration formula: these (stars) = these (teachers). All three — the act of making-many-righteous, the role of children's teacher, and the star-symbol — share the same essential nature: the teacher who freely transmits Torah/halakhot to many students and thereby righteous them. They belong in Package 1 because the defining shared nature is positive transmission of halakhot (= nachalat avot)."
+        },
+        {
+          "merged_nodes": ["הֲלָכוֹת", "נַחֲלַת אָבוֹת"],
+          "reason": "Sanhedrin 91b equates these directly: 'הֲלָכוֹת הֵם נַחֲלַת אָבוֹת'. This is not cause-and-effect; it is an identity statement. Halakhot ARE the inheritance — they are two names for the same reality: the Torah content that passes from generation to generation as a sacred patrimony. The shared nature is: Torah-knowledge-as-patrimony."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 103,
+      "label": "תַּרְבּוּת אֲנָשִׁים חַטָּאִים",
+      "label_en": "Brood of Sinful Men — The Corrupt Teacher Cluster",
+      "polarity": "evil",
+      "reason": "The evil mirror of Package 1. Where Package 1 is the teacher who transmits Torah-as-inheritance, Package 2 is the teacher who withholds or steals it. The text explicitly names this cluster using Moses's condemnation: תַּרְבּוּת אֲנָשִׁים חַטָּאִים (Numbers 32:14), which Onkelos translates as תַּלְמִידֵי גֻּבְרַיָּא חַיָּבַיָּא (disciples of wicked men). These two phrases are explicit bechina-equivalences (the Hebrew verse and its Aramaic translation name the same essential reality). The evil teacher's actions are described through two more bechina-equivalent phrases: מְחַיְּבֵי הָרַבִּים (those who make many guilty — the exact evil mirror of מַצְדִּיקֵי הָרַבִּים) and מְנִיאֵי לֵב בְּנֵי יִשְׂרָאֵל (those who dissuade the hearts of Israel from their inheritance). Both phrases name the same essential reality from different angles: the teacher who corrupts rather than rectifies his students. The Rebbe applies this to teachers who 'stole halakhot' from students — גּוֹזֵל נַחֲלַת אָבוֹת (robber of ancestral inheritance) is the identity assigned to such a teacher. Dominant node: מְחַיְּבֵי הָרַבִּים (most structurally connected, as it is the direct evil counterpart of מַצְדִּיקֵי הָרַבִּים which is the dominant-adjacent node in Package 1).",
+      "dominant_node": "מְחַיְּבֵי הָרַבִּים",
+      "nodes": [
+        "מְחַיְּבֵי הָרַבִּים",
+        "מְנִיאֵי לֵב בְּנֵי יִשְׂרָאֵל",
+        "תַּרְבּוּת אֲנָשִׁים חַטָּאִים",
+        "תַּלְמִידֵי גֻּבְרַיָּא חַיָּבַיָּא",
+        "גּוֹזֵל נַחֲלַת אָבוֹת"
+      ],
+      "node_degrees": {
+        "מְחַיְּבֵי הָרַבִּים": 2,
+        "מְנִיאֵי לֵב בְּנֵי יִשְׂרָאֵל": 2,
+        "תַּרְבּוּת אֲנָשִׁים חַטָּאִים": 2,
+        "תַּלְמִידֵי גֻּבְרַיָּא חַיָּבַיָּא": 1,
+        "גּוֹזֵל נַחֲלַת אָבוֹת": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["תַּרְבּוּת אֲנָשִׁים חַטָּאִים", "תַּלְמִידֵי גֻּבְרַיָּא חַיָּבַיָּא"],
+          "reason": "These are the same condemnation in two languages: the biblical Hebrew (Numbers 32:14) and Onkelos's Aramaic translation. Onkelos's translation is an explicit bechina-equivalence — the targum declares what the Hebrew 'IS' in meaning. Both name the same essential reality: the student-group shaped by a wicked teacher. Shared nature: the disciple-body that carries forward the corruption of its teacher, perpetuating the theft of Torah from Israel."
+        },
+        {
+          "merged_nodes": ["מְחַיְּבֵי הָרַבִּים", "מְנִיאֵי לֵב בְּנֵי יִשְׂרָאֵל"],
+          "reason": "These are two descriptions of the same action of the evil teacher: 'making many guilty' and 'dissuading the hearts of Israel from their ancestral inheritance'. They are not cause-and-effect (one does not produce the other); they are two faces of the same reality. The teacher who dissuades Israel IS the one who makes them guilty. Shared nature: the destructive-teacher action that corrupts the many."
+        },
+        {
+          "merged_nodes": ["גּוֹזֵל נַחֲלַת אָבוֹת"],
+          "reason": "The Gemara states the teacher who withholds halakha IS as if he robbed the student of the ancestral inheritance ('כְּאִלּוּ גּוֹזְלוֹ מִנַּחֲלַת אָבוֹת'). The Rebbe drops the 'כְּאִלּוּ' (as if) and treats this as a real identity — the withholding-teacher IS a robber of inheritance. This node belongs in the evil package because it names the essential nature of the corrupt teacher from the perspective of the damage done: he is, at his core, a thief of Torah-patrimony."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_from_dataset": 0,
+    "total_nodes_from_source_text": 10,
+    "total_packages": 2,
+    "raw_connected_components_from_dataset": 0,
+    "note": "Torah #103 has ZERO edges in torahData.js. All 10 nodes and both packages are derived exclusively from the source text gap analysis (Step 5). The good/evil mirror structure is explicit: Package 1 (הֲלָכוֹת וְנַחֲלַת אָבוֹת) mirrors Package 2 (תַּרְבּוּת אֲנָשִׁים חַטָּאִים) — righteous teacher vs. corrupt teacher, matzdikey harabim vs. mechayyvey harabim, giving nachalat avot vs. stealing it. The teaching's argument: Torah = inheritance → righteous teachers give it → wicked teachers steal it → therefore those who withhold Torah are condemned as thieves and as those who make Israel guilty."
+  }
+}

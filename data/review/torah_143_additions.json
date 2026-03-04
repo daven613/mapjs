@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "source": "Torah #143",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "אין יודע מה לעשות",
+      "node_text": "אֵין יוֹדֵעַ מַה לַּעֲשׂוֹת",
+      "polarity": "evil",
+      "reason": "The Torah's opening concept — 'when a person needs advice and does not know what to do' — is split across two bechina nodes in the dataset: edge 2571 uses the long phrase 'כשצריך לעצה, ואינו יודע איך לעשות' as node1, but the Torah text at line 1 also frames this as 'אינו יודע איך לעשות' and at line 4 alludes to it again as the condition of the person who did not receive the Tzaddik's counsel. The not-knowing state is the root condition of tzimtzum. The current dataset captures this in node 'כשצריך לעצה, ואינו יודע איך לעשות' — no additional bechina node is strictly missing, but the phrase-node is extremely long and may benefit from a canonical shorter form.",
+      "source_quote": "כִּי כְּשֶׁצָּרִיךְ לְעֵצָה, וְאֵינוֹ יוֹדֵעַ אֵיךְ לַעֲשׂוֹת, הִיא בְּחִינַת צִמְצוּם",
+      "in_dataset_already": true
+    },
+    {
+      "package_id": 1,
+      "node_id": "שכל מצומצם",
+      "node_text": "שֵׂכֶל מְצוּמְצָם",
+      "polarity": "evil",
+      "reason": "The Torah explicitly states 'כי נתצמצם שכלו ואינו יודע איך לעשות' — the sekhel itself becomes contracted. The contracted sekhel (שכל מצומצם) is described in bechina-language as being the same thing as tzimtzum. This is a distinct conceptual node — the tzimtzum manifests as a contracted sekhel — but it is not captured as a standalone bechina node in the dataset for Torah #143. It belongs in Package 1 alongside tzimtzum and dinim as another face of the same contracted-intellect reality.",
+      "source_quote": "כִּי נִתְצַמְצֵם שִׂכְלוֹ וְאֵינוֹ יוֹדֵעַ אֵיךְ לַעֲשׂוֹת",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 2,
+      "node_id": "נהירו דחכמתא",
+      "node_text": "נְהִירוּ דְּחָכְמְתָא",
+      "polarity": "good",
+      "reason": "The Zohar phrase 'אל נהירו דחכמתא' (God is the illumination of wisdom) is cited explicitly as the proof that chesed = illumination of wisdom. 'Nehiru d'chokhmeta' is itself identified as a bechina of chesed — 'חסד הוא נהירו דחכמתא'. This is a direct bechina equivalence: chesed IS the illumination of wisdom. The concept 'נהירו דחכמתא' (illumination of wisdom) appears in the proof text of edge 1216 but is not itself a standalone bechina node in the Torah #143 dataset. It would naturally belong in Package 2 alongside חסדים and the wise-man's-counsel node.",
+      "source_quote": "וְזֶה בְּחִינַת חֲסָדִים, כִּי חֶסֶד הוּא נְהִירוּ דְּחָכְמְתָא",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 2,
+      "node_id": "הצדיק נקרא רב",
+      "node_text": "הַצַּדִּיק נִקְרָא רַב",
+      "polarity": "good",
+      "reason": "The Torah explicitly states 'והצדיק נקרא רב' — the Tzaddik IS called Rav (teacher/multitude). This is a clear bechina equivalence using the verb 'נקרא' (is called), one of the canonical markers of a bechina relationship per the framework. The Tzaddik's identity as Rav is proven from the Talmud (Taanit 9): Moses, because his merit was so great, counts as many. The Tzaddik who gives advice is 'Rav Yoetz' (many-advisor) in the verse 'teshuah be'rov yoetz'. This bechina — the Tzaddik = Rav — is present in the text but not captured as a bechina edge in the dataset for Torah #143. It belongs in Package 2 as another expression of the positive force that delivers the illuminating counsel.",
+      "source_quote": "וְהַצַּדִּיק נִקְרָא רַב, כְּמוֹ שֶׁאָמְרוּ רַבּוֹתֵינוּ זִכְרוֹנָם לִבְרָכָה: מֹשֶׁה אַיְּדֵי דִּנְפִישׁ זְכוּתֵהּ כְּרַבִּים דָּמֵי",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 2,
+      "node_id": "אולת אדם תסלף דרכו",
+      "node_text": "אִוֶּלֶת אָדָם תְּסַלֵּף דַּרְכּוֹ",
+      "polarity": "evil",
+      "reason": "The verse from Mishlei 19:3 — 'the foolishness of a man perverts his way, yet his heart rages against God' — is cited as a bechina of what happens to one who did NOT receive the Tzaddik's counsel. The folly/foolishness (אולת) that distorts one's path IS the condition of self-drawn evil — not heaven-sent judgment but self-inflicted. This functions as a bechina of Package 1's not-knowing/tzimtzum cluster, since the person's own folly IS the contracted intellect operating on its own. However, since it appears only as a proof-text citation in an explanatory passage (not using the canonical 'הוא בחינת' formula explicitly for this node), it is a bechina-candidate rather than a confirmed bechina in the dataset.",
+      "source_quote": "כְּמוֹ שֶׁכָּתוּב: אִוֶּלֶת אָדָם תְּסַלֵּף דַּרְכּוֹ, וְעַל ה' יִזְעַף לִבּוֹ",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 3,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "שכל מצומצם — the contracted sekhel is explicitly named ('נתצמצם שכלו') as the mechanism of tzimtzum but is not a standalone bechina node in Torah #143 dataset; belongs in Package 1",
+      "נהירו דחכמתא — 'illumination of wisdom' is cited from the Zohar as the definition of chesed ('חסד הוא נהירו דחכמתא'); it IS chesed by bechina but is not a standalone node in the Torah #143 dataset; belongs in Package 2",
+      "הצדיק נקרא רב — 'the Tzaddik is called Rav' is a classic 'נקרא' bechina; not in dataset for Torah #143; belongs in Package 2",
+      "אולת אדם תסלף דרכו — folly that perverts one's path is the negative condition of Package 1 (self-drawn, not heaven-sent); cited from Mishlei but not formulated as a bechina node in dataset",
+      "המקבל עצה מחכמי הדור — appears only as an eitza node (edge 888); the person who receives counsel from the wise men of the generation is the subject of the Torah but is not a bechina node",
+      "המתקת הדינים — appears only as an eitza target (edge 888); the sweetening of dinim is the outcome/result but not a bechina-equivalent node in the dataset for Torah #143",
+      "גזר דין של מעלה — heavenly decree is mentioned in the last paragraph as a contrast to self-drawn evil; not a bechina node in the dataset"
+    ],
+    "note_on_eitza_edge_888": "The eitza edge (המקבל עצה מחכמי הדור → המתקת הדינים) encodes the central causal argument of the Torah: receiving wise counsel PRODUCES the sweetening of dinim. This is the eitza flow BETWEEN Package 1 (dinim) and its resolution. The המתקת הדינים node is the bridge concept that sits at the boundary — it is the outcome that Package 1 and Package 2 together produce, driven by the Tzaddik's chesed illuminating the contracted intellect.",
+    "note_on_torah_structure": "Torah #143 is an extremely concise Torah (4 sentences). Its bechina graph is sparse (3 edges, 5 nodes, 2 components) because most of the teaching is expressed through eitza (causal) logic rather than bechina (shared-nature) identifications. The fundamental argument is: [not-knowing = tzimtzum = dinim] --eitza--> [receiving-counsel] --eitza--> [המתקת הדינים], with the bechina of [wise-counsel = illumination = chasadim] being the mechanism of the eitza. This is a structurally clean teaching: two poles (contraction/dinim vs. expansion/chasadim) connected by the act of receiving counsel."
+  }
+}

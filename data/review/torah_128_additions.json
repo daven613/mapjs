@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "source": "Torah #128 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_128_packages.json, all reference===128 edges from torahData.js (zero found), and the full source text torah_128.txt. Since the dataset contains no edges for Torah #128, the 'gap' is total: every node and every bechina relationship identified in the source text is missing from the dataset. The additions listed below are not gaps within an existing graph — they ARE the entire graph for this Torah, proposed for first-time entry into torahData.js. Bechina language searched: בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, כִּלְאַחַר יָד (as idiomatic bechina marker in context)."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "הַשְׁפָּלַת הָעֵינַיִם וְעֵינֵי הַיֵּצֶר",
+      "proposed_edge": {
+        "node1_id": "הַשְׁפָּלַת עֵינַיִם",
+        "node2_id": "כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא",
+        "node1_text": "הַשְׁפָּלַת עֵינַיִם",
+        "node2_text": "כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא",
+        "type": "bechina",
+        "reference": 128
+      },
+      "polarity": "good",
+      "reason": "The core bechina equation of the entire Torah. Line 2 opens: 'וְזֶה בְּחִינַת מַה שֶּׁנִּמְצָא לִפְעָמִים בָּאֲנָשִׁים הַכְּשֵׁרִים קְצָת, שֶׁמֵּחֲמַת שֶׁנּוֹגֵעַ יִרְאַת הַשֵּׁם בְּלִבּוֹ, הוּא מַשְׁפִּיל עֵינָיו'. The act of lowering the eyes (הַשְׁפָּלַת עֵינַיִם) due to yirat Hashem is declared a bechina of the Talmudic כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא (blinding the eyes of the yetzer hara). Both describe the same act — suppressing the visual power of the yetzer — one in human behavioral terms, one in the metaphor of the captured yetzer. This edge belongs in the positive (good) register because the act of suppression is the person's positive spiritual effort driven by yirat Hashem.",
+      "source_quote": "וְזֶה בְּחִינַת מַה שֶּׁנִּמְצָא לִפְעָמִים בָּאֲנָשִׁים הַכְּשֵׁרִים קְצָת, שֶׁמֵּחֲמַת שֶׁנּוֹגֵעַ יִרְאַת הַשֵּׁם בְּלִבּוֹ, הוּא מַשְׁפִּיל עֵינָיו וְאֵינוֹ מִסְתַּכֵּל בְּנָשִׁים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "הַשְׁפָּלַת הָעֵינַיִם וְעֵינֵי הַיֵּצֶר",
+      "proposed_edge": {
+        "node1_id": "מְסַמֵּא עֵינֵי הַיֵּצֶר הָרָע",
+        "node2_id": "כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא",
+        "node1_text": "מְסַמֵּא עֵינֵי הַיֵּצֶר הָרָע",
+        "node2_text": "כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא",
+        "type": "bechina",
+        "reference": 128
+      },
+      "polarity": "mixed",
+      "reason": "Line 3 restates the bechina from the side of the yetzer hara: 'וְהוּא בְּחִינַת: כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא – שֶׁמְּסַמֵּא עֵינֵי הַיֵּצֶר הָרָע'. The blinding of the yetzer's eyes (מְסַמֵּא עֵינֵי הַיֵּצֶר הָרָע) is the same act as כַּחְלִינְהוּ. This is the flip-side of the first edge: the first edge frames the act from the person's side (lowering his eyes), this edge frames the same act from the yetzer's side (the yetzer's eyes are being blinded). Both are bechina of כַּחְלִינְהוּ. The polarity is 'mixed' because the blinding is a good act, but the subject (the yetzer's eyes) is the evil domain.",
+      "source_quote": "וְהוּא בְּחִינַת: כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא – שֶׁמְּסַמֵּא עֵינֵי הַיֵּצֶר הָרָע; שֶׁרוֹצֶה לְהִסְתַּכֵּל, וְהוּא מְסַמֵּא עֵינָיו עַל־יְדֵי שֶׁמּוֹנֵעַ עַצְמוֹ מִלְּהִסְתַּכֵּל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "הַשְׁפָּלַת הָעֵינַיִם וְעֵינֵי הַיֵּצֶר",
+      "proposed_edge": {
+        "node1_id": "יֵצֶר הָרָע דְּנִאוּף",
+        "node2_id": "מִסְתַּכֵּל מִן הַצַּד",
+        "node1_text": "יֵצֶר הָרָע דְּנִאוּף",
+        "node2_text": "מִסְתַּכֵּל מִן הַצַּד",
+        "type": "bechina",
+        "reference": 128
+      },
+      "polarity": "evil",
+      "reason": "Line 3 concludes: 'וְאַף־עַל־פִּי־כֵן נִשְׁאָר הַיֵּצֶר הָרָע, כִּי מִסְתַּכֵּל מִן הַצַּד כִּלְאַחַר יָד'. The persistence of the yetzer hara of niyuf even after blinding IS the act of looking from the side — the blinded yetzer hara = the one who looks sideways. This is a bechina because the Rebbe is saying that what the yetzer 'is' in its post-blinding state is precisely this sideways glance — they share the same nature at that moment. Both node and bechina are in the evil register because this describes the continuing, residual force of the sexual yetzer hara.",
+      "source_quote": "וְאַף־עַל־פִּי־כֵן נִשְׁאָר הַיֵּצֶר הָרָע, כִּי מִסְתַּכֵּל מִן הַצַּד כִּלְאַחַר יָד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_128_edges_in_dataset": 0,
+    "total_reference_128_bechina_edges_in_dataset": 0,
+    "total_reference_128_eitza_edges_in_dataset": 0,
+    "bechina_edges_found_in_source_text": 3,
+    "eitza_edges_found_in_source_text": 1,
+    "nodes_accounted_for_in_packages": {
+      "package_1": [
+        "כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא",
+        "הַשְׁפָּלַת עֵינַיִם",
+        "מְסַמֵּא עֵינֵי הַיֵּצֶר הָרָע",
+        "יֵצֶר הָרָע דְּנִאוּף",
+        "מִסְתַּכֵּל מִן הַצַּד"
+      ]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "כַּחְלִינְהוּ לְעֵינֵהּ דְּיִצְרָא",
+      "הַשְׁפָּלַת עֵינַיִם",
+      "מְסַמֵּא עֵינֵי הַיֵּצֶר הָרָע",
+      "יֵצֶר הָרָע דְּנִאוּף",
+      "מִסְתַּכֵּל מִן הַצַּד"
+    ],
+    "eitza_edges_not_captured_in_packages": [
+      {
+        "edge": "יִרְאַת הַשֵּׁם → הַשְׁפָּלַת עֵינַיִם",
+        "reason": "Line 2: 'מֵחֲמַת שֶׁנּוֹגֵעַ יִרְאַת הַשֵּׁם בְּלִבּוֹ, הוּא מַשְׁפִּיל עֵינָיו' — yirat Hashem CAUSES the lowering of the eyes. This is a directional cause-and-effect (eitza), not a shared-nature equivalence (bechina). yirat Hashem is therefore an external node that feeds into Package 1 via eitza but does not belong inside the package as a bechina member."
+      }
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "אֲנָשִׁים הַכְּשֵׁרִים / somewhat-righteous people",
+        "reason": "This is the narrative subject of the teaching — the category of person being described — not a bechina-equivalent concept. The Rebbe is describing what happens to such people, not establishing אנשים כשרים as a bechina of anything."
+      },
+      {
+        "concept": "תַּאֲוַת הַמִּשְׁגָּל",
+        "reason": "This is a gloss/definition of יֵצֶר הָרָע דַּעֲבֵרָה in the Talmudic citation (Line 1: 'לְעִנְיַן הַיֵּצֶר הָרָע דַּעֲבֵרָה, דְּהַיְנוּ שֶׁל תַּאֲוַת הַמִּשְׁגָּל'). The word 'דְּהַיְנוּ' introduces an explanation/synonym, not a new conceptual node with independent bechina status. תַּאֲוַת הַמִּשְׁגָּל is an alias for יֵצֶר הָרָע דְּנִאוּף and would be captured as a variant of that node, not a separate addition."
+      },
+      {
+        "concept": "גּוֹנֵב אֶת הָעַיִן כִּלְאַחַר יָד",
+        "reason": "This phrase describes the same behavioral act as מִסְתַּכֵּל מִן הַצַּד — 'stealing a sidelong glance' is the human-side description of what 'looking from the side' means. The text uses both phrases interchangeably in lines 2-3 to describe the same phenomenon. Rather than treating them as two separate nodes, the human-behavioral phrase (גּוֹנֵב אֶת הָעַיִן) is subsumed into the node מִסְתַּכֵּל מִן הַצַּד as its variant expression. If separate node IDs are preferred in the dataset, this could be flagged as an alias."
+      }
+    ]
+  }
+}

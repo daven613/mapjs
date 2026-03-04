@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "source": "Torah #107 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #107 has a rich bechina subgraph spanning sections 1071–1079. The short source text (5 lines) is a pure eitza teaching with no explicit bechina language, so there are no gap-analysis additions from the source text. The dataset contains many bechina edges covering a wide thematic range — from midwifery and birth (section 1071) to repentance and transcendence of time (sections 1072–1079), via Temple building, tefillin, Purim-Passover, and Land of Israel. The bechina subgraph produces two large connected components (~41 nodes each) and several smaller components (2–4 nodes each). The dominant good/evil axis is the מחין-of-holiness cluster vs. the מחין-of-exile/damage cluster. The largest package (מחין/מנהיג) spans all the aspects of holy intellect, the true leader, Temple building, tefillin-straps, fear of God, and the motifs of pleasant teaching. The second largest (תשובה/זמן) unites repentance, eternal life, Shabbat, and the transcendence of time. Package merges are proposed for the small clusters of 2–4 nodes."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 107,
+      "label": "מֹחִין וּמַנְהִיג אֱמֶת — הַנּוֹעַם וְהַיִּרְאָה",
+      "label_en": "Holy Intellect and the True Leader — Pleasantness and Fear of God",
+      "polarity": "good",
+      "reason": "This is the largest package in Torah #107, spanning sections 1071, 1072, and 1077. The central hub is the node מחין (holy consciousness/brain-light), which appears across all three sections and serves as the structural connector for the entire cluster. In section 1071, מחין is identified with the nועם העליון (supernal pleasantness) that is the nature of the Land of Israel's consciousness, as opposed to the damaging consciousness of exile. The midwife Shifra (=Joseph=pleasant teaching) and the beauty of Halacha all connect to this domain of holy נועם. In section 1072, מחין connects to the Ruach haKodesh, the prophetic spirit (ruach nevuah), the all-encompassing spirit (ruach hakolel), and the true leader Moses. The Temple building, da'at, and the encompassing sage (chakham hakolel) all belong to this cluster. In section 1077, the tefillin are identified as a bechina of מחין; the strap (retzua) that passes through the tefillin is identified as yirah (fear of God); malkut and Yehudah are identified as yirah; Binyamin as da'at/mochin; and the Holy Temple as da'at. All these nodes form one connected component through מחין as the central bridge. The dominant node is מחין with the highest connectivity (7+ edges). The package is entirely positive/good — every node represents an aspect of holy consciousness, authentic leadership, the beauty of Torah, and the fear of Heaven.",
+      "dominant_node": "מחין",
+      "nodes": [
+        "מחין",
+        "נועם",
+        "מחין של ארץ ישראל",
+        "יוסף",
+        "שפרה",
+        "יפה תאר",
+        "שמנעימים בהלכה",
+        "נעם",
+        "הולדה",
+        "שפיר ושליא",
+        "מוחין",
+        "מוחין של ארץ ישראל",
+        "רוח אלקים",
+        "רוח הקדש",
+        "מלאכת בנין בית המקדש",
+        "רוח הכולל",
+        "והמנהיג האמתי של כל ישראל",
+        "משה",
+        "מנהיג אמתי",
+        "דעת הכולל",
+        "המנהיג האמתי",
+        "חכם הדור",
+        "חכם הכולל",
+        "רוח נבואה",
+        "דעת",
+        "בנין בית המקדש",
+        "בית המקדש",
+        "בנימין",
+        "תפלין",
+        "מוחין (1077)",
+        "יראה",
+        "הרצועה",
+        "יראה דקדשה",
+        "רצועה דקדשה",
+        "רצועה בישא",
+        "יראה נפולה",
+        "רצועה",
+        "יהודה",
+        "מלכות",
+        "גדולה",
+        "רצועה של תפלין",
+        "רצועה שעוברת בתוך המעברתא של תפלין"
+      ],
+      "node_degrees": {
+        "מחין": 8,
+        "דעת": 4,
+        "מלכות": 3,
+        "רוח אלקים": 4,
+        "רוח הכולל": 4,
+        "משה": 3,
+        "יראה": 4,
+        "תפלין": 3,
+        "יראה דקדשה": 2,
+        "רצועה": 3,
+        "שפרה": 4,
+        "נועם": 2,
+        "נעם": 2
+      },
+      "merge_notes": [],
+      "source_bechinot": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 107,
+      "label": "יַעֲקֹב וּצְדָקָה — נְדִיבוּת הַלֵּב",
+      "label_en": "Jacob and Charity — Generosity of Heart",
+      "polarity": "good",
+      "reason": "This package from section 1071 centers on the patriarchal figure Jacob and the concept of charity (tzedakah). Jacob is identified as a bechina of tzedakah (via their shared connection to nachalah/inheritance — the land inheritance of Jacob is the bechina of tzedakah). Tzedakah is connected to terumah (the priestly tithe — giving generously) and to nedivut lev (generosity/openhearted giving). The phrase 'when the heart opens and gives willingly' (sheniftach venitmadved halev) is a bechina of nedivut lev. The package represents the ethical-spiritual dimension of giving, generosity, and the connection of the patriarchal soul to the flow of divine inheritance. It is entirely positive/good. The dominant node is יעקב or צדקה — both have the same degree (4) within this cluster.",
+      "dominant_node": "יעקב",
+      "nodes": [
+        "יעקב",
+        "צדקה",
+        "נחלת",
+        "תרומה",
+        "נדיבות לב",
+        "שנפתח ונתנדב הלב"
+      ],
+      "node_degrees": {
+        "יעקב": 2,
+        "צדקה": 3,
+        "נחלת": 2,
+        "תרומה": 2,
+        "נדיבות לב": 2,
+        "שנפתח ונתנדב הלב": 1
+      },
+      "merge_notes": [],
+      "source_bechinot": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 107,
+      "label": "חוֹבְלִים — מֹחִין שֶׁל חוּץ לָאָרֶץ",
+      "label_en": "The Damagers — Consciousness of Exile",
+      "polarity": "evil",
+      "reason": "This small package from section 1071 is the exact evil mirror of Package 1's נועם/מחין-of-holiness dimension. Where Package 1 has מחין של ארץ ישראל (the consciousness of the Land of Israel, which is identified with pleasantness/נועם), Package 3 has מחין של חוץ לארץ (the consciousness of exile), which is identified with חובלים (the damagers/destroyers). The birth pangs of labor (חבלי לדה) are also a bechina of חובלים — they represent the painful, damaging dimension of emergence into the world, as opposed to the pleasantness of Shifra's holy midwifery. This is the evil counterpart: where Israel's consciousness produces beauty and נועם, exile's consciousness produces damage and pain. The dominant node is חובלים with the highest connectivity (2 edges) in this tiny cluster.",
+      "dominant_node": "חובלים",
+      "nodes": [
+        "מחין של חוץ לארץ",
+        "חובלים",
+        "חבלי לדה"
+      ],
+      "node_degrees": {
+        "חובלים": 2,
+        "מחין של חוץ לארץ": 1,
+        "חבלי לדה": 1
+      },
+      "merge_notes": [],
+      "source_bechinot": []
+    },
+    {
+      "id": 4,
+      "torah_ref": 107,
+      "label": "תְּשׁוּבָה וּבִטּוּל הַזְּמַן — חַיִּים נִצְחִיִּים",
+      "label_en": "Repentance and Transcendence of Time — Eternal Life",
+      "polarity": "good",
+      "reason": "This is the second largest package in Torah #107, uniting all the repentance-related concepts from sections 1072 and 1079, connected through the central node תשובה. In section 1072, the cluster includes: repentance (teshuvah) producing life (chayim) and eternal life (chayim nitzchiyim), Shabbat as a foretaste of the World to Come, humility (shiflet) as the condition for eternal life, the gates of repentance (nedivei ha'am opening them through shame), and the well (be'er) and rock (sela) as bechinot of Torah interpretations (be'urei Torah). In section 1079, Rebbe Nachman's editor (Reb Nosson) connects teshuvah with bitul hazmanim (transcendence of time), showing that repentance lifts one above temporal constraints. Abraham is identified as a bechina of 'above time' (through his attribute of ahavah/love which unifies time). Yitzchak is a bechina of zman (time), and the redemptive events of kri'at yam suf (splitting of the Sea) and milchemet Amalek are bechinot of bitul hazmanim. The Word/letters of speech (dibburim/otiyot) are connected to teshuvah as the means of return. Also included from section 1071: ahavah (love) is connected to shalhavot di-re'himuta (flames of love), and through the 1079 chain ahavah ↔ Abraham ↔ above-time ↔ teshuvah, the flames of love enter this package. The dominant node is תשובה with the highest connectivity in the cluster (5+ edges).",
+      "dominant_node": "תשובה",
+      "nodes": [
+        "תשובה",
+        "חיים",
+        "חיים נצחיים",
+        "חיים נצחיים של עולם הבא",
+        "שבת",
+        "מתנה",
+        "יראה והבושה",
+        "נדיבי העם",
+        "חפרוה",
+        "בושה",
+        "מדבר",
+        "שפלות",
+        "שפלות ועניוות",
+        "בלתי גבול",
+        "אין",
+        "למעלה מהזמן",
+        "למעלה מן הזמן",
+        "בטול הזמנים",
+        "בטול הזמן",
+        "קריעת ים סוף",
+        "מלחמת עמלק",
+        "נתקצר הזמן",
+        "אברהם",
+        "אהבה",
+        "התאחדות הזמן",
+        "יצחק בן אברהם",
+        "התאחדות הזמן על ידי תשובה",
+        "בן",
+        "קול דקדשה",
+        "קולו יתברך",
+        "זמן",
+        "שנה",
+        "קץ",
+        "יצחק",
+        "אחרית הימים",
+        "אבנים",
+        "אותיות",
+        "דבורים",
+        "דיבורים",
+        "שלהובין דרחימותא"
+      ],
+      "node_degrees": {
+        "תשובה": 7,
+        "אהבה": 3,
+        "אברהם": 2,
+        "בטול הזמנים": 4,
+        "קריעת ים סוף": 3,
+        "זמן": 3,
+        "קץ": 2,
+        "אבנים": 3,
+        "דיבורים": 2
+      },
+      "merge_notes": [
+        "Clusters from sections 1072 (teshuvah/shabbat/chayim) and 1079 (teshuvah/zman/avraham) are united through the shared node תשובה.",
+        "The node אהבה from section 1071 (אהבה ↔ שלהובין דרחימותא) is pulled into this cluster via the 1079 chain אהבה ↔ אברהם ↔ למעלה מן הזמן ↔ תשובה.",
+        "The nodes 'למעלה מהזמן' and 'למעלה מן הזמן' are slightly different node_ids expressing the same concept; similarly 'בטול הזמנים' and 'בטול הזמן'. Both variants are included and should be considered for aliasing."
+      ],
+      "source_bechinot": []
+    },
+    {
+      "id": 5,
+      "torah_ref": 107,
+      "label": "בְּאֵר וּבְאוּרֵי תוֹרָה — סֶלַע",
+      "label_en": "The Well and Torah Interpretations — The Rock",
+      "polarity": "good",
+      "reason": "This small three-node cluster from section 1072 connects the well (be'er) with Torah interpretations (be'urei Torah) and the rock (sela). The be'er (well) is a bechina of be'urei Torah: the well digs down to living waters just as Torah commentary uncovers deep meaning. The sela (rock) is a bechina of the be'er: both are sources of hidden living water that can be 'opened' to flow. Together these three form a compact metaphorical cluster around the theme of accessing hidden wisdom. Although small (3 nodes), the cluster is thematically distinct from the larger teshuvah cluster and not connected to it via bechina. Dominant node: באר or באורי התורה (equal degree).",
+      "dominant_node": "באר",
+      "nodes": [
+        "באר",
+        "באורי התורה",
+        "סלע"
+      ],
+      "node_degrees": {
+        "באר": 2,
+        "באורי התורה": 2,
+        "סלע": 1
+      },
+      "merge_notes": [
+        "PROPOSED MERGE INTO PACKAGE 4: Thematically, the be'er/Torah-interpretation cluster is connected to the broader teshuvah/repentance package (repentance is accessed through the 49 gates — like wells of water). However, there is no bechina edge connecting this cluster to the teshuvah cluster in the dataset. If a bechina edge were to be established (e.g., be'urei Torah ↔ teshuvah or be'er ↔ מ'ט שערי תשובה), this cluster should be merged into Package 4. For now it remains independent."
+      ],
+      "source_bechinot": []
+    },
+    {
+      "id": 6,
+      "torah_ref": 107,
+      "label": "מ\"ט שַׁעֲרֵי תְּשׁוּבָה — אוֹתִיּוֹת הַשְּׁבָטִים",
+      "label_en": "The 49 Gates of Repentance — Letters of the Tribes",
+      "polarity": "good",
+      "reason": "This three-node cluster from section 1073 identifies the 49 gates of repentance (the complete structure of how all Jews can return) with the 49 letters in the names of the twelve tribes of Israel, and equates the 49 days of the Omer count with the 49 gates. The connection: each gate corresponds to a letter, each letter to a day of counting. This is a distinct cluster about the structural framework of communal repentance (different from the individual teshuvah in Package 4). The cluster stands alone in the dataset without bechina edges connecting it to Package 4 or other packages.",
+      "dominant_node": "המ\"ט שערי תשובה",
+      "nodes": [
+        "המ\"ט שערי תשובה",
+        "מ\"ט אותיות שיש בשמות שנים־עשר שבטי י־ה",
+        "מ\"ט ימי הספירה"
+      ],
+      "node_degrees": {
+        "המ\"ט שערי תשובה": 2,
+        "מ\"ט אותיות שיש בשמות שנים־עשר שבטי י־ה": 1,
+        "מ\"ט ימי הספירה": 1
+      },
+      "merge_notes": [
+        "PROPOSED MERGE INTO PACKAGE 4: The 49 gates of repentance are structurally connected to the teshuvah theme. The 'שלהובין דרחימותא' node already resides in Package 4 via the אהבה chain. Thematically, this cluster elaborates the structural dimension of teshuvah. A merge into Package 4 is recommended if a bechina edge can be established between 'המ\"ט שערי תשובה' and 'תשובה'."
+      ],
+      "source_bechinot": []
+    },
+    {
+      "id": 7,
+      "torah_ref": 107,
+      "label": "שַׁעַר הַחֲמִשִּׁים — תְּשׁוּבַת הַשֵּׁם יִתְבָּרַךְ",
+      "label_en": "The Fiftieth Gate — God's Own Repentance",
+      "polarity": "good",
+      "reason": "This three-node cluster from section 1073 identifies the 50th day of the Omer (Shavuot / Matan Torah) as a bechina of the 50th gate — which is the gate of God's own teshuvah (as it were): 'shuvu elai va'ashuva aleikhem' (Malachi 3). The descent of God onto Sinai ('vayered Hashem al Har Sinai') is the bechina of God's own teshuvah toward Israel. This is a structurally distinct and theologically elevated concept, separate from the 49-gate structure of Package 6 and from the individual teshuvah of Package 4. Dominant node: שער החמשים.",
+      "dominant_node": "שער החמשים",
+      "nodes": [
+        "שער החמשים",
+        "יום החמשים",
+        "תשובה של השם יתברך בעצמו"
+      ],
+      "node_degrees": {
+        "שער החמשים": 1,
+        "יום החמשים": 2,
+        "תשובה של השם יתברך בעצמו": 1
+      },
+      "merge_notes": [
+        "PROPOSED MERGE INTO PACKAGE 6: Packages 6 and 7 together form the complete structure of the 50 gates — the 49 accessible gates (Package 6) and the transcendent 50th gate (Package 7). They should logically be merged into one 'שערי תשובה' package. No bechina edge currently links them in the dataset, but thematically they are one teaching."
+      ],
+      "source_bechinot": []
+    },
+    {
+      "id": 8,
+      "torah_ref": 107,
+      "label": "מִצְרַיִם וּתְשׁוּבָה עִלָּאָה",
+      "label_en": "Egypt and Supreme Repentance",
+      "polarity": "neutral",
+      "reason": "This three-node cluster from section 1073 identifies Egypt (Mitzrayim) with the constriction of the throat (meitzar hagaron), and this constriction is a bechina of teshuvah ila'ah (the highest/supreme level of repentance). Egypt is the place where the twelve tribes were purified — it is both the place of constriction and the crucible of supreme return. The cluster is marked 'neutral' because Egypt as a geographic/historical entity is neutral — it is the site of both oppression and purification, serving as the context for the most elevated repentance. The dominant node is מצרים.",
+      "dominant_node": "מצרים",
+      "nodes": [
+        "מצרים",
+        "מצר הגרון",
+        "תשובה עלאה"
+      ],
+      "node_degrees": {
+        "מצרים": 2,
+        "מצר הגרון": 1,
+        "תשובה עלאה": 1
+      },
+      "merge_notes": [
+        "PROPOSED MERGE INTO PACKAGE 4: The concept of teshuvah ila'ah is a variant/sub-type of teshuvah, and the Egypt-purification motif feeds directly into the 49-gates structure (the purification in Egypt was what enabled the 49 days of counting). A merge into the teshuvah mega-cluster (Package 4) is recommended."
+      ],
+      "source_bechinot": []
+    },
+    {
+      "id": 9,
+      "torah_ref": 107,
+      "label": "פּוּרִים וּפֶסַח — מָרְדְּכַי וְאֶסְתֵּר",
+      "label_en": "Purim and Passover — Mordechai and Esther",
+      "polarity": "good",
+      "reason": "This package consolidates three small 1074 bechina clusters that all belong to the same Purim-Passover teaching. The three mini-clusters are: (a) Mordechai ↔ cheirus (freedom) / cheirus shel Pesach; (b) Shoshanah ↔ Esther; (c) Shiftotav ↔ Pesach. In the source text (section 1074), these all appear in a single teaching about how Purim leads to Pesach and how the verse from Shir HaShirim 'siftatav shoshanim notfot mor over' contains all three: siftatav = peh sach = Pesach; shoshanah = Esther; notfot mor over = Mordechai = mar deror = cheirus of Pesach. The three separate bechina chains are thematically one teaching and should be one package. The dominant node is מרדכי (most connected across the teaching).",
+      "dominant_node": "מרדכי",
+      "nodes": [
+        "מרדכי",
+        "חרות",
+        "חרות של פסח",
+        "שושנה",
+        "אסתר",
+        "שפתותיו",
+        "פסח"
+      ],
+      "node_degrees": {
+        "מרדכי": 2,
+        "חרות": 1,
+        "חרות של פסח": 1,
+        "שושנה": 1,
+        "אסתר": 1,
+        "שפתותיו": 1,
+        "פסח": 1
+      },
+      "merge_notes": [
+        "Three separate 2–3 node clusters from section 1074 consolidated into one package based on shared thematic content and shared source context (all from same proof text).",
+        "Note: 'חרות' and 'חרות של פסח' are very likely aliases of the same concept and should be considered for node deduplication."
+      ],
+      "source_bechinot": []
+    },
+    {
+      "id": 10,
+      "torah_ref": 107,
+      "label": "עֲשָׂרָה מַאֲמָרוֹת וְאֶרֶץ יִשְׂרָאֵל",
+      "label_en": "The Ten Divine Utterances and the Land of Israel",
+      "polarity": "good",
+      "reason": "This four-node cluster from section 1078 connects the Ten Divine Utterances (asarah ma'amarot, the ten statements by which the world was created — Genesis) with the sustaining of the world before the Torah was given (kiyvum ha'olam kodem matan Torah) as a bechina of matnat chinam (gift of grace, which is how Moses asked to enter the Land). The Land of Israel's ten degrees of holiness (asarah kedushut) are also identified as a bechina of the ten utterances. The teaching is about accessing Eretz Yisrael through grace/gift (chinam) — the power of the pre-Torah era of free divine gift. This cluster is compact and internally coherent, representing the domain of creation-speech and the sanctity of the Land. Dominant node: עשרה מאמרות.",
+      "dominant_node": "עשרה מאמרות",
+      "nodes": [
+        "עשרה מאמרות",
+        "קיום העולם קדם מתן־תורה",
+        "מתנת חנם",
+        "ארץ ישראל בעצמה יש בה גם כן בחינת עשר קדשות"
+      ],
+      "node_degrees": {
+        "עשרה מאמרות": 2,
+        "קיום העולם קדם מתן־תורה": 2,
+        "מתנת חנם": 1,
+        "ארץ ישראל בעצמה יש בה גם כן בחינת עשר קדשות": 1
+      },
+      "merge_notes": [],
+      "source_bechinot": []
+    }
+  ],
+  "good_evil_mirror_structure": {
+    "present": true,
+    "description": "The primary good/evil mirror in Torah #107 is between Package 1 (מחין של ארץ ישראל / holy consciousness / נועם) and Package 3 (מחין של חוץ לארץ / consciousness of exile / חובלים). The same dimension of consciousness — mochin — appears in its holy form (bringing pleasantness, beautiful Torah, the true leader) and in its deficient/damaging form (bringing damagers, birth pangs, exile suffering). Packages 4–10 are entirely in the positive domain.",
+    "good_packages": [1, 2, 4, 5, 6, 7, 9, 10],
+    "evil_packages": [3],
+    "neutral_packages": [8],
+    "mirror_pairs": [
+      {"good": "מחין של ארץ ישראל", "evil": "מחין של חוץ לארץ"},
+      {"good": "נועם (pleasantness)", "evil": "חובלים (damagers)"},
+      {"good": "הולדה בנועם (pleasant birth via Shifra)", "evil": "חבלי לדה (painful birth pangs)"},
+      {"good": "מחין (holy consciousness)", "evil_dynamic": "מחין הנשתלשל לסטרא אחרא (consciousness that slides to the evil side — referenced in 1077 context)"}
+    ]
+  },
+  "stats": {
+    "total_bechina_edges_in_dataset": 85,
+    "total_nodes": 98,
+    "total_packages": 10,
+    "raw_connected_components_before_merge": 12,
+    "large_components": 2,
+    "small_components_merged": 3,
+    "source_text_lines": 5,
+    "source_text_bechina_pairs_from_text": 0,
+    "note": "The source text (torah_107.txt) contains no explicit bechina language — it is a pure eitza teaching. All 10 packages are derived entirely from the dataset's bechina edges across sections 1071–1079."
+  }
+}

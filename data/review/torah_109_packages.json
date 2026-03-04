@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "source": "Torah #109 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #109 has exactly ONE bechina edge in the dataset (id 1795): נה והאנחה ↔ מיתה בגוף ונפש. This yields a single 2-node connected component. The remaining 4 edges for this Torah are all eitza type. The Torah's content is much richer in bechina language than the dataset captures — the source text contains at least 3 additional explicit bechina pairs not yet in the dataset. The single dataset package below is supplemented by source-text-derived packages in the gap analysis. The Torah's teaching: the breath-vapor (הבל) of sighing IS the rope (חבל) that connects the soul to its root — for good or evil. The sigh IS a mini-death (מיתה) that severs one connection and establishes another. Two structural rope-domains (קדושה / טומאה) form a classic good/evil mirror."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 109,
+      "label": "נֹּהַּ וְהָאֲנָחָה — הָאֲנָחָה כְּמִיתָה",
+      "label_en": "The Sigh as Death — Groaning and the Death-Process",
+      "polarity": "neutral",
+      "reason": "This 2-node component is the only connected component in the bechina subgraph for Torah #109. The Rebbe establishes an explicit bechina: 'הַנֹּהַּ וְהָאֲנָחָה הוּא בְּחִינַת מִיתָה בְּגוּף וָנֶפֶשׁ' — the groaning and sighing IS a bechina of death in body and soul. The shared essential nature is the process of vital-force gathering and then releasing/expiring. The Rebbe supports this from Berakhot 58b ('a sigh breaks a person's body') for the bodily dimension, and from Tehillim 104:29 ('when You gather their spirit, they expire') for the soul dimension. Polarity is neutral because this death-process operates in BOTH directions: sighing over sins leads to dying away from evil and attaching to holiness; sighing over good leads to dying away from holiness and attaching to impurity. The sigh-as-death is the mechanism that can go either way — it is the pivot of the entire Torah. The node with greatest centrality-to-teaching is נה והאנחה (groaning and sighing), which is the active agent; מיתה בגוף ונפש describes its essential nature.",
+      "dominant_node": "נה והאנחה",
+      "nodes": [
+        "נה והאנחה",
+        "מיתה בגוף ונפש"
+      ],
+      "node_degrees": {
+        "נה והאנחה": 1,
+        "מיתה בגוף ונפש": 1
+      },
+      "dataset_edge": {
+        "edge_id": 1795,
+        "node1_id": "נה והאנחה",
+        "node2_id": "מיתה בגוף ונפש",
+        "node1_text": "נֹּהַּ וְהָאֲנָחָה",
+        "node2_text": "מִיתָה בְּגוּף וָנֶפֶשׁ",
+        "bechina_marker": "הוּא בְּחִינַת"
+      },
+      "merge_notes": [
+        "This 2-node component is the only component in the dataset. The source-text gap analysis (see additions file) reveals two additional bechina clusters: (1) הבל / חבל הנשמה / תוסף רוחם — the breath as a soul-connecting rope; (2) חבל דקדשה / חבל דטמאה — the two opposing rope-domains. These would constitute Package 2 (good) and Package 3 (evil) respectively. See torah_109_additions.json and torah_109_new_packages.json."
+      ],
+      "source_bechinot": [
+        {
+          "pair": ["נה והאנחה", "מיתה בגוף ונפש"],
+          "source_quote": "הַנֹּהַּ וְהָאֲנָחָה הוּא בְּחִינַת מִיתָה בְּגוּף וָנֶפֶשׁ",
+          "bechina_marker": "הוּא בְּחִינַת"
+        }
+      ],
+      "good_evil_mirror": {
+        "note": "This neutral package sits at the center of the Torah's good/evil mirror. The 'death' enacted by the sigh can sever connection to evil (→ good outcome) or sever connection to good (→ evil outcome). The sigh itself is the pivot, not polarized. The two rope-clusters (חבל דקדשה / חבל דטמאה) ARE the polar mirror — see gap analysis."
+      }
+    }
+  ],
+  "good_evil_mirror_structure": {
+    "present": true,
+    "description": "Torah #109 has a clean binary good/evil mirror, but it is expressed through the TWO ROPE domains rather than through the single dataset-captured bechina. The soul is always connected to exactly one of two ropes: חבל דקדושה (the holy rope) or חבל דטומאה (the impurity rope). These two ropes are the exact structural mirror. The sigh (Package 1, neutral) is the mechanism of switching: one sigh severs connection to one rope and establishes connection to the other. The Torah's argument is: the penitent sinner's sigh severs him from the evil rope and attaches him to the holy rope; the righteous person's mournful sigh over his past good can (Heaven forbid) sever him from the holy rope and attach him to the evil rope.",
+    "good_packages": ["חבל דקדושה cluster — see gap analysis"],
+    "evil_packages": ["חבל דטומאה cluster — see gap analysis"],
+    "neutral_packages": [1],
+    "mirror_pairs": [
+      {"good": "חבל דקדושה", "evil": "חבל דטומאה"},
+      {"good": "מקשר עצמו בחבל דקדשה (via holy sigh)", "evil": "מקשר עצמו בחבל דטמאה (via impure sigh)"},
+      {"good": "נגוע ונאסף מן הרע ונדבק אל הקדשה", "evil": "נגוע ונאסף רוחו דקדשה ונדבק אל הטמאה"}
+    ]
+  },
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "total_eitza_edges_in_dataset": 4,
+    "note": "The dataset captures only 1 of at least 4 bechina pairs present in the source text. Torah #109 requires significant bechina enrichment. The core conceptual structure involves 3 natural packages (neutral sigh-mechanism, good rope-domain, evil rope-domain) but only the sigh-mechanism pair is represented in the dataset."
+  }
+}

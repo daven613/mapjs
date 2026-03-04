@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "source": "Torah #126 (Likutay Moharan Vol. 1)",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04",
+    "decision": "NO_NEW_PACKAGES"
+  },
+  "determination": "NO_NEW_PACKAGES",
+  "reasoning": "Torah #126 has zero bechina edges in the dataset and a source text of only 4 lines containing one bechina statement. The gap analysis (torah_126_additions.json) identifies five new nodes and two to three new bechina edges, all of which belong to the single package proposed in torah_126_packages.json (Package 1: נֶפֶשׁ יְתֵרָה וַהֲסְתַּלְּקוּת הַצַּדִּיק). No second or third cluster of 3+ bechina-connected concepts was found that forms an independent thematic domain separate from the Nefesh Yeteirah / Tzaddik-departure cluster. The teaching is structurally a single-domain extended analogy — everything in the source text is an aspect of the one bechina equation between Shabbat-departure grief and Tzaddik-departure grief. No independent domain of 3+ concepts with its own structural identity emerges.",
+  "new_packages": [],
+  "structural_note": {
+    "torah_type": "single_domain_structural_analogy",
+    "description": "Torah #126 is a single-extended-analogy teaching. Its entire argument is: the Chavrayya's grief at Rabbi Shimon's impending departure IS structurally identical to Motzaei Shabbat grief over the Nefesh Yeteirah. The teaching does not develop multiple thematic domains — it develops one structural insight from two angles (Shabbat angle in line 2, Chavrayya angle in line 3). The final line (line 4) is a meta-observation about Zoharic narrative pattern (praise → more Torah), not a new conceptual domain. One package, one bechina equation, one structural insight.",
+    "good_evil_mirror": "Torah #126 has no good/evil mirror structure. The entire teaching is in the domain of holiness and spiritual longing — there is no evil counterforce or demonic opposition mentioned or implied. The polarity of the single package is 'neutral' because the teaching is a structural phenomenological observation rather than a normative spiritual prescription. The Nefesh Yeteirah, the Tzaddik (Rabbi Shimon bar Yochai), and the experience of spiritual delight and longing are all aspects of holiness, but the teaching's point is structural/descriptive, making 'neutral' the most accurate polarity label.",
+    "why_no_new_package_for_line_4": "Line 4 observes that in every Zoharic passage where the Chavrayya praised Rabbi Shimon, he went on to teach more Torah novellas. This is a textual/narrative observation about the Zohar's compositional pattern. It does not establish bechina equations between concepts, does not introduce new conceptual nodes, and does not constitute an independent thematic domain. It is explanatory context for why the sequence 'praise → more Torah' repeats throughout the Zohar — Rabbi Shimon was moved by the praise and responded with further revelation. No bechina language appears in line 4. Therefore, no new package is generated from it.",
+    "dataset_enrichment_priority": "HIGH — Torah #126 is entirely absent from torahData.js. The addition of the five nodes and bechina edges identified in torah_126_additions.json is a prerequisite for any graph-traversal or analysis involving this Torah. Without these edges, Torah #126 is an isolated island with no connections in the graph."
+  }
+}

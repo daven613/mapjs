@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "source": "Torah #141",
+    "volume": "Likutay Moharan Vol. 1",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #141 has ZERO bechina edges in torahData.js for reference 141. All 5 dataset edges (IDs: 1416, 1417, 1418, 1945, 2085) are of type 'eitza'. The Torah is very brief (7 lines) and structured almost entirely as a causal chain (eitza). Package formation therefore proceeds from source-text analysis only — identifying which concepts share the same essential nature (bechina) versus which are cause-and-effect steps (eitza). The source text contains ONE explicit bechina-language statement: Elul (אֱלוּל) is the acronym / aspect of 'אֶת לְבָבְךָ וְאֶת לְבַב' — establishing a named equivalence between the month and the divine act of circumcising hearts. The main conceptual landscape divides into two thematic clusters: (1) the circumcised-heart / repentance cluster — the heart that has been opened, the pain of sin, genuine regret; (2) the scattered-seed / soul-fragments cluster — the טיפות (drops), their hearts, their existence as children or as demonic beings in Sheol. Edge 2085 (נמול לבב אביהם ↔ נמול לבבם) is classified as 'eitza' in the dataset, but its content appears to express a parallel/identity relationship (when the father's heart is circumcised, the children's hearts ARE circumcised — same act, same quality). This may warrant reclassification to 'bechina' in a future dataset pass. For now it is treated as the dataset records it."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 141,
+      "label": "מִילַת הַלֵּב וְהַחֲרָטָה",
+      "label_en": "Circumcision of the Heart and Repentance",
+      "polarity": "good",
+      "reason": "The core positive teaching of Torah #141 is that a person must circumcise the foreskin of his heart (מִילַת עָרְלַת הַלֵּב), creating an opening (חָלָל בַּלֵּב) through which he can genuinely feel the pain of his sins (כְּאֵב חֲטָאָיו) and arrive at true regret (חֲרָטָה אֲמִתִּית). These are not three separate causal steps but three aspects of the same reality: the opened heart IS the capacity to feel genuine pain IS the state of true teshuvah. The Torah makes this explicit: the blocked/sealed heart (לֵב עָרֵל וְאָטוּם) prevents genuine feeling, and the moment it is opened/circumcised, pain, awareness, and regret all arrive together. In the framework's terms: feeling pain, having the heart opening, and being in a state of genuine contrition are expressions of the same essential quality — the heart that has been made receptive to divine truth. The dominant concept is מִילַת הַלֵּב (circumcision of the heart), which is the term that unifies all the others. The verse anchor (Deuteronomy 30:6) 'וּמָל ה' אֶת לְבָבְךָ' names this act in its divine form. The month of Elul (אֱלוּל) is the bechina of this circumcision — the text explicitly states its acronym maps to 'אֶת לְבָבְךָ וְאֶת לְבַב', making Elul and the divine circumcision of hearts the same essential concept in the domain of time. Package is good/holy: circumcising the heart is the positive spiritual act of teshuvah, oriented toward God.",
+      "dominant_node": "מִילַת הַלֵּב",
+      "nodes": [
+        "כשימול את ערלת לבבו, ויהיה לו חלל בלב",
+        "ירגיש לבבו באמת גדל כאבו, ויצטער ויתחרט באמת",
+        "כשימול את לבבו, וירגיש לבבו גדל כאבו, ויתחיל להצטער ולהתחרט באמת",
+        "נמול לבב אביהם",
+        "אלול"
+      ],
+      "node_degrees": {
+        "כשימול את ערלת לבבו, ויהיה לו חלל בלב": 1,
+        "ירגיש לבבו באמת גדל כאבו, ויצטער ויתחרט באמת": 2,
+        "כשימול את לבבו, וירגיש לבבו גדל כאבו, ויתחיל להצטער ולהתחרט באמת": 1,
+        "נמול לבב אביהם": 2,
+        "אלול": 0
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": [
+            "כשימול את ערלת לבבו, ויהיה לו חלל בלב",
+            "ירגיש לבבו באמת גדל כאבו, ויצטער ויתחרט באמת",
+            "כשימול את לבבו, וירגיש לבבו גדל כאבו, ויתחיל להצטער ולהתחרט באמת",
+            "נמול לבב אביהם"
+          ],
+          "reason": "These four dataset nodes (from eitza edges 1416, 1417, 1418, 1945, 2085) all describe the same essential spiritual state: the heart that has been opened through circumcision and is therefore capable of genuine repentance. While their dataset connections are eitza (causal), they share the same essential nature — they are all aspects of מִילַת הַלֵּב / תְּשׁוּבָה אֲמִתִּית. 'כשימול את ערלת לבבו ויהיה לו חלל בלב' (the act of circumcising the heart-foreskin, creating the hollow) is a bechina of 'ירגיש לבבו באמת גדל כאבו ויצטער ויתחרט באמת' (the resulting state of genuine pain and regret) — they describe the same moment of spiritual opening from two angles: the action and the inner experience. The near-duplicate node 'כשימול את לבבו וירגיש לבבו גדל כאבו ויתחיל להצטער ולהתחרט באמת' is effectively the same concept as the first node (opening the heart) fused with the second node (the resulting pain) — it is a compound statement of the same reality. 'נמול לבב אביהם' (the father's heart was circumcised) is the same act as 'כשימול את ערלת לבבו' — it is the same circumcision of the heart viewed from the children's perspective. All share the SAME NATURE. Merge is by shared-nature (bechina), not cause-and-effect."
+        },
+        {
+          "merged_nodes": ["אלול"],
+          "reason": "The month of Elul is introduced via an explicit bechina-equivalence: 'אֱלוּל רָאשֵׁי תֵּבוֹת: אֶת לְבָבְךָ וְאֶת לְבַב' — the acronym equation identifies Elul AS the time-aspect of divine heart-circumcision. This is a bechina in the classical sense: Elul and the divine act of circumcising hearts are the same essential reality expressed through the dimension of time. The month of Elul IS the bechina of 'וּמָל ה' אֶת לְבָבְךָ וְאֶת לְבַב זַרְעֲךָ'. Elul is not a cause-and-effect intermediary; it IS the temporal vessel of the same spiritual quality. It belongs in Package 1 alongside the other heart-circumcision concepts."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 141,
+      "label": "לְבָבוֹת הַטִּפּוֹת וְהַנְּשָׁמוֹת הַנִּדָּחוֹת",
+      "label_en": "Hearts of the Scattered Drops and the Estranged Souls",
+      "polarity": "evil",
+      "reason": "Torah #141 describes a second class of entities: the 'drops' (טִפּוֹת) emitted by the man in sin. These drops have hearts (לְבָבוֹת) and other organs. They exist in two forms: (a) children born in the normal way (בָּנָיו מִמִּין בְּנֵי אָדָם), and (b) demonic beings who went to impure places (לְמָקוֹם אַחֵר חַ\"ו) and now dwell in filth in Sheol (שְׁאוֹל תַּחְתִּית). The teaching explicitly says the latter initially think they are doing well, because they are 'מַזִּיקֵי עָלְמָא' (destroyers of the world). When the man's heart is circumcised, their hearts too are circumcised, and they realize their true state and begin to lament. When the man dies, they follow his bier and mourn — but this is a source of shame and disgrace to him, not honor. The dominant concept of this cluster is the טִפּוֹת and their hearts (לְבָבוֹת הַטִּפּוֹת) — the soul-fragments scattered into impurity. These are not simply a neutral object; the teaching frames them as the evil dimension of sin's aftermath: they are demonic, they damage the world (מַזִּיקֵי עָלְמָא), they dwell in the place of filth. The polarity is evil: they represent the spiritual children of sin, the side-effect of uncircumcised-heart living, dwelling in the realm of impurity. The node 'מרגישין היכן הם, ומתחילין לקונן ולהצטער, ונעשה שם רעש גדול ביניהם' and 'נמול לבבם' represent the moment when these evil/impure soul-fragments come to recognize their true state — a transitional moment that is the mirror-result of the good act in Package 1. They are the evil mirror of Package 1: just as there is a good circumcision of the heart (Package 1), there is a mirrored circumcision of the hearts of these scattered soul-fragments in the evil realm (Package 2). Same structural act, opposite polarity. The text uses explicit 'כַּנַּ\"ל' (as above) to link the two circumcisions symmetrically.",
+      "dominant_node": "לְבָבוֹת הַטִּפּוֹת",
+      "nodes": [
+        "ירגישו גם כל הלבבות של כל הטפות שנמשכו ממנו, ולכל מקום שנמשכו, ירגישו שם במקום שהם, הן אותם שנמשכו ממנו ונתהוו מהם בניו ממין בני אדם, והן אותם שנמשכו ממנו למקום אחר חס ושלום",
+        "ירגישו שם כל הלבבות של הטפות, ויתודע להם האמת איך הם מוטלים במקום טנופות בשאול תחתית",
+        "מרגישין היכן הם, ומתחילין לקונן ולהצטער, ונעשה שם רעש גדול ביניהם",
+        "נמול לבבם"
+      ],
+      "node_degrees": {
+        "ירגישו גם כל הלבבות של כל הטפות שנמשכו ממנו, ולכל מקום שנמשכו, ירגישו שם במקום שהם, הן אותם שנמשכו ממנו ונתהוו מהם בניו ממין בני אדם, והן אותם שנמשכו ממנו למקום אחר חס ושלום": 2,
+        "ירגישו שם כל הלבבות של הטפות, ויתודע להם האמת איך הם מוטלים במקום טנופות בשאול תחתית": 0,
+        "מרגישין היכן הם, ומתחילין לקונן ולהצטער, ונעשה שם רעש גדול ביניהם": 1,
+        "נמול לבבם": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": [
+            "ירגישו גם כל הלבבות של כל הטפות שנמשכו ממנו, ולכל מקום שנמשכו, ירגישו שם במקום שהם, הן אותם שנמשכו ממנו ונתהוו מהם בניו ממין בני אדם, והן אותם שנמשכו ממנו למקום אחר חס ושלום",
+            "ירגישו שם כל הלבבות של הטפות, ויתודע להם האמת איך הם מוטלים במקום טנופות בשאול תחתית",
+            "מרגישין היכן הם, ומתחילין לקונן ולהצטער, ונעשה שם רעש גדול ביניהם",
+            "נמול לבבם"
+          ],
+          "reason": "These four concepts are all aspects of the same thing: the scattered soul-fragments (the 'hearts' of the drops) and their spiritual state. They are not a causal chain but different angles on the same reality. 'All the hearts of the drops that were drawn from him' (the entity), 'they become aware of the truth of how they lie in filth in Sheol' (what that entity knows), 'they begin to lament and cry' (what that entity does when awakened), and 'their hearts were circumcised' (the same act, in the passive form — the structural twin of 'נמול לבב אביהם' in Package 1) — all share the essential nature of 'the soul-fragments of sin awakening to their true station'. These are bechina-compatible on shared nature: they all describe what it means to be one of these scattered entities."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_reference_141_edges": 5,
+    "total_reference_141_bechina_edges": 0,
+    "total_reference_141_eitza_edges": 5,
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_from_source_text": 1,
+    "total_nodes": 9,
+    "total_packages": 2,
+    "good_packages": 1,
+    "evil_packages": 1,
+    "neutral_packages": 0,
+    "evil_mirror_present": true,
+    "evil_mirror_notes": "Torah #141 has a precise good/evil mirror structure. Package 1 (מִילַת הַלֵּב וְהַחֲרָטָה) is the positive domain: the man's circumcised heart, his genuine regret, his teshuvah, the month of Elul as the special time for this. Package 2 (לְבָבוֹת הַטִּפּוֹת) is the evil mirror: the soul-fragments produced by sin, dwelling in Sheol, who are 'מַזִּיקֵי עָלְמָא' (destroyers of the world). The Torah's eitza chain flows from Package 1 → produces the awakening of Package 2. The structural symmetry is explicit in the verse: 'וּמָל ה' אֶת לְבָבְךָ' (your heart — Package 1) 'וְאֶת לְבַב זַרְעֲךָ' (the heart of your seed — Package 2). The word 'כַּנַּ\"ל' (as above) is used three times to establish the parallel between the two circumcisions. This is a classic Rebbe Nachman mirror structure: the same act (מִילַת הַלֵּב) operates in the holy domain (Package 1) and its effects ripple into the evil/sin domain (Package 2), transforming even the demonic soul-fragments.",
+    "note_on_edge_2085": "Edge 2085 (נמול לבב אביהם ↔ נמול לבבם, classified as 'eitza' in the dataset) may warrant reclassification as 'bechina'. The two nodes express the same act — circumcising the father's heart IS circumcising the children's hearts. The verse 'וּמָל ה' אֶת לְבָבְךָ וְאֶת לְבַב זַרְעֲךָ' frames them as a single divine act, not a sequential causation. This should be reviewed in a future dataset-correction pass.",
+    "dataset_encoding_status": "PARTIALLY_ENCODED — Torah #141 has 5 edges in torahData.js, all classified as eitza. The bechina layer of the teaching (the Elul acronym, the parallel structure of the two circumcisions) is not yet captured as bechina edges. Package formation relies primarily on source-text analysis."
+  }
+}

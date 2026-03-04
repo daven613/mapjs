@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "source": "Torah #119 — Likutay Moharan Volume 1",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_119_packages.json, all reference===119 edges from torahData.js, and the full source text torah_119.txt. Scanned for explicit bechina language (בְּחִינַת, בְּחִינוֹת, הַיְנוּ בְּחִינַת, נִקְרָא, הוּא בְּחִינַת) and implicit structural equations. Verified whether identified concepts appear in the dataset with a reference===119 bechina edge."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "שַׁבָּת וְדַעַת",
+      "node_id": "כסילות",
+      "node_text": "כְּסִילוּת",
+      "polarity": "evil",
+      "reason": "The Rebbe states: 'כִּי כַּעַס, שֶׁהִיא הֶפֶךְ הָרַחֲמָנוּת, הוּא מֵחֲמַת כְּסִילוּת, כְּמוֹ שֶׁכָּתוּב: כַּעַס בְּחֵיק כְּסִילִים יָנוּחַ' (Kohelet 7:9). The structure is: anger = foolishness, compassion = daas. This means כְּסִילוּת (foolishness) is the negative pole of דַּעַת in this Torah — it is the anti-daas, the state of weekdays without Shabbat-light. While this is stated primarily through a verse citation rather than an explicit 'X הוא בחינת Y', the verse-proof 'כַּעַס בְּחֵיק כְּסִילִים יָנוּחַ' establishes כְּסִילוּת as the domain of anger and the absence of daas. In Torah #119's framework, the two poles are: Shabbat/daas/compassion (good) vs. weekday-folly/anger/no-compassion (evil). כְּסִילוּת is the bechina node of that evil pole. It belongs in Package 1 as the evil mirror of דַּעַת within the same package — though it has the opposite polarity, it is the explicit counterpart concept named by the Torah for daas.",
+      "source_quote": "כִּי כַּעַס, שֶׁהִיא הֶפֶךְ הָרַחֲמָנוּת, הוּא מֵחֲמַת כְּסִילוּת, כְּמוֹ שֶׁכָּתוּב (קֹהֶלֶת ז׳:ט׳): כַּעַס בְּחֵיק כְּסִילִים יָנוּחַ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "כסילות",
+        "node2_id": "כעס",
+        "type": "bechina",
+        "reference": 119,
+        "proof": "כִּי כַּעַס, שֶׁהִיא הֶפֶךְ הָרַחֲמָנוּת, הוּא מֵחֲמַת כְּסִילוּת, כְּמוֹ שֶׁכָּתוּב: כַּעַס בְּחֵיק כְּסִילִים יָנוּחַ"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "שַׁבָּת וְדַעַת",
+      "node_id": "כעס",
+      "node_text": "כַּעַס",
+      "polarity": "evil",
+      "reason": "The Rebbe explicitly names כַּעַס as 'הֶפֶךְ הָרַחֲמָנוּת' — the direct opposite of compassion. Compassion is the fruit of daas (Shabbat). Therefore anger is the fruit of the absence of daas — i.e., the fruit of כְּסִילוּת (foolishness). In this Torah's binary structure, כַּעַס is the evil counterpart to רַחֲמָנוּת and the behavioral marker of those without daas. The verse 'כַּעַס בְּחֵיק כְּסִילִים יָנוּחַ' establishes the bechina: anger = foolishness = anti-daas. This node forms a bechina pair with כְּסִילוּת and together they represent the negative pole of Torah #119's conceptual axis.",
+      "source_quote": "כִּי כַּעַס, שֶׁהִיא הֶפֶךְ הָרַחֲמָנוּת, הוּא מֵחֲמַת כְּסִילוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "כעס",
+        "node2_id": "כסילות",
+        "type": "bechina",
+        "reference": 119,
+        "proof": "כִּי כַּעַס, שֶׁהִיא הֶפֶךְ הָרַחֲמָנוּת, הוּא מֵחֲמַת כְּסִילוּת, כְּמוֹ שֶׁכָּתוּב: כַּעַס בְּחֵיק כְּסִילִים יָנוּחַ"
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_119_edges": 6,
+    "total_reference_119_bechina_edges": 1,
+    "total_reference_119_eitza_edges": 5,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["שבת", "דעת"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["כסילות", "כעס"],
+    "note_on_eitza_nodes": "The nodes שיהיה לו רחמים על אחרים, מרחמין עליו, and רחמנות appear only in eitza edges for reference 119 and have no bechina edges in this Torah. They are not package members per the framework rule that packages are built on bechina edges only. They are part of the eitza chain that flows FROM Package 1 (שבת/דעת) as practical consequences.",
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "ימות החול / שטוטא (weekdays / folly)",
+        "reason": "The text says 'כָּל יְמוֹת הַחֹל כְּתִיב שָׁטוּ הָעָם וְלָקְטוּ – בִּשְׁטוּתָא' — the Zohar reads the weekday wandering as foolishness. This is contextual/midrashic commentary, not a formal בְּחִינַת declaration for ימות החול as a standalone concept. The בְּחִינַת language applies to שַׁבָּת = דַּעַת, not to a separate 'weekdays = folly' equation."
+      },
+      {
+        "concept": "יְכוֹלָה הִיא שֶׁתְּרַחֵם (the Shabbat visitor's formula)",
+        "reason": "This Talmudic phrase (Shabbat 12a) is the starting point of the Torah's derash — the Rebbe is explaining what this phrase means, not using it as a bechina node. It is a biblical/rabbinic text being unpacked, not a concept being equated to another concept via bechina."
+      },
+      {
+        "concept": "חוֹלֶה / sick person",
+        "reason": "The sick person (חוֹלֶה) appears in the framing story but is not the subject of a bechina equation. The teaching uses the visitor-to-the-sick scenario as a vehicle to explain the daas-compassion nexus. No explicit בְּחִינַת language equates חוֹלֶה to another concept in this Torah."
+      }
+    ]
+  }
+}
