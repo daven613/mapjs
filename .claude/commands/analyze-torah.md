@@ -5,33 +5,70 @@ Analyze a Torah from Likutay Moharan to identify its thematic concept packages (
 ## Argument format
 
 `$ARGUMENTS` is either:
-- A plain number (e.g. `42`) → **Likutay Moharan Volume 1 (LM1)**
-- A prefixed number (e.g. `lm2/42`) → **Likutay Moharan Tinyana Volume 2 (LM2)**
+- A plain number (e.g. `42`) → **Likutay Moharan Volume 1 (LM1)**, single torah
+- A prefixed number (e.g. `lm2/42`) → **Likutay Moharan Tinyana Volume 2 (LM2)**, single torah
+- `batch` → **Batch mode**: find all remaining (not yet analyzed) torahs across both volumes and process them using 5 parallel agents
 
 Parse the argument at the start:
+- If `$ARGUMENTS` is `batch`, enter **Batch Mode** (see below)
 - If `$ARGUMENTS` starts with `lm2/`, set **VOLUME = lm2** and **NUM = the number after the slash**
 - Otherwise, set **VOLUME = lm1** and **NUM = $ARGUMENTS**
 
 All path and filename references below use VOLUME and NUM.
 
+---
+
+## Batch Mode
+
+When `$ARGUMENTS` is `batch`:
+
+### Step 1 — Determine remaining torahs
+
+1. Read `/home/user/mapjs/data/review/analysis_progress.json` to get the list of completed LM1 torahs
+2. Read `/home/user/mapjs/data/review/lm2_analysis_progress.json` (if it exists) to get the list of completed LM2 torahs
+3. List all torah source text files in `/home/user/mapjs/data/torah_texts/lm1/` and `/home/user/mapjs/data/torah_texts/lm2/` to determine the full set of torahs
+4. Compute the remaining (not yet completed) torahs = all source texts minus completed ones
+
+If no torahs remain, report that all torahs are complete and stop.
+
+### Step 2 — Split into 5 batches and spawn agents
+
+1. Divide the remaining torahs into **5 roughly equal batches**
+2. Spawn **5 parallel agents** using the Agent tool (subagent_type: `general-purpose`), one per batch
+3. Each agent's prompt must include:
+   - The full text of the "What you are doing" section
+   - The full text of the "Algorithm" section (Steps 1–6)
+   - The full text of the "Output files" section (all three JSON schemas)
+   - The full text of the "Quality checks before writing" section
+   - The full text of the "Notes" section
+   - Instructions to read `/home/user/mapjs/docs/framework.md` first
+   - The specific list of torahs to process (e.g. "Process these torahs: lm2/1, lm2/2, lm2/3, ...")
+   - Instructions to process each torah sequentially within its batch, writing all 3 output files per torah before moving to the next
+
+4. After all 5 agents complete, report a summary of what was processed
+
+**Do NOT proceed to single-torah mode below when in batch mode.**
+
+---
+
 ## What you are doing
 
 You are a researcher analyzing a specific Torah from Likutay Moharan (Rebbe Nachman of Breslov). Your job is to identify the **concept packages** — thematic clusters of concepts connected by bechina (parallel/shared-nature) relationships.
 
-Read `/Users/shmuel/dev/mapjs/docs/framework.md` first for the full conceptual framework before doing anything else.
+Read `/home/user/mapjs/docs/framework.md` first for the full conceptual framework before doing anything else.
 
 ## Input files
 
-- **Edge data**: `/Users/shmuel/dev/mapjs/data/torahData.js`
+- **Edge data**: `/home/user/mapjs/data/torahData.js`
   - Filter: `reference === NUM` AND `type === 'bechina'` AND `volume === 'VOLUME'` (if volume field exists) — or just `reference === NUM` AND `type === 'bechina'` if no volume field
   - Each edge has: `id`, `node1_id`, `node2_id`, `node1_text`, `node2_text`, `proof`, `is_good`, `is_bad`
-- **Torah source text**: `/Users/shmuel/dev/mapjs/data/torah_texts/VOLUME/torah_NUM.txt`
+- **Torah source text**: `/home/user/mapjs/data/torah_texts/VOLUME/torah_NUM.txt`
   - Read the full text to understand the Torah's argument and themes
 
 ## Output directory
 
-- **LM1**: `/Users/shmuel/dev/mapjs/data/review/`
-- **LM2**: `/Users/shmuel/dev/mapjs/data/review/lm2/`
+- **LM1**: `/home/user/mapjs/data/review/`
+- **LM2**: `/home/user/mapjs/data/review/lm2/`
 
 Create the output directory if it does not exist.
 
