@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "source": "Torah #109 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": 1,
+      "torah_ref": 109,
+      "volume": "lm2",
+      "label": "אֶרֶץ יִשְׂרָאֵל וּקְבוּרַת צַדִּיקִים",
+      "label_en": "Eretz Yisrael and the Burial of Tzaddikim",
+      "polarity": "good",
+      "reason": "The source text contains three bechina-connected concepts forming a coherent domain: (1) the burial place of true tzaddikim IS holy with the holiness of Eretz Yisrael, (2) Eretz Yisrael IS a tikkun for pgam habrit. These three nodes — ארץ ישראל, מקום גניזת הצדיקים, תיקון פגם הברית — form an independent thematic cluster with 3+ concepts connected by shared-nature (bechina) relationships.",
+      "nodes": [
+        "ארץ ישראל",
+        "מקום גניזת הצדיקים",
+        "תיקון פגם הברית"
+      ],
+      "proposed_edges": [
+        {
+          "node1_id": "מקום גניזת הצדיקים",
+          "node2_id": "ארץ ישראל",
+          "type": "bechina",
+          "proof": "שֶׁזּוֹכִין שֶׁמְּקוֹם גְּנִיזָתָם הוּא קָדוֹשׁ בִּקְדֻשַּׁת אֶרֶץ־יִשְׂרָאֵל מַמָּשׁ"
+        },
+        {
+          "node1_id": "ארץ ישראל",
+          "node2_id": "תיקון פגם הברית",
+          "type": "bechina",
+          "proof": "וְאֶרֶץ־יִשְׂרָאֵל הוּא תִּקּוּן גָּדוֹל לִפְגַם הַבְּרִית"
+        }
+      ]
+    }
+  ],
+  "observations": "Torah #109 is a very short teaching (3 lines) with no existing bechina edges in the dataset. However, it contains clear bechina-type identifications: the tzaddik's burial place shares the essential holiness of Eretz Yisrael (not merely causes it — it IS that holiness), and Eretz Yisrael is identified as a tikkun for pgam habrit. The relationship between Eretz Yisrael and tikkun pgam habrit could arguably be eitza (causal: going to Eretz Yisrael causes tikkun), but the language 'הוא תיקון גדול' (it IS a great tikkun) uses the bechina-style identification pattern. This borderline case is flagged for review. No evil mirror is present in this short teaching."
+}

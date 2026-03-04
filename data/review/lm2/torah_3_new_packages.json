@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "source": "Torah #3 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": "proposed_1",
+      "label": "חוֹלָם וְהַמְתָּקָה",
+      "label_en": "Cholam and Sweetening",
+      "polarity": "good",
+      "reason": "The vowel cholam, the three divine YHVH names, sweetening (hamtaka), pidyon nefesh, and the verse 'v'rapo y'rapei' all share the same essential nature: they are the mechanism of sweetening harsh judgment. The Rebbe explicitly uses bechina and gematria language to equate them. Cholam = gematria of three YHVH names; the three YHVH names sweeten the three Elokim; 'v'rapo y'rapei' = gematria of pidyon nefesh. These are all parallel expressions of the redemptive sweetening.",
+      "proposed_nodes": [
+        "חוֹלָם",
+        "הַמְתָּקָה",
+        "שָׁלֹשׁ הֲוָיוֹת",
+        "פִּדְיוֹן נֶפֶשׁ",
+        "\"וְרַפֹּא יְרַפֵּא\""
+      ],
+      "proposed_edges": [
+        { "node1": "חוֹלָם", "node2": "הַמְתָּקָה", "proof": "חוֹלָם הוּא בְּחִינַת הַמְתָּקָה" },
+        { "node1": "חוֹלָם", "node2": "שָׁלֹשׁ הֲוָיוֹת", "proof": "שֶׁחוֹלָם – גִּימַטְרִיָּא שָׁלֹשׁ הֲוָיוֹת" },
+        { "node1": "\"וְרַפֹּא יְרַפֵּא\"", "node2": "פִּדְיוֹן נֶפֶשׁ", "proof": "וְרַפֹּא יְרַפֵּא (עִם שְׁתֵּי הַתֵּבוֹת) מִסְפַּר פִּדְיוֹן נֶפֶשׁ" }
+      ],
+      "mirror": "proposed_2"
+    },
+    {
+      "id": "proposed_2",
+      "label": "צֵירֵי וּרְפוּאוֹת",
+      "label_en": "Tzeirei and Healing",
+      "polarity": "good",
+      "reason": "The vowel tzeirei, the concept of healing (refuot), and the verse about the balm of Gilead (tzo'ri) all share the same essential nature: they are the domain of physical healing that follows the sweetening. The Rebbe explicitly uses bechina language to equate tzeirei with refuot and connects it via shared root (tzeirei/tzo'ri) to the Jeremiah verse.",
+      "proposed_nodes": [
+        "צֵירֵי",
+        "רְפוּאוֹת",
+        "\"הַצֳרִי אֵין בְּגִלְעָד אִם רֹפֵא אֵין שָׁם\""
+      ],
+      "proposed_edges": [
+        { "node1": "צֵירֵי", "node2": "רְפוּאוֹת", "proof": "יְרַפֵּא בְּצֵירֵי... הַיְנוּ בְּחִינַת רְפוּאוֹת" },
+        { "node1": "צֵירֵי", "node2": "\"הַצֳרִי אֵין בְּגִלְעָד\"", "proof": "יְרַפֵּא בְּצֵירֵי, בְּחִינַת (יִרְמְיָהוּ ח׳:כ״ב): הַצֳרִי אֵין בְּגִלְעָד אִם רֹפֵא אֵין שָׁם" }
+      ],
+      "mirror": "proposed_1"
+    }
+  ],
+  "potential_evil_mirror": {
+    "label": "שְׁלֹשָׁה אֱלֹקִים וּמֹחִין דְּקַטְנוּת",
+    "label_en": "Three Elokim and Constricted Consciousness",
+    "polarity": "evil",
+    "reason": "The three Elokim names in the throat are explicitly identified as mochin d'katnut (constricted consciousness) — the state of harsh judgment that must be sweetened. This is the evil/negative mirror to proposed_package_1 (cholam/hamtaka/three YHVH names). However, with only 2 concepts (three Elokim and mochin d'katnut), this does not meet the 3+ node threshold for a standalone package. It would need to be merged into proposed_package_1 as a sub-component or flagged for enrichment.",
+    "proposed_nodes": [
+      "שְׁלֹשָׁה אֱלֹקִים שֶׁבַּגָּרוֹן",
+      "מֹחִין דְּקַטְנוּת"
+    ],
+    "proposed_edges": [
+      { "node1": "שְׁלֹשָׁה אֱלֹקִים שֶׁבַּגָּרוֹן", "node2": "מֹחִין דְּקַטְנוּת", "proof": "שְׁלֹשָׁה אֱלֹקִים שֶׁבַּגָּרוֹן, שֶׁהֵם מֹחִין דְּקַטְנוּת, שֶׁיּוֹרְדִין בַּגָּרוֹן" }
+    ],
+    "status": "below_threshold_needs_enrichment"
+  },
+  "observations": "Torah #3 of LM2 is a short, tightly focused teaching about the relationship between pidyon (spiritual redemption/ransom) and physical healing. The main body (lines 1-8) is a purely causal argument: pidyon sweetens judgment, which opens the window for the doctor to heal — these are all eitza relationships and were correctly captured in the dataset as such. The final section (lines 9-10) shifts into Kabbalistic bechina language, mapping the Torah's argument onto the vowel system: cholam = sweetening (the first step), tzeirei = healing (the second step). This creates a beautiful structural parallel: the word 'v'rapo' (cholam) is the hamtaka step, and 'y'rapei' (tzeirei) is the refuah step — the same two-phase argument encoded in the vowels of a single verse. The dataset currently lacks ALL of these bechina relationships. Once added, two clean packages would emerge: (1) Cholam/Sweetening/Pidyon and (2) Tzeirei/Healing/Refuot, with a potential evil mirror in the Elokim/Katnut cluster that represents the judgment being sweetened. The two good packages relate to each other via eitza: Package 1 (sweetening) ENABLES Package 2 (healing) — exactly mirroring the Torah's core argument. This Torah also exhibits no good/evil mirror in the classical sense (evil package mirroring good) — the teaching is almost entirely about the positive process. The 'negative' element (din/judgment/katnut) is presented as the obstacle being overcome, not as an independent evil domain with its own internal bechina structure."
+}

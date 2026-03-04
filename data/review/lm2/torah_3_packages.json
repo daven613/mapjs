@@ -11,7 +11,7 @@
     "total_bechina_edges": 0,
     "total_nodes": 0,
     "total_packages": 0,
-    "raw_connected_components": 0,
-    "note": "No bechina edges exist in the dataset for Torah #3 (ref 1003). All 5 edges for this Torah are of type 'eitza'. The source text does contain explicit bechina language (lines 9-10) identifying parallel relationships between vowel points and spiritual concepts, but these were not captured in the dataset. See torah_3_additions.json for the missing bechina concepts."
-  }
+    "raw_connected_components": 0
+  },
+  "notes": "Torah #3 of LM2 (reference 1003) contains zero bechina edges in the dataset. All 5 edges in the dataset for this Torah are of type 'eitza' (cause-and-effect), reflecting the Torah's structure as a single linear causal argument: pidyon/hamtaka (sweetening the judgment) enables the doctor to heal. Because packages are built exclusively from bechina edges, no packages can be formed from the existing dataset. However, the source text does contain explicit bechina language in lines 9-10 (see torah_3_additions.json for gap analysis and torah_3_new_packages.json for proposed packages based on these missing bechina concepts). The 9 unique nodes currently in the dataset all participate only in eitza edges and therefore cannot form packages under the bechina-only rule."
 }

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "source": "Torah #109 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 109,
+      "volume": "lm2",
+      "label": "אֶרֶץ יִשְׂרָאֵל וּקְבוּרַת צַדִּיקִים",
+      "label_en": "Eretz Yisrael and the Burial of Tzaddikim",
+      "polarity": "good",
+      "reason": "The torah equates the burial place of true tzaddikim with Eretz Yisrael itself — their grave is holy with the actual holiness of the Land. This is a bechina identification: מקום גניזתם הוא קדוש בקדושת ארץ ישראל ממש. Additionally, Eretz Yisrael is identified as a tikkun for pgam habrit. All concepts cluster around the holiness of Eretz Yisrael as manifested in the tzaddik's resting place.",
+      "dominant_node": "ארץ ישראל",
+      "nodes": [
+        "ארץ ישראל",
+        "מקום גניזת הצדיקים",
+        "תיקון פגם הברית"
+      ],
+      "node_degrees": {
+        "ארץ ישראל": 2,
+        "מקום גניזת הצדיקים": 1,
+        "תיקון פגם הברית": 1
+      },
+      "merge_notes": [
+        "All three concepts form a single connected component via bechina-type identifications in the source text: the tzaddik's burial place IS Eretz Yisrael, and Eretz Yisrael IS tikkun for pgam habrit. No merging of separate components was needed — these naturally form one cluster."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "note": "Zero bechina edges exist in the dataset for this torah. The single package above is proposed based on gap analysis of the source text."
+  }
+}
