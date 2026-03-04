@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "source": "Torah #178",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===178 AND type==='bechina'. Only 1 bechina edge exists in the dataset for Torah #178: נפש ↔ דבור (edge 645). This yields 1 raw connected component of 2 nodes. Because this is a small 2-node component, the algorithm requires checking for a merge target based on SHARED NATURE. However, with only one component in the entire Torah, there is no other component to merge into — the pair stands as its own package. The Torah's teaching is structurally a chain of eitza (cause-and-effect) relationships, with a single bechina identity at its core: the soul IS speech. The simcha cluster and viduy cluster are connected to this core through eitza edges only and do not appear in the bechina dataset for Torah #178."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 178,
+      "label": "נֶּפֶשׁ וְדִבּוּר",
+      "label_en": "The Soul and Speech",
+      "polarity": "good",
+      "reason": "The single bechina of Torah #178 is the identity of nefesh (soul) with dibur (speech): 'וְהַנֶּפֶשׁ הוּא בְּחִינַת הַדִּבּוּר, בִּבְחִינַת נַפְשִׁי יָצְאָה בְדַבְּרוֹ.' This is the theological foundation of the entire Torah: because the soul IS speech, the damage of sin is located in speech, and therefore verbal confession (viduy devarim) is precisely the repair mechanism for the nefesh. Both nodes are expressions of the same spiritual reality — the innermost voice of a person. This is a positive (good) package because the Torah is teaching the path of repair through confession: the nefesh-as-dibur IS the sacred domain that can be restored through holy speech. The nefesh here is not damaged or evil; it is the holy vessel that needs healing, and dibur is the means of that healing because they share the same essential nature.",
+      "dominant_node": "דבור",
+      "nodes": [
+        "נפש",
+        "דבור"
+      ],
+      "node_degrees": {
+        "נפש": 1,
+        "דבור": 1
+      },
+      "merge_notes": [
+        "This is the sole bechina-connected component in Torah #178. No other components exist in the dataset to merge with. The pair is retained as its own standalone package. Per the algorithm, small components (1-2 nodes) are candidates for merging into larger components based on SHARED NATURE — but with no other component present, this pair is Package 1 by default.",
+        "Note: The Torah's broader conceptual structure (simcha, mitzvot, viduy, kol, yichud) operates through eitza (directional cause-and-effect) chains. The simcha cluster and viduy cluster are eitza-connected to the dibur node but do not share a bechina (parallel-nature) relationship with it as represented in the dataset for Torah #178. See torah_178_additions.json for gap analysis."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1
+  }
+}

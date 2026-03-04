@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "source": "Torah #196",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===196 AND type==='bechina'. Torah #196 had zero pre-existing bechina edges in torahData.js. All bechina relationships were extracted directly from the source text (torah_196.txt). The Torah is an extremely short single-paragraph teaching whose content is primarily practical-ethical (eitza). The only explicit bechina identification is the equation of תפלת קבע with גזלה, supported by the Rebbe's explicit philological derivation from Proverbs 22:23. Two raw connected components yielded two packages — one evil (the keva/robbery cluster) and one good (the proper-prayer cluster)."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 196,
+      "label": "תְּפִלַּת קֶבַע וּגְזֵלָה",
+      "label_en": "Fixed Demanded Prayer and Robbery",
+      "polarity": "evil",
+      "reason": "This is the central and only substantive bechina cluster in Torah #196. The Rebbe explicitly equates תפלת קבע (the mode of prayer in which one demands that God must fulfill the request) with גזלה (robbery, taking by force). The equation is stated twice and anchored in a verse: 'אַל תַּעַשֶׂה תְּפִלָּתְךָ קֶבַע, מִלְּשׁוֹן גְּזֵלָה, כְּמוֹ שֶׁכָּתוּב: וְקָבַע אֶת קֹבְעֵיהֶם נָפֶשׁ.' The word קֶבַע is identified as derived from and synonymous with robbery — the act of taking by force what has not been freely given. The additional nodes in this cluster share this same essential nature: לְהִתְעַקֵּשׁ בִּתְפִלָּתוֹ (to be stubborn/insistent in prayer) IS the mode of תפלת קבע — the Rebbe defines them as identical ('שֶׁאָסוּר לְהִתְעַקֵּשׁ בִּתְפִלָּתוֹ... כִּי זֶה הוּא תְּפִלַּת קֶבַע'). לוֹקֵחַ דָּבָר בְּחָזְקָה (taking by force) IS גזלה — both describe the same act of forced acquisition. All four nodes (תפלת קבע, גזלה, להתעקש בתפלתו, לוקח דבר בחזקה) are different formulations of the same sinful spiritual posture: demanding from God rather than supplicating. The dominant node is תפלת קבע because it is the primary concept the teaching revolves around (mentioned three times) and is the node through which the others are defined.",
+      "dominant_node": "תפלת קבע",
+      "nodes": [
+        "תפלת קבע",
+        "גזלה",
+        "להתעקש בתפלתו",
+        "לוקח דבר בחזקה"
+      ],
+      "node_degrees": {
+        "תפלת קבע": 3,
+        "גזלה": 2,
+        "להתעקש בתפלתו": 2,
+        "לוקח דבר בחזקה": 1
+      },
+      "source_quotes": [
+        "כִּי זֶה הוּא כְּמוֹ לוֹקֵחַ דָּבָר בְּחָזְקָה, בִּגְזֵלָה",
+        "אַל תַּעַשֶׂה תְּפִלָּתְךָ קֶבַע, מִלְּשׁוֹן גְּזֵלָה, כְּמוֹ שֶׁכָּתוּב: וְקָבַע אֶת קֹבְעֵיהֶם נָפֶשׁ",
+        "כִּי זֶה הוּא תְּפִלַּת קֶבַע, שֶׁלּוֹקֵחַ הַדָּבָר בְּחָזְקָה, בִּגְזֵלָה"
+      ],
+      "merge_notes": [
+        {
+          "merged_nodes": ["להתעקש בתפלתו", "לוקח דבר בחזקה"],
+          "reason": "These two nodes form the descriptive cluster of תפלת קבע. להתעקש בתפלתו is explicitly defined BY the Rebbe as the meaning of תפלת קבע ('שֶׁאָסוּר לְהִתְעַקֵּשׁ בִּתְפִלָּתוֹ... כִּי זֶה הוּא תְּפִלַּת קֶבַע'). לוקח דבר בחזקה is the metaphorical description of what גזלה is. The four-node cluster represents one unified domain: the sinful posture of demanding prayer. They share the same essential nature — not a cause-effect chain — and merge per the shared-nature rule."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 196,
+      "label": "תְּפִלָּה בְּרַחֲמִים וְתַחֲנוּנִים",
+      "label_en": "Prayer with Mercy and Supplication",
+      "polarity": "good",
+      "reason": "This is the good counterpart cluster — the proper mode of prayer that the Torah prescribes. The Rebbe states explicitly: 'רַק צָרִיךְ לְהִתְפַּלֵּל וּלְהִתְחַנֵּן לִפְנֵי הַשֵּׁם יִתְבָּרַךְ בְּרַחֲמִים וְתַחֲנוּנִים.' תפלה (prayer) in its proper mode IS רחמים ותחנונים (mercy and supplication) — both are expressions of the same spiritual posture: approaching God as a petitioner who accepts the outcome either way, not as a creditor who demands repayment. The two nodes are joined in direct bechina: the opening Mishnah quote itself frames them as the positive definition of prayer (אֶלָּא רַחֲמִים וְתַחֲנוּנִים). This is the structural mirror of Package 1: where Package 1 is the evil posture of prayer (forced/demanded), Package 2 is the holy posture of prayer (merciful/supplicating). The same concept תפלה appears in both packages as the common element — this is the classic Good/Evil mirror structure where the same concept (prayer) can be oriented either toward holiness (Package 2) or toward the evil posture (Package 1, as תפלת קבע).",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תפלה",
+        "רחמים ותחנונים"
+      ],
+      "node_degrees": {
+        "תפלה": 2,
+        "רחמים ותחנונים": 1
+      },
+      "source_quotes": [
+        "אַל תַּעַשֶׂה תְּפִלָּתְךָ קֶבַע, אֶלָּא רַחֲמִים וְתַחֲנוּנִים",
+        "רַק צָרִיךְ לְהִתְפַּלֵּל וּלְהִתְחַנֵּן לִפְנֵי הַשֵּׁם יִתְבָּרַךְ בְּרַחֲמִים וְתַחֲנוּנִים"
+      ],
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 4,
+    "total_nodes": 6,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 2,
+    "note_on_structure": "Torah #196 is the shortest Torah in LM Vol. 1 — a single paragraph with one central bechina equation (תפלת קבע = גזלה) and a brief positive counterpart (תפלה = רחמים ותחנונים). The teaching's argument is predominantly eitza (ethical-practical instruction) rather than bechina (parallel-nature identification). The two packages reflect the classic Good/Evil mirror: Package 2 (good prayer / merciful supplication) mirrors Package 1 (evil prayer / robbery-by-demand). The same concept 'prayer' (תפלה) is oriented in both directions — as proper supplication in Package 2 and as demanding robbery in Package 1 (תפלת קבע). The polarity split is sharp and explicit in the text.",
+    "note_on_no_existing_edges": "Zero bechina edges existed in torahData.js for reference===196 prior to this analysis. All four proposed bechina edges are derived from source text analysis and should be added to the dataset."
+  },
+  "proposed_new_bechina_edges": [
+    {
+      "node1_id": "תפלת קבע",
+      "node2_id": "גזלה",
+      "node1_text": "תְּפִלַּת קֶבַע",
+      "node2_text": "גְּזֵלָה",
+      "proof": "אַל תַּעַשֶׂה תְּפִלָּתְךָ קֶבַע, מִלְּשׁוֹן גְּזֵלָה, כְּמוֹ שֶׁכָּתוּב (מִשְׁלֵי כ\"ב:כ\"ג): וְקָבַע אֶת קֹבְעֵיהֶם נָפֶשׁ",
+      "reference": 196,
+      "type": "bechina"
+    },
+    {
+      "node1_id": "תפלת קבע",
+      "node2_id": "להתעקש בתפלתו",
+      "node1_text": "תְּפִלַּת קֶבַע",
+      "node2_text": "לְהִתְעַקֵּשׁ בִּתְפִלָּתוֹ",
+      "proof": "שֶׁאָסוּר לְהִתְעַקֵּשׁ בִּתְפִלָּתוֹ שֶׁהַקָּדוֹשׁ בָּרוּךְ הוּא יַעֲשֶׂה לוֹ דַּוְקָא אֶת בַּקָּשָׁתוֹ... כִּי זֶה הוּא תְּפִלַּת קֶבַע",
+      "reference": 196,
+      "type": "bechina"
+    },
+    {
+      "node1_id": "גזלה",
+      "node2_id": "לוקח דבר בחזקה",
+      "node1_text": "גְּזֵלָה",
+      "node2_text": "לוֹקֵחַ דָּבָר בְּחָזְקָה",
+      "proof": "כִּי זֶה הוּא כְּמוֹ לוֹקֵחַ דָּבָר בְּחָזְקָה, בִּגְזֵלָה",
+      "reference": 196,
+      "type": "bechina"
+    },
+    {
+      "node1_id": "תפלה",
+      "node2_id": "רחמים ותחנונים",
+      "node1_text": "תְּפִלָּה",
+      "node2_text": "רַחֲמִים וְתַחֲנוּנִים",
+      "proof": "אַל תַּעַשֶׂה תְּפִלָּתְךָ קֶבַע, אֶלָּא רַחֲמִים וְתַחֲנוּנִים... רַק צָרִיךְ לְהִתְפַּלֵּל וּלְהִתְחַנֵּן לִפְנֵי הַשֵּׁם יִתְבָּרַךְ בְּרַחֲמִים וְתַחֲנוּנִים",
+      "reference": 196,
+      "type": "bechina"
+    }
+  ]
+}

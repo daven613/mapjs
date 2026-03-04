@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "source": "Torah #198",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "צְעָקָה / צוֹעֵק (tze'akah / tzo'ek — crying out to God; the initiating spiritual act described in the teaching: 'when one cries out to Hashem Yitbarach')",
+      "נְסִיעָה / לִסַּע / וְיִסָּעוּ (nesi'ah / lissa / ve-yissa'u — traveling, moving forward; the response given to one who cries out; drawn from the verse in Exodus 14:15 where God tells Moshe 'speak to Israel and let them travel')"
+    ],
+    "gap_explanation": "Torah #198 has no bechina edges in torahData.js. The source text is a single sentence presenting one eitza relationship: when one cries out (צועק) to God, they are told to travel/move (ליסע). The proof-verse is Exodus 14:15 ('מַה תִּצְעַק אֵלַי, דַּבֵּר אֶל בְּנֵי יִשְׂרָאֵל וְיִסָּעוּ'). The two concepts that appear in the text — צְעָקָה (crying out) and נְסִיעָה (traveling/moving) — are related by eitza, not bechina. The teaching does not declare them to be the same thing or parallel aspects of a shared essence. Rather, one (prayer/crying) produces or elicits the other (instruction to move/act). Therefore, even if these two nodes were added to the dataset, they would be eitza edges, not bechina edges, and would not contribute to any package formation. There are no missing bechina relationships in this Torah — the absence of bechina edges in the dataset accurately reflects the absence of bechina language in the source text.",
+    "source_text_summary": "Torah #198 is a single-sentence teaching. When a person cries out (צועק) to God, they are told to travel/move forward (ליסע). The proof-verse is Exodus 14:15, the scene at the Red Sea: God responds to Moshe's prayer by saying 'Why do you cry out to Me? Speak to the Children of Israel and let them travel.' The teaching's spiritual insight is that the appropriate divine response to prayer at a moment of crisis is not a supernatural miracle but action — the person in need is directed to move forward. The entire teaching is a single eitza statement (crying out → being told to move) with no bechina relationships expressed."
+  }
+}

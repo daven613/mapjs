@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "source": "Torah #160",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_160_packages.json, all reference===160 edges from torahData.js (none exist — the Torah is unentered), and the full source text torah_160.txt. Since the dataset contains zero edges for this Torah, the entire gap analysis consists of concepts present in the source text with explicit bechina language ('בְּחִינַת', 'כְּפִי... כֵּן') that need to be entered as new edges. For each bechina statement in the source text, the nodes and proposed edge are documented. Eitza (causal) statements are noted but not included as bechina gap edges."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "הַדֶּפֶק הַקָּדוֹשׁ וְקוֹל דּוֹדִי",
+      "node_id": "\"קול דודי דופק\"",
+      "node_text": "\"קוֹל דּוֹדִי דּוֹפֵק\"",
+      "polarity": "good",
+      "reason": "The Torah explicitly states: 'הַדֶּפֶק דּוֹפֵק וְנוֹקֵשׁ בָּאָדָם... בִּבְחִינַת (שיר השירים ה׳:ב׳): קוֹל דּוֹדִי דּוֹפֵק'. This is textbook bechina language — the pulse is an ASPECT OF (בְּחִינַת) the voice of the Beloved. This edge has not been entered into the dataset. The proposed edge is: הדפק ↔ \"קול דודי דופק\" (bechina, reference=160, good). The 'קול דודי דופק' concept is the spiritual identity of the holy pulse — the verse from Song of Songs 5:2 serves as the proof-text demonstrating what the pulse IS at its essential nature when oriented toward divine service.",
+      "source_quote": "הַדֶּפֶק דּוֹפֵק וְנוֹקֵשׁ בָּאָדָם. לִפְעָמִים הוּא נוֹקֵשׁ בָּאָדָם וּמַזְכִּיר אוֹתוֹ לַעֲבוֹדַת הַשֵּׁם יִתְבָּרַךְ, בִּבְחִינַת (שיר השירים ה׳:ב׳): קוֹל דּוֹדִי דּוֹפֵק",
+      "proposed_edge": {
+        "node1_id": "הדפק",
+        "node2_id": "\"קול דודי דופק\"",
+        "node1_text": "הַדֶּפֶק",
+        "node2_text": "\"קוֹל דּוֹדִי דּוֹפֵק\"",
+        "type": "bechina",
+        "reference": 160,
+        "is_good": true,
+        "is_bad": null
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "הַדִּבּוּר הַקָּדוֹשׁ וְהַנְּשִׁימָה",
+      "node_id": "דיבור",
+      "node_text": "דִּבּוּר",
+      "polarity": "good",
+      "reason": "The Torah states 'כְּפִי הַדִּבּוּר, כֵּן נַעֲשֶׂה הַדֶּפֶק, אִם לְטוֹב אוֹ לְהֶפֶךְ'. The phrase 'כְּפִי... כֵּן' (according to X, so is Y) is bechina language — it establishes that the quality of the speech and the quality of the pulse are co-essential: they are the same spiritual orientation expressed at two levels. The proposed edge is: דיבור ↔ הדפק (bechina, reference=160). This edge captures the Torah's core teaching: speech and pulse share the same essential nature. The בְּחִינַת relationship is between דיבור and the character/quality of the pulse — not a causal production but a mutual reflection. Note: while 'כְּפִי... כֵּן' is slightly weaker bechina language than explicit 'הוּא בְחִינַת', in Rebbe Nachman's idiom this expression of qualitative mirroring constitutes a bechina equivalence (both are expressions of the same spiritual orientation) rather than an eitza cause-effect.",
+      "source_quote": "וּכְפִי הַדִּבּוּר, כֵּן נַעֲשֶׂה הַדֶּפֶק, אִם לְטוֹב אוֹ לְהֶפֶךְ",
+      "proposed_edge": {
+        "node1_id": "דיבור",
+        "node2_id": "הדפק",
+        "node1_text": "דִּבּוּר",
+        "node2_text": "הַדֶּפֶק",
+        "type": "bechina",
+        "reference": 160,
+        "is_good": null,
+        "is_bad": null
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "eitza_statements_noted_not_entered_as_bechina": [
+    {
+      "statement": "הַדֹּפֶק בָּא מִן הַנְּשִׁימָה",
+      "type": "eitza",
+      "reason": "The pulse COMES FROM the breath — this is a causal statement (בָּא מִן = comes from), not a bechina equivalence. נשימה and דפק are not two faces of the same thing; the breath produces the pulse. This should be entered as an eitza edge in the dataset, not a bechina. Included in additions as eitza_proposed_edge for completeness."
+    },
+    {
+      "statement": "הַנְּשִׁימָה בָּא מִן הָאֲוִיר עַל־יְדֵי הַדִּבּוּר",
+      "type": "eitza",
+      "reason": "The breath comes from air via speech — again causal language (בָּא מִן = comes from; עַל־יְדֵי = through/by means of). These are eitza relationships. נשימה ← אויר ← דיבור is a causal chain, not a set of bechina identities. Should be entered as eitza edges."
+    }
+  ],
+  "eitza_proposed_edges": [
+    {
+      "node1_id": "נשימה",
+      "node2_id": "הדפק",
+      "node1_text": "נְשִׁימָה",
+      "node2_text": "הַדֶּפֶק",
+      "type": "eitza",
+      "reference": 160,
+      "direction": "נשימה → הדפק",
+      "proof": "הַדֹּפֶק בָּא מִן הַנְּשִׁימָה"
+    },
+    {
+      "node1_id": "אויר",
+      "node2_id": "נשימה",
+      "node1_text": "אֲוִיר",
+      "node2_text": "נְשִׁימָה",
+      "type": "eitza",
+      "reference": 160,
+      "direction": "אויר → נשימה",
+      "proof": "הַנְּשִׁימָה בָּא מִן הָאֲוִיר עַל־יְדֵי הַדִּבּוּר"
+    },
+    {
+      "node1_id": "דיבור",
+      "node2_id": "אויר",
+      "node1_text": "דִּבּוּר",
+      "node2_text": "אֲוִיר",
+      "type": "eitza",
+      "reference": 160,
+      "direction": "דיבור → אויר",
+      "proof": "הַנְּשִׁימָה בָּא מִן הָאֲוִיר עַל־יְדֵי הַדִּבּוּר"
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_160_edges_in_dataset": 0,
+    "total_reference_160_bechina_edges_in_dataset": 0,
+    "total_reference_160_eitza_edges_in_dataset": 0,
+    "bechina_statements_in_source_text": 2,
+    "eitza_statements_in_source_text": 3,
+    "new_bechina_edges_needed": 2,
+    "new_eitza_edges_needed": 3,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["הדפק", "\"קול דודי דופק\""],
+      "package_2": ["דיבור", "נשימה", "אויר"],
+      "package_3": ["דפק המזכיר לעברה"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "הדפק",
+      "\"קול דודי דופק\"",
+      "דיבור",
+      "נשימה",
+      "אויר"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "עבודת השם",
+        "reason": "The phrase 'עֲבוֹדַת הַשֵּׁם יִתְבָּרַךְ' is the purpose/destination to which the holy pulse reminds the person — an eitza endpoint, not a bechina-paired concept. It is not stated as 'הדפק הוא בחינת עבודת השם'. The Torah says the pulse REMINDS the person OF divine service; this is cause-and-effect (the pulse produces the reminder), not shared nature."
+      },
+      {
+        "concept": "עברה",
+        "reason": "Similarly, 'לַעֲבֵרָה' (sin) is what the evil pulse reminds of — an eitza destination in the evil domain. The evil pulse leads TO sin-awareness; it is not stated as 'הדפק הוא בחינת עברה'. Excluded from bechina packages. The package for the evil-oriented pulse (Package 3) captures the concept of the pulse-in-evil-orientation without needing 'עברה' itself as a bechina node."
+      },
+      {
+        "concept": "קול דודי נוקש",
+        "reason": "The text uses both 'דּוֹפֵק' (knocking) and references the verse 'קוֹל דּוֹדִי דּוֹפֵק'. The 'נוֹקֵשׁ' (beats/knocks) in the opening is descriptive language for the pulse's action, not a separate bechina concept. It is subsumed into the הדפק node itself."
+      }
+    ],
+    "note_on_torah_160_status": "Torah #160 is completely unentered in torahData.js. The source text (torah_160.txt) is only 2 lines long, containing one explicit bechina statement ('בִּבְחִינַת קוֹל דּוֹדִי דּוֹפֵק') and one implied bechina-quality statement ('כְּפִי הַדִּבּוּר כֵּן נַעֲשֶׂה הַדֶּפֶק'). The full dataset entry would require 2 bechina edges and 3 eitza edges. This is one of the briefest Torahs in Likutay Moharan Volume 1."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "source": "Torah #158",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #158 has ZERO edges in torahData.js (reference 158 does not appear in the dataset — status: in_progress). Packages are therefore derived entirely from bechina-language statements in the source text torah_158.txt. The Torah is a brief, 5-line teaching built on a single sustained analogy (כמו כן) between a physical fire-from-vapors phenomenon and the temporary hitlahavut of the heart. The text is incomplete — it ends mid-sentence at line 5 with a colon, suggesting an unrecorded continuation that would have described the positive (holy-sourced) hitlahavut. Two connected components are identified: (A) the fire/enthusiasm cluster — the physical and spiritual expressions of temporary burning; (B) the vapors/regrets cluster — the negative source-material (regrets of the wicked) that fuel the false fire. These two components are kept as separate packages because their relationship is causal (eitza: vapors → fire; charatot → hitlahavut), not a shared nature. A third package (genuine hitlahavut from a holy source) is implied by line 5 but cannot be constructed from the truncated text."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 158,
+      "label": "אֵשׁ בּוֹעֵרֶת וְהִתְלַהֲבוּת הַלֵּב",
+      "label_en": "Burning Fire and Heart-Enthusiasm",
+      "polarity": "neutral",
+      "reason": "This package captures the core bechina of Torah #158: the physical fire seen burning from afar (אֵשׁ בּוֹעֵרֶת מֵרָחוֹק) IS the bechina of the sudden burning of the heart toward God (הִתְלַהֲבוּת הַלֵּב לְהַשֵּׁם יִתְבָּרַךְ). The 'כְּמוֹ כֵן' construction in line 3 is the Torah's explicit bechina declaration: 'Likewise, there are many people whose heart suddenly burns toward God' — the likeness is not merely illustrative; Rebbe Nachman is identifying the two phenomena as sharing the same essential nature (parallel expressions of the same reality: sudden ignition, temporary burning, eventual extinction). The defining shared quality is their transience: just as the physical fire burns 'לְפִי שָׁעָה' (for a short while) and then extinguishes, the hitlahavut lasts 'חֲצִי יוֹם אוֹ אֵיזֶה יָמִים אוֹ אֵיזֶה שָׁבוּעוֹת' but not permanently. Both have the character of appearing to be real fire but being without lasting substance — seen from afar they look like genuine fire, but approached closely there is nothing there. This is a crucial two-faced bechina: one face is physical (natural phenomenon), one face is spiritual (religious emotion). The polarity is NEUTRAL because the hitlahavut toward God is not itself evil — burning toward God is always positive in principle. What is neutral here is that this particular hitlahavut is described as a natural, sourceable phenomenon: it comes and goes without the person's own spiritual work being its cause. The physical fire is obviously a neutral natural phenomenon. Neither face of this bechina belongs to the evil domain; both belong to the domain of neutral phenomena that can serve as metaphors or vehicles for either holy or unholy processes.",
+      "dominant_node": "התלהבות הלב",
+      "nodes": [
+        "אש בוערת",
+        "התלהבות הלב"
+      ],
+      "node_degrees": {
+        "התלהבות הלב": 2,
+        "אש בוערת": 2
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 158,
+      "label": "אֵדִים וְחֲרָטוֹת הָרְשָׁעִים",
+      "label_en": "Vapors and the Regrets of the Wicked",
+      "polarity": "evil",
+      "reason": "This package captures the second bechina cluster of Torah #158: the vapors (אֵדִים) rising from the earth ARE the bechina of the regrets (חֲרָטוֹת) of the wicked rising and gathering. The structural parallelism is explicit and precise: (a) both rise upward from below ('עוֹלִים' in line 2; the source is 'מֵרְשָׁעִים' in line 4); (b) both 'gather together' — the Torah uses the identical verb מִתְקַבְּצִים for both phenomena (line 2: 'נִתְקַבְּצִים זֶה עִם זֶה'; line 4: 'הַחֲרָטוֹת מִתְקַבְּצִים'); (c) both carry a specific igniting-power — the vapors have 'כֹּחַ שֶׁל גָּפְרִית' (sulfur-power) while the charatot have the power to suddenly ignite the heart ('מֵאֵלּוּ הַחֲרָטוֹת נִבְעָר לִבּוֹ פִּתְאֹם'). The 'כֹּחַ שֶׁל גָּפְרִית' (sulfur-power) is included in this package as the describing quality of the aiding — it is the igniting-potential inherent in the vapors, parallel to the charata's power to ignite. The wicked themselves (רְשָׁעִים מְלֵאִים חֲרָטָה) are included as the source/ground from which the charatot rise, structurally parallel to the earth that emits the vapors. The polarity is EVIL: the source of the false fire is explicitly the wicked (רְשָׁעִים). Their regrets are not genuine teshuva — they are described as a kind of spiritual pollution that wafts off the wicked and randomly ignites others, not through holy means. The Torah is explaining why some hitlahavut is temporary and unreliable: it is powered by charatot from reshaim, which are finite and exhaust themselves. This is the negative side of the teaching.",
+      "dominant_node": "חרטות רשעים",
+      "nodes": [
+        "אידים",
+        "חרטות רשעים",
+        "כח של גפרית",
+        "רשעים מלאים חרטה"
+      ],
+      "node_degrees": {
+        "חרטות רשעים": 3,
+        "אידים": 2,
+        "כח של גפרית": 1,
+        "רשעים מלאים חרטה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["כח של גפרית"],
+          "reason": "כח של גפרית (sulfur-power) is not connected to any other node by its own separate bechina edge, but it is the essential attribute of the אידים that makes them ignite — structurally parallel to the power of charatot to ignite the heart. In the physical description (line 2), the aiding with sulfur-power are what gather and then fall and ignite. In the spiritual parallel (line 4), the charatot have the power to suddenly ignite the heart. כח של גפרית is the igniting-potential of the vapors, structurally a component of the aiding-cluster. It belongs here by shared nature: it is a sub-aspect of the אידים (the specific quality that makes the vapors dangerous/igniting), not a separate causal step. Merge is by SHARED NATURE within the vapors cluster, not by cause-effect."
+        },
+        {
+          "merged_nodes": ["רשעים מלאים חרטה"],
+          "reason": "רְשָׁעִים מְלֵאִים חֲרָטָה (wicked people full of regret) is the source from which charatot emerge — structurally the earth/ground that produces the vapors in the physical metaphor. In the Torah's structure, the wicked (reshaim) are the equivalent of the earth/ground, and their charatot are the vapors. The wicked filled with regret share the same essential nature as the charatot: they ARE the charatot-generating entity. This is not a cause-effect relationship (the wicked don't cause the charatot — they ARE the source ground from which charatot arise). Merge is by shared nature: wicked-full-of-regret and regrets-of-the-wicked are two descriptions of the same node, not two separate concepts."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes_in_dataset_bechina": 0,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "gap_nodes_identified_from_source_text": ["אש בוערת", "התלהבות הלב", "אידים", "חרטות רשעים", "כח של גפרית", "רשעים מלאים חרטה"],
+    "note_on_zero_edges": "Torah #158 has no dataset edges because it has not yet been encoded. All package structure is derived from source text bechina-language analysis. The two packages correspond to the Torah's sustained analogy: Package 1 is the phenomenon (fire/hitlahavut), Package 2 is the source (vapors/charatot). They are separated because their connection is causal (eitza: source produces fire), not a shared nature (bechina: would require them to be the same thing).",
+    "note_on_truncation": "The source text (torah_158.txt) ends at line 5 mid-sentence with a colon, suggesting an unrecorded continuation. Line 5 opens: 'However, not all people are equal in this, because there are people for whom the hitlahavut does not come from these regrets, but from another place:' — the positive teaching about genuine hitlahavut from a holy source was not recorded. This missing content would logically form a third package (good polarity: genuine hitlahavut from kedushah, its holy source, and its permanent nature). See torah_158_new_packages.json for analysis of the implied positive domain.",
+    "good_evil_mirror": "Package 1 (אש/hitlahavut) is structurally neutral — it is the phenomenon that can be sourced from either evil (Package 2) or good (the implied unrecorded positive teaching). Package 2 (aiding/charatot/reshaim) is the evil source. The missing positive teaching would represent genuine hitlahavut from a holy source — the good mirror of Package 2's false fuel."
+  }
+}

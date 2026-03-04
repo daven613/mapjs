@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "source": "Torah #249",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": 1,
+      "torah_ref": 249,
+      "label": "גְּבוּרָה וְלֵב",
+      "label_en": "Strength and the Heart",
+      "polarity": "good",
+      "reason": "This package is 'new' in the strong sense — Torah 249 has no entries at all in torahData.js, so every package here is a first-time proposal. The source text contains 3 explicit bechina equalities connecting gevurah, the heart, conquering the yetzer hara, and Samson's feats into one conceptual domain. These form an independent domain of inner strength/courage that is not reducible to any other Torah's packages.",
+      "proposed_nodes": [
+        {
+          "node_id": "גבורה",
+          "node_text": "גְּבוּרָה",
+          "degree": 3
+        },
+        {
+          "node_id": "לב",
+          "node_text": "לֵב",
+          "degree": 1
+        },
+        {
+          "node_id": "כובש את יצרו",
+          "node_text": "כּוֹבֵשׁ אֶת יִצְרוֹ",
+          "degree": 1
+        },
+        {
+          "node_id": "גבורות שמשון",
+          "node_text": "גְּבוּרוֹת שִׁמְשׁוֹן",
+          "degree": 1
+        }
+      ],
+      "proposed_edges": [
+        {
+          "node1_id": "גבורה",
+          "node2_id": "לב",
+          "proof": "עִקַּר הַגְּבוּרָה – בְּהַלֵּב",
+          "type": "bechina",
+          "reference": 249
+        },
+        {
+          "node1_id": "גבורה",
+          "node2_id": "כובש את יצרו",
+          "proof": "וְזֶה בְּחִינַת (אבות פ\"ד): אֵיזֶהוּ גִּבּוֹר הַכּוֹבֵשׁ אֶת יִצְרוֹ",
+          "type": "bechina",
+          "reference": 249
+        },
+        {
+          "node1_id": "גבורה",
+          "node2_id": "גבורות שמשון",
+          "proof": "וְזֶה בְּחִינַת גְּבוּרוֹת שִׁמְשׁוֹן... דְּהַיְנוּ שֶׁבָּא לוֹ חֹזֶק וְתֹקֶף גְּבוּרָה בַּלֵּב",
+          "type": "bechina",
+          "reference": 249
+        }
+      ]
+    }
+  ],
+  "observations": "Torah 249 is one of the shortest Torahs in Likutay Moharan Volume 1 — just two sentences. It is a pure, concentrated teaching with a single argument and no branching subthemes.\n\nThe entire Torah is built around one concept: גְּבוּרָה (inner strength/courage). The Rebbe makes three bechina equalities:\n1. Gevurah = the heart ('עִקַּר הַגְּבוּרָה בְּהַלֵּב') — the definitional equation establishing that true strength is not physical but cardiac/inner.\n2. Gevurah = conquering one's yetzer hara ('אֵיזֶהוּ גִּבּוֹר הַכּוֹבֵשׁ אֶת יִצְרוֹ') — the Mishnaic definition equating all heroic battle to the inner spiritual battle.\n3. Gevurah = Samson's feats ('גְּבוּרוֹת שִׁמְשׁוֹן') — the biblical exemplar who received this heart-strength from the spirit of God.\n\nThese three equalities form one star-shaped connected component with גבורה at the center (degree 3) and the other three nodes each connected only to it (degree 1).\n\nThe verdict is NEW_PACKAGES_PROPOSED because Torah 249 is completely absent from torahData.js — the entire Torah needs to be encoded from scratch, with 1 package and 3 bechina edges.\n\nNo evil mirror package is warranted. The yetzer hara appears as the object being overcome (the conquered enemy), not as a developed conceptual domain. The Torah is purely positive — a brief teaching on the nature and source of inner courage. There are no evil-polarity bechina chains to form a counter-package.\n\nOne potential eitza connection (not a bechina) exists: רוּחַ ה' → גְּבוּרָה. The spirit of God produces/clothes in gevurah — this is directional cause-effect, not parallel nature. It should be encoded as an eitza edge, not included in Package 1."
+}

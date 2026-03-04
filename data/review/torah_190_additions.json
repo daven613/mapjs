@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "source": "Torah #190",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, scanned all edges in torahData.js for reference===190, and read the full source text torah_190.txt. For each statement in the source text, checked for explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, לְשׁוֹן). Separately checked all concepts mentioned in the text against the dataset to identify unassigned nodes."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "בחירה",
+      "מוכרח",
+      "דיבור ה'",
+      "עב הענן",
+      "קבלת התורה",
+      "ישראל",
+      "משה",
+      "תורה"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "בחירה (free choice)",
+        "reason": "This concept is central to the entire Torah #190 and appears 8+ times. However, the word 'בחירה' in this text is the subject matter being analyzed, not a bechina declaration. The Rebbe never says 'בחירה היא בחינת X' or 'X הוא בחינת הבחירה'. The teaching explains the mechanism by which free choice is preserved or lost — an eitza (causal) argument — not a typological parallel. Note: the concept 'בחירה' does exist in the dataset under other Torahs (e.g., reference=51: טהרה ↔ בחירה; reference=19: בחירה ↔ נגה), but those are edges for different Torahs, not Torah #190."
+      },
+      {
+        "concept": "מוכרח (being compelled / having no choice)",
+        "reason": "The Rebbe uses 'מוכרחים במעשינו' (we are compelled in our actions) as Israel's argument. This describes a state of having no free choice when God speaks directly. It is part of the logical argument, not a bechina equivalence. No bechina language surrounds it."
+      },
+      {
+        "concept": "דיבור ה' (God's speech / the Divine word)",
+        "reason": "The teaching analyzes whether the fact that God's word went forth obligates action and therefore removes free choice. This is a causal argument (eitza): divine speech → compulsion → loss of בחירה. No bechina language is used."
+      },
+      {
+        "concept": "עב הענן (the thick cloud)",
+        "reason": "Quoted from Exodus 19 as the medium through which God spoke to Moshe ('הנה אנכי בא אליך בעב הענן'). The Rebbe uses it narratively as part of the biblical verse citation, not as a typological parallel. No bechina statement is made about the cloud."
+      },
+      {
+        "concept": "קבלת התורה (receiving the Torah)",
+        "reason": "This is the action/event being discussed — Israel and Moshe receiving the Torah. It is an eitza object (the outcome of the three-day preparation), not a bechina equivalence node."
+      },
+      {
+        "concept": "הוספת יום שלישי (adding the third day — Moshe's initiative)",
+        "reason": "The key insight of the Torah is that Moshe added a third day of preparation on his own understanding ('מדעתו'), beyond the two days God commanded, and this act constituted Moshe's free choice. This is an eitza relationship: adding the day → enables receiving the Torah → this IS the expression of Moshe's בחירה. No bechina language."
+      },
+      {
+        "concept": "ישראל / עם ישראל",
+        "reason": "Israel is the actor in the narrative, not a typological concept defined via bechina language. The Rebbe describes their argument and their restored free choice, but does not establish ישראל as a bechina of any other concept in this Torah."
+      },
+      {
+        "concept": "משה",
+        "reason": "Moshe is the central figure of the dialogue — he transmits Israel's claim, negotiates on their behalf, and exercises his own free choice. But he is not defined via bechina language in this Torah. No 'משה הוא בחינת X' statement appears."
+      }
+    ],
+    "structural_observation": "Torah #190 is structurally unusual in the Likutay Moharan corpus. Rather than the typical Rebbe Nachman pattern of typological equivalences (bechina) building a thematic map, this Torah is a tight philosophical-legal argument — a series of questions and answers (שאלות ותשובות) explaining a textual difficulty in Exodus 19. The entire Torah is constructed from eitza (causal) logic: Why did Moshe report Israel's words a second time? → Because their first answer implied compulsion → God solved Israel's problem but not Moshe's → God's response (only 2 days commanded) implicitly solved Moshe's too, by leaving him room to add a day on his own. This eitza-dominant structure means there are no bechina nodes to cluster into packages. The Torah belongs to the 'pilpul/analytical' genre within Likutay Moharan rather than the 'mystical-typological' genre."
+  }
+}

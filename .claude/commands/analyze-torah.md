@@ -1,6 +1,18 @@
 # Analyze Torah Packages
 
-Analyze Torah #$ARGUMENTS to identify its thematic concept packages (חֲבִילוֹת).
+Analyze a Torah from Likutay Moharan to identify its thematic concept packages (חֲבִילוֹת).
+
+## Argument format
+
+`$ARGUMENTS` is either:
+- A plain number (e.g. `42`) → **Likutay Moharan Volume 1 (LM1)**
+- A prefixed number (e.g. `lm2/42`) → **Likutay Moharan Tinyana Volume 2 (LM2)**
+
+Parse the argument at the start:
+- If `$ARGUMENTS` starts with `lm2/`, set **VOLUME = lm2** and **NUM = the number after the slash**
+- Otherwise, set **VOLUME = lm1** and **NUM = $ARGUMENTS**
+
+All path and filename references below use VOLUME and NUM.
 
 ## What you are doing
 
@@ -11,15 +23,22 @@ Read `/Users/shmuel/dev/mapjs/docs/framework.md` first for the full conceptual f
 ## Input files
 
 - **Edge data**: `/Users/shmuel/dev/mapjs/data/torahData.js`
-  - Filter: `reference === $ARGUMENTS` AND `type === 'bechina'`
+  - Filter: `reference === NUM` AND `type === 'bechina'` AND `volume === 'VOLUME'` (if volume field exists) — or just `reference === NUM` AND `type === 'bechina'` if no volume field
   - Each edge has: `id`, `node1_id`, `node2_id`, `node1_text`, `node2_text`, `proof`, `is_good`, `is_bad`
-- **Torah source text**: `/Users/shmuel/dev/mapjs/data/torah_texts/lm1/torah_$ARGUMENTS.txt`
+- **Torah source text**: `/Users/shmuel/dev/mapjs/data/torah_texts/VOLUME/torah_NUM.txt`
   - Read the full text to understand the Torah's argument and themes
+
+## Output directory
+
+- **LM1**: `/Users/shmuel/dev/mapjs/data/review/`
+- **LM2**: `/Users/shmuel/dev/mapjs/data/review/lm2/`
+
+Create the output directory if it does not exist.
 
 ## Algorithm
 
 ### Step 1 — Extract the bechina subgraph
-From `torahData.js`, collect all edges where `reference === $ARGUMENTS` AND `type === 'bechina'`. List every unique node and every edge.
+From `torahData.js`, collect all edges where `reference === NUM` AND `type === 'bechina'`. List every unique node and every edge.
 
 ### Step 2 — Find connected components
 Build an adjacency graph from those edges. Find all connected components (sets of nodes reachable from each other through bechina edges). List each component with its nodes and their degrees (number of bechina edges).
@@ -52,13 +71,14 @@ Ask: are there 3+ concepts connected by explicit bechina language in the source 
 
 ## Output files
 
-Write three JSON files to `/Users/shmuel/dev/mapjs/data/review/`:
+Write three JSON files to the output directory for this volume.
 
-### File 1: `torah_$ARGUMENTS_packages.json`
+### File 1: `torah_NUM_packages.json`
 ```json
 {
   "meta": {
-    "source": "Torah #$ARGUMENTS",
+    "source": "Torah #NUM (Likutay Moharan VOLUME)",
+    "volume": "VOLUME",
     "type": "package_proposals",
     "generated": "YYYY-MM-DD",
     "algorithm": "connected_components_bechina_only"
@@ -66,7 +86,8 @@ Write three JSON files to `/Users/shmuel/dev/mapjs/data/review/`:
   "packages": [
     {
       "id": 1,
-      "torah_ref": $ARGUMENTS,
+      "torah_ref": NUM,
+      "volume": "VOLUME",
       "label": "Hebrew label",
       "label_en": "English label",
       "polarity": "good|evil|neutral",
@@ -91,11 +112,12 @@ Write three JSON files to `/Users/shmuel/dev/mapjs/data/review/`:
 }
 ```
 
-### File 2: `torah_$ARGUMENTS_additions.json`
+### File 2: `torah_NUM_additions.json`
 ```json
 {
   "meta": {
-    "source": "Torah #$ARGUMENTS",
+    "source": "Torah #NUM (Likutay Moharan VOLUME)",
+    "volume": "VOLUME",
     "type": "package_gap_analysis",
     "generated": "YYYY-MM-DD"
   },
@@ -125,11 +147,12 @@ Write three JSON files to `/Users/shmuel/dev/mapjs/data/review/`:
 }
 ```
 
-### File 3: `torah_$ARGUMENTS_new_packages.json`
+### File 3: `torah_NUM_new_packages.json`
 ```json
 {
   "meta": {
-    "source": "Torah #$ARGUMENTS",
+    "source": "Torah #NUM (Likutay Moharan VOLUME)",
+    "volume": "VOLUME",
     "type": "new_package_proposals",
     "generated": "YYYY-MM-DD"
   },
@@ -141,6 +164,7 @@ Write three JSON files to `/Users/shmuel/dev/mapjs/data/review/`:
 
 ## Quality checks before writing
 
+- **Both sides of every edge must be explicitly defined.** Whenever you identify a bechina relationship between A and B, both A and B must be named Hebrew concepts with their own node entries. Whenever you identify an eitza (cause→effect) relationship, both the cause node and the effect node must be named. Never record a half-edge where only one side is specified.
 - Every bechina-connected node in the dataset appears in exactly one package
 - No eitza (cause-effect) connections are used to group nodes into the same package
 - Polarity is assigned to every package
@@ -154,4 +178,4 @@ Write three JSON files to `/Users/shmuel/dev/mapjs/data/review/`:
 - Some edges have `is_bad: 1` which confirms evil polarity for those nodes
 - The `proof` field on each edge contains a direct quote from the source text — use these as primary evidence
 - Package labels should be in Hebrew (with nikud) + English translation
-- If $ARGUMENTS refers to LM Tinyana (volume 2), the text file is at `data/torah_texts/lm2/torah_$ARGUMENTS.txt`
+- Do NOT modify `analysis_progress.json` or `lm2_analysis_progress.json`

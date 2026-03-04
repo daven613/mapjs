@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "source": "Torah #226",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #226 has only one bechina edge in torahData.js (reference === 226). This yields a single two-node connected component. The Torah's full bechina structure — including a substantial evil cluster (Lilit/Erev Rav/corrupted sight) and a neutral/medial melody cluster (Shevet Levi/nigun) — is almost entirely absent from the dataset. See torah_226_additions.json for the full gap analysis and torah_226_new_packages.json for proposed new packages drawn from the source text."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 226,
+      "label": "שַׁבָּת וְתִקּוּן הָרְאוּת",
+      "label_en": "Shabbat and the Complete Repair of Sight",
+      "polarity": "good",
+      "reason": "Shabbat and 'the complete repair of sight' (תִּקּוּן הָרְאוּת בִּשְׁלֵמוּת) are two expressions of the same essential reality: the domain of holy, complete light. The Rebbe states explicitly 'שַׁבָּת שֶׁהוּא בְּחִינַת תִּקּוּן הָרְאוּת בִּשְׁלֵמוּת' — Shabbat IS the complete repair of sight. Both are facets of the same quality: the restoration of vision to its full, uncorrupted state. In the Torah's architecture, this package is the GOOD pole — the counterweight to the corrupted sight (קִלְקוּל הָרְאוּת) that is Lilit's domain. On Shabbat the defective luminaries (מְאֹרֹת חָסֵר, which the text identifies as Lilit) are restored to fullness. The two concepts are symmetric and mutually illuminating: Shabbat is the time when sight is whole; complete sight is what Shabbat embodies.",
+      "dominant_node": "שבת",
+      "nodes": ["שבת", "תקון הראות בשלמות"],
+      "node_degrees": {
+        "שבת": 1,
+        "תקון הראות בשלמות": 1
+      },
+      "merge_notes": [],
+      "evil_mirror": "The evil counterpart of this package is the domain of קִלְקוּל הָרְאוּת (corruption of sight), which includes לִילִית (Lilit), מְאֹרֹת חָסֵר (defectively-spelled luminaries), עֵינֵי לֵאָה רַכּוֹת (the soft eyes of Leah), and נִשְׁמַת עֵרֶב רַב (the souls of the Erev Rav). This evil package is entirely absent from the dataset (see torah_226_additions.json and torah_226_new_packages.json for proposals). The structural mirror: Shabbat = complete light/sight vs. Lilit = defective/corrupted light/sight."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1
+  }
+}

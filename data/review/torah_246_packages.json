@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "source": "Torah #246",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #246 has ZERO bechina edges in torahData.js (references jump from 245 to 247). All packages below are derived entirely from source-text analysis of torah_246.txt. The Torah is a two-paragraph aphorism. The Rebbe makes one central bechina equivalence: גַּדְלוּת (gadlut) IS like תַּעֲנִית (ta'anit) — they share the same essential nature of causing forgetting of previous wisdom. A second bechina-type equivalence exists in the negative: genuine גַּאֲוָה IS becoming a שׁוֹטֶה (fool). These yield two connected components and two packages: one good/neutral (gadlut-as-tool = ta'anit) and one evil (gaavah = shote). No dataset edges exist to build a graph from; all node degrees below are derived from source-text bechina connections, each counted once per explicit parallel-nature statement."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 246,
+      "label": "גַּדְלוּת וְתַעֲנִית",
+      "label_en": "Controlled Greatness and Fasting",
+      "polarity": "good",
+      "reason": "The Torah's central and only explicit bechina equivalence: gadlut (greatness/deliberate pride) IS like a fast ('הוּא מוֹעִיל כְּמוֹ תַּעֲנִית'). These two concepts share the same essential nature — both cause the forgetting of previous wisdom, thereby clearing the mind for a higher comprehension (hashagah). The Rebbe's proof is the story of Rabbi Zeira who fasted to forget the Babylonian Talmud so he could ascend to Torat Eretz Yisrael. Both gadlut and ta'anit produce this same effect: 'כִּי עַל־יְדֵי הַגַּדְלוּת שׁוֹכֵחַ גַּם כֵּן אֶת חָכְמָתוֹ' — through gadlut one also forgets one's wisdom, just as through fasting. They are two expressions of the same spiritual mechanism: voluntary self-emptying of lower wisdom as a gateway to higher attainment. Polarity is 'good' because this form of gadlut is the controlled, intentional kind ('לִבּוֹ בְּדַרְכֵי ה׳' — his heart lifted in the ways of God), used as a sacred technique by one who is also genuinely humble.",
+      "dominant_node": "גדלות",
+      "nodes": [
+        "גדלות",
+        "תענית"
+      ],
+      "node_degrees": {
+        "גדלות": 1,
+        "תענית": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 246,
+      "label": "גַּאֲוָה וְשׁוֹטֶה",
+      "label_en": "Genuine Pride and Foolishness",
+      "polarity": "evil",
+      "reason": "The evil mirror of Package 1. This cluster groups the negative-polarity concepts that share the essential nature of uncontrolled pride resulting in the total loss of wisdom. The Rebbe states: 'וְאִם יִתְגָּאֶה בֶּאֱמֶת, בְּוַדַּאי חָכְמָתוֹ תִּסְתַּלֵּק מִמֶּנּוּ לְגַמְרֵי... וְיִהְיֶה נַעֲשֶׂה שׁוֹטֶה מַמָּשׁ' — if one is genuinely proud, one's wisdom departs completely and one becomes an actual fool. This is a bechina-type statement: genuine gaavah IS foolishness — they are two expressions of the same reality (the one who has lost the divine image). The Talmudic citation (Pesachim 66b) reinforces this: 'כָּל הַמִּתְגָּאֶה חָכְמָתוֹ מִסְתַּלֶּקֶת מִמֶּנּוּ' — pride and the departure of wisdom are inseparable. Gaavah and shote share the same essential nature: both represent the person in whom the divine wisdom has been extinguished. This is the evil mirror of the good package: gadlut (controlled) = ta'anit; gaavah (uncontrolled) = shote. The good version uses the same mechanism redemptively; the evil version is the mechanism run amok.",
+      "dominant_node": "גאוה",
+      "nodes": [
+        "גאוה",
+        "שוטה"
+      ],
+      "node_degrees": {
+        "גאוה": 1,
+        "שוטה": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "note": "All 0 figures reflect the dataset state. The 2 packages and 4 nodes are derived entirely from source-text analysis. No dataset edges exist for Torah #246."
+  }
+}

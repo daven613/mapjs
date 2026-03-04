@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "source": "Torah #163 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===163 AND type==='bechina'. Result: EXACTLY ONE bechina edge in the dataset — edge 3044: דבור ↔ שרה (proof: 'דִּבּוּר הוּא בְּחִינוֹת שָׂרָה'). This yields one raw connected component of 2 nodes. All further package structure is derived from gap analysis of the source text torah_163.txt.\n\nTorah #163 is a teaching about holy speech (דיבור) being captured by the three klipot (impure forces) as it exits a person. The teaching uses the narrative of Sarah being taken into Pharaoh's house (Genesis 12) as its core metaphor: speech IS Sarah, Pharaoh IS the 'back of the neck' (העורף, the same letters rearranged), and the three klipot are the three officers of Pharaoh (the chief baker, chief cupbearer, and chief executioner), who represent bodily desires for eating and drinking, and correspond anatomically to the windpipe (קנה), esophagus (ושט), and blood vessels (ורידין). The teaching is transmitted from Rebbe Nachman but was not written down well according to the Rebbe himself (line 16 — the Rebbe said 'these things were not written down properly'). The appended commentary (lines 16-21) by Reb Nosson identifies the four categories from Psalm 107 ('the four who must give thanks': desert travelers, prisoners, the sick, and seafarers) as all alluding to the soul's tribulations in divine service.\n\nPackage structure: Three packages are identified.\n- Package 1 (good): Holy Speech / Sarah — the דיבור/שרה cluster, which is the dataset's one bechina edge plus its gap-analysis completions\n- Package 2 (evil): The Three Klipot / Pharaoh — the structured evil opposition, with three bechina clusters (klipot = three officers = bodily desires; three officers = anatomical passages; Pharaoh = the back of the neck)\n- Package 3 (evil): The Soul's Exile and Suffering — the cluster of concepts describing the soul scattered, starving, imprisoned, and flung between heights and depths, drawn from Psalm 107 — a four-fold typology of spiritual suffering\n\nNote on Package 2: Although the evil domain here has multiple interlocking bechina pairs, they are all describing THE SAME REALITY from different angles (physical, scriptural, anatomical) — the three klipot that grab speech. This is a single evil package, not multiple. The different bechina equivalences (officers = klipot = desires = anatomy) are all parallel aspects of the same evil cluster.\n\nNote on Package 3: Reb Nosson's commentary (lines 16-21) explicitly states that the four types of 'those who must give thanks' in Psalm 107 ALL refer to the soul's suffering in divine service. This is the application-layer of the teaching. The bechina language used is 'זֶה בְּחִינַת' connecting the soul's condition to specific verses. These concepts form their own cluster because they describe the soul's experiential suffering-typology, distinct from (a) the positive holy speech (Package 1) and (b) the evil klipot-mechanism (Package 2).\n\nGood/evil mirror: Package 1 (holy speech = Sarah) is mirrored by Package 2 (klipot = Pharaoh's household). The same structure — a beautiful woman being seen and seized — plays out in both domains. Package 3 is the consequence of Package 2 prevailing over Package 1: the soul's wandering/exile/sickness/imprisonment/drowning are what happens to the person whose speech falls to the klipot."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 163,
+      "label": "דִּבּוּר הַקָּדוֹשׁ וְשָׂרָה",
+      "label_en": "Holy Speech and Sarah",
+      "polarity": "good",
+      "reason": "Torah #163 opens with the core bechina: speech (דיבור) IS an aspect of Sarah (שרה). The proof-text is line 3: 'וְהַדִּבּוּר הוּא בְּחִינוֹת שָׂרָה' — using the clearest possible bechina formula 'הוּא בְּחִינוֹת'. This is the single bechina edge already in the dataset (edge 3044). The teaching elaborates this identity: just as Sarah was a woman of supreme beauty who drew attention even among the dark Egyptians, holy speech is of extraordinary spiritual beauty that draws the klipot to seize it. The equation is not illustrative — it is ontological: speech IS Sarah. Sarah's name is derived from שׂרר (to rule/govern) — 'שָׂרָה לְאֻמָּתִי' (line 3) means governing/ruling over a nation — and speech likewise governs: 'מוֹשֵׁל בַּדִּבּוּר שֶׁלּוֹ עַל עִיר וּמְדִינָה'. The level of governance varies: some have speech that governs a household, some a city, some the entire world — all are aspects of the same Sarah-identity, scaled to the speaker's stature.\n\nThe bechina relationship is genuine and symmetric: speech IS Sarah, and Sarah IS holy speech. Neither produces the other — they are the same essential reality: the holy ruling-power that resides in words. Polarity is good: Sarah is the matriarch, the Shekhinah accompanies her ('שֶׁהָיָה שְׁכִינָה עִמָּהּ', line 7), and holy speech is the positive domain of this entire Torah. The dominant node is דיבור (speech) because it is the teaching's operative concept — it is what is 'placed and ready to emerge' (line 1), what the klipot try to capture, and what the entire Torah's concern revolves around. שרה is its scriptural/ontological name.",
+      "dominant_node": "דבור",
+      "nodes": [
+        "דבור",
+        "שרה"
+      ],
+      "node_degrees": {
+        "דבור": 1,
+        "שרה": 1
+      },
+      "source_bechina_edge": {
+        "edge_id": 3044,
+        "node1_id": "דבור",
+        "node2_id": "שרה",
+        "proof": "דִּבּוּר הוּא בְּחִינוֹת שָׂרָה",
+        "in_dataset": true
+      },
+      "note": "The dataset contains exactly one bechina edge for Torah #163 (edge 3044), and it is precisely the founding bechina of this Torah — the equation of speech with Sarah. The gap analysis (see torah_163_additions.json) identifies several additional bechina-language statements in the text that elaborate the evil side (Package 2) and the soul-suffering typology (Package 3), but no additional good-domain nodes beyond these two are declared using bechina language. The Shekhinah (שכינה) is mentioned as accompanying Sarah (line 7), but it is referenced as a fact ('שֶׁהָיָה שְׁכִינָה עִמָּהּ'), not stated as 'שרה IS a bechina of the Shekhinah' — it is a co-presence description, not a bechina equivalence. Therefore שכינה is not added as a node here."
+    },
+    {
+      "id": 2,
+      "torah_ref": 163,
+      "label": "הַקְּלִפּוֹת וּפַרְעֹה — תַּאֲוַת אֲכִילָה וְהָעֹרֶף",
+      "label_en": "The Klipot and Pharaoh — The Desire for Eating and the Back of the Neck",
+      "polarity": "evil",
+      "reason": "This package is the evil mirror of Package 1. It captures the klipot-mechanism that tries to seize holy speech. The Torah's genius is to identify the three klipot with the three officers of Pharaoh from Genesis 40 (Pharaoh's chief baker, chief cupbearer, and chief executioner), and to then decode BOTH the abstract spiritual reality AND the physical anatomy in a single interlocking set of bechina equations:\n\n(1) Line 4: 'הַשָּׁלֹשׁ קְלִפּוֹת הֵם שַׂר הָאוֹפִים וְשַׂר הַמַּשְׁקִים וְשַׂר הַטַּבָּחִים, שֶׁהֵם תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה' — the three klipot ARE the three Pharaoh-officers, who ARE food-and-drink desires. Triple bechina identity using 'הֵם' (= they are): klipot = officers = desires.\n\n(2) Line 6: 'הַשְּׁלֹשָׁה שָׂרִים הַנַּ\"ל הֵם קָנֶה וּוֵשֶׁט וּוְרִידִין' — the three officers (= the three klipot) ARE the windpipe (קנה), esophagus (ושט), and blood vessels (ורידין). A second 'הֵם' bechina identity, this time anatomical: the same three evil forces ARE physically manifest in the passageways of the throat/neck.\n\n(3) Line 4: '\"פַרְעֹה\" הוּא אוֹתִיּוֹת \"הָעֹרֶף\", שֶׁעוֹמֵד אֲחוֹרֵי הַקְּדֻשָּׁה' — Pharaoh IS (in the sense of being the same letters rearranged) the back of the neck (העורף), the one who stands behind holiness. The letter-permutation identity ('הוּא אוֹתִיּוֹת') is a standard bechina equivalence in Rebbe Nachman's idiom — the letters are the conceptual identity.\n\nAll these nodes — שלש קליפות, שר האופים ושר המשקים ושר הטבחים, תאוות אכילה ושתייה, קנה ווושט ורידין, פרעה, העורף — share the same essential nature: they are all different expressions of the evil force that grabs speech and diverts it to the back (away from the mouth/face of holiness, toward the back of the neck). They are not cause-and-effect (the klipot do not PRODUCE Pharaoh; they ARE Pharaoh); they are the same reality described from spiritual, scriptural, and anatomical angles. Merge by shared nature is therefore correct for all nodes in this cluster.\n\nPolarity is evil: this is explicitly the sitra achra dimension of the teaching. The klipot, Pharaoh, the desires for eating and drinking, and the anatomical passages through which speech can be diverted — all are the Torah's evil antagonists. The dominant node is שלש קליפות (the three klipot) because this is the teaching's primary abstract categorization: 'כִּי יֵשׁ שָׁלֹשׁ קְלִפּוֹת' is the Torah's foundational evil-domain statement (line 2). All the other identifications elaborate what the three klipot ARE.",
+      "dominant_node": "שלש קליפות",
+      "nodes": [
+        "שלש קליפות",
+        "שר האופים ושר המשקים ושר הטבחים",
+        "תאוות אכילה ושתייה",
+        "קנה ווושט ורידין",
+        "פרעה",
+        "העורף"
+      ],
+      "node_degrees": {
+        "שלש קליפות": 3,
+        "שר האופים ושר המשקים ושר הטבחים": 3,
+        "תאוות אכילה ושתייה": 2,
+        "קנה ווושט ורידין": 2,
+        "פרעה": 2,
+        "העורף": 2
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["שלש קליפות", "שר האופים ושר המשקים ושר הטבחים", "תאוות אכילה ושתייה"],
+          "reason": "Line 4 states these with 'הֵם' (they are) in two steps: (a) the three klipot ARE the three Pharaoh-officers; (b) those officers ARE desires for eating and drinking. The language is identity-language, not causal. The klipot are not the CAUSE of the three officers, nor do the officers PRODUCE the desires — they are three levels of description of the same evil reality. 'הֵם' is the strongest possible bechina-identity marker (direct predication: X ARE Y). This is a three-node bechina cluster; merge by shared nature (they are all the same evil force at different levels of description: abstract/spiritual, scriptural/narrative, and practical/experiential)."
+        },
+        {
+          "merged_nodes": ["שר האופים ושר המשקים ושר הטבחים", "קנה ווושט ורידין"],
+          "reason": "Line 6 states: 'הַשְּׁלֹשָׁה שָׂרִים הַנַּ\"ל הֵם קָנֶה וּוֵשֶׁט וּוְרִידִין' — the three officers (same 'שָׂרִים' as in Package's core) ARE the anatomical passages of the throat. Again 'הֵם' identity-language. The anatomy is not a RESULT of the officers — it IS the officers in their physical manifestation. The windpipe (קנה), esophagus (ושט), and blood vessels (ורידין) are the body-level expression of the same three evil forces that grab speech and divert it to the neck. Merge by shared nature: both node-sets describe the three evil officers, one from a scriptural angle and one from an anatomical angle."
+        },
+        {
+          "merged_nodes": ["פרעה", "העורף"],
+          "reason": "Line 4 states: '\"פַרְעֹה\" הוּא אוֹתִיּוֹת \"הָעֹרֶף\"' — Pharaoh IS the letters of 'the back of the neck.' Letter-permutation identity ('הוּא אוֹתִיּוֹת') in Rebbe Nachman's idiom establishes bechina equivalence: the same letters arranged differently are not two different things but two expressions of the same spiritual reality. The back of the neck (העורף) is where speech exits when captured; Pharaoh is the force that stands behind holiness ('שֶׁעוֹמֵד אֲחוֹרֵי הַקְּדֻשָּׁה'). They are the same essential nature: the force of opposition that turns its back on holiness and draws speech away from the face/mouth toward the nape. Merge by shared nature."
+        }
+      ],
+      "note": "Egypt (מצרים) is referenced in line 4 with 'שֶׁהֵם בְּחִינוֹת מִצְרַיִם' — the klipot-people ARE a bechina of Egypt. However, in context 'מִצְרַיִם' in this Torah is used primarily as the narrative setting (the Egyptians who lusted after Sarah), functioning as a backdrop/example, not as a conceptually distinct node that adds new content to the evil cluster. The text says the klipot-people ARE Egypt — i.e., Egypt is another name for the same concept (the spiritually dark, low, desire-driven forces). This could be included as a sixth node; it has been included above as equivalent to the klipot cluster. If a reviewer prefers to list 'מצרים' as a separate node within the evil package, this would also be defensible."
+    },
+    {
+      "id": 3,
+      "torah_ref": 163,
+      "label": "צָרוֹת הַנֶּפֶשׁ — מִדְבָּר, חֳלִי, מַאֲסָר, וְיָם",
+      "label_en": "The Soul's Tribulations — Desert, Sickness, Imprisonment, and Sea",
+      "polarity": "evil",
+      "reason": "Lines 11-14 and 17-18 describe the soul's suffering when speech falls to the klipot. This is a distinct thematic cluster: it describes the experiential and existential condition of the person whose speech (= his soul/self) has been captured. Reb Nosson's appended commentary (lines 16-21) makes explicit that these descriptions ARE a bechina of the four categories in Psalm 107 ('the four who must give thanks': desert travelers, prisoners, the sick, and seafarers).\n\nThe bechina connections are explicit:\n- Line 18: 'הַנֶּפֶשׁ הוֹלֶכֶת נָעָה וְנָדָה... עָיֵף וְרָעֵב וְצָמֵא בַּמִּדְבָּר — זֶה בְּחִינַת תָּעוּ בַּמִּדְבָּר' — the wandering, exhausted, hungry, thirsty soul IS a bechina of 'they wandered in the desert' (Psalm 107:4)\n- Line 18: 'חֳלִי הַנֶּפֶשׁ... כָּל אֹכֶל תְּתַעֵב נַפְשָׁם — זֶה בְּחִינַת... חוֹלֶה' — the soul so faint it cannot eat IS a bechina of 'their soul loathed all food' (Psalm 107:18, the sick man's verse)\n- Line 13: the captured soul IS described as 'חָבוּשׁ בְּבֵית־הָאֲסוּרִין' — imprisoned; and line 18: 'מֵעִנְיַן חָבוּשׁ בְּבֵית־הָאֲסוּרִים' — a bechina of the prisoner of Psalm 107\n- Line 14 and 18: 'יַעֲלוּ שָׁמַיִם יֵרְדוּ תְהוֹמוֹת — זֶהוּ בְּחִינַת יוֹרְדֵי הַיָּם' — the soul rising and plunging IS a bechina of 'those who go down to the sea' (Psalm 107:23-26)\n\nAll four types from Psalm 107 are declared explicitly by the commentary (line 17: 'הַכֹּל מְרַמֵּז עַל צָרוֹת הַנֶּפֶשׁ' — all of it hints at the soul's tribulations). The four types are parallel aspects of the same reality: the soul's condition when scattered, exiled, and trapped. They are not sequential stages (the desert wanderer does not PRODUCE the prisoner; all four describe the same essential state from different angles). This makes them bechina-related, not eitza-related.\n\nLine 12 also uses explicit bechina language: 'הִיא בְּחִינַת: נַפְשָׁם בָּהֶם תִּתְעַטָּף' — the soul wrapping itself in itself IS a bechina of the verse 'their soul fainted within them' (Psalm 107:5). This adds a fifth bechina identity within the cluster.\n\nPolarity is evil/negative: this entire cluster describes the soul's suffering, exile, and spiritual degradation — not a positive spiritual state. While God ultimately saves the soul ('הַשֵּׁם יִתְבָּרַךְ מַצִּיל אוֹתָהּ', line 19), the cluster itself describes the PROBLEM, not the solution. In the framework's terms, it occupies the 'afflicted' domain — not the domain of holiness or the domain of the klipot-as-captor (Package 2), but the domain of the captured/suffering entity. Polarity is designated 'evil' (negative consequence domain) rather than 'good' because all these nodes describe spiritual damage and exile.\n\nThe dominant node is צרות הנפש (the soul's tribulations) because it is the explicit umbrella concept named in line 17: 'הַכֹּל מְרַמֵּז עַל צָרוֹת הַנֶּפֶשׁ' — all of it alludes to this.\n\nStructural note: there is a question whether Package 3 should be 'evil' or 'neutral.' It does not belong to the klipot; it belongs to the victim. However, in the framework's polarity scheme: good = holiness/positive side; evil = negative/suffering/opposing-force side; neutral = structural objects. The soul's tribulations are clearly in the negative/suffering domain (they result from the evil klipot's activity), not neutral. 'Evil' here means 'the suffering/negative side of the spiritual map' rather than the klipot themselves.",
+      "dominant_node": "צרות הנפש",
+      "nodes": [
+        "צרות הנפש",
+        "תועים במדבר",
+        "חולי הנפש",
+        "חבוש בבית האסורים",
+        "יורדי הים",
+        "נפשם בהם תתעטף"
+      ],
+      "node_degrees": {
+        "צרות הנפש": 4,
+        "תועים במדבר": 2,
+        "חולי הנפש": 2,
+        "חבוש בבית האסורים": 2,
+        "יורדי הים": 2,
+        "נפשם בהם תתעטף": 1
+      },
+      "note": "The four Psalm 107 types (desert travelers, prisoners, sick, seafarers) are identified as a unified set by the commentary's explicit statement: 'כָּל אַרְבָּעָה הַנַּ\"ל... הַכֹּל מְרַמֵּז עַל צָרוֹת הַנֶּפֶשׁ' (line 17). They are bechina-equivalents of one another in the sense that they all express the same reality (the soul's tribulations in divine service) from four different angles. The dataset does not currently contain any of these bechina edges for reference 163. See torah_163_additions.json for the proposed new edges. Note: 'נפשם בהם תתעטף' (Psalm 107:5 — 'their soul fainted/wrapped within them') appears in line 12 with explicit 'בְּחִינַת' language ('וְהִיא בְּחִינַת: נַפְשָׁם בָּהֶם תִּתְעַטָּף') applied to the soul's inability to receive nourishment — this is a fifth bechina identity within the soul-suffering cluster."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 1,
+    "total_nodes_in_dataset": 2,
+    "total_packages": 3,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 0,
+    "packages_from_dataset_components": 1,
+    "packages_from_gap_analysis": 2,
+    "evil_mirror_packages": 1,
+    "note_on_evil_mirror": "Package 2 (the three klipot / Pharaoh) is the direct evil mirror of Package 1 (holy speech / Sarah). The entire Torah is structured as the confrontation between these two packages: Sarah (holy speech) meets the servants of Pharaoh (the three klipot) and is seized. Package 3 (the soul's tribulations) is the consequence of the evil mirror winning — it describes what happens to the soul when its speech falls to the klipot. Package 3 is not a MIRROR of Package 1 in the same structural sense; it is a downstream consequence.",
+    "note_on_structure": "Torah #163 has a notably sparse dataset representation (only 1 bechina edge) for a Torah that is rich in bechina-language statements. Lines 4, 6, 7, 11, 12, 13, 14, and 18 all contain clear 'הוּא בְּחִינַת' or 'הֵם' identity statements that should be in the dataset. The Torah is also noted by Reb Nosson (the scribe) as having been described by the Rebbe himself as 'not written down properly' (line 16) — suggesting the text may be less complete than the Rebbe intended.",
+    "good_evil_mirror": "Package 1 (good: דיבור הקדוש = שרה) mirrors Package 2 (evil: שלש קליפות = פרעה = תאוות = ורידין). The narrative of Genesis 12 — Sarah taken by Pharaoh's servants — is the Rebbe's chosen metaphor for this good/evil confrontation. The same structure (beautiful woman = holy speech, seized by dark Egyptians = klipot) plays out at every level: spiritual, anatomical, and psychological.",
+    "eitza_summary": "The causal structure of Torah #163: Package 1 (holy speech) existing in the world → Package 2 (klipot/Pharaoh) seizes it → Package 3 (soul's tribulations: desert/prison/sickness/sea) results. The resolution (not developed in bechina terms) requires a true tzaddik who has the power to extract the captured speech (line 8: 'אִם לֹא שֶׁיָּבוֹא צַדִּיק אֱמֶת שֶׁיֵּשׁ לוֹ כֹּחַ לְהוֹצִיאוֹ מִשָּׁם'). The tzaddik is an eitza agent (causal rescuer), not a bechina-equivalent of speech — he is not declared 'IS a bechina of Abraham' in this teaching (though Abraham is the implied parallel). The four types of Psalm 107 ultimately lead to gratitude (הוֹדָאָה) when God rescues — but that rescue is described in eitza terms ('הַשֵּׁם יִתְבָּרַךְ מַצִּיל אוֹתָהּ', line 19), not as a bechina cluster."
+  }
+}

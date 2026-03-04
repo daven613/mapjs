@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "source": "Torah #166 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #166 has zero bechina edges in torahData.js (reference===166 returns no rows). The source text (torah_166.txt) is two sentences long and constitutes one of the shortest Torahs in LM1 — an aphoristic teaching, not a developed multi-section discourse. All bechina structure is derived entirely from gap analysis of the source text.\n\nThe teaching's core claim: 'When the world is gathered at the tzaddik, he has memshala (dominion/rulership).' The proof: Elisha was called 'Ish HaElohim' (Man of God) when his students surrounded him, and merely 'Elisha' when alone. The word 'נִקְרָא' (was called / is called) is standard bechina language in Rebbe Nachman — the same formula used throughout LM1 to declare bechina equivalences (e.g., Torah #1 line 3: 'הַיְנוּ שֶׁנִּקְרֵאת חֵן'). The teaching thus establishes:\n\n- Elisha surrounded by students = נִקְרָא אִישׁ הָאֱלֹקִים → IS a bechina of Ish HaElohim\n- Elisha surrounded by students = has memshala → IS a bechina of memshala\n- Elisha alone = נִקְרָא אֱלִישָׁע סְתָם → IS a bechina of 'plain Elisha' (tzaddik without the additional dimension)\n\nTwo packages are identified. The good/evil mirror structure is absent: this Torah describes an entirely positive reality (the enhancement of the tzaddik when the world gathers around him). There is no explicitly developed evil counterpart in the text. The 'plain Elisha' state is the absence of the enhancement, not an evil domain — it is the tzaddik's baseline condition, which is why Package 2 is marked neutral rather than evil.\n\nStructural note: This Torah is structurally analogous to a one-move teaching — it makes a single bechina statement (Tzaddik-with-community IS Ish HaElohim / memshala) and offers one proof case (Elisha / Zohar). The eitza structure is minimal: gathering-of-the-world → memshala is the causal direction, but the bechina is: tzaddik-with-world IS Ish HaElohim (they share the essential nature of 'divine rule manifest through human leadership')."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 166,
+      "label": "אִישׁ הָאֱלֹקִים וּמֶמְשָׁלַת הַצַּדִּיק",
+      "label_en": "Man of God and the Dominion of the Tzaddik",
+      "polarity": "good",
+      "reason": "The teaching's central bechina: the tzaddik-with-community IS 'Ish HaElohim' (Man of God), and both share the same essential nature as memshala (dominion/rulership manifest through divine service). The Rebbe uses 'נִקְרָא' — 'was called / is called' — which is the standard bechina declaration formula in LM1 ('X is called Y' = X IS an aspect of Y; compare Torah #1's 'שֶׁנִּקְרֵאת חֵן', Torah #163's 'הָיָה נִקְרָא'). The statement is: when הָעוֹלָם (the world/students) is אֵצֶל הַצַּדִּיק (gathered at the tzaddik), he becomes נִקְרָא אִישׁ הָאֱלֹקִים — IS called Man of God — and this is IS a state of מֶמְשָׁלָה (dominion, rulership). Three nodes share the same essential nature: (1) אִישׁ הָאֱלֹקִים — the scriptural title Elisha receives when surrounded, which IS the teaching's name for the enhanced state of tzaddik-plus-community; (2) מֶמְשָׁלָה — the conceptual term the Rebbe introduces in his opening statement as what the tzaddik ACQUIRES / IS in this state; (3) צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ — the tzaddik in this state of having the world gathered around him. All three are different descriptions of the same essential reality: the tzaddik-in-his-full-governance-dimension, the point at which human leadership and divine authority merge. The first sentence ('כְּשֶׁהָעוֹלָם אֵצֶל הַצַּדִּיק, אָז יֵשׁ לוֹ מֶמְשָׁלָה') and the second ('כְּשֶׁהָיוּ בְּנֵי הַנְּבִיאִים אֶצְלוֹ, הָיָה נִקְרָא אִישׁ הָאֱלֹקִים') are bechina-parallel: both state the same identity — tzaddik surrounded = governed by / identical to the Ish HaElohim quality. The dominant node is אִישׁ הָאֱלֹקִים because it is the teaching's scriptural name for the reality being described, and it IS the explicit predicate of the 'נִקְרָא' (was called) statement that the Rebbe brings as his proof text.",
+      "dominant_node": "אִישׁ הָאֱלֹקִים",
+      "nodes": [
+        "אִישׁ הָאֱלֹקִים",
+        "מֶמְשָׁלָה",
+        "צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ"
+      ],
+      "node_degrees": {
+        "אִישׁ הָאֱלֹקִים": 2,
+        "מֶמְשָׁלָה": 2,
+        "צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ": 2
+      },
+      "source_bechina_statements": [
+        {
+          "text": "כְּשֶׁהָעוֹלָם אֵצֶל הַצַּדִּיק, אָז יֵשׁ לוֹ מֶמְשָׁלָה",
+          "analysis": "Direct identity: the tzaddik-with-world IS (has / is-defined-by) memshala. The copula 'יֵשׁ לוֹ' in this context functions as a bechina: this condition IS the condition of memshala, they share the same essential nature.",
+          "nodes_linked": ["צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ", "מֶמְשָׁלָה"]
+        },
+        {
+          "text": "כְּשֶׁהָיוּ בְּנֵי הַנְּבִיאִים אֶצְלוֹ, הָיָה נִקְרָא אִישׁ הָאֱלֹקִים",
+          "analysis": "Naming statement: Elisha-with-students WAS CALLED / IS an aspect of 'Ish HaElohim'. 'נִקְרָא' is a standard bechina declaration in LM1 — to be called something IS to be that thing essentially. The title 'Man of God' is the scriptural expression of the memshala quality.",
+          "nodes_linked": ["צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ", "אִישׁ הָאֱלֹקִים"]
+        }
+      ],
+      "note": "The three nodes form a tight triangle of bechina equivalences: (a) Tzaddik-with-world IS memshala; (b) Tzaddik-with-world IS Ish HaElohim; (c) by transitivity, memshala IS Ish HaElohim — both name the same elevated state. This is not a cause-effect chain (the community does not PRODUCE Ish HaElohim status through some mechanism; the community's presence IS the condition that defines the state — the state IS memshala, and memshala IS Ish HaElohim). The Rebbe's two sentences are parallel bechina declarations, not a two-step causal sequence. All three nodes belong in one package by shared nature."
+    },
+    {
+      "id": 2,
+      "torah_ref": 166,
+      "label": "אֱלִישָׁע סְתָם — הַצַּדִּיק בִּבְדִידוּתוֹ",
+      "label_en": "Plain Elisha — The Tzaddik in His Solitude",
+      "polarity": "neutral",
+      "reason": "The teaching contrasts the Ish HaElohim state (Package 1) with the state of 'Elisha alone' — 'כְּשֶׁהָיָה לְבַדּוֹ נִקְרָא אֱלִישָׁע סְתָם' (when he was alone he was called simply Elisha). The word 'נִקְרָא' again marks this as a bechina statement: the tzaddik-in-solitude IS called / IS an aspect of 'Elisha stam' (plain/bare Elisha). Two nodes share this essential nature: (1) אֱלִישָׁע סְתָם — the scriptural name for the tzaddik-alone state; (2) צַדִּיק בִּבְדִידוּתוֹ — the tzaddik in solitude, without the world gathered around him. Both describe the same essential condition: the tzaddik at his base level, possessing his own spiritual qualities but not yet manifesting the additional dimension of memshala that emerges only in relationship to the community. This package is marked neutral (not evil) because: (a) the solitary tzaddik is still the tzaddik — a holy person with genuine spiritual stature; he is not diminished into evil or disorder; (b) the Rebbe does not frame the lone-Elisha state as negative, destructive, or opposed to holiness — it is simply the baseline state, the tzaddik's ordinary self; (c) in the framework's polarity scheme, neutral applies to concepts that can serve either domain or that describe a condition without inherent holiness/evil valence. The tzaddik-alone is a holy person in a neutral structural condition (not yet in the memshala relationship). The dominant node is אֱלִישָׁע סְתָם because 'Elisha stam' (plain/simply Elisha) is the text's explicit naming formula for this state and captures its essential quality: plain/bare/not-yet-activated-with-memshala.",
+      "dominant_node": "אֱלִישָׁע סְתָם",
+      "nodes": [
+        "אֱלִישָׁע סְתָם",
+        "צַדִּיק בִּבְדִידוּתוֹ"
+      ],
+      "node_degrees": {
+        "אֱלִישָׁע סְתָם": 1,
+        "צַדִּיק בִּבְדִידוּתוֹ": 1
+      },
+      "source_bechina_statements": [
+        {
+          "text": "כְּשֶׁהָיָה לְבַדּוֹ נִקְרָא אֱלִישָׁע סְתָם",
+          "analysis": "Naming statement: Elisha-alone WAS CALLED / IS an aspect of 'plain Elisha'. The 'סְתָם' (plain/simply/without further qualification) is the Rebbe's conceptual marker for the baseline state without memshala. The lone tzaddik IS this baseline, and the baseline IS 'Elisha stam.'",
+          "nodes_linked": ["צַדִּיק בִּבְדִידוּתוֹ", "אֱלִישָׁע סְתָם"]
+        }
+      ],
+      "merge_notes": [
+        {
+          "merged_nodes": ["אֱלִישָׁע סְתָם", "צַדִּיק בִּבְדִידוּתוֹ"],
+          "reason": "Two nodes, one raw component. They share the same essential nature: the tzaddik-without-community IS 'plain Elisha', and 'plain Elisha' IS the tzaddik-without-community. Both name the same baseline condition from two angles (the scriptural-narrative figure from Tanach/Zohar, and the conceptual category the Rebbe is teaching about). Merge by shared nature."
+        }
+      ],
+      "note": "This package is structurally the 'other pole' of Package 1 — not its evil mirror but its baseline contrast. The teaching is not a good/evil confrontation; it is a description of two conditions of the same person (the tzaddik), distinguished by the presence or absence of the world gathered around him. This makes Torah #166 structurally unusual: it has a good package and a neutral baseline package rather than the typical good/evil mirror pair. The absence of an evil mirror is genuine — the text contains no evil domain, no opposing force, no sitra achra. It is a teaching purely about the positive dimension of tzaddik-community relationship."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "packages_from_dataset_components": 0,
+    "packages_from_gap_analysis": 2,
+    "evil_mirror_packages": 0,
+    "note_on_evil_mirror": "Torah #166 has no evil domain. The teaching describes two positive/neutral conditions of the tzaddik (with-community and without-community). There is no opposing force, no sitra achra, no evil kingdom developed anywhere in the text. The absence of an evil mirror is intrinsic to the teaching's scope and brevity.",
+    "note_on_structure": "Torah #166 is a two-sentence aphoristic teaching. It lacks the extended multi-section structure of the major LM1 Torahs. The bechina structure is minimal but genuine: two 'נִקְרָא' statements establish two bechina identities (Elisha-with-students = Ish HaElohim; Elisha-alone = Elisha stam). The eitza direction is: world-gathered-at-tzaddik → memshala — this causal flow is the teaching's practical implication, but the core of the Torah is the bechina identity (the state of being-with-community IS the state of Ish HaElohim / memshala, not merely a cause of it).",
+    "eitza_summary": "The single causal move in Torah #166: having the world gathered at the tzaddik (condition) → memshala (result). This is the teaching's practical lesson: a tzaddik should draw people to himself to activate his full governing dimension. But this is NOT the bechina relationship — the bechina is that the state of tzaddik-with-world IS the state of Ish HaElohim / memshala (they share the same essential nature; being-called-Ish-HaElohim and having-memshala are not sequential; they ARE the same thing)."
+  }
+}

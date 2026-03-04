@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "source": "Torah #220",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NO_NEW_PACKAGES",
+  "new_packages": [],
+  "observations": "Torah #220 has zero existing packages (the Torah has not been encoded into torahData.js at all — reference 220 is absent from the dataset entirely). The question of 'new packages' is therefore evaluated purely from the source text.\n\nThe source text of Torah #220 consists of exactly two sentences:\n1. The Rebbe lists four precious things in the world — חכם (wise person), גיבור (warrior/powerful), עשיר (wealthy), מושל (ruler) — and defines them collectively as 'מי שיש לו איזה התנשאות' (one who has some elevated standing).\n2. The Rebbe teaches that through any one of these elevated persons, a person in pain can be saved, by telling his troubles before them until he arouses their compassion.\n\nThe test for a new package (Step 6) requires: 3+ concepts connected by EXPLICIT bechina language forming an INDEPENDENT DOMAIN not covered by existing packages.\n\nThe Torah does not use explicit bechina language ('X הוא בחינת Y' / 'X נקרא Y') anywhere. The grouping of חכם/גיבור/עשיר/מושל under התנשאות is expressed through the word 'דהיינו' (meaning/namely), which is a definitional equivalence rather than a formal bechina declaration. While this definitional equivalence would form a coherent package once encoded (see torah_220_additions.json for the proposed nodes), it does not meet the threshold of 'explicit bechina language' required by Step 6.\n\nFurthermore, the concepts involved (חכמה, גבורה, עושר, מלכות/שלטון, רחמים) are all well-represented in the broader LM1 dataset under other Torah references. This Torah #220 does not establish an entirely new domain — it invokes familiar domains (wisdom, power, wealth, kingship) in a new practical context (arousing compassion to save oneself from pain).\n\nConclusion: NO_NEW_PACKAGES. The Torah's conceptual content should be added to the dataset as new edges for reference 220, but those edges will attach to existing node concepts rather than forming a genuinely new thematic domain."
+}

@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "source": "Torah #199",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 199,
+      "label": "דְּבַשׁ וְאִשָּׁה",
+      "label_en": "Honey and Woman",
+      "polarity": "neutral",
+      "reason": "The only explicit identity (bechina) statement in Torah #199 is the gematria equation: 'דְּבַשׁ בְּגִימַטְרִיָּא אִשָּׁה' — honey and woman share the same numerical value (306). The Rebbe cites this as a foundational equivalence grounding the entire teaching's mechanism: the taste of sweetness in Torah IS the bechina of דבש, and since דבש = אשה, that sweetness acts directly on the spiritual domain of אשה (wife, woman). The polarity is neutral: both דבש and אשה are natural/relational concepts that are neither inherently holy nor evil. They function here as the shared pivot between the eitza-domain of Torah-study and the eitza-domain of marital life. The teaching does not assign positive or negative valence to דבש or אשה themselves — they are the structural link through which the practice (feeling sweetness in Torah) operates on the protective domain.",
+      "dominant_node": "דבש",
+      "nodes": [
+        "דבש",
+        "אשה"
+      ],
+      "node_degrees": {
+        "דבש": 1,
+        "אשה": 1
+      },
+      "merge_notes": [
+        "This package is derived from close reading of the source text. There are zero bechina edges in torahData.js for reference 199 — the single existing edge (id null, שמרגישין טעם מתיקות בהתורה → להנצל מענש של אלמן) is type 'eitza'.",
+        "The bechina equation is stated explicitly in line 3: 'כִּי דְּבַשׁ בְּגִימַטְרִיָּא אִשָּׁה כַּמּוּבָא בַּכְּתָבִים'. The Rebbe cites kabbalistic writings (כתבים = the Ari's writings) as the source for this equation.",
+        "The gematria proof: ד+ב+ש = 4+2+300 = 306; א+ש+ה = 1+300+5 = 306. Equal gematria in Rebbe Nachman's methodology functions as a bechina — the two words share the same essential numerical-spiritual root.",
+        "This two-node package is the smallest possible package; the entire Torah's structure radiates from this single bechina pivot. The teaching exists to communicate one thing: because of this identity (דבש = אשה), sweetness in Torah sweetens the judgment of one's wife."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "notes": "Torah #199 has zero bechina edges in torahData.js. The single package above is derived from the source text's explicit gematria equation (דבש = אשה). This Torah is structurally minimal: one bechina equation (Package 1, neutral polarity) serves as the hinge for two eitza relationships — (1) feeling sweetness in Torah [eitza] → saved from widowhood, and (2) the sweetness of Torah IS the בחינת דבש [eitza via bechina pivot] → sweetens the din on one's wife. The Torah's argument: [מתיקות בתורה] →eitza→ [saved from אלמן] ←via bechina pivot— [דבש = אשה Package 1: neutral]."
+  }
+}

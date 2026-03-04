@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "source": "Torah #258",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #258 has ZERO bechina edges in torahData.js (reference 258 is entirely absent from the dataset). All packages below are derived entirely from source-text analysis of torah_258.txt. The Torah is a one-sentence principle followed by a single proof text (Psalms 119:157). The Rebbe uses 'וְזֶה שֶׁהִתְפָּאֵר' to equate the abstract principle of machloket with David's concrete experience of pursuers and adversaries — these are bechinas of each other. The Rebbe also equates 'דֶּרֶךְ הַשֵּׁם' with 'עֵדוֹתֶיךָ' via the parallelism of the verse. This yields two packages: one evil (machloket and its instruments) and one good (God's path / His testimonies), with a corresponding eitza chain connecting them (machloket causes deviation from God's path)."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 258,
+      "label": "מַחֲלֹקֶת וְרוֹדְפִים",
+      "label_en": "Controversy and Pursuers",
+      "polarity": "evil",
+      "reason": "The Torah opens with the principle that machloket (controversy directed against a person) is a force that can sway him from God's path. The Rebbe then invokes David's verse — 'רַבִּים רוֹדְפַי וְצָרָי' (many are my pursuers and adversaries) — as the bechina of this principle. The phrase 'וְזֶה שֶׁהִתְפָּאֵר' (and this is what David boasted) is the Rebbe's standard bechina marker: David's pursuers and adversaries ARE the bechina of machloket. These two concepts share the same essential nature — they are both expressions of the hostile external force that threatens to displace a person from his spiritual standing. Machloket in the abstract and 'rodoفai v'tzarai' in the concrete are two faces of the same reality. Both are evil-polarity: they represent the opposing force directed against the person of integrity.",
+      "dominant_node": "מחלוקת",
+      "nodes": [
+        "מחלוקת",
+        "רודפי וצרי"
+      ],
+      "node_degrees": {
+        "מחלוקת": 1,
+        "רודפי וצרי": 1
+      },
+      "merge_notes": [],
+      "note": "This package is entirely derived from source-text gap analysis — neither node exists in torahData.js for Torah 258. Both are proposed additions (see torah_258_additions.json)."
+    },
+    {
+      "id": 2,
+      "torah_ref": 258,
+      "label": "דֶּרֶךְ הַשֵּׁם וְעֵדוּת",
+      "label_en": "The Path of God and His Testimonies",
+      "polarity": "good",
+      "reason": "The Torah presents the positive counterpart to machloket: what one must not be swayed from. The phrase 'דֶּרֶךְ הַשֵּׁם יִתְבָּרַךְ' (the path of God) appears in the teaching's opening principle, and the verse cited — 'מֵעֵדוֹתֶיךָ לֹא נָטִיתִי' (from Your testimonies I did not turn) — is the Rebbe's bechina for the same concept in David's mouth. The teaching closes by restating the principle: 'לֹא נָטָה מִדֶּרֶךְ הַשֵּׁם יִתְבָּרַךְ' — and this is the exact parallel to 'מֵעֵדוֹתֶיךָ לֹא נָטִיתִי'. God's testimonies (עֵדוֹת) ARE the path of God (דֶּרֶךְ הַשֵּׁם) — they are two expressions of the same reality: the spiritual ground on which a person stands and from which controversy seeks to dislodge him. Both concepts share the same essential nature: the divine anchor that preserves a person's level (מַדְרֵגָה) in the face of external hostility.",
+      "dominant_node": "דרך השם",
+      "nodes": [
+        "דרך השם",
+        "עדותיך"
+      ],
+      "node_degrees": {
+        "דרך השם": 1,
+        "עדותיך": 1
+      },
+      "merge_notes": [],
+      "note": "This package is entirely derived from source-text gap analysis — neither node exists in torahData.js for Torah 258. Both are proposed additions (see torah_258_additions.json)."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "note": "All 0 figures reflect the dataset state. The 2 packages and 4 nodes are derived entirely from source-text analysis. No dataset edges of any type (bechina or eitza) exist for Torah #258.",
+    "dataset_status": "EMPTY — Torah 258 is entirely absent from torahData.js",
+    "packages_from_source_text_gap_analysis": 2,
+    "good_evil_mirror": "Package 1 (evil: machloket / pursuers) mirrors Package 2 (good: path of God / testimonies). These are the two poles of the Torah's single teaching: the hostile force that pushes versus the divine anchor that holds. The good/evil mirror is perfectly symmetrical in this Torah — each package has exactly 2 nodes, and the Torah's narrative is precisely the tension between them."
+  }
+}

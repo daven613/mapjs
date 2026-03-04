@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source": "Torah #208",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===208 AND type==='bechina'. Zero bechina edges exist in torahData.js for reference 208 — the Torah has no entries in the dataset at all. The source text (torah_208.txt) is a five-line teaching presenting two interpretations of Psalm 37:32 ('The wicked watches the righteous and seeks to kill him'). Both interpretations contain explicit bechina declarations: (1) In the first interpretation, the wicked one IS (הוּא כְּמוֹ / כֵּן הוּא שׁוֹמֵר) the city-watchman (צוֹפֶה/שׁוֹמֵר הָעִיר), equating the wicked's persecution with protective watchman-duty. (2) In the second interpretation, controversy (מַחֲלֹקֶת) IS (הִיא כְּמוֹ) a covering (מִכְסֶה), and the word 'צוֹפֶה' is explicitly declared to mean covering (לְשׁוֹן מִכְסֶה), proven from Exodus 25:11 ('וְצִפִּיתָ אוֹתוֹ זָהָב'). The two interpretations share the same pivot node — צוֹפֶה — which links both clusters via its double meaning (watchman / covering). Together the bechina equations produce one large connected component: {רָשָׁע, צוֹפֶה/שׁוֹמֵר, מַחֲלֹקֶת, מִכְסֶה/צִפּוּי}. These form one package with a single dominant idea: the wicked opponent/controversy as a providentially-arranged covering and guardian. The packages below are proposed based on source text analysis; the additions file documents all missing edges."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 208,
+      "label": "רָשָׁע כְּצוֹפֶה וּמַחֲלֹקֶת כְּמִכְסֶה",
+      "label_en": "The Wicked as Watchman and Controversy as Covering",
+      "polarity": "neutral",
+      "reason": "Torah #208 presents a striking paradox: the wicked opponent (רָשָׁע) and the controversy directed at the tzaddik (מַחֲלֹקֶת) are each declared to be, in their essential function, a covering and protection — a מִכְסֶה/צִפּוּי. The bechina network is unified through the pivot word צוֹפֶה: in its first reading, the רָשָׁע IS the צוֹפֶה (the city-watchman who guards); in its second reading, צוֹפֶה means מִכְסֶה (covering), and the מַחֲלֹקֶת IS the מִכְסֶה. These two chains share the node צוֹפֶה, creating one connected bechina cluster. The polarity is neutral — not 'evil' and not 'good' — because the same concepts (wicked, controversy, covering) serve different functions depending on degree: in small measure, the wicked watchman and the controversy-covering are beneficial and protective (guards the tzaddik from gashmiyut / shields him from overexposure); in excess, the same covering suffocates. The teaching does not present a good vs. evil mirror structure in the usual sense; instead, it presents a single set of concepts that are inherently ambiguous — the same opposition that protects in small doses destroys in large ones. The dominant node is צוֹפֶה, which is the structural hinge linking the watchman-cluster and the covering-cluster across both interpretations. רָשָׁע and צוֹפֶה/שׁוֹמֵר הָעִיר are explicitly equated ('הוּא כְּמוֹ צוֹפֶה... כֵּן הָרָשָׁע הוּא שׁוֹמֵר'). מַחֲלֹקֶת and מִכְסֶה are explicitly equated ('הַמַּחֲלֹקֶת הִיא כְּמוֹ מִכְסֶה לָהֶם'). צוֹפֶה and מִכְסֶה are explicitly equated as a linguistic identity ('צוֹפֶה לְשׁוֹן מִכְסֶה'). These three bechina equations form one connected component of four-to-five nodes. All concepts in this package operate within the domain of opposition/protection — a structural reality (how Providence uses negative forces for positive ends) that is neutral in nature: neither purely holy nor purely evil, but a mechanism that can serve either purpose depending on degree.",
+      "dominant_node": "צוֹפֶה",
+      "nodes": [
+        "צוֹפֶה",
+        "רָשָׁע",
+        "שׁוֹמֵר הָעִיר",
+        "מַחֲלֹקֶת",
+        "מִכְסֶה"
+      ],
+      "node_degrees": {
+        "צוֹפֶה": 3,
+        "רָשָׁע": 1,
+        "שׁוֹמֵר הָעִיר": 1,
+        "מַחֲלֹקֶת": 1,
+        "מִכְסֶה": 2
+      },
+      "merge_notes": [
+        "This package is derived from close reading of the source text. There are zero bechina edges in torahData.js for reference 208.",
+        "Bechina 1 (line 2): רָשָׁע ↔ צוֹפֶה/שׁוֹמֵר הָעִיר — 'הָרָשָׁע הוּא כְּמוֹ צוֹפֶה, כְּשׁוֹמֵר הָעִיר שֶׁנִּקְרָא צוֹפֶה, כֵּן הָרָשָׁע הוּא שׁוֹמֵר אֶת הַצַּדִּיק'. The language 'הוּא כְּמוֹ... כֵּן הוּא שׁוֹמֵר' is classic bechina identification.",
+        "Bechina 2 (line 3): מַחֲלֹקֶת ↔ מִכְסֶה — 'כִּי הַמַּחֲלֹקֶת הִיא כְּמוֹ מִכְסֶה לָהֶם'. The language 'הִיא כְּמוֹ מִכְסֶה' is explicit bechina.",
+        "Bechina 3 (line 4): צוֹפֶה ↔ מִכְסֶה — 'צוֹפֶה לְשׁוֹן מִכְסֶה, כְּמוֹ שֶׁכָּתוּב: וְצִפִּיתָ אוֹתוֹ זָהָב'. The language 'לְשׁוֹן מִכְסֶה' (the word means covering) is a linguistic bechina declaration — the Rebbe equates two words as expressions of the same root-concept.",
+        "The three bechina equations form one connected component: [רָשָׁע — צוֹפֶה — שׁוֹמֵר הָעִיר] via Bechina 1, [מַחֲלֹקֶת — מִכְסֶה] via Bechina 2, and [צוֹפֶה — מִכְסֶה] via Bechina 3. The shared node צוֹפֶה bridges the watchman-cluster (first interpretation) and the covering-cluster (second interpretation).",
+        "The node שׁוֹמֵר הָעִיר is closely identified with צוֹפֶה in the text ('שׁוֹמֵר הָעִיר שֶׁנִּקְרָא צוֹפֶה'). These could be treated as two nodes (the city-guard role and the term tzofeh) or as one node with two names (aliases). They are retained as separate nodes here because the text first equates רָשָׁע to שׁוֹמֵר and then calls that שׁוֹמֵר by the name צוֹפֶה — making both identification steps explicit.",
+        "צִפּוּי (overlay/plating) from 'וְצִפִּיתָ אוֹתוֹ זָהָב' is treated as a variant of מִכְסֶה (they are the same concept — physical covering) rather than a separate fifth concept. The Rebbe uses the verse as a proof that צוֹפֶה = מִכְסֶה, not to introduce צִפּוּי as an independent node."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "note_on_merges": "Zero bechina edges currently in dataset for reference 208. The package above (Package 1) is proposed based on the source text's three explicit bechina declarations. If all three proposed bechina edges are added to torahData.js, the stats would update to: total_bechina_edges=3, total_nodes=5, total_packages=1, raw_connected_components=1. The eitza relationships in the teaching (persecution → tzaddik examines deeds; small controversy → protection; large controversy → seeks to kill) are directional causal flows and are not reflected in the package structure."
+  }
+}

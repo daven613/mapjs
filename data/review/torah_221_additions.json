@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "source": "Torah #221",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": null,
+      "node_id": "שויתי",
+      "node_text": "שִׁוִּיתִי ה' לְנֶגְדִּי תָמִיד",
+      "polarity": "good",
+      "reason": "The verse 'שִׁוִּיתִי ה' לְנֶגְדִּי תָמִיד' (I have set God before me always — Psalms 16:8) is explicitly called a 'בְּחִינַת' in the source text, paired with 'מִתְנַגֵּד' (opposition/counterpart). This bechina pair is not captured in the dataset. The concept of 'setting God before oneself' is a distinct thematic domain from the main יד הגדולה/הסתפקות package — it appears as an appended teaching at the end of the Torah (line 6) and its thematic connection to the main teaching is not elaborated. It does not belong cleanly to Package 1 (which is about divine provision/contentment via maaser). It may belong to a separate, underdeveloped cluster, or may be a fragment pointing to a cross-reference.",
+      "source_quote": "שִׁוִּיתִי ה' לְנֶגְדִּי תָמִיד – בְּחִינַת מִתְנַגֵּד",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "מתנגד",
+      "node_text": "מִתְנַגֵּד",
+      "polarity": "neutral",
+      "reason": "Explicitly introduced in the source text as the bechina counterpart of 'שִׁוִּיתִי ה' לְנֶגְדִּי תָמִיד'. The word 'מִתְנַגֵּד' (being set against / opposition / the one who faces) is derived from the root נגד, which appears in the verse 'לְנֶגְדִּי'. This bechina pairing is not captured in the dataset. The concept is neutral in structure (it describes a positional/relational quality — 'being set opposite/against') but in context may carry good valence (facing God constantly). It is a distinct concept from Package 1.",
+      "source_quote": "שִׁוִּיתִי ה' לְנֶגְדִּי תָמִיד – בְּחִינַת מִתְנַגֵּד",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 1,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "שִׁוִּיתִי (שִׁוִּיתִי ה' לְנֶגְדִּי תָמִיד) — the act of setting God before oneself as a constant presence",
+      "מִתְנַגֵּד — being set opposite/in opposition (derived from לְנֶגְדִּי in the verse); bechina pair of שִׁוִּיתִי"
+    ],
+    "note_on_eitza_edges": "All other reference=221 edges in the dataset are type 'eitza', not 'bechina'. They record causal flows: maaser → contentment (id=920), maaser → Great Hand (id=1245, 1246), contentment → God extends His hand and saves from enemies (id=978), Great Hand → God extends His hand and saves from enemies (id=979), giving maaser → saved from enemies (id=2179). These are correctly classified as eitza and do not generate package membership.",
+    "torah_structure_note": "Torah #221 is a short, tightly-argued teaching. Its argument: (1) giving maaser saves from enemies because God covers/protects the person with His hand; (2) this protective covering is possible because the Great Hand = contentment/sufficiency; (3) maaser produces the state of contentment; (4) therefore through maaser God extends His Great Hand and protects. The single bechina equation (יד הגדולה = הסתפקות) is the conceptual pivot of the entire Torah. The appended line about שִׁוִּיתִי/מִתְנַגֵּד appears to be a separate, underdeveloped observation that is not integrated into the main argument."
+  }
+}

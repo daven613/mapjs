@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "source": "Torah #199",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "ONE_NEW_PACKAGE",
+  "new_packages": [
+    {
+      "id": 1,
+      "torah_ref": 199,
+      "label": "דְּבַשׁ וְאִשָּׁה",
+      "label_en": "Honey and Woman",
+      "polarity": "neutral",
+      "reason": "This package represents the single bechina equation in Torah #199: דְּבַשׁ (honey) and אִשָּׁה (woman/wife) are identified through gematria equivalence (both = 306). The Rebbe cites this equation from the kabbalistic writings (כתבים — the Ari's writings) as the structural foundation of the entire teaching. In Rebbe Nachman's methodology, gematria equality constitutes ontological identity — the two concepts share the same numerical-spiritual root, making them different expressions of the same underlying reality. This is a bechina in the framework's precise sense: neither produces the other; they are two faces of the same thing. The polarity is neutral: honey is a natural substance used here as a metaphor/symbol, and 'woman' (אשה) is a relational concept. Neither carries inherent holiness or evil valence in this Torah — they function as the neutral pivot through which the practice of Torah-sweetness produces its protective effect on the marital domain.",
+      "dominant_node": "דבש",
+      "nodes": [
+        "דבש",
+        "אשה"
+      ],
+      "node_degrees": {
+        "דבש": 1,
+        "אשה": 1
+      },
+      "proposed_bechina_edges": [
+        {
+          "node1_id": "דבש",
+          "node2_id": "אשה",
+          "type": "bechina",
+          "reference": 199,
+          "proof": "כִּי דְּבַשׁ בְּגִימַטְרִיָּא אִשָּׁה כַּמּוּבָא בַּכְּתָבִים"
+        }
+      ],
+      "optional_extension": {
+        "description": "If the edge מתיקות בהתורה = דבש is classified as a bechina (see torah_199_additions.json, second proposed edge), the package expands to three nodes: דבש, אשה, מתיקות בהתורה. In that case, מתיקות בהתורה becomes the dominant node with degree 2 (connected to both דבש and אשה via the transitivity of the bechina chain). This extension is consistent with the teaching's logic but depends on a judgment call about whether the verse 'מִדְּבַשׁ לְפִי' establishes a bechina or merely an eitza analogy.",
+        "extended_nodes": [
+          "מתיקות בהתורה",
+          "דבש",
+          "אשה"
+        ]
+      },
+      "structural_role": "This package is the single bechina hinge of Torah #199. The Torah's full argument flows through it: [מתיקות בהתורה: practice] →eitza→ touches domain of [דבש = אשה: Package 1, neutral] →eitza→ [המתקת הדין: result] →eitza→ [saved from ענש של אלמן: outcome]. Without this package, the teaching appears as a simple folk-remedy with a proof-text; with this package, it reveals a structural logic — Torah-sweetness and honey and wife are connected through a shared essential nature, and operating on one operates on all three."
+    }
+  ],
+  "observations": "Torah #199 contains exactly one bechina relationship, which forms one new package. The Torah is structurally minimal: 3 lines, one practice (feeling sweetness in Torah), one result (protection from widowhood), one bechina pivot (דבש = אשה). Despite its brevity, the teaching encodes a non-trivial structural insight: the protective mechanism works because of an ontological identity between honey and woman, not merely because of symbolic association or homiletic word-play. The package דְּבַשׁ וְאִשָּׁה is entirely new — neither דבש nor אשה appear as connected bechina-pair nodes in the dataset for reference 199. The Torah belongs to the genre of brief protective teachings (segulot / remedies) within Likutay Moharan, distinct from the longer typological-mystical Torahs. Its contribution to the graph is modest in scale but structurally precise."
+}

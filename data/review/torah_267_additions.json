@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "source": "Torah #267",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [],
+    "source_text_analysis": {
+      "full_text": "שָׁבוּעוֹת הוּא רְפוּאָה לְהָרֵאָה, כִּי חֲמִשָּׁה כַּנְפֵי רֵאָה כְּנֶגֶד חֲמִשָּׁה חֻמְשֵׁי תוֹרָה (תיקון כה), וּבְשָׁבוּעוֹת מְקַבְּלִין הַתּוֹרָה, יְכוֹלִין לְקַבֵּל חִיּוּת חָדָשׁ",
+      "translation": "Shavuot is a healing for the lung, because the five lobes of the lung correspond to the five books of the Torah (Tikun 25), and on Shavuot we receive the Torah, [so] we can receive new vitality.",
+      "bechina_language_found": false,
+      "explanation": "The source text uses 'כְּנֶגֶד' (corresponding to / parallel to), which describes a structural numerical correspondence (5 lobes = 5 books). This is not the standard bechina identity formula ('X הוּא בְחִינַת Y' — X is an aspect of Y). The teaching's logical structure is eitza (cause-effect): because Shavuot is when we receive the Torah, and the Torah's five books parallel the five lung lobes, receiving the Torah on Shavuot brings healing to the lung and the ability to receive new vitality. The entire Torah is a single eitza chain. No bechina pairs were identified.",
+      "concepts_present": [
+        {
+          "node_id": "שבועות",
+          "note": "Already in dataset as node1 of edge 2773 (eitza)"
+        },
+        {
+          "node_id": "רפואה להראה",
+          "note": "Already in dataset as node2 of edge 2773 (eitza)"
+        },
+        {
+          "node_id": "חמשה כנפי ראה",
+          "note": "Mentioned in the proof text of edge 2773 as the basis for the structural correspondence; not a separate bechina node"
+        },
+        {
+          "node_id": "חמשה חומשי תורה",
+          "note": "Mentioned in the proof text of edge 2773 as the basis for the structural correspondence; not a separate bechina node"
+        },
+        {
+          "node_id": "חיות חדש",
+          "note": "The outcome of receiving the Torah on Shavuot — part of the eitza chain, not a bechina"
+        }
+      ],
+      "potential_bechina_to_investigate": "The correspondence 'חֲמִשָּׁה כַּנְפֵי רֵאָה כְּנֶגֶד חֲמִשָּׁה חֻמְשֵׁי תוֹרָה' could potentially be encoded as a bechina between 'כנפי ראה' and 'חומשי תורה', since both are five-fold structures that share the same essential number and form. If future enrichment is done on this Torah, this pair should be considered. The source from Tikunei Zohar (תיקון כה) grounds this as a shared-nature claim, not merely a coincidence of number."
+    }
+  }
+}

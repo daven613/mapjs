@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "source": "Torah #210",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===210 AND type==='bechina'. Only 1 bechina edge found in the dataset (ID 107: 'ואהבת' ↔ אברהם). This yields a single connected component of 2 nodes. Torah #210 is a very short teaching (3 sentences) — its conceptual structure is deliberately compact: one central bechina identity (love of God = the quality of Abraham) with a single eitza chain flowing from it (honest dealings → ואהבת/Abraham → easy livelihood). No merging was required since there is only one component."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 210,
+      "label": "וְאָהַבְתָּ וְאַבְרָהָם",
+      "label_en": "The Love of God and Abraham",
+      "polarity": "good",
+      "reason": "The sole bechina edge in Torah #210 equates 'וְאָהַבְתָּ' (the mitzvah of loving God, Devarim 6:5) with אַבְרָהָם (the patriarch Abraham). The teaching's proof is twofold: (1) The Sages (Yoma 86) interpret 'וְאָהַבְתָּ' as causing Hashem's name to become beloved through one's conduct — and Abraham is the paradigm of this conduct. (2) The splitting of the Red Sea occurred through 'זְכוּת אַבְרָהָם בְּחִינַת וְאָהַבְתָּ' (Abraham's merit, which is the bechina of ואהבת), and the verse confirms this: 'וַיָּשָׁב הַיָּם לִפְנוֹת בֹּקֶר' = 'דָּא בֹּקֶר דְּאַבְרָהָם'. Abraham and ואהבת share the same essential quality: the love that makes Hashem's name beloved in the world. Abraham is not the cause of ואהבת nor its product — he IS the living embodiment of that quality. They are two faces of the same divine love-force: ואהבת as commandment/ideal, Abraham as its archetypal human expression.",
+      "dominant_node": "\"ואהבת\"",
+      "nodes": [
+        "\"ואהבת\"",
+        "אברהם"
+      ],
+      "node_degrees": {
+        "\"ואהבת\"": 1,
+        "אברהם": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "note_on_structure": "Torah #210 is an exceptionally compact teaching — it is 3 sentences in the source text and represents only a summary of a larger oral teaching (the text ends with 'לשון רבנו זכרונו לברכה' framing markers, indicating this is a condensed record). Its single bechina edge captures the essence: ואהבת = אברהם. The eitza chain (משא ומתן באמונה → ואהבת → פרנסה) is the practical application built upon this bechina foundation. The third node in the teaching (משא ומתן באמונה) is connected only through eitza edges, not bechina edges, and therefore does not form part of the package structure. It is the practical eitza that produces the bechina-state of ואהבת/אברהם."
+  }
+}

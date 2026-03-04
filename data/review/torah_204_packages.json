@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "source": "Torah #204",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===204 AND type==='bechina'. Two bechina edges found (IDs 3089 and 3139), forming a single connected component of 3 nodes. Torah #204 is one of the shortest teachings in Likutay Moharan — four sentences establishing that money given to a Torah scholar is literally equivalent to Torah itself, not merely a support of Torah."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 204,
+      "label": "מָעוֹת וְתוֹרָה",
+      "label_en": "Money for a Torah Scholar and Torah",
+      "polarity": "good",
+      "reason": "The single connected component in Torah #204 groups three concepts that share the same essential nature: (1) מעות שנותנין לתלמיד חכם — money given to a Torah scholar, (2) תמכי אוריתא — supporters of Torah (the Aramaic designation from Proverbs 3:18 as understood in rabbinic literature), and (3) תורה — Torah itself. The Rebbe's teaching makes an escalating bechina claim: first, that this money is a bechina of tamchei oraita (expected, conventional), and second, the deeper revelation that this money is literally bechina of Torah itself (surprising, elevated). The notarikon proof — that מָעוֹת is an acronym for וְאֵין עֲבֵירָה מְכַבָּה תּוֹרָה — confirms and seals the bechina equation rather than adding a new independent bechina. All three nodes are in the domain of holiness (Torah, study, its supporters) and share the same positive polarity. The dominant node (most connected) is מעות שנותנין לתלמיד חכם, which serves as the bridge between the known identification (tamchei oraita) and the deeper identification (Torah itself).",
+      "dominant_node": "מעות שנותנין לתלמיד חכם",
+      "nodes": [
+        "מעות שנותנין לתלמיד חכם",
+        "תורה",
+        "תמכי אוריתא"
+      ],
+      "node_degrees": {
+        "מעות שנותנין לתלמיד חכם": 2,
+        "תורה": 1,
+        "תמכי אוריתא": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 2,
+    "total_nodes": 3,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "note_on_merges": "1 raw component: 3 nodes (מעות שנותנין לתלמיד חכם, תורה, תמכי אוריתא) — no merges needed, single component forms one package."
+  }
+}

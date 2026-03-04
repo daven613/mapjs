@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "source": "Torah #177",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 177,
+      "label": "עָקֵב וְיַעֲקֹב",
+      "label_en": "The Heel and Jacob",
+      "polarity": "good",
+      "reason": "All three nodes share the essential nature of the humble, lowly dimension that is paradoxically exalted — the 'dal/akev' quality of Yaakov. The text states explicitly: 'יתגדל — תגי דל, שהוא תגי = כתר, דל = בחינת יעקב שהוא עקב בחינת דל.' The heel (עקב) is Jacob's essence — the lowest limb, the heel that trails behind — and that lowliness is the same as 'dal' (the poor one). The Kaddish word 'yitgadal' is parsed as תגי+דל, where 'dalet' specifically represents Jacob-as-heel-as-poor. These three concepts are different expressions of the same essential quality: humble smallness that is Israel's foundational identity and the basis of Kaddish's opening word.",
+      "dominant_node": "דל",
+      "nodes": [
+        "עקב",
+        "דל",
+        "יעקב"
+      ],
+      "node_degrees": {
+        "עקב": 1,
+        "דל": 2,
+        "יעקב": 1
+      },
+      "merge_notes": [
+        "Raw bechina component: {עקב, דל, יעקב} — 3 nodes, 2 edges (id=746: עקב↔דל; id=1370: דל↔יעקב). No merges needed; the component is fully formed from the dataset."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 177,
+      "label": "מַלְכוּת וְרָצוֹן",
+      "label_en": "Kingship and Will",
+      "polarity": "good",
+      "reason": "All three nodes share the essential nature of divine malkhut as rooted in ratzon (will/desire). The text teaches: 'מלכות הוא בחינת כבוד' (Tehilim 145:11); 'והוא בחינת רצון, כי רצונו של אדם זהו כבודו' (Yerushalmi Peah 1). The Kaddish phrase 'ויַמְלִיךְ מַלְכוּתֵהּ' is conditioned on a person submitting their ratzon entirely to God's ratzon — 'עיקר המלכות מהרצון.' These three concepts are structurally identical: kavod = the outward glory of the king; malkhut = the institution of kingship; ratzon = the inner volitional essence that makes both possible. They are three faces of one domain: the holy kingdom that is constituted and expanded by total submission of will to God.",
+      "dominant_node": "כבוד",
+      "nodes": [
+        "מלכות",
+        "כבוד",
+        "רצון"
+      ],
+      "node_degrees": {
+        "מלכות": 1,
+        "כבוד": 2,
+        "רצון": 1
+      },
+      "merge_notes": [
+        "Raw bechina component: {מלכות, כבוד, רצון} — 3 nodes, 2 edges (id=1443: מלכות↔כבוד; id=2778: כבוד↔רצון). No merges needed; component is fully formed."
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 177,
+      "label": "רֹאשׁ וּמֹחִין",
+      "label_en": "Head and Brains",
+      "polarity": "good",
+      "reason": "These two nodes share the essential nature of the intellectual/spiritual consciousness dimension — the supreme faculty through which a true tzaddik receives holy awareness and can atone for sin. The text states: 'כשנעשה ראש שהוא בחינות מחין, על-ידי-זה הוא יכול לכפר עוונות.' The rosh is not merely a physical head but the spiritual state of 'mochin' — expanded holy consciousness, described also as 'שמן משחת קדש' and 'כשמן הטוב על הראש.' Rosh and mochin are directly equated in the text as the same bechina: being a rosh = having mochin. This is the apex of the Torah's vertical axis — the faculty that enables everything else.",
+      "dominant_node": "מחין",
+      "nodes": [
+        "ראש",
+        "מחין"
+      ],
+      "node_degrees": {
+        "ראש": 1,
+        "מחין": 1
+      },
+      "merge_notes": [
+        "Raw bechina component: {ראש, מחין} — 2 nodes, 1 edge (id=1741: ראש↔מחין). This is a small isolated pair.",
+        "Merge candidate considered: Could ראש/מחין merge with מלכות/כבוד/רצון? Rejected — they operate in different domains. Mochin/rosh = the cognitive/spiritual faculty; malkhut/ratzon = the volitional/royal dimension. These are not the same essential nature; they stand in causal relation (mochin → capacity for kavod/ratzon alignment) rather than parallel identity.",
+        "Merge candidate considered: Could ראש/מחין merge with עקב/דל/יעקב? Rejected — opposite ends of the vertical axis. עקב/דל = the low/humble; ראש/מחין = the high/expanded. Their relationship is structural (head vs. heel of the same body = the full Kaddish: יתגדל is about the dalet/heel while רבא relates to mochin), not shared nature.",
+        "Verdict: Keep as standalone 2-node package. The ראש/מחין pair is a genuine, self-contained conceptual unit central to the Torah's opening argument."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 5,
+    "total_nodes": 8,
+    "total_packages": 3,
+    "raw_connected_components": 3,
+    "raw_component_breakdown": {
+      "component_A_heel_jacob": "3 nodes: עקב, דל, יעקב",
+      "component_B_malkhut_ratzon": "3 nodes: מלכות, כבוד, רצון",
+      "component_C_head_mochin": "2 nodes: ראש, מחין"
+    },
+    "note": "Torah #177 has very sparse bechina coverage — only 5 bechina edges across 8 distinct nodes. The Torah itself is rich (multiple eitza edges recorded, plus the Kaddish analysis covers concepts like ישראל, כתר, שדי, באר, רצון in detail) but those connections are recorded as eitza or not yet entered into the dataset as bechina. The 11 total edges for reference=177 break down as: 5 bechina + 6 eitza."
+  }
+}

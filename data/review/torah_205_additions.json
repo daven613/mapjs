@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "source": "Torah #205",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_205_packages.json, all reference===205 edges from torahData.js, and the full source text torah_205.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset for Torah 205. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, לְשׁוֹן) were considered. The Torah is short (11 lines), so all lines were examined exhaustively."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "חֶסֶד וּגְבוּרָה וְהַדַּעַת",
+      "node_id": "אשרי",
+      "node_text": "אַשְׁרֵי",
+      "polarity": "good",
+      "reason": "Source text line 4 states explicitly: 'אַשְׁרֵי הוּא לְשׁוֹן רְאִיָּה וְהִסְתַּכְּלוּת' — 'Ashrei is a language of sight and contemplation.' This is an explicit bechina statement (לְשׁוֹן X = X is an aspect of Y) establishing that אַשְׁרֵי = ראיה/הסתכלות. The Rebbe then says this is the opposite of the klipa whose power comes from 'קִלְקּוּל הָרְאוּת' (corruption of sight). אשרי belongs to Package 1 because it is one of the 10 languages of Psalms (itself a node in Package 1 via edge 2460: עשרה לשונות) and it embodies the positive capacity of sight/vision — the counterforce to the klipa's corruption of seeing. In this Torah, sight/vision is a dimension of the holy domain that חסד/דעת restore when the tikkun is performed.",
+      "source_quote": "אַשְׁרֵי הוּא לְשׁוֹן רְאִיָּה וְהִסְתַּכְּלוּת – הֶפֶךְ הַקְּלִפָּה הַנַּ\"ל שֶׁעִקַּר כֹּחָהּ מִקִּלְקּוּל הָרְאוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "חֶסֶד וּגְבוּרָה וְהַדַּעַת",
+      "node_id": "משכיל",
+      "node_text": "מַשְׂכִּיל",
+      "polarity": "good",
+      "reason": "Source text line 5 states: 'וְכֵן מַשְׂכִּיל... הֶפֶךְ מִזֶּה' — the song-heading מַשְׂכִּיל is the opposite of the klipa's meshakkel (the Aramaic 'מְשַׁכֵּל'). The Rebbe explicitly says 'כִּי הִיא בְּחִינַת מְשַׁכֵּל, וּמַשְׂכִּיל הוּא הֶפֶךְ מִזֶּה' — the klipa is a bechina of the destructive meshakkel (infanticide/bereavement), while מַשְׂכִּיל is its opposite/tikkun. The לְשׁוֹן-framing is explicit: the heading מַשְׂכִּיל names a spiritual capacity (insight/understanding) that is the positive counterpart to what the klipa causes. מַשְׂכִּיל belongs to Package 1 as one of the 10 languages of Psalms (עשרה לשונות, edge 2460) that counteracts the klipa — it is the positive aspect of intellect/consciousness in the context of the tikkun.",
+      "source_quote": "כִּי הִיא בְּחִינַת מְשַׁכֵּל, וּמַשְׂכִּיל הוּא הֶפֶךְ מִזֶּה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "חֶסֶד וּגְבוּרָה וְהַדַּעַת",
+      "node_id": "הללויה",
+      "node_text": "הַלְלוּיָהּ",
+      "polarity": "good",
+      "reason": "Source text line 6 states: 'הַלְלוּיָה – הֶפֶךְ הַקְּלִפָּה, שֶׁשְּׁמָהּ לִילִית עַל שֵׁם שֶׁהִיא מְיַלֶּלֶת בִּילָלָה תָּמִיד, וְהַלֵּל הֶפֶךְ יְלָלָה, כִּי אוֹתִיּוֹת הַלְּלִי הֵם הֶפֶךְ יְלָלָה' — הַלְלוּיָה is the opposite of ילל (wailing, howling), and the letters הַלְּלִי are the reverse/opposite of יְלָלָה. This is an explicit bechina through letter-inversion: הַלְלוּיָה = שיר (praise/song) as the exact counterforce to the klipa's howling. הַלְלוּיָה belongs to Package 1 as one of the 10 languages of Psalms (עשרה לשונות, edge 2460). It is the vocal/praise dimension of the positive domain that counteracts the klipa's signature sound.",
+      "source_quote": "הַלְלוּיָה – הֶפֶךְ הַקְּלִפָּה, שֶׁשְּׁמָהּ לִילִית עַל שֵׁם שֶׁהִיא מְיַלֶּלֶת בִּילָלָה תָּמִיד, וְהַלֵּל הֶפֶךְ יְלָלָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_205_edges": 8,
+    "total_reference_205_bechina_edges": 6,
+    "total_reference_205_eitza_edges": 2,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["חסד וגבורה", "אל אלקים", "דעת", "חמימות ולחות", "טפה", "חמשה חסדים וחמש גבורות", "עשרה מיני זמרה", "עשרה לשונות שנאמר בהם ספר תהלים"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["אשרי", "משכיל", "הללויה"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "תהלים (the word / book)",
+        "reason": "The Rebbe says תְּהִלִּים בְּגִימַטְרִיָּא תפ\"ה, שֶׁהוּא מְכֻוָּן כְּמִסְפַּר הַשְּׁנֵי שֵׁמוֹת אֵל אֱלֹקִים. This is a gematria equation, not a bechina statement. The equation is used to establish the bechina of אל אלקים = חסד וגבורה (already in dataset as edge 1211), but תהלים itself is not declared a bechina of anything — it is described as numerically equivalent. Excluded per framework strictness rule (gematria ≠ bechina)."
+      },
+      {
+        "concept": "לילית (Lilith, the klipa's ruler)",
+        "reason": "The text says 'לִילִית עִם הַחֲמֵשׁ אוֹתִיּוֹת שֶׁל שְׁמָהּ' in a gematria context, and her name derives from ילל (howling). These are etymological/gematria observations, not bechina declarations. The text does NOT say 'לִילִית הִיא בְּחִינַת X'. She is described as the ruler/controller of this domain, not equated to another concept via בְּחִינַת language."
+      },
+      {
+        "concept": "קלפה (klipa / the demonic shell)",
+        "reason": "The klipa is described as having its power from קִלְקּוּל הָרְאוּת (corruption of sight), and as being בְּחִינַת מְשַׁכֵּל (the Aramaic word for causing bereavement/child-loss). The second usage is a bechina of the klipa — however, this bechina is inverted: the klipa IS a bechina of מְשַׁכֵּל, but the Rebbe's teaching establishes this only to contrast with מַשְׂכִּיל (the positive song-heading). Since the dataset has no entry for 'קלפה' as a node for Torah 205, and the klipa's identity is not further elaborated via bechina chains, it is treated as background context rather than a gap-node requiring addition. The evil side of this Torah is handled in the new_packages analysis."
+      },
+      {
+        "concept": "תרגום (Aramaic translation / targum)",
+        "reason": "Line 5 says 'עִקַּר כֹּחָהּ לְהַחֲטִיא אֶת הָאָדָם בְּמִקְרֶה... הוּא עַל־יְדֵי לְשׁוֹן תַּרְגּוּם, שֶׁהוּא בְּחִינַת מַשְׂכִּיל עַל יְדֵי תֻּרְגְּמָן, שֶׁהוּא מְעֹרָב טוֹב וָרַע'. The text says the klipa's power operates through לְשׁוֹן תַּרְגּוּם — Aramaic — which is a בְּחִינַת מַשְׂכִּיל עַל יְדֵי תֻּרְגְּמָן (understanding-via-interpreter, mixed good and evil). This IS a bechina statement, but it is the bechina of the EVIL side of the klipa's mechanism. The Rebbe refers to an earlier Torah (Torah 19) for elaboration. As a specialized evil-domain concept that is an aside in the text (directing the reader elsewhere), and with no corresponding dataset edge for Torah 205, it is a borderline addition. However it lacks the crisp three-way parallels of the three good concepts above. It is noted here but not included as an addition because: (a) it is the klipa's mechanism, not a primary bechina concept of the Torah's argument; (b) the Rebbe explicitly redirects to Torah 19 for this; (c) there is no dataset edge for this for Torah 205."
+      },
+      {
+        "concept": "ראיה / הסתכלות (sight / contemplation)",
+        "reason": "Line 4 says אשרי הוא לשון ראיה והסתכלות. The terms ראיה and הסתכלות are not declared as independent bechina-concepts — they are the definition of אשרי. The bechina node is אשרי, which is proposed as an addition above. ראיה/הסתכלות as abstract concepts are the content of the אשרי definition, not separate nodes. Not added separately."
+      },
+      {
+        "concept": "נאף (adultery/fornication)",
+        "reason": "Line 9 says 'לְדָוִד מַשְׂכִּיל אַשְׁרֵי נְשׂוּי פֶּשַׁע – רָאשֵׁי־תֵבוֹת נַאַף'. This is an acronym observation (the initial letters of the verse spell נאף), not a bechina statement. The verse is cited as a support, not as establishing a conceptual equivalence via בְּחִינַת language."
+      }
+    ]
+  }
+}

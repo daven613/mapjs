@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "source": "Torah #279",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0
+  },
+  "analysis_note": "Torah #279 has zero bechina edges in the dataset (reference === 279 AND type === 'bechina' returns no results; the reference value 279 does not appear anywhere in torahData.js). The source text itself DOES contain explicit bechina language — the Rebbe uses 'בִּבְחִינַת שׁוֹפָר' and 'בִּבְחִינוֹת' twice in sentence 3 — but those concepts have not yet been entered into the dataset. Because the algorithm builds packages from dataset bechina edges (connected components), no packages can be generated from an empty subgraph. All identified bechina connections from the source text are documented in torah_279_additions.json and the new-package proposals are in torah_279_new_packages.json."
+}

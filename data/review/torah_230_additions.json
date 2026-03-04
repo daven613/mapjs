@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "source": "Torah #230",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": null,
+      "node_id": "חכמה",
+      "node_text": "חָכְמָה",
+      "polarity": "good",
+      "reason": "Wisdom is the central concept of this Torah. The Rebbe teaches 'כִּי הַחָכְמָה הוּא בַּפָּנִים' — wisdom IS the face. Wisdom is not the cause of the face shining; wisdom and the face share the same essential nature. The verse from Kohelet (8:1) 'חָכְמַת אָדָם תָּאִיר פָּנָיו' grounds this bechina: wisdom illuminates/IS the face.",
+      "source_quote": "כִּי הַחָכְמָה הוּא בַּפָּנִים כַּנַּ\"ל",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "פנים",
+      "node_text": "פָּנִים",
+      "polarity": "good",
+      "reason": "The face is the bechina of wisdom. The teaching states explicitly 'חָכְמַת אָדָם תָּאִיר פָּנָיו' — a man's wisdom illuminates his face — and then draws the equation: when the student receives his teacher's wisdom, he receives his face. The face is not merely lit by wisdom; it IS the outward form of wisdom.",
+      "source_quote": "כְּשֶׁהַתַּלְמִיד מְקַבֵּל חָכְמַת רַבּוֹ הוּא מְקַבֵּל פָּנָיו",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "חכמת הרב",
+      "node_text": "חָכְמַת הָרַב",
+      "polarity": "good",
+      "reason": "The teacher's wisdom is the specific instantiation of חכמה in this Torah. Receiving the teacher's wisdom and receiving the teacher's face are described as the same act — making חָכְמַת הָרַב and פְּנֵי הָרַב bechinas of each other, and both bechinas of the general חכמה-פנים equivalence.",
+      "source_quote": "כְּשֶׁהַתַּלְמִיד מְקַבֵּל חָכְמַת רַבּוֹ הוּא מְקַבֵּל פָּנָיו",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "פני הרב",
+      "node_text": "פְּנֵי הָרַב",
+      "polarity": "good",
+      "reason": "The teacher's face is a bechina of the teacher's wisdom. The Torah equates them: receiving wisdom = receiving the face. Furthermore, the student who gazes at his teacher's face while receiving the wisdom internalizes that face — which is why the student's face later carries the imprint of the teacher's wisdom. The face of the teacher is the concrete form of the abstract wisdom.",
+      "source_quote": "וּבִשְׁבִיל זֶה צָרִיךְ לְהִסְתַּכֵּל בִּפְנֵי רַבּוֹ בְּשָׁעָה שֶׁמְּקַבֵּל חָכְמָתוֹ",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "חכמה",
+      "פנים",
+      "חכמת הרב",
+      "פני הרב"
+    ],
+    "dataset_status": "Torah #230 has ZERO bechina edges in torahData.js. The entire bechina subgraph must be reconstructed from the source text.",
+    "torah_summary": "Torah #230 is a very short teaching (two sentences) that establishes one core bechina: wisdom (חכמה) IS the face (פנים), grounded in Kohelet 8:1. The practical consequence (eitza) is that a student who receives his teacher's wisdom receives his teacher's face — so a perceptive person can look at a student's face and identify who his teacher is. The Torah cites Isaiah 30:20 ('your eyes shall see your teacher') as support for the practice of gazing at one's teacher while receiving wisdom.",
+    "explicit_bechina_language_found": [
+      {
+        "phrase": "כִּי הַחָכְמָה הוּא בַּפָּנִים",
+        "translation": "for wisdom IS in/of the face",
+        "nodes": ["חכמה", "פנים"],
+        "relationship_type": "bechina — explicit equation using הוא"
+      },
+      {
+        "phrase": "כְּשֶׁהַתַּלְמִיד מְקַבֵּל חָכְמַת רַבּוֹ הוּא מְקַבֵּל פָּנָיו",
+        "translation": "when the student receives his teacher's wisdom, he receives his teacher's face",
+        "nodes": ["חכמת הרב", "פני הרב"],
+        "relationship_type": "bechina — receiving one = receiving the other (symmetric equivalence)"
+      }
+    ],
+    "eitza_relationships_not_to_be_packaged_together": [
+      {
+        "from": "חכמה / פנים package",
+        "to": "ability to recognize the teacher from the student's face",
+        "direction": "חכמה-פנים bechina → (eitza) → recognition of rabbi from student's face"
+      }
+    ]
+  }
+}

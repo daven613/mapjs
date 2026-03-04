@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "source": "Torah #217",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, scanned all edges in torahData.js for reference===217 AND type==='bechina' (found exactly one: id 180.0, הַלּוּחוֹת ↔ אות וא\"ו). Read the full source text torah_217.txt. For each statement in the source text, checked for explicit bechina language (הוּא בְּחִינַת, הֵם בְּחִינַת, לְשׁוֹן, נִקְרָא, כַּנַּ\"ל) and identified all bechina equations. Torah #217 is a 3-sentence teaching presenting a single structural insight: the missing vav in the word Tammuz reflects the loss of the Tablets (= vav) through their breaking. The one bechina equation in the text is already captured in the dataset as edge 180.0."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges_in_dataset": 1,
+    "total_bechina_edges_in_source_text": 1,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "זִכָּרוֹן (zikharon — memory/remembrance): Appears in line 1 as the positive remedy ('לְהַמְשִׁיךְ הַזִּכָּרוֹן לְתַקֵּן הַשִּׁכְחָה'). Functions as an eitza target — the goal of the spiritual practice in Tammuz. No bechina identification is made for זִכָּרוֹן in this Torah.",
+      "שִׁכְחָה (shikhhah — forgetting/oblivion): Appears in line 1 as the problem caused by the broken Tablets ('עַל יְדֵי הַלּוּחוֹת שֶׁנִּשְׁתַּבְּרוּ נִתְהַוָּה הַשִּׁכְחָה'). The causal chain is explicitly eitza language ('עַל יְדֵי... נִתְהַוָּה'), not a bechina identification. No bechina equation is made for שִׁכְחָה in this Torah.",
+      "שְׁבִירַת הַלּוּחוֹת (breaking of the Tablets): The event that caused the removal of the vav from Tammuz. Functions as an eitza cause, not a bechina node.",
+      "חֹדֶשׁ תַּמּוּז (the month of Tammuz): The temporal setting of the teaching. Its missing vav is the structural phenomenon being explained. The relationship between Tammuz and the Tablets/vav is an eitza derivation (the missing vav in the word results FROM the breaking of the Tablets), not a bechina equation between Tammuz and another concept.",
+      "מַתַּן תּוֹרָה (giving of the Torah): Mentioned in line 3 as a second phrase whose acrostic spells Tammuz. Context/historical background, not a bechina node."
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "חסרון הוא\"ו / תמוז חסר וא\"ו (the missing vav of Tammuz)",
+        "reason": "The Rebbe observes that the word Tammuz in both acrostics is spelled deficient (without vav). He explains this through the bechina הַלּוּחוֹת = וָאו — when the Tablets (vav) were broken, the vav was removed from Tammuz. This is causal/eitza reasoning: the breaking of the Tablets caused the disappearance of the vav. The missing vav is a symptom/consequence, not a bechina concept sharing essential nature with another node. No separate bechina edge for 'תמוז חסר וא\"ו' is proposed."
+      },
+      {
+        "concept": "שֵׁשׁ / שִׁשָּׁה (the number six)",
+        "reason": "The Talmudic proof for the Tablets = vav identification is: the Tablets were 6 × 6 cubits. The number six serves as the bridge linking the physical dimensions of the Tablets to the numerical value of vav (= 6). However, the number six is cited only as the proof for the bechina הַלּוּחוֹת = וָאו, not as an independent bechina node in its own right. The Rebbe does not say 'שִׁשָּׁה is a bechina of X' — he cites the sixfold dimensions as evidence that the Tablets are vav. The proof-substance is absorbed into the bechina equation already captured in edge 180.0."
+      }
+    ],
+    "gap_explanation": "Torah #217 has exactly one bechina edge in the existing dataset (id 180.0: הַלּוּחוֹת ↔ אות וא\"ו), and the source text contains exactly one bechina declaration. The dataset edge fully captures the source text's bechina content. There are no missing bechina edges, no unassigned nodes, and no gap between the dataset and the source text for this Torah.",
+    "source_text_summary": "Torah #217 is a 3-sentence acrostic-based teaching keyed to the month of Tammuz. The Rebbe observes that the opening words of the last verse of the book of Malachi — 'זִכְרוּ תּוֹרַת מֹשֶׁה' (Remember the Torah of Moses) — have initial letters that spell תַּמֻּז (Tammuz), but the word is written without the vav (deficient spelling). He teaches that in Tammuz one must draw down memory (זִכָּרוֹן) to repair forgetting (שִׁכְחָה), because the Tablets were broken in Tammuz and the sages teach that had the first Tablets not been broken, Torah would never have been forgotten from Israel. The reason Tammuz lacks the vav is that the Tablets ARE a bechina of the letter vav — their dimensions (6 × 6 cubits, per Bava Batra 14) demonstrate this. When the Tablets were broken, the vav was removed from the word. A second acrostic confirms the same: 'זְמַן מַתַּן תּוֹרָתֵנוּ' (Time of the giving of our Torah) also spells Tammuz (missing vav), because the Tablets were given in Tammuz and then broken. The teaching is a structural meditation on absence: the vav's absence from the word Tammuz encodes the tragedy of the Tablets' breaking and the resulting forgetting of Torah.",
+    "structural_observations": [
+      "Torah #217 is built on a single bechina: הַלּוּחוֹת = וָאו. This single equation does all the explanatory work of the teaching — it explains why Tammuz lacks the vav (the vav IS the Tablets; break the Tablets and you remove the vav from the word).",
+      "The teaching has no evil mirror structure. Unlike many Rebbe Nachman Torahs that develop an opposing evil force, Torah #217 is a structural/historical teaching: it explains a phenomenon (missing vav in Tammuz) through a bechina equation and a historical event (breaking of the Tablets). The evil dimension — שִׁכְחָה — is not developed as a bechina package but as an eitza consequence.",
+      "The eitza chain is: [שְׁבִירַת הַלּוּחוֹת] --eitza--> [נִסְתַּלֵּק הַוָּאו / שִׁכְחָה]; and the prescription: [הַמְשָׁכַת זִכָּרוֹן בְּחֹדֶשׁ תַּמּוּז] --eitza--> [תִּקּוּן הַשִּׁכְחָה].",
+      "The two acrostics (זִכְרוּ תּוֹרַת מֹשֶׁה = תַּמֻּז; זְמַן מַתַּן תּוֹרָתֵנוּ = תַּמֻּז) reinforce each other. The first is about the remedy (remember = draw down memory); the second is about the event (the giving of the Torah in Tammuz). Both share the same missing vav, and both are explained by the same single bechina.",
+      "The Talmudic citation (Bava Batra 14: 'הַלּוּחוֹת אָרְכָּן שִׁשָּׁה וְרָחְבָּן שִׁשָּׁה') serves as the empirical proof for the bechina identification. This is the standard Rebbe Nachman method: a Talmudic or Biblical source is cited to demonstrate that two concepts are structurally identical — here, the sixfold dimensions are proof that the Tablets share the essential nature of vav (numerical value 6)."
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "source": "Torah #206",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #206 has zero bechina edges in the dataset (the only edge with reference===206 in torahData.js is id 422, type 'eitza': אִם נִתְעוֹרֵר תֵּכֶף וּמִיָּד וְשָׁב בִּתְשׁוּבָה → אֶפְשָׁר לוֹ בְּקַל לַחֲזֹר לִמְקוֹמוֹ). However, the source text (torah_206.txt) contains explicit bechina language that generates two missing edges and one new package. The teaching is based on Psalm 119:176: 'I have gone astray like a lost sheep; seek Your servant, for I have not forgotten Your commandments.' Its core argument: early repentance is easy because the sinner still recognizes the voice of Torah/God calling him back; prolonged sinning causes him to forget that voice. The central bechina identification appears in line 3: 'הַתּוֹרָה הוּא הַשֵּׁם יִתְבָּרַךְ בְּעַצְמוֹ' — Torah IS God Himself (the one calling the sinner to return). A second bechina appears in lines 9–10: 'קוֹל הַקְּרִיאָה שֶׁל הַמִּצְווֹת, שֶׁהֵם הַתּוֹרָה' — the mitzvot ARE the Torah (they share the same essential nature as the calling voice). These two bechina statements generate one connected component of three nodes: תורה, השם יתברך, מצוות — forming a single 'good' package centered on the identity of Torah as both God's presence and His commandments-voice."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 206,
+      "label": "תּוֹרָה וְהַשֵּׁם יִתְבָּרַךְ",
+      "label_en": "Torah and God",
+      "polarity": "good",
+      "reason": "This package is formed from two explicit bechina identifications in the source text. First, line 3 states directly: 'הַתּוֹרָה הוּא הַשֵּׁם יִתְבָּרַךְ בְּעַצְמוֹ' — Torah IS God Himself. The word 'הוּא' is the strongest possible bechina declaration: not an analogy, not a metaphor, but direct essential identity. Second, lines 9–10 state: 'קוֹל הַקְּרִיאָה שֶׁל הַמִּצְווֹת, שֶׁהֵם הַתּוֹרָה' — the commandments ARE the Torah (שֶׁהֵם = 'they are'). By transitivity of bechina: if Torah = God and mitzvot = Torah, then the three concepts — תורה (Torah), השם יתברך (God Himself), and מצוות (the commandments) — form one bechina cluster. They are three expressions of the same underlying reality: the divine calling-voice that calls the sinner back from the path of error. The polarity is 'good': all three concepts belong to the domain of holiness, the positive teaching, the calling that draws the soul toward the straight path (דֶּרֶךְ הַיָּשָׁר). The dominant node is תורה, which is connected to both other nodes and also appears in the dataset for many other Torahs, making it the central bridge concept.",
+      "dominant_node": "תורה",
+      "nodes": [
+        "תורה",
+        "השם יתברך",
+        "מצוות"
+      ],
+      "node_degrees": {
+        "תורה": 2,
+        "השם יתברך": 1,
+        "מצוות": 1
+      },
+      "merge_notes": [
+        "This package is derived from close reading of the source text. There are zero bechina edges in torahData.js for reference 206.",
+        "The first bechina (תורה = השם יתברך) is stated in line 3: 'וְהַתּוֹרָה הוּא הַשֵּׁם יִתְבָּרַךְ בְּעַצְמוֹ, שֶׁהוּא קוֹרֵא אוֹתָם וּמְבַקְּשָׁם שֶׁיַּחְזְרוּ אֵלָיו.' The Rebbe has just cited the Talmudic Aramaic formula 'אוֹרַיְתָא מַכְרֶזֶת קַמַּיְהוּ' (Torah proclaims before them) and then explains: Torah IS God Himself, who calls them and seeks them to return.",
+        "The second bechina (מצוות = תורה) is stated in lines 9–10: 'קוֹל הַקְּרִיאָה שֶׁל הַמִּצְווֹת, שֶׁהֵם הַתּוֹרָה' — the calling-voice of the commandments, which ARE Torah. The Rebbe identifies mitzvot and Torah as the same reality: hearing/remembering the mitzvot is hearing/remembering the Torah is hearing God's calling voice.",
+        "The node 'השם יתברך' does not appear as a standalone node_id in the existing dataset (God is typically referenced as the source/context, not as a node). For this Torah's context, the identification 'הַתּוֹרָה הוּא הַשֵּׁם יִתְבָּרַךְ בְּעַצְמוֹ' makes 'השם יתברך' an explicit bechina node — the one who IS Torah, who IS the calling voice. This is a new node that appears in the dataset as a concept but not as a standalone node_id in the bechina graph.",
+        "The 'קוֹל הַקְּרִיאָה' (voice of the calling) and 'קוֹל הַתּוֹרָה' (voice of Torah) are used interchangeably throughout the text (lines 4, 9, 10, 11), but they are not a separate bechina pair — they are descriptions of the same Torah/God/mitzvot node in its functional aspect (calling the sinner). They do not constitute a fourth node but rather describe the activity of the Package 1 nodes."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "notes": "Torah #206 has zero bechina edges in torahData.js. The single package above is derived from the source text's two explicit bechina declarations. The Torah's full argument flows: [עֲבֵרָה — sin] →eitza→ [תְּעִיָּה — going astray from דֶּרֶךְ הַיָּשָׁר] →eitza(inverse)→ [תְּשׁוּבָה is easy if early, hard if late]. The mechanism rests on the bechina cluster: [Package 1: תורה = השם יתברך = מצוות] — this cluster IS the קוֹל הַקְּרִיאָה (voice of calling). The soul that remembers this voice can return; the soul that has forgotten it cannot hear the call. The shepherd-sheep metaphor (lines 5, 8) illustrates this eitza structure. The good/evil polarity structure is simple here: Package 1 (good) = the divine calling side; the opposing side is the complex of תּוֹעִים (errant paths), which are described but never named as a bechina cluster — they are eitza consequences of sin, not a parallel package of evil nature-concepts."
+  }
+}

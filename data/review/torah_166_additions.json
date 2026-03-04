@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "source": "Torah #166 (Likutay Moharan Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_166_packages.json, all reference===166 edges from torahData.js (result: zero rows), and the full source text torah_166.txt. The source text is two sentences long. For each bechina-language statement in the source text, verified whether the concept appears as a node in the dataset. The formula 'נִקְרָא' (was called / is called) was treated as a bechina declaration per framework section 1.1 ('X נקרא Y — X is called Y'). Since the dataset has no edges at all for Torah #166, ALL bechina-derived nodes are new additions. Concepts identified as verse citations, background narrative, or explanatory context (not bechina statements) were examined and excluded."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "אִישׁ הָאֱלֹקִים וּמֶמְשָׁלַת הַצַּדִּיק",
+      "node_id": "אִישׁ הָאֱלֹקִים",
+      "node_text": "אִישׁ הָאֱלֹקִים",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly uses 'נִקְרָא' (was called) for this title: 'הָיָה נִקְרָא אִישׁ הָאֱלֹקִים'. The formula 'X נִקְרָא Y' is a standard bechina declaration in LM1 (framework section 1.1). The title 'Ish HaElohim' (Man of God) is the scriptural name for the tzaddik-with-community state. It is not currently a node in the dataset for reference 166. It should be added as a node in Package 1, connected via bechina to 'מֶמְשָׁלָה' and 'צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ'.",
+      "source_quote": "כְּשֶׁהָיוּ בְּנֵי הַנְּבִיאִים אֶצְלוֹ, הָיָה נִקְרָא אִישׁ הָאֱלֹקִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edges": [
+        {
+          "node1_id": "אִישׁ הָאֱלֹקִים",
+          "node2_id": "מֶמְשָׁלָה",
+          "type": "bechina",
+          "reference": 166,
+          "proof": "כְּשֶׁהָעוֹלָם אֵצֶל הַצַּדִּיק, אָז יֵשׁ לוֹ מֶמְשָׁלָה... כְּשֶׁהָיוּ בְּנֵי הַנְּבִיאִים אֶצְלוֹ, הָיָה נִקְרָא אִישׁ הָאֱלֹקִים"
+        },
+        {
+          "node1_id": "אִישׁ הָאֱלֹקִים",
+          "node2_id": "צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ",
+          "type": "bechina",
+          "reference": 166,
+          "proof": "כְּשֶׁהָיוּ בְּנֵי הַנְּבִיאִים אֶצְלוֹ, הָיָה נִקְרָא אִישׁ הָאֱלֹקִים"
+        }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "אִישׁ הָאֱלֹקִים וּמֶמְשָׁלַת הַצַּדִּיק",
+      "node_id": "מֶמְשָׁלָה",
+      "node_text": "מֶמְשָׁלָה",
+      "polarity": "good",
+      "reason": "The Rebbe opens with: 'כְּשֶׁהָעוֹלָם אֵצֶל הַצַּדִּיק, אָז יֵשׁ לוֹ מֶמְשָׁלָה'. The 'יֵשׁ לוֹ' (he has / it belongs to him) is an identity-defining statement: this condition IS memshala, and memshala IS this condition. The Rebbe then proves this bechina from the case of Elisha, using 'נִקְרָא' language. Memshala (dominion/rulership) is the conceptual name for what Ish HaElohim IS. It is not currently a node in the dataset for reference 166.",
+      "source_quote": "כְּשֶׁהָעוֹלָם אֵצֶל הַצַּדִּיק, אָז יֵשׁ לוֹ מֶמְשָׁלָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edges": [
+        {
+          "node1_id": "מֶמְשָׁלָה",
+          "node2_id": "צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ",
+          "type": "bechina",
+          "reference": 166,
+          "proof": "כְּשֶׁהָעוֹלָם אֵצֶל הַצַּדִּיק, אָז יֵשׁ לוֹ מֶמְשָׁלָה"
+        }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "אִישׁ הָאֱלֹקִים וּמֶמְשָׁלַת הַצַּדִּיק",
+      "node_id": "צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ",
+      "node_text": "צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ",
+      "polarity": "good",
+      "reason": "The compound concept 'the tzaddik when the world is gathered at him' is the active subject of the teaching. It is not simply 'the tzaddik' generically — the specific condition of having the world gathered is what defines this concept and what enables the bechina to Ish HaElohim and memshala. The Rebbe's proof (Elisha with his students = Ish HaElohim) confirms this: it is not Elisha alone but Elisha-with-students that IS Ish HaElohim. This node captures the combined tzaddik-plus-community reality that forms the Rebbe's subject. Not currently in the dataset for reference 166.",
+      "source_quote": "כְּשֶׁהָעוֹלָם אֵצֶל הַצַּדִּיק, אָז יֵשׁ לוֹ מֶמְשָׁלָה... כְּשֶׁהָיוּ בְּנֵי הַנְּבִיאִים אֶצְלוֹ, הָיָה נִקְרָא אִישׁ הָאֱלֹקִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edges": []
+    },
+    {
+      "package_id": 2,
+      "package_label": "אֱלִישָׁע סְתָם — הַצַּדִּיק בִּבְדִידוּתוֹ",
+      "node_id": "אֱלִישָׁע סְתָם",
+      "node_text": "אֱלִישָׁע סְתָם",
+      "polarity": "neutral",
+      "reason": "The Rebbe explicitly uses 'נִקְרָא' for this contrasting state: 'כְּשֶׁהָיָה לְבַדּוֹ נִקְרָא אֱלִישָׁע סְתָם'. The 'סְתָם' (plain/simply/unqualified) is a conceptual marker — the word carries the meaning 'without further qualification, without the additional title.' It is not merely a narrative detail; it IS the name the Rebbe gives to the tzaddik-alone state. 'Elisha stam' is the bechina-name for the baseline condition, parallel to 'Ish HaElohim' as the bechina-name for the elevated condition. Not currently in the dataset for reference 166.",
+      "source_quote": "כְּשֶׁהָיָה לְבַדּוֹ נִקְרָא אֱלִישָׁע סְתָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edges": [
+        {
+          "node1_id": "אֱלִישָׁע סְתָם",
+          "node2_id": "צַדִּיק בִּבְדִידוּתוֹ",
+          "type": "bechina",
+          "reference": 166,
+          "proof": "כְּשֶׁהָיָה לְבַדּוֹ נִקְרָא אֱלִישָׁע סְתָם"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "אֱלִישָׁע סְתָם — הַצַּדִּיק בִּבְדִידוּתוֹ",
+      "node_id": "צַדִּיק בִּבְדִידוּתוֹ",
+      "node_text": "צַדִּיק בִּבְדִידוּתוֹ",
+      "polarity": "neutral",
+      "reason": "The contrasting state to 'the tzaddik when the world is gathered at him' (Package 1). The phrase 'כְּשֶׁהָיָה לְבַדּוֹ' (when he was alone) describes the tzaddik in solitude — this is the conceptual category that 'Elisha stam' names. The tzaddik alone IS 'plain Elisha'; they are bechina-equivalent. Not currently in the dataset for reference 166.",
+      "source_quote": "כְּשֶׁהָיָה לְבַדּוֹ נִקְרָא אֱלִישָׁע סְתָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edges": []
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_166_edges": 0,
+    "total_reference_166_bechina_edges": 0,
+    "total_reference_166_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["אִישׁ הָאֱלֹקִים", "מֶמְשָׁלָה", "צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ"],
+      "package_2": ["אֱלִישָׁע סְתָם", "צַדִּיק בִּבְדִידוּתוֹ"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "אִישׁ הָאֱלֹקִים",
+      "מֶמְשָׁלָה",
+      "צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ",
+      "אֱלִישָׁע סְתָם",
+      "צַדִּיק בִּבְדִידוּתוֹ"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "אֱלִישָׁע (Elisha the prophet, generically)",
+        "reason": "Elisha as a historical figure is referenced in the teaching, but the Rebbe's bechina statements attach to specific CONDITIONS of Elisha (with-students = Ish HaElohim; alone = Elisha stam), not to Elisha-the-prophet as a concept in his own right. The teaching is not about Elisha's general identity; it uses the two names as bechina-labels for two conditions. Adding 'Elisha' as a generic node would not capture the teaching's conceptual content and would conflate the two distinct states the Rebbe explicitly distinguishes. The meaningful conceptual nodes are the two named states ('Ish HaElohim' and 'Elisha stam'), not the underlying biographical figure."
+      },
+      {
+        "concept": "בְּנֵי הַנְּבִיאִים (sons of the prophets / students)",
+        "reason": "The students/sons of the prophets are cited as the evidence case for 'הָעוֹלָם אֵצֶל הַצַּדִּיק' (the world gathered at the tzaddik). They are the demonstrating example, not a separate bechina concept. The Rebbe does not use 'נִקְרָא', 'הוּא בְּחִינַת', or any bechina formula for בְּנֵי הַנְּבִיאִים — they appear only as the narrative subjects of the Zohar citation. The conceptual category is 'הָעוֹלָם' (the world, the community that gathers), which is already captured in the compound node 'צַדִּיק כְּשֶׁהָעוֹלָם אֶצְלוֹ'. Excluded per framework rule: only concepts with explicit bechina language are added."
+      },
+      {
+        "concept": "הָעוֹלָם (the world / the community)",
+        "reason": "'הָעוֹלָם אֵצֶל הַצַּדִּיק' is the condition, not the bechina concept. The Rebbe does not say 'הָעוֹלָם הוּא בְּחִינַת X' — he says 'when the world is gathered, the tzaddik has memshala.' The world is the causal/conditional element (eitza side), not the bechina node. The bechina nodes are what the tzaddik IS in that state (Ish HaElohim, memshala). Excluded per framework rule: the causal condition is an eitza element, not a bechina node."
+      },
+      {
+        "concept": "זוהר בשלח (the Zohar, Beshalach section, page 44)",
+        "reason": "This is a source citation, not a bechina concept. The Rebbe cites the Zohar as his proof text, not as a bechina-equivalent of any other concept in the teaching. Excluded."
+      }
+    ],
+    "bechina_language_inventory": {
+      "note": "Torah #166 uses two instances of the bechina-language formula 'נִקְרָא' (was called / is called), one for each package. The teaching also uses the identity-defining formula 'יֵשׁ לוֹ מֶמְשָׁלָה' (he has / is-in-the-state-of memshala) to establish the Package 1 core bechina. These are the only bechina-language statements in the text. No 'הוּא בְּחִינַת', 'הַיְנוּ', 'כְּנַ\"ל', or 'הֵם' formulas appear.",
+      "total_bechina_instances_in_text": 3,
+      "instances": [
+        "כְּשֶׁהָעוֹלָם אֵצֶל הַצַּדִּיק, אָז יֵשׁ לוֹ מֶמְשָׁלָה — identity: tzaddik-with-world IS memshala",
+        "הָיָה נִקְרָא אִישׁ הָאֱלֹקִים — naming/bechina: tzaddik-with-students IS Ish HaElohim",
+        "נִקְרָא אֱלִישָׁע סְתָם — naming/bechina: tzaddik-alone IS plain Elisha"
+      ]
+    }
+  }
+}

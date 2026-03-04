@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "source": "Torah #169",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "CONDITIONAL_NEW_PACKAGE",
+  "new_packages": [
+    {
+      "id": "proposed_evil_pair",
+      "torah_ref": 169,
+      "label": "לִילִית וְעַצְבוּת",
+      "label_en": "Lilith and Sadness — The Evil That Damages the Brit",
+      "polarity": "evil",
+      "condition": "Requires addition of the missing bechina edge לִילִית = עַצְבוּת (see torah_169_additions.json, priority: high)",
+      "nodes_if_edge_added": [
+        "לילית",
+        "עצבות"
+      ],
+      "node_degrees_if_added": {
+        "לילית": 1,
+        "עצבות": 1
+      },
+      "justification": "The text explicitly introduces Lilith as a bechina of sadness (line 14: 'שֶׁנִּקְרֵאת לִילִית, עַל שֵׁם שֶׁמְּיַלֶּלֶת תָּמִיד, שֶׁזֶּהוּ בְּחִינַת עַצְבוּת'). This pair forms the structural evil mirror of the Torah's positive theme. The evil side is: {לילית = עצבות}, which causes פגם הברית. The good side is: שמחה (in eitza edges), which enables שמירת הברית. Together, the teaching has a classic Rebbe Nachman good/evil polarity: joy (good) vs. sadness/Lilith (evil), each with its consequence for the brit. This pair does not meet the strict threshold of 3+ bechina-connected concepts required for a fully independent new package, but it is thematically independent from Package 1 (the din-cycle) and constitutes a complete evil cluster for the second section of the Torah (lines 13-15). It should be recognized as a valid 2-node evil package if the missing bechina edge is confirmed.",
+      "why_not_merged_into_package_1": "Package 1 is the neutral din-cycle cluster. The Lilith/sadness pair belongs to a different domain: the brit and its protection. The connection between the two sections runs through שמחה (eitza: sweetened-din → simcha → simcha protects brit), but that causal flow is an eitza relationship between packages, not a bechina identity within a single package. Merging Lilith/sadness into the din-cycle package would conflate two structurally distinct themes and obscure the Torah's good/evil architecture in section 2.",
+      "meets_3_node_threshold": false,
+      "threshold_note": "This proposed evil package has only 2 nodes (the לילית—עצבות pair). It does not meet the 3+ node independent-domain threshold for a 'new package' in the strict sense. It is flagged here as a CONDITIONAL proposal: (a) if the missing bechina edge לילית—עצבות is added, this pair should be recognized as an evil 2-node package for Torah 169 in parallel with the evil clusters found in other short Torahs; (b) if future dataset enrichment adds further bechina nodes to this section (e.g., פגם הברית connected to עצבות via bechina), the threshold would be reached."
+    }
+  ],
+  "observations": "Torah 169 currently has only 4 bechina edges forming one neutral package (the din/pregnancy/legs cycle). With the proposed addition of the missing לילית = עצבות bechina edge, a second package emerges: the evil pair {לילית, עצבות} — the structural counterforce to שמחה in the Torah's second section. This would bring the package count to 2: (1) neutral — the din-cycle mechanism; (2) evil — Lilith/sadness as the force that damages the brit. The Torah's full structure would then be: [Package 1: din-cycle, neutral] → via sweetening → simcha (eitza) → [protects brit] ↔ against [Package 2: Lilith/sadness, evil] → [damages brit]. The two proposed additional bechina edges for וְהָיָה = שמחה and עקב = רגלים do not generate new packages: the first (if added) would expand Package 1 or create a 2-node pair {וְהָיָה, שמחה} that is better treated as belonging to Package 1's extended context; the second (עקב = רגלים) would simply reinforce Package 1 directly. No 3-node independent domain beyond the above is identifiable from this Torah's source text."
+}

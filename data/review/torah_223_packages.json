@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "source": "Torah #223",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah 223 has ZERO edges in torahData.js (no entries with reference===223). The Torah text is a 3-sentence aphorism with a single explicit bechina statement. All package content is derived from Step 5 gap analysis of the source text, not from dataset edges. One package is proposed from the source text bechina."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 223,
+      "label": "גְּזֵרַת הַצַּדִּיק וּבִרְכַּת כֹּהֲנִים",
+      "label_en": "The Tzaddik's Decree and the Priestly Blessing",
+      "polarity": "good",
+      "reason": "The Torah's sole bechina equates the tzaddik who can decree — who says 'I say it shall be so' — with the formula of the Priestly Blessing: 'So shall you bless... say to them (אָמוֹר לָהֶם).' The shared essential nature is authoritative, reality-creating declarative speech by the holy person. The Kohen does not petition God to bless; he declares the blessing as an already-established fact. The higher tzaddik similarly does not request — he decrees. Both are two expressions of the same capacity: holy speech that is performative, not petitionary. This contrasts structurally with the ordinary tzaddik who petitions (בַּקָּשָׁה), whose request may or may not be heard — that mode belongs outside this package as the narrative foil.",
+      "dominant_node": "צדיק שיכול לגזור",
+      "nodes": [
+        "צדיק שיכול לגזור",
+        "כֹּה תְבָרְכוּ... אָמוֹר לָהֶם"
+      ],
+      "node_degrees": {
+        "צדיק שיכול לגזור": 1,
+        "כֹּה תְבָרְכוּ... אָמוֹר לָהֶם": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "note": "All edges and nodes are zero because torahData.js contains no entries with reference===223. The single package above is proposed entirely from the source text gap analysis. The package contains 2 nodes identified from the one explicit bechina in the Torah text."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "source": "Torah #276",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "אכילת שבת",
+      "שביעה",
+      "מאור עינים",
+      "פסיעה קטנה",
+      "פסיעה גסה",
+      "סומא",
+      "דיתברכון כלהו שתא יומין",
+      "שלש פעמים"
+    ],
+    "gap_analysis": "Torah #276 is a short, self-contained teaching (3 paragraphs). All of its concepts appear in the dataset only once, under id:745 as an eitza edge. The source text uses no explicit bechina language at all. The Torah's argument is a pure causal chain: (1) Shabbat restores the light of the eyes (מאור עינים); (2) light of the eyes enables true satiety (שביעה); therefore (3) Shabbat is the time of true satiety; consequently (4) eating on Shabbat (אכילת שבת) is not for Shabbat's own satiety but to bless (לברך) the six weekdays (דיתברכון כלהו שתא יומין). The mechanism of small steps (פסיעה קטנה) preserving the light of the eyes, contrasted with large steps (פסיעה גסה) which damage it, is the eitza link between Shabbat behavior and the eye-light. None of these connections qualify as bechina because each one is explicitly directional: one thing produces or enables another, not two expressions of the same essential nature.",
+    "eitza_map": {
+      "description": "The Torah's full causal structure (eitza only — no bechina)",
+      "edges": [
+        {
+          "from": "פסיעה קטנה בשבת",
+          "to": "שלמות מאור עינים",
+          "rationale": "Small steps on Shabbat → eyes retain their full light (Berachot 43b)"
+        },
+        {
+          "from": "פסיעה גסה",
+          "to": "נטילת מאור עינים",
+          "rationale": "Large steps → takes away the light of one's eyes (Berachot 43b)"
+        },
+        {
+          "from": "שלמות מאור עינים",
+          "to": "שביעה",
+          "rationale": "Full light of the eyes → true satiety (a blind person cannot experience satiety — Yoma 74b)"
+        },
+        {
+          "from": "אכילת שבת",
+          "to": "דיתברכון כלהו שתא יומין",
+          "rationale": "Shabbat eating → blesses the six weekdays (Zohar Yitro 88) — this is already in the dataset as id:745"
+        }
+      ]
+    }
+  }
+}

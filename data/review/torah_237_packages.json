@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "source": "Torah #237",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 237,
+      "label": "נִגּוּן וְלֵוִי — הַנִּגּוּן כִּבְחִינַת הַהִתְחַבְּרוּת",
+      "label_en": "Melody and Levi — Music as the Aspect of Joining/Union",
+      "polarity": "good",
+      "reason": "These concepts share the essential nature of 'joining and attachment between two things.' Levi IS melody (the Zohar states melody comes from the side of Levi). Melody and musical instruments ARE the bechina of union (hitḥabrut). The wedding instruments are this same bechina — a wedding IS the joining of two people, enacted through music. All four concepts are different expressions of the single underlying reality: the power of attachment and union. The linguistic root ל-ו-ה (Levi / yilaveh / musical accompaniment) unifies them explicitly in the text.",
+      "dominant_node": "נגון וכלי שיר",
+      "nodes": [
+        "לוי",
+        "נגון וכלי שיר",
+        "התחברות",
+        "כלי זמר על חתונה",
+        "חתונה"
+      ],
+      "node_degrees": {
+        "נגון וכלי שיר": 3,
+        "לוי": 2,
+        "התחברות": 2,
+        "כלי זמר על חתונה": 1,
+        "חתונה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["כלי זמר על חתונה", "חתונה"],
+          "reason": "These are explicitly identified as the same bechina as the above (וְזֶה בְּחִינַת כְּלֵי זֶמֶר שֶׁמְּנַגְּנִין עַל חֲתֻנָּה). The wedding and its music are not a separate domain — they are the concrete instantiation of the joining-through-melody principle. They belong to the same package."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "note": "Torah #237 has zero edges in torahData.js. The single package above is derived entirely from explicit bechina language in the source text. All nodes and relationships are proposed additions from the source text analysis."
+  }
+}

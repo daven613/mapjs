@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source": "Torah #250",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "ראות",
+      "node_text": "רְאוּת / הָרְאוּת",
+      "polarity": "good",
+      "reason": "The Torah explicitly equates ראות (sight/vision) with השגחה. The Talmudic source cited (Shabbat 151b) teaches that sight follows weeping — the tears take the faculty of sight into themselves. The Rebbe concludes from this that tears carry 'portions of hashgacha and sight' (חֶלְקֵי הַהַשְׁגָּחָה וְהָרְאוּת). ראות is thus a bechina of השגחה, closely paralleling the eye as the instrument of divine oversight. It belongs in Package 1 alongside דמעות and השגחה.",
+      "source_quote": "נִמְצָא, שֶׁהַדְּמָעוֹת הֵם חֶלְקֵי הַהַשְׁגָּחָה וְהָרְאוּת, כִּי הַדְּמָעוֹת לוֹקְחִים הָרְאוּת כַּנַּ\"ל",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "נסים",
+      "node_text": "נִסִּים",
+      "polarity": "good",
+      "reason": "In the proof text of edge 609, the Rebbe explicitly writes that prayer 'is a bechina of miracles and hashgacha' (תְּפִלָּה שֶׁהִיא בְּחִינַת נִסִּים וְהַשְׁגָּחָה הֶפֶךְ הַטֶּבַע). Miracles are grouped here as the same essential domain as hashgacha — both are the opposite of nature. This node should be added to Package 1.",
+      "source_quote": "נִמְצָא שֶׁתְּפִלָּה שֶׁהִיא בְּחִינַת נִסִּים וְהַשְׁגָּחָה הֶפֶךְ הַטֶּבַע, הִיא בְּחִינַת גָּדוֹל",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "ים הגדול",
+      "node_text": "יָם הַגָּדוֹל",
+      "polarity": "evil",
+      "reason": "The Torah explicitly identifies ים הגדול (the Great Sea) as a bechina of the nations (עכו\"ם) who rule over Israel: 'לַיָּם הַגָּדוֹל – הַיְנוּ בְּחִינוֹת הָעַכּוּ\"ם הַמּוֹשְׁלִין עַל יִשְׂרָאֵל.' This is a bechina statement connecting the metaphor of the sea to the oppressive nations. However, there is only one bechina pair here (ים הגדול = עכו\"ם), insufficient to form a standalone package. It is flagged as a missing node. If a future evil-domain package is built for this Torah, ים הגדול and עכו\"ם would anchor it alongside הטבע and מזל.",
+      "source_quote": "לַיָּם הַגָּדוֹל – הַיְנוּ בְּחִינוֹת הָעַכּוּ\"ם הַמּוֹשְׁלִין עַל יִשְׂרָאֵל, בְּחִינַת (יְשַׁעְיָהוּ נ\"ז): וְהָרְשָׁעִים כַּיָּם נִגְרָשׁ",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 5,
+    "edge_ids": [609, 965, 966, 967, 3146],
+    "nodes_in_dataset_not_in_packages": [],
+    "note_on_duplicate_edge": "Edges 965 (תפלה → השגחה) and 3146 (השגחה → תפלה) represent the same conceptual connection stated twice, once from each direction. Both are bechina edges and both are correctly assigned to Package 1. This is expected behavior for a symmetric bechina relationship that was encoded twice in the dataset.",
+    "concepts_in_source_text_not_in_dataset": [
+      "ראות (sight/vision) — explicitly called a bechina of hashgacha via the tears mechanism",
+      "נסים (miracles) — grouped as bechina of hashgacha in edge 609 proof text",
+      "ים הגדול (the Great Sea) — called a bechina of the oppressing nations (עכו\"ם)",
+      "דעת (knowledge/awareness) — the theological root of the entire Torah; all suffering stems from חסרון הדעת. Daat is the condition for hashgacha to be felt. However, in this Torah daat is presented as a prerequisite (eitza relationship) rather than as a bechina-equivalent of hashgacha itself.",
+      "טבע/מזל (nature/fate) — the opposite domain to hashgacha; not a bechina of any good concept but structurally the anti-hashgacha. Appears only in eitza contexts in the dataset."
+    ],
+    "structural_observation": "Torah #250 is a short, concentrated teaching with a single dense conceptual cluster. The Rebbe draws one sustained bechina chain: prayer = hashgacha = greatness, and tears = hashgacha. The entire Torah revolves around this one package. The evil/natural domain (טבע, מזל, עכו\"ם) is present as the backdrop but never formalized into bechina equivalences in the dataset."
+  }
+}

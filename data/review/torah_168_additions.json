@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "source": "Torah #168 (Likutay Moharan Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_168_packages.json, and the full source text torah_168.txt. Because reference===168 has zero pre-existing bechina edges in torahData.js, there are no 'unassigned_dataset_nodes' to reconcile. All nodes in both proposed packages are new. The additions section below identifies every bechina-bearing concept from the source text with its proposed package assignment, source quote, and the explicit language that justifies the bechina classification. Torah #168 does not use the word 'בְּחִינַת' — it uses implicit verse-citation hermeneutic (citing a verse to identify a concept with a near-synonym) as its bechina-establishing technique."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "גַּאֲוָה וְגַדְלוּת",
+      "node_id": "גאוה",
+      "node_text": "גַּאֲוָה",
+      "polarity": "evil",
+      "reason": "The verse cited — 'לִפְנֵי שֶׁבֶר גָּאוֹן' (Proverbs 16:18) — uses 'גָּאוֹן' (arrogance/pride). The Rebbe cites this verse specifically to explain the phenomenon of 'גַּדְלוּת' (inflation of self). By this citation, גאוה IS the nature of גדלות in the same sense that a prooftext-word establishes a bechina-identity. The node 'גאוה' (pride/arrogance) is the conceptual referent of 'גאון' in the verse — the Rebbe's hermeneutic move is: the verse names this quality as גאון, I am calling it גדלות, therefore they share the same essential nature. Both גאוה and גדלות name the same spiritual reality: the swelling of self-regard that positions a person as great in their own eyes.",
+      "source_quote": "כְּשֶׁבָּא לָאָדָם גַּדְלוּת, סִימָן שֶׁיָּבוֹא לוֹ צָרָה, חַס וְשָׁלוֹם, כְּמוֹ שֶׁכָּתוּב: לִפְנֵי שֶׁבֶר גָּאוֹן",
+      "edge_type": "bechina",
+      "node1": "גאוה",
+      "node2": "גדלות",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "גַּאֲוָה וְגַדְלוּת",
+      "node_id": "גדלות",
+      "node_text": "גַּדְלוּת",
+      "polarity": "evil",
+      "reason": "גַּדְלוּת is the word the Rebbe opens with — 'כְּשֶׁבָּא לָאָדָם גַּדְלוּת'. It is the teaching's primary label for pride-as-inflation. The Rebbe uses it as the operative term whose nature is confirmed by the verse-citation of 'גָּאוֹן'. Dominant node of Package 1 (though גאוה is slightly more prominent as the canonical Hebrew term for pride).",
+      "source_quote": "כְּשֶׁבָּא לָאָדָם גַּדְלוּת",
+      "edge_type": "bechina",
+      "node1": "גדלות",
+      "node2": "גאוה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "עֲנָוָה וְשִׁפְלוּת",
+      "node_id": "ענוה",
+      "node_text": "עֲנָוָה",
+      "polarity": "good",
+      "reason": "The verse cited — 'וְלִפְנֵי כָבוֹד עֲנָוָה' (Proverbs 16:15) — uses 'עֲנָוָה' (humility). The Rebbe cites this verse specifically to explain the phenomenon of 'שָׁפָל' (being lowly). By this citation, ענוה IS the nature of שפלות — two names for the same spiritual quality of voluntary self-lowering. ענוה and שפלות share the essential nature: the orientation of smallness, non-inflation, receptiveness that makes space for divine honor to fill. The Rebbe treats them as bechina-equivalents through the same verse-citation hermeneutic as Package 1.",
+      "source_quote": "כְּשֶׁהוּא שָׁפָל, סִימָן שֶׁיָּבוֹא לְכָבוֹד גָּדוֹל, כְּמוֹ שֶׁכָּתוּב: וְלִפְנֵי כָבוֹד עֲנָוָה",
+      "edge_type": "bechina",
+      "node1": "ענוה",
+      "node2": "שפלות",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "עֲנָוָה וְשִׁפְלוּת",
+      "node_id": "שפלות",
+      "node_text": "שְׁפָלוּת",
+      "polarity": "good",
+      "reason": "שְׁפָלוּת is the word from the teaching's second sentence — 'כְּשֶׁהוּא שָׁפָל'. It is the Rebbe's operative label for the state of lowliness whose verse-name is 'עֲנָוָה'. 'שָׁפָל' (the adjective form, meaning 'lowly') gives rise to 'שְׁפָלוּת' (the noun form, 'lowliness'). Both forms appear in Breslov literature as a central positive virtue — שפלות in Likutay Moharan is the condition of the servant who experiences himself as nothing before God, which is the soil in which all genuine spiritual growth grows.",
+      "source_quote": "כְּשֶׁהוּא שָׁפָל",
+      "edge_type": "bechina",
+      "node1": "שפלות",
+      "node2": "ענוה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "שֶׁבֶר (destruction/fracture)",
+      "reason": "Appears in the verse 'לִפְנֵי שֶׁבֶר גָּאוֹן'. שבר is an eitza-consequence of גאוה/גדלות — it is what pride LEADS TO, not what pride IS. The Rebbe's teaching is 'pride is a SIGN that destruction will come' — the word 'סִימָן' establishes a directional signal relationship (eitza), not shared-nature equivalence (bechina). Excluded from packages. Would appear as an eitza edge: גאוה → שבר."
+    },
+    {
+      "concept": "צָרָה (trouble/affliction)",
+      "reason": "The teaching says pride is 'a sign that trouble will come' — 'סִימָן שֶׁיָּבוֹא לוֹ צָרָה'. צרה is the eitza-destination of the pride cluster, not a bechina-equivalent. Excluded from packages. Would appear as an eitza edge: גדלות → צרה."
+    },
+    {
+      "concept": "כָּבוֹד גָּדוֹל (great honor)",
+      "reason": "The teaching says humility is 'a sign that great honor will come' — 'סִימָן שֶׁיָּבוֹא לְכָבוֹד גָּדוֹל'. כבוד is the eitza-destination of the humility cluster, not a bechina-equivalent. Humility does not SHARE the essential nature of honor — it signals and makes room for honor. Excluded from packages. Would appear as an eitza edge: ענוה → כבוד."
+    },
+    {
+      "concept": "גָּאוֹן (as a standalone node separate from גאוה)",
+      "reason": "The word 'גָּאוֹן' appears in the verse citation. In context it is synonymous with 'גַּדְלוּת' and 'גַּאֲוָה' — the Rebbe uses it as confirmation that these are the same thing. Treating גאון as a separate node would create redundancy; it is folded into גאוה as the verse-form of the same concept."
+    },
+    {
+      "concept": "עֲנָוָה (from verse) as distinct from ענוה (as concept)",
+      "reason": "Same word — the verse form and the conceptual use are identical. No duplication."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_168_bechina_edges": 0,
+    "total_reference_168_eitza_edges": 0,
+    "total_nodes_in_packages": 4,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["גאוה", "גדלות"],
+      "package_2": ["ענוה", "שפלות"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "גאוה — present in the Rebbe's teaching as 'גדלות' and confirmed by verse as 'גאון'; not in any edge for reference 168",
+      "גדלות — the Rebbe's operative term for pride-as-inflation; not in any edge for reference 168",
+      "ענוה — present in the verse as 'ענוה' and in the Rebbe's teaching as 'שפל'; not in any edge for reference 168",
+      "שפלות — the Rebbe's operative term for lowliness-as-humility; not in any edge for reference 168"
+    ],
+    "note_on_bechina_language": "Torah #168 uses no explicit bechina formula ('בְּחִינַת', 'הַיְנוּ בְּחִינַת', 'נִקְרָא', 'הוּא בְּחִינוֹת'). The bechina equivalences are established through the verse-citation hermeneutic: the Rebbe states a spiritual phenomenon using word A ('גדלות') and then cites a verse that describes the same phenomenon using word B ('גאון'). In standard Breslov exegesis this is treated as a definitional equation: the verse-word IS the concept-word. This is the same hermeneutic visible throughout Likutay Moharan (e.g., citing a verse with the word 'חן' to establish a concept as bechina-חן). Applied here: גדלות IS גאון (=גאוה); שפל IS ענוה.",
+    "note_on_teaching_uniqueness": "Torah #168 is exceptional in the Likutay Moharan corpus for being a pure two-sentence sign-teaching with no kabbalistic superstructure. It has the character of a concise practical-wisdom statement (similar to a Mishnaic aphorism or a proverb in its own right) rather than the elaborate multi-move teachings typical of the volume. The two bechina-pairs (גאוה/גדלות, ענוה/שפלות) are the minimal necessary vocabulary for a teaching about pride and humility as divine signals. The entire conceptual content is expressed in these two pairs and their four eitza connections (pride → trouble-sign, gaon → shever-consequence [from verse], humility → honor-sign, anavah → kavod-consequence [from verse]).",
+    "note_on_good_evil_mirror": "Torah #168 is one of the clearest examples in Likutay Moharan of the good/evil mirror structure (framework section 4). Package 1 (pride/גאוה = evil) and Package 2 (humility/ענוה = good) are exact structural mirrors: same syntactic template, same verse-chapter (Proverbs 16), adjacent verses (16:15 and 16:18), same divine-sign mechanism ('סִימָן'). The evil package signals its own destruction; the good package signals its own reward. The mirror is not merely thematic — it is the explicit organizing principle of the Torah's two-sentence structure."
+  }
+}

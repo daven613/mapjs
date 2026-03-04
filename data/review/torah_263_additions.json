@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "source": "Torah #263",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "נזדעזעו איבריו",
+      "node_text": "נִזְדַּעְזְעוּ אֵיבָרָיו",
+      "polarity": "evil",
+      "reason": "The Rebbe explicitly calls the trembling of Adam's limbs (when God told him he would eat grass) a bechina of the fever illness. 'נִזְדַּעְזְעוּ אֵיבָרָיו, זֶה בְּחִינַת חֳלִי הַקַּדַּחַת' — the trembling/shaking is an expression of the same fire-and-water dysfunction, the body's physical manifestation of the fever. It belongs to the same package as חולי הקדחת.",
+      "source_quote": "נִזְדַּעְזְעוּ אֵיבָרָיו, זֶה בְּחִינַת חֳלִי הַקַּדַּחַת, שֶׁבָּא עַל־יְדֵי אֲכִילַת עֵשֶׂב הַשָּׂדֶה, עַל־יְדֵי מַאֲכַל בְּהֵמָה כַּנַּ"ל",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 2,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["נזדעזעו איבריו"],
+    "eitza_concepts_not_included": [
+      "אכילה יתרה (overeating) — causes fever via eitza, not a bechina of it",
+      "מאכל בהמה (animal food) — the Rebbe says overeating IS a bechina of animal food, but this is an eitza to the fever; if added it would be a separate bechina edge between אכילה יתרה and מאכל בהמה, not in this Torah's current dataset",
+      "זיעה (sweat) — the cure for the illness, connected by eitza (sweat produces healing), not bechina",
+      "שלמות הדעת (wholeness of da'at) — the healed state, eitza result of sweating, not a bechina node in this Torah"
+    ],
+    "mirror_analysis": "Torah #263 has only one package because the Torah is extremely brief (5 lines). The single package is entirely in the evil/negative domain — fever as blemished da'at. The good mirror (שלמות הדעת — wholeness of da'at, restored through sweat/זיעה) is present in the Torah but connected only by eitza relationships, not bechina. There are no bechina edges establishing a positive package."
+  }
+}

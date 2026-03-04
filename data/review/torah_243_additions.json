@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "source": "Torah #243",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "notes": "Torah #243 has no edges in torahData.js. All entries below are from source text gap analysis only. The full Torah text is 4 lines. The Rebbe uses the word 'בְּחִינוֹת' explicitly once (line 2), establishing the core bechina of this teaching."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "צדיק גדול",
+      "node_text": "צַדִּיק גָּדוֹל",
+      "polarity": "good",
+      "reason": "The Tzaddik Gadol is the primary subject of the teaching. His defining characteristic — holiness so extreme that the world cannot bear it, causing him to appear non-holy — is the exact same essential nature as Shir HaShirim's nature as Kodesh Kadashim. The Rebbe uses 'וְזֶה בְּחִינוֹת' to make this equation explicit.",
+      "source_quote": "יֵשׁ צַדִּיק גָּדוֹל מְאֹד, שֶׁאֵין הָעוֹלָם יָכוֹל לִסְבֹּל קְדֻשָּׁתוֹ, עַל־כֵּן הוּא מִתְעַלֵּם מְאֹד, וְאֵין רוֹאִים מִמֶּנּוּ שׁוּם קְדֻשָּׁה וּפְרִישׁוּת יְתֵרָה",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "שיר השירים",
+      "node_text": "שִׁיר הַשִּׁירִים",
+      "polarity": "good",
+      "reason": "Shir HaShirim is the bechina-partner of the Tzaddik Gadol. Both are the supreme instance of their category (the holiest Tzaddik; the holiest book), and both lack visible markers of their holiness. The Rebbe's argument is that Shir HaShirim's absence of the words 'kodesh' and 'tahor' is a direct bechina of the Tzaddik's invisible holiness.",
+      "source_quote": "וְזֶה בְּחִינוֹת: כָּל הַשִּׁירִים קֹדֶשׁ, וְשִׁיר הַשִּׁירִים קֹדֶשׁ קָדָשִׁים... וְזֶה מֵחֲמַת גֹּדֶל עֹצֶם קְדֻשָּׁתוֹ אֵינָם רוֹאִים שָׁם שׁוּם קְדֻשָּׁה",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "קדש קדשים",
+      "node_text": "קֹדֶשׁ קָדָשִׁים",
+      "polarity": "good",
+      "reason": "Kodesh Kadashim is the superlative degree of holiness — the name given to Shir HaShirim in the Mishnah (Yadaim 3). It characterizes the nature of the package: holiness that is highest-of-the-high, beyond ordinary degrees. The Rebbe cites this as the reason no explicit holiness-words appear there.",
+      "source_quote": "כָּל הַשִּׁירִים קֹדֶשׁ, וְשִׁיר הַשִּׁירִים קֹדֶשׁ קָדָשִׁים",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "העלם / התעלמות",
+      "node_text": "הֶעְלֵם / הִתְעַלְּמוּת",
+      "polarity": "good",
+      "reason": "Concealment (העלם) is the structural outcome of extreme holiness in both cases: the Tzaddik 'hides' (מִתְעַלֵּם), and Shir HaShirim 'hides' its holiness (no words of kodesh or tahor appear). The concealment is not evil or neutral — it is the positive signature of supreme holiness. It belongs to the good package as the very expression of the Tzaddik's and Shir HaShirim's transcendent nature.",
+      "source_quote": "הוּא מִתְעַלֵּם מְאֹד, וְאֵין רוֹאִים מִמֶּנּוּ שׁוּם קְדֻשָּׁה... וְזֶה מֵחֲמַת גֹּדֶל עֹצֶם קְדֻשָּׁתוֹ אֵינָם רוֹאִים שָׁם שׁוּם קְדֻשָּׁה",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "צדיק גדול",
+      "שיר השירים",
+      "קדש קדשים",
+      "העלם / התעלמות"
+    ],
+    "additional_context_nodes_not_bechina": [
+      "משלי וקהלת — mentioned as the contrasting books that DO contain words of holiness/purity; they serve as the foil for Shir HaShirim but are not equated to the Tzaddik via bechina language; they belong to a different conceptual register (ordinary holiness, visible holiness)",
+      "קדשה וטהרה (the absent words) — the specific words 'kodesh' and 'tahor' are pointed to as markers of ordinary holiness; their absence is the proof of superlative holiness; they are not bechina-nodes themselves but indicators"
+    ],
+    "structural_note": "Torah #243 has a deliberately minimal structure: one bechina equating the Tzaddik Gadol with Shir HaShirim. The Torah is an aphorism, not a multi-stage argument. There is no eitza chain connecting packages — this Torah is a single package with no evil mirror (the teaching is entirely about the positive domain of supreme holiness). The absence of an evil mirror is itself significant: this teaching describes holiness so pure it has no counterpart in the negative domain within this text.",
+    "data_entry_priority": "HIGH — all 4 nodes and at least 2 bechina edges need to be added to torahData.js: (1) צדיק גדול ↔ שיר השירים, (2) צדיק גדול ↔ קדש קדשים or שיר השירים ↔ קדש קדשים, (3) צדיק גדול ↔ העלם"
+  }
+}

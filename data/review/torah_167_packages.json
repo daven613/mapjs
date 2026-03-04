@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "source": "Torah #167 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===167 AND type==='bechina'. Result: ZERO bechina edges in the dataset for reference 167. The source text (torah_167.txt) is a single-sentence Torah of 196 bytes with no line breaks. It contains exactly one bechina-language statement: 'הַשַּׁבָּתִים שֶׁשּׁוֹבְתִים אֵצֶל הַתַּלְמִיד-חָכָם הָאֱמֶת, הֵם כְּמוֹ תַּעֲנִית' — Shabbatot spent with the true tzaddik ARE LIKE a fast.\n\nThe phrase 'הֵם כְּמוֹ' (they are like) is bechina-language: it declares an identity of spiritual nature, not a causal relationship. Shabbat spent with the tzaddik does not PRODUCE a fast; it IS, in its essential spiritual character, a fast. The equation is symmetric: the spiritual quality of fasting (self-refinement, spiritual intensification, nullification of the body's ordinary demands) is precisely the spiritual quality of Shabbat when spent in the tzaddik's presence. Both concepts share the same essential nature: a temporary suspension of the ordinary for the sake of the sacred, resulting in elevated spiritual awareness and tikun.\n\nThe framing 'דַּע וְהַאֲמֵן' (know and believe) is not a conceptual node — it is the rhetorical framing that signals this statement requires faith because it is not intuitively obvious. The tzaddik (תַּלְמִיד-חָכָם הָאֱמֶת) is the catalyst condition, not the bechina identity itself.\n\nPackage structure: One package is identified. Torah #167 is among the shortest Torahs in Likutay Moharan — a single declarative sentence containing one bechina identity. There is no evil mirror, no causal chain elaborated, no multi-stage argument. The entire teaching is a single conceptual assertion. See torah_167_additions.json for the proposed bechina edge that should be added to the dataset."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 167,
+      "label": "שַׁבָּת אֵצֶל הַצַּדִּיק וְתַעֲנִית",
+      "label_en": "Shabbat with the Tzaddik and Fasting — Shared Spiritual Refinement",
+      "polarity": "good",
+      "reason": "Torah #167 contains a single bechina equation: the Shabbatot spent with the true Talmid Chacham (the true tzaddik) ARE LIKE a fast (תַּעֲנִית). The language 'הֵם כְּמוֹ' declares essential identity of spiritual nature — not mere resemblance, but ontological equivalence at the level of their spiritual effect on the soul. Both nodes — שַׁבָּת אֵצֶל הַתַּלְמִיד-חָכָם and תַּעֲנִית — share the same essential quality: the suspension of the body's ordinary activity in order to elevate the soul. A fast (תַּעֲנִית) works by withdrawing the body from its regular nourishment, thereby redirecting energy from the physical to the spiritual, refining the soul and atoning for sin. Shabbat spent with the tzaddik works through an identical spiritual mechanism: the ordinary weekday self — its thoughts, its physicality, its everyday concerns — is 'fasted' from, while the soul feeds on the tzaddik's presence, Torah, and the holiness of Shabbat itself. The result is the same spiritual tikun as a fast, achieved through the opposite physical means (Shabbat is when one must eat and rejoice, yet it achieves what the fast achieves through restraint). This equivalence is the paradox that requires 'דַּע וְהַאֲמֵן' — knowledge and faith — because it is counterintuitive: the feast-day achieves what the fast-day achieves.\n\nBoth nodes belong entirely to the domain of holiness and positive spiritual practice (polarity: good). A fast is a holy practice for tikun and spiritual elevation. Shabbat is the holy seventh day. The tzaddik's presence transforms Shabbat into an intensified vehicle of the same spiritual work that fasting performs. There is no evil mirror in this Torah — no opposing force is named, no klipah is discussed, no negative counterpart is introduced. The Torah is a pure affirmation of the spiritual power of the tzaddik-Shabbat nexus.\n\nThe dominant node is תַּעֲנִית (fasting) rather than שַׁבָּת, because the teaching's rhetorical force is the revelation that Shabbat achieves what we ordinarily attribute exclusively to fasting — the fast is the known reference point that the Shabbat-tzaddik combination is declared equivalent to. The entire surprise of the Torah lies in the elevation of Shabbat-with-tzaddik to the status of תַּעֲנִית. However, the node שַׁבָּת אֵצֶל הַתַּלְמִיד-חָכָם הָאֱמֶת is the subject (the thing being elevated), so in a sense it is the operative concept the teaching wishes to promote.",
+      "dominant_node": "תענית",
+      "nodes": [
+        "שבת אצל תלמיד חכם אמת",
+        "תענית"
+      ],
+      "node_degrees": {
+        "שבת אצל תלמיד חכם אמת": 1,
+        "תענית": 1
+      },
+      "merge_notes": [
+        "No merges. Torah #167 contains exactly one bechina equation, yielding one 2-node component. There are no raw components to merge — the two nodes are the entire bechina topology of this Torah. The teaching's architecture is a pure bechina statement with no elaboration, sub-clusters, or causal chains requiring package-merge analysis."
+      ],
+      "source_bechina_statement": {
+        "in_dataset": false,
+        "text": "הַשַּׁבָּתִים שֶׁשּׁוֹבְתִים אֵצֶל הַתַּלְמִיד-חָכָם הָאֱמֶת, הֵם כְּמוֹ תַּעֲנִית",
+        "formula": "הֵם כְּמוֹ (they are like)",
+        "proposed_edge": {
+          "node1_id": "שבת אצל תלמיד חכם אמת",
+          "node2_id": "תענית",
+          "type": "bechina",
+          "reference": 167
+        },
+        "note": "The bechina edge for this Torah's central equation is not yet in the dataset. See torah_167_additions.json."
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "packages_from_dataset_components": 0,
+    "packages_from_gap_analysis": 1,
+    "evil_mirror_packages": 0,
+    "note_on_evil_mirror": "Torah #167 contains no evil mirror. The teaching is a pure affirmative statement about the spiritual power of Shabbat with the tzaddik. No opposing force, klipah, or negative counterpart is named. This is consistent with the Torah's extreme brevity — it is a single declarative sentence conveying one bechina identity, without any elaborated structure of good/evil confrontation.",
+    "note_on_structure": "Torah #167 is one of the shortest Torahs in Likutay Moharan — a single sentence with no verse quotations, no supporting sources (no Talmudic or biblical citation), and no narrative elaboration. The entire teaching is a bare declaration: 'know and believe that Shabbatot with the true tzaddik are like a fast.' The rhetorical intensity ('דַּע וְהַאֲמֵן') signals that this requires faith because it is counter-experiential — Shabbat is a day of feasting and joy, yet it accomplishes spiritually what a day of fasting accomplishes. The teaching does not explain the mechanism; it asserts the equivalence and calls for faith in it.",
+    "good_evil_mirror": "No good/evil mirror present in this Torah.",
+    "eitza_summary": "There are no eitza (cause-and-effect) edges in this Torah either. The teaching is purely a bechina declaration. No causal chain is stated or implied beyond the bechina identity itself."
+  }
+}

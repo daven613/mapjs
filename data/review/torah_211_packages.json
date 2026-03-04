@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "source": "Torah #211",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===211 AND type==='bechina'. Only 2 bechina edges found in the dataset for Torah #211, yielding 2 isolated pairs (connected components of size 2 each). Torah #211 is one of the briefest teachings in Likutay Moharan — three sentences — and its conceptual content is correspondingly concentrated. The two pairs represent distinct essential natures (intellect-domain vs. tzaddik-domain) and are kept as separate packages, consistent with the framework rule that cause-and-effect flows BETWEEN packages (the eitza: mochin needs tzaddik for completion) rather than collapsing distinct natures into one cluster."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 211,
+      "label": "מֹחִין וּמֹשֶׁה",
+      "label_en": "Intellect and Moses",
+      "polarity": "good",
+      "reason": "This package groups the two concepts that share the essential nature of 'pure intellect / clarity of mind.' Moshe (Moses) IS mochin — the Zohar source cited in the Torah explicitly states 'מֹשֶׁה הוּא בְּחִינַת מֹחִין.' These two nodes are different expressions of the same metaphysical reality: the faculty of clear, refined, holy thought. The broader thematic context of this package encompasses מחין זכים (pure intellect) and קדשת וטהרת המחשבות (holiness and purity of thought) — concepts that appear in the eitza edges of this Torah (edges 884, 1556, 2945) but not in bechina edges. Moshe serves as the personification of mochin in this Torah: just as Moshe carried Yosef's bones out of Egypt, the intellect attaches itself to the tzaddik in order to reach its completion. The polarity is unambiguously good — mochin/intellect in the domain of holiness is the primary positive value of this teaching.",
+      "dominant_node": "מחין",
+      "nodes": [
+        "משה",
+        "מחין"
+      ],
+      "node_degrees": {
+        "מחין": 1,
+        "משה": 1
+      },
+      "source_edges": [
+        {
+          "edge_id": 1740,
+          "node1_id": "משה",
+          "node2_id": "מחין",
+          "proof": "'מֹשֶׁה הוּא בְּחִינַת מֹחִין"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 211,
+      "label": "צַדִּיק וְיוֹסֵף",
+      "label_en": "The Tzaddik and Joseph",
+      "polarity": "good",
+      "reason": "This package groups the two concepts that share the essential nature of 'the tzaddik / the righteous one.' Yosef (Joseph) IS tzaddik — the Torah explicitly states 'וְיוֹסֵף הוּא בְּחִינַת צַדִּיק.' Both nodes are different expressions of the same archetype: the righteous leader to whom one attaches in order to acquire holy intellect. Joseph is the biblical personification of the tzaddik principle in this Torah; the tzaddik-concept in turn is what the entire practical teaching is about — the reason people travel on Rosh Hashana. The broader thematic context encompasses הִתְקַשְּׁרוּת לְצַדִּיקִים (attachment to tzaddikim), which appears in the eitza edges for this Torah (edges 1556, 2945) as the means by which one arrives at pure intellect. The polarity is good — the tzaddik in Torah #211 is purely a positive, redemptive figure, the vehicle for holiness of thought.",
+      "dominant_node": "צדיק",
+      "nodes": [
+        "יוסף",
+        "צדיק"
+      ],
+      "node_degrees": {
+        "צדיק": 1,
+        "יוסף": 1
+      },
+      "source_edges": [
+        {
+          "edge_id": 2526,
+          "node1_id": "יוסף",
+          "node2_id": "צדיק",
+          "proof": "וְיוֹסֵף הוּא בְּחִינַת צַדִּיק"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 2,
+    "total_nodes": 4,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 0,
+    "note_on_structure": "Torah #211 is an exceptionally brief Torah (3 sentences, ~120 words). The bechina graph consists of only 2 isolated pairs. No merging was performed. The two packages correspond exactly to the two bechina statements in the source text. The eitza flow runs: [Pkg 2: Tzaddik/Yosef] --eitza--> [Pkg 1: Mochin/Moshe] — the tzaddik enables the intellect to reach its completion. This eitza direction (tzaddik → mochin) is the teaching's core practical argument.",
+    "note_on_evil_mirror": "Torah #211 contains no evil packages and no evil mirror structure. The teaching is entirely prescriptive and positive — it describes only the remedy (travel to tzaddikim, purify thought) and does not develop the domain of the evil/opposing force. The דינים (judgments) of Rosh Hashana are contextual framing (neutral), not an evil package — they are not personified, given opposing agents, or developed as a conceptual cluster."
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "source": "Torah #163 (Likutay Moharan Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_163_packages.json, all reference===163 edges from torahData.js (1 bechina edge: דבור ↔ שרה, edge id 3044), and the full source text torah_163.txt (21 lines including Reb Nosson's appended commentary, lines 16-21). Every statement using bechina-language identifiers ('הוּא בְּחִינַת', 'בְּחִינוֹת', 'הֵם', 'זֶה בְּחִינַת', 'הִיא בְּחִינַת', 'הוּא אוֹתִיּוֹת') was catalogued. Eitza statements ('וְתוֹפְסִין', 'לְהוֹצִיא', 'נַעֲשֶׂה') were noted but not entered as bechina edges. Each candidate concept was checked against the existing reference===163 dataset. The single existing edge (3044) was confirmed as correct. All bechina-language concepts NOT in the dataset are proposed as new edges below."
+  },
+  "additions": [
+    {
+      "package_id": 2,
+      "package_label": "הַקְּלִפּוֹת וּפַרְעֹה — תַּאֲוַת אֲכִילָה וְהָעֹרֶף",
+      "node_id": "שלש קליפות",
+      "node_text": "שָׁלֹשׁ קְלִפּוֹת",
+      "polarity": "evil",
+      "reason": "Line 2 opens: 'כִּי יֵשׁ שָׁלֹשׁ קְלִפּוֹת' — three klipot (impure husks). Line 4 provides the bechina identity: 'הַשָּׁלֹשׁ קְלִפּוֹת הֵם שַׂר הָאוֹפִים וְשַׂר הַמַּשְׁקִים וְשַׂר הַטַּבָּחִים' — the three klipot ARE the three Pharaoh-officers. The word 'הֵם' (they are) is direct identity language, constituting a bechina equivalence. This node — the three klipot as an abstraction — is the hub of the evil package. It is not in the reference-163 dataset.",
+      "source_quote": "הַשָּׁלֹשׁ קְלִפּוֹת הֵם שַׂר הָאוֹפִים וְשַׂר הַמַּשְׁקִים וְשַׂר הַטַּבָּחִים, שֶׁהֵם תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה",
+      "proposed_edge": {
+        "node1_id": "שלש קליפות",
+        "node2_id": "שר האופים ושר המשקים ושר הטבחים",
+        "node1_text": "שָׁלֹשׁ קְלִפּוֹת",
+        "node2_text": "שַׂר הָאוֹפִים וְשַׂר הַמַּשְׁקִים וְשַׂר הַטַּבָּחִים",
+        "type": "bechina",
+        "reference": 163,
+        "is_good": null,
+        "is_bad": true
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "הַקְּלִפּוֹת וּפַרְעֹה — תַּאֲוַת אֲכִילָה וְהָעֹרֶף",
+      "node_id": "שר האופים ושר המשקים ושר הטבחים",
+      "node_text": "שַׂר הָאוֹפִים וְשַׂר הַמַּשְׁקִים וְשַׂר הַטַּבָּחִים",
+      "polarity": "evil",
+      "reason": "Line 4 declares: 'הַשָּׁלֹשׁ קְלִפּוֹת הֵם שַׂר הָאוֹפִים וְשַׂר הַמַּשְׁקִים וְשַׂר הַטַּבָּחִים' — the three klipot ARE the three Pharaoh-officers. Line 5 uses the same node in narrative context: 'שְׁלֹשָׁה שָׂרִים הַנַּ\"ל, שֶׁהֵם שָׂרֵי פַּרְעֹה, אֶת שָׂרָה'. This is the scriptural anchor of the evil package: the three officers who saw Sarah (= holy speech) and praised her to Pharaoh are the three klipot in their Genesis-12 form. Not in the reference-163 dataset.",
+      "source_quote": "הַשָּׁלֹשׁ קְלִפּוֹת הֵם שַׂר הָאוֹפִים וְשַׂר הַמַּשְׁקִים וְשַׂר הַטַּבָּחִים, שֶׁהֵם תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה",
+      "proposed_edge": {
+        "node1_id": "שר האופים ושר המשקים ושר הטבחים",
+        "node2_id": "תאוות אכילה ושתייה",
+        "node1_text": "שַׂר הָאוֹפִים וְשַׂר הַמַּשְׁקִים וְשַׂר הַטַּבָּחִים",
+        "node2_text": "תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה",
+        "type": "bechina",
+        "reference": 163,
+        "is_good": null,
+        "is_bad": true
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "הַקְּלִפּוֹת וּפַרְעֹה — תַּאֲוַת אֲכִילָה וְהָעֹרֶף",
+      "node_id": "קנה ווושט ורידין",
+      "node_text": "קָנֶה וּוֵשֶׁט וּוְרִידִין",
+      "polarity": "evil",
+      "reason": "Line 6 declares: 'הַשְּׁלֹשָׁה שָׂרִים הַנַּ\"ל הֵם קָנֶה וּוֵשֶׁט וּוְרִידִין, וְתוֹפְסִין הַדִּבּוּר לְהָעֹרֶף' — the three officers ARE the windpipe (קנה), esophagus (ושט), and blood vessels (ורידין). This is the anatomical bechina of the klipot: the same three evil forces have a physical manifestation in the body's throat-passages. 'הֵם' is direct identity language. This edge is not in the reference-163 dataset. The anatomical bechina is the Torah's distinctive move: the metaphysical klipot have a concrete bodily correlate in the anatomy of the neck/throat.",
+      "source_quote": "כִּי הַשְּׁלֹשָׁה שָׂרִים הַנַּ\"ל הֵם קָנֶה וּוֵשֶׁט וּוְרִידִין, וְתוֹפְסִין הַדִּבּוּר לְהָעֹרֶף",
+      "proposed_edge": {
+        "node1_id": "שר האופים ושר המשקים ושר הטבחים",
+        "node2_id": "קנה ווושט ורידין",
+        "node1_text": "שַׂר הָאוֹפִים וְשַׂר הַמַּשְׁקִים וְשַׂר הַטַּבָּחִים",
+        "node2_text": "קָנֶה וּוֵשֶׁט וּוְרִידִין",
+        "type": "bechina",
+        "reference": 163,
+        "is_good": null,
+        "is_bad": true
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "הַקְּלִפּוֹת וּפַרְעֹה — תַּאֲוַת אֲכִילָה וְהָעֹרֶף",
+      "node_id": "פרעה",
+      "node_text": "פַּרְעֹה",
+      "polarity": "evil",
+      "reason": "Line 4 states: '\"פַרְעֹה\" הוּא אוֹתִיּוֹת \"הָעֹרֶף\", שֶׁעוֹמֵד אֲחוֹרֵי הַקְּדֻשָּׁה' — Pharaoh IS the letters of the back-of-the-neck (העורף), who stands behind holiness. The formula 'הוּא אוֹתִיּוֹת' (= is the same letters [rearranged]) is a standard Rebbe Nachman bechina-equivalence using letter-permutation: the same letters in a different arrangement are the same essential spiritual reality expressed differently. Pharaoh is therefore a bechina of the back of the neck. Not in the reference-163 dataset.",
+      "source_quote": "וּ\"פַרְעֹה\" הוּא אוֹתִיּוֹת \"הָעֹרֶף\", שֶׁעוֹמֵד אֲחוֹרֵי הַקְּדֻשָּׁה",
+      "proposed_edge": {
+        "node1_id": "פרעה",
+        "node2_id": "העורף",
+        "node1_text": "פַּרְעֹה",
+        "node2_text": "הָעֹרֶף",
+        "type": "bechina",
+        "reference": 163,
+        "is_good": null,
+        "is_bad": true
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "צָרוֹת הַנֶּפֶשׁ — מִדְבָּר, חֳלִי, מַאֲסָר, וְיָם",
+      "node_id": "תועים במדבר",
+      "node_text": "תָּעוּ בַּמִּדְבָּר",
+      "polarity": "evil",
+      "reason": "Line 18 states: 'הַנֶּפֶשׁ הוֹלֶכֶת נָעָה וְנָדָה, עָיֵף וְרָעֵב וְצָמֵא בַּמִּדְבָּר וְכוּ', וְזֶה בְּחִינַת תָּעוּ בַּמִּדְבָּר וְכוּ'' — the wandering, exhausted, hungry soul IS a bechina of 'they wandered in the desert' (Psalm 107:4). The formula 'זֶה בְּחִינַת' is explicit bechina-identity language. The concept 'תועים במדבר' (desert wanderers) from Psalm 107 IS an aspect of the soul's condition when its speech is captured. This maps the soul's spiritual tribulation onto the first of the four Psalm 107 archetypes. Not in the reference-163 dataset.",
+      "source_quote": "הַנֶּפֶשׁ הוֹלֶכֶת נָעָה וְנָדָה, עָיֵף וְרָעֵב וְצָמֵא בַּמִּדְבָּר וְכוּ', וְזֶה בְּחִינַת תָּעוּ בַּמִּדְבָּר וְכוּ'",
+      "proposed_edge": {
+        "node1_id": "צרות הנפש",
+        "node2_id": "תועים במדבר",
+        "node1_text": "צָרוֹת הַנֶּפֶשׁ",
+        "node2_text": "תָּעוּ בַּמִּדְבָּר",
+        "type": "bechina",
+        "reference": 163,
+        "is_good": null,
+        "is_bad": true
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "צָרוֹת הַנֶּפֶשׁ — מִדְבָּר, חֳלִי, מַאֲסָר, וְיָם",
+      "node_id": "חולי הנפש",
+      "node_text": "חֳלִי הַנֶּפֶשׁ",
+      "polarity": "evil",
+      "reason": "Line 18 states: 'מֵעִנְיַן חֳלִי הַנֶּפֶשׁ, שֶׁכָּל־כָּךְ נִתְעַלְּפָה, עַד אֲשֶׁר אֲפִלּוּ אִם נוֹתְנִין לָהּ דְּבַר מַאֲכָל וְכוּ' — וְזֶה בְּחִינַת: כָּל אֹכֶל תְּתַעֵב נַפְשָׁם, שֶׁמְּדַבֵּר מֵחוֹלֶה' — the soul's illness (so faint it cannot receive food) IS a bechina of 'their soul loathed all food' (Psalm 107:18, the verse about the sick man). The formula 'זֶה בְּחִינַת' is explicit bechina language. This is the second of the four Psalm 107 archetypes. Not in the reference-163 dataset.",
+      "source_quote": "מֵעִנְיַן חֳלִי הַנֶּפֶשׁ, שֶׁכָּל־כָּךְ נִתְעַלְּפָה... וְזֶה בְּחִינַת: כָּל אֹכֶל תְּתַעֵב נַפְשָׁם, שֶׁמְּדַבֵּר מֵחוֹלֶה",
+      "proposed_edge": {
+        "node1_id": "צרות הנפש",
+        "node2_id": "חולי הנפש",
+        "node1_text": "צָרוֹת הַנֶּפֶשׁ",
+        "node2_text": "חֳלִי הַנֶּפֶשׁ",
+        "type": "bechina",
+        "reference": 163,
+        "is_good": null,
+        "is_bad": true
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "צָרוֹת הַנֶּפֶשׁ — מִדְבָּר, חֳלִי, מַאֲסָר, וְיָם",
+      "node_id": "חבוש בבית האסורים",
+      "node_text": "חָבוּשׁ בְּבֵית הָאֲסוּרִין",
+      "polarity": "evil",
+      "reason": "Line 13 explicitly states: 'וְאָז הוּא חָבוּשׁ בְּבֵית־הָאֲסוּרִין, כִּי נִתְפַּס וְנֶאֱסַר שָׁם' — the soul (= the speech = the person) is imprisoned. Line 17 explicitly lists this among the four: 'הוֹלְכֵי מִדְבָּרוֹת וַחֲבוּשִׁים בְּבֵית־הָאֲסוּרִים וְחוֹלֶה וְיוֹרְדֵי־הַיָּם'. Line 18 confirms: 'מֵעִנְיַן חָבוּשׁ בְּבֵית־הָאֲסוּרִים' is one of the four things that allude to צרות הנפש. The prison concept is the third Psalm 107 archetype as applied to the soul's captured state. Not in the reference-163 dataset.",
+      "source_quote": "וְאָז הוּא חָבוּשׁ בְּבֵית־הָאֲסוּרִין, כִּי נִתְפַּס וְנֶאֱסַר שָׁם... וַחֲבוּשִׁים בְּבֵית־הָאֲסוּרִים... מֵעִנְיַן חָבוּשׁ בְּבֵית־הָאֲסוּרִים",
+      "proposed_edge": {
+        "node1_id": "צרות הנפש",
+        "node2_id": "חבוש בבית האסורים",
+        "node1_text": "צָרוֹת הַנֶּפֶשׁ",
+        "node2_text": "חָבוּשׁ בְּבֵית הָאֲסוּרִין",
+        "type": "bechina",
+        "reference": 163,
+        "is_good": null,
+        "is_bad": true
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "צָרוֹת הַנֶּפֶשׁ — מִדְבָּר, חֳלִי, מַאֲסָר, וְיָם",
+      "node_id": "יורדי הים",
+      "node_text": "יוֹרְדֵי הַיָּם",
+      "polarity": "evil",
+      "reason": "Line 14: 'יַעֲלוּ שָׁמַיִם יֵרְדוּ תְהוֹמוֹת' (Psalm 107:26) is quoted as what happens to the soul flung up and cast down. Line 18: 'מֵעִנְיַן: יַעֲלוּ שָׁמַיִם יֵרְדוּ תְהוֹמוֹת, שֶׁזֶּהוּ בְּחִינַת יוֹרְדֵי הַיָּם' — the ascending/plunging IS a bechina of 'those who go down to the sea' (the fourth Psalm 107 archetype, Psalm 107:23-26). The formula 'זֶהוּ בְּחִינַת' is explicit bechina language. This completes the four Psalm 107 types as bechinot of צרות הנפש. Not in the reference-163 dataset.",
+      "source_quote": "מֵעִנְיַן: יַעֲלוּ שָׁמַיִם יֵרְדוּ תְהוֹמוֹת, שֶׁזֶּהוּ בְּחִינַת יוֹרְדֵי הַיָּם",
+      "proposed_edge": {
+        "node1_id": "צרות הנפש",
+        "node2_id": "יורדי הים",
+        "node1_text": "צָרוֹת הַנֶּפֶשׁ",
+        "node2_text": "יוֹרְדֵי הַיָּם",
+        "type": "bechina",
+        "reference": 163,
+        "is_good": null,
+        "is_bad": true
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "צָרוֹת הַנֶּפֶשׁ — מִדְבָּר, חֳלִי, מַאֲסָר, וְיָם",
+      "node_id": "נפשם בהם תתעטף",
+      "node_text": "נַפְשָׁם בָּהֶם תִּתְעַטָּף",
+      "polarity": "evil",
+      "reason": "Line 12 uses explicit 'בְּחִינַת' language: 'וְהִיא בְּחִינַת: נַפְשָׁם בָּהֶם תִּתְעַטָּף' — the soul wrapping itself within itself, unable to receive sustenance, IS a bechina of the verse 'their soul fainted/wrapped within them' (Psalm 107:5, from the desert-traveler stanza). This is a fifth bechina identity within the soul-suffering cluster — the soul's state of near-collapse IS described using this verse as its bechina-equivalent. Unlike the four types above (which serve as umbrellas), this is a single verse applied to a specific symptom of the soul's suffering. Not in the reference-163 dataset.",
+      "source_quote": "אֵין לָהּ שׁוּם כִּסּוּי לְהִתְעַטֵּף וּלְכַסּוֹת עַצְמָהּ, וְהִיא בְּחִינַת: נַפְשָׁם בָּהֶם תִּתְעַטָּף",
+      "proposed_edge": {
+        "node1_id": "חולי הנפש",
+        "node2_id": "נפשם בהם תתעטף",
+        "node1_text": "חֳלִי הַנֶּפֶשׁ",
+        "node2_text": "נַפְשָׁם בָּהֶם תִּתְעַטָּף",
+        "type": "bechina",
+        "reference": 163,
+        "is_good": null,
+        "is_bad": true
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "edge_note": "This edge connects 'נפשם בהם תתעטף' to 'חולי הנפש' (sickness of the soul) rather than directly to 'צרות הנפש', because the textual context (lines 11-12) is specifically the soul's fainting/illness state — being so collapsed that it cannot receive food even when offered. This is structurally part of the 'sick' archetype of Psalm 107. The soul's self-wrapping is a symptom of חולי הנפש."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "eitza_statements_noted_not_entered_as_bechina": [
+    {
+      "statement": "הַקְּלִפּוֹת רוֹצִים תָּמִיד לִתְפֹּס הַדִּבּוּר לְעַצְמָם",
+      "type": "eitza",
+      "reason": "Line 2: the klipot WANT TO SEIZE speech. This is directional action (the klipot reaching toward speech), not a bechina identity. 'לִתְפֹּס' = to seize/grasp is a causal/volitional verb. The klipot are not a bechina of speech; they are the agents that act upon it. This is the core eitza relationship of the Torah: klipot-desire → capture-of-speech."
+    },
+    {
+      "statement": "וְתוֹפְסִין הַדִּבּוּר לְהָעֹרֶף",
+      "type": "eitza",
+      "reason": "Line 6: the three officers (= anatomy) SEIZE speech to the back of the neck. Again a directional action — the windpipe/esophagus/blood vessels act as channels that divert speech. 'תּוֹפְסִין' = they seize is causal, not bechina. This should be entered as an eitza edge: קנה ווושט ורידין → דבור (diverts to העורף)."
+    },
+    {
+      "statement": "אִם לֹא שֶׁיָּבוֹא צַדִּיק אֱמֶת שֶׁיֵּשׁ לוֹ כֹּחַ לְהוֹצִיאוֹ מִשָּׁם",
+      "type": "eitza",
+      "reason": "Line 8: a true tzaddik has the POWER to EXTRACT the captured speech. This is purely causal (eitza): the tzaddik's power → rescue of speech. The tzaddik is not declared a bechina of anything in this Torah (he is parallel to Abraham in the Genesis narrative, but the text does not make this equation explicit using bechina language). Should be entered as an eitza edge if the causal rescue is to be captured."
+    },
+    {
+      "statement": "נִתְפַּס וְנֶאֱסַר שָׁם",
+      "type": "eitza",
+      "reason": "Line 13: the speech IS CAPTURED AND IMPRISONED there. 'נִתְפַּס' = was captured; 'נֶאֱסַר' = was imprisoned. These are the RESULT of the klipot's action — eitza outcomes, not bechina equivalences. The speech becoming imprisoned is what RESULTS from the klipot seizing it."
+    },
+    {
+      "statement": "מַגְבִּיהוֹ לְמַעְלָה וּמַעֲלֵהוּ לַשָּׁמַיִם, וְאַחַר־כָּךְ מַשְׁלִיכוֹ מְאֹד לְמַטָּה",
+      "type": "eitza",
+      "reason": "Line 14: the klipot lift the speech up and then throw it down. This is a causal sequence of actions (lifting → throwing down), not bechina identity. The verse 'יַעֲלוּ שָׁמַיִם יֵרְדוּ תְהוֹמוֹת' is invoked in line 18 as a bechina of 'יורדי הים' (Package 3), but the ACTION described in line 14 is eitza."
+    }
+  ],
+  "eitza_proposed_edges": [
+    {
+      "node1_id": "שלש קליפות",
+      "node2_id": "דבור",
+      "node1_text": "שָׁלֹשׁ קְלִפּוֹת",
+      "node2_text": "דִּבּוּר",
+      "type": "eitza",
+      "reference": 163,
+      "direction": "שלש קליפות → דבור",
+      "proof": "הַקְּלִפּוֹת רוֹצִים תָּמִיד לִתְפֹּס הַדִּבּוּר לְעַצְמָם — the klipot always want to seize speech for themselves"
+    },
+    {
+      "node1_id": "צדיק אמת",
+      "node2_id": "דבור",
+      "node1_text": "צַדִּיק אֱמֶת",
+      "node2_text": "דִּבּוּר",
+      "type": "eitza",
+      "reference": 163,
+      "direction": "צדיק אמת → דבור",
+      "proof": "אִם לֹא שֶׁיָּבוֹא צַדִּיק אֱמֶת שֶׁיֵּשׁ לוֹ כֹּחַ לְהוֹצִיאוֹ מִשָּׁם — a true tzaddik has the power to extract it from there (rescues the captured speech)"
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_163_edges_in_dataset": 1,
+    "total_reference_163_bechina_edges_in_dataset": 1,
+    "total_reference_163_eitza_edges_in_dataset": 0,
+    "bechina_statements_in_source_text": 10,
+    "bechina_statements_already_in_dataset": 1,
+    "new_bechina_edges_needed": 9,
+    "eitza_statements_in_source_text": 5,
+    "new_eitza_edges_needed": 2,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["דבור", "שרה"],
+      "package_2": ["שלש קליפות", "שר האופים ושר המשקים ושר הטבחים", "תאוות אכילה ושתייה", "קנה ווושט ורידין", "פרעה", "העורף"],
+      "package_3": ["צרות הנפש", "תועים במדבר", "חולי הנפש", "חבוש בבית האסורים", "יורדי הים", "נפשם בהם תתעטף"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "שלש קליפות",
+      "שר האופים ושר המשקים ושר הטבחים",
+      "תאוות אכילה ושתייה",
+      "קנה ווושט ורידין",
+      "פרעה",
+      "העורף",
+      "צרות הנפש",
+      "תועים במדבר",
+      "חולי הנפש",
+      "חבוש בבית האסורים",
+      "יורדי הים",
+      "נפשם בהם תתעטף"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "שכינה",
+        "reason": "Line 7 mentions 'שֶׁהָיָה שְׁכִינָה עִמָּהּ' (the Shekhinah was with her/Sarah). This is a statement of accompaniment/co-presence, not a bechina identity. The text does not say 'שרה היא בחינת שכינה' or 'הדיבור הוא בחינת שכינה'. The Shekhinah is referenced as a marker of the holy speech's value — it indicates WHY the capture of Sarah (holy speech) matters. It is background theological framing, not a bechina equation. Excluded."
+      },
+      {
+        "concept": "אברהם",
+        "reason": "Lines 7 and 10 reference Abraham as the model of trust (בטחון) in God even when Sarah was taken. Abraham is the narrative subject of the teaching's mashal — his trust in God despite distress is the emotional/practical model the teaching recommends. However, Abraham is never declared 'IS a bechina of' anything in this Torah; he is a human example cited for his response (trust despite suffering). He functions as a narrative/eitza actor (his trust → divine comfort), not as a bechina node. Excluded."
+      },
+      {
+        "concept": "ניצוצות קדושים",
+        "reason": "Line 7: 'שֶׁלִּקְּטָה מִשָּׁם נִיצוֹצוֹת הַקְּדוֹשִׁים כַּיָּדוּעַ' — Sarah gathered holy sparks from there (Egypt). This is an eitza-level outcome: being captured → enabled gathering of holy sparks. The holy sparks are not declared a bechina of anything in this Torah; they are the positive result of the temporary capture of holy speech. Line 10 also mentions finding holy sparks among a great person's klipot. The gathering of sparks is the eitza consequence of temporary capture, not a bechina-equivalent of speech or Sarah. Excluded."
+      },
+      {
+        "concept": "מצרים",
+        "reason": "Line 4: 'שֶׁהֵם בְּחִינוֹת מִצְרַיִם, שֶׁכֻּלָּם שְׁחוֹרִים וּשְׁפָלִים' — the klipot-people ARE a bechina of Egypt. This IS bechina language ('בְּחִינוֹת'). However, Egypt in this Torah functions as a generic characterization of the dark/low domain, not as a distinct conceptual node with independent spiritual content beyond 'the domain of the klipot.' The equation מצרים = klipot-domain is a single identification: Egypt IS the klipot domain. Adding Egypt as a separate node would be redundant — it is subsumed within 'שלש קליפות' in Package 2. If the dataset later develops a standalone 'מצרים' node with distinct spiritual content, this equivalence should be captured, but for this Torah's packages it does not constitute a separate node. Noted but not separately entered as an addition."
+      },
+      {
+        "concept": "פיזור הנפש",
+        "reason": "Line 11: 'מִתְפַּזֶּרֶת בְּפִזּוּר הַנֶּפֶשׁ בְּפִי כַּמָּה אֲנָשִׁים' — the soul scatters in the mouths of many people. 'פיזור הנפש' (dispersion/scattering of the soul) is a descriptive state mentioned here, but no bechina language is applied to it — the text does not say 'פיזור הנפש IS a bechina of X'. It is described as what happens (consequence), not as having a parallel conceptual identity. The concept is important to the teaching's phenomenology but does not constitute a bechina node. Excluded."
+      },
+      {
+        "concept": "קרירות",
+        "reason": "Line 12: the teaching uses the mashal (analogy) of a person overcome by extreme cold (קרירות) who has no covering and must fold himself up. This is an illustrative analogy for the soul's state — not a bechina declaration. The text explicitly introduces it with 'וּכְדִמְיוֹן' (= and this is like), marking it as a mashal/simile rather than a bechina identity. Excluded."
+      },
+      {
+        "concept": "צדיק אמת",
+        "reason": "Line 8: a true tzaddik has the power to extract captured speech. The tzaddik is the rescuing agent — an eitza actor. He is not declared a bechina of anything in this Torah. He is parallel to Abraham (the rescuer in the Genesis narrative), but this parallel is implicit in the mashal, not stated using bechina language. He is captured as an eitza node in eitza_proposed_edges above, not as a bechina node."
+      },
+      {
+        "concept": "אישׁ בשר זרועו יאכלו",
+        "reason": "Line 11 quotes Isaiah 9:19 with 'בִּבְחִינַת: אִישׁ בְּשַׂר זְרוֹעוֹ יֹאכֵלוּ' — 'they shall eat the flesh of their own arm.' This uses 'בְּחִינַת' language, making it technically a bechina statement for the soul eating itself. However, this verse is used as a proof-text describing the soul devouring itself in the wilderness — it is a fifth formulation of the soul's suffering alongside the Psalm 107 types. Its specific content (the soul consuming itself when starving) overlaps substantially with Package 3's 'חולי הנפש' node and 'נפשם בהם תתעטף'. Rather than adding a third sub-node to the illness cluster, this verse is noted as additional support for the 'חולי הנפש' node. The verse from Isaiah describes the same condition as Psalm 107's hunger passages. If a reviewer prefers to enter this as a separate bechina node ('אישׁ בשר זרועו יאכלו'), it would attach to Package 3."
+      }
+    ],
+    "note_on_psalm_107_structure": "Reb Nosson's commentary (lines 16-21) reveals that the Rebbe himself linked this Torah to the Talmudic statement (Berakhot 54b) about the four who must give thanks, developed in Psalm 107. The four archetypes — desert travelers (תועים במדבר), prisoners (חבושים בבית האסורים), the sick (חולים), and seafarers (יורדי הים) — are the organizing framework of Package 3. The bechina relationships in Package 3 are stated primarily in the commentary section (lines 17-18) using 'זֶה בְּחִינַת' language. This is structurally the same kind of bechina-through-commentary that appears in other Torahs where the Rebbe or Reb Nosson provides a retroactive bechina identification."
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "source": "Torah #203",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, the full source text torah_203.txt, and all reference===203 edges from torahData.js (none found). For each bechina statement in the source text, verified whether the concept appears as a node in the dataset for reference 203 and whether it is assigned to a package. Only concepts with explicit bechina language (הִיא, בְּחִינַת, הַיְנוּ, נִקְרָא) were considered. The Torah is a single paragraph of approximately 70 words. The entire argument turns on one bechina equation: אסתר = שכינה."
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "אסתר = שכינה (Esther IS the Shechina)",
+      "source_quote": "וְאֶסְתֵּר הִיא הַשְּׁכִינָה",
+      "source_text_ref": "Line 1 of torah_203.txt: 'שֶׁהָיָה מִתְהַלֵּךְ לִפְנֵי חֲצַר בֵּית הַנָּשִׁים לָדַעַת אֶת שְׁלוֹם אֶסְתֵּר, וְאֶסְתֵּר הִיא הַשְּׁכִינָה'",
+      "proposed_edge": {
+        "node1_id": "אסתר",
+        "node2_id": "שכינה",
+        "type": "bechina",
+        "reference": 203
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe uses the explicit copula 'הִיא' (is): 'אֶסְתֵּר הִיא הַשְּׁכִינָה'. This is the strongest bechina declaration — a direct equation of essential nature. Esther and the Shechina are two names for the same underlying reality: the concealed divine presence among Israel. The name אסתר (from הַסְתָּרָה, concealment) maps directly onto the Shechina's quality of hiddenness in exile. Note: the nodes אסתר and שכינה already appear in torahData.js under other references (e.g., reference=56, edge 406: הַסְתָּרָה שֶׁבְּתוֹךְ הַסְתָּרָה ↔ אסתר; reference=10, edge 407: אִשָּׁה ↔ אסתר). However, no edge connects אסתר and שכינה directly for reference 203. The proposed edge captures the specific Torah 203 teaching that Mordechai accessed knowledge of the Shechina via the women's stories precisely because Esther IS the Shechina. This is the load-bearing bechina of the entire teaching.",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_203_edges": 0,
+    "total_reference_203_bechina_edges": 0,
+    "total_reference_203_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1_proposed": ["שכינה", "אסתר"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "אסתר ↔ שכינה — bechina pair explicitly declared in source text, not in dataset for reference 203"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "מַעֲמַד הַשְּׁכִינָה (the state/position of the Shechina)",
+        "reason": "This is a descriptive noun phrase — 'the state of the Shechina' — not a bechina equation between two concepts. It names what is sought (the object of the eitza: to know the Shechina's state), not a parallel-nature identification. Excluded."
+      },
+      {
+        "concept": "שְׁלוֹם אֶסְתֵּר / שְׁלוֹם הַשְּׁכִינָה (the welfare/peace of Esther / the Shechina)",
+        "reason": "The phrase 'שְׁלוֹם הַשְּׁכִינָה' (the Shechina's welfare/peace) is the content of what is known — it is the target of the teaching (to know the Shechina's shalom). The text does not equate שְׁלוֹם with anything else using bechina language. The verse (Esther 2:11) uses 'לָדַעַת אֶת שְׁלוֹם אֶסְתֵּר' as proof-text. שלום here means welfare/wellbeing, not a new bechina concept. Excluded."
+      },
+      {
+        "concept": "חֲצַר בֵּית הַנָּשִׁים (the courtyard of the women's house)",
+        "reason": "This is the physical location through which (עַל-יְדֵי) the knowledge is attained — a spatial/narrative descriptor functioning as the medium of the eitza, not a concept being equated to another via bechina. The teaching does not say 'חצר בית הנשים הוא בחינת X'. Excluded."
+      },
+      {
+        "concept": "סִפּוּרֵי דִּבְרֵיהֶם (their stories/conversations)",
+        "reason": "The women's stories are the eitza mechanism — the means by which (עַל-יְדֵי) knowledge of the Shechina is attained. The text uses 'עַל-יְדֵי סִפּוּרֵי דִּבְרֵיהֶם', a classic eitza marker ('by means of / through'). This is not a bechina; the stories are causally related to the knowledge of the Shechina, not essentially identical to it. Excluded from bechina analysis."
+      },
+      {
+        "concept": "מָרְדֳּכַי (Mordechai)",
+        "reason": "Mordechai appears in the proof-verse (Esther 2:11) as the biographical figure who exemplified the teaching's method. He is the actor who performed the practice (walking before the women's courtyard, listening to their stories). The text does not use bechina language to equate Mordechai with any abstract concept in this Torah. He functions as a historical demonstration (nimshal / proof-figure), not as the subject of a bechina equation. Note: Mordechai IS equated to concepts in other Torahs (e.g., reference=10 equates אִשָּׁה/אִישׁ with בְּחִינַת מָרְדֳּכַי וְאֶסְתֵּר), but not in Torah 203. Excluded."
+      },
+      {
+        "concept": "נָשִׁים (women)",
+        "reason": "'Women' in this Torah are the source of the stories — the medium through which knowledge flows (the eitza mechanism). They are not equated to any other concept via bechina language. The teaching is about listening to women's conversations as an observational practice; it does not declare 'נָשִׁים הֵן בְּחִינַת X'. Excluded."
+      }
+    ],
+    "structural_observations": [
+      "Torah 203 is among the shortest teachings in the Likutay Moharan corpus — a single paragraph of approximately 70 words.",
+      "The teaching has a single-axis eitza structure: women's stories (cause) → knowledge of the Shechina's state (effect). This eitza is supported by one bechina: Esther = Shechina (which is why Mordechai could learn about the Shechina from the women's court where Esther lived).",
+      "The bechina אסתר = שכינה is the theological foundation that makes the eitza work: Esther's state mirrors the Shechina's state, so stories from her court carry information about the Shechina.",
+      "There is no evil mirror package in this Torah. The teaching does not describe an opposing evil force, a corrupted counterpart, or any negative domain. It is a purely positive, practical teaching about a spiritual observational practice.",
+      "The dataset has zero coverage of Torah 203 (no edges with reference===203 in torahData.js). The teaching is entirely absent from the dataset."
+    ]
+  }
+}

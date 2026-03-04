@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "source": "Torah #275",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0
+  },
+  "analysis_note": "Torah #275 has zero bechina edges in the dataset (filter: reference === 275 AND type === 'bechina' returns no results). No entries with reference 275 appear in torahData.js at all — the Torah's concepts have not yet been encoded. The source text does contain explicit bechina language (see torah_275_additions.json for the gap analysis), but no packages can be generated from an empty bechina subgraph. All bechina-based package proposals are therefore deferred to the additions file, where they are flagged as missing dataset edges for future encoding."
+}

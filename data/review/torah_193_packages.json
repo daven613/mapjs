@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "source": "Torah #193",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #193 has zero bechina edges in torahData.js (the single entry for reference 193, id 1281, is an eitza edge). The source text is six lines and constitutes a self-contained teaching about the power of thought (מחשבה) and its identity with physical reality. Because no bechina edges exist in the dataset, connected-component analysis yields zero components. However, the source text itself contains at least one explicit bechina declaration — 'אֵין הֶפְרֵשׁ בֵּין הַמִּיתָה בְּפֹעַל לְהַצַּעַר שֶׁמַּרְגִּישׁ מֵהַמִּיתָה בְּמַחֲשָׁבָה' ('there is no difference between actual death and the pain felt from death in thought') — plus several near-bechina equations. The text-derived conceptual cluster centers on the identity of מחשבה (thought) with physical reality (מציאות בפועל), particularly in the domain of מסירת נפש (martyrdom / self-sacrifice). All three packages below are proposed on the basis of the source text, not the dataset, and are flagged accordingly."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 193,
+      "label": "מַחֲשָׁבָה וּמְצִיאוּת בְּפֹעַל",
+      "label_en": "Thought and Actual Reality",
+      "polarity": "neutral",
+      "reason": "The central declaration of Torah #193 is that there is no difference between actual death and the pain of death felt through intense thought: 'אֵין הֶפְרֵשׁ בֵּין הַמִּיתָה בְּפֹעַל לְהַצַּעַר שֶׁמַּרְגִּישׁ מֵהַמִּיתָה בְּמַחֲשָׁבָה'. This is a classic bechina declaration — the teaching equates מחשבה (thought / mental reality) with מציאות בפועל (actual physical reality). They are not cause and effect; thought does not produce reality here — they ARE the same thing at the level of experience. The Rebbe opens with the premise that if one strengthens thought on any matter it will happen ('יוּכַל לִפְעֹל שֶׁיִּהְיֶה כָךְ'), but this is presented not as causation but as identity: the thought, when fully intensified, is the thing itself. The polarity is neutral because thought (מחשבה) is a faculty that can be directed toward any domain — good (martyrdom for God's name) or harmful (excessive wealth-seeking). The concept of מחשבה here is the universal mechanism, not inherently holy or evil.",
+      "dominant_node": "מחשבה",
+      "nodes": [
+        "מחשבה",
+        "מציאות בפועל",
+        "צער המיתה במחשבה",
+        "מיתה בפועל"
+      ],
+      "node_degrees": {
+        "מחשבה": 3,
+        "מציאות בפועל": 1,
+        "צער המיתה במחשבה": 2,
+        "מיתה בפועל": 2
+      },
+      "merge_notes": [
+        "This package is derived entirely from the source text — there are no bechina edges in torahData.js for reference 193 to serve as the algorithmic basis.",
+        "The bechina equation in the source text: 'אֵין הֶפְרֵשׁ בֵּין הַמִּיתָה בְּפֹעַל לְהַצַּעַר שֶׁמַּרְגִּישׁ מֵהַמִּיתָה בְּמַחֲשָׁבָה' — 'there is no difference between actual death and the pain felt from death through thought.' This is the primary bechina of the Torah: מיתה בפועל ↔ צער המיתה במחשבה.",
+        "The opening statement — 'if one strengthens thought on any matter one can make it happen' — generalizes the same identity: מחשבה תקיפה ↔ מציאות בפועל. The mechanism is not causation but ontological identity: fully-actualized thought IS reality.",
+        "These four concepts form one connected cluster because they all express the same essential nature: the identity of mental reality with physical reality. No evil mirror exists in this Torah — the text does not discuss a negative counterpart to thought-power."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 193,
+      "label": "מְסִירַת נֶפֶשׁ וְקִדּוּשׁ הַשֵּׁם",
+      "label_en": "Martyrdom and Sanctification of God's Name",
+      "polarity": "good",
+      "reason": "The specific application of the thought-reality identity in this Torah is מסירת נפש על קידוש השם (self-sacrifice for the sanctification of God's name). The text explicitly links: קבלת מסירת נפש (the acceptance of martyrdom) ↔ ארבע מיתות בית דין (the four court-decreed deaths accepted by Rabbi Akiva during Shema) ↔ קריאת שמע (the recitation of the Shema, which is the formal context for this acceptance). All three are identified as the same act — they are parallel expressions of the same spiritual devotion, not a sequence of causes and effects. Rabbi Akiva's statement ('כל ימי הייתי מצטער מתי יבוא לידי ואקיימנו') is interpreted to mean that every time he recited Shema and accepted martyrdom in thought, he actually felt the pain of death — meaning the mental acceptance and the physical reality were one. This cluster is unambiguously good-polarity: it describes the highest level of devotion to God, the complete identification with the Shema declaration.",
+      "dominant_node": "מסירת נפש",
+      "nodes": [
+        "מסירת נפש",
+        "קידוש השם",
+        "ארבע מיתות בית דין",
+        "קריאת שמע"
+      ],
+      "node_degrees": {
+        "מסירת נפש": 3,
+        "קידוש השם": 1,
+        "ארבע מיתות בית דין": 1,
+        "קריאת שמע": 1
+      },
+      "merge_notes": [
+        "This package is derived from the source text — no bechina edges exist in torahData.js for this reference.",
+        "The bechina relationships: (1) Rabbi Akiva's acceptance of martyrdom during Shema IS the ארבע מיתות בית דין — 'בְּשָׁעַת קְרִיאַת שְׁמַע שֶׁהָיָה רַבִּי עֲקִיבָא מְקַבֵּל עַל עַצְמוֹ אַרְבַּע מִיתוֹת בֵּית דִּין, הָיָה מְקַבֵּל עַל עַצְמוֹ מְסִירַת נַפְשׁוֹ'. The text treats these as identical, not sequential. (2) קריאת שמע is the context/bechina of מסירת נפש — during Shema one accepts martyrdom; they are the same spiritual act from two sides.",
+        "This is a separate package from Package 1 because the relationship between the two packages is eitza, not bechina: the power of thought (Package 1) is what ENABLES the full experience of מסירת נפש (Package 2). Package 1 is the mechanism; Package 2 is the holy domain in which that mechanism is applied."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "notes": "Torah #193 has zero bechina edges in torahData.js. All package proposals are derived from close reading of the source text (torah_193.txt). The packages represent the conceptual structure that WOULD emerge from a full encoding of this Torah's bechina relationships. The teaching's argument follows the eitza pattern: [מחשבה Package 1: neutral] →eitza→ [מסירת נפש Package 2: good]. Package 1 (thought = reality) provides the conceptual foundation; Package 2 (martyrdom = Shema) provides the holy application. The key bechina missing from the dataset is: מיתה בפועל ↔ צער המיתה במחשבה — the teaching's core declaration."
+  }
+}

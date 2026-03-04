@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "source": "Torah #177",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "proposed_edge": "יין ↔ ראש",
+      "node1": "יין",
+      "node2": "ראש",
+      "rationale": "The Torah opens by stating that wine, when a person is 'zakha' (meritorious), 'נעשה ראש' — literally becomes/is the head. This is an explicit bechina: wine-in-its-holy-dimension = rosh. The text: 'יין יש לו שני בחינות: זכה – נעשה ראש, וכשנעשה ראש שהוא בחינות מחין.' The wine becoming head is not a causal statement ('wine causes a head') but an identity statement in the Kabbalistic sense — the wine IS the rosh, the mochin. This edge would connect יין into the ראש/מחין package.",
+      "target_package": 3,
+      "edge_type": "bechina",
+      "confidence": "high"
+    },
+    {
+      "proposed_edge": "שמן ↔ מחין",
+      "node1": "שמן",
+      "node2": "מחין",
+      "rationale": "The text explicitly states: 'שלמות המחין, שהם בחינת: שמן משחת קדש, בחינת: כשמן הטוב על הראש, כיידוע.' The mochin are identified with the holy anointing oil (shemen mishchat kodesh) and with the good oil upon the head from Tehilim 133. Shemen (oil) = mochin is a classic Kabbalistic equivalence here stated explicitly. This would add שמן to the ראש/מחין package.",
+      "target_package": 3,
+      "edge_type": "bechina",
+      "confidence": "high"
+    },
+    {
+      "proposed_edge": "חכמה ↔ מחין",
+      "node1": "חכמה",
+      "node2": "מחין",
+      "rationale": "The Torah cites 'ואיש חכם יכפרנה' (Mishlei 16:14) to explain how mochin enable atonement: the wise man = the one who has mochin. Chokhmah and mochin are used interchangeably throughout the passage. The text at line 5: 'עיקר הסליחה – על-ידי החכמה והמחין הקדושים שמקבל בבחינת: ואיש חכם יכפרנה.' Chokhmah is explicitly stated as a bechina of mochin here.",
+      "target_package": 3,
+      "edge_type": "bechina",
+      "confidence": "high"
+    },
+    {
+      "proposed_edge": "כתר ↔ ישראל",
+      "node1": "כתר",
+      "node2": "ישראל",
+      "rationale": "The Torah's analysis of Kaddish: 'יתגדל — תגי דל. תגי, כתר. ישראל הוא בחינת תגי, כי שרית עם אלקים.' Israel = the tagi (crown-tags on letters) = keter. This is an explicit bechina equation. These concepts belong to the Kaddish-analysis cluster (see also new package proposal below).",
+      "target_package": null,
+      "edge_type": "bechina",
+      "confidence": "high",
+      "note": "Keter and Yisrael are not yet in any package for Torah #177; if a new Kaddish package were created this edge would anchor it."
+    },
+    {
+      "proposed_edge": "באר ↔ רצון",
+      "node1": "באר",
+      "node2": "רצון",
+      "rationale": "The Torah states: 'רבא – באר. ומשביע לכל חי רצון.' The word 'raba' in Kaddish = a well (be'er) that satisfies all living beings with ratzon. Be'er = ratzon is the stated bechina. This would connect באר into the מלכות/כבוד/רצון package (as ratzon is already there).",
+      "target_package": 2,
+      "edge_type": "bechina",
+      "confidence": "high"
+    },
+    {
+      "proposed_edge": "תגי ↔ כתר",
+      "node1": "תגי",
+      "node2": "כתר",
+      "rationale": "The text parses יתגדל as תגי+דל and states 'תגי, כתר' — the crown-tags (tagi) = keter (crown). This is an explicit bechina equation used to interpret Kaddish.",
+      "target_package": null,
+      "edge_type": "bechina",
+      "confidence": "high"
+    },
+    {
+      "proposed_edge": "מלכות אחרים ↔ רצון אחר",
+      "node1": "מלכות אחרים",
+      "node2": "רצון אחר",
+      "rationale": "The Torah states: 'כשרוצה האדם איזה רצון אחר חוץ מרצון השם יתברך, על ידי זה נעשה מלכות אחרים של העכו\"ם.' A foreign/other will generates foreign kingship — they are identified as the same bechina. This is the evil mirror of the מלכות/כבוד/רצון package: just as holy ratzon = holy malkhut, so too other-ratzon = malkhut-of-idolaters. These two evil concepts share a nature and would form the evil counterpart package.",
+      "target_package": null,
+      "edge_type": "bechina",
+      "confidence": "medium",
+      "note": "This is the evil mirror of Package #2. Consider creating a separate evil package for מלכות אחרים and רצון אחר."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 5,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "יין — wine, the central vehicle of the teaching (has two aspects: zakha→rosh; lo zakha→lower state). Not recorded as a bechina node for Torah #177.",
+      "שמן — holy anointing oil, explicitly equated with mochin ('שמן משחת קדש', 'כשמן הטוב על הראש'). Not recorded.",
+      "חכמה — wisdom, cited as the instrument of atonement ('ואיש חכם יכפרנה'); equated with mochin in the text. Not recorded for Torah #177.",
+      "כפרת עוונות / סליחה — atonement/forgiveness, the practical outcome of the wine→rosh→mochin chain. Appears as eitza target; not yet a bechina node.",
+      "כתר — the crown, parsed from 'תגי' in Kaddish analysis. Not recorded.",
+      "תגי — the letter-crown tags, parsed from 'יתגדל'. Equated with keter and ישראל. Not recorded.",
+      "ישראל — Israel, equated with tagi because 'sarita im Elohim'. Not recorded.",
+      "ת\"ק שדי — the name Shaddai (spelled as 400+100=500=ת\"ק, plus שדי), from analysis of 'יתקדש'. Not recorded.",
+      "באר — a well, equated with 'רבא' and 'משביע לכל חי רצון'. Not recorded.",
+      "מלכות אחרים — foreign/evil kingship created by a person's alien desires. Not recorded.",
+      "רצון אחר — the alien will/desire opposed to God's will. Not recorded.",
+      "עלמא דברא — 'the world He created according to His will' (Kaddish phrase); the condition for 'ויַמְלִיךְ מַלְכוּתֵהּ'. Not recorded."
+    ],
+    "coverage_note": "Torah #177 is recorded in the dataset with only 5 bechina edges — extremely sparse for a Torah of this richness. The source text (though brief — only 14 lines) contains at least 7 additional bechina-eligible equations that are not yet in the dataset. The Kaddish analysis section (lines 13–16) in particular is almost entirely unmapped as bechina edges."
+  }
+}

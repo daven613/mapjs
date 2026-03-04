@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "source": "Torah #276",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NO_NEW_PACKAGES",
+  "new_packages": [],
+  "observations": "Torah #276 does not yield any new packages — neither from the dataset nor from the source text itself. The reasons are as follows:\n\n1. ZERO BECHINA EDGES IN DATASET: The filter reference === 276 AND type === 'bechina' returns no results. The only existing edge for this Torah (id: 745) connects אכילת שבת → דיתברכון כלהו שתא יומין and is correctly typed as 'eitza' — Shabbat eating *produces* the blessing of the six days; it does not share the same essential nature as it.\n\n2. NO BECHINA LANGUAGE IN SOURCE TEXT: The source text was read in full. It contains no instance of 'בְּחִינַת', 'הוּא בְּחִינַת', 'נִקְרָא', or any other standard bechina marker. Every connection in the text is causal ('כִּי', 'עַל יְדֵי זֶה', 'נִמְצָא שֶׁ...'). This is a Torah built entirely on eitza logic.\n\n3. THE THRESHOLD OF 3+ CONCEPTS IS NOT MET: The new-package criterion requires 3 or more concepts connected by explicit bechina language forming an independent domain. No such cluster exists here. The causal chain אכילת שבת → מאור עינים → שביעה → ברכת הימים is a directed eitza flow, not a family of parallel aspects.\n\n4. STRUCTURAL NOTE: Torah #276 is one of the shortest Torahs in Likutay Moharan (3 paragraphs, ~200 words). Its purpose is to illuminate a single practical insight (why we eat three Shabbat meals — not for personal satiety but to bless the weekdays) through a tightly reasoned causal argument. It does not contain the multi-domain bechina architecture that generates packages. This Torah would appear in the graph solely through its eitza edge(s) and through shared concept-nodes that link it to other Torahs where those same concepts (שבת, מאור עינים, שביעה) have richer bechina treatments."
+}

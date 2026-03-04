@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "source": "Torah #174",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, confirmed zero bechina edges for reference===174 in torahData.js, and analyzed the full source text torah_174.txt (4 lines). Checked every sentence for bechina-language markers: בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, בִּבְחִינַת, הוּא בְחִינַת. None found. Checked all concepts appearing in the text for dataset presence and package assignment. Since there are no packages for Torah #174, there are no package IDs to assign additions to, and no unassigned dataset nodes to report."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "דִּינִין (judgments/stern judgments)",
+        "reason": "The central operative concept of Torah #174. The Rebbe states: 'כְּשֶׁהַדִּינִין גּוֹבְרִים עַל הָאָדָם' — when judgments overpower a person. Dinin are the causal trigger of the entire ruling; they are not declared to be a bechina of any other concept. The text says nothing like 'dinin הוא בחינת X.' דינין appears in other Torahs with bechina connections (e.g., Torah #173: 'אלקים' as a name of judgment), but Torah #174 does not establish any such bechina equivalence. Pure eitza context here."
+      },
+      {
+        "concept": "שֵׁם (name / personal name)",
+        "reason": "The word שֵׁם is central to the teaching: a person's name causes them to be identifiable (נִכָּר וּמְסֻיָּם) among the accusing forces. The teaching explains WHY naming is dangerous under judgment, not WHAT a name IS in a bechina sense. The Rebbe never says 'שֵׁם הוּא בְּחִינַת X.' The role of שֵׁם is entirely causal — it is the mechanism through which the judgments can target the person. Excluded as a bechina concept."
+      },
+      {
+        "concept": "מְקַטְרְגִים (accusers / prosecuting angels)",
+        "reason": "Mentioned as the hostile forces who become empowered when a sick person is named during prayer under conditions of prevailing judgment. The Rebbe does not say 'מְקַטְרְגִים הֵם בְּחִינַת X.' They appear as actors in a causal narrative. No bechina language attaches to this concept anywhere in the 4-line text."
+      },
+      {
+        "concept": "תְּפִלָּה (prayer) / לְהַזְכִּיר שְׁמוֹ (mentioning the name in prayer)",
+        "reason": "The Torah's ruling concerns how prayer is performed when judgments are prevailing — specifically the practice of naming the sick person and their mother's name in the prayer. This is a practical-halakhic category. No bechina declaration is made about prayer in this text. The teaching does not say 'prayer is a bechina of X.' The connection between תְּפִלָּה and שֵׁם is purely procedural-causal."
+      },
+      {
+        "concept": "נָא רְפָא (the words from Moses's prayer, Num. 12:13)",
+        "reason": "The Rebbe observes that 'נָא רְפָא' equals in gematria 'מִרְיָם יוֹכֶבֶד' — the name of the sick person and her mother's name. This is explicitly characterized as 'רֶמֶז נִפְלָא' (a wonderful hint/cryptographic device), not a bechina. The word בְּגִימַטְרִיָּא (by numerical equivalence) signals a different type of relation from בְּחִינַת (shared essential nature). A gematria remez states that two strings have the same numerical value — it does not assert that they share the same essential nature or are two expressions of the same underlying reality. Under the framework definition of bechina (framework.md §1.1), this equivalence is categorically excluded. Not a bechina node."
+      },
+      {
+        "concept": "מִרְיָם (Miriam) and יוֹכֶבֶד (Yocheved)",
+        "reason": "Miriam is mentioned as the sick person Moses prayed for; Yocheved is her mother. They serve as narrative actors and as examples validating the rule. The text does not say 'מִרְיָם הִיא בְּחִינַת X.' Miriam and Yocheved are identified by name in the gematria remez — but as noted above, gematria is not bechina. Not bechina concepts."
+      },
+      {
+        "concept": "נֹחַ and his father לֶמֶךְ (implied)",
+        "reason": "The Midrashic tradition is cited that Noah's father did not name him at birth because the world was under judgment. Noah is a narrative illustration, not a bechina node. The text does not say 'נֹחַ הוּא בְּחִינַת X.' He functions as a proof-case for the eitza logic: [judgments prevailing] → [do not name] → [lest judgments find the named individual]. Not a bechina concept."
+      }
+    ],
+    "structural_observation": "Torah #174 is a practical-halakhic ruling with two narrative proof-cases and one remarkable cryptographic detail. Its entire structure is eitza (causal/conditional): [prevailing judgment] → [withhold explicit name in prayer] → [but Moses embedded name cryptographically via gematria remez]. The teaching answers a 'what to do and why' question, not a 'what is this essentially' question. Bechina language (parallel-nature identity) is completely absent from the 4-line text. This matches the pattern of Torah #171 (5 lines, pure eitza, zero bechina edges) — these are very short, narrow, practical teachings that do not employ the conceptual topology (bechina map) that longer teachings use. The dataset's absence of reference===174 entries accurately represents the text's structural character."
+  }
+}

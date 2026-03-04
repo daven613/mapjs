@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "source": "Torah #264",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": null,
+      "node_id": "זיווג",
+      "node_text": "זִוּוּג",
+      "polarity": "good",
+      "reason": "The Torah explicitly states that the act of tzedakah in the Mishkan donation context IS the bechina of zivug (sacred union). The verse 'vayavo'u ha'anashim al hanashim' is interpreted as zivug accomplished through tzedakah. Zivug and tzedakah-shefa-to-the-right-place share the same essential nature: both are the proper channeling of divine influence/shefa to where it belongs. Since there are no other bechina-connected nodes in the dataset for this Torah, this node would form a one-node component or be paired with tzedakah / tikkun habrit in a new bechina edge.",
+      "source_quote": "וְזֶה בְּחִינַת: וַיָּבוֹאוּ הָאֲנָשִׁים עַל הַנָּשִׁים, הַנֶּאֱמַר בְּנִדְבַת הַמִּשְׁכָּן. הַיְנוּ בְּחִינַת זִוּוּג שֶׁנַּעֲשָׂה עַל־יְדֵי הַצְּדָקָה שֶׁל נִדְבַת הַמִּשְׁכָּן",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "השפעה לקדושה",
+      "node_text": "הַשְׁפָּעָה לִקְדֻשָּׁה",
+      "polarity": "good",
+      "reason": "The Torah's core mechanism is about hashpa'ah (divine flow/influence) being directed to the right place — kedusah. This is presented as the essential nature of both tzedakah and tikkun habrit: both restore shefa to holiness. The positive act is bechina of proper directed shefa. This concept is implicit rather than labeled with an explicit 'bechina' tag, but is the shared-nature that unites the Torah's concepts.",
+      "source_quote": "עַל־יְדֵי הַצְּדָקָה, שֶׁעַל־יְדֵי־זֶה חוֹזֵר וּמַשְׁפִּיעַ לְשָׁם, אֶל הַקְּדֻשָּׁה",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "השפעה למקום שאינו צריך",
+      "node_text": "הַשְׁפָּעָה לְמָקוֹם שֶׁאֵינוֹ צָרִיךְ",
+      "polarity": "evil",
+      "reason": "The Torah states that pgam habrit consists of diverting shefa to the wrong place. Giving tzedakah to an unworthy poor person is presented as the same bechina — it too sends shefa to where it does not belong, compounding the pgam rather than fixing it. These two negative acts (sexual pgam and tzedakah-to-the-unworthy) share the same essential nature: misdirected divine flow. This is the evil mirror of 'hashpa'ah likdushah'.",
+      "source_quote": "כְּשֶׁנּוֹתֵן לְעָנִי שֶׁאֵינוֹ הָגוּן, אֲזַי אַדְּרַבָּא הוּא נִפְגָּם יוֹתֵר, כִּי חוֹזֵר וּמַשְׁפִּיעַ לְמָקוֹם שֶׁאֵינוֹ צָרִיךְ",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "זיווג",
+      "השפעה לקדושה",
+      "השפעה למקום שאינו צריך"
+    ],
+    "existing_dataset_edge": {
+      "id": 3212,
+      "node1_id": "צדקה",
+      "node2_id": "תקון הברית",
+      "type": "eitza",
+      "note": "Correctly classified as eitza. Tzedakah PRODUCES tikkun habrit — one causes the other, they are not the same thing. This edge should remain eitza and is not a candidate for bechina reclassification."
+    },
+    "torah_summary": "Torah #264 is a very short teaching (3 sentences). Its central argument: pgam habrit = diverting shefa from holiness; tzedakah = restoring shefa to holiness; therefore tzedakah rectifies the bris. The bechina language appears once: the verse about the Mishkan donation (men coming to women) is called the 'bechina of zivug accomplished through tzedakah'. The Torah then notes that giving to an unworthy pauper compounds the pgam because it again misdirects shefa — establishing an implicit bechina between the two acts of misdirected flow (sexual pgam and tzedakah-to-wrong-recipient). The good/evil mirror: proper shefa to kedusah vs. misdirected shefa to impurity. A minimal bechina package could be built around these concepts if edges were added."
+  }
+}

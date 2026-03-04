@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "source": "Torah #247",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "קינות",
+      "node_text": "קִינוֹת",
+      "polarity": "evil",
+      "reason": "The source text explicitly declares kinot (lamentations) a bechina: 'נַעֲשֶׂה מִזֶּה בְּחִינַת קִינוֹת'. Kinot is the same essential phenomenon as teiku and mechusar tikkun — it is the letters of tikkun with the nun bent downward. The bent nun is the visual/letterform expression of the fallen, exilic state. Kinot belongs in Package 1 because it shares the same essential nature as the other nodes: the unrectified, fallen dimension of existence. It is a third face of the same broken state.",
+      "source_quote": "נַעֲשֶׂה מִזֶּה בְּחִינַת קִינוֹת, שֶׁהוּא אוֹתִיּוֹת תִּיקּוּן, רַק שֶׁהַנּוּן נִכְפֶּפֶת",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "נון כפופה",
+      "node_text": "נוּן כְּפוּפָה",
+      "polarity": "neutral",
+      "reason": "The bent/final nun is described in the text as the letterform that characterizes the fallen, exilic state of teiku and kinot. 'הִיא נִשְׁפֶּלֶת וְנִכְפֶּפֶת' (it descends and bends) — the bent nun is the material/letterform embodiment of mechusar tikkun. As a letter-form concept it is structurally neutral (letters can appear in holy or deficient contexts), but in this Torah it is specifically the marker of exile. Adding it to the dataset would allow the letterform dimension of the teaching to be traversed. It is most closely aligned with Package 1 as the structural token of the exile state.",
+      "source_quote": "זֹאת הַנּוּן פְּשׁוּטָה כְּשֶׁנֶּחְסֶרֶת מֵהַתִּיקּוּן ... אֲזַי הִיא נִשְׁפֶּלֶת וְנִכְפֶּפֶת, וְנַעֲשֶׂה מִזֶּה בְּחִינַת קִינוֹת",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "תיקון",
+      "node_text": "תִּיקּוּן",
+      "polarity": "good",
+      "reason": "Tikkun (complete repair) is the implicit positive pole of the entire Torah. The teaching opens with the Zohar statement that teiku = mechusar tikkun (lacking tikkun), and closes with the prayer 'may the kinot be transformed into tikkun, and may the teiku be repaired'. Tikkun is the aspirational state — the presence of the upright nun. This concept warrants its own good-pole package (package_id null because it would anchor a NEW package for the positive/redemption pole, which has no dataset edges yet for Torah #247). It is the mirror-image counterpart of Package 1.",
+      "source_quote": "וְיִתְהַפְּכוּ הַקִּינוֹת לְתִּיקּוּן, וְיִתְתַּקֵּן הַתֵּיקוּ הַנַּ\"ל",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "נון פשוטה",
+      "node_text": "נוּן פְּשׁוּטָה",
+      "polarity": "neutral",
+      "reason": "The straight/long nun is explicitly named as the letterform concept that is present in tikkun, absent in teiku, and bent in kinot. 'זֹאת הַנּוּן פְּשׁוּטָה כְּשֶׁנֶּחְסֶרֶת מֵהַתִּיקּוּן' — the straight nun is the hinge of the entire Torah's argument. Its presence/absence/bending is the structural mechanism linking teiku, mechusar tikkun, kinot, and the aspirational tikkun. As a letter-form it is neutral (structural object), but it is the pivotal concept of this Torah. It would anchor the neutral letterform aspect of the teaching.",
+      "source_quote": "זֹאת הַנּוּן פְּשׁוּטָה כְּשֶׁנֶּחְסֶרֶת מֵהַתִּיקּוּן וְנַעֲשֶׂה בְּחִינַת תֵּיקוּ כַּנַּ\"ל, אֲזַי הִיא נִשְׁפֶּלֶת וְנִכְפֶּפֶת",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 1,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "קִינוֹת",
+      "נוּן פְּשׁוּטָה",
+      "נוּן כְּפוּפָה",
+      "תִּיקּוּן"
+    ],
+    "note": "Torah #247 has exactly one bechina edge in the dataset (id: 1774.0): תיקו ↔ מחסר תקון. Both nodes are already assigned to Package 1 — no orphaned dataset nodes exist. However, the source text is rich with additional bechina language that is not yet in the dataset. Most critically: (1) kinot is explicitly declared a bechina ('נַעֲשֶׂה מִזֶּה בְּחִינַת קִינוֹת') but is missing from the dataset; (2) the bent nun and the straight nun are the structural mechanism of the entire teaching and should be represented; (3) tikkun (complete repair) is the positive pole/aspiration of the Torah and should anchor its own good-polarity package. The Torah is remarkably compact (2 sentences) but contains at minimum 3 bechina declarations, of which only one is currently in the dataset."
+  }
+}

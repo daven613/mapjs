@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "source": "Torah #158",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_158_packages.json, all reference===158 edges from torahData.js (none found — Torah #158 is unencodeed), and the full source text torah_158.txt. Since the dataset has zero edges for reference 158, there are no unassigned dataset nodes. All additions are 'missing_bechina_edge' proposals: concept pairs found in the source text using bechina-language (כמו כן structural analogy, מתקבצים parallelism) that should be added to the dataset as bechina edges. The text's 'כמו כן' construction is treated as explicit bechina-language per framework rules: it establishes that two concepts share the same essential nature across domains."
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "node1_id": "אש בוערת",
+      "node1_text": "אֵשׁ בּוֹעֵרֶת",
+      "node2_id": "התלהבות הלב",
+      "node2_text": "הִתְלַהֲבוּת הַלֵּב לְהַשֵּׁם יִתְבָּרַךְ",
+      "suggested_package": 1,
+      "suggested_package_label": "אֵשׁ בּוֹעֵרֶת וְהִתְלַהֲבוּת הַלֵּב",
+      "source_quote": "כְּמוֹ כֵן יֵשׁ כַּמָּה בְּנֵי אָדָם, שֶׁלִּפְעָמִים נִבְעָר לִבּוֹ לְהַשֵּׁם יִתְבָּרַךְ",
+      "source_location": "Torah #158, line 3",
+      "reasoning": "The 'כמו כן' at the opening of line 3 is the Torah's explicit bechina declaration: just as the physical fire burns from afar and then extinguishes, 'likewise' people's hearts burn toward God and then fade. Per the framework, 'כמו כן' (just as / likewise) establishes a bechina — it says the two phenomena share the same essential nature, being two faces of the same underlying reality. The physical fire (אש בוערת) and the spiritual burning-heart (hitlahavut halev) are structural parallels: both appear suddenly, both burn temporarily, both extinguish and leave nothing behind when approached. This edge does not currently exist in the dataset and must be added as: node1=אש בוערת, node2=התלהבות הלב, type=bechina, reference=158."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "node1_id": "אידים",
+      "node1_text": "אֵדִים הָעוֹלִים מִן הָאָרֶץ",
+      "node2_id": "חרטות רשעים",
+      "node2_text": "חֲרָטוֹת הָרְשָׁעִים",
+      "suggested_package": 2,
+      "suggested_package_label": "אֵדִים וְחֲרָטוֹת הָרְשָׁעִים",
+      "source_quote": "וְזֶה בָּא מֵרְשָׁעִים, הַיְנוּ מִמַּה שֶּׁהָרְשָׁעִים מְלֵאִים חֲרָטָה. וְאֵלּוּ הַחֲרָטוֹת מִתְקַבְּצִים וּבָאִים לְאֵיזֶה אָדָם",
+      "source_location": "Torah #158, line 4",
+      "reasoning": "The Torah's structural parallelism makes the aiding (vapors from earth) and the charatot (regrets of the wicked) explicit bechinas of each other. The parallel is established through: (1) the 'כמו כן' in line 3 equating the two phenomena; (2) identical verb מתקבצים used for both (line 2: the vapors 'gather together'; line 4: 'these charatot gather'); (3) both rise from a source below (earth / reshaim), gather, and then ignite something temporarily. The relationship is: vapors ARE the bechina of charatot — they are two faces of the same reality (rising accumulations of latent energy that ignite briefly and then extinguish). This edge does not currently exist in the dataset and must be added as: node1=אידים, node2=חרטות רשעים, type=bechina, reference=158."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "node1_id": "כח של גפרית",
+      "node1_text": "כֹּחַ שֶׁל גָּפְרִית",
+      "node2_id": "אידים",
+      "node2_text": "אֵדִים הָעוֹלִים מִן הָאָרֶץ",
+      "suggested_package": 2,
+      "suggested_package_label": "אֵדִים וְחֲרָטוֹת הָרְשָׁעִים",
+      "source_quote": "וְיֵשׁ אֵדִים שֶׁיֵּשׁ לָהֶם כֹּחַ שֶׁל גָּפְרִית",
+      "source_location": "Torah #158, line 2",
+      "reasoning": "The text specifies that not all vapors ignite — only those that have 'kach shel gufrit' (sulfur-power). This defines a sub-type of aiding: the ignition-capable vapors. The Torah says 'there are vapors that have the power of sulfur' — establishing that kach shel gufrit is an essential attribute of (i.e., a bechina-aspect of) the igniting aiding. This is a bechina relationship between the igniting-power and the vapors: the vapors with sulfur-power ARE the igniting type of vapor, sharing essential nature with the igniting quality. The spiritual parallel is: the charatot of the wicked have the power to suddenly ignite ('נִבְעָר לִבּוֹ פִּתְאֹם') — the kach shel gufrit of the vapors IS the bechina of the charata's igniting-power. This edge connects kach shel gufrit to the aiding cluster and by extension to the charatot cluster. Must be added as: node1=כח של גפרית, node2=אידים, type=bechina, reference=158."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "node1_id": "רשעים מלאים חרטה",
+      "node1_text": "הָרְשָׁעִים מְלֵאִים חֲרָטָה",
+      "node2_id": "חרטות רשעים",
+      "node2_text": "חֲרָטוֹת הָרְשָׁעִים",
+      "suggested_package": 2,
+      "suggested_package_label": "אֵדִים וְחֲרָטוֹת הָרְשָׁעִים",
+      "source_quote": "וְזֶה בָּא מֵרְשָׁעִים, הַיְנוּ מִמַּה שֶּׁהָרְשָׁעִים מְלֵאִים חֲרָטָה",
+      "source_location": "Torah #158, line 4",
+      "reasoning": "The phrase 'הַיְנוּ מִמַּה שֶּׁהָרְשָׁעִים מְלֵאִים חֲרָטָה' — 'namely from what the wicked are full of, namely regret' — is an explicit 'הַיְנוּ' (that is / meaning) statement, which is bechina-language (as noted in the framework: 'X הינו Y' = X is a bechina of Y). The wicked being full of regret IS the definition of the charatot source. The wicked (reshaim mele'im charata) are the earth/ground from which the charatot-vapors rise — they share the same essential nature as the charatot themselves: being-full-of-charata IS the same reality as producing charatot. Must be added as: node1=רשעים מלאים חרטה, node2=חרטות רשעים, type=bechina, reference=158."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_158_edges": 0,
+    "total_reference_158_bechina_edges": 0,
+    "total_reference_158_eitza_edges": 0,
+    "nodes_in_dataset_for_reference_158": [],
+    "nodes_in_dataset_not_in_packages": [],
+    "reason_for_zero_edges": "Torah #158 appears in analysis_progress.json with status 'in_progress', meaning the source text exists but the teaching has not yet been encoded into the dataset. There are no rows with reference===158 in torahData.js.",
+    "concepts_in_source_text_not_in_dataset": [
+      "אש בוערת",
+      "התלהבות הלב",
+      "אידים",
+      "חרטות רשעים",
+      "כח של גפרית",
+      "רשעים מלאים חרטה"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "עבודת השם",
+        "reason": "Line 3: 'וּמַתְחִיל בַּעֲבוֹדַת הַשֵּׁם יִתְבָּרַךְ' — this describes what the person does when his heart burns, but the text does NOT use bechina-language (בְּחִינַת / הַיְנוּ / נִקְרָא) to equate it with another concept. It is a narrative description of an action, not a bechina statement. Excluded per framework strictness rule."
+      },
+      {
+        "concept": "אש מרחוק / אין כלום",
+        "reason": "Lines 1-2 describe the fire that appears from afar but when approached 'there was nothing there.' This is the visual appearance of the phenomenon, not a separate bechina node from the fire itself. The 'nothing there' quality IS captured in the bechina of אש בוערת ↔ התלהבות הלב (both are fire that appears real but lacks lasting substance). It is an attribute of Package 1's core bechina, not an independent concept."
+      },
+      {
+        "concept": "רוח קר מלמעלה",
+        "reason": "Line 2: 'וּמַכֶּה עֲלֵיהֶם רוּחַ קַר מִלְּמַעְלָה' — the cold wind from above strikes the vapors and causes them to fall and ignite. This is a structural step in the physical mechanism, but no bechina-language connects it to a spiritual parallel. The text does NOT say 'likewise a cold wind from above causes the charatot to ignite.' Excluded as causal/mechanical detail without a stated bechina partner."
+      },
+      {
+        "concept": "ממקום אחר (from another place)",
+        "reason": "Line 5 states that some people's hitlahavut comes 'from another place' (not from the wicked's regrets). This is the opening of the positive teaching, but the text is cut off before explaining what 'another place' is. No bechina is stated for what 'another place' means. Excluded from additions as incomplete/unresolvable from the preserved text. Discussed in torah_158_new_packages.json as an implied gap."
+      },
+      {
+        "concept": "כפי מספר החרטות",
+        "reason": "Line 4: 'וּכְפִי מִסְפַּר הַחֲרָטוֹת הַבָּאִים לוֹ, כֵּן נִמְשַׁךְ הַזְּמַן' — the number of regrets determines the duration of the hitlahavut. This is a causal/quantitative relationship, not a bechina. It describes how eitza operates (the mechanism by which charatot → hitlahavut works), not a shared-nature parallel. Excluded as eitza content."
+      }
+    ],
+    "note_on_text_truncation": "The source text ends at line 5 with a colon after 'רַק מִמָּקוֹם אַחֵר:' indicating the text is incomplete. The positive continuation — explaining genuine hitlahavut from a holy/non-demonic source — was not preserved in this file. All six bechina-language concepts found in the preserved text are accounted for in the four addition proposals above."
+  }
+}

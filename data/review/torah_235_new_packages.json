@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "source": "Torah #235",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": 1,
+      "torah_ref": 235,
+      "label": "שִׂמְחַת יוֹם טוֹב — רֶגֶל וּמוֹעֵד",
+      "label_en": "Yom Tov Joy — Festival as Foot and Appointed Time",
+      "polarity": "good",
+      "proposed_nodes": ["יום טוב", "שמחת יום טוב", "רגל", "מועד"],
+      "proposed_edges": [
+        {
+          "node1_id": "יום טוב",
+          "node2_id": "רגל",
+          "proof": "כִּי יוֹם טוֹב נִקְרָא רֶגֶל",
+          "type": "bechina",
+          "is_good": 1,
+          "is_bad": null
+        },
+        {
+          "node1_id": "יום טוב",
+          "node2_id": "מועד",
+          "proof": "וְגַם נִקְרָא מוֹעֵד",
+          "type": "bechina",
+          "is_good": 1,
+          "is_bad": null
+        },
+        {
+          "node1_id": "שמחת יום טוב",
+          "node2_id": "יום טוב",
+          "proof": "זֶה בָּא עַל יְדֵי שֶׁפָּגַם בְּשִׂמְחַת יוֹם טוֹב — the joy IS the festival, they are interchangeable in the Rebbe's framing",
+          "type": "bechina",
+          "is_good": 1,
+          "is_bad": null
+        }
+      ],
+      "justification": "The Rebbe opens with two explicit 'נקרא' (is-called) bechinas establishing that Yom Tov = רגל = מועד. These are the same sacred reality named from three angles. The entire Torah's wordplay — 'רגל מועד / רגלו מועדה' — is only coherent if these three concepts share the same essential nature. Additionally, שמחת יום טוב (the joy of Yom Tov) is treated as synonymous with יום טוב itself throughout the Torah, warranting its inclusion."
+    },
+    {
+      "id": 2,
+      "torah_ref": 235,
+      "label": "שְׂחוֹק הָעוֹלָם — שִׂמְחוֹת נְפוּלוֹת",
+      "label_en": "The World's Laughter — Fallen Joys",
+      "polarity": "evil",
+      "proposed_nodes": ["שחוק", "שמחות נפולות"],
+      "proposed_edges": [
+        {
+          "node1_id": "שחוק",
+          "node2_id": "שמחות נפולות",
+          "proof": "וְזֶה הַשְּׂחוֹק שֶׁשּׂוֹחֲקִין, הוּא בְּחִינַת הַשְּׂמָחוֹת נְפוּלוֹת מִפְּגַם שִׂמְחַת יוֹם טוֹב",
+          "type": "bechina",
+          "is_good": null,
+          "is_bad": 1
+        }
+      ],
+      "justification": "The most explicit bechina statement in the Torah: 'הוא בחינת' — the laughter IS an aspect of the fallen joys. This is a precise mystical teaching: when someone's Yom Tov joy-energy is damaged, that energy does not disappear but falls into lower spiritual realms and becomes the energy behind others' laughter at their expense. The package encodes the principle of fallen joy-sparks (שמחות נפולות) as a distinct spiritual category."
+    },
+    {
+      "id": 3,
+      "torah_ref": 235,
+      "label": "עֲבוֹדַת אֱלִילִים וּבֹשֶׁת — בִּזָּיוֹן הַמּוֹעֲדוֹת",
+      "label_en": "Idol Worship and Shame — Disgracing the Festivals",
+      "polarity": "evil",
+      "proposed_nodes": ["עבודת אלילים", "בשת", "בזיון מועדות"],
+      "proposed_edges": [
+        {
+          "node1_id": "עבודת אלילים",
+          "node2_id": "בשת",
+          "proof": "כִּי עֲבוֹדַת אֱלִילִים נִקְרָא בֹּשֶׁת (הושע ט)",
+          "type": "bechina",
+          "is_good": null,
+          "is_bad": 1
+        },
+        {
+          "node1_id": "בזיון מועדות",
+          "node2_id": "עבודת אלילים",
+          "proof": "וְהַמְבַזֶּה אֶת הַמּוֹעֲדוֹת כְּאִלּוּ עוֹבֵד עַכּוּ\"ם (פסחים קיח)",
+          "type": "bechina",
+          "is_good": null,
+          "is_bad": 1
+        }
+      ],
+      "justification": "Two explicit equivalences create this cluster. (1) Idol worship IS CALLED shame — a niqra bechina from Hosea 9. (2) Disgracing the Moadim is AS IF worshipping idols — halakhic-mystical equivalence from Pesachim 118, treated as a bechina (same essential sin-category, not a cause-and-effect). This package is the evil mirror of Package 1: Package 1 is the holy festival (מועד) as sacred vessel; Package 3 is the desecration of that same festival (בזיון מועדות) as idolatry and shame. The shared concept מועד/מועדות appears in its holy form in Package 1 and its desecrated form in Package 3 — making it the precise polarity fracture-point described in the framework."
+    }
+  ],
+  "observations": "Torah #235 is completely absent from torahData.js — there are zero edges with reference===235 in the dataset. Despite being a brief Torah (3 sentences), it contains a rich, well-structured set of bechina relationships that yield exactly three packages with a clear good/evil mirror structure.\n\nThe Torah's conceptual architecture:\n- Package 1 (good): The holy festival as a triple-named reality (יום טוב = רגל = מועד). The joy of Yom Tov is the sacred vessel.\n- Package 2 (evil): The fallen joy-energy that escapes when the vessel is damaged, manifesting as mockery (שחוק = שמחות נפולות).\n- Package 3 (evil): The sin-equivalence category that explains why shame arrives — disgracing the festivals IS idolatry IS shame (בזיון מועדות = עבודת אלילים = בשת).\n\nThe eitza flow between packages is: [Pkg 1: damage to יום טוב joy] → eitza → [Pkg 2: fallen joys become שחוק] → eitza → [Pkg 3: the shame of idolatry comes upon the person]. The final note about כפרה (atonement) vs. teshuvah-reminder is a further eitza branching at the end.\n\nThe good/evil mirror is structurally precise: Package 1's dominant node יום טוב and Package 3's מועדות refer to the same sacred category — the appointed festival — but Package 1 captures it in its holy, intact form while Package 3 captures its desecration. This shared-node polarity fracture is exactly the pattern described in framework.md Section 3.4.\n\nAll 3 packages are new proposals since Torah #235 is entirely missing from the dataset. The minimum required bechina edge additions are 5 edges across 8-9 nodes."
+}

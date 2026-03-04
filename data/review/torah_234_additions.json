@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "source": "Torah #234",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "השגחה",
+      "node_text": "הַשְׁגָּחָה, הַיְנוּ שֶׁיֵּצֵא מִטִּבְעִיּוּת",
+      "polarity": "good",
+      "reason": "The Torah text uses explicit bechina language for this node: 'הוא על ידי השגחה, הינו שיצא מטבעיות, שזה בחינת כלליות הקדשה.' The word 'שזה בחינת' is Rebbe Nachman's standard bechina-declaration formula. The concept of 'השגחה = transcending nature = כלליות הקדשה' belongs in the good package because it is the quality that enables a person to distinguish between light and darkness — i.e., to access the expanded mind and the holiness of the stories of the righteous. It is structurally related to Package 1's expanded-mind/light domain: השגחה = the capacity to see beyond natural sight = a form of luminous expanded awareness. In the dataset, the edges from Torah 234 involving השגחה are typed as eitza (ארץ ישראל → השגחה) but the Rebbe's text says 'שזה בחינת,' which is a bechina declaration. This node is therefore missing from the bechina subgraph.",
+      "source_quote": "וְלִזְכּוֹת לָזֶה, שֶׁיּוּכַל לְהִדַּמּוֹת אֵלָיו יִתְבָּרַךְ לְהַבְדִּיל בֵּין אוֹר וְחֹשֶׁךְ כַּנַּ\"ל, הוּא עַל־יְדֵי הַשְׁגָּחָה, הַיְנוּ שֶׁיֵּצֵא מִטִּבְעִיּוּת, שֶׁזֶּה בְּחִינַת כְּלָלִיּוּת הַקְּדֻשָּׁה",
+      "in_dataset_already": true,
+      "dataset_edge_type": "eitza",
+      "note": "The node exists in torahData.js for Torah 234 but only as part of eitza edges (id=968, id=1506, id=2864, id=2870). The Rebbe's language 'שזה בחינת כלליות הקדשה' is a bechina statement. A bechina edge (השגחה ↔ כלליות הקדשה) is missing from Torah 234's dataset."
+    },
+    {
+      "package_id": 1,
+      "node_id": "ארץ ישראל",
+      "node_text": "אֶרֶץ יִשְׂרָאֵל",
+      "polarity": "good",
+      "reason": "The Rebbe states explicitly: 'כי ארץ ישראל הוא כלליות הקדשה שבכל הקדושות, כי שם כל העשר קדושות.' This is a bechina declaration (X הוא Y = X IS Y). ארץ ישראל IS כלליות הקדשה. And from the first addition above, כלליות הקדשה IS השגחה. Therefore ארץ ישראל belongs in the same good package as the tools for achieving expanded awareness. In the dataset for Torah 234, ארץ ישראל appears only in eitza edges (it is an enabler: 'through Eretz Israel one merits Providence'). The underlying bechina — that ארץ ישראל IS the totality of holiness, not merely a cause of something — is absent from the bechina subgraph.",
+      "source_quote": "כִּי אֶרֶץ יִשְׂרָאֵל הוּא כְּלָלִיּוּת הַקְּדֻשָּׁה שֶׁבְּכָל הַקְּדֻשּׁוֹת, כִּי שָׁם כָּל הָעֶשֶׂר קְדֻשּׁוֹת",
+      "in_dataset_already": true,
+      "dataset_edge_type": "eitza",
+      "note": "ארץ ישראל appears in Torah 234 only in eitza edges. The explicit bechina 'ארץ ישראל הוא כלליות הקדשה' should be captured as a bechina edge connecting ארץ ישראל to כלליות הקדשה (or to השגחה via the chain). This would link ארץ ישראל into Package 1."
+    },
+    {
+      "package_id": 1,
+      "node_id": "אמונה שלמה",
+      "node_text": "אֱמוּנָה שְׁלֵמָה",
+      "polarity": "good",
+      "reason": "The Torah text states: 'שתהיה האמונה אמונה שלמה ברורה מאד, עד שעל ידי האמונה יהיה דומה לו כאלו רואה הדבר שמאמין בעינים ממש, בחינת סתים וגליא.' Complete faith is called 'בחינת סתים וגליא' (the hidden-and-revealed dimension). The Rebbe presents deep faith as an alternative pathway to the same capacity as daas (the ability to distinguish light from darkness and tell the stories of the righteous). Faith that makes the invisible visible is a bechina of expanded luminous awareness — it belongs in the same domain as Package 1 (אור, מחין דגדלות). This concept is not in the Torah 234 dataset at all.",
+      "source_quote": "שֶׁתִּהְיֶה הָאֱמוּנָה אֱמוּנָה שְׁלֵמָה בְּרוּרָה מְאֹד, עַד שֶׁעַל־יְדֵי הָאֱמוּנָה יִהְיֶה דּוֹמֶה לוֹ כְּאִלּוּ רוֹאֶה הַדָּבָר שֶׁמַּאֲמִין בָּעֵינַיִם מַמָּשׁ, בְּחִינַת סְתִים וְגַלְיָא",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "שתיקה",
+      "node_text": "שְׁתִיקָה",
+      "polarity": "good",
+      "reason": "The Rebbe states: 'מי שרוצה לכנס אל עולם המחשבה, צריך לשתוק... וזה בחינת (מנחות כט): שתק, כך עלה במחשבה.' Silence IS the path into the World of Thought. The phrase 'זה בחינת' identifies silence as the bechina of ascending to the world of thought. The World of Thought (עולם המחשבה) is described as 'גבוה מאד' (extremely elevated) — it belongs in the domain of expanded awareness (Package 1: מחין דגדלות). Silence (שתיקה) = ascending to the World of Thought = the same high-consciousness dimension as expanded mind. This bechina is not captured in the dataset.",
+      "source_quote": "כִּי מִי שֶׁרוֹצֶה לִכָּנֵס אֶל עוֹלַם הַמַּחֲשָׁבָה, צָרִיךְ לִשְׁתֹּק... וְזֶה בְּחִינַת (מְנָחוֹת כ\"ט): שְׁתֹק, כָּךְ עָלָה בְּמַחֲשָׁבָה",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 2,
+      "node_id": "מחשבות רעות",
+      "node_text": "מַחֲשָׁבוֹת רָעוֹת",
+      "polarity": "evil",
+      "reason": "The Rebbe states: 'ועל ידי זה מטהר מחשבתו ממחשבות רעות, שהם נמשכין ממחין דקטנות.' Evil thoughts (מחשבות רעות) are explicitly stated to flow from (נמשכין מ) מחין דקטנות. Grammatically this is eitza (they are drawn FROM constricted mind), but the phrase 'נמשכין ממחין דקטנות' also encodes a bechina: evil thoughts ARE an expression of constricted mind — they do not come from outside the constricted mind, they ARE what the constricted mind produces as its essential nature. They belong in Package 2 (the evil/constricted-mind cluster) and are not in the Torah 234 bechina dataset.",
+      "source_quote": "וְעַל־יְדֵי־זֶה מְטַהֵר מַחֲשַׁבְתּוֹ מִמַּחֲשָׁבוֹת רָעוֹת, שֶׁהֵם נִמְשָׁכִין מִמֹּחִין דְּקַטְנוּת",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 2,
+      "node_id": "צרות",
+      "node_text": "צָרוֹת",
+      "polarity": "evil",
+      "reason": "The Rebbe says: 'גם ניצול מצרות. כי בלבול הדעת הוא בחינת מחין דקטנות, ומזה באין צרות, כי מחין דקטנות הם בחינת דינין.' The word 'ומזה באין צרות' (and from this come tzarot) is eitza — but the full chain establishes that צרות ARE din (מחין דקטנות = דינין, and tzarot come from dinin). The text later says 'ממתיק הצרות והדינים, שכולם הם מבחינת מחין דקטנות כנ\"ל' — all tzarot ARE from the bechina of constricted mind. This makes tzarot a bechina-equivalent of dinin and constricted mind, not merely an effect. They belong in Package 2 but are not captured as a bechina node in the dataset.",
+      "source_quote": "גַּם מַמְתִּיק הַצָּרוֹת וְהַדִּינִים, שֶׁכֻּלָּם הֵם מִבְּחִינַת מֹחִין דְּקַטְנוּת כַּנַּ\"ל",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 5,
+    "nodes_in_dataset_not_in_packages": [],
+    "all_9_dataset_nodes_assigned": true,
+    "concepts_in_source_text_not_in_dataset": [
+      "השגחה כבחינה — the concept 'השגחה = כלליות הקדשה' uses explicit bechina language ('שזה בחינת') but is encoded as eitza in the dataset for Torah 234",
+      "ארץ ישראל כבחינה — the concept 'ארץ ישראל הוא כלליות הקדשה' is an explicit IS-statement (bechina) but appears only in eitza edges for Torah 234",
+      "אמונה שלמה, בחינת סתים וגליא — perfect faith described as 'בחינת סתים וגליא,' making it the bechina of the revealed-and-hidden dimension; absent from Torah 234 dataset entirely",
+      "שתיקה — silence called 'בחינת שתק כך עלה במחשבה' (silence = ascending to the world of thought); absent from Torah 234 dataset",
+      "מחשבות רעות — evil thoughts explicitly stated to come from and share the nature of מחין דקטנות; absent from Torah 234 bechina dataset",
+      "צרות — troubles explicitly identified as belonging to the bechina of מחין דקטנות ('שכולם הם מבחינת מחין דקטנות'); absent from Torah 234 bechina dataset",
+      "עולם המחשבה — the World of Thought, identified as a high, elevated dimension requiring silence to enter; structurally parallel to מחין דגדלות; absent from dataset"
+    ],
+    "good_evil_mirror_analysis": "Torah 234 has a clear and explicit two-pole mirror structure. The Rebbe builds the entire teaching on the binary of אור (light) vs חשך (darkness), drawn from Bereishit Rabbah. Package 1 (good) is the אור pole: stories of the righteous = light = expanded mind. Packages 2 and 3 are together the חשך pole. Package 3 (evil) is the direct behavioral mirror of Package 1: deeds of the wicked = darkness. Package 2 (evil) is the psychological/structural mirror: confusion = constricted mind = din = tzarot. The eitza flow of the Torah goes: Package 1 (stories of righteous, great light) → purifies thought → liberates from tzarot (Package 2's evil). The teaching is essentially: to escape the evil clusters (packages 2 and 3), one must engage with Package 1.",
+    "note_on_maasiyor_vs_sipurey": "The dataset contains two distinct node IDs for the same underlying concept: 'מעשיות של צדיקים' (edge 153, bechina of אור) and 'ספורי מעשיות של צדיקים' (edge 1752, bechina of מחין דגדלות). These are arguably aliases — the Torah uses both 'מעשיות של צדיקים' and 'סיפורי מעשיות של צדיקים' interchangeably. The merge into Package 1 is justified both by the shared-nature argument (both describe the same activity: holy stories) and by the Torah text explicitly uniting them under one metaphysical category."
+  }
+}

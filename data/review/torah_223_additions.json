@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "source": "Torah #223",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "notes": "Torah 223 has no entries in torahData.js. The entire bechina subgraph is empty. All additions below are sourced from the explicit bechina language in torah_223.txt. The Torah is a 3-sentence aphorism (Likutay Moharan Vol. 1, Torah 223) about the two levels of tzaddik — one who petitions and one who decrees — and equates the decree-mode with the Priestly Blessing formula."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "צדיק שיכול לגזור",
+      "node_text": "צַדִּיק שֶׁיָּכוֹל לִגְזֹר",
+      "polarity": "good",
+      "reason": "This is the dominant concept of Torah 223. The Rebbe distinguishes a higher level of tzaddik who does not merely request from God but can decree — saying 'I say it shall be so.' This is the concept to which the bechina of the Priestly Blessing formula is applied. The node represents the capacity of holy decreeing speech in the tzaddik.",
+      "source_quote": "יֵשׁ צַדִּיק שֶׁיָּכוֹל לִגְזֹר וְלוֹמַר: אֲנִי אוֹמֵר שֶׁיִּהְיֶה כֵּן",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "כֹּה תְבָרְכוּ... אָמוֹר לָהֶם",
+      "node_text": "כֹּה תְבָרְכוּ וְכוּ' אָמוֹר לָהֶם",
+      "polarity": "good",
+      "reason": "The Priestly Blessing formula — specifically the phrase 'אָמוֹר לָהֶם' (say to them) — is the explicit bechina target in the Torah text. The Rebbe interprets this as: the Kohen does not petition God to bless Israel but actively declares the blessing as established fact ('I say it shall be so'). This is the same essential nature as the tzaddik who decrees: both are authoritative, performative holy speech. The bechina is explicitly marked with 'וְזֶה בְּחִינַת.'",
+      "source_quote": "וְזֶה בְּחִינַת (במדבר ו׳:כ״ג): כֹּה תְבָרְכוּ וְכוּ' אָמוֹר לָהֶם – הַיְנוּ שֶׁאֲנִי אוֹמֵר שֶׁיִּהְיֶה כֵּן",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "צדיק שיכול לגזור",
+      "כֹּה תְבָרְכוּ... אָמוֹר לָהֶם"
+    ],
+    "additional_observations": [
+      "The Torah text mentions a contrasting concept — the ordinary tzaddik whose petition (בַּקָּשָׁה) may or may not be heard — but this is framed as the narrative contrast/foil, not as a bechina node. The Rebbe cites the Zohar ('זִמְנִין דְּשָׁמַע וְזִמְנִין דְּלָא') to establish why ordinary petition can fail, before introducing the higher mode. This contrasting concept (בַּקָּשָׁה / petition) is an eitza-type contrast (what leads to failure vs. what succeeds), not a bechina parallel — so it is correctly excluded from the bechina package.",
+      "The Torah has no evil/sitra achra component. There is no evil mirror package — the negative pole is simply the limitation of ordinary petition, not an active evil force. The polarity structure here is good vs. a lesser-good, not good vs. evil.",
+      "This Torah is extremely sparse by LM standards: 3 sentences, 1 bechina, 2 nodes. It reads as a short halakhic-style statement about the capacity of the highest-level tzaddik rather than a developed thematic teaching. Data entry for this Torah in torahData.js is entirely absent and should be prioritized."
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "source": "Torah #216",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "source_text_bechina_extraction",
+    "notes": "Torah #216 has ZERO bechina edges in torahData.js (only 3 eitza edges with reference===216). All package proposals are therefore derived entirely from explicit bechina language in the source text (torah_216.txt). The source text is 2 sentences. Packages are proposed based on the bechina statements present in the text, following framework §8 guidelines."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 216,
+      "label": "תְּפִלָּה וְחַי בִּרְכוֹת",
+      "label_en": "Prayer and the Eighteen Blessings",
+      "polarity": "good",
+      "reason": "The core positive cluster of this teaching. The Rebbe states: 'וְזֶה בְּחִינַת חַ\"י בִּרְכוֹת הַתְּפִלָּה חוּץ בִּרְכַּת הַמִּינִים, שֶׁעַל־יְדֵי חַי בִּרְכָאָן, מְבַטְּלִין הַטֶּבַע אֵם כָּל חָי.' The explicit bechina language 'וְזֶה בְּחִינַת' connects the act of nullifying nature directly to the 18 blessings — they share the same essential nature as the transcendent force that breaks through natural determination. תפלה (prayer), תפלותינו (our prayers), and חי ברכאן (18 blessings of the Amidah) are all different faces of the same reality: the human act of turning toward the divine and thereby overturning the fixed order of nature. מבטלין הטבע (nullifying nature) is what the 18 blessings essentially ARE in this teaching — not merely what they produce — making it a bechina relationship, not only eitza. The three dataset nodes for this Torah on the prayer side (תפלה, תפלותינו, חי ברכאן) all inhabit this single domain of transcendent prayer-as-nature-breaker.",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תפלה",
+        "תפלותינו",
+        "חי ברכאן",
+        "מבטלים הטבע",
+        "מבטלין הטבע אם כל חי. ומכניעין ומבטלין המינים והאפיקורסים",
+        "נשתנה הטבע"
+      ],
+      "node_degrees": {
+        "תפלה": 1,
+        "תפלותינו": 1,
+        "חי ברכאן": 1,
+        "מבטלים הטבע": 1,
+        "מבטלין הטבע אם כל חי. ומכניעין ומבטלין המינים והאפיקורסים": 1,
+        "נשתנה הטבע": 1
+      },
+      "note_on_nodes": "תפלה and תפלותינו (edges 2241 and 1690 respectively) are the same canonical concept (prayer) appearing in two grammatical forms — the dataset records them as separate node_ids but they represent the same domain. All three 'nullification' nodes (מבטלים הטבע, מבטלין הטבע אם כל חי..., נשתנה הטבע) describe the essential quality of prayer in this Torah: its nature as nature-transcending power. The bechina 'וְזֶה בְּחִינַת חַ\"י בִּרְכָאָן' declares that the 18 blessings ARE this nullifying power by essential identity."
+    },
+    {
+      "id": 2,
+      "torah_ref": 216,
+      "label": "הַטֶּבַע וְהַכּוֹפְרִים",
+      "label_en": "Nature and the Deniers — The Anti-Prayer Force",
+      "polarity": "evil",
+      "reason": "The evil mirror of Package 1. The philosophers call nature 'אֵם כָּל חָי' — 'the mother of all living.' This teaching frames nature (הטבע) as the opposing force to prayer, the fixed deterministic order that prayer must transcend. The equation הטבע = אם כל חי is an explicit identity established by the philosophers and cited by the Rebbe — it is the conceptual anchor of the opposition. The מינים (heretics) and אפיקורסים (Epicureans) represent the human embodiment of this naturalistic worldview: those who deny divine intervention and hold that nature is the ultimate authority. They are precisely the group that the 18 blessings (Package 1) were designed to 'subdue and nullify' (מַכְנִיעִין וּמְבַטְּלִין). The structural parallel: just as Package 1's 18 blessings nullify the טבע, the inclusion of Birkat HaMinim (the blessing against heretics — excluded from the count of 18) targets the מינים/אפיקורסים. The Rebbe explicitly pairs these two acts ('מְבַטְּלִין הַטֶּבַע אֵם כָּל חָי. וּמַכְנִיעִין וּמְבַטְּלִין הַמִּינִים וְהָאֶפִּיקוֹרְסִים') — nullifying nature and subduing heretics are the paired outcomes, confirming that heretics/Epicureans are the human expression of the טבע-force. This is the good/evil mirror pattern per framework §4: Package 1 (prayer/18 blessings) → Package 2 (nature/heretics) as the structural opponent.",
+      "dominant_node": "הטבע",
+      "nodes": [
+        "הטבע",
+        "אם כל חי",
+        "המינים והאפיקורסים"
+      ],
+      "node_degrees": {
+        "הטבע": 2,
+        "אם כל חי": 1,
+        "המינים והאפיקורסים": 1
+      },
+      "note_on_nodes": "הטבע is the dominant node as it is the concept the Rebbe defines at the outset and the one that prayer opposes throughout. אם כל חי is the philosophers' name for הטבע — an explicit bechina identity within the source text ('הַפִילוֹסוֹפִים קוֹרִים לְהַטֶּבַע אֵם כָּל חָי'). המינים והאפיקורסים are the human representatives of the naturalistic worldview — those who deny providence and miracle, the living embodiment of the 'nature is supreme' claim. These three nodes share the essential nature of nature-as-supreme-law, the domain that prayer overturns. Note: הטבע and אם כל חי and המינים והאפיקורסים do not currently appear as named node_ids in the dataset's Torah-216 edges (the eitza edges record only the prayer-side nodes plus the compound result phrases). These are proposed as new nodes whose bechina relationships are explicit in the source text."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_eitza_edges_in_dataset": 3,
+    "total_nodes_in_dataset_for_torah_216": 6,
+    "total_packages_proposed": 2,
+    "raw_connected_components": 0,
+    "note": "Because there are zero bechina edges in the dataset for Torah #216, connected-component analysis yields no graph. Packages are derived from the source text's bechina statements. The teaching is a 2-sentence Torah with one structural move: prayer (good) vs. nature/heretics (evil). The single bechina statement ('וְזֶה בְּחִינַת חַ\"י בִּרְכוֹת') is the sole explicit bechina in the text; the identity 'הטבע = אם כל חי' is a second bechina-like identity (attributed to the philosophers). The good/evil mirror is sharp and clean: prayer-that-transcends vs. nature-that-constrains."
+  }
+}

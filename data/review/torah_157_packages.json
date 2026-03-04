@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source": "Torah #157 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===157 AND type==='bechina'. Result: zero bechina edges found in the dataset for reference 157 — the reference does not appear anywhere in torahData.js. Torah #157 is the shortest teaching in Likutey Moharan Volume 1: exactly 2 sentences (the aphorism and the Mishnaic proof-text). The entire source text (torah_157.txt) was scanned for bechina-language declarations. One bechina structure was identified through the 'וְזֶהוּ' formula (which throughout Likutey Moharan introduces a scriptural or Rabbinic text as the bechina-expression of a prior statement). The formula equates two descriptions of the same state: (1) clinging to Torah words from the Tzaddik, and (2) the Mishnah's 'one who benefits from Torah takes his life from the world.' These are two angles on the same essential reality — Torah-attachment that so elevates the person that worldly life becomes intolerable and undesirable. One package proposed. No evil-mirror package: the teaching is a pure positive aphorism with no parallel evil-domain description in bechina language."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 157,
+      "label": "דְּבֵקוּת בְּתוֹרָה וּנְטִילַת חַיִּים מִן הָעוֹלָם",
+      "label_en": "Clinging to Torah and Taking One's Life from the World",
+      "polarity": "good",
+      "reason": "Torah #157 contains a single conceptual identity, stated first as personal testimony ('I am amazed how he could afterwards tolerate and desire the life of this world') and then confirmed through the Mishnah of Avot (ch. 4): 'כָּל הַנֶּהֱנֶה מִדִּבְרֵי תּוֹרָה, נוֹטֵל חַיָּיו מִן הָעוֹלָם.' The 'וְזֶהוּ' formula that introduces this Mishnaic citation is the standard Likutey Moharan bechina-expression marker — it states that the Mishnah IS the bechina-articulation of what was just described. This produces three conceptual nodes that all share the same essential nature — the state of total spiritual elevation through Torah-attachment:\n\n(A) דְּבֵקוּת לְדִבְרֵי תּוֹרָה מִפִּי הַצַּדִּיק (clinging to Torah words from the mouth of the Tzaddik) — the act and its specific channel\n(B) הֲנָאָה מִדִּבְרֵי תּוֹרָה (benefiting from / taking pleasure in words of Torah) — the Mishnaic formulation of the same essential act; the 'וְזֶהוּ' establishes this as the bechina-identity of (A)\n(C) נְטִילַת חַיִּים מִן הָעוֹלָם / אִי יְכוֹלֶת לִסְבֹּל וְלַחְפֹּץ חַיֵּי הָעוֹלָם הַזֶּה (one's life being taken from / out of this world = being unable to tolerate or desire worldly life) — the resulting state, which the Rebbe reads not as punishment (the peshat of the Mishnah: one gives up his life for Torah) but as elevation — the Torah-attached person's life-force is so drawn up into the divine that worldly existence loses its grip. This state IS the bechina of the act: they are two descriptions of the same reality, not a cause and its effect.\n\nThe dominant node is דְּבֵקוּת לְדִבְרֵי תּוֹרָה מִפִּי הַצַּדִּיק because it is the Rebbe's primary framing. The Mishnaic formulation (node B) IS this phenomenon, named differently. Node C (the state of world-transcendence) IS the experiential dimension of the same reality — it is not caused by clinging; rather, clinging and world-transcendence are two aspects of the same condition. The person who clings IS the person whose life is taken from the world — these are not sequential events but simultaneous descriptions of a single state.\n\nAll three nodes are unambiguously 'good' polarity: they describe the holy state of Torah-elevation, the person drawn upward beyond ordinary worldly desire.",
+      "dominant_node": "דבקות לדברי תורה מפי הצדיק",
+      "nodes": [
+        "דבקות לדברי תורה מפי הצדיק",
+        "הנאה מדברי תורה",
+        "נטילת חיים מן העולם"
+      ],
+      "node_degrees": {
+        "דבקות לדברי תורה מפי הצדיק": 2,
+        "הנאה מדברי תורה": 1,
+        "נטילת חיים מן העולם": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["הנאה מדברי תורה", "נטילת חיים מן העולם"],
+          "reason": "Both nodes emerge from the single source-text sentence in line 2. The 'וְזֶהוּ' formula links the Mishnah's formulation (הנאה מדברי תורה) to the Rebbe's aphorism (דבקות לדברי תורה מפי הצדיק), establishing them as bechina-equivalents — different vocabulary for the same act. The second clause of the Mishnah (נטילת חיים מן העולם) is the Rebbe's re-read of the Mishnah: the taking of one's life from the world IS the state of no longer being able to tolerate or desire worldly life — same phenomenon from two angles (positive: taken upward; negative: can no longer bear downward). All three nodes share the same essential nature: the condition of a person so immersed in Torah that the vertical pull toward the divine eclipses the horizontal pull of the world. These are not cause-and-effect steps (the test: does one PRODUCE the other? No — they are simultaneous co-descriptions of the same state). Merge rule: shared nature, not cause-effect. All good polarity."
+        }
+      ],
+      "note": "None of these three nodes currently appear as bechina-edge nodes in the dataset for reference 157 (no entries exist for reference 157 in torahData.js). All three are proposed as new additions in torah_157_additions.json. The teaching is a pure aphorism: one sentence of testimony + one Mishnaic proof. Its extreme brevity produces a minimal but clean package structure."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "packages_from_dataset_components": 0,
+    "packages_from_gap_analysis": 1,
+    "evil_mirror_packages": 0,
+    "note_on_evil_mirror": "Torah #157 contains no evil-domain bechina language. The negative pole is implicit — the teaching's rhetorical logic implies that those who do NOT cling to Torah from the Tzaddik continue to desire worldly life. But this negative state is never given a parallel-nature bechina identification in the text. The Rebbe simply expresses amazement ('תָּמֵהַּ אֲנִי') at the continued attachment to worldly life — a rhetorical structure, not an evil-domain package. The Mishnah citation also has no evil counterpart. Therefore no evil-mirror package is constituted. The teaching stands as a single-vector positive aphorism.",
+    "note_on_structure": "Torah #157 is among the briefest teachings in the entire corpus — 2 sentences, approximately 60 Hebrew words. This brevity is intentional and complete: the Rebbe states the experiential reality (amazement at how one could still desire worldly life after Torah-attachment), then validates it with the Mishnaic text, then says 'וְהָבֵן הֵיטֵב' ('and understand this well') — an instruction to meditate on the depth of a seemingly simple statement. The package structure reflects this: one unified thematic domain (Torah-attachment as world-transcendence), no causal sub-structure (the entire teaching is a single identity claim), no evil mirror (the Rebbe does not develop the negative pole here).",
+    "good_evil_mirror": "None identifiable from bechina language in the source text.",
+    "eitza_summary": "Torah #157 has no eitza (causal) structure within the bechina layer. The teaching is a pure identity-claim: Torah-attachment IS world-transcendence. There is no 'do X → get Y' chain. The only directional element is the citation relationship (the Rebbe uses the Mishnah to validate his claim), but this is a rhetorical/hermeneutical move, not a causal chain between concepts. The teaching's single package does not participate in an eitza flow within Torah #157 itself."
+  }
+}

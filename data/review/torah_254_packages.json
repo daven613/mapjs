@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "source": "Torah #254",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "ZERO bechina edges exist in torahData.js for reference === 254. The dataset contains no edges at all for Torah #254. All analysis is derived exclusively from the source text. The Torah is a short teaching (3 paragraphs) on the nature of vision (עינים) and its relationship to da'at (דעת). One package is proposed based on the explicit bechina equivalences found in the source text."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 254,
+      "label": "עֵינַיִם וּמַרְאוֹת — רְאִיָּה כְּבְחִינָה עֶלְיוֹנָה",
+      "label_en": "Eyes and Visions — Sight as a Lofty Spiritual Faculty",
+      "polarity": "good",
+      "reason": "The Torah opens with an explicit IS-statement: 'עֵינַיִם הֵם דְּבָרִים עֶלְיוֹנִים וּגְבוֹהִים מְאֹד' — Eyes ARE lofty and exalted things. This IS-statement (not a cause-effect) identifies eyes as belonging to the realm of elevated spiritual realities. The text then uses a parenthetical bechina equivalence to identify the 'דְּבָרִים גְּדוֹלִים' (great things) that eyes always see AS 'מַרְאוֹת וְחֶזְיוֹנוֹת' (visions and revelations): '(הַיְנוּ מַרְאוֹת וְחֶזְיוֹנוֹת)'. Therefore: eyes = lofty realities; great things seen through eyes = visions and revelations. The further concept of 'עֵינַיִם כְּשֵׁרִים' (worthy/proper eyes) is the eyes in their fully-realized state — not a separate entity but the same eyes in their ideal dimension. כֹּחַ הָרְאוּת (the power of sight) is the active force of the eyes — again the same reality named from a different angle. All these nodes share the essential nature of 'vision as a spiritual instrument that directly perceives divine greatness.' This is a single thematic family with no evil mirror present in this short teaching.",
+      "dominant_node": "עינים",
+      "nodes": [
+        "עינים",
+        "דברים עליונים וגבוהים",
+        "מראות וחזיונות",
+        "דברים גדולים ונוראים",
+        "עינים כשרים",
+        "כח הראות"
+      ],
+      "node_degrees": {
+        "עינים": 3,
+        "דברים עליונים וגבוהים": 1,
+        "מראות וחזיונות": 1,
+        "דברים גדולים ונוראים": 2,
+        "עינים כשרים": 1,
+        "כח הראות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["עינים", "דברים עליונים וגבוהים"],
+          "reason": "The text opens with 'עֵינַיִם הֵם דְּבָרִים עֶלְיוֹנִים וּגְבוֹהִים מְאֹד' — a direct IS-bechina equating eyes with lofty spiritual realities. These two are the primary bechina pair of the teaching."
+        },
+        {
+          "merged_nodes": ["דברים גדולים ונוראים", "מראות וחזיונות"],
+          "reason": "The text uses a parenthetical clarification '(הַיְנוּ מַרְאוֹת וְחֶזְיוֹנוֹת)' to identify the great and wondrous things the eyes see AS visions and revelations — a bechina equivalence through the word הַיְנוּ (i.e., that is to say)."
+        },
+        {
+          "merged_nodes": ["עינים כשרים", "עינים"],
+          "reason": "עינים כשרים (worthy eyes) are not a different entity but the same eyes in their ideal/complete state. The text says 'if a person merited worthy eyes, they would know great things just from seeing' — this is the eyes in their fullness, the same essential spiritual faculty. Bechina: עינים כשרים IS עינים in their realized dimension."
+        },
+        {
+          "merged_nodes": ["כח הראות", "עינים"],
+          "reason": "כֹּחַ הָרְאוּת (the power of sight/vision) is the active force of the eyes — the text treats it as the operative faculty of the eyes themselves: 'יָבוֹא וְיוֹשִׁיט כֹּחַ הָרְאוּת לְהַדַּעַת'. It is the same essential reality as the eyes, named from the angle of their function rather than their identity."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "note": "All nodes and the single package are proposed from source text analysis only — no bechina edges exist in the dataset for Torah #254."
+  }
+}

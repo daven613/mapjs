@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "source": "Torah #194",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, the full source text torah_194.txt, and all reference===194 edges from torahData.js. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, עִקַּר X הוּא Y, X הוּא Y) were considered. The Torah is very short — 5 paragraphs — and the entire argument turns on the equation: speech (דבור) = the palace of the King (אדני/היכל המלך). The dataset captures only 1 of the 3 identifiable bechina equations from the source text."
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "היכל המלך = דבור (the Palace of the King IS speech)",
+      "source_text_ref": "Line 5 (paragraph 4): 'וְהַדִּבּוּר הוּא הֵיכַל הַמֶּלֶךְ, כִּי \"הֵיכָל\" גִּימַטְרִיָּא \"אֲדֹנָי\", בְּחִינַת הַדִּבּוּר'",
+      "proposed_edge": {
+        "node1_id": "היכל המלך",
+        "node2_id": "דבור",
+        "type": "bechina",
+        "reference": 194
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe explicitly states 'הדבור הוא היכל המלך' — speech IS the palace of the King. This is a bechina equation: the palace of the King and speech share the same essential nature (both are the Divine King's dwelling-place / the space where He is revealed). The proof: 'היכל' has the gematria of 'אדני' which is the aspect of speech. This is the central metaphor of the entire Torah and is the strongest missing bechina. It would join Package 1 as a 3rd node alongside אדני and דבור, forming a 3-node cluster: היכל המלך ↔ אדני ↔ דבור."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "גדר האדם = דבור (the defining nature of a human IS speech)",
+      "source_text_ref": "Line 4 (paragraph 3): 'וְעַל כֵּן אֵינוֹ מְקַבֵּל כָּבוֹד כִּי אִם מֵהַדִּבּוּר, שֶׁבָּזֶה מֻבְדָּל הָאָדָם מֵחַי'",
+      "proposed_edge": {
+        "node1_id": "גדר האדם",
+        "node2_id": "דבור",
+        "type": "bechina",
+        "reference": 194
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe's argument (paragraph 3) is built on the bechina that 'גדר האדם' (the defining essence / species-definition of a human being) IS speech. The human is distinguished from all animals precisely through speech — a hand or even a face does not define a human (monkeys have human faces), but speech is the essential mark of a human (לשון מדבר = the speaking one). This is a classic bechina: both 'the essence of humanness' and 'speech' are the same underlying reality, each naming it from a different angle. Node_id suggested: 'גדר האדם' (or 'אדם' if the dataset uses that canonical form). This would add a 4th node to Package 1."
+    },
+    {
+      "type": "borderline_bechina_note",
+      "priority": "low",
+      "description": "כבוד = דבור — borderline case: the identity of honor and speech",
+      "source_text_ref": "Line 4: 'עִקַּר הַכָּבוֹד הוּא רַק מֵהַדִּבּוּר'; Line 5: 'מֵאַחַר שֶׁעִקַּר הַכָּבוֹד הוּא בְּהַדִּבּוּר'",
+      "proposed_edge": {
+        "node1_id": "כבוד",
+        "node2_id": "דבור",
+        "type": "bechina",
+        "reference": 194
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe twice states 'עיקר הכבוד הוא מהדבור / בהדבור'. Whether this is a bechina (honor IS speech in its essential nature) or an eitza (honor comes FROM speech, i.e., speech produces honor) is genuinely ambiguous. The preposition 'מן' and 'ב' can indicate either. The broader argument of the Torah treats them as the same domain — honor exists in the space of speech, and is only possible there. However, the literal phrasing 'comes from speech' (מן) leans toward eitza (cause-effect), while 'is in speech' (ב) leans toward bechina (location of essential nature). Given this ambiguity, it is flagged here as 'borderline' — it should not be added as a bechina edge without the Rebbe using explicit bechina language (הוא בחינת). The causal reading (speech PRODUCES honor / honor requires speech as its medium) may be the correct one, making this an eitza. Recommendation: treat as eitza unless a parallel source explicitly calls כבוד a bechina of דבור."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_194_edges": 1,
+    "total_reference_194_bechina_edges": 1,
+    "total_reference_194_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["אדני", "דבור"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "היכל המלך — explicit bechina of דבור, not in dataset for reference 194",
+      "גדר האדם — implicit bechina of דבור (the defining essence of humanity = speech), not in dataset"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "שוטה (fool)",
+        "reason": "The Torah opens 'מי שרוצה כבוד הוא שוטה' — the honor-seeker is a fool. This is the Torah's moral thesis, not a bechina equation. The fool IS the one who seeks honor (a role description), not an identification of two concepts sharing the same essential nature. Excluded as non-bechina."
+      },
+      {
+        "concept": "פקיד / עבד (the official / servant)",
+        "reason": "The parable's official is an allegorical figure representing the person who seeks honor. His role in the story is pedagogical (mashal), not a formal bechina declaration. The text does not use bechina language to identify the official with any abstract concept. Excluded."
+      },
+      {
+        "concept": "שר / מלך (the lord / king)",
+        "reason": "In the parable, the lord/king represents God. The text does not formally state 'שר הוא בחינת ה' or similar — this is the implicit meaning of the allegory. Allegories do not constitute bechina edges unless the Rebbe explicitly names the identification with bechina language. Excluded."
+      },
+      {
+        "concept": "בושה (shame)",
+        "reason": "The shame the official feels is the emotional/experiential consequence of the situation — not a bechina-identified concept. The Rebbe describes shame as the result (the outcome the teaching points to), not as a bechina of anything else. Excluded."
+      },
+      {
+        "concept": "יד (hand) and פנים (face)",
+        "reason": "The Rebbe uses the hand and face as negative examples to contrast with speech — these body parts are mentioned to show what does NOT define a human. They are illustrative comparisons, not bechina statements. Excluded."
+      }
+    ],
+    "structural_observations": [
+      "Torah 194 is among the shortest Torahs in the corpus — 5 paragraphs totaling approximately 350 words.",
+      "The teaching has an unusually clean single-axis structure: everything converges on the equation דבור = היכל המלך = אדני. The teaching makes no complex kabbalistic moves — it is a sharp, practical moral teaching backed by a single gematria.",
+      "The only domain in this Torah is the davar/kavod nexus. There is no evil package — the 'evil' side (the honor-seeker, the servant) is described narratively through the parable, not through bechina equations.",
+      "The dataset coverage for this Torah is extremely sparse: 1 bechina edge out of a possible 3 (the two missing high-priority edges are היכל המלך ↔ דבור and גדר האדם ↔ דבור).",
+      "If the two missing edges are added, Package 1 would contain 4 nodes: דבור (degree 3), אדני (degree 1), היכל המלך (degree 1), גדר האדם (degree 1) — a tight star-graph centered on דבור."
+    ]
+  }
+}

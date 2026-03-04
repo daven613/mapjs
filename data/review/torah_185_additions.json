@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "source": "Torah #185",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_185_packages.json, all reference===185 edges from torahData.js, and the full source text torah_185.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, נִקְרָא, הִיא בְּחִינוֹת) were considered. Note: Torah #185 is a short, focused Torah with only 3 bechina edges in the dataset, leaving substantial bechina content from the source text unrepresented."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וְאוֹת אָלֶ\"ף",
+      "node_id": "שכל",
+      "node_text": "הַשֵּׂכֶל",
+      "polarity": "good",
+      "reason": "The source text states explicitly: 'הַשֵּׂכֶל נִקְרָא יוּד' (the sekhel is called yud) — this is a direct bechina statement using the language 'נִקְרָא'. The sekhel is the yud, the upper point of the letter alef, which is the first of its three structural components (yud + vav + dalet = alef = upper yir'ah). Since אות יו\"ד is not separately listed as a node in the dataset for this Torah, שכל should be added as the node that fills the yud-role in the alef-structure. It is the positive intellectual dimension — God's greatness apprehended by the mind — and belongs squarely in Package 1.",
+      "source_quote": "הַשֵּׂכֶל נִקְרָא יוּד, כְּמוֹ שֶׁכָּתַב רַשִׁ\"י: אָז יָשִׁיר מֹשֶׁה, שֶׁרָאוּי לִכְתֹּב שָׁר מֹשֶׁה, אֶלָּא יוּד עַל שֵׁם הַמַּחֲשָׁבָה נֶאֶמְרָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וְאוֹת אָלֶ\"ף",
+      "node_id": "יראה ראשונה",
+      "node_text": "יִרְאָה הָרִאשׁוֹנָה",
+      "polarity": "good",
+      "reason": "The source text states: 'יִרְאָה הָרִאשׁוֹנָה... הִיא בְּחִינוֹת א' — the upper/first yir'ah IS the letter alef. This is the central bechina of the entire Torah and the capstone concept: the upper fear is an aspect of alef, the complete Divine Name unit. Although an eitza edge exists for this node (id 1411: התבוננות השכל → יראה הראשונה), the bechina of יראה ראשונה = אל\"ף is not recorded. This concept should be added to Package 1 to complete the picture.",
+      "source_quote": "יִרְאָה הָרִאשׁוֹנָה שֶׁהִיא עַל יְדֵי הִתְבּוֹנְנוּת הַשֵּׂכֶל בִּגְדֻלָּתוֹ וְרוֹמְמוּתוֹ, הִיא בְּחִינוֹת א",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 1411,
+      "note": "Node יראה הראשונה exists in the dataset as the target of an eitza edge (id 1411, reference=185). The bechina יראה ראשונה↔אות אל\"ף is present in the source text but not recorded as a bechina edge. The node exists but its bechina relationship to alef is missing."
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וְאוֹת אָלֶ\"ף",
+      "node_id": "יראה תחתונה",
+      "node_text": "יִרְאָה הַתַּחְתּוֹנָה",
+      "polarity": "good",
+      "reason": "The source text explicitly states: 'יִרְאָה הַשְּׁנִיָּה שֶׁהִיא בָּאָה מִדְּבָרִים תַּחְתּוֹנִים, הִיא בְּחִינַת אד' — the lower yir'ah IS a bechina of 'ad' (the word אד, mist). This is a direct bechina statement. In the dataset, this is recorded only as an eitza edge (reference=185, id=34, type=eitza). The lower yir'ah draws down shefa (blessing/abundance) into the world, functioning as העלאת מיין נוקבין. While lower than the upper yir'ah, it is still a positive (good) phenomenon — a valid lesser grade of fear that still works toward God-consciousness. This node should be assigned to Package 1 with a note that it represents the lower dimension of the same yir'ah domain.",
+      "source_quote": "הַיִּרְאָה הַשְּׁנִיָּה שֶׁהִיא בָּאָה מִדְּבָרִים תַּחְתּוֹנִים, הִיא בְּחִינַת אד, כִּי הִיא בְּחִינַת דַּלֵּי דָּלֶת",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 34,
+      "note": "Node יראה התחתונה appears in dataset as node1 of an eitza edge (reference=185). Its bechina relationship to אד is stated in the source text but classified as eitza in the dataset. This may be a misclassification — 'הִיא בְּחִינַת' is bechina language, though the overall sentence describes how the lower yir'ah produces shefa."
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וְאוֹת אָלֶ\"ף",
+      "node_id": "העלאת מיין נוקבין",
+      "node_text": "הַעֲלָאַת מַיִּין נֻקְבִּין",
+      "polarity": "good",
+      "reason": "The source text states: 'הוּא בְּחִינַת הַעֲלָאַת מַיִּין נֻקְבִּין' — the lower yir'ah's action IS the bechina of raising of feminine waters (a Kabbalistic term for the ascent of petition/longing that draws down divine flow). This is a direct bechina statement describing the metaphysical mechanism by which the lower yir'ah operates. It belongs in Package 1 as a descriptor of the lower yir'ah's essential nature.",
+      "source_quote": "עַל־יְדֵי הַיִּרְאָה זוֹ אֵינוֹ נִמְשָׁךְ רַק הַשְׁפָּעוֹת בָּעוֹלָם, כִּי הוּא בְּחִינַת הַעֲלָאַת מַיִּין נֻקְבִּין",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וְאוֹת אָלֶ\"ף",
+      "node_id": "כלי לקבל השפע",
+      "node_text": "כְּלִי לְקַבֵּל הַשֶּׁפַע",
+      "polarity": "good",
+      "reason": "The source text states: 'הַכְּלִי הִיא בְּחִינַת מֵם סְתוּמָה, וְזֶה אוֹתִיּוֹת אָדָם' — the vessel (needed to receive the drawn-down shefa) IS the bechina of the closed mem, and this is the letters of 'Adam'. This bechina (vessel = closed mem = Adam) is not in the dataset. The vessel concept is directly tied to the lower yir'ah's purpose: when lower yir'ah draws down shefa, a vessel is needed so the external forces (chitzonim) cannot feed from it. This is part of the yir'ah-shefa structure and belongs in Package 1.",
+      "source_quote": "וּכְשֶׁנִּמְשָׁךְ הַשֶּׁפַע, צָרִיךְ לַעֲשׂוֹת כְּלִי לְקַבֵּל הַשֶּׁפַע, שֶׁלֹּא יִינְקוּ הַחִיצוֹנִים מִמֶּנּוּ, וְהַכְּלִי הִיא בְּחִינַת מֵם סְתוּמָה, וְזֶה אוֹתִיּוֹת אָדָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וְאוֹת אָלֶ\"ף",
+      "node_id": "ציון",
+      "node_text": "צִיּוֹן",
+      "polarity": "good",
+      "reason": "In the appended section of the Torah (brackets), the Rebbe states: 'צִיּוֹן זֶה בְּחִינַת צִיּוּן וְרֹשֶׁם הַכְּלִי' — Zion IS the bechina of the impression and marking of the vessel, which is made through one's longing to travel to the Tzaddik. This is a direct bechina statement. Zion (ציון) = the drawing/impression (ציור) = the preliminary outline of the vessel of holiness formed by intense longing. This concept belongs in Package 1 as it is part of the overall positive structure of vessel-formation leading to closeness with God.",
+      "source_quote": "צִיּוֹן זֶה בְּחִינַת צִיּוּן וְרֹשֶׁם הַכְּלִי, שֶׁנַּעֲשֶׂה עַל יְדֵי הַהִשְׁתּוֹקְקוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 3,
+    "total_eitza_edges_reference_185": 3,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "שכל / אות יו\"ד — sekhel is called yud (the yud of the alef-structure)",
+      "יראה ראשונה ↔ אות אל\"ף — upper yir'ah is bechina of the letter alef (central thesis of the Torah)",
+      "העלאת מיין נוקבין — the lower yir'ah acts as the raising of feminine waters",
+      "כלי לקבל השפע ↔ מם סתומה ↔ אדם — the vessel for receiving shefa is bechina of the closed mem, letters of Adam",
+      "ציון ↔ ציור ורושם הכלי — Zion is bechina of the impression/marking of the vessel (from appended section)"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "סוף דבר",
+        "reason": "The text calls yir'ah 'סוף דבר' based on the verse from Kohelet, but this is a Scriptural citation establishing yir'ah's importance, not a bechina statement equating two conceptual nodes. The verse is used as a proof-text, not to establish a בְּחִינַת relationship."
+      },
+      {
+        "concept": "שלמות",
+        "reason": "The text says yir'ah is the עִקַּר הַשְּׁלֵמוּת (the essence of completeness), but this is a qualitative statement about yir'ah's role, not a בְּחִינַת equation between two distinct concept-nodes."
+      },
+      {
+        "concept": "יראה תחתונה / דלי דלת",
+        "reason": "The phrase 'דַּלֵּי דָּלֶת' (doubly-poor dalet) is used to describe the lower yir'ah — it is an intensified form of the same dalet concept already in Package 1. It is a qualification of the existing אות דל\"ת node rather than an independent new bechina concept."
+      },
+      {
+        "concept": "השתוקקות לנסוע לצדיק",
+        "reason": "The longing to travel to the Tzaddik is described as what creates the vessel impression (ציון/ציור). The text does not use explicit בְּחִינַת language for this concept itself — it says 'עַל יְדֵי הַהִשְׁתּוֹקְקוּת... נַעֲשֶׂה הַצִּיּוּר' (through the longing, the impression is made). This is eitza (cause-effect) language, not bechina language."
+      },
+      {
+        "concept": "יגיעות וטרחות בהתקרבות",
+        "reason": "The struggles and efforts in the beginning of drawing close to God are discussed in the appended section as what creates a larger vessel. This is described causally ('עַל יְדֵי הַיְגִיעוֹת שֶׁבַּתְּחִלָּה נַעֲשֶׂה הַכְּלִי'), not using bechina language. It is an eitza relationship."
+      }
+    ],
+    "misclassification_flag": {
+      "edge_id": 34,
+      "current_type": "eitza",
+      "concern": "The edge יראה התחתונה → \"והשקה את כל פני האדמה\" (id=34, reference=185) is classified as eitza, yet the source text uses 'הִיא בְּחִינַת אד' language for the lower yir'ah. The bechina of יראה תחתונה = אד is stated inline in the source but not recorded as a separate bechina edge. This may be worth a data correction: adding a bechina edge יראה תחתונה ↔ אד for reference=185."
+    }
+  }
+}

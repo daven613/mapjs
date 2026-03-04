@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "source": "Torah #249",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "notes": "Torah 249 has zero entries in torahData.js. This file documents all concepts found in the source text with explicit bechina language that are entirely absent from the dataset. These are not 'additions' to existing packages — they are the foundational nodes that need to be created for Torah 249 from scratch."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "גבורה",
+      "node_text": "גְּבוּרָה",
+      "polarity": "good",
+      "reason": "The central concept of the entire Torah. 'עִקַּר הַגְּבוּרָה' — gevurah is the subject of the Torah's teaching. It is the dominant node of Package 1, equated via bechina language to the heart, to conquering the yetzer hara, and to Samson's feats. Not in dataset for Torah 249.",
+      "source_quote": "עִקַּר הַגְּבוּרָה – בְּהַלֵּב",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "לב",
+      "node_text": "לֵב",
+      "polarity": "good",
+      "reason": "The heart is stated as the seat/essence of gevurah: 'עִקַּר הַגְּבוּרָה בְּהַלֵּב'. This is a definitional bechina — gevurah IS the heart (the heart is the bechina / locus of gevurah). The Torah confirms this again at the end: 'שֶׁבָּא לוֹ חֹזֶק וְתֹקֶף גְּבוּרָה בַּלֵּב'. The heart and gevurah are parallel expressions of the same inner reality.",
+      "source_quote": "עִקַּר הַגְּבוּרָה – בְּהַלֵּב... שֶׁבָּא לוֹ חֹזֶק וְתֹקֶף גְּבוּרָה בַּלֵּב",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "כובש את יצרו",
+      "node_text": "כּוֹבֵשׁ אֶת יִצְרוֹ",
+      "polarity": "good",
+      "reason": "Explicitly equated to gevurah via 'וְזֶה בְּחִינַת': 'וְזֶה בְּחִינַת אֵיזֶהוּ גִּבּוֹר הַכּוֹבֵשׁ אֶת יִצְרוֹ'. The conquering of the yetzer hara is not a result of gevurah (that would be eitza) — it IS gevurah. The outer battle (conquering the physical war) and the inner battle (conquering the yetzer) are two expressions of the same thing. Bechina, not eitza.",
+      "source_quote": "וְזֶה בְּחִינַת (אבות פ\"ד): אֵיזֶהוּ גִּבּוֹר הַכּוֹבֵשׁ אֶת יִצְרוֹ",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "גבורות שמשון",
+      "node_text": "גְּבוּרוֹת שִׁמְשׁוֹן",
+      "polarity": "good",
+      "reason": "Explicitly equated to gevurah via 'וְזֶה בְּחִינַת': 'וְזֶה בְּחִינַת גְּבוּרוֹת שִׁמְשׁוֹן'. Samson's feats are held up as the paradigmatic expression of heart-rooted gevurah — the spirit of God stirring him in the camp of Dan and clothing him in strength is the same phenomenon as any person whose heart is strong and fears nothing. Samson's story is not a cause or result — it is the bechina, the manifestation of the same reality.",
+      "source_quote": "וְזֶה בְּחִינַת גְּבוּרוֹת שִׁמְשׁוֹן... דְּהַיְנוּ שֶׁבָּא לוֹ חֹזֶק וְתֹקֶף גְּבוּרָה בַּלֵּב",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "potential_eitza_nodes_not_included_in_package": [
+    {
+      "node_id": "רוח ה'",
+      "node_text": "רוּחַ ה'",
+      "reason_excluded": "The spirit of God is described as PRODUCING gevurah in Samson: 'צָלְחָה עָלָיו רוּחַ ה' וְלָבַשׁ גְּבוּרָה'. This is eitza (cause-and-effect: ruach Hashem → gevurah), not bechina. Ruach Hashem is not 'the same thing as' gevurah — it is what clothes a person in gevurah. Therefore it does NOT belong in Package 1 but would be a separate node connected by an eitza edge.",
+      "suggested_relationship": "eitza: רוח ה' → גבורה"
+    }
+  ],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "גבורה",
+      "לב",
+      "כובש את יצרו",
+      "גבורות שמשון"
+    ],
+    "dataset_coverage": "0% — Torah 249 is entirely absent from torahData.js. All concepts from the source text are missing from the dataset.",
+    "bechina_usages_in_source_text": [
+      {
+        "usage": "וְזֶה בְּחִינַת אֵיזֶהוּ גִּבּוֹר הַכּוֹבֵשׁ אֶת יִצְרוֹ",
+        "equates": ["גבורה / heart-strength", "כובש את יצרו"],
+        "type": "bechina"
+      },
+      {
+        "usage": "וְזֶה בְּחִינַת גְּבוּרוֹת שִׁמְשׁוֹן",
+        "equates": ["גבורה / heart-strength", "גבורות שמשון"],
+        "type": "bechina"
+      },
+      {
+        "usage": "עִקַּר הַגְּבוּרָה – בְּהַלֵּב (definitional equation)",
+        "equates": ["גבורה", "לב"],
+        "type": "bechina"
+      }
+    ],
+    "source_text_length": "2 sentences — one of the shortest Torahs in LM Vol 1",
+    "evil_mirror": "The Torah does not present an evil mirror structure. It is a pure positive teaching about inner strength. The yetzer hara appears only as the object being conquered (the opponent), not as a conceptual domain with its own bechina cluster. No evil packages warranted."
+  }
+}

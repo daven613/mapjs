@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "source": "Torah #258",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": 1,
+      "torah_ref": 258,
+      "label": "מַחֲלֹקֶת וְרוֹדְפִים",
+      "label_en": "Controversy and Pursuers",
+      "polarity": "evil",
+      "reason": "This package is 'new' in the strong sense — Torah 258 has no entries at all in torahData.js, so every package here is a first-time proposal. The source text contains one explicit bechina equivalence in the evil domain: machloket (controversy against a person) is identified with 'rodfai v'tzarai' (my pursuers and adversaries) via the 'וְזֶה שֶׁהִתְפָּאֵר' construction. These two nodes form an independent domain of hostile external pressure — the force that threatens to dislodge a person from their spiritual standing. The domain is not reducible to any other package.",
+      "proposed_nodes": [
+        {
+          "node_id": "מחלוקת",
+          "node_text": "מַחֲלֹקֶת",
+          "degree": 1
+        },
+        {
+          "node_id": "רודפי וצרי",
+          "node_text": "רוֹדְפַי וְצָרָי",
+          "degree": 1
+        }
+      ],
+      "proposed_edges": [
+        {
+          "node1_id": "מחלוקת",
+          "node2_id": "רודפי וצרי",
+          "proof": "וְזֶה שֶׁהִתְפָּאֵר דָּוִד הַמֶּלֶךְ עָלָיו הַשָּׁלוֹם (תהילים קי״ט:קנ״ז): רַבִּים רוֹדְפַי וְצָרָי, מֵעֵדוֹתֶיךָ לֹא נָטִיתִי – שֶׁאַף שֶׁהָיָה עָלָיו מַחֲלֹקֶת רַבִּים",
+          "type": "bechina",
+          "reference": 258
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 258,
+      "label": "דֶּרֶךְ הַשֵּׁם וְעֵדוּת",
+      "label_en": "The Path of God and His Testimonies",
+      "polarity": "good",
+      "reason": "The second new package for this Torah, representing the good/holy pole. The source text equates 'דֶּרֶךְ הַשֵּׁם יִתְבָּרַךְ' (the path of God) with 'עֵדוֹתֶיךָ' (Your testimonies) through the identical verbal structure 'לֹא נָטִיתִי / לֹא נָטָה' — both phrases use the same root (נָטָה, to turn/deviate) to describe the same refusal. The Rebbe closes the Torah by explicitly paraphrasing the verse's 'עֵדוֹתֶיךָ' as 'דֶּרֶךְ הַשֵּׁם', establishing their identity. These two nodes form an independent domain of divine anchorage — the spiritual ground a person holds when facing controversy.",
+      "proposed_nodes": [
+        {
+          "node_id": "דרך השם",
+          "node_text": "דֶּרֶךְ הַשֵּׁם יִתְבָּרַךְ",
+          "degree": 1
+        },
+        {
+          "node_id": "עדותיך",
+          "node_text": "עֵדוֹתֶיךָ",
+          "degree": 1
+        }
+      ],
+      "proposed_edges": [
+        {
+          "node1_id": "דרך השם",
+          "node2_id": "עדותיך",
+          "proof": "מֵעֵדוֹתֶיךָ לֹא נָטִיתִי... עִם כָּל זֶה לֹא נָטָה מִדֶּרֶךְ הַשֵּׁם יִתְבָּרַךְ",
+          "type": "bechina",
+          "reference": 258
+        }
+      ]
+    }
+  ],
+  "observations": "Torah 258 is one of the shortest Torahs in Likutay Moharan Volume 1 — essentially one sentence of principle followed by one proof text. It is entirely absent from torahData.js (reference 258 does not appear in the dataset at all).\n\nThe Torah teaches a single aphoristic principle: controversy (machloket) directed against a person can sway him from God's path and cause him to fall from his level. David the King is cited as the paradigmatic case of one who faced great opposition and yet remained anchored.\n\nDespite its brevity, the Torah contains two clear bechina equivalences:\n1. (Evil domain) Machloket = 'rodoفai v'tzarai' — controversy IS the pursuers and adversaries. The 'וְזֶה שֶׁהִתְפָּאֵר' construction is the Rebbe's standard 'this is a bechina of' marker.\n2. (Good domain) Derech Hashem = 'edutekha' — God's path IS His testimonies. The Rebbe paraphrases the verse's 'edutekha' as 'derech Hashem' in his closing gloss, establishing their identity.\n\nThese yield two minimal packages (2 nodes each) with a perfect good/evil mirror structure:\n- Package 1 (evil): machloket / pursuers-and-adversaries — the hostile external force\n- Package 2 (good): derech Hashem / edutekha — the divine anchor\n\nThe verdict is NEW_PACKAGES_PROPOSED because Torah 258 is completely absent from torahData.js — the entire Torah needs to be encoded from scratch, with 2 packages and 2 bechina edges.\n\nThe eitza chain (machloket → hayyah from God's path → nefilah from one's level) is the practical logic of the teaching but does not generate additional bechina packages. 'Hayyah' and 'nefilah' are eitza consequences, not conceptual domains with their own parallel-nature clusters.\n\nNote on connection to Torah #251: Torah #251 also discusses machloket and its spiritual dangers. In that Torah, the evil of machloket operates through 'machshavot kefirah' (thoughts of heresy), and the positive response involves 'mesirat hamilchamah l'Hashem' and 'emet.' Torah #258 presents a compressed version of the same essential teaching — controversy threatens one's standing — but in a single sentence without the extended argument of Torah #251. The two Torahs are distinct packages; each stands on its own. Cross-Torah: the node 'מחלוקת' from Torah #258 may share its node_id with machloket nodes in other Torahs, serving as a bridge in cross-Torah traversal."
+}

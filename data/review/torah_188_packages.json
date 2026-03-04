@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "source": "Torah #188",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 188,
+      "label": "שִׁכְחָה וַאֲבֵדָה",
+      "label_en": "Forgetting and the Lost Item",
+      "polarity": "neutral",
+      "reason": "שכחה (forgetting) and אבדה (the lost item / being in a state of loss) are declared explicitly equal by the Rebbe: 'הַשִּׁכְחָה הִיא בְּחִינַת אֲבֵדָה'. They are two aspects of the same spiritual reality — the condition of having lost one's pre-birth knowledge upon entering the world. שכחה is the mechanism (the act of forgetting); אבדה is the resulting state (being lost, having lost something). Neither produces the other — they are the same phenomenon viewed from different angles, making this a classic bechina. Polarity is neutral rather than evil: this is the natural human condition described in Niddah 30b, not an adversarial force. It is the problem the Torah addresses — the universal human amnesia about one's spiritual task — but it is not labeled as evil (sitra achra). The tzaddik's role (eitza, not bechina) is to reverse this state.",
+      "dominant_node": "אבדה",
+      "nodes": [
+        "שכחה",
+        "אבדה"
+      ],
+      "node_degrees": {
+        "שכחה": 1,
+        "אבדה": 1
+      },
+      "merge_notes": [
+        "This is the only connected component in the dataset for Torah #188 (1 bechina edge total). There is nothing to merge with — no other components exist in the current dataset.",
+        "The 2-node component is retained as-is. Both nodes share identical essential nature: the spiritual amnesia that afflicts every person from birth. No merger is possible or needed.",
+        "The dominant node is designated as אבדה rather than שכחה because the entire teaching is structured around the concept of the אבדה — the lost item that must be recovered. שכחה is introduced as an explanation of what kind of thing the אבדה is; אבדה is the primary concept driving the teaching's practical directive (travel to the tzaddik to recover your loss)."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "notes": "Torah #188 is a very short teaching (4 lines). The dataset contains only a single bechina edge. The entire bechina structure of the Torah as currently recorded reduces to one 2-node component. The teaching's conceptual richness (tzaddik, pre-birth knowledge, the investigative test for deceivers) is present only in the source text and not yet encoded as bechina edges. See torah_188_additions.json for gap analysis."
+  }
+}

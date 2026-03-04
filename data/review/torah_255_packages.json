@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "source": "Torah #255",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #255 has zero bechina edges in torahData.js (reference===255 AND type==='bechina' returns no results). The source text is a single-sentence Torah with no explicit bechina language (no 'X הוא בחינת Y', 'X נקרא Y', or equivalent formulations). The entire teaching is structured as a conditional-causal (eitza) statement: emunah without daat → possible to fall; emunah with daat → impossible to fall. Since packages are built exclusively from bechina-connected nodes, and no bechina edges exist for this Torah in the dataset, no packages can be constructed from the dataset. All analysis is presented in the gap analysis file (torah_255_additions.json)."
+  },
+  "packages": [],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0
+  }
+}

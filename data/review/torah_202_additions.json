@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "source": "Torah #202",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, the full source text torah_202.txt, and all reference===202 edges from torahData.js (none exist). For each statement in the source text, evaluated whether it employs explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, הוּא בְּחִינַת). Only statements with explicit bechina declarations are considered for bechina-edge additions. Causal and observational statements — even when they involve conceptual equivalences — are not bechina edges unless explicitly marked as such by the Rebbe."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_202_edges": 0,
+    "total_reference_202_bechina_edges": 0,
+    "total_reference_202_eitza_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "שֵׂכֶל קָטָן (sekhel katan — small intellect; the initiating condition described in the teaching: 'anyone whose intellect is very small')",
+      "כָּבוֹד (kavod — honor; the desired object that is inversely correlated with sekhel: the smaller the intellect, the greater the desire for honor)",
+      "דַּעַת קַלָּה (da'at kalah — light/small knowledge; used as the explanatory descriptor for the small-sekhel state, specifically applied to describe why women desire honor)"
+    ],
+    "gap_explanation": "Torah #202 has no bechina edges in torahData.js, and the source text contains no bechina language. The teaching is a single compressed statement presenting one observational-causal relationship: small sekhel → intense desire for kavod. The proof is empirical: women (nashim), whose da'at is kalah u-ketanah, are very exacting about their honor. The three concepts that appear in the text — שֵׂכֶל (intellect), כָּבוֹד (honor), and דַּעַת (knowledge/mind) — are related by eitza (causal/directional), not bechina (parallel essence). The teaching does not declare any two concepts to be the same thing or parallel aspects of a shared reality. Rather, the absence of sekhel/da'at produces or generates the desire for kavod — a directional flow from one thing to another. Even the potential da'at↔sekhel equation (used interchangeably in the text) is not formalized with bechina language; it is contextual usage, not a declared bechina identification. Therefore, even if these nodes were added to the dataset, they would be eitza edges, not bechina edges, and would contribute zero packages. There are no missing bechina relationships in this Torah — the absence of bechina edges in the dataset accurately reflects the absence of bechina language in the source text.",
+    "source_text_summary": "Torah #202 is a single-sentence aphorism. The teaching states: (1) Whoever has a very small intellect (sekhel) needs to be given very great honor. (2) The smaller one's intellect, the more one desires honor. (3) This is observed empirically: women are very exacting about their honor and want it greatly, because women's da'at is light and very small. The entire teaching is a psychological-spiritual observation about the inverse relationship between intellectual capacity (sekhel/da'at) and the craving for external honor (kavod). The practical implication (not stated but implied) is ethical: give honor generously to those whose sekhel is small, because their craving for it is proportionally greater. There is no mystical structure, no kabbalistic equation, and no bechina declaration anywhere in this text.",
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "שֵׂכֶל and דַּעַת as bechina equivalents",
+        "reason": "The text uses שִׂכְלוֹ (his intellect) and דַּעְתָּן (their knowledge/mind) interchangeably to describe the same faculty — the intellectual/cognitive capacity of a person. However, the Rebbe does not write 'da'at hi bechinat sekhel' or any equivalent bechina declaration. The interchangeable usage is a stylistic variation (sekhel in the first half of the sentence, da'at in the explanatory clause about women), not a formal bechina identification. Per framework rule: only explicit bechina language creates bechina edges. This pair does not qualify."
+      },
+      {
+        "concept": "נָשִׁים (nashim / women) as a concept node",
+        "reason": "Women are cited as an empirical example illustrating the general principle, not as a concept being given a bechina identification. The Rebbe says 'as we see in practice / in sensory experience (bechush)' — this is an empirical observation, not a spiritual equation. Nashim are not declared a bechina of anything. Excluded as non-bechina illustrative example."
+      },
+      {
+        "concept": "כָּבוֹד (kavod) and שֵׂכֶל (sekhel) as bechina pair",
+        "reason": "The relationship between kavod and sekhel is purely causal and inverse: the absence/smallness of sekhel produces/causes desire for kavod. 'The smaller the intellect, the more one desires honor.' This is a directional eitza relationship, not a bechina equation of shared essence. Honor and intellect are not declared to be the same thing — they are in causal tension. Excluded as eitza, not bechina."
+      }
+    ],
+    "structural_observations": [
+      "Torah #202 is among the shortest teachings in Likutay Moharan Vol. 1 — a single sentence of approximately 60 words.",
+      "The teaching has no kabbalistic structure whatsoever. It is a pure psychological-ethical observation presented as a practical principle.",
+      "The conceptual axis is entirely eitza: small sekhel → desire for kavod. There is no parallel-essence (bechina) structure.",
+      "This Torah is structurally similar to Torah #198 (also zero bechina edges, single eitza relationship, no packages possible).",
+      "The potential eitza edge to add to the dataset would be: שֵׂכֶל קָטָן → חֲפֵצָנוּת בְּכָבוֹד (small intellect → craving for honor), reference 202, type eitza. But this is outside the scope of the bechina-package analysis."
+    ]
+  }
+}

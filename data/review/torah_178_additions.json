@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "source": "Torah #178",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "concept": "שמחה",
+      "suggested_package": 1,
+      "package_label": "נפש ודבור",
+      "polarity": "good",
+      "source_quote": "כִּי שִׂמְחָה הוּא קוֹמָה שְׁלֵמָה מֵרַמַ\"ח אֵבָרִים וּשְׁסָ\"ה גִּידִים",
+      "justification": "The text makes an explicit bechina statement: joy (שמחה) IS a complete stature (komah sheleimah) of 248 limbs and 365 sinews. However, the deeper connection to Package 1 is that simcha is the medium through which the nefesh-as-dibur is revealed: when a person passes through the full stature of simcha, the damaged limb (corresponding to the sinned mitzvah) is felt as deagah, which triggers memory of the sin and enables verbal confession. Simcha IS the body/soul-map of all mitzvot. This bechina (simcha = komah sheleimah) does not appear in the Torah #178 dataset. Suggested edge: שמחה ↔ קומה שלמה.",
+      "edge_type": "bechina",
+      "node1": "שמחה",
+      "node2": "קומה שלמה"
+    },
+    {
+      "concept": "שרש נקודות המצוות",
+      "suggested_package": 1,
+      "package_label": "נפש ודבור",
+      "polarity": "good",
+      "source_quote": "כִּי שֹׁרֶשׁ נְקֻדּוֹת כָּל הַמִּצְווֹת הִיא הַשִּׂמְחָה, כִּי פִּקּוּדֵי ה' יְשָׁרִים מְשַׂמְּחֵי־לֵב",
+      "justification": "The text states explicitly that the root-point (shoresh nekudot) of all the mitzvot IS simcha — proven from Psalm 19:9: 'The statutes of Hashem are upright, rejoicing the heart.' This is a bechina statement: the essential inner point (nekudah) of every commandment IS joy. Each of the 613 mitzvot has a corresponding limb in the stature of simcha. This concept — that simcha is the essential nature of Torah observance — is central to the Torah's argument but does not appear as a bechina node for Torah #178 in the dataset. Suggested edge: שרש נקודות המצוות ↔ שמחה.",
+      "edge_type": "bechina",
+      "node1": "שרש נקודות המצוות",
+      "node2": "שמחה"
+    },
+    {
+      "concept": "דאגה",
+      "suggested_package": 1,
+      "package_label": "נפש ודבור",
+      "polarity": "evil",
+      "source_quote": "וְאַדְּרַבָּא, יֵשׁ לוֹ דְּאָגָה, שֶׁהוּא הֶפֶךְ הַשִּׂמְחָה, בִּבְחִינַת אֶדְאַג מֵחַטָּאתִי",
+      "justification": "The text states explicitly: 'there is deagah (worry), which is the OPPOSITE of simcha (שֶׁהוּא הֶפֶךְ הַשִּׂמְחָה).' This is a bechina-of-opposition: deagah IS the inverse nature of simcha. In the Torah's structure, deagah functions as the signal that appears at the damaged mitzvah-limb when the simcha stature passes over it — it IS the manifestation of the sin's damage in the nefesh domain. Deagah is the evil mirror of simcha in this Torah: where simcha IS the body of holiness (komah sheleimah), deagah IS the disruption/damage. Suggested edge: דאגה ↔ חטא (or דאגה ↔ פגם המצוה). This would be an evil-polarity bechina node.",
+      "edge_type": "bechina",
+      "node1": "דאגה",
+      "node2": "פגם המצוה"
+    },
+    {
+      "concept": "קול",
+      "suggested_package": 1,
+      "package_label": "נפש ודבור",
+      "polarity": "good",
+      "source_quote": "נִתְעוֹרֵר הַקּוֹל דִּלְעֵלָּא וְנִתְיַחֵד עִם הַדִּבּוּר",
+      "justification": "The text describes the kol (voice from above) as the complementary dimension to dibur (speech from below): 'the upper kol is awakened and desires to unite with dibur.' The relationship between kol and dibur in this Torah is presented as a yichud (union of two that share an essential complementarity). While the immediate framing is that repairing dibur CAUSES the awakening of kol (eitza), the text also frames kol and dibur as two halves of a single reality — the divine voice needing the human word to complete itself. The verse 'osei devaro lishmo'a bekol devaro' is interpreted as: those who do (= repair) dibur merit to hear (= receive) kol. However, this relationship may be best classified as eitza rather than bechina in the Torah's logic. Flagged here for human review.",
+      "edge_type": "bechina_candidate",
+      "node1": "קול",
+      "node2": "דבור"
+    },
+    {
+      "concept": "וידוי דברים",
+      "suggested_package": 1,
+      "package_label": "נפש ודבור",
+      "polarity": "good",
+      "source_quote": "וְעַל יְדֵי וִדּוּי דְּבָרִים נִתְתַּקֵּן עוֹלַם הַדִּבּוּר",
+      "justification": "Viduy devarim (verbal confession) is described as the specific repair action for dibur (speech). In the Torah's language, the sin causes damage to the nefesh=dibur, and the repair IS viduy devarim. This could be read as eitza (viduy REPAIRS dibur), but the Torah frames them as sharing the same essential domain: the world of speech (olam hadibur) is what is damaged and what is repaired, and viduy IS speech by definition. The citation of Hosea 14:3 — 'Take words with you and return to Hashem' — suggests that viduy IS the expression of the nefesh-as-dibur repairing itself. This is more naturally eitza, but if read as bechina: viduy IS the active form of the repaired dibur. Flagged for human review.",
+      "edge_type": "bechina_candidate",
+      "node1": "וידוי דברים",
+      "node2": "תקון הדבור"
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 1,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "שמחה — the core concept of the entire Torah. Explicitly stated as 'komah sheleimah of 248 limbs and 365 sinews' (bechina). Not present as a bechina node for Torah #178 in the dataset.",
+      "שרש נקודות המצוות — the root-point of all commandments IS simcha (Psalm 19:9 proof). Not present as a bechina node for Torah #178.",
+      "קומה שלמה — the complete body-stature of 248+365. The text identifies this explicitly with simcha. Not in dataset as bechina for Torah #178.",
+      "מצוות — each of the 613 commandments has a corresponding limb in the stature of simcha. The individual mitzvot as having simcha-limbs is a central structural claim but not represented as bechina in the dataset.",
+      "דאגה — worry/anxiety, explicitly named as the 'opposite of simcha' (הפך השמחה). The evil mirror of simcha in this Torah. Not in dataset as bechina for Torah #178.",
+      "קול — the divine voice (kol dile'ila) that unites with dibur through yichud. Appears as the counterpart to dibur throughout the Torah. Not in dataset as bechina for Torah #178.",
+      "וידוי דברים — verbal confession. The mechanism by which olam hadibur is repaired. Central to the teaching but not represented as bechina in dataset.",
+      "יחוד קדשא בריך הוא ושכינתיה — the divine union of the Holy One and the Shekhinah, achieved through the union of kol and dibur. Not in dataset as bechina for Torah #178.",
+      "עולם הדבור — the 'world of speech' that is damaged by sin and repaired by viduy. Could be treated as a bechina of נפש and דבור (the world-dimension of dibur = the domain of the nefesh). Not in dataset.",
+      "ששון ושמחה — the pair 'sasson vesimcha' from Isaiah 51:3. Cited at the Torah's conclusion as the context within which viduy (todah) and kol zimrah are found. Not in dataset as bechina for Torah #178.",
+      "תודה — acknowledgment/confession (todah) as a type of viduy devarim. Cited from Isaiah 51:3. Not in dataset.",
+      "קול זמרה — the voice of song, mentioned alongside viduy in the closing verse. Not in dataset as bechina for Torah #178."
+    ],
+    "all_2_dataset_nodes_assigned": true,
+    "note_on_sparse_bechina_coverage": "Torah #178 is notably sparse in the bechina dataset — only 1 edge is recorded. This stands in sharp contrast to the teaching's rich conceptual content. The reason is that the Torah's argument is structured almost entirely as an eitza chain: simcha of mitzvah → enables passing through the full komah → reveals the damaged limb → triggers deagah → triggers memory of sin → enables viduy → repairs dibur → causes yichud of kol and dibur. The only bechina in this chain that the encoder identified is the foundational identity: nefesh=dibur. All other relationships are cause-and-effect (eitza). The gap analysis above identifies several additional bechina identities present in the text that were not captured.",
+    "note_on_evil_mirror": "The evil mirror in Torah #178 is subtle: simcha (good) ↔ deagah (evil); komah sheleimah (good) ↔ the damaged limb/sin-laden body (evil); dibur repaired (good) ↔ dibur damaged by sin (evil). The Torah does not develop the evil side as an independent cluster — it focuses almost entirely on the positive path of repair. The evil dimension appears as the starting problem (sin, obstacles to confession, worry) rather than as an independent conceptual domain."
+  }
+}

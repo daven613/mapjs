@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "source": "Torah #183",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 183,
+      "label": "הַצַּדִּיקִים בְּעִגּוּל — בֵּית דִּין",
+      "label_en": "The Tzaddikim in a Circle — The Court",
+      "polarity": "good",
+      "reason": "These two concepts share the same essential nature: the tzaddikim who sit in a circle in the world ARE the heavenly court — they are not the cause of the court but they ARE the court. The teaching states explicitly: 'those tzaddikim who sit in a circle are the aspect of a court (beit din), from which go out all judgments and all sustenance.' The formation (the circle) and the function (judgment + sustenance) are both inherent to the same reality — the tzaddikim-as-beit-din. Both are positive, holy expressions of the guiding, sustaining principle that governs the world.",
+      "dominant_node": "בית דין",
+      "nodes": [
+        "אלו הצדיקים שיושבים בעגול",
+        "בית דין"
+      ],
+      "node_degrees": {
+        "אלו הצדיקים שיושבים בעגול": 1,
+        "בית דין": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 183,
+      "label": "אַהֲבָה וּרְאִיָּה",
+      "label_en": "Love and Vision",
+      "polarity": "good",
+      "reason": "All four nodes — אהבה (love), ראיה (vision/seeing), אוהבים זה את זה (loving one another), and רואים זה את זה (seeing one another) — express the same single essential insight: love and seeing are the same thing. The teaching defines love precisely as 'seeing one another' and then argues both ways: strong love = you cannot bear not to see your companion; even distant love = you love from afar = a form of seeing. The opposite of love is the idiom 'I cannot look at him.' Love IS seeing; seeing IS love. The two dataset components (אהבה ↔ ראיה and אוהבים זה את זה ↔ רואים זה את זה) are the same bechina stated twice — once abstractly and once in its inter-personal application. They share identical essential nature and must be merged into one package. Polarity is good: love and vision are qualities of holiness and of the tzaddikim's bond.",
+      "dominant_node": "אהבה",
+      "nodes": [
+        "אהבה",
+        "ראיה",
+        "אוהבים זה את זה",
+        "רואים זה את זה"
+      ],
+      "node_degrees": {
+        "אהבה": 1,
+        "ראיה": 1,
+        "אוהבים זה את זה": 1,
+        "רואים זה את זה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["אהבה", "ראיה", "אוהבים זה את זה", "רואים זה את זה"],
+          "reason": "The dataset has two separate 2-node components: (1) אהבה ↔ ראיה (edge 2653) and (2) אוהבים זה את זה ↔ רואים זה את זה (edge 2680). These two components express the same essential bechina — love = seeing — at two levels of abstraction: the abstract principle (love / vision) and the interpersonal application (loving one another / seeing one another). The source text explicitly links them: 'and this is the aspect of seeing one another, which is the aspect of love as stated above' (line 5). אוהבים זה את זה is simply the applied form of אהבה, and רואים זה את זה is simply the applied form of ראיה. There is no cause-and-effect relation between the pairs — they are all expressions of the same underlying reality. Merging is mandated by shared essential nature."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 6,
+    "total_packages": 2,
+    "raw_connected_components": 3
+  }
+}

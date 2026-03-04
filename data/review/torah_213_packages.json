@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "source": "Torah #213",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "source_text_bechina_analysis",
+    "notes": "Torah #213 has zero pre-existing edges in torahData.js (reference===213 yields no results). All bechina relationships are derived entirely from the source text. The Torah is extremely short (4 paragraphs) and highly focused: it teaches a single secret about the Divine Name שם סאל (SAL) — an acronym from Psalm 32:7 — that conceals and protects a person from the Accuser (Samael / סמ\"ך-מ\"ם). The Torah's core structural move is a letter-combination teaching: when the protecting Name SAL is active, the Mem of 'מצר תצרני' is safely contained within the verse; if the Accuser finds an opening, the Mem breaks free from the verse and joins SAL to form 'סמאל' (Samael), inverting the Name from protection to doom. Because there are no dataset edges, node_degrees reflect the number of explicit bechina connections stated in the source text itself."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 213,
+      "label": "שֵׁם סָאל וְהַהַסְתָּרָה",
+      "label_en": "The Divine Name SAL and the Concealment",
+      "polarity": "good",
+      "reason": "These concepts all share the same essential nature: the protective, concealing dimension of the Divine Name SAL. The Name SAL (סאל) is formed from the initial letters of 'אַתָּה סֵתֶר לִי מִצַּר תִּצְּרֵנִי' (Psalm 32:7). The Torah explicitly states: 'אֲזַי הַשֵּׁם הַנַּ\"ל הוּא מִכְסֶה וּמִסְתָּר, בְּחִינַת: אַתָּה סֵתֶר לִי' — the Name IS the covering/concealment, a bechina of 'atah seter li.' The concealment (מסתיר ומכסה), the verse-phrase 'אתה סתר לי,' the verse-phrase 'מצר תצרני ותשמרני,' and the Name SAL itself are all faces of the same protective reality. They are not a cause-and-effect chain — the Name IS the concealment and the concealment IS the Name. The verse is both the source of the Name's letters AND the bechina of what the Name is. 'מצר תצרני ותשמרני' belongs here (in its protective valence) because when the Name functions correctly it encompasses both halves of the verse: 'אתה סתר לי' AND 'מצר תצרני ותשמרני' — and the Mem of מצר remains safely within the protective verse rather than defecting to the Accuser.",
+      "dominant_node": "שם סאל",
+      "nodes": [
+        "שם סאל",
+        "מסתיר ומכסה",
+        "\"אתה סתר לי\"",
+        "\"מצר תצרני ותשמרני\""
+      ],
+      "node_degrees": {
+        "שם סאל": 3,
+        "מסתיר ומכסה": 2,
+        "\"אתה סתר לי\"": 2,
+        "\"מצר תצרני ותשמרני\"": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["\"מצר תצרני ותשמרני\""],
+          "reason": "The phrase 'מצר תצרני ותשמרני' is the continuation of the protective verse 'אתה סתר לי.' In the Torah's conclusion (line 4), when the Name functions protectively, it is described as BOTH 'אתה סתר לי' AND 'מצר תצרני ותשמרני.' The verse's second half is thus a bechina of the same protective reality as the first half, and belongs in the same package. It is the Mem of this phrase that is at risk — but the phrase itself, when functioning, is protective. Its valence here is good."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 213,
+      "label": "סָמֶ\"ךְ-מֵ\"ם וְאוֹת מֵ\"ם",
+      "label_en": "Samael and the Letter Mem",
+      "polarity": "evil",
+      "reason": "These concepts all share the essential nature of the Accuser — the destructive spiritual force that circles the protected person seeking entry. The Torah's two explicit bechina statements both concern this cluster: (1) 'הַמֵּ\"ם הִיא בְּחִינַת הַסָּמֶ\"ךְ-מֵ\"ם הַמְשׁוֹטֵט סָבִיב סָבִיב' — the letter Mem IS Samael the circler; (2) 'הַמֵּם שֶׁל מִצַּר תִּצְּרֵנִי הוּא בְּחִינַת הַמֵּ\"ם הַנַּ\"ל, בְּחִינַת הַסָּמֶ\"ךְ-מֵ\"ם' — the Mem of 'mitzar' IS that same Mem, IS Samael. The Zohar citation confirms: 'Pinchas saw the Mem of מות circling' — so the Mem of death and the Mem of mitzar are both bechinot of Samael who circles. בעל דבר (the Accuser) is explicitly identified as the entity that roams/searches/circles around the covered person — the same entity as Samael. 'סמאל' (the full name formed when Mem joins SAL) is this package's dominant outcome concept. 'סוף אדם למות' (the talmudic phrase, Berakhot 17) is the inverted acrostic of שם סאל when Samael gains power — it is the evil manifestation of the same letters, and thus a bechina of Samael's victory/authority.",
+      "dominant_node": "סמ\"ך-מ\"ם",
+      "nodes": [
+        "סמ\"ך-מ\"ם",
+        "בעל דבר",
+        "אות מ\"ם",
+        "מם של מות",
+        "\"סוף אדם למות\""
+      ],
+      "node_degrees": {
+        "סמ\"ך-מ\"ם": 4,
+        "בעל דבר": 2,
+        "אות מ\"ם": 3,
+        "מם של מות": 2,
+        "\"סוף אדם למות\"": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["בעל דבר"],
+          "reason": "The Torah opens with the Accuser (בעל דבר) as the entity from whom the Name conceals and protects. Line 2 equates the circling presence explicitly: 'הַבַּעַל דָּבָר מְשׁוֹטֵט... וְזֶה בְּחִינַת... הַסָּמֶ\"ךְ-מֵ\"ם הַמְשׁוֹטֵט.' The circling of the בעל דבר IS the circling of the סמ\"ך-מ\"ם — they are the same entity in different naming registers. בעל דבר belongs in this evil package as a bechina of Samael."
+        },
+        {
+          "merged_nodes": ["מם של מות"],
+          "reason": "The Zohar passage cited (Pinchas 236) describes Pinchas seeing 'the Mem of מות circling' — this Mem is immediately glossed by the Rebbe as 'הַיְנוּ כִּי הַמֵּ\"ם הִיא בְּחִינַת הַסָּמֶ\"ךְ-מֵ\"ם.' So the Mem of death is a bechina of the Mem-letter and of Samael. It is a distinct formulation ('מם של מות') but shares the exact same essential nature as the evil Mem cluster."
+        },
+        {
+          "merged_nodes": ["\"סוף אדם למות\""],
+          "reason": "The phrase 'סוֹף אָדָם לָמוּת' (Berakhot 17) is the acrostic שם סאל (ס-א-ל) in its inverted, evil state — when Samael gains power over the person, the very same Name that was protective becomes a death-sentence. The Rebbe explicitly identifies this phrase as sharing the same acrostic letters as שם סאל, making it the evil bechina-twin of the protective Name. It belongs with the evil package because it IS the outcome of Samael's victory."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_bechina_edges_in_dataset": 0,
+    "note_on_dataset": "No edges exist in torahData.js for reference===213. All edges proposed here are derived directly from explicit bechina language in the source text and must be added to the dataset.",
+    "total_nodes": 9,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 2,
+    "teaching_structure": "Two packages, one good (protective Name/concealment) and one evil (Samael/Accuser/Mem). The good/evil mirror is precise and tight: the SAME letters (ס-א-ל) form the Name of protection OR the acrostic of 'סוף אדם למות' depending on whether Samael has gained a foothold. The teaching's practical instruction (eitza, not bechina) flows between the packages: to PREVENT the evil package from activating, one must pause between 'אתה סתר לי' and 'מצר' when reading Psalm 32:7, so as not to form the name סמאל."
+  }
+}

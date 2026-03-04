@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "source": "Torah #241",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #241 has ZERO bechina edges in the dataset (reference 241 does not appear anywhere in torahData.js). The bechina subgraph is entirely empty. All packages below are derived exclusively from analysis of the source text. The Torah is very short (7 sentences) and is structurally an eitza/narrative teaching — it describes a strategic mechanism (the tzaddik deliberately contending against another tzaddik to displace divine judgment) rather than building a network of bechina equivalences. Only one bechina-type cluster is identifiable from the source text: the three expressions of the divine force of judgment (מידת הדין, חמת ה', קנאה). These are equated using 'הינו' (definitional gloss) language, which is standard bechina equivalence in LM."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 241,
+      "label": "מִדַּת הַדִּין וַחֲמַת ה' וְהַקִּנְאָה",
+      "label_en": "The Attribute of Judgment, God's Wrath, and Divine Jealousy",
+      "polarity": "evil",
+      "reason": "The Torah uses three terms interchangeably for the same heavenly force of punitive justice: (1) מִדַּת הַדִּין (the attribute of judgment) — the force that 'wants to consume' a person under sins; (2) חֲמַת ה' (God's wrath) — which Pinchas 'returned'; (3) קִנְאָה / קִנְאָתִי (divine jealousy/zeal) — explicitly glossed in line 5 as 'my attribute of judgment': 'בְּקִנְאָתִי, בְּמִדַּת הַדִּין שֶׁלִּי.' The fourth expression, דִּינִים (judgments, plural), is the concrete manifestation of this force operating against an individual — it is the plural/actualized form of מידת הדין in action. All four are different expressions of the same single metaphysical reality: the dimension of divine retributive justice that presses against the sinner but cannot fully consume Israel. They are classified as 'evil' (the opposing force) in the framework of this Torah — their polarity is the negative pressure that the tzaddik strategically redirects.",
+      "dominant_node": "מידת הדין",
+      "nodes": [
+        "מידת הדין",
+        "חמת ה'",
+        "קנאה",
+        "דינים"
+      ],
+      "node_degrees": {
+        "מידת הדין": 3,
+        "חמת ה'": 1,
+        "קנאה": 1,
+        "דינים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["חמת ה'", "מידת הדין"],
+          "reason": "Lines 4–5: 'פִּינְחָס הֵשִׁיב אֶת חֲמַת ה' וְסִלֵּק מִדַּת הַדִּין' — these two terms are used in parallel in the same sentence and treated as one reality: returning the wrath IS displacing the judgment. Same essential nature, not cause-effect."
+        },
+        {
+          "merged_nodes": ["קנאה", "מידת הדין"],
+          "reason": "Line 5: 'בְּקִנְאָתִי, בְּמִדַּת הַדִּין שֶׁלִּי' — explicit 'הינו' (definitional gloss) equating God's jealousy with His attribute of judgment. This is the clearest bechina statement in the Torah."
+        },
+        {
+          "merged_nodes": ["דינים", "מידת הדין"],
+          "reason": "'דינים' (judgments) is the plural/actualized presence of 'מידת הדין' — the abstract attribute manifesting as concrete pressures against a person. The Torah treats them as the same force (line 2: 'כשיש דינים... מידת הדין מסתלק ממנו'). They share the same essential nature: divine punitive pressure."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 241,
+      "label": "הַצַּדִּיק הַגָּדוֹל וּפִינְחָס",
+      "label_en": "The Great Tzaddik and Pinchas",
+      "polarity": "good",
+      "reason": "The Torah presents two expressions of the same archetype: the 'great tzaddik who watches over the rectification of the world' (line 3) and Pinchas ben Elazar (line 4). The teaching explicitly applies the abstract principle to Pinchas as its proof-text — meaning Pinchas IS the 'tzaddik gadol who oversees tikkun haolam' in this context. They share the same essential nature: the righteous human agent who deliberately dons the appearance of vengeance in order to displace divine judgment and ultimately act with mercy. Note: this is a weaker bechina claim than Package 1 (no explicit bechina language is used), but the structural equivalence of the two figures is clear from the teaching's logic: 'this is what such a tzaddik does — and THIS is the meaning of [Pinchas].' The 'הינו' (line 4) linking the verse to the principle makes Pinchas the concrete instance of the abstract tzaddik.",
+      "dominant_node": "פינחס",
+      "nodes": [
+        "צדיק גדול המשגיח בתיקון העולם",
+        "פינחס"
+      ],
+      "node_degrees": {
+        "פינחס": 1,
+        "צדיק גדול המשגיח בתיקון העולם": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 6,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "note": "All packages derived from source text analysis; no bechina edges exist in the dataset for Torah #241. Package 1 is the primary bechina cluster (3 explicit 'הינו'-type equations). Package 2 is a weaker structural equivalence (narrative identification of Pinchas with the abstract tzaddik archetype). The teaching is primarily eitza in structure."
+  }
+}

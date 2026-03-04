@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "source": "Torah #225",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 225,
+      "label": "שֵׂכֶל וְנֵר הַדּוֹלֵק",
+      "label_en": "Intellect and the Burning Candle",
+      "polarity": "good",
+      "reason": "All these concepts share the essential nature of the intellect (שֵׂכֶל) and its metaphorical inner structure: the eyes ARE the intellect ('עֵינֵי זֶה בְּחִינַת הַשֵּׂכֶל'), the sustained intellect IS a burning candle, and the moisture that rises to the brain IS the oil that feeds that candle. The Rebbe develops a unified lamp metaphor: the brain is the wick, the soul is the flame, the moisture (= oil) feeds it, and the eyes are the outward expression of this light. These three bechina pairs are all faces of the same essential domain — the intellect in its wholeness — and not a chain of cause-and-effect. The lungs sustain the moisture (an eitza), but the moisture being oil, the sekhel being a candle, and the eyes being sekhel are all parallel expressions of the same reality.",
+      "dominant_node": "חכמה",
+      "nodes": [
+        "עיני",
+        "חכמה",
+        "קיום השכל",
+        "נר דולק",
+        "לחלוחית העולים אל המח",
+        "שמן"
+      ],
+      "node_degrees": {
+        "עיני": 1,
+        "חכמה": 1,
+        "קיום השכל": 1,
+        "נר דולק": 1,
+        "לחלוחית העולים אל המח": 1,
+        "שמן": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["עיני", "חכמה"],
+          "reason": "Eyes and sekhel/chokhmah are a direct bechina pair (edge 1144): 'עֵינֵי זֶה בְּחִינַת הַשֵּׂכֶל' — the eyes in the verse Ps. 145:15 are the intellect. Both belong to the intellect-domain."
+        },
+        {
+          "merged_nodes": ["קיום השכל", "נר דולק"],
+          "reason": "The sustaining of the intellect IS a burning candle (edge 2200): 'קִיּוּם הַשֵּׂכֶל שֶׁהוּא בְּחִינַת נֵר דּוֹלֵק.' This is not a cause-effect but a parallel description — both the sustained sekhel and the burning candle are expressions of the same ignited-intellect reality."
+        },
+        {
+          "merged_nodes": ["לחלוחית העולים אל המח", "שמן"],
+          "reason": "The moisture that rises to the brain IS the oil (edge null-id): 'הַלַּחְלוּחִית הָעוֹלִים אֶל הַמֹּחַ, שֶׁהֵם בְּחִינַת הַשֶּׁמֶן.' The moisture and the oil are two names for the same substance in the candle metaphor. Both belong to Package 1 because the candle (= sekhel) and its oil (= moisture/brain-nutrition) are the same essential domain: the intellect and what sustains it."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 225,
+      "label": "אָדָם וְדִבּוּר",
+      "label_en": "Man and Speech",
+      "polarity": "good",
+      "reason": "These two concepts share the essential nature of the human being defined by articulate speech: 'אָדָם שֶׁהוּא בְּחִינַת דִּבּוּר' (man is the bechina of speech). The power to cut letters from raw sound (חִתּוּךְ הַדִּבּוּר) is what distinguishes man from animal. They are not cause-and-effect — being a human does not produce speech as an external result; rather, speech IS what man IS. The same concept is expressed by the verse 'מִי שָׂם פֶּה לָאָדָם': the mouth-speech-humanity complex is one integral reality.",
+      "dominant_node": "אדם",
+      "nodes": [
+        "אדם",
+        "דבור"
+      ],
+      "node_degrees": {
+        "אדם": 1,
+        "דבור": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 225,
+      "label": "אֵין הַשֵּׂכֶל וּכְלוֹת הָעֵינַיִם",
+      "label_en": "Failing Intellect and Exhausted Eyes",
+      "polarity": "evil",
+      "reason": "This pair is the evil mirror of Package 1. When the sekhel is not whole ('אֵין הַשֵּׂכֶל בִּשְׁלֵמוּת'), it is expressed by the verse 'כָּלוּ עֵינַי' (my eyes have failed — Ps. 69:4). Just as in Package 1 the eyes ARE the intellect in its positive aspect ('עֵינֵי כֹל אֵלֶיךָ יְשַׂבֵּרוּ' = trusting through intellect), here the failed eyes express the intellect's absence. These are not cause-and-effect but the same negative reality seen from two angles: the deficiency of sekhel IS the failing of the eyes.",
+      "dominant_node": "אין השכל בשלמות",
+      "nodes": [
+        "אין השכל בשלמות",
+        "\"כלו עיני\""
+      ],
+      "node_degrees": {
+        "אין השכל בשלמות": 1,
+        "\"כלו עיני\"": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 5,
+    "total_nodes": 10,
+    "total_packages": 3,
+    "raw_connected_components": 5
+  }
+}

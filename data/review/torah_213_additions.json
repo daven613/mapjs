@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "source": "Torah #213",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_213_packages.json, all reference===213 edges from torahData.js (none found), and the full source text torah_213.txt. Since there are zero pre-existing dataset edges for Torah #213, there are no 'unassigned_dataset_nodes' and no in-dataset gaps. All concepts below are identified from explicit bechina language in the source text and need to be created as new edges in the dataset. For each bechina statement, only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, הוּא... בְּחִינַת) were classified."
+  },
+  "additions": [
+    {
+      "package_id": 2,
+      "package_label": "סָמֶ\"ךְ-מֵ\"ם וְאוֹת מֵ\"ם",
+      "node_id": "אות מ\"ם",
+      "node_text": "אוֹת מֵ\"ם",
+      "polarity": "evil",
+      "reason": "The Torah's central bechina statement (line 2) is: 'כִּי הַמֵּ\"ם הִיא בְּחִינַת הַסָּמֶ\"ךְ-מֵ\"ם הַמְשׁוֹטֵט סָבִיב סָבִיב.' The letter Mem is explicitly declared a bechina of Samael who circles. This is the foundational bechina edge of the entire Torah. The Mem is the linguistic/symbolic body of the Accuser — when separated from the protective verse and allowed to join the Name SAL, it transforms SAL into SAMael. This node requires an edge: אות מ\"ם ↔ סמ\"ך-מ\"ם.",
+      "source_quote": "כִּי הַמֵּ\"ם הִיא בְּחִינַת הַסָּמֶ\"ךְ-מֵ\"ם הַמְשׁוֹטֵט סָבִיב סָבִיב",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "אות מ\"ם",
+        "node2_id": "סמ\"ך-מ\"ם",
+        "type": "bechina",
+        "reference": 213
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "סָמֶ\"ךְ-מֵ\"ם וְאוֹת מֵ\"ם",
+      "node_id": "מם של מצר תצרני",
+      "node_text": "מֵ\"ם שֶׁל מִצַּר תִּצְּרֵנִי",
+      "polarity": "evil",
+      "reason": "Line 3 states: 'וְהַמֵּם שֶׁל מִצַּר תִּצְּרֵנִי הוּא בְּחִינַת הַמֵּ\"ם הַנַּ\"ל, בְּחִינַת הַסָּמֶ\"ךְ-מֵ\"ם הַמְשׁוֹטֵט.' The Mem of 'mitzar' is explicitly declared a bechina of the previously-mentioned Mem AND a bechina of Samael. This makes the Mem of 'mitzar tzitzreni' a distinct conceptual node — it is the specific, concrete form in which the Accuser lurks within the protective verse itself, waiting for a gap. This requires an edge: מם של מצר תצרני ↔ אות מ\"ם (connecting to the evil Mem cluster).",
+      "source_quote": "וְהַמֵּם שֶׁל מִצַּר תִּצְּרֵנִי הוּא בְּחִינַת הַמֵּ\"ם הַנַּ\"ל, בְּחִינַת הַסָּמֶ\"ךְ-מֵ\"ם הַמְשׁוֹטֵט סְבִיב הַמִּכְסֶה וְהַמִּסְתָּר",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "מם של מצר תצרני",
+        "node2_id": "אות מ\"ם",
+        "type": "bechina",
+        "reference": 213
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "סָמֶ\"ךְ-מֵ\"ם וְאוֹת מֵ\"ם",
+      "node_id": "מם של מות",
+      "node_text": "מֵ\"ם שֶׁל מָוֶת",
+      "polarity": "evil",
+      "reason": "Line 2 cites the Zohar (Pinchas 236): 'שֶׁרָאָה פִּינְחָס הַמֵּ\"ם שֶׁל מָוֶת מְשׁוֹטֵט אָז, הַיְנוּ כִּי הַמֵּ\"ם הִיא בְּחִינַת הַסָּמֶ\"ךְ-מֵ\"ם.' The Mem of מות (death) is the Zoharic form of the same evil Mem that Pinchas saw circling. It is glossed immediately with 'הַיְנוּ' — meaning 'that is to say' — linking it directly to Samael. This requires an edge: מם של מות ↔ אות מ\"ם.",
+      "source_quote": "שֶׁרָאָה פִּינְחָס הַמֵּ\"ם שֶׁל מָוֶת מְשׁוֹטֵט אָז, הַיְנוּ כִּי הַמֵּ\"ם הִיא בְּחִינַת הַסָּמֶ\"ךְ-מֵ\"ם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "מם של מות",
+        "node2_id": "אות מ\"ם",
+        "type": "bechina",
+        "reference": 213
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "שֵׁם סָאל וְהַהַסְתָּרָה",
+      "node_id": "שם סאל",
+      "node_text": "שֵׁם סָאל",
+      "polarity": "good",
+      "reason": "Line 4 states: 'אֲזַי הַשֵּׁם הַנַּ\"ל הוּא מִכְסֶה וּמִסְתָּר, בְּחִינַת: אַתָּה סֵתֶר לִי.' The Name SAL IS the covering, IS a bechina of 'atah seter li.' This requires an edge: שם סאל ↔ מסתיר ומכסה. The Name itself needs to be in the dataset as a node — it is the central protagonist of the entire Torah.",
+      "source_quote": "אֲזַי הַשֵּׁם הַנַּ\"ל הוּא מִכְסֶה וּמִסְתָּר, בְּחִינַת: אַתָּה סֵתֶר לִי",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "שם סאל",
+        "node2_id": "מסתיר ומכסה",
+        "type": "bechina",
+        "reference": 213
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "שֵׁם סָאל וְהַהַסְתָּרָה",
+      "node_id": "\"אתה סתר לי\"",
+      "node_text": "\"אַתָּה סֵתֶר לִי\"",
+      "polarity": "good",
+      "reason": "Line 3 introduces 'אתה סתר לי' as the source-verse of the Name SAL (its initials are סאל in Hebrew, the verse being: אַתָּה סֵתֶר לִי מִצַּר). Line 4 restates: 'הַשֵּׁם הַנַּ\"ל הוּא מִכְסֶה וּמִסְתָּר, בְּחִינַת: אַתָּה סֵתֶר לִי.' The verse IS a bechina of what the Name is. This requires an edge: שם סאל ↔ \"אתה סתר לי\".",
+      "source_quote": "הַשֵּׁם הַנַּ\"ל הוּא שֵׁם סָאל, וְיוֹצֵא מִפָּסוּק: אַתָּה סֵתֶר לִי... הַשֵּׁם הַנַּ\"ל הוּא מִכְסֶה וּמִסְתָּר, בְּחִינַת: אַתָּה סֵתֶר לִי",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "שם סאל",
+        "node2_id": "\"אתה סתר לי\"",
+        "type": "bechina",
+        "reference": 213
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_eitza_edges_in_dataset": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "שם סאל — the protective Divine Name (Package 1 dominant node)",
+      "מסתיר ומכסה — the concealment function of the Name (Package 1)",
+      "\"אתה סתר לי\" — the source verse and bechina of the Name (Package 1)",
+      "\"מצר תצרני ותשמרני\" — the second half of the verse, protective valence (Package 1)",
+      "סמ\"ך-מ\"ם — Samael the Accuser (Package 2 dominant node)",
+      "בעל דבר — the Accuser/Adversary, bechina of Samael (Package 2)",
+      "אות מ\"ם — the letter Mem, bechina of Samael (Package 2)",
+      "מם של מות — the Mem of death seen by Pinchas in the Zohar (Package 2)",
+      "מם של מצר תצרני — the Mem of 'mitzar' in the verse (Package 2)",
+      "\"סוף אדם למות\" — the doom-acrostic of שם סאל when Samael gains power (Package 2)"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "פינחס (Pinchas)",
+        "reason": "Pinchas is mentioned as the Zoharic witness who saw the Mem of death circling. He is not established as a bechina-concept in this Torah — he is the observer of the bechina, not a bechina node himself. Excluded per framework strictness: no בחינת language applied to Pinchas in this teaching."
+      },
+      {
+        "concept": "מות (death)",
+        "reason": "Death is mentioned as the context from which God saves the person (line 1: 'לְהַצִּיל אוֹתוֹ מִמָּוֶת שֶׁנִּגְזַר עָלָיו') and in the phrase 'מֵ\"ם שֶׁל מָוֶת.' However, מות itself is not declared a bechina of anything — it is the referent of the decree, not a node connected by explicit bechina language. The Mem OF death is a node (מם של מות), but death itself is background context. Excluded."
+      },
+      {
+        "concept": "גְּזֵרָה (divine decree)",
+        "reason": "The Torah opens with 'מָּוֶת שֶׁנִּגְזַר עָלָיו' (death that was decreed upon him). The decree is background context setting up why the Name's protection is needed. No bechina language is applied to גזרה itself. Excluded."
+      },
+      {
+        "concept": "סמאל (the full name spelled out)",
+        "reason": "The full name 'סַמָּאֵל' appears in line 3 as the dangerous combination formed when Mem joins SAL. It is the outcome/result of the Accuser's victory, not a separate conceptual node from סמ\"ך-מ\"ם. In Torah discourse, 'סמ\"ך-מ\"ם' and 'סמאל' are the same entity — the convention of not fully spelling out the name is itself part of the Torah's teaching. Treated as the same node as סמ\"ך-מ\"ם rather than a separate bechina node. Noted but not added as a separate node."
+      },
+      {
+        "concept": "צֵרוּף (letter combination)",
+        "reason": "The word צֵרוּף appears in line 3 to describe the dangerous joining of letters. It is a technical term for the process, not a bechina-concept node. No בחינת language applies to צרוף itself. Excluded."
+      }
+    ],
+    "eitza_edges_implicit_in_text": [
+      {
+        "description": "הַשֵּׁם הַנַּ\"ל (SAL) → הַסְתָּרָה וְהַגָּנָה (concealment and protection from the Accuser)",
+        "type": "eitza",
+        "direction": "Name SAL → Protection",
+        "source": "Line 1: 'כְּשֶׁהַקָּדוֹשׁ-בָּרוּךְ-הוּא רוֹצֶה לְהַסְתִּיר... אֲזַי הוּא מַסְתִּיר וּמְכַסֶּה אוֹתוֹ בְּזֶה הַשֵּׁם'"
+      },
+      {
+        "description": "הַפְסָקָה בִּקְרִיאַת הַפָּסוּק → מְנִיעַת צֵרוּף שֵׁם סַמָּאֵל (pausing when reading the verse → preventing Samael's name-combination)",
+        "type": "eitza",
+        "direction": "Pausing between words → Prevents Samael gaining power",
+        "source": "Line 4: 'עַל כֵּן צָרִיךְ לְהַפְסִיק בֵּין תֵּבוֹת אַתָּה סֵתֶר לִי לְתֵבַת מִצַּר'"
+      },
+      {
+        "description": "שְׁמִירָה בְּכֹחַ הַשֵּׁם → הַשֵּׁם הוּא מִסְתָּר וּמִכְסֶה (guarding oneself through the Name → the Name becomes the full protection of both verse-halves)",
+        "type": "eitza",
+        "direction": "Self-guarding through the Name → Full protection activated",
+        "source": "Line 4: 'אֲבָל כְּשֶׁמְּשַׁמְּרִין אֶת עַצְמָן בְּכֹחַ הַשֵּׁם הַנַּ\"ל, אֲזַי הַשֵּׁם הַנַּ\"ל הוּא מִכְסֶה וּמִסְתָּר'"
+      }
+    ]
+  }
+}

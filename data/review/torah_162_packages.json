@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "source": "Torah #162 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===162 AND type==='bechina'. Result: ZERO bechina edges found in the dataset — Torah #162 does not appear in torahData.js at all. All package structure is therefore derived entirely from bechina-language analysis of the source text torah_162.txt. Torah #162 is a 3-line teaching transmitted in the name of the Maggid of Mezeritch (not Rebbe Nachman directly). It is built on a single spatial-directional metaphor from Talmud Bavli Bava Batra 25b: wisdom/Torah aligns with the south; wealth/greatness aligns with the north. The two poles are mutually exclusive for an ordinary person who occupies a directional 'place.' The exception is the person of ultimate humility who is genuinely 'ayin' (nothing) — such a person occupies no directional position and can therefore hold both Torah and greatness simultaneously. Two bechina clusters are identified: (1) the south/Torah/wisdom cluster and the north/greatness/wealth cluster — these form ONE package because they are structurally paired parallel aspects (the cosmic poles), (2) the ayin/humility/nothingness cluster. The relationship between these two packages is eitza (causal): being ayin enables the otherwise impossible coexistence of Torah and wealth. No evil-mirror package: this teaching has no evil-domain bechina declarations. The negative dimension is structural absence — the worldly person who IS somewhere (in a direction) by definition cannot transcend the tension — but this is not articulated through any bechina-language for an evil counterpart."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 162,
+      "label": "תּוֹרָה וּגְדֻלָּה — הַדָּרוֹם וְהַצָּפוֹן",
+      "label_en": "Torah and Greatness — South and North",
+      "polarity": "neutral",
+      "reason": "This package captures the Torah's central structural tension: two cosmic poles — Torah/wisdom (identified with the south direction) and greatness/wealth (identified with the north direction) — which share the same spatial-positional structure while pointing in opposite directions. The Maggid invokes the Talmudic teaching (Bava Batra 25b) 'הָרוֹצֶה לְהַחְכִּים — יַדְרִים; לְהַעֲשִׁיר — יַצְפִּין' and derives from it that Torah and greatness are bechina-parallel to the south and north directions respectively.\n\nThe bechina structure is explicit and symmetric:\n- תּוֹרָה (Torah study/attainment) IS the bechina of חָכְמָה (wisdom) — the word 'לְהַחְכִּים' in the Talmudic proof is the operative term for what Torah does; the Maggid says 'הַיְנוּ תּוֹרָה' to identify what 'wisdom-facing' means. This makes תורה and חכמה parallel aspects of the same cosmic quality.\n- גְּדֻלָּה (greatness, stature) IS the bechina of עֲשִׁירוּת (wealth/riches) — the Maggid says 'הַיְנוּ תּוֹרָה וּגְדֻלָּה', making גדולה and עשירות parallel expressions of the north-facing quality.\n- דָּרוֹם (south direction) IS the bechina of חכמה/תורה — explicitly: 'הָרוֹצֶה לְהַחְכִּים עוֹמֵד לְדָרוֹם', making the south the spatial expression of wisdom.\n- צָפוֹן (north direction) IS the bechina of עשירות/גדולה — explicitly: 'עֲשִׁירוּת בְּצָפוֹן', making the north the spatial expression of wealth.\n\nThe four nodes (Torah, wisdom/חכמה, south, greatness/wealth, north) all share the same essential nature: they are the two faces of the same cosmic polarity — the spatial ordering of the universe into wisdom-domain and wealth-domain. Neither is good or evil in itself; they are structural features of how divine blessing is distributed in the cosmos. The teaching does not demonize wealth or exalt wisdom in this package — it simply states that these two poles occupy opposite cosmic addresses. Hence the polarity is NEUTRAL: these are spatial-structural concepts, neither holy nor profane in their essential nature in this teaching (unlike, say, Torah in a teaching about its power against the yetzer hara). The tension between them is the Torah's problem-statement, not a value judgment about either pole.\n\nThe dominant node is תּוֹרָה because it is the teaching's primary positive concern — the Maggid's people are drawn to Torah through the tzaddik, and the man's wealth is what begins declining. But structurally, גדולה/עשירות has equal weight as the other pole.",
+      "dominant_node": "תורה",
+      "nodes": [
+        "תורה",
+        "חכמה",
+        "דרום",
+        "גדולה",
+        "עשירות",
+        "צפון"
+      ],
+      "node_degrees": {
+        "תורה": 2,
+        "חכמה": 2,
+        "דרום": 2,
+        "גדולה": 2,
+        "עשירות": 2,
+        "צפון": 2
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["תורה", "חכמה"],
+          "reason": "In line 2, the Maggid quotes the Talmudic maxim 'הָרוֹצֶה לְהַחְכִּים — יַדְרִים' and then immediately glosses it with 'הַיְנוּ תּוֹרָה וּגְדֻלָּה' — the 'הַיְנוּ' (that is, namely) marks the identification: what the Talmud calls 'wisdom-seeking' IS what the Maggid calls Torah. The two nodes describe the same south-facing cosmic quality: תורה is the practice/attainment, חכמה is the essence/quality they both point to. They are parallel aspects of the same node, not cause-and-effect (Torah does not cause wisdom — it IS the expression of wisdom-orientation). Merge is by shared nature."
+        },
+        {
+          "merged_nodes": ["גדולה", "עשירות"],
+          "reason": "In line 2, the phrase 'הַיְנוּ תּוֹרָה וּגְדֻלָּה' paired with the Talmudic 'לְהַעֲשִׁיר — יַצְפִּין' establishes that גדולה (greatness/prominent social status) IS the bechina of עשירות (material wealth). The Maggid moves seamlessly between the two terms — the story opens with a man who is both wealthy AND prominent (עָשִׁיר וּמְיֻחָס), and his descent is described as losing his wealth (נְכָסִים). The abstract formulation is גדולה; the concrete manifestation is עשירות. Two aspects of the same north-facing cosmic quality. Merge is by shared nature."
+        }
+      ],
+      "note": "This is a structurally unusual package: it holds both poles of the cosmic tension (south/Torah AND north/wealth) within a single neutral package, rather than splitting them into good and evil packages. This is correct because the teaching does NOT frame wealth as evil or Torah as the only good — it frames them as two equally legitimate cosmic addresses that happen to be spatially incompatible for a person who occupies a position. The teaching's moral judgment is reserved for the concept of having a position at all (i.e., ego/yesh), which is the implicit opposite of ayin in Package 2. The real good/evil axis in this teaching runs between Package 2 (ayin = good) and the implicit state of 'occupying a direction' (yesh = limitation), not between Torah and wealth."
+    },
+    {
+      "id": 2,
+      "torah_ref": 162,
+      "label": "עֲנָוָה וְאַיִן",
+      "label_en": "Humility and Nothingness",
+      "polarity": "good",
+      "reason": "This package captures the Torah's resolution: the state of ultimate humility which is simultaneously a state of genuine nothingness (אַיִן). The Maggid declares it in line 3 with the explicit bechina-formula 'שֶׁהוּא אַיִן מַמָּשׁ': 'if he is at the ultimate degree of humility, which IS truly nothing/ayin.' The word 'שֶׁהוּא' is the standard bechina-equivalence marker in Likutey Moharan: X is (= IS a bechina of) Y.\n\nThe bechina structure here is a triplet:\n- תַּכְלִית הָעֲנָוָה (the ultimate/extreme degree of humility) IS אַיִן מַמָּשׁ (truly nothing) — stated by 'שֶׁהוּא אַיִן מַמָּשׁ'\n- אַיִן מַמָּשׁ IS restated as אַיִן וָאֶפֶס מַמָּשׁ (absolute nothing-and-zero) in the immediately following clause — these two Hebrew formulations (אין ממש vs. אין ואפס ממש) are appositional restatements of the same essential reality, making them bechina-equivalents by the apposition rule\n- The added אֶפֶס (zero/nullity) is a strengthened synonym of אַיִן, confirming the same concept from a different angle\n\nAll three nodes — תכלית הענוות, אין ממש, אין ואפס — share the same essential nature: the total self-nullification of the person before the divine, the complete absence of ego-position. They are not three sequential stages (humility does not CAUSE ayin; they ARE the same condition described from three angles: behavioral/experiential, ontological, mathematical). The test for bechina: does one produce the other? No — the person who is in תכלית הענוות IS already ayin; there is no gap between the two. They are simultaneous co-descriptions of a single spiritual state.\n\nPolarity is GOOD: this is the highest spiritual attainment in the teaching, the only state that transcends the Torah/wealth dichotomy. Moses and Rabbenu HaKadosh are cited as exemplars of this state — they are not bechina-nodes (the text says 'such as' [כְּגוֹן], not 'IS a bechina of'), but their citation confirms the good polarity beyond doubt. The state of ayin is explicitly the positive resolution to the problem posed in Package 1.\n\nThe dominant node is עֲנָוָה (or more precisely, תַּכְלִית הָעֲנָוָה) because it is the teaching's positive recommendation — it is the behavioral/practical entry-point to the state, the thing a person can aspire to. אַיִן is its ontological description.",
+      "dominant_node": "תכלית הענוות",
+      "nodes": [
+        "תכלית הענוות",
+        "אין ממש",
+        "אין ואפס ממש"
+      ],
+      "node_degrees": {
+        "תכלית הענוות": 2,
+        "אין ממש": 2,
+        "אין ואפס ממש": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["אין ממש", "אין ואפס ממש"],
+          "reason": "In line 3, the Maggid first says 'שֶׁהוּא אַיִן מַמָּשׁ' and then, two clauses later, restates the same condition as 'מֵאַחַר שֶׁהוּא אַיִן וָאֶפֶס מַמָּשׁ.' The addition of 'וָאֶפֶס' (and zero/nullity) is a reinforcement and intensification of the same concept, not a new distinct concept. The two phrases are appositional: the second is the Maggid's re-articulation of the first for rhetorical emphasis. This is a standard Likutey Moharan move — restating an ontological claim with added synonyms to underscore its totality. Neither statement introduces a new essential quality; both name the same state of complete self-annihilation. Merge is by shared nature (appositional synonymy)."
+        }
+      ],
+      "note": "Moses (מֹשֶׁה רַבֵּנוּ) and Rabbenu HaKadosh (רַבֵּנוּ הַקָּדוֹשׁ, i.e., Rabbi Yehudah HaNassi) are cited as historical exemplars of the simultaneous possession of Torah and greatness, both of which is grounded in their being in the state of ayin. They are cited with 'כְּגוֹן' (such as / for example), which is an illustrative formula, NOT a bechina-equivalence marker. They are not declared to BE a bechina of ayin or of tachlit ha-anavah. Therefore they are NOT included as package nodes. Their function is to certify the possibility claim — that it CAN happen — not to define what the state IS."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "packages_from_dataset_components": 0,
+    "packages_from_gap_analysis": 2,
+    "evil_mirror_packages": 0,
+    "note_on_evil_mirror": "Torah #162 contains no evil-domain bechina declarations. The negative dimension is implicit in the teaching's structure: a person who occupies a directional 'position' (i.e., who is 'yesh' — a something, not ayin) is limited to one cosmic pole and cannot have both Torah and greatness. But the text never gives this state a bechina-identity name. It describes the constrained person only in causal-structural terms ('when he is in the south, he cannot be in the north'). The implicit negative counterpart of ayin/humility is גַּסּוּת (arrogance, being a yesh/something), but this is never stated using bechina language in this teaching. No evil-mirror package can be constituted.",
+    "note_on_structure": "Torah #162 is notable for its narrative framing (an anecdote about the Maggid's disciple whose wealth declined after becoming pious) that introduces the abstract teaching. The anecdote is the eitza dimension: the man's experience IS the problem that the teaching explains and (implicitly) resolves. The resolution (ayin → Torah AND greatness) is the teaching's aspirational positive message. The two packages form a clean logical arc: Package 1 defines the tension; Package 2 provides its transcendence.",
+    "good_evil_mirror": "No evil-mirror package identifiable from bechina language in the source text. The structural negative pole (the 'yesh' person who occupies a cosmic direction and is therefore limited) exists as an implicit background condition but receives no bechina-language treatment in this teaching.",
+    "eitza_summary": "The causal structure of Torah #162: being in תכלית הענוות (Package 2) → enables תורה וגדולה to coexist (Package 1 resolution). This is a single eitza arrow running from Package 2 to the collapse of Package 1's tension. The teaching's entire practical force is this one eitza claim: if you achieve ayin, the spatial incompatibility dissolves."
+  }
+}

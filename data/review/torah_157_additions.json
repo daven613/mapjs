@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "source": "Torah #157 (Likutay Moharan Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md. Confirmed zero bechina edges and zero nodes in torahData.js for reference 157 (the reference does not appear in the dataset at all). Read full source text torah_157.txt (2 lines, ~60 words). Scanned all language for bechina-markers: בְּחִינַת, הַיְנוּ, דְּהַיְנוּ, שֶׁהוּא, וְזֶהוּ, נִקְרָא. The 'וְזֶהוּ' formula in line 2 was identified as the primary bechina-connector (standard Likutey Moharan usage: 'and this IS...' introduces the Rabbinic text as the bechina-articulation of the preceding statement). Applied the bechina/eitza distinction test to each conceptual candidate in the text. Since no edges exist in the dataset for reference 157, all proposed additions are entirely new edges for this Torah reference. The Rebbe's reinterpretation of the Mishnah 'נוֹטֵל חַיָּיו מִן הָעוֹלָם' was examined carefully: this is a known dual-reading (the Mishnah in Avot 4 can mean either 'he takes/removes his life from the world' as a warning, or 'his life is drawn up out of the world' as elevation). Rebbe Nachman uses the elevated reading, making this a bechina-equivalent of the Torah-attachment state."
+  },
+  "additions": [
+    {
+      "addition_id": 1,
+      "package_id": 1,
+      "proposed_edge": {
+        "node1_id": "דבקות לדברי תורה מפי הצדיק",
+        "node2_id": "הנאה מדברי תורה",
+        "node1_text": "דְּבֵקוּת לְדִבְרֵי הַתּוֹרָה הַיּוֹצְאִים מִפִּי הַצַּדִּיק",
+        "node2_text": "הַנֶּהֱנֶה מִדִּבְרֵי תּוֹרָה",
+        "type": "bechina",
+        "reference": 157,
+        "proof": "וְזֶהוּ: כָּל הַנֶּהֱנֶה מִדִּבְרֵי תּוֹרָה, נוֹטֵל חַיָּיו מִן הָעוֹלָם"
+      },
+      "polarity": "good",
+      "reason": "Line 2 opens with 'וְזֶהוּ' — the standard Likutey Moharan formula for introducing a Rabbinic or scriptural text as the bechina-expression of the preceding statement. The Rebbe is saying: THIS (= the Mishnah's formula) IS that [= what I just described in line 1]. The phenomenon described in line 1 — clinging (דְּבֵקוּת) to Torah words from the Tzaddik — IS the same essential act as 'benefiting from (הַנֶּהֱנֶה מִ) words of Torah' in the Mishnah. The two phrases name the same spiritual reality from different angles: line 1 emphasizes the source (the Tzaddik's mouth) and the mode (דְּבֵקוּת, attachment); the Mishnah emphasizes the experiential result of the act (הֲנָאָה, pleasure/benefit). They are parallel aspects — the Rebbe does not say one CAUSES the other; he says one IS the other ('וְזֶהוּ'). This is a bechina equivalence, not a causal connection.",
+      "source_quote": "אִם יִתְדַּבֵּק עַצְמוֹ לְדִבְרֵי הַתּוֹרָה הַיּוֹצְאִים מִפִּי הַצַּדִּיק... וְזֶהוּ: כָּל הַנֶּהֱנֶה מִדִּבְרֵי תּוֹרָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "nodes_exist_in_dataset_globally": {
+        "דבקות לדברי תורה מפי הצדיק": "possibly — the concept 'דבקות' and 'דברי תורה' appear in other Torahs, but this specific compound formulation (clinging to Torah-words from the Tzaddik's mouth) as a single node may not exist. Requires dataset lookup.",
+        "הנאה מדברי תורה": "likely — the concept appears in Avot and is a standard rabbinic formulation. Requires dataset lookup."
+      }
+    },
+    {
+      "addition_id": 2,
+      "package_id": 1,
+      "proposed_edge": {
+        "node1_id": "דבקות לדברי תורה מפי הצדיק",
+        "node2_id": "נטילת חיים מן העולם",
+        "node1_text": "דְּבֵקוּת לְדִבְרֵי הַתּוֹרָה הַיּוֹצְאִים מִפִּי הַצַּדִּיק",
+        "node2_text": "נוֹטֵל חַיָּיו מִן הָעוֹלָם",
+        "type": "bechina",
+        "reference": 157,
+        "proof": "אִם יִתְדַּבֵּק עַצְמוֹ לְדִבְרֵי הַתּוֹרָה הַיּוֹצְאִים מִפִּי הַצַּדִּיק, תָּמֵהַּ אֲנִי, אֵיךְ אֶפְשָׁר אַחַר־כָּךְ לִסְבֹּל וְלַחְפֹּץ חַיֵּי הָעוֹלָם הַזֶּה. וְזֶהוּ: כָּל הַנֶּהֱנֶה מִדִּבְרֵי תּוֹרָה, נוֹטֵל חַיָּיו מִן הָעוֹלָם"
+      },
+      "polarity": "good",
+      "reason": "The Rebbe's re-reading of the Mishnah's second clause ('נוֹטֵל חַיָּיו מִן הָעוֹלָם') establishes a bechina-equivalence with the state described in line 1: clinging to Torah from the Tzaddik IS the state of having one's life taken out of / elevated beyond this world. This is not a causal claim (Torah-attachment does not PRODUCE world-transcendence as its separate effect — they are simultaneous co-descriptions of the same elevated state). The Rebbe frames this with amazement ('תָּמֵהַּ אֲנִי, אֵיךְ אֶפְשָׁר') — expressing that to cling to Torah from the Tzaddik IS to already be in a state where worldly life cannot be tolerated or desired. The 'אֵיךְ אֶפְשָׁר' (how is it possible) formulation is not causal but descriptive of co-presence: the person who is in state A (Torah-attachment) is simultaneously in state B (world-transcendence), and state B IS the meaning of 'נוֹטֵל חַיָּיו מִן הָעוֹלָם.' The Rebbe reads the Mishnah's 'נוֹטֵל חַיָּיו מִן הָעוֹלָם' positively — his life-force is drawn up and out of the world into the divine — not as a privation (losing one's life) but as elevation (life transcends the world). This is the core hermeneutical move of the Torah.",
+      "source_quote": "תָּמֵהַּ אֲנִי, אֵיךְ אֶפְשָׁר אַחַר־כָּךְ לִסְבֹּל וְלַחְפֹּץ חַיֵּי הָעוֹלָם הַזֶּה. וְזֶהוּ: כָּל הַנֶּהֱנֶה מִדִּבְרֵי תּוֹרָה, נוֹטֵל חַיָּיו מִן הָעוֹלָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "nodes_exist_in_dataset_globally": {
+        "דבקות לדברי תורה מפי הצדיק": "possibly — see addition_id 1 note",
+        "נטילת חיים מן העולם": "possibly — the concept 'מן העולם' and 'נוטל' appear in other contexts; this specific Mishnaic phrase as a bechina node for Torah #157 likely does not exist in the dataset."
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_157_edges_in_dataset": 0,
+    "total_reference_157_bechina_edges_in_dataset": 0,
+    "total_reference_157_eitza_edges_in_dataset": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": [
+        "דבקות לדברי תורה מפי הצדיק",
+        "הנאה מדברי תורה",
+        "נטילת חיים מן העולם"
+      ]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "דבקות לדברי תורה מפי הצדיק",
+      "הנאה מדברי תורה",
+      "נטילת חיים מן העולם"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "חַיֵּי הָעוֹלָם הַזֶּה (life of this world)",
+        "reason": "The phrase 'חַיֵּי הָעוֹלָם הַזֶּה' appears in line 1 as what the Torah-attached person can no longer tolerate or desire. This is the negative pole — the worldly domain that loses its grip. However, the Rebbe does not give it a bechina-equivalence declaration. It is mentioned as the thing that becomes intolerable, not as a concept whose essential nature is equated with another concept via בְּחִינַת, הַיְנוּ, or וְזֶהוּ language. It functions as the contrasting backdrop, not as a bechina node. Excluded — eitza context (worldly life is what is left behind), not bechina identity."
+      },
+      {
+        "concept": "הַצַּדִּיק (the Tzaddik)",
+        "reason": "The Tzaddik is mentioned as the source of the Torah words ('הַיּוֹצְאִים מִפִּי הַצַּדִּיק') but is not himself given a bechina identity in this Torah. He functions as the channel through which Torah words emerge, not as a concept whose nature is equated with another concept. Excluded — the Tzaddik is mentioned as a relational anchor, not as a bechina node."
+      },
+      {
+        "concept": "תְּמִיהָה / תָּמֵהַּ (amazement)",
+        "reason": "The Rebbe's amazement ('תָּמֵהַּ אֲנִי') is a rhetorical device framing the teaching, not a conceptual node with a bechina identity. It is the Rebbe's emotional expression of the depth of the principle, used to signal 'this is astonishing once you grasp it.' No bechina language is attached to the amazement itself. Excluded."
+      },
+      {
+        "concept": "Mishnah Avot 4 citation",
+        "reason": "The citation '(אבות פ\"ד)' is a bibliographic reference, not a conceptual node. Excluded."
+      }
+    ],
+    "hermeneutical_note": "Torah #157's key interpretive move is the re-reading of the Mishnah's 'נוֹטֵל חַיָּיו מִן הָעוֹלָם.' The standard reading of Avot 4:1 (according to most commentators) is either (a) 'removes himself from the world' — i.e., neglects worldly needs and thus harms himself, or (b) 'takes his life/sustenance from the world through Torah.' Rebbe Nachman applies a third reading: 'his life/vitality is elevated and taken out of the world by Torah' — i.e., his nefesh rises beyond worldly consciousness and worldly desires can no longer take hold of him. This elevation-reading is what the 'וְהָבֵן הֵיטֵב' (understand this well) at the end of the Torah signals — the apparent meaning is not the deep meaning. The deep meaning is that Torah-attachment from the Tzaddik generates a state of spiritual elevation so profound that the earthly dimension of human existence loses its experiential grip. This is a classic Hasidic re-reading that turns a potentially negative Mishnaic statement into a description of the highest spiritual state."
+  }
+}

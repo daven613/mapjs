@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "source": "Torah #171",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, confirmed zero bechina edges for reference===171 in torahData.js, and analyzed the full source text torah_171.txt (5 lines). Checked every sentence for bechina-language markers: בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, בִּבְחִינַת. None found. Checked all concepts for dataset presence and package assignment. Since there are no packages, 'unassigned_dataset_nodes' is vacuously empty and there are no package IDs to assign additions to."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "שֵׂכֶל חָדָשׁ (new intellect/sekhel)",
+        "reason": "The central concept of Torah #171. The Rebbe states: 'al yedei she-nit'orer sekhel chadash ba-avodat Hashem' — 'through the awakening of new sekhel in divine service.' This is an eitza statement (the new sekhel CAUSES the awakening of many sleepers), not a bechina declaration. The sekhel is not identified as a parallel aspect of any other concept; it is the causal agent of the Torah's narrative. No bechina language attaches to it. Not a gap addition."
+      },
+      {
+        "concept": "צַדִּיקִים (righteous ones)",
+        "reason": "Cited from Hoshea 14:10: 'tzaddikim yelkhu vam' — 'the righteous walk in them.' Used as a scriptural proof-text to distinguish those who use the new sekhel for divine service. The Rebbe does not declare tzaddikim to be a bechina of any other concept; they are one side of a binary (tzaddikim vs. posh'im) in a causal flow. Not a bechina node."
+      },
+      {
+        "concept": "פוֹשְׁעִים (transgressors/sinners)",
+        "reason": "The second half of the Hoshea verse: 'u-fosh'im yikashlu vam' — 'sinners stumble in them.' The posh'im receive the same new sekhel but misuse it to mock the world rather than serve God. This is a narrative role in the eitza chain (receiving new sekhel → misusing it → shaming the world), not a bechina equivalence. The text does not say 'posh'im are a bechina of X.' Not a bechina node. Note: posh'im appears as a bechina node in Torah #1 (edge reference=1: 'posh'im ↔ malkhut haresha'ah'), but Torah #171 does not establish that equivalence."
+      },
+      {
+        "concept": "חַיֵּי עוֹלָם (eternal life)",
+        "reason": "One of the two outcomes cited from Daniel 12:2. Used descriptively to name the positive outcome for tzaddikim. No bechina declaration. Purely narrative/eitza."
+      },
+      {
+        "concept": "חֲרָפוֹת וּלְדִרְאוֹן עוֹלָם (shame and eternal contempt / shaming the world)",
+        "reason": "The negative outcome cited from Daniel 12:2, reinterpreted by the Rebbe as an active verb: 'la-charef u-levazot ha-olam' — to shame and demean the world. The Rebbe provides an innovative re-reading of 'le-diraon olam' (= contempt of/for the world) as the sinner actively scorning others because he knows the new sekhel and the world does not. This is an interpretive re-reading (a peshat-twist), not a bechina equivalence. No bechina language used."
+      },
+      {
+        "concept": "יְשֵׁנֵי אַדְמַת עָפָר (those who sleep in the dust)",
+        "reason": "The biblical image from Daniel 12:2 used to frame the teaching. In the Rebbe's reading, this refers metaphorically to people who are 'asleep' in spiritual terms — unaware of the new sekhel. Their awakening is the eitza-effect of the new sekhel being revealed. No bechina language."
+      }
+    ],
+    "structural_observation": "Torah #171 is structurally unique among the Torahs analyzed so far. It is entirely composed of one eitza (causal) chain: [new sekhel revealed in divine service] → [many spiritually dormant people are aroused] → [BIFURCATION: tzaddikim use it to serve God (→ eternal life) / posh'im use it to shame the world (→ contempt)]. There are no bechina nodes, no parallel-identity statements, no letter-equivalences, no concept-mappings. The teaching functions as a brief homiletic observation about the dual effect of spiritual novelty, not as a structured conceptual topology. The absence of bechina edges in the dataset is therefore not a data gap — it accurately reflects the text's structural character.",
+    "note_on_comparison_with_dataset_nodes_from_other_torahs": "Concepts like שֵׂכֶל (sekhel/intellect) appear extensively in the dataset for other Torahs (e.g., Torah #1: sekhel is a central bechina node). However, since packages are Torah-specific (framework rule 3.2.1), the fact that sekhel has bechina equivalences in Torah #1 does not create a package-addition obligation for Torah #171, where sekhel plays only a causal (eitza) role."
+  }
+}

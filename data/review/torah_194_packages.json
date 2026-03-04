@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "source": "Torah #194",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===194 AND type==='bechina'. Only 1 bechina edge found in the dataset (edge 644: אדני ↔ דבור), yielding a single 2-node component. No merges were needed or possible. The Torah is a very short teaching (5 paragraphs) structured entirely around the single axis: speech (דבור) = the palace of the King (אדני/היכל המלך). The entire teaching's argument rests on the bechina אדני = דבור, with the parable illustrating why seeking honor in the King's palace (= speech) is the ultimate disgrace. The dataset is significantly under-represented for this Torah — the additions file documents the missing bechina edges."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 194,
+      "label": "דִּבּוּר וְהֵיכַל הַמֶּלֶךְ",
+      "label_en": "Speech and the Palace of the King",
+      "polarity": "good",
+      "reason": "The sole connected component in Torah #194 contains two nodes: אדני and דבור. The Rebbe explicitly declares: 'אדני, בחינת הדבור' — the Divine Name אדני (associated with the mouth and speech, as in 'אדני שפתי תפתח', Psalm 51:17) is a bechina of speech. This is the conceptual core of the entire Torah: speech (דבור) is the היכל המלך (palace of the King), the sacred domain that belongs to God alone. דבור is dominant (it is the hub around which the teaching revolves), while אדני is the Divine-Name expression of that same reality. The polarity is 'good' because this cluster describes holy speech — the King's own palace — as distinct from the degraded honor-seeking that the Torah condemns. The human who distinguishes himself from animals through speech (גדר האדם = דבור) participates in this holy domain only insofar as he speaks truthfully and humbly before the King.",
+      "dominant_node": "דבור",
+      "nodes": [
+        "אדני",
+        "דבור"
+      ],
+      "node_degrees": {
+        "דבור": 1,
+        "אדני": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "note_on_merges": "1 raw component: (A) 2 nodes — אדני/דבור [Pkg 1]. No merges required. The extreme sparsity of this Torah's dataset (1 bechina edge vs. the full conceptual richness of the source text) is the primary structural finding. The gap analysis identifies at least 2 additional bechina edges missing from the dataset that would expand this package to 4 nodes: היכל המלך ↔ דבור and גדר האדם ↔ דבור."
+  }
+}

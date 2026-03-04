@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "source": "Torah #249",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah 249 has ZERO edges in torahData.js (reference 249 is entirely absent from the dataset). The bechina subgraph is empty. All packages in this file are derived exclusively from the source text gap analysis (Step 5), not from dataset connected components. The Torah source text is extremely short (2 sentences) but contains explicit bechina language equating 3+ concepts. These are flagged as missing from the dataset and documented here as proposed packages for future enrichment."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 249,
+      "label": "גְּבוּרָה וְלֵב",
+      "label_en": "Strength and the Heart",
+      "polarity": "good",
+      "reason": "The Torah opens with 'עִקַּר הַגְּבוּרָה בְּהַלֵּב' — the essence of gevurah IS the heart. Gevurah, the heart as its seat, conquering the evil inclination (אֵיזֶהוּ גִּבּוֹר הַכּוֹבֵשׁ אֶת יִצְרוֹ), and Samson's feats are all presented as different expressions of the same underlying reality: inner strength rooted in the heart. The Rebbe uses 'וְזֶה בְּחִינַת' twice to equate these concepts, marking them as parallel aspects of one domain. The conquering of the yetzer hara is not a result of gevurah (eitza) — it IS gevurah, i.e. the inner battle and the outer battle are the same thing from different angles.",
+      "dominant_node": "גבורה",
+      "nodes": [
+        "גבורה",
+        "לב",
+        "כובש את יצרו",
+        "גבורות שמשון"
+      ],
+      "node_degrees": {
+        "גבורה": 3,
+        "לב": 1,
+        "כובש את יצרו": 1,
+        "גבורות שמשון": 1
+      },
+      "merge_notes": [],
+      "note": "This package is entirely derived from source text gap analysis — none of these nodes exist in torahData.js for Torah 249. All are proposed additions (see torah_249_additions.json)."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "dataset_status": "EMPTY — Torah 249 has no entries in torahData.js",
+    "packages_from_source_text_gap_analysis": 1
+  }
+}

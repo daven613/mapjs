@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "source": "Torah #275",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": 1,
+      "torah_ref": 275,
+      "label": "נֵר הַנְּשָׁמָה וְהַמִּצְוו‍ֹת",
+      "label_en": "The Candle of the Soul and the Mitzvot",
+      "polarity": "good",
+      "reason": "Three concepts are equated by explicit bechina language in the source text: (1) מצוות and נרות are equated via 'הַמִּצְוו‍ֹת הֵם נֵרוֹת' and 'בִּבְחִינַת: נֵר מִצְוָה'; (2) נשמת אדם and נר are equated via the verse 'נֵר ה' נִשְׁמַת אָדָם' used as a bechina proof. This forms a three-node bechina cluster: נשמה ↔ נר ↔ מצוות. All three are different expressions of the same underlying reality — the luminous, searching quality of holiness. The mitzvah IS a candle (not: the mitzvah produces a candle); the soul IS God's candle (not: the soul holds a candle). This is the good-polarity 'candle domain' of Torah 275.",
+      "dominant_node": "נרות",
+      "nodes": ["מצוות", "נרות", "נשמת אדם"],
+      "proposed_edges": [
+        {
+          "node1_id": "מצוות",
+          "node2_id": "נרות",
+          "proof": "הַמִּצְוו‍ֹת הֵם נֵרוֹת שֶׁעַל־יָדָם הַחִפּוּשׂ כַּנַּ\"ל",
+          "type": "bechina"
+        },
+        {
+          "node1_id": "נשמת אדם",
+          "node2_id": "נרות",
+          "proof": "נֵר ה' נִשְׁמַת אָדָם חוֹפֵשׂ כָּל חַדְרֵי בָטֶן",
+          "type": "bechina"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 275,
+      "label": "חָפְשִׁי וְהַחִפּוּשׂ",
+      "label_en": "Freedom and Searching",
+      "polarity": "good",
+      "reason": "Two concepts are explicitly equated by bechina language: חָפְשִׁי (freedom-from-mitzvot after death, from Psalms 88:6 interpreted by Talmud Shabbat 151b) and חִפּוּשׂ (the searching in the Divine treasury). The Rebbe states: 'חָפְשִׁי, הַיְנוּ בְּחִינַת הַחִפּוּשׂ שֶׁנַּעֲשֶׂה מִן הַמִּצְוו‍ֹת.' These two are not cause-and-effect — being freed from mitzvot after death and actively searching in the Divine treasury are two faces of the same post-mortem spiritual reality: the soul's release from active mitzvah-performance IS its entering the searching mode. Note: this is only a 2-node cluster, which is below the preferred threshold of 3+ nodes for an independent package. However, given that it meets the fundamental criterion (explicit bechina equation) and represents a conceptually distinct domain (post-mortem soul activity, as distinct from the mitzvah-as-candle domain of Package 1), it is proposed as a package. An alternative interpretation would merge חִפּוּשׂ into Package 1 (since the searching is done via the candles), but this would violate the bechina/eitza distinction: the candles ENABLE the searching (eitza), they are not the SAME THING as the searching (that would require a bechina statement equating חִפּוּשׂ with נרות, which does not appear in the text).",
+      "dominant_node": "חיפוש",
+      "nodes": ["חפשי", "חיפוש"],
+      "proposed_edges": [
+        {
+          "node1_id": "חפשי",
+          "node2_id": "חיפוש",
+          "proof": "חָפְשִׁי, הַיְנוּ בְּחִינַת הַחִפּוּשׂ שֶׁנַּעֲשֶׂה מִן הַמִּצְוו‍ֹת, כִּי הַמִּצְוו‍ֹת הֵם נֵרוֹת שֶׁעַל־יָדָם הַחִפּוּשׂ כַּנַּ\"ל",
+          "type": "bechina"
+        }
+      ]
+    }
+  ],
+  "observations": "Torah #275 is a short teaching (4 paragraphs) that has not yet been encoded in the dataset — reference 275 returns zero results in torahData.js. Despite this, the source text contains clear bechina language that yields two proposed packages:\n\nPACKAGE 1 — נֵר הַנְּשָׁמָה וְהַמִּצְוו‍ֹת (The Candle of the Soul and the Mitzvot):\nThis is a three-node bechina cluster meeting the 3+ threshold for a standalone package. The Rebbe equates: (1) מצוות with נרות ('הַמִּצְוו‍ֹת הֵם נֵרוֹת', anchored in 'נֵר מִצְוָה' of Proverbs 6:23); and (2) נשמת אדם with נר ('נֵר ה' נִשְׁמַת אָדָם', Proverbs 20:27, used as the Talmudic proof-text for Pesachim 10b's rule that searching requires candles). The three nodes form a connected chain: נשמה ↔ נר ↔ מצוה. All three are the same thing seen from different angles — the luminous capacity for spiritual discovery that permeates the holy soul, the performed commandment, and the candle all share the same essential nature.\n\nPACKAGE 2 — חָפְשִׁי וְהַחִפּוּשׂ (Freedom and Searching):\nThis is a 2-node cluster, below the 3+ preferred threshold but containing an explicit bechina equation. The Rebbe states: 'חָפְשִׁי, הַיְנוּ בְּחִינַת הַחִפּוּשׂ.' These represent a distinct domain: the post-mortem spiritual state of the soul, where freedom-from-obligation and active-searching are revealed as identical. This domain is separate from Package 1 (which describes the nature of the tools — mitzvot/candles/soul), whereas Package 2 describes the nature of the activity/state.\n\nEITZA STRUCTURE BETWEEN PACKAGES:\nPackage 1 → eitza → Package 2: The mitzvot-as-candles (Package 1) ENABLE the searching (Package 2). The candle does not share essential nature with the searching; it makes the searching possible. This is a clean eitza relationship between the two packages.\n\nEVIL MIRROR: Torah #275 contains no evil-polarity bechina language. The teaching is entirely about the positive domain (good souls, mitzvot, Divine searching). There is no evil counterpart cluster in the text.\n\nTZADDIK CLAUSE: Line 4 introduces the concept of a Tzaddik who 'ממית עצמו בחייו' (kills himself while alive) and therefore searches in his Father's treasury while still living. This is not stated with bechina language — it is presented as an exceptional case within the same framework (eitza: self-mortification → living access to divine searching). No new package is implied.\n\nCONFIDENCE ASSESSMENT: Package 1 is high-confidence (3 nodes, explicit bechina language, scriptural anchoring). Package 2 is medium-confidence (2 nodes, very explicit bechina equation, but below the 3-node threshold). Both are proposed for encoding as new dataset edges under reference 275."
+}

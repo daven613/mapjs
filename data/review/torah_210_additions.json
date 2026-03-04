@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source": "Torah #210",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_210_packages.json, all reference===210 edges from torahData.js, and the full source text torah_210.txt. For each bechina statement in the source text (language: בְּחִינַת, דָּא, הַיְנוּ בְּחִינַת), verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language were considered. Eitza-type statements ('עַל יְדֵי X בָּא Y') were excluded per framework rules."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "וְאָהַבְתָּ וְאַבְרָהָם",
+      "node_id": "בוקר",
+      "node_text": "בֹּקֶר",
+      "polarity": "good",
+      "reason": "The source text explicitly uses בְּחִינַת to link בֹּקֶר (morning) to אַבְרָהָם twice: (1) 'וַיָּשָׁב הַיָּם לִפְנוֹת בֹּקֶר – דָּא בֹּקֶר דְּאַבְרָהָם' — the morning when the sea returned IS the morning of Abraham, i.e., morning is a bechina of Abraham. (2) 'כְּשֶׁהִגִּיעַ עֵת הַבֹּקֶר בְּחִינַת אַבְרָהָם' — explicitly using the word בְּחִינַת to identify the morning as the aspect of Abraham. Morning and Abraham share the same essential quality in this teaching: the light of hesed/love that breaks through and transforms difficulty into ease. The bechina is: בֹּקֶר = בְּחִינַת אַבְרָהָם. Since אַבְרָהָם is already in Package 1, בֹּקֶר belongs there as well — it is the temporal/natural expression of the same divine love-quality that Abraham embodies. Suggested new bechina edge: בֹּקֶר ↔ אַבְרָהָם.",
+      "source_quote": "וַיָּשָׁב הַיָּם לִפְנוֹת בֹּקֶר – דָּא בֹּקֶר דְּאַבְרָהָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_210_edges": 6,
+    "total_reference_210_bechina_edges": 1,
+    "total_reference_210_eitza_edges": 5,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["\"ואהבת\"", "אברהם"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "note_on_eitza_nodes": "Three nodes appear only in eitza edges for Torah #210: (1) 'משא ומתן באמונה' — the practical deed that produces the ואהבת/Abraham state (eitza input); (2) 'אין קשין לו מזונותיו' / 'יהיה לו פרנסה בלא יגיעה וטרח' — the outcome state (eitza output); (3) 'כשמקים ואהבת' — a rephrasing of the ואהבת fulfillment used as an eitza source node. These nodes appear only in directional cause-and-effect edges; per framework rules, packages are formed from bechina-connected nodes only, and these eitza-only nodes do not qualify for package membership.",
+    "concepts_in_source_text_not_in_dataset": ["בוקר"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "קריעת ים סוף (Splitting of the Red Sea)",
+        "reason": "The text presents קריעת ים סוף as an analogy for the difficulty of earning a livelihood ('קָשִׁין מְזוֹנוֹתָיו כִּקְרִיעַת יַם־סוּף') and as the historical event caused by Abraham's merit. The relationship between קריעת ים סוף and מזונות is a simile (כִּ = like), not a bechina identity. The relationship between קריעת ים סוף and זכות אברהם is eitza (Abraham's merit caused the splitting). Neither is a bechina. Excluded."
+      },
+      {
+        "concept": "פרנסה / מזונות (Livelihood)",
+        "reason": "Livelihood appears in the text as the eitza-outcome of fulfilling ואהבת ('יִהְיֶה לוֹ פַּרְנָסָה בְּלֹא יְגִיעָה וָטֹרַח'). It is the practical result, not an essential-nature parallel. The difficulty of livelihood is compared to the splitting of the Sea by simile, not bechina. Excluded — eitza relationship only."
+      },
+      {
+        "concept": "שם שמים מתאהב על ידיך (Hashem's name becoming beloved through you)",
+        "reason": "This phrase (from Yoma 86) is the Sages' definition of 'ואהבת' — it is a paraphrase/explanation of the commandment, not a separate bechina node. The concept is already fully contained within the existing 'ואהבת' node. Not an additional gap."
+      },
+      {
+        "concept": "זכות אברהם (Merit of Abraham)",
+        "reason": "The merit of Abraham (זכות אברהם) is described as the cause of the splitting of the Sea ('קְרִיעַת יַם סוּף הָיָה עַל־יְדֵי זְכוּת אַבְרָהָם'). This is an eitza relationship (Abraham's merit produced the event), not a bechina (they do not share the same essential nature; the merit is a quality of Abraham, not a parallel aspect). Furthermore, 'זכות אברהם' in this text is functioning as a synonym for 'בחינת ואהבת' — it is already captured in the ואהבת ↔ אברהם bechina. Not a separate gap."
+      }
+    ]
+  }
+}

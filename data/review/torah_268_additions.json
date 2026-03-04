@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "source": "Torah #268",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "תכלית",
+      "נפש",
+      "רצון יוצרה",
+      "שורש הנפש",
+      "חולי",
+      "תאוה",
+      "רפואות",
+      "בריאות",
+      "כפיית התאוה",
+      "תכלית האמתי"
+    ],
+    "source_text_structure": "Torah #268 is a short teaching (3 paragraphs) structured entirely as eitza (cause-and-effect) argumentation. It contains no explicit bechina language ('הוא בחינת', 'נקרא', 'כנ\"ל') anywhere in the text. The argument is: (1) a person who ignores the תכלית has no reason to live; (2) the נפש yearns to do God's will — when it sees the person failing, it withdraws toward its שורש, causing illness; (3) when a person takes medicine he demonstrates he can subdue his תאוה for some purpose — the נפש sees this and hopes he will do the same for the true purpose (God's will), so it returns. All relationships are sequential/causal, not parallel/shared-nature.",
+    "eitza_chains_identified": [
+      {
+        "chain": "אי-הסתכלות על התכלית → נסיגת הנפש לשרשה → חולי",
+        "description": "Not looking at the ultimate purpose causes the soul to withdraw toward its root, causing illness"
+      },
+      {
+        "chain": "כפיית התאוה (לצורך רפואה) → ציפיית הנפש → חזרת הנפש → בריאות",
+        "description": "Subduing desire for medicine shows capacity to subdue desire; soul sees this and returns; person recovers"
+      },
+      {
+        "chain": "כפיית התאוה לתכלית האמתי → עשיית רצון יוצרו",
+        "description": "The implied eitza — if the person subdues desire for the true purpose (God's will), complete healing of body and soul follows"
+      }
+    ],
+    "note_on_bechina_absence": "The absence of bechina language in Torah #268 is significant: this is a practical/mussar-style teaching that operates through logical argument rather than through the identification of parallel essences across domains. The concepts נפש, תכלית, תאוה, and רפואה function as actors in a causal narrative, not as bechina-equivalents. Consequently, the dataset correctly has zero bechina edges for this Torah. The proper data representation for this Torah would consist entirely of eitza edges."
+  }
+}

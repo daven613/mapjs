@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "source": "Torah #215",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===215 AND type==='bechina'. Zero bechina edges exist in torahData.js for reference 215. Two eitza edges exist (IDs 629 and 2095) but these are not bechina. The source text (torah_215.txt) contains explicit bechina declarations that are entirely absent from the dataset. Analysis of the source text identifies three bechina equations: (1) עֵת רָצוֹן is a bechina of הִתְגַּלּוּת מֵצַח הָרָצוֹן, (2) שַׁבָּת בְּמִנְחָה is a bechina of עֵת רָצוֹן, and (3) Moses' gematria (345) stands as the midpoint between שְׁמָד (344) and רָצוֹן (346), establishing Moses as a bechina of the mediator between destruction and will. These three equations form a single connected component (Package 1) via the shared node עֵת רָצוֹן. The teaching also establishes Moses' essential nature as the converter of עַכּוּ\"ם — the counterforce of חֲרוֹן אַף and שְׁמָד — yielding a second conceptual cluster (Package 2, evil/neutral). The packages are proposed from source-text analysis; they will be grounded in the dataset once the missing bechina edges are added."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 215,
+      "label": "עֵת רָצוֹן וּמֵצַח הָרָצוֹן",
+      "label_en": "Time of Divine Favor and the Forehead of Will",
+      "polarity": "good",
+      "reason": "The Rebbe establishes two chained bechina equations in a single passage: first, that the universal redemption (which encompasses all 24 courts of judgment) requires an eit ratzon — and eit ratzon is explicitly declared to be 'בְּחִינַת הִתְגַּלּוּת מֵצַח הָרָצוֹן' (a bechina of the revelation of the forehead of will); second, that Shabbat Mincha is given as the prime example of this state: 'כְּמוֹ בְּשַׁבָּת בְּמִנְחָה, בְּחִינַת: וַאֲנִי תְפִלָּתִי... עֵת רָצוֹן'. These two bechina declarations connect three nodes: (a) עֵת רָצוֹן — the time of divine favor, the spiritual window when God's will is revealed; (b) הִתְגַּלּוּת מֵצַח הָרָצוֹן — the revelation of the forehead of will, the Kabbalistic concept of divine willingness radiating from above; (c) שַׁבָּת בְּמִנְחָה — Shabbat afternoon prayer, the specific temporal-liturgical moment that embodies eit ratzon. All three share the same essential nature: they are different expressions of the single reality of divine favor/willingness being manifest and accessible. The Rebbe uses the forehead metaphor (מֵצַח) because the forehead (metzach) in Kabbalistic thought is associated with ratzon (will) — the forehead is the place where will is 'written' or revealed on the divine countenance. Shabbat Mincha is the earthly time-window that corresponds to this supernal revelation. The polarity is 'good': these are all positive, sacred moments/qualities — divine will, sacred time, the channel through which the universal redemption operates.",
+      "dominant_node": "עֵת רָצוֹן",
+      "nodes": [
+        "עֵת רָצוֹן",
+        "הִתְגַּלּוּת מֵצַח הָרָצוֹן",
+        "שַׁבָּת בְּמִנְחָה"
+      ],
+      "node_degrees": {
+        "עֵת רָצוֹן": 2,
+        "הִתְגַּלּוּת מֵצַח הָרָצוֹן": 1,
+        "שַׁבָּת בְּמִנְחָה": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 215,
+      "label": "מֹשֶׁה בֵּין שְׁמָד לְרָצוֹן",
+      "label_en": "Moses Between Destruction and Will",
+      "polarity": "good",
+      "reason": "The Rebbe makes a striking bechina claim about Moses' essential nature using gematria: 'מֹשֶׁה עוֹמֵד בֵּין שְׁמָד לְרָצוֹן, כִּי מִסְפַּר מֹשֶׁה הוּא מְמֻצָּע בֵּין מִסְפַּר שְׁמָד לְמִסְפַּר רָצוֹן' — Moses stands between shemad and ratzon, because Moses' gematria is the midpoint between the gematria of shemad and the gematria of ratzon. Gematria: מֹשֶׁה = 345, שְׁמָד = 344, רָצוֹן = 346. Moses is literally the median — the exact intermediate number — between destruction (344) and will (346). This is not merely a biographical observation but a deep bechina declaration: Moses' essential nature is that of the mediator who transforms shemad (coerced apostasy, destruction) into ratzon (divine will, voluntary acceptance). His very name-number encodes this function. The Rebbe then summarizes: 'כָּל עֲבוֹדַת מֹשֶׁה – לְהַמְתִּיק הַחֲרוֹן אַף שֶׁל הָעַכּוּ\"ם לְרָצוֹן' — Moses' entire service is sweetening the idol-worshippers' wrath into ratzon. This confirms the bechina: Moses IS the sweetening force between these two poles. The cluster of מֹשֶׁה, שְׁמָד, and רָצוֹן form a bechina unit — they are three aspects of the same structural reality in Moses' spiritual identity. The polarity is 'good': Moses represents the redemptive, sweetening force. Note: שְׁמָד appears here as a concept that Moses' nature encompasses and mediates — it is part of his identity as the polar opposite he stands against, making it a 'good' package concept despite shemad's negative content, because the package's nature is Moses-as-mediator.",
+      "dominant_node": "מֹשֶׁה",
+      "nodes": [
+        "מֹשֶׁה",
+        "שְׁמָד",
+        "רָצוֹן"
+      ],
+      "node_degrees": {
+        "מֹשֶׁה": 2,
+        "שְׁמָד": 1,
+        "רָצוֹן": 1
+      },
+      "merge_notes": [
+        "שְׁמָד and רָצוֹן are here explicitly bechina-connected to מֹשֶׁה via gematria equivalence, not as a cause-and-effect (that would be eitza). Moses' number being the midpoint establishes a parallel-essence: his identity IS the median between these two values. Note that רָצוֹן in Package 1 and רָצוֹן in Package 2 are the same concept-node but serve slightly different roles: in Package 1 it appears as part of the phrase 'עֵת רָצוֹן' (time of will), while here it appears as the standalone concept 'רָצוֹן' (will) to which Moses' gematria is adjacent. These should be treated as potentially aliased nodes in the full dataset — the same conceptual reality expressed in two ways."
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 215,
+      "label": "עַכּוּ\"ם וְחֲרוֹן אַף",
+      "label_en": "Idol Worshippers and Divine Wrath",
+      "polarity": "evil",
+      "reason": "The Rebbe establishes an explicit bechina equation: 'כָּל זְמַן שֶׁיֵּשׁ עַכּוּ\"ם בָּעוֹלָם חֲרוֹן אַף בָּעוֹלָם' — as long as idol worshippers exist in the world, there is divine wrath (חֲרוֹן אַף) in the world. This is the bechina equation underlying Torah 215: עַכּוּ\"ם (idol worshippers) and חֲרוֹן אַף (divine wrath) are parallel expressions of the same negative spiritual reality. The presence of one entails the presence of the other — they are bechina equivalents within the domain of evil/opposition. The phrase is quoted as a known rabbinic dictum ('כִּי כָּל זְמַן שֶׁיֵּשׁ עַכּוּ\"ם בָּעוֹלָם...') indicating it describes an essential ontological link, not a mere causal observation. The 24 courts of judgment (כ\"ד בָּתֵּי דִּינִים) are the structural apparatus through which this wrath operates — they are the framework of judgment that must be sweetened. These three concepts (עַכּוּ\"ם, חֲרוֹן אַף, כ\"ד בָּתֵּי דִּינִים) share the same essential nature: they are all expressions of the negative/opposing domain that Moses' entire service is directed toward sweetening. The polarity is 'evil': these concepts belong to the domain of opposition, judgment, and spiritual distance from God. This package is the evil mirror of Package 1 (eit ratzon / ratzon) — ratzon (divine will/favor) vs. charon af (divine wrath); and the evil mirror of Package 2's Moses-as-sweetener: the thing being sweetened.",
+      "dominant_node": "חֲרוֹן אַף",
+      "nodes": [
+        "חֲרוֹן אַף",
+        "עַכּוּ\"ם",
+        "כ\"ד בָּתֵּי דִּינִים"
+      ],
+      "node_degrees": {
+        "חֲרוֹן אַף": 2,
+        "עַכּוּ\"ם": 1,
+        "כ\"ד בָּתֵּי דִּינִים": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "note_on_merges": "Zero bechina edges currently in dataset for reference 215. All three packages above are proposed based on source-text analysis of torah_215.txt. The missing bechina edges are fully documented in torah_215_additions.json. If all proposed edges are added to torahData.js, the stats would update to: total_bechina_edges=5 (2 for Package 1, 2 for Package 2, 1 for Package 3), total_nodes=9, total_packages=3, raw_connected_components=3. The two eitza edges that do exist in the dataset (IDs 629 and 2095, reference 215) represent the causal flow between the packages: the sweetening of judgment (Package 3 → eitza → Package 1's eit ratzon → eitza → גרים)."
+  }
+}

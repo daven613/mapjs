@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "source": "Torah #168 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===168 AND type==='bechina'. Result: ZERO bechina edges in the dataset for Torah #168. Torah #168 is a 2-line aphorism that operates entirely through the word 'סִימָן' (sign/omen) — a cause-and-signal structure that is fundamentally eitza (directional), not bechina (shared nature). The Torah presents two symmetrical sign-relationships: (1) pride [גדלות / גאוה] is a sign of coming destruction [שבר / צרה]; (2) humility [שפלות / ענוה] is a sign of coming honor [כבוד]. Explicit bechina language ('בְּחִינַת', 'הַיְנוּ בְּחִינַת', 'הוּא', 'נִקְרָא') is absent. However, within each arm of the sign-relationship, the Torah does create implicit bechina equivalences through its word choice: 'גדלות' and 'גאון' name the same quality (pride-as-self-inflation), and 'שפל' and 'ענוה' name the same quality (lowness-as-humility). These intra-arm equivalences are the only bechina connections in the teaching. Package structure: two packages, each representing one pole of the good/evil mirror — Package 1 (evil: גאוה וגדלות, the pride cluster), Package 2 (good: ענוה ושפלות, the humility cluster). The causal eitza connections run BETWEEN the packages: pride → destruction, humility → honor. The destruction (שבר/צרה) and the honor (כבוד) are eitza outcomes — they are not bechina-equivalent to the causes, they are what those causes lead to. They are noted below in the eitza_summary rather than assigned to packages."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 168,
+      "label": "גַּאֲוָה וְגַדְלוּת",
+      "label_en": "Pride and Self-Inflation",
+      "polarity": "evil",
+      "reason": "Torah #168 opens with 'כְּשֶׁבָּא לָאָדָם גַּדְלוּת' (when pride/greatness comes to a person) and then cites Proverbs 16:18: 'לִפְנֵי שֶׁבֶר גָּאוֹן' — before destruction comes gaon (pride/arrogance). The Torah uses 'גַּדְלוּת' (greatness/pride) and 'גָּאוֹן' (arrogance) as two names for the same spiritual quality: the swelling of self-regard, the attitude of self-inflation. This is the implicit bechina at the heart of the teaching — it is not stated with 'בְּחִינַת' but is implicit in the structure: the verse is cited specifically to explain the phenomenon of גדלות, meaning the Rebbe holds that גאון IS גדלות. The shared essential nature is: a state of self-inflation that PRECEDES and signals its own destruction. Polarity is evil: pride/arrogance is consistently treated in Breslov teaching as the spiritual danger-state, the opposite of the servant's proper nullification before God. The Talmud (Sotah 5a) identifies pride as a form of avodah zarah (idolatry) and states that the presence of pride in a Torah scholar is itself a form of spiritual destruction. The verse 'לִפְנֵי שֶׁבֶר גָּאוֹן' makes this explicit: the gaon is already 'before' the shever, meaning the pride itself contains the seed of its own ruin. Note: שֶׁבֶר (destruction/fracture) and צָרָה (trouble/affliction) are the eitza-consequences of this cluster, not bechina-equivalents. They are what pride LEADS TO, not what pride IS. They are documented in the eitza_summary below.",
+      "dominant_node": "גאוה",
+      "nodes": [
+        "גאוה",
+        "גדלות"
+      ],
+      "node_degrees": {
+        "גאוה": 1,
+        "גדלות": 1
+      },
+      "source_bechina_evidence": {
+        "type": "implicit_bechina_via_verse_citation",
+        "description": "The Rebbe cites Proverbs 16:18 ('לִפְנֵי שֶׁבֶר גָּאוֹן') specifically as the prooftext for the phenomenon of 'גדלות' arriving. This is the Rebbe's standard hermeneutic move — quote a verse that uses a near-synonymous word to establish conceptual identity. The verse's 'גָּאוֹן' IS the teaching's 'גַּדְלוּת'. Explicit bechina-formula is absent, but the equivalence is structurally established.",
+        "source_quote": "כְּשֶׁבָּא לָאָדָם גַּדְלוּת, סִימָן שֶׁיָּבוֹא לוֹ צָרָה... כְּמוֹ שֶׁכָּתוּב: לִפְנֵי שֶׁבֶר גָּאוֹן"
+      },
+      "note": "This is a 2-node package built from a single implicit bechina equivalence. The teaching contains no further bechina-language concepts on the evil side. שבר and צרה are excluded from this package because they are the eitza-result of pride, not parallel aspects sharing the same nature as pride."
+    },
+    {
+      "id": 2,
+      "torah_ref": 168,
+      "label": "עֲנָוָה וְשִׁפְלוּת",
+      "label_en": "Humility and Lowliness",
+      "polarity": "good",
+      "reason": "Torah #168's second arm presents 'כְּשֶׁהוּא שָׁפָל' (when a person is lowly/humble) and cites Proverbs 16:15: 'וְלִפְנֵי כָבוֹד עֲנָוָה' — before honor comes humility (anavah). The Torah uses 'שָׁפָל' (lowly) and 'עֲנָוָה' (humility) as two names for the same spiritual quality: the voluntary lowering of self, the orientation of smallness before God and others. Just as Package 1 pairs גדלות/גאון, this package pairs שפלות/ענוה — the Rebbe cites the verse to explain the phenomenon of שפלות, establishing that ענוה IS שפלות. The shared essential nature is: a state of self-lowering that PRECEDES and signals the arrival of honor. Polarity is good: humility is the cardinal virtue in Breslov teaching. Rebbe Nachman's consistent emphasis is on shpilut (lowliness) as the foundation of genuine avodas Hashem — the Talmud (Avodah Zarah 20b) frames anavah as the highest level of character development, and the Psalms repeatedly identify the humble (ענוים) as those who inherit the earth and receive God's grace. The verse 'וְלִפְנֵי כָבוֹד עֲנָוָה' makes this explicit: the humility precedes, signals, and makes room for the honor. Note: כָּבוֹד גָּדוֹל (great honor) is the eitza-consequence of this cluster — what humility LEADS TO — not a bechina-equivalent of humility. It is documented in the eitza_summary below.",
+      "dominant_node": "ענוה",
+      "nodes": [
+        "ענוה",
+        "שפלות"
+      ],
+      "node_degrees": {
+        "ענוה": 1,
+        "שפלות": 1
+      },
+      "source_bechina_evidence": {
+        "type": "implicit_bechina_via_verse_citation",
+        "description": "The Rebbe cites Proverbs 16:15 ('וְלִפְנֵי כָבוֹד עֲנָוָה') specifically as the prooftext for the phenomenon of 'שָׁפָל' (lowliness). The verse's 'עֲנָוָה' IS the teaching's 'שָׁפָל'. The equivalence is structurally established through verse-citation hermeneutic.",
+        "source_quote": "כְּשֶׁהוּא שָׁפָל, סִימָן שֶׁיָּבוֹא לְכָבוֹד גָּדוֹל... כְּמוֹ שֶׁכָּתוּב: וְלִפְנֵי כָבוֹד עֲנָוָה"
+      },
+      "note": "This is a 2-node package built from a single implicit bechina equivalence — the mirror of Package 1. כבוד (honor) is excluded from this package because it is the eitza-result of humility, not a parallel aspect sharing the same nature as humility."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 0,
+    "packages_from_dataset_components": 0,
+    "packages_from_gap_analysis": 2,
+    "note_on_zero_edges": "Reference 168 has no pre-existing bechina edges in torahData.js. Both packages are derived entirely from source-text gap analysis. See torah_168_additions.json for the proposed new edges.",
+    "good_evil_mirror": "Torah #168 is a perfect two-package mirror: Package 1 (evil: גאוה/גדלות = pride) mirrors Package 2 (good: ענוה/שפלות = humility). The Torah's structural argument is: the evil pole (pride) signals its own destruction; the good pole (humility) signals the arrival of honor. The two packages are the exact spiritual opposites described by the same sign-mechanism: what you are BEFORE is the signal for what comes AFTER. The mirror is not just thematic but syntactically perfect — the two sentences of Torah #168 are grammatically parallel, with the same 'כְּשֶׁ... סִימָן שֶׁ... כְּמוֹ שֶׁכָּתוּב' structure applied once to each pole.",
+    "eitza_summary": "The causal structure of Torah #168: Package 1 (pride) —eitza→ שֶׁבֶר וְצָרָה (destruction and trouble). Package 2 (humility) —eitza→ כָּבוֹד גָּדוֹל (great honor). The directional connectors are the word 'סִימָן' (sign) — pride IS a sign that destruction comes, humility IS a sign that honor comes. The relationship is one-directional: pride does not share the essential nature of destruction, and humility does not share the essential nature of honor. They signal and precede their respective outcomes. The outcomes (שבר, צרה, כבוד) are eitza-destinations, not bechina-family members of the cause-concepts.",
+    "note_on_teaching_structure": "Torah #168 is unusual in the Likutay Moharan corpus: it is a pure sign-teaching (omen/portent teaching) with no kabbalistic apparatus, no letter-permutations, no sefirot, no Talmudic characters, and no extended mashal. It is one of the shortest teachings in the collection — two grammatically parallel sentences drawing on a single verse (Proverbs 16:18 and 16:15, adjacent verses in the same chapter). The Rebbe presents a practical spiritual psychology: the experience of inflation signals coming fall; the experience of deflation signals coming elevation. This is not the same as saying pride CAUSES trouble — the word 'סִימָן' is carefully chosen. The pride is a SIGN (advance indicator), not necessarily the mechanical cause. This keeps the teaching in the domain of divine providence (the inflation is sent as a warning/signal from heaven) rather than pure consequentialism.",
+    "note_on_merge_analysis": "No merges were considered because both raw components (גאוה/גדלות and ענוה/שפלות) are already minimal 2-node units. There are no isolated single-node components, and the two packages have no shared-nature relationship between them — pride and humility are polar opposites, not parallel aspects of the same thing. Merging Package 1 into Package 2 would be incorrect: they are the evil and good mirrors of each other, not different expressions of the same concept. The framework requires separate packages for opposite polarities."
+  }
+}
