@@ -5,7 +5,34 @@
     "type": "new_package_proposals",
     "generated": "2026-03-04"
   },
-  "verdict": "NO_NEW_PACKAGES",
-  "new_packages": [],
-  "observations": "Torah #122 is a brief practical teaching about how to handle foreign thoughts (machshavot zarot) during prayer: one should continue praying in order without paying them attention, which defeats them like a warrior cutting through enemies. The text references the known teaching that each foreign thought is a kelipah and a complete stature (komah shleimah), but this is cited as background, not developed with bechina language. The teaching's structure is entirely cause-and-effect (eitza): praying in order -> ignoring foreign thoughts -> defeating them. There are fewer than 3 bechina-connected concepts, so no new package can be proposed."
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": 1,
+      "torah_ref": 122,
+      "volume": "lm2",
+      "label": "מַחֲשָׁבוֹת זָרוֹת וּקְלִפָּה",
+      "label_en": "Foreign Thoughts and Husks",
+      "polarity": "evil",
+      "reason": "The source text explicitly equates foreign thoughts with קליפה and קומה שלמה. These three concepts form a bechina-connected cluster: each foreign thought IS a husk, and IS a complete form. This constitutes 3 bechina-connected concepts forming an independent thematic domain of evil forces encountered during prayer.",
+      "dominant_node": "מחשבה זרה",
+      "nodes": ["מחשבה זרה", "קליפה", "קומה שלמה"],
+      "proposed_edges": [
+        {
+          "node1_id": "מחשבה זרה",
+          "node2_id": "קליפה",
+          "type": "bechina",
+          "proof": "כִּי כָל מַחֲשָׁבָה זָרָה הוּא קְלִפָּה"
+        },
+        {
+          "node1_id": "מחשבה זרה",
+          "node2_id": "קומה שלמה",
+          "type": "bechina",
+          "proof": "כָל מַחֲשָׁבָה וּמַחֲשָׁבָה הִיא קוֹמָה שְׁלֵמָה"
+        }
+      ],
+      "mirror_notes": "This evil package (foreign thoughts as husks) mirrors the good side of prayer (תפלה). The good mirror would be a package around תפלה/prayer-in-order, but the source text does not provide bechina identifications for the prayer side — only eitza (through prayer one defeats the husks)."
+    }
+  ],
+  "observations": "Torah #122 is a short teaching with a clear bechina core: foreign thoughts ARE husks/shells with a complete form. The teaching's practical dimension (praying in order defeats them) is eitza, not bechina. The war metaphor is illustrative, not an identity statement. One new evil-polarity package of 3 nodes is proposed, meeting the minimum threshold of 3 bechina-connected concepts."
 }
