@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "source": "Torah #2 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "note": "The existing dataset contains 0 bechina edges for reference 1002 (all 50 edges are eitza/cause). All bechina edges below were mined directly from the Torah source text using explicit bechina language."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 2,
+      "volume": "lm2",
+      "label": "הֲלָכוֹת וְתוֹדָה",
+      "label_en": "Halakhot and Thanksgiving",
+      "polarity": "good",
+      "reason": "This is the Torah's core conceptual family. The Rebbe equates thanksgiving (todah) with halakhot (laws), which are the delight of the World to Come. These are further equated with chesed (lovingkindness), birth/generation (holadah), the blood flow returning to order (tahaluchot hadamim), and the healing of the legs. The binding principle is: all of these are different expressions of the same spiritual reality — the restoration of proper order and flow, which constitutes the experience of closeness to God (olam haba). Abraham and David are the personality-anchors of this chesed/halakha identity.",
+      "dominant_node": "הלכות",
+      "nodes": [
+        "הלכות", "תודה", "שעשוע עולם הבא", "ימי הודאה", "חסד", "הלכה",
+        "הולדה", "ימי חנוכה", "דעת", "חסדי ה'", "שמוש חכמים", "חסדי דוד",
+        "תהלוכות הדמים", "תקון וקיום הרגלין", "מקץ", "הודאה", "תולדה",
+        "אברהם", "מלוי החסרון", "לבנה", "חסרון וקרירות"
+      ],
+      "node_degrees": {
+        "הלכות": 10,
+        "תודה": 4,
+        "שעשוע עולם הבא": 3,
+        "ימי הודאה": 2,
+        "חסד": 2,
+        "הלכה": 2,
+        "הולדה": 2,
+        "ימי חנוכה": 1,
+        "דעת": 1,
+        "חסדי ה'": 1,
+        "שמוש חכמים": 1,
+        "חסדי דוד": 1,
+        "תהלוכות הדמים": 1,
+        "תקון וקיום הרגלין": 1,
+        "מקץ": 1,
+        "הודאה": 1,
+        "תולדה": 1,
+        "אברהם": 1,
+        "מלוי החסרון": 1,
+        "לבנה": 1,
+        "חסרון וקרירות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_component": "Comp 9: לבנה — חסרון וקרירות (2 nodes)",
+          "reason": "The moon (levana) is described as cold/lacking, which is the bechina of the lack that gets filled through halakhot/chesed. The Rebbe explicitly says: 'the filling of the lack (milui hachisaron), which is the bechina of holadah, bechina of halakhot' (line 12). The moon's coldness is a metaphor for the state BEFORE halakhot restore fullness. Same shared nature — the domain of lack/fullness that halakhot address."
+        }
+      ],
+      "good_evil_mirror": "The evil mirror for this package is the state of tzarah (distress) where blood floods the heart, and the klipah that prevents birth (kishui leiled). See Package 4 for the evil nodes."
+    },
+    {
+      "id": 2,
+      "torah_ref": 2,
+      "volume": "lm2",
+      "label": "שַׁבָּת וְשִׂמְחָה",
+      "label_en": "Shabbat and Joy",
+      "polarity": "neutral",
+      "reason": "This package spans both the holy domain (Shabbat = son = joy = rest = simple unity) and its weekday counterpart (Metatron = servant = sadness = six weekdays). The Torah explicitly contrasts these two poles as parallel aspects: Shabbat IS the bechina of 'son' and joy, while the weekdays ARE the bechina of 'servant' and sadness. They form one thematic family because the Torah's argument is precisely about drawing the joy of Shabbat into the weekdays — transforming the servant-domain via the son-domain. Noach (rest), Chanukah (chanu-kaf-heh = rested on the 25th), leshon hakodesh (holy tongue), and achdut hapashut (simple unity) are all parallel expressions of the Shabbat quality. Chanoch/Metatron/Eved are the weekday pole.",
+      "dominant_node": "שבת",
+      "nodes": [
+        "שבת", "מטט", "לשון הקדש", "בן", "הלכה כרבים", "עבד",
+        "עצבות", "ששת ימי החול", "נח", "אחדות הפשוט", "חנו כה",
+        "חנוכה", "חנוך", "שלמות הדבור", "כה", "שמחה",
+        "ימי החול", "פעולות משתנות"
+      ],
+      "node_degrees": {
+        "שבת": 7,
+        "מטט": 4,
+        "לשון הקדש": 3,
+        "בן": 3,
+        "הלכה כרבים": 3,
+        "עבד": 3,
+        "עצבות": 3,
+        "ששת ימי החול": 3,
+        "נח": 2,
+        "אחדות הפשוט": 2,
+        "חנו כה": 2,
+        "חנוכה": 2,
+        "חנוך": 2,
+        "שלמות הדבור": 1,
+        "כה": 1,
+        "שמחה": 1,
+        "ימי החול": 1,
+        "פעולות משתנות": 1
+      },
+      "merge_notes": [],
+      "good_evil_mirror": "This package contains its own internal good/evil mirror. The good pole: Shabbat, Ben (son), Simcha (joy), Noach (rest), Achdut Hapashut (simple unity), Leshon Hakodesh. The evil pole: Metatron, Eved (servant), Atzvut (sadness), weekdays, Chanoch. The point of fracture is Chanukah itself — which is both 'chanu kaf-heh' (Shabbat rest) AND 'Chanoch' (Metatron/servant/weekdays). Chanukah is where the two poles meet."
+    },
+    {
+      "id": 3,
+      "torah_ref": 2,
+      "volume": "lm2",
+      "label": "רִבּוּעַ הַדִּבּוּר וְהָאֱמֶת",
+      "label_en": "The Four Parts of Speech and Truth",
+      "polarity": "good",
+      "reason": "The Torah describes a four-part structure of speech (ribua hadibbur): speech of tzedakah, teshuvah, wealth, and malkhut. Each part has a parallel proof in R' Eliezer's four demonstrations (carob=tzedakah, water channel=teshuvah, walls of beit midrash=wealth, bat kol=malkhut). The three divine names (El, Elokim, Havaya) are the sources of truth that illuminate this four-part speech, and they parallel tefillah, Torah, and shidduchim respectively. The oil of Chanukah = or ha'emet (light of truth). All these are parallel aspects of the same domain: complete, truth-filled speech as the vehicle for divine revelation.",
+      "dominant_node": "רבוע הדבור",
+      "nodes": [
+        "רבוע הדבור", "ארבעה חלקי הדבור",
+        "צדקה", "דבור של צדקה", "חרוב", "דבור", "לא איש דברים אנכי", "גדר האדם", "פתח",
+        "דבור של תשובה", "גם מתמול", "אמת המים", "תשובה",
+        "דבור של עשירות", "גם משלשם", "עשירים קרובים למלכות", "שלשת השריגים", "כתלי בית המדרש", "עשירים",
+        "דבור של מלכות", "גם מאז דברך", "מלכות", "פה", "בת קול", "שש מעלות לכסא", "שית עזקאין דקנה",
+        "שלשה שמות", "מקור האמת", "תפלה ותורה ושדוכים",
+        "אל", "תפלה", "כח",
+        "אלקים", "תורה", "רב",
+        "שם הויה", "שדוכים",
+        "שמן", "רפואה להריאה", "תקון הצרה",
+        "שמן של נר חנוכה", "אור האמת",
+        "דמים שוטפין על הלב", "פגם האמת"
+      ],
+      "node_degrees": {
+        "רבוע הדבור": 1,
+        "ארבעה חלקי הדבור": 1,
+        "צדקה": 3,
+        "דבור של צדקה": 2,
+        "חרוב": 2,
+        "דבור": 2,
+        "לא איש דברים אנכי": 1,
+        "גדר האדם": 1,
+        "פתח": 1,
+        "דבור של תשובה": 1,
+        "גם מתמול": 1,
+        "אמת המים": 1,
+        "תשובה": 1,
+        "דבור של עשירות": 1,
+        "גם משלשם": 1,
+        "עשירים קרובים למלכות": 1,
+        "שלשת השריגים": 1,
+        "כתלי בית המדרש": 1,
+        "עשירים": 1,
+        "דבור של מלכות": 1,
+        "גם מאז דברך": 1,
+        "מלכות": 2,
+        "פה": 1,
+        "בת קול": 2,
+        "שש מעלות לכסא": 2,
+        "שית עזקאין דקנה": 1,
+        "שלשה שמות": 2,
+        "מקור האמת": 1,
+        "תפלה ותורה ושדוכים": 1,
+        "אל": 2,
+        "תפלה": 1,
+        "כח": 1,
+        "אלקים": 2,
+        "תורה": 1,
+        "רב": 1,
+        "שם הויה": 1,
+        "שדוכים": 1,
+        "שמן": 2,
+        "רפואה להריאה": 1,
+        "תקון הצרה": 1,
+        "שמן של נר חנוכה": 1,
+        "אור האמת": 1,
+        "דמים שוטפין על הלב": 1,
+        "פגם האמת": 1
+      },
+      "merge_notes": [
+        {
+          "merged_component": "Comp 3: צדקה-דבור-חרוב (7 nodes)",
+          "reason": "The speech of tzedakah is explicitly one of the four parts of the ribua hadibbur. The carob tree is its bechina parallel in R' Eliezer's proofs. All are aspects of the same dibbur structure."
+        },
+        {
+          "merged_component": "Comp 4: מלכות-בת קול (5 nodes)",
+          "reason": "Bat kol is explicitly the bechina of malkhut, and this is the fourth part of the ribua hadibbur (dibbur shel malkhut = 'gam me'az dabrekha'). Part of the same four-part speech structure."
+        },
+        {
+          "merged_component": "Comp 5: שלשה שמות (3 nodes)",
+          "reason": "The three divine names (El Elokim Havaya) are the mekhor ha'emet — the source of truth that illuminates the ribua hadibbur. They are the structural backbone of the dibbur package."
+        },
+        {
+          "merged_component": "Comp 6: אל-תפלה-כח (3 nodes)",
+          "reason": "El = tefillah = koach. This is the unpacking of the first of the three names. El is a bechina of power/prayer, which illuminates the dibbur."
+        },
+        {
+          "merged_component": "Comp 7: אלקים-תורה-רב (3 nodes)",
+          "reason": "Elokim = Torah = Rav. This is the unpacking of the second of the three names. Part of the same dibbur/emet family."
+        },
+        {
+          "merged_component": "Comp 8: שמן-רפואה-תקון הצרה (3 nodes)",
+          "reason": "Oil (shemen) is the bechina of or ha'emet (light of truth), which heals the lungs and is the tikun of the tzarah. The oil is the physical embodiment of the emet that fills the dibbur."
+        },
+        {
+          "merged_component": "Comp 10: דמים שוטפין על הלב — פגם האמת (2 nodes)",
+          "reason": "Blood flooding the heart = pegam ha'emet (damage to truth). This is the evil mirror of the emet/dibbur: when truth is damaged, speech is incomplete. Explicitly connected via 'anshei damim yis'nu tam' — men of blood hate the complete (tam/emet). Evil polarity within the emet domain."
+        },
+        {
+          "merged_component": "Comp 11: רבוע הדבור — ארבעה חלקי הדבור (2 nodes)",
+          "reason": "These are the central structural concept of the entire dibbur family — the square of speech = four parts of speech. The hub of this package."
+        },
+        {
+          "merged_component": "Comp 12: דבור של תשובה — גם מתמול (2 nodes)",
+          "reason": "The second of the four parts of speech. 'Gam mitmol' in Moshe's complaint is the bechina of the speech of teshuvah."
+        },
+        {
+          "merged_component": "Comp 13: דבור של עשירות — גם משלשם (2 nodes)",
+          "reason": "The third of the four parts of speech. 'Gam mishilshom' = the three sarigim = wealthy close to the monarchy."
+        },
+        {
+          "merged_component": "Comp 14: עשירים קרובים למלכות — שלשת השריגים (2 nodes)",
+          "reason": "The wealthy close to the monarchy are the bechina of the three sarigim. Part of the dibbur shel ashirut family."
+        },
+        {
+          "merged_component": "Comp 15: דבור של מלכות — גם מאז דברך (2 nodes)",
+          "reason": "The fourth of the four parts of speech. 'Gam me'az' = malkhut peh = the speech of kingship."
+        },
+        {
+          "merged_component": "Comp 16: שם הויה — שדוכים (2 nodes)",
+          "reason": "The name Havaya (YHVH) is the bechina of shidduchim (matchmaking). Third of the three divine names that illuminate dibbur."
+        },
+        {
+          "merged_component": "Comp 17: אמת המים — תשובה (2 nodes)",
+          "reason": "The water channel in R' Eliezer's proof is the bechina of teshuvah. Parallel to the dibbur shel teshuvah."
+        },
+        {
+          "merged_component": "Comp 18: כתלי בית המדרש — עשירים (2 nodes)",
+          "reason": "The walls of the beit midrash in R' Eliezer's proof are the bechina of the wealthy. Parallel to the dibbur shel ashirut."
+        },
+        {
+          "merged_component": "Comp 19: שמן של נר חנוכה — אור האמת (2 nodes)",
+          "reason": "The oil of the Chanukah candle is the bechina of or ha'emet (light of truth). This is the concrete Chanukah manifestation of the emet that illuminates dibbur."
+        }
+      ],
+      "good_evil_mirror": "The evil mirror within this package is the node pair 'דמים שוטפין על הלב = פגם האמת' (blood flooding the heart = damage to truth). When truth is damaged, the four-part speech cannot function — the dibbur is in exile ('lo ish devarim anokhi'). The entire package describes the RESTORATION of complete speech through truth."
+    },
+    {
+      "id": 4,
+      "torah_ref": 2,
+      "volume": "lm2",
+      "label": "קְלִפָּה וְקִשּׁוּי לֵילֵד",
+      "label_en": "The Shell and Difficulty in Childbirth",
+      "polarity": "evil",
+      "reason": "The klipah (evil shell) that says 'Cut! Neither for me nor for you' is the bechina of difficulty in childbirth. This is a small but distinct evil domain: the force that prevents the holadah (birth/generation) from emerging into the world. It is the evil mirror of Package 1's holadah/halakhot cluster.",
+      "dominant_node": "קליפה",
+      "nodes": [
+        "קליפה", "קשוי לילד"
+      ],
+      "node_degrees": {
+        "קליפה": 1,
+        "קשוי לילד": 1
+      },
+      "merge_notes": [
+        {
+          "considered_merge_into": "Package 1 (הלכות ותודה)",
+          "reason_kept_separate": "While this is thematically the evil mirror of Package 1's holadah, it is connected by bechina language as its own independent evil domain. The klipah is not an aspect of halakhot — it is the OPPOSING force. Keeping it separate preserves the good/evil mirror structure clearly. The framework states that the same concept can appear in both a good and evil package."
+        }
+      ],
+      "good_evil_mirror": "This is the evil mirror of Package 1's birth/generation cluster. Package 1 describes halakhot generating new life; Package 4 describes the klipah preventing birth."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 71,
+    "total_bechina_edges_from_dataset": 0,
+    "total_bechina_edges_mined_from_source": 71,
+    "total_nodes": 85,
+    "total_packages": 4,
+    "raw_connected_components": 20,
+    "note": "The dataset (torahData.js) contains 0 bechina edges for reference 1002. All 50 dataset edges are classified as eitza or cause. The 71 bechina edges above were extracted directly from the Torah source text by identifying explicit bechina/parallel language."
+  }
+}

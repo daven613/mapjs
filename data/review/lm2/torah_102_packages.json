@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "source": "Torah #102 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 102,
+      "volume": "lm2",
+      "label": "רוּת וּתְפִלָּה",
+      "label_en": "Rut and Prayer",
+      "polarity": "good",
+      "reason": "Rut is identified as bchinat tefillah — she is the aspect of prayer, because from her descended David who saturated (rivah) the Holy One with songs and praises. This is the tefillah/prayer side of the secret of semichat geulah l'tefillah. Both Rut and tefillah belong to the domain of holiness.",
+      "dominant_node": "תפלה",
+      "nodes": ["רות", "תפלה"],
+      "node_degrees": {
+        "רות": 1,
+        "תפלה": 1
+      },
+      "merge_notes": [
+        "Small component (2 nodes). Considered merging with Package 2 (Boaz/Go'el), but the connection between geulah and tefillah is semicha (juxtaposition/structural joining), not shared essential nature. Boaz-Rut are a pair, but their bechina identities point to different domains (redemption vs. prayer). Kept separate per the rule: merge by shared nature only, not cause-and-effect or structural linkage."
+      ],
+      "good_evil_mirror": "No evil mirror present in this torah. The teaching is fragmentary — Rebbe Nachman delivered a full torah to a visiting rav, but only these bechina identifications were transmitted to R' Noson."
+    },
+    {
+      "id": 2,
+      "torah_ref": 102,
+      "volume": "lm2",
+      "label": "בֹּעַז וּגְאֻלָּה",
+      "label_en": "Boaz and Redemption",
+      "polarity": "good",
+      "reason": "Boaz is identified as bchinat go'el (redeemer), as stated explicitly: 'ki go'el anokhi' (Ruth 3:12). This is the geulah/redemption side of the secret of semichat geulah l'tefillah. Both Boaz and go'el belong to the domain of holiness.",
+      "dominant_node": "גואל",
+      "nodes": ["בעז", "גואל"],
+      "node_degrees": {
+        "בעז": 1,
+        "גואל": 1
+      },
+      "merge_notes": [
+        "Small component (2 nodes). Considered merging with Package 1 (Rut/Tefillah), but the link between the two pairs is semichat geulah l'tefillah — a structural/halachic joining of two distinct domains, not a shared-nature bechina identity. Kept separate."
+      ],
+      "good_evil_mirror": "No evil mirror present in this torah. The teaching is fragmentary."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 2,
+    "total_nodes": 4,
+    "total_packages": 2,
+    "raw_connected_components": 2
+  }
+}
