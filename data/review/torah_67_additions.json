@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "source": "Torah #67",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, all reference===67 bechina edges from torahData.js, and the full source text torah_67.txt. For each bechina statement in the source text (using language בְּחִינַת, דְּהַיְנוּ, נִקְרָא, הַיְנוּ בְּחִינַת), verified whether the concept appears as a node in the dataset. Concepts present in the text as explicit parallel-aspect declarations but absent from the dataset are flagged below."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "כָּבוֹד וּמַלְכוּת",
+      "node_id": "אם כל חי",
+      "node_text": "אֵם כָּל חַי",
+      "polarity": "good",
+      "reason": "Torah #67 section 1 states: 'הַכָּבוֹד הוּא אֵם כָּל חַי, וְהוּא שֹׁרֶשׁ כָּל הַנְּפָשׁוֹת'. The kavod is explicitly declared a bechina of 'mother of all living' (citing Genesis 3:20 — חַוָּה is אֵם כָּל חַי, but here the Rebbe equates כָּבוֹד with חַוָּה who is אֵם כָּל חַי). The phrase 'אֵם כָּל חַי' appears three times in section 1 and once in section 7 as a name/bechina for כָּבוֹד. While חַוָּה is already in the dataset (edge 1102: כבוד↔חוה, ref=67), the composite phrase 'אֵם כָּל חַי' as a concept-name for the kavod itself is not. In section 7, when a new soul arrives clothed in kavod, the text says 'כִּי הַכָּבוֹד הִיא אֵם כָּל חָי כַּנַּ\"ל' — this is a named bechina, not merely a citation.",
+      "source_quote": "הַכָּבוֹד הוּא אֵם כָּל חַי, וְהוּא שֹׁרֶשׁ כָּל הַנְּפָשׁוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "כָּבוֹד וּמַלְכוּת",
+      "node_id": "שורש כל הנפשות",
+      "node_text": "שֹׁרֶשׁ כָּל הַנְּפָשׁוֹת",
+      "polarity": "good",
+      "reason": "Torah #67 sections 1 and 2 repeat the formula: 'הַכָּבוֹד הוּא שֹׁרֶשׁ כָּל הַנְּפָשׁוֹת' (kavod is the root of all souls). This is a distinct bechina-name for the kavod — not the same as 'אֵם כָּל חַי' (the mother-metaphor) but specifically 'the root/source' (שֹׁרֶשׁ). The text states this identity three times in section 1 and section 6. As a named parallel-aspect of כָּבוֹד, it belongs in Package 1 and constitutes a missing node-edge: כבוד ↔ שורש כל הנפשות.",
+      "source_quote": "הַכָּבוֹד הוּא שֹׁרֶשׁ כָּל הַנְּפָשׁוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "כָּבוֹד וּמַלְכוּת",
+      "node_id": "כוונת הלב",
+      "node_text": "כַּוָּנַת הַלֵּב",
+      "polarity": "good",
+      "reason": "Torah #67 section 8 states: 'כִּי כַּוָּנַת הַלֵּב זֶה בְּחִינַת הַנֶּפֶשׁ, כְּמוֹ שֶׁכָּתוּב (תְּהִלִּים כ\"ה): אֵלֶיךָ ה׳ נַפְשִׁי אֶשָּׂא, וּפֵרוּשׁ רַשִׁ\"י: לִבִּי אֲכַוֵּן.' Intent of heart IS the bechina of נֶפֶשׁ. While the edge לֵּב↔נֶפֶשׁ exists in the dataset (edge 2157, ref=67), the specific phrase 'כַּוָּנַת הַלֵּב' as a named node-concept equal to נֶפֶשׁ does not appear as a node_id in the dataset. This is a refinement: not merely 'the heart' but 'the heartfelt intent' is the bechina of soul, and it is the lack of this that causes the נֶפֶשׁ to separate from the כָּבוֹד.",
+      "source_quote": "כִּי כַּוָּנַת הַלֵּב זֶה בְּחִינַת הַנֶּפֶשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "עַזֵּי פָּנִים וּמַלְכוּת הָרְשָׁעָה",
+      "node_id": "מלכותא בלא תגא",
+      "node_text": "מַלְכוּתָא בְּלָא תָגָא",
+      "polarity": "evil",
+      "reason": "Torah #67 section 3 states: 'כִּי עַזּוּת מַלְכוּתָא בְּלָא תָגָא (סַנְהֶדְרִין ק\"ה), הַיְנוּ כְּשֶׁאֵין בְּחִינַת מַלְכוּת, בְּחִינַת הַשֻּׁלְחָן שֶׁבִּקְדֻשָּׁה, בִּשְׁלֵמוּת כַּנַּ\"ל, אֲזַי מִתְגַּבֵּר הָעַזּוּת, שֶׁהוּא מַלְכוּתָא בְּלָא תָגָא.' The term 'מַלְכוּתָא בְּלָא תָגָא' (a kingdom without a crown) is the declared bechina of עַזּוּת (insolence/brazenness). The Rebbe states that insolence IS the kingdom-without-a-crown. This Aramaic term from Sanhedrin 105 functions as a distinct conceptual node in this Torah's argument — it is the name for what the בֵּית עוֹלָם looks like when the holy table is damaged and the brazen-faced seize power. It belongs in Package 4 as an explicit bechina of the evil-domain insolence concept.",
+      "source_quote": "כִּי עַזּוּת מַלְכוּתָא בְּלָא תָגָא, הַיְנוּ כְּשֶׁאֵין בְּחִינַת מַלְכוּת... אֲזַי מִתְגַּבֵּר הָעַזּוּת, שֶׁהוּא מַלְכוּתָא בְּלָא תָגָא",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "עַזֵּי פָּנִים וּמַלְכוּת הָרְשָׁעָה",
+      "node_id": "אות צדיק (יוד ונון)",
+      "node_text": "אוֹת צַדִּיק (יוּד נוּן)",
+      "polarity": "evil",
+      "reason": "Torah #67 section 4 states: 'כִּי אוֹת צַדִּיק הוּא יוּד נוּן, וְהַיּוּד הִיא בְּהַחְזָרַת פָּנִים מִן הַנּוּן, (כָּזֶה: צ), שֶׁהִיא בְּחִינַת מַלְכוּת, בְּחִינַת (תְּהִלִּים ע\"ב): לִפְנֵי שֶׁמֶשׁ יִנּוֹן שְׁמוֹ, הַיְנוּ בְּחִינַת הַסְתָּרַת פָּנִים'. The letter צַדִּיק (written yod+nun) is a bechina of the state where kavod lacks פָּנִים — because the yod turns its back to the nun. This is a neutral/structural linguistic device used to describe the evil condition (hidden face), and the Rebbe explicitly makes it a bechina-declaration. The letter צַדִּיק as a conceptual node belongs in the evil/fallen-kingdom package here because in this context it represents the fallen state (הַסְתָּרַת פָּנִים, face-hiding), not the righteous man. Note: in other Torahs the tzaddik-letter would have a different valence; in Torah #67 it is in the evil context.",
+      "source_quote": "כִּי אוֹת צַדִּיק הוּא יוּד נוּן... שֶׁהִיא בְּחִינַת מַלְכוּת... הַיְנוּ בְּחִינַת הַסְתָּרַת פָּנִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "עַזֵּי פָּנִים וּמַלְכוּת הָרְשָׁעָה",
+      "node_id": "אות דלת",
+      "node_text": "אוֹת דָּלֶת",
+      "polarity": "evil",
+      "reason": "Torah #67 section 4 states: 'וְזֶה בְּחִינַת הַדָּלֶת, דְּהַיְנוּ שֶׁהַכָּבוֹד וְהַמַּלְכוּת אַזְלָא וְנִדַּלְדְּלָה, וְנָפְלָה אֶל הַסִּטְרָא אָחֳרָא'. The letter דָּלֶת is a bechina of the state where kavod and malkhut are dwindled/impoverished (נִדַּלְדְּלָה) and fall to the sitra achra. This is an explicit bechina-declaration using 'הַיְנוּ' language. The dalet embodies the impoverished fallen state of divine honor. In the context of Torah #67's evil-domain package, the letter dalet (whose form suggests 'dalut'/'poverty') is the graphological symbol of the fall of the holy kingdom.",
+      "source_quote": "וְזֶה בְּחִינַת הַדָּלֶת, דְּהַיְנוּ שֶׁהַכָּבוֹד וְהַמַּלְכוּת אַזְלָא וְנִדַּלְדְּלָה, וְנָפְלָה אֶל הַסִּטְרָא אָחֳרָא",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "עַזֵּי פָּנִים וּמַלְכוּת הָרְשָׁעָה",
+      "node_id": "אות קוף",
+      "node_text": "אוֹת קוּף",
+      "polarity": "evil",
+      "reason": "Torah #67 section 4 states: 'וְזֶה בְּחִינַת הַקּוּף, הַיְנוּ כְּשֶׁהַמַּלְכוּת וְהַכָּבוֹד אַזְלָא וְנִדַּלְדְּלָה, הִיא כְּקוֹף בִּפְנֵי אָדָם, דְּהַיְנוּ שֶׁנִּתְאָרֵךְ רֶגֶל הַהֵא, וְנַעֲשֶׂה קוּף, דְּהַיְנוּ שֶׁנִּתְאָרֵךְ מֵהָרֶגֶל לְמַטָּה'. The letter קוּף is a bechina of the fallen state of malkhut — when the ה (heh, symbol of holy malkhut) extends its leg downward, it becomes a קוּף, and this represents the state 'רַגְלֶיהָ יוֹרְדוֹת מָוֶת' (her legs descend to death, Proverbs 5:5). The quf-letter is an explicit bechina-declaration ('הַיְנוּ') of the fallen kingdom descending toward death.",
+      "source_quote": "וְזֶה בְּחִינַת הַקּוּף, הַיְנוּ כְּשֶׁהַמַּלְכוּת וְהַכָּבוֹד אַזְלָא וְנִדַּלְדְּלָה, הִיא כְּקוֹף בִּפְנֵי אָדָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "כָּבוֹד וּמַלְכוּת",
+      "node_id": "הסתלקות נפשות",
+      "node_text": "הִסְתַּלְּקוּת וַאֲסִיפַת הַנְּפָשׁוֹת",
+      "polarity": "neutral",
+      "reason": "Torah #67 section 1 states: 'שֶׁהִסְתַּלְּקוּת וַאֲסִיפַת הַנְּפָשׁוֹת הֵם לְתוֹךְ הַכָּבוֹד, כִּי שָׁם שָׁרְשָׁם כַּנַּ\"ל' with the proof: 'כְּבוֹד ה׳ יַאַסְפֶךָ' (Isaiah 58:8). The withdrawal/gathering of souls is stated to be an aspect of/within the kavod, using the bechina-language pattern. The gathering-of-souls is the return movement: souls come FROM kavod (birth) and return TO kavod (death/elevation). This neutral structural concept is a face of the kavod domain — not pure good (it includes the scenario where a soul departs upon death) and not evil, but the natural bidirectional flow of soul-kavod relationship.",
+      "source_quote": "שֶׁהִסְתַּלְּקוּת וַאֲסִיפַת הַנְּפָשׁוֹת הֵם לְתוֹךְ הַכָּבוֹד, כִּי שָׁם שָׁרְשָׁם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 5,
+      "package_label": "יִלֵּד וְגִדּוּל הַנֶּפֶשׁ",
+      "node_id": "יראה",
+      "node_text": "יִרְאָה",
+      "polarity": "good",
+      "reason": "Torah #67 section 7 states: 'כִּי הַהוֹלָדָה נַעֲשֵׂית עַל־יְדֵי הַיִּרְאָה, בִּבְחִינַת (תְּהִלִּים מ\"ח): רְעָדָה אֲחָזָתַם שָׁם חִיל כַּיּוֹלֵדָה'. Fear/awe is explicitly a bechina of the birthing-process (giving birth is the metaphor for יִרְאָה here — trembling awe = the shudder of birth). In section 7 this is further reinforced: 'שְׁתֵּי בְּחִינוֹת אֵלּוּ, דְּהַיְנוּ הַהוֹלָדָה וְהַגִּדּוּל. נַעֲשִׂין, עַל־יְדֵי יִרְאָה וְאַהֲבָה.' While יִרְאָה is not a bechina-parallel of the birthpain (it is the eitza-mechanism for birth), there is an explicit bechina statement connecting יִרְאָה to the birthing-shudder (חִיל כַּיּוֹלֵדָה). This suggests יִרְאָה belongs in Package 5 (birth/growth-pain domain) as the agentive face of the birthpain. Note: this is a borderline case — the connection may be eitza rather than pure bechina. Including as a flagged addition for review.",
+      "source_quote": "כִּי הַהוֹלָדָה נַעֲשֵׂית עַל־יְדֵי הַיִּרְאָה, בִּבְחִינַת... רְעָדָה אֲחָזָתַם שָׁם חִיל כַּיּוֹלֵדָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "כָּבוֹד וּמַלְכוּת",
+      "node_id": "יד החזקה",
+      "node_text": "יַד הַחֲזָקָה",
+      "polarity": "good",
+      "reason": "Torah #67 section 7 states: 'וּבְיָדְךָ כֹּחַ וּגְבוּרָה – זֶה בְּחִינַת יָד הַחֲזָקָה'. The strong/mighty hand is explicitly declared a bechina of strength-and-power (כֹּחַ וּגְבוּרָה). While יַד יָמִין (right hand = love) is in the dataset (edge 1246, ref=67), the complementary יַד הַחֲזָקָה (strong hand = fear/strength, the left hand of judgment) is not. The pair יַד יָמִין/יַד הַחֲזָקָה = the two hands of אַהֲבָה and יִרְאָה is central to Torah #67's birth-and-growth-of-soul teaching. יַד הַחֲזָקָה belongs in the kavod-malkhut package as the instrument of the divine kingship's power-aspect (referenced in 'וְאַתָּה מוֹשֵׁל בַּכֹּל').",
+      "source_quote": "וּבְיָדְךָ כֹּחַ וּגְבוּרָה – זֶה בְּחִינַת יָד הַחֲזָקָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "כָּבוֹד וּמַלְכוּת",
+      "node_id": "יד הגדולה",
+      "node_text": "יַד הַגְּדוֹלָה",
+      "polarity": "good",
+      "reason": "Torah #67 section 7 states: 'וּבְיָדְךָ לְגַדֵּל וּלְחַזֵּק לַכֹּל – זֶה בְּחִינַת יַד הַגְּדוֹלָה'. The great/magnifying hand is explicitly declared a bechina of the power-of-growth. This is the partner concept to יַד הַחֲזָקָה above — together they constitute the two hands through which the soul is born (fear/right hand, cf. note on יַד יָמִין) and grown (love/great hand). יַד הַגְּדוֹלָה is in the kavod-malkhut domain because the verse context ('וְאַתָּה מוֹשֵׁל בַּכֹּל') explicitly connects to divine kingship (מֶמְשָׁלָה, מַלְכוּת).",
+      "source_quote": "וּבְיָדְךָ לְגַדֵּל וּלְחַזֵּק לַכֹּל – זֶה בְּחִינַת יַד הַגְּדוֹלָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_67_edges": 33,
+    "total_reference_67_bechina_edges": 18,
+    "total_reference_67_eitza_edges": 15,
+    "bechina_concepts_examined_and_excluded": [
+      {
+        "concept": "שְׂעָרוֹת קְלוּעִין (plaited/braided hairs)",
+        "reason": "Section 6 discusses braided hairs as the channels through which enemies suckle, but the connection is stated as an eitza mechanism ('in order that they can suckle more') rather than a bechina-identity. No 'הַיְנוּ בְּחִינַת' or 'נִקְרָא' language is used for שְׂעָרוֹת as a new concept-node. The hairs appear as a physical phenomenon in the teaching, not as a named bechina-equivalent."
+      },
+      {
+        "concept": "כַּף הַקָּלַע (sling/hollow of sling)",
+        "reason": "Section 6 end: 'וְנֶפֶשׁ אֹיְבֶיךָ יְקַלְּעֶנָּה בְּתוֹךְ כַּף הַקָּלַע' — this is a verse citation used to describe the downfall of enemies when they unite (plaited together = slung together). The כַּף הַקָּלַע is cited as a proof-text for the braided-hairs concept, not independently declared a bechina. Not a new gap node."
+      },
+      {
+        "concept": "יוֹם הַבִּכּוּרִים (Day of First Fruits)",
+        "reason": "Section 8 (last paragraph): 'וּבְיוֹם הַבִּכּוּרִים – בְּחִינַת הֻלֶּדֶת הַנֶּפֶשׁ בְּלִי קִשּׁוּי לֵילֵד'. This IS a bechina statement ('בְּחִינַת'). However, this is a verse-context application (Numbers 28:26) — the day is being used as a metaphorical bechina of birth-without-difficulty. It could legitimately be a node addition to Package 5 (birth/growth), but since the passage is marked in the source text as incomplete ('וְהַשְּׁאָר לֹא בֵּאֵר' — and the rest he did not explain), the bechina is only partially developed. Borderline exclusion: noting for review without full addition."
+      },
+      {
+        "concept": "מִקְרָא קֹדֶשׁ (holy convocation)",
+        "reason": "Section 8 final: 'מִקְרָא קֹדֶשׁ – זֶה בְחִינַת שֶׁהַכָּבוֹד... קוֹרֵא אֶת הָרַגְלִין'. The holy convocation is the bechina of kavod calling the 'legs' (bringing the malkhut's legs back from their fallen state). This uses explicit 'בְחִינַת' language. However, the passage is in the incomplete/unexplained final section. Same borderline exclusion as above."
+      },
+      {
+        "concept": "מְבִינֵי מַדָּע (those who understand knowledge)",
+        "reason": "Section 6: 'חוֹזֵר הַכָּבוֹד אֶל הַמְּבִינֵי מַדָּע' — the kavod returns to the knowers. The text says they are the opposite of 'רֹעִים לֹא יָדְעוּ הָבִין' (brazen shepherds). This is positional language, not a bechina-declaration. The Rebbe does not say 'מְבִינֵי מַדָּע הוּא בְחִינַת X.' No explicit bechina equivalence established."
+      },
+      {
+        "concept": "קְרִיחַת רֹאשׁ זְקֵנִים (baldness of elders' heads)",
+        "reason": "Section 6: 'וְזֶה בְּחִינַת קְרִיחַת רֹאשׁ זְקֵנִים' — this IS a bechina statement. However, the concept is the bechina of the state where the brain's excess (מוֹתָרוֹת) has been consumed (leaving no more for enemies to suckle). קְרִיחַת רֹאשׁ זְקֵנִים = the state of the elder whose brain excesses are gone = the state where enemies have no more nourishment. This concept arguably belongs in Package 4 (evil/adversarial domain) as a node describing the end-state of the enemy's depletion. However, since it can be seen as part of the מוֹתָרוֹת שֶׁבַּמֹּחַ/בִּינָה יְתֵרָה cluster already identified in Package 4, it is an addition to that package rather than a new gap requiring a separate slot. Flagging here for awareness but not adding as a separate gap since it connects to existing Package 4 nodes."
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "source": "Torah #94",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===94 AND type==='bechina'. Result: exactly 1 bechina edge (id 296): אלקי אביך ↔ אמונה. This yields a single 2-node connected component. No large components exist to merge into. The 2-node component is promoted directly to Package 1 per the algorithm rule that every bechina-connected node must appear in exactly one package. The Torah is brief (17 lines) and the dataset has captured only one of its many bechina statements (see additions file for the gap analysis). The eitza edge (id 1594) was not used for grouping."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 94,
+      "label": "אֱמוּנָה וֶאֱלֹקֵי אָבִיךָ",
+      "label_en": "Faith and the God of Your Father",
+      "polarity": "good",
+      "reason": "The single bechina-connected component in Torah #94 equates אֱמוּנָה (faith) with אֱלֹקֵי אָבִיךָ ('the God of your father'). The Rebbe derives this from the Talmudic principle 'מַעֲשֵׂה אֲבוֹתֵיהֶם בִּידֵיהֶם' (Chullin 13b) — the ancestral practice is in their hands, meaning: our faith IS the inherited tradition of believing in the God of our fathers. The proof text reads: 'וֶאֱלֹקֵי אָבִיךָ, הִיא בְחִינַת אֱמוּנָה'. The two nodes share exactly the same essential nature: trust in the God who revealed Himself to the patriarchs, the root-faith that precedes intellectual investigation. This is the good/holy domain — it is the positive foundation of the teaching. In Torah #94 the Rebbe presents אמונה as the seventh quality (השביעית), parallel to Shabbat, which is added to the six days of action (עשייה = ששת ימי החול). This framing places faith in the transcendent/holy domain.",
+      "dominant_node": "אמונה",
+      "nodes": [
+        "אמונה",
+        "אלקי אביך"
+      ],
+      "node_degrees": {
+        "אמונה": 1,
+        "אלקי אביך": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "note_on_merges": "Only 1 connected component exists. It has 2 nodes. It is not a candidate for merger into any larger component (no larger components exist). It is retained as Package 1. The Torah #94 dataset is severely under-represented — the source text contains at least 8 additional bechina-language statements (see additions file) that are absent from torahData.js."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "source": "Torah #77",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===77 AND type==='bechina'. Torah #77 is documented as almost entirely lost — the text itself carries an editorial note that 'almost the entirety is missing here, for the main intent is absent from the book.' Only one bechina edge survives in the dataset. The single 2-node isolated component is retained as a minimal package; no merges are possible because there are no other components. The full conceptual structure of this Torah cannot be reconstructed from surviving data."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 77,
+      "label": "הֶבֶל פֶּה וְאוֹת הֵ\"א",
+      "label_en": "The Breath of the Mouth and the Letter Heh",
+      "polarity": "good",
+      "reason": "The single surviving bechina in Torah #77 equates the הֶבֶל פֶּה (breath/vapor of the mouth) with the letter הֵ\"א. In the surviving fragment the Rebbe frames the entire teaching around revealing God's kingship (מַלְכוּתוֹ יִתְבָּרַךְ). The breath of the mouth is the formless initial emanation of sound before it becomes structured voice; it corresponds to the first הֵ\"א of the divine Name (י-ה-ו-ה), which is the upper realm of divine expression. Both nodes describe the same essential phenomenon: the primordial, unstructured dimension of sacred speech/breath that is the substrate from which prayer and Torah emerge. The surviving context places these in the positive, holy domain — they are aspects of the human act of learning and praying that contributes to the revelation of God's malkhut. This is a good package, even though it is minimal due to the loss of the teaching's body.",
+      "dominant_node": "הבל פה",
+      "nodes": [
+        "הבל פה",
+        "אות ה\"א"
+      ],
+      "node_degrees": {
+        "הבל פה": 1,
+        "אות ה\"א": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 0,
+    "note_on_merges": "Only one connected component exists (A: 2 nodes — הבל פה / אות ה\"א). No merges performed — there are no other components to merge into or from. The teaching is documented as almost entirely lost.",
+    "caveat": "Torah #77 is an exceptional case. The printed text itself states it is almost entirely missing. The dataset contains only 1 bechina edge for this Torah. Any package analysis here represents only a minimal fragment of what the full Torah would have contained. The surviving content is a single bechina-pair embedded in a dense but largely eitza-framed fragment about prayer, Torah-study, halakha, and the revelation of divine kingship — none of which are represented by bechina edges in the current dataset beyond this one pair."
+  }
+}

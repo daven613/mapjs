@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "source": "Torah #81",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 81,
+      "label": "אֶרֶץ וְנֶפֶשׁ וְדִבּוּר — הַצַּדִּיק",
+      "label_en": "Earth, Soul and Speech — The Tzaddik",
+      "polarity": "good",
+      "reason": "These concepts share the essential nature of the Tzaddik's identity as a speaker. In this Torah, ארץ (earth/land) is a bechina of נֶפֶשׁ (soul), and נפש is a bechina of דִּבּוּר (speech). The Tzaddik's very being is speech — when he speaks Torah or prayer, it is called ארץ ישראל; when he speaks mundane speech (שיחת חולין) it is called פסולת ארץ ישראל. The word 'זֶה' (this) is a name for the Tzaddik himself (Kohelet 12: 'כִּי זֶה כָּל הָאָדָם'). The two 2-node components {תורה, ישראל} and {זה, צדיק} are merged into this cluster because: (a) תורה = ישראל is the holy/sacred dimension of the Tzaddik's speech — when he speaks Torah it IS ארץ ישראל, the bechina of holy dibur; (b) זה = צדיק is the subject of the entire teaching — the Tzaddik is the one whose nefesh/dibur/eretz cluster defines the Torah's main theme. All five concepts share the same essential domain: the Tzaddik as a being of speech and soul.",
+      "dominant_node": "נפש",
+      "nodes": ["ארץ", "נפש", "דבור", "תורה", "ישראל", "זה", "צדיק"],
+      "node_degrees": {
+        "ארץ": 1,
+        "נפש": 2,
+        "דבור": 1,
+        "תורה": 1,
+        "ישראל": 1,
+        "זה": 1,
+        "צדיק": 1
+      },
+      "merge_notes": [
+        {
+          "merged_component": ["תורה", "ישראל"],
+          "reason": "תורה = ישראל is the sacred nature of the Tzaddik's dibur. The teaching states that when the Tzaddik speaks Torah it is called ארץ ישראל, which is בחינת נפש. Torah shares the same essential domain as ארץ/נפש/דבור — it is the holy manifestation of the same speech-soul cluster. The merge is grounded in shared bechina nature: Torah IS the holy dibur, and dibur IS nefesh, and nefesh IS eretz. Torah and Yisrael are the sacred face of what the nefesh/dibur/eretz cluster IS."
+        },
+        {
+          "merged_component": ["זה", "צדיק"],
+          "reason": "זה = צדיק and the Tzaddik is THE subject of the nefesh/dibur/eretz cluster in this Torah. The Tzaddik is literally defined here as the being whose speech (dibur) is either ארץ ישראל (Torah/prayer) or פסולת ארץ ישראל (mundane speech). His essential nature IS the nefesh/dibur/eretz domain. This merge is based on shared nature: the Tzaddik's essential character in this Torah is identical with the speech-soul-earth cluster."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 81,
+      "label": "דַּעַת וְהַר וּבֵית הַמִּקְדָּשׁ",
+      "label_en": "Knowledge, the Mountain, and the Temple",
+      "polarity": "good",
+      "reason": "These three concepts share the essential nature of transcendent spiritual knowledge and elevation. דַּעַת (divine knowledge/intimacy) is the bechina of הַר (the mountain) — the Gemara says 'ein har ela Beit HaMikdash.' Beit HaMikdash is in turn a bechina of דעת — 'whoever has daat it is as if the Temple was built in his days.' The mountain, the Temple, and daat are three expressions of the same elevated spiritual domain: the place of closeness to God, the summit of spiritual attainment, the inner sanctuary of consciousness. Together they define the goal toward which the Tzaddik's speech connects the masses.",
+      "dominant_node": "דעת",
+      "nodes": ["דעת", "הר", "בית המקדש"],
+      "node_degrees": {
+        "דעת": 2,
+        "הר": 1,
+        "בית המקדש": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 6,
+    "total_nodes": 10,
+    "total_packages": 2,
+    "raw_connected_components": 4
+  }
+}

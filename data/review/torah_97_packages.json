@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "source": "Torah #97",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "CRITICAL FINDING: The dataset contains zero bechina edges for reference===97. All four edges with reference=97 in torahData.js are type 'eitza'. The entire bechina subgraph for Torah #97 must therefore be constructed from the source text gap analysis alone. All packages in this file are derived exclusively from explicit bechina language (בְּחִינַת, נִקְרֵאת, לְשׁוֹן, הַיְנוּ) in torah_97.txt. No dataset edges contribute to any package."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 97,
+      "label": "תְּפִלָּה וּמַלְכוּת",
+      "label_en": "Prayer and Kingship",
+      "polarity": "good",
+      "reason": "The largest bechina cluster in Torah #97 unifies all concepts whose essential nature is 'prayer that has sovereignty' (ממשלה לתפלה). The Rebbe states in line 10: 'וְהַיִּרְאָה נִקְרֵאת מַלְכוּת' — fear/awe IS malkhut. Then: 'הַתְּפִלָּה יֵשׁ לָהּ בְּחִינַת מַלְכוּת' — prayer itself shares the bechina of malkhut. In line 15, יְהוּדָה is declared 'הַיְנוּ הַתְּפִלָּה' (= prayer). In line 16, מְחוֹקְקִי is glossed as 'לְשׁוֹן שְׂרָרָה וּמַלְכוּת' (language of dominion and malkhut). All four concepts — prayer, awe/fear, Yehudah (the one who praises), and the lawgiver-as-sovereign — share the single essential nature of 'sovereign prayer': prayer that rules because it is imbued with Malkhut. The two bechinot of Menashe and Efraim (small components C and D) are merged here because the Rebbe says 'כְּשֶׁמִּתְפַּלֵּל בִּשְׁתֵּי בְּחִינוֹת אֵלּוּ' — when one prays WITH these two bechinot, meaning Menashe and Efraim describe the inner posture of the prayer itself, not its external cause. They are faces of the same domain: prayer conducted with the proper inner quality. Forgetting one's status (Menashe) and transforming foreign thoughts (Efraim) are two aspects of what prayer-with-malkhut essentially IS, not what merely produces it.",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תפלה",
+        "יראה",
+        "מלכות",
+        "יהודה",
+        "מחוקקי",
+        "מנשה",
+        "שכחה",
+        "אפרים"
+      ],
+      "node_degrees": {
+        "מלכות": 3,
+        "תפלה": 2,
+        "יראה": 2,
+        "יהודה": 1,
+        "מחוקקי": 1,
+        "מנשה": 1,
+        "שכחה": 1,
+        "אפרים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["מנשה", "שכחה"],
+          "reason": "Line 6: 'וְזֶהוּ בְּחִינַת מְנַשֶּׁה, לְשׁוֹן נִשְׁיוֹן וְשִׁכְחָה' — Menashe IS forgetting. These two nodes form a bechina pair. The Rebbe is describing the state required BEFORE prayer: forget one's yichus and toil so that prayer is not blocked by pride. The proof quote 'כִּי נַשַּׁנִי אֱלֹקִים אֶת כָּל בֵּית אָבִי' describes forgetting one's lineage (= yichus = gadlut). This is a description of the inner nature of prayer — the prayer conducted with Menashe-quality IS the prayer that has malkhut. It is not an eitza (forgetting does not merely produce prayer; forgetting IS the form of prayer). Merged into Package 1."
+        },
+        {
+          "merged_nodes": ["אפרים"],
+          "reason": "Line 8: 'וְזֶהוּ בְּחִינַת אֶפְרַיִם, כְּמוֹ שֶׁכָּתוּב: כִּי הִפְרַנִי אֱלֹקִים בְּאֶרֶץ עָנְיִי' — Efraim is the bechina of fruitfulness from poverty/dryness. During prayer, foreign thoughts (from previous intentional sins) fall upon a person. The act of breaking them via holy thoughts transforms the dry, barren matter into merit. This transformation IS the bechina of Efraim — it is not a result of prayer; it is a description of what prayer essentially does in this condition. Efraim therefore shares the essential nature of prayer-as-malkhut (prayer that rules over foreign thoughts). Merged into Package 1 as the second inner posture of sovereign prayer."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 97,
+      "label": "שֶׁפַע וְאוֹתִיּוֹת הַשֵּׁם",
+      "label_en": "Divine Flow and the Letters of the Name",
+      "polarity": "good",
+      "reason": "This package unifies all concepts whose essential nature is 'the divine flow of abundance as expressed through the letters of the divine Names.' The Rebbe builds an intricate kabbalistic structure: (a) הַשֶּׁפַע נִקְרֵאת ה' (line 2) — the shefa IS the letter Heh, confirmed in line 23 'ה' הִיא הַשֶּׁפַע'; (b) the letter Heh in its three written forms has a gematria equaling חָלָב (milk) — line 23; (c) the letters א\"ל (= the word El, composed of Alef-Lamed) ARE דָּד (nipple/source of nourishment — line 2 and restated in line 22); (d) similarly מ\"י (the two letters Mem-Yod) ARE דָּד; (e) עֲשָׂרָה מַאֲמָרוֹת (the Ten Utterances of Creation) ARE the letter יוּ\"ד (line 17: 'עֲשָׂרָה מַאֲמָרוֹת הַנַּ\"ל הֵם יוּ\"ד'); (f) חֶסֶד IS called אֵל (line 18: 'חֶסֶד נִקְרָא אֵל'), linking Chesed to the א\"ל cluster. All these concepts share the same essential domain: divine shefa as it descends through the letter-structure of Elkim/El. The letter Heh = shefa = milk (chalav), and the letters of the Name El and Mi each = dad (nipple). The shefa-as-nurture metaphor (milk, nipple/dad) runs through all nodes, binding them into one conceptual family. This is also the cosmic frame: shefa is what prayer restores (when ה' becomes ד' through sin, prayer must restore it to ה').",
+      "dominant_node": "שפע",
+      "nodes": [
+        "שפע",
+        "ה' (אות)",
+        "חלב",
+        "א\"ל (אותיות)",
+        "מ\"י (אותיות)",
+        "דד",
+        "עשרה מאמרות",
+        "יו\"ד (אות)",
+        "חסד",
+        "אל"
+      ],
+      "node_degrees": {
+        "שפע": 2,
+        "ה' (אות)": 3,
+        "דד": 2,
+        "א\"ל (אותיות)": 2,
+        "מ\"י (אותיות)": 2,
+        "חסד": 1,
+        "אל": 2,
+        "עשרה מאמרות": 1,
+        "יו\"ד (אות)": 1,
+        "חלב": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["חסד", "אל"],
+          "reason": "Line 18: 'חֶסֶד נִקְרָא אֵל, שֶׁנֶּאֱמַר: חֶסֶד אֵל כָּל הַיּוֹם.' Chesed IS called El. El in this Torah is identified with the two letters Alef-Lamed (= א\"ל = dad). The Rebbe's conclusion in line 21-22 is: awaken the bechina of 'El' through prayer — and 'א\"ל בְּחִינַת דַּד.' Chesed-El-dad form a single conceptual node: the loving, nourishing divine attribute that flows as shefa. They are merged with the main shefa/letters cluster because all share the same essential nature (the divine nurturing flow) and because the Rebbe himself connects them via niqra and the proof texts."
+        },
+        {
+          "merged_nodes": ["עשרה מאמרות", "יו\"ד (אות)"],
+          "reason": "Line 17: 'וַעֲשָׂרָה מַאֲמָרוֹת הַנַּ\"ל הֵם יוּ\"ד' — the Ten Utterances of Creation ARE the letter Yud. And then: 'יוּ\"ד וְד' הַנַּ\"ל — נַעֲשֶׂה ה'' — Yud + Dalet = Heh (the letter Heh = shefa). This bechina-pair connects directly into the main shefa/letter cluster: Ten Utterances = Yud; Yud + Dalet = Heh = shefa. The chain is clear: prayer activates chesed (El), which flows as shefa (Heh), sustained by the Ten Utterances (Yud), which through renewal re-creates the world. All share the nature of 'divine creative speech as the vessel of shefa.'"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 97,
+      "label": "גִּלְעָד וְהַתַּעֲנוּג הָאֱלֹקִי",
+      "label_en": "Gilad and the Divine Pleasure",
+      "polarity": "good",
+      "reason": "Line 13 states: 'לִי גִלְעָד – לְשׁוֹן גַּל עֵד, שֶׁנִּתְגַּלָּה הַתַּעֲנוּג שֶׁהָיָה לְהַשֵּׁם יִתְבָּרַךְ קֹדֶם בְּרִיאַת הָעוֹלָם, שֶׁעִדֵּן וְקִשֵּׁט בִּתְפִלָּתָן שֶׁל צַדִּיקִים.' Gilad (גִּלְעָד) is etymologically decoded as gal-ed (גַּל עֵד = witness-heap), meaning the revelation of the divine pleasure (taanug) that existed before creation. This taanug was God's 'adorning Himself' with the prayers and good deeds of the righteous that He foresaw. The word Gilad thus IS the revealed divine taanug. These two nodes (Gilad and Taanug) form a bechina pair that represents a distinct thematic domain: the cosmic dimension of prayer — namely that prayer is not just personally transformative but cosmically restorative of the pre-creation divine pleasure. This is conceptually distinct from Package 1 (what prayer IS for the one praying) and Package 2 (the kabbalistic mechanics of shefa). The Taanug domain describes WHY the world was created and what prayer re-activates — a unique metaphysical dimension of the teaching.",
+      "dominant_node": "גלעד",
+      "nodes": [
+        "גלעד",
+        "תענוג"
+      ],
+      "node_degrees": {
+        "גלעד": 1,
+        "תענוג": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_bechina_edges_from_dataset": 0,
+    "total_bechina_edges_from_source_text": 14,
+    "total_nodes": 20,
+    "total_packages": 3,
+    "raw_connected_components": 5,
+    "components_merged_into_packages": 3,
+    "dataset_status": "NO_BECHINA_EDGES_IN_DATASET — all packages derived from source text bechina analysis only",
+    "note_on_merges": "5 raw components identified from source text bechina language: (A) 10 nodes — shefa/letters/chesed [Package 2]; (B) 4 nodes — prayer/malkhut/yirah/yehudah [Package 1 core]; (C) 2 nodes — Menashe/shkicha [merged into Package 1]; (D) 1-2 nodes — Efraim/transformation [merged into Package 1]; (E) 2 nodes — Gilad/taanug [Package 3]. Components C and D merged into Package 1 because Menashe and Efraim describe the essential inner nature of prayer-with-malkhut, not merely causal steps toward it (the Rebbe says 'מִתְפַּלֵּל בִּשְׁתֵּי בְּחִינוֹת' — praying IN/WITH these bechinot). Component E kept separate as Package 3 because the divine pleasure/cosmic dimension is a distinct essential nature from prayer-as-sovereignty."
+  }
+}

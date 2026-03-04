@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "source": "Torah #96 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_96_packages.json (just created), all reference===96 edges from torahData.js (zero found), and the full source text torah_96.txt (15 lines). Searched for explicit bechina language (הַיְנוּ, כְּלוֹמַר, בְּחִינַת, הוּא בְּחִינַת, נִקְרָא) in the source text. Cross-checked every concept named in the source text against the seven reconstructed bechina pairs. The source text has two distinct sections: (A) the explanatory body (lines 2-7) which is predominantly eitza/causal; (B) the verse-interpretation (lines 9-15) which is bechina-dense. All seven bechina pairs from section B were captured in the packages. Section A was examined for any additional bechina-language statements."
+  },
+  "additions": [
+    {
+      "concept": "נִיצוֹצוֹת / מַחֲשָׁבָה זָרָה",
+      "suggested_package": 1,
+      "package_label": "מַחֲשָׁבָה זָרָה וּמַחֲלֹקֶת — הַכֹּחַ הָרָע",
+      "polarity": "evil",
+      "source_quote": "מֵעֵת הַשְּׁבִירָה נָפְלוּ הַנִּיצוֹצוֹת מִכָּל הָעוֹלָמוֹת... נוֹפֵל לוֹ מַחֲשָׁבָה זָרָה מֵעֵין אוֹתָהּ מִדָּה",
+      "justification": "The source text explains that the machshava zara is ontologically a 'ninotzot' (fallen spark) from the shevirah (breaking of vessels). The phrase 'מַחֲשָׁבָה זָרָה מֵעֵין אוֹתָהּ מִדָּה' (a foreign thought that is 'of the same quality/type' as that midda) uses 'מֵעֵין' — which means 'of the same kind as', functioning semantically like a weak bechina equivalence. The machshava zara IS a fallen version of the ninotzot from that midda. This implicit bechina (נִיצוֹצוֹת ↔ מַחֲשָׁבָה זָרָה) grounds the entire Torah's cosmological premise. The ninotzot share the essential nature of the machshava zara — they are the same spiritual substance, just one is 'fallen' (the machshava zara that disrupts prayer) and one is 'original' (the spark awaiting elevation). However, the language is not the explicit 'הַיְנוּ' or 'בְּחִינַת' form used in the verse-interpretation section. It is a strong implicit bechina candidate that would logically belong in Package 1.",
+      "edge_type": "bechina_candidate",
+      "node1": "נִיצוֹצוֹת",
+      "node2": "מַחֲשָׁבָה זָרָה",
+      "explicitness_level": "implicit — uses 'מֵעֵין' (of the same quality as) rather than explicit 'הַיְנוּ' language"
+    },
+    {
+      "concept": "מִדָּה / עוֹלָם",
+      "suggested_package": 2,
+      "package_label": "הַצַּדִּיק — לִבּוֹ, רְצוֹנוֹ, וּמַדְרֵגָתוֹ",
+      "polarity": "good",
+      "source_quote": "וְהַצַּדִּיק צָרִיךְ לֵידַע מֵאֵיזֶה מִדָּה וּמֵאֵיזֶה עוֹלָם הִיא זֹאת הַמַּחֲשָׁבָה זָרָה",
+      "justification": "The text treats מִדָּה (divine attribute/quality) and עוֹלָם (spiritual world/realm) as near-synonymous structures: the tzaddik must know 'from which midda and from which olam' the machshava zara came, in order to know 'with what to elevate it to that olam and to that midda.' The phrase pairs them interchangeably, implying they are different names for the same structural reality (the level/quality from which the spark fell). This implicit bechina (מִדָּה ↔ עוֹלָם) extends the מַדְרֵגָה node already in Package 2 — all three terms (מדה, עולם, מדרגה) describe the same structural concept: the spiritual station/level that is both the origin of the machshava zara and the destination of its elevation. Suggested package is 2 because this is the tzaddik's navigational knowledge (a positive spiritual faculty), not part of the evil force cluster.",
+      "edge_type": "bechina_candidate",
+      "node1": "מִדָּה",
+      "node2": "עוֹלָם",
+      "explicitness_level": "implicit — both terms used interchangeably in the same syntactic position ('מֵאֵיזֶה מִדָּה וּמֵאֵיזֶה עוֹלָם'), suggesting they are equivalent designators for the same spiritual structure"
+    },
+    {
+      "concept": "מִדָּה / מַדְרֵגָה",
+      "suggested_package": 2,
+      "package_label": "הַצַּדִּיק — לִבּוֹ, רְצוֹנוֹ, וּמַדְרֵגָתוֹ",
+      "polarity": "good",
+      "source_quote": "וְצָרִיךְ לֵידַע בַּמֶּה לְהַעֲלוֹתָהּ לְאוֹתוֹ עוֹלָם וּלְאוֹתוֹ הַמִּדָּה שֶׁהוּא עַתָּה בָּהּ",
+      "justification": "The text speaks of the tzaddik's need to 'elevate it to that olam and to that midda that he is NOW IN' — meaning the midda is also the current madrega (spiritual level) of the tzaddik himself. The midda he is currently in IS his madrega. This is a bechina equivalence: מִדָּה (in the sense of divine quality/attribute) ↔ מַדְרֵגָה (spiritual level), since both describe the tzaddik's current spiritual station. This addition would connect מִדָּה into the מַדְרֵגָה node already in Package 2, extending the three-node level-structure within that package.",
+      "edge_type": "bechina_candidate",
+      "node1": "מִדָּה",
+      "node2": "מַדְרֵגָה",
+      "explicitness_level": "implicit — the text uses both terms to describe the tzaddik's 'current level', equating them through context"
+    },
+    {
+      "concept": "מַחֲלֹקֶת / מַחֲשָׁבָה זָרָה (inner-outer equivalence)",
+      "suggested_package": 1,
+      "package_label": "מַחֲשָׁבָה זָרָה וּמַחֲלֹקֶת — הַכֹּחַ הָרָע",
+      "polarity": "evil",
+      "source_quote": "כִּי כְּשֶׁיֵּשׁ מַחֲלֹקֶת עַל אֵיזֶה צַדִּיק, נוֹפֵל מַחֲשָׁבָה זָרָה מֵעֵין אוֹתָהּ מַחֲלֹקֶת לְצַדִּיק אַחֵר",
+      "justification": "The body of the teaching (line 7) explicitly states: 'when there is machloket on a certain tzaddik, a machshava zara of the same quality (מֵעֵין) as that machloket falls on another tzaddik.' This means the machshava zara IS 'like' the machloket — they share the same essential spiritual substance. The phrase 'מֵעֵין אוֹתָהּ מַחֲלֹקֶת' (of the same quality as that conflict) is a bechina statement: the machshava zara and the machloket are the same spiritual reality appearing at different levels (inner vs. outer, subjective vs. social). This inner-outer equivalence is the theological heart of the Torah — it explains WHY the tzaddik gets the machshava zara (because of external machloket). This confirms and strengthens the existing Package 1 grouping, adding a narrative-body bechina to the verse-interpretation bechinat already captured. This addition is already implicitly represented in Package 1 (both nodes are there), but the direct equivalence from the body text is noted here as a gap in explicit dataset representation.",
+      "edge_type": "bechina_candidate",
+      "node1": "מַחֲלֹקֶת",
+      "node2": "מַחֲשָׁבָה זָרָה",
+      "explicitness_level": "strong implicit — 'מֵעֵין אוֹתָהּ מַחֲלֹקֶת' declares the machshava zara to be of the SAME ESSENCE as the machloket; equivalent to 'הַיְנוּ' in force"
+    },
+    {
+      "concept": "רָצוֹן / כֹּחַ הָרָצוֹן",
+      "suggested_package": 2,
+      "package_label": "הַצַּדִּיק — לִבּוֹ, רְצוֹנוֹ, וּמַדְרֵגָתוֹ",
+      "polarity": "good",
+      "source_quote": "אַף־עַל־פִּי שֶׁאֵינוֹ מַעֲלֶה אוֹתָהּ, מְשַׁבֵּר בְּכֹחַ הָרָצוֹן כָּל בַּעֲלֵי הַמַּחֲלֹקֶת",
+      "justification": "The teaching says that even when the tzaddik cannot elevate the machshava zara, he 'breaks [all the baalei machloket] with the power of the will (כֹּחַ הָרָצוֹן).' The 'כֹּחַ הָרָצוֹן' is explicitly equated with the חֹרֵק שִׁנַּיִם in the verse interpretation ('חֹרֵק שִׁנַּיִם – הַיְנוּ שֶׁרוֹצֶה לְהַעֲלוֹתָהּ'). But the body text adds the intensified phrase 'כֹּחַ הָרָצוֹן' (the power/force of the will) as a distinct name for this faculty. This is a bechina pair within Package 2: כֹּחַ הָרָצוֹן ↔ רָצוֹן לְהַעֲלוֹת. Both name the same positive spiritual force of the tzaddik. This addition would enrich the existing Package 2 node 'רָצוֹן לְהַעֲלוֹת' by adding 'כֹּחַ הָרָצוֹן' as a connected bechina synonym.",
+      "edge_type": "bechina_candidate",
+      "node1": "כֹּחַ הָרָצוֹן",
+      "node2": "רָצוֹן לְהַעֲלוֹת",
+      "explicitness_level": "strong implicit — both terms name the same spiritual act (the tzaddik's will to elevate/break the machloket); 'כֹּחַ הָרָצוֹן' in the body and 'שֶׁרוֹצֶה לְהַעֲלוֹתָהּ' in the verse interpretation are descriptions of the same bechina"
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_reconstructed_from_source": 7,
+    "nodes_in_dataset_not_in_packages": [],
+    "all_dataset_nodes_assigned": true,
+    "source_text_bechina_scan": {
+      "lines_examined": 15,
+      "explicit_bechina_phrases_found": 7,
+      "explicit_bechina_phrases_detail": "All 7 explicit bechina statements use the marker 'הַיְנוּ' (i.e., meaning, that is) or 'כְּלוֹמַר' (meaning, in other words) in the verse-interpretation section (lines 9-15). These are: (1) זֹמֵם רָשָׁע – הַיְנוּ מַחֲשָׁבָה זָרָה; (2) וְחֹרֵק עָלָיו שִׁנָּיו – הַיְנוּ שֶׁרוֹצֶה לְהַעֲלוֹתָהּ; (3) כִּי יָבֹא יוֹמוֹ – הַיְנוּ שֶׁעֲדַיִן לֹא בָּא לְמַדְרֵגַת הַמַּחֲשָׁבָה זָרָה; (4) חֶרֶב – לְשׁוֹן מִלְחָמָה, הַיְנוּ שֶׁנִּתְעוֹרֵר מַחֲלֹקֶת; (5) חַרְבָּם – הַיְנוּ הַמַּחֲשָׁבָה זָרָה שֶׁל אוֹתָהּ הַמַּחֲלֹקֶת; (6) תָּבוֹא בְלִבָּם – הַיְנוּ בְּלֵב צַדִּיק זֶה; (7) וְקַשְּׁתוֹתָם תִּשָּׁבַרְנָה – כְּלוֹמַר, הַמַּחֲלֹקֶת הַנַּ\"ל.",
+      "implicit_bechina_candidates_found": 5,
+      "implicit_bechina_candidates_detail": "Five implicit bechina candidates were identified using 'מֵעֵין' (of the same quality/type) and contextual equivalence: (1) נִיצוֹצוֹת ↔ מַחֲשָׁבָה זָרָה (same spiritual substance at different states); (2) מִדָּה ↔ עוֹלָם (interchangeable terms for spiritual levels); (3) מִדָּה ↔ מַדְרֵגָה (the tzaddik's midda = his madrega); (4) מַחֲלֹקֶת ↔ מַחֲשָׁבָה זָרָה (inner-outer equivalence declared in body text); (5) כֹּחַ הָרָצוֹן ↔ רָצוֹן לְהַעֲלוֹת (same faculty, two names)."
+    },
+    "concepts_in_source_text_not_in_any_package": [
+      {
+        "concept": "נִיצוֹצוֹת (fallen sparks)",
+        "status": "gap — cosmological foundation of the teaching but no explicit bechina statement",
+        "note": "The ninotzotzot are the cosmological premise, not a bechina node in the verse-interpretation. They are implicitly equivalent to the machshava zara (the machshava zara IS a fallen spark) but the text does not use הַיְנוּ or בְּחִינַת to declare this equivalence."
+      },
+      {
+        "concept": "שְׁבִירָה (breaking of vessels)",
+        "status": "gap — mentioned as historical event, not as a bechina node",
+        "note": "The Shevirah (Lurianic breaking of vessels) is the background cosmological event. It is described, not identified as a bechina of another concept in this Torah."
+      },
+      {
+        "concept": "מִדָּה (divine attribute/quality)",
+        "status": "gap — used extensively in body text but not as a bechina node with explicit הַיְנוּ language",
+        "note": "מִדָּה appears 6 times in lines 4-5 as the source-level of the machshava zara. The body text implicitly equates מִדָּה with מַדְרֵגָה and עוֹלָם. Suggested addition to Package 2."
+      },
+      {
+        "concept": "עוֹלָם (spiritual world/realm)",
+        "status": "gap — used interchangeably with מִדָּה in body text",
+        "note": "עוֹלָם appears in lines 3-4 as the parallel to מִדָּה. Together they describe the same spiritual structural reality. Suggested addition to Package 2."
+      },
+      {
+        "concept": "צַדִּיק (the righteous teacher)",
+        "status": "partially represented — present as implied subject of Package 2",
+        "note": "The entire Torah is about the tzaddik, but צַדִּיק itself is not a bechina node — it is the subject of the verse and the teaching. The verse figures (לִבָּם) are identified AS the tzaddik's inner world. No explicit bechina pair 'צַדִּיק = X' appears in the text."
+      },
+      {
+        "concept": "תְּפִלָּה (prayer)",
+        "status": "gap — context/setting of the teaching, not a bechina node",
+        "note": "The tzaddik's prayer is the context for the machshava zara, but prayer itself is not given a bechina equivalence in Torah #96. It is mentioned as what the tzaddik is engaged in ('עוֹמֵד לְהִתְפַּלֵּל') but not identified as a bechina of another concept here."
+      },
+      {
+        "concept": "בַּעֲלֵי מַחֲלֹקֶת (those who dispute)",
+        "status": "gap — closely related to מַחֲלֹקֶת (Package 1) but not separately a bechina node",
+        "note": "The 'baalei machloket' (those who stir the conflict) are mentioned as what the tzaddik's ratzon breaks. They are the agents of the machloket, not a separate bechina. They could be considered a variant of the מַחֲלֹקֶת node in Package 1."
+      }
+    ],
+    "good_evil_mirror_analysis": "Torah #96 has a clear good/evil mirror structure: Package 1 (evil) = the external and internal forces of disruption (machshava zara / machloket / sword / bow) versus Package 2 (good) = the tzaddik's inner spiritual capacities (heart, will, spiritual level). The evil mirror is unusually explicit because the entire Torah is built on a verse-by-verse decoding: each verse-phrase is identified as either the evil force (Package 1) or the tzaddik's response (Package 2). The evil cluster (sword, bow, wicked plotter) mirrors the good cluster (heart, will, day-that-comes) in perfect structural balance across the verse.",
+    "teaching_structure_summary": "Torah #96 argues: The machshava zara during prayer is NOT accidental — it is a fallen spark (ninotzot) from the tzaddik's own spiritual level, OR it is the spiritual manifestation of external machloket (controversy) against a different tzaddik. The tzaddik's response (wanting to elevate it) breaks the machloket even without success. This is the eitza flow: machloket → machshava zara → enters tzaddik's lev → tzaddik's ratzon to elevate → breaks baalei machloket. The two packages (evil force / tzaddik's world) are the two sides of this battle, connected by eitza (the evil force enters the good vessel; the good response breaks the evil)."
+  }
+}

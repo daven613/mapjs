@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "source": "Torah #68",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_68_packages.json, all reference===68 bechina edges from torahData.js (3 edges), and the full source text torah_68.txt (11 lines). For each bechina statement in the source text, verified whether the concept appears as a node in the dataset with a reference===68 edge. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ, בְּחִינָה אַחַת, נִקְרָא) were considered. Proof-text citations (biblical verse references supporting an existing bechina) were excluded."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "מָמוֹן וְשֶׁפַע קֹדֶשׁ",
+      "node_id": "כעס ממון בשורש ההשתלשלות",
+      "node_text": "כַּעַס וְהַמָּמוֹן בְּחִינָה אַחַת בְּשֹׁרֶשׁ הַהִשְׁתַּלְשְׁלוּת",
+      "polarity": "neutral",
+      "reason": "The Rebbe states three times (lines 5, 7, 8) that at the level of the root of descent, anger and money are 'literally one bechina and one matter' (בְּחִינָה אַחַת וְעִנְיָן אֶחָד). This is the central bechina claim of the entire Torah — that the same root substance descends as holy wealth when flowing one way, and as anger when inverted by the Baal Davar. The dataset captures each side separately (ממון↔חומה; רעה↔כעס) but does NOT contain an edge expressing the fundamental equation: ממון ↔ כעס at the root-level. Lines 5 and 7 are explicit: 'כִּי בִּבְחִינַת שֹׁרֶשׁ הַהִשְׁתַּלְשְׁלוּת שֶׁמִּשְׁתַּלְשֵׁל הַמָּמוֹן... הוּא בְּחִינָה אַחַת עִם הַכַּעַס מַמָּשׁ' and 'כִּי הַכַּעַס הוּא מַמָּשׁ בְּחִינָה אַחַת וְעִנְיָן אֶחָד עִם הַמָּמוֹן, בִּמְקוֹם שֹׁרֶשׁ הַהִשְׁתַּלְשְׁלוּת'. A new bechina edge is needed: node1=ממון, node2=כעס, with qualifying text 'בְּמָקוֹם שֹׁרֶשׁ הַהִשְׁתַּלְשְׁלוּת' (at the level of the root of descent). This edge would connect Package 1 and Package 2, revealing the shared Gevurot root that underlies both holy wealth and anger — the Torah's key theological insight. Polarity is 'neutral' because the shared root substance pre-exists its bifurcation into good (ממון) and evil (כעס); it is the pivot-point between the two packages.",
+      "source_quote": "כִּי הַכַּעַס הוּא מַמָּשׁ בְּחִינָה אַחַת וְעִנְיָן אֶחָד עִם הַמָּמוֹן, בִּמְקוֹם שֹׁרֶשׁ הַהִשְׁתַּלְשְׁלוּת, וְאֵין בֵּינֵיהֶם שׁוּם הֶפְרֵשׁ, כִּי שְׁנֵיהֶם יוֹרְדִים מִגְּבוּרוֹת, וְנִמְשָׁכִין מִמָּקוֹם אֶחָד מַמָּשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_new_edge": {
+        "node1_id": "ממון",
+        "node2_id": "כעס",
+        "type": "bechina",
+        "reference": 68,
+        "proof": "כִּי הַכַּעַס הוּא מַמָּשׁ בְּחִינָה אַחַת וְעִנְיָן אֶחָד עִם הַמָּמוֹן, בִּמְקוֹם שֹׁרֶשׁ הַהִשְׁתַּלְשְׁלוּת, וְאֵין בֵּינֵיהֶם שׁוּם הֶפְרֵשׁ, כִּי שְׁנֵיהֶם יוֹרְדִים מִגְּבוּרוֹת"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "מָמוֹן וְשֶׁפַע קֹדֶשׁ",
+      "node_id": "גבורות",
+      "node_text": "גְּבוּרוֹת",
+      "polarity": "neutral",
+      "reason": "Line 7 states: 'שְׁנֵיהֶם יוֹרְדִים מִגְּבוּרוֹת, וְנִמְשָׁכִין מִמָּקוֹם אֶחָד מַמָּשׁ' — both money and anger descend from Gevurot and are drawn from literally one place. Although this uses 'יוֹרְדִים מִגְּבוּרוֹת' rather than 'בְּחִינַת גְּבוּרוֹת,' the Rebbe is identifying the essential shared nature of ממון and כעס: both ARE Gevurot in their root. The verse citation 'מִצָּפוֹן זָהָב יֶאֱתֶה' (Iyov 37) for money and 'מִצָּפוֹן תִּפָּתַח הָרָעָה' (Yirmiyah 1) for anger both use Tzafon (north), which in Kabbalistic geography is the domain of Gevurot. The Rebbe then cites the verse 'וְהָסֵר כַּעַס מִלִּבֶּךָ וְהַעֲבֵר רָעָה מִבְּשָׂרֶךָ' to show the equivalence. A missing bechina edge: node1=גבורות, node2=שורש ההשתלשלות שממנו ממון וכעס would capture this. Polarity is neutral: Gevurot is a sefira that can manifest as holy severity (din/tzimtzum supporting holiness) or as destructive anger; it is structurally neutral — the shared root that bifurcates into good ממון and evil כעס.",
+      "source_quote": "כִּי שְׁנֵיהֶם יוֹרְדִים מִגְּבוּרוֹת, וְנִמְשָׁכִין מִמָּקוֹם אֶחָד מַמָּשׁ, בִּבְחִינַת (אִיּוֹב לז): מִצָּפוֹן זָהָב יֶאֱתֶה; וּכְתִיב (יִרְמְיָה א): מִצָּפוֹן תִּפָּתַח הָרָעָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_new_edge": {
+        "node1_id": "גבורות",
+        "node2_id": "התחלת המקום שמשתלשל משם הממון",
+        "type": "bechina",
+        "reference": 68,
+        "proof": "שְׁנֵיהֶם יוֹרְדִים מִגְּבוּרוֹת, וְנִמְשָׁכִין מִמָּקוֹם אֶחָד מַמָּשׁ, בִּבְחִינַת מִצָּפוֹן זָהָב יֶאֱתֶה"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "מָמוֹן וְשֶׁפַע קֹדֶשׁ",
+      "node_id": "נפש",
+      "node_text": "נֶפֶשׁ",
+      "polarity": "good",
+      "reason": "Line 9 states: 'תְּחִלַּת שֹׁרֶשׁ הִשְׁתַּלְשְׁלוּת הַמָּמוֹן, הוּא מָקוֹם שֶׁהַנֶּפֶשׁ בָּאָה מִשָּׁם' — the beginning-root of money's descent is the same place from which the soul comes. This is an explicit identity statement: the soul's place of origin = the root of money's descent. Line 2 also introduces this: 'הַנֶּפֶשׁ בָּאָה מִמָּקוֹם עֶלְיוֹן, שֶׁהַמָּמוֹן בָּא וּמִשְׁתַּלְשֵׁל וּמִתְהַוֶּה מִשָּׁם' — the soul comes from the supernal place from which money descends. The proof-verse cited is Dvarim 24:15 ('וְאֵלָיו הוּא נוֹשֵׂא אֶת נַפְשׁוֹ', said about the ממון of a day-laborer — he carries his soul toward his wages) and Eikha 5:9 ('בְּנַפְשֵׁנוּ נָבִיא לַחְמֵנוּ' — with our souls we bring our bread). The Rebbe uses these to prove that the nefesh literally tends toward ממון because they share the same origin. This is a missing bechina edge: נפש ↔ מקום שמשתלשל משם הממון. The nefesh belongs in Package 1 (the good/holy cluster) because the shared origin is explicitly called 'קדושה ושפע קדש.'",
+      "source_quote": "תְּחִלַּת שֹׁרֶשׁ הִשְׁתַּלְשְׁלוּת הַמָּמוֹן, הוּא מָקוֹם שֶׁהַנֶּפֶשׁ בָּאָה מִשָּׁם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_new_edge": {
+        "node1_id": "נפש",
+        "node2_id": "התחלת המקום שמשתלשל משם הממון",
+        "type": "bechina",
+        "reference": 68,
+        "proof": "תְּחִלַּת שֹׁרֶשׁ הִשְׁתַּלְשְׁלוּת הַמָּמוֹן, הוּא מָקוֹם שֶׁהַנֶּפֶשׁ בָּאָה מִשָּׁם, בִּבְחִינַת (דְּבָרִים כד): וְאֵלָיו הוּא נוֹשֵׂא אֶת נַפְשׁוֹ"
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "כַּעַס וְרָעָה",
+      "node_id": "עיר פרוצה אין חומה",
+      "node_text": "עִיר פְּרוּצָה אֵין חוֹמָה",
+      "polarity": "evil",
+      "reason": "Line 8 states: 'וְהַכַּעַס הוּא קִלְקוּל הַחוֹמָה, כְּמוֹ שֶׁכָּתוּב (שם כה): עִיר פְּרוּצָה אֵין חוֹמָה, אִישׁ אֲשֶׁר אֵין מַעְצָר לְרוּחוֹ.' The person without self-control over his spirit = a breached city with no wall. The Rebbe identifies כעס as the 'ruination of the wall' (קִלְקוּל הַחוֹמָה), and then cites the verse 'עיר פרוצה אין חומה' as the bechina of the man who has no restraint over his spirit (= the angry person). This is an explicit bechina statement: the angry person who has no restraint = a breached, walled city. It is a node in the evil domain because it describes the outcome of כעס — the destroyed fortification. The dataset has no edge for this concept under Torah #68. It belongs in Package 2 alongside כעס and רעה.",
+      "source_quote": "וְהַכַּעַס הוּא קִלְקוּל הַחוֹמָה, כְּמוֹ שֶׁכָּתוּב: עִיר פְּרוּצָה אֵין חוֹמָה, אִישׁ אֲשֶׁר אֵין מַעְצָר לְרוּחוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_new_edge": {
+        "node1_id": "כעס",
+        "node2_id": "עיר פרוצה אין חומה",
+        "type": "bechina",
+        "reference": 68,
+        "proof": "וְהַכַּעַס הוּא קִלְקוּל הַחוֹמָה, כְּמוֹ שֶׁכָּתוּב: עִיר פְּרוּצָה אֵין חוֹמָה, אִישׁ אֲשֶׁר אֵין מַעְצָר לְרוּחוֹ"
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_68_edges": 3,
+    "total_reference_68_bechina_edges": 3,
+    "total_reference_68_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["ממון", "חומה", "התחלת המקום שמשתלשל משם הממון", "קדשה ושפע קדש"],
+      "package_2": ["כעס", "רעה"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["נפש", "גבורות", "עיר פרוצה אין חומה"],
+    "critical_missing_edge": "ממון ↔ כעס (at the level of שורש ההשתלשלות) — this is the central bechina of the entire Torah, stated three times in lines 5, 7, and 8. Without it, Package 1 and Package 2 appear as unrelated clusters; with it, the Torah's core teaching is visible: both are the same Gevurot-root, one manifesting as holy wealth, one as destructive anger.",
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "חמה (wrath) as inversion of חומה (wall)",
+        "reason": "Line 8 says 'עוֹשֶׂה לוֹ מֵחוֹמָה חֵמָה' — the Baal Davar converts the wall into wrath. This is a brilliant Hebrew wordplay (חומה → חמה, same letters rearranged) but the Rebbe does not use בְּחִינַת to establish חמה as a new concept node. It is a literary/rhetorical observation, not a formal bechina declaration. Excluded per framework rule."
+      },
+      {
+        "concept": "טרף נתן ליראיו (He gives prey to those who fear Him, Tehillim 111:5)",
+        "reason": "Line 11 cites this verse to describe the moment when wealth descends to a person. However the Rebbe does not say 'money is a bechina of טרף נתן ליראיו' with explicit bechina language. Rather he uses it narratively to set up the contrast with 'טורף נפשו באפו.' It is a proof-text citation used to build the dramatic contrast, not a standalone bechina declaration. Excluded."
+      },
+      {
+        "concept": "בעל דבר (the adversary/accuser)",
+        "reason": "The בעל דבר appears throughout the Torah (lines 6, 8, 10, 11) as an agent who converts the descending shefa of wealth into anger. However the Rebbe never uses בְּחִינַת to equate בעל דבר with another concept; it functions as a proper name for the adversarial force. There is no bechina declaration for this concept in Torah #68. Excluded."
+      },
+      {
+        "concept": "ילדות וקטנות (youth and smallness)",
+        "reason": "Line 4 states that the evil trait 'prevails over a person in his youth and smallness (בְּיַלְדוּתוֹ וּבְקַטְנוּתוֹ).' This is a descriptive observation, not a bechina equation. Excluded."
+      }
+    ]
+  }
+}

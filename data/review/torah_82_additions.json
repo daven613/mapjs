@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "source": "Torah #82",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "package_id": 2,
+      "node_id": "נשמת העשוקים",
+      "node_text": "נִשְׁמַת הָעֲשׁוּקִים",
+      "polarity": "neutral",
+      "reason": "The source text explicitly states of קלפת נגה: 'והיא בבחינת נשמת העשוקים' (line 3). This is direct bechina language — נגה IS the soul of the oppressed. נשמת העשוקים belongs in Package 2 (חשמ\"ל ונגה) as another expression of the same intermediate domain: the oppressed soul hovers at the boundary between holiness and impurity, just as נגה does. The concept is not currently in the dataset as a node for Torah 82.",
+      "source_quote": "והיא בבחינת נשמת העשוקים",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 2,
+      "node_id": "שתיקה_=_חשמל",
+      "node_text": "שְׁתִיקָה [בְּחִינַת חַשְׁמַ\"ל]",
+      "polarity": "neutral",
+      "reason": "The source text at line 16 states: 'זאת השתיקה שהיא בחינת חשמ\"ל, זהו בחינת נגה'. This is an explicit bechina equation: שתיקה IS בחינת חשמ\"ל. This is not a new node but a MISSING BECHINA EDGE between שתיקה (already a node in Package 5) and חשמ\"ל (in Package 2). If this edge were added to the dataset as bechina(שתיקה, חשמ\"ל), Packages 2 and 5 would merge into one connected component. This is the most significant structural gap in the Torah 82 dataset.",
+      "source_quote": "זאת השתיקה שהיא בחינת חשמ\"ל, זהו בחינת נגה",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "שתיקה_=_מילה",
+      "node_text": "שְׁתִיקָה [בְּחִינַת מִילָה]",
+      "polarity": "good",
+      "reason": "The source text at line 15 states: 'השתיקה, שהיא בחינת מילה, בחינת ביטול החרפה, שהיא בחינת ערלה כנ\"ל'. This is an explicit bechina equation: שתיקה IS בחינת מילה. This is a MISSING BECHINA EDGE between שתיקה (Package 5) and מילה (Package 1). If added, it would create a direct bechina connection between Package 5 and Package 1. Combined with the missing edge שתיקה=חשמ\"ל (see above), adding both would merge Packages 1, 2, and 5 into a single large component. The reasoning in the text is: silence (ח\"ש = שתיקה) enacts the same spiritual reality as circumcision (מ\"ל = מילה) — both nullify the ערלה/חרפה.",
+      "source_quote": "הַשְּׁתִיקָה, שֶׁהִיא בְּחִינַת מִילָה, בְּחִינַת בִּטּוּל הַחֶרְפָּה",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 3,
+      "node_id": "ואוהביו כצאת השמש בגבורתו",
+      "node_text": "וְאֹהֲבָיו כְּצֵאת הַשֶּׁמֶשׁ בִּגְבוּרָתוֹ",
+      "polarity": "good",
+      "reason": "The source text at line 13 states: 'ואוהביו כצאת השמש בגבורתו – היא בחינת שלהבת י\"ה כנ\"ל'. This verse from Shoftim is identified as an aspect of שלהבת י\"ה. The verse IS שלהבת י\"ה — the blazing divine love of those who love God and suffer insults in silence from love. This is a missing node/bechina edge for Package 3 (שלהבת י\"ה). The verse should be added as a bechina of שלהבת י\"ה in the dataset for Torah 82.",
+      "source_quote": "וְאֹהֲבָיו כְּצֵאת הַשֶּׁמֶשׁ בִּגְבוּרָתוֹ – הִיא בְּחִינַת שַׁלְהֶבֶת יָהּ כַּנַּ\"ל",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 4,
+      "node_id": "חרפה",
+      "node_text": "חֶרְפָּה",
+      "polarity": "evil",
+      "reason": "The entire Torah is about חרפה (shame/disgrace) as the product of the three klipot/ערלה. The text states: 'כי עיקר החרפות באים מבחינת ערלה, שהיא בחינת שלש קלפות הנ\"ל'. חרפה is explicitly בחינת ערלה — shame IS the ערלה. This concept appears throughout the Torah (lines 2, 5, 6, 7, 14) as the central problem being addressed, yet no bechina edge explicitly connects חרפה to the ערלה/שלש קלפות nodes in the dataset for Torah 82. Adding bechina(חרפה, ערלה) would complete the evil cluster.",
+      "source_quote": "כִּי עִקַּר הַחֲרָפוֹת בָּאִים מִבְּחִינַת עָרְלָה, שֶׁהִיא בְּחִינַת שָׁלֹשׁ קְלִפּוֹת הַנַּ\"ל",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 7,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "נשמת העשוקים — נגה/חשמ\"ל domain (Package 2), line 3: 'והיא בבחינת נשמת העשוקים'",
+      "שתיקה=חשמ\"ל missing edge — line 16: 'זאת השתיקה שהיא בחינת חשמ\"ל'",
+      "שתיקה=מילה missing edge — line 15: 'השתיקה, שהיא בחינת מילה'",
+      "ואוהביו כצאת השמש בגבורתו — Package 3 (שלהבת י\"ה), line 13",
+      "חרפה = ערלה — Package 4, mentioned throughout as the problem the Torah addresses"
+    ],
+    "structural_observation": "The most critical gap is the missing bechina chain שתיקה=חשמ\"ל=נגה (from lines 15-16 of the source text). The text explicitly writes 'וזהו חשמל – ח\"ש מ\"ל. הינו השתיקה, שהיא בחינת מילה' and 'זאת השתיקה שהיא בחינת חשמ\"ל, זהו בחינת נגה'. This means the text treats Packages 1, 2, and 5 as aspects of a single continuum: מ\"ל/מילה/קדשת הברית/יוסף — שתיקה/ח\"ש — חשמ\"ל/נגה. The dataset captures this in separate bechina edges but lacks the linking edges that would make this explicit in the graph.",
+    "good_evil_mirror": "Package 1 (קדשת הברית/מילה) is the exact evil mirror of Package 4 (ערלה/שלש קלפות). Package 4 is completely documented. The good side (Package 1) is also well-documented. The mirror is structurally clean."
+  }
+}

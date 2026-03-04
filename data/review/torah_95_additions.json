@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "source": "Torah #95 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_95_packages.json, all reference===95 edges from torahData.js (1 edge total, type=eitza), and the full source text torah_95.txt (3 lines). Searched for bechina language: בְּחִינַת, הַיְנוּ, פֵּרוּשׁ, נִקְרָא. Verified each concept against the dataset. Since there are zero bechina edges in the dataset for Torah #95, there are no unassigned dataset nodes. All additions are new concepts identified from the source text that should become bechina edges in the dataset."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "מָה וְאֶפֶס וָאַיִן — בְּחִינַת הַבִּיטּוּל",
+      "node_id": "מה",
+      "node_text": "מָה",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly states 'מַחֲזִיק אֶת עַצְמוֹ בִּבְחִינַת מָה וְאֶפֶס וָאַיִן.' The word מה (what? / nothingness) is used here in the kabbalistic sense of self-nullification — the state of a leader who holds himself as nothing. This follows the standard Breslov usage where מה echoes Moses's 'וְנַחְנוּ מָה' (Shemot 16:7 — 'and we are what?') as the paradigm of humble leadership. In this Torah, מה is the central node of the humility cluster. It connects to אפס and אין as parallel expressions of the same state (bechina), and to the kabbalistic identity אֲחוֹרַיִם דְּמ\"ה (the back-of-MaH from Etz Chaim) which is its gematria anchor. This node is not in the dataset for Torah #95.",
+      "source_quote": "מַחֲזִיק אֶת עַצְמוֹ בִּבְחִינַת מָה וְאֶפֶס וָאַיִן",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        { "node1": "מה", "node2": "אפס", "proof": "מַחֲזִיק אֶת עַצְמוֹ בִּבְחִינַת מָה וְאֶפֶס וָאַיִן — three parallel names for the same state of self-nullification" },
+        { "node1": "מה", "node2": "אין", "proof": "מַחֲזִיק אֶת עַצְמוֹ בִּבְחִינַת מָה וְאֶפֶס וָאַיִן — three parallel names for the same state of self-nullification" }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "מָה וְאֶפֶס וָאַיִן — בְּחִינַת הַבִּיטּוּל",
+      "node_id": "אפס",
+      "node_text": "אֶפֶס",
+      "polarity": "good",
+      "reason": "Presented in the same breath as מה and אין as a co-equal expression of the state of humility/nothingness. The Rebbe's triple phrase 'מָה וְאֶפֶס וָאַיִן' treats all three terms as bechinas of each other — parallel expressions of the same essential state of self-nullification. אפס (zero, nothing, absence) is the arithmetical/quantitative name for what מה is in the interrogative/questioning mode and אין is in the ontological/being mode. They are three facets of one concept. This node is not in the dataset for Torah #95.",
+      "source_quote": "מַחֲזִיק אֶת עַצְמוֹ בִּבְחִינַת מָה וְאֶפֶס וָאַיִן",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        { "node1": "אפס", "node2": "מה", "proof": "three parallel names for self-nullification presented in one compound phrase" }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "מָה וְאֶפֶס וָאַיִן — בְּחִינַת הַבִּיטּוּל",
+      "node_id": "אין",
+      "node_text": "אַיִן",
+      "polarity": "good",
+      "reason": "The third member of the triple-name for self-nullification. אין (nothingness, non-being) is the ontological/metaphysical name for the same reality. In standard Breslov/kabbalistic discourse אין is the highest level of self-nullification — the dissolution into divine nothingness. The Rebbe places it last in the sequence מה→אפס→אין, suggesting ascending depth of nullification. All three are parallel aspects (bechinas) of the same domain. This node is not in the dataset for Torah #95.",
+      "source_quote": "מַחֲזִיק אֶת עַצְמוֹ בִּבְחִינַת מָה וְאֶפֶס וָאַיִן",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        { "node1": "אין", "node2": "מה", "proof": "three parallel names for self-nullification presented in one compound phrase" }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "קֻפָּה שֶׁל שְׁרָצִים וְאֲחוֹרַיִם דְּמָ\"ה",
+      "node_id": "קופה של שרצים",
+      "node_text": "קֻפָּה שֶׁל שְׁרָצִים",
+      "polarity": "neutral",
+      "reason": "The basket of creeping things is the rabbinic image from Yoma 22b: every communal leader must have 'a basket of creeping things hanging behind him,' meaning some compromising history that keeps him humble. The Rebbe identifies this basket as the kabbalistic 'אֲחוֹרַיִם דְּמ\"ה' — these two are the same concept from two different knowledge-systems. Note: edge 1738 in the dataset does contain this node (node1_id='קפה של שרצים שתלוי מאחוריו') but is typed as eitza, not bechina. The bechina relationship between קופה של שרצים and אחוריים דמ\"ה is MISSING from the dataset and needs to be added.",
+      "source_quote": "פֵּרוּשׁ, עַל יְדֵי קֻפָּה שֶׁל שְׁרָצִים שֶׁתָּלוּי מֵאֲחוֹרָיו, עַל יְדֵי זֶה מַחֲזִיק אֶת עַצְמוֹ בִּבְחִינַת מָה",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 1738,
+      "dataset_edge_type": "eitza",
+      "note": "Node appears in the dataset but only in an eitza edge. The bechina edge between קופה של שרצים and אחוריים דמ\"ה has not been added to the dataset.",
+      "proposed_bechina_edges": [
+        { "node1": "קופה של שרצים", "node2": "אחוריים דמ\"ה", "proof": "וְזֶה פֵּרוּשׁ סוֹד שֶׁמּוּבָא בְּעֵץ הַחַיִּים שַׁעַר אֲרִיךְ אַנְפִּין פֶּרֶק י\"ב: אֲחוֹרַיִם דְּמ\"ה, תָּסִיר מ\"ה נִשְׁאָר פ\"ה. פֵּרוּשׁ, עַל יְדֵי קֻפָּה שֶׁל שְׁרָצִים..." }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "קֻפָּה שֶׁל שְׁרָצִים וְאֲחוֹרַיִם דְּמָ\"ה",
+      "node_id": "אחוריים דמ\"ה",
+      "node_text": "אֲחוֹרַיִם דְּמ\"ה",
+      "polarity": "neutral",
+      "reason": "The kabbalistic term from Etz Chaim (Sha'ar Arich Anpin, ch. 12): 'אֲחוֹרַיִם דְּמ\"ה' — the back-aspect/posterior of MaH. In the Lurianic framework, the 'back' (אחוריים) of a sefira or divine name represents its reduced/contracted light that faces outward and downward rather than upward and inward. The back-of-MaH is gematria-equivalent to פה: אחוריים מ\"ה = מ (40) + ה (5) = 45 total, but remove מה (=45) from אחוריים-דמ\"ה, the remaining letters spell פ\"ה. The Rebbe uses this as the interpretive key: the 'basket' is the acharayim of MaH, and removing MaH leaves only the mouth of public disgrace. This concept is NOT currently in the dataset for Torah #95 and needs to be added.",
+      "source_quote": "אֲחוֹרַיִם דְּמ\"ה, תָּסִיר מ\"ה נִשְׁאָר פ\"ה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        { "node1": "אחוריים דמ\"ה", "node2": "קופה של שרצים", "proof": "The Rebbe's פֵּרוּשׁ (explanation) equates the kabbalistic אחוריים דמ\"ה with the talmudic basket of creeping things — both are the same humbling mechanism expressed in two different knowledge-domains" }
+      ]
+    },
+    {
+      "package_id": 3,
+      "package_label": "גַּאֲוָה וּפֶה — הַמַּנְהִיג הַמִּתְגָּאֶה",
+      "node_id": "פה",
+      "node_text": "פֶּה",
+      "polarity": "evil",
+      "reason": "When מה is removed from the leader's self-understanding, what remains is פה. The Rebbe explains this via the Etz Chaim formula: 'אֲחוֹרַיִם דְּמ\"ה, תָּסִיר מ\"ה נִשְׁאָר פ\"ה.' The פה is not merely the consequence of arrogance; it IS the nature of the arrogant state when viewed from the outside. The word הַיְנוּ (meaning / that is) establishes the bechina: 'אֲזַי נִשְׁאָר פֶּה, הַיְנוּ שֶׁבְּנֵי אָדָם פּוֹתְחִים אֶת פִּיהֶם' — 'then PeH remains, MEANING people open their mouths.' The peh is the public aspect of the arrogant leader's reality. This is the evil mirror-concept of מה: where מה is the humility-state (no mouth, just being), פה is the arrogance-state (all mouth, public disgrace). This node is not in the dataset for Torah #95.",
+      "source_quote": "אֲזַי נִשְׁאָר פֶּה, הַיְנוּ שֶׁבְּנֵי אָדָם פּוֹתְחִים אֶת פִּיהֶם וְאוֹמְרִים חֲזֹר לַאֲחוֹרֶיךָ, וּמְבַזִּים אוֹתוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        { "node1": "פה", "node2": "גאוה", "proof": "The peh (mouths opened against the leader) IS the arrogance-state made manifest — not merely caused by it. The arrogant leader IS his public exposure, per the Rebbe's structure." }
+      ]
+    },
+    {
+      "package_id": 3,
+      "package_label": "גַּאֲוָה וּפֶה — הַמַּנְהִיג הַמִּתְגָּאֶה",
+      "node_id": "גאוה",
+      "node_text": "גַּאֲוָה",
+      "polarity": "evil",
+      "reason": "Arrogance (גאוה) is the opposite pole to self-nullification (מה). The Rebbe's teaching explicitly contrasts: 'מַחֲזִיק אֶת עַצְמוֹ בִּבְחִינַת מָה' vs. 'שֶׁאֵין מַחֲזִיק אֶת עַצְמוֹ לְמָה, אֶלָּא שֶׁהוּא מִתְגָּאֶה.' The arrogant leader is the evil mirror of Package 1's humble leader. When the basket is removed and מה is stripped away, the resulting state is גאוה — and גאוה IS פה, because the Rebbe equates them via the formula. Arrogance and the opened mouth against the leader are parallel expressions of the same evil reality (the absence of מה). This node is not in the dataset for Torah #95.",
+      "source_quote": "וּכְשֶׁמֵּסִיר מִמֶּנּוּ מָה... אֶלָּא שֶׁהוּא מִתְגָּאֶה, אֲזַי נִשְׁאָר פֶּה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        { "node1": "גאוה", "node2": "פה", "proof": "Removing מה (humility) leaves גאוה, and גאוה's visible/public form IS פה — the mouths opened against him." }
+      ]
+    },
+    {
+      "package_id": 3,
+      "package_label": "גַּאֲוָה וּפֶה — הַמַּנְהִיג הַמִּתְגָּאֶה",
+      "node_id": "בזיון",
+      "node_text": "בִּזָּיוֹן",
+      "polarity": "evil",
+      "reason": "The Rebbe's text ends with 'וּמְבַזִּים אוֹתוֹ' — they disgrace him. The disgrace (בזיון) is the outward manifestation of what the mouths say and do. The Rebbe uses וּמְבַזִּים as a direct elaboration of the peh — the mouths saying 'go back' IS the act of shaming. So בזיון and פה are bechinas of each other: both are aspects of the same reality (what happens to the arrogant leader). Biz'ayon is not caused by the peh; biz'ayon IS the peh in action. This node is not in the dataset for Torah #95.",
+      "source_quote": "בְּנֵי אָדָם פּוֹתְחִים אֶת פִּיהֶם וְאוֹמְרִים חֲזֹר לַאֲחוֹרֶיךָ, וּמְבַזִּים אוֹתוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        { "node1": "בזיון", "node2": "פה", "proof": "The opened mouths saying 'go back' (פה) and the disgrace (בזיון) are parallel expressions of the same reality — the public exposure of the arrogant leader. The Rebbe lists them in the same clause as a compound description of one thing." }
+      ]
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_95_edges": 1,
+    "total_reference_95_bechina_edges": 0,
+    "total_reference_95_eitza_edges": 1,
+    "dataset_edge_detail": {
+      "id": 1738,
+      "node1": "קפה של שרצים שתלוי מאחוריו",
+      "node2": "מחזיק את עצמו בבחינת מה ואפס ואין",
+      "type": "eitza",
+      "note": "This edge correctly captures the causal relationship (the basket CAUSES maintaining oneself in mah). The bechina dimension of this Torah — the conceptual equivalences — is entirely absent from the dataset and must be added."
+    },
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["מה", "אפס", "אין"],
+      "package_2": ["קופה של שרצים", "אחוריים דמ\"ה"],
+      "package_3": ["פה", "גאוה", "בזיון"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "מה", "אפס", "אין", "אחוריים דמ\"ה", "פה", "גאוה", "בזיון"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "פרנס / מנהיג (communal leader)",
+        "reason": "The Rebbe discusses the parnass/manhig as the subject of the teaching, but does not establish a bechina between the leader-concept and another concept using bechina language. 'Parnass' is the subject of the sentence, not a term being equated to another concept via בְּחִינַת. It is a participant in eitza relationships (being humble → effective leadership) but not a bechina node in this Torah."
+      },
+      {
+        "concept": "אֲחוֹרַיִם דְּמ\"ה (the literal Etz Chaim formula as a linguistic string)",
+        "reason": "The Rebbe cites 'אֲחוֹרַיִם דְּמ\"ה, תָּסִיר מ\"ה נִשְׁאָר פ\"ה' as a kabbalistic secret. The gematria/wordplay is: the back-of-MaH, remove MaH, leaves PeH. This is a structural formula, not a bechina declaration in the usual sense. However, the CONCEPT of 'אחוריים דמ\"ה' (the humbling back-aspect of MaH) IS equated with 'קופה של שרצים' via the word פֵּרוּשׁ (explanation). I have included אחוריים דמ\"ה as a concept in Package 2 for this reason."
+      },
+      {
+        "concept": "בְּנֵי אָדָם שֶׁיַּחְלוֹקוּ (the people who dispute the leader)",
+        "reason": "In the first sentence, the Rebbe says God raises up 'bnei adam who dispute and speak against the leaders.' These people are the mechanism of the basket (eitza: God brings them TO prevent complacency). They are not established as a bechina of any other concept. They are instruments in the eitza chain, not co-essential concepts."
+      }
+    ],
+    "good_evil_mirror_summary": "Package 1 (מה/אפס/אין — humility/self-nullification) is the good pole. Package 3 (גאוה/פה/בזיון — arrogance/mouth/disgrace) is the evil mirror. Package 2 (קופה של שרצים / אחוריים דמ\"ה — the humbling mechanism) is the neutral structural bridge between them. The eitza flow is: Package 2 → Package 1 (the basket CAUSES humility) and [absence of Package 2] → Package 3 (without the basket, arrogance and disgrace follow). This matches the Torah's structure perfectly."
+  }
+}

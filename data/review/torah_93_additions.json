@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "source": "Torah #93 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_93_packages.json, all reference===93 edges from torahData.js, and the full source text torah_93.txt (5 lines). Searched for explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, זֶה בְּחִינַת) in the source text. Cross-checked every concept named in the source text against the dataset nodes."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_93_edges": 5,
+    "total_reference_93_bechina_edges": 0,
+    "total_reference_93_eitza_edges": 5,
+    "nodes_accounted_for_in_packages": {},
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [],
+    "gap_analysis_result": "NO GAPS FOUND. The source text contains no bechina language whatsoever. Torah #93 is a short five-line eitza chain and does not establish any conceptual equivalences (bechinat). Therefore there are no missing bechina nodes to add to any package.",
+    "source_text_bechina_scan": {
+      "lines_examined": 5,
+      "bechina_phrases_found": 0,
+      "bechina_phrases_detail": "The word בְּחִינַת does not appear in torah_93.txt. The text uses exclusively causal framing: 'בָּא לְמַדְרֵגָה' (comes to the level), 'יָכוֹל לְהִתְפַּלֵּל' (is able to pray), 'מִכֹּחַ זֶה בָּא' (from this strength comes). No conceptual equivalences are established."
+    },
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "ישראל (as mentioned in the Gemara quote)",
+        "reason": "The text says 'יִשְׂרָאֵל הוּא בְּמַחֲשָׁבָה' — but this is a citation of a Midrash (Bereishit Rabbah 1) explaining that Israel was in God's thought before creation, used as support for the causal claim that business-with-faith reaches above time. The phrase 'הוּא בְּמַחֲשָׁבָה' is not a bechina declaration using the language בְּחִינַת; it is a scriptural citation. Excluded."
+      },
+      {
+        "concept": "תפלה (as mentioned in line 5)",
+        "reason": "The text says 'כִּי תְּפִלָּה הִיא גַּם־כֵּן לְמַעְלָה מֵהַזְּמַן' — prayer is also above time. This uses 'הִיא' (is) which in some Torahs functions like a bechina statement, but here the context is a causal explanation: the reason one can pray after reaching love is that prayer too exists above time (and thus is accessible once one reaches that level). This is an explanatory parenthetical in an eitza chain, not a bechina declaration. Furthermore, the concept of prayer being above time is a supporting rationale for the eitza connection, not an independent bechina equivalence. Excluded."
+      },
+      {
+        "concept": "מחשבה (thought, above time)",
+        "reason": "The text says 'מַחֲשָׁבָה הוּא לְמַעְלָה מֵהַזְּמַן' — thought is above time. Again, this is explanatory support for the eitza claim (reaching above time via Israel/thought), not a bechina equivalence established by the Rebbe for the purposes of this Torah. It is a citation from Bereishit Rabbah embedded in the eitza proof. Excluded."
+      },
+      {
+        "concept": "ואהבת (the commandment)",
+        "reason": "The text presents 'ואהבת' as the commandment fulfilled by business-with-faith. The eitza edge in the dataset (id 1932) correctly captures this as: 'העושה משא ומתן באמונה → מקיים מצות עשה של ואהבת'. There is no bechina declared; the teaching simply states that one action fulfills the other. This is causal, not parallel-aspect equivalence. Excluded."
+      }
+    ]
+  }
+}

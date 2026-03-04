@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "source": "Torah #71",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_71_packages.json, all reference===71 edges from torahData.js (none found — Torah #71 is completely absent from the dataset), and the full source text torah_71.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset under any reference number and whether it is assignable to a package in Torah #71. Only concepts with explicit bechina language (בְּחִינוֹת, נֶאֱמַר עָלָיו used as equivalence, הַיְנוּ, נִקְרָא) were considered. Since there are zero existing dataset nodes for Torah #71, ALL concepts identified from the source text are new additions. These constitute the minimum dataset entries needed for Torah #71 to be represented in the graph."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "מְפֻרְסָם וְיִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "node_id": "מְפֻרְסָם",
+      "node_text": "מְפֻרְסָם",
+      "polarity": "good",
+      "reason": "The Rebbe opens with 'דַּע, שֶׁקָּשֶׁה מְאֹד לִהְיוֹת מְפֻרְסָם' and then immediately states 'כִּי מֵאַחַר שֶׁהוּא מְפֻרְסָם, עַל־כֵּן הוּא בִּבְחִינוֹת (שם): לָכֵן אֲחַלֶּק לוֹ בָרַבִּים'. The word בִּבְחִינוֹת is the Rebbe's standard bechina-declaration marker. מְפֻרְסָם (the publicly known / famous person) is explicitly declared to be in the bechina of Isaiah 53:12's 'I will divide him among the many.' The famous person is the dominant concept of the entire Torah — the teaching pivots on what it means to be publicly known. מְפֻרְסָם is also the antecedent of the נֶאֱמַר formula in the same sentence ('עָלָיו נֶאֱמַר: וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ'). It is the central node of Package 1 with degree 2.",
+      "source_quote": "כִּי מֵאַחַר שֶׁהוּא מְפֻרְסָם, עַל־כֵּן הוּא בִּבְחִינוֹת (שם): לָכֵן אֲחַלֶּק לוֹ בָרַבִּים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְפֻרְסָם וְיִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "node_id": "יִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "node_text": "יִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "polarity": "good",
+      "reason": "The Rebbe writes: 'עַל־כֵּן צָרִיךְ לִסְבֹּל יִסּוּרִין בִּשְׁבִיל רַבִּים, כִּי עָלָיו נֶאֱמַר: וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ.' The formula 'עָלָיו נֶאֱמַר' (of him it is said) is the standard Rabbinic declaration of conceptual identity — the verse is said OF the famous person's suffering because his suffering IS the fulfillment/instance of that verse. This is the equivalent of a bechina-declaration: the suffering of the famous person shares the same essential nature as the healing verse from Isaiah 53:5. יִסּוּרִין בִּשְׁבִיל רַבִּים is also the bridging concept between Paragraphs 1 and 2: Paragraph 1 describes involuntary suffering by the famous tzaddik; Paragraph 2 describes voluntary suffering accepted by tzaddikim — both are instances of the same essential phenomenon, which the Rebbe calls יִסּוּרִין בִּשְׁבִיל רַבִּים / יִסּוּרִין בִּשְׁבִיל יִשְׂרָאֵל.",
+      "source_quote": "עַל־כֵּן צָרִיךְ לִסְבֹּל יִסּוּרִין בִּשְׁבִיל רַבִּים, כִּי עָלָיו נֶאֱמַר: וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְפֻרְסָם וְיִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "node_id": "\"לָכֵן אֲחַלֶּק לוֹ בָרַבִּים\"",
+      "node_text": "\"לָכֵן אֲחַלֶּק לוֹ בָרַבִּים\"",
+      "polarity": "good",
+      "reason": "This verse fragment from Isaiah 53:12 is the bechina-target explicitly named by the Rebbe: 'הוּא בִּבְחִינוֹת: לָכֵן אֲחַלֶּק לוֹ בָרַבִּים.' The Rebbe cites the verse as the conceptual essence that the famous person instantiates. In the Torah Map data model, when the Rebbe says 'X is a bechina of [verse Y]', the verse becomes a node representing the essential quality that X shares. The quality here is: division/distribution among the many — the famous person is inherently distributed across the public in the same way the Suffering Servant of Isaiah 53 is given as a portion among many. This verse-node is the thematic anchor of the bechina and belongs in Package 1.",
+      "source_quote": "הוּא בִּבְחִינוֹת (שם): לָכֵן אֲחַלֶּק לוֹ בָרַבִּים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְפֻרְסָם וְיִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "node_id": "\"וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ\"",
+      "node_text": "\"וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ\"",
+      "polarity": "good",
+      "reason": "This verse from Isaiah 53:5 ('by his stripes/wounds we were healed') appears twice in the Torah — once as the proof-text cited at the opening, and once as the verse explicitly said OF the famous person ('עָלָיו נֶאֱמַר'). The נֶאֱמַר עָלָיו formula declares that the famous person's suffering-for-the-many IS this verse's content. In the data model, verse-nodes function as bechina-identifiers of the essential quality they represent. The quality here is: suffering-that-heals-others. This verse-node forms the bechina pair with יִסּוּרִין בִּשְׁבִיל רַבִּים and belongs in Package 1.",
+      "source_quote": "כִּי עָלָיו נֶאֱמַר: וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְפֻרְסָם וְיִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "node_id": "מְקַבְּלִים יִסּוּרִים בִּשְׁבִיל יִשְׂרָאֵל",
+      "node_text": "מְקַבְּלִים יִסּוּרִים בִּשְׁבִיל יִשְׂרָאֵל",
+      "polarity": "good",
+      "reason": "Paragraph 2 describes a second category: 'יֵשׁ צַדִּיקִים, שֶׁמְּקַבְּלִים מֵעַצְמָם יִסּוּרִים עֲלֵיהֶם בִּשְׁבִיל יִשְׂרָאֵל' — there are tzaddikim who voluntarily accept suffering upon themselves on behalf of Israel. This is presented as a parallel/contrast to the famous tzaddik described in Paragraph 1: both involve the same essential reality (bearing suffering for Israel), but the first is involuntary (imposed by the fact of fame) while the second is voluntary (accepted by the tzaddik's own will). The contrast structure 'אֲבָל יֵשׁ צַדִּיקִים' (but there are tzaddikim [who do this voluntarily]) implies that both groups share the same essential domain — suffering on behalf of Israel — and the two types are bechina-parallel expressions of the same spiritual structure. This node belongs in Package 1 as the voluntarily-suffering counterpart to the מְפֻרְסָם of Paragraph 1.",
+      "source_quote": "יֵשׁ צַדִּיקִים, שֶׁמְּקַבְּלִים מֵעַצְמָם יִסּוּרִים עֲלֵיהֶם בִּשְׁבִיל יִשְׂרָאֵל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְפֻרְסָם וְיִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "node_id": "מַחֲלִיפִין הַשֶּׁפַע",
+      "node_text": "מַחֲלִיפִין הַשֶּׁפַע",
+      "polarity": "good",
+      "reason": "The Rebbe writes: 'וּבָזֶה מַחֲלִיפִין הַשֶּׁפַע' — through this [voluntary suffering for Israel], they exchange/transform the divine flow. The word מַחֲלִיפִין (exchanging/switching) is not a causal claim separated from the suffering — it describes what the suffering IS, its essential effect that is inseparable from the act. Unlike a standard eitza (cause → effect), where X produces Y as a distinct downstream result, here the suffering and the exchange of שֶׁפַע are described as the same act: the tzaddik's willingness to take on the suffering IS the exchange of the divine flow. The בָזֶה (through/in this) construction collapses the distinction between the act and its outcome. This node is the essential telos of the voluntary suffering — it names what that suffering accomplishes as its intrinsic nature, not merely as a downstream consequence. It belongs in Package 1.",
+      "source_quote": "יֵשׁ צַדִּיקִים, שֶׁמְּקַבְּלִים מֵעַצְמָם יִסּוּרִים עֲלֵיהֶם בִּשְׁבִיל יִשְׂרָאֵל, וּבָזֶה מַחֲלִיפִין הַשֶּׁפַע",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "proposed_bechina_edges": [
+    {
+      "node1_id": "מְפֻרְסָם",
+      "node2_id": "\"לָכֵן אֲחַלֶּק לוֹ בָרַבִּים\"",
+      "proof": "כִּי מֵאַחַר שֶׁהוּא מְפֻרְסָם, עַל־כֵּן הוּא בִּבְחִינוֹת (ישעיהו נ\"ג:י\"ב): לָכֵן אֲחַלֶּק לוֹ בָרַבִּים",
+      "reference": 71,
+      "type": "bechina"
+    },
+    {
+      "node1_id": "יִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "node2_id": "\"וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ\"",
+      "proof": "עַל־כֵּן צָרִיךְ לִסְבֹּל יִסּוּרִין בִּשְׁבִיל רַבִּים, כִּי עָלָיו נֶאֱמַר: וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ (ישעיהו נ\"ג:ה')",
+      "reference": 71,
+      "type": "bechina"
+    },
+    {
+      "node1_id": "מְפֻרְסָם",
+      "node2_id": "יִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "proof": "כִּי מֵאַחַר שֶׁהוּא מְפֻרְסָם, עַל־כֵּן צָרִיךְ לִסְבֹּל יִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "reference": 71,
+      "type": "eitza",
+      "note": "This edge is eitza (causal): being famous CAUSES suffering for the many to fall upon him. It is not a shared-nature (bechina) statement — fame does not share the same essential nature as suffering; fame produces the situation in which suffering becomes necessary. Included here for completeness but classified as eitza."
+    },
+    {
+      "node1_id": "מְקַבְּלִים יִסּוּרִים בִּשְׁבִיל יִשְׂרָאֵל",
+      "node2_id": "מַחֲלִיפִין הַשֶּׁפַע",
+      "proof": "יֵשׁ צַדִּיקִים, שֶׁמְּקַבְּלִים מֵעַצְמָם יִסּוּרִים עֲלֵיהֶם בִּשְׁבִיל יִשְׂרָאֵל, וּבָזֶה מַחֲלִיפִין הַשֶּׁפַע",
+      "reference": 71,
+      "type": "bechina",
+      "note": "The וּבָזֶה construction collapses act and outcome into a single essential reality: accepting suffering for Israel IS the exchange of divine flow. These two nodes are co-essential rather than causally sequential."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_71_edges": 0,
+    "total_reference_71_bechina_edges": 0,
+    "total_reference_71_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": [
+        "מְפֻרְסָם",
+        "יִסּוּרִין בִּשְׁבִיל רַבִּים",
+        "\"לָכֵן אֲחַלֶּק לוֹ בָרַבִּים\"",
+        "\"וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ\"",
+        "מְקַבְּלִים יִסּוּרִים בִּשְׁבִיל יִשְׂרָאֵל",
+        "מַחֲלִיפִין הַשֶּׁפַע"
+      ]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "מְפֻרְסָם",
+      "יִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "\"לָכֵן אֲחַלֶּק לוֹ בָרַבִּים\"",
+      "\"וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ\"",
+      "מְקַבְּלִים יִסּוּרִים בִּשְׁבִיל יִשְׂרָאֵל",
+      "מַחֲלִיפִין הַשֶּׁפַע"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "רַבִּים (the masses/many)",
+        "reason": "The word רַבִּים appears in both paragraph 1 (suffering 'for the masses') and in the Isaiah 53:12 verse cited. However, רַבִּים is the object/beneficiary of the tzaddik's suffering — it is not given bechina-language that equates it with another concept. The text says the tzaddik suffers 'בִּשְׁבִיל רַבִּים' (for the sake of the many) — this is a relational preposition, not a bechina declaration. רַבִּים appears as part of the verse-node 'לָכֵן אֲחַלֶּק לוֹ בָרַבִּים' (already included) but not as a standalone bechina-concept. Excluded as independent node."
+      },
+      {
+        "concept": "הַזִּיק / מַזִּיק לוֹ (it harms him)",
+        "reason": "Line 1 says being famous 'הוּא מַזִּיק לוֹ מְאֹד' — harms him greatly. This is a causal/consequential description of fame's effect, not a bechina declaration. No בְּחִינַת or הַיְנוּ precedes מַזִּיק. Excluded."
+      },
+      {
+        "concept": "צַדִּיקִים (tzaddikim, plural)",
+        "reason": "Paragraph 2 opens 'יֵשׁ צַדִּיקִים' — there are tzaddikim who voluntarily accept suffering. This identifies a category of people but does not make a bechina-declaration that צַדִּיקִים is an aspect of some other concept within Torah #71. The content-concept is captured by מְקַבְּלִים יִסּוּרִים בִּשְׁבִיל יִשְׂרָאֵל. Excluded as standalone bechina-node."
+      },
+      {
+        "concept": "§63 cross-reference / 'וּבִשְׁתַּיִם יְכַסֶּה פָנָיו'",
+        "reason": "Paragraph 2 ends with 'כַּמְבֹאָר לְמַעְלָה בְּסִימָן ס\"ג עַל פָּסוּק: וּבִשְׁתַּיִם יְכַסֶּה פָנָיו, עַיֵּן שָׁם' — as explained above in §63 on the verse 'and with two he covers his face, see there.' This is a cross-reference pointer to Torah #63, not a bechina statement within Torah #71. The bechina content belongs to Torah #63's dataset. Excluded from Torah #71 additions."
+      },
+      {
+        "concept": "יְשַׁעְיָה / עֶבֶד ה' (Isaiah / Servant of God)",
+        "reason": "The entire texture of Torah #71 draws on Isaiah 53 (the Suffering Servant passage) but the Rebbe does not explicitly name or identify the 'Servant of God' as a bechina concept within this Torah. The verse fragments are cited, not the theological identity of the Servant. The relevant conceptual nodes are captured by the two verse-nodes already included. Excluded as separate concept."
+      }
+    ]
+  }
+}

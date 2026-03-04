@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "source": "Torah #96 (Likutay Moharan Vol. 1)",
+    "type": "new_package_proposals",
+    "generated": "2026-03-03"
+  },
+  "verdict": "NO_NEW_PACKAGES",
+  "reasoning": "A thorough scan of the source text (torah_96.txt, 15 lines) and the additions analysis found no cluster of 3 or more bechina-connected concepts forming an independent domain that is not already covered by Package 1 (the evil-force cluster) or Package 2 (the tzaddik's spiritual world). The two candidates examined are assessed below.",
+  "candidates_examined": [
+    {
+      "candidate_id": "C1",
+      "proposed_label": "הַמַּעֲרֶכֶת הַקּוֹסְמוֹלוֹגִית — The Lurianic Cosmological Framework",
+      "candidate_nodes": ["נִיצוֹצוֹת", "שְׁבִירָה", "מִדָּה", "עוֹלָם"],
+      "candidate_count": 4,
+      "verdict": "REJECTED — NO NEW PACKAGE",
+      "reason": "Although the source text mentions four cosmological concepts (ninotzotzot, shevirah, midda, olam) that together describe the Lurianic background of the teaching, they do NOT form an independent bechina cluster in Torah #96. The test is: do 3+ concepts have explicit bechina language connecting them to each other, forming a domain independent from the existing packages?\n\n(1) שְׁבִירָה (the breaking of vessels): mentioned once as a historical/cosmological event ('מֵעֵת הַשְּׁבִירָה נָפְלוּ הַנִּיצוֹצוֹת'). No bechina language — it is described, not identified as a bechina of another concept.\n\n(2) נִיצוֹצוֹת (sparks): mentioned as what fell from the worlds. The machshava zara is implicitly a ninotzot, but this is an eitza relationship (the shevirah caused sparks to fall, which became machshava zarot) rather than a bechina (they are the same essential nature). The language 'מֵעֵין אוֹתָהּ מִדָּה' describes the machshava zara as 'of the same quality as' the midda — this is a causal/genealogical description, not a classic bechina equivalence. No 'הַיְנוּ' or 'בְּחִינַת' links ninotzotzot to any other cosmological term in this Torah.\n\n(3) מִדָּה and (4) עוֹלָם: These two are used interchangeably in the body text ('מֵאֵיזֶה מִדָּה וּמֵאֵיזֶה עוֹלָם'), making them a 2-node implicit bechina pair at best. They are not connected to שְׁבִירָה or נִיצוֹצוֹת by explicit bechina language in this Torah.\n\nConclusion: The cosmological framework concepts appear in the teaching as causal/descriptive background, not as a bechina-connected cluster. The connection between them is eitza (shevirah → sparks fall → machshava zara forms from each midda), not bechina (they are not different faces of the same essential nature). They do not form an independent bechina domain distinct from what already exists in Package 1 (the evil-force cluster) and Package 2 (the tzaddik's spiritual world). The מִדָּה and עוֹלָם additions (if added) would extend Package 2 rather than form a new package."
+    },
+    {
+      "candidate_id": "C2",
+      "proposed_label": "מָגֵן הַצַּדִּיק — The Tzaddik's Protective Response",
+      "candidate_nodes": ["רָצוֹן לְהַעֲלוֹת", "כֹּחַ הָרָצוֹן", "שְׁבִירַת הַמַּחֲלֹקֶת"],
+      "candidate_count": 3,
+      "verdict": "REJECTED — NO NEW PACKAGE",
+      "reason": "One might consider whether the tzaddik's protective/responsive actions (ratzon lehaalot, koach haratzon, breaking the machloket) form a distinct bechina cluster independent from Package 2. However: (1) 'שְׁבִירַת הַמַּחֲלֹקֶת' (the breaking of the conflict) is the OUTCOME of the tzaddik's will — it is the result/eitza destination, not a bechina equivalent of the ratzon. The relationship 'through ratzon → machloket is broken' is explicitly eitza (cause → effect): 'מְשַׁבֵּר בְּכֹחַ הָרָצוֹן כָּל בַּעֲלֵי הַמַּחֲלֹקֶת' (breaks by the power of will). (2) 'כֹּחַ הָרָצוֹן' and 'רָצוֹן לְהַעֲלוֹת' are near-synonyms (the same faculty, two names) — they belong together in Package 2 rather than forming a new package. (3) No third concept with explicit bechina language connects to these two to form a genuinely independent domain. The ratzon-dimension is already correctly captured as part of Package 2 (the tzaddik's spiritual world). Splitting it out would violate the principle that packages are built on bechina connections, not on wanting to isolate specific teaching-moments."
+    }
+  ],
+  "final_assessment": {
+    "verdict": "NO_NEW_PACKAGES",
+    "summary": "Torah #96 is adequately described by exactly two packages: Package 1 (the evil force: machshava zara / machloket / verse-imagery of sword and bow) and Package 2 (the tzaddik's inner world: heart / will / spiritual level). No third domain with 3+ explicit bechina-connected concepts exists in the source text that falls outside these two packages.\n\nThe teaching's structural argument is: evil force (Package 1) attacks the tzaddik's inner world (Package 2) via eitza. The tzaddik's inner world (Package 2) responds via his will, which breaks the evil force (Package 1) via eitza. The two-package structure perfectly captures this bidirectional eitza relationship and the two-sided bechina topology of the Torah.\n\nThe cosmological terms (ninotzotzot, shevirah, midda, olam) appear as causal/explanatory background — they are the narrative context for WHY the machshava zara occurs, not independent bechina domains in their own right within Torah #96.",
+    "packages_confirmed": 2,
+    "note_on_additions": "The five gap candidates identified in torah_96_additions.json (ninotzotzot, midda/olam, midda/madrega, machloket/machshava zara inner-outer, koach haratzon) should each be proposed as new bechina edges to be added to torahData.js for reference=96. They would extend the two existing packages rather than create new ones.",
+    "good_evil_structure_confirmed": "The two-package structure exhibits the canonical good/evil mirror that the framework describes: Package 1 (evil: the forces that attack) directly mirrors Package 2 (good: the tzaddik's resources to withstand the attack). This is a structurally complete, balanced teaching in the Rebbe Nachman pattern."
+  }
+}

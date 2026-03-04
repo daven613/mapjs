@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "source": "Torah #62",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_62_packages.json, all reference===62 edges from torahData.js, and the full source text torah_62.txt. Every line was scanned for bechina-language markers (בְּחִינַת, הַיְנוּ, נִקְרָא, דָּא, זֶה בְּחִינַת, הִיא). Concepts appearing in explicit bechina formulations that are absent from the reference=62 bechina edge dataset were flagged. Concepts that are part of a new independent domain (3+ nodes with explicit bechina language) are flagged for torah_62_new_packages.json."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "אֱמוּנָה וְהַתַּעֲנִית",
+      "node_id": "אכילה על ידי אמונה",
+      "node_text": "אֲכִילָה עַל יְדֵי אֱמוּנָה",
+      "polarity": "good",
+      "reason": "Line 15 of the source text states: 'וּרְעֵה אֱמוּנָה, הַיְנוּ בְּחִינַת אֲכִילָה עַל יְדֵי אֱמוּנָה' — the verse 'graze on faith' IS eating through faith. This is an explicit 'הַיְנוּ בְּחִינַת' equivalence between the concept of אמונה and אכילה על ידי אמונה (eating that is done through faith). The concept 'eating through faith' is a distinct node — it is the goal-concept toward which the entire Torah builds: holy eating requires faith as its foundation. The pair אמונה ↔ אכילה על ידי אמונה is a bechina missing from the dataset. It belongs in Package 1 (good) because it is the positive culminating act that the whole teaching enables.",
+      "source_quote": "וּרְעֵה אֱמוּנָה, הַיְנוּ בְּחִינַת אֲכִילָה עַל יְדֵי אֱמוּנָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "אמונה",
+        "node2_id": "אכילה על ידי אמונה",
+        "type": "bechina",
+        "reference": 62
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "אֱמוּנָה וְהַתַּעֲנִית",
+      "node_id": "קשוטי אמונה",
+      "node_text": "קִשּׁוּטֵי הָאֱמוּנָה",
+      "polarity": "good",
+      "reason": "Line 16 states: 'וְעִקַּר שְׁלֵמוּת וְקִשּׁוּטֵי אֱמוּנָה, הַיְנוּ לְקָרֵב דַּוְקָא הַמְרֻחָקִים' — the adornment/completion of faith IS specifically to draw close the distant ones. This 'הַיְנוּ' is an explicit bechina equivalence between 'קשוטי אמונה' and 'לקרב המרחקים'. The concept 'adornment of faith' (kishutei emunah) is a specific characterization: faith is adorned/completed when the far-away come near to it. This corresponds directly to the Zohar passage in lines 31-34 ('עולימתא... מִתְקַשְּׁטַת בְּקִשּׁוּטִין דְּלָא הֲווֹ'). The bechina pair קשוטי אמונה ↔ לקרב המרחקים is missing from the dataset and belongs in Package 1 (good).",
+      "source_quote": "וְעִקַּר שְׁלֵמוּת וְקִשּׁוּטֵי אֱמוּנָה, הַיְנוּ לְקָרֵב דַּוְקָא הַמְרֻחָקִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "קשוטי אמונה",
+        "node2_id": "לקרב המרחקים",
+        "type": "bechina",
+        "reference": 62
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "אֱמוּנָה וְהַתַּעֲנִית",
+      "node_id": "גלות מצרים — מצר הגרון",
+      "node_text": "גָּלוּת מִצְרַיִם — מֵצַר הַגָּרוֹן",
+      "polarity": "evil",
+      "reason": "Line 26 states: 'מַמְשִׁכִין אֶת הַדִּבּוּר לְגָלוּת מִצְרַיִם, בְּחִינַת מֵצַר הַגָּרוֹן, בְּחִינַת נִחַר גְּרוֹנִי' — the exile of speech to Egypt IS the constriction of the throat, IS 'my throat is hoarse.' This double bechina creates three equivalences: גלות מצרים = מצר הגרון = נחר גרוני. The desire-ministers (שרי פרעה = קנה ווישט וורידים) pull speech down to Mitzraim (Egypt = constriction of the throat). This bechina pair is missing from the dataset. Note: the polarity here is evil (the constriction is the evil result of the desires' power over speech), but it is assigned to Package 2 structurally since it is the consequence of the תאוות/קלפות domain. However, the direct bechina of מצרים = מצר הגרון is an important structural gap regardless of package assignment.",
+      "source_quote": "מַמְשִׁכִין אֶת הַדִּבּוּר לְגָלוּת מִצְרַיִם, בְּחִינַת מֵצַר הַגָּרוֹן, בְּחִינַת נִחַר גְּרוֹנִי",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "גלות מצרים",
+        "node2_id": "מצר הגרון",
+        "type": "bechina",
+        "reference": 62
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּאֲווֹת וּקְלִפּוֹת",
+      "node_id": "שרי פרעה — ראשי התאוות",
+      "node_text": "שָׂרֵי פַּרְעֹה (שַׂר הַמַּשְׁקִים, אוֹפִים, טַבָּחִים) — רָאשֵׁי הַתַּאֲווֹת",
+      "polarity": "evil",
+      "reason": "Line 22 states: 'וְרָאשֵׁי הַתַּאֲווֹת הֵם שְׁלשָׁה שָׂרֵי פַּרְעֹה: שַׂר הַמַּשְׁקִים וְאוֹפִים וְטַבָּחִים, שֶׁהֵם קָנֶה וּוֵשֶׁט וּוְרִידִין, שֶׁהֵם בְּחִינַת תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה' — the three ministers of Pharaoh ARE the heads of the desires, which ARE the windpipe/gullet/veins, which ARE the desires of eating and drinking. Three nested bechina equivalences: שרי פרעה = ראשי תאוות; קנה ווישט וורידין = שרי פרעה; תאוות אכילה ושתיה = קנה ווישט. These conceptual identifications are all absent from the reference=62 bechina edge dataset. They belong in Package 2 (evil) as the structural elaboration of the תאוות = קלפות equation.",
+      "source_quote": "וְרָאשֵׁי הַתַּאֲווֹת הֵם שְׁלשָׁה שָׂרֵי פַּרְעֹה... שֶׁהֵם בְּחִינַת תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "שרי פרעה",
+        "node2_id": "ראשי התאוות",
+        "type": "bechina",
+        "reference": 62
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּאֲווֹת וּקְלִפּוֹת",
+      "node_id": "פרעה — אותיות ערף",
+      "node_text": "פַּרְעֹה — אוֹתִיּוֹת עֹרֶף (מֵאֲחוֹרַיִם)",
+      "polarity": "evil",
+      "reason": "Line 22 states: 'וִינִיקָתָם מִפַּרְעֹה, שֶׁהוּא אוֹתִיּוֹת עֹרֶף, הַיְנוּ מֵאֲחוֹרַיִם' — Pharaoh IS the letters of 'oreph' (neck/back), meaning from behind. This is a 'הַיְנוּ' bechina — Pharaoh = the back-of-the-neck = feeding from behind holiness. This is a major structural identification in the Torah: Pharaoh is the cosmic source feeding the desire-ministers, and his name IS the concept of 'from behind' — he represents feeding from the back of holiness (as explained in section ה regarding fasting). The bechina pair פרעה ↔ ערף is absent from the dataset and belongs in Package 2 (evil). Additionally, line 44 gives a second bechina: 'פַּרְעֹה, לְשׁוֹן הִתְגַּלּוּת' — Pharaoh IS the language of revelation. Both bechinot of Pharaoh should be captured.",
+      "source_quote": "וִינִיקָתָם מִפַּרְעֹה, שֶׁהוּא אוֹתִיּוֹת עֹרֶף, הַיְנוּ מֵאֲחוֹרַיִם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "פרעה",
+        "node2_id": "אותיות ערף (מאחוריים)",
+        "type": "bechina",
+        "reference": 62
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "אֱמוּנָה וְהַתַּעֲנִית",
+      "node_id": "רעב — מספר הויה-אלקים באחוריים",
+      "node_text": "רָעָב (272) — הֲוָיָה אֱלֹקִים בְּחִינַת אֲחוֹרַיִם",
+      "polarity": "good",
+      "reason": "Line 27 states: 'וְזֶה הוּא דְּבֵקוּת אֲחוֹרֵי הַקְּדֻשָּׁה, כִּי הֲוָיָה אֱלֹקִים בְּחִינַת אֲחוֹרַיִם – מִסְפַּר רָעָב' — the names HVYH and Elohim in their backward form (אחוריים) have the gematria of 272, which IS the word רעב (hunger). This is an explicit 'בְּחִינַת' identification: the numerical/literal value of the two divine names written backwards equals 'hunger.' It explains why fasting = clinging to the back of holiness — the very word rעב contains the names of God. The pair הויה-אלקים-באחוריים ↔ רעב is absent from the dataset. It belongs in Package 1 (good) as it is a positive mystical characterization of the fasting/hunger node, revealing that רעב contains divinity.",
+      "source_quote": "כִּי הֲוָיָה אֱלֹקִים בְּחִינַת אֲחוֹרַיִם – מִסְפַּר רָעָב",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "רעב",
+        "node2_id": "הויה-אלקים-באחוריים (גימטריה 272)",
+        "type": "bechina",
+        "reference": 62
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "אֱמוּנָה וְהַתַּעֲנִית",
+      "node_id": "לב חלוק — יצר הרע",
+      "node_text": "לֵב חָלוּק — חָלַק לִבָּם",
+      "polarity": "evil",
+      "reason": "Line 8 states: 'שֶׁלֹּא יִהְיֶה לִבּוֹ חָלָק עָלָיו, בְּחִינַת חָלַק לִבָּם' — the divided heart IS the verse 'their heart is divided' (Hosea 10). This is an explicit 'בְּחִינַת' equivalence: the state of inner division = the verse חלק לבם. The text further identifies this divided-heart state as the domain of the yetzer hara: 'הַיְדִיעָה הִיא מֵהַיֵּצֶר הַטּוֹב שֶׁבַּלֵּב, וְהַסְתָּרַת הַיְדִיעָה הִיא מֵהַיֵּצֶר הָרָע שֶׁבַּלֵּב' (line 9). The pair לב חלוק ↔ חלק לבם is absent from the dataset. Its polarity is evil (it describes the inner fracture caused by the yetzer hara). While the mirror would be 'לב שלם' (whole heart = yetzer tov), the evil manifestation (divided heart) is the state that the study of halachic decisors resolves.",
+      "source_quote": "שֶׁלֹּא יִהְיֶה לִבּוֹ חָלָק עָלָיו, בְּחִינַת חָלַק לִבָּם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "לב חלוק",
+        "node2_id": "חלק לבם",
+        "type": "bechina",
+        "reference": 62
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "אֱמוּנָה וְהַתַּעֲנִית",
+      "node_id": "חמשים — חמשת מוצאות הפה",
+      "node_text": "וַחֲמֻשִׁים — חֲמֵשֶׁת מוֹצָאוֹת הַפֶּה",
+      "polarity": "good",
+      "reason": "Line 49 states: 'וַחֲמֻשִׁים – אֶחָד מֵחֲמִשָּׁה (כמו שפירש\"י שם), הַיְנוּ חֲמֵשֶׁת מוֹצָאוֹת הַפֶּה' — the word 'chamushim' (armed, or one-fifth) IS the five articulatory positions of the mouth. This 'הַיְנוּ' is an explicit bechina identification: the biblical word chamushim (in the exodus verse that is the Torah's opening theme) equals the five mouth-positions. This is central to the Torah's conclusion — through the five mouth-positions all the nations turn to Israel's faith. The pair חמשים ↔ חמשת מוצאות הפה is absent from the dataset. It belongs in Package 1 (good) as the instrument of speech that draws the far-ones near.",
+      "source_quote": "וַחֲמֻשִׁים – אֶחָד מֵחֲמִשָּׁה (כמו שפירש\"י שם), הַיְנוּ חֲמֵשֶׁת מוֹצָאוֹת הַפֶּה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "חמשים",
+        "node2_id": "חמשת מוצאות הפה",
+        "type": "bechina",
+        "reference": 62
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_62_edges": 15,
+    "total_reference_62_bechina_edges": 3,
+    "total_reference_62_eitza_edges": 12,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["עולימתא שפירתא", "אמונה", "רעב", "תענית"],
+      "package_2": ["תאוות", "קלפות"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "אכילה על ידי אמונה (= ורעה אמונה)",
+      "קשוטי אמונה (= לקרב המרחקים)",
+      "גלות מצרים (= מצר הגרון)",
+      "שרי פרעה (= ראשי התאוות)",
+      "פרעה (= אותיות ערף = התגלות)",
+      "חמשים (= חמשת מוצאות הפה)",
+      "לב חלוק (= חלק לבם)",
+      "רעב — הויה-אלקים-באחוריים (= 272)",
+      "יחוד ק\"ב ושכינה, ויגש יהודה, תקרובתא מלכא — flagged for new package",
+      "מחלקת שבקדשה, הלכות פסוקות, שלום — flagged for new package"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "דבקות אחורי הקדשה",
+        "reason": "Line 23: 'וּדְבֵקוּת אֲחוֹרֵי הַקְּדֻשָּׁה, הִיא עַל יְדֵי הַתַּעֲנִית' — this states that fasting IS the means of cleaving to the back of holiness. This is an EITZA formulation (through fasting one achieves clinging), not a bechina equivalence (fasting IS NOT = clinging; fasting PRODUCES clinging). There is an existing eitza edge (id=707) in the dataset for this relationship. Correctly classified as eitza, not a bechina gap."
+      },
+      {
+        "concept": "שם הויה באחוריים — כתיבתו",
+        "reason": "Lines 23 and 27 describe the technical procedure of writing the name of God backwards (יוד, יוד-הא, יוד-הא-ואו, etc.) as an analogy for how fasting works. This is a PROOF-TEXT ILLUSTRATION, not a bechina statement equating two concepts. The numerical equivalence (הויה + אלקים backwards = 272 = רעב) IS a genuine bechina and is flagged above. The writing procedure itself is the analogical explanation, not the conceptual equation."
+      },
+      {
+        "concept": "ויסב (= לשון סעודה)",
+        "reason": "Line 48: 'וַיַּסֵּב לְשׁוֹן סְעֻדָּה, הַיְנוּ לְשׁוֹן הֲסִבָּה' — the Midrash says ויסב IS the language of eating/feasting. This is a midrashic etymology cited as supporting evidence for the Torah's opening thesis (that the eating of Israel creates yichud). It is not a standalone bechina between two conceptual nodes; it is a proof-text. The concept 'holy eating = yichud' (which is the deeper content) is flagged in the new packages section."
+      },
+      {
+        "concept": "מחלקת היצר הרע — שרשה מן המחלקת שבקדשה",
+        "reason": "Lines 10-11 state that the evil-inclination's division has its ROOT in the holy dispute (מחלקת תנאים ואמוראים), as it descended from rung to rung. This is a CAUSAL/EITZA relationship (the holy dispute produces the evil dispute by descent), not a bechina equivalence. The text says 'שָׁרְשׁוֹ מִן הַמַּחֲלֹקֶת שֶׁבִּקְדֻשָּׁה' — its root comes from, not IS. Correctly an eitza, not a gap."
+      },
+      {
+        "concept": "עין (= יצר הרע שמסתיר הידיעה)",
+        "reason": "Line 9 states: 'הַסְתָּרַת הַיְדִיעָה, הֵן הֵן אֶפִּיקוֹרְסוּת וְקֻשְׁיוֹת' — concealment of knowledge IS heresy and questions. The word 'הֵן הֵן' creates a bechina equivalence between הסתרת הידיעה and אפיקורסות. This is a possible addition (הסתרת הידיעה = אפיקורסות) but is classified within the broader new package about מחלקת/שלום/הלכות domain (see torah_62_new_packages.json) rather than as a standalone addition."
+      }
+    ]
+  }
+}

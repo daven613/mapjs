@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "source": "Torah #96 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===96 AND type==='bechina'. Result: ZERO bechina edges currently exist in torahData.js for Torah #96. The entire analysis is therefore derived from the source text (torah_96.txt, 15 lines) using explicit bechina language (הַיְנוּ, כְּלוֹמַר used as equivalence declarations) found in the verse-by-verse interpretation (lines 9-15). Seven bechina pairs were identified from the source text. The verse-interpretation section of this Torah provides unusually dense bechina content because Rebbe Nachman systematically decodes each verse-phrase as a bechina of a specific spiritual concept. All seven pairs were extracted, nodes were enumerated, and an adjacency graph was constructed. Four connected components emerged: one large component of 5 nodes (the evil-force cluster) and three small components of 2 nodes each (the tzaddik's heart, his will-to-elevate, and the spiritual level structure). The three small components were merged into a single Package 2 based on shared essential nature (they all describe the tzaddik's inner spiritual experience during prayer). The merge is based on bechina (shared nature) not eitza: all three small components describe dimensions of the same reality — the tzaddik's inner world as he contends with the machshava zara."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 96,
+      "label": "מַחֲשָׁבָה זָרָה וּמַחֲלֹקֶת — הַכֹּחַ הָרָע",
+      "label_en": "Foreign Thought and Conflict — The Evil Force",
+      "polarity": "evil",
+      "reason": "This package collects all five nodes of the large connected component — the cluster of concepts that the Torah equates with the forces opposing the tzaddik's prayer. The central bechina chain is: (1) 'זֹמֵם רָשָׁע – הַיְנוּ מַחֲשָׁבָה זָרָה': the wicked plotter IS the machshava zara (foreign/distracting thought during prayer); (2) 'חֶרֶב פָּתְחוּ רְשָׁעִים – לְשׁוֹן מִלְחָמָה, הַיְנוּ שֶׁנִּתְעוֹרֵר מַחֲלֹקֶת': the sword IS conflict/controversy (machloket) against a tzaddik; (3) 'חַרְבָּם – הַיְנוּ הַמַּחֲשָׁבָה זָרָה שֶׁל אוֹתָהּ הַמַּחֲלֹקֶת': their sword (חרבם) IS the machshava zara that belongs to that conflict; (4) 'וְקַשְּׁתוֹתָם תִּשָּׁבַרְנָה – כְּלוֹמַר, הַמַּחֲלֹקֶת הַנַּ\"ל': their bows (קשתותם) IS the machloket that was mentioned. The bechina chain thus makes all five nodes expressions of the same fundamental spiritual reality: the evil force that opposes the tzaddik's spiritual work takes the form of machshava zara (when experienced internally during prayer) and machloket (when experienced externally as controversy from enemies). They are the same phenomenon at different levels — the inner disruption (machshava zara) and the outer controversy (machloket) are both bechina expressions of the evil's weapon against the tzaddik. The verse's imagery — sword, bow, wicked plotter — are all different facets of this one evil spiritual reality. This is the evil mirror of Package 2 (the tzaddik's spiritual world): where Package 2 describes the tzaddik's inner capacity and struggle, this package describes the opposing force he faces.",
+      "dominant_node": "מַחֲשָׁבָה זָרָה",
+      "nodes": [
+        "מַחֲשָׁבָה זָרָה",
+        "זֹמֵם רָשָׁע",
+        "חֶרֶב",
+        "מַחֲלֹקֶת",
+        "קַשְּׁתוֹת"
+      ],
+      "node_degrees": {
+        "מַחֲשָׁבָה זָרָה": 2,
+        "זֹמֵם רָשָׁע": 1,
+        "חֶרֶב": 2,
+        "מַחֲלֹקֶת": 2,
+        "קַשְּׁתוֹת": 1
+      },
+      "source_bechina_edges": [
+        {
+          "node1": "זֹמֵם רָשָׁע",
+          "node2": "מַחֲשָׁבָה זָרָה",
+          "proof": "זֹמֵם רָשָׁע – הַיְנוּ מַחֲשָׁבָה זָרָה",
+          "verse": "תהילים לז:יב"
+        },
+        {
+          "node1": "חֶרֶב",
+          "node2": "מַחֲלֹקֶת",
+          "proof": "חֶרֶב פָּתְחוּ רְשָׁעִים, וּפֵרֵשׁ רַשִׁ\"י: חֶרֶב – לְשׁוֹן מִלְחָמָה, הַיְנוּ שֶׁנִּתְעוֹרֵר מַחֲלֹקֶת עַל אֵיזֶה צַדִּיק",
+          "verse": "תהילים לז:יד"
+        },
+        {
+          "node1": "חֶרֶב",
+          "node2": "מַחֲשָׁבָה זָרָה",
+          "proof": "חַרְבָּם – הַיְנוּ הַמַּחֲשָׁבָה זָרָה שֶׁל אוֹתָהּ הַמַּחֲלֹקֶת",
+          "verse": "תהילים לז:טו",
+          "note": "חרבם is the possessive form of חרב — the same node with a possessive suffix, identifying the sword (= machshava zara) as belonging to the conflict"
+        },
+        {
+          "node1": "קַשְּׁתוֹת",
+          "node2": "מַחֲלֹקֶת",
+          "proof": "וְקַשְּׁתוֹתָם תִּשָּׁבַרְנָה; כְּלוֹמַר, הַמַּחֲלֹקֶת הַנַּ\"ל",
+          "verse": "תהילים לז:טו"
+        }
+      ],
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 96,
+      "label": "הַצַּדִּיק — לִבּוֹ, רְצוֹנוֹ, וּמַדְרֵגָתוֹ",
+      "label_en": "The Tzaddik — His Heart, His Will, and His Spiritual Level",
+      "polarity": "good",
+      "reason": "This package is formed by merging three small (2-node) connected components, all of which share the essential nature of 'the tzaddik's inner spiritual world as the arena of his struggle with the machshava zara.' The three components are: (A) לִבָּם ↔ לֵב הַצַּדִּיק — 'תָּבוֹא בְלִבָּם – הַיְנוּ בְּלֵב צַדִּיק זֶה': the 'their heart' of the verse IS the heart of this tzaddik. The lev (heart) is the sacred vessel of tefilla and the place where the machshava zara penetrates. It belongs to the tzaddik's positive domain — his heart is the seat of prayer and spiritual work, not an evil concept; (B) חֹרֵק שִׁנַּיִם ↔ רָצוֹן לְהַעֲלוֹת — 'וְחֹרֵק עָלָיו שִׁנָּיו – הַיְנוּ שֶׁרוֹצֶה לְהַעֲלוֹתָהּ': the gnashing of teeth IS the tzaddik's desire/will to elevate the machshava zara back to its source. This is an explicitly positive act — the Rebbe teaches that even without succeeding, this רָצוֹן (will) alone breaks all the baalei machloket; (C) יָבֹא יוֹמוֹ ↔ מַדְרֵגָה — 'וַה' יִשְׂחַק לוֹ, כִּי רָאָה כִּי יָבֹא יוֹמוֹ – הַיְנוּ שֶׁעֲדַיִן לֹא בָּא לְמַדְרֵגַת הַמַּחֲשָׁבָה זָרָה זוֹ': the 'day that will come' IS the spiritual level (madrega) of that machshava zara — i.e., the level to which the tzaddik must eventually ascend. All three components describe the tzaddik's inner spiritual reality: his heart (vessel), his will (response), and his spiritual level (destination). They are three facets of the same essential reality — the tzaddik's capacity to engage the spiritual battle. The merge is grounded in bechina (shared nature): the heart, the will, and the level all describe the tzaddik's spiritual self during tefilla. They are not connected to each other by eitza in this Torah — the will does not produce the level, nor does the heart produce the will. They are parallel aspects of who the tzaddik IS in this moment of prayer. CRITICAL MERGE NOTE: The three components were merged into one package rather than left as three isolated 2-node packages because: (1) they all share the same polarity (good/tzaddik-positive), (2) they all describe the same subject (the tzaddik in prayer), and (3) no larger component with the same polarity exists to absorb them individually.",
+      "dominant_node": "רָצוֹן לְהַעֲלוֹת",
+      "nodes": [
+        "לִבָּם",
+        "לֵב הַצַּדִּיק",
+        "חֹרֵק שִׁנַּיִם",
+        "רָצוֹן לְהַעֲלוֹת",
+        "יָבֹא יוֹמוֹ",
+        "מַדְרֵגָה"
+      ],
+      "node_degrees": {
+        "לִבָּם": 1,
+        "לֵב הַצַּדִּיק": 1,
+        "חֹרֵק שִׁנַּיִם": 1,
+        "רָצוֹן לְהַעֲלוֹת": 1,
+        "יָבֹא יוֹמוֹ": 1,
+        "מַדְרֵגָה": 1
+      },
+      "source_bechina_edges": [
+        {
+          "node1": "לִבָּם",
+          "node2": "לֵב הַצַּדִּיק",
+          "proof": "תָּבוֹא בְלִבָּם – הַיְנוּ בְּלֵב צַדִּיק זֶה",
+          "verse": "תהילים לז:טו",
+          "note": "The verse says 'their heart' (לבם) = the heart of the tzaddik who is the subject of the teaching. The enemy's heart and the tzaddik's heart are equated as the venue — the machine zara enters the tzaddik's heart, so 'their heart' is identified as 'the heart of this tzaddik.'"
+        },
+        {
+          "node1": "חֹרֵק שִׁנַּיִם",
+          "node2": "רָצוֹן לְהַעֲלוֹת",
+          "proof": "וְחֹרֵק עָלָיו שִׁנָּיו – הַיְנוּ שֶׁרוֹצֶה לְהַעֲלוֹתָהּ",
+          "verse": "תהילים לז:יב",
+          "note": "The verse speaks of the wicked gnashing his teeth; Rebbe Nachman re-reads the subject as the tzaddik grinding his teeth in the effort to elevate the machshava zara. The gnashing IS the will/desire to elevate."
+        },
+        {
+          "node1": "יָבֹא יוֹמוֹ",
+          "node2": "מַדְרֵגָה",
+          "proof": "וַה' יִשְׂחַק לוֹ, כִּי רָאָה כִּי יָבֹא יוֹמוֹ – הַיְנוּ שֶׁעֲדַיִן לֹא בָּא לְמַדְרֵגַת הַמַּחֲשָׁבָה זָרָה זוֹ",
+          "verse": "תהילים לז:יג",
+          "note": "God's 'seeing that his day would come' is interpreted as: the tzaddik has not yet reached the spiritual level (madrega) from which this machshava zara descended. 'His day' = the madrega/spiritual level that awaits him."
+        }
+      ],
+      "merge_notes": [
+        {
+          "merged_component": "לִבָּם ↔ לֵב הַצַּדִּיק",
+          "original_component_size": 2,
+          "merged_into": "Package 2",
+          "reason": "The lev (heart) of the tzaddik is the vessel of prayer and the location where the machshava zara enters. It belongs to the tzaddik's inner world, not to the evil force cluster. The lev is a sacred concept (lev = makon of tefilla) and its polarity is good/neutral. It cannot merge into Package 1 (evil) because the tzaddik's heart is the antithesis of the evil force. It merges with Package 2 because all three small components describe the tzaddik as subject: his heart, his will, his level.",
+          "merge_basis": "shared nature (bechina): the lev, the ratzon, and the madrega are all facets of the tzaddik's inner spiritual identity"
+        },
+        {
+          "merged_component": "חֹרֵק שִׁנַּיִם ↔ רָצוֹן לְהַעֲלוֹת",
+          "original_component_size": 2,
+          "merged_into": "Package 2",
+          "reason": "The will to elevate (ratzon lehaalot) is the tzaddik's positive spiritual response — a sacred act of will. The Rebbe teaches that this ratzon alone, even without success, breaks the power of the machloket. This is explicitly a good-polarity concept. It merges with Package 2 because it shares the essential nature of the tzaddik's active spiritual capacity. It cannot merge with Package 1 because the ratzon is the tzaddik's response to the evil, not a component of the evil itself.",
+          "merge_basis": "shared nature (bechina): the will to elevate IS the tzaddik's spiritual effort, same domain as his heart and his madrega"
+        },
+        {
+          "merged_component": "יָבֹא יוֹמוֹ ↔ מַדְרֵגָה",
+          "original_component_size": 2,
+          "merged_into": "Package 2",
+          "reason": "The madrega (spiritual level) is the structural framework of the tzaddik's ascent. The 'day that will come' is the tzaddik's future spiritual level — a positive concept of growth and ascent. The madrega is where the tzaddik is going, and also the origin of the machshava zara that challenges him. In both framings, the madrega is the tzaddik's domain — his present station and his future destination. It merges into Package 2 as the structural/level dimension of the tzaddik's spiritual world.",
+          "merge_basis": "shared nature (bechina): the madrega IS the measure of the tzaddik's spiritual standing — same domain as his heart and his will"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_from_source_text": 7,
+    "total_nodes": 11,
+    "total_packages": 2,
+    "raw_connected_components": 4,
+    "components_merged_into_packages": 2,
+    "component_breakdown": [
+      {
+        "id": "A",
+        "size": 5,
+        "nodes": ["מַחֲשָׁבָה זָרָה", "זֹמֵם רָשָׁע", "חֶרֶב", "מַחֲלֹקֶת", "קַשְּׁתוֹת"],
+        "became_package": 1,
+        "merge_action": "promoted directly (large component)"
+      },
+      {
+        "id": "B",
+        "size": 2,
+        "nodes": ["לִבָּם", "לֵב הַצַּדִּיק"],
+        "became_package": 2,
+        "merge_action": "merged into Package 2 (same polarity, same thematic domain)"
+      },
+      {
+        "id": "C",
+        "size": 2,
+        "nodes": ["חֹרֵק שִׁנַּיִם", "רָצוֹן לְהַעֲלוֹת"],
+        "became_package": 2,
+        "merge_action": "merged into Package 2 (same polarity, same thematic domain)"
+      },
+      {
+        "id": "D",
+        "size": 2,
+        "nodes": ["יָבֹא יוֹמוֹ", "מַדְרֵגָה"],
+        "became_package": 2,
+        "merge_action": "merged into Package 2 (same polarity, same thematic domain)"
+      }
+    ],
+    "note_on_zero_dataset_edges": "Torah #96 has no bechina edges in torahData.js as of 2026-03-03. The entire graph was reconstructed from the source text. The Torah is short (15 lines) but unusually bechina-rich in its verse-interpretation section (lines 9-15), yielding 7 explicit bechina pairs from 7 verse-phrases. The teaching's structure in two packages: [Package 1: evil force] ←eitza-tension→ [Package 2: tzaddik's inner world]. The eitza flow is: machloket on a tzaddik (external) → machshava zara enters his heart (internal) → tzaddik's will to elevate (response) → breaks all baalei machloket (outcome). This eitza chain runs between and through the two packages."
+  }
+}

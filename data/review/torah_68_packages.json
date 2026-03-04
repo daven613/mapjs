@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "source": "Torah #68",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===68 AND type==='bechina'. Total bechina edges: 3. Total unique nodes: 6. Raw connected components: 3 (all 2-node isolated pairs). Components A ({ממון, חומה}) and C ({התחלת המקום שמשתלשל משם הממון, קדשה ושפע קדש}) merged into Package 1 on the basis of shared bechina: both describe wealth/shefa from the holy side. Component B ({רעה, כעס}) stands alone as Package 2, the evil mirror."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 68,
+      "label": "מָמוֹן וְשֶׁפַע קֹדֶשׁ",
+      "label_en": "Wealth and Holy Overflow",
+      "polarity": "good",
+      "reason": "This package groups all nodes in Torah #68 that belong to the holy/positive dimension of wealth and material blessing. Component A (ממון ↔ חומה) identifies money as a protective wall — a spiritual fortification of the person. Component C (התחלת המקום שמשתלשל משם הממון ↔ קדושה ושפע קדש) identifies the supernal source from which money descends as a place of holiness and divine overflow. Both pairs share the same essential bechina nature: they describe the positive, sacred dimension of ממון. The origin-source (קדושה ושפע קדש) is the root; the terrestrial expression (חומה) is the fruit — different aspects of the same holy reality. The Torah's argument in §2 establishes that the soul and money come from the same supernal place, and §8 establishes that wealth, while it descends, manifests as a protective wall. These are two faces of one coin: wealth as holy inheritance flowing from the divine overflow and protecting the one who receives it.",
+      "dominant_node": "ממון",
+      "nodes": [
+        "ממון",
+        "חומה",
+        "התחלת המקום שמשתלשל משם הממון",
+        "קדשה ושפע קדש"
+      ],
+      "node_degrees": {
+        "ממון": 1,
+        "חומה": 1,
+        "התחלת המקום שמשתלשל משם הממון": 1,
+        "קדשה ושפע קדש": 1
+      },
+      "merge_notes": [
+        {
+          "merged_components": ["Component A: {ממון, חומה}", "Component C: {התחלת המקום שמשתלשל משם הממון, קדשה ושפע קדש}"],
+          "reason": "Both components describe the same domain: the holy/positive face of ממון. Component C is the supernal root (money originates from a place of holiness and shefa). Component A is the earthly manifestation (money, once descended, functions as a protective wall). The Torah explicitly chains these: 'the beginning-place from which money descends is a bechina of holiness and shefa' (§2) and 'money and wealth is a bechina of a wall' (§8). These two bechina statements trace the same substance — holy divine overflow — through its descent: from sacred origin-point to protective wall. Merging on shared nature: both are expressions of ממון from the side of holiness."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 68,
+      "label": "כַּעַס וְרָעָה",
+      "label_en": "Anger and Evil",
+      "polarity": "evil",
+      "reason": "This package contains the evil mirror of Package 1. Edge 1517 states: 'from the north evil will open — that is, the bechina of anger.' Anger (כעס) and evil (רעה) are declared one bechina in Torah #68 via Yirmiyah 1:14 (from the north evil will open) cross-read with Kohelet 11:10 (remove anger from your heart and eliminate evil from your flesh). Both the evil that 'opens from the north' and the anger that must be removed are the SAME concept. This pair describes the dark inversion of the holy wealth-flow: where Package 1 shows the Tzafon as a source of holy gold (Iyov 37: 'from the north gold comes'), Package 2 shows the same Tzafon as the source of evil/anger (Yirmiyah 1). Both north-flows descend from Gevurot — the gold-from-north becomes holy ממון (Package 1); the evil-from-north becomes כעס that destroys the wall. The evil mirror is structurally exact: where ממון builds the חומה, כעס tears it down; where קדושה ושפע קדש is the holy root, רעה is the evil root.",
+      "dominant_node": "כעס",
+      "nodes": [
+        "כעס",
+        "רעה"
+      ],
+      "node_degrees": {
+        "כעס": 1,
+        "רעה": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 6,
+    "total_packages": 2,
+    "raw_connected_components": 3,
+    "components_merged_into_packages": 2,
+    "note_on_merges": "3 raw components: (A) 2 nodes — ממון/חומה [merged into Pkg 1], (B) 2 nodes — רעה/כעס [Pkg 2, evil mirror], (C) 2 nodes — התחלת המקום/קדושה ושפע קדש [merged into Pkg 1]. Merge of A+C justified by shared bechina domain (holy dimension of wealth). B stands alone as the evil package."
+  }
+}

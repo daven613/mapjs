@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "source": "Torah #72",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===72 AND type==='bechina'. Result: 3 bechina edges forming 3 isolated 2-node pairs (Components A, B, C). All three components are in the evil domain and describe aspects of the same overarching concept — the yetzer hara (evil inclination) in its multiple levels. Per the merge rule (Step 6), all three pairs are merged into a single package based on shared essential nature: they are all facets of the yetzer hara's multi-level taxonomy as taught in this Torah. No 'larger' component exists to anchor merges separately, so the thematic unity of the teaching drives the consolidation."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 72,
+      "label": "יֵצֶר הָרָע",
+      "label_en": "The Evil Inclination — Its Levels and Root",
+      "polarity": "evil",
+      "reason": "Torah #72 is entirely devoted to a single domain: the taxonomy of the evil inclination across its multiple levels. Three bechina pairs are present in the dataset. (1) נשין שפירין ↔ אלילים — beautiful women are a bechina of idols; hirhurei znut equal hirhurei avoda zara; both are shtut (folly), the lower physical yetzer hara of coarse/turbid blood. (2) גבורות ↔ דינים — the higher yetzer hara of the spiritually advanced person is the bechina of gevurot and dinim, the forces of divine severity that must be sweetened. (3) מדת הדין ↔ יצר הרע — the measure of divine judgment is the root-bechina of the yetzer hara itself, the ultimate source from which all levels descend. All six nodes describe one overarching domain: the yetzer hara as it manifests across the levels of creation, from its highest spiritual root (midas hadin / gevurot) through the intermediate (klipa daka) down to the grossest physical level (turbid blood / shtut / dimyonot). In this Torah these are explicitly presented as a single continuous hierarchy, not distinct separate domains. The dominant node is יצר הרע — it is the concept that connects all three pairs through the teaching's narrative, appearing directly in one edge (מדת הדין ↔ יצר הרע) and serving as the referent of the other two pairs throughout the text.",
+      "dominant_node": "יצר הרע",
+      "nodes": [
+        "יצר הרע",
+        "מדת הדין",
+        "גבורות",
+        "דין",
+        "נשין שפירין",
+        "אלילים"
+      ],
+      "node_degrees": {
+        "יצר הרע": 1,
+        "מדת הדין": 1,
+        "גבורות": 1,
+        "דין": 1,
+        "נשין שפירין": 1,
+        "אלילים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["גבורות", "דין"],
+          "reason": "Component B (edge 730, גבורות ↔ דינים) is a 2-node pair describing the upper yetzer hara — the same domain as Component C. The Torah explicitly says: 'הַיְנוּ גְּבוּרוֹת וְדִינִים' and 'שֶׁהֵם הַיֵּצֶר הָרָע שֶׁלְּמַעְלָה'. Gevurot/dinim are the bechina of the upper yetzer hara, which in turn is rooted in midas hadin (Component C). These two pairs share the same essential nature — the upper level of the yetzer hara — and belong together."
+        },
+        {
+          "merged_nodes": ["נשין שפירין", "אלילים"],
+          "reason": "Component A (edge 277, נשין שפירין ↔ אלילים) describes the lower physical yetzer hara: beautiful women are a bechina of idols because hirhurei znut = hirhurei avoda zara = shtut (Zohar Kedoshim 84). While this is the lower level of the yetzer hara, the Torah explicitly structures it as one unified taxonomy descending from midas hadin (the root) through gevurot/dinim (upper) down to shtut/blood/dimyonot (lower). The shared nature is: these are all aspects of the evil inclination. The Torah's argument is that ALL levels are the same root, so all belong in one package."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 6,
+    "total_packages": 1,
+    "raw_connected_components": 3,
+    "components_merged_into_packages": 1,
+    "note_on_merges": "3 raw components, all 2-node pairs: (A) נשין שפירין ↔ אלילים [lower yetzer hara / shtut domain], (B) גבורות ↔ דינים [upper yetzer hara / gevurot domain], (C) מדת הדין ↔ יצר הרע [root/essence identification]. All merged into 1 package because the Torah's entire conceptual structure is a unified taxonomy of the evil inclination from root to lowest branch, and all three pairs are explicitly presented as levels of one phenomenon."
+  }
+}

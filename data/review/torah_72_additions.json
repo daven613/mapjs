@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "source": "Torah #72",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_72_packages.json, all reference===72 edges from torahData.js, and the full source text torah_72.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, הַיְנוּ [as equivalence], נִקְרָא) were considered. Narrative descriptions, Talmudic citations used as proof-texts, and implied comparisons without explicit bechina markers were excluded."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "יֵצֶר הָרָע",
+      "node_id": "דם שבחלל השמאלי",
+      "node_text": "הַדָּם שֶׁבֶּחָלָל הַשְּׂמָאלִי",
+      "polarity": "evil",
+      "reason": "Line 3 states explicitly: 'הַיְנוּ הַדָּם שֶׁבֶּחָלָל הַשְּׂמָאלִי, שֶׁהוּא בְּתָקְפּוֹ' — the Rebbe uses הַיְנוּ (= הַיְנוּ בְּחִינַת) to equate the gross/physical yetzer hara of the common person with the blood in the left cavity that is at full strength. This is an explicit bechina identification: the lower yetzer hara IS the turbid blood of the left ventricle. The concept 'דם שבחלל השמאלי' is not in the dataset but belongs in Package 1 as a bechina of the lower physical yetzer hara domain. It expands the אלילים / נשין שפירין pair downward — the physical passion expressed there has its root in this physiological bechina.",
+      "source_quote": "הַיְנוּ הַדָּם שֶׁבֶּחָלָל הַשְּׂמָאלִי, שֶׁהוּא בְּתָקְפּוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יֵצֶר הָרָע",
+      "node_id": "קליפה דקה",
+      "node_text": "קְלִפָּה דַּקָּה",
+      "polarity": "evil",
+      "reason": "Line 12 states: 'וְיֵשׁ יֵצֶר הָרָע, שֶׁאֵינוֹ מְגֻשָּׁם כָּל כָּךְ, שֶׁאֵינוֹ מֵעֲכִירַת הַדָּמִים, אַךְ הוּא בְּחִינַת קְלִפָּה דַּקָּה' — the Rebbe uses בְּחִינַת explicitly: this intermediate yetzer hara (above the gross physical but below the upper spiritual) IS a bechina of a thin shell (klipa daka). This is a distinct level in the Torah's hierarchy — between the coarse blood-level yetzer hara and the upper holy-angel yetzer hara — and receives an explicit bechina designation. It is not in the dataset.",
+      "source_quote": "אַךְ הוּא בְּחִינַת קְלִפָּה דַּקָּה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יֵצֶר הָרָע",
+      "node_id": "כתר עליון אוכמא",
+      "node_text": "כֶּתֶר עֶלְיוֹן אֻכָּמָא",
+      "polarity": "evil",
+      "reason": "Line 8 opens a parenthetical passage with: 'וְזֶה בְּחִינַת (ת\"ז תיקון ע' דף קכג:): אֲפִלּוּ כֶּתֶר עֶלְיוֹן אֻכָּמָא אִיהוּ לְגַבֵּי עִלַּת הָעִלּוֹת' — the Rebbe invokes this Tikunei Zohar passage as a bechina of the concept under discussion: even the highest crown is 'black' (darkness) relative to the Infinite. This is used to illustrate the principle that even the highest spiritual kedushah contains something analogous to the upper yetzer hara / midas hadin relative to a still-higher level. 'כֶּתֶר עֶלְיוֹן אֻכָּמָא' is explicitly called a bechina in this context. It belongs to Package 1 as a super-elevation of the gevurot/din concept — the same structural phenomenon at the highest cosmic level. Note: this is a paradoxical bechina — the 'darkness' here is not evil per se but represents the relative incompleteness/judgment even at the highest level, which is the root of the entire yetzer hara structure.",
+      "source_quote": "וְזֶה בְּחִינַת...אֲפִלּוּ כֶּתֶר עֶלְיוֹן אֻכָּמָא אִיהוּ לְגַבֵּי עִלַּת הָעִלּוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_72_edges": 4,
+    "total_reference_72_bechina_edges": 3,
+    "total_reference_72_eitza_edges": 1,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["יצר הרע", "מדת הדין", "גבורות", "דין", "נשין שפירין", "אלילים"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["דם שבחלל השמאלי", "קליפה דקה", "כתר עליון אוכמא"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "עכירת הדמים / בלבול המוח",
+        "reason": "Lines 3, 13, 16 repeatedly reference 'עכירת הדמים' (turbid/muddied blood) as the cause of the lower yetzer hara. However, this is used as a causal explanation (eitza — turbid blood PRODUCES the lower yetzer hara / shtut), not a bechina equivalence. The source text does not say 'עכירת הדמים הוא בחינת יצר הרע'; rather it says the yetzer hara 'stems from' (מחמת / מעכירת) turbid blood. This is an eitza relationship, not bechina. Excluded."
+      },
+      {
+        "concept": "שטות / שגעון",
+        "reason": "Lines 3, 4, 9, 13, 16, 17 repeatedly describe the lower yetzer hara as shtut (foolishness) and shiga'on (madness). However, in Torah #72 the Rebbe does not use explicit bechina language (בְּחִינַת / הַיְנוּ) to equate shtut with the yetzer hara as a structural identity. He describes it as a quality or symptom ('הוא שטות גדול') rather than declaring 'shtut IS a bechina of X'. Furthermore, this bechina IS present in the dataset for OTHER Torahs (e.g., Torah #1 edges for שגעון/רוח שטות). For Torah #72 specifically, the text uses descriptive language rather than bechina-declaration language. Excluded per strict bechina-language criterion."
+      },
+      {
+        "concept": "מלאך הקדוש (holy angel)",
+        "reason": "Line 5: 'שֶׁהוּא מַלְאָךְ הַקָּדוֹשׁ, וְאַף־עַל־פִּי־כֵן הוּא יֵצֶר הָרָע' — the upper yetzer hara is identified as a 'holy angel' even while being a yetzer hara. This could be read as a bechina statement. However, the Rebbe's language here is not 'מלאך הקדוש הוא בחינת יצר הרע' — he says 'יש בחינת יצר הרע שהוא מלאך הקדוש'. The בחינת here modifies 'יצר הרע' as 'there is an aspect of yetzer hara which IS a holy angel', describing a type/level of yetzer hara, not equating two concepts as parallel aspects. This is closer to a categorical definition ('there is a TYPE of yetzer hara that is...') than a bechina identification. The edge 730 and 1390 already capture the essence of this level. Borderline case; excluded to avoid over-extraction."
+      },
+      {
+        "concept": "אין סוף",
+        "reason": "Lines 5 and 7 mention 'אין סוף' as the place where 'all is good and there is no din'. This is the positive resolution — the goal state. The Rebbe does not assign it a bechina equivalence with any other concept in this Torah; it is the destination/goal described in eitza terms ('one must be included in the Ain Sof'). It is a reference point, not a bechina node. Excluded."
+      },
+      {
+        "concept": "לא ידעו ולא יבינו בחשכה יתהלכו (Psalm 82)",
+        "reason": "Line 8: 'בְּחִינַת (תהלים פב): לֹא יָדְעוּ וְלֹא יָבִינוּ בַּחֲשֵׁכָה יִתְהַלָּכוּ, בְּחִינַת הַקְּדֻשָּׁה שֶׁלְּמַעְלָה' — the verse is cited as a bechina of the 'kedushah shel maalah' (the upper holiness that contains the upper yetzer hara). The bechina here refers to the concept of 'darkness/not-knowing even at the upper level' as an aspect of the upper yetzer hara phenomenon. However, this is a verse citation used as illustrative proof-text rather than establishing a new conceptual node. The concept it refers to — that even the upper kedushah contains something 'dark' relative to the Ain Sof — is better captured by 'כתר עליון אוכמא' (listed above as an addition) which uses a concrete noun-node. The verse itself is a source, not a concept-node. Excluded to avoid redundancy with the כתר עליון אוכמא addition."
+      },
+      {
+        "concept": "מדת הרחמים (measure of mercy)",
+        "reason": "Line 8 mentions God combining 'מדת הרחמים' with 'מדת הדין' to create the world — 'שיתף מדת רחמים'. This is the positive counterpart to מדת הדין. However, no explicit bechina statement is made equating מדת הרחמים with another concept in this Torah — it is mentioned as the resolution/counterpart in a causal narrative (midas hadin was 'broken/sweetened' by adding midas harachamim). This is an eitza relationship in the cosmic realm, not a bechina. Excluded."
+      }
+    ]
+  }
+}

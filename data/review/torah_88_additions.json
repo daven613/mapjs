@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "source": "Torah #88 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 2,
+    "nodes_in_dataset_not_in_packages": [],
+    "anomalous_edges": [
+      {
+        "edge_id": 263,
+        "node1": "שכינה",
+        "node2": "אלהים",
+        "issue": "Proof text 'בְּהַשְּׁכִינָה, שֶׁהוּא בְחִינַת אֱלֹקִים' does not appear in the Torah #88 source text (torah_88.txt). Neither שכינה nor אלהים appears anywhere in the 9-line teaching. This edge may have been assigned to reference 88 in error or may derive from an oral tradition / variant text not captured in the source file. It is retained in Package 2 of this analysis per the algorithmic requirement to include all edges where reference===88 AND type==='bechina'."
+      }
+    ],
+    "concepts_in_source_text_not_in_dataset": [
+      {
+        "concept": "שמים (heavens) as the tzaddik's love and fear",
+        "source_section": "lines 5 and 9",
+        "source_text_line_5": "הַמְכַסֶּה שָׁמַיִם בְּעָבִים – הַיְנוּ אֵשׁ וּמַיִם. הַיְנוּ כְּשֶׁהַצַּדִּיק יָכוֹל לְכַסּוֹת שָׁמַיִם, הַיְנוּ אֵשׁ וּמַיִם, הַיְנוּ הָאַהֲבָה וְהַיִּרְאָה שֶׁלּוֹ",
+        "source_text_line_9": "לְשֵׁם שָׁמַיִם, הַיְנוּ לְשֵׁם צַדִּיק, שֶׁהוּא מְכֻנֶּה בְּשֵׁם שָׁמַיִם, מֵחֲמַת שֶׁיֵּשׁ לוֹ אַהֲבָה וְיִרְאָה",
+        "bechina_language": "הַיְנוּ (='that is') used twice in line 5 to equate שמים=אש ומים=אהבה ויראה. In line 9, 'מְכֻנֶּה בְּשֵׁם שָׁמַיִם' ('is called by the name heavens') is explicit naming-language equivalent to 'נקרא', a standard bechina marker.",
+        "proposed_edges": [
+          "שמים ↔ אש ומים (שמים = fire + water, the two elements of love and fear)",
+          "שמים ↔ אהבה ויראה (שמים is a bechina of love + fear combined)",
+          "צדיק ↔ שמים (the tzaddik is called by the name 'heavens' because he has love and fear)"
+        ],
+        "proposed_package": "NEW_PACKAGE — Tzaddik's Hidden Love and Fear (see torah_88_new_packages.json)",
+        "note": "These are the most significant missing bechinas in this Torah. The entire teaching revolves around the tzaddik's possession and concealment of שמים=אהבה ויראה, yet this central identification is not recorded as a bechina edge in the dataset."
+      },
+      {
+        "concept": "אהבה ויראה as ידים (hands for receiving)",
+        "source_section": "line 2",
+        "source_text": "כִּי הַצַּדִּיק יֵשׁ לוֹ יָדַיִם בַּמֶּה לְקַבְּלָם, דְּהַיְנוּ אַהֲבָה וְיִרְאָה, כִּי הֵם הַיָּדַיִם לְקַבֵּל בָּהֶם כָּל הַהַשְׁפָּעוֹת",
+        "bechina_language": "דְּהַיְנוּ ('that is') followed by 'כִּי הֵם הַיָּדַיִם' ('for they are the hands') — the word 'הינו' is used to identify אהבה ויראה as the ידים. 'הם הידים' is a strong equating statement.",
+        "proposed_edges": [
+          "אהבה ויראה ↔ ידים (love and fear ARE the hands by which the tzaddik receives all influx)"
+        ],
+        "proposed_package": "NEW_PACKAGE — Tzaddik's Hidden Love and Fear (see torah_88_new_packages.json)",
+        "note": "This bechina directly connects אהבה ויראה to ידים within the same semantic cluster. Both are aspects of the tzaddik's receptive capacity — his 'tools' for drawing down divine blessing."
+      },
+      {
+        "concept": "אש as אהבה (fire as love) and מים as יראה (water as fear)",
+        "source_section": "line 5",
+        "source_text": "הַיְנוּ אֵשׁ וּמַיִם. הַיְנוּ... הָאַהֲבָה וְהַיִּרְאָה שֶׁלּוֹ",
+        "bechina_language": "The teaching maps: שמים = אש ומים (fire + water) = אהבה ויראה. Since אש is one element of שמים = love/fear, the implied bechinas are: אש ↔ אהבה (fire = love), מים ↔ יראה (water = fear). This is a standard Kabbalistic identification (fire = חסד/love, water = גבורה/fear).",
+        "proposed_edges": [
+          "אש ↔ אהבה (fire is the bechina of love in this teaching)",
+          "מים ↔ יראה (water is the bechina of fear in this teaching)"
+        ],
+        "proposed_package": "NEW_PACKAGE — Tzaddik's Hidden Love and Fear (see torah_88_new_packages.json)",
+        "note": "These elemental bechinas are implicit in the teaching's equation שמים=אש ומים=אהבה ויראה. The Rebbe does not state them as separate bechinas, but they are structurally implied. Lower confidence than the other missing edges."
+      },
+      {
+        "concept": "עבים (clouds) as מחלוקת (controversy that conceals)",
+        "source_section": "lines 8-9",
+        "source_text": "הַמְכַסֶּה שָׁמַיִם בְּעָבִים... וְהַקָּדוֹשׁ בָּרוּךְ הוּא נוֹתֵן בְּלֵב צַדִּיק אַחֵר לְהַחַזִיק עָלָיו בְּמַחֲלֹקֶת כְּדֵי לְכַסּוֹתוֹ",
+        "bechina_language": "The verse phrase 'covering the heavens with clouds' (הַמְכַסֶּה שָׁמַיִם בְּעָבִים) is interpreted as covering the tzaddik (=שמים) with controversy (=עבים). The 'clouds' in the verse BECOME the controversy in the teaching — this is the interpretive move that drives the teaching, making עבים a bechina of מחלוקת.",
+        "proposed_edges": [
+          "עבים ↔ מחלוקת (clouds = controversy that conceals the tzaddik, enabling rain/influx to descend)"
+        ],
+        "proposed_package": "NEW_PACKAGE — Tzaddik's Hidden Love and Fear OR a neutral/structural package for the concealment mechanism",
+        "note": "If this bechina edge were added, עבים and מחלוקת would form a 2-node component. מחלוקת in this teaching is not simply negative — it is a divinely-ordained positive concealment mechanism. Polarity: neutral-to-good (מחלוקת לשם שמים = controversy for the sake of heaven is holy). Would be assigned to the proposed new package."
+      },
+      {
+        "concept": "מקטרגים as the force preventing influx",
+        "source_section": "lines 3 and 7",
+        "source_text_line_3": "כְּדֵי שֶׁלֹּא יְקַטְרְגוּ הַמְקַטְרְגִים עָלָיו, וְיִגְזְלוּ מִמֶּנּוּ הַהַשְׁפָּעוֹת",
+        "source_text_line_7": "הַמְקַטְרְגִים יוֹדְעִים וּמַשְׁגִּיחִים עָלָיו הֵיטֵב, וְאֵינָם מַנִּיחִים לוֹ לְהוֹרִיד הַשֶּׁפַע",
+        "bechina_language": "No explicit בחינת language for מקטרגים. They are named characters in the teaching but not equated with any other concept via bechina language. They are the evil opposing force — they observe the famous tzaddik and steal/block his influx.",
+        "proposed_edges": "None — no explicit bechina equating מקטרגים with another concept in the source text. Their functional role (blocking influx) is eitza, not bechina.",
+        "note": "מקטרגים is the evil character in this teaching but is never equated with another concept via בחינת/הינו language. If a bechina edge were proposed (e.g., מקטרגים ↔ עשו, or מקטרגים ↔ סטרא אחרא), it would belong to an evil package that forms the mirror of the holy tzaddik cluster. Currently no such bechina exists in the text. Lower priority than the positive-cluster gaps."
+      }
+    ],
+    "summary": "The dataset for Torah #88 captures only 2 of approximately 7-9 bechina identifications present in the source text. The most critical gap is the entire cluster around the tzaddik's love/fear: שמים=אהבה ויראה=ידים=אש ומים=צדיק — this 5-node cluster is the conceptual core of the teaching and is completely absent from the dataset. The currently-captured bechinas (מטר=השפעות וברכות and שכינה=אלהים) represent peripheral or background identifications. The second most significant gap is עבים=מחלוקת, which completes the verse-interpretation at the heart of the teaching. Were all missing edges added, Torah #88 would have approximately 7-9 bechina edges organized around 2 packages: (1) the tzaddik's concealed love/fear cluster (good), and (2) the rain/influx cluster (good, connected via eitza to package 1)."
+  }
+}

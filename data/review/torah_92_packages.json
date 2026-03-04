@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "source": "Torah #92 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 92,
+      "label": "תּוֹרָה וְיַעֲקֹב — תּוֹרָה, אֱמֶת, רֵאָה, יַעֲקֹב, אָדָם",
+      "label_en": "Torah and Jacob — Torah, Truth, Lung, Jacob, Man",
+      "polarity": "good",
+      "reason": "All five concepts share a single essential nature: divine truth as expressed through the living body of Torah-learning man. The chain is triply reinforced by explicit bechina language: (1) יעקב הוא בחינת אמת — Jacob is truth itself; (2) ואמת הוא בחינת תורה — truth is Torah; (3) ובהתורה יש חמישה ספרים כנגד חמישה כנפי ראה — the five books of Torah correspond to the five wings of the lung, making Torah and the lung structurally identical; (4) הראה והלב הם בחינות יעקב ויוסף — the lung is the bechina of Jacob, bringing ראה into the cluster via Jacob; (5) אדם שהוא בחינת תורה (זאת התורה אדם, במדבר יט) — Man himself is a bechina of Torah. These five nodes are thus all expressions of the same positive cosmic force: the Torah-truth-breath that flows through Jacob/Man and cools the fires of harsh judgment. The dominant node תורה is the conceptual hub with three bechina connections (to ראה, אמת, and אדם) in this Torah.",
+      "dominant_node": "תורה",
+      "nodes": [
+        "תורה",
+        "יעקב",
+        "אמת",
+        "ראה",
+        "אדם"
+      ],
+      "node_degrees": {
+        "תורה": 3,
+        "יעקב": 2,
+        "אמת": 2,
+        "ראה": 2,
+        "אדם": 1
+      },
+      "merge_notes": [
+        "This is the largest raw connected component (5 nodes) and stands on its own without any merges.",
+        "The five-node cluster is fully connected by bechina edges: יעקב–אמת (id 348), אמת–תורה (id 3092), תורה–ראה (id 2652), ראה–יעקב (id 1371), תורה–אדם (id 3091). The result is a densely interconnected good package.",
+        "Components B (יוסף/לב) and C (אש/דין) are NOT merged into this package. The connection from this cluster to לב/יוסף runs through eitza (the lungs cool the heart), not bechina. The proof text for the ראה–יעקב edge (id 1371) mentions that 'הראה והלב הם בחינות יעקב ויוסף' but this appears as a contextual introduction; in the dataset the בחינה ראה↔יעקב is the captured equivalence, while יוסף↔לב is separately recorded as its own edge. The cross-component relationship is causal (ראה cools לב), which is eitza, not bechina — the two sides are not the same essential nature but structural opposites.",
+        "אדם is the weakest node by degree (1) but its bechina with תורה is the Torah's closing punch-line: 'אדם שהוא בחינת תורה' is the conceptual key that explains why a man walking in his home can revive the dead — because Man IS Torah, and Torah cools the dinin. The node is correctly placed here."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 92,
+      "label": "יוֹסֵף וְלֵב — הַלֵּב הַבּוֹעֵר",
+      "label_en": "Joseph and the Heart — the Burning Heart",
+      "polarity": "neutral",
+      "reason": "יוסף and לב share the essential nature of the hidden-burning interior of the person. The bechina is explicit: יוסף נקרא צפנת פענח (Genesis 41), and כתיב בלבי צפנתי (Psalm 119:11) — the very name 'Tzafnat Pa'aneach' means 'the one who hides/stores in the heart,' equating יוסף with לב via the root צ.פ.נ. (to hide/store). In the physiology of this Torah, the לב is not evil by nature — it is a bodily organ that contains heat (חמימות), as all hearts do. The danger is excess: 'כשבוער האש שבלב, הוה אוקיד כל גופא.' The Rebbe frames this heat not as intrinsically sinful but as the natural force of vitality that must be balanced and cooled by the lungs/Torah. יוסף, who was known for managing passion (resisting Potiphar's wife), embodies the heart that contains fire without being consumed by it. The polarity is therefore neutral — these are structural/bodily forces that can tip to harm (if the fire is uncontrolled) or to vitality (when balanced). They are not placed as 'evil' because the teaching does not condemn the heart; it simply describes what cools it.",
+      "dominant_node": "יוסף",
+      "nodes": [
+        "יוסף",
+        "לב"
+      ],
+      "node_degrees": {
+        "יוסף": 1,
+        "לב": 1
+      },
+      "merge_notes": [
+        "This two-node component was evaluated for merge into Package 1 (Torah/Jacob cluster) and Package 3 (Fire/Dinin cluster).",
+        "Merge into Package 1 rejected: The connection between ראה (Package 1) and לב is eitza — the lungs cool the heart. The two clusters are structurally opposite (lung vs. heart, cooling vs. heating, Jacob vs. Joseph), not parallel aspects of the same thing. Bechina merges require shared essential nature, not opposition.",
+        "Merge into Package 3 rejected: Although 'כשבוער האש שבלב' links the heart to the fire/dinin (Package 3), this is again eitza-like: the heart contains the fire, but the heart is not the fire. יוסף is not a bechina of דין — his essential nature is 'hidden/stored' (צפון), not 'judgment/severity'. The relationship between לב and אש/דין is containment (the heart houses the fire), not identity.",
+        "יוסף is designated dominant node over לב because יוסף is the named personality who anchors the bechina — the proof text works by identifying יוסף's given name (צפנת פענח) with the Psalm phrase (בלבי צפנתי). The locus of identity is יוסף; לב is the concept he is equated to."
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 92,
+      "label": "אֵשׁ וְדִינִים — הָאֵשׁ הַשּׂוֹרֶפֶת",
+      "label_en": "Fire and Strict Judgments — the Consuming Fire",
+      "polarity": "evil",
+      "reason": "אש and דין share the essential nature of harsh, consuming divine severity. The bechina is explicit and precise: 'האש שהוא בחינות דינים' — the fire IS dinin (strict judgments). In Kabbalistic thought, דינים (Din, strict judgment, the Gevurah axis) is the source of all destructive and burning forces. Fire is the physical manifestation of this metaphysical severity. The Torah presents this pair as the dangerous force that threatens to consume the entire body ('אוקיד כל גופא') — the very thing that the Torah-movement of Man/Jacob must quell. This is the evil (or at minimum severely negative) counter-pole to the good cluster of Torah/Truth/Lung. The polarity is evil not because fire or even judgment is intrinsically demonic, but because in the context of this Torah they represent the force that kills and destroys, and the entire teaching is structured around overcoming them.",
+      "dominant_node": "דין",
+      "nodes": [
+        "אש",
+        "דין"
+      ],
+      "node_degrees": {
+        "אש": 1,
+        "דין": 1
+      },
+      "merge_notes": [
+        "This two-node component was evaluated for merge into Package 1 (Torah/Jacob cluster) and Package 2 (Joseph/Heart cluster).",
+        "Merge into Package 2 rejected: While the heart (Package 2) contains the fire, the fire and the heart are not the same thing in this Torah. The relationship is structural/eitza (the heart houses the fire), not identity. The shared nature of Package 2 is 'hidden/stored interior' (צפון); the shared nature of Package 3 is 'consuming severity.' These are different essential natures.",
+        "Merge into Package 1 rejected: Fire and dinin are the exact opposite of Torah and Truth. They cannot share a package with the cooling/good cluster.",
+        "דין is designated dominant node over אש because דין is the primary kabbalistic concept — it is the metaphysical reality; אש is its physical expression. The proof text reads 'האש שהוא בחינות דינים' — the אש is defined in terms of דין, not the reverse. דין is the deeper, more abstract, and theologically primary term."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 7,
+    "total_nodes": 9,
+    "total_packages": 3,
+    "raw_connected_components": 3
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "source": "Torah #85",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #85 has ZERO bechina edges in torahData.js. The source text (torah_85.txt) is an extremely brief fragment (6 lines) attributed to the Rebbe's own language. All packages here are derived entirely from Step 5 gap-analysis of explicit בְּחִינַת/בְּחִינוֹת language in the source text, not from dataset edges. No connected-components graph could be built from the dataset."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 85,
+      "label": "אוֹר שִׁבְעַת הַיָּמִים וְהַמֹּחִין",
+      "label_en": "The Light of the Seven Days and the Supernal Intellects",
+      "polarity": "good",
+      "reason": "The source text's single central bechina equation equates four things as expressions of the same supernal reality: (a) the four mochin — חכמה, בינה, חסד, גבורה — as they are clothed within נצח-הוד-יסוד of Binah; (b) the light of the seven primordial days (כְּאוֹר שִׁבְעַת הַיָּמִים); (c) the shin of three heads (שִׁין שֶׁל שְׁלֹשָׁה רָאשִׁין, corresponding to the standard shin ש); and (d) the shin of four heads (שִׁין שֶׁל אַרְבָּעָה רָאשִׁין, the shin found in tefillin shel rosh). All four are bechina-equivalent: they are all expressions of the same supernal intellectual light that flows through Ze'ir Anpin to illuminate and build Malkhut. The text explicitly says 'וְזֶה בְּחִינוֹת: כְּאוֹר שִׁבְעַת הַיָּמִים, שֶׁהֵם סוֹד שִׁין שֶׁל שְׁלֹשָׁה רָאשִׁין וְשִׁין שֶׁל אַרְבָּעָה רָאשִׁין'. The polarity is good: these are the holy intellectual lights (mochin d'gadlut) that flow from Binah into Ze'ir Anpin, enabling the blessing and building of Malkhut.",
+      "dominant_node": "מֹחִין",
+      "nodes": [
+        "מֹחִין",
+        "חָכְמָה",
+        "בִּינָה",
+        "חֶסֶד",
+        "גְּבוּרָה",
+        "נֶצַח-הוֹד-יְסוֹד דְּבִינָה",
+        "כְּאוֹר שִׁבְעַת הַיָּמִים",
+        "שִׁין שֶׁל שְׁלֹשָׁה רָאשִׁין",
+        "שִׁין שֶׁל אַרְבָּעָה רָאשִׁין"
+      ],
+      "node_degrees": {
+        "מֹחִין": 2,
+        "כְּאוֹר שִׁבְעַת הַיָּמִים": 2,
+        "חָכְמָה": 1,
+        "בִּינָה": 1,
+        "חֶסֶד": 1,
+        "גְּבוּרָה": 1,
+        "נֶצַח-הוֹד-יְסוֹד דְּבִינָה": 1,
+        "שִׁין שֶׁל שְׁלֹשָׁה רָאשִׁין": 1,
+        "שִׁין שֶׁל אַרְבָּעָה רָאשִׁין": 1
+      },
+      "merge_notes": [
+        "חָכְמָה, בִּינָה, חֶסֶד, גְּבוּרָה are listed in the text as the four mochin. In the source they are enumerations of מֹחִין and share the same bechina-equivalent nature as the light of the seven days. They are merged into this package rather than treated as separate isolates, because the text itself groups them as a unit ('הַמֹּחִין הֵם אַרְבַּע: חָכְמָה בִּינָה חֶסֶד וּגְבוּרָה') and the bechina is stated for the group as a whole.",
+        "שִׁין שֶׁל שְׁלֹשָׁה רָאשִׁין and שִׁין שֶׁל אַרְבָּעָה רָאשִׁין are presented as the secret (סוֹד) of the light of the seven days — they are therefore bechina-equivalent to the same light, expressed through the two forms of the letter shin."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 85,
+      "label": "מַלְכוּת בִּבְחִינַת אוֹשִׁיט פְּסִיעָה לְבַר",
+      "label_en": "Malkhut in Its Diminished State — Extending a Small Step Outward",
+      "polarity": "neutral",
+      "reason": "The opening line of the Torah establishes that Malkhut in its initial state is described 'בִּבְחִינַת אוֹשִׁיט פְּסִיעָה לְבַר' — the aspect of extending one small step outside, close to Ze'ir Anpin. This is a bechina description: Malkhut, in its state of smallness (katnut) and proximity to Ze'ir Anpin before it has been fully built and elevated, IS the aspect of 'extending a small step outward'. The Zohar phrase encapsulates the essential nature of Malkhut's initial, diminished condition. Polarity is neutral rather than evil: this diminished state of Malkhut is not itself the sitra achra — it is simply the starting condition of holy Malkhut before it receives mochin and grows. The Rebbe's teaching is about how to correct and grow it (לְתַקְּנָהּ וּלְגַדְּלָהּ), which presupposes it is holy Malkhut in a state of katnut.",
+      "dominant_node": "מַלְכוּת",
+      "nodes": [
+        "מַלְכוּת",
+        "\"אוֹשִׁיט פְּסִיעָה לְבַר\""
+      ],
+      "node_degrees": {
+        "מַלְכוּת": 1,
+        "\"אוֹשִׁיט פְּסִיעָה לְבַר\"": 1
+      },
+      "merge_notes": [
+        "This is a two-node component derived from the explicit bechina language in line 1. It stands apart from Package 1 because the mochin-light-shin cluster is about the supernal intellects that flow INTO Malkhut from above, whereas this package is about Malkhut's own starting condition. These are structurally different domains: the receiver (Malkhut) vs. the content received (the mochin/light). Merging would conflate the vessel with its filling."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_from_source_text": 11,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "note": "All packages derived from source text gap analysis (Step 5), not from dataset edges. Dataset contains no entries for reference===85."
+  }
+}
