@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "source": "Torah #6 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "LM2 Torah #6 has zero bechina edges in torahData.js (no volume field exists; all reference=6 entries belong to LM1 Torah #6). Package structure derived entirely from source text analysis. The Torah is five sentences; all bechina relationships were extracted directly from the text."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 6,
+      "volume": "lm2",
+      "label": "שִׂמְחָה וְזֵעָה טוֹבָה",
+      "label_en": "Joy and Holy Sweat",
+      "polarity": "good",
+      "reason": "These concepts share the same essential nature: the domain of holy vitality, purity, and divine joy. שמחה is the inner state; זיעה טובה is the physical vehicle that produces it; שמחת יום טוב names the category of that joy; דמים זכים are the purified blood that carries the joy; and 'זֶה הַיּוֹם עָשָׂה ה'' is the scriptural expression of that same joy (encoded in the very letters of the word זיעה). They are all faces of the same spiritual-physical reality: holy overflow producing rejoicing. The fact that the Rebbe spells out the acronym זיעה = 'זֶה הַיּוֹם עָשָׂה ה'' confirms that sweat and Yom Tov joy share the same essential nature, not merely a causal link.",
+      "dominant_node": "שמחה",
+      "nodes": [
+        "שמחה",
+        "זיעה טובה",
+        "שמחת יום טוב",
+        "יום טוב",
+        "דמים זכים",
+        "זה היום עשה ה'"
+      ],
+      "node_degrees": {
+        "שמחה": 3,
+        "זיעה טובה": 2,
+        "שמחת יום טוב": 2,
+        "יום טוב": 1,
+        "דמים זכים": 1,
+        "זה היום עשה ה'": 1
+      },
+      "mirror_package_id": 2,
+      "merge_notes": [
+        {
+          "merged_nodes": ["שמחת יום טוב", "יום טוב"],
+          "reason": "The Rebbe explicitly equates these: 'כָּל יוֹם שֶׁהוּא בְּחִינַת טוֹב, נִקְרָא יוֹם-טוֹב' — any day that is a bechina of 'good' is called Yom Tov. These are two expressions of the same concept, both bechinas of joy."
+        },
+        {
+          "merged_nodes": ["זה היום עשה ה'", "זיעה טובה"],
+          "reason": "The Rebbe reveals that the letters of זֵיעָה are an acronym for 'זֶה הַיּוֹם עָשָׂה יְיָ', meaning these two expressions share the same essential nature — both are expressions of holy joy/Yom Tov. This is explicit bechina language in the text."
+        },
+        {
+          "merged_nodes": ["דמים זכים", "שמחה"],
+          "reason": "Pure blood (דמים זכים) is the physiological substrate of joy (שמחה). The Rebbe states 'עִקָּר הָעַצְבוּת — עַל-יְדֵי הַטְּחוֹל' and by contrast, pure blood produces joy. This is the physiological face of the same spiritual reality."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 6,
+      "volume": "lm2",
+      "label": "עַצְבוּת וְטֻמְאַת הַדָּם",
+      "label_en": "Sadness and Impure Blood",
+      "polarity": "evil",
+      "reason": "These concepts share the same essential nature: the domain of the negative force, physical impurity, and spiritual depression. עצבות is the inner state of sadness; טחול is the organ that embodies it; עכירות הדמים is the physiological reality of turbid/impure blood that the spleen holds; and ארס is the toxin/venom within that impure blood that causes illness. The Rebbe explicitly equates: 'הָעַצְבוּת — מִן הַטְּחוֹל' and 'טְחוֹל הִיא עֲכִירוּת הַדָּמִים'. These three are bechinas of each other — different names for the same negative state at different levels of reality (spiritual/psychological, physiological, toxic).",
+      "dominant_node": "עצבות",
+      "nodes": [
+        "עצבות",
+        "טחול",
+        "עכירות הדמים",
+        "ארס"
+      ],
+      "node_degrees": {
+        "עצבות": 2,
+        "טחול": 2,
+        "עכירות הדמים": 2,
+        "ארס": 1
+      },
+      "mirror_package_id": 1,
+      "merge_notes": [
+        {
+          "merged_nodes": ["עצבות", "טחול", "עכירות הדמים"],
+          "reason": "The Rebbe explicitly collapses these three into one: 'הָעַצְבוּת — עַל-יְדֵי הַטְּחוֹל' and 'טְחוֹל הִיא עֲכִירוּת הַדָּמִים'. The spleen IS the turbid blood, and that turbid blood IS the sadness. Three names for the same negative reality."
+        },
+        {
+          "merged_nodes": ["ארס", "עכירות הדמים"],
+          "reason": "The ארס (venom/toxin) is described as what is contained within the עכירות הדמים (turbid blood). It is the active harmful agent that is the same domain as the impure blood — the negative substance that causes illness and ultimately leaves via sweat."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 10,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "note": "Zero bechina edges in torahData.js for lm2/reference=6. All packages derived from source text gap analysis. The Torah's two packages mirror each other exactly: good (holy sweat → joy → pure blood) vs. evil (spleen/turbid blood → sadness/toxin)."
+  }
+}

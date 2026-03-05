@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "source": "Torah #48 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": null,
+      "node_id": "עצבות",
+      "node_text": "עַצְבוּת",
+      "paired_node_id": "סטרא אחרא",
+      "paired_node_text": "סִטְרָא אָחֳרָא",
+      "polarity": "evil",
+      "reason": "The Rebbe states explicitly — with a Zohar citation — that sadness IS the sitra achra: 'כִּי עַצְבוּת הִיא סִטְרָא־אָחָרָא (זוהר נח דף עא)'. This is the canonical bechina formulation (X הִיא Y). עַצְבוּת and סִטְרָא אָחֳרָא are not cause and effect — sadness does not produce the sitra achra, they are identified as the same thing. This bechina pair should be entered into the dataset as a bechina edge with reference 1048.",
+      "source_quote": "כִּי עַצְבוּת הִיא סִטְרָא־אָחָרָא (זוהר נח דף עא), וְהַשֵּׁם יִתְבָּרַךְ שׂוֹנֵא אוֹתָהּ",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "התרחקות",
+      "node_text": "הִתְרַחֲקוּת",
+      "paired_node_id": "התקרבות",
+      "paired_node_text": "הִתְקָרְבוּת",
+      "polarity": "neutral",
+      "reason": "The Rebbe states twice — as the opening and closing thesis of the teaching — that all the distancing IS entirely drawing-close: 'כָּל הַהִתְרַחֲקוּת הוּא רַק כֻּלּוֹ הִתְקָרְבוּת'. The word 'הוּא' (is) here functions as a bechina equation: what appears to be withdrawal from God is, in its inner truth, an approach toward God. These are not cause and effect — the distancing does not produce the closeness; they are identified as the same reality seen from two vantage points (apparent vs. true). This bechina pair is the conceptual foundation of the entire teaching and should be entered as a bechina edge with reference 1048. The polarity is 'neutral' because הִתְרַחֲקוּת is not inherently evil — it is a structural appearance that serves the positive journey — and both terms together describe the paradoxical nature of divine service.",
+      "source_quote": "וּבֶאֱמֶת כָּל הַהִתְרַחֲקוּת הוּא רַק כֻּלּוֹ הִתְקָרְבוּת",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "עצבות / סטרא אחרא (bechina pair — see additions)",
+      "התרחקות / התקרבות (bechina pair — see additions)",
+      "התחזקות",
+      "עקשנות",
+      "שמחה",
+      "גשמיות",
+      "שערי הקדשה",
+      "גשר צר",
+      "נקדה טובה"
+    ],
+    "notes": "Gap analysis of LM2/48 (letter of encouragement to one beginning divine service).\n\n1. DATASET COVERAGE: There are zero bechina edges in torahData.js for reference 1048. All three entries with that reference are type 'eitza'. There are therefore no dataset nodes to assign and no unassigned nodes.\n\n2. SOURCE TEXT BECHINA SCAN: The full text of torah_48.txt was read. The teaching does not use the word 'בְּחִינַת' at all. However, two statements use the X הוּא/הִיא Y identity construction that functions as bechina in Rebbe Nachman's language:\n\n   (a) 'וּבֶאֱמֶת כָּל הַהִתְרַחֲקוּת הוּא רַק כֻּלּוֹ הִתְקָרְבוּת' (lines 1 and 3, stated twice for emphasis). The Rebbe identifies the appearance of divine distancing with the inner reality of divine approach. This is the teaching's central paradox and should be recorded as a bechina edge: הִתְרַחֲקוּת ↔ הִתְקָרְבוּת. Both concepts are in the same spiritual domain — the experience of the one who serves God — and are identified as the same phenomenon from different perspectives.\n\n   (b) 'כִּי עַצְבוּת הִיא סִטְרָא־אָחָרָא (זוהר נח דף עא)' (line 8). This is an unambiguous bechina equation, backed by a Zohar citation. Sadness IS the sitra achra — not a product of it, not a gateway to it, but the same thing. This is the only concept in the teaching that receives explicit citation and explicit identity-declaration. It should be recorded as a bechina edge: עַצְבוּת ↔ סִטְרָא אָחֳרָא.\n\n3. CONCEPTS IN SOURCE TEXT NOT SUITABLE FOR BECHINA DATASET: The following concepts appear prominently in the teaching but are connected by eitza (causal/conseqential) relationships, not bechina:\n\n   - הִתְחַזְּקוּת (self-strengthening): The Rebbe commands this as a means to maintain one's place in service. It is the eitza response to the challenges described. Not equated as a bechina of another concept.\n\n   - עַקְשָׁנוּת (stubborn persistence): Described as required character quality. Appears as a synonym for התחזקות in this context, but the text does not establish a formal X הוּא Y equation between them.\n\n   - שִׂמְחָה (joy): Described as essential ('הָעִקָּר לִהְיוֹת בְּשִׂמְחָה תָּמִיד'). It is the polar opposite of עַצְבוּת (which IS the sitra achra), making שמחה implicitly 'not-sitra-achra,' but the Rebbe does not explicitly say 'שמחה IS X.' Its relation to עַצְבוּת in this Torah is contrast, not bechina.\n\n   - גַּשְׁמִיּוּת (materiality/physicality): Mentioned as the obstacle, what one must detach from ('נֶעְתָּק מִגַּשְׁמִיּוּתוֹ'). Its relation to other concepts is causal (entanglement in materiality causes distance from God), not bechina.\n\n   - שַׁעֲרֵי הַקְּדֻשָּׁה (gates of holiness): The destination of spiritual service. Used as a spatial metaphor for the goal of divine service, not equated as a bechina of another concept.\n\n   - גֶּשֶׁר צַר מְאֹד (very narrow bridge): A famous metaphor in line 15 — 'הָאָדָם צָרִיךְ לַעֲבֹר עַל גֶּשֶׁר צַר מְאֹד מְאֹד.' This is a mashal (parable image), not a bechina equation.\n\n   - נְקֻדָּה טוֹבָה (good point): The spiritual technique of finding even a small point of goodness in oneself, referenced to LM1/282. This appears as a practical eitza, not a bechina concept.\n\n4. EITZA EDGES IN DATASET: The three eitza edges in the dataset for Torah 48 accurately capture the causal chains of the teaching:\n   - 'עניני שטות וצחוק ורקודים' → שמחה (acting foolish/dancing as a means to reach joy)\n   - 'לבקש ולחפש איזה נקדה טובה' → שמחה (finding a good point as a means to reach joy)\n   - 'חזק עצמך ועשה מה שתוכל' → 'תכנס לשערי הקדשה' (perseverance leads to entering holiness)\n   These are correctly typed as eitza."
+  }
+}

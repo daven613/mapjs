@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "source": "Torah #122 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "dataset_note": "torahData.js contains no entries for reference 1122 (LM2 Torah 122). The dataset ends at reference 1105. This Torah has not yet been entered into torahData.js. Accordingly, Steps 1–4 of the algorithm yield zero edges, zero nodes, and zero raw connected components. All package proposals below are derived exclusively from explicit bechina language in the source text (torah_122.txt). These are candidate packages awaiting dataset entry."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 122,
+      "volume": "lm2",
+      "label": "מַחֲשָׁבוֹת זָרוֹת וּקְלִפּוֹת",
+      "label_en": "Foreign Thoughts and Husks",
+      "polarity": "evil",
+      "reason": "The Rebbe explicitly equates three concepts using 'הוּא' (IS) language — the language of bechina: (1) every מַחֲשָׁבָה זָרָה (foreign thought) IS a קְלִפָּה (spiritual husk), and (2) the קְלִפָּה IS a קוֹמָה שְׁלֵמָה (complete spiritual stature/form). These three are explicitly stated to be the same thing. All belong to the evil domain: they are the opposing forces that invade the space of prayer and must be defeated. The foreign thought, the husk, and the complete-form are three faces of the same spiritual opponent.",
+      "dominant_node": "מחשבות זרות",
+      "nodes": [
+        "מחשבות זרות",
+        "קליפה",
+        "קומה שלמה"
+      ],
+      "node_degrees": {
+        "מחשבות זרות": 2,
+        "קליפה": 2,
+        "קומה שלמה": 2
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 122,
+      "volume": "lm2",
+      "label": "תְּפִלָּה כְּסֵדֶר וְגִבּוּרַת הַהִלּוּךְ",
+      "label_en": "Ordered Prayer and the Strength of Forward Movement",
+      "polarity": "good",
+      "reason": "The Rebbe presents a set of concepts that all share the same essential nature — the positive force that defeats the foreign thoughts: תְּפִלָּה כְּסֵדֶר (prayer in order) IS the warrior's march (דֶּרֶךְ הִלּוּכוֹ), and this movement IS itself the defeat. The גִּבּוּר (warrior/brave person) who passes through the ambushers without looking back (אֵינוֹ מַשְׁגִּיחַ / לִבְלִי לְהִסְתַּכֵּל) is the same essential figure as the person praying in order. The not-looking (אֵינוֹ מַשְׁגִּיחַ) is the bechina of the forward movement — they are two expressions of the same stance of non-engagement. Together these concepts define the domain of victorious prayer as a single unbroken forward movement.",
+      "dominant_node": "תפלה כסדר",
+      "nodes": [
+        "תפלה כסדר",
+        "דרך הילוכו",
+        "גיבור",
+        "אינו משגיח"
+      ],
+      "node_degrees": {
+        "תפלה כסדר": 3,
+        "דרך הילוכו": 2,
+        "גיבור": 1,
+        "אינו משגיח": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "note": "Packages are proposed from source text analysis only; no dataset edges exist for this Torah. Package node counts and degrees above are derived from the source text's bechina language, not from torahData.js edges."
+  }
+}

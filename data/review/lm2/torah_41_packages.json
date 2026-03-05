@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "source": "Torah #41 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 41,
+      "volume": "lm2",
+      "label": "מוֹפְתִים וּמִשְׁפְּטֵי פֶּה",
+      "label_en": "Miracles and Mouth-Rulings of the Posek",
+      "polarity": "good",
+      "reason": "The entire Torah turns on a single bechina: the miracles performed through halachic decisors (ba'alei posekim) and the divine 'judgments of His mouth' (מִשְׁפְּטֵי פִיהוּ) are two expressions of the same thing. The Rebbe quotes I Chronicles 16:12 — 'מֹפְתָיו וּמִשְׁפְּטֵי פִיהוּ' — and uses 'בִּבְחִינַת' to equate the posek's rulings with divine wonders. It is not that rulings cause miracles (eitza) — rather, the posek's ruling IS the miracle, because his accepted authority makes them one and the same act. 'מוֹפְתִים' and 'מִשְׁפְּטֵי פִיהוּ' share the same essential nature: the divine will expressed through the authoritative mouth. Similarly, the miracles of the Geonim are a bechina of the same phenomenon — 'וְזֶהוּ בְּחִינַת הַמּוֹפְתִים שֶׁמְּסַפְּרִין מֵהַגְּאוֹנִים'. All three — מוֹפְתִים, מִשְׁפְּטֵי פִיהוּ, and מוֹפְתֵי הַגְּאוֹנִים — are different expressions of the one domain: divine power manifesting through the authoritative halachic voice.",
+      "dominant_node": "מוֹפְתִים",
+      "nodes": [],
+      "node_degrees": {},
+      "merge_notes": [
+        {
+          "merged_nodes": ["מוֹפְתִים", "מִשְׁפְּטֵי פִיהוּ", "מוֹפְתֵי הַגְּאוֹנִים", "בַּעֲלֵי הַפּוֹסְקִים"],
+          "reason": "None of these nodes are currently in the dataset (torahData.js has no entries for reference 1041). The Rebbe explicitly uses 'בִּבְחִינַת' twice: first equating the posek's miracle-working with 'מֹפְתָיו וּמִשְׁפְּטֵי פִיהוּ', and then calling the Geonim's miracles 'בְּחִינַת' of this same phenomenon. These four concepts are bechina-equivalent faces of one domain: divine miracle as halachic ruling. They should all be entered as nodes with bechina edges between them. Flagged in additions.json for dataset entry."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0
+  }
+}

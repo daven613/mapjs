@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "source": "Torah #105 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": null,
+      "node_id": "מדמה מלתא למלתא",
+      "node_text": "מְדַמֶּה מִלְּתָא לְמִלְּתָא",
+      "polarity": "good",
+      "reason": "The source text explicitly identifies chiddush in Torah as a bechina of 'medame milta l'milta' (drawing an analogy / applying the imaginative faculty to Torah). This is the one bechina statement in the entire teaching: 'שֶׁזֶּהוּ בְּחִינַת מְדַמֶּה מִלְּתָא לְמִלְּתָא'. This concept (the faculty of Torah analogy) is not in the dataset as a node. It should form a bechina pair with 'לחדש איזה דבר בתורה'.",
+      "source_quote": "וְעַל־יְדֵי שֶׁמְּחַדְּשִׁין אֵיזֶה דָּבָר בַּתּוֹרָה, שֶׁזֶּהוּ בְּחִינַת מְדַמֶּה מִלְּתָא לְמִלְּתָא",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "לחדש איזה דבר בתורה",
+      "node_text": "לְחַדֵּשׁ אֵיזֶה דָּבָר בַּתּוֹרָה",
+      "polarity": "good",
+      "reason": "This node exists in the dataset but is connected only via an eitza edge (to 'תקון גדול להרהורים'). It should also have a bechina edge to 'מדמה מלתא למלתא', because the source text says explicitly 'זֶהוּ בְּחִינַת מְדַמֶּה מִלְּתָא לְמִלְּתָא'. That bechina edge is missing from the dataset.",
+      "source_quote": "וְעַל־יְדֵי שֶׁמְּחַדְּשִׁין אֵיזֶה דָּבָר בַּתּוֹרָה, שֶׁזֶּהוּ בְּחִינַת מְדַמֶּה מִלְּתָא לְמִלְּתָא",
+      "in_dataset_already": true
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["מדמה מלתא למלתא"],
+    "missing_bechina_edge": {
+      "description": "The source text contains exactly one bechina statement: 'לחדש דבר בתורה' is a bechina of 'מדמה מלתא למלתא'. This edge is absent from the dataset. The dataset instead has a single eitza edge connecting 'לחדש איזה דבר בתורה' → 'תקון גדול להרהורים'. That eitza is correct (innovation produces the repair), but the bechina between the two facets of the koach hamedameh is missing entirely.",
+      "suggested_action": "Add a bechina edge: node1_id='לחדש איזה דבר בתורה', node2_id='מדמה מלתא למלתא', reference=1105, type='bechina'",
+      "eitza_edge_assessment": "The existing edge (לחדש איזה דבר בתורה → תקון גדול להרהורים, type=eitza) is correctly classified. Chiddush in Torah produces (eitza) the rectification of sinful thoughts — this is cause and effect, not shared nature."
+    },
+    "torah_structure_note": "Torah LM2 #105 is a very brief oral teaching (4 lines), transmitted by Reb Nosson. Its argument is: (1) Rebbe Nachman urged people to innovate in Torah; (2) even if you cannot grasp his intent, any innovation is good; (3) it is a great tikkun for hirhurim (sinful thoughts); (4) because all hirhurim come from koach hamedameh (the imaginative faculty), and chiddush in Torah — which is itself a bechina of medame milta l'milta — repairs the damage done by that same faculty; (5) it is also a benefit for the souls of one's departed ancestors."
+  }
+}

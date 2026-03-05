@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "source": "Torah #25 (Likutay Moharan Tinyana — LM2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "התבודדות",
+      "שיחה ותפלה",
+      "לשון אשכנז",
+      "שעשועים גדולים למעלה",
+      "עושה מתורה תפלה"
+    ],
+    "notes": "Gap analysis of LM2/25 (Hitbodedut teaching).\n\n1. DATASET COVERAGE: The three edges in torahData.js for reference 1025 are all eitza (causal), not bechina. No nodes appear in any bechina edge for this Torah. There are therefore no orphaned dataset nodes to assign.\n\n2. SOURCE TEXT BECHINA SCAN: The source text was read in full (12 lines, torah_25.txt). The teaching uses exclusively prescriptive and causal language throughout:\n   - 'הַהִתְבּוֹדְדוּת הוּא מַעֲלָה עֶלְיוֹנָה' — descriptive praise, not a bechina equation\n   - 'כִּי זֹאת הִיא עֵצָה כְּלָלִיּוּת' — describes hitbodedut as a comprehensive advice (eitza), not equates it with another concept\n   - 'וְעִנְיָן הַשִּׂיחָה זוֹ עוֹלָה לְמָקוֹם גָּבוֹהַּ מְאֹד' — describes the height/destination of the sicha, not a bechina equivalence\n   - 'מִזֶּה נַעֲשֶׂה שַׁעֲשׁוּעִים גְּדוֹלִים מְאֹד לְמַעְלָה' — causal: turning Torah into prayer PRODUCES divine delight above (eitza, already in dataset)\n   No phrase of the form 'X הוא בחינת Y' or 'X נקרא Y' (equating two concepts as expressions of the same essence) appears anywhere in the text.\n\n3. CONCEPTS PRESENT IN SOURCE BUT NOT IN DATASET: Five conceptual nodes are discussed in the text but have no bechina edges:\n   - התבודדות — central subject; appears in two eitza edges (already in dataset as eitza node)\n   - שיחה ותפלה — the personal speech-prayer; implicit in all three dataset edges\n   - לשון אשכנז — vernacular language as the vehicle for hitbodedut; not in any edge\n   - שעשועים גדולים למעלה — divine delights produced by making Torah into prayer; appears in one eitza edge as target node\n   - עושה מתורה תפלה — making Torah into prayer; appears in one eitza edge as source node\n   None of these can be added as bechina additions because no bechina language attaches to them in the source text. Their relationship to each other and to hitbodedut is causal (eitza), not parallel-essence (bechina).\n\n4. EVALUATION: Torah LM2/25 is structurally a pure hanhagah (practical instruction) text. It stands in the same category as brief practical halakhic-style teachings where the Rebbe gives advice without establishing ontological parallels. The absence of bechina language is consistent with the Torah's character — it is an eitza (counsel/advice) teaching by its own self-description: 'הוּא דֶּרֶךְ וְעֵצָה טוֹבָה מְאֹד'. The Rebbe explicitly names this teaching an eitza, not a bechina analysis."
+  }
+}

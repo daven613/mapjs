@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "source": "Torah #1 (Likutay Moharan Tinyana — LM2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "No edges exist yet in torahData.js for LM2. All bechina relationships extracted directly from the Torah source text (lm2/torah_1.txt). Every bechina statement in the text was identified and used to build the adjacency graph. Eight packages proposed."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 1,
+      "volume": "lm2",
+      "label": "שָׁרְשֵׁי הַנְּשָׁמוֹת וְכִסֵּא הַכָּבוֹד",
+      "label_en": "Roots of Souls and the Throne of Glory",
+      "polarity": "good",
+      "reason": "These concepts all share the essential nature of the primordial maternal source-foundation of all existence. The Throne of Glory is the universal womb from which all souls are hewn. Chava (אֵם כָּל חָי) is the Torah's name for this same reality — the mother of all living beings whose roots are lodged beneath the Throne. The concept of 'being the place of the world' (מְקוֹמוֹ שֶׁל עוֹלָם) expresses the same idea: this root-source encompasses all souls and all places. The rib/tsela is identified with Chava = Throne = soul-roots. They are not causes of each other — they are the same cosmic reality viewed from different angles.",
+      "dominant_node": "שרשי הנשמות",
+      "nodes": [
+        "שרשי הנשמות",
+        "כסא הכבוד",
+        "אם כל חי",
+        "חוה",
+        "הצלע",
+        "מקומו של עולם"
+      ],
+      "node_degrees": {
+        "שרשי הנשמות": 4,
+        "כסא הכבוד": 3,
+        "אם כל חי": 2,
+        "חוה": 2,
+        "הצלע": 1,
+        "מקומו של עולם": 1
+      },
+      "source_bechinas": [
+        "שָׁרְשֵׁי הַנְּשָׁמוֹת, שֶׁהֵם בְּחִינַת כִּסֵּא הַכָּבוֹד, אֵם כָּל חָי (section ב)",
+        "הַצֵּלָע, שֶׁהִיא בְּחִינַת חַוָּה, אֵם כָּל חָי, בְּחִינַת כִּסֵּא הַכָּבוֹד, שָׁרְשֵׁי הַנְּשָׁמוֹת (section ב)",
+        "מִי שֶׁאוֹחֵז בִּבְחִינַת כִּסֵּא הַכָּבוֹד, בִּבְחִינַת שָׁרְשֵׁי הַנְּשָׁמוֹת, הוּא גַּם כֵּן בְּחִינַת מְקוֹמוֹ שֶׁל עוֹלָם (section יד)"
+      ],
+      "mirror": "This package has no direct evil mirror — it is the universal root that is purely of holiness.",
+      "merge_notes": [
+        {
+          "merged_nodes": ["הצלע", "חוה"],
+          "reason": "The rib (הצלע) is explicitly identified as 'היא בחינת חוה' — it IS Chava, not a cause of her. A single bechina edge."
+        },
+        {
+          "merged_nodes": ["מקומו של עולם"],
+          "reason": "Section יד explicitly states that grasping the Throne/soul-roots makes a person 'מקומו של עולם' — this is a bechina (same nature as God who is מקומו של עולם), not a consequence."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 1,
+      "volume": "lm2",
+      "label": "יְרוּשָׁלַיִם וְהַיִּרְאָה שֶׁבַּלֵּב",
+      "label_en": "Jerusalem and the Fear in the Heart",
+      "polarity": "good",
+      "reason": "These concepts all share the essential nature of 'the heart-center of awe.' Yerushalayim is explicitly called 'yirah shalem' — complete awe. The lev (heart) is the organ of awe — awe is described as 'davar hamosur lalev.' The 'shem' (divine name) is the nature of awe itself — 'l'yirah et hashem hanichbad.' They are all different expressions of the same inner spiritual reality: the seat of complete God-consciousness in the heart.",
+      "dominant_node": "ירושלים",
+      "nodes": [
+        "ירושלים",
+        "יראה שלם",
+        "לב",
+        "שם"
+      ],
+      "node_degrees": {
+        "ירושלים": 3,
+        "יראה שלם": 2,
+        "לב": 2,
+        "שם": 3
+      },
+      "source_bechinas": [
+        "יְרוּשָׁלַיִם בְּחִינַת יִרְאָה שָׁלֵם, הַיְנוּ שְׁלֵמוּת הַיִּרְאָה, הַתְּלוּיָה בַּלֵּב (section ד)",
+        "הַיִּרְאָה שֶׁבַּלֵּב הִיא גַּם כֵּן בְּחִינַת שֵׁם, בִּבְחִינַת לְיִרְאָה אֶת הַשֵּׁם הַנִּכְבָּד (section ה)",
+        "אַנְשֵׁי שֵׁם זֶה בְּחִינַת שָׁלֹשׁ מִדּוֹת הַנַּ"ל, שֶׁכָּל אֶחָד וְאֶחָד נִקְרָא בְּחִינַת שֵׁם (section ה)"
+      ],
+      "mirror": "Package 3 (the three destroyers) is the evil mirror — they destroy Yerushalayim/the heart-awe.",
+      "merge_notes": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 1,
+      "volume": "lm2",
+      "label": "שָׁלֹשׁ מִדּוֹת הַמַּחֲרִיבוֹת",
+      "label_en": "The Three Destroying Desires",
+      "polarity": "evil",
+      "reason": "These concepts all share the essential nature of 'the three corrupting forces rooted in the heart that destroy Yerushalayim (complete awe).' Taavas mamon, taavas achila, and taavas mishgal are not three separate things — they are three faces of the same evil reality: the three watches of the night, the darkness, the obstacles. The symbolic animals (donkey, dogs) and night-images are not causes of the desires — they ARE the desires, expressed in symbolic form. All three are called 'shem' (each desire has its own corrupting 'name-force').",
+      "dominant_node": "תאוות ממון",
+      "nodes": [
+        "תאוות ממון",
+        "תאוות אכילה",
+        "תאוות משגל",
+        "שלוש משמרות",
+        "לילה",
+        "חושך",
+        "חמור נועֵר",
+        "כלבים",
+        "עזות"
+      ],
+      "node_degrees": {
+        "תאוות ממון": 3,
+        "תאוות אכילה": 3,
+        "תאוות משגל": 3,
+        "שלוש משמרות": 2,
+        "לילה": 2,
+        "חושך": 1,
+        "חמור נועֵר": 1,
+        "כלבים": 1,
+        "עזות": 1
+      },
+      "source_bechinas": [
+        "לַיְלָה זֶה בְּחִינַת חֹשֶׁךְ, הַיְנוּ מְנִיעוֹת, וְהֵם בְּחִינַת שָׁלֹשׁ מִשְׁמָרוֹת, הַיְנוּ בְּחִינַת שָׁלֹשׁ מִדּוֹת הַנַּ"ל (section ד)",
+        "מִשְׁמָרָה רִאשׁוֹנָה – חֲמוֹר נוֹעֵר, בְּחִינַת תַּאֲוַת מָמוֹן (section ד)",
+        "שְׁנִיָּה – כְּלָבִים צּוֹעֲקִים. זֶה בְּחִינַת תַּאֲוַת אֲכִילָה (section ד)",
+        "שְׁלִישִׁית – תִּינוֹק יוֹנֵק מִשְּׁדֵי אִמּוֹ; זֶה בְּחִינַת מִשְׁגָּל (section ד)",
+        "עַזּוּת מַלְכוּתָא בְּלָא תָגָא — false leaders rise through azut (section ג)"
+      ],
+      "mirror": "Package 2 (Yerushalayim and the heart-awe) is the good counterpart destroyed by this package.",
+      "merge_notes": [
+        {
+          "merged_nodes": ["עזות"],
+          "reason": "Azut (brazenness) is described as the false-leader force that mimics true leadership — it is the face of desire-driven power, the same essential nature as the three corrupting desires. Merged here because the Rebbe explicitly connects it to 'malkhuta b'lo taga' — kingdom without proper crown, the evil expression of the name/shem domain."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 1,
+      "volume": "lm2",
+      "label": "דַּעַת וְשָׁלֹשׁ רְגָלִים",
+      "label_en": "Da'at and the Three Pilgrimage Festivals",
+      "polarity": "good",
+      "reason": "These concepts all share the essential nature of 'renewed divine intellect that repairs the three corrupting desires.' The three cavities of the skull (תלת חללי דגולגלתא) are not a cause of the three regalim — they ARE the three regalim, expressed at the level of the brain's structure. Da'at is the general faculty; the three brain-cavities and the three festivals are its three specific expressions. The moon (chodesh/yerach) is the vehicle of renewal that occasions the festivals, and is therefore the same nature as the renewal of consciousness that the festivals embody.",
+      "dominant_node": "דעת",
+      "nodes": [
+        "דעת",
+        "תלת מוחין",
+        "שלוש רגלים",
+        "ירח",
+        "התחדשות המוחין"
+      ],
+      "node_degrees": {
+        "דעת": 2,
+        "תלת מוחין": 3,
+        "שלוש רגלים": 3,
+        "ירח": 1,
+        "התחדשות המוחין": 1
+      },
+      "source_bechinas": [
+        "הַדַּעַת הוּא בְּחִינַת תְּלָת מֹחִין, תְּלָת חֲלָלֵי דְּגֻלְגַּלְתָּא, וְהֵם בְּחִינַת שָׁלֹשׁ רְגָלִים (section ה)",
+        "בַּחֹדֶשׁ זֶה בְּחִינַת הִתְחַדְּשׁוּת הַמֹּחִין שֶׁבְּשָׁלֹשׁ רְגָלִים, בִּבְחִינַת עָשָׂה יָרֵחַ לְמוֹעֲדִים (section conclusion)"
+      ],
+      "mirror": "Package 3 (the three desires) is the evil mirror — the three regalim each repair one of the three corrupting desires.",
+      "merge_notes": [
+        {
+          "merged_nodes": ["ירח", "התחדשות המוחין"],
+          "reason": "The moon (ירח) = the renewal of consciousness (התחדשות המוחין) = the festivals. They are explicitly identified as one bechina in the final section: 'עשה ירח למועדים.' These are two names for the same reality."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 1,
+      "volume": "lm2",
+      "label": "תְּפִלָּה וּנְבוּאָה",
+      "label_en": "Prayer and Prophecy",
+      "polarity": "good",
+      "reason": "These concepts all share the essential nature of 'the divine word that is the root of all vitality.' Prayer and prophecy are not cause-and-effect — they are the same faculty of divine communication, expressed from opposite directions (human speech upward vs. divine speech downward). 'Boreh niv sefatayim' equates them as two expressions of the same logos. Dvar Hashem is the root of all healing herbs, all stars, all powers — it is the supreme source. The siach hasadeh (field plants) return their powers to prayer because prayer IS their ultimate root. Smell/ruach is the soul's faculty that connects to this root.",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תפלה",
+        "נבואה",
+        "דבר ה'",
+        "שיח השדה",
+        "ריח",
+        "נשמה"
+      ],
+      "node_degrees": {
+        "תפלה": 5,
+        "נבואה": 3,
+        "דבר ה'": 3,
+        "שיח השדה": 2,
+        "ריח": 2,
+        "נשמה": 1
+      },
+      "source_bechinas": [
+        "הַתְּפִלָּה הִיא בְּחִינַת בּוֹרֵא נִיב שְׂפָתָיִם, בְּחִינַת נְבוּאָה (section ח)",
+        "עַל־יְדֵי נְבוּאָה זוֹכִין לִתְפִלָּה, שֶׁהִיא בְּחִינַת דְּבַר ה' (section ט)",
+        "עִקָּר הַתְּפִלָּה הִיא מֵהַנְּשָׁמָה... וְעִקָּר הוּא הָרֵיחַ, כִּי אֵין הַנְּשָׁמָה נֶהֱנֵית אֶלָּא מֵהָרֵיחַ (section יב)",
+        "שִׂיחַ הַשָּׂדֶה חָזְרוּ כֹּחָם וְנָתְנוּ אוֹתָם בְּתוֹךְ תְּפִלָּתוֹ, שֶׁהִיא שָׁרְשָׁם (section יא)",
+        "שׁוֹפָר הוּא בְּחִינַת שִׂיחַ הַשָּׂדֶה, שֶׁחוֹזְרִין כֹּחָם לְתוֹךְ הַתְּפִלָּה (section conclusion)"
+      ],
+      "mirror": "Package 7 (the three sitra achra services) is the evil mirror — they corrupt and exile prayer.",
+      "merge_notes": []
+    },
+    {
+      "id": 6,
+      "torah_ref": 1,
+      "volume": "lm2",
+      "label": "מָשִׁיחַ וְהַחוֹטֶם",
+      "label_en": "Mashiach and the Nose",
+      "polarity": "good",
+      "reason": "These concepts share the essential nature of 'the receptor and gatherer of all prayers.' Mashiach is explicitly called 'bechinas chotem' — the nose that receives all smells = all prayers. The 'spark of Mashiach' (hitnatztzut mashiach) is the same faculty as the nose's reception — the two are identical in their nature. The nose is not a cause of Mashiach; they are the same receptive-gathering reality. 'Utehilati echetam lach' confirms the chotem = the faculty of receiving praise/prayer.",
+      "dominant_node": "משיח",
+      "nodes": [
+        "משיח",
+        "חוטם",
+        "התנוצצות משיח"
+      ],
+      "node_degrees": {
+        "משיח": 2,
+        "חוטם": 2,
+        "התנוצצות משיח": 1
+      },
+      "source_bechinas": [
+        "מָשִׁיחַ הוּא בְּחִינַת חֹטֶם, בִּבְחִינַת רוּחַ אַפֵּינוּ מְשִׁיחַ ה'; שֶׁמְּקַבֵּל כָּל הָרֵיחוֹת שֶׁהֵם בְּחִינַת הַתְּפִלּוֹת (section יב)",
+        "וְזֶה בְּחִינַת וּתְהִלָּתִי אֶחֱטָם לָךְ; בְּחִינַת חֹטֶם (section יב)",
+        "וְזֶה בְּחִינַת הִתְנוֹצְצוּת מָשִׁיחַ (section יב)"
+      ],
+      "mirror": "No direct evil mirror in this Torah — Mashiach is presented as the purely positive gathering-point.",
+      "merge_notes": []
+    },
+    {
+      "id": 7,
+      "torah_ref": 1,
+      "volume": "lm2",
+      "label": "עֲבוֹדוֹת דְּסִטְרָא אָחֳרָא",
+      "label_en": "The Three Services of the Other Side",
+      "polarity": "evil",
+      "reason": "These concepts all share the essential nature of 'the three spiritual corruptions that are the anti-prayer and anti-divine-service.' The Rebbe explicitly calls them 'avodot d'sitra achra.' Bizuy anashim, avoda zara, and pegam habrit are not three separate evils — they are three faces of the same servitude (avdut) to the sitra achra. Egypt = avoda zara = beit avadim confirms this: the same servitude appears in all three. They are the mirror-corruption of the three corrective services that enable proper tefillah.",
+      "dominant_node": "עבדות",
+      "nodes": [
+        "עבדות",
+        "בזוי אנשים",
+        "עבודה זרה",
+        "פגם הברית",
+        "מצרים",
+        "עזות (מנהיג שקר)"
+      ],
+      "node_degrees": {
+        "עבדות": 3,
+        "בזוי אנשים": 1,
+        "עבודה זרה": 1,
+        "פגם הברית": 1,
+        "מצרים": 1,
+        "עזות (מנהיג שקר)": 1
+      },
+      "source_bechinas": [
+        "כָּל שָׁלֹשׁ מִדּוֹת אֵלּוּ הֵם בְּחִינַת עֲבוֹדוֹת דְּסִטְרָא אָחֳרָא (section י)",
+        "בִּזּוּי אֲנָשִׁים הוּא בְּחִינַת עֲבוֹדָה... נָפְלוּ לִבְחִינַת עַבְדוּת (section י)",
+        "עֲבוֹדָה זָרָה – כִּי אֶרֶץ מִצְרַיִם... נִקְרָאִים בֵּית עֲבָדִים, בְּחִינַת עַבְדוּת (section י)",
+        "שְׁמִירַת הַבְּרִית – מִי שֶׁפּוֹגֵם בּוֹ הוּא גַּם כֵּן בִּבְחִינַת עַבְדוּת (section י)"
+      ],
+      "mirror": "Package 5 (Prayer and Prophecy) is the good mirror — these three evils exile prayer; removing them enables tefillah.",
+      "merge_notes": [
+        {
+          "merged_nodes": ["מצרים"],
+          "reason": "Egypt is explicitly called 'beit avadim' = bechinas avdut, equating it with avoda zara. It is not a historical reference here but an ontological identity: Egypt IS the house of servitude = avoda zara. One bechina edge."
+        },
+        {
+          "merged_nodes": ["עזות (מנהיג שקר)"],
+          "reason": "False leaders who rise through brazenness are connected to this evil package because azut is called 'malkhuta b'lo taga' — the anti-Yerushalayim kingdom, and they fall before the baal tefillah because all are 'borrowers' from the divine root. Azut shares the nature of servitude/sitra achra."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "torah_ref": 1,
+      "volume": "lm2",
+      "label": "שׁוֹפָר",
+      "label_en": "The Shofar",
+      "polarity": "neutral",
+      "reason": "The shofar is the structural/convergent instrument that the Torah uses at its conclusion to summarize all the teaching's domains. It is explicitly called bechina of: the heart (lev), yirah (fear), nevuah (prophecy), tefillah (prayer), and siach hasadeh (field plants). It is not a cause of these things — it IS all of them simultaneously. It is neutral in the sense that it is a physical instrument that carries all of these qualities. The shofar is the node where all packages converge, making it the Torah's unifying symbol.",
+      "dominant_node": "שופר",
+      "nodes": [
+        "שופר"
+      ],
+      "node_degrees": {
+        "שופר": 5
+      },
+      "source_bechinas": [
+        "שׁוֹפָר זֶה בְּחִינַת הַלֵּב, שֶׁנִּזּוֹן מִשּׁוּפְרָא דְּשׁוּפְרָא",
+        "גַּם שׁוֹפָר הוּא בְּחִינַת יִרְאָה, בִּבְחִינַת הֲיִתָּקַע שׁוֹפָר בְּעִיר וְעָם לֹא יֶחֱרָדוּ",
+        "גַּם שׁוֹפָר הוּא בְּחִינַת נְבוּאָה, בִּבְחִינַת הָרֵם כַּשּׁוֹפָר קוֹלֶךָ",
+        "גַּם שׁוֹפָר הוּא בְּחִינַת תְּפִלָּה, בִּבְחִינַת מִן הַמֵּצַר קָרָאתִי יָהּ",
+        "גַּם הוּא בְּחִינַת שִׂיחַ הַשָּׂדֶה, שֶׁחוֹזְרִין כֹּחָם לְתוֹךְ הַתְּפִלָּה (section conclusion)"
+      ],
+      "mirror": "As a neutral convergent instrument, the shofar has no evil mirror.",
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_bechina_edges_note": "Zero edges in torahData.js for LM2. All bechina relationships extracted from source text. Approximately 25 bechina statements identified in the text.",
+    "total_nodes_from_text": 29,
+    "total_packages": 8,
+    "raw_connected_components": 8,
+    "good_packages": 5,
+    "evil_packages": 2,
+    "neutral_packages": 1,
+    "torah_argument_structure": "Pursuit of purpose (Pkg 1: soul-roots) → eitza → Yirah/Heart (Pkg 2) ←destroys— Three evil desires (Pkg 3) ←fixes— Da'at/Regalim (Pkg 4) → eitza → Tefillah/Nevuah (Pkg 5) → eitza → Mashiach (Pkg 6). Opposed by: Three sitra achra services (Pkg 7). All converge in: Shofar (Pkg 8)."
+  }
+}

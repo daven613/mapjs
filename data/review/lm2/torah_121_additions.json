@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "source": "Torah #121 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [],
+    "source_text_analysis": {
+      "description": "Torah LM2 #121 is a very brief oral teaching (5 lines) transmitted by Reb Nosson. Its argument is entirely practical advice about prayer: (1) the Rebbe encouraged followers who found prayer very difficult; (2) he pointed to the example of a convert, who considers it a great merit to merely recite the words of prayer up to 'Baruch She'amar'; (3) he advised a simple person to think of himself as needing to rectify only one small section of prayer at a time, section by section, based on the idea of gilgulim (reincarnations) — perhaps he already completed the other sections in a previous life; (4) the general rule is to pray a little at a time with kavana rather than trying to hold all of the prayer in mind at once; (5) it has already been explained elsewhere that each person prays a section of prayer 'according to their bechina' — for there are 'masters of hands' and 'masters of feet,' etc.",
+      "bechina_language_check": "The text uses the word 'בְּחִינָתוֹ' once, in line 5: 'כָּל אֶחָד מִתְפַּלֵּל אֵיזֶה חֵלֶק מֵהַתְּפִלָּה לְפִי בְּחִינָתוֹ'. This is the grammatical/possessive form — 'according to his bechina [level or aspect]' — not the structural equation form 'X הוא בחינת Y'. It asserts that individuals differ in spiritual level, not that two named concepts are parallel expressions of the same underlying reality. This phrasing does not generate a bechina edge.",
+      "concepts_found_in_text": [
+        {
+          "concept": "תְּפִלָּה (prayer)",
+          "role": "central subject throughout the teaching",
+          "bechina_equation": false
+        },
+        {
+          "concept": "כַּוָּנָה (intention/concentration in prayer)",
+          "role": "the quality being sought — pray with kavana",
+          "bechina_equation": false
+        },
+        {
+          "concept": "גִּלְגּוּל (reincarnation)",
+          "role": "framing device for the Rebbe's advice — 'in this gilgul you need to rectify this section'",
+          "bechina_equation": false
+        },
+        {
+          "concept": "מָארֵי דְּיָדַיִן וּמָארֵי דְּרַגְלִין (masters of hands and masters of feet)",
+          "role": "cited briefly as the basis for the idea that different people specialize in different parts of prayer, but explicitly deferred ('as explained elsewhere') — no bechina equation is developed here",
+          "bechina_equation": false
+        },
+        {
+          "concept": "גֵּר שֶׁנִּתְגַּיֵּר (the convert)",
+          "role": "illustrative example only — not a concept developed into a bechina equation",
+          "bechina_equation": false
+        }
+      ],
+      "dataset_coverage": "The dataset contains zero edges for reference 1121. No nodes are recorded for this Torah in torahData.js. There are therefore no orphaned nodes and no concepts to flag as missing from existing packages.",
+      "conclusion": "Torah LM2 #121 contains no bechina equations that would produce dataset edges. The teaching is purely practical eitza-advice: pray a little at a time (cause) → achieve kavana (effect). There are no concepts to add to any package, no unassigned dataset nodes, and no missing nodes from the source text that belong in the dataset."
+    }
+  }
+}

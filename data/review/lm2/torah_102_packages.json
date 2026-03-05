@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "source": "Torah #102 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 102,
+      "volume": "lm2",
+      "label": "גְּאֻלָּה וּבֹעַז",
+      "label_en": "Redemption and Boaz",
+      "polarity": "good",
+      "reason": "בֹּעַז and גּוֹאֵל share the same essential nature: Boaz is called a bechina of redeemer by the explicit verse 'כִּי גוֹאֵל אָנֹכִי'. They are two expressions of the same redemptive reality — the personal (Boaz) and the functional title (Redeemer) are one and the same thing in this context. This component represents the domain of גאולה (redemption).",
+      "dominant_node": "בעז",
+      "nodes": ["בעז", "גואל"],
+      "node_degrees": { "בעז": 1, "גואל": 1 },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 102,
+      "volume": "lm2",
+      "label": "תְּפִלָּה וְרוּת",
+      "label_en": "Prayer and Ruth",
+      "polarity": "good",
+      "reason": "רוּת and תְּפִלָּה share the same essential nature: Ruth is called a bechina of prayer because from her descended David, who saturated the Holy One Blessed be He with songs and praises. Both Ruth and תפלה belong to the domain of supplication and praise before God — Ruth embodies the very quality that makes prayer efficacious (devoted beseeching), and the Sages confirm this through her name's etymology. They are two faces of the same devotional reality.",
+      "dominant_node": "תפלה",
+      "nodes": ["רות", "תפלה"],
+      "node_degrees": { "רות": 1, "תפלה": 1 },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 2,
+    "total_nodes": 4,
+    "total_packages": 2,
+    "raw_connected_components": 2
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "source": "Torah #40 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 40,
+      "volume": "lm2",
+      "label": "חָכְמָה וְעֵינַיִם וּתְפִלִּין",
+      "label_en": "Wisdom, Eyes, and Tefillin",
+      "polarity": "good",
+      "reason": "These nodes all share the same essential nature: the quality of divine wisdom (Chokhmah) and its structural vehicles. 'Eyes' are named for Chokhmah because the unfolding of wisdom is called 'eyes' (Rashi on Gen. 3:7). 'Merachkim' (distant things) is another name for Chokhmah ('amarti echkama vehi rechoka', Kohelet 7:23). Tefillin are called 'peer' (glory) and the Torah states they are the bechina of mochin (intellect/mind). Mochin is itself a synonym for Chokhmah in the kabbalistic framework. All these concepts — the unfolding of wisdom, the eyes through which it manifests, and the tefillin/mochin that are its structural expression — form one thematic family: the domain of holy wisdom as divine oversight and intellectual illumination.",
+      "dominant_node": "חכמה",
+      "nodes": [
+        "חכמה",
+        "מרחקים",
+        "התפתחות החכמה",
+        "עינים",
+        "תפלין",
+        "מחין"
+      ],
+      "node_degrees": {
+        "חכמה": 1,
+        "מרחקים": 1,
+        "התפתחות החכמה": 1,
+        "עינים": 1,
+        "תפלין": 1,
+        "מחין": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["חכמה", "מרחקים"],
+          "reason": "Raw component A: Chokhmah and Merachkim are two names for the same thing — wisdom is explicitly called 'distant' (rechoka) in Kohelet 7:23. They share the same essence."
+        },
+        {
+          "merged_nodes": ["התפתחות החכמה", "עינים"],
+          "reason": "Raw component B: The unfolding/blossoming of Chokhmah is explicitly called 'eyes' by Rashi on 'vatipakachna einei shnehem' (Gen. 3:7). Eyes are the bechina of the opening of wisdom. Same essential nature."
+        },
+        {
+          "merged_nodes": ["תפלין", "מחין"],
+          "reason": "Raw component C: Tefillin are the bechina of mochin (mind/intellect), as stated directly in the Torah text. Mochin is the kabbalistic term for Chokhmah-Binah-Daat — the same domain as wisdom. Both components A and B describe the nature of Chokhmah from different angles (its name, its structural expression), and component C (mochin = the intellectual vessels) belongs to the same family. Merged here because mochin shares the essential nature of divine wisdom, not because tefillin produce mochin (which would be eitza)."
+        },
+        {
+          "merged_nodes": ["חכמה", "התפתחות החכמה", "עינים", "מרחקים", "תפלין", "מחין"],
+          "reason": "All three raw components (Chokhmah/Merachkim; Hitpatchut HaChokhmah/Einayim; Tefillin/Mochin) are merged into one package because they all describe aspects of the same essential quality: divine wisdom and its structural embodiments. The Torah's central thesis is that wisdom = eyes = tefillin/mochin. These are three facets of one reality, not three separate packages."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 40,
+      "volume": "lm2",
+      "label": "מֶלֶךְ וְצַדִּיק",
+      "label_en": "King and Tzaddik",
+      "polarity": "good",
+      "reason": "The king and the tzaddik are two names for the same spiritual figure in this Torah. The verse 'melech beyafyo techezena einecha' (Isaiah 33:17) is interpreted as referring to the true tzaddik in his beauty and glory. Both 'melech' (king) and 'tzaddik' describe the holy leader — the one whose role is to bring Israel close to their Father in Heaven, and whose beauty at the gathering (kibbutz) constitutes the divine Hitpaarut. They share the same essential nature: the holy leader who is himself the Hitpaarut of God among His people.",
+      "dominant_node": "צדיק",
+      "nodes": [
+        "מלך",
+        "צדיק"
+      ],
+      "node_degrees": {
+        "מלך": 1,
+        "צדיק": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 4,
+    "total_nodes": 8,
+    "total_packages": 2,
+    "raw_connected_components": 4
+  }
+}

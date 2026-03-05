@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "source": "Torah #79 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NO_NEW_PACKAGES",
+  "new_packages": [],
+  "observations": "All bechina-connected nodes in the dataset are fully accounted for by the three packages: (1) תשובה ובטול הזמן, (2) הזמן, and (3) קול דקדשה. The Torah's conceptual architecture is relatively compact — it is a Torah reconstructed from manuscript notes (rashei perakim), and the editor himself states the teaching is incomplete.\n\nChecking for independent domains with 3+ concepts connected by explicit bechina language:\n\n1. The evil voice domain (קול עשו, קול דסטרא אחרא, עשו) is extensively discussed but produces zero bechina edges in the dataset. The text does contain bechina language: 'הקול דסטרא אחרא שהוא בחינת עשו' — but this was not encoded as a dataset edge. If these nodes were added, they would form a fourth package (evil mirror of Package 3), but this cannot be proposed as a 'new' package from existing dataset nodes alone.\n\n2. The suffering/time domain (צרות, דינים, אחיזת הסטרא אחרא = בחינת הזמן) contains bechina language in the source text ('כל הצרות והדינים ואחיזת הסטרא אחרא, הוא רק בבחינת הזמן'), but again these nodes are absent from the dataset. If added, they would extend Package 2 (the neutral time package) with an evil-valence sub-cluster.\n\n3. There is no independent conceptual domain in the source text that has 3+ bechina-connected nodes already in the dataset that were not already assigned to one of the three packages.\n\nConclusion: The three packages cover all dataset nodes. The significant structural gaps (missing evil-voice package, missing evil-time/tzarot sub-cluster) are flagged in torah_79_additions.json as missing nodes to be added, not as new packages from existing data."
+}

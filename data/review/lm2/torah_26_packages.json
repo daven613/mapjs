@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source": "Torah #26 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 26,
+      "volume": "lm2",
+      "label": "דַּעַת וַחֲסָדִים — מֹשֶׁה וְאַבְרָהָם",
+      "label_en": "Da'at and Chassadim — Moshe and Avraham",
+      "polarity": "good",
+      "reason": "All three bechina pairs in this Torah describe a single unified reality from three angles: (1) Moshe IS Da'at — the leader-personality and the sefira are the same essential thing; (2) Avraham IS the 248 limbs — Avraham (gematria 248) ish haChesed IS the 248 limbs of the body, i.e., the structure of Chesed embodied in physical form; (3) the clothing of Moshe in the limbs IS the very same event as the clothing of Da'at in Chassadim — the Rebbe states 'זֶהוּ בְּעַצְמוֹ' (this itself is). Together, these three pairs define one thematic family: the interpenetration of Da'at/consciousness and Chesed/compassion as the animating principle of the holy human being. Moshe/Da'at is clothed in Avraham/248 limbs/Chassadim — three name-pairs for one structural reality.",
+      "dominant_node": "דעת",
+      "nodes": [
+        "משה",
+        "דעת",
+        "אברהם",
+        "רמ\"ח איברים",
+        "התלבשות משה באיברים",
+        "התלבשות הדעת בחסדים"
+      ],
+      "node_degrees": {
+        "משה": 1,
+        "דעת": 1,
+        "אברהם": 1,
+        "רמ\"ח איברים": 1,
+        "התלבשות משה באיברים": 1,
+        "התלבשות הדעת בחסדים": 1
+      },
+      "mirror_package_id": null,
+      "merge_notes": [
+        {
+          "merged_nodes": ["אברהם", "רמ\"ח איברים", "משה", "דעת", "התלבשות משה באיברים", "התלבשות הדעת בחסדים"],
+          "reason": "The three raw connected components are distinct pairs, but the Rebbe explicitly bridges them in the proof text: 'כִּי מֹשֶׁה הוּא הַדַּעַת, וְהָאֵיבָרִים הֵם רְמַ\"ח, בְּחִינַת אַבְרָהָם אִישׁ הַחֶסֶד'. This sentence links all three pairs into one chain: Moshe=Da'at (Edge 2) → the limbs=248=Avraham/Chesed (Edge 1) → and the clothing of Moshe in the limbs = the clothing of Da'at in Chassadim (Edge 3). All three pairs are expressions of the same essential reality: Da'at clothed in Chassadim. Since they share the same essential nature and are all oriented toward holiness (good domain), they form one package. No eitza relationship separates them — they are parallel bechina descriptions of one structure."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 6,
+    "total_packages": 1,
+    "raw_connected_components": 3,
+    "note": "Three isolated bechina pairs merged into one package because the Rebbe's proof text explicitly links all three into one unified statement. The evil mirror (Gevurot d'Sitra Achra, anger, drunkenness) is present in the source text but has zero bechina edges in the dataset — the evil side is described causally (eitza), not as bechina equivalences."
+  }
+}

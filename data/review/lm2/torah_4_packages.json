@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "source": "Torah #4 (Likutay Moharan Tinyana — LM2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "The torahData.js dataset encodes LM2 Torah 4 under reference 1004 (1000 + torah number). All 85 entries for reference 1004 are typed 'eitza' or 'cause' — there are zero bechina-type edges in the current dataset for this Torah. All packages below are derived exclusively from bechina language in the source text (torah_4.txt). The Torah's argument flows: Tzedaka breaks cruelty → converts to compassion → opens spiritual beginnings → defeats Metzach HaNachash → reveals Will/Ratzon → produces Yirah → creates vessel for Chesed → world sustained by Chesed (priestly state). Five packages identified: (1) Tzedaka and the Raven — the good work of breaking cruelty; (2) Yirah, Regel and the Vessel — fear as the channel for chesed; (3) Ratzon and its Revelation — the will that underlies all; (4) Chesed and the Priestly State — the goal state; (5) Metzach HaNachash — the evil counterforce of naturalist philosophy."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 4,
+      "volume": "lm2",
+      "label": "צְדָקָה וְהָעוֹרֵב — Tzedaka and the Raven",
+      "label_en": "Charity: Breaking Cruelty and Opening Beginnings",
+      "polarity": "good",
+      "reason": "This package groups all concepts that share the nature of צְדָקָה (charity) — the act of breaking one's innate cruelty (אַכְזָרִיּוּת) and transforming it into compassion (רַחֲמָנוּת). The raven (עוֹרֵב) is the key emblem: cruel by nature, yet commanded to sustain Eliyahu — exactly the bechina of tzedaka. The 'Poshkantza' bird (crow) in the Aggadah that kills the serpent is likewise called a bechina of tzedaka. The mincha (grain offering) is equated with tzedaka via the verse 'magishei mincha bitzedaka'. The 'mincha chadasha' = beginning of tzedaka = opening of the 'petach' (doorway). In the healing metaphor tzedaka is a bechina of 'ptichat pi hamaka' (opening the wound). All these are different expressions of the same essential reality: charity as the initiating act that opens every spiritual doorway.",
+      "dominant_node": "צדקה",
+      "nodes": [
+        "צדקה",
+        "הָעֹרְבִים",
+        "עוֹרֵב",
+        "פּוּשְׁקַנְצָא",
+        "מִנְחָה",
+        "מִנְחָה חֲדָשָׁה",
+        "הַתְחָלַת הַצְּדָקָה",
+        "פְּתִיחַת פִּי הַמַּכָּה",
+        "אַכְזָרִיּוּת",
+        "רַחֲמָנוּת"
+      ],
+      "node_degrees": {
+        "צדקה": 5,
+        "עוֹרֵב": 2,
+        "הָעֹרְבִים": 1,
+        "פּוּשְׁקַנְצָא": 1,
+        "מִנְחָה": 2,
+        "מִנְחָה חֲדָשָׁה": 1,
+        "הַתְחָלַת הַצְּדָקָה": 1,
+        "פְּתִיחַת פִּי הַמַּכָּה": 1,
+        "אַכְזָרִיּוּת": 1,
+        "רַחֲמָנוּת": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["עוֹרֵב", "פּוּשְׁקַנְצָא"],
+          "reason": "The Aramaic 'Poshkantza' (the bird in the Bava Batra aggadah) is explicitly identified in the Torah text as 'עוֹרֵב' (raven) = tzedaka. Both are the same symbolic figure."
+        },
+        {
+          "merged_nodes": ["מִנְחָה חֲדָשָׁה", "הַתְחָלַת הַצְּדָקָה"],
+          "reason": "The verse 'uveYom haBikurim beHakrivkhem mincha chadasha' is explicitly decoded as 'this is the bechina of beginning tzedaka, starting fresh to give tzedaka.' Mincha chadasha = beginning of tzedaka — two expressions of one concept."
+        },
+        {
+          "merged_nodes": ["פְּתִיחַת פִּי הַמַּכָּה", "צדקה"],
+          "reason": "In the healing metaphor (section יב), tzedaka is explicitly stated as 'bechina of ptichat pi hamaka' (opening the wound). Same essential function: tzedaka opens what is closed."
+        },
+        {
+          "merged_nodes": ["אַכְזָרִיּוּת", "רַחֲמָנוּת"],
+          "reason": "The Torah's core teaching about tzedaka defines it as the work of converting cruelty (achzariut) to compassion (rachamnut). These are the two poles of the tzedaka process — both belong to this package as the substance of what tzedaka transforms."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 4,
+      "volume": "lm2",
+      "label": "יִרְאָה וְרֶגֶל — Yirah and Regel",
+      "label_en": "Fear as the Vessel: The Channel That Receives Chesed",
+      "polarity": "good",
+      "reason": "This package groups concepts whose essential nature is יִרְאָה (fear of God) as the structural vessel (כְּלִי וְצִנּוֹר) that enables reception of chesed. The Torah explicitly equates: (1) יִרְאָה = רֶגֶל (foot/base — because Yirah is the 'end' dimension, as in 'sof davar hakol nishma et haElohim yera'); (2) יָמִים טוֹבִים = רֶגֶל ('the Yamim Tovim are called Regel, which is bechina of Yirah'); (3) רֶגֶל = סִבּוֹת ('Regel is bechina of causes/reasons,' per the verse 'vaYevarekh Hashem otkha leragli = besubati'); (4) יִרְאָה = חֲקִיקָה וְצִנּוֹר (through yirah is made an engraving and channel to receive chesed); (5) רֶגֶל = הֲדָחַת וְכִבּוּס הַדָּמִים (in the healing metaphor, regel/yom tov corresponds to washing the blood). All these are different faces of the same reality: the dimension of awe/base that structures the flow of divine blessing.",
+      "dominant_node": "יִרְאָה",
+      "nodes": [
+        "יִרְאָה",
+        "רֶגֶל",
+        "יָמִים טוֹבִים",
+        "צִנּוֹר",
+        "חֲקִיקָה",
+        "סִבּוֹת",
+        "הֲדָחַת וְכִבּוּס הַדָּמִים",
+        "שָׁבוּעוֹת"
+      ],
+      "node_degrees": {
+        "יִרְאָה": 4,
+        "רֶגֶל": 5,
+        "יָמִים טוֹבִים": 2,
+        "צִנּוֹר": 2,
+        "חֲקִיקָה": 2,
+        "סִבּוֹת": 1,
+        "הֲדָחַת וְכִבּוּס הַדָּמִים": 1,
+        "שָׁבוּעוֹת": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["יָמִים טוֹבִים", "רֶגֶל"],
+          "reason": "Text: 'Therefore Yamim Tovim are called Regel, which is bechina of Yirah.' Yamim Tovim and Regel share the same essential nature — the aspect that creates Yirah through revelation of Ratzon."
+        },
+        {
+          "merged_nodes": ["שָׁבוּעוֹת", "יָמִים טוֹבִים"],
+          "reason": "Shavuot is one of the three Yamim Tovim (Regalim), and is specifically named in the closing exegesis: 'beShavuoteikhem — this is bechina of Zaken.' However, Shavuot as a Regel belongs to the Yirah/Regel package. The connection to 'Zaken' reflects an eitza relationship (tzedaka repairs the Zaken so the Regel of Shavuot reveals Ratzon), not a bechina equivalence between Shavuot and Zaken."
+        },
+        {
+          "merged_nodes": ["צִנּוֹר", "חֲקִיקָה"],
+          "reason": "These two terms always appear together in the Torah as the functional form of Yirah: 'al yedei Yirah na'aseh chakika veTzinnor.' Both describe the same vessel-function of Yirah."
+        },
+        {
+          "merged_nodes": ["הֲדָחַת וְכִבּוּס הַדָּמִים", "רֶגֶל"],
+          "reason": "In the healing metaphor, Regel/Yom Tov is the bechina of washing/purifying the blood — 'ein Rogel = ein koves' per Rashi. Same structural role."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 4,
+      "volume": "lm2",
+      "label": "הִתְגַּלּוּת הָרָצוֹן — Revelation of the Will",
+      "label_en": "Ratzon: The Divine Will That Defeats Naturalism",
+      "polarity": "good",
+      "reason": "This package centers on רָצוֹן (Will/Ratzon) — specifically the divine free Will that is not bound by necessity of nature. The Torah's metaphysical axis is: God created and sustains the world through pure Will (not mechanical necessity), and when this is revealed, Yirah is born. The bechina equalities: (1) מֵצַח הָרָצוֹן ↔ הֶחָכָם שֶׁבִּקְדֻשָּׁה (the holy sage is a bechina of Metzach HaRatzon — he is where Moshe's departure was, at the root of Will); (2) נְשִׂיאַת פָּנִים ↔ רָצוֹן ('lifting of face is bechina of Ratzon' — from Elisha's gracious acceptance of Yehoshafat); (3) אֶבֶן שְׁלֵמָה ↔ רָצוֹן ('even shelema reitzono' — the perfect stone is bechina of Ratzon, the stone David used to slay Goliath/Metzach HaNachash); (4) מִקְרָא קֹדֶשׁ ↔ הִתְגַּלּוּת הָרָצוֹן (the holy convocation = the revelation of Will that Yom Tov proclaims); (5) זָקֵן (the proper elder) = channel for Ratzon revelation (per 'Zaken venasui fanim' — the proper elder = metzach haratzon). These all share the essential nature of divine Will as the counterforce to necessity.",
+      "dominant_node": "רָצוֹן",
+      "nodes": [
+        "רָצוֹן",
+        "הִתְגַּלּוּת הָרָצוֹן",
+        "מֵצַח הָרָצוֹן",
+        "שֹׁרֶשׁ הָרָצוֹן",
+        "הֶחָכָם שֶׁבִּקְדֻשָּׁה",
+        "נְשִׂיאַת פָּנִים",
+        "אֶבֶן שְׁלֵמָה",
+        "מִקְרָא קֹדֶשׁ",
+        "זָקֵן"
+      ],
+      "node_degrees": {
+        "רָצוֹן": 4,
+        "הִתְגַּלּוּת הָרָצוֹן": 3,
+        "מֵצַח הָרָצוֹן": 2,
+        "שֹׁרֶשׁ הָרָצוֹן": 2,
+        "הֶחָכָם שֶׁבִּקְדֻשָּׁה": 1,
+        "נְשִׂיאַת פָּנִים": 1,
+        "אֶבֶן שְׁלֵמָה": 1,
+        "מִקְרָא קֹדֶשׁ": 1,
+        "זָקֵן": 2
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["מֵצַח הָרָצוֹן", "הֶחָכָם שֶׁבִּקְדֻשָּׁה"],
+          "reason": "Text section ז: 'He is the bechina of Metzach HaRatzon' — the great holy sage who ties all wills to the root of Will is identified as a bechina of Metzach HaRatzon. Same essential domain: the channel through which divine Will overcomes natural philosophy."
+        },
+        {
+          "merged_nodes": ["אֶבֶן שְׁלֵמָה", "רָצוֹן"],
+          "reason": "Text section יא: 'vatitba ha'even bemitzcho — that is Metzach HaNachash, which he defeated through the bechina of even shelema reitzono, bechina Ratzon.' The perfect stone = Ratzon — same bechina."
+        },
+        {
+          "merged_nodes": ["מִקְרָא קֹדֶשׁ", "הִתְגַּלּוּת הָרָצוֹן"],
+          "reason": "Text section פ (closing exegesis): 'Mikra Kodesh — that is kol hakriya shel Yom Tov shehu hitgalut haRatzon.' Mikra Kodesh and revelation of Ratzon are equated as bechina."
+        },
+        {
+          "merged_nodes": ["זָקֵן", "רָצוֹן"],
+          "reason": "Text section ח: 'Zaken unasui fanim' — when elders are as they should be (each day adding holiness = growing in Ratzon consciousness), this strengthens hitgalut haRatzon. The zaken is the conduit for Ratzon. His name 'nasui fanim' = Ratzon (as proven from Elisha). Merged into the Ratzon cluster as an expression of properly aged wisdom that channels divine Will."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 4,
+      "volume": "lm2",
+      "label": "חֶסֶד וְכֹהֵן — Chesed and the Priestly State",
+      "label_en": "Chesed: The World Sustained by Grace Alone",
+      "polarity": "good",
+      "reason": "This package groups concepts whose essential nature is חֶסֶד (loving-kindness/grace) — the divine sustenance that flows when the vessel of Yirah receives it. The Torah teaches that in the ideal state ('olam chesed yibaneh') the world is sustained by chesed alone with no need for labor. The bechina equalities: (1) חֶסֶד ↔ כֹּהֵן (section יב: 'bechina of Kohen, Chesed — through it the wound is closed'); (2) מַעֲשֵׂה בְרֵאשִׁית ↔ עוֹלָם חֶסֶד יִבָּנֶה (section יב: 'maase bereshit — that is olam chesed yibaneh'); (3) כֹּהֲנֵי ה' ↔ the state of pure chesed (sections ג, יב: 'atem kohanei Hashem tikareu' = they need not labor, the world is sustained by chesed). (4) In the healing metaphor, closing the wound (segirat pi hamaka) = chesed = kohen. All these are expressions of the same essential quality: divine grace freely flowing.",
+      "dominant_node": "חֶסֶד",
+      "nodes": [
+        "חֶסֶד",
+        "כֹּהֵן",
+        "כֹּהֲנֵי ה'",
+        "מַעֲשֵׂה בְרֵאשִׁית",
+        "עוֹלָם חֶסֶד יִבָּנֶה",
+        "סְגִירַת פִּי הַמַּכָּה",
+        "אִתְעָרוּתָא דִּלְתַתָּא"
+      ],
+      "node_degrees": {
+        "חֶסֶד": 4,
+        "כֹּהֵן": 2,
+        "כֹּהֲנֵי ה'": 2,
+        "מַעֲשֵׂה בְרֵאשִׁית": 2,
+        "עוֹלָם חֶסֶד יִבָּנֶה": 1,
+        "סְגִירַת פִּי הַמַּכָּה": 1,
+        "אִתְעָרוּתָא דִּלְתַתָּא": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["מַעֲשֵׂה בְרֵאשִׁית", "עוֹלָם חֶסֶד יִבָּנֶה"],
+          "reason": "Text section יב: 'maase bereshit — dehaynu bechina: olam chesed yibaneh.' The work of creation is a bechina of 'the world is built by chesed.' Same essential domain: the cosmic dimension of chesed."
+        },
+        {
+          "merged_nodes": ["כֹּהֵן", "כֹּהֲנֵי ה'"],
+          "reason": "Both are expressions of the priestly domain = chesed. The individual 'kohen' in the healing metaphor and 'kohanei Hashem' in the redemptive vision share the essential nature of chesed-service."
+        },
+        {
+          "merged_nodes": ["אִתְעָרוּתָא דִּלְתַתָּא", "חֶסֶד"],
+          "reason": "Text section ג: ordinary labor is the itaruta diletata (arousal from below) needed when chesed is withheld. The absence of itaruta is the state of pure chesed. They share the essential domain of the chesed-flow vs. labor dynamic. Itaruta belongs here as the structural mirror: when chesed flows, no itaruta is needed."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 4,
+      "volume": "lm2",
+      "label": "מֵצַח הַנָּחָשׁ וְחַכְמֵי הַטֶּבַע — The Serpent's Forehead and the Natural Philosophers",
+      "label_en": "Metzach HaNachash: The Evil Root of Natural Necessity",
+      "polarity": "evil",
+      "reason": "This is the evil package — the counterforce to Package 3 (Ratzon). The Torah explicitly identifies Metzach HaNachash (forehead of the serpent) as the root (שֹׁרֶשׁ) of chochmat hateva (wisdom of nature/naturalism). The natural philosophers (חַכְמֵי הַטֶּבַע) are called a bechina of evil beasts (חַיּוֹת רָעוֹת) that prowl and tear. Goliath (גָּלְיַת) sucked from Metzach HaNachash via 'umitzachat nechoshet al raglav' — he denied divine Will and attributed everything to natural necessity. The serpent (תַּנִּינָא) in the Aggadah is Metzach HaNachash. The bechina equalities: (1) מֵצַח הַנָּחָשׁ ↔ שֹׁרֶשׁ חָכְמַת הַטֶּבַע (explicit in text section ז); (2) חַכְמֵי הַטֶּבַע ↔ חַיּוֹת רָעוֹת (section ו); (3) תַּנִּינָא ↔ מֵצַח הַנָּחָשׁ (Aggadah interpretation); (4) גָּלְיַת ↔ מֵצַח הַנָּחָשׁ (section ז, יא). This is the good/evil mirror of Package 3: where Package 3 is Metzach HaRatzon (the forehead of divine Will), Package 5 is Metzach HaNachash (the forehead of the serpent/necessity).",
+      "dominant_node": "מֵצַח הַנָּחָשׁ",
+      "nodes": [
+        "מֵצַח הַנָּחָשׁ",
+        "שֹׁרֶשׁ חָכְמַת הַטֶּבַע",
+        "חַכְמֵי הַטֶּבַע",
+        "חַיּוֹת רָעוֹת",
+        "תַּנִּינָא",
+        "גָּלְיַת",
+        "חִיּוּב הַטֶּבַע",
+        "כְּפִירָה בָּרָצוֹן"
+      ],
+      "node_degrees": {
+        "מֵצַח הַנָּחָשׁ": 5,
+        "שֹׁרֶשׁ חָכְמַת הַטֶּבַע": 2,
+        "חַכְמֵי הַטֶּבַע": 2,
+        "חַיּוֹת רָעוֹת": 2,
+        "תַּנִּינָא": 2,
+        "גָּלְיַת": 2,
+        "חִיּוּב הַטֶּבַע": 1,
+        "כְּפִירָה בָּרָצוֹן": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["תַּנִּינָא", "מֵצַח הַנָּחָשׁ"],
+          "reason": "In the Aggadah interpretation, the serpent (tannina) who tries to swallow the ship (root of Ratzon) is identified as Metzach HaNachash. The Aramaic 'tannina' = the serpent whose forehead is the root of naturalism."
+        },
+        {
+          "merged_nodes": ["גָּלְיַת", "מֵצַח הַנָּחָשׁ"],
+          "reason": "Text sections ז, יא: Goliath sucked his strength from Metzach HaNachash ('umitzachat nechoshet al raglav' = metzach hanachash), denied divine Will, and claimed everything runs by natural necessity. He is a bechina of Metzach HaNachash."
+        },
+        {
+          "merged_nodes": ["חִיּוּב הַטֶּבַע", "שֹׁרֶשׁ חָכְמַת הַטֶּבַע"],
+          "reason": "The 'necessity of nature' (chiyuv hateva) is the conceptual content of natural philosophy — it is what Metzach HaNachash asserts. Two names for the same evil claim."
+        },
+        {
+          "merged_nodes": ["כְּפִירָה בָּרָצוֹן", "מֵצַח הַנָּחָשׁ"],
+          "reason": "Denial of Will (kefirah baratzon) is the functional definition of Metzach HaNachash — it is what the serpent's forehead does. These are one bechina: the force that denies divine freedom."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_relationships_in_source_text": 21,
+    "total_nodes": 42,
+    "total_packages": 5,
+    "raw_connected_components": 5,
+    "notes": "Zero bechina edges in torahData.js for reference 1004. All 85 entries for reference 1004 are typed 'eitza' or 'cause'. The 5 packages here are derived entirely from source text analysis. The good/evil mirror structure: Package 3 (Metzach HaRatzon) mirrors Package 5 (Metzach HaNachash). The eitza flow: Package 1 (tzedaka breaks cruelty) → Package 5 is defeated → Package 3 (Ratzon revealed) → Package 2 (Yirah created) → Package 4 (Chesed received)."
+  }
+}

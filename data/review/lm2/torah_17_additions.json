@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "source": "Torah #17 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "כסילות",
+      "node_text": "כְּסִילוּת",
+      "polarity": "evil",
+      "reason": "The Torah explicitly calls the corrupted weekday fear 'bechina of kesilut' (foolishness). Kesilut is the anti-yirah — fear without da'at, caused by shivud (subjugation). It is the evil mirror of the Package 1 good cluster: ירא שבת is complete yirah with da'at; kesilut is deformed yirah without da'at. The verse cited is 'הֲלֹא יִרְאָתְךָ כִּסְלָתֶךָ' (Job 4:6), where fear and kesilut are equated — a bechina equation.",
+      "source_quote": "כִּי בְּחֹל אֶפְשָׁר שֶׁיִּהְיֶה הַיִּרְאָה עִם כְּסִילוּת, בִּבְחִינַת: הֲלֹא יִרְאָתְךָ כִּסְלָתֶךָ",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "יראות נפולות",
+      "node_text": "יִרְאוֹת נְפוּלוֹת",
+      "polarity": "evil",
+      "reason": "The fallen fears — fearing a ruler, prince, or worldly power instead of God — are the degenerated form of yirah. They are mentioned explicitly in the context of the yirah/ירא שבת bechina cluster: 'וּבָזֶה מַעֲלִין הַיִרְאוֹת הַנְּפוּלוֹת'. They represent the same conceptual domain as kesilut — misplaced, degraded yirah — and belong with the evil side of the yirah family.",
+      "source_quote": "וּבָזֶה מַעֲלִין הַיִרְאוֹת הַנְּפוּלוֹת, דְּהַיְנוּ מַה שֶּׁיְרֵאִים לִפְעָמִים מִשַּׂר וְכַדּוֹמֶה",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 1,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "כסילות — foolishness/corrupted fear (bechina of weekday yirah without da'at)",
+      "יראות נפולות — fallen fears (fear of princes and worldly powers instead of God)",
+      "שבת — Shabbat itself (appears as a cause node in eitza edges but not in any bechina edge)",
+      "חרות — freedom/liberation (appears in eitza edges only; central theme of the Torah's argument)",
+      "דעת שלם — complete da'at (appears in eitza edges only; the intermediate step between cherrut and yirah)",
+      "תענוג — pleasure (referenced via 'אָז תִּתְעַנַּג עַל ה'' as bechina of Shabbat, but in an eitza context)",
+      "שמחה — joy (referenced via 'כִּי בְּשִׂמְחָה תֵצֵאוּ' but functions as eitza not bechina)",
+      "טבע — nature (discussed in sections 7-11 as paired with hashgacha but no bechina edge encoded)",
+      "השגחה — divine providence (central to sections 7-11 but no bechina edge encoded)"
+    ],
+    "editorial_note": "This Torah (#17) is characterized by almost no bechina edges in the dataset — only 1 out of 14 total edges is typed 'bechina'. The Torah's conceptual structure is primarily eitza (causal chains): joy → freedom → da'at → yirah. The bechina structure is minimal: only the identification of yirah with ירא שבת is encoded. The second and third teachings (sections 7-11) on God looking at the good, and on teva vs hashgacha, have no bechina edges at all in the dataset. Several important bechina relationships appear implicit in the source text (e.g., kesilut as the weekday bechina of degraded yirah) that are not captured as bechina edges."
+  }
+}
