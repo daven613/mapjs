@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "source": "Torah #46 (Likutay Moharan Vol 1)",
+    "volume": "lm1",
+    "torah_ref": 46,
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "description": "Assignment of cause/effect (eitza) edge nodes to existing bechina-based packages for Torah #46. Each unassigned node from the cause/effect edges is assigned to a package by its ESSENTIAL NATURE — what it IS, not what it causes or is caused by.",
+    "input_files": {
+      "ce_edges": "/tmp/torah_46_ce_edges.json",
+      "packages": "/home/user/mapjs/data/review/torah_46_packages.json",
+      "additions": "/home/user/mapjs/data/review/torah_46_additions.json",
+      "source_text": "/home/user/mapjs/data/torah_texts/lm1/torah_46.txt"
+    }
+  },
+  "assignments": [
+    {
+      "node_id": "כשמכה כף אל כף בשעת התפלה",
+      "node_text": "כְּשֶׁמַכֶּה כַּף אֶל כַּף בִּשְׁעַת הַתְּפִלָּה",
+      "assigned_to_package": 2,
+      "package_label": "מֶחָאַת כַּפַּיִם, תֵּבֵל, חֵשֶׁק הַלֵּב וּנְתִינַת הַמִּטָּה",
+      "polarity": "good",
+      "reason": "This node is an explicit variant/alias of מחאת כפים (clapping the hands). Its essential nature is the PHYSICAL ACT of clapping during prayer — the same domain as Package 2. The text in edge id 50 uses this phrase interchangeably with מחאת כפים: both refer to striking palm to palm at the time of prayer. The node is the cause-side of the eitza 'clapping → not forgetting Torah,' but its ESSENTIAL NATURE is the act of clapping itself, which IS Package 2.",
+      "appears_in_edges": [
+        50
+      ],
+      "role_in_edges": "cause"
+    },
+    {
+      "node_id": "כשמכה כף אל כף ומחבר הידים בתפלה",
+      "node_text": "כְּשֶׁמַכֶּה כַּף אֶל כַּף וּמְחַבֵּר הַיָּדַיִם בַּתְּפִלָה",
+      "assigned_to_package": 2,
+      "package_label": "מֶחָאַת כַּפַּיִם, תֵּבֵל, חֵשֶׁק הַלֵּב וּנְתִינַת הַמִּטָּה",
+      "polarity": "good",
+      "reason": "Another variant/alias of מחאת כפים, this time from R' Nasan's second version of the Torah (edge id 893). Its essential nature is identical to the node above: the physical act of striking palm to palm and joining the hands during prayer. 'Joining the hands' (מחבר הידים) is the same act as 'striking palm to palm' (מכה כף אל כף) — both ARE clapping. Assigned to Package 2 by shared essential nature with the package's dominant node מחאת כפים.",
+      "appears_in_edges": [
+        893
+      ],
+      "role_in_edges": "cause"
+    },
+    {
+      "node_id": "\"ותורתך לא שכחתי\"",
+      "node_text": "\"וְתוֹרָתְךָ לֹא שָׁכָחְתִּי\"",
+      "assigned_to_package": 5,
+      "package_label": "מֹחִין דְּקַטְנוּת וֶאֱלֹקִים",
+      "polarity": "good",
+      "reason": "This verse ('And Your Torah I have not forgotten') expresses the STATE of non-forgetting, which the Torah explicitly identifies as the opposite of שכחה (forgetting). The text states: 'כי השכחה הוא מוחין דקטנות, בחינת אלהים. וכשממתיק הדינים כנ\"ל, אזי הוא במוחין דגדלות, ואין לו שכחה.' Not-forgetting IS the state of מוחין דגדלות — expanded consciousness — the positive pole of the consciousness domain. Its essential nature is a STATE OF CONSCIOUSNESS (non-forgetting = expanded mind), which is the same domain as Package 5 (consciousness states and divine names). The additions file already proposes adding מוחין דגדלות ↔ הויה to Package 5, making this package the full consciousness-domain. 'ותורתך לא שכחתי' IS that expanded-consciousness state expressed as Torah retention. Note: polarity is 'good' because this specific node is the positive pole within Package 5.",
+      "appears_in_edges": [
+        50
+      ],
+      "role_in_edges": "effect"
+    },
+    {
+      "node_id": "תורתך לא שכחתי",
+      "node_text": "וְתוֹרָתְךָ לֹא שָׁכָחְתִּי",
+      "assigned_to_package": 5,
+      "package_label": "מֹחִין דְּקַטְנוּת וֶאֱלֹקִים",
+      "polarity": "good",
+      "reason": "Same concept as the node above (\"ותורתך לא שכחתי\"), appearing without the quotation marks and vav prefix in a different edge. Its essential nature is identical: the state of not-forgetting Torah = מוחין דגדלות = expanded consciousness. Assigned to Package 5 as another expression of the consciousness-state domain. The edge (מחאת כפים → תורתך לא שכחתי) is eitza: clapping CAUSES non-forgetting. But the essential nature of the EFFECT (non-forgetting) IS a consciousness state, placing it in Package 5.",
+      "appears_in_edges": [
+        "null (added edge)"
+      ],
+      "role_in_edges": "effect"
+    },
+    {
+      "node_id": "מבטל המחלקת",
+      "node_text": "מְבַטֵּל הַמַּחֲלֹקֶת",
+      "assigned_to_package": 6,
+      "package_label": "\"וַאֲפַלְּטֵהוּ\" וְהַמְתָּקַת הַדִּינִים",
+      "polarity": "good",
+      "reason": "This node ('nullifies the conflict') is a positive divine OUTCOME — the cancellation of conflict through clapping. Its essential nature is a DIVINE RESCUE/RESOLUTION, parallel to המתקת הדינים (sweetening of judgments) and ואפלטהו (I will rescue him). Just as המתקת הדינים IS the divine rescue from the judgment-state, מבטל המחלקת IS the divine rescue from the conflict-state. Both are positive resolutions/outcomes achieved through the same mechanism (clapping). They share the same essential nature: divine deliverance/repair. The text presents nullifying conflict alongside sweetening judgments as parallel effects of the same act — and both ARE expressions of the same underlying reality: God's merciful response to the clapping. Not assigned to Package 4 (Aaron/Korach) because Package 4 IS the conflict-structure itself (the archetype); this node IS the resolution of that structure — a different essential nature.",
+      "appears_in_edges": [
+        1687
+      ],
+      "role_in_edges": "effect"
+    },
+    {
+      "node_id": "נכללים שמאל בימין, וימין בשמאל ונעשים אחדות.",
+      "node_text": "נִכְלָלִים שְׂמֹאל בְּיָמִין, וְיָמִין בִּשְׂמֹאל וְנַעֲשִׂים אַחְדוּת.",
+      "assigned_to_package": 6,
+      "package_label": "\"וַאֲפַלְּטֵהוּ\" וְהַמְתָּקַת הַדִּינִים",
+      "polarity": "good",
+      "reason": "This node ('left is included in right, and right in left, and they become unity') describes the ACHIEVED STATE of unity — the resolution that occurs when clapping unites the two sides. Its essential nature is DIVINE UNIFICATION/REPAIR — the positive outcome where opposing forces are harmonized into oneness (אחדות). This is the same essential domain as המתקת הדינים: sweetening judgments IS the transformation of severity into mercy; including left in right IS the transformation of conflict into unity. Both ARE divine rescue/repair. The text explicitly chains: 'through clapping, left is included in right... and they become unity' — the unity IS the repair IS the sweetening. All are expressions of the same underlying positive divine action. Not assigned to Package 4 (which IS the split/conflict as a structure) nor Package 3 (which IS the hands as divine structures). This node IS what HAPPENS when the split is healed.",
+      "appears_in_edges": [
+        2070
+      ],
+      "role_in_edges": "effect"
+    },
+    {
+      "node_id": "נתתקן המחלקת",
+      "node_text": "נִתְתַּקֵּן הַמַּחֲלֹקֶת",
+      "assigned_to_package": 6,
+      "package_label": "\"וַאֲפַלְּטֵהוּ\" וְהַמְתָּקַת הַדִּינִים",
+      "polarity": "good",
+      "reason": "This node ('the conflict is repaired') is semantically identical to מבטל המחלקת — both express the positive outcome of conflict-resolution. Its essential nature is DIVINE REPAIR, the same domain as Package 6. The text in edge 2294 states: 'through the clapping... the conflict called ברק is repaired.' The repair of conflict IS the sweetening of judgments IS divine rescue — all are co-expressions of the same positive divine action. Assigned to Package 6 by shared essential nature with המתקת הדינים and ואפלטהו.",
+      "appears_in_edges": [
+        2294
+      ],
+      "role_in_edges": "effect"
+    }
+  ],
+  "new_packages": [],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_ce_edges": 7,
+    "total_unique_ce_nodes": 9,
+    "nodes_already_assigned": 2,
+    "nodes_newly_assigned": 7,
+    "nodes_unassigned": 0,
+    "assignments_by_package": {
+      "package_2_clapping": 2,
+      "package_5_consciousness": 2,
+      "package_6_sweetening": 3
+    },
+    "new_packages_created": 0
+  }
+}
