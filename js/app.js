@@ -320,7 +320,11 @@ function doSearch() {
             }
 
             if (pkgs.length === 0) {
-                showToast('No packages found');
+                if (torahNum) {
+                    showToast('Torah #' + torahNum + ' has no packages (likely only eitza connections)');
+                } else {
+                    showToast('No packages found');
+                }
                 return;
             }
 
