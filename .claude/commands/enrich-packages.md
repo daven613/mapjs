@@ -97,6 +97,8 @@ For each unassigned node, determine which existing package it belongs to **by it
 
 ## Output file: `torah_NUM_cause_effect.json`
 
+**Important**: These are **node-to-package assignments**. A node is just a concept — it may appear in bechina edges, cause/effect edges, or both. We are not tracking which edges brought the node to our attention; we are simply saying "this node belongs in this package by its essential nature."
+
 ```json
 {
   "meta": {
@@ -109,15 +111,10 @@ For each unassigned node, determine which existing package it belongs to **by it
   "assignments": [
     {
       "node_id": "concept_id",
-      "node_text": "vowelized Hebrew text",
-      "edge_type": "eitza|cause",
-      "edge_ids": [123, 456],
-      "connected_to": ["node_it_connects_to_1", "node_it_connects_to_2"],
       "package_id": 1,
       "package_label": "Hebrew Package Label",
-      "package_label_en": "English Package Label",
       "polarity": "good|evil|neutral",
-      "reason": "Why this node's essential nature places it in this package, not just because of its causal connection"
+      "reason": "Why this node's essential nature places it in this package"
     }
   ],
   "new_packages": [
@@ -133,8 +130,6 @@ For each unassigned node, determine which existing package it belongs to **by it
   "unassigned_nodes": [
     {
       "node_id": "concept_id",
-      "node_text": "vowelized Hebrew",
-      "edge_ids": [789],
       "reason": "Why this node doesn't fit any existing package"
     }
   ],
@@ -155,7 +150,6 @@ For each unassigned node, determine which existing package it belongs to **by it
 - No node that was already in a bechina package appears in `assignments`
 - Every assignment has a reason explaining the node's **essential nature**, not just its causal connection
 - Polarity is assigned to every node
-- The `connected_to` field accurately lists what the node connects to via cause/effect edges
 - Stats numbers are consistent (unique_unassigned_nodes = nodes_assigned_to_existing + nodes_in_new_packages + nodes_unassigned)
 
 ## Notes
