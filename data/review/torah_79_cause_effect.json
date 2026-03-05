@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "source": "Torah #79 (Likutay Moharan Vol 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "based_on": "torah_79_packages.json"
+  },
+  "assignments": [
+    {
+      "node_id": "עושה תשובה שלמה",
+      "package_id": 1,
+      "package_label": "שַׁבָּת וּתְשׁוּבָה שְׁלֵמָה",
+      "polarity": "good",
+      "reason": "This node ('one who does complete teshuvah') is an active-voice variant of 'תשובה שלמה' already in Package 1. Its essential nature is the same: the state of wholeness/rest in which evil is fully expelled and the soul achieves נַיְחָא. It is not merely causally connected to Shabbat — it IS the Shabbat-state described in active terms."
+    }
+  ],
+  "new_packages": [
+    {
+      "proposed_id": 2,
+      "label": "שִׁפְלוּת וַעֲנָוָה",
+      "label_en": "Humility and Self-Nullification",
+      "polarity": "good",
+      "reason": "Three cause/effect nodes share the essential nature of true humility and self-nullification (אַיִן). שפלות is the quality of seeing one's own lowliness; the compound node about seeing שפלות describes the same inner capacity; the protection-of-livelihood node is the state of being unmovable because one has become אַיִן through humility. This domain is distinct from Package 1 (שבת/תשובה = rest/completeness): Shabbat ENABLES seeing שפלות, but שפלות itself is a separate essential quality — self-nullification rather than rest. The additions file (torah_79_additions.json) independently identified this same cluster.",
+      "dominant_node": "שפלות",
+      "nodes_assigned": [
+        {
+          "node_id": "שפלות",
+          "reason": "The core concept of this package — true humility, seeing one's own lowliness. The Torah states this is בְּחִינוֹת שְׁבוּ אִישׁ תַּחְתָּיו and that the truly humble person הוּא בִּבְחִינַת אַיִן. Its essential nature is self-nullification."
+        },
+        {
+          "node_id": "יכול לראות שפלותווכשעושה תשובה שלמה",
+          "reason": "Despite the textual concatenation with תשובה שלמה, this node's essential nature is the capacity to perceive one's own שפלות — the seeing-faculty applied to humility. It is an expression of the שפלות domain (the ability to truly see one's lowliness), not of the Shabbat/rest domain."
+        },
+        {
+          "node_id": "שום אדם לא יוכל להוציאו ממקומו, דהינו לדחותו מפרנסתו",
+          "reason": "This node describes the state of being undisplaceable because one is בִּבְחִינַת אַיִן — truly humble and therefore not 'under any place' at all. Its essential nature is the protective invulnerability that IS the אַיִן-state of humility. It is not a separate domain but a manifestation of the same שפלות/ענוה quality. The Torah links it directly: עַל־יְדֵי שֶׁזּוֹכִין לְשִׁפְלוּת... אַל יֵצֵא אִישׁ מִמְּקוֹמוֹ."
+        }
+      ]
+    },
+    {
+      "proposed_id": 3,
+      "label": "צַדִּיק וְרָעֲיָא מְהֵימָנָא",
+      "label_en": "The Tzaddik and Faithful Shepherd",
+      "polarity": "good",
+      "reason": "One cause/effect node describes the compound quality of recognizing Israel's greatness and being able to sacrifice oneself for them — the Moshe/Mashiach/Raya Mehemna dimension. This is essentially the leadership-through-self-sacrifice quality that the Torah identifies as the mark of every true Tzaddik. The additions file (torah_79_additions.json) independently identified 'משיח / משה / צדיק' as a proposed new package with this same essential nature.",
+      "dominant_node": "יכול לראות שפלותו, וחשיבות וגדלות ישראל. וזהו ורעה אמונה, הינו שיכול להיות כמו רעיא מהימנא, שיכול למסר את נפשו בעד ישראל",
+      "nodes_assigned": [
+        {
+          "node_id": "יכול לראות שפלותו, וחשיבות וגדלות ישראל. וזהו ורעה אמונה, הינו שיכול להיות כמו רעיא מהימנא, שיכול למסר את נפשו בעד ישראל",
+          "reason": "This compound node's essential nature is the Raya Mehemna quality — the capacity to see both one's own lowliness AND the greatness of Israel, leading to self-sacrifice on their behalf. While it contains a שפלות component, its dominant essence is the faithful-shepherd leadership quality (מוסר נפשו בעד ישראל). The Torah explicitly equates this with the מֹשֶׁה/מָשִׁיחַ dimension: the Tzaddik who knows his smallness and Israel's greatness and therefore gives his life for them."
+        }
+      ]
+    }
+  ],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_cause_eitza_edges": 3,
+    "unique_unassigned_nodes": 5,
+    "nodes_assigned_to_existing": 1,
+    "nodes_in_new_packages": 4,
+    "nodes_unassigned": 0,
+    "nodes_already_in_bechina_packages": 1
+  }
+}
