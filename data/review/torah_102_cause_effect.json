@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "source": "Torah #102 (Likutay Moharan Vol 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "methodology": "Read all cause/effect (eitza) edges for Torah #102, collected all unique node IDs, compared against nodes already assigned to bechina-based packages in torah_102_packages.json, and assigned each unassigned cause/effect node to the package whose essential nature it shares. Node IDs in the eitza edges use unvocalized or compound Hebrew strings that differ from the vocalized single-concept node IDs in the packages, so matching was done by essential conceptual identity, not string equality."
+  },
+  "assignments": [
+    {
+      "node_id": "יראה, שבאה לאדם מכח אדם עצמו",
+      "node_text": "יִרְאָה, שֶׁבָּאָה לָאָדָם מִכֹּחַ אָדָם עַצְמוֹ",
+      "assigned_to_package": 1,
+      "package_label": "יִרְאָה וּבֵית",
+      "polarity": "good",
+      "reason": "This is the earned, self-generated fear of God — the specific type of yira that is the central concept of Package 1. The Rebbe explicitly contrasts this with spontaneous higher fear and equates it (via נִקְרָא) with צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים, which is already in Package 1. Its essential nature IS yira — the self-generated, containing, ruling quality of fear of God.",
+      "from_edges": [538],
+      "edge_role": "cause"
+    },
+    {
+      "node_id": "ביראה כזו התפלה נשמעת, ושפע יורד לעולם, ונתגלה מלכותו",
+      "node_text": "וּבְיִרְאָה כָּזוֹ הַתְּפִלָּה נִשְׁמַעַת, וְשֶׁפַע יוֹרֵד לָעוֹלָם, וְנִתְגַּלֶּה מַלְכוּתוֹ",
+      "assigned_to_package": 2,
+      "package_label": "מַלְכוּת וְכִסֵּא",
+      "polarity": "good",
+      "reason": "This compound outcome node describes the triple result: prayer is heard, shefa descends, and His kingship is revealed. While it mentions prayer and shefa, the climactic and essential element is 'נִתְגַּלֶּה מַלְכוּתוֹ' — the revelation of divine kingship. This is the Torah's entire telos. The essential nature of this outcome is the revelation/growth of malkhut, which is the domain of Package 2. The prayer and shefa are the means; malkhut-revealed is the essential destination.",
+      "from_edges": [538],
+      "edge_role": "effect"
+    },
+    {
+      "node_id": "יראה",
+      "node_text": "בְּיִרְאָה",
+      "assigned_to_package": 1,
+      "package_label": "יִרְאָה וּבֵית",
+      "polarity": "good",
+      "reason": "This is the general concept of yira (fear of God) as the means for arousing shefa. Its essential nature is identical to the dominant node of Package 1 (יִרְאָה). It is the same concept as the vocalized יִרְאָה in the package, appearing here in the eitza layer as the unvocalized cause-node.",
+      "from_edges": [1280],
+      "edge_role": "cause"
+    },
+    {
+      "node_id": "יוכל לעורר השפע בעולם",
+      "node_text": "יוּכַל לְעוֹרֵר הַשֶּׁפַע בָּעוֹלָם",
+      "assigned_to_package": 3,
+      "package_label": "תְּפִלָּה וְתֵבוֹת",
+      "polarity": "good",
+      "reason": "This node describes the arousal of divine abundance (shefa) in the world. Its essential nature is about the flow of shefa, which is a core concept in Package 3 (שֶׁפַע is already a node in that package). The 'arousing of shefa' is the same domain as shefa itself — the abundance dimension that prayer-as-vessel receives and channels. It belongs to the prayer/shefa domain, not to the malkhut domain (malkhut is the result of shefa arriving, not the shefa flow itself).",
+      "from_edges": [1280],
+      "edge_role": "effect"
+    },
+    {
+      "node_id": "תפלה",
+      "node_text": "הַתְּפִלּוֹת",
+      "assigned_to_package": 3,
+      "package_label": "תְּפִלָּה וְתֵבוֹת",
+      "polarity": "good",
+      "reason": "This is prayer — the same concept as the dominant node of Package 3 (תְּפִלָּה). It appears here in the eitza layer as the unvocalized cause-node. Its essential nature is the verbal/prayer dimension through which shefa is drawn down.",
+      "from_edges": [1343],
+      "edge_role": "cause"
+    },
+    {
+      "node_id": "יכולים להוריד השפע",
+      "node_text": "יְכוֹלִים לְהוֹרִיד הַשֶּׁפַע",
+      "assigned_to_package": 3,
+      "package_label": "תְּפִלָּה וְתֵבוֹת",
+      "polarity": "good",
+      "reason": "This node describes 'being able to bring down the shefa.' Its essential nature is the same domain as שֶׁפַע (already in Package 3) — the divine abundance that flows through the prayer-vessel. Like 'יוכל לעורר השפע בעולם', this is about the shefa-channel, which belongs to the prayer/vessel/abundance domain of Package 3.",
+      "from_edges": [1343],
+      "edge_role": "effect"
+    },
+    {
+      "node_id": "מכח התפלה שהיא ביראה",
+      "node_text": "מִכֹּחַ הַתְּפִלָּה שֶׁהִיא בְּיִרְאָה",
+      "assigned_to_package": 3,
+      "package_label": "תְּפִלָּה וְתֵבוֹת",
+      "polarity": "good",
+      "reason": "This compound cause-node combines prayer and yira: 'through prayer that is with fear of God.' While it references both yira (Package 1) and tefillah (Package 3), its essential nature is a modality of prayer — it is prayer qualified by a specific attribute. The core noun is תְּפִלָּה; the בְּיִרְאָה is an adverbial modifier describing the quality of the prayer. The essential domain is prayer-as-vehicle, which belongs to Package 3. The yira is the enabling condition (an eitza relationship from Package 1), not the essential identity of this node.",
+      "from_edges": [1725],
+      "edge_role": "cause"
+    },
+    {
+      "node_id": "מוריד שפע בעולם, ונתגדל מלכותו",
+      "node_text": "מוֹרִיד שֶׁפַע בָּעוֹלָם, וְנִתְגַּדֵּל מַלְכוּתוֹ",
+      "assigned_to_package": 2,
+      "package_label": "מַלְכוּת וְכִסֵּא",
+      "polarity": "good",
+      "reason": "This compound effect-node describes bringing down shefa and the growth of divine kingship. Like the parallel node from edge 538, the climactic element is 'וְנִתְגַּדֵּל מַלְכוּתוֹ' — His kingship grows. This is the final telos of the entire Torah's argument. The shefa-descent is the means; the growth of malkhut is the essential endpoint. This node's essential nature belongs to the malkhut domain of Package 2, where מִעוּט הַמַּלְכוּת (the diminished kingship) is transformed into fullness through this very process.",
+      "from_edges": [1725],
+      "edge_role": "effect"
+    }
+  ],
+  "new_packages": [],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_cause_effect_edges": 4,
+    "total_unique_nodes_in_edges": 8,
+    "nodes_already_in_packages_by_exact_id": 0,
+    "nodes_assigned_by_essential_nature": 8,
+    "nodes_unassigned": 0,
+    "assignments_by_package": {
+      "1_yira_and_house": 2,
+      "2_malkhut_and_throne": 2,
+      "3_prayer_and_words": 4,
+      "4_klipot": 0
+    },
+    "assignments_by_polarity": {
+      "good": 8,
+      "evil": 0,
+      "neutral": 0
+    },
+    "note_on_string_matching": "All 8 cause/effect node IDs use unvocalized or compound Hebrew strings (e.g., 'יראה' vs. vocalized 'יִרְאָה', or compound phrases like 'ביראה כזו התפלה נשמעת, ושפע יורד לעולם, ונתגלה מלכותו'). None match the vocalized single-concept node IDs in torah_102_packages.json by exact string. Assignment was therefore performed entirely by essential conceptual nature.",
+    "note_on_polarity": "All 8 cause/effect nodes are assigned to good-polarity packages. This is consistent with Torah #102's structure: the entire eitza chain (yira → prayer → shefa → malkhut) operates within the positive/holy dimension. The evil package (Package 4: קְּלִפּוֹת) is mentioned only as the structural counterforce that is subdued when malkhut is revealed — it does not participate in any cause/effect edge in the current dataset.",
+    "note_on_package_4": "Package 4 (קְּלִפּוֹת תַּחַת הַשְּׁכִינָה, evil) receives no cause/effect node assignments because no eitza edge in the dataset involves klipot concepts. The klipot appear in the source text as the backdrop ('נִכְפָפִין הַקְּלִפּוֹת תַּחַת הַשְּׁכִינָה') but this relationship was not encoded as an eitza edge — it is the structural evil mirror, not a causal step in the Torah's argument."
+  }
+}
