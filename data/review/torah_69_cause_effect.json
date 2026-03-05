@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "source": "Torah #69 (Likutay Moharan Vol 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "methodology": "Read framework.md, torah_69_packages.json, torah_69_additions.json, torah_69_ce_edges.json, and torah_69.txt. Collected all node IDs already assigned to packages (including additions). Extracted all unique node IDs from cause/effect edges. Identified nodes appearing in cause/effect edges but not in any package. Assigned each unassigned node to the package matching its ESSENTIAL NATURE — what the concept IS at its core, not merely what it causally connects to.",
+    "input_files": [
+      "torah_69_packages.json",
+      "torah_69_additions.json",
+      "torah_69_ce_edges.json",
+      "torah_69.txt"
+    ]
+  },
+  "assignments": [
+    {
+      "node_id": "אם אין די לך בחלקך, ואתה שונא את ממונך, שאינו מספיק לך, על כן שלח. הינו שתעשה תקנה לזה",
+      "node_text": "אִם אֵין דַּי לְךָ בְּחֶלְקְךָ, וְאַתָּה שׂוֹנֵא אֶת מָמוֹנְךָ, שֶׁאֵינוֹ מַסְפִּיק לְךָ, עַל כֵּן שַׁלַּח. הַיְנוּ שֶׁתַּעֲשֶׂה תַּקָּנָה לָזֶה",
+      "assigned_to_package_id": 1,
+      "assigned_to_package_label": "מָמוֹן וְעֲנָפִים",
+      "polarity": "good",
+      "reason": "This node describes the prophetic advice (Malachi 2:16): if you are dissatisfied with your portion of wealth and hate your money for being insufficient, 'send forth' — i.e. give tzedakah. Its essential nature is a tikkun (rectification) for the insufficiency of ממון. The concept is entirely about the relationship to one's wealth-portion and the remedy of 'שלח' (sending forth / tzedakah), both of which are core nodes of Package 1. The node describes the positive/corrective orientation toward wealth, hence polarity is good.",
+      "from_edges": [280]
+    },
+    {
+      "node_id": "יוכל לתקן ממון גזלה שיש לו, הינו שגזלו על־ידי חמדה",
+      "node_text": "יוּכַל לְתַקֵּן מָמוֹן גְּזֵלָה שֶׁיֵּשׁ לוֹ, הַיְנוּ שֶׁגְּזָלוֹ עַל־יְדֵי חֶמְדָּה",
+      "assigned_to_package_id": 1,
+      "assigned_to_package_label": "מָמוֹן וְעֲנָפִים",
+      "polarity": "neutral",
+      "reason": "This node describes the ability to rectify stolen wealth (ממון גזלה) that was obtained through coveting (חמדה). Its essential nature is about the status and rectification of ממון — specifically wealth that has been tainted by theft-through-coveting. The node refers to ממון in its damaged/tainted state and the possibility of its repair. This is squarely within the ממון domain (Package 1). Polarity is neutral because the node describes a transitional state: the wealth itself is tainted (negative) but the tikkun possibility (positive) is inherent in the statement.",
+      "from_edges": [1282]
+    },
+    {
+      "node_id": "יוכל לתקן ממונו, בחינות אשת נעוריו, ולא לבגד בה",
+      "node_text": "יוּכַל לְתַקֵּן מָמוֹנוֹ, בְּחִינוֹת אֵשֶׁת נְעוּרָיו, וְלֹא לִבְגֹּד בָּהּ",
+      "assigned_to_package_id": 2,
+      "assigned_to_package_label": "נֶפֶשׁ וּנְקֵבָה",
+      "polarity": "good",
+      "reason": "Although this node mentions ממון, its essential nature is about rectifying the relationship with אשת נעוריו (the wife of one's youth) — i.e. the nefesh/nekeivah/bat-zug. The phrase 'בחינות אשת נעוריו ולא לבגד בה' explicitly frames the tikkun as restoring fidelity to the feminine soul-dimension. The ממון here is the instrument, but the ESSENCE of what is being described is the restoration of the nefesh-nekeivah bond. This belongs in Package 2 (Soul and the Feminine). Polarity is good: the node describes faithful restoration, not betrayal.",
+      "from_edges": [1283]
+    },
+    {
+      "node_id": "מוציאה מבין הקלפות",
+      "node_text": "מוֹצִיאָהּ מִבֵּין הַקְּלִפּוֹת",
+      "assigned_to_package_id": 2,
+      "assigned_to_package_label": "נֶפֶשׁ וּנְקֵבָה",
+      "polarity": "good",
+      "reason": "This node describes extracting 'her' (the nefesh/nekeivah) from among the klipot. The source text (line 33) makes clear that the 'her' is the nefesh in its feminine aspect: 'הִתְגַּבְּרוּת הַקְּלִפּוֹת עַל הַנֶּפֶשׁ, בְּחִינַת נוּקְבָא, בִּבְחִינַת רַגְלֶיהָ יוֹרְדוֹת מָוֶת.' The essential nature of this node is: the rescue of the nefesh-nekeivah from captivity among the klipot. This is a redemption of the feminine soul-dimension, placing it squarely in Package 2 (Soul and the Feminine). Polarity is good: extraction from klipot is a positive/holy act.",
+      "from_edges": [1723]
+    },
+    {
+      "node_id": "שיתקים אצלו ממונו, אף שהיא של גזלה על ידי החמדה",
+      "node_text": "שֶׁיִּתְקַיֵּם אֶצְלוֹ מָמוֹנוֹ, אַף שֶׁהִיא שֶׁל גְּזֵלָה עַל יְדֵי הַחֶמְדָּה",
+      "assigned_to_package_id": 1,
+      "assigned_to_package_label": "מָמוֹן וְעֲנָפִים",
+      "polarity": "neutral",
+      "reason": "This node describes the outcome that one's ממון endures/is sustained even though it was obtained through theft-by-coveting. Its essential nature is about the status and persistence of ממון — specifically, stolen wealth that achieves stability through tzedakah. This is a description of ממון in its rectified-yet-originally-tainted state. The concept is entirely within the ממון domain (Package 1). Polarity is neutral: the wealth is sustained (positive) but its origin is theft-by-coveting (negative); the node captures both poles.",
+      "from_edges": [2878]
+    },
+    {
+      "node_id": "שמה שתעשו משפט, ותצילו גזול מיד גוזלו",
+      "node_text": "שֶׁמַּה שֶּׁתַּעֲשׂוּ מִשְׁפָּט, וְתַצִּילוּ גָּזוּל מִיַּד גּוֹזְלוֹ",
+      "assigned_to_package_id": 1,
+      "assigned_to_package_label": "מָמוֹן וְעֲנָפִים",
+      "polarity": "good",
+      "reason": "This node describes the act of executing justice and rescuing the stolen property from the robber's hand. Its essential nature is about the restoration of ממון to its rightful owner — the act of justice (משפט) that reverses the theft of wealth (the branches/ענפים of the victim's tree). In the source text (line 16), this is framed within the ממון framework: robbery takes the victim's branches, and justice restores them. The concept is about restoring the stolen wealth-dimension. Polarity is good: justice/rescue of the robbed is a positive act.",
+      "from_edges": [3145]
+    },
+    {
+      "node_id": "תעשו טובה להבנים",
+      "node_text": "תַּעֲשׂוּ טוֹבָה לְהַבָּנִים",
+      "assigned_to_package_id": 3,
+      "assigned_to_package_label": "בָּנִים וְתוֹרָה",
+      "polarity": "good",
+      "reason": "This node describes the outcome of doing good for the children (בנים). Its essential nature is about the welfare of בנים — the children who are the fruits (פרות) of the tree. The source text (line 16) immediately clarifies: 'שֶׁהֵם בְּחִינַת לִמּוּדֵי ה'' — the children ARE limudei Hashem (Torah-students). This node belongs in Package 3 (Children and Torah) because its essence is about the benefit to children/Torah-students. Polarity is good: doing good for children/limudei Hashem is entirely within the domain of holiness.",
+      "from_edges": [3145]
+    }
+  ],
+  "new_packages": [],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_cause_effect_edges": 6,
+    "total_unique_nodes_in_ce_edges": 8,
+    "nodes_already_assigned": 1,
+    "nodes_newly_assigned": 7,
+    "assignments_to_package_1": 4,
+    "assignments_to_package_2": 2,
+    "assignments_to_package_3": 1,
+    "assignments_to_package_4": 0,
+    "new_packages_created": 0,
+    "unassigned_count": 0,
+    "already_assigned_nodes": [
+      {
+        "node_id": "צדקה",
+        "package_id": 1,
+        "package_label": "מָמוֹן וְעֲנָפִים",
+        "note": "Appears as cause (node1) in edges 280, 1282, 1283, 1723, 2878. Already assigned to Package 1 via bechina packages."
+      }
+    ]
+  }
+}
