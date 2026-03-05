@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "source": "Torah #93 (Likutay Moharan Vol 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "methodology": "Read framework.md, torah_93_packages.json (0 packages, 0 bechina edges), torah_93_additions.json (0 additions), torah_93_ce_edges.json (5 eitza edges, 7 unique nodes). All 7 nodes from cause/effect edges are unassigned since no bechina-based packages exist. Nodes assigned to new packages created by essential nature analysis of each concept within the Torah's causal chain."
+  },
+  "assignments": [
+    {
+      "node_id": "משא ומתן באמונה",
+      "node_text": "מַשָּׂא־וּמַתָּן בֶּאֱמוּנָה",
+      "assigned_to_package": "new_pkg_1",
+      "assignment_reason": "Business dealings with faith — the foundational practice that initiates the entire causal chain. Its essential nature is righteous commerce, the domain of faithful action in the material world."
+    },
+    {
+      "node_id": "העושה משא ומתן באמונה",
+      "node_text": "הָעוֹשֶׂה מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+      "assigned_to_package": "new_pkg_1",
+      "assignment_reason": "The person who conducts business with faith — same essential nature as the practice itself (faithful commerce). This is the agent performing the action of new_pkg_1's domain."
+    },
+    {
+      "node_id": "אהבה",
+      "node_text": "לְאַהֲבָה",
+      "assigned_to_package": "new_pkg_2",
+      "assignment_reason": "Love (ahavah) — the spiritual quality of love for God that is produced by faithful commerce. Its essential nature is the domain of love and devotion, the root of all positive commandments."
+    },
+    {
+      "node_id": "מקים מצות עשה של \"ואהבת\"",
+      "node_text": "מְקַיֵּם מִצְוַת עֲשֵׂה שֶׁל \"וְאָהַבְתָּ\"",
+      "assigned_to_package": "new_pkg_2",
+      "assignment_reason": "Fulfilling the commandment of 'Love God' — shares the essential nature of love/ahavah. The commandment ואהבת is the formal expression of the same love domain; the Torah explicitly identifies it as the root of all positive commandments."
+    },
+    {
+      "node_id": "לגדלות המחין",
+      "node_text": "לְגַדְלוּת הַמֹּחִין",
+      "assigned_to_package": "new_pkg_3",
+      "assignment_reason": "Greatness of mind (gadlut hamochin) — expanded consciousness. Its essential nature is the domain of elevated intellect. The Torah presents it as the cognitive capacity that enables prayer with pure intellect."
+    },
+    {
+      "node_id": "יכול להתפלל בשכל צח",
+      "node_text": "יָכוֹל לְהִתְפַּלֵּל בְּשֵׂכֶל צַח",
+      "assigned_to_package": "new_pkg_3",
+      "assignment_reason": "Ability to pray with pure intellect — shares the essential nature of elevated cognition. Prayer with pure sekhel is the actualization of expanded consciousness (gadlut hamochin) in the domain of worship."
+    },
+    {
+      "node_id": "למעלה מהזמן",
+      "node_text": "בָּא לְמַדְרֵגָה שֶׁלְּמַעְלָה מֵהַזְּמַן",
+      "assigned_to_package": "new_pkg_4",
+      "assignment_reason": "The level above time — transcendence of temporality. Its essential nature is the domain of transcendence beyond the constraints of the physical world. Stands as its own thematic domain; no other node in this Torah shares this essential nature."
+    }
+  ],
+  "new_packages": [
+    {
+      "package_id": "new_pkg_1",
+      "name_he": "מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+      "name_en": "Business Dealings with Faith",
+      "polarity": "good",
+      "dominant_node": "משא ומתן באמונה",
+      "description": "The practice of conducting commerce with integrity and faith. This is the foundational action of the Torah's causal chain — the starting point from which all spiritual outcomes flow. Contains both the abstract practice and the person who embodies it.",
+      "node_ids": ["משא ומתן באמונה", "העושה משא ומתן באמונה"],
+      "node_count": 2
+    },
+    {
+      "package_id": "new_pkg_2",
+      "name_he": "אַהֲבָה וּמִצְוַת וְאָהַבְתָּ",
+      "name_en": "Love and the Commandment of Love",
+      "polarity": "good",
+      "dominant_node": "אהבה",
+      "description": "The domain of love for God — both as a spiritual quality attained through faithful dealings and as the formal commandment (ואהבת) that the Torah identifies as the root of all positive commandments. Love here is the mediating spiritual state between righteous action and expanded consciousness.",
+      "node_ids": ["אהבה", "מקים מצות עשה של \"ואהבת\""],
+      "node_count": 2
+    },
+    {
+      "package_id": "new_pkg_3",
+      "name_he": "גַּדְלוּת הַמֹּחִין וּתְפִלָּה בְּשֵׂכֶל צַח",
+      "name_en": "Expanded Consciousness and Prayer with Pure Intellect",
+      "polarity": "good",
+      "dominant_node": "יכול להתפלל בשכל צח",
+      "description": "The domain of elevated intellect and its expression in prayer. Gadlut hamochin (greatness of mind) and the ability to pray with pure sekhel share the essential nature of expanded cognitive capacity directed toward divine service. This is the culminating spiritual outcome of the Torah's causal chain.",
+      "node_ids": ["לגדלות המחין", "יכול להתפלל בשכל צח"],
+      "node_count": 2
+    },
+    {
+      "package_id": "new_pkg_4",
+      "name_he": "לְמַעְלָה מֵהַזְּמַן",
+      "name_en": "Above Time",
+      "polarity": "good",
+      "dominant_node": "למעלה מהזמן",
+      "description": "The level of transcendence beyond temporal constraints. The Torah presents this as a spiritual level reached through faithful commerce, connecting it to the concept that Israel arose in divine thought (machshavah), which is above time. A singular domain of metaphysical transcendence.",
+      "node_ids": ["למעלה מהזמן"],
+      "node_count": 1
+    }
+  ],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_cause_effect_edges": 5,
+    "total_unique_nodes_in_edges": 7,
+    "nodes_already_in_existing_packages": 0,
+    "nodes_needing_assignment": 7,
+    "nodes_assigned_to_existing_packages": 0,
+    "nodes_assigned_to_new_packages": 7,
+    "nodes_unassigned": 0,
+    "new_packages_created": 4,
+    "existing_packages_enriched": 0
+  }
+}
