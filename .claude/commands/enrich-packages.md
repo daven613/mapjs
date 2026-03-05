@@ -25,6 +25,21 @@ Read `/home/user/mapjs/docs/framework.md` first for the full conceptual framewor
 ## Input files
 
 - **Edge data**: `/home/user/mapjs/data/torahData.js`
+  - **IMPORTANT**: This file is ~6MB. Do NOT read it directly. Instead, run a Node.js script to extract just the edges you need:
+    ```
+    node -e '
+    const fs = require("fs");
+    let d = fs.readFileSync("/home/user/mapjs/data/torahData.js","utf8");
+    d = d.replace("const torahData = ","module.exports = ");
+    fs.writeFileSync("/tmp/_td.js", d);
+    const td = require("/tmp/_td.js");
+    const ref = REF_NUM;
+    const edges = td.filter(e => e.reference === ref && (e.type === "eitza" || e.type === "cause"));
+    fs.writeFileSync("/tmp/torah_REF_NUM_ce_edges.json", JSON.stringify(edges, null, 2));
+    console.log("Extracted " + edges.length + " edges");
+    '
+    ```
+    Replace REF_NUM with the actual reference number. Then read `/tmp/torah_REF_NUM_ce_edges.json`.
   - Filter: `reference === REF_NUM` AND (`type === 'eitza'` OR `type === 'cause'`)
   - REF_NUM = NUM for LM1, 1000+NUM for LM2
   - Each edge has: `id`, `node1_id`, `node2_id`, `node1_text`, `node2_text`, `proof`, `type`, `is_good`, `is_bad`
