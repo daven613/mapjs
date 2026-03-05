@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "source": "Torah #84 (Likutay Moharan Volume 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "based_on": "torah_84_packages.json",
+    "note": "Reference 84 does not appear in torahData.js — zero cause/effect (eitza/cause) edges exist in the dataset for this Torah. All nodes were already identified and assigned to packages via the bechina analysis and gap analysis (torah_84_packages.json and torah_84_additions.json). The Torah source text does contain implicit eitza relationships (described below in source_text_eitza_observations) but these have not yet been added to torahData.js as edges."
+  },
+  "assignments": [],
+  "new_packages": [],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_cause_eitza_edges": 0,
+    "unique_unassigned_nodes": 0,
+    "nodes_assigned_to_existing": 0,
+    "nodes_in_new_packages": 0,
+    "nodes_unassigned": 0,
+    "nodes_already_in_bechina_packages": 10
+  },
+  "source_text_eitza_observations": {
+    "note": "The following cause/effect relationships are present in the Torah source text but do not yet exist as edges in torahData.js. They are documented here for future dataset enrichment.",
+    "potential_eitza_edges": [
+      {
+        "cause": "וַתְּרָן בְּמָמוֹנִי",
+        "effect": "הַטּוֹב הַגָּנוּז",
+        "type": "eitza",
+        "proof": "בַּמֶּה הֶאֱרַכְתָּ יָמִים... וַתְּרָן הָיִיתִי בְּמָמוֹנִי — the Tanna asks 'through what did you lengthen your days' (= enter the hidden good), and the answer is: generosity with money. Package 1 is the gate/path; Package 3 is the destination.",
+        "from_package": 1,
+        "to_package": 3
+      },
+      {
+        "cause": "סִטְרָא דִּימִינָא",
+        "effect": "קָטֵגוֹר נַעֲשֶׂה סַנֵּגוֹר",
+        "type": "eitza",
+        "proof": "מִסִּטְרָא דִּימִינָא מֹחָא חִוָּרָא כְּכַסְפָּא... נַעֲשִׂין חִוָּרָא כְּכַסְפָּא — from the right side, the brain becomes white like silver, and the accusers become defenders. The right-side quality (Package 1) causes the transformation/neutralization of the evil forces (Package 2).",
+        "from_package": 1,
+        "to_package": 2,
+        "note": "This is the Torah's central eitza argument: the right-side quality neutralizes the blocking forces, transforming accuser into defender."
+      },
+      {
+        "cause": "מַחֲשָׁבוֹת זָרוֹת",
+        "effect": "הַטּוֹב הַגָּנוּז",
+        "type": "eitza",
+        "is_bad": 1,
+        "proof": "אִנּוּן נְטִירִין וּנְחָשִׁים וְעַקְרַבִּים מְבַלְבְּלִין מַחֲשַׁבְתֵּהּ, דְּלָא יֵעוֹל — the foreign thoughts confuse one's mind so that one cannot ENTER the hidden good. Package 2 blocks access to Package 3.",
+        "from_package": 2,
+        "to_package": 3,
+        "note": "Negative causation: foreign thoughts PREVENT access to the hidden good. This is the evil-side eitza flow."
+      }
+    ]
+  }
+}
