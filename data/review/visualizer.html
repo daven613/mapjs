@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Torah Package Visualizer — All Versions</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+
+  /* Header */
+  .header {
+    background: #1e293b;
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #334155;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .header h1 { font-size: 1.15rem; font-weight: 700; color: #f1f5f9; }
+  .header-sub { font-size: 0.78rem; color: #64748b; margin-top: 2px; }
+
+  /* Controls */
+  .controls {
+    background: #1e293b;
+    padding: 12px 28px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #334155;
+    position: sticky; top: 56px; z-index: 99;
+  }
+  .controls label { font-size: 0.78rem; color: #94a3b8; font-weight: 600; }
+  .controls select, .controls input {
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: #e2e8f0;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+  }
+  .controls select:focus, .controls input:focus { border-color: #3b82f6; outline: none; }
+  .filter-group { display: flex; align-items: center; gap: 6px; }
+  .stats-bar {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-right: auto;
+    padding: 4px 12px;
+    background: #0f172a;
+    border-radius: 6px;
+  }
+
+  /* Main layout */
+  .main { max-width: 1400px; margin: 0 auto; padding: 24px; }
+
+  /* Torah card */
+  .torah-section {
+    margin-bottom: 32px;
+    background: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #334155;
+  }
+  .torah-header {
+    padding: 14px 20px;
+    background: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #334155;
+  }
+  .torah-header:hover { background: #263348; }
+  .torah-num {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3b82f6;
+    min-width: 90px;
+  }
+  .torah-meta { font-size: 0.78rem; color: #94a3b8; }
+  .torah-badge {
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .badge-lm1 { background: #1e3a5f; color: #60a5fa; }
+  .badge-lm2 { background: #3b1f5e; color: #a78bfa; }
+  .badge-lm2-md { background: #5e1f3b; color: #f472b6; }
+  .badge-pkg-count { background: #1e3b34; color: #34d399; }
+  .chevron { margin-right: 0; font-size: 0.8rem; color: #64748b; transition: transform 0.2s; }
+  .torah-section.open .chevron { transform: rotate(90deg); }
+
+  .torah-body { display: none; padding: 0; }
+  .torah-section.open .torah-body { display: block; }
+
+  /* Version tabs inside a torah */
+  .version-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid #334155;
+  }
+  .version-tab {
+    padding: 10px 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: #64748b;
+    transition: all 0.15s;
+  }
+  .version-tab:hover { color: #e2e8f0; background: #263348; }
+  .version-tab.active { color: #3b82f6; border-bottom-color: #3b82f6; }
+  .version-content { display: none; padding: 16px 20px; }
+  .version-content.active { display: block; }
+
+  /* Package card */
+  .package {
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    overflow: hidden;
+  }
+  .package-header {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .package-header:hover { filter: brightness(1.1); }
+  .pkg-good .package-header { background: #0f2818; border-left: 3px solid #22c55e; }
+  .pkg-evil .package-header { background: #2a0f0f; border-left: 3px solid #ef4444; }
+  .pkg-neutral .package-header { background: #1a1a2e; border-left: 3px solid #a78bfa; }
+  .pkg-label { font-size: 0.95rem; font-weight: 600; direction: rtl; }
+  .pkg-label-en { font-size: 0.78rem; color: #94a3b8; margin-right: auto; }
+  .polarity-badge {
+    font-size: 0.6rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .pol-good { background: #166534; color: #86efac; }
+  .pol-evil { background: #7f1d1d; color: #fca5a5; }
+  .pol-neutral { background: #3b1f5e; color: #c4b5fd; }
+
+  .package-body { display: none; padding: 12px 16px; background: #0f172a; }
+  .package.open .package-body { display: block; }
+
+  .pkg-section-title {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #64748b;
+    margin: 12px 0 6px;
+  }
+  .pkg-section-title:first-child { margin-top: 0; }
+
+  .reason-text { font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-bottom: 8px; }
+
+  /* Nodes */
+  .node-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+  .node-chip {
+    font-size: 0.78rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    direction: rtl;
+    font-weight: 500;
+  }
+  .node-good { background: #14532d; color: #86efac; }
+  .node-evil { background: #450a0a; color: #fca5a5; }
+  .node-neutral { background: #312e81; color: #c4b5fd; }
+  .node-degree { font-size: 0.65rem; color: #94a3b8; margin-right: 4px; }
+
+  /* Merge notes */
+  .merge-note {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    padding: 6px 10px;
+    background: #1e293b;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    line-height: 1.4;
+    direction: ltr;
+  }
+
+  /* Source bechinas */
+  .source-bechina {
+    font-size: 0.8rem;
+    color: #fbbf24;
+    padding: 4px 10px;
+    background: #1a1506;
+    border-right: 2px solid #f59e0b;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    direction: rtl;
+    line-height: 1.5;
+  }
+
+  /* Mirror */
+  .mirror-text {
+    font-size: 0.78rem;
+    color: #c084fc;
+    padding: 6px 10px;
+    background: #1e1535;
+    border-radius: 6px;
+    border-right: 2px solid #a855f7;
+    direction: ltr;
+  }
+
+  /* Additions card */
+  .addition-item {
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    background: #1e293b;
+    border-radius: 6px;
+    border-left: 3px solid #f59e0b;
+  }
+  .addition-node { font-weight: 600; color: #fbbf24; direction: rtl; }
+  .addition-reason { font-size: 0.78rem; color: #94a3b8; margin-top: 4px; }
+  .addition-quote { font-size: 0.78rem; color: #fbbf24; font-style: italic; direction: rtl; margin-top: 4px; }
+  .addition-pkg { font-size: 0.68rem; color: #64748b; }
+
+  /* New packages */
+  .new-pkg-item {
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    background: #1e293b;
+    border-radius: 6px;
+    border-left: 3px solid #06b6d4;
+  }
+  .new-pkg-label { font-weight: 600; color: #22d3ee; direction: rtl; }
+  .new-pkg-just { font-size: 0.78rem; color: #94a3b8; margin-top: 4px; }
+
+  /* Stats card */
+  .stats-card {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+  .stat-item {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    background: #1e293b;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+  .stat-val { color: #3b82f6; font-weight: 700; }
+
+  /* Analysis notes */
+  .analysis-notes {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    background: #1e293b;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-top: 8px;
+    line-height: 1.5;
+    direction: ltr;
+  }
+
+  /* Good/Evil mirror section */
+  .mirror-section {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: #1e1535;
+    border-radius: 6px;
+  }
+
+  /* Expand all toggle */
+  .expand-btn {
+    background: #334155;
+    color: #e2e8f0;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .expand-btn:hover { background: #475569; }
+
+  /* Side-by-side compare mode */
+  .compare-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .compare-col { min-width: 0; }
+  .compare-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .compare-label-a { background: #3b1f5e; color: #a78bfa; }
+  .compare-label-b { background: #5e1f3b; color: #f472b6; }
+
+  .hidden { display: none !important; }
+
+  @media (max-width: 900px) {
+    .compare-container { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Torah Package Visualizer</h1>
+    <div class="header-sub">Review all package proposals — LM1, LM2 (our branch), LM2 (main-deploy)</div>
+  </div>
+</div>
+
+<div class="controls">
+  <div class="filter-group">
+    <label>Volume:</label>
+    <select id="volumeFilter">
+      <option value="all">All</option>
+      <option value="lm1">LM1 only</option>
+      <option value="lm2">LM2 only (our branch)</option>
+      <option value="lm2-md">LM2 only (main-deploy)</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label>Torah #:</label>
+    <input type="number" id="torahFilter" placeholder="e.g. 7" min="1" max="286" style="width:80px">
+  </div>
+  <div class="filter-group">
+    <label>Polarity:</label>
+    <select id="polarityFilter">
+      <option value="all">All</option>
+      <option value="good">Good only</option>
+      <option value="evil">Evil only</option>
+      <option value="neutral">Neutral only</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label>View:</label>
+    <select id="viewMode">
+      <option value="tabs">Tabbed</option>
+      <option value="compare">Side-by-side compare</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label>File type:</label>
+    <select id="fileTypeFilter">
+      <option value="packages">Packages</option>
+      <option value="additions">Additions</option>
+      <option value="new_packages">New Packages</option>
+      <option value="all">All types</option>
+    </select>
+  </div>
+  <button class="expand-btn" id="expandAll">Expand All</button>
+  <button class="expand-btn" id="collapseAll">Collapse All</button>
+  <div class="stats-bar" id="statsBar">Loading...</div>
+</div>
+
+<div class="main" id="mainContainer"></div>
+
+<script>
+// ---- Data loading ----
+const DATA = { lm1: {}, lm2: {}, 'lm2-md': {} };
+let allTorahNums = new Set();
+
+async function loadJSON(url) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+async function loadAllData() {
+  // We'll load file lists via a generated manifest
+  const manifest = await loadJSON('_visualizer_manifest.json');
+  if (!manifest) {
+    document.getElementById('mainContainer').innerHTML =
+      '<div style="color:#ef4444;padding:40px;text-align:center;font-size:1.1rem;">' +
+      'Missing _visualizer_manifest.json — please regenerate it.<br>' +
+      'Run: <code>python3 data/review/generate_manifest.py</code></div>';
+    return;
+  }
+
+  const promises = [];
+  for (const entry of manifest.files) {
+    const p = loadJSON(entry.path).then(data => {
+      if (!data) return;
+      const vol = entry.volume;
+      const key = `${entry.torah_num}_${entry.type}`;
+      if (!DATA[vol][entry.torah_num]) DATA[vol][entry.torah_num] = {};
+      DATA[vol][entry.torah_num][entry.type] = data;
+      allTorahNums.add(entry.torah_num);
+    });
+    promises.push(p);
+  }
+  await Promise.all(promises);
+  render();
+}
+
+// ---- Rendering ----
+function renderPackage(pkg, polarity) {
+  const pol = pkg.polarity || polarity || 'good';
+  const polClass = pol === 'evil' ? 'pkg-evil' : pol === 'neutral' ? 'pkg-neutral' : 'pkg-good';
+  const chipClass = pol === 'evil' ? 'node-evil' : pol === 'neutral' ? 'node-neutral' : 'node-good';
+  const polBadge = pol === 'evil' ? 'pol-evil' : pol === 'neutral' ? 'pol-neutral' : 'pol-good';
+
+  let nodesHTML = '';
+  const nodes = pkg.nodes || [];
+  const degrees = pkg.node_degrees || {};
+  nodes.forEach(n => {
+    const deg = degrees[n] !== undefined ? `<span class="node-degree">(${degrees[n]})</span>` : '';
+    nodesHTML += `<span class="node-chip ${chipClass}">${esc(n)} ${deg}</span>`;
+  });
+
+  let mergeHTML = '';
+  if (pkg.merge_notes && pkg.merge_notes.length) {
+    mergeHTML = '<div class="pkg-section-title">Merge Notes</div>';
+    pkg.merge_notes.forEach(mn => {
+      if (typeof mn === 'string') {
+        mergeHTML += `<div class="merge-note">${esc(mn)}</div>`;
+      } else if (mn.reason) {
+        const label = mn.merged_nodes ? mn.merged_nodes.join(', ') :
+                      mn.merged_component ? mn.merged_component : '';
+        mergeHTML += `<div class="merge-note"><strong>${esc(label)}</strong>: ${esc(mn.reason)}</div>`;
+      }
+    });
+  }
+
+  let bechinaHTML = '';
+  if (pkg.source_bechinas && pkg.source_bechinas.length) {
+    bechinaHTML = '<div class="pkg-section-title">Source Bechinas</div>';
+    pkg.source_bechinas.forEach(sb => {
+      bechinaHTML += `<div class="source-bechina">${esc(sb)}</div>`;
+    });
+  }
+
+  let mirrorHTML = '';
+  if (pkg.mirror) {
+    mirrorHTML = `<div class="pkg-section-title">Good/Evil Mirror</div><div class="mirror-text">${esc(pkg.mirror)}</div>`;
+  }
+  if (pkg.good_evil_mirror && typeof pkg.good_evil_mirror === 'string') {
+    mirrorHTML = `<div class="pkg-section-title">Good/Evil Mirror</div><div class="mirror-text">${esc(pkg.good_evil_mirror)}</div>`;
+  }
+
+  return `
+    <div class="package ${polClass}" onclick="this.classList.toggle('open')">
+      <div class="package-header">
+        <span class="polarity-badge ${polBadge}">${esc(pol)}</span>
+        <span class="pkg-label">${esc(pkg.label || '')}</span>
+        <span class="pkg-label-en">${esc(pkg.label_en || '')}</span>
+        <span style="font-size:0.7rem;color:#64748b">${nodes.length} nodes</span>
+      </div>
+      <div class="package-body">
+        <div class="pkg-section-title">Reason</div>
+        <div class="reason-text">${esc(pkg.reason || '')}</div>
+        <div class="pkg-section-title">Nodes (degree)</div>
+        <div class="node-grid">${nodesHTML}</div>
+        ${bechinaHTML}
+        ${mergeHTML}
+        ${mirrorHTML}
+      </div>
+    </div>`;
+}
+
+function renderAdditions(data) {
+  if (!data || !data.additions || !data.additions.length) return '<div class="reason-text">No additions proposed.</div>';
+  let html = '';
+  data.additions.forEach(a => {
+    const quote = a.source_quote ? `<div class="addition-quote">"${esc(a.source_quote)}"</div>` : '';
+    html += `
+      <div class="addition-item">
+        <div class="addition-pkg">→ Package ${a.package_id || '?'}${a.package_label ? ' — ' + esc(a.package_label) : ''}</div>
+        <div class="addition-node">${esc(a.node_text || a.node_id || '')}</div>
+        <div class="addition-reason">${esc(a.reason || '')}</div>
+        ${quote}
+      </div>`;
+  });
+
+  // Analysis notes
+  if (data.analysis_notes) {
+    const an = data.analysis_notes;
+    let notesHTML = '<div class="pkg-section-title" style="margin-top:16px">Analysis Notes</div><div class="analysis-notes">';
+    for (const [k, v] of Object.entries(an)) {
+      if (Array.isArray(v)) {
+        notesHTML += `<div><strong>${esc(k)}:</strong> ${v.map(x => typeof x === 'string' ? esc(x) : esc(JSON.stringify(x))).join(', ')}</div>`;
+      } else if (typeof v === 'object') {
+        notesHTML += `<div><strong>${esc(k)}:</strong> ${esc(JSON.stringify(v))}</div>`;
+      } else {
+        notesHTML += `<div><strong>${esc(k)}:</strong> ${esc(String(v))}</div>`;
+      }
+    }
+    notesHTML += '</div>';
+    html += notesHTML;
+  }
+  return html;
+}
+
+function renderNewPackages(data) {
+  if (!data) return '<div class="reason-text">No data.</div>';
+  let html = '';
+  if (data.verdict) {
+    html += `<div class="reason-text"><strong>Verdict:</strong> ${esc(data.verdict)}</div>`;
+  }
+  if (data.new_packages && data.new_packages.length) {
+    data.new_packages.forEach(np => {
+      const nodes = np.nodes || [];
+      const nodesStr = nodes.map(n => typeof n === 'string' ? n : n.node_id || JSON.stringify(n)).join(', ');
+      const quotes = (np.source_quotes || []).map(q => `<div class="source-bechina">${esc(q)}</div>`).join('');
+      html += `
+        <div class="new-pkg-item">
+          <div class="new-pkg-label">${esc(np.label || '')} ${np.label_en ? '— ' + esc(np.label_en) : ''}</div>
+          <div style="font-size:0.7rem;color:#64748b">${esc(np.polarity || '')} · ${nodes.length} nodes: ${esc(nodesStr)}</div>
+          <div class="new-pkg-just">${esc(np.justification || np.reason || '')}</div>
+          ${quotes}
+        </div>`;
+    });
+  } else {
+    html += '<div class="reason-text">No new packages proposed.</div>';
+  }
+  if (data.observations) {
+    html += `<div class="analysis-notes" style="margin-top:8px"><strong>Observations:</strong> ${esc(typeof data.observations === 'string' ? data.observations : JSON.stringify(data.observations))}</div>`;
+  }
+  return html;
+}
+
+function renderStats(stats) {
+  if (!stats) return '';
+  let html = '<div class="stats-card">';
+  for (const [k, v] of Object.entries(stats)) {
+    if (typeof v === 'string' && v.length > 60) continue; // skip long notes in stat chips
+    html += `<div class="stat-item">${esc(k)}: <span class="stat-val">${esc(String(v))}</span></div>`;
+  }
+  html += '</div>';
+  return html;
+}
+
+function renderVersionContent(volKey, torahData, fileType) {
+  if (!torahData) return '<div class="reason-text" style="color:#64748b">No data for this version.</div>';
+
+  if (fileType === 'all') {
+    let html = '';
+    if (torahData.packages) {
+      html += '<div class="pkg-section-title" style="color:#3b82f6;font-size:0.8rem;">PACKAGES</div>';
+      html += renderVersionContent(volKey, torahData, 'packages');
+    }
+    if (torahData.additions) {
+      html += '<div class="pkg-section-title" style="color:#f59e0b;font-size:0.8rem;margin-top:16px;">ADDITIONS</div>';
+      html += renderVersionContent(volKey, torahData, 'additions');
+    }
+    if (torahData.new_packages) {
+      html += '<div class="pkg-section-title" style="color:#06b6d4;font-size:0.8rem;margin-top:16px;">NEW PACKAGES</div>';
+      html += renderVersionContent(volKey, torahData, 'new_packages');
+    }
+    return html || '<div class="reason-text" style="color:#64748b">No data for this version.</div>';
+  }
+
+  const data = torahData[fileType];
+  if (!data) return '<div class="reason-text" style="color:#64748b">No ' + fileType + ' file for this version.</div>';
+
+  if (fileType === 'packages') {
+    let html = '';
+    if (data.meta && data.meta.notes) {
+      html += `<div class="analysis-notes" style="margin-bottom:12px"><strong>Notes:</strong> ${esc(data.meta.notes)}</div>`;
+    }
+    if (data.meta && data.meta.note) {
+      html += `<div class="analysis-notes" style="margin-bottom:12px"><strong>Note:</strong> ${esc(data.meta.note)}</div>`;
+    }
+    if (data.meta && data.meta.dataset_note) {
+      html += `<div class="analysis-notes" style="margin-bottom:12px"><strong>Dataset note:</strong> ${esc(data.meta.dataset_note)}</div>`;
+    }
+    (data.packages || []).forEach(pkg => { html += renderPackage(pkg); });
+    if (data.good_evil_mirror) {
+      html += '<div class="mirror-section"><div class="pkg-section-title">Good/Evil Mirror Structure</div>';
+      if (typeof data.good_evil_mirror === 'object') {
+        if (data.good_evil_mirror.description) html += `<div class="mirror-text" style="margin-bottom:6px">${esc(data.good_evil_mirror.description)}</div>`;
+        (data.good_evil_mirror.mirrors || []).forEach(m => {
+          html += `<div class="mirror-text" style="margin-bottom:4px"><strong>Good:</strong> ${esc(m.good || '')}<br><strong>Evil:</strong> ${esc(m.evil || '')}</div>`;
+        });
+      } else {
+        html += `<div class="mirror-text">${esc(String(data.good_evil_mirror))}</div>`;
+      }
+      html += '</div>';
+    }
+    html += renderStats(data.stats);
+    return html;
+  }
+
+  if (fileType === 'additions') return renderAdditions(data);
+  if (fileType === 'new_packages') return renderNewPackages(data);
+  return '';
+}
+
+function render() {
+  const volFilter = document.getElementById('volumeFilter').value;
+  const torahFilter = document.getElementById('torahFilter').value;
+  const polarityFilter = document.getElementById('polarityFilter').value;
+  const viewMode = document.getElementById('viewMode').value;
+  const fileType = document.getElementById('fileTypeFilter').value;
+
+  const sortedNums = [...allTorahNums].sort((a, b) => a - b);
+  let html = '';
+  let shown = 0;
+
+  for (const num of sortedNums) {
+    if (torahFilter && parseInt(torahFilter) !== num) continue;
+
+    const lm1 = DATA.lm1[num];
+    const lm2 = DATA.lm2[num];
+    const lm2md = DATA['lm2-md'][num];
+
+    // Volume filter
+    if (volFilter === 'lm1' && !lm1) continue;
+    if (volFilter === 'lm2' && !lm2) continue;
+    if (volFilter === 'lm2-md' && !lm2md) continue;
+    if (volFilter === 'all' && !lm1 && !lm2 && !lm2md) continue;
+
+    // Polarity filter: check if any package matches
+    if (polarityFilter !== 'all') {
+      let hasPol = false;
+      for (const vol of [lm1, lm2, lm2md]) {
+        if (vol && vol.packages && vol.packages.packages) {
+          hasPol = hasPol || vol.packages.packages.some(p => p.polarity === polarityFilter);
+        }
+      }
+      if (!hasPol) continue;
+    }
+
+    shown++;
+
+    // Count packages per version
+    const lm1Count = lm1 && lm1.packages ? (lm1.packages.packages || []).length : 0;
+    const lm2Count = lm2 && lm2.packages ? (lm2.packages.packages || []).length : 0;
+    const lm2mdCount = lm2md && lm2md.packages ? (lm2md.packages.packages || []).length : 0;
+
+    const badges = [];
+    if (lm1) badges.push(`<span class="torah-badge badge-lm1">LM1 · ${lm1Count} pkg</span>`);
+    if (lm2) badges.push(`<span class="torah-badge badge-lm2">LM2-ours · ${lm2Count} pkg</span>`);
+    if (lm2md) badges.push(`<span class="torah-badge badge-lm2-md">LM2-main · ${lm2mdCount} pkg</span>`);
+
+    const versions = [];
+    if (lm1 && (volFilter === 'all' || volFilter === 'lm1')) versions.push({ key: 'lm1', label: 'LM1', data: lm1, cls: 'badge-lm1' });
+    if (lm2 && (volFilter === 'all' || volFilter === 'lm2')) versions.push({ key: 'lm2', label: 'LM2 (our branch)', data: lm2, cls: 'badge-lm2' });
+    if (lm2md && (volFilter === 'all' || volFilter === 'lm2-md')) versions.push({ key: 'lm2-md', label: 'LM2 (main-deploy)', data: lm2md, cls: 'badge-lm2-md' });
+
+    if (viewMode === 'compare' && versions.length >= 2) {
+      // Side by side
+      let cols = '';
+      for (const v of versions) {
+        const labelCls = v.key === 'lm2' ? 'compare-label-a' : v.key === 'lm2-md' ? 'compare-label-b' : 'compare-label-a';
+        cols += `<div class="compare-col">
+          <div class="compare-label ${labelCls}">${esc(v.label)}</div>
+          ${renderVersionContent(v.key, v.data, fileType)}
+        </div>`;
+      }
+      html += `
+        <div class="torah-section open" data-torah="${num}">
+          <div class="torah-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="chevron">▶</span>
+            <span class="torah-num">Torah #${num}</span>
+            ${badges.join(' ')}
+          </div>
+          <div class="torah-body">
+            <div class="compare-container">${cols}</div>
+          </div>
+        </div>`;
+    } else {
+      // Tabbed view
+      let tabsHTML = '';
+      let contentHTML = '';
+      versions.forEach((v, i) => {
+        const active = i === 0 ? 'active' : '';
+        tabsHTML += `<div class="version-tab ${active}" data-vol="${v.key}" data-torah="${num}" onclick="switchTab(this)">${v.label}</div>`;
+        contentHTML += `<div class="version-content ${active}" data-vol="${v.key}" data-torah="${num}">
+          ${renderVersionContent(v.key, v.data, fileType)}
+        </div>`;
+      });
+
+      html += `
+        <div class="torah-section" data-torah="${num}">
+          <div class="torah-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="chevron">▶</span>
+            <span class="torah-num">Torah #${num}</span>
+            ${badges.join(' ')}
+          </div>
+          <div class="torah-body">
+            <div class="version-tabs">${tabsHTML}</div>
+            ${contentHTML}
+          </div>
+        </div>`;
+    }
+  }
+
+  document.getElementById('mainContainer').innerHTML = html;
+  document.getElementById('statsBar').textContent =
+    `Showing ${shown} of ${sortedNums.length} torahs · LM1: ${Object.keys(DATA.lm1).length} · LM2-ours: ${Object.keys(DATA.lm2).length} · LM2-main: ${Object.keys(DATA['lm2-md']).length}`;
+}
+
+function switchTab(el) {
+  const torah = el.dataset.torah;
+  const vol = el.dataset.vol;
+  const section = el.closest('.torah-section');
+  section.querySelectorAll('.version-tab').forEach(t => t.classList.remove('active'));
+  section.querySelectorAll('.version-content').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  section.querySelector(`.version-content[data-vol="${vol}"]`).classList.add('active');
+}
+
+function esc(s) {
+  if (!s) return '';
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// Event listeners
+document.getElementById('volumeFilter').addEventListener('change', render);
+document.getElementById('torahFilter').addEventListener('input', render);
+document.getElementById('polarityFilter').addEventListener('change', render);
+document.getElementById('viewMode').addEventListener('change', render);
+document.getElementById('fileTypeFilter').addEventListener('change', render);
+document.getElementById('expandAll').addEventListener('click', () => {
+  document.querySelectorAll('.torah-section').forEach(s => s.classList.add('open'));
+  document.querySelectorAll('.package').forEach(p => p.classList.add('open'));
+});
+document.getElementById('collapseAll').addEventListener('click', () => {
+  document.querySelectorAll('.torah-section').forEach(s => s.classList.remove('open'));
+  document.querySelectorAll('.package').forEach(p => p.classList.remove('open'));
+});
+
+// Load
+loadAllData();
+</script>
+</body>
+</html>
