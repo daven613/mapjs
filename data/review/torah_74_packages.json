@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "source": "Torah #74",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #74 contains 39 unique bechina edges (43 raw rows including duplicates) across reference===74 in torahData.js. These form 2 large connected components and 5 isolated 2-node pairs. The 5 small pairs are merged into the nearest large component based on shared nature (bechina), not causal flow (eitza). Component A (יצחק-centered) represents the domain of holy judgment, smallness-of-mind, darkness-becoming-light — the קַטְנוּת pole. Component B (יעקב-centered) represents wisdom-speech-healing-sun — the גַּדְלוּת pole. The evil cluster (סטרא דמסאבא, דינא דמסאבא, אבימלך, נחש, עשו, סיגים) is merged into Component A as the corrupt mirror of the judgment domain. Component A also absorbs אברהם-חסד and תפלה-פנים as they share the nature of the din/kedusha domain."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 74,
+      "label": "יִצְחָק וְהַדִּין הַקָּדוֹשׁ — קַטְנוּת וְהַחֹשֶׁךְ",
+      "label_en": "Yitzchak and the Holy Judgment — Smallness and Darkness",
+      "polarity": "good",
+      "reason": "This is the core positive cluster of Torah #74's first movement. The Rebbe establishes a chain of bechina identities all sharing one essential nature: the dimension of holy judgment (דִּינָא קַדִּישָׁא), which is the starting state of every person's spiritual journey — the state of קַטְנוּת (contracted consciousness). Isaac IS the holy judgment; holy judgment IS the divine attribute Elohim; Elohim IS the Name of judgment; Malkhut IS judgment (dina d'malkhuta dina); Sarah IS malkhut; the moon (levanah) IS Yitzchak; the darkness of Isaac's dimmed eyes IS night; night IS the soul (nefesh) in its lower state; Gevurah IS Pachad Yitzchak; the prayer marker 'Hoshana Rabba' IS speech-without-knowledge (dibur b'lo da'at) = the state of din. All these concepts share one essential nature: the holy judgment that arrives as an apparent distancing, which is in reality the starting point of drawing near. The dominant node is יצחק with the highest degree of connections (5 direct bechina edges). אברהם-חסד is merged here because in the Torah's teaching, the holy judgment (Isaac) IS born from and contains Abraham's love/chesed — the very proof-text 'Abraham begat Isaac' is the bechina that connects chesed and din. The nature of the חסד here is not separate from the din-cluster but is its source and inner clothing. תפלה-פנים is merged here because the Torah explicitly presents prayer as the diagnostic sign (סימן) distinguishing dina d'kadisha from dina d'misa'ava — it belongs to the judgment domain's resolution mechanism and shares the nature of divine face/presence that is either revealed or hidden in the din.",
+      "dominant_node": "יצחק",
+      "nodes": [
+        "יצחק",
+        "אלהים",
+        "גבורה",
+        "דין",
+        "דינא קדישא",
+        "לבנה",
+        "נפש",
+        "לילה",
+        "\"ותכהין עיניו מראות\"",
+        "חשך",
+        "הושענא רבא",
+        "דבור בלא דעה",
+        "ערבה",
+        "מלכות",
+        "שרה",
+        "דינא דמלכותא דינא",
+        "\"את אשר יאהב ה יוכיח\"",
+        "פחד יצחק",
+        "אברהם",
+        "חסד",
+        "תפלה",
+        "פנים"
+      ],
+      "node_degrees": {
+        "יצחק": 5,
+        "דין": 4,
+        "אלהים": 3,
+        "דינא קדישא": 3,
+        "גבורה": 2,
+        "הושענא רבא": 2,
+        "דבור בלא דעה": 2,
+        "מלכות": 2,
+        "נפש": 2,
+        "לילה": 2,
+        "\"ותכהין עיניו מראות\"": 2,
+        "לבנה": 1,
+        "דינא דמלכותא דינא": 1,
+        "\"את אשר יאהב ה יוכיח\"": 1,
+        "שרה": 1,
+        "פחד יצחק": 1,
+        "חשך": 1,
+        "ערבה": 1,
+        "אברהם": 1,
+        "חסד": 1,
+        "תפלה": 1,
+        "פנים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["אברהם", "חסד"],
+          "reason": "This 2-node pair shares its essential nature with the Package 1 cluster. The Torah's central bechina in this domain is 'Abraham begat Isaac' — Abraham (chesed) IS the source and inner clothing of the holy judgment (Isaac/din). In Torah #74 the chesed is not a separate positive domain but the hidden nature WITHIN the din cluster: 'כִּי בֶּאֱמֶת בְּזֶה הַדִּין מְלֻבָּשׁ חֶסֶד גָּדוֹל'. The bechina אברהם=חסד is the direct explanation of why the holy judgment IS loving discipline. Nearest large component by shared nature is Package 1 (the din-Isaac cluster)."
+        },
+        {
+          "merged_nodes": ["תפלה", "פנים"],
+          "reason": "The Rebbe establishes תפלה IS פנים (Hezekiah 'turned his face and prayed'). This 2-node pair belongs in the Package 1 domain because in Torah #74 prayer serves as the diagnostic sign (סִימָן) distinguishing holy judgment from impure judgment — it is the indicator of whether one is inside the dina d'kadisha domain or outside it. Prayer/face belongs to the judgment cluster as its test and measure, not to the wisdom/healing cluster. Shared nature: the face of divine presence that is either revealed or hidden in the experience of judgment."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 74,
+      "label": "יַעֲקֹב וְהַחָכְמָה — גַּדְלוּת וּרְפוּאַת הַנֶּפֶשׁ",
+      "label_en": "Yaakov and Wisdom — Greatness and the Healing of the Soul",
+      "polarity": "good",
+      "reason": "This is the core positive cluster of Torah #74's second movement — the resolution and goal. All concepts share one essential nature: the dimension of wisdom-consciousness (מֹחִין דְּגַדְלוּת), which IS the healing of the soul, which IS the sun rising (Yaakov = the sun), which IS speech-with-knowledge (Simchat Torah), which IS the healing tree (ilana d'asuta), which IS Torah itself. Yaakov IS the sun (chamah); Yaakov IS the sky/shamayim; shamayim IS wisdom; wisdom IS gadlut of mind; gadlut IS healing of the soul; healing IS 'sun of righteousness with healing in its wings'; the 'Tree of Healing' IS Torah IS speech-with-knowledge IS Simchat Torah. Fatherly wisdom (Abba = Chokhmah) and Yaakov's sweetening role (hamtakat ha-din) are also bechina aspects of the same wisdom-domain. The dominant node is יעקב with the highest degree (6 direct bechina edges: davar b'da'at, chamah, shemesh x2, rachamim, shamayim, hamtakat). The concept of צדקה (speech-with-knowledge elevated from tzedek) belongs here because its bechina identity in this Torah is explicitly the domain of speech-with-wisdom (dibur b'yedia).",
+      "dominant_node": "יעקב",
+      "nodes": [
+        "יעקב",
+        "דבור בדעה",
+        "אילנא דאסותא",
+        "תורה",
+        "צדקה",
+        "שמחת תורה",
+        "חמה",
+        "שמש",
+        "רחמים",
+        "שמים",
+        "חכמה",
+        "אבא",
+        "מחין דגדלות",
+        "רפואת הנפש",
+        "\"שמש צדקה ומרפא בכנפיה\"",
+        "משיבת נפש",
+        "המתקת הדין של יצחק"
+      ],
+      "node_degrees": {
+        "יעקב": 6,
+        "דבור בדעה": 4,
+        "רפואת הנפש": 3,
+        "חכמה": 3,
+        "אילנא דאסותא": 2,
+        "שמחת תורה": 2,
+        "שמש": 2,
+        "מחין דגדלות": 2,
+        "שמים": 2,
+        "תורה": 1,
+        "צדקה": 1,
+        "חמה": 1,
+        "רחמים": 1,
+        "אבא": 1,
+        "\"שמש צדקה ומרפא בכנפיה\"": 1,
+        "משיבת נפש": 1,
+        "המתקת הדין של יצחק": 1
+      }
+    },
+    {
+      "id": 3,
+      "torah_ref": 74,
+      "label": "סִטְרָא דִּמְסָאֳבָא — הַדִּין הַטָּמֵא",
+      "label_en": "The Impure Side — The Defiled Judgment",
+      "polarity": "evil",
+      "reason": "This is the evil mirror cluster of Torah #74. The Rebbe establishes two parallel 2-node pairs and one further 2-node pair that together constitute the domain of dina d'misa'ava — the impure/defiled judgment. (1) סטרא דמסאבא IS Avimelech: the claim that Isaac's din originates from the impure side is the sitra d'misa'ava, embodied in Avimelech. (2) דינא דמסאבא IS 'the serpent injected filth into Eve': the impure judgment's prototype is the primordial defilement of the serpent. (3) עשו IS 'the dross and refuse': Esau IS the absolute dross/dregs that flows downward from Isaac's judgment — the evil separation from the holy din. These three pairs are united by one shared nature: the impure/evil side of judgment — the dimension that looks like judgment but is actually the sitra achra rather than dina d'kadisha. In the Torah's structure, these concepts are always presented as the negative pole contrasting with the holy judgment (Isaac/dina d'kadisha). They form one evil cluster because they are all bechina-aspects of the same corrupt dimension: impure judgment, its archetype (Avimelech), its cosmic root (the serpent), and its human embodiment (Esau). Dominant node is סטרא דמסאבא (which is the most abstract formulation covering all the others).",
+      "dominant_node": "סטרא דמסאבא",
+      "nodes": [
+        "סטרא דמסאבא",
+        "אבימלך",
+        "דינא דמסאבא",
+        "נחש הטיל זהמא בחוה",
+        "עשו",
+        "סיגים והפסלת גמור"
+      ],
+      "node_degrees": {
+        "סטרא דמסאבא": 1,
+        "אבימלך": 1,
+        "דינא דמסאבא": 1,
+        "נחש הטיל זהמא בחוה": 1,
+        "עשו": 1,
+        "סיגים והפסלת גמור": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["סטרא דמסאבא", "אבימלך", "דינא דמסאבא", "נחש הטיל זהמא בחוה", "עשו", "סיגים והפסלת גמור"],
+          "reason": "Three separate 2-node bechina pairs in the dataset, each isolated. All three share the essential nature of the evil/impure judgment domain: (A) סטרא דמסאבא=אבימלך: the historical embodiment of the impure claim against Isaac's lineage. (B) דינא דמסאבא=נחש הטיל זהמא בחוה: the cosmic root of impure judgment — the serpent's defilement. (C) עשו=סיגים: the human-dimensional consequence of the impure judgment — total dross. Per the framework, small (1-2 node) isolated components merge into thematically nearest package based on shared nature. All three pairs share the nature of the evil/impure judgment and together constitute the evil mirror of Package 1 (the holy judgment domain). This creates the good/evil mirror structure the framework mandates: Package 1 = dina d'kadisha; Package 3 = dina d'misa'ava. The structure is parallel: both are 'din' — one originates from Abraham/chesed and leads toward healing, the other originates from the serpent/Avimelech and leads to dross."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 43,
+    "unique_bechina_edges_after_dedup": 39,
+    "total_eitza_edges_in_dataset": 6,
+    "total_nodes_in_packages": 45,
+    "total_packages": 3,
+    "raw_bechina_components": 7,
+    "components_detail": {
+      "large_A_yitzchak": 18,
+      "large_B_yaakov": 17,
+      "small_avraham_chesed": 2,
+      "small_sitra_avimekech": 2,
+      "small_dina_dimsa_nachash": 2,
+      "small_esav_sigim": 2,
+      "small_tefila_panim": 2
+    },
+    "merges_performed": [
+      "אברהם+חסד → Package 1 (shared nature: chesed within din)",
+      "תפלה+פנים → Package 1 (shared nature: diagnostic of din state)",
+      "סטרא דמסאבא+אבימלך → Package 3 (shared nature: evil judgment)",
+      "דינא דמסאבא+נחש הטיל זהמא בחוה → Package 3 (shared nature: root of impure judgment)",
+      "עשו+סיגים והפסלת גמור → Package 3 (shared nature: dross/evil output of impure judgment)"
+    ],
+    "good_evil_mirror_structure": "Package 1 (dina d'kadisha / Isaac / holy judgment) mirrors Package 3 (dina d'misa'ava / Avimelech-serpent / impure judgment). Package 2 (Yaakov / wisdom / healing) is the positive resolution of the Package 1 → Package 2 journey."
+  }
+}

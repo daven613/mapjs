@@ -1,0 +1,129 @@
+{
+  "torah_ref": 49,
+  "new_packages": [
+    {
+      "id": "torah_49_pkg_new_lev",
+      "torah_ref": 49,
+      "label": "לֵב וְחָלָל וְחָכְמָה",
+      "label_en": "Heart, the Void, and Chokhma",
+      "polarity": "good",
+      "reason": "This is the most central conceptual cluster in Torah 49 — the Rebbe's foundational teaching about the heart as the chalal panui, the vessel of divine wisdom, and the site of creation. All proposed nodes share the essential nature of 'the heart as the creative void that mirrors the primordial chalal panui of creation.' Torah 49's radical innovation is the equation: 'the human heart in its tzimtzum state IS the chalal panui of creation, and through it the midot/worlds are revealed.' The heart, the divine wisdom within it (חכמה שבלב), the good thoughts that constitute that wisdom (מחשבות טובות), the yetzer tov that those thoughts ARE, the צוּר לְבָבִי (the heart-as-sculptor-of-midot), and the chalal panui of creation itself — all are identified as the same reality from different angles. The midot/worlds are the manifestation of this chalal. This domain is the POSITIVE heart-wisdom domain, the foundation of all avodah in this Torah. It requires the additions listed in torah_49_additions.json (additions 1-6).",
+      "dominant_node": "לב",
+      "proposed_nodes": [
+        "לב",
+        "חכמה שבלב",
+        "מחשבות טובות",
+        "יצר טוב",
+        "צוּר לְבָבִי",
+        "חלל הפנוי",
+        "בריאת העולמות"
+      ],
+      "proposed_edges": [
+        {"node1": "לב", "node2": "חכמה שבלב", "basis": "הלב הוא הצייר של המדות, היינו החכמה שבלב (line 5)"},
+        {"node1": "חכמה שבלב", "node2": "מחשבות טובות", "basis": "כשחושב מחשבות טובות, שזהו בחינת חכמה שבלב (line 30)"},
+        {"node1": "מחשבות טובות", "node2": "יצר טוב", "basis": "מחשבות טובות הם יצר טוב (line 6)"},
+        {"node1": "לב", "node2": "חלל הפנוי", "basis": "ולבי חלל בקרבי — שזהו סוד חלל הפנוי (line 28)"},
+        {"node1": "חלל הפנוי", "node2": "בריאת העולמות", "basis": "בריאת העולמות ועבודת השם... הם בחינה אחת ממש (line 33)"},
+        {"node1": "לב", "node2": "צוּר לְבָבִי", "basis": "הלב הוא הצייר — צוּר לְבָבִי (line 5, reading tzur=tzayar)"}
+      ],
+      "node_degrees_proposed": {
+        "לב": 3,
+        "חכמה שבלב": 2,
+        "חלל הפנוי": 2,
+        "מחשבות טובות": 2,
+        "יצר טוב": 1,
+        "צוּר לְבָבִי": 1,
+        "בריאת העולמות": 1
+      },
+      "requires_additions": true,
+      "addition_refs": ["addition_1", "addition_2", "addition_3", "addition_4", "addition_5", "addition_6"],
+      "mirror_of": "torah_49_pkg_evil_lev",
+      "mirror_structure": {
+        "חכמה שבלב (good)": "טפשות הלב (evil) — wisdom vs. stupidity in the same heart",
+        "מחשבות טובות (good)": "מחשבות רעות (evil) — good vs. evil thoughts as yetzer",
+        "יצר טוב (good)": "יצר הרע (evil) — the two yetzarim of Bereshit 2:7",
+        "חלל הפנוי (good)": "ערלת לב (evil) — the open chalal vs. the closed/blocked heart",
+        "לב as tziyur (good)": "לב as atur/blocked (evil) — creating midot vs. corrupting creation"
+      },
+      "source_lines": [5, 6, 7, 9, 10, 11, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 93, 94, 95],
+      "threshold_check": {
+        "qualifies": true,
+        "reasoning": "7 proposed nodes, all with explicit bechina language in the source text. This is not a marginal domain — it IS the primary theoretical domain of the entire Torah. The Torah opens (§א), develops (§ב-ד), summarizes (§ד lines 23-33), and closes (§ז lines 93-98) with this cluster. It qualifies overwhelmingly as an independent package. The reason it is absent from the dataset is likely that this cluster is the background framework of the teaching rather than a secondary derived identity — but all the bechina equalities are explicit and clear.",
+        "minimum_nodes_for_package": 3,
+        "actual_proposed_nodes": 7
+      }
+    },
+    {
+      "id": "torah_49_pkg_evil_lev",
+      "torah_ref": 49,
+      "label": "יֵצֶר הָרָע וְטִפְּשׁוּת הַלֵּב",
+      "label_en": "The Evil Inclination and the Dullness of the Heart",
+      "polarity": "evil",
+      "reason": "This is the evil mirror of Package 'torah_49_pkg_new_lev'. The same heart that can be the chalal panui of creation — when corrupted — becomes the closed, blocked, orlat-lev that destroys creation and corrupts the midot. Torah 49 §א explicitly constructs this mirror: 'ויצר' in Bereshit is written with two yuds = two yetzarim — one good (good thoughts = chokhma shebalev) and one evil (evil thoughts = yetzer hara = stupidity = arlat lev). The Rebbe equates: evil thoughts (מחשבות רעות) = yetzer hara = the stupidity/dullness of the heart (טפשות הלב) = the arlat-lev (the blocked heart). When a person thinks evil thoughts, 'he plugs the chalal of the heart' — making the heart impermeable (arlat lev = blocked = cannot receive midot). This corrupts creation itself. All nodes are expressions of the same evil domain: the heart's capacity to be closed, stupid, and blocking — the anti-wisdom that prevents the manifestation of midot/worlds.",
+      "dominant_node": "יצר הרע",
+      "proposed_nodes": [
+        "יצר הרע",
+        "מחשבות רעות",
+        "טפשות הלב",
+        "ערלת לב"
+      ],
+      "proposed_edges": [
+        {"node1": "מחשבות רעות", "node2": "יצר הרע", "basis": "מחשבות רעות הם יצר הרע (line 6)"},
+        {"node1": "יצר הרע", "node2": "טפשות הלב", "basis": "הַיֵּצֶר הָרָע הוּא טִפְּשׁוּת הַלֵּב (line 10)"},
+        {"node1": "טפשות הלב", "node2": "ערלת לב", "basis": "ומלתם את ערלת לבבכם — תרגומו: יַת טִפְּשׁוּת לִבְּכוֹן (line 10)"}
+      ],
+      "node_degrees_proposed": {
+        "יצר הרע": 2,
+        "מחשבות רעות": 1,
+        "טפשות הלב": 2,
+        "ערלת לב": 1
+      },
+      "requires_additions": true,
+      "addition_refs": ["addition_7", "addition_8", "addition_9"],
+      "mirror_of": "torah_49_pkg_new_lev",
+      "source_lines": [6, 10, 31, 37],
+      "threshold_check": {
+        "qualifies": true,
+        "reasoning": "4 proposed nodes, all with explicit bechina language. Forms a clear independent evil domain (the closed/evil heart as the anti-wisdom). Directly mirrors the good heart-cluster. Even the minimum 3 nodes (יצר הרע, מחשבות רעות, ערלת לב) constitute a coherent independent evil domain with bechina language.",
+        "minimum_nodes_for_package": 3,
+        "actual_proposed_nodes": 4
+      }
+    },
+    {
+      "id": "torah_49_pkg_tzaddik",
+      "torah_ref": 49,
+      "label": "הַצַּדִּיק וְהַשֶּׁמֶשׁ",
+      "label_en": "The Tzaddik and the Sun",
+      "polarity": "good",
+      "reason": "Torah 49 §ז (lines 69-82) develops a distinct domain about the tzaddik as the sun whose light/revelation depends entirely on Israel. The Tzaddik IS the sun (explicit bechina: 'הצדיק נקרא שמש'). The tzaddik's rising/setting = succession of tzaddikim. The ohel (tent = the tzaddik's shining, from 'לַשֶּׁמֶשׁ שָׂם אֹהֶל בָּהֶם' — 'ohel = his shining, like behilo nero'). Israel = the vehicle of the tzaddik's revelation ('bahhem' = through them = through Israel). The chuppah = the cover/concealment that hides the tzaddik when Israel enters foreign wisdoms. This constitutes an independent domain: the tzaddik-as-sun and the conditions for his revelation-concealment. Requires at minimum the tzaddik=shemesh addition. With at least 3 bechina statements (tzaddik=shemesh; ohel=shining; chuppah=cover), it qualifies for independent package status if the additions are accepted.",
+      "dominant_node": "צדיק",
+      "proposed_nodes": [
+        "צדיק",
+        "שמש",
+        "אהל — זריחתו של הצדיק",
+        "חפה — המכסה שעל הצדיק"
+      ],
+      "proposed_edges": [
+        {"node1": "צדיק", "node2": "שמש", "basis": "הצדיק נקרא שמש (line 70)"},
+        {"node1": "אהל — זריחתו של הצדיק", "node2": "שמש", "basis": "לשמש שם אהל בהם — אהל לשון זריחתו (line 71, reading ohel=shining from Iyov 29)"}
+      ],
+      "node_degrees_proposed": {
+        "צדיק": 1,
+        "שמש": 2,
+        "אהל — זריחתו של הצדיק": 1,
+        "חפה — המכסה שעל הצדיק": 1
+      },
+      "requires_additions": true,
+      "addition_refs": ["addition_11"],
+      "source_lines": [69, 70, 71, 72, 73, 74, 82],
+      "threshold_check": {
+        "qualifies": "conditional",
+        "reasoning": "Only 1 confirmed bechina addition is listed (tzaddik=shemesh). The ohel=shining is also a bechina reading (line 71: 'אהל לשון זריחתו'). A minimum of 3 bechina-language statements exist in §ז for this domain. However, the 'ohel' and 'chuppah' nodes may be better classified as eitza (Israel's engagement with foreign wisdom causes the tzaddik's concealment — that is causal, not bechina). Conservatively, this package requires at least 3 confirmed bechina additions to qualify. Marked 'conditional' pending addition review. If only tzaddik=shemesh is confirmed, this becomes a 2-node fragment to be merged into an appropriate package (but no other Torah 49 package covers the tzaddik-shemesh domain).",
+        "minimum_nodes_for_package": 3,
+        "actual_proposed_nodes": 4,
+        "confirmed_bechina_nodes": 2
+      }
+    }
+  ],
+  "notes": "Three new packages are proposed. The first two (torah_49_pkg_new_lev and torah_49_pkg_evil_lev) are the most significant: they represent the Torah's primary theoretical domain (the heart/chalal/chokhma cluster) which is completely absent from the current dataset for reference 49. This is the largest gap found in this Torah's bechina graph — the foundational cluster is unrepresented despite being the explicit backbone of the entire teaching. The third package (torah_49_pkg_tzaddik) is conditional on confirming bechina status for the §ז nodes. The two heart-packages together constitute 11 nodes and 9 bechina edges, all with explicit bechina language in the source text. The teaching's structural argument in Torah 49 is: [heart/chalal/chokhma → midot/malkhut] ← [eitza] ← [tzimtzum of heart] ← [good thoughts/yetzer tov]. The new heart packages capture the BECHINA skeleton of that domain; the eitza edges (already in dataset: id 2511, 2512, 25738, 25749 etc.) capture the CAUSAL flow between the domains."
+}

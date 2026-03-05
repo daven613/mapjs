@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "source": "Torah #203",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===203 AND type==='bechina'. Zero bechina edges exist in torahData.js for reference 203 — the Torah has no entries in the dataset at all. The source text (torah_203.txt) is a single-paragraph teaching based on Esther 2:11. The teaching contains exactly one bechina declaration: 'וְאֶסְתֵּר הִיא הַשְּׁכִינָה' (Esther IS the Shechina). This yields one missing bechina edge (אסתר ↔ שכינה) which would form one 2-node connected component. All other relationships in the text are eitza (cause-and-effect): through (עַל-יְדֵי) the stories/conversations of women, one attains knowledge of the Shechina's state. The package structure reflects the single bechina equation at the heart of the teaching. The additions file documents the missing edge and proposes it for the dataset. Note: the nodes אסתר and שכינה appear elsewhere in torahData.js (e.g. reference 56, reference 10) but are absent for reference 203 specifically."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 203,
+      "label": "אֶסְתֵּר וְהַשְּׁכִינָה",
+      "label_en": "Esther and the Shechina",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly declares 'וְאֶסְתֵּר הִיא הַשְּׁכִינָה' — Esther IS the Shechina. This is the one and only bechina equation in Torah #203. The identification uses the copula 'הִיא' (is), the strongest form of bechina declaration. Esther and the Shechina are two names for the same essential reality: the hidden divine presence dwelling among Israel. The name אסתר itself derives from הַסְתָּרָה (concealment), pointing to the concealed/hidden nature of the Shechina in exile. The entire teaching's practical insight — that by listening to women's stories one can know the state of the Shechina — rests on this identification: Esther (= Shechina) had her welfare/peace known through the court of women, which is the model Mordechai used. The polarity is 'good': both אסתר and שכינה belong to the domain of holiness — Esther as the embodiment of divine royalty and hidden sanctity, שכינה as the divine presence itself. There is no evil package: Torah #203 presents a positive teaching about accessing knowledge of the Shechina through the medium of women's stories, with no opposing evil domain described.",
+      "dominant_node": "שכינה",
+      "nodes": [
+        "שכינה",
+        "אסתר"
+      ],
+      "node_degrees": {
+        "שכינה": 1,
+        "אסתר": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "note_on_merges": "Zero bechina edges currently in dataset for reference 203. The one bechina equation in the source text (אסתר הִיא הַשְּׁכִינָה) is a missing edge documented in the additions file. The package above (Package 1) is proposed based on the source text analysis, not from existing dataset edges. If the proposed edge is added to torahData.js, the stats would update to: total_bechina_edges=1, total_nodes=2, total_packages=1, raw_connected_components=1."
+  }
+}

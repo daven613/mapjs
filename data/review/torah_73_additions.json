@@ -1,0 +1,422 @@
+{
+  "meta": {
+    "source": "Torah #73",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, the three existing edges for Torah #73 from torahData.js (all type=eitza, none type=bechina), and the full source text torah_73.txt. Scanned every line for bechina-language markers: נִקְרָא (is called), הוּא (is / equals), הַיְנוּ (that is to say), בְּחִינַת (aspect of), מִלְּשׁוֹן (from the language of). Every concept identified via such language that does NOT appear as a node in the current bechina dataset for reference===73 is flagged as an addition. Since there are ZERO bechina edges in the dataset for Torah #73, ALL bechina-connected concepts are necessarily additions."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "כְּלִי אֲנִי — אוֹתִיּוֹת הַתְּפִלָּה",
+      "node_id": "ישראל",
+      "node_text": "כָּל אֶחָד מִיִּשְׂרָאֵל",
+      "polarity": "good",
+      "reason": "Explicit נִקְרָא statement: 'כָּל אֶחָד מִיִּשְׂרָאֵל נִקְרָא צַדִּיק' (line 4). Every member of Israel is called a tzaddik. This is the entry point of the Aleph-chain that builds the Ani vessel.",
+      "source_quote": "כִּי כָּל אֶחָד מִיִּשְׂרָאֵל נִקְרָא צַדִּיק, שֶׁנֶּאֱמַר: וְעַמֵּךְ כֻּלָּם צַדִּיקִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "ישראל",
+        "node2_id": "צדיק",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "כִּי כָּל אֶחָד מִיִּשְׂרָאֵל נִקְרָא צַדִּיק, שֶׁנֶּאֱמַר (יְשַׁעְיָה ס'): וְעַמֵּךְ כֻּלָּם צַדִּיקִים"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "כְּלִי אֲנִי — אוֹתִיּוֹת הַתְּפִלָּה",
+      "node_id": "צדיק",
+      "node_text": "הַצַּדִּיק",
+      "polarity": "good",
+      "reason": "Explicit נִקְרָא statement: 'הַצַּדִּיק נִקְרָא אָלֶף, מִלָּשׁוֹן: אַלּוּפֵינוּ מְסֻבָּלִים' (line 4). The tzaddik = aleph. Intermediate node in the ישראל→צדיק→אלף bechina chain.",
+      "source_quote": "וְהַצַּדִּיק נִקְרָא אָלֶף, מִלָּשׁוֹן: אַלּוּפֵינוּ מְסֻבָּלִים (תְּהִלִּים קמ\"ד)",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "צדיק",
+        "node2_id": "אלף",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "וְהַצַּדִּיק נִקְרָא אָלֶף, מִלָּשׁוֹן: אַלּוּפֵינוּ מְסֻבָּלִים (תְּהִלִּים קמ\"ד)"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "כְּלִי אֲנִי — אוֹתִיּוֹת הַתְּפִלָּה",
+      "node_id": "אלף",
+      "node_text": "אָלֶף",
+      "polarity": "good",
+      "reason": "The letter Aleph is called tzaddik. It forms the first letter of the word אֲנִי (the vessel). Root of the chain: aleph = the righteous soul of every Jew who is the aleph-component of the Ani vessel.",
+      "source_quote": "וְהַצַּדִּיק נִקְרָא אָלֶף, מִלָּשׁוֹן: אַלּוּפֵינוּ מְסֻבָּלִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "צדיק",
+        "node2_id": "אלף",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "וְהַצַּדִּיק נִקְרָא אָלֶף, מִלָּשׁוֹן: אַלּוּפֵינוּ מְסֻבָּלִים (תְּהִלִּים קמ\"ד)"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "כְּלִי אֲנִי — אוֹתִיּוֹת הַתְּפִלָּה",
+      "node_id": "נון",
+      "node_text": "הַנּוּן",
+      "polarity": "good",
+      "reason": "Explicit נִקְרָא statement: 'הַנּוּן נִקְרָא דִּבּוּר' (line 5). The letter Nun IS dibur. Nun also = malkhut ('יִנּוֹן שְׁמוֹ' per Rashi = language of malkhut). It is the second letter of the word אֲנִי.",
+      "source_quote": "וְהַנּוּן נִקְרָא דִּבּוּר, כִּי הַדִּבּוּר הוּא מַלְכוּת, עַל דֶּרֶךְ: מַלְכוּת – פֶּה, וּמַלְכוּת נִקְרָא נוּן",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edges": [
+        {
+          "node1_id": "נון",
+          "node2_id": "דיבור",
+          "type": "bechina",
+          "reference": 73,
+          "proof": "וְהַנּוּן נִקְרָא דִּבּוּר"
+        },
+        {
+          "node1_id": "נון",
+          "node2_id": "מלכות",
+          "type": "bechina",
+          "reference": 73,
+          "proof": "וּמַלְכוּת נִקְרָא נוּן, כְּמוֹ שֶׁכָּתוּב (תְּהִלִּים ע\"ב): יִנּוֹן שְׁמוֹ, וּפֵרֵשׁ רַשִׁ\"י: לְשׁוֹן מַלְכוּת"
+        }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "כְּלִי אֲנִי — אוֹתִיּוֹת הַתְּפִלָּה",
+      "node_id": "דיבור",
+      "node_text": "הַדִּבּוּר",
+      "polarity": "good",
+      "reason": "Explicit הוּא statement: 'הַדִּבּוּר הוּא מַלְכוּת' (line 5). Speech IS malkhut in this Torah. The dibur is the nun-component of the Ani vessel. Connecting thought to dibur is the act of prayer that forms the vessel.",
+      "source_quote": "כִּי הַדִּבּוּר הוּא מַלְכוּת, עַל דֶּרֶךְ: מַלְכוּת – פֶּה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "דיבור",
+        "node2_id": "מלכות",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "כִּי הַדִּבּוּר הוּא מַלְכוּת, עַל דֶּרֶךְ: מַלְכוּת – פֶּה"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "כְּלִי אֲנִי — אוֹתִיּוֹת הַתְּפִלָּה",
+      "node_id": "מלכות",
+      "node_text": "מַלְכוּת",
+      "polarity": "good",
+      "reason": "Central node of the Nun-cluster. malkhut = peh (mouth) = dibur = nun. It is called nun (יִנּוֹן שְׁמוֹ, per Rashi) and it equals dibur and peh. In this Torah malkhut is the speech-dimension of the prayer vessel.",
+      "source_quote": "מַלְכוּת נִקְרָא נוּן, כְּמוֹ שֶׁכָּתוּב: יִנּוֹן שְׁמוֹ, וּפֵרֵשׁ רַשִׁ\"י: לְשׁוֹן מַלְכוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "כְּלִי אֲנִי — אוֹתִיּוֹת הַתְּפִלָּה",
+      "node_id": "פה",
+      "node_text": "פֶּה",
+      "polarity": "good",
+      "reason": "Explicit equation in line 5: 'מַלְכוּת – פֶּה'. The mouth/peh is malkhut. In the dibur/speech cluster, peh is the physical organ that IS malkhut IS dibur IS nun. Part of the same bechina family.",
+      "source_quote": "כִּי הַדִּבּוּר הוּא מַלְכוּת, עַל דֶּרֶךְ: מַלְכוּת – פֶּה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "מלכות",
+        "node2_id": "פה",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "כִּי הַדִּבּוּר הוּא מַלְכוּת, עַל דֶּרֶךְ: מַלְכוּת – פֶּה"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "כְּלִי אֲנִי — אוֹתִיּוֹת הַתְּפִלָּה",
+      "node_id": "יוד",
+      "node_text": "יוּ\"ד",
+      "polarity": "good",
+      "reason": "Explicit נִקְרָא statement: 'הַמַּחֲשָׁבָה נִקְרָא יוּד' (line 6). The letter Yud IS thought/machshava, per Rashi on 'אָז יָשִׁיר מֹשֶׁה' (Shemot 15:1 — the yud of yashir refers to thought). It is the third letter of אֲנִי and the yud-component of the vessel formed when thought is connected to speech.",
+      "source_quote": "כִּי הַמַּחֲשָׁבָה נִקְרָא יוּ\"ד, כְּמוֹ שֶׁכָּתוּב (שְׁמוֹת ט\"ו:א'): אָז יָשִׁיר מֹשֶׁה, וּפֵרֵשׁ רַשִׁ\"י: יוּ\"ד עַל שֵׁם הַמַּחֲשָׁבָה נֶאֶמְרָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "מחשבה",
+        "node2_id": "יוד",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "כִּי הַמַּחֲשָׁבָה נִקְרָא יוּ\"ד, כְּמוֹ שֶׁכָּתוּב (שְׁמוֹת ט\"ו): אָז יָשִׁיר מֹשֶׁה, וּפֵרֵשׁ רַשִׁ\"י: יוּ\"ד עַל שֵׁם הַמַּחֲשָׁבָה נֶאֶמְרָה"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "כְּלִי אֲנִי — אוֹתִיּוֹת הַתְּפִלָּה",
+      "node_id": "מחשבה",
+      "node_text": "הַמַּחֲשָׁבָה",
+      "polarity": "good",
+      "reason": "The thought/machshava is called Yud. It is the faculty that must be connected (mekushar) to the dibur/speech during prayer to form the vessel Ani. The Yud represents machshava — inner intention — as the aleph of prayer's letter-structure.",
+      "source_quote": "כִּי הַמַּחֲשָׁבָה נִקְרָא יוּ\"ד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "כְּלִי אֲנִי — אוֹתִיּוֹת הַתְּפִלָּה",
+      "node_id": "אני",
+      "node_text": "אֲנִי",
+      "polarity": "good",
+      "reason": "The vessel is CALLED 'Ani' — 'הַכְּלִי הַנִּקְרָא אֲנִי'. This is the name of the vessel for divine abundance formed when the three letters א-נ-י are completed through prayer. 'וַאֲנִי אֲבָרֲכֵם' (Bamidbar 6) establishes that blessing descends only through this vessel. The dominant concept of Package 1.",
+      "source_quote": "וְאֵין הַשְׁפָּעָה יְכוֹלָה לֵירֵד, רַק עַל־יְדֵי כְּלִי הַנִּקְרָא אֲנִי, שֶׁנֶּאֱמַר: וַאֲנִי אֲבָרֲכֵם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edges": [
+        {
+          "node1_id": "אני",
+          "node2_id": "אלף",
+          "type": "bechina",
+          "reference": 73,
+          "proof": "הַכְּלִי הַנִּקְרָא אֲנִי — the Aleph of Ani = the tzaddik component"
+        },
+        {
+          "node1_id": "אני",
+          "node2_id": "נון",
+          "type": "bechina",
+          "reference": 73,
+          "proof": "הַכְּלִי הַנִּקְרָא אֲנִי — the Nun of Ani = the dibur/malkhut component"
+        },
+        {
+          "node1_id": "אני",
+          "node2_id": "יוד",
+          "type": "bechina",
+          "reference": 73,
+          "proof": "הַכְּלִי הַנִּקְרָא אֲנִי — the Yud of Ani = the machshava component"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "סְתִים וְגַלְיָא — פְּנִימִיּוּת וְחִיצוֹנִיּוּת",
+      "node_id": "פנימיות",
+      "node_text": "הַפְּנִימִיּוּת",
+      "polarity": "neutral",
+      "reason": "Explicit הוּא statement: 'מַה שֶּׁנִּסְתָּר מִמֶּנּוּ הוּא הַפְּנִימִיּוּת' (line 2). The hidden IS the inner. Penimit is the nature of what is concealed. In this Torah it applies symmetrically to both God and Torah. It is the goal of the teaching — reaching the penimit.",
+      "source_quote": "מַה שֶּׁנִּסְתָּר מִמֶּנּוּ הוּא הַפְּנִימִיּוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "סתים",
+        "node2_id": "פנימיות",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "מַה שֶּׁנִּסְתָּר מִמֶּנּוּ הוּא הַפְּנִימִיּוּת"
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "סְתִים וְגַלְיָא — פְּנִימִיּוּת וְחִיצוֹנִיּוּת",
+      "node_id": "סתים",
+      "node_text": "סְתִים",
+      "polarity": "neutral",
+      "reason": "The Aramaic term 'stim' (hidden) is used in the opening phrase 'הַתּוֹרָה סְתִים וְגַלְיָא'. Stim IS penimit — together they name the hidden dimension. Parallel bechina to galya/chitzoniut.",
+      "source_quote": "הַתּוֹרָה סְתִים וְגַלְיָא, וְהַקָּדוֹשׁ־בָּרוּךְ־הוּא גַּם כֵּן סְתִים וְגַלְיָא",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "סְתִים וְגַלְיָא — פְּנִימִיּוּת וְחִיצוֹנִיּוּת",
+      "node_id": "גליא",
+      "node_text": "גַּלְיָא",
+      "polarity": "neutral",
+      "reason": "Explicit הוּא statement: 'מַה שֶּׁנִּגְלֶה לָנוּ הוּא הַלְּבוּשׁ וְחִיצוֹנִיּוּת' (line 2). The revealed IS the external/garment. Galya is the bechina-pair of chitzoniut and the opposite of stim/penimit.",
+      "source_quote": "מַה שֶּׁנִּגְלֶה לָנוּ הוּא הַלְּבוּשׁ וְחִיצוֹנִיּוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "גליא",
+        "node2_id": "חיצוניות",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "מַה שֶּׁנִּגְלֶה לָנוּ הוּא הַלְּבוּשׁ וְחִיצוֹנִיּוּת"
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "סְתִים וְגַלְיָא — פְּנִימִיּוּת וְחִיצוֹנִיּוּת",
+      "node_id": "חיצוניות",
+      "node_text": "חִיצוֹנִיּוּת",
+      "polarity": "neutral",
+      "reason": "The revealed IS the external (chitzoniut). Paired with לבוש (garment) as two aspects of the same revealed dimension. Counterpart to penimit.",
+      "source_quote": "מַה שֶּׁנִּגְלֶה לָנוּ הוּא הַלְּבוּשׁ וְחִיצוֹנִיּוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "סְתִים וְגַלְיָא — פְּנִימִיּוּת וְחִיצוֹנִיּוּת",
+      "node_id": "לבוש",
+      "node_text": "לְבוּשׁ",
+      "polarity": "neutral",
+      "reason": "The revealed IS the garment (לְבוּשׁ). Used in line 2 as a synonym for chitzoniut — the external wrapping that is all we normally perceive. It is a bechina of galya/chitzoniut in this Torah.",
+      "source_quote": "מַה שֶּׁנִּגְלֶה לָנוּ הוּא הַלְּבוּשׁ וְחִיצוֹנִיּוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "לבוש",
+        "node2_id": "חיצוניות",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "מַה שֶּׁנִּגְלֶה לָנוּ הוּא הַלְּבוּשׁ וְחִיצוֹנִיּוּת"
+      }
+    },
+    {
+      "package_id": 3,
+      "package_label": "מַיִם וְתוֹרָה — הִתְגַּלּוּת",
+      "node_id": "תורה",
+      "node_text": "תּוֹרָה",
+      "polarity": "neutral",
+      "reason": "Explicit הוּא statement via standard rabbinic bechina: 'וְאֵין מַיִם אֶלָּא תּוֹרָה' (Bava Kama 17a, cited in line 10). Water IS Torah. Used in the verse interpretation 'כִּי תַעֲבֹר בַּמַּיִם' = when you wish the hidden of the Torah to be revealed. In this Torah, Torah and water are the domain of what is sought — the arena in which penimit is hidden.",
+      "source_quote": "וְאֵין מַיִם אֶלָּא תּוֹרָה (בָּבָא קַמָּא יז)",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "מים",
+        "node2_id": "תורה",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "וְאֵין מַיִם אֶלָּא תּוֹרָה (בָּבָא קַמָּא יז)"
+      }
+    },
+    {
+      "package_id": 3,
+      "package_label": "מַיִם וְתוֹרָה — הִתְגַּלּוּת",
+      "node_id": "מים",
+      "node_text": "מַיִם",
+      "polarity": "neutral",
+      "reason": "Water IS Torah. Used in the verse: 'כִּי תַעֲבֹר בַּמַּיִם'. In this Torah's verse-reading, water = Torah = the medium through which the hidden becomes accessible when you 'pass through' it using the vessel Ani.",
+      "source_quote": "וְאֵין מַיִם אֶלָּא תּוֹרָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "מַיִם וְתוֹרָה — הִתְגַּלּוּת",
+      "node_id": "התגלות",
+      "node_text": "הִתְגַּלּוּת",
+      "polarity": "neutral",
+      "reason": "Explicit מִלְּשׁוֹן statement: 'וְתַעֲבֹר מִלְּשׁוֹן הִתְגַּלּוּת' (line 10). The word 'tavar' IS from the language of revelation, as Targum Onkelos renders 'וְעָבַר ה'' as 'וְיִתְגַּלֵּי ה''. Revelation/hitgalut is the bechina of 'tavar' and the content of what the water/Torah verse promises — the hidden penimit reveals itself. Shares the essential nature of the water/Torah domain as the medium-of-revelation cluster.",
+      "source_quote": "וְתַעֲבֹר מִלְּשׁוֹן הִתְגַּלּוּת, כְּמָה שֶׁכָּתוּב: וְעָבַר ה' לִנְגֹּף אֶת מִצְרַיִם, וְתִרְגֵּם אוּנְקְלוֹס: וְיִתְגַּלֵּי ה'",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "תעבור",
+        "node2_id": "התגלות",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "וְתַעֲבֹר מִלְּשׁוֹן הִתְגַּלּוּת — וְיִתְגַּלֵּי ה' (תַּרְגּוּם אוּנְקְלוֹס)"
+      }
+    },
+    {
+      "package_id": 4,
+      "package_label": "נוּקְבָא — קַבָּלַת תַּעֲנוּג",
+      "node_id": "נוקבא",
+      "node_text": "נוּקְבָא",
+      "polarity": "good",
+      "reason": "Explicit נִקְרָא statement: 'מִי שֶׁמְּקַבֵּל תַּעֲנוּג מֵאַחֵר, נִקְרָא נוּקְבָא' (line 8). Whoever receives pleasure from another IS called Nukva (the feminine/receptive pole). God, receiving pleasure from Israel's prayers, becomes (kibeyakhol) Nukva in relation to Israel. This is a bechina of the divine mode of reception.",
+      "source_quote": "כִּי מִי שֶׁמְּקַבֵּל תַּעֲנוּג מֵאַחֵר, נִקְרָא נוּקְבָא, רוֹצֶה לוֹמַר לְגַבֵּהּ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "מקבל תענוג",
+        "node2_id": "נוקבא",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "כִּי מִי שֶׁמְּקַבֵּל תַּעֲנוּג מֵאַחֵר, נִקְרָא נוּקְבָא"
+      }
+    },
+    {
+      "package_id": 4,
+      "package_label": "נוּקְבָא — קַבָּלַת תַּעֲנוּג",
+      "node_id": "מקבל תענוג",
+      "node_text": "מְקַבֵּל תַּעֲנוּג",
+      "polarity": "good",
+      "reason": "Receiving pleasure IS nukva. The concept of reception-of-delight is the essential nature of the Nukva-state. When God receives pleasure from Israel's prayers (the reakh nikoakh), this constitutes the divine becoming Nukva. The concept of receiving pleasure is the core bechina definition.",
+      "source_quote": "כִּי מִי שֶׁמְּקַבֵּל תַּעֲנוּג מֵאַחֵר, נִקְרָא נוּקְבָא",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "נוּקְבָא — קַבָּלַת תַּעֲנוּג",
+      "node_id": "אישה",
+      "node_text": "אִשָּׁה",
+      "polarity": "good",
+      "reason": "God receiving the reakh nikoakh from prayers 'becomes in the secret of isha' (נַעֲשֶׂה בְּסוֹד אִשָּׁה, line 8). Isha is the bechina of Nukva — the feminine/receptive mode. Both isha and nukva name the same essential nature: the pole that receives and is enlivened by the pleasure/offering of the other.",
+      "source_quote": "עַל יְדֵי רֵיחַ הַנִּיחוֹחַ שֶׁמְּקַבֵּל הַשֵּׁם יִתְבָּרַךְ מִתְּפִלּוֹת שֶׁל יִשְׂרָאֵל, נַעֲשֶׂה בְּסוֹד אִשָּׁה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "אישה",
+        "node2_id": "נוקבא",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "נַעֲשֶׂה בְּסוֹד אִשָּׁה — the same state as נוּקְבָא (one who receives pleasure from another)"
+      }
+    },
+    {
+      "package_id": 4,
+      "package_label": "נוּקְבָא — קַבָּלַת תַּעֲנוּג",
+      "node_id": "ריח ניחוח",
+      "node_text": "רֵיחַ נִיחוֹחַ",
+      "polarity": "good",
+      "reason": "The 'sweet savor' (reakh nikoakh) in Bamidbar 28:8 is the form through which God receives pleasure from Israel's prayers. The Rebbe uses this as the proof that prayer IS reakh nikoakh — a pleasant-smelling offering received by God, triggering the Nukva-state. The reakh nikoakh is the bechina of Israel's tefila in God's reception.",
+      "source_quote": "כִּי עַל יְדֵי רֵיחַ הַנִּיחוֹחַ שֶׁמְּקַבֵּל הַשֵּׁם יִתְבָּרַךְ מִתְּפִלּוֹת שֶׁל יִשְׂרָאֵל, נַעֲשֶׂה בְּסוֹד אִשָּׁה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "ריח ניחוח",
+        "node2_id": "תפלות ישראל",
+        "type": "bechina",
+        "reference": 73,
+        "proof": "אִשֵּׁה רֵיחַ נִיחוֹחַ לַה' — the reakh nikoakh IS the tefila of Israel received by God"
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_73_edges": 3,
+    "total_reference_73_bechina_edges": 0,
+    "total_reference_73_eitza_edges": 3,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "ישראל", "צדיק", "אלף", "נון", "דיבור", "מלכות", "פה", "יוד", "מחשבה", "אני",
+      "פנימיות", "סתים", "גליא", "חיצוניות", "לבוש",
+      "תורה", "מים", "התגלות",
+      "נוקבא", "מקבל תענוג", "אישה", "ריח ניחוח"
+    ],
+    "total_new_bechina_concepts_identified": 22,
+    "total_proposed_new_bechina_edges": 13,
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "חפץ חסד",
+        "reason": "The phrase 'הַקָּדוֹשׁ־בָּרוּךְ־הוּא חָפֵץ חֶסֶד הוּא' (lines 3 and 7) uses the word הוּא but this is a descriptive attribute ('God is one who desires kindness') rather than a bechina equivalence. It is stated as an explanation of WHY God desires prayer, not as a declaration that concept A IS concept B at its essential nature. The function in the text is causal/motivational (eitza context), not bechina. Excluded per framework strictness."
+      },
+      {
+        "concept": "השפעות וברכות",
+        "reason": "The phrase 'רוֹצֶה תָּמִיד לְהַשְׁפִּיעַ הַשְׁפָּעוֹת וּבְרָכוֹת' describes what God wants to bestow. This is an eitza context (the reason for desiring prayer) rather than a bechina statement establishing shared nature between two concepts. No niqra or bechina marker is used for this concept. Excluded."
+      },
+      {
+        "concept": "נקבה תסובב גבר",
+        "reason": "This biblical verse (Yirmiyahu 31:22) is cited to prove the result — that penimit becomes chitzoniut. It is a proof-text for an eitza outcome (if tefila creates vessel Ani → God becomes Nukva → nakeva tisobev gavar = hidden becomes revealed). The verse itself is not declared as a bechina of any concept but used as scriptural evidence for a causal process. Excluded as proof-text citation rather than bechina node."
+      },
+      {
+        "concept": "כְּלִי (vessel, in the abstract)",
+        "reason": "The word 'kli' (vessel) appears as part of the compound phrase 'כְּלִי הַנִּקְרָא אֲנִי'. The vessel IS called Ani — so 'kli' and 'Ani' are the same node. Adding 'kli' separately would create a duplicate node for the same concept already captured as 'אני'. Excluded as alias/variant."
+      }
+    ]
+  }
+}

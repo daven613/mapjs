@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "source": "Torah #212",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===212 AND type==='bechina'. Zero bechina edges exist for Torah #212 in torahData.js. All three pre-existing edges (IDs 1477, 1694, 2065) are typed 'eitza'. All packages and bechina edges are therefore derived entirely from the source text torah_212.txt. Torah #212 is a short, five-sentence teaching attributed to Rebbe Nachman himself (noted as 'לשון רבנו' at the opening and end). Its central practice is clapping hands (מחאת כפים) as a vehicle for revealing the divine image (תמונת ה') through prophetic prayer-speech. The bechina structure clusters into two connected domains: (1) the prophetic-speech cluster surrounding מחאת כפים and its components, and (2) the Torah-prayer dyad formed by the two hands of written/oral Torah."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 212,
+      "label": "מְחָאַת כַּפַּיִם וּדְבַר הַנְּבִיאִים",
+      "label_en": "Clapping of Hands and Prophetic Speech",
+      "polarity": "good",
+      "reason": "The teaching opens with the bold identification: clapping hands is a bechina of 'ידי אדם מתחת כנפיהם' (the human hands beneath the wings of the divine creatures, Ezekiel 10:8). The Rebbe immediately unpacks this by equating the wings (כנפים) with speech/words (דבורים): 'הכנפים הם הדבורים, בבחינת ובעל כנפים יגיד דבר'. Simultaneously, prophets (נביאים) are identified as a bechina of the speech of prayer (דבור התפלה): 'נביאים זה בחינת דבור התפלה, כמו ניב שפתים'. The palms (כפים) are identified as the hand of the prophets: 'הכפים הם יד הנביאים'. These four identifications form a single connected cluster through bechina: מחאת כפים — כפים — יד הנביאים — נביאים — דבור התפלה — כנפים — דבורים — all expressions of the same spiritual reality: the act of clapping that releases prophetic speech-power and reveals the divine image. The cluster is entirely in the domain of holiness. The dominant node is מחאת כפים, which connects directly to ידי אדם מתחת כנפיהם and serves as the hinge between the physical act and its prophetic-speech essence.",
+      "dominant_node": "מחאת כפים",
+      "nodes": [
+        "מחאת כפים",
+        "ידי אדם מתחת כנפיהם",
+        "כנפים",
+        "דבורים",
+        "נביאים",
+        "דבור התפלה",
+        "כפים",
+        "יד הנביאים"
+      ],
+      "node_degrees": {
+        "מחאת כפים": 3,
+        "ידי אדם מתחת כנפיהם": 1,
+        "כנפים": 2,
+        "דבורים": 2,
+        "נביאים": 2,
+        "דבור התפלה": 1,
+        "כפים": 1,
+        "יד הנביאים": 1
+      },
+      "bechina_edges": [
+        {
+          "node1": "מחאת כפים",
+          "node2": "ידי אדם מתחת כנפיהם",
+          "proof": "גַּם מְחָאַת כַּף זֶה בְּחִינַת (יחזקאל י׳:ח׳): וִידֵי אָדָם מִתַּחַת כַּנְפֵיהֶם",
+          "note": "Direct bechina statement: clapping IS the bechina of 'human hands beneath their wings'"
+        },
+        {
+          "node1": "כנפים",
+          "node2": "דבורים",
+          "proof": "כִּי הַכְּנָפַיִם הֵם הַדִּבּוּרִים, בִּבְחִינַת (קהלת י׳:כ׳): וּבַעַל כְּנָפַיִם יַגֵּיד דָּבָר",
+          "note": "Explicit bechina: the wings ARE the speeches/words — two names for the same spiritual reality"
+        },
+        {
+          "node1": "נביאים",
+          "node2": "דבור התפלה",
+          "proof": "וּנְבִיאִים זֶה בְּחִינַת דִּבּוּר הַתְּפִלָּה, כְּמוֹ נִיב שְׂפָתַיִם",
+          "note": "Direct bechina: 'prophets' IS a bechina of 'the speech of prayer' — the verse 'ניב שפתים' links the two"
+        },
+        {
+          "node1": "כפים",
+          "node2": "יד הנביאים",
+          "proof": "כִּי הַנְּבִיאִים הֵם הַדִּבּוּרִים, וְהַכַּפַּיִם הֵם יַד הַנְּבִיאִים",
+          "note": "The palms ARE the hand of the prophets — bechina identification of two aspects of the same act"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 212,
+      "label": "תְּפִלָּה וְתוֹרָה שֶׁבִּכְתָב וְשֶׁבְּעַל־פֶּה",
+      "label_en": "Prayer and Written and Oral Torah",
+      "polarity": "good",
+      "reason": "The third clause of the teaching reveals that prayer is encompassed/included within Torah she-bikhsav and Torah she-be'al-peh, which together constitute the two hands: 'גַּם נִכְלָל הַתְּפִלָּה בְּתוֹךְ תּוֹרָה שֶׁבִּכְתָב וְתוֹרָה שֶׁבְּעַל־פֶּה שֶׁהֵם שְׁנֵי יָדַיִם: יָד כּוֹתֶבֶת וְיָד חוֹתֶמֶת'. The word 'נכלל' (is included/encompassed) indicates that prayer shares the same essential nature as — is contained in the same bechina-domain as — Torah she-bikhsav and Torah she-be'al-peh. The two Torah-modes are identified with two hands: writing hand (יד כותבת) and sealing hand (יד חותמת), which are their essential bechina-definition. This cluster forms a second connected component: תפלה — תורה שבכתב — יד כותבת — תורה שבעל-פה — יד חותמת. All are in the domain of holiness. The dominant node is תפלה, which is the subject of the 'being included' and thus is the most significant conceptual pivot of this cluster.",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תפלה",
+        "תורה שבכתב",
+        "יד כותבת",
+        "תורה שבעל-פה",
+        "יד חותמת"
+      ],
+      "node_degrees": {
+        "תפלה": 1,
+        "תורה שבכתב": 2,
+        "יד כותבת": 1,
+        "תורה שבעל-פה": 2,
+        "יד חותמת": 1
+      },
+      "bechina_edges": [
+        {
+          "node1": "תורה שבכתב",
+          "node2": "יד כותבת",
+          "proof": "תוֹרָה שֶׁבִּכְתָב וְתוֹרָה שֶׁבְּעַל־פֶּה שֶׁהֵם שְׁנֵי יָדַיִם: יָד כּוֹתֶבֶת וְיָד חוֹתֶמֶת",
+          "note": "Written Torah IS the writing hand — explicit bechina equation of mode of Torah with its hand-aspect"
+        },
+        {
+          "node1": "תורה שבעל-פה",
+          "node2": "יד חותמת",
+          "proof": "תוֹרָה שֶׁבִּכְתָב וְתוֹרָה שֶׁבְּעַל־פֶּה שֶׁהֵם שְׁנֵי יָדַיִם: יָד כּוֹתֶבֶת וְיָד חוֹתֶמֶת",
+          "note": "Oral Torah IS the sealing hand — explicit bechina equation of mode of Torah with its hand-aspect"
+        },
+        {
+          "node1": "תפלה",
+          "node2": "תורה שבכתב",
+          "proof": "גַּם נִכְלָל הַתְּפִלָּה בְּתוֹךְ תּוֹרָה שֶׁבִּכְתָב וְתוֹרָה שֶׁבְּעַל־פֶּה",
+          "note": "Prayer is encompassed within Written and Oral Torah — prayer shares the essential domain of Torah; 'נכלל' signals bechina inclusion not eitza causation"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_from_source_text": 7,
+    "total_nodes": 13,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 2,
+    "note_on_merges": "Two raw connected components emerge from the bechina edges identified in the source text. Component 1: מחאת כפים — ידי אדם מתחת כנפיהם — כנפים — דבורים — נביאים — דבור התפלה — כפים — יד הנביאים (8 nodes, 4 bechina edges). Component 2: תפלה — תורה שבכתב — יד כותבת — תורה שבעל-פה — יד חותמת (5 nodes, 3 bechina edges). These two components are connected by eitza edges in the existing dataset (edge 1694: מחאת כפים → מביטין בתמונת ה', and edge 2065: מחאת כפים → נכלל התפלה...) and by the eitza flow implicit in the teaching's structure (clapping produces the seeing; prayer is contained in Torah). The two components are kept as separate packages because they represent structurally distinct bechina clusters with different thematic identities."
+  }
+}

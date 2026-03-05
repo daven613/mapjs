@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "source": "Torah #74",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_74_packages.json, all reference===74 edges from torahData.js, and the full source text torah_74.txt (both the original short version and Natan Sternhartz's expanded version). For each bechina statement in the source text, verified whether the concept appears as a node in the dataset for reference===74. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ, נִקְרָא, הוּא [as equivalence declaration]) were considered. Narrative descriptions, proof-text citations without conceptual declaration, causal explanations (eitza), and standard Talmudic equivalences used only as supporting quotes were excluded from flagging."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "יִצְחָק וְהַדִּין הַקָּדוֹשׁ",
+      "node_id": "מחין דקטנות",
+      "node_text": "מֹחִין דְּקַטְנוּת",
+      "polarity": "neutral",
+      "reason": "The concept מֹחִין דְּקַטְנוּת is used with explicit bechina language repeatedly throughout Torah #74 and is in fact one of the two defining poles of the entire teaching (katnut vs. gadlut). Lines 5 (original), 30, 33, 34 all use בְּחִינַת to equate the holy judgment / initial state of distancing with מֹחִין דְּקַטְנוּת. Specifically: 'הוּא בְּחִינַת מֹחִין דְּקַטְנוּת' (lines 5, 30), 'הַדִּינִים הֵם מִבְּחִינַת מֹחִין דְּקַטְנוּת' (line 33), 'אָז הוּא בְּחִינַת מֹחִין דְּקַטְנוּת' (line 34). The dataset contains edges for מחין דקטנות in other Torahs (ref 46, 76, 234) but ZERO edges for reference===74. This is a critical gap: without מחין דקטנות in the Torah 74 graph, the connection between the דין/יצחק cluster (Package 1) and its psychological/spiritual nature as contracted consciousness is absent. Polarity neutral because מחין דקטנות is a structural state — the moon-state of Isaac — not inherently evil (it is the valid starting point of every spiritual journey) but also not inherently good.",
+      "source_quote": "הוּא בְּחִינַת מֹחִין דְּקַטְנוּת, שֶׁמִּשָּׁם עִקַּר אֲחִיזַת הַדִּין",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_edges": [
+        {
+          "node1": "מחין דקטנות",
+          "node2": "דין",
+          "proof": "הַדִּינִים הֵם מִבְּחִינַת מֹחִין דְּקַטְנוּת"
+        },
+        {
+          "node1": "מחין דקטנות",
+          "node2": "יצחק",
+          "proof": "דִּין הַקָּדוֹשׁ, שֶׁהוּא בְּחִינַת יִצְחָק...הוּא בְּחִינַת מֹחִין דְּקַטְנוּת"
+        },
+        {
+          "node1": "מחין דקטנות",
+          "node2": "מלכות",
+          "proof": "כְּשֶׁהַמַּלְכוּת הִיא בִּבְחִינַת צֶדֶק, אָז הוּא בְּחִינַת מֹחִין דְּקַטְנוּת"
+        }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִצְחָק וְהַדִּין הַקָּדוֹשׁ",
+      "node_id": "צדק",
+      "node_text": "צֶדֶק",
+      "polarity": "neutral",
+      "reason": "The concept צֶדֶק receives multiple explicit נִקְרָא bechina declarations in Torah #74, making it a named bechina aspect of the judgment-katnut domain. Line 6 (original): 'וְהַמַּלְכוּת נִקְרָא צֶדֶק' (Malkhut is called Tzedek when in the katnut/din state). Line 17: 'וְהַדִּבּוּר בְּלֹא דֵּעָה נִקְרָא צֶדֶק' (speech-without-knowledge is called Tzedek). Line 34: 'שֶׁאָז נִקְרֵאת הַמַּלְכוּת צֶדֶק כַּיָּדוּעַ'. Line 47: 'כִּי כְּשֶׁהַמַּלְכוּת בִּבְחִינַת דִּין, נִקְרֵאת צֶדֶק'. Tzedek is the name of Malkhut in her contracted/judgment state (as distinct from Tzedakah, which is her name after sweetening/elevation through Yaakov/wisdom). This is a central conceptual pair in Torah #74: צֶדֶק → צְדָקָה = the journey from katnut to gadlut. The dataset has edge 666 for צדקה ↔ דבור בדעה but NO edge defining צדק as a Torah-74 bechina. Polarity neutral because צדק is the name for Malkhut in its valid din-state — not evil, but the neutral form of judgment before sweetening.",
+      "source_quote": "וְהַמַּלְכוּת נִקְרָא צֶדֶק, כְּמוֹ שֶׁכָּתוּב: צֶדֶק מַלְכוּתָא קַדִּישָׁא",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_edges": [
+        {
+          "node1": "צדק",
+          "node2": "מלכות",
+          "proof": "וְהַמַּלְכוּת נִקְרָא צֶדֶק"
+        },
+        {
+          "node1": "צדק",
+          "node2": "דבור בלא דעה",
+          "proof": "וְהַדִּבּוּר בְּלֹא דֵּעָה נִקְרָא צֶדֶק"
+        },
+        {
+          "node1": "צדק",
+          "node2": "מחין דקטנות",
+          "proof": "אָז הוּא בְּחִינַת מֹחִין דְּקַטְנוּת, בְּחִינַת דִּינִים...בְּחִינַת צֶדֶק"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה",
+      "node_id": "כבוד",
+      "node_text": "כָּבוֹד",
+      "polarity": "good",
+      "reason": "Line 20 states explicitly: 'וְהַחָכְמָה נִקְרָא כָּבוֹד, כְּמוֹ שֶׁכָּתוּב: וְאִם אָב אֲנִי אַיֵּה כְּבוֹדִי' — 'Wisdom is called kavod.' This is a direct נִקְרָא equivalence statement. Lines 50-51 also: 'כְּשֶׁזּוֹכֶה לַחָכְמָה, אֲזַי נִתְגַּלֶּה כְּבוֹדוֹ יִתְבָּרַךְ' and 'וְהַכָּבוֹד נִתְגַּלֶּה עַל־יְדֵי הַחָכְמָה'. The Rebbe presents kavod as the revealed form of chokhmah — when a person attains wisdom, God's kavod is revealed. Kavod IS the chokhmah-aspect of the goal. This is entirely in the Package 2 (Yaakov/wisdom) domain. The dataset has an eitza edge for חכמה → כבוד נתגלה (edge 1459) but no BECHINA edge establishing חכמה = כבוד for Torah 74. The נִקְרָא statement on line 20 is a bechina declaration.",
+      "source_quote": "וְהַחָכְמָה נִקְרָא כָּבוֹד, כְּמוֹ שֶׁכָּתוּב: וְאִם אָב אֲנִי אַיֵּה כְּבוֹדִי",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_edges": [
+        {
+          "node1": "כבוד",
+          "node2": "חכמה",
+          "proof": "וְהַחָכְמָה נִקְרָא כָּבוֹד"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה",
+      "node_id": "תורה",
+      "node_text": "תּוֹרָה = חָכְמָה",
+      "polarity": "good",
+      "reason": "Line 21: 'וְהַתּוֹרָה נִקְרָא חָכְמָה, וְיִשְׂרָאֵל עָלוּ בְּמַחֲשָׁבָה תְּחִלָּה'. Line 49: 'וְהַתּוֹרָה נִקְרֵאת חָכְמָה, כְּמוֹ שֶׁכָּתוּב: אֲנִי חָכְמָה וְכוּ''. These are explicit נִקְרָא statements equating Torah and chokhmah. While the dataset DOES have an edge for Torah in Torah 74 (edge 217: תורה ↔ אילנא דאסותא), there is NO Torah-74 bechina edge for תורה ↔ חכמה directly. This direct equation is stated twice in the text and is foundational to the Torah's conclusion (the soul reaching Torah-chokhmah = reaching its root). Note: this proposed addition concerns the BECHINA EDGE תורה ↔ חכמה for reference 74, not a new node (both תורה and חכמה are already in Package 2). The gap is a missing edge connecting them.",
+      "source_quote": "וְהַתּוֹרָה נִקְרֵאת חָכְמָה, כְּמוֹ שֶׁכָּתוּב: אֲנִי חָכְמָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "Both תורה and חכמה are already nodes in Package 2 via other edges. This flags the MISSING DIRECT EDGE between them for reference 74.",
+      "suggested_edges": [
+        {
+          "node1": "תורה",
+          "node2": "חכמה",
+          "proof": "וְהַתּוֹרָה נִקְרָא חָכְמָה"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה",
+      "node_id": "תורה = אור",
+      "node_text": "תּוֹרָה = אוֹר",
+      "polarity": "good",
+      "reason": "Line 36: 'כִּי הַתּוֹרָה נִקְרֵאת אוֹר, בְּחִינַת: וְתוֹרָה אוֹר' — an explicit נִקְרֵאת bechina. The Rebbe equates Torah and light (or), noting that light IS the opposite of darkness (din/katnut). **אוֹר** as a concept is NOT in the Torah 74 bechina dataset. This addition introduces a new node: אור, identified as a bechina of Torah. The bechina chain in the text is: חשך = דין = מחין דקטנות ↔ opposite = אור = תורה = מחין דגדלות. The אור/חשך duality is structurally important as the light-metaphor bridge between Packages 1 and 2. Polarity is good — it is explicitly the positive counterpart to חשך (darkness = judgment = Package 1).",
+      "source_quote": "כִּי הַתּוֹרָה נִקְרֵאת אוֹר, בְּחִינַת: וְתוֹרָה אוֹר",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_edges": [
+        {
+          "node1": "תורה",
+          "node2": "אור",
+          "proof": "הַתּוֹרָה נִקְרֵאת אוֹר, בְּחִינַת: וְתוֹרָה אוֹר"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה",
+      "node_id": "מח",
+      "node_text": "מֹחַ = חָכְמָה",
+      "polarity": "good",
+      "reason": "Lines 19 and 49 both state 'וּמֹחָא חָכְמָה' — the brain IS wisdom. Line 19: 'כִּי טִפַּת הַזֶּרַע נִמְשֶׁכֶת מֵהַמֹּחַ, וּמֹחָא חָכְמָה' (the seed-drop is drawn from the brain, and the brain IS wisdom). Line 49 repeats this verbatim. The Aramaic term 'מֹחָא חָכְמָה' is a bechina statement: the brain IS the physical locus of chokhmah. **מֹחַ** as a distinct node (not the same as מחין דגדלות or מחין דקטנות) is NOT in the Torah 74 dataset. This is the anatomical counterpart of the spiritual חכמה concept. It belongs in Package 2 as the physical bechina of the wisdom domain. Polarity good — the מח/brain serves as the vessel for chokhmah-wisdom, which is the healing/positive domain.",
+      "source_quote": "כִּי טִפַּת הַזֶּרַע נִמְשֶׁכֶת מֵהַמֹּחַ, וּמֹחָא חָכְמָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_edges": [
+        {
+          "node1": "מח",
+          "node2": "חכמה",
+          "proof": "וּמֹחָא חָכְמָה"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה",
+      "node_id": "מחשבה",
+      "node_text": "מַחֲשָׁבָה = חָכְמָה",
+      "polarity": "good",
+      "reason": "Line 49: 'וְהַמַּחֲשָׁבָה הִיא חָכְמָה, שֶׁהִיא שֹׁרֶשׁ נַפְשׁוֹת יִשְׂרָאֵל' — 'thought IS wisdom, which is the root of the souls of Israel.' This is an explicit הִיא bechina equivalence. **מַחֲשָׁבָה** is NOT in the Torah 74 bechina dataset. The Rebbe uses this to explain why wisdom is the root of the soul — because Israel were conceived in divine thought (ישראל עלו במחשבה תחילה), and thought IS chokhmah. This belongs to Package 2 as it is in the wisdom/gadlut domain. Polarity good.",
+      "source_quote": "וְיִשְׂרָאֵל עָלוּ בְּמַחֲשָׁבָה תְּחִלָּה, וְהַמַּחֲשָׁבָה הִיא חָכְמָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_edges": [
+        {
+          "node1": "מחשבה",
+          "node2": "חכמה",
+          "proof": "וְהַמַּחֲשָׁבָה הִיא חָכְמָה, שֶׁהִיא שֹׁרֶשׁ נַפְשׁוֹת יִשְׂרָאֵל"
+        }
+      ]
+    },
+    {
+      "package_id": 3,
+      "package_label": "סִטְרָא דִּמְסָאֳבָא",
+      "node_id": "נפש כי תחטא",
+      "node_text": "נֶפֶשׁ כִּי תֶחֱטָא",
+      "polarity": "evil",
+      "reason": "Line 16 (original) and line 40 (Natan's version) both state: 'וּבְחִינַת עֵשָׂו, הוּא הַסִּיגִים, וְהוּא בְּחִינַת: נֶפֶשׁ כִּי תֶחֱטָא' — 'the bechina of Esau is the dross, and it IS the bechina of: Nefesh ki techeta (a soul that sins).' This is an explicit בְּחִינַת declaration. **נֶפֶשׁ כִּי תֶחֱטָא** is not in the Torah 74 dataset. In the teaching's structure, Esau (=dross/sigim) has a further bechina identity: the sinning soul — i.e., the soul that falls into the sitra d'misa'ava outcome. This belongs in Package 3 (evil) as it is the name for the output of the impure judgment path. It adds a further bechina link for Esau: עשו = סיגים = נפש כי תחטא.",
+      "source_quote": "וּבְחִינַת עֵשָׂו, הוּא הַסִּיגִים, וְהוּא בְּחִינַת: נֶפֶשׁ כִּי תֶחֱטָא",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_edges": [
+        {
+          "node1": "עשו",
+          "node2": "נפש כי תחטא",
+          "proof": "בְּחִינַת עֵשָׂו...וְהוּא בְּחִינַת: נֶפֶשׁ כִּי תֶחֱטָא"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה",
+      "node_id": "חיות הנפש",
+      "node_text": "חִיּוּת הַנֶּפֶשׁ",
+      "polarity": "good",
+      "reason": "Line 11 (original) and line 44 (Natan's version) state: 'וְהוּא הַחִיּוּת שֶׁל הַנֶּפֶשׁ' — 'and it [Simchat Torah / dibur b'da'at] IS the vitality of the soul.' This is an explicit הוּא equivalence declaration. **חִיּוּת הַנֶּפֶשׁ** is not in the Torah 74 dataset as a distinct bechina node. The dataset captures שמחת תורה ↔ דבור בדעה and דבור בדעה ↔ אילנא דאסותא, but the explicit bechina identity of Simchat Torah with the vitality/life-force of the soul (חיות הנפש) is not present. This is distinct from רפואת הנפש (healing of the soul) — חיות הנפש refers to the life-force itself, while רפואת הנפש refers to the healing/restoration. Both belong to Package 2.",
+      "source_quote": "וְשִׂמְחַת תּוֹרָה, הוּא בְּחִינַת דִּבּוּר בְּדֵעָה, וְהוּא הַחִיּוּת שֶׁל הַנֶּפֶשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "suggested_edges": [
+        {
+          "node1": "שמחת תורה",
+          "node2": "חיות הנפש",
+          "proof": "וְשִׂמְחַת תּוֹרָה...וְהוּא הַחִיּוּת שֶׁל הַנֶּפֶשׁ"
+        },
+        {
+          "node1": "דבור בדעה",
+          "node2": "חיות הנפש",
+          "proof": "הוּא בְּחִינַת דִּבּוּר בְּדֵעָה, וְהוּא הַחִיּוּת שֶׁל הַנֶּפֶשׁ"
+        }
+      ]
+    }
+  ],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "הִתְרַחֲקוּת (distancing)",
+      "reason": "Lines 29-30 use בְּחִינַת to connect the state of distancing with the beginning of drawing near: 'זֶהוּ בְּחִינַת הִתְרַחֲקוּת, שֶׁהוּא הַתְחָלַת הַהִתְקָרְבוּת'. However, this is a causal/consequential relationship stated in descriptive language about what the dinim look like (they look like distancing but are really drawing-near). The בְּחִינַת here modifies הִתְרַחֲקוּת as a metaphor/appearance ('it appears as distancing') rather than declaring a bechina equivalence between two concepts. Excluded as eitza/descriptive language."
+    },
+    {
+      "concept": "קְלַסְתֵּר פָּנִים (facial features)",
+      "reason": "Line 15 mentions God forming Isaac's facial features to look like Abraham's (כְּלַסְתֵּר פָּנִים). This is narrative detail supporting the teaching's argument about the holy judgment's origin from chesed. It is not a bechina equivalence statement — the Rebbe does not say 'klaster panim IS a bechina of X'. Excluded as narrative/proof-story."
+    },
+    {
+      "concept": "יִשְׂרָאֵל (Israel)",
+      "reason": "Line 49: 'יִשְׂרָאֵל עָלוּ בְּמַחֲשָׁבָה תְּחִלָּה' — 'Israel arose in divine thought first.' This is used to explain why machshava/chokhmah is the root of souls, not to establish a bechina equivalence for Israel as a concept. The Rebbe does not say 'Israel IS a bechina of chokhmah'; rather, Israel's origin is within chokhmah. Excluded as supporting citation rather than bechina declaration."
+    },
+    {
+      "concept": "טִפַּת הַזֶּרַע (seed-drop)",
+      "reason": "Lines 19, 49: 'טִפַּת הַזֶּרַע נִמְשֶׁכֶת מֵהַמֹּחַ' — the seed-drop is drawn FROM the brain. This is an eitza relationship (the brain produces the seed-drop), not a bechina equation. The seed-drop is used to illustrate why the soul can be elevated to its root through wisdom (chokhmah/mochin). The concept itself is not declared as a bechina of another concept. Excluded as eitza."
+    },
+    {
+      "concept": "חִדּוּשׁ הָעוֹלָם (renewal of the world)",
+      "reason": "Line 50: 'זֶהוּ בְּחִינַת חִדּוּשׁ הָעוֹלָם' — 'this IS the bechina of the renewal of the world.' The Rebbe uses בְּחִינַת here to say that when a soul attains Torah-wisdom, THIS IS the renewal of the world. However, the subject is the spiritual achievement (reaching chokhmah), and חדוש העולם is presented as its consequence/result — which is more characteristic of an eitza-outcome than a bechina-equivalence. Furthermore, the Rebbe's use of בְּחִינַת here means 'this is equivalent to' in a metaphorical sense (similar to: 'this is tantamount to the renewal of the world'), not that two concepts are structurally parallel aspects of the same thing. Borderline case; excluded to avoid over-extraction."
+    },
+    {
+      "concept": "מָגֵן (shield)",
+      "reason": "Line 12 / line 46: 'שֶׁמֶשׁ וּמָגֵן ה' אֱלֹקִים — h' אֱלֹקִים, זֶה בְּחִינַת רַחֲמִים וְדִין, בְּחִינַת יַעֲקֹב וְיִצְחָק, שֶׁהֵם בְּחִינַת שֶׁמֶשׁ וּמָגֵן'. The verse 'shemesh u'magen' is interpreted: shemesh = Yaakov; magen = Yitzchak. The בְּחִינַת here could imply מָגֵן = יצחק = דין. However, the dataset already captures לבנה ↔ יצחק and יצחק ↔ דין — the shield/protection metaphor is implicit in the moon-and-din cluster. The explicit equation מָגֵן = יצחק is not stated directly with a נִקְרָא or הוּא formula; it is derived from the verse's structure. Borderline; excluded to avoid implicit-inference additions."
+    },
+    {
+      "concept": "הַסְתָּרַת פָּנִים (hiding of the face)",
+      "reason": "Lines 14, 37: 'הִסְתַּרְתָּ פָנֶיךָ הָיִיתִי נִבְהָל' is interpreted as the state when תְּפִלָּה is cancelled (ביטול תפלה). The 'hiding of the face' is presented as an extreme negative state contrasted with the normal תפלה/פנים state. However, הסתרת פנים is not declared as a bechina equivalence to another concept in Torah 74 — it is used as a descriptive contrast ('when prayer is cancelled, it is like/is the hiding of the face'). The concept is the negative form of the פנים/תפלה pair already in the dataset (Package 1). Excluded as descriptive contrast rather than bechina equivalence. If added, it would be a new edge: הסתרת פנים ↔ ביטול תפלה (which is also possible), but the text reads more descriptively than declaratively here."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_74_bechina_edges_in_dataset": 43,
+    "unique_bechina_edges_after_dedup": 39,
+    "total_reference_74_eitza_edges_in_dataset": 6,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["יצחק", "אלהים", "גבורה", "דין", "דינא קדישא", "לבנה", "נפש", "לילה", "\"ותכהין עיניו מראות\"", "חשך", "הושענא רבא", "דבור בלא דעה", "ערבה", "מלכות", "שרה", "דינא דמלכותא דינא", "\"את אשר יאהב ה יוכיח\"", "פחד יצחק", "אברהם", "חסד", "תפלה", "פנים"],
+      "package_2": ["יעקב", "דבור בדעה", "אילנא דאסותא", "תורה", "צדקה", "שמחת תורה", "חמה", "שמש", "רחמים", "שמים", "חכמה", "אבא", "מחין דגדלות", "רפואת הנפש", "\"שמש צדקה ומרפא בכנפיה\"", "משיבת נפש", "המתקת הדין של יצחק"],
+      "package_3": ["סטרא דמסאבא", "אבימלך", "דינא דמסאבא", "נחש הטיל זהמא בחוה", "עשו", "סיגים והפסלת גמור"]
+    },
+    "concepts_in_source_text_not_in_dataset": ["מחין דקטנות", "צדק", "כבוד", "תורה=חכמה (missing edge)", "תורה=אור", "מח", "מחשבה", "נפש כי תחטא", "חיות הנפש"],
+    "most_critical_gap": "מחין דקטנות — this is the name for the state of Isaac/Hoshana Rabba/din in Torah 74 and is mentioned with bechina language at least 4 times, but has ZERO edges in the Torah 74 dataset. Its absence means the graph misses the core ontological label for the katnut pole of the teaching."
+  }
+}

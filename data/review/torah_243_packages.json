@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "source": "Torah #243",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #243 has ZERO edges in torahData.js with reference===243 AND type==='bechina'. The dataset is entirely empty for this Torah. All package structure is derived exclusively from the source text (torah_243.txt) via Step 5 gap analysis and Step 6 new package check. The text is a single compact teaching of 4 lines built around one explicit bechina: the Tzaddik Gadol is a bechina of Shir HaShirim — both share the same essential nature of supreme holiness so transcendent that no outward markers of holiness are visible."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 243,
+      "label": "צַדִּיק גָּדוֹל וְשִׁיר הַשִּׁירִים — קְדֻשָּׁה הַנֶּעֱלֶמֶת",
+      "label_en": "The Great Tzaddik and Song of Songs — Concealed Holiness",
+      "polarity": "good",
+      "reason": "The entire Torah is built on a single bechina: the Tzaddik Gadol who conceals himself is the same essential phenomenon as Shir HaShirim, which is Kodesh Kadashim yet contains no explicit words of holiness or purity. Both share the identical nature — supreme, transcendent holiness that is precisely because of its intensity invisible to ordinary perception. The world cannot bear the Tzaddik's holiness, so he appears ordinary; readers cannot 'see' holiness in Shir HaShirim, so no holiness-words appear. The concealment (העלם) is not a deficiency but the signature of the highest degree of holiness (קדש קדשים). These three concepts — the Tzaddik, Shir HaShirim, and the state of concealed holiness — form a single thematic family united by the principle: extreme holiness effaces its own outward markers.",
+      "dominant_node": "צדיק גדול",
+      "nodes": [
+        "צדיק גדול",
+        "שיר השירים",
+        "קדש קדשים",
+        "העלם / התעלמות"
+      ],
+      "node_degrees": {
+        "צדיק גדול": 2,
+        "שיר השירים": 2,
+        "קדש קדשים": 1,
+        "העלם / התעלמות": 1
+      },
+      "merge_notes": [],
+      "source_derived": true,
+      "source_quote": "וְזֶה בְּחִינוֹת: כָּל הַשִּׁירִים קֹדֶשׁ, וְשִׁיר הַשִּׁירִים קֹדֶשׁ קָדָשִׁים — וְזֶה מֵחֲמַת גֹּדֶל עֹצֶם קְדֻשָּׁתוֹ אֵינָם רוֹאִים שָׁם שׁוּם קְדֻשָּׁה"
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "source_derived_packages": 1,
+    "note": "Package 1 is proposed entirely from source text analysis; no edges exist in torahData.js for Torah #243. This Torah requires full data entry before connected-component analysis is possible."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "source": "Torah #257",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #257 has ZERO bechina edges in torahData.js. The bechina subgraph is entirely empty for this Torah. All package content is therefore derived exclusively from reading the source text directly and identifying explicit bechina language (דומה כ, הינו, בחינת). The Torah is very short (6 lines) and teaches a single concentrated teaching about overeating. One package is proposed, built from the two bechina-linked nodes identified in the source text."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 257,
+      "label": "אֲכִילָה יְתֵרָה וְהַכְּלִי",
+      "label_en": "Overeating and the Vessel",
+      "polarity": "neutral",
+      "reason": "The central and only bechina identification in Torah #257 is the equation of eating beyond one's need (אכילה יתרה / אוכל יותר מצרכו) with placing food into a vessel (כלי). These two concepts share the same essential nature: both describe a state in which there is no living recipient to receive the food's vitality. A vessel cannot receive vitality — it is inert, it cannot use what is placed in it. Eating beyond need produces the same structural state: the extra food has no living root from which to receive vitality, since the person does not actually need it. The Rebbe states this equivalence twice: once descriptively ('הוא דומה כאילו הניחו האדם לתוך כלי') and once as the hermeneutic key to the verse ('הינו שלא תאכל יותר מצרכך, שזה דומה כנותן לתוך הכלי'). Polarity is 'neutral' because the keli is a structural/physical object used as a metaphor — it is not aligned with holiness or evil in this Torah; it is a neutral structural concept that describes the inert state of unclaimed food.",
+      "dominant_node": "אכילה יתרה",
+      "nodes": [
+        "אכילה יתרה",
+        "כלי"
+      ],
+      "node_degrees": {
+        "אכילה יתרה": 1,
+        "כלי": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "note": "0 edges from dataset. 1 bechina equivalence identified from source text reading. The 2-node package above is sourced entirely from the text, not from any existing dataset edges."
+  }
+}

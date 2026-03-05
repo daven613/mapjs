@@ -1,0 +1,293 @@
+{
+  "meta": {
+    "source": "Torah #114 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all reference === 114 edges from torahData.js (1 bechina edge found: id 2528, שמים ↔ צדיק), and the full source text torah_114.txt (8 lines). Gap analysis performed by scanning the source text for all bechina-type language: explicit 'בְּחִינַת' markers, 'הַיְנוּ' (that is / i.e.) definitional equivalences, 'מִלְּשׁוֹן' (etymological bechinot), and structural synonymic couplings. The Torah expounds Psalm 147:8 ('HaMekhaseh Shamayim be'Avim, haMekhin laAretz Matar') as a teaching about hidden and embattled tzaddikim who draw divine abundance (shefa) to the world precisely because they are concealed — either naturally (gnuzim, hidden) or instrumentally through the covering of machloket (controversy). Six new bechina identifications were found that are absent from the dataset. These yield 2 additional packages beyond the 1 currently extractable from the dataset."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "שָׁמַיִם וְצַדִּיק — Heaven and the Tzaddik",
+      "node_id": "שמים",
+      "node_text": "שָׁמַיִם",
+      "polarity": "good",
+      "reason": "שמים is already captured in the dataset (edge 2528) as a bechina of צדיק. It is listed here to flag the two MISSING bechina edges that extend its component: (1) שמים ↔ אש ומים (the word shomayim derives from esh / water, giving שמים its essential composite nature), and (2) the structural bechina שמים ↔ הצדיק הגנוז (the covered/hidden tzaddik from line 2 — the shamayim under clouds = the tzaddik under concealment). The source text in line 4 provides an explicit two-step identification: שמים הוא בְּחִינַת הַצַּדִּיק — the first bechina marker — and then 'עַל-שֵׁם אֵשׁ וּמַיִם' and 'הַיְנוּ אַהֲבָה וְיִרְאָה', two further identification steps that establish אש ומים and אהבה ויראה as additional bechina nodes in the same cluster.",
+      "source_quote": "שָׁמַיִם הוּא בְּחִינַת הַצַּדִּיק, עַל-שֵׁם אֵשׁ וּמַיִם, הַיְנוּ אַהֲבָה וְיִרְאָה",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 2528,
+      "proposed_bechina_edges": [
+        {
+          "node1": "שמים",
+          "node2": "אש ומים",
+          "proof_text": "שָׁמַיִם — עַל-שֵׁם אֵשׁ וּמַיִם — the name שמים encodes its essential nature: it IS composed of fire and water",
+          "bechina_marker": "עַל-שֵׁם (named for / named after — etymology-as-identity)"
+        },
+        {
+          "node1": "שמים",
+          "node2": "צדיק",
+          "proof_text": "שָׁמַיִם הוּא בְּחִינַת הַצַּדִּיק",
+          "bechina_marker": "בְּחִינַת (explicit bechina marker)",
+          "status": "ALREADY IN DATASET — edge 2528"
+        }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "שָׁמַיִם וְצַדִּיק — Heaven and the Tzaddik",
+      "node_id": "אש ומים",
+      "node_text": "אֵשׁ וּמַיִם",
+      "polarity": "good",
+      "reason": "Fire (אש) and water (מים) are the two primordial opposites whose union names the heavens (שמים). The Rebbe explicitly states that שמים is named 'עַל-שֵׁם אֵשׁ וּמַיִם' — named after (i.e., essentially constituted by) fire and water. This is a bechina-by-etymology: the word שמים encodes esh + mayim, and this phonemic constitution is the Rebbe's identification of the word's essential nature. The next statement, 'הַיְנוּ אַהֲבָה וְיִרְאָה' (that is: love and awe/fear), equates fire-and-water with love-and-awe — making אש ומים and אהבה ויראה bechina equivalents of each other and of שמים and צדיק. All four are expressions of the same essential structure: the union of two opposites in holy tension.",
+      "source_quote": "עַל-שֵׁם אֵשׁ וּמַיִם, הַיְנוּ אַהֲבָה וְיִרְאָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "אש ומים",
+          "node2": "שמים",
+          "proof_text": "שָׁמַיִם — עַל-שֵׁם אֵשׁ וּמַיִם — the heavens IS fire and water by name and nature",
+          "bechina_marker": "עַל-שֵׁם (etymology-as-identity)"
+        },
+        {
+          "node1": "אש ומים",
+          "node2": "אהבה ויראה",
+          "proof_text": "הַיְנוּ אַהֲבָה וְיִרְאָה — fire and water ARE (heynu = definitional equivalence) love and awe",
+          "bechina_marker": "הַיְנוּ (definitional equivalence — that is, i.e.)"
+        }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "שָׁמַיִם וְצַדִּיק — Heaven and the Tzaddik",
+      "node_id": "אהבה ויראה",
+      "node_text": "אַהֲבָה וְיִרְאָה",
+      "polarity": "good",
+      "reason": "Love (אהבה) and awe/fear (יראה) are identified by the Rebbe as 'הַיְנוּ אַהֲבָה וְיִרְאָה' — the meaning of fire-and-water. The word 'הַיְנוּ' (that is / i.e.) is one of the Rebbe's primary bechina markers: it signals a definitional equivalence, not a consequence. Fire IS love; water IS awe. The two together constitute both the שמים and the צדיק. The tzaddik embodies the union of אהבה (passionate love of God = fire) and יראה (awesome reverence = water), and this unity IS the nature of the heavens. This is a central node in the Package 1 cluster because it identifies the tzaddik's essential spiritual constitution: the balance of the two primary emotional vectors of divine service.",
+      "source_quote": "עַל-שֵׁם אֵשׁ וּמַיִם, הַיְנוּ אַהֲבָה וְיִרְאָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "אהבה ויראה",
+          "node2": "אש ומים",
+          "proof_text": "הַיְנוּ אַהֲבָה וְיִרְאָה — love and awe ARE fire and water",
+          "bechina_marker": "הַיְנוּ (definitional equivalence)"
+        },
+        {
+          "node1": "אהבה ויראה",
+          "node2": "צדיק",
+          "proof_text": "שָׁמַיִם הוּא בְּחִינַת הַצַּדִּיק... הַיְנוּ אַהֲבָה וְיִרְאָה — the tzaddik IS the heavens IS fire-and-water IS love-and-awe; transitive chain of bechinot",
+          "bechina_marker": "transitive bechina through שמים"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "כִּסּוּי וּמַחֲלֹקֶת — Concealment and Controversy",
+      "node_id": "עבים",
+      "node_text": "עָבִים",
+      "polarity": "neutral",
+      "reason": "עָבִים (clouds) is identified in line 5 by a double bechina move: (1) etymological — 'מִלְּשׁוֹן עָבְיּוּת וְגַשְׁמִיּוּת' (from the language of thickness/corporeality), establishing the clouds' essential nature as עָבְיּוּת (thickness, heaviness); and (2) functional-symbolic — the clouds cover the tzaddik (=שמים) with עָבְיוּת וְקַשְׁיוּת (thickness and hardness), i.e., the opposition and controversy from opponents. The clouds ARE the machloket and the opposing force, sharing the same essential nature of kisu'i (covering). The polarity is 'neutral' rather than 'evil' because the covering-by-clouds is instrumentalized by God as the tzaddik's protection: 'haMekhaseh shamayim be'Avim, haMekhin laAretz Matar' — the very clouds that cover enable the rain of shefa to fall without accusation. The covering is simultaneously the obstacle and the enabling mechanism. The cloud is the tool of both the rasha and of Providence.",
+      "source_quote": "הַמְכַסֶּה שָׁמַיִם בְּעָבִים – מִלְּשׁוֹן עָבְיּוּת וְגַשְׁמִיּוּת, שֶׁמְּכַסֶּה אֶת הַצַּדִּיק בְּעָבְיוּת וְקַשְׁיוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "עבים",
+          "node2": "עביות וגשמיות",
+          "proof_text": "מִלְּשׁוֹן עָבְיּוּת וְגַשְׁמִיּוּת — 'avim' is from the language of thickness/corporeality; etymological bechina identifying its essential nature",
+          "bechina_marker": "מִלְּשׁוֹן (from the language/root of)"
+        },
+        {
+          "node1": "עבים",
+          "node2": "מחלוקת",
+          "proof_text": "שֶׁמְּכַסֶּה אֶת הַצַּדִּיק בְּעָבְיוּת וְקַשְׁיוּת, שֶׁמַּקְשִׁין וְחוֹלְקִין עָלָיו — the clouds covering the tzaddik ARE those who harden against him and make controversy; the covering IS the controversy",
+          "bechina_marker": "definitional substitution — 'the clouds' = 'those who make controversy'; the covering (כיסוי) is their shared essential nature"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "כִּסּוּי וּמַחֲלֹקֶת — Concealment and Controversy",
+      "node_id": "מחלוקת",
+      "node_text": "מַחֲלֹקֶת",
+      "polarity": "neutral",
+      "reason": "Machloket (controversy, opposition) is introduced in line 3: 'כְּשֶׁיֵּשׁ עָלָיו מַחֲלֹקֶת הוּא תֹּעֶלֶת לָזֶה, כִּי הַמַּחֲלֹקֶת מְכַסָּה עָלָיו' — the machloket IS the covering (מְכַסָּה), which is itself bechina-language. In line 5, the clouds (עבים) ARE the machloket explicitly: the clouds represent those who 'מַקְשִׁין וְחוֹלְקִין עָלָיו' (harden and dispute against him). Then in line 7, the same structure recurs with צוֹפֶה רָשָׁע — the rasha who 'watches' (צוֹפֶה) the tzaddik is also re-identified as 'צִפּוּי וְכִסּוּי' (coating and covering). Machloket, the clouds (עבים), and the watching rasha (צופה) all share the same essential nature: כיסוי (concealment/covering of the tzaddik). This polarity is 'neutral' because the controversy, while arising from evil intent, functions within the divine plan as a protective covering enabling the tzaddik to draw shefa unimpeded. The machloket IS the covering — it is not straightforwardly evil; it is instrumentalized evil serving the tzaddik's mission.",
+      "source_quote": "הַמַּחֲלֹקֶת מְכַסָּה עָלָיו, וְעַל-יְדֵי-זֶה יָכוֹל לְהַמְשִׁיךְ שֶׁפַע לְהָעוֹלָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "מחלוקת",
+          "node2": "כיסוי",
+          "proof_text": "הַמַּחֲלֹקֶת מְכַסָּה עָלָיו — the controversy IS the covering; 'mekhaseh' (covering) is the Rebbe's direct identification of what machloket essentially is in this context",
+          "bechina_marker": "definitional substitution using the same root (כסה)"
+        },
+        {
+          "node1": "מחלוקת",
+          "node2": "עבים",
+          "proof_text": "שֶׁמְּכַסֶּה אֶת הַצַּדִּיק בְּעָבְיוּת וְקַשְׁיוּת, שֶׁמַּקְשִׁין וְחוֹלְקִין עָלָיו — the clouds that cover ARE those who make machloket; shared essential nature: כיסוי",
+          "bechina_marker": "structural synonym — the clouds = the opponents"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "כִּסּוּי וּמַחֲלֹקֶת — Concealment and Controversy",
+      "node_id": "צופה רשע",
+      "node_text": "צוֹפֶה רָשָׁע",
+      "polarity": "neutral",
+      "reason": "The Rebbe interprets 'צוֹפֶה רָשָׁע לַצַּדִּיק' (Psalm 37:32 — the rasha watches the tzaddik) through an etymological-functional bechina: 'שֶׁהָרָשָׁע שֶׁחוֹלֵק עַל הַצַּדִּיק הוּא רַק צוֹפֶה, הַיְנוּ צִפּוּי וְכִסּוּי עַל הַצַּדִּיק' — the rasha who disputes the tzaddik IS only a tzofeh, meaning a tzipui (coating/plating) and kisu'i (covering) over the tzaddik. The word 'הַיְנוּ' is the explicit bechina marker: the watching (tzofeh) IS (heynu) a covering (tzipui ve-kisui). The rasha's malicious surveillance is re-identified as a coating or overlay — the same essential nature as the clouds (עבים) and the machloket. All three share the nature of כיסוי — they are different expressions of the same protective concealment mechanism. The polarity is 'neutral' for the same reason as מחלוקת and עבים: the rasha acts with evil intent but is instrumentalized by Providence as the tzaddik's cover.",
+      "source_quote": "הָרָשָׁע שֶׁחוֹלֵק עַל הַצַּדִּיק הוּא רַק צוֹפֶה, הַיְנוּ צִפּוּי וְכִסּוּי עַל הַצַּדִּיק",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "צופה רשע",
+          "node2": "כיסוי",
+          "proof_text": "הוּא רַק צוֹפֶה, הַיְנוּ צִפּוּי וְכִסּוּי עַל הַצַּדִּיק — the rasha-watcher IS (heynu) a coating and covering",
+          "bechina_marker": "הַיְנוּ (definitional equivalence — that is)"
+        },
+        {
+          "node1": "צופה רשע",
+          "node2": "עבים",
+          "proof_text": "parallel structure across lines 5 and 7: both the clouds (avim, line 5) and the tzofeh rasha (line 7) are identified as a כיסוי over the tzaddik; they share the same essential covering-nature",
+          "bechina_marker": "structural parallel / shared function = shared essential nature"
+        },
+        {
+          "node1": "צופה רשע",
+          "node2": "מחלוקת",
+          "proof_text": "שֶׁהָרָשָׁע שֶׁחוֹלֵק עַל הַצַּדִּיק הוּא רַק צוֹפֶה — the rasha who 'makes machloket' IS the tzofeh; חוֹלֵק = makes machloket; tzofeh = the same opposing agent re-identified as covering",
+          "bechina_marker": "definitional equivalence through shared role-identity"
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "כִּסּוּי וּמַחֲלֹקֶת — Concealment and Controversy",
+      "node_id": "כיסוי",
+      "node_text": "כִּסּוּי",
+      "polarity": "neutral",
+      "reason": "כיסוי (concealment, covering) is the shared essential nature of the entire Package 2 cluster. It is not stated as a single bechina node in one sentence, but emerges as the structural hub connecting עבים, מחלוקת, and צופה רשע through the repeating root כסה across lines 3, 5, and 7: 'הַמַּחֲלֹקֶת מְכַסָּה עָלָיו' (line 3), 'שֶׁמְּכַסֶּה אֶת הַצַּדִּיק' (line 5), 'הַיְנוּ צִפּוּי וְכִסּוּי עַל הַצַּדִּיק' (line 7). The Rebbe's use of the same root (כסה) in all three formulations is a deliberate structural bechina: machloket, the clouds, and the rasha are all different manifestations of the same essential phenomenon — covering. Kisu'i is also explicitly named as a separate concept in line 7 ('צִפּוּי וְכִסּוּי'), making it a standalone node. Its polarity is neutral: the covering is instrumentalized for good (enables shefa to flow) while arising from an evil source (rasha's malice). The dominant node of Package 2 is כיסוי by connectivity — it connects to all three other Package 2 nodes.",
+      "source_quote": "הַמַּחֲלֹקֶת מְכַסָּה עָלָיו... הַיְנוּ צִפּוּי וְכִסּוּי עַל הַצַּדִּיק",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "כיסוי",
+          "node2": "מחלוקת",
+          "proof_text": "הַמַּחֲלֹקֶת מְכַסָּה עָלָיו — the covering IS the machloket; same root as kisu'i",
+          "bechina_marker": "root identity (כסה = same essential phenomenon)"
+        },
+        {
+          "node1": "כיסוי",
+          "node2": "עבים",
+          "proof_text": "שֶׁמְּכַסֶּה אֶת הַצַּדִּיק בְּעָבְיוּת — the clouds ARE the covering of the tzaddik",
+          "bechina_marker": "root identity (כסה)"
+        },
+        {
+          "node1": "כיסוי",
+          "node2": "צופה רשע",
+          "proof_text": "הַיְנוּ צִפּוּי וְכִסּוּי עַל הַצַּדִּיק — the watching rasha IS kisu'i",
+          "bechina_marker": "הַיְנוּ (definitional equivalence)"
+        }
+      ]
+    }
+  ],
+  "eitza_nodes_excluded": [
+    {
+      "node_id": "שֶׁפַע",
+      "reason": "Shefa (divine abundance) is the result that flows TO the world through the tzaddik, enabled by his concealment: 'וְעַל-יְדֵי-זֶה יָכוֹל לְהַמְשִׁיךְ שֶׁפַע לְהָעוֹלָם' (and through this he can draw down abundance to the world). The phrase 'עַל-יְדֵי-זֶה' (through this / by means of this) is the classic eitza marker — shefa is what the concealment PRODUCES, not what it IS. Shefa flows FROM the concealment cluster as an eitza consequence. Not assigned to any package."
+    },
+    {
+      "node_id": "מָטָר",
+      "reason": "Rain (matar) appears in the opening verse 'הַמֵּכִין לָאָרֶץ מָטָר' as the product/result of the cloud-covering. Rain is interpreted throughout the teaching as the shefa that flows down when the tzaddik is covered. It is an eitza consequence: the covering (Package 2) PRODUCES the ability to send rain (shefa). Not a bechina node — the clouds do not SHARE the nature of rain; they PRODUCE it. Excluded from packages."
+    },
+    {
+      "node_id": "קִטְרוּג",
+      "reason": "Accusation/prosecution (kitrrug) is the obstacle that the concealment prevents. It appears as the negative force that is BLOCKED by the covering: 'וְלֹא יִמְחוּ וִיקַטְרְגוּ עָלָיו'. Kitrrug is not a bechina node but the opposing force in the eitza chain: concealment → prevention of kitrrug → shefa flows freely. It belongs to the eitza flow, not to a bechina cluster."
+    },
+    {
+      "node_id": "הַמְשָׁכַת שֶׁפַע",
+      "reason": "The drawing-down of shefa ('לְהַמְשִׁיךְ שֶׁפַע') is the eitza consequence of the tzaddik being covered. The concealment/machloket ENABLES the flow of shefa — this is cause and effect, not parallel nature. Not assigned to any package."
+    },
+    {
+      "node_id": "אֶרֶץ",
+      "reason": "The earth (aretz) in 'הַמֵּכִין לָאָרֶץ מָטָר' is the recipient of the rain/shefa — the destination of the eitza flow. While aretz could potentially be a bechina of 'the world' or 'the community of Israel' receiving the tzaddik's shefa, the Torah text does not make this identification explicitly. The word is cited only as part of the verse, not as a bechina node. Excluded from packages pending further source material."
+    }
+  ],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "צַדִּיקִים הַגְּנוּזִים (hidden tzaddikim)",
+      "reason": "The hidden tzaddikim (line 2) are a subtype of the dominant node צדיק (Package 1). They are tzaddikim who achieve the covered state naturally (through hiddenness rather than through opposition). The teaching presents them as the ideal case of the phenomenon — but they are not a separate bechina concept from צדיק. The gnuzim are characterized by not being publicized (אֵינָם מְפֻרְסָמִים), which is their version of the covering. However, since the Torah does not use 'הוא בחינת' language for them but uses them as an example, they are subsumed under צדיק rather than constituting a separate bechina node. Not added as a separate node."
+    },
+    {
+      "concept": "עָבְיּוּת וְגַשְׁמִיּוּת (thickness and corporeality)",
+      "reason": "This is identified as the essential nature of the עָבִים (clouds) through the etymological bechina 'מִלְּשׁוֹן עָבְיּוּת וְגַשְׁמִיּוּת'. It is the quality-identity of the clouds, but since כיסוי is the more specific and functionally central identity of the clouds in this Torah (the clouds ARE the covering, and the covering is what matters), עָבְיּוּת serves as a bridge bechina showing WHY the clouds function as a covering — their thick, physical nature is what makes them able to conceal. It could be added as a separate bechina node (עביות ↔ עבים) in Package 2, but since the Torah's argument uses עביות only as the etymological derivation and then immediately passes to the covering function, and since כיסוי is the conceptually richer and more important identity, עביות is documented here as an additional proposed edge but not treated as a separate primary node. See the proposed bechina edge for עבים ↔ עביות וגשמיות in the עבים entry above."
+    },
+    {
+      "concept": "עָבְיּוּת וְקַשְׁיוּת (thickness and hardness)",
+      "reason": "Line 5 identifies the covering as 'עָבְיוּת וְקַשְׁיוּת' — thickness and hardness. This pairing is the Rebbe's characterization of what the opponents bring: they are thick and hard, like the clouds. The coupling of עביות (covered by line 4's etymology of avim) with קשיות (hardness, from מַקְשִׁין) is a compound expression for the covering-force. However, since both are subsumed under the broader כיסוי package, and since they appear only as descriptive qualifiers of the covering-mechanism rather than as standalone bechina identities, they are not separated into distinct nodes. They are captured within the עבים and כיסוי entries."
+    },
+    {
+      "concept": "רָשָׁע (the wicked person)",
+      "reason": "The rasha (wicked person) is the agent behind the machloket and the tzofeh. However, the Torah's bechina work is not on 'rasha' as a concept but on what the rasha DOES — his watching/opposing is re-identified as a covering. The rasha himself is not given a bechina identity in this Torah ('rasha IS X' or 'X IS rasha'). He is the actor who performs the covering action. Not added as a separate bechina node."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_114_edges": 1,
+    "total_reference_114_bechina_edges": 1,
+    "total_reference_114_eitza_edges": 0,
+    "dataset_status": "SPARSE — only 1 bechina edge (id: 2528, שמים ↔ צדיק). No eitza edges recorded for Torah 114 in the dataset.",
+    "source_text_bechina_pairs_found": 7,
+    "source_text_lines": 8,
+    "new_nodes_proposed": 6,
+    "new_bechina_edges_proposed": 11,
+    "bechina_markers_found": [
+      {
+        "marker": "בְּחִינַת (explicit)",
+        "instance": "שָׁמַיִם הוּא בְּחִינַת הַצַּדִּיק — shamayim IS a bechina of tzaddik",
+        "source_line": 4,
+        "already_in_dataset": true,
+        "edge_id": 2528
+      },
+      {
+        "marker": "עַל-שֵׁם (named for / etymology-as-identity)",
+        "instance": "עַל-שֵׁם אֵשׁ וּמַיִם — shamayim is named for/after esh u'mayim",
+        "source_line": 4,
+        "already_in_dataset": false
+      },
+      {
+        "marker": "הַיְנוּ (definitional equivalence — that is)",
+        "instance": "הַיְנוּ אַהֲבָה וְיִרְאָה — fire-and-water IS love-and-awe",
+        "source_line": 4,
+        "already_in_dataset": false
+      },
+      {
+        "marker": "מִלְּשׁוֹן (from the language/root of — etymological bechina)",
+        "instance": "עָבִים – מִלְּשׁוֹן עָבְיּוּת וְגַשְׁמִיּוּת — avim IS from the language of thickness/corporeality",
+        "source_line": 5,
+        "already_in_dataset": false
+      },
+      {
+        "marker": "shared root identity (כסה repeated across lines 3, 5, 7)",
+        "instance": "הַמַּחֲלֹקֶת מְכַסָּה / שֶׁמְּכַסֶּה / צִפּוּי וְכִסּוּי — machloket, avim, tzofeh all share the root כסה (covering)",
+        "source_line": "3, 5, 7",
+        "already_in_dataset": false
+      },
+      {
+        "marker": "הַיְנוּ (definitional equivalence — that is)",
+        "instance": "הוּא רַק צוֹפֶה, הַיְנוּ צִפּוּי וְכִסּוּי — tzofeh IS (heynu) tzipui ve-kisui (coating and covering)",
+        "source_line": 7,
+        "already_in_dataset": false
+      },
+      {
+        "marker": "structural parallel (repeated context — same role in same argument)",
+        "instance": "עָבִים (line 5) and צוֹפֶה רָשָׁע (line 7) are both identified as כיסוי over the tzaddik in the same argumentative move — they share essential nature through identical structural role",
+        "source_line": "5 and 7",
+        "already_in_dataset": false
+      }
+    ]
+  }
+}

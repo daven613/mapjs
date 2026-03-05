@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "source": "Torah #200",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #200 has zero bechina edges in the dataset (reference===200 does not appear in torahData.js at all). The source text (torah_200.txt) is a two-sentence teaching from Likutay Moharan Vol. 1. It explains why contemporary tzaddikim tend to be wealthy, while earlier generations were mostly poor. The proof-text is Mishnah Avot 4: 'All who fulfill the Torah from poverty will ultimately fulfill it from wealth.' The teaching's claim: today's tzaddikim are the same souls (via gilgul/reincarnation) as the earlier tzaddikim who already fulfilled the Torah from poverty, and therefore now merit to fulfill it from wealth. The entire teaching is one application of a Mishnaic rule (eitza/cause-and-effect logic): fulfilling Torah from poverty PRODUCES the later merit to fulfill it from wealth. The gilgul mechanism explains the generational dimension — the same soul in a later incarnation reaps what it sowed in poverty. There is no bechina language in the text (no 'הוא בחינת', no 'נקרא', no 'הינו' used as an equation). The only relationship is directional/sequential: poverty-observance → wealth-observance, mediated by the soul's continuity across lifetimes. Because no bechina edges exist in the dataset and no bechina language appears in the source text, connected-component analysis yields zero components and zero packages."
+  },
+  "packages": [],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0
+  },
+  "dataset_status": {
+    "verdict": "NO_BECHINA_EDGES_IN_DATASET",
+    "explanation": "A search of torahData.js for entries with reference=200 and type='bechina' returns zero results. Torah #200 is entirely unrepresented in the bechina edge dataset. The source text (torah_200.txt) is a two-sentence teaching. It contains no bechina declarations — all conceptual relationships in the text are either causal (fulfilling Torah from poverty → merit to fulfill it from wealth) or contextual (gilgul provides the mechanism linking past poverty-fulfillment to present wealth-fulfillment). There are no parallel-nature equivalences being drawn.",
+    "source_text_length": "2 lines",
+    "source_text_summary": "Torah #200 addresses the question of why contemporary tzaddikim are wealthy while earlier tzaddikim were mostly poor and indigent. The answer is found in the Mishnah (Avot 4): 'All who fulfill the Torah from poverty will ultimately fulfill it from wealth.' The contemporary tzaddikim are, through the secret of gilgul (reincarnation), the same souls as the earlier tzaddikim — those who already fulfilled the Torah from poverty in a previous life. Having already paid the debt of poverty-based observance, they now merit the fulfillment of the Mishnah's promise and can serve God from a position of wealth.",
+    "reason_no_packages": "The teaching consists of exactly one eitza chain: קיום התורה מעוני (fulfilling Torah from poverty) → זוכה לקיימה מעושר (merits to fulfill it from wealth). The gilgul concept is the bridge that applies this chain across lifetimes. Neither the gilgul nor the poverty/wealth polarity involves bechina-type equations (shared essential nature). The concepts of עוני (poverty) and עושר (wealth) are related here as sequential stages in a single soul's trajectory, not as parallel aspects of the same underlying reality. The Mishnah quote is cited as a halakhic rule producing a consequence, not as an equation of natures."
+  }
+}

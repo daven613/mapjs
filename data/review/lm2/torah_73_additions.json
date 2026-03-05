@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "source": "Torah #73 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "מ\"ט אותיות שמות בני ישראל הבאים מצרימה",
+      "node_text": "מ\"ט אוֹתִיּוֹת שְׁמוֹת בְּנֵי יִשְׂרָאֵל הַבָּאִים מִצְרָיְמָה",
+      "polarity": "good",
+      "reason": "In line 7 of the source text the Rebbe makes a second explicit bechina identification: 'מ\"ט שַׁעֲרֵי תְּשׁוּבָה הֵם בְּחִינַת מ\"ט אוֹתִיּוֹת שֶׁיֵּשׁ בִּשְׁמוֹת בְּנֵי יִשְׂרָאֵל הַבָּאִים מִצְרָיְמָה'. The dataset already has 'מ\"ט אוֹתִיּוֹת שֶׁיֵּשׁ בִּשְׁמוֹת שְׁנֵים־עָשָׂר שִׁבְטֵי יָ'ה' (from line 3), but in line 7 the Rebbe explicitly uses the verse 'ואלה שמות בני ישראל הבאים מצרימה' and states the same equation using the letters from THAT verse's listing. The two phrasings describe the same 49 letters from slightly different angles (the formal tribal names vs. the Exodus-opening verse listing). This is likely an alias for the same node rather than a new concept — but if treated as distinct, it belongs in Package 1.",
+      "source_quote": "מ\"ט שַׁעֲרֵי תְּשׁוּבָה הֵם בְּחִינַת מ\"ט אוֹתִיּוֹת שֶׁיֵּשׁ בִּשְׁמוֹת בְּנֵי יִשְׂרָאֵל הַבָּאִים מִצְרָיְמָה, לְהִזְדַּכֵּךְ שָׁם",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "נעים זמירות ישראל",
+      "node_text": "נְעִים זְמִרוֹת יִשְׂרָאֵל",
+      "polarity": "good",
+      "reason": "In line 4, King David is called 'נְעִים זְמִרוֹת יִשְׂרָאֵל' and the Rebbe immediately glosses: 'דְּהַיְנוּ סֵפֶר תְּהִלִּים שֶׁיָּסַד' — that is, the Book of Psalms which he composed. The word 'דהיינו' (i.e., namely/that is) is implicit bechina language — it identifies 'נעים זמירות ישראל' AS 'ספר תהלים'. Since Tehillim drives the whole teaching (it enables teshuva), this bechina link between David's epithet and his book of Psalms is meaningful. It belongs in a Tehillim-cluster which, in the current dataset, has no bechina edges (תהלים appears only in eitza edges for this Torah). If a Tehillim package were present, this would anchor it; currently it is an orphan concept from the source text with implicit bechina language.",
+      "source_quote": "עַל־יְדֵי בְּחִינַת נְעִים זְמִרוֹת יִשְׂרָאֵל, דְּהַיְנוּ סֵפֶר תְּהִלִּים שֶׁיָּסַד, עַל־יְדֵי־זֶה הוּקַם עֻלָּהּ שֶׁל תְּשׁוּבָה",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 6,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "נעים זמירות ישראל — David's epithet, equated via 'דהיינו' to ספר תהלים; appears in eitza context but has implicit bechina identification",
+      "מ\"ט אותיות שמות בני ישראל הבאים מצרימה — likely an alias for 'מ\"ט אותיות שיש בשמות שנים־עשר שבטי י'ה' (already in dataset), but stated separately in line 7 from the verse in Shemot 1:1"
+    ],
+    "duplicate_edges_in_dataset": [
+      "The edge תשובה עלאה — מצרים appears twice in the raw data (lines ~43212-43220 and ~43234-43242)",
+      "The edge שער החמשים — יום החמשים appears twice in the raw data (lines ~43223-43231 and ~43245-43253)"
+    ],
+    "structural_notes": [
+      "This is a very short Torah (8 paragraphs) with a single focused argument: Tehillim enables teshuva because of the structural correspondence between the 49+1 gates structure and the 49 letters of the tribes plus the 50th day.",
+      "All eitza nodes (תהלים, אמירת תהלים, רגיל באמירת תהלים, תשובה as outputs) are properly kept as eitza connections — they are cause-effect links, not bechina identities.",
+      "No evil polarity packages exist in this Torah. There is no opposing force discussed — the teaching is entirely about the positive path of teshuva and Tehillim.",
+      "Package 2 (50th gate / divine teshuva) and Package 3 (Egypt / supernal teshuva / throat) share a deep thematic affinity — both describe the transcendent, upper dimension of teshuva. However, they are kept separate because their essential natures differ: Package 2 is about the 50th gate as divine return/revelation, while Package 3 is about the mystical-anatomical identity of the place of purification with the kabbalistic concept of teshuvah ilaah (binah-level). These are parallel but distinct ontological domains."
+    ]
+  }
+}

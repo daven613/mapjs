@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "source": "Torah #123",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "לב נתיבות = תורה (the 32 paths of wisdom = Torah — as the inner meaning of the word נבל as an acrostic)",
+      "source_text_ref": "Line 4: 'וְזֶה: נָבָל – רָאשֵׁי־תֵּבוֹת לב נְתִיבוֹת, שֶׁהוּא כְּלָלִיּוּת הַתּוֹרָה, וְהִיא הַחָכְמָה הָאֲמִתִּיוּת, אֲשֶׁר אֶצְלָהּ כָּל הַחָכְמוֹת בְּטֵלִים'",
+      "proposed_edge": {
+        "node1_id": "לב נתיבות",
+        "node2_id": "תורה",
+        "type": "bechina",
+        "reference": 123
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe explicitly decodes נָבָל as an acrostic for ל\"ב נְתִיבוֹת (32 paths of wisdom), and calls this 'the totality of Torah' and 'the true wisdom before which all wisdoms are nullified.' The 32 paths are a bechina of Torah — they share the same essential nature (divine wisdom). This would add a third node to Package 1, creating a triangle: נבל — תורה — לב נתיבות, all equated as aspects of the same supreme divine wisdom. Currently the dataset captures the נבל→תורה link but misses the explicit intermediate equation via the acrostic."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "medium",
+      "description": "תם וישר, יראת אלקים, סר מרע = עיקר העבודה (simplicity, uprightness, fear of God, fleeing evil = the essential service — without external wisdoms)",
+      "source_text_ref": "Line 5: 'וְהָעִקַּר הָעֲבוֹדָה – לִהְיוֹת תָּם וְיָשָׁר, יְרֵא אֱלֹקִים וְסָר מֵרַע, בְּלִי שׁוּם חָכְמוֹת'",
+      "proposed_edge": {
+        "node1_id": "תם וישר, יראת אלקים וסר מרע",
+        "node2_id": "עיקר העבודה",
+        "type": "bechina",
+        "reference": 123
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe states that the essential service (עיקר העבודה) IS being tam v'yashar, fearing God, and fleeing evil — without any external wisdoms. This is a bechina in the sense that the two phrases describe the same reality: living simply and purely without external philosophical wisdom IS the true service. However, the relationship could alternatively be read as definitional description (not a classic בחינת X הוא Y formula). Proposed with medium priority as it would enrich the Torah-wisdom package with the practical/ethical dimension of casting away false wisdoms."
+    }
+  ],
+  "unassigned_dataset_nodes": [
+    {
+      "node_id": "ראו האמת, והשליכו החכמות, והאמינו בה ובמשה עבדו",
+      "reason": "Appears only in eitza edge (reference 123, id 2586, type eitza). Eitza-only nodes are not assigned to packages per framework. This describes the condition (casting away wisdoms + believing in God + Moses) that produced (eitza) the receiving of Torah."
+    },
+    {
+      "node_id": "קבלו התורה",
+      "reason": "Appears only in eitza edge (reference 123, id 2586, type eitza). This is the outcome — the result of casting away wisdoms. It is an eitza endpoint, not a bechina node."
+    },
+    {
+      "node_id": "השליכו מאתם כל החכמות",
+      "reason": "Appears only in eitza edge (reference 123, id 2587, type eitza). This is the cause — the act of discarding external wisdom — that led to (eitza) receiving the Torah."
+    },
+    {
+      "node_id": "קבלת התורה",
+      "reason": "Appears only in eitza edge (reference 123, id 2587, type eitza). This is the eitza result of casting away wisdoms. Note: same concept as קבלו התורה above, captured in two edges from slightly different angles."
+    }
+  ],
+  "analysis_notes": {
+    "total_bechina_edges": 1,
+    "nodes_in_dataset_not_in_packages": "All nodes appearing only in eitza edges (4 distinct node_ids across 2 eitza edges) are correctly excluded from packages per framework.",
+    "concepts_in_source_text_not_in_dataset": [
+      "לב נתיבות as bechina of תורה (via the נבל acrostic, line 4) — not captured as a separate bechina edge; currently subsumed into the single נבל—תורה edge but the intermediate node לב נתיבות is not represented",
+      "נוֹבְלוֹת הַחָכְמָה הָעֶלְיוֹנָה as a bechina-name for Torah (line 4) — the Rebbe cites Bereishit Rabbah 17: Torah is called 'noblot chochma ha'elyona' (withered/fallen fruits of supernal wisdom). This appellation-as-bechina is present in the proof text of edge 3090 but not encoded as a separate node",
+      "וְלָא חַכִּימוּ (Onkelos: 'and were not wise') as a bechina of עִקַּר קַבָּלַת הַתּוֹרָה — implicit from line 3: 'the essential receiving of Torah was through not-being-wise', but only encoded via eitza, not as a bechina pair"
+    ],
+    "structural_observations": [
+      "Torah #123 is exceptionally sparse in the bechina dataset: 1 bechina edge, 2 eitza edges, 2 unique nodes in the bechina graph. This is one of the shortest Torahs in the corpus.",
+      "The teaching's entire conceptual argument is: the act of casting away external wisdoms (eitza) → receiving Torah (eitza). The bechina graph supports this by establishing the essential identity of 'naval' with Torah — showing that the simple/degraded word Onkelos uses IS, in its hidden nature, the highest reality.",
+      "There is no explicit evil mirror cluster encoded in bechina terms for Torah #123. The evil side (apikorsim, philosophical wisdoms, idolaters) is described narratively but never via 'X is a bechina of Y' language.",
+      "The teaching is thematically related to Torah #1 (wisdom, Torah, receiving) but constitutes its own local structure.",
+      "The brevity of this Torah in the dataset likely reflects that it is a short teaching — only 5 lines in the source text — with one concentrated conceptual equation at its center."
+    ]
+  }
+}

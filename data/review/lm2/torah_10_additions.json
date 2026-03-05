@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "source": "Torah #10 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "בדיחא דעתה",
+      "node_text": "בְּדִיחָא דַּעְתֵּהּ",
+      "polarity": "good",
+      "reason": "The source text says explicitly 'וְזֶה בְּחִינַת (שבת עז:): בְּדִיחָא דַּעְתֵּהּ' — the practice of connecting simcha to one's mind IS a bechina of the Talmudic concept 'bedicha dateh' (joyful/liberated mind, Shabbat 77b). This is an explicit bechina statement: connecting joy to the mind and the Aramaic term 'bedicha dateh' are two expressions of the same reality — the joyful, liberated mind. This node belongs in Package 1 alongside שמחה and עולם החרות as another facet of the same domain of joyful freedom.",
+      "source_quote": "וְזֶה בְּחִינַת (שַׁבָּת עז:): בְּדִיחָא דַּעְתֵּהּ, שֶׁהוּא דָּבָר גָּדוֹל, דְּהַיְנוּ שֶׁמְּקַשֵּׁר הַשִּׂמְחָה לְמֹחוֹ וְדַעְתּוֹ",
+      "in_dataset_already": true,
+      "dataset_note": "The node 'בדיחא דעתה' exists in reference 1010 but ONLY as an eitza edge (toward 'למעלה נעשה מזה יחוד גדול'). The bechina relationship between 'בדיחא דעתה' and 'שמקשר השמחה למחו ודעתו' — the explicit equivalence the text establishes — is missing from the dataset. The two nodes are the same concept stated in two ways, and a bechina edge between them should be added."
+    },
+    {
+      "package_id": 1,
+      "node_id": "מוח ודעת בן חורין",
+      "node_text": "מֹחוֹ וְדַעְתּוֹ בֶּן חוֹרִין",
+      "polarity": "good",
+      "reason": "The text states 'אֲזַי מֹחוֹ וְדַעְתּוֹ בֶּן־חוֹרִין, וְאֵינוֹ בִּבְחִינַת גָּלוּת' — the mind in freedom (ben chorin) is an aspect of the same domain as עולם החרות. When simcha is connected to the mind, the mochin becomes ben chorin. The text uses the phrase 'בבחינת' explicitly: the mochin's state of ben chorin is a bechina of freedom (cherut). This concept belongs in Package 1 as another face of the simcha-cherut domain.",
+      "source_quote": "אֲזַי מֹחוֹ וְדַעְתּוֹ בֶּן־חוֹרִין, וְאֵינוֹ בִּבְחִינַת גָּלוּת",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "evil_mirror_analysis": {
+    "note": "This Torah is very brief and focused entirely on the positive path. The evil counterparts are mentioned only in eitza relationships, not as bechina pairs. The structural evil mirror would be: מרה שחורה (depression) as the anti-שמחה, and גלות (exile) as the anti-עולם החרות. However, the text does NOT explicitly equate these evil concepts via bechina language — it describes them only as causal obstacles ('through depression one cannot lead the mind', 'through exile the mind is not settled'). Therefore no evil package can be formally proposed from the bechina evidence alone, but the evil structural mirror is: מרה שחורה ↔ גלות (both are the domain of blocked mochin and spiritual constriction).",
+    "implicit_evil_nodes": [
+      {
+        "node_id": "מרה שחורה",
+        "mirror_of": "שמחה",
+        "evidence": "עַל־יְדֵי מָרָה־שְׁחוֹרָה אִי אֶפְשָׁר לְהַנְהִיג אֶת הַמֹּחַ כִּרְצוֹנוֹ — mentioned as the obstacle to joy, structural opposite of שמחה"
+      },
+      {
+        "node_id": "גלות",
+        "mirror_of": "עולם החרות",
+        "evidence": "כִּי עַל־יְדֵי גָּלוּת אֵין הַדַּעַת מְיֻשָּׁב — galut is the structural opposite of cherut/freedom; the text contrasts them directly"
+      }
+    ]
+  },
+  "analysis_notes": {
+    "total_bechina_edges": 1,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "מוח ודעת בן חורין (the mind as free/ben chorin — a bechina aspect of the cherut domain)",
+      "בדיחא דעתה as a bechina of שמקשר השמחה למחו ודעתו (currently only eitza in dataset, but source text uses explicit bechina language)"
+    ],
+    "dataset_coverage_note": "This Torah has a very sparse bechina dataset — only 1 bechina edge captured out of many conceptual nodes recorded. The dataset for reference 1010 has 11 edges total, of which 10 are eitza/cause and only 1 is bechina. The Torah text is correspondingly brief (6 lines) and predominantly practical/eitza in structure. The single explicit bechina ('שמחה הוא עולם החרות') is correctly captured.",
+    "torah_structure_note": "LM2 Torah 10 is one of the shortest in the corpus. Its argument is entirely linear (eitza chain): lack of yishuv ha-daat → need for simcha → simcha is cherut → simcha enables the mind to be free → yishuv ha-daat achieved → return to God. The only structural bechina (parallel nature) is at the pivot point: simcha IS freedom (not 'causes' freedom — they are the same thing)."
+  }
+}

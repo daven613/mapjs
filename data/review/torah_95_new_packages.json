@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "source": "Torah #95 (Likutay Moharan Vol. 1)",
+    "type": "new_package_proposals",
+    "generated": "2026-03-03"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": "95-A",
+      "torah_ref": 95,
+      "label": "מָה וְאֶפֶס וָאַיִן — בְּחִינַת הַבִּיטּוּל",
+      "label_en": "Mah, Ephes, and Ayin — The Aspect of Self-Nullification",
+      "polarity": "good",
+      "dominant_node": "מה",
+      "nodes": ["מה", "אפס", "אין"],
+      "justification": "The Rebbe presents all three terms in one compound phrase — 'בִּבְחִינַת מָה וְאֶפֶס וָאַיִן' — using the explicit bechina marker בְּחִינַת. This establishes מה, אפס, and אין as three parallel expressions of the same essential state: the humility/self-nullification that a leader must embody. Three concepts, explicitly marked with bechina language, forming an independent domain (the positive humility pole) not currently covered by any bechina package in Torah #95. Threshold satisfied: 3+ concepts, bechina language present, independent domain."
+    },
+    {
+      "id": "95-B",
+      "torah_ref": 95,
+      "label": "קֻפָּה שֶׁל שְׁרָצִים וְאֲחוֹרַיִם דְּמָ\"ה",
+      "label_en": "The Basket of Creeping Things and the Back-Aspect of MaH",
+      "polarity": "neutral",
+      "dominant_node": "קופה של שרצים",
+      "nodes": ["קופה של שרצים", "אחוריים דמ\"ה"],
+      "justification": "Only 2 nodes — does NOT meet the 3+ threshold for an independent new package. Listed here as a candidate but classified as a 2-node component that belongs together as a minor package. The two nodes are explicitly equated (peirush = bechina-identity) but do not form an independent 3+ cluster. Classified as a small package rather than a full new domain package.",
+      "threshold_met": false,
+      "note": "Kept as a distinct package in torah_95_packages.json because (a) Torah #95 has no pre-existing packages into which it could be merged, and (b) its thematic nature (neutral structural mechanism) prevents it from merging into either the good Package A or the evil Package C without violating the bechina-only grouping rule."
+    },
+    {
+      "id": "95-C",
+      "torah_ref": 95,
+      "label": "גַּאֲוָה וּפֶה — הַמַּנְהִיג הַמִּתְגָּאֶה",
+      "label_en": "Arrogance and the Mouth — The Proud Leader",
+      "polarity": "evil",
+      "dominant_node": "פה",
+      "nodes": ["פה", "גאוה", "בזיון"],
+      "justification": "Three concepts forming the evil mirror of Package A. The Rebbe uses הַיְנוּ (MEANING / that is) — a standard bechina-identity marker — to equate the remaining-פה with the opened mouths of the public. גאוה (arrogance), פה (mouth), and בזיון (disgrace) are co-expressions of the same evil state: what the leader IS when מה is removed. Three concepts, bechina language present (הַיְנוּ), independent domain (the negative arrogance pole), not covered by any prior bechina package in Torah #95. Threshold satisfied: 3+ concepts, bechina language present, independent domain."
+    }
+  ],
+  "observations": "Torah #95 is a short but structurally complete Torah of 3 lines. Despite having zero bechina edges in the dataset, the source text contains sufficient bechina language to propose two full new packages (95-A and 95-C, each with 3 nodes) and one minor 2-node package (95-B).\n\nThe teaching has a clear three-part structure:\n(1) The mechanism: קופה של שרצים = אחוריים דמ\"ה [Package 95-B, neutral]\n(2) The good outcome when mechanism is present: מה + אפס + אין [Package 95-A, good]\n(3) The evil outcome when mechanism is absent: גאוה + פה + בזיון [Package 95-C, evil]\n\nThe good/evil mirror structure is exact: Package 95-A (humility cluster) is the perfect positive counterpart to Package 95-C (arrogance cluster). The same leader, the same person — but one holds himself as mah, the other strips mah away and is left with peh/biz'ayon.\n\nThe kabbalistic key is the gematria/wordplay from Etz Chaim: אֲחוֹרַיִם דְּמ\"ה = remove מ\"ה = leaves פ\"ה. This formula encodes the entire Torah: mah (humility) vs. peh (disgrace). The basket ensures mah stays in place; without it, peh is all that remains.\n\nCRITICAL NOTE FOR HUMAN REVIEW: All three proposed packages come entirely from gap analysis (source text), not from the bechina dataset. Before these packages can be formally adopted, the following bechina edges need to be added to torahData.js:\n  1. מה ↔ אפס (reference=95, type=bechina)\n  2. מה ↔ אין (reference=95, type=bechina)\n  3. קופה של שרצים ↔ אחוריים דמ\"ה (reference=95, type=bechina)\n  4. פה ↔ גאוה (reference=95, type=bechina)\n  5. פה ↔ בזיון (reference=95, type=bechina)\nAdditionally, edge 1738 (currently eitza) should be reviewed — the node2_id 'מחזיק את עצמו בבחינת מה ואפס ואין' is a compound eitza-outcome node and should potentially be split: the eitza arrow points to the state of מה (Package 95-A), not to the individual concepts. The eitza edge itself is correct (basket → humility-state) but the node2_id could be canonicalized to 'מה' as the central node."
+}

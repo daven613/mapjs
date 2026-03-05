@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "source": "Torah #116 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference === 116 AND type === 'bechina'. The dataset contains exactly 0 bechina edges for Torah #116. The single edge in the dataset for this Torah (id: 2176, הנותן צדקה → נצול מעברות) is correctly classified as type 'eitza'. The source text (torah_116.txt, 3 lines) contains NO bechina language whatsoever — no בְּחִינַת / הוּא בְּחִינַת / נִקְרָא / הַיְנוּ [equivalence] markers appear anywhere in the text. Torah #116 is a pure cause-and-effect chain: giving charity → receiving heavenly compassion → receiving daat → being saved from the spirit of foolishness → being saved from sin. Every link in this chain is an eitza (causal flow), not a bechina (shared nature). There are therefore no concept packages to form from bechina connections, no connected components to analyze, and no gap additions to propose. See torah_116_additions.json for the confirmed empty additions list and torah_116_new_packages.json for the NO_NEW_PACKAGES determination."
+  },
+  "packages": [],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_eitza_edges_in_dataset": 1,
+    "total_nodes_from_dataset": 0,
+    "total_packages": 0,
+    "raw_connected_components_from_dataset": 0,
+    "components_merged_into_packages": 0,
+    "note_on_dataset_completeness": "Torah #116 has 1 edge total in the dataset (reference === 116), and it is an eitza edge. This is not a case of dataset sparsity — the Torah itself is structurally eitza-only. The source text is 3 lines long and presents a tightly reasoned syllogism: (1) one who shows compassion on creatures receives compassion from heaven; (2) heavenly compassion necessarily includes the gift of daat; (3) sin only occurs when a spirit of foolishness (ruach shtut) enters — which is blocked by daat; (4) therefore, giving charity (an act of compassion) → saved from sin. All four logical steps are causal/consequential, not parallel-nature identifications. The dataset is complete for this Torah as-is."
+  }
+}

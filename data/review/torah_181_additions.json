@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "source": "Torah #181",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, extracted all bechina edges for reference===181 from torahData.js (2 edges found: יעקב↔כבוד and יעקב↔נפש). Read full source text torah_181.txt (8 lines). Scanned every sentence for bechina-language markers: בְּחִינַת, הוּא בְּחִינַת, בְּחִינוֹת, נִקְרָא, הַיְנוּ. The one explicit bechina passage (line 6) is fully covered by the two dataset edges. All other concept-connections in the text are causal (eitza) in nature. The 3 dataset bechina nodes (יעקב, כבוד, נפש) are all assigned to Package 1. No nodes present in bechina edges are left unassigned."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 2,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "קֶשֶׁר (conspiracy / binding alliance)",
+        "reason": "The central mechanism of the teaching. The Rebbe explains how binding together (hitkashsherut) of multiple persons aggregates their individual portions of kavod into a collective force. This is a structural-causal concept: the conspiracy CAUSES the fall of a leader (eitza). The text does not declare 'kesher הוּא בְּחִינַת X' — it describes what a kesher does, not what it essentially is. No bechina language. Eitza role only."
+      },
+      {
+        "concept": "חֶלְקֵי הַכָּבוֹד (portions/shares of honor)",
+        "reason": "A subdivision of the kavod concept used to describe the arithmetic of the teaching: each person has a 'chelek' (portion) of honor, and conspiracy aggregates many small portions into one large one. This is a quantitative aspect of the kavod mechanism — not a separate bechina node. The phrase 'chelkei ha-kavod' is descriptive and modifies how kavod operates in the world; the Rebbe does not declare it equivalent to any other concept. Not a gap addition."
+      },
+      {
+        "concept": "גַּדְלוּת / קַטְנוּת (greatness / smallness)",
+        "reason": "Mentioned in the phrase 'הַקַּטְנוּת בָּטֵל לִפְנֵי גַּדְלוּת' (line 1), citing the verse from Job 29:8 ('ra'uni ne'arim ve-nichbe'u'). This describes the natural phenomenon of lesser kavod yielding before greater kavod. The Rebbe uses this as an illustration, not as a bechina identity statement. No 'X הוא בחינת Y' language. Eitza-logic illustration only."
+      },
+      {
+        "concept": "רְשָׁעִים (wicked ones)",
+        "reason": "Introduced in line 3 as a qualification: a conspiracy of wicked people (kesher resha'im) does not count toward this calculus, because wicked people have no share in kavod. The Rebbe cites Sanhedrin 26 for this principle. This is a categorical exclusion within the eitza argument — it does not establish a bechina between resha'im and any other concept within Torah #181. Note: resha'im appears as a bechina node in other Torahs, but in Torah #181 it plays only a definitional role in the causal chain."
+      },
+      {
+        "concept": "חִיּוּת מֵהַנֶּפֶשׁ (vitality from the soul)",
+        "reason": "Line 4: 'אִם אֵינוֹ רָשָׁע וְיֵשׁ לוֹ חִיּוּת מֵהַנֶּפֶשׁ – יֵשׁ לוֹ חֵלֶק בַּכָּבוֹד.' This is a conditional causal statement: having vitality from the nefesh GIVES one a portion of kavod. The phrase 'chiyut me-ha-nefesh' is not declared a bechina of any other concept — it is the condition (causal input) in an eitza chain. The nefesh is already in Package 1; chiyut is merely the manner by which the nefesh grants kavod. Not a separate bechina node and not a gap addition."
+      },
+      {
+        "concept": "תַּאֲוַת נִיאוּף (lust / sexual immorality)",
+        "reason": "Line 7: 'עִקַּר הַנְּפִלָּה – שֶׁנּוֹפֵל לְתַאֲוַת נִאוּף.' When a person is brought down (through the conspiracy), the primary form of their fall is taavat niuf. This is an eitza-consequence node: the result of losing one's portion of kavod. The text does not declare niuf a bechina of any concept in the Torah — it names the negative outcome. This is the evil mirror of kavod (losing kavod → falling to lust), but no bechina language establishes an identity equivalence. Pure eitza."
+      },
+      {
+        "concept": "נְפִילָה (falling / downfall)",
+        "reason": "Used repeatedly (lines 1, 2, 3, 5, 7) to describe the result of the conspiracy: the target 'falls.' Nefilah is the eitza-consequence of the aggregated kavod conspiracy. It is never declared a bechina of another concept within this Torah. Causal narrative role only."
+      },
+      {
+        "concept": "מַחֲלֹקֶת קֹרַח (Korach's rebellion)",
+        "reason": "Introduced in line 5 as the historical exemplar of the conspiracy model. The Rebbe says Jacob prayed against this pattern ('al techayd kevodi') to protect Moses from Korach's assembly. Korach's rebellion is cited as an instance of the kesher mechanism — a historical illustration in the eitza narrative. No bechina declaration. Not a gap addition."
+      },
+      {
+        "concept": "צַדִּיק הָאֱמֶת (the true tzaddik)",
+        "reason": "Appears in line 8 as the subject of a new sub-teaching: everything said about the true tzaddik and his followers actually constitutes great blessings. This is a bridge to a new causal point, not a bechina statement within Torah #181. The tzaddik's relationship to kavod is implied but not formally stated as a bechina identity here."
+      }
+    ],
+    "structural_observation": "Torah #181 is an 8-line teaching with one concentrated bechina passage (line 6) and one causal chain running through the rest. The bechina passage — 'יַעֲקֹב הוּא בְּחִינַת הַכָּבוֹד, כִּי הוּא בְּחִינוֹת הַנֶּפֶשׁ' — is fully captured by the 2 dataset edges (יעקב↔כבוד, יעקב↔נפש). The rest of the text is a pure eitza chain: kesher of conspirators → aggregation of chelkei kavod → neutralization of the target's kavod → nefilah of the target → taavat niuf. The dataset is complete for this Torah: no bechina gaps exist."
+  }
+}

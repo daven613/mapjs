@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "source": "Torah #199",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, scanned all edges in torahData.js for reference===199, and read the full source text torah_199.txt. For each statement in the source text, checked for explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, לְשׁוֹן, בְּגִימַטְרִיָּא as equivalence). The single existing dataset edge for reference 199 is an eitza. Identified all concepts in the source text and evaluated each for bechina content."
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "דבש = אשה (honey = woman, by gematria — both equal 306)",
+      "source_text_ref": "Line 3: 'כִּי דְּבַשׁ בְּגִימַטְרִיָּא אִשָּׁה כַּמּוּבָא בַּכְּתָבִים'",
+      "proposed_edge": {
+        "node1_id": "דבש",
+        "node2_id": "אשה",
+        "type": "bechina",
+        "reference": 199
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe explicitly states: 'because honey (דבש) in gematria equals woman (אשה), as stated in the Writings.' The kabbalistic writings (כתבים) he refers to are the Ari's writings, where gematria equivalences constitute ontological identity — a shared spiritual root. In Rebbe Nachman's methodology, an equal gematria functions as a bechina: the two concepts share the same numerical-spiritual essence. This is the foundational bechina of the entire Torah. The teaching's mechanism depends entirely on this equation: the מִדְּבַשׁ (sweeter than honey) in Psalm 119 is not just a stylistic simile — because דבש = אשה in gematria, when a person feels the taste of Torah sweetness (which IS the bechina of honey), he is literally sweetening the domain of אשה (his wife). Without this bechina, the connection between Torah-sweetness and protection of one's wife is arbitrary. With it, the protection is structurally guaranteed. This edge is the single missing piece that makes Torah #199 fully representable in the graph."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "medium",
+      "description": "מתיקות בהתורה = דבש (the sweetness one tastes in Torah IS honey — via the verse 'מִדְּבַשׁ לְפִי')",
+      "source_text_ref": "Line 3: 'וְגַם הַכָּתוּב מְסַיֵּם: מִדְּבַשׁ לְפִי – שֶׁעַל יְדֵי זֶה הַמְּתִיקוּת שֶׁמַּרְגִּישִׁין בְּהַתּוֹרָה מַמְתִּיקִין הַדִּין שֶׁל מִיתַת אִשְׁתּוֹ'",
+      "proposed_edge": {
+        "node1_id": "מתיקות בהתורה",
+        "node2_id": "דבש",
+        "type": "bechina",
+        "reference": 199
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe cites the verse 'מִדְּבַשׁ לְפִי' — 'sweeter than honey to my mouth' — as evidence that the sweetness felt in Torah IS the bechina of honey (דבש). The verse's continuation of Psalm 119's praise of Torah-sweetness culminates in the word 'דבש', and the Rebbe uses this to establish the equivalence: the Torah's sweetness = דבש. This is slightly weaker than a direct 'הוא בחינת' statement — the Rebbe uses the verb מַמְתִּיקִין (sweetening) which is more eitza-flavored — but the structural logic of the teaching requires this to be a bechina: the person is not *causing* honey through Torah study, but rather their felt sweetness *is* honey (they are in the same domain/essence). Priority is medium because the direct gematria equation (דבש = אשה) is the stronger and more clearly stated bechina, and this edge would add an implicit extension of Package 1 from 2 nodes to 3. However, if the edge is classified as eitza instead (Torah sweetness → produces a honey-like effect → sweetens the din), the essential argument still stands via the primary בחינה."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "המתקה (sweetening / mitigation of harsh judgment) — appears as the overall category of the teaching; related to המתקת הדין",
+      "ענש של אלמן (the punishment of becoming a widower) — the specific harsh decree being mitigated",
+      "אלמן (widower) — the state being avoided; the Rebbe decodes its letters as an acronym",
+      "מרגישין טעם מתיקות בהתורה (feeling the taste of sweetness in Torah) — the practice; this appears in the eitza edge already in the dataset",
+      "מה נמלצו לחכי אמרתך (Psalm 119 — 'How sweet are Your words to my palate') — the proof-verse whose initials = אלמן",
+      "מדבש לפי ('sweeter than honey to my mouth' — Psalm 119:103) — the second half of the verse; the word דבש triggers the gematria teaching",
+      "דבש (honey) — the pivot of the teaching; gematria 306",
+      "אשה (woman/wife) — the subject of the protected domain; gematria 306",
+      "ממתיקין הדין (sweetening the judgment) — the mechanism; eitza result of the practice",
+      "מיתת אשתו (death of his wife) — the specific decree being sweetened"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "אלמן",
+        "reason": "The word אלמן (widower) is used by the Rebbe as the subject of the teaching and as an acronym (ראשי תיבות of מה נמלצו לחכי אמרתך). An acronym relationship is not a bechina in the framework's sense — it is a hermeneutic/exegetical device, not a parallel-aspects (same-essential-nature) equation. The Rebbe is not saying 'widowhood IS an aspect of sweetness in Torah' — he is saying the letters encode the solution. No bechina edge proposed."
+      },
+      {
+        "concept": "המתקה (sweetening)",
+        "reason": "המתקה functions as an eitza concept in this Torah: it is what sweetness in Torah PRODUCES (the mitigation of harsh judgment). The Rebbe does not equate המתקה with any other concept via bechina language; he describes it as the effect of the practice. Already captured in the dataset's eitza edge (שמרגישין טעם מתיקות בהתורה → להנצל מענש של אלמן). No additional bechina edge proposed."
+      },
+      {
+        "concept": "מה נמלצו לחכי אמרתך (Psalm 119 verse)",
+        "reason": "This verse is cited as a proof-text (a ראיה) for the eitza relationship, decoded through the acronym of אלמן. The verse as a whole is not equated with another concept — it is evidence, not a bechina equation. No bechina edge proposed."
+      }
+    ],
+    "structural_observations": [
+      "Torah #199 is the shortest Torah in the dataset (3 lines). Its structure is extremely compressed: one eitza relationship (sweetness in Torah → protection from widowhood), grounded in one bechina pivot (דבש = אשה), with two proof-mechanisms (acronym of אלמן; gematria of דבש = אשה).",
+      "The gematria-bechina (דבש = אשה) is the teaching's only bechina equation and also its deepest structural claim. It explains WHY the eitza works: the mechanism is not arbitrary — it is grounded in ontological identity between honey and woman.",
+      "The Torah does not feature a good/evil polarity structure. There is no evil mirror: the teaching does not discuss an opposing force or a dark counterpart. The only 'negative' element is the ענש של אלמן (punishment of widowhood), but this functions as the threat being averted, not as a conceptual domain with its own bechina cluster.",
+      "The source text is entirely in Hebrew and appears to be a brief teaching transmitted from Rebbe Nachman, likely via Rav Nosson of Breslov. The style (דַּע שֶׁ — 'know that') is characteristic of transmitted oral teachings.",
+      "The eitza edge already in the dataset (שמרגישין טעם מתיקות בהתורה → להנצל מענש של אלמן) correctly captures the practical advice structure. What is missing is the bechina foundation (דבש = אשה) that gives the mechanism its depth."
+    ]
+  }
+}

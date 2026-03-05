@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "source": "Torah #111 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #111 has ZERO bechina edges in the dataset (reference 111 is entirely absent from torahData.js). The Torah source text consists of only 2 lines and contains NO explicit bechina language (no instances of בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, or equivalent bechina markers). The teaching technique employed is notarikon (רָאשֵׁי תֵּבוֹת — acronym/initial letters), not bechina (parallel essential nature). The two verses cited encode the word 'רַבִּי' as an acronym: (1) 'רֹאשׁ בְּנֵי יִשְׂרָאֵל' (Exodus 30:12) from the side of holiness, and (2) 'רְשָׁעִים בַּחֹשֶׁךְ יִדָּמוּ' (I Samuel 2:9) in reverse from the side of evil. Because the bechina subgraph for Torah #111 is empty (no edges, no nodes), no connected components exist and no packages can be formed from the data. The Torah's conceptual structure — a good/evil mirror encoded in acronyms of the word 'RABBI' — is real but expressed through notarikon, which falls outside the bechina edge type. The dataset requires bechina enrichment before package analysis is possible for this Torah."
+  },
+  "packages": [],
+  "notarikon_structure": {
+    "description": "Torah #111 is structured entirely as a notarikon (acronym) teaching. The Rebbe reveals that the word 'רַבִּי' (Rebbi/master) is encoded as the initial letters of two biblical verses — one from the side of holiness and one, in reverse order, from the side of evil. This is the good/evil mirror of the teaching.",
+    "good_side": {
+      "verse": "רֹאשׁ בְּנֵי יִשְׂרָאֵל",
+      "source": "Exodus 30:12 (שמות ל׳:י״ב)",
+      "acronym_direction": "forward",
+      "initials": "רַבִּי",
+      "polarity": "good"
+    },
+    "evil_side": {
+      "verse": "רְשָׁעִים בַּחֹשֶׁךְ יִדָּמוּ",
+      "source": "I Samuel 2:9 (שמואל א׳ ב׳:ט׳)",
+      "acronym_direction": "reverse (וּלְהֵפֶךְ)",
+      "initials": "יִדָּמוּ בַּחֹשֶׁךְ רְשָׁעִים → י-ב-ר → reversed to ר-ב-י",
+      "polarity": "evil",
+      "note": "The reversal itself (וּלְהֵפֶךְ — 'and in reverse') is the structural marker of the evil side. In Rebbe Nachman's teachings, the evil/sitra achra domain is frequently characterized by reversal and inversion of the holy structure."
+    },
+    "implicit_good_evil_mirror": {
+      "present": true,
+      "description": "The word רַבִּי (the Torah master/teacher) exists in BOTH the holy and the evil dimension — encoded forward in a verse about the head of Israel's holiness, and encoded in reverse in a verse about the wicked silenced in darkness. The master's spiritual power is thus present on both sides: illuminating from the side of kedushah, and as a latent force opposed by the realm of darkness.",
+      "mirror_pairs": [
+        {
+          "good": "רֹאשׁ בְּנֵי יִשְׂרָאֵל — 'the head of the children of Israel' (holy head, leading in light)",
+          "evil": "רְשָׁעִים בַּחֹשֶׁךְ יִדָּמוּ — 'the wicked shall be silenced in darkness' (death/silence in darkness)"
+        },
+        {
+          "good": "רַבִּי spelled forward (natural, holy order)",
+          "evil": "רַבִּי spelled in reverse (inverted, evil order — וּלְהֵפֶךְ)"
+        }
+      ]
+    }
+  },
+  "dataset_status": {
+    "bechina_edges_found": 0,
+    "total_nodes_in_dataset": 0,
+    "eitza_edges_found": 0,
+    "total_edges_for_torah_111": 0,
+    "conclusion": "Torah #111 has no representation in torahData.js. The entire Torah is absent from the dataset. This is consistent with its extreme brevity (2 lines) and its exclusive use of notarikon rather than bechina technique."
+  },
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "note": "No bechina subgraph exists for Torah #111. The Torah's notarikon technique is not represented in the bechina edge type. If this Torah were to be enriched, potential bechina edges would need to be derived from other Torahs that discuss the concept of 'רַבִּי' or the good/evil mirror structure of holy versus evil encoding. However, Torah #111 itself contains no explicit bechina statements, so no bechina edges can legitimately be extracted from it."
+  }
+}

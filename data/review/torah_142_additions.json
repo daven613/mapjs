@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "source": "Torah #142",
+    "volume": "Likutay Moharan Vol. 1",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_142_packages.json, the 2 reference===142 bechina edges from torahData.js, and the full source text torah_142.txt. For each bechina statement in the source text (identified by the markers: בְּחִינַת, נִקְרָא, הוּא בְּחִינַת, זֶה בְּעַצְמוֹ used in an equating sense), verified whether the concept appears as a node in the dataset for reference 142 and whether it is assigned to a package."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "לֵב שֶׁלְּמַעְלָה וְסֵפֶר הַזִּכָּרוֹן",
+      "node_id": "אברהם",
+      "node_text": "אַבְרָהָם",
+      "polarity": "good",
+      "reason": "Line 9 of the source text states: 'וְעַל-כֵּן נִקְרָא אַבְרָהָם אָבִינוּ צוּר... כִּי הוּא בְּחִינַת צוּר לְבָבִי, כִּי לֹא הָיָה לוֹ רַק לֵב חוֹשֵׁק לְהַשֵּׁם יִתְבָּרַךְ.' The word נִקְרָא ('is called') and the phrase הוּא בְּחִינַת are both explicit bechina-language markers as defined in the framework. Abraham is declared to be a bechina of 'צוּר לְבָבִי' — the rock/foundation of the heart (Psalms 73:26). In this Torah, Abraham functions as the paradigm-case of one who had only his burning heart (no teachers, no books, no tzaddikim) and yet received from the supernal heart/Book of Remembrance. His name 'Tzur' is explained as deriving precisely from this heart-longing quality. Abraham therefore belongs to Package 1 (the supernal heart/book domain) as the historical prototype of the teaching's thesis.",
+      "source_quote": "וְעַל-כֵּן נִקְרָא אַבְרָהָם אָבִינוּ צוּר... כִּי הוּא בְּחִינַת צוּר לְבָבִי, כִּי לֹא הָיָה לוֹ רַק לֵב חוֹשֵׁק לְהַשֵּׁם יִתְבָּרַךְ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "The node 'אברהם' exists in the dataset (e.g., edge 1258) and the conceptIndex.js confirms the canonical form as 'אברהם' with aliases 'אברהם אבינו' and '\"אברהם אוהבי\"'. However, no reference-142 bechina edge for אברהם exists in the dataset. The specific bechina pair needed is אברהם ↔ צוּר (in the sense of צוּר לְבָבִי), contextualized within Torah 142's teaching about heart-longing as the foundation of Torah reception."
+    },
+    {
+      "package_id": 1,
+      "package_label": "לֵב שֶׁלְּמַעְלָה וְסֵפֶר הַזִּכָּרוֹן",
+      "node_id": "צוּר לְבָבִי",
+      "node_text": "צוּר לְבָבִי",
+      "polarity": "good",
+      "reason": "Line 9 explicitly identifies Abraham with 'צוּר לְבָבִי' (Psalms 73:26) — 'the rock of my heart.' The phrase 'הוּא בְּחִינַת צוּר לְבָבִי' is a direct bechina declaration. In the context of Torah 142, 'צוּר לְבָבִי' captures the essential nature of one whose only possession is a heart that yearns for God — this is the title/epithet for Abraham and for all those who lack external means of study. The node 'צוּר לְבָבִי' exists in the dataset (e.g., line 874, node2_id '\"צור לבבי\"') but not as a reference-142 edge. The concept is deeply apposite to Package 1 since 'צוּר' (rock/foundation) used as a metaphor for the heart directly expresses the teaching's central claim that the heart itself IS the book.",
+      "source_quote": "כִּי הוּא בְּחִינַת (תהילים ע\"ג:כ\"ו): צוּר לְבָבִי, כִּי לֹא הָיָה לוֹ רַק לֵב חוֹשֵׁק לְהַשֵּׁם יִתְבָּרַךְ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "This node exists elsewhere in the dataset (e.g., as node2 in edges related to Torah 64 and Torah 2) but no reference-142 edge assigns it to this Torah's teaching."
+    },
+    {
+      "package_id": 1,
+      "package_label": "לֵב שֶׁלְּמַעְלָה וְסֵפֶר הַזִּכָּרוֹן",
+      "node_id": "גרים",
+      "node_text": "גֵּרִים",
+      "polarity": "good",
+      "reason": "Line 10 states: 'וְעַל-כֵּן כָּל הַגֵּרִים נִקְרָאִים עַל שְׁמוֹ, וְנִקְרָאִים נְדִיבֵי עַמִּים עַם אֱלֹהֵי אַבְרָהָם, בְּחִינַת נְדִיב לֵב, כִּי אֵין לָהֶם רַק מַה שֶּׁלִּבָּם נִכְסָף לְהַשֵּׁם יִתְבָּרַךְ, כְּמוֹ אַבְרָהָם.' The word נִקְרָאִים ('are called') and בְּחִינַת are both bechina-language markers. The converts (גרים) are declared to be a bechina of 'נְדִיב לֵב' (generous of heart / noble-hearted). In Torah 142, they are the paradigm-community of those whose only spiritual asset is heart-longing — exactly the subject of the teaching. They follow Abraham as the archetype and are thus part of the same package domain. The node 'גרים' exists in the dataset but not as a reference-142 bechina edge.",
+      "source_quote": "וְנִקְרָאִים נְדִיבֵי עַמִּים עַם אֱלֹהֵי אַבְרָהָם, בְּחִינַת נְדִיב לֵב, כִּי אֵין לָהֶם רַק מַה שֶּׁלִּבָּם נִכְסָף לְהַשֵּׁם יִתְבָּרַךְ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "The node 'גרים' exists elsewhere in the dataset (e.g., node1_id at edge 2402). No reference-142 bechina edge for גרים exists in the dataset."
+    },
+    {
+      "package_id": 1,
+      "package_label": "לֵב שֶׁלְּמַעְלָה וְסֵפֶר הַזִּכָּרוֹן",
+      "node_id": "נדיב לב",
+      "node_text": "נְדִיב לֵב",
+      "polarity": "good",
+      "reason": "Line 10 explicitly declares the converts (גרים) to be a 'בְּחִינַת נְדִיב לֵב' (generous/noble of heart — Exodus 35:22). This is the epithet that characterizes the quality of heart-longing without external resources. 'נְדִיב לֵב' expresses the same essential nature as the other nodes in Package 1: the heart's generous yearning IS the book. It is the attribute-name for the kind of heart that can receive from the supernal heart. The node does not appear in the dataset for reference 142.",
+      "source_quote": "בְּחִינַת (שמות ל\"ה:כ\"ב): נְדִיב לֵב, כִּי אֵין לָהֶם רַק מַה שֶּׁלִּבָּם נִכְסָף לְהַשֵּׁם יִתְבָּרַךְ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "The phrase 'נְדִיב לֵב' does not appear to exist as a standalone node in the dataset. No reference-142 bechina edge for this concept exists."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_142_edges": 2,
+    "total_reference_142_bechina_edges": 2,
+    "total_reference_142_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": [
+        "לב שלמעלה",
+        "ספר זכרון",
+        "מה שהלב חומד ללמד",
+        "למוד מתוך הספר"
+      ]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "אברהם (as reference-142 bechina node)",
+      "צוּר לְבָבִי (as reference-142 bechina node)",
+      "גרים (as reference-142 bechina node)",
+      "נדיב לב (as reference-142 bechina node)"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "שני צדיקים (two tzaddikim)",
+        "reason": "Lines 2-3 describe two distant tzaddikim whose questions and answers complete each other across hundreds of miles. They are agents in the teaching's narrative — the mechanism by which the Book of Remembrance is created. However, the Rebbe does not use bechina-language to equate them with another concept. They are not declared to be a bechina of anything; they are the actors in the eitza/causal story. This is not a bechina gap."
+      },
+      {
+        "concept": "קדוש ברוך הוא / הקב\"ה שומע",
+        "reason": "Lines 3-4 state that God alone hears the exchange between the two distant tzaddikim and writes it in the Book of Remembrance. God is not being equated with another concept here via bechina-language; He is the agent who performs the action (writing, connecting). This is narrative/eitza description, not a bechina node declaration."
+      },
+      {
+        "concept": "לוח לִבֶּךָ (the tablet of your heart)",
+        "reason": "Line 5 uses the verse 'כָּתְבֵם עַל לוּחַ לִבֶּךָ' (Proverbs 3:3) as a proof-text for the supernal heart being a writing surface. The verse is cited to support the bechina לב שלמעלה = ספר זכרון (already in the dataset). 'לוח לבך' is the proof-verse, not an independent bechina node being equated with something else. Not a bechina gap."
+      },
+      {
+        "concept": "יִרְאֵי ה' וְחוֹשְׁבֵי שְׁמוֹ",
+        "reason": "Lines 6-7 cite the verse 'לְיִרְאֵי ה' וּלְחֹשְׁבֵי שְׁמוֹ' (Malachi 3:16) to describe the beneficiaries of the Book of Remembrance — those who yearn to perform mitzvot but are prevented by circumstances. These are categories of people described in the verse, used to support the Talmudic teaching (Berakhot 6) that intention equals performance. They are not equated with other concepts via bechina-language; they are identified as the target audience. Not a bechina gap."
+      },
+      {
+        "concept": "נְשָׁמוֹת קֹדֶם הַבְּרִיאָה (souls before creation)",
+        "reason": "Line 8 mentions that what was written on the supernal heart in Abraham's time was the Torah-innovations of the souls before creation (מַה שֶּׁחִדְּשׁוּ הַנְּשָׁמוֹת קֹדֶם הַבְּרִיאָה). This is a descriptive clause explaining the content of the supernal heart/book in that era, not a bechina equating this concept with another. Not a bechina gap."
+      },
+      {
+        "concept": "נְדִיבֵי עַמִּים (generous peoples)",
+        "reason": "Line 10 uses 'נְדִיבֵי עַמִּים' (Psalms 47) as the Scriptural name by which the converts are called, and then immediately glosses it as 'בְּחִינַת נְדִיב לֵב'. The 'נְדִיבֵי עַמִּים' phrase is the quoted verse, while 'נְדִיב לֵב' is the bechina node. The operative bechina declaration is גרים ↔ נְדִיב לֵב (captured above). 'נְדִיבֵי עַמִּים' is the proof-verse vehicle, not a separate bechina node."
+      }
+    ]
+  }
+}

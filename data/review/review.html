@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Dataset Review</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; min-height: 100vh; }
+
+  /* ── Header ── */
+  .header {
+    background: #1a1a2e;
+    color: white;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .header h1 { font-size: 1.2rem; font-weight: 600; }
+  .header-meta { font-size: 0.85rem; color: #aaa; }
+  .progress-wrap { width: 220px; }
+  .progress-bar-bg { background: #333; border-radius: 10px; height: 8px; margin-top: 6px; }
+  .progress-bar-fill { background: #4ade80; height: 8px; border-radius: 10px; transition: width 0.3s; }
+  .progress-label { font-size: 0.75rem; color: #aaa; margin-top: 3px; text-align: center; }
+
+  /* ── Stats bar ── */
+  .stats-bar {
+    background: white;
+    padding: 10px 30px;
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.85rem;
+  }
+  .stat { display: flex; align-items: center; gap: 6px; }
+  .stat-dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot-pending  { background: #94a3b8; }
+  .dot-accepted { background: #22c55e; }
+  .dot-rejected { background: #ef4444; }
+  .dot-notes    { background: #f59e0b; }
+
+  /* ── Main layout ── */
+  .main { max-width: 860px; margin: 28px auto; padding: 0 20px 60px; }
+
+  /* ── Empty / done states ── */
+  .empty-state {
+    text-align: center;
+    padding: 80px 20px;
+    color: #64748b;
+  }
+  .empty-state h2 { font-size: 1.4rem; margin-bottom: 10px; }
+
+  /* ── Card ── */
+  .card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    margin-bottom: 18px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .card.accepted { border-color: #22c55e; }
+  .card.rejected { border-color: #ef4444; }
+  .card.notes    { border-color: #f59e0b; }
+
+  .card-header {
+    padding: 14px 20px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-header-left { display: flex; align-items: center; gap: 10px; }
+  .change-num { font-size: 0.75rem; color: #94a3b8; font-weight: 600; }
+  .change-type {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
+    border-radius: 99px;
+    text-transform: uppercase;
+    cursor: help;
+    position: relative;
+  }
+  .type-alias      { background: #ede9fe; color: #7c3aed; }
+  .type-companion  { background: #fef9c3; color: #854d0e; }
+  .type-new_edge   { background: #dcfce7; color: #15803d; }
+  .type-merge      { background: #dbeafe; color: #1d4ed8; }
+
+  /* Tooltip */
+  .has-tooltip { position: relative; cursor: help; }
+  .has-tooltip .tooltip-box {
+    visibility: hidden;
+    opacity: 0;
+    background: #1a1a2e;
+    color: #e2e8f0;
+    font-size: 0.78rem;
+    font-weight: 400;
+    line-height: 1.55;
+    padding: 10px 14px;
+    border-radius: 8px;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 300px;
+    z-index: 9999;
+    text-transform: none;
+    letter-spacing: 0;
+    direction: ltr;
+    text-align: left;
+    pointer-events: none;
+    transition: opacity 0.15s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  }
+  .has-tooltip .tooltip-box::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 14px;
+    border: 6px solid transparent;
+    border-bottom-color: #1a1a2e;
+  }
+  .has-tooltip:hover .tooltip-box {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .status-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 99px;
+  }
+  .badge-pending  { background: #f1f5f9; color: #64748b; }
+  .badge-accepted { background: #dcfce7; color: #15803d; }
+  .badge-rejected { background: #fee2e2; color: #b91c1c; }
+  .badge-notes    { background: #fef3c7; color: #b45309; }
+
+  .card-body { padding: 18px 20px; }
+
+  /* merge diagram */
+  .merge-diagram {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    direction: ltr; /* always LTR so the diagram reads: alias → canonical */
+  }
+  .merge-side {
+    flex: 1;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .merge-side-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .merge-word {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 6px;
+  }
+  .merge-sub {
+    font-size: 0.72rem;
+    color: #94a3b8;
+  }
+  .merge-side.removed {
+    background: #fff5f5;
+  }
+  .merge-side.removed .merge-side-label { color: #dc2626; }
+  .merge-side.removed .merge-word { background: #fee2e2; color: #991b1b; }
+  .merge-side.keeps {
+    background: #f0fdf4;
+  }
+  .merge-side.keeps .merge-side-label { color: #15803d; }
+  .merge-side.keeps .merge-word { background: #dcfce7; color: #14532d; }
+  .merge-arrow-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    background: #f8fafc;
+    border-left: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    color: #94a3b8;
+    font-size: 1.4rem;
+  }
+  .merge-summary {
+    font-size: 0.82rem;
+    color: #64748b;
+    background: #f8fafc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 14px;
+    line-height: 1.5;
+    direction: ltr;
+    text-align: left;
+  }
+  .merge-summary strong { color: #334155; }
+
+  /* companion diagram */
+  .companion-diagram {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 16px;
+    border: 1px solid #fde68a;
+    border-radius: 10px;
+    overflow: hidden;
+    direction: ltr;
+  }
+  .companion-node-box {
+    flex: 1;
+    padding: 14px 16px;
+    background: #fffbeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .companion-node-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #92400e;
+  }
+  .companion-node-word {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #78350f;
+    background: #fef3c7;
+    padding: 4px 14px;
+    border-radius: 6px;
+  }
+  .companion-node-sub {
+    font-size: 0.72rem;
+    color: #a16207;
+  }
+  .companion-connector {
+    padding: 0 14px;
+    background: #fef9c3;
+    border-left: 1px solid #fde68a;
+    border-right: 1px solid #fde68a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #92400e;
+    font-size: 1.3rem;
+    min-width: 60px;
+  }
+  .companion-connector-label {
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #b45309;
+  }
+
+  .field { margin-bottom: 12px; }
+  .field-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+    margin-bottom: 4px;
+    direction: ltr;
+    text-align: left;
+  }
+  .field-value { font-size: 0.9rem; color: #334155; line-height: 1.5; direction: ltr; text-align: left; }
+
+  .evidence-box {
+    background: #f8f9ff;
+    border-left: 3px solid #818cf8;
+    padding: 10px 14px;
+    font-size: 0.87rem;
+    color: #475569;
+    border-radius: 6px 0 0 6px;
+    line-height: 1.6;
+    font-style: italic;
+    direction: ltr;
+    text-align: left;
+  }
+
+  .edge-counts {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .edge-chip {
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 0.78rem;
+    color: #475569;
+  }
+  .edge-chip span { font-weight: 600; color: #1a1a2e; }
+
+  /* Notes textarea */
+  .notes-row {
+    margin-top: 12px;
+    display: none;
+  }
+  .notes-row.visible { display: block; }
+  .notes-textarea {
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 0.88rem;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 70px;
+    color: #334155;
+    direction: rtl;
+  }
+  .notes-textarea:focus { outline: none; border-color: #f59e0b; box-shadow: 0 0 0 2px #fef3c7; }
+
+  /* Diff table */
+  .diff-section { margin-bottom: 14px; }
+  .diff-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    direction: ltr;
+    text-align: left;
+  }
+  .diff-table th {
+    background: #f1f5f9;
+    color: #64748b;
+    font-weight: 700;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 5px 8px;
+    border: 1px solid #e2e8f0;
+  }
+  .diff-table td {
+    padding: 6px 8px;
+    border: 1px solid #e2e8f0;
+    vertical-align: top;
+    color: #334155;
+    max-width: 200px;
+    word-break: break-word;
+  }
+  .diff-row-old td  { background: #fff5f5; }
+  .diff-row-new td  { background: #f0fdf4; }
+  .diff-row-add td  { background: #f0fdf4; }
+  .diff-row-del td  { background: #fff5f5; text-decoration: line-through; color: #94a3b8; }
+  .diff-row-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .label-old { background: #fee2e2; color: #991b1b; }
+  .label-new { background: #dcfce7; color: #14532d; }
+  .label-add { background: #dcfce7; color: #14532d; }
+  .label-del { background: #fee2e2; color: #991b1b; }
+  /* highlight only the cell that changed */
+  .diff-cell-changed-old { background: #fecaca !important; font-weight: 700; color: #7f1d1d; }
+  .diff-cell-changed-new { background: #bbf7d0 !important; font-weight: 700; color: #14532d; }
+  .diff-spacer td { background: transparent; border: none; height: 4px; }
+
+  /* Action buttons */
+  .card-footer {
+    padding: 12px 20px;
+    background: #f8fafc;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+  .btn {
+    padding: 7px 18px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.15s;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+  .btn-accept  { background: #22c55e; color: white; }
+  .btn-accept:hover  { background: #16a34a; }
+  .btn-reject  { background: #ef4444; color: white; }
+  .btn-reject:hover  { background: #dc2626; }
+  .btn-notes   { background: #f59e0b; color: white; }
+  .btn-notes:hover   { background: #d97706; }
+  .btn-undo    { background: #e2e8f0; color: #475569; }
+  .btn-undo:hover    { background: #cbd5e1; }
+  .btn-save-note { background: #f59e0b; color: white; font-size: 0.8rem; padding: 5px 12px; }
+
+  /* Export */
+  .export-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #1a1a2e;
+    padding: 14px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+  }
+  .export-bar-label { color: #94a3b8; font-size: 0.85rem; direction: ltr; }
+  .btn-export {
+    background: #4ade80;
+    color: #1a1a2e;
+    border: none;
+    padding: 9px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .btn-export:hover { background: #22c55e; }
+
+  /* Filter tabs */
+  .filter-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .filter-tab {
+    padding: 6px 14px;
+    border-radius: 99px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background: white;
+    color: #64748b;
+  }
+  .filter-tab.active { border-color: #1a1a2e; color: #1a1a2e; }
+  .filter-tab:hover { background: #f1f5f9; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>📋 Dataset Review</h1>
+    <div class="header-meta" id="headerMeta">Loading...</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+    </div>
+    <div class="progress-label" id="progressLabel">0 / 0 reviewed</div>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat"><div class="stat-dot dot-pending"></div> <span id="statPending">0</span> pending</div>
+  <div class="stat"><div class="stat-dot dot-accepted"></div> <span id="statAccepted">0</span> accepted</div>
+  <div class="stat"><div class="stat-dot dot-rejected"></div> <span id="statRejected">0</span> rejected</div>
+  <div class="stat"><div class="stat-dot dot-notes"></div> <span id="statNotes">0</span> has notes</div>
+</div>
+
+<div class="main">
+  <div class="filter-tabs">
+    <div class="filter-tab active" data-filter="all" onclick="setFilter('all')">All</div>
+    <div class="filter-tab" data-filter="pending" onclick="setFilter('pending')">Pending</div>
+    <div class="filter-tab" data-filter="accepted" onclick="setFilter('accepted')">Accepted</div>
+    <div class="filter-tab" data-filter="rejected" onclick="setFilter('rejected')">Rejected</div>
+    <div class="filter-tab" data-filter="notes" onclick="setFilter('notes')">Has Notes</div>
+  </div>
+  <div id="cards"></div>
+</div>
+
+<div class="export-bar">
+  <div class="export-bar-label">Changes are saved in memory. Export to download a decisions file.</div>
+  <button class="btn-export" onclick="exportDecisions()">⬇ Export Decisions</button>
+</div>
+
+<script>
+// ── State ──────────────────────────────────────────────────────────────
+let data = null;
+let currentFilter = 'all';
+
+// ── Load data ──────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    // Try loading proposed_changes.json from same directory
+    const res = await fetch('proposed_changes.json');
+    if (!res.ok) throw new Error('not found');
+    data = await res.json();
+    render();
+  } catch(e) {
+    document.getElementById('cards').innerHTML = `
+      <div class="empty-state">
+        <h2>No changes file found</h2>
+        <p>Expected <code>proposed_changes.json</code> in the same folder as this file.</p>
+        <p style="margin-top:12px;font-size:0.85rem;color:#94a3b8">Or drag-and-drop a JSON file onto this page.</p>
+      </div>`;
+    document.getElementById('headerMeta').textContent = 'No file loaded';
+  }
+}
+
+// ── Drag & drop fallback ───────────────────────────────────────────────
+document.addEventListener('dragover', e => e.preventDefault());
+document.addEventListener('drop', e => {
+  e.preventDefault();
+  const file = e.dataTransfer.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      data = JSON.parse(ev.target.result);
+      render();
+    } catch { alert('Invalid JSON file'); }
+  };
+  reader.readAsText(file);
+});
+
+// ── Actions ────────────────────────────────────────────────────────────
+function setStatus(id, status) {
+  const change = data.changes.find(c => c.id === id);
+  if (!change) return;
+  change.status = status;
+  updateStats();
+  updateProgress();
+  rerenderCard(id);
+}
+
+function saveNote(id) {
+  const change = data.changes.find(c => c.id === id);
+  if (!change) return;
+  const ta = document.getElementById(`notes-${id}`);
+  change.notes = ta ? ta.value : '';
+  change.status = 'notes';
+  updateStats();
+  updateProgress();
+  rerenderCard(id);
+}
+
+function setFilter(f) {
+  currentFilter = f;
+  document.querySelectorAll('.filter-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.filter === f);
+  });
+  renderCards();
+}
+
+// ── Render ─────────────────────────────────────────────────────────────
+function render() {
+  if (!data) return;
+  document.getElementById('headerMeta').textContent =
+    `${data.meta.source} · ${data.meta.type} · ${data.meta.generated}`;
+  updateStats();
+  updateProgress();
+  renderCards();
+}
+
+function renderCards() {
+  const filtered = data.changes.filter(c =>
+    currentFilter === 'all' || c.status === currentFilter
+  );
+  if (filtered.length === 0) {
+    document.getElementById('cards').innerHTML =
+      `<div class="empty-state"><h2>No changes in this filter</h2></div>`;
+    return;
+  }
+  document.getElementById('cards').innerHTML = filtered.map(c => cardHTML(c)).join('');
+}
+
+function rerenderCard(id) {
+  const change = data.changes.find(c => c.id === id);
+  if (!change) return;
+  // If current filter no longer matches, remove card from view
+  if (currentFilter !== 'all' && change.status !== currentFilter) {
+    const el = document.getElementById(`card-${id}`);
+    if (el) el.style.opacity = '0.3';
+    return;
+  }
+  const el = document.getElementById(`card-${id}`);
+  if (el) el.outerHTML = cardHTML(change);
+}
+
+// ── Diff table ──────────────────────────────────────────────────────────
+const DIFF_COLS = [
+  { key: 'id',        label: 'Row ID' },
+  { key: 'node1_id',  label: 'From (node1)' },
+  { key: 'node2_id',  label: 'To (node2)' },
+  { key: 'type',      label: 'Type' },
+  { key: 'reference', label: 'Torah #' },
+  { key: 'proof',     label: 'Proof text' },
+];
+
+function truncate(s, n) {
+  if (!s) return '—';
+  s = String(s);
+  return s.length > n ? s.slice(0, n) + '…' : s;
+}
+
+function diffTableHTML(diffs) {
+  if (!diffs || diffs.length === 0) return '';
+
+  const header = '<tr>' + DIFF_COLS.map(c => `<th>${c.label}</th>`).join('') + '</tr>';
+
+  const rows = diffs.map(d => {
+    if (d.action === 'add') {
+      const r = d.new;
+      const cells = DIFF_COLS.map(c =>
+        `<td class="diff-cell-changed-new">${truncate(r[c.key], 60)}</td>`
+      ).join('');
+      return `
+        <tr class="diff-row-add">
+          <td colspan="${DIFF_COLS.length}" style="padding:4px 8px;background:#dcfce7">
+            <span class="diff-row-label label-add">+ NEW ROW ADDED</span>
+          </td>
+        </tr>
+        <tr class="diff-row-add">${cells}</tr>`;
+
+    } else if (d.action === 'delete') {
+      const r = d.old;
+      const cells = DIFF_COLS.map(c =>
+        `<td>${truncate(r[c.key], 60)}</td>`
+      ).join('');
+      const noteHTML = d.note ? `<tr><td colspan="${DIFF_COLS.length}" style="padding:4px 8px;background:#fff5f5;font-size:0.75rem;color:#b91c1c;font-style:italic">${d.note}</td></tr>` : '';
+      return `
+        <tr class="diff-row-del">
+          <td colspan="${DIFF_COLS.length}" style="padding:4px 8px;background:#fee2e2">
+            <span class="diff-row-label label-del">✕ ROW DELETED</span>
+          </td>
+        </tr>
+        <tr class="diff-row-del">${cells}</tr>
+        ${noteHTML}`;
+
+    } else if (d.action === 'modify') {
+      const changed = d.changed_fields || [];
+      const oldCells = DIFF_COLS.map(c => {
+        const isChanged = changed.includes(c.key);
+        return `<td class="${isChanged ? 'diff-cell-changed-old' : ''}">${truncate(d.old[c.key], 60)}</td>`;
+      }).join('');
+      const newCells = DIFF_COLS.map(c => {
+        const isChanged = changed.includes(c.key);
+        return `<td class="${isChanged ? 'diff-cell-changed-new' : ''}">${truncate(d.new[c.key], 60)}</td>`;
+      }).join('');
+      return `
+        <tr class="diff-row-old">
+          <td colspan="${DIFF_COLS.length}" style="padding:4px 8px;background:#fee2e2">
+            <span class="diff-row-label label-old">BEFORE</span>
+          </td>
+        </tr>
+        <tr class="diff-row-old">${oldCells}</tr>
+        <tr class="diff-spacer"><td colspan="${DIFF_COLS.length}"></td></tr>
+        <tr class="diff-row-new">
+          <td colspan="${DIFF_COLS.length}" style="padding:4px 8px;background:#dcfce7">
+            <span class="diff-row-label label-new">AFTER</span>
+          </td>
+        </tr>
+        <tr class="diff-row-new">${newCells}</tr>`;
+    }
+    return '';
+  }).join('');
+
+  return `
+    <div class="diff-section">
+      <div class="field-label">Changes to your spreadsheet</div>
+      <div style="overflow-x:auto">
+        <table class="diff-table">
+          <thead>${header}</thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>`;
+}
+
+// Tooltip text for each change type
+const TYPE_INFO = {
+  alias: {
+    label: 'ALIAS — Label Fix',
+    tooltip: 'An alias means two different names in the database that refer to the exact same concept — like writing "NYC" in one place and "New York City" in another. They are not two ideas, just two labels for one thing.\n\nAccepting this: removes the duplicate label and moves all its connections to the main name. Nothing is lost — the concept stays, only the extra name is removed.'
+  },
+  companion: {
+    label: 'COMPANION — Add Connection',
+    tooltip: 'A companion means two genuinely distinct concepts that Rebbe Nachman always teaches as a paired unit — they belong to the same cluster of ideas.\n\nRight now these two concepts exist as separate islands with no direct edge between them.\n\nAccepting this: adds a new connection between them in the map, reflecting how the Rebbe pairs them.'
+  },
+  new_edge: {
+    label: 'NEW CONNECTION',
+    tooltip: 'A proposed new connection between two existing concepts that currently have no path linking them in the map.'
+  }
+};
+
+function cardHTML(c) {
+  const statusLabels = { pending: 'Pending', accepted: '✓ Accepted', rejected: '✗ Rejected', notes: '✎ Has Notes' };
+  const badgeClass = `badge-${c.status}`;
+  const typeInfo = TYPE_INFO[c.type] || { label: c.type.toUpperCase(), tooltip: '' };
+
+  // ── Alias diagram ──────────────────────────────────────────────────────
+  let diagramHTML = '';
+  if (c.type === 'alias') {
+    const ae = c.affected_edges || {};
+    const aliasMergeCount = Object.values(ae.alias_counts || {}).reduce((s,v)=>s+v,0);
+    const aliasNames = (c.aliases || []).join(', ');
+    const removedSides = (c.aliases || []).map(a => {
+      const cnt = (ae.alias_counts || {})[a] || 0;
+      return `
+        <div class="merge-side removed">
+          <div class="merge-side-label">❌ label removed</div>
+          <div class="merge-word">${a}</div>
+          <div class="merge-sub">${cnt} connection${cnt!==1?'s':''} move to survivor</div>
+        </div>`;
+    }).join('<div class="merge-arrow-col" style="border:none">+</div>');
+
+    diagramHTML = `
+      <div class="merge-diagram">
+        ${removedSides}
+        <div class="merge-arrow-col">→</div>
+        <div class="merge-side keeps">
+          <div class="merge-side-label">✓ stays in map</div>
+          <div class="merge-word">${c.canonical}</div>
+          <div class="merge-sub">${ae.canonical_count || 0} original + ${aliasMergeCount} moved</div>
+        </div>
+      </div>
+      <div class="merge-summary">
+        <strong>What happens if accepted:</strong> The label <strong>${aliasNames}</strong> is removed from the map.
+        Its ${aliasMergeCount} connection${aliasMergeCount!==1?'s are':' is'} reassigned to <strong>${c.canonical}</strong>.
+        The concept itself is not lost — it lives on under the name <strong>${c.canonical}</strong>.
+      </div>`;
+
+  // ── Companion diagram ──────────────────────────────────────────────────
+  } else if (c.type === 'companion') {
+    const ae = c.affected_edges || {};
+    const nodes = c.nodes || [];
+    const nodeSides = nodes.map((n, i) => {
+      const edgeCount = i === 0 ? ae.node1_edges : ae.node2_edges;
+      return `
+        <div class="companion-node-box">
+          <div class="companion-node-label">concept ${i+1}</div>
+          <div class="companion-node-word">${n}</div>
+          <div class="companion-node-sub">${edgeCount || 0} existing connections</div>
+        </div>`;
+    });
+    const connectorHTML = `
+      <div class="companion-connector">
+        <span>↔</span>
+        <span class="companion-connector-label">new link</span>
+      </div>`;
+
+    diagramHTML = `
+      <div class="companion-diagram">
+        ${nodeSides.join(connectorHTML)}
+      </div>
+      <div class="merge-summary">
+        <strong>What happens if accepted:</strong> A direct connection is added between
+        <strong>${nodes.join('</strong> and <strong>')}</strong> in the map.
+        Both concepts stay. Nothing is removed. They simply become linked.
+        ${ae.existing_connection ? '⚠️ Note: a connection already exists between these nodes.' : ''}
+      </div>`;
+  }
+
+  // Notes row
+  const notesVisible = c.status === 'notes' ? 'visible' : '';
+  const notesValue = c.notes || '';
+
+  // Buttons
+  let buttons = '';
+  if (c.status === 'pending') {
+    buttons = `
+      <button class="btn btn-accept" onclick="setStatus(${c.id},'accepted')">✓ Accept</button>
+      <button class="btn btn-reject" onclick="setStatus(${c.id},'rejected')">✗ Reject</button>
+      <button class="btn btn-notes" onclick="toggleNotes(${c.id})">✎ Notes</button>`;
+  } else {
+    buttons = `<button class="btn btn-undo" onclick="setStatus(${c.id},'pending')">↩ Undo</button>`;
+    if (c.status !== 'notes') {
+      buttons += `<button class="btn btn-notes" onclick="toggleNotes(${c.id})">✎ Add Note</button>`;
+    }
+  }
+
+  // Tooltip text (newlines → <br>)
+  const tooltipHTML = typeInfo.tooltip.replace(/\n/g, '<br>');
+
+  return `
+  <div class="card ${c.status}" id="card-${c.id}">
+    <div class="card-header">
+      <div class="card-header-left">
+        <span class="change-num">#${c.id}</span>
+        <span class="change-type type-${c.type} has-tooltip">
+          ${typeInfo.label}
+          <span class="tooltip-box">${tooltipHTML}</span>
+        </span>
+      </div>
+      <span class="status-badge ${badgeClass}">${statusLabels[c.status]}</span>
+    </div>
+    <div class="card-body">
+      ${diagramHTML}
+      <div class="field">
+        <div class="field-label">Why this was flagged</div>
+        <div class="field-value">${c.reason}</div>
+      </div>
+      ${c.evidence ? `
+      <div class="field">
+        <div class="field-label">Evidence from the source text</div>
+        <div class="evidence-box">${c.evidence}</div>
+      </div>` : ''}
+      ${diffTableHTML(c.edge_diff)}
+      <div class="notes-row ${notesVisible}" id="notesrow-${c.id}">
+        <div class="field-label" style="margin-bottom:6px">Your Notes</div>
+        <textarea class="notes-textarea" id="notes-${c.id}" placeholder="Write notes here...">${notesValue}</textarea>
+        <div style="margin-top:6px;text-align:left">
+          <button class="btn btn-save-note" onclick="saveNote(${c.id})">Save Note & Mark</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">${buttons}</div>
+  </div>`;
+}
+
+function toggleNotes(id) {
+  const row = document.getElementById(`notesrow-${id}`);
+  if (row) row.classList.toggle('visible');
+}
+
+function updateStats() {
+  if (!data) return;
+  const counts = { pending: 0, accepted: 0, rejected: 0, notes: 0 };
+  data.changes.forEach(c => counts[c.status] = (counts[c.status] || 0) + 1);
+  document.getElementById('statPending').textContent = counts.pending || 0;
+  document.getElementById('statAccepted').textContent = counts.accepted || 0;
+  document.getElementById('statRejected').textContent = counts.rejected || 0;
+  document.getElementById('statNotes').textContent = counts.notes || 0;
+}
+
+function updateProgress() {
+  if (!data) return;
+  const total = data.changes.length;
+  const reviewed = data.changes.filter(c => c.status !== 'pending').length;
+  const pct = total ? Math.round(reviewed / total * 100) : 0;
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = `${reviewed} / ${total} reviewed`;
+}
+
+// ── Export ─────────────────────────────────────────────────────────────
+function exportDecisions() {
+  if (!data) return;
+  const out = {
+    meta: { ...data.meta, reviewed_at: new Date().toISOString() },
+    summary: {
+      total: data.changes.length,
+      accepted: data.changes.filter(c => c.status === 'accepted').length,
+      rejected: data.changes.filter(c => c.status === 'rejected').length,
+      notes: data.changes.filter(c => c.status === 'notes').length,
+      pending: data.changes.filter(c => c.status === 'pending').length,
+    },
+    changes: data.changes
+  };
+  const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `reviewed_${data.meta.source.replace(/\s+/g,'_')}_${Date.now()}.json`;
+  a.click();
+}
+
+// ── Init ───────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>

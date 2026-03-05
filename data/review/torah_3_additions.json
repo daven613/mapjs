@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "source": "Torah #3",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "concept": "נצח והוד",
+      "suggested_package": 1,
+      "package_label": "נגינה ומלכות דקדשה",
+      "polarity": "good",
+      "source_quote": "מאחר עלות הביאו, הינו מאחר המיניקות, הינו נצח והוד, כי הם מיניקין לנביאים, והם בנין המלכות",
+      "justification": "The text explicitly states that Netzach and Hod are 'the nursing ones' (מיניקות) who nurse the prophets, and that they ARE the building of malkhut. This is a direct bechina equivalence — נצח והוד IS בנין המלכות IS the source of neginah. This concept is referenced multiple times in the Torah but does not appear as a node in a bechina edge for Torah #3 in the dataset.",
+      "edge_type": "bechina",
+      "node1": "נצח והוד",
+      "node2": "בנין המלכות"
+    },
+    {
+      "concept": "שית עיזקאין שבקנה",
+      "suggested_package": 2,
+      "package_label": "לילה ותורה שבעל פה",
+      "polarity": "good",
+      "source_quote": "על ידי שילמד שס יתקן השית עיזקאין שבקנה, שמהם יוצא הקול",
+      "justification": "The six rings of the windpipe (שית עיזקאין שבקנה) from which the voice (קול) emerges are the physiological anchor of the voice-repair that night-learning accomplishes. The text frames the relationship as 'learning the Shas (=night) fixes the six rings from which the voice emerges' — this is an eitza (cause-effect), but the deeper identity is that the six rings ARE the voice, and the voice IS the night (through the shamayim=kol bechina already in Package 2). The concept appears only in eitza edges in the dataset. If added as bechina, it would belong in Package 2 alongside קול.",
+      "edge_type": "bechina_candidate",
+      "node1": "שית עיזקאין שבקנה",
+      "node2": "קול"
+    },
+    {
+      "concept": "דוד המלך",
+      "suggested_package": 1,
+      "package_label": "נגינה ומלכות דקדשה",
+      "polarity": "good",
+      "source_quote": "לפיכך נשתבח דוד לפני שאול ויודע נגן, כי הנגינה היא בנין המלכות, לכך ראוי הוא למלכות",
+      "justification": "David the King is the paradigmatic embodiment of neginah-as-malkhut. He is praised as 'knowing how to play' precisely because music = building of malkhut, and therefore he is 'fitting for malkhut.' David is also the one who could repair even non-holy music and elevate it to holiness. He belongs in Package 1 (holy malkhut/neginah) but is not represented as a bechina node for Torah #3 in the dataset.",
+      "edge_type": "bechina_candidate",
+      "node1": "דוד המלך",
+      "node2": "בנין המלכות"
+    },
+    {
+      "concept": "חוט של חסד",
+      "suggested_package": 4,
+      "package_label": "אברהם, חסד והאילן",
+      "polarity": "good",
+      "source_quote": "וסליק יתיב באילנא פרש המהרשא, שהוא בחינת אברהם, שכתוב אצלו ויטע אשל שהוא בחינת חסד, הינו שהחוט של חסד שנמשך עליו מגן עליו מן הנחש הנל",
+      "justification": "The thread of chesed (חוט של חסד) is the active expression of Abraham/chesed/tree — it is what the tree (=Abraham=chesed) projects as protection. In the dataset this appears in eitza edges (the thread of chesed protects against the snake), but it shares the same nature as the tree/Abraham/chesed cluster and would be a bechina node in Package 4 if added.",
+      "edge_type": "bechina_candidate",
+      "node1": "חוט של חסד",
+      "node2": "חסד"
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 15,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "נצח והוד — explicitly stated as 'בנין המלכות' and source of neginah/prophecy; appears only in eitza edges in the dataset",
+      "שית עיזקאין שבקנה — the six rings of the windpipe producing the kol; referenced in eitza edges only",
+      "דוד המלך — the paradigmatic example of neginah=malkhut; present in eitza context but not a bechina node for Torah #3",
+      "חוט של חסד — the thread of chesed = the tree's protective power; present in eitza edges only",
+      "קנה (windpipe/reed) — in the teaching קנה = the physical voice apparatus. The text uses קנה both literally (windpipe rings) and metaphorically (קנה לך חבר = buy/acquire the reed whose voice unites the cherubim). Only the קול bechina is captured; the קנה itself as a bechina node is absent from the Torah #3 dataset.",
+      "גרון (throat) — 'קרא בגרון' is used as the metaphor for neginah (the cry/call from the throat); present in the aggadic interpretation but not as a bechina node"
+    ],
+    "all_26_dataset_nodes_assigned": true,
+    "note_on_polarity_of_package_1_vs_3": "Torah #3 demonstrates the classic good/evil mirror structure. Package 1 (holy music/malkhut) is the exact positive mirror of Package 3 (klipah birds/evil music). The structural parallelism is explicit in the text: the holy birds nurse from the realm of prophets = holy malkhut; the klipah birds nurse from the breasts of [impure] malkhut. Both are bechina statements of the same structural type."
+  }
+}

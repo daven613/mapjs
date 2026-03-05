@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "source": "Torah #44 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 44,
+      "volume": "lm2",
+      "label": "אֱמוּנָה וּפֶה וּתְמִימוּת",
+      "label_en": "Faith, Mouth, and Wholesomeness",
+      "polarity": "good",
+      "reason": "The Torah opens with a single foundational bechina: 'הָאֱמוּנָה תּוֹלָה בְּפֶה שֶׁל אָדָם, בִּבְחִינַת: אוֹדִיעַ אֱמוּנָתְךָ בְּפִי' — Faith is tethered to the mouth, in the aspect of 'I will declare Your faithfulness with my mouth' (Ps. 89:2). The Rebbe then makes the identity explicit: 'זֶהוּ בְּעַצְמוֹ אֱמוּנָה' — speaking faith IS itself faith. This is a full bechina: אמונה and דיבור בפה (speech with the mouth) are two faces of the same thing, not cause and effect. The Torah then establishes תמימות (wholesomeness, simplicity) as the essential quality of faith — it is the name for what faith IS in the domain of divine service: 'לַעֲבֹד אוֹתוֹ יִתְבָּרַךְ בִּתְמִימוּת'. Similarly, פשיטות (plain simplicity) and תמימות are used interchangeably as the positive state of one who serves God without cleverness: 'לַעֲבֹד אֶת ה' בִּתְמִימוּת בִּפְשִׁיטוּת גָּמוּר'. The Rebbe's ultimate conclusion is 'רַחֲמָנָא לִבָּא בָּעֵי' — God wants the heart (לב), which is the final name for what תמימות and אמונה are: heartfelt sincerity before God. All four — אמונה, דיבור בפה, תמימות/פשיטות, and לב — belong to the same thematic family: the domain of genuine, simple, wholehearted faith expressed through the mouth and lived through sincerity of heart.",
+      "dominant_node": "אמונה",
+      "nodes": [],
+      "node_degrees": {},
+      "merge_notes": [
+        {
+          "merged_nodes": ["אמונה", "דיבור בפה", "תמימות", "פשיטות", "לב"],
+          "reason": "None of these nodes are currently in the dataset as bechina-connected nodes for reference 1044 (torahData.js has zero bechina edges for this Torah). The Rebbe explicitly uses 'בִּבְחִינַת' (line 1) to equate אמונה with speech of the mouth. He further treats תמימות and פשיטות as identical concepts (line 6: 'בִּתְמִימוּת בִּפְשִׁיטוּת גָּמוּר'), and concludes with 'רַחֲמָנָא לִבָּא בָּעֵי', establishing לב (heart) as what all of the above actually is. These five nodes share the same essential nature: the quality of simple, sincere faith that is the foundation of divine service. They should be entered as nodes with bechina edges between them. Flagged in additions.json for dataset entry."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 44,
+      "volume": "lm2",
+      "label": "כְּפִירָה וְאֶפִּיקוֹרְסוּת וְחַקִּירָה",
+      "label_en": "Heresy, Apostasy, and Philosophical Inquiry",
+      "polarity": "evil",
+      "reason": "This is the evil mirror of Package 1. Just as the good package centers on faith expressed through the mouth and lived in simplicity, the evil package centers on the opposite: speech of denial and the intellectual inquiry that damages faith. The Rebbe establishes the bechina explicitly by the mirror structure: 'דִּבּוּרִים שֶׁל כְּפִירָה' (speech of heresy) is the precise counterpart to 'מְדַבְּרִין הָאֱמוּנָה בַּפֶּה' (speaking faith). Since speaking faith IS faith (bechina in Package 1), speaking heresy IS heresy — the same structural identity applies in the evil domain. Kefira (denial), apikorset (heresy/apostasy), and chakira (philosophical inquiry) are used throughout the Torah as interchangeable names for the same corrupting force: 'הֵם מַזִּיקִים מְאֹד לָאֱמוּנָה' (they damage faith very much). Philosophy books (סִפְרֵי הַמְחַקְרִים הַפִילוֹסוֹפְיָא) and inquiry books (סְפָרִים שֶׁל חַקִירָה) are the same thing. 'דִּמְיוֹנוֹת וּשְׁטוּתִים וּבִלְבּוּלִים' (fantasies, foolishness, confusions) are the true nature of these wisdoms. All these concepts — kefira, apikorset, chakira, philosophy, and dimyonot — share the same essential nature: the counterfeit of faith, the domain of false intellectual wisdom that displaces the simple certainty of received tradition.",
+      "dominant_node": "כפירה",
+      "nodes": [],
+      "node_degrees": {},
+      "merge_notes": [
+        {
+          "merged_nodes": ["כפירה", "אפיקורסות", "חקירה", "פילוסופיה", "דימיונות ובלבולים"],
+          "reason": "None of these nodes are in the dataset for reference 1044. They are the evil counterparts of Package 1's concepts. The Rebbe treats them as structural synonyms: philosophy books and inquiry books are both described identically as 'מַזִּיקִים מְאֹד לָאֱמוּנָה'. The kefira of the apikoros and the pseudo-wisdoms of divine service are both classified as dimyonot (fantasies). Their shared essential nature is: the intellectual counterfeit of faith that corrodes simple belief. Flagged in additions.json for dataset entry."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 2,
+    "raw_connected_components": 0
+  }
+}

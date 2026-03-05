@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "source": "Torah #86 (Likutay Moharan vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #86 ('Pos'im bo ps'ia ketana') is a short teaching of 12 lines. Of the 5 total edges with reference===86, only 2 are bechina (IDs 349 and 3005); the remaining 3 (IDs 912, 1568, 1671) are eitza. The bechina subgraph yields exactly 2 connected components, each with 2 nodes. No merging is possible or warranted: the two pairs inhabit distinct essential natures — Package 1 is the identity of Shabbat as truth/support, Package 2 is the identity of charity as the solar empowering force. The connection between the two packages is eitza: the sun-charity PRODUCES power for the legs (cause-and-effect), while truth IS the third leg (shared nature). No evil mirror exists in the bechina dataset for this Torah, reflecting the teaching's positive-only arc: it describes restoration of holy walking on Shabbat and the two forces that enable it."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 86,
+      "label": "שַׁבָּת וֶאֱמֶת",
+      "label_en": "Shabbat and Truth",
+      "polarity": "good",
+      "reason": "שבת (Shabbat) and אמת (Truth) share a single essential nature in this Torah: they are both the same supportive, stabilizing force that enables a person to walk in God's ways. The Torah states explicitly 'שַׁבָּת הוּא בְחִינַת אֱמֶת' — Shabbat IS an aspect of truth — grounded in the Talmud's observation that even an unlearned person is afraid to lie on Shabbat (masechet Demai ch. 4). This is not a causal claim (Shabbat does not produce truth) but a statement of essential identity: they are the same stabilizing quality. The Talmud further states 'קֻשְׁטָא קָאֵי' — truth stands firm (on two legs; Shabbat 104), and that truth is itself a 'third leg' (רגל שלישי), the support (סעד) that a beginner-walker needs. Shabbat and truth are two names for the same supportive, anti-deception, stabilizing ground beneath the feet of the person who is just beginning to walk in God's ways.",
+      "dominant_node": "שבת",
+      "nodes": [
+        "שבת",
+        "אמת"
+      ],
+      "node_degrees": {
+        "שבת": 1,
+        "אמת": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 86,
+      "label": "צְדָקָה וְשֶׁמֶשׁ",
+      "label_en": "Charity and the Sun",
+      "polarity": "good",
+      "reason": "צדקה (charity) and שמש (the sun) share a single essential nature: they are both the same luminous, empowering, life-giving radiance that gives strength to movement and walking. The Torah states 'וּצְדָקָה הוּא בְחִינוֹת שֶׁמֶשׁ, כְּמוֹ שֶׁכָּתוּב (מַלְאָכִי ג): שֶׁמֶשׁ צְדָקָה' — charity IS an aspect of the sun, based on Malachi's 'a sun of righteousness.' This identity is not metaphor but ontological equivalence: the charitable act radiates the same essential quality as solar light. Within the Torah's framework, two solar instances are distinguished — the present-day sun (corresponding to weekday charity) and the future sun of Shabbat-charity (כאור שבעת הימים — 'as the light of the seven days'), but both are the same sun-nature. Charity and the sun are two names for the same luminous, energizing, walking-enabling force.",
+      "dominant_node": "צדקה",
+      "nodes": [
+        "צדקה",
+        "שמש"
+      ],
+      "node_degrees": {
+        "צדקה": 1,
+        "שמש": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 2,
+    "total_nodes": 4,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "bechina_edge_ids": [349, 3005],
+    "eitza_edge_ids_excluded": [912, 1568, 1671],
+    "note_on_small_components": "Both components are 2-node pairs. No merging is warranted: the two pairs are connected to each other only via eitza (the sun-charity GIVES POWER to the legs/walking — a causal relationship), not via bechina (shared nature). Shabbat=Truth is the stabilizing supportive identity; Charity=Sun is the luminous empowering identity. These are two distinct essential natures in this Torah.",
+    "note_on_evil_mirror": "No evil-polarity bechina edges exist in the dataset for Torah #86. The teaching has no explicit evil-side bechina cluster — its arc is entirely positive: restoring the power of walking in God's ways on Shabbat via truth and charity. The Chitzonim (external forces) are named as the opposing force but carry no bechina-typed edges in this Torah."
+  }
+}

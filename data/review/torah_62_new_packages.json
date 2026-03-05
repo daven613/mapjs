@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "source": "Torah #62",
+    "type": "new_package_proposals",
+    "generated": "2026-03-03"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": "NP-62-1",
+      "torah_ref": 62,
+      "label": "יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ וַהֲסִבָּה",
+      "label_en": "The Divine Union, Holy Eating, and the Feast",
+      "polarity": "good",
+      "reason": "Torah #62 opens and closes with the same concept: eating that produces the yichud of the Holy One and Shekhinah. Section aleph states: 'עַל יְדֵי אֲכִילָתָם שֶׁל יִשְׂרָאֵל נַעֲשֶׂה יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ אַפִּין בְּאַפִּין, בִּבְחִינַת: גֹּשִׁי הֲלֹם — דָּא יִחוּד ק\"ב ושכינתה.' Three bechinas are embedded here: (1) 'גֹּשִׁי הֲלֹם' = יחוד ק\"ב ושכינה; (2) 'וַיִּגַּשׁ אֵלָיו יְהוּדָה — דָּא תִּקְרֻבְתָּא מַלְכָּא בְּמַלְכָּא' = yichud (from the Zohar); (3) at the end, line 48: 'וַיַּסֵּב — לְשׁוֹן סְעֻדָּה, הַיְנוּ לְשׁוֹן הֲסִבָּה' — the word vayasev IS the language of feasting/leaning at table. This forms a cluster of concepts that are all different expressions of the same HOLY EATING / DIVINE UNIFICATION reality: אכילה = יחוד; ויגש = תקרובתא; גשי הלם = יחוד; ויסב = לשון הסיבה (holy feasting). The current dataset has an eitza edge (id=1302) for this — אכילה → יחוד — but correctly classifies it as cause-effect. However, the additional pairs (גשי הלם = יחוד, ויגש יהודה = תקרובתא מלכא) are explicit bechina equivalences ('דָּא יִחוּד', 'דָּא תִּקְרֻבְתָּא') that should be bechina edges. This domain forms an independent good package: the HOLY EATING / YICHUD cluster.",
+      "proposed_nodes": [
+        {
+          "node_id": "יחוד קדשא בריך הוא ושכינתה",
+          "node_text": "יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ אַפִּין בְּאַפִּין",
+          "bechina_statement": "עַל יְדֵי אֲכִילָתָם שֶׁל יִשְׂרָאֵל נַעֲשֶׂה יִחוּד ק\"ב ושכינתה, בִּבְחִינַת גֹּשִׁי הֲלֹם",
+          "source_line": 2
+        },
+        {
+          "node_id": "גשי הלם",
+          "node_text": "גֹּשִׁי הֲלֹם (רות ב)",
+          "bechina_statement": "גֹּשִׁי הֲלֹם – דָּא יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+          "source_line": 2
+        },
+        {
+          "node_id": "ויגש אליו יהודה",
+          "node_text": "וַיִּגַּשׁ אֵלָיו יְהוּדָה (בראשית מד)",
+          "bechina_statement": "וַיִּגַּשׁ אֵלָיו יְהוּדָה – דָּא תִּקְרֻבְתָּא מַלְכָּא בְּמַלְכָּא",
+          "source_line": 2
+        },
+        {
+          "node_id": "תקרובתא מלכא במלכא",
+          "node_text": "תִּקְרֻבְתָּא מַלְכָּא בְּמַלְכָּא (זוהר ויגש)",
+          "bechina_statement": "וַיִּגַּשׁ אֵלָיו יְהוּדָה – דָּא תִּקְרֻבְתָּא מַלְכָּא בְּמַלְכָּא",
+          "source_line": 2
+        },
+        {
+          "node_id": "ויסב — לשון סעודה",
+          "node_text": "וַיַּסֵּב — לְשׁוֹן סְעֻדָּה / לְשׁוֹן הֲסִבָּה",
+          "bechina_statement": "וַיַּסֵּב לְשׁוֹן סְעֻדָּה, הַיְנוּ לְשׁוֹן הֲסִבָּה",
+          "source_line": 48
+        },
+        {
+          "node_id": "אכילת ישראל (קדושה)",
+          "node_text": "אֲכִילָתָם שֶׁל יִשְׂרָאֵל (שֶׁנִּתְבָּרֵר)",
+          "bechina_statement": "עַל יְדֵי אֲכִילָתָם שֶׁל יִשְׂרָאֵל נַעֲשֶׂה יִחוּד ק\"ב ושכינתה... רַק הָאֲכִילָה צָרִיךְ לִהְיוֹת מַאֲכָל אַחַר שֶׁנִּתְבָּרֵר",
+          "source_line": 2
+        }
+      ],
+      "proposed_bechina_edges": [
+        { "node1_id": "גשי הלם", "node2_id": "יחוד קדשא בריך הוא ושכינתה", "type": "bechina", "reference": 62 },
+        { "node1_id": "ויגש אליו יהודה", "node2_id": "תקרובתא מלכא במלכא", "type": "bechina", "reference": 62 },
+        { "node1_id": "תקרובתא מלכא במלכא", "node2_id": "יחוד קדשא בריך הוא ושכינתה", "type": "bechina", "reference": 62 },
+        { "node1_id": "ויסב", "node2_id": "לשון הסיבה / סעודה קדושה", "type": "bechina", "reference": 62 }
+      ],
+      "independence_justification": "This cluster has an independent structural role: it is the GOAL and FRAME concept of the entire Torah — the yichud of God and Shekhinah achieved through holy eating. It is structurally distinct from Package 1 (which contains the MEANS: faith and fasting) and Package 2 (which contains the OBSTACLE: desires/klipot). The yichud/eating cluster represents the OUTCOME DOMAIN — the sacred encounter that holy eating enables. With 5-6 distinct nodes (גשי הלם, ויגש יהודה, תקרובתא, ויסב, אכילת ישראל, יחוד itself) all with explicit bechina language ('דָּא', 'הַיְנוּ'), this is a genuine independent bechina package."
+    },
+    {
+      "id": "NP-62-2",
+      "torah_ref": 62,
+      "label": "מַחֲלֹקֶת שֶׁבִּקְדֻשָּׁה, הֲלָכוֹת, וְשָׁלוֹם",
+      "label_en": "Holy Dispute, Halachic Rulings, and Peace",
+      "polarity": "good",
+      "reason": "Sections ב and the appendices (שייך לאות ב) of Torah #62 develop a rich bechina domain about the inner structure of intellectual/spiritual conflict and its resolution through halachic law. The Rebbe states (lines 10-13): (1) 'מַחֲלֹקֶת הַיֵּצֶר הָרָע שָׁרְשׁוֹ מִן הַמַּחֲלֹקֶת שֶׁבִּקְדֻשָּׁה' — the evil-division has its root in the holy dispute (cause-effect, eitza — already in dataset as eitza); (2) 'מַחֲלֹקֶת שֶׁבִּקְדֻשָּׁה, הוּא מַחֲלֹקֶת תַּנָּאִים וַאֲמוֹרָאִים שֶׁבַּגְּמָרָא' — the holy dispute IS the dispute of the Tannaim and Amoraim (bechina equivalence); (3) 'תִּקּוּן הַמַּחֲלֹקֶת שֶׁבִּקְדֻשָּׁה, הֵן הֲלָכוֹת פְּסוּקוֹת. כִּי פְּסַק הֲלָכָה הוּא הַשָּׁלוֹם' — the tikkun of the holy dispute IS the ruling halachot; a ruling IS peace (halachic ruling = שלום). Line 13: 'זֶה אוֹתִיּוֹת שָׁלוֹם, נוֹטְרִיקוֹן: וְדַע מַה שֶּׁתָּשִׁיב לְאֶפִּיקוֹרוֹס' — the word שלום IS the acronym for 'know what to answer the heretic.' And line 9: 'הַסְתָּרַת הַיְדִיעָה, הֵן הֵן אֶפִּיקוֹרְסוּת וְקֻשְׁיוֹת' — concealment of knowledge IS heresy. These form a 6+ node bechina cluster: מחלקת שבקדשה = מחלקת תנאים ואמוראים; הלכות פסוקות = תיקון המחלקת; פסק הלכה = שלום; שלום = ראשי תיבות ודע מה שתשיב; הסתרת הידיעה = אפיקורסות וקושיות. This cluster is the intellectual/Torah-law dimension of the teaching — an independent domain with 5+ concepts and explicit bechina language, distinct from the faith/fasting domain (Package 1) and the desire/klipot domain (Package 2).",
+      "proposed_nodes": [
+        {
+          "node_id": "מחלקת שבקדשה",
+          "node_text": "מַחֲלֹקֶת שֶׁבִּקְדֻשָּׁה",
+          "bechina_statement": "מַחֲלֹקֶת שֶׁבִּקְדֻשָּׁה, הוּא מַחֲלֹקֶת תַּנָּאִים וַאֲמוֹרָאִים שֶׁבַּגְּמָרָא",
+          "source_line": 11
+        },
+        {
+          "node_id": "מחלקת תנאים ואמוראים",
+          "node_text": "מַחֲלֹקֶת תַּנָּאִים וַאֲמוֹרָאִים שֶׁבַּגְּמָרָא",
+          "bechina_statement": "מַחֲלֹקֶת שֶׁבִּקְדֻשָּׁה, הוּא מַחֲלֹקֶת תַּנָּאִים וַאֲמוֹרָאִים",
+          "source_line": 11
+        },
+        {
+          "node_id": "הלכות פסוקות",
+          "node_text": "הֲלָכוֹת פְּסוּקוֹת",
+          "bechina_statement": "תִּקּוּן הַמַּחֲלֹקֶת שֶׁבִּקְדֻשָּׁה, הֵן הֲלָכוֹת פְּסוּקוֹת",
+          "source_line": 12
+        },
+        {
+          "node_id": "פסק הלכה",
+          "node_text": "פְּסַק הֲלָכָה",
+          "bechina_statement": "כִּי פְּסַק הֲלָכָה הוּא הַשָּׁלוֹם וְהַכְרָעָה שֶׁל מַחֲלוֹקֶת הַתַּנָּאִים",
+          "source_line": 12
+        },
+        {
+          "node_id": "שלום",
+          "node_text": "הַשָּׁלוֹם",
+          "bechina_statement": "פְּסַק הֲלָכָה הוּא הַשָּׁלוֹם; וְזֶה אוֹתִיּוֹת שָׁלוֹם, נוֹטְרִיקוֹן: וְדַע מַה שֶּׁתָּשִׁיב לְאֶפִּיקוֹרוֹס",
+          "source_line": 12
+        },
+        {
+          "node_id": "הסתרת הידיעה",
+          "node_text": "הַסְתָּרַת הַיְדִיעָה",
+          "bechina_statement": "הַסְתָּרַת הַיְדִיעָה, הֵן הֵן אֶפִּיקוֹרְסוּת וְקֻשְׁיוֹת",
+          "source_line": 9
+        },
+        {
+          "node_id": "אפיקורסות וקושיות",
+          "node_text": "אֶפִּיקוֹרְסוּת וְקֻשְׁיוֹת",
+          "bechina_statement": "הַסְתָּרַת הַיְדִיעָה, הֵן הֵן אֶפִּיקוֹרְסוּת וְקֻשְׁיוֹת",
+          "source_line": 9
+        }
+      ],
+      "proposed_bechina_edges": [
+        { "node1_id": "מחלקת שבקדשה", "node2_id": "מחלקת תנאים ואמוראים", "type": "bechina", "reference": 62 },
+        { "node1_id": "הלכות פסוקות", "node2_id": "תיקון המחלקת שבקדשה", "type": "bechina", "reference": 62 },
+        { "node1_id": "פסק הלכה", "node2_id": "שלום", "type": "bechina", "reference": 62 },
+        { "node1_id": "שלום", "node2_id": "ודע מה שתשיב לאפיקורוס (נוטריקון)", "type": "bechina", "reference": 62 },
+        { "node1_id": "הסתרת הידיעה", "node2_id": "אפיקורסות", "type": "bechina", "reference": 62 }
+      ],
+      "independence_justification": "The מחלקת/הלכות/שלום cluster is structurally independent from the two proposed packages and from NP-62-1. Its domain is: THE INTELLECTUAL-LEGAL ARCHITECTURE of how inner conflict (evil) originates in holy Talmudic dispute, and how learning halachic rulings resolves BOTH the holy dispute AND its evil descendant. This is a distinct conceptual domain (Torah scholarship, legal peace, intellectual battle) separate from: Package 1 (faith and fasting = physical/spiritual practice), Package 2 (desires = klipot = body-level opposition), and NP-62-1 (yichud = the ultimate goal). The cluster has 6-7 nodes with explicit bechina language ('הוּא', 'הֵן הֵן', 'הוּא הַשָּׁלוֹם') and occupies a distinct structural role in the Torah's argument. Note: the evil mirror of this package is the מחלקת היצר הרע cluster (the evil dispute is the distorted descendent of the holy one), which would form a corresponding evil package with concepts such as מחלקת היצר הרע, אפיקורסות, לב חלוק."
+    }
+  ],
+  "observations": "Torah #62 contains 15 total edges (3 bechina, 12 eitza) in the current dataset — a very sparse representation of a conceptually dense Torah. The source text has at least 20 bechina-language formulations, of which only 3 are currently captured. Two clear independent domains are missing from the bechina edge set:\n\n1. The YICHUD/EATING domain (NP-62-1): The Torah opens and closes with the theme of holy eating creating the yichud of God and Shekhinah. Four distinct bechina pairs (גשי הלם = יחוד; ויגש יהודה = תקרובתא; תקרובתא = יחוד; ויסב = סעודה) are explicitly stated with Zoharic 'דָּא' language. This is the most central cluster of the Torah and is entirely absent from the bechina dataset.\n\n2. The HALACHIC PEACE domain (NP-62-2): The Torah's longest sustained argument (sections ב and the appendices) develops the concept that inner intellectual division (= origin of heresy) is healed by learning halachic rulings (= peace). The bechina chain (holy dispute = Talmudic dispute; ruling = peace; peace = acronym for answering heretics; concealment of knowledge = heresy) forms a 6-7 node cluster with no bechina edges in the dataset.\n\nThe Torah's good/evil mirror structure in Torah #62:\n- Good: יחוד ק\"ב ושכינה (NP-62-1) ↔ Evil: קלפות/תאוות (Package 2) — the yichud vs. the husks\n- Good: אמונה/תענית (Package 1) ↔ Evil: מחלקת היצר הרע / אפיקורסות (NP-62-2 mirror)\n- Good: שלום/הלכות (NP-62-2) ↔ Evil: לב חלוק / הסתרת הידיעה (evil side of NP-62-2)\n\nThe Torah's argument in five stages:\n  Stage 1 — Holy eating requires purified food, and purification requires faith [opening theme]\n  Stage 2 — Faith requires intellectual clarity (answerable questions) OR pure emunah (unanswerable ones); the yetzer hara hides the paths of intellect [NP-62-2 domain]\n  Stage 3 — To heal the inner division: study halachic decisors, which connects to holy peace and silences heresy [NP-62-2]\n  Stage 4 — To complete faith (draw distant ones near): purify speech by fasting, which starves the klipot/desires [Package 1 + Package 2]\n  Stage 5 — When faith is complete and eating is pure, the yichud of God and Shekhinah is achieved [NP-62-1]"
+}

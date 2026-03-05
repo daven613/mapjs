@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "source": "Torah #206",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "ONE_NEW_PACKAGE",
+  "new_packages": [
+    {
+      "id": 1,
+      "torah_ref": 206,
+      "label": "תּוֹרָה וְהַשֵּׁם יִתְבָּרַךְ",
+      "label_en": "Torah and God",
+      "polarity": "good",
+      "reason": "This package is formed from two explicit bechina declarations in Torah #206. (1) Line 3: 'הַתּוֹרָה הוּא הַשֵּׁם יִתְבָּרַךְ בְּעַצְמוֹ' — Torah IS God Himself. The word 'הוּא' is a direct, unambiguous bechina identification: Torah and God are the same essential reality, not merely analogous. (2) Lines 9–10: 'קוֹל הַקְּרִיאָה שֶׁל הַמִּצְווֹת, שֶׁהֵם הַתּוֹרָה' — the commandments ARE Torah ('שֶׁהֵם' = they are). By transitivity: Torah = God, and mitzvot = Torah, therefore all three — תורה, השם יתברך, and מצוות — are expressions of the same underlying reality: the divine calling-presence that seeks the straying soul's return. The polarity is 'good': these concepts belong entirely to the domain of holiness. The dominant node is תורה (degree 2: connected to both השם יתברך and מצוות). The package's structural role is to serve as the bechina foundation for the Torah's central eitza mechanism: the soul that has not forgotten the Torah/mitzvot/God-voice can return easily; the soul that has forgotten it cannot.",
+      "dominant_node": "תורה",
+      "nodes": [
+        "תורה",
+        "השם יתברך",
+        "מצוות"
+      ],
+      "node_degrees": {
+        "תורה": 2,
+        "השם יתברך": 1,
+        "מצוות": 1
+      },
+      "proposed_bechina_edges": [
+        {
+          "node1_id": "תורה",
+          "node2_id": "השם יתברך",
+          "type": "bechina",
+          "reference": 206,
+          "proof": "וְהַתּוֹרָה הוּא הַשֵּׁם יִתְבָּרַךְ בְּעַצְמוֹ, שֶׁהוּא קוֹרֵא אוֹתָם וּמְבַקְּשָׁם שֶׁיַּחְזְרוּ אֵלָיו"
+        },
+        {
+          "node1_id": "מצוות",
+          "node2_id": "תורה",
+          "type": "bechina",
+          "reference": 206,
+          "proof": "קוֹל הַקְּרִיאָה שֶׁל הַמִּצְווֹת, שֶׁהֵם הַתּוֹרָה"
+        }
+      ],
+      "structural_role": "Package 1 (תורה = השם יתברך = מצוות) is the bechina foundation of Torah #206. The Torah's full argument flows through it: [עֲבֵרָה (sin)] →eitza→ [תְּעִיָּה (going astray from דֶּרֶךְ הַיָּשָׁר)] →eitza→ [losing recognition of the calling voice = forgetting Package 1]. The eitza inverse: [remembering Package 1 = hearing the calling voice] →eitza→ [תְּשׁוּבָה is possible]. The existing dataset edge (id 422) captures: [immediate repentance] →eitza→ [easy return to one's place]. This eitza works BECAUSE the soul still recognizes Package 1 — that is the mechanism. Without Package 1, Torah #206 is an empirical observation about repentance psychology; with Package 1, it becomes a theologically grounded teaching: repentance is possible when one still recognizes that Torah = God = mitzvot = the divine calling-voice seeking one's return."
+    }
+  ],
+  "observations": "Torah #206 contains exactly two bechina relationships, which form one new package of three nodes (תורה, השם יתברך, מצוות). The Torah belongs to the genre of repentance teachings in Likutay Moharan Vol. 1. Its central claim — that Torah IS God Himself, calling the sinner back — is one of the most fundamental identifications in Rebbe Nachman's thought, grounded in the Zoharic principle that God, Torah, and Israel are one (though here only the God-Torah identity is stated explicitly).\n\nThe package 'תּוֹרָה וְהַשֵּׁם יִתְבָּרַךְ' is new in the sense that no bechina edges exist for reference 206. The concept of תורה appears extensively in other Torahs' packages, but the specific identification תורה = השם יתברך in the context of Torah #206 is local to this Torah (framework rule: each Torah's packages are independent).\n\nThe teaching has no evil mirror package. The 'errant paths' (דְּרָכִים תּוֹעִים) represent the evil domain conceptually, but the Rebbe does not assign them bechina identifications — they function as eitza-consequence nodes in the causal chain. The absence of an evil package is appropriate for this genre: it is a positive teaching about the accessibility of repentance, not a typological teaching that maps good/evil structures.\n\nThe node 'השם יתברך' as a standalone bechina graph node is potentially new to the dataset — a deliberate addition that captures the Rebbe's most radical claim: that Torah is not merely God's word or God's expression, but God Himself. This identification, which appears in other Torahs as well, deserves its own node so that cross-Torah traversal can connect all the Torahs that assert this ontological unity."
+}

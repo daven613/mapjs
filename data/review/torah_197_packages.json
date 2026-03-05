@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "source": "Torah #197",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #197 has zero pre-existing bechina edges in torahData.js (no records with reference===197). All packages and nodes are derived entirely from the source text torah_197.txt. The Torah is a 4-line teaching on the relationship between anava (humility), chokhmah (wisdom), and lashon hara (evil speech), with Moshe Rabbeinu as the exemplar. Explicit bechina-type equivalences were identified per the framework criterion of shared essential nature."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 197,
+      "label": "עֲנָוָה וְחָכְמָה",
+      "label_en": "Humility and Wisdom",
+      "polarity": "good",
+      "reason": "The central claim of Torah #197 is that true humility and wisdom share an inseparable essential nature — 'וְעִקַּר הָעֲנָוָה – כְּשֶׁהִיא בְּחָכְמָה' (the essence of humility is when it is with wisdom). Rebbe Nachman does not say wisdom *causes* humility or that humility *produces* wisdom; he says the essential form of humility IS humility-in-wisdom. These two concepts are different expressions of the same spiritual reality: the quality of the tzaddik who genuinely knows how small he is because he genuinely perceives how great Wisdom is. Moshe Rabbeinu is included in this package because the Torah cites 'וְהָאִישׁ מֹשֶׁה עָנָו מְאֹד' precisely as the proof-case that ענוה in its highest form cannot be damaged — Moshe IS the archetype of ענוה, and therefore IS a bechina of this quality. עִקַּר הָעֲנָוָה and עֲנָוָה בְּחָכְמָה are the same concept stated in two formulations by the Rebbe himself and constitute a single bechina pair that is the spine of the entire teaching.",
+      "dominant_node": "ענוה",
+      "nodes": [
+        "ענוה",
+        "חכמה",
+        "עִקַּר הָעֲנָוָה",
+        "עֲנָוָה בְּחָכְמָה",
+        "מֹשֶׁה רַבֵּנוּ"
+      ],
+      "node_degrees": {
+        "ענוה": 3,
+        "חכמה": 2,
+        "עִקַּר הָעֲנָוָה": 1,
+        "עֲנָוָה בְּחָכְמָה": 1,
+        "מֹשֶׁה רַבֵּנוּ": 1
+      },
+      "bechina_edges": [
+        {
+          "node1": "ענוה",
+          "node2": "חכמה",
+          "proof": "וְעִקַּר הָעֲנָוָה – כְּשֶׁהִיא בְּחָכְמָה",
+          "note": "The Rebbe defines true anava as inseparable from chokhmah; they are co-essential aspects of the same spiritual quality in the tzaddik"
+        },
+        {
+          "node1": "עִקַּר הָעֲנָוָה",
+          "node2": "עֲנָוָה בְּחָכְמָה",
+          "proof": "וְעִקַּר הָעֲנָוָה – כְּשֶׁהִיא בְּחָכְמָה",
+          "note": "The Rebbe directly equates these: the essence of humility IS humility-with-wisdom — two names for one reality"
+        },
+        {
+          "node1": "מֹשֶׁה רַבֵּנוּ",
+          "node2": "ענוה",
+          "proof": "וְהָאִישׁ מֹשֶׁה עָנָו מְאֹד — cited as the supreme exemplar whose humility could not be damaged even by lashon hara",
+          "note": "Moshe IS the bechina of ענוה in its highest form — the Torah praises him for precisely this quality, making him the archetype"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 197,
+      "label": "עֲנָוָה פְּסוּלָה וּלְשׁוֹן הָרָע",
+      "label_en": "False Humility and Evil Speech",
+      "polarity": "evil",
+      "reason": "This is the evil mirror of Package 1. Just as Package 1 identifies the true/holy form of anava (bonded with chokhmah, exemplified by Moshe), Package 2 identifies the damaged/false form (anava severed from chokhmah, produced by lashon hara). The Rebbe explicitly equates עֲנָוָה פְּסוּלָה (false/invalid humility) with כְּפִיפַת רֹאשׁ בְּדֶרֶךְ שְׁטוּת (bowing one's head in a way of foolishness): 'כִּי זֶה עֲנָוָה פְּסוּלָה' — this IS false humility. That is a bechina statement. לָשׁוֹן הָרָע belongs in this package as the dominant evil force of the teaching — it is the anti-ענוה force that severs humility from wisdom. While its primary relationship to the other concepts is eitza (it causes the damage), its essential nature IS the domain of the anti-holiness forces that oppose the ענוה-חכמה union. Lashon hara, false humility, and foolish head-bowing are all expressions of the same domain: the spiritual reality that is the counterforce to true humility.",
+      "dominant_node": "לשון הרע",
+      "nodes": [
+        "לשון הרע",
+        "עֲנָוָה פְּסוּלָה",
+        "כְּפִיפַת רֹאשׁ בְּדֶרֶךְ שְׁטוּת"
+      ],
+      "node_degrees": {
+        "לשון הרע": 2,
+        "עֲנָוָה פְּסוּלָה": 1,
+        "כְּפִיפַת רֹאשׁ בְּדֶרֶךְ שְׁטוּת": 1
+      },
+      "bechina_edges": [
+        {
+          "node1": "עֲנָוָה פְּסוּלָה",
+          "node2": "כְּפִיפַת רֹאשׁ בְּדֶרֶךְ שְׁטוּת",
+          "proof": "לְהַרְאוֹת עַצְמוֹ בִּכְפִיפַת רֹאשׁ בְּדֶרֶךְ שְׁטוּת כְּאִלּוּ הוּא עָנָו, כִּי זֶה עֲנָוָה פְּסוּלָה",
+          "note": "The Rebbe directly states: bowing one's head in the manner of foolishness IS false humility — an explicit definitional bechina"
+        },
+        {
+          "node1": "לשון הרע",
+          "node2": "עֲנָוָה פְּסוּלָה",
+          "proof": "עַל יְדֵי פְּגַם לָשׁוֹן הָרָע נַעֲשֶׂה פֵּרוּד בֵּין עֲנָוָה לְחָכְמָה — leaving only the degraded form",
+          "note": "Lashon hara IS the essential anti-force to ענוה; what remains after its damage is precisely עֲנָוָה פְּסוּלָה — they share the same domain of opposition to true humility-wisdom"
+        }
+      ],
+      "merge_notes": [
+        {
+          "merged_nodes": ["לשון הרע", "עֲנָוָה פְּסוּלָה", "כְּפִיפַת רֹאשׁ בְּדֶרֶךְ שְׁטוּת"],
+          "reason": "These three form the evil cluster by virtue of sharing the same essential domain: the domain of false/damaged humility that opposes the ענוה-חכמה union of Package 1. עֲנָוָה פְּסוּלָה and כְּפִיפַת רֹאשׁ בְּדֶרֶךְ שְׁטוּת are directly equated by bechina; לשון הרע is the dominant force of that same domain — the active evil whose essence is the severing of the ענוה-חכמה bond."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_bechina_edges_from_source_text": 4,
+    "total_nodes": 8,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "note": "Torah #197 has no pre-existing edges in the dataset (reference===197 returns 0 results). All 4 bechina edges identified here are new, derived directly from the source text. The teaching divides cleanly into a good package (ענוה וחכמה) and its evil mirror (עֲנָוָה פְּסוּלָה ולשון הרע), consistent with the good/evil mirror structure described in the framework."
+  }
+}

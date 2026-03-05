@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "source": "Torah #76",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #76 has 12 bechina edges in the dataset (reference===76, type==='bechina'). These form 6 raw connected components: (A) 3-node star on אור הישר, (B) 3-node star on אור החוזר, (C) 5-node cluster on קטנות המחין/אלהים/דין/אחר הדברים, (D) 2-node pair בטחון/הסתכלות, (E) 2-node pair גדלות המחין/רחמים וחסדים, (F) 2-node pair אברהם/אהבה. After merging: Components A+B+D merge into Package 1 (vision/ראיה domain), Component C becomes Package 2 (evil/constrained intellect domain), Components E+F merge into Package 3 (expanded good intellect/אהבה domain). NOTE on alias: 'קטנות המחין' (edge 264) and 'מחין דקטנות' (edges 724, 1757) are the same concept appearing under two slightly different surface forms; they are treated as a single node in the graph with degree 3."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 76,
+      "label": "הִסְתַּכְּלוּת — אוֹר הַיָּשָׁר וְאוֹר הַחוֹזֵר",
+      "label_en": "Gazing — the Direct Light and the Returning Light",
+      "polarity": "neutral",
+      "reason": "The central organizing metaphor of Torah #76 is vision (ראיה / הסתכלות) and its two optical dimensions: the outgoing ray (אור הישר = direct light) and the returning image (אור החוזר = returning light). These are not cause-and-effect; they are two faces of the same act of seeing. The Rebbe declares that every act of sight has both dimensions — הסתכלות IS the unity of both. The two 3-node clusters (יראה and כח התפשטות הראות around אור הישר; הכאת הראות... and ממרחק ידע around אור החוזר) are both aspects of the single domain of vision-physics. They are merged here because they share one nature: the structure of divine and human sight. בטחון (trust) is equated explicitly with הסתכלות — 'בטחון הוא בחינת הסתכלות' — making it a direct member of this same bechina cluster. Polarity is neutral because vision is a structural/cosmic mechanism that applies equally to divine sight (כי רם ה' וישפל יראה) and human trust — it is not inherently good or evil but is the medium through which good flows.",
+      "dominant_node": "הסתכלות",
+      "nodes": [
+        "הסתכלות",
+        "בטחון",
+        "אור הישר",
+        "יראה",
+        "כח התפשטות הראות מעיניו להדבר הנראה",
+        "אור החוזר",
+        "הכאת הראות בדבר הנראה, שעל ידי זה חוזר הדבר לעיניו ונצטיר בעיניו, שעל ידי זה עקר הראיה",
+        "ממרחק ידע"
+      ],
+      "node_degrees": {
+        "הסתכלות": 1,
+        "בטחון": 1,
+        "אור הישר": 2,
+        "יראה": 1,
+        "כח התפשטות הראות מעיניו להדבר הנראה": 1,
+        "אור החוזר": 2,
+        "הכאת הראות בדבר הנראה, שעל ידי זה חוזר הדבר לעיניו ונצטיר בעיניו, שעל ידי זה עקר הראיה": 1,
+        "ממרחק ידע": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": [
+            "אור הישר",
+            "יראה",
+            "כח התפשטות הראות מעיניו להדבר הנראה"
+          ],
+          "reason": "Component A (3-node star on אור הישר) and Component B (3-node star on אור החוזר) are two separate connected components in the raw graph, but they share identical essential nature: both are optical dimensions of vision (ראיה). The source text explicitly presents them as paired aspects of the same phenomenon — 'יש בכח הראות בחינת אור הישר ואור החוזר' — meaning they are BOTH bechinot of the same act of seeing. Merging them into one package is therefore demanded by their shared nature (bechina), not by cause-effect. The two stars are simply the two wings of one conceptual domain."
+        },
+        {
+          "merged_nodes": [
+            "הסתכלות",
+            "בטחון"
+          ],
+          "reason": "Component D (2-node pair בטחון/הסתכלות) is a small isolated component whose shared nature is perfectly aligned with the vision cluster. The Rebbe states 'הבטחון הוא בחינת הסתכלות' — trust IS gazing. Bטחון is the spiritual application of the same metaphysical structure: just as physical vision involves extending the power of sight toward what one desires to see, so too trust involves spiritually 'gazing' at God alone. הסתכלות is the bridge node connecting this pair to the wider vision cluster. Per the framework, 2-node isolated components are merged into the thematically nearest larger package based on shared nature."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 76,
+      "label": "קַטְנוּת הַמֹּחִין — אֱלֹקִים וְדִינִין",
+      "label_en": "Smallness of Mind — Elohim and Judgments",
+      "polarity": "evil",
+      "reason": "This is the Torah's negative/constrained cluster. The Rebbe builds an explicit multi-node bechina chain: קטנות המחין (smallness of mind/consciousness) IS a bechina of אלהים (the divine name associated with judgment/concealment); אלהים IS a bechina of דין (judgment/strictness); דין IS a bechina of אחר הדברים (lit. 'after the words' — the state of being stuck in a static, unchanging condition, unable to refresh the mind). All four are different faces of the same spiritual reality: the constricted, judgmental, stagnant state of consciousness that cannot grow or renew itself. This is the Torah's evil/constrained pole — the condition one must overcome. Polarity is evil because: אלהים in this Torah specifically refers to the attribute of judgment (דינין), and קטנות המחין is described as the spiritual problem — the person stuck in 'אחר הדברים', unable to reach חידוש המחין. Note: node 'קטנות המחין' (edge 264) and node 'מחין דקטנות' (edges 724, 1757) are the same concept under two surface forms; treated as one node with combined degree 3.",
+      "dominant_node": "דין",
+      "nodes": [
+        "קטנות המחין",
+        "אלהים",
+        "דין",
+        "אחר הדברים"
+      ],
+      "node_degrees": {
+        "דין": 3,
+        "קטנות המחין": 3,
+        "אלהים": 2,
+        "אחר הדברים": 2
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 76,
+      "label": "אַבְרָהָם וְאַהֲבָה — גַּדְלוּת הַמֹּחִין",
+      "label_en": "Abraham and Love — Greatness of Mind",
+      "polarity": "good",
+      "reason": "This is the Torah's positive cluster, the mirror of Package 2. It contains three bechina-connected nodes: (1) גדלות המחין IS a bechina of רחמים וחסדים — 'מי ששכלו צח הוא בגדלות המחין, והוא בחינות רחמים וחסדים'; (2) אברהם IS a bechina of אהבה — 'אברהם, שהוא בחינת אהבה'. The connection between the two sub-pairs is that the source text explicitly presents אברהם/אהבה as the vehicle by which one reaches גדלות המחין/רחמים וחסדים — 'על ידי בחינת אברהם... זוכין למחין דגדלות, שהם בחינת חסדים ורחמים'. More fundamentally, these all share the same essential nature: the expansive, loving, merciful quality of the renewed/refreshed mind — the positive pole of consciousness in this Torah. All four nodes are different expressions of the same underlying reality: the state of גדלות (expansion), which is characterized by mercy, love, and clarity (שכל צח). The Zohar's citation — 'מסטרא דימינא מחא חיורא' — equates this luminous brain-state with the attribute of the right/love (אברהם = right = love = pure brain). Polarity is good: this is the Torah's destination-state, the positive dimension of consciousness and its divine attributes.",
+      "dominant_node": "גדלות המחין",
+      "nodes": [
+        "גדלות המחין",
+        "רחמים וחסדים",
+        "אברהם",
+        "אהבה"
+      ],
+      "node_degrees": {
+        "גדלות המחין": 1,
+        "רחמים וחסדים": 1,
+        "אברהם": 1,
+        "אהבה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["אברהם", "אהבה"],
+          "reason": "Component F (2-node pair אברהם/אהבה) is a small isolated cluster. Its shared nature — love as the quality of expanded and luminous consciousness — is inseparable from the גדלות המחין cluster. The source text explicitly states that the expanded mind is called 'זרע אברהם אוהבי' (the seed of Abraham who loves me), confirming that אברהם and his quality of אהבה belong to the same bechina domain as גדלות המחין and רחמים וחסדים. Per the framework, 2-node isolated components are merged into the thematically nearest larger package based on shared nature."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 12,
+    "total_eitza_edges_in_dataset": 10,
+    "total_nodes_in_packages": 16,
+    "total_packages": 3,
+    "raw_bechina_clusters_before_merge": 6,
+    "clusters_merged": 3,
+    "alias_note": "'קטנות המחין' (edge id 264) and 'מחין דקטנות' (edge ids 724, 1757) are the same concept; counted as 1 node in Package 2",
+    "note_on_merges": "Raw components: A=3 nodes (אור הישר cluster), B=3 nodes (אור החוזר cluster), C=5 nodes (דין/אלהים/קטנות המחין/אחר הדברים — after alias consolidation 4 unique nodes), D=2 nodes (בטחון/הסתכלות), E=2 nodes (גדלות המחין/רחמים וחסדים), F=2 nodes (אברהם/אהבה). Merges: A+B+D → Package 1 (shared vision domain); C → Package 2 (no merge needed, standalone evil cluster); E+F → Package 3 (shared good mind/love domain)."
+  }
+}

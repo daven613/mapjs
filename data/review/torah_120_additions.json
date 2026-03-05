@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "source": "Torah #120 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_120_packages.json, all reference === 120 edges from torahData.js (3 bechina edges found: ids 2114, 2231, 2454), and the full source text torah_120.txt (4 lines). Performed a complete line-by-line scan for all explicit bechina language: בְּחִינַת / מִבְּחִינַת / בִּבְחִינַת / הוּא בְּחִינַת / הַיְנוּ [as equivalence marker] / נִקְרָא [as shared-nature marker]. Cross-referenced every bechina statement against the existing dataset. All bechina identifications in the source text are already captured in the dataset."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_120_edges": 3,
+    "total_reference_120_bechina_edges": 3,
+    "total_reference_120_eitza_edges": 0,
+    "bechina_language_scan": {
+      "line_1": "No bechina language. Opening statement: one must travel to the tzaddik, not rely only on mussar books. This is a practical claim framed from the verse 'כְּתֹב זֹאת זִכָּרוֹן בַּסֵּפֶר וְשִׂים בְּאָזְנֵי יְהוֹשֻׁעַ'. The contrast between 'writing in the book' and 'placing in the ears of Yehoshua' is interpretive framework, not bechina language.",
+      "line_2": "No bechina language. The Midrash on 'Shema Yisrael' is quoted in full (the parable of the king who betrothed a matron with two jewels, she lost one, etc.). The Midrash's conclusion — 'you lost נַעֲשֶׂה [at the golden calf], guard נִשְׁמַע' — is narrative/historical, not a bechina identification between concepts.",
+      "line_3": "No bechina language. Continuation of the Midrash quotation.",
+      "line_4": "CONTAINS ALL THREE BECHINA IDENTIFICATIONS — all already in dataset: (a) 'כְּשֶׁלּוֹמֵד מִתּוֹךְ הַסֵּפֶר, שֶׁהוּא בְּחִינַת עֲשִׂיָּה' — captured in edge 2454. (b) 'שֶׁהוּא בְּחִינַת נַעֲשֶׂה' — captured in edge 2114 (עֲשִׂיָּה ↔ נַעֲשֶׂה). (c) 'כְּשֶׁשּׁוֹמֵעַ מִפֶּה הַצַּדִּיק, הוּא בְּחִינַת נִשְׁמַע' — captured in edge 2231. (d) 'שֶׁזֶּה הַכֶּתֶר נִשְׁאָר לָהֶם לְיִשְׂרָאֵל' — the crown (כֶּתֶר) remained with Israel; this is a NARRATIVE/HISTORICAL statement about what remained after the Calf, not a bechina equation between two concepts. 'כֶּתֶר' (crown) is mentioned only in passing as a description of the status of נִשְׁמַע — it is not equated to any other concept via explicit bechina language. NOT a gap edge."
+    },
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "כֶּתֶר (crown) ↔ נִשְׁמַע",
+        "reason": "Line 4 says 'שֶׁזֶּה הַכֶּתֶר נִשְׁאָר לָהֶם לְיִשְׂרָאֵל' (this crown remained with Israel). The 'כֶּתֶר' referred to here is the crown of נִשְׁמַע — the angels' crown that Israel received when they said 'נַעֲשֶׂה וְנִשְׁמַע', and which they retained even when the נַעֲשֶׂה-crown was removed after the golden calf. However, the text does not use explicit bechina language to equate נִשְׁמַע with כֶּתֶר as two parallel aspects of the same thing. Rather, it says the crown of נִשְׁמַע 'remained' — it uses כֶּתֶר as a noun to describe what נִשְׁמַע IS, but without the standard formula 'X הוּא בְּחִינַת Y.' The source for this crown-of-נִשְׁמַע equation is in Shabbat 88a (the angels' crowns bestowed at Sinai) which is alluded to rather than cited. Without explicit bechina language, this cannot be added as a gap edge. Excluded.",
+        "excluded": true
+      },
+      {
+        "concept": "סֵפֶר (book) ↔ כְּשֶׁלּוֹמֵד מִתּוֹךְ הַסֵּפֶר",
+        "reason": "The isolated concept 'סֵפֶר' (book) is implied by 'כְּשֶׁלּוֹמֵד מִתּוֹךְ הַסֵּפֶר' (one who learns from a book), but they are the same concept rendered differently. The dataset already uses the phrasal node 'כְּשֶׁלּוֹמֵד מִתּוֹךְ הַסֵּפֶר'. No separate 'סֵפֶר' node needs to be created. Not a gap edge.",
+        "excluded": true
+      },
+      {
+        "concept": "מוּסָר סְפָרִים (mussar books) ↔ עֲשִׂיָּה",
+        "reason": "Line 1 mentions 'סִפְרֵי מוּסָר' (mussar books) as what is NOT sufficient — the teaching says one must go to the tzaddik, and books of mussar are not enough. However, no bechina equation is drawn between mussar books and עֲשִׂיָּה in the text. The generalization from 'books' to 'action dimension' is implicit in the overall structure, but never explicitly stated with bechina language. The dataset's formulation 'כְּשֶׁלּוֹמֵד מִתּוֹךְ הַסֵּפֶר' is a broader, more accurate representation. Not a gap edge.",
+        "excluded": true
+      },
+      {
+        "concept": "פֶּה אֶל פֶּה (mouth to mouth) ↔ נִשְׁמַע",
+        "reason": "Line 1 says 'שֶׁיְּדַבֵּר עִמּוֹ פֶּה אֶל פֶּה' (he should speak with him mouth to mouth) as the nature of what the tzaddik does that the book cannot. The phrase 'פֶּה אֶל פֶּה' is a description of the mode of oral transmission, not a separate concept being equated to נִשְׁמַע via bechina language. The dataset's formulation 'כְּשֶׁשּׁוֹמֵעַ מִפֶּה הַצַּדִּיק' subsumes this concept. Not a gap edge.",
+        "excluded": true
+      }
+    ],
+    "structural_observations": [
+      "Torah #120 is one of the most compact Torahs in the corpus — only 4 lines. It is entirely a single argument with two contrasting poles.",
+      "The teaching's bechina architecture is simple and complete: two clusters of two equations each (book/action/na'aseh vs. tzaddik-mouth/nishma), with a clear structural contrast between them.",
+      "The three dataset bechina edges (2114, 2231, 2454) exhaust all bechina language in the source text. The dataset is complete for Torah #120.",
+      "The gap analysis yields NO additions. This is the standard outcome for a 4-line Torah where all bechina equations were already captured.",
+      "The teaching's practical conclusion — travel to the tzaddik rather than rely on books — is an implicit eitza arrow from [limitation of Package 1] to [necessity of Package 2]. This is not captured in the dataset as an eitza edge but could be added in a future eitza enrichment pass."
+    ]
+  }
+}

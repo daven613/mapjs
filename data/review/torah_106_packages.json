@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "source": "Torah #106 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "CRITICAL FINDING: The dataset contains ZERO bechina edges for reference === 106. Only one edge exists for this Torah (id 2279, type 'eitza': שישכיל אחרים → נתעורר גם אצלו). The bechina subgraph is completely empty. All packages below are derived exclusively from the source text gap analysis (Step 5), identifying explicit bechina language in the eight-line Torah. Two independent conceptual domains with 3+ bechina-connected concepts were found, qualifying as NEW_PACKAGES_PROPOSED. The Torah's argument is binary: the state of diminished consciousness (katnut) and its opposite, the state of full da'at (gadlut), with the two divine Names (El=chesed, YHVH=rachamim) as the positive attributes that become accessible when gadlut is reached."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 106,
+      "label": "גַּדְלוּת הַמֹּחִין וְהַדַּעַת",
+      "label_en": "Expanded Consciousness and Da'at",
+      "polarity": "good",
+      "reason": "This cluster represents the positive pole of Torah #106. The Rebbe's teaching centers on the move from katnut (diminished consciousness) to gadlut hamochin (expanded consciousness). When gadlut hamochin is reached, da'at is actualized — the Rebbe cites the Talmudic saying 'Great is da'at that was given between two letters' (Berakhot 33) and interprets this as da'at being placed between El (=chesed) and YHVH (=rachamim). The two divine Names are explicit bechinot: 'El, hu chesed' and 'YHVH, hu rachamim'. The result of reaching gadlut — the sweetening of all judgments (nimtakin kol hadinim) — flows via eitza from this cluster but is not itself a bechina node. The dominant node is gadlut hamochin, which is the most central concept, directly correlated with da'at and mediating between the two Names.",
+      "dominant_node": "גדלות המוחין",
+      "nodes": [
+        "גדלות המוחין",
+        "דעת",
+        "אל",
+        "חסד",
+        "ה'",
+        "רחמים"
+      ],
+      "node_degrees": {
+        "גדלות המוחין": 3,
+        "דעת": 3,
+        "אל": 2,
+        "חסד": 2,
+        "ה'": 2,
+        "רחמים": 2
+      },
+      "merge_notes": [],
+      "source_bechinot": [
+        {
+          "pair": ["אל", "חסד"],
+          "source_quote": "אֵל, הוּא חֶסֶד, עַל דֶּרֶךְ: חֶסֶד אֵל כָּל הַיּוֹם",
+          "bechina_marker": "הוּא"
+        },
+        {
+          "pair": ["ה'", "רחמים"],
+          "source_quote": "וַה', הוּא רַחֲמִים, עַל דֶּרֶךְ: רַחֲמֶיךָ רַבִּים ה'",
+          "bechina_marker": "הוּא"
+        },
+        {
+          "pair": ["גדלות המוחין", "דעת"],
+          "source_quote": "גְּדוֹלָה דֵּעָה שֶׁנִּתְּנָה בֵּין שְׁנֵי אוֹתִיּוֹת... כְּשֶׁיָּבוֹא לְגַדְלוּת הַמֹּחִין, נִתְעוֹרֵר עָלָיו רַחֲמִים וַחֲסָדִים",
+          "bechina_marker": "implicit equivalence: gadlut = the state in which da'at is present between the Names"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 106,
+      "label": "קַטְנוּת הַמֹּחִין וְהָעֲנִיּוּת",
+      "label_en": "Diminished Consciousness and Poverty",
+      "polarity": "evil",
+      "reason": "This cluster represents the negative pole of Torah #106 — the evil/deficiency mirror of Package 1. The Rebbe opens with the Talmudic principle 'there is no poverty except poverty of da'at' (Nedarim 41), establishing that spiritual poverty (aniyut) IS lack of da'at. The state of lacking sekhel/da'at IS CALLED katnut hamochin ('he is called katnut hamochin'). The word 'dal' in the verse 'ashrei maskil el dal' is explicitly interpreted as 'when he is in katnut hamochin' — making dal a bechina of katnut. This cluster contains the direct evil mirrors of Package 1: where gadlut = da'at present = chesed + rachamim flow, katnut = da'at absent = judgments not sweetened. The cluster is 'evil' in the sense of deficiency/din — it is the negative pole the teaching instructs us to escape from. Dominant node is katnut hamochin, which is most central, explicitly equated to aniyut, dal, and chisaron sekhel.",
+      "dominant_node": "קטנות המוחין",
+      "nodes": [
+        "קטנות המוחין",
+        "עניות",
+        "דל",
+        "חסרון דעת"
+      ],
+      "node_degrees": {
+        "קטנות המוחין": 3,
+        "עניות": 2,
+        "דל": 2,
+        "חסרון דעת": 2
+      },
+      "merge_notes": [],
+      "source_bechinot": [
+        {
+          "pair": ["עניות", "חסרון דעת"],
+          "source_quote": "אֵין עֲנִיּוּת אֶלָּא מִן הַדַּעַת",
+          "bechina_marker": "אֵין... אֶלָּא (exclusive identification)"
+        },
+        {
+          "pair": ["קטנות המוחין", "חסרון דעת"],
+          "source_quote": "כִּי יֵשׁ זְמַן שֶׁאֵין לוֹ שֵׂכֶל, וְהוּא נִקְרָא קַטְנוּת הַמֹּחִין",
+          "bechina_marker": "נִקְרָא"
+        },
+        {
+          "pair": ["דל", "קטנות המוחין"],
+          "source_quote": "אַשְׁרֵי מַשְׂכִּיל אֶל דָּל – הַיְנוּ כְּשֶׁהוּא בְּקַטְנוּת הַמֹּחִין",
+          "bechina_marker": "הַיְנוּ (explicative equation)"
+        }
+      ]
+    }
+  ],
+  "good_evil_mirror_structure": {
+    "present": true,
+    "description": "Torah #106 has a clean binary good/evil mirror. Package 1 (gadlut/da'at) is the exact positive counterpart of Package 2 (katnut/aniyut). The same concept pair — presence vs. absence of da'at — generates the two poles: chesed+rachamim flow from gadlut; dinim dominate under katnut. The Torah's practical instruction (eitza) is the bridge between them: enlighten yourself or others to move from Package 2 to Package 1.",
+    "good_packages": [1],
+    "evil_packages": [2],
+    "mirror_pairs": [
+      {"good": "גדלות המוחין", "evil": "קטנות המוחין"},
+      {"good": "דעת", "evil": "חסרון דעת"},
+      {"good": "חסד (אל)", "evil_dynamic": "דינין (sweetened only by gadlut)"},
+      {"good": "רחמים (ה')", "evil_dynamic": "יום רעה (day of evil, when katnut dominates)"}
+    ]
+  },
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_eitza_edges_in_dataset": 1,
+    "total_nodes_from_dataset": 0,
+    "total_nodes_from_source_text": 10,
+    "total_packages": 2,
+    "raw_connected_components_from_dataset": 0,
+    "note": "Both packages are built entirely from source text gap analysis. The dataset has no bechina edges for Torah #106. This Torah requires full bechina edge extraction before it can be represented in the graph."
+  }
+}

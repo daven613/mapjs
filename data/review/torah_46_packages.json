@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "source": "Torah #46 (Likutay Moharan Vol. 1)",
+    "torah_ref": 46,
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #46 contains 14 bechina edges (reference=46, type=bechina) yielding 9 raw connected components. After alias resolution ('מחאת כפים בתפלה' = 'מחאת כפים' — same node, same concept), CC8 has 4 nodes. Merges: (1) CC2+CC5+CC6 merged because יד, יד רמה, and ידים are all expressions of the same essential nature — the hands as divine structures (יד=הויה, joining=יד רמה, north/south=ידים) — merged by SHARED NATURE, not by eitza. (2) CC7+CC9 merged because אהרן=ימינא and קרח=שמאלא are explicitly paired in the text as the two poles of the same archetypal split (ימינא ושמאלא) — they form one neutral package containing both sides of the polarity. CC3 (מחין דקטנות/אלהים) and CC4 (ואפלטהו/המתקת הדינים) are NOT merged despite their causal relationship: the causal link between them is eitza (sweetening Elokim removes מחין דקטנות), not shared nature. Their essential natures differ: CC3 is about a STATE of consciousness (contracted mind = judgment domain), CC4 is about a DIVINE RESCUE OUTCOME (rescue = sweetening). Final result: 6 packages from 9 raw CCs."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 46,
+      "label": "תְּפִלָּה, נֶפֶשׁ, דִּבּוּר, זִוּוּג וּמִטָּה",
+      "label_en": "Prayer, Soul, Speech, Union, and the Bed",
+      "polarity": "good",
+      "reason": "Five nodes linked by bechina: (1) נפש ↔ דבור (id 655): 'this is the aspect of speech, as it says: my soul went out in His speaking' — soul IS speech; (2) נפש ↔ תפלה (id 3152): 'soul = speech = prayer, as it says: he who tears his soul in his anger' — the same soul that IS speech IS prayer; (3) זווג ↔ תפלה (id 3151): 'זווג = the aspect of prayer (Tikun 10, see Tikun 58)' — divine union IS prayer; (4) מטה ↔ זווג (id 1048): 'the bed, that is the aspect of זווג' — the bed IS divine union. The chain: מטה = זווג = תפלה = נפש = דבור. All five are different expressions of the same underlying spiritual reality: prayer as a living act of divine union — soul meeting God through speech. The dominant node is תפלה (degree 2: connects to נפש and זווג, and through them to the full chain). This is the WHAT-IS-PRAYER cluster: what prayer essentially IS at its root — the soul's speech, the divine union, the state of the bed (intimate presence) oriented to God. This is the central positive domain of Torah #46, which is entirely about prayer (clapping the hands during prayer). It is supported by the opening of the Torah: 'clapping in prayer — this is the aspect of placing the bed between north and south, for the bed is the aspect of זווג, the aspect of תפלה.' All five nodes belong to this domain of prayer-as-sacred-union.",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תפלה",
+        "זווג",
+        "מטה",
+        "נפש",
+        "דבור"
+      ],
+      "node_degrees": {
+        "תפלה": 2,
+        "זווג": 2,
+        "מטה": 1,
+        "נפש": 2,
+        "דבור": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 46,
+      "label": "מֶחָאַת כַּפַּיִם, תֵּבֵל, חֵשֶׁק הַלֵּב וּנְתִינַת הַמִּטָּה",
+      "label_en": "Clapping the Hands, the World (Tevel), Desire of the Heart, and Orienting the Bed",
+      "polarity": "good",
+      "reason": "Four nodes linked by bechina (with alias resolution): (1) שנתגלה החשק שבלב בידים ↔ מחאת כפים (id 1736): 'that the desire/longing of the heart is revealed through the hands — this is the aspect of clapping'; (2) תבל ↔ מחאת כפים (id 1737): 'תבל is the aspect of clapping the hands — for right is 72 and left is 216, and when they are included in each other, two times 216 = גימטריא תבל'; (3) מחאת כפים בתפלה ↔ נתינת המטה בין צפון לדרום (id 2274): 'clapping in prayer = the aspect of placing the bed between north and south, for the bed is the aspect of זווג/prayer, and north and south are the aspect of hands.' The alias 'מחאת כפים בתפלה' = 'מחאת כפים' (same concept, same Torah). The essential nature of all four nodes: the PHYSICAL ACT of clapping as it IS cosmic integration. 'Tevel' (which derives from the integration of right+left numerics into a unified worldly sum) IS the act of clapping. 'Desire revealed in the hands' IS the act of clapping. 'Orienting the bed between north and south' IS clapping (north/south = hands, bed = prayer/זווג). So all four are different ways of saying the same thing: the act of uniting the hands in prayer IS the manifestation of the soul's desire AND the integration of the world AND the proper orientation of prayer. The dominant node is מחאת כפים (degree 3: hub connecting שנתגלה החשק, תבל, and נתינת המטה). This is the PHYSICAL-ACT-AS-COSMIC-REALITY cluster: what the physical clapping essentially IS — desire, cosmos, directed prayer.",
+      "dominant_node": "מחאת כפים",
+      "nodes": [
+        "מחאת כפים",
+        "תבל",
+        "שנתגלה החשק שבלב, בידים",
+        "נתינת המטה בין צפון לדרום"
+      ],
+      "node_degrees": {
+        "מחאת כפים": 3,
+        "תבל": 1,
+        "שנתגלה החשק שבלב, בידים": 1,
+        "נתינת המטה בין צפון לדרום": 1
+      },
+      "merge_notes": [
+        "Alias resolution: 'מחאת כפים בתפלה' (node1_id in edge 2274) treated as same node as 'מחאת כפים' (node2_id in edges 1736, 1737). Torah #46 is entirely about clapping in prayer; the qualifier 'בתפלה' is implicit throughout the Torah. Conceptually and contextually identical."
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 46,
+      "label": "יָד, הֲוָיָה, יָד רָמָה, צָפוֹן וְדָרוֹם",
+      "label_en": "The Hand, the Divine Name Havaya, the Raised Hand, North and South",
+      "polarity": "good",
+      "reason": "Six nodes from three merged CCs, all sharing the same essential nature: the HAND(S) AS DIVINE METAPHYSICAL STRUCTURES. CC2 {יד, הויה}: 'the hand is the aspect of Havaya — yud letters and dalet letters [= numerical value of Havaya]' (id 821) — the hand IS the divine Name. CC5 {בשעת הכאה שנתחברים יחד, יד רמה}: 'at the moment of striking/joining together, this is the aspect of the Raised Hand' (id 1246) — the joined hands IS the Raised Hand (third of the three divine Hands corresponding to three Havayahs). CC6 {צפון ודרום, ידים}: 'north and south, this is the aspect of the hands' (id 1247) — the cardinal directions ARE the hands. Merge of CC2+CC5+CC6 is by SHARED NATURE: יד = הויה (the hand's metaphysical identity); the joined hands = יד רמה (one of three Hands = three Havayahs); north/south = ידים (spatial expression of the hands). All three sub-groups are saying: the hand(s) ARE divine Names and cosmic structures. None of these merges involves a causal relationship — they are all parallel aspects of the same reality. The dominant node is ידים/יד (appears in both CC2 and CC6; treating יד and ידים as the same canonical node by consonantal root י-ד, degree 3 across the merged package: יד↔הויה, בשעת הכאה↔יד רמה, צפון ודרום↔ידים). Note: 'יד' and 'ידים' are singular/plural of the same root — they refer to the same conceptual entity (hand/hands). The hands in Torah #46 are the hands clapped in prayer; their metaphysical identity is what this package captures. The connection to Package 2 (clapping) is via eitza: the hands' divine identity (Package 3) is WHAT MAKES clapping (Package 2) effective. This is the WHY behind the act.",
+      "dominant_node": "ידים",
+      "nodes": [
+        "יד",
+        "הויה",
+        "בשעת הכאה שנתחברים יחד",
+        "יד רמה",
+        "צפון ודרום",
+        "ידים"
+      ],
+      "node_degrees": {
+        "יד": 1,
+        "הויה": 1,
+        "בשעת הכאה שנתחברים יחד": 1,
+        "יד רמה": 1,
+        "צפון ודרום": 1,
+        "ידים": 1
+      },
+      "merge_notes": [
+        "Merged CC2 {יד, הויה} + CC5 {בשעת הכאה שנתחברים יחד, יד רמה} + CC6 {צפון ודרום, ידים}: all share the essential nature of 'the hands as divine/cosmic structures.' Merge is by SHARED NATURE (not eitza): all three express what the hand(s) essentially ARE — a divine Name, a cosmic direction, an exalted divine force. The causal relationship (hand's divinity → clapping → sweetening) operates between packages, not within them.",
+        "Treating 'יד' (CC2) and 'ידים' (CC6) as expressions of the same canonical concept by consonantal root י-ד. Both refer to the hands as the physical-metaphysical instrument of prayer."
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 46,
+      "label": "אַהֲרֹן, יְמִינָא, קֹרַח וּשְׂמָאלָא",
+      "label_en": "Aaron, the Right, Korach, and the Left",
+      "polarity": "neutral",
+      "reason": "Four nodes from two merged CCs: CC7 {אהרן, ימינא}: 'Korach against Aaron — they are the aspect of left and right' (id 1362) — Aaron IS the right side. CC9 {קרח, שמאלא}: 'Korach against Aaron — they are the aspect of left and right' (id 2964) — Korach IS the left side. These share the essential nature of 'the two archetypal poles of the right-left split.' The text explicitly presents them as a pair: 'כל המחלקת נמשכים מבחינת קרח על אהרן, שהם בחינת שמאלא וימינא' — ALL conflict descends from the archetype of Korach-Aaron = left-right. Aaron and Korach are not simply good-and-evil individually; they ARE the two-sided structure of the polarity itself. Together they constitute one unified domain: the right-left split as the root of all conflict (and its resolution through clapping). Polarity is NEUTRAL because the package explicitly contains both poles as a paired structure — neither side alone defines the package; the package IS the pair. Aaron (good: right side, ימינא) and Korach (evil: left side, שמאלא) are both named in the same sentence by the Rebbe as the two aspects of the same archetypal split. The dominant node cannot be either Aaron or Korach alone; the package is named for both. Structurally this package is the 'root of conflict' domain — it explains WHY clapping (Package 2) resolves all conflict: by including right in left and left in right (נכללים שמאל בימין וימין בשמאל ונעשים אחדות), it repairs the primal Aaron-Korach split.",
+      "dominant_node": "אהרן",
+      "nodes": [
+        "אהרן",
+        "ימינא",
+        "קרח",
+        "שמאלא"
+      ],
+      "node_degrees": {
+        "אהרן": 1,
+        "ימינא": 1,
+        "קרח": 1,
+        "שמאלא": 1
+      },
+      "merge_notes": [
+        "Merged CC7 {אהרן, ימינא} + CC9 {קרח, שמאלא}: shared nature is 'the two poles of the right-left archetypal split.' The text presents them as one paired concept in a single sentence: 'קרח על אהרן, שהם בחינת שמאלא וימינא.' Aaron=ימינא and Korach=שמאלא together IS the concept of ימינא ושמאלא. Merge is by SHARED NATURE (they are two halves of the same structural reality — the primal split), not by eitza.",
+        "Polarity is neutral because the package inherently contains both a good node (אהרן/ימינא) and an evil node (קרח/שמאלא) as constitutive parts of the same domain."
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 46,
+      "label": "מֹחִין דְּקַטְנוּת וֶאֱלֹקִים",
+      "label_en": "Small Consciousness and the Divine Name Elokim (Judgment Domain)",
+      "polarity": "evil",
+      "reason": "Two nodes: מחין דקטנות ↔ אלהים (id 268): 'small-mind consciousness = the aspect of Elokim.' The essential nature: the state of contracted, judgment-dominated consciousness. In Rebbe Nachman's framework, Elokim is the divine Name associated with divine justice/severity (מידת הדין) — contraction, limitation, judgment. מחין דקטנות (small mind / small consciousness) IS that same contracted quality at the level of the human soul. Both are different expressions of the same reality: the dimension of divine judgment/severity as it manifests in the soul's consciousness. Polarity is 'evil' in the specific sense used by the framework: this is the negative pole of the teaching — not evil as in sitra achra, but the problematic state that the Torah's teaching aims to remedy. The text says: 'the main forgetting comes from מחין דקטנות, from the aspect of Elokim; and when one sweetens Elokim through one's hands, thereby one no longer forgets Torah.' The מחין דקטנות/אלהים package IS the negative state — the condition that the remedy (clapping = המתקת הדינים) is designed to fix. It is NOT merged with Package 6 (המתקת הדינים/ואפלטהו) because those two packages have different essential natures: Package 5 is the STATE of judgment-consciousness, Package 6 is the DIVINE RESCUE from that state. The causal link between them (sweetening Elokim removes מחין דקטנות) is eitza, not shared nature.",
+      "dominant_node": "מחין דקטנות",
+      "nodes": [
+        "מחין דקטנות",
+        "אלהים"
+      ],
+      "node_degrees": {
+        "מחין דקטנות": 1,
+        "אלהים": 1
+      },
+      "merge_notes": [
+        "CC3 kept separate. Not merged with Package 6 (המתקת הדינים / ואפלטהו): the causal relationship between them (sweetening Elokim removes small-mind consciousness) is eitza, not shared nature. Package 5 describes the PROBLEM (contracted judgment-state); Package 6 describes the RESCUE (divine deliverance = sweetening). Different essential natures.",
+        "Polarity assigned 'evil' as the problematic state — the negative pole that the Torah's teaching addresses. Not sitra achra evil, but the dimension of Elokim/din/judgment-consciousness that must be sweetened."
+      ]
+    },
+    {
+      "id": 6,
+      "torah_ref": 46,
+      "label": "\"וַאֲפַלְּטֵהוּ\" וְהַמְתָּקַת הַדִּינִים",
+      "label_en": "\"I Will Rescue Him\" and the Sweetening of Judgments",
+      "polarity": "good",
+      "reason": "Two nodes: 'ואפלטהו' ↔ המתקת הדינים (id 894): '\"ואפלטהו\" = the aspect of the sweetening of judgments.' The essential nature: divine rescue = sweetening of judgments. The verse from Psalms 91:14 — 'כי בי חשק ואפלטהו' — 'because he has desire for me, I will rescue him' — is interpreted in the Torah as: the revealed desire (חשק) of the heart in the hands (clapping) leads to divine rescue, which IS the sweetening of judgments. So 'ואפלטהו' (I will rescue him) and 'המתקת הדינים' (sweetening of judgments) name the same divine action from two perspectives: one is the divine promise of rescue (ואפלטהו), the other is the metaphysical description of what that rescue consists of (sweetening the severity/judgments). Both ARE the same reality — divine deliverance = the transformation of strict judgment into mercy. Polarity: good (this is the positive outcome, the divine mercy dimension). This package is the RESULT domain: what God does in response to the clapping/desire. It is connected to Package 5 (מחין דקטנות/אלהים) via eitza (God sweetens the Elokim → removes small-mind consciousness), and to Package 2 (clapping) via eitza (clapping → ואפלטהו/המתקת הדינים). The two-node structure is small but legitimate: the bechina statement is explicit and the package represents the Torah's promised outcome.",
+      "dominant_node": "המתקת הדינים",
+      "nodes": [
+        "\"ואפלטהו\"",
+        "המתקת הדינים"
+      ],
+      "node_degrees": {
+        "\"ואפלטהו\"": 1,
+        "המתקת הדינים": 1
+      },
+      "merge_notes": [
+        "CC4 kept separate. Not merged with Package 5 (מחין דקטנות/אלהים): the causal link is eitza (sweetening removes the contraction). Their natures differ: Package 5 IS the state of judgment-consciousness (problem); Package 6 IS the divine rescue = sweetening (solution). Different domains.",
+        "Not merged with Package 2 (clapping): clapping CAUSES the sweetening (eitza); they are not the same essential reality."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 14,
+    "total_nodes": 21,
+    "total_packages": 6,
+    "raw_connected_components": 9
+  }
+}

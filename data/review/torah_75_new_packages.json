@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "source": "Torah #75",
+    "type": "new_package_proposals",
+    "generated": "2026-03-03"
+  },
+  "verdict": "CONDITIONAL_NEW_PACKAGE",
+  "new_packages": [
+    {
+      "proposed_id": 4,
+      "torah_ref": 75,
+      "label": "מַחֲשָׁבָה וּצְעָקָה — מֹשֶׁה וְדָוִד",
+      "label_en": "Thought and Outcry — Moses and David",
+      "polarity": "good",
+      "domain_description": "The two modes of Torah and Prayer: inner thought (מחשבה) and outer vocal outcry (צעקה). These are identified with the archetypes of Moses and David respectively, and each receives its own bechina-metaphor from the verse — צעקה as 'חכמות בחוץ תרנה' (wisdom cries out publicly) and מחשבה as 'חמוקי ירכיך' (the hidden chambers of the hip/thigh, the interior).",
+      "proposed_nodes": [
+        {
+          "node_id": "מחשבה",
+          "node_text": "מַחֲשָׁבָה",
+          "bechina_statement": "ובמחשבה בחינת: חמוקי ירכיך",
+          "source_line": "ובתורה ותפלה יש שני גוונים, מחשבה וצעקה, והוא בחינת משה ודוד. כי הצעקה בחינת: חכמות בחוץ תרנה, ובמחשבה בחינת: חמוקי ירכיך"
+        },
+        {
+          "node_id": "צעקה",
+          "node_text": "צְעָקָה",
+          "bechina_statement": "כי הצעקה בחינת: חכמות בחוץ תרנה",
+          "source_line": "כי הצעקה בחינת: חכמות בחוץ תרנה, ובמחשבה בחינת: חמוקי ירכיך"
+        },
+        {
+          "node_id": "משה",
+          "node_text": "מֹשֶׁה",
+          "bechina_statement": "הוא בחינת משה ודוד / ובמשה כתיב: ויצעק משה, וכתיב: וילך וידבר וכו'",
+          "source_line": "ובתורה ותפלה יש שני גוונים, מחשבה וצעקה, והוא בחינת משה ודוד"
+        },
+        {
+          "node_id": "דוד",
+          "node_text": "דָּוִד",
+          "bechina_statement": "הוא בחינת משה ודוד / ובדוד כתיב: במקהלות ברכו אלקים",
+          "source_line": "ובתורה ותפלה יש שני גוונים, מחשבה וצעקה, והוא בחינת משה ודוד"
+        },
+        {
+          "node_id": "חכמות בחוץ תרנה",
+          "node_text": "חָכְמוֹת בַּחוּץ תָּרֹנָּה",
+          "bechina_statement": "הצעקה בחינת: חכמות בחוץ תרנה",
+          "source_line": "כי הצעקה בחינת: חכמות בחוץ תרנה"
+        },
+        {
+          "node_id": "חמוקי ירכיך",
+          "node_text": "חַמּוּקֵי יְרֵכַיִךְ",
+          "bechina_statement": "ובמחשבה בחינת: חמוקי ירכיך",
+          "source_line": "ובמחשבה בחינת: חמוקי ירכיך"
+        }
+      ],
+      "proposed_bechina_edges": [
+        {"node1_id": "צעקה", "node2_id": "חכמות בחוץ תרנה"},
+        {"node1_id": "מחשבה", "node2_id": "חמוקי ירכיך"},
+        {"node1_id": "תורה ותפלה", "node2_id": "מחשבה"},
+        {"node1_id": "תורה ותפלה", "node2_id": "צעקה"},
+        {"node1_id": "צעקה", "node2_id": "משה"},
+        {"node1_id": "מחשבה", "node2_id": "דוד"}
+      ],
+      "justification": "The mahadura tinyana closing section of Torah #75 introduces a distinct conceptual domain not covered by Packages 1–3: the TWO MODES of Torah and Prayer (thought vs. outcry), identified with Moses and David as archetypes. The text contains 6 concepts with explicit bechina language: (1) צעקה = חכמות בחוץ תרנה, (2) מחשבה = חמוקי ירכיך, (3-4) the two modes are בחינת משה ודוד, (5) the two modes = the two variants of bringing Torah/Prayer. These 6+ concepts form an independent domain — the phenomenology of divine-service modalities — that is not reducible to Package 1 (elevation/peace/unity) or Package 2 (standing/legs). The domain is: HOW Torah and Prayer are performed — interior thought or external outcry — and the archetypal figures who embody each mode. This is 3+ bechina concepts forming an independent cluster that would justify Package 4.",
+      "caveat": "CRITICAL CAVEAT: The Rebbe himself appends to this section: 'גַּם זֹאת הַתּוֹרָה, הַלָּשׁוֹן אֵינוֹ מְתֻקָּן וּמְסֻדָּר כְּלָל, גַּם חָסֵר הַרְבֵּה' (The language of this Torah is not refined or organized at all, and much is missing) and specifically regarding the מחשבה/צעקה section: 'גַּם זֶה לֹא הֵבַנְתִּי כְּלָל' (This also I do not understand at all). The Rebbe's own acknowledgment of incompleteness applies with particular force to this closing section. It would therefore be premature to encode firm bechina edges from this passage without rabbinic/scholarly corroboration. This package is proposed conditionally — the concepts and bechina language ARE present in the text, but the teaching itself is incomplete and the Rebbe did not consider it finalized.",
+      "connection_to_existing_packages": "Package 4 would connect to Package 1 via the תורה ותפלה node (which is the compound node already in Package 1 as one of its members). The two modes of Torah/Prayer (Package 4) are modalities OF the elevation process (Package 1) — an eitza connection: performing Torah/Prayer in either mode → produces הַעֲלָאַת מַיִּין נוּקְבִין."
+    }
+  ],
+  "observations": "Torah #75 contains three clearly defined packages in its primary body (the mahadura tinyana main text): (1) the positive elevation/peace/unity cluster, (2) the legs/standing cluster, and (3) the negative dispute/strife cluster. The closing passage (which the Rebbe marks as incomplete and which he himself could not fully understand) adds a fourth conceptual domain about the two modes of spiritual practice. That fourth domain has enough bechina language to propose a new package (Package 4: מחשבה וצעקה / משה ודוד) but the incompleteness caveat is essential. The three main packages form the Torah's structural argument: [Dispute/Strife as evil starting point] → [Torah and Prayer as elevation/peace] → [Legs/Standing as the bodily foundation of that practice]. The good/evil mirror structure is: Package 1 (שלום) mirrors Package 3 (מחלקת). Package 2 (healthy legs = Torah/Prayer standing firm) has its evil mirror embedded within it (צולע על ירכו = broken legs before tikkun)."
+}

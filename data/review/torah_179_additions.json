@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "source": "Torah #179",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "medium",
+      "description": "צוֹם = תַּעֲנִית (fast = fasting — the nominal form equated with the practice)",
+      "source_text_ref": "Line 5: 'קָרֵי לֵהּ צוֹם וְקָרֵי לֵהּ שָׂשׂוֹן... כְּשֶׁאֵין שָׁלוֹם – צוֹם'. The teaching treats צוֹם and תַּעֲנִית as the same bechina throughout, but only צְדָקָה—תַּעֲנִית is encoded.",
+      "proposed_edge": {
+        "node1_id": "צום",
+        "node2_id": "תענית",
+        "type": "bechina",
+        "reference": 179
+      },
+      "package_assignment": 2,
+      "notes": "The text uses צוֹם and תַּעֲנִית interchangeably throughout. Encoding this bechina would explicitly confirm their identity and add the well-known Rabbinic category 'צוֹם' into Package 2. The phrase 'כְּשֶׁאֵין שָׁלוֹם – צוֹם' directly parallels 'לְבַטֵּל הַמַּחֲלֹקֶת...עַל זֶה צָרִיךְ תַּעֲנִית'. They are the same thing expressed through two synonyms."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "medium",
+      "description": "כָּבוֹד = רָצוֹן (honor/will of a person — the Yerushalmi equation cited in a parallel Torah)",
+      "source_text_ref": "The proof text used in edge ID 2778 (Torah 177, bechina: כבוד = רצון via Yerushalmi Pe'ah) is conceptually invoked in Torah 179 through the Zohar passage: the teaching equates subduing the נֶפֶשׁ/רָצוֹן with Yom Kippur's affliction. The Yerushalmi 'רְצוֹנוֹ שֶׁל אָדָם זֶהוּ כְּבוֹדוֹ' undergirds the argument but is not encoded for reference 179.",
+      "proposed_edge": {
+        "node1_id": "כבוד",
+        "node2_id": "רצון",
+        "type": "bechina",
+        "reference": 179
+      },
+      "package_assignment": 1,
+      "notes": "While this bechina is encoded for Torah 177 (edge ID 2778), the same concept operates implicitly in Torah 179: by subduing one's רָצוֹן before God's will (fasting), one's כָּבוֹד is ultimately elevated (marbeh tzedakah marbeh shalom). The Rebbe cites 'בַּטֵּל רְצוֹנְךָ מִפְּנֵי רְצוֹנוֹ' — which inherently invokes the כָּבוֹד = רָצוֹן equation. Priority medium because it is explicit in Torah 177 but only implicit here."
+    }
+  ],
+  "unassigned_dataset_nodes": [
+    {
+      "node_id": "מחלקת הן בגשמיות הן ברוחניות שאינו יכול להתפלל או לעשות מה שצריך בעבודת השם. כי הכל בכלל מחלקת, שעומדים וחולקים עליו ורוצים לבטל דעתו ורצונו מה שרוצה לעשות, וכדי לבטל המחלקת מאיזה בחינה שתהיה ולעשות שלום",
+      "reason": "Appears only in eitza edge (ID 1767, reference 179, type eitza: תַּעֲנִית → this long-form description of strife). This is the elaborated description of מַחֲלֹקֶת in its fullest form but is classified as an eitza destination, not a bechina node. The core concept is captured in the shorter form מַחֲלֹקֶת in Package 1."
+    },
+    {
+      "node_id": "נכנע ונחלש הלב ונתבטל כל הרצונות האחרים שלו מפני רצון הקדוש־ברוך־הוא, לאדבקא רעותא דלבא וכו",
+      "reason": "Appears only in eitza edges (IDs 2080, 2258, reference 179). This is the intermediate result of fasting — a subdued state leading to attachment to God. It is an eitza outcome (תַּעֲנִית → this state), not a bechina identity. Excluded from packages per framework."
+    },
+    {
+      "node_id": "נתבטל המחלקת שהוא בחינת רצונות אחרים שלא כרצונו",
+      "reason": "Appears only in eitza edge (ID 2258, reference 179). The phrase 'שֶׁהוּא בְּחִינַת רְצוֹנוֹת אֲחֵרִים' in this context identifies the nature of what is nullified, but the edge itself is eitza (state of subdued heart → nullification of strife). The bechina equation מַחֲלֹקֶת = רְצוֹנוֹת אֲחֵרִים is captured in edge ID 2781 (Package 1)."
+    },
+    {
+      "node_id": "נתבטל רצונו מפני רצון השם יתברך",
+      "reason": "Appears only in eitza edge (ID 2264, reference 179). This is the eitza outcome of fasting (תַּעֲנִית → nullification of one's own will before God's will). Cause-and-effect, not bechina."
+    },
+    {
+      "node_id": "שלום",
+      "reason": "Appears as eitza destination in multiple edges (IDs 2905, 2906, reference 179: תַּעֲנִית → שָׁלוֹם). שָׁלוֹם is the downstream result of fasting, not a bechina-identical concept to it. In Torah 179 there is no bechina equating שָׁלוֹם with another concept — it is always the goal/result."
+    },
+    {
+      "node_id": "שמחה",
+      "reason": "Appears as eitza destination in multiple edges (IDs 2970, 2971, 3003, reference 179: תַּעֲנִית → שִׂמְחָה/נִבְנֶה הַשִּׂמְחָה). Joy is built through fasting as cause-and-effect. No bechina edge equates שִׂמְחָה with another concept in Torah 179."
+    },
+    {
+      "node_id": "ששון ושמחה",
+      "reason": "Appears as eitza destination in edges (IDs 3051, 3052, reference 179). שָׂשׂוֹן וְשִׂמְחָה is the rabbinic phrase for the festal joy that results from peace (when there is peace: gladness and joy). This is eitza (when shalom exists → gladness)."
+    },
+    {
+      "node_id": "שמעורר ומחיה מתים, הינו הימים שעברו בחשך, ואין להם שום חיות",
+      "reason": "Appears only in eitza edge (ID 3003, reference 179: תַּעֲנִית → reviving dead days). This is a description of one of fasting's effects/properties, expressed as eitza. Not a bechina identity."
+    }
+  ],
+  "analysis_notes": {
+    "total_bechina_edges": 3,
+    "nodes_in_dataset_not_in_packages": "8 nodes appear only in eitza edges for Torah 179. All are correctly excluded from packages per framework: they represent either the problem (strife), the intermediate states, or the positive outcomes of fasting — all of which are eitza relationships (cause and effect), not bechina identities. The framework correctly distinguishes: the NATURE of strife and fasting (bechina) from what fasting PRODUCES (eitza).",
+    "concepts_in_source_text_not_in_dataset": [
+      "צוֹם as explicit bechina of תַּעֲנִית — the synonyms are used interchangeably throughout but no explicit bechina edge encodes their identity for Torah 179",
+      "יוֹם הַכִּפּוּרִים as the supreme/comprehensive תַּעֲנִית ('כְּלָלוּת כָּל הַיָּמִים') — the teaching implies Yom Kippur = the ultimate fasting-day that includes all others, but this is not encoded as a bechina edge",
+      "The Zohar's 'לְאַכְנָעָא לִבָּא לְאַדְבְּקָא רְעוּתָא דְּלִבָּא' — the inner attachment of the heart's will to God could be a bechina of תַּעֲנִית (fasting = attachment of will to God) but is presented as the mechanism/effect of fasting rather than its essential nature",
+      "כָּבוֹד = רָצוֹן (implicit from the Yerushalmi equation cited in parallel Torahs) — operates in the background of the teaching but not encoded for Torah 179"
+    ],
+    "structural_observations": [
+      "Torah 179 is among the most eitza-heavy Torahs in the dataset: of 14 total edges, only 3 are bechina and 11 are eitza. This reflects the teaching's character as practical advice (עֵצָה): here is what you do (fast) and here is what results (peace, joy).",
+      "The 3 bechina edges encode the three key conceptual identifications that undergird the entire teaching: (1) נֶפֶשׁ = רָצוֹן [what you are subduing], (2) מַחֲלֹקֶת = רְצוֹנוֹת אֲחֵרִים [what opposes you], (3) צְדָקָה = תַּעֲנִית [the practice and its merit are the same thing].",
+      "The teaching has a clean good/evil structure but it is expressed through eitza chains rather than bechina clusters: strife (evil, package 1 node) is defeated by fasting (good, package 2) producing peace and joy (good). The conceptual packages are thin because the Torah's real content is in its eitza architecture.",
+      "Package 1 (הָרָצוֹן) is marked neutral rather than good or evil because רָצוֹן itself is structurally neutral — it is the ground from which both holy will (נֶפֶשׁ aligned with God) and alien will (מַחֲלֹקֶת opposing you) arise. The teaching's practical wisdom is precisely this: recognize that strife is a will-phenomenon, subdue your own will before God (fasting), and the alien wills dissolve."
+    ]
+  }
+}

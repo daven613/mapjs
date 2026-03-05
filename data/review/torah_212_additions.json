@@ -1,0 +1,330 @@
+{
+  "meta": {
+    "source": "Torah #212",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_212_packages.json, all reference===212 edges from torahData.js (three eitza edges found — IDs 1477, 1694, 2065; zero bechina edges found), and the full source text torah_212.txt. Since the dataset contains zero bechina edges for Torah #212, ALL bechina nodes and bechina edges identified here are new additions derived from the source text. Nodes were checked against the dataset to determine whether they already exist as nodes in other Torahs. Only concepts with explicit bechina-type language ('זה בחינת', 'הם הדבורים', 'הם יד הנביאים', 'נכלל') were designated as 'bechina'; the pre-existing eitza edges (clapping → seeing God's image; attachment to tzaddikim → speech-power; clapping → prayer encompassed in Torah) correctly remain eitza and are noted but not duplicated here."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "מְחָאַת כַּפַּיִם וּדְבַר הַנְּבִיאִים",
+      "node_id": "מחאת כפים",
+      "node_text": "מְחָאַת כַּף אֶל כַּף",
+      "polarity": "good",
+      "reason": "The central practice of Torah #212. Clapping of hands is the primary vehicle through which the divine image is revealed and prophetic speech is activated. מחאת כפים appears as a node in many other Torahs in the dataset (references 44, 46, 47, 60, etc.) and is already an existing node. The specific bechina for Torah #212 — 'מחאת כף זה בחינת ידי אדם מתחת כנפיהם' — is not yet in the dataset for reference 212.",
+      "source_quote": "גַּם מְחָאַת כַּף זֶה בְּחִינַת (יחזקאל י׳:ח׳): וִידֵי אָדָם מִתַּחַת כַּנְפֵיהֶם",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "מחאת כפים",
+        "node2_id": "ידי אדם מתחת כנפיהם",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "גַּם מְחָאַת כַּף זֶה בְּחִינַת (יחזקאל י׳:ח׳): וִידֵי אָדָם מִתַּחַת כַּנְפֵיהֶם, כִּי הַכְּנָפַיִם הֵם הַדִּבּוּרִים"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְחָאַת כַּפַּיִם וּדְבַר הַנְּבִיאִים",
+      "node_id": "ידי אדם מתחת כנפיהם",
+      "node_text": "וִידֵי אָדָם מִתַּחַת כַּנְפֵיהֶם",
+      "polarity": "good",
+      "reason": "The verse from Ezekiel 10:8 — human hands beneath the wings of the divine creatures. This is the bechina-identity of clapping hands: the palms of the hands as they strike are the 'human hands beneath the wings' of the divine chariot. The wings are the speech, the hands beneath them are the clapping. This concept is new to the dataset for Torah #212 and likely does not appear as an independent node elsewhere.",
+      "source_quote": "גַּם מְחָאַת כַּף זֶה בְּחִינַת (יחזקאל י׳:ח׳): וִידֵי אָדָם מִתַּחַת כַּנְפֵיהֶם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "ידי אדם מתחת כנפיהם",
+        "node2_id": "מחאת כפים",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "מְחָאַת כַּף זֶה בְּחִינַת וִידֵי אָדָם מִתַּחַת כַּנְפֵיהֶם — the human hands beneath the wings are the essential nature of the clapping"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְחָאַת כַּפַּיִם וּדְבַר הַנְּבִיאִים",
+      "node_id": "כנפים",
+      "node_text": "כְּנָפַיִם",
+      "polarity": "good",
+      "reason": "Wings — equated by the Rebbe with speech/words (דבורים) via the verse from Ecclesiastes 10:20 'ובעל כנפים יגיד דבר'. Wings as a symbol of words/speech is a classic bechina in Rebbe Nachman's teachings. כנפים likely appears in other Torahs but needs the specific bechina edge for Torah #212.",
+      "source_quote": "כִּי הַכְּנָפַיִם הֵם הַדִּבּוּרִים, בִּבְחִינַת (קהלת י׳:כ׳): וּבַעַל כְּנָפַיִם יַגֵּיד דָּבָר",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "כנפים",
+        "node2_id": "דבורים",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "כִּי הַכְּנָפַיִם הֵם הַדִּבּוּרִים, בִּבְחִינַת (קֹהֶלֶת י׳:כ׳): וּבַעַל כְּנָפַיִם יַגֵּיד דָּבָר"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְחָאַת כַּפַּיִם וּדְבַר הַנְּבִיאִים",
+      "node_id": "דבורים",
+      "node_text": "דִּבּוּרִים",
+      "polarity": "good",
+      "reason": "Speech/words as a concept in their own right — equated with כנפים (wings). In Torah #212, 'דבורים' is the general term for the speech-power that is the essential nature of the wings. This is the same concept as 'דבור' but in its plural form representing the multiplicity of prophetic utterances. May already exist as a node variant of דבור.",
+      "source_quote": "כִּי הַכְּנָפַיִם הֵם הַדִּבּוּרִים",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "דבורים",
+        "node2_id": "כנפים",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "הַכְּנָפַיִם הֵם הַדִּבּוּרִים — speech/words ARE the wings; both expressions of the same prophetic-speech essence"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְחָאַת כַּפַּיִם וּדְבַר הַנְּבִיאִים",
+      "node_id": "נביאים",
+      "node_text": "נְבִיאִים",
+      "polarity": "good",
+      "reason": "Prophets — equated with the speech of prayer ('דבור התפלה') via the phrase 'כמו ניב שפתים' (like the utterance of lips, Isaiah 57:19). The Rebbe says: 'נביאים זה בחינת דבור התפלה'. Prophets appear in the dataset (e.g., reference 1081: נביאים ↔ רגלים), so this is an existing node requiring a new bechina edge for Torah #212.",
+      "source_quote": "וּנְבִיאִים זֶה בְּחִינַת דִּבּוּר הַתְּפִלָּה, כְּמוֹ נִיב שְׂפָתַיִם",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "נביאים",
+        "node2_id": "דבור התפלה",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "וּנְבִיאִים זֶה בְּחִינַת דִּבּוּר הַתְּפִלָּה, כְּמוֹ נִיב שְׂפָתַיִם"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְחָאַת כַּפַּיִם וּדְבַר הַנְּבִיאִים",
+      "node_id": "דבור התפלה",
+      "node_text": "דִּבּוּר הַתְּפִלָּה",
+      "polarity": "good",
+      "reason": "The speech of prayer — the prophetic speech-act of prayer. This is distinct from 'תפלה' (prayer as a spiritual state or act) and from 'דבור' (speech in general). It is the specific form of speech that is the essential nature of prophecy according to this Torah. 'ניב שפתים' (utterance of lips) is the prophetic template. Likely a new node in the dataset.",
+      "source_quote": "וּנְבִיאִים זֶה בְּחִינַת דִּבּוּר הַתְּפִלָּה, כְּמוֹ נִיב שְׂפָתַיִם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "דבור התפלה",
+        "node2_id": "נביאים",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "נְבִיאִים זֶה בְּחִינַת דִּבּוּר הַתְּפִלָּה — prophetic speech IS the speech of prayer; they are the same essential reality"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְחָאַת כַּפַּיִם וּדְבַר הַנְּבִיאִים",
+      "node_id": "כפים",
+      "node_text": "כַּפַּיִם",
+      "polarity": "good",
+      "reason": "The palms of the hands — identified as the hand of the prophets ('יד הנביאים'). In the context of clapping, the palms striking each other ARE the hands of the prophets. This is a distinct concept from מחאת כפים (the act of clapping) — it is the anatomical component whose bechina nature is revealed: כפים = יד הנביאים. Likely already a node in the dataset as a body-part concept.",
+      "source_quote": "וְהַכַּפַּיִם הֵם יַד הַנְּבִיאִים",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "כפים",
+        "node2_id": "יד הנביאים",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "וְהַכַּפַּיִם הֵם יַד הַנְּבִיאִים — the palms ARE the hand of the prophets"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "מְחָאַת כַּפַּיִם וּדְבַר הַנְּבִיאִים",
+      "node_id": "יד הנביאים",
+      "node_text": "יַד הַנְּבִיאִים",
+      "polarity": "good",
+      "reason": "The hand of the prophets — equated with the palms (כפים) in the act of clapping. This phrase comes from Hosea 12:11: 'ביד הנביאים אדמה' (through the hand of the prophets I was imaged). The 'hand' here is the instrument of the divine imaging — and it is identified with the physical palms that clap. New node for the dataset.",
+      "source_quote": "וְהַכַּפַּיִם הֵם יַד הַנְּבִיאִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "יד הנביאים",
+        "node2_id": "כפים",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "הַכַּפַּיִם הֵם יַד הַנְּבִיאִים — the hand of the prophets IS the palms (of the clapping hands)"
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וְתוֹרָה שֶׁבִּכְתָב וְשֶׁבְּעַל־פֶּה",
+      "node_id": "תפלה",
+      "node_text": "תְּפִלָּה",
+      "polarity": "good",
+      "reason": "Prayer — a major existing node in the dataset, appearing in dozens of Torahs. Torah #212 adds a new bechina: prayer is encompassed (נכלל) in Written Torah and Oral Torah, which are the two hands. This is a new bechina edge for reference 212 connecting תפלה to the Torah-dual of Package 2.",
+      "source_quote": "גַּם נִכְלָל הַתְּפִלָּה בְּתוֹךְ תּוֹרָה שֶׁבִּכְתָב וְתוֹרָה שֶׁבְּעַל־פֶּה שֶׁהֵם שְׁנֵי יָדַיִם: יָד כּוֹתֶבֶת וְיָד חוֹתֶמֶת",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "תפלה",
+        "node2_id": "תורה שבכתב",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "גַּם נִכְלָל הַתְּפִלָּה בְּתוֹךְ תּוֹרָה שֶׁבִּכְתָב וְתוֹרָה שֶׁבְּעַל־פֶּה — prayer is encompassed within the domain of both Torahs; they share the same essential spiritual category of the two divine hands"
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וְתוֹרָה שֶׁבִּכְתָב וְשֶׁבְּעַל־פֶּה",
+      "node_id": "תורה שבכתב",
+      "node_text": "תוֹרָה שֶׁבִּכְתָב",
+      "polarity": "good",
+      "reason": "Written Torah — equated in Torah #212 with the writing hand (יד כותבת). This identification, that Written Torah IS the bechina of the writing hand, is likely a recurring identification in the dataset but needs its specific bechina edge for reference 212.",
+      "source_quote": "תוֹרָה שֶׁבִּכְתָב וְתוֹרָה שֶׁבְּעַל־פֶּה שֶׁהֵם שְׁנֵי יָדַיִם: יָד כּוֹתֶבֶת וְיָד חוֹתֶמֶת",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "תורה שבכתב",
+        "node2_id": "יד כותבת",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "תוֹרָה שֶׁבִּכְתָב ... שֶׁהֵם שְׁנֵי יָדַיִם: יָד כּוֹתֶבֶת — Written Torah IS the writing hand"
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וְתוֹרָה שֶׁבִּכְתָב וְשֶׁבְּעַל־פֶּה",
+      "node_id": "יד כותבת",
+      "node_text": "יָד כּוֹתֶבֶת",
+      "polarity": "good",
+      "reason": "The writing hand — the bechina of Written Torah. The right hand that writes is the aspect/image of Torah she-bikhsav. New node for the dataset.",
+      "source_quote": "שֶׁהֵם שְׁנֵי יָדַיִם: יָד כּוֹתֶבֶת וְיָד חוֹתֶמֶת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "יד כותבת",
+        "node2_id": "תורה שבכתב",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "שֶׁהֵם שְׁנֵי יָדַיִם: יָד כּוֹתֶבֶת — the writing hand is the bechina of Written Torah"
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וְתוֹרָה שֶׁבִּכְתָב וְשֶׁבְּעַל־פֶּה",
+      "node_id": "תורה שבעל-פה",
+      "node_text": "תוֹרָה שֶׁבְּעַל־פֶּה",
+      "polarity": "good",
+      "reason": "Oral Torah — equated in Torah #212 with the sealing hand (יד חותמת). The 'sealing' aspect — חותמת — relates to the Oral Torah's role in 'sealing' or authenticating the written text through the living tradition. Existing node in dataset; new bechina edge for reference 212.",
+      "source_quote": "תוֹרָה שֶׁבְּעַל־פֶּה שֶׁהֵם שְׁנֵי יָדַיִם ... וְיָד חוֹתֶמֶת",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "תורה שבעל-פה",
+        "node2_id": "יד חותמת",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "תוֹרָה שֶׁבְּעַל־פֶּה ... שֶׁהֵם שְׁנֵי יָדַיִם: יָד כּוֹתֶבֶת וְיָד חוֹתֶמֶת — Oral Torah IS the sealing hand"
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלָּה וְתוֹרָה שֶׁבִּכְתָב וְשֶׁבְּעַל־פֶּה",
+      "node_id": "יד חותמת",
+      "node_text": "יָד חוֹתֶמֶת",
+      "polarity": "good",
+      "reason": "The sealing hand — the bechina of Oral Torah. The left hand that seals/stamps is the aspect of Torah she-be'al-peh. New node for the dataset.",
+      "source_quote": "שֶׁהֵם שְׁנֵי יָדַיִם: יָד כּוֹתֶבֶת וְיָד חוֹתֶמֶת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "יד חותמת",
+        "node2_id": "תורה שבעל-פה",
+        "type": "bechina",
+        "reference": 212,
+        "proof": "שֶׁהֵם שְׁנֵי יָדַיִם: יָד כּוֹתֶבֶת וְיָד חוֹתֶמֶת — the sealing hand is the bechina of Oral Torah"
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "eitza_edges_identified": [
+    {
+      "node1_id": "מחאת כפים",
+      "node2_id": "מביטין בתמונת ה",
+      "direction": "מחאת כפים → מביטין בתמונת ה'",
+      "proof": "זֶה בְּחִינַת מְחָאַת כַּף אֶל כַּף, כִּי עַל־יְדֵי־זֶה מַבִּיטִין בִּתְמוּנַת ה'",
+      "edge_id_in_dataset": 1694,
+      "note": "Correctly typed as eitza in dataset — clapping PRODUCES the vision/gazing upon the divine image. Already exists as edge 1694."
+    },
+    {
+      "node1_id": "התקשרות לצדיקים",
+      "node2_id": "כח הדבור",
+      "direction": "התקשרות לצדיקים → כח הדבור",
+      "proof": "כֹּחַ הַדִּבּוּר בָּא עַל־יְדֵי הִתְקַשְּׁרוּת לְצַדִּיקִים, כַּמּוּבָא: פֶּה אִתְקְרִיאַת מִסִּטְרָא דְּצַדִּיק",
+      "edge_id_in_dataset": 1477,
+      "note": "Correctly typed as eitza in dataset — attachment to tzaddikim BRINGS/PRODUCES the power of speech. Already exists as edge 1477."
+    },
+    {
+      "node1_id": "מחאת כפים",
+      "node2_id": "נכלל התפלה בתוך תורה שבכתב ותורה שבעל־פה שהם שני ידים יד כותבת ויד חותמת",
+      "direction": "מחאת כפים → נכלל התפלה...",
+      "proof": "גַּם נִכְלָל הַתְּפִלָּה בְּתוֹךְ תּוֹרָה שֶׁבִּכְתָב וְתוֹרָה שֶׁבְּעַל־פֶּה שֶׁהֵם שְׁנֵי יָדַיִם",
+      "edge_id_in_dataset": 2065,
+      "note": "Typed as eitza in dataset (edge 2065). The 'also' (גם) construction and the long compound node_id suggest it was encoded as a consequence/product of clapping rather than a bechina identity. The bechina relationships WITHIN that cluster (תפלה ↔ תורה שבכתב ↔ יד כותבת etc.) are now properly separated and proposed as individual bechina edges in torah_212_additions.json."
+    },
+    {
+      "node1_id": "נביאים / דבורים",
+      "node2_id": "דמיון (תמונת ה')",
+      "direction": "נביאים → מתגלה הדמיון",
+      "proof": "וְאָז הַדִּמְיוֹן נִתְגַּלֶּה, בִּבְחִינַת: וּבְיַד הַנְּבִיאִים אֲדַמֶּה",
+      "edge_id_in_dataset": null,
+      "note": "Eitza — when we speak the divine images with our mouths and clap, the imagination/divine-image IS REVEALED. This revelation is the product (eitza) of the act of clapping and speaking. New eitza edge, not yet in dataset."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_212_edges": 3,
+    "total_reference_212_bechina_edges_in_dataset": 0,
+    "total_reference_212_eitza_edges_in_dataset": 3,
+    "new_bechina_edges_from_source_text": 7,
+    "new_eitza_edges_from_source_text": 1,
+    "nodes_new_to_dataset": [
+      "ידי אדם מתחת כנפיהם",
+      "דבור התפלה",
+      "יד הנביאים",
+      "יד כותבת",
+      "יד חותמת"
+    ],
+    "nodes_already_in_dataset": [
+      "מחאת כפים — appears in many Torahs (references 44, 46, 47, 60, etc.)",
+      "כנפים — appears in multiple Torahs as a body-part/symbol node",
+      "דבורים — variant of דבור, existing concept in dataset",
+      "נביאים — appears in dataset (reference 1081: נביאים ↔ רגלים)",
+      "כפים — body-part node, appears in various Torahs",
+      "תפלה — major node, appears in dozens of Torahs",
+      "תורה שבכתב — appears in multiple Torahs",
+      "תורה שבעל-פה — appears in multiple Torahs"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "תמונת ה' (the divine image/likeness)",
+        "reason": "The concept 'תמונת ה'' appears in the teaching as the DESTINATION/PRODUCT of the clapping act — 'על ידי זה מביטין בתמונת ה'' (through this one gazes upon the divine image). It is reached via eitza from clapping, not identified via bechina with another concept in this Torah. Already in the dataset as node 'מביטין בתמונת ה' (edge 1694). Its bechina-nature is: the divine imaginations revealed by the prophets are the divine images — but this is the eitza result of the teaching's argument, not a new standalone bechina package. Excluded from new bechina edges."
+      },
+      {
+        "concept": "דמיונות (divine imaginations/likenesses — רחום וחנון וכו')",
+        "reason": "The specific divine attributes that we call God — 'דמיונות שאנו מדמין אותו: רחום וחנון ושאר כינויים' — are the content of what the prophets revealed and what we speak in prayer. They are the CONTENT of תמונת ה', not an independent bechina concept with its own node-identity in this Torah. They are subsumed within the broader concept of 'תמונת ה'' and 'דמיון'. Excluded."
+      },
+      {
+        "concept": "כח הדבור (power of speech)",
+        "reason": "Appears as node in edge 1477 (eitza: התקשרות לצדיקים → כח הדבור). In the teaching, כח הדבור is the product/effect of attachment to tzaddikim — an eitza node. In Torah #212, no bechina statement equates כח הדבור to any other concept. The sentence 'כח הדבור בא על ידי התקשרות לצדיקים' is purely eitza. Excluded from bechina packages."
+      },
+      {
+        "concept": "התקשרות לצדיקים (attachment to tzaddikim)",
+        "reason": "Appears as node in edge 1477 (eitza: התקשרות לצדיקים → כח הדבור). No bechina statement in Torah #212 defines what התקשרות לצדיקים IS at its essential nature — the Rebbe only says that through it (על ידי) comes the power of speech. Pure eitza, no bechina identification. Excluded from bechina packages."
+      },
+      {
+        "concept": "ניב שפתים (utterance of lips — Isaiah 57:19)",
+        "reason": "Appears as a proof-verse for the bechina נביאים ↔ דבור התפלה, not as an independent concept node. The phrase 'כמו ניב שפתים' is cited to support the equation, not to introduce a new bechina concept. It is a scriptural reference used as evidence, not a standalone node in the teaching's argument."
+      },
+      {
+        "concept": "ביד הנביאים אדמה (Hosea 12:11)",
+        "reason": "This verse is the PROOF and RESULT of the practice — when we speak the divine images and clap, this verse is fulfilled. It is cited as the outcome (eitza result) of the combined act, confirming that the divine imaging occurs through the prophets (=the clapping speech). Not a bechina concept-node in its own right."
+      }
+    ],
+    "good_evil_mirror_note": "Torah #212 is unusual in that it lacks an explicit evil dimension or evil mirror structure. The entire teaching operates within the domain of holiness — clapping, prayer, prophets, Torah. No evil force, kelipah, or sitra achra concept is introduced or opposed. This is consistent with the teaching's character as a short practical instruction ('לשון רבנו' — the Rebbe's own words) focused entirely on the positive spiritual mechanics of the clapping-prayer-Torah connection. The absence of an evil mirror package is not a gap but a genuine structural feature of this short Torah. The closest approximation to an evil mirror would be the implicit negative state — inability to see God's image, inability to achieve prophetic prayer — but these are not developed as bechina concepts in the text."
+  }
+}

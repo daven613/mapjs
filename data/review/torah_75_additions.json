@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "source": "Torah #75",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_75_packages.json, all reference===75 edges from torahData.js, and the full source text torah_75.txt (both the first version and the mahadura tinyana version). For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether the bechina edge is encoded. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ, נִקְרָא, הֵם בְּחִינַת) were considered. The text is acknowledged by Rebbe Nachman himself to be incomplete and disorganized ('הלשון אינו מתוקן ומסודר כלל, גם חסר הרבה')."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "הַעֲלָאַת מַיִּין נוּקְבִין וְהַשָּׁלוֹם",
+      "node_id": "ניצוצות",
+      "node_text": "נִיצוֹצוֹת",
+      "polarity": "neutral",
+      "reason": "The Rebbe states explicitly: 'הַנִּיצוֹצוֹת הֵם אוֹתִיּוֹת' (the sparks are letters). This is a direct bechina statement using the formula 'הֵם בְּחִינַת'. The concept of ניצוצות (fallen sparks) is the central subject of the entire teaching — the Rebbe explains that when the worlds fell, they scattered as sparks (niצוצות), and these sparks are letters that need to be gathered through Torah/Prayer speech. The node ניצוצות should be added and connected by a bechina edge to אותיות (which is already in Package 1, edge 199). Additionally, the text states that the pleasure (תענוג) one feels from food and drink and clothing is the niצוצות — meaning ניצוצות manifest in all physical enjoyments. The concept is neutral in polarity (sparks can be elevated or remain fallen). Suggested new bechina edge: ניצוצות ↔ אותיות (ref 75).",
+      "source_quote": "וְהַנִּיצוֹצוֹת הֵם אוֹתִיּוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "הַעֲלָאַת מַיִּין נוּקְבִין וְהַשָּׁלוֹם",
+      "node_id": "תענוג שמהדבר",
+      "node_text": "הַתַּעֲנוּג שֶׁיֵּשׁ מִן הַדָּבָר",
+      "polarity": "neutral",
+      "reason": "The Rebbe states: 'הַתַּעֲנוּג שֶׁיֵּשׁ מִן הַדָּבָר מַאֲכָל וּמִשְׁתֶּה — הוּא הַנִּיצוֹצוֹת'. The pleasure that a person experiences from food, drink, and clothing IS the niצוצות. This is a direct bechina: physical pleasure = fallen sparks. The concept does not appear in the Torah 75 dataset as a node. It shares the nature of Package 1's ניצוצות cluster (neutral — the sparks can be elevated through holy speech). Suggested new bechina edge: תענוג שמהדבר ↔ ניצוצות (ref 75).",
+      "source_quote": "הַתַּעֲנוּג שֶׁיֵּשׁ בְּהַדָּבָר שֶׁאוֹכֵל וְשׁוֹתֶה וְכַיּוֹצֵא בָּזֶה, הוּא מֵהַנִּיצוֹצוֹת שֶׁנָּפְלוּ לְשָׁם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "רַגְלִין — תּוֹרָה וּתְפִלָּה כְּעֲמִידָה",
+      "node_id": "עמידה",
+      "node_text": "עֲמִידָה",
+      "polarity": "good",
+      "reason": "The Rebbe states: 'תּוֹרָה וּתְפִלָּה הֵם בְּחִינַת עֲמִידָה, שֶׁהוּא בְּחִינַת רַגְלִין'. This sentence contains TWO bechina statements: (1) תורה ותפלה = עמידה [already in dataset, edge 2398], and (2) עמידה = רגלין. The second bechina — עמידה ↔ רגלין — is MISSING from the Torah 75 dataset. Without this edge, Components A (core cluster including עמידה) and B (תורה/תפלה/רגלין) remain disconnected in the bechina graph, when the source text explicitly links them through the chain תורה ותפלה → עמידה → רגלין. The node עמידה IS in the dataset (edge 2398, ref 75, bechina: תורה ותפלה ↔ עמידה) but the edge עמידה ↔ רגלין for reference 75 is absent. Suggested new bechina edge: עמידה ↔ רגלין (ref 75).",
+      "source_quote": "תּוֹרָה וּתְפִלָּה הֵם בְּחִינַת עֲמִידָה, שֶׁהוּא בְּחִינַת רַגְלִין",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 2398,
+      "missing_edge_note": "Node עמידה IS in dataset (connected to תורה ותפלה via edge 2398). But the bechina edge עמידה ↔ רגלין for reference=75 is MISSING. This missing edge would merge Package 1 and Package 2 into a single component."
+    },
+    {
+      "package_id": 2,
+      "package_label": "רַגְלִין — תּוֹרָה וּתְפִלָּה כְּעֲמִידָה",
+      "node_id": "ויבן את הצלע",
+      "node_text": "וַיִּבֶן אֶת הַצֵּלָע",
+      "polarity": "good",
+      "reason": "The Rebbe states: 'וּבְהוֹצִיאוֹ אֶל הַדִּבּוּר, הֵם בְּחִינַת: וַיִּבֶן אֶת הַצֵּלָע'. When the sparks are brought out into holy speech, they are built/structured — this is a bechina of 'וַיִּבֶן אֶת הַצֵּלָע' (the building of the rib/side, from Genesis 2:22). The building of the rib is the positive state that corrects the limping state (צולע על ירכו = defect of legs / before speech; ויבן את הצלע = repaired legs / after speech). This concept is not in the Torah 75 dataset. It belongs in Package 2 as the positive-correction dimension of the same legs/structure domain. The bechina chain is: צולע על ירכו (before speech) → ויבן את הצלע (after speech). Note: the mahadura tinyana version adds that חוה (Eve) = ויבן את הצלע = the speech/dibur dimension. Suggested new bechina edge: ויבן את הצלע ↔ דבור דקדושה (ref 75).",
+      "source_quote": "וּבְהוֹצִיאָם אֶל הַדִּבּוּר, וּבוֹנֶה מֵהֶם דִּבּוּר דִּקְדֻשָּׁה, זֶהוּ בְּחִינַת: וַיִּבֶן אֶת הַצֵּלָע — שֶׁמְּתַקֵּן בְּחִינַת צוֹלֵעַ עַל יְרֵכוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": null,
+      "package_label": null,
+      "node_id": "יראה",
+      "node_text": "יִרְאָה",
+      "polarity": "good",
+      "reason": "The Rebbe states twice: 'וּפַחַד, הוּא פַּחַד יִצְחָק, הוּא יִרְאָה' and 'וְלָבוֹא לָזֶה... הוּא עַל־יְדֵי יִרְאָה'. The Rebbe explicitly equates פחד יצחק with יראה using the formula 'הוּא יִרְאָה' (a bechina statement). יראה (fear/awe of God) is also described as what breaks the hard body (גוף קשה פחד שוברו — from Bava Batra 10). The concept of יראה in Torah 75 connects to the culminating verse: 'וְיִירְאוּ אֹתוֹ כָּל אַפְסֵי אָרֶץ'. However, יראה does not appear in the Torah 75 bechina dataset. It would suggest a new bechina pair: יראה ↔ פחד יצחק for reference 75. Since the package structure does not yet include a יראה cluster, this is flagged as an addition requiring package assignment. Package: none currently — would need to be its own package or added to Package 1 context.",
+      "source_quote": "וּפַחַד הוּא בְּחִינַת פַּחַד יִצְחָק, דְּהַיְנוּ יִרְאָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": null,
+      "package_label": null,
+      "node_id": "פחד יצחק",
+      "node_text": "פַּחַד יִצְחָק",
+      "polarity": "good",
+      "reason": "See יראה addition above. The Rebbe equates פחד יצחק (the Fear of Isaac, the divine name associated with the Patriarch Isaac and the sefirah of Gevurah) with יראה in this Torah. The bechina pair פחד יצחק ↔ יראה is explicit. פחד יצחק IS in the global dataset (edge 2485, ref 14, bechina: גבורה ↔ פחד יצחק), but it is not in Torah 75 at all. For Torah 75 this bechina edge is missing: פחד יצחק ↔ יראה (ref 75).",
+      "source_quote": "וּפַחַד הוּא בְּחִינַת פַּחַד יִצְחָק, דְּהַיְנוּ יִרְאָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_75_edges": 28,
+    "total_reference_75_bechina_edges": 15,
+    "total_reference_75_bechina_edges_unique": 13,
+    "total_reference_75_eitza_edges": 13,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["העלאת מיין נוקבין", "שלום", "תורה ותפלה", "עמידה", "העושה שלום", "תרוץ", "כל הדבורים שמדברים בתורה ותפלה", "דם", "נפש", "העולמות", "אותיות", "צדק", "דבור של תורה ותפלה"],
+      "package_2": ["תורה", "תפלה", "רגלין", "\"צולע על ירכו\"", "פגם הרגלין"],
+      "package_3": ["מחלקת", "קשיא"]
+    },
+    "total_nodes": 20,
+    "key_missing_bechina_edge": "עמידה ↔ רגלין (ref 75) — explicit in source text 'תּוֹרָה וּתְפִלָּה הֵם בְּחִינַת עֲמִידָה, שֶׁהוּא בְּחִינַת רַגְלִין' but not encoded. If added, Package 1 and Package 2 would merge into a single large cluster (18 nodes). Decision not to pre-merge since the edge is absent from the dataset.",
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "גוף (body)",
+        "reason": "The text uses גוף to describe what must be nullified through Torah/Prayer ('עד שיהיה הגוף בטל ואפס'). This is an eitza target (the body becoming nullified), not a bechina concept. The phrase 'גוף קשה פחד שוברו' is a rabbinic citation used as a proof, not a bechina declaration. Excluded."
+      },
+      {
+        "concept": "בורא ניב שפתים",
+        "reason": "This is a biblical verse cited as proof that Torah/Prayer speech = שלום ('בורא ניב שפתים שלום'). The bechina שלום ↔ העלאת מיין נוקבין IS encoded (edge 2912). The verse itself is not a new standalone bechina node — it functions as proof text for an existing encoded bechina."
+      },
+      {
+        "concept": "שביר כלים (breaking of the vessels)",
+        "reason": "Mentioned in parentheses as explanatory context ('על ידי שבירת כלים, כיידוע') but not stated as a bechina concept. No 'בחינת' language used. Excluded."
+      },
+      {
+        "concept": "כלי מחזיק ברכה",
+        "reason": "The Mishna's statement 'לא מצא הקב\"ה כלי מחזיק ברכה אלא השלום' is cited as proof that שלום is the vessel for blessing. It is used as support for the שלום concept in Package 1, not as a new bechina node of its own."
+      },
+      {
+        "concept": "ולאמר לציון עמי אתה / עמי בשותפי",
+        "reason": "The midrash 'אל תקרי עמי אלא עמי בשותפי' is cited as explanation of how a person becomes God's partner in creation through holy speech. While suggestive of a deep bechina, the Rebbe does not use the formula 'הוא בחינת' for the partnership concept itself. It functions as illustration of the תורה ותפלה = elevation = creation theme already in Package 1."
+      }
+    ]
+  }
+}

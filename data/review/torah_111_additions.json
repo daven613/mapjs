@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "source": "Torah #111 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all edges with reference===111 from torahData.js (none found), and the full source text torah_111.txt. For each potential bechina statement in the source text, determined whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, לְשׁוֹן used in a bechina sense) were considered for addition."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "source_text_bechina_scan": {
+    "lines_examined": 2,
+    "bechina_language_found": false,
+    "technique_used": "notarikon (רָאשֵׁי תֵּבוֹת — acronym of initial letters)",
+    "detail": "Torah #111 consists of exactly two lines. Neither line contains any instance of the words בְּחִינַת, בְּחִינוֹת, הַיְנוּ, נִקְרָא, לְשׁוֹן, or any other standard bechina marker. The teaching exclusively uses the phrase 'רָאשֵׁי תֵּבוֹת' (initial letters / acronym) to establish the connection between concepts. Notarikon is a distinct hermeneutic technique from bechina: it identifies conceptual unity through shared letter-initials, not through shared essential nature. The two concepts identified by notarikon are: (1) 'רַבִּי' as encoded in 'רֹאשׁ בְּנֵי יִשְׂרָאֵל' (holy side, forward), and (2) 'רַבִּי' as encoded in 'רְשָׁעִים בַּחֹשֶׁךְ יִדָּמוּ' (evil side, reversed). No bechina edges can be legitimately extracted from this text."
+  },
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "רַבִּי",
+      "reason": "The Rebbe establishes that 'רַבִּי' is encoded as an acronym in two verses — one from the holy side and one from the evil side in reverse. However, the linking technique is notarikon (רָאשֵׁי תֵּבוֹת), not bechina (בְּחִינַת). The text never states 'רַבִּי הוּא בְּחִינַת...' or any equivalent. The notarikon observation is a textual-linguistic equivalence, not a bechina of essential nature. Excluded per framework rule that only explicit bechina language qualifies."
+    },
+    {
+      "concept": "רֹאשׁ בְּנֵי יִשְׂרָאֵל",
+      "reason": "This verse phrase appears only as the source of the acronym 'רַבִּי' on the holy side. No bechina language is used in relation to it. It is a proof-text for a notarikon observation, not a bechina node. Excluded."
+    },
+    {
+      "concept": "רְשָׁעִים בַּחֹשֶׁךְ יִדָּמוּ",
+      "reason": "This verse phrase appears only as the source of the reversed acronym 'רַבִּי' on the evil side. No bechina language is used in relation to it. It is a proof-text for a notarikon observation, not a bechina node. Excluded."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_111_edges": 0,
+    "total_reference_111_bechina_edges": 0,
+    "total_reference_111_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {},
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [],
+    "structural_observation": "Torah #111 is one of the shortest teachings in Likutay Moharan — a two-line notarikon observation that could be described as a 'gate text' or 'heading text' rather than a full Torah. The teaching makes a single structural point about the dual encoding of the word 'רַבִּי' in holy versus evil verses. This structure IS conceptually significant (it expresses the good/evil mirror principle in its most compressed form), but it does not generate bechina nodes or packages. The appropriate representation in the Torah Map system would be as metadata or annotation rather than as bechina graph edges. If future enrichment work incorporates notarikon edges as a new edge type, Torah #111 would yield two notarikon edges: (רַבִּי ↔ רֹאשׁ בְּנֵי יִשְׂרָאֵל, type=notarikon, polarity=good) and (רַבִּי ↔ רְשָׁעִים בַּחֹשֶׁךְ יִדָּמוּ, type=notarikon_reversed, polarity=evil)."
+  }
+}

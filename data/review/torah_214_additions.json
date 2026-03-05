@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "source": "Torah #214",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_214_packages.json, all reference===214 edges from torahData.js (none found), and the full source text torah_214.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, גִּימַטְרִיָּא אוֹתִיּוֹת) were considered."
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "node1_id": "תלמוד",
+      "node1_text": "תַּלְמוּד",
+      "node2_id": "לילית",
+      "node2_text": "לִילִית",
+      "suggested_package": 1,
+      "suggested_package_label": "תַּלְמוּד וְלִילִית",
+      "source_quote": "כִּי תַּלְמוּד בְּגִימַטְרִיָּא אוֹתִיּוֹת שֶׁל שְׁמָהּ לִילִית",
+      "source_location": "Torah #214, line 2",
+      "reasoning": "The Rebbe explicitly states that תַּלְמוּד = לִילִית in gematria (both = 480). This gematria equivalence is a bechina statement: תַּלְמוּד is an aspect of לִילִית in the sense that they share the same structural numerical identity. This is the Torah's single foundational bechina — the entire teaching derives its logic from this equivalence: because Talmud and Lilith share the same gematria-nature, studying Talmud has the power either to subdue her or to empower her (depending on orientation). This edge is entirely absent from the dataset (zero edges for reference=214) and must be added. Node תַּלְמוּד is already in the dataset from other Torahs; לִילִית may or may not be present. Both should be connected by a new bechina edge with reference=214."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_edges_for_torah_214": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "all_dataset_nodes_assigned": true,
+    "concepts_in_source_text_not_in_dataset": [
+      {
+        "concept": "תַּלְמוּד",
+        "context": "Central concept — the Talmud as a study object. Explicitly stated as equal to לִילִית in gematria. תַּלְמוּד is almost certainly already in the dataset from other Torahs (e.g., Torah #215 which discusses Talmud study), but the edge תַּלְמוּד ↔ לִילִית at reference=214 is missing."
+      },
+      {
+        "concept": "לִילִית",
+        "context": "The adversarial female demon, whose name equals תַּלְמוּד in gematria (both=480). לִילִית appears by name only here in Torah #214 as far as the source text goes. She is called 'בַּעַל דָּבָר' in the same teaching — but note that 'בַּעַל דָּבָר' is a general term for the adversary/Satan, not necessarily an explicit bechina of לִילִית in this text. The Rebbe uses 'בַּעַל דָּבָר' in line 1 and 'לִילִית' in line 2, with the latter established through gematria as the specific force whose power is activated by Talmud study."
+      }
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "בַּעַל דָּבָר",
+        "reason": "Line 1 says 'לֹא הָיָה שְׁלִיטָה לְהַבַּעַל דָּבָר עֲלֵיהֶם' — the adversary had no power over them. This is a narrative usage of the title 'בַּעַל דָּבָר' (the adversary/Satan) as a character in the story, not a bechina declaration equating it to another concept. The Rebbe does not say 'בַּעַל דָּבָר הוּא בְּחִינַת X' or 'X הִיא בְּחִינַת בַּעַל דָּבָר'. Excluded from bechina edges. Note: בַּעַל דָּבָר and לִילִית are contextually related (both are adversarial forces in this teaching) but the text does not use bechina language to equate them. Adding such an edge would be an inference, not an extraction."
+      },
+      {
+        "concept": "לִמּוּד כַּהֹגֶן / לִמּוּד שֶׁאֵינוֹ כָּרָאוּי",
+        "reason": "These are the conditions under which the Talmud/Lilith gematria-identity tips one way or the other. They are connected to the outcome (הַכְנָעָה vs. כֹּחַ לִילִית) through eitza language ('אִם... אֲזַי...' — if... then...). No bechina language is used. These concepts describe the directional cause-and-effect of the teaching, not shared essences. Excluded from package formation."
+      },
+      {
+        "concept": "גְּמָרָא",
+        "reason": "Line 2 specifies 'בִּפְרָט לִמּוּד גְּמָרָא' — especially Gemara study. גְּמָרָא here is a synonym/specification of תַּלְמוּד in context, not a new bechina concept. The Rebbe is clarifying that the gematria-bechina applies specifically to Gemara study. No explicit bechina language is used to equate גְּמָרָא with any distinct concept. It is a narrowing qualifier on תַּלְמוּד, not an independent node."
+      }
+    ],
+    "classification_notes": [
+      "Torah #214 has zero edges in torahData.js. The entire bechina structure must be derived from source text alone.",
+      "The teaching has exactly one bechina statement: תַּלְמוּד = לִילִית (gematria identity, value=480).",
+      "The Torah's practical argument is entirely eitza-based: proper learning subdues Lilith; improper learning empowers her. These eitza chains do not generate package nodes.",
+      "The polarity of Package 1 is neutral because the bechina itself is the Torah's primary pedagogical point: the same identity that enables subduing Lilith can enable empowering her. The concept straddles good and evil depending on orientation.",
+      "This Torah belongs structurally to the category of 'dual-force teachings' — teachings where a single holy object (Talmud) is revealed to contain within it the signature of an opposing evil force (Lilith), and where the teaching's purpose is to explain how that dual nature must be navigated with intention."
+    ]
+  }
+}

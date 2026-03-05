@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "source": "Torah #155",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===155 AND type==='bechina'. Total bechina edges: 5. All 6 nodes form a single connected component via the hub node אמונה. No merges required — all nodes are already in one component. No evil-mirror package detectable: Torah #155 is a short, direct practical teaching whose evil counterparts (עצבות, עצלות, חרון אף, עבודה זרה) appear only in eitza (causal) edges, not in bechina equivalences."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 155,
+      "label": "אֱמוּנָה וְאֶרֶץ יִשְׂרָאֵל",
+      "label_en": "Faith and the Land of Israel",
+      "polarity": "good",
+      "reason": "Torah #155 teaches a single integrated thesis: אמונה (faith/trust in God) is the life-force of divine service, manifested identically as ארך אפים (patient forbearance), as כח הגודל וכח הצומח (the power of growth and flourishing — like wheat planted in good soil), and as ארץ ישראל (the Land of Israel, which is the spiritual source and locus of this quality). The node אמת (truth) enters through Eretz Yisrael's second bechina-identity (the Talmudic tradition that 'Moses saw truth' when he bowed earthward = he saw Eretz Yisrael as truth). The node 'not fearing anything, not heeding obstacles, just doing his service' (מה שאינו ירא משום דבר) is the operational/behavioral definition of ארך אפים, making it a direct bechina of it. All six nodes describe the same essential reality from different angles: the quality of rootedness-in-God that makes a person immune to discouragement, obstruction, and spiritual paralysis. אמונה is the dominant node with the highest bechina-degree (3 connections) and is the conceptual hub through which all others are related.",
+      "dominant_node": "אמונה",
+      "nodes": [
+        "אמונה",
+        "ארך אפים",
+        "ארץ ישראל",
+        "כח הגודל וכח הצומח",
+        "אמת",
+        "מה שאינו ירא משום דבר, ואינו משגיח על שום בטול ובלבול בעבודתו, רק עושה את שלו"
+      ],
+      "node_degrees": {
+        "אמונה": 3,
+        "ארך אפים": 2,
+        "ארץ ישראל": 2,
+        "כח הגודל וכח הצומח": 1,
+        "אמת": 1,
+        "מה שאינו ירא משום דבר, ואינו משגיח על שום בטול ובלבול בעבודתו, רק עושה את שלו": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 5,
+    "total_nodes": 6,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 0,
+    "evil_mirror_packages": 0,
+    "note_on_evil_mirror": "The evil counterparts in this Torah (עצבות/sadness, עצלות/laziness, כבדות/heaviness, חרון אף/divine anger, עבודה זרה/idolatry, חסרון אמונה/lack of faith) appear exclusively in eitza (causal) edges — they are the effects of lacking faith, not bechina-equivalences. Because they are described causally ('from lack of faith comes sadness') rather than by parallel-nature equations ('sadness IS a bechina of X'), they do not form their own package cluster. This is consistent with the teaching's structure: it is almost entirely positive (here is what faith does and what it is), with the negative mentioned only to motivate the positive."
+  }
+}

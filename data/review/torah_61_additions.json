@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "source": "Torah #61",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_61_packages.json, all reference===61 edges from torahData.js, and the full source text torah_61.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, נִקְרֵאת, הַיְנוּ) were considered as flagged additions. Concepts already captured in existing dataset edges (reference===61, type==='bechina') are excluded."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "חָכְמָה עִלָּאָה וְהַצַּדִּיק — אֶבֶן שְׁתִיָּה",
+      "node_id": "שכל",
+      "node_text": "שֵׂכֶל",
+      "polarity": "good",
+      "reason": "The Rebbe states explicitly in Section ו: 'הַשֵּׂכֶל נִקְרָא קֹדֶשׁ' — the intellect IS called 'holy' (קֹדֶשׁ). This is a direct נִקְרָא bechina statement. The node שֵׂכֶל is absent from the dataset for Torah #61, yet it plays a pivotal structural role: the Rebbe explains that all sweetening of judgments comes through the שֵׂכֶל, which is the root of all דינים and is named 'קֹדֶשׁ.' This establishes שֵׂכֶל as a bechina of קֹדֶשׁ (and by extension, of קָדְשֵׁי קֳדָשִׁים and שֵֹּכֶל הָעֶלְיוֹן already in Package 1). The missing edge: שֵׂכֶל ↔ קֹדֶשׁ (ref. 61, bechina). A second edge may also be flagged: שֵׂכֶל ↔ שֵֹּכֶל הָעֶלְיוֹן (as the general intellect IS the supreme intellect at its root), though this would require careful canonical judgment.",
+      "source_quote": "כִּי כָּל הַמְתָּקוֹת שֶׁל כָּל הַצִּמְצוּמִים וְהַדִּינִים הוּא עַל-יְדֵי הַשֵּׂכֶל... וְהַשֵּׂכֶל נִקְרָא קֹדֶשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "חָכְמָה עִלָּאָה וְהַצַּדִּיק — אֶבֶן שְׁתִיָּה",
+      "node_id": "נשמה",
+      "node_text": "נְשָׁמָה",
+      "polarity": "good",
+      "reason": "Section ג contains two explicit נִקְרֵאת (= 'is called') bechina statements about the נְשָׁמָה that are absent from the dataset for Torah #61: (1) 'הַנְּשָׁמָה נִקְרֵאת שָׁמַיִם' — the soul is called 'heavens' because it is the collective governor of all the celestial spheres; (2) 'הַנְּשָׁמָה נִקְרֵאת גַּלְגַּלְתָּא, עַל שֵׁם גַּלְגַּלֵּי הָרָקִיעַ שֶׁמִּתְנַהֲגִים עַל יָדָהּ' — the soul is called 'gulgalta' (skull/sphere-cluster) because the celestial spheres are governed through it. The soul in Torah #61 plays the role of the שֵׂכֶל הַכּוֹלֵל — the all-encompassing intellect that includes and governs all the particular celestial intelligences (שִׂכְלִיִּים / מַלְאָכִים). This places נְשָׁמָה as a bechina of שָׁמַיִם and of גַּלְגַּלְתָּא, both missing from the Torah #61 dataset. Additionally, the text states 'שֵׂכֶל הַכּוֹלֵל, שֶׁהִיא הַנְּשָׁמָה' — reinforcing that נְשָׁמָה = שֵׂכֶל הַכּוֹלֵל, linking it to Package 1's domain of supernal intellect.",
+      "source_quote": "וְעַל כֵּן הַנְּשָׁמָה נִקְרֵאת שָׁמַיִם, שֶׁהוּא כְּלָלִיּוּת הַגַּלְגַּלִּים... וְעַל כֵּן הַנְּשָׁמָה נִקְרֵאת גַּלְגַּלְתָּא, עַל שֵׁם גַּלְגַּלֵּי הָרָקִיעַ שֶׁמִּתְנַהֲגִים עַל יָדָהּ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "מִשְׁפַּט אֱמֶת וֶאֱמוּנַת חֲכָמִים",
+      "node_id": "סמיכה",
+      "node_text": "סְמִיכָה",
+      "polarity": "good",
+      "reason": "Section ב contains an explicit bechina statement: 'הַסְּמִיכָה שֶׁסּוֹמְכִין אֶת הָרַב, וְהַכְּתָב, הֵם מִבְּחִינָה אַחַת. כִּי הַסְּמִיכָה בְּיָדַיִם... וְהוּא בְּחִינַת הַכְּתָב, בְּחִינַת יָד כּוֹתֶבֶת.' Ordination (סְמִיכָה) IS a bechina of writing (כְּתָב): both are the transmission of the light of the supernal intellect through the hand. Furthermore, the verse quoted: 'בִּכְתַב בֵּית יִשְׂרָאֵל לֹא יִכָּתֵבוּ – זֶה סְמִיכָה' (Section ג, citing the Talmud Ketubot 112) explicitly equates the scriptural verse about writing/inscription with ordination. The node סְמִיכָה is absent from the Torah #61 dataset and should be added as a bechina of כְּתָב. Its polarity is good (it describes the proper ordination of a worthy sage, which brings light to the written tradition). Since it defines the boundary between the holy and the corrupt rabbi (Section ב), it belongs with Package 2 (faith in sages/true judgment) as the institutional act that validates the chain of authority.",
+      "source_quote": "כִּי הַסְּמִיכָה שֶׁסּוֹמְכִין אֶת הָרַב, וְהַכְּתָב, הֵם מִבְּחִינָה אַחַת... וְהוּא בְּחִינַת הַכְּתָב, בְּחִינַת יָד כּוֹתֶבֶת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "מִשְׁפַּט אֱמֶת וֶאֱמוּנַת חֲכָמִים",
+      "node_id": "כתב",
+      "node_text": "כְּתָב",
+      "polarity": "good",
+      "reason": "The text contains multiple explicit bechina statements establishing כְּתָב as a distinct conceptual node: (1) 'הַסְּמִיכָה... וְהוּא בְּחִינַת הַכְּתָב' (ordination = writing); (2) 'הַכְּתָב הוּא גַּם כֵּן מִבְּחִינַת חָכְמָה' (writing IS from the aspect of wisdom); (3) 'הַכְּתָב הוּא בְּחִינַת אוֹתִיּוֹת מַחְכִּימוֹת' (writing IS the wisdom-letters). The concept כְּתָב ידינו (our holy script/writing) is a central theme of Sections ב-ג: it is the tangible expression of the holy chain of transmission (ordination → wisdom → writing → sanctification of the air → ability to receive great souls). Its absence from the Torah #61 bechina dataset is a significant gap. It belongs in Package 2 as the written manifestation of the faith-in-sages transmission chain.",
+      "source_quote": "כִּי הַכְּתָב הוּא גַּם כֵּן מִבְּחִינַת חָכְמָה, כִּי אוֹתִיּוֹת הַכְּתָב, בָּהֶם נִבְרְאוּ כָּל הָעוֹלָמוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "מוֹתָרוֹת וּמִשְׁפָּט מְעֻקָּל",
+      "node_id": "יגיעת בשר",
+      "node_text": "יְגִיעַת בָּשָׂר",
+      "polarity": "evil",
+      "reason": "Section א contains the explicit bechina: 'נִדּוֹן בִּיגִיעַת בָּשָׂר, הַיְנוּ בְּמוֹתָרוֹת' — the verse's phrase 'יְגִיעַת בָּשָׂר' (toil of the flesh = the physical excess described in Kohelet 12:12 'וְלַהַג הַרְבֵּה יְגִיעַת בָּשָׂר') IS identified by the Rebbe as בְּחִינַת מוֹתָרוֹת. This is a direct 'הַיְנוּ' bechina statement equating the scriptural phrase with the Torah #61 concept of excess-waste. The node יְגִיעַת בָּשָׂר is absent from the dataset but is an alias/bechina of מוֹתָרוֹת (Package 3) and should be added as a bechina pair.",
+      "source_quote": "נִדּוֹן בִּיגִיעַת בָּשָׂר, הַיְנוּ בְּמוֹתָרוֹת, כְּמוֹ שֶׁאָמְרוּ רַבּוֹתֵינוּ זִכְרוֹנָם לִבְרָכָה (עֵירוּבִין כא): הַלּוֹעֵג עַל דִּבְרֵי חֲכָמִים נִדּוֹן בְּצוֹאָה רוֹתַחַת, כְּמוֹ שֶׁכָּתוּב: וְלַהַג הַרְבֵּה יְגִיעַת בָּשָׂר",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "מוֹתָרוֹת וּמִשְׁפָּט מְעֻקָּל",
+      "node_id": "הולך רכיל",
+      "node_text": "הוֹלֵךְ רָכִיל",
+      "polarity": "evil",
+      "reason": "Section ח (the zoharic conclusion) contains: 'הוֹלֵךְ רָכִיל... דְּלֵית רוּחֵהּ רוּחָא דְּקִיּוּמָא, הַיְנוּ רוּחַ חָכְמָה; וְלָא הֲוָה מְהֵימָנָא, הַיְנוּ אֱמוּנַת חֲכָמִים.' The gossip/slanderer IS identified (הַיְנוּ) as the one who lacks רוּחַ חָכְמָה AND lacks אֱמוּנַת חֲכָמִים. This is a double bechina: the הוֹלֵךְ רָכִיל IS the person who has damaged אֱמוּנַת חֲכָמִים — the essential quality of Package 3's evil domain. The הוֹלֵךְ רָכִיל is the concrete human embodiment of the evil described throughout Torah #61 (slander = damaged faith in sages = the root of the מוֹתָרוֹת-משפט מעקל cascade). Missing from dataset.",
+      "source_quote": "הוֹלֵךְ רָכִיל וְכוּ' דְּלֵית רוּחֵהּ רוּחָא דְּקִיּוּמָא, הַיְנוּ רוּחַ חָכְמָה; וְלָא הֲוָה מְהֵימָנָא, הַיְנוּ אֱמוּנַת חֲכָמִים כַּנַּ\"ל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "מִשְׁפַּט אֱמֶת וֶאֱמוּנַת חֲכָמִים",
+      "node_id": "מגלה סוד",
+      "node_text": "מְגַלֶּה סוֹד",
+      "polarity": "evil",
+      "reason": "Section ח states: 'מְגַלֶּה סוֹד, זֶה בְּחִינַת בִּטּוּל כְּתַב יָדֵנוּ.' 'Revealing the secret' (the gossip/reckless disclosure) IS a bechina of the nullification of our holy writing. This is explicit (זֶה = בְּחִינַת) bechina language. The node מְגַלֶּה סוֹד is the act of betraying the transmitted wisdom; it IS defined as the undermining of כְּתַב יָדֵנוּ. Since כְּתָב belongs to Package 2 (the positive chain of transmission), מְגַלֶּה סוֹד (as its negation/evil mirror) belongs at the boundary between Package 2 and Package 3. It is most naturally placed with Package 3 (evil domain) as the evil counterpart to כְּתָב and אֱמוּנַת חֲכָמִים. (Note: 'negative polarity concept adjacent to Package 2' — flagged here under Package 2 for reviewer awareness, but recommended for Package 3 placement.)",
+      "source_quote": "מְגַלֶּה סוֹד, זֶה בְּחִינַת בִּטּוּל כְּתַב יָדֵנוּ, שֶׁאֵין מְקַבְּלִין אוֹר הַשֵּׂכֶל מִידֵי הַסְּמִיכָה כַּנַּ\"ל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "חָכְמָה עִלָּאָה וְהַצַּדִּיק — אֶבֶן שְׁתִיָּה",
+      "node_id": "מקדש מעט",
+      "node_text": "מִקְדָּשׁ מְעַט",
+      "polarity": "good",
+      "reason": "Section ב contains: 'כִּי בְּמָקוֹם שֶׁיִּשְׂרָאֵל יוֹשְׁבִין שָׁם מִכְּבָר, אֲפִלּוּ בְּחוּץ לָאָרֶץ, הוּא בְּחִינַת קְדֻשַּׁת אֶרֶץ-יִשְׂרָאֵל, בְּחִינַת (יְחֶזְקֵאל יא): מִקְדָּשׁ מְעַט.' The long-established settlements of Israel — even in the diaspora — ARE a bechina of 'a small sanctuary' (מִקְדָּשׁ מְעַט). This is an explicit biblical phrase used as a bechina term. It belongs to Package 1 because it is connected to the sanctification of the air (אֲוִירָא דְּאֶרֶץ יִשְׂרָאֵל) that enables great souls (Package 1's soul-domain) and is produced through the proper transmission of wisdom via כְּתַב יָדֵנוּ. Missing from Torah #61 dataset.",
+      "source_quote": "הוּא בְּחִינַת קְדֻשַּׁת אֶרֶץ-יִשְׂרָאֵל, בְּחִינַת (יְחֶזְקֵאל יא): מִקְדָּשׁ מְעַט; כִּי עַל-יְדֵי שֶׁיִּשְׂרָאֵל יוֹשְׁבִין שָׁם, נִתְקַדֵּשׁ הָאֲוִיר בִּבְחִינַת אֲוִירָא דְּאֶרֶץ יִשְׂרָאֵל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_61_bechina_edges": 16,
+    "total_reference_61_eitza_edges": 9,
+    "total_nodes_in_packages": 28,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["קדשי קדשים", "אבן שתיה", "חכמה עלאה", "צדיק הדור", "שכל העליון", "לוחות האבן", "נפשות", "אבנים", "נפש", "נר", "עזר והישועה", "המתקת הדינים"],
+      "package_2": ["משפט", "דרך הממצע", "אמונת חכמים", "\"לא תסור מן הדבר אשר יגידו לך ימין ושמאל\"", "משפטי הנהגות ישרות", "משפטי אמת"],
+      "package_3": ["מותרות", "עצירות", "\"משפטים בל ידעום\"", "משפט מעקל", "עצות נבערות", "עצת נשים"],
+      "package_4": ["מחלקת", "אלו המים", "ספר", "שאלות ותשובות"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "שכל (= קדש — via 'השכל נקרא קדש')",
+      "נשמה (= שמים, = גלגלתא — via explicit נקרא statements)",
+      "סמיכה (= כתב — via 'הסמיכה... הוא בחינת הכתב')",
+      "כתב (= חכמה, = אותיות מחכימות)",
+      "יגיעת בשר (= מותרות — via הינו)",
+      "הולך רכיל (= פגם אמונת חכמים — via הינו)",
+      "מגלה סוד (= ביטול כתב ידינו — via 'זה בחינת')",
+      "מקדש מעט (= קדושת ארץ ישראל, place of Israel's settlement)"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "דואג האדומי",
+        "reason": "Mentioned as a historical example of learning from מותרות (Section א). The Rebbe says his learning was 'מבחינת עצירות, בחינת מותרות' — but דואג himself is a named instance, not a bechina-concept being equated. Excluded per framework: named historical figures used as examples, not bechina declarations of their essential nature."
+      },
+      {
+        "concept": "פרי הארץ",
+        "reason": "Section ג: 'גּוּף, בִּבְחִינוֹת פְּרִי הָאָרֶץ, בְּחִינוֹת אֲוִירָא דְּאֶרֶץ יִשְׂרָאֵל.' This IS bechina language — the body of the great soul must be formed from 'fruit of the earth' (= אוירא דארץ ישראל). However, פְּרִי הָאָרֶץ is used here as a verse citation (Isaiah 4:2), not as a standalone concept-node that the Rebbe develops independently. The essential content is captured through the אֲוִירָא דְּאֶרֶץ יִשְׂרָאֵל concept (which feeds into Package 1's soul-domain). Marginal case — flagged but not recommended for addition without further review."
+      },
+      {
+        "concept": "גלגלים / שכלים / מלאכים",
+        "reason": "Section ג describes the celestial spheres (גַּלְגַּלִּים) governed by intelligences (שִׂכְלִיִּים = מַלְאָכִים). These are part of the cosmological background of the teaching, not explicitly established as bechina-nodes in their own right. The text describes their function (eitza: the intelligences govern the spheres) rather than declaring them bechina-equivalences. Excluded."
+      },
+      {
+        "concept": "ראש השנה",
+        "reason": "Section ז: 'כִּי רֹאשׁ-הַשָּׁנָה הוּא יוֹמָא דְּדִינָא שֶׁל כָּל הַשָּׁנָה.' This is a definitional statement about the halakhic character of ראש השנה (it is the day of judgment), not a bechina establishing an unexpected parallel. Excluded."
+      },
+      {
+        "concept": "שמחה",
+        "reason": "Section ח describes שמחה as the result of souls being included in the tzaddik ('אוֹר צַדִּיקִים יִשְׂמָח'). However, the edge referencing שמחה in the dataset (edge 2973: 'שנכללים יחד כל הנפשות' → נַעֲשֶׂה שִׂמְחָה) is classified as eitza, not bechina — joy is the RESULT of the inclusion, not a bechina-parallel of it. Correctly classified; not a gap."
+      },
+      {
+        "concept": "אוירא דארץ ישראל",
+        "reason": "Mentioned repeatedly (Sections ב-ג) as a bechina of the air sanctified by Israel's presence and by the holy script. A significant bechina concept that may warrant addition, but is tightly bound to the 'מקדש מעט / כתב' cluster already flagged as additions. Cross-referenced with the מקדש מעט entry above. Recommend consolidating into a single addition edge: אֲוִירָא דְּאֶרֶץ יִשְׂרָאֵל ↔ מִקְדָּשׁ מְעַט if added."
+      }
+    ]
+  }
+}

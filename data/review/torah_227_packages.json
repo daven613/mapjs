@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "source": "Torah #227",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #227 has ZERO pre-existing edges in torahData.js for reference=227 AND type='bechina'. All packages are derived entirely from analysis of the source text (torah_227.txt). The Torah is extremely brief (3 sentences) and contains one explicit bechina citation (זֶה בְּחִינַת Psalms 129:6). Packages are proposed based on the structural poles of the teaching: the evil cluster (wicked reincarnated as unreaped rooftop grasses) and the good cluster (harvested grain that receives blessing and rises). No dataset component merges were needed since all nodes are new."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 227,
+      "label": "רְשָׁעִים וַעֲשָׂבֵי הַגַּגּוֹת",
+      "label_en": "The Wicked and the Rooftop Grasses",
+      "polarity": "evil",
+      "reason": "This cluster groups the wicked souls who lack elevation with their symbolic counterpart — grasses growing on rooftops. The Torah explicitly states (זֶה בְּחִינַת) that the verse 'יִהְיוּ כְּחָצִיר גַּגּוֹת' (Psalms 129:6) is the bechina of these reincarnated wicked souls. All three nodes share the same essential nature: they are beings that cannot be elevated because no one harvests them and no blessing is uttered over them. The rooftop location (גַּגּוֹת) is significant — they grow in isolation, untouched by human hands and divine blessing. The phrase 'שֶׁלֹּא מִלֵּא כַפּוֹ קוֹצֵר' (who does not fill his hand with harvesting) from Psalms confirms that the absence of reaping is their defining characteristic. These three expressions — the wicked person, the rooftop grass, and the Psalm's image — are all faces of the same metaphysical reality: existence without selection, without blessing, without ascent.",
+      "dominant_node": "רשעים מגולגלים בעשבים על הגגות",
+      "nodes": [
+        "רשעים מגולגלים בעשבים על הגגות",
+        "עשבים הגדלים על הגגות",
+        "חציר גגות"
+      ],
+      "node_degrees": {
+        "רשעים מגולגלים בעשבים על הגגות": 1,
+        "עשבים הגדלים על הגגות": 2,
+        "חציר גגות": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 227,
+      "label": "תְּבוּאָה וַעֲלִיָּה",
+      "label_en": "The Harvested Grain and Elevation",
+      "polarity": "good",
+      "reason": "This cluster groups the concepts belonging to the positive pole of the teaching: the grain that is reaped, the blessing of God said over it, and the elevation it achieves. These three concepts share the same essential nature — they are expressions of the same reality: a being that is chosen (harvested), acknowledged (blessed), and thereby elevated. The Torah presents them as a unified mechanism: קְצִירָה (harvesting) → בִּרְכַּת ה' (the blessing said by passersby) → עֲלִיָּה (elevation/ascent of the soul). However, within the bechina logic, the harvested grain and elevation share identical nature — to be harvested IS to have elevation; the grain-that-rises is the same entity as the grain-that-is-reaped and the grain-that-is-blessed. These are three faces of the same spiritual reality: a soul that is selected by the tzaddik (represented by the reaper), blessed, and lifted. בִּרְכַּת ה' here functions as the vehicle of bechina — it is the identifying mark of the grain that merits elevation, and its absence from the rooftop grasses defines their opposite nature.",
+      "dominant_node": "תבואה הנקצרת",
+      "nodes": [
+        "תבואה הנקצרת",
+        "ברכת ה'",
+        "עליה"
+      ],
+      "node_degrees": {
+        "תבואה הנקצרת": 2,
+        "ברכת ה'": 2,
+        "עליה": 2
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_bechina_edges_note": "Zero pre-existing edges in dataset for reference=227. All edges derived from source text analysis.",
+    "total_nodes_in_dataset": 0,
+    "total_nodes_proposed": 6,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "packages_from_source_text_analysis": 2
+  }
+}

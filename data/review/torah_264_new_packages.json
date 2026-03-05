@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source": "Torah #264",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "proposed_id": 1,
+      "torah_ref": 264,
+      "label": "הַשְׁפָּעָה וְזִוּוּג",
+      "label_en": "Divine Flow and Sacred Union",
+      "polarity": "good",
+      "reason": "The Torah's core positive concept is hashpa'ah (divine influence/flow) directed correctly toward kedusah. The Rebbe explicitly equates the Mishkan tzedakah act with zivug (sacred union) via bechina language. Both tzedakah (giving correctly) and zivug share the same essential nature: proper, directed flow of shefa to the sanctified recipient. Tikkun habrit is also part of this cluster — the rectification IS the restoration of proper flow, making tikkun habrit a bechina of directed hashpa'ah. Together these three concepts form one thematic family: concepts whose essential nature is the correct direction of divine abundance.",
+      "dominant_node": "זיווג",
+      "proposed_nodes": ["זיווג", "השפעה לקדושה", "תקון הברית"],
+      "proposed_bechina_edges": [
+        {
+          "node1": "זיווג",
+          "node2": "השפעה לקדושה",
+          "justification": "The Torah states that the Mishkan donation (which IS hashpa'ah to kedusah) is the 'bechina of zivug'. They are two expressions of the same thing: directed holy union/flow."
+        },
+        {
+          "node1": "תקון הברית",
+          "node2": "השפעה לקדושה",
+          "justification": "Tikkun habrit is described as the restoration of shefa to kedusah — they share the same essential nature: both are the act of directed holy flow. Note: the existing edge 3212 classifies tzedakah→tikkun habrit as eitza (tzedakah produces tikkun), which is correct. But tikkun habrit AS A CONCEPT is itself a bechina of directed hashpa'ah."
+        }
+      ],
+      "note": "The existing dataset edge (id 3212: צדקה → תקון הברית, type eitza) is correct and should NOT be reclassified. Tzedakah produces/causes tikkun habrit — that is eitza. However, tikkun habrit AS A STATE shares nature with zivug and hashpa'ah likdushah — that could be a bechina relationship at the conceptual level."
+    },
+    {
+      "proposed_id": 2,
+      "torah_ref": 264,
+      "label": "פְּגַם הַבְּרִית וְהַשְׁפָּעָה לְמָקוֹם שֶׁאֵינוֹ צָרִיךְ",
+      "label_en": "Bris Violation and Misdirected Flow",
+      "polarity": "evil",
+      "reason": "The Torah presents an implicit bechina between two acts of misdirected shefa: (1) pgam habrit (sexual violation = sending shefa to the wrong place) and (2) giving tzedakah to an unworthy pauper (= sending shefa to the wrong place). The Rebbe makes this parallel explicit: 'he sends shefa to where it is not needed' is used to describe BOTH the sexual pgam AND the problematic tzedakah act. They share the same essential nature: misdirected divine flow. This is the evil mirror of Package 1.",
+      "dominant_node": "פגם הברית",
+      "proposed_nodes": ["פגם הברית", "השפעה למקום שאינו צריך"],
+      "proposed_bechina_edges": [
+        {
+          "node1": "פגם הברית",
+          "node2": "השפעה למקום שאינו צריך",
+          "justification": "The Torah defines pgam habrit as: 'he was supposed to send shefa to holiness but instead diverted it to another place'. The same language ('sends shefa to where it should not go') is used to describe giving tzedakah to an unworthy pauper. Both are expressions of the same misdirection."
+        }
+      ]
+    }
+  ],
+  "observations": "Torah #264 is a three-sentence teaching with no bechina edges currently in the dataset. The single existing edge (id 3212) correctly captures the eitza relationship (tzedakah causes/produces tikkun habrit). However, the Torah contains at least two clear bechina statements: (1) the Mishkan donation act is the 'bechina of zivug' — this is explicit bechina language; (2) there is an implicit bechina between pgam habrit and giving to an unworthy pauper, as the Rebbe describes both using the identical language of 'sending shefa to the wrong place'. These two bechina clusters form a natural good/evil mirror: Package 1 (proper directed flow = zivug = tikkun) mirrors Package 2 (misdirected flow = pgam = further damage). The Torah's eitza structure then sits between them: tzedakah (the action, eitza) → tikkun habrit (the good-package concept). While the Torah is too brief (3 sentences) to generate the rich bechina subgraphs typical of longer teachings, the bechina language IS present and the conceptual structure IS mirrored, making these package proposals well-grounded in the source."
+}

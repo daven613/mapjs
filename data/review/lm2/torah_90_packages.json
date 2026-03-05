@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "source": "Torah #90 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 90,
+      "volume": "lm2",
+      "label": "שְׁבִירַת כְּלִי חֶרֶס וּפִּתְחָהּ שֶׁל גֵּיהִנֹּם",
+      "label_en": "Breaking the Clay Vessel and the Entrance to Gehinnom",
+      "polarity": "neutral",
+      "reason": "These concepts form a single symbolic complex: the act of breaking a clay vessel at a betrothal (shidukh) is a bechina of the Pottery Gate (Shaar HaCharsit) in Jerusalem, which itself faced the entrance to Gehinnom. The broken shards of pottery reference the gate through which pottery shards were thrown, and that gate corresponds to the entrance of Gehinnom. All three nodes are different expressions of the same symbolic warning-sign — physical act, its geographic referent, and the spiritual reality it points toward. Polarity is neutral because the clay vessel and the gate are physical/geographic objects used as symbolic reminders rather than intrinsically aligned with good or evil.",
+      "dominant_node": "שבירת כלי חרס",
+      "nodes": [
+        "שבירת כלי חרס",
+        "שער החרסית",
+        "פתחה של גיהנם",
+        "גי בן הנם",
+        "גיהנם"
+      ],
+      "node_degrees": {
+        "שבירת כלי חרס": 2,
+        "שער החרסית": 1,
+        "פתחה של גיהנם": 1,
+        "גי בן הנם": 1,
+        "גיהנם": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["גי בן הנם", "גיהנם"],
+          "reason": "This 2-node component is explicitly identified as a bechina pair in the proof text: 'וְגֵי בֶן הִנֹּם זֶהוּ בְּחִינַת הַגֵּיהִנֹּם'. Both nodes refer to the same spiritual reality of punishment/Gehinnom and belong to the same symbolic domain as Component A, since 'פתחה של גיהנם' in Component A is precisely the entrance to this very Gehinnom. All five nodes form a single unbroken symbolic chain: breaking clay → Pottery Gate → entrance to Gehinnom → Gei Ben Hinnom = Gehinnom. Merging is based on shared nature (all are faces of the Gehinnom-reminder domain), not cause-and-effect."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 5,
+    "total_packages": 1,
+    "raw_connected_components": 2
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "source": "Torah #117 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_117_packages.json, all reference===117 edges from torahData.js (3 bechina edges found: ids 431, 1510, 2057), and the full source text torah_117.txt (10 lines). Performed a complete line-by-line scan for all explicit bechina language: בְּחִינַת, מִבְּחִינַת, בִּבְחִינַת, הוּא בְּחִינַת, הַיְנוּ, נִקְרָא (as conceptual equivalence). Filtered out causal/eitza statements, numeric ratios (1/60 of death), and narrative glosses."
+  },
+  "additions": [
+    {
+      "proposed_edge_id": "117-gap-1",
+      "node1_id": "שקר",
+      "node2_id": "נחש",
+      "node1_text": "שֶׁקֶר",
+      "node2_text": "נָחָשׁ",
+      "proof": "הַשֶּׁקֶר, שֶׁהוּא מִבְּחִינַת הַנָּחָשׁ, הַנִּקְרָא אָרוּר",
+      "source_line": 7,
+      "source_text_quote": "אֵלִיָּהוּ יָבוֹא לְרַחֵק הַשֶּׁקֶר, שֶׁהוּא מִבְּחִינַת הַנָּחָשׁ, הַנִּקְרָא אָרוּר",
+      "justification": "The text explicitly uses מִבְּחִינַת (from the bechina of), which is canonical bechina language. Falsehood (שקר) is declared to share the essential nature of the serpent (נחש). This is symmetric: the serpent IS falsehood and falsehood IS the serpent — they are two faces of the same evil reality. Not a causal statement: the text does not say 'the serpent causes falsehood' but rather 'falsehood IS from the bechina of the serpent.' This edge adds שקר to the existing evil component and raises the dominant node נחש to degree 3.",
+      "target_package": "Package 1 (נָחָשׁ וְהַקְּלָלָה, evil)",
+      "type": "bechina",
+      "reference": 117,
+      "priority": "high"
+    },
+    {
+      "proposed_edge_id": "117-gap-2",
+      "node1_id": "עבד",
+      "node2_id": "נחש",
+      "node1_text": "עֶבֶד",
+      "node2_text": "נָחָשׁ",
+      "proof": "וְעֶבֶד הוּא בְחִינַת כְּנַעַן עֶבֶד עֲבָדִים, וְהוּא בְחִינַת אָרוּר, בְּחִינַת הַנָּחָשׁ",
+      "source_line": 8,
+      "source_text_quote": "וְעֶבֶד הוּא בְּחִינַת (בראשית ט׳:כ״ה): כְּנַעַן עֶבֶד עֲבָדִים, וְהוּא בְחִינַת אָרוּר (שם), בְּחִינַת הַנָּחָשׁ",
+      "justification": "Line 8 chains three bechinot in succession: עֶבֶד → כְּנַעַן עֶבֶד עֲבָדִים → אָרוּר → נָחָשׁ. The phrase 'בְּחִינַת הַנָּחָשׁ' at the end explicitly declares עֶבֶד to be a bechina of the serpent cluster. The existing edge 431 captures עֶבֶד↔אָרוּר and edge 1510 captures נָחָשׁ↔כְּנַעַן עֶבֶד עֲבָדִים. The direct עֶבֶד↔נָחָשׁ link is implicit in the chain and explicit in the text's final term. Adding this edge makes the chain fully traversable in both directions and raises עֶבֶד to degree 2 in the component.",
+      "target_package": "Package 1 (נָחָשׁ וְהַקְּלָלָה, evil)",
+      "type": "bechina",
+      "reference": 117,
+      "priority": "medium"
+    },
+    {
+      "proposed_edge_id": "117-gap-3",
+      "node1_id": "מוצאי שבת",
+      "node2_id": "דעת",
+      "node1_text": "מוֹצָאֵי שַׁבָּת",
+      "node2_text": "דַּעַת",
+      "proof": "נִמְצָא שֶׁבְּמוֹצָאֵי שַׁבָּת שֶׁיֵּשׁ הַבְדָּלָה, הוּא בִּבְחִינַת דַּעַת, כִּי אִם אֵין דַּעַת הַבְדָּלָה מִנַּיִן",
+      "source_line": 10,
+      "source_text_quote": "נִמְצָא שֶׁבְּמוֹצָאֵי שַׁבָּת שֶׁיֵּשׁ הַבְדָּלָה, הוּא בִּבְחִינַת דַּעַת",
+      "justification": "The text uses בִּבְחִינַת (in the bechina of) — canonical bechina language — to equate מוֹצָאֵי שַׁבָּת with דַּעַת. The reasoning given is the Yerushalmi: 'if there is no daat, from where does havdalah come?' Since Motzaei Shabbat is the time of havdalah, and havdalah = daat, therefore Motzaei Shabbat IS the bechina of daat. This is a genuine ontological equivalence (shared nature), not merely a causal claim. This edge anchors a new good package in the teaching.",
+      "target_package": "Package 2 (proposed new, good) — see torah_117_new_packages.json",
+      "type": "bechina",
+      "reference": 117,
+      "priority": "high"
+    },
+    {
+      "proposed_edge_id": "117-gap-4",
+      "node1_id": "שנה",
+      "node2_id": "הסתלקות הדעת",
+      "node1_text": "שֵׁנָה",
+      "node2_text": "הִסְתַּלְּקוּת הַדַּעַת",
+      "proof": "כִּי הַשֵּׁנָה הוּא הִסְתַּלְּקוּת הַדַּעַת",
+      "source_line": 10,
+      "source_text_quote": "וְעַל כֵּן קָשֶׁה לִישֹׁן, כִּי הַשֵּׁנָה הוּא הִסְתַּלְּקוּת הַדַּעַת",
+      "justification": "The text uses 'הוּא' (it IS) in a definitional declaration: sleep IS the withdrawal of daat. This is classic bechina language — an ontological equation of shared essential nature. Sleep is not merely caused by the absence of daat; sleep IS the departure of daat. These two concepts share the same essential quality. This edge introduces שֵׁנָה as a node that bridges the evil package (sleep is from the serpent's legacy — 9/10 of sleep went to slaves) and the good package (sleep = withdrawal of daat, therefore when daat is present on Motzaei Shabbat, sleep is repelled). The dominant context is the good-package explanation of sleep's difficulty.",
+      "target_package": "Package 2 (proposed new, good) — see torah_117_new_packages.json",
+      "type": "bechina",
+      "reference": 117,
+      "priority": "high"
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_117_edges": 3,
+    "total_reference_117_bechina_edges": 3,
+    "total_reference_117_eitza_edges": 0,
+    "concepts_in_source_text_not_in_dataset": [
+      "שקר (falsehood) — line 7, declared a bechina of נחש; not in dataset for ref 117",
+      "דעת (knowledge/daat) — line 10, Motzaei Shabbat is declared its bechina; not in dataset for ref 117",
+      "הסתלקות הדעת (withdrawal of daat) — line 10, sleep IS this; not in dataset for ref 117",
+      "מוצאי שבת (Saturday night / end of Sabbath) — line 10, declared bechina of daat; not in dataset for ref 117"
+    ],
+    "bechina_language_scan": {
+      "line_2": "no explicit bechina language — states fact about Elijah's arrival",
+      "line_3": "no explicit bechina language — states Elijah's mission (distancing/approaching)",
+      "line_4": "no explicit bechina language — cites Zohar on 'sfat emet tikkon'",
+      "line_5": "שֶׁהֵם בְּחִינַת אֱמֶת — 'the distanced ones (המרוחקין) are the bechina of truth (אמת)'. CANDIDATE: considered but classified as narrative-contextual rather than a canonical bechina edge. The text is explaining Elijah's task metaphorically: those who are 'far' (marginalized, persecuted) are 'the truth side.' This is description of a category of people (truth-bearers = those who seem distant), not a conceptual ontological equation between two abstract concepts that would yield a dataset edge. Excluded as too contextual/narrative.",
+      "line_6": "no explicit bechina language — cites Shabbat 104 about letters of שקר being close and אמת being far apart",
+      "line_7": "הַשֶּׁקֶר, שֶׁהוּא מִבְּחִינַת הַנָּחָשׁ — INCLUDED as gap-1. Also: הַנִּקְרָא אָרוּר — the serpent is called arur, reaffirming existing edge 2057.",
+      "line_8": "עֶבֶד הוּא בְּחִינַת כְּנַעַן עֶבֶד עֲבָדִים, וְהוּא בְחִינַת אָרוּר, בְחִינַת הַנָּחָשׁ — three chains: עבד↔כנען עבד עבדים (in dataset via edge 1510 indirectly), עבד↔ארור (in dataset, edge 431), עבד↔נחש (INCLUDED as gap-2 direct link)",
+      "line_9": "שֶׁהוּא בְּחִינַת כְּנַעַן עֶבֶד עֲבָדִים — reaffirms נחש↔כנען עבד עבדים (in dataset, edge 1510). אֵלִיָּהוּ בְּגִימַטְרִיָּא בֵּן – הֶפֶךְ בְּחִינַת עֶבֶד — Elijah = בן by gematria, described as 'opposite bechina of slave.' CONSIDERED: this is a contrast relationship (הֶפֶךְ = opposite), not a direct bechina equation. The text is making a wordplay/gematria point, not declaring אליהו and בן to be parallel aspects of the same nature. Excluded — it is a conceptual contrast (anti-bechina), not a bechina equivalence.",
+      "line_10": "הוּא בִּבְחִינַת דַּעַת — INCLUDED as gap-3 (מוצאי שבת↔דעת). כִּי הַשֵּׁנָה הוּא הִסְתַּלְּקוּת הַדַּעַת — INCLUDED as gap-4 (שנה↔הסתלקות הדעת)."
+    },
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "הִתְגַּלּוּת אֵלִיָּהוּ (revelation of Elijah)",
+        "reason": "Present throughout the text as the key agent, but never declared to be a bechina of another concept via explicit bechina language. Its relationship to Motzaei Shabbat is causal/eitza: 'at Motzaei Shabbat, the revelation of Elijah BEGINS.' Not a bechina equation."
+      },
+      {
+        "concept": "הַבְדָּלָה (havdalah)",
+        "reason": "Line 10: 'אִם אֵין דַּעַת – הַבְדָּלָה מִנַּיִן' — this is a conditional cause: 'if there is no daat, from where does havdalah come?' The havdalah comes FROM daat; this is an eitza (causal) relationship, not a bechina (shared nature) equation. The text then concludes: 'therefore Motzaei Shabbat IS the bechina of daat' — not 'havdalah IS daat.' The bechina is between מוצאי שבת and דעת (captured in gap-3), not between הבדלה and דעת."
+      },
+      {
+        "concept": "מִיתָה (death) ↔ שֵׁנָה (sleep)",
+        "reason": "Line 7: 'הַשֵּׁנָה הוּא אֶחָד מִשִּׁשִּׁים בְּמִיתָה' — sleep is 1/60 of death. This is a numeric proportion/ratio, not a bechina declaration. The Talmudic statement (Berakhot 57b) is cited as a measure of resemblance, not as ontological equivalence. Not a bechina edge."
+      },
+      {
+        "concept": "הַמְרֻחָקִין (the distanced ones) ↔ אֱמֶת (truth)",
+        "reason": "Line 5: 'שֶׁהֵם בְּחִינַת אֱמֶת' — while this uses בְּחִינַת, the subject is a category of people (those who are forcibly distanced/marginalized) rather than two conceptual terms being equated as aspects of the same underlying reality. The text's structure is: Elijah comes to bring-near the distanced ones = the truth-bearers. This is a narrative identification for the purpose of explaining Elijah's work, not a thematic bechina cluster. Classified as contextual narrative; excluded from dataset additions."
+      }
+    ],
+    "structural_observations": [
+      "Torah #117 is a compact teaching of 10 lines with a clear two-part structure.",
+      "Part 1 (lines 1-9): Explains sleep-difficulty through the evil-cluster: serpent → death → sleep, with Elijah's revelation repelling the serpent-cluster (שקר / נחש / ארור / עבד / כנען עבד עבדים).",
+      "Part 2 (line 10): Provides an independent good-cluster explanation: Motzaei Shabbat = daat (havdalah), and sleep = departure of daat. Therefore when daat arrives (Motzaei Shabbat), sleep departs.",
+      "The two explanations are structurally parallel but logically independent — both explain the same phenomenon (difficulty sleeping) from complementary bechina-packages.",
+      "The good/evil mirror: evil-cluster (serpent, curse, slave, falsehood) is repelled by Elijah, who is 'opposite-bechina of slave' (בן vs. עבד); the good-cluster (daat, truth, Motzaei Shabbat) is precisely the anti-sleep, anti-serpent force.",
+      "שֵׁנָה (sleep) is the conceptual bridge: it belongs to the evil package via causal connection (serpent brought death → death = sleep/60) AND to the good package via bechina (sleep IS the withdrawal of daat). This double-membership makes שנה the pivot concept of the entire teaching."
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "source": "Torah #159",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===159 AND type==='bechina'. Total bechina edges: 5. These yield 5 raw connected components, each a 2-node pair. Nodes: {שכינה, אמצעי}, {שפע רוחניות, ימין}, {שפע גשמיות, שמאל}, {התעוררות חדש וחשק נמרץ להתורה, חדושין}, {ל\"ט מלאכות, 'בזעת אפך תאכל לחם'}. Merge analysis: {שפע רוחניות, ימין} and {שפע גשמיות, שמאל} are merged into a single Package 2 by shared nature — both describe the same structural axis (right/left, fire/water) of Torah's twofold output. The text pairs them explicitly and constantly throughout (lines 3-4, 11): they are two poles of one conceptual domain, not independent themes. The remaining three components are kept separate: {שכינה, אמצעי} as Package 1 (the theological premise), {התעוררות, חדושין} as Package 3 (the good outcome for righteous recipients), and {ל\"ט מלאכות, בזעת אפך} as Package 4 (the evil mirror — worldly toil for unworthy recipients). The good/evil mirror structure is clearly present: Package 3 (Torah renewal for the righteous = טל תורה = ימין) is mirrored by Package 4 (ל\"ט מלאכות for the unworthy = שמאל in its fallen form). This reflects the Torah's explicit binary: the same dispersed Torah that becomes spiritual dew for the worthy becomes oppressive toil for the unworthy."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 159,
+      "label": "שְׁכִינָה וְאֶמְצָעִי",
+      "label_en": "The Shekhinah as Intermediary",
+      "polarity": "good",
+      "reason": "Torah #159 opens with its foundational bechina: the Shekhinah IS the intermediary (אמצעי) between human beings and God. The Rebbe states explicitly: 'יֵשׁ אֶמְצָעִי, וְהִיא הַשְּׁכִינָה, שֶׁהוּא אֶמְצָעִי בֵּין בְּנֵי אָדָם וּבֵין הַשֵּׁם יִתְבָּרַךְ' and then repeats 'הַשְּׁכִינָה שֶׁהִיא בְּחִינַת אֶמְצָעִי' using explicit בְּחִינַת language. These two nodes are the theological premise of the entire Torah: the Shekhinah is not merely similar to an intermediary — it IS the intermediary, structurally and ontologically. The Shekhinah receives Torah study, elevates it to God, and mediates the flow of shefa back down. Polarity good: the Shekhinah as mediating presence is unambiguously a positive, holy concept in the framework of this Torah. שכינה is the dominant node (it is the subject that IS defined as אמצעי, and the entire Torah flows from this premise).",
+      "dominant_node": "שכינה",
+      "nodes": [
+        "שכינה",
+        "אמצעי"
+      ],
+      "node_degrees": {
+        "שכינה": 1,
+        "אמצעי": 1
+      }
+    },
+    {
+      "id": 2,
+      "torah_ref": 159,
+      "label": "שֶׁפַע יָמִין וּשְׂמֹאל — רוּחָנִיּוּת וְגַשְׁמִיּוּת",
+      "label_en": "The Twofold Divine Abundance — Right/Left, Spiritual/Material",
+      "polarity": "good",
+      "reason": "This package is formed by merging two raw components — {שפע רוחניות, ימין} and {שפע גשמיות, שמאל} — on the basis of shared nature. Both components describe the two poles of the same structural axis: the right-left, fire-water dimension of Torah's output when it ascends to the Shekhinah. The text pairs them inseparably throughout: 'שֶׁפַע רוּחָנִיּוּת... שֶׁהִיא בְּחִינַת יָמִין... וְעֹשֶׁר וְכָבוֹד, שֶׁהוּא שֶׁפַע גַּשְׁמִיּוּת, הִיא בְּחִינַת שְׂמֹאל' (line 4). They are not independent thematic domains — they are the right and left faces of the same thing: the abundant flow that emerges when Torah is properly studied for the Shekhinah. The proof text (Mishlei 3:16): 'אֹרֶךְ יָמִים בִּימִינָהּ וּבִשְׂמֹאלָהּ עֹשֶׁר וְכָבוֹד' is cited precisely to establish this right-left paired structure. Merging is valid by shared nature (both are aspects of שפע, the divine overflow from Torah study), not by cause-effect. Polarity good: in this Torah, both שפע רוחניות and שפע גשמיות are entirely positive divine gifts flowing from holy Torah study. The negative inversion (ל\"ט מלאכות) is a separate evil-mirror concept. שפע רוחניות is the dominant node (it appears in edge 1359 and is the first-named, higher dimension; it flows to the upper worlds while גשמיות flows down to this world).",
+      "dominant_node": "שפע רוחניות",
+      "nodes": [
+        "שפע רוחניות",
+        "ימין",
+        "שפע גשמיות",
+        "שמאל"
+      ],
+      "node_degrees": {
+        "שפע רוחניות": 1,
+        "ימין": 1,
+        "שפע גשמיות": 1,
+        "שמאל": 1
+      },
+      "merge_note": "Merged from two raw components: {שפע רוחניות, ימין} (edge 1359) and {שפע גשמיות, שמאל} (edge 2961). Merge justified by shared nature: both are explicit bechinot of the same Torah concept — the twofold axis of Torah output (fire/water = right/left = spiritual/material abundance). The Torah treats them as a single paired structure throughout, citing one verse (Mishlei 3:16) to establish both simultaneously. They are two poles of the same domain, not independent cause-effect chain."
+    },
+    {
+      "id": 3,
+      "torah_ref": 159,
+      "label": "הִתְעוֹרְרוּת וְחִדּוּשִׁין",
+      "label_en": "Torah Renewal and Chiddushim",
+      "polarity": "good",
+      "reason": "This package captures the positive outcome for righteous or worthy recipients of dispersed Torah. When scattered Torah is absorbed by a worthy person — whether a great tzaddik who derives חִדּוּשִׁין דְּאוֹרַיְתָא (novel Torah insights) or a smaller person who receives renewed enthusiasm — both outcomes are defined as bechina of חִדּוּשִׁין: 'הִתְעוֹרְרוּת חָדָשׁ וְחֵשֶׁק נִמְרָץ לְהַתּוֹרָה, שֶׁהוּא גַּם כֵּן בְּחִינַת חִדּוּשִׁין' (line 9). The shared nature: renewed ardor and Torah novellae are both expressions of the same phenomenon — the chiddush, the new spark of Torah vitality that is awakened. This is the טַל תּוֹרָה (Torah dew) dimension: life-giving, renewing, spiritually nourishing. Polarity good: these are what happens when Torah dispersed in the air reaches the worthy — it vivifies their Torah study. חִדּוּשִׁין is the more abstract and theologically resonant node; הִתְעוֹרְרוּת חָדָשׁ וְחֵשֶׁק נִמְרָץ לְהַתּוֹרָה is the concrete experiential form. However, the Rebbe defines the חֵשֶׁק as a bechina OF חִדּוּשִׁין (line 9 explicitly: 'שֶׁהוּא... בְּחִינַת חִדּוּשִׁין'), making חִדּוּשִׁין the dominant node.",
+      "dominant_node": "חדושין",
+      "nodes": [
+        "התעוררות חדש וחשק נמרץ להתורה",
+        "חדושין"
+      ],
+      "node_degrees": {
+        "התעוררות חדש וחשק נמרץ להתורה": 1,
+        "חדושין": 1
+      }
+    },
+    {
+      "id": 4,
+      "torah_ref": 159,
+      "label": "ל\"ט מְלָאכוֹת וַעֲבוֹדַת הָעוֹלָם",
+      "label_en": "The 39 Labors and the Toil of This World",
+      "polarity": "evil",
+      "reason": "This package is the evil mirror of Package 3 (הִתְעוֹרְרוּת וְחִדּוּשִׁין). It captures what happens when the same dispersed Torah reaches unworthy recipients: instead of חִדּוּשִׁין and Torah renewal, they receive a burning desire for worldly toil. The Rebbe explicitly inverts the parallel: 'שֶׁמַּגִּיעַ לוֹ אַדְּרַבָּא חֵשֶׁק נִמְרָץ וְהִתְעוֹרְרוּת חָדָשׁ לִיגִיעוֹת וּטְרָחוֹת וַעֲבוֹדַת הָעוֹלָם הַזֶּה, שֶׁהוּא הַהֶפֶךְ מַמָּשׁ מִטַּ\"ל תּוֹרָה, הַיְנוּ ל\"ט מְלָאכוֹת' (line 10). The bechina equation: 'ל\"ט מְלָאכוֹת שֶׁהוּא בְּחִינַת (בְּרֵאשִׁית ג): בְּזֵעַת אַפֶּךָ תֹּאכַל לֶחֶם' — the 39 categories of prohibited Shabbat labor ARE a bechina of the curse 'by the sweat of your brow you shall eat bread.' Both concepts describe the same essential reality: enslaved, cursed, non-sacred labor — the opposite of Torah study and Shabbat. The 39 labors are the Shabbat-violating work of the fallen world (they are the 39 categories of work the mishkan required, now representing all worldly toil when disconnected from holiness). 'בְּזֵעַת אַפֶּךָ תֹּאכַל לֶחֶם' (Genesis 3:19) is the foundational divine curse of fallen human labor. Both describe the same fallen domain: compulsive, spiritually empty toil. Polarity evil: this is the sitra achra dimension of the Torah's teaching — what happens when Torah's power falls into the wrong domain and activates the forces of worldly enslavement rather than spiritual renewal. ל\"ט מלאכות is dominant (it is the active concept; the verse is its proof-text bechina).",
+      "dominant_node": "ל\"ט מלאכות",
+      "nodes": [
+        "ל\"ט מלאכות",
+        "\"בזעת אפך תאכל לחם\""
+      ],
+      "node_degrees": {
+        "ל\"ט מלאכות": 1,
+        "\"בזעת אפך תאכל לחם\"": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 5,
+    "total_nodes": 10,
+    "total_packages": 4,
+    "raw_connected_components": 5,
+    "components_merged_into_packages": 1,
+    "evil_mirror_packages": 1,
+    "merge_details": "One merge performed: raw components {שפע רוחניות, ימין} (edge 1359) and {שפע גשמיות, שמאל} (edge 2961) merged into Package 2 by shared nature. Both describe the right-left, fire-water, spiritual-material axis of Torah's shefa — two poles of one domain. Merge is by shared nature only (both are bechinot of the same Torah output structure), not by cause-effect. The remaining four 2-node components each form their own package (Package 1, 3, and 4) or contribute to the merged package (Package 2).",
+    "evil_mirror_note": "Package 4 (ל\"ט מלאכות) is the evil mirror of Package 3 (חִדּוּשִׁין/הִתְעוֹרְרוּת). The teaching's binary structure is explicit: worthy recipients receive טַל תּוֹרָה (= ימין = Package 2's right side = Package 3's chiddushim); unworthy recipients receive ל\"ט מְלָאכוֹת (= the fallen שמאל dimension = Package 4). The same force — dispersed Torah in the air — produces life (טל) or toil-curse (ל\"ט מלאכות) depending on the recipient's character.",
+    "note_on_unresolved": "The שמאל node in Package 2 and the ל\"ט מלאכות node in Package 4 are connected in the source text (line 11: 'ל\"ט מְלָאכוֹת זֶה הוּא בְּחִינוֹת שְׂמֹאל') but this edge is not yet in the dataset. This creates a potential bridge between Packages 2 and 4 via the שמאל node. See torah_159_additions.json for this gap addition."
+  }
+}

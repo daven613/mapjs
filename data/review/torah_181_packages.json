@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "source": "Torah #181",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===181 AND type==='bechina'. 2 bechina edges found. Both share the same proof text — line 6 of the source: 'כִּי יַעֲקֹב הוּא בְּחִינַת הַכָּבוֹד, כִּי הוּא בְּחִינוֹת הַנֶּפֶשׁ, כְּמוֹ שֶׁכָּתוּב: כָּל הַנֶּפֶשׁ הַבָּאָה לְבֵית יַעֲקֹב.' The two edges are: (1) יעקב ↔ כבוד and (2) יעקב ↔ נפש. Both connect through יעקב as the central hub, forming a single connected component of 3 nodes. No merge proposals needed — the component is already unified. No raw components require merging. Raw connected components = 1."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 181,
+      "label": "יַעֲקֹב וְהַכָּבוֹד",
+      "label_en": "Jacob and Honor",
+      "polarity": "good",
+      "reason": "The entire teaching of Torah #181 is built on the identity declared in line 6: Jacob is a bechina of honor (כָּבוֹד), because Jacob is a bechina of the soul (נֶפֶשׁ). The verse cited — 'כָּל הַנֶּפֶשׁ הַבָּאָה לְבֵית יַעֲקֹב' (Gen. 46) — grounds both equalities in scripture: Jacob's house is where the nefesh comes home, therefore Jacob = nefesh = kavod. The teaching's entire argument about honor (the conspiracy against a leader works by aggregating collective shares of honor; righteousness preserves one's share of honor; falling spiritually means losing one's portion of honor and falling into lust) depends on kavod as a spiritual-ontological quality. Kavod is the dominant node: it appears 9 times in the 8-line text and drives the whole argument. Jacob is the biblical embodiment of kavod and nefesh — Jacob prays (line 5: 'אַל תֵּחַד כְּבוֹדִי') specifically to protect Moses from the aggregated honor of Korach's assembly. Nefesh is the metaphysical ground: having vitality from the nefesh means having a share in kavod (line 4). All three nodes share the same essential nature — the spiritual dimension of a person that is connected to holiness, honor, and the soul, and which is diminished or protected in the cosmic struggle between Torah leadership and opposition. This is wholly a good/holy domain: the nefesh-kavod-Yaakov cluster represents the positive pole of the teaching (the tzaddik's spiritual stature that must be preserved), in direct contrast to the evil pole (the conspiracy of the wicked, and falling to lust — line 7).",
+      "dominant_node": "כבוד",
+      "nodes": [
+        "יעקב",
+        "כבוד",
+        "נפש"
+      ],
+      "node_degrees": {
+        "יעקב": 2,
+        "כבוד": 1,
+        "נפש": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 2,
+    "total_nodes": 3,
+    "total_packages": 1,
+    "raw_connected_components": 1
+  }
+}

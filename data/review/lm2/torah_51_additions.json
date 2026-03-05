@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "source": "Torah #51 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "יצר הרע (Evil Inclination — the knocking tempter; appears in source text as the agent that knocks repeatedly)",
+      "מחשבות מבלבלות (Distracting/confusing thoughts during prayer — the prayer-domain parallel to the yetzer hara's knocking)"
+    ],
+    "gap_analysis_summary": "The source text of LM2 #51 uses two domains in parallel — the yetzer hara knocking at a person in general life, and distracting thoughts during prayer. The Rebbe states the two situations are 'ממש כנ"ל' (exactly the same), but this is a structural analogy rather than an explicit bechina equation. Neither concept is introduced with bechina language ('הוא בחינת', 'נקרא', etc.). Because no bechina edges exist for this Torah — either in the dataset or derivable from the text — there are no packages into which to assign additions. The two eitza edges in the dataset correctly capture the causal flow: strong-minded resistance → yetzer hara departs, and: strong-minded not looking at thoughts → thoughts depart.",
+    "dataset_edges_for_reference_1051": [
+      {
+        "node1_id": "וצריך להיות חזק לבלי להסתכל עליה כלל בשום אפן",
+        "node2_id": "ואזי תסתלק",
+        "type": "eitza",
+        "direction": "ignoring the thought (cause) → thought departs (effect)"
+      },
+      {
+        "node1_id": "אם האדם הוא חזק בדעתו ועקשן נגד היצר הרע, ואינו פונה אליו כלל",
+        "node2_id": "יצר הרע מסתלק והולך לו",
+        "type": "eitza",
+        "direction": "stubborn resistance (cause) → yetzer hara departs (effect)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "source": "Torah #209",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #209 has zero bechina edges in the existing dataset for reference===209 (the only edge with reference=209 is id 2876, which is type 'eitza'). The bechina relationships are derived directly from the source text (torah_209.txt), which contains four explicit bechina declarations. These produce four concept-pairs forming two thematic clusters: (A) the good cluster of guest/path/blessings/prayer and (B) the evil cluster of opposing evil prayers. The hachnasat orchim / Tamid pair bridges the two as the practical remedy (eitza) but also has its own bechina identity as a pair, so it is treated as part of the good prayer cluster since the Tamid IS the prayer and the guest IS the path. Connected-component analysis on the four bechina pairs yields: one large good component (5 nodes connected through shared 'orach' and 'berakhot' themes), and one small evil component (2 nodes — evil prayers). A third micro-component (temidim / hachnasat orchim, 2 nodes) is merged into the good prayer cluster because both are expressions of the same act of establishing/repairing prayer — they are structurally equivalent expressions of the same spiritual reality."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 209,
+      "label": "אוֹרֵחַ וּבְרָכוֹת הַתְּפִלָּה",
+      "label_en": "The Guest and the Blessings of Prayer",
+      "polarity": "good",
+      "reason": "This cluster unifies all the positive conceptual nodes in Torah #209 around the central word-bridge of אוֹרֵחַ / אֹרַח (guest / path). The Rebbe plays on the same root: the physical 'guest' (אוֹרֵחַ) who blesses his host and the spiritual 'path of the righteous' (אֹרַח צַדִּיקִים) that shines like a great light are the same essential reality — the illuminated trajectory of holiness that produces blessing. The verse 'בְּרָכוֹת לְרֹאשׁ צַדִּיק' (blessings upon the head of the righteous) is an explicit bechina of the שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת — the righteous man's blessings ARE the Amidah's 18 blessings (Zohar Pinchas 244, Tikun 47). The תְּמִידִין תִּקְּנוּם (prayers established like the Tamid) and הַכְנָסַת אוֹרֵחַ תַּלְמִיד-חָכָם (hosting a Torah scholar) are merged into this cluster because the Talmud (Berakhot 10a) explicitly equates them: one who hosts Torah scholars is as if he offered the Tamid. This means the Tamid and hachnasat orchim are parallel aspects of the same spiritual act — the one that establishes and repairs prayer. The dominant node is תְּפִלָּה (prayer/18-blessings) because every concept in this cluster ultimately defines itself as a face of proper prayer: the guest who blesses, the path of light, the blessings on the righteous, and the Tamid all converge on the reality of the Amidah.",
+      "dominant_node": "שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת שֶׁבַּתְּפִלָּה",
+      "nodes": [
+        "אוֹרֵחַ",
+        "אֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ",
+        "בְּרָכוֹת לְרֹאשׁ צַדִּיק",
+        "שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת שֶׁבַּתְּפִלָּה",
+        "הַכְנָסַת אוֹרֵחַ תַּלְמִיד-חָכָם",
+        "תְּמִידִין תִּקְּנוּם"
+      ],
+      "node_degrees": {
+        "אוֹרֵחַ": 2,
+        "אֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ": 1,
+        "בְּרָכוֹת לְרֹאשׁ צַדִּיק": 1,
+        "שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת שֶׁבַּתְּפִלָּה": 1,
+        "הַכְנָסַת אוֹרֵחַ תַּלְמִיד-חָכָם": 1,
+        "תְּמִידִין תִּקְּנוּם": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["הַכְנָסַת אוֹרֵחַ תַּלְמִיד-חָכָם", "תְּמִידִין תִּקְּנוּם"],
+          "reason": "These two nodes form a raw 2-node bechina pair (line 4: 'תְּמִידִין תִּקְּנוּם — זֶה בְּחִינַת הַכְנָסַת אוֹרֵחַ תַּלְמִיד-חָכָם'). They are the operational/ritual face of the same prayer-establishment act. The Tamid offering corresponds to prayer (the premise of the entire Torah from Berakhot 26b), and hosting a Torah scholar corresponds to the Tamid (Berakhot 10a). Both are therefore parallel expressions of the prayer-act. They belong in the good prayer cluster with the guest/blessings nodes, since all six nodes share the essential domain of prayer-establishment and blessing. The eitza relationship (hosting → repairs prayer) is the directional arrow between this merged group and the evil package; the bechina of Tamid=hosting is the parallel-nature relationship within the good package."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 209,
+      "label": "תְּפִלּוֹת רָעוֹת",
+      "label_en": "Evil Prayers",
+      "polarity": "evil",
+      "reason": "This cluster contains the two names given in the text for the same evil phenomenon: the תְּפִלּוֹת רָעוֹת (evil prayers that everyone accumulates — line 2: 'יֵשׁ לְכָל אָדָם תְּפִלּוֹת רָעוֹת') and their functional definition תְּפִלּוֹת כְּנֶגֶד (opposing prayers — line 2: 'וְזֶה בְּחִינַת תְּפִלּוֹת כְּנֶגֶד שֶׁהִיא מִתְנַגֶּדֶת לוֹ'). The Rebbe explicitly labels the second as the bechina of the first: the evil prayers ARE the 'opposing prayers' — they are two names for the same essential reality, the spiritual force that opposes proper prayer. This is the sole evil package in Torah #209 and mirrors Package 1: where Package 1 is about prayers that bless and ascend, Package 2 is about prayers that oppose and disrupt. The proof-text is the rabbinic statement about the thief who prays before breaking in (Berakhot 63, Ein Yaakov version: 'גַּנָּבָא עַל מַחְתַּרְתָּא רַחֲמָנָא קַרְיָא') — this is the paradigm of the evil prayer that inverts the proper relationship between a person and the Divine.",
+      "dominant_node": "תְּפִלּוֹת רָעוֹת",
+      "nodes": [
+        "תְּפִלּוֹת רָעוֹת",
+        "תְּפִלּוֹת כְּנֶגֶד"
+      ],
+      "node_degrees": {
+        "תְּפִלּוֹת רָעוֹת": 1,
+        "תְּפִלּוֹת כְּנֶגֶד": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 4,
+    "total_nodes": 8,
+    "total_packages": 2,
+    "raw_connected_components": 3,
+    "components_merged_into_packages": 2,
+    "note_on_merges": "3 raw bechina components from source text: (A) {אוֹרֵחַ, אֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ} — the guest/path word-pair; (B) {בְּרָכוֹת לְרֹאשׁ צַדִּיק, שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת שֶׁבַּתְּפִלָּה} — the blessings/prayer pair; (C) {הַכְנָסַת אוֹרֵחַ תַּלְמִיד-חָכָם, תְּמִידִין תִּקְּנוּם} — the tamid/hosting pair; (D) {תְּפִלּוֹת רָעוֹת, תְּפִלּוֹת כְּנֶגֶד} — the evil-prayer pair. Components A+B+C are merged into Package 1 (good) because all share the domain of prayer-blessing-establishment and the אוֹרֵחַ/אֹרַח bridge connects A to C through the guest concept. Component D is Package 2 (evil).",
+    "dataset_bechina_edges": 0,
+    "source_text_bechina_declarations": 4,
+    "note": "None of the 4 bechina declarations in the source text are currently represented in torahData.js as bechina edges with reference=209. The sole existing edge with reference=209 (id 2876) is type 'eitza'. All 4 bechina edges and all 8 nodes are new additions to the dataset."
+  }
+}

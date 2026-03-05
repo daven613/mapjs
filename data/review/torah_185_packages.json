@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "source": "Torah #185",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===185 AND type==='bechina'. Three bechina edges yield two raw connected components: Component A {יראה, אות דל\"ת, מלכות} and Component B {המשכה מהשכל להיראה, אות וא\"ו}. Component B (2-node isolated pair) merged into Component A because all five nodes share the same essential nature — they are all structural components of the letter alef (א), which the Torah explicitly equates with the upper yir'ah. The vav is the diagonal connector within alef just as the dalet is its lower arm; together with the yud (sekhel), they compose the complete letter. Merge is based on shared nature (all are aspects of יראה עליונה / אות אל\"ף), not cause-and-effect."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 185,
+      "label": "יִרְאָה וְאוֹת אָלֶ\"ף",
+      "label_en": "Fear of God and the Letter Alef",
+      "polarity": "good",
+      "reason": "Torah #185 revolves entirely around the upper yir'ah (fear arising from intellectual contemplation of God's greatness), which the Rebbe declares to be a bechina of the letter alef (א). This alef is itself composed of three structural elements: the yud (sekhel/intellect, the top point of the letter), the vav (the diagonal — the 'drawing' or המשכה from sekhel to yir'ah), and the dalet (the lower arm — yir'ah itself, which is bechina of malkhut, the receptive kingdom that has nothing of its own). All five nodes in this package are aspects of this single conceptual structure: the holy upper fear that completes the divine Name. The package is unambiguously positive — it describes the ideal form of yir'ah that the Zohar says completes God's holy name when Israel achieves it.",
+      "dominant_node": "יראה",
+      "nodes": [
+        "יראה",
+        "מלכות",
+        "אות דל\"ת",
+        "המשכה מהשכל להיראה",
+        "אות וא\"ו"
+      ],
+      "node_degrees": {
+        "יראה": 2,
+        "מלכות": 1,
+        "אות דל\"ת": 1,
+        "המשכה מהשכל להיראה": 1,
+        "אות וא\"ו": 1
+      },
+      "merge_notes": [
+        "Raw Component A (3 nodes): {יראה, אות דל\"ת, מלכות} — connected via edges יראה↔אות דל\"ת and יראה↔מלכות.",
+        "Raw Component B (2 nodes): {המשכה מהשכל להיראה, אות וא\"ו} — isolated pair connected via המשכה מהשכל להיראה↔אות וא\"ו.",
+        "Merge justification: Both components are sub-structures of the letter alef (א), explicitly equated in the source text with יראה ראשונה / יראה עליונה. The Torah states: 'יִרְאָה הָרִאשׁוֹנָה... הִיא בְּחִינוֹת א. כִּי הַיִּרְאָה הִיא בְּחִינַת מַלְכוּת... וְהִיא בְּחִינוֹת דָּלֶת... וְהַשֵּׂכֶל נִקְרָא יוּד... וְהַהַמְשָׁכָה מֵהַשֵּׂכֶל לְהַיִּרְאָה הוּא בְּחִינַת וָאו. וְזֶה א.' The vav (Component B) and the dalet/malkhut (Component A) are both named aspects of the same alef-structure. They share the nature of being components of the upper yir'ah, not cause-and-effect stages.",
+        "No evil mirror package: Torah #185 does not develop an evil counterpart. The second (lower) yir'ah is described as a lower-grade positive phenomenon, not an evil one — it is still a valid path to yir'ah, simply drawing from lower sources rather than from sekhel. It is not classified as evil but as a lesser grade of the same good."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 5,
+    "total_packages": 1,
+    "raw_connected_components": 2
+  }
+}

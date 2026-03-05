@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "source": "Torah #217",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===217 AND type==='bechina'. Exactly one bechina edge found in the dataset for Torah #217 (id: 180.0): הַלּוּחוֹת ↔ אות וא\"ו. Torah #217 is an exceptionally compact teaching — 3 sentences. It opens with a gematria/acrostic observation: the opening words of the verse 'זִכְרוּ תּוֹרַת מֹשֶׁה' (Malachi 3:22) have initial letters that spell תַּמֻּז (Tammuz), but the word is written deficient of the letter vav (חָסֵר וָאו). The Rebbe explains this structural absence by one central bechina identification: the Tablets (לוּחוֹת) ARE a bechina of the letter vav, because their dimensions are 6 × 6 (Bava Batra 14). The Tablets were broken in Tammuz, so the vav was removed from the word Tammuz. The entire teaching rests on this single structural identity. A second acrostic observation (זְמַן מַתַּן תּוֹרָתֵנוּ also spells תַּמֻּז with missing vav) reinforces the same bechina. No other bechina statements appear in the source text. All other conceptual relationships in the Torah are eitza (causal) in nature: שְׁבִירַת הַלּוּחוֹת → שִׁכְחָה, and the remedy: לְהַמְשִׁיךְ זִכָּרוֹן → תִּקּוּן הַשִּׁכְחָה."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 217,
+      "label": "הַלּוּחוֹת וָאו",
+      "label_en": "The Tablets and the Letter Vav",
+      "polarity": "good",
+      "reason": "The sole bechina in Torah #217 is the explicit identification: 'הַלּוּחוֹת הֵם בְּחִינַת וָאו' — the Tablets ARE a bechina of the letter vav (stated twice in the text, lines 2 and 3). The proof is the Talmudic tradition (Bava Batra 14) that the Tablets were 6 cubits long and 6 cubits wide — their essential nature is sixness, and six is the numerical value of the letter vav. These two concepts — the Tablets and the letter vav — are different expressions of the same underlying reality: the sixfold structure that carried the Torah from Sinai. The package is marked good because both nodes belong entirely to the domain of holiness. The Tablets are the holy vessel of Torah par excellence. The letter vav in this Torah's context represents the spiritual dimension of Torah-transmission — its removal (via the breaking of the Tablets) is precisely what caused שִׁכְחָה (forgetting of Torah). There is no evil mirror in this teaching. The opposites — שִׁכְחָה and the broken state of the Tablets — are not developed as a parallel evil package; they are consequences described through eitza language ('עַל יְדֵי הַלּוּחוֹת שֶׁנִּשְׁתַּבְּרוּ נִתְהַוָּה הַשִּׁכְחָה'), not bechina identifications. The dominant node is הַלּוּחוֹת because it is the Rebbe's operative concept — all the causal chains in the teaching (broken → forgetting; given → Tammuz) flow from the Tablets, and the bechina equation with vav is the teaching's theoretical foundation.",
+      "dominant_node": "הלוחות",
+      "nodes": [
+        "הלוחות",
+        "אות וא\"ו"
+      ],
+      "node_degrees": {
+        "הלוחות": 1,
+        "אות וא\"ו": 1
+      },
+      "source_edges": [
+        {
+          "edge_id": 180,
+          "node1_id": "הלוחות",
+          "node2_id": "אות וא\"ו",
+          "proof": "הַלּוּחוֹת הֵם בְּחִינַת וָאו, כְּמוֹ שֶׁאָמְרוּ רַבּוֹתֵינוּ זִכְרוֹנָם לִבְרָכָה (בָּבָא בַּתְרָא י\"ד): הַלּוּחוֹת אָרְכָּן שִׁשָּׁה וְרָחְבָּן שִׁשָּׁה"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_bechina_edges_from_source_text": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 0,
+    "note_on_structure": "Torah #217 is one of the briefest teachings in Likutay Moharan — 3 sentences, approximately 120 words. It is built around a single bechina identification (הַלּוּחוֹת = וָאו) which is stated twice, each time with the Talmudic proof from Bava Batra 14. The bechina graph consists of one isolated pair. No merging was performed. The eitza structure of the teaching is: [שְׁבִירַת הַלּוּחוֹת / removal of vav] --eitza--> [שִׁכְחָה]; and the remedy: [הַמְשָׁכַת זִכָּרוֹן in Tammuz] --eitza--> [תִּקּוּן הַשִּׁכְחָה]. The eitza flows out from the bechina-package (the Tablets/vav being broken) to the consequence (forgetting), but the consequence itself is not a bechina node in this Torah.",
+    "note_on_evil_mirror": "Torah #217 contains no evil packages and no evil mirror structure. The שִׁכְחָה (forgetting) and the breaking of the Tablets are discussed as events and causal nodes, but they are not developed as a conceptual cluster with parallel bechina identifications. The teaching is entirely focused on explaining the structural absence of the vav in Tammuz through the single bechina identity הַלּוּחוֹת = וָאו, and prescribing the drawing-down of memory as the remedy."
+  }
+}

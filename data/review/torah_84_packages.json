@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "source": "Torah #84",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #84 has zero edges in torahData.js (reference 84 does not appear in the dataset). All bechina pairs below are extracted directly from the source text, where explicit equivalence language (הַיְנוּ, שֶׁזּוֹ הִיא, וְהִיא, וְהוּא, נַעֲשִׂין, מִסִּטְרָא דִּימִינָא) establishes parallel-nature relationships. Three raw connected components were identified; Component C (2-node pair הַטּוֹב הַגָּנוּז / רָזִין דְּאוֹרַיְתָא) is retained as a standalone small package rather than merged, because its essential nature — the hidden content of each day that one seeks to access — is distinct from Package 1 (the gate / path / right-side quality) and connected to it only by eitza (entering the gate leads to the hidden good), not by shared nature."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 84,
+      "label": "מִדַּת אַבְרָהָם וְסִטְרָא דִּימִינָא",
+      "label_en": "The Trait of Abraham and the Right Side",
+      "polarity": "good",
+      "reason": "This cluster groups five concepts that the Torah explicitly equates using successive 'is' statements (שֶׁזּוֹ הִיא / וְהִיא / וְהוּא / מִסִּטְרָא דִּימִינָא): being generous with money (וַתְּרָן בְּמָמוֹנִי), Abraham's characteristic trait (מִדַּת אַבְרָהָם), the gate called Love (תַּרְעָא דְּאַהֲבָה), the right side (סִטְרָא דִּימִינָא), and the white brain like silver (מֹחָא חִוָּרָא כְּכַסְפָּא). All five share a single essential nature: the divine quality of expansive love and generosity that belongs to the right column of the sefirot (Chesed/Abraham), which has the characteristic property of whitening and opening — turning accusation into defense, darkness into light, constricted thought into clarity. The chain is: generous money = Abraham's trait = the Love gate = the right side = white-silver intellect. Each is merely a different face of the same cosmic quality — the receptive-opening, chesed-oriented orientation of the soul.",
+      "dominant_node": "מִדַּת אַבְרָהָם",
+      "nodes": [
+        "וַתְּרָן בְּמָמוֹנִי",
+        "מִדַּת אַבְרָהָם",
+        "תַּרְעָא דְּאַהֲבָה",
+        "סִטְרָא דִּימִינָא",
+        "מֹחָא חִוָּרָא כְּכַסְפָּא"
+      ],
+      "node_degrees": {
+        "מִדַּת אַבְרָהָם": 3,
+        "וַתְּרָן בְּמָמוֹנִי": 1,
+        "תַּרְעָא דְּאַהֲבָה": 2,
+        "סִטְרָא דִּימִינָא": 2,
+        "מֹחָא חִוָּרָא כְּכַסְפָּא": 1
+      },
+      "bechina_edges": [
+        {
+          "node1": "וַתְּרָן בְּמָמוֹנִי",
+          "node2": "מִדַּת אַבְרָהָם",
+          "proof": "וַתְּרָן הָיִיתִי בְּמָמוֹנִי – שֶׁזּוֹ הִיא מִדַּת אַבְרָהָם אָבִינוּ"
+        },
+        {
+          "node1": "מִדַּת אַבְרָהָם",
+          "node2": "תַּרְעָא דְּאַהֲבָה",
+          "proof": "שֶׁזּוֹ הִיא מִדַּת אַבְרָהָם אָבִינוּ, וְהִיא תַּרְעָא דְּאִתְקְרִי אַהֲבָה"
+        },
+        {
+          "node1": "תַּרְעָא דְּאַהֲבָה",
+          "node2": "סִטְרָא דִּימִינָא",
+          "proof": "וְהִיא תַּרְעָא דְּאִתְקְרִי אַהֲבָה, וְהוּא סִטְרָא דִּימִינָא"
+        },
+        {
+          "node1": "סִטְרָא דִּימִינָא",
+          "node2": "מֹחָא חִוָּרָא כְּכַסְפָּא",
+          "proof": "מִסִּטְרָא דִּימִינָא מֹחָא חִוָּרָא כְּכַסְפָּא (תיקוני זהר תיקון ע' דף קיח)"
+        }
+      ],
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 84,
+      "label": "מַחֲשָׁבוֹת זָרוֹת וּמְקַטְרְגִים",
+      "label_en": "Foreign Thoughts and Accusers",
+      "polarity": "evil",
+      "reason": "This cluster groups the blocking forces that oppose access to Torah secrets: the serpents and scorpions (נְחָשִׁים וְעַקְרַבִּים), the accusers (מְקַטְרְגִים), and foreign thoughts (מַחֲשָׁבוֹת זָרוֹת). The Torah states explicitly in line 10 that all three are the same thing: 'כָּל הַמְקַטְרְגִים וְכָל הַנְּחָשִׁים וְעַקְרַבִּים, הַיְנוּ הַמַּחֲשָׁבוֹת זָרוֹת שֶׁמְּבַלְבְּלִין מַחֲשַׁבְתֵּהּ' — all the accusers and all the serpents and scorpions, MEANING the foreign thoughts that confuse one's mind. This triple equation (מְקַטְרְגִים = נְחָשִׁים וְעַקְרַבִּים = מַחֲשָׁבוֹת זָרוֹת) is a classic bechina: three different conceptual registers (legal/prosecutorial, mythic/serpentine, psychological/cognitive) all describe the same essential blocking reality — the force that prevents a person from entering the secrets of Torah. This package is the evil mirror of Package 1: where Package 1 is the opening force (right side, love, whitening), Package 2 is the closing force (accusers, serpents, confusion).",
+      "dominant_node": "מַחֲשָׁבוֹת זָרוֹת",
+      "nodes": [
+        "נְחָשִׁים וְעַקְרַבִּים",
+        "מְקַטְרְגִים",
+        "מַחֲשָׁבוֹת זָרוֹת"
+      ],
+      "node_degrees": {
+        "מַחֲשָׁבוֹת זָרוֹת": 2,
+        "נְחָשִׁים וְעַקְרַבִּים": 2,
+        "מְקַטְרְגִים": 1
+      },
+      "bechina_edges": [
+        {
+          "node1": "מְקַטְרְגִים",
+          "node2": "נְחָשִׁים וְעַקְרַבִּים",
+          "proof": "כָּמָּה נְחָשִׁים וְעַקְרַבִּים מְבַלְבְּלִין מַחֲשַׁבְתֵּהּ [= the accusers and the serpents/scorpions are stated in apposition in the Zohar quote, then equated directly in Rebbe Nachman's commentary]"
+        },
+        {
+          "node1": "נְחָשִׁים וְעַקְרַבִּים",
+          "node2": "מַחֲשָׁבוֹת זָרוֹת",
+          "proof": "כָּל הַמְקַטְרְגִים וְכָל הַנְּחָשִׁים וְעַקְרַבִּים, הַיְנוּ הַמַּחֲשָׁבוֹת זָרוֹת שֶׁמְּבַלְבְּלִין מַחֲשַׁבְתֵּהּ"
+        }
+      ],
+      "merge_notes": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 84,
+      "label": "הַטּוֹב הַגָּנוּז וְרָזִין דְּאוֹרַיְתָא",
+      "label_en": "The Hidden Good and the Secrets of Torah",
+      "polarity": "good",
+      "reason": "The two nodes in this package are equated by direct 'הַיְנוּ' language in line 6: 'הַטּוֹב הַגָּנוּז, הַיְנוּ רָזִין דְּאוֹרַיְתָא' — the hidden good, MEANING the secrets of Torah. Their shared nature is: the concealed, sacred, day-specific content of reality that is accessible only to the righteous. This is kept as a standalone package rather than merged into Package 1 for the following reason: Package 1 describes the gate and the quality/path (love, generosity, right side, white mind). Package 3 describes the destination/content (what is revealed once the gate is opened). One enters Package 1 → then arrives at Package 3 — that is an eitza connection between the packages, not a shared nature within one package. The Torah explicitly frames them as two separate things: there is a gate (tara'a) and there is a good (tov ganuz). The gate and the good are not the same essential nature; they stand in a cause-and-effect relationship.",
+      "dominant_node": "הַטּוֹב הַגָּנוּז",
+      "nodes": [
+        "הַטּוֹב הַגָּנוּז",
+        "רָזִין דְּאוֹרַיְתָא"
+      ],
+      "node_degrees": {
+        "הַטּוֹב הַגָּנוּז": 1,
+        "רָזִין דְּאוֹרַיְתָא": 1
+      },
+      "bechina_edges": [
+        {
+          "node1": "הַטּוֹב הַגָּנוּז",
+          "node2": "רָזִין דְּאוֹרַיְתָא",
+          "proof": "רוֹאֶה וּמַשִּׂיג הַטּוֹב הַגָּנוּז, הַיְנוּ רָזִין דְּאוֹרַיְתָא, הַשַּׁיָּךְ לְאוֹתוֹ הַיּוֹם"
+        }
+      ],
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 7,
+    "total_nodes": 10,
+    "total_packages": 3,
+    "raw_connected_components": 3,
+    "dataset_note": "Reference 84 does not appear in torahData.js — all bechina edges above were extracted from the source text torah_84.txt and represent new data to be added to the dataset. The reference field for these edges should be 84.",
+    "good_evil_mirror": "Package 1 (right side / love / whitening mind) is the exact structural mirror of Package 2 (accusers / serpents / foreign thoughts). Package 1 is the force that OPENS access to Torah secrets; Package 2 is the force that BLOCKS access. Package 3 (hidden good / Torah secrets) is the shared goal that both packages orbit."
+  }
+}

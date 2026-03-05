@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "source": "Torah #255",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": null,
+      "node_id": "אמונה",
+      "node_text": "אֱמוּנָה",
+      "polarity": "good",
+      "reason": "Emunah (faith/belief in the Tzaddik) is the central subject of the Torah. The teaching opens and closes with it: 'כְּשֶׁהָאָדָם הוּא מַאֲמִין בְּהַצַּדִּיק' and 'אִי אֶפְשָׁר לוֹ לִפֹּל'. While no explicit bechina language is used in this Torah, emunah is the primary concept that would anchor any package built for Torah #255. The node 'אמונה' already exists in the dataset from other Torahs (e.g., Torah #49, Torah #60, Torah #265). In this Torah, emunah is specifically אמונה בצדיק — belief in the Tzaddik — which is its concrete instantiation.",
+      "source_quote": "כְּשֶׁהָאָדָם הוּא מַאֲמִין בְּהַצַּדִּיק בְּלִי שׁוּם דַּעַת, אֶפְשָׁר לוֹ לִפֹּל מֵהָאֱמוּנָה",
+      "in_dataset_already": true,
+      "edge_type_in_this_torah": "subject — not connected via bechina or eitza edge in this Torah's dataset entries",
+      "proposed_edge_if_added": "If a bechina edge were to be added for this Torah, the most defensible pair would be: 'אמונה בצדיק' bechina 'אמונה' — believing in the Tzaddik IS an expression of emunah. However, this is more of an alias/label relationship than a genuine bechina equivalence between two distinct concepts."
+    },
+    {
+      "package_id": null,
+      "node_id": "דעת",
+      "node_text": "דַּעַת",
+      "polarity": "good",
+      "reason": "Daat (knowledge/understanding) is the second key concept in the Torah. The Rebbe states: 'אֲבָל אִם יֵשׁ לוֹ גַּם דַּעַת, שֶׁמֵּבִין גַּם בְּהַדַּעַת, אֲזַי אִי אֶפְשָׁר לוֹ לִפֹּל'. Daat is what makes emunah unshakeable — without it, faith is vulnerable. The node 'דעת' exists in the dataset from other Torahs. Critically, the relationship between daat and emunah in this Torah is eitza (causal): having daat PRODUCES an unshakeable state of emunah. They are not two expressions of the same thing — daat is understanding, emunah is faith. Their relationship is asymmetric: daat stabilizes emunah, but emunah does not produce daat. This is why no bechina edge between them exists.",
+      "source_quote": "אֲבָל אִם יֵשׁ לוֹ גַּם דַּעַת, שֶׁמֵּבִין גַּם בְּהַדַּעַת, אֲזַי אִי אֶפְשָׁר לוֹ לִפֹּל",
+      "in_dataset_already": true,
+      "edge_type_in_this_torah": "eitza (causal) — daat produces stability of emunah. Not bechina.",
+      "proposed_edge_if_added": "An eitza edge: 'דעת' → 'יציבות האמונה' (stability of faith). This is cause-and-effect, not parallel-nature."
+    },
+    {
+      "package_id": null,
+      "node_id": "נפילה מהאמונה",
+      "node_text": "נְפִילָה מֵהָאֱמוּנָה",
+      "polarity": "evil",
+      "reason": "Falling from faith is the negative outcome described in the Torah. The phrase 'אֶפְשָׁר לוֹ לִפֹּל מֵהָאֱמוּנָה' (it is possible for him to fall from faith) names the danger that emunah without daat faces. This is the evil pole of the teaching — the risk of spiritual collapse. It does not appear as a node in the dataset for any Torah. As an evil-polarity concept, it would be the counterpart to emunah itself. However, it is a consequence (eitza endpoint) rather than a bechina partner of any concept in this Torah.",
+      "source_quote": "כִּי מֵאֱמוּנָה לְבַד אֶפְשָׁר לִפֹּל",
+      "in_dataset_already": false,
+      "edge_type_in_this_torah": "eitza endpoint — it is the result of the condition 'emunah without daat'. Not a bechina node.",
+      "proposed_edge_if_added": "If added, this would be an eitza edge: 'אמונה בלי דעת' → 'נפילה מהאמונה'."
+    },
+    {
+      "package_id": null,
+      "node_id": "הצדיק",
+      "node_text": "הַצַּדִּיק",
+      "polarity": "good",
+      "reason": "The Tzaddik is the object of the faith described in this Torah. The teaching is specifically about believing IN the Tzaddik ('מַאֲמִין בְּהַצַּדִּיק'). The Tzaddik as a concept exists in the dataset under various forms ('צדיק', 'צדיק הדור'). In this Torah, the Tzaddik is not given a bechina equivalence — he is simply the object to which emunah attaches. His role is structural/contextual rather than part of a bechina network within this Torah.",
+      "source_quote": "כְּשֶׁהָאָדָם הוּא מַאֲמִין בְּהַצַּדִּיק",
+      "in_dataset_already": true,
+      "edge_type_in_this_torah": "contextual subject — no edge of any type in this Torah's dataset entries.",
+      "proposed_edge_if_added": "No bechina edge proposed. The Tzaddik is the structural context, not a bechina partner."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "נפילה מהאמונה — 'falling from faith' — the negative outcome of emunah without daat; not present as a node in any Torah's dataset entries",
+      "אמונה בלי דעת — 'faith without understanding' — the vulnerable spiritual state; not a separate node in the dataset",
+      "אמונה עם דעת — 'faith with understanding' — the complete and stable spiritual state; not a separate node in the dataset"
+    ],
+    "structural_note": "Torah #255 is a rare case in Likutay Moharan: an entirely eitza (causal) teaching with no explicit bechina language. The Rebbe makes a practical, philosophical claim about the spiritual psychology of emunah — that it requires daat as its foundation to be stable. This is a cause-and-effect statement (daat → stable emunah; lack of daat → vulnerable emunah), not a declaration of parallel natures. The teaching contrasts two concepts (emunah and daat) rather than equating them. Accordingly, zero bechina edges belong to this Torah, and the gap analysis confirms that the missing relationships are all eitza-type, not bechina-type.",
+    "good_evil_mirror": "The good/evil polarity axis in this Torah is: emunah (positive) vs. נפילה מהאמונה (falling from faith, negative). The evil element is not a mirror-package of concepts but a single outcome-state. The teaching has an implicit duality: the complete state (emunah + daat = stability, good) versus the incomplete state (emunah alone = vulnerability, danger of evil). This is not the symmetric dual-package mirror structure seen in longer Torahs like #1 or #3 — it is a before/after or with/without contrast.",
+    "recommended_future_action": "If edges are to be added for Torah #255 in the dataset, the following eitza edges are warranted: (1) 'אמונה בלי דעת' → 'נפילה מהאמונה' [eitza, reference 255]; (2) 'דעת' → 'יציבות האמונה' or 'אי אפשר לו ליפול' [eitza, reference 255]. No bechina edges are warranted based on the source text."
+  }
+}

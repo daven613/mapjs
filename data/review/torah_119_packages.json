@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "source": "Torah #119 — Likutay Moharan Volume 1",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===119 AND type==='bechina'. Result: 1 bechina edge, yielding 1 connected component of 2 nodes: {שבת, דעת}. Torah #119 is a micro-teaching — one of the shortest in Likutay Moharan. It makes a single conceptual equation (שבת = דעת) and then draws all practical conclusions as eitza chains. Because the entire bechina graph is a single 2-node component, and because the eitza nodes (רחמנות, שיהיה לו רחמים על אחרים, מרחמין עליו) have no bechina edges in this Torah, the result is one minimal package plus proposed additions from gap analysis. The evil counterpart cluster (כַּעַס / כְּסִילוּת) is present in the source text and proposed as additions below."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 119,
+      "label": "שַׁבָּת וְדַעַת",
+      "label_en": "Shabbat and Divine Knowledge",
+      "polarity": "good",
+      "reason": "The single bechina in Torah #119 is the equation: שַׁבָּת הוּא בְּחִינוֹת דַּעַת. Shabbat is the aspect/dimension of daas (divine knowledge/intellect) — on ordinary weekdays the people 'wander and gather in foolishness' (שָׁטוּ הָעָם וְלָקְטוּ — which the Zohar reads as שְׁטוּתָא, folly), but on Shabbat daas flows to every person. These two nodes are structurally identical: Shabbat is the temporal vessel of daas, and daas is the spiritual content of Shabbat. Together they form the single bechina cluster of this Torah, which is the foundation from which the eitza chain of compassion is derived.",
+      "dominant_node": "שבת",
+      "nodes": [
+        "שבת",
+        "דעת"
+      ],
+      "node_degrees": {
+        "שבת": 1,
+        "דעת": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "note_on_merges": "Only 1 connected component exists — the {שבת, דעת} pair. No merges were needed. The remaining concepts in Torah #119 (רחמנות, שיהיה לו רחמים על אחרים, מרחמין עליו, כַּעַס, כְּסִילוּת) appear only in eitza edges or are absent from the dataset entirely. They are addressed in the additions and new_packages files.",
+    "eitza_edges_in_torah_for_reference": [
+      {
+        "id": 756,
+        "edge": "בשבת → דעת",
+        "note": "Eitza: in-Shabbat context flows daas to each person. The proof text is identical to the bechina edge 758 but coded as eitza — this may reflect the directional aspect (Shabbat as temporal cause of daas-flow) distinct from the ontological identity (Shabbat IS daas). Both edges are legitimate: one says what Shabbat is, the other says what Shabbat does."
+      },
+      {
+        "id": 1950,
+        "edge": "שהוא ירחם על אחר → מרחמין עליו",
+        "note": "Eitza: showing mercy on others causes Heaven to show mercy on oneself (Shabbat 151b)."
+      },
+      {
+        "id": 2730,
+        "edge": "שיהיה לו רחמים על אחרים → רחמים",
+        "note": "Eitza: having compassion for others → receiving compassion from Heaven."
+      },
+      {
+        "id": 2739,
+        "edge": "דעת → רחמנות",
+        "note": "Eitza: daas causes/enables compassion — 'whoever has daas has compassion'."
+      },
+      {
+        "id": 2863,
+        "edge": "דעת → שיהיה לו רחמים על אחרים",
+        "note": "Eitza: daas produces the capacity to have mercy on others."
+      }
+    ]
+  }
+}

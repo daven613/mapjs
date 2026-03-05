@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "source": "Torah #103 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_103_packages.json, all reference===103 edges from torahData.js (result: zero edges found), and the full source text torah_103.txt. Since the dataset has no edges for Torah #103, the entire gap analysis was performed from the source text alone. Every bechina-type equivalence in the text was catalogued: identity declarations using 'הֵם', 'אֵלּוּ' (these are), Onkelos targum equations (the classic rabbinic bechina-declaration), and explicit mirrored opposites. The 'כְּאִלּוּ' (as if) simile in Sanhedrin 91b was evaluated — the Rebbe drops the simile and treats it as identity in his application (line 4), so גּוֹזֵל נַחֲלַת אָבוֹת was admitted as a bechina-equivalent node."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "הֲלָכוֹת וְנַחֲלַת אָבוֹת",
+      "node_id": "הֲלָכוֹת",
+      "node_text": "הֲלָכוֹת",
+      "polarity": "good",
+      "reason": "The source text (line 4) explicitly states: 'הֲלָכוֹת הֵם נַחֲלַת אָבוֹת' — halakhot ARE the ancestral inheritance. This is a direct identity-declaration using 'הֵם' (they are), the bechina-equivalence marker. Not in dataset. Proposed as dominant node of Package 1.",
+      "source_quote": "הֲלָכוֹת הֵם נַחֲלַת אָבוֹת כַּנַּ\"ל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "הֲלָכוֹת וְנַחֲלַת אָבוֹת",
+      "node_id": "נַחֲלַת אָבוֹת",
+      "node_text": "נַחֲלַת אָבוֹת",
+      "polarity": "good",
+      "reason": "The ancestral inheritance is the explicit bechina-partner of הֲלָכוֹת. The Gemara (Sanhedrin 91b) cited in line 2 establishes the equation via the verse 'תּוֹרָה צִוָּה לָנוּ מֹשֶׁה מוֹרָשָׁה' — Torah = morasha (inheritance). The Rebbe reiterates this identity in line 4. Not in dataset.",
+      "source_quote": "כְּאִלּוּ גּוֹזְלוֹ מִנַּחֲלַת אָבוֹת, שֶׁנֶּאֱמַר: תּוֹרָה צִוָּה לָנוּ מֹשֶׁה מוֹרָשָׁה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "הֲלָכוֹת וְנַחֲלַת אָבוֹת",
+      "node_id": "מַצְדִּיקֵי הָרַבִּים",
+      "node_text": "מַצְדִּיקֵי הָרַבִּים",
+      "polarity": "good",
+      "reason": "Bava Batra 8b (cited in line 5) declares: 'מַצְדִּיקֵי הָרַבִּים כַּכּוֹכָבִים — אֵלּוּ מְלַמְּדֵי תִּינוֹקוֹת'. The 'אֵלּוּ' is the classic bechina-declaration: the teachers who make many righteous ARE the children's teachers. The phrase מַצְדִּיקֵי הָרַבִּים is the key connector between the halakhot/inheritance cluster (good teaching transmits the inheritance that makes Israel righteous) and the evil mirror (מְחַיְּבֵי הָרַבִּים = those who corrupt many). Not in dataset.",
+      "source_quote": "וּמַצְדִּיקֵי הָרַבִּים כַּכּוֹכָבִים – אֵלּוּ מְלַמְּדֵי תִּינוֹקוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "הֲלָכוֹת וְנַחֲלַת אָבוֹת",
+      "node_id": "מְלַמְּדֵי תִּינוֹקוֹת",
+      "node_text": "מְלַמְּדֵי תִּינוֹקוֹת",
+      "polarity": "good",
+      "reason": "Directly declared as the referent of מַצְדִּיקֵי הָרַבִּים כַּכּוֹכָבִים. Children's teachers are the paradigmatic example of the righteous Torah-transmitter: they give the fundamental halakhot/Torah to the next generation, fulfilling the morasha obligation. Their nature is identical to the stars: giving light to many, sustaining Israel's spiritual inheritance. Not in dataset.",
+      "source_quote": "אֵלּוּ מְלַמְּדֵי תִּינוֹקוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "הֲלָכוֹת וְנַחֲלַת אָבוֹת",
+      "node_id": "כַּכּוֹכָבִים",
+      "node_text": "כַּכּוֹכָבִים",
+      "polarity": "good",
+      "reason": "The stars are the symbolic bechina of the righteous teacher in this Torah. The Daniel verse (12:3) — 'וּמַצְדִּיקֵי הָרַבִּים כַּכּוֹכָבִים' — is a bechina-equation: those who righteous-the-many ARE like stars. The Rebbe uses this to characterize the essential nature of the righteous teacher: giving light to many in the darkness, being numerous, and enduring. The star-symbol captures the shared nature of halakhot-transmission: illuminating many from the same source. Not in dataset.",
+      "source_quote": "מַצְדִּיקֵי הָרַבִּים כַּכּוֹכָבִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּרְבּוּת אֲנָשִׁים חַטָּאִים",
+      "node_id": "מְחַיְּבֵי הָרַבִּים",
+      "node_text": "מְחַיְּבֵי הָרַבִּים",
+      "polarity": "evil",
+      "reason": "The explicit evil mirror of מַצְדִּיקֵי הָרַבִּים. Line 6 states: 'מִסְּתָמָא גַּם רַבָּם אֵינָם מַצְדִּיקֵי הָרַבִּים, אֶלָּא מְחַיְּבֵי הָרַבִּים'. The Rebbe uses the same grammatical structure — the making-of-many pattern — but inverts the verdict: where the good teacher makes many righteous, the corrupt teacher makes many guilty (mechayyvey). This is not cause-and-effect; it is the shared nature of the corrupt teacher from the perspective of his effect on his students. Not in dataset.",
+      "source_quote": "מִסְּתָמָא גַּם רַבָּם אֵינָם מַצְדִּיקֵי הָרַבִּים, אֶלָּא מְחַיְּבֵי הָרַבִּים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּרְבּוּת אֲנָשִׁים חַטָּאִים",
+      "node_id": "מְנִיאֵי לֵב בְּנֵי יִשְׂרָאֵל",
+      "node_text": "מְנִיאֵי לֵב בְּנֵי יִשְׂרָאֵל",
+      "polarity": "evil",
+      "reason": "Lines 3 and 6 both use the phrase 'מְנִיאִין לֵב בְּנֵי יִשְׂרָאֵל מִנַּחֲלַת אֲבוֹתָם' — dissuading the hearts of Israel from their ancestral inheritance. This is the behavioral description of the מְחַיְּבֵי הָרַבִּים: their essential nature is to turn Israel away from the Torah-inheritance. It is the evil mirror of the good teacher's nature (giving the inheritance). Not in dataset.",
+      "source_quote": "שֶׁמְּנִיאִין לֵב בְּנֵי יִשְׂרָאֵל מִנַּחֲלַת אֲבוֹתָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּרְבּוּת אֲנָשִׁים חַטָּאִים",
+      "node_id": "תַּרְבּוּת אֲנָשִׁים חַטָּאִים",
+      "node_text": "תַּרְבּוּת אֲנָשִׁים חַטָּאִים",
+      "polarity": "evil",
+      "reason": "Moses's condemnation of the sons of Reuven and Gad (Numbers 32:14) which the Rebbe applies to the corrupt teachers of his generation. The phrase is used as the bechina-label for the entire evil-teacher archetype — it is the name given to the phenomenon. Onkelos translates it as תַּלְמִידֵי גֻּבְרַיָּא חַיָּבַיָּא (forming a bechina-pair). Not in dataset.",
+      "source_quote": "קָרָא לָהֶם: תַּרְבּוּת אֲנָשִׁים חַטָּאִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּרְבּוּת אֲנָשִׁים חַטָּאִים",
+      "node_id": "תַּלְמִידֵי גֻּבְרַיָּא חַיָּבַיָּא",
+      "node_text": "תַּלְמִידֵי גֻּבְרַיָּא חַיָּבַיָּא",
+      "polarity": "evil",
+      "reason": "Onkelos's Aramaic translation of תַּרְבּוּת אֲנָשִׁים חַטָּאִים. In rabbinic literature, Onkelos translations function as bechina-declarations — they reveal the essential meaning (the 'what it IS') behind the Hebrew word. 'תַּלְמִידֵי גֻּבְרַיָּא חַיָּבַיָּא' = disciples of wicked men — makes explicit that the evil is transmitted through the teacher-student relationship: the corrupt teacher creates corrupt disciples who perpetuate the theft of Torah. Not in dataset.",
+      "source_quote": "וְתִרְגֵּם אוּנְקְלוֹס: תַּלְמִידֵי גֻּבְרַיָּא חַיָּבַיָּא",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תַּרְבּוּת אֲנָשִׁים חַטָּאִים",
+      "node_id": "גּוֹזֵל נַחֲלַת אָבוֹת",
+      "node_text": "גּוֹזֵל נַחֲלַת אָבוֹת",
+      "polarity": "evil",
+      "reason": "The Gemara's verdict on the teacher who withholds halakhot: 'כְּאִלּוּ גּוֹזְלוֹ מִנַּחֲלַת אָבוֹת' (as if he robbed him of the ancestral inheritance). The Rebbe applies this in line 4 without the 'כְּאִלּוּ' hedge, treating it as a real identity: the withholding teacher IS a robber of inheritance. This is the essential nature of Package 2 from the victim's perspective: the corrupt teacher's nature IS that of a thief who takes from Israel what is rightfully theirs. It is the direct bechina-pair of נַחֲלַת אָבוֹת in Package 1: one gives the inheritance, the other steals it. Not in dataset.",
+      "source_quote": "שֶׁרַבְּכֶם גָּזַל מִכֶּם הֲלָכוֹת, וְהֲלָכוֹת הֵם נַחֲלַת אָבוֹת כַּנַּ\"ל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_103_edges_in_dataset": 0,
+    "total_reference_103_bechina_edges": 0,
+    "total_reference_103_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["הֲלָכוֹת", "נַחֲלַת אָבוֹת", "מַצְדִּיקֵי הָרַבִּים", "מְלַמְּדֵי תִּינוֹקוֹת", "כַּכּוֹכָבִים"],
+      "package_2": ["מְחַיְּבֵי הָרַבִּים", "מְנִיאֵי לֵב בְּנֵי יִשְׂרָאֵל", "תַּרְבּוּת אֲנָשִׁים חַטָּאִים", "תַּלְמִידֵי גֻּבְרַיָּא חַיָּבַיָּא", "גּוֹזֵל נַחֲלַת אָבוֹת"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "הֲלָכוֹת", "נַחֲלַת אָבוֹת", "מַצְדִּיקֵי הָרַבִּים", "מְלַמְּדֵי תִּינוֹקוֹת", "כַּכּוֹכָבִים",
+      "מְחַיְּבֵי הָרַבִּים", "מְנִיאֵי לֵב בְּנֵי יִשְׂרָאֵל", "תַּרְבּוּת אֲנָשִׁים חַטָּאִים",
+      "תַּלְמִידֵי גֻּבְרַיָּא חַיָּבַיָּא", "גּוֹזֵל נַחֲלַת אָבוֹת"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "מֹשֶׁה (Moses)",
+        "reason": "Moses appears in the narrative as the observer who calls the sons of Reuven and Gad by the condemnation. He is not established as a bechina-equivalent of any other concept in this Torah. He is a narrative actor, not a conceptual node. Excluded."
+      },
+      {
+        "concept": "בְּנֵי רְאוּבֵן וּבְנֵי גָד (sons of Reuven and Gad)",
+        "reason": "These are cited as the historical antecedent (the ones Moses condemned). They are not declared as bechina-equivalents of any concept. They are examples of the phenomenon of מְנִיאֵי לֵב בְּנֵי יִשְׂרָאֵל, not separate conceptual nodes. The teaching applies the biblical example to the Rebbe's contemporaries — the contemporary corrupt teachers carry the conceptual nodes; Reuven/Gad are the proof-case. Excluded."
+      },
+      {
+        "concept": "מוֹרָשָׁה (inheritance — from the verse 'Torah tziva lanu Moshe morasha')",
+        "reason": "The word מוֹרָשָׁה appears in the verse citation to prove that Torah = inheritance. It is a proof-text citation for the bechina הֲלָכוֹת = נַחֲלַת אָבוֹת. 'מוֹרָשָׁה' and 'נַחֲלַת אָבוֹת' name the same thing; נַחֲלַת אָבוֹת is the fuller node-label already captured. Excluded as a sub-variant of נַחֲלַת אָבוֹת."
+      },
+      {
+        "concept": "דָּנִיֵּאל (Daniel — source of the 'matzdikey harabim kakochavim' verse)",
+        "reason": "Daniel 12:3 is cited as the proof text. Daniel as a person is not established as a bechina node. Excluded."
+      }
+    ],
+    "structural_observation": "Torah #103 is a pure halakhic-aggadic teaching with no kabbalistic or sefirotic content. Its bechina language is relational/ethical rather than cosmic. The good/evil mirror structure is fully explicit in the text: the Rebbe deliberately contrasts מַצְדִּיקֵי הָרַבִּים (Package 1) with מְחַיְּבֵי הָרַבִּים (Package 2), and נַחֲלַת אָבוֹת (Package 1, given) with גּוֹזֵל נַחֲלַת אָבוֹת (Package 2, stolen). This binary is the entire structure of the Torah."
+  }
+}

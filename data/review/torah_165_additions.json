@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "source": "Torah #165 (Likutay Moharan Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Torah #165 has ZERO edges in torahData.js — reference 165 does not appear in the dataset at all. All bechina-language was identified directly from the source text torah_165.txt. The methodology: (1) read the full 5-line text; (2) identify every instance of bechina-equivalence markers — the 'הַיְנוּ' formula, the dash-plus-copular-restatement construction, and direct appositional equations; (3) for each identified bechina, determine the two nodes being equated; (4) check whether either node already appears in the dataset (it cannot, since there are no reference-165 edges); (5) assign each new node to its package. Causal statements ('כִּי' introducing reason-clauses, 'עֲדַיִן... מִתְנַהֵג' describing ongoing conduct) were excluded as eitza. The opening verse (Leviticus 19:18) is the prooftext anchor; the three word-level reinterpretations in lines 3-5 are the bechina declarations. Narrative-level descriptions ('שֶׁתְּקַבֵּל בְּאַהֲבָה') are treated as practical imperatives (eitza), not bechina equations."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "הָרָע וְהַיִּסּוּרִין",
+      "node_id": "הרעות והיסורין",
+      "node_text": "הָרָעוֹת וְהַיִּסּוּרִין הַבָּאִים עָלֶיךָ",
+      "polarity": "evil",
+      "reason": "This is the fully articulated description of the afflictions domain, appearing in both line 2 (opening statement: 'שֶׁתְּקַבֵּל בְּאַהֲבָה כָּל הָרָעוֹת וְהַיִּסּוּרִין הַבָּאִים עָלֶיךָ') and line 3 (hermeneutical bechina: 'הַיְנוּ הָרָעוֹת וְהַיִּסּוּרִין הַבָּאִים עָלֶיךָ'). In line 3, the 'הַיְנוּ' marker explicitly equates 'הָרָע שֶׁבָּא לְךָ' with 'הָרָעוֹת וְהַיִּסּוּרִין הַבָּאִים עָלֶיךָ' — these are bechina-equivalent descriptions of the same domain. The dominant node of Package 1.",
+      "source_quote": "הַיְנוּ הָרָעוֹת וְהַיִּסּוּרִין הַבָּאִים עָלֶיךָ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "הרע שבא לך",
+        "node2_id": "הרעות והיסורין",
+        "type": "bechina",
+        "reference": 165
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "הָרָע וְהַיִּסּוּרִין",
+      "node_id": "הרע שבא לך",
+      "node_text": "הָרָע שֶׁבָּא לְךָ",
+      "polarity": "evil",
+      "reason": "In line 3, the Rebbe reinterprets the verse-word 'רֵעֲךָ' as 'הָרָע שֶׁבָּא לְךָ': 'וְאָהַבְתָּ לְרֵעֲךָ – שֶׁתֶּאֱהוֹב הָרָע שֶׁבָּא לְךָ.' This is a bechina-equivalence declaration: the verse-word 'רֵעֲךָ' IS 'הָרָע שֶׁבָּא לְךָ' in its true meaning. 'הָרָע שֶׁבָּא לְךָ' is then itself immediately equated via 'הַיְנוּ' with 'הָרָעוֹת וְהַיִּסּוּרִין הַבָּאִים עָלֶיךָ', making it the connecting intermediary node in the bechina chain: רֵעֲךָ ↔ הָרָע שֶׁבָּא לְךָ ↔ הָרָעוֹת וְהַיִּסּוּרִין. The node also appears in line 1 ('שֶׁתְּקַבֵּל בְּאַהֲבָה כָּל הָרָעוֹת') as the object of the teaching's instruction.",
+      "source_quote": "שֶׁתֶּאֱהוֹב הָרָע שֶׁבָּא לְךָ, הַיְנוּ הָרָעוֹת וְהַיִּסּוּרִין הַבָּאִים עָלֶיךָ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "רעך",
+        "node2_id": "הרע שבא לך",
+        "type": "bechina",
+        "reference": 165
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "הָרָע וְהַיִּסּוּרִין",
+      "node_id": "רעך",
+      "node_text": "רֵעֲךָ",
+      "polarity": "evil",
+      "reason": "The verse-word 'רֵעֲךָ' (your neighbor/friend, from Leviticus 19:18) is the grammatical anchor of the teaching's first bechina. The Rebbe declares in line 3: 'וְאָהַבְתָּ לְרֵעֲךָ – שֶׁתֶּאֱהוֹב הָרָע שֶׁבָּא לְךָ' — the verse-word 'רֵעֲךָ' IS 'הָרָע שֶׁבָּא לְךָ' (the evil that comes to you). The reinterpretation ('שֶׁתֶּאֱהוֹב הָרָע' as the meaning of 'וְאָהַבְתָּ לְרֵעֲךָ') is the classic Likutey Moharan bechina-by-reinterpretation: the word IS re-read as naming the concept. In this teaching, 'רֵעֲךָ' occupies the evil pole — it is redefined to mean suffering/affliction, not the neighbor-friend of the conventional reading. The polarity evil reflects what this word means within the bechina of Torah #165, not its conventional meaning.",
+      "source_quote": "וְאָהַבְתָּ לְרֵעֲךָ – שֶׁתֶּאֱהוֹב הָרָע שֶׁבָּא לְךָ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "רעך",
+        "node2_id": "הרע שבא לך",
+        "type": "bechina",
+        "reference": 165
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "כָּמוֹךָ וּמַעֲשֶׂיךָ",
+      "node_id": "לפי מעשיך",
+      "node_text": "לְפִי מַעֲשֶׂיךָ",
+      "polarity": "neutral",
+      "reason": "In line 4, the Rebbe uses the 'הַיְנוּ' marker to equate 'כְּמוֹ שֶׁאַתָּה הוּא' with 'לְפִי מַעֲשֶׂיךָ': 'כִּי כָּמוֹךָ – כְּמוֹ שֶׁאַתָּה הוּא, הַיְנוּ לְפִי מַעֲשֶׂיךָ.' This is the fullest, most substantive articulation of the 'כָּמוֹךָ' domain: 'according to your deeds' is the concrete content of what 'as you are' means. The node appears again in lines 2 and 5, confirming it as the teaching's operative concept for the human-measure dimension. Dominant node of Package 2.",
+      "source_quote": "כְּמוֹ שֶׁאַתָּה הוּא, הַיְנוּ לְפִי מַעֲשֶׂיךָ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "כמו שאתה הוא",
+        "node2_id": "לפי מעשיך",
+        "type": "bechina",
+        "reference": 165
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "כָּמוֹךָ וּמַעֲשֶׂיךָ",
+      "node_id": "כמו שאתה הוא",
+      "node_text": "כְּמוֹ שֶׁאַתָּה הוּא",
+      "polarity": "neutral",
+      "reason": "In line 4, the dash construction 'כָּמוֹךָ – כְּמוֹ שֶׁאַתָּה הוּא' equates the verse-word 'כָּמוֹךָ' with its reinterpretation 'כְּמוֹ שֶׁאַתָּה הוּא' (as you truly are / as you actually stand). This is the intermediary bechina node: it receives the equation from 'כָּמוֹךָ' above and passes it to 'לְפִי מַעֲשֶׂיךָ' below via the subsequent 'הַיְנוּ' marker. The phrase 'כְּמוֹ שֶׁאַתָּה הוּא' describes the essential nature of the person — their true ontological state, defined by their deeds.",
+      "source_quote": "כִּי כָּמוֹךָ – כְּמוֹ שֶׁאַתָּה הוּא, הַיְנוּ לְפִי מַעֲשֶׂיךָ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "כמוך",
+        "node2_id": "כמו שאתה הוא",
+        "type": "bechina",
+        "reference": 165
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "כָּמוֹךָ וּמַעֲשֶׂיךָ",
+      "node_id": "כמוך",
+      "node_text": "כָּמוֹךָ",
+      "polarity": "neutral",
+      "reason": "The verse-word 'כָּמוֹךָ' (as yourself, Leviticus 19:18) is the grammatical anchor of the teaching's second bechina chain. In line 4, the Rebbe reinterprets this word: 'כִּי כָּמוֹךָ – כְּמוֹ שֶׁאַתָּה הוּא, הַיְנוּ לְפִי מַעֲשֶׂיךָ.' The verse-word IS redefined as meaning 'as you truly are, according to your deeds.' The polarity is neutral: this is a structural-measure concept, neither holy nor profane — it is the divine justice calculus that determines the proportion between deeds and deserved consequences.",
+      "source_quote": "כִּי כָּמוֹךָ – כְּמוֹ שֶׁאַתָּה הוּא",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "כמוך",
+        "node2_id": "כמו שאתה הוא",
+        "type": "bechina",
+        "reference": 165
+      }
+    },
+    {
+      "package_id": 3,
+      "package_label": "אֲנִי ה' — בַּעַל הָרַחֲמִים",
+      "node_id": "בעל הרחמים",
+      "node_text": "בַּעַל הָרַחֲמִים",
+      "polarity": "good",
+      "reason": "In line 5, the Rebbe reinterprets the verse-phrase 'אֲנִי ה'' with the declaration: 'אֲנִי ה' – בַּעַל הָרַחֲמִים.' The dash construction equates 'אֲנִי ה'' with its new meaning: I, God, AM the Master of Mercy. 'בַּעַל הָרַחֲמִים' is the substantive theological concept being declared — the divine quality of mercy-mastery. This is the dominant node of Package 3. The entire teaching's comfort-message rests on this bechina: because God IS essentially mercy (IS the Master of Mercy), even the afflictions people receive are expressions of mercy (less than deserved). The concept 'רַחֲמִים' (mercy) also appears in line 2 ('מִתְנַהֵג עִמְּךָ בְּרַחֲמִים') and line 5 ('עֲדַיִן אֲנִי מִתְנַהֵג עִמְּךָ בְּרַחֲמִים'), confirming that mercy-governance is the teaching's positive telos.",
+      "source_quote": "אֲנִי ה' – בַּעַל הָרַחֲמִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "אני ה'",
+        "node2_id": "בעל הרחמים",
+        "type": "bechina",
+        "reference": 165
+      }
+    },
+    {
+      "package_id": 3,
+      "package_label": "אֲנִי ה' — בַּעַל הָרַחֲמִים",
+      "node_id": "אני ה'",
+      "node_text": "אֲנִי ה'",
+      "polarity": "good",
+      "reason": "The verse-phrase 'אֲנִי ה'' (I am God, Leviticus 19:18) is the grammatical anchor of the teaching's third bechina. In line 5, the Rebbe's reinterpretation declares it IS 'בַּעַל הָרַחֲמִים' — God here functions not merely as a divine signature but as the identifying declaration of God's essential quality in this context: I who speak this verse AM the Master of Mercy. The polarity is good: the divine name in this context anchors the positive, merciful dimension of divine governance. The name 'ה'' (the Tetragrammaton) is in Kabbalistic tradition the name associated with mercy (rachamim), which aligns exactly with the teaching's identification of this name with 'בַּעַל הָרַחֲמִים'.",
+      "source_quote": "אֲנִי ה' – בַּעַל הָרַחֲמִים, עֲדַיִן אֲנִי מִתְנַהֵג עִמְּךָ בְּרַחֲמִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "אני ה'",
+        "node2_id": "בעל הרחמים",
+        "type": "bechina",
+        "reference": 165
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_165_edges": 0,
+    "total_reference_165_bechina_edges": 0,
+    "total_reference_165_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["הרעות והיסורין", "הרע שבא לך", "רעך"],
+      "package_2": ["לפי מעשיך", "כמו שאתה הוא", "כמוך"],
+      "package_3": ["בעל הרחמים", "אני ה'"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "proposed_edges_summary": [
+      {
+        "edge": "רֵעֲךָ ↔ הָרָע שֶׁבָּא לְךָ",
+        "marker": "dash-reinterpretation ('שֶׁתֶּאֱהוֹב הָרָע שֶׁבָּא לְךָ' as gloss on 'וְאָהַבְתָּ לְרֵעֲךָ')",
+        "source_line": 3
+      },
+      {
+        "edge": "הָרָע שֶׁבָּא לְךָ ↔ הָרָעוֹת וְהַיִּסּוּרִין",
+        "marker": "הַיְנוּ",
+        "source_line": 3
+      },
+      {
+        "edge": "כָּמוֹךָ ↔ כְּמוֹ שֶׁאַתָּה הוּא",
+        "marker": "dash-reinterpretation ('כְּמוֹ שֶׁאַתָּה הוּא' as gloss on 'כָּמוֹךָ')",
+        "source_line": 4
+      },
+      {
+        "edge": "כְּמוֹ שֶׁאַתָּה הוּא ↔ לְפִי מַעֲשֶׂיךָ",
+        "marker": "הַיְנוּ",
+        "source_line": 4
+      },
+      {
+        "edge": "אֲנִי ה' ↔ בַּעַל הָרַחֲמִים",
+        "marker": "dash-reinterpretation ('בַּעַל הָרַחֲמִים' as gloss on 'אֲנִי ה'')",
+        "source_line": 5
+      }
+    ],
+    "concepts_in_source_text_not_in_dataset": [
+      "הרעות והיסורין — the evils and afflictions; equated with הרע שבא לך via הַיְנוּ in line 3; not present as reference-165 node",
+      "הרע שבא לך — the evil that comes to you; equated with רֵעֲךָ by reinterpretation and with הרעות והיסורין via הַיְנוּ; not present as reference-165 node",
+      "רעך — the verse-word 'your neighbor'; reinterpreted as הרע שבא לך; not present as reference-165 node",
+      "לפי מעשיך — according to your deeds; equated with כמו שאתה הוא via הַיְנוּ in line 4; not present as reference-165 node",
+      "כמו שאתה הוא — as you truly are; equated with כָּמוֹךָ by dash-reinterpretation and with לפי מעשיך via הַיְנוּ; not present as reference-165 node",
+      "כמוך — the verse-word 'as yourself'; reinterpreted as כמו שאתה הוא; not present as reference-165 node",
+      "בעל הרחמים — the Master of Mercy; equated with אני ה' by dash-reinterpretation; not present as reference-165 node",
+      "אני ה' — the divine name as spoken in the verse; reinterpreted as בעל הרחמים; not present as reference-165 node"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "קַבָּלַת יִסּוּרִין בְּאַהֲבָה (acceptance of afflictions with love)",
+        "reason": "This is the teaching's central practical instruction — 'שֶׁתְּקַבֵּל בְּאַהֲבָה כָּל הָרָעוֹת וְהַיִּסּוּרִין הַבָּאִים עָלֶיךָ' (line 2). The phrase 'שֶׁתְּקַבֵּל בְּאַהֲבָה' describes what one SHOULD DO with the afflictions, not what the afflictions ARE. This is eitza language — the imperative form ('תְּקַבֵּל') is the practical directive that flows from the teaching. There is no 'הַיְנוּ' or dash-reinterpretation declaring that קַבָּלַת יִסּוּרִין IS a bechina of something. Excluded as eitza."
+      },
+      {
+        "concept": "אַהֲבָה (love)",
+        "reason": "The word 'love' appears as a verb ('וְאָהַבְתָּ', 'שֶׁתֶּאֱהוֹב') in the verse and the teaching's imperative, but it is never declared to BE a bechina of anything. The teaching does not say 'love IS [something]'; it says 'love the evil.' The word 'אַהֲבָה' is the modality of the instruction, not a concept receiving bechina-identification. Excluded."
+      },
+      {
+        "concept": "מִתְנַהֵג בְּרַחֲמִים (treating with mercy / governing with mercy)",
+        "reason": "In lines 2 and 5, the phrase 'מִתְנַהֵג עִמְּךָ בְּרַחֲמִים' describes what God DOES — 'still treats you with mercy.' This is a description of divine conduct (an eitza statement: because God is merciful, God therefore acts mercifully toward you). It is not a bechina declaration that 'מִתְנַהֵג בְּרַחֲמִים' IS a bechina of something else. The conduct-description is the consequence of the bechina (God IS the Master of Mercy), not itself a bechina. Excluded as eitza."
+      },
+      {
+        "concept": "יוֹתֵר וְיוֹתֵר / הָיָה מַגִּיעַ לְךָ יוֹתֵר (you deserved even more / what you truly deserved)",
+        "reason": "In line 2, the phrase 'כִּי הָיָה מַגִּיעַ לְךָ יוֹתֵר וְיוֹתֵר, חַס וְשָׁלוֹם, לְפִי מַעֲשֶׂיךָ' is the explanatory reasoning that grounds the instruction to accept afflictions. 'What you deserved was more' is the causal-argumentative premise (כִּי = because), not a bechina equation. No 'הַיְנוּ' or reinterpretation marker appears. This concept belongs to the eitza dimension of the teaching. Excluded."
+      },
+      {
+        "concept": "חַס וְשָׁלוֹם (God forbid)",
+        "reason": "This is a formulaic interjection in lines 2 and 3, not a conceptual node. Excluded."
+      },
+      {
+        "concept": "רַחֲמִים (mercy) as a standalone node",
+        "reason": "The concept 'mercy' appears in lines 2 and 5 as part of the phrase 'מִתְנַהֵג בְּרַחֲמִים' and is the content of 'בַּעַל הָרַחֲמִים.' However, 'רַחֲמִים' is not independently declared a bechina of anything separate from 'בַּעַל הָרַחֲמִים.' The bechina declaration identifies God (אֲנִי ה') with the MASTER of mercy (בַּעַל הָרַחֲמִים), making 'בַּעַל הָרַחֲמִים' the relevant node. 'רַחֲמִים' as a standalone concept receives no separate bechina treatment in this teaching. Excluded as subsumed within the Package 3 dominant node."
+      }
+    ]
+  }
+}

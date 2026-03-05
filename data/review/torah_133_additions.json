@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "source": "Torah #133",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all reference===133 edges from torahData.js (result: one eitza edge, zero bechina edges), and the full source text torah_133.txt (13 lines). Scanned every sentence for explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, לְשׁוֹן used as identity declaration) and for implicit parallel-aspect equalities. Catalogued every concept mentioned in the text and classified its relationship type. Torah #133 is a pure mashal-and-nimshal teaching with no bechina declarations anywhere."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_133_edges": 1,
+    "total_reference_133_bechina_edges": 0,
+    "total_reference_133_eitza_edges": 1,
+    "nodes_accounted_for_in_packages": {},
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [],
+    "bechina_language_scan": {
+      "found": false,
+      "detail": "The word בְּחִינַת does not appear anywhere in the thirteen lines of Torah #133. No equivalent bechina-declaration language (הַיְנוּ used as identity, נִקְרָא, לְשׁוֹן as conceptual equivalence, כַּנַּ\"ל equating two concepts) was found to establish any parallel-aspect relationship between concepts. All inter-concept connections are expressed through the mashal/nimshal analogical structure (כְּמוֹ / כֵּן) and eitza (causal-sequential) reasoning."
+    },
+    "source_text_concept_inventory": [
+      {
+        "concept": "צַדִּיק / צַדִּיקִים (the Tzaddik / righteous ones)",
+        "role_in_text": "The nimshal subject — he who always shines, just as the sun shines",
+        "relationship_type": "mashal-subject",
+        "bechina_declared": false,
+        "note": "The Tzaddik is the nimshal (the reality behind the parable), compared to the sun. The comparison is analogical (כְּמוֹ הַשֶּׁמֶשׁ... כֵּן הַצַּדִּיק), not a bechina declaration. The Rebbe does not say 'the Tzaddik is a bechina of the sun'; he says 'the Tzaddik's path IS like the light of the sun (כְּאוֹר נֹגַהּ מַמָּשׁ)'. The word מַמָּשׁ (literally) intensifies the analogy but does not introduce a bechina relationship."
+      },
+      {
+        "concept": "שֶׁמֶשׁ (the sun)",
+        "role_in_text": "Primary mashal device — shines equally at dawn and midday; the earth intercepts its light from people below",
+        "relationship_type": "mashal-vehicle",
+        "bechina_declared": false,
+        "note": "The sun is the mashal (parable element). It is not declared to be a bechina of the Tzaddik or of Torah light. The teaching says אוֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ — the path of the righteous is LIKE the shining light. This is simile, not bechina identity."
+      },
+      {
+        "concept": "אוֹר (light) — the great light of Torah and Tzaddikim",
+        "role_in_text": "What people fail to perceive because the world blocks their view; the object of the teaching's aspiration",
+        "relationship_type": "eitza-target",
+        "bechina_declared": false,
+        "note": "The great light (אוֹר הַגָּדוֹל) of the Torah and Tzaddikim is consistently described as the goal of vision — it is what one sees when one removes the obstruction. No bechina equalities are attached to אוֹר in this text. In other Torahs, light/אוֹר may be a bechina of other concepts, but not in Torah #133."
+      },
+      {
+        "concept": "הָאָרֶץ (the earth)",
+        "role_in_text": "Mashal device — the earth intercepts the sunlight between the sun and people below; analogue of the world",
+        "relationship_type": "mashal-obstruction",
+        "bechina_declared": false,
+        "note": "The earth in the mashal is explicitly identified with the world (הָאָרֶץ, הַיְנוּ הָעוֹלָם הַזֶּה — line 3), but the הַיְנוּ here is a narrative gloss identifying the referent of the mashal, not a formal bechina declaration of the type used in the dataset. The full phrase 'הָאָרֶץ הַמַּפְסֶקֶת' (the intercepting earth) functions as the mashal element that is then equated to the world in a parenthetical clarification. The relationship between the Tzaddik and the sun, and between the earth and the world, is mashal-nimshal structure, not bechina structure."
+      },
+      {
+        "concept": "עוֹלָם הַזֶּה (this world)",
+        "role_in_text": "The nimshal obstruction — corresponds to the earth in the mashal; blocks people from seeing the Tzaddik's light",
+        "relationship_type": "mashal-nimshal-gloss",
+        "bechina_declared": false,
+        "note": "The gloss 'הַיְנוּ הָעוֹלָם הַזֶּה' in line 3 identifies this world as the nimshal of the earth. However, this is a narrative clarification of the mashal's referent (this is standard Chassidic homiletical technique), not a bechina declaration that the world and the earth share the same essential nature in the technical bechina sense. No new dataset edge should be proposed — the relationship is eitza-contextual, not bechina-parallel."
+      },
+      {
+        "concept": "מַטְבֵּעַ קְטַנָּה (small coin)",
+        "role_in_text": "Secondary mashal — a small coin held before the eyes blocks the view of a large mountain; used to answer the 'how can something small block something so much larger?' objection",
+        "relationship_type": "mashal-secondary",
+        "bechina_declared": false,
+        "note": "The coin is a mashal for the world. The Rebbe uses it to explain why a proportionally tiny thing (the world relative to Torah) can obstruct: because it is positioned directly before the eyes. This is pure eitza reasoning (proximity → obstruction) clothed in a second mashal. No bechina language is employed."
+      },
+      {
+        "concept": "הָר גָּדוֹל (great mountain)",
+        "role_in_text": "The object that the coin blocks from sight; stands for the Torah/Tzaddikim light in the secondary mashal",
+        "relationship_type": "mashal-secondary-object",
+        "bechina_declared": false,
+        "note": "The mountain is never given a bechina identity in the text. It is purely a mashal element illustrating how a small obstruction can block a vast object."
+      },
+      {
+        "concept": "הַגְבָּהַת עֵינַיִם / הַסְתַּכְּלוּת לְמַעְלָה (lifting one's eyes / looking upward)",
+        "role_in_text": "The practical action prescribed — turning the eyes away from the world and looking above it",
+        "relationship_type": "eitza-action",
+        "bechina_declared": false,
+        "note": "This is the prescribed eitza (practical instruction): הַסְתַּכֵּל לְמַעְלָה מִן הָעוֹלָם הַמַּפְסִיק — look above the blocking world. It is the action that produces the result (seeing the light). No bechina declaration."
+      },
+      {
+        "concept": "הֶעְבָּרָה בְּעָלְמָא (a mere passing-away / small effort)",
+        "role_in_text": "Characterization of how easy it is to remove the obstruction — it takes only a trifling effort to turn one's eyes away",
+        "relationship_type": "eitza-qualifier",
+        "bechina_declared": false,
+        "note": "The phrase בְּהַעֲבָרָה בְּעָלְמָא (in a mere passing effort) describes the ease of the spiritual action. It is a modifier, not a bechina of any concept. The corresponding eitza edge in the dataset (id 1295, ref 133) correctly captures this as a causal statement: 'with just a small effort to turn away the world' → 'one merits seeing the great light'."
+      },
+      {
+        "concept": "הַיָּד הַקְּטַנָּה (the small hand) — the Baal Shem Tov's formulation",
+        "role_in_text": "The BeSHT's version of the same mashal — the small hand stands before the eyes and prevents seeing the world's great lights",
+        "relationship_type": "mashal-parallel-citation",
+        "bechina_declared": false,
+        "note": "The Baal Shem Tov's teaching uses the small hand (יָד קְטַנָּה) rather than the coin, but the conceptual structure is identical. This is a cited authoritative parallel teaching, not a bechina declaration within Torah #133 itself."
+      },
+      {
+        "concept": "מְאוֹרוֹת וְסוֹדוֹת נִפְלָאִים (lights and wondrous secrets)",
+        "role_in_text": "In the BeSHT's version — the world is FULL of these; they are what the small hand prevents one from seeing",
+        "relationship_type": "mashal-object-cited",
+        "bechina_declared": false,
+        "note": "The BeSHT says the world is מָלֵא מְאוֹרוֹת וְסוֹדוֹת נִפְלָאִים וְנוֹרָאִים (full of wondrous and awesome lights and secrets). This is a descriptive superlative in a cited teaching, not a bechina node in Torah #133's own conceptual framework."
+      }
+    ],
+    "structural_conclusion": "Torah #133 is architecturally a pure mashal-and-nimshal teaching employing exclusively analogical and eitza reasoning. Its structure is: [mashal: sun/earth/coin] → [nimshal: Tzaddik's light / world as obstruction] → [eitza conclusion: remove the world from before your eyes and you will see the light]. The teaching's power lies in the vividness of its analogies and the accessibility of its practical advice, not in kabbalistic concept-mapping via bechina identities. This is consistent with its position as one of Rebbe Nachman's shorter, more popularly accessible teachings. The complete absence of bechina language is a genuine structural feature of this Torah, not a dataset gap. No additions to the dataset are warranted."
+  }
+}

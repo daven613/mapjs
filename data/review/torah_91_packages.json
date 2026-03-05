@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "source": "Torah #91 (Likutay Moharan vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===91 AND type==='bechina'. Result: 1 bechina edge, yielding 1 raw connected component with 2 nodes. Torah #91 is among the shortest teachings in Likutay Moharan — only 7 lines of text. The single bechina in the dataset is שמש ↔ חכמה ('the sun is a bechina of wisdom, as cited in Torah #1'). Rebbe Nachman explicitly cross-references Torah #1 for this identity. A second bechina is clearly present in the text (שמש = שכל, since 'עַד בֹּא הַשָּׁמֶשׁ — הַיְנוּ לְהַשֵּׂכֶל שֶׁל הַדָּבָר'), and a third is linguistically embedded in the verse interpretation (יָדָיו = אֱמוּנָה — 'his hands were faith'). These two implicit bechinas are treated as gap additions (see torah_91_additions.json). The single explicit bechina edge forms one package. No merges were required or possible. Torah #91's argument is a simple two-move arc: faith spreads through the body (including the hands) →eitza→ faith transforms into sekhel/chokhmah (the 'sun' that the verse says 'came')."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 91,
+      "label": "שֶׁמֶשׁ וְחָכְמָה — The Sun and Wisdom",
+      "label_en": "The Sun as the Dimension of Wisdom",
+      "polarity": "good",
+      "reason": "Torah #91 is built on a single structural identity: שמש (the sun) IS a bechina of חכמה (wisdom/sekhel). This is not a cause-and-effect statement — it is an ontological equation. The verse 'עַד בֹּא הַשָּׁמֶשׁ' (until the sun came) is interpreted to mean 'until the sekhel of the matter [was reached],' and the ground for this interpretation is precisely that 'the sun is a bechina of chokhmah, as cited above [in Torah #1].' The sun and wisdom share the same essential nature: they are both the illuminating, penetrating, crowning light that dispels darkness and reveals what was hidden. The sun-wisdom identity is the destination-point of the Torah's entire argument: sustained faith (אמונה) that spreads through all the limbs is what carries a person 'until the sun comes' — i.e., until the level of chokhmah is attained. Both שמש and חכמה represent the same ontological reality: the highest light-dimension of consciousness, the illuminating sekhel that is the 'sun' of spiritual life. Polarity is good: this is the domain of holy wisdom, divine light, and intellectual attainment — the positive telos of the teaching.",
+      "dominant_node": "חכמה",
+      "nodes": [
+        "שמש",
+        "חכמה"
+      ],
+      "node_degrees": {
+        "שמש": 1,
+        "חכמה": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1
+  }
+}

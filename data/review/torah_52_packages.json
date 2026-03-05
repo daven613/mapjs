@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "source": "Torah #52",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "CRITICAL FINDING: Torah #52 has zero bechina edges in the current dataset — all 8 existing edges with reference===52 are of type 'eitza'. There is therefore no existing bechina graph to run connected-components on. All packages are constructed entirely from the gap analysis of the source text (torah_52.txt), which contains rich bechina-language (בְּחִינַת, הַיְנוּ as definitional equations). This is a fully new-addition Torah. Steps 4 through 6 (adjacency graph, connected components, merge) are vacuous given zero bechina edges; all nodes are proposed as additions in torah_52_additions.json and organized into packages here based on the text's own internal bechina structure."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 52,
+      "label": "מְחֻיַּב הַמְּצִיאוּת וְאַחְדוּת הַשֵּׁם",
+      "label_en": "Necessary Existence and Divine Unity",
+      "polarity": "good",
+      "reason": "The central metaphysical cluster of Torah #52. The Rebbe's entire teaching revolves around the distinction between necessary existence (מחויב המציאות) — which belongs to God alone — and contingent existence (אפשרי המציאות) — which describes all created worlds. God's unity (אחדות השם) is explicitly equated with His necessary existence as one's 'shoresh' (root/source). Nishmat Yisrael's soul-root is in this Divine unity, and the purpose of human life is to return and be subsumed (להיכלל) within it. The concept of שרשו (his root) is used as a synonym for אחדות ה׳ = מחויב המציאות in lines 10 and 16, making it a bechina-equivalent. This package captures the ontological peak — the 'destination' that the entire teaching points toward.",
+      "dominant_node": "מחויב המציאות",
+      "nodes": [
+        "מחויב המציאות",
+        "אחדות השם יתברך",
+        "שרשו",
+        "השם יתברך לבד",
+        "נשמות ישראל"
+      ],
+      "node_degrees": {
+        "מחויב המציאות": 8,
+        "אחדות השם יתברך": 4,
+        "שרשו": 3,
+        "השם יתברך לבד": 2,
+        "נשמות ישראל": 2
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["שרשו", "אחדות השם יתברך"],
+          "reason": "Line 10 equates them explicitly: 'לִזְכּוֹת לָזֶה לְהִכָּלֵל בְּשָׁרְשׁוֹ, דְּהַיְנוּ לַחֲזֹר וּלְהִכָּלֵל בְּאַחְדוּת הַשֵּׁם יִתְבָּרַךְ, שֶׁהוּא מְחֻיַּב הַמְּצִיאוּת.' 'His root' is defined as divine unity which is necessary existence — these are three bechina labels for the same ultimate reality."
+        },
+        {
+          "merged_nodes": ["נשמות ישראל"],
+          "reason": "Nishmat Yisrael are the souls whose shoresh IS the Divine unity. Lines 4-5 establish that the world's quasi-mechuyav status derives from Israel's souls having been emanated (נֶאֶצְלוּ). Israel's function is to return and merge into the Divine root — they are the human side of the mechuyav-metziut structure. Their destiny is in this package."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 52,
+      "label": "בִּטּוּל וָאַיִן",
+      "label_en": "Self-Annihilation and Nothingness",
+      "polarity": "good",
+      "reason": "Bitul (self-annihilation) is the pivotal practical concept of the Torah — it is the state a person must achieve in order to be subsumed into divine unity. The Rebbe explicitly identifies bitul with the concept of 'mah' (nothingness/הַמָּה) in line 15: 'שֶׁיִּהְיֶה בִּבְחִינַת \"מָה\" בֶּאֱמֶת'. Line 24 defines bitul as 'מְבַטֵּל יֵשׁוּתוֹ וְנַעֲשֶׂה אַיִן' — to nullify one's yeshut and become ayin (nothing/ein). The phrase 'מְפַנֶּה לִבּוֹ לְבַטָּלָה' from the Mishna (line 20) is explicitly glossed as 'כְּדֵי לִזְכּוֹת לִבְחִינַת בִּטּוּל' — clearing the heart IS the bechina of bitul. These three — bitul, 'mah', and ayin — form one cluster: different names for the same state of radical self-nullification before God. Yeshut (egotistical selfhood) is what bitul overcomes, making it the natural conceptual antipode within this cluster.",
+      "dominant_node": "בטול",
+      "nodes": [
+        "בטול",
+        "\"מה\"",
+        "אין",
+        "מפנה לבו לבטלה",
+        "יֵשׁוּת"
+      ],
+      "node_degrees": {
+        "בטול": 6,
+        "\"מה\"": 2,
+        "אין": 2,
+        "מפנה לבו לבטלה": 2,
+        "יֵשׁוּת": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["\"מה\"", "אין"],
+          "reason": "Line 15 identifies bitul with 'מָה': 'שֶׁיִּהְיֶה בִּבְחִינַת \"מָה\" בֶּאֱמֶת, עַד שֶׁיִּזְכֶּה לִבְחִינַת בִּטּוּל בֶּאֱמֶת'. Line 24 states that bitul means 'מְבַטֵּל יֵשׁוּתוֹ וְנַעֲשֶׂה אַיִן'. Both 'mah' and 'ayin' are bechina-names for the same state of complete self-nullification before God — they are parallel aspects of the same essential nature as bitul."
+        },
+        {
+          "merged_nodes": ["מפנה לבו לבטלה"],
+          "reason": "The Mishna phrase 'מְפַנֶּה לִבּוֹ לְבַטָּלָה' is reread in line 20 as the bechina of bitul itself ('כְּדֵי לִזְכּוֹת לִבְחִינַת בִּטּוּל'). The clearing of heart is the human behavioral expression that IS bitul — it shares the same essential nature, not a cause-and-effect relationship to it."
+        },
+        {
+          "merged_nodes": ["יֵשׁוּת"],
+          "reason": "Yeshut (egotistical selfhood, physicality) is the explicit antonym that bitul overcomes. Line 24-25: 'בִּטּוּל כָּל הַיֵּשׁוּת'. Yeshut belongs in this cluster as the structural counter-pole that defines the domain — it is what bitul IS in opposition to. It is not a separate evil package because it is not autonomous evil; rather it is the precondition of bitul that the practice dissolves."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 52,
+      "label": "הִתְבּוֹדְדוּת, לַיְלָה וְדֶרֶךְ יְחִידִי",
+      "label_en": "Hitbodedut: Solitary Practice, Night, and the Solitary Path",
+      "polarity": "good",
+      "reason": "This cluster groups the three conditions for effective hitbodedut that R. Nachman derives from the Mishna. The Mishna's three elements are reread as bechina-equivalences of hitbodedut's requirements: (1) 'הַנֵּעוֹר בַּלַּיְלָה' (the one who is awake at night) = the TIME of hitbodedut, because at night the world is free of worldly distraction (line 25: 'הַיְנוּ: הַנֵּעוֹר בַּלַּיְלָה'); (2) 'וְהַמְהַלֵּךְ בַּדֶּרֶךְ יְחִידִי' (who walks the solitary path) = the PLACE of hitbodedut — a place where no people walk (line 25: 'הַיְנוּ: וְהַמְהַלֵּךְ בַּדֶּרֶךְ יְחִידִי'); and hitbodedut itself = speaking one's inner prayer (שִׂיחָה) between oneself and one's Maker (line 18: 'הַנֵּעוֹר בַּלַּיְלָה – כִּפְשׁוּטוֹ, דְּהַיְנוּ שֶׁהוּא נֵעוֹר בַּלַּיְלָה, וּמִתְבּוֹדֵד וּמְפָרֵשׁ שִׂיחָתוֹ'). These are all aspects of the same practice-domain — not cause-and-effect but different faces of the same spiritual act.",
+      "dominant_node": "התבודדות",
+      "nodes": [
+        "התבודדות",
+        "הנעור בלילה",
+        "והמהלך בדרך יחידי",
+        "מקום מיחד",
+        "זמן מיחד",
+        "שיחה בינו לבין קונו",
+        "לילה"
+      ],
+      "node_degrees": {
+        "התבודדות": 7,
+        "הנעור בלילה": 4,
+        "והמהלך בדרך יחידי": 4,
+        "שיחה בינו לבין קונו": 3,
+        "לילה": 3,
+        "מקום מיחד": 2,
+        "זמן מיחד": 2
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["הנעור בלילה", "לילה", "זמן מיחד"],
+          "reason": "Line 25 equates these explicitly: 'וְהַזְּמַן הוּא בַּלַּילָה, הַיְנוּ: הַנֵּעוֹר בַּלַּיְלָה, שֶׁאָז הַכֹּל יְשֵׁנִים.' The time (זמן מיחד) IS the night (לילה) which IS the state of the one who is awake at night (הנעור בלילה) — three bechina-names for the same temporal dimension of hitbodedut."
+        },
+        {
+          "merged_nodes": ["והמהלך בדרך יחידי", "מקום מיחד"],
+          "reason": "Line 25 equates them: 'וְהַמָּקוֹם הוּא בְּדֶרֶךְ יְחִידִי ... הַיְנוּ: וְהַמְהַלֵּךְ בַּדֶּרֶךְ יְחִידִי.' The place (מקום מיחד) IS the solitary path — these are bechina-equivalents for the spatial dimension of hitbodedut."
+        },
+        {
+          "merged_nodes": ["שיחה בינו לבין קונו"],
+          "reason": "Line 18 uses 'הַיְנוּ' to equate the night-watcher with being awake at night AND doing hitbodedut AND speaking one's prayer: 'דְּהַיְנוּ שֶׁהוּא נֵעוֹר בַּלַּיְלָה, וּמִתְבּוֹדֵד וּמְפָרֵשׁ שִׂיחָתוֹ בֵּינוֹ לְבֵין קוֹנוֹ.' The sicha (personal prayer-speech) is the essence of hitbodedut — same nature, not cause-and-effect."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 52,
+      "label": "אֶפְשָׁרִי הַמְּצִיאוּת וְטָעוּת הָאֶפִּיקוֹרְסִים",
+      "label_en": "Contingent Existence and the Epikoros Error",
+      "polarity": "evil",
+      "reason": "The necessary counter-pole to Package 1. Torah #52 opens by refuting epikorsim (heretics/deniers) who claim the world has necessary existence. The error (טעות) and those who hold it (אפיקורסים) share an essential nature: they represent the false attribution of divine necessity to created existence. Afshari ha-metziut (contingent existence) is the correct ontological status of the world — the mirror-concept to Package 1's mechuyav ha-metziut. The Rebbe's theological correction is that everything other than God is afshari (contingent). The epikoros worldview is evil not because it is malicious but because it denies God's absolute singularity as the only necessary being. This is the conceptual anti-pole to Package 1 in the Torah's good/evil mirror structure.",
+      "dominant_node": "אפשרי המציאות",
+      "nodes": [
+        "אפשרי המציאות",
+        "אפיקורסים",
+        "טעות האפיקורסים",
+        "כל העולמות"
+      ],
+      "node_degrees": {
+        "אפשרי המציאות": 5,
+        "אפיקורסים": 3,
+        "טעות האפיקורסים": 2,
+        "כל העולמות": 2
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["כל העולמות"],
+          "reason": "Lines 3 and 6 establish 'כָּל הָעוֹלָמוֹת עִם כָּל אֲשֶׁר בָּהֶם הֵם אֶפְשָׁרִי הַמְּצִיאוּת.' All the worlds in their true status ARE afshari ha-metziut — this is a bechina equation (shared essential nature: the worlds and contingent existence are parallel aspects of the same reality)."
+        },
+        {
+          "merged_nodes": ["טעות האפיקורסים"],
+          "reason": "Line 2 identifies the epikorsim and their error as a single conceptual unit. Line 6: 'וּמִזֶּה נִשְׁתַּלְשֵׁל וְנִמְשָׁךְ הַטָּעוּת שֶׁל הָאֶפִּיקוֹרְסִים.' The error (טעות) and the errorists (אפיקורסים) share the same essential domain — they are the evil/false pole of the mechuyav/afshari distinction."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_eitza_edges_in_dataset": 8,
+    "total_packages": 4,
+    "raw_connected_components_from_dataset": 0,
+    "all_nodes_sourced_from": "gap_analysis_of_source_text",
+    "note": "Torah #52 is entirely unrepresented in the bechina layer of torahData.js. All packages are built from the source text's own internal bechina language. The good/evil mirror is: Package 1 (מחויב המציאות = God) ↔ Package 4 (אפשרי המציאות = the world/epikoros error). Package 2 (בטול = the spiritual path) and Package 3 (התבודדות = the practical method) are the positive practice-side. The eitza chain is: Pkg3 (hitbodedut) →eitza→ Pkg2 (bitul) →eitza→ Pkg1 (subsumption in mechuyav). Pkg4 is the ideological enemy that the Torah refutes."
+  }
+}

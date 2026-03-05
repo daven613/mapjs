@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "source": "Torah #169",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "לִילִית = עַצְבוּת (Lilith IS the bechina of sadness/depression)",
+      "source_text_ref": "Line 14: 'כִּי פְּגַם הַבְּרִית בָּא עַל־יְדֵי הַקְּלִפָּה הַיְדוּעָה, שֶׁנִּקְרֵאת לִילִית, עַל שֵׁם שֶׁמְּיַלֶּלֶת תָּמִיד, שֶׁזֶּהוּ בְּחִינַת עַצְבוּת'",
+      "proposed_edge": {
+        "node1_id": "לילית",
+        "node2_id": "עצבות",
+        "type": "bechina",
+        "reference": 169
+      },
+      "package_assignment": "new_evil_pair",
+      "notes": "The most significant missing bechina edge in this Torah. The Rebbe uses explicit 'זֶהוּ בְּחִינַת' language: Lilith — the kelipah that causes pegal habrit — IS the bechina of sadness (atzavut). The etymology given is 'Lilith comes from yelilah (wailing)', and that wailing IS sadness. This is a clean, fully stated bechina equation, not a causal statement. Since Lilith is absent from the dataset as a reference-169 bechina node, this edge is entirely missing. If added, it would form a 2-node evil pair {לילית, עצבות} for this Torah — see new_packages file for further discussion."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "עֵקֶב = רַגְלִין (the heel / the word 'ekev' = legs/feet)",
+      "source_text_ref": "Line 10: 'עֵקֶב – הֵם הָרַגְלִין, הַיְנוּ: לִזְכּוֹת לְשִׂמְחָה עַד שֶׁהָעֲקֵבִים שֶׁהֵם הָרַגְלִין יִשְׁמְעוּ הַשִּׂמְחָה'",
+      "proposed_edge": {
+        "node1_id": "עקב",
+        "node2_id": "רגלים",
+        "type": "bechina",
+        "reference": 169
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe's verse-reading equates עֵקֶב (heel, or the word 'because/as-a-consequence' in the verse 'VeHaya Ekev Tishme'un') with the רַגְלִין. The identification is explicit: 'עֵקֶב – הֵם הָרַגְלִין'. This is a bechina (the heel IS the legs — a part-for-whole identification that is symmetric: the heel represents the legs, and the legs are expressed in the heel). If added, this node would join Package 1, reinforcing the leg/din cluster. Note: a reference-41 edge עֲקֵבַיִם—דִּין already exists in the dataset (edge 735), showing this Torah is consistent with established vocabulary. The missing piece is the direct עקב—רגלים equation as stated in Torah 169's own verse-reading."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "medium",
+      "description": "וְהָיָה = שִׂמְחָה (the word 'VeHaya' = language of joy / an aspect of simcha)",
+      "source_text_ref": "Line 10: 'וְהָיָה – לְשׁוֹן שִׂמְחָה'",
+      "proposed_edge": {
+        "node1_id": "והיה",
+        "node2_id": "שמחה",
+        "type": "bechina",
+        "reference": 169
+      },
+      "package_assignment": "standalone_or_new",
+      "notes": "The Rebbe states that the Hebrew word 'וְהָיָה' is a language (lashon) of joy — i.e., whenever Torah uses the form VeHaya, it indicates a dimension of simcha/joy. This is a classical rabbinic teaching (cf. Bereishit Rabbah) that the Rebbe uses as a bechina equation: the word-form וְהָיָה IS (by its very nature) simcha. The node שמחה appears in this Torah only in eitza edges in the current dataset (as the result of sweetened din → simcha spreads in the legs → dancing; and simcha → protection of the brit). The bechina וְהָיָה = שמחה is the hermeneutic basis for the verse-reading in lines 10-12, and it is stated in explicit bechina language ('לְשׁוֹן שִׂמְחָה'). If added, it would create a 2-node bechina pair {וְהָיָה, שמחה} for this Torah. Package assignment: שמחה is not currently in any bechina cluster for Torah 169, so this would form a new isolate pair — see new_packages file for discussion."
+    }
+  ],
+  "unassigned_dataset_nodes": [
+    {
+      "node_id": "שהאדם דן את עצמו, דהינו על כל מה שעושה ידין וישפט בעצמו את עצמו על כל דבר אם כך ראוי לו לעשות, ויפשפש במעשיו ויתקנם כראוי על־פי דין ומשפט התורה",
+      "reason": "This long-form node appears only in an eitza edge (edge 886, reference 169, type eitza): the action of self-judgment → leads to sweetening of din above. It is a causal agent (what the person DOES that produces the sweetening), not a bechina identity. It correctly belongs in the eitza graph. Its conceptual core is already represented in the bechina Package 1 through the דין and המתקת הדינים nodes."
+    },
+    {
+      "node_id": "שמחה",
+      "reason": "Appears in Torah 169 only in eitza edges (edge 977: שמחה → השם יתברך בעצמו ישמר לך את הברית; edge 3213: שמחה → עיקר שמירת הברית). Joy is the result/outcome of the sweetened-din process, and the cause of divine assistance with shmirat habrit — both directional causal relations. The missing bechina וְהָיָה = שמחה (proposed in additions) would give שמחה its first bechina edge for this Torah. Until then, it sits correctly in eitza-only territory."
+    },
+    {
+      "node_id": "השם יתברך בעצמו ישמר לך את הברית דהינו שיהיה בעזרך לשמר את הברית קדש",
+      "reason": "Appears only in an eitza edge (edge 977, reference 169, type eitza): simcha → God Himself guards your brit. This is a result-state / divine-promise node. It is the downstream outcome of joy, not a bechina identity. Correctly eitza."
+    },
+    {
+      "node_id": "תקון הברית",
+      "reason": "Appears only in an eitza edge (edge 3213, reference 169, type eitza): שמחה → עיקר שמירת הברית. This is a goal-state node — the downstream result of joy. Correctly eitza, not bechina."
+    },
+    {
+      "node_id": "שתשמרו לעשות בעצמכם המשפטים והדינים",
+      "reason": "Appears only in an eitza edge (edge 1612, reference 169, type eitza): keeping the mishpatim → achieving simcha in the heels/legs. This is the practical command that triggers the causal chain; it is an action-description node, not a bechina identity. Correctly eitza."
+    },
+    {
+      "node_id": "לזכות לשמחה עד שהעקבים שהם הרגלין ישמעו השמחה",
+      "reason": "Appears only as the target of an eitza edge (edge 1612, reference 169). This is a complex result-state node describing the outcome of observing the mishpatim. Correctly eitza."
+    }
+  ],
+  "analysis_notes": {
+    "total_bechina_edges": 4,
+    "total_eitza_edges_ref_169": 4,
+    "nodes_in_dataset_not_in_packages": "6 nodes appear in Torah 169 only as participants in eitza edges or as complex action/result-description nodes. These are correctly excluded from bechina packages per the framework.",
+    "concepts_in_source_text_not_in_dataset": [
+      "לִילִית = עַצְבוּת — the klipah Lilith IS the bechina of sadness (line 14, explicit 'זֶהוּ בְּחִינַת')",
+      "עֵקֶב = רַגְלִין — the heel/word-ekev IS the legs (line 10, explicit 'הֵם הָרַגְלִין')",
+      "וְהָיָה = שִׂמְחָה — the word VeHaya IS language of joy (line 10, explicit 'לְשׁוֹן שִׂמְחָה')"
+    ],
+    "structural_observations": [
+      "Torah 169 is a short, tightly structured teaching with a single metaphorical axis: the pregnancy-birth cycle as the metaphysical model for how divine judgment (din) settles in the body (legs) and how it is sweetened (childbirth = din exits the legs = joy spreads = dancing becomes possible).",
+      "The Torah has two distinct sections: (1) the main teaching on din, legs, and dancing (lines 1-12), and (2) an appended extension on simcha, Lilith, and shmirat habrit (lines 13-15). The second section introduces a new thematic layer — the brit — connected via the shared node שמחה.",
+      "The eitza chain runs: self-judgment (דן את עצמו) → sweetening of din → din exits legs → simcha spreads in legs → dancing. Then a second chain: simcha → God guards the brit (because Lilith/sadness causes pegal habrit, and simcha is its antidote).",
+      "The good/evil polarity mirror is present but minimally expressed in bechina: the din cluster (Package 1) is neutral/structural; the evil pole is Lilith = sadness (proposed addition), which is the force that damages the brit. The good pole is simcha (in eitza edges only for this Torah), which is the antidote to both din and Lilith.",
+      "Torah 169 has unusually few bechina edges (4) compared to other Torahs. This reflects the teaching's nature: it is primarily an analytical/practical text explaining a causal mechanism (din → legs → dancing) rather than a text that builds up a dense network of parallel-identity equations."
+    ]
+  }
+}

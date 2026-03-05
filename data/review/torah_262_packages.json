@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "source": "Torah #262",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah 262 has ZERO entries in torahData.js — the dataset is completely empty for this Torah. All packages are built entirely from bechina-language identified in the source text. The Torah is very short (5 sentences) and contains a compact argument about Torah innovation, weeping, rivers, and the klipot."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 262,
+      "label": "מַעְיָן וְשֵׂכֶל",
+      "label_en": "Spring and Intellect",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly equates the spring (מַעְיָן) that flows from the House of God with the שֵׂכֶל (divine intellect): 'מַעְיָן מִבֵּית ה' יֵצֵא, שֶׁהוּא הַשֵּׂכֶל'. The proof-verse 'בְּחָכְמָה יִבָּנֶה בָּיִת' further identifies חָכְמָה (wisdom) as the same spring/intellect domain — it is the wisdom-intellect that builds the house of Torah. These three concepts (מַעְיָן, שֵׂכֶל, חָכְמָה) are bechina of each other: they are all expressions of the divine intellectual vitality that begins to flow when one innovates in Torah. This is the source-domain of the Torah's positive teaching.",
+      "dominant_node": "שֵׂכֶל",
+      "nodes": [
+        "מעין",
+        "שכל",
+        "חכמה"
+      ],
+      "node_degrees": {
+        "שכל": 2,
+        "מעין": 2,
+        "חכמה": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 262,
+      "label": "בְּכִי וּמַסֶּכֶת",
+      "label_en": "Weeping and the Tractate",
+      "polarity": "good",
+      "reason": "The Rebbe makes two bechina identifications that cluster around weeping (בְּכִי): (1) 'חִבּוּר הַהֲלָכוֹת וְהַחִדּוּשִׁין נִקְרָא מַסֶּכֶת, זֶה בְּחִינַת: וְשִׁקֻּוַי בִּבְכִי מָסָכְתִּי' — a tractate IS called masekhta because it embodies the pouring/mixing with weeping; (2) 'עַל נַהֲרוֹת בָּבֶל, שָׁם יָשַׁבְנוּ גַּם בָּכִינוּ – זֶה בְּחִינַת תַּלְמוּד בַּבְלִי' — the Babylonian Talmud IS an expression of sitting and weeping by the rivers. Both מַסֶּכֶת and תַּלְמוּד בַּבְלִי are bechina of the same act: Torah-learning accompanied by tears. The weeping (בְּכִי) is the unifying nature that ties these together — it is not merely a technique but the essential quality shared by all three concepts. This package is the means-domain: what the sage must embody when transmitting Torah.",
+      "dominant_node": "בכי",
+      "nodes": [
+        "בכי",
+        "מסכת",
+        "תלמוד בבלי"
+      ],
+      "node_degrees": {
+        "בכי": 3,
+        "מסכת": 2,
+        "תלמוד בבלי": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["תלמוד בבלי", "מסכת"],
+          "reason": "Both are bechina of the same weeping-while-pouring concept: מַסֶּכֶת via Ps. 102:10 ('וְשִׁקֻּוַי בִּבְכִי מָסָכְתִּי') and תַּלְמוּד בַּבְלִי via Ps. 137:1 ('עַל נַהֲרוֹת בָּבֶל... גַּם בָּכִינוּ'). The Rebbe explicitly links both to the same bechina of weeping. They are two expressions of the same essential nature — Torah produced through and accompanied by tears."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 262,
+      "label": "נְהָרוֹת",
+      "label_en": "Rivers",
+      "polarity": "neutral",
+      "reason": "The rivers (נְהָרוֹת) function as a structural conduit in this Torah's argument. They are produced by Torah innovation (eitza from Package 1's domain) and fixed/directed by weeping (eitza from Package 2), yet they are sought by both the holy (כָּל בָּאִים לִשְׁתּוֹת) and by the klipot/sitra achra. A neutral object cannot be a member of the good or evil package — it exists as the shared structural reality that both sides seek to access. The entire Torah's practical concern is about managing this neutral resource: ensuring the rivers flow only to holy recipients and not to the klipot.",
+      "dominant_node": "נהרות",
+      "nodes": [
+        "נהרות"
+      ],
+      "node_degrees": {
+        "נהרות": 0
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["נהרות"],
+          "reason": "Single-node component. Cannot merge into Package 1 (Package 1's spring produces the rivers — that is eitza, not bechina; they are distinct entities). Cannot merge into Package 2 (weeping fixes the rivers — again eitza, not shared nature). The rivers are the structural medium of this Torah, genuinely neutral, and must remain their own package."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 262,
+      "label": "קְלִפּוֹת וְסִטְרָא אָחֳרָא",
+      "label_en": "Shells and the Other Side",
+      "polarity": "evil",
+      "reason": "The klipot and sitra achra are the evil counterforce in this Torah. They are explicitly named as those who come to drink from the rivers when Torah innovations create them: 'יָבוֹאוּ גַּם כֵּן קְלִפּוֹת וְסִטְרָא אָחֳרָא לִשְׁתּוֹת'. This is the evil mirror of the good learning that produces rivers. Where Package 1 (intellect/spring) is the source of holy illumination and Package 2 (weeping/tractate) is the method of holy transmission, the klipot represent the parasitic evil that seeks to feed on that same illumination. They form their own package as the opposition domain of this Torah. The good/evil mirror here: Package 1 (spring of intellect) → the klipot want to drink that spring; Package 2 (weeping) → weeping is the antidote that satisfies the klipot before they can corrupt the new rivers.",
+      "dominant_node": "קליפות",
+      "nodes": [
+        "קליפות",
+        "סטרא אחרא"
+      ],
+      "node_degrees": {
+        "קליפות": 1,
+        "סטרא אחרא": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["קליפות", "סטרא אחרא"],
+          "reason": "The text uses both terms ('קְלִפּוֹת וְסִטְרָא אָחֳרָא') as a compound to refer to the same evil force. They appear together twice in the text and function as a single entity. They are bechina of each other in this context — two names for the same spiritual-evil domain."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_bechina_edges_from_source_text": 5,
+    "total_nodes": 9,
+    "total_packages": 4,
+    "raw_connected_components": 4,
+    "notes": "0 edges in torahData.js for Torah 262. 5 bechina relationships extracted from source text. 4 raw components identified; no merges between components (each component is thematically distinct)."
+  }
+}

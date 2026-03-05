@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "source": "Torah #49 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": null,
+      "node_id": "מחשבה",
+      "node_text": "מַחֲשָׁבָה",
+      "polarity": "neutral",
+      "reason": "The Rebbe explicitly equates thought with deed using the identity verb 'הִיא' (is): 'the thought of such people IS also deed' (כִּי גַּם הַמַּחֲשָׁבָה שֶׁל אֲנָשִׁים כָּאֵלּוּ הִיא גַם־כֵּן עֲשִׂיָּה). This is a bechina statement — thought and deed share the same essential nature for this category of person. However, since no bechina packages can be built in this Torah (zero bechina edges in the dataset), there is no existing package to assign it to. Flagged as a missing bechina node for future enrichment.",
+      "source_quote": "כִּי גַּם הַמַּחֲשָׁבָה שֶׁל אֲנָשִׁים כָּאֵלּוּ הִיא גַם־כֵּן עֲשִׂיָּה, כִּי גַּם בָּעוֹלָם הָעֲשִׂיָּה יֵשׁ מַחֲשָׁבָה",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "עשיה",
+      "node_text": "עֲשִׂיָּה",
+      "polarity": "neutral",
+      "reason": "Partner node in the bechina equation with מַחֲשָׁבָה (thought). The Rebbe states that thought IS deed for people in this spiritual state. Both concepts are neutral structural entities that can be aligned with holiness or with sin.",
+      "source_quote": "כִּי גַּם הַמַּחֲשָׁבָה שֶׁל אֲנָשִׁים כָּאֵלּוּ הִיא גַם־כֵּן עֲשִׂיָּה",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "מחשבה–עשיה bechina pair (paragraph 2)"
+    ],
+    "mistyped_edge_note": "The single dataset edge for reference=1049 pairs 'returning through the same places and resisting temptation' with 'תשובה', typed as 'eitza'. The source text uses the bechina marker 'נִקְרָא' ('רַק זֶה נִקְרָא תְּשׁוּבָה' — only THIS is called teshuvah), which in Rebbe Nachman's usage identifies structural equivalence (what the action essentially IS), not merely a causal consequence. This edge may warrant reclassification to 'bechina' in the dataset. However, because it is currently typed as eitza, it does not contribute to the bechina subgraph for this Torah.",
+    "notes": "Torah LM2/49 is a short six-paragraph teaching (six paragraphs) that operates predominantly on the eitza (cause-and-effect) and practical guidance axis. There is only one entry in the dataset with reference=1049, and it is typed 'eitza'. Therefore, no bechina subgraph can be built and no packages can be formed from the dataset. The source text itself contains two bechina-language moments: (1) paragraph 2 identifies thought (מַחֲשָׁבָה) with deed (עֲשִׂיָּה) using the identity verb 'הִיא' — 'the thought of such people IS also deed'; (2) paragraph 3 uses the bechina marker 'נִקְרָא' to declare that turning away from the same temptations IS called teshuvah ('רַק זֶה נִקְרָא תְּשׁוּבָה'). Both are identity statements (bechina) rather than causal flows. Neither pair is currently captured as a bechina edge in the dataset. The teaching as a whole is: God's immense mercy makes full repentance possible → true teshuvah is re-facing old temptation and turning away → the yetzer hara's passion can be redirected into holy service → this ability to redirect IS the greatness of having a yetzer hara. This is an eitza chain throughout, with two embedded bechina identifications."
+  }
+}

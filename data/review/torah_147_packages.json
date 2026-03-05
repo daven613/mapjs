@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "source": "Torah #147 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===147 AND type==='bechina'. Result: exactly 1 bechina edge found (id 488), forming a single 2-node connected component. The entire bechina graph for Torah #147 is therefore a single isolated pair. Because this Torah is extremely short (9 lines) and thematically tight — everything revolves around the polarity of עזות דקדשה vs. עזות פנים — the source text contains rich bechina-language concepts that are not yet in the dataset. These missing nodes, once added (see torah_147_additions.json), belong to one of two thematic packages: the good domain of holy boldness + arousal-from-below, and the evil domain of brazen impudence. The single existing bechina pair (תנו עז לאלקים ↔ אתערותא דלתתא) anchors Package 1 (good). All additions from the gap analysis are assigned to their respective packages. No merge across packages is proposed because the two packages represent opposite polarities — the evil mirror (עזות פנים / עזות דסטרא אחרא) and the good domain (עזות דקדשה / אתערותא דלתתא) are not the same essential nature."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 147,
+      "label": "עַזּוּת דִּקְדֻשָּׁה וְאִתְעָרוּתָא דִּלְתַתָּא",
+      "label_en": "Holy Boldness and Arousal from Below",
+      "polarity": "good",
+      "reason": "This package centers on עזות דקדשה — the holy boldness that enables a person to stand firm against all opponents of his Torah-study and Divine service. It is the only bechina cluster in the dataset for this Torah: the verse-phrase 'תנו עז לאלקים' is declared a bechina of אתערותא דלתתא (arousal from below), meaning that when Israel exercises holy boldness in standing against their adversaries, this IS the lower-world arousal that draws down corresponding Divine strength from above. The two concepts share the same essential nature: both are the 'empowering push' that originates in the human realm. The eitza structure of the Torah (עזות דקדשה → תנו עז → Divine overflow back) is the causal flow between packages, not within them. The essential nature shared within this package is: holy strength / willpower that rises upward and draws down blessing. This Torah's positive teaching culminates in the concept that holy boldness is not merely a personal virtue but a cosmic act — it is how human will strengthens the Divine throne (כביכול).",
+      "dominant_node": "אתערותא דלתתא",
+      "nodes": [
+        "תנו עז לאלקים",
+        "אתערותא דלתתא"
+      ],
+      "node_degrees": {
+        "תנו עז לאלקים": 1,
+        "אתערותא דלתתא": 1
+      },
+      "merge_notes": [],
+      "source_edge": {
+        "id": 488,
+        "proof_summary": "תְּנוּ עֹז לֵאלקִים — זֶה בְּחִינַת אִתְעָרוּתָא דִּלְתַתָּא: 'give strength to God' is declared a bechina of arousal-from-below, because our holy boldness in standing against opponents IS the act of raising strength from below."
+      }
+    },
+    {
+      "id": 2,
+      "torah_ref": 147,
+      "label": "עַזּוּת פָּנִים וְעַזּוּת דְּסִטְרָא אָחֳרָא",
+      "label_en": "Brazen Impudence and Evil Boldness",
+      "polarity": "evil",
+      "reason": "This is the evil mirror package. Torah #147 explicitly describes the two opposing forms of boldness: עזות דקדשה (Package 1 — holy) and עזות פנים / עזות דסטרא אחרא (this package — evil). The text names both as belonging to the same structural type (both are 'brazenness') but oriented in opposite directions. עזות פנים is the impudence of those who have no share in Torah — described as the 974 pre-creation generations who were unfit to receive Torah and were 'planted' in each generation as the brazen ones. The Rebbe explicitly identifies these as the source of obstruction against Torah and Divine service. The evil boldness of the sitra achra (עזות דסטרא אחרא) is the force that believers must stand against — it is the evil mirror of the עזות דקדשה of Package 1. Both belong here because they share the same essential nature: brazenness oriented toward the side of evil / obstruction / disconnection from Torah. This package has no dataset edges yet — it requires the additions listed in torah_147_additions.json to be populated. See that file for the proposed nodes.",
+      "dominant_node": "עזות פנים",
+      "nodes": [
+        "עזות פנים",
+        "עזות דסטרא אחרא"
+      ],
+      "node_degrees": {
+        "עזות פנים": 0,
+        "עזות דסטרא אחרא": 0
+      },
+      "merge_notes": [],
+      "note": "These nodes are not yet in the dataset — they are proposed additions (see torah_147_additions.json). Their package assignment is established here based on the source text's explicit structural opposition. Once the bechina edges connecting them are added to the dataset, their node_degrees will update accordingly."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 2,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "note_on_structure": "Torah #147 is the shortest recorded Torah in the dataset with only 1 bechina edge. It is a highly focused teaching on a single polarity: עזות דקדשה vs. עזות פנים. The eitza edges (ids 380, 1925, null) form the causal narrative (human holy boldness → raises strength upward → Divine response flows back down → enables standing against the evil bold ones), but the bechina graph's only edge is the identification of 'תנו עז לאלקים' as the form of אתערותא דלתתא. Package 2 (evil) contains only proposed nodes from gap analysis; it has no current dataset bechina edges for reference 147.",
+    "good_evil_mirror": "Package 1 (עזות דקדשה) ↔ Package 2 (עזות פנים / עזות דסטרא אחרא). Same structural category (boldness/assertiveness), opposite cosmic orientations."
+  }
+}

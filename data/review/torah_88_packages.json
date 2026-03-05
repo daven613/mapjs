@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "source": "Torah #88 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "verse": "הַמְכַסֶּה שָׁמַיִם בְּעָבִים, הַמֵּכִין לָאָרֶץ מָטָר (תהילים קמ״ז:ח׳)",
+    "dataset_bechina_edges": 2,
+    "notes": "Torah #88 is one of the shortest teachings in Likutay Moharan. The dataset contains only 2 bechina edges for this reference, producing 2 isolated 2-node components. The source text is 9 lines and contains substantially more bechina language than is currently captured in the dataset — see torah_88_additions.json for gap analysis."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 88,
+      "label": "מָטָר וְהַשְׁפָּעוֹת",
+      "label_en": "Rain and Divine Influx",
+      "polarity": "good",
+      "reason": "The central bechina of Torah #88: rain (מטר) IS the divine influx and blessings (השפעות וברכות) that flow to the world through the tzaddik. The verse 'Who prepares rain for the earth' (המכין לארץ מטר) is interpreted as 'Who prepares the influx and blessings for the earth.' This single bechina is the load-bearing equitation of the entire teaching — the cosmic meaning of rain is precisely the divine overabundance that the tzaddik channels to the world. Both concepts share the same essential nature: the downward movement of divine blessing from the heavenly realm to the material world. This is an unambiguously positive, holy cluster.",
+      "dominant_node": "מטר",
+      "nodes": [
+        "מטר",
+        "השפעות וברכות"
+      ],
+      "node_degrees": {
+        "מטר": 1,
+        "השפעות וברכות": 1
+      },
+      "merge_notes": [
+        "This is a raw 2-node component from a single bechina edge (Edge 984). No merge from other components is applicable — the second component (שכינה↔אלהים) does not share the same essential nature as rain/influx. Rain/influx belongs to the realm of the tzaddik's output (drawing divine blessing downward), while שכינה/אלהים belongs to the realm of divine immanence/presence.",
+        "Candidate for merger with the proposed gap-package 'שמים/אהבה/יראה' (see torah_88_additions.json) via the eitza chain: the tzaddik conceals his love/fear (Package 2 domain) in order to draw down the rain/influx (Package 1 domain). This is cause-and-effect, not shared nature — so the packages remain distinct per the bechina-only rule."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 88,
+      "label": "שְׁכִינָה וֶאֱלֹקִים",
+      "label_en": "The Divine Presence and the Name Elohim",
+      "polarity": "good",
+      "reason": "The Shechinah (the Divine Presence immanent in the world) is identified as a bechina of the divine name אֱלֹקִים. This is a standard Kabbalistic equivalence: אלהים is the name associated with the sefirah of Malkhut (divine kingship / immanence in nature), and the Shechinah is the presence of God within the material world — they are two expressions of the same divine reality: God's presence as it contracts and manifests within creation. Both are squarely in the domain of holiness; this is not the name associated with the forces of evil but with the tzaddik's divine quality of justice/nature that he embodies.",
+      "dominant_node": "שכינה",
+      "nodes": [
+        "שכינה",
+        "אלהים"
+      ],
+      "node_degrees": {
+        "שכינה": 1,
+        "אלהים": 1
+      },
+      "merge_notes": [
+        "This 2-node component (Edge 263) is attributed to reference 88 in the dataset, but the proof text 'בְּהַשְּׁכִינָה, שֶׁהוּא בְחִינַת אֱלֹקִים' does not appear in the Torah #88 source text file (torah_88.txt). The concepts שכינה and אלהים are entirely absent from the 9-line source text. This edge may represent: (a) a data entry error with the wrong reference number, (b) a background assumption Rebbe Nachman imports from another Torah, or (c) a proof-text from an external source that the editor associated with Torah #88. Per the algorithm, all edges with reference===88 AND type==='bechina' are included; this edge is therefore retained in the analysis but flagged as anomalous.",
+        "No merge into Package 1 (מטר/השפעות וברכות): the shared-nature test fails. Divine Presence/Elohim is about the nature of God's immanent identity; rain/influx is about the flow of blessing through the tzaddik. These are categorically different bechinas — the Shechinah is not the same thing as rain, nor are they different faces of the same underlying reality within this Torah's conceptual framework.",
+        "This package is retained as a standalone 2-node package. Its conceptual connection to the teaching may be that the Shechinah (= אלהים) is what the tzaddik draws down via his concealed love/fear — but this is an eitza connection (the Shechinah's influx flows as rain), not a bechina."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 2,
+    "total_nodes": 4,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "notes": "Torah #88 has only 2 bechina edges in the dataset, forming 2 isolated 2-node components. The teaching is structurally thin in the current dataset. However, the source text contains at least 5 additional implicit bechina identifications (שמים=אהבה ויראה, אהבה ויראה=ידים, צדיק=שמים, עבים=מחלוקת, ידים=כלי לקבל ברכות) that are not yet captured as edges. See torah_88_additions.json and torah_88_new_packages.json for the gap analysis and proposed new package."
+  }
+}

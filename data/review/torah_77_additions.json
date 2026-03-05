@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "source": "Torah #77",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_77_packages.json, all reference===77 edges from torahData.js, and the full source text torah_77.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ, נִקְרָא) or structurally equivalent formulas were considered. Torah #77 is documented as almost entirely lost ('חָסֵר כָּאן רֻבּוֹ כְּכֻלּוֹ'), so gap analysis is limited to the surviving fragment."
+  },
+  "additions": [
+    {
+      "package_id": null,
+      "package_label": "NEW — קוֹל וְאוֹת וָ\"ו",
+      "node_id": "קול",
+      "node_text": "הַקּוֹל",
+      "polarity": "good",
+      "reason": "The source text explicitly states: 'וְהַקּוֹל הוּא בְּהַמְשָׁכָה, הוּא בְּחִינַת ו' — the kol (voice/sound, the drawn-out extension of breath into structured sound) IS a bechina of the letter vav. This is a direct bechina statement using the canonical formula 'הוּא בְּחִינַת'. The letter vav is the second letter of the divine Name (י-ה-ו-ה), the elongated connector — identical to its function as the drawling extension of breath into voice. This bechina is structurally parallel to the existing dataset edge (הבל פה ↔ אות ה\"א, reference=77) and belongs to the same Torah. However, the node 'קול' is NOT in the current dataset as a Torah #77 node, nor is there an edge קול ↔ אות וא\"ו with reference=77. This is a genuine gap. Note: the letter וא\"ו itself appears in the dataset as a node in other Torahs (e.g., Torah #1 package 4 — Torah/Makel), but the bechina pair קול ↔ אות וא\"ו with reference=77 is absent. If added, it would form a second 2-node component alongside the existing הבל פה ↔ אות ה\"א component, both sharing the domain of 'sacred speech letters' within the י-ה-ו-ה Name structure.",
+      "source_quote": "וְהַקּוֹל הוּא בְּהַמְשָׁכָה, הוּא בְּחִינַת ו'",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_77_edges": 2,
+    "total_reference_77_bechina_edges": 1,
+    "total_reference_77_eitza_edges": 1,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["הבל פה", "אות ה\"א"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["קול (as Torah #77 bechina node paired with אות וא\"ו)"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "מלכות (מַלְכוּתוֹ יִתְבָּרַךְ)",
+        "reason": "The text opens with the statement that all prayer and Torah-study is 'כְּדֵי שֶׁיִּתְגַּלֶּה מַלְכוּתוֹ יִתְבָּרַךְ' — in order to reveal God's kingship. This is the framing telos/goal, not a bechina statement. The word 'מלכות' is not assigned a bechina identity via the formula 'בְּחִינַת' in the surviving text. It is the end-goal of an eitza structure (studying/praying → reveals malkhut). Excluded: no explicit bechina language for מלכות in this Torah's surviving fragment."
+      },
+      {
+        "concept": "תפלה ולמוד (prayer and study)",
+        "reason": "Lines 2-3 of the source text identify prayer and learning as the activities humans perform, and lines 3-4 describe what they produce. They are not declared to be bechina of each other or of a third concept using bechina-language. They appear in the eitza edge already in the dataset (כשלומד או מתפלל בדחילו ורחימו → נתגלה בחינת י\"ה, reference=77, type=eitza). Excluded: eitza relationship, not bechina."
+      },
+      {
+        "concept": "מטרוניתא (the Matronita/Shechina)",
+        "reason": "Line 4 states 'כְּשֶׁלּוֹמֵד כָּל הַמַּסֶּכְתָּא, נַעֲשֶׂה מַטְרוֹנִיתָא' — learning a complete tractate creates/becomes the Matronita. While 'נַעֲשֶׂה' could suggest identity, the context is clearly eitza/causal: the act of learning produces the spiritual structure. Furthermore, the phrase 'וְהַהֲלָכוֹת הֵן עָלְמִין דִּילֵהּ' (the laws are her worlds) comes closest to bechina language but is a citation from Tikkunim (external source) being invoked as explanatory background. The Rebbe is explaining the mechanism, not declaring a new bechina within this Torah. Excluded: the surviving fragment does not use explicit בְּחִינַת / הַיְנוּ for מטרוניתא."
+      },
+      {
+        "concept": "הלכות (as עָלְמִין דִּילֵהּ)",
+        "reason": "The text states 'הַהֲלָכוֹת הֵן עָלְמִין דִּילֵהּ' — the halakhot are her (the Matronita's) worlds. This is quoted from the Introduction to Tikkunim (Patach Eliyahu), not formulated by the Rebbe as a new bechina. It is cited as supporting proof-text for the causal chain. Excluded: citation context, not an independent bechina declaration by the Rebbe within Torah #77."
+      },
+      {
+        "concept": "יָ\"ה (the letters yud-heh revealed through dechilu and rechilu)",
+        "reason": "Line 3 states 'נִתְגַּלֶּה בְּחִינַת י\"ה' — the bechina of yud-heh is revealed. This appears to be a bechina of something (the state of learning/praying with awe and love), but it is structured as an eitza: 'כְּשֶׁלּוֹמֵד אוֹ מִתְפַּלֵּל בִּדְחִילוּ וּרְחִימוּ, נִתְגַּלֶּה בְּחִינַת י\"ה' — when one studies or prays with fear and love, THEN the bechina of yud-heh is revealed. The dataset correctly encodes this as an eitza edge (reference=77, type=eitza). The phrase 'בְּחִינַת י\"ה' here names the *result* of the eitza process, not a parallel-identity statement. Excluded: this is an eitza outcome-label, not a symmetric bechina identity."
+      }
+    ],
+    "critical_caveat": "Torah #77 is documented as almost entirely lost. The text explicitly states: 'מְבֹאָר לַמְעַיֵּן שֶׁחָסֵר כָּאן רֻבּוֹ כְּכֻלּוֹ, כִּי עִקַּר הַמְכֻוָּן חָסֵר מִן הַסֵּפֶר' — it is clear to the reader that almost the entirety is missing here, for the main intent is absent from the book. The surviving fragment (5 lines) is a skeletal introduction to what must have been a richly developed teaching on prayer, Torah-study, halakha, the divine Name, and the revelation of malkhut. The gap analysis performed here covers only what survives. The full Torah would almost certainly have contained many more bechina pairs involving: the letters yud-heh-vav-heh and their spiritual-functional meanings, the Matronita/Shechina and her worlds/halakhot, dechilu u-rechilu (fear and love) as modes of engagement, and the revelation of malkhut through human activity. None of these can be safely added as Torah #77 bechinas without the actual lost text."
+  }
+}

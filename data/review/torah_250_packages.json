@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "source": "Torah #250",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 250,
+      "label": "הַשְׁגָּחָה וּתְפִלָּה",
+      "label_en": "Divine Providence and Prayer",
+      "polarity": "good",
+      "reason": "All four nodes express the same essential reality: transcendence of natural law through Divine attention. Prayer (תפלה) is itself an act of hashgacha — it changes nature, which only hashgacha can do. Greatness (גדול) is Israel's quality of having God respond to their prayers, which is precisely hashgacha. Tears (דמעות) physically carry 'sight' (ראות) into themselves, and ראות is the faculty through which hashgacha operates — hence tears draw down hashgacha. All four are different expressions of the one reality: God's active, personal, above-nature relationship with Israel.",
+      "dominant_node": "השגחה",
+      "nodes": ["השגחה", "תפלה", "גדול", "דמעות"],
+      "node_degrees": {
+        "השגחה": 3,
+        "תפלה": 2,
+        "גדול": 2,
+        "דמעות": 1
+      },
+      "edge_count": 5,
+      "edges": [
+        {
+          "edge_id": 609,
+          "node1_id": "תפלה",
+          "node2_id": "גדול",
+          "proof": "וּתְפִלָּה הוּא בְּחִינַת הַשְׁגָּחָה לְמַעְלָה מֵהַטֶּבַע, כִּי הַטֶּבַע מְחַיֵּב כָּךְ, וּתְפִלָּה מְשַׁנָּה הַטֶּבַע, וְהוּא בְּחִינוֹת גָּדוֹל, בְּחִינַת (דְּבָרִים ד): \"כִּי מִי גוֹי גָּדוֹל אֲשֶׁר לוֹ אֱלֹקִים קְרוֹבִים אֵלָיו\""
+        },
+        {
+          "edge_id": 965,
+          "node1_id": "תפלה",
+          "node2_id": "השגחה",
+          "proof": "וּתְפִלָּה הוּא בְּחִינַת הַשְׁגָּחָה לְמַעְלָה מֵהַטֶּבַע, כִּי הַטֶּבַע מְחַיֵּב כָּךְ, וּתְפִלָּה מְשַׁנָּה הַטֶּבַע,"
+        },
+        {
+          "edge_id": 966,
+          "node1_id": "גדול",
+          "node2_id": "השגחה",
+          "proof": "גָּדוֹל בְּחִינַת הַשְׁגָּחָה"
+        },
+        {
+          "edge_id": 967,
+          "node1_id": "דמעות",
+          "node2_id": "השגחה",
+          "proof": "דְּמָעוֹת הֵם בְּחִינוֹת הַשְׁגָּחָה, כְּמָה שֶׁאָמְרוּ רַבּוֹתֵינוּ, זִכְרוֹנָם לִבְרָכָה (שַׁבָּת קנא:): עַל פָּסוּק (קֹהֶלֶת י\"ב): \"וְשָׁבוּ הֶעָבִים אַחַר הַגָּשֶׁם\", 'זֶה הָרְאוּת שֶׁהוֹלֵךְ אַחַר הַבֶּכִי'"
+        },
+        {
+          "edge_id": 3146,
+          "node1_id": "השגחה",
+          "node2_id": "תפלה",
+          "proof": "הַשְׁגָּחָה, בְּחִינוֹת תְּפִלָּה"
+        }
+      ],
+      "mirror_note": "The evil counterpart domain — הטבע / מזל / עכו\"ם — is structurally present in the Torah (the nations operate under nature/fate rather than hashgacha) but does not form a bechina subgraph in the dataset. Those nodes appear only as eitza endpoints. No evil-polarity package can be built from the current bechina edges.",
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 5,
+    "total_nodes": 4,
+    "total_packages": 1,
+    "raw_connected_components": 1
+  }
+}

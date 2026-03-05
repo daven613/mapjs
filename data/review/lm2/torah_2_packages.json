@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "source": "Torah #2 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "dataset_note": "torahData.js has no volume field. All reference===2 bechina edges currently in the dataset belong to LM1 Torah 2 (about prayer/Mishkan/Mashiach). LM2 Torah 2 content (Chanukah/Halakhot/Dibur/Shabbat) has not yet been entered into torahData.js. These packages reflect the LM1 Torah 2 bechina subgraph as the raw material; gap analysis in torah_2_additions.json documents all missing LM2 Torah 2 concepts."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 2,
+      "volume": "lm2",
+      "label": "תְּפִלָּה וּמְשִׁיחַ — עֲבוֹדַת הַתְּפִלָּה",
+      "label_en": "Prayer and Messianic Rectification",
+      "polarity": "good",
+      "reason": "These nodes all share the same essential nature: they are expressions of the תפלה (prayer) domain — its physical embodiments (אברי המשכן, חטם, כבוד אל, מאור הקטן), its weapons and power (חרב פיפיות, פי שנים, כלי זינו של משיח), its human carriers (בכור, אמור, אנשים קטנים, אנשים גדולים), and its Messianic fulfillment (משיח, משה, צדיק). Each is an aspect of the same redemptive force of prayer that builds the Shekhinah and brings Mashiach.",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תפלה",
+        "איבר מהשכינה",
+        "אברי המשכן",
+        "חטם",
+        "כבוד אל",
+        "מאור הקטן",
+        "אנשים קטנים",
+        "פי שנים",
+        "שתי פיות",
+        "חרב פיפיות",
+        "אמור",
+        "בכור",
+        "חרב",
+        "כלי זינו של משיח",
+        "משיח",
+        "משה",
+        "מאור הגדול",
+        "אנשים גדולים",
+        "צדיק",
+        "דג",
+        "צדיק הדור",
+        "פניך",
+        "רחמים"
+      ],
+      "node_degrees": {
+        "תפלה": 10,
+        "איבר מהשכינה": 2,
+        "אברי המשכן": 1,
+        "חטם": 1,
+        "כבוד אל": 1,
+        "מאור הקטן": 2,
+        "אנשים קטנים": 1,
+        "פי שנים": 2,
+        "שתי פיות": 2,
+        "חרב פיפיות": 1,
+        "אמור": 1,
+        "בכור": 1,
+        "חרב": 1,
+        "כלי זינו של משיח": 1,
+        "משיח": 2,
+        "משה": 3,
+        "מאור הגדול": 2,
+        "אנשים גדולים": 1,
+        "צדיק": 1,
+        "דג": 1,
+        "צדיק הדור": 1,
+        "פניך": 1,
+        "רחמים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["דג", "צדיק הדור"],
+          "reason": "The isolated pair דג/צדיק הדור (id 2543) — the Tzaddik of the generation is called a 'fish' in the sea (כַּוְרָא). The proof text is drawn from the same narrative context as the Mishkan/prayer cluster: 'חָזִינָא לְהַאי כַּוְרָא הוּא בְּחִינַת צַדִּיק הַדּוֹר'. צדיק הדור = same entity as צדיק/משה in this Torah's framework. Shared nature: the צדיק who collects and elevates prayers is an aspect of the same messianic-prayer domain."
+        },
+        {
+          "merged_nodes": ["פניך", "רחמים"],
+          "reason": "The pair פניך/רחמים (id 2735) — 'הִסְתַּרְתָּ פָנֶיךָ' = aspect of mercy. In Torah 2's context, 'turning the face' (פניך) represents divine mercy (רחמים) that responds to prayer and the Shekhinah's building. This is the same domain of divine response to prayer as the rest of Package 1. Shared nature: the responsive dimension of the prayer-Shekhinah relationship."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 2,
+      "volume": "lm2",
+      "label": "תּוֹרָה וּנְשָׁמוֹת",
+      "label_en": "Torah and Souls",
+      "polarity": "good",
+      "reason": "These nodes share the essential nature of Torah as life-force: Torah is fire-and-water (אש ומים), its students are souls (נשמות) and plants (עשבים) growing in the divine garden, the Heavens (שמים) proclaim its glory, and Kohanim (כהן) guard and teach it. All are expressions of the Torah's spiritual vitality and its role in carrying souls.",
+      "dominant_node": "תורה",
+      "nodes": [
+        "תורה",
+        "אש ומים",
+        "שמים",
+        "נשמות",
+        "עשבים",
+        "כהן",
+        "ספינה",
+        "חסד"
+      ],
+      "node_degrees": {
+        "תורה": 3,
+        "אש ומים": 2,
+        "שמים": 1,
+        "נשמות": 2,
+        "עשבים": 1,
+        "כהן": 1,
+        "ספינה": 1,
+        "חסד": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["ספינה", "חסד"],
+          "reason": "The pair ספינה/חסד (id 1210): sailors are mostly pious (חסידים). The proof text connects this to the Torah context: the ship (ספינה) is an aspect of chesed/kindness, and in Torah 2 chesed is the domain of those who support Torah scholars (חסד = הלכות per the Torah, though that concept belongs to a different cluster). Here ספינה represents those who make Torah possible through kindness/support. The essential nature shared: chesed that enables Torah. Merged into the Torah/Souls package rather than standalone."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 2,
+      "volume": "lm2",
+      "label": "מִשְׁפָּט וְיַעֲקֹב",
+      "label_en": "Righteous Judgment and Jacob",
+      "polarity": "good",
+      "reason": "These nodes are all aspects of the same righteous faculty of judgment (משפט): it is the central pillar (עמודא דאמצעיתא), the eyes of Jacob (עין יעקב), Aaron's quality of bearing Israel's judgment, and the Aleph-Nun-Yod (אני) of true self-possession. All share the essential nature of balanced, righteous discernment that keeps prayer on target.",
+      "dominant_node": "משפט",
+      "nodes": [
+        "משפט",
+        "אהרן",
+        "אני",
+        "יעקב",
+        "עינים",
+        "עמודא דאמצעיתא"
+      ],
+      "node_degrees": {
+        "משפט": 5,
+        "אהרן": 1,
+        "אני": 1,
+        "יעקב": 2,
+        "עינים": 2,
+        "עמודא דאמצעיתא": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 4,
+      "torah_ref": 2,
+      "volume": "lm2",
+      "label": "קִלְקוּל הַמִּשְׁפָּט וּמַחֲשָׁבוֹת זָרוֹת",
+      "label_en": "Distorted Judgment and Foreign Thoughts",
+      "polarity": "evil",
+      "reason": "These nodes are all expressions of the same evil domain: corruption of judgment (קלקול המשפט) through bribery (שחד) causes distortion of the eyes/vision (קלקול לעינים), which manifests as foreign thoughts during prayer (מחשבות זרות שבתפלה) — described as clouds covering the eyes (עננין דמכסין על עינין). Blinding (יעור) from bribery is the mechanism. All share the nature of the evil force that prevents proper prayer by darkening inner vision.",
+      "dominant_node": "קלקול לעינים",
+      "nodes": [
+        "קלקול לעינים",
+        "מחשבות זרות שבתפלה",
+        "עננין דמכסין על עינין",
+        "יעור",
+        "שחד",
+        "קלקול המשפט"
+      ],
+      "node_degrees": {
+        "קלקול לעינים": 2,
+        "מחשבות זרות שבתפלה": 2,
+        "עננין דמכסין על עינין": 1,
+        "יעור": 1,
+        "שחד": 1,
+        "קלקול המשפט": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["שחד", "קלקול המשפט"],
+          "reason": "The pair שחד/קלקול המשפט (id 2633) is the root cause of the entire evil cluster. Bribery (שחד) is the essential nature of distorted judgment (קלקול המשפט) — they are two expressions of the same evil reality. The same proof text passage shows that קלקול המשפט directly causes קלקול לעינים and מחשבות זרות. Merged into Package 4 as the causal root within the evil domain."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 2,
+      "volume": "lm2",
+      "label": "תִּקּוּן הַבְּרִית וְיוֹסֵף",
+      "label_en": "Covenant Rectification and Joseph",
+      "polarity": "good",
+      "reason": "These nodes share the essential nature of שמירת הברית (guarding the covenant): Joseph (יוסף) is the paradigm of covenant-keeping, purity (טהרה) is its defining quality, and 'לא יטמא' (not becoming impure) is its essential demand. All are expressions of the same domain of sexual holiness that enables Mashiach's weapon (prayer).",
+      "dominant_node": "תקון הברית",
+      "nodes": [
+        "תקון הברית",
+        "לא יטמא",
+        "טהרה",
+        "יוסף",
+        "חק",
+        "ברית"
+      ],
+      "node_degrees": {
+        "תקון הברית": 3,
+        "לא יטמא": 1,
+        "טהרה": 1,
+        "יוסף": 1,
+        "חק": 1,
+        "ברית": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["חק", "ברית"],
+          "reason": "The pair חק/ברית (id 584): 'כִּי חֹק לְיִשְׂרָאֵל הוּא, בְּחִינַת בְּרִית, כְּמוֹ שֶׁכָּתוּב חֹק בִּשְׁאֵרוֹת שָׂם'. The חק (statute) is the essential nature of the ברית — they are two names for the same covenantal demand. This belongs squarely with the ברית/תקון הברית package. Merged here because ברית shares essential nature with תקון הברית."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "torah_ref": 2,
+      "volume": "lm2",
+      "label": "הֲכָנָה לְזִוּוּג — בִּשּׁוּל וַאֲפִיָּה",
+      "label_en": "Preparation for Divine Union — Baking and Cooking",
+      "polarity": "neutral",
+      "reason": "These nodes describe the structural process of spiritual preparation: baking (אפיה) and cooking (בשול) are neutral physical processes that serve as metaphors for prayer-activity that prepares the Shekhinah for union (זווג). The proof text uses the kitchen metaphor for the accumulation of prayers building the Shekhinah's stature. The eating-union (אכילה/זווג) represents the fulfillment of that preparation. All share the nature of preparatory process toward spiritual union.",
+      "dominant_node": "הכנה לזווג",
+      "nodes": [
+        "הכנה לזווג",
+        "אפיה",
+        "בשול",
+        "אכילה",
+        "זווג",
+        "פנה ערף",
+        "דין"
+      ],
+      "node_degrees": {
+        "הכנה לזווג": 2,
+        "אפיה": 1,
+        "בשול": 1,
+        "אכילה": 1,
+        "זווג": 1,
+        "פנה ערף": 1,
+        "דין": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["אכילה", "זווג"],
+          "reason": "The pair אכילה/זווג (id 1053): 'לָאֲכִילָה, לִבְחִינַת זִוּוּג' — eating is an aspect of union. The proof text for אפיה/בשול also references this same verse (Genesis 39: 'כִּי אִם הַלֶּחֶם אֲשֶׁר הוּא אוֹכֵל'). These are two names for the same experiential reality of the Shekhinah receiving prayer and achieving union. Merged here as the fulfillment dimension of the preparation cluster."
+        },
+        {
+          "merged_nodes": ["פנה ערף", "דין"],
+          "reason": "The pair פנה ערף/דין (id 740): 'פָנָה עֹרֶף שֶׁהוּא בְּחִינוֹת דִּין' — turning the back of the neck is an aspect of strict judgment/divine absence. This represents the inverse state to the union (זווג) — when prayers fail to reach their destination and God 'turns away' (פנה ערף), strict judgment (דין) reigns. Thematically this could be placed with the evil cluster (Package 4), but structurally it is the anti-union counterpart to Package 6. The shared essential nature is: the structural conditions of the divine-human relational axis. Placed here as the negative pole of the union/preparation domain."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 44,
+    "total_nodes": 57,
+    "raw_connected_components": 13,
+    "total_packages": 6,
+    "nodes_by_package": {
+      "package_1": 23,
+      "package_2": 8,
+      "package_3": 6,
+      "package_4": 6,
+      "package_5": 6,
+      "package_6": 7
+    }
+  }
+}

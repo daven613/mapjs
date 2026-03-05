@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "source": "Torah #99",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, then all edges from torahData.js with reference===99 (found 2 edges: 1 bechina, 1 eitza). Then read torah_99.txt in full. Systematically identified every occurrence of bechina language: בְּחִינַת, נִקְרֵאת/נִקְרָא, לְשׁוֹן, הַיְנוּ (used as a conceptual equation). Each concept so identified was checked against the dataset. Torah #99 is 7 lines long — a single, tightly focused teaching on prayer with devekut."
+  },
+  "dataset_bechina_edge_summary": {
+    "total_reference_99_edges": 2,
+    "bechina_edges": 1,
+    "eitza_edges": 1,
+    "bechina_edge_details": [
+      {
+        "id": 2839,
+        "node1_id": "תפלה בדבקות",
+        "node1_text": "לְהִתְפַּלֵּל בִּדְבֵקוּת",
+        "node2_id": "שגורה תפלתי בפי",
+        "node2_text": "שְׁגוּרָה תְּפִלָּתִי בְּפִי",
+        "proof": "לְהִתְפַּלֵּל בִּדְבֵקוּת, שֶׁהוּא בְחִינַת שְׁגוּרָה תְּפִלָּתִי בְּפִי",
+        "type": "bechina",
+        "note": "Directly captured from line 7 of torah_99.txt: 'שֶׁהוּא בְחִינַת: שְׁגוּרָה תְּפִלָּתִי בְּפִי'. Correctly classified. These two nodes share one essential nature: the inner-outer unity of authentic prayer."
+      }
+    ],
+    "eitza_edge_details": [
+      {
+        "id": 3196,
+        "node1_id": "דבקות",
+        "node1_text": "בִּדְבֵקוּת",
+        "node2_id": "תפלה שגורה ומרצה בפיו, מקבלת",
+        "node2_text": "הַתְּפִלָּה שְׁגוּרָה וּמְרֻצָּה בְּפִיו, מְקֻבֶּלֶת",
+        "type": "eitza",
+        "note": "Devekut (as a quality of prayer) produces the outcome that prayer is accepted (mekubbelet). This is correctly classified as eitza: devekut causes/enables the prayer's acceptance. The node 'תפלה שגורה ומרצה בפיו, מקבלת' is a result-state description, not a bechina-equivalent of devekut. Note: 'דבקות' in this edge overlaps conceptually with 'תפלה בדבקות' in the bechina edge — they are near-aliases, but the eitza edge captures the directional consequence (accepted prayer as outcome), not shared essential nature."
+      }
+    ]
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "תְּפִלָּה בִּדְבֵקוּת וּשְׁגִירַת הַפֶּה",
+      "node_id": "תפלה בדבקות",
+      "node_text": "לְהִתְפַּלֵּל בִּדְבֵקוּת",
+      "polarity": "good",
+      "reason": "Line 7 of torah_99.txt and the dataset edge (ID 2839) both establish this node via explicit bechina language: 'לְהִתְפַּלֵּל בִּדְבֵקוּת, שֶׁהוּא בְחִינַת שְׁגוּרָה תְּפִלָּתִי בְּפִי.' Prayer-with-devekut is the dominant node of Package 1. It is chosen as dominant over 'שגורה תפלתי בפי' because the entire teaching of Torah #99 is structured around whether one can achieve devekut — devekut is the subject, and fluency is its sign/expression. The node already exists in the dataset as part of the bechina edge. No new edge is needed — it is already connected.",
+      "source_quote": "לְהִתְפַּלֵּל בִּדְבֵקוּת, שֶׁהוּא בְחִינַת שְׁגוּרָה תְּפִלָּתִי בְּפִי",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 2839
+    },
+    {
+      "package_id": 1,
+      "package_label": "תְּפִלָּה בִּדְבֵקוּת וּשְׁגִירַת הַפֶּה",
+      "node_id": "שגורה תפלתי בפי",
+      "node_text": "שְׁגוּרָה תְּפִלָּתִי בְּפִי",
+      "polarity": "good",
+      "reason": "Line 7: 'שֶׁהוּא בְחִינַת: שְׁגוּרָה תְּפִלָּתִי בְּפִי' — this phrase from the Talmud (Berakhot 34b, Rabbi Chanina ben Dosa) is declared the bechina of prayer-with-devekut. The fluency and flowing articulation of prayer in the mouth IS the bechina of devekut. This is the outer expression — the sign by which one recognizes the inner state. It is already in the dataset as part of bechina edge ID 2839. Both nodes belong to Package 1.",
+      "source_quote": "בָּעֵת הַהִוא לֵאמֹר – הַיְנוּ בְּעֵת שֶׁאֶזְכֶּה לְהִתְפַּלֵּל בִּדְבֵקוּת, שֶׁהוּא בְּחִינַת: שְׁגוּרָה תְּפִלָּתִי בְּפִי",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 2839
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "תְּפִלָּה (prayer, general)",
+      "reason": "תְּפִלָּה appears throughout the text as the general concept of prayer (lines 2, 3, 4, 5, 6, 7). However, the bechina declaration in line 7 specifies תְּפִלָּה בִּדְבֵקוּת (prayer WITH devekut) — a qualified form of prayer. The general term תְּפִלָּה without the qualifier appears in descriptive and eitza contexts, not as the subject of a bechina equation. The teaching uses 'תְּפִלָּה' when discussing what to always do (eitza: pray always), not when equating it via bechina language to another concept. Excluded as a separate addition; captured in the qualified form תְּפִלָּה בִּדְבֵקוּת."
+    },
+    {
+      "concept": "דְּבֵקוּת (devekut / cleaving to God, standalone)",
+      "reason": "The eitza edge (ID 3196) uses the node 'דבקות' as a standalone concept. In the bechina edge, it appears as 'תפלה בדבקות' (the composite). In the source text, devekut is discussed as the quality that prayer should have, but no bechina declaration equates devekut-alone (without the prayer qualifier) to another concept in this Torah. The teaching is specifically about prayer-in-devekut as a unified experience. Excluded as a standalone addition; the qualified form 'תפלה בדבקות' captures its bechina meaning here."
+    },
+    {
+      "concept": "תְּפִלָּה מְקֻבֶּלֶת (accepted prayer)",
+      "reason": "Lines 3, 4, 7: An accepted prayer (מְקֻבֶּלֶת) is the result of praying with devekut. This is explicitly framed as a consequence ('אֲזַי הַתְּפִלָּה שְׁגוּרָה וּמְרֻצָּה בְּפִיו, מְקֻבֶּלֶת') — an eitza outcome of devekut, not a bechina-equivalent. The eitza edge (ID 3196) correctly captures this relationship: devekut → accepted/flowing prayer. No bechina declaration equates 'accepted prayer' to another concept. Excluded."
+    },
+    {
+      "concept": "תְּפִלָּה שֶׁלֹּא בִּדְבֵקוּת (prayer without devekut)",
+      "reason": "Lines 3, 4: Prayer without devekut is mentioned as a recurring reality ('אִם לִפְעָמִים יֵשׁ עֵת שֶׁאֵינוֹ יָכוֹל לְהִתְפַּלֵּל בִּדְבֵקוּת'). The Rebbe instructs the person to pray anyway, with full effort ('יִתְפַּלֵּל בְּכָל כֹּחוֹ'). This state is not given bechina language — there is no 'תפלה שלא בדבקות הוא בחינת X' declaration. It is mentioned in the context of practical halachic guidance (eitza). Excluded."
+    },
+    {
+      "concept": "וָאֶתְחַנַּן (Deuteronomy 3:23 — 'I pleaded with God')",
+      "reason": "Line 1 and line 6: The verse 'וָאֶתְחַנַּן אֶל ה' בָּעֵת הַהִיא לֵאמֹר' is the Torah's proof text and structural anchor. Line 6 interprets it: 'תָּמִיד, בֵּין בִּדְבֵקוּת בֵּין שֶׁלֹּא בִּדְבֵקוּת' — always pray, with or without devekut. This is a hermeneutical reading (derash), not a bechina equation. The verse is being interpreted to support the practical teaching, not equated via bechina language to another concept. Excluded."
+    },
+    {
+      "concept": "בָּעֵת הַהִוא לֵאמֹר (the time of speaking / the moment of accepted prayer)",
+      "reason": "Line 7: The phrase 'בָּעֵת הַהִוא לֵאמֹר' is interpreted by the Rebbe as referring to 'the time when one merits to pray with devekut' ('בְּעֵת שֶׁאֶזְכֶּה לְהִתְפַּלֵּל בִּדְבֵקוּת'). The Rebbe then adds 'שֶׁהוּא בְחִינַת שְׁגוּרָה תְּפִלָּתִי בְּפִי'. The bechina here applies to the quality of devekut (via the prayer-state), not to the verse-phrase itself as a concept. The verse phrase is the hermeneutical vehicle for the bechina declaration, not itself a concept node. Excluded as a standalone node."
+    },
+    {
+      "concept": "הַדְּבָרִים נֶאֱמָרִים וּמְרֻצִּים בְּפִיו (the words are spoken and flowing from his mouth)",
+      "reason": "Line 7: 'שֶׁהַדְּבָרִים נֶאֱמָרִים וּמְרֻצִּים בְּפִיו מֵחֲמַת שֶׁמִּתְפַּלֵּל בִּדְבֵקוּת' — the words are fluent and acceptable in his mouth because he prays with devekut. This is a descriptive explanation of what 'שגורה תפלתי בפי' means in practice, not a separate bechina declaration introducing a new concept node. It is subsumed within the already-captured bechina pair. Excluded."
+    },
+    {
+      "concept": "כָּל הַתְּפִלּוֹת (all the previous prayers)",
+      "reason": "Line 5: 'אֲזַי יַעֲלֶה כָּל הַתְּפִלּוֹת עִם הַתְּפִלָּה הַהִיא שֶׁהִתְפַּלֵּל כָּרָאוּי' — when one prays with proper devekut, all previous tefillot rise together with that prayer. This is the eitza conclusion of the teaching — a consequence of achieving devekut, not a bechina-equivalent of anything. Excluded."
+    },
+    {
+      "concept": "רַבִּי חֲנִינָא בֶּן דּוֹסָא (the Talmudic figure invoked)",
+      "reason": "Lines 3-4: Rabbi Chanina ben Dosa is cited from Berakhot 34b as the source for the principle that fluency of prayer = acceptance. He is a historical figure/proof-source, not a conceptual node declared equivalent to another concept via bechina language. Excluded."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_99_edges": 2,
+    "total_reference_99_bechina_edges": 1,
+    "total_reference_99_eitza_edges": 1,
+    "nodes_in_dataset_not_in_packages": [],
+    "bechina_nodes_in_dataset": [
+      "תפלה בדבקות",
+      "שגורה תפלתי בפי"
+    ],
+    "concepts_in_source_text_not_in_dataset_as_bechina": [],
+    "important_note": "Torah #99 is fully covered by a single dataset bechina edge. Both nodes in that edge are correctly assigned to Package 1. No gaps were found — the source text contains exactly one bechina declaration, which matches the dataset edge precisely. The eitza edge (ID 3196) correctly captures the directional consequence of devekut. No new bechina additions are required.",
+    "structural_observation": "Torah #99 is the shortest torah analyzed so far — a single brief teaching with one bechina equation at its heart. It is structurally complete: one bechina package (the inner-outer unity of devekut prayer), one eitza flow (devekut produces accepted prayer), one practical instruction (pray always regardless of devekut state). The simplicity reflects the teaching's rhetorical purpose: not to build an elaborate conceptual structure but to give direct practical guidance to the person in prayer.",
+    "good_evil_mirror": "ABSENT. Torah #99 has no evil bechina cluster. The negative — prayer without devekut — is addressed pastorally (pray anyway, try with all your strength), not ontologically. There is no 'evil prayer,' no 'sitra achra prayer,' no parallel negative bechina domain. This is consistent with the teaching's simple, practical character."
+  }
+}

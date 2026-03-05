@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "source": "Torah #101 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_101_packages.json, all reference===101 bechina edges from torahData.js (20 edges), and the full source text torah_101.txt. For each explicit bechina statement in the source text (בְּחִינַת, הוּא בְּחִינַת, נִקְרָא, זֶהוּ בְּחִינַת), the corresponding node was checked against the dataset. Nodes using bechina language but absent from the reference-101 edge list are flagged as gaps."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "אַנְפִּין נְהִירִין",
+      "node_id": "סם חיים",
+      "node_text": "סַם חַיִּים",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly states in Section 5 of the source text: 'סַם חַיִּים, הוּא אַנְפִּין נְהִירִין'. This is a direct, standalone bechina declaration (A is a bechina of B) equating סם חיים (the elixir of life — the Torah when used rightly) with אנפין נהירין. The Rebbe is interpreting the midrash on 'וְזֹאת הַתּוֹרָה אֲשֶׁר שָׂם מֹשֶׁה' — Torah studied meritoriously becomes an elixir of life (sam chayyim) and Torah studied unmeritoriously becomes a poison of death (sam mavet). The sam chayyim = luminous-face reality. This node should be added to Package 1 with a bechina edge to אנפין נהירין.",
+      "source_quote": "סַם חַיִּים, הוּא אַנְפִּין נְהִירִין",
+      "source_line": 5,
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "סם חיים",
+        "node2_id": "אנפין נהירין",
+        "reference": 101,
+        "type": "bechina"
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "אַנְפִּין חֲשׁוּכִין",
+      "node_id": "סם מות",
+      "node_text": "סַם מָוֶת",
+      "polarity": "evil",
+      "reason": "Directly parallel to the סם חיים gap above. Section 5 states: 'סַם מָוֶת, הוּא אַנְפִּין חֲשׁוּכִין'. This is an explicit bechina declaration equating the poison-of-death (Torah studied for wrong reasons, leading to ruin) with the dark-face domain. The evil mirror of סם חיים. The proof text quotes 'בְּמַחֲשַׁכִּים הוֹשִׁיבַנִי כְּמֵתֵי עוֹלָם' (Lamentations 3:6) — darkness = death = dark faces. This node belongs in Package 2 as a bechina of אנפין חשוכין.",
+      "source_quote": "סַם מָוֶת, הוּא אַנְפִּין חֲשׁוּכִין, כְּמוֹ שֶׁכָּתוּב: בְּמַחֲשַׁכִּים הוֹשִׁיבַנִי כְּמֵתֵי עוֹלָם",
+      "source_line": 5,
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "סם מות",
+        "node2_id": "אנפין חשוכין",
+        "reference": 101,
+        "type": "bechina"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "אַנְפִּין נְהִירִין",
+      "node_id": "עיקר שם אדם",
+      "node_text": "עִקַּר שֵׁם אָדָם",
+      "polarity": "good",
+      "reason": "Section 15–16 of the source text contains a cluster of bechina statements around the concept of אדם. The Rebbe states: 'עִקַּר בְּחִינַת אָדָם, הוּא בְּחִינַת הַשֵּׂכֶל הָאֲמִתִּי שֶׁזּוֹכִין לְהַשִֹּיג, דְּהַיְנוּ חָכְמוֹת הַתּוֹרָה הַקְּדוֹשָׁה'. The name Adam (אדם) is declared to be a bechina of the true intellect (שכל האמיתי = חכמות התורה = אנפין נהירין). Moreover, Section 16 completes this: 'נִמְצָא שֶׁעִקַּר שֵׁם אָדָם, הוּא בְּחִינַת הַשֵּׂכֶל הָאֲמִתִּי, דְּהַיְנוּ חָכְמוֹת הַתּוֹרָה, שֶׁהוּא בְּחִינַת אַנְפִּין נְהִירִין'. The gematria of אדם = 45 = three times יק (Yud-Kaf = 15 × 3), which is established via edge 2953 as the three sekhel-faculties. The concept 'עיקר שם אדם' (the core meaning of the name Adam) is the culminating bechina of Package 1 — it is what the Torah is arguing for: that a person attains the title Adam through Torah-intellect = אנפין נהירין. This should be added as a bechina of אנפין נהירין.",
+      "source_quote": "נִמְצָא שֶׁעִקַּר שֵׁם אָדָם, הוּא בְּחִינַת הַשֵּׂכֶל הָאֲמִתִּי, דְּהַיְנוּ חָכְמוֹת הַתּוֹרָה, שֶׁהוּא בְּחִינַת אַנְפִּין נְהִירִין",
+      "source_line": 16,
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "עיקר שם אדם",
+        "node2_id": "אנפין נהירין",
+        "reference": 101,
+        "type": "bechina"
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_101_bechina_edges": 20,
+    "total_reference_101_edges_all_types": 32,
+    "nodes_accounted_for_in_packages": {
+      "package_1": [
+        "אנפין נהירין",
+        "מה שאדם מבין ומשיג בשכלו",
+        "תורה",
+        "י\"ה",
+        "חכמות התורה",
+        "תרין רעין דלא מתפרשין",
+        "ידיעת והשגת התורה",
+        "קדשת ישראל עם קדוש",
+        "שכל פשוט",
+        "חכמה",
+        "כשלומד ומבין",
+        "בינה",
+        "כשיודע התורה",
+        "דעת",
+        "חמשה חמשי תורה",
+        "חמשת מוצאות הפה",
+        "שלש שכליות אלו",
+        "ידים לתורה",
+        "יד הגדולה ויד החזקה ויד הרמה",
+        "אלו השלשה שכליים",
+        "שלש פעמים י\"ק"
+      ],
+      "package_2": [
+        "אנפין חשוכין",
+        "מה שאינו משיג",
+        "שבעים עכו\"ם",
+        "חשכות והסתרת הידיעה",
+        "תאוות ומדות רעות",
+        "מדות רעות של העכו\"ם",
+        "על דרך ארץ",
+        "שעבוד בגשמיות",
+        "על מלכות"
+      ]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "סם חיים",
+      "סם מות",
+      "עיקר שם אדם"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "ע' אנפין נהירין / ע' אנפין חשוכין (seventy luminous / seventy dark faces)",
+        "reason": "Section 4 mentions 'יֵשׁ ע' אַנְפִּין נְהִירִין, וְיֵשׁ ע' אַנְפִּין חֲשׁוּכִין' but this is a descriptive elaboration of אנפין נהירין/חשוכין, not a new bechina pair. The 70-faces concept does not appear as a separate node with a distinct bechina declaration — it is integrated into the existing nodes שבעים עכו\"ם (edge 383: שבעים עכו\"ם ↔ אנפין חשוכין) which IS in the dataset. No new gap node."
+      },
+      {
+        "concept": "חכמת אדם תאיר פניו (Ecclesiastes 8:1)",
+        "reason": "Section 8 cites this verse as proof-text for the identity of Torah-study with אנפין נהירין: 'בְּחִינַת: חָכְמַת אָדָם תָּאִיר פָּנָיו'. The verse itself describes אנפין נהירין but the Rebbe is using it as a proof-citation, not establishing it as a new bechina node distinct from אנפין נהירין. Its content is fully captured by the existing אנפין נהירין cluster. No gap."
+      },
+      {
+        "concept": "אתם קרויים אדם (Yevamot 61a)",
+        "reason": "The Rebbe quotes 'אַתֶּם קְרוּיִין אָדָם, וְאֵין הָעַכּוּ\"ם קְרוּיִין אָדָם' repeatedly as the Torah's opening theme. This is the conclusion of the argument (Israel attains the title Adam through Torah-intellect), which we have captured via the gap addition 'עיקר שם אדם'. The rabbinic dictum itself is not a separate bechina node — it is the proof-text establishing why Israel = Adam. No additional gap."
+      },
+      {
+        "concept": "פורק ממנו עול תורה (one who removes the Torah yoke)",
+        "reason": "Section 7: 'כָּל הַפּוֹרֵק מִמֶּנּוּ עֹל תּוֹרָה, נוֹתְנִין עָלָיו עֹל מַלְכוּת וְעֹל דֶּרֶךְ אֶרֶץ'. This is an eitza statement (if one removes Torah-yoke, then the other yokes are placed upon him) — it describes a causal consequence, not a bechina parallel. It is classified as eitza and correctly appears in the eitza edges in the dataset. No bechina gap."
+      },
+      {
+        "concept": "ספיר / נהיר / לבנת הספיר",
+        "reason": "Section 10: 'לְמִסְפַּר, הוּא לְשׁוֹן סַפִּיר וּנְהִיר'. This word-etymology (mispar = sapphire = nohir = luminous) is used to support the bechina of אנפין נהירין. It is not establishing ספיר as a separate bechina node — it is etymological proof-text. No new node gap."
+      },
+      {
+        "concept": "עצמיות (selfhood/animal ego)",
+        "reason": "Section 13: 'לְהָמִית עַצְמִיּוּתוֹ, שֶׁהֵם בְּחִינַת הַמִּדּוֹת רָעוֹת וְהַתַּאֲווֹת רָעוֹת'. עצמיות (selfish ego) is described as 'being' the bad traits and desires — but this is not phrased as a standalone bechina declaration using the standard formula (X הוא בחינת Y). It is descriptive elaboration within an eitza context (dying to one's ego in order to receive Torah). The bad traits are already captured by תאוות ומדות רעות (edge 3068). No new gap node."
+      }
+    ]
+  }
+}

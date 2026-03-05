@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "source": "Torah #26 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "חסדים",
+      "node_text": "חֲסָדִים",
+      "polarity": "good",
+      "reason": "The Torah's foundational teaching is 'הַדַּעַת מְלֻבָּשׁ בַּחֲסָדִים' (Da'at is clothed in Chassadim). Chassadim is the receiving vessel and expression of Da'at in the world. It belongs with Da'at/Moshe/Avraham as one of the core nodes of Package 1. The dataset captures this indirectly through the compound node 'התלבשות הדעת בחסדים' but does not have a direct simple bechina edge linking 'דעת' and 'חסדים' as two names for the same clothed-in-each-other reality.",
+      "source_quote": "כִּי הַדַּעַת מְלֻבָּשׁ בַּחֲסָדִים",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "מתפתה",
+      "node_text": "מִתְפַּתֶּה",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly calls 'מִתְפַּתֶּה' (being persuadable/appeased) a bechina of Chassadim: 'מִתְפַּתֶּה דַּיְקָא, בְּחִינַת חֲסָדִים'. This means the quality of being open, softened, appeased, is the very same nature as Chassadim — another face of the Chesed/Avraham domain. It belongs in Package 1.",
+      "source_quote": "מִתְפַּתֶּה דַּיְקָא, בְּחִינַת חֲסָדִים, שֶׁעַל־יְדֵי הַיַּיִן נִגְדָּלִין הַחֲסָדִים",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "evil_mirror_gap": {
+    "note": "The source text describes an evil domain with explicit concepts (שִׁכְרוּת, גְּבוּרוֹת דְּסִטְרָא אָחָרָא, כַּעַס וָרֹגֶז) but the dataset has zero bechina edges for this domain. The evil side is described only causally (eitza): excessive drinking LEADS TO Gevurot d'Sitra Achra, which PRODUCES anger. No bechina equivalences are stated for the evil side, so no evil package can be built from the dataset. However, the following concepts form the implicit evil mirror and could be added as a future bechina package if source evidence is found:",
+    "implicit_evil_nodes": [
+      {
+        "node_id": "שכרות",
+        "node_text": "שִׁכְרוּת",
+        "polarity": "evil",
+        "source_quote": "אֲבָל הַשּׁוֹתֶה יוֹתֵר מִדַּאי וּמִשְׁתַּכֵּר, אֲזַי אַדְּרַבָּא, מִתְגַּבְּרִין תֹּקֶף הַגְּבוּרוֹת"
+      },
+      {
+        "node_id": "גבורות דסטרא אחרא",
+        "node_text": "גְּבוּרוֹת דְּסִטְרָא אָחָרָא",
+        "polarity": "evil",
+        "source_quote": "וְלִפְעָמִים מִתְגַּבְּרִין גְּבוּרוֹת דְּסִטְרָא־אָחָרֳא"
+      },
+      {
+        "node_id": "כעס ורגז",
+        "node_text": "כַּעַס וָרֹגֶז",
+        "polarity": "evil",
+        "source_quote": "וְנַעֲשֶׂה כַּעַס וָרֹגֶז"
+      }
+    ]
+  },
+  "analysis_notes": {
+    "total_bechina_edges": 3,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "חסדים (as a standalone simple node bechina-linked to דעת)",
+      "מתפתה (explicitly called bechina of Chassadim in line 3)"
+    ],
+    "observations": "This is a very short Torah (7 lines). The dataset captures the core structural bechinas but misses two important nodes: (1) חסדים as a standalone node bechina-equivalent to דעת, and (2) מתפתה which is explicitly labeled בְּחִינַת חֲסָדִים. The compound node 'התלבשות הדעת בחסדים' in the dataset partially captures חסדים but as a compound event-description rather than a standalone concept node. All 6 dataset nodes are assigned to Package 1 with no orphans."
+  }
+}

@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Package Review — Torah #1</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; min-height: 100vh; }
+
+  /* ── Header ── */
+  .header {
+    background: #1a1a2e;
+    color: white;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .header h1 { font-size: 1.2rem; font-weight: 600; }
+  .header-meta { font-size: 0.85rem; color: #aaa; margin-top: 2px; }
+  .header-nav { display: flex; gap: 12px; align-items: center; }
+  .nav-link {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    transition: all 0.15s;
+  }
+  .nav-link:hover { background: #334155; color: white; }
+  .progress-wrap { width: 200px; }
+  .progress-bar-bg { background: #333; border-radius: 10px; height: 8px; margin-top: 5px; }
+  .progress-bar-fill { background: #4ade80; height: 8px; border-radius: 10px; transition: width 0.3s; }
+  .progress-label { font-size: 0.75rem; color: #aaa; margin-top: 3px; text-align: center; }
+
+  /* ── Stats bar ── */
+  .stats-bar {
+    background: white;
+    padding: 10px 30px;
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.85rem;
+    align-items: center;
+  }
+  .stat { display: flex; align-items: center; gap: 6px; }
+  .stat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .dot-pending  { background: #94a3b8; }
+  .dot-accept   { background: #22c55e; }
+  .dot-reject   { background: #ef4444; }
+
+  /* ── Main layout ── */
+  .main { max-width: 900px; margin: 28px auto; padding: 0 20px 80px; }
+
+  /* ── Section title ── */
+  .section-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin: 28px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    direction: ltr;
+  }
+
+  /* ── Package card ── */
+  .pkg-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    margin-bottom: 18px;
+    overflow: hidden;
+    border-left: 5px solid transparent;
+  }
+  .pkg-card.polarity-good { border-left-color: #22c55e; }
+  .pkg-card.polarity-evil { border-left-color: #ef4444; }
+  .pkg-card.polarity-neutral { border-left-color: #94a3b8; }
+
+  .pkg-header {
+    padding: 14px 20px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .pkg-header-left { display: flex; align-items: center; gap: 12px; }
+
+  .polarity-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    padding: 3px 9px;
+    border-radius: 99px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  .pol-good    { background: #dcfce7; color: #15803d; }
+  .pol-evil    { background: #fee2e2; color: #b91c1c; }
+  .pol-neutral { background: #f1f5f9; color: #475569; }
+
+  .pkg-names { direction: rtl; }
+  .pkg-label-he { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; }
+  .pkg-label-en { font-size: 0.78rem; color: #64748b; direction: ltr; text-align: left; margin-top: 1px; }
+
+  .pkg-header-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .pkg-counts { font-size: 0.78rem; color: #94a3b8; direction: ltr; }
+  .accept-all-btn {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: none;
+    background: #dcfce7;
+    color: #15803d;
+    cursor: pointer;
+    direction: ltr;
+    transition: background 0.15s;
+  }
+  .accept-all-btn:hover { background: #bbf7d0; }
+
+  .pkg-reason-wrap {
+    padding: 10px 20px 4px;
+    background: #fafafa;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .pkg-reason-toggle {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    cursor: pointer;
+    direction: ltr;
+    text-align: left;
+    user-select: none;
+  }
+  .pkg-reason-toggle:hover { color: #475569; }
+  .pkg-reason {
+    font-size: 0.8rem;
+    color: #475569;
+    line-height: 1.55;
+    direction: ltr;
+    text-align: left;
+    padding: 6px 0 8px;
+    display: none;
+  }
+  .pkg-reason.open { display: block; }
+
+  /* ── Node chips ── */
+  .node-chips {
+    padding: 14px 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    direction: rtl;
+  }
+
+  .node-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 6px 5px 10px;
+    border-radius: 99px;
+    border: 1.5px solid #e2e8f0;
+    background: #f8fafc;
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: background 0.15s, border-color 0.15s;
+    cursor: default;
+  }
+  .node-chip.dominant {
+    border-style: dashed;
+    border-color: #94a3b8;
+  }
+  .node-chip.accept {
+    background: #f0fdf4;
+    border-color: #86efac;
+    color: #14532d;
+  }
+  .node-chip.reject {
+    background: #fff5f5;
+    border-color: #fca5a5;
+    color: #991b1b;
+    text-decoration: line-through;
+    text-decoration-color: #ef4444;
+  }
+  .chip-text { white-space: nowrap; cursor: pointer; }
+  .chip-text:hover { text-decoration: underline dotted #94a3b8; }
+  .node-chip.selected { outline: 2px solid #3b82f6; outline-offset: 2px; }
+  .dominant-star {
+    font-size: 0.65rem;
+    color: #f59e0b;
+    flex-shrink: 0;
+  }
+
+  .chip-btns { display: flex; gap: 2px; flex-shrink: 0; }
+  .chip-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    font-size: 0.65rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.1s;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  .chip-accept {
+    background: #e2e8f0;
+    color: #475569;
+  }
+  .chip-accept:hover, .node-chip.accept .chip-accept {
+    background: #22c55e;
+    color: white;
+  }
+  .chip-reject {
+    background: #e2e8f0;
+    color: #475569;
+  }
+  .chip-reject:hover, .node-chip.reject .chip-reject {
+    background: #ef4444;
+    color: white;
+  }
+
+  /* ── Proof panel ── */
+  .pkg-proof-panel {
+    display: none;
+    padding: 14px 20px;
+    border-top: 2px solid #bfdbfe;
+    background: #eff6ff;
+  }
+  .pkg-proof-panel.open { display: block; }
+  .proof-panel-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #1d4ed8;
+    direction: ltr;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .proof-close {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .proof-close:hover { color: #ef4444; }
+  .proof-entry {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #bfdbfe;
+  }
+  .proof-entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .proof-nodes {
+    font-size: 0.72rem;
+    color: #3b82f6;
+    direction: ltr;
+    margin-bottom: 5px;
+    font-family: monospace;
+  }
+  .proof-quote {
+    font-size: 0.88rem;
+    color: #1e3a5f;
+    line-height: 1.75;
+    direction: rtl;
+    text-align: right;
+    background: white;
+    border-right: 3px solid #3b82f6;
+    padding: 7px 12px 7px 8px;
+    border-radius: 4px 0 0 4px;
+  }
+  .proof-none { font-size: 0.8rem; color: #94a3b8; direction: ltr; }
+
+  /* ── Addition cards ── */
+  .addition-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    margin-bottom: 14px;
+    overflow: hidden;
+    border: 2px solid #e2e8f0;
+    transition: border-color 0.2s;
+  }
+  .addition-card.accept { border-color: #22c55e; }
+  .addition-card.reject { border-color: #ef4444; }
+
+  .add-header {
+    padding: 12px 18px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .add-header-left { display: flex; align-items: center; gap: 10px; }
+
+  .add-type-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    padding: 3px 9px;
+    border-radius: 99px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  .type-unassigned { background: #ede9fe; color: #7c3aed; }
+  .type-new-node   { background: #dbeafe; color: #1d4ed8; }
+
+  .add-to-pkg {
+    font-size: 0.8rem;
+    color: #475569;
+    direction: ltr;
+    text-align: left;
+  }
+  .add-to-pkg strong { color: #1a1a2e; }
+
+  .status-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 99px;
+    flex-shrink: 0;
+  }
+  .badge-pending  { background: #f1f5f9; color: #64748b; }
+  .badge-accept   { background: #dcfce7; color: #15803d; }
+  .badge-reject   { background: #fee2e2; color: #b91c1c; }
+
+  .add-body { padding: 14px 18px; }
+
+  .add-node-display {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 10px;
+    direction: rtl;
+  }
+  .add-node-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+  .add-node-id-label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-family: monospace;
+    direction: ltr;
+  }
+
+  .add-reason {
+    font-size: 0.8rem;
+    color: #475569;
+    line-height: 1.6;
+    direction: ltr;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .source-quote {
+    font-size: 0.82rem;
+    background: #f8fafc;
+    border-left: 3px solid #cbd5e1;
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    color: #334155;
+    direction: rtl;
+    text-align: right;
+    line-height: 1.7;
+  }
+
+  .add-actions {
+    padding: 12px 18px;
+    background: #f8fafc;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    gap: 10px;
+    direction: ltr;
+  }
+  .action-btn {
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 7px 18px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .action-btn.accept-action {
+    background: #f0fdf4;
+    color: #15803d;
+    border-color: #86efac;
+  }
+  .action-btn.accept-action:hover, .action-btn.accept-action.active {
+    background: #22c55e;
+    color: white;
+    border-color: #22c55e;
+  }
+  .action-btn.reject-action {
+    background: #fff5f5;
+    color: #b91c1c;
+    border-color: #fca5a5;
+  }
+  .action-btn.reject-action:hover, .action-btn.reject-action.active {
+    background: #ef4444;
+    color: white;
+    border-color: #ef4444;
+  }
+
+  /* ── Export bar ── */
+  .export-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1a1a2e;
+    color: white;
+    padding: 14px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.2);
+  }
+  .export-bar-label { font-size: 0.88rem; color: #94a3b8; direction: ltr; }
+  .export-bar-label span { color: white; font-weight: 700; }
+  .export-btn {
+    background: #4ade80;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 22px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .export-btn:hover { background: #22c55e; }
+  .export-btn:disabled { background: #334155; color: #64748b; cursor: default; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1 id="page-title">Package Review — Torah #…</h1>
+    <div class="header-meta">Review node membership · Accept or reject each concept</div>
+  </div>
+  <div class="header-nav">
+    <a href="review-index.html" class="nav-link">← All Torahs</a>
+    <a href="review.html" class="nav-link">Changes Review</a>
+  </div>
+  <div class="progress-wrap">
+    <div id="progress-label" class="progress-label">0 / 0 reviewed</div>
+    <div class="progress-bar-bg">
+      <div id="progress-fill" class="progress-bar-fill" style="width:0%"></div>
+    </div>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat"><div class="stat-dot dot-pending"></div><span id="stat-pending">— pending</span></div>
+  <div class="stat"><div class="stat-dot dot-accept"></div><span id="stat-accept">— accepted</span></div>
+  <div class="stat"><div class="stat-dot dot-reject"></div><span id="stat-reject">— rejected</span></div>
+</div>
+
+<div class="main">
+  <div class="section-title">Package Node Membership — Review which concepts belong in each package</div>
+  <div id="packages-container"></div>
+
+  <div class="section-title">Proposed Additions — Concepts to add to existing packages</div>
+  <div id="additions-container"></div>
+</div>
+
+<div class="export-bar">
+  <div class="export-bar-label">Decisions made: <span id="decision-count">0</span></div>
+  <button class="export-btn" onclick="exportDecisions()" id="export-btn">Export Decisions</button>
+</div>
+
+<script src="../torahData.js"></script>
+<script>
+'use strict';
+
+const torahNum = parseInt(new URLSearchParams(location.search).get('torah') || '1', 10);
+document.getElementById('page-title').textContent = 'Package Review — Torah #' + torahNum;
+document.title = 'Package Review — Torah #' + torahNum;
+
+let packagesData = null;
+let additionsData = null;
+let nodeProofs = {}; // nodeId -> [edge, ...]
+let selectedChipKey = null; // "pkgId:nodeId"
+// decisions[key] = 'accept' | 'reject'
+// keys: "node:{pkgId}:{nodeId}" or "addition:{nodeId}"
+const decisions = {};
+
+const pkgFile  = 'torah_' + torahNum + '_packages.json';
+const addFile  = 'torah_' + torahNum + '_additions.json';
+
+Promise.all([
+  fetch(pkgFile).then(r => r.json()),
+  fetch(addFile).then(r => { if (!r.ok) return { additions: [], unassigned_dataset_nodes: [] }; return r.json(); })
+]).then(([pkgs, adds]) => {
+  packagesData = pkgs;
+  additionsData = adds;
+  buildNodeProofsIndex();
+  renderAll();
+}).catch(err => {
+  document.getElementById('packages-container').innerHTML =
+    '<div style="color:red;padding:20px;direction:ltr">Error loading data: ' + err.message + '</div>';
+});
+
+/* ───── Proof index ───── */
+
+function buildNodeProofsIndex() {
+  nodeProofs = {};
+  if (typeof torahData === 'undefined') return;
+  const ref1 = torahData.filter(e => e.reference === torahNum && e.type === 'bechina');
+  for (const edge of ref1) {
+    if (!nodeProofs[edge.node1_id]) nodeProofs[edge.node1_id] = [];
+    if (!nodeProofs[edge.node2_id]) nodeProofs[edge.node2_id] = [];
+    nodeProofs[edge.node1_id].push(edge);
+    nodeProofs[edge.node2_id].push(edge);
+  }
+}
+
+function toggleNodeProof(pkgId, nodeId) {
+  const panelEl = document.getElementById('proof-panel-pkg-' + pkgId);
+  if (!panelEl) return;
+  const key = pkgId + ':' + nodeId;
+
+  if (selectedChipKey === key) {
+    // Close
+    panelEl.classList.remove('open');
+    panelEl.innerHTML = '';
+    selectedChipKey = null;
+    clearChipSelected();
+    return;
+  }
+
+  clearChipSelected();
+  selectedChipKey = key;
+
+  // Mark chip selected
+  const chips = document.querySelectorAll('.node-chip[data-pkg-id="' + pkgId + '"]');
+  for (const c of chips) {
+    if (c.dataset.nodeId === nodeId) c.classList.add('selected');
+  }
+
+  // Build proof content
+  const proofs = nodeProofs[nodeId] || [];
+  let html = '<div class="proof-panel-title">'
+    + 'Proof sources for: ' + escapeHtml(nodeId) + ' (' + proofs.length + ' bechina edge' + (proofs.length !== 1 ? 's' : '') + ')'
+    + '<span class="proof-close" onclick="closeProofPanel(' + pkgId + ')">✕ close</span>'
+    + '</div>';
+
+  if (proofs.length === 0) {
+    html += '<div class="proof-none">No bechina edges found for this node in Torah #1.</div>';
+  } else {
+    for (const edge of proofs) {
+      const otherId = edge.node1_id === nodeId ? edge.node2_id : edge.node1_id;
+      html += '<div class="proof-entry">'
+        + '<div class="proof-nodes">Edge #' + Math.round(edge.id) + ' — '
+        + escapeHtml(nodeId) + ' ↔ ' + escapeHtml(otherId) + '</div>'
+        + '<div class="proof-quote">' + escapeHtml(edge.proof || '(no proof text)') + '</div>'
+        + '</div>';
+    }
+  }
+
+  panelEl.innerHTML = html;
+  panelEl.classList.add('open');
+}
+
+function closeProofPanel(pkgId) {
+  const panelEl = document.getElementById('proof-panel-pkg-' + pkgId);
+  if (panelEl) { panelEl.classList.remove('open'); panelEl.innerHTML = ''; }
+  clearChipSelected();
+  selectedChipKey = null;
+}
+
+function clearChipSelected() {
+  document.querySelectorAll('.node-chip.selected').forEach(c => c.classList.remove('selected'));
+}
+
+/* ───── Rendering ───── */
+
+function renderAll() {
+  renderPackages();
+  renderAdditions();
+  updateProgress();
+}
+
+function renderPackages() {
+  const container = document.getElementById('packages-container');
+  container.innerHTML = '';
+  for (const pkg of packagesData.packages) {
+    container.appendChild(buildPackageCard(pkg));
+  }
+}
+
+function buildPackageCard(pkg) {
+  const card = document.createElement('div');
+  const polCls = 'polarity-' + (pkg.polarity || 'neutral');
+  const polLabel = pkg.polarity === 'good' ? '● GOOD' : pkg.polarity === 'evil' ? '● EVIL' : '● NEUTRAL';
+  const polBadgeCls = 'pol-' + (pkg.polarity || 'neutral');
+
+  card.className = 'pkg-card ' + polCls;
+  card.dataset.pkgId = pkg.id;
+
+  const accepted = pkg.nodes.filter(n => decisions['node:' + pkg.id + ':' + n] === 'accept').length;
+  const rejected = pkg.nodes.filter(n => decisions['node:' + pkg.id + ':' + n] === 'reject').length;
+  const reviewed = accepted + rejected;
+
+  card.innerHTML =
+    '<div class="pkg-header">' +
+      '<div class="pkg-header-left">' +
+        '<span class="polarity-badge ' + polBadgeCls + '">' + polLabel + '</span>' +
+        '<div class="pkg-names">' +
+          '<div class="pkg-label-he">' + pkg.label + '</div>' +
+          '<div class="pkg-label-en">' + pkg.label_en + '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="pkg-header-right">' +
+        '<div class="pkg-counts" id="count-pkg-' + pkg.id + '">' + reviewed + ' / ' + pkg.nodes.length + ' reviewed</div>' +
+        '<button class="accept-all-btn" data-pkg-id="' + pkg.id + '">Accept All</button>' +
+      '</div>' +
+    '</div>' +
+    '<div class="pkg-reason-wrap">' +
+      '<div class="pkg-reason-toggle" data-pkg-id="' + pkg.id + '">▸ Show reasoning</div>' +
+      '<div class="pkg-reason" id="reason-pkg-' + pkg.id + '">' + escapeHtml(pkg.reason) + '</div>' +
+    '</div>' +
+    '<div class="node-chips" id="chips-pkg-' + pkg.id + '"></div>' +
+    '<div class="pkg-proof-panel" id="proof-panel-pkg-' + pkg.id + '"></div>';
+
+  // Add event listeners
+  card.querySelector('.accept-all-btn').addEventListener('click', () => acceptAllInPackage(pkg.id));
+  card.querySelector('.pkg-reason-toggle').addEventListener('click', function() {
+    const el = document.getElementById('reason-pkg-' + pkg.id);
+    el.classList.toggle('open');
+    this.textContent = el.classList.contains('open') ? '▾ Hide reasoning' : '▸ Show reasoning';
+  });
+
+  // Build chips
+  const chipsDiv = card.querySelector('#chips-pkg-' + pkg.id);
+  for (const nodeId of pkg.nodes) {
+    chipsDiv.appendChild(buildNodeChip(pkg.id, nodeId, pkg.dominant_node === nodeId));
+  }
+
+  return card;
+}
+
+function buildNodeChip(pkgId, nodeId, isDominant) {
+  const chip = document.createElement('div');
+  const decision = decisions['node:' + pkgId + ':' + nodeId] || 'pending';
+  chip.className = 'node-chip ' + decision + (isDominant ? ' dominant' : '');
+  chip.dataset.pkgId = pkgId;
+  chip.dataset.nodeId = nodeId;
+
+  const hasProof = nodeProofs[nodeId] && nodeProofs[nodeId].length > 0;
+  chip.innerHTML =
+    '<span class="chip-text" title="' + (hasProof ? 'Click to see proof quotes' : 'No proofs indexed') + '">' + escapeHtml(nodeId) + '</span>' +
+    (isDominant ? '<span class="dominant-star" title="Dominant node">★</span>' : '') +
+    '<div class="chip-btns">' +
+      '<button class="chip-btn chip-accept" title="Accept in package">✓</button>' +
+      '<button class="chip-btn chip-reject" title="Reject from package">✗</button>' +
+    '</div>';
+
+  chip.querySelector('.chip-text').addEventListener('click', () => toggleNodeProof(pkgId, nodeId));
+  chip.querySelector('.chip-accept').addEventListener('click', () => setNodeDecision(pkgId, nodeId, 'accept'));
+  chip.querySelector('.chip-reject').addEventListener('click', () => setNodeDecision(pkgId, nodeId, 'reject'));
+  return chip;
+}
+
+function setNodeDecision(pkgId, nodeId, decision) {
+  const key = 'node:' + pkgId + ':' + nodeId;
+  // Toggle off if same decision clicked again
+  decisions[key] = decisions[key] === decision ? undefined : decision;
+  if (decisions[key] === undefined) delete decisions[key];
+  refreshChip(pkgId, nodeId);
+  updatePackageCount(pkgId);
+  updateProgress();
+}
+
+function refreshChip(pkgId, nodeId) {
+  const chips = document.querySelectorAll('.node-chip[data-pkg-id="' + pkgId + '"]');
+  for (const chip of chips) {
+    if (chip.dataset.nodeId === nodeId) {
+      const decision = decisions['node:' + pkgId + ':' + nodeId] || 'pending';
+      chip.className = chip.className.replace(/\b(pending|accept|reject)\b/g, '').trim() + ' ' + decision;
+      return;
+    }
+  }
+}
+
+function updatePackageCount(pkgId) {
+  const pkg = packagesData.packages.find(p => p.id == pkgId);
+  if (!pkg) return;
+  const accepted = pkg.nodes.filter(n => decisions['node:' + pkgId + ':' + n] === 'accept').length;
+  const rejected = pkg.nodes.filter(n => decisions['node:' + pkgId + ':' + n] === 'reject').length;
+  const el = document.getElementById('count-pkg-' + pkgId);
+  if (el) el.textContent = (accepted + rejected) + ' / ' + pkg.nodes.length + ' reviewed';
+}
+
+function acceptAllInPackage(pkgId) {
+  const pkg = packagesData.packages.find(p => p.id == pkgId);
+  if (!pkg) return;
+  for (const nodeId of pkg.nodes) {
+    decisions['node:' + pkgId + ':' + nodeId] = 'accept';
+  }
+  // Rebuild chips for this package
+  const chipsDiv = document.getElementById('chips-pkg-' + pkgId);
+  if (chipsDiv) {
+    chipsDiv.innerHTML = '';
+    for (const nodeId of pkg.nodes) {
+      chipsDiv.appendChild(buildNodeChip(pkgId, nodeId, pkg.dominant_node === nodeId));
+    }
+  }
+  updatePackageCount(pkgId);
+  updateProgress();
+}
+
+/* ───── Additions ───── */
+
+function renderAdditions() {
+  const container = document.getElementById('additions-container');
+  container.innerHTML = '';
+
+  // Combine: unassigned nodes + new nodes
+  const items = [
+    ...(additionsData.unassigned_dataset_nodes || []).map(n => ({
+      type: 'unassigned',
+      node_id: n.node_id,
+      node_text: n.node_id,
+      to_package_id: n.suggested_package_id,
+      reason: n.reason,
+      source_quote: null
+    })),
+    ...(additionsData.additions || []).map(a => ({
+      type: 'new-node',
+      node_id: a.node_id,
+      node_text: a.node_text || a.node_id,
+      to_package_id: a.package_id,
+      reason: a.reason,
+      source_quote: a.source_quote || null
+    }))
+  ];
+
+  for (const item of items) {
+    container.appendChild(buildAdditionCard(item));
+  }
+}
+
+function buildAdditionCard(item) {
+  const pkg = packagesData.packages.find(p => p.id == item.to_package_id);
+  const pkgName = pkg ? (pkg.label + ' — ' + pkg.label_en) : ('Package ' + item.to_package_id);
+  const typeLabel = item.type === 'new-node' ? 'NEW NODE' : 'UNASSIGNED';
+  const typeCls = item.type === 'new-node' ? 'type-new-node' : 'type-unassigned';
+  const decision = decisions['addition:' + item.node_id] || 'pending';
+
+  const card = document.createElement('div');
+  card.className = 'addition-card ' + decision;
+  card.dataset.nodeId = item.node_id;
+
+  card.innerHTML =
+    '<div class="add-header">' +
+      '<div class="add-header-left">' +
+        '<span class="add-type-badge ' + typeCls + '">' + typeLabel + '</span>' +
+        '<div class="add-to-pkg">Add to Package ' + item.to_package_id + ': <strong>' + escapeHtml(pkgName) + '</strong></div>' +
+      '</div>' +
+      '<span class="status-badge badge-' + decision + '">' + decision.toUpperCase() + '</span>' +
+    '</div>' +
+    '<div class="add-body">' +
+      '<div class="add-node-display">' +
+        '<span class="add-node-text">' + escapeHtml(item.node_text) + '</span>' +
+        (item.node_text !== item.node_id ? '<span class="add-node-id-label">' + escapeHtml(item.node_id) + '</span>' : '') +
+      '</div>' +
+      '<div class="add-reason">' + escapeHtml(item.reason) + '</div>' +
+      (item.source_quote ? '<div class="source-quote">' + escapeHtml(item.source_quote) + '</div>' : '') +
+    '</div>' +
+    '<div class="add-actions">' +
+      '<button class="action-btn accept-action' + (decision === 'accept' ? ' active' : '') + '" data-node-id="' + escapeAttr(item.node_id) + '" data-decision="accept">' +
+        '✓ Accept — Add to Package ' + item.to_package_id +
+      '</button>' +
+      '<button class="action-btn reject-action' + (decision === 'reject' ? ' active' : '') + '" data-node-id="' + escapeAttr(item.node_id) + '" data-decision="reject">' +
+        '✗ Reject' +
+      '</button>' +
+    '</div>';
+
+  card.querySelectorAll('.action-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setAdditionDecision(item.node_id, btn.dataset.decision);
+    });
+  });
+
+  return card;
+}
+
+function setAdditionDecision(nodeId, decision) {
+  const key = 'addition:' + nodeId;
+  decisions[key] = decisions[key] === decision ? undefined : decision;
+  if (decisions[key] === undefined) delete decisions[key];
+
+  // Find and rebuild the specific addition card
+  const allItems = [
+    ...(additionsData.unassigned_dataset_nodes || []).map(n => ({
+      type: 'unassigned', node_id: n.node_id, node_text: n.node_id,
+      to_package_id: n.suggested_package_id, reason: n.reason, source_quote: null
+    })),
+    ...(additionsData.additions || []).map(a => ({
+      type: 'new-node', node_id: a.node_id, node_text: a.node_text || a.node_id,
+      to_package_id: a.package_id, reason: a.reason, source_quote: a.source_quote || null
+    }))
+  ];
+  const item = allItems.find(i => i.node_id === nodeId);
+  if (item) {
+    const oldCard = document.querySelector('.addition-card[data-node-id]');
+    // Find the right one
+    const allCards = document.querySelectorAll('.addition-card');
+    for (const c of allCards) {
+      if (c.dataset.nodeId === nodeId) {
+        c.replaceWith(buildAdditionCard(item));
+        break;
+      }
+    }
+  }
+  updateProgress();
+}
+
+/* ───── Progress ───── */
+
+function updateProgress() {
+  const totalNodes = packagesData.packages.reduce((s, p) => s + p.nodes.length, 0);
+  const totalAdditions = (additionsData.unassigned_dataset_nodes || []).length +
+                         (additionsData.additions || []).length;
+  const total = totalNodes + totalAdditions;
+
+  let accepted = 0, rejected = 0;
+  for (const [, v] of Object.entries(decisions)) {
+    if (v === 'accept') accepted++;
+    else if (v === 'reject') rejected++;
+  }
+  const reviewed = accepted + rejected;
+  const pct = total > 0 ? Math.round(reviewed / total * 100) : 0;
+
+  document.getElementById('progress-label').textContent = reviewed + ' / ' + total + ' reviewed (' + pct + '%)';
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('decision-count').textContent = reviewed;
+  document.getElementById('stat-pending').textContent = (total - reviewed) + ' pending';
+  document.getElementById('stat-accept').textContent = accepted + ' accepted';
+  document.getElementById('stat-reject').textContent = rejected + ' rejected';
+}
+
+/* ───── Export ───── */
+
+function exportDecisions() {
+  const result = {
+    meta: {
+      source: 'Torah #1',
+      type: 'package_decisions',
+      generated: new Date().toISOString().slice(0,10)
+    },
+    package_node_decisions: {},
+    addition_decisions: {}
+  };
+
+  for (const [key, dec] of Object.entries(decisions)) {
+    if (key.startsWith('node:')) {
+      const rest = key.slice(5);
+      const colon = rest.indexOf(':');
+      const pkgId = rest.slice(0, colon);
+      const nodeId = rest.slice(colon + 1);
+      if (!result.package_node_decisions[pkgId]) result.package_node_decisions[pkgId] = {};
+      result.package_node_decisions[pkgId][nodeId] = dec;
+    } else if (key.startsWith('addition:')) {
+      result.addition_decisions[key.slice(9)] = dec;
+    }
+  }
+
+  const blob = new Blob([JSON.stringify(result, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'torah_' + torahNum + '_decisions.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+/* ───── Utils ───── */
+
+function escapeHtml(s) {
+  if (!s) return '';
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function escapeAttr(s) {
+  return String(s || '').replace(/"/g, '&quot;');
+}
+</script>
+</body>
+</html>

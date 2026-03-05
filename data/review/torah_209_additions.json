@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "source": "Torah #209",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_209_packages.json, the single edge with reference===209 from torahData.js (id 2876, type 'eitza'), and the full source text torah_209.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it would be assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הוּא בְּחִינַת, זֶה בְּחִינַת) were considered as bechina nodes. Since there are no bechina edges in the dataset for reference===209, all proposed bechina nodes are new. The existing node 'הכנסת אורח תלמיד־חכם' (from the eitza edge id 2876) is already in the dataset and would be assigned to Package 1."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "אוֹרֵחַ וּבְרָכוֹת הַתְּפִלָּה",
+      "node_id": "אוֹרֵחַ",
+      "node_text": "אוֹרֵחַ",
+      "polarity": "good",
+      "reason": "Line 3 of the source text: 'וְאוֹרֵחַ הוּא בְּחִינַת (משלי ד׳:י״ח): וְאֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ'. The Rebbe explicitly declares that 'אוֹרֵחַ' (the guest) is bechina of the verse 'the path of the righteous is like the shining light.' This is the pivotal word-bridge of the entire Torah — the same root (א-ר-ח) that means 'guest' also means 'path,' and the Rebbe exploits this to show that the guest who comes to be hosted brings with him the illuminating quality of the righteous path. Not currently in the dataset for reference=209.",
+      "source_quote": "וְאוֹרֵחַ הוּא בְּחִינַת (משלי ד׳:י״ח): וְאֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "אוֹרֵחַ וּבְרָכוֹת הַתְּפִלָּה",
+      "node_id": "אֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ",
+      "node_text": "וְאֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ",
+      "polarity": "good",
+      "reason": "Line 3: 'וְאוֹרֵחַ הוּא בְּחִינַת (משלי ד׳:י״ח): וְאֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ'. This verse-phrase (Proverbs 4:18) is the explicit other-end of the bechina declaration — אוֹרֵחַ (guest) IS the path of the righteous that shines like light. The shining quality (כְּאוֹר נֹגַהּ) characterizes what the righteous guest/path brings: illumination. Not currently in the dataset.",
+      "source_quote": "וְאוֹרֵחַ הוּא בְּחִינַת ... וְאֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "אוֹרֵחַ וּבְרָכוֹת הַתְּפִלָּה",
+      "node_id": "בְּרָכוֹת לְרֹאשׁ צַדִּיק",
+      "node_text": "בְּרָכוֹת לְרֹאשׁ צַדִּיק",
+      "polarity": "good",
+      "reason": "Line 3: 'וּכְתִיב (שם י): בְּרָכוֹת לְרֹאשׁ צַדִּיק, שֶׁהוּא בְּחִינַת שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת שֶׁבַּתְּפִלָּה'. The verse 'blessings upon the head of the righteous' (Proverbs 10:7) is explicitly declared a bechina of the 18 Amidah blessings (per Zohar Pinchas 244 and Tikun 47). The Rebbe uses this to show that when the righteous guest blesses (אוֹרֵחַ מְבָרֵךְ — Berakhot 46), the blessings he generates are the 18 blessings of the Amidah — the very prayer whose tikkun we seek. Not currently in the dataset.",
+      "source_quote": "בְּרָכוֹת לְרֹאשׁ צַדִּיק, שֶׁהוּא בְּחִינַת שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת שֶׁבַּתְּפִלָּה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "אוֹרֵחַ וּבְרָכוֹת הַתְּפִלָּה",
+      "node_id": "שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת שֶׁבַּתְּפִלָּה",
+      "node_text": "שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת שֶׁבַּתְּפִלָּה",
+      "polarity": "good",
+      "reason": "Line 3: 'שֶׁהוּא בְּחִינַת שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת שֶׁבַּתְּפִלָּה (זוהר פנחס רמד ובתיקון מז)'. The Eighteen Blessings of the Amidah are the explicit bechina-target of the verse 'בְּרָכוֹת לְרֹאשׁ צַדִּיק'. This is the dominant concept in Package 1 — the central reality that the entire Torah is about repairing. The guest's blessings, the righteous path's light, and the Tamid offering all converge on the 18 blessings as the telos of the teaching. Not currently in the dataset as a bechina node.",
+      "source_quote": "שֶׁהוּא בְּחִינַת שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת שֶׁבַּתְּפִלָּה (זוהר פנחס רמד ובתיקון מז)",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "אוֹרֵחַ וּבְרָכוֹת הַתְּפִלָּה",
+      "node_id": "תְּמִידִין תִּקְּנוּם",
+      "node_text": "תְּמִידִין תִּקְּנוּם",
+      "polarity": "good",
+      "reason": "Line 4: 'וְזֶה פֵּרוּשׁ: תְּמִידִין תִּקְּנוּם – זֶה בְּחִינַת הַכְנָסַת אוֹרֵחַ תַּלְמִיד-חָכָם'. The phrase 'תְּמִידִין תִּקְּנוּם' (prayers were established corresponding to the Tamid offerings — Berakhot 26b) is reinterpreted as a bechina of hachnasat orchim. The Rebbe re-reads 'תִּקְּנוּם' not only as 'established/instituted' but as 'repaired/corrected' — showing that what repairs prayer IS the Tamid-like act of hosting Torah scholars. This makes תְּמִידִין תִּקְּנוּם the bechina partner of הַכְנָסַת אוֹרֵחַ תַּלְמִיד-חָכָם. Not currently in the dataset as a bechina node (though the concept is the source-verse of the entire Torah).",
+      "source_quote": "וְזֶה פֵּרוּשׁ: תְּמִידִין תִּקְּנוּם – זֶה בְּחִינַת הַכְנָסַת אוֹרֵחַ תַּלְמִיד-חָכָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלּוֹת רָעוֹת",
+      "node_id": "תְּפִלּוֹת רָעוֹת",
+      "node_text": "תְּפִלּוֹת רָעוֹת",
+      "polarity": "evil",
+      "reason": "Line 2: 'כִּי יָדוּעַ שֶׁיֵּשׁ לְכָל אָדָם תְּפִלּוֹת רָעוֹת'. The Rebbe introduces the fundamental problem: every person has evil prayers. These are the negative counterpart to the 18 blessings of proper prayer. The concept is also alluded to in the Talmud (Berakhot 63, Ein Yaakov version) by the paradigm of the thief who prays before breaking in — prayer deployed for evil ends. Note that in the existing eitza edge (id 2876), the node2_id is a long composite description including this concept, but 'תְּפִלּוֹת רָעוֹת' as a standalone bechina node is not in the dataset.",
+      "source_quote": "כִּי יָדוּעַ שֶׁיֵּשׁ לְכָל אָדָם תְּפִלּוֹת רָעוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תְּפִלּוֹת רָעוֹת",
+      "node_id": "תְּפִלּוֹת כְּנֶגֶד",
+      "node_text": "תְּפִלּוֹת כְּנֶגֶד",
+      "polarity": "evil",
+      "reason": "Line 2: 'וְזֶה בְּחִינַת תְּפִלּוֹת כְּנֶגֶד שֶׁהִיא מִתְנַגֶּדֶת לוֹ'. This is the second name given to the evil prayers — 'opposing prayers,' the ones that confront and disrupt proper prayer when a person stands to pray correctly. The phrase 'תְּפִלּוֹת כְּנֶגֶד' is the Rebbe's re-reading of the source verse 'תְּפִלּוֹת כְּנֶגֶד תְּמִידִין תִּקְּנוּם' — the word כְּנֶגֶד (normally meaning 'corresponding to') is re-read as meaning 'opposing' in the context of the evil prayers. This is a bechina declaration: the evil prayer IS the 'opposing prayer.' Not currently in the dataset as a standalone bechina node.",
+      "source_quote": "וְזֶה בְּחִינַת תְּפִלּוֹת כְּנֶגֶד שֶׁהִיא מִתְנַגֶּדֶת לוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [
+    {
+      "node_id": "הכנסת אורח תלמיד־חכם",
+      "suggested_package_id": 1,
+      "reason": "This node already exists in torahData.js as node1_id of the eitza edge (id 2876, reference=209, type='eitza'). In the source text, this concept appears both as the solution/remedy (eitza role: the tikkun for evil prayers) and as the explicit bechina of 'תְּמִידִין תִּקְּנוּם' (line 4). Because it has a bechina role in this Torah, it should be assigned to Package 1 (good). The node form in the existing edge uses a typographic variant 'הכנסת אורח תלמיד־חכם' (with makaf/hyphen), which should be treated as the same node as 'הַכְנָסַת אוֹרֵחַ תַּלְמִיד-חָכָם' referenced throughout the analysis."
+    }
+  ],
+  "analysis_notes": {
+    "total_bechina_edges": 4,
+    "dataset_bechina_edges_for_reference_209": 0,
+    "nodes_in_dataset_not_in_packages": ["הכנסת אורח תלמיד־חכם"],
+    "concepts_in_source_text_not_in_dataset": [
+      "אוֹרֵחַ",
+      "אֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ",
+      "בְּרָכוֹת לְרֹאשׁ צַדִּיק",
+      "שְׁמוֹנֶה-עֶשְׂרֵה בְּרָכוֹת שֶׁבַּתְּפִלָּה",
+      "תְּמִידִין תִּקְּנוּם",
+      "תְּפִלּוֹת רָעוֹת",
+      "תְּפִלּוֹת כְּנֶגֶד"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "גַּנָּבָא עַל מַחְתַּרְתָּא רַחֲמָנָא קַרְיָא (the thief praying before breaking in)",
+        "reason": "Line 2 quotes this Aramaic phrase from Berakhot 63 as a proof-text for the existence of evil prayers. It is cited as an example/illustration of the phenomenon, not as a bechina declaration establishing it as a parallel-nature concept. The phrase is not declared 'X הוא בחינת Y' — it is introduced with 'כְּמוֹ שֶׁאָמְרוּ' (as the rabbis said), indicating it is cited as evidence, not as a conceptual equivalence. Not a bechina node."
+      },
+      {
+        "concept": "אוֹרֵחַ מְבָרֵךְ (the guest blesses — Berakhot 46)",
+        "reason": "Line 3 cites 'אוֹרֵחַ מְבָרֵךְ' as the halachic practice that connects the guest to blessings (the guest makes a blessing/birkhat hamazon on behalf of his host). This is cited as background justification for why hosting a righteous guest produces blessings, not as an independent bechina declaration. It is not labeled 'X הוא בחינת Y'. The concept of the guest blessing is embedded within the existing bechina chain (אוֹרֵחַ → blessings → 18 Amidah blessings). Excluded from standalone node status."
+      },
+      {
+        "concept": "הַמְאָרֵחַ תַּלְמִידֵי חֲכָמִים בְּתוֹךְ בֵּיתוֹ כְּאִלּוּ הִקְרִיב תְּמִידִין (Berakhot 10a)",
+        "reason": "Line 4 quotes this Talmudic statement as the proof that hosting Torah scholars equals the Tamid offering. It is cited as a halakhic/aggadic source to support the bechina equation (תְּמִידִין = הַכְנָסַת אוֹרֵחַ), not as a new bechina concept itself. The teaching declares the equation through the verse interpretation ('תְּמִידִין תִּקְּנוּם — זֶה בְּחִינַת הַכְנָסַת אוֹרֵחַ') and then brings this Talmudic statement as proof. The quote is a proof-text, not a concept-node."
+      }
+    ],
+    "source_text_summary": "Torah #209 is a four-line teaching opening with the verse 'Prayers were instituted corresponding to the Tamid offerings' (Berakhot 26b). The Rebbe identifies a universal spiritual problem: every person accumulates evil prayers — prayers said for wrong reasons (the thief's prayer before breaking in, Berakhot 63). These evil prayers are called 'תְּפִלּוֹת כְּנֶגֶד' — the opposing prayers that disrupt proper prayer. The remedy is hachnasat orchim of a Torah scholar, because (1) the guest blesses (Berakhot 46), (2) the word אוֹרֵחַ (guest) is bechina of 'וְאֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ' (the path of the righteous = shining light), (3) 'בְּרָכוֹת לְרֹאשׁ צַדִּיק' (blessings upon the righteous) = the 18 Amidah blessings (Zohar/Tikun), so through the guest the prayer is repaired. The teaching concludes by re-reading 'תְּמִידִין תִּקְּנוּם': the Tamid represents hachnasat orchim of Torah scholars, as established by the Talmud (Berakhot 10a: 'one who hosts Torah scholars is as if he offered the Tamid'). The Torah's entire argument rests on four bechina equations and one eitza: the eitza (hosting scholars → fixes prayer) is already in the dataset (edge 2876). The four bechina pairs are all new to the dataset.",
+    "structural_observations": [
+      "The Torah is an exceptionally compact teaching: 4 lines, 1 eitza edge (already in dataset), 4 bechina declarations (none yet in dataset).",
+      "The word-play on א-ר-ח (aleph-resh-chet = guest/path) is the conceptual hinge of the entire teaching. The guest who comes to be hosted physically IS the righteous path spiritually — they share the same root word and the same essential nature.",
+      "The good/evil mirror structure is present in miniature: Package 1 (proper prayer and its blessings) vs. Package 2 (evil prayers that oppose them). The teaching moves from evil prayer [Package 2] through the eitza solution [hachnasat orchim] to restored proper prayer [Package 1].",
+      "The Tamid offering is the structural metaphor linking the Talmudic principle (prayers = Tamid) to the practical solution (hosting = Tamid). The Rebbe effectively rereads 'תִּקְּנוּם' as 'repaired' rather than only 'established', turning a historical fact (prayers were instituted) into a prescription (prayers can be repaired).",
+      "The 18 blessings of the Amidah are the explicit telos: the entire teaching is about restoring the capacity to pray the Amidah properly. The Zohar (Pinchas 244) and Tikun 47 are cited as the source for the equation of 'בְּרָכוֹת לְרֹאשׁ צַדִּיק' with the 18-blessing prayer."
+    ]
+  }
+}

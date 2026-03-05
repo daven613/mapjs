@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "source": "Torah #109 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "LM2 Torah #109 has zero bechina edges in torahData.js (the dataset ends at reference 1105; reference 1109 does not exist). Package structure derived entirely from source text analysis. The Torah is three sentences; the only bechina relationship is between the tzaddik's burial place and Eretz Yisrael. The ארץ ישראל → תיקון לפגם הברית connection is an eitza (cause-and-effect), not a bechina."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 109,
+      "volume": "lm2",
+      "label": "אֶרֶץ יִשְׂרָאֵל וּמְקוֹם גְּנִיזַת הַצַּדִּיק",
+      "label_en": "Eretz Yisrael and the Tzaddik's Burial Place",
+      "polarity": "good",
+      "reason": "These concepts share the same essential nature: the domain of the holy land and its spiritual reality as expressed in the burial place of the true tzaddik. The Rebbe states that the burial place of true tzaddikim IS holy with the actual holiness of Eretz Yisrael itself ('מְקוֹם גְּנִיזָתָם הוּא קָדוֹשׁ בִּקְדֻשַּׁת אֶרֶץ יִשְׂרָאֵל מַמָּשׁ'). This is a bechina relationship: the burial place and Eretz Yisrael are two expressions of the same holiness. The tzaddikim are the ones through whom this identity is realized — they are the ones who 'inherit' Eretz Yisrael through the transference of its holiness to their burial place. Thus ארץ ישראל, מקום גניזת הצדיק, and קדושת ארץ ישראל all belong to one domain: the living reality of the holy land, which is not merely a geographical location but a quality of holiness that true tzaddikim carry with them even in death.",
+      "dominant_node": "ארץ ישראל",
+      "nodes": [
+        "ארץ ישראל",
+        "מקום גניזה",
+        "קדושת ארץ ישראל",
+        "צדיקים אמיתיים"
+      ],
+      "node_degrees": {
+        "ארץ ישראל": 3,
+        "מקום גניזה": 2,
+        "קדושת ארץ ישראל": 1,
+        "צדיקים אמיתיים": 1
+      },
+      "mirror_package_id": null,
+      "merge_notes": [
+        {
+          "merged_nodes": ["מקום גניזה", "ארץ ישראל"],
+          "reason": "The Rebbe explicitly states that the burial place of true tzaddikim IS Eretz Yisrael in holiness — 'מְקוֹם גְּנִיזָתָם הוּא קָדוֹשׁ בִּקְדֻשַּׁת אֶרֶץ יִשְׂרָאֵל מַמָּשׁ'. The word 'ממש' (literally/actually) underscores that this is not metaphorical equivalence but an identity of essential nature. This is an unambiguous bechina."
+        },
+        {
+          "merged_nodes": ["קדושת ארץ ישראל", "ארץ ישראל"],
+          "reason": "The Rebbe frames the tzaddikim's inheritance as acquiring the specific holiness-quality of Eretz Yisrael. The holiness of Eretz Yisrael is not a separate concept from Eretz Yisrael itself — it is its essential nature. Both belong in the same package as different faces of the same holy-land reality."
+        },
+        {
+          "merged_nodes": ["צדיקים אמיתיים", "מקום גניזה"],
+          "reason": "The tzaddik and his burial place are inseparable in this Torah: it is specifically the 'true tzaddik' whose burial place acquires the holiness of Eretz Yisrael. The tzaddik is the agent through whom the identity of burial place with Eretz Yisrael is actualized. They belong to the same domain of holy-land identity."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 4,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "note": "Zero bechina edges in torahData.js for lm2/reference=1109. All packages derived from source text gap analysis. The Torah is extremely brief (3 sentences) and introduces only one primary bechina-connected domain (the Eretz Yisrael / burial-place identity). The concept פגם הברית (blemish of the Brit) appears as the target of an eitza relationship (Eretz Yisrael repairs it) and does not form an independent bechina-connected package in this Torah."
+  }
+}

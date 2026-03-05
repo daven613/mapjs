@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "source": "Torah #156",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===156 AND type==='bechina'. Only 1 bechina edge exists in the dataset for Torah #156, yielding a single 2-node connected component. No merges were required. One small evil pair (רוח טומאה / רוח שטות) was identified in the gap analysis and proposed as an addition; it is incorporated here as Package 2 per the framework's merge rule (small component, shared nature, same evil domain). The Torah's teaching is structurally focused on the causal chain — almost everything is eitza — with the bechina layer being very thin."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 156,
+      "label": "רוּחַ הַקֹּדֶשׁ וְהַדִּבּוּר",
+      "label_en": "Holy Spirit and Authentic Speech",
+      "polarity": "good",
+      "reason": "The single bechina edge in Torah #156 declares that 'what one speaks between himself and his Creator is a bechina of Ruach HaKodesh' (ID 2694: מה שמדברים בינו לבין קונו ↔ רוח הקדש). This is the Torah's central identity claim: private, heartfelt speech addressed to God IS, in its essential nature, the Holy Spirit itself — not merely inspired by it, but a parallel aspect of it. The Torah elaborates this with additional bechina statements: 'all the words the heart speaks are literally words of the Blessed Name, and this is a bechina of Ruach HaKodesh.' The concept of דבורים חדשים (new/renewed speech) is also declared explicitly to be a bechina of Ruach HaKodesh (source text line 5 and line 7: 'שֶׁהוּא בְּחִינַת רוּחַ הַקֹּדֶשׁ'). These three concepts — private speech to God, renewed speech, and the Holy Spirit — all share the same essential nature: the unmediated expression of divine speech through the purified heart. David's Book of Psalms is the supreme example: each of his compositions is this very bechina of Ruach HaKodesh. The dominant node is רוח הקדש, which is the hub to which the other concepts are bechina-connected.",
+      "dominant_node": "רוח הקדש",
+      "nodes": [
+        "מה שמדברים בינו לבין קונו",
+        "רוח הקדש",
+        "דבורים חדשים"
+      ],
+      "node_degrees": {
+        "רוח הקדש": 2,
+        "מה שמדברים בינו לבין קונו": 1,
+        "דבורים חדשים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["דבורים חדשים"],
+          "reason": "דבורים חדשים is not a dataset node in a bechina edge for Torah #156, but the source text is explicit: 'זוֹכֶה לְדַבֵּר בְּכָל פַּעַם דִּבּוּרִים חֲדָשִׁים, שֶׁהוּא בְּחִינַת רוּחַ הַקֹּדֶשׁ' (line 5) and again at line 7. The addition of this gap concept completes the triad in this package. It is a missing bechina node, not a cause-and-effect node — the text says new speech IS a bechina of Ruach HaKodesh, not that it leads to it. Per the gap analysis, this node is proposed as a new addition to the dataset edge connecting to רוח הקדש via bechina. See torah_156_additions.json."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 156,
+      "label": "רוּחַ טֻמְאָה וְשִׁטּוּת",
+      "label_en": "Spirit of Impurity and Folly",
+      "polarity": "evil",
+      "reason": "Torah #156 explicitly equates רוח הטומאה (spirit of impurity) with רוח שטות (spirit of folly/madness) in the closing bracketed passage (line 14): 'וְעַל יְדֵי הִתְלַהֲבוּת הַלֵּב זוֹכֶה לְגָרֵשׁ הָרוּחַ הַטֻּמְאָה רוּחַ שְׁטוּת כַּנַּ\"ל'. The appositional construction — naming both terms in a single breath as referring to the same entity — functions as a bechina statement of shared essential nature. This is the evil mirror of Package 1: just as private speech to God IS Ruach HaKodesh (good), the רוח שטות / רוח טומאה IS the opposite force that defiles the heart and blocks new holy speech. The Torah's structural logic makes this mirror explicit: the heart becomes impure because it 'burns for transgression or evil desire' (line 4: נִבְעָר לַעֲבֵרָה אוֹ לְתַאֲוָה רָעָה) — the evil burning is the mirror of the holy burning. This evil spirit must be expelled (גירוש) by the warmth of the heart-fire, restoring the capacity for holy speech. The two-node component here is small but justified as a separate package (rather than merging into Package 1) because it represents the evil polarity domain — a structurally opposite nature from Package 1's goodness, not a subset of it.",
+      "dominant_node": "רוח הטמאה",
+      "nodes": [
+        "רוח הטמאה",
+        "רוח שטות"
+      ],
+      "node_degrees": {
+        "רוח הטמאה": 1,
+        "רוח שטות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["רוח הטמאה", "רוח שטות"],
+          "reason": "Neither node currently appears as a bechina-edge node in the Torah #156 dataset. Both are identified in the gap analysis as a missing bechina pair. The source text (line 14) uses the appositional naming 'הָרוּחַ הַטֻּמְאָה רוּחַ שְׁטוּת' — the spirit of impurity [which is] the spirit of folly — making this a textbook bechina: two names for the same essential reality. They share the same nature (demonic spirit that defiles and maddens) and the same polarity (evil). Kept as a separate package rather than subsumed into Package 1 because the framework requires each package to represent one coherent nature domain, and good and evil are opposite natures, not the same one viewed from different angles."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes_in_dataset_bechina": 2,
+    "total_packages": 2,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "gap_nodes_added_to_packages": ["דבורים חדשים", "רוח הטמאה", "רוח שטות"],
+    "note_on_sparse_bechina_layer": "Torah #156 is an unusually eitza-heavy Torah. Of its 8 dataset edges, 7 are eitza (cause-and-effect) and only 1 is bechina (parallel nature). This reflects the Torah's dominant argumentative structure: it is a causal teaching about HOW to achieve purity of heart (path: תנועה → חמימות → טהרת הלב → רוח הקדש), with the single bechina statement being the Torah's one identity claim: private speech to God IS Ruach HaKodesh. The package structure is therefore minimal — two polar packages, one good (the goal: Ruach HaKodesh / holy speech) and one evil (the obstacle: ruach shitut / defiling spirit) — with the eitza chain connecting them as the Torah's practical teaching between the two poles.",
+    "good_evil_mirror": "Package 1 (רוח הקדש) — holy speech/divine spirit — is the exact positive mirror of Package 2 (רוח הטמאה / רוח שטות). Both are 'spirits' that enter or depart from the heart. The Torah's teaching is precisely how to exchange one for the other via the mechanism of heart-warmth (hitlahavut)."
+  }
+}

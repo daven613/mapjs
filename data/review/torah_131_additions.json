@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "source": "Torah #131 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, examined the single bechina edge in torahData.js for reference===131 (ID 1826: כבוד ↔ מלכות), and read the full extant source text torah_131.txt (3 lines, apparently truncated mid-sentence after line 3). Scanned for all bechina-language markers: בְּחִינַת, שֶׁהוּא, נִקְרָא, עִקַּר, כַּנַּ\"ל (as-stated-above equating references). One additional bechina identification was found in the source text that is absent from the dataset. The source text appears incomplete — the file ends mid-sentence with a colon, suggesting additional content and potentially additional bechina statements are missing from the text file."
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "HIGH",
+      "concept_he": "צֶדֶק = כָּבוֹד (via מַלְכוּתָא קַדִּישָׁא)",
+      "concept_en": "Tzedek = Kavod (via Holy Kingship)",
+      "missing_edge": {
+        "node1_id": "צדק",
+        "node2_id": "כבוד",
+        "node1_text": "צֶדֶק",
+        "node2_text": "כָּבוֹד",
+        "proof": "צֶדֶק מַלְכוּתָא קַדִּישָׁא, שֶׁהוּא בְּחִינַת כָּבוֹד, מֶלֶךְ הַכָּבוֹד כַּנַּ\"ל",
+        "reference": 131,
+        "type": "bechina"
+      },
+      "source_text_quote": "וְזֶה נִקְרָא: מֹאזְנֵי צֶדֶק (ויקרא י״ט:ל״ו), כִּי צֶדֶק מַלְכוּתָא קַדִּישָׁא, שֶׁהוּא בְּחִינַת כָּבוֹד, מֶלֶךְ הַכָּבוֹד כַּנַּ\"ל",
+      "source_line": 3,
+      "target_package": 1,
+      "note": "In line 3, the Rebbe names the scales of judgment 'מֹאזְנֵי צֶדֶק' and then provides a theological gloss: צֶדֶק is the Zoharic name for מַלְכוּתָא קַדִּישָׁא (Holy Kingship — the sefirah of Malkhut). He then states: 'שֶׁהוּא בְּחִינַת כָּבוֹד' — IT is a bechina of כָּבוֹד. The phrase 'שֶׁהוּא בְּחִינַת' is canonical Breslov bechina-identification language. The referent of 'שֶׁהוּא' is the entire preceding clause: צֶדֶק/מַלְכוּתָא קַדִּישָׁא. The Rebbe then confirms the equation with 'מֶלֶךְ הַכָּבוֹד כַּנַּ\"ל' — the King of Honor, as stated above (referring back to Psalm 24:7 cited in line 1). This is a double bechina chain: (A) צֶדֶק = מַלְכוּתָא קַדִּישָׁא (standard Zoharic equation, implicitly bechina); (B) מַלְכוּתָא קַדִּישָׁא = כָּבוֹד (explicit bechina via 'שֶׁהוּא בְּחִינַת'). Since מַלְכוּת is already equated with כָּבוֹד in the dataset (edge 1826), this addition specifically proposes the edge צֶדֶק ↔ כָּבוֹד (or equivalently צֶדֶק ↔ מַלְכוּת, with מַלְכוּת serving as the bridge). The most direct missing edge that closes the triangle is צֶדֶק ↔ כָּבוֹד, though צֶדֶק ↔ מַלְכוּת would also capture the Zoharic equation. Both are proposed; precedence goes to the one that adds a new connection not already derivable by transitivity from the existing dataset.",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "related_existing_edges": [
+        {
+          "id": 1826,
+          "edge": "כבוד ↔ מלכות",
+          "reference": 131,
+          "note": "This edge already exists in the dataset for Torah #131. The proposed צדק ↔ כבוד edge would complete the conceptual triangle: כבוד ↔ מלכות (existing) + מלכות ↔ צדק (Zoharic equation, derivable) + צדק ↔ כבוד (proposed direct statement from line 3 text)."
+        }
+      ]
+    }
+  ],
+  "candidates_examined_and_excluded": [
+    {
+      "concept": "מֹאזְנֵי צֶדֶק (scales of justice)",
+      "source_line": 3,
+      "source_text": "וְזֶה נִקְרָא: מֹאזְנֵי צֶדֶק (ויקרא י״ט:ל״ו)",
+      "reason_excluded": "The phrase 'וְזֶה נִקְרָא: מֹאזְנֵי צֶדֶק' ('and this is called scales of justice') names the process of weighing — it identifies the מאזנים (scales) as the instrument through which כבוד/מלכות/צדק judges. This is an eitza-context identification (the scales are the mechanism of the judgment process), not a bechina equation between מאזני צדק and one of the core bechina-cluster nodes. The scales are named after צדק (which IS the cluster) — but the scales themselves are not an aspect of the same nature as כבוד/מלכות/צדק; they are the judicial instrument of that nature. Excluded from package nodes."
+    },
+    {
+      "concept": "מִיתָה (death) / כַּף חוֹבָה (scale of guilt)",
+      "source_line": 2,
+      "source_text": "כִּי עַל־יְדֵי הַכָּבוֹד יוּכַל לִגְרֹם לוֹ מִיתָה... אֲזַי כַּף חוֹבָה מַכְרַעַת",
+      "reason_excluded": "These are consequences within an eitza chain: כבוד → weighing in the scales → if guilty → כף חובה מכרעת → מיתה. No bechina language ('הוּא בְּחִינַת', 'נִקְרָא', 'שֶׁהוּא') equates מיתה or כף חובה with any of the package nodes. These are outcomes/mechanisms within the causal argument, not conceptual equivalents. Excluded."
+    },
+    {
+      "concept": "מְכֻבָּדִי (those who honor Me / My honored ones)",
+      "source_line": 2,
+      "source_text": "אַל תִּקְרֵי בִּכְבוֹדִי, אֶלָּא בִּמְכֻבָּדִי (זבחים קטו:)",
+      "reason_excluded": "The Talmudic drasha ('do not read bichvodi/with My glory — but bimchubadai/with those who honor Me') is a hermeneutic pivot that reinterprets the verse to show that mishandling כבוד can cause death (Nadav and Avihu). The word מכובדי is a textual emendation used to make a homiletic point — it is not being equated with כבוד or מלכות as a conceptual parallel. It is an explanation of the danger of כבוד in practice. Excluded."
+    },
+    {
+      "concept": "מֶלֶךְ הַכָּבוֹד (the King of Honor)",
+      "source_line": 1,
+      "source_text": "כְּמוֹ שֶׁכָּתוּב (תהילים כ״ד:ז׳): מֶלֶךְ הַכָּבוֹד",
+      "reason_excluded": "This is a biblical divine title (Psalm 24:7) cited as the proof-text for the כבוד = מלכות equation. 'מֶלֶךְ הַכָּבוֹד' is the scriptural formulation that bridges the two concepts — it is the evidence for the bechina, not itself a separate conceptual node requiring its own package slot. The Rebbe treats it as the textual grounding for the identification, not as a third independent concept. It could be argued that 'מלך הכבוד' is an alias or appellation of the כבוד/מלכות cluster, but since the Rebbe introduces it as a citation supporting the already-named bechina, and uses 'כַּנַּ\"ל' (as stated) in line 3 to refer back to it, it functions as a proof-text anchor, not a distinct bechina node. Excluded as redundant given the existing cluster."
+    }
+  ],
+  "source_text_truncation_note": "The source text file torah_131.txt contains only 3 lines (1,663 bytes) and ends mid-sentence with a colon: 'וְהַיְנוּ מֹאזְנֵי צֶדֶק, כִּי אָז נִשְׁקָל בְּמֹאזְנַיִם:' — the colon indicates the sentence continues. The full teaching likely contains additional explanation of how the weighing in the scales works, possibly introducing further concepts (e.g., particular aspects of what constitutes proper vs. improper reception of honor, possibly additional bechina identifications). The gap analysis above is therefore necessarily incomplete — it reflects only what is present in the truncated text. If the complete source text were available, additional missing bechina edges might be identified.",
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges_in_dataset_for_ref_131": 1,
+    "total_edges_in_dataset_for_ref_131": 1,
+    "bechina_edge_confirmed": {
+      "id": 1826,
+      "node1_id": "כבוד",
+      "node2_id": "מלכות",
+      "proof_in_text": "Line 1: 'כָּבוֹד הוּא בְּחִינַת מַלְכוּת הַדָּן אֶת הַכֹּל' — exact match to dataset proof text. Confirmed correct."
+    },
+    "additional_bechina_statements_in_source_text": 1,
+    "summary": "Torah #131 is a very short, apparently truncated teaching. The extant 3 lines establish a tight conceptual cluster: כבוד (honor/glory) = מלכות (kingship, divine judgment) = צדק (justice / holy kingship per the Zoharic equation מלכותא קדישא). The single dataset bechina edge (כבוד ↔ מלכות) is confirmed and correct. One additional bechina identification is present in line 3 (צדק ↔ כבוד via שֶׁהוּא בְּחִינַת language) that is missing from the dataset. Adding this edge would bring the bechina graph for Torah #131 from 1 edge (2 nodes) to 2 edges (3 nodes) — a complete triangle — yielding a single well-grounded package."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "source": "Torah #234",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===234 AND type==='bechina'. 5 bechina edges yielded 4 raw connected components (CC1–CC4). CC1 {מעשיות של צדיקים, אור} and CC4 {ספורי מעשיות של צדיקים, מחין דגדלות} were merged into Package 1: both belong to the same holiness domain of 'the great light of expanded mind,' which the Torah text explicitly identifies as 'המאור הגדול' — the two expressions (stories=light and stories=expanded mind) are different bechinas of the same single reality. CC2 {מחין דקטנות, דין, בלבול הדעת} stands alone as Package 2: the evil/constricted mind cluster. CC3 {עשיות של רשעים, חשך} stands alone as Package 3: the evil-behavioral cluster and direct dark mirror of Package 1. The good/evil polarity structure is the central organizing principle of Torah 234: אור (holiness, expanded mind, stories of the righteous) versus חשך (darkness, din, constricted mind, deeds of the wicked)."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 234,
+      "label": "מַעֲשִׂיּוֹת שֶׁל צַדִּיקִים וְהַמָּאוֹר הַגָּדוֹל",
+      "label_en": "Stories of the Righteous and the Great Light",
+      "polarity": "good",
+      "reason": "Torah 234 opens and closes with a single binary: the stories of the righteous ARE light (אור), and the stories of the wicked are darkness. The Rebbe then deepens this: 'סיפורי מעשיות של צדיקים הם בחינת מחין דגדלות' — the stories ARE expanded mind (the great intellect, the illuminated consciousness). The text also calls this 'המאור הגדול' (the Great Light), directly fusing the light=expanded-mind equation. Therefore: מעשיות של צדיקים = אור = ספורי מעשיות של צדיקים = מחין דגדלות = המאור הגדול. These are not four different things linked by cause-and-effect — they are four different angles on the same spiritual reality: holy consciousness, expanded beyond the constrictions of the ordinary mind, luminous and purifying. The bechina (shared nature) is: 'the quality of transcendent, purifying luminosity that belongs to the domain of holy stories and expanded awareness.' CC1 and CC4 are merged here because the two node pairs express the identical domain from different angles — stories as LIGHT (CC1) and stories as EXPANDED MIND (CC4) — and the Torah text makes explicit that great light and expanded mind are the same thing ('המאור הגדול' = 'מחין דגדלות').",
+      "dominant_node": "מחין דגדלות",
+      "nodes": [
+        "מעשיות של צדיקים",
+        "אור",
+        "ספורי מעשיות של צדיקים",
+        "מחין דגדלות"
+      ],
+      "node_degrees": {
+        "מעשיות של צדיקים": 1,
+        "אור": 1,
+        "ספורי מעשיות של צדיקים": 1,
+        "מחין דגדלות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["ספורי מעשיות של צדיקים", "מחין דגדלות"],
+          "reason": "CC4 merged into Package 1 (from CC1). The proof text for edge id=1752 is: 'סיפורי מעשיות של צדיקים הם בחינת מחין דגדלות, כמו שכתוב: ספרה נא לי את הגדלות.' The Torah text then explicitly links this to 'המאור הגדול' — the Great Light — which is the same אור as in CC1. This is a shared-nature merge: stories=light (CC1) and stories=expanded-mind (CC4) are two bechinas of the same domain of holy luminous consciousness. Not eitza: the stories do not produce the light as a causal effect; they ARE the light and they ARE the expanded mind."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 234,
+      "label": "מֹחִין דְּקַטְנוּת וְהַדִּינִין",
+      "label_en": "Constricted Mind and the Forces of Judgment",
+      "polarity": "evil",
+      "reason": "This cluster groups all concepts that share the essential nature of spiritual constriction, darkness of the mind, and the dimension of din (harsh judgment). בלבול הדעת (confusion/turbulence of the mind) IS מחין דקטנות (constricted awareness — the opposite of expanded, luminous consciousness); and מחין דקטנות IS דינין (harsh judgments, tzarot). This is not a causal chain — it is one underlying reality seen from three angles: the psychological angle (confusion = constricted mind), the structural angle (constricted mind = din), and together they form the evil counterpart of the Great Light of Package 1. The Torah teaches that this 'small mind' is what draws evil thoughts and causes tzarot: 'בלבול הדעת הוא בחינת מחין דקטנות... מחין דקטנות הם בחינת דינין.' All three nodes share the nature of 'the constricted, darkened dimension of consciousness that generates suffering.' CC2 is the mirror of Package 1's expanded, luminous consciousness.",
+      "dominant_node": "מחין דקטנות",
+      "nodes": [
+        "בלבול הדעת",
+        "מחין דקטנות",
+        "דין"
+      ],
+      "node_degrees": {
+        "מחין דקטנות": 2,
+        "בלבול הדעת": 1,
+        "דין": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 234,
+      "label": "מַעֲשֵׂה הָרְשָׁעִים וְהַחֹשֶׁךְ",
+      "label_en": "Deeds of the Wicked and Darkness",
+      "polarity": "evil",
+      "reason": "The direct evil mirror of Package 1's core bechina. Package 1 states: 'מעשיות של צדיקים הם בחינת אור.' Package 3 is the explicit evil counterpart stated in the same sentence of the Torah: 'מעשיות של רשעים הם בחינת חשך.' The structural parallelism is exact and deliberate — the Rebbe invokes the Midrash on Bereishit (separating light from darkness) to establish this polarity. עשיות של רשעים IS חשך — the deeds of the wicked are not merely dark, they ARE darkness, just as the deeds of the righteous are not merely illuminating, they ARE light. This is the behavioral/external evil cluster, as opposed to Package 2 which is the psychological/internal evil cluster. Together, Packages 2 and 3 represent the two dimensions of the חשך that Package 1's אור must overcome.",
+      "dominant_node": "חשך",
+      "nodes": [
+        "עשיות של רשעים",
+        "חשך"
+      ],
+      "node_degrees": {
+        "עשיות של רשעים": 1,
+        "חשך": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 5,
+    "total_nodes": 9,
+    "total_packages": 3,
+    "raw_connected_components": 4
+  }
+}

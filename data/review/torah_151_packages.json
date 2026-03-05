@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "source": "Torah #151 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===151 AND type==='bechina'. Result: zero bechina edges found in the dataset for reference 151. Torah #151 is among the shortest teachings in Likutay Moharan Volume 1: six lines, one practical segulah, and a concentrated kabbalistic explanation of why the Rosh Chodesh parasha protects children. Despite zero bechina edges in the current dataset, the source text contains five bechina-language identifications (see torah_151_additions.json). These yield three thematic packages. The packages are defined entirely from source text analysis and gap analysis. The Torah's conceptual structure is a classic good/evil mirror built around the letter vav: the positive pole (vav = life-force) mirrors the negative pole (absence of vav = absence of life-force = death), and the tikkun pole (Kalot Moshe = the moon filling = atonement for offspring) provides the resolution."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 151,
+      "label": "וָאו וְהַחִיּוּת",
+      "label_en": "The Letter Vav and the Life-Force",
+      "polarity": "good",
+      "reason": "The Torah's central positive assertion is that the letter vav IS the life-force of all things: 'כִּי הַוָּא\"ו הוּא הַחִיּוּת שֶׁל כָּל דָּבָר.' This is stated twice (lines 2 and 3) as the structural key to the entire teaching — everything in the Torah's argument pivots on this equation. The vav is not an instrument that produces life-force, nor a symbol that points toward it: it IS the life-force. Vav and חִיּוּת are two names for the same essential reality, made explicit by the word 'הוּא' (IS), which is the Rebbe's standard bechina-identity formula. The polarity is good because the life-force (חִיּוּת) is the positive, vital, divine energy that sustains children and all living things. The vav as life-force is the root of health, vitality, and existence — the positive pole of this Torah's cosmic axis.",
+      "dominant_node": "וָאו",
+      "nodes": [
+        "וָאו",
+        "חִיּוּת"
+      ],
+      "node_degrees": {
+        "וָאו": 1,
+        "חִיּוּת": 1
+      },
+      "source_edges": [
+        {
+          "node1": "וָאו",
+          "node2": "חִיּוּת",
+          "proof": "כִּי הַוָּא\"ו הוּא הַחִיּוּת שֶׁל כָּל דָּבָר",
+          "source_quote": "הַוָּא\"ו הוּא הַחִיּוּת שֶׁל כָּל דָּבָר"
+        }
+      ],
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 151,
+      "label": "פְּגִימַת הַלְּבָנָה וְחֶסְרוֹן הַחִיּוּת",
+      "label_en": "The Moon's Blemish and the Deficiency of Life-Force",
+      "polarity": "evil",
+      "reason": "This package groups all nodes in Torah #151 that represent the negative/harmful pole: the blemished/deficient state of the moon (פְּגִימַת הַלְּבָנָה), the deficient spelling of the word 'lights' (מְאֹרֹת חָסֵר וָאו), and the absence of life-force (חֶסְרוֹן חִיּוּת). All three are different expressions of the same underlying cosmic defect — the moon's blemish — which the Torah explicitly identifies using bechina language. The text says 'כָּל זֶה הוּא סוֹד פְּגִימַת הַלְּבָנָה, שֶׁמִּשָּׁם נִמְשָׁךְ בְּחִינַת מְאֹרֹת חָסֵר וָאו' — the me'orot deficiency IS a bechina of (= shares the essential nature of) the moon's blemish. And separately: 'חֶסְרוֹן הַוָּא\"ו מְרַמֵּז עַל חֶסְרוֹן הַחִיּוּת' — the absence of vav = the absence of life-force. These two sub-components (מְאֹרֹת חָסֵר ↔ פְּגִימַת הַלְּבָנָה, and חֶסְרוֹן וָאו ↔ חֶסְרוֹן חִיּוּת) are merged into one package because they share the same essential nature: the domain of cosmic deficiency, the harmful/evil pole in this Torah. The merge is valid per the framework's 'shared nature' rule: both sub-components describe the same fundamental reality from different angles (the specific scriptural instance of the deficiency vs. the general principle of what the deficiency means). The polarity is evil: this package is the domain of spiritual/cosmic damage — the moon's flaw that causes askarah and death in children. Note: the node לְבָנָה (the moon) appears in Package 3 as well, but in its deficiency aspect (פְּגִימַת הַלְּבָנָה) it is distinctly the evil-pole version of the same moon-concept.",
+      "dominant_node": "פְּגִימַת הַלְּבָנָה",
+      "nodes": [
+        "פְּגִימַת הַלְּבָנָה",
+        "מְאֹרֹת חָסֵר וָאו",
+        "חֶסְרוֹן חִיּוּת"
+      ],
+      "node_degrees": {
+        "פְּגִימַת הַלְּבָנָה": 1,
+        "מְאֹרֹת חָסֵר וָאו": 1,
+        "חֶסְרוֹן חִיּוּת": 1
+      },
+      "source_edges": [
+        {
+          "node1": "מְאֹרֹת חָסֵר וָאו",
+          "node2": "פְּגִימַת הַלְּבָנָה",
+          "proof": "וְכָל זֶה הוּא סוֹד פְּגִימַת הַלְּבָנָה, שֶׁמִּשָּׁם נִמְשָׁךְ בְּחִינַת מְאֹרֹת חָסֵר וָאו",
+          "source_quote": "כָּל זֶה הוּא סוֹד פְּגִימַת הַלְּבָנָה"
+        },
+        {
+          "node1": "חֶסְרוֹן וָאו",
+          "node2": "חֶסְרוֹן חִיּוּת",
+          "proof": "חֶסְרוֹן הַוָּא\"ו מְרַמֵּז עַל חֶסְרוֹן הַחִיּוּת כַּנַּ\"ל",
+          "source_quote": "חֶסְרוֹן הַוָּא\"ו מְרַמֵּז עַל חֶסְרוֹן הַחִיּוּת"
+        }
+      ],
+      "merge_notes": [
+        {
+          "merged_components": [
+            {"nodes": ["מְאֹרֹת חָסֵר וָאו", "פְּגִימַת הַלְּבָנָה"], "source_edge": "E2"},
+            {"nodes": ["חֶסְרוֹן וָאו", "חֶסְרוֹן חִיּוּת"], "source_edge": "E3"}
+          ],
+          "reason": "Both 2-node components describe the same essential domain: the harmful deficiency that kills children. מְאֹרֹת חָסֵר and חֶסְרוֹן וָאו are variant expressions of the same vav-deficiency (one the specific scriptural instance, one the abstract principle). Both are identified as expressions of the moon's blemish. Merge is by shared nature (same domain of cosmic deficiency), never by cause-effect. The two edges point to the same underlying reality from different angles: the specific deficient word in the Torah (מְאֹרֹת) vs. the general structural principle (absence of vav = absence of life-force). Note: 'חֶסְרוֹן וָאו' is included in this package as it is the negative pole of 'וָאו' (Package 1's positive node) — a classic good/evil mirror: the vav = life-force (good), the absence of vav = absence of life-force (evil)."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 151,
+      "label": "כַּלֹּת מֹשֶׁה וְתִקּוּן הַלְּבָנָה",
+      "label_en": "Kalot Moshe and the Rectification of the Moon",
+      "polarity": "good",
+      "reason": "This package groups all nodes in Torah #151 that represent the positive healing/tikkun pole: כַּלֹּת מֹשֶׁה (the moment when Moses completed the Tabernacle — a word written without vav in the Torah, like מְאֹרֹת), the moon (לְבָנָה) in its aspect of being filled on Rosh Chodesh, and כַּפָּרָה לְכָל תּוֹלְדוֹתָם (atonement for all offspring). Two explicit bechina statements connect these: (1) 'שֶׁנִּתְתַּקֵּן וְנִמְתָּק בְּחִינַת כַּלֹּת מֹשֶׁה, שֶׁהוּא בְּחִינַת הַלְּבָנָה' — Kalot Moshe IS a bechina of the moon; (2) 'כַּלֹּת – רָאשֵׁי תֵּבוֹת: כַּפָּרָה לְכָל תּוֹלְדוֹתָם' — the word kalot IS (acronymically) atonement for all offspring. These three nodes form one connected component: לְבָנָה ↔ כַּלֹּת מֹשֶׁה ↔ כַּפָּרָה לְכָל תּוֹלְדוֹתָם. The dominant node is כַּלֹּת מֹשֶׁה because it is the specific phrase that generates both connections (it IS the moon, and its letters ARE the atonement). The polarity is good: this is the tikkun — the rectification of the moon's deficiency, the source of atonement, forgiveness, sweetening, and long life for Israel's offspring. This package is the positive resolution of Package 2 (the evil pole). Note: לְבָנָה appears in both Package 2 (as פְּגִימַת הַלְּבָנָה, its deficient/evil aspect) and Package 3 (as the moon being filled, its tikkun/good aspect) — precisely the dual-polarity structure the framework describes for nodes that can appear in both a good and an evil package.",
+      "dominant_node": "כַּלֹּת מֹשֶׁה",
+      "nodes": [
+        "כַּלֹּת מֹשֶׁה",
+        "לְבָנָה",
+        "כַּפָּרָה לְכָל תּוֹלְדוֹתָם"
+      ],
+      "node_degrees": {
+        "כַּלֹּת מֹשֶׁה": 2,
+        "לְבָנָה": 1,
+        "כַּפָּרָה לְכָל תּוֹלְדוֹתָם": 1
+      },
+      "source_edges": [
+        {
+          "node1": "כַּלֹּת מֹשֶׁה",
+          "node2": "לְבָנָה",
+          "proof": "שֶׁנִּתְתַּקֵּן וְנִמְתָּק בְּחִינַת כַּלֹּת מֹשֶׁה, שֶׁהוּא בְּחִינַת הַלְּבָנָה",
+          "source_quote": "כַּלֹּת מֹשֶׁה, שֶׁהוּא בְּחִינַת הַלְּבָנָה"
+        },
+        {
+          "node1": "כַּלֹּת מֹשֶׁה",
+          "node2": "כַּפָּרָה לְכָל תּוֹלְדוֹתָם",
+          "proof": "וְזֶהוּ: כַּלֹּת – רָאשֵׁי תֵּבוֹת: כַּפָּרָה לְכָל תּוֹלְדוֹתָם",
+          "source_quote": "כַּלֹּת – רָאשֵׁי תֵּבוֹת: כַּפָּרָה לְכָל תּוֹלְדוֹתָם"
+        }
+      ],
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_from_source_text": 5,
+    "total_nodes": 8,
+    "total_packages": 3,
+    "raw_connected_components": 3,
+    "components_merged_into_packages": 3,
+    "note_on_merges": "Raw components: (A) 2 nodes — וָאו/חִיּוּת [Package 1, kept separate]; (B1) 2 nodes — מְאֹרֹת חָסֵר וָאו/פְּגִימַת הַלְּבָנָה [merged into Package 2]; (B2) 2 nodes — חֶסְרוֹן וָאו/חֶסְרוֹן חִיּוּת [merged into Package 2 — same domain: vav-deficiency/moon-blemish]; (C) 3 nodes — כַּלֹּת מֹשֶׁה/לְבָנָה/כַּפָּרָה לְכָל תּוֹלְדוֹתָם [Package 3, naturally connected].",
+    "note_on_evil_mirror": "Torah #151 has a clear good/evil mirror structure. Package 1 (וָאו/חִיּוּת, good: the life-force present) mirrors the deficiency nodes in Package 2 (חֶסְרוֹן חִיּוּת, evil: the life-force absent). Package 3 (כַּלֹּת מֹשֶׁה/לְבָנָה/כַּפָּרָה, good: tikkun/healing) mirrors Package 2 (פְּגִימַת הַלְּבָנָה, evil: the moon's blemish). The same לְבָנָה node appears in both evil (blemished) and good (filling) contexts — precisely the dual-polarity bridge structure the framework describes.",
+    "note_on_dataset": "Reference 151 yields zero edges in torahData.js. All five concept edges identified here are new (not yet in dataset) and should be added via the additions file.",
+    "eitza_summary": "The teaching's eitza (causal) flow: [Pkg 1: וָאו/חִיּוּת] —its absence→ [Pkg 2: פְּגִימַת הַלְּבָנָה / חֶסְרוֹן חִיּוּת] —eitza→ askarah/death in children. Tikkun: [Rosh Chodesh] —eitza→ [Pkg 3: כַּלֹּת מֹשֶׁה / לְבָנָה filling] —eitza→ atonement/life for offspring. The segulah of reciting 'U'vRoshei Chodsheykem' is the practical eitza that accesses Package 3's healing power.",
+    "note_on_node_count": "Node 'חֶסְרוֹן וָאו' from source_edge E3 is treated as belonging to Package 2 but is a variant of the same concept as the negative pole of 'וָאו' (Package 1). Its canonical form within the package is represented by its bechina-partner 'חֶסְרוֹן חִיּוּת'. The node count of 8 includes: וָאו, חִיּוּת (Pkg 1); פְּגִימַת הַלְּבָנָה, מְאֹרֹת חָסֵר וָאו, חֶסְרוֹן חִיּוּת [+ חֶסְרוֹן וָאו as a secondary node within Pkg 2] (Pkg 2); כַּלֹּת מֹשֶׁה, לְבָנָה, כַּפָּרָה לְכָל תּוֹלְדוֹתָם (Pkg 3)."
+  }
+}

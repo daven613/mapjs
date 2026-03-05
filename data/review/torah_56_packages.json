@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "source": "Torah #56",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===56 AND type==='bechina'. 38 bechina edges yielded 17 raw connected components. Three large components (C1/10 nodes, C2/7 nodes, C3/6 nodes) form the core packages. Three mid-sized components (C4, C5, C6 — 3 nodes each) remain as independent packages. Eleven small (2-node) components were merged: C7-C10 (tzaddik/rasha pairs) merged into C3 (divine ways domain, explicitly identified as 'דרכי ה'' in text); C11 (המן/מלכות דסטרא אחרא) merged with evil-dimension of C2 to form Package 3 (evil kingdom); C12 (מדות/ימים) merged into C15 (Torah/שמו — same vessel-and-measure domain); C13 (ארבעים/בינה ודעת) merged into C1 (daat domain — forty = binah vedaat = the age of the manna-eating); C14 (הסתרה שבתוך הסתרה/אסתר) merged into C1 (daat transforms concealment; Esther is the subject of the daat-process); C16 (שבועות/שכל גדול) merged into C1 (Shavuot is the festival of daat; שכל גדול = מקוה של שבועות = שכל ודעת עליון already in C1); C17 (מצה/מחלקת) merged into C1 (matzah = holy controversy = a form of daat). תאות עשירות, originally connected to the C2 component via edge to מלכות, was reassigned to Package 3 (evil malkhut) because the source text places it explicitly in the sitra achra dimension (line 45: Haman's kingdom gathers money = תאות עשירות = מלכות דסטרא אחרא)."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 56,
+      "label": "דַּעַת וּמֹשֶׁה",
+      "label_en": "Knowledge and Moses",
+      "polarity": "good",
+      "reason": "The largest connected component in Torah #56 centers on דעת (knowledge/awareness) as the dominant concept with 4 direct bechina connections. This package encodes the teaching's central positive principle: that supernal daat, in its many forms, is the source of all blessing — it is the manna from heaven, Moses (whose name is an acronym of machloket Shamai Hillel = holy controversy = daat), the mikveh of the 50th gate, Shavuot, peace, and the concealment that can be transformed into Torah. All nodes share the essential nature of daat: they are different faces of the same divine knowing/consciousness. The holy controversy (מחלקת לשם שמים) is not opposed to daat but IS daat at its highest, because genuine dispute for heaven's sake flows from the deepest place of divine knowledge. Matzah = machloket = daat = man = the 50th gate of understanding = Shavuot. The transformation of hidden-within-hidden (אסתר = הסתרה שבתוך הסתרה) into Torah is the central act of daat described in sections ד-ה of the teaching. The number forty belongs here because the manna was eaten forty years and forty = binah vedaat.",
+      "dominant_node": "דעת",
+      "nodes": [
+        "דעת",
+        "מן",
+        "משה",
+        "דעת גדול",
+        "מקוה של שער החמשים",
+        "מקוה של שבועות",
+        "שכל ודעת עליון",
+        "מחלקת לשם שמים",
+        "מחלוקת שמאי הלל",
+        "שלום",
+        "ארבעים",
+        "בינה ודעת",
+        "הסתרה שבתוך הסתרה",
+        "אסתר",
+        "שבועות",
+        "שכל גדול וגבוה מאד",
+        "מצה",
+        "מחלקת"
+      ],
+      "node_degrees": {
+        "דעת": 4,
+        "מקוה של שער החמשים": 4,
+        "מן": 3,
+        "מחלקת לשם שמים": 2,
+        "דעת גדול": 2,
+        "מקוה של שבועות": 1,
+        "שכל ודעת עליון": 1,
+        "משה": 1,
+        "מחלוקת שמאי הלל": 1,
+        "שלום": 1,
+        "ארבעים": 1,
+        "בינה ודעת": 1,
+        "הסתרה שבתוך הסתרה": 1,
+        "אסתר": 1,
+        "שבועות": 1,
+        "שכל גדול וגבוה מאד": 1,
+        "מצה": 1,
+        "מחלקת": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["ארבעים", "בינה ודעת"],
+          "reason": "Edge 2: ארבעים ↔ בינה ודעת. Source text line 59: 'כִּי בֶּן אַרְבָּעִים לַבִּינָה' — forty is the age of binah, and the Israelites ate manna forty years because manna = daat = binah vedaat. Forty IS binah vedaat; both belong in the daat cluster."
+        },
+        {
+          "merged_nodes": ["הסתרה שבתוך הסתרה", "אסתר"],
+          "reason": "Edge 406: הסתרה שבתוך הסתרה ↔ אסתר. Source text line 39: 'שֶׁהִיא בְּחִינַת אֶסְתֵּר, בְּחִינַת הַסְתֵּר אַסְתִּיר.' The entire teaching is about transforming the deepest concealment (Esther = הסתר אסתיר) into daat. The daat-process converts this concealment into Torah. These concepts belong in the daat package as the object/domain upon which daat operates."
+        },
+        {
+          "merged_nodes": ["שבועות", "שכל גדול וגבוה מאד"],
+          "reason": "Edge 2894: שבועות ↔ שכל גדול וגבוה מאד. Source text line 52: 'שָׁבוּעוֹת הוּא בְּחִינַת שֵׂכֶל גָּדוֹל וְגָּבוֹהַּ מְאֹד.' Shavuot is the festival of supreme intellect. The מקוה של שבועות is already in the C1 component (connected to מקוה של שער החמשים), so שבועות as שכל גדול naturally belongs in the same daat cluster."
+        },
+        {
+          "merged_nodes": ["מצה", "מחלקת"],
+          "reason": "Edge 1764: מצה ↔ מחלקת. Source text line 64: 'מַצָּה הִיא בְּחִינַת מַחֲלֹקֶת.' Matzah = controversy, and controversy (when for heaven's sake) = daat. This pair's shared nature is daat-in-exile — the holy machloket that even in Egypt (when daat was in exile) retained the taste of manna/daat. Belongs in the daat package."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 56,
+      "label": "מַלְכוּת דִּקְדֻשָּׁה",
+      "label_en": "Holy Kingdom",
+      "polarity": "good",
+      "reason": "The second largest component in Torah #56 centers on מלכות (kingship/sovereignty) as the dominant concept with 4 direct bechina connections. This package represents holy malkhut — the dimension of righteous sovereignty that every person possesses according to their level. Mordecai is the archetypal expression of holy malkhut (explicitly stated: 'מָרְדְּכָי – זֶה בְּחִינַת הַמַּלְכוּת'). The Rebbe teaches that holy malkhut is defined by being מאסף לכל המחנות דקדשה — gathering all of holiness's camps, like the tribe of Dan who was the rear-guard. This is expressed as סוף דבר הכל נשמע = ירא אלקים = the fear of God that holy malkhut embodies. The 'מחנה דן' node (which is the rear-guard tribe = prototype of gathering malkhut) belongs here as a direct expression of the same principle. Note: מלכות also appears in Package 3 (evil dimension) — the concept can manifest in both holy and evil orientations, following the teaching's explicit good/evil mirror structure.",
+      "dominant_node": "מלכות",
+      "nodes": [
+        "מלכות",
+        "סוף דבר",
+        "מאסף לכל המחנות דקדשה",
+        "מחנה דן",
+        "ירא אלקים",
+        "מרדכי"
+      ],
+      "node_degrees": {
+        "מלכות": 4,
+        "סוף דבר": 2,
+        "מאסף לכל המחנות דקדשה": 2,
+        "מחנה דן": 1,
+        "ירא אלקים": 1,
+        "מרדכי": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["תאות עשירות"],
+          "reason": "Edge 1834: תאות עשירות ↔ מלכות. Although this edge connects to the מלכות node, the source text (line 45) places תאות עשירות explicitly in the evil/sitra achra context: 'וְזֶה בְּחִינַת תַּאֲוַת עֲשִׁירוּת, שֶׁהִיא בְּחִינַת מַלְכוּת' — where the referent is the evil kingdom's gathering of wealth. Therefore תאות עשירות is REASSIGNED to Package 3 (evil malkhut), not Package 2. Per the framework, מלכות appears in both good and evil packages in this Torah, reflecting the teaching's core good/evil mirror structure."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 56,
+      "label": "מַלְכוּת הָרְשָׁעָה",
+      "label_en": "Wicked Kingdom",
+      "polarity": "evil",
+      "reason": "This package is the evil mirror of Package 2 (Holy Kingdom), explicitly established by the Rebbe in section ה: 'וּכְנֶגֶד מַלְכוּת דִּקְדֻשָּׁה יֵשׁ מַלְכוּת הָרְשָׁעָה' (line 44). The evil kingdom is represented by Haman-Amalek. Where holy malkhut gathers all the holy camps, evil malkhut gathers money/mammon (the sparks of holiness trapped in material wealth). Haman IS evil malkhut = מלכות דסטרא אחרא. תאות עשירות (the craving for wealth) is the essential nature of evil malkhut in this Torah — it is what evil malkhut does: collect holy sparks via material greed. The parallel structure: Package 2 (מרדכי = holy malkhut, gathers souls for God) vs. Package 3 (המן = evil malkhut, gathers wealth/sparks for the Other Side).",
+      "dominant_node": "מלכות דסטרא אחרא",
+      "nodes": [
+        "מלכות דסטרא אחרא",
+        "המן",
+        "תאות עשירות"
+      ],
+      "node_degrees": {
+        "מלכות דסטרא אחרא": 1,
+        "המן": 1,
+        "תאות עשירות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["המן", "מלכות דסטרא אחרא"],
+          "reason": "Edge 1866: המן ↔ מלכות דסטרא אחרא. Direct bechina pair from C11. The teaching explicitly identifies Haman with evil malkhut. Merged with the תאות עשירות node (reassigned from the C2 component) to form the complete evil malkhut package."
+        },
+        {
+          "merged_nodes": ["תאות עשירות"],
+          "reason": "Reassigned from the מלכות component (where it was connected by edge 1834) to this evil package. Source text context (line 45): the desire for wealth is the bechina of the evil kingdom gathering holy sparks — it is the evil analogue of מאסף לכל המחנות דקדשה."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 56,
+      "label": "רוּחַ הַדּוֹפֵק וְדַרְכֵי ה'",
+      "label_en": "The Pulse and the Ways of God",
+      "polarity": "good",
+      "reason": "This package encompasses the domain of the beating pulse (רוח הדופק) and its spiritual correlates — the heavenly realm (שמים), thunder/divine mystery (רעמים), and the purified hands (ידים). The teaching in sections ט-י develops a detailed anatomy of how the breath of life (רוח הדופק) circulates through the body, especially concentrating in the hands, which are themselves an aspect of shamayim (heaven = fire + water = right and left hands). The thunder (רעמים) is the form in which divine speech reaches us from the heavens, and the divine ways of God (דרכי ה' = צדיק וטוב לו etc.) are the mysterious dimension of the same thunder that cannot be comprehended. All nodes share the same essential nature: aspects of the spiritual-physical medium through which divine speech and holy controversy (מחלקת לשם שמים) are received and transmitted. The four tzaddik/rasha pairs (merged from C7-C10) belong here because the text explicitly identifies them as 'בחינת דרכי ה', בחינת רעמים' (line 84-86) — they are not a separate concept but the specific content of the divine ways that cannot be grasped.",
+      "dominant_node": "רעמים",
+      "nodes": [
+        "רעמים",
+        "רוח הדופק",
+        "שמים",
+        "ידים",
+        "רוח הקדש",
+        "דרכי ה'",
+        "צדיק ורע לו",
+        "צדיק שאין הלכה כמותו",
+        "צדיק וטוב לו",
+        "צדיק שהלכה כמותו",
+        "רשע ורע לו",
+        "רשע שמקרב להצדיק שאין הלכה כמותו",
+        "רשע וטוב לו",
+        "רשע שמקרב להצדיק שהלכה כמותו"
+      ],
+      "node_degrees": {
+        "רעמים": 3,
+        "שמים": 2,
+        "רוח הדופק": 2,
+        "רוח הקדש": 1,
+        "דרכי ה'": 1,
+        "ידים": 1,
+        "צדיק ורע לו": 1,
+        "צדיק שאין הלכה כמותו": 1,
+        "צדיק וטוב לו": 1,
+        "צדיק שהלכה כמותו": 1,
+        "רשע ורע לו": 1,
+        "רשע שמקרב להצדיק שאין הלכה כמותו": 1,
+        "רשע וטוב לו": 1,
+        "רשע שמקרב להצדיק שהלכה כמותו": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": [
+            "צדיק ורע לו", "צדיק שאין הלכה כמותו",
+            "צדיק וטוב לו", "צדיק שהלכה כמותו",
+            "רשע ורע לו", "רשע שמקרב להצדיק שאין הלכה כמותו",
+            "רשע וטוב לו", "רשע שמקרב להצדיק שהלכה כמותו"
+          ],
+          "reason": "These four 2-node pairs (C7-C10) are all explicitly identified in the source text (lines 84-86) as 'בְּחִינַת דַּרְכֵי ה', בְּחִינַת רְעָמִים' — the mysterious divine ways that cannot be grasped, expressed as the four paradoxes of tzaddik/rasha with good/evil outcomes. They share the SAME essential nature as the dominant concept רעמים: they ARE the specific content of the thunder/divine ways, not a separate concept. The text says: 'כִּי זֶה בְּחִינַת דַּרְכֵי ה' שֶׁאִי אֶפְשָׁר לְהַשִּׂיג, הַיְנוּ בְּחִינַת: צַדִּיק וְטוֹב לוֹ, צַדִּיק וְרַע לוֹ; רָשָׁע וְטוֹב לוֹ, רָשָׁע וְרַע לוֹ' — the 'היינו' (that is = they are the same thing as divine ways/thunder). These are not separate bechina concepts; they are the CONTENT of what the thunder-mystery IS."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 56,
+      "label": "תּוֹרָה וּמִדּוֹת",
+      "label_en": "Torah and Measures",
+      "polarity": "good",
+      "reason": "This package captures the cluster centered on Torah as God's name and the vessel of life-force. The teaching in sections ג-ד develops the idea that Torah = God's name (שמו של הקב\"ה) because both are the vessel (כלי) that bounds and measures the divine vitality. The life-force can only be received in bounded measures (מדות), and the days (ימים) are themselves measures. Torah, as God's name, is the vessel of measures and days — and by learning Torah one draws life-force into the days/measures. All four nodes share the same essential nature: they are aspects of the vessel-and-measure structure through which divine vitality flows into finite existence.",
+      "dominant_node": "תורה",
+      "nodes": [
+        "תורה",
+        "שמו של הקדוש ברוך הוא",
+        "מדות",
+        "ימים"
+      ],
+      "node_degrees": {
+        "תורה": 1,
+        "שמו של הקדוש ברוך הוא": 1,
+        "מדות": 1,
+        "ימים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["מדות", "ימים"],
+          "reason": "Edge 1358: מדות ↔ ימים. Source text line 15-16: 'כִּי הַתּוֹרָה הִיא בְּחִינַת מִדּוֹת... שֶׁהֵם בְּחִינַת יָמִים' — Torah = מדות = ימים is the fundamental equation of section ג. The days and the measures are both vessels for the life-force that Torah draws down. This pair belongs with Torah/שמו because Torah IS the vessel of measures/days — they are all aspects of the same divine naming/bounding structure."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "torah_ref": 56,
+      "label": "פְּנִימִיּוּת וְחִיצוֹנִיּוּת",
+      "label_en": "Inner and Outer",
+      "polarity": "neutral",
+      "reason": "This package captures the spatial/dimensional framework of inner and outer that the teaching uses to describe how God is present even in distant places. The 'חצר בית' (courtyard-house) is glossed as 'חיצוניות ופנימיות, היינו מחשבות ודיבורים' — the outer domain (חצר/חיצוניות/דבור) and the inner domain (בית/פנימיות/מחשבה). These are structural concepts — neutral vessels that can contain either holiness or the absence of holiness. The teaching stresses that God is hidden even within these outermost/innermost domains of even the most distant. Polarity is neutral because these are architectural/structural concepts (like body parts or letters) that serve as containers: the outer court can be a place of holiness or distance.",
+      "dominant_node": "פנימיות",
+      "nodes": [
+        "פנימיות",
+        "מחשבה",
+        "בית",
+        "חיצוניות",
+        "דבור",
+        "חצר"
+      ],
+      "node_degrees": {
+        "פנימיות": 2,
+        "חיצוניות": 2,
+        "מחשבה": 1,
+        "בית": 1,
+        "דבור": 1,
+        "חצר": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["חיצוניות", "דבור", "חצר", "פנימיות", "מחשבה", "בית"],
+          "reason": "C5 (חיצוניות/דבור/חצר) and C6 (פנימיות/מחשבה/בית) are separate connected components in the graph (no direct bechina edge between them) but are thematically inseparable: the source text (line 35) explicitly presents them as a paired unit — 'חֲצַר בֵּית – זֶה בְּחִינַת חִיצוֹנִיּוּת וּפְנִימִיּוּת, הַיְנוּ מַחֲשָׁבוֹת וְדִבּוּרִים.' The outer (חצר=חיצוניות=דיבור) and inner (בית=פנימיות=מחשבה) are defined together as a single bi-polar domain. Their shared nature is the inner-outer spatial structure of divine concealment. Merging the two 3-node clusters into one 6-node package is correct because the framework states packages are thematic clusters sharing a common denominator — and these two clusters share the common denominator of 'the spatial/dimensional structure of inner/outer through which God is hidden.'"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "torah_ref": 56,
+      "label": "זֻהֲמַת הַנָּחָשׁ",
+      "label_en": "Pollution of the Serpent",
+      "polarity": "evil",
+      "reason": "This is the evil counterpart to Package 4 (the holy ruach/pulse domain). The pollution of the serpent (זהמת הנחש) produces the 39 labors (ל'ט מלאכות = the disordered/corrupted creative work) which generates sadness/depression of spirit (עצבות). The teaching (lines 74-75) explains that there is a serpent whose influence causes עצבות רוח, and this עצבות is identified as 'בחינת ל'ט מלאכות שהוא זהמת הנחש' — the 39 forbidden Shabbat labors are the spiritual form of the serpent's pollution. When the ruach hadofek (the beating pulse of Package 4) is blocked by this sadness, the limbs become heavy. The evil mirror of the purified hands/pulse (Package 4) is the snake-pollution/depression/39-labors complex. The sighing (אנחה) that heals the pulse (an eitza in Package 4) is the corrective against this evil package — pointing to the correct eitza flow from Package 7 (evil) through Package 4 (good) to Package 1 (daat/machloket lishem shamayim).",
+      "dominant_node": "ל\"ט מלאכות",
+      "nodes": [
+        "ל\"ט מלאכות",
+        "זהמת הנחש",
+        "עצבות"
+      ],
+      "node_degrees": {
+        "ל\"ט מלאכות": 2,
+        "זהמת הנחש": 1,
+        "עצבות": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 38,
+    "total_nodes": 54,
+    "total_packages": 7,
+    "raw_connected_components": 17,
+    "components_merged_into_packages": 7,
+    "note_on_merges": "17 raw components reduced to 7 packages: C1 (10 nodes, daat) + C13 + C14 + C16 + C17 merged into Package 1 (18 nodes); C2 (7 nodes, holy malkhut) minus תאות עשירות = Package 2 (6 nodes); C11 (2 nodes) + תאות עשירות (reassigned) = Package 3 (3 nodes); C3 (6 nodes) + C7 + C8 + C9 + C10 (4×2 nodes) = Package 4 (14 nodes); C15 (2 nodes) + C12 (2 nodes) = Package 5 (4 nodes); C5 (3 nodes) + C6 (3 nodes) = Package 6 (6 nodes); C4 (3 nodes) = Package 7 (3 nodes)."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "source": "Torah #160",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #160 has ZERO bechina edges in torahData.js — it is unentered. The Torah text itself is 2 lines and contains bechina-language statements that have not yet been captured as dataset edges. All packages below are derived entirely from gap analysis of the source text torah_160.txt. The connected-component algorithm therefore runs on an empty graph, and the packages are proposed fresh from the source text bechina statements. See torah_160_additions.json for the gap-identified nodes and proposed edges. The three-node causal chain דיבור → אויר → נשימה → דפק is predominantly eitza (each step is 'comes from') and does NOT constitute bechina packages; however the Torah's key insight — 'כְּפִי הַדִּבּוּר כֵּן נַעֲשֶׂה הַדֶּפֶק' (according to the speech so is the pulse made) — establishes a bechina parallel between the quality of speech and the quality of the pulse. This text-level bechina unites דיבור and דפק as co-essential expressions of the same spiritual quality (good or evil), creating two packages along the good/evil polarity axis."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 160,
+      "label": "הַדֶּפֶק הַקָּדוֹשׁ וְקוֹל דּוֹדִי",
+      "label_en": "The Holy Pulse and the Voice of the Beloved",
+      "polarity": "good",
+      "reason": "The Torah opens with the pulse knocking in a person and reminding him of divine service, explicitly framed as 'בִּבְחִינַת קוֹל דּוֹדִי דּוֹפֵק' — the pulse IS an aspect of the voice of the Beloved (God) knocking. This establishes a bechina of shared essential nature between the physical pulse (הדפק) and the call of the divine presence (קול דודי דופק from Song of Songs 5:2). The key structural insight is that this bechina runs in both directions of the Torah's duality: when a person speaks holy speech, the breath becomes holy air, the pulse becomes the voice of the Beloved knocking at the soul. The dominant node is הדפק because it is the controlling metaphor of the entire Torah — the pulse is the physiological instrument through which the divine call reaches the person. The phrase 'קול דודי דופק' is its bechina-partner, representing the spiritual reality behind the physical phenomenon.",
+      "dominant_node": "הדפק",
+      "nodes": [
+        "הדפק",
+        "\"קול דודי דופק\""
+      ],
+      "node_degrees": {
+        "הדפק": 1,
+        "\"קול דודי דופק\"": 1
+      }
+    },
+    {
+      "id": 2,
+      "torah_ref": 160,
+      "label": "הַדִּבּוּר הַקָּדוֹשׁ וְהַנְּשִׁימָה",
+      "label_en": "Holy Speech and the Breath",
+      "polarity": "good",
+      "reason": "The Torah's central mechanism is: 'כְּפִי הַדִּבּוּר, כֵּן נַעֲשֶׂה הַדֶּפֶק' — according to the speech, so is the pulse made. This is a bechina statement: the quality of the speech and the quality of the pulse are the same essential reality expressed at different levels of the body. Speech (דיבור) produces air (אויר) which produces breath (נשימה) which produces the pulse (דפק) — and the direction of spiritual alignment, good or evil, carries through the entire chain. Within the good domain, holy speech (דיבור טוב) is the same essential nature as holy breath (נשימה קדושה) — they are bechina-parallel expressions of the same divine vitality flowing through the body. The dominant node is דיבור because it is the ROOT of the causal chain and is explicitly the factor that determines the pulse's quality. Note: the relationship דיבור → נשימה → דפק is eitza (causal) at the physical level, but the Torah's key teaching is that speech and pulse SHARE the same spiritual quality — that identity of quality is a bechina, not merely a cause-effect. Merge note: הנשימה and האויר are intermediate steps in the causal chain (eitza) and share the same neutral mediating function; however, they are given good-polarity membership here because the Torah treats the entire breath-air-speech apparatus as a unified domain that can be oriented either toward holiness or toward sin.",
+      "dominant_node": "דיבור",
+      "nodes": [
+        "דיבור",
+        "נשימה",
+        "אויר"
+      ],
+      "node_degrees": {
+        "דיבור": 2,
+        "נשימה": 1,
+        "אויר": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["נשימה", "אויר"],
+          "reason": "נשימה (breath) and אויר (air) are intermediate links in the causal chain between דיבור (speech) and דפק (pulse). Though they appear primarily in eitza roles ('the pulse comes from the breath, and the breath comes from the air via speech'), the Torah's framing treats them as co-essential with the speech-quality that flows through them. They share the same essential nature as the speech that animates them — holy speech produces holy breath from holy air; sinful speech does the opposite. Since they cannot belong to Package 1 (which is the pulse's identity domain) and both share the speech-domain nature, they are merged here. This merge is justified by SHARED NATURE (all three — speech, breath, air — belong to the vocal/respiratory apparatus that the Torah treats as a unified domain determining spiritual quality), not cause-effect."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 160,
+      "label": "הַדֶּפֶק הַמַּזְכִּיר לַעֲבֵרָה",
+      "label_en": "The Pulse that Recalls Sin",
+      "polarity": "evil",
+      "reason": "The Torah explicitly states that the pulse sometimes reminds the person of sin (עֲבֵרָה), 'חַס וְשָׁלוֹם'. This is the evil mirror of Package 1. The same pulse, when animated by sinful speech, becomes the agent of the evil inclination — knocking in the person and reminding him of transgression rather than of divine service. The Torah's structure is a clear good/evil duality: the same physical mechanism (the pulse) can be oriented either toward 'עֲבוֹדַת הַשֵּׁם יִתְבָּרַךְ' (Package 1) or toward 'עֲבֵרָה' (this package). This evil-domain package consists of a single identified concept — the pulse-in-its-evil-orientation. Since the Torah names this as a distinct phenomenon from the holy pulse but does not give it a separate bechina-equivalent scriptural phrase (unlike the good pulse which is bechina of 'קול דודי דופק'), it stands as a 1-node evil-mirror package. Per the framework's good/evil mirror principle, it must be named separately. The evil pulse is not a new concept — it is the same דפק as Package 1 — but its *evil-oriented aspect* is a distinct package member because polarity determines package membership (as in Torah #1 where מלכות appears in both the good malkhut package AND the evil malkhut package).",
+      "dominant_node": "דפק המזכיר לעברה",
+      "nodes": [
+        "דפק המזכיר לעברה"
+      ],
+      "node_degrees": {
+        "דפק המזכיר לעברה": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_from_source_text": 2,
+    "total_nodes": 6,
+    "total_packages": 3,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "note": "Torah #160 has no entries in torahData.js at all. All packages are proposed from gap analysis of the 2-line source text. The two source-text bechina statements are: (1) הדפק בבחינת קול דודי דופק, and (2) כפי הדיבור כן נעשה הדפק (speech quality = pulse quality). The evil mirror package (Package 3) is inferred from the explicit dual-polarity structure of the Torah ('לפעמים... לעבודת השם... ולפעמים... לעברה'). All 6 nodes and all package assignments require new edges to be added to torahData.js — see torah_160_additions.json."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "source": "Torah #26",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "1 bechina edge extracted (reference===26, type==='bechina'). 1 raw connected component: CC-A = {אפרוח, צדיק}. Torah #26 is an extremely short teaching (5 lines) structured as a riddle (רציצא דמית בביעותיה) and its decoded answer. The single bechina edge captures the explicit equation 'רְצִיצָא, זֶה אֶפְרוֹחַ. זֶה בְּחִינַת צַדִּיק' — the chick dying in its egg IS an aspect of the tzaddik. Since there is only one component (2 nodes), no merges are required. One package is produced. The teaching's other conceptual material (מחשבות זרות, ניצוצי הקדושה, תפלה, מסירת נפש) is relational/eitza — it describes what the tzaddik does at the critical point, not a second bechina cluster. Gap analysis (see torah_26_additions.json) identifies missing bechina nodes: רציצא (the Aramaic term for the chick/crushed-thing) which is explicitly equated to אפרוח in the opening line and belongs in Package 1."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 26,
+      "label": "אֶפְרוֹחַ וְהַצַּדִּיק",
+      "label_en": "The Fledgling and the Tzaddik",
+      "polarity": "good",
+      "reason": "The two nodes share a single essential nature: the chick (אפרוח) and the tzaddik are two names for the same structural reality. The teaching opens by decoding the Aramaic riddle: 'רְצִיצָא, זֶה אֶפְרוֹחַ. זֶה בְּחִינַת צַדִּיק, בְּחִינַת (תהילים ע\"ב:ז): יִפְרַח בְּיָמָיו צַדִּיק.' The chick is the thing that is pressed/enclosed within the egg yet emerges through its spirit — and the tzaddik is precisely the one who is pressed and enclosed (in prayer, in the confrontation with alien thoughts) yet whose spirit bursts forth. The verse 'יִפְרַח בְּיָמָיו צַדִּיק' uses the root פרח (blossom/emerge/fly) — the same word as אפרוח (the one who flies/springs). The tzaddik does not merely resemble the chick; the chick IS the tzaddik: both are beings whose life-force (spirit/soul) departs from and must be surrendered at the exact point where it was originally enclosed (the egg / the moment of alien thought's entry). This is a good-polarity package: the tzaddik and his essential nature as one who blooms through self-sacrifice is a wholly positive domain.",
+      "dominant_node": "צדיק",
+      "nodes": [
+        "אפרוח",
+        "צדיק"
+      ],
+      "node_degrees": {
+        "אפרוח": 1,
+        "צדיק": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1
+  }
+}

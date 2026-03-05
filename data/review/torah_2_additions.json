@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "source": "Torah #2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "node1_id": "יראת ה'",
+      "node1_text": "יִרְאַת ה'",
+      "node2_id": "חטם",
+      "node2_text": "חֹטֶם",
+      "suggested_package": 1,
+      "suggested_package_label": "תְּפִלָּה וּמָשִׁיחַ",
+      "source_quote": "וַהֲרִיחוֹ בְּיִרְאַת ה' וְכוּ' – זֶה בְּחִינַת חֹטֶם",
+      "source_location": "Torah #2, section א (paragraph 3 in source text), citing Isaiah 11:3",
+      "reasoning": "The verse 'וַהֲרִיחוֹ בְּיִרְאַת ה'' is cited as the proof that prayer = חֹטֶם: the nose of Mashiach smells and discerns via יִרְאַת ה'. The text says explicitly 'זֶה בְּחִינַת חֹטֶם.' This makes יִרְאַת ה' an aspect of חֹטֶם (= prayer), and it should be a bechina edge: יִרְאַת ה' <-> חֹטֶם, reference=2. Node would join Package 1."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "node1_id": "קשתי",
+      "node1_text": "קַשְׁתִּי",
+      "node2_id": "תפלה",
+      "node2_text": "תְּפִלָּה",
+      "suggested_package": 1,
+      "suggested_package_label": "תְּפִלָּה וּמָשִׁיחַ",
+      "source_quote": "בְּחַרְבִּי וּבְקַשְׁתִּי. וּפֵרֵשׁ רַשִׁ\"י: תְּפִלָּה וּבַקָּשָׁה",
+      "source_location": "Torah #2, section א (paragraph 4 in source text), citing Genesis 48:22 with Rashi",
+      "reasoning": "Rashi's interpretation of 'בְּחַרְבִּי וּבְקַשְׁתִּי' = 'תְּפִלָּה וּבַקָּשָׁה' makes both חֶרֶב and קֶשֶׁת aspects of prayer. The dataset has the edge חֶרֶב <-> תְּפִלָּה (reference=2, bechina) but lacks the parallel edge קַשְׁתִּי <-> תְּפִלָּה. The source cites both weapons in one sentence — both are equally 'בְּחִינַת תְּפִלָּה.'"
+    },
+    {
+      "type": "missing_bechina_edge",
+      "node1_id": "בתולות",
+      "node1_text": "בְּתוּלוֹת אַחֲרֶיהָ רֵעוֹתֶיהָ מוּבָאוֹת לָךְ",
+      "node2_id": "נשמות",
+      "node2_text": "נְּשָׁמוֹת",
+      "suggested_package": 2,
+      "suggested_package_label": "תּוֹרָה וּנְשָׁמוֹת",
+      "source_quote": "וְהַנְּשָׁמוֹת הַמְלֻבָּשִׁין בַּתְּפִלָּה הַמּוּבָאוֹת לַצַּדִּיק שֶׁבַּדּוֹר הֵם בִּבְחִינַת בְּתוּלוֹת אַחֲרֶיהָ רֵעוֹתֶיהָ מוּבָאוֹת לָךְ",
+      "source_location": "Torah #2, section ו (paragraph 23 in source text), citing Psalms 45:15",
+      "reasoning": "The souls garbed in prayer and brought to the Tzaddik are explicitly 'בִּבְחִינַת בְּתוּלוֹת אַחֲרֶיהָ.' This is an explicit bechina: souls-in-prayer ARE the virgins following the bride to the king. A missing edge: בְּתוּלוֹת <-> נְשָׁמוֹת (reference=2, bechina). Node belongs to Package 2."
+    },
+    {
+      "type": "implicit_bechina_concept",
+      "node1_id": "עיבור",
+      "node1_text": "עִבּוּר",
+      "node2_id": "חידוש נשמות בתפלה",
+      "node2_text": "חִדּוּשׁ נְשָׁמוֹת בַּתְּפִלָּה",
+      "suggested_package": 2,
+      "suggested_package_label": "תּוֹרָה וּנְשָׁמוֹת",
+      "source_quote": "וְהַתְּפִלָּה מְאִירָה לְהַנְּשָׁמוֹת בִּבְחִינַת חִדּוּשִׁין, שֶׁהִיא מְחַדֶּשֶׁת אוֹתָם בִּבְחִינַת עִבּוּר",
+      "source_location": "Torah #2, section ו (paragraph 22 in source text)",
+      "reasoning": "Prayer renews the souls 'בִּבְחִינַת עִבּוּר' (in the aspect of gestation/embryonic renewal). This is a bechina relationship: the renewal of souls in prayer IS the aspect of עִבּוּר (a fetus growing in the womb). The concept is mentioned twice (lines 20, 22). It belongs to Package 2 as an aspect of the soul-renewal process."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 44,
+    "total_edges_for_torah_2": 61,
+    "non_bechina_edges_for_torah_2": 17,
+    "nodes_in_dataset_not_in_packages": [],
+    "all_56_bechina_nodes_assigned": true,
+    "concepts_in_source_text_not_in_dataset": [
+      {
+        "concept": "יִרְאַת ה'",
+        "context": "Mashiach smells and discerns via fear of God — this IS the nose (חֹטֶם) = prayer. Source: וַהֲרִיחוֹ בְּיִרְאַת ה', זֶה בְּחִינַת חֹטֶם"
+      },
+      {
+        "concept": "קַשְׁתִּי (bow-as-prayer)",
+        "context": "Parallel weapon to חֶרֶב in Jacob's bequest — also = prayer per Rashi. Source: בְּחַרְבִּי וּבְקַשְׁתִּי = תְּפִלָּה וּבַקָּשָׁה. חֶרֶב is in dataset; קֶשֶׁת/קַשְׁתִּי is not."
+      },
+      {
+        "concept": "בְּתוּלוֹת (virgins = souls in prayer)",
+        "context": "Souls garbed in prayer brought to the Tzaddik ARE the virgins of Ps. 45. Source: הַנְּשָׁמוֹת הַמְלֻבָּשִׁין בַּתְּפִלָּה הֵם בִּבְחִינַת בְּתוּלוֹת אַחֲרֶיהָ רֵעוֹתֶיהָ"
+      },
+      {
+        "concept": "עִבּוּר (gestation = soul-renewal in prayer)",
+        "context": "Prayer renews souls in the aspect of embryonic gestation. Source: שֶׁהִיא מְחַדֶּשֶׁת אוֹתָם בִּבְחִינַת עִבּוּר. Mentioned twice."
+      },
+      {
+        "concept": "הַסְתָּרַת פָּנִים (divine concealment)",
+        "context": "The state of divine hiding in exile — its two sides (face=rachamin, back=din) are in dataset, but the overarching concept הַסְתָּרַת פָּנִים as its own bechina node is not. Thematically belongs to Package 7."
+      }
+    ],
+    "classification_notes": [
+      "All 44 bechina edges are accounted for and assigned to packages.",
+      "17 non-bechina (eitza) edges for Torah #2 were correctly excluded from package-building per the framework.",
+      "The bechina edge קלקול המשפט <-> קלקול לעינים at line 27102 is classified as 'eitza' in the dataset — this is correct per framework (corruption of mishpat CAUSES corruption of eyes). These nodes are linked by eitza, not bechina, and are placed in Package 6 based on their shared evil nature rather than a bechina bridge.",
+      "The dataset also contains a second occurrence of the קלקול המשפט <-> מחשבות רעות edge (id=null, reference=2) typed as 'eitza' — this represents the causal flow from mishpat-corruption to foreign thoughts, correctly typed.",
+      "Package 7 (חֶסֶד וְרַחֲמִים בְּגָלוּת) is marked 'neutral' because chesed, din, and rachamin are divine attributes that function as the structural framework of exile — they are not intrinsically good or evil but describe the divine posture in galut.",
+      "The edge מִשְׁפָּט <-> צְדָקָה at line 26266 is typed 'eitza' in the dataset — correct, as צְדָקָה LEADS TO מִשְׁפָּט (it is the mechanism for acquiring mishpat). Note however that the source also says they co-inhere ('מִשְׁפָּט וּצְדָקָה בְּיַעֲקֹב') — צְדָקָה might warrant inclusion in Package 3 as a bechina, but the dataset correctly treats the primary relationship as eitza."
+    ]
+  }
+}

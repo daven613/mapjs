@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "source": "Torah #142",
+    "volume": "Likutay Moharan Vol. 1",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #142 is a short teaching (10 lines) focused on a single spiritual mechanism: one who cannot study Torah but whose heart yearns to do so is credited as if he studied, because his yearning draws from the supernal heart which is the Book of Remembrance. The dataset contains exactly 2 bechina edges for reference 142. These form 2 separate 2-node components. Both components express the same essential domain — the divine heart/book continuum that mediates Torah transmission to those who cannot study. A merge is warranted on grounds of shared nature (not cause-and-effect). The result is one package of 4 nodes. The gap analysis (torah_142_additions.json) found two additional bechina pairs in the source text not in the dataset: (1) אברהם ↔ צוּר / צוּר לְבָבִי, and (2) גרים (converts) ↔ נְדִיב לֵב — both are proposed as additions to Package 1."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 142,
+      "label": "לֵב שֶׁלְּמַעְלָה וְסֵפֶר הַזִּכָּרוֹן",
+      "label_en": "The Supernal Heart and the Book of Remembrance",
+      "polarity": "good",
+      "reason": "Torah #142 teaches that one who yearns to learn Torah but cannot (due to being unlearned, lacking books, or being in the wilderness) is credited as if he actually studied — because his yearning heart draws from the supernal heart (לֵב שֶׁלְּמַעְלָה), which is itself the Book of Remembrance (סֵפֶר זִכָּרוֹן). This book is composed from the Torah discussions of two distant tzaddikim whose questions and answers complete each other across hundreds of miles, heard only by God. The core bechina identifications are: (1) what the heart yearns to learn IS study from the book (מַה שֶּׁהַלֵּב חוֹמֵד לִלְמֹד = לִמּוּד מִתּוֹךְ הַסֵּפֶר), and (2) the supernal heart IS the Book of Remembrance (לֵב שֶׁלְּמַעְלָה = סֵפֶר זִכָּרוֹן). Together these four nodes are all expressions of the same spiritual reality: the heart and the book are identical — yearning IS learning, and the supernal heart IS the book. The two 2-node components share essential nature (not cause-and-effect), warranting merger. The dominant node is לֵב שֶׁלְּמַעְלָה, which structurally anchors the entire teaching: it is the source both of the yearning heart's longing and of the book in which the tzaddikim's Torah is written. The polarity is good: all four concepts belong to the holy domain — the mechanism by which God credits sincere yearning as actual performance.",
+      "dominant_node": "לב שלמעלה",
+      "nodes": [
+        "לב שלמעלה",
+        "ספר זכרון",
+        "מה שהלב חומד ללמד",
+        "למוד מתוך הספר"
+      ],
+      "node_degrees": {
+        "לב שלמעלה": 1,
+        "ספר זכרון": 1,
+        "מה שהלב חומד ללמד": 1,
+        "למוד מתוך הספר": 1
+      },
+      "merge_notes": "Two 2-node components were found in the dataset for this Torah: Component A (edge 1632: מה שהלב חומד ללמד ↔ למוד מתוך הספר) and Component B (edge 2323: לב שלמעלה ↔ ספר זכרון). These are merged into a single package on the grounds of SHARED NATURE — not cause-and-effect. The justification is that all four nodes are different expressions of the same underlying spiritual reality: the heart and the book are identical in this Torah's teaching. Component A declares that the yearning to learn IS actual learning; Component B declares that the supernal heart IS the Book of Remembrance. In the source text, these two identifications are explicitly joined: 'הוּא מְקַבֵּל לֵב מִלֵּב שֶׁלְּמַעְלָה, שֶׁהוּא בְּחִינַת סֵפֶר זִכָּרוֹן... וְהוּא בְּחִינַת לִמּוּד מִתּוֹךְ הַסֵּפֶר מַמָּשׁ' (line 5). The Rebbe himself equates all four within one continuous bechina chain. This is shared-nature merger, not a cause-effect chain. The two nodes that 'connect' the components (the lower heart = the upper heart in essence) are both aspects of the same lev/sefer identity. The merge is fully consistent with the framework rule: merge by shared nature only."
+    }
+  ],
+  "stats": {
+    "total_reference_142_edges": 2,
+    "total_reference_142_bechina_edges": 2,
+    "total_reference_142_eitza_edges": 0,
+    "total_packages": 1,
+    "total_nodes_in_packages": 4,
+    "isolated_bechina_components_before_merge": 2,
+    "merges_performed": 1,
+    "good_packages": 1,
+    "evil_packages": 0,
+    "neutral_packages": 0,
+    "evil_mirror_present": false,
+    "evil_mirror_notes": "Torah #142 is entirely focused on the positive domain: the spiritual mechanism by which God credits yearning as performance, mediated through the supernal heart/book. There is no explicit evil counterpart. The teaching does not discuss opposing forces, spiritual obstruction, or a dark side of the heart-book metaphor. It is a short, positive, consolatory teaching addressed to those who cannot study (the unlearned, the book-less, the isolated) and to converts (Abraham as the paradigm). The absence of an evil mirror is consistent with the teaching's function as comfort and encouragement for the spiritually sincere who lack the means to actualize their longing."
+  }
+}

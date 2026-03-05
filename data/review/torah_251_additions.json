@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "source": "Torah #251",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "שתיקה",
+      "node_text": "שְׁתִיקָה",
+      "polarity": "good",
+      "reason": "The Torah explicitly declares 'וְזֶה בְּחִינַת שְׁתִיקָה' when describing the act of surrendering the battle to God (מסירת המלחמה לה'). The silence (שתיקה) is defined as the same essence as trusting God to fight — it is a bechina relationship, not a cause-and-effect. Furthermore, the Torah connects this to the Talmudic teaching 'שְׁתֹק, כָּךְ עָלָה בְּמַחֲשָׁבָה', where silence is the vehicle for elevated thought. While the elevation of thought (נתעלה המחשבה) is an eitza consequence, the identification of שתיקה as the essential quality of מסירת המלחמה לה' is a bechina. Silence in this Torah shares the nature of אמת: it is a unidirectional, undivided posture — one does not argue, one simply trusts. This makes it a natural member of the אמת-cluster. It is currently absent from the dataset.",
+      "source_quote": "וְזֶה בְּחִינַת שְׁתִיקָה, הַיְנוּ שֶׁצָּרִיךְ לִשְׁתֹּק לָהֶם, רַק לִסְמֹךְ עַל ה' שֶׁהוּא יִלָּחֵם בִּשְׁבִילֵנוּ, וְזֶה בְּחִינַת (שמות י\"ד:י\"ד): ה' יִלָּחֵם לָכֶם וְאַתֶּם תַּחֲרִישׁוּן",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 5,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "שתיקה"
+    ],
+    "eitza_edges_excluded": [
+      {
+        "edge_id": 1689,
+        "node1": "למסר המלחמה על ה. שה ילחם המלחמה",
+        "node2": "מבטל מחשבות רשעים הנ\"ל",
+        "note": "This is correctly classified as eitza (cause → effect): surrendering the war to God produces nullification of the evil thoughts. It is NOT a bechina and was correctly excluded from the bechina subgraph."
+      }
+    ],
+    "structural_notes": "Torah #251 is a compact Torah with one tightly unified bechina cluster. The Torah's argument flows: [מחלוקת] →eitza→ [מחשבות כפירה] — [מסירת המלחמה / שתיקה] →eitza→ [ביטול מחשבות רשעים] — [אמת / צדקה of the righteous man] →eitza→ [nullifies the evil charity that sustains the wicked thoughts]. The single bechina package (Package 1) is the positive cluster of concepts that all share the nature of divine truth-unity. There is no evil mirror package in the bechina dataset for this Torah — the evil domain (מחלוקת, כפירה, מחשבות רשעים, צדקת הרשעים) appears only in eitza edges. This may indicate an opportunity for a future enrichment pass to add bechina edges on the evil side."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "source": "Torah #40",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #40 has exactly 2 bechina edges in the dataset, yielding 2 raw connected components of 2 nodes each: (A) {צא, נסיעה וטלטול} and (B) {קלקול האמונה, עבודה זרה}. Both components represent the same essential domain — the nature of spiritual displacement/idolatry — and the source text itself explicitly chains them: 'הנסיעה היא קלקול אמונה, היינו בחינת עבודת אלילים' (travel IS corruption of faith, WHICH IS a bechina of idolatry). Since merging is based on SHARED NATURE (bechina), not cause-and-effect, all four nodes belong in a single package: they are four different expressions of the same corrupted spiritual state."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 40,
+      "label": "נְסִיעָה וְעֲבוֹדָה זָרָה",
+      "label_en": "Travel and Idolatry — Corruption of Faith",
+      "polarity": "evil",
+      "reason": "All four nodes share the same essential nature: the domain of spiritual displacement rooted in loss of faith. In Torah #40, the Rebbe teaches that all travel (נסיעה וטלטול) IS corruption of faith (קלקול האמונה), and corruption of faith IS a bechina of idolatry (עבודת אלילים/עבודה זרה). The word 'צא' (go out/travel) in Isaiah 30:22 is explicitly cited in the context of idolatry and IS a bechina of travel and displacement. Thus: צא = נסיעה וטלטול = קלקול האמונה = עבודה זרה. These are not four different things linked by cause-and-effect — they are four facets of the same corrupted spiritual state: the state of a person who does not believe that God can provide everything he needs, and therefore leaves his place to seek his needs elsewhere. This is, in essence, what idolatry is: attributing one's provision to something other than God.",
+      "dominant_node": "עבודה זרה",
+      "nodes": [
+        "צא",
+        "נסיעה וטלטול",
+        "קלקול האמונה",
+        "עבודה זרה"
+      ],
+      "node_degrees": {
+        "צא": 1,
+        "נסיעה וטלטול": 1,
+        "קלקול האמונה": 1,
+        "עבודה זרה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["צא", "נסיעה וטלטול"],
+          "reason": "Raw Component A — these two nodes are explicitly linked by bechina edge 2106: 'צא זה בחינת נסיעה וטלטול'. Both are expressions of the concept of displacement/going-out."
+        },
+        {
+          "merged_nodes": ["קלקול האמונה", "עבודה זרה"],
+          "reason": "Raw Component B — linked by bechina edge 2328: 'קלקול האמונה, היינו בחינת עבודה זרה'. Both express the same corrupted spiritual state."
+        },
+        {
+          "merged_nodes": ["צא / נסיעה וטלטול", "קלקול האמונה / עבודה זרה"],
+          "reason": "Cross-component merge: The source text of Torah #40 explicitly unifies both components through a bechina chain — 'כל הנסיעות של אדם, הוא בשביל קלקול האמונה, היינו בחינת עבודת אלילים'. Travel (Component A) IS corruption of faith IS idolatry (Component B). Furthermore, the word 'צא' is cited from a verse explicitly about idolatry (Isaiah 30:22), making 'צא' a direct linguistic token of the idolatry domain. All four nodes are different expressions of the same underlying reality: the state of displaced-from-God spiritual existence. Shared nature, not cause-and-effect, justifies this merge."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 2,
+    "total_nodes": 4,
+    "total_packages": 1,
+    "raw_connected_components": 2
+  }
+}

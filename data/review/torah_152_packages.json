@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "source": "Torah #152 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===152 AND type==='bechina'. Result: zero bechina edges found in the dataset for reference 152 — the reference does not appear anywhere in torahData.js. All package structures are derived from direct source-text analysis (torah_152.txt, 9 lines). Six bechina pairs were identified using the standard bechina-language markers (דְּהַיְנוּ, שֶׁהוּא, בְּחִינַת, כִּי הַכֹּל אֶחָד). These yield five raw connected components, all of size 2, plus one isolated node (ארץ ישראל) whose connection to the emuna/gateway cluster is explicit in line 9 ('כִּי הַכֹּל אֶחָד עִם הַנַּ\"ל'). After merge analysis, three packages are proposed. The evil domain is present narratively but all evil-side connections in the text use causal (eitza) language, not bechina identity language — no bechina pairs exist in the evil cluster."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 152,
+      "label": "אֱמוּנָה וּנְשָׁמָה וְאֶרֶץ יִשְׂרָאֵל",
+      "label_en": "Emuna, the Holy Soul, and Eretz Yisrael",
+      "polarity": "good",
+      "reason": "The largest conceptual cluster in Torah #152 centers on the holy soul (נְשָׁמָה קְדוֹשָׁה) as the sacred inner sanctum, with emuna (אֱמוּנָה) as the accessible gateway-face of the soul and the gateway itself (פֶּתַח) as the structural expression of emuna. These three share the same essential nature: they are all aspects of the holy center that the klipa surrounds but cannot fully close. The text establishes the identity in line 4 with the classic dehavinu formula: 'סְתִימַת הַפֶּתַח הַנַּ\"ל, דְּהַיְנוּ הָאֱמוּנָה' — the gateway IS emuna. The soul is identified as the root in line 2: 'שָׁרְשָׁם, שֶׁהוּא הַנְּשָׁמָה הַנַּ\"ל' — their root, which IS the holy soul. Eretz Yisrael is explicitly merged into this cluster in line 9: 'כִּי הַכֹּל אֶחָד עִם הַנַּ\"ל' — 'for everything is one with the above' — meaning Eretz Yisrael's gatekeeping dynamic (the boundary that admits the worthy and rejects the unworthy, drawn from Zohar Acharei) is the same essential structure as the emuna/soul gateway. The yirei shamayim / perisa kalisha pair (raw component C) is merged into this package because: (a) the perisa kalisha IS the membrane spread over the gateway (פֶּתַח) — it is the emuna-boundary made structural (Zohar Teruma, cited in line 8); (b) the yirei shamayim IS a bechina of the perisa kalisha (explicit bechina language in line 8); (c) the Rebbe concludes line 8 with 'וְהוּא מַמָּשׁ מַה שֶּׁכָּתוּב לְעֵיל בְּעִנְיַן הַיְרֵא שָׁמַיִם' — it is exactly what was described regarding the yirei shamayim — asserting that the perisa kalisha and the yirei shamayim are the same reality as the emuna gateway. All seven nodes in this package share the essential nature of 'the sacred inner domain and its protective boundary-face.'",
+      "dominant_node": "אמונה",
+      "nodes": [
+        "אמונה",
+        "פתח (שער האמונה)",
+        "נשמה קדושה",
+        "שרש (של הענפים)",
+        "ארץ ישראל",
+        "ירא שמים",
+        "פריסא קלישא"
+      ],
+      "node_degrees": {
+        "אמונה": 3,
+        "פתח (שער האמונה)": 3,
+        "נשמה קדושה": 2,
+        "שרש (של הענפים)": 2,
+        "ארץ ישראל": 1,
+        "ירא שמים": 2,
+        "פריסא קלישא": 2
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["נשמה קדושה", "שרש (של הענפים)"],
+          "reason": "Line 2: 'שָׁרְשָׁם, שֶׁהוּא הַנְּשָׁמָה הַנַּ\"ל' — 'their root, which IS the holy soul.' The שֶׁהוּא (which is) formula establishes bechina identity. The soul IS the root of the branches; the root IS the soul. These are the same reality described from two directions — the soul from above (the root) and the branches' goal from below (the root they are trying to reach). Both belong to the holy-center cluster."
+        },
+        {
+          "merged_nodes": ["ארץ ישראל"],
+          "reason": "Line 9 explicitly states: 'כִּי הַכֹּל אֶחָד עִם הַנַּ\"ל' — 'for everything is one with the above.' The Rebbe is equating the Eretz Yisrael gatekeeping dynamic (from Zohar Acharei, cited in line 3) with the emuna/soul/gateway structure of the entire Torah. Eretz Yisrael shares the essential nature of the emuna cluster: a holy domain with a gateway that admits the worthy (those with intact branches) and rejects the unworthy (those whose branches are blemished). The parallelism is exact: ארץ ישראל = the holy domain; those cast out from emuna = the dead unworthy of burial in Eretz Yisrael. By the explicit 'כִּי הַכֹּל אֶחָד' declaration, this is a bechina-level identity, not merely an analogy."
+        },
+        {
+          "merged_nodes": ["ירא שמים", "פריסא קלישא"],
+          "reason": "Line 8: 'הוּא בְּחִינַת הַיְרֵא שָׁמַיִם, שֶׁהוּא בְּחִינַת: פְּרִיסָא קַלִּישָׁא' — this is the only explicitly labeled 'בְּחִינַת' statement in the entire Torah, making it the most certain bechina pair. The yirei shamayim IS a bechina of the perisa kalisha; the perisa kalisha IS spread over the gateway (פֶּתַח). The Rebbe concludes: 'וְהוּא מַמָּשׁ מַה שֶּׁכָּתוּב לְעֵיל בְּעִנְיַן הַיְרֵא שָׁמַיִם' — it is exactly what was described above regarding the yirei shamayim. This merge into Package 1 is justified because the perisa kalisha is a structural aspect of the gateway (פֶּתַח/אֱמוּנָה) itself — it is the emuna-boundary made tangible. The yirei shamayim, by being a bechina of the perisa kalisha, thus shares the essential nature of the emuna-gateway domain, not merely a functional relationship to it. They are not guardians OF emuna from outside; they ARE the emuna boundary in its active-protective form."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 152,
+      "label": "חָכְמָה וּמֹחַ",
+      "label_en": "Wisdom and the Intellect",
+      "polarity": "good",
+      "reason": "Torah #152 concludes its main teaching in line 7 with a crucial limitation statement: 'אַךְ אִי אֶפְשָׁר שֶׁיָּאִיר אֵלָיו חָכְמָה, דְּהַיְנוּ הַמֹּחַ בְּעַצְמוֹ' — 'But it is impossible for wisdom (chokhmah) to shine upon him — that is (dehavinu), the intellect (moch) itself.' The dehavinu formula establishes the bechina identity: chokhmah IS the moch. These two nodes are two expressions of the same essential reality: the highest level of divine intellect, the innermost illumination of the soul that transcends the emuna-gateway transmission path. This package is kept separate from Package 1 precisely because the Rebbe distinguishes it: mesirut nefesh enables attachment (debikut) to the tzaddik, but it CANNOT cause chokhmah/moch to shine. The essential nature of chokhmah/moch is 'the transcendent intellect-beyond-attachment' — it stands above the emuna-gateway system, not within it. This is a 2-node package but is not merged with any other package because its domain is structurally distinct: it is the unreachable upper level, the limit of what can be transmitted, the horizon the teaching points toward but acknowledges cannot be crossed through ordinary mesirut nefesh.",
+      "dominant_node": "חכמה",
+      "nodes": [
+        "חכמה",
+        "מוח"
+      ],
+      "node_degrees": {
+        "חכמה": 1,
+        "מוח": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": [],
+          "reason": "Merge with Package 1 (emuna/soul) ruled out: chokhmah/moch is the domain ABOVE the emuna-gateway transmission. The text's structure places chokhmah as what CANNOT be received even through mesirut nefesh — it is definitionally beyond the emuna-gateway system. Merging it into Package 1 would collapse the Torah's key distinction. Merge with Package 3 (mesirut nefesh) ruled out: chokhmah/moch is the goal that mesirut nefesh cannot achieve; the essential nature of Package 3 is the path of approach, while Package 2 is the unreachable destination. These are cause-and-effect limitations, not shared essential natures — the Rebbe says mesirut nefesh DOES NOT produce chokhmah, precisely because they are different things."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 152,
+      "label": "מְסִירַת נֶפֶשׁ וְהִתְקָרְבוּת לְהַצַּדִּיק",
+      "label_en": "Self-Sacrifice and Drawing Close to the Tzaddik",
+      "polarity": "good",
+      "reason": "Line 7: 'וְעַל יְדֵי מְסִירַת נֶפֶשׁ, דְּהַיְנוּ שֶׁמּוֹסֵר נַפְשׁוֹ בִּשְׁבִיל לִנְסֹעַ וּלְהִתְקָרֵב לְהַצַּדִּיק' — 'And through mesirut nefesh (self-sacrifice), that is (dehavinu), one who devotes his life to travel and draw close to the tzaddik.' The dehavinu establishes the bechina identity: mesirut nefesh IS, in this Torah's context, the act of traveling and drawing close to the tzaddik. These two nodes express the same essential reality: the consecrated devotional act of approaching holiness through total self-giving. Mesirut nefesh names the inner quality (total self-dedication); traveling to the tzaddik names the outer expression of that quality. They are two faces of the same thing. This package is kept separate from Package 1 (emuna/soul/gateway) because: (a) the Torah's structure presents mesirut nefesh as the practice that enables debikut — this is an eitza relationship (mesirut nefesh → attachment to the tzaddik), not a shared nature with the emuna-gateway domain itself; (b) the essential nature of Package 3 is the active-seeker's path, while Package 1 is the holy-center domain that the seeker aims toward. These are structurally distinct domains: the seeker-path and the destination-domain.",
+      "dominant_node": "מסירת נפש",
+      "nodes": [
+        "מסירת נפש",
+        "נסיעה והתקרבות לצדיק"
+      ],
+      "node_degrees": {
+        "מסירת נפש": 1,
+        "נסיעה והתקרבות לצדיק": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": [],
+          "reason": "Merge with Package 1 (emuna/soul) ruled out: mesirut nefesh is the practice/path of approaching the emuna-gateway; it is not the same essential nature as the gateway itself. The Rebbe's phrasing 'על ידי מסירת נפש ... אפשר לדבק עצמו אליו' (through mesirut nefesh it is possible to attach) is causal/eitza language, not bechina identity. Merge with Package 2 (chokhmah/moch) ruled out: the Rebbe explicitly distinguishes mesirut nefesh from chokhmah — the former enables debikut (attachment) but CANNOT enable chokhmah to shine. They are defined by their contrast, not their shared nature."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 3,
+    "raw_connected_components": 5,
+    "components_merged_into_packages": "4 raw components (A, B, C, F) merged into Package 1; components D and E each map directly to their own package (3 and 2)",
+    "packages_from_gap_analysis": 3,
+    "note_on_structure": "Torah #152 has zero bechina edges and zero nodes in the current dataset for reference 152. Six bechina pairs were identified from the source text, yielding five raw connected components (all size 2) plus one isolated node (ארץ ישראל). The five components: (A) {פֶּתַח, אֱמוּנָה}, (B) {נְשָׁמָה קְדוֹשָׁה, שֹׁרֶשׁ}, (C) {יְרֵא שָׁמַיִם, פְּרִיסָא קַלִּישָׁא}, (D) {מְסִירַת נֶפֶשׁ, נְסִיעָה לְהַצַּדִּיק}, (E) {חָכְמָה, מֹחַ}, plus isolated (F) {אֶרֶץ יִשְׂרָאֵל}. Components A, B, C, and F were merged into Package 1 based on shared essential nature (all aspects of the holy-center / emuna-boundary domain). Components D and E remain as independent packages (3 and 2 respectively) because their essential natures are structurally distinct: D is the seeker's path, E is the transcendent wisdom beyond the path. The evil domain (klipa, blemished branches, unworthy ones) is present in the text but all evil-side connections are eitza/causal in language — no bechina pairs found for the negative domain.",
+    "good_evil_mirror": "The good/evil mirror structure in Torah #152 is asymmetric in its bechina representation: the good side has rich bechina content (6 bechina pairs identified), while the evil side is described entirely through functional/causal narrative (the klipa 'surrounds,' 'spreads,' 'overpowers' — all action language, not identity language). The evil pole (קְלִפָּה מְסַבֶּבֶת and פְּגַם הָעֲנָפִים) is present but expressed through eitza connections only. This asymmetry is inherent to the teaching: the Torah does not analyze the nature of the evil force (it does not say 'the klipa IS X') — it only describes the klipa's functional behavior against the emuna-gateway. The evil mirror of Package 1 (the holy soul and its emuna-gateway) is the klipa-that-surrounds, but this is not a bechina pair — it is the structural enemy, not an equivalent expression of the same thing.",
+    "eitza_summary": "The causal flow (eitza) of Torah #152: (1) פְּגַם הָעֲנָפִים [evil, eitza source] → gives power to the קְלִפָּה [evil] → threatens to seal the פֶּתַח/אֱמוּנָה [Package 1]; (2) יְרֵא שָׁמַיִם [Package 1] → prevents klipa from spreading over the gateway [defensive eitza]; (3) מְסִירַת נֶפֶשׁ [Package 3] → enables debikut to tzaddik [intermediate eitza]; (4) but chokhmah [Package 2] cannot shine even through mesirut nefesh [eitza limit / barrier]. The Torah's argument: despite the klipa's siege, emuna-gateway remains (Package 1); with enough blemishes, a yirei shamayim is needed (still Package 1); mesirut nefesh enables attachment to tzaddik (Package 3 → [tzaddik]) but cannot bring chokhmah itself (Package 2 is unreachable through this path)."
+  }
+}

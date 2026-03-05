@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "source": "Torah #106 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all reference===106 edges from torahData.js, and the full source text torah_106.txt. FINDING: The dataset contains zero bechina edges for Torah #106. All bechina pairs below are identified from explicit bechina markers in the source text (הוּא, נִקְרָא, הַיְנוּ, אֵין...אֶלָּא). Every concept identified is a gap relative to the dataset, which is completely empty for this Torah's bechina dimension. The single existing edge (id 2279, eitza) is noted but excluded from bechina analysis."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "גַּדְלוּת הַמֹּחִין וְהַדַּעַת",
+      "node_id": "גדלות המוחין",
+      "node_text": "גַּדְלוּת הַמֹּחִין",
+      "polarity": "good",
+      "reason": "Central concept of Torah #106. The Rebbe builds the entire teaching around the move from katnut to gadlut hamochin. When gadlut is reached, the Talmudic dictum 'great is da'at that was placed between two letters (El and YHVH)' applies: chesed and rachamim are awakened. Gadlut hamochin is the dominant node of Package 1 — it is explicitly the state that activates da'at and draws chesed (El) and rachamim (YHVH).",
+      "source_quote": "וּכְשֶׁבָּא לְגַדְלוּת הַמֹּחִין, נִמְתָּקִין כָּל הַדִּינִין, וּמַמְשִׁיךְ עָלָיו חֲסָדִים וְרַחֲמִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "גדלות המוחין", "node2": "דעת", "proof_text": "גְּדוֹלָה דֵּעָה שֶׁנִּתְּנָה בֵּין שְׁנֵי אוֹתִיּוֹת... כְּשֶׁיָּבוֹא לְגַדְלוּת הַמֹּחִין, נִתְעוֹרֵר עָלָיו רַחֲמִים וַחֲסָדִים"}
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "גַּדְלוּת הַמֹּחִין וְהַדַּעַת",
+      "node_id": "דעת",
+      "node_text": "דַּעַת / דֵּעָה",
+      "polarity": "good",
+      "reason": "Da'at is the central positive concept. The Rebbe opens by citing 'there is no poverty but poverty of da'at' and builds toward the Talmudic statement 'great is da'at given between two letters (El and YHVH)'. Da'at is the state-bridge: its absence = katnut/aniyut (Package 2); its presence = gadlut (Package 1). Da'at is a bechina of gadlut hamochin — they are two faces of the same state of expanded consciousness.",
+      "source_quote": "גְּדוֹלָה דֵּעָה שֶׁנִּתְּנָה בֵּין שְׁנֵי אוֹתִיּוֹת, שֶׁנֶּאֱמַר: כִּי אֵל דֵּעוֹת ה'",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "דעת", "node2": "גדלות המוחין", "proof_text": "כְּשֶׁיָּבוֹא לְגַדְלוּת הַמֹּחִין, נִתְעוֹרֵר עָלָיו רַחֲמִים וַחֲסָדִים מִשְּׁנֵי אוֹתִיּוֹת"},
+        {"node1": "דעת", "node2": "אל", "proof_text": "כִּי אֵל דֵּעוֹת ה' — da'at is bracketed between El and YHVH"},
+        {"node1": "דעת", "node2": "ה'", "proof_text": "כִּי אֵל דֵּעוֹת ה' — da'at is bracketed between El and YHVH"}
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "גַּדְלוּת הַמֹּחִין וְהַדַּעַת",
+      "node_id": "אל",
+      "node_text": "אֵל",
+      "polarity": "good",
+      "reason": "The divine Name 'El' is explicitly equated with chesed via the bechina marker 'הוּא': 'El, hu chesed, al derekh: chesed El kol hayom'. This is the first of the two divine Names that bracket da'at (Berakhot 33: ki El de'ot YHVH). El represents the chesed-face of the divine that is awakened when a person ascends to gadlut hamochin.",
+      "source_quote": "אֵל, הוּא חֶסֶד, עַל דֶּרֶךְ: חֶסֶד אֵל כָּל הַיּוֹם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "אל", "node2": "חסד", "proof_text": "אֵל, הוּא חֶסֶד, עַל דֶּרֶךְ: חֶסֶד אֵל כָּל הַיּוֹם"}
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "גַּדְלוּת הַמֹּחִין וְהַדַּעַת",
+      "node_id": "חסד",
+      "node_text": "חֶסֶד",
+      "polarity": "good",
+      "reason": "Chesed is identified as the essential nature of El ('El, hu chesed'). Together with rachamim (YHVH), chesed is one of the two divine qualities that are drawn down when gadlut hamochin is attained. Chesed and rachamim together constitute the antidote to the dinim that dominate under katnut.",
+      "source_quote": "אֵל, הוּא חֶסֶד... וּמַמְשִׁיךְ עָלָיו חֲסָדִים וְרַחֲמִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "חסד", "node2": "אל", "proof_text": "אֵל, הוּא חֶסֶד"}
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "גַּדְלוּת הַמֹּחִין וְהַדַּעַת",
+      "node_id": "ה'",
+      "node_text": "ה' (שם הוי\"ה)",
+      "polarity": "good",
+      "reason": "The divine Name YHVH is explicitly equated with rachamim via the bechina marker 'הוּא': 'YHVH, hu rachamim, al derekh: rachamekha rabbim YHVH'. This is the second of the two divine Names that bracket da'at (Berakhot 33: ki El de'ot YHVH). YHVH represents the rachamim-face of the divine that is awakened when gadlut is reached, and is also the Name invoked in the verse's promise: 'beyom ra'ah yemalteihu YHVH'.",
+      "source_quote": "וַה', הוּא רַחֲמִים, עַל דֶּרֶךְ: רַחֲמֶיךָ רַבִּים ה'",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "ה'", "node2": "רחמים", "proof_text": "וַה', הוּא רַחֲמִים, עַל דֶּרֶךְ: רַחֲמֶיךָ רַבִּים ה'"}
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "גַּדְלוּת הַמֹּחִין וְהַדַּעַת",
+      "node_id": "רחמים",
+      "node_text": "רַחֲמִים",
+      "polarity": "good",
+      "reason": "Rachamim is identified as the essential nature of YHVH ('YHVH, hu rachamim'). Together with chesed (El), rachamim is one of the two divine qualities drawn down when gadlut hamochin is attained. Rachamim is also the spiritual motivation for helping others out of katnut — 'one must have rachamim for this, for there is no greater rachamim than this.'",
+      "source_quote": "וַה', הוּא רַחֲמִים... וְעַל זֶה צָרִיךְ רַחֲמָנוּת, כִּי אֵין רַחֲמָנוּת גְּדוֹלָה מִזֶּה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "רחמים", "node2": "ה'", "proof_text": "וַה', הוּא רַחֲמִים"}
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "קַטְנוּת הַמֹּחִין וְהָעֲנִיּוּת",
+      "node_id": "קטנות המוחין",
+      "node_text": "קַטְנוּת הַמֹּחִין",
+      "polarity": "evil",
+      "reason": "Katnut hamochin is the dominant node of Package 2. The Rebbe explicitly names this state using the bechina marker 'nikra': 'there are times when one has no sekhel, and it is called katnut hamochin'. This is the exact evil mirror of gadlut hamochin — the same dimension of consciousness, but diminished. Under katnut, da'at is absent, dinim are not sweetened, and the person cannot ascend to chesed and rachamim without help.",
+      "source_quote": "כִּי יֵשׁ זְמַן שֶׁאֵין לוֹ שֵׂכֶל, וְהוּא נִקְרָא קַטְנוּת הַמֹּחִין",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "קטנות המוחין", "node2": "חסרון דעת", "proof_text": "כִּי יֵשׁ זְמַן שֶׁאֵין לוֹ שֵׂכֶל, וְהוּא נִקְרָא קַטְנוּת הַמֹּחִין"},
+        {"node1": "קטנות המוחין", "node2": "עניות", "proof_text": "אֵין עֲנִיּוּת אֶלָּא מִן הַדַּעַת — lacking da'at = katnut = poverty"},
+        {"node1": "קטנות המוחין", "node2": "דל", "proof_text": "אַשְׁרֵי מַשְׂכִּיל אֶל דָּל – הַיְנוּ כְּשֶׁהוּא בְּקַטְנוּת הַמֹּחִין"}
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "קַטְנוּת הַמֹּחִין וְהָעֲנִיּוּת",
+      "node_id": "עניות",
+      "node_text": "עֲנִיּוּת",
+      "polarity": "evil",
+      "reason": "Aniyut (spiritual poverty) is the Rebbe's opening concept. The Talmudic dictum 'ein aniyut ela min hada'at' (Nedarim 41) establishes poverty as a bechina of lacking da'at — the two are the same condition from different angles. The Rebbe specifies this poverty exists both collectively (a person who lacks sekhel in divine service needs the wise to guide him) and individually (a person who himself falls into katnut). It is a bechina of katnut hamochin, not a cause or consequence.",
+      "source_quote": "אִיתָא, דְּאֵין עֲנִיּוּת אֶלָּא מִן הַדַּעַת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "עניות", "node2": "חסרון דעת", "proof_text": "אֵין עֲנִיּוּת אֶלָּא מִן הַדַּעַת"},
+        {"node1": "עניות", "node2": "קטנות המוחין", "proof_text": "Katnut = no sekhel = no da'at = aniyut — all expressions of the same deficiency state"}
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "קַטְנוּת הַמֹּחִין וְהָעֲנִיּוּת",
+      "node_id": "דל",
+      "node_text": "דַּל",
+      "polarity": "evil",
+      "reason": "The word 'dal' in the verse 'ashrei maskil el dal' is explicitly interpreted by the Rebbe as referring to the person who is in katnut hamochin: 'namely, when he is in katnut hamochin'. Dal is thus a bechina of katnut — the verse's 'poor person' IS the one in diminished consciousness. This also connects to עניות (aniyut = spiritual poverty = dal) and to the Torah #1 concept of 'dal' (poor/receiving), but here in Torah #106 the dal refers specifically and only to the one in katnut.",
+      "source_quote": "אַשְׁרֵי מַשְׂכִּיל אֶל דָּל – הַיְנוּ כְּשֶׁהוּא בְּקַטְנוּת הַמֹּחִין",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "דל", "node2": "קטנות המוחין", "proof_text": "אַשְׁרֵי מַשְׂכִּיל אֶל דָּל – הַיְנוּ כְּשֶׁהוּא בְּקַטְנוּת הַמֹּחִין"}
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "קַטְנוּת הַמֹּחִין וְהָעֲנִיּוּת",
+      "node_id": "חסרון דעת",
+      "node_text": "חֶסְרוֹן דַּעַת",
+      "polarity": "evil",
+      "reason": "Absence/deficiency of da'at is the root definition of both aniyut and katnut hamochin. The Talmudic source 'ein aniyut ela min hada'at' makes lack of da'at the universal root of spiritual poverty. This is the conceptual opposite of 'daat' in Package 1 — same axis, opposite pole. The absence of da'at = katnut = dal = aniyut, while presence of da'at = gadlut = chesed + rachamim.",
+      "source_quote": "אֵין עֲנִיּוּת אֶלָּא מִן הַדַּעַת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "חסרון דעת", "node2": "עניות", "proof_text": "אֵין עֲנִיּוּת אֶלָּא מִן הַדַּעַת"},
+        {"node1": "חסרון דעת", "node2": "קטנות המוחין", "proof_text": "כִּי יֵשׁ זְמַן שֶׁאֵין לוֹ שֵׂכֶל, וְהוּא נִקְרָא קַטְנוּת הַמֹּחִין"}
+      ]
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "eitza_nodes_excluded": [
+    {
+      "node_id": "שישכיל אחרים",
+      "edge_id": 2279,
+      "reason": "This node appears only in the one eitza edge for Torah #106 (id 2279). The edge describes a cause-and-effect relationship: enlightening others (eitza) causes one's own gadlut to be awakened. This is explicitly an eitza (the text says 'eitsa laZeh'). Not a bechina. This node is not assigned to any package."
+    },
+    {
+      "node_id": "נתעורר גם אצלו",
+      "edge_id": 2279,
+      "reason": "This node is the result-end of the eitza edge (id 2279): enlightening others causes (via eitza) one's own awakening. It describes an effect, not a parallel nature. Not a bechina. Not assigned to any package."
+    }
+  ],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "נִמְתָּקִין כָּל הַדִּינִין (sweetening of judgments)",
+      "reason": "This is an eitza result: when gadlut is reached, judgments are sweetened ('nimtakin kol hadinim'). The Rebbe explicitly frames this as what happens 'when he comes to gadlut' — it flows FROM gadlut, it is not the same nature as gadlut. This is a cause-and-effect (eitza) connection. The dinim themselves are not given a bechina label in the text."
+    },
+    {
+      "concept": "בְּיוֹם רָעָה (day of evil)",
+      "reason": "This is a verse phrase interpreted as the time when katnut and dinim dominate. It is context for the eitza promise ('beyom ra'ah yemalteihu YHVH'), not established as a bechina node. Excluded."
+    },
+    {
+      "concept": "בַּעַל שֵׂכֶל (the one who has sekhel)",
+      "reason": "The Rebbe mentions the 'baal sekhel' who must enlighten the one without sekhel. This is a role description in the eitza structure (the baal sekhel helps via eitza), not a bechina concept. Not included in packages."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_106_edges": 1,
+    "total_reference_106_bechina_edges": 0,
+    "total_reference_106_eitza_edges": 1,
+    "dataset_status": "EMPTY — no bechina edges exist for Torah #106 in the dataset",
+    "source_text_bechina_pairs_found": 6,
+    "source_text_lines": 8,
+    "new_nodes_proposed": 10,
+    "new_bechina_edges_proposed": 10
+  }
+}

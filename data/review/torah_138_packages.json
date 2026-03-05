@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "source": "Torah #138 (Likutay Moharan, Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #138 has ZERO bechina edges in torahData.js — the Torah has not yet been encoded in the dataset. All packages are derived directly from the source text (torah_138.txt). The Torah is extremely brief (6 lines), consisting of a single unified teaching about the heart as the locus of divine presence. One explicit bechina statement was found: 'בַּר לֵבָב בִּבְחִינַת וְלִבִּי חָלַל'. All conceptual nodes cluster into one primary package (the heart-divinity cluster). No evil mirror package is explicitly present in this Torah."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 138,
+      "label": "הַלֵּב וּדְבַר ה'",
+      "label_en": "The Heart and the Word of God",
+      "polarity": "good",
+      "reason": "This Torah presents a single unified teaching: the heart (לֵב) is the dwelling-place of the essence of divinity (עִקַּר הָאֱלֹקוּת), and therefore whatever the heart speaks is literally the word of God (דִּבְרֵי ה' מַמָּשׁ). The heart is not merely a metaphor — it is identified directly with the divine presence. The Rebbe proves this from the verse 'צוּר לְבָבִי' (Rock of my heart = God) and from Rashi's reading of the opening verse. Within this cluster: בַּר לֵבָב (pure/empty of heart) is the human subject who has purified the heart, characterized as being בִּבְחִינַת 'וְלִבִּי חָלַל בְּקִרְבִּי' — whose heart is hollow/empty within him, making it a perfect vessel for divine speech. The Torah's conceptual equation is: emptied heart = divine speech = prophetic knowledge of the future. All these concepts share the same essential nature: the heart as a transparent channel for the divine voice. The emptying (חָלַל) is not a separate idea from being 'bar levav' — it IS what being bar levav means, hence the explicit bechina relationship. 'לְךָ' (to You) = 'בִּשְׁלִיחוּתְךָ' (in Your commission) is Rashi's bechina-equivalence, identifying the heart's speech as delegated divine speech. This entire cluster belongs to the positive/holy domain: the heart is the good vessel for God's presence.",
+      "dominant_node": "לֵב",
+      "nodes": [
+        "לֵב",
+        "עִקַּר הָאֱלֹקוּת",
+        "דִּבְרֵי ה' מַמָּשׁ",
+        "בַּר לֵבָב",
+        "וְלִבִּי חָלַל בְּקִרְבִּי",
+        "בִּשְׁלִיחוּתְךָ"
+      ],
+      "node_degrees": {
+        "לֵב": 3,
+        "דִּבְרֵי ה' מַמָּשׁ": 2,
+        "בַּר לֵבָב": 2,
+        "וְלִבִּי חָלַל בְּקִרְבִּי": 2,
+        "עִקַּר הָאֱלֹקוּת": 1,
+        "בִּשְׁלִיחוּתְךָ": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 138,
+      "label": "יְדִיעַת עֲתִידוֹת",
+      "label_en": "Knowledge of the Future",
+      "polarity": "good",
+      "reason": "Knowing the future (יְדִיעַת עֲתִידוֹת) is the eitza-result produced by the hollow heart receiving divine speech — 'יוּכַל לֵידַע עֲתִידוֹת, עַל־יְדֵי מַה שֶּׁהַלֵּב אוֹמֵר לוֹ'. The language 'עַל־יְדֵי' (through/by means of) is the standard eitza marker in Rebbe Nachman's teachings, not a bechina-equivalence marker. Strictly speaking, this is a single-node concept that receives an eitza arrow from Package 1. However, within the topology of this Torah, the teaching culminates in this concept: knowing the future IS what divine speech from the heart produces. The verse 'לְךָ אָמַר לִבִּי בַּקְּשׁוּ פָנָי' is the textual proof that the heart commissions/speaks prophetically. As a standalone concept with no bechina peers, it is listed here as a separate minimal package to preserve the framework rule that every node belongs to exactly one package. It cannot be merged into Package 1 by shared-nature bechina — the connection is explicitly eitza ('through what the heart says → one can know the future'). It is good polarity: prophetic knowledge is a gift of the holy domain.",
+      "dominant_node": "יְדִיעַת עֲתִידוֹת",
+      "nodes": [
+        "יְדִיעַת עֲתִידוֹת"
+      ],
+      "node_degrees": {
+        "יְדִיעַת עֲתִידוֹת": 0
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": [],
+          "reason": "No bechina peers found for יְדִיעַת עֲתִידוֹת in this Torah. It is the terminus of the eitza chain from Package 1. Listed as a minimal package to preserve node-coverage. If future dataset encoding produces bechina edges connecting this to another prophetic-knowledge concept within this Torah, this package should be revisited."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_from_source_text": 1,
+    "total_nodes": 7,
+    "total_packages": 2,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 2,
+    "dataset_encoding_status": "NOT_ENCODED — Torah #138 has no edges in torahData.js. All analysis is source-text-only.",
+    "note_on_merges": "Package 1 (6 nodes) contains the single connected component derived from source text bechina analysis. Package 2 (1 node — יְדִיעַת עֲתִידוֹת) is kept separate because its connection to Package 1 is via eitza ('עַל־יְדֵי'), not bechina shared-nature. Per framework rules, eitza connections define relationships between packages, not membership within a package. No evil mirror package appears in this Torah — the text is entirely a positive teaching about the heart's divine potential, with no developed anti-concept."
+  }
+}

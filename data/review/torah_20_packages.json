@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "source": "Torah #20",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "22 bechina edges extracted (reference===20, type==='bechina'). 13 raw connected components reduced to 7 packages after merging small isolates on shared nature. Six small 2-node components merged: CC5+CC6 (both are Torah-interpretation/face domain), CC8+CC12 (both orbit the node 'דעת'), CC4+CC9+CC11 (all orbit the matte/power-of-tzaddik domain: 'שערות'='שערי ציון'='מטה עוז'='משפט'), CC3+CC10 (tappuchin=opening of upper heart, belongs in lev-ha-elyon cluster), CC1+CC13 (yirah=tefillah, same essential nature as chatam=yirat-ה). Two small evil components (CC2 klipot, CC7 cold-speech) kept as independent evil packages serving as evil mirrors of Packages 2 and 5 respectively."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 20,
+      "label": "חֹטֶם, יִרְאָה וּתְפִלָּה",
+      "label_en": "The Nose, Awe and Prayer",
+      "polarity": "good",
+      "reason": "The nose (חוטם) is the organ of spiritual smell — it 'smells' the awe of God ('והריחו ביראת ה''). In Torah #20 the nose is equated with: (1) the verse 'ודברתם אל הסלע' — the humble supplication before the rock/heart, (2) the phrase 'יראת ה' היא תתהלל' — fear of God as the quality of prayer. Independently, יראה = תפלה (bechina edge 3161). All these nodes share the same essential nature: the quality of humble awe before God, expressed through the nose as the organ of 'smelling holiness' and through prayer as the verbal manifestation of that awe. The חוטם is also the Sefira of the nose in the beard-tikunim commentary that structures the second half of the Torah. CC1 and CC13 merged here because יראה=תפלה and חטם='יראת ה' היא תתהלל' are both expressions of the same essential spiritual quality of humble awe.",
+      "dominant_node": "חטם",
+      "nodes": [
+        "חטם",
+        "\"והריחו ביראת ה\"",
+        "ודברתם אל הסלע",
+        "\"יראת ה היא תתהלל\"",
+        "יראה",
+        "תפלה"
+      ],
+      "node_degrees": {
+        "חטם": 3,
+        "\"והריחו ביראת ה\"": 1,
+        "ודברתם אל הסלע": 1,
+        "\"יראת ה היא תתהלל\"": 1,
+        "יראה": 1,
+        "תפלה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["יראה", "תפלה"],
+          "reason": "CC13 (יראה=תפלה) merged into CC1 (חטם cluster) because the nose = יראת ה' = תהלה/תפלה. All three concepts share the same essential spiritual quality: humble awe before God expressed as prayer. This is shared nature, not cause-effect — חטם IS the organ of יראה, and יראה IS תפלה."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 20,
+      "label": "לֵב הָעֶלְיוֹן וְהַסֶּלַע",
+      "label_en": "The Upper Heart and the Rock",
+      "polarity": "good",
+      "reason": "The dominant cluster of Torah #20 identifies four synonyms for the Divine Source from which Torah interpretation flows: לב העליון (the upper heart), סלע (rock), צור (rock/cliff), and לב (heart). These are four names for the same metaphysical reality — the upper divine heart from which hot, fiery speech and Torah interpretation emanate when prayer opens it. ירושלים = לב because 'דברו על לב ירושלים' (Isaiah 40). 'צור לבבי' (Psalms 73) equates the rock with the heart. 'פתח צור ויזובו מים' (Psalms 105) equates the rock with the source of speech-water. The תפוחים (rosy apples of the beard, tikun 5) are the opening-keys of this heart — when the heart opens with divine compassion, fiery speech/Torah flows. All nodes in this package share one essential nature: the divine source of Torah interpretation, the holy heart that must be opened through prayer.",
+      "dominant_node": "לב העליון",
+      "nodes": [
+        "לב העליון",
+        "\"צור לבבי\"",
+        "סלע",
+        "ירושלים",
+        "לב",
+        "צור",
+        "תפוחים",
+        "מפתחי הלב שנפתחים"
+      ],
+      "node_degrees": {
+        "לב העליון": 2,
+        "סלע": 2,
+        "צור": 2,
+        "לב": 2,
+        "\"צור לבבי\"": 1,
+        "ירושלים": 1,
+        "תפוחים": 1,
+        "מפתחי הלב שנפתחים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["תפוחים", "מפתחי הלב שנפתחים"],
+          "reason": "CC10 (תפוחים=מפתחי הלב שנפתחים) merged into CC3 (לב העליון cluster) because תפוחים are the keys that open the upper heart. The tappuchin (tikun 5 of the beard) share the essential nature of 'the mechanism by which the upper heart opens.' They ARE the opening of the heart, not a cause of it — shared nature with לב העליון/סלע."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 20,
+      "label": "קְלִפּוֹת סְבִיב הַלֵּב — מִרְאַת יְרוּשָׁלַיִם בַּגּוֹיִם",
+      "label_en": "Klipot Surrounding the Heart — Jerusalem Among the Nations",
+      "polarity": "evil",
+      "reason": "This is the evil mirror of Package 2. While Package 2 is the upper heart (lev ha-elyon) as the holy source of Torah, Package 3 is the klipot — the impure husks — that surround and besiege that same heart. The verse 'זאת ירושלים שמתיה בתוך הגוים' (Ezekiel 5:5) represents the heart/Jerusalem surrounded by hostile nations = the klipot. These two nodes share the essential nature: the encircling evil forces that prevent Torah interpretation from flowing by besieging the upper heart. Note that 'ירושלים' appears in Package 2 as the positive identity (Jerusalem = heart of holiness) and here 'ירושלים שמתיה בתוך הגוים' appears as the symbol of that holy heart under siege — the same concept with opposite orientation, exactly as the framework predicts.",
+      "dominant_node": "קלפות השוכנים סביב לב העליון",
+      "nodes": [
+        "קלפות השוכנים סביב לב העליון",
+        "\"זאת ירושלים שמתיה בתוך הגוים\""
+      ],
+      "node_degrees": {
+        "קלפות השוכנים סביב לב העליון": 1,
+        "\"זאת ירושלים שמתיה בתוך הגוים\"": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 4,
+      "torah_ref": 20,
+      "label": "מַטֵּה הַצַּדִּיק, שַׁעֲרֵי צִיּוֹן וְהַמִּשְׁפָּט",
+      "label_en": "The Tzaddik's Staff, Gates of Zion, and Judgment",
+      "polarity": "good",
+      "reason": "Three originally separate components share the same essential nature: the power of the tzaddik's holy service as a force of conquest and judgment in the world. (1) שערות/שערי ציון/נימין — the hairs of the beard in the Zoharic tikunim equal 'שערי ציון' = the gates of Zion, from which מטה עוז goes forth ('מטה עזך ישלח ה' מציון'). The hairs ARE the gates of power. (2) מטה/ממשלת וכח הצדיק — the staff equals the dominion and power the tzaddik builds through his divine service. The staff IS that power, not a tool of it. (3) מימיך/משפט — 'your waters' = mishpat/judgment ('ויגל כמים משפט', Amos 5:24). Judgment flows like water from Edom's territory. All three clusters share the essential nature: the tzaddik's authority to subdue wickedness — whether expressed as the hairs/gates of Zion, the staff of his service, or the judgment-water that flows from Edom. They form one domain: holy power subduing evil.",
+      "dominant_node": "שערות",
+      "nodes": [
+        "שערות",
+        "\"שערי ציון\"",
+        "נימין",
+        "מטה עזך ישלח מציון",
+        "מטה",
+        "ממשלת וכח הצדיק שנעשה על ידי עבודתו",
+        "מימיך",
+        "משפט"
+      ],
+      "node_degrees": {
+        "שערות": 2,
+        "\"שערי ציון\"": 2,
+        "נימין": 1,
+        "מטה עזך ישלח מציון": 1,
+        "מטה": 1,
+        "ממשלת וכח הצדיק שנעשה על ידי עבודתו": 1,
+        "מימיך": 1,
+        "משפט": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["מטה", "ממשלת וכח הצדיק שנעשה על ידי עבודתו"],
+          "reason": "CC9 (מטה=ממשלת וכח הצדיק) merged with CC4 (שערות=שערי ציון=מטה עוז) because the 'matte' in CC9 IS the same 'מטה עוז' in CC4 — the staff that goes forth from Zion. Shared nature: the tzaddik's power/staff/authority. Not cause-effect — the staff IS the power."
+        },
+        {
+          "merged_nodes": ["מימיך", "משפט"],
+          "reason": "CC11 (מימיך=משפט) merged here because the teaching uses judgment (mishpat from Edom's waters) as one expression of the tzaddik's subduing power, alongside the staff and the gates of Zion. 'Waters' = judgment = the tzaddik's authority flowing into the world. Shared essential nature: holy power that subdues the wicked — same domain as the matte and sha'arei Zion."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 20,
+      "label": "בֵּאוּרֵי הַתּוֹרָה, הַפָּנִים וְהַבְּאֵר",
+      "label_en": "Torah Interpretation, the Face, and the Well",
+      "polarity": "good",
+      "reason": "These nodes all represent the same metaphysical entity: the substance of Torah interpretation as it manifests in the world. (1) באר = Torah interpretation — 'הבאר, הינו בחינת באורי התורה' (the well = Torah explanations, established from the Midrashic tradition that the Beer of Miriam = Torah). (2) באורי התורה = פנים (face) — 'באורי התורה, שהם בחינת פנים' — face/presence = Torah interpretation. (3) פני ה' = באורי ודרושי התורה — 'פני ה' זה בחינת באורי ודרושי התורה, כמו 'והדרת פני זקן'; זקן זה הדרת פנים, והם שלש-עשרה תיקוני דיקנא, והם שלש-עשרה מידות שהתורה נדרשת בהן' — the face of God = the Torah's 13 hermeneutical principles as embodied in the 13 beard-tikunim. All five nodes share one essential nature: Torah interpretation in its various expressions (well/face/divine presence/hermeneutic rules).",
+      "dominant_node": "באורי התורה",
+      "nodes": [
+        "באר",
+        "באורי התורה",
+        "פנים",
+        "פני ה'",
+        "באורי ודרושי התורה"
+      ],
+      "node_degrees": {
+        "באורי התורה": 2,
+        "באר": 1,
+        "פנים": 1,
+        "פני ה'": 1,
+        "באורי ודרושי התורה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["פני ה'", "באורי ודרושי התורה"],
+          "reason": "CC6 (פני ה'=באורי ודרושי התורה) merged into CC5 (באר=באורי התורה=פנים) because 'פני ה'' and 'באורי ודרושי התורה' are semantically identical to 'פנים' and 'באורי התורה' in CC5. The text uses both formulations for the same concept: Torah interpretation = Face/Presence. Shared nature: Torah's expository content."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "torah_ref": 20,
+      "label": "מִדְבַּר צִן — הַדִּבּוּר הַמְּצֻנָּן",
+      "label_en": "Midbar Tzin — Frozen Speech (Evil Mirror of Torah)",
+      "polarity": "evil",
+      "reason": "This is the evil mirror of Package 5 (Torah interpretation/the well). 'מדבר צן' (Numbers 20:1) = 'דבור מצנן' — frozen/cold speech. When the soul that draws Torah interpretations falls from the level of 'הלא כה דברי כאש' (fiery divine speech), her speech becomes cold (מצנן). In Midbar Tzin, Miriam died — and the well (Torah interpretation, Package 5) departed. These two nodes share the essential nature: the failure-state of speech, the anti-Torah that results when divine fire is absent. They are structurally opposite to Package 5's 'well of Torah.' The place-name מדבר צן IS the bechina of frozen speech — same essential negative nature.",
+      "dominant_node": "מדבר צן",
+      "nodes": [
+        "מדבר צן",
+        "דבור מצנן"
+      ],
+      "node_degrees": {
+        "מדבר צן": 1,
+        "דבור מצנן": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 7,
+      "torah_ref": 20,
+      "label": "משֶׁה, דַּעַת וּפְגַם הַבְּרִית",
+      "label_en": "Moses, Da'at, and the Blemish of the Covenant",
+      "polarity": "neutral",
+      "reason": "The node 'דעת' (da'at/divine knowledge) bridges two bechina edges pulling in opposite moral directions: (1) משה = דעת — Moses embodies da'at in its positive, rectified form (he is the angel sent to draw Israel out of Egypt by revealing da'at, per section י); (2) פגם הברית = פגם הדעת — the sin of the covenant IS the blemish of da'at, because sexual knowledge ('וידע אדם') is da'at corrupted. The same concept 'דעת' is both the rectification (Moses) and the wound (פגם הברית). This package is marked neutral because da'at itself is the battleground — it can be holy (Moses) or corrupted (blemish of covenant). The package captures the dual nature of da'at as described in this Torah. The evil dimension (פגם הברית/פגם הדעת) is the mirror of the positive dimension (משה/דעת), with דעת as the bridge node.",
+      "dominant_node": "דעת",
+      "nodes": [
+        "משה",
+        "דעת",
+        "פגם הברית",
+        "פגם הדעת"
+      ],
+      "node_degrees": {
+        "דעת": 2,
+        "פגם הדעת": 2,
+        "משה": 1,
+        "פגם הברית": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["פגם הברית", "פגם הדעת"],
+          "reason": "CC12 (פגם הברית=פגם הדעת) merged with CC8 (משה=דעת) via the shared node 'דעת.' Both components center on da'at: Moses IS da'at (good pole), and the blemish of the covenant IS the blemish of da'at (evil pole). Shared essential nature: da'at as the conceptual center — both the positive (Moses-da'at) and its negation (pgam ha-brit = pgam ha-da'at) are faces of the same da'at-domain."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 22,
+    "total_nodes": 35,
+    "total_packages": 7,
+    "raw_connected_components": 13
+  }
+}

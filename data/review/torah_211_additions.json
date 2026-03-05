@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "source": "Torah #211",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_211_packages.json (this session), all reference===211 edges from torahData.js (2 bechina, 3 eitza), and the full source text torah_211.txt. For each statement in the source text, verified whether it uses explicit bechina language (בְּחִינַת, הוּא בְּחִינַת, נִקְרָא, הַיְנוּ, לְשׁוֹן) and whether the concept appears as a node in the dataset assigned to a package. Torah #211 is three sentences; all bechina statements have been extracted."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "מֹחִין וּמֹשֶׁה",
+      "node_id": "מחין זכים",
+      "node_text": "מֹחִין זַכִּים",
+      "polarity": "good",
+      "reason": "The source text twice uses the phrase 'מֹחִין זַכִּים' (pure/clear intellect): 'וְאִי אֶפְשָׁר לָבוֹא לְמֹחִין זַכִּים אֶלָּא עַל־יְדֵי הִתְקַשְּׁרוּת לְצַדִּיקִים' (line 2). The concept מחין זכים is not a separate bechina node in the dataset for Torah #211 — it appears only as the target of an eitza edge (edge 1556: הִתְקַשְּׁרוּת לְצַדִּיקִים → לָבוֹא לְמֹחִין זַכִּים). However, מחין זכים is qualitatively the same domain as מחין — it is the attributive form of the mochin concept, describing its state when pure. The teaching treats מחין and מחין זכים as one conceptual reality. As a bechina addition, the proposed edge would be: מחין זכים ↔ מחין (they share the same essential nature — pure intellect = intellect, not two different things). This belongs in Package 1 alongside the existing מחין and משה nodes.",
+      "source_quote": "וְאִי אֶפְשָׁר לָבוֹא לְמֹחִין זַכִּים אֶלָּא עַל־יְדֵי הִתְקַשְּׁרוּת לְצַדִּיקִים",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 1556,
+      "if_in_dataset_edge_type": "eitza",
+      "proposed_new_edge_type": "bechina",
+      "proposed_new_edge_node1": "מחין זכים",
+      "proposed_new_edge_node2": "מחין"
+    },
+    {
+      "package_id": 1,
+      "package_label": "מֹחִין וּמֹשֶׁה",
+      "node_id": "קדשת וטהרת המחשבות",
+      "node_text": "קְדֻשַּׁת וְטָהֳרַת הַמַּחֲשָׁבוֹת",
+      "polarity": "good",
+      "reason": "The teaching opens with a bechina-equivalent statement: 'עִקַּר הַמְתָּקַת הַדִּינִין אֵינוֹ אֶלָּא עַל יְדֵי קְדֻשַּׁת וְטָהֳרַת הַמַּחֲשָׁבוֹת, כִּי שָׁם שָׁרְשָׁם' (line 1) — the root/source of judgments is IN the thoughts. This identifies purity of thought as the essential location (שָׁרְשָׁם — their root) of the matter. The concept appears in the dataset as node1 of an eitza edge (edge 884: קְדֻשַּׁת וְטָהֳרַת הַמַּחֲשָׁבוֹת → עִקַּר הַמְתָּקַת הַדִּינִין, eitza). However, the teaching further identifies קדשת המחשבה with מחין זכים — the closing line restates the goal as 'לִזְכּוֹת לִקְדֻשַּׁת הַמַּחֲשָׁבָה' (to merit holiness of thought), making it equivalent to meriting pure intellect. The essential nature of 'holiness and purity of thought' IS the same domain as 'pure intellect' — these are two descriptions of the same spiritual state. This node belongs in Package 1 as a bechina of מחין.",
+      "source_quote": "עִקַּר הַמְתָּקַת הַדִּינִין אֵינוֹ אֶלָּא עַל יְדֵי קְדֻשַּׁת וְטָהֳרַת הַמַּחֲשָׁבוֹת, כִּי שָׁם שָׁרְשָׁם",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 884,
+      "if_in_dataset_edge_type": "eitza",
+      "proposed_new_edge_type": "bechina",
+      "proposed_new_edge_node1": "קדשת וטהרת המחשבות",
+      "proposed_new_edge_node2": "מחין"
+    },
+    {
+      "package_id": 2,
+      "package_label": "צַדִּיק וְיוֹסֵף",
+      "node_id": "התקשרות לצדיקים",
+      "node_text": "הִתְקַשְּׁרוּת לְצַדִּיקִים",
+      "polarity": "good",
+      "reason": "The concept 'attachment to tzaddikim' appears twice in the dataset for Torah #211, both as eitza edges: edge 1556 (הִתְקַשְּׁרוּת לְצַדִּיקִים → מֹחִין זַכִּים) and edge 2945 (הִתְקַשְּׁרוּת לְצַדִּיקִים → שְׁלֵמוּת לְמֹחִין). However, the teaching's argument suggests that הִתְקַשְּׁרוּת לְצַדִּיקִים is not merely a causal step but the defining activity that constitutes the relationship with the tzaddik — it IS what it means to engage with the tzaddik (Package 2). Just as Moshe 'taking the bones of Yosef' IS the model of attachment, הִתְקַשְּׁרוּת לְצַדִּיקִים IS the bechina of what traveling to tzaddikim on Rosh Hashana means. This node belongs in Package 2 (the tzaddik/Yosef domain) as the practical/active dimension of the tzaddik relationship. The existing eitza edges correctly show it producing mochin (Package 1 outcome), but within Package 2 it is the bechina of the action that defines the tzaddik relationship.",
+      "source_quote": "וְאִי אֶפְשָׁר לָבוֹא לְמֹחִין זַכִּים אֶלָּא עַל־יְדֵי הִתְקַשְּׁרוּת לְצַדִּיקִים",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 1556,
+      "if_in_dataset_edge_type": "eitza",
+      "proposed_new_edge_type": "bechina_candidate",
+      "proposed_new_edge_node1": "התקשרות לצדיקים",
+      "proposed_new_edge_node2": "צדיק",
+      "note": "Borderline: the attachment TO tzaddikim is an activity (eitza) rather than a co-essential nature of the tzaddik himself. However, the text presents it as definitionally what the tzaddik-relationship IS, not merely what it produces. Flagged as bechina_candidate rather than firm bechina."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_211_edges": 5,
+    "total_reference_211_bechina_edges": 2,
+    "total_reference_211_eitza_edges": 3,
+    "all_bechina_nodes_assigned": true,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["משה", "מחין"],
+      "package_2": ["יוסף", "צדיק"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "eitza_nodes_examined": [
+      {
+        "node": "קדשת וטהרת המחשבות",
+        "appears_in_edge": 884,
+        "edge_type": "eitza",
+        "conclusion": "Proposed as bechina addition to Package 1 — see additions above"
+      },
+      {
+        "node": "המתקת הדינים",
+        "appears_in_edge": 884,
+        "edge_type": "eitza",
+        "conclusion": "Excluded from packages. המתקת הדינים is the *goal* (what is achieved through purity of thought), not a bechina-equivalent of any package member. It is a neutral-to-good outcome concept. The relationship 'purity of thought → sweetening of judgments' is strictly eitza — one produces the other; they are not the same essential nature. Not adding as a bechina node."
+      },
+      {
+        "node": "לבוא למחין זכים",
+        "appears_in_edge": 1556,
+        "edge_type": "eitza",
+        "conclusion": "This is effectively a variant label for מחין זכים (see additions). The phrase 'לָבוֹא לְמֹחִין זַכִּים' is the infinitive form expressing the goal-state. Subsumed under the מחין זכים addition to Package 1."
+      },
+      {
+        "node": "שלמות למחין",
+        "appears_in_edge": 2945,
+        "edge_type": "eitza",
+        "conclusion": "שְׁלֵמוּת לְמֹחִין (perfection/completeness of intellect) is a variant of מחין זכים — both express the state of intellect that is fully realized through attachment to the tzaddik. The teaching uses both phrases in the same sentence ('אֵין שְׁלֵמוּת לְמֹחִין אֶלָּא עַל־יְדֵי הִתְקַשְּׁרוּת לְצַדִּיקִים'). Could be flagged as an alias of מחין זכים or מחין. Not a new concept requiring a separate bechina edge."
+      }
+    ],
+    "concepts_in_source_text_not_in_dataset": [
+      "רֹאשׁ הַשָּׁנָה — Rosh Hashana is described as 'מְקוֹר הַדִּינִים שֶׁל כָּל הַשָּׁנָה' (the source of all the year's judgments). The text does not use 'בְּחִינַת' language here, but 'הוּא מְקוֹר' is an identity statement. This could be noted as a bechina candidate: רֹאשׁ הַשָּׁנָה ↔ מְקוֹר הַדִּינִים. However, given strict framework requirements for 'בְּחִינַת' / 'נִקְרָא' / 'הַיְנוּ' language, this is excluded as a firm addition. Rosh Hashana does not fit cleanly in either package (not mochin-domain, not tzaddik-domain); if anything, it is contextual framing of the teaching's occasion.",
+      "עַצְמוֹת יוֹסֵף — The bones of Joseph (used as proof-text for the Moshe=mochin / Yosef=tzaddik argument). This is not a bechina node but a textual reference. The bones of Joseph are the vehicle through which Moshe's attachment to Yosef is expressed — an eitza object, not a bechina subject."
+    ],
+    "structural_note": "Torah #211 is one of the most compressed teachings in Likutay Moharan. Its two bechina statements (Moshe=mochin, Yosef=tzaddik) are derived from the Zohar on the verse 'Moshe took the bones of Joseph' and form the conceptual backbone of the entire teaching. The three eitza edges in the dataset correctly capture the causal chain: purity of thought → sweetening of judgments; attachment to tzaddikim → pure intellect; attachment to tzaddikim → perfection of intellect. The bechina graph is minimal (4 nodes, 2 edges, 2 components) but the conceptual depth is substantial — the entire teaching is a single argument built on these two bechinot."
+  }
+}

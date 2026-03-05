@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "source": "Torah #110 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all reference===110 edges from torahData.js, and the full source text torah_110.txt. FINDING: The dataset contains zero bechina edges and zero eitza edges for Torah #110. All bechina pairs below are identified from explicit bechina markers in the source text (הִיא, מִלְּשׁוֹן, repeated synonymic coupling, definitional axiom repetition). Every concept identified is a gap relative to the dataset, which is completely empty for this Torah. The teaching (6 lines on Joshua 1:8) revolves entirely around the binary: Torah as ruchaniyut (spirituality) vs. Torah as mamashut (materiality). Five bechina pairs were identified, yielding 7 nodes across 2 packages."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וְרוּחָנִיּוּת",
+      "node_id": "תורה",
+      "node_text": "תּוֹרָה",
+      "polarity": "good",
+      "reason": "Torah is the central concept of the teaching and the dominant node of Package 1. The Rebbe opens: 'ki haTorah hi ruchaniyut' — Torah IS spirituality. This is the foundational bechina of the entire teaching: Torah's essential nature is spiritual, not physical. The teaching circles this identity throughout all 6 lines and concludes with it: 'ki davar ruchani eino tofes makom'. Torah is the hub connecting to both ruchaniyut (explicitly: 'Torah IS ruchaniyut') and sekhel ruchani (a spiritual intellect can hold all of Torah). Torah also appears in the negative framing ('divrei haTorah' that get materialized) but as the object of the evil action, not as a node in Package 2 — Torah itself belongs to the good cluster, while the danger is materializing it.",
+      "source_quote": "כִּי הַתּוֹרָה הִיא רוּחָנִיּוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "תורה", "node2": "רוחניות", "proof_text": "כִּי הַתּוֹרָה הִיא רוּחָנִיּוּת"},
+        {"node1": "תורה", "node2": "שכל רוחני", "proof_text": "וַאֲשֶׁר זַךְ יָשָׁר פָּעֳלוֹ, וְשִׂכְלוֹ רוּחָנִי, יָכוֹל לִתְפֹּס כָּל הַתּוֹרָה כֻּלָּהּ — shared ruchani nature allows Torah to dwell in the spiritual sekhel"}
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וְרוּחָנִיּוּת",
+      "node_id": "רוחניות",
+      "node_text": "רוּחָנִיּוּת",
+      "polarity": "good",
+      "reason": "Ruchaniyut (spirituality) is the second node of Package 1, explicitly identified with Torah ('Torah IS ruchaniyut') and with the property of taking no space ('davar ruchani eino tofes makom'). The Rebbe uses ruchaniyut as a technical term for the essential quality of Torah — not a metaphor but an ontological identity. The teaching presents ruchaniyut as the enabling condition of limitless Torah retention: because Torah is spiritual, a spiritual intellect can hold all of it without displacement. Ruchaniyut is also the mirror-opposite of gashmiyut (Package 2) — the two are the same axis of existence, one orientation holy and one deficient.",
+      "source_quote": "כִּי הַתּוֹרָה הִיא רוּחָנִיּוּת... כִּי דָּבָר רוּחָנִי אֵינוֹ תּוֹפֵס מָקוֹם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "רוחניות", "node2": "תורה", "proof_text": "כִּי הַתּוֹרָה הִיא רוּחָנִיּוּת"},
+        {"node1": "רוחניות", "node2": "לא תופס מקום", "proof_text": "כִּי דָּבָר רוּחָנִי אֵינוֹ תּוֹפֵס מָקוֹם — to be spiritual IS to take no space (definitional bechina)"}
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וְרוּחָנִיּוּת",
+      "node_id": "שכל רוחני",
+      "node_text": "שֵׂכֶל רוּחָנִי",
+      "polarity": "good",
+      "reason": "The spiritual intellect ('sikhlo ruchani') is the human vessel that shares Torah's essential ruchani nature. The Rebbe establishes that a person whose intellect is spiritual can grasp all of Torah ('yakhol litpos kol haTorah kulah') — this is not cause-and-effect (it is not that the spiritual sekhel CAUSES Torah retention) but parallel nature: because the sekhel IS ruchani, it is the same nature as Torah, and spiritual things of the same nature can dwell together without spatial displacement. The sekhel ruchani is characterized by 'zakh yashar po'olo' (pure and straight in his deeds) — the purity that allows spiritual identity. This concept is the positive human embodiment of the Torah-Ruchaniyut identity.",
+      "source_quote": "וַאֲשֶׁר זַךְ יָשָׁר פָּעֳלוֹ, וְשִׂכְלוֹ רוּחָנִי, יָכוֹל לִתְפֹּס כָּל הַתּוֹרָה כֻּלָּהּ, וְלֹא יִשְׁכַּח דָּבָר",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "שכל רוחני", "node2": "תורה", "proof_text": "שִׂכְלוֹ רוּחָנִי, יָכוֹל לִתְפֹּס כָּל הַתּוֹרָה כֻּלָּהּ — shared ruchani nature; can hold Torah completely"},
+        {"node1": "שכל רוחני", "node2": "לא תופס מקום", "proof_text": "וִיכוֹלָה הַתּוֹרָה לְהִתְפַּשֵּׁט וְלִשְׁכֹּן בְּשִׂכְלוֹ — Torah can spread and dwell in a spiritual sekhel because both are ruchani and neither displaces the other"}
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וְרוּחָנִיּוּת",
+      "node_id": "לא תופס מקום",
+      "node_text": "לֹא תּוֹפֵס מָקוֹם",
+      "polarity": "good",
+      "reason": "The quality of taking no space ('eino tofes makom') is the Rebbe's definitional property of spirituality — it appears twice in the teaching (lines 2 and 6) as the axiomatic reason Torah can be fully retained when treated spiritually. This is not an eitza consequence of ruchaniyut but its essential DEFINITION: what it means to be ruchani IS to be without spatial limit. The phrase appears as the conclusive explanation in both the opening argument ('davar ruchani eino tofes makom') and the closing proof ('ki davar ruchani eino tofes makom') — making it a structural bechina of ruchaniyut, not a result from it. Its mirror in Package 2 is 'shiyur ve-kitzba' (measure and limit) — but that is an eitza consequence of mamashut, excluded from Package 2 as eitza.",
+      "source_quote": "כִּי דָּבָר רוּחָנִי אֵינוֹ תּוֹפֵס מָקוֹם, וִיכוֹלָה הַתּוֹרָה לְהִתְפַּשֵּׁט וְלִשְׁכֹּן בְּשִׂכְלוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "לא תופס מקום", "node2": "רוחניות", "proof_text": "כִּי דָּבָר רוּחָנִי אֵינוֹ תּוֹפֵס מָקוֹם — definitional identity: to be ruchani IS lo tofes makom"},
+        {"node1": "לא תופס מקום", "node2": "שכל רוחני", "proof_text": "וִיכוֹלָה הַתּוֹרָה לְהִתְפַּשֵּׁט וְלִשְׁכֹּן בְּשִׂכְלוֹ — Torah can spread in the sekhel because the sekhel, being ruchani, takes no space"}
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "מַמָּשׁוּת וְגַשְׁמִיּוּת",
+      "node_id": "מַמָּשׁוּת",
+      "node_text": "מַמָּשׁוּת",
+      "polarity": "evil",
+      "reason": "Mamashut (substance/materiality) is the dominant node of Package 2 and the conceptual antithesis of Torah's ruchaniyut. The word appears 5 times in the teaching (lines 3-6) and is the etymological source of the teaching's key word 'yamush' ('yamush — mileshon mamashut'). When Torah is made into mamashut ('oseh mimena mamashut'), it becomes subject to spatial limits — but this limit (shiyur ve-kitzba) is an eitza consequence, not a bechina node. Mamashut is explicitly paired with gashmiyut twice as synonymous concepts ('mamashut ve-gashmiyut' in lines 4 and 5), establishing their shared essential nature through repeated coupling. Mamashut is also the warning target in the verse's reinterpretation: 'lo yamush — hizaher shelo tihyeh mamashut ve-gashmiyut be-divrei haTorah' — the entire practical instruction of the Torah is to prevent mamashut. This is Package 2's dominant node: highest frequency, etymological root of yamush, and the concept around which the entire negative teaching orbits.",
+      "source_quote": "מְגַשֵּׁם דִּבְרֵי הַתּוֹרָה וְעוֹשֶׂה מִמֶּנָּה מַמָּשׁוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "מַמָּשׁוּת", "node2": "גַּשְׁמִיּוּת", "proof_text": "הִזָּהֵר שֶׁלֹּא תִּהְיֶה מַמָּשׁוּת וְגַשְׁמִיּוּת בְּדִבְרֵי הַתּוֹרָה — paired twice as synonyms, establishing shared essential nature"},
+        {"node1": "מַמָּשׁוּת", "node2": "יָמוּשׁ", "proof_text": "יָמוּשׁ – מִלְּשׁוֹן מַמָּשׁוּת — yamush IS from mamashut (etymological bechina)"}
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "מַמָּשׁוּת וְגַשְׁמִיּוּת",
+      "node_id": "גַּשְׁמִיּוּת",
+      "node_text": "גַּשְׁמִיּוּת",
+      "polarity": "evil",
+      "reason": "Gashmiyut (physicality/corporeality) is the mirror-opposite of ruchaniyut and is explicitly paired with mamashut in two formulations (lines 4 and 5). The Rebbe uses 'mamashut ve-gashmiyut' as a compound concept, treating both as expressions of the same essential quality — the physical, space-occupying, limit-bound nature of things. Gashmiyut is the evil mirror of ruchaniyut (Package 1): just as Torah's essential nature IS ruchaniyut, its antithesis (when materialized) IS gashmiyut. The Rebbe also uses the verbal form 'megashem divrei haTorah' (materializing Torah's words) in line 3 — the root gashot/gashem appears as both noun and verb, emphasizing its role as the active process of making spiritual things physical. The act of 'meghasshem' and the result 'gashmiyut' are the same essential phenomenon.",
+      "source_quote": "הִזָּהֵר שֶׁלֹּא תִּהְיֶה מַמָּשׁוּת וְגַשְׁמִיּוּת בְּדִבְרֵי הַתּוֹרָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "גַּשְׁמִיּוּת", "node2": "מַמָּשׁוּת", "proof_text": "מַמָּשׁוּת וְגַשְׁמִיּוּת — repeatedly paired as synonyms across lines 4 and 5"}
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "מַמָּשׁוּת וְגַשְׁמִיּוּת",
+      "node_id": "יָמוּשׁ",
+      "node_text": "יָמוּשׁ",
+      "polarity": "evil",
+      "reason": "Yamush is the key word of the teaching's verse ('lo yamush sefer haTorah hazeh mipicha') and the Rebbe explicitly derives its meaning from mamashut: 'yamush — mileshon mamashut' (yamush is from the language/root of mamashut). This is a classic bechina-by-etymology: the essential nature of the word yamush IS mamashut — departure from the mouth IS materialization. The proof-text cited ('vayamesh choshekh' — the tangible/felt darkness of Egypt) confirms that the root yod-mem-shin means 'palpable, touchable, material' — precisely mamashut. The verse's warning is therefore reinterpreted: 'lo yamush' does not mean 'should not depart' in the simple sense, but 'should not be made mamashut/material'. This is a bechina of the word's meaning with its essential conceptual nature — yamush IS an expression of mamashut.",
+      "source_quote": "יָמוּשׁ – מִלְּשׁוֹן מַמָּשׁוּת. כְּמוֹ שֶׁכָּתוּב: וְיָמֵשׁ חֹשֶׁךְ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {"node1": "יָמוּשׁ", "node2": "מַמָּשׁוּת", "proof_text": "יָמוּשׁ – מִלְּשׁוֹן מַמָּשׁוּת — etymological bechina: yamush IS from mamashut"}
+      ]
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "eitza_nodes_excluded": [
+    {
+      "node_id": "שִׁכְחָה",
+      "reason": "Forgetting is explicitly an eitza consequence: 'u'mizeh BA hashikhah' — from materialization COMES (ba) forgetting. The word 'ba' (comes/comes from) is the classic eitza marker. Forgetting is what mamashut PRODUCES, not what it IS. It flows FROM Package 2 as a consequence but is not a bechina member of it. Not assigned to any package."
+    },
+    {
+      "node_id": "קִיּוּם הַלִּמּוּד",
+      "reason": "The sustaining of learning ('yitkayem talmmudo') is the eitza result when Torah remains spiritual: 'va'azai yitkayem talmmudo' — and THEN the learning will be sustained. The 'va'azai' (and then) is eitza language. It flows FROM Package 1 as a benefit but is not a bechina member of it. Not assigned to any package."
+    },
+    {
+      "node_id": "שִׁעוּר וְקִצְבָּה",
+      "reason": "Measure and limit: 'yesh lah shiyur ve-kitzba' — mamashut GIVES Torah a spatial limit. This is an eitza consequence of materializing Torah, not a parallel-nature identity with mamashut. The 'yesh lah' phrasing (there is to it / it has) indicates a property attributed by causal action, not a shared essential nature. Not assigned to any package."
+    },
+    {
+      "node_id": "רַב יוֹסֵף",
+      "reason": "Rav Yosef appears only as a historical proof-case in the Talmudic story (Bava Metzia 85), not as a conceptual node with bechina relationships. He fasted to sustain his learning — the story illustrates the teaching's principle but does not add new bechina concepts. Not assigned to any package."
+    }
+  ],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "חֹשֶׁךְ (vayamesh choshekh — darkness)",
+      "reason": "The darkness of Egypt (Exodus 10:21) is cited only as a linguistic proof that the root yod-mem-shin means 'palpable/material' (mamashut). It is a scriptural proof-text for the etymological bechina yamush → mamashut. The darkness itself is not a conceptual node in Torah #110 — it is external scriptural evidence, not an internal teaching element. Excluded."
+    },
+    {
+      "concept": "פֶּה / מִפִּיךָ (mouth)",
+      "reason": "The word 'picha' (your mouth) in the verse is interpreted in line 5: 'mipicha — kelo'mar mekhamat pikha, sheyotze me'itkha, yihyeh la mamashut ve-gashmiyut, tizaher mizeh.' The mouth is the site where Torah can become mamashut — it is the medium of the eitza (the means by which materialization occurs in speech), not a bechina node. The mouth belongs to the eitza layer, not the bechina layer. Excluded."
+    },
+    {
+      "concept": "לִמּוּד תּוֹרָה / תַּלְמוּד תּוֹרָה",
+      "reason": "Torah study is the practice that the teaching addresses, but it is not a separate bechina node from תורה itself. The teaching's subject is Torah — its retention or forgetting. Torah study is subsumed under the dominant node 'תורה'. Not a separate addition."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_110_edges": 0,
+    "total_reference_110_bechina_edges": 0,
+    "total_reference_110_eitza_edges": 0,
+    "dataset_status": "COMPLETELY EMPTY — no edges of any type exist for Torah #110 in the dataset",
+    "source_text_bechina_pairs_found": 5,
+    "source_text_lines": 6,
+    "new_nodes_proposed": 7,
+    "new_bechina_edges_proposed": 9,
+    "bechina_markers_found": [
+      {"marker": "הִיא", "instance": "הַתּוֹרָה הִיא רוּחָנִיּוּת"},
+      {"marker": "מִלְּשׁוֹן", "instance": "יָמוּשׁ – מִלְּשׁוֹן מַמָּשׁוּת"},
+      {"marker": "synonymic coupling x2", "instance": "מַמָּשׁוּת וְגַשְׁמִיּוּת (lines 4 and 5)"},
+      {"marker": "definitional axiom x2", "instance": "דָּבָר רוּחָנִי אֵינוֹ תּוֹפֵס מָקוֹם (lines 2 and 6)"},
+      {"marker": "parallel nature (vessel fits content)", "instance": "שִׂכְלוֹ רוּחָנִי → לִתְפֹּס כָּל הַתּוֹרָה כֻּלָּהּ"}
+    ]
+  }
+}

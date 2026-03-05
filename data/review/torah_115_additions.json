@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "source": "Torah #115 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all edges with reference === 115 from torahData.js (2 bechina edges found: ids 774 and 2410), and the full source text torah_115.txt (13 lines). For each potential bechina statement in the source text, determined whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, בְּחִינוֹת, הַיְנוּ, לְשׁוֹן used in a bechina sense) were considered for addition. The dataset captures 2 of the 3 bechina pairs in the Torah — the missing one is the ענן וערפל ↔ חֹשֶׁךְ equivalence from line 4, which expands the meni'ah package from 2 to 3 nodes."
+  },
+  "additions": [
+    {
+      "package_id": 2,
+      "package_label": "מְנִיעָה וַעֲרָפֶל וְחֹשֶׁךְ",
+      "node_id": "חושך",
+      "node_text": "חֹשֶׁךְ",
+      "polarity": "neutral",
+      "reason": "Choshekh (darkness) is identified in line 4 as a bechina of ענן וערפל (cloud-and-arafel) via the marker 'הַיְנוּ' (that is to say / namely), and simultaneously as a bechina of מניעה via the marker 'לְשׁוֹן מְנִיעָה' (the language/root of obstacle). The full sequence is: 'מניעה הוא בחינת ענן וערפל, כִּי עָנָן וַעֲרָפֶל הַיְנוּ חֹשֶׁךְ, חֹשֶׁךְ הוּא לְשׁוֹן מְנִיעָה, כְּמוֹ שֶׁכָּתוּב (בראשית כב): וְלֹא חָשַׂכְתָּ.' The proof-text 'velo chasakhta' (Genesis 22:22 — 'you did not withhold') demonstrates the etymological bechina: the root ח-ש-כ means both darkness AND withholding/preventing — i.e., choshekh IS leshon meni'ah (darkness IS the language of obstacle). This is a tight three-way identity: meni'ah = anan va'arafel = choshekh. Choshekh is the intermediate node that completes the chain: ענן וערפל (the atmospheric image) → חֹשֶׁךְ (the experiential quality of darkness/withholding) → מניעה (the conceptual abstraction of obstacle). All three are different expressions of the same essential nature. Polarity is neutral: darkness/obstacle is not purely evil (God hides within it) but it is the quality that din exploits to block unworthy persons from approaching God.",
+      "source_quote": "כִּי עָנָן וַעֲרָפֶל הַיְנוּ חֹשֶׁךְ, חֹשֶׁךְ הוּא לְשׁוֹן מְנִיעָה, כְּמוֹ שֶׁכָּתוּב (בְּרֵאשִׁית כ\"ב): וְלֹא חָשַׂכְתָּ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1": "ענן וערפל",
+          "node2": "חושך",
+          "proof_text": "כִּי עָנָן וַעֲרָפֶל הַיְנוּ חֹשֶׁךְ — cloud-and-arafel IS darkness (הַיְנוּ marker)",
+          "reference": 115,
+          "type": "bechina"
+        },
+        {
+          "node1": "חושך",
+          "node2": "מניעה",
+          "proof_text": "חֹשֶׁךְ הוּא לְשׁוֹן מְנִיעָה, כְּמוֹ שֶׁכָּתוּב (בְּרֵאשִׁית כ\"ב): וְלֹא חָשַׂכְתָּ — darkness IS the language of withholding/obstacle (לְשׁוֹן marker, etymological bechina)",
+          "reference": 115,
+          "type": "bechina"
+        }
+      ]
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "מִדַּת הַדִּין (the attribute of strict judgment)",
+      "reason": "Middat hadin is the prosecuting force that 'mekatreg' against the person and arranges the meni'ah (lines 2 and 10). It is an eitza cause: middat hadin PRODUCES the meni'ah as an obstacle. The text never says middat hadin IS a bechina of the arafel or the obstacle — rather, it is the agent that creates/sends the obstacle. The relationship is causal (eitza), not parallel-nature (bechina). Excluded."
+    },
+    {
+      "concept": "כְּרָךְ גָּדוֹל שֶׁבַּאֲרָם (the great city in Aram)",
+      "reason": "This phrase appears in the Yerushalmi (Ta'anit ch. 1) quotation in line 3: 'Eilai kore mi-Se'ir — [God is] in the great city in Aram.' It is cited as a proof-text illustrating that God is found in distant/difficult places (i.e., within the meni'ah), not as a new bechina node. It is a narrative/geographic proof, not a conceptual equivalence via bechina language. Excluded."
+    },
+    {
+      "concept": "הַסְתָּרַת עַצְמוֹ (God's self-concealment)",
+      "reason": "The teaching repeatedly describes God hiding Himself within the meni'ah (lines 3, 9, 11, 12, 13). This hiddenness is a theological assertion about God's relationship to the meni'ah — it is what God DOES inside the obstacle. The text never states 'haster panim IS a bechina of the arafel.' The concealment is described through verbs (mastir, nistav), not through bechina equivalence language. It is the content/motivation of the meni'ah, not a bechina node of it. Excluded."
+    },
+    {
+      "concept": "חֶסֶד (kindness / God's loving-kindness)",
+      "reason": "Line 3 states: 'veHaShem yitbarakh chafetz chesed hu' — God desires/loves kindness. This is the theological motivation given for God's self-concealment within the meni'ah (His greater love for Israel over His love for mishpat). Chesed is mentioned once as a divine quality, not with bechina language and not as a bechina of any other concept in this Torah. It is a theological premise, not a bechina node. Excluded."
+    },
+    {
+      "concept": "בַּר דַּעַת (a person of wisdom/discernment)",
+      "reason": "Bar da'at appears 3 times (lines 3, 7, 12) as the qualitative descriptor for the person who can find God within the meni'ah. However, it is never equated with a bechina to Moshe or to da'at kol Yisrael through explicit bechina language. Moshe IS da'at kol Yisrael (edge 774) — but bar da'at is the generic descriptor of any person who possesses this quality. It is an eitza-layer concept (the condition needed to enter the arafel), not a bechina node. Excluded."
+    }
+  ],
+  "source_text_bechina_scan": {
+    "lines_examined": 13,
+    "bechina_instances_found": 3,
+    "bechina_instances_in_dataset": 2,
+    "bechina_instances_missing_from_dataset": 1,
+    "instances": [
+      {
+        "line": 4,
+        "text": "וּמְנִיעָה הוּא בְּחִינַת עָנָן וַעֲרָפֶל",
+        "marker": "בְּחִינַת",
+        "pair": ["מניעה", "ענן וערפל"],
+        "in_dataset": true,
+        "edge_id": 2410
+      },
+      {
+        "line": 4,
+        "text": "כִּי עָנָן וַעֲרָפֶל הַיְנוּ חֹשֶׁךְ",
+        "marker": "הַיְנוּ",
+        "pair": ["ענן וערפל", "חושך"],
+        "in_dataset": false,
+        "edge_id": null,
+        "gap": true
+      },
+      {
+        "line": 4,
+        "text": "חֹשֶׁךְ הוּא לְשׁוֹן מְנִיעָה",
+        "marker": "לְשׁוֹן (etymological bechina)",
+        "pair": ["חושך", "מניעה"],
+        "in_dataset": false,
+        "edge_id": null,
+        "gap": true,
+        "note": "This is a second connection from חושך — it closes the chain חושך ↔ מניעה (complementing the ענן וערפל ↔ חושך above). Together these two missing edges complete the three-way identity: מניעה = ענן וערפל = חושך. Both missing edges are proposed as a single addition for the node חושך since together they add חושך to the existing meni'ah cluster."
+      },
+      {
+        "line": 7,
+        "text": "וּמֹשֶׁה, שֶׁהוּא בְּחִינוֹת דַּעַת כָּל יִשְׂרָאֵל",
+        "marker": "בְּחִינוֹת",
+        "pair": ["משה", "דעת כל ישראל"],
+        "in_dataset": true,
+        "edge_id": 774
+      }
+    ]
+  },
+  "analysis_notes": {
+    "total_reference_115_edges": 2,
+    "total_reference_115_bechina_edges": 2,
+    "total_reference_115_eitza_edges": 0,
+    "dataset_coverage": "2 of 3 bechina pairs captured (67%). The missing pair is the ענן וערפל ↔ חושך equivalence, which forms the middle link of the three-way identity in line 4. Without חושך, the chain reads מניעה ↔ ענן וערפל (incomplete). With חושך added, the full chain is: מניעה ↔ ענן וערפל ↔ חושך ↔ מניעה (triangular equivalence — all three are the same thing).",
+    "new_nodes_proposed": 1,
+    "new_bechina_edges_proposed": 2,
+    "torah_character": "Torah #115 is a short, concentrated teaching (13 lines) that opens with the verse 'And the people stood from afar, and Moses approached the thick darkness where God was' (Exodus 20). It develops a single theological insight: God, out of love for Israel, hides within the very obstacles (meni'ot) that middat hadin erects to prevent the unworthy from approaching. The bar da'at (Moshe type) can find God within the meni'ah itself. The teaching is theologically rich but structurally simple: two concepts (wisdom/Moshe vs. obstacle/arafel) connected by the paradox of divine concealment. The bechina content is minimal — only 3 bechina pairs, all concentrated in lines 4 and 7. The bulk of the teaching (lines 2-3, 9-13) is theological narrative (eitza layer: why God hides within the meni'ah) rather than bechina mappings."
+  }
+}

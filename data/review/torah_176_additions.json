@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "source": "Torah #176",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all reference===176 edges from torahData.js (3 edges, all eitza), and the full source text torah_176.txt (3 paragraphs). Scanned for bechina-language markers: בִּבְחִינַת, הַיְנוּ בְּחִינַת, הוּא בְּחִינַת, נִקְרָא, לְשׁוֹן, and direct identity statements ('X הוּא Y' used to declare conceptual equivalence rather than causal description). Verified whether identified concepts appear as nodes in the dataset for ref 176. Also checked whether nodes appearing in the dataset's three eitza edges are properly accounted for and whether any bechina-eligible concepts are missing."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "רוּחַ שְׁטוּת וְאֲוִיר",
+      "node_id": "רוח שטות",
+      "node_text": "רוּחַ שְׁטוּת",
+      "polarity": "evil",
+      "reason": "The source text opens with the concept of ruach shtut as the central antagonist ('לְגָרֵשׁ מִקִּרְבּוֹ הָרוּחַ שְׁטוּת, מַה שֶּׁלִּבּוֹ מָלֵא מֵרוּחַ שְׁטוּת הַדָּבוּק בּוֹ'), and paragraph 2 explicitly declares its nature: 'הָרוּחַ הוּא הָאֲוִיר' — making ruach shtut identical in nature to avir (air). This is a bechina-language identity statement. Ruach shtut exists in the dataset as a node (it appears in Torah #1 Package 3 and its edge 14943 in the broader dataset), confirming it is a recognized concept. However, there is no bechina edge for ruach shtut under reference 176. A new bechina edge should be added: ruach shtut ↔ avir (ref 176).",
+      "source_quote": "וְהָרוּחַ הוּא הָאֲוִיר, וְטֶבַע הָאֲוִיר לְבַקֵּשׁ לוֹ מָקוֹם פָּנוּי לָצֵאת שָׁם",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": null,
+      "bechina_edge_exists_for_ref_176": false,
+      "proposed_edge": {
+        "node1_id": "רוח שטות",
+        "node2_id": "אויר",
+        "type": "bechina",
+        "reference": 176
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "רוּחַ שְׁטוּת וְאֲוִיר",
+      "node_id": "אויר",
+      "node_text": "אֲוִיר",
+      "polarity": "evil",
+      "reason": "Paragraph 2 of the source text states: 'הָרוּחַ הוּא הָאֲוִיר, וְטֶבַע הָאֲוִיר לְבַקֵּשׁ לוֹ מָקוֹם פָּנוּי לָצֵאת שָׁם' — the spirit IS the air, and the nature of air is to seek an empty space to escape through. The Rebbe uses avir (air) not as a metaphor but as the actual physical identity of ruach shtut, explaining its mechanism of movement and displacement. This is a bechina-equivalent identity, not a causal statement. The avir node does not appear in the current dataset for ref 176 as either a bechina or eitza node — it is a genuine gap. It should be added as the second node in the ruach shtut bechina pair.",
+      "source_quote": "וְהָרוּחַ הוּא הָאֲוִיר, וְטֶבַע הָאֲוִיר לְבַקֵּשׁ לוֹ מָקוֹם פָּנוּי לָצֵאת שָׁם, כַּמְבֹאָר אֵצֶל הַמְחַקְּרִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "bechina_edge_exists_for_ref_176": false,
+      "proposed_edge": {
+        "node1_id": "אויר",
+        "node2_id": "רוח שטות",
+        "type": "bechina",
+        "reference": 176
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_176_edges": 3,
+    "total_reference_176_bechina_edges": 0,
+    "total_reference_176_eitza_edges": 3,
+    "eitza_edges_summary": [
+      {
+        "edge_id": 3021,
+        "node1_id": "לגרש מקרבו הרוח שטות",
+        "node2_id": "שנתקשר להצדיק האמת, והתקשרות הינו אהבת נפש מה שאוהב להצדיק מאד",
+        "interpretation": "Expelling ruach shtut from within is ACHIEVED BY (eitza) connecting to the true Tzaddik with deep love. Directional causal flow, not bechina."
+      },
+      {
+        "edge_id": 2067,
+        "node1_id": "שנתקשר להצדיק האמת, והתקשרות הינו אהבת נפש מה שאוהב להצדיק מאד",
+        "node2_id": "נכלל לבו בלב הצדיק",
+        "interpretation": "Connecting to the Tzaddik (with love) CAUSES (eitza) one's heart to be included in the Tzaddik's heart. Directional causal flow, not bechina."
+      },
+      {
+        "edge_id": 1551,
+        "node1_id": "שמגרש במהירות הרוח שטות מקרבו",
+        "node2_id": "לב נשבר",
+        "interpretation": "Expelling ruach shtut with speed PRODUCES (eitza) a broken heart. Directional causal flow, not bechina."
+      }
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "לב הצדיק חלל (the Tzaddik's heart as hollow/empty)",
+        "reason": "Paragraph 2 says 'וְלֵב הַצַּדִּיק הוּא חָלָל, בִּבְחִינַת: וְלִבִּי חָלַל בְּקִרְבִּי'. The word בִּבְחִינַת here introduces a scriptural proof-text (Tehillim 109), not a conceptual bechina equivalence. The Rebbe is citing the verse as evidence that the Tzaddik's heart has the quality of chalal (hollow), not establishing chalal as a bechina-equivalent concept node distinct from lev haTzaddik. The chalal is a property of the Tzaddik's heart used to explain the physical mechanism, not a parallel-identity concept. Excluded."
+      },
+      {
+        "concept": "מקום פנוי (empty space)",
+        "reason": "Paragraph 2 describes the ruach/avir seeking 'מָקוֹם פָּנוּי' (an empty space) to escape through — this is a functional description of the mechanism, not a bechina declaration. The text says the avir seeks such a place; it does not state that makom panui IS a bechina of any other concept. The empty space is the chalal of the Tzaddik's heart, which functions as a destination in the causal chain. No bechina-language marker accompanies this concept. Excluded."
+      },
+      {
+        "concept": "אהבת נפש (soul-love for the Tzaddik)",
+        "reason": "Paragraph 1 defines hitkashrut (connection) as 'אַהֲבַת נֶפֶשׁ' — 'that is, soul-love for the Tzaddik.' This uses 'הַיְנוּ' (that is, meaning), which could signal a bechina equivalence. However, in context this is a definitional gloss — the Rebbe is explaining what hitkashrut means rather than declaring two independent concepts to share the same essential nature. Hitkashrut and ahavat nefesh are presented as the same act described differently (one is the abstract form, one is the content), but they function as a single eitza node in the dataset (edge 2067 uses the compound: 'שֶׁנִּתְקַשֵּׁר לְהַצַּדִּיק הָאֱמֶת, וְהִתְקַשְּׁרוּת הַיְנוּ אַהֲבַת נֶפֶשׁ' as a SINGLE node1_id). The dataset has already collapsed these into one compound node, which is correct. Excluded as a new bechina addition — it is already one node."
+      },
+      {
+        "concept": "בוקע ושובר (breaks and pierces)",
+        "reason": "Paragraph 2 uses 'הוּא בּוֹקֵעַ וְשׁוֹבֵר בִּמְהִירוּת וּבְבֶהָלָה' as a description of the physical behavior of air/ruach shtut. This is a characterization of how the spirit acts, not a declaration of bechina-equivalence with another concept. Excluded."
+      },
+      {
+        "concept": "לב נשבר (broken heart)",
+        "reason": "Lev nishbar appears as a node in the dataset (edge 1551, node2_id) but only in an eitza edge — it is the RESULT of expelling ruach shtut quickly. There is no bechina-language statement equating lev nishbar to any parallel concept in Torah #176. The source text says 'עַל־יְדֵי זֶה יֵשׁ לוֹ לֵב נִשְׁבָּר' (through this HE HAS a broken heart) — a causal statement. Excluded from bechina package analysis."
+      }
+    ],
+    "bechina_language_in_source_text": [
+      {
+        "location": "Paragraph 2, sentence 3",
+        "text": "וְלֵב הַצַּדִּיק הוּא חָלָל, בִּבְחִינַת: וְלִבִּי חָלַל בְּקִרְבִּי",
+        "assessment": "bichvnat used as proof-text citation, not concept-equivalence declaration. Excluded."
+      },
+      {
+        "location": "Paragraph 2, sentence 2",
+        "text": "וְהָרוּחַ הוּא הָאֲוִיר",
+        "assessment": "Direct identity statement (X הוּא Y) declaring ruach = avir. This IS a bechina-equivalent declaration. INCLUDED as the core bechina of this Torah."
+      }
+    ]
+  }
+}

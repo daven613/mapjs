@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "source": "Torah #118 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, the 3 bechina edges for reference===118, and the full source text torah_118.txt (7 lines). For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and is assigned to the package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ, דָּא, in the sense of structural identity) were considered. The eitza edge (לפרש הדבר בלשון שמבין → נעשה בבחינת חל) was examined separately and correctly classified as eitza."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "צַדִּיק הַדּוֹר, מֹשֶׁה, וּמָשִׁיחַ",
+      "node_id": "רוח פיו",
+      "node_text": "רוּחַ פִּיו",
+      "polarity": "good",
+      "reason": "Line 3 of the source text explicitly equates two phrases: 'וְהַיְנוּ רוּחַ פִּיו, רוּחַ מְמַלְּלָא'. The word 'וְהַיְנוּ' (meaning: that is, i.e.) is a standard identity/bechina marker. The Rebbe is explaining what the ruach d'Mashiach that hovers over the chidushei Torah is — it is the 'ruach piv' (breath of his mouth, citing Psalms 33) and the 'ruach memalela' (the speaking spirit). This establishes a bechina equivalence between רוּחַ פִּיו and רוּחַ מְמַלְּלָא as two names for the same spiritual reality — the breath-dimension of Mashiach that animates Torah novelties. Both terms are aspects of the Mashiach-spirit cluster and should be added to Package 1 as bechina-equivalent satellite concepts orbiting משיח.",
+      "source_quote": "וְהַיְנוּ רוּחַ פִּיו, רוּחַ מְמַלְּלָא",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "צַדִּיק הַדּוֹר, מֹשֶׁה, וּמָשִׁיחַ",
+      "node_id": "רוח ממלא",
+      "node_text": "רוּחַ מְמַלְּלָא",
+      "polarity": "good",
+      "reason": "The paired term with רוּחַ פִּיו (see above). The Zohar's description of the spirit of Mashiach that hovers over the waters (the Torah) is here identified as 'ruach memalela' — the speaking/articulating spirit. This is the Aramaic form of the same concept: the spiritual breath that gives voice to Torah insights, which is the animating force present in every chidush Torah. Since רוּחַ פִּיו and רוּחַ מְמַלְּלָא are given as co-equal definitions of the ruach d'Mashiach in this Torah, both should be added as bechina-satellite nodes in Package 1, forming a bechina edge between them and linking both to משיח.",
+      "source_quote": "וְהַיְנוּ רוּחַ פִּיו, רוּחַ מְמַלְּלָא",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_118_edges": 4,
+    "total_reference_118_bechina_edges": 3,
+    "total_reference_118_eitza_edges": 1,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["צדיק הדור", "משה", "משיח", "חדושי תורה שמחדש"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["רוח פיו", "רוח ממלא"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "שִׁילֹה (gematria = Moshe)",
+        "reason": "Line 2 uses שִׁילֹה solely as a gematria proof-text to establish the bechina of משה=משיח. שילה is not independently established as a bechina node in its own right in this Torah — it is a verse-name cited for numerical value. The concept it points to (משיח) is already in Package 1. Not a gap."
+      },
+      {
+        "concept": "רוּחַ אֱלֹקִים (in Zohar quote)",
+        "reason": "Line 3 cites the Zohar: 'וְרוּחַ אֱלֹקִים – דָּא רוּחָא דְּמָשִׁיחַ'. This is a Zohar-internal bechina that the Rebbe quotes to support his argument, not a new bechina that the Rebbe himself declares in this Torah. Per framework strictness, Zohar-internal equations are source citations, not new nodes in Torah #118's conceptual structure. Furthermore, the Rebbe uses it to establish that chidushei Torah are bechina of Mashiach (already captured), not to introduce רוּחַ אֱלֹקִים as an independent package node."
+      },
+      {
+        "concept": "הַמַּיִם (= Torah, in Zohar quote)",
+        "reason": "Line 3 cites: 'מְרַחֶפֶת עַל פְּנֵי הַמַּיִם – הַיְנוּ הַתּוֹרָה'. Again, this is an interpretation of a verse within the Zohar citation. The Rebbe uses it to identify where the ruach d'Mashiach hovers — over the Torah. This is not a new bechina node declared by the Rebbe in Torah #118; it is explanatory gloss within a quoted source."
+      },
+      {
+        "concept": "חֹל (profane/lowered level)",
+        "reason": "Line 6 uses בִּבְחִינַת חֹל in the context of explaining the eitza relationship: translating Torah → becomes like chol. The edge 2118 correctly classifies this as eitza. The concept חֹל is the *result* of the lowering process, not a parallel-nature equivalent of another concept in this Torah. It is not a bechina node in the structural sense for Torah #118."
+      },
+      {
+        "concept": "יִסּוּרִין (sufferings) of the tzaddik",
+        "reason": "Line 4 says the tzaddik suffers (סוֹבֵל יִסּוּרִין) for all Israel because he is bechina of Mashiach. The suffering is a consequence (eitza) of the Mashiach-identity, not a bechina of something else. No בְּחִינַת marker applies directly to יסורין as a concept."
+      }
+    ]
+  }
+}

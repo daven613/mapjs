@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "source": "Torah #188",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 1,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      {
+        "concept": "שוכח ↔ אובד (the one who forgets = the one who loses)",
+        "source_section": "line 2",
+        "source_text": "כְּמוֹ שֶׁקָּרְאוּ רַבּוֹתֵינוּ זִכְרוֹנָם לִבְרָכָה אֶת הַשּׁוֹכֵחַ אוֹבֵד",
+        "bechina_language": "קראו את השוכח אובד — the Rabbis *call* the forgetter 'the one who loses'; this is explicit naming-as, which is bechina language",
+        "proposed_package": 1,
+        "note": "The Rebbe explicitly cites the Rabbinic equation: the forgetter IS called אובד (the lost one / the one who loses). A bechina edge שוכח↔אובד for Torah #188 is strongly implied by the text. Both שוכח and אובד would belong to Package 1, deepening the cluster: שכחה↔אבדה and שוכח↔אובד form a 4-node tight cluster (שוכח/שכחה are the active form; אובד/אבדה are the noun/state form of the same root)."
+      },
+      {
+        "concept": "ידיעה שלפני לידה ↔ אבדה (pre-birth knowledge = the lost item)",
+        "source_section": "line 1",
+        "source_text": "מְלַמְּדִין וּמַרְאִין לוֹ כָּל מַה שֶּׁצָּרִיךְ לַעֲשׂוֹת וְלַעֲבֹד וּלְהַשִּׂיג בְּזֶה הָעוֹלָם, וְכֵיוָן שֶׁיָּצָא לַאֲוִיר הָעוֹלָם מִיָּד נִשְׁכַּח מֵאִתּוֹ",
+        "bechina_language": "Implied: what was taught and shown before birth (the complete spiritual mission) is precisely what is forgotten and thus lost — the אבדה is defined by the text as 'what a person needs to do, to work toward, and to attain in this world'. The אבדה IS the pre-birth knowledge.",
+        "proposed_package": 1,
+        "note": "The pre-birth teaching (ידיעה שלפני לידה) is the content of the אבדה. A bechina edge ידיעה שלפני לידה↔אבדה would encode this identity. This is not an eitza (the pre-birth knowledge does not produce the אבדה; it IS the אבדה). Would strengthen Package 1 to a 4-6 node cluster depending on which nodes are considered distinct."
+      },
+      {
+        "concept": "צדיק ↔ חכם (the tzaddik = the sage)",
+        "source_section": "line 4",
+        "source_text": "עַל כֵּן צָרִיךְ לָבוֹא לְהֶחָכָם לְבַקֵּשׁ וּלְהַכִּיר אֲבֵדָתוֹ",
+        "bechina_language": "The text uses צדיק and חכם interchangeably throughout: lines 3-4 refer to the same figure as 'הצדיק' (line 3) and 'החכם' (line 4). This is a classic bechina identification — the tzaddik IS the sage; they are two names for the same spiritual reality.",
+        "proposed_package": "new — would form a tzaddik/sage cluster",
+        "note": "A bechina edge צדיק↔חכם for Torah #188 encodes the teaching's key equation: the one who holds lost items is simultaneously the tzaddik (righteous one) and the חכם (sage / wise one). This is not cause-and-effect — being a tzaddik does not produce wisdom; the tzaddik IS the wise one. This pair would form a separate 2-node package (good polarity) representing the figure who returns the lost pre-birth knowledge. This is a recurring cross-Torah package type (צדיק הדור as a separate cluster appears in Torah #9, etc.)."
+      },
+      {
+        "concept": "רמאי ↔ שקרן (deceiver = liar — the obstacle to receiving one's loss back)",
+        "source_section": "line 4",
+        "source_text": "אַךְ הַצַּדִּיק אֵינוֹ מֵשִׁיב לוֹ הָאֲבֵדָה עַד שֶׁיִּדְרְשֶׁנּוּ אִם אֵינוֹ רַמַּאי וְשַׁקְרָן",
+        "bechina_language": "רמאי and שקרן are listed together as the two traits the tzaddik investigates for; they represent the same kind of person — the unworthy recipient. The text treats them as synonymous barriers to receiving the אבדה back. The verse cited ('עד דרוש אחיך') is interpreted as 'investigate your brother if he is not a deceiver' — equating the two terms.",
+        "proposed_package": "new — would form an evil/obstacle cluster",
+        "note": "רמאי↔שקרן is a bechina pair: being a deceiver IS being a liar in this context — they are two faces of the same spiritual obstruction. This 2-node cluster would represent the evil mirror of the tzaddik's discernment: the type of person who cannot receive back their spiritual heritage. Polarity: evil. This is the structural opposite of the חכם/צדיק who holds the truth."
+      }
+    ],
+    "summary": "Torah #188 has only 1 bechina edge in the dataset despite containing at least 4-5 additional bechina-type equations in the source text. The most significant gap is the שוכח↔אובד pair, which the Rebbe explicitly cites from Rabbinic sources using the language of naming ('קראו... אובד'). The צדיק↔חכם and רמאי↔שקרן pairs are implicit but structurally clear. If all four missing pairs were added, Torah #188 would yield: (1) a 4-node neutral cluster of forgetting/loss (שכחה, אבדה, שוכח, אובד); (2) a 2-node good cluster of the tzaddik/sage; and (3) a 2-node evil cluster of the deceiver/liar. The current dataset encodes only the first cluster, and only partially (2 of 4 nodes)."
+  }
+}

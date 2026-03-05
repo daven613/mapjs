@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "source": "Torah #39",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, the 2 bechina edges from torahData.js with reference===39, and the full source text torah_39.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Cross-checked all 5 edges (reference===39, all types) to account for eitza-only nodes. Bechina language indicators used: 'הַיְנוּ בְּחִינַת', 'הוּא בְּחִינַת', 'בְּחִינַת', 'לְשׁוֹן', explicit equating constructions."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "שלש קליפות",
+      "node_text": "שָׁלֹשׁ קְלִפּוֹת",
+      "polarity": "evil",
+      "reason": "The source text explicitly declares 'וְהָעָרְלָה הֵם שָׁלֹשׁ קְלִפּוֹת, הַמְסַבְּבִים הַבְּרִית שָׁלוֹם' — the ערלה IS the three klipot that surround the covenant. This is a bechina equating ערלה with שלש קליפות using the construction 'הֵם' (they are). שלש קליפות belongs in Package 1 alongside ערלה, as a further specification of the same evil domain. It is not in the dataset for reference 39.",
+      "source_quote": "וְהָעָרְלָה הֵם שָׁלֹשׁ קְלִפּוֹת, הַמְסַבְּבִים הַבְּרִית שָׁלוֹם",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "נפש הבהמיות",
+      "node_text": "נֶפֶשׁ הַבַּהֲמִיּוּת",
+      "polarity": "evil",
+      "reason": "The Rebbe explicitly equates 'נֶפֶשׁ הַמִּתְאַוָּה שֶׁלְּךָ, הַיְנוּ נֶפֶשׁ הַבַּהֲמִיּוּת' — the soul of desire IS the animal soul. This 'הַיְנוּ' construction is the clearest bechina marker. The animal soul is the same essential reality as the craving/desire nature. Furthermore, the text identifies קְלִפּוֹת נֹגַהּ as 'קְרוֹבָה אֶל הַנֶּפֶשׁ הַבַּהֲמִיּוּת,' placing the animal soul in proximity to the three klipot (= ערלה) of Package 1. The נפש הבהמיות is the internal dimension of the same anti-ברית force expressed externally as ערלה. Belongs in Package 1 as an additional expression of the evil domain.",
+      "source_quote": "נֶפֶשׁ הַמִּתְאַוָּה שֶׁלְּךָ, הַיְנוּ נֶפֶשׁ הַבַּהֲמִיּוּת",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "מחלקת חרפה רעב ערלה — cross-link edges missing",
+      "node_text": "DATASET EDGE NOTE — not a new node",
+      "polarity": "evil",
+      "reason": "This is an editorial note, not a new node. The bechina chain 'רָעָב הַזֶּה, הַיְנוּ בְּחִינַת מַחֲלֹקֶת, בְּחִינַת חֶרְפָּה, הוּא בְּחִינַת עָרְלָה' (source line 6) establishes four bechina equivalences: (1) רעב = מחלקת [already in dataset as id=1765], (2) מחלקת = חרפה [MISSING from dataset for reference=39], (3) חרפה = ערלה [already in dataset as id=1232], (4) רעב = ערלה [MISSING from dataset for reference=39]. Two additional bechina edges should be added to the dataset for reference=39 to complete the chain.",
+      "source_quote": "וְרָעָב הַזֶּה, הַיְנוּ בְּחִינַת מַחֲלֹקֶת, בְּחִינַת חֶרְפָּה, הוּא בְּחִינַת עָרְלָה",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [
+    {
+      "node_id": "המחלקת, הינו מה שמחרפין לאדם",
+      "node_text": "הַמַּחֲלֹקֶת, הַיְנוּ מַה שֶּׁמְּחָרְפִין לָאָדָם",
+      "suggested_package_id": 1,
+      "reason": "This node appears as node1 in eitza edge id=2750 (reference=39, type='eitza'). It is a more descriptive variant of 'מחלקת' (conflict expressed as verbal shaming). The node_id contains 'מחלקת' as its core concept and 'מחרפין' (shaming/disgracing) — linking it to both מחלקת and חרפה, which are both in Package 1. This node belongs conceptually in Package 1, though it participates only in an eitza edge in the current dataset. Its 'מחרפין' dimension makes it the social/interpersonal face of the מחלקת/חרפה bechina cluster."
+    },
+    {
+      "node_id": "כשיש שלום למטה",
+      "node_text": "וּכְשֶׁיֵּשׁ שָׁלוֹם לְמַטָּה",
+      "suggested_package_id": null,
+      "reason": "This node appears only in an eitza edge (reference=39, type='eitza', id=1425). It is the positive counterpart to the מחלקת/ערלה evil domain — the condition of peace below that generates peace above. However, it participates in no bechina edge in this Torah, so it does not belong to any bechina-built package. It is a node in the Torah's eitza (cause-effect) chain, not a bechina-domain node. No package assignment is possible under the framework rules."
+    },
+    {
+      "node_id": "יש לו שלום למעלה במרומו. וכשיש שלום למעלה, אזי נתגלה ונתרבה שבע גדול בעולם",
+      "node_text": "יֵשׁ לוֹ שָׁלוֹם לְמַעְלָה בִּמְרוֹמוֹ. וּכְשֶׁיֵּשׁ שָׁלוֹם לְמַעְלָה, אֲזַי נִתְגַּלֶּה וְנִתְרַבֶּה שׂבַע גָּדוֹל בָּעוֹלָם",
+      "suggested_package_id": null,
+      "reason": "Eitza-only node (reference=39, type='eitza', id=1425). Represents the positive outcome: heavenly peace + abundance. Participates in no bechina edge in this Torah. Not assignable to a package under framework rules."
+    },
+    {
+      "node_id": "זווגך בקדשה, ותשבר נפש המתאוה שלך, הינו נפש הבהמיות, וידמה לך כאלו כפאך שד",
+      "node_text": "זִוּוּגְךָ בִּקְדֻשָּׁה, וּתְשַׁבֵּר נֶפֶשׁ הַמִּתְאַוָּה שֶׁלְּךָ, הַיְנוּ נֶפֶשׁ הַבַּהֲמִיּוּת, וְיִדְמֶה לְךָ כְּאִלּוּ כְּפָאֲךָ שֵׁד",
+      "suggested_package_id": null,
+      "reason": "Eitza-only node (reference=39, no id, type='eitza'). Describes the prescribed action — marital sanctity + breaking the animal soul — that leads to living children. Note: the node_id itself contains 'הַיְנוּ נֶפֶשׁ הַבַּהֲמִיּוּת,' which IS a bechina statement (נפש המתאוה = נפש הבהמיות). This bechina relationship is noted in the additions above under 'נפש הבהמיות.' The eitza node itself is not a package member, but the embedded bechina concept should be added to the dataset as a separate bechina edge."
+    },
+    {
+      "node_id": "בנים חיים וקימים",
+      "node_text": "בָּנִים חַיִּים וְקַיָּמִים",
+      "suggested_package_id": null,
+      "reason": "Eitza-only node (reference=39, no id, type='eitza'). Represents the positive outcome: living and enduring children. Participates in no bechina edge in this Torah. Not assignable to a package under framework rules."
+    }
+  ],
+  "analysis_notes": {
+    "total_bechina_edges": 2,
+    "total_eitza_edges": 3,
+    "total_edges_reference_39": 5,
+    "nodes_in_dataset_not_in_packages": [
+      "המחלקת, הינו מה שמחרפין לאדם",
+      "כשיש שלום למטה",
+      "יש לו שלום למעלה במרומו. וכשיש שלום למעלה, אזי נתגלה ונתרבה שבע גדול בעולם",
+      "זווגך בקדשה, ותשבר נפש המתאוה שלך, הינו נפש הבהמיות, וידמה לך כאלו כפאך שד",
+      "בנים חיים וקימים"
+    ],
+    "concepts_in_source_text_not_in_dataset": [
+      "שלש קליפות (line 6: 'הָעָרְלָה הֵם שָׁלֹשׁ קְלִפּוֹת' — bechina of ערלה)",
+      "נפש הבהמיות / נפש המתאוה (line 9: 'נֶפֶשׁ הַמִּתְאַוָּה שֶׁלְּךָ, הַיְנוּ נֶפֶשׁ הַבַּהֲמִיּוּת' — bechina pair)",
+      "טיקלא / קליפות נגה (line 10: 'הַטִּקְלָא, הַיְנוּ קְלִפּוֹת נֹגַהּ' — bechina pair, reference to external sources)",
+      "Missing cross-link bechina edges: מחלקת–חרפה (ref=39) and רעב–ערלה (ref=39) — both stated in the same bechina chain as B1 and B2 but not entered as separate edges"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "עֵשֶׂב (grass/herb)",
+        "reason": "Line 2: 'עֵשֶׂב – רָאשֵׁי־תֵּבוֹת עוֹשֶׂה שָׁלוֹם בִּמְרוֹמָיו' — this is a gematria/acronym connection (rashei teivot), not a bechina declaration per the framework. Also used as 'רֶמֶז לְבָנִים' in line 8, which is a remez (hint), not an explicit bechina. Excluded."
+      },
+      {
+        "concept": "שידוד ושבירה (plowing and breaking)",
+        "reason": "Line 3: 'בְּשָׂדְךָ, לְשׁוֹן שִׁדּוּד וּשְׁבִירָה' — this is a word-etymology explanation (lashon), not a standalone bechina concept. The word בשדך is being parsed, not declared as a bechina of a domain concept. Excluded."
+      },
+      {
+        "concept": "שד (demon)",
+        "reason": "Line 9: 'בְּשָׂדְךָ – לְשׁוֹן שֵׁד' — another wordplay etymology on בשדך. Not a bechina declaration establishing שד as a domain concept in this Torah. Excluded."
+      },
+      {
+        "concept": "שבת",
+        "reason": "Line 12: 'וְאָכַלְתָּ וְשָׂבָעְתָּ – זֶה רֶמֶז עַל שַׁבָּת' — Shabbat appears only as a remez (hint) and then as a cause of blessing for the six days. Not connected to other concepts via bechina in this Torah. Excluded."
+      },
+      {
+        "concept": "בנים (children) / עשב",
+        "reason": "Line 8: 'וְנָתַתִּי עֵשֶׂב – רֶמֶז לְבָנִים, כְּמוֹ שֶׁכָּתוּב: וְצֶאֱצָאֶיךָ כְּעֵשֶׂב הָאָרֶץ' — this is a remez based on a verse comparison, not a bechina declaration. Excluded."
+      }
+    ]
+  }
+}

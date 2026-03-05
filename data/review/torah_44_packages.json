@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "source": "Torah #44",
+    "torah_ref": 44,
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #44 has exactly 4 bechina edges in the dataset, yielding 2 raw connected components: CC1 = {תפלה, אמונה, ברית עולם} (hub: תפלה, degree 2) and CC2 = {\"לפני ה אלקיכם\", ארץ ישראל, תמיד} (hub: ארץ ישראל, degree 2). Both components have 3 nodes each — neither is 'small (1-2 node)' requiring a merge. They represent distinct bechina domains linked by eitza relationships in the text (Eretz Yisrael air enables prayer; clapping purifies the air to become Eretz Yisrael air), NOT by shared nature. Merging would require using eitza reasoning, which is explicitly forbidden by the methodology. Each component stands as its own package."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 44,
+      "label": "תְּפִלָּה, אֱמוּנָה וּבְרִית עוֹלָם",
+      "label_en": "Prayer, Faith, and the Eternal Covenant",
+      "polarity": "good",
+      "reason": "The three nodes in this component share a single essential nature: they are all different expressions of the dimension of covenant-relationship between Israel and God, manifested through standing in prayer. 'Prayer IS an aspect of faith' (תפלה היא בחינת אמונה) — the verse cited is Moses' hands being 'faith' (אמונה) while spread in prayer; the Targum renders this 'prishon betzlo' (spread in prayer). The bechina is anchored in the physical posture of the hands: spreading the hands in prayer = faith. Then: 'ברית עולם = בחינות תפלה, חי ברכאן דצלותא, צדיק חי עלמין' — the eternal covenant IS prayer (the 18 blessings of the amidah = chai = life = the covenant of life). Thus: תפלה = אמונה = ברית עולם. All three are different names for the same spiritual reality: the living, continuous relationship of standing before God in covenantal faith. The dominant node is תפלה (degree 2 — hub connecting both אמונה and ברית עולם). This package is the 'internal/spiritual faculty' side of the Torah's teaching: the what-prayer-essentially-IS, before asking how to achieve it or where to pray.",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תפלה",
+        "אמונה",
+        "ברית עולם"
+      ],
+      "node_degrees": {
+        "תפלה": 2,
+        "אמונה": 1,
+        "ברית עולם": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 44,
+      "label": "אֶרֶץ יִשְׂרָאֵל, תָּמִיד וְלִפְנֵי ה'",
+      "label_en": "Eretz Yisrael, the Tamid, and Standing Before God",
+      "polarity": "good",
+      "reason": "The three nodes in this component share a single essential nature: they are all different expressions of the sacred-space dimension of divine presence — the domain of 'before God' as a continuous, unconditional state. 'Tamid IS Eretz Yisrael' (תמיד = ארץ ישראל) because of Devarim 11: 'תמיד עיני ה׳ אלקיך בה' — the perpetual attention of God's eyes IS the definition of Eretz Yisrael's special quality. The tamid offering, which is brought every single day without interruption, physically enacts this quality of tamid = continual presence. Then: '\"לפני ה׳ אלקיכם\" זה בחינות ארץ ישראל' — 'before Hashem your God' = Eretz Yisrael, because 'whoever dwells in Eretz Yisrael is as if he has a God' (Ketubot 110b). The phrase 'לפני ה' (before God) and Eretz Yisrael are the same essential reality: the state of being in the presence of God. The dominant node is ארץ ישראל (degree 2 — hub connecting both תמיד and \"לפני ה אלקיכם\"). This package is the 'sacred-space / place of prayer' side of the Torah's teaching: the dimension of where and how prayer must be situated to be real prayer — in the air of Eretz Yisrael, under the perpetual gaze of God.",
+      "dominant_node": "ארץ ישראל",
+      "nodes": [
+        "ארץ ישראל",
+        "תמיד",
+        "\"לפני ה אלקיכם\""
+      ],
+      "node_degrees": {
+        "ארץ ישראל": 2,
+        "תמיד": 1,
+        "\"לפני ה אלקיכם\"": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 4,
+    "total_nodes": 6,
+    "total_packages": 2,
+    "raw_connected_components": 2
+  }
+}

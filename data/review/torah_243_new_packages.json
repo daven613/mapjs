@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "source": "Torah #243",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": "243-P1",
+      "torah_ref": 243,
+      "label": "צַדִּיק גָּדוֹל וְשִׁיר הַשִּׁירִים — קְדֻשָּׁה הַנֶּעֱלֶמֶת",
+      "label_en": "The Great Tzaddik and Song of Songs — Concealed Supreme Holiness",
+      "polarity": "good",
+      "dominant_node": "צדיק גדול",
+      "proposed_nodes": [
+        {
+          "node_id": "צדיק גדול",
+          "node_text": "צַדִּיק גָּדוֹל",
+          "bechina_role": "primary subject — the one whose holiness the world cannot bear"
+        },
+        {
+          "node_id": "שיר השירים",
+          "node_text": "שִׁיר הַשִּׁירִים",
+          "bechina_role": "bechina-partner of the Tzaddik — the book whose supreme holiness is invisible"
+        },
+        {
+          "node_id": "קדש קדשים",
+          "node_text": "קֹדֶשׁ קָדָשִׁים",
+          "bechina_role": "characterization of both the Tzaddik and Shir HaShirim — the superlative degree of holiness"
+        },
+        {
+          "node_id": "העלם / התעלמות",
+          "node_text": "הֶעְלֵם / הִתְעַלְּמוּת",
+          "bechina_role": "the shared structural signature — what supreme holiness looks like from the outside"
+        }
+      ],
+      "proposed_edges": [
+        {
+          "node1_id": "צדיק גדול",
+          "node2_id": "שיר השירים",
+          "type": "bechina",
+          "proof": "וְזֶה בְּחִינוֹת: כָּל הַשִּׁירִים קֹדֶשׁ, וְשִׁיר הַשִּׁירִים קֹדֶשׁ קָדָשִׁים — נִמְצָא, שִׁיר הַשִּׁירִים הוּא קָדוֹשׁ מְאֹד, יוֹתֵר הַרְבֵּה מִכָּל הַסְּפָרִים",
+          "confidence": "HIGH — the Rebbe explicitly uses the word 'בְּחִינוֹת' to mark this equation"
+        },
+        {
+          "node1_id": "שיר השירים",
+          "node2_id": "קדש קדשים",
+          "type": "bechina",
+          "proof": "כָּל הַשִּׁירִים קֹדֶשׁ, וְשִׁיר הַשִּׁירִים קֹדֶשׁ קָדָשִׁים (ידים פ\"ג)",
+          "confidence": "HIGH — direct citation from Mishnah Yadaim 3 defining Shir HaShirim as Kodesh Kadashim"
+        },
+        {
+          "node1_id": "צדיק גדול",
+          "node2_id": "העלם / התעלמות",
+          "type": "bechina",
+          "proof": "הוּא מִתְעַלֵּם מְאֹד, וְאֵין רוֹאִים מִמֶּנּוּ שׁוּם קְדֻשָּׁה וּפְרִישׁוּת יְתֵרָה, זֶה מֵחֲמַת גֹּדֶל קְדֻשָּׁתוֹ מְאֹד",
+          "confidence": "HIGH — the concealment is defined as the essential nature of the Tzaddik's supreme holiness"
+        },
+        {
+          "node1_id": "שיר השירים",
+          "node2_id": "העלם / התעלמות",
+          "type": "bechina",
+          "proof": "וְזֶה מֵחֲמַת גֹּדֶל עֹצֶם קְדֻשָּׁתוֹ אֵינָם רוֹאִים שָׁם שׁוּם קְדֻשָּׁה, עַל־כֵּן אֵינוֹ נִמְצָא שָׁם תֵּבוֹת קְדֻשָּׁה וְטָהֳרָה כְּלָל",
+          "confidence": "HIGH — the concealment of holiness-words IS the expression of Shir HaShirim's supreme nature"
+        }
+      ],
+      "justification": "Torah #243 is a self-contained single-bechina teaching. The Rebbe introduces the concept of the Tzaddik Gadol whose holiness the world cannot bear (line 1), then says 'and this is a bechina of' (וְזֶה בְּחִינוֹת) Shir HaShirim's status as Kodesh Kadashim (line 2), and reinforces it by showing that the paradox of Shir HaShirim (holiest book, no holiness-words) exactly mirrors the paradox of the Tzaddik (holiest person, no visible holiness). This is an independent domain: CONCEALED SUPREME HOLINESS. It is distinct from ordinary wisdom/sekhel packages, prayer packages, or any other common domain. The core principle is: the highest degree of holiness effaces its own outward markers. This principle is applied simultaneously to a person (the Tzaddik) and a text (Shir HaShirim), making them structural equals — genuine bechinot of one another."
+    }
+  ],
+  "observations": "Torah #243 has no existing edges in the dataset, so this is a fully new package proposal derived entirely from source text analysis. The teaching is unusually compact — 4 lines — but conceptually precise. The Rebbe makes exactly one explicit bechina equation (the Tzaddik ↔ Shir HaShirim), and this equation is rich enough to support a 4-node package with 4 bechina edges. There is no evil mirror in this Torah: the teaching is wholly about the positive domain of supreme holiness, and the Rebbe does not introduce any negative counterpart. The absence of an evil mirror is consistent with the Torah's aphoristic brevity — it is a single observation about the nature of supreme holiness, not a multi-stage eitza argument with opposing forces. Importantly, Mishlei and Kohelet are mentioned as contrast-concepts (books that DO display holiness-words) but they are not given bechina status — they serve as the foil that reveals Shir HaShirim's uniqueness. They should NOT be added to this package. The recommended data-entry priority is HIGH, as currently the entire Torah #243 domain is a gap in the dataset."
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "source": "Torah #170 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===170 AND type==='bechina'. Result: ZERO bechina edges in the dataset for Torah #170. Torah #170 opens with Psalms 3:2 ('Lord, how many are my oppressors') and develops a teaching about suffering (יִסּוּרִין/צָרוֹת), the body (גּוּף/חֹמֶר), and the soul (נֶפֶשׁ/צוּרָה). The teaching explains that each person suffers according to their soul-level and spiritual work, and that suffering enables them to 'carry' (lift/elevate) the people who caused the suffering. The mechanism: suffering (יסורין/צרות) constricts and subdues the body (גוף/חומר), and when the material is humbled the soul/form (נֶפֶשׁ/צוּרָה) shines and grows — thereby enabling the soul to bear and elevate many people. The Rebbe supports this with a Zohar citation (Shlach 168) comparing a body that cannot receive the soul's light to a log that cannot catch fire.\n\nFour bechina-language equations are present in the source text:\n(1) יִסּוּרִין = צָרוֹת — explicit: 'כָּל הַיִּסּוּרִין נִקְרָאִים צָרוֹת' (all afflictions ARE CALLED tzarot)\n(2) צָרָה = צוּרָה — etymological bechina: 'נִקְרֵאת צָרָה, לְשׁוֹן צוּרָה' (affliction is called by the language of form/soul-image)\n(3) צוּרָה = נֶפֶשׁ — explicit: 'מְאִירָה הַצּוּרָה, הַיְנוּ הַנֶּפֶשׁ' (the form shines, namely the soul)\n(4) גּוּף = חֹמֶר — structural bechina via the Zohar citation and the phrase 'בְּהִכָּנַע הַחֹמֶר תִּגְדַּל הַצּוּרָה', where חומר functions as the exact parallel of גּוּף throughout the teaching\n\nBechina graph: Edges (2) and (3) are an explicit chain, and edge (1) extends it: יסורין — צרות — צוּרָה — נֶפֶשׁ (one connected component of 4 nodes). Edge (4) forms a separate 2-node component: גּוּף — חֹמֶר.\n\nNote on 'צָרָה לְשׁוֹן צוּרָה': In Rebbe Nachman's hermeneutic, the formula 'נִקְרָא... לְשׁוֹן' (called by the language of) is a standard bechina formula establishing essential identity through shared linguistic root/sound. It means: these two concepts share their essential nature because the name reveals the nature. The affliction (צָרָה) has the nature of the soul-form (צוּרָה) precisely because affliction is the mechanism through which the form is defined and revealed. The two concepts are two faces of the same spiritual reality: that which constrains/constricts (צ-ר) in order to shape/form (צ-ו-ר). This reading is confirmed by the teaching's explicit summary: the affliction subdues the body and the form shines — meaning the affliction IS the form's shining-mechanism. They share the nature of 'that which defines and reveals the soul.' This is a bechina, not merely an eitza.\n\nPackage structure: two packages. Package 1 contains the 4-node bechina chain (יסורין/צרות/צוּרָה/נֶפֶשׁ) — the teaching's primary conceptual cluster, spanning the suffering-to-soul continuum. Package 2 contains the 2-node body/matter pair (גּוּף/חֹמֶר). Merge analysis: the גּוּף/חֹמֶר pair cannot be merged into Package 1 because their relationship to the chain is causal (afflictions act ON the body to subdue it) rather than bechina (shared essential nature). The body does not share the nature of the soul/form — they are opposites in the kabbalistic material/formal dyad. Nor does the body share the nature of suffering — the afflictions happen to the body, they are not the same thing as the body. Merge is therefore ruled out by the framework's 'shared nature only, never cause-effect' criterion."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 170,
+      "label": "נֶפֶשׁ, צוּרָה, וְיִסּוּרִין",
+      "label_en": "Soul, Form, and Affliction — The Suffering-Soul Continuum",
+      "polarity": "good",
+      "reason": "Torah #170's central insight is that affliction (יסורין/צרות) and soul/form (נֶפֶשׁ/צוּרָה) are not opposites but two aspects of a single spiritual reality — revealed by the fact that 'tzarah' is the language of 'tzurah.' The teaching presents suffering not as evil but as the positive mechanism through which the soul is revealed and grows. Polarity is 'good' because: (a) the entire teaching valorizes yisurin as a spiritual gift — they enable the tzaddik and spiritual person to carry and elevate many souls; (b) the psalm citation ('Lord, how many are my oppressors — the many who rise against me I carry and elevate to their root') transforms suffering into a redemptive act; (c) the Zohar proof-text frames the body as wood that must be struck to produce fire — presenting the process positively as spiritual illumination. The afflictions are not the evil force in this Torah; they are the positive mechanism of soul-revelation. There is no 'evil affliction' counterpart introduced — the teaching treats all forms of suffering (whether from family, neighbors, city, or the world) as part of the same positive schema of soul-growth. The dominant node is נֶפֶשׁ (soul) — it is the goal-state and ultimate carrier of other souls, and its equation with צוּרָה (form) is the climax of the teaching. צוּרָה is the most-connected node within the bechina chain (it connects to both צרות via 'לְשׁוֹן' and to נֶפֶשׁ via 'הַיְנוּ'), making it structurally central. The chain shows the four-stage continuum: suffering (יסורין) = affliction (צרות) = form (צוּרָה) = soul (נֶפֶשׁ). This is the Torah's fundamental bechina insight: suffering IS, in its deepest nature, a form-revealing and soul-revealing process.",
+      "dominant_node": "נפש",
+      "nodes": [
+        "יסורין",
+        "צרות",
+        "צורה",
+        "נפש"
+      ],
+      "node_degrees": {
+        "יסורין": 1,
+        "צרות": 2,
+        "צורה": 2,
+        "נפש": 1
+      },
+      "source_bechina_statements": [
+        {
+          "edge": "יסורין — צרות",
+          "formula": "נִקְרָאִים (are called)",
+          "quote": "כָּל הַיִּסּוּרִין נִקְרָאִים צָרוֹת",
+          "type": "explicit_bechina"
+        },
+        {
+          "edge": "צרות — צורה",
+          "formula": "לְשׁוֹן (language of / named after)",
+          "quote": "נִקְרֵאת צָרָה, לְשׁוֹן צוּרָה",
+          "type": "etymological_bechina"
+        },
+        {
+          "edge": "צורה — נפש",
+          "formula": "הַיְנוּ (namely / that is)",
+          "quote": "מְאִירָה הַצּוּרָה, הַיְנוּ הַנֶּפֶשׁ",
+          "type": "explicit_bechina"
+        }
+      ],
+      "merge_notes": [
+        "No merges into this package. The גּוּף/חֹמֶר component (Package 2) has a causal relationship to the יסורין/צרות end of this chain — afflictions act upon the body — but they do not share the nature of suffering or soul. Merging would violate the 'shared nature only' criterion."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 170,
+      "label": "גּוּף וְחֹמֶר",
+      "label_en": "Body and Matter — The Physical Substrate",
+      "polarity": "neutral",
+      "reason": "In Torah #170, the body (גּוּף) and matter (חֹמֶר) are presented as the physical substrate that is subdued by suffering and thereby enables the soul to shine. They are not evil — the teaching does not demonize the body or present it as the enemy. Rather, the body is the 'wood' (as the Zohar's metaphor of 'אָעָא' suggests) that must be struck in order to catch fire. The body is a neutral medium: it can either block the soul's light or, when subdued through suffering, allow it to shine. The Zohar passage ('גּוּפָא דְּלָא סָלֵק בֵּהּ נְהוֹרָא דְּנִשְׁמְתָא' — a body that cannot receive the soul's light) presents the body as neutral material whose state determines whether the soul's light passes through. Polarity is therefore 'neutral' — not evil (as the body would be in a teaching about sin or yetzer hara) and not positive (as the body becomes a vehicle for spiritual service in other Torahs). The bechina between גּוּף and חֹמֶר is structural: throughout the teaching, the Rebbe uses גּוּף (body) and חֹמֶר (matter/material) interchangeably as synonyms for the physical dimension — 'נִכְנָע גּוּפוֹ' and 'בְּהִכָּנַע הַחֹמֶר' describe the same event with the same vocabulary of submission. The kabbalistic identification of body=matter (חומר) and soul=form (צוּרָה) is the classical Aristotelian-kabbalistic dyad adopted by Rebbe Nachman here. The dominant node is גּוּף (body) as the more frequently used term in the teaching's narrative.",
+      "dominant_node": "גוף",
+      "nodes": [
+        "גוף",
+        "חומר"
+      ],
+      "node_degrees": {
+        "גוף": 1,
+        "חומר": 1
+      },
+      "source_bechina_statements": [
+        {
+          "edge": "גוף — חומר",
+          "formula": "structural parallel (interchangeable use in identical context)",
+          "quote": "נִכְנָע גּוּפוֹ... בְּהִכָּנַע הַחֹמֶר תִּגְדַּל הַצּוּרָה",
+          "type": "structural_bechina_via_parallel_usage"
+        }
+      ],
+      "merge_notes": [
+        "Merge considered and rejected. גּוּף/חֹמֶר cannot merge with Package 1 (יסורין/צרות/צוּרָה/נֶפֶשׁ) because the relationship between them is causal, not bechina: the afflictions (יסורין/צרות) act ON the body (גּוּף/חֹמֶר) to subdue it, which then enables the soul (נֶפֶשׁ/צוּרָה) to shine. Cause-and-effect. The body does not share the essential nature of suffering or soul. גּוּף/חֹמֶר stands alone as a 2-node package representing the material substrate that is the target of the purification process described in the Torah."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 0,
+    "packages_from_dataset_components": 0,
+    "packages_from_gap_analysis": 2,
+    "note_on_zero_edges": "Reference 170 has no pre-existing bechina edges in torahData.js. Both packages are derived entirely from source-text gap analysis. See torah_170_additions.json for the proposed new edges.",
+    "good_evil_mirror": "Torah #170 does not present a classic good/evil mirror structure. The teaching has no evil counterpart cluster — no yetzer hara, no sitra achra, no opposing force is named. Instead, the Torah has a material/spiritual dyad: Package 2 (גּוּף/חֹמֶר = matter, neutral) vs. Package 1 (נֶפֶשׁ/צוּרָה = soul/form, good). The suffering cluster (יסורין/צרות) belongs to Package 1 because the teaching presents suffering as the positive bridge between material and spiritual — it is the mechanism of soul-revelation, not a negative force. There is no package of evil concepts in this Torah.",
+    "eitza_summary": "The teaching's causal architecture: יסורין/צרות (Package 1) —eitza→ נִכְנַע גּוּף/חֹמֶר (Package 2 is subdued) —eitza→ נֶפֶשׁ/צוּרָה (Package 1 illuminates/grows) —eitza→ the soul carries and elevates (נוֹשֵׂא) the many people who caused the suffering. The psalm verse (Psalms 3:2-3) is the eitza-destination: 'the many who rise against me' (רַבִּים קָמִים עָלָי) = 'I carry and lift them to their root' (נוֹשֵׂא וּמֵקִים וּמֵרִים רַבִּים לְשָׁרְשָׁם).",
+    "note_on_teaching_structure": "Torah #170 is a theologically sophisticated micro-teaching that transforms the psalmist's complaint about enemies into a mystical statement about spiritual work. The key move is the linguistic equation 'צָרָה לְשׁוֹן צוּרָה' — affliction is the language of form. This is the teaching's core bechina innovation: by showing that the Hebrew words for 'suffering' (צָרָה) and 'form/soul' (צוּרָה) share the same root, the Rebbe reveals that they are not opposites but dimensions of the same spiritual reality. The practical upshot is a radical revaluation of suffering: the person who is afflicted by many people is not a victim but a carrier/lifter of those people to their spiritual root. The psalm verse is inverted: 'my oppressors are many' becomes 'I am elevating many.' Torah #170 is thematically related to teachings about the tzaddik's role in bearing and elevating souls, though no explicit tzaddik/Rebbe figure is named in the text — the teaching speaks in the first person ('אֲנִי נוֹשֵׂא') suggesting it applies to any person at the appropriate spiritual level."
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "source": "Torah #58",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_58_packages.json, all reference===58 edges from torahData.js (19 total: 13 bechina, 6 eitza), and the full source text torah_58.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ, נִקְרָא, הַיְנוּ בְּחִינַת) were considered. Concepts that are pure proof-text citations or causal framings (על ידי) were excluded."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "אָבוֹת וּמַתָּנוֹת הַמִּדְבָּר",
+      "node_id": "ברית",
+      "node_text": "בְּרִית",
+      "polarity": "good",
+      "reason": "Source text line 6 states: 'כִּי הָאָבוֹת הֵן בְּרִית' — the Patriarchs ARE the Covenant. This is an explicit bechina: the Avot and the Brit share the same essential nature (they are the original guarantors and embodiment of the covenant). The text then says 'וְזָכַרְתִּי אֶת בְּרִיתִי יַעֲקֹב', confirming that the Brit is the shared nature of all three Patriarchs as a unit. Package 1 is the patriarchal domain; ברית belongs there as the covenantal dimension that defines the Avot's essential quality. Note: edge 3040 (reference=58, type=eitza) connects ברית to 'שפע כפולה', showing ברית is in the dataset for Torah #58 as an eitza node but has no bechina edge — adding the bechina connection אבות↔ברית as a new edge is warranted.",
+      "source_quote": "כִּי הָאָבוֹת הֵן בְּרִית, בְּחִינַת (שם): וְזָכַרְתִּי אֶת בְּרִיתִי יַעֲקֹב וְכוּ'",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": "3040 (eitza only — no bechina edge for ברית in Torah #58)"
+    },
+    {
+      "package_id": 1,
+      "package_label": "אָבוֹת וּמַתָּנוֹת הַמִּדְבָּר",
+      "node_id": "גבורה",
+      "node_text": "גְּבוּרָה",
+      "polarity": "good",
+      "reason": "Source text line 12 states: 'גְּבוּרָה, זֶה בְּחִינַת שֶׁמַּקְדִּים יִרְאַת חֶטְאוֹ לְחָכְמָתוֹ'. This is an explicit bechina of the sefira גְּבוּרָה as the quality of Isaac (the middle pillar of din/restraint) — the person who places fear of sin before his wisdom. The text introduces Chesed, Gevura, and Tiferet as the three qualities of the Avot that sustain da'at. In Torah #58, גבורה is the bechina of Isaac's quality within the patriarchal cluster. It belongs in Package 1 (patriarchal gifts domain) as the sefirotic parallel to יצחק.",
+      "source_quote": "גְּבוּרָה, זֶה בְּחִינַת שֶׁמַּקְדִּים יִרְאַת חֶטְאוֹ לְחָכְמָתוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "אָבוֹת וּמַתָּנוֹת הַמִּדְבָּר",
+      "node_id": "תפארת",
+      "node_text": "תִּפְאֶרֶת",
+      "polarity": "good",
+      "reason": "Source text line 13 states: 'תִּפְאֶרֶת, זֶהוּ שֶׁמְּדַקְדֵּק אֵיךְ לְהוֹצִיא חָכְמָתוֹ, שֶׁלֹּא יִהְיוּ נִבְזִים, בִּבְחִינַת דִּבְרֵי פִי חָכָם חֵן'. Tiferet is the bechina of the quality of Jacob — the careful precision in how one expresses wisdom so it is not scorned. The Rebbe explicitly sets up Chesed=Abraham, Gevura=Isaac, Tiferet=Jacob as the three patriarchal sustaining qualities of da'at. תפארת belongs in Package 1 as the sefirotic parallel to יעקב within the patriarchal cluster.",
+      "source_quote": "תִּפְאֶרֶת, זֶהוּ שֶׁמְּדַקְדֵּק אֵיךְ לְהוֹצִיא חָכְמָתוֹ, שֶׁלֹּא יִהְיוּ נִבְזִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "אָבוֹת וּמַתָּנוֹת הַמִּדְבָּר",
+      "node_id": "מלבושים",
+      "node_text": "מַלְבּוּשִׁים",
+      "polarity": "good",
+      "reason": "Source text line 9 states: 'מַלְבּוּשִׁים, בְּחִינַת עָנָן, בְּחִינַת לְבוּשׁ'. This is an explicit bechina chain: clothing/garments = cloud = garment. מַלְבּוּשִׁים is a bechina of עָנָן (already in Package 1). The text introduces three sustenance categories — food (אכילה), drink (שתיה), clothing (מלבושים) — as the three forms of provision from da'at, paralleling the three gifts of the wilderness. מלבושים belongs in Package 1 alongside ענן and לבוש as the third aspect of the Cloud/Isaac/concealment branch.",
+      "source_quote": "מַלְבּוּשִׁים, בִּבְחִינַת (יְשַׁעְיָה ג): 'שִׂמְלָה לְכָה קָצִין תִּהְיֶה לָּנוּ', בְּחִינַת עָנָן, בְּחִינַת לְבוּשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "שַׁבָּת וּתְשׁוּבָה וְלֶחֶם מִשְׁנֶה",
+      "node_id": "חיות",
+      "node_text": "חַיּוּת",
+      "polarity": "good",
+      "reason": "Source text line 34 states: 'חַיּוֹת זֶה בְּחִינַת שַׁבָּת הַנַּ\"ל, בְּחִינַת: טוֹעֲמֶיהָ חַיִּים זָכוּ, בְּחִינַת תְּשׁוּבָה הַנַּ\"ל, בְּחִינַת רְפוּאָה'. The Rebbe explicitly states חיות (vitality/life-force) is a bechina of Shabbat AND a bechina of teshuva AND a bechina of healing. All three of these are Package 3 nodes or domains. חיות belongs in Package 3 as the vitality-dimension of the Shabbat-repentance cluster.",
+      "source_quote": "חַיּוֹת זֶה בְּחִינַת שַׁבָּת הַנַּ\"ל, בְּחִינַת: 'טוֹעֲמֶיהָ חַיִּים זָכוּ', בְּחִינַת תְּשׁוּבָה הַנַּ\"ל, בְּחִינַת רְפוּאָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "שַׁבָּת וּתְשׁוּבָה וְלֶחֶם מִשְׁנֶה",
+      "node_id": "רפואה",
+      "node_text": "רְפוּאָה",
+      "polarity": "good",
+      "reason": "Source text line 34 states: 'חַיּוֹת זֶה בְּחִינַת... בְּחִינַת רְפוּאָה, כְּמוֹ שֶׁכָּתוּב (יְשַׁעְיָה ל\"ח): וְתַחֲלִימֵנִי וּתְחַיֵּינִי'. Healing is given as an explicit bechina in the chain: Shabbat = vitality = repentance = healing. Line 16 also confirms: 'שַׁבָּת מְרַפֵּא רְפוּאוֹת הַנֶּפֶשׁ וּרְפוּאוֹת הַגּוּף, בִּבְחִינַת: רַק שִׁבְתּוֹ יִתֵּן וְרַפֹּא יְרַפֵּא'. Healing is presented as a bechina-parallel of Shabbat's illuminating power. It belongs in Package 3.",
+      "source_quote": "בְּחִינַת רְפוּאָה, כְּמוֹ שֶׁכָּתוּב (יְשַׁעְיָה ל\"ח): וְתַחֲלִימֵנִי וּתְחַיֵּינִי",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "שַׁבָּת וּתְשׁוּבָה וְלֶחֶם מִשְׁנֶה",
+      "node_id": "אהבה בתענוגים",
+      "node_text": "אַהֲבָה בַּתַּעֲנוּגִים",
+      "polarity": "good",
+      "reason": "Source text line 18 states: 'הַתְּשׁוּבָה הִיא מֵאַהֲבָה, בְּחִינַת: אַהֲבָה בַּתַּעֲנוּגִים'. Teshuva-from-love is given as a bechina of 'אהבה בתענוגים' (love in delights, from Song of Songs 7:7). The full chain is: Shabbat → teshuva from love → 'אהבה בתענוגים'. Since תְּשׁוּבָה מֵאַהֲבָה is already in Package 3, and אַהֲבָה בַּתַּעֲנוּגִים is its explicit bechina, it belongs in Package 3 as the love-dimension of the Shabbat-repentance cluster.",
+      "source_quote": "הַתְּשׁוּבָה הִיא מֵאַהֲבָה, בְּחִינַת: אַהֲבָה בַּתַּעֲנוּגִים (שִׁיר הַשִּׁירִים ז)",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "שַׁבָּת וּתְשׁוּבָה וְלֶחֶם מִשְׁנֶה",
+      "node_id": "מגלה עפה",
+      "node_text": "מְגִלָּה עָפָה",
+      "polarity": "good",
+      "reason": "Source text line 15 states: 'בְּחִינַת לֶחֶם מִשְׁנֶה, בְּחִינַת מִשְׁנֵה תּוֹרָה, בְּחִינַת מְגִלָּה עָפָה'. The flying scroll (Zechariah 5:1) is explicitly listed as a bechina-parallel of לֶחֶם מִשְׁנֶה and מִשְׁנֵה תּוֹרָה — it represents the Torah innovations revealed on Shabbat that spread outward (hence 'flying'). It belongs in Package 3 alongside the other bechinas of double Torah.",
+      "source_quote": "בְּחִינַת לֶחֶם מִשְׁנֶה, בְּחִינַת מִשְׁנֵה תּוֹרָה, בְּחִינַת מְגִלָּה עָפָה (זְכַרְיָה ה)",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "שַׁבָּת וּתְשׁוּבָה וְלֶחֶם מִשְׁנֶה",
+      "node_id": "חרב פיפיות",
+      "node_text": "חֶרֶב פִּיפִיּוֹת",
+      "polarity": "good",
+      "reason": "Source text line 15 states: 'בְּחִינַת תְּרֵין יָנְקִין לְחַד כַּנַּ\"ל, בְּחִינַת חֶרֶב פִּיפִיּוֹת'. The double-edged sword (Psalms 149:6) is explicitly given as a bechina in the same cluster as לֶחֶם מִשְׁנֶה — both express the 'double/two' dimension. The double sword is the Torah-weapon that, once wielded through subduing evil, earns the double portion. Its essential nature is the same as לֶחֶם מִשְׁנֶה and מִשְׁנֵה תּוֹרָה: the 'doubled' character of Shabbat-Torah revelation. It belongs in Package 3.",
+      "source_quote": "בִּבְחִינַת תְּרֵין יָנְקִין לְחַד כַּנַּ\"ל, בְּחִינַת חֶרֶב פִּיפִיּוֹת (תְּהִלִּים קמ\"ט)",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "גְּדֻלָּה וּמַלְכוּת וּשְׁכִינָה",
+      "node_id": "הוד",
+      "node_text": "הוֹד",
+      "polarity": "good",
+      "reason": "Source text line 32 states: 'סֶגֹּל זֶה בְּחִינַת הַהוֹד וְהַמַּלְכוּת, בְּחִינַת סְגֻלַּת מְלָכִים'. הוֹד (splendor) is explicitly named as a bechina-parallel of מַלְכוּת in this context — the two together form the quality of 'segulat melakhim' (royal treasure). Line 26 also refers to 'הַהוֹד וְהָדָר וְהַגְּדֻלָּה' as the visible signs of the Shabbat illumination. הוֹד belongs in Package 2 alongside מַלְכוּת and גְּדֻלָּה as another face of the royal-presence domain.",
+      "source_quote": "סֶגֹּל זֶה בְּחִינַת הַהוֹד וְהַמַּלְכוּת, בְּחִינַת סְגֻלַּת מְלָכִים (קֹהֶלֶת ב)",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "גְּדֻלָּה וּמַלְכוּת וּשְׁכִינָה",
+      "node_id": "סגל",
+      "node_text": "סֶגֹּל",
+      "polarity": "good",
+      "reason": "Source text line 32 states: 'סְגַלְגַּלּוֹת, הַיְנוּ סֶגֹּל גָּלוּת. סֶגֹּל זֶה בְּחִינַת הַהוֹד וְהַמַּלְכוּת'. The vowel sign Segol is given as a bechina of הוֹד and מַלְכוּת — its three-dot shape encodes both the three patriarchal gifts (segulta = the gift-inheritance) and the royal treasure. In its proper state, סֶגֹּל = holiness of malkhut; when corrupted, it becomes 'סֶגֹּל גָּלוּת' (exile of the Shechina). The dominant axis is the holy form. Belongs in Package 2.",
+      "source_quote": "סֶגֹּל זֶה בְּחִינַת הַהוֹד וְהַמַּלְכוּת, בְּחִינַת סְגֻלַּת מְלָכִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [
+    {
+      "node_id": "אכילה ושתיה ומלבושים",
+      "node_text": "'אֲכִילָה' 'וּשְׁתִיָּה' 'וּמַלְבּוּשִׁים'",
+      "suggested_package_id": 1,
+      "reason": "Edge 244 (reference=58, type=eitza): דעת → 'אֲכִילָה וּשְׁתִיָּה וּמַלְבּוּשִׁים'. This compound node is an eitza target. However, the source text also uses explicit bechina language for its components: 'אֲכִילָה, בְּחִינַת מָן' and 'מַלְבּוּשִׁים, בְּחִינַת עָנָן, בְּחִינַת לְבוּשׁ'. The compound node represents the same three gifts of the wilderness (manna/cloud/water) in their practical form (eating/drinking/clothing). It belongs in Package 1 (patriarchal gifts). The eitza from דעת is causal — da'at produces these three forms of sustenance — but the three sustenance forms themselves share the bechina nature of Package 1."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_58_edges": 19,
+    "total_reference_58_bechina_edges": 13,
+    "total_reference_58_eitza_edges": 6,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["\"באר מים חיים\"", "אברהם", "חסד", "מימי החסד", "מן", "יעקב", "ענן", "יצחק", "לבוש"],
+      "package_2": ["הר", "גדלה", "מלכות", "שכינה"],
+      "package_3": ["שבת", "תשובה", "תשובה מאהבה", "לחם משנה", "משנה תורה"]
+    },
+    "eitza_only_nodes_not_in_packages": [
+      {
+        "node": "דעת",
+        "edge_id": 244,
+        "note": "דעת appears only as an eitza source ('through da'at come the three gifts'). Da'at is the causal mediator, not a bechina-parallel of any of the three gifts. Not a package member."
+      },
+      {
+        "node": "אכילה ושתיה ומלבושים",
+        "edge_id": 244,
+        "note": "Compound eitza target. Components have bechina language in source text; see unassigned_dataset_nodes above."
+      },
+      {
+        "node": "שמירת הדבור",
+        "edge_id": 419,
+        "note": "Appears only as an eitza source. No bechina edge for שמירת הדבור in Torah #58."
+      },
+      {
+        "node": "כשמכניע כל הצרים...",
+        "edge_id": 1061,
+        "note": "Eitza node — an action-state that produces a result. No bechina relationship."
+      },
+      {
+        "node": "כשהחכמה בקיומה ובשלמותה",
+        "edge_id": 1329,
+        "note": "Eitza source. Describes a condition, not a bechina-parallel."
+      },
+      {
+        "node": "אבות",
+        "edge_id": 2630,
+        "note": "Appears as eitza source ('the Avot sustain da'at'). Source text also has bechina: 'האבות הן ברית' — this bechina edge is not in the dataset. See additions above."
+      },
+      {
+        "node": "ברית",
+        "edge_id": 3040,
+        "note": "Appears as eitza source ('through brit one merits double portion'). Also has explicit bechina in source text: 'האבות הן ברית'. See additions above."
+      }
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "ספינה (chariot of the second)",
+        "reason": "Line 7 references 'וַיַּרְכֵּב אוֹתוֹ בְּמִרְכֶּבֶת הַמִּשְׁנֶה' (Joseph in the second chariot). This is a proof-text citation supporting the bechina of ברית→לחם משנה, not an independent bechina declaration. The phrase merely illustrates that Joseph who guarded the brit merited the second position."
+      },
+      {
+        "concept": "יוסף",
+        "reason": "Joseph is mentioned in section ד as the paradigmatic example of one who guarded the brit. The text says 'וְיוֹסֵף שֶׁזָּכָה לַבְּרִית, כְּתִיב בֵּהּ...' — this is a proof-text citation (כתיב בה = it is written of him), not a bechina declaration (לא נאמר 'זה בחינת יוסף'). Excluded per strict framework rule."
+      },
+      {
+        "concept": "ענג שבת",
+        "reason": "Source text line 18 says 'בְּחִינַת (יְשַׁעְיָה נ\"ח): וְקָרָאתָ לַשַּׁבָּת עֹנֶג' — this is a biblical verse cited to show that Shabbat = delight/oneg, which is the source of ahava (love → teshuva from love). 'ענג שבת' is thus cited as a proof-text for the causal chain: oneg shabbat → ahava → teshuva from love. It is a cause-effect link, not a bechina parallel of Shabbat. Excluded."
+      },
+      {
+        "concept": "יופי (beauty)",
+        "reason": "Lines 22-23 say the 'proper ones of the generation' are beautified ('מַה יָּפִית') as a sign of Torah renewal. The Rebbe uses the verse as illustration, not as an explicit bechina declaration. No 'זה בחינת יופי' statement appears. Excluded."
+      },
+      {
+        "concept": "יַרְכְּתֵי צָפוֹן (hidden Torah)",
+        "reason": "Line 23 connects הר ציון / גדולה to 'יַרְכְּתֵי צָפוֹן, עַל חַמּוּקֵי יְרֵכַיִךְ, תּוֹרָה הַצְּפוּנָה'. The 'hidden Torah' is the content that the sign/greatness points toward, not a bechina-parallel of greatness itself. The text uses 'ציון וסימן' (sign pointing to), which is closer to an eitza (the greatness is the sign that enables receiving the hidden Torah) than a bechina (same essential nature). Excluded from additions."
+      },
+      {
+        "concept": "שתיה (drinking)",
+        "reason": "Line 9 says 'שְׁתִיָּה כָּלוּל בַּדַּעַת, בִּבְחִינַת (יְשַׁעְיָה נ\"ה): הוֹי כָּל צָמֵא לְכוּ לַמַּיִם, שֶׁהִיא בְּאֵר'. This gives שתיה as an aspect of da'at (contained within it) and identifies שתיה=באר. However, the phrase 'כָּלוּל בַּדַּעַת' is not a bechina declaration (it means 'included/contained within'). The relevant bechina is שתיה=באר, but the node 'בְּאֵר מַיִם חַיִּים' is already in Package 1, and 'שתיה' as drinking is better understood as the practical form of that gift. Given that מלבושים is flagged as a gap, שתיה (=function of the water/beer) is a parallel addition candidate, but its bechina language is weaker ('שֶׁהִיא בְּאֵר' = 'which is a well') vs. the explicit 'בְּחִינַת עָנָן בְּחִינַת לְבוּשׁ' for מלבושים. Marginal case; excluded from definitive additions."
+      }
+    ]
+  }
+}

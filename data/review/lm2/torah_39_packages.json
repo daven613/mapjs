@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "source": "Torah #39 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 39,
+      "volume": "lm2",
+      "label": "תַּכְלִית וְעוֹלַם הַנְּשָׁמוֹת",
+      "label_en": "Ultimate Purpose and the World of Souls",
+      "polarity": "good",
+      "reason": "These concepts are all different names/faces of the same metaphysical reality: the ultimate destination for which all of creation was made. The Rebbe explicitly equates תכלית (ultimate purpose), שמות (the acronym for תכלית מעשה שמים וארץ, read as 'שמות' = souls), עולם הנשמות (world of souls), and שבת (the seventh day / eternal rest). They are not cause-and-effect — each is a bechina of the same thing: the endpoint, the goal, the culmination of all existence. Shabbat is the tachlit of creation; the world of souls is what Shabbat embodies; 'שמות' is how the tachlit is encoded in the verse; they are all one shared essential nature.",
+      "dominant_node": "תכלית",
+      "nodes": ["תכלית", "שמות"],
+      "node_degrees": {
+        "תכלית": 1,
+        "שמות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["עולם הנשמות", "שבת"],
+          "reason": "The source text explicitly states 'שַׁבָּת הוּא בְּחִינַת עוֹלָם הַנְּשָׁמוֹת' and 'שַׁבָּת...שֶׁהוּא הַתַּכְלִית'. Both concepts are bechina-equated with תכלית throughout the Torah. They belong to the same domain: the ultimate destination. These nodes are not in the dataset but appear in the source text — flagged in additions for entry. This merge note documents the thematic unity that should inform future data entry."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 39,
+      "volume": "lm2",
+      "label": "רַגְלִין וּבְחִינַת הַשָּׁפָל",
+      "label_en": "Feet / The Lower Aspect",
+      "polarity": "neutral",
+      "reason": "The Rebbe uses 'רגלין' (feet/legs) as a structural metaphor for those who are far from the מוח (intellect/brain) — ordinary people at the lowest rung of spiritual attainment. 'לכו' in the verse is explicitly called 'בחינת הרגלין' because feet are the instruments of walking (כלי ההליכה). This cluster is neutral: the רגלין are neither inherently holy nor evil — they are a structural/anatomical metaphor for distance from the source of intellect. The Torah's entire teaching is that even these distant ones can attain the tachlit through the great leader.",
+      "dominant_node": "רגלין",
+      "nodes": ["רגלין"],
+      "node_degrees": {
+        "רגלין": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["כלי ההליכה", "לכו"],
+          "reason": "The source text says 'לְכוּ דַּיְקָא, הַיְנוּ בְּחִינַת הָרַגְלִין, שֶׁהֵם כְּלֵי הַהֲלִיכָה'. These three expressions are all bechinas of the same thing: the aspect of being at the lowest/most distant point from the intellect. 'לכו' (the imperative 'go!') in the verse, 'רגלין' (feet), and 'כלי ההליכה' (instruments of walking) are treated as identical. These nodes are not currently in the dataset — flagged in additions."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 39,
+      "volume": "lm2",
+      "label": "מַנְהִיג וּמֹשֶׁה",
+      "label_en": "The True Leader / Moses",
+      "polarity": "good",
+      "reason": "The Rebbe establishes a cluster of concepts that all share one essential nature: the true leader (מנהיג) who has the power to illuminate even the lowest (רגלין) with the highest da'at (knowledge/intellect). Moses is the paradigmatic example; the 'faithful shepherd' (רועה נאמן) is the same concept. The 'מוח' (intellect/brain) that the leader draws downward is the defining power of this cluster. These are not cause-and-effect — the minhag, Moshe, and the ro'eh ne'eman are all bechinas of the same spiritual type: the one whose spiritual level is so great that he can extend da'at to the furthest reaches.",
+      "dominant_node": "מנהיג",
+      "nodes": ["מנהיג"],
+      "node_degrees": {
+        "מנהיג": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["רועה נאמן", "משה רבנו"],
+          "reason": "The Rebbe uses all three interchangeably: 'מַנְהִיג הַדּוֹר, רוֹעֶה נֶאֱמָן' and then points to Moshe as the exemplar. They share the same essential nature — the towering leader whose greatness illuminates the lowest. These are bechina-equivalences (same type, not cause and effect). Flagged in additions for dataset entry."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 3,
+    "raw_connected_components": 1
+  }
+}

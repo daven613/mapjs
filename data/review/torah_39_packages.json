@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "source": "Torah #39",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===39 AND type==='bechina'. Only 2 bechina edges found in the dataset, forming 2 raw components of 2 nodes each. Both components are small (2 nodes) and share essential nature — all 4 nodes are explicitly equated in a single bechina chain within the source text proof (line 6: 'וְרָעָב הַזֶּה, הַיְנוּ בְּחִינַת מַחֲלֹקֶת, בְּחִינַת חֶרְפָּה, הוּא בְּחִינַת עָרְלָה'). Merged into one package on the basis of shared nature (bechina), not cause-effect."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 39,
+      "label": "עָרְלָה וּמַחֲלֹקֶת",
+      "label_en": "The Foreskin-Husk and the Conflict",
+      "polarity": "evil",
+      "reason": "All four nodes — ערלה (the impurity husk encircling the covenant), חרפה (shame/disgrace), רעב (hunger/famine), and מחלקת (strife/conflict) — are declared by the Rebbe to be bechinas of one another in a single chain: 'וְרָעָב הַזֶּה, הַיְנוּ בְּחִינַת מַחֲלֹקֶת, בְּחִינַת חֶרְפָּה, הוּא בְּחִינַת עָרְלָה' (source line 6). They are four faces of the same essential reality: the anti-shalom force that blocks the ברית שלום (covenant of peace) and produces spiritual and physical lack. The two raw bechina edges from the dataset (ערלה–חרפה and רעב–מחלקת) form 2 separate components of 2 nodes each only because the cross-linking edges (e.g. מחלקת–חרפה and רעב–ערלה, also explicitly stated in the same proof text) have not yet been entered into the dataset. The text equates all four in one continuous bechina statement, making this a single coherent domain: the multi-form evil that surrounds and suppresses the covenant.",
+      "dominant_node": "מחלקת",
+      "nodes": [
+        "מחלקת",
+        "רעב",
+        "חרפה",
+        "ערלה"
+      ],
+      "node_degrees": {
+        "מחלקת": 1,
+        "רעב": 1,
+        "חרפה": 1,
+        "ערלה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["רעב", "מחלקת"],
+          "reason": "Raw CC2 from dataset edge B2 (id=1765, reference=39, bechina). These 2 nodes form their own connected component in the dataset graph. Merged into main package because the source text proof for B1 (id=1232) explicitly equates ALL four nodes — ערלה, חרפה, רעב, מחלקת — in one bechina chain: 'וְרָעָב הַזֶּה, הַיְנוּ בְּחִינַת מַחֲלֹקֶת, בְּחִינַת חֶרְפָּה, הוּא בְּחִינַת עָרְלָה'. The missing cross-linking edges (מחלקת–חרפה, רעב–ערלה) exist in the source text but are not yet in the dataset. Merge basis: SHARED NATURE (bechina), not cause-effect."
+        },
+        {
+          "merged_nodes": ["ערלה", "חרפה"],
+          "reason": "Raw CC1 from dataset edge B1 (id=1232, reference=39, bechina). These 2 nodes form their own connected component in the dataset graph. The same bechina chain that equates them also equates them with מחלקת and רעב, justifying merger. In this Torah, ערלה is identified as 'שָׁלֹשׁ קְלִפּוֹת הַמְסַבְּבִים הַבְּרִית שָׁלוֹם' — the three husks encircling the covenant of peace. חרפה is its social manifestation (shame delivered by antagonists). Both are expressions of the same evil domain."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 2,
+    "total_nodes": 4,
+    "total_packages": 1,
+    "raw_connected_components": 2
+  }
+}

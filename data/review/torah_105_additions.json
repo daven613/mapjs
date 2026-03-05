@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "source": "Torah #105",
+    "volume": "Likutay Moharan Volume 1",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_105_packages.json, all reference===105 edges from torahData.js (10 total: 2 bechina, 8 eitza), and the full source text torah_105.txt. For each occurrence of explicit bechina language in the source text (בְּחִינוֹת, בְּחִינַת, הַיְנוּ used to declare identity), verified whether the concept pair appears in the dataset as a reference=105 bechina edge. Only concepts with clear bechina/identity language were treated as gap candidates."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "רַחֲמִים פְּשׁוּטִים וּתְפִלַּת הַשֵּׁם",
+      "node_id": "זמרת יה",
+      "node_text": "זִמְרַת יָהּ",
+      "polarity": "good",
+      "reason": "The source text twice equates 'זִמְרַת יָהּ' with 'תְּפִלַּת הַשֵּׁם יִתְבָּרַךְ' using explicit הַיְנוּ language (line 14: 'נַעֲשֶׂה זִמְרָת יָהּ – הַיְנוּ הַתְּפִלָּה וְהָרַחֲמִים שֶׁל הַשֵּׁם יִתְבָּרַךְ'; line 27: 'זִמְרָת י\"ק דַּיְקָא, הַיְנוּ תְּפִלַּת ה\\'). הַיְנוּ is the canonical bechina-equivalence marker in Rebbe Nachman's teachings. The node 'זִמְרַת יָהּ' is the verse-phrase from שירת הים (Exodus 15:2) that the Torah expounds — the Rebbe states it IS the prayer of God, i.e., IS the רחמים פשוטים arousing the Great Mercy. As such it belongs in Package 1 alongside תפלת הקדוש ברוך הוא, of which it is a direct scriptural name. The edge would be: זמרת יה ↔ תפלת הקדוש ברוך הוא, type bechina.",
+      "source_quote": "וְזֶהוּ וְזִמְרַת י\"ק. זִמְרַת י\"ק דַּיְקָא, הַיְנוּ תְּפִלַּת ה'",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "רַחֲמִים פְּשׁוּטִים וּתְפִלַּת הַשֵּׁם",
+      "node_id": "גלות השכינה",
+      "node_text": "גָּלוּת הַשְּׁכִינָה",
+      "polarity": "evil",
+      "reason": "The source text (line 6 and explicitly in line 23) states: 'וְזֶה בְּחִינַת גָּלוּת הַשְּׁכִינָה' — referring to the state of letters and combinations being expelled from their place due to sin, which is the identical nature of exile of the Shekhinah. This is explicit בְּחִינַת language. The concept 'גָּלוּת הַשְּׁכִינָה' names the root problem that Torah #105 addresses: the exile caused by sin-generated confusion of letters, which is the very condition that prevents da'at from settling and mercy from being aroused. As the evil counterpart to the Torah's teaching, גלות השכינה is the negative pole of the bechina subgraph — the condition from which the chain Torah → Teshuva → Da'at → Rachamim is meant to rescue us. However, because there is only ONE existing bechina edge connecting it (the implicit one with 'confusion of letters/combinations' = exile), and because the existing dataset for Torah 105 contains no bechina edge encoding this, it is flagged as a gap addition. If added, the bechina pair would be: 'אוֹתִיּוֹת וְצֵרוּפִים שֶׁנִּתְגָּרְשׁוּ מִמְּקוֹמָם' ↔ 'גָּלוּת הַשְּׁכִינָה'. Package assignment note: this node has polarity 'evil' — it would be an evil satellite within the analysis, representing the problem-state that the good package resolves.",
+      "source_quote": "וּמִתְבַּלְבְּלִים הָאוֹתִיּוֹת וְהַצֵּרוּפִים, וְהַדַּעַת גַּם כֵּן מִתְבַּלְבֵּל, וְהוּא גָּלוּת הַשְּׁכִינָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "examined_and_excluded": [
+    {
+      "concept": "עָזִּי = תּוֹרָה (Exodus 15:2 verse-word)",
+      "reason": "Line 14 and 26 state: 'עָזִּי – וְאֵין עֹז אֶלָּא תּוֹרָה'. While this uses the formulation that identifies עז with Torah (a rabbinic equivalence from Avot 6:2), this functions as verse-exposition — explaining the meaning of the word 'עָזִּי' in the verse that the Torah uses as its peg-verse. The concept 'תּוֹרָה' appears throughout the eitza edges as the causal agent (Torah → Teshuva, etc.), and 'עז' as a verse-word is not a standalone bechina-concept pair in the same sense. Furthermore, all reference-105 edges where Torah appears are type 'eitza', not 'bechina'. The identification עז=Torah is presented as a received rabbinic formulation used for verse-exposition, not as the Rebbe's own bechina declaration. Excluded per framework strictness — verse-citation proof-texts are not treated as new bechina nodes unless the Rebbe uses the full בְּחִינַת/הַיְנוּ declaration formula for them as standalone identities."
+    },
+    {
+      "concept": "רַחֲמִים גְּדוֹלִים דְּעַתִּיקָא סְתִימָאָה",
+      "reason": "The source text discusses 'רַחֲמִים גְּדוֹלִים' extensively as a distinct level of mercy (Zohar Naso, Isaiah 54:7). However, the relationship between רחמים פשוטים and רחמים גדולים is explicitly EITZA (cause-and-effect): the simple mercy arouses / intercedes with the Great Mercy. They are not described as sharing the same essential nature — on the contrary, the Torah's entire teaching rests on their being categorically different levels. The Rebbe's mashal (parable) of the wealthy man vs. the greater wealthy man illustrates this difference in kind, not sameness of essence. Therefore 'רַחֲמִים גְּדוֹלִים' is a target of the eitza flow, not a bechina-equivalent of רחמים פשוטים. Excluded from gap additions."
+    },
+    {
+      "concept": "עִבּוּר, יְנִיקָה, מֹחִין (three stages of Torah study)",
+      "reason": "Lines 9-11 describe the three stages of Torah study (עיבור/conception, יניקה/nursing, מוחין/expanded consciousness) using נִקְרָא language ('כִּי כָּל זְמַן שֶׁהַדָּבָר בְּכֹחַ נִקְרָא עִבּוּר'). This is definitional/taxonomic usage of נקרא rather than the Rebbe's bechina-equivalence declaration. The stages are presented as a general framework that applies to all holy things, not as specific bechina-equivalences within Torah #105's conceptual structure. They serve to explain the *mechanism* by which Torah study achieves Teshuva — i.e., they are part of the eitza chain. No reference-105 bechina edges encode these concepts, and they do not share the essential nature of any node in the existing bechina subgraph."
+    },
+    {
+      "concept": "דַּעַת (da'at / settled knowledge)",
+      "reason": "Da'at appears repeatedly as a central concept in Torah #105, always in an eitza (causal) role: absence of letters-in-place → da'at unsettled; Torah → Teshuva → da'at settled; da'at settled → rachamim aroused. The source text does not use בְּחִינַת language to equate da'at with any other concept within this Torah. The famous formula 'כָּל מִי שֶׁאֵין בּוֹ דֵּעָה אָסוּר לְרַחֵם עָלָיו' describes da'at as prerequisite for rachamnut, which is an eitza relationship. While da'at IS a bechina of rachamnut in other Torahs (e.g. reference 119, ID 2739), that edge belongs to a different Torah. Within Torah #105, da'at is a causal agent, not a bechina-equivalent."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_105_edges": 10,
+    "total_reference_105_bechina_edges": 2,
+    "total_reference_105_eitza_edges": 8,
+    "nodes_accounted_for_in_packages": {
+      "package_1": [
+        "רחמים פשוטים",
+        "רחמים סתם דזעיר אנפין",
+        "תפלת הקדוש ברוך הוא"
+      ]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "זמרת יה",
+      "גלות השכינה"
+    ],
+    "good_evil_mirror_analysis": "Torah #105 has a compressed bechina structure with only one package and no evil-side bechina cluster in the dataset. The evil mirror is present in the TEXT (galut ha-Shekhinah, confusion of letters, sinfulness preventing mercy) but it is not encoded as bechina edges in the dataset. The teaching's structure is predominantly about the positive solution (Torah → Teshuva → Da'at → Rachamim → God's prayer → Yeshua), with the negative condition stated narratively rather than through named bechina equivalences. Gap addition 'גלות השכינה' partially fills this mirror."
+  }
+}

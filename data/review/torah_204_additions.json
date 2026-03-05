@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "source": "Torah #204",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_204_packages.json, all reference===204 edges from torahData.js, and the full source text torah_204.txt. For each statement in the source text, evaluated whether it employs explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, הוּא בְּחִינַת). Only statements with explicit bechina declarations are considered for bechina-edge additions. Notarikon (acronym) proofs and causal/supportive statements are not bechina edges unless explicitly marked as such by the Rebbe."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_204_edges": 2,
+    "total_reference_204_bechina_edges": 2,
+    "total_reference_204_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["מעות שנותנין לתלמיד חכם", "תורה", "תמכי אוריתא"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [],
+    "gap_explanation": "Torah #204 is a very short teaching — four sentences. The dataset contains 2 bechina edges (IDs 3089 and 3139) that together capture both bechina declarations made in the source text. All three nodes (מעות שנותנין לתלמיד חכם, תורה, תמכי אוריתא) are fully assigned to Package 1. The source text contains one additional structural element — the notarikon proof that מָעוֹת is an acronym for וְאֵין עֲבֵירָה מְכַבָּה תּוֹרָה — but this is a supporting argument for the existing bechina equation, not a new independent bechina relationship. No additions are needed.",
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "וְאֵין עֲבֵירָה מְכַבָּה תּוֹרָה (no sin extinguishes Torah)",
+        "reason": "The Rebbe uses this as a notarikon proof — the letters of מָעוֹת (מ-ע-ו-ת) are rashei teivot (initial letters) of 'וְאֵין עֲבֵירָה מְכַבָּה תּוֹרָה'. This is an acronymic/wordplay demonstration, not a bechina declaration. The Rebbe writes 'וְזֶה: מָעוֹת – רָאשֵׁי־תֵּבוֹת: ...' — using ראשי תיבות language, not בְּחִינַת language. The notarikon shows WHY the money qualifies as bechina of Torah (because the very word מעות encodes Torah's inextinguishability), but does not establish a new independent bechina equivalence between two concepts. It is a textual proof anchoring the already-stated bechina, not a new parallel-essence equation. Excluded per framework rule: only explicit בְּחִינַת / הַיְנוּ בְּחִינַת / נִקְרָא language creates bechina edges."
+      },
+      {
+        "concept": "צְדָקָה (charity/righteousness)",
+        "reason": "The Rebbe opens by noting that 'the virtue of tzedaka is known' (מַעֲלַת הַצְּדָקָה יָדוּעַ). The money given to a talmid chakham is a form of tzedaka. However, the Rebbe does not declare 'מָעוֹת הוּא בְּחִינַת צְדָקָה' or 'צְדָקָה הִיא בְּחִינַת תּוֹרָה' — he merely provides contextual background. The mention of tzedaka is a framing introduction, not a bechina equation for Torah #204. Note: tzedaka IS connected to Torah in other Torahs (e.g., the Sotah 21 citation about sin and Torah), but no bechina declaration for reference 204 exists. Excluded."
+      },
+      {
+        "concept": "תַּלְמִיד חָכָם (Torah scholar)",
+        "reason": "The talmid chakham is the recipient through whom the money becomes bechina of Torah. However, the Rebbe does not establish a bechina equation between the talmid chakham himself and Torah or tamchei oraita — the equation is about the money given to him, not about the scholar as a concept. The talmid chakham is the conduit, not the subject of the bechina. Excluded: no bechina language applied to talmid chakham as a concept in this Torah."
+      }
+    ],
+    "structural_observations": [
+      "Torah #204 is among the most compact in Likutay Moharan Vol. 1 — approximately 100 words including the closing note that only these words were recorded.",
+      "The teaching has a two-stage bechina structure: (1) conventional identification (money = tamchei oraita) escalating to (2) deeper revelation (money = Torah itself). The notarikon serves as a third-level confirmation.",
+      "The entire teaching is contained in 2 bechina edges with 3 nodes. This small graph fully represents the Torah's conceptual content.",
+      "The closing sentence — that there are 'many more matters' and the Rebbe told a story but it was not recorded — indicates the written text is deliberately truncated. This means there may be additional bechina concepts from the oral/story portion that are simply not available in the written source. The dataset can only represent what is written.",
+      "No eitza (cause-and-effect) edges exist for Torah #204 in the dataset. The practical implication (one should give money to talmidei chakhamim because it equals Torah) is structural/halachic context rather than a formally encoded eitza in the dataset."
+    ]
+  }
+}

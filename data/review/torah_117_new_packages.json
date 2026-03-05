@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "source": "Torah #117 (Likutay Moharan Vol. 1)",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": "117-new-1",
+      "torah_ref": 117,
+      "label": "דַּעַת וּמוֹצָאֵי שַׁבָּת",
+      "label_en": "Daat and Motzaei Shabbat",
+      "polarity": "good",
+      "reason": "Line 10 of the source text introduces a second independent explanation for why sleep is difficult on Motzaei Shabbat. Two explicit bechina declarations are made: (1) מוֹצָאֵי שַׁבָּת IS the bechina of דַּעַת (via the Yerushalmi: 'if there is no daat, from where does havdalah come?' — therefore Motzaei Shabbat = havdalah = daat); and (2) שֵׁנָה IS הִסְתַּלְּקוּת הַדַּעַת (sleep is the withdrawal/departure of daat). These two bechinot form a natural cluster: daat and Motzaei Shabbat share the same essential nature, and sleep is identified as the departure of that same quality. Together they constitute a positive ontological package — daat is the holy knowledge/discernment that distinguishes sacred from profane (havdalah), and Motzaei Shabbat is precisely the moment when this daat is present. The package is 'good' polarity because daat, havdalah, and Motzaei Shabbat are all in the domain of holiness. Sleep (שנה) is a liminal node: its bechina here (= withdrawal of daat) makes it thematically part of this package as the anti-pole of daat, though its causal origin is the evil serpent-cluster. The dominant node is דַּעַת — it has the highest conceptual centrality (both the other nodes are defined in terms of their relationship to daat) and it is the concept that drives the entire second explanation.",
+      "dominant_node": "דעת",
+      "nodes": [
+        "דעת",
+        "מוצאי שבת",
+        "שנה",
+        "הסתלקות הדעת"
+      ],
+      "node_degrees": {
+        "דעת": 2,
+        "מוצאי שבת": 1,
+        "שנה": 1,
+        "הסתלקות הדעת": 1
+      },
+      "proposed_edges": [
+        {
+          "proposed_edge_id": "117-gap-3",
+          "node1_id": "מוצאי שבת",
+          "node2_id": "דעת",
+          "proof": "נִמְצָא שֶׁבְּמוֹצָאֵי שַׁבָּת שֶׁיֵּשׁ הַבְדָּלָה, הוּא בִּבְחִינַת דַּעַת, כִּי אִם אֵין דַּעַת הַבְדָּלָה מִנַּיִן",
+          "source_line": 10
+        },
+        {
+          "proposed_edge_id": "117-gap-4",
+          "node1_id": "שנה",
+          "node2_id": "הסתלקות הדעת",
+          "proof": "כִּי הַשֵּׁנָה הוּא הִסְתַּלְּקוּת הַדַּעַת",
+          "source_line": 10
+        }
+      ],
+      "merge_notes": [
+        "This package is formed entirely from gap-analysis additions (proposed edges 117-gap-3 and 117-gap-4). Neither edge is currently in the dataset.",
+        "שֵׁנָה (sleep) is a conceptual pivot in Torah 117 — it is the central phenomenon being explained. In this good package, sleep is defined as the withdrawal of daat (a bechina equation). In the evil package, sleep is causally connected to the serpent (the serpent brought death; sleep is 1/60 of death — an eitza relationship). The bechina equation (sleep = withdrawal of daat) makes שנה formally part of this good package; the causal chain (serpent → death → sleep) is an eitza flowing from the evil package into the phenomenon of sleep.",
+        "הִסְתַּלְּקוּת הַדַּעַת (withdrawal of daat) could be treated as an alias/description of שֵׁנָה itself rather than a separate node. However, preserving it as a distinct node better reflects the text's structure: the Rebbe is not merely saying 'sleep is the absence of daat' (privation) but 'sleep IS the withdrawal, the going-away, of daat' — i.e., sleep has a positive ontological identity as the motion-of-daat-departing."
+      ]
+    }
+  ],
+  "expanded_package_picture": {
+    "description": "When the 4 proposed gap additions are incorporated, Torah 117 yields 2 packages with a clear good/evil mirror structure:",
+    "package_1_evil": {
+      "label": "נָחָשׁ וְהַקְּלָלָה — The Serpent and the Curse",
+      "polarity": "evil",
+      "nodes_dataset": ["נחש", "ארור", "עבד", "כנען עבד עבדים"],
+      "nodes_with_additions": ["נחש", "ארור", "עבד", "כנען עבד עבדים", "שקר"],
+      "dominant_node": "נחש",
+      "description": "The serpent of Genesis 3, which is cursed (ארור), manifests as slave (עבד = כנען עבד עבדים) and as falsehood (שקר). This cluster represents the evil force that brought death into the world and holds nine-tenths of sleep. When Elijah's revelation begins on Motzaei Shabbat, this cluster is repelled."
+    },
+    "package_2_good": {
+      "label": "דַּעַת וּמוֹצָאֵי שַׁבָּת — Daat and Motzaei Shabbat",
+      "polarity": "good",
+      "nodes_with_additions": ["דעת", "מוצאי שבת", "שנה", "הסתלקות הדעת"],
+      "dominant_node": "דעת",
+      "description": "Motzaei Shabbat is the bechina of daat (knowledge/discernment, the source of havdalah). Sleep is the withdrawal of daat. Therefore when daat-time arrives (Motzaei Shabbat), sleep naturally departs. This cluster represents the positive, holy force that makes sleep difficult."
+    },
+    "good_evil_mirror": "The teaching has a perfect double explanation: (1) EVIL SIDE — Motzaei Shabbat repels the serpent-cluster (שקר / נחש / ארור / עבד), therefore sleep (which comes from the serpent's death-legacy) is repelled. (2) GOOD SIDE — Motzaei Shabbat is the bechina of daat, and sleep IS the withdrawal of daat, therefore when daat is present, sleep cannot take hold. The two explanations are mirror-images: one describes sleep as the positive presence of evil (serpent-nature), the other describes sleep as the absence of good (departure of daat). Elijah connects the two: he is 'ben' (son = בן, gematria of אליהו), the opposite of 'eved' (slave), and his revelation is the revelation of daat.",
+    "pivot_concept": "שֵׁנָה (sleep) is the pivot concept connecting both packages. It bridges: evil package (sleep came to slaves = from the serpent's death-legacy) via eitza, and good package (sleep = withdrawal of daat) via bechina. The entire Torah is an explanation of why this pivot concept is repelled on Motzaei Shabbat."
+  },
+  "observations": "Torah #117 is a remarkably tight 10-line teaching that operates on two parallel explanatory levels simultaneously. The dataset currently captures only the evil package (3 edges, 4 nodes), missing the entire good package (daat / Motzaei Shabbat / sleep) and the crucial שקר↔נחש equation that completes the evil package. Once the 4 proposed additions are incorporated, the Torah yields a classic Rebbe Nachman good/evil mirror structure: the evil serpent-cluster (falsehood, curse, slavery) mirrors the good daat-cluster (truth, knowledge, Motzaei Shabbat), and sleep is the axis around which both explanations turn. The teaching is notably concise and structurally elegant — each package has exactly one dominant concept (נחש for evil, דעת for good) with all other nodes deriving their identity from their relationship to the dominant."
+}

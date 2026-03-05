@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "source": "Torah #206",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, scanned all edges in torahData.js for reference===206 AND type==='bechina' (result: zero edges). The only dataset edge for Torah #206 is id 422, type 'eitza'. Read the full source text torah_206.txt and analyzed each statement for explicit bechina language (הוּא בְּחִינַת, בְּחִינַת, שֶׁהֵם, הוּא, נִקְרָא, הַיְנוּ used as equivalence). Identified two explicit bechina declarations and one implicit bechina cluster grounded in transitivity."
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "תורה = השם יתברך (Torah IS God Himself)",
+      "source_text_ref": "Line 3: 'וְהַתּוֹרָה הוּא הַשֵּׁם יִתְבָּרַךְ בְּעַצְמוֹ, שֶׁהוּא קוֹרֵא אוֹתָם וּמְבַקְּשָׁם שֶׁיַּחְזְרוּ אֵלָיו'",
+      "proposed_edge": {
+        "node1_id": "תורה",
+        "node2_id": "השם יתברך",
+        "type": "bechina",
+        "reference": 206,
+        "proof": "וְהַתּוֹרָה הוּא הַשֵּׁם יִתְבָּרַךְ בְּעַצְמוֹ, שֶׁהוּא קוֹרֵא אוֹתָם וּמְבַקְּשָׁם שֶׁיַּחְזְרוּ אֵלָיו"
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe states this identification using the word 'הוּא' — the strongest direct bechina declaration ('Torah IS God Himself'). The context: the Rebbe has just cited the Talmudic Aramaic teaching 'אוֹרַיְתָא מַכְרֶזֶת קַמַּיְהוּ: עַד מָתַי פְּתָיִים תְּאֵהֲבוּ פֶּתִי' (Torah proclaims before them: How long will you love simplicity — Proverbs 1:22). He then explains why Torah is the one doing the calling: because Torah IS God Himself, who calls them and seeks their return. This is not a metaphor or analogy — it is an ontological identity claim. The Rebbe is stating that when Torah speaks, God speaks; when Torah calls, God calls; they are the same being. This identification is foundational to the entire Torah's argument: the reason that hearing/remembering Torah = hearing/remembering God's calling voice is precisely because they ARE the same reality. This is a classic bechina — two different expressions (Torah as text/teaching, God as personal divine being) of the same underlying essence (the divine calling-presence that seeks the soul's return). The node 'תורה' already exists extensively in the dataset. The node 'השם יתברך' is a new standalone node (God is usually referenced as context, not as a bechina concept). However, in this Torah the identification is so explicit and central that it warrants its own node."
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "מצוות = תורה (The commandments ARE Torah — they share the same essential calling-voice)",
+      "source_text_ref": "Lines 9–10: 'קוֹל הַקְּרִיאָה שֶׁל הַמִּצְווֹת, שֶׁהֵם הַתּוֹרָה' and 'עֲדַיִן אֲנִי מַכִּיר אֶת קוֹל הַקְּרִיאָה שֶׁל הַתּוֹרָה וְהַמִּצְווֹת'",
+      "proposed_edge": {
+        "node1_id": "מצוות",
+        "node2_id": "תורה",
+        "type": "bechina",
+        "reference": 206,
+        "proof": "קוֹל הַקְּרִיאָה שֶׁל הַמִּצְווֹת, שֶׁהֵם הַתּוֹרָה"
+      },
+      "package_assignment": 1,
+      "notes": "The Rebbe uses 'שֶׁהֵם' ('which ARE') — a direct bechina identification: the commandments ARE the Torah. The teaching's key mechanism is that the sinner who has not yet forgotten the Torah/mitzvot still recognizes God's calling voice and can repent easily. The Rebbe treats Torah and mitzvot as a single reality throughout the teaching — 'קוֹל הַקְּרִיאָה שֶׁל הַתּוֹרָה וְהַמִּצְווֹת' (the calling voice of Torah and the mitzvot, line 10), 'קוֹל הַתּוֹרָה וְהַמִּצְווֹת' (line 11). The 'שֶׁהֵם' in line 10 is the explicit identification: 'the calling-voice of the mitzvot, which ARE Torah.' This makes mitzvot a bechina of Torah — different expressions of the same divine calling-presence. By transitivity (תורה = השם יתברך, and מצוות = תורה), all three nodes belong to Package 1. The identification of mitzvot with Torah in the context of the 'calling voice' is the structural key that enables the Psalmist's prayer: 'I have not forgotten Your commandments' = 'I still hear Your calling voice' = 'I can still find my way back.' The node 'מצוות' may exist in the dataset; if it does, this edge connects it to the 'תורה' node in the context of Torah #206."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "תְּעִיָּה מִדֶּרֶךְ הַיָּשָׁר (te'iyah — going astray from the straight path): The central metaphor of the teaching. A person who sins departs from the straight path and wanders into tangled, corrupted by-ways. This is the overarching eitza-state — sin PRODUCES going astray. Not a bechina concept; it is the eitza-consequence of sin. Could be an eitza node: עֲבֵרָה → תְּעִיָּה.",
+      "דְּרָכִים תּוֹעִים וּמְקֻלְקָלִים (to'im u-mekukalim — errant and corrupted paths): The maze of wrong paths one enters when straying. These are described as multiple branching paths leading further from the straight way. Not a named bechina concept — they are eitza-consequence nodes (the further one travels, the harder to return).",
+      "קוֹל הַקְּרִיאָה (kol ha-kri'ah — the voice of the calling): The calling-voice of Torah/God that calls the sinner back. Used throughout lines 3, 4, 7, 9, 10, 11 as the key functional concept. Not a separate bechina node from תורה/השם יתברך — it is a description of their activity. However, if one wanted to add it as a node, it would be a bechina of תורה (the calling-voice IS Torah) and would extend Package 1 to four nodes.",
+      "שֶׂה אֹבֵד (seh oved — the lost sheep): The Psalmist's self-description (Psalm 119:176), used as the parable-vehicle throughout the teaching. The wandering sheep that has strayed from the shepherd is an illustration of the sinner who has gone astray. Not a standalone bechina node — it is a mashal (parable) for the sinner, not a concept equated with another via bechina language.",
+      "רוֹעֶה (ro'eh — the shepherd): The shepherd in the parable (lines 5, 8) who calls the lost sheep back. By analogy this is God/Torah calling the sinner. The analogy is made implicit but the Rebbe does not say 'the shepherd IS the Rebbe' or 'the shepherd IS God' using bechina language — he uses the parable to illustrate the eitza logic.",
+      "עוּל יָמִים / בַּחֲרוּת (ul yamim / bakhurut — youth / being young in sin): The one who has not yet grown old in sin — can still repent easily. Contrast with זָקֵן (the one old/aged in sin). Not a bechina node; it describes a state on the eitza continuum of how far one has strayed.",
+      "זָקֵן בַּחֲטָאִים (zaken ba-khata'im — one aged/old in sin): The one who has sinned for so long that he has forgotten the calling voice. He is the counterpart to עוּל יָמִים. Not a bechina concept — it describes a stage in the eitza process of spiritual distance.",
+      "כִּי מִצְוֹתֶיךָ לֹא שָׁכָחְתִּי (ki mitzvotekha lo shakhakhti — for I have not forgotten Your commandments): King David's prayer-argument. The forgetting/remembering of mitzvot IS the recognition/loss of the calling voice. This is the final verse application (lines 8–12) and is not a separate bechina concept — it is the proof-text that the Rebbe interprets in light of the teaching's framework."
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "קוֹל הַקְּרִיאָה (the calling voice)",
+        "reason": "Examined as a potential fourth bechina node. The text uses 'קוֹל הַקְּרִיאָה' and 'קוֹל הַתּוֹרָה' interchangeably, and says 'שׁוֹמֵעַ קוֹלוֹ קוֹל הַתּוֹרָה' (hearing His voice = the voice of Torah, line 4). This could be read as a bechina: the calling-voice IS Torah. However, the Rebbe does not use explicit bechina language ('X הוּא בְּחִינַת Y') to identify the calling-voice as a separate entity — he uses it as a description of what Torah/God does (calls). The calling-voice is a function/attribute of Torah/God, not a separate concept equated with them. It is safest not to generate a separate node. If future analysis adds this node, it would extend Package 1 from three to four nodes with תורה as hub (degree 3: connected to השם יתברך, מצוות, and קוֹל הַקְּרִיאָה)."
+      },
+      {
+        "concept": "שֶׂה אֹבֵד (the lost sheep)",
+        "reason": "The Rebbe uses 'כְּשֶׂה אֹבֵד' as an analogy for the sinner, and in line 8 unpacks the verse: 'תָּעִיתִי כְּשֶׂה אֹבֵד — הַיְנוּ שֶׁתָּעִיתִי מֵהַדֶּרֶךְ הַיָּשָׁר כְּשֶׂה אוֹבֵד הַנּוֹטֶה מֵהַדֶּרֶךְ'. The 'הַיְנוּ' here does not introduce a bechina equation — it introduces an explanation/paraphrase of the verse. The Rebbe is saying 'I have gone astray from the straight path, just as a lost sheep departs from the path.' The 'כְּ' (like/as) remains a simile throughout; the Rebbe does not convert it to ontological identity ('the sinner IS the lost sheep in the bechina sense'). Excluded from bechina edges."
+      },
+      {
+        "concept": "דֶּרֶךְ הַיָּשָׁר (the straight path) vs. דְּרָכִים הַתּוֹעִים (errant paths)",
+        "reason": "These two concepts represent the positive path and its corrupt alternatives. They could be read as a good/evil pair. However, the Rebbe does not use bechina language to identify them with any other concepts — he uses them as spatial/navigational metaphors in the eitza chain. Sin → departure from דֶּרֶךְ הַיָּשָׁר → entry into דְּרָכִים הַתּוֹעִים → difficulty of return. This is a pure eitza sequence. No bechina edges excluded."
+      }
+    ],
+    "gap_explanation": "Torah #206 has one eitza edge in the dataset (id 422: immediate repentance → easy return) and zero bechina edges. The source text contains two explicit bechina declarations: (1) תורה = השם יתברך (line 3), and (2) מצוות = תורה (lines 9–10). These two declarations form one bechina cluster (Package 1: good, dominant node תורה). The dataset is missing both bechina edges. The eitza structure of the teaching is otherwise well-represented: the existing edge correctly captures the main practical teaching. What is missing is the bechina foundation that explains WHY early repentance is easier: because the soul still recognizes the calling voice of Torah/God/mitzvot, which are all the same divine calling-presence. Without these bechina edges, Torah #206 appears in the graph as an isolated eitza fact rather than as a theologically grounded teaching.",
+    "source_text_summary": "Torah #206 is a twelve-line teaching based on Psalm 119:176. It addresses the question: why is repentance easy for the recent sinner but hard for the habitual sinner? The answer: when someone sins and immediately repents, he has not traveled far from the straight path and still recognizes God's calling voice (= Torah's voice). But when someone has sinned persistently, he has wandered deep into errant by-paths and forgotten the calling voice — making return very difficult. God always calls people back (via Torah proclaiming 'How long will you love simplicity?'), and Torah IS God Himself in this calling role. The teaching closes with King David's prayer from Psalm 119:176: 'Seek Your servant, for I have not forgotten Your commandments' — meaning: search for me quickly, while I still recognize the calling voice of Torah and mitzvot. The teaching contains two bechina identifications (תורה = השם יתברך; מצוות = תורה) and multiple eitza relationships (sin → straying; straying → forgotten voice; early repentance → easy return; persistent sin → forgotten voice → hard return). One eitza edge already exists in the dataset (id 422). Two bechina edges are missing and proposed above.",
+    "structural_observations": [
+      "The teaching's good/evil polarity is implicit rather than explicit. Package 1 (good: תורה = השם יתברך = מצוות) has no formal evil mirror package. The 'evil' side is represented by the eitza-domain of sin and errant paths, but no evil concepts are given bechina identifications (no 'the errant paths IS the evil inclination' type equation).",
+      "The shepherd-sheep parable functions as an extended mashal (illustration) for the eitza logic, not as a bechina source. The shepherd is analogous to God/Torah, the lost sheep to the sinner — but the Rebbe uses the parable to explain the eitza mechanism, not to declare ontological identity.",
+      "The distinction between עוּל יָמִים (young in sin) and זָקֵן (old in sin) parallels the teaching's central eitza theme but is not itself a bechina — it describes two positions on the continuum of spiritual distance from the calling voice.",
+      "The identification 'תורה = השם יתברך' in this Torah echoes a foundational kabbalistic principle (Torah and God are one — Zohar III:73a: 'קוּדְשָׁא בְּרִיךְ הוּא וְאוֹרַיְתָא וְיִשְׂרָאֵל כּוּלְּהוּ חַד'). The Rebbe here states only the Torah-God equivalence, not the full three-way identity with Israel.",
+      "Torah #206 belongs to the genre of brief repentance-focused teachings in Likutay Moharan Vol. 1. Its length (12 lines) and structure (parable → explanation → verse application) is typical of this genre."
+    ]
+  }
+}

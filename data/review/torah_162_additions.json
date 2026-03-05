@@ -1,0 +1,219 @@
+{
+  "meta": {
+    "source": "Torah #162 (Likutay Moharan Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Torah #162 has ZERO edges in torahData.js — reference 162 does not appear in the dataset. All bechina-language was identified directly from the source text torah_162.txt. The methodology: (1) read the full 3-line text; (2) identify every instance of the bechina-equivalence markers: 'שֶׁהוּא', 'הַיְנוּ', 'הוּא בְּחִינַת', appositional constructions, and direct equation statements; (3) for each identified bechina, determine the two nodes being equated; (4) check whether either node already appears in the dataset (it cannot, since there are no reference-162 edges); (5) assign each new node to its package. Causal statements ('עַל כֵּן' / 'אֲזַי' + result) were excluded as eitza. The Talmudic proof-text (Bava Batra 25b) was treated as providing the bechina-grounds, not as itself contributing separate concept-nodes. Historical exemplars cited with 'כְּגוֹן' were excluded as illustrative, not bechina-equated."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וּגְדֻלָּה — הַדָּרוֹם וְהַצָּפוֹן",
+      "node_id": "תורה",
+      "node_text": "תּוֹרָה",
+      "polarity": "neutral",
+      "reason": "In line 2, the Maggid glosses the Talmudic maxim with 'הַיְנוּ תּוֹרָה וּגְדֻלָּה' — making תורה the explicit referent of what the Talmud calls חכמה-seeking (לְהַחְכִּים). The 'הַיְנוּ' is the standard Likutey Moharan bechina-equation marker. Torah does not yet appear as a bechina-edge node for reference 162 (which has no dataset edges at all). The concept is identified as NEUTRAL within this package because it is functioning as a directional cosmic coordinate (the south pole), not as the holy Torah in opposition to evil.",
+      "source_quote": "הַיְנוּ תּוֹרָה וּגְדֻלָּה, כִּי הָרוֹצֶה לְהַחְכִּים — יַדְרִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "תורה",
+        "node2_id": "חכמה",
+        "type": "bechina",
+        "reference": 162
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וּגְדֻלָּה — הַדָּרוֹם וְהַצָּפוֹן",
+      "node_id": "חכמה",
+      "node_text": "חָכְמָה",
+      "polarity": "neutral",
+      "reason": "The Talmudic maxim 'הָרוֹצֶה לְהַחְכִּים — יַדְרִים' introduces חכמה as the essence of Torah. The Maggid then equates it to תורה via 'הַיְנוּ.' The bechina is between חכמה (the Talmudic term) and תורה (the Maggid's term for the same south-facing cosmic quality). Not in the dataset for reference 162.",
+      "source_quote": "כִּי הָרוֹצֶה לְהַחְכִּים — יַדְרִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "תורה",
+        "node2_id": "חכמה",
+        "type": "bechina",
+        "reference": 162
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וּגְדֻלָּה — הַדָּרוֹם וְהַצָּפוֹן",
+      "node_id": "דרום",
+      "node_text": "דָּרוֹם",
+      "polarity": "neutral",
+      "reason": "Line 2 explicitly equates the south direction with the quest for Torah/wisdom: 'הָרוֹצֶה לְהַחְכִּים עוֹמֵד לְדָרוֹם.' The south IS the spatial bechina of Torah/wisdom orientation. The repeated use of 'עוֹמֵד לְדָרוֹם' (stands toward the south) throughout line 2 reinforces the identification. Proposed bechina edge: דרום ↔ תורה (and by extension ↔ חכמה). Not in the dataset.",
+      "source_quote": "כְּשֶׁרוֹצֶה לְהַחְכִּים עוֹמֵד לְדָרוֹם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "דרום",
+        "node2_id": "תורה",
+        "type": "bechina",
+        "reference": 162
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וּגְדֻלָּה — הַדָּרוֹם וְהַצָּפוֹן",
+      "node_id": "גדולה",
+      "node_text": "גְּדֻלָּה",
+      "polarity": "neutral",
+      "reason": "Line 2: the Maggid names the opposing pole 'גדולה' in the phrase 'הַיְנוּ תּוֹרָה וּגְדֻלָּה.' The Talmudic proof establishes that 'wanting wealth, face north' — thus גדולה is identified with the north-facing quality, the same domain as עשירות. The 'הַיְנוּ' formula equates the Maggid's abstract term (גדולה) with the Talmud's concrete term (wealth/עשירות). Proposed bechina edge: גדולה ↔ עשירות.",
+      "source_quote": "הַיְנוּ תּוֹרָה וּגְדֻלָּה, כִּי... לְהַעֲשִׁיר — יַצְפִּין",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "גדולה",
+        "node2_id": "עשירות",
+        "type": "bechina",
+        "reference": 162
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וּגְדֻלָּה — הַדָּרוֹם וְהַצָּפוֹן",
+      "node_id": "עשירות",
+      "node_text": "עֲשִׁירוּת",
+      "polarity": "neutral",
+      "reason": "The Talmudic proof-text uses 'לְהַעֲשִׁיר' (to become wealthy); the Maggid restates it as 'עֲשִׁירוּת בְּצָפוֹן.' This is the concrete north-pole term, equated with גדולה by the 'הַיְנוּ' formula that brackets both the Talmudic proof and the abstract reformulation. Proposed bechina edge: גדולה ↔ עשירות.",
+      "source_quote": "לְהַעֲשִׁיר — יַצְפִּין... וַעֲשִׁירוּת בְּצָפוֹן",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "גדולה",
+        "node2_id": "עשירות",
+        "type": "bechina",
+        "reference": 162
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "תּוֹרָה וּגְדֻלָּה — הַדָּרוֹם וְהַצָּפוֹן",
+      "node_id": "צפון",
+      "node_text": "צָפוֹן",
+      "polarity": "neutral",
+      "reason": "Line 2: 'לְהַעֲשִׁיר — יַצְפִּין' and 'וַעֲשִׁירוּת בְּצָפוֹן.' The north IS the spatial bechina of wealth/greatness orientation, exactly as the south is the bechina of Torah/wisdom. Proposed bechina edge: צפון ↔ גדולה (or ↔ עשירות).",
+      "source_quote": "לְהַעֲשִׁיר — יַצְפִּין... וַעֲשִׁירוּת בְּצָפוֹן",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "צפון",
+        "node2_id": "גדולה",
+        "type": "bechina",
+        "reference": 162
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "עֲנָוָה וְאַיִן",
+      "node_id": "תכלית הענוות",
+      "node_text": "תַּכְלִית הָעֲנָוָה",
+      "polarity": "good",
+      "reason": "Line 3: 'כִּי אִם הוּא בְּתַכְלִית הָעֲנָוָה, שֶׁהוּא אַיִן מַמָּשׁ.' The 'שֶׁהוּא' is the bechina-equivalence marker. The ultimate degree of humility IS truly ayin. תכלית הענוות is the dominant node of Package 2 — it is the practical/behavioral entry-point for the state. Proposed bechina edge: תכלית הענוות ↔ אין ממש.",
+      "source_quote": "אִם הוּא בְּתַכְלִית הָעֲנָוָה, שֶׁהוּא אַיִן מַמָּשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "תכלית הענוות",
+        "node2_id": "אין ממש",
+        "type": "bechina",
+        "reference": 162
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "עֲנָוָה וְאַיִן",
+      "node_id": "אין ממש",
+      "node_text": "אַיִן מַמָּשׁ",
+      "polarity": "good",
+      "reason": "Line 3: the first ontological name for the state of ultimate humility — 'שֶׁהוּא אַיִן מַמָּשׁ.' Restated two clauses later as 'אַיִן וָאֶפֶס מַמָּשׁ', confirming that these are bechina-equivalent expressions of the same reality. Proposed bechina edges: (1) תכלית הענוות ↔ אין ממש; (2) אין ממש ↔ אין ואפס ממש.",
+      "source_quote": "שֶׁהוּא אַיִן מַמָּשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "תכלית הענוות",
+        "node2_id": "אין ממש",
+        "type": "bechina",
+        "reference": 162
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "עֲנָוָה וְאַיִן",
+      "node_id": "אין ואפס ממש",
+      "node_text": "אַיִן וָאֶפֶס מַמָּשׁ",
+      "polarity": "good",
+      "reason": "Line 3: 'מֵאַחַר שֶׁהוּא אַיִן וָאֶפֶס מַמָּשׁ.' This is the intensified restatement of 'אַיִן מַמָּשׁ' — the Maggid adds 'וָאֶפֶס' (and zero/nullity) to emphasize the totality of the self-annihilation. The apposition אין ↔ אפס is a standard Hebrew intensification formula (cf. Isaiah 40:17: 'כָּאַיִן וָאֶפֶס נֶחְשְׁבוּ לוֹ'). The two formulations (אין ממש vs. אין ואפס ממש) describe the same state from the same angle, making them bechina-equivalents by appositional synonymy. Proposed bechina edge: אין ממש ↔ אין ואפס ממש.",
+      "source_quote": "מֵאַחַר שֶׁהוּא אַיִן וָאֶפֶס מַמָּשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "אין ממש",
+        "node2_id": "אין ואפס ממש",
+        "type": "bechina",
+        "reference": 162
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_162_edges": 0,
+    "total_reference_162_bechina_edges": 0,
+    "total_reference_162_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["תורה", "חכמה", "דרום", "גדולה", "עשירות", "צפון"],
+      "package_2": ["תכלית הענוות", "אין ממש", "אין ואפס ממש"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "תורה — in 'הַיְנוּ תּוֹרָה' as the bechina of חכמה/south orientation; not present as reference-162 node",
+      "חכמה — from Talmudic 'לְהַחְכִּים'; equated with תורה via הַיְנוּ; not present as reference-162 node",
+      "דרום — 'עוֹמֵד לְדָרוֹם'; spatial bechina of Torah/wisdom; not present as reference-162 node",
+      "גדולה — in 'הַיְנוּ תּוֹרָה וּגְדֻלָּה'; equated with עשירות via the Talmudic proof; not present as reference-162 node",
+      "עשירות — from Talmudic 'לְהַעֲשִׁיר' and 'וַעֲשִׁירוּת בְּצָפוֹן'; equated with גדולה; not present as reference-162 node",
+      "צפון — 'וַעֲשִׁירוּת בְּצָפוֹן'; spatial bechina of wealth/greatness; not present as reference-162 node",
+      "תכלית הענוות — 'אִם הוּא בְּתַכְלִית הָעֲנָוָה'; the dominant node of the humility package; not present as reference-162 node",
+      "אין ממש — 'שֶׁהוּא אַיִן מַמָּשׁ'; the ontological bechina of ultimate humility; not present as reference-162 node",
+      "אין ואפס ממש — 'מֵאַחַר שֶׁהוּא אַיִן וָאֶפֶס מַמָּשׁ'; intensified restatement of אין ממש; not present as reference-162 node"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "אִישׁ עָשִׁיר וּמְיֻחָס (the wealthy and prominent man)",
+        "reason": "This is a narrative figure in the story (line 1), not a concept with bechina-language in the teaching. The man is an instance of the תורה/גדולה tension but is never declared to BE a bechina of any concept. He illustrates the teaching; he is not a conceptual node within it. Excluded."
+      },
+      {
+        "concept": "מִתְנַגֵּד (opponent of Chasidus)",
+        "reason": "Narrative descriptor in line 1. Not a concept with bechina-language. The teaching does not develop the concept of religious opposition as a bechina of anything. Excluded."
+      },
+      {
+        "concept": "אִישׁ כָּשֵׁר יְרֵא שָׁמַיִם (a G-d-fearing upright person)",
+        "reason": "Narrative outcome in line 1 describing what the man became. Not declared a bechina of anything in the teaching. The transformation from opponent to G-d-fearer is the story's axis but is not given bechina-language treatment. Excluded."
+      },
+      {
+        "concept": "יֵרֵד מִנְּכָסָיו (descent from his wealth)",
+        "reason": "Narrative fact in line 1. This is the eitza consequence of the man's Torah-attachment, illustrating the Package 1 tension. It is not declared a bechina of any concept in the teaching. The descending wealth IS the Package 1 tension playing out, but that is a causal observation, not a bechina equation. Excluded."
+      },
+      {
+        "concept": "מֹשֶׁה רַבֵּנוּ (Moses our Teacher)",
+        "reason": "Cited in line 3 with 'כְּגוֹן' (such as / for example). This is the illustrative formula — Moses is an example of someone who achieved tachlit ha-anavah, not declared to BE a bechina of ayin or of tachlit ha-anavah. The test: does the text say 'Moses IS a bechina of ayin'? No — it says 'it IS POSSIBLE for Torah and greatness to coexist, SUCH AS in the case of Moses.' This is an evidentiary citation, not a bechina-equation. Excluded."
+      },
+      {
+        "concept": "רַבֵּנוּ הַקָּדוֹשׁ (Rabbi Yehudah HaNassi)",
+        "reason": "Same reasoning as Moses above — cited with 'כְּגוֹן' as a second historical exemplar. Not a bechina-node. Excluded."
+      },
+      {
+        "concept": "אֵינוֹ עוֹמֵד בְּשׁוּם צַד (not positioned in any direction)",
+        "reason": "This is a descriptive attribute of the ayin-state in line 3 — it defines what it means to be ayin: one has no directional position. However, it is not declared a separate bechina of anything; it is the explanatory consequence of being ayin (אֲזַי אֵינוֹ עוֹמֵד — 'therefore he has no position'). This is causal explanatory language ('therefore'), not a bechina equation. The concept is fully captured by the node 'אין ממש' within Package 2. Excluded as redundant and as an eitza-described quality rather than a bechina-declared identity."
+      },
+      {
+        "concept": "תּוֹרָה וּגְדֻלָּה בְּמָקוֹם אֶחָד (Torah and greatness in one place)",
+        "reason": "This phrase in line 3 describes the RESULT of being in the ayin-state (the resolution of the Package 1 tension), not a separate conceptual entity with its own bechina identity. It is the promised outcome of the eitza arrow from Package 2 to Package 1. The Maggid says 'עַל כֵּן אֶפְשָׁר שֶׁיִּהְיֶה תּוֹרָה וּגְדֻלָּה בְּמָקוֹם אֶחָד' — 'therefore it is possible that Torah and greatness will be in one place' — this is eitza language ('therefore it is possible'), not a bechina declaration. Excluded."
+      }
+    ]
+  }
+}

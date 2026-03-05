@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "source": "Torah #69",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_69_packages.json, all reference===69 edges from torahData.js, and the full source text torah_69.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא) or equivalent identity declarations were flagged. Eitza/causal statements and proof-text citations were excluded."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "מָמוֹן וְעֲנָפִים",
+      "node_id": "אשה",
+      "node_text": "הָאִשָּׁה",
+      "polarity": "neutral",
+      "reason": "Source text line 8 states explicitly: 'כִּי הָאִשָּׁה הִיא עִקַּר בְּחִינַת הָאִילָן.' This is a direct bechina declaration: the wife (אשה) IS the bechina of the tree (אילן). The dataset has 'אור נפשה = עקר האילן' (edge 2441) but does not record 'אשה = אילן' as a direct node pair. The אשה-as-tree bechina is the primary statement from which the אור נפשה = tree-root bechina is derived; it is a gap that belongs in Package 1 (the wealth/tree cluster) because the אשה-tree identification IS the foundational metaphor of the entire Torah. The אשה's soul-light = tree root, her wealth = branches, her children = fruit.",
+      "source_quote": "כִּי הָאִשָּׁה הִיא עִקַּר בְּחִינַת הָאִילָן, וְהָעֲשִׁירוּת הֵם הָעֲנָפִים שֶׁל הָאִילָן, וְהַבָּנִים הֵם הַפֵּרוֹת הַגְּדֵלִים בָּעֲנָפִים הָאֵלּוּ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "בָּנִים וְתוֹרָה",
+      "node_id": "מדי",
+      "node_text": "לְמָדַי",
+      "polarity": "good",
+      "reason": "Source text line 17 contains an explicit bechina: 'לְמָדַי, בְּחִינַת לִמּוּדֵי ה' הַנַּ\"ל.' The Rebbe interprets the Gemara's phrase 'yolichennu acharav afilu l'Madai' (Bava Kama 103) — he must follow the victim even to Media — as a concealed reference to 'limudei Hashem' (Torah-students/children). 'מָדַי' = 'לִמּוּדֵי ה'' through wordplay and deep interpretation. This is an explicit bechina-equivalence. It belongs in Package 3 (בנים/למודי ה') because 'למודי ה'' is already that package's node and 'מדי' is its decoded form in Gemara language.",
+      "source_quote": "לְמָדַי, בְּחִינַת לִמּוּדֵי ה', הַיְנוּ הַבָּנִים. שֶׁצָּרִיךְ לְהַחֲזִיר לוֹ אֲפִלּוּ הַבָּנִים שֶׁגָּזַל מִמֶּנּוּ עַל יְדֵי שֶׁגָּזַל אֶת מָמוֹנוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "שְׂעָרוֹת וּמֹחִין",
+      "node_id": "שונאי חנם",
+      "node_text": "שׂוֹנְאֵי חִנָּם",
+      "polarity": "evil",
+      "reason": "Source text line 44 states: 'שׂוֹנְאֵי חִנָּם בָּאִים מִבְּחִינַת שְׂעָרוֹת, מוֹתְרֵי מֹחִין.' This is an explicit bechina-identity: causeless haters (שׂוֹנְאֵי חִנָּם) ARE a bechina of שערות (hairs / motarei mochin). The existing edges 3029 (מותרות = שערות) and 3030 (מותרי מחין = שערות) capture the overflow/hair identity but do not include שׂוֹנְאֵי חִנָּם as a node. The Rebbe's statement 'רַבּוּ מִשַּׂעֲרוֹת רֹאשִׁי שׂוֹנְאַי חִנָּם' (Psalms 69:5) interpreted as bechinot means: baseless enemies are a manifestation of brain-overflow hairs. This is the evil expression of the שערות cluster and belongs in Package 4. Polarity of this specific node is evil (שׂוֹנְאֵי חִנָּם are the negative manifestation).",
+      "source_quote": "שׂוֹנְאֵי חִנָּם בָּאִים מִבְּחִינַת שְׂעָרוֹת, מוֹתְרֵי מֹחִין כַּנַּ\"ל, בְּחִינוֹת (תהילים ס\"ט:ה'): רַבּוּ מִשַּׂעֲרוֹת רֹאשִׁי שׂוֹנְאַי חִנָּם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "שְׂעָרוֹת וּמֹחִין",
+      "node_id": "אליהו",
+      "node_text": "אֵלִיָּהוּ",
+      "polarity": "good",
+      "reason": "Source text line 47 states: 'כִּי הוּא בַּעַל שֵׂעָר (מלכים ב א), שֶׁמְּמֻנֶּה עַל זֶה, עַל בְּחִינַת שְׂעָרוֹת, לַעֲשׂוֹת בָּהֶם דִּין.' Eliyahu (אליהו) is a baal se'ar — a hairy man — and is therefore the angel appointed over the שערות domain to execute judgment on it. This is an explicit bechina: Eliyahu = baal se'ar = the one appointed over שערות. The existing שערות cluster (Package 4) does not contain Eliyahu. He is the cosmic authority-figure of the שערות domain, belonging in Package 4 as its governing/judge node. Polarity good: Eliyahu executes judgment (din) for the sake of holiness.",
+      "source_quote": "כִּי כְּשֶׁנּוֹשֵׂא אִשָּׁה שֶׁאֵינָהּ הוֹגֶנֶת לוֹ... הוּא בְּחִינַת מוֹתָרוֹת, בְּחִינַת שְׂעָרוֹת כַּנַּ\"ל, עַל כֵּן אֵלִיָּהוּ מְמֻנֶּה עַל זֶה לְעָנְשׁוֹ, כִּי הוּא בַּעַל שֵׂעָר, שֶׁמְּמֻנֶּה עַל בְּחִינַת שְׂעָרוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "שְׂעָרוֹת וּמֹחִין",
+      "node_id": "כופתו",
+      "node_text": "כּוֹפְתוֹ",
+      "polarity": "good",
+      "reason": "Source text line 48 states: 'כּוֹפְתוֹ – בְּחִינַת מֹחִין, בְּחִינַת תְּפִלִּין.' The word 'kofatto' (he binds him — Eliyahu binds the wrongdoer) is explicitly called a bechina of מחין and תפלין. The head-binding (tefillin) = the brain-binding (kofatto). Edge 3198 already records מחין ↔ תפלין but 'כּוֹפְתוֹ' as the act-of-binding = its own bechina node is not in the dataset. Since the source text says 'כּוֹפְתוֹ – בְּחִינַת מֹחִין,' this is a missing bechina equivalence: the act of Eliyahu's binding = the tefillin-binding of the brain. Belongs in Package 4 alongside מחין/תפלין.",
+      "source_quote": "כּוֹפְתוֹ – בְּחִינַת מֹחִין, בְּחִינַת תְּפִלִּין, בְּחִינַת (שִׁיר הַשִּׁירִים ז): מֶלֶךְ אָסוּר בָּרְהָטִים, בִּרְהִיטֵי מֹחִין, שֶׁהֵם בְּחִינַת תְּפִלִּין",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "מָמוֹן וְעֲנָפִים",
+      "node_id": "קידושין",
+      "node_text": "קִדּוּשִׁין",
+      "polarity": "good",
+      "reason": "Source text line 20-21 states: 'וְזֶה בְּחִינַת קִדּוּשִׁין' and explains the mechanism: through the כֶּסֶף (money) given at kiddushin, the woman's soul-light is completed and she is extracted from among the klipot. The word 'קִדּוּשִׁין' is explicitly declared a bechina — it IS the mechanism of completing the nefesh's light. The kiddushin-money = the ממון that completes the wife's soul. This belongs in Package 1 (ממון/wealth cluster) because kiddushin is the paradigmatic case of ממון-completing-the-nefesh: 'הַכֶּסֶף הוּא שְׁלֵמוּת אוֹר הָאִשָּׁה.' No edge for קידושין appears in the reference-69 dataset.",
+      "source_quote": "וְזֶה בְּחִינַת קִדּוּשִׁין בְּכֶסֶף, כִּי עַל־יְדֵי שֶׁנִּשְׁלָם אוֹרָהּ עַל יְדֵי הַכֶּסֶף, וְאֵין בָּהּ חִסָּרוֹן, עַל־יְדֵי־זֶה הִיא מִתְקַדֶּשֶׁת מִטֻּמְאָתָהּ, וְיוֹצְאָה מִבֵּין הַקְּלִפּוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_69_bechina_edges": 21,
+    "total_reference_69_eitza_edges": 6,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["ממון", "התנוצצות והתפשטות אורה", "ענפים", "ענפים של האילן", "חומה", "שמאל", "אור נפשה", "עקר האילן", "צדקה", "שלח"],
+      "package_2": ["נקבה", "נפש", "כלל המדרגה התחתונה", "רגלים", "בת זוגו", "כלל נפש רוח ונשמה שלה", "נפש נגדו"],
+      "package_3": ["בנים", "הפרות הגדלים בענפים האלו", "למודי ה'", "תורה", "ימין"],
+      "package_4": ["שערות", "מותרי מחין", "מותרות", "רצועה", "מחין", "תפלין", "שערות של החכם", "שער בימין"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["אשה (= אילן)", "מדי (= למודי ה')", "שונאי חנם (= שערות)", "אליהו (= בעל שיעור/שערות)", "כופתו (= מחין/תפלין)", "קידושין"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "גזלן כרוצח נפשות",
+        "reason": "Source text line 18 says 'כִּי בְּרוּחָנִיּוּת הַנֶּפֶשׁ מַרְגֶּשֶׁת... זֶה הַגַּזְלָן שֶׁהוּא כְּמוֹ רוֹצֵחַ נְפָשׁוֹת מַמָּשׁ.' This uses comparison language ('כְּמוֹ' = like/as) rather than explicit bechina-equivalence. The statement is that the robber is LIKE a murderer of souls, not a bechina declaration that the robber = murderer. Excluded."
+      },
+      {
+        "concept": "ממון שאין בו אור / עפרות זהב",
+        "reason": "Source text lines 19 uses 'עַפְרוֹת זָהָב' (Job 28) and 'אֵין כֶּסֶף נֶחֱשָׁב' (2 Chronicles 9:20) as proof-texts that stolen money has no light in it. These are scriptural citations used as analogies/evidence, not standalone bechina-declarations for new concept nodes."
+      },
+      {
+        "concept": "ספינות חורי / אילנות של אונגרין",
+        "reason": "Source text line 19 mentions trees in Hungary ('יֵשׁ אִילָנוֹת בִּמְדִינַת אוּנְגַרִין שֶׁכְּשֶׁאָדָם בָּא לִטְּלָם, הֵם מַמְשִׁיכִין וּמַקְטִינִים עַצְמָן') as a worldly analogy (dugma) for the nefesh contracting its light to prevent the robber from taking it. This is illustrative comparison (כְּמוֹ שֶׁיֵּשׁ דֻּגְמָתוֹ), not bechina language."
+      },
+      {
+        "concept": "כתובה",
+        "reason": "The ketubah is mentioned in lines 22-23 as the husband's commitment to support the wife financially. No explicit bechina declaration: 'כִּי הוּא בְּחִינַת הֲנָקַת הָאִילָן' is said about the husband's business activities, not about the ketubah as a concept-node in its own right."
+      },
+      {
+        "concept": "ירושה",
+        "reason": "Lines 23-25 discuss inheritance (ירושה) at length but use causal/eitza language throughout ('עַל כֵּן כְּשֶׁנִּפְטָר... הֵם מְקַבְּלִים וְיוֹרְשִׁים'). No explicit bechina-equivalence is stated for ירושה as a concept."
+      },
+      {
+        "concept": "עכירת המח / בלבול המח",
+        "reason": "Lines 40-43 describe mental cloudiness (עֲכִירַת הַמֹּחַ) as the source of hatred. While this is stated as the root cause, it is framed as an eitza chain ('כִּי אַהֲבָה תְּלוּיָה בְּדַעַת וָשֵׂכֶל... כִּי עֲכִירַת הַמֹּחַ מָשָׁם יוֹנְקִים הַשּׂוֹנְאִים'), not as bechina-equivalence. The concept of עכירת מח was not declared as a bechina of another concept; it is a cause in a causal chain."
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source": "Torah #126 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference === 126 AND type === 'bechina'. Total bechina edges found in dataset: 0. The dataset contains no entries for Torah #126. Accordingly, there are no graph-derived connected components to process. All analysis is driven entirely by the source text (torah_126.txt). The source text is 4 lines and constitutes one of the shortest teachings in the corpus. Its single explicit bechina statement (line 2: 'וְהוּא בְּחִינַת שָׁבַת וַיִּנָּפַשׁ') equates the phenomenon of the Chavrayya's grief over Rabbi Shimon's impending departure with the phenomenon of Shabbat-departure grief — the loss of the Nefesh Yeteirah. A single package is proposed, built entirely from the gap analysis (torah_126_additions.json), since the dataset has no nodes at all for this Torah."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 126,
+      "label": "נֶפֶשׁ יְתֵרָה וַהֲסְתַּלְּקוּת הַצַּדִּיק",
+      "label_en": "The Extra Soul and the Departure of the Tzaddik",
+      "polarity": "neutral",
+      "reason": "The entire teaching rests on a single structural bechina: the grief of the Chavrayya upon Rabbi Shimon bar Yochai's impending departure IS a bechina of Shabbat-departure grief — specifically, the grief over losing the Nefesh Yeteirah (extra Shabbat soul) at Motzaei Shabbat. The Talmud (Beitzah 16) derives from 'שָׁבַת וַיִּנָּפַשׁ' (Exodus 31:17) that 'כֵּיוָן שֶׁשָּׁבַת וַי אָבְדָה נֶפֶשׁ' — when Shabbat rests/ceases, 'vay' (woe) — the soul departs. The Rebbe's teaching draws the structural equivalence: the Chavrayya's relationship with Rabbi Shimon parallels Israel's relationship with the Nefesh Yeteirah on Shabbat. Both involve an elevated spiritual state of great pleasure and delight (תַּעֲנוּג / שַׁעֲשׁוּעִים) given through a sacred channel (Shabbat / the Tzaddik), and both produce intense anticipatory grief (גַּעֲגּוּעִים / צַעַר הַהִסְתַּלְּקוּת) upon the perception that this elevated state will end. The polarity is 'neutral' rather than 'good' or 'evil' because the teaching is a structural observation — it identifies a universal phenomenology of elevated spiritual experience and the longing it generates, not a prescription for or against anything. The Tzaddik himself (Rabbi Shimon bar Yochai), the Nefesh Yeteirah, Shabbat, and the quality of spiritual delight (תַּעֲנוּג) all belong to the domain of holiness, but the teaching's argument is structural/descriptive rather than normative/prescriptive. No evil mirror is present in this Torah — it is a short, purely structural analogy without any opposing force or negative polarity.",
+      "dominant_node": "נפש יתרה",
+      "nodes": [
+        "נפש יתרה",
+        "הסתלקות הצדיק",
+        "שבת וינפש",
+        "געגועים על אבדת הנפש",
+        "תענוג מהצדיק"
+      ],
+      "node_degrees": {
+        "נפש יתרה": 2,
+        "שבת וינפש": 2,
+        "הסתלקות הצדיק": 1,
+        "געגועים על אבדת הנפש": 1,
+        "תענוג מהצדיק": 1
+      },
+      "merge_notes": [
+        "There are no dataset-derived components to merge. This package is constructed entirely from the gap analysis of the source text.",
+        "All nodes in this package share the same essential nature: they are aspects of the structural phenomenon of 'elevated spiritual intimacy generating anticipatory grief upon its perceived loss.' The Nefesh Yeteirah, the Tzaddik's teachings, Shabbat-departure, and longing/yearning are all aspects of the same underlying reality that the Rebbe is equating through his bechina statement.",
+        "No merging decision needed — only one package exists for this Torah."
+      ],
+      "source_edges": [],
+      "note_on_source_edges": "No bechina edges for reference 126 exist in torahData.js. The nodes and their relationships identified here are drawn from the gap analysis (torah_126_additions.json) and reflect the bechina statement in line 2 of the source text: 'וְהוּא בְּחִינַת שָׁבַת וַיִּנָּפַשׁ — כֵּיוָן שֶׁשָּׁבַת וַי אָבְדָה נֶפֶשׁ.' These nodes and edges should be added to torahData.js."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "note_on_dataset_status": "Torah #126 has zero entries in torahData.js. The single package proposed here is built entirely from the source text gap analysis. All five nodes proposed and the two bechina edges between them are new additions not currently in the dataset.",
+    "note_on_merges": "No merges possible — no dataset components exist. No merges needed — the source text produces a single coherent cluster.",
+    "note_on_good_evil_mirror": "Torah #126 does not have a good/evil mirror structure. The teaching is a pure structural analogy between two instances of the same phenomenon (elevated spiritual intimacy + anticipatory grief upon its loss). There is no evil counterforce or demonic opponent in this Torah. Its polarity structure is entirely within the domain of holiness and neutral structural observation."
+  }
+}

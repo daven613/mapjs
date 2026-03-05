@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "source": "Torah #148",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_148_packages.json, all reference===148 edges from torahData.js (none found), and the full source text torah_148.txt. Because the dataset contains zero bechina edges for reference 148, all concept-edges identified in torah_148_packages.json are new additions. The gap analysis therefore identifies: (1) all bechina-language pairs from the source text that should be added to the dataset; (2) additional concepts mentioned in bechina-language that were not included in the main package proposal; (3) concepts examined and excluded with reasons."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וְאֵין סוֹף",
+      "node_id": "ענוה",
+      "node_text": "עֲנָוָה",
+      "polarity": "good",
+      "reason": "The source text explicitly says 'נִמְצָא שֶׁעֲקֵב הָעֲנָוָה הִיא יִרְאָה' — the heel/outcome of humility IS fear. This is a classic bechina statement: two concepts declared to share the same essential nature. The verse 'עֵקֶב עֲנָוָה יִרְאַת ה'' is cited as proof that עֲנָוָה and יִרְאָה are parallel aspects of the same spiritual domain. A bechina edge ענוה ↔ יראה should be added to the dataset with reference 148.",
+      "source_quote": "עֵקֶב עֲנָוָה יִרְאַת ה' — נִמְצָא שֶׁעֲקֵב הָעֲנָוָה הִיא יִרְאָה",
+      "proposed_edge": {
+        "node1_id": "ענוה",
+        "node2_id": "יראה",
+        "type": "bechina",
+        "reference": 148,
+        "proof": "נִמְצָא שֶׁעֲקֵב הָעֲנָוָה הִיא יִרְאָה, שֶׁנֶּאֱמַר: עֵקֶב עֲנָוָה יִרְאַת ה'"
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וְאֵין סוֹף",
+      "node_id": "חכמה",
+      "node_text": "חָכְמָה",
+      "polarity": "good",
+      "reason": "The source text explicitly says 'כֵן רֵאשִׁית חָכְמָה הִיא גַּם־כֵּן יִרְאָה' — the beginning of wisdom IS also fear. This is a direct bechina declaration from the verse 'רֵאשִׁית חָכְמָה יִרְאַת ה''. Wisdom and fear are parallel aspects of the same divine reality. A bechina edge חכמה ↔ יראה should be added to the dataset with reference 148.",
+      "source_quote": "רֵאשִׁית חָכְמָה יִרְאַת ה' — כֵן רֵאשִׁית חָכְמָה הִיא גַּם־כֵּן יִרְאָה",
+      "proposed_edge": {
+        "node1_id": "חכמה",
+        "node2_id": "יראה",
+        "type": "bechina",
+        "reference": 148,
+        "proof": "כֵן רֵאשִׁית חָכְמָה הִיא גַּם־כֵּן יִרְאָה, שֶׁנֶּאֱמַר: רֵאשִׁית חָכְמָה יִרְאַת ה'"
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה וְאֵין סוֹף",
+      "node_id": "אין סוף",
+      "node_text": "אֵין סוֹף",
+      "polarity": "good",
+      "reason": "The source text twice uses the phrase 'לְמַעְלָה לְמַעְלָה עַד אֵין סוֹף' as the explicit structural endpoint of the yirah chain. The infinite ascent is the Torah's central metaphysical claim: fear contains fear to infinity. אֵין סוֹף here is not the Kabbalistic technical term for Godhead per se, but the qualitative descriptor of the infinite height of יִרְאָה — the teaching declares that יִרְאָה reaches up to אֵין סוֹף (the unlimited). A bechina edge יראה ↔ אין סוף — expressing that the nature of yirah is infinite — should be added. The bechina language is 'וְכֵן נִכְלָל יִרְאָה אַחַת בַּחֲבֶרְתָּהּ, לְמַעְלָה לְמַעְלָה עַד אֵין סוֹף', identifying the infinite recursive quality as the essential nature of יִרְאָה.",
+      "source_quote": "וְכֵן נִכְלָל יִרְאָה אַחַת בַּחֲבֶרְתָּהּ, לְמַעְלָה לְמַעְלָה עַד אֵין סוֹף",
+      "proposed_edge": {
+        "node1_id": "יראה",
+        "node2_id": "אין סוף",
+        "type": "bechina",
+        "reference": 148,
+        "proof": "מִדַּת הַיִּרְאָה בְּעַצְמָהּ הִיא יְרֵאָה מֵהַשֵּׁם יִתְבָּרַךְ, וְכֵן נִכְלָל יִרְאָה אַחַת בַּחֲבֶרְתָּהּ, לְמַעְלָה לְמַעְלָה עַד אֵין סוֹף"
+      },
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_148_edges_in_dataset": 0,
+    "total_reference_148_bechina_edges_in_dataset": 0,
+    "total_reference_148_eitza_edges_in_dataset": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["יראה", "ענוה", "חכמה", "אין סוף"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      {
+        "concept": "עֲנָוָה",
+        "proposed_package": 1,
+        "source_quote": "עֵקֶב עֲנָוָה יִרְאַת ה'",
+        "note": "New addition — no reference-148 edge exists in dataset."
+      },
+      {
+        "concept": "חָכְמָה",
+        "proposed_package": 1,
+        "source_quote": "רֵאשִׁית חָכְמָה יִרְאַת ה'",
+        "note": "New addition — no reference-148 edge exists in dataset. Note: חָכְמָה is already a node in many other Torahs (especially Torah #1 Package 1) but requires its own reference-148 edge for this Torah's package."
+      },
+      {
+        "concept": "אֵין סוֹף",
+        "proposed_package": 1,
+        "source_quote": "לְמַעְלָה לְמַעְלָה עַד אֵין סוֹף",
+        "note": "New addition for reference 148 — the infinite ascent is the Torah's core metaphysical claim about the nature of יִרְאָה."
+      }
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "עָקֵב (heel)",
+        "reason": "The word עָקֵב appears in the verse 'עֵקֶב עֲנָוָה יִרְאַת ה'' and is translated by the Rebbe as meaning 'outcome/heel of humility'. However, עָקֵב here is a grammatical connector in the verse, not a concept the Rebbe establishes as having its own bechina. The Rebbe says 'עֲקֵב הָעֲנָוָה הִיא יִרְאָה' — the heel-of-humility IS fear — using עָקֵב as a construct noun (smikhut). The bechina runs between עֲנָוָה and יִרְאָה, not עָקֵב as an independent concept. Excluded from the package."
+      },
+      {
+        "concept": "עֲטָרָה (crown)",
+        "reason": "The Midrash says 'עָשְׂתָה חָכְמָה עֲטָרָה עַל רֹאשָׁהּ' — wisdom made [fear] a crown on its head. The Rebbe cites this as part of the proof that fear reaches to infinity (fear serves as both a crown AND a heel, at different levels). However, עֲטָרָה is not declared a bechina of יִרְאָה by the Rebbe — it is the Midrash's description of the relationship between חָכְמָה and יִרְאָה (i.e., fear is the crown that wisdom wears). This is more of a metaphor for their structural relationship than an independent bechina-node. The bechina structure is חָכְמָה ↔ יִרְאָה; עֲטָרָה is the descriptive metaphor for how they relate. Not added as a separate node."
+      },
+      {
+        "concept": "סִלּוּתָא (footstool/despised thing)",
+        "reason": "The Midrash says 'עָשְׂתָה עֲנָוָה עָקֵב לְסִלּוּתָא' — humility made fear a heel for a footstool. סִלּוּתָא (Aramaic: something despised/stepped on) describes how humility appears to treat fear as its lowest rung. This is the contrast term in the Midrash's rhetoric (footstool vs. crown), not a bechina-concept the Rebbe equates with anything. It is descriptive context, not a bechina node. Excluded."
+      },
+      {
+        "concept": "מִדַּת הַיִּרְאָה (the attribute of fear)",
+        "reason": "The phrase 'מִדַּת הַיִּרְאָה' is the subject of the opening sentence — it is the same as יִרְאָה, used as a formal noun (the attribute/quality of fear). The Rebbe says 'מִדַּת הַיִּרְאָה בְּעַצְמָהּ הִיא יְרֵאָה' — the very attribute of fear is itself afraid. This is the self-referential claim: יִרְאָה = מִדַּת הַיִּרְאָה. Rather than a separate bechina node, מִדַּת הַיִּרְאָה is a circumlocution for יִרְאָה itself. It would be an alias/variant of יִרְאָה, not a distinct concept. The bechina edge here is יִרְאָה ↔ יִרְאָה (reflexive — the attribute IS afraid), which is better expressed structurally as the self-recursive property of the node יִרְאָה. Not added as a separate concept node."
+      },
+      {
+        "concept": "יִרְאָה לְמַעְלָה מִיִּרְאָה (fear above fear)",
+        "reason": "The phrase 'יֵשׁ יִרְאָה לְמַעְלָה מִיִּרְאָה' describes the infinite regress structure — it is a conclusion statement, not a named bechina concept. The concept is captured by the יִרְאָה ↔ אֵין סוֹף edge. Not a separate node."
+      }
+    ],
+    "note_on_evil_mirror": "Torah #148 contains no evil counterpart, negative domain, or opposing concept cluster. The teaching is a pure philosophical observation about the infinite recursive nature of יִרְאָה — the 'good' pole only. The Midrash contrasted humility (making fear a footstool) with wisdom (making fear a crown), but both represent positive virtues and the contrast is not a good/evil polarity. No evil-mirror gap analysis is needed.",
+    "note_on_dataset_status": "This Torah is entirely absent from the dataset — zero edges with reference=148 exist in torahData.js. All three proposed bechina edges (ענוה↔יראה, חכמה↔יראה, יראה↔אין סוף) are new and need to be added to the dataset before Torah #148 can be traversed in the graph."
+  }
+}

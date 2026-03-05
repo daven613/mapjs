@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "source": "Torah #89 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "concept": "שכינה",
+      "suggested_package": null,
+      "package_label": null,
+      "polarity": "good",
+      "source_quote": "הַחִסָּרוֹן הוּא בְּהַשְּׁכִינָה, שֶׁהוּא בְּחִינַת אֱלֹקִים",
+      "justification": "The source text of Torah #89 opens with an explicit bechina statement: 'the deficiency is in the Shekhinah, which is a bechina of Elohim.' This is the only bechina equivalence in the entire Torah. The Shekhinah is directly identified as 'bechina of Elohim' — they are two expressions of the same divine presence that suffers the human deficiency. This bechina pair (שכינה / אלקים) does not appear in the dataset for reference 89 (the single edge in the dataset for Torah #89 is type eitza, not bechina). If added, שכינה and אלקים would form a two-node bechina pair, representing the good cluster of 'divine presence that shares in human lack.' Note: because Torah #89 has zero bechina edges in the dataset, no package currently exists for this Torah. Adding this pair would constitute the seed of a new Package 1 — a good package centered on the identity of the Shekhinah as the dimension of divinity that participates in human deficiency.",
+      "edge_type": "bechina",
+      "node1": "שכינה",
+      "node2": "אלקים"
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges_in_dataset": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "שכינה — explicitly identified as 'בְּחִינַת אֱלֹקִים' in the opening line of the Torah; this is the only bechina statement in the text; absent from the dataset for Torah #89",
+      "אלקים — the divine name equated with שכינה via explicit bechina language; absent from dataset for Torah #89",
+      "חסרון — the deficiency that triggers the entire teaching; described as residing in the Shekhinah; appears in the eitza edge (node1) as part of a long compound phrase but not as a standalone bechina node",
+      "כבוד והדר — honor and splendor from Psalm 8:6, cited in the verse that frames the Torah; the verse is used as proof but no bechina is stated between כבוד/הדר and any other concept",
+      "מחין חדשים — new/renewed intellect/consciousness; appears in the eitza edge (node2) as 'נתחדשו המחין שלו'; the Torah says this is the result (eitza) of coming to simchah, not a bechina equivalence"
+    ],
+    "all_dataset_nodes_assigned": true,
+    "eitza_only_coverage": "Torah #89 contains only a single edge (id: 2983, type: eitza) in the entire dataset. That edge records the causal flow: [knowing that the King shares His deficiency with you, and that this is a great honor] → [great joy → renewed mochin]. This is a pure eitza relationship and correctly classified as such. The bechina that underlies the teaching — that שכינה IS (is a bechina of) אלקים — is stated in the opening clause of the text but was not captured as a bechina edge in the dataset.",
+    "torah_summary": "Torah #89 is built on a single insight: every human deficiency is actually a deficiency in the Shekhinah (= bechina of Elohim). Knowing this, a person should feel honored — the King Himself is sharing His deficiency. That honor produces great joy, which renews the mochin. The structure is: one bechina pair (שכינה/אלקים) + one eitza chain (honor → joy → new mochin). The Torah is extremely compact — one verse, one principle, one conclusion."
+  }
+}

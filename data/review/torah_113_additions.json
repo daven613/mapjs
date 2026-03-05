@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "source": "Torah #113 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_113_packages.json, all reference===113 edges from torahData.js (none found), and the full source text torah_113.txt. Searched for every instance of explicit bechina language: בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא (used as conceptual equivalence), כְּלוֹמַר as definitional equation. Only concepts with genuine bechina declarations (not narrative explanations or parable elements) were considered."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_113_edges": 0,
+    "total_reference_113_bechina_edges": 0,
+    "total_reference_113_eitza_edges": 0,
+    "concepts_in_source_text_not_in_dataset": [],
+    "bechina_language_scan": {
+      "result": "ZERO instances of explicit bechina language found in torah_113.txt",
+      "detail": "A complete line-by-line scan of the 8-line source text found no use of: בְּחִינַת, הַיְנוּ בְּחִינַת, הוּא בְּחִינַת, בִּבְחִינַת, נִקְרָא (used as conceptual equivalence), or הַיְנוּ (as a definitional equation). The word כְּלוֹמַר appears in lines 5 and 8, but in both cases it is used as a narrative gloss ('meaning: they ask his opinion') rather than as a bechina declaration establishing shared essential nature between two concepts."
+    },
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "מִדַּעְתּוֹ / שֶׁלֹּא מִדַּעְתּוֹ (with his knowledge / without his knowledge)",
+        "reason": "Line 5 uses כְּלוֹמַר to explain the Mishnah's phrase: 'with his knowledge — meaning they ask his opinion; without his knowledge — he does not know the judgment is about him.' This is a narrative interpretation of a Mishnaic idiom, not a bechina equation establishing shared essential nature between two concepts. Not a bechina edge."
+      },
+      {
+        "concept": "גְּזַר דִּין (heavenly decree)",
+        "reason": "The term appears as the subject of the teaching's principle, but no bechina equation is made with it. It is the framing concept, not equated to anything via בְּחִינַת."
+      },
+      {
+        "concept": "דַּעְתּוֹ (his knowledge/opinion)",
+        "reason": "Used narratively — 'they ask his opinion' — not established as a bechina of any other concept."
+      },
+      {
+        "concept": "סִפּוּרֵי דְּבָרִים (stories/narratives)",
+        "reason": "Line 6 says 'there are lofty matters in the matter of stories (בְּעִנְיַן סִפּוּרֵי דְּבָרִים).' This is not a bechina statement — it is a declaration that stories carry hidden depth, not an equation between two concept-terms."
+      },
+      {
+        "concept": "מַעֲשֵׂה הָאוֹרֵחַ (parable of the guest)",
+        "reason": "Cited as the proof-story for the principle but not equated as a bechina of anything. It is a narrative example."
+      },
+      {
+        "concept": "יִסּוּרִין (afflictions/suffering)",
+        "reason": "Appears in the Berakhot 5a proof-text in lines 7-8. The passage ('Are afflictions dear to you? No... Give me your hand') is cited as a narrative proof that one can decline afflictions by giving explicit non-consent. No bechina equation is made — יסורין is not declared to be a bechina of any other concept in this Torah."
+      }
+    ],
+    "structural_observations": [
+      "Torah #113 is one of the very short Torahs in Likutay Moharan Vol. 1 — 8 lines only.",
+      "Its entire structure is narrative and causal (eitza): heavenly assembly → deceptive questioning → person's verdict → decree sealed. This is a pure cause-and-effect chain, not a web of bechina equivalences.",
+      "The Baal Shem Tov principle is transmitted as a teaching about the mechanics of Divine judgment, with story (David/Nathan) and Talmud (Berakhot 5a) as illustrations.",
+      "The practical guidance in line 6 (שֶׁיְּשַׁנֶּה וִישַׁלֵּשׁ — examine and re-examine before rendering a verdict) is the Torah's eitza-conclusion, not a bechina cluster.",
+      "This Torah would require a separate eitza-graph analysis to fully map its conceptual structure, but that falls outside the scope of package analysis (which is bechina-only per the framework).",
+      "No data entry work is needed for this Torah's bechina layer — there is genuinely nothing to add. The Torah simply does not operate in the bechina register."
+    ]
+  }
+}

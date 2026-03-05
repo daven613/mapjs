@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "source": "Torah #63",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===63 AND type==='bechina'. Seven edges, yielding four raw connected components. Component D (ששת ימים / ששה טפחים) merged into Component A (ברית cluster) because the source text explicitly and repeatedly states these are the same cosmic structure — the six days of creation ARE the six tepachim contained in the brit (lines 7–8 of source text). This leaves three final packages. Component B (2-node evil pair) stands as its own package — it is the sole evil cluster and has no larger evil component to absorb into."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 63,
+      "label": "בְּרִית וְשִׁשָּׁה טְפָחִים",
+      "label_en": "The Covenant and the Six Handbreadths",
+      "polarity": "good",
+      "reason": "This is the largest and most central cluster in Torah #63. The brit (covenant/circumcision) is the dominant node — the Rebbe opens with the declaration that ברית means 'ammah' (cubit = six tepachim) and that the brit contains all six. Every other node in this cluster is simply another name or face of the same essential reality: the cosmic six-dimensional structure hidden within the brit. לֶחֶם הַפָּנִים (showbread) is called a bechina of brit because it is arranged on Shabbat ('brit olam' — Lev 24) and its frame is one tefach wide (Exod 25). צַדִּיק is a bechina of brit because 'Tzaddik yesod olam' (Prov 10:25) — the righteous person IS the foundation/covenant of the world; he contains all six tepachim in his three pairs of revelation/concealment. אַמָּה בַּת שִׁשָּׁה טְפָחִים is the Aramaic-Talmudic definition of the brit itself (Shabbat 108b). And הַשֵּׁשֶׁת יָמִים / הַשִּׁשָּׁה טְפָחִים are explicitly equated: the six days of creation ARE the six handbreadths, all resting in the Shabbat (which is the brit). All of these concepts share one essential nature: the cosmic sixfold structure that is the brit.",
+      "dominant_node": "ברית",
+      "nodes": [
+        "ברית",
+        "אמה בת ששה טפחים",
+        "לחם הפנים",
+        "צדיק",
+        "ששת ימים",
+        "ששה טפחים"
+      ],
+      "node_degrees": {
+        "ברית": 3,
+        "אמה בת ששה טפחים": 1,
+        "לחם הפנים": 1,
+        "צדיק": 1,
+        "ששת ימים": 1,
+        "ששה טפחים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["ששת ימים", "ששה טפחים"],
+          "from_component": "D",
+          "reason": "Component D (ששת ימים ↔ ששה טפחים, edge id 3047) is a direct extension of Component A's brit-domain. The source text (lines 7–8) explicitly states: 'כָּל הַשִּׁשָּׁה טְפָחִים הַנַּ\"ל הֵם בְּחִינַת שֵׁשֶׁת יָמִים... הִנִּיחַ כֻּלָּם בַּיּוֹם הַשְּׁבִיעִי, שֶׁהוּא שַׁבָּת, שֶׁהוּא בְּחִינַת בְּרִית'. The six days and six tepachim are different expressions of exactly the same cosmic structure contained in the brit. They are bechina-equivalents of ברית and belong in the same package. The dominant node (ברית) already has an edge directly to ששה טפחים via the אמה → six tepachim → brit chain, and the explicit textual equation 'ששה טפחים = ששת ימים = שבת = ברית' makes this a single thematic family."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 63,
+      "label": "חֲכָמִים לְהָרַע וְהַנָּחָשׁ",
+      "label_en": "Those Wise to Do Evil and the Serpent",
+      "polarity": "evil",
+      "reason": "The philosophizing heretics (מְחַקְּרֵי פִילוֹסוֹפְיָא וְאֶפִּיקוֹרְסוּת) are explicitly stated to be a bechina of the Nachash — the serpent of Genesis 3:1 ('והנחש היה ערום מכל חיות השדה'). These two nodes share the same essential nature: cunning intellect deployed for evil. The nachash here is not a metaphor for a minor evil — it is the defining figure of heretical wisdom, the entity that flies through the air (spreads) via evil speech, the entity that cannot be defeated through argumentation but only through holy speech. This is the evil mirror of Package 3 (the righteous sage/ant): just as the ant-in-the-serpent represents the good sage trapped by heretical pressure, the serpent-as-evil-sage represents the source of that pressure. Polarity is evil: these concepts belong entirely to the domain of the negative, the anti-Torah force in this teaching.",
+      "dominant_node": "הנחש",
+      "nodes": [
+        "חכמים להרע",
+        "הנחש"
+      ],
+      "node_degrees": {
+        "חכמים להרע": 1,
+        "הנחש": 1
+      }
+    },
+    {
+      "id": 3,
+      "torah_ref": 63,
+      "label": "חֲכַם הַדּוֹר וְהַנְּמָלָה",
+      "label_en": "The Sage of the Generation and the Ant",
+      "polarity": "good",
+      "reason": "The three nodes in this cluster — הַנְּמָלָה הַמֻּנָּח בְּתוֹךְ פִּי הַנָּחָשׁ, חֲכַם הַדּוֹר, and נְמָלָה — all describe the same essential identity: the righteous sage who is beleaguered by heretical wisdom. The source text makes the bechinas explicit: 'הַנְּמָלָה הַמֻּנָּח בְּתוֹךְ פִּי הַנָּחָשׁ, הוּא בְחִינוֹת חֲכַם הַדּוֹר' (line 29) and 'הֶחָכָם הוּא בְחִינַת נְמָלָה' (line 33, citing Prov 6:6 'לֵךְ אֶל נְמָלָה עָצֵל — וַחֲכָם'). The dominant node is חֲכַם הַדּוֹר with degree 2, connecting both to the ant-in-the-serpent's-mouth image (the metaphor of his trapped suffering) and to the plain נמלה image (his positive role as teacher of God's ways to the people). This package is the good mirror of Package 2 (the serpent/evil sages): the ant inside the serpent's mouth is the righteous sage who endures צַעַר גָּדוֹל and מִלְחָמָה גְּדוֹלָה from the heretics' probing, but is ultimately the one who teaches דַּעַת וְדַרְכֵי ה' to the people.",
+      "dominant_node": "חכם הדור",
+      "nodes": [
+        "הנמלה המנח בתוך פי הנחש",
+        "חכם הדור",
+        "נמלה"
+      ],
+      "node_degrees": {
+        "חכם הדור": 2,
+        "הנמלה המנח בתוך פי הנחש": 1,
+        "נמלה": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 7,
+    "total_nodes": 11,
+    "total_packages": 3,
+    "raw_connected_components": 4,
+    "components_merged_into_packages": 3,
+    "note_on_merges": "4 raw components: (A) 4 nodes — ברית/אמה/לחם הפנים/צדיק [Pkg 1 core], (B) 2 nodes — חכמים להרע/הנחש [Pkg 2 — kept standalone as sole evil package], (C) 3 nodes — הנמלה/חכם הדור/נמלה [Pkg 3], (D) 2 nodes — ששת ימים/ששה טפחים [merged into Pkg 1 because text explicitly equates: ששה טפחים = ששת ימים = שבת = ברית, making this an extension of the brit-domain, not a separate thematic family]."
+  }
+}

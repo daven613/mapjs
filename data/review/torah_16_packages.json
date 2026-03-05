@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "source": "Torah #16",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 16,
+      "label": "סוּרָא וְהָעַכּוּ\"ם",
+      "label_en": "Sura and the Nations — The Side of Idolatry",
+      "polarity": "evil",
+      "reason": "These two nodes share the essential nature of the forces of deviation from God — the nations (עכו\"ם) in their aspect of idolatry and separation. The Rebbe explicitly states: 'סוּרָא זֶה בְּחִינַת עַכּוּ\"ם, עַל שֵׁם עֲבוֹדָה זָרָה, כְּמוֹ שֶׁכָּתוּב: סָרוּ מַהֵר מִן הַדֶּרֶךְ' — the place-name Sura IS the nations, named from the root סור (to deviate). Both express the same essential quality: the reality of idolatry as radical departure from the path. The context in Torah #16 makes this evil identification structurally important: the two rivers of Sura represent the two Messianic streams that will eventually draw the nations back — indicating that Sura/the nations are the very audience that must be redeemed. This is the only bechina edge present in the dataset for this Torah.",
+      "dominant_node": "עכו\"ם",
+      "nodes": [
+        "סורא",
+        "עכו\"ם"
+      ],
+      "node_degrees": {
+        "סורא": 1,
+        "עכו\"ם": 1
+      },
+      "merge_notes": [
+        "Raw component: {סורא, עכו\"ם} — 2 nodes, 1 edge (dataset id 2388).",
+        "No merges possible: this is the only bechina-connected component in the Torah #16 dataset. The teaching contains a rich structure of additional bechinas not yet in the dataset (see torah_16_additions.json and torah_16_new_packages.json). Until those are added, this 2-node evil package stands alone.",
+        "This package would naturally expand to include: עֵשָׂו וְיִשְׁמָעֵאל (the two nations explicitly listed as comprising the עכו\"ם of Sura), and תְּרֵין עֲנָנִין (the two clouds = Esav and Yishmael covering the Tzadik's eyes). Those additions are proposed in torah_16_additions.json."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_nodes": 2,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "dataset_coverage_note": "Torah #16 is severely under-represented in the dataset. The source text contains at least 9 additional bechina equations with explicit bechina-language (בְּחִינַת, הַיְנוּ, מְכֻנִּים, אִנּוּן). These are enumerated in torah_16_additions.json and would support 3 substantive packages if added."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "source": "Torah #71",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===71 AND type==='bechina'. Result: ZERO edges found in torahData.js for reference===71. Torah #71 is entirely absent from the dataset. The bechina graph has no nodes and no edges; therefore connected-component analysis produces an empty graph. Packages are constructed entirely from the source-text bechina-language scan (Step 7). Torah #71 is a two-paragraph aphorism (the shortest in Likutey Moharan) containing one substantive bechina domain, identified below. The single package captures all bechina-language concepts from the source text."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 71,
+      "label": "מְפֻרְסָם וְיִסּוּרִין בִּשְׁבִיל רַבִּים",
+      "label_en": "The Famous One and Suffering on Behalf of the Many",
+      "polarity": "good",
+      "reason": "Torah #71 teaches that public prominence (מְפֻרְסָם) carries an essential nature: the famous one becomes an aspect of Isaiah 53:12 — 'therefore I will divide him among the many' — and therefore must bear the quality of Isaiah 53:5 — 'by his stripes we are healed.' The famous tzaddik, the afflictions he suffers, the masses he heals, and the verse-formula of the Suffering Servant are all parallel expressions of one essential reality: public holiness requires absorbing the pain of others. The Rebbe says explicitly 'הוּא בִּבְחִינוֹת: לָכֵן אֲחַלֶּק לוֹ בָרַבִּים' — the famous person IS in the aspect of this verse, and 'עָלָיו נֶאֱמַר: וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ' — of him it is said, by his wounds we are healed. These are bechina-declarations (בְּחִינוֹת / נֶאֱמַר) linking the concept of public prominence to the entire Isaiah-53 theology of redemptive suffering. Paragraph 2 extends this to tzaddikim who voluntarily accept suffering to exchange the divine flow (שֶׁפַע), which is the same essential nature seen from a different angle: the tzaddik who absorbs communal suffering and thereby transforms the quality of the divine outpouring. All concepts belong to one unified domain — the structural reality of the tzaddik who bears the suffering of the many.",
+      "dominant_node": "מְפֻרְסָם",
+      "nodes": [
+        "מְפֻרְסָם",
+        "יִסּוּרִין בִּשְׁבִיל רַבִּים",
+        "\"לָכֵן אֲחַלֶּק לוֹ בָרַבִּים\"",
+        "\"וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ\"",
+        "מְקַבְּלִים יִסּוּרִים בִּשְׁבִיל יִשְׂרָאֵל",
+        "מַחֲלִיפִין הַשֶּׁפַע"
+      ],
+      "node_degrees": {
+        "מְפֻרְסָם": 2,
+        "יִסּוּרִין בִּשְׁבִיל רַבִּים": 2,
+        "\"לָכֵן אֲחַלֶּק לוֹ בָרַבִּים\"": 1,
+        "\"וּבַחֲבֻרָתוֹ נִרְפָּא לָנוּ\"": 1,
+        "מְקַבְּלִים יִסּוּרִים בִּשְׁבִיל יִשְׂרָאֵל": 1,
+        "מַחֲלִיפִין הַשֶּׁפַע": 1
+      },
+      "note_on_degrees": "Degrees are inferred from source-text bechina structure, not from torahData.js edges (which are absent for reference===71). מְפֻרְסָם holds the highest degree because it is the subject of both the בְּחִינוֹת declaration (linked to Isaiah 53:12) and the נֶאֱמַר formula (linked to Isaiah 53:5). יִסּוּרִין בִּשְׁבִיל רַבִּים bridges Paragraphs 1 and 2 — it is mentioned in both as the mechanism connecting the public tzaddik to the healing of the many, and as the voluntary act of the tzaddikim in Paragraph 2.",
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 1,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "note_on_merges": "Torah #71 has zero entries in torahData.js. The bechina graph is empty. Package 1 is constructed entirely from the source-text bechina-language analysis. The six nodes in Package 1 represent the full conceptual vocabulary of this two-paragraph teaching as identified by bechina-language markers (בְּחִינוֹת / נֶאֱמַר עָלָיו). No isolated components exist to merge because there is only one conceptual domain in the entire Torah.",
+    "evil_mirror_check": "Torah #71 does not develop an evil mirror package. The teaching presents only the positive pole — the tzaddik who bears suffering — without constructing a parallel negative domain. The harmful nature of fame (קָשֶׁה מְאֹד לִהְיוֹת מְפֻרְסָם) is noted as a practical warning but is not elaborated into an evil conceptual cluster with bechina-language. No evil nodes receive bechina declarations in this Torah.",
+    "cross_reference_note": "Paragraph 2 explicitly cross-references §63 ('כַּמְבֹאָר לְמַעְלָה בְּסִימָן ס\"ג עַל פָּסוּק: וּבִשְׁתַּיִם יְכַסֶּה פָנָיו, עַיֵּן שָׁם'). This is an intra-corpus reference, not a new bechina developed within Torah #71. Torah #71 functions as a brief addendum or corollary to Torah #63's fuller treatment of the צַדִּיק who covers/shields Israel."
+  }
+}

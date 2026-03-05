@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "source": "Torah #9",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 9,
+      "label": "תְּפִלָּה וְסִימָנֶיהָ",
+      "label_en": "Prayer and Its Symbols",
+      "polarity": "good",
+      "reason": "The central cluster of the teaching. תפלה is directly equated with: אמונה (faith), עמידה (standing), חרב (sword), עפר (dust), חטם (nose/smell), סוחר ישמעאל (the Ishmaelite trader), רגלים (feet), ארץ ישראל (Land of Israel), and נסים (miracles). All these are different symbolic faces of the same spiritual reality: sincere prayer directed toward God. The chain is tight — עמידה↔תפלה, חרב↔תפלה, עפר↔חרב (via תפלה), עפר↔חרב directly, ארץ ישראל↔תפלה (×2), חטם↔תפלה, רגלים↔תפלה, סוחר ישמעאל↔תפלה — all connect into one large component through the תפלה hub. אמונה connects via תפלה↔אמונה and סביב↔אמונה. נסים connects via תפלה↔נסים, ארץ ישראל↔נסים, תהומות↔נסים. The Rebbe equates all of these as expressions of the same transcendent reality that breaks nature.",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תפלה",
+        "אמונה",
+        "עמידה",
+        "חרב",
+        "עפר",
+        "חטם",
+        "סוחר ישמעאל",
+        "רגלים",
+        "ארץ ישראל",
+        "נסים",
+        "תהומות",
+        "סביב",
+        "\"שפכי לבך כמים נכח פני ה'\"",
+        "מים"
+      ],
+      "node_degrees": {
+        "תפלה": 9,
+        "אמונה": 3,
+        "ארץ ישראל": 3,
+        "נסים": 3,
+        "עמידה": 2,
+        "חרב": 2,
+        "עפר": 2,
+        "סוחר ישמעאל": 2,
+        "מים": 1,
+        "\"שפכי לבך כמים נכח פני ה'\"": 1,
+        "סביב": 1,
+        "חטם": 1,
+        "רגלים": 1,
+        "תהומות": 1
+      },
+      "merge_notes": [
+        "מים and 'שפכי לבך כמים' (2-node component) merged here: both are aspects of prayer reaching God, directly paralleling תפלה and the water/pouring imagery. The bechina states that distance from 'water' = distance from the prayer of 'pour out your heart like water before God' — this is a sub-aspect of תפלה's nature.",
+        "סביב↔אמונה merged here: in the teaching, סביב (surrounding/circling) equals אמונה because 'ואמונתך סביבותיך' — סביב is thus a face of אמונה which is itself a face of תפלה.",
+        "תהומות merged here: תהומות = נסים, and נסים = תפלה — same cluster.",
+        "מצולת and מצרים kept in Package 2 — they are the evil mirror."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 9,
+      "label": "מִצְרַיִם וְהַגָּלוּת",
+      "label_en": "Egypt and Exile — the Anti-Prayer",
+      "polarity": "evil",
+      "reason": "מצולת (the depths/abyss) is equated with מצרים (Egypt) — this is the evil counterpart to the prayer/miracle cluster. Egypt is explicitly described as the opposite of Eretz Israel: 'זה לעומת זה', the place where prayer cannot ascend, where miracles are suppressed, where nature reigns over transcendence. The Rebbe says those who deny miracles and cover them with 'natural explanations' are in the bechina of Egypt/exile. This forms the evil mirror to Package 1.",
+      "dominant_node": "מצרים",
+      "nodes": [
+        "מצולת",
+        "מצרים"
+      ],
+      "node_degrees": {
+        "מצולת": 1,
+        "מצרים": 1
+      },
+      "merge_notes": [
+        "This 2-node component is retained as an independent evil package rather than merged into Package 1, because it represents the structural evil mirror (זה לעומת זה) of the prayer/miracle cluster. Merging it into Package 1 would collapse the polarity distinction that is fundamental to the teaching's structure.",
+        "The text explicitly frames מצרים as the inversion of ארץ ישראל — this is exactly the Good/Evil mirror pattern from framework §4."
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 9,
+      "label": "צַדִּיק הַדּוֹר וּמָשִׁיחַ",
+      "label_en": "The Tzaddik of the Generation and Mashiach",
+      "polarity": "good",
+      "reason": "Three nodes connect in a chain: סוחר ישמעאל ↔ צדיק הדור ↔ משיח. The Ishmaelite trader is a bechina of the tzaddik of the generation (section ד of the teaching), and the tzaddik is a bechina of Mashiach — because the tzaddik contains all the prayers just as Mashiach does. This is conceptually distinct from Package 1: these nodes describe the *bearer* of the prayers (the tzaddik/Mashiach), not the prayer itself. The tzaddik knows how to route each prayer to its proper gate — this is his essential nature as the comprehensive vessel. סוחר ישמעאל belongs here (not Package 1) as its primary bechina in this Torah is צדיק הדור, not תפלה.",
+      "dominant_node": "צדיק הדור",
+      "nodes": [
+        "סוחר ישמעאל",
+        "צדיק הדור",
+        "משיח"
+      ],
+      "node_degrees": {
+        "צדיק הדור": 2,
+        "סוחר ישמעאל": 2,
+        "משיח": 1
+      },
+      "merge_notes": [
+        "סוחר ישמעאל appears in both Package 1 (תפלה↔סוחר ישמעאל) and Package 3 (סוחר ישמעאל↔צדיק הדור). Per the framework, every node belongs to exactly one package per Torah. The stronger conceptual home is Package 3: in section ד, סוחר ישמעאל is introduced as an allegory for the tzaddik of the generation, not for prayer itself. The bechina to תפלה (Package 1) is secondary — prayers are what the trader/tzaddik *handles*, but his nature is tzaddik/Mashiach. Assign to Package 3; the connection to Package 1 flows as an eitza-adjacent link.",
+        "פרוטה↔קול התור is a 2-node component (see Package 4) — not merged here because it belongs thematically to the miracle/nature domain."
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 9,
+      "label": "פְּרוּטָה וְקוֹל הַתּוֹר",
+      "label_en": "The Coin and the Voice of the Turtledove",
+      "polarity": "good",
+      "reason": "פרוטה (the coin, the small thing) is a bechina of קול התור (voice of the turtledove). The Talmud's image of 'the coin in the pocket' stands between two depths (תהומות), representing the hidden, compressed miracle that stands ready to be revealed. This is the image of latent miracles: things that appear small and natural but contain concentrated supernatural potential. In section ה the Rebbe uses the Talmudic passage about rudya (the mill-wheel) whose lips resemble a dove, standing between two abysses — the two תהומות = the collective of miracles. This 2-node component belongs thematically with the miracle cluster (Package 1) but represents a specific symbolic register — the *compressed hidden miracle* — that deserves its own label.",
+      "dominant_node": "קול התור",
+      "nodes": [
+        "פרוטה",
+        "קול התור"
+      ],
+      "node_degrees": {
+        "פרוטה": 1,
+        "קול התור": 1
+      },
+      "merge_notes": [
+        "Candidate for merger into Package 1 (נסים cluster): both פרוטה and קול התור are aspects of miracles. Merged into Package 1 per Step 6 rule — shared NATURE (both are bechina of נסים / hidden miracle), not cause-and-effect. See additions file for final recommendation."
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 9,
+      "label": "מַטֶּה — זִוּוּג וּפַרְנָסָה",
+      "label_en": "The Staff/Tribe — Union and Livelihood",
+      "polarity": "good",
+      "reason": "מטה (staff/tribe) is simultaneously a bechina of זווג (marital union) AND a bechina of ממון (livelihood/sustenance). These two edges share the same node מטה. The Rebbe explicitly brings both equations: 'מטה לשון זווג' (the staff is an idiom for union) and 'מטה הוא בחינת פרנסה, כמו שכתוב בשברי לכם מטה לחם'. The twelve tribes (שנים עשר מטות) produce both union (זווג) and sustenance (פרנסה) through prayer. זווג and ממון are thus two faces of the same reality mediated by מטה.",
+      "dominant_node": "מטה",
+      "nodes": [
+        "מטה",
+        "זווג",
+        "ממון"
+      ],
+      "node_degrees": {
+        "מטה": 2,
+        "זווג": 1,
+        "ממון": 1
+      },
+      "merge_notes": [
+        "זווג and ממון are structurally the earthly outputs of prayer (Package 1) — they appear in the teaching as the rewards/parallels of prayer (קשין מזונותיו כקריעת ים סוף / קשה זיווגו). They are connected to Package 1 via eitza, not bechina. The מטה package represents the *earthly domain* that mirrors the spiritual prayer structure."
+      ]
+    },
+    {
+      "id": 6,
+      "torah_ref": 9,
+      "label": "וְקָם — עֲמִידָה בִּתְפִלָּה",
+      "label_en": "Rising / Standing in Prayer",
+      "polarity": "good",
+      "reason": "וקם (and he rose) ↔ עמידה (standing). This bechina pair is directly connected to the prayer cluster via עמידה↔תפלה (Package 1). The word 'וקם' from the verse 'דרך כוכב מיעקב וקם שבט מישראל' is interpreted as the act of standing to pray. Since עמידה is already in Package 1, וקם merges into Package 1 as well.",
+      "dominant_node": "עמידה",
+      "nodes": [
+        "וקם",
+        "עמידה"
+      ],
+      "node_degrees": {
+        "וקם": 1,
+        "עמידה": 1
+      },
+      "merge_notes": [
+        "וקם is a single-alias bechina for עמידה, which itself is already in Package 1 (עמידה↔תפלה). This 2-node component merges entirely into Package 1. The וקם node is best understood as a textual alias of עמידה in Torah #9."
+      ]
+    },
+    {
+      "id": 7,
+      "torah_ref": 9,
+      "label": "יַעֲקֹב וּבָנָיו — שְׁנֵים עָשָׂר שְׁבָטִים",
+      "label_en": "Jacob and His Sons — Twelve Tribes as Prayer",
+      "polarity": "good",
+      "reason": "יעקב ובניו ↔ תפלה (Jacob and his sons = prayer) AND יעקב ובניו ↔ שנים עשר שערי תפלה (= the twelve gates of prayer). These are two separate bechina edges both pointing from the same node. Jacob and his sons are the embodiment of the twelve prayer registers — each tribe has its unique prayer gate. This is the primary identification in Torah #9: Jacob encompasses all twelve tribes/prayers, and his 'gathering of his feet onto the bed' is interpreted as gathering all the prayers to their root.",
+      "dominant_node": "יעקב ובניו",
+      "nodes": [
+        "יעקב ובניו",
+        "שנים עשר שערי תפלה"
+      ],
+      "node_degrees": {
+        "יעקב ובניו": 2,
+        "שנים עשר שערי תפלה": 1
+      },
+      "merge_notes": [
+        "יעקב ובניו is already connected to Package 1 via יעקב ובניו↔תפלה. Per framework rule: every node belongs to exactly one package. The richer conceptual home is Package 1 (תפלה is the dominant hub). Both יעקב ובניו and שנים עשר שערי תפלה merge into Package 1.",
+        "שנים עשר שערי תפלה is a sub-aspect of the overall תפלה cluster — it specifies the structural architecture (twelve gates) of what תפלה is."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 25,
+    "total_nodes": 27,
+    "total_packages": 7,
+    "raw_connected_components": 7,
+    "notes": "After applying Step 6 merge rules (shared NATURE not cause-and-effect), packages 4, 6, and 7 collapse into Package 1 (the large prayer/miracle cluster). Package 2 (מצרים) is retained as the evil mirror. Package 3 (Tzaddik/Mashiach) is retained as a distinct conceptual cluster. Package 5 (מטה) is retained as the earthly-domain cluster."
+  }
+}

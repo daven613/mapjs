@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "source": "Torah #173",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===173 AND type==='bechina'. 3 bechina edges yield 2 raw connected components. Component A (2 nodes: אות כ\"ף ↔ כתר) merged into Component B (3 nodes: שרש האמונה ↔ פנימיות האמונה ↔ פנימיות הנפש) by shared nature: the Torah explicitly equates כתר with פנימיות הנפש (line 5: 'הַכֶּתֶר הִיא פְּנִימִיּוּת הַנֶּפֶשׁ'), making אות כ\"ף and כתר expressions of the same innermost-soul domain. Result: 1 package of 5 nodes."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 173,
+      "label": "אֱמוּנָה וּפְנִימִיּוּת הַנֶּפֶשׁ",
+      "label_en": "Faith and the Inwardness of the Soul",
+      "polarity": "good",
+      "reason": "The entire teaching of Torah #173 revolves around one central identification: the root of faith (שרש האמונה), the inwardness of faith (פנימיות האמונה), and the inwardness of the soul (פנימיות הנפש) are declared to be one and the same reality — 'הַנֶּפֶשׁ וְהָאֱמוּנָה הֵם בְּחִינָה אַחַת'. These three nodes form a tight bechina chain (edges 2503 and 2504). The כ' letter (אות כ\"ף) enters this cluster because the Rebbe states it 'hints at the bechina of Shekhinah Pnimiyut' (line 4) and the Etz Chaim confirms 'הַכֶּתֶר הִיא פְּנִימִיּוּת הַנֶּפֶשׁ' while 'הַכ' הִיא בְּחִינַת כֶּתֶר' (line 5, edge 1529). Thus כתר is a bechina of פנימיות הנפש by transitivity confirmed in the same text, and אות כ\"ף is a bechina of כתר. All five nodes share the same essential nature: the hidden, innermost dimension of the soul and faith, which writing (כתב) both expresses and reveals to the true tzaddik. This is a wholly positive/good domain — it concerns the innermost holiness of the Jewish soul.",
+      "dominant_node": "פנימיות הנפש",
+      "nodes": [
+        "שרש האמונה",
+        "פנימיות האמונה",
+        "פנימיות הנפש",
+        "כתר",
+        "אות כ\"ף"
+      ],
+      "node_degrees": {
+        "פנימיות האמונה": 2,
+        "שרש האמונה": 1,
+        "פנימיות הנפש": 1,
+        "כתר": 1,
+        "אות כ\"ף": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["אות כ\"ף", "כתר"],
+          "reason": "Raw Component A (2 nodes) merged into the faith/soul cluster by shared nature. The Torah text (line 5) explicitly states 'הַכֶּתֶר הִיא פְּנִימִיּוּת הַנֶּפֶשׁ' — making כתר and פנימיות הנפש parallel aspects of the same thing. אות כ\"ף is a bechina of כתר (edge 1529). Therefore both אות כ\"ף and כתר share essential nature with the three faith/soul nodes. This is a shared-nature merge, not cause-effect: the letter כ', Keter, and the inwardness of the soul are all expressions of the same uppermost hidden dimension."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 5,
+    "total_packages": 1,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 1,
+    "note_on_merges": "2 raw components: (A) 2 nodes — אות כ\"ף / כתר [merged into Package 1 by shared nature via explicit text equation כתר=פנימיות הנפש], (B) 3 nodes — שרש האמונה / פנימיות האמונה / פנימיות הנפש [core of Package 1]. Torah #173 is a very short teaching (8 lines) with minimal bechina edges in the dataset, yielding a single thematic package."
+  }
+}

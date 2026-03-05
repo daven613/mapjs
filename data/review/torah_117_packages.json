@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "source": "Torah #117 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #117 is a short, tight teaching (10 lines) explaining why it is difficult to sleep on Motzaei Shabbat. The dataset contains exactly 3 bechina edges for reference === 117 (ids: 431, 1510, 2057). All three belong to a single connected component — the evil cluster of the serpent, the curse, and slavery. The gap analysis (torah_117_additions.json) identifies 4 additional bechina pairs in the source text not yet in the dataset: שקר↔נחש, עבד↔נחש (direct explicit chain), מוצאי שבת↔דעת, and שנה↔הסתלקות הדעת. With the gap additions, a second good package emerges centered on דעת and אמת. The teaching's good/evil mirror is clear: the evil package (נחש / ארור / עבד / שקר) is opposed by the good package (אמת / דעת / התגלות אליהו), with Elijah as the agent who repels the serpent-cluster and restores truth and knowledge."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 117,
+      "label": "נָחָשׁ וְהַקְּלָלָה",
+      "label_en": "The Serpent and the Curse",
+      "polarity": "evil",
+      "reason": "All three existing bechina edges in the dataset form a single connected chain: עֶבֶד↔אָרוּר (edge 431), אָרוּר↔נָחָשׁ (edge 2057), נָחָשׁ↔כְּנַעַן עֶבֶד עֲבָדִים (edge 1510). The chain reads: slave = cursed = serpent = Canaan slave of slaves. These are all explicitly identified as aspects of the same evil reality in Torah 117. The teaching declares (line 7): 'falsehood (שקר) is from the bechina of the serpent, which is called arur (cursed)' and (line 8): 'the slave is the bechina of Canaan slave of slaves, and he is the bechina of arur, the bechina of the serpent.' This cluster represents the evil principle — the serpent who brought death into the world, whose essence persists as curse, slavery, and the 9 out of 10 measures of sleep that came to the world. The dominant node is נָחָשׁ because it is the named archetypal figure (the serpent of Genesis 3) from which all other members of this cluster are derived as aspects. It connects to the most other nodes in the gap-expanded graph (degree 3: connected to כנען עבד עבדים, ארור, שקר). The gap analysis adds שֶׁקֶר (falsehood) and makes the direct עֶבֶד↔נָחָשׁ link explicit. The evil polarity is unambiguous: נחש, ארור, עבד, שקר are all marked as the negative force that Elijah will come to repel.",
+      "dominant_node": "נחש",
+      "nodes": [
+        "נחש",
+        "ארור",
+        "עבד",
+        "כנען עבד עבדים"
+      ],
+      "node_degrees": {
+        "נחש": 2,
+        "ארור": 2,
+        "עבד": 1,
+        "כנען עבד עבדים": 1
+      },
+      "merge_notes": [
+        "All 4 nodes are in a single connected component from the 3 existing bechina edges. No merging of separate components was required.",
+        "The gap analysis (torah_117_additions.json) proposes adding שֶׁקֶר (falsehood) as a 5th node in this package, based on line 7: 'הַשֶּׁקֶר, שֶׁהוּא מִבְּחִינַת הַנָּחָשׁ'. This would raise נָחָשׁ to degree 3.",
+        "The gap analysis also proposes a direct עֶבֶד↔נָחָשׁ edge, making the chain fully explicit. With that addition, עֶבֶד would have degree 2.",
+        "שֵׁנָה (sleep) is causally related to this package (the serpent brought death; sleep is 1/60 of death) but the relationship is eitza (causal), not bechina — sleep is NOT declared to be the bechina of the serpent in this Torah. Therefore שֵׁנָה belongs to a different analysis layer."
+      ],
+      "source_edges": [
+        {
+          "id": 431,
+          "node1_id": "עבד",
+          "node2_id": "ארור",
+          "proof": "וְעֶבֶד הוּא בְחִינַת (בְּרֵאשִׁית ט): \"כְּנַעַן עֶבֶד עֲבָדִים\", וְהוּא בְחִינַת אָרוּר (שָׁם)"
+        },
+        {
+          "id": 1510,
+          "node1_id": "נחש",
+          "node2_id": "כנען עבד עבדים",
+          "proof": "הַנָּחָשׁ, שֶׁהוּא בְחִינַת כְּנַעַן עֶבֶד עֲבָדִים"
+        },
+        {
+          "id": 2057,
+          "node1_id": "ארור",
+          "node2_id": "נחש",
+          "proof": "אָרוּר (שָׁם), בְחִינַת הַנָּחָשׁ"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 3,
+    "total_nodes_from_dataset": 4,
+    "total_packages": 1,
+    "raw_connected_components_from_dataset": 1,
+    "components_merged_into_packages": 0,
+    "note_on_dataset_sparsity": "Torah #117 has exactly 3 bechina edges in the dataset, all forming a single connected component of 4 nodes. The source text (10 lines) reveals at least 4 additional bechina-type identifications not yet captured in the dataset — most significantly the שקר↔נחש equation (line 7), and the מוצאי שבת↔דעת and שנה↔הסתלקות הדעת equations (line 10) which would form a second good package. The single existing package is the evil serpent-cluster. The Torah's full bechina architecture (both evil and good packages) requires the additions proposed in torah_117_additions.json, which would produce the good package described in torah_117_new_packages.json."
+  }
+}

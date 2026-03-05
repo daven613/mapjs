@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "source": "Torah #180",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===180 AND type==='bechina'. Exactly 5 bechina edges found, forming one single connected component of 5 nodes (a cycle). No merges required — all nodes naturally belong to one package. The Torah is about the segulah of pidyon (spiritual redemption via money given to a tzaddik), teaching that money = feet = tzedek = holy malkhut = judgments, and that judgments are sweetened in their root in Binah through three divine hands."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 180,
+      "label": "מָעוֹת וּמַלְכוּתָא קַדִּישָׁא",
+      "label_en": "Money and the Holy Kingdom",
+      "polarity": "good",
+      "reason": "Torah #180 is a single tight chain of bechina-equivalences all serving one teaching: money (מָעוֹת) is a bechina of feet (רַגְלִין), which is a bechina of tzedek (צֶדֶק), which is the holy malkhut (מַלְכוּתָא קַדִּישָׁא), which is a bechina of judgments (דִּינִין). The entire network forms one cycle: ממון—דין—מלכות—צדק—רגלים—ממון. All five nodes describe the same spiritual structure — the domain of divine judgment/kingship as it manifests in the material world through money. The polarity is 'good' because: (1) the node2 of the צדק↔מלכות edge is explicitly 'מַלְכוּתָא קַדִּישָׁא' (holy kingdom); (2) the teaching aims to demonstrate how to SWEETEN judgments, not to describe the evil side; (3) the feet/tzedek/malkhut cluster is the redemptive channel through which judgments are returned to their root in Binah. The judgments (דינין) are not presented as an evil force to be defeated but as a spiritual reality whose root is holy (in Binah), and the whole chain explains the mechanism of pidyon as a spiritual practice.",
+      "dominant_node": "מלכות",
+      "nodes": [
+        "מלכות",
+        "צדק",
+        "רגלים",
+        "ממון",
+        "דין"
+      ],
+      "node_degrees": {
+        "מלכות": 2,
+        "צדק": 2,
+        "רגלים": 2,
+        "ממון": 2,
+        "דין": 2
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 5,
+    "total_nodes": 5,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "note": "All 5 nodes form a single cycle (pentagon): ממון—דין—מלכות—צדק—רגלים—ממון. Every node has degree 2. No isolated nodes, no small components to merge. The Torah is structurally simple — one tightly woven conceptual cluster."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "source": "Torah #122 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_122_packages.json, all reference === 122 edges from torahData.js (0 bechina edges, 0 eitza edges — dataset is unpopulated for this Torah), and the full source text torah_122.txt (4 lines). Performed a complete line-by-line scan for all explicit and implicit bechina language: בְּחִינַת / בִּבְחִינַת / בְּחִינוֹת / הוּא בְּחִינַת / הַיְנוּ [as equivalence marker] / נִקְרָא [as shared-nature marker] / structural equation without keyword. Cross-referenced every conceptual equation against the existing dataset."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "נֵצַח יִשְׂרָאֵל וֶאֱמֶת",
+      "node1_id": "נצח ישראל",
+      "node1_text": "נֵצַח יִשְׂרָאֵל",
+      "node2_id": "אמת",
+      "node2_text": "אֱמֶת",
+      "polarity": "good",
+      "reason": "The teaching re-reads the verse 'וְגַם נֵצַח יִשְׂרָאֵל לֹא יְשַׁקֵּר' such that 'נֵצַח יִשְׂרָאֵל' = the Eternal One of Israel (God's attribute of nitzachon) and 'לֹא יְשַׁקֵּר' = does not lie = IS truth. The statement 'הַקָּדוֹשׁ בָּרוּךְ הוּא אַף בְּהַנִּצָּחוֹן הוּא אֱמֶת, וְאֵינוֹ מְשַׁקֵּר' ('God even in nitzachon is truth and does not lie') has the semantic structure of a bechina equation: it identifies divine nitzachon with truth not as a causal sequence (nitzachon produces truth) but as an ontological identity (they are the same attribute in God). The formal בְּחִינַת keyword is absent, but the identification structure is present: 'הוּא אֱמֶת' — 'it IS truth.' The verse re-reading at the end ('וְזֶהוּ: וְגַם נֵצַח יִשְׂרָאֵל לֹא יְשַׁקֵּר') confirms this is an ontological claim about God's nature, not a causal chain. This is the primary bechina pair of the Torah.",
+      "source_quote": "הַקָּדוֹשׁ בָּרוּךְ הוּא אַף בְּהַנִּצָּחוֹן הוּא אֱמֶת, וְאֵינוֹ מְשַׁקֵּר, חַס וְשָׁלוֹם. וְזֶהוּ: וְגַם נֵצַח יִשְׂרָאֵל לֹא יְשַׁקֵּר",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "bechina_keyword_present": false,
+      "structural_bechina": true,
+      "classification_note": "This proposed edge uses 'הוּא אֱמֶת' (= 'is truth') as the bechina marker. While this does not employ the canonical 'הוּא בְּחִינַת Y' formula, the statement 'in God's nitzachon He is truth' is structurally identical to a bechina equation: it equates two aspects of the same divine attribute. The alternative classification would be eitza ('nitzachon produces truthfulness'), but the text does not describe a sequence of production — it states an identity ('הוּא אֱמֶת' not 'מוֹצִיא אֱמֶת'). Classification as bechina is correct.",
+      "proposed_edge": {
+        "node1_id": "נצח ישראל",
+        "node2_id": "אמת",
+        "type": "bechina",
+        "reference": 122,
+        "proof": "הַקָּדוֹשׁ בָּרוּךְ הוּא אַף בְּהַנִּצָּחוֹן הוּא אֱמֶת, וְאֵינוֹ מְשַׁקֵּר — וְזֶהוּ: וְגַם נֵצַח יִשְׂרָאֵל לֹא יְשַׁקֵּר",
+        "is_good": true,
+        "is_bad": false
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "נִצָּחוֹן בָּשָׂר וָדָם וְדַחִיַּת הָאֱמֶת",
+      "node1_id": "מדת הנצחון",
+      "node1_text": "מִדַּת הַנִּצָּחוֹן",
+      "node2_id": "דחיית האמת",
+      "node2_text": "דְּחִיַּת הָאֱמֶת",
+      "polarity": "evil",
+      "reason": "The teaching states: 'מִדַּת הַנִּצָּחוֹן אֵינָהּ סוֹבֶלֶת הָאֱמֶת, כִּי אַף אִם יֵרָאֶה לָעֵינַיִם דְּבַר אֱמֶת, יִדְחֶה אוֹתוֹ מֵחֲמַת הַנִּצָּחוֹן, וְזֶה מְבֹרָר מְאֹד.' This is the negative pole of the teaching. The relationship between מִדַּת הַנִּצָּחוֹן and the rejection of truth is presented in the text as causal/behavioral: the nitzachon attribute CAUSES one to reject truth. Strictly speaking, this sounds like an eitza formulation. However, the deeper claim is ontological: the quality of human contentiousness IS, at its essence, the quality of truth-rejection. A person in the grip of nitzachon does not merely reject truth occasionally — the attribute itself IS incompatible with truth. 'אֵינָהּ סוֹבֶלֶת' (does not tolerate) describes an essential, structural incompatibility, not merely a frequent consequence. This structural incompatibility — human nitzachon = truth-rejection by definition — is the bechina identification. The polarity is 'evil' because this is the attribute that distances one from God, Who is truth.",
+      "source_quote": "מִדַּת הַנִּצָּחוֹן אֵינָהּ סוֹבֶלֶת הָאֱמֶת, כִּי אַף אִם יֵרָאֶה לָעֵינַיִם דְּבַר אֱמֶת, יִדְחֶה אוֹתוֹ מֵחֲמַת הַנִּצָּחוֹן, וְזֶה מְבֹרָר מְאֹד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "bechina_keyword_present": false,
+      "structural_bechina": true,
+      "classification_note": "This proposed edge sits on the boundary between bechina and eitza. The surface reading ('nitzachon causes one to reject truth') is eitza-like. However, the teaching's claim is stronger: the nitzachon-attribute and truth-rejection are the same thing — they are two descriptions of the same essential nature. 'אֵינָהּ סוֹבֶלֶת הָאֱמֶת' (does not tolerate truth) is not just 'produces rejection of truth' — it says that tolerance of truth is incompatible with nitzachon's essence. This is an ontological incompatibility, not a causal sequence. Classification as bechina (shared nature: both describe the same failing in human character) is justified. An alternative eitza coding would lose the structural-identity claim. Note: if the dataset team prefers eitza for this edge, it would not materially affect the package map since the two nodes would still be associated with the same conceptual domain in this Torah.",
+      "proposed_edge": {
+        "node1_id": "מדת הנצחון",
+        "node2_id": "דחיית האמת",
+        "type": "bechina",
+        "reference": 122,
+        "proof": "מִדַּת הַנִּצָּחוֹן אֵינָהּ סוֹבֶלֶת הָאֱמֶת, כִּי אַף אִם יֵרָאֶה לָעֵינַיִם דְּבַר אֱמֶת, יִדְחֶה אוֹתוֹ מֵחֲמַת הַנִּצָּחוֹן",
+        "is_good": false,
+        "is_bad": true
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_122_edges": 0,
+    "total_reference_122_bechina_edges": 0,
+    "total_reference_122_eitza_edges": 0,
+    "dataset_status": "UNPOPULATED — no edges exist in torahData.js for reference 122",
+    "bechina_language_scan": {
+      "line_1": "Verse citation only: 'וְגַם נֵצַח יִשְׂרָאֵל לֹא יְשַׁקֵּר (שמואל א ט״ו:כ״ט)'. No bechina language. The verse itself carries the double-meaning (נֵצַח = contentiousness/victory AND the Eternal One of Israel) that the entire teaching exploits, but the citation line does not articulate a bechina equation.",
+      "line_2": "'כִּי זֶה יָדוּעַ, שֶׁמִּדַּת הַנִּצָּחוֹן אֵינָהּ סוֹבֶלֶת הָאֱמֶת, כִּי אַף אִם יֵרָאֶה לָעֵינַיִם דְּבַר אֱמֶת, יִדְחֶה אוֹתוֹ מֵחֲמַת הַנִּצָּחוֹן, וְזֶה מְבֹרָר מְאֹד.' No formal בְּחִינַת keyword. Contains the structural equation: human-nitzachon = truth-rejection (proposed addition 2). The statement 'זֶה מְבֹרָר מְאֹד' (this is very well established) signals that the Rebbe treats this as a foundational, axiomatic truth — consistent with an ontological bechina claim rather than a contingent causal observation.",
+      "line_3": "'אַךְ לֹא כְּמִדַּת בָּשָׂר וָדָם מִדַּת הַקָּדוֹשׁ בָּרוּךְ הוּא, כִּי הַקָּדוֹשׁ בָּרוּךְ הוּא אַף בְּהַנִּצָּחוֹן הוּא אֱמֶת, וְאֵינוֹ מְשַׁקֵּר, חַס וְשָׁלוֹם.' No formal בְּחִינַת keyword. Contains the structural equation: divine-nitzachon = truth (proposed addition 1). The phrase 'הוּא אֱמֶת' (is truth) is the closest this Torah comes to explicit bechina language — 'X IS Y' without the intermediate bechina-marker. The comparison structure ('not like flesh-and-blood — but God...') is the rhetorical frame for the positive bechina claim.",
+      "line_4": "'וְזֶהוּ: וְגַם נֵצַח יִשְׂרָאֵל לֹא יְשַׁקֵּר.' Return to the verse as the proof text for the positive bechina claim established in line 3. The word 'וְזֶהוּ' (and this is [the meaning of]) is a standard Rebbe Nachman formula for identifying a verse with the conceptual equation just stated — functionally equivalent to 'the verse proves/states the bechina.' No additional concepts introduced."
+    },
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "מִדַּת בָּשָׂר וָדָם (attribute of flesh and blood) as separate node",
+        "reason": "The text uses 'מִדַּת בָּשָׂר וָדָם' as a contrastive label for the human mode being discussed, not as a standalone concept being equated to another via bechina. It is the referential frame for מִדַּת הַנִּצָּחוֹן (which IS the attribute of flesh-and-blood being dissected). Adding מִדַּת בָּשָׂר וָדָם as a separate node would create a trivial synonym edge rather than a conceptual bechina. The concept is subsumed under מִדַּת הַנִּצָּחוֹן as its descriptor. Excluded.",
+        "excluded": true
+      },
+      {
+        "concept": "מִדַּת הַקָּדוֹשׁ בָּרוּךְ הוּא (God's attribute) as separate node from נֵצַח יִשְׂרָאֵל",
+        "reason": "The text uses 'מִדַּת הַקָּדוֹשׁ בָּרוּךְ הוּא' as the referential label for God's mode of nitzachon, then identifies it with the verse's 'נֵצַח יִשְׂרָאֵל.' These are two names for the same concept in this Torah — God's attribute of eternal prevailing. A separate node for 'מִדַּת הקב\"ה' would be a trivial alias. The node 'נֵצַח יִשְׂרָאֵל' is preferred as the dominant form because it is the verse's language and carries the double-meaning that structures the entire teaching. Excluded as separate node.",
+        "excluded": true
+      },
+      {
+        "concept": "שֶׁקֶר (falsehood) as explicit node",
+        "reason": "The word שֶׁקֶר does not appear in the source text. The verse uses 'לֹא יְשַׁקֵּר' (does not lie) as a negation. The concept of falsehood is implicit — human nitzachon implicitly = sheker — but this is captured better through the node 'דְּחִיַּת הָאֱמֶת' (rejection of truth), which IS explicitly stated in the source text. Using שֶׁקֶר as a node would add a concept not present by name in the text. The source's language focuses on the rejection of truth rather than on falsehood as an active force. Excluded in favor of דְּחִיַּת הָאֱמֶת.",
+        "excluded": true
+      },
+      {
+        "concept": "כְּבוֹד (honor/pride) as the root of nitzachon",
+        "reason": "The source text does not mention honor or pride as the motive behind nitzachon. No bechina language connects nitzachon to kavod in this Torah. In other Torahs (e.g., discussions of pride and truth), this connection is made, but not here. Torah-specific analysis only — excluded.",
+        "excluded": true
+      }
+    ],
+    "structural_observations": [
+      "Torah #122 is one of the most compressed Torahs in Likutay Moharan — 4 lines, one verse, one contrast, one re-reading of the verse. It is purely aphoristic.",
+      "The entire teaching is structured around the bifurcation of the word נֵצַח into its two senses: (1) contentiousness/victory (human quality) and (2) the Eternal One of Israel (divine name/attribute). This double-meaning is the hermeneutic key.",
+      "The teaching does not use formal בְּחִינַת language anywhere. This is unusual for Rebbe Nachman but consistent with the aphoristic genre: the equation is stated directly ('הוּא אֱמֶת') rather than through the formal identification formula.",
+      "The two proposed edges (נֵצַח יִשְׂרָאֵל ↔ אֱמֶת; מִדַּת הַנִּצָּחוֹן ↔ דְּחִיַּת הָאֱמֶת) together capture the Torah's binary structure completely. No third concept-pair exists in the text.",
+      "The good/evil mirror is maximally direct: the same word (נִצָּחוֹן/נֵצַח) generates both the good package (God's eternal truthfulness) and the evil package (human contentiousness that rejects truth). This is the mirror operating at the level of the single word's polysemy.",
+      "There are no eitza edges to propose for Torah #122. The teaching is not structured as cause-and-effect; it is an aphoristic contrast. No practical instruction is given, and no chain of consequences is described."
+    ]
+  }
+}

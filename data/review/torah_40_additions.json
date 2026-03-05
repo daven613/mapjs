@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "source": "Torah #40",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "נסיעה",
+      "node_text": "נְסִיעָה",
+      "polarity": "evil",
+      "reason": "The source text states 'הנסיעה היא קלקול אמונה, היינו בחינת עבודת אלילים' — the act of travel (נסיעה) IS corruption of faith, IS a bechina of idolatry. This is direct bechina language: נסיעה IS עבודת אלילים. The dataset has the compound node 'נסיעה וטלטול' (edge 2106) connected to 'צא', but the simple form 'נסיעה' as a standalone node — explicitly stated to BE עבודה זרה via 'היינו בחינת' — is absent. This would constitute a bechina edge: נסיעה ↔ עבודה זרה (or equivalently, נסיעה ↔ קלקול האמונה), placing נסיעה squarely in Package 1.",
+      "source_quote": "נִמְצָא, כִּי הַנְּסִיעָה הִיא קִלְקוּל אֱמוּנָה, הַיְנוּ בְּחִינַת עֲבוֹדַת אֱלִילִים",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "גלות",
+      "node_text": "גָּלוּת",
+      "polarity": "evil",
+      "reason": "Exile (גלות) is the macro-level expression of the same spiritual displacement that travel (נסיעה/טלטול) represents at the individual level. The text states 'גם הגלות בא על ביטול תורה' — exile comes due to neglect of Torah. While the primary connective language here is eitza ('בא על'), the deep structure of Torah #40 equates all forms of displacement — individual travel and national exile — as manifestations of the same corrupted faith/idolatry domain. The text opens by citing 'אלה מסעי בני ישראל' (the journeys of Israel = the national exile/wandering) as the paradigm for all individual travel. Thus גלות and נסיעה share essential nature: both ARE displacement caused by the same spiritual failure. However, the specific language in the text is eitza ('גלות בא על'), not bechina ('גלות היא בחינת'). This is therefore a bechina candidate rather than a confirmed bechina — adding it would require editorial judgment.",
+      "source_quote": "גַּם הַגָּלוּת בָּא עַל בִּטּוּל תּוֹרָה, כְּמוֹ שֶׁכָּתוּב (ישעיה ה): גָּלָה עַמִּי מִבְּלִי דָּעַת",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 2,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "נסיעה — 'הנסיעה היא קלקול אמונה, היינו בחינת עבודת אלילים': the simple noun נסיעה (travel) is stated to BE a bechina of idolatry. The dataset has the compound 'נסיעה וטלטול' (edge 2106) but not the simple 'נסיעה' stated as = עבודה זרה. This is a genuine missing bechina node.",
+      "גלות — 'הגלות בא על ביטול תורה': exile appears in eitza language ('בא על'), not explicit bechina language. However, the teaching structurally equates individual travel with national exile as two levels of the same displacement-from-God phenomenon. A bechina edge between גלות and נסיעה (or גלות and עבודה זרה) would be justified by the teaching's argument but is not stated with 'בחינת' language in the text.",
+      "אמונה שלמה — complete faith appears as the POSITIVE counterpart: 'אם היה מאמין באמונה שלמה... לא היה נוסע שום נסיעה'. This is the good state (faith = no travel = no idolatry). No bechina equivalence is stated for it explicitly, but it is the mirror-good of קלקול האמונה. If a good package were proposed (see torah_40_new_packages.json), אמונה שלמה would be its primary node.",
+      "שלום — 'כשאין שבע, אין שלום': peace appears only in the eitza chain (rain → satiation → peace → cooperation → no travel). No bechina language connects שלום to any concept.",
+      "מטר/גשמים — rain appears only in eitza context ('על ידי עבודת אלילים נמנע המטר'). Pure eitza, not bechina.",
+      "ביטול תורה — neglect of Torah appears in eitza context ('הגלות בא על ביטול תורה'). The connection between idolatry and Torah neglect is mediated through the eitza chain (idolatry → no rain → no bread → no Torah, and also idolatry → exile → Torah neglect). No bechina language used."
+    ],
+    "structural_note": "Torah #40 is a highly eitza-dominant teaching. The Rebbe constructs a long chain of consequences: idolatry/loss of faith → travel (individual displacement) → no rain → no satiation → no peace → more travel for livelihood; AND idolatry → exile (national displacement) → Torah neglect. The entire Torah has only 2 bechina statements and the rest is eitza. This is unusual compared to Torahs like #1, #3, etc., which have many bechina clusters. The sparse bechina structure reflects the nature of the teaching: it is a practical-ethical argument about cause-and-effect consequences of spiritual failure, not a metaphysical mapping of parallel concepts.",
+    "all_4_dataset_nodes_assigned": true
+  }
+}

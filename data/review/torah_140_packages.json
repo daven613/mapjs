@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "source": "Torah #140",
+    "volume": "Likutay Moharan Vol. 1",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #140 is one of the shortest teachings in the corpus — 6 lines in the source text. Only 1 bechina edge exists in the dataset (reference===140 AND type==='bechina'). That single edge (צדיק ↔ חותם) forms a 2-node component. There are no other components to merge with. The result is one micro-package. The gap analysis (torah_140_additions.json) found one additional bechina concept (צדיק ↔ 'כל האדם') not in the dataset. This is proposed as an addition to the same package."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 140,
+      "label": "הַצַּדִּיק וְהַחוֹתָם",
+      "label_en": "The Tzaddik and the Seal",
+      "polarity": "good",
+      "reason": "Torah #140 teaches a single, tightly focused idea: the Tzaddik is beyond ordinary intellectual grasp ('לְמַעְלָה מִשִּׂכְלוֹ'), and yet his nature can be inferred — the way a seal's engraved letters can only be read by pressing it into wax. The Tzaddik is explicitly called a בְּחִינַת חוֹתָם (seal), because just as the seal's inscription is hidden in its reversed form, the Tzaddik's inner reality is concealed yet can be known through his disciples (the 'wax impression'). The dominant node is צדיק, which is connected to חותם (the seal). The same צדיק is also called 'כָּל הָאָדָם' (all of humanity) via the Kohelet verse — this is an additional bechina in the source text not yet in the dataset (see torah_140_additions.json). The package is good/holy: the Tzaddik and his seal are expressions of the covenant of holiness ('בְּרִית קֹדֶשׁ').",
+      "dominant_node": "צדיק",
+      "nodes": [
+        "צדיק",
+        "חותם"
+      ],
+      "node_degrees": {
+        "צדיק": 1,
+        "חותם": 1
+      },
+      "merge_notes": "No merging was performed. There is only one bechina component in this Torah. The two nodes (צדיק, חותם) are directly connected by edge 1113. There are no orphan or isolated nodes in the dataset for this Torah. The eitza edge (edge 1271: אנשיו המקרבין אליו → יוכל להבין מעלת הצדיק) does NOT contribute to package formation — it is a directional cause-and-effect relationship showing how the Tzaddik's stature becomes knowable, not a shared-nature parallel. It flows between the domain of this package and an implied external practical result."
+    }
+  ],
+  "stats": {
+    "total_reference_140_edges": 2,
+    "total_reference_140_bechina_edges": 1,
+    "total_reference_140_eitza_edges": 1,
+    "total_packages": 1,
+    "total_nodes_in_packages": 2,
+    "isolated_bechina_components": 1,
+    "merges_performed": 0,
+    "good_packages": 1,
+    "evil_packages": 0,
+    "neutral_packages": 0,
+    "evil_mirror_present": false,
+    "evil_mirror_notes": "Torah #140 is entirely focused on the positive domain of the Tzaddik and his seal-nature. There is no explicit evil counterpart developed. The teaching does not discuss opposing forces, falsehood, or a 'dark side' of the seal metaphor. This is consistent with it being a micro-teaching (one teaching, one concept pair) functioning as a self-contained reflection on knowability and the Tzaddik."
+  }
+}

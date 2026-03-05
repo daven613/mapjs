@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "source": "Torah #95 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===95 AND type==='bechina'. Result: ZERO bechina edges found. The dataset contains exactly one edge for reference=95 (edge id=1738), and it is type='eitza', not 'bechina'. Therefore the bechina subgraph is empty — no nodes, no edges, no connected components, no data-driven packages. All package proposals in this file are derived entirely from Step 5 (gap analysis of the source text), not from connected-component analysis of the bechina dataset."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 95,
+      "label": "מָה וְאֶפֶס וָאַיִן — בְּחִינַת הַבִּיטּוּל",
+      "label_en": "Mah, Ephes, and Ayin — The Aspect of Self-Nullification",
+      "polarity": "good",
+      "reason": "The Rebbe presents מה (nothingness/what), אפס (zero/nothing), and אין (non-being) as a triple compound phrase for one essential state: the attitude of complete self-nullification that a leader must embody. These three terms share the same essential domain — they are all names for the experience of egolessness and divine smallness. The Rebbe uses all three in one breath: 'מַחֲזִיק אֶת עַצְמוֹ בִּבְחִינַת מָה וְאֶפֶס וָאַיִן,' establishing them as co-referential aspects of the same reality. This is the positive pole of the Torah: the state a leader should maintain. The good/evil polarity is clear — this cluster represents the ideal of humility before God (good) in contrast to the arrogance (גַּאֲוָה) that destroys leaders (evil mirror, see Package 2).",
+      "dominant_node": "מה",
+      "nodes": [
+        "מה",
+        "אפס",
+        "אין"
+      ],
+      "node_degrees": {
+        "מה": 2,
+        "אפס": 1,
+        "אין": 1
+      },
+      "merge_notes": [],
+      "source_basis": "GAP_FROM_SOURCE_TEXT",
+      "source_quote": "מַחֲזִיק אֶת עַצְמוֹ בִּבְחִינַת מָה וְאֶפֶס וָאַיִן",
+      "dataset_edges": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 95,
+      "label": "קֻפָּה שֶׁל שְׁרָצִים וְאֲחוֹרַיִם דְּמָ\"ה",
+      "label_en": "The Basket of Creeping Things and the Back-Aspect of MaH",
+      "polarity": "neutral",
+      "reason": "The Rebbe explicitly interprets the talmudic 'basket of creeping things hanging behind him' (Yoma 22b) as the kabbalistic 'אֲחוֹרַיִם דְּמ\"ה' from Etz Chaim (Sha'ar Arich Anpin, ch. 12). The word 'פֵּרוּשׁ' (meaning/explanation) is the Rebbe's standard indicator that two things share the same identity — the basket IS the back-of-MaH, and the back-of-MaH IS the basket. This is a genuine bechina: the talmudic image and the kabbalistic structure are two faces of the same reality. Polarity is neutral: the basket of creeping things represents the humbling mechanism — it is an instrument that can preserve a good leader or, in its absence, expose an arrogant one. The concept itself is neither holy nor evil; it is a structural device. This package is closely related to Package 1 (the state of mah/humility that results) via an eitza connection: the basket → maintaining the state of mah.",
+      "dominant_node": "קופה של שרצים",
+      "nodes": [
+        "קופה של שרצים",
+        "אחוריים דמ\"ה"
+      ],
+      "node_degrees": {
+        "קופה של שרצים": 1,
+        "אחוריים דמ\"ה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["קופה של שרצים", "אחוריים דמ\"ה"],
+          "reason": "These two nodes are explicitly equated in the source text via the word 'פֵּרוּשׁ' (explanation/interpretation): 'וְזֶה פֵּרוּשׁ סוֹד שֶׁמּוּבָא בְּעֵץ הַחַיִּים... אֲחוֹרַיִם דְּמ\"ה, תָּסִיר מ\"ה נִשְׁאָר פ\"ה. פֵּרוּשׁ, עַל יְדֵי קֻפָּה שֶׁל שְׁרָצִים שֶׁתָּלוּי מֵאֲחוֹרָיו.' The Rebbe says: the meaning of the Etz Chaim secret is: through the basket hanging behind him. The basket = the back-of-MaH. These are the same concept viewed from the rabbinic domain and the kabbalistic domain respectively. This is a classic bechina: two names from two different knowledge-systems for the same underlying reality. They belong in one package. Note: this pair has only 2 nodes (below the typical threshold for an independent package), but since there are no bechina edges in the dataset for Torah #95, and these two are the only kabbalistic-structural concepts in the Torah, they form their own package here. The merge is not into Package 1 (mah/ephes/ayin) because: the basket is the CAUSE of the mah-state, not an expression OF the mah-state. The mechanism of humility shares a different nature from the experience of humility. Per framework: do not group cause-and-effect (eitza) into the same package."
+        }
+      ],
+      "source_basis": "GAP_FROM_SOURCE_TEXT",
+      "source_quote": "פֵּרוּשׁ, עַל יְדֵי קֻפָּה שֶׁל שְׁרָצִים שֶׁתָּלוּי מֵאֲחוֹרָיו, עַל יְדֵי זֶה מַחֲזִיק אֶת עַצְמוֹ בִּבְחִינַת מָה",
+      "dataset_edges": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 95,
+      "label": "גַּאֲוָה וּפֶה — הַמַּנְהִיג הַמִּתְגָּאֶה",
+      "label_en": "Arrogance and the Mouth — The Leader Who Becomes Proud",
+      "polarity": "evil",
+      "reason": "When the leader removes מה from himself — when he stops holding himself as nothing and becomes arrogant — what remains is פה (mouth). The פה here is the mouth of the public who shame and disgrace him: 'חֲזֹר לַאֲחוֹרֶיךָ, וּמְבַזִּים אוֹתוֹ.' The Rebbe constructs this as an IS-statement: 'אֲזַי נִשְׁאָר פֶּה, הַיְנוּ שֶׁבְּנֵי אָדָם פּוֹתְחִים אֶת פִּיהֶם' — 'then PeH remains, MEANING people open their mouths.' The word הַיְנוּ (meaning) is a bechina-identifier: the remaining-PeH IS the opening of mouths against him. This is the evil mirror of Package 1: where Package 1 (good) = the leader in the state of mah, Package 3 (evil) = the leader in the state of gaava, whose elevation produces his public disgrace. The components of this package are: גַּאֲוָה (arrogance, the sin), פֶּה (the mouth that opens against him), and בִּזָּיוֹן (disgrace, the outcome that the mouth produces). Note: the connection between גאוה and פה is a bechina — 'when mah is removed, peh IS what remains;' not merely a consequence. The peh is not caused by the gaava; the peh IS the reality-of-gaava expressed in the public sphere.",
+      "dominant_node": "פה",
+      "nodes": [
+        "פה",
+        "גאוה",
+        "בזיון"
+      ],
+      "node_degrees": {
+        "פה": 2,
+        "גאוה": 1,
+        "בזיון": 1
+      },
+      "merge_notes": [],
+      "source_basis": "GAP_FROM_SOURCE_TEXT",
+      "source_quote": "וּכְשֶׁמֵּסִיר מִמֶּנּוּ מָה, שֶׁאֵין מַחֲזִיק אֶת עַצְמוֹ לְמָה, אֶלָּא שֶׁהוּא מִתְגָּאֶה, אֲזַי נִשְׁאָר פֶּה, הַיְנוּ שֶׁבְּנֵי אָדָם פּוֹתְחִים אֶת פִּיהֶם וְאוֹמְרִים חֲזֹר לַאֲחוֹרֶיךָ, וּמְבַזִּים אוֹתוֹ",
+      "dataset_edges": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_bechina_edges_in_dataset": 0,
+    "total_eitza_edges_in_dataset": 1,
+    "total_nodes_from_dataset": 0,
+    "total_nodes_from_source_text": 8,
+    "total_packages": 3,
+    "raw_connected_components_from_dataset": 0,
+    "all_packages_derived_from": "source_text_gap_analysis",
+    "source_text_lines": 3,
+    "explicit_bechina_language_found": true,
+    "bechina_phrase_in_text": "בִּבְחִינַת מָה וְאֶפֶס וָאַיִן",
+    "good_evil_mirror": "Package 1 (מה/אפס/אין — humility/good) mirrors Package 3 (גאוה/פה/בזיון — arrogance/evil). Package 2 (קופה של שרצים — the humbling mechanism) is neutral infrastructure connecting the two poles.",
+    "note": "Torah #95 is a very short Torah (3 lines). It has one eitza edge in the dataset (edge 1738: קופה של שרצים → מחזיק את עצמו בבחינת מה ואפס ואין) but zero bechina edges. All three packages proposed here are gap-analysis packages built from the source text and must be validated by a human reviewer before adding bechina edges to the dataset."
+  }
+}

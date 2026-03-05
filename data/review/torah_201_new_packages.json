@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "source": "Torah #201",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NO_NEW_PACKAGES",
+  "new_packages": [],
+  "observations": "Torah #201 has zero bechina edges in torahData.js, and the source text contains no bechina language at all. The framework requires a package to be formed from bechina-connected nodes — concepts that share the same essential nature, expressed through language like 'X הוא בְּחִינַת Y' or 'X נִקְרָא Y'. Torah #201 contains no such declarations.\n\nThe three connections made in the text are:\n1. Pesach prayer = crying out (tze'akah) — this is a contextual/descriptive statement about the character of Pesach prayer, not a bechina equation between two conceptual nodes.\n2. The initials of 'tzedakah saves from death' (Proverbs 10:2) spell מַצָּה — this is a notarikon (acronym/letter-allusion), not a bechina. The Rebbe notes a letter-level hint connecting charity to Passover's central symbol. He does not say 'charity IS matzah' as an equivalence of shared essential nature. Even if we treated this notarikon as implying a conceptual connection, it would produce only a two-node pair (צְדָקָה and מַצָּה), which is below the threshold of 3+ concepts required for a new package proposal under Step 6 of the algorithm, and the relationship mode (notarikon) is not bechina.\n3. Giving charity heals epilepsy (choleh nofel), proven via the acronym of Psalms 112:9 — this is a pure eitza (cause-and-effect), correctly captured in edge 2303 of the dataset.\n\nNo three or more concepts are connected by explicit bechina language forming an independent conceptual domain. The teaching's architecture is: [Passover context] + [notarikon hint: charity ↔ matzah] + [eitza: charity → heals epilepsy]. There is no bechina cluster of any size in this Torah. Adding the eitza edge לְפַזֵּר צְדָקָה → healing choleh nofel to the dataset (already present as edge 2303) is the correct and complete data representation. No new packages can be proposed."
+}

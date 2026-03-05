@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "source": "Torah #95 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": null,
+      "node_id": "מחשבת הבכי / ציפייה לבכיה",
+      "node_text": "מַחֲשֶׁבֶת הַבְּכִי — הַחוֹשֵׁב וּמְצַפֶּה שֶׁיִּבְכֶּה",
+      "polarity": "evil",
+      "reason": "The Rebbe explicitly declares that the expectation/anticipation of weeping during prayer is a bechina of מחשבה זרה (an alien thought that confuses). This is not a cause-effect relationship but an identity statement: the thought-of-expecting-to-cry IS, in its essential nature, just another species of alien thought. It belongs to the evil/obstruction polarity because it disrupts the wholeness of prayer. Since there are zero dataset edges for this Torah, no package exists to assign it to.",
+      "source_quote": "כִּי זֶה שֶׁחוֹשֵׁב וּמְצַפֶּה שֶׁיִּבְכֶּה, הוּא גַּם-כֵּן בְּחִינַת מַחֲשָׁבָה זָרָה שֶׁמְּבַלְבֶּלֶת הַכַּוָּנָה",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": null,
+      "node_id": "מחשבה זרה",
+      "node_text": "מַחֲשָׁבָה זָרָה",
+      "polarity": "evil",
+      "reason": "מחשבה זרה (alien/foreign thought) is the second node of the only bechina pair in this Torah. The Rebbe equates ציפייה לבכיה with מחשבה זרה, making these two nodes of a potential dataset edge. Since there are zero dataset edges for this Torah, no package exists to assign it to.",
+      "source_quote": "הוּא גַּם-כֵּן בְּחִינַת מַחֲשָׁבָה זָרָה שֶׁמְּבַלְבֶּלֶת הַכַּוָּנָה, שֶׁאֵינוֹ יָכוֹל לִשְׁמֹעַ הֵיטֵב מַה שֶּׁהוּא מְדַבֵּר עַל-יְדֵי-זֶה",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "מחשבת הבכי / ציפייה לבכיה",
+      "מחשבה זרה"
+    ],
+    "gap_analysis_summary": "Torah #95 is one of the shortest teachings in Likutay Moharan Tinyana — five sentences on the proper way to conduct hitbodedut (personal prayer/meditation), saying Tehillim, supplications, and requests before God. The teaching has NO entries in torahData.js at reference 1095 — the dataset is completely empty for this Torah. Reading the source text carefully reveals exactly one explicit bechina equivalence: the thought of anticipating weeping during prayer (מחשבת הבכי / ציפייה לבכיה) is declared a bechina of מחשבה זרה (alien thought that disrupts kavvanah). This is a clear identity statement ('הוּא גַּם-כֵּן בְּחִינַת מַחֲשָׁבָה זָרָה'). The remaining concepts in the teaching — hitbodedut, saying of Tehillim/supplications/requests, speaking with a whole heart, weeping before God as a child before a father, focusing on the words of prayer, speaking as a man to his friend — are described functionally and are connected by eitza (cause-and-effect) rather than bechina. For example: speaking the words without alien thoughts (eitza) → the heart is aroused → weeping. These are not bechina equivalences and do not belong in a bechina package. The missing bechina pair (ציפייה לבכיה ↔ מחשבה זרה) would form a two-node 'evil obstruction' package if entered into the dataset, but since only two nodes are present it does not meet the threshold for a new full package proposal (see torah_95_new_packages.json)."
+  }
+}

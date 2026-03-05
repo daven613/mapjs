@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "source": "Torah #120 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference === 120 AND type === 'bechina'. Total: 3 bechina edges found (ids: 2114, 2231, 2454), yielding 5 nodes across 2 raw connected components. Component A: כְּשֶׁלּוֹמֵד מִתּוֹךְ הַסֵּפֶר — עֲשִׂיָּה — נַעֲשֶׂה (linked via edges 2454 and 2114 through the shared hub node עֲשִׂיָּה). Component B: כְּשֶׁשּׁוֹמֵעַ מִפֶּה הַצַּדִּיק — נִשְׁמַע (edge 2231). No merging is warranted: Components A and B are the two structural poles of the teaching — the dimension of action/book-learning (נַעֲשֶׂה, which Israel lost at the sin of the golden calf) and the dimension of hearing/oral transmission from the tzaddik (נִשְׁמַע, the crown that remained). These two poles are contrasted, not equated — merging them would collapse the teaching's argument. Torah #120 is extremely short (4 lines) and the dataset captures all bechina identifications present in the text. The gap analysis (torah_120_additions.json) confirms no uncaptured bechina edges exist."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 120,
+      "label": "סֵפֶר וַעֲשִׂיָּה וְנַעֲשֶׂה",
+      "label_en": "The Book, Action, and Na'aseh",
+      "polarity": "neutral",
+      "reason": "This package groups three nodes that are all aspects of the same structural domain: the written/material dimension of Torah engagement. The dataset chains them as follows — learning from a book IS a bechina of עֲשִׂיָּה (action/making, edge 2454), and עֲשִׂיָּה IS a bechina of נַעֲשֶׂה (the 'we will do' commitment given at Sinai, edge 2114). The teaching draws on the Midrash: Israel forfeited נַעֲשֶׂה by making the golden calf, and this forfeiture means that learning from a book — which is of the same essential dimension as that forfeited commitment — no longer carries the same spiritual power to arouse the person. The polarity is 'neutral' rather than 'evil' because the Torah does not condemn books or action — it simply explains their structural limitation after the sin of the golden calf. The book and the act of learning from it are not inherently evil; they represent the outer, physical, action-layer of Torah engagement. The dominant node is עֲשִׂיָּה because it is the hub connecting both other nodes (degree 2): it is the concept-bridge between the act of reading a book and the biblical category of נַעֲשֶׂה.",
+      "dominant_node": "עשיה",
+      "nodes": [
+        "כשלומד מתוך הספר",
+        "עשיה",
+        "נעשה"
+      ],
+      "node_degrees": {
+        "עשיה": 2,
+        "כשלומד מתוך הספר": 1,
+        "נעשה": 1
+      },
+      "merge_notes": [
+        "This component of 3 nodes is internally connected through the shared hub עֲשִׂיָּה. No external merges were performed.",
+        "The component was NOT merged with Package 2 (נִשְׁמַע cluster) despite both being small (2-3 node) components. The reason: the two packages are the structural OPPOSITES of each other within this Torah's argument — Package 1 is the fallen/limited dimension (action/book, lost at the Calf), Package 2 is the surviving/empowered dimension (hearing, the crown that remained). Merging them would destroy the essential teaching. Per framework.md §3.2 rule 2 and the merge criteria (shared nature only, not eitza), they may not be merged: their relationship is one of contrast and opposition within the teaching's argument, not shared essential nature.",
+        "The Torah does not assign an evil counterpart or mirror to this package. The 'falling short' of book-learning is a structural/historical limitation, not a demonic force."
+      ],
+      "source_edges": [
+        {
+          "id": 2454,
+          "node1_id": "כשלומד מתוך הספר",
+          "node2_id": "עשיה",
+          "proof": "כְּשֶׁלּוֹמֵד מִתּוֹךְ הַסֵּפֶר שֶׁהוּא בְחִינַת עֲשִׂיָּה"
+        },
+        {
+          "id": 2114,
+          "node1_id": "עשיה",
+          "node2_id": "נעשה",
+          "proof": "עֲשִׂיָּה, שֶׁהוּא בְחִינַת נַעֲשֶׂה"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 120,
+      "label": "שְׁמִיעָה מִפֶּה הַצַּדִּיק וְנִשְׁמַע",
+      "label_en": "Hearing from the Tzaddik's Mouth and Nishma",
+      "polarity": "good",
+      "reason": "This package groups the two nodes that are both aspects of the same holy, surviving dimension of Torah engagement: the oral/aural transmission from the tzaddik. The dataset records: hearing from the mouth of the tzaddik IS a bechina of נִשְׁמַע (the 'we will hear' commitment from Sinai, edge 2231). The teaching explains that while Israel forfeited נַעֲשֶׂה (action/book, Package 1), the crown of נִשְׁמַע remained with them. Therefore, hearing the tzaddik speak — which is an act of the same essential dimension as that preserved crown — retains the full spiritual power to arouse and awaken the person. The polarity is 'good' because this is the preserved holy dimension: the keter (crown) that survived the sin of the golden calf. The dominant node is נִשְׁמַע because it is the biblical/Sinaitic category that gives the entire package its theological grounding; without it, the statement about the tzaddik's mouth would be a practical observation rather than a cosmic-structural claim. The node כְּשֶׁשּׁוֹמֵעַ מִפֶּה הַצַּדִּיק is the existential application of that Sinaitic crown in the present generation.",
+      "dominant_node": "נשמע",
+      "nodes": [
+        "כששומע מפה הצדיק",
+        "נשמע"
+      ],
+      "node_degrees": {
+        "נשמע": 1,
+        "כששומע מפה הצדיק": 1
+      },
+      "merge_notes": [
+        "This is a 2-node component from a single bechina edge (id: 2231). Per the algorithm, small (1-2 node) components are candidates for merging by shared nature only. This component was NOT merged with Package 1 for the reason stated above: these two components are the two opposing structural poles of the Torah's argument.",
+        "The gap analysis confirms no additional bechina edges involving נִשְׁמַע exist in the source text for Torah 120. The teaching does not add further bechinot to this cluster — it states the equation and draws the practical conclusion (therefore one must travel to the tzaddik rather than rely only on books).",
+        "The good/evil mirror: Package 1 (עֲשִׂיָּה/נַעֲשֶׂה) is the dimmed/lost dimension — while not evil, it is the 'crown removed' side. Package 2 (נִשְׁמַע) is the preserved crown. The teaching's structure is: lost crown vs. preserved crown, not good vs. evil per se. However, Package 2 clearly represents the path of holiness and is therefore marked 'good'."
+      ],
+      "source_edges": [
+        {
+          "id": 2231,
+          "node1_id": "כששומע מפה הצדיק",
+          "node2_id": "נשמע",
+          "proof": "כְּשֶׁשּׁוֹמֵעַ מִפֶּה הַצַּדִּיק, הוּא בְחִינַת נִשְׁמַע"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 5,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 0,
+    "note_on_merges": "No merges were performed. The two components represent the two contrasting structural poles of the teaching (action/book vs. hearing/tzaddik), and their relationship is one of opposition within the Torah's argument, not shared essential nature. Merging small components by shared nature (per the algorithm) is not warranted here because these two clusters are NOT aspects of the same underlying reality — they are definitionally distinct by the Sinai categories of נַעֲשֶׂה (action/forfeited) and נִשְׁמַע (hearing/preserved).",
+    "eitza_edges_excluded": [],
+    "note_on_eitza": "No eitza edges exist for Torah #120 in the dataset. The teaching's causal argument — that because Israel forfeited נַעֲשֶׂה (Package 1), the book-learning lacks power, and therefore one should travel to the tzaddik to activate נִשְׁמַע (Package 2) — is an eitza flow BETWEEN the two packages. This inter-package causal arrow is the structural spine of the Torah but is not captured in the dataset as an eitza edge. It would be: [Package 1 limitation] → [eitza] → [necessity of Package 2 activation]."
+  }
+}

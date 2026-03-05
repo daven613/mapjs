@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "source": "Torah #50 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_50_packages.json (2 packages, 13 nodes, 10 bechina edges), all reference===50 edges from torahData.js, and the full source text torah_50.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset for Torah #50 and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, זֶה בְּחִינַת, נִקְרֵאת, הֵן הֵן) were considered for additions."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "פְּגַם הַבְּרִית",
+      "node_id": "כלבא",
+      "node_text": "כַּלְבָּא",
+      "polarity": "evil",
+      "reason": "Line 7 of the source text states explicitly: 'וְאָז כַּלְבָּא נָחֵת, שֶׁהוּא בְּחִינַת מַיִּין מְרִירִין, שֶׁצּוֹוֵחַ הַב הַב' — the dog descends, and it IS a bechina of bitter waters (מיין מרירין). This is unambiguous bechina language using the formula 'הוּא בְּחִינַת'. Since מיין מרירין is the second node in Package 1 (degree 2), the dog shares its essential nature and belongs in Package 1. The dog is one of the two central metaphors of Torah #50 — the Torah opens with the verse 'הַצִּילָה מֵחֶרֶב נַפְשִׁי, מִיַּד כֶּלֶב' (save me from the sword, from the hand of the dog) and the dog appears throughout as the embodiment of the evil that devours the prayer of the covenant-violator. The dog is the agent that 'descends and eats his sacrifice' (line 2 — הַיְנוּ תְּפִלָּתוֹ). A new bechina edge (reference=50, type=bechina) linking כלבא to מיין מרירין should be added to the dataset.",
+      "source_quote": "וְאָז כַּלְבָּא נָחֵת, שֶׁהוּא בְּחִינַת מַיִּין מְרִירִין, שֶׁצּוֹוֵחַ הַב הַב",
+      "source_line": 7,
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "כלבא",
+        "node2_id": "מיין מרירין",
+        "reference": 50,
+        "type": "bechina"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "פְּגַם הַבְּרִית",
+      "node_id": "עזי פנים",
+      "node_text": "עַזֵּי פָנִים",
+      "polarity": "evil",
+      "reason": "Line 13 of the source text states: 'וְדַע שֶׁעַזֵּי פָּנִים שֶׁיֵּשׁ בַּדּוֹר, הֵן הֵן הַכְּלָבִים, כְּמוֹ שֶׁכָּתוּב: וְהַכְּלָבִים עַזֵּי נֶפֶשׁ' — the brazen-faced ones of the generation ARE the dogs. The phrase הֵן הֵן (they are they) is the strongest possible bechina equation — a direct identity statement. The brazen-faced ones of the generation ARE the dogs, and dogs are a bechina of מיין מרירין (Package 1). Therefore עזי פנים share the same essential nature as the other Package 1 nodes. The node עזי פנים exists in the dataset (edge 1493, reference=67, type=bechina: עזי פנים ↔ כלבים עזי נפש) but there is no Torah-50 edge connecting it to the Torah-50 bechina graph. A new edge (reference=50, type=bechina) linking עזי פנים to כלבא should be created for Torah #50.",
+      "source_quote": "וְדַע שֶׁעַזֵּי פָּנִים שֶׁיֵּשׁ בַּדּוֹר, הֵן הֵן הַכְּלָבִים",
+      "source_line": 13,
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": 1493,
+      "note": "Node exists in dataset at reference=67 (edge 1493: עזי פנים ↔ כלבים עזי נפש). No Torah-50 edge exists. Requires a new reference=50 bechina edge linking עזי פנים to כלבא.",
+      "proposed_edge": {
+        "node1_id": "עזי פנים",
+        "node2_id": "כלבא",
+        "reference": 50,
+        "type": "bechina"
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "שְׁמִירַת הַבְּרִית",
+      "node_id": "כל עצמותי תאמרנה",
+      "node_text": "כָּל עַצְמוֹתַי תֹּאמַרְנָה",
+      "polarity": "good",
+      "reason": "Two explicit bechina statements in the source text establish this psalm-verse as a named bechina-concept. Line 2: 'וּכְשֶׁמִּתְפַּלֵּל וְטוֹעֵם מְתִיקוּת בְּדִבּוּרֵי הַתְּפִלָּה, זֹאת הַבְּחִינָה נִקְרֵאת: כָּל עַצְמוֹתַי תֹּאמַרְנָה' — when one prays and tastes sweetness in the words of prayer, THIS BECHINA IS CALLED: all my bones shall speak. Line 5: 'וּכְשֶׁעֲצָמוֹת מַרְגִּישִׁין מְתִיקוּת הַדִּבּוּרִים, זֶה בְּחִינַת: כָּל עַצְמוֹתַי תֹּאמַרְנָה' — when the bones feel the sweetness of the words, this IS a bechina of 'all my bones shall speak.' The verse is explicitly the scriptural name of the state produced by covenant-keeping. It is a bechina of עצם (bone) — the bones speaking ARE the כל עצמותי תאמרנה state. It belongs in Package 2 alongside עצם and אריה as the scriptural articulation of the holy-bone domain. After adding this node, Package 2's bone-lion sub-cluster becomes a 3-node set: עצם / אריה / כל עצמותי תאמרנה — all three are aspects of the same holy embodied prayer reality.",
+      "source_quote": "זֹאת הַבְּחִינָה נִקְרֵאת: כָּל עַצְמוֹתַי תֹּאמַרְנָה",
+      "source_line": 2,
+      "source_quote_2": "וּכְשֶׁעֲצָמוֹת מַרְגִּישִׁין מְתִיקוּת הַדִּבּוּרִים, זֶה בְּחִינַת: כָּל עַצְמוֹתַי תֹּאמַרְנָה",
+      "source_line_2": 5,
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "כל עצמותי תאמרנה",
+        "node2_id": "עצם",
+        "reference": 50,
+        "type": "bechina"
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_50_edges": 11,
+    "total_reference_50_bechina_edges": 10,
+    "total_reference_50_eitza_edges": 1,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["מי שפגם בבריתו", "מיין מרירין", "מיין מסאבין", "זרע טמא", "מרה", "\"חרב פיות\"", "גיהנם"],
+      "package_2": ["מיין מתיקין", "מיין דדכין", "זרע קדש", "תקון הברית", "עצם", "אריה"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["כלבא", "כל עצמותי תאמרנה"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "בְּרֶעכֶנִישׁ (the bone-breaking disease)",
+        "source_line": 8,
+        "source_text": "וְזֶה בְּחִינַת חוֹלַאַת שֶׁקּוֹרִין בְּרֶעכֶנִישׁ... בְּחִינַת מַיִּין מְסָאֳבִין, מַיִּין מְרִירִין",
+        "reason": "The Rebbe calls this bone-breaking disease a bechina of defiled/bitter waters (מיין מסאבין, מיין מרירין). The bechina language is present. However, ברעכניש is: (1) a Yiddish loanword for a specific illness rather than a spiritual concept the Torah builds upon theologically; (2) used as a concrete medical illustration of the physical consequence of covenant-violation, immediately qualified with 'רַחֲמָנָא לִצְלָן' (God protect us); (3) never returned to in the teaching. It is a concrete application/example of the defiled-waters concept rather than an independent conceptual node. Its bechina-relation is already fully captured by the existing Package 1 nodes מיין מסאבין and מיין מרירין. Adding it would duplicate rather than expand the package. Excluded as an illustration rather than a primary bechina-concept."
+      },
+      {
+        "concept": "שֵׁגָל (name for the dog, from root משגל)",
+        "source_line": 15,
+        "source_text": "וּבִשְׁבִיל זֶה נִקְרָא כֶּלֶב בְּשֵׁם שֵׁגָל... כִּי הוּא בָּא עַל תַּאֲוַת הַמִּשְׁגָּל",
+        "reason": "The Rebbe says 'the dog is called by the name shegal because it acts on the desire for mishgal.' The word נִקְרָא (is called) can indicate bechina. However, שגל is: (1) presented here as an etymological wordplay on the word משגל (sexual intercourse), not as an independent spiritual concept; (2) the same entity as כלב, explained through its name-root; (3) as a node it would be a pure alias for כלבא rather than an independent package member. שגל is a name-etymology for the dog, not a second spiritual concept with independent bechina identity. Excluded as a name-variant/alias for כלבא rather than an independent bechina-concept."
+      },
+      {
+        "concept": "יְתִיב (sitting — of the scholar who fasts)",
+        "source_line": 17,
+        "source_text": "וְזֶה בְּחִינַת דִּיתִיב בְּתַעֲנִיתָא – יְתִיב דַּיְקָא, יְתִיב הוּא מוֹרֶה עַל הַדָּבָר שֶׁאֵין מִשְׁתַּנֶּה",
+        "reason": "The Rebbe analyzes the Aramaic word יתיב from the Talmudic phrase 'צוֹרְבָא מֵרַבָּנָן דִּיתִיב בְּתַעֲנִיתָא' to explain its grammatical stative aspect — 'sitting denotes something that does not change.' This is a linguistic analysis of a grammatical form, not a bechina declaration establishing a spiritual concept as an aspect of another. The Rebbe is noting the precision of the Talmud's word choice, not equating יתיב to a spiritual domain. Excluded as linguistic analysis, not a bechina-concept."
+      },
+      {
+        "concept": "מְתִיקוּת (sweetness)",
+        "source_lines": "2, 3, 4, 5",
+        "reason": "Sweetness (מְתִיקוּת) appears repeatedly as a quality of prayer-with-pure-waters. Line 3 says 'מַיִּין מְתִיקִין זֶה בְּחִינַת מַיִּין דְּדַכְיָן' — the bechina here is מיין מתיקין (sweet waters), not sweetness itself as an abstraction. The node מיין מתיקין already in Package 2 fully captures the concept of sweetness-in-the-covenant-context. Sweetness itself is a descriptor/quality, not an independent bechina-concept node."
+      },
+      {
+        "concept": "תְּפִלָּה (prayer)",
+        "reason": "Prayer is the arena and outcome throughout Torah #50 but the Rebbe does not use bechina language to equate תפלה to another concept in this Torah. Line 2's 'הַיְנוּ תְּפִלָּתוֹ' (the dog eats his sacrifice, namely his prayer) is an explanatory gloss identifying the korban-metaphor with prayer, not a bechina equation between two spiritual concepts. Prayer is the frame/context of Torah #50; it flows from the covenant domains (eitza relation between packages), not an aspect sharing the same nature within a package. Excluded."
+      }
+    ]
+  }
+}

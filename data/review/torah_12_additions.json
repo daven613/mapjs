@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "source": "Torah #12",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 17,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      {
+        "concept": "שכינה",
+        "context": "Section א (line 6): 'תוֹרָה שֶׁבְּעַל־פֶּה הַיְנוּ שְׁכִינְתָּא'. The text explicitly equates תורה שבעל פה with שכינה using identity language. This is a direct bechina statement. The dataset has no bechina edge שכינה ↔ תורה שבעל פה for reference=12. Note: דוד, רחל, and יין are all mapped to תורה שבעל פה in the dataset, but the direct שכינה ↔ תורה שבעל פה equivalence is absent.",
+        "source_text_ref": "Section א, line 6",
+        "priority": "high",
+        "recommended_action": "Add bechina edge: שְׁכִינָה ↔ תּוֹרָה שֶׁבְּעַל־פֶּה (ref=12). Proof text: 'תוֹרָה שֶׁבְּעַל־פֶּה הַיְנוּ שְׁכִינְתָּא, כְּמוֹ שֶׁכָּתוּב (בְּפֶתַח אֵלִיָּהוּ): מַלְכוּת – פֶּה, וְתוֹרָה שֶׁבְּעַל־פֶּה קָרִינַן לָהּ'."
+      },
+      {
+        "concept": "מלכות / פה",
+        "context": "Section א (line 6): 'מַלְכוּת – פֶּה, וְתוֹרָה שֶׁבְּעַל־פֶּה קָרִינַן לָהּ' (from Patach Eliyahu). This equates מלכות with פה and both with תורה שבעל פה. The source text uses it as a bechina basis. No bechina edge for מלכות ↔ פה or מלכות ↔ תורה שבעל פה exists in the dataset for reference=12.",
+        "source_text_ref": "Section א, line 6",
+        "priority": "high",
+        "recommended_action": "Add bechina edges: מַלְכוּת ↔ פֶּה (ref=12) and מַלְכוּת ↔ תּוֹרָה שֶׁבְּעַל־פֶּה (ref=12). These belong in Package 2. Proof: 'מַלְכוּת – פֶּה, וְתוֹרָה שֶׁבְּעַל־פֶּה קָרִינַן לָהּ'."
+      },
+      {
+        "concept": "לב / הלב",
+        "context": "Section ד (line 30): 'וְהַלֵּב הוּא בִּינָה, שֶׁשָּׁם יַיִן הַמְשַׂמֵּחַ'. The text states 'the heart IS Binah' — explicit bechina identity between לב and בינה. The dataset has יין ↔ בינה לבא (ref=12, edge 535) but not לב ↔ בינה directly. Also, section ד describes 'שמחה בא מהלב' and quotes 'נתתה שמחה בלבי'.",
+        "source_text_ref": "Section ד, line 30",
+        "priority": "medium",
+        "recommended_action": "Add bechina edge: לֵב ↔ בִּינָה (ref=12). Proof text: 'וְהַלֵּב הוּא בִּינָה, שֶׁשָּׁם יַיִן הַמְשַׂמֵּחַ'. Would connect to Package 2 via existing יין ↔ בינה לבא chain."
+      },
+      {
+        "concept": "יעקב (as the Tzaddik/Tanna)",
+        "context": "Section א (line 3): 'יַעֲקֹב הוּא הַצַּדִּיק, הַמְחַדֵּשׁ חִדּוּשִׁין דְּאוֹרַיְתָא'. The text opens with the bechina: יעקב = the Tzaddik who innovates Oral Torah. Section ג (line 20): 'וַיְהִי כִשְׁמֹעַ לָבָן... יַעֲקֹב הַיְנוּ הַתַּנָּא'. יעקב = the Tanna is used throughout as a persistent bechina. No bechina edge יעקב ↔ הצדיק or יעקב ↔ התנא exists in the dataset for reference=12.",
+        "source_text_ref": "Section א, lines 3 and 20; Section ג",
+        "priority": "medium",
+        "recommended_action": "Add bechina edge: יַעֲקֹב ↔ הַצַּדִּיק / הַתַּנָּא (ref=12). Would belong in Package 4 (Two Tzaddikim) as the upper Tzaddik's scriptural name. Proof: 'יַעֲקֹב הוּא הַצַּדִּיק, הַמְחַדֵּשׁ חִדּוּשִׁין דְּאוֹרַיְתָא'."
+      },
+      {
+        "concept": "לבן (the false scholar)",
+        "context": "Section א (line 4): 'וְלָבָן הוּא תַּלְמִיד־חָכָם שֵׁד יְהוּדִי'. The text opens with the bechina: לבן = the false/demon-scholar who learns Torah for pride and to attack tzaddikim. This is the primary EVIL MIRROR of יעקב in the Torah. No bechina edge לבן ↔ תלמיד חכם שד יהודי exists in the dataset for reference=12.",
+        "source_text_ref": "Section א, line 4",
+        "priority": "high",
+        "recommended_action": "Add bechina edge: לָבָן ↔ תַּלְמִיד־חָכָם שֵׁד יְהוּדִי (ref=12). This would form the seed of an EVIL MIRROR package (see torah_12_new_packages.json). The evil structure of this Torah is entirely in eitza edges; adding this bechina would allow the evil cluster to be formed."
+      },
+      {
+        "concept": "נצח והוד עליונים (upper Netzach and Hod as upper lips)",
+        "context": "Section ד (line 35): 'כְּשֶׁנִּתְעוֹרְרִים הַשְּׂפָתַיִם עֶלְיוֹנִים, שֶׁהֵן נֶצַח וָהוֹד עֶלְיוֹנִים, לִבְחִינַת זִוּוּג'. The text states the upper lips = נצח והוד עליונים, which when aroused for zivug (union) then arouse the lower נצח והוד for physical union. Explicit bechina language ('שהן'). No edges in dataset for ref=12 linking נצח/הוד עליונים to שפתיים.",
+        "source_text_ref": "Section ד, line 35",
+        "priority": "medium",
+        "recommended_action": "Add bechina edges: שְׂפָתַיִם עֶלְיוֹנִים ↔ נֶצַח וָהוֹד עֶלְיוֹנִים (ref=12). These belong in Package 1 (Neshikin cluster, which IS about lips/kiss). Proof: 'שֶׁהֵן נֶצַח וָהוֹד עֶלְיוֹנִים'."
+      },
+      {
+        "concept": "גלות השכינה",
+        "context": "Section א (line 6): 'כְּשֶׁהַשְּׁכִינָה... בָּאָה בְּתוֹךְ תַּלְמִיד־חָכָם שֵׁד יְהוּדִי, זֶה נִקְרָא גָּלוּת הַשְּׁכִינָה'. Galut haShekhinah = when Torah שבעל פה enters the false scholar. This is a bechina-equivalent statement (it IS galut by definition). No bechina edge in dataset for ref=12.",
+        "source_text_ref": "Section א, line 6",
+        "priority": "low",
+        "recommended_action": "The 'galut haShekhinah' concept is structurally an eitza (the condition that RESULTS from the Shekhinah entering the false scholar), not a bechina. The current classification as eitza is likely correct. No addition needed."
+      },
+      {
+        "concept": "שושנת העמקים (lily of the valleys)",
+        "context": "Section ד (line 36): 'הַשְּׁכִינָה הִיא מִבְּחִינוֹת שׁוֹשַׁנַּת הָעֲמָקִים, מִבְּחִינַת נְשִׁיקִין'. 'שושנת העמקים' = the Shekhinah at the level of neshikin = kiss-dimension. Explicit bechina language using 'מבחינות'. No bechina edge in dataset for ref=12.",
+        "source_text_ref": "Section ד, line 36",
+        "priority": "medium",
+        "recommended_action": "Add bechina edge: שׁוֹשַׁנַּת הָעֲמָקִים ↔ שְׁכִינָה בִּבְחִינַת נְשִׁיקִין (ref=12). This node bridges Packages 1 and 2 — the Shekhinah in the kiss-dimension. Alternatively: שׁוֹשַׁנַּת הָעֲמָקִים ↔ נְשִׁיקִין (ref=12) which would place it in Package 1."
+      }
+    ],
+    "evil_mirror_gap_note": "Torah #12 presents a pronounced EVIL MIRROR structure (יעקב vs. לבן; the Tanna vs. the false scholar; holy neshikin vs. the unwanted/rejected kiss) that is almost entirely absent from the bechina dataset for ref=12. The evil side appears in multiple eitza edges (the false scholar speaks against the tzaddik, etc.) but is not represented in any bechina edges. This is a systematic gap: the evil cluster (לבן, תלמיד חכם שד יהודי, הורמיז בר לילתא, גלות השכינה, נשיקות שונא) has no bechina connections in the dataset. Adding the core evil-identity bechina (לבן ↔ תלמיד חכם שד יהודי) is the highest priority addition.",
+    "summary": "All 25 nodes with bechina edges for reference=12 are assigned to packages. The main gaps are: (1) שכינה ↔ תורה שבעל פה — the central identity equation of this Torah is missing; (2) לבן ↔ תלמיד חכם שד יהודי — the primary evil bechina is absent, leaving no evil package for ref=12; (3) מלכות ↔ פה — the Patach Eliyahu equation underlying the entire Torah is absent; (4) the Netzach/Hod upper lips = neshikin connection is absent from the dataset. The Torah's evil-mirror structure (the entire לבן/שד dimension) is structurally underrepresented in bechina edges."
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "source": "Torah #59",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===59 AND type==='bechina'. 13 bechina edges yielded 18 unique nodes in 6 raw connected components. Component C (3 nodes: רבוע/משפט/יד) merged into Component A (5 nodes: עגול/אות-סמ\"ך/כסא-כבוד/שם/ששים) because both are explicit poles of the single עיגולא-ורבועא structure, named as such by the Rebbe in section ג ('שבתותי דא עיגולא ורבועא דלגו') and inseparable in sections ד–ה. Component E (2 nodes: בנס/שבת) merged into the same package because 'בְּנֵס' is explicitly a bechina of שַׁבָּת and the source text (section ג) defines שַׁבָּת as the state produced by עיגולא ורבועא together — the miracle-sign IS the Shabbat IS the circle-and-square structure. Components D1 (מלאכי-לבו/התלהבות-הלב) and D2 (התלהבות/מלאכים) merged into one package because they express a single bechina concept — heart-fervor equals angels equals fire — with 'התלהבות הלב' and 'התלהבות' being aliases for the same node split by the dataset. Component B (4 nodes: חומה/ממון/כבישת-כעס/עינים) stands as its own package — the text is explicit that wealth, anger-suppression, and wall are a single bechina, and eyes are a bechina of that same wall/soul complex. Result: 3 packages covering all 18 bechina-connected nodes."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 59,
+      "label": "עִגּוּלָא וְרִבּוּעָא וְכִסֵּא הַכָּבוֹד",
+      "label_en": "The Circle, the Square, and the Throne of Glory",
+      "polarity": "good",
+      "reason": "The dominant node is עגול (degree 3), connecting to אות סמ\"ך, שם, and ששים. The teaching in sections ג–ד defines שַׁבָּת as a bechina of עיגולא ורבועא (Zohar on Vayakhel), and in sections ג–ד the Rebbe unpacks each pole: עִגּוּלָא = אות סמ\"ך (the round letter) = כסא כבוד (Throne of Glory) = שישים מלכות (sixty queens around the throne) = שם (God's Name, 'יַנְחֵנִי בְמַעְגְּלֵי צֶדֶק לְמַעַן שְׁמוֹ'). The square pole: רִבּוּעָא = מִשְׁפָּט = אות מם (the square letter) = יָד ('וְתֹאחֵז בְּמִשְׁפָּט יָדִי'). And בְּנֵס (the miracle of the two letters standing in the Tablets) = שַׁבָּת ('אוֹת הִיא לְעוֹלָם'). All ten nodes share a single essential bechina nature: they are all expressions of the cosmic circle-and-square duality that constitutes Shabbat, the Throne, and the divine Name. The polarity is good — this entire cluster describes the structure of divine honor, holy kingship, and the sacred sign of the covenant. The מם and סמ\"ך standing miraculously upright in the Tablets (section ד) IS the miraculous union of the square and the circle, which IS Shabbat, which IS the Throne of Glory.",
+      "dominant_node": "עגול",
+      "nodes": [
+        "עגול",
+        "אות סמ\"ך",
+        "כסא כבוד",
+        "שם",
+        "ששים",
+        "רבוע",
+        "משפט",
+        "יד",
+        "בנס",
+        "שבת"
+      ],
+      "node_degrees": {
+        "עגול": 3,
+        "אות סמ\"ך": 2,
+        "רבוע": 2,
+        "כסא כבוד": 1,
+        "שם": 1,
+        "ששים": 1,
+        "משפט": 1,
+        "יד": 1,
+        "בנס": 1,
+        "שבת": 1
+      },
+      "merge_notes": [
+        {
+          "merged_component": "Component C",
+          "merged_nodes": ["רבוע", "משפט", "יד"],
+          "reason": "Component C (3 nodes) is not 'small' by strict count but shares the identical bechina nature as Component A. Section ג explicitly names both poles as a unit: 'שַׁבְּתוֹתַי דָּא עִגּוּלָא וְרִבּוּעַ דִּלְגוֹ', and section ד-ה treats the two letters מם (= ריבועא = משפט) and סמ\"ך (= עיגולא = כסא כבוד) as a single inseparable pair: 'מֵם וְסָמֶךְ שֶׁבַּלּוּחוֹת בְּנֵס הָיוּ עוֹמְדִים'. The ריבועא-משפט domain does not exist independently in this Torah — it is always the counterpart of עיגולא-כסא, forming one unit. יד = ריבועא = משפט completes the square pole. To separate them into two packages would fragment a structure the text treats as one."
+        },
+        {
+          "merged_component": "Component E",
+          "merged_nodes": ["בנס", "שבת"],
+          "reason": "Section ד-ה: 'מֵם וְסָמֶךְ שֶׁבַּלּוּחוֹת בְּנֵס הָיוּ עוֹמְדִים. מֵם זֶה רִבּוּעָא, וְסָמֶךְ זֶה עִגּוּלָא הַנַּ\"ל'. The miracle (בְּנֵס) of the two letters standing upright is explicitly the miracle of ריבועא and עיגולא standing together — which the Rebbe defines as שַׁבָּת ('אוֹת הִיא לְעוֹלָם'). The shared bechina nature is: בְּנֵס = the miraculous sign of the circle-and-square unity = שַׁבָּת. This is the same domain as the dominant package. The 2-node pair belongs here."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 59,
+      "label": "הִתְלַהֲבוּת הַלֵּב וּמַלְאֲכֵי אֵשׁ",
+      "label_en": "Heart-Fervor and Angels of Fire",
+      "polarity": "good",
+      "reason": "The Torah's central practical teaching (sections א–ב) describes the defense mechanism against the klipot that cling to one who draws people close to God: the solution (eitza) is to summon 'מַלְאֲכֵי לִבּוֹ' (the angels of his heart), which the text defines in a single sentence as two linked bechinot: (1) 'מַלְאֲכֵי לִבּוֹ, שֶׁהוּא בְחִינַת הִתְלַהֲבוּת הַלֵּב' — the heart-angels ARE the fervor of the heart; (2) 'שֶׁהַהִתְלַהֲבוּת הוּא בְחִינַת מַלְאָכִים, בִּבְחִינַת וַיֵּרָא אֵלָיו מַלְאַךְ ה' בְּלַבַּת אֵשׁ' — fervor IS angels, as seen from Moses at the burning bush. All four nodes — מלאכי לבו, התלהבות הלב, התלהבות, מלאכים — share one essential bechina nature: they are four names for the same spiritual phenomenon, the fiery ardor of the heart that manifests as angelic fire and burns away the klipot. The two dataset entries 'התלהבות הלב' and 'התלהבות' are aliases — the dataset captured one concept under two slightly different labels. Polarity is good: this fire is holy fire that protects the tzaddik and burns the negative forces.",
+      "dominant_node": "התלהבות",
+      "nodes": [
+        "מלאכי לבו",
+        "התלהבות הלב",
+        "התלהבות",
+        "מלאכים"
+      ],
+      "node_degrees": {
+        "התלהבות הלב": 1,
+        "מלאכי לבו": 1,
+        "התלהבות": 1,
+        "מלאכים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_component": "D1 + D2",
+          "merged_nodes": ["מלאכי לבו", "התלהבות הלב", "התלהבות", "מלאכים"],
+          "reason": "Component D1 (מלאכי לבו ↔ התלהבות הלב) and Component D2 (התלהבות ↔ מלאכים) are disconnected in the graph because 'התלהבות הלב' and 'התלהבות' are two node IDs for the same concept. The source text (section ב) presents a single bechina chain: 'מַלְאֲכֵי לִבּוֹ, שֶׁהוּא בְחִינַת הִתְלַהֲבוּת הַלֵּב, שֶׁהַהִתְלַהֲבוּת הוּא בְחִינַת מַלְאָכִים' — a continuous sentence that equates all four terms. The two components share the same essential nature (fiery fervor = angels) and represent a single conceptual unit artificially split by the dataset's node-naming. Merging is mandated by both the source text and bechina-identity."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 59,
+      "label": "חוֹמָה וּכְבִישַׁת כַּעַס וַעֲשִׁירוּת",
+      "label_en": "The Wall, Anger-Suppression, and Wealth",
+      "polarity": "good",
+      "reason": "Section ה of the Torah contains one of the most explicit multi-way bechina statements in the teaching: 'עֲשִׁירוּת וּכְבִישַׁת כַּעַס – בְּחִינָה אַחַת, וְנִקְרָאִים חוֹמָה' — wealth and suppressing anger ARE a single bechina and are called 'wall.' The Rebbe then adds that the חוֹמָה and בַּיִת are a bechina of עֵינַיִם (eyes), completing the cluster. The essential shared nature of all four nodes: they are all expressions of the spiritual wall that protects the person and his soul (נפש = שם = the Name that grows in this Torah). Wealth is a wall (Prov 18:11: 'הוֹן עָשִׁיר קִרְיַת עֻזּוֹ וּכְחוֹמָה נִשְׂגָּבָה'); suppressing anger is a wall ('עִיר פְּרוּצָה אֵין חוֹמָה אִישׁ אֲשֶׁר אֵין מַעְצוֹר לְרוּחוֹ', Prov 25:28); eyes are the wall and house ('הַחוֹמָה וּבַיִת הַנַּ\"ל, שֶׁהֵם בְחִינַת עֵינַיִם'). The polarity is good: this entire cluster describes the positive spiritual structure that protects the Name/soul of the tzaddik. Wealth is not evil here — it is the right-side channel of divine influx that constitutes the wall of the soul.",
+      "dominant_node": "חומה",
+      "nodes": [
+        "חומה",
+        "ממון",
+        "כבישת כעס",
+        "עינים"
+      ],
+      "node_degrees": {
+        "חומה": 3,
+        "ממון": 2,
+        "כבישת כעס": 2,
+        "עינים": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 13,
+    "total_nodes": 18,
+    "total_packages": 3,
+    "raw_connected_components": 6,
+    "components_merged_into_packages": 3,
+    "note_on_merges": "6 raw components: (A) 5 nodes — עגול/אות-סמ\"ך/כסא-כבוד/שם/ששים [anchor of Pkg 1, circle pole]; (B) 4 nodes — חומה/ממון/כבישת-כעס/עינים [Pkg 3, standalone]; (C) 3 nodes — רבוע/משפט/יד [merged into Pkg 1 — square pole of same עיגולא-ורבועא structure]; (D1) 2 nodes — מלאכי-לבו/התלהבות-הלב [merged with D2 into Pkg 2 — alias split]; (D2) 2 nodes — התלהבות/מלאכים [merged with D1 into Pkg 2 — same fervor=angels domain]; (E) 2 nodes — בנס/שבת [merged into Pkg 1 — miracle of the letters standing = שבת = עיגולא-ורבועא sign]",
+    "alias_note": "Dataset nodes 'התלהבות הלב' (node_id in edge 1005) and 'התלהבות' (node_id in edge 1810) are aliases for the same concept. The source text uses both forms interchangeably in one continuous sentence (Torah #59 section ב). Flagged for dataset normalization."
+  }
+}

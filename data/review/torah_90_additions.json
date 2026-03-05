@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "source": "Torah #90 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "חטאים = חסרונות (sins = deficiencies/lacks)",
+      "source_text_ref": "Line 5: 'יִתַּמּוּ וְנִשְׁלְמוּ כָּל הַחֲטָאִים – הַיְנוּ הַחֶסְרוֹנוֹת, כְּמוֹ שֶׁכָּתוּב (מלכים־א א): וְהָיִיתִי אֲנִי וּבְנִי שְׁלֹמֹה חַטָּאִים'",
+      "proposed_edge": {
+        "node1_id": "חטאים",
+        "node2_id": "חסרונות",
+        "type": "bechina",
+        "reference": 90
+      },
+      "package_assignment": null,
+      "notes": "The Rebbe uses the word 'הַיְנוּ' (that is to say) to equate חטאים with חסרונות. This is explicit bechina language: the word 'sins' in the verse (Psalms 104:35) is redefined — it does not mean moral transgressions but lacks/deficiencies. The proof text is 1 Kings 1:21 ('and I and my son Solomon will be חַטָּאִים') where the word clearly means 'lacking/wanting' rather than 'sinners'. This is a genuine bechina of shared essential nature: both words express the same reality — incomplete states that await fulfillment. If this edge were added, these two nodes would form a second package (polarity: neutral-to-negative as metaphor for cosmic lack — the raw state of the ניצוצות before tikkun). Currently neither node appears in any bechina edge for reference 90, so this pair is unpackaged. The package assignment is left null because the dataset does not yet contain this edge; once added, it would constitute Package 2."
+    }
+  ],
+  "unassigned_dataset_nodes": [
+    {
+      "node_id": "משמח את עצמו באלקיו",
+      "reason": "Appears only in eitza edge (reference 90, id 2226, type eitza). This node describes the act of rejoicing in God — it is the cause (eitza) of the tikkun, not a bechina partner of the Shekhinah. Eitza-only nodes are not assigned to packages per framework."
+    },
+    {
+      "node_id": "נשלמו כל החסרונות מהשבירה, ונתעלה כל הניצוצות. וזה אנכי אשמח בה, יתמו  ונשלמו כל החטאים",
+      "reason": "Appears only as the target of an eitza edge (reference 90, id 2226, type eitza). This is the effect/outcome of the act of rejoicing — a composite description of the result. Eitza-only nodes are not assigned to packages per framework."
+    }
+  ],
+  "analysis_notes": {
+    "total_bechina_edges": 1,
+    "nodes_in_dataset_not_in_packages": "Both nodes in the single bechina edge are correctly assigned to Package 1. The two eitza-only nodes are correctly excluded from packages.",
+    "concepts_in_source_text_not_in_dataset": [
+      "חטאים = חסרונות — The Rebbe explicitly equates these with הַיְנוּ language (line 5). This is the most significant gap: the Torah's interpretive move (redefining 'sins' as 'deficiencies') is not captured as a bechina edge. This pair would constitute a second package if added.",
+      "שבירה (the Breaking) — Mentioned in line 2 as the cause of all חסרונות. The Rebbe does not give it an explicit bechina equation in this Torah, but it is the background context. It appears only in the eitza narrative.",
+      "ניצוצות (sparks) — Referenced in line 2 and 3 as what fell in the Breaking and is elevated through joy. No bechina equation is given for ניצוצות in this Torah."
+    ],
+    "structural_observations": [
+      "Torah 90 is an exceptionally short Torah — only 6 lines of source text. It presents a single compact teaching: all deficiencies stem from the Breaking → rejoicing in God completes them → proof from Psalms 104:35 with the exegesis that 'חטאים מן הארץ' means 'deficiencies from the Shekhinah'.",
+      "The entire Torah rests on one bechina: ארץ העליונה = שכינה. This single equation unlocks the verse interpretation.",
+      "The secondary bechina (חטאים = חסרונות) is expressed in the text but not in the dataset. Its addition would raise the bechina edge count from 1 to 2 and the package count from 1 to 2.",
+      "The eitza structure is: שבירה → חסרונות (background); שמחה באלקיו → השלמת החסרונות + עלייה הניצוצות (main eitza). The one bechina is in service of the verse exegesis, not the eitza chain.",
+      "No evil mirror package exists in this Torah. The teaching is entirely about the positive tikkun through simcha. The חסרונות/שבירה are referenced as the problem but are not developed into a full bechina cluster of their own."
+    ]
+  }
+}

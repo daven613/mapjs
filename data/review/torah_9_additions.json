@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "source": "Torah #9",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "type": "merge_into_package_1",
+      "nodes": ["פרוטה", "קול התור"],
+      "from_package_id": 4,
+      "into_package_id": 1,
+      "reason": "פרוטה↔קול התור are both aspects of the hidden/latent miracle (נסים), the same domain as Package 1. The teaching in section ה identifies the mill-wheel's lips (=תור) as standing between two depths (תהומות=נסים). The 2-node component shares NATURE with the נסים cluster in Package 1."
+    },
+    {
+      "type": "merge_into_package_1",
+      "nodes": ["וקם"],
+      "from_package_id": 6,
+      "into_package_id": 1,
+      "reason": "וקם is a textual alias for עמידה (standing), which is already in Package 1 as a bechina of תפלה. The 2-node component {וקם, עמידה} collapses fully into Package 1."
+    },
+    {
+      "type": "merge_into_package_1",
+      "nodes": ["יעקב ובניו", "שנים עשר שערי תפלה"],
+      "from_package_id": 7,
+      "into_package_id": 1,
+      "reason": "יעקב ובניו is directly equated with תפלה (Package 1 dominant node) via an explicit bechina edge. שנים עשר שערי תפלה is a structural sub-aspect of תפלה. Both merge into the prayer cluster."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 25,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      {
+        "concept": "חשך (darkness surrounding prayer)",
+        "source_section": "ג",
+        "source_text": "כְּשֶׁאָדָם עוֹמֵד לְהִתְפַּלֵּל, אֲזַי בָּאִים מַחֲשָׁבוֹת זָרוֹת וּקְלִפּוֹת וּמְסַבְּבִין אוֹתוֹ, וְנִשְׁאָר בַּחשֶׁךְ",
+        "bechina_language": "implied — the darkness IS the domain of the klipot surrounding prayer",
+        "note": "חשך appears as a named concept in the teaching with explicit bechina-like language but no dedicated bechina edge exists in the dataset for Torah #9. It would belong to an evil mirror of Package 1 alongside קליפות."
+      },
+      {
+        "concept": "קליפות (husks/shells)",
+        "source_section": "ג",
+        "source_text": "הָרְשָׁעִים, הַיְנוּ הַקְּלִפּוֹת, מְסַבְּבִין אוֹתוֹ",
+        "bechina_language": "רשעים הינו קליפות — equates the wicked with the husks surrounding prayer",
+        "note": "A bechina edge קליפות↔רשעים could exist here. The Rebbe explicitly says 'הרשעים הינו הקליפות'. This is bechina language. Currently no bechina edge for this pair with reference 9 in the dataset."
+      },
+      {
+        "concept": "שקר (falsehood) as the inverse of אמת",
+        "source_section": "ג",
+        "source_text": "עַל־יְדֵי שֶׁקֶר הוּא מְסַלֵּק אֶת הַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+        "bechina_language": "שקר is the structural opposite of אמת — the Rebbe frames שקר as displacing God (the opposite of אמת which draws God near)",
+        "note": "No bechina edge for שקר as the evil mirror of אמת in Torah #9. This is a missing evil package — the mirror of Package 1's אמת dimension."
+      },
+      {
+        "concept": "חלון ואבן טוב (window and precious stone)",
+        "source_section": "ג",
+        "source_text": "כֵּן יֵשׁ בְּנֵי־אָדָם, שֶׁדִּבּוּרָם הוּא חַלּוֹן... וְיֵשׁ, שֶׁאֲמִירָתָם נַעֲשֶׂה אֶבֶן טוֹב",
+        "bechina_language": "דיבור הוא חלון / דיבור הוא אבן טוב — explicit bechina identification",
+        "note": "Two bechina pairs are implicit here: (1) דיבור↔חלון for those without inner light, (2) דיבור↔אבן טוב for those whose speech illuminates from within (= truth speakers). These pairs are missing from the dataset for Torah #9. They would form a neutral-to-good cluster around the concept of truth-speech."
+      },
+      {
+        "concept": "שכינה / הקדוש-ברוך-הוא as light/אור",
+        "source_section": "ג",
+        "source_text": "כִּי עִקַּר אוֹר הַמֵּאִיר הוּא הַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+        "bechina_language": "ה' אורי — God IS the light (explicit bechina from Psalms)",
+        "note": "The Rebbe quotes 'ה׳ אורי וישעי' as a bechina statement — God equals light. No bechina edge הקדוש-ברוך-הוא↔אור exists in Torah #9 dataset."
+      },
+      {
+        "concept": "עדות (testimony) as prayer",
+        "source_section": "ב",
+        "source_text": "עֵדוּת זֶה תְּפִלָּה... אֵין עֵדוּת אֶלָּא בַּעֲמִידָה",
+        "bechina_language": "עדות זה תפלה — explicit bechina language",
+        "note": "The Rebbe explicitly says 'עדות זה תפלה'. A bechina edge עדות↔תפלה for Torah #9 appears to be missing from the dataset. This would add עדות to Package 1."
+      },
+      {
+        "concept": "חק (statute) as sustenance/prayer",
+        "source_section": "ב",
+        "source_text": "וַיַּעֲמִידֶהָ לְיַעֲקֹב לְחֹק, וְחֹק לִשָּׁנָא דִמְזוֹנָא הוּא",
+        "bechina_language": "וחק לשנא דמזונא — חק is the language of sustenance; עמידה=תפלה=חק",
+        "note": "חק as bechina of פרנסה / תפלה is stated but no dedicated bechina edge exists for Torah #9."
+      },
+      {
+        "concept": "כנען / ארץ כנען as merchant/אמונה",
+        "source_section": "ה",
+        "source_text": "נִקְרֵאת אֶרֶץ כְּנַעַן; כְּנַעַן, לְשׁוֹן סוֹחֵר, בְּחִינַת אֱמוּנָה",
+        "bechina_language": "כנען לשון סוחר, בחינת אמונה — explicit bechina",
+        "note": "A bechina edge כנען↔אמונה (or כנען↔סוחר) for Torah #9 appears absent. כנען is identified as a bechina of אמונה/סוחר in this Torah."
+      }
+    ],
+    "summary": "The dataset for Torah #9 contains 25 bechina edges covering the core symbolic identifications. However, at least 8 explicit bechina statements from the source text are not represented as bechina edges in the dataset. Most significant missing entries: (1) evil mirror cluster — חשך↔קליפות, שקר as anti-אמת; (2) the דיבור cluster — חלון/אבן טוב as speech types; (3) עדות↔תפלה; (4) כנען↔אמונה. These gaps affect primarily the evil/darkness dimension (the opponent of prayer) and the speech/truth dimension (the mechanism of prayer)."
+  }
+}

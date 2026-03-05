@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "source": "Torah #147 (Likutay Moharan Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all reference===147 edges from torahData.js (4 total: 1 bechina, 3 eitza), and the full source text torah_147.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset. Bechina language scanned: בְּחִינַת, הַיְנוּ בְּחִינַת, זֶה בְּחִינַת, בִּבְחִינַת. Only concepts where the Rebbe explicitly declares 'X הוא בחינת Y' or 'זֶה בְּחִינַת' were considered as bechina nodes. The eitza flow structure (cause-and-effect) was noted but not treated as bechina-node sources."
+  },
+  "dataset_nodes_in_packages": {
+    "note": "Only 2 nodes currently in the dataset for Torah 147 via bechina edges: 'תנו עז לאלקים' (Package 1) and 'אתערותא דלתתא' (Package 1). The 3 eitza edges introduce additional node IDs that do not form bechina connections and are therefore not assigned to packages.",
+    "eitza_node_ids_not_in_packages": [
+      "מתגברין בעזות גדול כנגדם, שזהו עזות דקדשה",
+      "אנו נותנין כביכול עז וכח למעלה, בבחינת \"תנו עז לאלקים\"",
+      "עזות דקדשה שיש בו",
+      "מקבל עזות דקדשה מהשם יתברך",
+      "נתעורר למעלה בחינת עזות דקדשה, ונשפע עלינו, בבחינת \"אל ישראל הוא נותן עז ותעצומות לעם\", שהשם יתברך משפיע עלינו עזות דקדשה, ונותן לנו עז ותעצומות, לעמד כנגד העזות דסטרא אחרא של כל העזי פנים שבדור, שאי אפשר לעמד כנגדם, כי־אם על־ידי עזות דקדשה"
+    ],
+    "note_on_eitza_nodes": "These node IDs appear only in eitza edges and are descriptive process-statements rather than concept-names. They describe stages of the causal flow (boldness → raises strength → God responds). They are appropriate as eitza nodes but are not bechina-type concept nodes. They should not be assigned to packages per framework rules (packages are built on bechina connections only)."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "עַזּוּת דִּקְדֻשָּׁה וְאִתְעָרוּתָא דִּלְתַתָּא",
+      "node_id": "עזות דקדשה",
+      "node_text": "עַזּוּת דִּקְדֻשָּׁה",
+      "polarity": "good",
+      "reason": "The concept of עזות דקדשה (holy boldness) is the central concept of Torah #147, yet it does not appear as a named bechina node in the dataset. The Rebbe presents it as the prerequisite for having a share in Torah (line 4: 'צריך שיהיה בו עזות דקדשה'), the content of Israel's merit for receiving Torah at Sinai ('מפני מה ניתנה תורה לישראל מפני שהן עזין'), and the specific quality commanded in Avot ('הוי עז כנמר'). The Rebbe also identifies עזות דקדשה as a bechina that can be given and received: 'על ידי עזות דקדשה שיש בו, הוא מקבל עזות דקדשה מהשם יתברך'. This 'giving and receiving' of the same quality (human → Divine → back to human) is precisely bechina-language — both instances share the same essential nature. The עזות דקדשה from below and the עזות דקדשה from above are two expressions of the same quality/dimension. This concept should be added as a bechina-node and connected (bechina edge) to תנו עז לאלקים and אתערותא דלתתא, which are already in Package 1. Proposed bechina edges: (a) עזות דקדשה ↔ תנו עז לאלקים — because the act of 'giving strength to God' IS the expression of holy boldness; (b) עזות דקדשה ↔ אתערותא דלתתא — because holy boldness IS the arousal-from-below.",
+      "source_quote": "כִּי צָרִיךְ שֶׁיִּהְיֶה בּוֹ עַזּוּת דִּקְדֻשָּׁה... וְעַל־יְדֵי עַזּוּת דִּקְדֻשָּׁה שֶׁיֵּשׁ בּוֹ, הוּא מְקַבֵּל עַזּוּת דִּקְדֻשָּׁה מֵהַשֵּׁם יִתְבָּרַךְ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1_id": "עזות דקדשה",
+          "node2_id": "תנו עז לאלקים",
+          "basis": "The verse 'תנו עז לאלקים' is declared a bechina of the arousal-from-below enacted through holy boldness. The verse-act IS the holy boldness — same essential nature."
+        },
+        {
+          "node1_id": "עזות דקדשה",
+          "node2_id": "אתערותא דלתתא",
+          "basis": "Holy boldness in standing against opponents of one's Divine service IS the arousal from below — the human-initiative dimension that draws down Divine response. Both describe the same reality from the human-action angle."
+        }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "עַזּוּת דִּקְדֻשָּׁה וְאִתְעָרוּתָא דִּלְתַתָּא",
+      "node_id": "אל ישראל הוא נותן עז ותעצומות לעם",
+      "node_text": "אֵל יִשְׂרָאֵל הוּא נוֹתֵן עֹז וְתַעֲצוּמוֹת לָעָם",
+      "polarity": "good",
+      "reason": "Line 7 of the source text explicitly uses bechina-language for the second half of Psalms 68:35: 'וְנִשְׁפָּע עָלֵינוּ, בִּבְחִינַת: אֵל יִשְׂרָאֵל הוּא נוֹתֵן עֹז וְתַעֲצוּמוֹת לָעָם'. This phrase is stated as the bechina of the Divine response — God returning holy boldness (עזות דקדשה) and strength back to the people. The Rebbe structures the entire Torah as a bechina-mirror: just as the lower world exercises boldness (תנו עז = בחינת אתערותא דלתתא), so from above comes the Divine overflow of the same quality (אל ישראל... = בחינת the return of עז). The upper Divine response is the bechina-parallel to the lower human initiative. Both 'תנו עז לאלקים' and 'אל ישראל הוא נותן עז ותעצומות לעם' are explicitly labeled as bechina concepts within the same structural move — they are two faces of the cosmic strengthening that constitutes this Torah's teaching. Proposed bechina edges: (a) אל ישראל הוא נותן עז ותעצומות לעם ↔ עזות דקדשה — both are the quality of holy divine strength; (b) אל ישראל הוא נותן עז ותעצומות לעם ↔ אתערותא דלעילא (if that node exists in the dataset) — the Divine arousal-from-above mirrors the human arousal-from-below.",
+      "source_quote": "וְעַל יְדֵי זֶה נִתְעוֹרֵר לְמַעְלָה בְּחִינַת עַזּוּת דִּקְדֻשָּׁה, וְנִשְׁפָּע עָלֵינוּ, בִּבְחִינַת: אֵל יִשְׂרָאֵל הוּא נוֹתֵן עֹז וְתַעֲצוּמוֹת לָעָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1_id": "אל ישראל הוא נותן עז ותעצומות לעם",
+          "node2_id": "עזות דקדשה",
+          "basis": "The Divine giving of strength and boldness IS holy boldness flowing from above — same essential nature as עזות דקדשה, expressed from the Divine side rather than the human side."
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "עַזּוּת פָּנִים וְעַזּוּת דְּסִטְרָא אָחֳרָא",
+      "node_id": "עזות פנים",
+      "node_text": "עַזּוּת פָּנִים",
+      "polarity": "evil",
+      "reason": "עזות פנים (brazen impudence / insolence of face) is the central evil concept of Torah #147 and its direct structural mirror to עזות דקדשה. The Rebbe opens and closes the Torah with its definition: 'מי שהוא עזות פנים אין לו חלק בתורה' — the insolent person has no share in Torah. The Rebbe identifies עזות פנים with the 974 pre-creation generations ('הן הן עזי פנים שבדור') and as the cause of disconnection from Sinai ('לא עמדו רגלי אבותיו על הר סיני'). It is explicitly called 'מדה רעה מאד' (line 8). This is the evil-polarity counterpart to עזות דקדשה: same structural category (assertive boldness), opposite cosmic orientation. Proposed bechina edge: עזות פנים ↔ עזות דסטרא אחרא — both are the evil form of boldness, they share the same essential nature of obstruction-oriented assertiveness.",
+      "source_quote": "כְּשֵׁם שֶׁמִּי שֶׁהוּא עַזּוּת פָּנִים אֵין לוֹ חֵלֶק בַּתּוֹרָה... כִּי הִיא מִדָּה רָעָה מְאֹד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1_id": "עזות פנים",
+          "node2_id": "עזות דסטרא אחרא",
+          "basis": "The brazenness of the insolent is explicitly identified as belonging to the sitra achra (line 7: 'העזות דסטרא אחרא של כל העזי פנים שבדור'). עזות פנים IS the human expression of the evil-side boldness; עזות דסטרא אחרא is the spiritual source of that same quality. Same essential nature — two faces of evil assertiveness."
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "עַזּוּת פָּנִים וְעַזּוּת דְּסִטְרָא אָחֳרָא",
+      "node_id": "עזות דסטרא אחרא",
+      "node_text": "עַזּוּת דְּסִטְרָא אָחֳרָא",
+      "polarity": "evil",
+      "reason": "The Rebbe explicitly names עזות דסטרא אחרא as a distinct concept in line 7: 'לַעֲמֹד כְּנֶגֶד הָעַזּוּת דְּסִטְרָא אָחֳרָא שֶׁל כָּל הָעַזֵּי פָּנִים שֶׁבַּדּוֹר'. This is the spiritual source-force of the evil bold ones — it is the boldness on the side of the sitra achra that fuels the human עזות פנים. The Rebbe declares that it is impossible to stand against the evil bold ones except through עזות דקדשה. This means the cosmic battle is: עזות דקדשה (Package 1) vs. עזות דסטרא אחרא (Package 2). The evil boldness-force of the Other Side is the bechina-parallel to the holy boldness-force of the side of holiness — same structural type, opposite polarity. It belongs in Package 2 as the dominant-level concept of that package.",
+      "source_quote": "לַעֲמֹד כְּנֶגֶד הָעַזּוּת דְּסִטְרָא אָחֳרָא שֶׁל כָּל הָעַזֵּי פָּנִים שֶׁבַּדּוֹר, שֶׁאִי אֶפְשָׁר לַעֲמֹד כְּנֶגְדָּם, כִּי־אִם עַל־יְדֵי עַזּוּת דִּקְדֻשָּׁה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_bechina_edges": [
+        {
+          "node1_id": "עזות דסטרא אחרא",
+          "node2_id": "עזות פנים",
+          "basis": "Evil boldness from the sitra achra IS what manifests as עזות פנים in human beings — the spiritual source and its human expression share the same essential nature."
+        }
+      ]
+    }
+  ],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "עז וכח למעלה",
+      "reason": "Appears in the eitza-node text 'אנו נותנין כביכול עז וכח למעלה, בבחינת תנו עז לאלקים'. The phrase 'בבחינת' here is referring back to the already-captured bechina node 'תנו עז לאלקים' — it is not establishing a new bechina between 'עז וכח למעלה' and something else. The expression 'עז וכח למעלה' is a paraphrase of 'תנו עז לאלקים', not a new conceptual node. Already covered by the existing bechina edge (id 488)."
+    },
+    {
+      "concept": "ענוה (humility)",
+      "reason": "Lines 8-9 introduce ענוה as 'ענין אחר לגמרי' (a completely separate matter from עזות דקדשה). The Rebbe deliberately sets humility apart — it is not a bechina of עזות, it is a separate virtue operating independently. While Moshe is cited as the exemplar of ענוה (line 9), the Rebbe does not state a bechina relationship. He says 'מדת ענוה הוא ענין אחר לגמרי' — this is an explicit statement that ענוה is NOT a bechina of the עזות concepts. The Torah text ends with this contrast but does not establish bechina-language for ענוה within this Torah. Excluded."
+    },
+    {
+      "concept": "הר סיני / קבלת התורה",
+      "reason": "Har Sinai and receiving the Torah are cited as proof-texts (source of authority for the statements about עזות), not as bechina concepts in their own right. The Rebbe says 'לא עמדו רגלי אבותיו על הר סיני' as evidence that עזות פנים = disconnection from Torah, not as a bechina equation between הר סיני and another concept. These are rabbinic citations establishing the claim, not bechina-type conceptual identifications."
+    },
+    {
+      "concept": "ישראל (as having share in Torah)",
+      "reason": "The Torah discusses ישראל receiving Torah because they are עזין — but the statement 'ניתנה תורה לישראל מפני שהן עזין' is a causal statement (reason/eitza), not a bechina equation. ישראל is not declared to be a bechina of עזות דקדשה; rather, their having עזות דקדשה is the reason they merited Torah. This is an eitza relationship, not a bechina. Excluded from bechina additions."
+    },
+    {
+      "concept": "מונעים (those who prevent Torah study)",
+      "reason": "Line 7 mentions 'המונעים מתורתו ועבודתו' (those who prevent his Torah and service) as the adversaries empowered by עזות פנים. However, the Rebbe does not use bechina-language to equate מונעים with עזות פנים or עזות דסטרא אחרא explicitly — they are described as agents/actors, not conceptual bechinot. Their relationship to עזות דסטרא אחרא is functional (they act through it), not a bechina of shared nature. Excluded."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_147_edges": 4,
+    "total_reference_147_bechina_edges": 1,
+    "total_reference_147_eitza_edges": 3,
+    "nodes_in_dataset_in_packages": ["תנו עז לאלקים", "אתערותא דלתתא"],
+    "eitza_node_ids_not_in_packages": [
+      "מתגברין בעזות גדול כנגדם, שזהו עזות דקדשה",
+      "אנו נותנין כביכול עז וכח למעלה, בבחינת \"תנו עז לאלקים\"",
+      "עזות דקדשה שיש בו",
+      "מקבל עזות דקדשה מהשם יתברך",
+      "נתעורר למעלה בחינת עזות דקדשה..."
+    ],
+    "new_nodes_proposed": ["עזות דקדשה", "אל ישראל הוא נותן עז ותעצומות לעם", "עזות פנים", "עזות דסטרא אחרא"],
+    "total_proposed_new_bechina_edges": 5,
+    "summary": "Torah #147 is thematically minimal in its current dataset representation — only 1 bechina edge. The Torah text is conceptually rich with explicit bechina-language establishing the good/evil mirror structure of holy vs. evil boldness. The four proposed additions would expand Package 1 from 2 to 4 nodes (adding עזות דקדשה as the dominant concept and adding the Divine response phrase) and create 2 nodes for Package 2 (the evil mirror). The most important addition is עזות דקדשה itself — it is the core concept of the teaching and its absence from the bechina graph is a significant gap."
+  }
+}

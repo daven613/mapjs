@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "source": "Torah #73",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "CRITICAL FINDING: The current dataset contains ZERO bechina edges for reference===73. All three existing edges for Torah 73 are of type 'eitza'. Therefore there are no bechina-connected components to derive from the dataset. All packages below are constructed entirely from the gap analysis of the source text (step 7), which identified 12+ bechina-language statements using the markers נִקְרָא, הוּא, and הַיְנוּ. Per the framework, every bechina-connected node must appear in exactly one package — since there are no dataset nodes, all nodes listed are proposed additions. Small isolated clusters (Yud/machshava, Aleph/tzaddik, Nukva, Torah/water) are merged into thematically nearest packages based on shared nature."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 73,
+      "label": "כְּלִי אֲנִי — אוֹתִיּוֹת הַתְּפִלָּה",
+      "label_en": "The Vessel Ani — The Letters of Prayer",
+      "polarity": "good",
+      "reason": "This is the central conceptual cluster of Torah #73. The Rebbe builds one continuous bechina chain: every Jew is called a tzaddik (נִקְרָא צַדִּיק), the tzaddik is called Aleph (נִקְרָא אָלֶף); the Nun is called speech (נִקְרָא דִּבּוּר), speech IS malkhut (הַדִּבּוּר הוּא מַלְכוּת), malkhut IS called Nun (נִקְרָא נוּן); thought IS called Yud (הַמַּחֲשָׁבָה נִקְרָא יוּד); and the completed vessel IS called Ani (הַכְּלִי הַנִּקְרָא אֲנִי). These are all parallel aspects of the same essential structure: the three letters א-נ-י that form the word 'Ani' (I), each letter encoding a faculty of the person in prayer — the righteous soul (aleph), the speech/dibur/malkhut (nun), and the thought/intention (yud). They are different expressions of the same underlying reality: the formation of a receiving vessel for divine abundance through united conscious prayer. The 'mouth/peh' identity of malkhut is a further aspect of the same dibur cluster. Aleph, tzaddik, and ישראל are merged here because 'every Jew is called tzaddik' is the explicit bechina introduction to the aleph identity — they share the same nature as the human pole of the prayer-vessel construction.",
+      "dominant_node": "אני",
+      "nodes": [
+        "אני",
+        "אלף",
+        "צדיק",
+        "ישראל",
+        "נון",
+        "דיבור",
+        "מלכות",
+        "פה",
+        "יוד",
+        "מחשבה"
+      ],
+      "node_degrees": {
+        "אני": 3,
+        "מלכות": 3,
+        "דיבור": 2,
+        "נון": 2,
+        "צדיק": 2,
+        "אלף": 2,
+        "מחשבה": 2,
+        "יוד": 2,
+        "ישראל": 1,
+        "פה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["יוד", "מחשבה"],
+          "reason": "The Yud is called thought (הַמַּחֲשָׁבָה נִקְרָא יוּד) and thought is one of the three letters forming the vessel Ani. Though a 2-node isolated cluster in raw terms, its essential nature is inseparable from the letter-formation of Ani — it is the yud-component of the same vessel. Merged into Package 1 rather than standing alone."
+        },
+        {
+          "merged_nodes": ["ישראל", "צדיק", "אלף"],
+          "reason": "ישראל, צדיק, and אלף form a 3-node chain: every Jew is called tzaddik, every tzaddik is called Aleph. These three concepts share one nature: the human actor who forms the Aleph-component of the vessel Ani. ישראל is the empirical referent, צדיק is the identity declared, and אלף is the letter-dimension of that identity. All are aspects of the same bechina in this Torah."
+        },
+        {
+          "merged_nodes": ["פה"],
+          "reason": "Malkhut = peh (mouth) is stated as an equation in the text ('מַלְכוּת – פֶּה'). Peh is another name for dibur-malkhut in this Torah, the Nun-component of Ani. It shares the essential nature of the dibur/malkhut/nun cluster already in this package."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 73,
+      "label": "סְתִים וְגַלְיָא — פְּנִימִיּוּת וְחִיצוֹנִיּוּת",
+      "label_en": "Hidden and Revealed — Inner and Outer",
+      "polarity": "neutral",
+      "reason": "The Torah opens with a fundamental ontological duality that applies equally to Torah and to God: both are simultaneously hidden (stim/penimit) and revealed (galya/chitzoniut). What is revealed IS the garment and the external dimension (מַה שֶּׁנִּגְלֶה לָנוּ הוּא הַלְּבוּשׁ וְחִיצוֹנִיּוּת); what is hidden IS the internal dimension (מַה שֶּׁנִּסְתָּר הוּא הַפְּנִימִיּוּת). These are bechina pairs: revealed=garment=external, hidden=inner. This is the structural frame of the entire Torah — the goal is to reach penimit through the tefila/vessel method. The polarity is neutral because this duality is a cosmic structural feature (not inherently good or evil in itself) — both Torah and God contain both dimensions, and the distinction applies symmetrically to the positive teaching.",
+      "dominant_node": "פנימיות",
+      "nodes": [
+        "פנימיות",
+        "סתים",
+        "גליא",
+        "חיצוניות",
+        "לבוש"
+      ],
+      "node_degrees": {
+        "פנימיות": 2,
+        "סתים": 2,
+        "גליא": 2,
+        "חיצוניות": 2,
+        "לבוש": 1
+      }
+    },
+    {
+      "id": 3,
+      "torah_ref": 73,
+      "label": "מַיִם וְתוֹרָה — הִתְגַּלּוּת",
+      "label_en": "Water and Torah — Revelation",
+      "polarity": "neutral",
+      "reason": "Two bechina statements converge in the verse interpretation at the end of the Torah: (1) 'water' IS Torah — וְאֵין מַיִם אֶלָּא תּוֹרָה (a standard rabbinic bechina, Bava Kama 17a); (2) the word 'tavar' (תַּעֲבֹר) IS the language of revelation (מִלְּשׁוֹן הִתְגַּלּוּת), as Targum Onkelos renders it. These three concepts — מים, תורה, התגלות — share a single nature in this Torah's argument: they are the medium through which the hidden becomes accessible. When you 'pass through the water' (= when you desire that the Torah's hidden dimension be revealed to you), you need the vessel Ani. Torah/water and hitgalut are the domain of what is sought; the vessel Ani is the means. Polarity is neutral because Torah and revelation are cosmic structures, not inherently polarized in this teaching.",
+      "dominant_node": "תורה",
+      "nodes": [
+        "תורה",
+        "מים",
+        "התגלות"
+      ],
+      "node_degrees": {
+        "תורה": 2,
+        "מים": 2,
+        "התגלות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["מים", "תורה", "התגלות"],
+          "reason": "מים and תורה form a 2-node bechina pair (Bava Kama 17a; used explicitly in verse interpretation). התגלות is a 1-node isolated concept (the meaning of 'tavar' per Onkelos) but shares the same essential nature: in this Torah, Torah, water, and revelation are all expressions of the same thing — the medium of divine presence that becomes accessible. Per framework, 1-2 node isolated concepts are merged into thematically nearest package based on shared nature."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 73,
+      "label": "נוּקְבָא — קַבָּלַת תַּעֲנוּג",
+      "label_en": "Nukva — Reception of Pleasure",
+      "polarity": "good",
+      "reason": "The Rebbe introduces a distinct bechina domain: whoever receives pleasure from another IS called 'Nukva' (נִקְרָא נוּקְבָא, i.e. the feminine/receptive pole). When God receives pleasure from Israel's prayers (reakh nikoakh), God becomes, as it were, Nukva relative to Israel. The verse 'נְקֵבָה תְּסוֹבֵב גָּבֶר' confirms the inversion: the inner/penimit becomes the outer/chitzoniut. The 'feminine' pole here is not the evil/negative dimension but the holy receptive dimension — it is the 'secret of isha' (בְּסוֹד אִשָּׁה) in the positive sense. This cluster is distinct from Package 1 (vessel formation) because it describes the divine response to the vessel, not the construction of the vessel. It is the telos/outcome of the tefila rather than its structure. Polarity is good because this is the holy dimension of divine receptivity — the Shechina receiving Israel.",
+      "dominant_node": "נוקבא",
+      "nodes": [
+        "נוקבא",
+        "מקבל תענוג",
+        "אישה",
+        "ריח ניחוח"
+      ],
+      "node_degrees": {
+        "נוקבא": 2,
+        "מקבל תענוג": 2,
+        "אישה": 1,
+        "ריח ניחוח": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["אישה", "ריח ניחוח"],
+          "reason": "אישה and ריח ניחוח are both 1-node isolated bechina concepts. The Rebbe states that through the ריח ניחוח God receives (מְקַבֵּל) from Israel's prayers and thereby becomes 'בְּסוֹד אִשָּׁה' — in the secret of isha/woman. Isha and ריח ניחוח are the concrete names for the Nukva-state when God is the receiver. They share the essential nature of the Nukva cluster and are merged here per the framework rule on isolated 1-2 node components."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_eitza_edges_in_dataset": 3,
+    "total_nodes_in_packages": 22,
+    "total_packages": 4,
+    "raw_bechina_clusters_from_source_text": 8,
+    "clusters_merged_into_packages": 4,
+    "note_on_dataset_gap": "Torah #73 has NO bechina edges in the current torahData.js dataset. All packages are derived exclusively from the source text gap analysis. The 12 bechina statements in the text yield approximately 17 distinct concept-nodes which cluster into 4 thematic packages after merging isolated pairs and singletons.",
+    "note_on_merges": "8 raw bechina-language clusters from source text: (A) 3-node chain ישראל-צדיק-אלף [merged into Pkg 1], (B) 4-node chain נון-דיבור-מלכות-פה [Pkg 1 core], (C) 2-node pair יוד-מחשבה [merged into Pkg 1], (D) 1-node concept אני/כלי [merged into Pkg 1 as dominant], (E) 2-node pair נוקבא-מקבל תענוג [Pkg 4 core + isolated additions], (F) 2-node pair מים-תורה [Pkg 3 core + התגלות addition], (G) 4-node frame פנימיות-סתים-גליא-חיצוניות-לבוש [Pkg 2], (H) 1-node התגלות/תעבור [merged into Pkg 3]"
+  }
+}

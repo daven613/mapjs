@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "source": "Torah #64",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_64_packages.json, all reference===64 edges from torahData.js (15 bechina + 2 eitza), and the full source text torah_64.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, לְשׁוֹן) were considered as candidates."
+  },
+  "additions": [
+    {
+      "package_id": 2,
+      "package_label": "שְׁתִיקָה וּמֹשֶׁה",
+      "node_id": "צדיק הדור",
+      "node_text": "צַדִּיק הַדּוֹר",
+      "polarity": "good",
+      "reason": "Line 47 of the source text states explicitly: 'לִבְחִינַת זֶמֶר שֶׁל אֱמוּנָה הָעֶלְיוֹנָה הַזֹּאת, אֵין מִי שֶׁיִּזְכֶּה כִּי אִם צַדִּיק הַדּוֹר שֶׁהוּא בְּחִינַת מֹשֶׁה.' This is an explicit bechina statement: the tzaddik of the generation IS a bechina of Moses. The dataset has the edge משה–שתיקה (edge 3063, reference=64, bechina) but does NOT have the edge צדיק הדור–משה or צדיק הדור–שתיקה as a bechina for Torah #64. Since Moses is the dominant node of Package 2, and the tzaddik ha-dor is explicitly equated to Moses in this Torah, this node should be added to Package 2.",
+      "source_quote": "צַדִּיק הַדּוֹר שֶׁהוּא בְּחִינַת מֹשֶׁה, שֶׁהוּא בְּמַדְרֵגַת אֱמוּנָה זוֹ, שֶׁהוּא בְּחִינַת שְׁתִיקָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "צדיק הדור",
+        "node2_id": "משה",
+        "type": "bechina",
+        "reference": 64
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "שְׁתִיקָה וּמֹשֶׁה",
+      "node_id": "כבד פה",
+      "node_text": "כְּבַד פֶּה",
+      "polarity": "good",
+      "reason": "Line 25 of the source text states: 'מֹשֶׁה הוּא בְּחִינַת שְׁתִיקָה, בִּבְחִינוֹת שֶׁנִּקְרָא כְּבַד פֶּה (שמות ד), בְּחִינַת שְׁתִיקָה, שֶׁהוּא לְמַעְלָה מִן הַדִּבּוּר.' This is an explicit נִקְרָא bechina statement: Moses is CALLED 'heavy of mouth' (kevad peh) and this name IS a bechina of silence (shitika). The text uses the phrase 'שֶׁנִּקְרָא כְּבַד פֶּה' — explicitly the niqra formulation. The concept כְּבַד פֶּה (heavy of mouth = inarticulate = silent) should be added as a bechina-node for Package 2 (שתיקה ומשה). It is not currently in the dataset as a bechina node for Torah #64.",
+      "source_quote": "מֹשֶׁה הוּא בְּחִינַת שְׁתִיקָה, בִּבְחִינוֹת שֶׁנִּקְרָא כְּבַד פֶּה, בְּחִינַת שְׁתִיקָה, שֶׁהוּא לְמַעְלָה מִן הַדִּבּוּר",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "כבד פה",
+        "node2_id": "שתיקה",
+        "type": "bechina",
+        "reference": 64
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "חָלָל הַפָּנוּי וְהַצִּמְצוּם",
+      "node_id": "עבריים",
+      "node_text": "עִבְרִיִּים",
+      "polarity": "good",
+      "reason": "Line 18 of the source text states: 'יִשְׂרָאֵל נִקְרָאִים עִבְרִיִּים עַל שֵׁם שֶׁהֵם עוֹבְרִים בֶּאֱמוּנָתָם עַל כָּל הַחָכְמוֹת.' This is an explicit נִקְרָאִים (plural of נִקְרָא) bechina statement: Israel are CALLED 'Ivriim' because they PASS OVER all wisdom-systems through faith. The name עברים signals their essential nature as those who transcend the chalal ha-panui heresy via emunah. Line 19 further connects: 'הַשֵּׁם יִתְבָּרַךְ נִקְרָא אֱלֹקֵי הָעִבְרִיִּים מִלְּשׁוֹן עֵבֶר הַנָּהָר לְשׁוֹן צְדָדִין' — God is called Elokei HaIvriim because His divinity surrounds even the sides (the void). The concept עברים/עבריים is a bechina of 'those who cross over the chalal ha-panui via emunah' — which puts it in the void package as the human response to the void's challenge. Not currently in dataset as a Torah-64 bechina node.",
+      "source_quote": "יִשְׂרָאֵל נִקְרָאִים עִבְרִיִּים, עַל שֵׁם שֶׁהֵם עוֹבְרִים בֶּאֱמוּנָתָם עַל כָּל הַחָכְמוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "עבריים",
+        "node2_id": "עוברים על כל החכמות באמונה",
+        "type": "bechina",
+        "reference": 64
+      }
+    },
+    {
+      "package_id": 2,
+      "package_label": "שְׁתִיקָה וּמֹשֶׁה",
+      "node_id": "ראש אמונה",
+      "node_text": "רֹאשׁ אֱמוּנָה",
+      "polarity": "good",
+      "reason": "Lines 45-46 state: 'אוֹתוֹ הַזֶּמֶר הַמְיֻחָד לָאֱמוּנָה הַנַּ\"ל... הַיְנוּ אֱמוּנָה בְּהָאוֹר אֵין סוֹף עַצְמוֹ... אוֹתוֹ הַזֶּמֶר הוּא גַּם כֵּן לְמַעְלָה מִכָּל הַנְּגִינוֹת.' Line 46 uses the explicit phrase: 'תָּבוֹאִי תָּשׁוּרִי מֵרֹאשׁ אֲמָנָה, מֵרֹאשׁ אֲמָנָה דַּיְקָא, הַיְנוּ בְּחִינַת אֱמוּנָה עֶלְיוֹנָה זוֹ הַנַּ\"ל, שֶׁהוּא רֹאשׁ לְכָל הָאֱמוּנוֹת.' This is an explicit הַיְנוּ bechina: 'rosh emunah' is a bechina of supreme faith. The verse 'tavo'i tashuri me-rosh amanah' (Song of Songs 4:8) is equated with the supreme niggun that only Moses-level can achieve. Rosh amanah/rosh emunah belongs in Package 2 because it is the positive goal of the shitika cluster — the supreme faith that is above all speech and all wisdoms. This concept does not appear in the dataset as a Torah-64 bechina node.",
+      "source_quote": "מֵרֹאשׁ אֲמָנָה דַּיְקָא, הַיְנוּ בְּחִינַת אֱמוּנָה עֶלְיוֹנָה זוֹ הַנַּ\"ל, שֶׁהוּא רֹאשׁ לְכָל הָאֱמוּנוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "ראש אמונה",
+        "node2_id": "אמונה עליונה",
+        "type": "bechina",
+        "reference": 64
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_64_edges": 17,
+    "total_reference_64_bechina_edges": 15,
+    "total_reference_64_eitza_edges": 2,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["חלל הפנוי", "צמצום", "לבוש", "ארבה", "פרעה", "צמצום האור לצדדין", "צמצום של חלל הפנוי", "מחלקת", "בריאת העולם", "עבדים", "הקדמות של כל החכמות", "צדק", "לבושין", "מחר", "לעתיד לבוא"],
+      "package_2": ["שתיקה", "משה", "המבוכות והקשיות של האפיקורסית הזאת הבא מחלל הפנוי", "שתק כך עלה במחשבה", "נגינה", "רוח"],
+      "package_3": ["שחוק", "קלפות"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["צדיק הדור", "כבד פה", "עבריים", "ראש אמונה"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "אמונה (as a bechina node)",
+        "reason": "Emunah appears in two eitza edges (reference=64, ids 2348-2349) where emunah CAUSES 'passing over the heresies.' In the source text, emunah is the mechanism (eitza) not the parallel-nature (bechina) of the chalal ha-panui. The Rebbe does not say 'emunah hi bechinot X' in bechina language for Torah #64 — rather, 'through emunah they pass over.' The more specific formulation 'rosh emunah' DOES have bechina language (see addition above) and is added as a gap. The general term 'emunah' is an eitza node for this Torah."
+      },
+      {
+        "concept": "אפיקורסות (as a distinct bechina node)",
+        "reason": "The Torah discusses two types of apikorsut extensively, but neither is given an explicit bechina identity of its own — they are described as 'coming from' (eitza: ba mi-) the chalal ha-panui or the shevirat kelim. The phrase 'apikorsut hi bechinot X' does not appear. The apikorsut is an eitza-outcome, not a bechina-parallel. Excluded."
+      },
+      {
+        "concept": "שכינות / ניצוצות הקדשה",
+        "reason": "The text mentions holy sparks (nitzozot kedushah) that fell into the first type of apikorsut (from shevirat kelim), but does not use bechina language to equate the sparks to any concept. They are mentioned descriptively. No bechina formulation. Excluded."
+      },
+      {
+        "concept": "מחשבה עליונה ('thus arose in thought')",
+        "reason": "The phrase 'kakh ala be-machashavah' IS already in the dataset as a bechina node in edge 3064: 'shitika — bechinot shetok kakh ala be-machashavah.' The full phrase is the node content. Accounted for in Package 2."
+      },
+      {
+        "concept": "כבד לב / כבדות לב",
+        "reason": "The text says (line 53): 'there is heaviness of heart in the chalal ha-panui, because it is impossible to comprehend it.' Kevod lev is a descriptive consequence that appears in the void — but the Rebbe does not use bechina language ('X hi bechinot kevod lev'). It is a consequence (eitza), not a parallel-nature statement. Excluded."
+      },
+      {
+        "concept": "תחית המתים",
+        "reason": "Line 48: the Rebbe cites the rabbinic teaching that 'yashir' (future tense) implies Moses will sing in the future — a proof for resurrection. This is cited as textual support, not as a bechina declaration. The concept is not equated to any other concept via bechina language. Excluded."
+      }
+    ]
+  }
+}

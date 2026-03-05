@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "source": "Torah #165 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===165 AND type==='bechina'. Result: ZERO bechina edges found in the dataset — Torah #165 does not appear in torahData.js at all. All package structure is therefore derived entirely from bechina-language analysis of the source text torah_165.txt. Torah #165 is a 5-line hermeneutical teaching built on a creative reinterpretation of Leviticus 19:18 ('וְאָהַבְתָּ לְרֵעֲךָ כָּמוֹךָ, אֲנִי יְיָ'). The Rebbe rereads each clause of the verse as a direct instruction about accepting divine affliction with love. Three bechina declarations structure the teaching, each identified by the marker 'הַיְנוּ' or by direct copular equation via the dash construction. Three raw components identified; no merges warranted — each component represents a genuinely independent semantic domain (the afflictions, the personal measure, and divine mercy). Packages are: (1) הָרָע וְהַיִּסּוּרִין — the domain of afflictions and suffering, evil; (2) כָּמוֹךָ וּמַעֲשֶׂיךָ — the domain of personal deeds/measure, neutral; (3) אֲנִי ה' וּבַעַל הָרַחֲמִים — the domain of God's merciful nature, good."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 165,
+      "label": "הָרָע וְהַיִּסּוּרִין",
+      "label_en": "Evil and Afflictions",
+      "polarity": "evil",
+      "reason": "This package captures the Torah's central bechina-cluster for the domain of suffering. In line 3, the Rebbe identifies the word 'רֵעֲךָ' (your neighbor/friend) with 'הָרָע שֶׁבָּא לְךָ' (the evil that comes to you), using the formula: 'וְאָהַבְתָּ לְרֵעֲךָ – שֶׁתֶּאֱהוֹב הָרָע שֶׁבָּא לְךָ.' The reinterpretation via 'שֶׁתֶּאֱהוֹב' provides the bechina-ground: the Rebbe is declaring that 'רֵעֲךָ' IS 'הָרָע שֶׁבָּא לְךָ' — they are the same referent (the word רֵעֲךָ is being equated with its new meaning הרע). Immediately following, the same construction repeats: 'הַיְנוּ הָרָעוֹת וְהַיִּסּוּרִין הַבָּאִים עָלֶיךָ' — the marker 'הַיְנוּ' (that is / namely) equates 'הָרָע שֶׁבָּא לְךָ' with 'הָרָעוֹת וְהַיִּסּוּרִין הַבָּאִים עָלֶיךָ.' The three nodes form a connected chain: (1) רֵעֲךָ IS הָרָע שֶׁבָּא לְךָ [by the 'שֶׁתֶּאֱהוֹב הָרָע' reinterpretation of the verse]; (2) הָרָע שֶׁבָּא לְךָ IS הָרָעוֹת וְהַיִּסּוּרִין [by the 'הַיְנוּ' marker in line 3]. All three share one essential nature: they name the domain of divinely-sent affliction from different angles — the grammatical form of the verse (רֵעֲךָ), the shorthand (הָרָע שֶׁבָּא לְךָ), and the full explicit description (הָרָעוֹת וְהַיִּסּוּרִין). This package is marked evil because the dominant content — suffering, pain, affliction, evil occurrences — is the negative pole of the teaching. The instruction to LOVE this domain does not change its intrinsic nature; the package is still the evil pole that the teaching teaches the person to accept. The dominant node is 'הָרָעוֹת וְהַיִּסּוּרִין' because it is the most fully articulated description of the domain, appears in both line 2 (the teaching's opening statement) and line 3 (the hermeneutical proof), and has the highest effective degree of conceptual connectivity within the teaching.",
+      "dominant_node": "הרעות והיסורין",
+      "nodes": [
+        "הרעות והיסורין",
+        "הרע שבא לך",
+        "רעך"
+      ],
+      "node_degrees": {
+        "הרעות והיסורין": 2,
+        "הרע שבא לך": 2,
+        "רעך": 1
+      }
+    },
+    {
+      "id": 2,
+      "torah_ref": 165,
+      "label": "כָּמוֹךָ וּמַעֲשֶׂיךָ",
+      "label_en": "As You Are — Your Deeds and Measure",
+      "polarity": "neutral",
+      "reason": "This package captures the Torah's second bechina-cluster: the measure of a person's actions and true state as the yardstick of divine justice. In line 4, the Rebbe reinterprets the word 'כָּמוֹךָ' (as yourself): 'כִּי כָּמוֹךָ – כְּמוֹ שֶׁאַתָּה הוּא, הַיְנוּ לְפִי מַעֲשֶׂיךָ.' Two bechina markers fire in sequence: (1) the dash construction 'כָּמוֹךָ – כְּמוֹ שֶׁאַתָּה הוּא' equates the verse-word with its new meaning: 'as yourself' IS 'as you truly are (כְּמוֹ שֶׁאַתָּה הוּא)'; (2) the 'הַיְנוּ' marker then equates 'כְּמוֹ שֶׁאַתָּה הוּא' with 'לְפִי מַעֲשֶׂיךָ' (according to your deeds). The chain: כָּמוֹךָ IS כְּמוֹ שֶׁאַתָּה הוּא IS לְפִי מַעֲשֶׂיךָ. All three share one essential nature: the self-referential measure — what you are, how you stand before God, defined by your actual deeds. This is the standard of justice by which the magnitude of deserved-suffering is reckoned. The polarity is neutral: 'מַעֲשֶׂיךָ' (your deeds) is a structural concept — it is the human side of the justice calculus, neither inherently holy nor evil. The same concept would apply equally to a person with good deeds or bad deeds; it is the yardstick, not the verdict. The dominant node is 'לְפִי מַעֲשֶׂיךָ' — it is the most concrete and active of the three formulations, appearing in both line 2 (the teaching's first explanation) and line 5 (the verse-conclusion), and it is the explicit substantive content that the other two are equated to.",
+      "dominant_node": "לפי מעשיך",
+      "nodes": [
+        "לפי מעשיך",
+        "כמו שאתה הוא",
+        "כמוך"
+      ],
+      "node_degrees": {
+        "לפי מעשיך": 2,
+        "כמו שאתה הוא": 2,
+        "כמוך": 1
+      }
+    },
+    {
+      "id": 3,
+      "torah_ref": 165,
+      "label": "אֲנִי ה' — בַּעַל הָרַחֲמִים",
+      "label_en": "I am God — The Master of Mercy",
+      "polarity": "good",
+      "reason": "This package captures the Torah's third bechina-cluster: the divine identity as explicitly the Master of Mercy. In line 5, the Rebbe reinterprets the verse's closing phrase: 'אֲנִי ה' – בַּעַל הָרַחֲמִים, עֲדַיִן אֲנִי מִתְנַהֵג עִמְּךָ בְּרַחֲמִים, כַּנַּ\"ל.' The dash construction 'אֲנִי ה' – בַּעַל הָרַחֲמִים' is the bechina marker: 'I am God' IS 'the Master of Mercy.' The Rebbe equates the divine name (אֲנִי ה') with the divine quality (בַּעַל הָרַחֲמִים). This is the same structural move as in line 3 and 4 — the verse is being hermeneutically re-read, and each clause-meaning IS declared to be the same as the deeper concept. The two nodes share one essential nature: the God who spoke the verse IS the Master of Mercy — both designations name the same reality from different angles (the divine name versus the divine quality). The polarity is good: this is the positive pole of the teaching — God's mercy, God's compassionate governance, is unambiguously the holy positive force. The entire teaching's argument rests on this: God IS mercy, and therefore even painful sufferings are expressions of that mercy (less than deserved). The dominant node is 'בַּעַל הָרַחֲמִים' because it is the substantive theological content being declared — the new understanding of who God IS in this context. 'אֲנִי ה'' is the verse-anchor; 'בַּעַל הָרַחֲמִים' is the bechina-declaration that expands its meaning.",
+      "dominant_node": "בעל הרחמים",
+      "nodes": [
+        "בעל הרחמים",
+        "אני ה'"
+      ],
+      "node_degrees": {
+        "בעל הרחמים": 1,
+        "אני ה'": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "note_on_zero_edges": "Reference 165 has no pre-existing edges in torahData.js. All bechina relationships were derived fresh from source text analysis. All edges proposed in torah_165_additions.json.",
+    "total_nodes": 8,
+    "total_packages": 3,
+    "raw_connected_components": 3,
+    "components_merged_into_packages": 0,
+    "note_on_merges": "No merges performed. Each of the three raw components occupies a genuinely distinct semantic domain: (A) the afflictions/evil domain [Package 1], (B) the personal-deeds/measure domain [Package 2], and (C) the divine-mercy domain [Package 3]. Merging A and B would conflate the evil-pole (suffering) with the neutral structural yardstick (deeds) — they are related by eitza (your deeds determine the magnitude of suffering deserved), not by shared nature. Merging B and C would conflate the human-measure concept with the divine-mercy concept — they are connected by eitza (because you are as you are, therefore God still shows mercy), not by shared nature. Merging A and C would conflate the evil being accepted with the divine goodness that contextualizes the acceptance — these are the two opposing poles of the teaching (evil vs. good), connected by eitza (because God is the Master of Mercy, the sufferings are bearable), not by shared nature.",
+    "evil_mirror_note": "The teaching has a partial good/evil structure: Package 1 (evil — afflictions) is contextually opposed by Package 3 (good — divine mercy). However, this is not a classic evil-mirror relationship where an evil package structurally mirrors a good package with the same internal topology. Rather, the teaching presents a single eitza arc: Package 1 (evil) → accepted because of Package 2 (neutral: as you are) → grounded in Package 3 (good: God's mercy). The evil is not a sitra-achra counterpart of divine mercy; it is the teaching's problem-statement that Package 3 resolves.",
+    "eitza_summary": "The causal structure of Torah #165: Package 3 (God IS the Master of Mercy) → therefore sufferings are less than you deserved (eitza from Package 3 to Package 1) → therefore you should accept Package 1's afflictions with love, knowing they are actually merciful. Package 2 (your deeds) functions as the calibration mechanism: the measure of what you 'deserve' is determined by your deeds, which is why the sufferings you actually receive represent mercy. The eitza arc: [your deeds, Pkg 2] → calibrate → [deserved suffering > actual suffering, Pkg 1] → because → [God is merciful, Pkg 3] → conclusion: accept Pkg 1 with love."
+  }
+}

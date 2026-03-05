@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "source": "Torah #189",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 1,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "נָחָשׁ (nachash — the snake; the source of the primary danger, whose 'bite' = sadness and laziness; the verse 'and the snake — dust is its food' grounds the teaching)",
+      "נְשִׁיכַת הַנָּחָשׁ (neshikat ha-nachash — the bite of the snake; described as identical to עַצְבוּת וְעַצְלוּת, 'עִקַּר נְשִׁיכַת הַנָּחָשׁ הוּא עַצְבוּת וְעַצְלוּת'; this is a near-bechina claim: the snake's bite IS sadness and laziness)",
+      "יְסוֹד הֶעָפָר (yesod he-afar — the foundation / element of dust; explicitly cited as the Kabbalistic source from which sadness and laziness originate: 'שֶׁהֵם בָּאִים מִיסוֹד הֶעָפָר, כַּמּוּבָא בַּסְּפָרִים' — as brought in the Kabbalistic books)"
+    ],
+    "gap_explanation": "Torah #189 has exactly one bechina edge in torahData.js (id: 2426): עָפָר ↔ עַצְבוּת וְעַצְלוּת. The source text (one dense line) uses the word 'בְּחִינַת' explicitly once to establish this equivalence. Two additional concepts appear prominently in the text but have no corresponding dataset edges: (1) נָחָשׁ (the snake) and its bite — the text declares 'עִקַּר נְשִׁיכַת הַנָּחָשׁ הוּא עַצְבוּת וְעַצְלוּת' using 'הוּא' (is), which in Rebbe Nachman's language strongly signals a bechina relationship between the snake's bite and sadness/laziness; this pairing would belong naturally in the same evil package as the existing edge. (2) יְסוֹד הֶעָפָר — the specific Kabbalistic element-category of earth/dust — is cited as the metaphysical source of sadness and laziness ('כַּמּוּבָא בַּסְּפָרִים'), making it a prime candidate for a bechina edge with עָפָר and/or עַצְבוּת וְעַצְלוּת. These three missing nodes (נחש / נשיכת הנחש / יסוד העפר) represent the most significant gaps in the dataset's coverage of Torah #189.",
+    "source_text_summary": "Torah #189 is a single-sentence teaching. One must be very careful about sadness (עצבות) and laziness (עצלות), because the essence of the snake's bite is sadness and laziness. The proof-verse is Isaiah 65:25 — 'and the snake, dust is its food.' The teaching derives: dust is the bechina (aspect) of sadness and laziness, because they come from the foundation/element of dust (יסוד העפר), as is found in the Kabbalistic books. The teaching frames the snake — the archetypal evil force — as feeding on dust, and dust as the substrate of sadness and laziness, creating a three-link identity chain: snake ↔ dust ↔ sadness and laziness."
+  }
+}

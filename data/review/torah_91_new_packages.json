@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "source": "Torah #91 (Likutay Moharan vol. 1)",
+    "type": "new_package_proposals",
+    "generated": "2026-03-03"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": "NP-91-1",
+      "torah_ref": 91,
+      "label": "אֱמוּנָה הַמִּתְפַּשֶּׁטֶת בָּאֵיבָרִים — Faith That Spreads Through the Limbs",
+      "label_en": "Embodied Faith: Emunah Expressed in Every Limb",
+      "polarity": "good",
+      "reason": "Torah #91's primary teaching is entirely about אמונה (faith) in its embodied form — yet this concept does not appear as a bechina node in the dataset for Torah #91. The teaching presents three bechina statements that together form a coherent conceptual cluster: (1) 'יָדָיו אֱמוּנָה' — Moses's hands WERE faith (ידים ↔ אמונה); (2) 'עַד שֶׁיִּתְפַּשֵּׁט בְּכָל הָאֵיבָרִים' — faith spreads into all the limbs, becoming them (אמונה ↔ איברים); (3) 'כָּל מִצְו‍ֹתֶיךָ אֱמוּנָה' — all commandments ARE faith (מצוות ↔ אמונה). These three pairs (yielding 4 nodes: אמונה, ידים, איברים, מצוות) all share the same essential nature: the expression of faith in physical, embodied form. They are not cause-and-effect relationships — they are bechina equivalences. The hands do not produce faith; the hands ARE faith when fully infused with it. The limbs do not merely carry out faith's instructions; they become faith when it spreads through them. Mitzvot do not lead to faith as a consequence; they are called faith because a physical mitzvah performed without faith is as nothing ('בְּלֹא אֱמוּנָה אֵינוֹ כְּלוּם'). This domain is independent from Package 1 (שמש / חכמה): the שמש/חכמה package is the destination of faith's elevation (eitza: faith → wisdom), while this package is faith's nature and vehicle. They are related by eitza (this package → Package 1) but not by bechina — faith and wisdom do not share the same essential nature here; faith is what generates wisdom, not a different face of it. Therefore this faith-embodiment cluster constitutes a genuinely new, independent bechina domain not covered by the existing single package.",
+      "dominant_node": "אמונה",
+      "candidate_nodes": ["אמונה", "ידים", "איברים", "מצוות"],
+      "candidate_edges": [
+        {
+          "node1": "ידים",
+          "node2": "אמונה",
+          "proof": "וַיְהִי יָדָיו אֱמוּנָה – שֶׁהָיָה לוֹ אֱמוּנָה כָּל כָּךְ גְּדוֹלָה, עַד שֶׁנִּתְפַּשֵּׁט בְּכָל הָאֵיבָרִים, שֶׁאֲפִלּוּ בְּיָדָיו הָיָה הָאֱמוּנָה",
+          "type": "bechina_candidate"
+        },
+        {
+          "node1": "אמונה",
+          "node2": "איברים",
+          "proof": "וְהָעִקָּר שֶׁצָּרִיךְ לִהְיוֹת לָאָדָם אֱמוּנָה כָּל־כָּךְ, עַד שֶׁיִּתְפַּשֵּׁט בְּכָל הָאֵיבָרִים",
+          "type": "bechina_candidate"
+        },
+        {
+          "node1": "מצוות",
+          "node2": "אמונה",
+          "proof": "כִּי בְּלֹא אֱמוּנָה אֵינוֹ כְּלוּם, כְּמוֹ שֶׁכָּתוּב (תהילים קי\"ט): כָּל מִצְו‍ֹתֶיךָ אֱמוּנָה",
+          "type": "bechina_candidate"
+        }
+      ],
+      "why_independent_domain": "Package 1 (שמש/חכמה) describes the ontological identity of the sun with wisdom — a cross-Torah bechina cited from Torah #1. This new package describes a different and independent domain: the embodiment of faith in physical acts and bodily limbs. Neither cluster is a bechina of the other: 'faith spread through the limbs' is not the same essential reality as 'the sun = wisdom.' Their connection is eitza (the eitza edge already in the dataset: embodied faith → sekhel/wisdom). The two domains are related causally but not co-essential.",
+      "cross_references": {
+        "note": "The node ידים also appears as a bechina node in Torah #80 (ידים ↔ חכמה, edge 1148). In Torah #80's context, hands = wisdom (a different teaching). In Torah #91, hands = faith. This is not a contradiction — it reflects the standard framework that the same concept can hold different bechina memberships in different Torahs (per framework.md section 3.2, rule 1: 'Torah-specific — each Torah's packages are entirely independent')."
+      }
+    }
+  ],
+  "observations": "Torah #91, despite its brevity (7 lines), contains two distinct bechina domains: (1) the שמש/חכמה identity (already captured in the dataset, Package 1), and (2) the embodied-faith cluster (אמונה/ידים/איברים/מצוות — entirely absent from the dataset). The second domain meets the threshold of 3+ concepts forming an independent bechina family (4 candidate concepts, 3 candidate edges). The verdict is therefore NEW_PACKAGES_PROPOSED.\n\nThe Torah's structural argument in two packages:\n\n[Package NP-91-1: embodied faith]  →eitza→  [Package 1: sun/wisdom]\nאמונה / ידים / איברים / מצוות        →eitza→  שמש / חכמה / שכל\n\nThe eitza connection is explicitly stated in the text (edge 2889, ref=91): 'when one has this kind of faith [=NP-91-1], one comes from faith to sekhel [=Pkg 1].' This is the entire argumentative arc of the Torah.\n\nNo evil mirror exists in Torah #91. The teaching is a brief, purely positive observation with no discussion of an opposing force or klipah."
+}

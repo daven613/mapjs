@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "source": "Torah #51 (Likutay Moharan, Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===51 AND type==='bechina'. 12 bechina edges found, yielding 17 nodes across 5 raw connected components. Two small 2-node components (D: עינים/השגחה and E: אמת/כלו אחד) merged by shared nature into one package — both describe the domain of divine truth and watchfulness, and the source text explicitly chains them: truth draws divine providence, and the eyes are the instrument of providence (עינים = השגחה = אמת brings השגחה). The 3-node component B (שיש טהור / אחר הפעלה / ישות וטהרה) is retained as its own package because it describes a distinct cosmological domain — post-creation existence — and merging it with the טהרה/בחירה cluster would conflate 'when purity applies' (post-creation) with 'what purity is' (intermediary/free will). No eitza edges used for any grouping decision."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 51,
+      "label": "שֶׁקֶר וְרִבּוּי",
+      "label_en": "Falsehood and Multiplicity",
+      "polarity": "evil",
+      "reason": "The largest connected component in Torah #51 centers on שקר (falsehood) as the defining evil — the antithesis of divine oneness (אחד). The Rebbe explicitly equates sheker with multiplicity ('בקשו חשבנות רבים' — they sought many reckonings), because truth is singular (a silver vessel can only be called a silver vessel, one description) while falsehood is plural (it can be called gold, copper, or anything else). Sheker is also a bechina of דמעות (tears, salty water) because: sheker clouds the blood → melancho ly → tears flow → eyes dim → they 'lie' about what they see (showing big as small, one as two). The מלוח ('salty/bitter herb') of Iyov 30:4 is a bechina of tears — salty water that come through speech (שיחה = both 'speech' and 'bush'). Finally, מים מים (the cry 'water! water!' that R. Akiva warns against) is a bechina of sheker — salty water that does not satisfy thirst but multiplies it, just as falsehood does not quench spiritual need but amplifies it. The dominant node is שקר with degree 3.",
+      "dominant_node": "שקר",
+      "nodes": [
+        "שקר",
+        "\"בקשו חשבנות רבים\"",
+        "דמעות",
+        "\"מלוח\"",
+        "מים מים"
+      ],
+      "node_degrees": {
+        "שקר": 3,
+        "דמעות": 2,
+        "\"בקשו חשבנות רבים\"": 1,
+        "\"מלוח\"": 1,
+        "מים מים": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 51,
+      "label": "יְשׁוּת וְשַׁיִשׁ טָהוֹר",
+      "label_en": "Created Existence and Pure Marble",
+      "polarity": "neutral",
+      "reason": "This 3-node component describes the cosmological domain of post-creation existence — the state of the world after God brought creation from potentiality (כח) into actuality (פעל). שיש טהור (pure marble) is the symbol from R. Akiva's warning: when you arrive at stones of pure marble, don't say 'water water.' The Rebbe explains that pure marble is a bechina of אחר הפעלה — the post-creation world, the realm of yesh (existence), where the name 'pure' (טהור) becomes applicable for the first time (before creation there was no impurity, so the category of purity was irrelevant). אחר הפעלה is in turn a bechina of ישות וטהרה — 'existence and purity' — the compound defining quality of the post-creation world. These three nodes all describe the same metaphysical state: the world as it is after God created it. This is neutral (neither good nor evil) — it is the structural context within which falsehood and truth both operate. The dominant node is אחר הפעלה (degree 2) as the hub connecting שיש טהור and ישות וטהרה.",
+      "dominant_node": "אחר הפעלה",
+      "nodes": [
+        "שיש טהור",
+        "אחר הפעלה",
+        "ישות וטהרה"
+      ],
+      "node_degrees": {
+        "אחר הפעלה": 2,
+        "שיש טהור": 1,
+        "ישות וטהרה": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 51,
+      "label": "טָהֳרָה וּבְחִירָה",
+      "label_en": "Purity and Free Will",
+      "polarity": "neutral",
+      "reason": "This component groups the metaphysical structure of purity/free choice — the intermediary zone between holiness and impurity. טהרה (purity) is explicitly a bechina of בחירה (free will), because both are 'intermediaries between two things': purity stands between holiness (קדש) and impurity (טומאה) and through it impurity can be rectified; free will stands between the pre-creation absolute goodness and the post-creation possibility of evil. Purity is also a bechina of שמאל (the left side), because according to the Zohar the primary hold of impurity is from the left, and Levi — the tribe of purification ('וְטִהַרְתָּ אֶת בְּנֵי לֵוִי') — is the בחינת שמאל. שמאל and לוי are therefore both bechinot of purity. ממצע בין הקדש והטמאה (the intermediary between the holy and the impure, through which impurity is rectified) is the explicit definitional bechina of טהרה stated in the text (line 15). This package is neutral: it describes a structural position in the cosmic order — the middle ground — rather than alignment with either good or evil.",
+      "dominant_node": "טהרה",
+      "nodes": [
+        "טהרה",
+        "בחירה",
+        "ממצע בין הקדש והטמאה, שעל ידו נתתקן הטמאה",
+        "שמאל",
+        "לוי"
+      ],
+      "node_degrees": {
+        "טהרה": 3,
+        "שמאל": 2,
+        "בחירה": 1,
+        "ממצע בין הקדש והטמאה, שעל ידו נתתקן הטמאה": 1,
+        "לוי": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 4,
+      "torah_ref": 51,
+      "label": "אֱמֶת וְהַשְׁגָּחָה",
+      "label_en": "Truth and Divine Providence",
+      "polarity": "good",
+      "reason": "Two small 2-node components were merged here by shared nature. Component E (אמת ↔ כלו אחד) describes truth as the domain of absolute unity — אמת is a bechina of כלו אחד (all is one), because truth is singular by nature (only one true statement can be made about any given thing, while falsehood is infinitely plural). Component D (עינים ↔ השגחה) describes the eyes as the instrument of divine providence — the eyes are a bechina of השגחה, as in 'עֵינַי בְּנֶאֶמְנֵי אָרֶץ' (My eyes are on the faithful of the land). The merge is grounded in the source text itself: the Rebbe explicitly chains these two pairs — 'through אמת, the השגחה of God rests on a person; through שקר, one removes the השגחה from oneself' (line 20, 31). The eyes (עינים = השגחה) watch over the truthful (אמת = כלו אחד). Both pairs share the same essential domain: the positive side of divine unity and watchfulness, as opposed to the multiplicity/falsehood of Package 1. The dominant node is אמת (degree 1 in bechina graph, but the conceptual center of the teaching's positive side).",
+      "dominant_node": "אמת",
+      "nodes": [
+        "אמת",
+        "כלו אחד",
+        "עינים",
+        "השגחה"
+      ],
+      "node_degrees": {
+        "אמת": 1,
+        "כלו אחד": 1,
+        "עינים": 1,
+        "השגחה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_components": [
+            ["עינים", "השגחה"],
+            ["אמת", "כלו אחד"]
+          ],
+          "reason": "Both are 2-node isolated pairs. The merge is justified by shared nature (not eitza): all four nodes belong to the domain of divine truth/unity and its positive expression in the world. The source text chains them directly: אמת draws השגחה; eyes (עינים) = השגחה; God's eyes watch the אמת. They are four faces of the same reality — that truth, unity, divine watchfulness, and the instrument of watchfulness (eyes) are all bechinot of the one divine reality. Polarity is good for all four."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 12,
+    "total_nodes": 17,
+    "total_packages": 4,
+    "raw_connected_components": 5,
+    "components_merged_into_packages": 4,
+    "note_on_merges": "5 raw components: (A) 5 nodes — שקר/דמעות/מים מים/מלוח/בקשו חשבנות רבים [Pkg 1 evil], (B) 3 nodes — שיש טהור/אחר הפעלה/ישות וטהרה [Pkg 2 neutral], (C) 5 nodes — טהרה/בחירה/ממצע/שמאל/לוי [Pkg 3 neutral], (D) 2 nodes — עינים/השגחה [merged into Pkg 4], (E) 2 nodes — אמת/כלו אחד [merged into Pkg 4 — same nature: truth/divine unity domain]. Merge D+E justified by shared nature only."
+  }
+}

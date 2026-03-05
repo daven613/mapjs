@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "source": "Torah #137",
+    "volume": "Likutay Moharan, Volume 1",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, then examined all edges in torahData.js for reference===137 (NONE found — Torah #137 is completely absent from the dataset). Read the full source text torah_137.txt. Scanned for every use of bechina-equivalent language: בְּחִינַת, הַיְנוּ, נִקְרָא, and structural reattributions. Classified each as a new edge proposal (since none exist in dataset). Evaluated whether any proposed bechina constitutes a new package, an addition to an existing package, or a dataset-level gap requiring initial data entry."
+  },
+  "dataset_status": {
+    "edges_in_dataset_for_reference_137": 0,
+    "verdict": "COMPLETE_GAP — Torah #137 has no representation in torahData.js whatsoever. Every concept and every bechina identified below is new and must be added to the dataset from scratch."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "new_edges_required": [
+    {
+      "proposed_edge_id": "137-B-001",
+      "node1_id": "חלקי ה'",
+      "node1_text": "חֶלְקִי יְיָ",
+      "node2_id": "חלק אלקי ממעל",
+      "node2_text": "הַחֵלֶק אֱלֹקַּי מִמַּעַל",
+      "type": "bechina",
+      "reference": 137,
+      "package_id": 1,
+      "source_quote": "חֶלְקִי יְיָ אָמַרְתִּי לִשְׁמֹר דְּבָרֶיךָ: הַיְנוּ שֶׁהַחֵלֶק אֱלֹקַּי מִמַּעַל שֶׁיֵּשׁ לִי, אוֹמֵר לִי וּמְלַמֵּד אוֹתִי לִשְׁמֹר דְּבָרֶיךָ",
+      "source_line": 1,
+      "reason": "The verse phrase 'חֶלְקִי יְיָ' (My portion is God) is explained by 'הַיְנוּ שֶׁהַחֵלֶק אֱלֹקַּי מִמַּעַל שֶׁיֵּשׁ לִי' — the 'הַיְנוּ' (meaning/that is) signals direct bechina equivalence. 'My portion is God' IS 'the divine portion from above that I possess'. The Rebbe is invoking the Kabbalistic concept from Job 31:2 ('חֵלֶק אֱלֹהַּ מִמָּעַל') — every soul carries a divine portion/spark from above. The verse-phrase and the interpretive phrase name the same single entity from two vantage points."
+    },
+    {
+      "proposed_edge_id": "137-B-002",
+      "node1_id": "חלק אלקי ממעל",
+      "node1_text": "הַחֵלֶק אֱלֹקַּי מִמַּעַל",
+      "node2_id": "אמרתי — קול הנשמה המלמד",
+      "node2_text": "אוֹמֵר לִי וּמְלַמֵּד אוֹתִי",
+      "type": "bechina",
+      "reference": 137,
+      "package_id": 1,
+      "source_quote": "הַיְנוּ שֶׁהַחֵלֶק אֱלֹקַּי מִמַּעַל שֶׁיֵּשׁ לִי, אוֹמֵר לִי וּמְלַמֵּד אוֹתִי לִשְׁמֹר דְּבָרֶיךָ",
+      "source_line": 2,
+      "reason": "The Rebbe reattributes the verse's 'אָמַרְתִּי' (I said) from the Psalmist/human speaker to 'הַחֵלֶק אֱלֹקַּי מִמַּעַל' — making the divine portion the grammatical subject of 'saying and teaching'. This is the core interpretive move: the divine portion IS the entity that 'אוֹמֵר לִי וּמְלַמֵּד אוֹתִי' (says to me and teaches me). The divine spark within shares its essential nature with the inner voice of conscience and spiritual instruction. The two descriptions — 'the divine portion' and 'the one that says/teaches' — are two faces of the same reality."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_137_edges_in_dataset": 0,
+    "total_reference_137_bechina_edges_in_dataset": 0,
+    "total_bechina_relationships_found_in_text": 2,
+    "bechina_language_occurrences": [
+      {
+        "line": 2,
+        "text": "הַיְנוּ שֶׁהַחֵלֶק אֱלֹקַּי מִמַּעַל שֶׁיֵּשׁ לִי",
+        "classification": "PRIMARY BECHINA — 'חֶלְקִי יְיָ' (My portion is God) IS 'the divine portion from above'; marker: הַיְנוּ"
+      },
+      {
+        "line": 2,
+        "text": "אוֹמֵר לִי וּמְלַמֵּד אוֹתִי",
+        "classification": "STRUCTURAL BECHINA — the divine portion IS the inner teacher/voice; the verb 'אָמַרְתִּי' is reattributed to the divine portion, equating 'divine portion' with 'the one that speaks and teaches'"
+      }
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "לִשְׁמֹר דְּבָרֶיךָ (to keep Your words / commandments)",
+        "reason": "This is the content/purpose of what the divine portion teaches — it is the OBJECT of 'מְלַמֵּד אוֹתִי' (teaches me TO keep Your words). The relationship between the divine portion and 'שְׁמִירַת מִצְווֹת' is eitza (the divine portion LEADS TO / PRODUCES the keeping of commandments), not bechina (the divine portion does not share the same essential nature as commandment-keeping — it is the teacher, commandment-keeping is the outcome). Excluded from bechina edges."
+      },
+      {
+        "concept": "The Psalmist / 'אָמַרְתִּי' in its literal reading (I, the human, said)",
+        "reason": "The Rebbe's interpretation deliberately REPLACES the human speaker of 'אָמַרְתִּי' with the divine portion. The verse's plain-sense 'I said' is not posited as a separate bechina node — it is the very thing being reinterpreted. The reattribution is the bechina, not the literal subject."
+      }
+    ],
+    "note_on_brevity": "Torah #137 is among the shortest Torahs in Likutay Moharan volume 1 — a two-line aphoristic gloss on Psalms 119:57. Its structural simplicity means: one bechina equation (חֶלְקִי יְיָ = חֵלֶק אֱלֹקִּי מִמַּעַל), one functional reattribution (the divine portion = the inner teacher-voice), and one downstream eitza (inner teacher-voice → keeping commandments). The Torah does not elaborate a chain of concepts, does not introduce evil-side nodes, and does not build a multi-package structure. Its contribution to the conceptual map is the identification of the divine inner spark with the conscience/inner-teacher that directs a person toward mitzvot.",
+    "cross_reference_note": "The concept 'חֵלֶק אֱלֹהַּ מִמַּעַל' (divine portion from above) is a pervasive concept across Likutay Moharan. In many Torahs (e.g., Torah #22, #49) the divine spark within the person is the foundation of concepts such as ניצוץ הנשמה (spark of the soul), אמונה (faith), and פנימיות (inner dimension). The specific identification of this spark as an inner speaking/teaching voice — literally the one who says 'keep the commandments' — is the distinctive contribution of Torah #137."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "source": "Torah #1",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-02",
+    "methodology": "Read framework.md, proposed_packages.json, all reference===1 edges from torahData.js, and the full source text torah_1.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, לְשׁוֹן) were considered."
+  },
+  "additions": [
+    {
+      "package_id": 5,
+      "package_label": "אוֹת תָּ\"ו וְהַחֲקִיקָה",
+      "node_id": "נחת",
+      "node_text": "נַחַת",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly states: 'נַחַת דַּיְקָא, הַיְנוּ בְּחִינַת חֵן הַנַּ\"ל וְהַת הַנַּ\"ל, וְעַל־יְדֵי־זֶה נַעֲשֶׂה אוֹתִיּוֹת נַחַת'. The word נַחַת is composed of the letters נ+ח+ת (nun+chet+tav), which are the three bechina-letters of this Torah: נ (Package 2 = מלכות), ח (Package 1 = חכמה), ת (Package 5 = חקיקה). The Rebbe calls נחת a bechina of the combination חֵן (=ח+נ, which is the union of chokhmah and malkhut) PLUS the ת (=tav/engraving). This makes נחת the capstone concept of Package 5 — it is the concrete word whose letters encode the full structure of the Torah's teaching. It belongs in Package 5 (tav/engraving) rather than Package 2 because the ת (tav) is its defining final element that completes the formation, and the Rebbe specifically says the three letters נחת spell out his entire teaching. It is the seal/outcome concept produced when the תָּו engraving is complete.",
+      "source_quote": "נַחַת דַּיְקָא, הַיְנוּ בְּחִינַת חֵן הַנַּ\"ל וְהַת הַנַּ\"ל, וְעַל־יְדֵי־זֶה נַעֲשֶׂה אוֹתִיּוֹת נַחַת, וְאָז נִשְׁמָעִים דְּבָרָיו וְנִתְקַבֵּל בַּקָּשָׁתוֹ כַּנַּ\"ל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [
+    {
+      "node_id": "צוציתא דנורא חורתא",
+      "suggested_package_id": 3,
+      "reason": "Edge 473 (reference=1, type=bechina): צוציתא דנורא חורתא ↔ אש לבנה. The source text (line 26) states: 'וְזֶהוּ בְּחִינַת צוּצִיתָא דְּנוּרָא חִוַּרְתָּא, אֵשׁ לְבָנָה; אַף־עַל־פִּי־כֵן מַלְאָךְ מַזִּיק הוּא'. The Aramaic term צוציתא דנורא חורתא (white spark of fire) is an explicit bechina of אש לבנה (which is already in Package 3). It is the disguised form of the yetzer hara when it presents itself as something holy — squarely in the evil domain of Package 3. Package 3 already contains אש לבנה and מתחלה היצר הרע מתלבש עצמו במצוות; צוציתא דנורא חורתא is the Aramaic label for the same phenomenon and belongs alongside them."
+    },
+    {
+      "node_id": "מלאך מזיק",
+      "suggested_package_id": 3,
+      "reason": "Edge 472 (reference=1, type=bechina): מלאך מזיק ↔ אש לבנה. The source text (line 26) states: 'אַף־עַל־פִּי־כֵן מַלְאָךְ מַזִּיק הוּא' — even though the yetzer hara appears as white fire (a mitzvah-like flame), it is a destructive angel. מלאך מזיק is a bechina of אש לבנה (itself in Package 3) and describes the true nature of the yetzer hara's disguise from the side of evil. It belongs in Package 3 alongside the other nodes describing the evil inclination's character and tactics."
+    },
+    {
+      "node_id": "פשעים",
+      "suggested_package_id": 3,
+      "reason": "Edge 1870 (reference=1, type=bechina): פשעים ↔ מלכות הרשעה. The source text (line 14) states: 'וּפֹשְׁעִים יִכָּשְׁלוּ בָם, בְּחִינַת מַלְכוּת הָרְשָׁעָה, בְּחִינַת הַיֵּצֶר הָרָע'. The transgressors/sinners are an explicit bechina of מלכות הרשעה (evil kingdom) — they are the human expression of alignment with the evil malkhut, just as the צדיקים are the human expression of alignment with the holy malkhut. Package 3 already contains מלכות הרשעה and related evil-domain nodes; פשעים belongs there as the human embodiment of that malkhut."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_1_edges": 69,
+    "total_reference_1_bechina_edges": 52,
+    "total_reference_1_eitza_edges": 17,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["חכמה", "חיות", "אות חי\"ת", "בכור", "יעקב", "ראשית", "שמש", "\"תמימי דרך\"", "יוסף", "להסתכל בהשכל שיש בכל דבר", "תם", "הסתכלות", "אשרי"],
+      "package_2": ["מלכות", "\"מסכן וחכם\"", "אות נו\"ן", "דל", "דלית לה מגרמה כלום", "חן", "חשיבות", "יצר טוב", "לבנה", "עני", "ספינה", "ספון", "צריך כל אחד לתן כח לבחינת מלכות דקדשה להתגבר על מלכות דסטרא אחרא", "לעולם ירגיז אדם יצר טוב על יצר הרע"],
+      "package_3": ["יצר הרע", "\"מלך זקן וכסיל\"", "גל", "מלכות הרשעה", "לבנה דסטרא אחרא", "מי שאינו מקשר עצמו אל השכל והחכמה והחיות, שיש בכל דבר", "עשו", "בעל עברה", "משוגע", "אש לבנה", "מתחלה היצר הרע מתלבש עצמו במצוות", "שגעון", "רוח שטות"],
+      "package_4": ["תורה", "אות וא\"ו", "מקל", "שמות", "דרכי ה'", "לוחות"],
+      "package_5": ["אות ת\"ו", "חקיקה", "רשימה"]
+    },
+    "nodes_in_dataset_not_in_packages": ["צוציתא דנורא חורתא", "מלאך מזיק", "פשעים"],
+    "concepts_in_source_text_not_in_dataset": ["נחת"],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "הדר / זיו",
+        "reason": "Line 21 of source text explains 'הָדָר לוֹ, תִּרְגֵּם אוּנְקֶלוּס: זִיו לֵיהּ, לְשׁוֹן אוֹר' but does NOT use the word בְּחִינַת for הדר itself. The Rebbe is giving a translation/explanation of the word in the verse, not establishing it as a bechina-concept. Excluded per framework strictness rule."
+      },
+      {
+        "concept": "שורו (from בכור שורו הדר לו)",
+        "reason": "Line 21 says 'שׁוֹרוֹ – לְשׁוֹן הִסְתַּכְּלוּת' (שורו = language of gazing). This is a word-level translation, not a bechina declaration. Furthermore, the content IS captured in the dataset as the bechina between הסתכלות and להסתכל בהשכל שיש בכל דבר (edge 1588, reference=1), where the proof text quotes שורו. The concept is in Package 1."
+      },
+      {
+        "concept": "אלוותא (club/staff of Rabbah bar bar Chanah)",
+        "reason": "Line 28 says 'וְזֶהוּ בְּחִינַת אַלְוָתָא, דְּהַיְנוּ מַקְלוֹת'. This IS a bechina statement. However, it is ALREADY captured in the dataset: edge 188 (reference=1, type=bechina) has node1_id='מקל' with node1_text='אַלְוָתָא'. The node_id מקל is in Package 4. אלוותא is a variant Hebrew/Aramaic name for מקל (staff/club) — it is the same node under a different surface form. Not a new gap."
+      },
+      {
+        "concept": "ורח צדיקים כאור נגה (cited in line 6)",
+        "reason": "This is a biblical verse citation used to support the bechina of שמש=שכל. The verse itself is not established as a new bechina node — it is proof-text for an existing bechina. Not a gap."
+      }
+    ]
+  }
+}

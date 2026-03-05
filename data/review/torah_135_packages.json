@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "source": "Torah #135",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===135 AND type==='bechina'. Seven bechina edges, three raw connected components: Component A (4 nodes – מלכות/יראה/תלמידי חכמים/אות דל\"ת), Component B (2 nodes – ענוה/מישרים אשפט), Component C (4 nodes – צדיק/קדשת יום טוב/אור הגדול של יום טוב/פני רבו). Component B merged into Component A based on shared nature reasoning documented below. Final: 2 packages."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 135,
+      "label": "מַלְכוּת וַעֲנָוָה",
+      "label_en": "Kingship and Humility",
+      "polarity": "good",
+      "reason": "This cluster groups all nodes in Torah #135 whose essential nature is the dimension of holy kingship / receptive humility. מַלְכוּת דִּקְדֻשָּׁה is the central concept — the divine kingdom that has no substance of its own ('דְּלֵית לָהּ מִגַּרְמַהּ כְּלוּם') and is therefore called דָּלֶ\"ת (the letter of nothingness and receptivity). יִרְאָה (fear of God) is stated as a bechina of מַלְכוּת (line 26, 30: 'יִרְאָה הוּא בְּחִינַת מַלְכוּת'), and תַּלְמִידֵי-חֲכָמִים are also a bechina of מַלְכוּת ('מָאן מַלְכֵי — רַבָּנָן', line 29). The 2-node component ענוה ↔ מישרים אשפט is merged here: ענוה (humility) is the subjective, experiential face of the same domain — it is the inner quality of the person who has truly internalized malkhut. Line 30 makes this connection explicit: 'עֵקֶב עֲנָוָה יִרְאַת ה׳ — כִּי יִרְאָה הוּא בְּחִינַת מַלְכוּת.' Humility and fear of God are presented as consecutive aspects of the same essential domain of malkhut. The verse מֵישָׁרִים אֶשְׁפֹּט (judging with equity/uprightness) is named as a bechina of ענוה (line 12, 14): one who judges with complete equity, without self-aggrandizement, expresses the same essential quality as humility. Both ענוה and יראה/מלכות belong to the domain of 'smallness before greatness' — the structural emptiness that makes holy reception possible.",
+      "dominant_node": "מלכות",
+      "nodes": [
+        "מלכות",
+        "אות דל\"ת",
+        "יראה",
+        "תלמידי חכמים",
+        "ענוה",
+        "מישרים אשפט"
+      ],
+      "node_degrees": {
+        "מלכות": 3,
+        "אות דל\"ת": 1,
+        "יראה": 1,
+        "תלמידי חכמים": 1,
+        "ענוה": 1,
+        "מישרים אשפט": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["ענוה", "מישרים אשפט"],
+          "from_component": "B",
+          "reason": "The 2-node bechina pair ענוה ↔ מישרים אשפט (edge 1792) forms its own raw connected component. However, the source text (line 30) directly joins ענוה to the malkhut/yirah cluster: 'עֵקֶב עֲנָוָה יִרְאַת ה׳ — כִּי יִרְאָה הוּא בְּחִינַת מַלְכוּת.' Humility (ענוה), fear of God (יראה), and malkhut are all expressions of the same fundamental quality — the emptiness of self, the receptivity, the acknowledgment that greatness does not come from oneself. These are parallel aspects of the same cosmic structure: dalet, the empty vessel. Merging per shared-nature rule; the link between ענוה and יראה/מלכות is shared nature (both describe the quality of receptive smallness), not merely a causal chain."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 135,
+      "label": "הַצַּדִּיק וּקְדֻשַּׁת יוֹם-טוֹב",
+      "label_en": "The Tzaddik and the Holiness of Yom Tov",
+      "polarity": "good",
+      "reason": "This cluster groups the concepts whose essential nature is the luminous, outward-shining aspect of holiness — the tzaddik as the vessel and embodiment of Yom Tov's holiness, and the 'great light of Yom Tov' as both the face of the tzaddik and the holiness of Yom Tov itself. Three bechina edges connect four nodes: (1) אוֹר הַגָּדוֹל שֶׁל יוֹם טוֹב ↔ צַדִּיק (edge 2527: the great light of Yom Tov is a bechina of the tzaddik); (2) צַדִּיק ↔ קְדֻשַּׁת יוֹם טוֹב (edge 2610: the tzaddik is a bechina of the holiness of Yom Tov); (3) אוֹר הַגָּדוֹל שֶׁל יוֹם טוֹב ↔ פְּנֵי רַבּוֹ (edge 2490: the great light of Yom Tov is a bechina of the face of one's teacher/master). The dominant concept is that the tzaddik IS the Yom Tov — they share the same essential nature. When one 'receives the face of one's teacher on the festival' (הַקְבָּלַת פְּנֵי רַבּוֹ בָּרֶגֶל), one is actually receiving the holiness of Yom Tov, since the tzaddik's face and Yom Tov's light are the same essential thing. This package is the positive, illuminating pole of the teaching — the source of light that annuls גַּדְלוּת (arrogance) by its sheer greatness. Its dominant node is צַדִּיק (two bechina connections), but אוֹר הַגָּדוֹל שֶׁל יוֹם טוֹב is equally central (also two connections) — the package is a unified cluster of three names for the same reality.",
+      "dominant_node": "צדיק",
+      "nodes": [
+        "צדיק",
+        "קדשת יום טוב",
+        "אור הגדול של יום טוב",
+        "פני רבו"
+      ],
+      "node_degrees": {
+        "צדיק": 2,
+        "אור הגדול של יום טוב": 2,
+        "קדשת יום טוב": 1,
+        "פני רבו": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 7,
+    "total_nodes": 10,
+    "total_packages": 2,
+    "raw_connected_components": 3,
+    "components_merged_into_packages": 2,
+    "note_on_merges": "3 raw components: (A) 4 nodes — מלכות/אות דל\"ת/יראה/תלמידי חכמים [core of Package 1], (B) 2 nodes — ענוה/מישרים אשפט [merged into Package 1 via shared nature of receptive smallness, bridged by text line 30 connecting ענוה↔יראה↔מלכות], (C) 4 nodes — צדיק/קדשת יום טוב/אור הגדול של יום טוב/פני רבו [Package 2]. The teaching's structure is: Package 2 (the tzaddik/Yom Tov light) produces, via eitza, the annulment of arrogance which in turn reveals Package 1 (malkhut/humility). The two packages are thematically paired: greatness (Package 2) and the smallness it reveals (Package 1).",
+    "good_evil_mirror": "Torah #135 presents only the positive teaching with no explicit evil mirror developed through bechina edges. The negative pole (arrogance/גַּדְלוּת, and the four kingdoms/מַלְכוּת עֲמָלֵק/אַרְבַּע מַלְכֻיּוֹת דְּסִטְרָא אָחֳרָא) is mentioned extensively in eitza context (what Yom Tov combats) but does not generate standalone bechina-connected nodes in the dataset for this Torah. The evil mirror of Package 1 (מַלְכוּת דִּקְדֻשָּׁה) is implicitly מַלְכוּת עֲמָלֵק / אַרְבַּע מַלְכֻיּוֹת דְּסִטְרָא אָחֳרָא — same structure, opposite orientation — but these are not bechina nodes in the Torah #135 dataset."
+  }
+}

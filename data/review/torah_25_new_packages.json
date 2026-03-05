@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "source": "Torah #25",
+    "type": "new_package_proposals",
+    "generated": "2026-03-03"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "proposed_id": "NEW-25-A",
+      "label": "שֵׂכֶל וְשְׁלוֹשֶׁת שְׁלָבָיו — שָׁמִיר, נֹפֶת צוּפִים, אֲמָנָה",
+      "label_en": "Intellect and Its Three Stages — Shamir, Nofet Tzufim, Amanah",
+      "polarity": "good",
+      "candidate_nodes": [
+        "שכל בכח",
+        "שמיר",
+        "שכל בפועל",
+        "נפת צופים",
+        "שכל הנקנה",
+        "אמנה"
+      ],
+      "bechina_pairs_in_source_text": [
+        {
+          "node1": "כשיוצא משרירות הלב, ומשבר לבו האבן",
+          "node2": "שמיר",
+          "quote": "וּכְשֶׁיּוֹצֵא מִשְּׁרִירוּת הַלֵּב, וּמְשַׁבֵּר לִבּוֹ הָאֶבֶן – זֶה בְּחִינַת שָׁמִיר",
+          "note": "Already in dataset as edge ID 2991"
+        },
+        {
+          "node1": "שכל בפועל",
+          "node2": "נפת צופים",
+          "quote": "וְזֶה בְּחִינַת נֹפֶת צוּפִים, בִּבְחִינַת נֹפֶת תִּטֹּפְנָה שִׂפְתוֹתַיִךְ – שֶׁהוֹצִיא מְתִיקוּת שִׂכְלוֹ מִכֹּחַ אֶל הַפֹּעַל",
+          "note": "NOT in dataset as reference:25 bechina edge — missing"
+        },
+        {
+          "node1": "שכל הנקנה",
+          "node2": "אמנה",
+          "quote": "וְזֶה בְּחִינַת אֲמָנָה, כִּי אֲמָנָה – לְשׁוֹן קִיּוּם דָּבָר, כִּי שֵׂכֶל הַנִּקְנֶה, הוּא קִיּוּם שֶׁל אָדָם לְאַחַר מוֹתוֹ",
+          "note": "NOT in dataset as reference:25 bechina edge — missing"
+        }
+      ],
+      "justification": "The Torah #25 opens with an explicit three-part structure built on bechina language: (1) שמיר = breaking the stone-heart / exiting שרירות לב → the intellect rises from potential; (2) נפת צופים = שכל בפועל = actualized intellect brought to expression through lips/speech; (3) אמנה = שכל הנקנה = the acquired/permanent intellect that survives after death. These three pairs are presented as a unified conceptual domain — the three things that ceased when the Temple was destroyed. The text uses explicit 'זה בחינת' language for all three. This domain stands independently from the existing five packages: it is NOT part of the evil imagination domain (Package 1), NOT part of the pure inner/outer framework (Package 3), and only partially overlaps with the speech/actualization package (Package 4 — which captures the שפתותיך/דבור aspect of נפת צופים but NOT the full שכל triad). The intellect triad is the CENTRAL organizing framework of Torah #25 and deserves its own package."
+    },
+    {
+      "proposed_id": "NEW-25-B",
+      "label": "קָרְבָּנוֹת וּשְׁבִירַת הַדִּמְיוֹן",
+      "label_en": "Sacrifices and the Breaking of Imagination",
+      "polarity": "good",
+      "candidate_nodes": [
+        "קרבנות",
+        "שבירת הדמיון",
+        "זבחי אלקים רוח נשברה",
+        "בהמה (לקרבן)"
+      ],
+      "bechina_pairs_in_source_text": [
+        {
+          "node1": "זבחי אלקים רוח נשברה",
+          "node2": "שבירת הדמיון / קרבנות",
+          "quote": "זִבְחֵי אֱלֹקִים רוּחַ נִשְׁבָּרָה – שֶׁשְּׁבִירַת הַדִּמְיוֹן הֵם הַקָּרְבָּנוֹת",
+          "note": "Explicit bechina: breaking of imagination = sacrifices. NOT in dataset as reference:25 bechina edge."
+        },
+        {
+          "node1": "בהמה (לקרבן)",
+          "node2": "כח המדמה",
+          "quote": "מִבְּהֵמוֹת, שֶׁהֵם בְּחִינַת כֹּחַ הַמְדַמֶּה",
+          "note": "Already in dataset as edge ID 1483 — same בהמה node in Package 1 but in the GOOD context of the offering/sacrifice"
+        }
+      ],
+      "justification": "The section שייך לאות א (appendix to section 1) introduces a distinct bechina cluster around animal sacrifice as the mechanism for breaking imagination. The text explicitly states 'שבירת הדמיון הם הקרבנות' using bechina language. The concept of סמיכה (laying hands) on the sacrifice and וידוי (confession) are linked to transferring all sin/imagination onto the animal. This could form a 3-node package (קרבנות, שבירת הדמיון, רוח נשברה) — but the node count is borderline and the core concepts overlap significantly with Package 1's domain (it is the positive/remedy counterpart of Package 1's evil, parallel to how Package 2 relates to Package 1). Assessment: this is a POSSIBLE new package but the evidence is weaker than NEW-25-A. The nodes could instead be additions to Package 2 (the good/remedy side of the imagination domain).",
+      "verdict": "WEAK — Consider adding to Package 2 rather than creating a new package"
+    }
+  ],
+  "observations": "Torah #25 has a clear gap in its bechina subgraph: the three-stage intellectual triad (שמיר/שכל בכח, נפת צופים/שכל בפועל, אמנה/שכל הנקנה) is the organizing spine of the entire Torah, yet only ONE of its six bechina pairs appears in the dataset as a reference:25 bechina edge (the שמיר/שרירות הלב pair, edge ID 2991). The other two explicit bechina pairs — (נפת צופים = שכל בפועל) and (אמנה = שכל הנקנה) — are completely absent from the dataset. This is the most significant structural gap. Adding these two edges and creating a new Package (NEW-25-A) for the intellect triad would bring Torah #25's bechina graph into alignment with the Torah's actual structure. The second proposed package (NEW-25-B, sacrifices/breaking imagination) is more speculative and the nodes may better be treated as additions to existing packages. The existing five packages adequately cover the bechina-connected concepts already in the dataset. The primary action required is: (1) add two missing bechina edges (נפת צופים↔שכל בפועל and אמנה↔שכל הנקנה with reference:25), and (2) create a new intellect-triad package once those edges are in the dataset."
+}

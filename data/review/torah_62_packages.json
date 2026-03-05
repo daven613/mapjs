@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "source": "Torah #62",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===62 AND type==='bechina'. Only 3 bechina edges across 6 unique nodes found: (A) עולימתא שפירתא ↔ אמונה, (B) תאוות ↔ קלפות, (C) רעב ↔ תענית. All three raw components are 2-node pairs with no inter-component bechina connections. No component has 3+ nodes to serve as an anchor. Merges determined by shared bechina NATURE in the source text: A and C share the GOOD/constructive domain (emunah = the positive force; fasting/hunger = the positive corrective tool that purifies speech, both serving holy eating and the unification); B is the EVIL/opposing-force domain (desires = klipot = the antagonist structure). Result: 2 final packages — Package 1 merges A+C (good: faith and fasting as the two instruments of holy eating), Package 2 is B (evil: desires as klipot)."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 62,
+      "label": "אֱמוּנָה וְהַתַּעֲנִית",
+      "label_en": "Faith and the Fast",
+      "polarity": "good",
+      "reason": "This package unites the two positive-pole instruments of Torah #62. Component A: the maiden who has no eyes (עולימתא שפירתא דלית לה עינין) IS Faith — she is beautiful (she possesses certainty for the believer) yet has no sight (the unanswerable questions). Her essential nature IS אמונה. Component C: Hunger/fasting IS teshuvah's first-day power — 'רָעָב הַיְנוּ בְּחִינַת תַּעֲנִית, שֶׁמַּרְעִיב אֶת עַצְמוֹ' (line 27). The Torah's structure makes these two nodes belong to the same domain: the ברור (purification) of food requires אמונה (section ב), and the technical instrument of that purification is the תענית which draws down waters of kindness to moisten the throat blocked by the desires (section ה). Both אמונה and תענית serve the same end: enabling holy eating that produces the yichud of the Holy One and the Shekhinah. They are both on the constructive/positive side of the teaching — the tools the person wields to overcome the opposing force. The עולימתא שפירתא is the Zoharic personification of the faith that operates in this Torah, linking the image to the concept. The rעב/תענית pair is the physical embodiment of the same spiritual posture: denying oneself food (as the rעב = fast) expresses the same faith-orientation as building one's life around אמונה rather than intellect for the unanswerable. Shared nature: both concepts express the CONSTRUCTIVE, HOLY, HUMAN-CAPACITY domain in Torah #62 — the positive tools through which the person achieves purification and ultimately holy eating.",
+      "dominant_node": "אמונה",
+      "nodes": [
+        "עולימתא שפירתא",
+        "אמונה",
+        "רעב",
+        "תענית"
+      ],
+      "node_degrees": {
+        "אמונה": 1,
+        "עולימתא שפירתא": 1,
+        "תענית": 1,
+        "רעב": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["רעב", "תענית"],
+          "from_component": "C",
+          "reason": "The Torah explicitly states 'רָעָב הַיְנוּ בְּחִינַת תַּעֲנִית' (line 27) — hunger IS fasting. This 2-node pair has the same essential nature as the faith/emunah cluster: both fasting and faith are the POSITIVE INSTRUMENTS of the teaching. The fast produces the healing of speech (moistens the dry throat = galut Mitzraim = מצר הגרון), just as faith produces the purification of food. Both fasting and faith are described in the Torah as the two enabling conditions for holy eating that brings about the yichud. The shared bechina nature is: 'positive, constructive practice that enables holy eating and overcomes the klipot.' Component C is merged into Package 1 with Component A because neither has a larger anchor, and their NATURE (both holy instruments in the same causal chain) is identical."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 62,
+      "label": "תַּאֲווֹת וּקְלִפּוֹת",
+      "label_en": "Desires and Husks",
+      "polarity": "evil",
+      "reason": "This package captures the negative/opposing-force pole of Torah #62. The Torah explicitly states: 'כָּל הַתַּאֲווֹת הֵם בְּחִינַת קְלִפּוֹת, כִּי הַתַּאֲווֹת הֵם מוֹתָרוֹת, כִּי בְּלֹא הַתַּאֲווֹת יָכוֹל הַגּוּף לְהִתְקַיֵּם — נִמְצָא שֶׁהֵם מוֹתָרוֹת לְקִיּוּם הַגּוּף, כְּמוֹ הַקְּלִפּוֹת הֵם מוֹתָרוֹת' (line 21). Desires ARE klipot because both are the excess beyond what is necessary for life — the husk is the surplus wrapping around the fruit; the desire is the surplus beyond bodily necessity. This is a fundamental ontological identification: the evil husks of the cosmic structure and the desires of the person ARE the same thing. Both are 'מוֹתָרוֹת' — excess/superfluous to the essential. When desires overpower the person, it IS the klipot overpowering holiness. This package represents the entire evil-domain structure of the Torah: the klipot that suck from behind holiness, the three ministers of Pharaoh (שר המשקים, אופים, טבחים) who are the root desires, and Pharaoh himself (= עורף = from behind) who feeds them. They are all the same essential category: the excess-husk-desire structure that is opposed to the holy eating the Torah aims to achieve.",
+      "dominant_node": "קלפות",
+      "nodes": [
+        "תאוות",
+        "קלפות"
+      ],
+      "node_degrees": {
+        "קלפות": 1,
+        "תאוות": 1
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 6,
+    "total_packages": 2,
+    "raw_connected_components": 3,
+    "components_merged_into_packages": 2,
+    "note_on_merges": "3 raw components: (A) 2 nodes — עולימתא שפירתא / אמונה [Pkg 1 anchor]; (B) 2 nodes — תאוות / קלפות [Pkg 2, evil]; (C) 2 nodes — רעב / תענית [merged into Pkg 1 based on shared constructive/positive bechina nature]. No component had 3+ nodes; A+C merger justified by shared domain: both serve the positive causal chain toward holy eating and yichud. B kept as independent evil package."
+  }
+}

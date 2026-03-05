@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "source": "Torah #54",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===54 AND type==='bechina'. 21 raw connected components found. Small (1-2 node) isolated components merged into thematically nearest larger components per shared bechina nature as documented in each merge_notes entry. Note: node_ids 'מדמה', 'המדמה', and 'כח המדמה' are three variant forms of the same entity in the dataset (koach ha-medame), treated as one conceptual cluster and placed together in Package 2."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 54,
+      "label": "זִכָּרוֹן וְעָלְמָא דְּאָתֵי",
+      "label_en": "Memory and the World to Come",
+      "polarity": "good",
+      "reason": "The largest good-side component in Torah 54 centers on זִכָּרוֹן (memory/remembrance) as the spiritual act of attaching one's thought to the World to Come. The Rebbe identifies memory as the prophetic spirit — the רוּחַ טוֹבָה within a person (the good points/נְקֻדּוֹת טוֹבוֹת) — and equates memory with the possibility of receiving רוּחַ נְבוּאָה. A male child (בֵּן זָכָר) is a bechina of זִכָּרוֹן, because the very word זָכָר means memory. The practice of attaching one's thought to the World to Come in general terms (לְאַדְבָּקָא מַחֲשַׁבְתָּא בְּעָלְמָא דְּאָתֵי) is the definition of זִכָּרוֹן itself. The sub-cluster of sleep (שֵׁנָה) is merged here: during sleep the soul ascends to the World to Come — this IS the general, collective form of the same attachment, called לְאַדְבָּקָא מַחֲשַׁבְתָּא בְּעָלְמָא דְּאָתֵי בִּכְלָלִיּוּת, which in turn is the bechina of the Divine name ה' אֱלֹקַי (the complete Name = World to Come, as in Saba de-Mishpatim). All these nodes share the single essential nature: the soul's orientation toward its ultimate source.",
+      "dominant_node": "זכרון",
+      "nodes": [
+        "זכרון",
+        "בן זכר",
+        "רוח נבואה",
+        "לאדבקא מחשבתא בעלמא דאתי",
+        "רוח טובה",
+        "נקדות טובות",
+        "שנה",
+        "לאדבקא מחשבתא בעלמא דאתי בכלליות",
+        "ה אלקי"
+      ],
+      "node_degrees": {
+        "זכרון": 3,
+        "רוח נבואה": 2,
+        "רוח טובה": 2,
+        "לאדבקא מחשבתא בעלמא דאתי בכלליות": 2,
+        "בן זכר": 1,
+        "לאדבקא מחשבתא בעלמא דאתי": 1,
+        "נקדות טובות": 1,
+        "שנה": 1,
+        "ה אלקי": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["שנה", "לאדבקא מחשבתא בעלמא דאתי בכלליות", "ה אלקי"],
+          "reason": "The 3-node component {שנה, לאדבקא מחשבתא בעלמא דאתי בכלליות, ה' אלקי} describes sleep as the collective/general form of attaching one's thought to the World to Come. The Rebbe states: 'הַשֵּׁנָה הִיא בְּחִינַת לְאַדְבָּקָא מַחֲשַׁבְתָּא בְּעָלְמָא דְּאָתֵי בִּכְלָלִיּוּת'. This is structurally the same domain as the main זכרון component — the soul-orientation toward the World to Come — differing only in that the main component describes the detailed/particular (פְּרָטִיּוּת) form and this describes the general (כְּלָלִיּוּת) form. They are the two faces of the same essential nature and belong in one package."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 54,
+      "label": "כֹּחַ הַמְדַמֶּה",
+      "label_en": "The Power of Imagination (Evil)",
+      "polarity": "evil",
+      "reason": "This package is the central evil cluster of Torah 54. The koach ha-medame (imaginative faculty) is identified as the force that corrupts memory, produces slander (lashon ha-ra), and destroys the divine/prophetic orientation. All its names — הַמְדַמֶּה, כֹּחַ הַמְדַמֶּה (three variant node_ids for the same entity) — form one conceptual hub. The evil-spirit chain shows its full identity: it IS עַצְבוּת רוּחַ (dejection of spirit) = רוּחַ נְכֵאָה = רוּחַ רָעָה = רוּחַ שְׁטוּת (spirit of folly). The kelipot (קְּלִפּוֹת) are a bechina of this force; the dream (חֲלוֹם) is its mode of operation (it is the dream-power); and Pharaoh (פַּרְעֹה) is its archetypal embodiment — the one who stands over the Pishon river (= mouth of the one who recites halachot). The 2-node component {פִּישׁוֹן, פִּי שׁוֹנֵה הֲלָכוֹת} is merged here because in the text Pharaoh (= imagination) specifically stands over the Pishon (= the שׁוֹנֶה הֲלָכוֹת), preying on the person who recites halachot to seek a body to inhabit. The Pishon-river/halachot-reciter pair is the target and habitat of the evil imagination — its bechina nature is inseparable from the imagination cluster.",
+      "dominant_node": "כח המדמה",
+      "nodes": [
+        "כח המדמה",
+        "קלפות",
+        "חלום",
+        "פרעה",
+        "המדמה",
+        "מדמה",
+        "עצבות",
+        "רוח נכאה",
+        "רוח רעה",
+        "רוח שטות",
+        "פישון",
+        "פי שונה הלכות"
+      ],
+      "node_degrees": {
+        "כח המדמה": 3,
+        "רוח רעה": 3,
+        "המדמה": 2,
+        "עצבות": 2,
+        "רוח נכאה": 2,
+        "קלפות": 1,
+        "חלום": 1,
+        "פרעה": 1,
+        "מדמה": 1,
+        "רוח שטות": 1,
+        "פישון": 1,
+        "פי שונה הלכות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["פישון", "פי שונה הלכות"],
+          "reason": "The 2-node component {פישון — פי שונה הלכות} belongs in the evil imagination package because the Rebbe's text explicitly states: 'הַיְאֹר זֶה פִּישׁוֹן, הַיְנוּ בְּחִינַת פִּי שׁוֹנֵה הֲלָכוֹת, שֶׁמִּתְגַּבֵּר עֲלֵיהֶם הַכֹּחַ הַמְדַמֶּה'. Pharaoh (= the evil imagination) stands over this river. The pishon/shone-halachot node IS the habitat of the imagination — described as the target it always circles. The shared bechina nature: both the imagination and the pishon are the context/meeting-point where good Torah knowledge is corrupted by the imagination mixing into it."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 54,
+      "label": "רַע עַיִן וּמִיתַת הַלֵּב",
+      "label_en": "Evil Eye and Death of the Heart",
+      "polarity": "evil",
+      "reason": "This package captures the second evil cluster in Torah 54: the evil eye (רַע עַיִן) which is identical in essence to death of the heart (מִיתַת הַלֵּב), which is itself the breaking of the tablets (שִׁבְרֵי לוּחוֹת) — the source of forgetting (שִׁכְחָה). The 3-node component {מַיִם, לֵב, לוּחוֹת} is merged here because the Rebbe states: 'לֵב הוּא בְּחִינַת לוּחוֹת' — the heart IS the tablets. And in the same passage: 'מִיתַת הַלֵּב הִיא בְּחִינַת שִׁבְרֵי לוּחוֹת'. Death of the heart = broken tablets; the heart = whole tablets. These are two halves of the same conceptual structure. The water (מַיִם) = heart equation (from the verse 'שִׁפְכִי כַמַּיִם לִבֵּךְ') belongs here as the positive counterpart of the broken-heart image — water can flow freely when the heart is alive, and is poured out when the heart dies. Forgetting (שִׁכְחָה) is the direct outcome of this evil eye/heart-death, and is also present in the same bechina chain.",
+      "dominant_node": "מיתת הלב",
+      "nodes": [
+        "שכחה",
+        "מיתת הלב",
+        "שברי לוחות",
+        "רע עין",
+        "מים",
+        "לב",
+        "לוחות"
+      ],
+      "node_degrees": {
+        "מיתת הלב": 3,
+        "לב": 2,
+        "שכחה": 1,
+        "שברי לוחות": 1,
+        "רע עין": 1,
+        "מים": 1,
+        "לוחות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["מים", "לב", "לוחות"],
+          "reason": "The 3-node component {מים — לב — לוחות} (water=heart, heart=tablets) shares the same essential structural domain as the main evil-eye/death-of-heart component. The argument's logic is: the heart is the tablets; when evil eye strikes, the heart dies = tablets break = forgetting. The whole-tablet/living-heart side (לב=לוחות, מים=לב) and the broken-tablet/dead-heart side (מיתת הלב=שברי לוחות) are the two poles of the same concept — the heart as the seat of memory. They belong together because they describe the same structural entity (heart=tablets) in its healthy and broken states."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 54,
+      "label": "הִסְתַּפְּקוּת וְצַדִּיק",
+      "label_en": "Contentment, Light, and the Tzaddik",
+      "polarity": "good",
+      "reason": "This package groups the positive pole of the Torah's second axis: the Tzaddik's light and the flow of blessing downward. The core component connects Torah (תּוֹרָה) to contentment (הִסְתַּפְּקוּת) — Torah is like the Tree of Life, providing sufficient sustenance to each person. Contentment in turn IS 'wrapping oneself in light like a garment' (עוֹטֶה אוֹר כַּשַּׂלְמָה), which equals full-light (אוֹר מָלֵא). The Tzaddik-commerce cluster {מַשָּׂא וּמַתָּן, נוֹטֶה שָׁמַיִם כַּיְרִיעָה, יִחוּד צַדִּיק וּכְנֶסֶת יִשְׂרָאֵל} is merged here: the Torah says commerce itself (in its essential nature) is the union of Tzaddik and Knesset Israel — the Tzaddik spreads the tent-cloth (yeri'ah) of heaven over the Ark of the Covenant below. This 'spreading' of the yeri'ah IS the same light/blessing that contentment embodies. Three further small components merge in: {אֲרוֹן הַבְּרִית — עָנִי} because the Aron is the poor/receiving-vessel that sits beneath the yeri'ah = Knesset Israel in the commerce metaphor; {שְׁבִירָה — אוֹתִיּוֹת שֶׁנִּשְׁבְּרוּ} because commerce (mashsa u-matan) IS the mechanism for elevating the broken letters/fallen sparks that need to return to their root — the shared nature is the tikun/restoration that commerce/Torah provides; {בְּרָכוֹת — אֱמֶת} because the good-eyed person (טוֹב עַיִן) is blessed — blessings ARE truth, and the Tzaddik/full-light person is the source of blessing.",
+      "dominant_node": "הסתפקות",
+      "nodes": [
+        "תורה",
+        "הסתפקות",
+        "עוטה אור כשלמה",
+        "אור מלא",
+        "משא ומתן",
+        "\"נוטה שמים כיריעה\"",
+        "יחוד צדיק וכנסת ישראל",
+        "ארון הברית",
+        "עני",
+        "שבירה",
+        "אותיות שנשברו ונפלו לכל דבר ודבר מזה העולם",
+        "ברכות",
+        "אמת"
+      ],
+      "node_degrees": {
+        "הסתפקות": 2,
+        "עוטה אור כשלמה": 2,
+        "\"נוטה שמים כיריעה\"": 2,
+        "תורה": 1,
+        "אור מלא": 1,
+        "משא ומתן": 1,
+        "יחוד צדיק וכנסת ישראל": 1,
+        "ארון הברית": 1,
+        "עני": 1,
+        "שבירה": 1,
+        "אותיות שנשברו ונפלו לכל דבר ודבר מזה העולם": 1,
+        "ברכות": 1,
+        "אמת": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["משא ומתן", "\"נוטה שמים כיריעה\"", "יחוד צדיק וכנסת ישראל"],
+          "reason": "Commerce (mashsa u-matan) is a bechina of 'נוֹטֶה שָׁמַיִם כַּיְרִיעָה' which is a bechina of 'יִחוּד צַדִּיק וּכְנֶסֶת יִשְׂרָאֵל'. The Rebbe says commerce IS the union of Tzaddik and Knesset Israel. The Tzaddik spreads the yeri'ah (tent-cloth of heaven) over the Aron below. This IS the light-giving / blessing-flowing reality described by the main contentment cluster. The shared bechina nature: the Tzaddik giving downward = contentment = light as a garment."
+        },
+        {
+          "merged_nodes": ["ארון הברית", "עני"],
+          "reason": "The Aron ha-Brit IS the 'עָנִי' (poor/receiving vessel) — explicitly stated: 'אֲרוֹן הַבְּרִית שֶׁהוּא בְּחִינַת עָנִי, הִיא תַּחַת הַיְרִיעָה'. The Aron is Knesset Israel below, receiving from the Tzaddik above. It belongs in the Tzaddik/light/commerce cluster as the receiving pole of the relationship, the counterpart to the yeri'ah/Tzaddik that gives."
+        },
+        {
+          "merged_nodes": ["שבירה", "אותיות שנשברו ונפלו לכל דבר ודבר מזה העולם"],
+          "reason": "The Rebbe explains that commerce (mashsa u-matan) functions precisely because broken holy letters/sparks (שְׁבִירָה = fallen letters) need to reach the person whose soul-root can elevate them. Commerce is the vessel for this elevation — it IS the mechanism of gathering scattered light back into the Tzaddik. The shared bechina nature of שבירה/broken-letters with the commerce/light cluster: both describe the flow and restoration of scattered divine sparks, which is what the Tzaddik's commerce/contentment model facilitates."
+        },
+        {
+          "merged_nodes": ["ברכות", "אמת"],
+          "reason": "Blessings ARE truth ('הַמִּתְבָּרֵךְ בָּאָרֶץ יִתְבָּרֵךְ בֵּאלֹקֵי אָמֶן'). In the Abba Shaul story, his dvekut/truth caused a cave to open — and through truth, blessings flow. This is contextually part of the good-eye/light domain: 'טוֹב עַיִן יְבֹרָךְ'. The Tzaddik (Package 4 = light/contentment/full-measure) is the one whose eye is good and from whom blessings flow. Blessings=truth connects to the Tzaddik-as-light cluster."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 54,
+      "label": "תְּפִלִּין וְשִׂמְחָה",
+      "label_en": "Tefillin and Joy — The Daily Mitzvot that Guard Memory",
+      "polarity": "good",
+      "reason": "This package groups all the physical practices and instruments through which ordinary people (הֲמוֹן עַם who cannot intellectually grasp the hidden divine hints) nonetheless achieve the same spiritual connection. Tefillin (תְּפִלִּין) are the sekhel/intellect (בְּחִינַת מֹחִין) — the daily amplification of understanding (הַגְדָּלַת הַשֵּׂכֶל); they are also life (חַיִּים). The knot of tefillin (קֶשֶׁר שֶׁל תְּפִלִּין) is identified as 'acharai' (the back/behind), the seat of Mashiach (מֶלֶךְ אָסוּר בָּרְהָטִים). Tzitzit (צִיצִית) are the tzimtzum/contraction (צִמְצוּם) — the left-side/din that precedes the right-side/wisdom. Joy (שִׂמְחָה) is playing music with the hand (מְנַגֵּן בַּיָּד) — the hand (יָד) being the instrument by which the good spirit is gathered and the evil imagination is subdued. Prayer (תְּפִלָּה) is 'הוֹד וְהָדָר' = the feet of holiness clothed in this world. And the verse 'הָאָרֶץ הֲדֹם רַגְלָי' equals the feet of holiness clothed in this world. All these nodes share the single essential nature: they are the instruments/vehicles through which holiness descends into the ordinary world and memory of the World to Come is maintained in daily life. Two small components are merged in: the tefillin-knot/acharai pair (same tefillin-cluster), and the prayer/hod-vehadar pair (same feet-of-holiness domain described in the opening of the Torah).",
+      "dominant_node": "תפלין",
+      "nodes": [
+        "תפלין",
+        "הגדלת השכל",
+        "חיים",
+        "קשר של תפלין",
+        "אחורי",
+        "ציצית",
+        "צמצום",
+        "יד",
+        "שמחה",
+        "מנגן ביד",
+        "תפלה",
+        "\"הוד והדר\"",
+        "\"והארץ הדם רגלי\"",
+        "רגלי הקדשה המלבשין בזה העולם"
+      ],
+      "node_degrees": {
+        "תפלין": 2,
+        "שמחה": 2,
+        "קשר של תפלין": 1,
+        "אחורי": 1,
+        "ציצית": 1,
+        "צמצום": 1,
+        "יד": 1,
+        "מנגן ביד": 1,
+        "הגדלת השכל": 1,
+        "חיים": 1,
+        "תפלה": 1,
+        "\"הוד והדר\"": 1,
+        "\"והארץ הדם רגלי\"": 1,
+        "רגלי הקדשה המלבשין בזה העולם": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["קשר של תפלין", "אחורי"],
+          "reason": "The knot of tefillin (קֶשֶׁר שֶׁל תְּפִלִּין) is a bechina of 'אֲחוֹרַי' (Berakhot 7: 'וְרָאִיתָ אֶת אֲחוֹרָי = זֶה קֶשֶׁר שֶׁל תְּפִלִּין'). The knot of tefillin belongs structurally with the tefillin cluster (same object, different aspect of it), and is directly connected to the Mashiach concept (Package 6) via the אחורי = place where Mashiach is bound. In this Torah, the tefillin-knot/acharai is the mechanism through which Mashiach subdues the evil eye. It shares the bechina nature of the tefillin domain: the physical mitzvah garment that connects to the highest spiritual power."
+        },
+        {
+          "merged_nodes": ["ציצית", "צמצום"],
+          "reason": "Tzitzit = tzimtzum/contraction (the blue thread = throne of judgment = left side = restriction). The Rebbe explicitly pairs tzitzit (left/restriction) with tefillin (right/expansion of mind): 'צִיצִית קוֹדֶם לִתְפִלִּין — שְׂמֹאלוֹ תַּחַת לְרֹאשִׁי, וְאַחַר כָּךְ: וִימִינוֹ תְּחַבְּקֵנִי'. They are the two complementary mitzvot of the morning, the left-and-right pair of the daily practice. Their shared bechina nature: both are tools for proper relationship with the world-this-world represents (regalim/feet of holiness)."
+        },
+        {
+          "merged_nodes": ["תפלה", "\"הוד והדר\""],
+          "reason": "Prayer (תְּפִלָּה) is 'חַיֵּי שָׁעָה' — the life of the hour, meaning the life that is clothed in this world. It is a bechina of 'הָאָרֶץ הֲדֹם רַגְלָי' — the feet of holiness in this world. 'הוֹד וְהָדָר' from the Psalm verse is explicitly called the feet of holiness (רַגְלִין) clothed in this world. Prayer/hod-vehadar belongs in the daily-mitzvot cluster that forms Package 5 because it is the same domain as tefillin and tzitzit — the ordinary person's tools for maintaining the spiritual connection."
+        },
+        {
+          "merged_nodes": ["\"והארץ הדם רגלי\"", "רגלי הקדשה המלבשין בזה העולם"],
+          "reason": "The verse 'הָאָרֶץ הֲדֹם רַגְלָי' IS the bechina of the feet of holiness clothed in this world. This 2-node pair describes the structural concept underlying this entire package: this world is the footstool of holiness, the lowest level of the divine that is directly accessible. It belongs in Package 5 as the foundational metaphor for the entire set of daily mitzvot described there."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "torah_ref": 54,
+      "label": "כֹּהֵן וְאַהֲבָה",
+      "label_en": "The Kohen and Sacred Love — Good Eye and Mashiach",
+      "polarity": "good",
+      "reason": "This package captures the positive instrument of tikkun in Torah 54: the quality of sacred love (אַהֲבָה דִּקְדֻשָּׁה) which is the kohen (priest), which is Avraham who loved God, which is the posture of 'kamatz ha-kohen' (gathering/grasping inward). The kohen is the one with the good eye (טוֹב עַיִן) as opposed to the evil eye (רַע עַיִן). To fix the evil eye, one must go to the root of kingship (שֹׁרֶשׁ הַמַּלְכוּת) which is Mashiach (מָשִׁיחַ) — because Mashiach is called 'טוֹב עַיִן' (David: יְפֵה עֵינַיִם וְטוֹב רֹאִי). The 2-node component {שֹׁרֶשׁ הַמַּלְכוּת — מָשִׁיחַ} is merged here because the Rebbe's logic is: the tikkun for evil eye is the humbling at the root of malkhut = Mashiach = the good-eyed one. This is the same domain as the kohen/love cluster: both describe the quality of tzaddik-with-good-eye that opposes the evil imagination. The 2-node component {מְעָרָה — דְּבֵקוּת} (cave = dvekut) is merged here because the story of Abba Shaul opening the cave through his truth (אֱמֶת) is the narrative illustration of the kohen/good-eye quality: one who has dvekut and truth has the cave of closeness to God opened to them. The cave/dvekut IS the experiential manifestation of the kohen/love state.",
+      "dominant_node": "כהן",
+      "nodes": [
+        "כהן",
+        "\"אברהם אוהבי\"",
+        "\"אתה כהן\"",
+        "\"וקמץ הכהן\"",
+        "אהבה",
+        "שרש המלכות",
+        "משיח",
+        "מערה",
+        "דבקות"
+      ],
+      "node_degrees": {
+        "כהן": 2,
+        "\"אברהם אוהבי\"": 2,
+        "\"אתה כהן\"": 2,
+        "\"וקמץ הכהן\"": 2,
+        "אהבה": 2,
+        "שרש המלכות": 1,
+        "משיח": 1,
+        "מערה": 1,
+        "דבקות": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["שרש המלכות", "משיח"],
+          "reason": "The 2-node component {שֹׁרֶשׁ הַמַּלְכוּת — מָשִׁיחַ} connects directly to the kohen/love domain because the Rebbe teaches: when a person falls into evil eye of pride (envy of another's elevation), the tikkun is to humble oneself before the root of malkhut = Mashiach. And Mashiach is 'יְפֵה עֵינַיִם וְטוֹב רֹאִי' — the one with the good eye. Mashiach and kohen (= Abraham = love) are both expressions of the same essential quality: loving freely, seeing with the good eye, the capacity to receive and transmit divine light without the distortion of the imagination."
+        },
+        {
+          "merged_nodes": ["מערה", "דבקות"],
+          "reason": "The 2-node component {מְעָרָה — דְּבֵקוּת} belongs in the kohen/love cluster because the Rebbe narrates Abba Shaul's story as an illustration of how a person who engages in tikkun of evil eye can achieve dvekut. The cave (מְעָרָה) that opens beneath the person of truth is bechina of dvekut (from 'כְּמַעַר אִישׁ וְלֹיוֹת'). Dvekut = the state of the kohen (avodah from love = clinging to God). The shared bechina nature: the kohen/love/good-eye state IS dvekut — clinging upward rather than gazing sideways with envy."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 44,
+    "total_nodes": 63,
+    "total_packages": 6,
+    "raw_connected_components": 21,
+    "components_merged_into_packages": 6,
+    "note_on_merges": "21 raw components: (A) 6 nodes - זכרון/רוח נבואה/בן זכר cluster [Pkg 1 core], (B) 3 nodes - שנה/לאדבקא-כלליות/ה-אלקי [merged into Pkg 1], (C) 4 nodes - כח-המדמה/קלפות/חלום/פרעה [Pkg 2 core], (D) 6 nodes - מדמה/המדמה/עצבות/רוח-נכאה/רוח-רעה/רוח-שטות [Pkg 2 core - same entity as C], (E) 2 nodes - פישון/פי-שונה-הלכות [merged into Pkg 2], (F) 4 nodes - שכחה/מיתת-הלב/שברי-לוחות/רע-עין [Pkg 3 core], (G) 3 nodes - מים/לב/לוחות [merged into Pkg 3], (H) 4 nodes - תורה/הסתפקות/עוטה-אור/אור-מלא [Pkg 4 core], (I) 3 nodes - משא-ומתן/נוטה-שמים/יחוד-צדיק [merged into Pkg 4], (J) 2 nodes - ארון-הברית/עני [merged into Pkg 4], (K) 2 nodes - שבירה/אותיות-שנשברו [merged into Pkg 4], (L) 2 nodes - ברכות/אמת [merged into Pkg 4], (M) 3 nodes - תפלין/הגדלת-השכל/חיים [Pkg 5 core], (N) 3 nodes - יד/שמחה/מנגן-ביד [merged into Pkg 5], (O) 2 nodes - קשר-תפלין/אחורי [merged into Pkg 5], (P) 2 nodes - ציצית/צמצום [merged into Pkg 5], (Q) 2 nodes - תפלה/הוד-והדר [merged into Pkg 5], (R) 2 nodes - והארץ-הדם-רגלי/רגלי-הקדשה [merged into Pkg 5], (S) 5 nodes - כהן/אברהם-אוהבי/אתה-כהן/וקמץ-הכהן/אהבה [Pkg 6 core], (T) 2 nodes - שרש-המלכות/משיח [merged into Pkg 6], (U) 2 nodes - מערה/דבקות [merged into Pkg 6]"
+  }
+}

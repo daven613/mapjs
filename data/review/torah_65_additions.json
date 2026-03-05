@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "source": "Torah #65",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_65_packages.json, all reference===65 edges from torahData.js, and full source text torah_65.txt. For each bechina statement in the source text (using language בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, הוּא, זֶה בְּחִינַת), verified whether the concept appears as a node in the dataset and is assigned to a package. Only explicit bechina declarations were counted — not verse citations, narrative elaborations, or implied parallels. The proposed Package 5 (שדה/נשמות) from torah_65_new_packages.json is assumed here; nodes assigned to 'package_id: 5_proposed' belong to that new package pending acceptance."
+  },
+  "additions": [
+    {
+      "package_id": 3,
+      "package_label": "נֶפֶשׁ",
+      "node_id": "בועז",
+      "node_text": "בֹּעַז",
+      "polarity": "good",
+      "reason": "Line 42 of the source text states: 'בֹּעַז הוּא הַשֵּׂכֶל, כְּמוֹ שֶׁכָּתוּב (קהלת ז): הַחָכְמָה תָּעֹז לְחָכָם'. This is an explicit bechina declaration using the formula 'X הוּא Y'. Boaz IS the sekhel/wisdom. In Torah #65, Boaz (sekhel) is the relational partner to Ruth (nefesh) — the sekhel is the father-figure to the nefesh ('הנפש היא בת השכל') and the entire Boaz-Ruth dialogue in sections ה-ו enacts the sekhel guiding the nefesh in prayer. Boaz belongs in the נפש package (Package 3) because his defining relationship in this Torah is as the sekhel whose illumination enables the nefesh (Ruth) to gather rightly. The bechina edge בועז ↔ שכל is absent from the dataset and should be added.",
+      "source_quote": "בֹּעַז הוּא הַשֵּׂכֶל, כְּמוֹ שֶׁכָּתוּב: הַחָכְמָה תָּעֹז לְחָכָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "שִׂמְחָה וְקַבָּלַת הַתּוֹרָה",
+      "node_id": "מחול",
+      "node_text": "מָחוֹל",
+      "polarity": "good",
+      "reason": "Line 56 of the source text states: 'מָחוֹל, זֶה בְּחִינַת הַשִּׂמְחָה, שֶׁהִיא כְּלִי לְקַבָּלַת הַתּוֹרָה כַּנַּ\"ל'. The round-dance IS a bechina of joy (שמחה), using the explicit formula 'זֶה בְּחִינַת'. שמחה is already in Package 2 (שמחה/קבלת-התורה); מחול belongs there as an additional bechina-aspect of the same joy-domain. The context is the future eschatological celebration where each tzaddik points to God ('זֶה אֵ-לִי') — a thoroughly positive, holy domain. The bechina edge מחול ↔ שמחה is absent from the dataset and should be added.",
+      "source_quote": "מָחוֹל, זֶה בְּחִינַת הַשִּׂמְחָה, שֶׁהִיא כְּלִי לְקַבָּלַת הַתּוֹרָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": "5_proposed",
+      "package_label": "הַשָּׂדֶה וְהַנְּשָׁמוֹת (proposed new package)",
+      "node_id": "נשמות קדושות",
+      "node_text": "נְשָׁמוֹת קְדוֹשׁוֹת",
+      "polarity": "good",
+      "reason": "Line 2 states: 'וְאִילָנוֹת וַעֲשָׂבִים, הֵם בְּחִינַת נְשָׁמוֹת קְדוֹשׁוֹת הַגְּדֵלִים שָׁם'. The trees and grasses of the Field ARE holy souls — an explicit בְּחִינַת declaration. This node belongs to the proposed Package 5 (the Field/Souls domain) because it describes the ontological content of the Field metaphor: the holy souls that grow there as vegetation. The bechina edge אילנות ועשבים ↔ נשמות קדושות is absent from the dataset and should be added.",
+      "source_quote": "וְאִילָנוֹת וַעֲשָׂבִים, הֵם בְּחִינַת נְשָׁמוֹת קְדוֹשׁוֹת הַגְּדֵלִים שָׁם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": "5_proposed",
+      "package_label": "הַשָּׂדֶה וְהַנְּשָׁמוֹת (proposed new package)",
+      "node_id": "שדה צופים",
+      "node_text": "שְׂדֵה צוֹפִים",
+      "polarity": "good",
+      "reason": "Line 8 states: 'וְזֶה בְּחִינַת שְׂדֵה צוֹפִים (במדבר כג:יד)' — explicit בְּחִינַת declaration for the illuminated state of the Baal HaSadeh when souls do God's will. The Field-of-Watchmen is the bechina-name for the spiritual state where the Baal HaSadeh can see clearly toward the takhlit. Although the phrase appears embedded in an eitza edge's node1_id text (edge 1322), שדה צופים itself has no standalone bechina edge in the dataset. It belongs in proposed Package 5 as a bechina-aspect of the Field's illuminated state. The bechina edge שדה צופים ↔ [illuminated sight toward takhlit] should be added to the dataset.",
+      "source_quote": "וְזֶה בְּחִינַת שְׂדֵה צוֹפִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": "5_proposed",
+      "package_label": "הַשָּׂדֶה וְהַנְּשָׁמוֹת (proposed new package)",
+      "node_id": "שדה בוכים",
+      "node_text": "שְׂדֵה בּוֹכִים",
+      "polarity": "neutral",
+      "reason": "Line 8 states: 'וְזֶה בְּחִינַת שְׂדֵה בּוֹכִים (אהלות פ' יח, מועד קטן ה:) כִּי בְּכִי הוּא קִלְקוּל הָרְאוּת'. The Field of Weeping is the explicit bechina-name for the darkened state of the Baal HaSadeh when souls do NOT do God's will. The weeping is defined as 'קִלְקוּל הָרְאוּת' (ruination of sight). This is the negative pole within proposed Package 5 — the good/evil mirror of שדה צופים. It is neutral rather than evil because it describes a state of diminishment/blindness (a spiritual condition) rather than an actively demonic force. The bechina edge שדה בוכים ↔ [darkened sight / not-doing-God's-will] should be added to the dataset.",
+      "source_quote": "וְזֶה בְּחִינַת שְׂדֵה בּוֹכִים, כִּי בְּכִי הוּא קִלְקוּל הָרְאוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_65_edges": 20,
+    "total_reference_65_bechina_edges": 10,
+    "total_reference_65_eitza_edges": 10,
+    "nodes_accounted_for_in_packages": {
+      "package_1_takhlit": ["תכלית", "בטול", "כלו טוב", "אחד", "עדן"],
+      "package_2_simcha": ["נעשה ונשמע", "שמחה", "קבלת התורה"],
+      "package_3_nefesh": ["נפש", "רות", "גן"],
+      "package_4_yisurin": ["יסורין", "מליחות", "הרגשת היסורין", "צמאון הנפש"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "בועז (as bechina node = שכל) → Package 3",
+      "מחול (= שמחה) → Package 2",
+      "נשמות קדושות (= אילנות ועשבים) → Package 5 proposed",
+      "שדה צופים (explicit bechina-name) → Package 5 proposed",
+      "שדה בוכים (explicit bechina-name) → Package 5 proposed"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "הנערים (the lads/eyes)",
+        "reason": "Line 49 states 'הָעֵינַיִם נִקְרָאִים נְעָרִים' — the formula נִקְרָא IS bechina language. However, this is a homiletic bridge within the biblical commentary on Ruth 2:9, playing on the word 'נְעָרִים' from the verse to mean both 'lads' (farm hands) and 'servants of the sekhel' (eyes as agents of intellect). The operational concept throughout the Torah is עֵינַיִם/רְאוּת which appears in eitza edges. 'נערים' as a term is fully explained as a synonym for the eyes/sight in this context, not establishing a new conceptual domain. Excluded."
+      },
+      {
+        "concept": "אצבע אלקים (finger of God = Torah)",
+        "reason": "Line 57 states 'שֶׁהִיא בְּחִינוֹת אֶצְבַּע אֱלֹקִים' (citing Exodus 31). This IS a bechina statement. However, in Torah #65 the Torah/Torah-renewal appears only through eitza chains (the bitul→reshimu→חידושי-אורייתא flow) and has no dedicated bechina package. The אצבע אלקים = Torah equation is a culminating image in the final verse of the Torah's commentary. It reinforces the eschatological mareh/zarihah theme. Provisionally excluded from additions as it would belong in a Torah-novelty sub-concept of Package 2 (שמחה/קבלת התורה) where Torah-renewal already lives, but it lacks a direct bechina connection to any node in that package — the text says the mareh/zarihah IS the Torah, using 'בְּחִינוֹת', but this is directed at Torah as a whole rather than at קבלת התורה specifically. Could be added as a secondary addition to Package 2 in a future pass."
+      },
+      {
+        "concept": "ארץ פרי למלחה (Psalms 107:34)",
+        "reason": "Line 35 cites 'אֶרֶץ פְּרִי לִמְלֵחָה' as illustrative proof for the already-captured bechina מליחות = יסורין (edge 1367). This is a verse citation used as supporting proof text, not a new independent bechina node. The concept it illustrates (deficient sekhel = saltiness = suffering) is fully captured by edge 1367. Excluded."
+      },
+      {
+        "concept": "הרשימו (the trace/impression left from bitul)",
+        "reason": "הרשימו appears multiple times in section ד as the mechanism by which chidushei Torah arrive, stated in causal terms ('מן הרשימו שנשאר מן הביטול'). No sentence declares 'רשימו הוא בחינת X' using explicit bechina language. It functions exclusively as an eitza-chain node (bitul → reshimu → chidushei Torah). Excluded from additions as a bechina node."
+      },
+      {
+        "concept": "מוח / מוחין (the brain/vessels of sekhel)",
+        "reason": "Sections ג-ד describe the מוח as the vessel (כלי) of the sekhel and the anatomical seat of pain. The text uses the formula 'עִקַּר הַהַרְגָּשָׁה הוּא בַּמֹּחַ' — a factual claim about the physical location of pain-sensation, not a bechina declaration of equivalent natures between two concepts. The מוח serves as a physical substrate in an extended physiological analogy (closing eyes to concentrate vision = bitul to reach takhlit). It appears in eitza contexts ('כשחוזר השכל מהביטול אל המוח') as a vessel, not as a bechina-equivalent node. Excluded."
+      },
+      {
+        "concept": "בכי (weeping) = קלקול הראות",
+        "reason": "Line 8 states 'בְּכִי הוּא קִלְקוּל הָרְאוּת' — this uses the formula הוּא and could be a bechina statement. However, it functions as an explanation/definition within the שדה בוכים declaration rather than establishing בכי as an independent concept-node. The בכי = ruination-of-sight equation is the explanation FOR why the שדה בוכים is what it is, not a separate bechina concept. It is embedded within the שדה בוכים entry (added above). Treated as part of שדה בוכים rather than a separate addition."
+      }
+    ]
+  }
+}

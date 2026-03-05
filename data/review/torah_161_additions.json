@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "source": "Torah #161 (Likutay Moharan Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md. Confirmed zero bechina edges and zero nodes in torahData.js for reference 161 (the reference does not appear anywhere in the dataset). Read full source text torah_161.txt (2 lines, approximately 80 Hebrew words). Scanned all language for bechina-markers: בְּחִינַת, הַיְנוּ, נִקְרָא, כִּי (identity-assertion usage), וְזֶהוּ, שֶׁהוּא. Identified two explicit bechina declarations: (1) 'כִּי הָאָדָם עֵץ הַשָּׂדֶה' — (2) 'הַמַּחֲלֹקֶת נִקְרָא מַיִם'. Applied the bechina/eitza distinction test to every conceptual candidate in the text. Since no edges exist in the dataset for reference 161, all proposed additions are entirely new edges for this Torah reference."
+  },
+  "additions": [
+    {
+      "addition_id": 1,
+      "package_id": 1,
+      "proposed_edge": {
+        "node1_id": "מחלוקת",
+        "node2_id": "מים",
+        "node1_text": "הַמַּחֲלֹקֶת",
+        "node2_text": "מַיִם",
+        "type": "bechina",
+        "reference": 161,
+        "proof": "וְהַמַּחֲלֹקֶת נִקְרָא מַיִם, כְּמוֹ שֶׁכָּתוּב (תהלים פח): סַבּוּנִי כַמַּיִם כָּל הַיּוֹם, הִקִּיפוּ עָלַי יָחַד"
+      },
+      "polarity": "neutral",
+      "reason": "This is the primary and most explicit bechina of Torah #161. The Rebbe uses 'נִקְרָא' — 'is called/named' — which is one of the strongest bechina-markers in Likutey Moharan, equivalent to 'הוּא בְּחִינַת'. The identification asserts that conflict/dispute shares the essential nature of water: it flows, surrounds, and through its force raises what it encounters. The proof-text from Psalm 88:18 confirms the identification — the verse's description of enemies surrounding 'like water all day' is read not as a simile but as a structural equation. The two nodes are parallel aspects of the same reality: hostile surrounding-force. Polarity neutral: neither conflict nor water is inherently holy or evil in this Torah — both are presented as natural forces with structural lifting-capacity.",
+      "source_quote": "וְהַמַּחֲלֹקֶת נִקְרָא מַיִם, כְּמוֹ שֶׁכָּתוּב (תהלים פח): סַבּוּנִי כַמַּיִם כָּל הַיּוֹם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "nodes_exist_in_dataset_globally": {
+        "מחלוקת": "likely — 'מחלוקת' (dispute/conflict) is a recurring concept in Likutey Moharan and likely appears as a node in other Torahs. Requires dataset lookup to confirm whether this exact node_id exists globally.",
+        "מים": "very likely — water (מַיִם) is one of the most frequently occurring concepts across Likutey Moharan and almost certainly exists as a global node. Requires dataset lookup to confirm."
+      }
+    },
+    {
+      "addition_id": 2,
+      "package_id": 1,
+      "proposed_edge": {
+        "node1_id": "מחלוקת",
+        "node2_id": "מים שוטפין",
+        "node1_text": "הַמַּחֲלֹקֶת",
+        "node2_text": "מַיִם שׁוֹטְפִין",
+        "type": "bechina",
+        "reference": 161,
+        "proof": "הַמַּחֲלֹקֶת נִקְרָא מַיִם... בָּאִין עָלָיו מַיִם שׁוֹטְפִין אֲזַי הַמַּיִם מְרִימִין וְנוֹשְׂאִין אֶת הָעֵץ"
+      },
+      "polarity": "neutral",
+      "reason": "This edge encodes the specification implicit in the Torah's structure: the מַיִם that raises the tree is specifically מַיִם שׁוֹטְפִין (flowing/rushing water), and this flowing water IS the machloket. The Rebbe first establishes 'מַחֲלֹקֶת נִקְרָא מַיִם' and then, in the physical analogy, describes 'מַיִם שׁוֹטְפִין' as the type of water with the force to lift: 'בָּאִין עָלָיו מַיִם שׁוֹטְפִין אֲזַי הַמַּיִם מְרִימִין' — the rushing water IS what lifts, and it IS the machloket. The 'שׁוֹטְפִין' (flowing/sweeping) quality corresponds to the Psalm verse's 'הִקִּיפוּ עָלַי יָחַד' (they encompassed me together) — the surround-and-sweep quality of both physical rushing water and social opposition. This is a bechina within the conflict/water cluster: flowing water and conflict share the same essential nature (forceful, directional, encompassing movement that carries what it encounters). Polarity neutral: the flowing water is a natural force, not inherently holy or evil.",
+      "source_quote": "בָּאִין עָלָיו מַיִם שׁוֹטְפִין אֲזַי הַמַּיִם מְרִימִין וְנוֹשְׂאִין אֶת הָעֵץ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "nodes_exist_in_dataset_globally": {
+        "מחלוקת": "likely — see addition_id 1 note",
+        "מים שוטפין": "uncertain — 'מַיִם שׁוֹטְפִין' (flowing water) may appear in other Torahs that discuss water imagery. Requires dataset lookup."
+      }
+    },
+    {
+      "addition_id": 3,
+      "package_id": 2,
+      "proposed_edge": {
+        "node1_id": "האדם",
+        "node2_id": "עץ השדה",
+        "node1_text": "הָאָדָם",
+        "node2_text": "עֵץ הַשָּׂדֶה",
+        "type": "bechina",
+        "reference": 161,
+        "proof": "הַמַּחֲלֹקֶת מַגְבִּיהַּ וּמֵרִים אֶת הָאָדָם, כִּי הָאָדָם עֵץ הַשָּׂדֶה (דברים כ׳:י״ט)"
+      },
+      "polarity": "good",
+      "reason": "The Rebbe opens the Torah's explanation with 'כִּי הָאָדָם עֵץ הַשָּׂדֶה' — citing Deut. 20:19 as the bechina-identity of the human being. In this context, the כִּי is not merely causal ('because') but identity-asserting: the verse's identification of the human being with the tree of the field IS the reason the teaching is true. The human IS the tree: both share the essential quality of being unable to raise themselves by their own power from a horizontal (grounded) position. Just as a physical tree lying on the ground cannot stand itself upright without external force, the human being cannot achieve spiritual elevation (הַגְבָּהָה) through self-effort alone — both require an external carrying force. The shared nature: passivity toward one's own elevation, combined with the inherent upward-directedness of one's essence (trees grow upward; humans are oriented toward the divine). This is a classic Likutey Moharan bechina using a biblical verse as the proof of a structural identity. Polarity good: the person/tree of the field is the subject of holy elevation — this is the positive domain of the teaching.",
+      "source_quote": "הַמַּחֲלֹקֶת מַגְבִּיהַּ וּמֵרִים אֶת הָאָדָם, כִּי הָאָדָם עֵץ הַשָּׂדֶה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "nodes_exist_in_dataset_globally": {
+        "האדם": "very likely — 'הָאָדָם' (the person/human being) appears across many Torahs in Likutey Moharan as a general node. Requires dataset lookup to confirm exact node_id.",
+        "עץ השדה": "possible — 'עֵץ הַשָּׂדֶה' (tree of the field, Deut. 20:19) may appear in other Torahs that use this verse. Requires dataset lookup."
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_161_edges_in_dataset": 0,
+    "total_reference_161_bechina_edges_in_dataset": 0,
+    "total_reference_161_eitza_edges_in_dataset": 0,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["מחלוקת", "מים", "מים שוטפין"],
+      "package_2": ["האדם", "עץ השדה"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "מחלוקת",
+      "מים",
+      "מים שוטפין",
+      "האדם",
+      "עץ השדה"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "הַגְבָּהָה / הֲרָמָה (elevation/raising)",
+        "reason": "The root ג-ב-ה and the root ר-ו-מ appear three times in the Torah as verbs: 'מַגְבִּיהַּ וּמֵרִים' (line 1) and 'מְרִימִין וְנוֹשְׂאִין' (line 2). These are the action-verbs of the teaching — they describe WHAT conflict does to the person (it raises him). This is the eitza-connector between Package 1 and Package 2, not a bechina-identified concept. The Rebbe does not say 'הַגְבָּהָה הִיא בְּחִינַת X' or 'הַגְבָּהָה נִקְרֵאת Y.' Elevation is the outcome (the eitza result), not a concept with a parallel-nature identity. Excluded — eitza context, not bechina node."
+      },
+      {
+        "concept": "עֵץ הַמֻּנָּח עַל הָאָרֶץ (the tree lying on the ground)",
+        "reason": "The phrase 'עֵץ הַמֻּנָּח עַל הָאָרֶץ' (a tree placed/lying on the ground) is the physical object in the analogy — the horizontal tree before it is lifted. This is not a separate bechina node from 'עֵץ הַשָּׂדֶה' — it is the descriptive state of the same tree, used to illustrate its inability to self-elevate. The Rebbe does not give it a bechina-identification with a different concept. It is the illustrative component of the analogy. Excluded — descriptive element of the physical analogy, not a bechina node in its own right."
+      },
+      {
+        "concept": "Psalm 88:18 verse citation",
+        "reason": "'סַבּוּנִי כַמַּיִם כָּל הַיּוֹם, הִקִּיפוּ עָלַי יָחַד' is a proof-text citation supporting the bechina 'מַחֲלֹקֶת נִקְרָא מַיִם.' The verse is the evidentiary basis, not itself a new bechina node. The verse's imagery ('סַבּוּנִי כַמַּיִם' — they surrounded me like water) provides the scriptural warrant for the identification, but the Rebbe's statement 'נִקְרָא מַיִם' is the bechina-declaration; the verse is its support. The verse itself is not given its own bechina-identity in this Torah. Excluded — proof-text citation, not an independent bechina node."
+      },
+      {
+        "concept": "Deut. 20:19 verse citation",
+        "reason": "'כִּי הָאָדָם עֵץ הַשָּׂדֶה' cites Deuteronomy 20:19 (the prohibition against cutting down fruit trees in siege warfare). The verse IS the bechina-source for the identification הָאָדָם = עֵץ הַשָּׂדֶה. It is the proof-text reference, not a separate node beyond the two nodes it links. The verse number is bibliographic context; the conceptual bechina is captured by the two nodes (הָאָדָם and עֵץ הַשָּׂדֶה) and their connecting edge (addition_id 3). Excluded as a separate node — its content is fully captured by addition_id 3."
+      }
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "source": "Torah #172",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #172 has ZERO bechina edges in the dataset (only one edge with reference=172 exists, id=236, and it is type='eitza'). All packages below are derived entirely from gap analysis of the source text torah_172.txt. The bechina graph for this Torah must be built from scratch. Each package represents a cluster of concepts the Rebbe explicitly equates using bechina language in the source text. No connected components from the dataset could be computed; instead, the source-text bechina statements define the component structure."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 172,
+      "label": "אוֹר הַשֵּׁם וְהַכָּבוֹד",
+      "label_en": "Divine Light and Honor",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly states: 'וְעִקַּר אוֹר הַשֵּׁם יִתְבָּרַךְ הוּא הַכָּבוֹד' (line 4) — the essence of divine light IS kavod. This is the central bechina equivalence of the entire Torah. Later (line 5) the Rebbe repeats 'אֲזַי מְקַבֵּל אוֹר הַשֵּׁם יִתְבָּרַךְ, שֶׁהוּא הַכָּבוֹד' — confirming the equation. The divine light and divine honor are two names for the same reality: the continuous divine flow that God pours out upon creation. This package also naturally absorbs שפע (divine abundance/flow), which the Rebbe mentions in line 3 ('אוֹר וְשֶׁפַע שֶׁל הַשֵּׁם יִתְבָּרַךְ') as the two aspects of the divine outpouring — light and shefa are treated as equivalent outflow terms in this Torah.",
+      "dominant_node": "כבוד",
+      "nodes": [
+        "אור השם יתברך",
+        "כבוד",
+        "שפע"
+      ],
+      "node_degrees": {
+        "כבוד": 2,
+        "אור השם יתברך": 2,
+        "שפע": 1
+      },
+      "source_basis": [
+        {
+          "quote": "וְעִקַּר אוֹר הַשֵּׁם יִתְבָּרַךְ הוּא הַכָּבוֹד",
+          "line": 4,
+          "bechina_type": "explicit equivalence — 'the essence of X is Y'"
+        },
+        {
+          "quote": "אֲזַי מְקַבֵּל אוֹר הַשֵּׁם יִתְבָּרַךְ, שֶׁהוּא הַכָּבוֹד",
+          "line": 5,
+          "bechina_type": "explicit equivalence — 'X which is Y'"
+        },
+        {
+          "quote": "אוֹר וְשֶׁפַע שֶׁל הַשֵּׁם יִתְבָּרַךְ",
+          "line": 3,
+          "bechina_type": "paired terms — light and shefa treated as co-referential"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 172,
+      "label": "חָכְמָה וְאַיִן — הַבִּיטּוּל",
+      "label_en": "Wisdom and Nothingness — Self-Nullification",
+      "polarity": "good",
+      "reason": "Three concepts cluster around the domain of self-nullification and its equation with chokhmah: (1) חכמה is explicitly equated with אין via the verse 'הַחָכְמָה מֵאַיִן תִּמָּצֵא' (Job 28:12, line 6) — wisdom is found from/in nothingness, meaning chokhmah IS ayin; (2) the wise (חכמים) are called 'אַיִן' directly: 'הַחֲכָמִים שֶׁהֵם אַיִן'; (3) the practice of ביטול עצמו / אינו כלל מזה העולם (lines 3 and 5) is the human expression of this same ayin-quality — the person who is nothing from this world embodies the chokhmah/ayin principle. All three are bechinas of the same underlying state: the nullified, physicality-free orientation that blocks nothing and receives everything. This is structurally independent from Package 1 (divine light/kavod) because chokhmah/bitul is the quality of the RECEIVER, while kavod/light is the quality of what is RECEIVED — they are related by eitza (nullification enables reception), not by shared nature.",
+      "dominant_node": "חכמה",
+      "nodes": [
+        "חכמה",
+        "אין",
+        "ביטול עצמו / אינו כלל מזה העולם"
+      ],
+      "node_degrees": {
+        "חכמה": 2,
+        "אין": 2,
+        "ביטול עצמו / אינו כלל מזה העולם": 1
+      },
+      "source_basis": [
+        {
+          "quote": "כִּי הַחָכְמָה מֵאַיִן תִּמָּצֵא",
+          "line": 6,
+          "bechina_type": "verse-based equivalence — wisdom comes from/is ayin"
+        },
+        {
+          "quote": "הַחֲכָמִים שֶׁהֵם אַיִן",
+          "line": 6,
+          "bechina_type": "explicit predication — 'the wise who ARE ayin'"
+        },
+        {
+          "quote": "אִם הָאָדָם מְבַטֵּל עַצְמוֹ, וְאֵינוֹ כְּלָל מִזֶּה הָעוֹלָם",
+          "line": 3,
+          "bechina_type": "the practical form of the ayin-state; line 5 equates this with 'מְלֹא כָל הָאָרֶץ'"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 172,
+      "label": "פָּנִים שׂוֹחֲקוֹת — חַיִּים וָטוֹב",
+      "label_en": "The Joyful Face — Life and Good",
+      "polarity": "good",
+      "reason": "Line 7 states: 'כְּשֶׁהַשֵּׁם יִתְבָּרַךְ מַרְאֶה פָּנִים שׂוֹחֲקוֹת – חַיִּים וְטוֹבָה לָעוֹלָם'. The showing of a joyful face IS life and good — this is an explicit bechina equation: פנים שוחקות = חיים וטובה. Line 8 confirms with the verse: 'רְאֵה נָתַתִּי לִפְנֵיכֶם הַיּוֹם אֶת הַחַיִּים וְאֶת הַטּוֹב... הַיְנוּ לַפָּנִים שֶׁלָּכֶם' — life and good ARE the faces you show. The Rebbe also applies this to the tzaddik: 'וְכֵן הַצַּדִּיק, כְּשֶׁמַּרְאֶה פָּנִים שׂוֹחֲקוֹת, הוּא טוֹב' — the tzaddik's joyful face = good. This package covers the positive pole of the face-domain. It is distinct from Package 1 (divine light/kavod) in that panim is the *mode of revelation* of kavod — the way the light reaches the world — rather than being the light itself.",
+      "dominant_node": "פנים שוחקות",
+      "nodes": [
+        "פנים שוחקות",
+        "חיים וטובה"
+      ],
+      "node_degrees": {
+        "פנים שוחקות": 2,
+        "חיים וטובה": 1
+      },
+      "source_basis": [
+        {
+          "quote": "כְּשֶׁהַשֵּׁם יִתְבָּרַךְ מַרְאֶה פָּנִים שׂוֹחֲקוֹת – חַיִּים וְטוֹבָה לָעוֹלָם",
+          "line": 7,
+          "bechina_type": "explicit equivalence — showing joyful face = life and good"
+        },
+        {
+          "quote": "הַיְנוּ לַפָּנִים שֶׁלָּכֶם",
+          "line": 8,
+          "bechina_type": "'הַיְנוּ' = definitional bechina — life/good IS the panim"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "torah_ref": 172,
+      "label": "פָּנִים זוֹעֲפוֹת — מָוֶת וָרָע",
+      "label_en": "The Averted Face — Death and Evil",
+      "polarity": "evil",
+      "reason": "The evil mirror of Package 3 is explicitly stated in the same verses. Line 7: 'וּלְהֵפֶךְ – לְהֵפֶךְ, חַס וְשָׁלוֹם' — the reverse face = the reverse outcome (death and evil). Line 8 cites 'אֶת הַמָּוֶת וְכוּ'' in the same 'הַיְנוּ לַפָּנִים שֶׁלָּכֶם' formula — death/evil also IS the face shown. This is the structural evil mirror of Package 3 (the good face/life package): the same panim concept oriented negatively produces its opposite. The Rebbe applies this symmetry to God and to the tzaddik alike. Per the framework's good/evil mirror principle (§4), every good package has an exact evil counterpart — this is that counterpart for Package 3.",
+      "dominant_node": "פנים זועפות / ולהפך",
+      "nodes": [
+        "פנים זועפות / ולהפך",
+        "מות ורע"
+      ],
+      "node_degrees": {
+        "פנים זועפות / ולהפך": 2,
+        "מות ורע": 1
+      },
+      "source_basis": [
+        {
+          "quote": "וּלְהֵפֶךְ – לְהֵפֶךְ, חַס וְשָׁלוֹם",
+          "line": 7,
+          "bechina_type": "mirror inversion — the negative face = the negative outcome"
+        },
+        {
+          "quote": "אֶת הַמָּוֶת וְכוּ', הַיְנוּ לַפָּנִים שֶׁלָּכֶם",
+          "line": 8,
+          "bechina_type": "הַיְנוּ bechina — death is the averted/negative face"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "torah_ref": 172,
+      "label": "גַּשְׁמִיּוּת וְהַצֵּל",
+      "label_en": "Physicality and the Shadow",
+      "polarity": "evil",
+      "reason": "Lines 2-3 establish a sustained metaphysical bechina: the shadow (צל) is caused by a physical/material thing (דָּבָר גַּשְׁמִי) standing opposite a spiritual/finer thing. The Rebbe gives three examples — wood and stone vs sunlight, earth's shadow causing eclipses, the sun itself relative to what is above it — all to establish that גשמיות (physicality/materiality) and צל (shadow) are the same reality: 'הָאָדָם כְּפִי גַּשְׁמִיּוּתוֹ... כֵּן עוֹשֶׂה צֵל'. This is a sustained bechina teaching: a person's degree of physicality IS their degree of shadow-casting. The Rebbe uses 'כְּפִי' (according to) throughout — the measure of physicality = the measure of shadow. מעשים רעים (evil deeds) are the third element: they are what increases/generates the גשמיות-צל. All three belong to the same domain: the negative material-obstacle realm. This is the evil/neutral blocking-mechanism cluster of Torah #172.",
+      "dominant_node": "צל",
+      "nodes": [
+        "צל",
+        "גשמיות",
+        "מעשים רעים"
+      ],
+      "node_degrees": {
+        "צל": 3,
+        "גשמיות": 2,
+        "מעשים רעים": 1
+      },
+      "source_basis": [
+        {
+          "quote": "הַצֵּל הוּא מִדָּבָר גַּשְׁמִי שֶׁעוֹמֵד נֶגֶד דָּבָר רוּחָנִי",
+          "line": 2,
+          "bechina_type": "definitional — shadow IS the physical standing against the spiritual"
+        },
+        {
+          "quote": "הָאָדָם כְּפִי גַּשְׁמִיּוּתוֹ וּכְפִי מַעֲשָׂיו, כֵּן עוֹשֶׂה צֵל",
+          "line": 3,
+          "bechina_type": "proportional equivalence — physicality and evil deeds = shadow"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_in_dataset_for_ref_172": 0,
+    "total_eitza_edges_in_dataset_for_ref_172": 1,
+    "total_nodes_from_source_text_bechina_analysis": 14,
+    "total_packages": 5,
+    "raw_connected_components_from_dataset": 0,
+    "raw_connected_components_from_source_text": 5,
+    "components_merged_into_packages": 5,
+    "note_on_dataset_gap": "This Torah is entirely absent from the bechina graph in torahData.js. All package structure is derived from the source text. The single existing edge (id=236, type='eitza') connects 'אם האדם מבטל עצמו ואינו כלל מזה העולם' to 'אינו עושה צל ומקבל אור השם יתברך' — this is correctly classified as eitza (the nullification PRODUCES the reception of light, it does not share the same nature as the light).",
+    "torah_structure": "The Torah's argument follows three moves: [Physical deeds → shadow that blocks light] →eitza→ [Nullification/ayin/chokhmah → no shadow] →eitza→ [Reception of divine light = kavod]. The face/panim section (lines 7-8) is a coda extending the light-kavod concept: the mode of kavod's appearance IS the face shown (good face = life, averted face = death). The good/evil mirror is fully present: Package 3 (joyful face/life) mirrors Package 4 (averted face/death); Package 2 (chokhmah/bitul) mirrors Package 5 (physicality/evil deeds/shadow) as the positive vs negative states of the human receiver."
+  }
+}

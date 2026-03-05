@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "source": "Torah #114 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference === 114 AND type === 'bechina'. The dataset contains exactly 1 bechina edge for Torah #114 (id: 2528, שמים ↔ צדיק), yielding a single 2-node connected component from the existing data. However, the source text (8 lines, Psalm 147:8 as the opening verse) contains at least 6 additional bechina pairs not yet in the dataset. The full package picture derived from source text gap analysis yields 3 packages: (1) a good cluster of the tzaddik and his spiritual qualities (שמים / צדיק / אש ומים / אהבה ויראה), (2) a good instrumental cluster of the concealment-as-protection mechanism (עבים / מחלוקת / צופה / כיסוי), and (3) the structural relationship of flow. The good/evil mirror is present but asymmetric: the evil force (the rasha, the machloket) is NOT a standalone evil package — rather, it is instrumentalized by Providence into the protective-covering cluster. The concealment cluster is therefore neutral-to-good in polarity, as the evil elements (rasha, machloket) serve the tzaddik's protection. See torah_114_additions.json for all proposed new bechina edges and torah_114_new_packages.json for the full expanded package picture based on the source text."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 114,
+      "label": "שָׁמַיִם וְצַדִּיק",
+      "label_en": "Heaven and the Tzaddik",
+      "polarity": "good",
+      "reason": "The single existing bechina edge in the dataset (id: 2528) equates שמים (heaven/sky) with צדיק (the righteous person). The proof text is: 'שָׁמַיִם הוּא בְּחִינַת הַצַּדִּיק, עַל־שֵׁם אֵשׁ וּמַיִם, הַיְנוּ אַהֲבָה וְיִרְאָה, וְעַל־שֵׁם זֶה נִקְרָא הַצַּדִּיק שָׁמַיִם.' This is an explicit, canonical bechina statement: the sky is named heaven (שמים) because it contains fire (אש) and water (מים) — i.e., the two primordial opposites held in union — and the tzaddik embodies this same union of opposites as love (אהבה = fire) and awe/fear (יראה = water). The tzaddik IS the heavens because both are the union of fire and water, love and awe. The existing edge captures the direct pair; the gap analysis (torah_114_additions.json) proposes extending this component to include אש ומים and אהבה ויראה as bechina nodes within this same cluster. The dominant node is צדיק by centrality and because the entire Torah's argument revolves around the tzaddik's ability to draw down abundance for the world. This is firmly a 'good' polarity cluster — it represents the holy channel between heaven and earth.",
+      "dominant_node": "צדיק",
+      "nodes": [
+        "שמים",
+        "צדיק"
+      ],
+      "node_degrees": {
+        "שמים": 1,
+        "צדיק": 1
+      },
+      "merge_notes": [
+        "The source text extends this component: line 4 further equates שמים with אש ומים and those with אהבה ויראה. These are missing bechina edges that would expand this package to 4 nodes (שמים, צדיק, אש ומים, אהבה ויראה). See torah_114_additions.json for the proposed new edges and torah_114_new_packages.json for the expanded package."
+      ],
+      "source_edge": {
+        "id": 2528,
+        "proof": "שָׁמַיִם הוּא בְחִינַת הַצַּדִּיק, עַל - שֵׁם אֵשׁ וּמַיִם, הַיְנוּ אַהֲבָה וְיִרְאָה, וְעַל - שֵׁם זֶה נִקְרָא הַצַּדִּיק שָׁמַיִם."
+      }
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 1,
+    "total_nodes_from_dataset": 2,
+    "total_packages": 1,
+    "raw_connected_components_from_dataset": 1,
+    "components_merged_into_packages": 1,
+    "note_on_dataset_sparsity": "Torah #114 has only 1 edge total in the dataset (reference === 114), and it is a bechina edge. The Torah is severely under-represented. The source text (torah_114.txt, 8 lines) contains at least 6 further bechina-type identifications beyond the single captured edge. This Torah requires substantial enrichment. See torah_114_additions.json for the complete gap analysis and torah_114_new_packages.json for the full proposed package structure derived from the source text."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "source": "Torah #176",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===176 AND type==='bechina'. Result: ZERO bechina edges found for Torah #176. All three dataset edges for this reference are type=eitza. There are therefore no bechina-connected components to form packages from. Package structure cannot be derived from the dataset alone; packages below are derived entirely from source text bechina-language analysis (see torah_176_additions.json for the gap analysis). The source text is a very short teaching (3 paragraphs) with a tight causal argument; it contains one clear bechina-language statement that generates two candidate concepts, and all other concept connections are causal (eitza) in nature."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 176,
+      "label": "רוּחַ שְׁטוּת וְאֲוִיר",
+      "label_en": "Spirit of Folly and Air",
+      "polarity": "evil",
+      "reason": "The source text explicitly equates ruach shtut (the spirit of folly) with avir (air), using the direct identity statement 'הָרוּחַ הוּא הָאֲוִיר' — 'the spirit IS the air.' This is the bechina-language identifier: ruach shtut and avir share the same essential nature; they are not cause and effect but two names for the same thing. The teaching's entire physical mechanism — that the spirit of folly pushes outward seeking an empty space to escape through, just as physical air does — depends on this identity. Together these two concepts form the evil/negative domain cluster: the antagonist force that fills a person's heart and must be expelled. Ruach shtut is the dominant node (it is named in the title of the Torah and drives the entire argument); avir is its physical-nature bechina, explaining why it behaves as it does.",
+      "dominant_node": "רוח שטות",
+      "nodes": [
+        "רוח שטות",
+        "אויר"
+      ],
+      "node_degrees": {
+        "רוח שטות": 1,
+        "אויר": 1
+      },
+      "merge_notes": [],
+      "source_note": "Both nodes derived from source text gap analysis (neither appears as a bechina-edge node in the dataset for ref 176). The bechina identity 'הָרוּחַ הוּא הָאֲוִיר' is explicitly stated in paragraph 2 of the source text. Ruach shtut already exists as a node in the broader dataset (e.g., Torah #1 Package 3), confirming it is a valid concept-level node."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_eitza_edges": 3,
+    "total_nodes_in_dataset_for_ref_176": 6,
+    "total_packages": 1,
+    "raw_connected_components_from_bechina": 0,
+    "packages_derived_from_source_text_gap_analysis": 1,
+    "note": "Torah #176 is a minimal teaching with no bechina edges in the current dataset. The single proposed package (רוח שטות / אויר) is derived entirely from the explicit bechina statement in the source text and constitutes a gap — both concepts need to be added to the dataset as bechina-connected nodes (see torah_176_additions.json). The remaining nodes in the teaching (הצדיק האמת, אהבת נפש, לב הצדיק, לב נשבר) are connected to the teaching only through eitza (causal) edges and do not form bechina packages within Torah #176 per the strict framework rule."
+  }
+}

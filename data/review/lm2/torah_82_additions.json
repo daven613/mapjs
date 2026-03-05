@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "source": "Torah #82 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 2,
+      "node_id": "חירִיק",
+      "node_text": "חִירִיק",
+      "polarity": "neutral",
+      "reason": "The chirik is a vowel-sign described as the bechina of malkhut descending to the lowest level — 'ובחירִיק לאנחתא לה לתתא, להמליך לה על תתאין.' It is the same concept as malkhut/chava in its aspect of descending to govern even the lowest realms. The chirik is how divine kingship extends downward, making it a facet of the Chava/Malkhut package (Package 2). It represents the vessel of malkhut reaching down to include even the lowest of Israel.",
+      "source_quote": "וְזֶה בְּחִינַת חִירִיק, כְּמוֹ שֶׁכָּתוּב (בת\"ז תי' י' דף כה): וּבְחִירִיק לְאַנְחָתָא לָהּ לְתַתָּא, לְהַמְלִיךְ לָה עַל תַּתָּאִין",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "סְגוֹל",
+      "node_text": "סְגוֹל",
+      "polarity": "good",
+      "reason": "The segol is described as the bechina of protection — it stands between the overwhelming divine light and the person, serving as a protective shield ('וסכתי כפי עליך'). It is 'between the two arms of the King' — a mediating, protective aspect of divine grace. The segol belongs to the Adam/divine-order package (Package 1) as a modality of how the divine light is safely channeled downward. It is the 'kaf' / 'covering palm' motif expressed through a vowel sign.",
+      "source_quote": "יֵשׁ בְּחִינַת סְגוֹל, כְּמוֹ שֶׁכָּתוּב (ת\"ז תי' יח דף לא): וּסְגוֹל כַּד אִיהִי בֵּין תְּרֵין דְּרוֹעִין דְּמַלְכָּא",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 3,
+      "node_id": "גַּדְלוּת",
+      "node_text": "גַּדְלוּת",
+      "polarity": "evil",
+      "reason": "Gadlut (arrogance/self-aggrandizement) is explicitly identified as the cause of 'lo ke-seder' — when a person sees that things are going wrong for them, the Rebbe says to know that they have gadlut: 'אנא אמלוך.' Gadlut is the inner reality of separation from the 'mah' (humility/divinity), which is what produces disorder, war, and suffering. It belongs in the Disorder/War package (Package 3) as the root cause of the entire pathology.",
+      "source_quote": "וּכְשֶׁרוֹאֶה אָדָם בְּעַצְמוֹ, שֶׁהוֹלֵךְ לוֹ שֶׁלֹּא כְּסֵדֶר, יֵדַע שֶׁיֵּשׁ לוֹ גַּדְלוּת, הַיְנוּ: אֲנָא אֶמְלֹךְ",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "מַחֲשָׁבָה",
+      "node_text": "מַחֲשָׁבָה",
+      "polarity": "good",
+      "reason": "Machshavah (thought/consciousness) is given explicit bechina language in the source text: 'מחשבה – חשב מה' (Zohar Bereishit 24 and Tikun 69) — machshavah is a bechina of 'cheshov mah,' binding divine consciousness within one's thought. The whole remedy described ('כשתקשר תמיד במחשבתך אלקותו') is the act of drawing Adam/mah into one's machshavah. Machshavah is thus a bechina of the divine-order package — it is the human faculty through which Adam/sekhel is drawn down.",
+      "source_quote": "וְזֶה פֵּרוּשׁ מַחֲשָׁבָה – חֲשֹׁב מָה (זוהר בראשית כד ותיקון סט). כְּשֶׁתְּקַשֵּׁר תָּמִיד בְּמַחֲשַׁבְתְּךָ אֱלֹקוּתוֹ",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 23,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "חירִיק",
+      "סְגוֹל",
+      "גַּדְלוּת",
+      "מַחֲשָׁבָה"
+    ],
+    "deduplication_note": "Several edges appear twice in the raw dataset (identical node pairs and proof text): 'אלף בית כסדר—קדם' (x2), 'תורה שבעל פה—חוה' (x2), 'חיות—שלמות' (x2), 'התנגדות הרצון—לא כסדר' (x2). These were deduplicated to unique edges for the graph analysis, yielding 23 unique bechina edges from 27 raw bechina entries (1 eitza entry excluded: 'תקשר אלקותו במחשבתך — יתבטלו כל המלחמות וכל הרצונות נגד רצונך').",
+    "node_id_normalization_note": "Two node IDs have a leading space in the raw data: ' אות יוד' and ' אות דלת'. These were normalized to 'אות יוד' and 'אות דלת' for graph analysis.",
+    "good_evil_mirror": "Package 1 (Adam/divine order) mirrors Package 3 (disorder/war): the divine masculine sekhel/order (Package 1) has as its negative counterpart the experience of hitnagdut ha-ratzon/milchama (Package 3). Package 2 (Chava/malkhut) is neutral — it is the shared vessel that can be either connected (ke-seder, good) or disconnected (shelo ke-seder, represented by the Package 3 pathology).",
+    "moshe_elul_note": "The passage on Moshe in Elul (sections 9-10 of the source text) introduces concepts like 'moser nafsho' (self-sacrifice), 'vayakhel' (gathering all Israel), 'elokut in the lowest place', and 'chiririk' — but the primary thematic function of this section is illustrative/eitza (this is how Moshe enacted the remedy), not introducing new bechina packages. The key bechina nodes from this section are chirik and the concept of elokut present in the lowest domains."
+  }
+}

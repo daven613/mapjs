@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "source": "Torah #109 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "ארץ ישראל",
+      "node_text": "אֶרֶץ יִשְׂרָאֵל",
+      "polarity": "good",
+      "reason": "Eretz Yisrael is the dominant concept of this Torah — it is the holy reality that the tzaddik's burial place shares in nature, and it is also described as a great tikkun for the blemish of the Brit. It appears in both the bechina relationship (burial place IS Eretz Yisrael in holiness) and in the eitza relationship (Eretz Yisrael → repairs the brit). It is the central node of Package 1.",
+      "source_quote": "הַצַּדִּיקִים אֲמִתִּיִּים יוֹרְשִׁים אֶרֶץ יִשְׂרָאֵל, שֶׁזּוֹכִין שֶׁמְּקוֹם גְּנִיזָתָם הוּא קָדוֹשׁ בִּקְדֻשַּׁת אֶרֶץ יִשְׂרָאֵל מַמָּשׁ",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "מקום גניזה",
+      "node_text": "מְקוֹם גְּנִיזָה",
+      "polarity": "good",
+      "reason": "The burial/concealment place of the true tzaddik is explicitly stated to share the essential holiness of Eretz Yisrael itself. 'מְקוֹם גְּנִיזָתָם הוּא קָדוֹשׁ בִּקְדֻשַּׁת אֶרֶץ יִשְׂרָאֵל מַמָּשׁ' — the tzaddik's burial place IS holy with the holiness of Eretz Yisrael. This is a direct bechina: burial place ↔ Eretz Yisrael in essential nature.",
+      "source_quote": "מְקוֹם גְּנִיזָתָם הוּא קָדוֹשׁ בִּקְדֻשַּׁת אֶרֶץ יִשְׂרָאֵל מַמָּשׁ",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "קדושת ארץ ישראל",
+      "node_text": "קְדֻשַּׁת אֶרֶץ יִשְׂרָאֵל",
+      "polarity": "good",
+      "reason": "The holiness of Eretz Yisrael is the quality that the tzaddik's burial place acquires. It is the essential nature shared between ארץ ישראל and מקום גניזה. Naming it separately reflects that the Rebbe emphasizes the specific qualitative holiness ('ממש' — literally/actually), not merely a metaphorical comparison.",
+      "source_quote": "מְקוֹם גְּנִיזָתָם הוּא קָדוֹשׁ בִּקְדֻשַּׁת אֶרֶץ יִשְׂרָאֵל מַמָּשׁ",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "צדיקים אמיתיים",
+      "node_text": "צַדִּיקִים אֲמִתִּיִּים",
+      "polarity": "good",
+      "reason": "True tzaddikim are the agents of the Eretz Yisrael holiness-transfer. The Rebbe's teaching is precisely about who 'inherits' Eretz Yisrael in this sense — only the 'true tzaddikim' (as opposed to those who merely call themselves tzaddikim). They are not metaphorically equated with Eretz Yisrael, but they are the persons through whom the bechina of the burial place = Eretz Yisrael is actualized. They belong in Package 1 as a key component of the same domain.",
+      "source_quote": "הַצַּדִּיקִים אֲמִתִּיִּים יוֹרְשִׁים אֶרֶץ יִשְׂרָאֵל",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "dataset_situation": "torahData.js contains no edges at all for LM2 Torah #109 (reference 1109). The dataset ends at reference 1105. LM2 Torah #109 data has not yet been entered into the dataset.",
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "ארץ ישראל",
+      "מקום גניזה",
+      "קדושת ארץ ישראל",
+      "צדיקים אמיתיים",
+      "פגם הברית",
+      "תיקון גדול"
+    ],
+    "notes_on_unpackaged_concepts": [
+      {
+        "node_id": "פגם הברית",
+        "node_text": "פְּגַם הַבְּרִית",
+        "status": "eitza_target_only",
+        "reason": "The blemish of the Brit appears in the Torah's final sentence as the target of an eitza relationship: ארץ ישראל IS a great tikkun FOR the blemish of the Brit. This is a directional, cause-and-effect statement — Eretz Yisrael repairs/rectifies the brit-blemish. There is no bechina language connecting פגם הברית to any other concept in this Torah, and it has no bechina partners. It stands alone as the negative reality that Eretz Yisrael (Package 1) repairs via an eitza. It is NOT included in Package 1, as it represents the opposing/negative domain, and is not stated to share the nature of Eretz Yisrael. It could form its own 1-node 'package' (evil polarity), but since there are no bechina connections to anchor it, it is documented here as an unpackaged eitza-node."
+      },
+      {
+        "node_id": "תיקון גדול",
+        "node_text": "תִּקּוּן גָּדוֹל",
+        "status": "eitza_descriptor_only",
+        "reason": "The 'great tikkun' is a descriptor of what Eretz Yisrael accomplishes for פגם הברית. It is not an independent concept with bechina connections; it characterizes the eitza relationship between ארץ ישראל and פגם הברית. No separate package."
+      }
+    ],
+    "bechina_edges_to_be_added": [
+      {
+        "edge": "מקום גניזה ↔ ארץ ישראל",
+        "proof": "מְקוֹם גְּנִיזָתָם הוּא קָדוֹשׁ בִּקְדֻשַּׁת אֶרֶץ יִשְׂרָאֵל מַמָּשׁ",
+        "type": "bechina",
+        "note": "The burial place of the true tzaddik IS Eretz Yisrael in essential holiness. The word 'ממש' (literally/actually) confirms this is identity of nature, not metaphor."
+      }
+    ],
+    "eitza_edges_to_be_added": [
+      {
+        "edge": "ארץ ישראל → תיקון לפגם הברית",
+        "proof": "וְאֶרֶץ יִשְׂרָאֵל הוּא תִּקּוּן גָּדוֹל לִפְגַם הַבְּרִית",
+        "type": "eitza",
+        "note": "Eretz Yisrael serves as/produces the rectification for the blemish of the Brit. This is a directional eitza — one thing (Eretz Yisrael) repairs/produces tikkun for another thing (פגם הברית). The two do not share the same nature."
+      }
+    ],
+    "torah_argument_flow": "Package 1 (Eretz Yisrael / burial place of the tzaddik) is the positive holy domain. The tzaddik's grave IS Eretz Yisrael (bechina). Eretz Yisrael then serves as a great rectification for the blemish of the Brit (eitza, outgoing from Package 1 to the negative concept of פגם הברית). The Torah is extremely brief with one bechina and one eitza statement."
+  }
+}

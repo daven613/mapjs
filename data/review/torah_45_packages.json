@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "source": "Torah #45",
+    "torah_ref": 45,
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #45 has ZERO bechina edges in the current dataset (all three reference:45 edges are type 'eitza'). The raw bechina graph for Torah #45 is entirely empty — there are no connected components to build from the dataset alone. However, the source text is dense with bechina language (בְּחִינַת, הַיְנוּ, מִי דַּיְקָא) that expresses multiple explicit bechina relationships, all absent from torahData.js. Since the task requires that every bechina-connected node appear in exactly one package, and since the dataset contains no bechina nodes for Torah #45, this packages file reports zero packages from the dataset. All substantive bechina content is captured in torah_45_additions.json (gap-analysis additions to existing implied packages) and torah_45_new_packages.json (new packages from text-only clusters). This outcome — zero dataset bechina edges — is structurally analogous to the situation in Torah #44 but more extreme: Torah #44 had 4 sparse edges; Torah #45 has none."
+  },
+  "packages": [],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0
+  }
+}

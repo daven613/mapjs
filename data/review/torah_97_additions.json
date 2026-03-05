@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "source": "Torah #97",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, then all edges from torahData.js with reference===97 (found 4 edges, all type 'eitza', zero bechina). Then read torah_97.txt in full. Systematically identified every occurrence of bechina language: בְּחִינַת, נִקְרֵאת/נִקְרָא, לְשׁוֹן, הַיְנוּ (used as an equation). Each concept so identified was checked: (1) does it appear as a node in the torahData.js dataset? (2) if it is in the dataset, is it assigned to a package? Since the dataset has no bechina edges for Torah #97, all identified concepts are gaps requiring new node additions to the dataset."
+  },
+  "dataset_bechina_edge_summary": {
+    "total_reference_97_edges": 4,
+    "bechina_edges": 0,
+    "eitza_edges": 4,
+    "eitza_edge_details": [
+      {
+        "id": 1043,
+        "node1_id": "צריך לשבר המחשבות זרות על־ידי מחשבות קדושות של התפלה",
+        "node2_id": "זדונות, דהינו המחשבות זרות, נעשין לו כזכיות",
+        "type": "eitza",
+        "note": "Breaking foreign thoughts via holy thoughts produces transformation of sins into merits — cause-and-effect, correctly classified as eitza. The result (Efraim) is a bechina concept but the EDGE here is eitza."
+      },
+      {
+        "id": 1395,
+        "node1_id": "ענוה",
+        "node2_id": "יראה",
+        "type": "eitza",
+        "note": "Humility leads to fear — cause-and-effect (Mishlei 22:4), correctly classified as eitza."
+      },
+      {
+        "id": 2015,
+        "node1_id": "כשמתפלל בשתי בחינות אלו, מנשה ואפרים הנ\"ל",
+        "node2_id": "מתפלל גם כן ביראה",
+        "type": "eitza",
+        "note": "Praying with the two bechinot produces prayer-with-yirah — correctly classified as eitza (the two bechinot produce the outcome of yirah)."
+      },
+      {
+        "id": 2405,
+        "node1_id": "כשמתפלל בשתי בחינות אלו, מנשה ואפרים הנ\"ל",
+        "node2_id": "ענוה ושפלות",
+        "type": "eitza",
+        "note": "Praying with the two bechinot produces humility and lowliness — correctly classified as eitza."
+      }
+    ]
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "תְּפִלָּה וּמַלְכוּת",
+      "node_id": "תפלה",
+      "node_text": "הַתְּפִלָּה",
+      "polarity": "good",
+      "reason": "Line 10 states: 'הַתְּפִלָּה יֵשׁ לָהּ בְּחִינַת מַלְכוּת, וְיֵשׁ לְהַתְּפִלָּה כָּזוֹ בְּחִינַת מֶמְשָׁלָה.' Prayer has the bechina of Malkhut — this is the central bechina declaration of the entire Torah. Prayer-as-malkhut is the dominant node of Package 1.",
+      "source_quote": "הַתְּפִלָּה יֵשׁ לָהּ בְּחִינַת מַלְכוּת, וְיֵשׁ לְהַתְּפִלָּה כָּזוֹ בְּחִינַת מֶמְשָׁלָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "תְּפִלָּה וּמַלְכוּת",
+      "node_id": "יראה",
+      "node_text": "הַיִּרְאָה",
+      "polarity": "good",
+      "reason": "Line 10: 'וְהַיִּרְאָה נִקְרֵאת מַלְכוּת, כְּמוֹ שֶׁאָמְרוּ חֲכָמֵינוּ זִכְרוֹנָם לִבְרָכָה: אִלְמָלֵא מוֹרָאָהּ שֶׁל מַלְכוּת וְכוּ.' Awe/fear is explicitly called Malkhut (niqret malkhut). This is a direct bechina equation and belongs in Package 1 as a primary bechina-connected node.",
+      "source_quote": "וְהַיִּרְאָה נִקְרֵאת מַלְכוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "תְּפִלָּה וּמַלְכוּת",
+      "node_id": "מלכות",
+      "node_text": "מַלְכוּת",
+      "polarity": "good",
+      "reason": "Line 10 makes Malkhut the central hub: the Yirah is called Malkhut, and Prayer has the bechina of Malkhut. Line 16: Mechokeki = 'leshon sherrara u-malkhut'. Malkhut is the dominant node of Package 1 with 3 bechina connections (to תפלה, יראה, and מחוקקי).",
+      "source_quote": "וְהַיִּרְאָה נִקְרֵאת מַלְכוּת... הַתְּפִלָּה יֵשׁ לָהּ בְּחִינַת מַלְכוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "תְּפִלָּה וּמַלְכוּת",
+      "node_id": "יהודה",
+      "node_text": "יְהוּדָה",
+      "polarity": "good",
+      "reason": "Line 15: 'יְהוּדָה – הַיְנוּ הַתְּפִלָּה, כְּמוֹ שֶׁכָּתוּב: הַפַּעַם אוֹדֶה.' Yehudah IS prayer — the root of Yehudah is hodaah (praise/thanksgiving), which the Rebbe equates to prayer here. This is a direct bechina equation via 'הַיְנוּ' (which the framework identifies as a standard bechina marker).",
+      "source_quote": "יְהוּדָה – הַיְנוּ הַתְּפִלָּה, כְּמוֹ שֶׁכָּתוּב: הַפַּעַם אוֹדֶה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "תְּפִלָּה וּמַלְכוּת",
+      "node_id": "מחוקקי",
+      "node_text": "מְחוֹקְקִי",
+      "polarity": "good",
+      "reason": "Line 16: 'מְחוֹקְקִי – וּפֵרֵשׁ רַשִׁ\"י: לְשׁוֹן שְׂרָרָה וּמַלְכוּת.' Mechokeki is declared to mean (leshon) dominion and Malkhut. 'לְשׁוֹן' is one of the standard bechina markers in the framework. The word Mechokeki = sovereignty = Malkhut = prayer having memshala. Belongs in Package 1.",
+      "source_quote": "מְחוֹקְקִי – וּפֵרֵשׁ רַשִׁ\"י: לְשׁוֹן שְׂרָרָה וּמַלְכוּת, הַיְנוּ שֶׁיִּהְיֶה לְהַתְּפִלָּה מֶמְשָׁלָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "תְּפִלָּה וּמַלְכוּת",
+      "node_id": "מנשה",
+      "node_text": "מְנַשֶּׁה",
+      "polarity": "good",
+      "reason": "Line 6: 'וְזֶהוּ בְּחִינַת מְנַשֶּׁה, לְשׁוֹן נִשְׁיוֹן וְשִׁכְחָה.' Menashe IS forgetting — explicitly labeled 'bechina of Menashe, meaning forgetfulness.' This is the first inner posture of prayer with malkhut: before praying, forget one's yichus (lineage) and toil. This is a bechina-declared concept belonging to the prayer-as-malkhut cluster.",
+      "source_quote": "וְזֶהוּ בְּחִינַת מְנַשֶּׁה, לְשׁוֹן נִשְׁיוֹן וְשִׁכְחָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "תְּפִלָּה וּמַלְכוּת",
+      "node_id": "שכחה",
+      "node_text": "שִׁכְחָה",
+      "polarity": "good",
+      "reason": "Line 6 (same passage): Menashe = leshon nishyon v'shikha. Shikha (forgetting) is the other name for the quality described. Together with Menashe they form a bechina pair. The proof text 'כִּי נַשַּׁנִי אֱלֹקִים אֶת כָּל בֵּית אָבִי' illustrates this forgetting. The quality of forgetting one's self-image before prayer is part of the prayer-malkhut domain.",
+      "source_quote": "וְזֶהוּ בְּחִינַת מְנַשֶּׁה, לְשׁוֹן נִשְׁיוֹן וְשִׁכְחָה. וְזֶה שֶׁכָּתוּב: כִּי נַשַּׁנִי אֱלֹקִים אֶת כָּל בֵּית אָבִי",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "תְּפִלָּה וּמַלְכוּת",
+      "node_id": "אפרים",
+      "node_text": "אֶפְרַיִם",
+      "polarity": "good",
+      "reason": "Line 8: 'וְזֶהוּ בְּחִינַת אֶפְרַיִם, כְּמוֹ שֶׁכָּתוּב: כִּי הִפְרַנִי אֱלֹקִים בְּאֶרֶץ עָנְיִי.' Efraim is declared a bechina — the quality of bearing fruit from the barren land. This is the second inner posture of prayer: during prayer, use holy thoughts to break foreign thoughts, and they become merits (fruitfulness from dryness). This is a bechina of the transformation inherent to prayer-with-malkhut.",
+      "source_quote": "וְזֶהוּ בְּחִינַת אֶפְרַיִם, כְּמוֹ שֶׁכָּתוּב: כִּי הִפְרַנִי אֱלֹקִים בְּאֶרֶץ עָנְיִי",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "שֶׁפַע וְאוֹתִיּוֹת הַשֵּׁם",
+      "node_id": "שפע",
+      "node_text": "הַשֶּׁפַע",
+      "polarity": "good",
+      "reason": "Line 2: 'וְהַשֶּׁפַע נִקְרֵאת ה'.' The shefa (divine flow of abundance) is explicitly called the letter Heh. Confirmed again in line 23: 'וְה' הִיא הַשֶּׁפַע.' Shefa is the dominant node of Package 2 — it is the source concept that the entire letter-structure of the Torah (#97) is trying to restore (prayer converts dalet back to heh = restores shefa).",
+      "source_quote": "וְהַשֶּׁפַע נִקְרֵאת ה', כְּמוֹ שֶׁכָּתוּב: הֵא לָכֶם זֶרַע",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "שֶׁפַע וְאוֹתִיּוֹת הַשֵּׁם",
+      "node_id": "ה' (אות)",
+      "node_text": "אוֹת הֵ\"א",
+      "polarity": "neutral",
+      "reason": "The letter Heh is the structural symbol connecting shefa, dalet (when shefa is withdrawn), and chalav (milk = gematria of Heh in three forms). It is a letter (neutral structural object) but in this Torah it specifically represents the state of divine fullness/shefa. Classified neutral because it is a letter of the aleph-bet that serves as a metaphor.",
+      "source_quote": "הַשֶּׁפַע נִקְרֵאת ה'... ה' בִּשְׁלֹשָׁה צִיּוּרִין שֶׁלָּהּ גִּימַטְרִיָּא חָלָב",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "שֶׁפַע וְאוֹתִיּוֹת הַשֵּׁם",
+      "node_id": "חלב",
+      "node_text": "חָלָב",
+      "polarity": "good",
+      "reason": "Line 23: 'ה' בִּשְׁלֹשָׁה צִיּוּרִין שֶׁלָּהּ גִּימַטְרִיָּא חָלָב, עִם שְׁנֵי הַכְּלָלוֹת.' The letter Heh in its three written forms (ה in regular, sofit, and filled spelling) has the gematria of chalav (milk). Chalav is thus a bechina of Heh = bechina of shefa. Milk as nurturing-abundance is the embodiment of shefa. Belongs in Package 2.",
+      "source_quote": "וְה' הִיא הַשֶּׁפַע, כִּי ה' בִּשְׁלֹשָׁה צִיּוּרִין שֶׁלָּהּ גִּימַטְרִיָּא חָלָב",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "שֶׁפַע וְאוֹתִיּוֹת הַשֵּׁם",
+      "node_id": "א\"ל (אותיות)",
+      "node_text": "אוֹתִיּוֹת א\"ל",
+      "polarity": "neutral",
+      "reason": "Line 2: 'הַשְּׁנֵי אוֹתִיּוֹת א\"ל, הֵם דָּד.' The two letters Alef-Lamed (= El) ARE dad (nipple/source). Confirmed in line 22: 'וְנַעֲשֶׂה א\"ל בְּחִינַת דַּד.' The letters א\"ל as a letter-pair are a neutral structural element (letters of the name Elkim) that = dad = the nurturing source of shefa. Belongs in Package 2.",
+      "source_quote": "כִּי הַשְּׁנֵי אוֹתִיּוֹת א\"ל, הֵם דָּד... וְנַעֲשֶׂה א\"ל בְּחִינַת דַּד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "שֶׁפַע וְאוֹתִיּוֹת הַשֵּׁם",
+      "node_id": "מ\"י (אותיות)",
+      "node_text": "אוֹתִיּוֹת מ\"י",
+      "polarity": "neutral",
+      "reason": "Line 2: 'וְהַשְּׁנֵי אוֹתִיּוֹת מ\"י הֵם דָּד.' The two letters Mem-Yod (= Mi) ARE also dad (nipple). Confirmed in line 22: 'וּמ\"י בְּחִינַת דַּד.' Together with א\"ל, they form the word Eldad-Medad (the two prophets of Numbers), the heavenly place from which shefa descends. Both letter-pairs share the same essential nature: sources of nourishment. Belongs in Package 2.",
+      "source_quote": "וְהַשְּׁנֵי אוֹתִיּוֹת מ\"י הֵם דָּד... וּמ\"י בְּחִינַת דַּד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "שֶׁפַע וְאוֹתִיּוֹת הַשֵּׁם",
+      "node_id": "דד",
+      "node_text": "דָּד",
+      "polarity": "good",
+      "reason": "Lines 2 and 22: Both א\"ל and מ\"י ARE dad (nipple/nourishing source). Dad is the central metaphor for the source that both letter-pairs share — it IS the quality of being a nipple/source of divine nourishment. Also cognate with dod (beloved) in some readings. Dad as a concept has degree 2 (connected to both א\"ל and מ\"י). It is the hub of the letter-pair sub-cluster.",
+      "source_quote": "הַשְּׁנֵי אוֹתִיּוֹת א\"ל, הֵם דָּד, וְהַשְּׁנֵי אוֹתִיּוֹת מ\"י הֵם דָּד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "שֶׁפַע וְאוֹתִיּוֹת הַשֵּׁם",
+      "node_id": "עשרה מאמרות",
+      "node_text": "עֲשָׂרָה מַאֲמָרוֹת",
+      "polarity": "good",
+      "reason": "Line 17: 'וַעֲשָׂרָה מַאֲמָרוֹת הַנַּ\"ל הֵם יוּ\"ד.' The Ten Utterances of Creation ARE the letter Yud. And the Yud + the restored Dalet = the Heh (shefa). The Ten Utterances thus belong in the shefa/letters cluster — they are the divine speech that constitutes the letter Yud which IS shefa when completed. Line 18 also says the Ten Utterances flow from chesed. This places them in the chesed-el-dad-shefa chain of Package 2.",
+      "source_quote": "וַעֲשָׂרָה מַאֲמָרוֹת הַנַּ\"ל הֵם יוּ\"ד, יוּ\"ד וְד' הַנַּ\"ל – נַעֲשֶׂה ה'",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "שֶׁפַע וְאוֹתִיּוֹת הַשֵּׁם",
+      "node_id": "יו\"ד (אות)",
+      "node_text": "אוֹת יוּ\"ד",
+      "polarity": "neutral",
+      "reason": "Line 17: the Ten Utterances ARE the letter Yud (yod). The Yod (= ten) + Dalet (= four, but here the restored heh) = Heh. This is a letter (neutral structural object) that in this Torah represents divine creative speech condensed into its numeric symbol. Belongs in Package 2 as part of the shefa/letters chain.",
+      "source_quote": "וַעֲשָׂרָה מַאֲמָרוֹת הַנַּ\"ל הֵם יוּ\"ד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "שֶׁפַע וְאוֹתִיּוֹת הַשֵּׁם",
+      "node_id": "חסד",
+      "node_text": "חֶסֶד",
+      "polarity": "good",
+      "reason": "Line 18: 'וַעֲשָׂרָה מַאֲמָרוֹת נִמְשָׁךְ מֵחֶסֶד, שֶׁנֶּאֱמַר: אָמַרְתִּי, דְּהַיְנוּ הַמַּאֲמָרוֹת, עוֹלָם חֶסֶד יִבָּנֶה.' Ten Utterances flow from Chesed. And then: 'וְחֶסֶד נִקְרָא אֵל.' Chesed IS called El. Since El = א\"ל = dad (from line 2), Chesed is thus equated to the same nurturing-shefa complex. Chesed is the divine attribute whose expression through speech (utterances) builds the world in the manner of shefa. It belongs in Package 2.",
+      "source_quote": "וַעֲשָׂרָה מַאֲמָרוֹת נִמְשָׁךְ מֵחֶסֶד... וְחֶסֶד נִקְרָא אֵל, שֶׁנֶּאֱמַר: חֶסֶד אֵל כָּל הַיּוֹם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "שֶׁפַע וְאוֹתִיּוֹת הַשֵּׁם",
+      "node_id": "אל",
+      "node_text": "אֵל",
+      "polarity": "good",
+      "reason": "Line 18: 'חֶסֶד נִקְרָא אֵל.' Line 21: 'שֶׁתְּעוֹרֵר בְּחִינוֹת אֵל.' Line 22: 'וְנַעֲשֶׂה א\"ל בְּחִינַת דַּד.' El is the divine name/attribute = Chesed = the letters Alef-Lamed = dad. This is the nexus point of the shefa/letters cluster in Package 2. El is both the divine name and the quality of divine loving-kindness that flows as shefa through the nipple-metaphor (dad). Degree 2: connected to חסד and to א\"ל/דד.",
+      "source_quote": "חֶסֶד נִקְרָא אֵל... שֶׁתְּעוֹרֵר בְּחִינוֹת אֵל עַל־יְדֵי הַתְּפִלָּה... וְנַעֲשֶׂה א\"ל בְּחִינַת דַּד",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "גִּלְעָד וְהַתַּעֲנוּג הָאֱלֹקִי",
+      "node_id": "גלעד",
+      "node_text": "גִּלְעָד",
+      "polarity": "good",
+      "reason": "Line 13: 'לִי גִלְעָד – לְשׁוֹן גַּל עֵד, שֶׁנִּתְגַּלָּה הַתַּעֲנוּג שֶׁהָיָה לְהַשֵּׁם יִתְבָּרַךְ קֹדֶם בְּרִיאַת הָעוֹלָם.' Gilad = gal-ed (witness-heap) = the revealed divine pleasure. The Rebbe decodes the word Gilad etymologically as 'leshon gal-ed' — this is a standard bechina declaration via 'לְשׁוֹן'. Gilad IS the concept of the revealed taanug. Belongs in Package 3.",
+      "source_quote": "לִי גִלְעָד – לְשׁוֹן גַּל עֵד, שֶׁנִּתְגַּלָּה הַתַּעֲנוּג שֶׁהָיָה לְהַשֵּׁם יִתְבָּרַךְ קֹדֶם בְּרִיאַת הָעוֹלָם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "גִּלְעָד וְהַתַּעֲנוּג הָאֱלֹקִי",
+      "node_id": "תענוג",
+      "node_text": "הַתַּעֲנוּג",
+      "polarity": "good",
+      "reason": "Lines 4, 11, 13: The divine pleasure (taanug) is the concept underlying Gilad. God 'adorned Himself' (idein v'kishait) before creation with the anticipated prayers and good deeds of the tzaddikim — that is the taanug. This taanug was the motive force behind creation (line 11: 'מִזֶּה הַתַּעֲנוּג נִבְרָא הָעוֹלָם בַּעֲשָׂרָה מַאֲמָרוֹת'). When prayer is properly conducted (with Menashe and Efraim), the taanug is revealed anew — God's delight is fulfilled. Gilad = gal-ed = revelation of this taanug. The taanug node IS what Gilad declares to be revealed. Belongs in Package 3.",
+      "source_quote": "שֶׁנִּתְגַּלָּה הַתַּעֲנוּג שֶׁהָיָה לְהַשֵּׁם יִתְבָּרַךְ קֹדֶם בְּרִיאַת הָעוֹלָם, שֶׁעִדֵּן וְקִשֵּׁט בִּתְפִלָּתָן שֶׁל צַדִּיקִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "גַּדְלוּת (gadlut / greatness)",
+      "reason": "Line 5 describes gadlut as one of the obstacles to prayer ('שֶׁעוֹמֵד לְהִתְפַּלֵּל בְּגַדְלוּת'). However, it is not declared a bechina — there is no 'X הוא בְּחִינַת Y' statement equating gadlut to a concept. It is mentioned as a cause of the block, not as a concept sharing nature with another. Excluded."
+    },
+    {
+      "concept": "יִחוּס (lineage/ancestry)",
+      "reason": "Line 5 mentions yichus as the content of what the person forgets via Menashe ('שֶׁהוּא מְיֻחָס גָּדוֹל'). Line 6 proof text says: 'כִּי נַשַּׁנִי אֱלֹקִים אֶת כָּל בֵּית אָבִי – זֶה הַיִּחוּס.' This is a gloss/explanation of the proof verse, not a bechina declaration. The Rebbe says 'zeh ha-yichus' — this verse illustrates yichus — but does not use bechina language to equate yichus to another concept. Excluded."
+    },
+    {
+      "concept": "עֲמָלִי (my toil in divine service)",
+      "reason": "Line 6: 'וְאֶת כָּל עֲמָלִי – שֶׁעָמַל בַּעֲבוֹדַת הַבּוֹרֵא.' This is the second thing to be forgotten (one's spiritual toil/accomplishments). It is an explanation of the verse, not a bechina statement. Excluded."
+    },
+    {
+      "concept": "אֶלְדָּד וּמֵידָד (Eldad and Medad)",
+      "reason": "Line 2: 'יֵשׁ מָקוֹם לְמַעְלָה שֶׁנִּקְרָא אֶלְדָּד וּמֵידָד, שֶׁמִּשָּׁם הַשֶּׁפַע יוֹרֵד לָעוֹלָם.' Eldad-Medad is a place/source from which shefa descends. The Rebbe then breaks the name into letter-pairs (Alef-Lamed = dad; Mem-Yud = dad). The NAME Eldad-Medad is not itself declared a bechina in the standard sense — it is the Rebbe's source-reference that he immediately decomposes into the letter pairs. The letter pairs (א\"ל and מ\"י) are the actual bechina nodes; Eldad-Medad is the named heavenly place. Excluded as a separate node (already captured by the letter-pair analysis)."
+    },
+    {
+      "concept": "מַחֲשָׁבוֹת זָרוֹת (foreign thoughts)",
+      "reason": "Foreign thoughts are mentioned multiple times (lines 7, 8) as what falls upon the person during prayer and what must be broken. But the Rebbe does not declare 'X הוא בְּחִינַת מַחֲשָׁבוֹת זָרוֹת' or vice versa. They are the content of the problem, not a bechina-labeled concept. Excluded."
+    },
+    {
+      "concept": "מַחֲשָׁבוֹת קְדוֹשׁוֹת (holy thoughts)",
+      "reason": "Lines 7, 14: holy thoughts of prayer are what break the foreign thoughts and what is meant by 'מָעוֹז רֹאשִׁי.' But no bechina declaration. 'מָעוֹז רֹאשִׁי – הַיְנוּ שֶׁיַּגְבִּיר הַמַּחֲשָׁבוֹת קְדוֹשׁוֹת' — this 'הַיְנוּ' is a verse interpretation, not a bechina equation between two concepts. Excluded."
+    },
+    {
+      "concept": "דָּלֶת (letter Dalet)",
+      "reason": "Line 3: 'נַעֲשֶׂה מִן הֵא דָּלֶת, עַל־שֵׁם דְּלֵית לָהּ מִגַּרְמַהּ כְּלוּם.' The Heh becomes a Dalet when shefa is withdrawn — the Dalet represents poverty/lack (dleit lah mi-garma klum = she has nothing of her own). This is part of the Heh/Dalet dynamic. The Dalet represents absence of shefa. It could be considered a negative state of the letter-Heh-as-shefa, but no explicit bechina declaration marks Dalet as equal to another concept. The framework emphasizes 'bechina statements' specifically. Excluded from the additions list but noted: if the dataset were to include it, it would be an evil/neutral counterpart in the letters domain, showing the ה becoming ד when the divine flow (shefa) withdraws."
+    },
+    {
+      "concept": "מָעוֹז רֹאשִׁי (the strength of my head)",
+      "reason": "Line 14: 'מָעוֹז רֹאשִׁי – הַיְנוּ שֶׁיַּגְבִּיר הַמַּחֲשָׁבוֹת קְדוֹשׁוֹת.' This 'הַיְנוּ' introduces a descriptive explanation of the verse phrase, not a bechina equation between two concepts. The verse phrase is being interpreted, not equated structurally to another domain concept. Excluded."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_97_edges": 4,
+    "total_reference_97_bechina_edges": 0,
+    "total_reference_97_eitza_edges": 4,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "תפלה", "יראה", "מלכות", "יהודה", "מחוקקי", "מנשה", "שכחה", "אפרים",
+      "שפע", "ה' (אות)", "חלב", "א\"ל (אותיות)", "מ\"י (אותיות)", "דד",
+      "עשרה מאמרות", "יו\"ד (אות)", "חסד", "אל", "גלעד", "תענוג"
+    ],
+    "important_note": "All 20 bechina-connected concepts in Torah #97 are gaps (not in the dataset as bechina edges for this Torah). The dataset needs 20 new nodes/edges added for Torah #97 bechina representation. The 4 existing eitza edges correctly classify eitza relationships (ענוה → יראה, Menashe+Efraim prayer → ענוה ושפלות, etc.) and should be retained.",
+    "structural_observation": "Torah #97 has no evil package. It is a positive teaching about how prayer attains sovereignty (memshala). The only negative element is the withdrawal of shefa (ה becoming ד) and the obstacles to prayer (gadlut before prayer, foreign thoughts during prayer), but these are mentioned in narrative/eitza context, not labeled as bechina concepts forming an evil cluster.",
+    "good_evil_mirror": "ABSENT: No evil bechina cluster exists in Torah #97. The Rebbe does not develop an explicit evil counterpart. The obstacles (gadlut, machshavot zarot) are presented as problems to be overcome (eitza context), not as a parallel evil ontological domain with its own bechina structure."
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "source": "Torah #126 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_126_packages.json, all reference === 126 edges from torahData.js (0 edges found — the dataset has no entries for Torah #126), and the full source text torah_126.txt (4 lines). Performed a complete line-by-line scan for all explicit bechina language: בְּחִינַת / מִבְּחִינַת / בִּבְחִינַת / הוּא בְּחִינַת / הַיְנוּ [as equivalence marker] / נִקְרָא [as shared-nature marker]. Because the dataset is entirely empty for this Torah, every bechina-identified node is a new gap addition."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "נֶפֶשׁ יְתֵרָה וַהֲסְתַּלְּקוּת הַצַּדִּיק",
+      "node_id": "הסתלקות הצדיק",
+      "node_text": "הִסְתַּלְּקוּת הַצַּדִּיק",
+      "polarity": "neutral",
+      "reason": "Line 1 and line 3 of the source text establish the Chavrayya's anticipatory grief over Rabbi Shimon bar Yochai's impending departure (הִסְתַּלְּקוּת) as the primary phenomenon the teaching addresses. Line 2 declares this phenomenon IS a bechina of 'שָׁבַת וַיִּנָּפַשׁ' — the departure of Shabbat/the Nefesh Yeteirah. The node 'הִסְתַּלְּקוּת הַצַּדִּיק' is one side of the bechina equation. It is not currently in torahData.js as a reference-126 node.",
+      "source_quote": "וַי לְדָרָא כַּד תִּסְתַּלֵּק ... וְהוּא בְּחִינַת שָׁבַת וַיִּנָּפַשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "הסתלקות הצדיק",
+        "node2_id": "שבת וינפש",
+        "type": "bechina",
+        "reference": 126,
+        "proof": "וְהוּא בְּחִינַת שָׁבַת וַיִּנָּפַשׁ — כֵּיוָן שֶׁשָּׁבַת וַי אָבְדָה נֶפֶשׁ"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "נֶפֶשׁ יְתֵרָה וַהֲסְתַּלְּקוּת הַצַּדִּיק",
+      "node_id": "שבת וינפש",
+      "node_text": "שָׁבַת וַיִּנָּפַשׁ",
+      "polarity": "neutral",
+      "reason": "Line 2 opens with 'וְהוּא בְּחִינַת שָׁבַת וַיִּנָּפַשׁ' — the departure of Rabbi Shimon is explicitly declared to be a bechina of the verse 'שָׁבַת וַיִּנָּפַשׁ' (Exodus 31:17), which is then unpacked via the Talmud (Beitzah 16): 'כֵּיוָן שֶׁשָּׁבַת וַי אָבְדָה נֶפֶשׁ' — when Shabbat ceases, the 'vay' (= soul) is lost. 'שָׁבַת וַיִּנָּפַשׁ' is the other pole of the bechina equation — it is the Sinaitic/biblical concept whose structure the Rebbe uses to illuminate the phenomenon of the Tzaddik's departure. Not currently in torahData.js as a reference-126 node.",
+      "source_quote": "וְהוּא בְּחִינַת שָׁבַת וַיִּנָּפַשׁ – כֵּיוָן שֶׁשָּׁבַת וַי אָבְדָה נֶפֶשׁ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "שבת וינפש",
+        "node2_id": "הסתלקות הצדיק",
+        "type": "bechina",
+        "reference": 126,
+        "proof": "וְהוּא בְּחִינַת שָׁבַת וַיִּנָּפַשׁ – כֵּיוָן שֶׁשָּׁבַת וַי אָבְדָה נֶפֶשׁ"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "נֶפֶשׁ יְתֵרָה וַהֲסְתַּלְּקוּת הַצַּדִּיק",
+      "node_id": "נפש יתרה",
+      "node_text": "נֶפֶשׁ יְתֵרָה",
+      "polarity": "neutral",
+      "reason": "Line 2 explains WHY the 'שָׁבַת וַיִּנָּפַשׁ' parallel holds: 'מֵחֲמַת גֹּדֶל הַתַּעֲנוּג שֶׁל הַנֶּפֶשׁ יְתֵרָה שֶׁבָּא בְּשַׁבָּת' — because of the great pleasure of the Nefesh Yeteirah that comes on Shabbat, one immediately begins to yearn and grieve at its loss. The Nefesh Yeteirah is the named concept that IS the content of 'שָׁבַת וַיִּנָּפַשׁ' — it is what is lost when Shabbat departs. The Talmudic wordplay 'וַי-נָּפַשׁ = וַי אָבְדָה נֶפֶשׁ' makes the Nefesh Yeteirah the explicit referent of the verse. The Nefesh Yeteirah shares essential nature with שָׁבַת וַיִּנָּפַשׁ (they are the same phenomenon viewed from different angles: the verse-level versus the concept-level). Not currently in torahData.js as a reference-126 node.",
+      "source_quote": "מֵחֲמַת גֹּדֶל הַתַּעֲנוּג שֶׁל הַנֶּפֶשׁ יְתֵרָה שֶׁבָּא בְּשַׁבָּת, עַל־כֵּן מַתְחִילִים תֵּכֶף לְהִתְגַּעְגֵּעַ וּלְהִצְטַעֵר עַל אֲבֵדַת הַנֶּפֶשׁ בְּמוֹצָאֵי־שַׁבָּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "נפש יתרה",
+        "node2_id": "שבת וינפש",
+        "type": "bechina",
+        "reference": 126,
+        "proof": "מֵחֲמַת גֹּדֶל הַתַּעֲנוּג שֶׁל הַנֶּפֶשׁ יְתֵרָה שֶׁבָּא בְּשַׁבָּת — כֵּיוָן שֶׁשָּׁבַת וַי אָבְדָה נֶפֶשׁ"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "נֶפֶשׁ יְתֵרָה וַהֲסְתַּלְּקוּת הַצַּדִּיק",
+      "node_id": "געגועים על אבדת הנפש",
+      "node_text": "גַּעֲגּוּעִים עַל אֲבֵדַת הַנֶּפֶשׁ",
+      "polarity": "neutral",
+      "reason": "Lines 2 and 3 establish the structural parallel at the experiential level: yearning/grief (גַּעֲגּוּעִים) over the anticipated loss of the Nefesh Yeteirah / the Tzaddik is the experiential signature of both phenomena. Line 2: 'מַתְחִילִים תֵּכֶף לְהִתְגַּעְגֵּעַ וּלְהִצְטַעֵר עַל אֲבֵדַת הַנֶּפֶשׁ בְּמוֹצָאֵי־שַׁבָּת.' Line 3: 'עַל־כֵּן תֵּכֶף וּמִיָּד הִתְחִילוּ לְהִתְגַּעְגֵּעַ, וְעָלָה עַל לִבָּם צַעַר הַהִסְתַּלְּקוּת שֶׁיִּהְיֶה לָהֶם.' The Rebbe explicitly uses the same term גַּעֲגּוּעִים/הִתְגַּעְגֵּעַ for both instances, making the experiential-identity explicit — the yearning on Motzaei Shabbat IS a bechina of the yearning over the Tzaddik's departure. The grief/longing is the shared essential quality that makes the two phenomena aspects of one another. Not currently in torahData.js as a reference-126 node.",
+      "source_quote": "מַתְחִילִים תֵּכֶף לְהִתְגַּעְגֵּעַ וּלְהִצְטַעֵר עַל אֲבֵדַת הַנֶּפֶשׁ בְּמוֹצָאֵי־שַׁבָּת; כֵּן הַחֶבְרַיָּא ... תֵּכֶף וּמִיָּד הִתְחִילוּ לְהִתְגַּעְגֵּעַ, וְעָלָה עַל לִבָּם צַעַר הַהִסְתַּלְּקוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "געגועים על אבדת הנפש",
+        "node2_id": "הסתלקות הצדיק",
+        "type": "bechina",
+        "reference": 126,
+        "proof": "כֵּן הַחֶבְרַיָּא, מֵחֲמַת גֹּדֶל הַתַּעֲנוּגִים ... תֵּכֶף וּמִיָּד הִתְחִילוּ לְהִתְגַּעְגֵּעַ, וְעָלָה עַל לִבָּם צַעַר הַהִסְתַּלְּקוּת שֶׁיִּהְיֶה לָהֶם"
+      }
+    },
+    {
+      "package_id": 1,
+      "package_label": "נֶפֶשׁ יְתֵרָה וַהֲסְתַּלְּקוּת הַצַּדִּיק",
+      "node_id": "תענוג מהצדיק",
+      "node_text": "תַּעֲנוּג מֵהַצַּדִּיק",
+      "polarity": "neutral",
+      "reason": "Lines 2 and 3 present the spiritual pleasure/delight received from the Tzaddik as structurally parallel to the pleasure of the Nefesh Yeteirah on Shabbat. Line 2: 'מֵחֲמַת גֹּדֶל הַתַּעֲנוּג שֶׁל הַנֶּפֶשׁ יְתֵרָה' (because of the great pleasure of the Nefesh Yeteirah). Line 3: 'מֵחֲמַת גֹּדֶל הַתַּעֲנוּגִים וְהַשַּׁעֲשׁוּעִים שֶׁקִּבְּלוּ מֵרַבָּם רַבִּי שִׁמְעוֹן בַּר יוֹחַאי' (because of the great pleasures and delights they received from their master Rabbi Shimon bar Yochai). The deliberate structural parallelism ('מֵחֲמַת גֹּדֶל הַתַּעֲנוּג ... כֵּן הַחֶבְרַיָּא, מֵחֲמַת גֹּדֶל הַתַּעֲנוּגִים') shows that the delight received from the Tzaddik IS a bechina of the delight of the Nefesh Yeteirah — they share the same essential nature as elevated spiritual pleasure given through a sacred channel. Not currently in torahData.js as a reference-126 node.",
+      "source_quote": "מֵחֲמַת גֹּדֶל הַתַּעֲנוּגִים וְהַשַּׁעֲשׁוּעִים שֶׁקִּבְּלוּ מֵרַבָּם רַבִּי שִׁמְעוֹן בַּר יוֹחַאי",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "proposed_edge": {
+        "node1_id": "תענוג מהצדיק",
+        "node2_id": "נפש יתרה",
+        "type": "bechina",
+        "reference": 126,
+        "proof": "מֵחֲמַת גֹּדֶל הַתַּעֲנוּג שֶׁל הַנֶּפֶשׁ יְתֵרָה שֶׁבָּא בְּשַׁבָּת ... כֵּן הַחֶבְרַיָּא, מֵחֲמַת גֹּדֶל הַתַּעֲנוּגִים וְהַשַּׁעֲשׁוּעִים שֶׁקִּבְּלוּ מֵרַבָּם"
+      }
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_126_edges_in_dataset": 0,
+    "total_reference_126_bechina_edges": 0,
+    "total_reference_126_eitza_edges": 0,
+    "dataset_status": "Torah #126 is entirely absent from torahData.js. No edges of any type exist for reference 126.",
+    "bechina_language_scan": {
+      "line_1": "No bechina language. This line is a citation from the Zohar: wherever the Chavrayya praised Rabbi Shimon bar Yochai, it says 'Woe to the generation when he departs — go out and see [what woe will come].' It is a narrative citation, not a bechina identification.",
+      "line_2": "CONTAINS THE CENTRAL BECHINA: 'וְהוּא בְּחִינַת שָׁבַת וַיִּנָּפַשׁ' — the phenomenon of the Chavrayya's grief IS a bechina of the verse 'שָׁבַת וַיִּנָּפַשׁ.' The text then unpacks the bechina via the Talmudic drash (Beitzah 16): 'כֵּיוָן שֶׁשָּׁבַת וַי אָבְדָה נֶפֶשׁ' (when Shabbat ceases, the 'vay' — i.e., the soul — departs). The explanation identifies the Nefesh Yeteirah ('הַתַּעֲנוּג שֶׁל הַנֶּפֶשׁ יְתֵרָה') as the content of 'וַיִּנָּפַשׁ.' The bechina equation has two poles: (A) the Chavrayya's grief over the Tzaddik's impending departure, and (B) Shabbat-departure grief / loss of the Nefesh Yeteirah. All five proposed gap nodes derive from this single bechina identification.",
+      "line_3": "REINFORCES THE BECHINA through parallel structure: 'כֵּן הַחֶבְרַיָּא' (similarly, the Chavrayya) — explicitly invoking the 'כֵּן...כְּמוֹ' (thus...like) structural parallel that defines a bechina. The use of 'מֵחֲמַת גֹּדֶל הַתַּעֲנוּגִים' (because of the great pleasures) mirrors line 2's 'מֵחֲמַת גֹּדֶל הַתַּעֲנוּג שֶׁל הַנֶּפֶשׁ יְתֵרָה' exactly. No additional new bechina nodes beyond those identified from line 2.",
+      "line_4": "No bechina language. This line is a general structural observation about the Zohar: wherever the Chavrayya praised Rabbi Shimon for revealing a wondrous secret, he then went on to teach more Torah innovations. This is an empirical/textual observation about the Zohar's narrative pattern, not a bechina identification between concepts."
+    },
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "וַי (woe / the letters vav-yud)",
+        "reason": "The word 'וַי' appears in the Zohar phrase 'וַי לְדָרָא כַּד תִּסְתַּלֵּק' (woe to the generation when he departs) and is also embedded in the wordplay 'וַי-נָּפַשׁ = וַי אָבְדָה נֶפֶשׁ.' The 'וַי' is a pun/wordplay that the Talmud uses to derive the idea of soul-loss from the verse, but the Rebbe does not establish 'וַי' as a standalone bechina-concept. It is a letter-combination used as the peg for the Talmudic drash, not a named conceptual entity being equated to another concept via bechina language. Excluded.",
+        "excluded": true
+      },
+      {
+        "concept": "מוֹצָאֵי שַׁבָּת (Motzaei Shabbat / end of Shabbat)",
+        "reason": "Line 2 mentions Motzaei Shabbat as the time of the Nefesh Yeteirah's departure. However, 'מוֹצָאֵי שַׁבָּת' is a time reference, not a concept being equated to another concept via bechina language. It describes WHEN the yearning begins, not WHAT the yearning IS. It is contextual detail within the bechina equation, not itself a bechina node. Excluded.",
+        "excluded": true
+      },
+      {
+        "concept": "חִדּוּשֵׁי תּוֹרָה (Torah innovations)",
+        "reason": "Line 4 notes that after each praise, Rabbi Shimon taught more Torah innovations. 'חִדּוּשֵׁי תּוֹרָה' appears as the content of what Rabbi Shimon gave the Chavrayya, but no bechina equation is drawn. It is a descriptive phrase in a structural observation, not a bechina identification between two conceptual poles. Excluded.",
+        "excluded": true
+      },
+      {
+        "concept": "סוֹד נִפְלָא (wondrous secret)",
+        "reason": "Line 4 mentions that the praise arose because Rabbi Shimon 'revealed a wondrous secret' ('גִּלָּה לָהֶם סוֹד נִפְלָא'). No bechina equation is drawn between 'סוֹד נִפְלָא' and any other concept. It is a description of what occasioned the praise, not a bechina identification. Excluded.",
+        "excluded": true
+      }
+    ],
+    "structural_observations": [
+      "Torah #126 is one of the most compact teachings in the corpus — only 4 lines.",
+      "The teaching contains exactly one bechina statement, explicitly marked by the formula 'וְהוּא בְּחִינַת.' This bechina equates two instances of the same phenomenon: the grief/yearning arising from the anticipated loss of an elevated spiritual experience (Tzaddik's departure // Nefesh Yeteirah's departure).",
+      "The teaching's structure is an extended simile ('כְּמוֹ ... כֵּן') rather than a multi-layered kabbalistic argument. This is a teaching about spiritual phenomenology — the nature of longing generated by great spiritual pleasure.",
+      "Line 4 adds a meta-observation about the Zohar's narrative pattern (praise → more Torah teaching), but this is structural commentary on the Zoharic text, not a new bechina identification.",
+      "The dataset has zero entries for Torah #126. Every concept identified is new and must be added to torahData.js. Five nodes and two bechina edges are proposed.",
+      "The gap analysis yields 5 new nodes and 2 primary bechina edges (הִסְתַּלְּקוּת הַצַּדִּיק ↔ שָׁבַת וַיִּנָּפַשׁ and נֶפֶשׁ יְתֵרָה ↔ שָׁבַת וַיִּנָּפַשׁ), plus the structural bechina (תַּעֲנוּג מֵהַצַּדִּיק ↔ נֶפֶשׁ יְתֵרָה) implied by the deliberate parallel construction of lines 2-3."
+    ]
+  }
+}

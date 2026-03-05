@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "source": "Torah #131 (Likutay Moharan Vol. 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #131 has exactly ONE bechina edge in the current dataset (ID 1826: כבוד ↔ מלכות). This yields a single two-node connected component. The source text (torah_131.txt) is 3 lines and appears to be truncated mid-sentence — the file ends with a colon at the close of line 3, suggesting additional content is missing from the text file. Despite the truncation, the 3 lines that exist contain a second explicit bechina statement in line 3: 'צֶדֶק מַלְכוּתָא קַדִּישָׁא, שֶׁהוּא בְּחִינַת כָּבוֹד' — identifying צדק as מלכות קדישא and equating that cluster with כבוד. This expands the single dataset component from 2 nodes to 3 nodes. The dataset edge and the source-text-derived edge together form one cohesive package: the Holy Kingship / Honor cluster. No evil-mirror package is discernible from the extant text (though the teaching's concern about the danger of כבוד — that receiving honor improperly brings death — implies an implicit negative pole; this is expressed structurally as an eitza danger-chain, not as a named bechina-package of evil concepts). No merging of small components is required — there is only one component. This is a minimal Torah in the dataset."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 131,
+      "label": "כָּבוֹד וּמַלְכוּת וְצֶדֶק",
+      "label_en": "Honor, Kingship, and Justice",
+      "polarity": "good",
+      "reason": "Torah #131 opens with the injunction to fear and dread כבוד (honor/glory) because it is a great danger. The Rebbe's first conceptual move is to equate כבוד with מלכות: 'כָּבוֹד הוּא בְּחִינַת מַלְכוּת הַדָּן אֶת הַכֹּל' (Honor is a bechina of Kingship, which judges all things — citing Psalm 24:7 'מֶלֶךְ הַכָּבוֹד'). In line 3, the Rebbe continues: 'צֶדֶק מַלְכוּתָא קַדִּישָׁא, שֶׁהוּא בְּחִינַת כָּבוֹד, מֶלֶךְ הַכָּבוֹד כַּנַּ\"ל' — identifying צדק as מלכותא קדישא (holy kingship, the standard Zoharic equation of the sefirah Malkhut with the name צדק), and then identifying this entire cluster as a bechina of כבוד. The phrase 'שֶׁהוּא בְּחִינַת כָּבוֹד' is unambiguous bechina language. The מאזני צדק (scales of justice) then become the weighing instrument of this holy-kingship/honor — it is through כבוד/מלכות/צדק that every person is weighed and judged. These three concepts — כבוד (honor/glory), מלכות (kingship), and צדק (justice / holy kingship) — share the same essential nature: they are three faces of the divine attribute of sovereign judgment. They are all expressions of the same underlying reality: God's royal glory that scrutinizes and weighs all things. The polarity is 'good' because these all refer to the holy (קדישא) dimension: צדק מלכותא קדישא, כבוד as divine glory (מֶלֶךְ הַכָּבוֹד), and מלכות as the holy attribute. The danger of כבוד discussed in the teaching is not that כבוד itself is evil — it is that receiving honor improperly can trigger the judgment of this holy sovereignty against the person. כבוד is the dominant node because the Torah is introduced as a teaching about כבוד specifically, and all other equivalences are anchored to it.",
+      "dominant_node": "כבוד",
+      "nodes": [
+        "כבוד",
+        "מלכות",
+        "צדק"
+      ],
+      "node_degrees": {
+        "כבוד": 2,
+        "מלכות": 2,
+        "צדק": 1
+      },
+      "merge_notes": [
+        "This package begins with one dataset bechina edge (ID 1826: כבוד ↔ מלכות) forming a 2-node component.",
+        "The source text line 3 contains the additional bechina: 'צֶדֶק מַלְכוּתָא קַדִּישָׁא, שֶׁהוּא בְּחִינַת כָּבוֹד' — equating צדק (= מלכות קדישא) with כבוד. This uses explicit bechina language ('שֶׁהוּא בְּחִינַת') and expands the component by one node: צדק is connected to both מלכות (by the Zoharic equation צדק = מלכות קדישא) and to כבוד (by the Rebbe's explicit bechina statement).",
+        "מאזני צדק (scales of justice) appears in line 3 but is the instrument of judgment — it is named for צדק but is itself a mechanism (eitza context: through the מאזנים one is weighed). It is not equated with any of the three bechina nodes via bechina language, so it is excluded from the package nodes.",
+        "מכובדי (line 2, from the Talmudic drasha on Shemot 29:43 — 'do not read bichvodi but bimchubadai') appears as a homiletic pivot, not a conceptually equated node.",
+        "No small components require merging — Torah 131 has only one connected component in the dataset.",
+        "The source text appears truncated (ends mid-sentence at line 3). Additional bechina statements may exist in the missing text that are not yet captured. The gap analysis reflects only what is available in the extant 3 lines."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 1,
+    "total_bechina_edges_from_source_text": 2,
+    "bechina_edges_in_dataset": 1,
+    "bechina_edges_from_source_text_not_in_dataset": 1,
+    "total_nodes": 3,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 0,
+    "source_text_derived_additions": 1,
+    "dataset_edges": [
+      {
+        "id": 1826,
+        "node1_id": "כבוד",
+        "node2_id": "מלכות",
+        "proof": "כָּבוֹד הוּא בְּחִינַת מַלְכוּת הַדָּן אֶת הַכֹּל",
+        "type": "bechina",
+        "reference": 131
+      }
+    ],
+    "note": "Torah #131 is a very short, apparently truncated teaching (source text file contains only 3 lines ending mid-sentence). The dataset is minimally populated for this Torah: 1 bechina edge. The source text confirms the dataset edge and adds one additional bechina identification (צדק ↔ כבוד via the Zoharic מלכותא קדישא equation), yielding a 3-node single-package Torah. The teaching's structural argument appears to be: כבוד (honor/glory) is dangerous because it is the attribute of מלכות/צדק/divine judgment — whoever carries כבוד is weighed in the מאזני צדק to determine if they are worthy. This is a tight eitza chain built on one bechina cluster."
+  }
+}

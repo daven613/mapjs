@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "source": "Torah #161 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===161 AND type==='bechina'. Result: ZERO bechina edges found in the dataset — reference 161 does not appear anywhere in torahData.js. Torah #161 is a very brief teaching: 2 lines (approximately 80 Hebrew words), structured as a single paradoxical aphorism supported by one physical analogy and one scriptural proof-text. Packages are derived entirely from bechina-language analysis of the source text torah_161.txt. Two bechina-language declarations are identified: (1) 'הָאָדָם עֵץ הַשָּׂדֶה' — the person IS the tree of the field (Deut. 20:19, via כִּי-construction identifying essential natures); (2) 'הַמַּחֲלֹקֶת נִקְרָא מַיִם' — conflict IS CALLED water (Psalm 88:18, via explicit נִקְרָא bechina-marker). These two bechina declarations yield two raw components, each of which becomes a package. The components are connected by an EITZA relationship (water/conflict RAISES/lifts the tree/person) — they are not merged because their connection is causal, not a shared-nature equivalence. No evil-mirror package is constituted: the teaching is a compressed positive paradox presenting conflict as an elevating force, with no parallel evil-domain bechina cluster described in the text."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 161,
+      "label": "מַחֲלֹקֶת וּמַיִם",
+      "label_en": "Conflict and Water",
+      "polarity": "neutral",
+      "reason": "This package captures the core bechina of Torah #161's mechanism: conflict (מַחֲלֹקֶת) IS CALLED water (מַיִם). The bechina-marker is unambiguous: 'וְהַמַּחֲלֹקֶת נִקְרָא מַיִם' — 'and conflict is named/called water' (line 2). The verb נִקְרָא ('is called/named') is among the strongest bechina-expressions in Likutey Moharan, equivalent to the most explicit 'X הוּא בְּחִינַת Y' formulations. The Rebbe then cites Psalm 88:18 — 'סַבּוּנִי כַמַּיִם כָּל הַיּוֹם' ('they surrounded me like water all day') — as the scriptural grounding for this identification: the verse's imagery of enemies surrounding 'like water' confirms that machloket (opposition, dispute, hostile encirclement) and mayim (water) share the same essential nature.\n\nThe third node in this package is מַיִם שׁוֹטְפִין (flowing/rushing water, line 2). The Rebbe specifies that the type of water that lifts the tree is 'flowing water' (מַיִם שׁוֹטְפִין), and this is the same water that IS machloket. 'מַיִם שׁוֹטְפִין' is a bechina-specification of מַיִם within this Torah: it names the dynamic, force-bearing quality of the water/conflict — not merely still water, but rushing water with sufficient force to raise what lies beneath it. This is not a separate concept from מַיִם but a qualifying aspect of the same node within Torah #161's domain. All three nodes share the same essential nature: they are different angles on the same reality — the forceful, surrounding, lifting-capable quality of opposition/conflict.\n\nPolarity NEUTRAL: the Rebbe is not saying conflict is holy (it is not classified as kedushah here), nor is it purely evil (the teaching explicitly presents it as the MECHANISM of elevation). Conflict/water is treated as a structural force of nature — like actual physical water, which can lift or drown depending on context. The Rebbe's analogy to literal flowing water carrying a floating log reinforces this neutral-force character: water is not inherently good or evil; it is a powerful natural phenomenon that raises what it encounters. The teaching's paradox — that the very opposition surrounding you is what elevates you — only works if מַחֲלֹקֶת/מַיִם is a neutral force, not a holy one. מַחֲלֹקֶת is the dominant node: it is the subject of the Torah's opening statement ('הַמַּחֲלֹקֶת מַגְבִּיהַּ וּמֵרִים'), and the bechina-identification ('נִקְרָא מַיִם') defines it; מַיִם and מַיִם שׁוֹטְפִין are its bechina-expressions.",
+      "dominant_node": "מחלוקת",
+      "nodes": [
+        "מחלוקת",
+        "מים",
+        "מים שוטפין"
+      ],
+      "node_degrees": {
+        "מחלוקת": 2,
+        "מים": 2,
+        "מים שוטפין": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["מים שוטפין"],
+          "reason": "מַיִם שׁוֹטְפִין (flowing/rushing water) is not an independent concept separate from מַיִם in this Torah — it is the specific attribute of the water that performs the lifting action, and is directly identified as the same phenomenon as מַחֲלֹקֶת (the conflict that surrounds and lifts). The Rebbe's description: 'בָּאִין עָלָיו מַיִם שׁוֹטְפִין אֲזַי הַמַּיִם מְרִימִין וְנוֹשְׂאִין אֶת הָעֵץ' — the flowing waters are the same waters that are machloket. 'מַיִם שׁוֹטְפִין' specifies the force-bearing, dynamic quality of מַיִם in this context. It is a sub-aspect of the same water/conflict domain, not a distinct causal step or independent concept. Merge is by shared nature (both are aspects of the force-bearing water/opposition phenomenon), not by cause-effect."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 161,
+      "label": "אָדָם וְעֵץ הַשָּׂדֶה",
+      "label_en": "The Person and the Tree of the Field",
+      "polarity": "good",
+      "reason": "This package captures the second bechina of Torah #161: the human person (הָאָדָם) IS the tree of the field (עֵץ הַשָּׂדֶה, Deut. 20:19). The identification is made through the כִּי-construction: 'כִּי הָאָדָם עֵץ הַשָּׂדֶה' — 'for the person IS a tree of the field.' In the context of Likutey Moharan, a כִּי that introduces a scriptural proof-text identification is a bechina-marker: the Rebbe is not making a mere simile ('the person is LIKE a tree') but a structural equation ('the person shares the essential nature of the tree'). The specific quality being identified is the human being's inherent inability to raise itself by its own power — a tree lying on the ground cannot elevate itself without external force; similarly, the human being cannot achieve elevation on his own. The identification with עֵץ הַשָּׂדֶה also carries the deeper Kabbalistic resonance of this phrase (used in Deut. 20:19 regarding the prohibition against destroying fruit trees in siege warfare — the human being is equated with a fruit-bearing tree, something with inherent value and generative capacity that requires protection and elevation, not destruction).\n\nPolarity GOOD: the human person / tree of the field is the subject of elevation in this Torah — he is the recipient of the water/conflict's lifting force. The teaching's entire positive valence is directed at this node: conflict raises THE PERSON. הָאָדָם (the person) is the dominant node because the Torah's opening statement identifies him as the subject: 'הַמַּחֲלֹקֶת מַגְבִּיהַּ וּמֵרִים אֶת הָאָדָם' — the person is what gets raised. עֵץ הַשָּׂדֶה is the bechina-expression of the person's essential nature (the quality shared with the physical tree: inherent inability to self-elevate, combined with the capacity to be lifted by external waters).",
+      "dominant_node": "האדם",
+      "nodes": [
+        "האדם",
+        "עץ השדה"
+      ],
+      "node_degrees": {
+        "האדם": 2,
+        "עץ השדה": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 2,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 0,
+    "packages_from_dataset_components": 0,
+    "packages_from_gap_analysis": 2,
+    "evil_mirror_packages": 0,
+    "gap_nodes_identified_from_source_text": [
+      "מחלוקת",
+      "מים",
+      "מים שוטפין",
+      "האדם",
+      "עץ השדה"
+    ],
+    "eitza_connection_between_packages": "Package 1 (מַחֲלֹקֶת / מַיִם) →eitza→ Package 2 (הָאָדָם / עֵץ הַשָּׂדֶה). The water/conflict RAISES/LIFTS (מְרִימִין וְנוֹשְׂאִין / מַגְבִּיהַּ וּמֵרִים) the tree/person. This is an asymmetric, directional causal relationship: conflict acts upon the person to elevate him. The action of raising (הַגְבָּהָה/הֲרָמָה) is the eitza-connector — it is not itself a bechina node (it is the EFFECT/VERB of the causal chain, not a concept whose essential nature is equated with another). The two packages are therefore kept separate: their connection is causal, not a shared-nature equivalence.",
+    "note_on_zero_edges": "Torah #161 has no dataset edges because it has not yet been encoded. All package structure is derived entirely from source-text bechina-language analysis. The two packages correspond to the Torah's sustained analogy: Package 1 is the elevating mechanism (conflict/water), Package 2 is the subject of elevation (person/tree). They are separated because their connection is causal (Package 1 acts upon Package 2), not a shared nature (the two would need to be the same thing for a bechina merge).",
+    "note_on_evil_mirror": "Torah #161 contains no evil-domain bechina cluster. The Rebbe does not develop an evil counterpart to either the person/tree or the conflict/water domain. The paradoxical structure of the teaching — presenting opposition/conflict as the mechanism of elevation — does not require an evil mirror: the entire teaching operates in the positive register (conflict → elevation). The absence of an evil-mirror package is consistent with the Torah's extreme brevity (2 lines) and its function as a compressed spiritual aphorism rather than a structured four-stage argument.",
+    "good_evil_mirror": "None identifiable from bechina language in the source text.",
+    "note_on_psalm_citation": "Psalm 88:18 ('סַבּוּנִי כַמַּיִם כָּל הַיּוֹם, הִקִּיפוּ עָלַי יָחַד') is a proof-text citation that grounds the bechina 'מַחֲלֹקֶת נִקְרָא מַיִם.' The verse describes enemies surrounding the Psalmist 'like water all day' — the Rebbe uses this to confirm the structural identity of hostile opposition with water. The biblical verse is not itself a bechina node — it is the evidentiary basis for the bechina identification. The phrase 'כַמַּיִם' (like water) is the verse's language; the Rebbe translates this simile into an ontological equivalence for this Torah.",
+    "note_on_teaching_genre": "Torah #161 belongs to a distinct genre within Likutey Moharan: the compressed aphorism (like Torah #157). It is a single insight stated and then grounded through a physical analogy + scriptural citation. This genre produces minimal package structure — 2 packages, each with 2-3 nodes, connected by one eitza. The teaching's power lies in the paradox itself: that the hostile force (מַחֲלֹקֶת) IS (bechina) the elevating force (מַיִם). The Rebbe does not explain when this is true, or how to achieve it — he states the structural identity and lets the analogy do the work."
+  }
+}

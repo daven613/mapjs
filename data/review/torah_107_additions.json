@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "source": "Torah #107 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all reference===107 bechina edges from torahData.js (sections 1071–1079), and the full source text at data/torah_texts/lm1/torah_107.txt. FINDING: The source text of Torah #107 (5 lines) contains NO explicit bechina language — no 'הוא בחינת', 'נקרא', 'הינו' equating pairs of concepts. The entire teaching is structured as pure eitza (practical advice): 'when you go to war against your enemy — which is the yetzer hara — the Torah gives you advice: with the same pride (gadlut/gedulah) with which it tries to overpower you, use that to overpower it, by asking: How can I rule as a king when I have arrogance (gaavah) and God does not dwell with me?' There are zero bechina pairs to be extracted from the source text as additions. The dataset already captures the full bechina structure of this Torah across its rich commentary sections (1071–1079). VERDICT: NO_GAP_ADDITIONS."
+  },
+  "verdict": "NO_GAP_ADDITIONS",
+  "additions": [],
+  "explanation": "The source text of Torah #107 is exceptional among Rebbe Nachman's teachings in that it contains pure eitza reasoning from first word to last. The 5-line text proceeds as follows:\n\n1. Opening verse (Devarim 21): 'Ki tetzei lamilchama al oyvekha' — interpreted as going out to war against the yetzer hara.\n2. 'U'netano Hashem Elokekha beyadekha' — reinterpreted: the yetzer hara will hand/surrender Hashem Elokekha into your hands (i.e., through pride the yetzer causes a person to distance themselves from God).\n3. 'The Torah gives advice on this' — this is an explicit eitza framing.\n4. 'VeshavitaShivyo' — with the same thing it wants to overpower you (gadlut/pride), overpower it: say 'How can I rule (be a king/tzaddik) when I have gaavah (arrogance) and God does not dwell with me?'\n\nThis is a clean eitza loop: pride → use pride against pride → humility → divine presence. Not a single concept is labeled a 'bechina' of another in the 5-line text. The rich bechina content of this Torah exists only in the commentary sections (1071–1079) which are already captured in the dataset.",
+  "source_text_concepts_examined": [
+    {
+      "concept": "אויב (enemy)",
+      "verdict": "EITZA_ONLY",
+      "reason": "The enemy is identified as the yetzer hara via the interpretation marker 'shehu' (= 'which is'). While 'shehu' can be a bechina marker, in this text it functions as a 'hayta' (explication) that sets up the eitza reading of the verse. The identification אויב = יצר הרע is an interpretive reframing of the verse for practical advice, not a structural bechina establishing parallel nature."
+    },
+    {
+      "concept": "גאוה / גדלות (pride/arrogance)",
+      "verdict": "EITZA_ONLY",
+      "reason": "Gaavah/gadlut appears in the text as the practical tool of the eitza — you use the yetzer's own gadlut against it. This is cause-and-effect: the yetzer's gadlut → your response (recognizing that gadlut prevents divine presence) → the yetzer is defeated. No bechina pairing is established."
+    },
+    {
+      "concept": "צדיק מושל ביראת אלקים (the tzaddik who rules through fear of God)",
+      "verdict": "EITZA_CONTEXT",
+      "reason": "This verse citation from Samuel II 23 appears in the text to support the reinterpretation 'u'netano Hashem Elokekha beyadekha' as meaning the yetzer will cause God to be surrendered into your hands (i.e., placed at a distance). It is a proof-text for the eitza, not a bechina pairing."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_107_bechina_edges": 85,
+    "total_reference_107_eitza_edges": 30,
+    "source_text_lines": 5,
+    "source_text_bechina_pairs_found": 0,
+    "new_nodes_proposed": 0,
+    "new_bechina_edges_proposed": 0,
+    "alias_recommendations": [
+      {
+        "node1": "למעלה מהזמן",
+        "node2": "למעלה מן הזמן",
+        "reason": "Both appear in section 1079 with the same meaning ('above/transcending time'). Different node_id strings but identical concept. Recommend aliasing to canonical form 'למעלה מן הזמן'."
+      },
+      {
+        "node1": "בטול הזמנים",
+        "node2": "בטול הזמן",
+        "reason": "Both appear in section 1079 with the same meaning ('nullification/transcendence of time'). Recommend aliasing to canonical form 'בטול הזמנים'."
+      },
+      {
+        "node1": "חרות",
+        "node2": "חרות של פסח",
+        "reason": "In section 1074, both are identified as bechinot of Mordechai via the same proof text. They likely represent the same concept (freedom of Passover). Recommend aliasing."
+      },
+      {
+        "node1": "מנהיג אמתי",
+        "node2": "המנהיג האמתי",
+        "node3": "והמנהיג האמתי של כל ישראל",
+        "reason": "Three variants of the same concept (the true/authentic leader) appear as separate node_ids across section 1072. All are identified as bechinot of Moses. Recommend aliasing to canonical 'מנהיג אמתי'."
+      },
+      {
+        "node1": "דבורים",
+        "node2": "דיבורים",
+        "reason": "Both appear in section 1079 as bechinot of 'אבנים' (stones). Same concept (verbal utterances/words). Recommend aliasing to canonical 'דיבורים'."
+      }
+    ]
+  }
+}

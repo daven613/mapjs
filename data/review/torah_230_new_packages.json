@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "source": "Torah #230",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": 1,
+      "torah_ref": 230,
+      "label": "חָכְמָה וּפָנִים",
+      "label_en": "Wisdom and Face",
+      "polarity": "good",
+      "reason": "The entire Torah rests on one foundational bechina: wisdom (חכמה) and the face (פנים) share the same essential nature. The verse 'חָכְמַת אָדָם תָּאִיר פָּנָיו' (Kohelet 8:1) is interpreted not merely as a causal claim (wisdom causes the face to shine) but as an ontological equation: wisdom IS the face. This is confirmed by the Rebbe's explicit statement 'כִּי הַחָכְמָה הוּא בַּפָּנִים' — using the copula הוּא, the classic marker of bechina. The teacher's wisdom and the teacher's face are then two names for the same reality in the teaching context, making חָכְמַת הָרַב and פְּנֵי הָרַב members of the same bechina cluster.",
+      "dominant_node": "חכמה",
+      "nodes": ["חכמה", "פנים", "חכמת הרב", "פני הרב"],
+      "node_degrees": {
+        "חכמה": 3,
+        "פנים": 3,
+        "חכמת הרב": 2,
+        "פני הרב": 2
+      },
+      "bechina_edges_proposed": [
+        {
+          "node1_id": "חכמה",
+          "node2_id": "פנים",
+          "proof": "כִּי הַחָכְמָה הוּא בַּפָּנִים כַּנַּ\"ל",
+          "source_verse": "חָכְמַת אָדָם תָּאִיר פָּנָיו (קהלת ח׳:א׳)"
+        },
+        {
+          "node1_id": "חכמת הרב",
+          "node2_id": "פני הרב",
+          "proof": "כְּשֶׁהַתַּלְמִיד מְקַבֵּל חָכְמַת רַבּוֹ הוּא מְקַבֵּל פָּנָיו",
+          "source_verse": "וְהָיוּ עֵינֶיךָ רוֹאוֹת אֶת מוֹרֶיךָ (ישעיהו ל׳:כ׳)"
+        },
+        {
+          "node1_id": "חכמה",
+          "node2_id": "חכמת הרב",
+          "proof": "חָכְמַת הָרַב is the concrete instantiation of חָכְמָה in the teacher-student context; same essential nature at different levels of specificity",
+          "source_verse": "נִמְצָא כְּשֶׁהַתַּלְמִיד מְקַבֵּל חָכְמַת רַבּוֹ"
+        },
+        {
+          "node1_id": "פנים",
+          "node2_id": "פני הרב",
+          "proof": "פְּנֵי הָרַב is the concrete instantiation of פָּנִים in the teacher-student context; same essential nature at different levels of specificity",
+          "source_verse": "וּבִשְׁבִיל זֶה צָרִיךְ לְהִסְתַּכֵּל בִּפְנֵי רַבּוֹ"
+        }
+      ],
+      "good_evil_mirror": "This Torah has no evil counterpart package. It is a purely positive, structural teaching about how wisdom is transmitted through faces. There is no opposing evil domain discussed.",
+      "merge_notes": []
+    }
+  ],
+  "observations": "Torah #230 is a two-sentence teaching with zero pre-existing bechina edges in torahData.js. The teaching is compact and unified: it presents a single bechina (wisdom = face) and draws one practical consequence from it (eitza: because wisdom IS the face, you can read a teacher's identity from his student's face). The proposed package 'חָכְמָה וּפָנִים' captures all four nodes implied by the bechina language in the text. The dominant node is חכמה (wisdom), which is the most abstract and generative concept — it governs both sides of the bechina. This Torah has no evil mirror structure: there is no discussion of evil wisdom, false teachers, or corrupted faces. The teaching is purely about the positive transmission of sacred wisdom from teacher to student through the medium of the face. The polarity is uniformly 'good'. The eitza that flows from this package is the practical teaching: a wise person can identify a student's rabbi by looking at the student's face — but this recognition ability is itself not part of the bechina package; it is the result (eitza) of the wisdom-face equation."
+}

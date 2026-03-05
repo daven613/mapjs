@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "source": "Torah #167 (Likutay Moharan Volume 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "description": "שַׁבָּת אֵצֶל הַתַּלְמִיד-חָכָם הָאֱמֶת = תַּעֲנִית (Shabbat spent with the true tzaddik is a bechina of fasting)",
+      "source_text_ref": "The entire text of Torah #167 (single sentence): 'דַּע וְהַאֲמֵן, כִּי הַשַּׁבָּתִים שֶׁשּׁוֹבְתִים אֵצֶל הַתַּלְמִיד-חָכָם הָאֱמֶת, הֵם כְּמוֹ תַּעֲנִית'",
+      "bechina_formula": "הֵם כְּמוֹ — 'they are like' (identity of spiritual nature, not mere analogy)",
+      "proposed_edge": {
+        "node1_id": "שבת אצל תלמיד חכם אמת",
+        "node2_id": "תענית",
+        "type": "bechina",
+        "reference": 167
+      },
+      "package_assignment": 1,
+      "notes": "This is the sole bechina statement in Torah #167 and the only content of the teaching. The formula 'הֵם כְּמוֹ' declares essential identity: Shabbatot spent with the true tzaddik share the same essential spiritual nature as fasting (תַּעֲנִית). The relationship is symmetric and non-causal — Shabbat with the tzaddik does not PRODUCE a fast, nor does fasting produce a Shabbat-with-tzaddik experience. Rather, both are different expressions of the same spiritual reality: the soul's elevation through withdrawal from ordinary bodily existence in a sacred context. The node1_id 'שבת אצל תלמיד חכם אמת' is a compound node encoding the specific conditions of the bechina (it is not merely Shabbat in general, but specifically Shabbat spent in the tzaddik's presence that equals fasting). This is consistent with Rebbe Nachman's practice of encoding complex concepts as noun phrases when the specific context is inseparable from the identity. Alternative node split: if a reviewer prefers two separate nodes — 'שבת' and 'תלמיד חכם אמת' — with a bechina edge between them, and then a separate edge 'שבת + תלמיד חכם אמת → תענית', that would require re-encoding as an eitza rather than a bechina (since the tzaddik's presence would then function as a condition that PRODUCES the fast-equivalence rather than sharing its nature). The compound node encoding is therefore preferable to preserve the bechina classification. This edge is currently entirely absent from the dataset. Adding it would give Torah #167 its one and only bechina edge, enabling it to appear in graph traversals connecting the domains of tzaddik-presence and spiritual refinement/fasting."
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges_in_dataset_for_ref_167": 0,
+    "nodes_in_dataset_not_in_packages": "None — the dataset currently contains zero edges of any type for reference 167. Torah #167 has not yet been represented in the dataset.",
+    "concepts_in_source_text_not_in_dataset": [
+      "שבת אצל תלמיד חכם אמת as explicit bechina of תענית — the Torah's entire content, stated with 'הֵם כְּמוֹ' identity formula, is absent from the dataset",
+      "תלמיד חכם אמת as a named concept — the true Torah sage/tzaddik is central to the teaching as the condition that transforms Shabbat into a fast-equivalent. This concept may already exist in the dataset under another Torah reference (the tzaddik/true sage is a recurring figure across Rebbe Nachman's teachings) but does not appear in any edge specifically keyed to reference 167",
+      "שבת as a standalone concept — similarly present across many Torahs in the dataset but not yet connected to any bechina for Torah #167 specifically",
+      "תענית as a standalone concept — appears across multiple Torahs in the dataset but not yet linked to Shabbat-with-tzaddik for Torah #167"
+    ],
+    "structural_observations": [
+      "Torah #167 is a pure bechina declaration with no elaboration, no scriptural proof-texts, no Talmudic support, no narrative structure, and no causal chain. It is a statement of faith ('דַּע וְהַאֲמֵן') — the Rebbe asserts the equivalence and calls on the listener to believe it rather than proving it from sources. This is unusual even for short Torahs.",
+      "The opening 'דַּע וְהַאֲמֵן' (know and believe) signals that the teaching is non-obvious and counterintuitive. Shabbat is obligatorily joyful (one must eat and drink); a fast is obligatorily self-afflicting. That these achieve the same spiritual result — tikun, elevation, spiritual refinement — is a paradox requiring faith. The Rebbe does not resolve the paradox; he asserts it as a known fact that must be believed.",
+      "This Torah connects thematically to other Rebbe Nachman teachings about the spiritual power of the tzaddik's presence (see e.g. Torah #163 on the tzaddik as healer of souls, Torah #166 on the tzaddik's people granting him dominion). The bechina in Torah #167 is that spending Shabbat with the tzaddik provides the same spiritual benefit as fasting — suggesting that the tzaddik's presence is itself a form of purification/tikun equivalent to the ascetic discipline of fasting.",
+      "The closest conceptual parallel in the dataset is likely the cluster of teachings about the tzaddik's effect on his followers (talmid chacham, tzaddik ha-emet), which would provide cross-Torah bridge nodes if this bechina edge is added. The nodes תענית (fasting) and שבת (Shabbat) are almost certainly already present in the dataset under other Torah references."
+    ],
+    "note_on_node_naming": "The compound node 'שבת אצל תלמיד חכם אמת' reflects the full subject of the bechina as stated in the text. The qualifier 'אֵצֶל הַתַּלְמִיד-חָכָם הָאֱמֶת' (with the true Torah sage) is not separable from the bechina identity — it is precisely this form of Shabbat, as distinct from Shabbat in general, that IS a fast. A canonical node for generic שבת already exists in the dataset under other Torah references; this Torah introduces the specific qualified concept of tzaddik-Shabbat as a distinct bechina entity."
+  }
+}

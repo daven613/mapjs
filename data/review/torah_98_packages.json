@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "source": "Torah #98 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah #98 has ZERO edges in torahData.js (reference===98 is absent from the entire dataset). The source text (torah_98.txt) is 5 lines — an extremely compressed teaching. All packages are derived entirely from the source text. Because no bechina edges exist in the dataset, there are no connected components to compute algorithmically. Packages are built directly from the bechina-language in the text. Step 1 finds zero dataset edges. Steps 2-4 apply to source-text-derived concepts only. All nodes listed in this file are gap candidates (Step 5) that should be added to torahData.js.",
+    "dataset_status": "EMPTY — reference 98 not present in torahData.js"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 98,
+      "label": "עֵינֵי הַצַּדִּיק וּרְאִיַּת הַפְּגָם",
+      "label_en": "The Tzaddik's Eyes and Seeing the Damage of Sin",
+      "polarity": "good",
+      "reason": "The central cluster of Torah #98 orbits the concept of visionary perception belonging to the Tzaddik. The Rebbe establishes that the Tzaddik possesses 'עֵינֵי ה'' (the eyes of God), citing the verse 'עֵינֵי ה' אֶל צַדִּיקִים'. These 'eyes of God' are further defined by the verse 'וְעֵינֵי ה' הֵמָּה מְשׁוֹטְטוֹת בְּכָל הָאָרֶץ' — they roam the entire earth and therefore see the full extent of any sin's damage. The Tzaddik, possessing these eyes, can see 'עַד הֵיכָן הַפְּגָם מַגִּיעַ' (how far the damage reaches). The Gemara phrase 'נָתַן בּוֹ עֵינָיו' is re-read as: the sinner comes to see through the eyes of the Tzaddik. 'גַּל' is decoded as 'הִתְגַּלּוּת' (revelation) — the revelation of what was hidden. These concepts all share the same essential nature: the domain of divine, penetrating, Torah-vision that reveals hidden spiritual reality. This is the positive pole of the teaching — the power of the Tzaddik's gaze to reveal truth.",
+      "dominant_node": "עיני ה' (עיני הצדיק)",
+      "nodes": [
+        "עיני ה'",
+        "הצדיק",
+        "עיני הצדיק",
+        "ראיה עד היכן הפגם מגיע",
+        "נתן עיניו בו (מבט הצדיק)",
+        "גל (התגלות)"
+      ],
+      "node_degrees": {
+        "עיני ה'": 3,
+        "הצדיק": 3,
+        "עיני הצדיק": 2,
+        "ראיה עד היכן הפגם מגיע": 2,
+        "נתן עיניו בו (מבט הצדיק)": 1,
+        "גל (התגלות)": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 98,
+      "label": "הַפְּגָם הַנִּסְתָּר וְהָעֹנֶשׁ שֶׁל הָרְאִיָּה",
+      "label_en": "The Hidden Damage of Sin and the Punishment of Seeing",
+      "polarity": "evil",
+      "reason": "The second conceptual cluster in Torah #98 contains the evil-side of the teaching: the sinner (אָדָם who transgresses), his inability to see the full extent of his own spiritual damage (הַפְּגָם), the concept of concealment (נִסְתָּר — what was hidden from him), and the phrase 'עֲצָמוֹת' decoded via 'עוֹצֵם עֵינָיו מֵרְאוֹת בְּרָע' — the closing of eyes from evil, which paradoxically becomes the greatest punishment when those eyes are forced open. The Rebbe says there is no greater punishment than when a person sees what he has damaged ('אֵין עֹנֶשׁ גָּדוֹל מִזֶּה, כְּשֶׁאָדָם רוֹאֶה מַה שֶּׁפָּגַם'). The 'גַּל שֶׁל עֲצָמוֹת' in the negative reading is the revelation of the sinner's own spiritual ruin to himself. These nodes share the nature of concealed spiritual damage, transgression, and the consequences of sin. This is the evil mirror to the Tzaddik's divine vision in Package 1: where the Tzaddik's eyes reveal, the sinner's eyes are sealed — until the moment of forced revelation which is the punishment itself.",
+      "dominant_node": "הפגם (עד היכן הפגם מגיע)",
+      "nodes": [
+        "הפגם",
+        "עובר עברה",
+        "נסתר ממנו (לא ראה)",
+        "עצמות (עוצם עיניו מראות ברע)",
+        "גל של עצמות (עונש הראיה)"
+      ],
+      "node_degrees": {
+        "הפגם": 3,
+        "עובר עברה": 2,
+        "נסתר ממנו (לא ראה)": 2,
+        "עצמות (עוצם עיניו מראות ברע)": 2,
+        "גל של עצמות (עונש הראיה)": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_bechina_edges_from_source_text": 6,
+    "total_nodes": 11,
+    "total_packages": 2,
+    "raw_connected_components": 0,
+    "components_merged_into_packages": 0,
+    "note": "No dataset edges exist for Torah #98. All structure derived from source text analysis. 2 packages proposed: 1 good (Tzaddik's divine vision), 1 evil (the sinner's hidden damage and punishment). The good/evil mirror is sharp: both packages revolve around the act of seeing — the Tzaddik sees what the sinner cannot; when the sinner is forced to see through the Tzaddik's eyes, that seeing itself becomes the punishment."
+  }
+}

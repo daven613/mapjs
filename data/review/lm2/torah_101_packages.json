@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "source": "Torah #101 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 101,
+      "volume": "lm2",
+      "label": "תְּפִלָּה וּפָרֵשׁ שִׂיחָה",
+      "label_en": "Prayer and Expressing One's Heart",
+      "polarity": "good",
+      "reason": "These concepts all share the same essential nature: they are modes of a person speaking directly and personally to God, expressing the fullness of one's heart. The Torah explicitly equates Tikkun Chatzot with hitbodedut ('like hitbodedut'), and groups Tehillim, supplications, requests, slichot, and hitbodedut as parallel expressions of the same root practice — פָּרֵשׁ שִׂיחָתוֹ בֵּינוֹ לְבֵין קוֹנוֹ (expressing one's speech between oneself and one's Maker). The Torah states these are the one foundation and root of all advice for drawing close to God, signaling they share the same essential dimension.",
+      "dominant_node": "תפלה",
+      "nodes": [
+        "תקון חצות",
+        "התבודדות",
+        "אמירת תהלים",
+        "תחנות ובקשות",
+        "תפלה",
+        "פרש שיחתו",
+        "חיזוק בתפלה"
+      ],
+      "node_degrees": {
+        "תקון חצות": 2,
+        "התבודדות": 3,
+        "אמירת תהלים": 3,
+        "תחנות ובקשות": 3,
+        "תפלה": 4,
+        "פרש שיחתו": 2,
+        "חיזוק בתפלה": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 101,
+      "volume": "lm2",
+      "label": "יֵצֶר הָרָע וּמִלְחַמְתּוֹ",
+      "label_en": "The Evil Inclination and Its Warfare",
+      "polarity": "evil",
+      "reason": "These concepts share the same essential nature: they are all expressions of the opposing force that seeks to prevent a person from drawing close to God. The Torah identifies the yetzer hara and its armies as 'the principal enemies and haters of a person' — one domain of opposition. Chalishut (weakness) and bilbulim (confusions) are explicitly grouped together as the yetzer's weapons — the countless forms of inner resistance to prayer. They are two faces of the same obstructing force. The Torah also equates this with choshekh (darkness) — the state of being cut off from God.",
+      "dominant_node": "יצר הרע",
+      "nodes": [
+        "יצר הרע",
+        "מלחמות היצר",
+        "חילות היצר",
+        "אויבים ושונאים",
+        "חלישות",
+        "בלבולים",
+        "חשך"
+      ],
+      "node_degrees": {
+        "יצר הרע": 3,
+        "מלחמות היצר": 2,
+        "חילות היצר": 2,
+        "אויבים ושונאים": 2,
+        "חלישות": 2,
+        "בלבולים": 2,
+        "חשך": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["חלישות", "בלבולים"],
+          "reason": "The Torah explicitly lists them together ('כַּמָּה וְכַמָּה מִינֵי חֲלִישׁוּת וּבִלְבּוּלִים') as two expressions of the same inner obstacle to prayer — they are not cause-and-effect but two manifestations of the same blocking force of the yetzer hara."
+        },
+        {
+          "merged_nodes": ["אויבים ושונאים", "יצר הרע"],
+          "reason": "The Torah explicitly states that the yetzer hara and its armies 'הֵם עִקָּר הָאוֹיְבִים וְהַשּׂוֹנְאִים שֶׁל הָאָדָם' — they ARE the enemies and haters. This is a bechina equivalence: the yetzer IS the enemy."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 14,
+    "total_packages": 2,
+    "raw_connected_components": 0
+  },
+  "note": "No bechina edges exist in torahData.js for reference 1101 (LM2 Torah 101). The dataset has no entries at all for this Torah. Packages are derived entirely from source text analysis. The Torah uses 'bechina' colloquially (as 'mode/aspect') rather than as formal equivalence declarations, but the thematic groupings are clear from the structure of the teaching."
+}

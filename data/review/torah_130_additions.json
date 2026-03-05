@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "source": "Torah #130 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_130_packages.json (zero bechina edges in current dataset), both reference===130 edges from torahData.js, and the full source text torah_130.txt (7 lines). Scanned for all bechina-language: בְּחִינַת, נִקְרֵאת, נִקְרָא, עִקַּר, זֶה בְּחִינַת, שֶׁיֵּשׁ לוֹ (explanatory glosses equating a word with its concept). Three bechina statements were found in the source text that are entirely absent from the dataset."
+  },
+  "additions": [
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "concept_he": "כּוּשִׁית = יֹפִי",
+      "concept_en": "Kushit = Beauty",
+      "missing_edge": {
+        "node1": "כושית",
+        "node2": "יופי",
+        "relation": "bechina"
+      },
+      "source_text_quote": "כּוּשִׁית עַל־שֵׁם יָפְיָהּ נִקְרֵאת",
+      "source_line": 3,
+      "target_package": "NEW_PACKAGES_PROPOSED (would anchor Package 1 — see torah_130_new_packages.json)",
+      "note": "The Rebbe explicitly invokes the rabbinic equation (from Moed Katan 16b / Tanchuma) that the 'Kushite woman' is called 'Kushit' because of her exceptional beauty (כּוּשִׁית נִקְרֵאת עַל שֵׁם יָפְיָהּ — just as all Kushite people are recognized/distinctive, she was recognized for her beauty). The word 'נִקְרֵאת' is direct bechina-language (X is called Y = X is a bechina of Y by name-sharing). In the Torah's argument, this equation is structurally important: the reason Aaron and Miriam spoke about Moshe was the perceived attractiveness of his wife — they assumed he took her for יפי. The כושית = יפי bechina is the hook on which the entire episode turns. This is a genuine conceptual equivalence, not merely a translation note. The concept pair (כושית / יפי) would form the seed of a Package 1 in the proposed new-packages analysis.",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "concept_he": "גַּדְלוּת = גַּאֲוָה",
+      "concept_en": "Gadlut = Arrogance/Pride",
+      "missing_edge": {
+        "node1": "גדלות",
+        "node2": "גאוה",
+        "relation": "bechina"
+      },
+      "source_text_quote": "כָּל הַגָּדוֹל מֵחֲבֵרוֹ – שֶׁיֵּשׁ לוֹ גַּדְלוּת",
+      "source_line": 6,
+      "target_package": "NEW_PACKAGES_PROPOSED (would join Package 2 — see torah_130_new_packages.json)",
+      "note": "The Rebbe re-reads the Talmudic phrase 'kol ha-gadol me-chavero' as a definition: 'gadol' = one who has gadlut, where gadlut in this context means gaavah (arrogance/pride). This is the standard Breslov hermeneutic of decoding a Talmudic word by its root meaning — 'gadol me-chavero' = 'has gadlut' = 'has gaavah'. The language 'שֶׁיֵּשׁ לוֹ גַּדְלוּת' is definitional/bechina: the term is being equated with the concept it names. In the Torah's structural logic, גדלות and גאוה are the same essential quality — the one who is 'great' in this negative sense is precisely the one who is arrogant. This bechina establishes גדלות as a concept in Torah #130's conceptual vocabulary.",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "type": "missing_bechina_edge",
+      "priority": "high",
+      "concept_he": "עִקַּר הַיֵּצֶר הָרָע = תַּאֲוַת נִאוּף",
+      "concept_en": "The essence of the yetzer hara = sexual lust",
+      "missing_edge": {
+        "node1": "יצר הרע",
+        "node2": "תאוות ניאוף",
+        "relation": "bechina"
+      },
+      "source_text_quote": "כִּי זֶה עִקַּר הַיֵּצֶר הָרָע, כַּמּוּבָא בַּזֹּהַר (ויקרא דף טו:): עִקָּרָא דְּיִצְרָא בִּישָׁא לְגַלָּאָה עֲרָיִין",
+      "source_line": 7,
+      "target_package": "NEW_PACKAGES_PROPOSED (would join Package 2 — evil polarity — see torah_130_new_packages.json)",
+      "note": "The Rebbe explicitly cites the Zohar (Vayikra 15b) to establish that the ESSENCE (עִקַּר) of the yetzer hara IS sexual immorality (taavas niuf / galui arayot). This is bechina language via 'זֶה עִקַּר' — equating the core nature of the yetzer hara with sexual lust. The statement is not 'the yetzer hara causes niuf' (which would be eitza) but 'the essential nature of the yetzer hara IS to expose nakedness' — conceptual equivalence. This bechina is the theological keystone of the teaching: it explains WHY gadlut → yetzer domination through niuf specifically. The Zohar citation confirms this is not incidental but the fundamental definition. In graph terms: יצר הרע ↔ תאוות ניאוף (bechina, reference=130).",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_eitza_edges_in_dataset": 2,
+    "total_edges_in_dataset_for_ref_130": 2,
+    "nodes_accounted_for_in_packages": {},
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "כושית (bechina: יופי — 'כושית על שם יפיה נקראת')",
+      "גדלות (bechina: גאוה — 'כל הגדול מחברו שיש לו גדלות')",
+      "תאוות ניאוף (bechina: עיקר היצר הרע — 'זה עיקר היצר הרע... עיקרא דיצרא בישא לגלאה עריין')"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "פרישות (abstinence/separateness)",
+        "reason": "Line 4: 'הָיָה אֶפְשָׁר לוֹ לִהְיוֹת פָּרוּשׁ לְגַמְרֵי' — this describes a state/outcome that Moshe achieved through ענוה. It is the destination of the eitza chain (ענוה → שמירת הברית = ability to be parush). No bechina language is used to equate it with another concept. פרישות is a result, not a bechina-equivalent node."
+      },
+      {
+        "concept": "יחודא תתאא (lower union)",
+        "reason": "Line 4: 'לֹא הָיָה לוֹ יִחוּדָא תַּתָּאָה כְּלָל' — this is a Kabbalistic technical term used to describe the absence of something. No bechina equation is stated between יחודא תתאא and another concept. It is descriptive of Moshe's state, not a bechina definition."
+      },
+      {
+        "concept": "תקפו של יוסף / עַנְוְתָנוּתוֹ שֶׁל בֹּעַז",
+        "reason": "Line 5: The Talmudic saying 'Yosef's strength was Boaz's humility' functions as an illustration of the eitza principle (ענוה → shmirat ha-brit). The 'strength' and 'humility' are not equated with each other via bechina — rather, the Talmud is saying that each person's test was proportional to the previous person's virtue. No bechina language (בְּחִינַת / נִקְרָא) appears. These are illustrative examples within an eitza argument."
+      },
+      {
+        "concept": "אֵשֶׁת אִישׁ (another man's wife)",
+        "reason": "Line 2: 'וְאֵשֶׁת אִישׁ נֶפֶשׁ יְקָרָה תָּצוּד' is a biblical verse quoted to support the claim that arrogance leads to adultery. No bechina equation is being made — this is proof-text for an eitza argument."
+      }
+    ],
+    "structural_observation": "Torah #130 is a deliberately compact, purely eitza-structured teaching. Its argument is a single causal chain: gadlut/gaavah → yetzer dominates through niuf // ←→ // ענוה → shmirat ha-brit. The teaching has no 'what is X?' (bechina) moves at its recorded level — it is entirely 'through X comes Y' (eitza). The three bechina relationships that DO exist in the text are embedded as definitional glosses rather than as the teaching's main structural moves: (1) the explanation of why the Talmud says 'gadol' = has gadlut/gaavah; (2) the Zohar's definition of the yetzer hara's essence; (3) the explanation of the name 'Kushit'. All three are secondary definitional moves that ground the primary eitza argument. Their absence from the dataset is a genuine gap — but their presence would not change the teaching's basic eitza character."
+  }
+}

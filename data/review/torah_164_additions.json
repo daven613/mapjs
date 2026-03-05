@@ -1,0 +1,256 @@
+{
+  "meta": {
+    "source": "Torah #164",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_164_packages.json, and the full source text torah_164.txt. Because reference===164 has zero pre-existing edges in torahData.js, there are no 'unassigned_dataset_nodes' to reconcile. All nodes in the four proposed packages are new. The additions section below identifies every bechina-bearing concept from the source text with its proposed package assignment, source quote, and the explicit language that justifies the bechina classification. The teaching uses mashal-nimshal structural equivalences ('כֵּן יִזְדַּמֵּן', 'הַיְנוּ', 'כִּי הַתּוֹרָה הִיא רְפוּאָה') rather than the word 'בְּחִינַת', but these are functionally equivalent bechina declarations — two things shown to share the same essential nature."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "צַדִּיק וְרוֹפֵא הַנְּפָשׁוֹת",
+      "node_id": "צדיק הדור",
+      "node_text": "צַדִּיק הַדּוֹר",
+      "polarity": "good",
+      "reason": "The Tzaddik of the generation is the nimshal-counterpart of the great doctor (הַדָּאקְטֶיר הַגָּדוֹל). He IS the healer of sick souls by essential nature, not merely by function. The teaching's entire argument rests on this equivalence.",
+      "source_quote": "שֶׁיָּבוֹא אִישׁ לְהַתַּלְמִיד-חָכָם וְצַדִּיק הַדּוֹר, שֶׁהוּא רוֹפֵא חֳלִי הַנְּפָשׁוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "צַדִּיק וְרוֹפֵא הַנְּפָשׁוֹת",
+      "node_id": "תלמיד-חכם",
+      "node_text": "תַּלְמִיד-חָכָם",
+      "polarity": "good",
+      "reason": "The talmid-chacham is presented in apposition to the Tzaddik hador — 'תַּלְמִיד-חָכָם וְצַדִּיק הַדּוֹר' — indicating they share the same essential role in this context. Both are the scholarly-holy figure who knows the real remedies.",
+      "source_quote": "שֶׁיָּבוֹא אִישׁ לְהַתַּלְמִיד-חָכָם וְצַדִּיק הַדּוֹר",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "צַדִּיק וְרוֹפֵא הַנְּפָשׁוֹת",
+      "node_id": "רופא חולי הנפשות",
+      "node_text": "רוֹפֵא חֳלִי הַנְּפָשׁוֹת",
+      "polarity": "good",
+      "reason": "This is the explicit bechina-predicate applied to the Tzaddik: 'שֶׁהוּא רוֹפֵא חֳלִי הַנְּפָשׁוֹת'. The copula 'הוּא' (IS) establishes this as a shared-nature bechina, not a metaphor.",
+      "source_quote": "שֶׁהוּא רוֹפֵא חֳלִי הַנְּפָשׁוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "צַדִּיק וְרוֹפֵא הַנְּפָשׁוֹת",
+      "node_id": "הדאקטיר הגדול",
+      "node_text": "הַדָּאקְטֶיר הַגָּדוֹל",
+      "polarity": "good",
+      "reason": "The great doctor is the mashal-level figure for the Tzaddik. The 'כֵּן יִזְדַּמֵּן' structure directly equates the two: as the great doctor knows precious medicines the lesser doctor does not, so too the Tzaddik knows the true Torah-medicines the visitor does not. This mashal-nimshal equivalence is the defining bechina-move of the teaching.",
+      "source_quote": "לְמָשָׁל: רוֹפֵא שֶׁנֶּחֱלָה... אֲבָל הַדָּאקְטֶיר יוֹדֵעַ רְפוּאוֹת יְקָרִים... כֵּן יִזְדַּמֵּן",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תּוֹרָה וּרְפוּאָה",
+      "node_id": "תורה",
+      "node_text": "תּוֹרָה",
+      "polarity": "good",
+      "reason": "Torah is the dominant node of this package. The bechina is explicit: 'כִּי הַתּוֹרָה הִיא רְפוּאָה' — Torah IS healing. This is the Torah's central claim.",
+      "source_quote": "כִּי הַתּוֹרָה הִיא רְפוּאָה, כְּמוֹ שֶׁכָּתוּב: רִפְאוּת תְּהִי לְשָׁרֶךָ",
+      "in_dataset_already": true,
+      "if_in_dataset_edge_id": "node exists in conceptIndex as canonical 'תורה' but no edge with reference=164 exists"
+    },
+    {
+      "package_id": 2,
+      "package_label": "תּוֹרָה וּרְפוּאָה",
+      "node_id": "רפואה",
+      "node_text": "רְפוּאָה",
+      "polarity": "good",
+      "reason": "Healing IS Torah (bechina is bidirectional). The teaching explicitly uses 'הִיא' to equate the two. Healing and Torah share the same essential reality in this teaching.",
+      "source_quote": "כִּי הַתּוֹרָה הִיא רְפוּאָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תּוֹרָה וּרְפוּאָה",
+      "node_id": "פנימיות התורה",
+      "node_text": "פְּנִימִיּוּת הַתּוֹרָה",
+      "polarity": "good",
+      "reason": "The inner Torah is the bechina of the powerful drug (סַם) in the mashal — the substance that heals if properly administered but kills if given raw. The mashal-nimshal structure equates pnimiyut haTorah with the dangerous-but-precious medicine throughout lines 4-6.",
+      "source_quote": "אִי אֶפְשָׁר לְגַלּוֹת לָהֶם פְּנִימִיּוּת הַתּוֹרָה הַצָּרִיךְ לִרְפוּאָתוֹ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תּוֹרָה וּרְפוּאָה",
+      "node_id": "סם",
+      "node_text": "סַם",
+      "polarity": "good",
+      "reason": "The drug/medicine of the mashal corresponds to the inner Torah by direct mashal-nimshal equivalence. The Rebbe establishes that Torah בְּעַצְמָהּ (in itself) has the quality of a powerful drug — this is a bechina of Torah's essential potency.",
+      "source_quote": "לִתֵּן לְהַחוֹלֶה אֵיזֶה סַם, אֲשֶׁר אִם יִתְּנוּ לוֹ הַסַּם בְּעַצְמוֹ כְּמוֹ שֶׁהוּא, יָמוּת הַחוֹלֶה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תּוֹרָה וּרְפוּאָה",
+      "node_id": "סם חיים",
+      "node_text": "סַם חַיִּים",
+      "polarity": "good",
+      "reason": "Torah-as-elixir-of-life is established by direct Talmudic citation (Yoma 72b): 'זָכָה – נַעֲשֶׂה לוֹ סַם חַיִּים'. For the one who merits, Torah IS the elixir of life — this is a bechina of what Torah essentially is at its positive pole.",
+      "source_quote": "זָכָה – נַעֲשֶׂה לוֹ סַם חַיִּים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "תּוֹרָה וּרְפוּאָה",
+      "node_id": "רפואה גנוזה",
+      "node_text": "רְפוּאָה הַגְּנוּזָה",
+      "polarity": "good",
+      "reason": "Line 7 names the hidden healing concealed within outer stories as 'הָרְפוּאָה הַגְּנוּזָה שָׁם' — it is the inner Torah/pnimiyut that is hidden inside the garment of stories. This is a bechina of פְּנִימִיּוּת הַתּוֹרָה from a different angle: the concealed dimension of the healing-Torah.",
+      "source_quote": "לְמַעַן יוּכַל לְקַבֵּל הָרְפוּאָה הַגְּנוּזָה שָׁם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "לְבוּשׁ וְסִפּוּרֵי מַעֲשִׂיּוֹת",
+      "node_id": "סיפורי מעשיות",
+      "node_text": "סִפּוּרֵי מַעֲשִׂיּוֹת",
+      "polarity": "neutral",
+      "reason": "The outer stories (sipurei ma'asiot) are the deepest level of Torah's garment — the Torah itself is clothed in them. They share the essential nature of the garment/wrapping that makes inner Torah receivable. Dominant node of Package 3.",
+      "source_quote": "מַלְבִּישִׁין הַתּוֹרָה בְּסִפּוּרֵי דְּבָרִים חִיצוֹנִיִּים... כִּי גַּם הַתּוֹרָה בְּעַצְמָהּ מְלֻבֶּשֶׁת עַתָּה בְּסִפּוּרֵי מַעֲשִׂיּוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "לְבוּשׁ וְסִפּוּרֵי מַעֲשִׂיּוֹת",
+      "node_id": "סיפורי דברים",
+      "node_text": "סִפּוּרֵי דְּבָרִים",
+      "polarity": "neutral",
+      "reason": "The teaching is introduced 'לְעִנְיַן סִפּוּרֵי דְּבָרִים שֶׁל הַצַּדִּיק הָאֱמֶת' — making sipurei dvarim (the Tzaddik's stories/discourses) the subject. These are bechina of sipurei ma'asiot — they share the same essential nature as the outer-story-garment.",
+      "source_quote": "לְעִנְיַן סִפּוּרֵי דְּבָרִים שֶׁל הַצַּדִּיק הָאֱמֶת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "לְבוּשׁ וְסִפּוּרֵי מַעֲשִׂיּוֹת",
+      "node_id": "לבוש",
+      "node_text": "לְבוּשׁ",
+      "polarity": "neutral",
+      "reason": "The garment (luvush) is the core metaphor for what all story-wrappers ARE. Line 6: 'הַהֶכְרֵחַ לְהַלְבִּישׁ לוֹ פְּנִימִיּוּת הַתּוֹרָה'. Line 7: 'מְלֻבֶּשֶׁת עַתָּה בְּסִפּוּרֵי מַעֲשִׂיּוֹת'. The concept of לְבוּשׁ IS sipurei ma'asiot, IS the mixing of the drug, IS the external form of Torah — all three share the nature of the garment.",
+      "source_quote": "הַהֶכְרֵחַ לְהַלְבִּישׁ לוֹ פְּנִימִיּוּת הַתּוֹרָה בְּדִבְרֵי תּוֹרָה אֲחֵרִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "לְבוּשׁ וְסִפּוּרֵי מַעֲשִׂיּוֹת",
+      "node_id": "עירוב",
+      "node_text": "עִירוּב",
+      "polarity": "neutral",
+      "reason": "The mixing of the drug (לְעָרֵב הַסַּם בִּדְבָרִים אֲחֵרִים) is the mashal-counterpart of the luvush/garment operation. By mashal-nimshal equivalence, mixing/eruv IS the act of clothing inner Torah in outer form — both share the essential nature of the wrapping medium.",
+      "source_quote": "הַהֶכְרֵחַ לְעָרֵב הַסַּם בִּדְבָרִים אֲחֵרִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 3,
+      "package_label": "לְבוּשׁ וְסִפּוּרֵי מַעֲשִׂיּוֹת",
+      "node_id": "דברי תורה אחרים",
+      "node_text": "דִּבְרֵי תּוֹרָה אֲחֵרִים",
+      "polarity": "neutral",
+      "reason": "Other Torah teachings are the intermediate-level garment for inner Torah — the first layer of clothing before the need for outer stories. Line 6 and 7 both describe this level. They share the same essential nature as the luvush/garment, just at a slightly more inner level.",
+      "source_quote": "הַהֶכְרֵחַ לְהַלְבִּישׁ לוֹ פְּנִימִיּוּת הַתּוֹרָה בְּדִבְרֵי תּוֹרָה אֲחֵרִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "הַחוֹלֶה וּמִי שֶׁלֹּא זָכָה",
+      "node_id": "החולה",
+      "node_text": "הַחוֹלֶה",
+      "polarity": "evil",
+      "reason": "The sick person is the dominant mashal-figure for the spiritual state of one who cannot receive inner Torah. By mashal-nimshal structure, the sick patient IS the person who has not merited. Dominant node of Package 4.",
+      "source_quote": "יָמוּת הַחוֹלֶה בְּלִי סָפֵק... לְמַעַן יוּכַל לְקַבֵּל הָרְפוּאָה הַגְּנוּזָה שָׁם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "הַחוֹלֶה וּמִי שֶׁלֹּא זָכָה",
+      "node_id": "מי שלא זכה",
+      "node_text": "מִי שֶׁלֹּא זָכָה",
+      "polarity": "evil",
+      "reason": "The person who did not merit is the nimshal for the sick patient. The Talmud quote (Yoma 72b) establishes this state as the condition that makes Torah dangerous: 'לֹא זָכָה – נַעֲשֶׂה לוֹ סַם הַמָּוֶת'. This person IS the sick patient by mashal-nimshal equivalence.",
+      "source_quote": "לֹא זָכָה – נַעֲשֶׂה לוֹ סַם הַמָּוֶת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "הַחוֹלֶה וּמִי שֶׁלֹּא זָכָה",
+      "node_id": "סם המוות",
+      "node_text": "סַם הַמָּוֶת",
+      "polarity": "evil",
+      "reason": "Torah-as-poison (sam hammavet) is what Torah IS for the one who did not merit. This is a bechina of the spiritual state of the unworthy receiver — his condition and Torah's effect on him are the same essential reality. This is the evil mirror of סַם חַיִּים (Package 2).",
+      "source_quote": "לֹא זָכָה – נַעֲשֶׂה לוֹ סַם הַמָּוֶת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "הַחוֹלֶה וּמִי שֶׁלֹּא זָכָה",
+      "node_id": "הרופא שנחלה",
+      "node_text": "הָרוֹפֵא שֶׁנֶּחֱלָה",
+      "polarity": "evil",
+      "reason": "The doctor who fell ill is the parable's illustration of the person who has partial Torah knowledge but is nonetheless in the state of the sick receiver. His defining characteristic is that despite knowing some medicine himself, he CANNOT trust his own prescriptions and must submit to the great doctor. He IS a bechina of the החולה — in the spiritual application, this represents the person who thinks their own understanding of Torah is sufficient remedy for their soul but is mistaken.",
+      "source_quote": "רוֹפֵא שֶׁנֶּחֱלָה וְהֻכְרַח לִמְסֹר אֶת עַצְמוֹ לְיַד הַדָּאקְטֶיר הַגָּדוֹל, וְהָרוֹפֵא רוֹצֶה שֶׁיִּתֵּן לוֹ רְפוּאוֹת כְּפִי מַה שֶּׁהוּא יוֹדֵעַ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_164_edges": 0,
+    "total_reference_164_bechina_edges": 0,
+    "total_reference_164_eitza_edges": 0,
+    "note": "Reference 164 is entirely absent from torahData.js. This is a fully new Torah requiring all edges to be built from scratch. The 19 nodes across 4 packages represent the complete bechina topology of this teaching as derived from source text analysis.",
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["צדיק הדור", "תלמיד-חכם", "רופא חולי הנפשות", "הדאקטיר הגדול"],
+      "package_2": ["תורה", "רפואה", "פנימיות התורה", "סם", "סם חיים", "רפואה גנוזה"],
+      "package_3": ["סיפורי מעשיות", "סיפורי דברים", "לבוש", "עירוב", "דברי תורה אחרים"],
+      "package_4": ["החולה", "מי שלא זכה", "סם המוות", "הרופא שנחלה"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "רפואה", "פנימיות התורה", "סם", "סם חיים", "סם המוות", "רפואה גנוזה",
+      "רופא חולי הנפשות", "הדאקטיר הגדול", "הרופא שנחלה", "החולה", "מי שלא זכה",
+      "סיפורי מעשיות", "סיפורי דברים", "לבוש", "עירוב", "דברי תורה אחרים"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "הנהגות ודרכים",
+        "reason": "Line 3: 'רְפוּאוֹת, הַיְנוּ הַנְהָגוֹת וּדְרָכִים'. The word 'הַיְנוּ' could suggest a bechina, but in context the Rebbe is clarifying what the visitor THINKS the Tzaddik's medicines are — these are the superficial guidance-prescriptions the visitor has in mind, not the deep Torah-medicine the Tzaddik actually knows. They represent the patient's faulty self-prescription, parallel to the sick doctor wanting to extract his own tooth. This is a contrast-element in the mashal, not a bechina node in the Torah's positive structure. Excluded."
+      },
+      {
+        "concept": "רפוּאוֹת יְקָרִים וַחֲשׁוּבִים",
+        "reason": "Line 2: 'הַדָּאקְטֶיר יוֹדֵעַ רְפוּאוֹת יְקָרִים וַחֲשׁוּבִים'. This is a descriptive quality of the great doctor's medicines, not a standalone bechina node. It is subsumed within the פְּנִימִיּוּת הַתּוֹרָה concept (Package 2). The preciousness/depth is an attribute of פנימיות התורה, not a separate bechina-node."
+      },
+      {
+        "concept": "לְהוֹצִיא לוֹ שֵׁן וּלְגַלְּחוֹ",
+        "reason": "Line 2: Extracting a tooth and shaving him — these are the crude self-prescriptions of the sick doctor. They represent the superficial, misguided 'remedies' the visitor wants from the Tzaddik (like: tell me to give more charity, to fast). This is a contrast-element illustrating inadequate self-prescription, not a bechina concept in the Torah's structure. Excluded."
+      },
+      {
+        "concept": "דִּבְרֵי תוֹרָה",
+        "reason": "Overlaps with 'דִּבְרֵי תּוֹרָה אֲחֵרִים' (Package 3). Treated as same node. Not separately added."
+      }
+    ]
+  }
+}

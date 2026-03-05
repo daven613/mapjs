@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "source": "Torah #60",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03",
+    "methodology": "Read framework.md, torah_60_packages.json, all reference===60 edges from torahData.js, and the full source text torah_60.txt. For each בְּחִינַת / הַיְנוּ / נִקְרָא statement in the source text, verified whether both sides of the equivalence appear as nodes in the dataset. Only concepts with explicit bechina language were considered. Pure eitza (causal) statements, verse-citations used as proofs, and narrative interpretive glosses were excluded. The source text covers 105 lines including an extended Talmudic story (Choni HaMe'agel) that the Rebbe decodes paragraph by paragraph."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה, זָקֵן וְעַתִּיק",
+      "node_id": "הון / עשירות",
+      "node_text": "הוֹן / עֲשִׁירוּת",
+      "polarity": "good",
+      "reason": "Line 7: 'נִקְרֵאת הַתּוֹרָה הוֹן' — the Torah is CALLED 'hon' (wealth). Line 22: 'הוֹן עָשִׁיר קִרְיַת עֻזּוֹ, הַיְנוּ שֶׁהָעֲשִׁירוּת הוּא עַל יְדֵי בְּחִינַת הַנְּשִׁימָה'. The Rebbe identifies הון (as it appears in Proverbs 18:11) as a bechina of the continuous breath (נשימה). In the dataset, עשירות appears as a node (edge 1877: חמרה ↔ עשירות). However, the specific node 'תורה נקראת הון' or 'הון = תורה' is not captured. The Torah being CALLED 'hon' (=wealth) because it contains the hitbonenut is a distinct bechina-name not currently as an edge in Torah #60's dataset. Suggested addition: add node 'תורה נקראת הון' as a bechina of עשירות (and of התבוננות) for Torah #60.",
+      "source_quote": "נִקְרֵאת הַתּוֹרָה הוֹן",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "The word 'הון' in the dataset (edge 858: אות וא\"ו ↔ הלוחות) refers to the tablets as source of Moshe's wealth, not to Torah-called-hon. The 'תורה = הון' bechina is distinct and missing."
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה, זָקֵן וְעַתִּיק",
+      "node_id": "פסולת",
+      "node_text": "פְּסֹלֶת",
+      "polarity": "good",
+      "reason": "Lines 9-10: 'כָּל הַסִּבּוּבִים הֵם בְּחִינַת פְּסֹלֶת, וְהֵם בְּחִינַת עֲשִׁירוּת'. The 'chips/shavings' (פסולת) of the tablets (from Exodus 34:1 — 'פְּסָל לְךָ, הַפְּסֹלֶת יִהְיוּ שֶׁלְּךָ') are explicitly identified as a bechina of the ROUNDS/DETOURS (סיבובים) in Torah contemplation, and THESE are a bechina of עשירות. The chain: פסולת = סיבובים = עשירות. This is a clear triple bechina. The פסולת node is not in the dataset for Torah #60. It belongs in Pkg 1 because it is a concrete manifestation of how the Atik-contemplation generates wealth (the chips = the preliminary intellectual circuits = the wealth that comes from deep learning).",
+      "source_quote": "כָּל אֵלּוּ הַסִּבּוּבִים הֵם בְּחִינַת פְּסֹלֶת, וְהֵם בְּחִינַת עֲשִׁירוּת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה, זָקֵן וְעַתִּיק",
+      "node_id": "אריכות הנשימה",
+      "node_text": "אֲרִיכוּת הַנְּשִׁימָה",
+      "polarity": "good",
+      "reason": "Lines 20-24: 'עֲשִׁירוּת הוּא מֵאֲרִיכוּת הַנְּשִׁימָה'; 'הוֹן עָשִׁיר קִרְיַת עֻזּוֹ, הַיְנוּ שֶׁהָעֲשִׁירוּת הוּא עַל יְדֵי בְּחִינַת הַנְּשִׁימָה'; 'עַל יְדֵי קֹר רוּחַ, שֶׁהוּא רוּחַ הַקַּר שֶׁל הַנְּשִׁימָה, עַל יְדֵי זֶה זוֹכִין לַהִתְבּוֹנְנוּת'. The continuous/long breath (אריכות הנשימה) is explicitly identified as a bechina of wealth (עשירות), opposite of הפסק הנשימה (which is in Pkg 4). The node 'אריכות הנשימה' is not in the dataset as a standalone bechina node for Torah #60. It is the positive pole of the breath-axis (continuous = wealth = contemplation) vs. the negative pole (interrupted = הבל היפי = poverty). Belongs in Pkg 1 as the breath-dimension of yirah/wealth.",
+      "source_quote": "עֲשִׁירוּת הוּא מֵאֲרִיכוּת הַנְּשִׁימָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה, זָקֵן וְעַתִּיק",
+      "node_id": "גשמים",
+      "node_text": "גְּשָׁמִים",
+      "polarity": "good",
+      "reason": "Lines 22-23: 'כָּל מִינֵי עֲשִׁירוּת... הֵם רַק עַל יְדֵי גְּשָׁמִים'; 'הַגְּשָׁמִים הֵם מִבְּחִינַת הַנְּשִׁימָה'. Rain (גשמים) is a bechina of the breath (נשימה): it is the result of continuous breath drawing in cold air, producing moisture and thus rain, which produces all forms of wealth. The verse cited: 'מִנִּשְׁמַת אֵל יִתֶּן קָרַח וְרֹחַב מַיִם בְּמוּצָק' (Job 37:10). The גשמים node does not appear as a bechina edge for Torah #60 in the dataset. It is the intermediate step: continuous breath → rain → wealth → contemplation. Belongs in Pkg 1.",
+      "source_quote": "הַגְּשָׁמִים הֵם מִבְּחִינַת הַנְּשִׁימָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה, זָקֵן וְעַתִּיק",
+      "node_id": "נר ה' / שכל",
+      "node_text": "נֵר ה' / שֵׂכֶל",
+      "polarity": "good",
+      "reason": "Lines 25-26: 'עִקַּר הַשֵּׂכֶל... הוּא כְּמוֹ נֵר הַדּוֹלֵק'; 'נֵר ה' נִשְׁמַת אָדָם, שֶׁעִקַּר קִיּוּם וְתִקּוּן נֵר ה', שֶׁהוּא הַשֵּׂכֶל, הוּא עַל יְדֵי הַנְּשִׁימָה'. The intellect/sekhel IS the candle of God (נֵר ה'), and is dependent on the oils/fats of the body maintained by the breath. This is a clear bechina: נֵר ה' = שֵׂכֶל. The node is not in the dataset as a bechina edge for Torah #60. Belongs in Pkg 1 as a dimension of the hitbonenut/contemplation domain (sekhel = the candle of God that can only flame through continuous breath).",
+      "source_quote": "נֵר ה' נִשְׁמַת אָדָם, שֶׁעִקַּר קִיּוּם וְתִקּוּן נֵר ה', שֶׁהוּא הַשֵּׂכֶל, הוּא עַל יְדֵי הַנְּשִׁימָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה, זָקֵן וְעַתִּיק",
+      "node_id": "מורא שמים / מורא רבך / מורא אב ואם",
+      "node_text": "מוֹרָא שָׁמַיִם / מוֹרָא רַבָּךְ / מוֹרָא אָב וָאֵם",
+      "polarity": "good",
+      "reason": "Line 28: 'שְׁלֵמוּת הַיִּרְאָה הִיא בִּבְחִינַת שָׁלֹשׁ קַוִּין, בְּחִינוֹת מוֹרָא שָׁמַיִם, וּמוֹרָא רַבָּךְ, וּמוֹרָא אָב וָאֵם'. The three types of fear are explicitly identified as בְּחִינוֹת (aspects) of the three lines (שלש קוין) of yirah: fear of Heaven = מורא שמים, fear of one's teacher = מורא רבך, fear of parents = מורא אב ואם. These are the three named bechina-faces of yirah's completeness. None of these three terms appear as independent nodes in the Torah #60 dataset. They belong in Pkg 1 as the three-fold articulation of יראה's perfect structure.",
+      "source_quote": "שְׁלֵמוּת הַיִּרְאָה הִיא בִּבְחִינַת שָׁלֹשׁ קַוִּין, בְּחִינוֹת מוֹרָא שָׁמַיִם, וּמוֹרָא רַבָּךְ, וּמוֹרָא אָב וָאֵם",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 1,
+      "package_label": "יִרְאָה, זָקֵן וְעַתִּיק",
+      "node_id": "שבעים פנים / פנים",
+      "node_text": "שִׁבְעִים פָּנִים / פָּנִים",
+      "polarity": "good",
+      "reason": "Lines 43-46: 'לְהַרְאוֹת לוֹ פָּנָיו, וּלְהַלְבִּישׁ אוֹתוֹ בְּפָנָיו שֶׁנִּסְתַּלֵּק מִמֶּנּוּ בִּשְׁעַת שֵׁנָה'; 'יֵשׁ שִׁבְעִים פָּנִים לַתּוֹרָה, וְהֵם בְּחִינַת שִׁבְעִים שָׁנִים'. The concept of פָּנִים (face/face of Torah) is extensively used in the teaching with explicit bechina language: the face = the sekhel (line 43), and the 70 faces = 70 years. The sekhel/panim connection ('חָכְמַת אָדָם תָּאִיר פָּנָיו' Kohelet 8:1) is stated as a bechina: the face IS the sekhel. This 'panim = sekhel' bechina is not currently in the dataset as an edge for Torah #60 (the existing edge 2826 covers שבעים פנים ↔ שבעים שנים but not פנים ↔ שכל/sekhel). Belongs in Pkg 1 as the intellectual-face dimension that the Atik-stories restore.",
+      "source_quote": "חָכְמַת אָדָם תָּאִיר פָּנָיו — הַיְנוּ הַשֵּׂכֶל",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "Edge 2826 in dataset covers שבעים פנים ↔ שבעים שנים (already in Pkg 1). The missing bechina is פנים = שכל/sekhel (the face IS the intellect), used repeatedly in sections ו-ז."
+    },
+    {
+      "package_id": 2,
+      "package_label": "דִּבּוּר, הוֹלָדָה וְהַתְעוֹרְרוּת",
+      "node_id": "סיפורי מעשיות",
+      "node_text": "סִפּוּרֵי מַעֲשִׂיּוֹת",
+      "polarity": "good",
+      "reason": "Lines 46-47: 'צְרִיכִין לְהַלְבִּישׁ אֶת הַפָּנִים בְּסִפּוּרֵי מַעֲשִׂיּוֹת'; line 84: 'הִתְעוֹרְרוּת הַשֵּׁנָה, בְּחִינַת דִּבּוּר'. In the dataset, there is an eitza edge: ספורי מעשיות → מעוררין מהשנה (edge 1906). However, the bechina equivalence סיפורי מעשיות = הלבשת הפנים (clothing the face = the instrument of awakening speech) is not captured as a bechina edge. The Rebbe says (line 84): awakening from sleep IS דבור (speech), and the tool is סיפורי מעשיות. The 'clothing of the face in stories' (הלבשת הפנים בסיפורי מעשיות) is described as a specific bechina of the speech-awakening process — not just a cause. Belongs in Pkg 2 as the specific speech-act that clothes the face and restores speech to the sleeper.",
+      "source_quote": "לְהַרְאוֹת לוֹ פָּנָיו וּלְעוֹרְרוֹ מִשְּׁנָתוֹ, צְרִיכִין לְהַלְבִּישׁ לוֹ אֶת הַפָּנִים בְּסִפּוּרֵי מַעֲשִׂיּוֹת",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "Edge 1906 (ספורי מעשיות → מעוררין מהשנה) is eitza, not bechina. The missing bechina is: סיפורי מעשיות = הלבשת הפנים (clothing the face = restoring speech)."
+    },
+    {
+      "package_id": 2,
+      "package_label": "דִּבּוּר, הוֹלָדָה וְהַתְעוֹרְרוּת",
+      "node_id": "בטחנין הדור",
+      "node_text": "בַּטְחָנֵי הַדּוֹר",
+      "polarity": "good",
+      "reason": "Lines 61-62: 'כֹּחִי וְרֵאשִׁית אוֹנִי, דְּהַיְנוּ בַּטְחָנֵי הַדּוֹר, שֶׁהֵם בְּחִינַת כְּלֵי הַהוֹלָדָה'; 'כְּשֶׁמְּקַבְּלִין בַּטְחָנֵי הַדּוֹר, זֶה הַכֹּחַ שֶׁל הַדִּבּוּר'. The 'millstones of the generation' (בטחנין הדור) = כלי הולדה = those who receive the power of speech. This is explicitly stated as a bechina. The node בטחנין הדור does not appear as a bechina edge in the Torah #60 dataset (only as a node_id in eitza edges). Belongs in Pkg 2 as a name for the people who ARE the birth-vessels of the generation — the structural dimension of the speech-birth mechanism.",
+      "source_quote": "דְּהַיְנוּ בַּטְחָנֵי הַדּוֹר, שֶׁהֵם בְּחִינַת כְּלֵי הַהוֹלָדָה",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 2,
+      "package_label": "דִּבּוּר, הוֹלָדָה וְהַתְעוֹרְרוּת",
+      "node_id": "עפר / העדר הדבור",
+      "node_text": "עָפָר / הֶעְדֵּר הַדִּבּוּר",
+      "polarity": "neutral",
+      "reason": "Line 68: 'עָפָר הוּא בְּחִינַת הֶעְדֵּר הַדִּבּוּר, כְּמוֹ שֶׁכָּתוּב (יְשַׁעְיָה כ\"ט): וּמֵעָפָר תִּשַּׁח אִמְרָתֵךְ'. Dust (עפר) IS the absence of speech (העדר הדבור) — 'from the dust shall your speech murmur low' (Isaiah 29:4). The Rebbe explicitly says: to give the speech (להתיר פה אלמים) to those who are in the state of 'יִתֵּן בֶּעָפָר פִּיהוּ', one must give the speech into their 'dust-state' (= their absence-of-speech state). This עפר = העדר הדבור bechina is not in the dataset for Torah #60 (only the pre-existing העדר הדבור cluster in Pkg 3 is in the data). The polarity is neutral because עפר here is the container/ground-state into which speech must be deposited — it is neither purely evil nor purely good. It is the state of potential-speech that awaits activation. Belongs in Pkg 2 as the ground-state of the awakening process.",
+      "source_quote": "עָפָר הוּא בְּחִינַת הֶעְדֵּר הַדִּבּוּר, כְּמוֹ שֶׁכָּתוּב: וּמֵעָפָר תִּשַּׁח אִמְרָתֵךְ",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null,
+      "note": "Note: עפר here connects Pkg 2 (the awakening process) and Pkg 3 (absence of speech). It is the bridge concept: the state of not-yet-speaking that speech must enter in order to release birth. Polarity = neutral as it functions in both packages."
+    },
+    {
+      "package_id": 3,
+      "package_label": "הֶעְדֵּר הַדִּבּוּר וְהַשֵּׁנָה",
+      "node_id": "חרש / אינו שומע ואינו מדבר",
+      "node_text": "חֵרֶשׁ / אֵינוֹ שׁוֹמֵעַ וְאֵינוֹ מְדַבֵּר",
+      "polarity": "evil",
+      "reason": "Lines 60-61: 'כִּי סְתָם חֶרֶשׁ הוּא שֶׁאֵינוֹ שׁוֹמֵעַ וְאֵינוֹ מְדַבֵּר, דְּהַיְנוּ מֵחֲמַת שֶׁאֵינוֹ שׁוֹמֵעַ אֵינוֹ יָכוֹל לְדַבֵּר'. The deaf-mute (חרש) is defined by bechina-language as the person who does not hear and therefore cannot speak — the full embodiment of the absence-of-speech state (Pkg 3). Those in the state of שנה (sleep) are explicitly compared to חרשים (deaf-mutes). The node חרש (as a bechina of the spiritual state of sleep) is not in the dataset as a bechina edge for Torah #60. Belongs in Pkg 3.",
+      "source_quote": "כִּי סְתָם חֶרֶשׁ הוּא שֶׁאֵינוֹ שׁוֹמֵעַ וְאֵינוֹ מְדַבֵּר",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "הֶבֶל הַיֹּפִי וְהֶפְסֵק הַנְּשִׁימָה",
+      "node_id": "יופי / שקר החן",
+      "node_text": "יֹפִי / שֶׁקֶר הַחֵן",
+      "polarity": "evil",
+      "reason": "Lines 17 and 21: 'שֶׁקֶר הַחֵן וְהֶבֶל הַיֹּפִי'; 'הֶבֶל הַיֹּפִי — כִּי הַיֹּפִי הוּא כְּפִי הַהֶבֶל'. The Rebbe states that beauty (יפי) IS according to the vapor (הבל) — the purer the birth-vapor, the more beautiful the child. And 'שֶׁקֶר הַחֵן' (false grace) is explicitly linked to הֶבֶל הַיֹּפִי as a bechina-pair (both come from improper sexual behavior and interrupted breath). The יופי node and שקר החן node do not appear as bechina edges in the Torah #60 dataset. They belong in Pkg 4 as the specific named manifestations of the evil interrupted-breath domain.",
+      "source_quote": "שֶׁקֶר הַחֵן וְהֶבֶל הַיֹּפִי — דְּהַיְנוּ, מִי שֶׁאֵינוֹ נִשְׁמָר מִיֹּפִי הַנָּשִׁים, עַל יְדֵי זֶה יֵשׁ לוֹ תַּאֲווֹת שֶׁל אֵלּוּ הַחִנּוֹת שֶׁל שֶׁקֶר",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    },
+    {
+      "package_id": 4,
+      "package_label": "הֶבֶל הַיֹּפִי וְהֶפְסֵק הַנְּשִׁימָה",
+      "node_id": "עניות",
+      "node_text": "עֲנִיּוּת",
+      "polarity": "evil",
+      "reason": "Lines 20-21: 'מִי שֶׁאֵין לוֹ יִרְאָה... עַל יְדֵי זֶה בָּא לַעֲנִיּוּת'; 'עֲשִׁירוּת וְהֶבֶל הַיֹּפִי הֵם שְׁנֵי הֲפָכִים, כִּי עֲשִׁירוּת הוּא מֵאֲרִיכוּת הַנְּשִׁימָה, וְיֹפִי הוּא מֵהֶפְסֵק הַנְּשִׁימָה'. Poverty (עניות) is the direct opposite-bechina of wealth (עשירות): wealth = continuous breath; beauty/lust = interrupted breath = poverty. The statement 'הוֹן מֵהֶבֶל יִמְעַט' (Proverbs 13:11) is cited: 'through the vapor (הבל of beauty), wealth diminishes.' The עניות node does not appear as a bechina edge in Torah #60's dataset. It belongs in Pkg 4 as the evil-counterpart of עשירות (Pkg 1): poverty IS the interrupted breath IS the beauty-vapor domain.",
+      "source_quote": "עֲשִׁירוּת וְהֶבֶל הַיֹּפִי הֵם שְׁנֵי הֲפָכִים",
+      "in_dataset_already": false,
+      "if_in_dataset_edge_id": null
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_60_edges": 63,
+    "total_reference_60_bechina_edges": 46,
+    "total_reference_60_eitza_edges": 17,
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["יראה", "אריכות ימים", "דמים וגבורות", "זקן", "הדרת פנים", "אבוה דאבא", "חרוב", "עתיק", "ספורי מעשיות של שנים קדמוניות", "רב חסד", "מרדכי", "ברושים", "תקוני עתיק", "שופר", "התגלות היראה", "התעוררות השנה", "דבור", "תרועה", "קצר מלמעלה ורחב מלמטה", "\"יראת ה' היא אוצרו\"", "\"עשאה כאוצר\"", "שלש קוין", "\"לעולם ישלש אדם מעותיו...\"", "שבעים פנים לתורה", "שבעים שנים", "ישראל המתעוררים מלמטה", "\"אשריך ישראל מי כמוך\"", "אתערותא דלעלא", "\"מי כמוכה באלים ה'\"", "חמרה", "עשירות", "משא ומתן", "רגל", "אות וא\"ו", "הלוחות"],
+      "package_2": ["הולדה", "ארכבותה דא לדא נקשן", "זווג גופני", "להתיר פה עקרות", "פקידות עקרות", "להתיר פה אלמים", "זווג נשיקין", "כח הדבור", "שברים", "בטחון", "כלי הולדה", "כליות", "התלבשות", "כנף", "כשלומד עם אחר", "כתיבה", "צדק", "לבושין"],
+      "package_3": ["העדר הדבור", "תקיעה", "\"תקעת לזר כפיך...\"", "שתיקה", "אלמים", "מחין דקטנות", "שנה"],
+      "package_4": ["הפסק הנשימה", "הבל היפי", "הבלי הגוים"],
+      "package_5": ["שכחה", "שבירת הלב", "שבירת הלוחות", "\"חרפה שברה לבי\""]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "הון / תורה נקראת הון",
+      "פסולת / סיבובים",
+      "אריכות הנשימה",
+      "גשמים",
+      "נר ה' / שכל",
+      "מורא שמים / מורא רבך / מורא אב ואם",
+      "פנים = שכל",
+      "סיפורי מעשיות = הלבשת הפנים",
+      "בטחנין הדור",
+      "עפר = העדר הדבור",
+      "חרש = אינו שומע ואינו מדבר",
+      "יופי / שקר החן",
+      "עניות"
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "מאמר חז\"ל: אם אין קמח אין תורה",
+        "reason": "Line 5 — cited as an analogy for the relationship between wealth and Torah-contemplation. It is a scriptural/rabbinic proof-text rather than a new bechina equation the Rebbe is establishing."
+      },
+      {
+        "concept": "יששכר חמור גרם / עתיר בנכסין",
+        "reason": "Line 6 — the Rebbe cites the verse to establish that Yissachar's tribe achieved hitbonenut through wealth. Already captured in the dataset via edge 1877 (חמרה ↔ עשירות = the donkey = wealth). The Yissachar-donkey connection is the proof-text for that bechina, not a new bechina itself."
+      },
+      {
+        "concept": "פסל לך / הפסולת יהיו שלך",
+        "reason": "Lines 9-10 — 'פְּסָל לְךָ' is the scriptural proof for פסולת = wealth (via the midrash that Moshe's wealth came from the chips of the tablets). The verse itself is a proof-citation; the bechina is captured in the 'פסולת' addition above."
+      },
+      {
+        "concept": "אוצר = קצר מלמעלה ורחב מלמטה",
+        "reason": "Line 16 — the storehouse shape is the defining property of the vessel of yirah. Already captured as the edge קצר מלמעלה ורחב מלמטה ↔ יראת ה' היא אוצרו (edge 65) which is in Pkg 1."
+      },
+      {
+        "concept": "טיפה זרעית / חמימות / הוצאת הטיפה",
+        "reason": "Lines 20-21 — detailed physiological description of the mechanism of interrupted breath during seminal emission. This is explanatory physiology supporting the הפסק הנשימה = הבל היפי bechina (already in Pkg 4). The seminal-drop physiology is the mechanism, not a new bechina node."
+      },
+      {
+        "concept": "כנפי ריאה דנשבין על לבא",
+        "reason": "Line 26 — Tikunei Zohar citation about the lungs cooling the heart. This is a physiological proof-text for why breathing maintains the fats/oils of the body (and thus the sekhel). Not a new bechina equation but support for נשימה → שמנים → שכל chain."
+      },
+      {
+        "concept": "שלמות יראה = כשיש חכם הדור",
+        "reason": "Lines 28-29 — the completeness of yirah requires a sage of the generation with worthy students and children. This is a description of the conditions for yirah rather than a new bechina equation."
+      },
+      {
+        "concept": "בית והון נחלת אבות",
+        "reason": "Line 31 — cited as scriptural proof that fear-of-parents must spread over all parts of inheritance. A proof-citation rather than a new bechina."
+      },
+      {
+        "concept": "ראש השנה / פקידת יצחק",
+        "reason": "Lines 38-39 — Rosh Hashana is mentioned as the time of Yitzchak's pekida (= fear/pakhad Yitzchak). The Rosh Hashana connection is eitza-level (that is when yirah is revealed), not a new bechina equation."
+      },
+      {
+        "concept": "לחם הפנים",
+        "reason": "Line 43 — 'כְשֶׁאוֹכֵל בִּקְדֻשָּׁה... הוּא בְּחִינַת לֶחֶם הַפָּנִים'. This IS a bechina statement (eating in holiness = showbread). However it appears in the dataset as an eitza edge (1614: אכילה → לחם הפנים). The bechina reading would link לחם הפנים to the panim/sekhel domain of Pkg 1. Borderline — excluded for now pending review, as the eitza reading ('through holy eating you get') is equally strong."
+      },
+      {
+        "concept": "עוסק לעורר על ידי ספורי מעשיות = שיחת תלמידי חכמים",
+        "reason": "Line 58 — the Rebbe cites Avodah Zarah 19b: 'שִׂיחָתָן שֶׁל תַּלְמִידֵי חֲכָמִים צְרִיכִין לִמּוּד'. The identification of story-telling with talmid-chakham conversation is a bechina, but it is formulated as an analogy ('as the speech of scholars needs study, so too the stories'). The node 'שיחת תלמידי חכמים' is in the dataset as an eitza source. Excluded as borderline."
+      },
+      {
+        "concept": "שברית כלי חרס",
+        "reason": "Lines 65-66 — breaking a clay vessel at weddings is described as a bechina of the shattering of the sitra achra's bitachon. While 'shviras keli cheres' has explicit bechina language, it is treated in the text as a symbolic action (minhag explanation) rather than establishing a new conceptual node. The relevant concept (destruction of sitra achra bitachon) is captured through the existing bitachon-cluster in Pkg 2."
+      }
+    ]
+  }
+}

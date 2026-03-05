@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "source": "Torah #196",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, torah_196_packages.json, all reference===196 edges from torahData.js (none existed), and the full source text torah_196.txt. For each bechina statement in the source text, verified whether the concept appears as a node in the dataset and whether it is assigned to a package. Only concepts with explicit bechina language (בְּחִינַת, הַיְנוּ, מִלְּשׁוֹן, נִקְרָא, אֶלָּא) were considered. All four proposed bechina edges are new — Torah #196 had zero pre-existing edges in torahData.js."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_196_edges_in_dataset": 0,
+    "total_reference_196_bechina_edges": 0,
+    "total_reference_196_eitza_edges": 0,
+    "note_on_zero_existing_edges": "Torah #196 was not represented in torahData.js at all prior to this analysis. The four bechina edges proposed in torah_196_packages.json (under 'proposed_new_bechina_edges') are entirely new and should be added to the dataset.",
+    "nodes_accounted_for_in_packages": {
+      "package_1": ["תפלת קבע", "גזלה", "להתעקש בתפלתו", "לוקח דבר בחזקה"],
+      "package_2": ["תפלה", "רחמים ותחנונים"]
+    },
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      {
+        "concept": "בקשה (request/petition)",
+        "source_line": 2,
+        "source_quote": "שֶׁהַקָּדוֹשׁ בָּרוּךְ הוּא יַעֲשֶׂה לוֹ דַּוְקָא אֶת בַּקָּשָׁתוֹ",
+        "bechina_language": "implied — the בקשה (request) is what is being described, but the Rebbe does not use בְּחִינַת or מִלְּשׁוֹן to equate it to another concept",
+        "verdict": "NOT a bechina gap. The Rebbe uses בקשה as a plain noun (the thing requested), not as a bechina-identified concept. No bechina edge is warranted.",
+        "in_dataset_already": false
+      },
+      {
+        "concept": "פרנסה / בנים / שאר צרכים (livelihood, children, other needs)",
+        "source_line": 5,
+        "source_quote": "כָּל מַה שֶּׁהוּא מְבַקֵּשׁ, הֵן פַּרְנָסָה אוֹ בָּנִים אוֹ שְׁאָר צְרָכִים",
+        "bechina_language": "none — these are listed as examples of the types of requests one might make, not as bechina equivalences",
+        "verdict": "NOT a bechina gap. The Rebbe enumerates these as examples (הֵן... אוֹ... אוֹ) of the content of prayer requests, not as concepts sharing a parallel spiritual nature. No bechina edge is warranted.",
+        "in_dataset_already": false
+      },
+      {
+        "concept": "וְקָבַע אֶת קֹבְעֵיהֶם נָפֶשׁ (Proverbs 22:23 verse text)",
+        "source_line": 4,
+        "source_quote": "כְּמוֹ שֶׁכָּתוּב (מִשְׁלֵי כ\"ב:כ\"ג): וְקָבַע אֶת קֹבְעֵיהֶם נָפֶשׁ",
+        "bechina_language": "proof-text only — this verse is cited as evidence for the gzela reading of keva, not as an independent bechina-identified concept",
+        "verdict": "NOT a bechina gap. This is proof-text (the verse that justifies the philological equation קבע=גזלה). The verse is the warrant for the bechina, not a new bechina node itself. No separate edge is warranted.",
+        "in_dataset_already": false
+      }
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "לַעֲמֹד עַצְמוֹ (to stand firm / insist on)",
+        "reason": "Line 2: 'אָסוּר לָאָדָם לַעֲמֹד עַצְמוֹ עַל שׁוּם דָּבָר'. This phrase is used as an explanatory gloss for 'להתעקש' — both mean 'to insist.' It is not a new bechina concept but a Hebrew synonym for the same idea (להתעקש בתפלתו) already captured in Package 1. Not a gap."
+      },
+      {
+        "concept": "הַקָּדוֹשׁ בָּרוּךְ הוּא / שֵּׁם יִתְבָּרַךְ as the recipient of prayer",
+        "reason": "God is mentioned as the address of prayer throughout the text, but the Rebbe does not draw a bechina equivalence between God and any other concept in this Torah. God appears as the grammatical subject/object of the teaching, not as a bechina node. No bechina edge warranted."
+      },
+      {
+        "concept": "אִם יִתֵּן הַשֵּׁם יִתְבָּרַךְ — יִתֵּן, וְאִם לָאו — לָאו (if God gives, He gives; if not, not)",
+        "reason": "This phrase describes the proper disposition of the petitioner — total acceptance of God's will — but is framed as a halachic/ethical principle (eitza), not a bechina identification. The phrase is not equated to another concept through bechina language. No edge warranted."
+      },
+      {
+        "concept": "כַּמּוּבָא בְּמָקוֹם אַחֵר (as cited elsewhere)",
+        "reason": "A cross-reference to another Torah teaching. Not a concept that appears as a bechina node in Torah #196. Excluded."
+      }
+    ],
+    "structural_observations": {
+      "teaching_type": "This is primarily an ethical-practical teaching (mussar / halacha) with one core bechina identification. The eitza content far outweighs the bechina content — the Rebbe instructs HOW to pray (eitza) and identifies WHAT forced prayer IS (bechina). Torah #196 is unusual in having no bechina chains — only isolated pairs or very short chains.",
+      "good_evil_mirror": "The teaching embeds a classic Good/Evil mirror at the level of prayer itself: the same act (prayer/תפלה) can be either holy (Package 2: prayer as mercy-and-supplication) or sinful (Package 1: prayer as robbery/demand). The concept תפלה thus bridges both packages — as proper prayer it is Package 2; as demanded prayer (תפלת קבע) it becomes the dominant concept of Package 1. This dual orientation of prayer is the central structural insight of Torah #196.",
+      "note_on_absence_of_biblical_character_nodes": "Unlike most Likutay Moharan teachings, Torah #196 contains no symbolic figures (no patriarchs, kings, prophets, kabbalistic personae). The teaching is entirely abstract-ethical, operating only through the concepts of prayer, robbery, mercy, and supplication. This explains the minimal bechina content.",
+      "completeness_verdict": "The two packages and four proposed bechina edges fully account for all bechina-identifiable concepts in Torah #196. No meaningful bechina gap was found."
+    }
+  }
+}

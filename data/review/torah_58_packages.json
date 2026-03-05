@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "source": "Torah #58",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===58 AND type==='bechina'. 13 bechina edges yield 18 unique nodes in 6 raw connected components. Two small isolated pairs (Comp C: מן/יעקב and Comp F: שבת/תשובה) and one triplet (Comp D: ענן/יצחק/לבוש) are merged into thematically nearest larger packages per shared bechina nature. Final result: 3 packages covering all 18 bechina-connected nodes."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 58,
+      "label": "אָבוֹת וּמַתָּנוֹת הַמִּדְבָּר",
+      "label_en": "The Patriarchs and the Wilderness Gifts",
+      "polarity": "good",
+      "reason": "The Torah's opening movement (sections א–ה) identifies the three wilderness gifts — Beer (water), Cloud, and Manna — as bechina-expressions of the three Patriarchs: Abraham/Chesed/water, Isaac/cloud/concealment, Jacob/manna/sustenance. Moses drew all three because his soul was comprised of all three Patriarchs. This cluster groups every node that shares the essential nature of patriarchal gift-giving: the water of Chesed (Abraham = 'מימי החסד'), the cloud as garment (Isaac = concealment/cloud/clothing), and the manna as Jacob's shepherding provision. חֶסֶד and מֵימֵי הַחֶסֶד are two explicit bechinas of אברהם, making Abraham the dominant hub. The small components {מן, יעקב} and {ענן, יצחק, לבוש} are merged here because they participate in precisely the same bechina domain: each gift is an aspect of one Patriarch's essential quality, and לבוש (garment) is a bechina of עָנָן, making it part of the Isaac/concealment cluster within this package.",
+      "dominant_node": "אברהם",
+      "nodes": [
+        "\"באר מים חיים\"",
+        "אברהם",
+        "חסד",
+        "מימי החסד",
+        "מן",
+        "יעקב",
+        "ענן",
+        "יצחק",
+        "לבוש"
+      ],
+      "node_degrees": {
+        "אברהם": 3,
+        "ענן": 2,
+        "\"באר מים חיים\"": 1,
+        "חסד": 1,
+        "מימי החסד": 1,
+        "מן": 1,
+        "יעקב": 1,
+        "יצחק": 1,
+        "לבוש": 1
+      },
+      "merge_notes": [
+        {
+          "merged_component": "Comp C",
+          "merged_nodes": ["מן", "יעקב"],
+          "reason": "מן and יעקב form a bechina-pair (edge 1376) stating that the Manna is the bechina of Jacob. This is the third of the three wilderness gifts paralleling the three Patriarchs. The shared nature is identical to the dominant cluster's theme: a wilderness gift expressing a Patriarch's essential quality. It is not cause-and-effect; both node pairs (מן↔יעקב and 'באר מים חיים'↔אברהם) state the same kind of thing from the same structural domain."
+        },
+        {
+          "merged_component": "Comp D",
+          "merged_nodes": ["ענן", "יצחק", "לבוש"],
+          "reason": "ענן is a bechina of יצחק (edge 1387) — the Cloud is the gift of concealment associated with Isaac's quality of darkness/cloud/blindness. ענן is also a bechina of לבוש (edge 1557) — the cloud is a garment, clothing the people. This triplet belongs in the patriarchal-gifts cluster: the Cloud as Isaac's domain, and Garment as the functional aspect of the Cloud. The shared nature across all three merged components is: 'one of the three wilderness gifts as an expression of a specific Patriarch's essential quality.'"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 58,
+      "label": "גְּדֻלָּה וּמַלְכוּת וּשְׁכִינָה",
+      "label_en": "Greatness, Kingship, and the Divine Presence",
+      "polarity": "good",
+      "reason": "The Torah's middle movement (sections ט–י) centers on the phenomenon of beauty, greatness, and honor that comes to the 'proper ones of the generation' as a sign (ציון) of the hidden Torah received through Shabbat. הַר is a bechina of גְּדֻלָּה (the mountain = greatness, per Sanhedrin 107); גְּדֻלָּה is a bechina of מַלְכוּת (kingship is greatness); מַלְכוּת is a bechina of שְׁכִינָה (kingship = the Divine Presence). All four nodes orbit the same essential domain: the outward mark of holy kingship that signals alignment with the concealed Torah. This is the positive form of malkhut — when the Shabbat light flows through properly, greatness becomes a vessel for Torah renewal. The polarity is 'good' because the dominant axis of these bechinas describes the proper function of malkhut as the outward sign of the double Torah portion; the 'exile of the Shechina' (when malkhut is damaged) is described in the text as a damage to this same package, not a separate evil cluster (no evil-domain bechina nodes appear for Torah #58 in the dataset).",
+      "dominant_node": "מלכות",
+      "nodes": [
+        "הר",
+        "גדלה",
+        "מלכות",
+        "שכינה"
+      ],
+      "node_degrees": {
+        "גדלה": 2,
+        "מלכות": 2,
+        "הר": 1,
+        "שכינה": 1
+      }
+    },
+    {
+      "id": 3,
+      "torah_ref": 58,
+      "label": "שַׁבָּת וּתְשׁוּבָה וְלֶחֶם מִשְׁנֶה",
+      "label_en": "Shabbat, Repentance, and the Double Portion of Torah",
+      "polarity": "good",
+      "reason": "The Torah's central positive outcome (sections ד–ז) is that one who guards the covenant and subdues evil merits Shabbat, which is a bechina of תְּשׁוּבָה (repentance — 'וְשַׁבְתָּ עַד ה''). Shabbat-repentance comes from love (תְּשׁוּבָה מֵאַהֲבָה), and this repentance-from-love is itself a bechina of לֶחֶם מִשְׁנֶה (the double portion of Shabbat bread). לֶחֶם מִשְׁנֶה is a bechina of מִשְׁנֵה תּוֹרָה (the second/double Torah — novel Torah insights renewed on Shabbat). These five nodes share a single essential nature: they are all expressions of the doubled, holy receiving that flows on Shabbat to one who is aligned with the covenant. The Zoharic formula 'תרין ינקין לחד' (two draw from one) describes this entire cluster. The small isolated pair {שבת, תשובה} (Comp F, edges 3245–3246, two parallel edges) is merged here because its essential nature — Shabbat as the bechina of repentance — is the same as the dominant cluster's theme, and תְּשׁוּבָה מֵאַהֲבָה is already in Comp E connecting directly to this pair's conceptual domain.",
+      "dominant_node": "שבת",
+      "nodes": [
+        "שבת",
+        "תשובה",
+        "תשובה מאהבה",
+        "לחם משנה",
+        "משנה תורה"
+      ],
+      "node_degrees": {
+        "שבת": 2,
+        "תשובה": 2,
+        "לחם משנה": 2,
+        "תשובה מאהבה": 1,
+        "משנה תורה": 1
+      },
+      "merge_notes": [
+        {
+          "merged_component": "Comp F",
+          "merged_nodes": ["שבת", "תשובה"],
+          "reason": "שבת and תשובה are linked by two parallel bechina edges (3245 and 3246), both quoting 'וְשַׁבְתָּ עַד ה' אֱלֹקֶיךָ'. Their shared nature — Shabbat as repentance — is identical in domain to Component E's dominant theme: תְּשׁוּבָה מֵאַהֲבָה (a specific form of תְּשׁוּבָה) is a bechina of לֶחֶם מִשְׁנֶה, the specific gift of שַׁבָּת. Since שבת and תשובה are each already members of Comp E's conceptual family by direct textual reference (the text explicitly equates all five nodes under the Zoharic phrase), merging them here is consistent with shared bechina nature, not a cause-effect merge."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 13,
+    "total_nodes": 18,
+    "total_packages": 3,
+    "raw_connected_components": 6,
+    "components_merged_into_packages": 3,
+    "note_on_merges": "6 raw components: (A) 4 nodes — אברהם/חסד/מימי החסד/'באר מים חיים' [anchor of Pkg 1]; (B) 4 nodes — הר/גדלה/מלכות/שכינה [Pkg 2]; (C) 2 nodes — מן/יעקב [merged into Pkg 1: same patriarchal-gift domain]; (D) 3 nodes — ענן/יצחק/לבוש [merged into Pkg 1: same patriarchal-gift domain, Isaac branch]; (E) 3 nodes — תשובה מאהבה/לחם משנה/משנה תורה [anchor of Pkg 3]; (F) 2 nodes — שבת/תשובה [merged into Pkg 3: same Shabbat-repentance domain]",
+    "parallel_edges_note": "Edges 3245 and 3246 are two distinct bechina edges between the same pair שבת↔תשובה with different proof-texts. Both count toward the edge total; the pair counts once for node degree and connectivity."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "source": "Torah #175 (Likutay Moharan Volume 1)",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===175 AND type==='bechina'. Result: ZERO bechina edges found in torahData.js for reference 175. Torah #175 is a short three-paragraph teaching (3 lines in the source text) about the nature and proper source of weeping (בְּכִיָּה). The entire teaching is built around a single dense bechina chain: בְּכִיָּה = שֵׁם ס\"ג = בִּינָה = לֵב = שִׂמְחָה. All bechina-language concepts cluster into one connected component. There is no evil mirror in this Torah — the teaching is entirely within the positive domain, presenting an ideal spiritual state (joy-rooted weeping) without naming an opposing evil cluster. One additional concept (חֶדְוָה — gladness/delight) is merged into the main package by shared nature (it is used as a hendiadys pair with שִׂמְחָה in the opening line). All packages are derived from source-text gap analysis since the dataset contains no edges for Torah #175."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 175,
+      "label": "בְּכִיָּה וּבִינָה וְשִׂמְחָה",
+      "label_en": "Weeping, Binah, and Joy",
+      "polarity": "good",
+      "reason": "Torah #175 presents a single interlocking bechina chain in which weeping (בְּכִיָּה), the Divine Name of 63 (שֵׁם ס\"ג), the sefira of Binah (בִּינָה), the heart (לֵב), and joy (שִׂמְחָה) are all shown to share the same essential nature. The teaching's central bechina declarations are: (1) בְּכִיָּה corresponds to שֵׁם ס\"ג — proven by gematria (the word בְּכִיָּה equals the miluy of ס\"ג) and by the acronym (the letters בּ-כ-י-ה stand for 'בְּשִׁמְךָ יְגִילוּן כָּל הַיּוֹם', which encodes the Name-joy connection in the word itself); (2) שֵׁם ס\"ג IS in Binah — 'שֶׁהוּא בְּבִינָה', an identification drawn from Ari z\"l; (3) בִּינָה IS the heart — 'בִּינָה – לִבָּא', the classic Zoharic identification cited via the verse 'הַלֵּב מֵבִין'; (4) שִׂמְחָה IS [essentially] in the heart — 'עִקַּר הַשִּׂמְחָה הִיא בַּלֵּב', cited from Psalms 4:8 'נָתַתָּ שִׂמְחָה בְלִבִּי'. Because בְּכִיָּה = שֵׁם ס\"ג = בִּינָה = לֵב, and שִׂמְחָה IS the domain of לֵב = בִּינָה, all five concepts share the same essential kabbalistic locus: Binah/the heart. The practical teaching follows necessarily: the proper arousal of weeping must originate in joy, because both crying and joy belong to the same sefirotic domain (Binah/heart). They are not opposites but two expressions of the same inner reality. חֶדְוָה (gladness/delight) is merged into this package — see note below. Polarity is good throughout: all named concepts are positive spiritual states or holy kabbalistic structures (Binah is the mother-sefira of holiness; Shem 63 is the Name of divine chesed/rachamim; the heart as Binah is the seat of genuine spiritual feeling; joy and crying-from-joy are both positive spiritual achievements in Breslov teaching).",
+      "dominant_node": "בינה",
+      "nodes": [
+        "בכיה",
+        "בינה",
+        "שם ס\"ג",
+        "מילוי ס\"ג",
+        "לב",
+        "שמחה",
+        "חדוה"
+      ],
+      "node_degrees": {
+        "בינה": 3,
+        "לב": 2,
+        "שם ס\"ג": 2,
+        "בכיה": 2,
+        "שמחה": 1,
+        "מילוי ס\"ג": 1,
+        "חדוה": 1
+      },
+      "source_bechina_evidence": {
+        "bechina_1": {
+          "node1": "בינה",
+          "node2": "שם ס\"ג",
+          "formula": "explicit: 'שֶׁהוּא בְּבִינָה'",
+          "source_quote": "כִּי בְּכִיָּה הוּא מִתְעוֹרֵר מִשֵּׁם ס\"ג, שֶׁהוּא בְּבִינָה"
+        },
+        "bechina_2": {
+          "node1": "בינה",
+          "node2": "לב",
+          "formula": "explicit nominal identity: 'בִּינָה – לִבָּא'",
+          "source_quote": "כִּי בִּינָה – לִבָּא, כְּמוֹ שֶׁכָּתוּב: הַלֵּב מֵבִין"
+        },
+        "bechina_3": {
+          "node1": "בכיה",
+          "node2": "מילוי ס\"ג",
+          "formula": "gematria identity: 'בְּגִימַטְרִיָּא הַמִּלּוּי שֶׁל ס\"ג'",
+          "source_quote": "בְּכִיָּה בְּגִימַטְרִיָּא הַמִּלּוּי שֶׁל ס\"ג, כַּמּוּבָא בְּכִתְבֵי הָאֲרִ\"י"
+        },
+        "bechina_4": {
+          "node1": "שמחה",
+          "node2": "לב",
+          "formula": "essence statement: 'עִקַּר הַשִּׂמְחָה הִיא בַּלֵּב'",
+          "source_quote": "וְעִקַּר הַשִּׂמְחָה הִיא בַּלֵּב, כְּמוֹ שֶׁכָּתוּב: נָתַתָּ שִׂמְחָה בְלִבִּי"
+        },
+        "bechina_5_implicit": {
+          "node1": "שמחה",
+          "node2": "חדוה",
+          "formula": "implicit: hendiadys pair — used together as a compound expression naming the same state",
+          "source_quote": "עִקַּר מַעֲלַת הַבְּכִיָה הוּא כְּשֶׁהִיא מֵחֲמַת שִׂמְחָה וְחֶדְוָה"
+        }
+      },
+      "note_on_merge": "חֶדְוָה (gladness/delight) is treated here as merged into Package 1 rather than as a separate 1-node isolated component. The merge is justified by shared nature: חֶדְוָה and שִׂמְחָה are used as a hendiadys pair in the Torah's opening clause — 'מֵחֲמַת שִׂמְחָה וְחֶדְוָה' — designating a single compound spiritual state. They share the essential nature of inner gladness/rejoicing, and neither is the cause of the other. The framework rule against cause-effect merges is not violated: this is a merge by shared nature (both are expressions of spiritual joy). The dominant node of the merged package is בִּינָה (3 direct bechina connections: to שֵׁם ס\"ג, to לֵב, and indirectly through לֵב to שִׂמְחָה and through שֵׁם ס\"ג to בְּכִיָּה/מִלּוּי ס\"ג).",
+      "note_on_polarity": "All concepts in this package are oriented toward holiness and positive spiritual achievement. בִּינָה is the mother-sefira of holiness (Ima ila'ah). שֵׁם ס\"ג is the Divine Name associated with chesed and divine mercy. לֵב/heart is the seat of sincere spiritual feeling. בְּכִיָּה from joy is explicitly characterized as 'עִקַּר מַעֲלַת הַבְּכִיָּה' — the highest level of weeping. שִׂמְחָה is a cardinal Breslov virtue. There is no evil mirror package in this Torah — the teaching presents only the positive ideal, without naming the negative counterpart explicitly. The negative state (crying from sadness or crying NOT rooted in joy) is implied as the lesser form but not given a name or bechina structure in this teaching.",
+      "note_on_single_package": "Torah #175 produces exactly one package because its bechina chain is a single unified cluster. All concepts connect through the hub nodes of בִּינָה and לֵב. The teaching is architecturally simple compared to longer LM1 teachings: it is a single conceptual argument with one destination (crying must come from joy) demonstrated through a single kabbalistic chain. There is no second independent domain of bechina-connected concepts."
+    }
+  ],
+  "stats": {
+    "total_bechina_edges_in_dataset": 0,
+    "total_nodes_in_dataset": 0,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 1,
+    "packages_from_dataset_components": 0,
+    "packages_from_gap_analysis": 1,
+    "note_on_zero_edges": "Reference 175 has no pre-existing bechina edges in torahData.js. The single package is derived entirely from source-text gap analysis. See torah_175_additions.json for the proposed new edges.",
+    "good_evil_mirror": "Torah #175 does not employ the good/evil mirror structure. The teaching presents only the positive ideal of joy-rooted weeping. The negative counterpart (weeping from sadness, or weeping that is not rooted in Binah/joy) is not developed into a named bechina cluster. This is consistent with short aphoristic teachings in Likutay Moharan that present the positive ideal without elaborating on its negative counterpart.",
+    "eitza_summary": "The causal structure of Torah #175 runs entirely within and around Package 1: שִׂמְחָה —eitza→ בְּכִיָּה (joy produces/arouses crying); בְּכִיָּה מֵחֲמַת שִׂמְחָה —eitza→ נִמְתָּק הַבְּכִיָּה (crying from joy leads to the sweetening/mitigation of the crying); שִׂמְחָה —eitza→ חֲרָטָה/גַּעְגּוּעַ (joy produces regret and longing for God). The result concept 'נִמְתָּק הַבְּכִיָּה' (the crying is sweetened) is an eitza-destination, not a bechina-family member. חֲרָטָה (regret) and גַּעְגּוּעַ (longing/yearning) are eitza-results of שִׂמְחָה — what joy produces, not what joy IS. They are excluded from the package.",
+    "note_on_teaching_structure": "Torah #175 is a short kabbalistic-practical teaching with a three-step structure: (1) practical assertion — crying is best when from joy, even regret is best from joy; (2) kabbalistic proof via gematria and acronym — בְּכִיָּה = miluy of ס\"ג = points toward Binah; (3) application — since Binah IS the heart, and joy IS in the heart, therefore crying must arise FROM joy (they share the same root). The teaching concludes with the practical-spiritual consequence: through crying-from-joy, the crying is 'sweetened' (its bitterness is transformed). This is a classic Rebbe Nachman structure: derive the practical from the kabbalistic identity chain."
+  }
+}

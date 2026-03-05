@@ -1,0 +1,148 @@
+{
+  "packages": [
+    {
+      "id": "torah_48_pkg_1",
+      "torah_ref": 48,
+      "label": "סֻכָּה וּבִינָה וְתַפְלָה",
+      "label_en": "Sukka, Binah, and Prayer",
+      "polarity": "good",
+      "reason": "All nodes in this package share the same essential nature: the divine covering / protective enclosure that is simultaneously the womb of formation (binah), the force of prayer spoken with full bodily strength, the embrace of God's right hand (chesed), and the surrounding divine light (makifim). Tzeirei, the vowel marking formation, is the graphic sign of this entire cluster — it points to vayyitzar (formation), to binah (the supernal mother-womb that shelters), to the sukka (which shelters like a womb), and to the power of holy speech that IS God's own words. Chesed, the Waters of Chesed, the utterances of creation, the shadow of God's hand, and the embrace are all different angles on the same divine protective/generative force. Inner Chesed (chavdim penimiyim) is absorbed here as it shares the essential chesed/sukka nature, representing the inner aspect of the same domain.",
+      "dominant_node": "סכה",
+      "nodes": [
+        "סכה",
+        "צירי",
+        "בינה",
+        "דין ורחמים",
+        "וייצר",
+        "חסד",
+        "חבוק",
+        "חבוק יד ימין",
+        "צל יד",
+        "מי החסדים",
+        "המאמרות שבהם נברא העולם",
+        "כח התפלה מה שמתפללין בכח",
+        "מקיפים",
+        "\"והצנע לכת\"",
+        "\"ואהבת חסד\"",
+        "חסדים הפנימיים"
+      ],
+      "node_degrees": {
+        "סכה": 8,
+        "צירי": 4,
+        "חסד": 3,
+        "מקיפים": 2,
+        "כח התפלה מה שמתפללין בכח": 2,
+        "צל יד": 2,
+        "בינה": 1,
+        "דין ורחמים": 1,
+        "וייצר": 1,
+        "המאמרות שבהם נברא העולם": 1,
+        "חבוק": 1,
+        "חבוק יד ימין": 1,
+        "מי החסדים": 1,
+        "\"והצנע לכת\"": 1,
+        "\"ואהבת חסד\"": 1,
+        "חסדים הפנימיים": 1
+      },
+      "merge_notes": [
+        "Component originally split from raw graph: (a) the 14-node component connected through סכה and צירי; (b) the 2-node component {'ואהבת חסד', חסדים הפנימיים}. Component (b) was merged into the main package by shared nature: חסדים הפנימיים is an inner aspect of חסד, the same essential domain. The teaching (Micah 6:8 section) distinguishes inner from outer chesed but both remain expressions of the chesed/sukka domain. Never merged by eitza. Edge 1487 and 2315 both represent the same סכה—כח התפלה pair (one edge each direction in the source data); degree counted as 2 incidences for סכה.",
+        "The node 'חבוק יד ימין' and 'צל יד' are distinct node_ids from 'חבוק' per the dataset, and are kept separate in the node list accordingly. Their relationship: צל יד = חבוק יד ימין (edge 1094), both = aspects of סכה (edge 2569 for צל יד directly).",
+        "Node '\"והצנע לכת\"' (the full phrase, edge 1934) is distinct from 'והצנע' (edge 1365) and 'לכת' (edge 2184). The full phrase belongs to Package 1 (connected to מקיפים); the broken-out components 'והצנע' and 'לכת' belong to Package 2 (connected to יסוד and נצח והוד respectively)."
+      ]
+    },
+    {
+      "id": "torah_48_pkg_2",
+      "torah_ref": 48,
+      "label": "דַּפְנוֹת הַסֻּכָּה — נֶצַח, הוֹד, יְסוֹד",
+      "label_en": "The Walls of the Sukka — Netzach, Hod, Yesod",
+      "polarity": "good",
+      "reason": "These nodes share the essential nature of the structural sefirot that constitute the physical walls of the sukka. The teaching (Micah 6:8: 'להצנע לכת') provides three components: 'עשות משפט' (din), 'ואהבת חסד' (inner chesed), 'הצנע לכת' (the hidden walk). The latter breaks into 'הצנע' = יסוד (one handbreadth revealed, one covered) and 'לכת' = נצח והוד (the two full walls). The wall of יסוד is the partial third wall (טפח, one handbreadth only, per Sukka 6a). These concepts share the nature of 'foundational pillars that frame the sukka's enclosure' — the structural sefirot. They are distinguished from the main Package 1 nodes which represent the FUNCTION and ESSENCE of the sukka (shelter, light, prayer, chesed); this package represents the STRUCTURE.",
+      "dominant_node": "יסוד",
+      "nodes": [
+        "יסוד",
+        "והצנע",
+        "טפח",
+        "נצח והוד",
+        "לכת"
+      ],
+      "node_degrees": {
+        "יסוד": 2,
+        "והצנע": 1,
+        "טפח": 1,
+        "נצח והוד": 1,
+        "לכת": 1
+      },
+      "merge_notes": [
+        "Two raw connected components merged by shared nature: Component A = {יסוד, והצנע, טפח} (edges 1365, 1366); Component B = {נצח והוד, לכת} (edge 2184). Shared nature: both components represent structural sefirot forming the dafnot (walls) of the sukka as derived from Micah 6:8 ('הצנע לכת'). The Rebbe explicitly teaches: the walls are נצח and הוד (two full walls) and יסוד (one partial wall = one טפח). 'הצנע' = יסוד; 'לכת' = נצח והוד. Both components belong to the same structural teaching about the sukka's walls.",
+        "Note on יסוד as dominant: יסוד has degree 2 (connected to both והצנע and טפח), while נצח והוד has degree 1. יסוד is named dominant for degree, but conceptually the cluster represents all three sefirot equally."
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 18,
+    "total_nodes": 21,
+    "total_packages": 2,
+    "raw_connected_components": 4,
+    "components_before_merge": [
+      {
+        "id": "raw_component_1",
+        "nodes": [
+          "סכה", "צירי", "בינה", "דין ורחמים", "וייצר",
+          "חסד", "חבוק", "חבוק יד ימין", "צל יד",
+          "מי החסדים", "המאמרות שבהם נברא העולם",
+          "כח התפלה מה שמתפללין בכח", "מקיפים", "\"והצנע לכת\""
+        ],
+        "size": 14
+      },
+      {
+        "id": "raw_component_2",
+        "nodes": ["יסוד", "והצנע", "טפח"],
+        "size": 3
+      },
+      {
+        "id": "raw_component_3",
+        "nodes": ["נצח והוד", "לכת"],
+        "size": 2
+      },
+      {
+        "id": "raw_component_4",
+        "nodes": ["\"ואהבת חסד\"", "חסדים הפנימיים"],
+        "size": 2
+      }
+    ],
+    "merge_operations": [
+      {
+        "from_components": ["raw_component_3", "raw_component_2"],
+        "into_package": "torah_48_pkg_2",
+        "basis": "shared_nature",
+        "rationale": "Both are sefirot forming the structural walls (dafnot) of the sukka, derived from the same verse (Micah 6:8, hatzne'a lechet). Same domain: structural frame of the sukka."
+      },
+      {
+        "from_components": ["raw_component_4"],
+        "into_package": "torah_48_pkg_1",
+        "basis": "shared_nature",
+        "rationale": "חסדים הפנימיים is an inner aspect of חסד, which is already the core domain of Package 1. 'ואהבת חסד' and חסדים הפנימיים are an inner expression of the same chesed/sukka nature that pervades Package 1."
+      }
+    ],
+    "edge_inventory": [
+      {"edge_id": 528, "node1": "צירי", "node2": "בינה", "package": "torah_48_pkg_1"},
+      {"edge_id": 741, "node1": "צירי", "node2": "דין ורחמים", "package": "torah_48_pkg_1"},
+      {"edge_id": 1035, "node1": "צירי", "node2": "וייצר", "package": "torah_48_pkg_1"},
+      {"edge_id": 1091, "node1": "סכה", "node2": "חבוק", "package": "torah_48_pkg_1"},
+      {"edge_id": 1094, "node1": "צל יד", "node2": "חבוק יד ימין", "package": "torah_48_pkg_1"},
+      {"edge_id": 1200, "node1": "המאמרות שבהם נברא העולם", "node2": "חסד", "package": "torah_48_pkg_1"},
+      {"edge_id": 1219, "node1": "\"ואהבת חסד\"", "node2": "חסדים הפנימיים", "package": "torah_48_pkg_1"},
+      {"edge_id": 1365, "node1": "והצנע", "node2": "יסוד", "package": "torah_48_pkg_2"},
+      {"edge_id": 1366, "node1": "טפח", "node2": "יסוד", "package": "torah_48_pkg_2"},
+      {"edge_id": 1487, "node1": "סכה", "node2": "כח התפלה מה שמתפללין בכח", "package": "torah_48_pkg_1"},
+      {"edge_id": 1934, "node1": "\"והצנע לכת\"", "node2": "מקיפים", "package": "torah_48_pkg_1"},
+      {"edge_id": 2184, "node1": "לכת", "node2": "נצח והוד", "package": "torah_48_pkg_2"},
+      {"edge_id": 2314, "node1": "חסד", "node2": "סכה", "package": "torah_48_pkg_1"},
+      {"edge_id": 2315, "node1": "כח התפלה מה שמתפללין בכח", "node2": "סכה", "package": "torah_48_pkg_1"},
+      {"edge_id": 2316, "node1": "מי החסדים", "node2": "סכה", "package": "torah_48_pkg_1"},
+      {"edge_id": 2317, "node1": "מקיפים", "node2": "סכה", "package": "torah_48_pkg_1"},
+      {"edge_id": 2318, "node1": "צירי", "node2": "סכה", "package": "torah_48_pkg_1"},
+      {"edge_id": 2569, "node1": "סכה", "node2": "צל יד", "package": "torah_48_pkg_1"}
+    ]
+  }
+}

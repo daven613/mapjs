@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "source": "Torah #130 (Likutay Moharan Vol. 1)",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "condition": "These packages are CONDITIONAL — they would exist only after the three missing bechina edges identified in torah_130_additions.json are added to the dataset. Based on the CURRENT dataset (zero bechina edges for reference 130), no packages can be formed. The two proposed packages below represent the conceptual structure that the source text warrants.",
+  "new_packages": [
+    {
+      "id": 1,
+      "torah_ref": 130,
+      "label": "עֲנָוָה וּשְׁמִירַת הַבְּרִית",
+      "label_en": "Humility and Guarding the Covenant",
+      "polarity": "good",
+      "reason": "The teaching's positive pole: ענוה (humility) is the essential quality that enables שמירת הברית (sexual purity/guarding the covenant). In Torah #130's argument, the two concepts share the same essential domain — they are two faces of the same spiritual posture. The person who truly has ענוה is the one who achieves שמירת הברית (Moshe, Boaz, Palti ben Laish). Perישut (abstinence/asceticism) is an outcome/name for the same state. These concepts are structurally parallel: they describe the same essential spiritual reality from the angle of virtue (ענוה) and from the angle of covenantal integrity (שמירת הברית).",
+      "dominant_node": "ענוה",
+      "nodes": [
+        "ענוה",
+        "שמירת הברית",
+        "פרישות"
+      ],
+      "node_degrees": {
+        "ענוה": 2,
+        "שמירת הברית": 1,
+        "פרישות": 1
+      },
+      "conditional_edges_required": [
+        "ענוה ↔ שמירת הברית (bechina — these two are the positive-pole equivalents in the teaching; ענוה = the capacity for שמירת הברית by shared nature, as demonstrated by Moshe's case where they are entirely co-extensive)"
+      ],
+      "good_evil_mirror": "This package (good pole) is the exact mirror of Package 2 (evil pole). Package 1 is the state of ענוה; Package 2 is the state of גדלות/גאוה. One is the presence of the divine image in the soul; the other is its self-deification. The teaching's entire argument is the binary between these two poles.",
+      "merge_notes": [
+        "פרישות (abstinence) merged into this package rather than being treated as a separate concept: the source text uses it to describe what ענוה enables ('הָיָה אֶפְשָׁר לוֹ לִהְיוֹת פָּרוּשׁ לְגַמְרֵי'). In this Torah, perישut and shmirat ha-brit are co-extensive — both name the same positive state. This is NOT a causal eitza (ענוה does not produce פרישות as a separate event; rather, total ענוה IS total perישut). Merged by shared nature."
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 130,
+      "label": "גַּדְלוּת וְתַאֲוַת נִיאוּף",
+      "label_en": "Arrogance and the Lust for Immorality",
+      "polarity": "evil",
+      "reason": "The teaching's negative pole: גדלות/גאוה (arrogance/pride) is the essential quality that enables the yetzer hara to dominate through sexual lust. The Rebbe explicitly identifies gadlut with gaavah ('כָּל הַגָּדוֹל מֵחֲבֵרוֹ – שֶׁיֵּשׁ לוֹ גַּדְלוּת') and the yetzer hara's essence with taavas niuf, citing the Zohar: 'the essence of the evil inclination is to expose nakedness.' Three concepts share the same essential nature in the evil domain: (1) גדלות/גאוה — the spiritual state of arrogance; (2) יצר הרע — the evil inclination that operates through this state; (3) תאוות ניאוף — sexual lust, which IS the essence of the yetzer hara (not merely a consequence, but its definitional core). All three are bechina-equivalent: they are different names/facets of the same evil force.",
+      "dominant_node": "יצר הרע",
+      "nodes": [
+        "גדלות",
+        "גאוה",
+        "יצר הרע",
+        "תאוות ניאוף"
+      ],
+      "node_degrees": {
+        "יצר הרע": 2,
+        "גדלות": 1,
+        "גאוה": 1,
+        "תאוות ניאוף": 1
+      },
+      "conditional_edges_required": [
+        "גדלות ↔ גאוה (bechina — the Rebbe's gloss 'שֶׁיֵּשׁ לוֹ גַּדְלוּת' defines 'gadol me-chavero' as having pride/arrogance; they are the same essential quality named differently)",
+        "יצר הרע ↔ תאוות ניאוף (bechina — 'זֶה עִקַּר הַיֵּצֶר הָרָע... עִקָּרָא דְּיִצְרָא בִּישָׁא לְגַלָּאָה עֲרָיִין'; the yetzer hara's essence IS the drive toward sexual immorality)"
+      ],
+      "good_evil_mirror": "This package (evil pole) is the exact mirror of Package 1 (good pole). Package 2's gadlut/gaavah mirrors Package 1's ענוה; Package 2's yetzer/taavas niuf mirrors Package 1's shmirat ha-brit. The Torah presents a perfect duality: ענוה → שמירת הברית vs. גאוה/גדלות → יצר הרע/תאוות ניאוף.",
+      "merge_notes": [
+        "גדלות and גאוה treated as two nodes of the same bechina (one is the abstract quality, one is its moral characterization) following the Rebbe's definitional gloss. They could alternatively be treated as a single node under one label — but since the text uses both terms, they are recorded as a bechina pair within the package.",
+        "יצר הרע ↔ תאוות ניאוף: Note that in many other Torahs, יצר הרע is a node with many connections. Here, in Torah #130's local context, the specific bechina established is that its ESSENCE is taavas niuf. This does not conflict with other Torahs' treatments of יצר הרע — per framework rule, each Torah's packages are entirely local."
+      ]
+    }
+  ],
+  "proposed_structure_if_edges_added": {
+    "total_packages": 2,
+    "total_nodes": 7,
+    "good_evil_mirror_present": true,
+    "eitza_between_packages": "Package 2 (evil: גדלות/יצר הרע/תאוות ניאוף) does NOT flow into Package 1 via eitza — rather, Package 1 (ענוה/שמירת הברית) is the RESOLUTION/ANTIDOTE to Package 2. The two existing eitza edges in the dataset both flow FROM ענוה (Package 1's dominant node) TO outcomes (שמירת הברית / נצול מנאוף), which are Package 1 concepts. The implicit eitza structure is: Package 2 (gadlut → yetzer) // COUNTERED BY // Package 1 (ענוה → shmirat ha-brit). The packages are in tension, not sequential flow.",
+    "teaching_argument": {
+      "summary": "The greater a person is, the greater his yetzer hara becomes in the domain of sexual immorality — because sexual lust IS the yetzer hara's essential nature (Zohar). The CURE for this intensified yetzer is not strength or willpower but humility (ענוה): because the yetzer hara operates through gadlut/gaavah, its inverse (ענוה) neutralizes it. The proof: Moshe, the humblest of all men, could be totally abstinent. The magnitude of challenge scales with spiritual stature — but so does the power of ענוה to protect.",
+      "structure": "[Pkg 2: evil] גדלות/גאוה → יצר הרע/תאוות ניאוף // ANTIDOTE // [Pkg 1: good] ענוה → שמירת הברית/פרישות"
+    }
+  },
+  "observations": "Torah #130 contains exactly TWO conceptual poles — one good, one evil — in a binary structure with no intermediate packages. The entire teaching is the contrast between these two poles. If the three missing bechina edges are added, two packages of 3-4 nodes each would emerge, with a perfect good/evil mirror symmetry. The Kushit bechina (כושית = יפי) is the narrative hook — it belongs to neither the good nor the evil pole; rather, it is the story element that occasions the teaching. It could stand as a neutral Package 3 ('כּוּשִׁית וְיֹפִי', polarity: neutral, 2 nodes: כושית, יפי) — a narrative-occasion package. However, given its minimal conceptual weight (it is cited only to explain the biblical story's context, not as a recurring thematic element), it is MORE appropriate to note it as a standalone conceptual pair that does not form a full package by itself. RECOMMENDATION: Record the כושית ↔ יפי bechina edge in the dataset (reference=130, type=bechina) but do not create a Package 3 for it; the concept-pair serves as contextual annotation rather than a true thematic cluster."
+}

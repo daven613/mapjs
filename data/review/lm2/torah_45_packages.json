@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "source": "Torah #45 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 45,
+      "volume": "lm2",
+      "label": "שַׁבָּת וְהַנְּקֻדָּה הַפְּנִימִית וְהַצַּדִּיק",
+      "label_en": "Shabbat, the Inner Point, and the Tzaddik",
+      "polarity": "good",
+      "reason": "These three concepts share one essential nature: the holy inner core from which all sustenance flows. The Rebbe explicitly uses bechina language twice: 'שַׁבָּת הִיא נְקֻדָּה הַפְּנִימִית' (Shabbat IS the inner point) and 'הַצַּדִּיק הוּא בְּחִינַת שַׁבָּת, בְּחִינַת הַנְּקֻדָּה פְּנִימִית' (the Tzaddik IS a bechina of Shabbat, IS a bechina of the inner point). These are not cause-and-effect: the Tzaddik does not produce Shabbat, nor does Shabbat produce the inner point. Rather, all three are different names for the same cosmic reality — the singular holy source from which all the surrounding circles (the six days, all dimensions of created reality) receive their vitality. The Rebbe cites the Zohar (Vayakhel 204a) as support. The inner point is also the goal of the spiritual seeker who journeys to the Tzaddik: reaching the Tzaddik = reaching Shabbat = reaching the inner point.",
+      "dominant_node": "הנקדה פנימית",
+      "nodes": [
+        "שבת",
+        "הנקדה פנימית",
+        "צדיק"
+      ],
+      "node_degrees": {
+        "שבת": 2,
+        "הנקדה פנימית": 2,
+        "צדיק": 2
+      },
+      "source_bechinas": [
+        "שַׁבָּת הִיא נְקֻדָּה הַפְּנִימִית, וּמִמֶּנָּהּ יוֹנְקִים כָּל הַשִּׁשָּׁה יָמִים",
+        "הַצַּדִּיק הוּא בְּחִינַת שַׁבָּת, בְּחִינַת הַנְּקֻדָּה פְּנִימִית, שֶׁמִּמֶּנּוּ יוֹנְקִים הַכֹּל"
+      ],
+      "mirror": "The evil mirror is the domain of the klipot and the wicked who circle the inner point but cannot enter it ('סָבִיב רְשָׁעִים יִתְהַלָּכוּן'). However, the Rebbe does not build a parallel evil bechina cluster — the evil side is described functionally (they circle, they obstruct) rather than by bechina equations. There is no explicit 'X is a bechina of Y' for the evil domain in this Torah.",
+      "merge_notes": [
+        {
+          "merged_nodes": ["שבת", "הנקדה פנימית", "צדיק"],
+          "reason": "The dataset contains one bechina edge: שבת ↔ הנקדה פנימית (reference 1045). The source text then adds a second explicit bechina statement identifying the Tzaddik as 'בְּחִינַת שַׁבָּת, בְּחִינַת הַנְּקֻדָּה פְּנִימִית.' Since צדיק is bechina of שבת, and שבת is bechina of הנקדה פנימית, all three form one connected bechina component. The Tzaddik node does not yet appear in the dataset and must be added."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 45,
+      "volume": "lm2",
+      "label": "שֵׁשֶׁת יְמֵי הַחֹל וְהָעִגּוּלִים",
+      "label_en": "The Six Weekdays and the Circles",
+      "polarity": "neutral",
+      "reason": "The six weekdays (ששת הימים) and the circles (עיגולים) are explicitly equated: 'הַשִּׁשָּׁה יָמִים, שֶׁהֵם בְּחִינַת הָעִגּוּלִים סְבִיב הַנְּקֻדָּה.' They share the same essential nature: both are the outer ring that surrounds and depends on the inner point. The six days are not a cause of the circles — they ARE the circles. This is a structural/neutral domain: the circles/weekdays serve as the spatial and temporal vessel through which all of creation draws from the inner core. They can be inhabited by souls who are moving closer to or further from the inner point — making them a 'battlefield' domain, neutral in polarity. The klipot manipulate people within this circle-domain; the righteous journey through it toward the inner point.",
+      "dominant_node": "העיגולים",
+      "nodes": [
+        "ששת הימים",
+        "העיגולים"
+      ],
+      "node_degrees": {
+        "ששת הימים": 1,
+        "העיגולים": 1
+      },
+      "source_bechinas": [
+        "הַשִּׁשָּׁה יָמִים, שֶׁהֵם בְּחִינַת הָעִגּוּלִים סְבִיב הַנְּקֻדָּה, כְּמוֹ שֶׁכָּתוּב בַּזֹּהַר"
+      ],
+      "mirror": "The circles are not evil in themselves — they are the space through which the wicked walk (סביב) without penetrating. Package 2 is therefore the arena in which the good (approaching the inner point) and evil (being kept outside) play out. It is neutral rather than good or evil.",
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 1,
+    "total_bechina_edges_note": "One bechina edge in dataset (שבת ↔ הנקדה פנימית, reference 1045). Two additional bechina relationships identified from the source text: (1) צדיק = שבת = הנקדה פנימית; (2) ששת הימים = העיגולים. These should be added as dataset edges.",
+    "total_nodes": 2,
+    "total_nodes_note": "2 nodes in dataset (שבת, הנקדה פנימית). 3 additional nodes identified from source text (צדיק, ששת הימים, העיגולים).",
+    "total_packages": 2,
+    "raw_connected_components": 1,
+    "good_packages": 1,
+    "evil_packages": 0,
+    "neutral_packages": 1,
+    "torah_argument_structure": "This is a very brief Torah (4 sentences). Its argument: (1) Shabbat = inner point; the six days = the circles around it [Pkg 2]. (2) The klipot keep the wicked in the circles and away from the inner point, but as long as they remain in the circles there is still hope. (3) The Tzaddik = Shabbat = inner point [Pkg 1] — the goal of the journey. The eitza flow: seek the Tzaddik (Pkg 1) → the klipot create obstacles → but perseverance through the circles leads to the inner point.",
+    "evil_domain_note": "The evil side (קלפות, רשעים, מניעות, משומדים) is described behaviorally and narratively in this Torah, not through explicit bechina equations. There is no 'X is a bechina of Y' construction for any evil concept. Therefore no evil package is formed from the bechina graph. The evil domain appears implicitly as the obstruction between Package 2 (circles) and Package 1 (inner point)."
+  }
+}

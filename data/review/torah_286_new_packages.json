@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "source": "Torah #286",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": 2,
+      "torah_ref": 286,
+      "label": "גַּן עֵדֶן וְחָכְמַת אֱלֹקוּת",
+      "label_en": "Gan Eden and Divine Wisdom",
+      "polarity": "good",
+      "reason": "The Torah opens with an explicit bechina structure: Gan Eden has two aspects — גן and עדן — which are explicitly identified as 'בְּחִינַת חָכְמָה עִלָּאָה וְחָכְמָה תַּתָּאָה' (upper wisdom and lower wisdom). This is a triad of bechina-connected concepts: גן עדן ↔ חכמה עלאה (via גן) AND גן עדן ↔ חכמה תתאה (via עדן). The text also adds: 'כִּי עִקַּר תַּעֲנוּג גַּן עֵדֶן הוּא הַשָּׂגַת חָכְמַת אֱלֹקוּת' — the essential pleasure of Gan Eden IS the apprehension of divine wisdom. This makes divine wisdom (חכמת אלקות) a third bechina of Gan Eden. The gates of Gan Eden (שערי גן עדן) are structurally described as 'בְּחִינַת שַׁעֲרֵי גַּן עֵדֶן' — they are the entry-points into this wisdom cluster. All of these form a coherent independent domain: the destination/reward of the Torah's teaching, defined by its parallel aspects (not by cause-and-effect). This domain is entirely absent from the existing dataset and constitutes a genuine new package.",
+      "proposed_nodes": [
+        "גן עדן",
+        "חכמה עלאה",
+        "חכמה תתאה",
+        "חכמת אלקות",
+        "שערי גן עדן"
+      ],
+      "proposed_edges": [
+        {
+          "node1": "גן (aspect of גן עדן)",
+          "node2": "חכמה עלאה",
+          "proof": "גַּן וְעֵדֶן, וְהֵם בְּחִינַת חָכְמָה עִלָּאָה וְחָכְמָה תַּתָּאָה"
+        },
+        {
+          "node1": "עדן (aspect of גן עדן)",
+          "node2": "חכמה תתאה",
+          "proof": "גַּן וְעֵדֶן, וְהֵם בְּחִינַת חָכְמָה עִלָּאָה וְחָכְמָה תַּתָּאָה"
+        },
+        {
+          "node1": "גן עדן",
+          "node2": "חכמת אלקות",
+          "proof": "עִקַּר תַּעֲנוּג גַּן עֵדֶן הוּא הַשָּׂגַת חָכְמַת אֱלֹקוּת"
+        },
+        {
+          "node1": "שערי גן עדן",
+          "node2": "גן עדן",
+          "proof": "יֵשׁ שְׁעָרִים, הַיְנוּ בְּחִינַת שַׁעֲרֵי גַּן עֵדֶן, שֶׁעַל־יְדֵי־זֶה זוֹכִין לִכְנֹס לְגַן עֵדֶן"
+        }
+      ],
+      "dominant_node": "גן עדן",
+      "mirror_package": null,
+      "note": "No evil mirror for this package is present in the surviving text. The Torah is explicitly a fragment ('נִשְׁכַּח הָרֹב') and the evil mirror may have been in the forgotten portion."
+    }
+  ],
+  "observations": "Torah #286 is a fragmentary teaching — the text explicitly states 'נִשְׁכַּח הָרֹב' (most was forgotten) and records only what was remembered. Despite this, the surviving text contains at minimum two distinct bechina clusters that should form two packages:\n\n1. Package 1 (already identified): מִשְׁפְּטֵי הַתּוֹרָה / פּוֹסְקִים / שׁוֹפְטִים וְשׁוֹטְרִים — the domain of Torah law adjudication (the means/path). This is the instrumental domain: the act of studying Poskim creates a sovereign who can raise the sunken gates.\n\n2. Package 2 (proposed here): גַּן עֵדֶן / חָכְמָה עִלָּאָה / חָכְמָה תַּתָּאָה / חָכְמַת אֱלֹקוּת / שַׁעֲרֵי גַּן עֵדֶן — the domain of divine wisdom / spiritual destination (the goal/reward). This is the telos domain: where the Torah law path leads to.\n\nThe two packages are connected by an eitza chain (Torah law → king/ruler → raises gates → Gan Eden), not by bechina. This confirms they are genuinely two separate packages with a causal relationship between them, exactly as expected by the framework.\n\nThe single bechina edge currently in the dataset (Edge 2483) captures only one node-pair from Package 1. The entire Package 2 cluster is absent from the dataset. New bechina edges should be added for the גן עדן / חכמה cluster based on the source text quotations provided in torah_286_additions.json."
+}

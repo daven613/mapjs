@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "source": "Torah #127 (Likutay Moharan Vol. 1)",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, all reference===127 edges from torahData.js (result: zero — reference 127 does not appear anywhere in the dataset), and the full source text torah_127.txt. Scanned the entire source text for explicit bechina language (בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, לְשׁוֹן, הוּא בְּחִינַת) and for implicit parallel-aspect equalities. Classified each concept and each inter-concept relationship as bechina or eitza. Cross-checked the cross-referenced Torah #29 (torah_29.txt) to confirm Torah #127's function as a practical appendix. Confirmed that no bechina language appears in the two sentences of Torah #127."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_reference_127_edges_in_dataset": 0,
+    "total_reference_127_bechina_edges": 0,
+    "total_reference_127_eitza_edges": 0,
+    "nodes_accounted_for_in_packages": {},
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset_as_ref_127": [
+      "בְּגָדִים (garments)",
+      "חַשְׁמַ\"ל (Chashmal / luminous entity of Ezekiel 1:4)",
+      "שְׁמִירָה (protection / guardianship)",
+      "קִלְקוּל הַשְּׁמִירָה (corruption of the protection)",
+      "שְׁלֵמִים (whole / intact — quality of garments)",
+      "קְרוּעִים (torn — defective state of garments)",
+      "נְקִיּוּת (cleanliness)",
+      "כְּתָמִים (stains)"
+    ],
+    "bechina_language_scan": {
+      "found": false,
+      "detail": "The word בְּחִינַת does not appear anywhere in the two sentences of Torah #127. No equivalent bechina-declaration language (הַיְנוּ, נִקְרָא, כְּמוֹ שֶׁכָּתוּב used as identity rather than proof, הוּא בְּחִינַת) was found. The single structural statement — 'הַבְּגָדִים הֵם בְּסוֹד הַחַשְׁמַ\"ל' — uses 'בְּסוֹד' (in the secret/mystery of), which is a kabbalistic mystical correspondence marker, not a bechina-equivalence declaration. Per the framework, bechina requires explicit language stating that two concepts share the same essential nature; 'בְּסוֹד' establishes a mystical dimensional correspondence but is not the same as declaring shared essential nature. The subordinate clause 'שֶׁהוּא שְׁמִירָה' ('which is protection') identifies the Chashmal's function/essence, but this is a gloss on a single concept (Chashmal), not a bechina-declaration equating two independently-named concept nodes. All remaining inter-concept relationships in the text are eitza (causal-sequential)."
+    },
+    "source_text_concept_inventory": [
+      {
+        "concept": "בְּגָדִים (garments)",
+        "role_in_text": "Primary subject — the physical and spiritual object whose nature and proper care are discussed",
+        "relationship_type": "eitza-subject / mystical-correspondent",
+        "bechina_declared": false,
+        "note": "The Rebbe states garments are 'בְּסוֹד הַחַשְׁמַ\"ל' — in the mystery/dimension of the Chashmal. This is not a bechina declaration equating garments to the Chashmal as sharing the same essential nature; it is a mystical assignment placing garments within a kabbalistic domain. The bechina of garments = malkhut, and garments = speech/malkhut-peh, are established in Torah #29 (cross-referenced here explicitly), not in Torah #127 itself. In Torah #127, garments function as the subject of an eitza chain: garments-are-protection → torn garments corrupt protection → therefore maintain garments intact."
+      },
+      {
+        "concept": "חַשְׁמַ\"ל (Chashmal)",
+        "role_in_text": "The kabbalistic entity/domain to which garments belong; identified as the protection-principle",
+        "relationship_type": "mystical-correspondent (be-sod) / eitza-mechanism",
+        "bechina_declared": false,
+        "note": "The Chashmal is introduced as the kabbalistic dimension within which garments operate. The clause 'שֶׁהוּא שְׁמִירָה' identifies the Chashmal's essential nature as protection, but this is a definitional gloss on a single concept. In other Torahs in the dataset, the Chashmal appears as a bechina of other concepts: in Torah #21, לבוש (garment/vestment) is a bechina of the Chashmal (edge 1240); in Torah #35, the Chashmal is a bechina of 'דובר אמת בלבבו' (one who speaks truth in his heart, edge 23) and 'נגה' / nogah (edge 2035); in Torah #19, Chashmal is a bechina of מילה (circumcision, edge 1241). None of these edges bear reference 127. Torah #127 does not create any new bechina of the Chashmal — it simply invokes the Chashmal as an already-known principle to explain the nature of garments."
+      },
+      {
+        "concept": "שְׁמִירָה (protection / guardianship)",
+        "role_in_text": "The essential function/nature of the Chashmal; the theological reason garments must be maintained intact",
+        "relationship_type": "eitza-cause (the protection-principle drives the practical command)",
+        "bechina_declared": false,
+        "note": "Protection (shmirah) is declared to be the nature of the Chashmal ('שֶׁהוּא שְׁמִירָה'). This is the closest this Torah comes to bechina language, but it is a subordinate definitional clause, not a standalone bechina-declaration equating two concept-nodes. The word 'שְׁמִירָה' appears in the dataset as a node connected to other concepts in various Torahs (e.g., 'שמירה מנאוף', 'שמירה מעצת הנחש'), but those edges are from other reference numbers, not 127."
+      },
+      {
+        "concept": "קִלְקוּל הַשְּׁמִירָה (corruption of the protection)",
+        "role_in_text": "The theological consequence of torn garments — the damage that torn garments cause to the protective principle",
+        "relationship_type": "eitza-effect",
+        "bechina_declared": false,
+        "note": "Pure eitza: torn garments → corruption of protection. This is a causal consequence, not a parallel-identity declaration."
+      },
+      {
+        "concept": "בְּגָדִים שְׁלֵמִים (whole/intact garments)",
+        "role_in_text": "The normative state commanded — garments must always be whole",
+        "relationship_type": "eitza-prescription",
+        "bechina_declared": false,
+        "note": "This is the practical imperative that flows from the eitza chain. Not a bechina concept."
+      },
+      {
+        "concept": "בְּגָדִים קְרוּעִים (torn garments)",
+        "role_in_text": "The prohibited state — torn garments are a corruption of the shmirah-principle",
+        "relationship_type": "eitza-prohibition-reason",
+        "bechina_declared": false,
+        "note": "Torn garments are the negative eitza-cause that produces corruption of protection. Not a bechina node."
+      },
+      {
+        "concept": "תְּבִיעָה / תּוֹבְעִין (the garments' 'claim' / holding accountable)",
+        "role_in_text": "The remarkable statement that garments themselves take the person to account if dishonored",
+        "relationship_type": "eitza-consequence (mystical accountability)",
+        "bechina_declared": false,
+        "note": "This is an eitza consequence of the garment-shmirah relationship: because garments embody the protection-principle, disrespecting them causes them to become accusers. This is structural consequence-language, not bechina-equivalence. In Torah #29 this concept is grounded in the malkhut-dimension of garments ('dina d'malkhuta dan oto' — the law of the kingdom judges him), but Torah #127 does not re-declare those bechinas; it presupposes them and draws a practical conclusion."
+      },
+      {
+        "concept": "נְקִיּוּת (cleanliness) / כְּתָמִים (stains)",
+        "role_in_text": "The practical application — garments must be kept clean and free of stains",
+        "relationship_type": "eitza-practical-rule",
+        "bechina_declared": false,
+        "note": "Pure practical instruction. The parenthetical note '(גֹּדֶל אַזְהָרָה זֹאת לִשְׁמֹר אֶת הַבְּגָדִים מִכְּתָמִים, עַיֵּן לְעֵיל בְּסִימָן כט)' explicitly redirects the reader to Torah #29 for the theological grounding of this rule — confirming that Torah #127 itself contains no independent bechina-level argument."
+      }
+    ],
+    "cross_reference_analysis": {
+      "torah_referenced": 29,
+      "reference_text": "עַיֵּן לְעֵיל בְּסִימָן כט",
+      "relationship": "Torah #127 is an explicit appendix to Torah #29. The full bechina network for garments — garments = malkhut, garments = speech/malkhut-peh (בְּגָדִים לְבָנִים = תִּקּוּן הַדִּבּוּר), garments = honor (כָּבוֹד = בְּגָדִים), honor = kingly glory (מֶלֶךְ הַכָּבוֹד), stains on garments = dam niddah of the Shekhinah — is established in Torah #29, which contains extensive bechina-rich text. Torah #127 adds only the Chashmal-dimension as an additional mystical grounding for the same practical rule about garment-care. The Chashmal framing is new relative to Torah #29 (which does not use this terminology), but it is introduced via 'בְּסוֹד' rather than 'בְּחִינַת' and does not add any bechina-edges to the dataset under reference 127.",
+      "implication_for_gap_analysis": "The fact that Torah #127 contains no bechina language is not a dataset gap. The gap-check is: does the source text make bechina declarations not yet in the dataset? Answer: No. Torah #127 makes no bechina declarations at all. The Chashmal-shmirah correspondence is introduced via be-sod language, which is below the threshold for bechina-edge creation. The garments/Chashmal connection could potentially be entered as a reference-127 bechina edge if one adopts a liberal interpretation of 'בְּסוֹד' as equivalent to 'בְּחִינַת' — but the framework explicitly defines bechina by explicit language markers, and 'בְּסוֹד' is not among them. Recommendation: do not add this as a bechina edge."
+    },
+    "chashmal_in_dataset_other_references": [
+      {
+        "edge_id": 23,
+        "reference": 35,
+        "type": "bechina",
+        "node1": "חשמ\"ל",
+        "node2": "\"דובר אמת בלבבו\"",
+        "note": "Chashmal = speaking truth in one's heart (Torah #35)"
+      },
+      {
+        "edge_id": 1240,
+        "reference": 21,
+        "type": "bechina",
+        "node1": "לבוש",
+        "node2": "חשמ\"ל",
+        "note": "Vestment/garment (levush) = Chashmal (Torah #21) — closest thematic parallel to Torah #127's be-sod statement"
+      },
+      {
+        "edge_id": 1241,
+        "reference": 19,
+        "type": "bechina",
+        "node1": "מילה",
+        "node2": "חשמ\"ל",
+        "note": "Circumcision = Chashmal (Torah #19)"
+      },
+      {
+        "edge_id": 2035,
+        "reference": 82,
+        "type": "bechina",
+        "node1": "חשמ\"ל",
+        "node2": "נגה",
+        "note": "Chashmal = nogah/radiance (Torah #82)"
+      },
+      {
+        "edge_id": 1706,
+        "reference": 19,
+        "type": "bechina",
+        "node1": "מ\"ל מ\"חשמ\"ל\"",
+        "node2": "מדורה של שבעין כוכבין",
+        "note": "The 'mal' component of Chashmal = the ring of 70 stars (Torah #19)"
+      }
+    ],
+    "structural_conclusion": "Torah #127 is architecturally a pure practical appendix. It presents a single mystical grounding ('garments are in the mystery of the Chashmal = protection') and derives from it one practical rule ('therefore keep garments whole, not torn') and one spiritual consequence ('garments themselves will hold you accountable'). The parenthetical cross-reference to Torah #29 makes explicit that the full conceptual architecture behind this rule lives in that earlier Torah. Torah #127 adds no new bechina nodes to the dataset and no new bechina edges. The be-sod language used (rather than bechina language) reflects a different mode of kabbalistic discourse — invoking a mystical dimension rather than declaring a structural parallel. The absence of bechina-type relationships in Torah #127 is a genuine structural feature of this teaching, not a dataset gap."
+  }
+}

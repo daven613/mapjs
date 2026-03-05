@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "source": "Torah #33",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 33,
+      "label": "דַּעַת וְאַהֲבָה — חַיִּים, כֹּהֵן, וְחֶסֶד",
+      "label_en": "Da'at and Love — Life, the Kohen, and Chesed",
+      "polarity": "good",
+      "reason": "All four concepts share the essential nature of the inner holy knowing (da'at) as love and life-force. חיים and דעת are declared identical: 'חַיִּים הוּא בְּחִינַת דַּעַת' — life IS an aspect of da'at, for 'מְקוֹר חַיִּים שֵׂכֶל בְּעָלָיו' (Proverbs 16:22). כהן and חסד are declared identical: 'כֹּהֵן הוּא בְּחִינוֹת חֶסֶד.' The חסד/אהבה identity is explicit throughout the text ('הַחֶסֶד הַיְנוּ הָאַהֲבָה'). The link between the two sub-clusters (חיים-דעת and כהן-חסד) is bechina, not eitza: da'at is the inner cognitive face of love ('אַהֲבָה שֶׁבְּדַעַת'), and chesed is the relational face of the same reality. Both are expressions of the same essential quality — the holy ahavah that God has for Israel, which is simultaneously the life-force of da'at and the generous outpouring of chesed. The kohen 'guards da'at' (יִשְׁמְרוּ דַּעַת) not as a cause-effect chain but because the kohen IS chesed IS love — and love IS da'at IS life. The entire Torah is built on this single good cluster: the ahavah-she-b'da'at that underlies all of existence.",
+      "dominant_node": "דעת",
+      "nodes": [
+        "חיים",
+        "דעת",
+        "כהן",
+        "חסד"
+      ],
+      "node_degrees": {
+        "חיים": 1,
+        "דעת": 1,
+        "כהן": 1,
+        "חסד": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["חיים", "דעת", "כהן", "חסד"],
+          "reason": "The bechina subgraph for Torah #33 contains exactly 2 edges forming 2 isolated 2-node components: CC-A (חיים ↔ דעת, edge 763) and CC-B (כהן ↔ חסד, edge 1201). Both components are of equal size (2 nodes each); neither is 'larger.' The merge rule applies to small components (1-2 nodes), which both are. Merge criterion: SHARED NATURE, not eitza. The two sub-clusters share the essential nature of the holy ahavah-she-b'da'at that is the Torah's central concept. The source text explicitly equates chesed with ahavah ('הַחֶסֶד הַיְנוּ הָאַהֲבָה') and da'at with life ('חַיִּים הוּא בְּחִינַת דַּעַת'). The teaching's climax at section ז (lines 43-45) puts all four nodes into one conceptual frame: 'מִי הָאִישׁ הֶחָפֵץ חַיִּים' — חפץ (desire) = לב (heart); חַיִּים = דַּעַת. The kohen who has chesed guards da'at (שמירת דעת). The essential nature of da'at-as-love and chesed-as-da'at makes these two 2-node clusters faces of the same good reality. Merging is by shared nature, not cause-effect."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 2,
+    "total_nodes": 4,
+    "total_packages": 1,
+    "raw_connected_components": 2
+  }
+}

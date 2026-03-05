@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "source": "Torah #191",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, checked torahData.js for reference===191 AND type==='bechina' edges (result: zero — reference 191 does not appear in torahData.js at all). Read full source text torah_191.txt (10 lines). Analyzed the text for explicit bechina language ('הוא בחינת', 'נקרא', 'הינו', 'זה בחינת', 'בחינות') and structural-parallel bechina patterns. Torah #191 is a ten-sentence philosophical reflection on the infinite capacity of the heart (לב) and its identification with Divinity, infinity, and the World to Come. The text uses the word 'בְּחִינוֹת' (bechinot) explicitly once in line 5 ('שֶׁנִּמְצָא שָׁם רַק בְּחִינוֹת אֱלֹקוּת' — 'where there are only aspects/dimensions of Divinity') and multiple identity statements ('עִקַּר הָאֱלֹקוּת הוּא בְּהַלֵּב', 'לֵב מְלָכִים אֵין חֵקֶר' used three times). All additions below propose new bechina edges warranted by the source text but entirely absent from the dataset."
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "package_label": "הַלֵּב וְהָאֱלֹקוּת — הָאֵין סוֹף שֶׁבִּפְנִים",
+      "node_id": "לב",
+      "node_text": "הַלֵּב",
+      "polarity": "good",
+      "reason": "The heart (לב) is the central concept of Torah #191, present throughout all ten lines. The text establishes the heart's essential nature through three converging bechina statements: (1) 'כִּי עִקַּר הָאֱלֹקוּת הוּא בְּהַלֵּב' — Divinity's essential place IS the heart; (2) 'לֵב מְלָכִים אֵין חֵקֶר' repeated three times — the heart's essential nature IS infinity/unsearchability; (3) 'הַלֵּב וְהַמֹּחַ... הֵם תּוֹפְסִים הַכֹּל' — the heart and brain together constitute the inner faculty that contains all. The heart is the hub node of Package 1: it is bechina-connected to מוח, to אלקות, and to לב מלכים. All bechina edges for the heart in Torah #191 are missing from the dataset.",
+      "source_quote": "כִּי עִקַּר הָאֱלֹקוּת הוּא בְּהַלֵּב, כַּמְבֹאָר בְּמָקוֹם אַחֵר",
+      "edge_type": "bechina",
+      "proposed_edges": [
+        {
+          "node1": "לב",
+          "node2": "מוח",
+          "bechina_formula": "co-expression of the same inner faculty: heart and brain together constitute the small vessel that contains everything",
+          "source_quote": "הַלֵּב וְהַמֹּחַ שֶׁקְּטַנִּים מְאֹד בִּמְקוֹמָם, הֵם תּוֹפְסִים הַכֹּל",
+          "in_dataset_already": false
+        },
+        {
+          "node1": "לב",
+          "node2": "אלקות",
+          "bechina_formula": "explicit bechinot-formula: 'שֶׁנִּמְצָא שָׁם רַק בְּחִינוֹת אֱלֹקוּת' and 'עִקַּר הָאֱלֹקוּת הוּא בְּהַלֵּב' — Divinity's essential presence IS the heart; the heart IS the vessel/expression of Divinity",
+          "source_quote": "כִּי עִקַּר הָאֱלֹקוּת הוּא בְּהַלֵּב",
+          "in_dataset_already": false
+        },
+        {
+          "node1": "לב",
+          "node2": "לב מלכים",
+          "bechina_formula": "identity through repeated naming: the heart of kings IS the paradigm of the heart's essential infinite nature — 'לֵב מְלָכִים אֵין חֵקֶר' used three times as the defining characterization",
+          "source_quote": "כִּי לֵב מְלָכִים אֵין חֵקֶר",
+          "in_dataset_already": false
+        }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "הַלֵּב וְהָאֱלֹקוּת — הָאֵין סוֹף שֶׁבִּפְנִים",
+      "node_id": "מוח",
+      "node_text": "הַמֹּחַ",
+      "polarity": "good",
+      "reason": "The brain/mind (מוח) appears alongside the heart in lines 3 and 4 as its co-equal inner faculty. The teaching explicitly treats them as a single unit: 'הַלֵּב וְהַמֹּחַ שֶׁקְּטַנִּים מְאֹד בִּמְקוֹמָם, הֵם תּוֹפְסִים הַכֹּל' (the heart and brain, very small in their place, contain everything). In line 4: 'חֲתִיכַת לֵב קָטָן כָּזֶה, וּמֹחַ קָטָן כָּזֶה' — small heart and small brain mentioned in exact parallel. The moch and lev are not presented as cause and effect (the brain does not produce the heart's capacity); they co-express the same inner faculty's nature. The bechina לב ↔ מוח is a mirror-bechina: each illuminates the other as the inner vessel of infinite spiritual content. A bechina edge לב ↔ מוח is missing from the dataset for Torah #191.",
+      "source_quote": "הַלֵּב וְהַמֹּחַ שֶׁקְּטַנִּים מְאֹד בִּמְקוֹמָם, הֵם תּוֹפְסִים הַכֹּל",
+      "edge_type": "bechina",
+      "proposed_edges": [
+        {
+          "node1": "מוח",
+          "node2": "לב",
+          "bechina_formula": "co-expression: heart and brain listed together as jointly constituting the inner faculty that 'contains everything' — symmetric, neither produces the other",
+          "source_quote": "חֲתִיכַת לֵב קָטָן כָּזֶה, וּמֹחַ קָטָן כָּזֶה, יִתְפֹּס בִּמְקוֹמוֹ דְּבָרִים גְּדוֹלִים כָּאֵלֶּה",
+          "in_dataset_already": false
+        }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "הַלֵּב וְהָאֱלֹקוּת — הָאֵין סוֹף שֶׁבִּפְנִים",
+      "node_id": "אלקות",
+      "node_text": "הָאֱלֹקוּת",
+      "polarity": "good",
+      "reason": "Divinity (אלקות) is explicitly named as the reason for the heart's infinite capacity, in two consecutive bechina-formula statements in lines 4-5. Line 4: 'וְזֶה רַק מֵחֲמַת שֶׁנִּמְצָא שָׁם הָאֱלֹקוּת. כִּי עִקַּר הָאֱלֹקוּת הוּא בְּהַלֵּב' — Divinity's essential place is the heart. Line 5 uses the explicit bechina vocabulary: 'שֶׁנִּמְצָא שָׁם רַק בְּחִינוֹת אֱלֹקוּת' — 'where only aspects/dimensions (bechinot) of Divinity are found.' The word 'בְּחִינוֹת' here is Rebbe Nachman's core technical term for parallel aspects of the same reality. The heart and Divinity share essential nature: the heart IS the domain/vessel of Divinity; Divinity IS the heart's essential inner content. This is not causal (Divinity does not produce the heart as a downstream effect) but an identity relationship: they are two names for the same inner spiritual reality. A bechina edge לב ↔ אלקות is missing from the dataset for Torah #191.",
+      "source_quote": "אִם בְּהַלֵּב, שֶׁנִּמְצָא שָׁם רַק בְּחִינוֹת אֱלֹקוּת",
+      "edge_type": "bechina",
+      "proposed_edges": [
+        {
+          "node1": "אלקות",
+          "node2": "לב",
+          "bechina_formula": "explicit bechina-formula ('בְּחִינוֹת אֱלֹקוּת') and essence statement ('עִקַּר הָאֱלֹקוּת הוּא בְּהַלֵּב'): Divinity's essential nature IS in the heart; the heart's content IS aspects of Divinity",
+          "source_quote": "כִּי עִקַּר הָאֱלֹקוּת הוּא בְּהַלֵּב, כַּמְבֹאָר בְּמָקוֹם אַחֵר",
+          "in_dataset_already": false
+        }
+      ]
+    },
+    {
+      "package_id": 1,
+      "package_label": "הַלֵּב וְהָאֱלֹקוּת — הָאֵין סוֹף שֶׁבִּפְנִים",
+      "node_id": "לב מלכים",
+      "node_text": "לֵב מְלָכִים",
+      "polarity": "good",
+      "reason": "The phrase 'לֵב מְלָכִים אֵין חֵקֶר' (the heart of kings is unsearchable — Proverbs 25:3) is cited three times in the teaching as the defining identity of the heart's infinite nature. It is not used as a proof-verse for an external claim — it IS the bechina statement: the heart of kings IS infinity (אין חקר). 'לב מלכים' is the realized/paradigmatic form of 'לב' — the heart of one who fully exercises their inner faculty (the king who knows his entire kingdom). Line 8 explains: 'עִקַּר גְּדֻלּוֹת הַמֶּלֶךְ וְתַעֲנוּגוֹ וּמֶמְשַׁלְתּוֹ הוּא רַק בַּלֵּב' — the king's greatness is entirely in the heart. 'לב מלכים' is the bechina-paradigm that the teaching uses to establish what 'לב' essentially is: unbounded, infinite, the container of all. It is the same reality as 'לב' illuminated from its fullest actualization. A bechina edge לב מלכים ↔ לב is missing from the dataset for Torah #191.",
+      "source_quote": "כִּי לֵב מְלָכִים אֵין חֵקֶר",
+      "edge_type": "bechina",
+      "proposed_edges": [
+        {
+          "node1": "לב מלכים",
+          "node2": "לב",
+          "bechina_formula": "identity through repeated structural use: cited three times as the definition of the heart's nature; the king's heart IS the paradigm-expression of the heart's infinite nature",
+          "source_quote": "לֵב מְלָכִים אֵין חֵקֶר",
+          "in_dataset_already": false
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "עוֹלָם הַבָּא וְשַׁ\"י עוֹלָמוֹת — הַתַּעֲנוּגִים שֶׁבַּלֵּב",
+      "node_id": "תענוגים ושעשועים",
+      "node_text": "תַּעֲנוּגִים וְשַׁעֲשׁוּעִים",
+      "polarity": "good",
+      "reason": "Pleasures and delights (תענוגים ושעשועים) appear four times in the text (lines 1, 9, 10 and in line 8's 'תַּעֲנוּגוֹ'), always paired with or identified as the content of the heart and the 310 worlds. Line 10 provides the definitive bechina statement: 'עִקַּר הַרְגָּשַׁת תַּעֲנוּג וְשַׁעֲשוּעַ עוֹלָם הַבָּא וְכָל הַשַּׁ\"י עוֹלָמוֹת – הַכֹּל הוּא בַּלֵּב' — the essential experience of pleasure and delight of the World to Come and all 310 worlds — ALL OF IT is in the heart. Pleasures and delights are not a product of the 310 worlds (eitza); they ARE the 310 worlds in experiential terms. Neither produces the other — they are the same spiritual reality described from the experiential angle (תענוגים) vs. the structural angle (שי\"ט עולמות / עולם הבא). All three bechina edges for this node are missing from the dataset.",
+      "source_quote": "עִקַּר הַרְגָּשַׁת תַּעֲנוּג וְשַׁעֲשוּעַ עוֹלָם הַבָּא וְכָל הַשַּׁ\"י עוֹלָמוֹת – הַכֹּל הוּא בַּלֵּב",
+      "edge_type": "bechina",
+      "proposed_edges": [
+        {
+          "node1": "תענוגים ושעשועים",
+          "node2": "שי\"ט עולמות",
+          "bechina_formula": "co-listing as identical content: appear together four times as co-descriptions of the same spiritual possession ('כָּל הַתַּעֲנוּגִים וְהַשַּׁעֲשׁוּעִים וְכָל הַשַּׁ\"י עוֹלָמוֹת')",
+          "source_quote": "כָּל הַתַּעֲנוּגִים וְהַשַּׁעֲשׁוּעִים וְכָל הַשַּׁ\"י עוֹלָמוֹת",
+          "in_dataset_already": false
+        },
+        {
+          "node1": "תענוגים ושעשועים",
+          "node2": "עולם הבא",
+          "bechina_formula": "identity statement in line 10: 'עִקַּר הַרְגָּשַׁת תַּעֲנוּג וְשַׁעֲשוּעַ עוֹלָם הַבָּא' — the essential experience of the World to Come IS pleasure and delight",
+          "source_quote": "עִקַּר הַרְגָּשַׁת תַּעֲנוּג וְשַׁעֲשוּעַ עוֹלָם הַבָּא",
+          "in_dataset_already": false
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "עוֹלָם הַבָּא וְשַׁ\"י עוֹלָמוֹת — הַתַּעֲנוּגִים שֶׁבַּלֵּב",
+      "node_id": "שי\"ט עולמות",
+      "node_text": "שַׁ\"י עוֹלָמוֹת",
+      "polarity": "good",
+      "reason": "The 310 worlds (שי\"ט עולמות — gematria of the word שי\"ט = 310) is the Kabbalistic idiom for the complete spiritual inheritance of the righteous in the World to Come (derived from Psalms 31:20 'מָה רַב טוּבְךָ'). It appears in lines 1, 9, and 10 consistently paired with תענוגים ושעשועים and in line 10 with עולם הבא. The teaching does not present 310 worlds as caused by pleasure or as producing pleasure — they are identical: the pleasures ARE the 310 worlds; the 310 worlds IS what is called the World to Come. The three nodes form a single conceptual cluster: the spiritual inheritance of the righteous, described from three angles (structural: 310 worlds; eschatological: World to Come; experiential: pleasures and delights). Bechina edges connecting שי\"ט עולמות to both תענוגים ושעשועים and עולם הבא are missing from the dataset for Torah #191.",
+      "source_quote": "וְיִהְיֶה לוֹ כָּל הַתַּעֲנוּגִים וְהַשַּׁעֲשׁוּעִים... כָּל הַשַּׁ\"י עוֹלָמוֹת בְּלִבּוֹ",
+      "edge_type": "bechina",
+      "proposed_edges": [
+        {
+          "node1": "שי\"ט עולמות",
+          "node2": "עולם הבא",
+          "bechina_formula": "co-identity in the closing statement (line 10): 'עוֹלָם הַבָּא וְכָל הַשַּׁ\"י עוֹלָמוֹת – הַכֹּל הוּא בַּלֵּב' — World to Come and 310 worlds are declared identical (כֹּל = all of it/the same thing)",
+          "source_quote": "עוֹלָם הַבָּא וְכָל הַשַּׁ\"י עוֹלָמוֹת – הַכֹּל הוּא בַּלֵּב",
+          "in_dataset_already": false
+        }
+      ]
+    },
+    {
+      "package_id": 2,
+      "package_label": "עוֹלָם הַבָּא וְשַׁ\"י עוֹלָמוֹת — הַתַּעֲנוּגִים שֶׁבַּלֵּב",
+      "node_id": "עולם הבא",
+      "node_text": "עוֹלָם הַבָּא",
+      "polarity": "good",
+      "reason": "The World to Come (עולם הבא) is the dominant concept of Package 2, appearing in lines 1 (implicitly as Gan Eden) and 10 (explicitly). The teaching opens with 'גַּן עֵדֶן' (Gan Eden) and closes with 'עוֹלָם הַבָּא' — these are the same spiritual domain, named from different angles. The closing beatitude ('אַשְׁרֵי לוֹ') is followed by the definitive identity statement: 'עִקַּר הַרְגָּשַׁת תַּעֲנוּג וְשַׁעֲשוּעַ עוֹלָם הַבָּא וְכָל הַשַּׁ\"י עוֹלָמוֹת – הַכֹּל הוּא בַּלֵּב' — the World to Come and 310 worlds together ARE what is felt as pleasure in the heart. The World to Come IS essentially a matter of heart-experience (not an external geographic location); its experiential nature IS pleasure and delight; its structural content IS 310 worlds. All three nodes are parallel descriptions of the same spiritual inheritance. Bechina edges connecting עולם הבא to both תענוגים ושעשועים and שי\"ט עולמות are missing from the dataset for Torah #191.",
+      "source_quote": "עִקַּר הַרְגָּשַׁת תַּעֲנוּג וְשַׁעֲשוּעַ עוֹלָם הַבָּא וְכָל הַשַּׁ\"י עוֹלָמוֹת – הַכֹּל הוּא בַּלֵּב",
+      "edge_type": "bechina",
+      "proposed_edges": [
+        {
+          "node1": "עולם הבא",
+          "node2": "תענוגים ושעשועים",
+          "bechina_formula": "identity statement: 'עִקַּר הַרְגָּשַׁת תַּעֲנוּג וְשַׁעֲשוּעַ עוֹלָם הַבָּא' — the essential experience of the World to Come IS pleasure and delight",
+          "source_quote": "עִקַּר הַרְגָּשַׁת תַּעֲנוּג וְשַׁעֲשוּעַ עוֹלָם הַבָּא",
+          "in_dataset_already": false
+        },
+        {
+          "node1": "עולם הבא",
+          "node2": "שי\"ט עולמות",
+          "bechina_formula": "co-identity: 'עוֹלָם הַבָּא וְכָל הַשַּׁ\"י עוֹלָמוֹת – הַכֹּל הוּא בַּלֵּב' — both are named in a single declaration of identity (הַכֹּל = all the same)",
+          "source_quote": "עוֹלָם הַבָּא וְכָל הַשַּׁ\"י עוֹלָמוֹת – הַכֹּל הוּא בַּלֵּב",
+          "in_dataset_already": false
+        },
+        {
+          "node1": "גן עדן",
+          "node2": "עולם הבא",
+          "bechina_formula": "structural parallel: teaching opens with 'גַּן עֵדֶן' and closes with 'עוֹלָם הַבָּא'; both are described as the domain where the heart-full tzaddik experiences all pleasures while his neighbor feels nothing — same reality, named from two angles",
+          "source_quote": "שֶׁיֵּשֵׁב אֶחָד אֵצֶל חֲבֵרוֹ בְּמָקוֹם אֶחָד בְּגַן־עֵדֶן",
+          "in_dataset_already": false,
+          "note": "גן עדן appears only in line 1 (opening scenario) and עולם הבא only in line 10 (closing statement); they frame the same reality and are likely bechina-equivalent in this teaching, but this is a weaker bechina than the others — the teaching does not explicitly declare them identical, so this proposed edge is a secondary observation rather than a primary claim."
+        }
+      ]
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "concepts_examined_and_excluded": [
+    {
+      "concept": "מלך (king / the king)",
+      "reason": "The king (מלך) is used in the teaching as an example and paradigm (line 8: the king's greatness is in his heart-knowledge), not as a concept being given a bechina equation of its own. The teaching uses the king as a mashal (illustrative analogy) to establish that 'greatness = heart-knowledge.' The מלך is not identified as a bechina-equivalent of another concept — the king is the vehicle through which 'לב מלכים' is explained. Excluded from bechina packages; the king is a narrative example, not a bechina-node. The node 'לב מלכים' (the king's heart) is included as a bechina-concept because it is the actual concept being equated with the heart's infinite nature; 'מלך' as a person-category is not."
+    },
+    {
+      "concept": "צדיק (the righteous person)",
+      "reason": "The tzaddik appears in line 9 as the person who has all the pleasures and worlds in his heart ('הַצַּדִּיק בְּתוֹךְ לִבּוֹ'). He is the actualized case — the person whose heart is full — but the teaching does not establish a bechina equation 'the tzaddik IS the heart's fullness' or 'the tzaddik = the 310 worlds.' He is an eitza-node: the heart's fullness (Package 1) + having all the worlds (Package 2) → the tzaddik is the one who achieves this. The contrast with the neighbor (who feels nothing) is eitza/narrative, not bechina. Excluded from bechina packages."
+    },
+    {
+      "concept": "גדולות הבורא / גדולת הבורא (the greatness of the Creator)",
+      "reason": "The Creator's greatness appears in lines 4 and 7 as the object of contemplation — the destination of the kal va-chomer reasoning. Line 4: 'רְאֵה וְהָבֵן וַחֲכַם גְּדֻלַּת הַבּוֹרֵא' — see and understand the Creator's greatness. This is an eitza-destination: the heart's infinite capacity (Package 1) → one can reason upward → to grasp the Creator's greatness. The Creator's greatness is not declared bechina-equivalent to the heart; it is what the heart's infinity enables you to estimate through kal va-chomer. Excluded from bechina packages."
+    },
+    {
+      "concept": "השגחת הבורא (Divine Providence)",
+      "reason": "Divine Providence appears in line 5 as a scale: 'אֵינוֹ כִּבְיָכוֹל חֵלֶק אֶחָד מֵאַלְפֵי אֲלָפִים מֵהַשְׁגָּחַת הַבּוֹרֵא' — the Divinity in the heart is 'not even one part in thousands of thousands of the Creator's Providence.' This is a quantitative framing of scale, not a bechina equation. Providence is used to demonstrate the relative size of the Divinity in the heart, not to establish that Providence and the heart share the same essential nature. Excluded from bechina packages."
+    },
+    {
+      "concept": "ממשלה (dominion/rule)",
+      "reason": "Dominion (ממשלה) appears in line 8 alongside the king's greatness and pleasure as all being located in the heart ('עִקַּר גְּדֻלּוֹת הַמֶּלֶךְ וְתַעֲנוּגוֹ וּמֶמְשַׁלְתּוֹ הוּא רַק בַּלֵּב'). One could argue that ממשלה is a bechina-equivalent of לב in this teaching. However, the text presents it as a quality that resides in the heart rather than as something the heart IS. The heart's greatness, pleasure, and dominion are 'in the heart' (eitza: the heart contains/produces these qualities). This is slightly different from the primary bechina claims where the heart IS the content (Divinity, infinity). Excluded as a secondary attribution rather than a primary bechina identity."
+    },
+    {
+      "concept": "גן עדן (Gan Eden)",
+      "reason": "Gan Eden appears in line 1 as the setting of the opening scenario — the place where two people sit next to each other, one experiencing all pleasures, the other feeling nothing. It is structurally parallel to עולם הבא (which closes the teaching in line 10) and could be considered bechina-equivalent. However, the teaching does not explicitly equate them through a formula; Gan Eden is the opening frame (scenario) and עולם הבא is the closing conclusion (identity statement). A weak bechina proposed as a secondary edge in the additions for עולם הבא; not treated as a primary standalone addition."
+    },
+    {
+      "concept": "חכמה / שכל (wisdom / intellect)",
+      "reason": "Wisdom and intellect do not appear in Torah #191. The teaching is cited as cross-referencing Torah #49 ('כַּמְבֹאָר בְּמָקוֹם אַחֵר — לעיל בסימן מט') for the teaching about Divinity being in the heart, but Torah #49's concepts (sekhel, chokhmah) are not developed in Torah #191 itself. Excluded from Torah #191 packages — they belong to Torah #49's packages."
+    },
+    {
+      "concept": "שמים וארץ (heavens and earth)",
+      "reason": "The heavens and earth appear in lines 2-3 as a scale of comparison: 'שָׁמַיִם לָרוּם וָאָרֶץ לָעֹמֶק' (heaven is for height and earth for depth). They are used to show that the heart exceeds even the infinite heavens and earth in its capacity — a kal va-chomer comparison tool. They are not equated with the heart through a bechina formula; they are the scale being exceeded. The Talmudic saying about the oceans and pens is also a scale-illustration. Excluded from bechina packages."
+    }
+  ],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "לב (lev — the heart; the central concept of the teaching, declared to be the essential location of Divinity and the vessel of infinite spiritual worlds; missing from all bechina edges for Torah #191)",
+      "מוח (moach — the brain/mind; treated as co-equal with the heart as the inner faculty that contains all; 'הַלֵּב וְהַמֹּחַ... הֵם תּוֹפְסִים הַכֹּל')",
+      "אלקות (elokut — Divinity; explicitly declared using 'בְּחִינוֹת' language as the content of the heart: 'שֶׁנִּמְצָא שָׁם רַק בְּחִינוֹת אֱלֹקוּת'; and in an essence statement: 'עִקַּר הָאֱלֹקוּת הוּא בְּהַלֵּב')",
+      "לב מלכים (lev melachim — the heart of kings; Proverbs 25:3 cited three times as the identity-formula for the heart's infinite nature; the paradigm-expression of the heart's essential nature as אין חקר)",
+      "תענוגים ושעשועים (ta'anugim v'sha'ashu'im — pleasures and delights; the experiential description of the spiritual content of the full heart, appearing four times and identified with the 310 worlds and the World to Come)",
+      "שי\"ט עולמות (shai olamos — the 310 worlds; the Kabbalistic structural description of the righteous person's spiritual inheritance, consistently paired with the pleasures and the World to Come)",
+      "עולם הבא (olam haba — the World to Come; the eschatological frame that is identified with the pleasures and 310 worlds in the closing statement of line 10; also parallel to 'גן עדן' in the opening of line 1)"
+    ],
+    "note_on_bechina_language": "Torah #191 uses three types of bechina language: (1) the explicit word 'בְּחִינוֹת' (aspects/dimensions) in line 5 — 'שֶׁנִּמְצָא שָׁם רַק בְּחִינוֹת אֱלֹקוּת' — this is the core bechina vocabulary; (2) essence statements using 'עִקַּר... הוּא' ('the essential... is') — a Rebbe Nachman formula equivalent to 'is a bechina of': 'עִקַּר הָאֱלֹקוּת הוּא בְּהַלֵּב' and 'עִקַּר הַרְגָּשַׁת תַּעֲנוּג... הַכֹּל הוּא בַּלֵּב'; (3) identity through co-listing — pairing תענוגים ושעשועים with שי\"ט עולמות and עולם הבא as a single unit in four separate statements, establishing they refer to the same reality. The repeated use of 'לב מלכים אין חקר' (three times) as the central identity-formula for the heart is also a bechina pattern — the verse is not proof of an external claim but IS the bechina statement about the heart's essential nature.",
+    "note_on_teaching_structure": "Torah #191 is a ten-sentence philosophical meditation with a clear frame structure: it opens (line 1) and closes (lines 9-10) with the same paradox — two people in Gan Eden, one with all pleasures, the other with nothing. The middle develops the paradox's solution through a kal va-chomer argument (lines 2-8). The two packages capture the two poles of the teaching: Package 1 (לב and אלקות) is the mechanism (why the heart can contain infinitely); Package 2 (עולם הבא / 310 worlds / pleasures) is the content (what the full heart contains). The cross-package eitza is: heart-contains-Divinity (Pkg 1) → heart-can-contain-310-worlds (Pkg 2).",
+    "note_on_dataset_coverage": "Torah #191 has zero edges of any type in torahData.js — it is entirely absent from the current dataset. This means it is a completely unenriched Torah. Seven distinct bechina-worthy concepts have been identified (see list above), forming two proposed packages."
+  }
+}

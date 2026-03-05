@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "source": "Torah #134",
+    "volume": "Likutay Moharan, Volume 1",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04",
+    "methodology": "Read framework.md, then examined all edges in torahData.js for reference===134 (NONE found — Torah #134 is completely absent from the dataset). Read the full source text torah_134.txt. Scanned for every use of explicit bechina language: בְּחִינַת, הַיְנוּ בְּחִינַת, נִקְרָא, לְשׁוֹן. Classified each as a new edge proposal (since none exist in dataset). Evaluated whether any proposed bechina constitutes a new package, an addition to an existing package, or a dataset-level gap requiring initial data entry."
+  },
+  "dataset_status": {
+    "edges_in_dataset_for_reference_134": 0,
+    "verdict": "COMPLETE_GAP — Torah #134 has no representation in torahData.js whatsoever. Every concept, every bechina, every edge identified below is new and must be added to the dataset from scratch."
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "new_edges_required": [
+    {
+      "proposed_edge_id": "134-B-001",
+      "node1_id": "אמירת תורה לבלתי ראוי",
+      "node1_text": "אֲמִירַת תּוֹרָה לְמִי שֶׁאֵינוֹ רָאוּי לְשֵׂכֶל הַמְקַבֵּל",
+      "node2_id": "ניאוף",
+      "node2_text": "נִאוּף",
+      "type": "bechina",
+      "reference": 134,
+      "package_id": 1,
+      "source_quote": "כִּי צָרִיךְ לִזָּהֵר מְאֹד, שֶׁלֹּא יֹאמַר דָּבָר שֶׁאֵינוֹ רָאוּי לְשֵׂכֶל הַמְקַבֵּל. כִּי הוּא בְּחִינַת נִאוּף, שֶׁמַּשְׁלִיךְ טִפֵּי הַשֵּׂכֶל בַּאֲתָר דְּלָא אִצְטְרִיךְ",
+      "source_line": 2,
+      "reason": "The central, explicit bechina of this Torah. Saying Torah to someone whose intellect cannot receive it IS (הוּא בְּחִינַת) an act of niuf — adultery/illegitimate seminal emission. The structural logic is: the teacher transmits 'drops of sekhel' (טִפֵּי הַשֵּׂכֶל) to the student's mind, exactly as a man transmits seed. When misdirected, this IS the bechina of casting seed into a place that does not need it ('בַּאֲתָר דְּלָא אִצְטְרִיךְ' — the Aramaic term from Kabbalistic literature for prohibited seed-emission)."
+    },
+    {
+      "proposed_edge_id": "134-B-002",
+      "node1_id": "ניאוף סוג א",
+      "node1_text": "נִאוּף (כְּשֶׁאֵין הַמְּקַבֵּל מוֹלִיד כְּלוּם)",
+      "node2_id": "לבטלה",
+      "node2_text": "לְבַטָּלָה",
+      "type": "bechina",
+      "reference": 134,
+      "package_id": 1,
+      "source_quote": "וְנִקְרָא לְבַטָּלָה, כִּי אֵינוֹ מוֹלִיד אֶצְלוֹ כְּלוּם",
+      "source_line": 2,
+      "reason": "First variety of niuf: when the transmission produces nothing at all in the recipient, it IS called 'לְבַטָּלָה' (in vain/for nothing). The Talmudic term לְבַטָּלָה for wasted seed is explicitly applied here to the wasted Torah-sekhel. This IS a bechina: the empty/barren misfire IS 'in vain'."
+    },
+    {
+      "proposed_edge_id": "134-B-003",
+      "node1_id": "ניאוף סוג ב",
+      "node1_text": "נִאוּף מַמָּשׁ (כְּשֶׁהַמְּקַבֵּל מוֹלִיד פָּסוּל)",
+      "node2_id": "ניאוף ממש",
+      "node2_text": "נִאוּף מַמָּשׁ",
+      "type": "bechina",
+      "reference": 134,
+      "package_id": 1,
+      "source_quote": "וְלִפְעָמִים נִקְרָא נִאוּף מַמָּשׁ, שֶׁמּוֹלִיד וּמוֹצִיא פָּסוּל וּפָגוּם",
+      "source_line": 2,
+      "reason": "Second variety: when the misdirected Torah-saying DOES produce offspring but that offspring is pasul/pagum (disqualified/flawed — meaning the student acts on the teaching but at the wrong level for his madrega), then it IS called niuf mamash (actual adultery). This distinguishes the barren-misfire case (לְבַטָּלָה) from the corrupted-offspring case (ניאוף ממש)."
+    },
+    {
+      "proposed_edge_id": "134-B-004",
+      "node1_id": "ניאוף ממש",
+      "node1_text": "נִאוּף מַמָּשׁ",
+      "node2_id": "פסול ופגום",
+      "node2_text": "פָּסוּל וּפָגוּם",
+      "type": "bechina",
+      "reference": 134,
+      "package_id": 1,
+      "source_quote": "שֶׁמּוֹלִיד וּמוֹצִיא פָּסוּל וּפָגוּם, הַיְנוּ שֶׁהַמְּקַבֵּל עוֹשֶׂה עַל יְדֵי זֶה דָּבָר שֶׁאֵינוֹ צָרִיךְ לוֹ לְפִי מַדְרֵגָתוֹ",
+      "source_line": 2,
+      "reason": "The 'פָּסוּל וּפָגוּם' (disqualified and blemished offspring) is the concrete instantiation of 'ניאוף ממש'. The Rebbe defines it: the recipient does something that is inappropriate to HIS level/madrega. The flawed action IS the bechina of the 'disqualified offspring' of spiritual niuf."
+    },
+    {
+      "proposed_edge_id": "134-B-005",
+      "node1_id": "יצר הרע",
+      "node1_text": "הַיֵּצֶר הָרָע",
+      "node2_id": "תאוות ניאוף",
+      "node2_text": "תַּאֲוַת נִאוּף",
+      "type": "bechina",
+      "reference": 134,
+      "package_id": 2,
+      "source_quote": "יוּכַל, חַס וְשָׁלוֹם, לְהִתְגַּבֵּר עָלָיו הַיֵּצֶר בְּתַאֲוַת נִאוּף",
+      "source_line": 2,
+      "reason": "The yetzer hara IS specifically manifested as תַּאֲוַת נִאוּף (the desire for adultery/sexual transgression) in this Torah's context. The Rebbe identifies the yetzer's mode of attack on the Torah teacher as precisely this: because the careless teacher has committed spiritual niuf (emitting sekhel-drops inappropriately), the yetzer gains a foothold specifically in the domain of actual sexual desire. The yetzer IS this desire — they share the same essential nature in this Torah."
+    }
+  ],
+  "analysis_notes": {
+    "total_reference_134_edges_in_dataset": 0,
+    "total_reference_134_bechina_edges_in_dataset": 0,
+    "total_bechina_relationships_found_in_text": 5,
+    "bechina_language_occurrences": [
+      {
+        "line": 2,
+        "text": "כִּי הוּא בְּחִינַת נִאוּף",
+        "classification": "PRIMARY BECHINA — saying Torah to the unfit IS niuf"
+      },
+      {
+        "line": 2,
+        "text": "וְנִקְרָא לְבַטָּלָה",
+        "classification": "SECONDARY BECHINA — barren niuf IS 'in vain'"
+      },
+      {
+        "line": 2,
+        "text": "וְלִפְעָמִים נִקְרָא נִאוּף מַמָּשׁ",
+        "classification": "SECONDARY BECHINA — productive-but-corrupt niuf IS 'actual adultery'"
+      },
+      {
+        "line": 2,
+        "text": "כִּי יוּכַל לְהִתְגַּבֵּר עָלָיו הַיֵּצֶר בְּתַאֲוַת נִאוּף",
+        "classification": "IMPLICIT BECHINA — the yetzer gains strength AS the desire for niuf"
+      },
+      {
+        "line": 6,
+        "text": "כִּי יוּכַל לְהִתְגַּבֵּר עָלָיו הַיֵּצֶר הָרָע בְּתַאֲוַת נִאוּף כַּנַּ\"ל",
+        "classification": "REPEATED — same bechina reinforced"
+      }
+    ],
+    "concepts_examined_and_excluded": [
+      {
+        "concept": "טִפֵּי הַשֵּׂכֶל (drops of intellect)",
+        "reason": "This is a metaphorical description within the proof of the bechina, not itself declared as a bechina using בְּחִינַת language. 'שֶׁמַּשְׁלִיךְ טִפֵּי הַשֵּׂכֶל בַּאֲתָר דְּלָא אִצְטְרִיךְ' uses the Zoharic Aramaic phrase to explain WHY the act IS niuf — it is the analogical sub-mechanism, not a separate bechina declaration. Excluded as a standalone node; the concept is implicit in edge 134-B-001."
+      },
+      {
+        "concept": "שֵׂכֶל הַמְקַבֵּל (intellect of the receiver)",
+        "reason": "This is a relational description — the receiver's capacity — used to define the condition under which the niuf-bechina applies. The Rebbe does not say 'שֵׂכֶל הַמְקַבֵּל IS a bechina of X'. It is context-setting language, not a bechina declaration."
+      },
+      {
+        "concept": "דִּבּוּרִים שֶׁיִּתְחַלְּקוּ (words that divide/distribute themselves)",
+        "reason": "Line 3: 'שֶׁדִּבּוּרָיו יִתְחַלְּקוּ שֶׁלֹּא יִשְׁמַע כָּל אֶחָד כִּי אִם מַה שֶּׁצָּרִיךְ לוֹ'. This is a practical instruction/eitza derived from the bechina — not itself a bechina statement. The Rebbe is saying: as a result of this principle (eitza), arrange your speech this way. Not a bechina edge."
+      },
+      {
+        "concept": "יִתְרוֹ and the Zohar citation",
+        "reason": "Line 3-4: The Zohar on Yitro (Shemot 68) and on Tetzaveh (186b) are cited as proof-texts for the practical point about tailored speech. They are not bechina declarations — they are evidential citations. Excluded."
+      },
+      {
+        "concept": "כָּל הַגָּדוֹל מֵחֲבֵרוֹ יִצְרוֹ גָּדוֹל מִמֶּנּוּ",
+        "reason": "Lines 5-6: This Talmudic principle (Sukkah 52a) is cited and applied, not re-declared as a new bechina. The Rebbe uses it to explain the mechanism of the evil package (why the Torah-speaker is specifically vulnerable to taavas niuf), but the phrasing is 'כָּל הַגָּדוֹל מֵחֲבֵרוֹ' without בְּחִינַת language. It IS included as a node in Package 2 because it functions as a named bechina-state (the yetzer being 'gadol') in the teaching's argument, and it was listed in the package as a 1-node merged component. However, it does not require its own separate bechina edge — its connection to the yetzer package is thematic/structural, not explicitly edge-typed as bechina in the text."
+      }
+    ]
+  }
+}

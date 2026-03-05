@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "source": "Torah #5",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-03"
+  },
+  "additions": [
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "תְּלָתָא יוֹמָא וְלֵילוּתָא (Three Days and Three Nights)",
+      "suggested_package": 5,
+      "source_quote": "תְּלָתָא יוֹמָא וְלֵילוּתָא דָּא בְּחִינַת מִצְווֹת, שֶׁיֵּשׁ בָּהֶם מֻשְׂכָּלוֹת וּמְקֻבָּלוֹת וְחֻקּוֹת, וּכְתִיב בָּהֶם: וְהָגִיתָ בּוֹ יוֹמָם וָלָיְלָה",
+      "reasoning": "In the Rabbah bar bar Chana aggadah (the sea creature that the boat sailed between for three days), the Rebbe explicitly states: 'תְּלָתָא יוֹמָא וְלֵילוּתָא דָּא בְּחִינַת מִצְווֹת.' The three days and nights represent the mitzvot — which have three categories: rational commandments (מֻשְׂכָּלוֹת), received traditions (מְקֻבָּלוֹת), and decrees (חֻקּוֹת), corresponding to day-meditation and night-meditation ('וְהָגִיתָ בּוֹ יוֹמָם וָלָיְלָה'). This explicit bechina is NOT in the dataset. Suggested new edge: תְּלָתָא יוֹמָא וְלֵילוּתָא ↔ מִצְווֹת (bechina, reference=5). Belongs in Package 5 (מֹחִין וּמַצָּה) alongside the existing שֵׁשֶׁת יְמֵי הַמַּעֲשֶׂה ↔ מַעֲשֵׂה הַמִּצְווֹת edge.",
+      "gap_severity": "high"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "כְּמֵיחַם קוּמְקוּמָא דְּמַיָּא (Boiling Kettle of Water)",
+      "suggested_package": 5,
+      "source_quote": "כְּמֵיחַם קֻמְקוּמָא דְמַיָא דָּא מֹחָא, כְּמוֹ שֶׁכָּתוּב: וְנוֹזְלִים מִן לְבָנוֹן",
+      "reasoning": "In the continuation of the Rabbah bar bar Chana parable, the boiling kettle of water (כְּמֵיחַם קוּמְקוּמָא דְּמַיָּא) that could travel sixty parasangs per hour is explicitly a bechina of the brain/intellect (מֹחָא), 'as it is written: and streams from Lebanon — from the whiteness (לִבּוּנָא) of the brain.' This is a direct bechina statement in the source text that is not represented in the dataset for Torah #5. Suggested new edge: כְּמֵיחַם קוּמְקוּמָא דְּמַיָּא ↔ מֹחִין (bechina, reference=5). Belongs in Package 5.",
+      "gap_severity": "high"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "שִׁיתִּין פַּרְסֵי (Sixty Parasangs)",
+      "suggested_package": 4,
+      "source_quote": "מַסְגֵּא שִׁתִּין פַּרְסֵי דָּא בְּחִינַת גְּבוּרוֹת, שִׁשִּׁים גִּבּוֹרִים, וְרַעַם גְּבוּרוֹתָיו",
+      "reasoning": "In the parable, the kettle traveled 'sixty parasangs per hour.' The Rebbe states: 'מַסְגֵּא שִׁתִּין פַּרְסֵי דָּא בְּחִינַת גְּבוּרוֹת, שִׁשִּׁים גִּבּוֹרִים, וְרַעַם גְּבוּרוֹתָיו' — the sixty parasangs = the sixty mighty warriors (of Shir haShirim) = gevurot = thunders. This is a bechina of the גְּבוּרוֹת cluster (Package 4). Not in dataset. Suggested new edge: שִׁיתִּין פַּרְסֵי ↔ גְּבוּרוֹת (bechina, reference=5).",
+      "gap_severity": "moderate"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "שִׁיצָא (Distress/Danger)",
+      "suggested_package": 7,
+      "source_quote": "שִׁיצָא לְשׁוֹן צָרָה, כְּמוֹ שֶׁכָּתוּב: וַאֲכַלֶּה אֹתָם כְּרָגַע, וְתַרְגּוּמוֹ: וַאֲשַׁצֵּי יַתְהוֹן",
+      "reasoning": "In the parable, the boat sailed 'between the fins of the sea-creature' — and the Rebbe translates the Aramaic term שִׁיצָא as meaning 'distress/danger' (צָרָה), proving it from the verse in Numbers. This is a bechina statement linking an Aramaic parable-term to a Hebrew concept of danger/trouble. The concept belongs near Package 7 (external fear = dangerous situations) since שִׁיצָא represents the dangerous straits through which spiritual life must navigate. Not in dataset for reference=5. Suggested new edge: שִׁיצָא ↔ צָרָה (bechina, reference=5).",
+      "gap_severity": "low"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "תֵּבֵל וְיֹשְׁבֵי בָהּ (The World and Its Inhabitants)",
+      "suggested_package": 4,
+      "source_quote": "תֵּבֵל וְיֹשְׁבֵי בָהּ – דָּא בְּחִינַת לִבָּא וְעָרְקִין דִּילֵהּ, כְּמוֹ שֶׁאָמְרוּ: לֹא נִבְרְאוּ רְעָמִים וְכוּ'",
+      "reasoning": "When the thunder strikes and the voice of prayer is heard, the Psalmist says 'יִרְעַם הַיָּם וּמְלֹאוֹ תֵּבֵל וְיֹשְׁבֵי בָהּ' — and the Rebbe explains: 'תֵּבֵל וְיֹשְׁבֵי בָהּ דָּא בְּחִינַת לִבָּא וְעָרְקִין דִּילֵהּ' — the world and its inhabitants = the heart and its veins/arteries. This is the physiological grounding of the thunder-prayer doctrine: the thunder (רְעָמִים) created to straighten the heart's crookedness (לֹא נִבְרְאוּ רְעָמִים אֶלָּא לְפַשֵּׁט עַקְמוּמִיּוּת שֶׁבַּלֵּב) resonates through the heart and its vessels. This explicit bechina is absent from the dataset. Suggested new edge: תֵּבֵל וְיֹשְׁבֵי בָהּ ↔ לִבָּא וְעָרְקִין דִּילֵהּ (bechina, reference=5). Belongs in Package 4 (גבורות/thunder) since it completes the thunder-strikes-heart mechanism.",
+      "gap_severity": "high"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "אִיהוּ בִּזְקִיפוּ וַאֲנַן בְּשִׁפּוּלֵי (He in Uprightness, We in Lowness)",
+      "suggested_package": 1,
+      "source_quote": "אִיהוּ בִּזְקִיפוּ וְאֲנַן בְּשִׁפּוּלֵי זֶה בְּחִינַת: יִשְׂמַח ה' בְּמַעֲשָׂיו, יִשְׂמַח יִשְׂרָאֵל בְּעוֹשָׂיו",
+      "reasoning": "In the parable, the phrase 'he stood upright while we were below/at the base' is a bechina of 'יִשְׂמַח ה' בְּמַעֲשָׂיו, יִשְׂמַח יִשְׂרָאֵל בְּעוֹשָׂיו' — God's joy in His works / Israel's joy in their Maker. The explicit equation in the text: 'לְפִי שִׂמְחָתוֹ כֵּן שִׂמְחָתֵנוּ' (according to His joy, so is ours). This parable-term is a bechina of the joy-of-mitzvot concept at the heart of Package 1 (illuminating mirror = doing mitzvot for their own joy). It bridges the parable to the opening doctrine of prophetic joy. Not in dataset. Suggested edge: אִיהוּ בִּזְקִיפוּ וַאֲנַן בְּשִׁפּוּלֵי ↔ יִשְׂמַח ה' בְּמַעֲשָׂיו (bechina, reference=5).",
+      "gap_severity": "moderate"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "גִּירָא (Arrow)",
+      "suggested_package": 5,
+      "source_quote": "וְכִי שָׁדִי פַּרְשָׁא גִּירָא – גִּירָא דָּא (תהילים קמ\"ד:ו'): שְׁלַח חִצֶּךָ וּתְהֻמֵּם, דָּא בְּחִינַת: שֵׁב לִימִינִי",
+      "reasoning": "The 'arrow' (גִּירָא) fired by the rider (פַּרְשָׁא = chesed) is equated with the verse 'שְׁלַח חִצֶּךָ וּתְהֻמֵּם' and with 'שֵׁב לִימִינִי' — the divine invitation to sit at God's right hand (= chesed/love triumphant). The arrow = the active, directional force of chesed reaching out. Since פַּרְשָׁא / חֶסֶד is already in Package 5, and the arrow is the action of that chesed, the גִּירָא node belongs in Package 5 as the active force of the chesed-rider. Suggested new edge: גִּירָא ↔ שֵׁב לִימִינִי (bechina, reference=5) or גִּירָא ↔ חֶסֶד (bechina, reference=5).",
+      "gap_severity": "low"
+    },
+    {
+      "type": "concept_in_text_not_in_dataset",
+      "concept": "סְפִינְתָּא (The Boat/Vessel)",
+      "suggested_package": 3,
+      "source_quote": "סְפִינְתָּא לְשׁוֹן חֲשִׁיבוּת, דָּא בְּחִינַת גְּבוּרָה יִרְאָה, כְּמוֹ שֶׁכָּתוּב: יִרְאַת ה' הִיא אוֹצָרוֹ; שֶׁהִיא עִקַּר הַחֲשִׁיבוּת",
+      "reasoning": "The Aramaic 'סְפִינְתָּא' (boat) in the Rabbah bar bar Chana story is explicitly a bechina of חֲשִׁיבוּת (importance/weightiness), which is itself a bechina of גְּבוּרָה / יִרְאָה (inner strength / true fear). The word 'ספינה' comes from 'סָפוּן' (hidden/precious), meaning that true importance is the fear of God which is His treasury. While חֲשִׁיבוּת and גְּבוּרָה and יִרְאָה are already in Package 3, the specific vessel/boat node (סְפִינְתָּא) as the Aramaic symbolic carrier of חֲשִׁיבוּת is absent from the dataset for reference=5. Suggested new edge: סְפִינְתָּא ↔ חֲשִׁיבוּת (bechina, reference=5). Belongs in Package 3.",
+      "gap_severity": "moderate"
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 25,
+    "nodes_in_dataset_not_in_packages": [],
+    "all_25_edges_assigned": true,
+    "concepts_in_source_text_not_in_dataset": [
+      "תלתא יומא ולילותא = מצוות — three days/nights of the parable = the three categories of mitzvot",
+      "כמיחם קומקומא = מוחא — the boiling kettle = the brain (from which intellectual drops fall)",
+      "שיתין פרסי = גבורות — sixty parasangs = the sixty mighty warriors = gevurot",
+      "שיצא = צרה — parable distress/fins = danger",
+      "תבל ויושבי בה = לבא וערקין דיליה — the world and its inhabitants = the heart and its arteries",
+      "איהו בזקיפו ואנן בשפולי = ישמח ה' במעשיו — uprightness/lowness = God's joy and Israel's joy",
+      "גירא = שב לימיני / חסד — the arrow = the chesed of divine right hand",
+      "ספינתא = חשיבות — the boat = weightiness/importance (partially represented via חשיבות in dataset, but ספינתא node itself is absent for reference=5)"
+    ],
+    "note_on_rabbah_bar_bar_chana_parable": "The extended Talmudic parable from Bava Batra (the sea creature story) contains numerous Aramaic terms that the Rebbe systematically maps to spiritual concepts through explicit בְּחִינַת statements. Many of these parable-to-concept mappings are present in the dataset as eitza edges (cause-and-effect) but their essential bechina dimension (what they fundamentally ARE) is underrepresented. The most critical missing bechinas are the תלתא יומא/מצוות and כמיחם קומקומא/מוחא pairs, which are central to the Torah's structure.",
+    "note_on_edge_count": "25 bechina edges were identified by reading all 83 occurrences of 'reference: 5' in torahData.js and checking the type field for each. The remaining 58 edges are eitza (cause-and-effect) connections describing the narrative flow of the teaching."
+  }
+}

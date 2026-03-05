@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "source": "Torah #205",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===205 AND type==='bechina'. 6 bechina edges, 7 unique nodes, 2 raw connected components. Component B (isolated pair: עשרה מיני זמרה / עשרה לשונות) merged into Package 1 because the 'ten' is the structural bridge connecting the song-languages to the da'at = five chesed + five gevura equation — the pair's essential nature belongs to the same חסד וגבורה / completeness-of-ten domain."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 205,
+      "label": "חֶסֶד וּגְבוּרָה וְהַדַּעַת",
+      "label_en": "Chesed and Gevurah, and Da'at",
+      "polarity": "good",
+      "reason": "The central teaching of Torah #205 is that the word תהלים (gematria תפ\"ה) equals the two divine names אל אלקים spelled out — and those names are a bechina of חסד וגבורה. The lost seed (טפה) itself is also a bechina of חסד וגבורה (it contains the forces of fire and water, warmth and moisture). The seed originates from דעת, which is equally a bechina of חסד וגבורה. And דעת is further specified as חמשה חסדים וחמש גבורות — ten elements — which is why ten chapters must be recited. The isolated pair עשרה מיני זמרה / עשרה לשונות is merged here because 'ten' is the structural key that connects them: the 10 types of song = the 10 languages of Psalms, and the reason there are 10 chapters is precisely that דעת = 5+5 = ten. They share the same essential domain of the complete ten-structure of da'at expressed as chesed and gevurah. חסד וגבורה is the dominant hub (4 direct bechina connections); דעת is secondary (2 direct connections). All nodes in this package describe the same cosmic duality that both defines the problem (the fallen seed is chesed-gevurah captured by the klipa) and defines the solution (תהלים = אל אלקים = chesed-gevurah that can extract the seed from the klipa).",
+      "dominant_node": "חסד וגבורה",
+      "nodes": [
+        "חסד וגבורה",
+        "אל אלקים",
+        "דעת",
+        "חמימות ולחות",
+        "טפה",
+        "חמשה חסדים וחמש גבורות",
+        "עשרה מיני זמרה",
+        "עשרה לשונות שנאמר בהם ספר תהלים"
+      ],
+      "node_degrees": {
+        "חסד וגבורה": 4,
+        "דעת": 2,
+        "אל אלקים": 1,
+        "חמימות ולחות": 1,
+        "טפה": 1,
+        "חמשה חסדים וחמש גבורות": 1,
+        "עשרה מיני זמרה": 1,
+        "עשרה לשונות שנאמר בהם ספר תהלים": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["עשרה מיני זמרה", "עשרה לשונות שנאמר בהם ספר תהלים"],
+          "reason": "This isolated pair is a bechina-pair (edge 2460): the 10 types of song are the 10 languages of the book of Psalms. Their connection to Package 1 is through the number ten: the Rebbe explicitly explains that one recites ten chapters because דעת = חמשה חסדים וחמש גבורות (ten elements). The 10 songs/languages are the practical expression of that same ten-structure. Their essential nature — the completeness of ten as the structure of da'at — places them within the same thematic family as חמשה חסדים וחמש גבורות, חסד וגבורה, and דעת. An eitza flow connects this pair to the Package 1 hub (the reason for ten chapters flows from דעת = ten), making their package membership unambiguous."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 6,
+    "total_nodes": 7,
+    "total_packages": 1,
+    "raw_connected_components": 2,
+    "components_merged_into_packages": 1,
+    "note_on_merges": "2 raw components: (A) 6 nodes - חסד וגבורה hub with דעת, אל אלקים, חמימות ולחות, טפה, חמשה חסדים וחמש גבורות [Package 1 core]; (B) 2 nodes - עשרה מיני זמרה / עשרה לשונות [merged into Package 1 via ten-structure bridge].",
+    "note_on_polarity": "Torah #205 is a compact positive teaching. The evil pole (ליליות, קלפה) is discussed in the source text as the problem being remedied, but the bechina-edges are entirely on the good/tikkun side — no bechina edges exist in the dataset for the evil nodes of Torah 205. The evil mirror structure is therefore present in the eitza-level logic (the klipa captures what דעת/חסד-גבורה should produce) but is not instantiated as a bechina package."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "source": "Torah #70",
+    "type": "package_proposals",
+    "generated": "2026-03-03",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Edges filtered: reference===70 AND type==='bechina'. Three bechina edges form a single path-shaped component of 4 nodes: צדיק — עפר — כח המושך — משכן. No isolated small components exist to merge. Torah #70 is a tightly unified teaching with one conceptual domain."
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 70,
+      "label": "צַדִּיק וְעָפָר וְכֹחַ הַמּוֹשֵׁךְ",
+      "label_en": "The Tzaddik, the Dust, and the Drawing Force",
+      "polarity": "good",
+      "reason": "Torah #70 builds a single continuous bechina-chain: the tzaddik (צדיק) is an aspect of dust/earth (עפר), dust is an aspect of the drawing force (כח המושך), and the Mishkan (משכן) is an aspect of the drawing force. The entire teaching is a meditation on one essential nature seen from four angles: the humble person who makes himself like dust acquires the gravitational quality of earth — the capacity to draw everything toward himself. This is the same quality that earth has (it pulls all things downward), that the Tzaddik has (he draws all people toward holiness), and that the Mishkan had (it drew divine presence to wherever it stood). These four nodes are not cause-and-effect; they are parallel expressions of the same underlying reality: lowliness-as-gravitational-holiness. The Torah begins with physics (earth's gravity) and ends with history (Nissan as new year for kings), all unified through this one bechina-chain.",
+      "dominant_node": "כח המושך",
+      "nodes": [
+        "צדיק",
+        "עפר",
+        "כח המושך",
+        "משכן"
+      ],
+      "node_degrees": {
+        "כח המושך": 2,
+        "עפר": 2,
+        "צדיק": 1,
+        "משכן": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 4,
+    "total_packages": 1,
+    "raw_connected_components": 1,
+    "components_merged_into_packages": 0,
+    "note_on_merges": "Only one connected component exists in Torah #70's bechina graph. No merges were required. The single component forms a path: צדיק — עפר — כח המושך — משכן (3 edges, 4 nodes). Torah #70 is structurally the simplest teaching analyzed to date: one dominant concept (the drawing force as shared nature of tzaddik, dust, and Mishkan), no evil mirror package, no isolated singleton components.",
+    "evil_mirror_check": "Torah #70 has no evil mirror package. The teaching does reference an opposing force — כח המכריח (the force that compels/repels people away from the tzaddik) — but it is treated exclusively as an eitza/causal concept (4 eitza edges) rather than a parallel-nature bechina cluster. The text devotes only one sentence to it (line 9) before immediately returning to the positive domain. No evil bechina-language cluster of 2+ nodes was found.",
+    "note_on_eitza_edges": "The 4 eitza edges (IDs 814, 1423, 1980, 2415) describe cause-and-effect flows: giving tzedaka to the tzaddik → immediate blessing; self-minimization → drawing force; self-minimization → Mishkan/drawing force. These are the narrative flow of the teaching and confirm that the bechina cluster (Package 1) is the causal foundation from which the eitza consequences follow."
+  }
+}

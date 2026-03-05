@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "source": "Torah #59",
+    "type": "new_package_proposals",
+    "generated": "2026-03-03"
+  },
+  "verdict": "NO_NEW_PACKAGE",
+  "rationale": "Torah #59 does not contain a cluster of 3+ bechina-language concepts forming an independent domain that is not already covered by the three existing packages. The analysis is as follows:\n\n1. The הֵיכַל הַקֹּדֶשׁ domain (sections א–ג): The teaching opens with the concept of building the Holy Temple through drawing people close. The text gives bechina language for קֹדֶשׁ, כָּבוֹד, and הֵיכָל. However, these three concepts are not structurally independent from Package 1 — they are the *preconditions and outputs* of the עיגולא/ריבועא/כסא-כבוד structure. Specifically: the הֵיכַל is where the כָּבוֹד dwells (כבוד = היכל); the כָּבוֹד is the throne (כסא כבוד = Pkg 1 dominant); and the קֹדֶשׁ is what the structure produces when the people remain attached in complete awe. These are not three independently bechinot-connected concepts forming their own graph cluster — the text does not provide bechina edges between them (הֵיכָל ↔ קֹדֶשׁ is not stated; קֹדֶשׁ ↔ כָּבוֹד is not stated). They are each separately defined as bechinas of existing Package 1 nodes (כבוד ↔ כסא כבוד is captured in the additions; קדש belongs as a Package 1 addition). There is no emergent independent domain.\n\n2. The הִתְלַהֲבוּת/מִשְׁפָּט mechanism domain (section ב): Sections ב–ג describe how mishpat (self-judgment) produces the angel-fire, which burns the klipot, which enables the holy work to continue. This chain involves: משפט (Pkg 1), מלאכים (Pkg 2), קלפות (evil — not a bechina node in the dataset for Torah #59). The klipot cluster does not have enough explicit bechina-language concepts in this Torah to form a new package — the text names them primarily in eitza context (the klipot cling, the fire burns them) without declaring new bechina equivalences for them. The evil mirror of this teaching is represented situationally (the Tarmudeans, the evil inclination, the corrupted wall) but not through a cluster of explicit bechina declarations.\n\n3. The Tarmudean / evil-eyes domain (sections ו): Lines 35–40 discuss the Tarmudeans whose eyes are bleary (עֵינֵיהֶם טְרוּטוֹת) as a bechina of corrupted Shabbat, corrupted wall/house, and corrupted eyes. The text cites: 'שִׁין – תְּלָת גַּוְנָא דְּעֵינָא; בַּת – בַּת עַיִן'. These two (eye-components from the Tikunim) are given as bechinot of the corrupted wall. However, this amounts to 2 concepts (שין/bat-ayin), not 3 independent domain concepts, and they operate as the evil mirror of the עינים bechina already captured in Package 3. They describe the same domain (eye = wall = wealth) but from the evil/corrupted side. Two options: (a) add them to Package 3 as evil mirror nodes, or (b) treat them as the evil-polarity sub-dimension of Package 3. Since they constitute only 2 new explicit bechina concepts (both from a single Zohar citation), and they are the evil-mirror of Package 3 rather than an independent domain, they do not qualify as a new package by the 3+ threshold.\n\n4. Summary: The teaching of Torah #59 is tightly structured around two poles (circle/square = Pkg 1 and wall/anger = Pkg 3) with the angel-fire mechanism (Pkg 2) as the practical solution. All bechina concepts reduce to these three domains. The additions file (torah_59_additions.json) captures 6 missing bechina concepts, all of which belong to existing packages.",
+  "new_packages": [],
+  "evil_mirror_observation": {
+    "note": "Torah #59 has a notable structural asymmetry: Package 3 (חומה/ממון/כבישת-כעס/עינים) is classified as 'good' but contains an implicit evil mirror described in section ו. The Tarmudean passage (lines 35–40) describes the evil outcome when the wall is corrupted: 'עֵינֵיהֶם טְרוּטוֹת' = bleary/damaged eyes = corrupted חומה = corrupted עשירות = corrupted כבישת-כעס. The text explicitly references: 'שִׁין – תְּלָת גַּוְנָא דְּעֵינָא; בַּת – בַּת עַיִן' (from Tikkunei Zohar 70) as a bechina of 'קִלְקוּל הַחוֹמָה וּבַיִת הַנַּ\"ל, שֶׁהֵם בְחִינַת עֵינַיִם'. Two evil-mirror bechina concepts exist in the text:\n\n1. 'שין' (the letter shin with three flame-tips = the three aspects of the eye) = bechina of the corrupted wall-eye. The letter shin has three flame-tips that represent the three 'aspects of the eye' (תְּלָת גַּוְנָא דְּעֵינָא).\n2. 'בת עין' (pupil of the eye) = bechina of corrupted house (בית/חומה when damaged).\n\nThese are 2 concepts, not 3, and they form the evil underside of Package 3's eye-wall complex rather than an independent domain. They are flagged here as candidates for a future evil-mirror sub-package to Package 3 if additional evil-domain bechina concepts for Torah #59 are found in the source text.",
+    "evil_mirror_candidates": [
+      {
+        "node_id": "אות שין",
+        "node_text": "אוֹת שִׁי\"ן",
+        "bechina": "תְּלָת גַּוְנָא דְּעֵינָא (the three aspects/colors of the eye)",
+        "polarity": "evil",
+        "source_quote": "שִׁין – תְּלָת גַּוְנָא דְּעֵינָא (תִּקּוּנָא שִׁבְעִין)"
+      },
+      {
+        "node_id": "בת עין",
+        "node_text": "בַּת עַיִן",
+        "bechina": "קִלְקוּל הַחוֹמָה וּבַיִת (corrupted wall and house)",
+        "polarity": "evil",
+        "source_quote": "בַּת – בַּת עַיִן (תִּקּוּנָא שִׁבְעִין), בְּחִינַת קִלְקוּל הַחוֹמָה וּבַיִת הַנַּ\"ל"
+      }
+    ],
+    "threshold_check": {
+      "minimum_required": 3,
+      "concepts_found": 2,
+      "threshold_met": false,
+      "conclusion": "Below the 3-concept threshold for a new package. Evil mirror exists in principle but is not sufficiently developed in the bechina layer of this Torah to constitute a standalone package."
+    }
+  }
+}
