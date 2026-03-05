@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "source": "Torah #104 (Likutay Moharan Vol. 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "based_on": "torah_104_packages.json"
+  },
+  "assignments": [],
+  "new_packages": [],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_cause_eitza_edges": 0,
+    "unique_unassigned_nodes": 0,
+    "nodes_assigned_to_existing": 0,
+    "nodes_in_new_packages": 0,
+    "nodes_unassigned": 0,
+    "nodes_already_in_bechina_packages": 6
+  },
+  "notes": "Torah #104 has zero cause/effect (eitza or cause-type) edges in torahData.js with reference===104. The existing bechina packages contain 6 nodes across 2 packages (Package 1: אֶרֶץ יִשְׂרָאֵל וְחֵלֶק בֵּאלֹהִים with 3 nodes; Package 2: חוּץ לָאָרֶץ וְאֵין לוֹ אֱלוֹהַּ with 3 nodes). The additions file (torah_104_additions.json) confirms the same 6 nodes. With no cause/effect edges in the dataset, there are no unassigned nodes to process. The eitza structure identified in the source text analysis (חוֹשֵׁד בִּכְשֵׁרִים as the causal mechanism linking Moses's false accusation to his punishment, and the middah kenegged middah principle governing the sin-punishment flow) has not yet been entered into torahData.js. When those edges are entered, this file should be re-run to assign any new nodes that emerge."
+}
