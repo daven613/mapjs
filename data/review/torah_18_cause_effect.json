@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "source": "Torah #18 (Likutay Moharan Vol 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "methodology": "Read framework.md, torah_18_packages.json, torah_18_additions.json, torah_18_ce_edges.json, and torah_18.txt. Collected all 28 nodes from 5 existing packages plus 6 nodes from additions (34 total ASSIGNED_NODES). Extracted all unique node IDs from 5 cause/effect edges. Identified 4 unassigned cause/effect nodes. Assigned each to an existing package by ESSENTIAL NATURE, considering polarity.",
+    "inputs": {
+      "packages_file": "torah_18_packages.json (5 packages, 28 nodes)",
+      "additions_file": "torah_18_additions.json (6 additional nodes)",
+      "cause_effect_edges_file": "/tmp/torah_18_ce_edges.json (5 eitza edges)",
+      "source_text": "torah_texts/lm1/torah_18.txt"
+    }
+  },
+  "assignments": [
+    {
+      "node_id": "כפי הפרת הכעס ברחמנות",
+      "node_text": "כְּפִי הֲפָרַת הַכַּעַס בְּרַחֲמָנוּת. הַיְנוּ כְּשֶׁבָּא אָדָם לִכְלַל כַּעַס, לֹא יִפְעֹל בְּכַעְסוֹ שׁוּם אַכְזָרִיּוּת, וְאַדְּרַבָּא, יַמְתִּיק הַכַּעַס בְּרַחֲמָנוּת, בִּבְחִינַת: \"בְּרֹגֶז רַחֵם תִּזְכּוֹר\" (חֲבַקּוּק ג),",
+      "assigned_to_package_id": 3,
+      "assigned_to_package_label": "רַחֲמָנוּת וְעֲטָרָה",
+      "polarity": "good",
+      "reason": "This node describes the practical teaching of nullifying anger through mercy — when a person comes to anger, he should not act with cruelty but rather sweeten the anger with rachamim. Its essential nature is rachamim (mercy that transforms anger). Package 3 already contains 'ימתיק הכעס ברחמנות' (sweetening anger with mercy) and 'ברגז רחם תזכור' (the scriptural expression of the same act). This node is the same domain: the practice of mercy overcoming anger. It is the cause-node in three eitza edges — it PRODUCES the crown for the humble (edge 2139), PRODUCES the sweetening of divine anger within the tzaddikim (edge 2094), and PRODUCES the reception of the tachlit (edge 1033). These are causal flows FROM this node TO other packages, which is the expected inter-package eitza structure.",
+      "edges_involved": [1033, 2094, 2139]
+    },
+    {
+      "node_id": "ודע, שהתכלית של הבריאה הוא שעשוע עולם הבא. ואי אפשר לקרב זאת התכלית למחשבות בני־אדם, כי זאת התכלית עליו נאמר (ישעיהו ס\"ד): \"עין לא ראתה וכו\". אבל הצדיקים באמת, גם הם יכולים לתפס במחשבתם תכלית עולם הבא. וכל אחד ואחד מישראל, לפי שרשו שיש לו בתוך נשמת הצדיק, כן מקבל ממנו גם כן זאת התכלית",
+      "node_text": "וְדַע, שֶׁהַתַּכְלִית שֶׁל הַבְּרִיאָה הוּא שַׁעֲשׁוּעַ עוֹלָם הַבָּא. וְאִי אֶפְשָׁר לְקָרֵב זֹאת הַתַּכְלִית לְמַחְשְׁבוֹת בְּנֵי־אָדָם, כִּי זֹאת הַתַּכְלִית עָלָיו נֶאֱמַר (יְשַׁעְיָהוּ ס\"ד): \"עַיִן לֹא רָאָתָה וְכוּ'\". אֲבָל הַצַּדִּיקִים בֶּאֱמֶת, גַּם הֵם יְכוֹלִים לִתְפֹּס בְּמַחֲשַׁבְתָּם תַּכְלִית עוֹלָם הַבָּא. וְכָל אֶחָד וְאֶחָד מִיִּשְׂרָאֵל, לְפִי שָׁרְשׁוֹ שֶׁיֵּשׁ לוֹ בְּתוֹךְ נִשְׁמַת הַצַּדִּיק, כֵּן מְקַבֵּל מִמֶּנּוּ גַּם כֵּן זֹאת הַתַּכְלִית",
+      "assigned_to_package_id": 1,
+      "assigned_to_package_label": "שְׁלֵמוּת הָאוֹתִיּוֹת וְהַתַּכְלִית",
+      "polarity": "good",
+      "reason": "This node describes the tachlit (ultimate purpose) of all creation — the delight of the World to Come — and how the true tzaddikim can grasp this tachlit in their thought, with each Jew receiving it according to their root in the tzaddik's soul. Its essential nature is the tachlit/World-to-Come domain. Package 1 already contains 'תכלית של כל הנבראים' (the purpose of all creatures), 'עולם הבא' (the World to Come), and 'תכלית' (purpose). This node is the extended teaching passage that defines these very concepts. It belongs in the same domain of ultimate divine purpose and letter-completion.",
+      "edges_involved": [1033]
+    },
+    {
+      "node_id": "נמתק החרון־אף שיש בתוך הצדיקים על־ידי הרחמנות, ואז הרחמנות גובר עליהם, ומרחמים על העולם ונתרצים בהנהגתו, ומקבלים על עצמן השררה של ההנהגה, ובזאת הרחמנות הם מנהיגים את העולם, בבחינת (ישעיהו מ\"ט): \"כי מרחמם ינהגם\".",
+      "node_text": "נִמְתָּק הַחֲרוֹן־אַף שֶׁיֵּשׁ בְּתוֹךְ הַצַּדִּיקִים עַל־יְדֵי הָרַחֲמָנוּת, וְאָז הָרַחֲמָנוּת גּוֹבֵר עֲלֵיהֶם, וּמְרַחֲמִים עַל הָעוֹלָם וְנִתְרַצִּים בְּהַנְהָגָתוֹ, וּמְקַבְּלִים עַל עַצְמָן הַשְּׂרָרָה שֶׁל הַהַנְהָגָה, וּבְזֹאת הָרַחֲמָנוּת הֵם מַנְהִיגִים אֶת הָעוֹלָם, בִּבְחִינַת (יְשַׁעְיָהוּ מ\"ט): \"כִּי מְרַחֲמָם יְנַהֲגֵם\".",
+      "assigned_to_package_id": 3,
+      "assigned_to_package_label": "רַחֲמָנוּת וְעֲטָרָה",
+      "polarity": "good",
+      "reason": "This node describes how the charon-af (divine anger) within the tzaddikim is sweetened through rachamim, after which rachamim overpowers them and they accept the leadership of the world through mercy — 'ki merachamam yenahagem.' Its essential nature is rachamim triumphant: mercy that has overcome anger and become the crown of leadership. While the node mentions hanhaga (governance, Package 4), the CORE quality being described is rachamim as the force that transforms anger into willing leadership. The verse 'ki merachamam yenahagem' explicitly names mercy as the governing principle. This is the same domain as Package 3's עטרה (crown) and רחמנות (mercy) — the crown of mercy that compels the humble tzaddik to lead. The causal flow from this node to hanhaga/malkhut is eitza (inter-package), not bechina (intra-package).",
+      "edges_involved": [2094]
+    },
+    {
+      "node_id": "נעשה עטרה לענוים, הבורחים מכבוד ושררה ועושין עצמן כשירים, וכשנתעטרין בעטרה של רחמנות, בבחינות (תהלים ק\"ג): \"המעטרכי חסד ורחמים\", אזי מקבלין את הכבוד והשררה בעל כרחם.",
+      "node_text": "נַעֲשֶׂה עֲטָרָה לָעֲנָוִים, הַבּוֹרְחִים מִכָּבוֹד וּשְׂרָרָה וְעוֹשִׂין עַצְמָן כְּשִׁירַיִם, וּכְשֶׁנִּתְעַטְּרִין בַּעֲטָרָה שֶׁל רַחֲמָנוּת, בִּבְחִינוֹת (תְּהִלִּים ק\"ג): \"הַמְעַטְּרֵכִי חֶסֶד וְרַחֲמִים\", אֲזַי מְקַבְּלִין אֶת הַכָּבוֹד וְהַשְּׂרָרָה בְּעַל כָּרְחָם.",
+      "assigned_to_package_id": 3,
+      "assigned_to_package_label": "רַחֲמָנוּת וְעֲטָרָה",
+      "polarity": "good",
+      "reason": "This node describes the crown (atara) being made for the humble who flee from honor, and when they are crowned with the crown of rachamim ('ha-me'atreki chesed ve-rachamim'), they accept honor and authority against their will. Its essential nature is the atara shel rachamim — the crown of mercy that adorns the humble. Package 3 is named precisely for this pair: רחמנות ועטרה (Mercy and the Crown). The node explicitly references עטרה (crown) and רחמנות (mercy) together, citing Psalms 103: 'Who crowns you with lovingkindness and mercy.' This is the heart of Package 3's domain.",
+      "edges_involved": [2139]
+    }
+  ],
+  "new_packages": [],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_cause_effect_edges": 5,
+    "unique_nodes_in_ce_edges": 7,
+    "nodes_already_assigned": 3,
+    "nodes_newly_assigned": 4,
+    "assignments_to_package_1": 1,
+    "assignments_to_package_2": 0,
+    "assignments_to_package_3": 3,
+    "assignments_to_package_4": 0,
+    "assignments_to_package_5": 0,
+    "new_packages_created": 0,
+    "unassigned_count": 0,
+    "notes": "All 4 unassigned cause/effect nodes were assigned to existing packages. 3 of the 4 nodes belong to Package 3 (Rachamim/Atara) because Torah 18's cause/effect structure is largely driven by the central act of sweetening anger through mercy, which is Package 3's domain. The remaining node (the tachlit passage) belongs to Package 1 (Letters/Tachlit) as it describes the ultimate purpose of creation. The 3 already-assigned nodes were: 'אמונה' (Package 2), 'שלמות הדבור' (Package 1), and 'שפה ברורה' (Package 1). The cause/effect edges describe two main flows: (1) הפרת הכעס ברחמנות (Pkg 3) → תכלית/עולם הבא (Pkg 1), and (2) אמונה (Pkg 2) → שלמות הדבור/שפה ברורה (Pkg 1). Both flows show inter-package eitza connections as expected by the framework."
+  }
+}
