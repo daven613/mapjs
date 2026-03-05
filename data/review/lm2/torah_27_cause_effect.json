@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "source": "Torah #27 (Likutay Moharan lm2)",
+    "reference": 1027,
+    "volume": "lm2",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "description": "Assigns cause-effect nodes to packages based on essential nature. Torah LM2/27 contains zero bechina edges and zero pre-existing packages. All 3 edges are eitza (cause-effect). Nodes are grouped into new packages based on their essential thematic nature and polarity."
+  },
+  "assignments": [],
+  "new_packages": [
+    {
+      "package_id": "pkg_1027_ce_1",
+      "name_he": "הַנְהָגָה בְּיֹשֶׁר — הַעֲרָכָה כָּרָאוּי",
+      "name_en": "Righteous Leadership — Equitable Assessment",
+      "polarity": "good",
+      "dominant_concept": "שמסתכלין להעריך כל אחד כראוי",
+      "rationale": "Both nodes share the same essential nature: the act of looking carefully at each person and distributing burdens equitably. Node 1 describes the leader who does this (the parnas/manhig who leads with integrity), and node 3 describes the act itself (looking to assess each person properly). They are the same concept from two angles — the agent and the action. Moshe Rabbeinu is the paradigmatic example of both.",
+      "nodes": [
+        {
+          "node_id": "פרנס חדש או מנהיג, (שקורין רוגיריר), והוא מנהיג בכשרות ובישר",
+          "node_text": "פרנס חדש או מנהיג, (שקורין רוגיריר), והוא מנהיג בכשרות ובישר",
+          "role_in_package": "The agent — the righteous leader who performs equitable assessment"
+        },
+        {
+          "node_id": "שמסתכלין להעריך כל אחד כראוי",
+          "node_text": "שמסתכלין להעריך כל אחד כראוי",
+          "role_in_package": "The action — the act of looking carefully and assessing each person according to their capacity"
+        }
+      ]
+    },
+    {
+      "package_id": "pkg_1027_ce_2",
+      "name_he": "הַתָּרַת נְדָרִים",
+      "name_en": "Annulment of Vows",
+      "polarity": "good",
+      "dominant_concept": "זוכין להתרת נדרים",
+      "rationale": "This is a singleton node representing the distinct spiritual mechanism of hatarat nedarim (annulment of vows). Its essential nature is the release from binding obligations — a juridical-spiritual concept distinct from both the leadership that causes it and the salvation from sin that follows from it. In the Torah's logic, delaying a vow causes the four evil traits; annulling vows reverses that causation. This node is the hinge of the entire teaching.",
+      "nodes": [
+        {
+          "node_id": "זוכין להתרת נדרים",
+          "node_text": "זוכין להתרת נדרים",
+          "role_in_package": "The spiritual mechanism — meriting the annulment of vows"
+        }
+      ]
+    },
+    {
+      "package_id": "pkg_1027_ce_3",
+      "name_he": "בִּטּוּל אַרְבַּע מִדּוֹת רָעוֹת",
+      "name_en": "Annulment of the Four Evil Traits",
+      "polarity": "good",
+      "dominant_concept": "מבטל הארבע מדות רעות",
+      "rationale": "Both nodes share the same essential nature: the nullification of or salvation from the four cardinal sins (idolatry, sexual immorality, bloodshed, evil speech). Node 2 frames this as an active annulment (mevatel) and node 5 as passive salvation (nitzoolin). They describe the same outcome — the defeat of these four evils — from two perspectives. The polarity is 'good' because both describe the positive result of overcoming evil, not the evil itself.",
+      "nodes": [
+        {
+          "node_id": "מבטל הארבע מדות רעות, דהינו עבודה זרה וגלוי עריות ושפיכות דמים ולשון הרע",
+          "node_text": "מבטל הארבע מדות רעות, דהינו עבודה זרה וגלוי עריות ושפיכות דמים ולשון הרע",
+          "role_in_package": "Active voice — the leader annuls the four evil traits through equitable leadership"
+        },
+        {
+          "node_id": "נצולין מארבע מדות הנ\"ל",
+          "node_text": "נצולין מארבע מדות הנ\"ל",
+          "role_in_package": "Passive voice — being saved from the four evil traits through vow annulment"
+        }
+      ]
+    }
+  ],
+  "unassigned_nodes": [],
+  "causal_flow": {
+    "description": "The Torah's argument as a three-step causal chain between the new packages",
+    "flows": [
+      {
+        "from_package": "pkg_1027_ce_1",
+        "to_package": "pkg_1027_ce_3",
+        "edge_summary": "Righteous leadership that distributes burdens equitably → annuls the four evil traits",
+        "edge_node1": "פרנס חדש או מנהיג, (שקורין רוגיריר), והוא מנהיג בכשרות ובישר",
+        "edge_node2": "מבטל הארבע מדות רעות, דהינו עבודה זרה וגלוי עריות ושפיכות דמים ולשון הרע"
+      },
+      {
+        "from_package": "pkg_1027_ce_1",
+        "to_package": "pkg_1027_ce_2",
+        "edge_summary": "Looking to assess each person properly → meriting annulment of vows",
+        "edge_node1": "שמסתכלין להעריך כל אחד כראוי",
+        "edge_node2": "זוכין להתרת נדרים"
+      },
+      {
+        "from_package": "pkg_1027_ce_2",
+        "to_package": "pkg_1027_ce_3",
+        "edge_summary": "Meriting annulment of vows → being saved from the four evil traits",
+        "edge_node1": "זוכין להתרת נדרים",
+        "edge_node2": "נצולין מארבע מדות הנ\"ל"
+      }
+    ]
+  },
+  "stats": {
+    "total_ce_edges": 3,
+    "total_ce_nodes": 5,
+    "nodes_assigned_to_existing_packages": 0,
+    "nodes_assigned_to_new_packages": 5,
+    "new_packages_created": 3,
+    "unassigned_nodes": 0,
+    "existing_packages_in_torah": 0
+  }
+}
