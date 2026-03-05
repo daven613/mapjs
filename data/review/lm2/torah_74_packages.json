@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "source": "Torah #74 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 74,
+      "volume": "lm2",
+      "label": "מָרְדֳּכַי וְחֵרוּת",
+      "label_en": "Mordechai and Freedom",
+      "polarity": "good",
+      "reason": "These nodes all share the essential nature of freedom/liberation (חרות). Mordechai is called 'מר דרור' — the etymology of his name in Aramaic means freedom (Hullin 139b). 'חרות' and 'חרות של פסח' are the same concept of freedom — one stated in general and one in its specific Pesach context. The Rebbe explicitly equates Mordechai with the language of freedom (לשון חרות) and with the aspect of Pesach freedom (בחינת חרות של פסח). All three nodes are different expressions of the same liberating force.",
+      "dominant_node": "מרדכי",
+      "nodes": ["מרדכי", "חרות", "חרות של פסח"],
+      "node_degrees": {
+        "מרדכי": 3,
+        "חרות": 1,
+        "חרות של פסח": 2
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["חרות", "חרות של פסח"],
+          "reason": "Both node_ids refer to the same conceptual reality — freedom. 'חרות של פסח' (the freedom of Pesach) is simply the contextually specified form of 'חרות' (freedom in general). In this Torah they are encoded as separate node_ids but the source text treats them as one bechina: Mordechai = מר דרור = לשון חרות = בחינת חרות של פסח. Both edges connect to מרדכי and belong to the same thematic cluster."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "torah_ref": 74,
+      "volume": "lm2",
+      "label": "שׁוֹשַׁנָּה וְאֶסְתֵּר",
+      "label_en": "The Rose and Esther",
+      "polarity": "good",
+      "reason": "The Zohar and the Arizal identify the שושנה (rose) of Song of Songs with Esther. Their bechina is grounded in gematria (שושנה = אסתר numerically) and the Kabbalistic tradition that Esther embodies the quality of the rose — hidden beauty, concealment followed by revelation, the Shekhinah in exile. In this Torah they are paired as the Purim dimension of the verse 'שפתותיו שושנים נוטפות מור עובר' — the rose (שושנה) is Esther (פורים).",
+      "dominant_node": "שושנה",
+      "nodes": ["שושנה", "אסתר"],
+      "node_degrees": {
+        "שושנה": 1,
+        "אסתר": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 3,
+      "torah_ref": 74,
+      "volume": "lm2",
+      "label": "שְׂפָתַיִם וּפֶסַח",
+      "label_en": "The Lips and Pesach",
+      "polarity": "good",
+      "reason": "The verse says 'שִׂפְתוֹתָיו שׁוֹשַׁנִּים' — 'his lips.' The Rebbe identifies שפתותיו (the lips/speech) as a bechina of פסח through the well-known wordplay: פֶּסַח = פֶּה-סָח (the mouth that speaks). The essential nature shared is speech/verbal revelation — the mouth/lips that articulate and the festival whose name means 'the mouth speaks' are two expressions of the same dimension: divine speech and the liberation it enables.",
+      "dominant_node": "פסח",
+      "nodes": ["שפתותיו", "פסח"],
+      "node_degrees": {
+        "שפתותיו": 1,
+        "פסח": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 5,
+    "total_nodes": 7,
+    "total_packages": 3,
+    "raw_connected_components": 3
+  }
+}

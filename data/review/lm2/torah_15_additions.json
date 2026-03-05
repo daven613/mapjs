@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "source": "Torah #15 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 6,
+      "node_id": "ניאוף",
+      "node_text": "נִיאוּף",
+      "polarity": "evil",
+      "reason": "ניאוף (adultery) is the corrupted, evil mirror of יבק בקדשה (Package 6 good). The Rebbe explicitly states that when wicked donors give charity, the יב\"ק in their realm becomes corrupted and transforms into ניאוף. It is a bechina of the degraded/inverted יב\"ק — 'וּבְחִינַת הַיַּבֹּק בִּקְדֻשָּׁה הוּא בְּחִינַת זִוּוּגִין דִּקְדֻשָּׁה, וְאֶצְלָם נִתְקַלְקֵל זֹאת הַיְנִיקָה, וְנַעֲשֶׂה אֶצְלָם נִיאוּף'. This is the evil mirror of Package 6: Package 6 (יב\"ק = זווג in holiness) ↔ evil mirror (ניאוף = corrupted זווג). As the evil equivalent of זווג, ניאוף belongs as a negative node paired with Package 6.",
+      "source_quote": "וּבְחִינַת הַיַּבֹּק בִּקְדֻשָּׁה הוּא בְּחִינַת זִוּוּגִין דִּקְדֻשָּׁה, וְאֶצְלָם נִתְקַלְקֵל זֹאת הַיְנִיקָה, וְנַעֲשֶׂה אֶצְלָם נִיאוּף",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 4,
+      "node_id": "שתיקה",
+      "node_text": "שְׁתִיקָה",
+      "polarity": "good",
+      "reason": "שתיקה (silence) is explicitly called a bechina of the simple tzaddik's entire service: 'וְכָל עֲבוֹדָתוֹ הוּא בִּבְחִינַת שְׁתִיקָה'. The simple tzaddik (גמלא, Package 4) does not speak greatness — his work is silence. Silence is the essential nature of the simple tzaddik's spiritual mode, just as holy speech (דבור הקדוש) is the nature of the great tzaddik (Package 1). שתיקה belongs in Package 4 as a bechina of the simple tzaddik.",
+      "source_quote": "וְכָל עֲבוֹדָתוֹ הוּא בִּבְחִינַת שְׁתִיקָה. כִּי אֵין יוֹצֵא מִפִּיו גְּדוֹלוֹת וְנִפְלָאוֹת",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 13,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["ניאוף", "שתיקה"],
+    "note_on_duplicates": "The pair צדקה—מים appears three times in the dataset with reference 1015 and type bechina (lines ~39691, ~39724, ~39757). These are duplicate edges of the same conceptual pair; counted as one unique bechina edge for graph purposes.",
+    "note_on_non_bechina_edges": "Several reference 1015 edges were excluded from the bechina subgraph because their type is 'cause' (not 'bechina'): מה שנמצאים השקרנים—נצול הצדיק האמת, מה שנמצאים השקרנים—אלו הרשעים, צדקה—פה קדוש של הצדיק. One edge is type 'eitza': צדקה—יב\"ק. These represent causal flows between packages, not bechina equivalences within packages.",
+    "good_evil_mirror_structure": {
+      "Package 1 (holy speech / great tzaddik) mirrors Package 5 (false prophet)": "The false prophet steals and corrupts the great tzaddik's dual-meaning speech. תורי (ox, long tail) vs. נביא שקר (the long tail that feeds off the ox).",
+      "Package 2 (charity / water / soft heart) mirrors Package 3 (stone heart)": "The rock (לב אבן, צור לבבי) is the exact opposite of the soft heart (לב רך, אגם מים). The Torah's central transformation is הַהֹפְכִי הַצּוּר אֲגַם מָיִם — turning evil Package 3 into good Package 2.",
+      "Package 6 (יב\"ק / holy union) mirror: ניאוף (not yet in dataset)": "The holy יב\"ק (unity, blessing, holiness) has an evil mirror in ניאוף — the corrupted union that results when wicked donors' charity flows to tzaddikim."
+    }
+  }
+}

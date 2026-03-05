@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "source": "Torah #9 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 3,
+      "node_id": "ערב רב",
+      "node_text": "עֵרֶב רַב",
+      "polarity": "evil",
+      "reason": "The Rebbe states explicitly: 'גם יש רשעים שהם בחינת ערב רב, וכשהם נופלים על הלב, דהינו על ישראל, זה גם כן בחינת עפרוריות.' The wicked who are a bechina of ערב רב ARE ALSO a bechina of עפרוריות when they fall on Israel's heart. This is a direct bechina equating ערב רב with עפרוריות — they share the essential nature of 'that which smothers Israel's inner fire.' ערב רב is the social/human form of the same obstruction that מרה שחורה is in the psychological form. This node is missing from the dataset entirely (no edge for reference 1009 connects ערב רב). It belongs in Package 3 alongside עפרוריות and מרה שחורה.",
+      "source_quote": "גַּם יֵשׁ רְשָׁעִים שֶׁהֵם בְּחִינַת עֵרֶב רַב, וּכְשֶׁהֵם נוֹפְלִים עַל הַלֵּב, דְּהַיְנוּ עַל יִשְׂרָאֵל, זֶה גַם-כֵּן בְּחִינַת עַפְרוּרִיּוּת",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 4,
+      "node_id": "הריסה",
+      "node_text": "הֲרִיסָה",
+      "polarity": "evil",
+      "reason": "The Rebbe states: 'שזה בחינת הריסה, בחינת פן יהרסו לעלות אל ה'.' Burning beyond measure IS a bechina of הריסה (destructive overreach/breaking down). הריסה belongs in Package 4 alongside רוח סערה and כשרואה אדם שבוער ביותר — all three describe the same domain of destructive excess. The node is missing from the dataset (no edge for reference 1009 connects הריסה).",
+      "source_quote": "שֶׁזֶּה בְּחִינַת הֲרִיסָה, בְּחִינַת פֶּן יֶהֶרְסוּ לַעֲלוֹת אֶל ה'",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "כנפי ריאה",
+      "node_text": "כַּנְפֵי רֵאָה",
+      "polarity": "neutral",
+      "reason": "The Tikkun Zohar passage that opens the Torah describes 'כנפי ריאה דנשבין על לבא' — the lobes of the lung that blow on the heart. This is the physical-anatomical bechina undergirding the entire metaphor: just as the lung-wings blow on the heart and regulate its heat, so the leaders blow their spirit on Israel's heart. כנפי ריאה is a neutral structural node (a body part serving as the metaphor-anchor). It is missing from the dataset for reference 1009. It belongs most naturally in Package 1 (Israel/heart) as the physical counterpart to the heart, or as a bridge node between Package 1 and Package 2.",
+      "source_quote": "אִלְמָלֵא כַּנְפֵי רֵאָה דְּנָשְׁבִין עַל לִבָּא, הֲוֵי לִבָּא אוֹקִיד כָּל גּוּפָא",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 5,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "ערב רב — explicitly called a bechina of עפרוריות",
+      "הריסה — explicitly called a bechina of burning beyond measure",
+      "כנפי ריאה — the lung-wings, the physical anchor of the candle/wind metaphor",
+      "אליהו — mentioned as the one who subdues the stormy fire (eitza role, not a bechina node here)",
+      "סוסי אש — the fiery horses Elijah rode; potentially a bechina of רוח סערה but stated as a metaphor rather than an explicit bechina equating"
+    ],
+    "note_on_cause_edges": "Three edges in the dataset for reference 1009 have type 'cause' (not 'bechina'): they describe the eitza chain of practical outcomes — leader blows dust away, fire-parts reconnect, each Israelite becomes a bechina of לב, the person re-ignites for God. These are correctly classified as cause/eitza and were excluded from package analysis. The node-ids in these cause-edges are full sentence-phrases rather than named concepts, which is a data modeling issue (they encode narrative steps, not atomic concept nodes).",
+    "note_on_dataset_scope": "The dataset for reference 1009 contains only 5 bechina edges and 9 unique concept nodes. This is a very sparse encoding of Torah LM2/9. The source text contains at minimum 3 additional bechina equatings (ערב רב = עפרוריות; הריסה = burning beyond measure; and implicitly כנפי ריאה as the physical anchor node). The dataset could be enriched significantly from the source text.",
+    "good_evil_mirror_structure": "The Torah has a clean double-polarity mirror: Package 2 (מנהיגי הדור / רוח — good measured wind) is mirrored by Package 4 (רוח סערה — destructive unmeasured wind); Package 1 (ישראל / לבא — the good heart that burns) is mirrored by Package 3 (עפרוריות / מרה שחורה — the smothering force that extinguishes the heart). The good wind fans the good heart; the evil obstruction smothers it; the evil storm over-inflames it."
+  }
+}

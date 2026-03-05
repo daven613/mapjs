@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "source": "Torah #81 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "נצח והוד — נביאים",
+      "node_text": "נביאים הם בחינת נצח והוד",
+      "polarity": "neutral",
+      "reason": "The source text explicitly states 'הָרַגְלַיִם הֵם נֶצַח וָהוֹד, בְּחִינַת נְבִיאִים' — feet ARE netzach and hod, bechina of prophets. This creates a three-way equivalence: רגלים = נצח והוד = נביאים. The dataset captures the edges רגלים–נצח והוד and נביאים–רגלים, but the direct edge נביאים–נצח והוד is missing. This is a bechina edge that should be in the dataset to complete the triangle declared explicitly in the source text.",
+      "source_quote": "הָרַגְלַיִם הֵם נֶצַח וָהוֹד, בְּחִינַת נְבִיאִים",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "לב",
+      "node_text": "לֵב",
+      "polarity": "good",
+      "reason": "The Torah's opening verse-anchor is 'וְנָבִיא לְבַב חָכְמָה' — and the text states that the feet (netzach and hod = prophets) are elevated 'לִבְחִינַת לֵב' (to the bechina of the heart) through joy. The heart is the explicit destination of this elevation and the Rebbe uses 'בחינת לב' as the name for the elevated state. While לב functions as the destination (an eitza target), the phrase 'נתעלים לבחינת לב' uses bechina language ('לבחינת') to define what heart IS in this context — the higher gradation opposite the foot. A direct bechina connection between לב and חכמה (via the verse 'ונביא לבב חכמה') is implied. The node לב is absent from the dataset for this Torah entirely.",
+      "source_quote": "נִתְעַלִּים לִבְחִינַת לֵב עַל־יְדֵי הַשִּׂמְחָה שֶׁבַּלֵּב",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 2,
+      "node_id": "חכמה",
+      "node_text": "חָכְמָה — לְבַב חָכְמָה",
+      "polarity": "good",
+      "reason": "The Torah opens with 'וְנָבִיא לְבַב חָכְמָה' (Psalms 90:12) and identifies the whole dynamic of this Torah as the 'bechina' called 'bringing a heart of wisdom.' The Rebbe equates the act of joyful dancing until the feet with the verse about acquiring a wise heart — implying that חכמה (wisdom/heart of wisdom) is the higher positive domain to which the feet are elevated. The elevated state = לבב חכמה = the good domain. This concept belongs in Package 2 as the ultimate positive dimension of the Torah. It is not in the dataset for this Torah.",
+      "source_quote": "זֶה הַבְּחִינָה נִקְרָא: וְנָבִיא לְבַב חָכְמָה",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 11,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "לב (heart) — the elevated destination ('לבחינת לב'), used explicitly with bechina language",
+      "חכמה / לבב חכמה — the state achieved ('ונביא לבב חכמה'), the whole Torah is named after this bechina",
+      "נביאים–נצח והוד direct edge — the triangle of רגלים=נצח והוד=נביאים has two of three edges; the third (נביאים–נצח והוד) is missing",
+      "רקוד (dancing) — described as the external manifestation of the dynamic but never given its own bechina statement",
+      "שמחה (joy) — the activating force; appears only in eitza context; no explicit bechina statement for שמחה itself in this Torah"
+    ],
+    "note_on_dual_spelling": "The dataset uses both 'רגל' (singular, 4 edges) and 'רגלים' (plural, 3 edges) as separate node_ids. These refer to the same concept. In the connected-component analysis they were treated as a single node. A cleanup task would be to unify these into one canonical node_id."
+  }
+}

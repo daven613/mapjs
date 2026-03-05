@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "source": "Torah #25 (Likutay Moharan Tinyana — LM2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "notes": "Torah LM2/25 contains zero bechina edges in torahData.js (reference === 1025, type === 'bechina' yields no results). The three dataset edges with reference 1025 are all type 'eitza'. The source text itself (torah_25.txt) contains no explicit bechina language ('X הוא בחינת Y', 'X נקרא Y', 'X בחינת Y'). This Torah is a pure practical teaching (הנהגה) about Hitbodedut — entirely prescriptive and causal in style. No connected components can be built; no packages are proposed from the bechina subgraph. However, the source text does contain thematically coherent concept clusters that could be enriched with bechina relationships; see torah_25_additions.json and torah_25_new_packages.json for the gap analysis and new-package check."
+  },
+  "packages": [],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0
+  }
+}

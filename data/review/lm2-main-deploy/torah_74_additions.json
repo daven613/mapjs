@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "source": "Torah #74 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "מר דרור",
+      "node_text": "מָר דְּרוֹר",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly derives Mordechai's bechina of freedom through the Talmudic etymology: Mordechai = מר דרור (Hullin 139b), where דרור means freedom. This is stated as an intermediate bechina in the chain מרדכי → מר דרור → לשון חרות → חרות של פסח. As an explicit bechina-link in the chain, מר דרור belongs to the Mordechai/Freedom cluster (Package 1).",
+      "source_quote": "נֹטְפוֹת מוֹר עֹבֵר זֶה בְּחִינַת מָרְדֳּכַי – מָר דְּרוֹר, לְשׁוֹן חֵרוּת",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 3,
+      "node_id": "פה סח",
+      "node_text": "פֶּה-סָח",
+      "polarity": "good",
+      "reason": "The Rebbe's bechina between שפתותיו and פסח is mediated through the wordplay פֶּסַח = פֶּה-סָח (the mouth that speaks). The intermediate concept 'פה סח' (the speaking mouth) is invoked explicitly as the basis of the bechina. In this Torah it is not present as a separate node but it is the very reason for the שפתותיו ↔ פסח connection, and belongs to Package 3.",
+      "source_quote": "שִׂפְתוֹתָיו זֶה בְּחִינַת פֶּסַח – פֶּה סָח",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "פורים",
+      "node_text": "פּוּרִים",
+      "polarity": "good",
+      "reason": "פורים is typed as 'eitza' toward פסח in the dataset (פורים → פסח as a pathway). However, the Torah also uses bechina language for פורים itself: 'בִּתְחִלָּה הוּא בְּחִינַת פּוּר' — Purim is initially a bechina of the pur (the lot/lottery). More importantly, פורים is structurally parallel to מרדכי and חרות in this Torah's argument — Purim is the name of the festival of Mordechai's freedom-victory, making it organically part of Package 1. The eitza typing of its edge to פסח is correct (Purim leads to Pesach), but פורים itself as a concept belongs to the Mordechai/Freedom cluster.",
+      "source_quote": "וּבִתְחִלָּה הוּא בְּחִינַת פּוּר, כִּי פּוּרִים עַל־שֵׁם הַפֻּר",
+      "in_dataset_already": true
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 5,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": ["מר דרור", "פה סח"],
+    "duplicate_edges_note": "Edges 4 and 5 (חרות של פסח ↔ מרדכי) are identical duplicates — the same node pair encoded twice. Both are counted in the total_bechina_edges count (5) but represent only one logical relationship.",
+    "node_alias_note": "The nodes 'חרות' (edge 1) and 'חרות של פסח' (edges 4 and 5) refer to the same concept. They are connected to the same partner (מרדכי) and the source text treats them as a single idea. This is a node alias split rather than two distinct concepts. A future data-cleanup pass could merge these two node_ids.",
+    "torah_completeness_note": "This Torah is explicitly incomplete. The text ends with 'וּפָסַק בְּאֶמְצַע הָעִנְיָן וְלֹא גִּלָּה יוֹתֵר' (he stopped in the middle of the matter and did not reveal more) for section 1-4, and 'וְלֹא סִיֵּם' (and did not finish) for section 5. The sparse bechina edge count (5 edges, 7 nodes) reflects an intentionally unfinished teaching. The absence of additional edges is structural, not a gap in data collection.",
+    "eitza_vs_bechina_note": "The edge פורים ↔ פסח is correctly typed as eitza — Purim is a pathway (הִלּוּךְ וְדֶרֶךְ) to Pesach, a cause-effect relationship. The Rebbe says 'פּוּרִים הוּא דֶּרֶךְ לְפֶסַח' — Purim IS the way to Pesach, establishing a directional flow, not a shared nature.",
+    "good_evil_mirror": "This Torah contains no evil polarity packages. The teaching is entirely about positive concepts: holy festivals, holy figures (Esther, Mordechai), and holy speech. There is no evil counterpart discussed in the extant text — the Torah was cut short before any such structure could emerge."
+  }
+}

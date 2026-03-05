@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "source": "Torah #16 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 2,
+      "node_id": "יום שמחת לבו",
+      "node_text": "יוֹם שִׂמְחַת לִבּוֹ",
+      "polarity": "good",
+      "reason": "The Rebbe explicitly states that 'יום שמחת לבו' from Shir HaShirim 3:11 is a bechina of Ketoret: 'וּבְיוֹם שִׂמְחַת לִבּוֹ – זֶה בְּחִינַת קְטֹרֶת, בִּבְחִינַת: שֶׁמֶן וּקְטֹרֶת יְשַׂמַּח לֵב'. The day of the heart's joy IS Ketoret in its essential nature, since Ketoret gladdens the heart (Mishlei 27:9). This makes 'יום שמחת לבו' a bechina of Ketoret and therefore belongs in Package 2 (Birurim/Ketoret), as the day of gladness expresses the same essential reality as the Ketoret/Birurim.",
+      "source_quote": "וּבְיוֹם שִׂמְחַת לִבּוֹ – זֶה בְּחִינַת קְטֹרֶת, בִּבְחִינַת (מִשְׁלֵי כ\"ז:ט'): שֶׁמֶן וּקְטֹרֶת יְשַׂמַּח לֵב",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 3,
+      "node_id": "חוה",
+      "node_text": "חַוָּה",
+      "polarity": "good",
+      "reason": "The Rebbe states that 'שעטרה לו אמו' refers to Chavah — 'היינו בחינת חוה, שהיא היתה אם כל חי'. Chavah is called a bechina of the Atara (crown) through the gematria/acronym: ח-ו-ה = הַמְעַטְּרֵכִי חֶסֶד וְרַחֲמִים (Tehilim 103). Chavah's essential nature is the crowning/adorning with chesed and rachamim, which is the same nature as the Atara formed from Imrei Shefer. Since the Atara is produced by the joining of Imrei Shefer with the King (Package 3), and Chavah IS the Atara, Chavah belongs in Package 3. Note: the Atara itself is not in the bechina dataset (it appears only in cause-edges) but is the implicit central concept of Package 3's crown-formation theme.",
+      "source_quote": "שֶׁעִטְּרָה לוֹ אִמּוֹ – הַיְנוּ בְּחִינַת חַוָּה, שֶׁהִיא הָיְתָה אֵם כָּל חָי (בְּרֵאשִׁית ג) כִּי חַוָּה – רָאשֵׁי־תֵבוֹת: הַמְעַטְּרֵכִי חֶסֶד וְרַחֲמִים (תְּהִלִּים קג)",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 3,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "יום שמחת לבו",
+      "חוה"
+    ],
+    "notes": "All 6 nodes from the 3 bechina edges are assigned to packages — no orphans. The 7 remaining edges with reference 1016 are all type 'cause' (eitza/causal), not bechina, and correctly belong between packages rather than within them. Key eitza flow: ענוה → עקר המלכות → (channels) מלך → פרנסה → ברורים → אמרי שפר → עטרה/חתנה. Two missing concepts were identified from the source text: (1) יום שמחת לבו, explicitly called a bechina of קטרת (line 8 of text), and (2) חוה, explicitly identified as a bechina of the עטרה through the acronym connection (line 9). The node 'עטרה' appears in the dataset only as a cause-edge target and not in any bechina edge; it is not in the packages but functions as a bridge concept between Package 2 (birurim) and Package 3 (chatuna/union). The dataset entry for 'ענוה ↔ עקר המלכות' is labeled 'cause' rather than 'bechina', which correctly reflects that humility produces/enables kingship rather than being identical to it."
+  }
+}

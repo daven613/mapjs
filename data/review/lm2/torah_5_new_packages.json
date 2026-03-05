@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "source": "Torah #5 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "proposed_id": 9,
+      "torah_ref": 5,
+      "volume": "lm2",
+      "label": "אֱמוּנָה וּסֵדֶר זְרָעִים",
+      "label_en": "Faith and the Order of Seeds",
+      "polarity": "good",
+      "justification": "Emunah (faith) is the foundational subject of the entire Torah, explicitly stated in the very first sentence ('העיקר הוא האמונה'). The Rebbe explicitly makes multiple bechina identifications within the emunah domain: (1) תפלה = emunah ('וכן תפלה הוא גם כן בחינת אמונה'); (2) זרעים = emunah ('אמונה זה סדר זרעים'); (3) ארץ = emunah ('שכן ארץ ורעה אמונה'); (4) עזי/עיזים = emunah ('עזי זה בחינת אמונה'). These four concepts form a connected bechina domain — faith, seeds/growth, earth, and goats — that represents the foundation and container of the Torah's positive teaching. This is an independent domain not absorbed into any of the 8 existing packages.",
+      "proposed_nodes": [
+        "אמונה",
+        "סדר זרעים",
+        "ארץ",
+        "עיזים"
+      ],
+      "bechina_edges": [
+        {
+          "node1": "אמונה",
+          "node2": "סדר זרעים",
+          "proof": "אֱמוּנָה זֶה סֵדֶר זְרָעִים (שבת לא)"
+        },
+        {
+          "node1": "אמונה",
+          "node2": "ארץ",
+          "proof": "שְׁכָן אֶרֶץ וּרְעֵה אֱמוּנָה (תהילים לז:ג), עָפָר מָאנָא דְּכֻלְּהוּ"
+        },
+        {
+          "node1": "אמונה",
+          "node2": "עיזים",
+          "proof": "עִזֵּי זֶה בְּחִינַת אֱמוּנָה, בְּחִינַת לָבֵשׁ ה' עֹז הִתְאַזָּר, וֶאֱמוּנָה אֵזוֹר"
+        },
+        {
+          "node1": "אמונה",
+          "node2": "תפלה",
+          "proof": "וְכֵן תְּפִלָּה הוּא גַּם כֵּן בְּחִינַת אֱמוּנָה (שמות יז:יב)"
+        }
+      ],
+      "polarity_note": "This is a purely good package — emunah and its bechinot are the positive foundation of all healing and tikkun in the Torah. There is a corresponding evil counterpart (fallen faith = avodah zarah / emunot kazbiyot) but it is mentioned only as the negative space, not given bechina identity in the text.",
+      "mirror": "The fall of emunah (נפילת האמונה) is the implicit evil anti-package — it is the root cause of all the evil packages (3, 5) and the dimming of packages 6/7. But it has no bechina nodes in the text — it is named as an absence, not as a positive domain with its own shared-nature concepts. Therefore no evil mirror package is needed here.",
+      "reason_not_in_dataset": "These emunah-domain bechinot are not in the current bechina edge dataset (reference=5 in torahData.js). The dataset may have focused on the more technical second half of the Torah (gevurot, mochin, aspeklaria, etc.) and left the foundational emunah section (sections 1-3) without bechina-type edge entries. This represents a genuine gap in the dataset.",
+      "confidence": "HIGH — The proof texts are direct and explicit ('זה בחינת אמונה', 'הוא גם כן בחינת אמונה'). The four nodes are thematically coherent as the domain of holy faith."
+    },
+    {
+      "proposed_id": 10,
+      "torah_ref": 5,
+      "volume": "lm2",
+      "label": "גַּאֲוָה וְחֶרֶב הַגַּאֲוָה",
+      "label_en": "Pride and the Sword of Pride",
+      "polarity": "evil",
+      "justification": "The Torah dedicates sections 5-7 to a cluster of evil concepts around gaavah (arrogance) and its consequences. The Rebbe makes explicit bechina identifications: (1) חרב גאוה = the weapon that comes through the false leaders/gerim; (2) ספיחים = false leaders who grow on their own; (3) תאוות ניאוף = choteam destra achra. The gaavah cluster is an independent evil domain — the pride/sword/immorality triad that precedes and enables the downfall of mochin. It is the active social mechanism through which the evil of Package 3 (external fear) and Package 5 (sitra de-muta) operate in the world. It has 3+ explicit bechina-language concepts.",
+      "proposed_nodes": [
+        "גאוה",
+        "חרב הגאוה",
+        "תאוות ניאוף"
+      ],
+      "bechina_edges": [
+        {
+          "node1": "גאוה",
+          "node2": "חרב הגאוה",
+          "proof": "וַאֲשֶׁר חֶרֶב גַּאֲוָתֶךָ – עַל יְדֵי הַגֵּרִים הַנַּ\"ל שֶׁהֵם מַכְנִיסִין גַּאֲוָה; plus section 7 'גאוה אפיקי מגינים סגור חותם צר'"
+        },
+        {
+          "node1": "גאוה",
+          "node2": "תאוות ניאוף",
+          "proof": "עַל יְדֵי גַּאֲוָה מִתְגַּבֵּר תַּאֲוַת נִאוּף, שֶׁהִיא בְּחִינַת חוֹתָם דְּסִטְרָא אַחֲרָא"
+        }
+      ],
+      "polarity_note": "This is an evil package. The gaavah of the false leaders/gerim is the active societal mechanism that strengthens immorality and weakens the mochin/tefillin of the generation.",
+      "mirror": "Good mirror is Package 2 (yirah/chashivut) — genuine fear of heaven is the opposite of arrogant pride. The maginnei eretz (Package 2) suppress this gaavah.",
+      "reason_not_in_dataset": "The gaavah domain uses cause-and-effect language more than bechina language in sections 5-7. The Torah says gaavah 'causes' (מגביר) taavat niuf rather than 'is bechina of' it in the most precise technical sense. However, section 7 does use the bechina frame ('גאוה אפיקי מגינים סגור חותם צר' — gaavah is identified as the bechina that closes/seals the evil seal). The bechina language is present but less dense than in the second half of the Torah, explaining the dataset gap.",
+      "confidence": "MEDIUM — The gaavah/pride cluster is conceptually coherent but the bechina language is less explicit than the other packages. The key bechina statement is in the job quote about the shields: gaavah = the sealer of the evil seal."
+    }
+  ],
+  "observations": "Torah #5 (LM2) has two domains where explicit bechina language in the source text points to independent concept clusters not captured in the current dataset:\n\n1. THE EMUNAH CLUSTER (Proposed Package 9): The first three sections of the Torah are entirely devoted to faith (emunah). The Rebbe explicitly identifies emunah = seder zra'im, emunah = aretz, emunah = iz'im (goats), emunah = tefila. These are four distinct nodes connected through emunah as their shared nature. This is a high-confidence new package that represents the foundational positive teaching of the Torah. Its absence from the dataset is the most significant gap.\n\n2. THE GAAVAH CLUSTER (Proposed Package 10): Sections 5-7 develop the evil sociology of pride through the gerim-gaavah-niuf chain. The gaavah/pride domain has bechina language ('gaavah = choteam destra achra' via the job verse) and forms its own identifiable cluster. This is a medium-confidence proposal since the language is more causal than bechina in places.\n\nNOT a new package: The holiday/calendar system (Rosh Hashana, Yom Kippur, Sukkot, Shemini Atzeret) does not form an independent package — the holidays are each identified as tikkun of specific elements already in Package 4 (mochin, malach, mishpat). They are additions TO Package 4, not a new cluster.\n\nNOT a new package: The reah (lung) in section 16 does not form an independent package — it is a physical organ that manifests the entire Torah's positive content simultaneously. It is an addition to multiple packages (4, 2) and is better treated as an additions entry than a standalone cluster.\n\nNOT a new package: The rav-talmidim (teacher-student) dynamic in section 15 does not form an independent bechina package — it is described functionally as the context in which all the existing packages are rectified simultaneously ('על ידי רבי עם תלמידים נעשין ונתתקנין כל הבחינות הנ\"ל'). It is an eitza (practical pathway) not a bechina domain."
+}

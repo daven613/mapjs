@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "source": "Torah #77 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 77,
+      "volume": "lm2",
+      "label": "דַּעַת וּמֹחִין — בִּנְיָמִין",
+      "label_en": "Da'at and Mochin — Binyamin",
+      "polarity": "good",
+      "reason": "These nodes all share the essential nature of intellect, da'at, and the expanded mind (mochin). Binyamin embodies da'at because the Beit HaMikdash stood in his portion — and the Sages equate one who has da'at with one in whose days the Temple is built. Tefillin are the physical/spiritual structure of mochin. All four concepts are different expressions of the same domain: expanded divine knowledge seated in the head.",
+      "dominant_node": "דעת",
+      "nodes": ["בית המקדש", "דעת", "בנימין", "מחין", "תפלין"],
+      "node_degrees": {
+        "בית המקדש": 1,
+        "דעת": 2,
+        "בנימין": 2,
+        "מחין": 2,
+        "תפלין": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 77,
+      "volume": "lm2",
+      "label": "יִרְאָה וּמַלְכוּת — יְהוּדָה",
+      "label_en": "Yirah and Malkhut — Yehudah",
+      "polarity": "good",
+      "reason": "These nodes all share the essential nature of holy fear (yirat shamayim) and its structural embodiment. Malkhut is yirah — as the Mishnah says 'were it not for the fear of kingship.' Yehudah embodies malkhut and therefore yirah. The strap of tefillin (retzua) IS yirah — holy yirah specifically. The strap that passes through the passage of tefillin (maavarta) is the structural description of how yirah threads through mochin. All these are expressions of the same domain: holy awe as the receptive/binding force that accompanies da'at.",
+      "dominant_node": "יראה",
+      "nodes": [
+        "יראה",
+        "הרצועה",
+        "רצועה",
+        "מלכות",
+        "יהודה",
+        "רצועה של תפלין",
+        "יראה דקדשה",
+        "רצועה דקדשה",
+        "רצועה שעוברת בתוך המעברתא של תפלין"
+      ],
+      "node_degrees": {
+        "יראה": 4,
+        "הרצועה": 2,
+        "רצועה": 2,
+        "מלכות": 2,
+        "יהודה": 2,
+        "רצועה של תפלין": 1,
+        "יראה דקדשה": 2,
+        "רצועה דקדשה": 1,
+        "רצועה שעוברת בתוך המעברתא של תפלין": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["יראה דקדשה", "רצועה דקדשה", "רצועה שעוברת בתוך המעברתא של תפלין"],
+          "reason": "These three nodes form a small sub-component (Component 3 in raw analysis) that is thematically inseparable from the holy yirah / malkhut cluster. 'יראה דקדשה' (holy yirah) is the positive specification of 'יראה' (fear/awe), and 'רצועה דקדשה' is its structural equivalent. 'רצועה שעוברת בתוך המעברתא של תפלין' is the specific image of holy yirah threading through the mochin. All three express the same essential nature as the main yirah package: they are holy awe in its active role passing through intellect. They are NOT eitza — they are not different stages; they are the same thing described from different angles (bechina)."
+        },
+        {
+          "merged_nodes": ["הרצועה", "רצועה", "רצועה של תפלין"],
+          "reason": "The dataset uses three spellings/forms of 'the strap': 'הרצועה' (with definite article), 'רצועה' (base form), and 'רצועה של תפלין' (specified as the tefillin strap). The proof texts treat these as identical — the strap in the aggadic story (רצועה שיוצאת מחלקו של יהודה לחלקו של בנימין) IS the retzua of tefillin. The bechina edge רצועה של תפלין — רצועה makes this explicit: the retzua of the story IS the retzua of tefillin. All three node_ids refer to the same essential concept."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "torah_ref": 77,
+      "volume": "lm2",
+      "label": "יְרָאָה נְפוּלָה — רְצוּעָה בִּישָׁא",
+      "label_en": "Fallen Yirah — Evil Strap",
+      "polarity": "evil",
+      "reason": "These two nodes form the evil mirror of Package 2. 'רצועה בישא' (the evil strap) IS 'יראה נפולה' (fallen/debased fear) — as the Zohar explicitly states (Hakdamat haZohar 11b). Where Package 2 is the domain of holy awe that accompanies da'at and elevates, Package 3 is the domain of fallen fear — the same structural position (the strap threading through mochin) but now corrupted, producing suffering and pulling toward the sitra achra. This is the evil that the Torah is concerned with sweetening.",
+      "dominant_node": "רצועה בישא",
+      "nodes": ["רצועה בישא", "יראה נפולה"],
+      "node_degrees": {
+        "רצועה בישא": 1,
+        "יראה נפולה": 1
+      },
+      "merge_notes": []
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 14,
+    "total_nodes": 16,
+    "total_packages": 3,
+    "raw_connected_components": 4
+  }
+}

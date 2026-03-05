@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "source": "Torah #66 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 1,
+      "node_id": "נפש חיה",
+      "node_text": "נֶפֶשׁ חַיָּה",
+      "polarity": "good",
+      "reason": "The Torah explicitly invokes 'נֶפֶשׁ חַיָה הוּא שְׁמוֹ' (Genesis 2:19 as interpreted by the Talmud — Yerushalmi Taanit ch. 2) to establish that the Name of God = life-force. 'Living soul' (נֶפֶשׁ חַיָּה) is thus a bechina of both שם (the Name) and חיות (life-force). The proof text reads: 'וְהַשֵּׁם הוּא הַחִיּוּת, בִּבְחִינַת: נֶפֶשׁ חַיָה הוּא שְׁמוֹ' — the Name is the life-force, in the aspect of: a living soul — that is His Name. This forms an explicit bechina triangle: שם ↔ חיות ↔ נפש חיה.",
+      "source_quote": "וְהַשֵּׁם הוּא הַחִיּוּת, בִּבְחִינַת: נֶפֶשׁ חַיָה הוּא שְׁמוֹ",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "מחרת יום הכפורים",
+      "node_text": "מָחֳרַת יוֹם הַכִּפּוּרִים",
+      "polarity": "good",
+      "reason": "The Torah states that people call the day after Yom Kippur 'שֵׁם ה'' — 'the Name of God.' This is bechina language: מָחֳרַת יוֹם הַכִּפּוּרִים is called שֵׁם ה', placing it in the same domain as שם, שבת, and שמא דקדשא בריך הוא. The dataset records the related edge (יום הכפורים → נתגלה בחינת שם ה) as type 'cause', which captures the causal dimension. But the NAMING of the day as 'שם ה'' is a bechina: the day itself embodies the revealed Name. This node should be added to Package 1 as an additional expression of the Divine Name being present and accessible.",
+      "source_quote": "וְזֶה שֶׁקּוֹרִין הָעוֹלָם אֶת מָחֳרַת יוֹם הַכִּפּוּרִים שֵׁם ה'",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 2,
+      "node_id": "צדיק יסוד עולם",
+      "node_text": "צַדִּיק יְסוֹד עוֹלָם",
+      "polarity": "good",
+      "reason": "The verse 'צַדִּיק יְסוֹד עוֹלָם' (Proverbs 10:25) is quoted as the explicit scriptural basis for identifying the Tzaddik as the Simple Foundation. The text states: 'בְּחִינַת הַצַּדִּיק, בְּחִינַת: צַדִּיק יְסוֹד עוֹלָם' — the verse IS the bechina name for what the Tzaddik is. This phrase functions as a distinct concept node that explicitly bridges the Tzaddik and the יסוד עולם (foundation of the world). It belongs in Package 2 as the scriptural formulation of the Tzaddik = יסוד הפשוט equation.",
+      "source_quote": "בְּחִינַת הַצַּדִּיק, בְּחִינַת: צַדִּיק יְסוֹד עוֹלָם",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 4,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "נפש חיה — Living soul (= the Name), explicit bechina in the proof text",
+      "מחרת יום הכפורים — The day after Yom Kippur is called 'שם ה'' — bechina language in the source text; dataset captures only the causal relationship",
+      "צדיק יסוד עולם — The scriptural verse used to name the Tzaddik as the world's foundation; cited multiple times with bechina language",
+      "ארבעה יסודות (אש, רוח, מים, עפר) — The four elements: correctly ABSENT from bechina dataset because their relationship to the Tzaddik is eitza (they flow FROM him, they are not the same thing as him)",
+      "מידות — Character traits: flow from the four elements → correctly absent (eitza, not bechina)",
+      "שמו משותף בשמנו — 'His Name is shared with ours': this phrase expresses the bechina between God's Name and the names of Israel, but is used in the text as an explanatory bridge, not as a standalone concept node"
+    ],
+    "good_evil_mirror": "Package 1 (שם/חיות = Divine life-force) mirrors Package 3 (ענשים/מיתה = death/severance from that life-force). The Torah's central argument is that punishment severs the connection to the Name/life-force, and since God's Name is shared with ours, punishment to Israel affects God Himself. The evil mirror is structurally inverted: where Package 1 is the Name as the source of life, Package 3 is punishment as the cutting off from that source.",
+    "dataset_non_bechina_edges_for_reference": [
+      "יום הכפורים → נתגלה בחינת שם ה (type: cause) — correctly classified as causal, not bechina",
+      "שכשבאים לצדיק ורואים אותו → ראוי שימצא את עצמו בתוך הצדיק... (type: eitza) — correctly classified as practical instruction/eitza"
+    ]
+  }
+}

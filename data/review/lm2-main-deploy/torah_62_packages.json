@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "source": "Torah #62 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only"
+  },
+  "packages": [
+    {
+      "id": 1,
+      "torah_ref": 62,
+      "volume": "lm2",
+      "label": "רַחֲמָנוּת — הַרַחֲמָנוּת שֶׁבְּיָדֵינוּ",
+      "label_en": "Compassion — The Compassion Given Into Our Hands",
+      "polarity": "good",
+      "reason": "These two nodes are two faces of the same essential reality: what 'compassion' truly means in this Torah. The Rebbe states explicitly 'וְעִקָּר רַחֲמָנוּת הוּא בִּבְחִינַת... וְאֵל שַׁדַּי יִתֵּן לָכֶם רַחֲמִים – לָכֶם דַּיְקָא' — the essential nature (bechina) of compassion is that God gives it into our hands so we ourselves can exercise it in a simple, human form. 'רחמנות' and 'שהשם יתברך יתן לנו הרחמנות' are not cause and effect: they are two articulations of the same concept — the compassion-that-is-placed-in-human-hands is precisely what compassion IS in this teaching.",
+      "dominant_node": "רחמנות",
+      "nodes": [
+        "רחמנות",
+        "שהשם יתברך יתן לנו הרחמנות"
+      ],
+      "node_degrees": {
+        "רחמנות": 1,
+        "שהשם יתברך יתן לנו הרחמנות": 1
+      },
+      "merge_notes": []
+    },
+    {
+      "id": 2,
+      "torah_ref": 62,
+      "volume": "lm2",
+      "label": "עֲבוֹדָה זָרָה — קִלְקוּל הָאֱמוּנָה",
+      "label_en": "Idolatry — Corruption of Faith",
+      "polarity": "evil",
+      "reason": "These three nodes are all bechina expressions of the same spiritual failure: turning away from God, corrupted faith, and idolatry are not three separate things but three names for one and the same negative reality. The Rebbe cites the Baal Shem Tov: 'כְּשֶׁסָּרִים מֵהַשֵּׁם יִתְבָּרַךְ הוּא בְּחִינַת עֲבוֹדָה זָרָה' — turning away from God IS (bechina of) idolatry. And 'קִלְקוּל הָאֱמוּנָה הִיא גַם-כֵּן בְּחִינַת עֲבוֹדָה זָרָה' — corrupted faith IS (bechina of) idolatry. All three share the same essential nature: the breakdown of one's connection to God, expressed as idolatry. Note: the dataset contains two slightly variant node IDs for idolatry ('עבודה  זרה' with double space and 'עבודה זרה' with single space) — these are the same concept, differing only by a data-entry spacing error; both are included here.",
+      "dominant_node": "עבודה זרה",
+      "nodes": [
+        "עבודה זרה",
+        "עבודה  זרה",
+        "קלקול האמונה",
+        "כשסרים מהשם יתברך"
+      ],
+      "node_degrees": {
+        "עבודה זרה": 1,
+        "עבודה  זרה": 1,
+        "קלקול האמונה": 1,
+        "כשסרים מהשם יתברך": 1
+      },
+      "merge_notes": [
+        {
+          "merged_nodes": ["עבודה זרה", "עבודה  זרה"],
+          "reason": "These are the same concept node — idolatry — differing only by a data-entry spacing artifact (single space vs. double space). They appear in two separate bechina edges (B2 and B3) both expressing the same equation. Treating them as one node merges those two edges into a single connected component of 3 distinct concepts."
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_bechina_edges": 3,
+    "total_nodes": 5,
+    "total_packages": 2,
+    "raw_connected_components": 2
+  }
+}

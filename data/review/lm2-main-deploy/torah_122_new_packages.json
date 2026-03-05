@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "source": "Torah #122 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": "new_1",
+      "label": "מַחֲשָׁבוֹת זָרוֹת וּקְלִפּוֹת",
+      "label_en": "Foreign Thoughts and Husks",
+      "polarity": "evil",
+      "proposed_nodes": [
+        "מחשבות זרות",
+        "קליפה",
+        "קומה שלמה"
+      ],
+      "bechina_edges_needed": [
+        {
+          "node1_id": "מחשבות זרות",
+          "node2_id": "קליפה",
+          "proof": "כִּי כָל מַחֲשָׁבָה זָרָה הוּא קְלִפָּה",
+          "source_location": "line 4"
+        },
+        {
+          "node1_id": "קליפה",
+          "node2_id": "קומה שלמה",
+          "proof": "כִּי כָל מַחֲשָׁבָה זָרָה הוּא קְלִפָּה, וְהִיא קוֹמָה שְׁלֵמָה, כַּמּוּבָא",
+          "source_location": "line 4"
+        },
+        {
+          "node1_id": "מחשבות זרות",
+          "node2_id": "קומה שלמה",
+          "proof": "כָּל מַחֲשָׁבָה וּמַחֲשָׁבָה הִיא קוֹמָה שְׁלֵמָה, כַּמּוּבָא",
+          "source_location": "line 2"
+        }
+      ],
+      "reason": "The source text contains three explicit 'הוּא / הִיא' bechina identifications forming a triangle: מַחֲשָׁבָה זָרָה IS קְלִפָּה, קְלִפָּה IS קוֹמָה שְׁלֵמָה, and מַחֲשָׁבָה IS קוֹמָה שְׁלֵמָה. This is exactly the bechina-cluster structure that warrants a package: three concepts that are each expressions of the same evil spiritual entity. The domain is independent — the evil nature of the foreign thought as a full spiritual form that must be defeated."
+    },
+    {
+      "id": "new_2",
+      "label": "תְּפִלָּה כְּסֵדֶר וְגִבּוּרַת הַהִלּוּךְ",
+      "label_en": "Ordered Prayer and the Strength of Forward Movement",
+      "polarity": "good",
+      "proposed_nodes": [
+        "תפלה כסדר",
+        "דרך הילוכו",
+        "גיבור",
+        "אינו משגיח"
+      ],
+      "bechina_edges_needed": [
+        {
+          "node1_id": "תפלה כסדר",
+          "node2_id": "דרך הילוכו",
+          "proof": "כְּשֶׁמִּתְפַּלְּלִין כְּסֵדֶר... אֲזַי בְּדֶרֶךְ הִלּוּכוֹ בִּתְפִלָּתוֹ הוּא מַפִּיל אוֹתָם — the ordered prayer IS the path of walking; both describe the same continuous forward movement",
+          "source_location": "lines 2 and 4"
+        },
+        {
+          "node1_id": "גיבור",
+          "node2_id": "דרך הילוכו",
+          "proof": "וּכְשֶׁהוּא גִּבּוֹר וְעֹבֵר בֵּינֵיהֶם, אֲזַי בְּדֶרֶךְ הִלּוּכוֹ — the warrior IS the one who walks through; his strength IS his walking",
+          "source_location": "line 3"
+        },
+        {
+          "node1_id": "תפלה כסדר",
+          "node2_id": "אינו משגיח",
+          "proof": "כְּשֶׁהָאָדָם עוֹמֵד וּמִתְפַּלֵּל כְּסֵדֶר וְאֵינוֹ מַשְׁגִּיחַ עַל הַמַּחֲשָׁבוֹת זָרוֹת — praying in order and not attending are stated together as the same act",
+          "source_location": "line 2"
+        }
+      ],
+      "reason": "The Rebbe presents prayer in order, the forward movement of walking, warrior strength, and non-attention as a unified domain — they are all expressions of the same positive stance of continuing prayer without engaging the foreign thoughts. The mashal (warrior walking through ambushers) and nimshal (praying person walking through foreign thoughts) identify these concepts as the same essential reality. This constitutes an independent good domain that mirrors Package 1's evil domain."
+    }
+  ],
+  "observations": "Torah 122 is structurally simple but conceptually crisp. The entire teaching turns on ONE bechina cluster (evil: foreign thought = klipah = complete form) and its good mirror (ordered prayer = walking = warrior strength = non-attention). The mashal/nimshal structure directly expresses the bechina principle: the warrior who walks through ambushers and the person who prays in order ARE the same figure — two expressions of the same stance. Similarly, the murderers/ambushers and the foreign thoughts ARE the same entity in two registers. However, since the mashal's figures (murderers, limbs) are purely metaphorical vehicles rather than independent theological concepts with bechina relationships of their own, they are NOT proposed as separate package nodes — they are the narrative surface of the two substantive packages. The two proposed packages form a perfect good/evil mirror structure: Package new_1 (evil: foreign thoughts as klipot/complete forms) is the exact counterpart to Package new_2 (good: prayer as ordered movement that defeats them). Six dataset edges are needed to represent this Torah: three within Package new_1 (the triangle of foreign-thought/klipah/complete-form) and three within Package new_2 (the connections among prayer-in-order, walking-path, warrior-strength, and non-attention)."
+}

@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "source": "Torah #14 (Likutay Moharan Tinyana)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 0,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [],
+    "explicit_bechina_statements_found": [],
+    "dataset_gap_severity": "TOTAL — LM2 Torah 14 has zero bechina edges in torahData.js (reference=1014 is entirely absent from the dataset). The source text file is a stub containing only the opening verse and Rabbinic citation with no bechina language at all. No gap analysis is possible until the full Torah text is encoded.",
+    "source_text_assessment": {
+      "file_path": "/Users/shmuel/dev/mapjs/data/torah_texts/lm2/torah_14.txt",
+      "file_size_bytes": 446,
+      "content_description": "Single sentence: opening verse (Psalms 56:3) plus Talmudic citation (Sanhedrin 44b, 103) establishing the principle that adversaries below mirror adversaries above (כְּשֵׁם שֶׁיֵּשׁ צָרִים לְמַטָּה, כָּךְ יֵשׁ צָרִים מִלְמַעְלָה). No bechina language present.",
+      "bechina_keywords_found": [],
+      "is_complete_text": false,
+      "recommendation": "Obtain and encode the full text of LM2 Torah 14. This appears to be an introductory-only stub. The full Torah would be expected to develop the theme of upper/lower adversaries with explicit bechina equations identifying what constitutes heavenly and earthly adversaries and their spiritual-structural equivalences."
+    },
+    "anticipated_package_structure": {
+      "note": "Based solely on the opening verse and thematic seed — NOT bechina-derived. These are speculative themes that would need confirmation from the full text.",
+      "anticipated_packages": [
+        {
+          "tentative_label": "צָרִים לְמַטָּה — Earthly Adversaries",
+          "tentative_polarity": "evil",
+          "basis": "The Talmudic principle cited in the text explicitly names earthly adversaries as one pole of a structural mirror. If the full Torah develops this theme, a package around the earthly/physical dimension of adversarial forces would be expected."
+        },
+        {
+          "tentative_label": "צָרִים מִלְמַעְלָה — Heavenly Adversaries",
+          "tentative_polarity": "evil",
+          "basis": "The other pole of the mirror: the Talmud states heavenly adversaries correspond to earthly ones. The full text would likely identify these with specific spiritual forces (sitra achra, accusers, kelipot)."
+        },
+        {
+          "tentative_label": "The Tzaddik / the Subject of the Verse",
+          "tentative_polarity": "good",
+          "basis": "The verse is first-person ('רַבִּים לוֹחֲמִים לִי') — there is a subject being battled against. The Rebbe typically grounds such teachings in the figure of the Tzaddik who faces opposition. A good-polarity package around the one who is opposed would be structurally expected."
+        }
+      ],
+      "confidence": "LOW — these are thematic inferences from the opening alone, not bechina analysis"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "source": "Torah #63 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "new_package_proposals",
+    "generated": "2026-03-04"
+  },
+  "verdict": "NEW_PACKAGES_PROPOSED",
+  "new_packages": [
+    {
+      "id": 1,
+      "label": "נִגּוּן וְזִמְרַת הָאָרֶץ",
+      "label_en": "Melody and the Song of the Land",
+      "polarity": "good",
+      "dominant_node": "ניגון",
+      "nodes": ["ניגון", "התברורות הרוח", "זמרת הארץ", "שירת העשבים", "פרק שירה"],
+      "reason": "These five concepts are all explicitly identified as bechinot of each other in the source text, forming one connected thematic family: the niggun of the shepherd derives from the song of the herbs (שירת העשבים), which is bechina of Perek Shira; the niggun is itself bechina of zimrat ha-aretz (the song of the Land of Israel); and the niggun is directly stated to BE the התברורות הרוח (clarification of spirit). All five share the same essential nature: they are faces of the cosmic melody/song that connects heaven, earth, plants, and human beings.",
+      "bechina_edges_to_add": [
+        {
+          "node1_id": "ניגון",
+          "node2_id": "התברורות הרוח",
+          "proof": "כִּי הַנִּגּוּן הוּא הִתְבָּרְרוּת הָרוּחַ, שֶׁמְּבָרְרִין רוּחַ הָאָדָם מִן רוּחַ הַבְּהֵמָה, בִּבְחִינַת (קהלת ג): מִי יוֹדֵעַ רוּחַ בְּנֵי הָאָדָם הָעֹלָה הִיא לְמָעְלָה, וְרוּחַ הַבְּהֵמָה הַיֹּרֶדֶת הִיא לְמַטָּה",
+          "type": "bechina",
+          "reference": 1063
+        },
+        {
+          "node1_id": "ניגון",
+          "node2_id": "זמרת הארץ",
+          "proof": "שֶׁיִּקְחוּ בְּחִינַת הַנִּגּוּן הַנַּ\"ל, שֶׁהוּא בְּחִינַת זִמְרַת הָאָרֶץ כַּנַּ\"ל, בַּכֵּלִים שֶׁלָּהֶם",
+          "type": "bechina",
+          "reference": 1063
+        },
+        {
+          "node1_id": "שירת העשבים",
+          "node2_id": "פרק שירה",
+          "proof": "כִּי כָל עֵשֶׂב וָעֵשֶׂב יֵשׁ לוֹ שִׁירָה שֶׁאוֹמֵר, שֶׁזֶּה בְּחִינַת פֶּרֶק שִׁירָה",
+          "type": "bechina",
+          "reference": 1063
+        },
+        {
+          "node1_id": "ניגון",
+          "node2_id": "שירת העשבים",
+          "proof": "וּמִשִּׁירַת הָעֲשָׂבִים נַעֲשֶׂה נִגּוּן שֶׁל הָרוֹעֶה",
+          "type": "bechina",
+          "reference": 1063,
+          "note": "This edge is borderline bechina/eitza. The herbs' song does not merely cause the niggun as a separate entity — they share the same essential melody, and the shepherd's niggun is simply the herbs' song as it manifests through a human vessel. The Rebbe treats them as expressions of the same cosmic melody, not as a causal chain."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "רוּחַ הָאָדָם",
+      "label_en": "The Human Spirit",
+      "polarity": "good",
+      "dominant_node": "רוח האדם",
+      "nodes": ["רוח האדם"],
+      "reason": "The human spirit (ruach ha-adam) is established as an independent domain with a named bechina: 'מִבְּחִינַת רוּחַ הָאָדָם' — the shepherd must be saved from descending from the bechina of ruach ha-adam to ruach ha-behemiut. The verse from Kohelet (3:21) is cited as proof, distinguishing it from the animal spirit. Although it currently stands alone as a single node, it is an essential concept in this Torah's structure and must be tracked as its own package.",
+      "bechina_edges_to_add": []
+    },
+    {
+      "id": 3,
+      "label": "רוּחַ הַבְּהֵמָה",
+      "label_en": "The Animal Spirit",
+      "polarity": "evil",
+      "dominant_node": "רוח הבהמה",
+      "nodes": ["רוח הבהמה"],
+      "reason": "The animal spirit (ruach ha-behema) is the evil mirror of Package 2. It is the descent that the niggun protects against. Its bechina is expressed through the Rashi on 'וַיֵּלְכוּ לִרְעוֹת אֶת צֹאן אֲבִיהֶם' — the brothers went to graze themselves, i.e., to become animal-like. The Kohelet verse defines it as 'הַיֹּרֶדֶת הִיא לְמַטָּה' — the descending spirit. It is the exact evil counterpart of ruach ha-adam.",
+      "bechina_edges_to_add": []
+    },
+    {
+      "id": 4,
+      "label": "מִשְׁקוֹלוֹת הַנִּגּוּן",
+      "label_en": "The Weights and Measures of the Melody",
+      "polarity": "neutral",
+      "dominant_node": "משקולות הניגון",
+      "nodes": ["משקולות הניגון", "מנחה"],
+      "reason": "The gift items Jacob sent (tzori, honey, spices, nuts, almonds) are stated to be 'בְּחִינַת מִשְׁקוֹלוֹת וּמִדּוֹת הַנִּגּוּן' — the weights and measures of the melody. Both the physical gift objects and the structural measures of the niggun share the same essential nature: they are the proportional units that give the melody its form. This is a neutral package (structural objects, like letters in other Torahs) that does not belong to the good or evil domain but gives structure to the niggun.",
+      "bechina_edges_to_add": [
+        {
+          "node1_id": "מנחה",
+          "node2_id": "משקולות הניגון",
+          "proof": "וְהוֹרִידוּ לָאִישׁ מִנְחָה, מְעַט צֳרִי, מְעַט דְּבַשׁ, נְכֹאת וָלֹט, בָּטְנִים וּשְׁקֵדִים – הֵם בְּחִינַת מִשְׁקוֹלוֹת וּמִדּוֹת הַנִּגּוּן, כִּי הַנִּגּוּן נַעֲשֶׂה מִגִּדּוּלֵי הָאָרֶץ כַּנַּ\"ל",
+          "type": "bechina",
+          "reference": 1063
+        }
+      ]
+    }
+  ],
+  "observations": "Torah LM2/63 is a short, thematically focused teaching about the cosmic melody (niggun) and its role in connecting the shepherd, the herbs, and the animals. The dataset currently has ZERO bechina edges for this Torah (reference 1063). All 4 existing edges are eitza or cause type, correctly representing the causal flow of the teaching.\n\nThe source text is, however, rich with explicit bechina language. The Rebbe uses the word 'בְּחִינַת' eight times in eleven paragraphs, establishing at least four distinct conceptual equivalences:\n\n1. ניגון = התברורות הרוח (the niggun IS the clarification of spirit — strongest bechina, line 7)\n2. ניגון = זמרת הארץ (the niggun is bechina of the song of the Land, line 11)\n3. שירת העשבים = פרק שירה (each herb's song is bechina of Perek Shira, line 2)\n4. מנחה = משקולות הניגון (the gift items are bechina of the melody's measures, line 11)\n\nThese four bechina relationships, together with the structural ruach ha-adam / ruach ha-behema mirror pair, form four proposed packages. Package 1 (Niggun) is the dominant package with the most connections and is the heart of the entire Torah. Package 2 and 3 form the good/evil mirror pair. Package 4 is a neutral structural package.\n\nThe entire bechina layer of this Torah is missing from the dataset and should be added as new edges with reference 1063 and type 'bechina'."
+}

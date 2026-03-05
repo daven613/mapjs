@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "source": "Torah #79 (Likutay Moharan lm2)",
+    "volume": "lm2",
+    "type": "package_gap_analysis",
+    "generated": "2026-03-04"
+  },
+  "additions": [
+    {
+      "package_id": 3,
+      "node_id": "קול יעקב",
+      "node_text": "קוֹל יַעֲקֹב",
+      "polarity": "good",
+      "reason": "The source text explicitly equates 'kol kol Yaakov' with 'kol d'kedushah': 'שומעין הקול דקדשה, שהוא בחינת קול יעקב כנ\"ל.' This is a direct bechina: the voice of Jacob IS the holy voice. It should be a node in Package 3 alongside קולו יתברך and קול דקדשה.",
+      "source_quote": "עַל־יְדֵי זֶה שׁוֹמְעִין הַקּוֹל דִּקְדֻשָּׁה, שֶׁהוּא בְּחִינַת קוֹל יַעֲקֹב כַּנַּ\"ל",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 3,
+      "node_id": "קול עשו / קול דסטרא אחרא",
+      "node_text": "קוֹל עֵשָׂו / קוֹל דְּסִטְרָא אָחֳרָא",
+      "polarity": "evil",
+      "reason": "The Torah's entire first section is about the battle between two voices: Jacob's holy voice and Esav's voice (= the sitra achra's voice). Esav's voice is the explicit evil mirror of Package 3. The text says: 'הקול דסטרא אחרא שהוא בחינת עשו' — the voice of the sitra achra IS (bechina) Esav. These two (kol Esav + kol d'sitra achra) form the evil counterpart package to the holy voice. This gap leaves the Torah's primary polarity contrast unrepresented in the dataset.",
+      "source_quote": "הַקּוֹל דְּסִטְרָא־אָחֳרָא שֶׁהוּא בְּחִינַת עֵשָׂו",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 2,
+      "node_id": "צרות ודינים ואחיזת הסטרא אחרא",
+      "node_text": "צָרוֹת וְדִינִים וַאֲחִיזַת הַסִּטְרָא אָחֳרָא",
+      "polarity": "evil",
+      "reason": "The source text explicitly states: 'כל הצרות והדינים ואחיזת הסטרא אחרא, הוא רק בבחינת הזמן' — all suffering, judgments, and the sitra achra's grip are ONLY in the aspect of time. This is a direct bechina: tzarot/dinim = the time dimension. This concept belongs in Package 2 as the evil-valence face of זמן — it is what the temporal dimension looks like from the side of evil/suffering. It is the anti-teshuvah consequence: when one is trapped in time (rather than transcending it), this is what manifests.",
+      "source_quote": "כָּל הַצָּרוֹת וְהַדִּינִים וַאֲחִיזַת הַסִּטְרָא־אָחֳרָא, הוּא רַק בִּבְחִינַת הַזְּמַן",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "ויישכב / יש כ\"ב",
+      "node_text": "וַיִּשְׁכַּב / יֵשׁ כ\"ב",
+      "polarity": "good",
+      "reason": "The text states: 'תיבת ויישכב הוא בחינת יש כ\"ב, היינו כ\"ב אתוון דאוריתא, שמהם כל הדיבורים. וזה מרמז על תשובה.' The word ויישכב (Jacob lay down) = yesh kaf-bet = there are 22 letters of Torah, which = speech-acts = teshuvah. 'Vayishkav' as a bechina node for the 22 letters/speech-teshuvah cluster is missing. It belongs in Package 1 alongside אבנים/אותיות/דיבורים.",
+      "source_quote": "תֵּבַת וַיִּשְׁכַּב הוּא בְּחִינַת יֵשׁ כ\"ב, הַיְנוּ כ\"ב אַתְוָן דְּאוֹרַיְתָא, שֶׁמֵּהֶם כָּל הַדִּבּוּרִים, וְזֶה מְרַמֵּז עַל תְּשׁוּבָה",
+      "in_dataset_already": false
+    },
+    {
+      "package_id": 1,
+      "node_id": "יום הכיפורים",
+      "node_text": "יוֹם הַכִּפּוּרִים",
+      "polarity": "good",
+      "reason": "The Aleph-Bet Hachadash source cited in the proof text: 'יום שהאדם עושה תשובה הוא למעלה מהזמן... וכן יום הכיפורים הוא למעלה מהזמן.' Yom Kippur is explicitly stated to be above time (bechina of teshuvah/above-time). It belongs in Package 1.",
+      "source_quote": "יוֹם שֶׁהָאָדָם עוֹשֶׂה תְּשׁוּבָה הוּא לְמַעְלָה מֵהַזְּמַן... וְכֵן יוֹם הַכִּפּוּרִים הוּא לְמַעְלָה מֵהַזְּמַן",
+      "in_dataset_already": false
+    }
+  ],
+  "unassigned_dataset_nodes": [],
+  "analysis_notes": {
+    "total_bechina_edges": 25,
+    "total_unique_bechina_edges": 19,
+    "nodes_in_dataset_not_in_packages": [],
+    "concepts_in_source_text_not_in_dataset": [
+      "קול יעקב — explicitly equated as bechina with קול דקדשה",
+      "קול עשו / קול דסטרא אחרא — the evil mirror of the holy voice (critical gap: the Torah's central conflict is Jacob's voice vs. Esav's voice, but only the holy side has bechina nodes)",
+      "יום הכיפורים — stated as lemaalah min hazman just like teshuvah",
+      "ויישכב / יש כ\"ב — the 22 letters latent in the word vayishkav, bechina of teshuvah",
+      "צרות ודינים ואחיזת הסטרא אחרא — stated as bechina of hazman (the evil face of the temporal dimension)"
+    ],
+    "duplicate_node_ids_noted": [
+      "בטול הזמנים and בטול הזמן appear as distinct node_ids but are semantically identical — candidates for alias resolution",
+      "דבורים and דיבורים appear as distinct node_ids but are the same word (speech-acts) — strong candidate for alias resolution",
+      "למעלה מהזמן and למעלה מן הזמן are two node_ids for the same concept — alias resolution recommended",
+      "התאחדות הזמן and התאחדות הזמן על ידי תשובה are related but the latter is more specific"
+    ],
+    "structural_observation": "This Torah is written from manuscript notes (rashei perakim) and the editor explicitly acknowledges he could not access all the Rebbe's intended premises. The bechina graph reflects the partial reconstruction. The central thesis — teshuvah = bitul hazmanim = lemaalah min hazman — is stated four times with nearly identical proof texts, creating many duplicate edges. The evil side of the Torah (the sitra achra voice, Esav's voice, the tzarot/dinim of time) is extensively discussed in the source text but almost entirely absent from the bechina dataset."
+  }
+}

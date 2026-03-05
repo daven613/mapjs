@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "source": "Torah #14 (Likutay Moharan Tinyana)",
+    "volume": "lm2",
+    "type": "package_proposals",
+    "generated": "2026-03-04",
+    "algorithm": "connected_components_bechina_only",
+    "dataset_note": "Zero bechina edges found in torahData.js for lm2/reference=1014. The dataset skips entirely from reference=1012 to reference=1015 — reference=1013 and reference=1014 are both absent. Additionally, the source text file (torah_14.txt) is a stub: it contains only the opening verse (Psalms 56:3) and a Rabbinic citation (Sanhedrin 44b, 103), with no bechina language and no thematic elaboration. No packages can be constructed from either the dataset or the source text in its current state."
+  },
+  "packages": [],
+  "stats": {
+    "total_bechina_edges": 0,
+    "total_nodes": 0,
+    "total_packages": 0,
+    "raw_connected_components": 0,
+    "note": "Torah 14 (LM2) has neither bechina edges in torahData.js nor substantive bechina language in the source text file. The text file contains only the Torah's opening verse and an introductory Rabbinic citation. The Torah introduces the theme of 'adversaries above mirroring adversaries below' (כְּשֵׁם שֶׁיֵּשׁ צָרִים לְמַטָּה, כָּךְ יֵשׁ צָרִים מִלְמַעְלָה) but does not develop bechina relationships in the extant text. Package analysis cannot proceed until the full Torah text is available."
+  },
+  "source_text_summary": {
+    "opening_verse": "רַבִּים לוֹחֲמִים לִי מָרוֹם (תהילים נ״ו:ג׳)",
+    "verse_interpretation": "הַיְנוּ שֶׁיֵּשׁ לוֹ שׂוֹנְאִים לְמַעְלָה בַּמָּרוֹם",
+    "rabbinic_source": "סנהדרין מד: ובדף קג",
+    "rabbinic_principle": "כְּשֵׁם שֶׁיֵּשׁ צָרִים לְמַטָּה, כָּךְ יֵשׁ צָרִים מִלְמַעְלָה",
+    "thematic_seed": "The symmetry of adversaries: earthly enemies mirror heavenly enemies. The teaching appears to open a discourse about enemies in the spiritual and physical realms, but the text is cut off at the introductory statement.",
+    "expected_themes": [
+      "צָרִים לְמַטָּה — adversaries below (earthly, physical enemies)",
+      "צָרִים מִלְמַעְלָה — adversaries above (heavenly, spiritual enemies)",
+      "The structural mirror between upper and lower worlds",
+      "Possibly: the Tzaddik who has enemies in both realms (implied by first-person 'לִי')"
+    ]
+  },
+  "status": "BLOCKED — source text stub only. Full text required for package analysis."
+}
