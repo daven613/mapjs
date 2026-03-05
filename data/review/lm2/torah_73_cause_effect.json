@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "source": "Torah #73 (Likutay Moharan Tinyana Vol 2)",
+    "volume": "lm2",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "based_on": "torah_73_packages.json"
+  },
+  "assignments": [
+    {
+      "node_id": "תשובה",
+      "node_text": "תְּשׁוּבָה",
+      "edge_type": "eitza",
+      "edge_ids": [],
+      "connected_to": ["תהלים", "אמירת תהלים", "רגיל באמירת תהלים"],
+      "role_in_edges": "effect",
+      "package_id": 1,
+      "package_label": "מ\"ט שַׁעֲרֵי תְּשׁוּבָה",
+      "package_label_en": "The Forty-Nine Gates of Repentance",
+      "polarity": "good",
+      "reason": "Teshuva (repentance) is the effect produced by Tehillim in three of the four eitza edges. Its essential nature IS repentance — the very domain that Package 1 defines. The 49 gates of teshuva ARE the structural architecture of teshuva; teshuva is what those gates constitute and lead into. The source text (line 1): 'אֲמִירַת תְּהִלִּים מְסֻגָּל לִתְשׁוּבָה' and (line 3): 'נִמְצָא שֶׁזּוֹכֶה עַל־יְדֵי תְּהִלִּים לַעֲשׂוֹת תְּשׁוּבָה'. Teshuva belongs in Package 1 as the reality that the 49 gates open onto — it is not the cause (Tehillim) but the essential domain of the gates themselves."
+    },
+    {
+      "node_id": "להגיע אל השער ואות השיך לו, ולפתח השער",
+      "node_text": "לְהַגִּיעַ אֶל הַשַּׁעַר וְהָאוֹת הַשַּׁיָּךְ לוֹ וְלִפְתֹּחַ הַשַּׁעַר",
+      "edge_type": "eitza",
+      "edge_ids": [],
+      "connected_to": ["תהלים"],
+      "role_in_edges": "effect",
+      "package_id": 1,
+      "package_label": "מ\"ט שַׁעֲרֵי תְּשׁוּבָה",
+      "package_label_en": "The Forty-Nine Gates of Repentance",
+      "polarity": "good",
+      "reason": "This node describes reaching one's personal gate and letter of teshuva and opening that gate. Its essential nature IS the 49 gates — it is the experiential side of the gate-and-letter structure that defines Package 1. The source text (line 3): 'זוֹכֶה עַל־יְדֵי תְּהִלִּים לְהַגִּיעַ אֶל הַשַּׁעַר וְהָאוֹת הַשַּׁיָּךְ לוֹ וְלִפְתֹּחַ הַשַּׁעַר'. The 49 gates (Package 1) each have their letter from the tribal names; this node describes the act of arriving at and opening one's specific gate — it is the gates functioning as gates. Tehillim is the cause; the gate-opening is the gates themselves in action."
+    }
+  ],
+  "alias_notes": [
+    {
+      "node_id": " תהלים",
+      "existing_node_id": "תהלים",
+      "reason": "The node ' תהלים' (with leading space) in the second eitza edge is an alias for 'תהלים'. Same concept, whitespace artifact in the dataset."
+    }
+  ],
+  "new_packages": [],
+  "unassigned_nodes": [
+    {
+      "node_id": "תהלים",
+      "role_in_edges": "cause",
+      "reason": "Tehillim (the Book of Psalms) appears as the cause in two eitza edges. Its essential nature is the sacred text/practice of reciting Psalms. It does not belong to any of the three existing bechina packages: Package 1 is the 49-gate structure of teshuva (Tehillim is not a gate or tribal letter — it is the instrument that activates them); Package 2 is the transcendent 50th gate / divine return (Tehillim is not the fiftieth gate); Package 3 is the Egypt/throat/supernal teshuva identity (Tehillim is not the place of purification). Tehillim is the active practice that CAUSES teshuva through the gate structure — it is the key, not the lock. No existing package matches its essential nature."
+    },
+    {
+      "node_id": "אמירת תהלים",
+      "role_in_edges": "cause",
+      "reason": "The recitation of Tehillim (אמירת תהלים) appears as the cause producing teshuva. It is functionally identical to תהלים in this teaching but phrased as the act of recitation. Like תהלים, its essential nature is the practice/instrument rather than the structural domain of any existing package. It does not belong to the 49-gate structure (Package 1), the transcendent 50th gate (Package 2), or the Egypt/throat identity (Package 3)."
+    },
+    {
+      "node_id": "רגיל באמירת תהלים",
+      "role_in_edges": "cause",
+      "reason": "Being habitual in reciting Tehillim (רגיל באמירת תהלים) is the practical advice form of the same Tehillim cause-node. Its essential nature is the sustained practice — the eitza (advice) of the teaching. It does not share the essential nature of any of the three bechina packages, which describe structural identities (gates/letters, the 50th gate, Egypt/throat) rather than the instrumental practice."
+    }
+  ],
+  "stats": {
+    "total_cause_eitza_edges": 4,
+    "unique_nodes_in_cause_eitza_edges": 5,
+    "alias_nodes": 1,
+    "nodes_already_in_bechina_packages": 0,
+    "unique_unassigned_nodes": 3,
+    "nodes_assigned_to_existing": 2,
+    "nodes_in_new_packages": 0,
+    "nodes_unassigned": 3,
+    "assignments_by_package": {
+      "package_1_49_gates_of_repentance": 2
+    }
+  },
+  "analysis_notes": {
+    "eitza_edge_summary": "Four eitza edges, all following the same causal pattern: Tehillim/recitation of Tehillim → teshuva/reaching one's gate. The teaching has a single directional argument: reciting Psalms enables repentance by activating the 49-gate structure.",
+    "polarity_note": "All assignments are good-polarity. This Torah contains no evil-polarity concepts — no opposing force is discussed. The teaching is entirely about the positive path from Tehillim to teshuva.",
+    "structural_note": "The eitza flow connects unassigned Tehillim-nodes (the instrument) to Package 1 (the 49-gate structure that teshuva operates through). Packages 2 and 3 describe the transcendent and mystical dimensions of teshuva respectively, but no eitza edges connect to them directly — they are reached via the bechina structure rather than through cause-effect chains.",
+    "alias_note": "Edge 2 contains ' תהלים' with a leading space — treated as alias for 'תהלים'.",
+    "tehillim_cluster_note": "The three unassigned Tehillim nodes (תהלים, אמירת תהלים, רגיל באמירת תהלים) form a natural cluster that could constitute a package if bechina edges existed between them. In the additions file, נעים זמירות ישראל is also identified as a bechina of ספר תהלים. However, since no bechina edges currently exist in the dataset connecting these nodes, they remain unassigned cause-nodes rather than forming a new package."
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "source": "Torah #169 (Likutay Moharan Vol 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "description": "Assignment of cause/effect (eitza) nodes from Torah 169 to bechina-based packages by essential nature. Existing packages from torah_169_packages.json; proposed additions from torah_169_additions.json consulted for context."
+  },
+  "assignments": [
+    {
+      "node_id": "שהאדם דן את עצמו, דהינו על כל מה שעושה ידין וישפט בעצמו את עצמו על כל דבר אם כך ראוי לו לעשות, ויפשפש במעשיו ויתקנם כראוי על־פי דין ומשפט התורה",
+      "assigned_to_package": 1,
+      "package_label": "דִּין וְדָמִים וְרַגְלִין",
+      "polarity": "good",
+      "role_in_edge": "cause",
+      "edge_ids": [886],
+      "reason": "The essential nature of this node is din — self-judgment according to Torah law. The person examines and corrects their deeds 'al pi din u-mishpat ha-Torah.' This is the active, holy practice of din: turning judgment inward as a spiritual discipline. Its core substance is identical to the din domain of Package 1. The polarity is good because self-judgment is the holy exercise of din that sweetens the divine judgment above ('when there is din below, there is no din above'). It functions as the causal agent that triggers the המתקת הדינים (already in Package 1)."
+    },
+    {
+      "node_id": "שתשמרו לעשות בעצמכם המשפטים והדינים",
+      "assigned_to_package": 1,
+      "package_label": "דִּין וְדָמִים וְרַגְלִין",
+      "polarity": "good",
+      "role_in_edge": "cause",
+      "edge_ids": [1612],
+      "reason": "The essential nature of this node is mishpatim and dinim — the observance of judgments and laws upon oneself. The Rebbe's verse-reading of 'et ha-mishpatim ha-eleh u-shmartem va-asitem otam' means: you shall keep and practice the judgments upon yourselves. This is the same essential din-nature as Package 1, expressed as the practical commandment form. Polarity is good: this is the holy, Torah-mandated self-application of din. It is a restatement in verse-language of the same self-judgment principle as edge 886's cause node."
+    },
+    {
+      "node_id": "שמחה",
+      "assigned_to_package": "additions_proposed_package",
+      "package_label": "שִׂמְחָה (proposed in additions via וְהָיָה = שִׂמְחָה bechina)",
+      "polarity": "good",
+      "role_in_edge": "cause",
+      "edge_ids": [977, 3213],
+      "reason": "שמחה appears as the cause node in two eitza edges: simcha leads to God guarding the brit (edge 977), and simcha leads to tikkun habrit (edge 3213). Its essential nature is joy/gladness — the positive spiritual state that is the antidote to sadness/Lilith. The additions file proposes a bechina pair {והיה, שמחה} based on the explicit 'וְהָיָה — לְשׁוֹן שִׂמְחָה' in the source text. Polarity is good: simcha is unambiguously a holy, positive force in this Torah — it is the state that defeats sadness (the evil klipah Lilith) and enables shmirat habrit. Already noted as belonging to the proposed simcha package in the additions analysis."
+    },
+    {
+      "node_id": "המתקת הדינים",
+      "assigned_to_package": 1,
+      "package_label": "דִּין וְדָמִים וְרַגְלִין",
+      "polarity": "neutral",
+      "role_in_edge": "effect",
+      "edge_ids": [886],
+      "reason": "Already assigned to Package 1 via bechina edges. Appears here as the effect/target of edge 886 (self-judgment causes sweetening of din). No change to package assignment; included for completeness of the eitza graph mapping."
+    },
+    {
+      "node_id": "לזכות לשמחה עד שהעקבים שהם הרגלין ישמעו השמחה",
+      "assigned_to_package": "additions_proposed_package",
+      "package_label": "שִׂמְחָה (proposed in additions via וְהָיָה = שִׂמְחָה bechina)",
+      "polarity": "good",
+      "role_in_edge": "effect",
+      "edge_ids": [1612],
+      "reason": "This composite result-state node describes the outcome: 'to merit simcha until the heels which are the legs hear the simcha.' While it references raglayim (Package 1), its essential nature is the achievement of simcha — specifically, simcha that has spread so completely that even the lowest physical extremities (the legs/heels) are permeated by it. The dominant quality is joy-reaching-fullness, not the legs themselves (which are merely the location). The legs here serve as the measure of simcha's completeness, not as the subject. Polarity is good: this is the ultimate positive outcome of the entire Torah's teaching — the state of complete joy that enables dancing."
+    }
+  ],
+  "new_packages": [
+    {
+      "id": "proposed_brit",
+      "torah_ref": 169,
+      "label": "תִּקּוּן הַבְּרִית",
+      "label_en": "Tikkun HaBrit — Covenant Repair",
+      "polarity": "good",
+      "reason": "Two eitza-only nodes share the essential nature of brit/covenant: the divine promise to guard the brit, and the goal-state of tikkun habrit. These form a distinct thematic domain in Torah 169's second section (lines 13-15), which extends the main din-simcha teaching into the realm of shmirat habrit. The brit domain is neither din (Package 1) nor simcha (proposed additions package) — it is the downstream beneficiary of simcha, a separate spiritual domain concerning sexual holiness and covenantal integrity. No bechina edges exist between these nodes in the current dataset, so this is an eitza-only thematic cluster proposed for organizational clarity. If the additions' proposed bechina edges are accepted, the full causal chain would be: Package 1 (din sweetened) → שמחה package (joy spreads) → brit package (covenant protected).",
+      "nodes": [
+        "השם יתברך בעצמו ישמר לך את הברית דהינו שיהיה בעזרך לשמר את הברית קדש",
+        "תקון הברית"
+      ],
+      "node_assignment_reasons": {
+        "השם יתברך בעצמו ישמר לך את הברית דהינו שיהיה בעזרך לשמר את הברית קדש": "Essential nature is divine covenantal protection — God Himself assists in guarding the brit kodesh. This is a promise/result-state whose core domain is the brit. Polarity: good (divine assistance in holiness). Role: effect of simcha (edge 977).",
+        "תקון הברית": "Essential nature is the repair/guarding of the holy covenant (brit kodesh). This is the goal-state of the simcha → brit causal chain. Polarity: good (sexual holiness, covenantal integrity). Role: effect of simcha (edge 3213)."
+      }
+    }
+  ],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_ce_edges": 4,
+    "total_unique_ce_nodes": 7,
+    "nodes_already_in_packages": 2,
+    "nodes_newly_assigned_to_existing_packages": 2,
+    "nodes_assigned_to_additions_proposed_package": 2,
+    "nodes_assigned_to_new_packages": 2,
+    "nodes_unassigned": 0,
+    "existing_packages_enriched": [
+      {
+        "package_id": 1,
+        "package_label": "דִּין וְדָמִים וְרַגְלִין",
+        "ce_nodes_added": 2,
+        "ce_nodes": [
+          "שהאדם דן את עצמו, דהינו על כל מה שעושה ידין וישפט בעצמו את עצמו על כל דבר אם כך ראוי לו לעשות, ויפשפש במעשיו ויתקנם כראוי על־פי דין ומשפט התורה",
+          "שתשמרו לעשות בעצמכם המשפטים והדינים"
+        ]
+      }
+    ],
+    "additions_proposed_package_enriched": {
+      "package_label": "שִׂמְחָה",
+      "ce_nodes_added": 2,
+      "ce_nodes": [
+        "שמחה",
+        "לזכות לשמחה עד שהעקבים שהם הרגלין ישמעו השמחה"
+      ]
+    },
+    "new_packages_proposed": 1,
+    "verification": {
+      "total_assigned": 7,
+      "breakdown": "2 already in packages + 2 to Package 1 + 2 to additions proposed simcha package + 2 to new brit package = 8 assignments covering 7 unique nodes (המתקת הדינים counted once despite being both pre-assigned and appearing in CE edges; שמחה counted once despite appearing in two CE edges)",
+      "all_ce_nodes_accounted": true
+    }
+  }
+}
