@@ -523,6 +523,85 @@ var TorahSearchEngine = (function() {
         };
     };
 
+    // ===== Package Search Methods =====
+
+    // Initialize package data (called separately after loading packageData.js)
+    TorahSearchEngine.prototype.loadPackages = function(packages) {
+        this.packages = packages || [];
+        // Build index by torah_ref for quick lookup
+        this.packagesByTorah = {};
+        var self = this;
+        this.packages.forEach(function(pkg) {
+            var ref = pkg.torah_ref;
+            if (!self.packagesByTorah[ref]) self.packagesByTorah[ref] = [];
+            self.packagesByTorah[ref].push(pkg);
+        });
+    };
+
+    // Search packages by keyword (matches label, label_en, nodes, reason)
+    TorahSearchEngine.prototype.searchPackages = function(query, limit) {
+        if (!query || !this.packages) return [];
+        limit = limit || 50;
+        var q = query.trim().toLowerCase();
+        var results = [];
+
+        this.packages.forEach(function(pkg) {
+            var score = 0;
+
+            // Match Hebrew label
+            if (pkg.label && pkg.label.toLowerCase().includes(q)) score = 1.0;
+            // Match English label
+            if (!score && pkg.label_en && pkg.label_en.toLowerCase().includes(q)) score = 1.0;
+            // Match dominant node
+            if (!score && pkg.dominant_node && pkg.dominant_node.toLowerCase().includes(q)) score = 0.95;
+            // Match any node in the package
+            if (!score && pkg.nodes) {
+                for (var i = 0; i < pkg.nodes.length; i++) {
+                    if (pkg.nodes[i].toLowerCase().includes(q)) {
+                        score = 0.8;
+                        break;
+                    }
+                }
+            }
+            // Match reason text
+            if (!score && pkg.reason && pkg.reason.toLowerCase().includes(q)) score = 0.5;
+
+            if (score > 0) {
+                results.push({ package: pkg, score: score });
+            }
+        });
+
+        results.sort(function(a, b) { return b.score - a.score; });
+        return results.slice(0, limit).map(function(r) { return r.package; });
+    };
+
+    // Get packages by Torah number
+    TorahSearchEngine.prototype.getPackagesByTorah = function(torahNum) {
+        if (!this.packagesByTorah) return [];
+        return this.packagesByTorah[torahNum] || [];
+    };
+
+    // Get edges for a package's nodes (to visualize the cluster on the graph)
+    TorahSearchEngine.prototype.getPackageEdges = function(pkg) {
+        if (!pkg || !pkg.nodes || !pkg.torah_ref) return [];
+        var nodeSet = new Set(pkg.nodes);
+        var torahRef = pkg.torah_ref;
+
+        return this.data.filter(function(edge) {
+            return edge.reference === torahRef &&
+                   nodeSet.has(edge.node1_id) && nodeSet.has(edge.node2_id);
+        });
+    };
+
+    // Get package stats
+    TorahSearchEngine.prototype.getPackageStats = function() {
+        if (!this.packages) return { totalPackages: 0, torahsWithPackages: 0 };
+        return {
+            totalPackages: this.packages.length,
+            torahsWithPackages: Object.keys(this.packagesByTorah || {}).length
+        };
+    };
+
     return TorahSearchEngine;
 })();
 

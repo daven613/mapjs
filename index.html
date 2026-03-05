@@ -22,6 +22,7 @@
 
     <!-- Data -->
     <script src="./data/torah2.js"></script>
+    <script src="./data/packageData.js"></script>
 
     <!-- Search Engine -->
     <script src="./js/search-engine.js"></script>
@@ -64,6 +65,10 @@
                 <div class="stat">
                     <span class="stat-value" id="statTorahs">--</span>
                     <span class="stat-label">Torahs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="statPackages">--</span>
+                    <span class="stat-label">Packages</span>
                 </div>
             </div>
 
@@ -119,6 +124,10 @@
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
                         <span>Filters</span>
                     </button>
+                    <button class="mode-card" data-mode="packages" onclick="selectMode('packages')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        <span>Packages</span>
+                    </button>
                 </div>
 
                 <!-- Mode Description -->
@@ -166,6 +175,25 @@
                                 <option value="4">4 hops (very broad)</option>
                             </select>
                         </div>
+                    </div>
+
+                    <!-- Package search inputs -->
+                    <div class="form-group hidden" id="inputPackageSearch">
+                        <label for="packageKeyword">Search Packages</label>
+                        <input type="text" id="packageKeyword" placeholder="Search by concept, label, or keyword..." autocomplete="off">
+                        <div class="input-spacer"></div>
+                        <label for="packageTorah">Or Browse by Torah</label>
+                        <select id="packageTorah">
+                            <option value="">-- Select Torah --</option>
+                        </select>
+                    </div>
+
+                    <!-- Package results list (shown below search button) -->
+                    <div class="package-results hidden" id="packageResults">
+                        <div class="package-results-header">
+                            <span class="package-results-title" id="packageResultsTitle">Packages</span>
+                        </div>
+                        <div class="package-list" id="packageList"></div>
                     </div>
 
                     <!-- Multi-filter inputs -->
@@ -249,6 +277,48 @@
                         <button class="action-btn" onclick="searchFromNode()">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
                             Search This Topic
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Package Details -->
+                <div class="package-details hidden" id="packageDetailsPanel">
+                    <div class="package-polarity-badge" id="packagePolarity"></div>
+                    <h3 class="detail-title" id="packageTitle"></h3>
+                    <p class="detail-subtitle" id="packageTitleEn"></p>
+
+                    <div class="detail-stats">
+                        <div class="detail-stat">
+                            <span class="detail-stat-value" id="packageNodeCount">0</span>
+                            <span class="detail-stat-label">Concepts</span>
+                        </div>
+                        <div class="detail-stat">
+                            <span class="detail-stat-value" id="packageTorahRef">0</span>
+                            <span class="detail-stat-label">Torah #</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>Dominant Concept</h4>
+                        <div class="tag-list">
+                            <span class="tag" id="packageDominant"></span>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>Concepts in Package</h4>
+                        <div class="tag-list" id="packageNodeList"></div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>Reason</h4>
+                        <p class="package-reason" id="packageReason"></p>
+                    </div>
+
+                    <div class="detail-actions">
+                        <button class="action-btn" onclick="visualizePackage()">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+                            Show on Graph
                         </button>
                     </div>
                 </div>

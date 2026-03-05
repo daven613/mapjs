@@ -20,7 +20,8 @@ var modeDescriptions = {
     torah:    'Browse all connections found in a specific Torah from Likutay Halachos.',
     path:     'Trace the chain of connections from one concept to another.',
     common:   'Find what two topics share in common - their overlapping connections.',
-    multi:    'Combine keyword, type, and Torah number filters for precise searches.'
+    multi:    'Combine keyword, type, and Torah number filters for precise searches.',
+    packages: 'Browse semantic concept clusters (packages) by keyword or Torah number. Each package groups related concepts from a single Torah.'
 };
 
 var modeDescriptionsHeb = {
@@ -31,7 +32,8 @@ var modeDescriptionsHeb = {
     torah:    '\u05e2\u05d9\u05d9\u05df \u05d1\u05db\u05dc \u05d4\u05d7\u05d9\u05d1\u05d5\u05e8\u05d9\u05dd \u05d4\u05e0\u05de\u05e6\u05d0\u05d9\u05dd \u05d1\u05ea\u05d5\u05e8\u05d4 \u05de\u05e1\u05d5\u05d9\u05de\u05ea \u05de\u05dc\u05d9\u05e7\u05d5\u05d8\u05d9 \u05d4\u05dc\u05db\u05d5\u05ea.',
     path:     '\u05e2\u05e7\u05d5\u05d1 \u05d0\u05d7\u05e8 \u05e9\u05e8\u05e9\u05e8\u05ea \u05d4\u05d7\u05d9\u05d1\u05d5\u05e8\u05d9\u05dd \u05de\u05de\u05d5\u05e9\u05d2 \u05d0\u05d7\u05d3 \u05dc\u05de\u05e9\u05e0\u05d4\u05d5.',
     common:   '\u05de\u05e6\u05d0 \u05d0\u05ea \u05de\u05d4 \u05e9\u05e9\u05e0\u05d9 \u05e0\u05d5\u05e9\u05d0\u05d9\u05dd \u05d7\u05d5\u05dc\u05e7\u05d9\u05dd - \u05d4\u05d7\u05d9\u05d1\u05d5\u05e8\u05d9\u05dd \u05d4\u05d7\u05d5\u05e4\u05e4\u05d9\u05dd \u05e9\u05dc\u05d4\u05dd.',
-    multi:    '\u05e9\u05dc\u05d1 \u05de\u05d9\u05dc\u05ea \u05de\u05e4\u05ea\u05d7, \u05e1\u05d5\u05d2 \u05d5\u05de\u05e1\u05e4\u05e8 \u05ea\u05d5\u05e8\u05d4 \u05dc\u05d7\u05d9\u05e4\u05d5\u05e9 \u05de\u05d3\u05d5\u05d9\u05e7.'
+    multi:    '\u05e9\u05dc\u05d1 \u05de\u05d9\u05dc\u05ea \u05de\u05e4\u05ea\u05d7, \u05e1\u05d5\u05d2 \u05d5\u05de\u05e1\u05e4\u05e8 \u05ea\u05d5\u05e8\u05d4 \u05dc\u05d7\u05d9\u05e4\u05d5\u05e9 \u05de\u05d3\u05d5\u05d9\u05e7.',
+    packages: '\u05d7\u05e4\u05e9 \u05d7\u05d1\u05d9\u05dc\u05d5\u05ea \u05de\u05d5\u05e9\u05d2\u05d9\u05dd (\u05e4\u05e7\u05d2\u05d5\u05ea) \u05dc\u05e4\u05d9 \u05de\u05d9\u05dc\u05ea \u05de\u05e4\u05ea\u05d7 \u05d0\u05d5 \u05de\u05e1\u05e4\u05e8 \u05ea\u05d5\u05e8\u05d4. \u05db\u05dc \u05e4\u05e7\u05d2\u05d4 \u05de\u05e7\u05d1\u05e6\u05ea \u05de\u05d5\u05e9\u05d2\u05d9\u05dd \u05e7\u05e9\u05d5\u05e8\u05d9\u05dd \u05de\u05ea\u05d5\u05e8\u05d4 \u05d0\u05d7\u05ea.'
 };
 
 // ===== Initialization =====
@@ -44,11 +46,18 @@ $(document).ready(function() {
     // Initialize search engine
     searchEngine = new TorahSearchEngine(torah1);
 
+    // Load package data if available
+    if (typeof packageData !== 'undefined') {
+        searchEngine.loadPackages(packageData);
+    }
+
     // Display stats
     var stats = searchEngine.getStats();
+    var pkgStats = searchEngine.getPackageStats();
     $('#statTopics').text(stats.totalTopics);
     $('#statConnections').text(stats.totalConnections);
     $('#statTorahs').text(stats.torahCount);
+    $('#statPackages').text(pkgStats.totalPackages);
     $('#wsTopics').text(stats.totalTopics);
     $('#wsConnections').text(stats.totalConnections);
     $('#wsTorahs').text(stats.torahCount);
@@ -69,6 +78,7 @@ $(document).ready(function() {
         var opt = '<option value="' + num + '">' + num + '</option>';
         $('#selectTorah').append(opt);
         $('#filterTorah').append(opt);
+        $('#packageTorah').append(opt);
     });
 
     // Initialize Sigma
@@ -164,7 +174,9 @@ function selectMode(mode) {
     $('#modeDescription').text(desc || '');
 
     // Show correct input group
-    $('#inputSingleTopic, #inputTorahGroup, #inputTwoTopics, #inputMultiFilter').addClass('hidden');
+    $('#inputSingleTopic, #inputTorahGroup, #inputTwoTopics, #inputMultiFilter, #inputPackageSearch').addClass('hidden');
+    // Hide package results when switching modes
+    $('#packageResults').addClass('hidden');
 
     if (mode === 'explore' || mode === 'advice' || mode === 'effects' || mode === 'aspects') {
         $('#inputSingleTopic').removeClass('hidden');
@@ -179,6 +191,8 @@ function selectMode(mode) {
         document.getElementById('commonDepthGroup').style.display = mode === 'common' ? 'block' : 'none';
     } else if (mode === 'multi') {
         $('#inputMultiFilter').removeClass('hidden');
+    } else if (mode === 'packages') {
+        $('#inputPackageSearch').removeClass('hidden');
     }
 }
 
@@ -288,6 +302,32 @@ function doSearch() {
             if (filters.torahNum) parts.push('Torah #' + filters.torahNum);
             searchLabel = parts.join(', ');
             break;
+        }
+        case 'packages': {
+            var keyword = $('#packageKeyword').val().trim();
+            var torahNum = $('#packageTorah').val();
+            var pkgs = [];
+
+            if (torahNum) {
+                pkgs = searchEngine.getPackagesByTorah(parseInt(torahNum));
+                searchLabel = 'Packages: Torah #' + torahNum;
+            } else if (keyword) {
+                pkgs = searchEngine.searchPackages(keyword);
+                searchLabel = 'Packages: ' + keyword;
+            } else {
+                showToast('Please enter a keyword or select a Torah number');
+                return;
+            }
+
+            if (pkgs.length === 0) {
+                showToast('No packages found');
+                return;
+            }
+
+            // Show package results list instead of graph
+            renderPackageResults(pkgs, searchLabel);
+            addToHistory('packages', searchLabel, pkgs.length, 0);
+            return; // Don't build graph yet — user clicks a package to visualize it
         }
     }
 
@@ -565,6 +605,7 @@ function showNodeDetails(nodeId) {
     // Hide placeholders, show node panel
     $('#detailsPlaceholder').addClass('hidden');
     $('#edgeDetailsPanel').addClass('hidden');
+    $('#packageDetailsPanel').addClass('hidden');
     $('#nodeDetailsPanel').removeClass('hidden');
 
     // Populate
@@ -587,6 +628,7 @@ function showEdgeDetails(edge) {
 
     $('#detailsPlaceholder').addClass('hidden');
     $('#nodeDetailsPanel').addClass('hidden');
+    $('#packageDetailsPanel').addClass('hidden');
     $('#edgeDetailsPanel').removeClass('hidden');
 
     var isEitza = edge.edgeType === 'eitza';
@@ -772,7 +814,136 @@ function clearGraph() {
     $('#detailsPlaceholder').removeClass('hidden');
     $('#nodeDetailsPanel').addClass('hidden');
     $('#edgeDetailsPanel').addClass('hidden');
+    $('#packageDetailsPanel').addClass('hidden');
     selectedNodeId = null;
+}
+
+// ===== Package Functions =====
+var currentPackages = [];
+var selectedPackage = null;
+
+function renderPackageResults(pkgs, title) {
+    currentPackages = pkgs;
+    $('#packageResultsTitle').text(title || 'Packages');
+
+    var html = '';
+    pkgs.forEach(function(pkg, idx) {
+        var polarityClass = pkg.polarity === 'good' ? 'polarity-good' : (pkg.polarity === 'evil' ? 'polarity-evil' : 'polarity-neutral');
+        var polarityLabel = pkg.polarity === 'good' ? 'Good' : (pkg.polarity === 'evil' ? 'Evil' : 'Neutral');
+        var nodeCount = pkg.nodes ? pkg.nodes.length : 0;
+        var label = currentLanguage === 'hebrew' ? (pkg.label || pkg.label_en || '') : (pkg.label_en || pkg.label || '');
+
+        html += '<div class="package-card" onclick="selectPackage(' + idx + ')">' +
+            '<div class="package-card-header">' +
+                '<span class="package-label">' + escapeHtml(label) + '</span>' +
+                '<span class="polarity-badge ' + polarityClass + '">' + polarityLabel + '</span>' +
+            '</div>' +
+            '<div class="package-card-meta">' +
+                '<span>Torah #' + (pkg.torah_ref || '?') + '</span>' +
+                '<span>' + nodeCount + ' concepts</span>' +
+            '</div>' +
+        '</div>';
+    });
+
+    $('#packageList').html(html);
+    $('#packageResults').removeClass('hidden');
+    showToast(pkgs.length + ' packages found');
+}
+
+function selectPackage(idx) {
+    var pkg = currentPackages[idx];
+    if (!pkg) return;
+    selectedPackage = pkg;
+
+    // Show package details
+    switchTab('details');
+    $('#detailsPlaceholder').addClass('hidden');
+    $('#nodeDetailsPanel').addClass('hidden');
+    $('#edgeDetailsPanel').addClass('hidden');
+    $('#packageDetailsPanel').removeClass('hidden');
+
+    var polBadge = $('#packagePolarity');
+    polBadge.text(pkg.polarity === 'good' ? 'Good (Kedusha)' : (pkg.polarity === 'evil' ? 'Evil (Klipa)' : 'Neutral'));
+    polBadge.removeClass('polarity-good polarity-evil polarity-neutral');
+    polBadge.addClass(pkg.polarity === 'good' ? 'polarity-good' : (pkg.polarity === 'evil' ? 'polarity-evil' : 'polarity-neutral'));
+
+    $('#packageTitle').text(pkg.label || '');
+    $('#packageTitleEn').text(pkg.label_en || '');
+    $('#packageNodeCount').text(pkg.nodes ? pkg.nodes.length : 0);
+    $('#packageTorahRef').text(pkg.torah_ref || '?');
+    $('#packageDominant').text(pkg.dominant_node || '');
+
+    // Render node tags
+    var tagHtml = '';
+    if (pkg.nodes) {
+        pkg.nodes.forEach(function(node) {
+            tagHtml += '<span class="tag">' + escapeHtml(node) + '</span>';
+        });
+    }
+    $('#packageNodeList').html(tagHtml);
+    $('#packageReason').text(pkg.reason || '');
+
+    // Auto-visualize on click
+    visualizePackage();
+}
+
+function visualizePackage() {
+    if (!selectedPackage || !searchEngine || !sigmaInstance) return;
+    var pkg = selectedPackage;
+
+    // Get edges connecting the package's nodes within this Torah
+    var edges = searchEngine.getPackageEdges(pkg);
+
+    // Stop and clean up any existing layout
+    stopLayout();
+    sigmaInstance.graph.clear();
+    sigmaInstance.refresh();
+    resetCamera();
+
+    // Hide welcome screen
+    $('#welcomeScreen').addClass('hidden');
+
+    if (edges.length > 0) {
+        buildGraph(edges, {});
+    } else {
+        // No edges found — just show nodes without edges
+        var nodeSet = pkg.nodes || [];
+        nodeSet.forEach(function(nodeId, i) {
+            var angle = (2 * Math.PI * i) / nodeSet.length;
+            try {
+                sigmaInstance.graph.addNode({
+                    id: nodeId,
+                    label: nodeId,
+                    x: Math.cos(angle) * 10,
+                    y: Math.sin(angle) * 10,
+                    size: nodeId === pkg.dominant_node ? 10 : 5,
+                    color: nodeId === pkg.dominant_node ? '#f59e0b' : '#3b82f6'
+                });
+            } catch(e) {}
+        });
+        sigmaInstance.refresh();
+        fitToScreen();
+    }
+
+    // Highlight dominant node
+    if (pkg.dominant_node) {
+        var domNode = sigmaInstance.graph.nodes(pkg.dominant_node);
+        if (domNode) {
+            domNode.color = '#f59e0b';
+            domNode.size = Math.max(domNode.size, 12);
+            sigmaInstance.refresh();
+        }
+    }
+
+    var nodeCount = sigmaInstance.graph.nodes().length;
+    var edgeCount = sigmaInstance.graph.edges().length;
+    var label = currentLanguage === 'hebrew' ? (pkg.label || pkg.label_en) : (pkg.label_en || pkg.label);
+    $('#resultsStats').html(
+        '<strong>' + escapeHtml(label) + '</strong> — ' +
+        nodeCount + ' nodes, ' + edgeCount + ' connections.'
+    );
+    $('#resultsSummary').removeClass('hidden');
+    showToast('Package: ' + label);
 }
 
 // ===== Helpers =====

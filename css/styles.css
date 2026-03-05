@@ -242,7 +242,7 @@ body {
 /* --- Search Modes --- */
 .search-modes {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     margin-bottom: 16px;
 }
@@ -437,6 +437,108 @@ body {
     font-size: 13px;
     color: #15803d;
     line-height: 1.6;
+}
+
+/* --- Package Results --- */
+.package-results {
+    margin-top: 16px;
+}
+
+.package-results.hidden {
+    display: none;
+}
+
+.package-results-header {
+    margin-bottom: 8px;
+}
+
+.package-results-title {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-text-secondary);
+}
+
+.package-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.package-card {
+    padding: 12px 14px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.package-card:hover {
+    border-color: var(--color-primary-light);
+    background: #eff6ff;
+}
+
+.package-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.package-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.package-card-meta {
+    display: flex;
+    gap: 12px;
+    font-size: 11px;
+    color: var(--color-text-muted);
+}
+
+/* Polarity badges */
+.polarity-badge,
+.package-polarity-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.polarity-good {
+    background: #f0fdf4;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.polarity-evil {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.polarity-neutral {
+    background: var(--color-bg);
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+}
+
+/* Package details panel */
+.package-reason {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    padding: 10px 14px;
+    background: var(--color-bg);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border-light);
 }
 
 /* --- Details Tab --- */
@@ -1049,7 +1151,7 @@ body {
     }
 
     .search-modes {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .graph-legend {
