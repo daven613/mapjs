@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "source": "Torah #119 (Likutay Moharan Vol 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "methodology": "Read framework.md, torah_119_packages.json, torah_119_additions.json, torah_119_ce_edges.json, and torah_119.txt. Collected all node IDs already assigned to packages (including additions). Extracted all unique node IDs from cause/effect edges. Identified nodes appearing in CE edges but not in any package. Assigned each unassigned node to a package by its ESSENTIAL NATURE — the core concept it represents — considering polarity (good/evil/neutral).",
+    "input_files": [
+      "torah_119_packages.json",
+      "torah_119_additions.json",
+      "/tmp/torah_119_ce_edges.json",
+      "torah_texts/lm1/torah_119.txt"
+    ]
+  },
+  "assignments": [
+    {
+      "node_id": "בשבת",
+      "node_text": "בְּשַׁבָּת",
+      "assigned_to_package": 1,
+      "package_label": "שַׁבָּת וְדַעַת",
+      "polarity": "good",
+      "reason": "בְּשַׁבָּת ('on Shabbat') is the locative/temporal form of שַׁבָּת. Its essential nature IS Shabbat — the temporal vessel of daas. The prefix בְּ (in/on) does not change its core identity. It belongs in Package 1 alongside שַׁבָּת because it refers to the same concept: the Shabbat context in which daas flows to every person. In the eitza edge (id 756), בְּשַׁבָּת → דַּעַת expresses the directional flow: being in the state of Shabbat causes daas to be drawn down. The node's essential nature is Shabbat itself.",
+      "appears_in_edges": [756]
+    },
+    {
+      "node_id": "רחמנות",
+      "node_text": "רַחֲמָנוּת",
+      "assigned_to_package": 2,
+      "package_label": "רַחֲמִים — Compassion",
+      "polarity": "good",
+      "reason": "רַחֲמָנוּת (compassion as a character trait/attribute) is the central concept of the mercy domain in Torah #119. The Rebbe states: 'מִדַּת הָרַחֲמָנוּת תָּלוּי בְּדַעַת' — the trait of compassion depends on daas. Its essential nature is MERCY — the positive moral quality that flows from knowledge. It is not daas itself (which is the cognitive/spiritual faculty), but rather its fruit in the domain of interpersonal conduct. It is explicitly named as the opposite of כַּעַס (anger). Its polarity is good — it belongs to the domain of holiness and right conduct.",
+      "appears_in_edges": [2739]
+    },
+    {
+      "node_id": "רחמים",
+      "node_text": "לְרַחֲמִים",
+      "assigned_to_package": 2,
+      "package_label": "רַחֲמִים — Compassion",
+      "polarity": "good",
+      "reason": "רַחֲמִים (mercy/compassion) is what the sick person needs — 'כְּשֶׁאָדָם צָרִיךְ לְרַחֲמִים'. Its essential nature is mercy in its broadest sense — the divine and human quality of compassion. It is functionally synonymous with רַחֲמָנוּת in this Torah's framework, differing only in grammatical form (רַחֲמִים = the mercy one receives/needs; רַחֲמָנוּת = the trait of being merciful). Both belong to the same compassion domain.",
+      "appears_in_edges": [2730]
+    },
+    {
+      "node_id": "שהוא ירחם על אחר",
+      "node_text": "שֶׁהוּא יְרַחֵם עַל אַחֵר",
+      "assigned_to_package": 2,
+      "package_label": "רַחֲמִים — Compassion",
+      "polarity": "good",
+      "reason": "This node describes the ACT of showing mercy on another — 'הַשֵּׁם יִתְבָּרַךְ שׁוֹלֵחַ לוֹ רַחֲמָנוּת, שֶׁהוּא יְרַחֵם עַל אַחֵר'. Its essential nature is compassionate action toward others. God sends a person the capacity for mercy so that he will show mercy to another. This is the active expression of רַחֲמָנוּת — mercy in practice. It belongs in the compassion package as a specific manifestation of the mercy trait.",
+      "appears_in_edges": [1950]
+    },
+    {
+      "node_id": "שיהיה לו רחמים על אחרים",
+      "node_text": "שֶׁיִּהְיֶה לוֹ רַחֲמִים עַל אֲחֵרִים",
+      "assigned_to_package": 2,
+      "package_label": "רַחֲמִים — Compassion",
+      "polarity": "good",
+      "reason": "This node — 'that he should have compassion on others' — expresses the same essential nature as שֶׁהוּא יְרַחֵם עַל אַחֵר but from the perspective of the sick person's obligation. The Rebbe concludes: 'צָרִיךְ שֶׁיִּהְיֶה לוֹ רַחֲמִים עַל אֲחֵרִים, וְזֶה תָּלוּי בְּדַעַת'. Its essential nature is having/exercising compassion. It is the prerequisite condition for receiving heavenly mercy. It is mercy directed outward, firmly in the compassion domain.",
+      "appears_in_edges": [2730, 2863]
+    },
+    {
+      "node_id": "מרחמין עליו",
+      "node_text": "מְרַחֲמִין עָלָיו",
+      "assigned_to_package": 2,
+      "package_label": "רַחֲמִים — Compassion",
+      "polarity": "good",
+      "reason": "מְרַחֲמִין עָלָיו ('they have mercy on him') is the reciprocal heavenly response: 'כָּל הַמְרַחֵם עַל הַבְּרִיּוֹת מְרַחֲמִין עָלָיו'. Its essential nature is receiving mercy from Heaven — the divine compassion that mirrors human compassion. Though it is the EFFECT (receiving mercy) rather than the CAUSE (giving mercy), its core concept is still mercy/compassion — the same domain as רַחֲמָנוּת and רַחֲמִים, just from the receptive side. Polarity is good: this is heavenly compassion flowing to the person.",
+      "appears_in_edges": [1950]
+    }
+  ],
+  "new_packages": [
+    {
+      "id": 2,
+      "torah_ref": 119,
+      "label": "רַחֲמִים",
+      "label_en": "Compassion",
+      "polarity": "good",
+      "reason": "Torah #119's eitza chain flows from Package 1 (שַׁבָּת/דַּעַת) into a distinct conceptual domain: compassion/mercy. The five compassion nodes — רַחֲמָנוּת, רַחֲמִים, שֶׁהוּא יְרַחֵם עַל אַחֵר, שֶׁיִּהְיֶה לוֹ רַחֲמִים עַל אֲחֵרִים, מְרַחֲמִין עָלָיו — all share the ESSENTIAL NATURE of mercy. They are not aspects of knowledge (daas) or Shabbat; they are the moral-practical fruit of daas. The Torah's argument is precisely that daas PRODUCES compassion (eitza), not that daas IS compassion (bechina). Therefore these nodes form a separate thematic cluster. The dominant node is רַחֲמָנוּת, which the Rebbe names as the midda (trait) and from which all specific expressions derive. This package is 'good' — compassion belongs to the domain of holiness.",
+      "dominant_node": "רחמנות",
+      "nodes": [
+        "רחמנות",
+        "רחמים",
+        "שהוא ירחם על אחר",
+        "שיהיה לו רחמים על אחרים",
+        "מרחמין עליו"
+      ]
+    }
+  ],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_ce_edges": 5,
+    "total_unique_ce_nodes": 7,
+    "nodes_already_in_packages": 1,
+    "nodes_already_in_packages_detail": {
+      "דעת": "Package 1 (שַׁבָּת וְדַעַת) — appears as node2 in edge 756 and node1 in edges 2739, 2863"
+    },
+    "nodes_assigned_to_existing_packages": 1,
+    "nodes_assigned_to_existing_packages_detail": {
+      "בשבת": "Package 1 (שַׁבָּת וְדַעַת) — locative form of שַׁבָּת"
+    },
+    "nodes_assigned_to_new_packages": 5,
+    "nodes_assigned_to_new_packages_detail": {
+      "Package 2 (רַחֲמִים)": ["רחמנות", "רחמים", "שהוא ירחם על אחר", "שיהיה לו רחמים על אחרים", "מרחמין עליו"]
+    },
+    "total_new_packages_created": 1,
+    "total_unassigned_nodes": 0,
+    "consistency_check": {
+      "total_unique_ce_nodes": 7,
+      "already_in_packages": 1,
+      "assigned_to_existing": 1,
+      "assigned_to_new": 5,
+      "unassigned": 0,
+      "sum": 7,
+      "consistent": true
+    },
+    "eitza_flow_summary": "Package 1 (שַׁבָּת וְדַעַת) →eitza→ Package 2 (רַחֲמִים): Shabbat/daas produces and enables compassion. The full chain: בְּשַׁבָּת → דַּעַת → רַחֲמָנוּת / שֶׁיִּהְיֶה לוֹ רַחֲמִים עַל אֲחֵרִים → מְרַחֲמִין עָלָיו. This captures the Torah's core practical teaching: Shabbat grants daas, daas enables compassion, compassion toward others brings heavenly mercy upon oneself."
+  }
+}

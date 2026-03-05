@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "source": "Torah #210 (Likutay Moharan Vol 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "methodology": "Read framework.md, torah_210_ce_edges.json (5 eitza edges), torah_210_packages.json (1 package, 2 nodes), torah_210_additions.json (1 addition: בוקר). Collected all assigned node IDs (3 total). Extracted all unique node IDs from cause/effect edges (8 total, 2 already assigned). Assigned remaining 6 nodes to packages by essential nature, considering polarity and the Torah's conceptual structure."
+  },
+  "assignments": [
+    {
+      "node_id": "\"ואהבת\" ",
+      "node_text": "אָחוּז בִּבְחִינַת \"וְאָהַבְתָּ\" בְּחִינַת אַבְרָהָם",
+      "assigned_to_package": 1,
+      "package_label": "וְאָהַבְתָּ וְאַבְרָהָם",
+      "polarity": "good",
+      "reason": "This node ID ('\"ואהבת\" ' with trailing space) is a whitespace variant of the existing package node '\"ואהבת\"'. The edge text confirms it refers to the same concept: holding onto the bechina of ואהבת/Abraham. Its essential nature is the love of God — identical to Package 1's core identity. Assigned to Package 1 as a data-level alias of the existing dominant node.",
+      "appears_in_edges": [30]
+    },
+    {
+      "node_id": "כשמקים \"ואהבת\"",
+      "node_text": "וּכְשֶׁמְּקַיֵּם \"וְאָהַבְתָּ\"",
+      "assigned_to_package": 1,
+      "package_label": "וְאָהַבְתָּ וְאַבְרָהָם",
+      "polarity": "good",
+      "reason": "This node ('when one fulfills ve'ahavta') describes the active fulfillment of the ואהבת commandment. Its essential nature is the love of God in practice — the same quality that defines Package 1. The node is a verbal/active-tense expression of the ואהבת concept already at the center of that package. It does not represent a separate domain; it IS ואהבת in its moment of realization.",
+      "appears_in_edges": [1263]
+    },
+    {
+      "node_id": "מקים \"ואהבת\", כמו שאמרו חכמינו, זכרונם לברכה (יומא פו): \"ואהבת\" – שיהא שם שמים מתאהב על ידיך וכו",
+      "node_text": "מְקַיֵּם \"וְאָהַבְתָּ\", כְּמוֹ שֶׁאָמְרוּ חֲכָמֵינוּ, זִכְרוֹנָם לִבְרָכָה (יוֹמָא פו): \"וְאָהַבְתָּ\" – 'שֶׁיְּהֵא שֵׁם שָׁמַיִם מִתְאַהֵב עַל יָדֶיךָ' וְכוּ'",
+      "assigned_to_package": 1,
+      "package_label": "וְאָהַבְתָּ וְאַבְרָהָם",
+      "polarity": "good",
+      "reason": "This extended node is a fuller articulation of the same ואהבת fulfillment, including the Sages' definition from Yoma 86 ('that Hashem's name should become beloved through you'). Its essential nature is still the love of God — the Sages' gloss is an explanation of ואהבת, not a separate concept. The additions analysis already noted that 'שם שמים מתאהב על ידיך' is fully contained within the existing ואהבת node. Assigned to Package 1.",
+      "appears_in_edges": [1931]
+    },
+    {
+      "node_id": "משא ומתן באמונה",
+      "node_text": "מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+      "assigned_to_package": 2,
+      "package_label": "מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+      "polarity": "good",
+      "is_new_package": true,
+      "reason": "Honest business dealings (masa u'matan be'emunah) is the teaching's practical eitza-input — the deed one must perform. Its essential nature is emunah (faith/trustworthiness) expressed in the commercial domain. This is a fundamentally different quality from the love-of-God identity of Package 1: emunah is about integrity and trustworthiness in one's dealings with others, while ואהבת/אברהם is about the love that makes Hashem's name beloved. The Torah's causal chain is: honest dealings PRODUCE the state of ואהבת — they are not the same essence. As the eitza-input node with a distinct essential nature, it forms its own package.",
+      "appears_in_edges": [30, 106, 232, 1931]
+    },
+    {
+      "node_id": "אין קשין לו מזונותיו",
+      "node_text": "אֵין קָשִׁין לוֹ מְזוֹנוֹתָיו",
+      "assigned_to_package": 3,
+      "package_label": "פַּרְנָסָה בְּנָקֵל",
+      "polarity": "good",
+      "is_new_package": true,
+      "reason": "This node ('his livelihood is not difficult') is the teaching's eitza-outcome — the practical result of the entire causal chain. Its essential nature is ease of livelihood/sustenance (parnassah). This is distinct from both the emunah-in-commerce of Package 2 and the love-of-God of Package 1. In the Torah's structure, it is what FLOWS FROM the ואהבת/Abraham state — it is the consequence, not the essence. It shares the same fundamental quality (easy parnassah) with the other livelihood node below.",
+      "appears_in_edges": [232]
+    },
+    {
+      "node_id": "יהיה לו פרנסה בלא יגיעה וטרח",
+      "node_text": "יִהְיֶה לוֹ פַּרְנָסָה בְּלֹא יְגִיעָה וָטֹרַח",
+      "assigned_to_package": 3,
+      "package_label": "פַּרְנָסָה בְּנָקֵל",
+      "polarity": "good",
+      "reason": "This node ('he will have livelihood without effort and toil') expresses the same essential nature as 'אין קשין לו מזונותיו' — both describe the state of ease in earning one's livelihood. They are two phrasings of the same outcome-quality: parnassah that comes easily. Assigned to Package 3 alongside the other livelihood node. Together they form the eitza-output cluster of the teaching.",
+      "appears_in_edges": [1263]
+    }
+  ],
+  "new_packages": [
+    {
+      "id": 2,
+      "torah_ref": 210,
+      "label": "מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+      "label_en": "Honest Business Dealings",
+      "polarity": "good",
+      "reason": "The teaching's practical starting point — the deed of conducting business with integrity and faith. This is the eitza-input that initiates the entire causal chain. Its essential nature is emunah (faithfulness/trustworthiness) as expressed in the commercial domain. It stands alone as its own thematic cluster because no other node in the teaching shares this essential nature (the other nodes are about love-of-God or livelihood-outcome, not about commercial integrity).",
+      "dominant_node": "משא ומתן באמונה",
+      "nodes": ["משא ומתן באמונה"],
+      "node_count": 1
+    },
+    {
+      "id": 3,
+      "torah_ref": 210,
+      "label": "פַּרְנָסָה בְּנָקֵל",
+      "label_en": "Ease of Livelihood",
+      "polarity": "good",
+      "reason": "The teaching's practical outcome — the state where livelihood comes without difficulty. Both nodes describe the same essential quality: parnassah that arrives easily, without toil. This is the eitza-output that results from the ואהבת/Abraham state. Its essential nature (material sustenance and ease) is distinct from the spiritual love-quality of Package 1 and the commercial-integrity quality of Package 2.",
+      "dominant_node": "אין קשין לו מזונותיו",
+      "nodes": ["אין קשין לו מזונותיו", "יהיה לו פרנסה בלא יגיעה וטרח"],
+      "node_count": 2
+    }
+  ],
+  "unassigned_nodes": [],
+  "causal_flow_summary": {
+    "description": "Torah #210's eitza chain in three moves, now mapped to packages:",
+    "flow": [
+      {
+        "from_package": 2,
+        "from_label": "מַשָּׂא וּמַתָּן בֶּאֱמוּנָה (Honest Business Dealings)",
+        "relation": "produces",
+        "to_package": 1,
+        "to_label": "וְאָהַבְתָּ וְאַבְרָהָם (The Love of God and Abraham)",
+        "edge_ids": [30, 106, 1931]
+      },
+      {
+        "from_package": 1,
+        "from_label": "וְאָהַבְתָּ וְאַבְרָהָם (The Love of God and Abraham)",
+        "relation": "produces",
+        "to_package": 3,
+        "to_label": "פַּרְנָסָה בְּנָקֵל (Ease of Livelihood)",
+        "edge_ids": [232, 1263]
+      }
+    ],
+    "diagram": "Pkg 2 [good: משא ומתן באמונה] →eitza→ Pkg 1 [good: ואהבת/אברהם] →eitza→ Pkg 3 [good: פרנסה בנקל]"
+  },
+  "stats": {
+    "total_cause_effect_edges": 5,
+    "total_unique_nodes_in_edges": 8,
+    "nodes_already_assigned": 2,
+    "nodes_newly_assigned": 6,
+    "assigned_to_existing_packages": 3,
+    "assigned_to_new_packages": 3,
+    "new_packages_created": 2,
+    "unassigned_nodes": 0,
+    "total_packages_after": 3,
+    "all_polarities": "good",
+    "note": "All 3 ואהבת-variant nodes assigned to existing Package 1 are data-level aliases or verbal-tense variants of the same concept. Torah #210 is entirely positive in polarity — no evil mirror exists in this compact teaching. The causal flow is linear: emunah-in-commerce → love-of-God/Abraham → ease-of-livelihood."
+  }
+}
