@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "source": "Torah #158 (Likutay Moharan Volume 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "based_on": "torah_158_packages.json"
+  },
+  "assignments": [],
+  "new_packages": [],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_cause_eitza_edges": 0,
+    "unique_unassigned_nodes": 0,
+    "nodes_assigned_to_existing": 0,
+    "nodes_in_new_packages": 0,
+    "nodes_unassigned": 0,
+    "nodes_already_in_bechina_packages": 0
+  },
+  "notes": "Torah #158 has zero cause/effect (eitza/cause) edges in torahData.js. Reference 158 does not appear in the dataset at all — the Torah has not yet been encoded. The existing torah_158_packages.json was built entirely from source text analysis of torah_158.txt, which itself is a brief 5-line teaching that ends mid-sentence. There are no dataset edges of any type to process. The two existing packages (Package 1: אש בוערת והתלהבות הלב; Package 2: אידים וחרטות הרשעים) were constructed from bechina-language in the source text. The causal relationship between them (charatot/vapors CAUSE the hitlahavut/fire) is noted in the packages file but has no corresponding eitza edges in the dataset to trigger node assignments here. When Torah #158 is eventually encoded into torahData.js with eitza edges, this file should be regenerated."
+}
