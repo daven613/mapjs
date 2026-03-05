@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "source": "Torah #74 (Likutay Moharan Vol 1)",
+    "volume": "lm1",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-05",
+    "methodology": "Read framework.md for conceptual framework, torah_74_ce_edges.json for 7 cause/effect edges, torah_74_packages.json for 3 existing bechina-based packages (45 nodes), and torah_74_additions.json for 9 gap-analysis additions (8 new nodes: מחין דקטנות, צדק, כבוד, אור [via תורה=אור], מח, מחשבה, נפש כי תחטא, חיות הנפש; plus 1 missing edge תורה↔חכמה). Combined assigned-node set: 53 unique nodes. Extracted all unique node IDs from cause/effect edges (10 total), subtracted assigned nodes, yielding 7 unassigned cause/effect nodes. Each was assigned to an existing package by its ESSENTIAL NATURE — the domain it fundamentally belongs to, not its causal role."
+  },
+  "assignments": [
+    {
+      "node_id": "המתקה",
+      "node_text": "עִקַּר הַהַמְתָּקָה",
+      "assigned_to_package": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה — גַּדְלוּת וּרְפוּאַת הַנֶּפֶשׁ",
+      "polarity": "good",
+      "reason": "Hamtakah (sweetening) is the essential act of the wisdom/gadlut domain. The Torah states: 'עִקַּר הַהַמְתָּקָה הוּא עַל־יְדֵי חָכְמָה, בְּחִינַת מֹחִין דְּגַדְלוּת'. Sweetening IS what wisdom DOES — its essential nature is the transformative power of chokhmah, not the din being transformed. Package 2 already contains המתקת הדין של יצחק (the specific sweetening of Isaac's judgment) as a bechina node. המתקה is the general principle of that same domain. It appears in 3 cause/effect edges as the EFFECT of חכמה, מחין דגדלות, and ידיעת התורה — all Package 2 causes producing a Package 2 effect.",
+      "ce_edges": [876, null, 878]
+    },
+    {
+      "node_id": "חכמה, שהוא ידיעת התורה",
+      "node_text": "הַחָכְמָה, שֶׁהוּא יְדִיעַת הַתּוֹרָה",
+      "assigned_to_package": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה — גַּדְלוּת וּרְפוּאַת הַנֶּפֶשׁ",
+      "polarity": "good",
+      "reason": "This is a compound label combining חכמה (already in Package 2) and ידיעת התורה into one node. Its essential nature is wisdom-as-Torah-knowledge, the core identity of the Package 2 domain. The Rebbe's phrase 'הַחָכְמָה, שֶׁהוּא יְדִיעַת הַתּוֹרָה' explicitly equates these two concepts, both of which are aspects of the wisdom/gadlut cluster. It serves as the CAUSE that produces המתקת הדין של יצחק (edge 880).",
+      "ce_edges": [880]
+    },
+    {
+      "node_id": "ידיעת התורה",
+      "node_text": "יְדִיעַת הַתּוֹרָה",
+      "assigned_to_package": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה — גַּדְלוּת וּרְפוּאַת הַנֶּפֶשׁ",
+      "polarity": "good",
+      "reason": "Knowledge of Torah is the practical expression of חכמה/מחין דגדלות. The Torah states: 'עִקַּר הַהַמְתָּקָה הוּא עַל־יְדֵי חָכְמָה, בְּחִינַת מֹחִין דְּגַדְלוּת, דְּהַיְנוּ עַל־יְדֵי יְדִיעַת הַתּוֹרָה'. Torah-knowledge is defined as the concrete mode of chokhmah/gadlut. Its essential nature is wisdom in its applied form. Package 2 already contains תורה, חכמה, and מחין דגדלות. ידיעת התורה appears as a cause in edges 878 (→ המתקה) and 2092 (→ נמתק הדין).",
+      "ce_edges": [878, 2092]
+    },
+    {
+      "node_id": "כבוד נתגלה",
+      "node_text": "וְהַכָּבוֹד נִתְגַּלֶּה",
+      "assigned_to_package": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה — גַּדְלוּת וּרְפוּאַת הַנֶּפֶשׁ",
+      "polarity": "good",
+      "reason": "The revelation of God's glory is the ultimate telos of the wisdom path in Torah #74: 'כְּשֶׁזּוֹכֶה לַחָכְמָה, אֲזַי נִתְגַּלֶּה כְּבוֹדוֹ יִתְבָּרַךְ, שֶׁזֶּהוּ עִקַּר הַתַּכְלִית שֶׁל כָּל עֲבוֹדוֹת הָאָדָם'. Kavod nitgaleh is the culmination of the chokhmah domain — glory IS revealed through wisdom, and the additions file already places כבוד in Package 2 as a bechina of חכמה ('וְהַחָכְמָה נִקְרָא כָּבוֹד'). כבוד נתגלה is the dynamic/actualized form of that same kavod. Its essential nature is the manifest glory of God through wisdom — firmly in the positive wisdom domain. It appears as the EFFECT of חכמה in edge 1459.",
+      "ce_edges": [1459]
+    },
+    {
+      "node_id": "לרפאות נפשו, דהינו להעלותה למקום שרשה",
+      "node_text": "לְרַפְּאוֹת נַפְשׁוֹ, דְּהַיְנוּ לְהַעֲלוֹתָהּ לִמְקוֹם שָׁרְשָׁהּ",
+      "assigned_to_package": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה — גַּדְלוּת וּרְפוּאַת הַנֶּפֶשׁ",
+      "polarity": "good",
+      "reason": "Healing the soul and elevating it to its root is the central goal stated at the Torah's opening: 'כָּל אָדָם צָרִיךְ לְרַפְּאוֹת נַפְשׁוֹ, דְּהַיְנוּ לְהַעֲלוֹתָהּ לִמְקוֹם שָׁרְשָׁהּ'. Package 2 already contains רפואת הנפש and משיבת נפש as bechina nodes. This cause/effect node is the full-phrase version of the same healing concept — its essential nature is soul-healing through wisdom. It appears as the EFFECT of Torah-toil in edge 1660.",
+      "ce_edges": [1660]
+    },
+    {
+      "node_id": "נמתק הדין",
+      "node_text": "נִמְתָּק הַדִּין",
+      "assigned_to_package": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה — גַּדְלוּת וּרְפוּאַת הַנֶּפֶשׁ",
+      "polarity": "good",
+      "reason": "The sweetened/mitigated judgment ('the din is sweetened') describes the RESULT of wisdom's action on the din domain. One might consider assigning this to Package 1 (din) since it references דין, but the essential nature of נמתק הדין is the sweetening — the state AFTER wisdom has acted. The Torah says: 'כִּי עַל־יְדֵי יְדִיעַת הַתּוֹרָה, נִמְתָּק הַדִּין' — the sweetened-din is the outcome of Torah-knowledge. Its polarity is good because sweetening transforms the harsh judgment into merciful revelation. Package 2 already contains המתקת הדין של יצחק and the general principle of hamtakah. This node represents the achieved state of that sweetening. It appears as the EFFECT of ידיעת התורה in edge 2092.",
+      "ce_edges": [2092]
+    },
+    {
+      "node_id": "שמתיגע בתורה, עד שזוכה לידע אותה ולהבינה",
+      "node_text": "שֶׁמִּתְיַגֵּעַ בַּתּוֹרָה, עַד שֶׁזּוֹכֶה לֵידַע אוֹתָהּ וְלַהֲבִינָהּ",
+      "assigned_to_package": 2,
+      "package_label": "יַעֲקֹב וְהַחָכְמָה — גַּדְלוּת וּרְפוּאַת הַנֶּפֶשׁ",
+      "polarity": "good",
+      "reason": "Toiling in Torah until one merits to know and understand it is the active practice of the wisdom path. The Torah's expanded version (Natan Sternhartz) states: 'וְזֶה עַל־יְדֵי שֶׁמִּתְיַגֵּעַ בַּתּוֹרָה, עַד שֶׁזּוֹכֶה לֵידַע אוֹתָהּ וְלַהֲבִינָהּ'. This is Torah-study elevated to the level of understanding — the process of attaining ידיעת התורה. Its essential nature is the pursuit of wisdom/Torah-knowledge, squarely in the Package 2 domain. It appears as the CAUSE that produces soul-healing in edge 1660.",
+      "ce_edges": [1660]
+    }
+  ],
+  "new_packages": [],
+  "unassigned_nodes": [],
+  "stats": {
+    "total_ce_edges": 7,
+    "unique_ce_nodes": 10,
+    "already_assigned_ce_nodes": 3,
+    "already_assigned_ce_node_list": [
+      {"node_id": "חכמה", "package": 2},
+      {"node_id": "מחין דגדלות", "package": 2},
+      {"node_id": "המתקת הדין של יצחק", "package": 2}
+    ],
+    "newly_assigned_ce_nodes": 7,
+    "assigned_to_package_1": 0,
+    "assigned_to_package_2": 7,
+    "assigned_to_package_3": 0,
+    "new_packages_created": 0,
+    "unassigned_count": 0,
+    "total_nodes_after_enrichment": {
+      "package_1_original": 22,
+      "package_1_from_additions": 2,
+      "package_1_from_ce": 0,
+      "package_1_total": 24,
+      "package_2_original": 17,
+      "package_2_from_additions": 6,
+      "package_2_from_ce": 7,
+      "package_2_total": 30,
+      "package_3_original": 6,
+      "package_3_from_additions": 1,
+      "package_3_from_ce": 0,
+      "package_3_total": 7,
+      "grand_total": 61
+    },
+    "observation": "All 7 cause/effect edges in Torah #74 flow WITHIN or INTO Package 2 (the wisdom/gadlut/healing domain). This is structurally consistent with the Torah's teaching: the cause/effect dimension (eitza) describes the practical advice — through wisdom/Torah-knowledge, one sweetens the judgment, heals the soul, and reveals God's glory. The causes (חכמה, מחין דגדלות, ידיעת התורה, Torah-toil) and effects (המתקה, נמתק הדין, soul-healing, glory-revealed) all belong to the same positive wisdom domain by their essential nature. No cause/effect nodes belong to Package 1 (din/katnut) or Package 3 (impure judgment) as independent CAUSES — the din is always the OBJECT being acted upon, not the agent in the eitza flow."
+  }
+}
