@@ -8,98 +8,126 @@
   },
   "assignments": [
     {
-      "node_id": "זעה",
-      "node_text": "זעה",
+      "node_id": "שמחה",
+      "node_text": "שמחה",
       "assigned_to_package": 1,
-      "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 1. Assigned to the same package as its causal partner."
-    },
-    {
-      "node_id": "שהחולה תכף כשמזיע",
-      "node_text": "שהחולה תכף כשמזיע",
-      "assigned_to_package": 1,
-      "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 1. Assigned to the same package as its causal partner."
-    },
-    {
-      "node_id": "זעה טובה",
-      "node_text": "זעה טובה",
-      "assigned_to_package": 1,
-      "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 1. Assigned to the same package as its causal partner."
+      "package_label": null,
+      "match_type": "direct",
+      "matched_on": null,
+      "reason": "Node directly exists in package 1."
     },
     {
       "node_id": "שמחה של יום טוב",
       "node_text": "שמחה של יום טוב",
       "assigned_to_package": 1,
-      "match_type": "addition_keyword",
-      "matched_on": "שמחה",
-      "package_label": null,
-      "reason": "Node text contains keyword 'שמחה' which belongs to package 1. The cause/effect relationship places this node in the causal flow connected to that package's thematic domain."
+      "package_label": "שִׂמְחָה וְזֵעָה טוֹבָה",
+      "match_type": "keyword_in_text",
+      "matched_on": "יום טוב",
+      "reason": "Node text contains keyword 'יום טוב' from package 1."
     },
     {
-      "node_id": "שיוצאין עכירת הדמים",
-      "node_text": "שיוצאין עכירת הדמים",
+      "node_id": "דמים זכים",
+      "node_text": "דמים זכים",
       "assigned_to_package": 1,
-      "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 1. Assigned to the same package as its causal partner."
+      "package_label": null,
+      "match_type": "direct",
+      "matched_on": null,
+      "reason": "Node directly exists in package 1."
     },
     {
       "node_id": "יוצא הארס, שיש בהדמים העכורים",
       "node_text": "יוצא הארס, שיש בהדמים העכורים",
       "assigned_to_package": 2,
-      "match_type": "addition_keyword",
+      "package_label": "עַצְבוּת וְטֻמְאַת הַדָּם",
+      "match_type": "keyword_in_text",
       "matched_on": "ארס",
-      "package_label": null,
-      "reason": "Node text contains keyword 'ארס' which belongs to package 2. The cause/effect relationship places this node in the causal flow connected to that package's thematic domain."
+      "reason": "Node text contains keyword 'ארס' from package 2."
     },
     {
       "node_id": "כשהעכירת הדמים הוא במדה בטחול",
       "node_text": "כשהעכירת הדמים הוא במדה בטחול",
       "assigned_to_package": 2,
-      "match_type": "addition_keyword",
+      "package_label": "עַצְבוּת וְטֻמְאַת הַדָּם",
+      "match_type": "keyword_in_text",
       "matched_on": "טחול",
-      "package_label": null,
-      "reason": "Node text contains keyword 'טחול' which belongs to package 2. The cause/effect relationship places this node in the causal flow connected to that package's thematic domain."
+      "reason": "Node text contains keyword 'טחול' from package 2."
     },
     {
       "node_id": "נשארין הדמים זכים",
       "node_text": "נשארין הדמים זכים",
       "assigned_to_package": 1,
-      "match_type": "addition_keyword",
+      "package_label": "שִׂמְחָה וְזֵעָה טוֹבָה",
+      "match_type": "keyword_in_text",
       "matched_on": "דמים זכים",
+      "reason": "Node text contains keyword 'דמים זכים' from package 1."
+    },
+    {
+      "node_id": "זעה",
+      "node_text": "זעה",
+      "assigned_to_package": 1,
       "package_label": null,
-      "reason": "Node text contains keyword 'דמים זכים' which belongs to package 1. The cause/effect relationship places this node in the causal flow connected to that package's thematic domain."
+      "match_type": "edge_partner",
+      "reason": "Connected via cause/effect edge to a node in package 1. Assigned based on causal proximity."
+    },
+    {
+      "node_id": "שהחולה תכף כשמזיע",
+      "node_text": "שהחולה תכף כשמזיע",
+      "assigned_to_package": 1,
+      "package_label": null,
+      "match_type": "edge_partner",
+      "reason": "Connected via cause/effect edge to a node in package 1. Assigned based on causal proximity."
+    },
+    {
+      "node_id": "זעה טובה",
+      "node_text": "זעה טובה",
+      "assigned_to_package": 1,
+      "package_label": "שִׂמְחָה וְזֵעָה טוֹבָה",
+      "match_type": "edge_partner",
+      "reason": "Connected via cause/effect edge to a node in package 1. Assigned based on causal proximity."
+    },
+    {
+      "node_id": "שיוצאין עכירת הדמים",
+      "node_text": "שיוצאין עכירת הדמים",
+      "assigned_to_package": 1,
+      "package_label": null,
+      "match_type": "edge_partner",
+      "reason": "Connected via cause/effect edge to a node in package 1. Assigned based on causal proximity."
+    },
+    {
+      "node_id": "חלשות",
+      "node_text": "חלשות",
+      "assigned_to_package": 1,
+      "package_label": null,
+      "match_type": "edge_partner",
+      "reason": "Connected via cause/effect edge to a node in package 1. Assigned based on causal proximity."
     },
     {
       "node_id": "דם",
       "node_text": "דם",
       "assigned_to_package": 1,
+      "package_label": null,
       "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 1. Assigned to the same package as its causal partner."
+      "reason": "Connected via cause/effect edge to a node in package 1. Assigned based on causal proximity."
     },
     {
       "node_id": "כשמזיעין על ידי דבר שבקדשה",
       "node_text": "כשמזיעין על ידי דבר שבקדשה",
       "assigned_to_package": 1,
+      "package_label": null,
       "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 1. Assigned to the same package as its causal partner."
+      "reason": "Connected via cause/effect edge to a node in package 1. Assigned based on causal proximity."
     }
   ],
   "new_packages": [],
-  "unassigned_nodes": [
-    {
-      "node_id": "חלשות",
-      "node_text": "חלשות",
-      "reason": "No keyword match found in existing packages, and no edge partner is assigned to a known package."
-    }
-  ],
+  "unassigned_nodes": [],
   "stats": {
     "total_cause_effect_edges": 12,
     "total_unique_nodes": 13,
-    "nodes_already_assigned": 2,
-    "nodes_newly_assigned": 10,
+    "nodes_assigned_direct": 6,
+    "nodes_assigned_by_edge": 7,
+    "total_assigned": 13,
     "nodes_in_new_packages": 0,
-    "nodes_unassigned": 1
+    "new_package_count": 0,
+    "nodes_unassigned": 0
   }
 }

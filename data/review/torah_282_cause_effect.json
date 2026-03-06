@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "source": "Torah #282",
+    "type": "cause_effect_enrichment",
+    "generated": "2026-03-06",
+    "edge_types_analyzed": ["eitza", "cause"],
+    "total_edges": 12
+  },
+  "existing_packages": [
+    {
+      "id": 1,
+      "label": "צַדִּיקִים, רוֹעֶה, וּמֹשֶׁה",
+      "label_en": "The Tzaddikim, the Shepherd, and Moses",
+      "polarity": "good",
+      "nodes": ["כל הצדיקים שבדור", "רועה", "משה"]
+    },
+    {
+      "id": 2,
+      "label": "נִגּוּן וּבֵרוּר הַנְּקֻדּוֹת הַטּוֹבוֹת",
+      "label_en": "The Melody and the Extraction of Good Points",
+      "polarity": "good",
+      "nodes": ["מנגן בכלי זמר", "מלקט הרוח טובה מן הרוח נכאה עצבות רוח"]
+    },
+    {
+      "id": 3,
+      "label": "עוֹד שֶׁלִּי וְעוֹד מְעַט וְאֵין רָשָׁע",
+      "label_en": "My 'Still' and 'Yet a Little While and There Is No Wicked'",
+      "polarity": "good",
+      "nodes": ["עוד שלי שאני מוצא בעצמי", "עוד מעט ואין רשע"]
+    }
+  ],
+  "additions_nodes": [
+    {"node": "משכן", "package_id": 1},
+    {"node": "שליח ציבור", "package_id": 1},
+    {"node": "חזן", "package_id": 1},
+    {"node": "נקדה טובה", "package_id": 3},
+    {"node": "שמחה", "package_id": 2},
+    {"node": "כף זכות", "package_id": 3},
+    {"node": "תשובה", "package_id": 3},
+    {"node": "בעל דבר", "package_id": null},
+    {"node": "עצבות", "package_id": null},
+    {"node": "מרה שחורה", "package_id": null}
+  ],
+  "assigned_nodes_summary": {
+    "package_1": ["כל הצדיקים שבדור", "רועה", "משה", "משכן", "שליח ציבור", "חזן"],
+    "package_2": ["מנגן בכלי זמר", "מלקט הרוח טובה מן הרוח נכאה עצבות רוח", "שמחה"],
+    "package_3": ["עוד שלי שאני מוצא בעצמי", "עוד מעט ואין רשע", "נקדה טובה", "כף זכות", "תשובה"],
+    "unassigned_evil": ["בעל דבר", "עצבות", "מרה שחורה"]
+  },
+  "cause_effect_edges": [
+    {
+      "edge_id": 1910,
+      "from": "צריך לדון את כל אדם לכף זכות, ואפלו מי שהוא רשע גמור, צריך לחפש ולמצא בו איזה מעט טוב, שבאותו המעט אינו רשע",
+      "to": "מעלה אותו באמת לכף זכות, ויוכל להשיבו בתשובה",
+      "type": "eitza",
+      "from_package": 3,
+      "to_package": 3,
+      "assignment_reason": "Both cause and effect belong to the domain of Package 3 (the good point / kaf zechut cluster). The cause is the practice of finding good points in others (the essence of 'od me'at ve'ein rasha'), and the effect is the elevation to kaf zechut and teshuvah — both are expressions of the same theological ground: the nekudah tovah that tips the scales. This is an intra-package causal flow showing how the foundation concept of Package 3 operates."
+    },
+    {
+      "edge_id": 484,
+      "from": "צא בו עוד מעט טוב ששם אינו רשע, ואתה דן אותו לכף זכות",
+      "to": "אתה מעלה אותו באמת מכף חובה לכף זכות, עד שישוב בתשובה",
+      "type": "eitza",
+      "from_package": 3,
+      "to_package": 3,
+      "assignment_reason": "Parallel formulation of the same intra-Package-3 flow as edge 1910. Finding the good point (od me'at) and judging favorably (kaf zechut) leads to actual elevation from guilt to merit and teshuvah. All concepts are within the nekudah tovah / kaf zechut domain."
+    },
+    {
+      "edge_id": 808,
+      "from": "שמחפש ומוצא בעצמו עדין מעט טוב",
+      "to": "הוא יוצא באמת מכף חובה לכף זכות ויוכל לשוב בתשובה",
+      "type": "eitza",
+      "from_package": 3,
+      "to_package": 3,
+      "assignment_reason": "Same pattern applied to oneself rather than others. Finding good in oneself (Package 3: nekudah tovah domain) leads to exiting kaf chovah to kaf zechut and teshuvah (also Package 3). The teaching explicitly parallels the two applications (others and self)."
+    },
+    {
+      "edge_id": 1575,
+      "from": "צריך האדם לחפש ולבקש למצא בעצמו איזה מעט טוב",
+      "to": "להחיות את עצמו, ולבוא לידי שמחה",
+      "type": "eitza",
+      "from_package": 3,
+      "to_package": 2,
+      "assignment_reason": "CROSS-PACKAGE FLOW: The cause (finding good in oneself) belongs to Package 3 (the nekudah tovah foundation). The effect (reviving oneself and coming to simchah/joy) belongs to Package 2 (the melody/extraction/joy domain). Simchah is the experiential state that IS the same as the niggun — the positive spirit extracted from the depressed spirit. This edge shows the causal flow from Package 3 to Package 2: finding good points PRODUCES joy/melody."
+    },
+    {
+      "edge_id": 2144,
+      "from": "יחפש וילקט עוד הנקדות טובות",
+      "to": "נעשין נגונים",
+      "type": "eitza",
+      "from_package": 3,
+      "to_package": 2,
+      "assignment_reason": "CROSS-PACKAGE FLOW: Searching and collecting good points (Package 3) PRODUCES nigguns/melodies (Package 2). This is the core cross-package eitza of the teaching: the raw material (nekudot tovot) is transformed into the refined output (nigguns). The teaching explicitly cites LM #54 to establish this causal link."
+    },
+    {
+      "edge_id": 2145,
+      "from": "שאינו מניח להפיל את עצמו ומחיה את עצמו במה שמחפש ומבקש ומוצא בעצמו איזה נקדות טובות ומלקט ומברר אלו הנקדות טובות, מתוך הרע והפסלת שבו וכו כנ\"ל",
+      "to": "נעשין נגונים כנ\"ל, ואזי הוא יכול להתפלל ולזמר ולהודות לה",
+      "type": "eitza",
+      "from_package": 3,
+      "to_package": 2,
+      "assignment_reason": "CROSS-PACKAGE FLOW: The cause combines Package 3 elements (finding good points, extracting from evil/refuse). The effect combines Package 2 elements (nigguns are formed) with the practical outcome of prayer/song. The effect node is compound: nigguns (Package 2) plus prayer ability, which is itself the outcome of Package 2's joy/melody domain."
+    },
+    {
+      "edge_id": 152,
+      "from": "על ידי בחינת העוד שלי שאני מוצא בעצמי בחינת עוד מעט ואין רשע כנ\"ל, על ידי אותה הנקדה",
+      "to": "אוכל לזמר ולהודות לה",
+      "type": "eitza",
+      "from_package": 3,
+      "to_package": 2,
+      "assignment_reason": "CROSS-PACKAGE FLOW: The cause is the quintessential Package 3 concept — the 'od sheli' (my 'still'), the nekudah tovah found within. The effect is the ability to sing and thank God — the domain of Package 2 (niggun/simchah). This edge is the teaching's synthesis verse (Psalms 146:2): 'azamrah l'Elokai be'odi' — I will sing while I still have my 'od'. Package 3's foundation enables Package 2's expression."
+    },
+    {
+      "edge_id": null,
+      "from": "לחפש ולבקש בעצמו בכל פעם איזה מעט טוב ונקדות טובות וכו כנ\"ל. ועל־ידי־זה יחיה וישמח את עצמו, ויצפה לישועה עדין",
+      "to": "יוכל להתפלל ולזמר ולהודות לה",
+      "type": "eitza",
+      "from_package": 3,
+      "to_package": 2,
+      "assignment_reason": "CROSS-PACKAGE FLOW: The cause includes both Package 3 elements (finding good points) and Package 2 elements (reviving and rejoicing). The effect is prayer and song, squarely in Package 2. This is a compound cause node that spans the Package 3 -> Package 2 causal chain."
+    },
+    {
+      "edge_id": 1325,
+      "from": "שאף־על־פי שיודע בעצמו שיש לו מעשים רעים וחטאים הרבה מאד, והוא רחוק מאד מאד מהשם יתברך, אף־על־פי־כן הוא מחפש ומבקש ומוצא בעצמו עדין איזה נקדות טובות כנ\"ל, ומחיה ומשמח את עצמו בזה, כי בודאי ראוי להאדם, להגדיל שמחתו מאד בכל נקדה ונקדה טובה מקדשת ישראל שמוצא בעצמו עדין, ואזי כשמחיה ומשמח את עצמו על־ידי־זה כנ\"ל",
+      "to": "יכול להתפלל ולזמר ולהודות לה",
+      "type": "eitza",
+      "from_package": 3,
+      "to_package": 2,
+      "assignment_reason": "CROSS-PACKAGE FLOW: Extended formulation of the same 3->2 flow. The cause describes the full practice: despite sins (implicit evil domain), finding good points (Package 3) and reviving/rejoicing with them (bridging to Package 2). The effect is prayer and song (Package 2)."
+    },
+    {
+      "edge_id": 1326,
+      "from": "שמי שיכול לעשות אלו הנגונים, דהינו ללקט הנקדות טובות שנמצא בכל אחד מישראל, אפלו בהפושעי ישראל כנ\"ל",
+      "to": "יכול להתפלל לפני העמוד",
+      "type": "eitza",
+      "from_package": 2,
+      "to_package": 1,
+      "assignment_reason": "CROSS-PACKAGE FLOW: The cause is the ability to make nigguns (Package 2) — specifically by collecting good points from all Jews (bridging Package 3). The effect is the ability to serve as shaliach tzibbur / prayer leader (Package 1: tzaddik/shepherd). This edge shows the causal flow from Package 2 to Package 1: the niggun-maker can lead prayer because he gathers all good points and they are included in him — the function of the shepherd/Moses."
+    },
+    {
+      "edge_id": 1619,
+      "from": "מי שיוכל לעשות נגונים הנ\"ל",
+      "to": "לידע כל זאת, דהינו לדעת כל צדיק וצדיק, איזה הם התינוקות השיכים לו, וכמה הם מקבלין ממנו, ולידע כל הבחינות שיש בזה, והדור שיבוא מהם עד הסוף.",
+      "type": "eitza",
+      "from_package": 2,
+      "to_package": 1,
+      "assignment_reason": "CROSS-PACKAGE FLOW: The cause is the ability to make nigguns (Package 2). The effect is knowing the spiritual geography of the generation — which tzaddik has which children, who receives from whom (Package 1: the shepherd/Moses domain, the Mishkan's function). This is the Mishnah quote: 'the chazan sees where the children learn.' The niggun-maker (Package 2) gains the shepherd's knowledge (Package 1)."
+    },
+    {
+      "edge_id": 3241,
+      "from": "לחפש ולבקש בעצמו בכל פעם איזה מעט טוב ונקדות טובות וכו כנ\"ל. ועל־ידי־זה יחיה וישמח את עצמו, ויצפה לישועה עדין, ויוכל להתפלל ולזמר ולהודות לה, בבחינת אזמרה לאלקי בעודי כנ\"ל",
+      "to": "תשובה",
+      "type": "eitza",
+      "from_package": 3,
+      "to_package": 3,
+      "assignment_reason": "The cause is the entire practice chain (spanning Packages 3 and 2): finding good points, rejoicing, praying, singing. The effect is teshuvah — repentance/return to God. Teshuvah belongs to Package 3 as the ultimate fruition of the nekudah tovah theology. The entire practice begins and ends in Package 3: you find the good point (Package 3) -> you rejoice and sing (Package 2) -> you return to God (Package 3 / teshuvah). This is the teaching's closing eitza, forming a circle back to the foundation."
+    }
+  ],
+  "causal_flow_summary": {
+    "description": "Torah #282's causal architecture follows a clear three-stage flow corresponding to its three packages, with a return loop:",
+    "flow": [
+      "Package 3 (Foundation: Finding Good Points) -> Package 2 (Melody/Joy/Prayer)",
+      "Package 2 (Melody/Joy) -> Package 1 (Tzaddik/Shepherd/Shaliach Tzibbur)",
+      "Package 3 (Good Points) -> Package 3 (Teshuvah) [internal causal loop: the practice leads to repentance]"
+    ],
+    "flow_diagram": "Pkg 3: נקדה טובה / כף זכות  -->eitza-->  Pkg 2: נגון / שמחה / תפלה  -->eitza-->  Pkg 1: צדיק / רועה / שליח ציבור\n                |                                                                        |\n                +--- eitza (internal) ---> תשובה (return to God) <----- ultimate outcome ---+",
+    "inter_package_edges": 8,
+    "intra_package_edges": 4,
+    "package_pairs": [
+      {"from": 3, "to": 3, "count": 4, "description": "Finding good points leads to kaf zechut and teshuvah (internal Package 3 flow)"},
+      {"from": 3, "to": 2, "count": 6, "description": "Finding good points produces nigguns, simchah, and the ability to pray"},
+      {"from": 2, "to": 1, "count": 2, "description": "Making nigguns qualifies one to be shaliach tzibbur / chazan who sees where children learn"}
+    ]
+  },
+  "unassigned_cause_effect_nodes": [],
+  "new_package_proposals": [],
+  "notes": "All 12 cause/effect edges in Torah #282 flow between the three existing packages. No new package is needed for cause/effect nodes. The eitza edges confirm the teaching's argument structure: (1) the nekudah tovah (Package 3) is the theological foundation, (2) it produces nigguns and simchah (Package 2), (3) which qualifies the tzaddik to serve as shepherd/prayer leader (Package 1). The evil domain (baal davar, atzvut, marah shechorah) appears only as context in the cause nodes — the force that the practice overcomes — but is not the terminus of any eitza edge. The additions file already proposed these evil nodes for a separate package, which remains relevant but does not interact with the eitza edges."
+}

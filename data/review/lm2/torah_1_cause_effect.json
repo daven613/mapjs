@@ -8,60 +8,102 @@
   },
   "assignments": [
     {
+      "node_id": "תפלה",
+      "node_text": "תפלה",
+      "assigned_to_package": 5,
+      "package_label": null,
+      "match_type": "direct",
+      "matched_on": null,
+      "reason": "Node directly exists in package 5."
+    },
+    {
+      "node_id": "נבואה",
+      "node_text": "נבואה",
+      "assigned_to_package": 5,
+      "package_label": null,
+      "match_type": "direct",
+      "matched_on": null,
+      "reason": "Node directly exists in package 5."
+    },
+    {
       "node_id": "שיוצאין משלש עבודות",
       "node_text": "שיוצאין משלש עבודות",
       "assigned_to_package": 5,
+      "package_label": null,
       "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 5. Assigned to the same package as its causal partner."
+      "reason": "Connected via cause/effect edge to a node in package 5. Assigned based on causal proximity."
     },
     {
       "node_id": "יכול להתרפאות בכל דבר שבעולם",
       "node_text": "יכול להתרפאות בכל דבר שבעולם",
       "assigned_to_package": 5,
+      "package_label": null,
       "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 5. Assigned to the same package as its causal partner."
+      "reason": "Connected via cause/effect edge to a node in package 5. Assigned based on causal proximity."
     },
     {
       "node_id": "כשהוא חוץ משלש עבודות הנ\"ל",
       "node_text": "כשהוא חוץ משלש עבודות הנ\"ל",
       "assigned_to_package": 5,
+      "package_label": null,
       "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 5. Assigned to the same package as its causal partner."
+      "reason": "Connected via cause/effect edge to a node in package 5. Assigned based on causal proximity."
     },
     {
       "node_id": "שיהיה לך רפואה על ידי לחם ומים, על ידי שיתברכו מן שרש הכל, דהינו דבר ה בחינת תפלה, ויהיה ללחם ומים כח לרפאות כמו עשבים.",
       "node_text": "שיהיה לך רפואה על ידי לחם ומים, על ידי שיתברכו מן שרש הכל, דהינו דבר ה בחינת תפלה, ויהיה ללחם ומים כח לרפאות כמו עשבים.",
       "assigned_to_package": 5,
+      "package_label": null,
       "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 5. Assigned to the same package as its causal partner."
+      "reason": "Connected via cause/effect edge to a node in package 5. Assigned based on causal proximity."
     },
     {
       "node_id": "אין צריכין לרפואת העשבים",
       "node_text": "אין צריכין לרפואת העשבים",
       "assigned_to_package": 5,
+      "package_label": null,
       "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 5. Assigned to the same package as its causal partner."
+      "reason": "Connected via cause/effect edge to a node in package 5. Assigned based on causal proximity."
     },
     {
       "node_id": "לתפלה, שהיא בחינת דבר ה",
       "node_text": "לתפלה, שהיא בחינת דבר ה",
       "assigned_to_package": 5,
+      "package_label": null,
       "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 5. Assigned to the same package as its causal partner."
+      "reason": "Connected via cause/effect edge to a node in package 5. Assigned based on causal proximity."
     },
     {
       "node_id": "התפלה בשלמות",
       "node_text": "התפלה בשלמות",
       "assigned_to_package": 5,
+      "package_label": null,
       "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 5. Assigned to the same package as its causal partner."
+      "reason": "Connected via cause/effect edge to a node in package 5. Assigned based on causal proximity."
     },
     {
       "node_id": "נגאלת התפלה מן הגלות",
       "node_text": "נגאלת התפלה מן הגלות",
       "assigned_to_package": 5,
+      "package_label": null,
       "match_type": "edge_partner",
-      "reason": "Node is connected via cause/effect edge to a node already in package 5. Assigned to the same package as its causal partner."
+      "reason": "Connected via cause/effect edge to a node in package 5. Assigned based on causal proximity."
+    },
+    {
+      "node_id": "דבר ה, דהינו תפלה",
+      "node_text": "דבר ה, דהינו תפלה",
+      "assigned_to_package": 5,
+      "package_label": null,
+      "match_type": "edge_partner_2nd_pass",
+      "reason": "Connected via cause/effect edge to a node assigned in first pass to package 5."
+    },
+    {
+      "node_id": "שמקבלין כל הרפואות",
+      "node_text": "שמקבלין כל הרפואות",
+      "assigned_to_package": 5,
+      "package_label": null,
+      "match_type": "edge_partner_2nd_pass",
+      "reason": "Connected via cause/effect edge to a node assigned in first pass to package 5."
     }
   ],
   "new_packages": [
@@ -69,10 +111,10 @@
       "proposed_id": "new_ce_1",
       "nodes": [
         "המלוה הגדול, שהוא בחינת הבעל תפלה, שהוא המלוה הגדול, כי הוא בבחינת השרש העליון, שהוא דבר ה",
-        "יכול להכיר בהמפרסמים שהם רק על ידי עזות, כי אין אדם מעז פנים בפני בעל חובו (בבא מציעא ג), ועל כן עזותם נופל לפני הבעל תפ"
+        "יכול להכיר בהמפרסמים שהם רק על ידי עזות, כי אין אדם מעז פנים בפני בעל חובו (בבא מציעא ג), ועל כן עזותם נופל לפני הבעל תפלה"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -83,7 +125,7 @@
         "בכל רגל משלש רגלים"
       ],
       "node_count": 3,
-      "reason": "3 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "3 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -96,7 +138,7 @@
         "הוא יכול לעשות ראש השנה"
       ],
       "node_count": 5,
-      "reason": "5 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "5 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -106,7 +148,7 @@
         "הוא גם כן בחינת מקומו של עולם"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -116,7 +158,7 @@
         "המשיך לשם קדשתו יתברך"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -127,7 +169,7 @@
         "הוא לבדו יתברך ראוי לדון את העולם"
       ],
       "node_count": 3,
-      "reason": "3 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "3 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -137,7 +179,7 @@
         "אין לנו בושה לבוא לפניו בחטאינו לבקש עליהם כפרה ולהתחרט עליהם"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -147,7 +189,7 @@
         "אין לנו בושה ביום הדין לבקש כפרה"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -157,7 +199,7 @@
         "מרימין פנינו לבקש כפרה מאתו יתברך"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -167,7 +209,7 @@
         "כלם בחינת לווין אצלו"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -177,7 +219,7 @@
         "יכול להכיר המפרסמים שהם על ידי עזות"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -187,7 +229,7 @@
         "אותן העשבים, שיש להם כח לרפאות אותו החולאת, הם מחיבים להחזיר כחם לתוך התפלה, שהיא שרשם, בחינת דבר ה כנ\"ל."
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -197,7 +239,7 @@
         "הם מחזירין כחם לתוך התפלה, שהוא שרשם העליון"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -209,7 +251,7 @@
         "נתרפאין על ידי דבר ה"
       ],
       "node_count": 4,
-      "reason": "4 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "4 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -219,7 +261,7 @@
         "וגם כשנולד ונצמח המחלה, כגון כשאין זוכה להתרפאות מקדם, אזי גם כן יוכל להתרפאות"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -230,7 +272,7 @@
         "יכולין להתרפאות אפילו בעת צמיחת החולאת, בעת שהוא נסתר מעין האדם"
       ],
       "node_count": 3,
-      "reason": "3 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "3 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -240,7 +282,7 @@
         "בכל מתרפאין – אפלו בלחם ומים"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -250,7 +292,7 @@
         "לעבודת התפלה, ואז יכולין להתרפאות בכל דבר שבעולם אפלו בלחם ומים"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
@@ -260,178 +302,168 @@
         "יכולין להמשיך כחות הרפואה לתוך לחם ומים, ויהיה לו רפואה על ידי לחם ומים"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
       "proposed_id": "new_ce_20",
       "nodes": [
-        "דבר ה, דהינו תפלה",
-        "שמקבלין כל הרפואות"
+        "עשבים",
+        "רפואות"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
       "proposed_id": "new_ce_21",
       "nodes": [
-        "עשבים",
-        "רפואות"
+        "וכשנגאלת ונפדית התפלה",
+        "נופל כל הדאקטיריי, כי אין צריכין לרפואות"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
       "proposed_id": "new_ce_22",
       "nodes": [
-        "וכשנגאלת ונפדית התפלה",
-        "נופל כל הדאקטיריי, כי אין צריכין לרפואות"
-      ],
-      "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
-      "needs_review": true
-    },
-    {
-      "proposed_id": "new_ce_23",
-      "nodes": [
         "השפעת הנבואה",
         "אף על פי שאין מי שיתנבא, רק שיש בחינת השפעת הנבואה בעולם, על ידי זה נגאלת ונפדית התפלה"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_24",
+      "proposed_id": "new_ce_23",
       "nodes": [
         "בנין ירושלים, דהינו תקון שלמות היראה שבלב",
         "נברא מלאך, שמשפיע נבואה לכלי הנבואה",
         "נמשכת נבואה, ואפילו קטנים יכולין להתנבאות, בבחינת (יואל ג): \"ונבאו בניכם ובנותיכם\""
       ],
       "node_count": 3,
-      "reason": "3 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "3 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_25",
+      "proposed_id": "new_ce_24",
       "nodes": [
         "סכות",
         "נתתקן תאות אכילה"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_26",
+      "proposed_id": "new_ce_25",
       "nodes": [
         "שבועות",
         "נתתקן תאות משגל"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_27",
+      "proposed_id": "new_ce_26",
       "nodes": [
         "פסח",
         "נתתקן תאות ממון"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_28",
+      "proposed_id": "new_ce_27",
       "nodes": [
         "מצות השלש רגלים",
         "זוכין לתקן השלש מדות"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_29",
+      "proposed_id": "new_ce_28",
       "nodes": [
         "הדעת, שצריכין להמשיך הדעת אל הלב, בבחינת (דברים ד): \"וידעת היום והשבות אל לבבך\"",
         "לתקן שלש מדות אלו"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_30",
+      "proposed_id": "new_ce_29",
       "nodes": [
         "חלב כשרה",
         "לבו חלל בקרבו, ואין מתגבר בו תאוה זו"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_31",
+      "proposed_id": "new_ce_30",
       "nodes": [
         "כשיונק חלב אשה כשרה",
         "לבו חלל בקרבו, ואין לו חמימות, רק מעט המכרח למצוו‍ת הבורא יתברך שמו"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_32",
+      "proposed_id": "new_ce_31",
       "nodes": [
         "בנין ירושלים, שהוא בחינת הלב",
         "להכיר את המפרסמים, איזהו על ידי עזות"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_33",
+      "proposed_id": "new_ce_32",
       "nodes": [
         "כשמקשר עצמו עם המפרסמים",
         "הוא מקשר עם כל פרטי נשמות ישראל"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_34",
+      "proposed_id": "new_ce_33",
       "nodes": [
         "צריך לידע מקור כל הנשמות ומקור חיותם, מהיכן כל נשמה ונשמה מקבלת חיות",
         "לקשר עצמו לשרשי הנשמות של ישראל"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_35",
+      "proposed_id": "new_ce_34",
       "nodes": [
         "לאחז ולהתקשר בשרשי הנשמות, שהם בחינת כסא הכבוד, אם כל חי",
         "יהיה נצול מן קנאת המלאכים"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     },
     {
-      "proposed_id": "new_ce_36",
+      "proposed_id": "new_ce_35",
       "nodes": [
         "לקשר עצמו עם נשמות ישראל",
         "נצול מהם"
       ],
       "node_count": 2,
-      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "reason": "2 cause/effect nodes form a connected causal cluster not matching any existing package. These may represent eitza chains that span across or outside existing bechina-based packages.",
       "needs_review": true
     }
   ],
@@ -439,9 +471,11 @@
   "stats": {
     "total_cause_effect_edges": 55,
     "total_unique_nodes": 91,
-    "nodes_already_assigned": 2,
-    "nodes_newly_assigned": 8,
-    "nodes_in_new_packages": 81,
+    "nodes_assigned_direct": 2,
+    "nodes_assigned_by_edge": 10,
+    "total_assigned": 12,
+    "nodes_in_new_packages": 79,
+    "new_package_count": 35,
     "nodes_unassigned": 0
   }
 }
