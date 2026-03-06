@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "source": "Torah #17 (Likutay Moharan Tinyana Vol.2)",
+    "volume": "lm2",
+    "type": "cause_effect_package_assignment",
+    "generated": "2026-03-06",
+    "based_on": "torah_17_packages.json"
+  },
+  "assignments": [
+    {
+      "node_id": "דעת שלם",
+      "node_text": "דעת שלם",
+      "assigned_to_package": 1,
+      "match_type": "edge_partner",
+      "reason": "Node is connected via cause/effect edge to a node already in package 1. Assigned to the same package as its causal partner."
+    },
+    {
+      "node_id": "מעלין היראות הנפולות",
+      "node_text": "מעלין היראות הנפולות",
+      "assigned_to_package": 1,
+      "match_type": "edge_partner",
+      "reason": "Node is connected via cause/effect edge to a node already in package 1. Assigned to the same package as its causal partner."
+    },
+    {
+      "node_id": "שבת",
+      "node_text": "שבת",
+      "assigned_to_package": 1,
+      "match_type": "package_keyword",
+      "matched_on": "ירא שבת",
+      "package_label": "יִרְאָה וְיָרֵא שַׁבָּת",
+      "reason": "Node text contains keyword 'ירא שבת' which belongs to package 1. The cause/effect relationship places this node in the causal flow connected to that package's thematic domain."
+    },
+    {
+      "node_id": "היראה בשלמות, דהינו עם דעת",
+      "node_text": "היראה בשלמות, דהינו עם דעת",
+      "assigned_to_package": 1,
+      "match_type": "package_keyword",
+      "matched_on": "יראה",
+      "package_label": "יִרְאָה וְיָרֵא שַׁבָּת",
+      "reason": "Node text contains keyword 'יראה' which belongs to package 1. The cause/effect relationship places this node in the causal flow connected to that package's thematic domain."
+    }
+  ],
+  "new_packages": [
+    {
+      "proposed_id": "new_ce_1",
+      "nodes": [
+        "אדם עושה טוב",
+        "מנהיג אותו בהשגחה"
+      ],
+      "node_count": 2,
+      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "needs_review": true
+    },
+    {
+      "proposed_id": "new_ce_2",
+      "nodes": [
+        "חרות",
+        "תענוג והשמחה של שבת",
+        "בשבת על ידי השמחה"
+      ],
+      "node_count": 3,
+      "reason": "3 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "needs_review": true
+    },
+    {
+      "proposed_id": "new_ce_3",
+      "nodes": [
+        "שמחה",
+        "לחרות"
+      ],
+      "node_count": 2,
+      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "needs_review": true
+    },
+    {
+      "proposed_id": "new_ce_4",
+      "nodes": [
+        "וראוי ונכון ללמד ב\"ראשית חכמה\" בשער הנ\"ל, ולשום לבו היטב על כל הדברים הנאמרים שם בענין קדשת ומעלות שבת קדש",
+        "שיתלהב לבו לקבל שבת בשמחה גדולה ועצומה כראוי"
+      ],
+      "node_count": 2,
+      "reason": "2 cause/effect nodes form a connected cluster not matching any existing package. These nodes are linked by eitza/cause edges and may represent a causal sub-structure not captured in the bechina-based packages.",
+      "needs_review": true
+    }
+  ],
+  "unassigned_nodes": [
+    {
+      "node_id": "דעת",
+      "node_text": "דעת",
+      "reason": "No keyword match found in existing packages, and no edge partner is assigned to a known package."
+    },
+    {
+      "node_id": "חרות ואין שעבוד וגלות",
+      "node_text": "חרות ואין שעבוד וגלות",
+      "reason": "No keyword match found in existing packages, and no edge partner is assigned to a known package."
+    }
+  ],
+  "stats": {
+    "total_cause_effect_edges": 13,
+    "total_unique_nodes": 16,
+    "nodes_already_assigned": 1,
+    "nodes_newly_assigned": 4,
+    "nodes_in_new_packages": 9,
+    "nodes_unassigned": 2
+  }
+}
