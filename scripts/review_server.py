@@ -16,6 +16,21 @@ APP = MAPJS / "ontology/registry/review_app.html"
 DEC = MAPJS / "ontology/registry/decisions.json"
 
 
+_CHUNKS = None
+def chunks():
+    global _CHUNKS
+    if _CHUNKS is None:
+        _CHUNKS = {}
+        base = Path.home() / "dev" / "new-sefer" / "graph_poc"
+        for book in ("lm1", "lm2"):
+            data = json.loads((base / book / "reading.json").read_text())
+            for t in data["torahs"]:
+                for sec in t["sections"]:
+                    for sub in sec["subsections"]:
+                        _CHUNKS[(book, sub["key"])] = sub["text"]
+    return _CHUNKS
+
+
 class H(BaseHTTPRequestHandler):
     def log_message(self, *a):
         pass
@@ -31,6 +46,12 @@ class H(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path in ("/", "/index.html"):
             self._send(200, APP.read_bytes(), "text/html; charset=utf-8")
+        elif self.path.startswith("/chunk?"):
+            from urllib.parse import parse_qs, urlparse
+            q = parse_qs(urlparse(self.path).query)
+            txt = chunks().get((q.get("book", [""])[0], q.get("key", [""])[0]))
+            self._send(200 if txt else 404,
+                       json.dumps({"text": txt or ""}, ensure_ascii=False))
         elif self.path == "/decisions":
             self._send(200, DEC.read_text() if DEC.exists() else "{}")
         else:

@@ -50,6 +50,13 @@
   .para .he.hit { background:#fde68a; border-radius:4px; }
   .para .en { color:var(--mut); font-size:0.92em; margin-bottom:7px; }
   .keytag { font-size:11px; color:var(--mut); }
+  .qline { font-size:14px; color:var(--mut); margin:4px 0 8px; }
+  .cgroup { border:1px solid var(--line); border-radius:10px; margin:12px 0; padding:6px 14px 12px; background:#fbfaf7; }
+  .cghead { margin:8px 0 2px; }
+  .cgname { font-size:19px; font-weight:700; margin-inline-start:8px; }
+  .cgg { display:block; font-size:13.5px; color:var(--ink); background:#eef4ff; border-radius:6px; padding:5px 10px; margin:6px 0; }
+  .cgflag { display:inline-block; background:#fef3c7; color:#92400e; border-radius:12px; padding:0 9px; font-size:11.5px; }
+  .loadp { border:1px solid var(--line); background:#fff; border-radius:6px; padding:3px 10px; font-size:12.5px; cursor:pointer; color:var(--acc); }
   footer { position:fixed; bottom:0; left:0; right:0; background:var(--card); border-top:1px solid var(--line);
            padding:10px 22px; display:flex; gap:14px; align-items:center; }
   footer button { padding:8px 16px; border-radius:8px; border:1px solid var(--line); cursor:pointer; background:#fafaf9; }
@@ -93,15 +100,33 @@ function render(){
   const main=document.getElementById('main'); main.innerHTML='';
   for (const card of CARDS.filter(c=>c.section===currentSection)){
     const el=document.createElement('div'); el.className='card';
+    const nCon=card.concepts.length, nMem=card.concepts.reduce((a,c)=>a+c.members.length,0);
     el.innerHTML = `
-      <div class="concept-title heb">${esc(card.canonical_he)}</div>
-      <div class="gloss"><b>Definition:</b> ${esc(card.gloss)}</div>
+      <div class="concept-title heb">${esc(card.title_he)}</div>
+      <div class="qline">THE QUESTION: ${nMem} similar form${nMem>1?'s':''} — proposed split into
+        <b>${nCon} concept${nCon>1?'s':''}</b>. Confirm each form's placement, or mark it wrong.</div>
       <div class="flags">${card.flags.map(f=>`<span>${esc(f)}</span>`).join('')}</div>
       ${card.rec?`<div class="rec"><b>Recommendation</b> (${esc(card.rec.verdict)}, ${esc(card.rec.confidence)} confidence): ${esc(card.rec.reason)}</div>`:''}
       ${card.ruling?`<div class="ruling"><b>Your ruling:</b> ${esc(card.ruling.ruling)}
         ${card.ruling.verifier_disagreement?`<br><b>⚠ Verifier disagrees:</b> ${esc(card.ruling.verifier_disagreement)}`:''}</div>`:''}
       ${card.notes?`<div class="adjnote">adjudicator: ${esc(card.notes)}</div>`:''}`;
-    card.members.forEach((m,idx)=>{
+    let gi=0;
+    for (const con of card.concepts){
+      const g=document.createElement('div'); g.className='cgroup';
+      g.innerHTML=`<div class="cghead"><span class="heb cgname">${esc(con.canonical_he)}</span>
+        <span class="cgg">${esc(con.gloss)}</span>
+        ${con.flags.map(f=>`<span class="cgflag">${esc(f)}</span>`).join('')}</div>`;
+      renderMembers(card, con, g);
+      el.appendChild(g); gi++;
+    }
+    main.appendChild(el);
+  }
+  attachHandlers();
+  paint();
+}
+
+function renderMembers(card, con, el){
+    con.members.forEach((m,idx)=>{
       const k=key(card,m);
       if(!(k in decisions)) decisions[k]=defaultFor(card,m,idx);
       const d=document.createElement('div'); d.className='member';
@@ -116,27 +141,39 @@ function render(){
           </span>
         </div>
         ${m.note?`<div class="mnote">${esc(m.note)}</div>`:''}
-        <details><summary>context — ${m.contexts.length} usage${m.contexts.length===1?'':'s'}</summary>
+        <details><summary>context — ALL ${m.contexts.length} usage${m.contexts.length===1?'':'s'}</summary>
           ${m.contexts.map(ctx=>`
             <div class="ctx">
               <div class="ctxhead"><b>${esc(ctx.where)}</b> · relation: <b>${esc(ctx.type)}</b>
                 · connected to: <span class="heb" style="font-size:1.1em">${esc(ctx.partner||'')}</span></div>
               <div class="proof heb">${esc(ctx.proof)}</div>
-              ${ctx.paras.map(p=>`
-                <div class="para"><div class="keytag">chunk ${esc(p.key)}</div>${paraHtml(p.text, m.form)}</div>`).join('')}
+              ${(ctx.keys||[]).map(k=>`<button class="loadp" data-book="${esc(ctx.book)}" data-key="${esc(k)}" data-form="${escAttr(m.form)}">show full paragraph ${esc(k)}</button>`).join(' ')}
             </div>`).join('')}
         </details>`;
       el.appendChild(d);
     });
-    main.appendChild(el);
-  }
+}
+
+function attachHandlers(){
   document.querySelectorAll('.btns').forEach(b=>{
     b.addEventListener('click',ev=>{
       const v=ev.target.dataset.v; if(!v) return;
       decisions[b.dataset.k]=v; paint(); save();
     });
   });
-  paint();
+  document.querySelectorAll('.loadp').forEach(b=>{
+    b.addEventListener('click', async ()=>{
+      if(b.dataset.done) return;
+      b.textContent='loading…';
+      try{
+        const r=await fetch(`/chunk?book=${b.dataset.book}&key=${b.dataset.key}`);
+        const j=await r.json();
+        const d=document.createElement('div'); d.className='para';
+        d.innerHTML=`<div class="keytag">chunk ${esc(b.dataset.key)}</div>`+paraHtml(j.text,b.dataset.form);
+        b.after(d); b.dataset.done='1'; b.textContent='¶ '+b.dataset.key;
+      }catch(e){ b.textContent='load failed'; }
+    });
+  });
 }
 
 function paraHtml(text, form){
@@ -197,7 +234,8 @@ document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
     if(ls) decisions=JSON.parse(ls);
   }
   for (const card of CARDS)
-    card.members.forEach((m,idx)=>{ const k=key(card,m); if(!(k in decisions)) decisions[k]=defaultFor(card,m,idx); });
+    for (const con of card.concepts)
+      con.members.forEach((m,idx)=>{ const k=key(card,m); if(!(k in decisions)) decisions[k]=defaultFor(card,m,idx); });
   render();
   document.getElementById('savestat').textContent='ready';
 })();
