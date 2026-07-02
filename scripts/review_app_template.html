@@ -22,6 +22,10 @@
   .flags span { display:inline-block; background:#fef3c7; color:#92400e; border-radius:12px;
                 padding:1px 10px; font-size:12px; margin-inline-end:6px; }
   .adjnote { font-size:13px; color:var(--mut); font-style:italic; margin:6px 0; }
+  .rec { font-size:14px; background:#f0fdf4; border-inline-start:4px solid var(--ok);
+         padding:8px 12px; border-radius:6px; margin:8px 0; }
+  .ruling { font-size:14px; background:#fff7ed; border-inline-start:4px solid var(--un);
+            padding:8px 12px; border-radius:6px; margin:8px 0; }
   .member { border-top:1px dashed var(--line); margin-top:12px; padding-top:12px; }
   .mrow { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
   .form { font-weight:600; }
@@ -76,6 +80,7 @@ const lonly = s => (s||'').replace(NIQQUD,'').replace(NONHEB,'');
 const isHeb = s => (s.match(/[א-ת]/g)||[]).length >= (s.trim().length*0.3||1);
 
 function defaultFor(card, m, idx){
+  if (m.recommend==='approve'||m.recommend==='reject') return m.recommend;
   if (idx===0) return 'approve';
   if (m.tier==='obvious') return 'approve';
   if (m.tier==='likely') return 'approve';
@@ -92,6 +97,9 @@ function render(){
       <div class="concept-title heb">${esc(card.canonical_he)}</div>
       <div class="gloss"><b>Definition:</b> ${esc(card.gloss)}</div>
       <div class="flags">${card.flags.map(f=>`<span>${esc(f)}</span>`).join('')}</div>
+      ${card.rec?`<div class="rec"><b>Recommendation</b> (${esc(card.rec.verdict)}, ${esc(card.rec.confidence)} confidence): ${esc(card.rec.reason)}</div>`:''}
+      ${card.ruling?`<div class="ruling"><b>Your ruling:</b> ${esc(card.ruling.ruling)}
+        ${card.ruling.verifier_disagreement?`<br><b>⚠ Verifier disagrees:</b> ${esc(card.ruling.verifier_disagreement)}`:''}</div>`:''}
       ${card.notes?`<div class="adjnote">adjudicator: ${esc(card.notes)}</div>`:''}`;
     card.members.forEach((m,idx)=>{
       const k=key(card,m);

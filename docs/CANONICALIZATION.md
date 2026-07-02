@@ -37,6 +37,18 @@ The hardest cases are not spelling variants — they are **definite vs. generic*
   starts the connection-strength ladder: `equation` > `bechina` > (future) `inferred` —
   common-sense equivalences added by us, always marked as ours, never as the author's.
 
+- **Nothing mechanical goes unchecked** (the מדבר lesson: the same written form meant *medaber*
+  "the speaking being" in LM I:4 and *midbar* "desert" in LM II:72, and a capped-context pass
+  glossed both as one). Two mandatory screens now run before anything reaches review:
+  (a) the **vocalization audit** — the proofs are vocalized, so a form whose occurrences carry
+  different vowel patterns is auto-flagged as a homograph candidate; (b) the **full-context
+  verification pass** — every proposed grouping re-checked by an agent that sees EVERY
+  occurrence with its complete paragraph, producing a recommendation + reason.
+- **Review is recommend-then-confirm.** The AI does the detailed work and presents its
+  recommended answer with the evidence; Shmuel confirms or vetoes. His explicit rulings live in
+  `registry/user_rulings.json` and outrank recommendations; when a verifier disagrees with a
+  ruling, the disagreement is surfaced with its evidence, never silently applied.
+
 ## Rules
 
 1. **Nothing merges automatically.** Every merge is a *proposal* until reviewed. The pipeline
