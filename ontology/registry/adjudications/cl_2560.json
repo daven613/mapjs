@@ -1,0 +1,43 @@
+{
+ "cluster_id": "cl:2560",
+ "concepts": [
+  {
+   "canonical_he": "כל הרפואות",
+   "gloss_en": "all the remedies/cures (the noun concept itself)",
+   "members": [
+    {
+     "form": "כל הרפואות",
+     "tier": "obvious",
+     "note": "the bare noun-phrase concept 'all the remedies'"
+    }
+   ],
+   "flags": []
+  },
+  {
+   "canonical_he": "נפילת כל הרפואות",
+   "gloss_en": "the falling/descent of all the remedies (an event/state predicated of the remedies, not the remedies themselves)",
+   "members": [
+    {
+     "form": "נופלים כל הרפואות",
+     "tier": "obvious",
+     "note": "verbal predication 'all the remedies fall' — an action about the remedies, distinct from the noun per rule 4"
+    }
+   ],
+   "flags": []
+  },
+  {
+   "canonical_he": "קבלת כל הרפואות",
+   "gloss_en": "the receiving of all the remedies (an action of reception, distinct from both the remedies and their falling)",
+   "members": [
+    {
+     "form": "שמקבלין כל הרפואות",
+     "tier": "obvious",
+     "note": "verbal predication 'that all the remedies are received' — a different action from 'falling'; kept separate per rule 4"
+    }
+   ],
+   "flags": []
+  }
+ ],
+ "notes": "Token-overlap on 'כל הרפואות' is misleading. Only one form is the noun concept; the other two are distinct verbal predications (falling vs. receiving) about the remedies. Per rule 4, actions/states about X are not X, and the two actions differ from each other. No merge.",
+ "model": "claude-opus-4-8"
+}

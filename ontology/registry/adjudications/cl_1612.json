@@ -1,0 +1,33 @@
+{
+ "cluster_id": "cl:1612",
+ "concepts": [
+  {
+   "canonical_he": "כשלומד תורה",
+   "gloss_en": "when one studies Torah (generic phrasal reference to the act of Torah study)",
+   "members": [
+    {
+     "form": "כשלומד תורה",
+     "tier": "obvious",
+     "note": "representative; bare phrase in lm1:78 context of burning devotion"
+    }
+   ],
+   "flags": []
+  },
+  {
+   "canonical_he": "כשלומד תורה כנזכר",
+   "gloss_en": "when one studies Torah, as previously mentioned — an anaphoric reference tied to a specific earlier passage in lm1:105",
+   "members": [
+    {
+     "form": "כשלומד תורה כנזכר",
+     "tier": "question",
+     "note": "the appended כנזכר ('as mentioned') points to a specific prior referent within lm1:105; it is a context-bound anaphor in a different Torah, not the same node as the bare generic phrase in lm1:78. Under-merge beats over-merge."
+    }
+   ],
+   "flags": [
+    "local-equation"
+   ]
+  }
+ ],
+ "notes": "Both are ordinary phrasal expressions ('when he studies Torah') appearing once each in different Torahs (78 vs 105). Token overlap is real but the 'כנזכר' variant is an anaphoric pointer to a specific antecedent in its own Torah, so identity of referent across the two cannot be established. Kept separate per the do-not-over-merge rule.",
+ "model": "claude-opus-4-8"
+}

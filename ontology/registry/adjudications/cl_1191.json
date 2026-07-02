@@ -1,0 +1,31 @@
+{
+ "cluster_id": "cl:1191",
+ "concepts": [
+  {
+   "canonical_he": "כלליות הגונין",
+   "gloss_en": "the totality/generality of the colors (the unified inclusion of all hues)",
+   "members": [
+    {
+     "form": "כלליות הגונין",
+     "tier": "obvious",
+     "note": "representative; the concept itself"
+    }
+   ],
+   "flags": []
+  },
+  {
+   "canonical_he": "יתגלה כלליות הגונין",
+   "gloss_en": "the revelation/manifesting of the totality of colors (a verbal phrase — an action/event about the concept, not the concept itself)",
+   "members": [
+    {
+     "form": "יתגלה כלליות הגונין",
+     "tier": "obvious",
+     "note": "representative; contains the verb יתגלה ('will be revealed') — a state/action ABOUT כלליות הגונין, so per rule 4 kept as a distinct node rather than merged into the bare concept"
+    }
+   ],
+   "flags": []
+  }
+ ],
+ "notes": "Token overlap is real but the second form embeds a verb (יתגלה, 'will be revealed'). By rule 4 an action/state about X is not X, so the phrase is kept separate from the bare concept כלליות הגונין. Both cite lm1:47 in the same discussion; a human may wish to treat יתגלה כלליות הגונין as a mechanical over-capture (verb + concept) rather than a standalone concept, but under-merge is the safer default.",
+ "model": "claude-opus-4-8"
+}
