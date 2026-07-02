@@ -21,6 +21,22 @@ The hardest cases are not spelling variants — they are **definite vs. generic*
 **Context is king.** No merge may be decided from the surface strings alone — the decider
 (human or AI) must see the proof quotes and, when needed, the surrounding chunk text.
 
+## Rulings (Shmuel, 2026-07-02 review session)
+
+- **צדיק vs הצדיק: two concepts.** `tzaddik` (generic righteous person) and `ha-tzaddik`
+  (the singular archetype). Same policy for other archetype pairs (החכם etc.).
+- **Homographs (שנה sleep vs שנה year): letter-identity is NOT concept-identity.** Concept IDs
+  are semantic English slugs (`c:sleep`, `c:year`), never Hebrew strings; the English
+  definition is the identity anchor. One Hebrew form may map to several concepts, and each
+  occurrence is assigned to a concept by context. Typographic merging only unifies spellings
+  of a *form*; sense assignment is a separate, context-driven step.
+- **Explicit equations ("שהוא" / "which is") are a third, stronger relation level.** When the
+  Rebbe literally equates X and Y, do NOT merge the registry entries. Record an `equation`
+  edge — stronger than bechina — which the traversal engine costs at ~zero, so X and Y behave
+  as one thing in every query while remaining distinct, reversible, and provenanced. This
+  starts the connection-strength ladder: `equation` > `bechina` > (future) `inferred` —
+  common-sense equivalences added by us, always marked as ours, never as the author's.
+
 ## Rules
 
 1. **Nothing merges automatically.** Every merge is a *proposal* until reviewed. The pipeline

@@ -120,7 +120,7 @@ Edge strength = product of factors:
 | Factor | Values (initial guesses — tune against gold data, §5) |
 |---|---|
 | Explicitness | explicit statement 1.0 · inferred 0.6 |
-| Relation type | bechina 1.0 · eitza 1.0 (same base; they answer different queries) |
+| Relation type | equation ~1.0 (traversal cost ≈ 0 — "which is", literal identity statements) · bechina 1.0 · eitza 1.0 (same base; different queries) · inferred-by-us (our common-sense equivalences) lower, marked as ours |
 | Locality of use *in a query path* | same chunk 1.0 · same Torah 0.8 · cross-Torah bridge 0.5 |
 | Multiplicity | stated once 1.0 · restated in k places 1−(1−s)ᵏ (repetition strengthens) |
 

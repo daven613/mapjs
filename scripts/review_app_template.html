@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Merge Review — Phase 1 Canonicalization</title>
+<style>
+  :root { --bg:#f7f5f0; --card:#fff; --ink:#1c1917; --mut:#78716c; --line:#e7e2d9;
+          --ok:#15803d; --no:#b91c1c; --un:#a16207; --acc:#1d4ed8; }
+  body { margin:0; font:15px/1.55 system-ui,-apple-system,sans-serif; background:var(--bg); color:var(--ink); }
+  header { position:sticky; top:0; background:var(--card); border-bottom:1px solid var(--line);
+           padding:10px 22px; display:flex; gap:18px; align-items:center; z-index:5; flex-wrap:wrap; }
+  header h1 { font-size:16px; margin:0 12px 0 0; }
+  .tab { padding:6px 14px; border-radius:20px; border:1px solid var(--line); cursor:pointer; background:none; font-size:14px; }
+  .tab.active { background:var(--acc); color:#fff; border-color:var(--acc); }
+  #savestat { margin-left:auto; font-size:13px; color:var(--mut); }
+  main { max-width:980px; margin:20px auto 120px; padding:0 16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; margin:16px 0; padding:18px 20px; }
+  .heb { direction:rtl; text-align:right; font-size:1.25em; font-family:'SBL Hebrew','Ezra SIL','Taamey Frank CLM',serif; }
+  .concept-title { font-size:24px; font-weight:700; }
+  .gloss { font-size:15px; color:var(--ink); background:#eef4ff; border-inline-start:4px solid var(--acc);
+           padding:8px 12px; border-radius:6px; margin:8px 0; }
+  .flags span { display:inline-block; background:#fef3c7; color:#92400e; border-radius:12px;
+                padding:1px 10px; font-size:12px; margin-inline-end:6px; }
+  .adjnote { font-size:13px; color:var(--mut); font-style:italic; margin:6px 0; }
+  .member { border-top:1px dashed var(--line); margin-top:12px; padding-top:12px; }
+  .mrow { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .form { font-weight:600; }
+  .tier { font-size:12px; border-radius:10px; padding:1px 9px; }
+  .tier.obvious { background:#dcfce7; color:var(--ok); }
+  .tier.likely { background:#fef9c3; color:var(--un); }
+  .tier.question { background:#fee2e2; color:var(--no); }
+  .btns { margin-inline-start:auto; display:flex; gap:6px; }
+  .btns button { border:1px solid var(--line); background:#fafaf9; border-radius:8px; padding:5px 12px; cursor:pointer; font-size:13px; }
+  .btns button.sel-approve { background:var(--ok); color:#fff; border-color:var(--ok); }
+  .btns button.sel-reject { background:var(--no); color:#fff; border-color:var(--no); }
+  .btns button.sel-unsure { background:var(--un); color:#fff; border-color:var(--un); }
+  .mnote { font-size:13px; color:var(--mut); margin:4px 0; }
+  details { margin:8px 0 0; }
+  summary { cursor:pointer; color:var(--acc); font-size:13px; }
+  .ctx { border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin:8px 0; background:#fdfcfa; }
+  .ctxhead { font-size:12px; color:var(--mut); margin-bottom:6px; }
+  .ctxhead b { color:var(--ink); }
+  .proof { background:#fffbeb; border-radius:6px; padding:6px 10px; margin:6px 0; }
+  .para { max-height:340px; overflow-y:auto; border-top:1px dotted var(--line); margin-top:8px; padding-top:8px; }
+  .para .he { direction:rtl; text-align:right; font-size:1.15em; font-family:serif; }
+  .para .he.hit { background:#fde68a; border-radius:4px; }
+  .para .en { color:var(--mut); font-size:0.92em; margin-bottom:7px; }
+  .keytag { font-size:11px; color:var(--mut); }
+  footer { position:fixed; bottom:0; left:0; right:0; background:var(--card); border-top:1px solid var(--line);
+           padding:10px 22px; display:flex; gap:14px; align-items:center; }
+  footer button { padding:8px 16px; border-radius:8px; border:1px solid var(--line); cursor:pointer; background:#fafaf9; }
+  #progress { font-size:13px; color:var(--mut); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Merge Review</h1>
+  <button class="tab active" data-s="1">Questions</button>
+  <button class="tab" data-s="2">Likely</button>
+  <button class="tab" data-s="3">Typography</button>
+  <span id="savestat">…</span>
+</header>
+<main id="main"></main>
+<footer>
+  <span id="progress"></span>
+  <button onclick="download()">Download decisions.json (backup)</button>
+</footer>
+<script>
+const CARDS = /*__DATA__*/;
+let decisions = {};          // key: cardId + '::' + form  ->  approve|reject|unsure
+let currentSection = 1;
+
+const NIQQUD = /[֑-ׇ]/g;
+const NONHEB = /[^א-ת]/g;
+const lonly = s => (s||'').replace(NIQQUD,'').replace(NONHEB,'');
+const isHeb = s => (s.match(/[א-ת]/g)||[]).length >= (s.trim().length*0.3||1);
+
+function defaultFor(card, m, idx){
+  if (idx===0) return 'approve';
+  if (m.tier==='obvious') return 'approve';
+  if (m.tier==='likely') return 'approve';
+  return 'unsure';
+}
+
+function key(card,m){ return card.id+'::'+m.form; }
+
+function render(){
+  const main=document.getElementById('main'); main.innerHTML='';
+  for (const card of CARDS.filter(c=>c.section===currentSection)){
+    const el=document.createElement('div'); el.className='card';
+    el.innerHTML = `
+      <div class="concept-title heb">${esc(card.canonical_he)}</div>
+      <div class="gloss"><b>Definition:</b> ${esc(card.gloss)}</div>
+      <div class="flags">${card.flags.map(f=>`<span>${esc(f)}</span>`).join('')}</div>
+      ${card.notes?`<div class="adjnote">adjudicator: ${esc(card.notes)}</div>`:''}`;
+    card.members.forEach((m,idx)=>{
+      const k=key(card,m);
+      if(!(k in decisions)) decisions[k]=defaultFor(card,m,idx);
+      const d=document.createElement('div'); d.className='member';
+      d.innerHTML=`
+        <div class="mrow">
+          <span class="form heb">${esc(m.form)}</span>
+          <span class="tier ${m.tier}">${m.tier}</span>
+          <span class="btns" data-k="${escAttr(k)}">
+            <button data-v="approve">✓ same concept</button>
+            <button data-v="reject">✗ separate</button>
+            <button data-v="unsure">? unsure</button>
+          </span>
+        </div>
+        ${m.note?`<div class="mnote">${esc(m.note)}</div>`:''}
+        <details><summary>context — ${m.contexts.length} usage${m.contexts.length===1?'':'s'}</summary>
+          ${m.contexts.map(ctx=>`
+            <div class="ctx">
+              <div class="ctxhead"><b>${esc(ctx.where)}</b> · relation: <b>${esc(ctx.type)}</b>
+                · connected to: <span class="heb" style="font-size:1.1em">${esc(ctx.partner||'')}</span></div>
+              <div class="proof heb">${esc(ctx.proof)}</div>
+              ${ctx.paras.map(p=>`
+                <div class="para"><div class="keytag">chunk ${esc(p.key)}</div>${paraHtml(p.text, m.form)}</div>`).join('')}
+            </div>`).join('')}
+        </details>`;
+      el.appendChild(d);
+    });
+    main.appendChild(el);
+  }
+  document.querySelectorAll('.btns').forEach(b=>{
+    b.addEventListener('click',ev=>{
+      const v=ev.target.dataset.v; if(!v) return;
+      decisions[b.dataset.k]=v; paint(); save();
+    });
+  });
+  paint();
+}
+
+function paraHtml(text, form){
+  const target=lonly(form);
+  return text.split('\n').map(line=>{
+    if(!line.trim()) return '';
+    if(isHeb(line)){
+      const hit = target && lonly(line).includes(target) ? ' hit':'';
+      return `<div class="he${hit}">${esc(line)}</div>`;
+    }
+    return `<div class="en">${esc(line)}</div>`;
+  }).join('');
+}
+
+function paint(){
+  document.querySelectorAll('.btns').forEach(b=>{
+    const v=decisions[b.dataset.k];
+    b.querySelectorAll('button').forEach(x=>{
+      x.className = (x.dataset.v===v) ? 'sel-'+v : '';
+    });
+  });
+  const all=Object.values(decisions);
+  document.getElementById('progress').textContent =
+    `${all.filter(v=>v!=='unsure').length}/${all.length} decided · ${all.filter(v=>v==='unsure').length} unsure`;
+}
+
+let saveTimer=null;
+function save(){
+  clearTimeout(saveTimer);
+  saveTimer=setTimeout(async ()=>{
+    localStorage.setItem('merge_decisions', JSON.stringify(decisions));
+    try{
+      const r=await fetch('/save',{method:'POST',headers:{'content-type':'application/json'},
+        body:JSON.stringify(decisions)});
+      document.getElementById('savestat').textContent = r.ok? 'saved ✓' : 'save failed — use Download';
+    }catch(e){ document.getElementById('savestat').textContent='no server — use Download'; }
+  },400);
+}
+function download(){
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(decisions,null,1)],{type:'application/json'}));
+  a.download='decisions.json'; a.click();
+}
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const escAttr=s=>esc(s).replace(/'/g,'&#39;');
+
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active'); currentSection=+t.dataset.s; render();
+}));
+
+(async function init(){
+  try{
+    const r=await fetch('/decisions');
+    if(r.ok){ const j=await r.json(); if(j && Object.keys(j).length) decisions=j; }
+  }catch(e){
+    const ls=localStorage.getItem('merge_decisions');
+    if(ls) decisions=JSON.parse(ls);
+  }
+  for (const card of CARDS)
+    card.members.forEach((m,idx)=>{ const k=key(card,m); if(!(k in decisions)) decisions[k]=defaultFor(card,m,idx); });
+  render();
+  document.getElementById('savestat').textContent='ready';
+})();
+</script>
+</body>
+</html>
