@@ -1,7 +1,7 @@
 {
-  "_comment": "Hand-reviewed anchors for occurrences whose proof text is not in any torah body. These four quote the hakdama (introduction) of Likutey Moharan — the passage praising Rabbi Shimon bar Yochai ('הבטיח שלא תשתכח תורה מישראל', 'עיר וקדיש מן שמיא נחית') — which is not part of the reading.json torah layer. Verified absent from all torah bodies 2026-07-02.",
-  "occ:legacy:596":  {"book": "lm1", "torah": null, "chunks": null, "locus": "hakdama"},
-  "occ:legacy:1076": {"book": "lm1", "torah": null, "chunks": null, "locus": "hakdama"},
-  "occ:legacy:1077": {"book": "lm1", "torah": null, "chunks": null, "locus": "hakdama"},
-  "occ:legacy:2386": {"book": "lm1", "torah": null, "chunks": null, "locus": "hakdama"}
+  "_comment": "Hand-reviewed anchors. Torah 0 = the hakdama (introduction) of Likutey Moharan — per Shmuel it is a teaching like the others (his legacy reference 0 meant exactly this) and is treated as lm1 torah 0. Its text is not yet in new-sefer reading.json (torahs start at 1), so no chunk keys yet — add them when the hakdama text is ingested. The four records below quote its Rabbi Shimon bar Yochai passage; verified absent from all torah bodies 2026-07-02.",
+  "occ:legacy:596":  {"book": "lm1", "torah": 0, "chunks": null, "locus": "hakdama"},
+  "occ:legacy:1076": {"book": "lm1", "torah": 0, "chunks": null, "locus": "hakdama"},
+  "occ:legacy:1077": {"book": "lm1", "torah": 0, "chunks": null, "locus": "hakdama"},
+  "occ:legacy:2386": {"book": "lm1", "torah": 0, "chunks": null, "locus": "hakdama"}
 }
