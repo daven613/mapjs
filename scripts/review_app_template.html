@@ -103,8 +103,9 @@ function render(){
     const nCon=card.concepts.length, nMem=card.concepts.reduce((a,c)=>a+c.members.length,0);
     el.innerHTML = `
       <div class="concept-title heb">${esc(card.title_he)}</div>
-      <div class="qline">THE QUESTION: ${nMem} similar form${nMem>1?'s':''} — proposed split into
-        <b>${nCon} concept${nCon>1?'s':''}</b>. Confirm each form's placement, or mark it wrong.</div>
+      <div class="qline">THE QUESTION: ${nMem} similar form${nMem>1?'s':''}, grouped into
+        <b>${nCon} concept box${nCon>1?'es':''}</b> below. Forms in the SAME box = one concept;
+        different boxes = kept separate. ✓ = this form is in the right box.</div>
       <div class="flags">${card.flags.map(f=>`<span>${esc(f)}</span>`).join('')}</div>
       ${card.rec?`<div class="rec"><b>Recommendation</b> (${esc(card.rec.verdict)}, ${esc(card.rec.confidence)} confidence): ${esc(card.rec.reason)}</div>`:''}
       ${card.ruling?`<div class="ruling"><b>Your ruling:</b> ${esc(card.ruling.ruling)}
@@ -135,8 +136,8 @@ function renderMembers(card, con, el){
           <span class="form heb">${esc(m.form)}</span>
           <span class="tier ${m.tier}">${m.tier}</span>
           <span class="btns" data-k="${escAttr(k)}">
-            <button data-v="approve">✓ same concept</button>
-            <button data-v="reject">✗ separate</button>
+            <button data-v="approve">✓ right box</button>
+            <button data-v="reject">✗ wrong box</button>
             <button data-v="unsure">? unsure</button>
           </span>
         </div>
