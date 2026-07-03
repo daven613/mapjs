@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Torah Map — Concept Explorer</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel2:#1c2230; --line:#2a3240;
+    --ink:#e6edf3; --dim:#8b98a9; --faint:#5b6673;
+    --bechina:#5aa9ff;   /* aspect-of */
+    --eitza:#3fd08a;     /* advice */
+    --equation:#f0b429;  /* explicit equation */
+    --accent:#c9a4ff;
+    --hebrew:"Frank Ruhl Libre","David Libre","Times New Roman",serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;overflow:hidden}
+  #app{display:grid;grid-template-columns:290px 1fr 380px;height:100vh}
+  @media(max-width:1100px){#app{grid-template-columns:0 1fr 340px}}
+  /* left rail */
+  #rail{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+  .brand{padding:16px 18px 10px}
+  .brand h1{font-size:15px;margin:0;letter-spacing:.02em}
+  .brand p{margin:3px 0 0;font-size:11.5px;color:var(--dim)}
+  .search{padding:10px 14px}
+  .search input{width:100%;background:var(--panel2);border:1px solid var(--line);color:var(--ink);
+    padding:9px 11px;border-radius:9px;font-size:13px;outline:none}
+  .search input:focus{border-color:var(--accent)}
+  .listwrap{overflow:auto;flex:1;padding:4px 8px 16px}
+  .sec{font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--faint);
+    padding:12px 10px 6px}
+  .item{padding:7px 10px;border-radius:8px;cursor:pointer;display:flex;gap:8px;align-items:baseline}
+  .item:hover{background:var(--panel2)}
+  .item .he{font-family:var(--hebrew);font-size:15px;direction:rtl}
+  .item .en{font-size:11.5px;color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .item .dg{margin-left:auto;font-size:10px;color:var(--faint);flex:none}
+  /* canvas */
+  #stage{position:relative;background:radial-gradient(1200px 800px at 50% 40%,#11172100,#0a0e14)}
+  canvas{display:block;width:100%;height:100%}
+  #legend{position:absolute;left:14px;bottom:12px;display:flex;gap:14px;font-size:11.5px;
+    background:#0d1117cc;border:1px solid var(--line);padding:7px 11px;border-radius:10px;backdrop-filter:blur(4px)}
+  #legend span{display:flex;align-items:center;gap:6px;color:var(--dim)}
+  #legend i{width:11px;height:3px;border-radius:2px;display:inline-block}
+  #crumbs{position:absolute;left:14px;top:12px;display:flex;gap:6px;flex-wrap:wrap;max-width:70%}
+  .crumb{background:#0d1117cc;border:1px solid var(--line);padding:4px 9px;border-radius:20px;
+    font-size:11.5px;cursor:pointer;color:var(--dim)}
+  .crumb:hover{color:var(--ink);border-color:var(--accent)}
+  #hint{position:absolute;right:14px;top:12px;font-size:11px;color:var(--faint)}
+  #tip{position:absolute;pointer-events:none;background:#0d1117f2;border:1px solid var(--line);
+    padding:6px 9px;border-radius:8px;font-size:12px;max-width:280px;display:none;z-index:5}
+  #tip .he{font-family:var(--hebrew);font-size:15px;direction:rtl}
+  #tip .en{color:var(--dim);font-size:11.5px;margin-top:2px}
+  /* detail */
+  #detail{background:var(--panel);border-left:1px solid var(--line);overflow:auto;padding:0}
+  .dhead{padding:20px 20px 14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:2}
+  .dhead .he{font-family:var(--hebrew);font-size:30px;direction:rtl;line-height:1.15}
+  .dhead .id{font-size:11px;color:var(--faint);margin-top:6px;font-family:ui-monospace,monospace}
+  .dhead .gloss{font-size:14px;color:var(--ink);margin-top:10px;line-height:1.5}
+  .dhead .meta{font-size:11.5px;color:var(--dim);margin-top:8px}
+  .grp{padding:14px 18px 4px}
+  .grp h3{font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px;display:flex;align-items:center;gap:7px}
+  .grp h3 i{width:9px;height:9px;border-radius:50%}
+  .conn{padding:9px 11px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px;cursor:pointer;background:var(--panel2)}
+  .conn:hover{border-color:var(--accent)}
+  .conn .row{display:flex;gap:8px;align-items:baseline}
+  .conn .he{font-family:var(--hebrew);font-size:16px;direction:rtl}
+  .conn .en{font-size:12px;color:var(--dim)}
+  .conn .w{margin-left:auto;font-size:10px;color:var(--faint);flex:none}
+  .conn .proof{font-family:var(--hebrew);font-size:13px;direction:rtl;color:var(--dim);
+    margin-top:6px;line-height:1.55;border-top:1px dashed var(--line);padding-top:6px;display:none}
+  .conn.open .proof{display:block}
+  .empty{color:var(--faint);font-size:12.5px;padding:8px 4px}
+  .arrowlbl{font-size:10px;color:var(--faint)}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="rail">
+    <div class="brand"><h1>Torah Map</h1><p>Likutey Moharan — concept graph</p></div>
+    <div class="search"><input id="q" placeholder="Search concept or gloss…" autocomplete="off"></div>
+    <div class="listwrap" id="list"></div>
+  </div>
+  <div id="stage">
+    <canvas id="c"></canvas>
+    <div id="crumbs"></div>
+    <div id="hint">click a node to travel · scroll list to browse</div>
+    <div id="legend">
+      <span><i style="background:var(--bechina)"></i>bechina (aspect-of)</span>
+      <span><i style="background:var(--eitza)"></i>eitza (advice)</span>
+      <span><i style="background:var(--equation)"></i>equation</span>
+    </div>
+    <div id="tip"></div>
+  </div>
+  <div id="detail"></div>
+</div>
+<script>
+const TYCOL={bechina:'#5aa9ff',eitza:'#3fd08a',equation:'#f0b429'};
+let NODES=[],EDGES=[],byId={},adj={},focus=null,hist=[];
+const cv=document.getElementById('c'),ctx=cv.getContext('2d'),tip=document.getElementById('tip');
+let sim={},anim=null,hover=null;
+
+fetch('./explorer_data.json').then(r=>r.json()).then(d=>{
+  NODES=d.nodes; EDGES=d.edges;
+  NODES.forEach(n=>byId[n.id]=n);
+  NODES.forEach(n=>adj[n.id]=[]);
+  EDGES.forEach((e,i)=>{ if(adj[e.s])adj[e.s].push({e,dir:'out',other:e.t});
+                          if(adj[e.t])adj[e.t].push({e,dir:'in',other:e.s}); });
+  buildList(topHubs());
+  const start=NODES.slice().sort((a,b)=>b.deg-a.deg)[0];
+  go(start.id);
+});
+
+function topHubs(){return NODES.filter(n=>n.kind!=='statement').slice().sort((a,b)=>b.deg-a.deg).slice(0,60);}
+function buildList(items,label){
+  const L=document.getElementById('list');
+  L.innerHTML=`<div class="sec">${label||'Most connected'}</div>`;
+  items.forEach(n=>{
+    const el=document.createElement('div');el.className='item';
+    el.innerHTML=`<span class="he">${n.he||''}</span><span class="en">${n.gloss||''}</span><span class="dg">${n.deg}</span>`;
+    el.onclick=()=>go(n.id); L.appendChild(el);
+  });
+}
+document.getElementById('q').addEventListener('input',e=>{
+  const t=e.target.value.trim().toLowerCase();
+  if(!t){buildList(topHubs());return;}
+  const r=NODES.filter(n=>(n.he&&n.he.includes(t))||(n.gloss&&n.gloss.toLowerCase().includes(t))||n.id.includes(t))
+    .sort((a,b)=>b.deg-a.deg).slice(0,80);
+  buildList(r,`${r.length} matches`);
+});
+
+function neighbors(id){
+  const seen={},out=[];
+  (adj[id]||[]).forEach(a=>{ if(!seen[a.other]){seen[a.other]=1;out.push(a);} });
+  return out.sort((a,b)=>(byId[b.other]?.deg||0)-(byId[a.other]?.deg||0)).slice(0,34);
+}
+function go(id){
+  if(!byId[id])return;
+  if(focus&&focus!==id){hist.push(focus);if(hist.length>12)hist.shift();}
+  focus=id; layout(); drawDetail(); drawCrumbs();
+  const li=[...document.querySelectorAll('.item')];
+}
+function drawCrumbs(){
+  const c=document.getElementById('crumbs');c.innerHTML='';
+  hist.slice(-6).forEach(h=>{const b=document.createElement('div');b.className='crumb';
+    b.textContent=byId[h].he||h; b.onclick=()=>{focus=h;hist=hist.slice(0,hist.indexOf(h));layout();drawDetail();drawCrumbs();};c.appendChild(b);});
+  if(focus){const b=document.createElement('div');b.className='crumb';b.style.color='var(--ink)';
+    b.style.borderColor='var(--accent)';b.textContent=byId[focus].he||focus;c.appendChild(b);}
+}
+
+// ---- layout + render -------------------------------------------------------
+function resize(){const s=document.getElementById('stage');cv.width=s.clientWidth*devicePixelRatio;
+  cv.height=s.clientHeight*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);}
+addEventListener('resize',()=>{resize();layout();});
+function layout(){
+  resize();
+  const W=cv.width/devicePixelRatio,H=cv.height/devicePixelRatio,cx=W/2,cy=H/2;
+  const nb=neighbors(focus);
+  sim={};
+  sim[focus]={x:cx,y:cy,n:byId[focus],r:16,fixed:true};
+  const R=Math.min(W,H)*0.36;
+  nb.forEach((a,i)=>{const ang=(i/nb.length)*Math.PI*2 - Math.PI/2;
+    const nn=byId[a.other];
+    sim[a.other]={x:cx+Math.cos(ang)*R*(0.72+0.5*Math.random()),
+                  y:cy+Math.sin(ang)*R*(0.72+0.5*Math.random()),
+                  n:nn,r:6+Math.min(9,Math.sqrt(nn?.deg||1)*1.4),a};
+  });
+  let iter=0;
+  cancelAnimationFrame(anim);
+  (function step(){
+    // light force relaxation
+    const keys=Object.keys(sim);
+    for(let i=0;i<keys.length;i++)for(let j=i+1;j<keys.length;j++){
+      const A=sim[keys[i]],B=sim[keys[j]];let dx=B.x-A.x,dy=B.y-A.y,d=Math.hypot(dx,dy)||1;
+      if(d<70){const f=(70-d)/d*0.5;dx*=f;dy*=f;if(!B.fixed){B.x+=dx;B.y+=dy;}if(!A.fixed){A.x-=dx;A.y-=dy;}}
+    }
+    render(nb);
+    if(iter++<60)anim=requestAnimationFrame(step);
+  })();
+}
+function render(nb){
+  const W=cv.width/devicePixelRatio,H=cv.height/devicePixelRatio;
+  ctx.clearRect(0,0,W,H);
+  // edges
+  nb.forEach(a=>{const A=sim[focus],B=sim[a.other];if(!B)return;
+    ctx.strokeStyle=TYCOL[a.e.ty]||'#666';ctx.globalAlpha=hover&&hover!==a.other&&hover!==focus?0.15:0.55;
+    ctx.lineWidth=Math.min(5,1+Math.log2(a.e.w+1));
+    ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.stroke();
+    // direction chevron
+    const dir=a.dir==='out'?1:-1,mx=(A.x+B.x)/2,my=(A.y+B.y)/2;
+    ctx.globalAlpha=0.8;
+  });
+  ctx.globalAlpha=1;
+  // nodes
+  Object.values(sim).forEach(s=>{
+    const isF=s.n.id===focus,hl=hover===s.n.id;
+    ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,7);
+    ctx.fillStyle=isF?'#c9a4ff':(s.n.kind==='statement'?'#39424f':'#2b6cb0');
+    if(s.a)ctx.fillStyle=isF?'#c9a4ff':shade(TYCOL[s.a.e.ty]);
+    ctx.fill();
+    if(isF||hl){ctx.lineWidth=2;ctx.strokeStyle='#fff';ctx.stroke();}
+    // label (Hebrew)
+    ctx.fillStyle=isF?'#fff':'#c7d2de';ctx.textAlign='center';
+    ctx.font=(isF?'600 ':'')+(isF?18:13)+'px "Frank Ruhl Libre",serif';
+    const lbl=(s.n.he||'').slice(0,14);
+    ctx.fillText(lbl,s.x,s.y-s.r-6);
+  });
+}
+function shade(hex){return hex;}
+
+// interaction
+cv.addEventListener('mousemove',ev=>{
+  const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
+  let hit=null;Object.values(sim).forEach(s=>{if(Math.hypot(s.x-mx,s.y-my)<s.r+4)hit=s;});
+  hover=hit?hit.n.id:null;
+  if(hit){tip.style.display='block';tip.style.left=Math.min(mx+14,r.width-290)+'px';tip.style.top=(my+14)+'px';
+    tip.innerHTML=`<div class="he">${hit.n.he||''}</div><div class="en">${hit.n.gloss||'—'}</div>`;}
+  else tip.style.display='none';
+  cv.style.cursor=hit?'pointer':'default';
+  render(neighbors(focus));
+});
+cv.addEventListener('click',ev=>{
+  const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
+  let hit=null;Object.values(sim).forEach(s=>{if(Math.hypot(s.x-mx,s.y-my)<s.r+4)hit=s;});
+  if(hit&&hit.n.id!==focus)go(hit.n.id);
+});
+
+function drawDetail(){
+  const n=byId[focus],D=document.getElementById('detail');
+  const groups={bechina:{out:[],in:[]},eitza:{out:[],in:[]},equation:{out:[],in:[]}};
+  (adj[focus]||[]).forEach(a=>{(groups[a.e.ty]||groups.bechina)[a.dir].push(a);});
+  const gcount=(adj[focus]||[]).length;
+  let html=`<div class="dhead">
+     <div class="he">${n.he||''}</div>
+     <div class="id">${n.id}${n.kind==='statement'?' · statement':''}</div>
+     <div class="gloss">${n.gloss||'<span style="color:var(--faint)">no gloss</span>'}</div>
+     <div class="meta">${gcount} connection${gcount!==1?'s':''} · degree ${n.deg}</div></div>`;
+  const secDefs=[['eitza','Advice — eitza','var(--eitza)'],
+                 ['bechina','Aspect — bechina','var(--bechina)'],
+                 ['equation','Equation','var(--equation)']];
+  secDefs.forEach(([ty,label,col])=>{
+    const outs=groups[ty].out,ins=groups[ty].in;
+    if(!outs.length&&!ins.length)return;
+    html+=`<div class="grp"><h3><i style="background:${col}"></i>${label} · ${outs.length+ins.length}</h3>`;
+    const rowsOf=(arr,dir)=>arr.map(a=>{const o=byId[a.other]||{};
+      const verb=ty==='eitza'?(dir==='out'?'leads to →':'← comes from'):(dir==='out'?'is aspect of →':'← has aspect');
+      return `<div class="conn" data-go="${o.id}">
+        <div class="row"><span class="he">${o.he||''}</span><span class="w">×${a.e.w}</span></div>
+        <div class="en"><span class="arrowlbl">${verb}</span> ${o.gloss||''}</div>
+        ${a.e.p?`<div class="proof">${a.e.p}…</div>`:''}</div>`;}).join('');
+    html+=rowsOf(outs,'out')+rowsOf(ins,'in')+`</div>`;
+  });
+  if(!gcount)html+=`<div class="grp"><div class="empty">No edges recorded for this concept yet.</div></div>`;
+  D.innerHTML=html;D.scrollTop=0;
+  D.querySelectorAll('.conn').forEach(c=>{
+    c.addEventListener('click',ev=>{ if(ev.target.classList.contains('he')||ev.detail===2){go(c.dataset.go);return;}
+      c.classList.toggle('open'); });
+    c.addEventListener('dblclick',()=>go(c.dataset.go));
+  });
+}
+</script>
+</body>
+</html>
