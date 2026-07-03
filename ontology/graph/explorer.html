@@ -6,89 +6,112 @@
 <title>Torah Map — Concept Explorer</title>
 <style>
   :root{
-    --bg:#0d1117; --panel:#161b22; --panel2:#1c2230; --line:#2a3240;
-    --ink:#e6edf3; --dim:#8b98a9; --faint:#5b6673;
-    --bechina:#5aa9ff;   /* aspect-of */
-    --eitza:#3fd08a;     /* advice */
-    --equation:#f0b429;  /* explicit equation */
-    --accent:#c9a4ff;
+    --bg:#0b0f14; --panel:#141a22; --panel2:#1b2531; --line:#28323f; --line2:#333f4e;
+    --ink:#e8eef5; --dim:#93a2b4; --faint:#5d6b7b;
+    --bechina:#5aa9ff; --eitza:#37d093; --equation:#f0b429; --path:#ff7ac2; --accent:#c9a4ff;
     --hebrew:"Frank Ruhl Libre","David Libre","Times New Roman",serif;
   }
   *{box-sizing:border-box}
-  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;overflow:hidden}
-  #app{display:grid;grid-template-columns:290px 1fr 380px;height:100vh}
-  @media(max-width:1100px){#app{grid-template-columns:0 1fr 340px}}
-  /* left rail */
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);overflow:hidden;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:14px}
+  #app{display:grid;grid-template-columns:320px 1fr 400px;height:100vh}
+  @media(max-width:1180px){#app{grid-template-columns:0 1fr 360px}}
+  button{font-family:inherit}
+  /* ---- left rail ---- */
   #rail{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
-  .brand{padding:16px 18px 10px}
+  .brand{padding:15px 16px 8px}
   .brand h1{font-size:15px;margin:0;letter-spacing:.02em}
-  .brand p{margin:3px 0 0;font-size:11.5px;color:var(--dim)}
-  .search{padding:10px 14px}
-  .search input{width:100%;background:var(--panel2);border:1px solid var(--line);color:var(--ink);
-    padding:9px 11px;border-radius:9px;font-size:13px;outline:none}
-  .search input:focus{border-color:var(--accent)}
-  .listwrap{overflow:auto;flex:1;padding:4px 8px 16px}
-  .sec{font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--faint);
-    padding:12px 10px 6px}
+  .brand p{margin:3px 0 0;font-size:11px;color:var(--dim)}
+  .modes{display:flex;flex-wrap:wrap;gap:5px;padding:8px 12px 6px}
+  .modes button{background:var(--panel2);border:1px solid var(--line);color:var(--dim);
+    padding:6px 9px;border-radius:7px;font-size:11.5px;cursor:pointer}
+  .modes button:hover{color:var(--ink)}
+  .modes button.on{background:var(--accent);border-color:var(--accent);color:#12131a;font-weight:600}
+  .inputs{padding:6px 12px 8px;display:flex;flex-direction:column;gap:7px}
+  .inputs input,.inputs textarea,.inputs select{width:100%;background:var(--panel2);border:1px solid var(--line);
+    color:var(--ink);padding:8px 10px;border-radius:8px;font-size:13px;outline:none;font-family:inherit}
+  .inputs textarea{resize:vertical;min-height:54px;line-height:1.4}
+  .inputs input:focus,.inputs textarea:focus,.inputs select:focus{border-color:var(--accent)}
+  .inputs .go{background:var(--accent);color:#12131a;border:none;font-weight:600;cursor:pointer;padding:8px}
+  .inputs label{font-size:10.5px;color:var(--faint);text-transform:uppercase;letter-spacing:.07em;margin-bottom:-3px}
+  .ac{position:relative}
+  .acmenu{position:absolute;left:0;right:0;top:calc(100% + 2px);background:var(--panel2);border:1px solid var(--line2);
+    border-radius:8px;z-index:20;max-height:230px;overflow:auto;display:none}
+  .acmenu.show{display:block}
+  .acitem{padding:6px 10px;cursor:pointer;display:flex;gap:8px;align-items:baseline}
+  .acitem:hover,.acitem.sel{background:var(--panel)}
+  .acitem .he{font-family:var(--hebrew);font-size:14px;direction:rtl}
+  .acitem .en{font-size:11px;color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .listwrap{overflow:auto;flex:1;padding:2px 8px 16px}
+  .sec{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--faint);padding:12px 10px 5px;display:flex;justify-content:space-between}
   .item{padding:7px 10px;border-radius:8px;cursor:pointer;display:flex;gap:8px;align-items:baseline}
   .item:hover{background:var(--panel2)}
-  .item .he{font-family:var(--hebrew);font-size:15px;direction:rtl}
+  .item .he{font-family:var(--hebrew);font-size:15px;direction:rtl;flex:none;max-width:44%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .item .en{font-size:11.5px;color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .item .dg{margin-left:auto;font-size:10px;color:var(--faint);flex:none}
-  /* canvas */
-  #stage{position:relative;background:radial-gradient(1200px 800px at 50% 40%,#11172100,#0a0e14)}
+  .item .sc{margin-left:auto;font-size:10px;color:var(--eitza);flex:none}
+  /* ---- stage ---- */
+  #stage{position:relative;background:radial-gradient(1300px 900px at 50% 38%,#121a24 0%,#080b10 75%)}
   canvas{display:block;width:100%;height:100%}
-  #legend{position:absolute;left:14px;bottom:12px;display:flex;gap:14px;font-size:11.5px;
-    background:#0d1117cc;border:1px solid var(--line);padding:7px 11px;border-radius:10px;backdrop-filter:blur(4px)}
+  #legend{position:absolute;left:14px;bottom:12px;display:flex;gap:13px;font-size:11px;
+    background:#0b0f14cc;border:1px solid var(--line);padding:7px 11px;border-radius:10px}
   #legend span{display:flex;align-items:center;gap:6px;color:var(--dim)}
-  #legend i{width:11px;height:3px;border-radius:2px;display:inline-block}
-  #crumbs{position:absolute;left:14px;top:12px;display:flex;gap:6px;flex-wrap:wrap;max-width:70%}
-  .crumb{background:#0d1117cc;border:1px solid var(--line);padding:4px 9px;border-radius:20px;
-    font-size:11.5px;cursor:pointer;color:var(--dim)}
+  #legend i{width:11px;height:3px;border-radius:2px}
+  #crumbs{position:absolute;left:14px;top:12px;display:flex;gap:6px;flex-wrap:wrap;max-width:62%}
+  .crumb{background:#0b0f14cc;border:1px solid var(--line);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;color:var(--dim)}
   .crumb:hover{color:var(--ink);border-color:var(--accent)}
-  #hint{position:absolute;right:14px;top:12px;font-size:11px;color:var(--faint)}
-  #tip{position:absolute;pointer-events:none;background:#0d1117f2;border:1px solid var(--line);
-    padding:6px 9px;border-radius:8px;font-size:12px;max-width:280px;display:none;z-index:5}
+  #status{position:absolute;right:14px;top:12px;font-size:11px;color:var(--faint);text-align:right;max-width:40%}
+  #tip{position:absolute;pointer-events:none;background:#0b0f14f2;border:1px solid var(--line2);
+    padding:6px 9px;border-radius:8px;font-size:12px;max-width:300px;display:none;z-index:10}
   #tip .he{font-family:var(--hebrew);font-size:15px;direction:rtl}
   #tip .en{color:var(--dim);font-size:11.5px;margin-top:2px}
-  /* detail */
-  #detail{background:var(--panel);border-left:1px solid var(--line);overflow:auto;padding:0}
-  .dhead{padding:20px 20px 14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:2}
-  .dhead .he{font-family:var(--hebrew);font-size:30px;direction:rtl;line-height:1.15}
-  .dhead .id{font-size:11px;color:var(--faint);margin-top:6px;font-family:ui-monospace,monospace}
-  .dhead .gloss{font-size:14px;color:var(--ink);margin-top:10px;line-height:1.5}
-  .dhead .meta{font-size:11.5px;color:var(--dim);margin-top:8px}
-  .grp{padding:14px 18px 4px}
-  .grp h3{font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px;display:flex;align-items:center;gap:7px}
+  /* ---- detail ---- */
+  #detail{background:var(--panel);border-left:1px solid var(--line);overflow:auto}
+  .dhead{padding:18px 20px 14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:2}
+  .dhead .he{font-family:var(--hebrew);font-size:28px;direction:rtl;line-height:1.15}
+  .dhead .id{font-size:10.5px;color:var(--faint);margin-top:6px;font-family:ui-monospace,monospace}
+  .dhead .gloss{font-size:13.5px;color:var(--ink);margin-top:10px;line-height:1.5}
+  .dhead .meta{font-size:11.5px;color:var(--dim);margin-top:9px}
+  .refs{margin-top:9px;display:flex;flex-wrap:wrap;gap:5px}
+  .refs .r{font-size:10.5px;background:var(--panel2);border:1px solid var(--line);color:var(--dim);
+    padding:2px 7px;border-radius:20px;cursor:pointer}
+  .refs .r:hover{border-color:var(--accent);color:var(--ink)}
+  .grp{padding:13px 18px 2px}
+  .grp h3{font-size:11px;text-transform:uppercase;letter-spacing:.07em;margin:0 0 8px;display:flex;align-items:center;gap:7px;color:var(--dim)}
   .grp h3 i{width:9px;height:9px;border-radius:50%}
   .conn{padding:9px 11px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px;cursor:pointer;background:var(--panel2)}
   .conn:hover{border-color:var(--accent)}
   .conn .row{display:flex;gap:8px;align-items:baseline}
   .conn .he{font-family:var(--hebrew);font-size:16px;direction:rtl}
-  .conn .en{font-size:12px;color:var(--dim)}
+  .conn .en{font-size:12px;color:var(--dim);margin-top:2px}
   .conn .w{margin-left:auto;font-size:10px;color:var(--faint);flex:none}
-  .conn .proof{font-family:var(--hebrew);font-size:13px;direction:rtl;color:var(--dim);
-    margin-top:6px;line-height:1.55;border-top:1px dashed var(--line);padding-top:6px;display:none}
+  .conn .proof{font-family:var(--hebrew);font-size:13px;direction:rtl;color:var(--dim);margin-top:6px;
+    line-height:1.55;border-top:1px dashed var(--line);padding-top:6px;display:none}
   .conn.open .proof{display:block}
-  .empty{color:var(--faint);font-size:12.5px;padding:8px 4px}
+  .conn .rf{font-size:10px;color:var(--faint);margin-top:4px}
   .arrowlbl{font-size:10px;color:var(--faint)}
+  .empty{color:var(--faint);font-size:12.5px;padding:8px 4px}
+  .pathrow{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-family:var(--hebrew);direction:rtl;font-size:15px;line-height:1.9}
+  .pathrow .lnk{cursor:pointer;color:var(--ink);border-bottom:1px solid var(--line2)}
+  .pathrow .lnk:hover{color:var(--accent)}
+  .pathrow .op{font-family:sans-serif;font-size:11px;color:var(--faint);direction:ltr}
 </style>
 </head>
 <body>
 <div id="app">
   <div id="rail">
     <div class="brand"><h1>Torah Map</h1><p>Likutey Moharan — concept graph</p></div>
-    <div class="search"><input id="q" placeholder="Search concept or gloss…" autocomplete="off"></div>
+    <div class="modes" id="modes"></div>
+    <div class="inputs" id="inputs"></div>
     <div class="listwrap" id="list"></div>
   </div>
   <div id="stage">
     <canvas id="c"></canvas>
     <div id="crumbs"></div>
-    <div id="hint">click a node to travel · scroll list to browse</div>
+    <div id="status"></div>
     <div id="legend">
-      <span><i style="background:var(--bechina)"></i>bechina (aspect-of)</span>
-      <span><i style="background:var(--eitza)"></i>eitza (advice)</span>
+      <span><i style="background:var(--bechina)"></i>bechina · aspect</span>
+      <span><i style="background:var(--eitza)"></i>eitza · advice</span>
       <span><i style="background:var(--equation)"></i>equation</span>
     </div>
     <div id="tip"></div>
@@ -96,168 +119,343 @@
   <div id="detail"></div>
 </div>
 <script>
-const TYCOL={bechina:'#5aa9ff',eitza:'#3fd08a',equation:'#f0b429'};
-let NODES=[],EDGES=[],byId={},adj={},focus=null,hist=[];
+const TYCOL={bechina:'#5aa9ff',eitza:'#37d093',equation:'#f0b429'};
+let NODES=[],EDGES=[],TORAHS=[],byId={},adj={},idf={},tokx={};
+let mode='explore',focus=null,hist=[],view={nodes:[],edges:[],path:null},sim={},anim=null,hover=null;
 const cv=document.getElementById('c'),ctx=cv.getContext('2d'),tip=document.getElementById('tip');
-let sim={},anim=null,hover=null;
+const $=id=>document.getElementById(id);
 
+// ---------- load + index ----------
 fetch('./explorer_data.json').then(r=>r.json()).then(d=>{
-  NODES=d.nodes; EDGES=d.edges;
-  NODES.forEach(n=>byId[n.id]=n);
-  NODES.forEach(n=>adj[n.id]=[]);
-  EDGES.forEach((e,i)=>{ if(adj[e.s])adj[e.s].push({e,dir:'out',other:e.t});
-                          if(adj[e.t])adj[e.t].push({e,dir:'in',other:e.s}); });
-  buildList(topHubs());
-  const start=NODES.slice().sort((a,b)=>b.deg-a.deg)[0];
+  NODES=d.nodes; EDGES=d.edges; TORAHS=d.torahs||[];
+  NODES.forEach(n=>{byId[n.id]=n; adj[n.id]={all:[],bechina:[],eitzaOut:[],eitzaIn:[]};});
+  EDGES.forEach(e=>{
+    if(!adj[e.s]||!adj[e.t])return;
+    adj[e.s].all.push({o:e.t,ty:e.ty,dir:'out',e}); adj[e.t].all.push({o:e.s,ty:e.ty,dir:'in',e});
+    if(e.ty==='bechina'){adj[e.s].bechina.push(e.t);adj[e.t].bechina.push(e.s);}
+    else if(e.ty==='eitza'){adj[e.s].eitzaOut.push(e.t);adj[e.t].eitzaIn.push(e.s);}
+  });
+  buildTokenIndex();
+  buildModes(); setMode('explore');
+  const start=NODES.filter(n=>n.kind!=='statement').sort((a,b)=>b.deg-a.deg)[0];
   go(start.id);
 });
-
-function topHubs(){return NODES.filter(n=>n.kind!=='statement').slice().sort((a,b)=>b.deg-a.deg).slice(0,60);}
-function buildList(items,label){
-  const L=document.getElementById('list');
-  L.innerHTML=`<div class="sec">${label||'Most connected'}</div>`;
-  items.forEach(n=>{
-    const el=document.createElement('div');el.className='item';
-    el.innerHTML=`<span class="he">${n.he||''}</span><span class="en">${n.gloss||''}</span><span class="dg">${n.deg}</span>`;
-    el.onclick=()=>go(n.id); L.appendChild(el);
+function tokens(s){return (s||'').toLowerCase().match(/[a-z]{3,}|[א-ת]{2,}/g)||[];}
+function buildTokenIndex(){
+  const df={};
+  NODES.forEach(n=>{
+    const t=new Set(tokens(n.gloss).concat(tokens(n.he)));
+    tokx[n.id]=t; t.forEach(w=>df[w]=(df[w]||0)+1);
   });
-}
-document.getElementById('q').addEventListener('input',e=>{
-  const t=e.target.value.trim().toLowerCase();
-  if(!t){buildList(topHubs());return;}
-  const r=NODES.filter(n=>(n.he&&n.he.includes(t))||(n.gloss&&n.gloss.toLowerCase().includes(t))||n.id.includes(t))
-    .sort((a,b)=>b.deg-a.deg).slice(0,80);
-  buildList(r,`${r.length} matches`);
-});
-
-function neighbors(id){
-  const seen={},out=[];
-  (adj[id]||[]).forEach(a=>{ if(!seen[a.other]){seen[a.other]=1;out.push(a);} });
-  return out.sort((a,b)=>(byId[b.other]?.deg||0)-(byId[a.other]?.deg||0)).slice(0,34);
-}
-function go(id){
-  if(!byId[id])return;
-  if(focus&&focus!==id){hist.push(focus);if(hist.length>12)hist.shift();}
-  focus=id; layout(); drawDetail(); drawCrumbs();
-  const li=[...document.querySelectorAll('.item')];
-}
-function drawCrumbs(){
-  const c=document.getElementById('crumbs');c.innerHTML='';
-  hist.slice(-6).forEach(h=>{const b=document.createElement('div');b.className='crumb';
-    b.textContent=byId[h].he||h; b.onclick=()=>{focus=h;hist=hist.slice(0,hist.indexOf(h));layout();drawDetail();drawCrumbs();};c.appendChild(b);});
-  if(focus){const b=document.createElement('div');b.className='crumb';b.style.color='var(--ink)';
-    b.style.borderColor='var(--accent)';b.textContent=byId[focus].he||focus;c.appendChild(b);}
+  const N=NODES.length;
+  Object.keys(df).forEach(w=>idf[w]=Math.log(N/(df[w])));
 }
 
-// ---- layout + render -------------------------------------------------------
-function resize(){const s=document.getElementById('stage');cv.width=s.clientWidth*devicePixelRatio;
-  cv.height=s.clientHeight*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);}
-addEventListener('resize',()=>{resize();layout();});
-function layout(){
-  resize();
-  const W=cv.width/devicePixelRatio,H=cv.height/devicePixelRatio,cx=W/2,cy=H/2;
-  const nb=neighbors(focus);
-  sim={};
-  sim[focus]={x:cx,y:cy,n:byId[focus],r:16,fixed:true};
-  const R=Math.min(W,H)*0.36;
-  nb.forEach((a,i)=>{const ang=(i/nb.length)*Math.PI*2 - Math.PI/2;
-    const nn=byId[a.other];
-    sim[a.other]={x:cx+Math.cos(ang)*R*(0.72+0.5*Math.random()),
-                  y:cy+Math.sin(ang)*R*(0.72+0.5*Math.random()),
-                  n:nn,r:6+Math.min(9,Math.sqrt(nn?.deg||1)*1.4),a};
+// ---------- modes ----------
+const MODES=[
+  ['explore','Explore','all connections of a concept'],
+  ['aspects','Aspects','bechina — deeper aspects'],
+  ['advice','Advice','eitza — what leads TO it'],
+  ['effects','Effects','eitza — what it leads to'],
+  ['path','Path','cause-effect chain between two'],
+  ['common','Common','shared ground of two concepts'],
+  ['torah','By Torah','everything from one teaching'],
+  ['match','Match text','paste text → closest concepts'],
+];
+function buildModes(){
+  $('modes').innerHTML='';
+  MODES.forEach(([k,label])=>{const b=document.createElement('button');b.textContent=label;b.dataset.m=k;
+    b.title=MODES.find(m=>m[0]===k)[2]; b.onclick=()=>setMode(k); $('modes').appendChild(b);});
+}
+function setMode(m){
+  mode=m;[...$('modes').children].forEach(b=>b.classList.toggle('on',b.dataset.m===m));
+  renderInputs();
+  if(m==='explore'||m==='aspects'||m==='advice'||m==='effects'){ if(focus)go(focus); }
+  else if(m==='torah'){ runTorah($('torahSel').value); }
+  else { $('list').innerHTML=''; }
+}
+function renderInputs(){
+  const I=$('inputs');
+  if(mode==='path'||mode==='common'){
+    I.innerHTML=`<label>${mode==='path'?'From concept':'Concept A'}</label>${acField('a')}
+      <label>${mode==='path'?'To concept':'Concept B'}</label>${acField('b')}
+      <button class="go" id="run2">${mode==='path'?'Trace path':'Find common ground'}</button>`;
+    wireAc('a'); wireAc('b');
+    $('run2').onclick=()=>{ mode==='path'?runPath():runCommon(); };
+  } else if(mode==='torah'){
+    I.innerHTML=`<label>Teaching (Likutey Moharan)</label>
+      <select id="torahSel">${TORAHS.map(t=>`<option value="${t}">LM ${t.replace(':',' · ')}</option>`).join('')}</select>`;
+    $('torahSel').onchange=e=>runTorah(e.target.value);
+  } else if(mode==='match'){
+    I.innerHTML=`<label>Paste any text — Hebrew or English</label>
+      <textarea id="matchbox" placeholder="e.g. joy heals the broken heart and draws down abundance…"></textarea>
+      <button class="go" id="runm">Find closest concepts</button>`;
+    $('runm').onclick=runMatch;
+    $('matchbox').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.metaKey||e.ctrlKey))runMatch();});
+  } else {
+    I.innerHTML=`<label>Search concept</label>${acField('q')}`;
+    wireAc('q',true);
+  }
+}
+function acField(id){return `<div class="ac"><input id="ac_${id}" autocomplete="off" placeholder="type Hebrew or English…"><div class="acmenu" id="acm_${id}"></div></div>`;}
+function wireAc(id,browse){
+  const inp=$('ac_'+id),menu=$('acm_'+id);let sel=-1,cur=[];
+  const close=()=>{menu.classList.remove('show');sel=-1;};
+  inp.addEventListener('input',()=>{
+    const q=inp.value.trim().toLowerCase();
+    if(!q){close(); if(browse)listBrowse(); return;}
+    cur=NODES.filter(n=>n.kind!=='statement'&&((n.he&&n.he.toLowerCase().includes(q))||(n.gloss&&n.gloss.toLowerCase().includes(q))))
+      .sort((a,b)=>b.deg-a.deg).slice(0,30);
+    menu.innerHTML=cur.map((n,i)=>`<div class="acitem" data-i="${i}"><span class="he">${n.he||''}</span><span class="en">${n.gloss||''}</span></div>`).join('');
+    menu.classList.add('show');sel=-1;
+    [...menu.children].forEach(el=>el.onclick=()=>{ pick(cur[+el.dataset.i]); });
+    if(browse) listResults(cur,'Matches');
   });
-  let iter=0;
-  cancelAnimationFrame(anim);
+  inp.addEventListener('keydown',e=>{
+    if(!menu.classList.contains('show'))return;
+    if(e.key==='ArrowDown'){sel=Math.min(sel+1,cur.length-1);paint();e.preventDefault();}
+    else if(e.key==='ArrowUp'){sel=Math.max(sel-1,0);paint();e.preventDefault();}
+    else if(e.key==='Enter'){ if(cur[sel<0?0:sel])pick(cur[sel<0?0:sel]); e.preventDefault();}
+    else if(e.key==='Escape')close();
+  });
+  function paint(){[...menu.children].forEach((el,i)=>el.classList.toggle('sel',i===sel));}
+  function pick(n){ inp.value=n.he+' — '+(n.gloss||'').slice(0,30); inp.dataset.id=n.id; close();
+    if(browse) go(n.id); }
+  inp.addEventListener('blur',()=>setTimeout(close,150));
+}
+function listBrowse(){ listResults(NODES.filter(n=>n.kind!=='statement').sort((a,b)=>b.deg-a.deg).slice(0,60),'Most connected'); }
+function idOf(field){const el=$('ac_'+field); return el&&el.dataset.id;}
+
+// ---------- search modes ----------
+function go(id){ if(!byId[id])return;
+  if(focus&&focus!==id){hist.push(focus);if(hist.length>16)hist.shift();}
+  focus=id;
+  const A=adj[id]||{all:[]};
+  let picks=A.all;
+  if(mode==='aspects')picks=A.all.filter(x=>x.ty==='bechina');
+  else if(mode==='advice')picks=A.all.filter(x=>x.ty==='eitza'&&x.dir==='in');
+  else if(mode==='effects')picks=A.all.filter(x=>x.ty==='eitza'&&x.dir==='out');
+  const seen={},nb=[];
+  picks.sort((a,b)=>(byId[b.o]?.deg||0)-(byId[a.o]?.deg||0)).forEach(x=>{if(!seen[x.o]){seen[x.o]=1;nb.push(x);}});
+  const shown=nb.slice(0,36);
+  view={focus:id,center:id,edges:shown.map(x=>x.e),nodes:[id].concat(shown.map(x=>x.o)),path:null,ego:shown};
+  layoutEgo(id,shown); drawDetail(id); drawCrumbs();
+  setStatus(`${nb.length} ${mode==='explore'?'connections':mode} · showing ${shown.length}`);
+}
+function runTorah(ref){
+  if(!ref)return; focus=null;
+  const es=EDGES.filter(e=>(e.ref||[]).includes(ref));
+  const ns=new Set(); es.forEach(e=>{ns.add(e.s);ns.add(e.t);});
+  view={edges:es.slice(0,120),nodes:[...ns],path:null,center:null};
+  layoutForce([...ns].slice(0,80),es); drawTorahDetail(ref,es,ns); drawCrumbs();
+  setStatus(`LM ${ref.replace(':',' · ')} — ${es.length} edges, ${ns.size} concepts`);
+}
+function runMatch(){
+  const q=$('matchbox').value; const qt=tokens(q);
+  if(!qt.length){setStatus('type some text first');return;}
+  const qset={}; qt.forEach(w=>qset[w]=(qset[w]||0)+1);
+  const scored=NODES.filter(n=>n.kind!=='statement').map(n=>{
+    let s=0; const t=tokx[n.id]||new Set();
+    Object.keys(qset).forEach(w=>{ if(t.has(w)) s+=(idf[w]||0.5)*(1+Math.log(qset[w])); });
+    return {n,s};
+  }).filter(x=>x.s>0).sort((a,b)=>b.s-a.s).slice(0,40);
+  if(!scored.length){setStatus('no concept matched that text');$('list').innerHTML='<div class="sec">No matches</div>';return;}
+  const max=scored[0].s;
+  listResults(scored.map(x=>x.n),'Closest concepts',scored.map(x=>Math.round(100*x.s/max)+'%'));
+  go(scored[0].n.id);
+  setStatus(`best match: ${scored[0].n.he} (${scored.length} candidates)`);
+}
+// weighted shortest path (cost = 1/weight so stronger, better-attested links are "closer")
+function runPath(){
+  const a=idOf('a'),b=idOf('b');
+  if(!a||!b){setStatus('pick both concepts from the dropdown');return;}
+  const prev={},cost={},pq=[{id:a,c:0}]; cost[a]=0;
+  while(pq.length){
+    pq.sort((x,y)=>x.c-y.c); const {id,c}=pq.shift();
+    if(c>cost[id])continue; if(id===b)break;
+    (adj[id]?.all||[]).forEach(x=>{ const nc=c+1/Math.max(1,x.e.w);
+      if(cost[x.o]===undefined||nc<cost[x.o]){cost[x.o]=nc;prev[x.o]={from:id,e:x.e};pq.push({id:x.o,c:nc});}});
+  }
+  if(cost[b]===undefined){setStatus('no path found between them');drawTwoDetail(a,b,null);return;}
+  const chain=[],edges=[]; let cur=b;
+  while(cur!==a){const p=prev[cur];chain.unshift(cur);edges.unshift(p.e);cur=p.from;} chain.unshift(a);
+  view={path:chain,edges,nodes:chain,center:null};
+  layoutPath(chain,edges); drawPathDetail(chain,edges); drawCrumbs();
+  setStatus(`path found — ${chain.length-1} steps`);
+}
+function runCommon(){
+  const a=idOf('a'),b=idOf('b');
+  if(!a||!b){setStatus('pick both concepts');return;}
+  const na=new Set((adj[a]?.all||[]).map(x=>x.o)), nb=new Set((adj[b]?.all||[]).map(x=>x.o));
+  const common=[...na].filter(x=>nb.has(x));
+  const nodes=[a,b,...common], es=[];
+  EDGES.forEach(e=>{ const inA=(e.s===a||e.t===a),inB=(e.s===b||e.t===b);
+    if((inA&&common.includes(e.s===a?e.t:e.s))||(inB&&common.includes(e.s===b?e.t:e.s)))es.push(e);});
+  view={edges:es,nodes,path:null,center:null,twoFoci:[a,b]};
+  layoutForce(nodes,es,[a,b]); drawCommonDetail(a,b,common); drawCrumbs();
+  setStatus(common.length?`${common.length} shared concept(s)`:'no direct common ground');
+}
+
+// ---------- list rendering ----------
+function listResults(items,label,badges){
+  const L=$('list'); L.innerHTML=`<div class="sec"><span>${label}</span><span>${items.length}</span></div>`;
+  items.forEach((n,i)=>{const el=document.createElement('div');el.className='item';
+    const badge=badges?`<span class="sc">${badges[i]}</span>`:`<span class="dg">${n.deg}</span>`;
+    el.innerHTML=`<span class="he">${n.he||''}</span><span class="en">${n.gloss||''}</span>${badge}`;
+    el.onclick=()=>go(n.id); L.appendChild(el);});
+}
+
+// ---------- layouts ----------
+function stageWH(){const s=$('stage');return[s.clientWidth,s.clientHeight];}
+function resize(){const[W,H]=stageWH();cv.width=W*devicePixelRatio;cv.height=H*devicePixelRatio;
+  ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);}
+addEventListener('resize',()=>{resize();redraw();});
+function nodeR(n){return n.id===view.center?15:6+Math.min(9,Math.sqrt((byId[n.id]?byId[n.id].deg:1))*1.3);}
+function layoutEgo(center,nb){
+  resize();const[W,H]=stageWH(),cx=W/2,cy=H/2,R=Math.min(W,H)*0.37;
+  sim={};sim[center]={x:cx,y:cy,id:center,fixed:true};
+  nb.forEach((x,i)=>{const a=(i/nb.length)*Math.PI*2-Math.PI/2;
+    sim[x.o]={x:cx+Math.cos(a)*R*(0.7+0.55*Math.random()),y:cy+Math.sin(a)*R*(0.7+0.55*Math.random()),id:x.o};});
+  relax(60,view.edges);
+}
+function layoutForce(nodes,edges,foci){
+  resize();const[W,H]=stageWH();sim={};
+  nodes.slice(0,80).forEach((id,i)=>{const a=(i/Math.min(nodes.length,80))*Math.PI*2;
+    sim[id]={x:W/2+Math.cos(a)*Math.min(W,H)*0.34*(0.6+Math.random()*0.6),
+             y:H/2+Math.sin(a)*Math.min(W,H)*0.34*(0.6+Math.random()*0.6),id};});
+  if(foci){foci.forEach((f,i)=>{if(sim[f]){sim[f].x=W*(i?0.68:0.32);sim[f].y=H/2;sim[f].fixed=true;}});}
+  relax(120,edges);
+}
+function layoutPath(chain,edges){
+  resize();const[W,H]=stageWH();sim={};const n=chain.length,padX=W*0.12,gap=(W-2*padX)/Math.max(1,n-1);
+  chain.forEach((id,i)=>{sim[id]={x:padX+gap*i,y:H/2+(i%2?38:-38)*Math.sin(i),id,fixed:true};});
+  relax(0,edges);
+}
+function relax(iters,edges){
+  cancelAnimationFrame(anim);let it=0;
   (function step(){
-    // light force relaxation
-    const keys=Object.keys(sim);
-    for(let i=0;i<keys.length;i++)for(let j=i+1;j<keys.length;j++){
-      const A=sim[keys[i]],B=sim[keys[j]];let dx=B.x-A.x,dy=B.y-A.y,d=Math.hypot(dx,dy)||1;
-      if(d<70){const f=(70-d)/d*0.5;dx*=f;dy*=f;if(!B.fixed){B.x+=dx;B.y+=dy;}if(!A.fixed){A.x-=dx;A.y-=dy;}}
-    }
-    render(nb);
-    if(iter++<60)anim=requestAnimationFrame(step);
+    const ks=Object.keys(sim);
+    if(edges){edges.forEach(e=>{const A=sim[e.s],B=sim[e.t];if(!A||!B)return;
+      let dx=B.x-A.x,dy=B.y-A.y,d=Math.hypot(dx,dy)||1,f=(d-150)/d*0.02;
+      if(!A.fixed){A.x+=dx*f;A.y+=dy*f;}if(!B.fixed){B.x-=dx*f;B.y-=dy*f;}});}
+    for(let i=0;i<ks.length;i++)for(let j=i+1;j<ks.length;j++){const A=sim[ks[i]],B=sim[ks[j]];
+      let dx=B.x-A.x,dy=B.y-A.y,d=Math.hypot(dx,dy)||1;if(d<95){const f=(95-d)/d*0.5;
+        if(!B.fixed){B.x+=dx*f;B.y+=dy*f;}if(!A.fixed){A.x-=dx*f;A.y-=dy*f;}}}
+    redraw();
+    if(it++<iters)anim=requestAnimationFrame(step);
   })();
 }
-function render(nb){
-  const W=cv.width/devicePixelRatio,H=cv.height/devicePixelRatio;
-  ctx.clearRect(0,0,W,H);
-  // edges
-  nb.forEach(a=>{const A=sim[focus],B=sim[a.other];if(!B)return;
-    ctx.strokeStyle=TYCOL[a.e.ty]||'#666';ctx.globalAlpha=hover&&hover!==a.other&&hover!==focus?0.15:0.55;
-    ctx.lineWidth=Math.min(5,1+Math.log2(a.e.w+1));
+
+// ---------- render ----------
+function redraw(){
+  const[W,H]=stageWH();ctx.clearRect(0,0,W,H);
+  const pathSet=view.path?new Set(view.path):null;
+  const pathEdge=new Set((view.path?view.edges:[]).map(e=>e.s+'|'+e.t+'|'+e.ty));
+  (view.edges||[]).forEach(e=>{const A=sim[e.s],B=sim[e.t];if(!A||!B)return;
+    const onPath=pathEdge.has(e.s+'|'+e.t+'|'+e.ty);
+    ctx.strokeStyle=onPath?'#ff7ac2':(TYCOL[e.ty]||'#667');
+    ctx.globalAlpha=hover&&hover!==e.s&&hover!==e.t?0.12:(onPath?0.95:0.5);
+    ctx.lineWidth=onPath?3.5:Math.min(5,1+Math.log2(e.w+1));
     ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.stroke();
-    // direction chevron
-    const dir=a.dir==='out'?1:-1,mx=(A.x+B.x)/2,my=(A.y+B.y)/2;
-    ctx.globalAlpha=0.8;
+    if(e.ty==='eitza'){drawArrow(A,B,onPath);}
   });
   ctx.globalAlpha=1;
-  // nodes
-  Object.values(sim).forEach(s=>{
-    const isF=s.n.id===focus,hl=hover===s.n.id;
-    ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,7);
-    ctx.fillStyle=isF?'#c9a4ff':(s.n.kind==='statement'?'#39424f':'#2b6cb0');
-    if(s.a)ctx.fillStyle=isF?'#c9a4ff':shade(TYCOL[s.a.e.ty]);
+  Object.values(sim).forEach(s=>{const n=byId[s.id]||{};const isC=s.id===view.center;
+    const onP=pathSet&&pathSet.has(s.id),isFoci=view.twoFoci&&view.twoFoci.includes(s.id);
+    const r=nodeR({id:s.id});
+    ctx.beginPath();ctx.arc(s.x,s.y,isC||isFoci?14:r,0,7);
+    ctx.fillStyle=isC?'#c9a4ff':onP?'#ff7ac2':isFoci?'#c9a4ff':(n.kind==='statement'?'#3a4553':'#2f6fb3');
     ctx.fill();
-    if(isF||hl){ctx.lineWidth=2;ctx.strokeStyle='#fff';ctx.stroke();}
-    // label (Hebrew)
-    ctx.fillStyle=isF?'#fff':'#c7d2de';ctx.textAlign='center';
-    ctx.font=(isF?'600 ':'')+(isF?18:13)+'px "Frank Ruhl Libre",serif';
-    const lbl=(s.n.he||'').slice(0,14);
-    ctx.fillText(lbl,s.x,s.y-s.r-6);
+    if(isC||hover===s.id||isFoci){ctx.lineWidth=2;ctx.strokeStyle='#fff';ctx.stroke();}
+    ctx.fillStyle=isC||isFoci?'#fff':'#c8d3df';ctx.textAlign='center';
+    ctx.font=(isC?'600 18':'13')+'px "Frank Ruhl Libre",serif';
+    ctx.fillText((n.he||'').slice(0,16),s.x,s.y-(isC||isFoci?18:r)-6);
   });
 }
-function shade(hex){return hex;}
+function drawArrow(A,B,hot){const ang=Math.atan2(B.y-A.y,B.x-A.x),r=(byId[B.id]?12:8),
+  ex=B.x-Math.cos(ang)*(r+3),ey=B.y-Math.sin(ang)*(r+3),s=hot?9:6;
+  ctx.fillStyle=hot?'#ff7ac2':'#37d093';ctx.globalAlpha=hot?0.95:0.6;ctx.beginPath();
+  ctx.moveTo(ex,ey);ctx.lineTo(ex-Math.cos(ang-0.4)*s,ey-Math.sin(ang-0.4)*s);
+  ctx.lineTo(ex-Math.cos(ang+0.4)*s,ey-Math.sin(ang+0.4)*s);ctx.closePath();ctx.fill();ctx.globalAlpha=1;}
 
-// interaction
-cv.addEventListener('mousemove',ev=>{
-  const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
-  let hit=null;Object.values(sim).forEach(s=>{if(Math.hypot(s.x-mx,s.y-my)<s.r+4)hit=s;});
-  hover=hit?hit.n.id:null;
-  if(hit){tip.style.display='block';tip.style.left=Math.min(mx+14,r.width-290)+'px';tip.style.top=(my+14)+'px';
-    tip.innerHTML=`<div class="he">${hit.n.he||''}</div><div class="en">${hit.n.gloss||'—'}</div>`;}
+// ---------- interaction ----------
+cv.addEventListener('mousemove',ev=>{const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
+  let hit=null;Object.values(sim).forEach(s=>{if(Math.hypot(s.x-mx,s.y-my)<nodeR({id:s.id})+5)hit=s;});
+  hover=hit?hit.id:null;
+  if(hit){const n=byId[hit.id]||{};tip.style.display='block';tip.style.left=Math.min(mx+14,r.width-310)+'px';
+    tip.style.top=(my+14)+'px';tip.innerHTML=`<div class="he">${n.he||''}</div><div class="en">${n.gloss||'—'}</div>`;}
   else tip.style.display='none';
-  cv.style.cursor=hit?'pointer':'default';
-  render(neighbors(focus));
-});
-cv.addEventListener('click',ev=>{
-  const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
-  let hit=null;Object.values(sim).forEach(s=>{if(Math.hypot(s.x-mx,s.y-my)<s.r+4)hit=s;});
-  if(hit&&hit.n.id!==focus)go(hit.n.id);
-});
+  cv.style.cursor=hit?'pointer':'default';redraw();});
+cv.addEventListener('click',ev=>{const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
+  let hit=null;Object.values(sim).forEach(s=>{if(Math.hypot(s.x-mx,s.y-my)<nodeR({id:s.id})+5)hit=s;});
+  if(hit){ if(['explore','aspects','advice','effects'].includes(mode))go(hit.id);
+           else drawDetail(hit.id); }});
+function drawCrumbs(){const c=$('crumbs');c.innerHTML='';
+  hist.slice(-6).forEach(h=>{const b=document.createElement('div');b.className='crumb';b.textContent=byId[h].he||h;
+    b.onclick=()=>{focus=h;hist=hist.slice(0,hist.indexOf(h));if(['explore','aspects','advice','effects'].includes(mode))go(h);else drawDetail(h);};c.appendChild(b);});
+  if(focus){const b=document.createElement('div');b.className='crumb';b.style.color='var(--ink)';b.style.borderColor='var(--accent)';b.textContent=byId[focus].he||focus;c.appendChild(b);}}
+function setStatus(t){$('status').textContent=t;}
 
-function drawDetail(){
-  const n=byId[focus],D=document.getElementById('detail');
-  const groups={bechina:{out:[],in:[]},eitza:{out:[],in:[]},equation:{out:[],in:[]}};
-  (adj[focus]||[]).forEach(a=>{(groups[a.e.ty]||groups.bechina)[a.dir].push(a);});
-  const gcount=(adj[focus]||[]).length;
-  let html=`<div class="dhead">
-     <div class="he">${n.he||''}</div>
-     <div class="id">${n.id}${n.kind==='statement'?' · statement':''}</div>
-     <div class="gloss">${n.gloss||'<span style="color:var(--faint)">no gloss</span>'}</div>
-     <div class="meta">${gcount} connection${gcount!==1?'s':''} · degree ${n.deg}</div></div>`;
-  const secDefs=[['eitza','Advice — eitza','var(--eitza)'],
-                 ['bechina','Aspect — bechina','var(--bechina)'],
-                 ['equation','Equation','var(--equation)']];
-  secDefs.forEach(([ty,label,col])=>{
-    const outs=groups[ty].out,ins=groups[ty].in;
-    if(!outs.length&&!ins.length)return;
+// ---------- detail panels ----------
+function refChips(refs){return refs&&refs.length?`<div class="refs">${refs.slice(0,20).map(r=>`<span class="r" data-t="${r}">LM ${r.replace(':','·')}</span>`).join('')}</div>`:'';}
+function wireRefs(D){D.querySelectorAll('.refs .r').forEach(el=>el.onclick=()=>{setMode('torah');$('torahSel').value=el.dataset.t;runTorah(el.dataset.t);});}
+function head(n){return `<div class="dhead"><div class="he">${n.he||''}</div>
+   <div class="id">${n.id}${n.kind==='statement'?' · statement':''}</div>
+   <div class="gloss">${n.gloss||'<span style="color:var(--faint)">no gloss</span>'}</div>
+   <div class="meta">${n.deg} connection${n.deg!==1?'s':''}${n.refs&&n.refs.length?` · ${n.refs.length} source${n.refs.length!==1?'s':''}`:''}</div>
+   ${refChips(n.refs)}</div>`;}
+function drawDetail(id){
+  const n=byId[id],D=$('detail');
+  const g={bechina:{out:[],in:[]},eitza:{out:[],in:[]},equation:{out:[],in:[]}};
+  (adj[id]?.all||[]).forEach(a=>{(g[a.ty]||g.bechina)[a.dir].push(a);});
+  let html=head(n);
+  [['eitza','Advice — eitza','var(--eitza)'],['bechina','Aspect — bechina','var(--bechina)'],['equation','Equation','var(--equation)']]
+   .forEach(([ty,label,col])=>{const outs=g[ty].out,ins=g[ty].in;if(!outs.length&&!ins.length)return;
     html+=`<div class="grp"><h3><i style="background:${col}"></i>${label} · ${outs.length+ins.length}</h3>`;
-    const rowsOf=(arr,dir)=>arr.map(a=>{const o=byId[a.other]||{};
-      const verb=ty==='eitza'?(dir==='out'?'leads to →':'← comes from'):(dir==='out'?'is aspect of →':'← has aspect');
-      return `<div class="conn" data-go="${o.id}">
-        <div class="row"><span class="he">${o.he||''}</span><span class="w">×${a.e.w}</span></div>
+    const rows=(arr,dir)=>arr.map(a=>{const o=byId[a.o]||{};
+      const verb=ty==='eitza'?(dir==='out'?'leads to →':'← comes from'):(dir==='out'?'aspect of →':'← has aspect');
+      return `<div class="conn" data-go="${o.id}"><div class="row"><span class="he">${o.he||''}</span><span class="w">×${a.e.w}</span></div>
         <div class="en"><span class="arrowlbl">${verb}</span> ${o.gloss||''}</div>
+        ${a.e.ref&&a.e.ref.length?`<div class="rf">LM ${a.e.ref.slice(0,4).map(r=>r.replace(':','·')).join(', ')}</div>`:''}
         ${a.e.p?`<div class="proof">${a.e.p}…</div>`:''}</div>`;}).join('');
-    html+=rowsOf(outs,'out')+rowsOf(ins,'in')+`</div>`;
-  });
-  if(!gcount)html+=`<div class="grp"><div class="empty">No edges recorded for this concept yet.</div></div>`;
+    html+=rows(outs,'out')+rows(ins,'in')+`</div>`;});
+  if(!(adj[id]?.all||[]).length)html+=`<div class="grp"><div class="empty">No edges recorded yet.</div></div>`;
+  D.innerHTML=html;D.scrollTop=0;wireRefs(D);
+  D.querySelectorAll('.conn').forEach(c=>{c.onclick=ev=>{if(ev.target.classList.contains('he')){go(c.dataset.go);return;}c.classList.toggle('open');};
+    c.ondblclick=()=>go(c.dataset.go);});
+}
+function drawPathDetail(chain,edges){
+  const D=$('detail');let html=`<div class="dhead"><div class="he" style="font-size:20px">${byId[chain[0]].he} → ${byId[chain[chain.length-1]].he}</div>
+    <div class="meta">${chain.length-1}-step chain · strongest-link path</div></div><div class="grp"><h3>The chain</h3><div class="pathrow">`;
+  chain.forEach((id,i)=>{html+=`<span class="lnk" data-go="${id}">${byId[id].he}</span>`;
+    if(i<edges.length){const e=edges[i];html+=`<span class="op">—${e.ty==='eitza'?'leads to':'aspect'}→</span>`;}});
+  html+='</div></div>';
+  edges.forEach((e,i)=>{html+=`<div class="grp"><h3><i style="background:${TYCOL[e.ty]}"></i>${byId[chain[i]].he} → ${byId[chain[i+1]].he}</h3>
+    <div class="conn open"><div class="en">${byId[chain[i]].gloss||''}</div>
+    ${e.ref&&e.ref.length?`<div class="rf">LM ${e.ref.slice(0,4).map(r=>r.replace(':','·')).join(', ')}</div>`:''}
+    ${e.p?`<div class="proof">${e.p}…</div>`:''}</div></div>`;});
   D.innerHTML=html;D.scrollTop=0;
-  D.querySelectorAll('.conn').forEach(c=>{
-    c.addEventListener('click',ev=>{ if(ev.target.classList.contains('he')||ev.detail===2){go(c.dataset.go);return;}
-      c.classList.toggle('open'); });
-    c.addEventListener('dblclick',()=>go(c.dataset.go));
-  });
+  D.querySelectorAll('[data-go]').forEach(el=>el.onclick=()=>{setMode('explore');go(el.dataset.go);});
+}
+function drawCommonDetail(a,b,common){
+  const D=$('detail');let html=`<div class="dhead"><div class="he" style="font-size:20px">${byId[a].he} ∩ ${byId[b].he}</div>
+    <div class="meta">${common.length} shared concept${common.length!==1?'s':''}</div></div>`;
+  html+=`<div class="grp"><h3>Common ground</h3>`;
+  if(!common.length)html+=`<div class="empty">No directly shared concepts. Try Path to find an indirect chain.</div>`;
+  common.map(id=>byId[id]).sort((x,y)=>y.deg-x.deg).forEach(o=>{html+=`<div class="conn" data-go="${o.id}">
+    <div class="row"><span class="he">${o.he||''}</span><span class="w">deg ${o.deg}</span></div><div class="en">${o.gloss||''}</div></div>`;});
+  html+='</div>';D.innerHTML=html;D.scrollTop=0;
+  D.querySelectorAll('.conn').forEach(c=>c.onclick=()=>{setMode('explore');go(c.dataset.go);});
+}
+function drawTwoDetail(a,b){$('detail').innerHTML=`<div class="dhead"><div class="he" style="font-size:20px">${byId[a].he} … ${byId[b].he}</div><div class="meta">no path found</div></div>`;}
+function drawTorahDetail(ref,es,ns){
+  const D=$('detail');const be=es.filter(e=>e.ty==='bechina').length,ei=es.filter(e=>e.ty==='eitza').length;
+  let html=`<div class="dhead"><div class="he" style="font-size:22px">לקוטי מוהר"ן ${ref.replace(':',' · ')}</div>
+    <div class="meta">${ns.size} concepts · ${ei} advice · ${be} aspect edges</div></div><div class="grp"><h3>Concepts in this teaching</h3>`;
+  [...ns].map(id=>byId[id]).filter(Boolean).sort((x,y)=>y.deg-x.deg).forEach(o=>{html+=`<div class="conn" data-go="${o.id}">
+    <div class="row"><span class="he">${o.he||''}</span><span class="w">deg ${o.deg}</span></div><div class="en">${o.gloss||''}</div></div>`;});
+  html+='</div>';D.innerHTML=html;D.scrollTop=0;
+  D.querySelectorAll('.conn').forEach(c=>c.onclick=()=>{setMode('explore');go(c.dataset.go);});
 }
 </script>
 </body>

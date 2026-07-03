@@ -25,17 +25,38 @@ for n in nodes:
                       "gloss": n.get("gloss_en"), "kind": n.get("kind", "concept"),
                       "deg": deg.get(n["id"], 0)})
 
+def ref_of(o):
+    a = o.get("anchor", {})
+    b = {"lm1": "I", "lm2": "II"}.get(a.get("book"), a.get("book"))
+    t = a.get("torah")
+    return f"{b}:{t}" if t is not None else None
+
+node_refs = collections.defaultdict(set)
 out_edges = []
 for e in edges:
     proof = ""
-    for oid in e.get("proofs", [])[:1]:
+    refs = set()
+    for oid in e.get("proofs", []):
         o = occ.get(oid)
-        if o:
-            proof = (o.get("proof") or "")[:220]
+        if not o:
+            continue
+        if not proof:
+            proof = (o.get("proof") or "")[:240]
+        r = ref_of(o)
+        if r:
+            refs.add(r)
+            node_refs[e["source"]].add(r)
+            node_refs[e["target"]].add(r)
     out_edges.append({"s": e["source"], "t": e["target"], "ty": e["type"],
-                      "w": e["weight"], "p": proof})
+                      "w": e["weight"], "p": proof, "ref": sorted(refs)})
 
-bundle = {"nodes": out_nodes, "edges": out_edges,
+def refsort(r):
+    b, t = r.split(":"); return (0 if b == "I" else 1, int(t))
+for n in out_nodes:
+    n["refs"] = sorted(node_refs.get(n["id"], []), key=refsort)
+
+all_torahs = sorted({r for rs in node_refs.values() for r in rs}, key=refsort)
+bundle = {"nodes": out_nodes, "edges": out_edges, "torahs": all_torahs,
           "stats": {"nodes": len(out_nodes), "edges": len(out_edges)}}
 (G / "explorer_data.json").write_text(json.dumps(bundle, ensure_ascii=False, separators=(",", ":")))
 print(f"bundled {len(out_nodes)} nodes, {len(out_edges)} edges -> {(G/'explorer_data.json').stat().st_size//1024} KB")
