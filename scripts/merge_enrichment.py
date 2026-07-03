@@ -117,16 +117,25 @@ for tmp, d in sweep.items():
                     "outliers": d.get("outliers", [])})
 
 # ---- 4. stable english-slug ids -------------------------------------------
+STOP = {"the", "a", "an", "of", "in", "on", "as", "to", "and", "or", "its", "his", "her",
+        "he", "she", "it", "is", "was", "are", "be", "being", "that", "this", "which", "who",
+        "with", "for", "from", "by", "at", "into", "itself", "himself", "here", "e", "g", "i",
+        "ie", "eg", "esp", "also", "not", "no", "one", "some", "any", "act", "state", "aspect",
+        "quality", "concept", "term", "thing", "מ"}
+
+
 def base_slug(c):
     g = c.get("gloss_en") or ""
-    m = re.match(r"\s*([a-zA-Z][a-zA-Z'-]*)", g)          # leading transliteration if any
-    if m and len(m.group(1)) > 2:
-        return m.group(1).lower().strip("'-")
-    words = re.findall(r"[a-zA-Z]+", g.lower())
-    stop = {"the", "a", "an", "of", "in", "as", "to", "and", "or", "its", "his"}
-    words = [w for w in words if w not in stop]
+    # prefer a parenthetical romanization (the emic name), e.g. "(oneg akhilat shabbat)"
+    for paren in re.findall(r"\(([^)]+)\)", g):
+        toks = re.findall(r"[a-zA-Z']{2,}", paren)
+        toks = [t for t in toks if t.lower() not in STOP and not re.search(r"[א-ת]", t)]
+        if 1 <= len(toks) <= 4 and paren.strip()[0].isascii():
+            return "-".join(t.lower().strip("'") for t in toks[:3])
+    # else: first content words of the gloss, skipping articles/aux/filler
+    words = [w for w in re.findall(r"[a-zA-Z]+", g.lower()) if w not in STOP and len(w) > 1]
     if words:
-        return "-".join(words[:2])
+        return "-".join(words[:3])
     return "he-" + re.sub(r"[^\w]", "", c["canonical_he"])[:10]
 
 seen = collections.Counter()
