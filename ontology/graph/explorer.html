@@ -141,14 +141,32 @@ fetch('./explorer_data.json').then(r=>r.json()).then(d=>{
   go(start.id);
 });
 function tokens(s){return (s||'').toLowerCase().match(/[a-z]{3,}|[א-ת]{2,}/g)||[];}
+let ctxx={},conceptsIn={};
 function buildTokenIndex(){
-  const df={};
+  const df={},proofBy={};
+  EDGES.forEach(e=>{ if(e.p){(proofBy[e.s]=proofBy[e.s]||[]).push(e.p);(proofBy[e.t]=proofBy[e.t]||[]).push(e.p);} });
   NODES.forEach(n=>{
-    const t=new Set(tokens(n.gloss).concat(tokens(n.he)));
-    tokx[n.id]=t; t.forEach(w=>df[w]=(df[w]||0)+1);
+    const st=new Set(tokens(n.gloss).concat(tokens(n.he)));
+    const ct=new Set(); (proofBy[n.id]||[]).forEach(p=>tokens(p).forEach(w=>{if(!st.has(w))ct.add(w);}));
+    tokx[n.id]=st; ctxx[n.id]=ct;
+    st.forEach(w=>df[w]=(df[w]||0)+1); ct.forEach(w=>df[w]=(df[w]||0)+1);
+    (n.refs||[]).forEach(r=>{(conceptsIn[r]=conceptsIn[r]||[]).push(n.id);});
   });
   const N=NODES.length;
   Object.keys(df).forEach(w=>idf[w]=Math.log(N/(df[w])));
+}
+// parallel-match score of a query token-count against one concept (own gloss full, proof partial,
+// gentle prior against mega-hubs). Mirrors scripts/project_test.py (validated).
+function scoreOne(q,cid){
+  const st=tokx[cid]||new Set(),ct=ctxx[cid]||new Set();let s=0;
+  for(const w in q){const wt=(idf[w]||0.5)*(1+Math.log(q[w]));
+    if(st.has(w))s+=wt; else if(ct.has(w))s+=0.35*wt;}
+  return s/(1+Math.log(1+(byId[cid]?byId[cid].deg:0))*0.15);
+}
+function matchList(text,topn,pool){
+  const qt=tokens(text);if(!qt.length)return[];const q={};qt.forEach(w=>q[w]=(q[w]||0)+1);
+  const ids=pool||NODES.filter(n=>n.kind!=='statement').map(n=>n.id);
+  return ids.map(cid=>[cid,scoreOne(q,cid)]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,topn);
 }
 
 // ---------- modes ----------
@@ -161,6 +179,7 @@ const MODES=[
   ['common','Common','shared ground of two concepts'],
   ['torah','By Torah','everything from one teaching'],
   ['match','Match text','paste text → closest concepts'],
+  ['project','Project chain','map a causal narrative into a Torah'],
 ];
 function buildModes(){
   $('modes').innerHTML='';
@@ -173,6 +192,15 @@ function setMode(m){
   if(m==='explore'||m==='aspects'||m==='advice'||m==='effects'){ if(focus)go(focus); }
   else if(m==='torah'){ runTorah($('torahSel').value); }
   else { $('list').innerHTML=''; }
+}
+let stageN=3;
+function renderStages(){
+  const box=$('stages');box.innerHTML='';
+  for(let i=0;i<stageN;i++){
+    const wrap=document.createElement('div');wrap.style.marginBottom='6px';
+    wrap.innerHTML=`<div class="ac"><input id="ac_stg_${i}" autocomplete="off" placeholder="concept ${i+1} — pick from the list"><div class="acmenu" id="acm_stg_${i}"></div></div>`;
+    box.appendChild(wrap); wireAc('stg_'+i);
+  }
 }
 function renderInputs(){
   const I=$('inputs');
@@ -192,6 +220,15 @@ function renderInputs(){
       <button class="go" id="runm">Find closest concepts</button>`;
     $('runm').onclick=runMatch;
     $('matchbox').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.metaKey||e.ctrlKey))runMatch();});
+  } else if(mode==='project'){
+    I.innerHTML=`<label>Pick concepts in causal order — X → Y → Z</label><div id="stages"></div>
+      <div style="display:flex;gap:6px"><button id="addStg" style="flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:8px;padding:6px;cursor:pointer">+ concept</button>
+      <button id="delStg" style="flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:8px;padding:6px;cursor:pointer">– concept</button></div>
+      <button class="go" id="runp">Project into the map</button>`;
+    renderStages();
+    $('addStg').onclick=()=>{const v=saveStages();stageN=Math.min(6,stageN+1);renderStages();restoreStages(v);};
+    $('delStg').onclick=()=>{const v=saveStages();stageN=Math.max(2,stageN-1);renderStages();restoreStages(v);};
+    $('runp').onclick=runProject;
   } else {
     I.innerHTML=`<label>Search concept</label>${acField('q')}`;
     wireAc('q',true);
@@ -251,19 +288,125 @@ function runTorah(ref){
   setStatus(`LM ${ref.replace(':',' · ')} — ${es.length} edges, ${ns.size} concepts`);
 }
 function runMatch(){
-  const q=$('matchbox').value; const qt=tokens(q);
-  if(!qt.length){setStatus('type some text first');return;}
-  const qset={}; qt.forEach(w=>qset[w]=(qset[w]||0)+1);
-  const scored=NODES.filter(n=>n.kind!=='statement').map(n=>{
-    let s=0; const t=tokx[n.id]||new Set();
-    Object.keys(qset).forEach(w=>{ if(t.has(w)) s+=(idf[w]||0.5)*(1+Math.log(qset[w])); });
-    return {n,s};
-  }).filter(x=>x.s>0).sort((a,b)=>b.s-a.s).slice(0,40);
+  const q=$('matchbox').value;
+  const scored=matchList(q,40);
   if(!scored.length){setStatus('no concept matched that text');$('list').innerHTML='<div class="sec">No matches</div>';return;}
-  const max=scored[0].s;
-  listResults(scored.map(x=>x.n),'Closest concepts',scored.map(x=>Math.round(100*x.s/max)+'%'));
-  go(scored[0].n.id);
-  setStatus(`best match: ${scored[0].n.he} (${scored.length} candidates)`);
+  const max=scored[0][1];
+  listResults(scored.map(x=>byId[x[0]]),'Closest concepts',scored.map(x=>Math.round(100*x[1]/max)+'%'));
+  go(scored[0][0]);
+  setStatus(`best match: ${byId[scored[0][0]].he} (${scored.length} candidates)`);
+}
+// ---------- structural projection (validated in scripts/project_test.py) ----------
+function hopCost(e,home){ if((e.ref||[]).includes(home))return 0.12; return e.ty==='eitza'?1.6:2.0; }
+// cheapest a->b path with >=1 forward causal (eitza) hop; strict=home keeps it in-chapter
+function causalPath(a,b,home,strict){
+  if(a===b)return[0,[a]];
+  const key=(id,c)=>id+'|'+c; const dist={},prev={},h=[[0,a,0]]; dist[key(a,0)]=0; let guard=0;
+  while(h.length&&guard++<20000){
+    let mi=0;for(let i=1;i<h.length;i++)if(h[i][0]<h[mi][0])mi=i;
+    const [c,node,caused]=h.splice(mi,1)[0];
+    if(c>(dist[key(node,caused)]??1e9))continue;
+    if(node===b&&caused){const path=[[node,caused]];let k=key(node,caused);
+      while(prev[k]){path.push(prev[k]);k=key(prev[k][0],prev[k][1]);}path.reverse();
+      return[c,path.map(p=>p[0])];}
+    (adj[node]?.all||[]).forEach(x=>{
+      if(x.dir!=='out'&&x.ty==='eitza')return;                 // eitza only forward (cause->effect)
+      if(strict&&!(x.e.ref||[]).includes(strict))return;
+      const kind=x.ty==='eitza'?'cause':'reframe';
+      const nc=caused||kind==='cause'?1:0;
+      const cost=c+hopCost(x.e,home)+(kind==='reframe'?0.15:0);
+      const nk=key(x.o,nc);
+      if(cost<(dist[nk]??1e9)){dist[nk]=cost;prev[nk]=[node,caused];h.push([cost,x.o,nc]);}
+    });
+  }
+  return[null,null];
+}
+// concept-to-concept parallel: A parallels X if A==X, or a bechina-aspect of X, or gloss-akin
+function glossSim(x,a){const q={};tokens((byId[x].gloss||'')+' '+(byId[x].he||'')).forEach(w=>q[w]=(q[w]||0)+1);return scoreOne(q,a);}
+function parallels(x,pool,topn){
+  const scored=[];
+  pool.forEach(a=>{let s=0; if(a===x)s+=5; if(adj[x]&&adj[x].bechina.includes(a))s+=2; s+=0.5*glossSim(x,a);
+    if(s>0)scored.push([a,s]);});
+  return scored.sort((p,q)=>q[1]-p[1]).slice(0,topn||6);
+}
+// project a picked concept sequence onto a parallel causal chain, in-Torah preferred
+function project(conceptIds){
+  const cover={};
+  conceptIds.forEach(x=>{const seen=new Set();(byId[x].refs||[]).forEach(r=>seen.add(r));
+    (adj[x]?adj[x].bechina:[]).forEach(nb=>(byId[nb].refs||[]).forEach(r=>seen.add(r)));
+    seen.forEach(r=>cover[r]=(cover[r]||0)+1);});
+  const homes=Object.keys(cover).filter(r=>cover[r]>=2).sort((a,b)=>cover[b]-cover[a]).slice(0,16);
+  let best=null;
+  homes.forEach(home=>{
+    const pool=conceptsIn[home]||[]; if(!pool.length)return;
+    const candk=conceptIds.map(x=>parallels(x,pool,6));
+    if(candk.some(c=>!c.length))return;
+    const maxs=Math.max(...candk.flat().map(x=>x[1]))||1;
+    const semc=candk.map(c=>{const m={};c.forEach(([cid,sc])=>m[cid]=1-sc/maxs);return m;});
+    let loc=null;
+    (function dfs(i,used,chain,links,cost){
+      if(loc&&cost>=loc.cost)return;
+      if(i===conceptIds.length){loc={cost,home,chain:chain.slice(),links:links.slice()};return;}
+      for(const [cid] of candk[i]){ if(used.has(cid))continue;
+        if(i===0)dfs(1,new Set([cid]),[cid],[],semc[0][cid]);
+        else{const [pc,nodes]=causalPath(chain[chain.length-1],cid,home,home);
+          if(pc===null)continue;const u=new Set(used);u.add(cid);
+          dfs(i+1,u,chain.concat(cid),links.concat([[pc,nodes]]),cost+semc[i][cid]+pc);}
+      }
+    })(0,new Set(),[],[],0);
+    if(loc&&(!best||loc.cost<best.cost))best=loc;
+  });
+  if(!best){ // cross-Torah fallback: map each to itself, connect with penalty
+    const chain=conceptIds.slice();const links=[];let cost=0,ok=true;
+    for(let i=0;i<chain.length-1;i++){const [pc,nodes]=causalPath(chain[i],chain[i+1],null);
+      if(pc===null){ok=false;break;}cost+=pc+2;links.push([pc,nodes]);}
+    if(ok)best={cost,home:null,chain,links};
+  }
+  return best;
+}
+function saveStages(){const v=[];for(let i=0;i<stageN;i++){const el=$('ac_stg_'+i);v.push(el?{t:el.value,id:el.dataset.id||''}:{t:'',id:''});}return v;}
+function restoreStages(v){v.forEach((o,i)=>{const el=$('ac_stg_'+i);if(el){el.value=o.t;if(o.id)el.dataset.id=o.id;}});}
+function runProject(){
+  const picks=[];for(let i=0;i<stageN;i++){const el=$('ac_stg_'+i);if(el&&el.dataset.id)picks.push(el.dataset.id);}
+  if(picks.length<2){setStatus('pick at least two concepts from the dropdowns');return;}
+  const res=project(picks);
+  if(!res){setStatus('no projection found for those concepts');$('detail').innerHTML='<div class="dhead"><div class="meta">No projection found.</div></div>';return;}
+  const stages=picks.map(id=>byId[id].he);
+  const nodes=res.chain.slice(),edges=[],pathNodes=new Set(res.chain);
+  res.links.forEach(([c,ns])=>{for(let i=0;i<ns.length-1;i++){nodes.push(ns[i],ns[i+1]);
+    const e=EDGES.find(e=>(e.s===ns[i]&&e.t===ns[i+1])||(e.s===ns[i+1]&&e.t===ns[i]));if(e)edges.push(e);}
+    ns.forEach(x=>pathNodes.add(x));});
+  view={path:[...pathNodes],edges,nodes:[...new Set(nodes)],center:null,proj:res};
+  layoutProject(res); drawProjectDetail(picks,res); drawCrumbs();
+  setStatus(res.home?`projected onto LM ${res.home.replace(':',' · ')} · weight ${res.cost.toFixed(2)}`:`cross-Torah projection · weight ${res.cost.toFixed(2)}`);
+}
+function layoutProject(res){
+  resize();const[W,H]=stageWH();sim={};const chain=res.chain,n=chain.length,padX=W*0.12,gap=(W-2*padX)/Math.max(1,n-1);
+  chain.forEach((id,i)=>{sim[id]={x:padX+gap*i,y:H*0.5,id,fixed:true};});
+  // place intermediate reframe nodes between anchors
+  res.links.forEach(([c,ns],li)=>{const x0=sim[chain[li]].x,x1=sim[chain[li+1]].x;
+    ns.forEach((id,k)=>{if(!sim[id])sim[id]={x:x0+(x1-x0)*(k/(ns.length-1||1)),y:H*0.5+40*Math.sin(k+li),id};});});
+  redraw();
+}
+function drawProjectDetail(picks,res){
+  const D=$('detail');
+  let html=`<div class="dhead"><div class="he" style="font-size:20px">${res.home?'לקוטי מוהר"ן '+res.home.replace(':',' · '):'Cross-Torah projection'}</div>
+    <div class="meta">${res.chain.length}-concept projection · weight ${res.cost.toFixed(2)} ${res.home?'· stays in one teaching':'· crosses teachings'}</div></div>`;
+  html+=`<div class="grp"><h3>Your concepts → parallels in the text</h3>`;
+  res.chain.forEach((cid,i)=>{const o=byId[cid],p=byId[picks[i]],same=picks[i]===cid;
+    html+=`<div class="conn" data-go="${cid}">
+      <div class="row"><span class="he" style="color:var(--accent)">${p.he||''}</span>
+        <span class="arrowlbl" style="margin:0 6px">${same?'is in this teaching':'∥ parallels →'}</span>
+        ${same?'':`<span class="he">${o.he||''}</span>`}</div>
+      <div class="en">${o.gloss||''}</div>`;
+    if(i<res.links.length){const [c,ns]=res.links[i];
+      const chainHe=ns.map(x=>`<span class="pathlnk" data-go="${x}" style="cursor:pointer;border-bottom:1px solid var(--line2)">${byId[x].he}</span>`).join(' <span class="op" style="color:var(--faint)">→</span> ');
+      html+=`<div class="rf" style="color:var(--eitza);margin-top:7px;direction:rtl">⟶ causes ${c<0.5?'(same teaching, near-free)':'(cost '+c.toFixed(2)+')'}:<br>${chainHe}</div>`;}
+    html+=`</div>`;});
+  html+=`</div>`;
+  D.innerHTML=html;D.scrollTop=0;
+  D.querySelectorAll('.conn').forEach(c=>c.onclick=ev=>{if(ev.target.classList.contains('pathlnk'))return;setMode('explore');go(c.dataset.go);});
+  D.querySelectorAll('.pathlnk').forEach(el=>el.onclick=()=>{setMode('explore');go(el.dataset.go);});
 }
 // weighted shortest path (cost = 1/weight so stronger, better-attested links are "closer")
 function runPath(){
