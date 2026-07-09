@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 8,
+ "chunk": "8_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "גן",
+   "target_he": "אורייתא",
+   "proof": "גַּן – דָּא אוֹרַיְתָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נשמות ישראל המעיינים ומבינים בהתורה",
+   "target_he": "עשבין ודשאין",
+   "proof": "הֵם בְּחִינַת עֲשָׂבִין וּדְשָׁאִין דְּאִתְרְבִיאוּ בַּגָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מעין",
+   "target_he": "חכמה",
+   "proof": "הוּא מִמַּעְיָן, דָּא חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מעין",
+   "target_he": "נשמות ישראל",
+   "proof": "וּמֵאַיִן הֵם גְּדֵלִים, הוּא מִמַּעְיָן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חכמה והשכל",
+   "target_he": "מעין",
+   "proof": "וּמֵהֵיכָן מְקַבְּלִין הַחָכְמָה וְהַשֵּׂכֶל, שֶׁהוּא בְּחִינַת הַמַּעְיָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "חכמה והשכל",
+   "proof": "וּמֵהֵיכָן מְקַבְּלִין הַחָכְמָה וְהַשֵּׂכֶל... הוּא מֵהַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מעין מבית ה' יצא",
+   "target_he": "תפילה",
+   "proof": "וּמַעְיָן מִבֵּית ה' יֵצֵא, הוּא הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

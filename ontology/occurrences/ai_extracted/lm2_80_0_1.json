@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 80,
+ "chunk": "80_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַמְמֻנֶּה",
+   "target_he": "הַיֵּצֶר הָרָע",
+   "proof": "אֲזַי הַמְמֻנֶּה, הַיְנוּ הַיֵּצֶר הָרָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַצְבִּיעוּ",
+   "target_he": "שֶׁיַּרְאֶה אֵיזֶה צְבִיעוּת בִּפְנֵי הֲמוֹן עָם",
+   "proof": "הָיָה מֵסִית וְאוֹמֵר לָהֶם: הַצְבִּיעוּ, הַיְנוּ שֶׁיַּרְאֶה אֵיזֶה צְבִיעוּת בִּפְנֵי הֲמוֹן עָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשָּׂגַת הַתּוֹרָה",
+   "target_he": "הִתְנַשְּׂאוּת",
+   "proof": "כְּשֶׁהָיוּ שְׁנַיִם שָׁוִין בְּהַשָּׂגַת הַתּוֹרָה, שֶׁעַל־יָדָהּ הָיוּ זוֹכִין לְהִתְנַשְּׂאוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַיֵּצֶר",
+   "target_he": "צְבִיעוּת",
+   "proof": "וְהַמְמֻנֶּה, הַיְנוּ הַיֵּצֶר, פִּתָּה אֶת כָּל אֶחָד עַל צְבִיעוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

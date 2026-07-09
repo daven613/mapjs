@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_5_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כָּתְלֵי בֵּית הַמִּדְרָשׁ",
+   "target_he": "עֲשִׁירִים",
+   "proof": "כָּתְלֵי בֵּית הַמִּדְרָשׁ – זֶה בְּחִינַת עֲשִׁירִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָּתְלֵי בֵּית הַמִּדְרָשׁ",
+   "target_he": "דֹּרְשֵׁי ה' לֹא יַחְסְרוּ כָל טוֹב",
+   "proof": "וְזֶהוּ: כָּתְלֵי בֵּית הַמִּדְרָשׁ, בְּחִינַת (תהילים ל״ד:י״א): דֹּרְשֵׁי ה' לֹא יַחְסְרוּ כָל טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דּוֹרְשֵׁי ה'",
+   "target_he": "הַצַּדִּיקִים",
+   "proof": "דְּהַיְנוּ הַצַּדִּיקִים דּוֹרְשֵׁי ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַצַּדִּיקִים",
+   "target_he": "כָּל טוּב",
+   "proof": "שֶׁכָּל טוּב נִמְשָׁךְ מֵהֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בֵּית הַמִּדְרָשׁ",
+   "target_he": "כָּל טוּב",
+   "proof": "וְכָל טוּב שֶׁיֵּשׁ לָהֶם נִמְשָׁךְ לָהֶם מִבְּחִינַת בֵּית הַמִּדְרָשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בֵּית הַמִּדְרָשׁ",
+   "target_he": "דּוֹרְשֵׁי ה' לֹא יַחְסְרוּ כָל טוֹב",
+   "proof": "הַיְנוּ בְּחִינַת: דּוֹרְשֵׁי ה' לֹא יַחְסְרוּ כָל טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דּוֹרְשֵׁי ה'",
+   "target_he": "כָּל הַהַשְׁפָּעוֹת",
+   "proof": "שֶׁמֵּהֶם נִמְשָׁךְ כָּל הַהַשְׁפָּעוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בַּת קוֹל",
+   "target_he": "מַלְכוּת",
+   "proof": "בַּת קוֹל – זֶה בְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׁת עִזְקָאִין דְּקָנֶה",
+   "target_he": "מַלְכוּת",
+   "proof": "כִּי הַקּוֹל יוֹצֵא מִשִּׁת עִזְקָאִין דְּקָנֶה, בְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

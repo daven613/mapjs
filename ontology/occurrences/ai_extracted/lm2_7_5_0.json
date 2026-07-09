@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יִרְאַת שָׁמַיִם",
+   "target_he": "דְּבָרָיו נִשְׁמָעִין אֵצֶל חֲבֵרוֹ",
+   "proof": "כָּל מִי שֶׁיֵּשׁ בּוֹ יִרְאַת שָׁמַיִם, דְּבָרָיו נִשְׁמָעִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאַת שָׁמַיִם",
+   "target_he": "קִיּוּם דְּבָרָיו אֵצֶל חֲבֵרוֹ",
+   "proof": "וְגַם כְּדֵי שֶׁיִּתְקַיְּמוּ דְּבָרָיו אֵצֶל חֲבֵרוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאַת חֶטְאוֹ",
+   "target_he": "חָכְמָתוֹ",
+   "proof": "מִי שֶׁיִּרְאַת חֶטְאוֹ קוֹדֶמֶת לְחָכְמָתוֹ, חָכְמָתוֹ מִתְקַיֶּמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאַת שָׁמַיִם",
+   "target_he": "הַכְנָסַת דַּעַת בַּחֲבֵרוֹ",
+   "proof": "מִי שֶׁרוֹצֶה לְהַכְנִיס דַּעַת בַּחֲבֵרוֹ, הוּא צָרִיךְ שֶׁיִּהְיֶה לוֹ יִרְאַת שָׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בֵּן אוֹ תַּלְמִיד",
+   "target_he": "חֲלִיפוֹת",
+   "proof": "שֶׁזֶּה בְּחִינַת חֲלִיפוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאָה",
+   "target_he": "דַּעְתּוֹ נִשְׁאָר אַחֲרָיו",
+   "proof": "כִּי עַל־יְדֵי יִרְאָה נִשְׁאָר דַּעְתּוֹ אַחֲרָיו כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

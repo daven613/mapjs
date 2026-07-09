@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 58,
+ "chunk": "58_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "אכילה",
+   "proof": "כִּי עַל־יְדֵי הַדַּעַת בָּאִים תְּלָת הַנַּ\"ל, שֶׁהֵם: אֲכִילָה וּשְׁתִיָּה וּמַלְבּוּשִׁים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "שתיה",
+   "proof": "כִּי עַל־יְדֵי הַדַּעַת בָּאִים תְּלָת הַנַּ\"ל, שֶׁהֵם: אֲכִילָה וּשְׁתִיָּה וּמַלְבּוּשִׁים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "מלבושים",
+   "proof": "כִּי עַל־יְדֵי הַדַּעַת בָּאִים תְּלָת הַנַּ\"ל, שֶׁהֵם: אֲכִילָה וּשְׁתִיָּה וּמַלְבּוּשִׁים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אכילה",
+   "target_he": "מן",
+   "proof": "בִּבְחִינַת (משלי ט׳:ה׳): לְכוּ לַחֲמוּ בְלַחְמִי; בְּחִינַת אֲכִילָה, בְּחִינַת מָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מן",
+   "target_he": "דעת התורה",
+   "proof": "הַכָּלוּל בְּדַעַת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שתיה",
+   "target_he": "דעת",
+   "proof": "שְׁתִיָּה כָּלוּל בַּדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שתיה",
+   "target_he": "באר",
+   "proof": "בִּבְחִינַת (ישעיהו נ״ה:א׳): הוֹי כָּל צָמֵא לְכוּ לַמַּיִם; שֶׁהִיא בְּאֵר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מלבושים",
+   "target_he": "ענן",
+   "proof": "מַלְבּוּשִׁים – בִּבְחִינַת (ישעיהו ג׳:ו׳): שִׂמְלָה לְכָה, קָצִין תִּהְיֶה לָּנוּ; בְּחִינַת עָנָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ענן",
+   "target_he": "לבוש",
+   "proof": "בְּחִינַת לְבוּשׁ, בְּחִינַת (איוב ל״ח:ט׳): בְּשׂוּמִי עָנָן לְבוּשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

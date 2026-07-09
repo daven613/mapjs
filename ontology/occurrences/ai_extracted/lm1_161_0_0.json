@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 161,
+ "chunk": "161_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אדם",
+   "target_he": "עץ השדה",
+   "proof": "כִּי הָאָדָם עֵץ הַשָּׂדֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מחלוקת",
+   "target_he": "מים",
+   "proof": "וְהַמַּחֲלֹקֶת נִקְרָא מַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מחלוקת",
+   "target_he": "אדם",
+   "proof": "הַמַּחֲלֹקֶת מַגְבִּיהַּ וּמֵרִים אֶת הָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

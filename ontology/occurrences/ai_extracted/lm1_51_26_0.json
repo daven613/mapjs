@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 51,
+ "chunk": "51_26_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר",
+   "target_he": "הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "כִּי עַל־יְדֵי שֶׁקֶר הוּא מֵסִיר מֵעָלָיו הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר",
+   "target_he": "רִחוּק מֵאֶחָד",
+   "proof": "וְהוּא רָחוֹק מֵאֶחָד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "אַךְ עַל־יְדֵי אֱמֶת, הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ עָלָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַהַשְׁגָּחָה",
+   "target_he": "אֶחָד",
+   "proof": "וְעַל־יְדֵי הַהַשְׁגָּחָה, כֻּלּוֹ אֶחָד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

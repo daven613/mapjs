@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 79,
+ "chunk": "79_22_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שְׁבוּ אִישׁ תַּחְתָּיו",
+   "target_he": "שִׁפְלוּת",
+   "proof": "נִמְצָא שֶׁהוּא רוֹצֶה לִפְגֹּם בְּחִינַת שִׁפְלוּת הַנַּ\"ל, בְּחִינַת: שְׁבוּ אִישׁ תַּחְתָּיו וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַיּוֹרֵד לְאֻמָּנוּת חֲבֵרוֹ",
+   "target_he": "בְּחִינַת שִׁפְלוּת",
+   "proof": "נִמְצָא שֶׁהוּא רוֹצֶה לִפְגֹּם בְּחִינַת שִׁפְלוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֵשֶׁת",
+   "target_he": "שְׁבוּ אִישׁ תַּחְתָּיו",
+   "proof": "כִּי אֵשֶׁת רָאשֵׁי־תֵבוֹת: שְׁבוּ אִישׁ תַּחְתָּיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַיּוֹרֵד לְאֻמָּנוּת חֲבֵרוֹ",
+   "target_he": "בְּחִינַת עֲנָוָה וְשִׁפְלוּת",
+   "proof": "הַיְנוּ שֶׁפּוֹגֵם בִּבְחִינַת עֲנָוָה וְשִׁפְלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲנָוָה וְשִׁפְלוּת",
+   "target_he": "שְׁבוּ אִישׁ תַּחְתָּיו",
+   "proof": "שֶׁהוּא בְּחִינַת: שְׁבוּ אִישׁ תַּחְתָּיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבוּ אִישׁ תַּחְתָּיו",
+   "target_he": "אַל יֵצֵא אִישׁ מִמְּקוֹמוֹ",
+   "proof": "שֶׁעַל־יְדֵי־זֶה: אַל יֵצֵא אִישׁ מִמְּקוֹמוֹ, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

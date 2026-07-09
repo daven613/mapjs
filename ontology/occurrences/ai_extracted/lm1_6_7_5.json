@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 6,
+ "chunk": "6_7_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שם קס\"א",
+   "target_he": "שם אקי\"ק במילואו",
+   "proof": "כִּי שֵׁם קס\"א הוּא שֵׁם אקי\"ק בְּמִלּוּאוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דרך עם השלש אותיות",
+   "target_he": "שתי פעמים יב\"ק",
+   "proof": "כִּי יָמִין בְּמִלּוּאוֹ עוֹלֶה דֶּרֶךְ עִם הַשָּׁלֹשׁ אוֹתִיּוֹת, שֶׁהוּא שְׁתֵּי פְּעָמִים יב\"ק וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כל בחינות הנ\"ל",
+   "target_he": "הימין פשוטה לקבל תשובתו",
+   "proof": "וְאָז עַל־יְדֵי כָּל בְּחִינוֹת הַנַּ\"ל, הַיָּמִין פְּשׁוּטָה לְקַבֵּל תְּשׁוּבָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

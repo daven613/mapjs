@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 53,
+ "chunk": "53_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דעת הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "הֵ\"א",
+   "proof": "שֶׁהוּא בְּחִינַת הֵ\"א",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "הוֹלָדָה",
+   "proof": "וְהוּא רָחוֹק מִדַּעַת הָאָדָם... וַאֲזַי הוּא קָטָן וְאֵין מוֹלִיד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

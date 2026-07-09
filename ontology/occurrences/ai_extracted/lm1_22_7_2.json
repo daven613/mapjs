@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_7_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "החכם",
+   "target_he": "העצם",
+   "proof": "שֶׁהוּא בְּחִינַת הָעֶצֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קול ההברה",
+   "target_he": "קול העוונות",
+   "proof": "הַיְנוּ קוֹל הָעֲוו‍ֹנוֹת שֶׁנִּתְעוֹרְרִים מִזֶּה הַקּוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "התוקע בבור",
+   "target_he": "שתני בבור תחתיות",
+   "proof": "בְּחִינוֹת (תהלים פח): שַׁתַּנִי בְּבוֹר תַּחְתִּיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יצא",
+   "target_he": "לצאת מתוך הרע שלו",
+   "proof": "הַיְנוּ שֶׁיּוּכַל לָצֵאת מִתּוֹךְ הָרָע שֶׁלּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קול שופר",
+   "target_he": "יציאה מתוך הרע",
+   "proof": "אִם קוֹל שׁוֹפָר שָׁמַע – יָצָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קול הברה",
+   "target_he": "לא יצא",
+   "proof": "וְאִם קוֹל הֲבָרָה שָׁמַע – לֹא יָצָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 155,
+ "chunk": "155_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עֲבוֹדָה זָרָה",
+   "target_he": "חֲרוֹן אַף",
+   "proof": "כָּל זְמַן שֶׁיֵּשׁ עֲבוֹדָה זָרָה בָּעוֹלָם חֲרוֹן אַף בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "חֲרוֹן אַף",
+   "proof": "עַל־יְדֵי אֱמוּנָה, שֶׁהוּא הֶפֶךְ עֲבוֹדָה זָרָה, נִתְבַּטֵּל הַחֲרוֹן אַף",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "אֲרִיכַת אַפַּיִם",
+   "proof": "עַל־יְדֵי אֱמוּנָה... וְזוֹכִין לַאֲרִיכַת אַפַּיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֱמוּנָה",
+   "target_he": "הֶפֶךְ עֲבוֹדָה זָרָה",
+   "proof": "עַל־יְדֵי אֱמוּנָה, שֶׁהוּא הֶפֶךְ עֲבוֹדָה זָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֲרִיכַת אַפַּיִם",
+   "target_he": "הֶפֶךְ הַחֲרוֹן אַף",
+   "proof": "וְזוֹכִין לַאֲרִיכַת אַפַּיִם, שֶׁהוּא הֶפֶךְ הַחֲרוֹן אַף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶךְ אַפַּיִם",
+   "target_he": "אֱמוּנָה",
+   "proof": "אֶרֶךְ אַפַּיִם הוּא תָּלוּי בִּבְחִינַת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

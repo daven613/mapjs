@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_22",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מִלְחָא כִּי סַרְיָא",
+   "target_he": "תַּאֲוַת הַמָּמוֹן",
+   "proof": "זֶה שֶׁנָּפַל לְסִרְחוֹן תַּאֲוַת הַמָּמוֹן כוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כִּי סַרְיָא",
+   "target_he": "עַכּוּ\"ם",
+   "proof": "שֶׁהוּא לָשׁוֹן הַנֶּאֱמַר בְּעַכּוּ\"ם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מָמוֹן",
+   "target_he": "עֲבוֹדָה זָרָה",
+   "proof": "כִּי הַמְּשׁוּקָע בְּמָמוֹן, עוֹבֵד כָּל הָעַכּוּ\"ם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

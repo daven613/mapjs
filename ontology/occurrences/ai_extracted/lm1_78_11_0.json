@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 78,
+ "chunk": "78_11_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מים",
+   "target_he": "תורה",
+   "proof": "כִּי מַיִם זוֹ תּוֹרָה, כַּיָּדוּעַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוח אלקים",
+   "target_he": "רוח הקודש",
+   "proof": "וְרוּחַ אֱלֹקִים, שֶׁהוּא רוּחַ־הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "רוח חיים",
+   "proof": "מְרַחֶפֶת וְחוֹפֵף עָלָיו וְשׁוֹאֵב רוּחַ חַיִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "חיים",
+   "proof": "כִּי בְּלֹא תּוֹרָה אִי אֶפְשָׁר לִחְיוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כנפי ריאה",
+   "target_he": "כל גופא",
+   "proof": "אִלְמָלֵא כַּנְפֵי רֵאָה דְּנָשְׁבִי עַל לִבָּא הָוֵי לִבָּא אוֹקִיד כָּל גּוּפָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ריאה",
+   "target_he": "מים",
+   "proof": "וְרֵאָה דָּא מַיָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מים",
+   "target_he": "תורה",
+   "proof": "וּמַיָּא דָּא תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

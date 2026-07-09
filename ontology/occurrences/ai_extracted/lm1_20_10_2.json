@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_10_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "פְּגַם הַבְּרִית",
+   "target_he": "פְּגַם הַדַּעַת",
+   "proof": "כִּי פְּגַם הַבְּרִית הוּא פְּגַם הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דַּעַת",
+   "target_he": "בְּרִית",
+   "proof": "בִּבְחִינַת וַיֵּדַע אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קוֹל",
+   "target_he": "דַּעַת",
+   "proof": "וְהַקּוֹל הוּא מְעוֹרֵר הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דַּעַת",
+   "target_he": "כַּוָּנָה",
+   "proof": "בִּבְחִינַת הַקּוֹל מְעוֹרֵר הַכַּוָּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַלְאָךְ",
+   "target_he": "משֶׁה",
+   "proof": "וַיִּשְׁלַח מַלְאָךְ – זֶה משֶׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "משֶׁה",
+   "target_he": "דַּעַת",
+   "proof": "בְּחִינַת דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת הַדַּעַת",
+   "target_he": "וַיּוֹצִיאֵנוּ",
+   "proof": "וְעַל־יְדֵי הִתְגַּלּוּת הַדַּעַת כְּתִקּוּנוֹ, אָז: וַיּוֹצִיאֵנוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קוֹל",
+   "target_he": "גְּאֻלָּה",
+   "proof": "כִּי הַגְּאֻלָּה הָיְתָה עַל־יְדֵי קוֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 156,
+ "chunk": "156_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "קבלת החמימות ממי שלמעלה",
+   "target_he": "הורדת חמימות לאחר",
+   "proof": "וְהוּא מְקַבֵּל הַחֲמִימוּת מִמַּה שֶּׁלְּמַעְלָה מִמֶּנּוּ, וְיוּכַל לְהוֹרִיד חֲמִימוּת לְאַחֵר גַּם־כֵּן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קבלת החמימות ממי שלמעלה",
+   "target_he": "התקררות",
+   "proof": "אֲבָל מִי שֶׁאֵינוֹ מְקַבֵּל הַחֲמִימוּת מִמִּי שֶׁלְּמַעְלָה, אַף שֶׁמֵּבִיא חֲמִימוּת לְאַחֵר, הוּא רַק לְפִי שָׁעָה, וְהוּא עַצְמוֹ מִתְקָרֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

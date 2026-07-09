@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 135,
+ "chunk": "135_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "צַדִּיקִים",
+   "target_he": "קְדֻשַּׁת הַיּוֹם־טוֹב",
+   "proof": "כִּי עִקַּר קְדֻשַּׁת הַיּוֹם־טוֹב תָּלוּי בַּצַּדִּיקִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קַבָּלַת הַיּוֹם־טוֹב",
+   "target_he": "פְּנֵי רַבּוֹ",
+   "proof": "וּכְשֶׁמְּקַבֵּל אֶת הַיּוֹם־טוֹב הוּא מְקַבֵּל פְּנֵי רַבּוֹ מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קַבָּלַת פְּנֵי רַבּוֹ",
+   "target_he": "הַגַּדְלוּת",
+   "proof": "וְעַל־יְדֵי־זֶה נִתְבַּטֵּל הַגַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

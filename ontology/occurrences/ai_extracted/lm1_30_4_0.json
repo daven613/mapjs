@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שׂוֹנֵא בֶּצַע",
+   "target_he": "הַשֵּׂכֶל הַתַּחְתּוֹן",
+   "proof": "וְלָבוֹא לְהַשֵּׂכֶל הַתַּחְתּוֹן הַזֶּה אִי אֶפְשָׁר כִּי אִם עַל־יְדֵי שׂוֹנֵא בֶּצַע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׂעֲרָא אֻכָּמָא",
+   "target_he": "הַשֵּׂכֶל הַתַּחְתּוֹן",
+   "proof": "כִּי שַׂעֲרָא אֻכָּמָא, שֶׁהוּא בְּחִינַת הַשֵּׂכֶל הַתַּחְתּוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׂעֲרָא אֻכָּמָא",
+   "target_he": "מַלְכוּת",
+   "proof": "כִּי שַׂעֲרָא אֻכָּמָא, שֶׁהוּא בְּחִינַת הַשֵּׂכֶל הַתַּחְתּוֹן, הוּא מִסִּטְרָא דְּמַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שׂוֹנֵא בֶּצַע",
+   "target_he": "מַלְכוּת",
+   "proof": "וְכֵן שׂוֹנֵא בֶּצַע הוּא מִסִּטְרָא דְּמַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשֵּׂכֶל הַתַּחְתּוֹן",
+   "target_he": "מַלְכוּת",
+   "proof": "כִּי הַשֵּׂכֶל הַתַּחְתּוֹן הוּא בְּחִינוֹת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַלְכוּת",
+   "target_he": "חָכְמָה תַּתָּאָה",
+   "proof": "שֶׁהוּא בְּחִינוֹת חָכְמָה תַּתָּאָה שֶׁבְּכָל עוֹלָם וְעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשֵּׂכֶל שֶׁל הַהַנְהָגָה וְהַמַּלְכוּת",
+   "target_he": "חָכְמָה וְשֵׂכֶל תַּחְתּוֹן",
+   "proof": "שֶׁזֶּה הַשֵּׂכֶל שֶׁל הַהַנְהָגָה וְהַמַּלְכוּת, הוּא בְּחִינַת חָכְמָה וְשֵׂכֶל תַּחְתּוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

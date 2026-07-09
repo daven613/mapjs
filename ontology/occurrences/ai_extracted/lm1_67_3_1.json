@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 67,
+ "chunk": "67_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כְּשֶׁמְּשַׁבְּרִין תַּאֲוַת אֲכִילָה",
+   "target_he": "צַדִּיק אוֹכֵל לְשׂבַע נַפְשׁוֹ",
+   "proof": "כְּשֶׁמְּשַׁבְּרִין תַּאֲוַת אֲכִילָה, בִּבְחִינַת: צַדִּיק אוֹכֵל לְשׂבַע נַפְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת תַּאֲוַת אֲכִילָה",
+   "target_he": "נְשִׂיאוּת פָּנִים",
+   "proof": "עַל־יְדֵי־זֶה הוּא נְשִׂיאוּת פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְשִׂיאוּת פָּנִים",
+   "target_he": "פְּקִידוּת וּשְׂרָרָה לְהָעַזֵּי פָּנִים",
+   "proof": "וַאֲזַי אֵין שׁוּם פְּקִידוּת וּשְׂרָרָה לְהָעַזֵּי פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּאֲוַת אֲכִילָה",
+   "target_he": "הַסְתָּרַת פָּנִים",
+   "proof": "כִּי יְנִיקָתָם הוּא רַק מֵהַסְתָּרַת פָּנִים, עַל־יְדֵי תַּאֲוַת אֲכִילָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַסְתָּרַת פָּנִים",
+   "target_he": "הָעַזֵּי פָּנִים",
+   "proof": "כִּי יְנִיקָתָם הוּא רַק מֵהַסְתָּרַת פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְשָׂבֵעַ יָלִין",
+   "target_he": "צַדִּיק אוֹכֵל לְשׂבַע נַפְשׁוֹ",
+   "proof": "זֶה בְּחִינַת צַדִּיק אוֹכֵל לְשׂבַע נַפְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "וְשָׂבֵעַ יָלִין",
+   "target_he": "בַּל יִפָּקֵד רָע",
+   "proof": "עַל־יְדֵי־זֶה, בַּל יִפָּקֵד רָע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רָע",
+   "target_he": "הָעַזֵּי פָּנִים",
+   "proof": "שֶׁאֵין שׁוּם פְּקֻדָּה וְהִתְמַנּוּת לְהָרַע, דְּהַיְנוּ לְהָעַזֵּי פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

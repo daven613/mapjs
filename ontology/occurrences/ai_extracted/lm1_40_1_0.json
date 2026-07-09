@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 40,
+ "chunk": "40_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "קִלְקוּל הָאֱמוּנָה",
+   "target_he": "הַנְּסִיעוֹת שֶׁל אָדָם",
+   "proof": "כָּל הַנְּסִיעוֹת שֶׁל אָדָם, הוּא בִּשְׁבִיל קִלְקוּל הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִלְקוּל הָאֱמוּנָה",
+   "target_he": "עֲבוֹדַת אֱלִילִים",
+   "proof": "הַיְנוּ בְּחִינַת עֲבוֹדַת אֱלִילִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַנְּסִיעָה",
+   "target_he": "קִלְקוּל אֱמוּנָה",
+   "proof": "כִּי הַנְּסִיעָה הִיא קִלְקוּל אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִלְקוּל אֱמוּנָה",
+   "target_he": "עֲבוֹדַת אֱלִילִים",
+   "proof": "הַיְנוּ בְּחִינַת עֲבוֹדַת אֱלִילִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

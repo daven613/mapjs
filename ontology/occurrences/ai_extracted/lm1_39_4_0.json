@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 39,
+ "chunk": "39_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַמַּחֲלֹקֶת",
+   "target_he": "מַה שֶּׁמְּחָרְפִין לָאָדָם",
+   "proof": "הַמַּחֲלֹקֶת, הַיְנוּ מַה שֶּׁמְּחָרְפִין לָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "רָעָב",
+   "proof": "נִמְצָא, הַמַּחֲלֹקֶת, הַיְנוּ מַה שֶּׁמְּחָרְפִין לָאָדָם, בָּא עַל־יְדֵי־זֶה בְּחִינַת רָעָב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רָעָב",
+   "target_he": "מַחֲלֹקֶת",
+   "proof": "וְרָעָב הַזֶּה, הַיְנוּ בְּחִינַת מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רָעָב",
+   "target_he": "חֶרְפָּה",
+   "proof": "בְּחִינַת חֶרְפָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רָעָב",
+   "target_he": "עָרְלָה",
+   "proof": "הוּא בְּחִינַת עָרְלָה, כְּמוֹ שֶׁכָּתוּב (בראשית ל״ד:י״ד): כִּי חֶרְפָּה הִיא לָנוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת הָעָרְלָה",
+   "target_he": "בְּרִית שָׁלוֹם",
+   "proof": "וּכְשֶׁמְּשַׁבְּרִין אֶת הָעָרְלָה, אֲזַי נִתְגַּלֶּה בְּרִית שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם לְמַטָּה",
+   "target_he": "שָׁלוֹם לְמַעְלָה בִּמְרוֹמוֹ",
+   "proof": "וּכְשֶׁיֵּשׁ שָׁלוֹם לְמַטָּה, יֵשׁ לוֹ שָׁלוֹם לְמַעְלָה בִּמְרוֹמוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם לְמַעְלָה",
+   "target_he": "שׂבַע גָּדוֹל בָּעוֹלָם",
+   "proof": "וּכְשֶׁיֵּשׁ שָׁלוֹם לְמַעְלָה, אֲזַי נִתְגַּלֶּה וְנִתְרַבֶּה שׂבַע גָּדוֹל בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

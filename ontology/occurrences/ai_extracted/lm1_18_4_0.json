@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 18,
+ "chunk": "18_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "מלכות וההנהגה",
+   "proof": "שֶׁהָאֱמוּנָה הִיא מַחֲזֶקֶת תָּמִיד בַּמַּלְכוּת וְהַהַנְהָגָה, שֶׁלֹּא יִקַּח אוֹתָהּ זָר שֶׁאֵין רָאוּי לָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חכמה",
+   "target_he": "מלכות",
+   "proof": "שֶׁעִקַּר הַמַּלְכוּת שָׁרְשָׁהּ בַּחָכְמָה, בִּשְׁבִיל כְּדֵי לֵידַע אֵיךְ לְהַנְהִיג וְלִמְלֹךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חכמים ויועצים",
+   "target_he": "מלכות ומדינה",
+   "proof": "לָכֵן יֵשׁ לְכָל מֶלֶךְ חֲכָמִים וְיוֹעֲצִים, כִּי בָּזֶה תִּכּוֹן מַלְכוּתוֹ וְיִתְקַיֵּם מְדִינָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וַיְהִי בִישֻׁרוּן מֶלֶךְ בְּהִתְאַסֵּף רָאשֵׁי עָם",
+   "target_he": "יש לכל מלך חכמים ויועצים",
+   "proof": "וְזֶה בְּחִינוֹת (דברים לג): וַיְהִי בִישֻׁרוּן מֶלֶךְ, בְּהִתְאַסֵּף רָאשֵׁי עָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רָאשֵׁי עָם",
+   "target_he": "מֹחִין וְחָכְמָה",
+   "proof": "הַיְנוּ, עַל־יְדֵי רָאשֵׁי עָם, שֶׁהֵם הַמֹּחִין וְהַחָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רָאשֵׁי עָם (מֹחִין וְחָכְמָה)",
+   "target_he": "מַלְכוּת",
+   "proof": "עַל־יָדָם תִּכּוֹן בְּחִינַת הַמַּלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַהֲבַת הַחֲכָמִים",
+   "target_he": "מַלְכוּת",
+   "proof": "וְעַל־יְדֵי אַהֲבַת הַחֲכָמִים תִּכּוֹן הַמַּלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

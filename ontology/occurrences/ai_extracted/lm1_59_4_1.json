@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 59,
+ "chunk": "59_4_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בחינת חומה",
+   "target_he": "הַשֵּׁם הַזֶּה",
+   "proof": "וְלַשֵּׁם הַזֶּה יִזְכּוּ מֵחֲמַת בְּחִינַת חוֹמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַאֲרִיךְ אַף",
+   "target_he": "חוֹמָה",
+   "proof": "וְזֶה בְּחִינוֹת חוֹמָה, בְּחִינַת מַאֲרִיךְ אַף, שֶׁיִּכְבֹּשׁ כַּעֲסוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֲשִׁירוּת",
+   "target_he": "כְּבִישַׁת כַּעַס",
+   "proof": "כִּי עֲשִׁירוּת וּכְבִישַׁת כַּעַס – בְּחִינָה אַחַת, וְנִקְרָאִים חוֹמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲשִׁירוּת",
+   "target_he": "כַּעַס וְחֵמָה",
+   "proof": "כִּי מִי שֶׁהוּא מְקַלְקֵל חוֹמָה שֶׁל עֲשִׁירוּת, וְלוֹקֵחַ לְעַצְמוֹ כַּעַס וְחֵמָה, וּמֵחוֹמָה עוֹשֶׂה חֵמָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָרָעָה",
+   "target_he": "סִטְרָא דִּשְׂמָאלָא",
+   "proof": "כִּי שְׁנֵיהֶם מִסִּטְרָא דִּשְׂמָאלָא, כְּמוֹ שֶׁכָּתוּב מִצָפוֹן תִּפָּתַח הָרָעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲשִׁירוּת",
+   "target_he": "סִטְרָא דִּשְׂמָאלָא",
+   "proof": "וּכְתִיב מִצָּפוֹן זָהָב יֶאֱתֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֲשִׁירוּת",
+   "target_he": "חוֹמָה",
+   "proof": "וַעֲשִׁירוּת הִיא חוֹמָה, כְּמוֹ שֶׁכָּתוּב הוֹן עָשִׁיר קִרְיַת עֻזּוֹ וּכְחוֹמָה נִשְׂגָּבָה בְּמַשְׂכִּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כַּעַס",
+   "target_he": "חוֹמָה",
+   "proof": "וּבְכַעַס כְּתִיב עִיר פְּרוּצָה אֵין חוֹמָה אִישׁ אֲשֶׁר אֵין מַעְצוֹר לְרוּחוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲשִׁירוּת",
+   "target_he": "כַּעַס",
+   "proof": "וּכְשֶׁנִּמְשָׁךְ לָאִישׁ עֲשִׁירוּת, אֲזַי יֵשׁ לוֹ חוֹמָה, וְהַחוֹמָה שֶׁל עֲשִׁירוּת מַעֲצוֹר לְכַעֲסוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כַּעַס",
+   "target_he": "עֲשִׁירוּת",
+   "proof": "וְלִפְעָמִים כְּשֶׁמִּתְגַּבֵּר בְּכַעֲסוֹ, וּמְקַלְקֵל הַחוֹמָה שֶׁל עֲשִׁירוּת, נִמְצָא שֶׁהַכַּעַס מַזִּיק לָעֲשִׁירוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

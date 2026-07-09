@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 36,
+ "chunk": "36_6_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שֵׁם יָהּ",
+   "target_he": "מֹחִין",
+   "proof": "שֵׁם יָהּ, שֶׁהוּא בְּחִינַת מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְמַעְלָה",
+   "target_he": "קָמַץ",
+   "proof": "כִּי לְמַעְלָה [הוּא] בִּבְחִינַת קָמַץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֶרְוָה",
+   "target_he": "כֵּלִים",
+   "proof": "לְהַכְשִׁילָם בִּדְבַר עֶרְוָה, כְּדֵי לְקַלְקֵל כְּלֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

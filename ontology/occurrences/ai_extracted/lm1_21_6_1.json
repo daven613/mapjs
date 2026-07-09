@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 21,
+ "chunk": "21_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שִׁבְעַת יָמִים",
+   "target_he": "שִׁבְעָה עֲנָנִים",
+   "proof": "שִׁבְעַת יָמִים דַּיְקָא, הַיְנוּ בְּחִינַת שִׁבְעָה עֲנָנִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׁבְעָה עֲנָנִים",
+   "target_he": "פְּנֵי הַמְּנוֹרָה",
+   "proof": "שֶׁעַל־יָדָם מֵאִיר פְּנֵי הַמְּנוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַיְבָמָה נִקְנֵית בְּמַאֲמָר",
+   "target_he": "הֶפֶךְ הַבֹּשֶׁת",
+   "proof": "זֶהוּ הֶפֶךְ הַבֹּשֶׁת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַיְבָמָה נִקְנֵית בְּמַאֲמָר",
+   "target_he": "כֻּלּוֹ אֹמֵר כָּבוֹד",
+   "proof": "בְּחִינַת (תהילים כ״ט:ט׳): כֻּלּוֹ אֹמֵר כָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְיָרְקָה בְּפָנָיו",
+   "target_he": "בּשֶׁת פָּנִים",
+   "proof": "וְיָרְקָה בְּפָנָיו, וְהַיְנוּ בּשֶׁת פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

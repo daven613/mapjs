@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_3_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אֵל",
+   "target_he": "אֱמֶת",
+   "proof": "שֶׁעַל יְדֵי בְּחִינַת אֵל, שֶׁהוּא בְּחִינַת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמֶת",
+   "target_he": "יַעֲקֹב",
+   "proof": "שֶׁהוּא בְּחִינַת יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יַעֲקֹב",
+   "target_he": "אֱמֶת",
+   "proof": "כִּי יַעֲקֹב בְּחִינַת אֱמֶת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֱמֶת",
+   "target_he": "עָלְמָא דְּאָתֵי",
+   "proof": "וְזֶה הָאֱמֶת שֶׁהוּא בְּחִינוֹת עָלְמָא דְּאָתֵי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פַּרְנָסָה",
+   "target_he": "אֱמֶת",
+   "proof": "וְזֶה הָאֱמֶת שֶׁהוּא בְּחִינוֹת עָלְמָא דְּאָתֵי, תָּלוּי בְּפַרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פַּרְנָסָה",
+   "target_he": "לְהִתְפַּלֵּל בֶּאֱמֶת",
+   "proof": "כִּי כְּשֶׁיֵּשׁ לוֹ פַּרְנָסָה וְאֵין נִצְרָךְ לַבְּרִיּוֹת, יוּכַל לְהִתְפַּלֵּל בֶּאֱמֶת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֵל יַעֲקֹב",
+   "target_he": "אֱמֶת",
+   "proof": "כִּי אֵל יַעֲקֹב הוּא בְּחִינַת אֱמֶת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂבְרוֹ עַל ה' אֱלֹקָיו",
+   "target_he": "אֵל יַעֲקֹב בְּעֶזְרוֹ",
+   "proof": "כִּי כְּשֶׁשִּׂבְרוֹ עַל ה' אֱלֹקָיו וְאֵין נִצְרָךְ לַבְּרִיּוֹת – אֲזַי אֵל יַעֲקֹב בְּעֶזְרוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בִּנְיַן יְרוּשָׁלַיִם",
+   "target_he": "תִּקּוּן שְׁלֵמוּת הַיִּרְאָה שֶׁבַּלֵּב",
+   "proof": "וְעַל־יְדֵי בִּנְיַן יְרוּשָׁלַיִם, דְּהַיְנוּ תִּקּוּן שְׁלֵמוּת הַיִּרְאָה שֶׁבַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּנְיַן יְרוּשָׁלַיִם",
+   "target_he": "מַלְאָךְ",
+   "proof": "עַל־יְדֵי־זֶה נִבְרָא מַלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַלְאָךְ",
+   "target_he": "נְבוּאָה",
+   "proof": "שֶׁמַּשְׁפִּיעַ נְבוּאָה לִכְלֵי הַנְּבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְּבוּאָה",
+   "target_he": "כְּרוּבִים",
+   "proof": "כִּי הַנְּבוּאָה בָּאָה מִבְּחִינַת כְּרוּבִים, בִּבְחִינַת וַיִּשְׁמַע אֶת הַקּוֹל מִבֵּין שְׁנֵי הַכְּרֻבִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כְּרוּבִים",
+   "target_he": "אַנְפֵּי זוּטְרֵי",
+   "proof": "וּכְרוּבִים הֵם אַנְפֵּי זוּטְרֵי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַלְאָךְ",
+   "target_he": "כְּרוּבִים",
+   "proof": "וְהֵם נִשְׁפָּעִים מִן הַמַּלְאָךְ, בִּבְחִינַת הַמַּלְאָךְ הַגּוֹאֵל־אֹתִי מִכָּל רָע יְבָרֵךְ אֶת הַנְּעָרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַנְּעָרִים",
+   "target_he": "אַנְפֵּי זוּטְרֵי",
+   "proof": "שֶׁהֵם אַנְפֵּי זוּטְרֵי, בְּחִינַת כְּרוּבִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאָה",
+   "target_he": "מַלְאָךְ",
+   "proof": "וְזֶה הַמַּלְאָךְ שָׁרְשׁוֹ מִיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַלְאָךְ",
+   "target_he": "כִּי אֵין מַחְסוֹר לִירֵאָיו",
+   "proof": "כִּי זֶה אוֹתִיּוֹת מַלְאָךְ – רָאשֵׁי־תֵבוֹת כִּי אֵין מַחְסוֹר לִירֵאָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַלְאָךְ",
+   "target_he": "נְבוּאָה",
+   "proof": "וַאֲזַי נִמְשֶׁכֶת נְבוּאָה, וַאֲפִילוּ קְטַנִּים יְכוֹלִין לְהִתְנַבְּאוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

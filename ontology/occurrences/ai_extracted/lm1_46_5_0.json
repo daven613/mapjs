@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 46,
+ "chunk": "46_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "כִּי בִי",
+   "target_he": "שָׁלֹשׁ פְּעָמִים יָד",
+   "proof": "כִּי בִי גִּימַטְרִיָּא מ\"ב ... הַיְנוּ שָׁלֹשׁ פְּעָמִים יָד גִּימַטְרִיָּא מ\"ב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַחֵשֶׁק שֶׁבַּלֵּב שֶׁנִּתְגַּלֶּה בַּיָּדַיִם",
+   "target_he": "מֶחָאַת כַּפַּיִם",
+   "proof": "שֶׁנִּתְגַּלֶּה הַחֵשֶׁק שֶׁבַּלֵּב בַּיָּדַיִם, וְזֶה בְּחִינוֹת מֶחָאַת כַּפַּיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֶחָאַת כַּפַּיִם",
+   "target_he": "הַמְתָּקַת הַדִּינִים",
+   "proof": "עַל־יְדֵי־זֶה: וַאֲפַלְּטֵהוּ – בְּחִינוֹת הַמְתָּקַת הַדִּינִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וַאֲפַלְּטֵהוּ",
+   "target_he": "הַמְתָּקַת הַדִּינִים",
+   "proof": "וַאֲפַלְּטֵהוּ – בְּחִינוֹת הַמְתָּקַת הַדִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

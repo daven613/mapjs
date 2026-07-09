@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 52,
+ "chunk": "52_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "לְהִכָּלֵל בְּשָׁרְשׁוֹ",
+   "target_he": "לַחֲזֹר וּלְהִכָּלֵל בְּאַחְדוּת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "לְהִכָּלֵל בְּשָׁרְשׁוֹ, דְּהַיְנוּ לַחֲזֹר וּלְהִכָּלֵל בְּאַחְדוּת הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אַחְדוּת הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "מְחֻיַּב הַמְּצִיאוּת",
+   "proof": "בְּאַחְדוּת הַשֵּׁם יִתְבָּרַךְ, שֶׁהוּא מְחֻיַּב הַמְּצִיאוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּטּוּל",
+   "target_he": "לְהִכָּלֵל בְּאַחְדוּתוֹ יִתְבָּרַךְ",
+   "proof": "זֶה אִי אֶפְשָׁר לִזְכּוֹת, כִּי־אִם עַל־יְדֵי בִּטּוּל, שֶׁיְּבַטֵּל עַצְמוֹ לְגַמְרֵי, עַד שֶׁיִּהְיֶה נִכְלָל בְּאַחְדוּתוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

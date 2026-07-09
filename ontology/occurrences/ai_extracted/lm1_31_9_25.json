@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_9_25",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "רָצוֹן",
+   "target_he": "כִּסּוּפִין",
+   "proof": "כִּי הָרָצוֹן, שֶׁהוּא הַכִּסּוּפִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רָצוֹן",
+   "target_he": "רְצוֹן יְרֵאָיו יַעֲשֶׂה",
+   "proof": "וְאָז נַעֲשֶׂה בַּקָּשָׁתוֹ וּרְצוֹנוֹ בְּכֹחַ, בְּחִינוֹת: רְצוֹן יְרֵאָיו יַעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּר",
+   "target_he": "וְאֶת שַׁוְעָתָם יִשְׁמַע וְיוֹשִׁיעֵם",
+   "proof": "הַיְנוּ שֶׁצְּרִיכִין שְׁנֵי הַבְּחִינוֹת, רָצוֹן וְדִבּוּר, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רָצוֹן",
+   "target_he": "נֶפֶשׁ בְּכֹחַ",
+   "proof": "כִּי הָרָצוֹן, שֶׁהוּא הַכִּסּוּפִין, פּוֹעֵל שֶׁנַּעֲשֶׂה הַנֶּפֶשׁ בְּכֹחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּר",
+   "target_he": "נֶפֶשׁ מִכֹּחַ אֶל הַפֹּעַל",
+   "proof": "וְעַל יְדֵי הַדִּבּוּר יוֹצֵא הַנֶּפֶשׁ מִכֹּחַ אֶל הַפֹּעַל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צִיּוּר הָאוֹתִיּוֹת לְטוֹב",
+   "target_he": "בַּקָּשָׁתוֹ",
+   "proof": "וְאָז נַעֲשֶׂה בַּקָּשָׁתוֹ, עַל־יְדֵי שֶׁמְּצַיֵּר הָאוֹתִיּוֹת לְטוֹב וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּר",
+   "target_he": "נֶפֶשׁ (יוֹצֵא מִכֹּחַ אֶל הַפֹּעַל)",
+   "proof": "כִּי עַל־יְדֵי הַדִּבּוּר נִגְמָר הַנֶּפֶשׁ וְיוֹצֵא מִכֹּחַ אֶל הַפֹּעַל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָאוֹתִיּוֹת נִצְטַיְּרוּ",
+   "target_he": "כְּלִי לְקַבֵּל טוֹב",
+   "proof": "וַאֲזַי נִצְטַיְּרוּ הָאוֹתִיּוֹת, וְנַעֲשִׂים כְּלִי לְקַבֵּל טוֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּלִי לְקַבֵּל טוֹב",
+   "target_he": "בַּקָּשָׁתוֹ בְּפֹעַל",
+   "proof": "וְנַעֲשִׂים כְּלִי לְקַבֵּל טוֹב, וְנִתְמַלֵּא בַּקָּשָׁתוֹ בְּפֹעַל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַנֶּפֶשׁ שֶׁעוֹשָׂה בְּכֹחַ אוֹ בְּפֹעַל",
+   "target_he": "נְקֻדּוֹת לְהָאוֹתִיּוֹת",
+   "proof": "כִּי כְּפִי הַנֶּפֶשׁ שֶׁעוֹשָׂה בְּכֹחַ אוֹ בְּפֹעַל, כֵּן נַעֲשִׂין נְקֻדּוֹת לְהָאוֹתִיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּר הַהִשְׁתּוֹקְקוּת וְהָרָצוֹן וְהַכִּסּוּפִין",
+   "target_he": "יִשְׁמַע וְיוֹשִׁיעֵם",
+   "proof": "שֶׁמְּדַבְּרִים בְּפִיהֶם הַהִשְׁתּוֹקְקוּת וְהָרָצוֹן וְהַכִּסּוּפִין שֶׁלָּהֶם, עַל יְדֵי זֶה: יִשְׁמַע וְיוֹשִׁיעֵם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

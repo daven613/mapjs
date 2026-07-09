@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_4_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יעקב",
+   "target_he": "השכל",
+   "proof": "כִּי יַעֲקֹב הוּא בְּחִינַת הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אב",
+   "target_he": "חכמה",
+   "proof": "אֲבִיהֶם, כִּי אָב בְּחָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התגאות",
+   "target_he": "חכמה",
+   "proof": "כִּי כָּל הַמִּתְגָּאֶה, חָכְמָתוֹ מִסְתַּלֶּקֶת מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוסף אינינו",
+   "target_he": "תיקון המעוות",
+   "proof": "יוֹסֵף אֵינֶנּוּ – זֶה בְּחִינַת תִּקּוּן הַמְעֻוָּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תיקון המעוות",
+   "target_he": "יוסף",
+   "proof": "כִּי תִּקּוּן הַמְעֻוָּת הוּא בְּחִינַת יוֹסֵף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

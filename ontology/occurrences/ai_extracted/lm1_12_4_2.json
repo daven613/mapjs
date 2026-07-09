@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_4_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אהבה",
+   "target_he": "חיבוק",
+   "proof": "וְאַהֲבָה, שֶׁהַצַּדִּיק מְקַבֵּל אֶת הַחֶרְפָּה בְּאַהֲבָה, זֶה בְּחִינַת חִבּוּק – וִימִינוֹ תְּחַבְּקֵנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמחה",
+   "target_he": "בחינת אני חבצלת השרון",
+   "proof": "וְעַל־יְדֵי הַשִּׂמְחָה שֶׁשָּׂמֵחַ בַּיִּסּוּרִין, [הוּא] מַעֲלֶה לִבְחִינַת אֲנִי חֲבַצֶּלֶת הַשָּׁרוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמחה",
+   "target_he": "בחינת לב",
+   "proof": "וְעַל־יְדֵי הַשִּׂמְחָה שֶׁשָּׂמֵחַ בַּיִּסּוּרִין, [הוּא] מַעֲלֶה לִבְחִינַת אֲנִי חֲבַצֶּלֶת הַשָּׁרוֹן, לִבְחִינַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לב",
+   "target_he": "בחינת צור לבבי",
+   "proof": "וְאָז הוּא בִּבְחִינַת (תהילים ע״ג:כ״ו): צוּר לְבָבִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תורה שבעל פה",
+   "target_he": "צור",
+   "proof": "שֶׁבִּבְחִינַת תּוֹרָה שֶׁבְּעַל־פֶּה הַנִּקְרֵאת צוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הכאת משה את הצור",
+   "target_he": "טורח בתורה שבעל פה",
+   "proof": "אִלְמָלֵא לֹא הִכָּה משֶׁה רַבֵּנוּ עָלָיו הַשָּׁלוֹם אֶת הַצּוּר, לֹא הָיוּ צְרִיכִין לִטְרֹחַ כָּל־כָּךְ בַּתּוֹרָה שֶׁבְּעַל־פֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

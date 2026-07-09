@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_8_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הָעַזּוּת וְהַתּוֹרָה שֶׁל כָּל אֶחָד וְאֶחָד",
+   "target_he": "יְדִיעַת הַתְּפִלָּה שֶׁבִּלְבְּלָה אוֹתוֹ",
+   "proof": "עַל־יְדֵי שֶׁרוֹאֶה הָעַזּוּת וְהַתּוֹרָה שֶׁל כָּל אֶחָד וְאֶחָד, עַל־יְדֵי־זֶה יוֹדֵעַ אֶת הַתְּפִלָּה שֶׁבִּלְבְּלָה אוֹתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְדִיעַת הַתְּפִלָּה שֶׁבִּלְבְּלָה אוֹתוֹ",
+   "target_he": "יְדִיעַת הַתּוֹכָחָה",
+   "proof": "וְעַל־יְדֵי־זֶה יוֹדֵעַ לְהוֹכִיחַ אוֹתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֵישְׁרָא דְּסַכִּינָא",
+   "target_he": "חָכְמָה תַּתָּאָה",
+   "proof": "מֵישְׁרָא דְּסַכִּינָא – הַיְנוּ בְּחִינַת חָכְמָה תַּתָּאָה הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֵישְׁרָא דְּסַכִּינָא",
+   "target_he": "מַלְכוּת",
+   "proof": "בְּחִינַת מַלְכוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַלְכוּת",
+   "target_he": "לִמּוּד",
+   "proof": "שֶׁהוּא לִמּוּד הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַהַסְכֵּן הִסְכַּנְתִּי",
+   "target_he": "לִמּוּד",
+   "proof": "בְּחִינַת (במדבר כ״ב:ל׳): הַהַסְכֵּן הִסְכַּנְתִּי – לְשׁוֹן לִמּוּד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֶרֶב נוֹקֶמֶת",
+   "target_he": "מַלְכוּת",
+   "proof": "בְּחִינַת (ויקרא כ״ו:כ״ה): חֶרֶב נוֹקֶמֶת, שֶׁהִיא בְּחִינַת מַלְכוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

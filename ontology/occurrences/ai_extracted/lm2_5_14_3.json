@@ -1,0 +1,136 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_14_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "ראה",
+   "target_he": "אין לדיין אלא מה שעיניו רואות",
+   "proof": "זֶה בְּחִינַת (סנהדרין ו:): אֵין לַדַּיָּן אֶלָּא מַה שֶּׁעֵינָיו רוֹאוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אין לדיין אלא מה שעיניו רואות",
+   "target_he": "תיקון המשפט",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת תִּקּוּן הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מאירת",
+   "target_he": "תוכו רצוף אהבה מבנות ירושלים",
+   "proof": "וְזֶהוּ: מְאִירַת – רָאשֵׁי תֵבוֹת: תּוֹכוֹ רָצוּף אַהֲבָה מִבְּנוֹת יְרוּשָׁלָיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מאירת",
+   "target_he": "תיקון המשפט",
+   "proof": "הַיְנוּ בְּחִינַת תִּקּוּן הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תיקון המשפט",
+   "target_he": "תיקון המרכבה",
+   "proof": "שֶׁהוּא תִּקּוּן הַמֶּרְכָּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תיקון המרכבה",
+   "target_he": "מרכבו ארגמן תוכו רצוף אהבה מבנות ירושלים",
+   "proof": "בִּבְחִינַת: מֶרְכָּבוֹ אַרְגָּמָן תּוֹכוֹ רָצוּף אַהֲבָה מִבְּנוֹת יְרוּשָׁלָיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תיקון המשפט",
+   "target_he": "ומשפטיך אור יצא",
+   "proof": "וְזֶה בְּחִינַת (הושע ו׳:ה׳): וּמִשְׁפָּטֶיךָ אוֹר יֵצֵא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ראה",
+   "target_he": "תיקון המשפט",
+   "proof": "הַיְנוּ עַל־יְדֵי הָרֵאָה, שֶׁהִיא מְאִירַת עֵינַיִם, עַל־יְדֵי־זֶה הוּא בְּחִינַת תִּקּוּן הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תיקון המשפט",
+   "target_he": "ותוציא כאור משפטינו",
+   "proof": "בְּחִינַת: וְתוֹצִיא כָאוֹר מִשְׁפָּטֵינוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תיקון המשפט",
+   "target_he": "ישב רוחו יזלו מים",
+   "proof": "וְזֶה בְּחִינַת (תהילים קמ״ז:י״ח): יַשֵּׁב רוּחוֹ יִזְּלוּ מָיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשיבת הרוח של הראה",
+   "target_he": "תיקון המשפט",
+   "proof": "עַל־יְדֵי נְשִׁיבַת הָרוּחַ שֶׁל הָרֵאָה, שֶׁהִיא מְנַשֶּׁבֶת עַל הַלֵּב וּמְקָרֶרֶת חִמּוּם הַלֵּב, עַל־יְדֵי־זֶה נַעֲשֶׂה בְּחִינַת תִּקּוּן הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשיבת הרוח של הראה",
+   "target_he": "חימום הלב",
+   "proof": "שֶׁהִיא מְנַשֶּׁבֶת עַל הַלֵּב וּמְקָרֶרֶת חִמּוּם הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יזלו מים",
+   "target_he": "ויגל כמים משפט",
+   "proof": "וְזֶהוּ: יִזְּלוּ מָיִם, בְּחִינַת (עמוס ה׳:כ״ד): וַיִּגֶל כַּמַּיִם מִשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ויגל כמים משפט",
+   "target_he": "תיקון המשפט",
+   "proof": "שֶׁהוּא בְּחִינַת תִּקּוּן הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 41,
+ "chunk": "41_19_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שרשם (של הדינים)",
+   "target_he": "יין המשמח",
+   "proof": "וּלְהַמְתִּיק הַדִּינִים עַל־יְדֵי שָׁרְשָׁם, שֶׁהוּא יַיִן הַמְשַׂמֵּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שרשם (יין המשמח)",
+   "target_he": "הדינים",
+   "proof": "וּלְהַמְתִּיק הַדִּינִים עַל־יְדֵי שָׁרְשָׁם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִקּוּדִין",
+   "target_he": "מִלּוּי גְּרוֹנָם",
+   "proof": "יְמַלֵּא גְּרוֹנָם, עַל־יְדֵי רִקּוּדִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פִּדְיוֹן",
+   "target_he": "מִלּוּי גְּרוֹנָם",
+   "proof": "אוֹ עַל־יְדֵי פִּדְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִלּוּי גְּרוֹנָם",
+   "target_he": "הַדִּינִין",
+   "proof": "גַּם עַל־יְדֵי מִלּוּי גְּרוֹנָם, נִמְתָּק הַדִּינִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 7,
+ "chunk": "7_5_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "טורא דסיני",
+   "target_he": "עצות",
+   "proof": "שֶׁהוּא בְּחִינַת עֵצוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עקרבין",
+   "target_he": "עצת נחש, עצת רשעים",
+   "proof": "הַיְנוּ שֶׁיֵּשׁ עֲצַת נָחָשׁ, עֲצַת רְשָׁעִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עצת נחש, עצת רשעים",
+   "target_he": "עצת צדיקים, זרע אמת",
+   "proof": "שֶׁעַל־יְדֵיהֶם אֵין יְכוֹלִים לְקַבֵּל עֲצַת צַדִּיקִים, זֶרַע אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חמרי חיוורתא",
+   "target_he": "ציצית",
+   "proof": "זֶה בְּחִינַת צִיצִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ציצית",
+   "target_he": "שמירה מעצת הנחש, מניאוף",
+   "proof": "שֶׁהוּא שְׁמִירָה מֵעֲצַת הַנָּחָשׁ, מִנִּאוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

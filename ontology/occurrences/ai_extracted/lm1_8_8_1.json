@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 8,
+ "chunk": "8_8_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מְלָאפוּם",
+   "target_he": "יוּד וָא\"ו",
+   "proof": "כִּי מְלָאפוּ\"ם הוּא יוּ\"ד וָא\"ו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוּ\"ד",
+   "target_he": "יוּ\"ד מִינֵי דְּפִיקִין",
+   "proof": "וְהוּא בְּחִינַת יוּ\"ד מִינֵי דְּפִיקִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וָא\"ו",
+   "target_he": "הַמְשָׁכַת הָרוּחַ",
+   "proof": "וְהַוָּא\"ו הוּא בְּחִינַת הַמְשָׁכַת הָרוּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַמְשָׁכַת הָרוּחַ",
+   "target_he": "מְלָאפוּם",
+   "proof": "וְהַיְנוּ מְלָאפוּם – מְלֹא פּוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְשָׁכַת הָרוּחַ",
+   "target_he": "הַחִסָּרוֹן",
+   "proof": "כִּי עַל־יְדֵי הַמְשָׁכַת הָרוּחַ נִשְׁלָם הַחִסָּרוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְׁלָמַת הַחִסָּרוֹן",
+   "target_he": "הַרְחֶב פִּיךָ וַאֲמַלְאֵהוּ",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת הַרְחֶב פִּיךָ וַאֲמַלְאֵהוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְׁלָמַת הַחִסָּרוֹן",
+   "target_he": "מְלָאפוּם",
+   "proof": "שֶׁזֶהוּ בְּחִינַת מְלָאפוּם – מְלֹא פּוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

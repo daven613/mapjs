@@ -1,0 +1,28 @@
+{
+ "book": "lm2",
+ "torah": 78,
+ "chunk": "78_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "התורה",
+   "target_he": "עיקר החיים",
+   "proof": "דַּע, כִּי עִקָּר הַחַיִּים הִיא הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "חיים",
+   "proof": "וְכָל הַפּוֹרֵשׁ מִן הַתּוֹרָה כְּפוֹרֵשׁ מִן הַחַיִּים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

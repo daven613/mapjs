@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 57,
+ "chunk": "57_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַחָכְמָה הַמְּאִירָה בִּפְנֵי אָדָם",
+   "target_he": "חָכְמַת אָדָם תָּאִיר פָּנָיו",
+   "proof": "בִּבְחִינַת: חָכְמַת אָדָם תָּאִיר פָּנָיו (קהלת ח׳:א׳)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכַּעַס",
+   "target_he": "חָכְמָה",
+   "proof": "וְעַל יְדֵי הַכַּעַס – אִם חָכָם הוּא חָכְמָתוֹ מִסְתַּלֶּקֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכַּעַס",
+   "target_he": "צֶלֶם וּפָנִים",
+   "proof": "וְאָז צִלּוֹ סָר, וּפָנָיו נוֹפְלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צִלּוֹ סָר וּפָנָיו נוֹפְלִים",
+   "target_he": "לָמָּה חָרָה לָךְ וְלָמָּה נָפְלוּ פָנֶיךָ",
+   "proof": "בִּבְחִינַת (בראשית ד׳:ו׳): לָמָּה חָרָה לָךְ וְלָמָּה נָפְלוּ פָנֶיךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּנֵי אָדָם",
+   "target_he": "מוֹרָא",
+   "proof": "וּכְשֶׁאֵין לוֹ פְּנֵי אָדָם, אֲזַי מוֹרָאוֹ סָר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

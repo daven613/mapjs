@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 155,
+ "chunk": "155_10_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "אֶרֶךְ אַפַּיִם",
+   "proof": "אֶרֶךְ אַפַּיִם תָּלוּי בְּאֶרֶץ־יִשְׂרָאֵל, כִּי שָׁם זוֹכִים לִבְחִינַת אֶרֶךְ אַפַּיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "אֱמוּנָה",
+   "proof": "כִּי אֶרֶץ־יִשְׂרָאֵל הוּא בְּחִינַת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "אֲרִיכַת אַפַּיִם",
+   "proof": "וְעַל־יְדֵי אֱמוּנָה זוֹכִין לִבְחִינַת אֲרִיכַת אַפַּיִם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

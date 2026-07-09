@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 46,
+ "chunk": "46_12_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "יד ימין",
+   "target_he": "יד הגדולה",
+   "proof": "יַד יָמִין הוּא יָד הַגְּדוֹלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יד השמאל",
+   "target_he": "יד החזקה",
+   "proof": "יַד הַשְּׂמֹאל – יָד הַחֲזָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חבוקת הידים",
+   "target_he": "יד הרמה",
+   "proof": "וְעַל־יְדֵי חֲבוּקַת הַיָּדַיִם נַעֲשֶׂה יָד הָרָמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

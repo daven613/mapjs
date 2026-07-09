@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_3_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עֵסֶק הַתּוֹרָה",
+   "target_he": "אֲרִיכוּת יָמִים",
+   "proof": "כִּי לָבוֹא לַאֲרִיכוּת יָמִים, הוּא עַל־יְדֵי עֵסֶק הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אוֹרַיְתָא",
+   "target_he": "שְׁמָא דְּקֻדְשָׁא בְּרִיךְ הוּא",
+   "proof": "כִּי אוֹרַיְתָא שְׁמָא דְּקֻדְשָׁא בְּרִיךְ הוּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁמוֹ",
+   "target_he": "הַתּוֹרָה",
+   "proof": "וּשְׁמוֹ הוּא הַתּוֹרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_14_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אַדְּמַיְתִינַן צִיבֵי",
+   "target_he": "וּכְמִצְבְּיֵהּ עָבֵד בְּחֵיל שְׁמַיָּא",
+   "proof": "אַדְּמַיְתִינַן צִיבֵי – זֶה בְּחִינַת: וּכְמִצְבְּיֵהּ עָבֵד בְּחֵיל שְׁמַיָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וּכְמִצְבְּיֵהּ עָבֵד בְּחֵיל שְׁמַיָּא",
+   "target_he": "הִתְחַדְּשׁוּת הָרָצוֹן",
+   "proof": "וּכְמִצְבְּיֵהּ עָבֵד בְּחֵיל שְׁמַיָּא, בְּחִינַת הִתְחַדְּשׁוּת הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הִתְחַדְּשׁוּת הָרָצוֹן",
+   "target_he": "חִזּוּק הַמַּלְאָךְ",
+   "proof": "בְּחִינַת הִתְחַדְּשׁוּת הָרָצוֹן, שֶׁזֶּהוּ חִזּוּק הַמַּלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חִזּוּק הַמַּלְאָךְ",
+   "target_he": "תִּקּוּן הַמַּאֲכָלִים",
+   "proof": "שֶׁעַל־יְדֵי־זֶה הוּא תִּקּוּן הַמַּאֲכָלִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חָלִים",
+   "target_he": "חֲלוֹם",
+   "proof": "חָלִים לְשׁוֹן חֲלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חָלִים",
+   "target_he": "הִתְקַשְּׁרוּת וְהִתְחַבְּרוּת",
+   "proof": "גַּם חָלִים הוּא לְשׁוֹן הִתְקַשְּׁרוּת וְהִתְחַבְּרוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַמַּאֲכָלִים",
+   "target_he": "הֲחָלוֹם הַמְחוּבָּר מִשְּׁנֵי כֹּחוֹת",
+   "proof": "כִּי הַחֲלוֹם הָיָה מְחוּבָּר מִשְּׁנֵי כֹּחוֹת: מִכֹּחַ הַמַּלְאָךְ וְכֹחַ הַשֵּׁד, מֵחֲמַת שֶׁעֲדַיִן לֹא נִתְתַּקְּנוּ הַמַּאֲכָלִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וּטְוִינַן",
+   "target_he": "תַּעֲנִית",
+   "proof": "וּטְוִינַן לְשׁוֹן תַּעֲנִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּעֲנִית",
+   "target_he": "שִׂמְחָה",
+   "proof": "כִּי הַתַּעֲנִית מֵבִיא שִׂמְחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שִׂמְחָה",
+   "target_he": "תִּקּוּן הַחֲלוֹם",
+   "proof": "שֶׁהוּא תִּקּוּן הַחֲלוֹם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

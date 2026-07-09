@@ -1,0 +1,136 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מִקְרֵה לַיְלָה",
+   "target_he": "רוּחַ סְעָרָה",
+   "proof": "וְזֶה בְּחִינַת מִקְרֵה לַיְלָה, שֶׁהָרוּחַ סְעָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוּחַ סְעָרָה",
+   "target_he": "רוּחַ שְׁטוּת",
+   "proof": "שֶׁהָרוּחַ סְעָרָה, הַיְנוּ הָרוּחַ שְׁטוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוּחַ שְׁטוּת",
+   "target_he": "שִׁבְעִים לָשׁוֹן",
+   "proof": "הַיְנוּ הָרוּחַ שְׁטוּת, הַיְנוּ הַשִּׁבְעִים לָשׁוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּרְגּוּם",
+   "target_he": "רוּחַ שְׁטוּת",
+   "proof": "עוֹלֶה עַל־יְדֵי תַּרְגּוּם, עַל־יְדֵי תַּרְדֵּמָה, עַל־יְדֵי שֵׁנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּרְדֵּמָה",
+   "target_he": "רוּחַ שְׁטוּת",
+   "proof": "עוֹלֶה עַל־יְדֵי תַּרְגּוּם, עַל־יְדֵי תַּרְדֵּמָה, עַל־יְדֵי שֵׁנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֵׁנָה",
+   "target_he": "רוּחַ שְׁטוּת",
+   "proof": "עוֹלֶה עַל־יְדֵי תַּרְגּוּם, עַל־יְדֵי תַּרְדֵּמָה, עַל־יְדֵי שֵׁנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "חֲמִימוּתוֹ",
+   "proof": "מְקָרֵר אֶת חֲמִימוּתוֹ בִּלְשׁוֹן הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חַם לִבִּי בְּקִרְבִּי... דִּבַּרְתִּי בִּלְשׁוֹנִי",
+   "target_he": "מְקָרֵר חֲמִימוּתוֹ בִּלְשׁוֹן הַקֹּדֶשׁ",
+   "proof": "בִּבְחִינַת (תהילים ל״ט:ד׳) חַם לִבִּי בְּקִרְבִּי וְכוּ', דִּבַּרְתִּי בִּלְשׁוֹנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זֹאת הַפַּעַם עֶצֶם מֵעֲצָמַי",
+   "target_he": "מְקָרֵר חֲמִימוּתוֹ בְּדִבּוּר שֶׁל לְשׁוֹן הַקֹּדֶשׁ",
+   "proof": "בִּבְחִינַת: זֹאת הַפַּעַם עֶצֶם מֵעֲצָמַי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁלֵמוּת לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "מִקְרֵה־לַיְלָה",
+   "proof": "אֲבָל מִי שֶׁאֵין לוֹ שְׁלֵמוּת לְשׁוֹן הַקֹּדֶשׁ, אֲזַי הָרוּחַ סְעָרָה מְקָרֵר אוֹתוֹ בְּמִקְרֵה־לַיְלָה בַּשֵּׁנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֲשֶׁר קָרְךָ בַּדֶּרֶךְ",
+   "target_he": "לְשׁוֹן קְרִירוּת",
+   "proof": "בִּבְחִינַת (דברים כ״ה:י״ח) אֲשֶׁר קָרְךָ בַּדֶּרֶךְ – לְשׁוֹן קְרִירוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בַּדֶּרֶךְ",
+   "target_he": "כֵּן דֶּרֶךְ אִשָּׁה מְנָאָפֶת",
+   "proof": "בַּדֶּרֶךְ הוּא בְּחִינַת (משלי ל׳:כ׳): כֵּן דֶּרֶךְ אִשָּׁה מְנָאָפֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תַּרְגּוּם",
+   "target_he": "נֹגַהּ",
+   "proof": "שֶׁהָרוּחַ סְעָרָה הוֹלֵךְ דֶּרֶךְ הַתַּרְגּוּם, שֶׁהוּא בְּחִינַת נֹגַהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חַשְׁמַ\"ל",
+   "target_he": "רוּחַ סְעָרָה",
+   "proof": "וְיוֹנֵק מִן הַחַשְׁמַ\"ל הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

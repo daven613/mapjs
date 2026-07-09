@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שרש הכבוד",
+   "target_he": "שרש היראה",
+   "proof": "יָכוֹל לֵידַע הַעֲלָאַת הַכָּבוֹד לְשֹׁרֶשׁ הַיִּרְאָה... כִּי שָׁם שֹׁרֶשׁ הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שרש הכבוד",
+   "target_he": "יראי ה'",
+   "proof": "כִּי שָׁם שֹׁרֶשׁ הַכָּבוֹד, בִּבְחִינַת (שם טו): וְאֶת יִרְאֵי ה' יְכַבֵּד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כיבוד יראי ה'",
+   "target_he": "עליית הכבוד לשרשו",
+   "proof": "לְפִי הַכָּבוֹד שֶׁמְּכַבֵּד אֶת יִרְאֵי־הַשֵּׁם, כֵּן עָלָה הַכָּבוֹד לְשָׁרְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הכבוד בגלות",
+   "target_he": "זלזול ביראי ה'",
+   "proof": "כִּי כָּל זְמַן שֶׁהַכָּבוֹד הוּא בַּגָּלוּת, כָּל אֶחָד לְפִי בְּחִינָתוֹ, הוּא מְזַלְזֵל בְּיִרְאֵי ה'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תיקון הכבוד",
+   "target_he": "כיבוד יראי ה'",
+   "proof": "וְכָל אֶחָד לְפִי תִּקּוּנוֹ אֶת הַכָּבוֹד, כֵּן הוּא מְכַבֵּד יִרְאֵי ה'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

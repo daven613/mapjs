@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 239,
+ "chunk": "239_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם",
+   "target_he": "דִּבּוּר וּתְפִלָּה",
+   "proof": "כְּשֶׁאֵין שָׁלוֹם וְיֵשׁ מַחֲלֹקֶת, אִי אֶפְשָׁר לְדַבֵּר... אִי אֶפְשָׁר לְדַבֵּר וּלְהִתְפַּלֵּל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "דִּבּוּר וּתְפִלָּה",
+   "proof": "וְיֵשׁ מַחֲלֹקֶת, אִי אֶפְשָׁר לְדַבֵּר... מֵאַחַר שֶׁהֵם חוֹלְקִין עָלָיו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

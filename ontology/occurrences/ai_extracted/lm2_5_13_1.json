@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_13_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רֹאשׁ הַשָּׁנָה",
+   "target_he": "מֹחִין",
+   "proof": "כִּי נַעֲשֶׂה וְנִתְתַּקֵּן בְּחִינַת מֹחִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֲמִשָּׁה חוּשִׁים שֶׁל הַמֹּחַ",
+   "target_he": "רֹאשׁ הַשָּׁנָה",
+   "proof": "וְזֶהוּ בְּחִינַת הַחֲמִשָּׁה חוּשִׁים שֶׁל הַמֹּחַ, שֶׁכֻּלָּם נִמְצָאִים בִּבְחִינַת רֹאשׁ הַשָּׁנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רֹאשׁ הַשָּׁנָה",
+   "target_he": "רֹאשׁ וּמֹחִין",
+   "proof": "שֶׁהוּא בְּחִינַת רֹאשׁ וּמֹחִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 25,
+ "chunk": "25_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עֲבוֹדָה שֶׁל תּוֹרָה וּתְפִלָּה וּמִצְווֹת",
+   "target_he": "פְּנִימִיּוּת",
+   "proof": "עֲבוֹדָה שֶׁל תּוֹרָה וּתְפִלָּה וּמִצְווֹת, הֵם פְּנִימִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֲבוֹדַת אֲכִילָה וּשְׁתִיָּה וּשְׁאָר צָרְכֵי הַגּוּף",
+   "target_he": "חִיצוֹנִיּוּת",
+   "proof": "וַעֲבוֹדַת אֲכִילָה וּשְׁתִיָּה וּשְׁאָר צָרְכֵי הַגּוּף, הֵם חִיצוֹנִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כִּסֵּא",
+   "target_he": "פְּנִימִיּוּת",
+   "proof": "כִּסֵּא זֶה בְּחִינַת פְּנִימִיּוּת, לְשׁוֹן אִתְכַּסְיָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כָּבוֹד",
+   "target_he": "חִיצוֹנִיּוּת",
+   "proof": "כָּבוֹד, זֶה חִיצוֹנִיּוּת וּלְבוּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כָּבוֹד",
+   "target_he": "לְבוּשׁ",
+   "proof": "כָּבוֹד, זֶה חִיצוֹנִיּוּת וּלְבוּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּנִימִיּוּת הַתַּחְתּוֹן",
+   "target_he": "חִיצוֹנִיּוּת הָעֶלְיוֹן",
+   "proof": "פְּנִימִיּוּת הַתַּחְתּוֹן נַעֲשֶׂה לְבוּשׁ לַחִיצוֹנִיּוּת הָעֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

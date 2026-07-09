@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 40,
+ "chunk": "40_0_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הצדיק",
+   "target_he": "ההתפארות",
+   "proof": "כִּי הוּא בְּעַצְמוֹ הַהִתְפָּאֲרוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַהִתְפָּאֲרוּת",
+   "target_he": "בְּחִינַת תְּפִלִּין מֹחִין",
+   "proof": "אֲזַי הוּא גַם־כֵּן מְקַבֵּל מִן הַהִתְפָּאֲרוּת הַזֹּאת, וְנַעֲשִׂין אֶצְלוֹ גַם־כֵּן בְּחִינַת תְּפִלִּין מֹחִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֵינָיו",
+   "target_he": "עֵינֵי ה'",
+   "proof": "וַאֲזַי נַעֲשִׂין עֵינָיו גַם־כֵּן כַּנַּ\"ל בִּבְחִינַת עֵינֵי ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מָקוֹם שֶׁהוּא מִסְתַּכֵּל",
+   "target_he": "בְּחִינַת אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "וַאֲזַי גַּם בְּכָל מָקוֹם שֶׁהוּא מִסְתַּכֵּל, נַעֲשֶׂה גַם־כֵּן בְּחִינַת אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִסְתַּכְּלוּתוֹ בְּעֵינָיו",
+   "target_he": "הָאֲוִיר",
+   "proof": "כִּי הוּא מַחְכִּים הָאֲוִיר עַל־יְדֵי הִסְתַּכְּלוּתוֹ בְּעֵינָיו הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 276,
+ "chunk": "276_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עיקר השביעה",
+   "target_he": "שבת",
+   "proof": "כִּי עִקַּר הַשְּׂבִיעָה – בְּשַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ראיית עינים",
+   "target_he": "שביעה",
+   "proof": "כִּי סוּמָא אֵין לוֹ שׂבַע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פסיעה גסה",
+   "target_he": "מאור עיניו של אדם",
+   "proof": "וּפְסִיעָה גַּסָּה נוֹטֶלֶת מְאוֹר עֵינָיו שֶׁל אָדָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קידושא דבי שמשי",
+   "target_he": "מאור עינים",
+   "proof": "וּמְהַדֵּר לֵהּ בְּקִדּוּשָׁא דְּבֵי שִׁמְשֵׁי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שלמות מאור עינים",
+   "target_he": "שבת",
+   "proof": "נִמְצָא שֶׁעִקַּר שְׁלֵמוּת מְאוֹר עֵינַיִם הוּא בְּשַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שבת",
+   "target_he": "שביעה",
+   "proof": "וְעַל כֵּן אָז הַשְּׂבִיעָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ראיית עינים",
+   "target_he": "שביעה",
+   "proof": "כִּי הַשְּׂבִיעָה עַל יְדֵי רְאִיַּת עֵינַיִם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

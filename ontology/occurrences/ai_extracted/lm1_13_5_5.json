@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 13,
+ "chunk": "13_5_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מִצְטְרִיךְ עָלְמָא לְמִטְרָא",
+   "target_he": "תּוֹרָה",
+   "proof": "כַּד הֲוָה מִצְטְרִיךְ עָלְמָא לְמִטְרָא – הַיְנוּ לַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עִבּוּר",
+   "target_he": "ע\"ב רי\"ו",
+   "proof": "עִבּוּר זֶה בְּחִינַת ע\"ב רי\"ו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ע\"ב",
+   "target_he": "שִׁכּוּךְ",
+   "proof": "ע\"ב הוּא שִׁכּוּךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רי\"ו",
+   "target_he": "חֲמִימוּת",
+   "proof": "רי\"ו זֶה בְּחִינַת חֲמִימוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּזוּזָא",
+   "target_he": "תַּאֲוַת מָמוֹן",
+   "proof": "בְּזוּזָא זֶה בְּחִינַת תַּאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׁכּוּךְ תַּאֲוַת מָמוֹן",
+   "target_he": "אַתְרָא עֲמִיקֵי",
+   "proof": "עַל־יְדֵי שֶׁשִׁכֵּךְ תַּאֲוַת מָמוֹן זָכָה לְאַתְרָא עֲמִיקֵי, שֶׁהוּא בְּחִינַת חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַתְרָא עֲמִיקֵי",
+   "target_he": "חֶסֶד",
+   "proof": "זָכָה לְאַתְרָא עֲמִיקֵי, שֶׁהוּא בְּחִינַת חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֶסֶד",
+   "target_he": "אוֹר יוֹם",
+   "proof": "וְחֶסֶד הוּא אוֹר יוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֶסֶד",
+   "target_he": "בִּנְיַן הַבַּיִת",
+   "proof": "וְעַל־יְדֵי הַחֶסֶד זָכָה לְבִנְיַן הַבַּיִת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בִּנְיַן הַבַּיִת",
+   "target_he": "שֵׂכֶל",
+   "proof": "וְעַל־יְדֵי הַחֶסֶד זָכָה לְבִנְיַן הַבַּיִת, לִבְחִינַת שֵׂכֶל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אַתְרָא צְנִיעָא",
+   "target_he": "בֵּית־הַמִּקְדָּשׁ",
+   "proof": "אַתְרָא צְנִיעָא, שֶׁהוּא בֵּית־הַמִּקְדָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בֵּית־הַמִּקְדָּשׁ",
+   "target_he": "הַשֵּׂכֶל",
+   "proof": "שֶׁהוּא בֵּית־הַמִּקְדָּשׁ, שֶׁהוּא הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

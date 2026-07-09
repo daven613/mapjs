@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 33,
+ "chunk": "33_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תּוֹרָה",
+   "target_he": "שָׁלוֹם",
+   "proof": "עַל־יְדֵי הַתּוֹרָה הַנִּקְרֵאת שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צַדִּיקִים",
+   "target_he": "בְּרִית שָׁלוֹם",
+   "proof": "וְעַל־יְדֵי צַדִּיקִים שֶׁנִּקְרְאוּ גַּם כֵּן בְּרִית שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרָה",
+   "target_he": "מְצִיאַת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "וְעַל־יְדֵי מָה יִמְצָא הַשֵּׁם יִתְבָּרַךְ בֵּין בְּטִיבוּ בֵּין בְּעָקוּ, עַל־יְדֵי הַתּוֹרָה הַנִּקְרֵאת שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צַדִּיקִים",
+   "target_he": "מְצִיאַת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "וְעַל־יְדֵי צַדִּיקִים שֶׁנִּקְרְאוּ גַּם כֵּן בְּרִית שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם בְּמִדּוֹתָיו",
+   "target_he": "מְצִיאַת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "שֶׁלֹּא יְהֵא לוֹ חִלּוּק בֵּין בְּטִיבוּ בֵּין בְּעָקוּ, תָּמִיד יִמְצָא בּוֹ הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְצִיאַת הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "אַהֲבַת הַשָּׁלוֹם",
+   "proof": "וּמֵחֲמַת זֶה יָכוֹל לֶאֱהֹב אֶת הַשָּׁלוֹם בְּכָל מָקוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְצִיאַת הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "שָׁלוֹם בֵּין יִשְׂרָאֵל",
+   "proof": "וְיָכוֹל לִהְיוֹת שָׁלוֹם בֵּין יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

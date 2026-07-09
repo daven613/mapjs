@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 246,
+ "chunk": "246_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "גַּדְלוּת",
+   "target_he": "אִסּוּר גָּדוֹל מְאֹד",
+   "proof": "כִּי בְּוַדַּאי גַּדְלוּת הוּא אִסּוּר גָּדוֹל מְאֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גַּדְלוּת",
+   "target_he": "חָכְמָה",
+   "proof": "וְאִם יִתְגָּאֶה בֶּאֱמֶת, בְּוַדַּאי חָכְמָתוֹ תִּסְתַּלֵּק מִמֶּנּוּ לְגַמְרֵי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גַּדְלוּת",
+   "target_he": "הַשָּׂגָה",
+   "proof": "וְלֹא יָבוֹא לְהַשָּׂגָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גַּדְלוּת",
+   "target_he": "שׁוֹטֶה",
+   "proof": "וְיִהְיֶה נַעֲשֶׂה שׁוֹטֶה מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גַּדְלוּת",
+   "target_he": "שִׁכְחַת חָכְמָתוֹ שֶׁמִּקֹּדֶם",
+   "proof": "שֶׁיִּהְיֶה לוֹ גַּדְלוּת רַק כְּדֵי לִשְׁכֹּחַ חָכְמָתוֹ שֶׁמִּקֹּדֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

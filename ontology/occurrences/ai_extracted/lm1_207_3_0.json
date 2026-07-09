@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 207,
+ "chunk": "207_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַדִּבּוּרִים",
+   "target_he": "גְּבוּרוֹת קָשׁוֹת",
+   "proof": "שֶׁהֵם גְּבוּרוֹת קָשׁוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְתָּקַת הַדִּבּוּרִים",
+   "target_he": "דִּבּוּרִים רָעִים עַל הַכְּלָל אוֹ עַל הַפְּרָט",
+   "proof": "וַאֲזַי כְּשֶׁאֵינָם מַמְתִּיקִים הַדִּבּוּרִים... אֲזַי מַתְחִילִין לְדַבֵּר בְּאֵלּוּ הַדִּבּוּרִים דִּבּוּרִים רָעִים עַל הַכְּלָל אוֹ עַל הַפְּרָט",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַדִּבּוּרִים שֶׁהֵם גְּבוּרוֹת קָשׁוֹת",
+   "target_he": "צַדִּיק הַדּוֹר",
+   "proof": "וַאֲזַי כָּל הַדִּבּוּרִים שֶׁלָּהֶם, שֶׁהֵם גְּבוּרוֹת קָשׁוֹת, בָּאִים וְנוֹפְלִים עַל צַדִּיק הַדּוֹר, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_10_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שֶׁבַח הַצַּדִּיקִים",
+   "target_he": "תִּקּוּן הַדִּבּוּר",
+   "proof": "שֶׁאִי אֶפְשָׁר לְתַקֵּן הַדִּבּוּר כִּי אִם עַל־יְדֵי שֶׁבַח הַצַּדִּיקִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שֶׁבַח הַצַּדִּיקִים",
+   "target_he": "תִּקּוּן הַכְּלָלִי לְהַדִּבּוּר",
+   "proof": "שֶׁהוּא תִּקּוּן הַכְּלָלִי לְהַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַכְּלָלִי",
+   "target_he": "הַמֹּחִין",
+   "proof": "וְהוּא הַדִּין כָּל הַדְּבָרִים אִי אֶפְשָׁר לְתַקֵּן כִּי אִם עַל יְדֵי תִּקּוּן הַכְּלָלִי, כְּדֵי לְהָרִים אֶת הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בַּת מַזְלֵהּ",
+   "target_he": "הַמֹּחִין",
+   "proof": "הַיְנוּ בְּחִינַת הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בַּת מַזְלֵהּ",
+   "target_he": "וְנוֹזְלִים מִן לְבָנוֹן",
+   "proof": "בְּחִינַת וְנוֹזְלִים מִן לְבָנוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רַבִּי שִׁמְעוֹן",
+   "target_he": "הַדִּבּוּר",
+   "proof": "כִּי בִּימֵי רַבִּי שִׁמְעוֹן הָיָה הַדִּבּוּר עַל תִּקּוּנוֹ, וּבָתַר דְּאִסְתְּלֵק נֶאֱמַר: אַל תִּתֵּן אֶת פִּיךָ וְגוֹ'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "מַשָּׂא וּמַתָּן",
+   "proof": "כְּגוֹן מַשָּׂא וּמַתָּן – עַל־יְדֵי צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

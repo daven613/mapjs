@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 205,
+ "chunk": "205_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַשְׂכִּיל",
+   "target_he": "מְשַׁכֵּל",
+   "proof": "כִּי הִיא בְּחִינַת מְשַׁכֵּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְשׁוֹן תַּרְגּוּם",
+   "target_he": "מַשְׂכִּיל עַל יְדֵי תֻּרְגְּמָן",
+   "proof": "שֶׁהוּא בְּחִינַת מַשְׂכִּיל עַל יְדֵי תֻּרְגְּמָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְשׁוֹן תַּרְגּוּם",
+   "target_he": "לְהַחֲטִיא אֶת הָאָדָם בְּמִקְרֶה",
+   "proof": "עִקַּר כֹּחָהּ לְהַחֲטִיא אֶת הָאָדָם בְּמִקְרֶה, חַס וְשָׁלוֹם, הוּא עַל־יְדֵי לְשׁוֹן תַּרְגּוּם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

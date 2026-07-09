@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 60,
+ "chunk": "60_0_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חִדּוּשֵׁי תוֹרָה",
+   "target_he": "אֱלֹקוּת",
+   "proof": "כִּי עַל־יְדֵי חִדּוּשֵׁי־תוֹרָה שֶׁמְּגַלִּין, עַל־יְדֵי־זֶה נִמְשָׁךְ אֱלֹקוּת, כִּבְיָכוֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תוֹרָה",
+   "target_he": "אֱלֹקוּת",
+   "proof": "כִּי עַל־יְדֵי הַתּוֹרָה מַמְשִׁיכִין אוֹתוֹ, כִּבְיָכוֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִיסָה",
+   "target_he": "מֶלֶךְ אָסוּר בָּרְהָטִים",
+   "proof": "וְאַף־עַל־פִּי שֶׁזֶּהוּ תְּפִיסָה, כִּבְיָכוֹל, בִּבְחִינַת (שיר השירים ז׳:ו׳): מֶלֶךְ אָסוּר בָּרְהָטִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רְהִיטֵי מֹחִין",
+   "target_he": "תְּפִיסָה",
+   "proof": "בִּרְהִיטֵי מֹחִין הוּא בְּחִינַת תְּפִיסָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִיסָה",
+   "target_he": "שָׁבִיתָ שֶׁבִי",
+   "proof": "בְּחִינַת (תהילים ס״ח:י״ט) שָׁבִיתָ שֶׁבִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

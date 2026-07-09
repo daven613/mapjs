@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 38,
+ "chunk": "38_7_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מרכבות פרעה וחילו",
+   "target_he": "תפילין",
+   "proof": "מַרְכְּבֹת פַּרְעֹה וְחֵילוֹ הַיְנוּ בְּחִינַת תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פרעה",
+   "target_he": "אמא",
+   "proof": "שֶׁפַּרְעֹה הִיא אִמָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תפילין",
+   "target_he": "מרכבות",
+   "proof": "וּתְפִלִּין נִקְרָא מֶרְכָּבוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שמים (אש ומים)",
+   "target_he": "גוונין",
+   "proof": "וְשָׁמַיִם, אֵשׁ וּמַיִם, בְּחִינַת גְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ירה",
+   "target_he": "גבורות",
+   "proof": "יָרָה, הֵם הַגְּבוּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בים",
+   "target_he": "דיבור",
+   "proof": "בַיָּם, הוּא בְּחִינַת דִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קישור והעלאת הדיבור לשרשו",
+   "target_he": "תפילין",
+   "proof": "וְעַל־יְדֵי מַה תִּזְכֶּה לִבְחִינַת תְּפִלִּין – יָרָה בַּיָּם... כְּשֶׁתְּקַשֵּׁר וְתַעֲלֶה אֶת הַדִּבּוּר לְשָׁרְשָׁהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 11,
+ "chunk": "11_7_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִירַת הַבְּרִית בִּשְׁתֵּי בְּחִינוֹת",
+   "target_he": "לְשַׁבֵּר הַגַּדְלוּת וְהַכָּבוֹד שֶׁל עַצְמוֹ וְכָבוֹד הַשֵּׁם יִתְבָּרַךְ בִּשְׁלֵמוּת",
+   "proof": "אֲבָל אֵיךְ זוֹכִין לָזֶה, לְשַׁבֵּר הַגַּדְלוּת וְהַכָּבוֹד שֶׁל עַצְמוֹ לְגַמְרֵי, וְשֶׁיִּהְיֶה כְּבוֹד הַשֵּׁם יִתְבָּרַךְ בִּשְׁלֵמוּת – הוּא עַל־יְדֵי שְׁמִירַת הַבְּרִית בִּשְׁתֵּי בְּחִינוֹת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁמִירַת הַבְּרִית בִּשְׁתֵּי בְּחִינוֹת",
+   "target_he": "יִחוּדָא עִלָּאָה וְיִחוּדָא תַּתָּאָה",
+   "proof": "שֶׁהֵם בְּחִינַת יִחוּדָא עִלָּאָה וְיִחוּדָא תַּתָּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זִיז שָׂדַי",
+   "target_he": "יִחוּדָא עִלָּאָה וְיִחוּדָא תַּתָּאָה",
+   "proof": "הַאי זִיז שָׂדַי הוּא – הַיְנוּ בְּחִינַת יִחוּדָא עִלָּאָה וְיִחוּדָא תַּתָּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִחוּדָא עִלָּאָה וְיִחוּדָא תַּתָּאָה",
+   "target_he": "שְׁמִירַת הַבְּרִית בִּשְׁתֵּי בְּחִינוֹת",
+   "proof": "שֶׁהֵם בְּחִינַת שְׁמִירַת הַבְּרִית בִּשְׁתֵּי בְּחִינוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִחוּדָא עִלָּאָה וְיִחוּדָא תַּתָּאָה",
+   "target_he": "הַכָּבוֹד בִּשְׁלֵמוּת",
+   "proof": "שֶׁעַל־יְדֵי יִחוּדָא עִלָּאָה וְיִחוּדָא תַּתָּאָה, שֶׁהֵם בְּחִינַת שְׁמִירַת הַבְּרִית בִּשְׁתֵּי בְּחִינוֹת כַּנַּ\"ל, עַל־יְדֵי־זֶה הַכָּבוֹד בִּשְׁלֵמוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כָּבוֹד בִּשְׁלֵמוּת",
+   "target_he": "צִפַּרְתָּא",
+   "proof": "וְעַל־יְדֵי כָּבוֹד בִּשְׁלֵמוּת זוֹכִין לְצִפַּרְתָּא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צִפַּרְתָּא",
+   "target_he": "הַדִּבּוּר",
+   "proof": "שֶׁהוּא הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַדִּבּוּר",
+   "target_he": "אֶמְצָעִי בֵּין מַיָּא לָרָקִיעַ",
+   "proof": "שֶׁהוּא אֶמְצָעִי בֵּין מַיָּא לָרָקִיעַ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זִיז",
+   "target_he": "יִחוּדָא תַּתָּאָה",
+   "proof": "כִּי זִיז הוּא בְּחִינַת יִחוּדָא תַּתָּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זִיז",
+   "target_he": "מט\"ט",
+   "proof": "בְּחִינַת מט\"ט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זִיז",
+   "target_he": "מִכְּנַף הָאָרֶץ",
+   "proof": "בְּחִינַת: מִכְּנַף הָאָרֶץ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_12",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מָמוֹן",
+   "target_he": "מִיתָה",
+   "proof": "וְהַמָּמוֹן הוֹרֶגֶת וּמֵמִית אוֹתָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צַדִּיק",
+   "target_he": "הַצָּלָה מִן הַמָּמוֹן",
+   "proof": "וְאִי אֶפְשָׁר לְהִנָּצֵל מִזֶּה כִּי אִם עַל־יְדֵי הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָאִשָּׁה",
+   "target_he": "טְחוֹל",
+   "proof": "וְדָא טְחוֹל שַׁבְּתַאי וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "טְחוֹל",
+   "target_he": "שַׁבְּתַאי",
+   "proof": "וְדָא טְחוֹל שַׁבְּתַאי וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טְחוֹל",
+   "target_he": "עַצְבוּת וּמָרָה שְׁחוֹרָה",
+   "proof": "הַיְנוּ בְּחִינַת עַצְבוּת וּמָרָה שְׁחוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עַצְבוּת וּמָרָה שְׁחוֹרָה",
+   "target_he": "טְחוֹל",
+   "proof": "שֶׁהוּא בְּחִינַת טְחוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

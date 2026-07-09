@@ -1,0 +1,30 @@
+{
+ "book": "lm1",
+ "torah": 3,
+ "chunk": "3_15_0",
+ "model": "claude-fable-5",
+ "extractor": "ai:claude-fable-5",
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "לימוד שלא לשמה",
+   "target_he": "בליעת הנחש",
+   "proof": "עַל־יְדֵי שֶׁיִּלְמַד שֶׁלֹּא לִשְׁמָהּ, יִבְלַע אוֹתָהּ הַנָּחָשׁ",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "equation",
+   "source_he": "רבה",
+   "target_he": "לימוד בשביל שיתקרא רבי",
+   "proof": "רַבָּה קָאֲמַר לָהּ, הַיְנוּ עַל־יְדֵי שֶׁיִּלְמוֹד בִּשְׁבִיל שֶׁיִּתְקָרֵא רַבִּי",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "equation",
+   "source_he": "לימוד שלא לשמה",
+   "target_he": "לימוד בשביל שיתקרא רבי",
+   "proof": "עַל־יְדֵי שֶׁיִּלְמַד שֶׁלֹּא לִשְׁמָהּ... הַיְנוּ עַל־יְדֵי שֶׁיִּלְמוֹד בִּשְׁבִיל שֶׁיִּתְקָרֵא רַבִּי",
+   "explicitness": "inferred"
+  }
+ ]
+}

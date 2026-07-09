@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 61,
+ "chunk": "61_2_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חָכְמָתוֹ",
+   "target_he": "יַד ה'",
+   "proof": "אֲזַי מְקַבֵּל חָכְמָתוֹ מִבְּחִינַת יַד ה', בִּבְחִינַת: וִיהוֹשֻׁעַ בִּן נוּן מָלֵא רוּחַ חָכְמָה וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סְּמִיכָה",
+   "target_he": "הֶאָרָה וְכֹחַ בִּכְתַב יָדֵנוּ",
+   "proof": "אֲזַי עַל־יְדֵי הַסְּמִיכָה... אֲזַי מֵבִיא הֶאָרָה וְכֹחַ בִּכְתַב יָדֵנוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּתַב יָדֵנוּ",
+   "target_he": "חָכְמָה",
+   "proof": "שֶׁהוּא גַּם כֵּן מִבְּחִינַת חָכְמָה כַּנַּ\"ל, בִּבְחִינַת (דברי הימים־א כח): הַכֹּל בִּכְתָב מִיַּד ה' עָלַי הִשְׂכִּיל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשֵּׂכֶל שֶׁמְּקַבֵּל מִיַּד ה'",
+   "target_he": "סְמִיכָה",
+   "proof": "שֶׁעַל־יְדֵי הַשֵּׂכֶל שֶׁמְּקַבֵּל מִיַּד ה', שֶׁזֶּה בְּחִינַת סְמִיכָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשֵּׂכֶל שֶׁמְּקַבֵּל מִיַּד ה'",
+   "target_he": "הֶאָרָה וְכֹחַ בַּכְּתָב",
+   "proof": "עַל יְדֵי זֶה מֵבִיא הֶאָרָה וְכֹחַ בַּכְּתָב כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֶאָרָה בַּכְּתוּבִים עַל־יְדֵי הַסְּמִיכָה",
+   "target_he": "וַתָּנַח עֲלֵיהֶם הָרוּחַ וְהֵמָּה בַּכְּתוּבִים",
+   "proof": "וְזֶה בְּחִינַת (במדבר י\"א:כ\"ו): וַתָּנַח עֲלֵיהֶם הָרוּחַ וְהֵמָּה בַּכְּתוּבִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סְמִיכָה וְקַבָּלַת הָרוּחַ חָכְמָה",
+   "target_he": "הֶאָרָה בַּכְּתוּבִים",
+   "proof": "שֶׁעַל־יְדֵי שֶׁנִּסְמְכוּ אָז, וְקִבְּלוּ הָרוּחַ חָכְמָה, עַל־יְדֵי־זֶה הֵבִיאוּ הֶאָרָה בַּכְּתוּבִים, הַיְנוּ בִּכְתַב יָדֵנוּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּתַב יָדֵנוּ",
+   "target_he": "מִשְׁפְּטֵי הַנְהָגוֹת שֶׁלָּהֶם",
+   "proof": "אֶלָּא אֲפִלּוּ שֶׁכָּל מִשְׁפְּטֵי הַנְהָגוֹת שֶׁלָּהֶם, כֻּלָּם עַל־יְדֵי כְּתַב יָדֵנוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָּל מִשְׁפְּטֵי הַנְהָגוֹת שֶׁלָּהֶם עַל־יְדֵי כְּתַב יָדֵנוּ",
+   "target_he": "לַעֲשׂוֹת בָּהֶם מִשְׁפָּט כָּתוּב",
+   "proof": "בִּבְחִינַת (תהילים קמ\"ט:ט'): לַעֲשׂוֹת בָּהֶם מִשְׁפָּט כָּתוּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

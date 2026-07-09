@@ -1,0 +1,136 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_2_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וְהָיָה אוֹר הַלְּבָנָה כְּאוֹר הַחַמָּה",
+   "target_he": "שַׁעֲשׁוּעַ עוֹלָם הַבָּא",
+   "proof": "וְזֶה בְּחִינַת שַׁעֲשׁוּעַ עוֹלָם הַבָּא, בִּבְחִינַת וְהָיָה אוֹר הַלְּבָנָה כְּאוֹר הַחַמָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְּבָנָה",
+   "target_he": "חִסָּרוֹן וּקְרִירוּת",
+   "proof": "כִּי הַלְּבָנָה טִבְעָהּ קַר, בְּחִינַת חִסָּרוֹן וּקְרִירוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִלּוּי הַחִסָּרוֹן",
+   "target_he": "הוֹלָדָה",
+   "proof": "בְּחִינַת מִלּוּי הַחִסָּרוֹן, שֶׁזֶּה בְּחִינַת הוֹלָדָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִלּוּי הַחִסָּרוֹן",
+   "target_he": "הֲלָכוֹת",
+   "proof": "שֶׁזֶּה בְּחִינַת הוֹלָדָה, בְּחִינַת הֲלָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הוֹלָדָה",
+   "target_he": "שַׁעֲשׁוּעַ עוֹלָם הַבָּא",
+   "proof": "שֶׁהֵם בְּחִינַת שַׁעֲשׁוּעַ עוֹלָם הַבָּא כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֲלָכוֹת",
+   "target_he": "שַׁעֲשׁוּעַ עוֹלָם הַבָּא",
+   "proof": "שֶׁהֵם בְּחִינַת שַׁעֲשׁוּעַ עוֹלָם הַבָּא כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הוֹלָדָה",
+   "target_he": "אֵלֶּה תוֹלְדוֹת הַשָּׁמַיִם וְהָאָרֶץ בְּהִבָּרְאָם",
+   "proof": "וְזֶה בְּחִינַת (בראשית ב׳:ד׳): אֵלֶּה תוֹלְדוֹת הַשָּׁמַיִם וְהָאָרֶץ בְּהִבָּרְאָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אַבְרָהָם",
+   "target_he": "חֶסֶד",
+   "proof": "בְּאַבְרָהָ\"ם (ב\"ר פ' יב), הַיְנוּ חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֲלָכוֹת",
+   "target_he": "הוֹלָדָה",
+   "proof": "כִּי הַהוֹלָדָה – עַל־יְדֵי בְּחִינַת הֲלָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֲלָכוֹת",
+   "target_he": "חֶסֶד",
+   "proof": "שֶׁהֵם בְּחִינַת חֶסֶד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תּוֹדָה",
+   "target_he": "תּוֹלָדָה",
+   "proof": "לְתוֹדָה – אוֹתִיּוֹת תּוֹלָדָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָרִיעוּ לַייָ כָּל הָאָרֶץ",
+   "target_he": "הֲלָכָה",
+   "proof": "הָרִיעוּ לַייָ כָּל הָאָרֶץ – רָאשֵׁי תֵבוֹת \"הֲלָכָה\", כַּמּוּבָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֲלָכוֹת",
+   "target_he": "תּוֹדָה",
+   "proof": "כִּי הַהֲלָכוֹת, בְּחִינַת תּוֹדָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֲלָכוֹת",
+   "target_he": "תּוֹלָדָה",
+   "proof": "הֵם בְּחִינַת תּוֹלָדָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

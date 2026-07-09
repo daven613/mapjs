@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 117,
+ "chunk": "117_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שקר",
+   "target_he": "נחש",
+   "proof": "שֶׁהוּא מִבְּחִינַת הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נחש",
+   "target_he": "מיתה",
+   "proof": "וְהַנָּחָשׁ הֵבִיא מִיתָה לָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שינה",
+   "target_he": "מיתה",
+   "proof": "וְהַשֵּׁנָה הוּא אֶחָד מִשִּׁשִּׁים בְּמִיתָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שקר",
+   "target_he": "נחש",
+   "proof": "נִדְחֶה הַשֶּׁקֶר, שֶׁהוּא הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

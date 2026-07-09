@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_4_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת יוֹסֵף",
+   "target_he": "בְּחִינוֹת שִׁמְעוֹן",
+   "proof": "עַל־יְדֵי שֶׁאֵין לְךָ בְּחִינַת יוֹסֵף, אֵין לְךָ בְּחִינוֹת שִׁמְעוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׁמְעוֹן",
+   "target_he": "כִּי שָׁמַע ה' כִּי שְׂנוּאָה אָנֹכִי",
+   "proof": "וְשִׁמְעוֹן הוּא בְּחִינַת (שם כט): כִּי שָׁמַע ה' כִּי שְׂנוּאָה אָנֹכִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן עַצְמְךָ",
+   "target_he": "לְהוֹכִיחַ אֲחֵרִים",
+   "proof": "כִּי מֵחֲמַת שֶׁלֹּא תִּקַּנְתָּ אֶת עַצְמְךָ, בְּוַדַּאי אֵינְךָ יָכוֹל לְהוֹכִיחַ אֲחֵרִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמּוֹכִיחַ",
+   "target_he": "שָׂנוּא",
+   "proof": "כִּי הַמּוֹכִיחַ הוּא שָׂנוּא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְאֶת בִּנְיָמִין תִּקָּחוּ",
+   "target_he": "גַּדְלוּת",
+   "proof": "וְאֶת בִּנְיָמִין תִּקָּחוּ – זֶה מוֹרֶה עַל גַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמִּתְגָּאֶה",
+   "target_he": "חָכְמָתוֹ",
+   "proof": "כִּי כָּל הַמִּתְגָּאֶה, חָכְמָתוֹ מִסְתַּלֶּקֶת מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

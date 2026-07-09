@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 80,
+ "chunk": "80_0_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "נשברה רגלו",
+   "target_he": "כפירה",
+   "proof": "נִשְׁבְּרָה רַגְלוֹ – הַיְנוּ כְּפִירָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קנאה",
+   "target_he": "כפירה בעיקר",
+   "proof": "מֵחֲמַת קִנְאָה שֶׁקִּנֵּא אֶת חֲבֵרוֹ... עַל־יְדֵי־זֶה כָּפַר בָּעִקָּר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ראיית עליית בני גילם לגדולה",
+   "target_he": "נפילה מאמונה",
+   "proof": "שֶׁכַּמָּה בְּנֵי־אָדָם נָפְלוּ מֵאֱמוּנָתָם מֵחֲמַת שֶׁרוֹאִים שֶׁבְּנֵי־גִילָם עָלוּ לִגְדֻלָּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עזות",
+   "target_he": "מלכותא בלא תגא",
+   "proof": "עַזּוּת – מַלְכוּתָא בְּלָא תַגָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

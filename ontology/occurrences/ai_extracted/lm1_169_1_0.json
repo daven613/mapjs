@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 169,
+ "chunk": "169_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "צָרוֹת",
+   "target_he": "רִקּוּד",
+   "proof": "כִּי כְּשֶׁיֵּשׁ צָרוֹת, חַס וְשָׁלוֹם, הֵן צָרוֹת בִּכְלָלִיּוּת אוֹ בִּפְרָטִיּוּת, אִי אֶפְשָׁר לְרַקֵּד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רָצִים (שְׁלוּחֵי הַדִּין)",
+   "target_he": "רַגְלִין",
+   "proof": "וְהֵם נִקְרָאִים רָצִים... וְהֵם בְּחִינַת רַגְלִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דָּמִים שֶׁנִּתְפַּשְּׁטוּ (דִּינִין)",
+   "target_he": "רַגְלִין כְּבֵדִים",
+   "proof": "וַאֲזַי הָרַגְלִין כְּבֵדִים מֵחֲמַת הַדָּמִים שֶׁנִּתְפַּשְּׁטוּ לְשָׁם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דָּמִים שֶׁנִּתְפַּשְּׁטוּ לְשָׁם",
+   "target_he": "דִּינִין",
+   "proof": "הַיְנוּ הַדִּינִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

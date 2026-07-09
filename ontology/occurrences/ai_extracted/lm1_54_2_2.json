@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_2_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לִקַּח דָּבָר מִזֶּה הָעוֹלָם",
+   "target_he": "הוֹד וְהָדָר לָבָשְׁתָּ",
+   "proof": "הַיְנוּ כְּשֶׁרוֹצֶה לִקַּח דָּבָר מִזֶּה הָעוֹלָם, שֶׁהוּא בְּחִינַת הוֹד וְהָדָר לָבָשְׁתָּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הוֹד וְהָדָר",
+   "target_he": "רַגְלִין הַמְלֻבָּשִׁין בְּזֶה הָעוֹלָם",
+   "proof": "שֶׁהֵם בְּחִינַת רַגְלִין הַמְלֻבָּשִׁין בְּזֶה הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַגְדָּלַת הַשֵּׂכֶל בְּמִדָּה",
+   "target_he": "גָּדַלְתָּ מְאֹד",
+   "proof": "יִהְיֶה בִּבְחִינַת גָּדַלְתָּ מְאֹד. הַיְנוּ שֶׁהַהַגְדָּלַת הַשֵּׂכֶל, יִהְיֶה בְּמִדָּה וּבְצִמְצוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְאֹד",
+   "target_he": "סִטְרָא דִּשְׂמָאלָא",
+   "proof": "וְזֶה מְאֹד, שֶׁהוּא סִטְרָא דִּשְׂמָאלָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סִטְרָא דִּשְׂמָאלָא",
+   "target_he": "צִמְצוּם",
+   "proof": "שֶׁמִּמֶּנּוּ הַצִּמְצוּם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

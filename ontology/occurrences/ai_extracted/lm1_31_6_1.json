@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "כיסוף לרע",
+   "target_he": "נקודות רעים",
+   "proof": "אִם כּוֹסֵף לְרַע עוֹשֶׂה הַנְּקֻדּוֹת רָעִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נקודות רעים",
+   "target_he": "פעולות רעות",
+   "proof": "וַאֲזַי נִצְטָרְפִים הָאוֹתִיּוֹת וְנִזְדַּוְּגִים לַעֲשׂוֹת פְּעֻלּוֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כיסוף לשוב בתשובה",
+   "target_he": "נקודות טובות",
+   "proof": "וְאִם כּוֹסֵף לָשׁוּב בִּתְשׁוּבָה, נַעֲשֶׂה נְקֻדּוֹת טוֹבוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נקודות טובות",
+   "target_he": "נפשות טובות",
+   "proof": "נַעֲשֶׂה נְקֻדּוֹת טוֹבוֹת, הַיְנוּ נְפָשׁוֹת טוֹבוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נקודות טובות",
+   "target_he": "פעולות טובות",
+   "proof": "וּמִתְנוֹעֲעִים הָאוֹתִיּוֹת וְנִזְדַּוְּגִים לַעֲשׂוֹת פְּעֻלּוֹת טוֹבוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תּוֹרֵי זָהָב נַעֲשֶׂה לָּךְ",
+   "target_he": "אִתְעָרוּתָא דְּזִוּוּגִין וְהִצְטָרְפוּתָן שֶׁל אוֹתִיּוֹת הַתּוֹרָה",
+   "proof": "וְזֶהוּ: תּוֹרֵי זָהָב נַעֲשֶׂה לָּךְ, הַיְנוּ אִתְעָרוּתָא דְּזִוּוּגִין וְהִצְטָרְפוּתָן שֶׁל אוֹתִיּוֹת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נקודות הכסף",
+   "target_he": "פעולה",
+   "proof": "לִפְעֹל אֵיזֶהוּ פְּעֻלָּה, אֵינוֹ אֶלָּא עַל־יְדֵי נְקֻדּוֹת הַכֶּסֶף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נקודות",
+   "target_he": "תנועת האותיות",
+   "proof": "אֵין לָהֶם שׁוּם תְּנוּעָה אֶלָּא עַל־יְדֵי נְקֻדּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כיסופין",
+   "target_he": "נקודות",
+   "proof": "שֶׁנַּעֲשֶׂה עַל־יְדֵי הַכִּסּוּפִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הרב דומה למלאך ה' צבאות",
+   "target_he": "חסד ואהבה",
+   "proof": "אֲזַי בְּוַדַּאי חֶסֶד וְאַהֲבָה מִתְגַּלֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הרב דומה למלאך ה' צבאות",
+   "target_he": "השתוקקות",
+   "proof": "וְהִשְׁתּוֹקְקוּת נִתְגַּלֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "השתוקקות",
+   "target_he": "נקודות",
+   "proof": "וְהִשְׁתּוֹקְקוּת נִתְגַּלֶּה, שֶׁהֵם הַנְּקֻדּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "השתוקקות",
+   "target_he": "אותיות התורה מבקשים ממנו שידבר אותם",
+   "proof": "אֲזַי תּוֹרָה יְבַקְּשׁוּ מִפִּיהוּ, אֲזַי אוֹתִיּוֹת הַתּוֹרָה בְּעַצְמָן מְבַקְּשִׁים מִמֶּנּוּ שֶׁיְּדַבֵּר אוֹתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

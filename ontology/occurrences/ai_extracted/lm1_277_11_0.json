@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 277,
+ "chunk": "277_11_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הָאָרֶץ",
+   "target_he": "הָרְפוּאוֹת",
+   "proof": "כָּל הָרְפוּאוֹת בָּאִין מִן הָאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָאָרֶץ",
+   "target_he": "הָאִילָנוֹת וְהַצְּמָחִים",
+   "proof": "שֶׁנּוֹתֶנֶת כֹּחַ בְּכָל הָאִילָנוֹת וְהַצְּמָחִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זְמַן הַחֲנִיטָה",
+   "target_he": "חֹדֶשׁ אִיָּר",
+   "proof": "דְּהַיְנוּ בִּזְמַן הַחֲנִיטָה, שֶׁהוּא בְּחֹדֶשׁ אִיָּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זְמַן הַחֲנִיטָה",
+   "target_he": "כֹּחַ בָּרְפוּאוֹת",
+   "proof": "אֲזַי יֵשׁ כֹּחַ יוֹתֵר בְּכָל הָרְפוּאוֹת, כִּי אָז נוֹתֶנֶת הָאָרֶץ בָּהֶם כֹּחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֹדֶשׁ אִיָּר",
+   "target_he": "מַייא",
+   "proof": "שֶׁהוּא \"מַייא\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

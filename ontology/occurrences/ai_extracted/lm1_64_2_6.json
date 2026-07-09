@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_2_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַחָכְמוֹת שֶׁאֵינָם חָכְמוֹת",
+   "target_he": "הָאֶפִּיקוֹרְסוּת הַשֵּׁנִית",
+   "proof": "וַאֲפִלּוּ עַל הַחָכְמוֹת שֶׁאֵינָם חָכְמוֹת, הַיְנוּ הָאֶפִּיקוֹרְסוּת הַשֵּׁנִית הַבָּא מֵחָלָל הַפָּנוּי כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָלָל הַפָּנוּי",
+   "target_he": "הָאֶפִּיקוֹרְסוּת הַשֵּׁנִית",
+   "proof": "הָאֶפִּיקוֹרְסוּת הַשֵּׁנִית הַבָּא מֵחָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צִמְצוּם",
+   "target_he": "חָלָל הַפָּנוּי",
+   "proof": "הַבָּא עַל־יְדֵי הַצִּמְצוּם, שֶׁצִּמְצֵם הָאוֹר לִצְדָדִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֱלֹקֵי הָעִבְרִיִּים",
+   "target_he": "אֱלֹקוּתוֹ מְסַבֵּב גַּם עַל הֶחָלָל הַפָּנוּי",
+   "proof": "הַיְנוּ שֶׁאֱלֹקוּתוֹ מְסַבֵּב גַּם עַל הֶחָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "כָּל הַחָכְמוֹת",
+   "proof": "עַל־שֵׁם שֶׁהֵם עוֹבְרִים בֶּאֱמוּנָתָם עַל כָּל הַחָכְמוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָתָם שֶׁהַשֵּׁם יִתְבָּרַךְ אֱלֹקֵי הָעִבְרִיִּים",
+   "target_he": "כָּל הַחָכְמוֹת וְעַל מַה שֶּׁאֵינָם חָכְמוֹת",
+   "proof": "שֶׁעַל־יְדֵי אֱמוּנָתָם, שֶׁמַּאֲמִינִים שֶׁהַשֵּׁם יִתְבָּרַךְ אֱלֹקֵי הָעִבְרִיִּים כַּנַּ\"ל, הֵם עוֹבְרִים עַל כָּל הַחָכְמוֹת וְעַל מַה שֶּׁאֵינָם חָכְמוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עִיּוּן וְהַבָּטָה בְּדִבְרֵי הָאֶפִּיקוֹרְסוּת הַשֵּׁנִית",
+   "target_he": "שְׁקִיעָה",
+   "proof": "לִבְלִי לְעַיֵּן וּלְהַבִּיט בְּדִבְרֵיהֶם כְּלָל, כִּי, חַס וְשָׁלוֹם, בְּוַדַּאי יִשְׁקַע שָׁם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

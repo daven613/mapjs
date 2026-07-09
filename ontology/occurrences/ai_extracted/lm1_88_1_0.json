@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 88,
+ "chunk": "88_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "צַּדִּיק",
+   "target_he": "הַשְׁפָּעוֹת וְהַבְּרָכוֹת",
+   "proof": "כִּי הַהַשְׁפָּעוֹת וְהַבְּרָכוֹת אִי אֶפְשָׁר לָהֶם לָבוֹא לָעוֹלָם אֶלָּא עַל יְדֵי הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יָדַיִם",
+   "target_he": "אַהֲבָה וְיִרְאָה",
+   "proof": "כִּי הַצַּדִּיק יֵשׁ לוֹ יָדַיִם בַּמֶּה לְקַבְּלָם, דְּהַיְנוּ אַהֲבָה וְיִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַהֲבָה וְיִרְאָה",
+   "target_he": "הַשְׁפָּעוֹת וְכָל הַבְּרָכוֹת",
+   "proof": "כִּי הֵם הַיָּדַיִם לְקַבֵּל בָּהֶם כָּל הַהַשְׁפָּעוֹת וְכָל הַבְּרָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

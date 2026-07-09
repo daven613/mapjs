@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_9_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חַשְׁמַ\"ל",
+   "target_he": "מִילָה",
+   "proof": "חַשְׁמַ\"ל – חָשׁ מָל, בְּחִינַת מִילָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָל",
+   "target_he": "מְדוּרָה שֶׁל שִׁבְעִין כּוֹכְבִין",
+   "proof": "וּ\"מָל\" גִּימַטְרִיָּא שִׁבְעִים, בְּחִינוֹת מְדוּרָה שֶׁל שִׁבְעִין כּוֹכְבִין הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִצְוַת מִילָה",
+   "target_he": "מְדוּרָה שֶׁל שִׁבְעִין כּוֹכְבִין",
+   "proof": "שֶׁנִּתְמַלֵּל וְנֶחְתָּךְ וְנִתְבַּטֵּל עַל־יְדֵי מִצְוַת מִילָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִצְוַת מִילָה",
+   "target_he": "תִּקּוּן הַבְּרִית",
+   "proof": "שֶׁהוּא בְּחִינַת תִּקּוּן הַבְּרִית כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַשְּׁגָגוֹת",
+   "target_he": "הַעֲלָאַת הַטּוֹב מִן הַתַּרְגּוּם",
+   "proof": "וּלְהַעֲלוֹת הַטּוֹב מִן הַתַּרְגּוּם, הוּא עַל־יְדֵי תִּקּוּן הַשְּׁגָגוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

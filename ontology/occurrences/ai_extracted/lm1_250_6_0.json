@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 250,
+ "chunk": "250_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "סוף העולם",
+   "target_he": "השגחה",
+   "proof": "הוּא מַמְשִׁיךְ מִסּוֹף הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כי השמים כעשן נמלחו והארץ כבגד תבלה",
+   "target_he": "יתבטל הטבע",
+   "proof": "כְּמָה שֶׁכָּתוּב: כִּי הַשָּׁמַיִם כֶּעָשָׁן נִמְלָחוּ וְהָאָרֶץ כַּבֶּגֶד תִּבְלֶה הַיְנוּ שֶׁיִּתְבַּטֵּל הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נמלחו",
+   "target_he": "שיתבלבלו ויתערבבו כל המזלות",
+   "proof": "וְזֶהוּ נִמְלָחוּ, הַיְנוּ שֶׁיִּתְבַּלְבְּלוּ וְיִתְעַרְבְּבוּ כָּל הַמַּזָּלוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ביטול הטבע",
+   "target_he": "השגחה",
+   "proof": "יִתְבַּטֵּל הַטֶּבַע לְגַמְרֵי, וְלֹא יִהְיֶה רַק הַשְׁגָּחָה לְבַד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "השגחה",
+   "target_he": "ישראל למעלה",
+   "proof": "רַק הַשְׁגָּחָה לְבַד, וְאָז יִהְיוּ יִשְׂרָאֵל לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

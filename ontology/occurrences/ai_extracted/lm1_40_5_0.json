@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 40,
+ "chunk": "40_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בִּטּוּל תּוֹרָה",
+   "target_he": "גָּלוּת",
+   "proof": "גַּם הַגָּלוּת בָּא עַל בִּטּוּל תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲבוֹדַת אֱלִילִים",
+   "target_he": "עֲצִירַת גְּשָׁמִים",
+   "proof": "וְעַל־יְדֵי עֲבוֹדַת אֱלִילִים בָּא עֲצִירַת גְּשָׁמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קֶמַח",
+   "target_he": "תּוֹרָה",
+   "proof": "וּכְשֶׁאֵין קֶמַח, אֵין תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 38,
+ "chunk": "38_7_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שבת",
+   "target_he": "בושה",
+   "proof": "כִּי שַׁבָּת – בְּחִינַת בּוּשָׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רגל",
+   "target_he": "דיבור",
+   "proof": "בַּתְּחִלָּה צָרִיךְ לְתַקֵּן הַדִּבּוּר, הַנִּקְרָא רֶגֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זוהמת הנחש",
+   "target_he": "שלושים ותשע קללות",
+   "proof": "כִּי זֻהֲמַת הַנָּחָשׁ גָּרַם שְׁלֹשִׁים וְתֵשַׁע קְלָלוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קדושת שבת הנמשכת על ימי החול",
+   "target_he": "זוהמת הנחש",
+   "proof": "וּלְפִי הַקְּדֻשָּׁה שֶׁמְּקַדֵּשׁ יְמֵי הַחֹל, כֵּן נִדְחֶה זֻהֲמַת הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קץ כל בשר",
+   "target_he": "רוח סערה",
+   "proof": "קֵץ כָּל בָּשָׂר, שֶׁהוּא בְּחִינַת רוּחַ סְעָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נדיחת זוהמת הנחש",
+   "target_he": "עליית הדיבור",
+   "proof": "וְעַל־יְדֵי־זֶה עוֹלֶה הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

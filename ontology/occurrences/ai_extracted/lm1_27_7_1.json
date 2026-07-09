@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 27,
+ "chunk": "27_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מְרִירוּת",
+   "target_he": "שָׁלוֹם",
+   "proof": "כִּי לְשָׁלוֹם צָרִיךְ מְרִירוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זָקֵן",
+   "target_he": "וַה' בֵּרַךְ אֶת אַבְרָהָם בַּכֹּל",
+   "proof": "עַל־יְדֵי זָקֵן הַנַּ\"ל, עַל־יְדֵי־זֶה: וַה' בֵּרַךְ אֶת אַבְרָהָם בַּכֹּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וַה' בֵּרַךְ אֶת אַבְרָהָם בַּכֹּל",
+   "target_he": "שָׁלוֹם",
+   "proof": "זֶה שָׁלוֹם, כְּמוֹ שֶׁכָּתוּב: עוֹשֶׂה שָׁלוֹם וּבוֹרֵא אֶת הַכֹּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_9_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "פְּגַם הַבְּרִית",
+   "target_he": "מָשׁוּךְ בְּעָרְלָתוֹ",
+   "proof": "כִּי עִקַּר פְּגַם הַבְּרִית, בְּחִינַת מָשׁוּךְ בְּעָרְלָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לָשׁוֹן אֲרַמִּית",
+   "target_he": "פְּגַם הַבְּרִית",
+   "proof": "נִמְשָׁךְ עַל־יְדֵי לָשׁוֹן אֲרַמִּית",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לָשׁוֹן אֲרַמִּית",
+   "target_he": "לְשׁוֹן תַּרְגּוּם",
+   "proof": "שֶׁהוּא לְשׁוֹן תַּרְגּוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַעֲלָאַת לָשׁוֹן אֲרַמִּית לִלְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "פְּגַם הַבְּרִית",
+   "proof": "כְּשֶׁאֵין מַעֲלִין אוֹתוֹ לִלְשׁוֹן הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֹשֵׂי דְבָרוֹ לִשְׁמֹעַ בְּקוֹל דְּבָרוֹ",
+   "target_he": "דִּבּוּר הַצַּדִּיק",
+   "proof": "עֹשֵׂי דְבָרוֹ לִשְׁמֹעַ בְּקוֹל דְּבָרוֹ – שֶׁהַצַּדִּיק עוֹשֶׂה הַדִּבּוּר וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַעֲלָאַת הַטּוֹב מִן הַתַּרְגּוּם",
+   "target_he": "תִּקּוּן לְשׁוֹן הַקֹּדֶשׁ",
+   "proof": "עֲדַיִן הוּא חֲסַר תִּקּוּן, כִּי עֲדַיִן צָרִיךְ לְהַעֲלוֹת הַטּוֹב מִן הַתַּרְגּוּם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 81,
+ "chunk": "81_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דעת",
+   "target_he": "הר",
+   "proof": "שֶׁהוּא בְּחִינַת הַר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הר",
+   "target_he": "בית המקדש",
+   "proof": "אֵין הַר אֶלָּא בֵּית הַמִּקְדָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בית המקדש",
+   "target_he": "דעת",
+   "proof": "וּבֵית־הַמִּקְדָּשׁ הוּא בְּחִינַת דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "בית המקדש",
+   "proof": "כָּל מִי שֶׁיֵּשׁ בּוֹ דַּעַת כְּאִלּוּ נִבְנֶה בֵּית־הַמִּקְדָּשׁ בְּיָמָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

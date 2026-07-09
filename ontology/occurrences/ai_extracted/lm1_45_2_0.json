@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 45,
+ "chunk": "45_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מכה כף אל כף",
+   "target_he": "הפה",
+   "proof": "וְעַל־יְדֵי שֶׁמַּכֶּה כַּף אֶל כַּף, עַל־יְדֵי־זֶה נִתְהַוֶּה הַפֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חמישים",
+   "target_he": "יציאת מצרים שנזכר בתורה",
+   "proof": "זֶה בְּחִינוֹת חֲמִשִּׁים פְּעָמִים יְצִיאַת מִצְרַיִם שֶׁנִּזְכַּר בַּתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת יובל",
+   "target_he": "יציאה מגלות מצרים",
+   "proof": "כִּי עַל־יְדֵי בְּחִינוֹת יוֹבֵל יָצְאוּ מִגָּלוּת מִצְרַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

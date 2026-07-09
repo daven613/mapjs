@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_14_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כִּסֵּא הַכָּבוֹד",
+   "target_he": "שָׁרְשֵׁי הַנְּשָׁמוֹת",
+   "proof": "בִּבְחִינַת כִּסֵּא הַכָּבוֹד, בִּבְחִינַת שָׁרְשֵׁי הַנְּשָׁמוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְקוֹמוֹ שֶׁל עוֹלָם",
+   "target_he": "וְכִסֵּא כָּבוֹד יַנְחִילֵם, כִּי לַה' מְצוּקֵי אָרֶץ וַיָּשֶׁת עֲלֵיהֶם תֵּבֵל",
+   "proof": "בִּבְחִינַת (שמואל א ב׳:ח׳): וְכִסֵּא כָּבוֹד יַנְחִילֵם, כִּי לַה' מְצוּקֵי אָרֶץ וַיָּשֶׁת עֲלֵיהֶם תֵּבֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְקוֹמוֹ שֶׁל עוֹלָם",
+   "target_he": "וַיָּשֶׁת עֲלֵיהֶם תֵּבֵל",
+   "proof": "בְּחִינַת: וַיָּשֶׁת עֲלֵיהֶם תֵּבֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כִּסֵּא הַכָּבוֹד, שָׁרְשֵׁי הַנְּשָׁמוֹת",
+   "target_he": "מְקוֹמוֹ שֶׁל עוֹלָם",
+   "proof": "דְּהַיְנוּ עַל־יְדֵי בְּחִינַת כִּסֵּא הַכָּבוֹד, שָׁרְשֵׁי הַנְּשָׁמוֹת, עַל־יְדֵי־זֶה הוּא מְקוֹמוֹ שֶׁל עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְקוֹמוֹ שֶׁל עוֹלָם",
+   "target_he": "רֹאשׁ הַשָּׁנָה",
+   "proof": "וְעַל כֵּן הוּא יָכוֹל לַעֲשׂוֹת רֹאשׁ הַשָּׁנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

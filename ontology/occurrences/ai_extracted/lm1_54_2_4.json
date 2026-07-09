@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_2_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַהִסְתַּפְּקוּת",
+   "target_he": "עוֹטֶה אוֹר כַּשַּׂלְמָה",
+   "proof": "וְהַהִסְתַּפְּקוּת הוּא בְּחִינַת: עוֹטֶה אוֹר כַּשַּׂלְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עוֹטֶה אוֹר כַּשַּׂלְמָה",
+   "target_he": "אוֹר מָלֵא",
+   "proof": "הַיְנוּ בְּחִינַת אוֹר מָלֵא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִסְתַּפְּקוּת",
+   "target_he": "וּבֶטֶן רְשָׁעִים תֶּחְסָר",
+   "proof": "כִּי הָרְשָׁעִים שֶׁאֵין לָהֶם הִסְתַּפְּקוּת, בִּבְחִינַת וּבֶטֶן רְשָׁעִים תֶּחְסָר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִסְתַּפְּקוּת",
+   "target_he": "מְאֹרֹת חָסֵר",
+   "proof": "אֶצְלָם מְאֹרֹת חָסֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְאֹרֹת חָסֵר",
+   "target_he": "מְאֵרַת ה' בְּבֵית רָשָׁע",
+   "proof": "אֶצְלָם מְאֹרֹת חָסֵר, בִּבְחִינַת מְאֵרַת ה' בְּבֵית רָשָׁע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַהִסְתַּפְּקוּת",
+   "target_he": "אוֹר מָלֵא",
+   "proof": "אֲבָל בַּצַּדִּיקִים, שֶׁיֵּשׁ לָהֶם הַהִסְתַּפְּקוּת... אֶצְלָם הוּא אוֹר מָלֵא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַהִסְתַּפְּקוּת",
+   "target_he": "צַדִּיק אֹכֵל לְשׂבַע נַפְשׁוֹ",
+   "proof": "אֲבָל בַּצַּדִּיקִים, שֶׁיֵּשׁ לָהֶם הַהִסְתַּפְּקוּת, בִּבְחִינַת: צַדִּיק אֹכֵל לְשׂבַע נַפְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אוֹר מָלֵא",
+   "target_he": "וַיַּרְא אֱלֹקִים אֶת הָאוֹר כִּי טוֹב",
+   "proof": "אֶצְלָם הוּא אוֹר מָלֵא. בִּבְחִינַת וַיַּרְא אֱלֹקִים אֶת הָאוֹר כִּי טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "טוֹב",
+   "target_he": "צַדִּיק",
+   "proof": "אֵין טוֹב אֶלָּא צַדִּיק, שֶׁנֶּאֱמַר אִמְרוּ צַדִּיק כִּי טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

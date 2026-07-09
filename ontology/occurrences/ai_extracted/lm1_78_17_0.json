@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 78,
+ "chunk": "78_17_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מֶלֶךְ גָּדוֹל עַל כָּל הָאָרֶץ",
+   "target_he": "מִדַּת מַלְכוּת",
+   "proof": "כִּי ה' וְכוּ' מֶלֶךְ גָּדוֹל עַל כָּל הָאָרֶץ, הַיְנוּ כְּשֶׁמִּדַּת מַלְכוּת יִהְיֶה גָּדוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן מַעֲשֵׂינוּ",
+   "target_he": "אוֹרָהּ",
+   "proof": "וְיִתְעַלֶּה אוֹרָהּ מֵחֲמַת תִּקּוּן מַעֲשֵׂינוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹרָהּ",
+   "target_he": "הַכָּרַת הַבּוֹרֵא",
+   "proof": "אֲזַי נוּכַל לְהַכִּיר אֶת בּוֹרְאֵנוּ עַל כֹּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 76,
+ "chunk": "76_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בִּטָּחוֹן",
+   "target_he": "הִסְתַּכְּלוּת",
+   "proof": "כִּי הַבִּטָּחוֹן הוּא בְּחִינַת הִסְתַּכְּלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֵינֵי כֹל אֵלֶיךָ יְשַׂבֵּרוּ",
+   "target_he": "בִּטָּחוֹן",
+   "proof": "וּבוֹטֵחַ בּוֹ, בִּבְחִינַת (תהילים קמ״ה:ט״ו): עֵינֵי כֹל אֵלֶיךָ יְשַׂבֵּרוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִסְתַּכְּלוּת בְּבִטָּחוֹן",
+   "target_he": "כְּלִי",
+   "proof": "כִּי עַל־יְדֵי הַהִסְתַּכְּלוּת בְּבִטָּחוֹן גַּם כֵּן עוֹשֶׂה כְּלִי, דְּהַיְנוּ גְּבוּל וּזְמַן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כְּלִי",
+   "target_he": "גְּבוּל וּזְמַן",
+   "proof": "עוֹשֶׂה כְּלִי, דְּהַיְנוּ גְּבוּל וּזְמַן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִסְתַּכְּלוּת בְּבִטָּחוֹן",
+   "target_he": "הַהַשְׁפָּעָה גְּבוּל וּזְמַן",
+   "proof": "אַךְ עַל־יְדֵי הִסְתַּכְּלוּת בְּבִטָּחוֹן, עוֹשֶׂה לְהַהַשְׁפָּעָה גְּבוּל וּזְמַן, שֶׁתָּבוֹא הַשֶּׁפַע בְּעֵת וּזְמַן שֶׁהוּא צָרִיךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

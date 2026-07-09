@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_8_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עִזָּא",
+   "target_he": "עֹז",
+   "proof": "עִזָּא זֶה בְּחִינַת עֹז",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֹז",
+   "target_he": "יִרְאָה",
+   "proof": "הַיְנוּ יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִרְאָה",
+   "target_he": "כִּי תִפְאֶרֶת עֻזָּמוֹ אָתָּה",
+   "proof": "בְּחִינַת כִּי תִפְאֶרֶת עֻזָּמוֹ אָתָּה הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבְחִישָׁא",
+   "target_he": "הַצַּדִּיק",
+   "proof": "דִּבְחִישָׁא הַיְנוּ בְּחִינַת הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קַרְנָא",
+   "target_he": "וּבִרְצוֹנְךָ תָּרוּם קַרְנֵנוּ",
+   "proof": "וְאִית לָהּ קַרְנָא הַיְנוּ בְּחִינַת: וּבִרְצוֹנְךָ תָּרוּם קַרְנֵנוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וּבִרְצוֹנְךָ תָּרוּם קַרְנֵנוּ",
+   "target_he": "הָאַהֲבָה",
+   "proof": "הַיְנוּ הָאַהֲבָה שֶׁנִּתְגַּלֶּה עַל־יְדֵי הַצַּדִּיק כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כָּל בְּחִינוֹת הַנַּ\"ל",
+   "target_he": "אוֹר הַצַּדִּיק",
+   "proof": "כִּי עַל־יְדֵי כָּל בְּחִינוֹת הַנַּ\"ל נִתְגַּלֶּה אוֹר הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹר הַצַּדִּיק",
+   "target_he": "יִרְאָה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה זוֹכִין לְיִרְאָה וְאַהֲבָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹר הַצַּדִּיק",
+   "target_he": "אַהֲבָה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה זוֹכִין לְיִרְאָה וְאַהֲבָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

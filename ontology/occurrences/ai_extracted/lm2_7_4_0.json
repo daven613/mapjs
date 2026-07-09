@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בֵּן אוֹ תַּלְמִיד",
+   "target_he": "דַּעְתּוֹ לְמַטָּה",
+   "proof": "עַל־כֵּן צָרִיךְ שֶׁיַּשְׁאִיר אַחֲרָיו בְּרָכָה, בֵּן אוֹ תַּלְמִיד, כְּדֵי שֶׁיִּשָּׁאֵר דַּעְתּוֹ לְמַטָּה גַּם־כֵּן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּלְמִיד",
+   "target_he": "דַּעַת הָרַב",
+   "proof": "כִּי הַתַּלְמִיד מְקַבֵּל דַּעַת הָרַב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בֵּן",
+   "target_he": "תַּלְמִיד",
+   "proof": "וְהָעִקָּר לְהַשְׁאִיר בֵּן שֶׁיִּהְיֶה בְּחִינַת תַּלְמִיד גַּם־כֵּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

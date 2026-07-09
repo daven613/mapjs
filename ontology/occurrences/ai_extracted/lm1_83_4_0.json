@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 83,
+ "chunk": "83_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "זכו",
+   "target_he": "שכינה",
+   "proof": "זָכוּ – שְׁכִינָה שְׁרוּיָה בֵּינֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זכו",
+   "target_he": "אש",
+   "proof": "לֹא זָכוּ ... אֵשׁ אוֹכַלְתּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לא זכו",
+   "target_he": "בלתי טהור",
+   "proof": "הַיְנוּ שֶׁהוּא בִּלְתִּי טָהוֹר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אותיות הפאין",
+   "target_he": "אש",
+   "proof": "הֵם גִּימַטְרִיָּא \"אֵשׁ\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אש",
+   "target_he": "בלתי טהור",
+   "proof": "וְנוֹקְמִין בּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

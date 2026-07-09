@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_2_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שני הרוחות הנ\"ל",
+   "target_he": "רוח דלעלא ורוח דלתתא",
+   "proof": "שֶׁהֵם רוּחַ דִּלְעֵלָּא וְרוּחַ דִּלְתַתָּא כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוח דלעלא ורוח דלתתא",
+   "target_he": "כח ופועל",
+   "proof": "שֶׁהֵם בְּחִינַת כֹּחַ וּפֹעַל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "המתקת חרון אף",
+   "target_he": "שני הרוחות",
+   "proof": "כִּי בְּחִינַת שְׁתֵּי הָרוּחוֹת הַנַּ\"ל, נַעֲשִׂין עַל יְדֵי הַמְתָּקַת חֲרוֹן אַף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חרון אף",
+   "target_he": "עשן שיוצא מנחיריו",
+   "proof": "הוּא בְּחִינוֹת עָשָׁן שֶׁיּוֹצֵא מִנְּחִירָיו, כְּמוֹ שֶׁכָּתוּב (תהילים י״ח:ט׳): עָלָה עָשָׁן בְּאַפּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עשן",
+   "target_he": "פרנסה",
+   "proof": "וְזֶה הֶעָשָׁן מַזִּיק לְפַרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פרנסה",
+   "target_he": "כח אל הפועל",
+   "proof": "שֶׁעַל יָדָהּ מוֹצִיאִין מִכֹּחַ אֶל הַפֹּעַל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פרנסה",
+   "target_he": "אמת, בחינות עלמא דאתי",
+   "proof": "כִּי עַל־יְדֵי שֶׁיֵּשׁ לוֹ פַּרְנָסָה וְאֵינוֹ נִצְרָךְ לַבְּרִיּוֹת, זוֹכֶה לֶאֱמֶת, בְּחִינוֹת עָלְמָא דְּאָתִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עשן",
+   "target_he": "עינים",
+   "proof": "כִּי הֶעָשָׁן מַזִּיק לָעֵינַיִם, בִּבְחִינַת (משלי י׳:כ״ו): כֶּעָשָׁן לָעֵינָיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עינים",
+   "target_he": "פרנסה",
+   "proof": "שֶׁהֵם בְּחִינַת פַּרְנָסָה, בְּחִינַת (תהילים קמ״ה:ט״ו): עֵינֵי כֹל אֵלֶיךָ יְשַׂבֵּרוּ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כעס",
+   "target_he": "פרנסה",
+   "proof": "כִּי כַּעַס מַזִּיק לְפַרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

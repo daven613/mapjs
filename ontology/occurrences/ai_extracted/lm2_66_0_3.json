@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 66,
+ "chunk": "66_0_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כשבאים לצדיק ורואים אותו",
+   "target_he": "וְהָיוּ עֵינֶיךָ רֹאוֹת אֶת מוֹרֶיךָ",
+   "proof": "בִּבְחִינַת (ישעיהו ל׳:כ׳): וְהָיוּ עֵינֶיךָ רֹאוֹת אֶת מוֹרֶיךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הצדיק",
+   "target_he": "יסוד הפשוט",
+   "proof": "שֶׁהוּא בְּחִינַת יְסוֹד הַפָּשׁוּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ראיית הצדיק",
+   "target_he": "וְהָיוּ עֵינֶיךָ רֹאוֹת אֶת מוֹרֶיךָ",
+   "proof": "שֶׁזֶּה בְּחִינַת: וְהָיוּ עֵינֶיךָ רֹאוֹת אֶת מוֹרֶיךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מוֹרֶיךָ",
+   "target_he": "אֵשׁ רוּחַ מַיִם עָפָר",
+   "proof": "רָאשֵׁי־תֵבוֹת: אֵשׁ רוּחַ מַיִם עָפָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ארבעה יסודות",
+   "target_he": "מדות",
+   "proof": "כִּי כָל הַמִּדּוֹת נִמְשָׁכִין מֵהָאַרְבָּעָה יְסוֹדוֹת הַנַּ״ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יסוד הפשוט",
+   "target_he": "ארבעה יסודות",
+   "proof": "שֶׁמִּמֶּנּוּ נִמְשָׁכִין כָּל הָאַרְבָּעָה יְסוֹדוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

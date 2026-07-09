@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 51,
+ "chunk": "51_16_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הטהרה",
+   "target_he": "טומאה",
+   "proof": "כִּי הַטָּהֳרָה מְרַמֶּזֶת שֶׁיֵּשׁ טֻמְאָה, וְהוּא סִימָן שֶׁיִּשְׁתַּלְשֵׁל עַד שֶׁיִּהְיֶה טֻמְאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אחיזת הטומאה",
+   "target_he": "הטהרה",
+   "proof": "נִמְצָא, שֶׁעִקַּר אֲחִיזַת הַטֻּמְאָה, מִבְּחִינַת הַטָּהֳרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הטהרה",
+   "target_he": "הבחירה",
+   "proof": "שֶׁהוּא בְּחִינַת הַבְּחִירָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 39,
+ "chunk": "39_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "נְשָׁמוֹת הָעֲשׁוּקִים בְּטִקְלָא",
+   "target_he": "מִיתַת הַבָּנִים",
+   "proof": "כִּי מִיתַת הַבָּנִים, זֶה מֵחֲמַת נְשָׁמוֹת הָעֲשׁוּקִים בְּטִקְלָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "טִקְלָא",
+   "target_he": "קְלִפּוֹת נֹגַהּ",
+   "proof": "כִּי הַטִּקְלָא, הַיְנוּ קְלִפּוֹת נֹגַהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

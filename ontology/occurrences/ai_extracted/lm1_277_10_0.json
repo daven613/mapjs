@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 277,
+ "chunk": "277_10_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הטובות שעושין לו בזה",
+   "target_he": "צדיק כתמר יפרח",
+   "proof": "שֶׁהוּא בְּחִינַת צַדִּיק כַּתָּמָר יִפְרָח",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדיק כתמר יפרח",
+   "target_he": "המתקת הדינים",
+   "proof": "בְּחִינַת הַמְתָּקַת הַדִּינִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מחלוקת",
+   "target_he": "טובה",
+   "proof": "כִּי זֹאת הַמַּחֲלֹקֶת הוּא רַק לְטוֹבָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

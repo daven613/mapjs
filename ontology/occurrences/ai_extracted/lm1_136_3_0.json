@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 136,
+ "chunk": "136_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "קִנְאָה",
+   "target_he": "מַחֲלֹקֶת",
+   "proof": "וְהַמַּחֲלֹקֶת מֵחֲמַת שֶׁחֲבֵרוֹ מִתְקַנֵּא בּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דָּן לְכַף זְכוּת",
+   "target_he": "מַחֲלֹקֶת",
+   "proof": "וְעַל כֵּן צָרִיךְ לְדוּנוֹ לְכַף זְכוּת... וַאֲזַי בְּוַדַּאי לֹא יִהְיֶה מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּמָקוֹם אֶחָד",
+   "target_he": "בְּמַדְרֵגָה אַחַת",
+   "proof": "וְאָז הֵם בְּמָקוֹם אֶחָד הַיְנוּ בְּמַדְרֵגָה אַחַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 130,
+ "chunk": "130_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עַנְוְתָנוּתוֹ שֶׁל בֹּעַז",
+   "target_he": "תָּקְפּוֹ שֶׁל יוֹסֵף",
+   "proof": "תָּקְפּוֹ שֶׁל יוֹסֵף – עַנְוְתָנוּתוֹ שֶׁל בֹּעַז",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַנְוְתָנוּתוֹ שֶׁל פַּלְטִי בֶּן לַיִּשׁ",
+   "target_he": "תָּקְפּוֹ שֶׁל בֹּעַז",
+   "proof": "תָּקְפּוֹ שֶׁל בֹּעַז – עַנְוְתָנוּתוֹ שֶׁל פַּלְטִי בֶּן לַיִּשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲנָוָה",
+   "target_he": "פְּגַם הַבְּרִית",
+   "proof": "כִּי עַל־יְדֵי עֲנָוָה נִצּוֹל מִפְּגַם הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גַּדְלוּת",
+   "target_he": "הַיֵּצֶר הָרָע בְּתַאֲוַת נִאוּף",
+   "proof": "שֶׁיֵּשׁ לוֹ גַּדְלוּת ... שֶׁמִּתְגַּבֵּר עָלָיו הַיֵּצֶר הָרָע בְּתַאֲוַת נִאוּף",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַיֵּצֶר הָרָע בְּתַאֲוַת נִאוּף",
+   "target_he": "עִקַּר הַיֵּצֶר הָרָע",
+   "proof": "כִּי זֶה עִקַּר הַיֵּצֶר הָרָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עִקָּרָא דְּיִצְרָא בִּישָׁא",
+   "target_he": "לְגַלָּאָה עֲרָיִין",
+   "proof": "עִקָּרָא דְּיִצְרָא בִּישָׁא לְגַלָּאָה עֲרָיִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

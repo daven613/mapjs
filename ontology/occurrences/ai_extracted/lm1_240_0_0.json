@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 240,
+ "chunk": "240_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "קירוב לצדיק האמת",
+   "target_he": "קבלת מה שצריך לו (עשירות או בנים)",
+   "proof": "וְעַל־כֵּן כְּשֶׁמְּקֹרָב לְהַצַּדִּיק הָאֱמֶת, יוּכַל לְקַבֵּל בְּקַל אֶת מַה שֶּׁצָּרִיךְ לוֹ, הֵן עֲשִׁירוּת אוֹ בָּנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קירוב לצדיק",
+   "target_he": "קבלת ההשפעה",
+   "proof": "אֲבָל כְּשֶׁהוּא רָחוֹק מֵהַצַּדִּיק אֲזַי בָּא לוֹ בְּקֹשִׁי גָּדוֹל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מזל",
+   "target_he": "עשירות או בנים",
+   "proof": "כִּי כָּל אֶחָד מְקַבֵּל עֲשִׁירוּת אוֹ בָּנִים לְפִי הַמַּזָּל שֶׁלּוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדיק",
+   "target_he": "מזל",
+   "proof": "וְהַמַּזָּל מְקַבֵּל הַהַשְׁפָּעָה מֵהַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קירוב לצדיק",
+   "target_he": "מזל",
+   "proof": "וְעַל כֵּן כְּשֶׁהוּא רָחוֹק מֵהַצַּדִּיק, אֲזַי הַמַּזָּל צָרִיךְ לַעֲשׂוֹת לוֹ כֹּחַ גָּדוֹל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

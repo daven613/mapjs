@@ -1,0 +1,172 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_12_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שְּׁמָנִים שֶׁל הָרֵאָה בַּמֶּזֶג הַשָּׁוֶה",
+   "target_he": "אוֹר הַפָּנִים",
+   "proof": "וּכְשֶׁהַשְּׁמָנִים שֶׁל הָרֵאָה הֵם בַּמֶּזֶג הַשָּׁוֶה, עַל־יְדֵי־זֶה מֵאִיר אוֹר הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אוֹר הַפָּנִים",
+   "target_he": "לְהַצְהִיל פָּנִים מִשָּׁמֶן",
+   "proof": "בִּבְחִינַת: לְהַצְהִיל פָּנִים מִשָּׁמֶן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אוֹר הַפָּנִים",
+   "target_he": "מַקִּיפִים",
+   "proof": "הַיְנוּ עַל־יְדֵי הַשְּׁמָנִים שֶׁל הָרֵאָה מֵאִיר אוֹר הַפָּנִים, בְּחִינַת מַקִּיפִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יָדַיִם שֶׁבְּיָם הַחָכְמָה",
+   "target_he": "אוֹר הַפָּנִים",
+   "proof": "בָּהֶם נִתְגַּלֶּה אוֹר הַפָּנִים, בְּחִינַת מַקִּיפִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַקִּיפִים",
+   "target_he": "הֶאָרַת הָרָצוֹן",
+   "proof": "שֶׁהֵם בְּחִינַת הֶאָרַת הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֶאָרַת הָרָצוֹן",
+   "target_he": "פּוֹתֵחַ אֶת יָדֶךָ",
+   "proof": "בִּבְחִינַת: פּוֹתֵחַ אֶת יָדֶךָ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פּוֹתֵחַ אֶת יָדֶךָ",
+   "target_he": "חֲתָ\"ךְ",
+   "proof": "וְזֶהוּ בְּחִינַת חֲתָ\"ךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֲתָ\"ךְ",
+   "target_he": "סוֹפֵי־תֵבוֹת שֶׁל פּוֹתֵ'חַ אֶ'ת יָדֶ'ךָ",
+   "proof": "שֶׁהוּא סוֹפֵי־תֵבוֹת שֶׁל פּוֹתֵ'חַ אֶ'ת יָדֶ'ךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֲתָ\"ךְ",
+   "target_he": "הַשֵּׁם שֶׁל הַפַּרְנָסָה",
+   "proof": "שֶׁהוּא הַשֵּׁם שֶׁל הַפַּרְנָסָה, כַּמּוּבָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֲתָ\"ךְ",
+   "target_he": "שְׁתֵּי פְּעָמִים רוּחַ",
+   "proof": "חֲתָ\"ךְ שְׁתֵּי פְּעָמִים \"רוּחַ\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יָדַיִם",
+   "target_he": "מַקִּיפִים",
+   "proof": "הַיְנוּ שֶׁבְּאֵלּוּ הַיָּדַיִם הַנַּ\"ל נִתְגַּלֶּה בְּחִינַת הַמַּקִּיפִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַקִּיפִים",
+   "target_he": "סוֹבֵב סוֹבֵב הוֹלֵךְ הָרוּחַ",
+   "proof": "שֶׁהֵם בְּחִינַת: סוֹבֵב סוֹבֵב הוֹלֵךְ הָרוּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַקִּיפִים",
+   "target_he": "וְרוּחַ עַל פָּנַי יַחֲלֹף",
+   "proof": "בְּחִינַת: וְרוּחַ עַל פָּנַי יַחֲלֹף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יָדַיִם",
+   "target_he": "וִידֵי אָדָם מִתַּחַת כַּנְפֵיהֶם",
+   "proof": "וְזֶה בְּחִינַת (יחזקאל י׳:ח׳): וִידֵי אָדָם מִתַּחַת כַּנְפֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כַּנְפֵיהֶם",
+   "target_he": "כַּנְפֵי הָרֵאָה",
+   "proof": "זֶה בְּחִינַת כַּנְפֵי הָרֵאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כַּנְפֵי הָרֵאָה",
+   "target_he": "מַקִּיפִים",
+   "proof": "שֶׁשָּׁם סוֹבֵב הָרוּחַ, בְּחִינַת מַקִּיפִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כַּנְפֵי הָרֵאָה",
+   "target_he": "הֶאָרַת הַיָּדַיִם",
+   "proof": "שֶׁמִּשָּׁם נִמְשָׁךְ בְּחִינַת הֶאָרַת הַיָּדַיִם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוּחַ",
+   "target_he": "רוּחַ אִישׁ יְכַלְכֵּל מַחֲלֵהוּ",
+   "proof": "וְזֶה בְּחִינַת: רוּחַ אִישׁ יְכַלְכֵּל מַחֲלֵהוּ (משלי י״ח:י״ד)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

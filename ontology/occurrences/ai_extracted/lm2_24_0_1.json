@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 24,
+ "chunk": "24_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מרה שחורה ועצבות",
+   "target_he": "חולאת",
+   "proof": "שֶׁכָּל הַחוֹלַאַת – עַל־יְדֵי מָרָה שְׁחֹרָה וְעַצְבוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמחה",
+   "target_he": "רפואה גדולה",
+   "proof": "וְהַשִּׂמְחָה הִוא רְפוּאָה גְּדוֹלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שכינה",
+   "target_he": "חיות החולה",
+   "proof": "רַק הַשְּׁכִינָה מְחַיָּה אוֹתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמחה",
+   "target_he": "תיקון כל החולאת",
+   "proof": "וְלֶעָתִיד עַל־יְדֵי הַשִּׂמְחָה יִתְתַּקֵּן כָּל הַחוֹלַאַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שמחה",
+   "target_he": "תיקון החולה",
+   "proof": "כִּי הַשִּׂמְחָה הִיא בְּחִינַת תִּקּוּן הַחוֹלֶה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חולה",
+   "target_he": "מחול",
+   "proof": "דְּהַיְנוּ שֶׁיַּעֲשֶׂה מָחוֹל לַצַּדִּיקִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חולה",
+   "target_he": "ראש המחול",
+   "proof": "דְּהַיְנוּ רֹאשׁ הַמָּחוֹל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמחה ורקודין",
+   "target_he": "תיקון החולאת",
+   "proof": "כִּי הֵם תִּקּוּן הַחוֹלַאַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

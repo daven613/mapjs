@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 55,
+ "chunk": "55_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בחינת ארץ ישראל",
+   "target_he": "לראות במפלתם של רשעים",
+   "proof": "לִרְאוֹת בְּמַפַּלְתָּם שֶׁל רְשָׁעִים אִי אֶפְשָׁר אֶלָּא עַל־יְדֵי בְּחִינַת אֶרֶץ יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ימין",
+   "target_he": "ארץ ישראל",
+   "proof": "יָמִין, זֶה בְּחִינַת אֶרֶץ יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ימין",
+   "target_he": "בנימין",
+   "proof": "בְּחִינַת בִּנְיָמִין, בֶּן יָמִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

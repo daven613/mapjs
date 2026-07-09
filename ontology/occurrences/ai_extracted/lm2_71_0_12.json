@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 71,
+ "chunk": "71_0_12",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "כלי של צדקה בשביל הולדה",
+   "target_he": "התגלות הכבוד",
+   "proof": "עַל־יְדֵי הַכְּלִי שֶׁל צְדָקָה בִּשְׁבִיל הוֹלָדָה, שֶׁעַל־יְדֵי־זֶה נַעֲשֶׂה הִתְגַּלּוּת הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התגלות הכבוד",
+   "target_he": "תיקון המוחין של חוץ לארץ",
+   "proof": "כִּי מֵאַחַר שֶׁנִּתְעוֹרֵר בְּחִינַת הִתְגַּלּוּת הַכָּבוֹד, עַל־יְדֵי־זֶה הֵם יְכוֹלִין לְהִתְתַּקֵּן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כבוד",
+   "target_he": "קלקול המוחין של חוץ לארץ",
+   "proof": "כִּי עִקָּר הַקִּלְקוּל שֶׁלָּהֶם הָיָה עַל־יְדֵי פְּגַם הַכָּבוֹד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוחין של חוץ לארץ",
+   "target_he": "תיקון",
+   "proof": "וְנוֹפְלִים בְּמֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל שֶׁהֵם בְּחִינַת נֹעַם, כְּדֵי לְהִתְתַּקֵּן עַל־יְדֵי־זֶה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוחין של חוץ לארץ",
+   "target_he": "חובלים",
+   "proof": "אָז בָּאִים הַמֹּחִין שֶׁל חוּץ־לָאָרֶץ שֶׁהֵם בְּחִינַת חוֹבְלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוחין של ארץ ישראל",
+   "target_he": "נועם",
+   "proof": "וְנוֹפְלִים בְּמֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל שֶׁהֵם בְּחִינַת נֹעַם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חבלים",
+   "target_he": "מוחין של חוץ לארץ",
+   "proof": "חֲבָלִים, הַיְנוּ הַמֹּחִין שֶׁל חוּץ־לָאָרֶץ שֶׁהֵם בְּחִינַת חוֹבְלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נעימים",
+   "target_he": "מוחין של ארץ ישראל",
+   "proof": "הֵם נוֹפְלִים בַּנְּעִימִים, הַיְנוּ בְּמֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל שֶׁהֵם בְּחִינַת נֹעַם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נחלת",
+   "target_he": "יעקב",
+   "proof": "נַחֲלָת – זֶה בְּחִינַת יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

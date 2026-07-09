@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 178,
+ "chunk": "178_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "וִדּוּי דְּבָרִים",
+   "target_he": "עוֹלַם הַדִּבּוּר",
+   "proof": "וְעַל יְדֵי וִדּוּי דְּבָרִים נִתְתַּקֵּן עוֹלַם הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֵטְא",
+   "target_he": "נֶפֶשׁ",
+   "proof": "כִּי פְּגַם הַחֵטְא – בַּנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֶפֶשׁ",
+   "target_he": "דִּבּוּר",
+   "proof": "וְהַנֶּפֶשׁ הוּא בְּחִינַת הַדִּבּוּר, בִּבְחִינַת נַפְשִׁי יָצְאָה בְדַבְּרוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְוַדּוֹת בְּדִבּוּרִים",
+   "target_he": "פְּגַם הַדִּבּוּר",
+   "proof": "וְעַל כֵּן צָרִיךְ לְהִתְוַדּוֹת בְּדִבּוּרִים דַּוְקָא, לְתַקֵּן וְלִבְנוֹת פְּגַם הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

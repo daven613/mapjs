@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 36,
+ "chunk": "36_6_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַסֵּרוּס רְפוּאָה לִמְשֻׁגָּע",
+   "target_he": "סִלּוּקָא דִּיסוֹדָא עַד אַבָּא וְאִמָּא",
+   "proof": "שֶׁהַסֵּרוּס רְפוּאָה לִמְשֻׁגָּע. וְזֶה הוּא: סִלּוּקָא דִּיסוֹדָא עַד אַבָּא וְאִמָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סִלּוּקָא דִּיסוֹדָא עַד אַבָּא וְאִמָּא",
+   "target_he": "שְׁמִי מֵעִיד עֲלֵיהֶם",
+   "proof": "סִלּוּקָא דִּיסוֹדָא עַד אַבָּא וְאִמָּא, הַיְנוּ בְּחִינַת: שְׁמִי מֵעִיד עֲלֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין",
+   "target_he": "הַמֹּחִין",
+   "proof": "תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין... הַיְנוּ הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֲכִילָתָם",
+   "target_he": "הִתְחַזְּקוּתָם",
+   "proof": "וַאֲכִילָתָם... הַיְנוּ הִתְחַזְּקוּתָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּשַׂר קֹדֶשׁ",
+   "target_he": "לֶאֱכֹל אֶת בְּשָׂרִי",
+   "proof": "הוּא בְּשַׂר קֹדֶשׁ, הַיְנוּ: לֶאֱכֹל אֶת בְּשָׂרִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לֶאֱכֹל אֶת בְּשָׂרִי",
+   "target_he": "סִלּוּקָא דִּיסוֹדָא",
+   "proof": "שֶׁהוּא בְּחִינַת סִלּוּקָא דִּיסוֹדָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַמֹּחִין",
+   "target_he": "אַבָּא וְאִמָּא",
+   "proof": "שֶׁהֵם אַבָּא וְאִמָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַכְּלָלִי",
+   "target_he": "צָרַי וְאֹיְבַי לִי הֵמָּה כָּשְׁלוּ וְנָפָלוּ",
+   "proof": "וְהוּא תִּקּוּן הַכְּלָלִי, שֶׁעַל יָדוֹ: צָרַי וְאֹיְבַי לִי הֵמָּה כָּשְׁלוּ וְנָפָלוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צָרַי וְאֹיְבַי",
+   "target_he": "שִׁבְעִים לְשׁוֹנוֹת",
+   "proof": "שֶׁהֵם בְּחִינַת שִׁבְעִים לְשׁוֹנוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת הַתַּאֲוָה הַזֹּאת",
+   "target_he": "נְפִילַת כָּל הַתַּאֲווֹת רָעוֹת",
+   "proof": "וּכְשֶׁיְּשַׁבֵּר הַתַּאֲוָה הַזֹּאת, מִמֵּילָא נוֹפְלִים כָּל הַתַּאֲווֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

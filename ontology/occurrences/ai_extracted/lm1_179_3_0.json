@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 179,
+ "chunk": "179_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "רְצוֹנוֹת אֲחֵרִים שֶׁלֹּא כִּרְצוֹנוֹ",
+   "proof": "נִתְבַּטֵּל הַמַּחֲלֹקֶת, שֶׁהוּא בְּחִינַת רְצוֹנוֹת אֲחֵרִים שֶׁלֹּא כִּרְצוֹנוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּעֲנִית",
+   "target_he": "בִּיטּוּל רְצוֹנוֹ מִפְּנֵי רְצוֹן הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "וְעַל־יְדֵי הַתַּעֲנִית כְּבָר נִתְבַּטֵּל רְצוֹנוֹ מִפְּנֵי רְצוֹן הַשֵּׁם יִתְבָּרַךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּיטּוּל רְצוֹנוֹ מִפְּנֵי רְצוֹן הַשֵּׁם",
+   "target_he": "בִּיטּוּל רְצוֹן אֲחֵרִים מִפְּנֵי רְצוֹנוֹ",
+   "proof": "עַל כֵּן נִתְבַּטֵּל רְצוֹן אֲחֵרִים מִפְּנֵי רְצוֹנוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּיטּוּל רְצוֹן אֲחֵרִים",
+   "target_he": "שָׁלוֹם",
+   "proof": "וְנִתְבַּטֵּל הַמַּחֲלֹקֶת, וְנַעֲשֶׂה שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "שָׁלוֹם",
+   "proof": "מַרְבֶּה צְדָקָה – מַרְבֶּה שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

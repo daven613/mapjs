@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 72,
+ "chunk": "72_0_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עוסק להגדיל מוחו ודעתו",
+   "target_he": "עוסק בבנין בית המקדש",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת עוֹסֵק בְּבִנְיַן בֵּית־הַמִּקְדָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הגדלת דעתו ומוחו",
+   "target_he": "גדולה",
+   "proof": "וּכְפִי הַגְדָּלַת דַּעְתּוֹ וּמֹחוֹ כֵּן זוֹכֶה לְקַבֵּל גְּדֻלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מי שיש לו מוח מהיר וחריף",
+   "target_he": "חזית איש מהיר במלאכתו לפני מלכים יתיצב",
+   "proof": "וְזֶה בְּחִינַת (משלי כ״ב:כ״ט): חָזִית אִישׁ מָהִיר בִּמְלַאכְתּוֹ, לִפְנֵי מְלָכִים יִתְיַצָּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "איש מהיר במלאכתו",
+   "target_he": "מי שיש לו מוח מהיר וחריף",
+   "proof": "אִישׁ מָהִיר בִּמְלַאכְתּוֹ, זֶה בְּחִינַת מִי שֶׁיֵּשׁ לוֹ מֹחַ מָהִיר וְחָרִיף כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מלאכתו",
+   "target_he": "מלאכת בנין בית המקדש",
+   "proof": "שֶׁהוּא בְּחִינַת מָהִיר בִּמְלַאכְתּוֹ, הַיְנוּ בִּמְלֶאכֶת בִּנְיַן בֵּית־הַמִּקְדָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוחו",
+   "target_he": "מלאכת בנין בית המקדש",
+   "proof": "כִּי מְלֶאכֶת בִּנְיַן בֵּית־הַמִּקְדָּשׁ הוּא כְּפִי מֹחוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מלאכת בנין בית המקדש",
+   "target_he": "גדולה",
+   "proof": "וְעַל־יְדֵי־זֶה: לִפְנֵי מְלָכִים יִתְיַצָּב, הַיְנוּ שֶׁזּוֹכֶה לִגְדֻלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גדולה",
+   "target_he": "מלכות",
+   "proof": "הַיְנוּ שֶׁזּוֹכֶה לִגְדֻלָּה, בְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התנוצצות המוח",
+   "target_he": "גדולה",
+   "proof": "כִּי הַגְּדֻלָּה הִיא כְּפִי הִתְנוֹצְצוּת הַמֹּחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "התנוצצות המוח",
+   "target_he": "מלך אסור ברהטים",
+   "proof": "בִּבְחִינַת: מֶלֶךְ אָסוּר בָּרְהָטִים, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

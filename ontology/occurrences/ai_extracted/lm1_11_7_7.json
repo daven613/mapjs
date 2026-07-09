@@ -1,0 +1,145 @@
+{
+ "book": "lm1",
+ "torah": 11,
+ "chunk": "11_7_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "לְבוּשׁ",
+   "target_he": "גַּדְלוּת",
+   "proof": "מִנְּפִילַת הַלְּבוּשׁ הַזֶּה נִתְהַוָּה הַגַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גַּדְלוּת",
+   "target_he": "שֶׁבַע בָּתֵּי עַכּוּ\"ם",
+   "proof": "שֶׁהוּא בְּחִינַת שֶׁבַע בָּתֵּי עַכּוּ\"ם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁבַע בָּתֵּי עַכּוּ\"ם",
+   "target_he": "גָּלוּ יִשְׂרָאֵל מֵאַרְצָם",
+   "proof": "שֶׁעַל־יְדֵי־זֶה גָּלוּ יִשְׂרָאֵל מֵאַרְצָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֲבוֹדָה זָרָה",
+   "target_he": "תִּפְאֶרֶת",
+   "proof": "וּבִשְׁבִיל זֶה נִקְרָא עַכּוּ\"ם בִּלְשׁוֹן תִּפְאֶרֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֲבוֹדָה זָרָה",
+   "target_he": "גַּדְלוּת",
+   "proof": "כִּי הָעֲבוֹדָה זָרָה, שֶׁהוּא הַגַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְפָּאֲרוּת",
+   "target_he": "גַּדְלוּת",
+   "proof": "הוּא מִנְּפִילַת הִתְפָּאֲרוּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁבַע שְׁנִין",
+   "target_he": "גַּדְלוּת",
+   "proof": "זֶה בְּחִינַת הַגַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גַּדְלוּת",
+   "target_he": "שֶׁבַע בָּתֵּי עֲבוֹדָה זָרָה",
+   "proof": "שֶׁהוּא בְּחִינַת שֶׁבַע בָּתֵּי עֲבוֹדָה זָרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עָווֹן שֶׁל גַּדְלוּת",
+   "target_he": "לֹא חָזַרְנוּ לְאַרְצֵנוּ",
+   "proof": "הַיְנוּ שֶׁעַל־יְדֵי הֶעָווֹן הַזֶּה עֲדַיִן לֹא חָזַרְנוּ לְאַרְצֵנוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עָווֹן",
+   "target_he": "גַּדְלוּת",
+   "proof": "כִּי עַל־יְדֵי הֶעָווֹן הַזֶּה, שֶׁהוּא הַגַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גַּדְלוּת",
+   "target_he": "עוֹבֵד עֲבוֹדָה זָרָה",
+   "proof": "שֶׁהוּא כְּעוֹבֵד עֲבוֹדָה זָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָווֹן שֶׁל גַּדְלוּת",
+   "target_he": "שֶׁבַע בָּתֵּי עֲבוֹדָה זָרָה",
+   "proof": "בְּחִינַת שֶׁבַע בָּתֵּי עֲבוֹדָה זָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עָווֹן שֶׁל גַּדְלוּת",
+   "target_he": "גָּלִינוּ מֵאַרְצֵנוּ",
+   "proof": "עַל־יְדֵי־זֶה גָּלִינוּ מֵאַרְצֵנוּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עָווֹן שֶׁל גַּדְלוּת",
+   "target_he": "לֹא חָזַרְנוּ לְאַרְצֵנוּ",
+   "proof": "וְעַל־יְדֵי־זֶה עֲדַיִן לֹא חָזַרְנוּ לְאַרְצֵנוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָווֹן שֶׁל גַּדְלוּת",
+   "target_he": "עֲבוֹדָה זָרָה",
+   "proof": "שֶׁהוּא בְּחִינַת עֲבוֹדָה זָרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

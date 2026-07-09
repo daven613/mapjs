@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_6_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הָרַחֲמָנוּת",
+   "target_he": "שֹׁרֶשׁ כָּל הַבְּרִיאָה",
+   "proof": "כִּי הָרַחֲמָנוּת – שֹׁרֶשׁ כָּל הַבְּרִיאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַבְּרִיאָה",
+   "target_he": "גִּלּוּי רַחֲמָנוּתוֹ",
+   "proof": "כִּי הַכֹּל נִבְרָא כְּדֵי לְגַלּוֹת רַחֲמָנוּתוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וּלְמַעַן תְּסַפֵּר בְּאָזְנֵי בִנְךָ וּבֶן בִּנְךָ",
+   "target_he": "צִמְצוּם רַחֲמָנוּתוֹ שֶׁיֵּשׁ בְּכָל דָּבָר",
+   "proof": "וּלְהַשִּׂיג צִמְצוּם רַחֲמָנוּתוֹ שֶׁיֵּשׁ בְּכָל דָּבָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עַד כָּאן רַחֲמֵי הָאָב עַל הַבֵּן",
+   "target_he": "רַחֲמָנוּת שֶׁיֵּשׁ בַּדָּבָר",
+   "proof": "הַיְנוּ שֶׁבַּדָּבָר הַזֶּה יֵשׁ כָּל כָּךְ רַחֲמָנוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

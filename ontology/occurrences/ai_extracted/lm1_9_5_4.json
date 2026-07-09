@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 9,
+ "chunk": "9_5_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַתְּפִלָּה",
+   "target_he": "נִסִּים",
+   "proof": "כִּי הַתְּפִלָּה הִיא נִסִּים, שֶׁמְּשַׁנָּה אֶת הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכְחָשַׁת הַנִּסִּים",
+   "target_he": "הַתְּפִלָּה",
+   "proof": "נִמְצָא שֶׁפּוֹגְמִים בַּתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכְחָשַׁת הַנִּסִּים",
+   "target_he": "הָאֱמוּנָה",
+   "proof": "וּפוֹגְמִים בָּאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכְחָשַׁת הַנִּסִּים",
+   "target_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "וּפוֹגְמִים בְּאֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "מְקוֹם הַנִּסִּים",
+   "proof": "שֶׁהוּא מְקוֹם הַנִּסִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּגַם הַתְּפִלָּה וְהָאֱמוּנָה וְאֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "גָּלוּת מִצְרַיִם",
+   "proof": "וְעַל־יְדֵי־זֶה צָרִיךְ לִפֹּל בְּגָלוּת מִצְרַיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כָּל הַגָּלֻיּוֹת",
+   "target_he": "מִצְרַיִם",
+   "proof": "וְכָל הַגָּלֻיּוֹת מְכֻנִּים בְּשֵׁם מִצְרַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

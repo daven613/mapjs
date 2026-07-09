@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 112,
+ "chunk": "112_0_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּר הָאֱמֶת",
+   "target_he": "רְאוֹת הַפְּתָחִים שֶׁבְּתוֹךְ הַחֹשֶׁךְ",
+   "proof": "וְעַל־יְדֵי הַדִּבּוּר הָאֱמֶת, יִזְכֶּה לִרְאוֹת הַפְּתָחִים שֶׁבְּתוֹךְ הַחֹשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאוֹת הַפְּתָחִים שֶׁבְּתוֹךְ הַחֹשֶׁךְ",
+   "target_he": "לָצֵאת מֵחֹשֶׁךְ לְאוֹר",
+   "proof": "וְעַל־יְדֵי־זֶה יִזְכֶּה לָצֵאת מֵחֹשֶׁךְ לְאוֹר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לָצֵאת מֵחֹשֶׁךְ לְאוֹר",
+   "target_he": "לְהִתְפַּלֵּל כָּרָאוּי",
+   "proof": "וּלְהִתְפַּלֵּל כָּרָאוּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

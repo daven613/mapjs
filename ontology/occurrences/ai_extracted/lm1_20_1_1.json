@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_1_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הנשמה",
+   "target_he": "הלוא כה דברי כאש",
+   "proof": "וּכְשֶׁהַנְּשָׁמָה הַזֹּאת נוֹפֶלֶת מִבְּחִינַת הֲלוֹא כֹה דְבָרִי כָּאֵשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דבריה כגחלי אש",
+   "target_he": "הסתלקות הנשמה",
+   "proof": "וְאֵין דְּבָרֶיהָ כְּגַחֲלֵי־אֵשׁ, וּדְבָרֶיהָ נִצְטַנְּנִין – אֲזַי נִסְתַּלֶּקֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשמה",
+   "target_he": "ביאורי התורה",
+   "proof": "וּכְשֶׁנִּסְתַּלֶּקֶת, אֲזַי נִסְתַּלֵּק בֵּאוּרֵי הַתּוֹרָה הַנִּמְשֶׁכֶת עַל־יָדָהּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ביאורי התורה",
+   "target_he": "השגת ביאור התורה על ידי מפרשי התורה",
+   "proof": "וַאֲזַי כָּל מְפָרְשֵׁי הַתּוֹרָה אֵין יְכוֹלִין לְהַשִּׂיג שׁוּם בֵּאוּר הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ביאורי התורה",
+   "target_he": "מחלוקת",
+   "proof": "כִּי עִקַּר הַמַּחֲלֹקֶת שֶׁבָּעוֹלָם נַעֲשֶׂה עַל־יְדֵי הִסְתַּלְּקוּת בֵּאוּרֵי הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ביאור",
+   "target_he": "תירוץ על קושיות ומריבות",
+   "proof": "כִּי הַבֵּאוּר הוּא תֵּרוּץ עַל קֻשְׁיוֹת וּמְרִיבוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מריבה",
+   "target_he": "מדבר צין",
+   "proof": "וְזֶה בְּחִינַת (במדבר כ׳:א׳): מִדְבַּר צִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מדבר צין",
+   "target_he": "דיבור מצונן",
+   "proof": "שֶׁהוּא בְּחִינַת דִּבּוּר מְצֻנָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מרים",
+   "target_he": "הנשמה הסובלת מרירות השעבוד על התורה",
+   "proof": "בְּחִינַת הַנְּשָׁמָה הַסּוֹבֶלֶת מְרִירוּת הַשִּׁעְבּוּד עַל הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הבאר",
+   "target_he": "ביאורי התורה",
+   "proof": "הַיְנוּ בְּחִינַת בֵּאוּרֵי הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וירב העם עם משה",
+   "target_he": "המריבה שנתעורר",
+   "proof": "הַיְנוּ בְּחִינוֹת הַמְּרִיבָה שֶׁנִּתְעוֹרֵר כַּנַּ״ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הנשמה המכונה בשם מרים",
+   "target_he": "מפרשי התורה נקראים מורים",
+   "proof": "מֵחֲמַת שֶׁמְּקַבְּלִים עַל־יְדֵי הַנְּשָׁמָה הַנַּ״ל הַמְכֻנָּה בְּשֵׁם מִרְיָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

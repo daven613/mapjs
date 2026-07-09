@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_11_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "יְרוּשָׁלַיִם קִרְיָה נֶאֱמָנָה",
+   "target_he": "קִלְקוּל הָאֱמוּנָה",
+   "proof": "כִּי הָיָה מִתְאַבֵּל עַל יְרוּשָׁלַיִם קִרְיָה נֶאֱמָנָה, הַיְנוּ עַל קִלְקוּל הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מְסָאנָא אֻכְמָא",
+   "target_he": "נִדַּת",
+   "proof": "וְזֶה: מְסָאנָא אֻכְמָא – שֶׁנִּתְקַלְקֵל הָרַגְלִין וְנַעֲשָׂה נִדַּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חוֹתָם הָרַגְלִין",
+   "target_he": "דַּם נִדַּת",
+   "proof": "לְהוֹרוֹת שֶׁנִּתְקַלְקֵל חוֹתָם הָרַגְלִין, וְנַעֲשָׂה מֵ\"חוֹתָם\" דַּם \"נִדַּת\"",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "נִדַּת",
+   "proof": "וְזֶה נַעֲשָׂה עַל־יְדֵי קִלְקוּל הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמוּנָה",
+   "target_he": "חוֹתַם הַיָדִין",
+   "proof": "שֶׁהוּא בְּחִינַת חוֹתַם הַיָדִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "חוֹתָם הָרַגְלִין",
+   "proof": "שֶׁעַל־יְדֵי קִלְקוּל הָאֱמוּנָה, שֶׁהוּא בְּחִינַת חוֹתַם הַיָדִין, נִתְקַלְקֵל מִמֵּילָא חוֹתָם הָרַגְלִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִלְקוּל הָרַגְלִין",
+   "target_he": "רֶגֶל גַּאֲוָה",
+   "proof": "וְעַל כֵּן עַל יָדְךָ נִתְקַלְקְלוּ הָרַגְלִין, בִּבְחִינַת (תהלים לו): אַל תְּבוֹאֵנִי רֶגֶל גַּאֲוָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גַּדְלוּת",
+   "target_he": "רַגְלִים",
+   "proof": "כִּי עַל־יְדֵי גַּדְלוּת נִתְקַלְקְלוּ הָרַגְלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִתְגָּאֶה",
+   "target_he": "רַגְלֵי הַשְּׁכִינָה",
+   "proof": "בִּבְחִינַת: כָּל הַמִּתְגָּאֶה, כְּאִלּוּ דּוֹחֵק רַגְלֵי הַשְּׁכִינָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

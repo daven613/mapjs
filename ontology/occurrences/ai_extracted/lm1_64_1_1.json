@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_1_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַכֹּל אֵין סוֹף",
+   "target_he": "מָקוֹם לְבָרְאוֹ",
+   "proof": "לֹא הָיָה מָקוֹם לְבָרְאוֹ, מֵחֲמַת שֶׁהָיָה הַכֹּל אֵין סוֹף",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צִמְצוּם",
+   "target_he": "חָלָל הַפָּנוּי",
+   "proof": "וְעַל יְדֵי הַצִּמְצוּם הַזֶּה נַעֲשָׂה חָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָלָל הַפָּנוּי",
+   "target_he": "יָמִים וּמִדּוֹת",
+   "proof": "וּבְתוֹךְ הֶחָלָל הַפָּנוּי הַזֶּה נִתְהַוּוּ כָּל הַיָּמִים וְהַמִּדּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יָמִים וּמִדּוֹת",
+   "target_he": "בְּרִיאַת הָעוֹלָם",
+   "proof": "שֶׁהֵם בְּרִיאַת הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָלָל הַפָּנוּי",
+   "target_he": "בְּרִיאַת הָעוֹלָם",
+   "proof": "וְזֶה הֶחָלָל הַפָּנוּי הָיָה מֻכְרָח לִבְרִיאַת הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָלָל הַפָּנוּי",
+   "target_he": "מָקוֹם לִבְרִיאַת הָעוֹלָם",
+   "proof": "כִּי בִּלְתִּי הֶחָלָל הַפָּנוּי לֹא הָיָה שׁוּם מָקוֹם לִבְרִיאַת הָעוֹלָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

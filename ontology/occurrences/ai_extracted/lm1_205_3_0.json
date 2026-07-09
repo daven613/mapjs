@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 205,
+ "chunk": "205_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אַשְׁרֵי",
+   "target_he": "לְשׁוֹן רְאִיָּה וְהִסְתַּכְּלוּת",
+   "proof": "כִּי אַשְׁרֵי הוּא לְשׁוֹן רְאִיָּה וְהִסְתַּכְּלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאוּת",
+   "target_he": "הַקְּלִפָּה",
+   "proof": "שֶׁעִקַּר כֹּחָהּ מִקִּלְקּוּל הָרְאוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִּלְקּוּל הָרְאוּת",
+   "target_he": "וַתִּכְהֶיןָ עֵינָיו מֵרְאוֹת",
+   "proof": "מִבְּחִינַת: וַתִּכְהֶיןָ עֵינָיו מֵרְאוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִּלְקּוּל הָרְאוּת",
+   "target_he": "יְהִי מְאֹרֹת – חָסֵר",
+   "proof": "בִּבְחִינוֹת: יְהִי מְאֹרֹת – חָסֵר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יְהִי מְאֹרֹת – חָסֵר",
+   "target_he": "לִילִית",
+   "proof": "דָּא לִילִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

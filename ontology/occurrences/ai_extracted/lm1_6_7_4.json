@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 6,
+ "chunk": "6_7_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דֶּרֶךְ",
+   "target_he": "שְׁתֵּי פְּעָמִים הַשֵּׁם יב\"ק",
+   "proof": "וְזֶה הַדֶּרֶךְ הוּא בְּחִינַת שְׁתֵּי פְּעָמִים הַשֵּׁם יב\"ק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁתֵּי פְּעָמִים יב\"ק",
+   "target_he": "דֶּרֶךְ",
+   "proof": "כִּי שְׁתֵּי פְּעָמִים יב\"ק עוֹלֶה דֶּרֶךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁנֵי שֵׁמוֹת קס\"א ס\"ג",
+   "target_he": "הַדֶּרֶךְ",
+   "proof": "וְזֶה נִמְשָׁךְ מִבְּחִינַת שְׁנֵי שֵׁמוֹת, שֶׁהֵם קס\"א ס\"ג",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁנֵי שֵׁמוֹת",
+   "target_he": "קס\"א ס\"ג",
+   "proof": "שֶׁהֵם קס\"א ס\"ג",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁנֵי שֵׁמוֹת קס\"א ס\"ג",
+   "target_he": "שְׁתֵּי פְּעָמִים יב\"ק",
+   "proof": "כִּי אֵלּוּ שְׁנֵי שֵׁמוֹת קס\"א ס\"ג הֵם עוֹלִים בְּגִימַטְרִיָּא שְׁתֵּי פְּעָמִים יב\"ק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁתֵּי פְּעָמִים יב\"ק",
+   "target_he": "דֶּרֶךְ",
+   "proof": "שֶׁהוּא בְּגִימַטְרִיָּא דֶּרֶךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

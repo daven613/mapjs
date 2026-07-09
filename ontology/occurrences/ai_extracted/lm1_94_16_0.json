@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 94,
+ "chunk": "94_16_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "את",
+   "target_he": "האותיות מא' עד ת'",
+   "proof": "הַיְנוּ הָאוֹתִיּוֹת מֵא' עַד ת'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "האותיות מא' עד ת'",
+   "target_he": "הניצוצות",
+   "proof": "הַיְנוּ הַנִּיצוֹצוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הניצוצות",
+   "target_he": "ישועות אלקינו",
+   "proof": "הַיְנוּ הַנִּיצוֹצוֹת נַעֲשֶׂה יְשׁוּעוֹת אֱלֹקֵינוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הניצוצות",
+   "target_he": "דיבורים",
+   "proof": "כִּי מֵהַנִּיצוֹצוֹת נַעֲשֶׂה דִּבּוּרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דיבורים",
+   "target_he": "רב טוב לישראל",
+   "proof": "וְעַל־יְדֵי־זֶה מַשְׁפִּיעַ הַשֵּׁם יִתְבָּרַךְ רַב טוּב לְיִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רב טוב לישראל",
+   "target_he": "ישועת אלקינו",
+   "proof": "וְזֶהוּ יְשׁוּעַת אֱלֹקֵינוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ישועת אלקינו",
+   "target_he": "תענוגו",
+   "proof": "כִּי זֶה תַּעֲנוּגוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

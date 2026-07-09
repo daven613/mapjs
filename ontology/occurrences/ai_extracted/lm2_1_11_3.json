@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_11_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "לֶחֶם וּמַיִם",
+   "target_he": "רְפוּאָה",
+   "proof": "יוּכַל גַּם כֵּן לְהִתְרַפְּאוֹת עַל־יְדֵי לֶחֶם וּמַיִם שֶׁאוֹכֵל אָז",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְהִתְרַפְּאוֹת עַל־יְדֵי לֶחֶם וּמַיִם קֹדֶם שֶׁנִּתְגַלֶּה הַחוֹלַאַת",
+   "target_he": "כָּל הַמַּחֲלָה אֲשֶׁר שַׂמְתִּי בְּמִצְרַיִם לֹא אָשִׂים עָלֶיךָ כִּי אֲנִי ה' רֹפְאֶךָ",
+   "proof": "וְזֶהוּ בְּחִינַת (שמות ט״ו:כ״ו): כָּל הַמַּחֲלָה אֲשֶׁר שַׂמְתִּי בְּמִצְרַיִם לֹא אָשִׂים עָלֶיךָ כִּי אֲנִי ה' רֹפְאֶךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלָּה",
+   "target_he": "דְבַר ה'",
+   "proof": "אָז אֲרַפֵּא אוֹתְךָ עַל־יְדֵי בְּחִינַת דְבַר ה', בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "רְפוּאָה",
+   "proof": "אָז אֲרַפֵּא אוֹתְךָ עַל־יְדֵי בְּחִינַת דְבַר ה', בְּחִינַת תְּפִלָּה, וְלֹא יָבוֹא לִידֵי מַחֲלָה כְּלָל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_9_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "צַדִּיק וְטוֹב לוֹ, צַדִּיק וְרַע לוֹ; רָשָׁע וְטוֹב לוֹ, רָשָׁע וְרַע לוֹ",
+   "target_he": "דַּרְכֵי ה'",
+   "proof": "כִּי זֶה בְּחִינַת דַּרְכֵי ה' שֶׁאִי אֶפְשָׁר לְהַשִּׂיג, הַיְנוּ בְּחִינַת: צַדִּיק וְטוֹב לוֹ, צַדִּיק וְרַע לוֹ; רָשָׁע וְטוֹב לוֹ, רָשָׁע וְרַע לוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צַדִּיק וְטוֹב לוֹ",
+   "target_he": "הַצַּדִּיק שֶׁהֲלָכָה כְּמוֹתוֹ",
+   "proof": "כִּי צַדִּיק וְטוֹב לוֹ, זֶה בְּחִינַת הַצַּדִּיק שֶׁהֲלָכָה כְּמוֹתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צַדִּיק וְרַע לוֹ",
+   "target_he": "הַצַּדִּיק שֶׁאֵין הֲלָכָה כְּמוֹתוֹ",
+   "proof": "צַדִּיק וְרַע לוֹ, זֶה בְּחִינַת הַצַּדִּיק שֶׁאֵין הֲלָכָה כְּמוֹתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רָשָׁע וְטוֹב לוֹ",
+   "target_he": "הָרָשָׁע שֶׁמְּקֹרָב לְהַצַּדִּיק שֶׁהֲלָכָה כְּמוֹתוֹ",
+   "proof": "רָשָׁע וְטוֹב לוֹ, זֶה בְּחִינַת הָרָשָׁע שֶׁמְּקֹרָב לְהַצַּדִּיק שֶׁהֲלָכָה כְּמוֹתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רָשָׁע וְרַע לוֹ",
+   "target_he": "הָרָשָׁע שֶׁמְּקֹרָב לְהַצַּדִּיק שֶׁאֵין הֲלָכָה כְּמוֹתוֹ",
+   "proof": "רָשָׁע וְרַע לוֹ, זֶה בְּחִינַת הָרָשָׁע שֶׁמְּקֹרָב לְהַצַּדִּיק שֶׁאֵין הֲלָכָה כְּמוֹתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צַדִּיק וְטוֹב לוֹ, צַדִּיק וְרַע לוֹ; רָשָׁע וְטוֹב לוֹ, רָשָׁע וְרַע לוֹ",
+   "target_he": "רְעָמִים",
+   "proof": "כִּי הֵם בְּחִינַת דַּרְכֵי ה', בְּחִינַת רְעָמִים, שֶׁהֵם נִפְלְאוֹת תְּמִים דֵּעִים שֶׁאִי אֶפְשָׁר לְהַשִּׂיג",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּרִים מִן הַשָּׁמַיִם",
+   "target_he": "יָדַיִם",
+   "proof": "וְעַל כֵּן כְּשֶׁמְּקַבְּלִים דִּבּוּרִים מִן הַשָּׁמַיִם, מִבְּחִינַת יָדַיִם, בְּחִינַת רְעָמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּרִים מִן הַשָּׁמַיִם",
+   "target_he": "רְעָמִים",
+   "proof": "מִבְּחִינַת יָדַיִם, בְּחִינַת רְעָמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֵין לְגַנּוֹת אוֹתוֹ אַף אִם אֵין הֲלָכָה כְּמוֹתוֹ",
+   "target_he": "מַחֲלֹקֶת לְשֵׁם שָׁמַיִם",
+   "proof": "כִּי זֶה בְּחִינַת מַחֲלֹקֶת לְשֵׁם שָׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

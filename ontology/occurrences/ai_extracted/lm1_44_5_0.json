@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 44,
+ "chunk": "44_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מְחָאַת כַּף",
+   "target_he": "אֲוִיר הַטָּמֵא",
+   "proof": "גַּם עַל יְדֵי מְחָאַת כַּף, נִתְגָּרֵשׁ אֲוִיר הַטָּמֵא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֶחָאַת כַּפַּיִם",
+   "target_he": "קוֹל",
+   "proof": "כִּי עַל־יְדֵי מֶחָאַת כַּפַּיִם נִשְׁמָע קוֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קוֹל הַזֶּה",
+   "target_he": "אֲוִיר קָדוֹשׁ",
+   "proof": "וְקוֹל הַזֶּה הוּא אֲוִיר קָדוֹשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

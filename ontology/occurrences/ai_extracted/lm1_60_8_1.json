@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_8_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "חֵרֶשׁ",
+   "target_he": "אֵינוֹ שׁוֹמֵעַ וְאֵינוֹ מְדַבֵּר",
+   "proof": "כִּי סְתָם חֶרֶשׁ הוּא שֶׁאֵינוֹ שׁוֹמֵעַ וְאֵינוֹ מְדַבֵּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִיעָה",
+   "target_he": "דִּבּוּר",
+   "proof": "דְּהַיְנוּ מֵחֲמַת שֶׁאֵינוֹ שׁוֹמֵעַ אֵינוֹ יָכוֹל לְדַבֵּר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שׁוֹמֵעַ דְּבָרָיו",
+   "target_he": "יְכוֹלִים לְדַבֵּר",
+   "proof": "וְעַכְשָׁו שֶׁמְּעוֹרְרוֹ הֶחָכָם, וְשׁוֹמֵעַ דְּבָרָיו, אֲזַי יְכוֹלִים לְדַבֵּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְכוֹלִים לְדַבֵּר",
+   "target_he": "לְהַתִּיר פֶּה אִלְּמִים",
+   "proof": "וְזֶה בְּחִינַת: לְהַתִּיר פֶּה אִלְּמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְכוֹלִים לְדַבֵּר",
+   "target_he": "פְּתַח פִּיךָ לְאִלֵּם",
+   "proof": "וְזֶה בְּחִינַת (משלי ל״א:ח׳): פְּתַח פִּיךָ לְאִלֵּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

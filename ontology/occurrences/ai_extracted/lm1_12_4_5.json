@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_4_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַשְּׂפָתַיִם עֶלְיוֹנִים",
+   "target_he": "נֶצַח וָהוֹד עֶלְיוֹנִים",
+   "proof": "כְּשֶׁנִּתְעוֹרְרִים הַשְּׂפָתַיִם עֶלְיוֹנִים, שֶׁהֵן נֶצַח וָהוֹד עֶלְיוֹנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשְּׂפָתַיִם עֶלְיוֹנִים",
+   "target_he": "זִוּוּג",
+   "proof": "כְּשֶׁנִּתְעוֹרְרִים הַשְּׂפָתַיִם עֶלְיוֹנִים... לִבְחִינַת זִוּוּג",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשְּׂפָתַיִם עֶלְיוֹנִים",
+   "target_he": "הִתְדַּבְּקוּת רוּחָא בְּרוּחָא",
+   "proof": "לִבְחִינַת הִתְדַּבְּקוּת רוּחָא בְּרוּחָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נֶצַח וָהוֹד עֶלְיוֹנִים",
+   "target_he": "נֶצַח וָהוֹד תַּחְתּוֹנִים",
+   "proof": "אֲזַי נִתְעוֹרְרִין נֶצַח וָהוֹד תַּחְתּוֹנִים לְזִוּוּג",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נֶצַח וָהוֹד תַּחְתּוֹנִים",
+   "target_he": "אִתְדַּבְּקָא גּוּפָא בְּגוּפָא",
+   "proof": "לְאִתְדַּבְּקָא גּוּפָא בְּגוּפָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַחָכְמָה",
+   "target_he": "הַשְּׁכִינָה",
+   "proof": "אֲזַי עַל־יְדֵי הַחָכְמָה הַזֹּאת הַשְּׁכִינָה הִיא מִבְּחִינוֹת (שיר השירים ב׳:א׳): שׁוֹשַׁנַּת הָעֲמָקִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְּׁכִינָה",
+   "target_he": "שׁוֹשַׁנַּת הָעֲמָקִים",
+   "proof": "הַשְּׁכִינָה הִיא מִבְּחִינוֹת (שיר השירים ב׳:א׳): שׁוֹשַׁנַּת הָעֲמָקִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְּׁכִינָה",
+   "target_he": "נְשִׁיקִין",
+   "proof": "מִבְּחִינַת נְשִׁיקִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְשִׁיקִין",
+   "target_he": "שִׂפְתוֹתָיו שׁוֹשַׁנִּים",
+   "proof": "בְּחִינַת: שִׂפְתוֹתָיו שׁוֹשַׁנִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְּׁכִינָה",
+   "target_he": "אִתְדַּבְּקוּת רוּחָא בְּרוּחָא",
+   "proof": "בְּחִינַת אִתְדַּבְּקוּת רוּחָא בְּרוּחָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אִתְדַּבְּקוּת רוּחָא בְּרוּחָא",
+   "target_he": "זִוּוּגָא דְּגוּפָא בְּגוּפָא",
+   "proof": "וְאָז מִתְעוֹרֵר זִוּוּגָא דְּגוּפָא בְּגוּפָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צַדִּיק עֶלְיוֹן",
+   "target_he": "הַתַּנָּא שֶׁחִדֵּשׁ זֹאת הַתּוֹרָה",
+   "proof": "בֵּין צַדִּיק עֶלְיוֹן, שֶׁהוּא הַתַּנָּא שֶׁחִדֵּשׁ זֹאת הַתּוֹרָה וְעַכְשָׁו מַשְׁפִּיעַ בָּהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

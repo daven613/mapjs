@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 173,
+ "chunk": "173_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַכְּתָב",
+   "target_he": "כ'",
+   "proof": "שֶׁהוּא בְּחִינַת כ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכְּתָב",
+   "target_he": "פְּנִימִיּוּת הַנֶּפֶשׁ",
+   "proof": "שֶׁעַל־יְדֵי הַכְּתָב... נִתְגַּלֶּה וְנִרְאֶה בְּחִינַת פְּנִימִיּוּת הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פְּנִימִיּוּת הַנֶּפֶשׁ",
+   "target_he": "פְּנִימִיּוּת הָאֱמוּנָה",
+   "proof": "נִתְגַּלֶּה וְנִרְאֶה בְּחִינַת פְּנִימִיּוּת הַנֶּפֶשׁ, פְּנִימִיּוּת הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

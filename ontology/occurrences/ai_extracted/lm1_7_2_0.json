@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 7,
+ "chunk": "7_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אמת",
+   "target_he": "אמונה",
+   "proof": "אִי אֶפְשָׁר לָבוֹא לֶאֱמוּנָה אֶלָּא עַל־יְדֵי אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צדק",
+   "target_he": "אמונה",
+   "proof": "הַיְנוּ צֶדֶק, הַיְנוּ אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמת",
+   "target_he": "אמונה",
+   "proof": "אֱמוּנָה אִתְקְרִיאַת, כַּד אִתְחַבַּר בָּהּ אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

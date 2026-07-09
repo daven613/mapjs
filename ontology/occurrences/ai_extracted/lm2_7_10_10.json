@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_10_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לִוְיָתָן",
+   "target_he": "מַלְכוּת",
+   "proof": "לִוְיָתָן זֶה בְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְשַׂחֶק בּוֹ",
+   "target_he": "שְׁחָקִים",
+   "proof": "וְזֶהוּ: לְשַׂחֶק בּוֹ – בְּחִינַת שְׁחָקִים, שֶׁשָּׁם שׁוֹחֲקִין מָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מָן",
+   "target_he": "פַּרְנָסָה",
+   "proof": "שֶׁשָּׁם שׁוֹחֲקִין מָן (חגיגה יב:), דְּהַיְנוּ פַּרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פַּרְנָסָה",
+   "target_he": "מָן",
+   "proof": "כִּי הַפַּרְנָסָה, שֶׁהִיא בְּחִינַת מָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַלְכוּת",
+   "target_he": "לִוְיָתָן",
+   "proof": "נִשְׁחֶקֶת וְנִכְתֶּשֶׁת אֵצֶל בְּחִינַת הַמַּלְכוּת שֶׁהוּא בְּחִינַת לִוְיָתָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יָדַיִם שֶׁיֵּשׁ בְּיָם הַחָכְמָה",
+   "target_he": "רְמָזִים",
+   "proof": "שֶׁהֵם בְּחִינַת רְמָזִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יָדַיִם שֶׁיֵּשׁ בְּיָם הַחָכְמָה",
+   "target_he": "פַּרְנָסָה",
+   "proof": "מְקַבֵּל הַפַּרְנָסָה מִן הַיָּדַיִם שֶׁיֵּשׁ בְּיָם הַחָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זֶה הַיָּם גָּדוֹל וּרְחַב יָדַיִם",
+   "target_he": "פַּרְנָסָה",
+   "proof": "שֶׁמְּקַבֵּל הַפַּרְנָסָה מִבְּחִינַת: זֶה הַיָּם גָּדוֹל וּרְחַב יָדָיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

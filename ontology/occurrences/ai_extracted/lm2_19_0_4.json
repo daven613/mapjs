@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 19,
+ "chunk": "19_0_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "עמלק",
+   "proof": "כִּי עַל־יְדֵי אֱמוּנָה הֶחֱלִישׁ אֶת עֲמָלֵק",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ידיו",
+   "target_he": "מצוות מעשיות",
+   "proof": "יָדָיו – הַיְנוּ בְּחִינַת מִצְווֹת מַעֲשִׂיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מצוות מעשיות",
+   "target_he": "אמונה",
+   "proof": "שֶׁהֵם בְּחִינַת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה ומצוות מעשיות",
+   "target_he": "עמלק",
+   "proof": "שֶׁעַל־יְדֵי אֱמוּנָה וּמִצְווֹת מַעֲשִׂיּוֹת ... הֶחֱלִישׁוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אמונה",
+   "target_he": "תפילה",
+   "proof": "וֶאֱמוּנָה זֶה תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "הטבע",
+   "proof": "כִּי הַתְּפִלָּה מְשַׁנָּה הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "החכמות והחקירות",
+   "proof": "וְנִתְבַּטְּלִין הַחָכְמוֹת וְהַחֲקִירוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "התפלה נכללת באחדותו יתברך",
+   "target_he": "הוא תהלתך והוא אלקיך",
+   "proof": "בִּבְחִינַת (דברים י): הוּא תְהִלָּתְךָ וְהוּא אֱלֹקֶיךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תפילה",
+   "target_he": "השם יתברך",
+   "proof": "שֶׁהַתְּפִלָּה וְהַשֵּׁם יִתְבָּרַךְ אֶחָד, כִּבְיָכוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

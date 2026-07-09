@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 40,
+ "chunk": "40_0_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מֶלֶךְ בְּיָפְיוֹ",
+   "target_he": "הַצַּדִּיק בְּיָפְיוֹ וְתִפְאַרְתּוֹ",
+   "proof": "הַיְנוּ הַצַּדִּיק בְּיָפְיוֹ וְתִפְאַרְתּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַצַּדִּיק בְּיָפְיוֹ וְתִפְאַרְתּוֹ",
+   "target_he": "עֵת הַקִּבּוּץ",
+   "proof": "דְּהַיְנוּ בְּעֵת הַקִּבּוּץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶץ מַרְחַקִּים",
+   "target_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "בְּחִינַת אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶץ מַרְחַקִּים",
+   "target_he": "אֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל מַחְכִּים",
+   "proof": "בְּחִינַת אֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל מַחְכִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַרְחַקִּים",
+   "target_he": "חָכְמָה",
+   "proof": "כִּי הַחָכְמָה נִקְרָא מַרְחַקִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאִיַּת הַצַּדִּיק בְּיָפְיוֹ וְתִפְאַרְתּוֹ",
+   "target_he": "בְּחִינַת אֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל מַחְכִּים",
+   "proof": "הַיְנוּ שֶׁעַל־יְדֵי־זֶה שֶׁתִּרְאֶה אֶת הַצַּדִּיק בְּיָפְיוֹ וְתִפְאַרְתּוֹ כַּנַּ\"ל, עַל־יְדֵי־זֶה בְכָל מָקוֹם שֶׁתִּרְאֶה בְּעֵינֶיךָ, יִהְיֶה נַעֲשֶׂה בְּחִינַת אֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל מַחְכִּים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

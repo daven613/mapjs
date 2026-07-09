@@ -1,0 +1,136 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_10_12",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יְמִינְךָ וּזְרוֹעֲךָ",
+   "target_he": "יָדַיִם",
+   "proof": "זֶה בְּחִינַת הַיָּדַיִם הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֶאָרַת הַמַּקִּיפִים",
+   "target_he": "הֶאָרַת הָרָצוֹן",
+   "proof": "שֶׁהוּא בְּחִינַת הֶאָרַת הָרָצוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַקִּיפִים",
+   "target_he": "אוֹר הַפָּנִים",
+   "proof": "כִּי הַמַּקִּיפִים הֵם אוֹר הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַקִּיפִים",
+   "target_he": "הֶאָרַת הָרָצוֹן",
+   "proof": "כִּי הֵם בְּחִינַת הֶאָרַת הָרָצוֹן, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֵרוּת",
+   "target_he": "יוֹבֵל",
+   "proof": "חֵרוּת זֶה בְּחִינַת יוֹבֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוֹבֵל",
+   "target_he": "כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "proof": "שֶׁהוּא בְּחִינַת כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יוֹבֵל",
+   "target_he": "וְכָל בָּנַיִךְ לִמּוּדֵי יְיָ",
+   "proof": "כִּי יוֹבֵל הוּא אוֹתִיּוֹת: וְכָל בָּנַיִךְ לִמּוּדֵי יְיָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְכָל בָּנַיִךְ לִמּוּדֵי יְיָ",
+   "target_he": "כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "proof": "דְּהַיְנוּ כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בָּנַיִךְ",
+   "target_he": "בֵּן",
+   "proof": "כִּי בָּנַיִךְ זֶה בֵּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לִמּוּדֵי ה'",
+   "target_he": "תַּלְמִידִים",
+   "proof": "לִמּוּדֵי ה' הֵם תַּלְמִידִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "target_he": "יוֹבֵל",
+   "proof": "וּמִכְּלָלִיּוּת בֵּן וְתַלְמִיד שֶׁהוּא בְּחִינַת יוֹבֵל, בְּחִינַת חֵרוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "target_he": "חֵרוּת",
+   "proof": "וּמִכְּלָלִיּוּת בֵּן וְתַלְמִיד שֶׁהוּא בְּחִינַת יוֹבֵל, בְּחִינַת חֵרוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֵרוּת",
+   "target_he": "פַּרְנָסָה",
+   "proof": "מִשָּׁם מְקַבֵּל הַמַּלְכוּת הַפַּרְנָסָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֵרוּת",
+   "target_he": "פַּרְנָסָה",
+   "proof": "שֶׁמַּלְכוּת מְקַבֵּל הַפַּרְנָסָה מִבְּחִינַת חֵרוּת, בְּחִינַת יוֹבֵל וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

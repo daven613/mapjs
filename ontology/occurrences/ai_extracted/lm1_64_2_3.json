@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_2_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חָלָל הַפָּנוּי",
+   "target_he": "קֻּשְׁיוֹת שֶׁל אֶפִּיקוֹרְסוּת",
+   "proof": "כִּי אֵלּוּ הַקֻּשְׁיוֹת שֶׁל אֶפִּיקוֹרְסוּת הַזֹּאת בָּאִים מֵחָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קֻּשְׁיוֹת הַבָּאִים מִשָּׁם",
+   "target_he": "חָלָל הַפָּנוּי",
+   "proof": "וְעַל כֵּן אֵלּוּ הַקֻּשְׁיוֹת הַבָּאִים מִשָּׁם, מִבְּחִינַת חָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַמְבַזֶּה אוֹתָם",
+   "target_he": "פֵּרוּד בֵּין קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "proof": "וְעַל־יְדֵי־זֶה עוֹשֶׂה פֵּרוּד בֵּין קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פֵּרוּד בֵּין קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "target_he": "נָחָשׁ מַשִּׁיךְ לָהּ לְגַבַּהּ וְאַטִּיל בַּהּ זֻהֲמָא",
+   "proof": "בִּבְחִינַת נָחָשׁ מַשִּׁיךְ לָהּ לְגַבַּהּ וְאַטִּיל בַּהּ זֻהֲמָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פֵּרוּד בֵּין קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "target_he": "דַּם נִדָּה",
+   "proof": "בִּבְחִינַת דַּם נִדָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פֵּרוּד בֵּין קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "target_he": "מַדּוּעַ אָדֹם לִלְבוּשֶׁךָ",
+   "proof": "בִּבְחִינַת (ישעיהו ס״ג:ב׳): מַדּוּעַ אָדֹם לִלְבוּשֶׁךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דַּם נִדָּה",
+   "target_he": "הַכֶּתֶם וְהָרְבָב שֶׁנִּמְצָא עַל בִּגְדוֹ",
+   "proof": "וְזֶהוּ בְּחִינַת הַכֶּתֶם וְהָרְבָב שֶׁנִּמְצָא עַל בִּגְדוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכֶּתֶם וְהָרְבָב שֶׁנִּמְצָא עַל בִּגְדוֹ",
+   "target_he": "בְּחִינַת הַמַּלְכוּת",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִפְרֶדֶת בְּחִינַת הַמַּלְכוּת הַנַּ\"ל, שֶׁהִיא שְׁכִינַת עֻזּוֹ, מִקֻּדְשָׁא בְּרִיךְ הוּא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּחִינַת הַמַּלְכוּת",
+   "target_he": "שְׁכִינַת עֻזּוֹ",
+   "proof": "שֶׁהִיא שְׁכִינַת עֻזּוֹ, מִקֻּדְשָׁא בְּרִיךְ הוּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִפְרֶדֶת בְּחִינַת הַמַּלְכוּת מִקֻּדְשָׁא בְּרִיךְ הוּא",
+   "target_he": "שִׁפְחָה בִּישָׁא שׁוֹלֶטֶת",
+   "proof": "וְאָז שׁוֹלֶטֶת שִׁפְחָה בִּישָׁא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שִׁפְחָה בִּישָׁא",
+   "target_he": "מַלְכוּת דְּסִטְרָא אָחֳרָא",
+   "proof": "שֶׁהוּא מַלְכוּת דְּסִטְרָא אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׁפְחָה בִּישָׁא",
+   "target_he": "שִׁפְחָה כִּי תִירַשׁ גְּבִרְתָּהּ",
+   "proof": "בִּבְחִינַת (משלי ל׳:כ״ג): שִׁפְחָה כִּי תִירַשׁ גְּבִרְתָּהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שִׁפְחָה בִּישָׁא",
+   "target_he": "אִשָּׁה רָעָה",
+   "proof": "שֶׁהִיא אִשָּׁה רָעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אִשָּׁה רָעָה",
+   "target_he": "עֵת רָעָה",
+   "proof": "שֶׁהִיא בְּחִינַת עֵת רָעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַכְנָעַת שִׁפְחָה בִּישָׁא",
+   "target_he": "בְּכָל עֵת יִהְיוּ בְגָדֶיךָ לְבָנִים",
+   "proof": "בִּבְחִינַת (קהלת ט׳:ח׳): בְּכָל עֵת יִהְיוּ בְגָדֶיךָ לְבָנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

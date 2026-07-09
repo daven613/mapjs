@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_10_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בַּמְסִלָּה נַעֲלֶה",
+   "target_he": "מְסִלּוֹת בִּלְבָבָם",
+   "proof": "בְּחִינַת מְסִלּוֹת בִּלְבָבָם (תהלים פד)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְסִלּוֹת בִּלְבָבָם",
+   "target_he": "מֹרֶךְ בִּלְבָבָם",
+   "proof": "לְהָבִיא מֹרֶךְ בִּלְבָבָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֵימֶיךָ",
+   "target_he": "מִשְׁפָּט",
+   "proof": "מֵימֶיךָ זֶה בְּחִינַת מִשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רַגְלַי",
+   "target_he": "הֲמוֹן־עָם",
+   "proof": "כְּדֵי שֶׁלֹּא יִכָּנְסוּ דִבְרֵיהֶם בְּרַגְלַי, הַיְנוּ הֲמוֹן־עָם, הַמְכֻנִּים בְּשֵׁם רַגְלַיִן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִעוּט הַקְּדֻשָּׁה",
+   "target_he": "לֹא תַעֲבֹר",
+   "proof": "וְכָל זֶה הוּא מֵחֲמַת מִעוּט הַקְּדֻשָּׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

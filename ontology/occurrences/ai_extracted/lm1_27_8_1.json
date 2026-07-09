@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 27,
+ "chunk": "27_8_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן בְּרִית",
+   "target_he": "זֹאת הַבְּחִינָה",
+   "proof": "הַיְנוּ זֹאת הַבְּחִינָה אִי אֶפְשָׁר, אֶלָּא עַל־יְדֵי תִּקּוּן בְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּן בְּרִית",
+   "target_he": "וְלֹא קָמָה עוֹד רוּחַ בְּאִישׁ",
+   "proof": "שֶׁהוּא בְּחִינַת (יהושע ב׳:י״א): וְלֹא קָמָה עוֹד רוּחַ בְּאִישׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּגַם הַבְּרִית",
+   "target_he": "נִיצוֹצֵי הַקְּדֻשָּׁה",
+   "proof": "נִיצוֹצֵי הַקְּדֻשָּׁה שֶׁנָּפְלוּ עַל־יְדֵי פְּגַם הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוּחַ שְׁטוּת",
+   "target_he": "הִרְהוּרֵי זְנוּת",
+   "proof": "הַיְנוּ בָּזֶה שֶׁנִּכְנָס בּוֹ רוּחַ שְׁטוּת, הַיְנוּ הִרְהוּרֵי זְנוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת הַתַּאֲוָה",
+   "target_he": "נִיצוֹצֵי הַקְּדֻשָּׁה",
+   "proof": "וְהוּא מְשַׁבֵּר תַּאֲוָתוֹ – בָּזֶה הוּא מַפִּיק וּמוֹצִיא נִיצוֹצֵי הַקְּדֻשָּׁה שֶׁל פְּגַם הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁבִירַת הַתַּאֲוָה",
+   "target_he": "תְּשׁוּבַת הַמִּשְׁקָל",
+   "proof": "כִּי זֶה הוּא בְּחִינַת תְּשׁוּבַת הַמִּשְׁקָל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

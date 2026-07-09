@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 43,
+ "chunk": "43_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "זִוּוּג דִּקְדֻשָּׁה",
+   "target_he": "הִתְקַשְּׁרוּת לְצַדִּיקִים וְאֶל הַתּוֹרָה וְאֶל הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "הַיְנוּ זִוּוּג דִּקְדֻשָּׁה, הוּא הִתְקַשְּׁרוּת לְצַדִּיקִים וְאֶל הַתּוֹרָה וְאֶל הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת דִּקְדֻשָּׁה",
+   "target_he": "זִוּוּג דִּקְדֻשָּׁה",
+   "proof": "זֶה נִמְשָׁךְ מִדַּעַת דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת דִּקְלִפָּה",
+   "target_he": "זִוּוּגִים שֶׁל עֲבֵרָה",
+   "proof": "וְזִוּוּגִים שֶׁל עֲבֵרָה, נִמְשָׁכִים מִדַּעַת דִּקְלִפָּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אֵין יִסּוּרִין בְּלֹא עָוֹן",
+   "target_he": "יִסּוּרִים שֶׁאֵין בָּהֶם עֲווֹנוֹת אֵינָם נֶחֱשָׁבִים לְיִסּוּרִים",
+   "proof": "וְזֶה בְּחִינַת (שבת נה): אֵין יִסּוּרִין בְּלֹא עָוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲווֹנוֹת",
+   "target_he": "יִסּוּרִים",
+   "proof": "כִּי עִקָּר הַיִּסּוּרִים הֵם רַק כְּשֶׁנּוֹפְלִים בַּעֲווֹנוֹת, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

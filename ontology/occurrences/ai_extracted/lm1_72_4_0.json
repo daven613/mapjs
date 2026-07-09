@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 72,
+ "chunk": "72_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "יֵצֶר הָרָע",
+   "target_he": "מַלְאָךְ הַקָּדוֹשׁ",
+   "proof": "שֶׁהוּא מַלְאָךְ הַקָּדוֹשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יֵצֶר הָרָע",
+   "target_he": "גְּבוּרוֹת וְדִינִים",
+   "proof": "הַיְנוּ בְּחִינוֹת גְּבוּרוֹת, בְּחִינוֹת דִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גְּבוּרוֹת וְדִינִים",
+   "target_he": "יֵצֶר הָרָע שֶׁלְּמַעְלָה",
+   "proof": "שֶׁהֵם הַיֵּצֶר הָרָע שֶׁלְּמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְתָּקַת הַדִּינִים",
+   "target_he": "כֻּלּוֹ טוֹב",
+   "proof": "וּלְהַמְתִּיק הַדִּינִים, שֶׁיִּהְיֶה רַק כֻּלּוֹ טוֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

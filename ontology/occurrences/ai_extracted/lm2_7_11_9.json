@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_11_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הִנְנִי לְמַלְכוּת",
+   "target_he": "מַלְכוּת",
+   "proof": "זֶה בְּחִינַת מַלְכוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַלְכוּת",
+   "target_he": "פַּרְנָסָה",
+   "proof": "שֶׁעַל־יָדוֹ נִמְשָׁךְ הַפַּרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַלְכוּת",
+   "target_he": "אוֹר הַפָּנִים",
+   "proof": "שֶׁבּוֹ נִתְגַּלֶּה אוֹר הַפָּנִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַלְכִּי צֶדֶק מֶלֶךְ שָׁלֵם",
+   "target_he": "מַלְכוּת",
+   "proof": "מַלְכִּי צֶדֶק מֶלֶךְ שָׁלֵם – זֶה בְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הוֹצִיא לֶחֶם וָיָיִן",
+   "target_he": "פַּרְנָסָה",
+   "proof": "הַיְנוּ בְּחִינַת פַּרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַלְכוּת",
+   "target_he": "פַּרְנָסָה",
+   "proof": "שֶׁנִּמְשָׁךְ עַל־יְדֵי הַמַּלְכוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְהוּא כֹהֵן",
+   "target_he": "כְּהֻנָּה",
+   "proof": "זֶה בְּחִינַת כְּהֻנָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּהֻנָּה",
+   "target_he": "כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "proof": "שֶׁהוּא בְּחִינַת כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "target_he": "פַּרְנָסָה",
+   "proof": "שֶׁמִּשָּׁם נִמְשָׁךְ הַפַּרְנָסָה עַל־יְדֵי הַמַּלְכוּת, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 65,
+ "chunk": "65_4_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַמֹּחַ",
+   "target_he": "כְּלִי הַשֵּׂכֶל",
+   "proof": "שֶׁהוּא כְּלִי הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשֵּׂכֶל שֶׁל בְּחִינוֹת בִּטּוּל",
+   "target_he": "אֵין סוֹף",
+   "proof": "כִּי הוּא בְּחִינוֹת אֵין סוֹף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֵין סוֹף",
+   "target_he": "הַתַּכְלִית",
+   "proof": "שֶׁהוּא בְּחִינוֹת הַתַּכְלִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֲזָרַת הַשֵּׂכֶל מֵהַבִּטּוּל אֶל הַמֹּחַ",
+   "target_he": "הַצַּעַר שֶׁל הַיִּסּוּרִין",
+   "proof": "וּמֵחֲמַת זֶה מַרְגִּישׁ הַמֹּחַ הַצַּעַר שֶׁל הַיִּסּוּרִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צִנּוֹרוֹת מֵהַמֹּחַ לְכָל הָאֵיבָרִים",
+   "target_he": "הַכְּאֵב בְּאֵיזוֹ אֵיבָר",
+   "proof": "כִּי מֵהַמֹּחַ יוֹצְאִין צִנּוֹרוֹת לְכָל הָאֵיבָרִים כֻּלָּם, וְעַל יְדֵי זֶה מַרְגִּישׁ הַמֹּחַ הַכְּאֵב בְּאֵיזוֹ אֵיבָר שֶׁהוּא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֲזָרָה מֵהַבִּטּוּל אֶל הַמֹּחִין",
+   "target_he": "הִתְגַּבְּרוּת הַיִּסּוּרִין",
+   "proof": "אֲזַי מִתְגַּבְּרִין הַיִּסּוּרִין בְּיוֹתֵר מִמַּה שֶּׁהָיוּ מִקֹּדֶם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עסקים ומלאכות",
+   "target_he": "אתערותא דלתתא",
+   "proof": "כִּי הֵם בְּחִינַת אִתְעָרוּתָא דִּלְתַתָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עסקים ומלאכות",
+   "target_he": "הציור של אותה המלאכה למעלה במעשה בראשית",
+   "proof": "עַל־יְדֵי־זֶה נִתְעוֹרֵר אוֹתוֹ הַצִּיּוּר שֶׁל אוֹתוֹ הַמְּלָאכָה לְמַעְלָה בְּמַעֲשֵׂה בְרֵאשִׁית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עסקים ומלאכות",
+   "target_he": "חיות והארה לציור של אותה המלאכה",
+   "proof": "וּמֵבִיא חִיּוּת וְהֶאָרָה לְאוֹתוֹ הַצִּיּוּר שֶׁל אוֹתוֹ הַמְּלָאכָה שֶׁל מַעֲשֵׂה בְרֵאשִׁית שֶׁלְּמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עסקים ומלאכות",
+   "target_he": "בחינת משכן",
+   "proof": "נַעֲשֶׂה עַל־יְדֵי־זֶה בְּחִינַת מִשְׁכָּן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

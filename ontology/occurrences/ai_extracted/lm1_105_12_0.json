@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 105,
+ "chunk": "105_12_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הָרַחֲמָנוּת",
+   "target_he": "הַדַּעַת",
+   "proof": "נִתְעוֹרֵר הָרַחֲמָנוּת שֶׁהוּא הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לוֹמֵד תּוֹרָה",
+   "target_he": "הָרַחֲמָנוּת",
+   "proof": "וּכְשֶׁלּוֹמֵד תּוֹרָה, כַּנִּזְכָּר, נִתְעוֹרֵר הָרַחֲמָנוּת שֶׁהוּא הַדַּעַת, וְהַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לוֹמֵד תּוֹרָה",
+   "target_he": "הַתְּפִלָּה",
+   "proof": "וּכְשֶׁלּוֹמֵד תּוֹרָה, כַּנִּזְכָּר, נִתְעוֹרֵר הָרַחֲמָנוּת שֶׁהוּא הַדַּעַת, וְהַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

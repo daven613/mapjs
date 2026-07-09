@@ -1,0 +1,154 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_6_15",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שנתים ימים",
+   "target_he": "מוציאי דבה",
+   "proof": "שְׁנָתַיִם יָמִים הוּא בְּחִינַת מוֹצִיאֵי דִבָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוציאי דבה",
+   "target_he": "אהבה דקדושה",
+   "proof": "שֶׁעַל יָדָם נִתְקַלְקֵל וְנִפְגַּם בְּחִינַת אַהֲבָה דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אהבה דקדושה",
+   "target_he": "וקמץ הכהן",
+   "proof": "שֶׁהוּא בְּחִינַת: וְקָמַץ הַכֹּהֵן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מקץ",
+   "target_he": "פגם הקמץ",
+   "proof": "מִקֵּץ – שֶׁהוּא בְּחִינַת פְּגַם הַ\"קָּמַץ\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פרעה חולם",
+   "target_he": "הכח המדמה",
+   "proof": "וּפַרְעֹה חֹלֵם – הַיְנוּ הַכֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "היאור",
+   "target_he": "פישון",
+   "proof": "הַיְאֹר זֶה פִּישׁוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פישון",
+   "target_he": "פי שונה הלכות",
+   "proof": "הַיְנוּ בְּחִינַת פִּי שׁוֹנֵה הֲלָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוציאי דבה",
+   "target_he": "שבע שני שבע ושבע שני רעב",
+   "proof": "הַיְנוּ שֶׁעַל יָדָם בָּא שֶׁבַע שְׁנֵי שָׂבָע וְשֶׁבַע שְׁנֵי רָעָב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שבע שני שבע ושבע שני רעב",
+   "target_he": "טוב ורע",
+   "proof": "הַיְנוּ טוֹב וָרַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רע",
+   "target_he": "טוב",
+   "proof": "וְהָרַע מִתְרַבֶּה וְגוֹבֵר עַל הַטּוֹב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תיקונו",
+   "target_he": "יוסף",
+   "proof": "וְתִקּוּנוֹ הוּא יוֹסֵף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוסף",
+   "target_he": "אסף אלקים את חרפתי",
+   "proof": "בִּבְחִינַת (בראשית ל׳:כ״ג-כ״ד): אָסַף אֱלֹקִים אֶת חֶרְפָּתִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יוסף",
+   "target_he": "רע",
+   "proof": "שֶׁהוּא מַמְתִּיק אֶת הָרָע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רע",
+   "target_he": "רעב",
+   "proof": "שֶׁהוּא בְּחִינַת הָרָעָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רעב",
+   "target_he": "אשר לא תקחו עוד חרפת רעב בגוים",
+   "proof": "בִּבְחִינַת (יחזקאל ל״ו:ל׳): אֲשֶׁר לֹא תִקְחוּ עוֹד חֶרְפַּת רָעָב בַּגּוֹיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוסף",
+   "target_he": "אסף רוח וכו'",
+   "proof": "וְהוּא בְּחִינַת: אָסַף רוּחַ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

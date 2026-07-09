@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 92,
+ "chunk": "92_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אדם",
+   "target_he": "תורה",
+   "proof": "שֶׁהוּא בְּחִינַת תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אש",
+   "target_he": "דינים",
+   "proof": "שֶׁהוּא בְּחִינוֹת דִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אדם הנע ונד בתוך ביתו",
+   "target_he": "אש",
+   "proof": "יָכוֹל לְשַׁכֵּךְ אֶת הָאֵשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אדם הנע ונד בתוך ביתו",
+   "target_he": "מתים",
+   "proof": "וְיָכוֹל לְהַחֲיוֹת מֵתִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בִּכְתוֹב",
+   "target_he": "הַטּוֹב שֶׁיּוֹצֵא עַל־יְדֵי בְּחִינַת הַכְּתָב",
+   "proof": "בִּכְתוֹב – זֶה בְּחִינוֹת הַטּוֹב שֶׁיּוֹצֵא עַל־יְדֵי בְּחִינַת הַכְּתָב כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת הַכְּתָב",
+   "target_he": "הַטּוֹב",
+   "proof": "זֶה בְּחִינוֹת הַטּוֹב שֶׁיּוֹצֵא עַל־יְדֵי בְּחִינַת הַכְּתָב כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זֶה יֻלַּד שָׁם סֶלָה",
+   "target_he": "שֶׁנִּתְלַבֵּשׁ הַטּוֹב בְּהַיִּלּוֹדִים וְיוֹצֵא עַל־יָדָם",
+   "proof": "וְזֶהוּ: זֶה יֻלַּד שָׁם סֶלָה – שֶׁנִּתְלַבֵּשׁ הַטּוֹב בְּהַיִּלּוֹדִים וְיוֹצֵא עַל־יָדָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַיִּלּוֹדִים",
+   "target_he": "הַטּוֹב",
+   "proof": "שֶׁנִּתְלַבֵּשׁ הַטּוֹב בְּהַיִּלּוֹדִים וְיוֹצֵא עַל־יָדָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִשְׂרָאֵל שֶׁנִּטְמְעוּ בָּעַכּוּ\"ם",
+   "target_he": "הַטּוֹב הַכָּבוּשׁ אֶצְלָם",
+   "proof": "שֶׁהֵם יִשְׂרָאֵל שֶׁנִּטְמְעוּ בָּעַכּוּ\"ם, הַיְנוּ בְּחִינַת הַטּוֹב הַכָּבוּשׁ אֶצְלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַטּוֹב הַכָּבוּשׁ אֶצְלָם",
+   "target_he": "חֶלְקֵי נִשְׁמוֹת יִשְׂרָאֵל",
+   "proof": "שֶׁהוּא בְּחִינַת חֶלְקֵי נִשְׁמוֹת יִשְׂרָאֵל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לֹא יִשְׁכַּב עַד יֹאכַל טֶרֶף",
+   "target_he": "שְׁלֵמוּת הַמִּזְבֵּחַ",
+   "proof": "וְזֶה בְּחִינַת: לֹא יִשְׁכַּב עַד יֹאכַל טֶרֶף – זֶה בְּחִינַת שְׁלֵמוּת הַמִּזְבֵּחַ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְנִכְסֵי עַמְמַיָּא יֵירָת",
+   "target_he": "גֵּרִים",
+   "proof": "וְתַרְגּוּמוֹ: וְנִכְסֵי עַמְמַיָּא יֵירָת – הַיְנוּ בְּחִינַת גֵּרִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִכְסֵי עַמְמַיָּא",
+   "target_he": "הַטּוֹב שֶׁנִּתְכַּסָּה אֵצֶל הָעַכּוּ\"ם",
+   "proof": "וְזֶה: וְנִכְסֵי עַמְמַיָּא – הַיְנוּ בְּחִינַת הַטּוֹב שֶׁנִּתְכַּסָּה אֵצֶל הָעַכּוּ\"ם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זֶרַע הַיִּלּוּדִים",
+   "target_he": "גֵּרִים",
+   "proof": "שֶׁיּוֹצֵא עַל־יְדֵי זֶרַע הַיִּלּוּדִים וְנַעֲשִׂין גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נַעֲשִׂין גֵּרִים",
+   "target_he": "הַמִּזְבֵּחַ",
+   "proof": "וְעַל־יְדֵי־זֶה נִשְׁלָם הַמִּזְבֵּחַ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

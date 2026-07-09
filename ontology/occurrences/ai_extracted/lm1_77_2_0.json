@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 77,
+ "chunk": "77_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הבל פה",
+   "target_he": "ה'",
+   "proof": "כִּי הַהֶבֶל פֶּה, הוּא בְּחִינַת ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קול",
+   "target_he": "ו'",
+   "proof": "וְהַקּוֹל הוּא בְּהַמְשָׁכָה, הוּא בְּחִינַת ו'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד ותפילה בדחילו ורחימו",
+   "target_he": "בחינת י\"ה",
+   "proof": "וּכְשֶׁלּוֹמֵד אוֹ מִתְפַּלֵּל בִּדְחִילוּ וּרְחִימוּ, נִתְגַּלֶּה בְּחִינַת י\"ה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כָּל בְּחִינוֹת הַנַּ\"ל",
+   "target_he": "רְפוּאָה",
+   "proof": "כִּי כָל בְּחִינוֹת הַנַּ\"ל הֵם בְּחִינַת רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּלּוּת הַכָּבוֹד",
+   "target_he": "זְרִיחַת הַשֶּׁמֶשׁ",
+   "proof": "כִּי הִתְגַּלּוּת הַכָּבוֹד הַנַּ\"ל זֶה בְּחִינַת זְרִיחַת הַשֶּׁמֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זְרִיחַת הַשֶּׁמֶשׁ",
+   "target_he": "רְפוּאָה",
+   "proof": "וְעַל־יְדֵי זְרִיחַת הַשֶּׁמֶשׁ בָּא רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת הַכָּבוֹד",
+   "target_he": "רוּחַ־נְבוּאָה",
+   "proof": "כִּי רוּחַ־נְבוּאָה שֶׁנִּתְפַּשֵּׁט עַל־יְדֵי הִתְגַּלּוּת הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוּחַ־נְבוּאָה",
+   "target_he": "הָרְפוּאָה הַבָּאָה עַל־יְדֵי זְרִיחַת הַשֶּׁמֶשׁ",
+   "proof": "זֶה בְּחִינַת הָרְפוּאָה הַבָּאָה עַל־יְדֵי זְרִיחַת הַשֶּׁמֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 250,
+ "chunk": "250_11_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דְּמָעוֹת",
+   "target_he": "הַשְׁגָּחָה",
+   "proof": "כִּי דְּמָעוֹת הֵם בְּחִינוֹת הַשְׁגָּחָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בֶּכִי",
+   "target_he": "רְאוּת",
+   "proof": "זֶה הָרְאוּת, שֶׁהוֹלֵךְ אַחַר הַבֶּכִי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דְּמָעוֹת",
+   "target_he": "רְאוּת",
+   "proof": "שֶׁהַדְּמָעוֹת הֵם לוֹקְחִים חֵלֶק הָרְאוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דְּמָעוֹת",
+   "target_he": "חֶלְקֵי הַהַשְׁגָּחָה וְהָרְאוּת",
+   "proof": "נִמְצָא, שֶׁהַדְּמָעוֹת הֵם חֶלְקֵי הַהַשְׁגָּחָה וְהָרְאוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

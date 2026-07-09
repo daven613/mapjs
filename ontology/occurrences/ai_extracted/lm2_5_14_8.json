@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_14_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "לְבָתַר תְּרֵיסַר יַרְחֵי שַׁתָּא",
+   "target_he": "חֹדֶשׁ נִיסָן",
+   "proof": "הַיְנוּ כְּשֶׁחָזַרְנוּ וּבָאנוּ לְחֹדֶשׁ נִיסָן שֶׁהוּא אַחַר שְׁנֵים עָשָׂר חָדְשֵׁי הַשָּׁנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נִיסָן",
+   "target_he": "תְּחִלַּת הֶחֳדָשִׁים",
+   "proof": "כִּי נִיסָן תְּחִלַּת הֶחֳדָשִׁים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נִיסָן",
+   "target_he": "רֹאשׁ הַשָּׁנָה לִמְלָכִים",
+   "proof": "וְהוּא רֹאשׁ הַשָּׁנָה לִמְלָכִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַגֶּחָלִים בּוֹעֲרִים",
+   "target_he": "חִמּוּם הַלֵּב",
+   "proof": "אָז גַּם כֵּן עֲדַיִן הָיוּ בּוֹעֲרִים הַגֶּחָלִים, הַיְנוּ בְּחִינַת חִמּוּם הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֲמִימוּת",
+   "target_he": "טֻמְאָה",
+   "proof": "שֶׁעַל יְדֵי הַחֲמִימוּת בָּא טֻמְאָה הַנַּ\"ל, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

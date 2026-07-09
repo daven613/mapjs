@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_4_13",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אָנוּס עַל פִּי הַדִּבּוּר",
+   "target_he": "וַיֵּרֶד מִצְרַיְמָה",
+   "proof": "וְזֶה בְּחִינַת (דברים כ״ו:ה׳): וַיֵּרֶד מִצְרַיְמָה – אָנוּס עַל פִּי הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֵצַר הַגָּרוֹן",
+   "target_he": "גָּלוּת מִצְרַיִם",
+   "proof": "שֶׁכְּשֶׁהַדִּבּוּר יוֹרֵד בְּמֵצַר הַגָּרוֹן, שֶׁזֶּה בְּחִינַת גָּלוּת מִצְרַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְקֻדּוֹת לְהָאוֹתִיּוֹת",
+   "target_he": "מְּנִיעוֹת וָאֳנָסִין",
+   "proof": "עַל־יְדֵי שֶׁאֵין נְקֻדּוֹת לְהָאוֹתִיּוֹת, וְאֵינוֹ יָכוֹל לְהוֹצִיאוֹ מִמֵּצַר הַגָּרוֹן, שֶׁמִּזֶּה בָּאִין כָּל הַמְּנִיעוֹת וָאֳנָסִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַדִּבּוּר בִּשְׁלֵמוּת",
+   "target_he": "אָנוּס",
+   "proof": "שֶׁעַל־יְדֵי שֶׁאֵין הַדִּבּוּר בִּשְׁלֵמוּת, עַל־יְדֵי־זֶה הוּא אָנוּס",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

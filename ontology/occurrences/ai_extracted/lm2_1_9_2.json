@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_9_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עֲבוֹדָה",
+   "target_he": "תְּפִלָּה",
+   "proof": "וַעֲבַדְתֶּם אֶת ה' – עֲבוֹדָה זוֹ תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שֹׁרֶשׁ הַכֹּל",
+   "target_he": "דְבַר ה'",
+   "proof": "עַל־יְדֵי שֶׁיִּתְבָּרְכוּ מִן שֹׁרֶשׁ הַכֹּל, דְּהַיְנוּ דְבַר ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דְבַר ה'",
+   "target_he": "תְּפִלָּה",
+   "proof": "דְּהַיְנוּ דְבַר ה', בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "בֵּרוּךְ לֶחֶם וּמַיִם וַהֲסָרַת מַחֲלָה",
+   "proof": "וַעֲבַדְתֶּם אֶת ה' אֱלֹקֵיכֶם, וּבֵרַךְ אֶת לַחְמְךָ וְאֶת מֵימֶיךָ, וַהֲסִירֹתִי מַחֲלָה מִקִּרְבֶּךָ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲחִיזָה בְּשֹׁרֶשׁ (דְּהַיְנוּ דְבַר ה', בְּחִינַת תְּפִלָּה)",
+   "target_he": "רְפוּאָה עַל־יְדֵי לֶחֶם וּמַיִם",
+   "proof": "וּכְשֶׁאוֹחֲזִין בְּהַשֹּׁרֶשׁ, דְּהַיְנוּ דְבַר ה', בְּחִינַת תְּפִלָּה, יְכוֹלִין לְהַמְשִׁיךְ כֹּחוֹת הָרְפוּאָה לְתוֹךְ לֶחֶם וּמַיִם, וְיִהְיֶה לוֹ רְפוּאָה עַל־יְדֵי לֶחֶם וּמַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

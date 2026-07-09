@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 164,
+ "chunk": "164_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "התורה",
+   "target_he": "רפואה",
+   "proof": "כִּי הַתּוֹרָה הִיא רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "סם חיים",
+   "proof": "זָכָה – נַעֲשֶׂה לוֹ סַם חַיִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "סם המות",
+   "proof": "לֹא זָכָה – נַעֲשֶׂה לוֹ סַם הַמָּוֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סיפורי דברים חיצוניים",
+   "target_he": "הרפואה הגנוזה",
+   "proof": "עַל־כֵּן מַלְבִּישִׁין הַתּוֹרָה בְּסִפּוּרֵי דְּבָרִים חִיצוֹנִיִּים, לְמַעַן יוּכַל לְקַבֵּל הָרְפוּאָה הַגְּנוּזָה שָׁם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

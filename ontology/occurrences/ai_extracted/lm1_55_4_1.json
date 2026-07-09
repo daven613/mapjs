@@ -1,0 +1,136 @@
+{
+ "book": "lm1",
+ "torah": 55,
+ "chunk": "55_4_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אשא עיני אל ההרים",
+   "target_he": "פרה אדומה",
+   "proof": "וְזֶהוּ בְּחִינַת פָּרָה אֲדֻמָּה",
+   "explicitness": "inferred",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פרה",
+   "target_he": "תפלה",
+   "proof": "פָּרָה, זֶהוּ בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דקבילת משור",
+   "target_he": "הסתכלות",
+   "proof": "דְּקָבֵילַת מִשּׁוֹר, בְּחִינַת הִסְתַּכְּלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אשא עיני אל ההרים",
+   "target_he": "תפלה",
+   "proof": "כִּי עַל יְדֵי בְּחִינַת אֶשָּׂא עֵינַי אֶל הֶהָרִים כַּנַּ\"ל, נַעֲשֶׂה בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אדומה",
+   "target_he": "גזרת דינא",
+   "proof": "אֲדֻמָּה, דָּא גְּזֵרַת דִּינָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תמימה",
+   "target_he": "שור תם",
+   "proof": "תְּמִימָה, דָּא שׁוֹר תָּם, דִּינָא רַפְיָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תמימה",
+   "target_he": "דינא רפיא",
+   "proof": "תְּמִימָה, דָּא שׁוֹר תָּם, דִּינָא רַפְיָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דינא רפיא",
+   "target_he": "מחליש כח הדין",
+   "proof": "הַיְנוּ שֶׁרוֹאֶה שֶׁהַקָּדוֹשׁ־בָּרוּךְ־הוּא מַחֲלִישׁ כֹּחַ הַדִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מחליש כח הדין",
+   "target_he": "ותאחז במשפט ידי",
+   "proof": "בִּבְחִינַת: וְתֹאחֵז בְּמִשְׁפָּט יָדִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אשר לא עלה עליה עול",
+   "target_he": "שלומי אמוני ישראל",
+   "proof": "אֲשֶׁר לֹא עָלָה עָלֶיהָ עֹל, דָּא שְׁלוּמֵי אֱמוּנֵי יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שלומי אמוני ישראל",
+   "target_he": "חיזוק אמונה",
+   "proof": "זֶהוּ בְּחִינַת חִזּוּק אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שלומי אמוני ישראל",
+   "target_he": "תפלה",
+   "proof": "בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חיזוק הראיה",
+   "target_he": "חיזוק אמונה",
+   "proof": "שֶׁנַּעֲשֶׂה עַל יְדֵי חִזּוּק הָרְאִיָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חיזוק הראיה",
+   "target_he": "וצדקתך לישרי לב",
+   "proof": "בְּחִינַת: וְצִדְקָתְךָ לְיִשְׁרֵי לֵב כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

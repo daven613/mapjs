@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 44,
+ "chunk": "44_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אמונה תולה בפה",
+   "target_he": "אודיע אמונתך בפי",
+   "proof": "הָאֱמוּנָה תּוֹלָה בְּפֶה שֶׁל אָדָם, בִּבְחִינַת: אוֹדִיעַ אֱמוּנָתְךָ בְּפִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דיבור האמונה בפה",
+   "target_he": "אמונה",
+   "proof": "הַיְנוּ עַל־יְדֵי שֶׁמְּדַבְּרִין הָאֱמוּנָה בַּפֶּה, זֶהוּ בְּעַצְמוֹ אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דיבור האמונה בפה",
+   "target_he": "אמונה",
+   "proof": "וְגַם עַל־יְדֵי־זֶה בָּאִים לֶאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דיבור של כפירה",
+   "target_he": "אמונה",
+   "proof": "כִּי הַדִּבּוּר הַזֶּה שֶׁל כְּפִירָה מַזִּיק לָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

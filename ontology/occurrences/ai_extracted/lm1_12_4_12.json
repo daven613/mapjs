@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_4_12",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תהלה",
+   "target_he": "לשון ערבוב",
+   "proof": "תְּהִלָּה לְשׁוֹן עִרְבּוּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דוד",
+   "target_he": "תורה שבעל פה",
+   "proof": "דָּוִד זֶה בְּחִינַת תּוֹרָה שֶׁבְּעַל־פֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אלוקי",
+   "target_he": "תורה שבעל פה",
+   "proof": "הִתְרוֹמְמוּת שֶׁלָּהּ עַל־יְדֵי אֱלֹקַי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אלוקי",
+   "target_he": "חסד",
+   "proof": "הִתְרוֹמְמוּת שֶׁלָּהּ עַל־יְדֵי אֱלֹקַי, בְּחִינַת חֶסֶד אֵל כָּל הַיּוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "המלך",
+   "target_he": "בינה",
+   "proof": "הַמֶּלֶךְ, לִבְחִינַת: בִּינָה – לִבָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בינה",
+   "target_he": "לב",
+   "proof": "לִבְחִינַת: בִּינָה – לִבָּא, שֶׁהַלֵּב בַּנֶּפֶשׁ כְּמֶּלֶךְ בַּמִּלְחָמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תורה שבעל פה",
+   "target_he": "חכמה",
+   "proof": "מַעֲלֶה אֶת הַתּוֹרָה שֶׁבְּעַל־פֶּה לִבְחִינַת חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חכמה",
+   "target_he": "מקור הברכה",
+   "proof": "כִּי הַחָכְמָה הִיא מְקוֹר הַבְּרָכָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

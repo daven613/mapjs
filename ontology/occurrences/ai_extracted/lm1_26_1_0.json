@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 26,
+ "chunk": "26_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "רציצא",
+   "target_he": "אפרוח",
+   "proof": "רְצִיצָא, זֶה אֶפְרוֹחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אפרוח",
+   "target_he": "צדיק",
+   "proof": "זֶה בְּחִינַת צַדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדיק",
+   "target_he": "יִפְרַח בְּיָמָיו צַדִּיק",
+   "proof": "בְּחִינַת יִפְרַח בְּיָמָיו צַדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

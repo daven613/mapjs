@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַדָּמִים מִתְגַּבְּרִין וְהֵם מַתִּיזִין לְהַמֹּחַ",
+   "target_he": "חֳלִי נוֹפֵל",
+   "proof": "וְזֶה בְּחִינַת חֳלִי נוֹפֵל, רַחֲמָנָא לִצְלָן, הַיְנוּ כְּשֶׁהַדָּמִים מִתְגַּבְּרִין וְהֵם מַתִּיזִין לְהַמֹּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַדָּמִים הַמַּתִּיזִין לְהַמֹּחַ",
+   "target_he": "לְחִיצַת הַמֹּחִין",
+   "proof": "וְעַל־יְדֵי־זֶה נִלְחָץ הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְחִיצַת הַמֹּחִין",
+   "target_he": "רְעִידַת הָאֵיבָרִים",
+   "proof": "וְעַל־יְדֵי לְחִיצַת הַמֹּחִין, רוֹעֲשִׁין הָאֵיבָרִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַמֹּחַ",
+   "target_he": "שַׂר צָבָא",
+   "proof": "כִּי הַמֹּחַ הוּא שַׂר צָבָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשּׂוֹנֵא הַבָּא עַל הַשַּׂר צָבָא",
+   "target_he": "רְעִידַת כָּל צְבָאָיו",
+   "proof": "וּכְשֶׁהַשּׂוֹנֵא בָּא עַל הַשַּׂר צָבָא, אֲזַי רוֹעֲשִׁים כָּל צְבָאָיו, כִּי כֻּלָּם תְּלוּיִים בּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

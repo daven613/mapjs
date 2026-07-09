@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 49,
+ "chunk": "49_7_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הצדיק",
+   "target_he": "שמש",
+   "proof": "כִּי הַצַּדִּיק נִקְרָא שֶׁמֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זריחתו של הצדיק",
+   "target_he": "השגתו",
+   "proof": "וּזְרִיחָתוֹ שֶׁל הַצַּדִּיק, הַיְנוּ הַשָּׂגָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ישראל",
+   "target_he": "זריחתו (השגתו) של הצדיק",
+   "proof": "אֵינוֹ אֶלָּא עַל־יְדֵי יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אוהל",
+   "target_he": "זריחתו",
+   "proof": "אֹהֶל, לְשׁוֹן זְרִיחָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בהם",
+   "target_he": "על ידי ישראל",
+   "proof": "וְזֶהוּ: בָּהֶם – עַל־יְדֵי יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כניסת ישראל בחכמות חיצוניות של האומות",
+   "target_he": "השגת הצדיק",
+   "proof": "וּכְשֶׁיִּשְׂרָאֵל, חַס וְשָׁלוֹם, נִכְנָסִין בְּחָכְמוֹת חִיצוֹנִיּוֹת שֶׁל הָאֻמּוֹת, אֲזַי נוֹפֵל הַצַּדִּיק מֵהַשָּׂגָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יציאת ישראל מחכמתן של האומות",
+   "target_he": "יציאת הצדיק מהחופה",
+   "proof": "וּכְשֶׁיּוֹצְאִין יִשְׂרָאֵל מֵחָכְמָתָן שֶׁל הָאֻמּוֹת. אֲזַי: וְהוּא כְּחָתָן יֹצֵא מֵחֻפָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

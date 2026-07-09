@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 61,
+ "chunk": "61_5_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מים",
+   "target_he": "מחלוקת",
+   "proof": "וְאֵלּוּ הַמַּיִם הֵם בְּחִינַת מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מחלוקת",
+   "target_he": "מֵי מְרִיבָה",
+   "proof": "בְּחִינַת (במדבר כ׳:י״ג): מֵי מְרִיבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מחלוקת",
+   "target_he": "פֶּלֶג אֱלֹקִים מָלֵא מָיִם",
+   "proof": "בְּחִינַת (תהילים ס״ה:י׳): פֶּלֶג אֱלֹקִים מָלֵא מָיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מחלוקת",
+   "target_he": "ספר",
+   "proof": "כִּי מִכָּל מַחֲלֹקֶת נַעֲשֶׂה סֵפֶר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ספר",
+   "target_he": "שְׁאֵלוֹת וּתְשׁוּבוֹת",
+   "proof": "בְּחִינַת שְׁאֵלוֹת וּתְשׁוּבוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מחלוקת",
+   "target_he": "שְׁאֵלָה וְקֻשְׁיָא",
+   "proof": "כִּי הַמַּחֲלֹקֶת הִיא שְׁאֵלָה וְקֻשְׁיָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּבָה",
+   "target_he": "סְפָרִים",
+   "proof": "כִּי עַל־יְדֵי הַתְּשׁוּבָה, עַל־יְדֵי־זֶה נִתְחַדְּשִׁים אֶצְלוֹ כַּמָּה סְפָרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנַת חֲכָמִים",
+   "target_he": "סְפָרִים",
+   "proof": "וּבַתְּחִלָּה כְּשֶׁלֹּא הָיָה לוֹ אֱמוּנַת חֲכָמִים, אֲזַי הָיוּ כָּל הַסְּפָרִים אֶצְלוֹ כְּלֹא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּבָה",
+   "target_he": "סֵפֶר",
+   "proof": "וּכְשֶׁשָּׁב בִּתְשׁוּבָה עַל־זֶה, אֲזַי נִתְחַדֵּשׁ אֶצְלוֹ בְּכָל פַּעַם סֵפֶר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

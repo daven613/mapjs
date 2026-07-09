@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 72,
+ "chunk": "72_0_14",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רוֹחֲצִין עַצְמָן מִתַּאֲוָה",
+   "target_he": "וְהַזֹּנוֹת רָחָצוּ",
+   "proof": "בְּחִינַת: וְהַזֹּנוֹת רָחָצוּ, דְּהַיְנוּ שֶׁרוֹחֲצִין עַצְמָן מִתַּאֲוָה זוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְמָרֵק וּמְצַחְצֵחַ שְׁתֵּי חֶזְיוֹנוֹת",
+   "target_he": "וְאַתָּה תֶחֱזֶה",
+   "proof": "כְּמוֹ־כֵן הוּא מְמָרֵק וּמְצַחְצֵחַ שְׁתֵּי חֶזְיוֹנוֹת, בְּחִינַת: וְאַתָּה תֶחֱזֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְמָרֵק וּמְצַחְצֵחַ שְׁתֵּי חֶזְיוֹנוֹת",
+   "target_he": "חָזִית אִישׁ מָהִיר בִּמְלַאכְתּוֹ",
+   "proof": "בְּחִינַת: חָזִית אִישׁ מָהִיר בִּמְלַאכְתּוֹ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁתֵּי חֶזְיוֹנוֹת",
+   "target_he": "הִסְתַּכְּלוּת",
+   "proof": "דְּהַיְנוּ בְּחִינַת הִסְתַּכְּלוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קְדֻשָּׁה וּפְרִישׁוּת מִתַּאֲוָה זוֹ",
+   "target_he": "עִקָּר הִסְתַּכְּלוּת הַנַּ\"ל",
+   "proof": "כִּי עִקָּר הִסְתַּכְּלוּת הַנַּ\"ל הִיא עַל־יְדֵי קְדֻשָּׁה וּפְרִישׁוּת מִתַּאֲוָה זוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תַּאֲוָה הַזֹּאת",
+   "target_he": "פְּגַם הָעֵינַיִם",
+   "proof": "כִּי תַּאֲוָה הַזֹּאת הִיא בְּחִינַת פְּגַם הָעֵינַיִם, כְּמוֹ שֶׁכָּתוּב וְלֹא תָתוּרוּ וְכוּ' וְאַחֲרֵי עֵינֵיכֶם אֲשֶׁר אַתֶּם זֹנִים אַחֲרֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּרִישׁוּת גָּדוֹל מִזֹּאת הַתַּאֲוָה",
+   "target_he": "עֵינַיִם זַכִּים",
+   "proof": "וְעַל־כֵּן צָרִיךְ לְקַדֵּשׁ עַצְמוֹ בְּיוֹתֵר בִּפְרִישׁוּת גָּדוֹל מִזֹּאת הַתַּאֲוָה, וְאָז יֵשׁ לוֹ עֵינַיִם זַכִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִסְתַּכְּלוּתוֹ לְבַד",
+   "target_he": "לִתֵּן הַגְּדֻלָּה לְכָל אֶחָד כָּרָאוּי לוֹ",
+   "proof": "וְלִתֵּן הַגְּדֻלָּה לְכָל אֶחָד כָּרָאוּי לוֹ עַל־יְדֵי הִסְתַּכְּלוּתוֹ לְבַד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְתִינַת הַגְּדֻלָּה לְכָל אֶחָד כָּרָאוּי לוֹ",
+   "target_he": "מַנְהִיג יִשְׂרָאֵל",
+   "proof": "וְאָז דַּוְקָא הוּא יָכוֹל לִהְיוֹת מַנְהִיג יִשְׂרָאֵל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

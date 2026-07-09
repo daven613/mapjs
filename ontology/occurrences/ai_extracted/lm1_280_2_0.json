@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 280,
+ "chunk": "280_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַמַּשָּׂא וּמַתָּן",
+   "target_he": "תּוֹרָה",
+   "proof": "שֶׁכָּל הַמַּשָּׂא וּמַתָּן הוּא תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲקִירַת הַדִּינִים הַמְלֻבָּשִׁים בְּהַמַּשָּׂא וּמַתָּן מִן הַתּוֹרָה",
+   "target_he": "נְקָמָה",
+   "proof": "וְהוּא לוֹ נְקָמָה, שֶׁהַתּוֹרָה נוֹקֶמֶת בּוֹ עַל אֲשֶׁר עָקַר הַדִּינִים הַמְלֻבָּשִׁים בְּהַמַּשָּׂא וּמַתָּן מִן הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּר אוֹ מַחֲשָׁבָה",
+   "target_he": "הַדִּין תּוֹרָה",
+   "proof": "כִּי אִם חָסֵר אֵיזֶה דִּבּוּר אוֹ אֵיזֶה מַחֲשָׁבָה – יִתְקַלְקֵל הַדִּין תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

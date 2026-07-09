@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_11_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "ציר נאמן לשולחיו",
+   "target_he": "ריאה",
+   "proof": "וְזֶה בְּחִינַת הָרֵאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צל המתפלל תפלה בבחינת דין",
+   "target_he": "דין",
+   "proof": "שֶׁמִּתְפַּלֵּל תְּפִלָּה בִּבְחִינַת דִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ויעמד פינחס ויפלל",
+   "target_he": "ציר נאמן לשולחיו",
+   "proof": "בְּחִינַת: וַיַעֲמֹד פִּינְחָס וַיְפַלֵּל, הוּא בְּחִינַת צִיר נֶאֱמָן לְשׁוֹלְחָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כצנת שלג ביום קציר כן ציר נאמן לשלחיו",
+   "target_he": "ריאה",
+   "proof": "וְזֶה בְּחִינַת הָרֵאָה, בִּבְחִינַת (משלי כה): כְּצִנַּת שֶׁלֶג בְּיוֹם קָצִיר כֵּן צִיר נֶאֱמָן לְשֹׁלְחָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צנה וקרירות",
+   "target_he": "ריאה",
+   "proof": "וְצִנָּה וּקְרִירוּת הוּא בְּחִינַת הָרֵאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפלה בבחינת דין",
+   "target_he": "קדושה מהסטרא אחרא",
+   "proof": "שֶׁמִּתְפַּלֵּל תְּפִלָּה בִּבְחִינַת דִּין, שֶׁעַל־יְדֵי־זֶה מוֹצִיא כָּל הַקְּדֻשָּׁה מֵהַסִּטְרָא־אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ריאה",
+   "target_he": "חמימות הגוף",
+   "proof": "כִּי הָרֵאָה מְקָרֵר חֲמִימוּת הַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כנפי ריאה דנשבין על לבא",
+   "target_he": "לבא אוקיד כל גופא",
+   "proof": "כִּי אִלְמָלֵא כַּנְפֵי רֵאָה דְּנָשְׁבִין עַל לִבָּא, הֲוֵי לִבָּא אוֹקִיד כָּל גּוּפָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_13_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שְׁמִינִי עֲצֶרֶת",
+   "target_he": "מַלְכוּת",
+   "proof": "שְׁמִינִי עֲצֶרֶת זֶה בְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַלְכוּת",
+   "target_he": "זֶה יַעֲצֹר בְּעַמִּי",
+   "proof": "בְּחִינַת (שמואל א ט׳:י״ז): זֶה יַעֲצֹר בְּעַמִּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זֶה יַעֲצֹר בְּעַמִּי",
+   "target_he": "תִּקּוּן הַמִּשְׁפָּט",
+   "proof": "שֶׁזֶּה בְּחִינַת תִּקּוּן הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּן הַמִּשְׁפָּט",
+   "target_he": "מִשְׁפָּטֶיךָ לְמֶלֶךְ תֵּן",
+   "proof": "בִּבְחִינַת (תהילים ע״ב:א׳): מִשְׁפָּטֶיךָ לְמֶלֶךְ תֵּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תִּקּוּן הַמִּשְׁפָּט",
+   "target_he": "תִּקּוּן הַמִּשְׁפָּט הַמְבֹאָר לְמַעְלָה",
+   "proof": "הַיְנוּ בְּחִינַת תִּקּוּן הַמִּשְׁפָּט הַמְבֹאָר לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַמִּשְׁפָּט",
+   "target_he": "טֻמְאָה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִתְבַּטֵּל טֻמְאָה הַנַּ״ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בִּטּוּל הַטֻּמְאָה",
+   "target_he": "הַנֻּקְבָּא עוֹצֶרֶת הַטִּפָּה",
+   "proof": "וְזֶהוּ בְּחִינַת מַה שֶׁמּוּבָא בַּכְּתָבִים, שְׁבִּשְׁמִינִי עֲצֶרֶת הַנֻּקְבָּא עוֹצֶרֶת הַטִּפָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַנֻּקְבָּא עוֹצֶרֶת הַטִּפָּה",
+   "target_he": "תִּקּוּן טֻמְאָה הַנַּ״ל",
+   "proof": "הַיְנוּ בְּחִינַת תִּקּוּן טֻמְאָה הַנַּ״ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינוֹת הַנַּ״ל",
+   "target_he": "הֶחְתִּים בְּשָׂרוֹ",
+   "proof": "שֶׁנִּתְתַּקֵּן בְּחִינַת הֶחְתִּים בְּשָׂרוֹ עַל־יְדֵי בְּחִינוֹת הַנַּ״ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֶחְתִּים בְּשָׂרוֹ",
+   "target_he": "הַטִּפָּה",
+   "proof": "וְנֶעֱצֶרֶת הַטִּפָּה בִּקְדֻשָּׁה, וְאֵינָהּ נִשְׁחֶתֶת, בִּבְחִינַת הֶחְתִּים בְּשָׂרוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

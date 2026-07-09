@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 79,
+ "chunk": "79_11_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תב בתיובתא ומתעסיק באורייתא",
+   "target_he": "נטילתו מארבע יסודין",
+   "proof": "בְּזִמְנָא דְּתָב בִּתְיוּבְתָּא וּמִתְעֲסִק בְּאוֹרַיְתָא, קֻדְשָׁא בְּרִיךְ הוּא נְטַל לֵהּ מִתַּמָּן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עבר על אורייתא",
+   "target_he": "מרירו דאילנא רע",
+   "proof": "וְאִי עָבַר עַל אוֹרַיְתָא, אִתְשַׁקְיָה מִמְּרִירוּ דְּאִילָנָא רָע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אילנא רע",
+   "target_he": "יצר הרע",
+   "proof": "דְּאִיהוּ יֵצֶר הָרָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תיובתא",
+   "target_he": "וימתקו המים",
+   "proof": "וְאִם תָּיְבִין בִּתְיוּבְתָּא, אִתְמַר בְּהוֹן: וַיּוֹרֵהוּ ה' עֵץ, דָּא עֵץ הַחַיִּים, וּבֵהּ וַיִּמְתְּקוּ הַמָּיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עץ",
+   "target_he": "עץ החיים",
+   "proof": "וַיּוֹרֵהוּ ה' עֵץ, דָּא עֵץ הַחַיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עץ החיים",
+   "target_he": "משה משיח",
+   "proof": "וְדָא מֹשֶׁה מָשִׁיחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מטה",
+   "target_he": "מטטרון",
+   "proof": "מַטֶּה דָּא מְט\"ט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

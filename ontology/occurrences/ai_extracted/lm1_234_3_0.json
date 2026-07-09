@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 234,
+ "chunk": "234_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אור וחושך",
+   "target_he": "רע וטוב",
+   "proof": "הַיְנוּ בֵּין רַע לְטוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "סַפְּרָה נָּא לִי הַגְּדֹלוֹת",
+   "target_he": "נִסִּים עַל יְדֵי תְּפִלָּה",
+   "proof": "הַיְנוּ שֶׁעָשָׂה הַנִּסִּים עַל יְדֵי תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "נִסִּים",
+   "proof": "שֶׁעָשָׂה הַנִּסִּים עַל יְדֵי תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַעֲשִׂיּוֹת שֶׁל צַדִּיקִים",
+   "target_he": "סִטְרָא דִּקְדֻשָּׁה",
+   "proof": "כִּי זֶה מִסִּטְרָא דִּקְדֻשָּׁה עַל יְדֵי תְּפִלָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַעֲשִׂיּוֹת שֶׁל רְשָׁעִים",
+   "target_he": "סִטְרָא אָחֳרָא",
+   "proof": "אֲבָל מַעֲשִׂיּוֹת שֶׁל רְשָׁעִים הֵם עַל יְדֵי תַּחְבּוּלוֹת אוֹ כִּשּׁוּף אוֹ דָּבָר אַחֵר מִסִּטְרָא אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

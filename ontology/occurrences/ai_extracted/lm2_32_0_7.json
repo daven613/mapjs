@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 32,
+ "chunk": "32_0_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַעֲלָמַת/שְׂרֵפַת הַתּוֹרָה",
+   "target_he": "סִלּוּק הָרוּחַ־קִנְאָה",
+   "proof": "כְּדֵי שֶׁיִּהְיֶה נִסְתַּלֵּק הָרוּחַ־קִנְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרוּחַ־קִנְאָה",
+   "target_he": "שְׁלוֹם הַזּוּג הַקָּדוֹשׁ",
+   "proof": "שֶׁלֹּא יְקַלְקֵל, חַס וְשָׁלוֹם, שְׁלוֹם הַזּוּג הַקָּדוֹשׁ הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרוּחַ־קִנְאָה",
+   "target_he": "שָׁלוֹם שֶׁבֵּינֵיהֶם",
+   "proof": "וּכְשֶׁנִּתְקַלְקֵל שָׁלוֹם שֶׁבֵּינֵיהֶם עַל־יְדֵי הָרוּחַ־קִנְאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲבִידַת/שְׂרֵפַת הַסְּפָרִים",
+   "target_he": "סִלּוּק הָרוּחַ־קִנְאָה",
+   "proof": "כְּשֶׁנִּשְׂרָפִין וְנֶאֱבָדִין הַסְּפָרִים, מִמֵילָא נִסְתַּלֵּק הָרוּחַ־קִנְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָרוּחַ־קִנְאָה",
+   "target_he": "רוּחוֹ שֶׁל מָשִׁיחַ",
+   "proof": "כִּי הָרוּחַ־קִנְאָה הוּא רוּחוֹ שֶׁל מָשִׁיחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אַנְפֵּי אוֹרַיְתָא",
+   "target_he": "הַסְּפָרִים",
+   "proof": "שֶׁהוּא שׁוֹרֶה עַל אַנְפֵּי אוֹרַיְתָא, דְּהַיְנוּ הַסְּפָרִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

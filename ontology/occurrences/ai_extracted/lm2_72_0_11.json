@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 72,
+ "chunk": "72_0_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רוח אלקים",
+   "target_he": "רוח הקודש",
+   "proof": "שֶׁהוּא בְּחִינַת רוּחַ־הַקֹּדֶשׁ, רוּחַ נְבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוח אלקים",
+   "target_he": "רוח נבואה",
+   "proof": "שֶׁהוּא בְּחִינַת רוּחַ־הַקֹּדֶשׁ, רוּחַ נְבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הרוח אלקים שורה על פני התורה",
+   "target_he": "וְרוּחַ אֱלֹקִים מְרַחֶפֶת עַל פְּנֵי הַמָּיִם",
+   "proof": "בִּבְחִינַת (בראשית א): וְרוּחַ אֱלֹקִים מְרַחֶפֶת עַל פְּנֵי הַמָּיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "התורה",
+   "target_he": "מים",
+   "proof": "הַיְנוּ עַל־פְּנֵי הַתּוֹרָה שֶׁנִּקְרֵאת מַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוח אלקים",
+   "target_he": "לחדש בתורה",
+   "proof": "עַל־כֵּן עַל־יְדֵי הָרוּחַ אֱלֹקִים הַזֶּה זוֹכִין לְחַדֵּשׁ בַּתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

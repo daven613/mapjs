@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 8,
+ "chunk": "8_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "הפרשת הרע מהטוב",
+   "proof": "לְהַפְרִישׁ וּלְהַבְדִּיל וּלְבַטֵּל הָרָע מֵהַטּוֹב, הוּא עַל־יְדֵי תּוֹרָה וּתְפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "הפרשת הרע מהטוב",
+   "proof": "לְהַפְרִישׁ וּלְהַבְדִּיל וּלְבַטֵּל הָרָע מֵהַטּוֹב, הוּא עַל־יְדֵי תּוֹרָה וּתְפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לָלוּן לְעָמְקָהּ שֶׁל הֲלָכָה",
+   "target_he": "לִלְמֹד פּוֹסְקִים",
+   "proof": "וְלִמּוּד הַתּוֹרָה יִהְיֶה לָלוּן לְעָמְקָהּ שֶׁל הֲלָכָה, הַיְנוּ לִלְמֹד פּוֹסְקִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בירור ההלכה",
+   "target_he": "מעורב טוב ורע",
+   "proof": "וְכָל זְמַן שֶׁאֵינוֹ מְבָרֵר הַהֲלָכָה הוּא מְעֹרָב טוֹב וָרַע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֶׁאֵינוֹ יָכוֹל לְהַפְרִישׁ וּלְבַטֵּל הָרָע מֵהַטּוֹב",
+   "target_he": "וְדֹרֵשׁ רָעָה תְבוֹאֶנּוּ",
+   "proof": "וְהוּא בִּבְחִינַת (משלי י״א:כ״ז): וְדֹרֵשׁ רָעָה תְבוֹאֶנּוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד פוסקים",
+   "target_he": "הפרשת הטוב מהרע",
+   "proof": "דְּהַיְנוּ עַל־יְדֵי לִמּוּד פּוֹסְקִים, אֲזַי מַפְרִישׁ הַטּוֹב מֵהָרַע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "השכל",
+   "proof": "הוּא עַל־יְדֵי תְּפִלָּה, כִּי מִשָּׁם נִמְשָׁךְ הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

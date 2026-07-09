@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_5_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שכינה",
+   "target_he": "לב",
+   "proof": "הַשְּׁכִינָה, שֶׁהִיא הַלֵּב הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תפילה",
+   "target_he": "אמונה",
+   "proof": "וְהַתְּפִלָּה הִיא אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יען לא האמנתם בי",
+   "target_he": "תפילה",
+   "proof": "וְזֶהוּ: יַעַן לֹא הֶאֱמַנְתֶּם בִּי, הַיְנוּ הַתְּפִלָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דוחק את השעה",
+   "target_he": "הסתלקות קודם זמנו",
+   "proof": "כִּי מִי שֶׁדּוֹחֵק אֶת הַשָּׁעָה, שָׁעָה דּוֹחַקְתּוֹ (ברכות סד. ועירובין יג:), וְנִסְתַּלֵּק קֹדֶם זְמַנּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הסתלקותו",
+   "target_he": "בכיית השכינה",
+   "proof": "וְעַל הִסְתַּלְּקוּתוֹ – הַשְּׁכִינָה, שֶׁהִיא הַלֵּב הַנַּ\"ל, הִיא מְיַלֶּלֶת וּבוֹכָה עָלָיו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הכאה",
+   "target_he": "מיתת משה ואהרן",
+   "proof": "כִּי מֵתוּ משֶׁה וְאַהֲרֹן עַל־יְדֵי הַכָּאָה, כְּמוֹ שֶׁכָּתוּב: הֵמָּה מֵי מְרִיבָה וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה של רבים",
+   "target_he": "קידוש השם יתברך",
+   "proof": "כִּי עַל־יְדֵי הַתְּפִלָּה שֶׁל רַבִּים נִתְקַדֵּשׁ הַשֵּׁם יִתְבָּרַךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

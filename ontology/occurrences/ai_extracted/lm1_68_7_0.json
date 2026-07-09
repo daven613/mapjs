@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 68,
+ "chunk": "68_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מָמוֹן וְעֹשֶׁר",
+   "target_he": "חוֹמָה",
+   "proof": "כִּי הַמָּמוֹן וְהָעֲשִׁירוּת הִיא בְּחִינַת חוֹמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כַּעַס",
+   "target_he": "חוֹמָה",
+   "proof": "וְהַכַּעַס הוּא קִלְקוּל הַחוֹמָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כַּעַס",
+   "target_he": "בְּחִינַת הַחוֹמָה",
+   "proof": "וְנִתְקַלְקֵל בְּחִינַת הַחוֹמָה עַל־יְדֵי הַכַּעַס כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כַּעַס",
+   "target_he": "מָמוֹן",
+   "proof": "כִּי הַכַּעַס וְהַמָּמוֹן הֵם בְּחִינָה אַחַת בְּשֹׁרֶשׁ הַהִשְׁתַּלְשְׁלוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

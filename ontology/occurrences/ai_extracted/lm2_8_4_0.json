@@ -1,0 +1,136 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מַטֵּה עֹז",
+   "target_he": "גֵּרִים",
+   "proof": "כִּי עַל־יְדֵי גֵּרִים שֶׁנַּעֲשִׂין עַל־יְדֵי מַטֵּה עֹז הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גֵּרִים",
+   "target_he": "הַחֲזָרַת הַקְּדֻשָּׁה מֵהַסִּטְרָא־אָחֳרָא",
+   "proof": "עַל־יְדֵי שֶׁהַסִּטְרָא־אָחֳרָא מֻכְרַחַת לְהַחֲזִיר כָּל הַקְּדֻשָּׁה שֶׁבָּלְעָה עִם עַצְמוּת חִיּוּתָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַחֲזָרַת הַקְּדֻשָּׁה מֵהַסִּטְרָא־אָחֳרָא",
+   "target_he": "כְּבוֹדוֹ יִתְבָּרַךְ",
+   "proof": "עַל־יְדֵי־זֶה נִתְרַבֶּה וְנִתְגַּדֵּל כְּבוֹדוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּבוֹדוֹ יִתְבָּרַךְ (נִתְרַבֶּה וְנִתְגַּדֵּל)",
+   "target_he": "הָבוּ לַה' מִשְׁפְּחוֹת עַמִּים הָבוּ לַה' כָּבוֹד וָעֹז",
+   "proof": "בִּבְחִינַת (תהילים צ״ו:ז׳): הָבוּ לַה' מִשְׁפְּחוֹת עַמִּים, הָבוּ לַה' כָּבוֹד וָעֹז",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גִּדּוּל כְּבוֹדוֹ יִתְבָּרַךְ",
+   "target_he": "רְעָמִים",
+   "proof": "וְזֶה בְּחִינַת רְעָמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רְעָמִים",
+   "target_he": "אֵל הַכָּבוֹד הִרְעִים ה' עַל מַיִם רַבִּים",
+   "proof": "בִּבְחִינַת (שם כט): אֵל הַכָּבוֹד הִרְעִים, ה' עַל מַיִם רַבִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַיִם רַבִּים",
+   "target_he": "מֵימֵי הַדַּעַת",
+   "proof": "מַיִם רַבִּים, זֶה בְּחִינַת מֵימֵי הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֵימֵי הַדַּעַת",
+   "target_he": "כִּי מָלְאָה הָאָרֶץ דֵּעָה אֶת ה' כַּמַּיִם לַיָּם מְכַסִּים",
+   "proof": "בְּחִינַת (ישעיהו י״א:ט׳): כִּי מָלְאָה הָאָרֶץ דֵּעָה אֶת ה' כַּמַּיִם לַיָּם מְכַסִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֵימֵי הַדַּעַת",
+   "target_he": "הַיּוֹצְאִין מִן הַסִּטְרָא־אָחֳרָא וְחוֹזְרִין אֶל הַקְּדֻשָּׁה",
+   "proof": "הַיְנוּ בְּחִינַת מֵימֵי הַדַּעַת, שֶׁיּוֹצְאִין מִן הַסִּטְרָא־אָחֳרָא וְחוֹזְרִין אֶל הַקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֵימֵי הַדַּעַת הַיּוֹצְאִין וְחוֹזְרִין",
+   "target_he": "גֵּרִים",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נַעֲשִׂין גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֵימֵי הַדַּעַת הַיּוֹצְאִין וְחוֹזְרִין",
+   "target_he": "כְּבוֹדוֹ יִתְבָּרַךְ",
+   "proof": "וְנִתְגַּדֵּל כְּבוֹדוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גִּדּוּל כְּבוֹדוֹ יִתְבָּרַךְ",
+   "target_he": "רְעָמִים",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת רְעָמִים, בְּחִינַת: אֵל הַכָּבוֹד הִרְעִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גֵּרִים",
+   "target_he": "רַעַשׁ וּפִרְסוּם כְּבוֹדוֹ יִתְבָּרַךְ",
+   "proof": "כִּי הָרַעַשׁ וְהַפִּרְסוּם שֶׁנִּתְפַּרְסֵם כְּבוֹדוֹ יִתְבָּרַךְ עַל־יְדֵי הַגֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רַעַשׁ וּפִרְסוּם כְּבוֹדוֹ יִתְבָּרַךְ",
+   "target_he": "רְעָמִים",
+   "proof": "זֶה בְּחִינַת רְעָמִים, שֶׁהֵם קוֹל רַעַשׁ גָּדוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "book": "lm2",
+ "torah": 67,
+ "chunk": "67_0_18",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַצַּדִּיק",
+   "target_he": "הָרֹאשׁ",
+   "proof": "כָּל הַדֹּרוֹת כֻּלָּם נִמְשָׁכִין מִן הַצַּדִּיק שֶׁהוּא הָרֹאשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָּל הַדֹּרוֹת הַנִּמְשָׁכִין מִן הַצַּדִּיק",
+   "target_he": "קוֹרֵא הַדֹּרוֹת מֵרֹאשׁ",
+   "proof": "וְהִנֵּה כָּל הַדֹּרוֹת כֻּלָּם נִמְשָׁכִין מִן הַצַּדִּיק שֶׁהוּא הָרֹאשׁ, בְּחִינַת קוֹרֵא הַדֹּרוֹת מֵרֹאשׁ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָּל הַתּוֹלָדוֹת הַנִּמְשָׁכִין מִן נֹחַ",
+   "target_he": "אֵלֶּה תּוֹלְדֹת נֹחַ",
+   "proof": "וְזֶה בְּחִינַת: אֵלֶּה תּוֹלְדֹת נֹחַ – שֶׁכָּל הַתּוֹלָדוֹת, דְּהַיְנוּ הַדֹּרוֹת, כֻּלָּם נִמְשָׁכִין מִן נֹחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֹחַ",
+   "target_he": "הַצַּדִּיק",
+   "proof": "שֶׁהוּא בְּחִינַת הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֹחַ",
+   "target_he": "הָרֹאשׁ",
+   "proof": "בְּחִינַת הָרֹאשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֹחַ",
+   "target_he": "קוֹרֵא הַדֹּרוֹת מֵרֹאשׁ",
+   "proof": "בְּחִינַת קוֹרֵא הַדֹּרוֹת מֵרֹאשׁ, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרֹאשׁ",
+   "target_he": "הִדּוּר הָאֶתְרוֹג",
+   "proof": "וְדַע, שֶׁגַּם הִדּוּר הָאֶתְרוֹג נִמְשָׁךְ גַם־כֵּן מִן הָרֹאשׁ הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִדּוּר הָאֶתְרוֹג",
+   "target_he": "קוֹרֵא הַדֹּרוֹת מֵרֹאשׁ",
+   "proof": "וְזֶה בְּחִינַת קוֹרֵא הַדֹּרוֹת מֵרֹאשׁ, בְּחִינַת הִדּוּר הָאֶתְרוֹג",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַצַּדִּיק",
+   "target_he": "הָרֹאשׁ",
+   "proof": "דְּהַיְנוּ הַצַּדִּיק הַנַּ\"ל, שֶׁהוּא הָרֹאשׁ וְהַפְּאֵר וְהַהִדּוּר שֶׁל הָעוֹלָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַצַּדִּיק",
+   "target_he": "הַפְּאֵר",
+   "proof": "שֶׁהוּא הָרֹאשׁ וְהַפְּאֵר וְהַהִדּוּר שֶׁל הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַצַּדִּיק",
+   "target_he": "הַהִדּוּר שֶׁל הָעוֹלָם",
+   "proof": "שֶׁהוּא הָרֹאשׁ וְהַפְּאֵר וְהַהִדּוּר שֶׁל הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

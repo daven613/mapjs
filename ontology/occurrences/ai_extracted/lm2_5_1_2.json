@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_1_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלָּה",
+   "target_he": "אֱמוּנָה",
+   "proof": "תְּפִלָּה הוּא גַּם כֵּן בְּחִינַת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "זְכוּת אָבוֹת",
+   "proof": "זְכוּת אָבוֹת נִתְגַּלֶּה גַּם כֵּן רַק עַל־יְדֵי אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶץ",
+   "target_he": "אֱמוּנָה",
+   "proof": "הֵם נִרְאִין וְנִתְגַּלִּין בָּאָרֶץ, שֶׁהִיא בְּחִינַת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "רְפוּאָה",
+   "proof": "עַל־כֵּן עַל־יְדֵי נְפִילַת הָאֱמוּנָה אֵין מוֹעִיל לוֹ לֹא רְפוּאָה וְלֹא תְּפִלָּה וְלֹא זְכוּת אָבוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "תְּפִלָּה",
+   "proof": "עַל־כֵּן עַל־יְדֵי נְפִילַת הָאֱמוּנָה אֵין מוֹעִיל לוֹ לֹא רְפוּאָה וְלֹא תְּפִלָּה וְלֹא זְכוּת אָבוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "זְכוּת אָבוֹת",
+   "proof": "עַל־כֵּן עַל־יְדֵי נְפִילַת הָאֱמוּנָה אֵין מוֹעִיל לוֹ לֹא רְפוּאָה וְלֹא תְּפִלָּה וְלֹא זְכוּת אָבוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

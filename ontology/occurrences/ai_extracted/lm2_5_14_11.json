@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_14_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תִּקְעוּ",
+   "target_he": "הֲיִתָּקַע שׁוֹפָר בָּעִיר וְעָם לֹא יֶחֱרָדוּ",
+   "proof": "תִּקְעוּ זֶה בְּחִינַת: הֲיִתָּקַע שׁוֹפָר בָּעִיר וְעָם לֹא יֶחֱרָדוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקְעוּ",
+   "target_he": "חֶרְדַּת הַגּוּף",
+   "proof": "בְּחִינַת חֶרְדַּת הַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֶרְדַּת הַגּוּף",
+   "target_he": "וְקַר רוּחַ אִישׁ תְּבוּנָה",
+   "proof": "בְּחִינַת: וְקַר רוּחַ אִישׁ תְּבוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְקַר רוּחַ אִישׁ תְּבוּנָה",
+   "target_he": "אִישׁ תְּבוּנוֹת",
+   "proof": "הַיְנוּ בְּחִינַת אִישׁ תְּבוּנוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אִישׁ תְּבוּנוֹת",
+   "target_he": "אֱמוּנָה",
+   "proof": "שֶׁעַל יָדוֹ נִתְתַּקֵּן הָאֱמוּנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בַּחֹדֶשׁ שׁוֹפָר",
+   "target_he": "הִתְפָּאֲרוּת חָדָשׁ",
+   "proof": "בַּחֹדֶשׁ שׁוֹפָר – הַיְנוּ בְּהִתְפָּאֲרוּת חָדָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הִתְפָּאֲרוּת חָדָשׁ",
+   "target_he": "הִתְפָּאֲרוּת וְגַאֲוָה חֲדָשָׁה שֶׁנִּתְגַּלֶּה",
+   "proof": "דְּהַיְנוּ הִתְפָּאֲרוּת וְגַאֲוָה חֲדָשָׁה שֶׁנִּתְגַּלֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְפָּאֲרוּת וְגַאֲוָה חֲדָשָׁה שֶׁנִּתְגַּלֶּה",
+   "target_he": "גֵּרִים",
+   "proof": "הַיְנוּ בְּחִינַת גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גֵּרִים",
+   "target_he": "גַּאֲוָה בְּיִשְׂרָאֵל",
+   "proof": "שֶׁהֵם מַכְנִיסִין גַּאֲוָה בְּיִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַעֲלִין הָאֱמוּנָה הַנְּפוּלָה",
+   "target_he": "גֵּרִים",
+   "proof": "שֶׁנַּעֲשִׂין עַל יְדֵי שֶׁמַּעֲלִין הָאֱמוּנָה הַנְּפוּלָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

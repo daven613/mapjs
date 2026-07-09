@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 85,
+ "chunk": "85_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אֱגוֹזִים הַנִּקְרָאִים לוּזִים",
+   "target_he": "לֵאָה",
+   "proof": "הֵם רוֹמְזִים לִבְחִינַת לֵאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בֵּית־הַמִּקְדָּשׁ",
+   "target_he": "יַעֲקֹב קְרָאוֹ בֵּית־אֵל",
+   "proof": "שֶׁהוּא בְּחִינַת: יַעֲקֹב קְרָאוֹ בֵּית־אֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קָדְקֹד",
+   "target_he": "עֹרֶף",
+   "proof": "שֶׁהוּא בְּחִינַת עֹרֶף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֹרֶף",
+   "target_he": "בֵּית אֵל",
+   "proof": "שֶׁעַל־יָדָהּ נִכְנָסִין לְבֵית אֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לוּז",
+   "target_he": "בֵּית אֵל",
+   "proof": "שֶׁדֶּרֶךְ לוּז נִכְנָסִין לְבֵית אֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

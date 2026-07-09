@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 101,
+ "chunk": "101_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "סַם חַיִּים",
+   "target_he": "אַנְפִּין נְהִירִין",
+   "proof": "סַם חַיִּים, הוּא אַנְפִּין נְהִירִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "סַם מָוֶת",
+   "target_he": "אַנְפִּין חֲשׁוּכִין",
+   "proof": "סַם מָוֶת, הוּא אַנְפִּין חֲשׁוּכִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַנְפִּין חֲשׁוּכִין",
+   "target_he": "יְנִיקָה לָעַכּוּ\"ם",
+   "proof": "וּמִן אַנְפִּין חֲשׁוּכִין, יֵשׁ לָעַכּוּ\"ם יְנִיקָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

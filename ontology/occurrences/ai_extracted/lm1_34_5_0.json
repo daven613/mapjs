@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 34,
+ "chunk": "34_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מְלָאפוּם",
+   "target_he": "וְיוֹסֵף הוּא הַשַּׁלִּיט",
+   "proof": "וּמְלָאפוּם, הַיְנוּ בְּחִינַת: וְיוֹסֵף הוּא הַשַּׁלִּיט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְיוֹסֵף הוּא הַשַּׁלִּיט",
+   "target_he": "נְקֻדָּה עִם וָאו",
+   "proof": "הוּא בְּחִינַת נְקֻדָּה עִם וָאו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָכְמָה וּבִינָה",
+   "target_he": "בְּחִינַת יוֹסֵף",
+   "proof": "כִּי בְּחִינַת יוֹסֵף נִמְשָׁךְ מֵחָכְמָה וּבִינָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָכְמָה וּבִינָה",
+   "target_he": "וְיוֹסֵף הוּא הַשַּׁלִּיט",
+   "proof": "וְעַל־יְדֵי־זֶה נַעֲשֶׂה וְיוֹסֵף הוּא הַשַּׁלִּיט",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חָכְמָה",
+   "target_he": "נְקֻדָּה",
+   "proof": "וְחָכְמָה הִיא בְּחִינַת נְקֻדָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נְקֻדָּה",
+   "target_he": "יוּד",
+   "proof": "הַיְנוּ יוּד, מַעְיָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נְקֻדָּה",
+   "target_he": "מַעְיָן",
+   "proof": "הַיְנוּ יוּד, מַעְיָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בִּינָה",
+   "target_he": "נַחַל",
+   "proof": "וּבִינָה הוּא נַחַל הַנִּמְשָׁךְ מִן הַמַּעְיָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בִּינָה",
+   "target_he": "וָאו",
+   "proof": "וְעַל־שֵׁם הַמַּשְׁכוּת, הוּא וָאו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַעְיָן",
+   "target_he": "יוּד",
+   "proof": "נִקְרָא נַחַל הַנִּמְשָׁךְ מִן הַמַּעְיָן, שֶׁהוּא יוּד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

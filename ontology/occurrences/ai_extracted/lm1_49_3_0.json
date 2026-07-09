@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 49,
+ "chunk": "49_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "דלה ועניה",
+   "target_he": "כשמטמטם לבו בטפשות",
+   "proof": "כִּי דָּלֶת הֲוַיְת – לְשׁוֹן דַּלָּה וַעֲנִיָּה. הַיְנוּ כְּשֶׁמְּטַמְטֵם לִבּוֹ בְּטִפְּשׁוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כשמטמטם לבו בטפשות",
+   "target_he": "דל\"ת",
+   "proof": "וְאָז הִיא בְּחִינַת דָלֶ\"ת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כשמקדש מחשבתו",
+   "target_he": "יו\"ד",
+   "proof": "וְהִיא בְּחִינַת יוּ\"ד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יו\"ד",
+   "target_he": "ה'",
+   "proof": "שֶׁמַּמְשִׁיךְ לְתוֹךְ הַדָּלֶ\"ת, וְנַעֲשֵׂית ה'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

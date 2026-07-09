@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 280,
+ "chunk": "280_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "קְדֻשּׁוֹת נְפוּלוֹת",
+   "target_he": "נִיצוֹצוֹת שֶׁנָּפְלוּ",
+   "proof": "כִּי יֵשׁ קְדֻשּׁוֹת נְפוּלוֹת, הַיְנוּ בְּחִינוֹת נִיצוֹצוֹת שֶׁנָּפְלוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַשָּׂא וּמַתָּן",
+   "target_he": "נִיצוֹצוֹת שֶׁנָּפְלוּ",
+   "proof": "וְעַל יְדֵי מַשָּׂא וּמַתָּן מְנַשְּׂאִין וּמְרִימִין אוֹתָן, וְנוֹתְנִין אוֹתָן לִמְקוֹמָן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְנַשְּׂאִין וּמְרִימִין אוֹתָן וְנוֹתְנִין אוֹתָן לִמְקוֹמָן",
+   "target_he": "מַשָּׂא וּמַתָּן",
+   "proof": "וְזֶה בְּחִינוֹת מַשָּׂא וּמַתָּן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

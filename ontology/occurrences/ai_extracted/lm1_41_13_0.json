@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 41,
+ "chunk": "41_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מלבוש",
+   "target_he": "חשמל",
+   "proof": "גִּימַטְרִיָּא חַשְׁמַל – מַלְבּוּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חשמל",
+   "target_he": "בגדים עליונים",
+   "proof": "שֶׁזֶּה הַחַשְׁמַל שׁוֹמֵר בְּגָדִים עֶלְיוֹנִים מֵ\"עָשׁ\" שֶׁל קְלִפָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

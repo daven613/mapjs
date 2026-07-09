@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_3_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בת",
+   "target_he": "בת עין",
+   "proof": "בַּת, זֶה בְּחִינַת בַּת עַיִן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בת עין",
+   "target_he": "השחור שבעין",
+   "proof": "דְּהַיְנוּ הַשָּׁחֹר שֶׁבָּעַיִן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "השחור שבעין",
+   "target_he": "השחרות הנ\"ל",
+   "proof": "שֶׁהוּא בְּחִינַת הַשַּׁחֲרוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "השכל התחתון המצמצם ומגביל את השכל העליון",
+   "target_he": "השגת השכל העליון הגדול",
+   "proof": "כְּמוֹ כֵן זֶה הַשֵּׂכֶל הַתַּחְתּוֹן מְצַמְצֵם וּמַגְבִּיל הַשֵּׂכֶל הַגָּדוֹל הָעֶלְיוֹן וְנִכְלָל בְּתוֹכוֹ, וְעַל־יְדֵי־זֶה רוֹאִין וּמְבִינִים וּמַשִּׂיגִים אֶת הַשֵּׂכֶל הָעֶלְיוֹן הַגָּדוֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

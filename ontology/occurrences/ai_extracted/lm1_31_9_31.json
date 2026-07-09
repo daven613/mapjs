@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_9_31",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שַׁבָּת",
+   "target_he": "אֱמוּנָה",
+   "proof": "כִּי שַׁבָּת הִיא בְּחִינוֹת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמוּנָה",
+   "target_he": "שַׁבָּת",
+   "proof": "וְעַל יְדֵי אֱמוּנָה, שֶׁהוּא בְּחִינוֹת שַׁבָּת, מְאִירָה הַצְּדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "צְדָקָה",
+   "proof": "וְעַל יְדֵי אֱמוּנָה, שֶׁהוּא בְּחִינוֹת שַׁבָּת, מְאִירָה הַצְּדָקָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "תּוֹרָה",
+   "proof": "וְכֵן הַתּוֹרָה גַּם כֵּן חֲסֵרָה בְּלִי אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "תּוֹרָה",
+   "proof": "כִּי עַל־יְדֵי הָאֱמוּנָה נִשְׁלָם הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

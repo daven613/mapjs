@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מאמרות טהורות",
+   "target_he": "מלאך",
+   "proof": "כִּי אֵלּוּ הַמַּאֲמָרוֹת טְהוֹרוֹת הֵם בְּחִינַת מַלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דיבור",
+   "target_he": "רשימה של המוח",
+   "proof": "כִּי הַדִּבּוּר הוּא הָרְשִׁימָה שֶׁל הַמֹּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוחין זכים",
+   "target_he": "אמרות טהורות",
+   "proof": "וּכְשֶׁהַמֹּחִין זַכִּים, שֶׁעַל־יְדֵי־זֶה נַעֲשִׂין אֲמָרוֹת טְהוֹרוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רשימה של המוח",
+   "target_he": "דיבור",
+   "proof": "וְאֵין נִשְׁאָר רַק הָרְשִׁימָה שֶׁל הַמֹּחַ, שֶׁהוּא בְּחִינַת דִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוחין זכים",
+   "target_he": "רשימה זכה",
+   "proof": "אֲזַי גַּם הָרְשִׁימָה זַכָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רשימה זכה",
+   "target_he": "חלום על ידי מלאך",
+   "proof": "אֲזַי גַּם הָרְשִׁימָה זַכָּה, בִּבְחִינַת חֲלוֹם עַל־יְדֵי מַלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

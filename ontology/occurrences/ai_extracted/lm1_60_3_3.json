@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_3_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וְכָל הַבְּאֵרוֹת וְכוּ' סִתְּמוּם פְּלִשְׁתִּים",
+   "target_he": "קִלְקְלוּ הַפְּלִשְׁתִּים כָּל הַתִּקּוּנִים שֶׁתִּקֵּן אַבְרָהָם",
+   "proof": "בְּחִינַת (שם כו): וְכָל הַבְּאֵרוֹת וְכוּ' סִתְּמוּם פְּלִשְׁתִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֲרִיכוּת יָמִים",
+   "target_he": "יִרְאָה",
+   "proof": "עַד אֲשֶׁר הִמְשִׁיךְ שָׁם אֲרִיכוּת יָמִים, שֶׁהִיא בְּחִינַת יִרְאָה, שֶׁמַּצֶּלֶת מִזֶּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאָה",
+   "target_he": "הַצָּלָה מִזֶּה",
+   "proof": "שֶׁהִיא בְּחִינַת יִרְאָה, שֶׁמַּצֶּלֶת מִזֶּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲרִיכוּת יָמִים",
+   "target_he": "עֲשִׁירוּת",
+   "proof": "וְעַל־יְדֵי־זֶה שֶׁהִמְשִׁיךְ אֲרִיכוּת יָמִים, זָכָה שָׁם לַעֲשִׁירוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

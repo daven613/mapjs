@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 80,
+ "chunk": "80_25_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מסירת נפש על קידוש השם",
+   "target_he": "שלום",
+   "proof": "עַל־יְדֵי־זֶה יִתְעוֹרֵר בְּחִינַת שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שלום",
+   "target_he": "יוסף",
+   "proof": "בְּחִינַת שָׁלוֹם, בְּחִינַת יוֹסֵף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוסף",
+   "target_he": "הִתְחַבְּרוּת הַמֹּחַ וְהַדִּבּוּר",
+   "proof": "שֶׁהוּא בְּחִינַת הִתְחַבְּרוּת הַמֹּחַ וְהַדִּבּוּר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת יוֹסֵף",
+   "target_he": "לְקַשֵּׁר הַמַּחֲשָׁבָה אֶל הַדִּבּוּר",
+   "proof": "וְעַל כֵּן עַל־יְדֵי־זֶה יוּכַל לְהִתְפַּלֵּל וּלְקַשֵּׁר הַמַּחֲשָׁבָה אֶל הַדִּבּוּר וְכַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

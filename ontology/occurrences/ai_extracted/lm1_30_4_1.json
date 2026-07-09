@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_4_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מָמוֹן",
+   "target_he": "מַלְכוּת דִּקְדֻשָּׁה",
+   "proof": "שֶׁנָּפְלוּ רָאשֵׁי הַדּוֹר אֶל הַמָּמוֹן... עַל כֵּן תֵּכֶף פָּגְמוּ בְּמַלְכוּת דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֶּסֶף",
+   "target_he": "מַלְכוּת דִּקְדֻשָּׁה",
+   "proof": "שֶׁאֵין כֶּסֶף נֶחֱשָׁב, הָיָה מַלְכוּת דִּקְדֻשָּׁה עַל תִּקּוּנָהּ וּמְכוֹנָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַלְכוּת דִּקְדֻשָּׁה",
+   "target_he": "הַשֵּׂכֶל הַתַּחְתּוֹן",
+   "proof": "וְעַל כֵּן זָכָה שְׁלֹמֹה לְזֶה הַשֵּׂכֶל הַתַּחְתּוֹן הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשֵּׂכֶל הַתַּחְתּוֹן",
+   "target_he": "מַלְכוּת",
+   "proof": "כִּי זֶה הַשֵּׂכֶל הוּא בְּחִינַת מַלְכוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

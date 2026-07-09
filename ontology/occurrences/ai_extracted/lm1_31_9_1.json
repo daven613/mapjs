@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_9_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "לֶחֶם הַפָּנִים",
+   "target_he": "לֶחֶם חַם",
+   "proof": "הַיְנוּ לֶחֶם הַפָּנִים, הֵם לֶחֶם חַם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לֶחֶם חַם",
+   "target_he": "דַּרְגִּין דְּאַבְרָהָם",
+   "proof": "הֵם לֶחֶם חַם, דַּרְגִּין דְּאַבְרָהָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דַּרְגִּין דְּאַבְרָהָם",
+   "target_he": "כְּחֹם הַיּוֹם",
+   "proof": "שֶׁהוּא בְּחִינַת (בראשית י״ח:א׳): כְּחֹם הַיּוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֵׁב לִימִינִי",
+   "target_he": "אַבְרָהָם",
+   "proof": "בִּבְחִינַת (תהילים ק״י:א׳): שֵׁב לִימִינִי, בְּחִינַת אַבְרָהָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חַמָּה",
+   "target_he": "כְּחֹם הַיּוֹם",
+   "proof": "חַמָּה, בְּחִינַת: כְּחֹם הַיּוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חַמָּה",
+   "target_he": "לֶחֶם חַם",
+   "proof": "בְּחִינַת לֶחֶם חַם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צֵל",
+   "target_he": "מַרְאֵה חַמָּה",
+   "proof": "אֲבָל כְּשֶׁסָּר צִלָּם, אֲזַי נִתְעַלֶּה וְנִתְרָאֶה מַרְאֵה חַמָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  }
+ ]
+}

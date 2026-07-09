@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 189,
+ "chunk": "189_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "נְשִׁיכַת הַנָּחָשׁ",
+   "target_he": "עַצְבוּת וְעַצְלוּת",
+   "proof": "כִּי עִקַּר נְשִׁיכַת הַנָּחָשׁ הוּא עַצְבוּת וְעַצְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָפָר",
+   "target_he": "עַצְבוּת וְעַצְלוּת",
+   "proof": "עָפָר הִיא בְּחִינַת עַצְבוּת וְעַצְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְסוֹד הֶעָפָר",
+   "target_he": "עַצְבוּת וְעַצְלוּת",
+   "proof": "שֶׁהֵם בָּאִים מִיסוֹד הֶעָפָר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_3_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וַיֵּרָא אֵלָיו ה' בְּלַבַּת אֵשׁ",
+   "target_he": "בַּת עַיִן",
+   "proof": "וְזֶה בְּחִינַת: וַיֵּרָא אֵלָיו ה' בְּלַבַּת אֵשׁ (שמות ג׳:ב׳) – שֶׁהַשֵּׁם יִתְבָּרַךְ רָצָה לְהַלְבִּישׁ לוֹ הַשָּׂגוֹת אֱלֹקוּת, וְהִלְבִּישׁ לוֹ בִּבְחִינַת בַּת עַיִן הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בַּת תְּחִלָּה",
+   "target_he": "הַשֵּׂכֶל הַתַּחְתּוֹן",
+   "proof": "בַּת תְּחִלָּה, זֶה בְּחִינַת הַשֵּׂכֶל הַתַּחְתּוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשֵּׂכֶל הַתַּחְתּוֹן",
+   "target_he": "סִימָן יָפֶה לְבָנִים",
+   "proof": "שֶׁהוּא תְּחִלָּה וְהַקְדָּמָה לַשֵּׂכֶל הָעֶלְיוֹן. וְזֶה בְּחִינַת סִימָן יָפֶה לְבָנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בָּנִים",
+   "target_he": "הַשֵּׂכֶל הָעֶלְיוֹן",
+   "proof": "בָּנִים, זֶה בְּחִינַת הַשֵּׂכֶל הָעֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בָּנִים",
+   "target_he": "דַּעַת מְיֻּשֶּׁבֶת",
+   "proof": "נִמְצָא שֶׁבָּנִים הֵם בְּחִינַת דַּעַת מְיֻּשֶּׁבֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דַּעַת מְיֻּשֶּׁבֶת",
+   "target_he": "שֵׂכֶל עֶלְיוֹן וְגָדוֹל",
+   "proof": "בְּחִינַת שֵׂכֶל עֶלְיוֹן וְגָדוֹל הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַהַקְדָּמוֹת",
+   "target_he": "הַשֵּׂכֶל הָעֶלְיוֹן",
+   "proof": "שֶׁמַּשִּׂיגִין עַל יְדֵי הַהַקְדָּמוֹת, בְּחִינַת שֵׂכֶל הַתַּחְתּוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בַּת תְּחִלָּה",
+   "target_he": "הַשֵּׂכֶל הַתַּחְתּוֹן",
+   "proof": "וְזֶהוּ בַּת תְּחִלָּה – שֶׁהוּא הַשֵּׂכֶל הַתַּחְתּוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בַּת תְּחִלָּה",
+   "target_he": "הַשֵּׂכֶל הָעֶלְיוֹן",
+   "proof": "סִימָן יָפֶה לְבָנִים – שֶׁעַל יָדוֹ מַשִּׂיגִין הַשֵּׂכֶל הָעֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשֵּׂכֶל הָעֶלְיוֹן",
+   "target_he": "בָּנִים",
+   "proof": "שֶׁהוּא בְּחִינַת בָּנִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

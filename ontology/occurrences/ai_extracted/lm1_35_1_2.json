@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 35,
+ "chunk": "35_1_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חֵלֶק אֱלוֹהַּ מִמַּעַל",
+   "target_he": "חָכְמָה",
+   "proof": "שֶׁהוּא בְּחִינַת חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַחֲשָׁבוֹת חִיצוֹנִיּוֹת",
+   "target_he": "חָכְמוֹת חִיצוֹנִיּוֹת",
+   "proof": "הֵם חָכְמוֹת חִיצוֹנִיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קָנֶה",
+   "target_he": "שֵׂכֶל חִיצוֹנִי",
+   "proof": "וְעַל זֶה הַקָּנֶה, הַיְנוּ זֶה הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְבּוֹנְנוּת עֲבוֹדַת הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "שִׂכְלוֹ",
+   "proof": "אֲזַי שִׂכְלוֹ הוֹלֵךְ וְגָדוֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲשָׁבוֹת חִיצוֹנִיּוֹת",
+   "target_he": "קְדֻשַּׁת שִׂכְלוֹ",
+   "proof": "אֲזַי נִתְמַעֵט קְדֻשַּׁת שִׂכְלוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָכְמָה חִיצוֹנִית",
+   "target_he": "מְקוֹם הַקְּדֻשָּׁה",
+   "proof": "וּמְחַסֵּר מְקוֹם הַקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַקָּנֶה (הַשֵּׂכֶל הַחִיצוֹנִי)",
+   "target_he": "הַמִּדּוֹת רָעוֹת וּמְגֻנּוֹת",
+   "proof": "מִתְלַקְּטִים וּמִתְחַבְּרִים כָּל הַמִּדּוֹת רָעוֹת וּמְגֻנּוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

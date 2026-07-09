@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 70,
+ "chunk": "70_11_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מִשְׁכָּן",
+   "target_he": "מַשְׁכּוֹן",
+   "proof": "שֶׁהַמִּשְׁכָּן הוּא לְשׁוֹן מַשְׁכּוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַשְׁכּוֹן לְיִשְׂרָאֵל",
+   "target_he": "שְׁכִינָה",
+   "proof": "שֶׁהוּא מַשְׁכּוֹן לְיִשְׂרָאֵל, שֶׁתִּשְׁרֶה שְׁכִינָה אֶצְלָם אֲפִלּוּ אִם יֶחֶטְאוּ, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִשְׁכָּן",
+   "target_he": "שְׁכִינָה",
+   "proof": "נִמְצָא שֶׁעַל־יְדֵי הַמִּשְׁכָּן, הַשְּׁכִינָה שׁוֹרָה בְּיִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מִשְׁכָּן",
+   "target_he": "מָשְׁכֵנִי",
+   "proof": "כִּי מִשְׁכָּן לְשׁוֹן מָשְׁכֵנִי וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִשְׁכָּן",
+   "target_he": "כֹּחַ הַמּוֹשֵׁךְ",
+   "proof": "שֶׁיֵּשׁ לוֹ בְּחִינַת כֹּחַ הַמּוֹשֵׁךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֹּחַ הַמּוֹשֵׁךְ",
+   "target_he": "אֱלֹקוּת לַמָּקוֹם",
+   "proof": "לְהַמְשִׁיךְ אֱלֹקוּת לַמָּקוֹם שֶׁהָיָה עוֹמֵד שָׁם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

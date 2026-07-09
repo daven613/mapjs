@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_20",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שדי",
+   "target_he": "ברית",
+   "proof": "כִּי שַׁדַּי הוּא בְּחִינַת בְּרִית וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שדי שאמר לעולמו די",
+   "target_he": "שבירת תאות ממון",
+   "proof": "וְזֶה בְּחִינַת: שַׁדַּי – שֶׁאָמַר לְעוֹלָמוֹ דַּי... שֶׁזֶּהוּ בְּחִינַת שְׁבִירַת תַּאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמירת הברית",
+   "target_he": "שבירת תאות ממון",
+   "proof": "שֶׁזּוֹכִין עַל־יְדֵי שְׁמִירַת הַבְּרִית כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מצות מזוזה",
+   "target_he": "חמדת הממון",
+   "proof": "שֶׁעַל־יְדֵי מִצְוַת מְזוּזָה נִתְבַּטֵּל חֶמְדַּת הַמָּמוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

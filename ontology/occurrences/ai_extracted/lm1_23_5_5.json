@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שורש ההשפעות",
+   "target_he": "שליא",
+   "proof": "וְשֹׁרֶשׁ הַשְׁפָּעוֹת הוּא מְכֻנֶּה בְּשֵׁם שִׁלְיָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שליא",
+   "target_he": "דלתי בטני",
+   "proof": "כִּי הַשִּׁלְיָא הוּא בְּחִינַת דַּלְתֵי בִטְנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צורת מ\"ם סתומה",
+   "target_he": "מ\"ם יום של יצירת הולד",
+   "proof": "וְהוּא בְּחִינַת מֵ\"ם יוֹם שֶׁל יְצִירַת הַוָּלָד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שליא דכדניתא",
+   "target_he": "תאות ממון",
+   "proof": "בְּשִׁלְיָא דְּכַדְנַיְתָא, הוּא תִּקּוּנוֹ שֶׁל זֶה הַשּׁוֹמֵר הַבְּרִית, כְּשֶׁנּוֹפֵל לְתַאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ברית",
+   "target_he": "תאות ממון",
+   "proof": "כִּי בֶּאֱמֶת מִי שֶׁתִּקֵּן הַבְּרִית, אֵינוֹ נוֹפֵל לְתַאֲוַת הַמָּמוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

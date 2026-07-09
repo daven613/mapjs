@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "פַּרְעֹה",
+   "target_he": "חָלָל הַפָּנוּי",
+   "proof": "פַּרְעֹה הוּא בְּחִינוֹת חָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פַּרְעֹה לְשׁוֹן הִתְגַּלּוּת",
+   "target_he": "חָלָל הַפָּנוּי",
+   "proof": "וְגַם פַּרְעֹה לְשׁוֹן הִתְגַּלּוּת, הַיְנוּ בְּחִינַת חָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אִי אֶפְשָׁר לְהַשִּׂיג בְּחִינוֹת הֶחָלָל הַפָּנוּי",
+   "target_he": "כְּבֵדוּת לֵב",
+   "proof": "וְשָׁם בֶּחָלָל הַפָּנוּי יֵשׁ כְּבֵדוּת לֵב, כִּי אִי אֶפְשָׁר לְהַשִּׂיג בְּחִינוֹת הֶחָלָל הַפָּנוּי כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָכְמוֹת הַבָּאִים מִן הֶחָלָל הַפָּנוּי",
+   "target_he": "כְּבֵדוּת לֵב",
+   "proof": "וְכָל הַחָכְמוֹת הַבָּאִים מִשָּׁם, יֵשׁ בָּהֶם כְּבֵדוּת לֵב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּבֵדוּת לֵב",
+   "target_he": "קֻשְׁיָא עַל הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "יֵשׁ בָּהֶם כְּבֵדוּת לֵב, שֶׁנִּשְׁאָרִים בְּקֻשְׁיָא עַל הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פִּנּוּי אֱלֹקוּתוֹ מִשָּׁם",
+   "target_he": "הַבְּרִיאָה לְהִתְהַוּוֹת",
+   "proof": "מֵחֲמַת שֶׁפִּנָּה אֱלֹקוּתוֹ מִשָּׁם כִּבְיָכוֹל, כְּדֵי שֶׁתּוּכַל הַבְּרִיאָה לְהִתְהַוּוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

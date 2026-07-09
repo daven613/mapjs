@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 38,
+ "chunk": "38_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עבירה",
+   "target_he": "רוח שטות",
+   "proof": "כִּי הָעֲבֵרָה מַכְנִיס בָּאָדָם רוּחַ שְׁטוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בושה",
+   "target_he": "מוחין",
+   "proof": "וְעַל־יְדֵי בּוּשָׁה מַחֲזִיר הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילין",
+   "target_he": "עץ החיים",
+   "proof": "כִּי אָדָם הָרִאשׁוֹן פָּגַם בִּבְחִינַת תְּפִלִּין, שֶׁהֵם בְּחִינַת עֵץ הַחַיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילין",
+   "target_he": "אילנא דמותא",
+   "proof": "כִּי אָדָם הָרִאשׁוֹן פָּגַם בִּבְחִינַת תְּפִלִּין... וְדִבֵּק אֶת עַצְמוֹ בְּאִילָנָא דְּמוֹתָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אילנא דמותא",
+   "target_he": "גירוש מגן עדן",
+   "proof": "וְדִבֵּק אֶת עַצְמוֹ בְּאִילָנָא דְּמוֹתָא, וְעַל־יְדֵי־זֶה: וַיְגָרֶשׁ אוֹתוֹ מִגַּן עֵדֶן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עזות פנים",
+   "target_he": "גיהנום",
+   "proof": "כִּי עַזּוּת־פָּנִים לְגֵיהִנֹּם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כתנות עור",
+   "target_he": "תפילין",
+   "proof": "וַיַּעַשׂ לָהֶם כָּתְנוֹת עוֹר – דָּא תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קרבן",
+   "target_he": "תשובה",
+   "proof": "כִּי עַל־יְדֵי הַקָּרְבָּן, הַיְנוּ עַל־יְדֵי הַתְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תשובה",
+   "target_he": "תפילין",
+   "proof": "כִּי עַל־יְדֵי הַקָּרְבָּן, הַיְנוּ עַל־יְדֵי הַתְּשׁוּבָה, זָכָה לִבְחִינַת תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילין",
+   "target_he": "קרון עור הפנים",
+   "proof": "זָכָה לִבְחִינַת תְּפִלִּין, שֶׁהוּא בְּחִינַת קֵרוּן עוֹר הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

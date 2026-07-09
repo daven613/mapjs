@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַהֲלָכָה",
+   "target_he": "הוֹלָדָה",
+   "proof": "כִּי גַּם הַהֲלָכָה הִיא בְּחִינַת הוֹלָדָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֶחְסָר אֶצְלָם",
+   "target_he": "יַרְכוֹתֶיהָ מִצְטַנְּנוֹת",
+   "proof": "נֶחְסָר אֶצְלָם, שֶׁזֶּה בְּחִינַת יַרְכוֹתֶיהָ מִצְטַנְּנוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֲלָכוֹת",
+   "target_he": "חֶסֶד",
+   "proof": "וְנוֹלָד הֲלָכוֹת שֶׁהֵם בְּחִינַת חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מָמוֹנָם שֶׁמַּחֲזִיקִין הַתַּלְמִיד־חָכָם",
+   "target_he": "הֲלָכוֹת",
+   "proof": "עַל־יְדֵי מָמוֹנָם שֶׁמַּחֲזִיקִין הַתַּלְמִיד־חָכָם, וְנוֹלָד הֲלָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשְׁפָּעַת הַחֶסֶד",
+   "target_he": "הַחִסָּרוֹן",
+   "proof": "אֲזַי עַל־יְדֵי הַשְׁפָּעַת הַחֶסֶד חוֹזֵר וְנִתְמַלֵּא הַחִסָּרוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

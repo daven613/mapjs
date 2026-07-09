@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 61,
+ "chunk": "61_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַצִּמְצוּמִים",
+   "target_he": "הַדִּינִים",
+   "proof": "כָּל הַצִּמְצוּמִים, שֶׁהֵם הַדִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן אֱמוּנַת חֲכָמִים",
+   "target_he": "הַמְתָּקַת הַדִּין וְהַצִּמְצוּם",
+   "proof": "וְכָל מָקוֹם שֶׁיֵּשׁ אֵיזֶה דִּין וְצִמְצוּם, נִמְתָּק עַל־יְדֵי־זֶה, עַל־יְדֵי תִּקּוּן אֱמוּנַת חֲכָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן אֱמוּנַת חֲכָמִים",
+   "target_he": "הַסְּפָרִים שֶׁל הַתּוֹרָה הַקְּדוֹשָׁה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִתְרַבִּין הַסְּפָרִים שֶׁל הַתּוֹרָה הַקְּדוֹשָׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשֵּׂכֶל",
+   "target_he": "הַמְתָּקַת הַצִּמְצוּמִים וְהַדִּינִים",
+   "proof": "כִּי כָּל הַמְתָּקוֹת שֶׁל כָּל הַצִּמְצוּמִים וְהַדִּינִים הוּא עַל־יְדֵי הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשֵּׂכֶל",
+   "target_he": "שֹׁרֶשׁ הַדִּינִים",
+   "proof": "שֶׁהַשֵּׂכֶל הוּא שֹׁרֶשׁ הַדִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֵׂכֶל הַשַּׁיָּךְ לְכָל צִמְצוּם",
+   "target_he": "הַמְתָּקַת הַצִּמְצוּם",
+   "proof": "וְיֵשׁ לְכָל צִמְצוּם וְצִמְצוּם שֵׂכֶל, שֶׁעַל יָדוֹ נִמְתָּק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

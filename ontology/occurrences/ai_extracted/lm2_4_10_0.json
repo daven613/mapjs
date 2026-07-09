@@ -1,0 +1,109 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_10_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַה שֶּׁנּוֹתְנִין לָעַכּוּ\"ם",
+   "target_he": "צְדָקָה",
+   "proof": "כִּי גַּם מַה שֶּׁנּוֹתְנִין לָעַכּוּ\"ם, הוּא גַּם־כֵּן בְּחִינַת צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "רָצוֹן",
+   "proof": "וְעַל־יְדֵי צְדָקָה נַעֲשֶׂה רָצוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְלָקַחְתָּ מִנְחָתִי מִיָּדִי",
+   "target_he": "צְדָקָה",
+   "proof": "וְזֶהוּ שֶׁאָמַר לוֹ: וְלָקַחְתָּ מִנְחָתִי מִיָּדִי, הַיְנוּ צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִנְחָתִי מִיָּדִי",
+   "target_he": "מַגִּישֵׁי מִנְחָה בִּצְדָקָה",
+   "proof": "בְּחִינַת (מלאכי ג׳:ג׳): מַגִּישֵׁי מִנְחָה בִּצְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כִּי עַל־כֵּן רָאִיתִי פָנֶיךָ כִּרְאוֹת פְּנֵי אֱלֹקִים",
+   "target_he": "רְאוֹת פְּנֵי אֱלֹקִים",
+   "proof": "הַיְנוּ כְּמוֹ רְאוֹת פְּנֵי אֱלֹקִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רְאוֹת פְּנֵי אֱלֹקִים",
+   "target_he": "שָׁלוֹשׁ פְּעָמִים בַּשָּׁנָה יֵרָאֶה כָל זְכוּרְךָ אֶת פְּנֵי ה'",
+   "proof": "שֶׁהוּא בְּחִינַת (דברים ט״ז:ט״ז): שָׁלוֹשׁ פְּעָמִים בַּשָּׁנָה יֵרָאֶה כָל זְכוּרְךָ אֶת פְּנֵי ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שָׁלוֹשׁ פְּעָמִים בַּשָּׁנָה יֵרָאֶה כָל זְכוּרְךָ אֶת פְּנֵי ה'",
+   "target_he": "יָמִים טוֹבִים",
+   "proof": "דְּהַיְנוּ יָמִים טוֹבִים, שֶׁעַל יָדָם נִתְגַּלֶּה הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יָמִים טוֹבִים",
+   "target_he": "רָצוֹן",
+   "proof": "דְּהַיְנוּ יָמִים טוֹבִים, שֶׁעַל יָדָם נִתְגַּלֶּה הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַצְּדָקָה",
+   "target_he": "הִתְגַּלּוּת הָרָצוֹן עַל־יְדֵי יָמִים טוֹבִים",
+   "proof": "וְעִקָּר הִתְגַּלּוּת הָרָצוֹן עַל־יְדֵי יָמִים טוֹבִים הוּא עַל־יְדֵי הַצְּדָקָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַצְּדָקָה",
+   "target_he": "רָצוֹן",
+   "proof": "כְּמוֹ־כֵן יִהְיֶה נַעֲשֶׂה אֶצְלוֹ רָצוֹן עַל־יְדֵי הַצְּדָקָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמִּנְחָה וְהַצְּדָקָה שֶׁנָּתַן לְעֵשָׂו",
+   "target_he": "צְדָקָה מַמָּשׁ",
+   "proof": "כִּי מֵאַחַר שֶׁהַמִּנְחָה וְהַצְּדָקָה שֶׁנָּתַן לְעֵשָׂו הִיא בְּחִינַת צְדָקָה מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

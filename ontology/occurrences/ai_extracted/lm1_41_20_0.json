@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 41,
+ "chunk": "41_20_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תלמידי חכמים",
+   "target_he": "שלום בעולם",
+   "proof": "תַּלְמִידֵי־חֲכָמִים מַרְבִּים שָׁלוֹם בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תלמידי חכמים",
+   "target_he": "שם של מ\"ב",
+   "proof": "שֶׁעַל יָדָם נִמְשָׁךְ שֵׁם שֶׁל מ\"ב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שם של מ\"ב",
+   "target_he": "ש\"ע נהורין",
+   "proof": "שֶׁהֵם ש\"ע נְהוֹרִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ש\"ע נהורין ועם ח' חיוורתא",
+   "target_he": "בשלום",
+   "proof": "וְעִם ח' חִוַּרְתָּא גִּימַטְרִיָּא בַּשָּׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

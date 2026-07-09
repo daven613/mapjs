@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_5_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שבירת גאוותו",
+   "target_he": "העלאת הכבוד",
+   "proof": "שֶׁהַעֲלָאַת הַכָּבוֹד תָּלוּי בָּזֶה שֶׁאָדָם מְשַׁבֵּר גַּאֲוָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התורה",
+   "target_he": "העלאת הכבוד",
+   "proof": "כִּי כְּבוֹדוֹ נִתְעַלֶּה עַל־יְדֵי הַתּוֹרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שפלות",
+   "target_he": "התורה",
+   "proof": "וְאֵין אָדָם זוֹכֶה לַתּוֹרָה אֶלָּא עַל־יְדֵי שִׁפְלוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הר",
+   "target_he": "גדלות",
+   "proof": "הַר לְשׁוֹן גַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תבור",
+   "target_he": "שבירה",
+   "proof": "וְתָבוֹר לְשׁוֹן שְׁבִירָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ארבע פרסי",
+   "target_he": "ארבע בחינות שפלות",
+   "proof": "הַיְנוּ אַרְבַּע בְּחִינוֹת שִׁפְלוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ארבע בחינות שפלות",
+   "target_he": "שבירת הגדלות",
+   "proof": "שֶׁשְּׁבִירַת הַגַּדְלוּת הֵם בְּאַרְבַּע בְּחִינוֹת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

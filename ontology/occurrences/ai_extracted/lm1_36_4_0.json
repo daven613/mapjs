@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 36,
+ "chunk": "36_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מָרָה שְׁחוֹרָה",
+   "target_he": "טְחוֹל",
+   "proof": "וּמָרָה שְׁחוֹרָה הִיא טְחוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טְחוֹל",
+   "target_he": "מַלְכוּת הָרְשָׁעָה",
+   "proof": "שֶׁהִיא בְּחִינַת מַלְכוּת הָרְשָׁעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַלְכוּת הָרְשָׁעָה",
+   "target_he": "אִשָּׁה זוֹנָה",
+   "proof": "בְּחִינַת מַלְכוּת הָרְשָׁעָה, אִשָּׁה זוֹנָה",
+   "explicitness": "inferred",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אִשָּׁה זוֹנָה",
+   "target_he": "נִשְׁמוֹת עֵרֶב־רַב",
+   "proof": "שֶׁמִּשָּׁם נִשְׁמוֹתֵיהֶן דְּעֵרֶב־רַב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוֹתְרוֹת הַמָּרָה שְׁחוֹרָה",
+   "target_he": "דְּמָעוֹת",
+   "proof": "שֶׁהַדְּמָעוֹת הֵם מִמּוֹתְרוֹת הַמָּרָה שְׁחוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הוֹרָדַת דְּמָעוֹת",
+   "target_he": "הַמּוֹתָרוֹת",
+   "proof": "וּכְשֶׁמּוֹרִיד דְּמָעוֹת, אֲזַי נִדְחִין וְיוֹצְאִין לַחוּץ הַמּוֹתָרוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַמּוֹתָרוֹת",
+   "target_he": "הַתַּאֲווֹת נִאוּף",
+   "proof": "הַיְנוּ הַתַּאֲווֹת נִאוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲכִירַת דָּמִים שֶׁל טְחוֹל וְהַמּוֹתָרוֹת",
+   "target_he": "הַתַּאֲווֹת נִאוּף",
+   "proof": "הַבָּאִים מֵעֲכִירַת דָּמִים שֶׁל טְחוֹל וּמֵהַמּוֹתָרוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הוֹרָדַת דְּמָעוֹת",
+   "target_he": "מַלְכוּת שָׁמַיִם",
+   "proof": "וְכוֹלֵל נִשְׁמָתוֹ בְּמַלְכוּת שָׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אִשָּׁה זוֹנָה",
+   "target_he": "קְלִפָּה הַקּוֹדֶמֶת לַפְּרִי",
+   "proof": "שֶׁהִיא קְלִפָּה הַקּוֹדֶמֶת לַפְּרִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

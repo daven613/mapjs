@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 43,
+ "chunk": "43_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "כעס",
+   "proof": "כִּי כְּשֶׁהַדַּעַת אֵינוֹ בְּיִשּׁוּב, אֲזַי יֵשׁ כַּעַס",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כעס",
+   "target_he": "חכמה",
+   "proof": "כָּל הַכּוֹעֵס חָכְמָתוֹ מִסְתַּלֶּקֶת מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כעס",
+   "target_he": "דעת",
+   "proof": "כְּשֶׁכָּעַס מֹשֶׁה רַבֵּנוּ עָלָיו הַשָּׁלוֹם עַל אַנְשֵׁי הַצָּבָא כְּשֶׁבָּאוּ מִמִּדְיָן, נִסְתַּלֵּק מִמֶּנּוּ הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

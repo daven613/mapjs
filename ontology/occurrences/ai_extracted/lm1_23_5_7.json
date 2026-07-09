@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַמָּמוֹן וְהָעֲשִׁירוּת",
+   "target_he": "בְּעִצָּבוֹן תֹּאכֲלֶנָּה",
+   "proof": "כִּי הַמָּמוֹן וְהָעֲשִׁירוּת שֶׁלּוֹ הוּא בִּבְחִינַת: בְּעִצָּבוֹן תֹּאכֲלֶנָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּעִצָּבוֹן תֹּאכֲלֶנָּה",
+   "target_he": "עַצְבוּת וּמָרָה שְׁחוֹרָה",
+   "proof": "שֶׁהוּא בְּחִינַת עַצְבוּת וּמָרָה שְׁחוֹרָה, אַנְפִּין חֲשׁוֹכִין, מִיתָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּעִצָּבוֹן תֹּאכֲלֶנָּה",
+   "target_he": "אַנְפִּין חֲשׁוֹכִין",
+   "proof": "שֶׁהוּא בְּחִינַת עַצְבוּת וּמָרָה שְׁחוֹרָה, אַנְפִּין חֲשׁוֹכִין, מִיתָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּעִצָּבוֹן תֹּאכֲלֶנָּה",
+   "target_he": "מִיתָה",
+   "proof": "שֶׁהוּא בְּחִינַת עַצְבוּת וּמָרָה שְׁחוֹרָה, אַנְפִּין חֲשׁוֹכִין, מִיתָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָמוֹן",
+   "target_he": "עַצְבוּת וּמָרָה שְׁחוֹרָה",
+   "proof": "כִּי הַמָּמוֹן שֶׁלּוֹ הוּא מִבְּחִינַת עַצְבוּת וּמָרָה שְׁחוֹרָה וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְּכָסִים",
+   "target_he": "עַצְבוּת",
+   "proof": "כִּי הַנְּכָסִים שֶׁלּוֹ הֵם בְּעַצְמָן בְּחִינַת עַצְבוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲשִׁירוּת",
+   "target_he": "דְּאָגוֹת וְעַצְבוּת וּמָרָה שְׁחוֹרָה",
+   "proof": "כָּל מַה שֶּׁיֵּשׁ לוֹ עֲשִׁירוּת יוֹתֵר, יֵשׁ לוֹ דְּאָגוֹת וְעַצְבוּת וּמָרָה שְׁחוֹרָה בְּיוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְכָסִים",
+   "target_he": "דְּאָגָה",
+   "proof": "מַרְבֶּה נְכָסִים – מַרְבֶּה דְּאָגָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִבּוּי הַנְּכָסִים וְהָעֲשִׁירוּת",
+   "target_he": "דְּאָגָה וְעַצְבוּת",
+   "proof": "כִּי בְּוַדַּאי הוּא מַרְבֶּה דְּאָגָה וְעַצְבוּת עַל־יְדֵי רִבּוּי הַנְּכָסִים וְהָעֲשִׁירוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מָמוֹן וְעֲשִׁירוּת",
+   "target_he": "יָמָיו וְחַיָּיו שֶׁל הָאָדָם",
+   "proof": "וְעַל כֵּן הַמָּמוֹן וְהָעֲשִׁירוּת הוּא מְקַצֵּר וּמְכַלֶּה יָמָיו וְחַיָּיו שֶׁל הָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דְּאָגָה וְעַצְבוּת",
+   "target_he": "חִיּוּת",
+   "proof": "כִּי אֵין דָּבָר שֶׁמַּפְסִיד הַחִיּוּת כְּמוֹ הַדְּאָגָה וְהָעַצְבוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מָמוֹן וְעֲשִׁירוּת",
+   "target_he": "דְּאָגָה וְעַצְבוּת",
+   "proof": "וְהַמָּמוֹן וְהָעֲשִׁירוּת הוּא מַרְבֶּה דְּאָגָה וְעַצְבוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דְּאָגָה וְעַצְבוּת",
+   "target_he": "חַיָּיו",
+   "proof": "עַל־כֵּן הוּא מַפְסִיד וּמְכַלֶּה חַיָּיו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

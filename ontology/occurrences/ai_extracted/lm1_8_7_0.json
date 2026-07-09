@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 8,
+ "chunk": "8_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אַרְבַּע צִיצִית",
+   "target_he": "הָרוּחַ־חַיִּים",
+   "proof": "אַרְבַּע צִיצִית הֵם בְּחִינַת הָרוּחַ־חַיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָרוּחַ־סְעָרָה",
+   "target_he": "הָרוּחַ שֶׁל הַמִּתְנַגְּדִים",
+   "proof": "שֶׁהוּא הָרוּחַ שֶׁל הַמִּתְנַגְּדִים, הַחוֹלְקִים עַל הַצַּדִּיקִים אֲמִתִּיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָרַב דִּקְלִפָּה",
+   "target_he": "עֵשָׂו אִישׁ שָׂעִיר",
+   "proof": "שֶׁהוּא בְּחִינַת עֵשָׂו אִישׁ שָׂעִיר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַרְבַּע צִיצִית",
+   "target_he": "הָרוּחַ־סְעָרָה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה מַכְנִיעִין הָרוּחַ־סְעָרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צִיצִית",
+   "target_he": "שֵׂעָר",
+   "proof": "וְעַל־כֵּן צִיצִית הוּא לְשׁוֹן שֵׂעָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צִיצִית",
+   "target_he": "עֵשָׂו אִישׁ שָׂעִיר",
+   "proof": "כִּי עַל־יָדָם נִכְנָע עֵשָׂו אִישׁ שָׂעִיר, בְּחִינַת רוּחַ־סְעָרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בִּנְיַן יְרוּשָׁלַיִם",
+   "target_he": "הַכָּרַת הַמְפֻרְסָמִים",
+   "proof": "וּלְהַכִּיר אֶת הַמְפֻרְסָמִים, אֵיזֶהוּ עַל־יְדֵי עַזּוּת, הוּא עַל־יְדֵי בִּנְיַן יְרוּשָׁלַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְרוּשָׁלַיִם",
+   "target_he": "לֵב",
+   "proof": "שֶׁהוּא בְּחִינַת הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְרוּשָׁלַיִם",
+   "target_he": "יִרְאָה שָׁלֵם",
+   "proof": "כִּי יְרוּשָׁלַיִם בְּחִינַת יִרְאָה שָׁלֵם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יִרְאָה שָׁלֵם",
+   "target_he": "שְׁלֵמוּת הַיִּרְאָה הַתְּלוּיָה בַּלֵּב",
+   "proof": "הַיְנוּ שְׁלֵמוּת הַיִּרְאָה, הַתְּלוּיָה בַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלֹשׁ מִדּוֹת",
+   "target_he": "יְרוּשָׁלַיִם",
+   "proof": "אַךְ יֵשׁ שָׁלֹשׁ מִדּוֹת, שֶׁהֵם מַחֲרִיבֵי יְרוּשָׁלַיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלֹשׁ מִדּוֹת",
+   "target_he": "יִרְאָה הַתְּלוּיָה בַּלֵּב",
+   "proof": "הַיְנוּ שֶׁמַּפְסִידִין הַיִּרְאָה הַתְּלוּיָה בַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

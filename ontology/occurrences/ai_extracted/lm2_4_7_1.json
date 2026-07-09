@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מֵצַח הַנָּחָשׁ",
+   "target_he": "שֹׁרֶשׁ חָכְמַת הַטֶּבַע",
+   "proof": "שֶׁהוּא שֹׁרֶשׁ חָכְמַת הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֹׁרֶשׁ חָכְמַת הַטֶּבַע",
+   "target_he": "מֵצַח הַנָּחָשׁ",
+   "proof": "וְשֹׁרֶשׁ חָכְמַת הַטֶּבַע הוּא בְּחִינַת מֵצַח הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וּמִצְחַת נְחֹשֶׁת עַל רַגְלָיו",
+   "target_he": "מֵצַח הַנָּחָשׁ",
+   "proof": "בְּחִינַת (שמואל א י״ז:ו׳): וּמִצְחַת נְחֹשֶׁת עַל רַגְלָיו... הַיְנוּ בְּחִינַת מֵצַח הַנָּחָשׁ הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רַגְלָיו",
+   "target_he": "סִבּוֹת",
+   "proof": "וְזֶהוּ: רַגְלָיו, בְּחִינַת סִבּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לְרַגְלִי",
+   "target_he": "בְּסִבּוֹתַי",
+   "proof": "וַיְבָרֶךְ ה' אוֹתְךָ לְרַגְלִי – בְּסִבּוֹתַי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רֶגֶל",
+   "target_he": "סִבּוֹת",
+   "proof": "נִמְצָא שֶׁרֶגֶל הוּא בְּחִינַת סִבּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_6_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תפלה",
+   "target_he": "כפרת העוונות",
+   "proof": "וְעַל־יְדֵי הַתְּפִלָּה נִתְכַּפְּרִין הָעֲווֹנוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תפלה",
+   "target_he": "קרבן",
+   "proof": "כִּי הִיא בִּמְקוֹם קָרְבָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כפרת העוונות",
+   "target_he": "העננים כלים והולכים",
+   "proof": "וּכְשֶׁנִּתְכַּפְּרִין הָעֲווֹנוֹת, זֶה בְּחִינַת שֶׁהָעֲנָנִים כָּלִים וְהוֹלְכִים, בִּבְחִינַת (שם מד): מָחִיתִי כָעָב פְּשָׁעֶיךָ וְכֶעָנָן חַטֹּאתֶיךָ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כפרת העוונות",
+   "target_he": "זריחת השמש",
+   "proof": "וַאֲזַי הוּא בְּחִינַת זְרִיחַת הַשֶּׁמֶשׁ, שֶׁמִּשָּׁם הָרְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זריחת השמש",
+   "target_he": "רפואה",
+   "proof": "שֶׁמִּשָּׁם הָרְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חולאת",
+   "target_he": "עוון",
+   "proof": "כִּי עִקָּר הַחוֹלַאַת הִיא בְּחִינַת הֶעָווֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עוון",
+   "target_he": "ענן וחושך",
+   "proof": "שֶׁהוּא בְּחִינַת עָנָן וָחֹשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ענן וחושך",
+   "target_he": "אור השמש",
+   "proof": "שֶׁמַּחֲשִׁיךְ אוֹר הַשֶּׁמֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אור השמש",
+   "target_he": "רפואה",
+   "proof": "שֶׁהוּא בְּחִינַת רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סליחת העוון",
+   "target_he": "הענן כלה",
+   "proof": "וּכְשֶׁנִּסְלָח הֶעָווֹן, הוּא בְּחִינַת שֶׁהֶעָנָן כָּלֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זריחת השמש",
+   "target_he": "רפואה",
+   "proof": "וְאָז הַשֶּׁמֶשׁ זוֹרַחַת, וַאֲזַי בָּא רְפוּאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפלה",
+   "target_he": "כפרת עוונות",
+   "proof": "וְכָל זֶה בָּא עַל־יְדֵי הַתְּפִלָּה, שֶׁהִיא מְכַפֶּרֶת עֲווֹנוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

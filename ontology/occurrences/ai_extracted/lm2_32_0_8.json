@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 32,
+ "chunk": "32_0_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַסֵּפֶר",
+   "target_he": "שֵׁם ה'",
+   "proof": "כִּי הַסֵּפֶר הוּא בְּחִינַת שֵׁם ה', בְּחִינַת שְׁמִי שֶׁנִּכְתַּב בִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַסְּפָרִים",
+   "target_he": "שְׁמִי שֶׁנִּכְתַּב בִּקְּדֻשָּׁה",
+   "proof": "שֶׁהֵם בְּחִינַת שְׁמִי שֶׁנִּכְתַּב בִּקְּדֻשָּׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁמִי שֶׁנִּכְתַּב בִּקְדֻשָּׁה",
+   "target_he": "הַסְּפָרִים הַקְּדוֹשִׁים",
+   "proof": "וּמָה שְׁמִי שֶׁנִּכְתַּב בִּקְדֻשָּׁה, שֶׁהוּא הַסְּפָרִים הַקְּדוֹשִׁים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲבֵדַת הַסְּפָרִים הַקְּדוֹשִׁים",
+   "target_he": "שָׁלוֹם בֵּין אִישׁ לְאִשְׁתּוֹ",
+   "proof": "כְּדֵי לְהַטִּיל שָׁלוֹם בֵּין אִישׁ לְאִשְׁתּוֹ, דְּהַיְנוּ זוּג הַקָּדוֹשׁ הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲבֵדַת הַסְּפָרִים הַקְּדוֹשִׁים",
+   "target_he": "אֲבֵדַת סִפְרֵי הַמִּינִין",
+   "proof": "נִמְצָא שֶׁעַל־יְדֵי אֲבֵדַת הַסְּפָרִים הַקְּדוֹשִׁים בָּא טוֹבָה, שֶׁנֶּאֱבָדִין וְנֶעֱקָרִין סִפְרֵי הַמִּינִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲבֵדַת סִפְרֵי הַמִּינִין",
+   "target_he": "הִתְקָרְבוּת אֵלָיו יִתְבָּרַךְ",
+   "proof": "וַאֲזַי יְכוֹלִים לְהִתְקָרֵב אֵלָיו יִתְבָּרַךְ, אָמֵן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סִפְרֵי הַמִּינִין",
+   "target_he": "שִׂנְאָה וְתַחֲרוּת בֵּין יִשְׂרָאֵל",
+   "proof": "שֶׁהֵם מַטִּילִין שִׂנְאָה וְתַחֲרוּת בֵּין יִשְׂרָאֵל וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

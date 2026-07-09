@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 7,
+ "chunk": "7_5_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יִשְׁמָעֵאל",
+   "target_he": "תְּפִלָּה",
+   "proof": "כִּי יִשְׁמָעֵאל הוּא בְּחִינַת הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלָּה",
+   "target_he": "אֱמוּנָה",
+   "proof": "וְהוּא בְּחִינַת אֱמוּנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סוֹחֵר",
+   "target_he": "מַקִּיפִים",
+   "proof": "וְזֶהוּ סוֹחֵר, מִלְּשׁוֹן סְחוֹר סְחוֹר (בְּחִינַת מַקִּיפִים)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַקִּיפִים",
+   "target_he": "אֱמוּנָה",
+   "proof": "שֶׁהוּא בְּחִינַת אֱמוּנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צִיצִית דִּקְדֻשָּׁה",
+   "target_he": "כַּנְפֵי מִצְוָה",
+   "proof": "כִּי צִיצִית דִּקְדֻשָּׁה, שֶׁהֵם כַּנְפֵי מִצְוָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צִיצִית דִּקְדֻשָּׁה",
+   "target_he": "שְׁמִירַת הַבְּרִית",
+   "proof": "הוּא שְׁמִירַת הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁמִירַת הַבְּרִית",
+   "target_he": "זִוּוּג דִּקְדֻשָּׁה",
+   "proof": "וְהוּא בְּחִינַת זִוּוּג דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּרִית",
+   "target_he": "לֶחֶם",
+   "proof": "כִּי פְּגַם הַבְּרִית – הֶעְדֵּר הַלֶּחֶם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

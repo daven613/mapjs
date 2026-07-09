@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 69,
+ "chunk": "69_0_23",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תורה",
+   "target_he": "ימין",
+   "proof": "הַיְנוּ לְהַתּוֹרָה, שֶׁהוּא בְּחִינַת יָמִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ממון",
+   "target_he": "שמאל",
+   "proof": "שֶׁנּוֹשֵׂא אִשָּׁה בִּשְׁבִיל מָמוֹן, שֶׁהוּא בְּחִינַת שְׂמֹאל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשיאת אשה לשם ממון",
+   "target_he": "בנים שאינם מהוגנים",
+   "proof": "הַנּוֹשֵׂא אִשָּׁה לְשֵׁם מָמוֹן הַוְיָן לֵהּ בָּנִים שֶׁאֵינָם מְהֻגָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשיאת אשה לשם ממון",
+   "target_he": "דעת",
+   "proof": "וּפוֹגֵם וְאוֹבֵד דַּעְתּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "בנים שאינם מהוגנים",
+   "proof": "מֵאַחַר שֶׁפָּגַם הַדַּעַת, שֶׁמִּשָּׁם בָּאִים הַבָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשיאת אשה בשביל התורה",
+   "target_he": "לימוד תורה בטהרה",
+   "proof": "כְּדֵי שֶׁיִּלְמַד תּוֹרָה בְּטָהֳרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד תורה בטהרה",
+   "target_he": "נשיאת אשה",
+   "proof": "הַלּוֹמֵד תּוֹרָה בְּטָהֳרָה נוֹשֵׂא אִשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

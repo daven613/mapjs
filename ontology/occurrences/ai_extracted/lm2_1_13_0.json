@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בעל תפלה",
+   "target_he": "דבר ה'",
+   "proof": "כִּי זֶה הַבַּעַל תְּפִלָּה הוּא בִּבְחִינַת דְבַר ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דבר ה'",
+   "target_he": "השורש העליון",
+   "proof": "שֶׁהוּא הַשֹּׁרֶשׁ הָעֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "השורש העליון",
+   "target_he": "כל הכחות וכל צבא השמים",
+   "proof": "שֶׁכָּל הַכֹּחוֹת וְכָל צְבָא הַשָּׁמַיִם כֻּלָּם מְקַבְּלִים מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נדמה לו כאומתו",
+   "target_he": "נושא חן בעיניהם",
+   "proof": "הַיְנוּ שֶׁהוּא נוֹשֵׂא חֵן בְּעֵינֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

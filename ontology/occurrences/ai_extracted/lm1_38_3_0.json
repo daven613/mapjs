@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 38,
+ "chunk": "38_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הדיבור",
+   "target_he": "הזרוע",
+   "proof": "שֶׁהוּא הַזְּרוֹעַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הזרוע",
+   "target_he": "חמש אצבעין שביד שמאל",
+   "proof": "שֶׁהֵם חָמֵשׁ אֶצְבָּעִין שֶׁבְּיַד שְׂמֹאל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חמש אצבעין שביד שמאל",
+   "target_he": "חמישה גבורות",
+   "proof": "שֶׁהֵם חֲמִשָּׁה גְּבוּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חמישה גבורות",
+   "target_he": "חמשת מוצאות הפה",
+   "proof": "שֶׁהֵם בְּחִינַת חֲמֵשֶׁת מוֹצָאוֹת הַפֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חמשת מוצאות הפה",
+   "target_he": "הדיבור",
+   "proof": "כִּי עִקַּר הַדִּבּוּר – עַל־יְדֵי חֲמֵשֶׁת מוֹצָאוֹת הַפֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חמשת מוצאות הפה",
+   "target_he": "הגבורות",
+   "proof": "שֶׁהֵם הַגְּבוּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גבורות",
+   "target_he": "הדיבור",
+   "proof": "שֶׁעַל יְדֵי גְּבוּרוֹת נַעֲשֶׂה הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

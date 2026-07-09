@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 58,
+ "chunk": "58_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "היופי והגדולה",
+   "target_he": "הר ציון ירכתי צפון",
+   "proof": "וְהַיֹּפִי וְהַגְּדֻלָּה הִיא צִיּוּן וְסִימָן וּרְשִׁימָה עַל מִשְׁנֵה תּוֹרָה הַנַּ\"ל, בִּבְחִינַת (תהילים מ״ח:ג׳): הַר צִיּוֹן יַרְכְּתֵי צָפוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הר",
+   "target_he": "גדולה",
+   "proof": "הַר זֶה בְּחִינַת גְּדֻלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נוּדִי הַרְכֶם צִפּוֹר",
+   "target_he": "מלכות וגדולה",
+   "proof": "עַל נוּדִי הַרְכֶם צִפּוֹר – זֶה מַלְכוּת וּגְדֻלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גדולה",
+   "target_he": "ציון וסימן על ירכתי צפון",
+   "proof": "שֶׁהַגְּדֻלָּה הוּא צִיּוּן וְסִימָן עַל יַרְכְּתֵי צָפוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ירכתי צפון",
+   "target_he": "תורה הצפונה",
+   "proof": "עַל יַרְכְּתֵי צָפוֹן, עַל חַמּוּקֵי יְרֵכַיִךְ, תּוֹרָה הַצְּפוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תשובה",
+   "target_he": "ירכתי צפון",
+   "proof": "עַל־יְדֵי תְּשׁוּבָה הַבָּאָה מִבְּחִינַת שַׁבָּת, נִמְשָׁךְ יַרְכְּתֵי צָפוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

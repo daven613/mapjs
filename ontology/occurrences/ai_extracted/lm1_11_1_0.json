@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 11,
+ "chunk": "11_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "יחודא עילאה",
+   "target_he": "שמע ישראל",
+   "proof": "הַיְנוּ: \"שְׁמַע יִשְׂרָאֵל\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יחודא תתאה",
+   "target_he": "ברוך שם כבוד מלכותו לעולם ועד",
+   "proof": "וּ\"בָרוּךְ שֵׁם כְּבוֹד מַלְכוּתוֹ לְעוֹלָם וָעֶד\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יחודא עילאה ויחודא תתאה",
+   "target_he": "תבונות התורה לעמקה",
+   "proof": "וְכָל אֶחָד מִיִּשְׂרָאֵל צָרִיךְ שֶׁיִּהְיֶה נַעֲשֶׂה זֹאת עַל־יָדוֹ, עַל־יְדֵי־זֶה יָכוֹל לָבוֹא לִתְבוּנוֹת הַתּוֹרָה לְעָמְקָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דיבור",
+   "target_he": "תבונות התורה לעמקה",
+   "proof": "רַק עַל־יְדֵי אֶמְצָעוּת הַדִּבּוּר יָכוֹל לָבוֹא לִתְבוּנוֹת הַתּוֹרָה לְעָמְקָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דיבור",
+   "target_he": "תשובה",
+   "proof": "מֵאִיר לוֹ הַדִּבּוּר בְּכָל הַמְּקוֹמוֹת שֶׁצָּרִיךְ לַעֲשׂוֹת תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תשובה",
+   "target_he": "תבונות התורה לעמקה",
+   "proof": "וּבְכָל פַּעַם וּפַעַם, עַל־יְדֵי כָּל תְּשׁוּבָה וּתְשׁוּבָה, הוּא הוֹלֵךְ מִמַּדְרֵגָה לְמַדְרֵגָה עַד שֶׁיּוֹצֵא מִמַּדְרֵגָה פְּחוּתָה וּבָא לִתְבוּנוֹת הַתּוֹרָה לְעָמְקָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 251,
+ "chunk": "251_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "אֱמֶת",
+   "proof": "וּמַה שֶּׁצְּדָקָה נִמְשֶׁכֶת לָאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צְדָקָה",
+   "target_he": "אֱמֶת",
+   "proof": "כִּי צְדָקָה הוּא בְּחִינַת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֱמֶת",
+   "target_he": "אֶחָד",
+   "proof": "כִּי אֱמֶת הוּא אֶחָד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

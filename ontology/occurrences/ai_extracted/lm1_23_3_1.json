@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אֱמֶת",
+   "target_he": "חַיִּים",
+   "proof": "כִּי אֱמֶת הוּא בְּחִינַת חַיִּים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקְוָה",
+   "target_he": "אֱמוּנָה",
+   "proof": "תִּקְוָה זֶה בְּחִינַת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֱמוּנָה",
+   "target_he": "אַחֲרִית הַיָּמִים",
+   "proof": "וֶאֱמוּנָה הִיא אַחֲרִית הַיָּמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "כָּל הַמִּדּוֹת",
+   "proof": "כִּי עָלֶיהָ עוֹמְדִים כָּל הַמִּדּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 24,
+ "chunk": "24_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עשרה מיני נגינה",
+   "target_he": "שמחה",
+   "proof": "כִּי יֵשׁ עֲשָׂרָה מִינֵי נְגִינָה, שֶׁהֵם בְּחִינַת שִׂמְחָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמחה",
+   "target_he": "חולאת",
+   "proof": "וְכָל הַחוֹלַאַת הַבָּאִין עַל הָאָדָם, כֻּלָּם בָּאִין רַק מִקִּלְקוּל הַשִּׂמְחָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יוד מיני נגינה",
+   "target_he": "יוד מיני דפיקין",
+   "proof": "וְהֵם מְחַיִּין אוֹתָן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שמחה",
+   "target_he": "יוד מיני נגינה",
+   "proof": "שֶׁהִיא בְּחִינַת יוּד מִינֵי נְגִינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמחה",
+   "target_he": "חולאת מן היוד מיני דפיקין",
+   "proof": "וְעַל־כֵּן כְּשֶׁיֵּשׁ קִלְקוּל וּפְגָם בְּהַשִּׂמְחָה... עַל־יְדֵי־זֶה בָּאִין חוֹלַאַת מִן הַיּוּד מִינֵי דְּפִיקִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יוד מיני נגינה",
+   "target_he": "יוד מיני דפיקין",
+   "proof": "שֶׁנִּתְקַלְקְלִין עַל־יְדֵי קִלְקוּל הַיּוּד מִינֵי נְגִינָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "השמחה והניגון",
+   "target_he": "חולאת",
+   "proof": "וּכְּפִי קִלְקוּל הַשִּׂמְחָה וְהַנִּגּוּן, כֵּן בָּא חוֹלַאַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

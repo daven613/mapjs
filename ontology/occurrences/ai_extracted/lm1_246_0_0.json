@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 246,
+ "chunk": "246_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תַּעֲנִית",
+   "target_he": "תַּלְמוּד בַּבְלִי (שִׁכְחָתוֹ)",
+   "proof": "שֶׁרַבִּי זֵירָא הִתְעַנָּה כְּדֵי לִשְׁכֹּחַ תַּלְמוּד בַּבְלִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גַּדְלוּת",
+   "target_he": "חָכְמָתוֹ (שִׁכְחָתָהּ)",
+   "proof": "כִּי עַל־יְדֵי הַגַּדְלוּת שׁוֹכֵחַ גַּם כֵּן אֶת חָכְמָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַשָּׂגָה יוֹתֵר גְּדוֹלָה",
+   "target_he": "תּוֹרַת אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "לְהַשָּׂגָה יוֹתֵר גְּדוֹלָה שֶׁהִיא תּוֹרַת אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמִּתְגָּאֶה",
+   "target_he": "חָכְמָתוֹ",
+   "proof": "כָּל הַמִּתְגָּאֶה חָכְמָתוֹ מִסְתַּלֶּקֶת מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

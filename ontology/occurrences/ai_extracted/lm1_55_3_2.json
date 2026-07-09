@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 55,
+ "chunk": "55_3_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מְאוֹר עֵינֵי הַצַּדִּיקִים",
+   "target_he": "מִי עִוֵּר כִּמְשֻׁלָּם",
+   "proof": "בִּבְחִינַת (ישעיהו מ״ב:י״ט): מִי עִוֵּר כִּמְשֻׁלָּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צֵל",
+   "target_he": "מְאוֹר עֵינֵי הַצַּדִּיקִים",
+   "proof": "וְעַל־יְדֵי הַצֵּל נִתְחַזֵּק מְאוֹר עֵינֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צוֹפֶה רָשָׁע לַצַּדִּיק וּמְבַקֵּשׁ לַהֲמִיתוֹ",
+   "target_he": "רַע עַיִן",
+   "proof": "הַיְנוּ עִם רַע עַיִן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְיָדוֹ",
+   "target_he": "הִתְגַּלּוּת יַד ה'",
+   "proof": "הַיְנוּ בְּהִתְגַּלּוּת יַד ה' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לֹא יַרְשִׁיעֶנּוּ בְּהִשָּׁפְטוֹ",
+   "target_he": "יַד ה'",
+   "proof": "וְעַל־יְדֵי מָה נִתְגַּלֶּה יַד ה', עַל־יְדֵי: וְלֹא יַרְשִׁיעֶנּוּ בְּהִשָּׁפְטוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "וְתֹאחֵז בְּמִשְׁפָּט יָדִי",
+   "target_he": "לֹא יַרְשִׁיעֶנּוּ בְּהִשָּׁפְטוֹ",
+   "proof": "עַל־יְדֵי בְּחִינַת: וְתֹאחֵז בְּמִשְׁפָּט יָדִי, בְּחִינַת: מָרוֹם מִשְׁפָּטֶיךָ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִשְׁפָּט",
+   "target_he": "מְאוֹר עֵינֵי הָרָשָׁע",
+   "proof": "כִּי עַל־יְדֵי־זֶה כָּהוּ מְאוֹר עֵינֵי הָרָשָׁע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָּהוּ מְאוֹר עֵינֵי הָרָשָׁע",
+   "target_he": "שָׁגוּ בִּרְאִיָּה",
+   "proof": "בִּבְחִינַת (ישעיהו כ״ח:ז׳): שָׁגוּ בִּרְאִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פָּקוּ פְּלִילִיָּה",
+   "target_he": "שָׁגוּ בִּרְאִיָּה",
+   "proof": "עַל־יְדֵי פָּקוּ פְּלִילִיָּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פָּקוּ פְּלִילִיָּה",
+   "target_he": "מִשְׁפָּט",
+   "proof": "זֶהוּ בְּחִינַת מִשְׁפָּט, שֶׁזּוֹכֶה בַּדִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁגוּ בִּרְאִיָּה",
+   "target_he": "מְאוֹר עֵינָיו שֶׁל הָרָשָׁע",
+   "proof": "עַל־יְדֵי־זֶה שָׁגוּ בִּרְאִיָּה, נֶחֱשָׁךְ מְאוֹר עֵינָיו כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צֵל",
+   "target_he": "מְאוֹר עֵינָיו שֶׁל הַצַּדִּיק",
+   "proof": "וְעַל־יְדֵי הַצֵּל נִתְחַזֵּק מְאוֹר עֵינָיו שֶׁל הַצַּדִּיק כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְאוֹר עֵינָיו שֶׁל הַצַּדִּיק",
+   "target_he": "לִרְאוֹת לְמֵרָחוֹק",
+   "proof": "וְיָכוֹל לִרְאוֹת לְמֵרָחוֹק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

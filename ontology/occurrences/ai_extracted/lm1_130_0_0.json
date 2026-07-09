@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 130,
+ "chunk": "130_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הגדול מחברו",
+   "target_he": "יצרו",
+   "proof": "כָּל הַגָּדוֹל מֵחֲבֵרוֹ, יִצְרוֹ גָּדוֹל מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲנָוָה",
+   "target_he": "שְׁמִירַת הַבְּרִית",
+   "proof": "עַל־יְדֵי עֲנָוָה נִצּוֹל מִנִּאוּף, וְזוֹכֶה לִשְׁמִירַת הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגָּאוּת",
+   "target_he": "אֵשֶׁת אִישׁ",
+   "proof": "כָּל הַמִּתְגָּאֶה, לַסּוֹף נִכְשָׁל בְּאֵשֶׁת אִישׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 61,
+ "chunk": "61_3_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בסוד עמי לא יהיו",
+   "target_he": "סוד העיבור",
+   "proof": "בְּסוֹד עַמִּי לֹא יִהְיוּ – זֶה סוֹד הָעִבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כתב בית ישראל לא יכתבו",
+   "target_he": "סמיכה",
+   "proof": "וּבִכְתַב בֵּית יִשְׂרָאֵל לֹא יִכָּתֵבוּ – זֶה סְמִיכָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סמיכה שמסמיכין בשם רבי את שאינם הגונים",
+   "target_he": "כתב ישראל",
+   "proof": "עַל־יְדֵי סְמִיכָה שֶׁמַּסְמִיכִין בְּשֵׁם רַבִּי, אֶת שֶׁאֵינָם הֲגוּנִים, עַל־יְדֵי־זֶה מַחֲלִישִׁין כְּתַב יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אל אדמת ישראל לא יבואו",
+   "target_he": "נתגרשין מבחינת אוירא דארץ ישראל",
+   "proof": "וְאֶל אַדְמַת יִשְׂרָאֵל לֹא יָבוֹאוּ, הַיְנוּ שֶׁנִּתְגָּרְשִׁין מִבְּחִינַת אֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "החלשת כתב ישראל",
+   "target_he": "סוד העיבור",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִלְקַח מֵאִתָּנוּ סוֹד הָעִבּוּר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מותרות",
+   "target_he": "כל הנ\"ל",
+   "proof": "וְכָל זֶה עַל־יְדֵי הַמּוֹתָרוֹת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

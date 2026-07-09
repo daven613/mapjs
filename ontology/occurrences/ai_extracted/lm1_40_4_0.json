@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 40,
+ "chunk": "40_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עבודת אלילים",
+   "target_he": "מטר",
+   "proof": "גַּם עַל־יְדֵי עֲבוֹדַת אֱלִילִים נִמְנָע הַמָּטָר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מטר",
+   "target_he": "שבע",
+   "proof": "וּכְשֶׁאֵין מָטָר, אֵין שׂבַע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שבע",
+   "target_he": "שלום",
+   "proof": "וּכְשֶׁאֵין שׂבַע, אֵין שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלום",
+   "target_he": "איש עוזר לחברו",
+   "proof": "וּכְשֶׁאֵין שָׁלוֹם, אֲזַי אֵין אִישׁ עוֹזֵר לַחֲבֵרוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלום",
+   "target_he": "נסיעה וטלטול ממקום למקום בשביל פרנסה",
+   "proof": "וְכָל אֶחָד צָרִיךְ לִנְסֹעַ וְלִטַּלְטֵל מִמָּקוֹם לְמָקוֹם, בִּשְׁבִיל פַּרְנָסָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

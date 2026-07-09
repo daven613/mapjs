@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 52,
+ "chunk": "52_23_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַזְּמַן הוּא בַּלַּילָה",
+   "target_he": "הַנֵּעוֹר בַּלַּיְלָה",
+   "proof": "וְהַזְּמַן הוּא בַּלַּילָה, הַיְנוּ: הַנֵּעוֹר בַּלַּיְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַמָּקוֹם הוּא בְּדֶרֶךְ יְחִידִי",
+   "target_he": "הַמְהַלֵּךְ בַּדֶּרֶךְ יְחִידִי",
+   "proof": "וְהַמָּקוֹם הוּא בְּדֶרֶךְ יְחִידִי... וְהַיְנוּ: וְהַמְהַלֵּךְ בַּדֶּרֶךְ יְחִידִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְפַנּוֹת לִבּוֹ מִכֹּל וָכֹל",
+   "target_he": "בִּטּוּל כָּל הַיֵּשׁוּת",
+   "proof": "וְאָז יָכוֹל לְפַנּוֹת לִבּוֹ מִכֹּל וָכֹל, וְיָכוֹל לָבוֹא לְבִטּוּל כָּל הַיֵּשׁוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בִּטּוּל כָּל הַיֵּשׁוּת",
+   "target_he": "הַמְפַנֶּה לִבּוֹ לְבַטָּלָה",
+   "proof": "וְיָכוֹל לָבוֹא לְבִטּוּל כָּל הַיֵּשׁוּת, וְהַיְנוּ: וְהַמְפַנֶּה לִבּוֹ לְבַטָּלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִתְבַּטֵּל לְגַמְרֵי",
+   "target_he": "נִכְלָל בְּאַחְדוּת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "וְאָז כְּשֶׁנִּתְבַּטֵּל לְגַמְרֵי, אֲזַי הוּא נִכְלָל בְּאַחְדוּת הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִכְלָל בְּאַחְדוּת הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "בְּחִינַת מְחֻיָּב",
+   "proof": "וְאָז הוּא בָּא לִבְחִינַת מְחֻיָּב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+   "target_he": "מְחֻיַּב הַמְּצִיאוּת",
+   "proof": "כִּי הַקָּדוֹשׁ־בָּרוּךְ־הוּא מְחֻיַּב הַמְּצִיאוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כָּל הַדְּבָרִים",
+   "target_he": "אֶפְשַׁר הַמְּצִיאוּת",
+   "proof": "וְכָל הַדְּבָרִים הֵם אֶפְשַׁר הַמְּצִיאוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִתְבַּטֵּל וְנִכְלָל בְּאַחְדוּתוֹ",
+   "target_he": "יוֹצֵא מִבְּחִינַת אֶפְשָׁר וְנִכְלָל בַּמְחֻיָּב",
+   "proof": "וּכְשֶׁנִּתְבַּטֵּל וְנִכְלָל בְּאַחְדוּתוֹ, אֲזַי הוּא יוֹצֵא מִבְּחִינַת אֶפְשָׁר, וְנִכְלָל בַּמְחֻיָּב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוֹצֵא מִבְּחִינַת אֶפְשָׁר וְנִכְלָל בַּמְחֻיָּב",
+   "target_he": "הֲרֵי זֶה מִתְחַיֵּב בְּנַפְשׁוֹ",
+   "proof": "וְזֶה בְּחִינַת: הֲרֵי זֶה מִתְחַיֵּב בְּנַפְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

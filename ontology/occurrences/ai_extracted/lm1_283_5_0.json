@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 283,
+ "chunk": "283_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "התורה",
+   "target_he": "אש",
+   "proof": "שֶׁהִיא בְּחִינַת אֵשׁ, כְּמוֹ שֶׁכָּתוּב: הֲלֹא כֹה דְבָרִי כָּאֵשׁ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גילוי התורה",
+   "target_he": "רעמים",
+   "proof": "מֵחֲמַת שֶׁאֵינוֹ מְגַלֶּה אוֹתָהּ, עַל־יְדֵי־זֶה בּוֹקַעַת וְיוֹצֵאת בִּבְחִינַת רְעָמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רעמים",
+   "target_he": "מחלוקת",
+   "proof": "שֶׁהוּא בְּחִינַת מַחֲלוֹקֶת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

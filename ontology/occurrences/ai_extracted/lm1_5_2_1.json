@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 5,
+ "chunk": "5_2_1",
+ "model": "claude-fable-5",
+ "extractor": "ai:claude-fable-5",
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כֹּה",
+   "target_he": "אַסְפַּקְלַרְיָא שֶׁאֵינָהּ מְאִירָה",
+   "proof": "כִּי בְּחִינַת כֹּה הוּא אַסְפַּקְלַרְיָא שֶׁאֵינָהּ מְאִירָה",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זֶה הַדָּבָר",
+   "target_he": "אַסְפַּקְלַרְיָא הַמְּאִירָה",
+   "proof": "וְזֶה הַדָּבָר הוּא בְּחִינַת אַסְפַּקְלַרְיָא הַמְּאִירָה",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְבוּאַת שְׁאָר נְבִיאִים",
+   "target_he": "כֹּה",
+   "proof": "כָּל הַנְּבִיאִים נִתְנַבְּאוּ בְּכֹה אָמַר ה'",
+   "explicitness": "inferred"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְבוּאַת משֶׁה רַבֵּנוּ",
+   "target_he": "זֶה הַדָּבָר",
+   "proof": "נוֹסַף עֲלֵיהֶם מֹשֶׁה, שֶׁהִתְנַבֵּא בְּזֶה הַדָּבָר",
+   "explicitness": "inferred"
+  }
+ ]
+}

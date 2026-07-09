@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_14_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הָרֵאָה בִּשְׁלֵמוּת",
+   "target_he": "תִּקּוּן הַמִּשְׁפָּט",
+   "proof": "גַּם הָרֵאָה בִּשְׁלֵמוּת זֶה בְּחִינַת תִּקּוּן הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מְקוֹם הַמִּשְׁפָּט",
+   "target_he": "לֵב",
+   "proof": "כִּי מְקוֹם הַמִּשְׁפָּט הוּא בַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִלְקוּל הַמִּשְׁפָּט",
+   "target_he": "אֲהָבוֹת נְפוּלוֹת מִן הַמֶּרְכָּבָה",
+   "proof": "וְעַל־יְדֵי קִלְקוּל הַמִּשְׁפָּט, שֶׁעַל־יְדֵי־זֶה נוֹפְלִין אֲהָבוֹת נְפוּלוֹת מִן הַמֶּרְכָּבָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִלְקוּל הַמִּשְׁפָּט",
+   "target_he": "חִמּוּם הַלֵּב",
+   "proof": "עַל־יְדֵי־זֶה בָּא חִמּוּם הַלֵּב כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חִמּוּם הַלֵּב",
+   "target_he": "קִלְקוּל הַמִּשְׁפָּט",
+   "proof": "נִמְצָא שֶׁחִמּוּם הַלֵּב זֶה בְּחִינַת קִלְקוּל הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָרֵאָה מְנַשֶּׁבֶת עַל הַלֵּב וּמְקָרֶרֶת הַחִמּוּם",
+   "target_he": "תִּקּוּן הַמִּשְׁפָּט",
+   "proof": "וְהָרֵאָה מְנַשֶּׁבֶת עַל הַלֵּב וּמְקָרֶרֶת הַחִמּוּם, שֶׁזֶּהוּ בְּחִינַת תִּקּוּן הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָרֵאָה מְנַשֶּׁבֶת עַל הַלֵּב וּמְקָרֶרֶת הַחִמּוּם",
+   "target_he": "יַשֵּׁב רוּחוֹ יִזְּלוּ מָיִם",
+   "proof": "וְזֶה בְּחִינַת (תהילים קמ״ז:י״ח): יַשֵּׁב רוּחוֹ יִזְּלוּ מָיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְשִׁיבַת הָרוּחַ שֶׁל הָרֵאָה",
+   "target_he": "תִּקּוּן הַמִּשְׁפָּט",
+   "proof": "עַל־יְדֵי נְשִׁיבַת הָרוּחַ שֶׁל הָרֵאָה, שֶׁהִיא מְנַשֶּׁבֶת עַל הַלֵּב וּמְקָרֶרֶת חִמּוּם הַלֵּב, עַל־יְדֵי־זֶה נַעֲשֶׂה בְּחִינַת תִּקּוּן הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִזְּלוּ מָיִם",
+   "target_he": "וַיִּגֶל כַּמַּיִם מִשְׁפָּט",
+   "proof": "וְזֶהוּ: יִזְּלוּ מָיִם, בְּחִינַת (עמוס ה׳:כ״ד): וַיִּגֶל כַּמַּיִם מִשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וַיִּגֶל כַּמַּיִם מִשְׁפָּט",
+   "target_he": "תִּקּוּן הַמִּשְׁפָּט",
+   "proof": "שֶׁהוּא בְּחִינַת תִּקּוּן הַמִּשְׁפָּט כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

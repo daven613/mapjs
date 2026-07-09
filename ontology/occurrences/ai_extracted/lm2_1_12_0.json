@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_12_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "משיח",
+   "target_he": "חוטם",
+   "proof": "כִּי מָשִׁיחַ הוּא בְּחִינַת חֹטֶם, בִּבְחִינַת (איכה ד׳:כ׳): רוּחַ אַפֵּינוּ מְשִׁיחַ ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ריחות",
+   "target_he": "תפילות",
+   "proof": "שֶׁהֵם בְּחִינַת הַתְּפִלּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילה",
+   "target_he": "נשמה",
+   "proof": "וְעִקָּר הַתְּפִלָּה הִיא מֵהַנְּשָׁמָה, בִּבְחִינַת (תהילים ק״נ:ו׳): כֹּל הַנְּשָׁמָה תְּהַלֵּל יָהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ותהלתי אחטם לך",
+   "target_he": "חוטם",
+   "proof": "וְזֶה בְּחִינַת (ישעיהו מ״ח:ט׳): וּתְהִלָּתִי אֶחֱטָם לָךְ; בְּחִינַת חֹטֶם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ריח",
+   "target_he": "תפילה",
+   "proof": "כִּי יְנִיקַת הַתְּפִלָּה שֶׁהִיא מֵהַנְּשָׁמָה, הִיא מֵהָרֵיחַ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ריח",
+   "target_he": "נשמה",
+   "proof": "כִּי אֵין הַנְּשָׁמָה נֶהֱנֵית אֶלָּא מֵהָרֵיחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

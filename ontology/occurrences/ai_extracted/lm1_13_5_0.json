@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 13,
+ "chunk": "13_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הֶחָכָם שֶׁלּוֹקֵחַ הַנְּפָשׁוֹת וְעוֹלֶה עִמָּהֶם",
+   "target_he": "תִּקּוּנָא דְּמֶרְכַּבְתָּא עִלָּאָה וּמֶרְכַּבְתָּא תַּתָּאָה",
+   "proof": "שֶׁעַל־יְדֵי הֶחָכָם, שֶׁלּוֹקֵחַ הַנְּפָשׁוֹת וְעוֹלֶה עִמָּהֶם... נִתְתַּקְּנוּ שְׁנֵי הַמֶּרְכָּבוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַרְיֵה שֶׁבִּבְחִינַת נֶפֶשׁ",
+   "target_he": "אָרִיתִי מוֹרִי עִם בְּשָׂמִי",
+   "proof": "אַרְיֵה שֶׁבִּבְחִינַת נֶפֶשׁ, זֶה בְּחִינַת (שיר השירים ה׳:א׳): אָרִיתִי מוֹרִי עִם בְּשָׂמִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוֹרִי",
+   "target_he": "מָרַת נָפֶשׁ",
+   "proof": "מוֹרִי זֶה בְּחִינַת מָרַת נָפֶשׁ (שמואל־א א)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָרַת נָפֶשׁ",
+   "target_he": "וְנַפְשָׁהּ מָרָה לָהּ",
+   "proof": "בְּחִינַת (מלכים־ב ד): וְנַפְשָׁהּ מָרָה לָהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְנַפְשָׁהּ מָרָה לָהּ",
+   "target_he": "פְּגַם הַנֶּפֶשׁ, פְּגַם הָרָצוֹן",
+   "proof": "זֶה בְּחִינוֹת פְּגַם הַנֶּפֶשׁ, פְּגַם הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רָצוֹן שֶׁל דְּבַר־תַּאֲוָה",
+   "target_he": "נֶפֶשׁ",
+   "proof": "כְּשֶׁרוֹצֶה דְּבַר־תַּאֲוָה, זֶה הָרָצוֹן הוּא פְּגָם וּמָרָה לַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אַרְיֵה",
+   "target_he": "לְשׁוֹן לֶקֶט",
+   "proof": "וְזֶהוּ בְּחִינַת אַרְיֵה – לְשׁוֹן לֶקֶט, שֶׁמְּלַקֵּט מָרַת הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּשָׂמִי",
+   "target_he": "הָרָצוֹן הַטּוֹב",
+   "proof": "עִם בְּשָׂמִי – עִם הָרָצוֹן הַטּוֹב, שֶׁמַּעֲלֶה רֵיחַ טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

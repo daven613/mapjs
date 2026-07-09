@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_12_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "צְדָקָה",
+   "target_he": "רְפוּאָה",
+   "proof": "צְדָקָה הִיא רְפוּאָה, בִּבְחִינַת צְדָקָה מַרְפֵּא בִּכְנָפֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זָקֵן",
+   "target_he": "רְפוּאָה",
+   "proof": "הוּא בְּחִינַת רְפוּאָה, בִּבְחִינַת לְשׁוֹן חֲכָמִים מַרְפֵּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רָצוֹן",
+   "target_he": "רְפוּאָה",
+   "proof": "רָצוֹן הוּא בְּחִינַת רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְלֶאכֶת מַעֲשֵׂה בְרֵאשִׁית",
+   "target_he": "רְפוּאָה",
+   "proof": "מְלֶאכֶת מַעֲשֵׂה בְרֵאשִׁית הוּא רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זָקֵן",
+   "target_he": "זֶה קָנָה חָכְמָה",
+   "proof": "זָקֵן – זֶה קָנָה חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_9_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַמְצֹרָע",
+   "target_he": "נִרְגָּן מַפְרִיד אַלּוּף",
+   "proof": "הַמְצֹרָע, זֶה: נִרְגָּן מַפְרִיד אַלּוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִרְגָּן",
+   "target_he": "אִישׁ וְאִשְׁתּוֹ (הַפְרָדָה)",
+   "proof": "וּמַפְרִיד בֵּין אִישׁ וְאִשְׁתּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַפְרִיד בֵּין אִישׁ וְאִשְׁתּוֹ",
+   "target_he": "בָּדָד יֵשֵׁב",
+   "proof": "וְעַל־יְדֵי־זֶה: בָּדָד יֵשֵׁב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִנִּים",
+   "target_he": "מְצֹרָע",
+   "proof": "מַה קִּנִּים מְטַהֲרִין אֶת הַמְצֹרָע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תֵּבָה",
+   "target_he": "תֵּבַת הַתְּפִלָּה",
+   "proof": "אַף תֵּבָתְךָ, הַיְנוּ תֵּבַת הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תֵּבַת הַתְּפִלָּה",
+   "target_he": "מַחֲלֹקֶת",
+   "proof": "מְתַקְּנִין אֶת הַמַּחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תֵּבַת הַתְּפִלָּה",
+   "target_he": "שָׁלוֹם הַכְּלָלִי",
+   "proof": "וְעוֹשֶׂה שָׁלוֹם הַכְּלָלִי, שָׁלוֹם בְּכָל הָעוֹלָמוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

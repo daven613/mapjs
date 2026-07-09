@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַמַּלְכוּת",
+   "target_he": "דָּלֶ\"ת",
+   "proof": "כִּי הַמַּלְכוּת הוּא בְּחִינוֹת דָּלֶ\"ת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חָכְמָה תַּתָּאָה",
+   "target_he": "הַחָכְמָה הַמַּנְהֶגֶת אֶת הָעוֹלָם",
+   "proof": "בְּחִינוֹת חָכְמָה תַּתָּאָה, שֶׁהִיא בְּחִינוֹת הַחָכְמָה הַמַּנְהֶגֶת אֶת הָעוֹלָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָכְמָה תַּתָּאָה",
+   "target_he": "חָכְמוֹת שֶׁל הָעַכּוּ\"ם",
+   "proof": "וְכָל הַחָכְמוֹת שֶׁל הָעַכּוּ\"ם, כֻּלָּם הֵם תַּחַת הַחָכְמָה תַּתָּאָה הַנַּ\"ל, וּמִשָּׁם יוֹנֵק חָכְמָתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

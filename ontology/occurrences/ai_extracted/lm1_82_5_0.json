@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 82,
+ "chunk": "82_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בְּחִינַת יוֹסֵף",
+   "target_he": "בְּחִינַת קְדֻשַּׁת הַבְּרִית",
+   "proof": "בְּהִתְגַּלּוּת בְּחִינַת יוֹסֵף, שֶׁהוּא בְּחִינַת קְדֻשַּׁת הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קְדֻשַּׁת הַבְּרִית",
+   "target_he": "מִילָה",
+   "proof": "בְּחִינַת קְדֻשַּׁת הַבְּרִית, בְּחִינַת מִילָה כַּנּוֹדָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת בְּחִינַת יוֹסֵף",
+   "target_he": "חֲרָפוֹת",
+   "proof": "כִּי בְּהִתְגַּלּוּת בְּחִינַת יוֹסֵף... נֶאֶסְפוּ הַחֲרָפוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֲרָפוֹת",
+   "target_he": "שָׁלֹשׁ קְלִפּוֹת",
+   "proof": "נֶאֶסְפוּ הַחֲרָפוֹת, הַיְנוּ הַשָּׁלֹשׁ קְלִפּוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_1_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קול",
+   "target_he": "אֲבָהָן",
+   "proof": "וְקוֹל – זֶה בְּחִינַת אֲבָהָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֵשׁ מַיִם רוּחַ",
+   "target_he": "תְּלָת אֲבָהָן",
+   "proof": "שֶׁהֵם בְּחִינַת תְּלָת אֲבָהָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "אֲבָהָן",
+   "proof": "וְהֵם נִרְאִין וְנִתְגַּלִּין רַק עַל־יְדֵי אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמוּנָה",
+   "target_he": "עָפָר מָאנָא דְּכֻלְּהוּ",
+   "proof": "שֶׁהִיא בְּחִינַת עָפָר מָאנָא דְּכֻלְּהוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "קוֹלוֹת",
+   "proof": "וְעַל כֵּן עַל־יְדֵי נְפִילַת הָאֱמוּנָה אֵין מוֹעִיל לוֹ גַּם הַקּוֹלוֹת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

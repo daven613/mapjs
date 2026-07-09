@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 35,
+ "chunk": "35_8_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "חֻרְבַּן אֱמוּנָה",
+   "target_he": "חֻרְבַּן יְרוּשָׁלַיִם",
+   "proof": "כִּי חֻרְבַּן אֱמוּנָה הוּא נִקְרָא חֻרְבַּן יְרוּשָׁלַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "יְרוּשָׁלַיִם",
+   "proof": "לֹא חָרְבָה יְרוּשָׁלַיִם עַד שֶׁפָּסְקוּ מִמֶּנָּה אַנְשֵׁי אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יְרוּשָׁלַיִם",
+   "target_he": "אֱמוּנָה",
+   "proof": "וּכְשֶׁיְּרוּשָׁלַיִם, הַיְנוּ הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֱמוּנָה",
+   "target_he": "מַשָּׂא וּמַתָּן",
+   "proof": "הַיְנוּ הָאֱמוּנָה, הַיְנוּ מַשָּׂא וּמַתָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַשָּׂא וּמַתָּן",
+   "target_he": "פְּשָׁטָא אוֹרַיְתָא",
+   "proof": "הַיְנוּ מַשָּׂא וּמַתָּן, שֶׁהוּא פְּשָׁטָא אוֹרַיְתָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְרוּשָׁלַיִם",
+   "target_he": "הָעַכּוּ\"ם וְהָאֲרָצוֹת",
+   "proof": "וּכְשֶׁיְּרוּשָׁלַיִם... מִתְגַּבֶּרֶת אֲזַי אֵלּוּ הָעַכּוּ\"ם וְהָאֲרָצוֹת נוֹפְלִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְרוּשָׁלַיִם",
+   "target_he": "הַנִּיצוֹצוֹת הַקְּדוֹשִׁים",
+   "proof": "וְעוֹלִים מִמֶּנָּה כָּל הַנִּיצוֹצוֹת הַקְּדוֹשִׁים שֶׁבְּתוֹכָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

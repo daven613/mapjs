@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 48,
+ "chunk": "48_21_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מֵי מְרִיבַת",
+   "target_he": "מֵי הַחֲסָדִים",
+   "proof": "בְּמֵי מְרִיבַת – זֶה בְּחִינַת מֵי הַחֲסָדִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֵי מְרִיבַת",
+   "target_he": "סֻכָּה",
+   "proof": "בְּמֵי מְרִיבַת – זֶה בְּחִינַת מֵי הַחֲסָדִים, בְּחִינַת סֻכָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סֻכָּה",
+   "target_he": "רִיב לְשׁוֹנוֹת",
+   "proof": "שֶׁמַּצֶּלֶת מֵרִיב לְשׁוֹנוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

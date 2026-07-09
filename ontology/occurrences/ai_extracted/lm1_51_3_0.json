@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 51,
+ "chunk": "51_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר",
+   "target_he": "עֲכִירַת הַדָּמִים",
+   "proof": "וַעֲכִירַת הַדָּמִים הוּא עַל־יְדֵי הַשֶּׁקֶר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זִכּוּךְ הַדָּמִים",
+   "target_he": "אֱמֶת",
+   "proof": "וֶאֱמֶת אִי אֶפְשָׁר לְדַבֵּר כִּי־אִם כְּשֶׁמְּזַכֵּךְ מִקֹּדֶם אֶת הַדָּמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דִּבּוּר",
+   "target_he": "נֶפֶשׁ",
+   "proof": "כִּי עִקַּר הַדִּבּוּר הוּא הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נֶפֶשׁ",
+   "target_he": "דָּם",
+   "proof": "וְהַנֶּפֶשׁ הוּא הַדָּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר",
+   "target_he": "עֲכִירַת הַדָּמִים",
+   "proof": "נִמְצָא, כְּשֶׁאוֹמֵר שֶׁקֶר, יֵשׁ לוֹ עֲכִירַת הַדָּמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲכִירַת הַדָּמִים",
+   "target_he": "מָרָה שְׁחוֹרָה",
+   "proof": "וּמִזֶּה בָּאָה הַמָּרָה שְׁחוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוֹתְרֵי הַמָּרָה שְׁחוֹרָה",
+   "target_he": "דְּמָעוֹת",
+   "proof": "וּמִמּוֹתְרֵי הַמָּרָה שְׁחוֹרָה נִתְהַוּוּ הַדְּמָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דְּמָעוֹת",
+   "target_he": "עֵינַיִם כֵּהוֹת",
+   "proof": "וְעַל־יְדֵי־זֶה הָעֵינַיִם כֵּהוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

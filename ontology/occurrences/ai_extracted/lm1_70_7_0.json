@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 70,
+ "chunk": "70_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עניים שאינם מהוגנים",
+   "target_he": "עפר",
+   "proof": "הַיְנוּ שֶׁאֵינָם בִּבְחִינַת עָפָר כְּלָל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדקה שנותנים להם",
+   "target_he": "זריעה",
+   "proof": "אֵינָהּ בְּחִינַת זְרִיעָה כְּלָל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נתינת צדקה למי שאינו בחינת עפר",
+   "target_he": "עשיית פירות",
+   "proof": "אֲבָל אִם נוֹתֵן צְדָקָה לְמִי שֶׁאֵינוֹ בְּחִינַת עָפָר כְּלָל, אֵינוֹ עוֹשֶׂה פֵּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

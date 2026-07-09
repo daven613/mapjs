@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 91,
+ "chunk": "91_0_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אֱלֹקִים אֵת",
+   "target_he": "חָכְמָה תַּתָּאָה וְחָכְמָה עִלָּאָה",
+   "proof": "אֱלֹקִים אֵת – זֶה בְּחִינַת חָכְמָה תַּתָּאָה וְחָכְמָה עִלָּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱלֹקִים",
+   "target_he": "חָכְמָה תַּתָּאָה",
+   "proof": "אֱלֹקִים – בְּחִינַת חָכְמָה תַּתָּאָה, כַּנּוֹדַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֵת",
+   "target_he": "חָכְמָה עִלָּאָה",
+   "proof": "אֵת – זֶה בְּחִינַת חָכְמָה עִלָּאָה, בְּחִינַת: אֵת הַשָּׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וַיְדַבֵּר",
+   "target_he": "זִוּוּג וְהִתְקַשְּׁרוּת",
+   "proof": "וַיְדַבֵּר – לְשׁוֹן זִוּוּג וְהִתְקַשְּׁרוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לֵאמֹר",
+   "target_he": "הַלְבָּשָׁה",
+   "proof": "לֵאמֹר – לְשׁוֹן הַלְבָּשָׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַצַּדִּיק שֶׁמַּלְבִּישׁ הַדְּבָרִים הָאֵלֶּה בְּסִפּוּרֵי דְּבָרִים",
+   "target_he": "לְזַוֵּג וּלְקַשֵּׁר חָכְמָה תַּתָּאָה בְּחָכְמָה עִלָּאָה",
+   "proof": "הַיְנוּ עַל־יְדֵי הַצַּדִּיק שֶׁמַּלְבִּישׁ הַדְּבָרִים הָאֵלֶּה... זֶה נַעֲשֶׂה עַל־יְדֵי בְּחִינַת: הַדְּבָרִים הָאֵלֶּה לֵאמֹר... הַיְנוּ לְזַוֵּג וּלְקַשֵּׁר חָכְמָה תַּתָּאָה בְּחָכְמָה עִלָּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַצַּדִּיק מַלְבִּישׁ אוֹר הַתּוֹרָה בְּסִפּוּרֵי דְּבָרִים",
+   "target_he": "חִבּוּר חָכְמָה תַּתָּאָה עִם חָכְמָה עִלָּאָה",
+   "proof": "וְעַל־יְדֵי שֶׁהַצַּדִּיק מַלְבִּישׁ אוֹר הַתּוֹרָה בְּסִפּוּרֵי דְּבָרִים, עַל־יְדֵי־זֶה מְקַשֵּׁר חָכְמָה תַּתָּאָה עִם חָכְמָה עִלָּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

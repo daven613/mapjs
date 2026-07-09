@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 213,
+ "chunk": "213_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַמֵּם שֶׁל מִצַּר תִּצְּרֵנִי",
+   "target_he": "הַמֵּ\"ם הַנַּ\"ל",
+   "proof": "וְהַמֵּם שֶׁל מִצַּר תִּצְּרֵנִי הוּא בְּחִינַת הַמֵּ\"ם הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמֵּם שֶׁל מִצַּר תִּצְּרֵנִי",
+   "target_he": "הַסָּמֶ\"ךְ־מֵ\"ם",
+   "proof": "בְּחִינַת הַסָּמֶ\"ךְ־מֵ\"ם הַמְשׁוֹטֵט סְבִיב הַמִּכְסֶה וְהַמִּסְתָּר הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוֹצֵא מָקוֹם לִשְׁלֹט",
+   "target_he": "כֹּחַ מִזֶּה הַשֵּׁם",
+   "proof": "וְאִם חַס וְשָׁלוֹם מוֹצֵא מָקוֹם לִשְׁלֹט, אֲזַי מְקַבֵּל יוֹתֵר כֹּחַ מִזֶּה הַשֵּׁם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִצְטָרֵף הַמֵּ\"ם לְהַשֵּׁם סא\"ל",
+   "target_he": "סַמָּאֵל",
+   "proof": "כִּי נִצְטָרֵף הַמֵּ\"ם לְהַשֵּׁם סא\"ל הַנַּ\"ל, וְנַעֲשֶׂה צֵרוּף שְׁמוֹ \"סַמָּאֵל\"",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

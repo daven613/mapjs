@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 61,
+ "chunk": "61_8_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "רוּחָא דְּקִיּוּמָא",
+   "target_he": "רוּחַ חָכְמָה",
+   "proof": "דְּלֵית רוּחֵהּ רוּחָא דְּקִיּוּמָא, הַיְנוּ רוּחַ חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לָא הֲוָה מְהֵימָנָא",
+   "target_he": "אֱמוּנַת חֲכָמִים",
+   "proof": "וְלָא הֲוָה מְהֵימָנָא, הַיְנוּ אֱמוּנַת חֲכָמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנַת חֲכָמִים",
+   "target_he": "רוּחַ חָכְמָה",
+   "proof": "כִּי עַל־יְדֵי שֶׁאֵין בּוֹ אֱמוּנַת חֲכָמִים, אֵין בּוֹ רוּחַ חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוֹתָרוֹת",
+   "target_he": "רוּחַ חָכְמָה",
+   "proof": "אֵין בּוֹ רוּחַ חָכְמָה, כִּי נִדּוֹן בְּמוֹתָרוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְגַלֶּה סוֹד",
+   "target_he": "בִּטּוּל כְּתַב יָדֵנוּ",
+   "proof": "מְגַלֶּה סוֹד, זֶה בְּחִינַת בִּטּוּל כְּתַב יָדֵנוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סְמִיכָה",
+   "target_he": "אוֹר הַשֵּׂכֶל",
+   "proof": "כִּי הָאוֹתִיּוֹת צְרִיכוֹת לְקַבֵּל אוֹר הַשֵּׂכֶל מִידֵי הַסְּמִיכָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בִּטּוּל כְּתַב יָדֵנוּ",
+   "target_he": "עַל כַּפַּיִם כִּסָּה אוֹר",
+   "proof": "בִּבְחִינַת (איוב ל״ו:ל״ב): עַל כַּפַּיִם כִּסָּה אוֹר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פְּגַם אֱמוּנַת חֲכָמִים",
+   "target_he": "הוֹלֵךְ רָכִיל",
+   "proof": "וְעַל־יְדֵי פְּגַם אֱמוּנַת חֲכָמִים, שֶׁהוּא בְּחִינַת הוֹלֵךְ רָכִיל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנַת חֲכָמִים",
+   "target_he": "מְגַלֶּה סוֹד",
+   "proof": "וְעַל־יְדֵי פְּגַם אֱמוּנַת חֲכָמִים, שֶׁהוּא בְּחִינַת הוֹלֵךְ רָכִיל, עַל יְדֵי זֶה מְגַלֶּה סוֹד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְגַלֶּה סוֹד",
+   "target_he": "אוֹר הַשֵּׂכֶל",
+   "proof": "עַל יְדֵי זֶה מְגַלֶּה סוֹד, שֶׁנִּתְגַּלֶּה וְנִסְתַּלֵּק אוֹר הַשֵּׂכֶל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹר הַשֵּׂכֶל",
+   "target_he": "בְּסוֹד עַמִּי לֹא יִהְיוּ",
+   "proof": "וְעַל־יְדֵי־זֶה – בְּסוֹד עַמִּי לֹא יִהְיוּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנַת חֲכָמִים",
+   "target_he": "מְכַסֶּה דָּבָר",
+   "proof": "עַל־יְדֵי בְּחִינַת אֱמוּנַת חֲכָמִים, עַל־יְדֵי־זֶה, מְכַסֶּה דָּבָר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְכַסֶּה דָּבָר",
+   "target_he": "עַל כַּפַּיִם כִּסָּה אוֹר",
+   "proof": "בְּחִינַת: עַל כַּפַּיִם כִּסָּה אוֹר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

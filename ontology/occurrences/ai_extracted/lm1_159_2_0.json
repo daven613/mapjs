@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 159,
+ "chunk": "159_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שכינה",
+   "target_he": "אמצעי",
+   "proof": "וּכְשֶׁהַשְּׁכִינָה שֶׁהִיא בְּחִינַת אֶמְצָעִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קבלת התורה על ידי השכינה",
+   "target_he": "כח האש",
+   "proof": "וּכְשֶׁהַשְּׁכִינָה שֶׁהִיא בְּחִינַת אֶמְצָעִי, מְקַבֶּלֶת הַתּוֹרָה, אֲזַי עוֹלֶה כֹּחַ הָאֵשׁ לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כח האש",
+   "target_he": "שפע",
+   "proof": "אֲזַי עוֹלֶה כֹּחַ הָאֵשׁ לְמַעְלָה, וְנִמְשָׁךְ מִמֶּנּוּ שֶׁפַע לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שפע הנמשך למעלה",
+   "target_he": "שפע רוחניות",
+   "proof": "וְזֶה הוּא שֶׁפַע רוּחָנִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כח המים",
+   "target_he": "שפע גשמיות",
+   "proof": "וְכֹחַ הַמַּיִם נַעֲשֶׂה מִזֶּה שֶׁפַע גַּשְׁמִיּוּת, וְיּוֹרֵד לְזֶה הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַנְהִיג",
+   "target_he": "רוּחַ־נְבוּאָה",
+   "proof": "כִּי כָל מַנְהִיג וּמַנְהִיג יֵשׁ לוֹ בְּחִינַת רוּחַ־נְבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַנְהִיג",
+   "target_he": "רוּחַ אַחֶרֶת",
+   "proof": "אַף־עַל־פִּי־כֵן בְּהֶכְרֵחַ שֶׁיִּהְיֶה לְהַמַּנְהִיג בְּחִינַת (במדבר יד): רוּחַ אַחֶרֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוּחַ אַחֶרֶת",
+   "target_he": "מַנְהִיג",
+   "proof": "שֶׁעַל־יְדֵי־זֶה זָכָה לִהְיוֹת מַנְהִיג",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַנְהִיג",
+   "target_he": "אִישׁ אֲשֶׁר רוּחַ בּוֹ",
+   "proof": "כִּי הַמַּנְהִיג הוּא בְּחִינַת (במדבר כז): אִישׁ אֲשֶׁר רוּחַ בּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוּחַ אַחֶרֶת",
+   "target_he": "מַנְהִיג לְיִשְׂרָאֵל",
+   "proof": "אֲשֶׁר מֵחֲמַת זֶה נַעֲשָׂה הוּא דַּיְקָא מַנְהִיג לְיִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

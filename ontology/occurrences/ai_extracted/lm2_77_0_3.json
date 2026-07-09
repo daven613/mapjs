@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 77,
+ "chunk": "77_0_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מלכות",
+   "target_he": "יראה",
+   "proof": "אֲזַי הוּא מַכְנִיס אֶת בְּחִינַת הַמַּלְכוּת, שֶׁהִיא בְּחִינַת הַיִּרְאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אכילה בקדושה",
+   "target_he": "יראה",
+   "proof": "כְּשֶׁאוֹכֵל בִּקְדֻשָּׁה וּמַמְשִׁיךְ עַל עַצְמוֹ הַיִּרְאָה הַבָּאָה לוֹ בִּשְׁעַת אֲכִילָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת המלכות",
+   "target_he": "פה",
+   "proof": "אֲזַי הוּא מַכְנִיס אֶת בְּחִינַת הַמַּלְכוּת ... לְתוֹךְ הַפֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פה",
+   "target_he": "קומת אדם",
+   "proof": "וַאֲזַי נַעֲשֶׂה מֵהַפֶּה בְּחִינַת קוֹמַת אָדָם, בִּבְחִינַת: מִי שָׂם פֶּה לָאָדָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אכילה בקדושה וביראת שמים",
+   "target_he": "יראה",
+   "proof": "כִּי כְּשֶׁאֵינוֹ אוֹכֵל בִּקְדֻשָּׁה וּבְיִרְאַת־שָׁמַיִם, אֲזַי הַיִּרְאָה הַבָּאָה בִּשְׁעַת אֲכִילָה כַּנַּ\"ל, הִיא עוֹמֶדֶת מֵרָחוֹק וְאֵינָהּ נִכְנֶסֶת בּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אכילה בקדושה וביראה",
+   "target_he": "בחינת היראה מלכות",
+   "proof": "אֲבָל כְּשֶׁאוֹכֵל בִּקְדֻשָּׁה וּבְיִרְאָה, דְּהַיְנוּ שֶׁמַּמְשִׁיךְ עַל עַצְמוֹ הַיִּרְאָה קְדוֹשָׁה הַנַּ\"ל, אֲזַי נִכְנָס בְּחִינַת הַיִּרְאָה מַלְכוּת בְּפִיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פה",
+   "target_he": "קומת אדם",
+   "proof": "וְנַעֲשֶׂה מֵהַפֶּה בְּחִינַת קוֹמַת אָדָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

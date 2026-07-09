@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 37,
+ "chunk": "37_4_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אָבוֹת הָעוֹלָם",
+   "target_he": "הַנִּצָּנִים",
+   "proof": "הַנִּצָּנִים נִרְאוּ בָאָרֶץ – אִלֵּין אֲבוֹת הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קָלָא דְּיַנּוּקָא דְּרַבְיָא דְּלָעֵי בְּאוֹרַיְתָא",
+   "target_he": "קוֹל הַתּוֹר",
+   "proof": "וְקוֹל הַתּוֹר נִשְׁמַע – דָּא קָלָא דְּיַנּוּקָא דְּרַבְיָא דְּלָעֵי בְּאוֹרַיְתָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קָלָא דְּיַנּוּקָא דְּרַבְיָא",
+   "target_he": "הָאָבוֹת נִתְגַּלּוּ בָּעוֹלָם לְהָגֵן",
+   "proof": "עַל־יְדֵי קָלָא דְּיַנּוּקָא דְּרַבְיָא, נִתְגַּלּוּ הָאָבוֹת בָּעוֹלָם לְהָגֵן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

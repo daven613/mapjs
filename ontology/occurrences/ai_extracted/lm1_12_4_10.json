@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_4_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "צַדִּיק עֶלְיוֹן",
+   "target_he": "יַעֲלוּ שָׁמַיִם",
+   "proof": "צַדִּיק עֶלְיוֹן – זֶה בְּחִינַת יַעֲלוּ שָׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יֵרְדוּ תְהוֹמוֹת",
+   "target_he": "צַדִּיק תַּחְתּוֹן",
+   "proof": "יֵרְדוּ תְהוֹמוֹת – זֶה בְּחִינַת צַדִּיק תַּחְתּוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צַדִּיק תַּחְתּוֹן",
+   "target_he": "נְשִׁיקִין",
+   "proof": "זֶה בְּחִינַת נְשִׁיקִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְשִׁיקִין",
+   "target_he": "נֹטְפוֹת מוֹר עֹבֵר",
+   "proof": "בְּחִינַת: נֹטְפוֹת מוֹר עֹבֵר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָכְמָה",
+   "target_he": "נְשִׁיקִין",
+   "proof": "וְעַל־יְדֵי הַחָכְמָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

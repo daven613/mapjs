@@ -1,0 +1,109 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_8_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלִּין מֹחִין",
+   "target_he": "שִׁבְעָה רוֹעִים",
+   "proof": "עַל־יְדֵי תְּפִלִּין מֹחִין שֶׁהֵם בִּבְחִינַת שִׁבְעָה רוֹעִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלִּין מֹחִין",
+   "target_he": "שִׁבְעָה מְשִׁיבֵי טַעַם",
+   "proof": "עַל יָדָם נַעֲשִׂין שִׁבְעָה מְשִׁיבֵי טַעַם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׁבְעָה מְשִׁיבֵי טַעַם",
+   "target_he": "דִּבּוּרִים כְּשֵׁרִים",
+   "proof": "הַיְנוּ בְּחִינַת דִּבּוּרִים כְּשֵׁרִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּרִים כְּשֵׁרִים",
+   "target_he": "הַנְּשָׁמוֹת שֶׁנָּפְלוּ",
+   "proof": "שֶׁבָּהֶם מְשִׁיבִין הַנְּשָׁמוֹת שֶׁנָּפְלוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַנְּשָׁמוֹת שֶׁנָּפְלוּ",
+   "target_he": "שֶׁבַע יִפּוֹל צַדִּיק וְקָם",
+   "proof": "שֶׁהֵם בְּחִינַת (שם כד): שֶׁבַע יִפּוֹל צַדִּיק וְקָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֶׁבַע יִפּוֹל צַדִּיק וְקָם",
+   "target_he": "אִמְרוֹת ה' אֲמָרוֹת טְהוֹרוֹת מְזֻקָּק שִׁבְעָתָיִם",
+   "proof": "וְזֶהוּ בְּחִינַת (תהילים י״ב:ז׳): אִמְרוֹת ה' אֲמָרוֹת טְהוֹרוֹת מְזֻקָּק שִׁבְעָתָיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זִכּוּךְ הַמֹּחִין",
+   "target_he": "אֲמָרוֹת טְהוֹרוֹת",
+   "proof": "הַיְנוּ בְּחִינַת הָאֲמָרוֹת טְהוֹרוֹת שֶׁנַּעֲשִׂין עַל־יְדֵי זִכּוּךְ הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֲמָרוֹת טְהוֹרוֹת",
+   "target_he": "תְּפִלִּין",
+   "proof": "בְּחִינַת תְּפִלִּין שֶׁהֵם בְּחִינַת שִׁבְעָה רוֹעִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלִּין",
+   "target_he": "שִׁבְעָה רוֹעִים",
+   "proof": "שֶׁהֵם בְּחִינַת שִׁבְעָה רוֹעִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלִּין",
+   "target_he": "שִׁבְעָה מְשִׁיבֵי טַעַם",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נַעֲשֶׂה שִׁבְעָה מְשִׁיבֵי טַעַם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שִׁבְעָה מְשִׁיבֵי טַעַם",
+   "target_he": "מְזֻקָּק שִׁבְעָתָיִם",
+   "proof": "וְזֶהוּ: מְזֻקָּק שִׁבְעָתָיִם, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

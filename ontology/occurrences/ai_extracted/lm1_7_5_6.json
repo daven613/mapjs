@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 7,
+ "chunk": "7_5_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עַל שְׁכֶם שְׁנֵיהֶם",
+   "target_he": "צִיצִית",
+   "proof": "עַל שְׁכֶם שְׁנֵיהֶם זֶה בְּחִינַת צִיצִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֲלֹא אַחֶיךָ רֹעִים בִּשְׁכֶם",
+   "target_he": "צִיצִית",
+   "proof": "הַיְנוּ בְּחִינַת צִיצִית כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צִיצִית",
+   "target_he": "נִאוּף",
+   "proof": "כִּי צִיצִית שְׁמִירָה לְנִאוּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צִיצִית",
+   "target_he": "שְׁמִירַת הַבְּרִית",
+   "proof": "שֶׁהִיא שְׁמִירָה לְנִאוּף, וְהוּא בְּחִינַת שְׁמִירַת הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁמִירַת הַבְּרִית",
+   "target_he": "יוֹסֵף",
+   "proof": "שֶׁהִיא בְּחִינַת יוֹסֵף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֲלוֹא אַחֶיךָ רֹעִים בִּשְׁכֶם",
+   "target_he": "יוֹסֵף",
+   "proof": "שֶׁהוּא בְּחִינָה שֶׁלְּךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֵצָה",
+   "target_he": "טִפֵּי הַשֵּׂכֶל שֶׁל הַצַּדִּיק",
+   "proof": "כִּי הוּא מְקַבֵּל טִפֵּי הַשֵּׂכֶל שֶׁל הַצַּדִּיק עַל־יְדֵי עֵצָה שֶׁמְּקַבֵּל מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

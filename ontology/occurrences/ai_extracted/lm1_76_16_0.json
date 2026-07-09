@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 76,
+ "chunk": "76_16_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מוחין דקטנות",
+   "target_he": "אלקים",
+   "proof": "שֶׁהֵם בְּחִינַת אֱלֹקִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אברהם",
+   "target_he": "אהבה",
+   "proof": "שֶׁהוּא בְּחִינַת אַהֲבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת אברהם",
+   "target_he": "מוחין דקטנות",
+   "proof": "זֶה זוֹכִין, עַל־יְדֵי בְּחִינַת אַבְרָהָם, שֶׁהוּא בְּחִינַת אַהֲבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תשובה מאהבה",
+   "target_he": "מוחין דגדלות",
+   "proof": "כִּי עַל־יְדֵי תְּשׁוּבָה מֵאַהֲבָה, זוֹכִין לְמֹחִין דְּגַדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוחין דגדלות",
+   "target_he": "חסדים ורחמים",
+   "proof": "שֶׁהֵם בְּחִינַת חֲסָדִים וְרַחֲמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת אברהם",
+   "target_he": "מוחין דגדלות",
+   "proof": "שֶׁעַל־יְדֵי בְּחִינַת אַבְרָהָם, מְנַסִּין וּמְרִימִין אֶת הַמֹּחִין דְּקַטְנוּת... וְזוֹכִין לְמֹחִין דְּגַדְלוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

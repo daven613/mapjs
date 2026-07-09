@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 67,
+ "chunk": "67_0_20",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רחל מבכה על בניה",
+   "target_he": "עולמתא שפירתא דלית לה עינין",
+   "proof": "רָחֵל מְבַכָּה עַל בָּנֶיהָ – זֶה בְּחִינַת עוּלִמְתָּא שַׁפִּירְתָּא דְּלֵית לָהּ עֵינִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עיקר ההולדה של הצדיק",
+   "target_he": "יוסף",
+   "proof": "עִקָּר הַהוֹלָדָה שֶׁל הַצַּדִּיק, שֶׁהוּא בְּחִינַת יוֹסֵף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוסף",
+   "target_he": "הפאר והיופי של העולם",
+   "proof": "בְּחִינַת הַפְּאֵר וְהַיֹּפִי שֶׁל הָעוֹלָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רחל",
+   "target_he": "עיקר הולדת הצדיק",
+   "proof": "עִקָּר הַהוֹלָדָה שֶׁל הַצַּדִּיק... הוּא מֵרָחֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רחל",
+   "target_he": "רחל מבכה על בניה",
+   "proof": "הִיא בִּבְחִינַת רָחֵל מְבַכָּה עַל בָּנֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רחל",
+   "target_he": "עולמתא שפירתא דלית לה עינין",
+   "proof": "הִיא בְּחִינַת עוּלִמְתָּא שַׁפִּירְתָּא דְּלֵית לָהּ עֵינִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בכי",
+   "target_he": "מאור עינים",
+   "proof": "כִּי מְאוֹר עֵינַיִם נִסְתַּלְּקִין עַל־יְדֵי הַבְּכִי כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צדיק",
+   "target_he": "הפאר והיופי",
+   "proof": "שֶׁנִּתְעַלֵּם הַצַּדִּיק, שֶׁהוּא הַפְּאֵר וְהַיֹּפִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הפאר והיופי",
+   "target_he": "יוסף",
+   "proof": "בְּחִינַת יוֹסֵף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוסף",
+   "target_he": "ויוסף היה יפה תואר וכו'",
+   "proof": "בְּחִינַת: וְיוֹסֵף הָיָה יְפֵה־תֹאַר וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

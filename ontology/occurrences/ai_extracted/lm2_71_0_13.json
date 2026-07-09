@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 71,
+ "chunk": "71_0_13",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מוחין של חוץ־לארץ",
+   "target_he": "חובלים",
+   "proof": "שֶׁהַמֹּחִין שֶׁל חוּץ־לָאָרֶץ, שֶׁהֵם בְּחִינַת חוֹבְלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוחין של ארץ־ישראל",
+   "target_he": "נועם",
+   "proof": "הֵם נוֹפְלִים בְּמֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל שֶׁהֵם בְּחִינַת נֹעַם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נפילת המוחין של חוץ־לארץ במוחין של ארץ־ישראל",
+   "target_he": "התתקנות",
+   "proof": "הֵם נוֹפְלִים בְּמֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל שֶׁהֵם בְּחִינַת נֹעַם, כְּדֵי לְהִתְתַּקֵּן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פגם הרבה",
+   "target_he": "התתקנות",
+   "proof": "כְּשֶׁפּוֹגְמִים הַרְבֵּה, חַס וְשָׁלוֹם, אֲזַי אֵינָם יְכוֹלִין לְהִתְתַּקֵּן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פגם",
+   "target_he": "מוחין של ארץ־ישראל",
+   "proof": "גּוֹרְמִים פְּגָם גַּם לְהַמֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוחין הפגומים של חוץ־לארץ",
+   "target_he": "השוואת עצמן של מוחין ארץ־ישראל",
+   "proof": "וַאֲזַי גַּם הַמֹּחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל אֵינָם יְכוֹלִים לְהַשְׁווֹת עַצְמָן, כִּי נִפְגְּמוּ, חַס וְשָׁלוֹם, עַל־יְדֵי הַמֹּחִין הַפְּגוּמִים שֶׁל חוּץ־לָאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

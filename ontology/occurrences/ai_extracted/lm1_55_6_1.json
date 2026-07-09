@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 55,
+ "chunk": "55_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶז",
+   "target_he": "קוֹל כְּסִיל בְּרֹב דְּבָרִים",
+   "proof": "אֶרֶז זֶה בְּחִינַת: קוֹל כְּסִיל בְּרֹב דְּבָרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַהַנְהָגוֹת וֶאֱמוּנוֹת כּוֹזְבוֹת",
+   "target_he": "דַּרְכֵי הָאֱמוֹרִי",
+   "proof": "בְּרֹב הַהַנְהָגוֹת וֶאֱמוּנוֹת כּוֹזְבוֹת, שֶׁהֵם בְּחִינַת דַּרְכֵי הָאֱמוֹרִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶז",
+   "target_he": "וְאָנֹכִי הִשְׁמַדְתִּי אֶת הָאֱמוֹרִי אֲשֶׁר כְּגֹבַהּ אֲרָזִים גָּבְהוֹ",
+   "proof": "וְזֶהוּ בְּחִינַת אֶרֶז, בְּחִינַת (עמוס ב): וְאָנֹכִי הִשְׁמַדְתִּי אֶת הָאֱמוֹרִי אֲשֶׁר כְּגֹבַהּ אֲרָזִים גָּבְהוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַגְּבוֹהֵי קוֹמָה שֶׁהֵם כְּסִילִים",
+   "target_he": "דַּרְכֵי אֱמוֹרִי",
+   "proof": "וְזֶה בְּחִינַת דַּרְכֵי אֱמוֹרִי, שֶׁאֵין לָהֶם שׁוּם שֵׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גֹּבַהּ קוֹמָה",
+   "target_he": "שְׁטוּת (הַגְּבוֹהֵי קוֹמָה הֵם שׁוֹטִים)",
+   "proof": "וּמֵחֲמַת זֶה, הַגְּבוֹהֵי קוֹמָה הֵם שׁוֹטִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֵׂכֶל",
+   "target_he": "אֱמוּנוֹת כָּזְבִיּוֹת",
+   "proof": "שֶׁאֵין לָהֶם שׁוּם שֵׂכֶל... בִּשְׁבִיל זֶה, הֵם מַאֲמִינִים אֱמוּנוֹת רַבּוֹת כָּזְבִּיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

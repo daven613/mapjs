@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_9_19",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "זָהָב",
+   "target_he": "זִוּוּג",
+   "proof": "כִּי זָהָב הוּא בְּחִינוֹת זִוּוּג",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְפָשׁוֹת",
+   "target_he": "נְקֻדּוֹת",
+   "proof": "שֶׁהֵם בְּחִינוֹת נְקֻדּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צָפוֹן",
+   "target_he": "סִטְרָא דִּשְׂמָאלָא",
+   "proof": "וְאִתְעָרוּתָא דְּזִוּוּגָא מִסִּטְרָא דִּשְׂמָאלָא, שֶׁהוּא צָפוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְקֻדּוֹת הַכֶּסֶף",
+   "target_he": "זִוּוּג וְהִצְטָרְפוּת הָאוֹתִיּוֹת",
+   "proof": "כִּי זִוּוּגָן וְהִצְטָרְפוּתָן שֶׁל הָאוֹתִיּוֹת הִיא עַל־יְדֵי הַנְּקֻדּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כִּסּוּפִין וְהִשְׁתּוֹקְקוּת",
+   "target_he": "נְקֻדּוֹת",
+   "proof": "שֶׁנַּעֲשִׂים מֵהַכִּסּוּפִין וְהַהִשְׁתּוֹקְקוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כִּסּוּפִין וְהִשְׁתּוֹקְקוּת",
+   "target_he": "נְפָשׁוֹת",
+   "proof": "שֶׁעַל יָדָם נִתְהַוִּין הַנְּפָשׁוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

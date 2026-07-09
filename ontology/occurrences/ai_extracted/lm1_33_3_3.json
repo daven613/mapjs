@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 33,
+ "chunk": "33_3_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "יִצְרוֹ הָרָע",
+   "target_he": "הַיְמֵי רַע",
+   "proof": "מִי שֶׁכּוֹפֶה אֶת יִצְרוֹ הָרָע, הַיְנוּ הַיְמֵי רַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַיְמֵי רַע",
+   "target_he": "הַמִּדּוֹת רָעוֹת",
+   "proof": "הַיְנוּ הַיְמֵי רַע, הַיְנוּ הַמִּדּוֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַטּוֹב",
+   "target_he": "אוֹתִיּוֹת הַתּוֹרָה",
+   "proof": "הָרָע שֶׁשּׁוֹכֵן עַל הַטּוֹב, הַיְנוּ אוֹתִיּוֹת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כּוֹפֶה אֶת יִצְרוֹ הָרָע",
+   "target_he": "הָרָע נִתְבַּלְבֵּל",
+   "proof": "מִי שֶׁכּוֹפֶה אֶת יִצְרוֹ הָרָע... אֲזַי הָרָע נִתְבַּלְבֵּל לְגַמְרֵי נֶגֶד יְמֵי הַטּוֹב שֶׁבָּהֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרָע נִתְבַּלְבֵּל",
+   "target_he": "אוֹתִיּוֹת בּוֹלְטוֹת וּמְאִירִים",
+   "proof": "אֲזַי הָרָע נִתְבַּלְבֵּל לְגַמְרֵי... אֲזַי אוֹתִיּוֹת בּוֹלְטוֹת וְנִתְרָאִים וּמְאִירִים בְּיוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִתְבַּטֵּל הָרָע",
+   "target_he": "אוֹר רַב מִלְּמַעְלָה",
+   "proof": "וְעַכְשָׁו שֶׁנִּתְבַּטֵּל הָרָע, וְנִשְׁאָרִין אוֹתִיּוֹת הַתּוֹרָה לְבַד, אֲזַי מְקַבְּלִין אוֹר רַב מִלְּמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כּוֹפֶה אֶת יְמֵי רַע",
+   "target_he": "הָרָע נִתְבַּטֵּל וְנוֹפֵל",
+   "proof": "הַיְנוּ שֶׁכּוֹפֶה אֶת יְמֵי רַע, כְּשֶׁהוּא מְדַבֵּר עִם הָעַכּוּ\"ם אוֹ שֶׁרוֹאֶה מִדּוֹתֵיהֶם, אֲזַי תֵּכֶף הָרָע שֶׁשּׁוֹכֵן עַל הַטּוֹב... נִתְבַּטֵּל וְנוֹפֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹתִיּוֹת הַתּוֹרָה בּוֹלְטִין",
+   "target_he": "יוֹדֵעַ הַתּוֹרָה שֶׁבְּאוֹתוֹ הַדָּבָר",
+   "proof": "וְאוֹתִיּוֹת הַתּוֹרָה בּוֹלְטִין, אֲזַי הוּא יוֹדֵעַ הַתּוֹרָה שֶׁבְּאוֹתוֹ הַדָּבָר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

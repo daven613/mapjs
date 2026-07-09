@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 53,
+ "chunk": "53_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "הולדה",
+   "proof": "כִּי עִקַּר הוֹלָדָה עַל־יְדֵי הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דעת",
+   "target_he": "וַיֵּדַע אָדָם",
+   "proof": "בִּבְחִינַת: וַיֵּדַע אָדָם וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת בפועל",
+   "target_he": "הולדה",
+   "proof": "וְקָטָן אֵינוֹ מוֹלִיד... עֲדַיִן הַדַּעַת בְּכֹחַ וְלֹא בְּפֹעַל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עִקַּר הַדַּעַת",
+   "target_he": "שֶׁיִּשְׁתַּמֵּשׁ בְּדַעְתּוֹ",
+   "proof": "וְעִקַּר הַדַּעַת, הַיְנוּ שֶׁיִּשְׁתַּמֵּשׁ בְּדַעְתּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שֶׁיִּשְׁתַּמֵּשׁ בְּדַעְתּוֹ",
+   "target_he": "שֶׁיּוֹצִיא אֶת שִׂכְלוֹ מִכֹּחַ אֶל הַפֹּעַל",
+   "proof": "הַיְנוּ שֶׁיּוֹצִיא אֶת שִׂכְלוֹ מִכֹּחַ אֶל הַפֹּעַל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

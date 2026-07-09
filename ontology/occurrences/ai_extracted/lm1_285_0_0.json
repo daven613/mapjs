@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 285,
+ "chunk": "285_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יִמָנַע וְלֹא יִתְקָרֵב אֵלָיו וְיִהְיֶה רָחוֹק מִמֶּנּוּ",
+   "target_he": "לַיְלָה וְחֹשֶׁךְ",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת לַיְלָה וְחֹשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֵת הַהִתְרַחֲקוּת",
+   "target_he": "לַיְלָה",
+   "proof": "הַיְנוּ בְּעֵת הַהִתְרַחֲקוּת, שֶׁהִיא בְּחִינַת לַיְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "סַחְרָהּ",
+   "target_he": "הַתּוֹרָה שֶׁל הַצַּדִּיק",
+   "proof": "כִּי טוֹב סַחְרָהּ, שֶׁהוּא הַתּוֹרָה שֶׁל הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טוֹעֲמִין טַעַם הַתּוֹרָה שֶׁל הַצַּדִּיק הָאֱמֶת",
+   "target_he": "לֹא יִכְבֶּה בַּלַּיְלָה נֵרָהּ",
+   "proof": "הַיְנוּ תֵּכֶף כְּשֶׁטּוֹעֲמִין טַעַם הַתּוֹרָה שֶׁל הַצַּדִּיק הָאֱמֶת, שׁוּב לֹא יִכְבֶּה בַּלַּיְלָה נֵרָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

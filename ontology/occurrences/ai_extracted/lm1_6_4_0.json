@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 6,
+ "chunk": "6_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אם אסק שמים שם אתה",
+   "target_he": "עייל",
+   "proof": "וְזֶה בְּחִינַת (תהילים קל״ט:ח׳): אִם אֶסַּק שָׁמַיִם שָׁם אָתָּה – בְּחִינַת עַיֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אם אסק שמים שם אתה",
+   "target_he": "בקי ברצוא",
+   "proof": "אִם אֶסַּק שָׁמַיִם שָׁם אָתָּה – בְּחִינַת עַיֵל, בְּחִינַת בָּקִי בְּרָצוֹא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ואציעה שאול הנך",
+   "target_he": "ונפיק",
+   "proof": "וְאַצִּיעָה שְׁאוֹל הִנֶּךּ – בְּחִינַת וְנָפִיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ואציעה שאול הנך",
+   "target_he": "בקי בשוב",
+   "proof": "וְאַצִּיעָה שְׁאוֹל הִנֶּךּ – בְּחִינַת וְנָפִיק, בְּחִינַת בָּקִי בְּשׁוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אני לדודי",
+   "target_he": "עייל",
+   "proof": "אֲנִי לְדוֹדִי – זֶה בְּחִינַת עַיֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דודי לי",
+   "target_he": "ונפיק",
+   "proof": "וְדוֹדִי לִי – זֶה בְּחִינַת וְנָפִיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דרכיך",
+   "target_he": "עייל ונפיק",
+   "proof": "דְּרָכֶיךָ – לְשׁוֹן רַבִּים, הַיְנוּ עַיֵל וְנָפִיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שני בקיאות (בקי ברצוא ובקי בשוב)",
+   "target_he": "כבוד ה'",
+   "proof": "וּכְשֶׁיֵּשׁ לוֹ אֵלּוּ הַשְּׁנֵי בְּקִיאוּת הַנַּ\"ל, אֲזַי הוּא הוֹלֵךְ בְּדַרְכֵי הַתְּשׁוּבָה וְזוֹכֶה לִכְבוֹד ה'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כבוד",
+   "target_he": "כתר",
+   "proof": "הַיְנוּ שֶׁזּוֹכֶה לְכֶּתֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כף",
+   "target_he": "כבוד",
+   "proof": "כִּי לֵית כָּבוֹד בְּלֹא כָּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

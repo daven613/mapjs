@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 11,
+ "chunk": "11_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יְבוּל הָאָרֶץ",
+   "target_he": "תְּפִלָּה",
+   "proof": "כִּי כָל יְבוּל הָאָרֶץ צְרִיכִין לִתֵּן כֹּחַ וְסִיּוּעַ בְּתוֹךְ הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְבוּל הָאָרֶץ",
+   "target_he": "קְלָלָה (וְהָאֲדָמָה לֹא תִתֵּן אֶת יְבוּלָהּ)",
+   "proof": "וּכְשֶׁיֵּשׁ פְּגָם וְעִכּוּב עַל זֶה, אֲזַי נֶאֱמַר: וְהָאֲדָמָה לֹא תִתֵּן אֶת יְבוּלָהּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יְבוּל הָאָרֶץ",
+   "target_he": "כָּל מַה שֶּׁסָּמוּךְ אֶל הָאָדָם (אֲכִילָתוֹ וּשְׁתִיָּתוֹ)",
+   "proof": "נוֹתְנִים גַם־כֵּן יְבוּל הָאָרֶץ סִיּוּעַ בִּתְפִלָּתוֹ, דְּהַיְנוּ כָּל מַה שֶּׁסָּמוּךְ אֶל הָאָדָם, כְּגוֹן אֲכִילָתוֹ וּשְׁתִיָּתוֹ וְכַיּוֹצֵא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲשָׂבִים וִיבוּל הָאֲדָמָה",
+   "target_he": "תְּפִלָּה",
+   "proof": "אֲזַי כָּל הָעֲשָׂבִים וְכָל יְבוּל הָאֲדָמָה נוֹתֵן כֹּחַ בִּתְפִלָּתוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יְבוּל",
+   "target_he": "וַיֵּצֵא יִצְחָק לָשׂוּחַ בַּשָּׂדֶה",
+   "proof": "וְזֶה יְבוּל – רָאשֵׁי־תֵבוֹת: וַיֵּצֵא יִצְחָק לָשׂוּחַ בַּשָּׂדֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְבוּל הַשָּׂדֶה",
+   "target_he": "תְּפִלַּת יִצְחָק",
+   "proof": "שֶׁכָּל יְבוּל הַשָּׂדֶה הִתְפַּלְּלוּ עִמּוֹ, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

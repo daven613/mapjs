@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 15,
+ "chunk": "15_4_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "סִינַי",
+   "target_he": "שִׁפְלוּת",
+   "proof": "וּבְחִינַת סִינַי הוּא בְּחִינַת שִׁפְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׁפְלוּת",
+   "target_he": "תְּפִלָּה שֶׁאֵינָהּ נִמְאֶסֶת",
+   "proof": "שֶׁתְּפִלַּת הַשָּׁפֵל אֵין נִמְאֶסֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה שֶׁהִיא בִּמְסִירַת־נֶפֶשׁ",
+   "target_he": "בִּטּוּל הַגַּשְׁמִיּוּת",
+   "proof": "וְעַל־יְדֵי תְּפִלָּה שֶׁהִיא בִּמְסִירַת־נֶפֶשׁ, שֶׁמְּבַטֵּל כָּל גַּשְׁמִיּוּתוֹ וְאֵין גְּבוּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֵין גְּבוּל",
+   "target_he": "הַתּוֹרָה שֶׁלֶּעָתִיד",
+   "proof": "וּכְשֶׁאֵין גְּבוּל, אֲזַי יָכוֹל לְהַשִּׂיג הַתּוֹרָה שֶׁלֶּעָתִיד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

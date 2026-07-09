@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 81,
+ "chunk": "81_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שיחת חולין",
+   "target_he": "החיאת הצדיק",
+   "proof": "הַיְנוּ לְדַבֵּר עִמּוֹ שִׂיחַת חֻלִּין כְּדֵי לְהַחֲיוֹתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שיחת חולין",
+   "target_he": "דעת",
+   "proof": "וְעַל־יְדֵי־זֶה: וַעֲלִיתֶם אֶת הָהָר – שֶׁיּוּכַל אָז הַצַּדִּיק לְקַשֵּׁר אֶתְכֶם לִבְחִינַת דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הר",
+   "target_he": "דעת",
+   "proof": "לִבְחִינַת דַּעַת, הַנִּקְרָא הַר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 250,
+ "chunk": "250_10_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שְׁרוּיִין בֵּין הָעַכּוּ\"ם וְלָמְדוּ מֵהֶם",
+   "target_he": "נָפְלוּ מֵהַדַּעַת",
+   "proof": "מַה שֶּׁהֵן שְׁרוּיִין בֵּין הָעַכּוּ\"ם וְלָמְדוּ מֵהֶם וְנָפְלוּ מֵהַדַּעַת וְתוֹלִין בְּהַמַּזָּל וְהַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְפִילָה מֵהַדַּעַת",
+   "target_he": "תּוֹלִין בְּהַמַּזָּל וְהַטֶּבַע",
+   "proof": "וְנָפְלוּ מֵהַדַּעַת וְתוֹלִין בְּהַמַּזָּל וְהַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

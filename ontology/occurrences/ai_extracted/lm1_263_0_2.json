@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 263,
+ "chunk": "263_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "נזדעזעו איבריו",
+   "target_he": "חולי הקדחת",
+   "proof": "נִזְדַּעְזְעוּ אֵיבָרָיו, זֶה בְּחִינַת חֳלִי הַקַּדַּחַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אכילת עשב השדה",
+   "target_he": "חולי הקדחת",
+   "proof": "זֶה בְּחִינַת חֳלִי הַקַּדַּחַת, שֶׁבָּא עַל־יְדֵי אֲכִילַת עֵשֶׂב הַשָּׂדֶה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מאכל בהמה",
+   "target_he": "חולי הקדחת",
+   "proof": "עַל־יְדֵי מַאֲכַל בְּהֵמָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חולי הקדחת",
+   "target_he": "פגם הדעת",
+   "proof": "כִּי חֳלִי הַקַּדַּחַת זֶה בְּחִינַת פְּגַם הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חיבור אש ומים",
+   "target_he": "דעת",
+   "proof": "כִּי עִקַּר הַדַּעַת הוּא עַל יְדֵי חִבּוּר אֵשׁ וּמַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זיעה",
+   "target_he": "רפואת החולי",
+   "proof": "כִּי רְפוּאַת הַחֹלִי הַנַּ\"ל הוּא עַל־יְדֵי זֵעָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זיעה",
+   "target_he": "ישוב הדעת",
+   "proof": "וְעַל־יְדֵי־זֶה נִתְיַשְּׁבָה דַּעְתּוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ישוב הדעת",
+   "target_he": "נתרפא מחולי הנ\"ל",
+   "proof": "וְעַל־יְדֵי־זֶה נִתְיַשְּׁבָה דַּעְתּוֹ – הוּא בְּחִינַת מַה שֶּׁנִּתְרַפֵּא מֵחֹלִי הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מה שנתרפא מחולי הנ\"ל",
+   "target_he": "שלמות הדעת",
+   "proof": "שֶׁהוּא שְׁלֵמוּת הַדַּעַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "גרים",
+   "target_he": "פגם המזבח",
+   "proof": "וּלְהַשְׁלִים פְּגַם הַמִּזְבֵּחַ הוּא עַל־יְדֵי גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פגם המזבח",
+   "target_he": "כח העבודה זרה",
+   "proof": "כִּי כָּל הָעֲבוֹדָה זָרָה אֵין לָהֶם כֹּחַ כִּי אִם מִפְּגַם הַמִּזְבֵּחַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ניצוץ הקדוש של המזבח שנפל לשם",
+   "target_he": "כח העבודה זרה",
+   "proof": "כִּי כֹּחָם הוּא מֵהַנִּיצוֹץ הַקָּדוֹשׁ שֶׁל הַמִּזְבֵּחַ דִּקְדֻשָּׁה שֶׁנָּפַל לְשָׁם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גר המשליך אמונתו והולך אחר אמונת ישראל",
+   "target_he": "עבודה זרה",
+   "proof": "עַל־יְדֵי שֶׁכָּל אֶחָד מַשְׁלִיךְ אֱמוּנָתוֹ וְהוֹלֵךְ אַחַר אֱמוּנַת יִשְׂרָאֵל, עַל־יְדֵי־ זֶה מַכְנִיעַ הָעֲבוֹדָה זָרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הכנעת העבודה זרה",
+   "target_he": "שלמות המזבח",
+   "proof": "וַאֲזַי חוֹזְרִין נִיצוֹצֵי חֶלְקֵי הַמִּזְבֵּחַ לִמְקוֹמָם וְנִשְׁלָם הַמִּזְבֵּחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יאכל טרף",
+   "target_he": "שלמות המזבח",
+   "proof": "יֹאכַל טֶרֶף זֶה בְּחִינוֹת שְׁלֵמוּת הַמִּזְבֵּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גרים",
+   "target_he": "שלמות המזבח",
+   "proof": "וְזֶה נַעֲשֶׂה עַל־יְדֵי: וְנִכְסֵי עַמְמַיָּא יֵירָת, הַיְנוּ עַל־יְדֵי גֵּרִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ונכסי עממיא יירת",
+   "target_he": "גרים",
+   "proof": "הַיְנוּ עַל־יְדֵי גֵּרִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

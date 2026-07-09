@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 9,
+ "chunk": "9_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "זיווגא דקודשא בריך הוא ושכינתיה",
+   "proof": "וּבְנֵי־יִשְׂרָאֵל בִּתְפִלָּתָם גּוֹרְמִים זִוּוּגָא דְּקֻדְשָׁא־בְּרִיךְ־הוּא וּשְׁכִינְתֵּהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוכב",
+   "target_he": "קודשא בריך הוא",
+   "proof": "רוֹכֵב – דָּא קֻדְשָׁא־בְּרִיךְ־הוּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ערבות",
+   "target_he": "שכינתיה",
+   "proof": "עֲרָבוֹת – דָּא שְׁכִינְתֵּהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "זיווגו",
+   "proof": "וּלְפִי הַזִּוּוּג שֶׁגּוֹרֵם בִּתְפִלָּתוֹ, כֵּן זוֹכֶה לְזִוּוּגוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

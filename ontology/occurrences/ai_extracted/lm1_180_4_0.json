@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 180,
+ "chunk": "180_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "כְּלָלוּת הַיָּדַיִם (יָד הַגְּדוֹלָה וְיָד הַחֲזָקָה)",
+   "target_he": "יָד הָרָמָה",
+   "proof": "וּכְלָלוּת הַיָּדַיִם הוּא יָד הָרָמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַמָּעוֹת",
+   "target_he": "הַדִּינִין",
+   "proof": "שֶׁבָּא הַמָּעוֹת, שֶׁהוּא הַדִּינִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַיָּדַיִם",
+   "target_he": "שָׁלֹשׁ יָדַיִם שֶׁבַּבִּינָה",
+   "proof": "שֶׁהֵם בְּחִינַת שָׁלֹשׁ יָדַיִם שֶׁבַּבִּינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בֹּא הַמָּעוֹת לְהַיָּדַיִם",
+   "target_he": "הַמְתָּקַת הַדִּינִין בְּשָׁרְשָׁן",
+   "proof": "עַל־יְדֵי שֶׁבָּא הַמָּעוֹת... לְהַיָּדַיִם... נִמְתָּקִין הַדִּינִין בְּשָׁרְשָׁן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שָׁרְשָׁן שֶׁל הַדִּינִין",
+   "target_he": "בִּינָה",
+   "proof": "כִּי שָׁרְשָׁן הוּא בִּינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

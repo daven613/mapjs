@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 102,
+ "chunk": "102_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עַל מֵימַר פֻּמָּךְ",
+   "target_he": "הַתְּפִלָּה",
+   "proof": "וְעַל מֵימַר פֻּמָּךְ, הַיְנוּ הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יִתְּזַן כָּל עַמִּי",
+   "target_he": "יִתְעוֹרֵר הַשֶּׁפַע בָּעוֹלָם",
+   "proof": "יִתְּזַן כָּל עַמִּי, הַיְנוּ שֶׁיִּתְעוֹרֵר הַשֶּׁפַע בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַתְּפִלָּה",
+   "target_he": "הַשֶּׁפַע בָּעוֹלָם",
+   "proof": "וְעַל מֵימַר פֻּמָּךְ, הַיְנוּ הַתְּפִלָּה, יִתְּזַן כָּל עַמִּי, הַיְנוּ שֶׁיִּתְעוֹרֵר הַשֶּׁפַע בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

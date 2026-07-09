@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 37,
+ "chunk": "37_4_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַיּוֹשֵׁב בְּתַעֲנִית",
+   "target_he": "חָסִיד",
+   "proof": "הַיּוֹשֵׁב בְּתַעֲנִית נִקְרָא חָסִיד, שֶׁנֶּאֱמַר: גּוֹמֵל נַפְשׁוֹ אִישׁ חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַתַּעֲנִית",
+   "target_he": "גְּמִילוּת חֲסָדִים לְנַפְשׁוֹ",
+   "proof": "כִּי הַתַּעֲנִית הוּא גְּמִילוּת חֲסָדִים לְנַפְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גְּמִילוּת חֲסָדִים לְנַפְשׁוֹ",
+   "target_he": "תּוֹרָה",
+   "proof": "הַיְנוּ לַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּעֲנִית",
+   "target_he": "דִּין",
+   "proof": "כִּי מְבַטֵּל הַדִּין וְהַחֹשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּעֲנִית",
+   "target_he": "חֹשֶׁךְ",
+   "proof": "כִּי מְבַטֵּל הַדִּין וְהַחֹשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּעֲנִית",
+   "target_he": "חֲסָדִים בָּעוֹלָם",
+   "proof": "וּמַמְשִׁיךְ חֲסָדִים בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

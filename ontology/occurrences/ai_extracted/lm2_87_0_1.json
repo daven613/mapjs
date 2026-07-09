@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 87,
+ "chunk": "87_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דֶּרֶךְ אִשָּׁה מְנָאֶפֶת",
+   "target_he": "דֶּרֶךְ אַחֵר",
+   "proof": "וְיֵשׁ דֶּרֶךְ אַחֵר, בְּחִינַת (משלי ל׳:כ׳): דֶּרֶךְ אִשָּׁה מְנָאֶפֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּגַם שֶׁלֹּא הֵאִיר הַדֶּרֶךְ בַּיָּם",
+   "target_he": "לְאַבֵּד אֶת זִוּוּגוֹ",
+   "proof": "וְלִפְעָמִים מֵחֲמַת זֶה הַפְּגָם יוּכַל לֶאַבֵּד אֶת זִוּוּגוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נָטָה מִזִּוּוּגוֹ",
+   "target_he": "קָשֶׁה לִמְצֹא אֶת זִוּוּגוֹ",
+   "proof": "כִּי מֵאַחַר שֶׁנָּטָה מִזִּוּוּגוֹ, קָשֶׁה לוֹ לִמְצֹא אֶת זִוּוּגוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נָטָה מִמֶּנָּה וְלֹא הֵאִיר בָּהּ",
+   "target_he": "רָצוֹן אַחֵר כְּנֶגְדּוֹ",
+   "proof": "מֵחֲמַת שֶׁנָּטָה מִמֶּנָּה וְלֹא הֵאִיר בָּהּ, מִזֶּה נִתְהַוֶּה שֶׁיֵּשׁ לָהּ רָצוֹן אַחֵר כְּנֶגְדּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֹדֶשׁ אֱלוּל",
+   "target_he": "תִּקּוּן וְהַאָרַת הַדֶּרֶךְ בַּיָּם",
+   "proof": "וְחֹדֶשׁ אֱלוּל שֶׁאָז יְכוֹלִין לְתַקֵּן זֶה וּלְהָאִיר הַדֶּרֶךְ בַּיָּם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן זֶה",
+   "target_he": "מוֹצֵא זִוּוּגוֹ",
+   "proof": "וּכְשֶׁמְּתַקֵּן זֶה, אֲזַי מוֹצֵא זִוּוּגוֹ, וְהִיא אֵינָהּ כְּנֶגְדּוֹ, רַק כִּרְצוֹנוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

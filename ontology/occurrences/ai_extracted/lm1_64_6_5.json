@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_6_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אֲשֶׁר הִתְעַלַּלְתִּי בְּמִצְרַיִם",
+   "target_he": "קְּלִפּוֹת",
+   "proof": "זֶה בְּחִינַת הַקְּלִפּוֹת שֶׁבָּאִים מֵרִבּוּי הָאוֹר מִשְּׁבִירַת כֵּלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִבּוּי הָאוֹר",
+   "target_he": "קְּלִפּוֹת",
+   "proof": "זֶה בְּחִינַת הַקְּלִפּוֹת שֶׁבָּאִים מֵרִבּוּי הָאוֹר מִשְּׁבִירַת כֵּלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת כֵּלִים",
+   "target_he": "קְּלִפּוֹת",
+   "proof": "זֶה בְּחִינַת הַקְּלִפּוֹת שֶׁבָּאִים מֵרִבּוּי הָאוֹר מִשְּׁבִירַת כֵּלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׂחוֹק וְעוֹלֵלוּת",
+   "target_he": "קְּלִפּוֹת",
+   "proof": "הַיְנוּ שֶׁעָשִׂיתִי שְׂחוֹק וְעוֹלֵלוּת בָּעוֹלָם, הַיְנוּ בְּחִינַת הַקְּלִפּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִבּוּי אוֹר",
+   "target_he": "אוֹתִיּוֹת",
+   "proof": "כִּי הֵם בָּאִים מֵרִבּוּי אוֹר, מִשְּׁבִירַת כֵּלִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת כֵּלִים",
+   "target_he": "אוֹתִיּוֹת",
+   "proof": "כִּי הֵם בָּאִים מֵרִבּוּי אוֹר, מִשְּׁבִירַת כֵּלִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִיצוֹצֵי הַקְּדֻשָּׁה וְאוֹתִיּוֹת",
+   "target_he": "הַכָּרַת ה'",
+   "proof": "כִּי שָׁם תּוּכְלוּ לְהַכִּיר אֶת ה', כִּי יֵשׁ שָׁם נִיצוֹצֵי הַקְּדֻשָּׁה וְאוֹתִיּוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׂחוֹק / קְּלִפּוֹת",
+   "target_he": "אֶפִּיקוֹרְסִית הָרִאשׁוֹנָה",
+   "proof": "הַיְנוּ, שֶׁאֲפִלּוּ בְּתוֹךְ בְּחִינַת הַשְּׂחוֹק, בְּחִינַת הַקְּלִפּוֹת, הַיְנוּ בְּחִינַת אֶפִּיקוֹרְסִית הָרִאשׁוֹנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִבּוּי אוֹר",
+   "target_he": "אֶפִּיקוֹרְסִית הָרִאשׁוֹנָה",
+   "proof": "שֶׁבָּא מִבְּחִינַת רִבּוּי אוֹר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

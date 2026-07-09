@@ -1,0 +1,30 @@
+{
+ "book": "lm1",
+ "torah": 3,
+ "chunk": "3_22_0",
+ "model": "claude-fable-5",
+ "extractor": "ai:claude-fable-5",
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עֲשֵׂה לְךָ רַב",
+   "target_he": "תיקון בְּחִינַת מַלְכוּת",
+   "proof": "וְזֶה: עֲשֵׂה לְךָ רַב, הַיְנוּ שֶׁיְּתַקֵּן בְּחִינַת מַלְכוּת",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "equation",
+   "source_he": "קְנֵה לְךָ חָבֵר",
+   "target_he": "קָנֶה",
+   "proof": "וְזֶה עַל־יְדֵי קְנֵה לְךָ חָבֵר, הַיְנוּ עַל־יְדֵי קָנֶה",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קָנֶה",
+   "target_he": "תיקון בְּחִינַת מַלְכוּת",
+   "proof": "שֶׁיְּתַקֵּן בְּחִינַת מַלְכוּת, וְזֶה עַל־יְדֵי קְנֵה לְךָ חָבֵר, הַיְנוּ עַל־יְדֵי קָנֶה",
+   "explicitness": "explicit"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 105,
+ "chunk": "105_21_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "תשובה",
+   "proof": "שֶׁעַל־יְדֵי הַתּוֹרָה זוֹכִין לִתְשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עוונות",
+   "target_he": "חלקי האותיות והצירופים (גירושם ממקומם)",
+   "proof": "כִּי עַל־יְדֵי הָעֲווֹנוֹת נִתְגָּרְשִׁין מִמְּקוֹמָם חֶלְקֵי הָאוֹתִיּוֹת וְהַצֵּרוּפִים שֶׁבְּכָל הָעוֹלָמוֹת כְּפִי שֹׁרֶשׁ נִשְׁמָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גירוש חלקי האותיות והצירופים ממקומם",
+   "target_he": "גלות השכינה",
+   "proof": "וְזֶה בְּחִינַת גָּלוּת הַשְּׁכִינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אותיות וצירופים (שלא במקומם)",
+   "target_he": "דעת",
+   "proof": "כִּי כָל זְמַן שֶׁאֵינָם בִּמְקוֹמָם אֵין הַדַּעַת מְיֻשָּׁב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גלות השכינה",
+   "target_he": "דעת",
+   "proof": "וְעַל־יְדֵי־זֶה אֵין הַדַּעַת מְיֻשָּׁב כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "עוררות רחמים",
+   "proof": "וּמֵחֲמַת זֶה אֵין יָכוֹל לְעוֹרֵר רַחֲמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

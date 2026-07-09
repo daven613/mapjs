@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_11_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "שָׁלוֹם הַכְּלָלִי",
+   "proof": "וְעַל־יְדֵי הַתְּפִלָּה זוֹכֶה לַשָּׁלוֹם הַכְּלָלִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁלוֹם־בַּיִת",
+   "target_he": "שָׁלוֹם בַּעֲצָמָיו",
+   "proof": "עַל־יְדֵי שְׁלוֹם־בַּיִת יְהֵא שָׁלוֹם בַּעֲצָמָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם בַּעֲצָמָיו",
+   "target_he": "תְּפִלָּה",
+   "proof": "וְאַחַר־כָּךְ מְפָרֵשׁ הַפָּסוּק אֵיךְ יִזְכֶּה לִתְפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

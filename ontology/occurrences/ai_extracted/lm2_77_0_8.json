@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 77,
+ "chunk": "77_0_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בִּנְיָמִין",
+   "target_he": "דַּעַת",
+   "proof": "בִּנְיָמִין הוּא בְּחִינַת הַדַּעַת, בְּחִינַת מֹחִין, תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בִּנְיָמִין",
+   "target_he": "מֹחִין",
+   "proof": "בִּנְיָמִין הוּא בְּחִינַת הַדַּעַת, בְּחִינַת מֹחִין, תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בֵּית־הַמִּקְדָּשׁ",
+   "target_he": "דַּעַת",
+   "proof": "וּבֵית־הַמִּקְדָּשׁ הוּא בְּחִינַת הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְהוּדָה",
+   "target_he": "מַלְכוּת",
+   "proof": "יְהוּדָה הוּא בְּחִינַת מַלְכוּת, בְּחִינַת יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְהוּדָה",
+   "target_he": "יִרְאָה",
+   "proof": "יְהוּדָה הוּא בְּחִינַת מַלְכוּת, בְּחִינַת יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רְצוּעָה",
+   "target_he": "רְצוּעָה שֶׁל תְּפִלִּין",
+   "proof": "רְצוּעָה – הַיְנוּ רְצוּעָה הַנַּ\"ל, בְּחִינַת יִרְאָה, בְּחִינַת רְצוּעָה שֶׁל תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רְצוּעָה",
+   "target_he": "יִרְאָה",
+   "proof": "רְצוּעָה – הַיְנוּ רְצוּעָה הַנַּ\"ל, בְּחִינַת יִרְאָה, בְּחִינַת רְצוּעָה שֶׁל תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאָה",
+   "target_he": "מֹחִין",
+   "proof": "הַיְנוּ כִּי הָרְצוּעָה בָּאָה מִבְּחִינַת חֶלְקוֹ שֶׁל יְהוּדָה, מִבְּחִינַת יִרְאָה, וְנִכְנֶסֶת בְּחֶלְקוֹ שֶׁל בִּנְיָמִין, הַיְנוּ בְּתוֹךְ הַתְּפִלִּין מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְצוּעָה",
+   "target_he": "צַעַר",
+   "proof": "כִּי מִזֹּאת הָרְצוּעָה בָּא הַצַּעַר בְּכָל יוֹם לְכָל אֶחָד מִיִּשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

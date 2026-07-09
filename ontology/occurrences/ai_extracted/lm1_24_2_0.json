@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 24,
+ "chunk": "24_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחַת הַמִּצְוָה",
+   "target_he": "הַקְּדֻשָּׁה",
+   "proof": "כִּי עַל יְדֵי שִׂמְחַת הַמִּצְוָה נִשְׁלָם הַקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחַת הַמִּצְוָה",
+   "target_he": "הַחִיּוּת וְהַקְּדֻשָּׁה שֶׁבַּקְּלִיפּוֹת",
+   "proof": "וּמַעֲלָה הַחִיּוּת וְהַקְּדֻשָּׁה שֶׁבַּקְּלִיפּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַעֲלָה הַחִיּוּת וְהַקְּדֻשָּׁה שֶׁבַּקְּלִיפּוֹת",
+   "target_he": "אַחַד־עָשָׂר סַמָּנֵי הַקְּטֹרֶת",
+   "proof": "בִּבְחִינַת אַחַד־עָשָׂר סַמָּנֵי הַקְּטֹרֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַקְּלִפּוֹת",
+   "target_he": "מוֹתָרוֹת",
+   "proof": "כִּי הַקְּלִפּוֹת הֵם בְּחִינַת מוֹתָרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַקְּלִפּוֹת",
+   "target_he": "עַצְבוּת",
+   "proof": "וְהֵם בְּחִינַת עַצְבוּת, בִּבְחִינַת (משלי י״ד:כ״ג): בְּכָל עֶצֶב יִהְיֶה מוֹתָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַקְּלִפּוֹת",
+   "target_he": "תָּקְפָּא דְּדִינָא",
+   "proof": "וְהֵם תָּקְפָּא דְּדִינָא, בִּבְחִינַת (בראשית ו׳:ו׳): וַיִּתְעַצֵּב אֶל לִבּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשִּׂמְחָה",
+   "target_he": "הַלֵּב",
+   "proof": "וְעִקַּר הַשִּׂמְחָה הִיא בַּלֵּב, כְּמוֹ שֶׁכָּתוּב (תהילים ד׳:ח׳): נָתַתָּה שִׂמְחָה בְלִבִּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְּׁכִינָה",
+   "target_he": "לֵב",
+   "proof": "וְגָלוּת הַשְּׁכִינָה, שֶׁהוּא בְּחִינַת לֵב שֶׁהוּא שִׂמְחָתָן שֶׁל יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לֵב",
+   "target_he": "שִׂמְחָתָן שֶׁל יִשְׂרָאֵל",
+   "proof": "שֶׁהוּא בְּחִינַת לֵב שֶׁהוּא שִׂמְחָתָן שֶׁל יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַצְבוּת",
+   "target_he": "גָּלוּת הַשְּׁכִינָה",
+   "proof": "עִקַּר גָּלוּתָהּ – כְּשֶׁעַצְבוּת, שֶׁהֵם הַקְּלִפּוֹת, גּוֹבְרִים עָלֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה",
+   "target_he": "יְצִיאַת יִשְׂרָאֵל מֵהַגָּלוּת",
+   "proof": "וְזֶה הוּא כְּשֶׁיֵּצְאוּ יִשְׂרָאֵל מֵהַגָּלוּת, כְּתִיב (ישעיהו נ״ה:י״ב): כִּי בְּשִׂמְחָה תֵצֵאוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַקְּטֹרֶת",
+   "target_he": "חִיּוּתָם שֶׁל הַקְּלִיפּוֹת",
+   "proof": "שֶׁעַל־יְדֵי הַקְּטֹרֶת מַעֲלִין מֵהַקְּלִיפּוֹת חִיּוּתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קְטֹרֶת",
+   "target_he": "לֵב",
+   "proof": "כְּתִיב בָּהֶם (משלי כ״ז:ט׳): קְטֹרֶת יְשַׂמַּח לֵב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

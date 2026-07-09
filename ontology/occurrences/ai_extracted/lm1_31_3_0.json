@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בְּרִית",
+   "target_he": "קִיּוּם אֱמוּנָה",
+   "proof": "וְדַע, שֶׁאֵין קִיּוּם אֱמוּנָה אֶלָּא עַל יְדֵי בְּחִינוֹת בְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֻקּוֹת שָׁמַיִם וָאָרֶץ",
+   "target_he": "הַגַּלְגַּלִּים",
+   "proof": "כִּי חֻקּוֹת שָׁמַיִם וָאָרֶץ, הַיְנוּ הַגַּלְגַּלִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּרִית",
+   "target_he": "חֻקּוֹת שָׁמַיִם וָאָרֶץ (הַגַּלְגַּלִּים)",
+   "proof": "תְּלוּיִים בַּבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

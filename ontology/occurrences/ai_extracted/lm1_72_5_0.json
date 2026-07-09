@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 72,
+ "chunk": "72_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַיֵּצֶר הָרָע שֶׁלְּמַעְלָה",
+   "target_he": "הַגְּבוּרוֹת וְהַדִּינִים",
+   "proof": "שֶׁלֹּא הִמְתִּיק הַיֵּצֶר הָרָע שֶׁלְּמַעְלָה, הַיְנוּ הַגְּבוּרוֹת וְהַדִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲכִירַת הַדָּמִים",
+   "target_he": "תַּאֲוָה שֶׁל נִאוּף",
+   "proof": "מֵחֲמַת עֲכִירַת הַדָּמִים, חַס וְשָׁלוֹם, שֶׁמִּשָּׁם בָּא תַּאֲוָה זוֹ שֶׁל נִאוּף",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְתָּקַת הַיֵּצֶר הָרָע שֶׁלְּמַעְלָה",
+   "target_he": "הַפְּגָם",
+   "proof": "רַק הַפְּגָם שֶׁלּוֹ הָיָה לְמַעְלָה בִּגְבוּרוֹת, שֶׁלֹּא הִמְתִּיק הַיֵּצֶר הָרָע שֶׁלְּמַעְלָה",
+   "explicitness": "inferred",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

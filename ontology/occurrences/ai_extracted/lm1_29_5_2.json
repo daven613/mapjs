@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_5_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "לא תנחשו ולא תעוננו",
+   "target_he": "בחינת נחש משיך לה לגבה",
+   "proof": "שֶׁהֵם גּוֹרְמִים בְּחִינַת נָחָשׁ מַשִּׁיךְ לָהּ לְגַבַּהּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לא תנחשו ולא תעוננו",
+   "target_he": "שליטת השפחה בישא",
+   "proof": "וְגוֹרְמִים שְׁלִיטַת הַשִּׁפְחָה בִּישָׁא, שֶׁהִיא עֵת רָעָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "השפחה בישא",
+   "target_he": "עת רעה",
+   "proof": "שֶׁהִיא עֵת רָעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לא תנחשו",
+   "target_he": "נחש משיך לה לגבה",
+   "proof": "שֶׁלֹּא לִגְרֹם, חַס וְשָׁלוֹם, נָחָשׁ מַשִּׁיךְ לָהּ לְגַבַּהּ וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תעוננו",
+   "target_he": "עת ועונה",
+   "proof": "שֶׁהוּא לְשׁוֹן עֵת וְעוֹנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לא תעוננו",
+   "target_he": "שליטת העת רעה של הכ\"ח עתים",
+   "proof": "הַיְנוּ שֶׁלֹּא לִגְרֹם, חַס וְשָׁלוֹם, שְׁלִיטַת הָעֵת רָעָה שֶׁל הַכ\"ח עִתִּים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

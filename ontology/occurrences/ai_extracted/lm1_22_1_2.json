@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_1_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "לִמּוּדֵי ה'",
+   "target_he": "שָׁלוֹם בָּעוֹלָם",
+   "proof": "וְאֵלּוּ הַלִּמּוּדֵי ה' מַרְבִּים שָׁלוֹם בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרָע שֶׁל הַדּוֹר",
+   "target_he": "הַחוֹתָם",
+   "proof": "וּכְשֶׁהָרָע שֶׁל הַדּוֹר גּוֹבֵר עַל הַחוֹתָם הַנַּ\"ל וּמְקַלְקֵל אוֹתוֹ, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַחוֹתָם",
+   "target_he": "שְׁלוֹם הָעוֹלָם",
+   "proof": "אֲזַי נִתְקַלְקֵל שְׁלוֹם הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גֵּרוּשִׁין וּמַחֲלֹקֶת (הֶפֶךְ הַשָּׁלוֹם)",
+   "target_he": "וּמִתֵּבֵל יְנִדּוּהוּ",
+   "proof": "וְנַעֲשֶׂה גֵּרוּשִׁין וּמַחֲלֹקֶת בָּעוֹלָם, הֶפֶךְ הַשָּׁלוֹם, בִּבְחִינַת (איוב י״ח:י״ח) וּמִתֵּבֵל יְנִדּוּהוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חוֹתָם",
+   "target_he": "נִדַּת",
+   "proof": "כִּי מֵחוֹתָם נַעֲשֶׂה נִדַּת, כִּי הֵם בְּמִסְפָּר הַשָּׁוֶה, כַּמּוּבָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

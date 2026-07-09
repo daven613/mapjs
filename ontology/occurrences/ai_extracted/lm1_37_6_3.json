@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 37,
+ "chunk": "37_6_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַעֲלָאַת הַנֶּפֶשׁ בִּבְחִינַת מַיִּין נוּקְבִין",
+   "target_he": "רוֹצֵחַ נְפָשׁוֹת",
+   "proof": "כְּשֶׁהַשּׁוֹחֵט אֵינוֹ הָגוּן, וְאֵינוֹ מַעֲלֶה אֶת הַנֶּפֶשׁ בִּבְחִינַת מַיִּין נוּקְבִין, וּכְשֶׁעוֹמֵד עִם הַחֲלִיף לִשְׁחֹט אֶת הַחַי, הוּא עוֹמֵד כְּרוֹצֵחַ נְפָשׁוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֶפֶשׁ",
+   "target_he": "מַיִּין נוּקְבִין",
+   "proof": "וְאֵינוֹ מַעֲלֶה אֶת הַנֶּפֶשׁ בִּבְחִינַת מַיִּין נוּקְבִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַחֲלִיף שֶׁלּוֹ",
+   "target_he": "חֶרֶב הַמִּדְבָּר",
+   "proof": "וְהַחֲלִיף שֶׁלּוֹ הוּא חֶרֶב הַמִּדְבָּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֶרֶב לַה'",
+   "target_he": "חֶרֶב הַמְדַבֵּר",
+   "proof": "וְאֵינוֹ חֶרֶב לַה', שֶׁהוּא חֶרֶב הַמְדַבֵּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נַפְשִׁי יָצְאָה",
+   "target_he": "מַיִּין נוּקְבִין",
+   "proof": "כְּשֶׁיָּצָאת בִּשְׁבִיל לְהַכְנִיס בְדַבְּרוֹ שֶׁל הַבְּרָכָה, בִּבְחִינַת מַיִּין נוּקְבִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲשֶׁבֶת פִּגּוּל",
+   "target_he": "הִכּוּנִי פְצָעוּנִי נָשְׂאוּ אֶת רְדִידִי מֵעָלַי",
+   "proof": "כִּי אֵינוֹ שָׁם בִּשְׁעַת הַבְּרָכָה, וְחוֹשֵׁב מַחֲשֶׁבֶת פִּגּוּל. עַל־יְדֵי־זֶה, מְצָאֻנִי הַשּׁוֹמְרִים הַסֹּבְבִים בָּעִיר, הִכּוּנִי פְצָעוּנִי, נָשְׂאוּ אֶת רְדִידִי מֵעָלַי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַעֲלָה שֶׁהָיָה לְהַנֶּפֶשׁ",
+   "target_he": "חַי",
+   "proof": "הַיְנוּ שֶׁמַּעֲלָה שֶׁהָיָה לְהַנֶּפֶשׁ בִּבְחִינַת חַי, גַּם זֶה לָקַח מִמֶּנָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נָשְׂאוּ אֶת רְדִידִי מֵעָלַי",
+   "target_he": "מַעֲלָה שֶׁהָיָה לְהַנֶּפֶשׁ בִּבְחִינַת חַי",
+   "proof": "הַיְנוּ שֶׁמַּעֲלָה שֶׁהָיָה לְהַנֶּפֶשׁ בִּבְחִינַת חַי, גַּם זֶה לָקַח מִמֶּנָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

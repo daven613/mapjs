@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 46,
+ "chunk": "46_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עִקַּר הַשִּׁכְחָה",
+   "target_he": "מֹחִין דְּקַטְנוּת",
+   "proof": "גַּם עִקַּר הַשִּׁכְחָה הוּא מִמֹּחִין דְּקַטְנוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֹחִין דְּקַטְנוּת",
+   "target_he": "אֱלֹקִים",
+   "proof": "מִבְּחִינוֹת אֱלֹקִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַמְתִּיק אֶת אֱלֹקִים בְּכַפָּיו",
+   "target_he": "לֹא שָׁכָחְתִּי",
+   "proof": "וּכְשֶׁמַּמְתִּיק אֶת אֱלֹקִים בְּכַפָּיו, עַל־יְדֵי־זֶה: וְתוֹרָתְךָ לֹא שָׁכָחְתִּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

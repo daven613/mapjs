@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 28,
+ "chunk": "28_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תמיד",
+   "target_he": "קליפות דעשייה",
+   "proof": "שֶׁתָּמִיד מַכְנִיעַ קְלִפּוֹת דַּעֲשִׂיָּה וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קליפות דעשייה",
+   "target_he": "עבודה זרה",
+   "proof": "שֶׁהֵם בְּחִינַת עֲבוֹדָה זָרָה וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עולת",
+   "target_he": "שם אב\"ג ית\"ץ",
+   "proof": "וְ\"עוֹלַת\" גִּימַטְרִיָּא שֵׁם אב\"ג ית\"ץ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שם אב\"ג ית\"ץ",
+   "target_he": "חסד",
+   "proof": "שֶׁהוּא בְּחֶסֶד וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

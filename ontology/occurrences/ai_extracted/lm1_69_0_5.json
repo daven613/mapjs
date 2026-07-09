@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 69,
+ "chunk": "69_0_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "גזל את חברו",
+   "target_he": "נפש בניו ובנותיו",
+   "proof": "הַגּוֹזֵל אֶת חֲבֵרוֹ, כְּאִלּוּ גּוֹזֵל מִמֶּנּוּ נֶפֶשׁ בָּנָיו וּבְנוֹתָיו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גוזל ונוטל הענף",
+   "target_he": "בנים",
+   "proof": "יוּכַל לִגְזֹל מִמֶּנּוּ שֶׁלֹּא יִהְיֶה לוֹ, עַל־יְדֵי שֶׁגּוֹזֵל וְנוֹטֵל הֶעָנָף",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נוטל הענף",
+   "target_he": "פירות",
+   "proof": "כְּשֶׁזֶּה נוֹטֵל הֶעָנָף, הוּא מַזִּיק הַפֵּרוֹת, הַיְנוּ הַבָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פֵּרוֹת",
+   "target_he": "בָּנִים",
+   "proof": "הוּא מַזִּיק הַפֵּרוֹת, הַיְנוּ הַבָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֵם",
+   "target_he": "עָנָף",
+   "proof": "הַבָּנִים צְרִיכִין לְאִמָּן, הַיְנוּ לָעֲנָפִים שֶׁלָּהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עָנָף",
+   "target_he": "הִתְנוֹצְצוּת אוֹר אִמָּן",
+   "proof": "לִינֹק עוֹד וּלְקַבֵּל מֵהֶעָנָף, הַיְנוּ מֵהִתְנוֹצְצוּת אוֹר אִמָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

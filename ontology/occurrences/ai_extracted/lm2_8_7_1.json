@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עֲשֶׂרֶת הַדִּבְּרוֹת",
+   "target_he": "עֲשָׂרָה מַדְרֵגוֹת שֶׁל נְבוּאָה",
+   "proof": "וְהֵם כְּנֶגֶד עֲשֶׂרֶת הַדִּבְּרוֹת, שֶׁהֵם בְּחִינַת עֲשָׂרָה מַדְרֵגוֹת שֶׁל נְבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דְּבַר ה'",
+   "target_he": "נְבוּאָה",
+   "proof": "דְּבַר ה' זוֹ נְבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְבוּאָה",
+   "target_he": "עֲשָׂרָה מַדְרֵגוֹת",
+   "proof": "שֶׁהוּא בְּחִינַת עֲשָׂרָה מַדְרֵגוֹת, בְּחִינַת עֲשֶׂרֶת הַדִּבְּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְבוּאָה",
+   "target_he": "עֲשֶׂרֶת הַדִּבְּרוֹת",
+   "proof": "שֶׁהוּא בְּחִינַת עֲשָׂרָה מַדְרֵגוֹת, בְּחִינַת עֲשֶׂרֶת הַדִּבְּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְבוּאָה",
+   "target_he": "אֱמוּנָה בְּהַשֵּׂם יִתְבָּרַךְ",
+   "proof": "וְעַל־כֵּן עַל־יְדֵי נְבוּאָה... זוֹכִין לֶאֱמוּנָה בְּהַשֵּׂם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוּחַ־נְבוּאָה",
+   "target_he": "תִּקּוּן הָאֱמוּנָה הַקְּדוֹשָׁה",
+   "proof": "נִמְצָא שֶׁעִקָּר תִּקּוּן הָאֱמוּנָה הַקְּדוֹשָׁה הִיא עַל־יְדֵי בְּחִינַת רוּחַ־נְבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

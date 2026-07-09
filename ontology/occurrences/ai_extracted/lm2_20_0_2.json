@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 20,
+ "chunk": "20_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וכי ינצו אנשים יחדו",
+   "target_he": "מחלוקת",
+   "proof": "וְזֶה בְּחִינוֹת: וְכִי יִנָּצוּ אֲנָשִׁים יַחְדָּו – הַיְנוּ מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מחלוקת",
+   "target_he": "ונגפו אשה הרה ויצאו ילדיה",
+   "proof": "עַל־יְדֵי־זֶה: וְנָגְפוּ אִשָּׁה הָרָה וְיָצְאוּ יְלָדֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ונגפו אשה הרה ויצאו ילדיה",
+   "target_he": "מפורסמים שנעשין קודם זמנם",
+   "proof": "הַיְנוּ בְּחִינַת הַמְפֻרְסָמִים שֶׁנַּעֲשִׂין קֹדֶם זְמַנָּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מפורסמים שנעשין קודם זמנם",
+   "target_he": "נפלים",
+   "proof": "שֶׁהֵם בִּבְחִינוֹת נְפָלִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פגם",
+   "target_he": "מיתה או עוני",
+   "proof": "וְעָנְשָׁם מִיתָה אוֹ עֹנִי, לְפִי הַפְּגָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אם לא יהיה אסון",
+   "target_he": "שלא יפסידו ויקלקלו את הדרך חכמה בעצמו",
+   "proof": "הַיְנוּ שֶׁלֹּא יַפְסִידוּ וִיקַלְקְלוּ אֶת הַדֶּרֶךְ חָכְמָה בְּעַצְמוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דרך חכמה",
+   "target_he": "אשה הרה",
+   "proof": "שֶׁהוּא בְּחִינוֹת אִשָּׁה הָרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נפלים",
+   "target_he": "האנשים בעצמן שנתפרסמו ויצאו בעולם קודם זמנם",
+   "proof": "רַק יַפְסִידוּ הַנְּפָלִים, דְּהַיְנוּ הָאֲנָשִׁים בְּעַצְמָן, שֶׁנִּתְפַּרְסְמוּ וְיָצְאוּ בָּעוֹלָם קֹדֶם זְמַנָּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

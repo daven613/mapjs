@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_6_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "כח המדמה",
+   "proof": "שֶׁעַל יְדֵי פְּגַם הַדַּעַת, מִתְגַּבֵּר כֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "אהבות דקדושה",
+   "proof": "כִּי עַל־יְדֵי פְּגַם הַדַּעַת, נוֹפֵל מֵאַהֲבוֹת דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אהבות דקדושה",
+   "target_he": "כהן",
+   "proof": "שֶׁהֵם בְּחִינַת כֹּהֵן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "זכרון",
+   "proof": "כִּי עַל־יְדֵי פְּגַם הַדַּעַת, שֶׁעַל־יְדֵי־זֶה מִתְגַּבֵּר הַכֹּחַ הַמְדַמֶּה, עַל־יְדֵי־זֶה נִפְגָּם הַזִּכָּרוֹן וּבָא לְשִׁכְחָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כח המדמה",
+   "target_he": "זכרון",
+   "proof": "שֶׁעַל־יְדֵי־זֶה מִתְגַּבֵּר הַכֹּחַ הַמְדַמֶּה, עַל־יְדֵי־זֶה נִפְגָּם הַזִּכָּרוֹן וּבָא לְשִׁכְחָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 64,
+ "chunk": "64_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מָמוֹן",
+   "target_he": "שִׁגָּעוֹן",
+   "proof": "דַּע, כִּי הַמָּמוֹן עוֹשֶׂה אוֹתוֹ מְשֻׁגָּע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָמוֹן",
+   "target_he": "נְפִילַת הָעֲשִׁירוּת שֶׁל הַנְּבִיאִים",
+   "proof": "כִּי הַמָּמוֹן הוּא מִנְּפִילַת הָעֲשִׁירוּת שֶׁל הַנְּבִיאִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲשִׁירוּת",
+   "target_he": "שִׁגָּעוֹן",
+   "proof": "וְעַל־כֵּן הֵם נַעֲשִׂים מְשֻׁגָּעִים עַל־יְדֵי הָעֲשִׁירוּת שֶׁלָּהֶם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_9_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "ברוחו שמים שפרה",
+   "target_he": "רוח הדופק",
+   "proof": "הַיְנוּ בְּחִינַת הָרוּחַ הַדּוֹפֵק הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ידים",
+   "target_he": "שמים",
+   "proof": "הַמְנַשֵּׁב בַּיָּדַיִם, שֶׁהֵם בְּחִינַת שָׁמַיִם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוח הדופק",
+   "target_he": "שמים (ידים)",
+   "proof": "כִּי עַל־יְדֵי הָרוּחַ הַדּוֹפֵק הַנַּ\"ל, הוּא מְזַכֵּךְ וּמְשַׁפֵּר הַשָּׁמַיִם, שֶׁהֵם הַיָּדַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עצבות רוח",
+   "target_he": "ידים (כבדים וסתומים)",
+   "proof": "שֶׁהָיוּ כְּבֵדִים וּסְתוּמִים עַל־יְדֵי הָעַצְבוּת רוּחַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עצבות רוח",
+   "target_he": "זוהמת הנחש",
+   "proof": "שֶׁהוּא זֻהֲמַת הַנָּחָשׁ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חוללה ידו נחש בריח",
+   "target_he": "חלל בידים",
+   "proof": "שֶׁעַל־יְדֵי־זֶה עוֹשֶׂה חָלָל בְּהַיָּדַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זוהמת הנחש",
+   "target_he": "ידים ושמים (נתנשאין הידים, נזדכך השמים)",
+   "proof": "וַאֲזַי כְּשֶׁמְּבַטֵּל בְּחִינַת זֻהֲמַת הַנָּחָשׁ ... וַאֲזַי נִתְנַשְּׂאִין הַיָּדַיִם, וְנִזְדַּכֵּךְ הַשָּׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוח הדופק",
+   "target_he": "ידים ושמים (נתנשאין הידים, נזדכך השמים)",
+   "proof": "וְהָרוּחַ הַדּוֹפֵק מְנַשֵּׁב כְּסֵדֶר, וַאֲזַי נִתְנַשְּׂאִין הַיָּדַיִם, וְנִזְדַּכֵּךְ הַשָּׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמים (ידים מזוככים)",
+   "target_he": "דבורים (מחלוקת לשם שמים)",
+   "proof": "וַאֲזַי מְקַבְּלִין מֵהֶם דִּבּוּרִים, בְּחִינַת מַחֲלֹקֶת לְשֵׁם שָׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מחלוקת לשם שמים",
+   "target_he": "דרכי ה'",
+   "proof": "שֶׁזֶּה בְּחִינַת דַּרְכֵי ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+{
+ "book": "lm1",
+ "torah": 74,
+ "chunk": "74_0_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "זה הדין",
+   "target_he": "דינא קדישא",
+   "proof": "זֶה הַדִּין הוּא בְּחִינַת דִּינָא קַדִּישָׁא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זה הדין",
+   "target_he": "מוחין דקטנות",
+   "proof": "רַק שֶׁהוּא בְּחִינַת מֹחִין דְּקַטְנוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הדין הנולד מאברהם",
+   "target_he": "אברהם הוליד את יצחק",
+   "proof": "וְזֶהוּ בְּחִינַת: אַבְרָהָם הוֹלִיד אֶת יִצְחָק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אברהם",
+   "target_he": "חסד",
+   "proof": "כִּי אַבְרָהָם הוּא בְּחִינַת חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יצחק",
+   "target_he": "גבורה",
+   "proof": "וְיִצְחָק הוּא בְּחִינַת גְּבוּרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גבורה",
+   "target_he": "פחד יצחק",
+   "proof": "בְּחִינַת פַּחַד יִצְחָק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זה הדין הקדוש",
+   "target_he": "יצחק",
+   "proof": "שֶׁזֶּה הַדִּין הַקָּדוֹשׁ, שֶׁהוּא בְּחִינַת יִצְחָק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חסד",
+   "target_he": "דין",
+   "proof": "הוּא נוֹלָד וְנִמְשָׁךְ מֵאַבְרָהָם, שֶׁהוּא בְּחִינַת חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חסד",
+   "target_he": "דין",
+   "proof": "כִּי זֶה הַדִּין נִמְשָׁךְ מֵחֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דין הנמשך מחסד",
+   "target_he": "אברהם הוליד את יצחק",
+   "proof": "בְּחִינַת אַבְרָהָם הוֹלִיד אֶת יִצְחָק כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ישע ימינו",
+   "target_he": "חסד",
+   "proof": "שֶׁבְּתוֹךְ הַגְּבוּרוֹת וְהַדִּינִים מְלֻבָּשׁ בָּהֶם יֵשַׁע יְמִינוֹ, בְּחִינַת חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חסד המלובש בדין",
+   "target_he": "את אשר יאהב ה' יוכיח",
+   "proof": "בְּחִינַת: אֶת אֲשֶׁר יֶאֱהַב ה' יוֹכִיחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חסד המלובש בדין",
+   "target_he": "בגבורות ישע ימינו",
+   "proof": "וְזֶה בְּחִינַת: בִּגְבוּרוֹת יֵשַׁע יְמִינוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גבורות",
+   "target_he": "חסדים",
+   "proof": "שֶׁהַגְּבוּרוֹת הֵם חֲסָדִים בֶּאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חסדים המלובשים בגבורות",
+   "target_he": "כי גבר עלינו חסדו",
+   "proof": "וְזֶהוּ בְּחִינַת: כִּי גָבַר עָלֵינוּ חַסְדּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

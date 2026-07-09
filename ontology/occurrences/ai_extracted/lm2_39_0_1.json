@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 39,
+ "chunk": "39_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שבת",
+   "target_he": "התכלית",
+   "proof": "בִּשְׁבִיל בְּחִינַת שַׁבָּת, שֶׁהוּא הַתַּכְלִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שבת",
+   "target_he": "תכלית מעשה שמים וארץ",
+   "proof": "כִּי שַׁבָּת הוּא תַּכְלִית מַעֲשֵׂה שָׁמַיִם וָאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שבת",
+   "target_he": "עולם הנשמות",
+   "proof": "כִּי שַׁבָּת הוּא תַּכְלִית מַעֲשֵׂה שָׁמַיִם וָאָרֶץ, שֶׁהוּא בְּחִינַת עוֹלָם הַנְּשָׁמוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עולם הנשמות",
+   "target_he": "עולם שכולו שבת",
+   "proof": "שֶׁהוּא עוֹלָם שֶׁכֻּלּוֹ שַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

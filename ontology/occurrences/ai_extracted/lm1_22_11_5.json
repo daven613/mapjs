@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_11_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "וְתֵן חֶלְקֵנוּ בְּתוֹרָתֶךָ",
+   "target_he": "בְּחִינַת נַעֲשֶׂה וְנִשְׁמָע",
+   "proof": "אַךְ לָבוֹא לָזֶה הוּא עַל־יְדֵי וְתֵן חֶלְקֵנוּ בְּתוֹרָתֶךָ, הַיְנוּ עַל־יְדֵי שֶׁמַּשִּׂיגִין בְּחִינַת נַעֲשֶׂה וְנִשְׁמָע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִשְׁמָע",
+   "target_he": "נַעֲשֶׂה",
+   "proof": "שֶׁעוֹשִׂין מֵהַנִּשְׁמָע נַעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרַת ה'",
+   "target_he": "תּוֹרָתוֹ",
+   "proof": "מִתּוֹרַת ה' – תּוֹרָתוֹ, דְּהַיְנוּ שֶׁזּוֹכֶה לְהַשִּׂיג תּוֹרַת ה' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֶלְקֵנוּ",
+   "target_he": "בְּחִינַת תּוֹרָתוֹ",
+   "proof": "שֶׁיִּהְיֶה חֶלְקֵנוּ, שֶׁהוּא הַחֵלֶק שֶׁלָּנוּ בְּהַתּוֹרָה, הַיְנוּ בְּחִינַת תּוֹרָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֶלְקֵנוּ",
+   "target_he": "בְּחִינַת נַעֲשֶׂה",
+   "proof": "הַיְנוּ בְּחִינַת תּוֹרָתוֹ, בְּחִינַת נַעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּתוֹרָתֶךָ",
+   "target_he": "תּוֹרַת ה' מַמָּשׁ",
+   "proof": "בְּתוֹרָתֶךָ – הַיְנוּ תּוֹרַת ה' מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תּוֹרַת ה' מַמָּשׁ",
+   "target_he": "לְהִכָּלֵל בְּאַיִן",
+   "proof": "הַיְנוּ שֶׁיִּזְכֶּה לְהִכָּלֵל בְּאַיִן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תּוֹרַת ה'",
+   "target_he": "בְּחִינַת נִשְׁמָע",
+   "proof": "שֶׁיִּזְכֶּה לְהַשִּׂיג תּוֹרַת ה', בְּחִינַת נִשְׁמָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִשְׁמָע",
+   "target_he": "שִׂמְחָה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה זוֹכִין לְשִׂמְחָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִשְׁמָע",
+   "target_he": "עַזּוּת דִּקְדֻשָּׁה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה זוֹכִין לְעַזּוּת דִּקְדֻשָּׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עַזּוּת דִּקְדֻשָּׁה",
+   "target_he": "כִּי חֶדְוַת ה' הִיא מָעֻזְּכֶם",
+   "proof": "בְּחִינַת: כִּי חֶדְוַת ה' הִיא מָעֻזְּכֶם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

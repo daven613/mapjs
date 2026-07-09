@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 47,
+ "chunk": "47_0_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת יַעֲקֹב",
+   "target_he": "אֶרֶץ",
+   "proof": "פֵּרוּשׁ שֶׁהִיא מְקַבֶּלֶת שִׁפְעָהּ מִבְּחִינַת יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כִּי הִיא שִׂמְלָתוֹ לְעוֹרוֹ",
+   "target_he": "עוֹר שֶׁל תְּפִלִּין",
+   "proof": "כִּי הִיא שִׂמְלָתוֹ לְעוֹרוֹ – דָּא עוֹר שֶׁל תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלִּין",
+   "target_he": "אֱמֶת",
+   "proof": "שֶׁעַל־יְדֵי תְּפִלִּין, שֶׁהוּא בְּחִינַת אֱמֶת, בְּחִינַת יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלִּין",
+   "target_he": "יַעֲקֹב",
+   "proof": "שֶׁעַל־יְדֵי תְּפִלִּין, שֶׁהוּא בְּחִינַת אֱמֶת, בְּחִינַת יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת תַּאֲוַת אֲכִילָה",
+   "target_he": "תְּפִלִּין",
+   "proof": "שֶׁזּוֹכִין עַל־יְדֵי שְׁבִירַת תַּאֲוַת אֲכִילָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלִּין",
+   "target_he": "דַּלּוּת וַעֲנִיּוּת",
+   "proof": "עַל־יְדֵי־זֶה נִצּוֹלִין מִדַּלּוּת וַעֲנִיּוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כִּי הִיא שִׂמְלָתוֹ לְעוֹרוֹ",
+   "target_he": "תְּפִלִּין",
+   "proof": "וְזֶהוּ: כִּי הִיא כְסוּתֹה וְכוּ' הִיא שִׂמְלָתוֹ לְעוֹרוֹ – דָּא תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲנִיּוּת הַשְּׁכִינָה בְּגָלוּתָא",
+   "target_he": "עֲנִיּוּת שֶׁל יִשְׂרָאֵל בַּגָּלוּת",
+   "proof": "שֶׁמִּשָּׁם עִקַּר הָעֲנִיּוּת שֶׁל יִשְׂרָאֵל בַּגָּלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

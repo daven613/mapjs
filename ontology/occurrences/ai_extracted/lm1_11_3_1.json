@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 11,
+ "chunk": "11_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שדי",
+   "target_he": "שיש דַּי בֶּאֱלֹקוּתִי לְכָל בְּרִיָּה",
+   "proof": "כִּי שַׁדַּי הוּא בְּחִינַת שֶׁיֵּשׁ דַּי בֶּאֱלֹקוּתִי לְכָל בְּרִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֵינוֹ שׁוֹמֵר הַבְּרִית",
+   "target_he": "גֵּאוּת",
+   "proof": "וּכְשֶׁאֵינוֹ שׁוֹמֵר הַבְּרִית, הַיְנוּ עַל־יְדֵי גֵּאוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גֵּאוּת",
+   "target_he": "עֲבוֹדַת אֱלִילִים",
+   "proof": "וּכְשֶׁאֵינוֹ שׁוֹמֵר הַבְּרִית, הַיְנוּ עַל־יְדֵי גֵּאוּת, הוּא עוֹשֶׂה לְעַצְמוֹ עֲבוֹדַת אֱלִילִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲבוֹדַת אֱלִילִים",
+   "target_he": "שַׁדַּי",
+   "proof": "וְעַל כֵּן פּוֹגֵם בְּשַׁדַּי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִירַת הַבְּרִית",
+   "target_he": "אוֹר הַמֵּאִיר לוֹ לִתְשׁוּבָה",
+   "proof": "וּכְשֶׁשּׁוֹמֵר הַבְּרִית, הוּא זוֹכֶה לָאוֹר הַמֵּאִיר לוֹ לִתְשׁוּבָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

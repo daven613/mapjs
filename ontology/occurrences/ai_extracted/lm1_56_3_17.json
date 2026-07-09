@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_3_17",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "דעת",
+   "target_he": "תורה",
+   "proof": "מִזֶּה בְּעַצְמוֹ נַעֲשֶׂה דַּעַת, דְּהַיְנוּ תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אורייתא מכרזת קמייהו",
+   "target_he": "תוכחה",
+   "proof": "וְזֶה בְּעַצְמוֹ בְּחִינַת הַתּוֹכָחָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "שהתורה תוכיח אותם",
+   "proof": "כִּי גּוֹרֵם עַל יְדֵי הַדַּעַת שֶׁהַתּוֹרָה תּוֹכִיחַ אוֹתָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תוכחה",
+   "target_he": "אריכות ימים לתוך המלכות",
+   "proof": "וְעַל־יְדֵי הַתּוֹכָחָה הַזֹּאת, הוּא מַמְשִׁיךְ אֲרִיכוּת יָמִים לְתוֹךְ הַמַּלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תוכחה",
+   "target_he": "הרבנות מקברת את בעליה",
+   "proof": "שֶׁזֶּהוּ כְּשֶׁאֵין מוֹכִיחַ אֶת הָאֲנָשִׁים שֶׁיֵּשׁ לוֹ מֶמְשָׁלָה עֲלֵיהֶם וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עסק התורה",
+   "target_he": "חיים ואריכות ימים",
+   "proof": "שֶׁעַל־יְדֵי־זֶה מַמְשִׁיךְ חַיִּים וַאֲרִיכוּת יָמִים בְּחִינַת דַּעַת וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אריכות ימים",
+   "target_he": "דעת",
+   "proof": "שֶׁעַל־יְדֵי אֲרִיכוּת יָמִים, שֶׁהוּא בְּחִינַת דַּעַת שֶׁמַּמְשִׁיכִין עַל־יְדֵי הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עסק התורה",
+   "target_he": "יציאת ידי תוכחה",
+   "proof": "עַד אֲשֶׁר אוֹרַיְתָא מַכְרֶזֶת קַמַּיְהוּ, וּמוֹכִיחָה אוֹתָם, נִמְצָא שֶׁיּוֹצֵא יְדֵי תּוֹכָחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אריכות ימים",
+   "target_he": "המלכות",
+   "proof": "עַל־יְדֵי־זֶה בְּעַצְמוֹ מַמְשִׁיכִין אֲרִיכוּת יָמִים הַנַּ\"ל לְתוֹךְ הַמַּלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

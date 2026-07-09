@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 41,
+ "chunk": "41_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מוֹפְתִים עַל־יְדֵי בַּעֲלֵי הַפּוֹסְקִים",
+   "target_he": "מֹפְתָיו וּמִשְׁפְּטֵי פִיהוּ",
+   "proof": "בִּבְחִינַת (ד\"ה א טז): מֹפְתָיו וּמִשְׁפְּטֵי פִיהוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִשְׁפְּטֵי פִיהוּ (פְּסִיקַת הַפּוֹסֵק)",
+   "target_he": "מוֹפֵת",
+   "proof": "שֶׁעַל־יְדֵי מִשְׁפְּטֵי פִיהוּ, שֶׁפּוֹסֵק שֶׁיִּהְיֶה כָּךְ, נַעֲשֶׂה מוֹפֵת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קַבָּלַת דַּעְתּוֹ שֶׁל הַפּוֹסֵק",
+   "target_he": "מוֹפְתִים עַל־יָדוֹ",
+   "proof": "כְּמוֹ־כֵן כְּשֶׁפּוֹסֵק בְּאֵיזֶה עִנְיָן, מְקַבְּלִין דַּעְתּוֹ, וְנַעֲשִׂין מוֹפְתִים עַל־יָדוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוֹפְתִים שֶׁמְּסַפְּרִין מֵהַגְּאוֹנִים",
+   "target_he": "מוֹפְתִים עַל־יְדֵי בַּעֲלֵי הַפּוֹסְקִים",
+   "proof": "וְזֶהוּ בְּחִינַת הַמּוֹפְתִים שֶׁמְּסַפְּרִין מֵהַגְּאוֹנִים שֶׁהָיוּ בַּדּוֹרוֹת שֶׁלְפָנֵינוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

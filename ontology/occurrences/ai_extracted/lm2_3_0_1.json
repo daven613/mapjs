@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 3,
+ "chunk": "3_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מדת הדין",
+   "target_he": "החולאת נמשך עד זמן פלוני",
+   "proof": "הוּא מֵחֲמַת מִדַּת הַדִּין, שֶׁכְּפִי מִדַּת הַדִּין נִגְזַר שֶׁיֻּמְשַׁךְ הַחוֹלַאַת עַד אוֹתוֹ הַזְּמַן וְיוֹם פְּלוֹנִי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מדת הדין",
+   "target_he": "שלא יוכל להתרפאות כי אם על ידי סבות אלו",
+   "proof": "וְעַל כֵּן נִגְזַר שֶׁלֹּא יוּכַל לְהִתְרַפְּאוֹת כִּי אִם עַל־יְדֵי סִבּוֹת אֵלּוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פדיון והמתקת הדין",
+   "target_he": "ביטול הגזרה",
+   "proof": "אֲבָל כְּשֶׁעוֹשִׂין פִּדְיוֹן וּמַמְתִּיקִין הַדִּין, וַאֲזַי נִתְבַּטֵּל הַגְּזֵרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דין",
+   "target_he": "יכולת הרופא לרפאות על ידי סמים",
+   "proof": "כִּי אֲזַי אֵין דִּין, וַאֲזַי יוּכַל לְהִתְרַפְּאוֹת עַל־יְדֵי אֵיזֶה סַם שֶׁיִּהְיֶה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  }
+ ]
+}

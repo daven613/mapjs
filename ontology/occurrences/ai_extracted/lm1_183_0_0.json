@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 183,
+ "chunk": "183_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בְּנֵי אָדָם שֶׁמַּפְסִיקִין וּמְקַלְקְלִין סֵדֶר הָעִגּוּל",
+   "target_he": "אֵינוֹ מִן הַיִּשּׁוּב",
+   "proof": "אֵלּוּ בְּנֵי אָדָם הֵם בִּבְחִינַת אֵינוֹ מִן הַיִּשּׁוּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+   "target_he": "רֹאשׁ בֵּית־דִּין",
+   "proof": "וְהוּא בְּחִינַת רֹאשׁ בֵּית־דִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַצַּדִּיקִים שֶׁיּוֹשְׁבִים בְּעִגּוּל",
+   "target_he": "בֵּית־דִּין",
+   "proof": "הֵם בְּחִינַת בֵּית־דִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַצַּדִּיקִים (בֵּית־דִּין)",
+   "target_he": "הַמִּשְׁפָּט",
+   "proof": "שֶׁמֵּהֶם יוֹצֵא הַמִּשְׁפָּט לְכָל אֶחָד וְאֶחָד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַצַּדִּיקִים (בֵּית־דִּין)",
+   "target_he": "פַּרְנָסָה",
+   "proof": "וְכֵן פַּרְנָסָה יוֹצֵאת מֵהֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

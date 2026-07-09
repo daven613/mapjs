@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 37,
+ "chunk": "37_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "חֶלְקָם בַּחַיִּים",
+   "target_he": "עוֹלָם הַזֶּה",
+   "proof": "הַיְנוּ הֵן אוֹתָן שֶׁבּוֹחֲרִין חֶלְקָם בַּחַיִּים, דְּהַיְנוּ לְמַלְאוֹת תַּאֲוָתָם בְּחַיִּים חִיּוּתָם בָּעוֹלָם הַזֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וּצְפוּנְךָ",
+   "target_he": "עוֹלָם הַבָּא",
+   "proof": "וְזֶהוּ: וּצְפוּנְךָ, שֶׁבּוֹחֲרִין בַּטּוֹב הַצָּפוּן, דְּהַיְנוּ עוֹלָם הַבָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֶלְקָם בַּחַיִּים וּצְפוּנְךָ",
+   "target_he": "מִלּוּי בֶּטֶן",
+   "proof": "וּשְׁנֵיהֶם הֵם בְּחִינַת מִלּוּי בֶּטֶן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַבּוֹחֲרִין בָּעוֹלָם הַזֶּה וְהָעוֹבְדִין בִּשְׁבִיל הָעוֹלָם הַבָּא",
+   "target_he": "תְּמַלֵּא בִטְנָם",
+   "proof": "שְׁנֵיהֶם הֵם בִּבְחִינַת תְּמַלֵּא בִטְנָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַבּוֹחֲרִין בָּעוֹלָם הַזֶּה וְהָעוֹבְדִין בִּשְׁבִיל הָעוֹלָם הַבָּא",
+   "target_he": "חֶלְקָם בַּחַיִּים וּצְפוּנְךָ",
+   "proof": "שֶׁהֵם בְּחִינוֹת חֶלְקָם בַּחַיִּים וּצְפוּנְךָ, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 21,
+ "chunk": "21_11_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "כעס ואכזריות",
+   "proof": "כַּעַס וְאַכְזָרִיּוּת הוּא מֵחֶסְרוֹן הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דינים",
+   "target_he": "מֹחִין דְּקַטְנוּת",
+   "proof": "וְדִינִים הֵם מֹחִין דְּקַטְנוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דינים",
+   "target_he": "כעס",
+   "proof": "וְדִינִים הֵם מֹחִין דְּקַטְנוּת, וְעַל כֵּן הוּא בְּכַעַס",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "כעס",
+   "proof": "וְלֶעָתִיד לָבוֹא יִתְגַּלֶּה הַדַּעַת... וְעַל כֵּן אָז יִתְבַּטֵּל הַכַּעַס",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

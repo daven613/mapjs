@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 80,
+ "chunk": "80_23_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יְרוּשָׁלַיִם",
+   "target_he": "הַדִּבּוּר",
+   "proof": "יְרוּשָׁלַיִם הוּא בְּחִינַת הַדִּבּוּר וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ה'",
+   "target_he": "מֹחִין",
+   "proof": "ה' הוּא בְּחִינַת מֹחִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִשּׁוּר הַמֹּחַ אֶל הַדִּבּוּר",
+   "target_he": "בּוֹנֵה יְרוּשָׁלַיִם ה'",
+   "proof": "הַיְנוּ לִזְכּוֹת לְקַשֵּׁר הַמֹּחַ אֶל הַדִּבּוּר, שֶׁזֶּהוּ בְּחִינַת בּוֹנֵה יְרוּשָׁלַיִם ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְסִירַת נֶפֶשׁ עַל קִדּוּשׁ הַשֵּׁם",
+   "target_he": "הַמֹּחִין בּוֹנִין הַדִּבּוּר דִּקְדֻשָּׁה",
+   "proof": "שֶׁהַמֹּחִין בּוֹנִין הַדִּבּוּר דִּקְדֻשָּׁה – זֶה זוֹכִין עַל־יְדֵי: נִדְחֵי יִשְׂרָאֵל יְכַנֵּס, זֶה בְּחִינַת מְסִירַת נֶפֶשׁ עַל קִדּוּשׁ הַשֵּׁם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִדְחֵי יִשְׂרָאֵל יְכַנֵּס",
+   "target_he": "מְסִירַת נֶפֶשׁ עַל קִדּוּשׁ הַשֵּׁם",
+   "proof": "נִדְחֵי יִשְׂרָאֵל יְכַנֵּס, זֶה בְּחִינַת מְסִירַת נֶפֶשׁ עַל קִדּוּשׁ הַשֵּׁם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִדּוּשׁ הַשֵּׁם",
+   "target_he": "כְּנִיסַת הַנִּדָּחִים לְתוֹךְ הַקְּדֻשָּׁה",
+   "proof": "נִמְצָא, שֶׁעַל־יְדֵי קִדּוּשׁ הַשֵּׁם נִכְנָסִין כָּל הַנִּדָּחִין מִקְּדֻשַּׁת יִשְׂרָאֵל לְתוֹךְ הַקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּנִיסַת הַנִּדָּחִים לְתוֹךְ הַקְּדֻשָּׁה",
+   "target_he": "נִדְחֵי יִשְׂרָאֵל יְכַנֵּס",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת: נִדְחֵי יִשְׂרָאֵל יְכַנֵּס",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִדּוּשׁ הַשֵּׁם",
+   "target_he": "בּוֹנֵה יְרוּשָׁלַיִם ה'",
+   "proof": "וְעַל־יְדֵי־זֶה: בּוֹנֵה יְרוּשָׁלַיִם ה'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִדּוּשׁ הַשֵּׁם",
+   "target_he": "שָׁלוֹם",
+   "proof": "כִּי קִדּוּשׁ הַשֵּׁם הוּא בְּחִינַת שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם",
+   "target_he": "קִשּׁוּר הַמַּחֲשָׁבָה אֶל הַדִּבּוּר",
+   "proof": "שֶׁעַל־יְדֵי־זֶה יְכוֹלִין לְקַשֵּׁר הַמַּחֲשָׁבָה אֶל הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִשּׁוּר הַמַּחֲשָׁבָה אֶל הַדִּבּוּר",
+   "target_he": "בּוֹנֵה יְרוּשָׁלַיִם ה'",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת: בּוֹנֵה יְרוּשָׁלַיִם ה' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

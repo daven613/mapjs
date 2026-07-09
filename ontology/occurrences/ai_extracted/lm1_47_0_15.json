@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 47,
+ "chunk": "47_0_15",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "וְהָיוּ חַיֶּיךָ תְּלוּאִים",
+   "target_he": "הַתּוֹלֶה תְּפִלָּיו",
+   "proof": "וְהָיוּ חַיֶּיךָ תְּלוּאִים – זֶה הַתּוֹלֶה תְּפִלָּיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְהָיוּ חַיֶּיךָ תְּלוּאִים",
+   "target_he": "הַקּוֹנֶה מִן הַפַּלְטֵר",
+   "proof": "זֶה הַקּוֹנֶה מִן הַפַּלְטֵר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּפִלִּין",
+   "target_he": "מִדַּת אֱמֶת",
+   "proof": "וּפוֹגֵם בַּתְּפִלִּין, שֶׁהוּא מִדַּת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֶרֶץ יִשְׂרָאֵל",
+   "target_he": "מִדַּת אֱמֶת",
+   "proof": "אַךְ אֶרֶץ יִשְׂרָאֵל, שֶׁהִיא מִדַּת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלִּין",
+   "target_he": "הַסְתָּרַת פָּנִים",
+   "proof": "כִּי מֵאַחַר שֶׁהוּא תּוֹלֶה תְּפִלָּיו, וּפוֹגֵם בַּתְּפִלִּין, שֶׁהוּא מִדַּת אֱמֶת, אֲזַי הוּא בְּהַסְתָּרַת פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַסְתָּרַת פָּנִים",
+   "target_he": "מִעוּט הַשֶּׁפַע",
+   "proof": "אֲזַי הוּא בְּהַסְתָּרַת פָּנִים, וְנִתְמַעֵט הַשֶּׁפַע שֶׁלּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִעוּט הַשֶּׁפַע",
+   "target_he": "צִמְצוּם הַמָּזוֹנוֹת",
+   "proof": "וְנִתְמַעֵט הַשֶּׁפַע שֶׁלּוֹ, וּמְזוֹנוֹתָיו מְצֻמְצָמִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צִמְצוּם הַמָּזוֹנוֹת",
+   "target_he": "קְנִיָּה מִן הַפַּלְטֵר",
+   "proof": "וּמְזוֹנוֹתָיו מְצֻמְצָמִין, וְצָרִיךְ לִקְנוֹת מִן הַפַּלְטֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

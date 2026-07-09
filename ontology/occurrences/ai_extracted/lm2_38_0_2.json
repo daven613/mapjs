@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 38,
+ "chunk": "38_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שֶׁיָּבוֹא לְמֹחִין דְּגַדְלוּת",
+   "target_he": "הַמְתָּקָה",
+   "proof": "דְּהַיְנוּ שֶׁיָּבוֹא לְמֹחִין דְּגַדְלוּת, שֶׁזֶּהוּ בְּחִינַת הַמְתָּקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֵינוֹ יָכוֹל לְקַבֵּל",
+   "target_he": "אָעָא דְּלָא דָּלִיק, מְבַטְשִׁין לֵהּ",
+   "proof": "וְהוּא בִּבְחִינַת: אָעָא דְּלָא דָּלִיק, מְבַטְשִׁין לֵהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִסּוּרִין",
+   "target_he": "קַבָּלָה מֵהַגָּדוֹל",
+   "proof": "שֶׁצָּרִיךְ לְהָאִיר בּוֹ עַל־יְדֵי יִסּוּרִין... כְּדֵי לְבַטֵּל אוֹתוֹ שֶׁיּוּכַל לְקַבֵּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

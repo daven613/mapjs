@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_7_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דָּרֵי מַעְלָה וְדָרֵי מַטָּה",
+   "target_he": "גְּדוֹלִים וּקְטַנִּים",
+   "proof": "שֶׁהֵם בְּחִינַת גְּדוֹלִים וּקְטַנִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַגְּדוֹלִים בְּמַעֲלָה, בְּנֵי עֲלִיָּה",
+   "target_he": "דָּרֵי מַעְלָה",
+   "proof": "הַיְנוּ שֶׁלְּהַגְּדוֹלִים בְּמַעֲלָה, בְּנֵי עֲלִיָּה, בְּחִינַת דָּרֵי מַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֶׁעֲדַיִן אֵינָם יוֹדְעִים כְּלָל מֵהַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "מֶה חָמִית מַה פִּשְׁפַּשְׁתָּ",
+   "proof": "בְּחִינַת: מֶה חָמִית מַה פִּשְׁפַּשְׁתְּ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

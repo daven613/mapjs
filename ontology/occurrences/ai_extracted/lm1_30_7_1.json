@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "קבלת תוכחתם",
+   "target_he": "חסד",
+   "proof": "כְּדֵי לְקַבֵּל עַל יָדוֹ אֶת הַחֶסֶד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עסקים ושיחת חולין שלנו",
+   "target_he": "רעה אצל הצדיקים",
+   "proof": "עֲסָקִים וְשִׂיחַת חֻלִּין שֶׁלָּנוּ הוּא בְּוַדַּאי רָעָה אֶצְלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפלתנו",
+   "target_he": "רעותיהם",
+   "proof": "בִּבְחִינַת (שם): וּתְפִלָּתִי בְּרָעוֹתֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפלתנו",
+   "target_he": "בלבול הצדיקים",
+   "proof": "כִּי תְּפִלָּתֵנוּ מְבַלְבֶּלֶת אוֹתָם.",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

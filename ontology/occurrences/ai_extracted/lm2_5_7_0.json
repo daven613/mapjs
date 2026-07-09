@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "גאוה",
+   "target_he": "חותם דסטרא אחרא",
+   "proof": "כִּי הֵם מַכְנִיעִין הַחוֹתָם דְּסִטְרָא אַחֲרָא, שֶׁנַּעֲשֶׂה עַל־יְדֵי הַגַּאֲוָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מגינים",
+   "target_he": "גאוה אפיקי מגינים סגור חותם צר",
+   "proof": "בִּבְחִינַת (איוב מ״א:ז׳): גַּאֲוָה אֲפִיקֵי מָגִנִּים סָגוּר חוֹתָם צַר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חותם דסטרא אחרא",
+   "target_he": "תאוה",
+   "proof": "שֶׁהִיא בְּחִינַת תַּאֲוָה הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גאוה",
+   "target_he": "תאוה",
+   "proof": "שֶׁנַּעֲשֶׂה עַל־יְדֵי גַּאֲוָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תאוה",
+   "target_he": "חותם דסטרא אחרא",
+   "proof": "שֶׁהוּא בְּחִינַת חוֹתָם דְּסִטְרָא־אַחֲרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הכנעת התאוה",
+   "target_he": "תפילין, מוחין",
+   "proof": "וְעַל־יְדֵי שֶׁהֵם מַכְנִיעִין זֹאת הַתַּאֲוָה, שֶׁהוּא בְּחִינַת חוֹתָם דְּסִטְרָא־אַחֲרָא, עַל־יְדֵי־זֶה נַעֲשֶׂה בְּחִינַת תְּפִלִּין, מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילין, מוחין",
+   "target_he": "חותם דקדושה",
+   "proof": "שֶׁהֵם בְּחִינַת חוֹתָם דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חותם דקדושה",
+   "target_he": "שימני כחותם על לבך כחותם על זרועך",
+   "proof": "בְּחִינַת (שיר השירים ח׳:ו׳): שִׂימֵנִי כַחוֹתָם עַל לִבֶּךְ כַּחוֹתָם עַל זְרוֹעֶךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

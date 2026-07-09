@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 78,
+ "chunk": "78_0_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרָה שֶׁלֹּא לִשְׁמָהּ",
+   "target_he": "יִשּׁוּב הָעוֹלָם",
+   "proof": "כִּי כְּשֶׁעוֹסֵק בַּתּוֹרָה שֶׁלֹּא לִשְׁמָהּ, אֵינוֹ מוֹעִיל בְּלִמּוּדוֹ לְיִשּׁוּב הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עוֹסֵק לִשְׁמָהּ",
+   "target_he": "עוֹסֵק בְּיִשּׁוּב הָעוֹלָם",
+   "proof": "רַק כְּשֶׁעוֹסֵק לִשְׁמָהּ, שֶׁזֶּהוּ עוֹסֵק בְּיִשּׁוּב הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְבַטֵּל מִלִּמּוּדוֹ",
+   "target_he": "אִישׁ פָּשׁוּט מַמָּשׁ",
+   "proof": "כְּשֶׁמְּבַטֵּל מִלִּמּוּדוֹ, שֶׁאָז הוּא בְּחִינַת אִישׁ פָּשׁוּט מַמָּשׁ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חִיּוּתוֹ בְּעֵת פְּשִׁיטוּתוֹ",
+   "target_he": "קִיּוּם הָעוֹלָם קֹדֶם קַבָּלַת הַתּוֹרָה",
+   "proof": "כֵּן הוּא מְחַיֶּה עַצְמוֹ בְּעֵת פְּשִׁיטוּתוֹ מִבְּחִינַת קִיּוּם הָעוֹלָם קֹדֶם קַבָּלַת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חַסְדּוֹ",
+   "target_he": "קִיּוּם הָעוֹלָם",
+   "proof": "וְהָיָה עִקָּר קִיּוּם הָעוֹלָם עַל־יְדֵי חַסְדּוֹ לְבַד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חִיּוּת הַצַּדִּיק בְּעֵת פְּשִׁיטוּתוֹ",
+   "target_he": "קִיּוּם הָעוֹלָם עַל־יְדֵי חַסְדּוֹ",
+   "proof": "הוּא מְקַבֵּל חִיּוּת מִבְּחִינָה זוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

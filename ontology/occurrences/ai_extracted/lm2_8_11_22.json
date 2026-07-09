@@ -1,0 +1,118 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_11_22",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "חִדּוּשׁ הָעוֹלָם שֶׁלֶּעָתִיד",
+   "proof": "וְעַל־יְדֵי אֱמוּנָה זוֹכִין לְחִדּוּשׁ הָעוֹלָם שֶׁלֶּעָתִיד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וּשְׁוַר עֲשַׂר אַמִּין",
+   "target_he": "הַשִּׁיר שֶׁלֶּעָתִיד",
+   "proof": "וּשְׁוַר עֲשַׂר אַמִּין – זֶה בְּחִינַת הַשִּׁיר שֶׁלֶּעָתִיד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַשִּׁיר שֶׁלֶּעָתִיד",
+   "target_he": "שִׁיר פָּשׁוּט",
+   "proof": "שֶׁהוּא שִׁיר פָּשׁוּט וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שִׁיר פָּשׁוּט",
+   "target_he": "יוּד אוֹתִיּוֹת",
+   "proof": "שֶׁהוּא יוּד אוֹתִיּוֹת, בְּחִינַת עֲשַׂר אַמִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוּד אוֹתִיּוֹת",
+   "target_he": "עֲשַׂר אַמִּין",
+   "proof": "שֶׁהוּא יוּד אוֹתִיּוֹת, בְּחִינַת עֲשַׂר אַמִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וּשְׁוַר",
+   "target_he": "מְדַלֵּג עַל הֶהָרִים, מְקַפֵּץ עַל הַגְּבָעוֹת",
+   "proof": "וְזֶהוּ: וּשְׁוַר – זֶה בְּחִינַת (שיר השירים ב׳:ח׳): מְדַלֵּג עַל הֶהָרִים, מְקַפֵּץ עַל הַגְּבָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָרִים וּגְבָעוֹת",
+   "target_he": "רֵיחוֹת",
+   "proof": "הָרִים וּגְבָעוֹת הֵם בְּחִינַת רֵיחוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קוֹל הַנִּגּוּן",
+   "target_he": "הָרֵיחוֹת הַגְּדֵלִים בַּגָּן",
+   "proof": "הַיְנוּ הָרֵיחוֹת הַגְּדֵלִים בַּגָּן עַל־יְדֵי קוֹל הַנִּגּוּן, שֶׁהוּא מַשְׁקֶה אֶת הַגָּן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קוֹל הַנִּגּוּן",
+   "target_he": "מַשְׁקֶה אֶת הַגָּן",
+   "proof": "עַל־יְדֵי קוֹל הַנִּגּוּן, שֶׁהוּא מַשְׁקֶה אֶת הַגָּן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְדַלֵּג עַל הֶהָרִים מְקַפֵּץ וְכוּ'",
+   "target_he": "הַנִּגּוּן הַנַּ\"ל",
+   "proof": "וְזֶה בְּחִינַת: מְדַלֵּג עַל הֶהָרִים מְקַפֵּץ וְכוּ' – זֶה בְּחִינַת הַנִּגּוּן הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַנִּגּוּן",
+   "target_he": "הָרֵיחוֹת",
+   "proof": "שֶׁעַל־יָדוֹ גְּדֵלִים הָרֵיחוֹת, שֶׁהֵם בְּחִינַת הָרִים וּגְבָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָרֵיחוֹת",
+   "target_he": "הָרִים וּגְבָעוֹת",
+   "proof": "שֶׁעַל־יָדוֹ גְּדֵלִים הָרֵיחוֹת, שֶׁהֵם בְּחִינַת הָרִים וּגְבָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

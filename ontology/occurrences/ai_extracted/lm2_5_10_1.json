@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_10_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שבעה איקלימים",
+   "target_he": "שבעה עיני ה'",
+   "proof": "בְּחִינַת שִׁבְעָה עֵינֵי ה' הֵמָּה מְשׁוֹטְטִים בְּכָל הָאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שבעה איקלימים",
+   "target_he": "שבעה רועים",
+   "proof": "כְּנֶגֶד בְּחִינַת שִׁבְעָה רוֹעִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שבעה רועים",
+   "target_he": "תפילין",
+   "proof": "שֶׁהֵם בְּחִינַת תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילין",
+   "target_he": "מלאכים",
+   "proof": "שֶׁמִּשָּׁם נַעֲשִׂין בְּחִינַת הַמַּלְאָכִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "המלך מקבל השפע",
+   "target_he": "אנת הוא מלכא",
+   "proof": "וְאַחַר כָּךְ מְקַבֵּל הַמֶּלֶךְ אֶת הַשֶּׁפַע, בִּבְחִינַת אַנְתְּ הוּא מַלְכָּא וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "המלך מקבל השפע מן השדה",
+   "target_he": "מלך לשדה נעבד",
+   "proof": "וְזֶה בְּחִינַת מֶלֶךְ לְשָׂדֶה נֶעֱבָד, שֶׁהַמֶּלֶךְ מְקַבֵּל הַשֶּׁפַע מִן הַשָּׂדֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

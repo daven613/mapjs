@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "זקן",
+   "target_he": "אריכות ימים",
+   "proof": "וְאַבְרָהָם שֶׁזָּכָה לִבְחִינַת זָקֵן, בְּחִינַת אֲרִיכוּת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זקן",
+   "target_he": "עשירות",
+   "proof": "עַל־יְדֵי־זֶה זָכָה לַעֲשִׁירוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עשירות",
+   "target_he": "וְאַבְרָהָם זָקֵן בָּא בַּיָּמִים וַה' בֵּרַךְ אֶת אַבְרָהָם בַּכֹּל",
+   "proof": "בְּחִינַת (בראשית כ״ד:א׳): וְאַבְרָהָם זָקֵן בָּא בַּיָּמִים וַה' בֵּרַךְ אֶת אַבְרָהָם בַּכֹּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "התבוננות",
+   "target_he": "מִזְּקֵנִים אֶתְבּוֹנָן",
+   "proof": "וְזֶה בְּחִינַת (תהילים קי״ט:ק׳): מִזְּקֵנִים אֶתְבּוֹנָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זקן",
+   "target_he": "התבוננות",
+   "proof": "שֶׁעַל יְדֵי בְּחִינַת זָקֵן הַנַּ\"ל בָּא לְהִתְבּוֹנְנוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עשירות",
+   "target_he": "התבוננות",
+   "proof": "שֶׁהוּא בָּא עַל יְדֵי עֲשִׁירוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עשירות",
+   "target_he": "אריכות ימים",
+   "proof": "שֶׁנִּמְשָׁךְ לְתוֹךְ אֲרִיכוּת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אריכות ימים",
+   "target_he": "זקן",
+   "proof": "שֶׁהוּא בְּחִינַת זָקֵן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

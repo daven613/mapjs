@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 32,
+ "chunk": "32_0_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רוּחַ אַפֵּינוּ מְשִׁיחַ ה'",
+   "target_he": "רוּחַ־קִנְאָה",
+   "proof": "שֶׁבְּחִינַת רוּחַ אַפֵּינוּ מְשִׁיחַ ה' נַעֲשֶׂה רוּחַ־קִנְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַסְּתִירָה",
+   "target_he": "גֵּט",
+   "proof": "הוּא מְקַנֵּא עַל הַסְּתִירָה לְבַד, כִּי נֶחֱשָׁב פְּגָם כְּנֶגֶד עֹצֶם טָהֳרָתוֹ שֶׁל הָרוּחַ־קִנְאָה, וְנַעֲשֶׂה עַל־יְדֵי־זֶה לִפְעָמִים גֵּט",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַסֵּפֶר",
+   "target_he": "גֵּט",
+   "proof": "כִּי נַעֲשֶׂה עַל־יְדֵי הַסֵּפֶר, שֶׁשָּׁם שׁוֹרָה רוּחוֹ שֶׁל מָשִׁיחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוּחוֹ שֶׁל מָשִׁיחַ",
+   "target_he": "הָרוּחַ־קִנְאָה",
+   "proof": "שֶׁשָּׁם שׁוֹרָה רוּחוֹ שֶׁל מָשִׁיחַ, שֶׁהוּא הָרוּחַ־קִנְאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

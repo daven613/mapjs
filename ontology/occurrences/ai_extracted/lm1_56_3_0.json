@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מלכות",
+   "target_he": "הרבנות מקברת את בעליה",
+   "proof": "שֶׁלֹּא תִּהְיֶה בִּבְחִינוֹת (פסחים פז:): הָרַבָּנוּת מְקַבֶּרֶת אֶת בְּעָלֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בחינת המלכות",
+   "target_he": "בחינת צופה",
+   "proof": "כִּי כָּל אֶחָד לְפִי בְּחִינַת הַמַּלְכוּת שֶׁיֵּשׁ לוֹ, הוּא בְּחִינַת צוֹפֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מזהיר ומוכיח אותם",
+   "target_he": "הצלת נפשו",
+   "proof": "וְאִם הוּא מַזְהִיר וּמוֹכִיחַ אוֹתָם, אֲזַי הוּא עוֹשֶׂה אֶת שֶׁלּוֹ, וּמַצִּיל אֶת נַפְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מזהיר ומוכיח אותם",
+   "target_he": "העונש",
+   "proof": "אֲבָל אִם אֵינוֹ מַזְהִיר וּמוֹכִיחַ אוֹתָם, אֲזַי הָעֹנֶשׁ עָלָיו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

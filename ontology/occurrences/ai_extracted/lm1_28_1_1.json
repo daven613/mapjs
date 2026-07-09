@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 28,
+ "chunk": "28_1_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תלאו גם אלקים",
+   "target_he": "כפירות גדולות",
+   "proof": "נִמְצָא שֶׁעַל־יְדֵי־זֶה אֵלּוּ בְּנֵי אָדָם נוֹפְלִים בִּכְפִירוֹת גְּדוֹלוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כפירות גדולות",
+   "target_he": "כבוד יראי ה'",
+   "proof": "עַל־יְדֵי־זֶה אֶת יִרְאֵי ה' לֹא יְכַבְּדוּ, וּמְחָרְפִים וּמְבַיְּשִׁים אוֹתָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בושה",
+   "target_he": "עבודת אלילים",
+   "proof": "וּבִשְׁבִיל זֶה בּוּשָׁה נִקְרָא עֲבוֹדַת אֶלִילִים, כְּמוֹ שֶׁכָּתוּב: וַיִּנָּזְרוּ לַבֹּשֶׁת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כפירות",
+   "target_he": "בושה וחרוף",
+   "proof": "כִּי הַבּוּשָׁה וְהַחֵרוּף נַעֲשֶׂה מֵהַכְּפִירוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

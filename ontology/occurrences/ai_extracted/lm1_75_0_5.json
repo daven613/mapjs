@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 75,
+ "chunk": "75_0_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "וְהָיוּ לְבָשָׂר אֶחָד",
+   "target_he": "שֶׁיְּהֵא הַגּוּף אֶחָד עִם הַדִּבּוּר עַד שֶׁיְּהֵא כְּאֶפֶס",
+   "proof": "וְזֶה פֵּרוּשׁ הַפָּסוּק: וְהָיוּ לְבָשָׂר אֶחָד – שֶׁיְּהֵא הַגּוּף אֶחָד עִם הַדִּבּוּר עַד שֶׁיְּהֵא כְּאֶפֶס",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאָה",
+   "target_he": "בִּטּוּל הַגּוּף",
+   "proof": "וּבַמֶּה הוּא בָּא לְדָבָר זֶה, בְּיִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פַּחַד",
+   "target_he": "גּוּף קָשֶׁה",
+   "proof": "גּוּף קָשֶׁה פַּחַד שׁוֹבְרוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פַּחַד",
+   "target_he": "פַּחַד יִצְחָק",
+   "proof": "וּפַחַד, הוּא פַּחַד יִצְחָק, הוּא יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פַּחַד",
+   "target_he": "יִרְאָה",
+   "proof": "וּפַחַד, הוּא פַּחַד יִצְחָק, הוּא יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַבְּרָכָה",
+   "target_he": "יִרְאָה",
+   "proof": "כִּי הַבְּרָכָה, כְּשֶׁיִּהְיֶה בִּבְחִינַת יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאָה",
+   "target_he": "אַרְצִיּוּת",
+   "proof": "כִּי הַבְּרָכָה, כְּשֶׁיִּהְיֶה בִּבְחִינַת יִרְאָה, כָּל אַפְסֵי אָרֶץ. כְּלוֹמַר: כָּל אַרְצִיּוּת נַעֲשִׂים אֶפֶס",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כָּל אַפְסֵי אָרֶץ",
+   "target_he": "כָּל אַרְצִיּוּת נַעֲשִׂים אֶפֶס",
+   "proof": "כָּל אַפְסֵי אָרֶץ. כְּלוֹמַר: כָּל אַרְצִיּוּת נַעֲשִׂים אֶפֶס",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כָּל אַרְצִיּוּת נַעֲשִׂים אֶפֶס",
+   "target_he": "וְהָיוּ לְבָשָׂר אֶחָד",
+   "proof": "כְּמָה שֶׁכָּתוּב: וְהָיוּ לְבָשָׂר אֶחָד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַחֲשָׁבָה וּצְעָקָה",
+   "target_he": "מֹשֶׁה וְדָוִד",
+   "proof": "וּבְתוֹרָה וּתְפִלָּה יֵשׁ שְׁנֵי גְּוָנִים, מַחֲשָׁבָה וּצְעָקָה, וְהוּא בְּחִינַת מֹשֶׁה וְדָוִד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צְעָקָה",
+   "target_he": "חָכְמוֹת בַּחוּץ תָּרֹנָּה",
+   "proof": "כִּי הַצְּעָקָה בְּחִינַת: חָכְמוֹת בַּחוּץ תָּרֹנָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַחֲשָׁבָה",
+   "target_he": "חַמּוּקֵי יְרֵכַיִךְ",
+   "proof": "וּבְמַחֲשָׁבָה בְּחִינַת: חַמּוּקֵי יְרֵכַיִךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַקְהִיל קְהִלּוֹת בָּרַבִּים",
+   "target_he": "חָכְמוֹת בַּחוּץ תָּרֹנָּה",
+   "proof": "כְּלוֹמַר שֶׁהָיָה מַקְהִיל קְהִלּוֹת בָּרַבִּים, וְזֶה בְּחִינַת: חָכְמוֹת בַּחוּץ תָּרֹנָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

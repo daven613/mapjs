@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מֹשֶׁה יָבוֹא אֶל פַּרְעֹה",
+   "target_he": "הֶחָלָל הַפָּנוּי",
+   "proof": "שֶׁמֹּשֶׁה דַּיְקָא, יָבוֹא אֶל פַּרְעֹה, בְּחִינוֹת הֶחָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲבָדִים",
+   "target_he": "הַהַקְדָּמוֹת שֶׁל כָּל הַחָכְמוֹת",
+   "proof": "עֲבָדִים הֵם בְּחִינוֹת הַהַקְדָּמוֹת שֶׁל כָּל הַחָכְמוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַחָכְמוֹת וְהַהַקְדָּמוֹת הַבָּאִים מֵחָלָל הַפָּנוּי",
+   "target_he": "כְּבֵדוּת לֵב",
+   "proof": "הַיְנוּ שֶׁכָּל הַחָכְמוֹת וְהַהַקְדָּמוֹת הַבָּאִים מִשָּׁם מֵחָלָל הַפָּנוּי, יֵשׁ בָּהֶם כְּבֵדוּת לֵב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּבֵדוּת לֵב",
+   "target_he": "נִשְׁאָרִים בְּקֻשְׁיָא",
+   "proof": "יֵשׁ בָּהֶם כְּבֵדוּת לֵב, שֶׁנִּשְׁאָרִים בְּקֻשְׁיָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

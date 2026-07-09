@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 47,
+ "chunk": "47_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הָרָע שֶׁלּוֹ",
+   "target_he": "הַקְּלִפּוֹת הַנִּבְרָאִים עַל־יְדֵי עֲבֵרוֹת",
+   "proof": "בָּא עִמּוֹ גַּם הָרָע שֶׁלּוֹ, דְּהַיְנוּ הַקְּלִפּוֹת הַנִּבְרָאִים עַל־יְדֵי עֲבֵרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲבֵרוֹת",
+   "target_he": "קְלִפּוֹת",
+   "proof": "הַקְּלִפּוֹת הַנִּבְרָאִים עַל־יְדֵי עֲבֵרוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קְלִפּוֹת",
+   "target_he": "בִּלְבּוּל וְדֹחַק",
+   "proof": "וְהֵם הַדּוֹחֲקִים אֶת הָעוֹלָם וְעוֹשִׂים בִּלְבּוּל וְדֹחַק גָּדוֹל בִּשְׁעַת אֲמִירַת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דֻּחְקָא דְּכַלָּה",
+   "target_he": "הָרָע שֶׁל כָּל אֶחָד וְאֶחָד",
+   "proof": "הַאי דֻּחְקָא דְּכַלָּה מִנַּיְהוּ, הַיְנוּ מֵהָרָע שֶׁל כָּל אֶחָד וְאֶחָד, שֶׁהֵם הַקְּלִפּוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַה שֶּׁאֶחָד שׁוֹמֵעַ יוֹתֵר וּלְמַעְלָה מִמֹּחוֹ וַהֲבָנָתוֹ",
+   "target_he": "מוֹתָרוֹת",
+   "proof": "דְּהַיְנוּ מַה שֶּׁאֶחָד שׁוֹמֵעַ יוֹתֵר וּלְמַעְלָה מִמֹּחוֹ וַהֲבָנָתוֹ, זֶה בְּחִינַת מוֹתָרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוֹתָרוֹת",
+   "target_he": "יְנִיקַת הַקְּלִפּוֹת",
+   "proof": "וּמִשָּׁם יְנִיקָתָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוֹתָרוֹת",
+   "target_he": "רָזֵי תּוֹרָה שֶׁנִּמְסַר לַחִיצוֹנִים",
+   "proof": "וְזֶה בְּחִינַת רָזֵי תּוֹרָה שֶׁנִּמְסַר לַחִיצוֹנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רָזֵי תּוֹרָה",
+   "target_he": "יְנִיקַת הַקְּלִפּוֹת",
+   "proof": "כִּי יְנִיקָתָם רַק מִבְּחִינַת רָזֵי תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

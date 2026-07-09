@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 58,
+ "chunk": "58_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יָקוּם מֹשֶׁה כָּלוּל מִשְּׁלֹשָׁה אָבוֹת",
+   "target_he": "מַה שֶּׁהָיָה הוּא שֶׁיִּהְיֶה",
+   "proof": "בְּחִינַת (קהלת א׳:ט׳): מַה שֶּׁהָיָה הוּא שֶׁיִּהְיֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֶׁיָּקוּם בַּתְּחִיָּה כָּלוּל מִשְּׁלָשְׁתָּן",
+   "target_he": "הִנְּךָ שׁוֹכֵב עִם אֲבוֹתֶיךָ וְקָם",
+   "proof": "בְּחִינַת (דברים ל״א:ט״ז): הִנְּךָ שׁוֹכֵב עִם אֲבוֹתֶיךָ וְקָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֹשֶׁה כָּלוּל מִשְּׁלֹשָׁה אָבוֹת",
+   "target_he": "חַד בִּתְלָת קָיְמָא",
+   "proof": "וְזֶה: חַד בִּתְלָת קָיְמָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

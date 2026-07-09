@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "ותרץ ותגד לאביה",
+   "target_he": "ופושעים יכשלו בם",
+   "proof": "וַתָּרָץ וַתַּגֵּד לְאָבִיהָ – הַיְנוּ זֹאת הַבְּחִינָה שֶׁל וּפֹשְׁעִים יִכָּשְׁלוּ בָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ותגד לאביה",
+   "target_he": "התורה מגדת ללמדן ערמימיות",
+   "proof": "וַתַּגֵּד לְאָבִיהָ – שֶׁהַתּוֹרָה הִיא מַגֶּדֶת לְהַלַּמְדָן עַרְמִימִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד תורה",
+   "target_he": "ערמימיות",
+   "proof": "כִּי כְּשֶׁאָדָם לוֹמֵד תּוֹרָה, נִכְנָס בּוֹ עַרְמִימִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סיוע מלעלא",
+   "target_he": "קדושה",
+   "proof": "כִּי הַקְּדֻשָּׁה צָרִיךְ סִיּוּעַ מִלְּעֵלָּא, כְּמוֹ שֶׁאָמְרוּ (ע\"ז נה.): הַבָּא לִטָּהֵר מְסַיְּעִין לוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

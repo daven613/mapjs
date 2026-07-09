@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 13,
+ "chunk": "13_5_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אופנים",
+   "target_he": "גופין",
+   "proof": "וְאוֹפַנִּים הֵן הַגּוּפִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כסא",
+   "target_he": "נפש",
+   "proof": "וְכִסֵּא שֶׁבִּבְחִינַת נֶפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כסא שבבחינת נפש",
+   "target_he": "נפש החכם שנתכסה",
+   "proof": "וְכִסֵּא שֶׁבִּבְחִינַת נֶפֶשׁ, הוּא נֶפֶשׁ הֶחָכָם שֶׁנִּתְכַּסָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נפש החכם שנתכסה",
+   "target_he": "יקרה היא מפנינים",
+   "proof": "בִּבְחִינַת (משלי ג׳:ט״ז): יְקָרָה הִיא מִפְּנִינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יוקר נפש החכם",
+   "target_he": "התכסות לפני ולפנים",
+   "proof": "כִּי מֵחֲמַת שֶׁנֶּפֶשׁ הֶחָכָם הוּא יָקָר, הוּא נִתְכַּסֶּה לִפְנַי וְלִפְנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "האדם היושב על הכסא",
+   "target_he": "דעתו של החכם",
+   "proof": "וְהָאָדָם הַיּוֹשֵׁב עַל הַכִּסֵּא, הוּא דַּעְתּוֹ שֶׁל הֶחָכָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "נפש",
+   "proof": "כִּי גַּם בְּלֹא דַעַת נֶפֶשׁ לֹא טוֹב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

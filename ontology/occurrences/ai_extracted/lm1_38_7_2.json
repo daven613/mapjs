@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 38,
+ "chunk": "38_7_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עברו",
+   "target_he": "התגלות",
+   "proof": "וְעָבְרוּ – לְשׁוֹן הִתְגַּלּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "י\"ו קרנות על חדו",
+   "target_he": "חידוד שכלו וחידוש שכלו",
+   "proof": "י\"ו קְרָנוֹת עַל חֻדּוֹ – הַיְנוּ עַל־יְדֵי חִדּוּד שִׂכְלוֹ וְחִדּוּשׁ שִׂכְלוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תורה",
+   "target_he": "י\"ו",
+   "proof": "שֶׁקִּבֵּל עַל־יְדֵי הַתּוֹרָה שֶׁנִּקְרָא י\"ו כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "חידוד שכלו וחידוש שכלו",
+   "proof": "חִדּוּד שִׂכְלוֹ וְחִדּוּשׁ שִׂכְלוֹ, שֶׁקִּבֵּל עַל־יְדֵי הַתּוֹרָה שֶׁנִּקְרָא י\"ו כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חידוד שכלו וחידוש שכלו",
+   "target_he": "קרון עור הפנים",
+   "proof": "עַל־יְדֵי חִדּוּד שִׂכְלוֹ וְחִדּוּשׁ שִׂכְלוֹ... נִתְגַּלֶּה קֵרוּן עוֹר הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קרון עור הפנים",
+   "target_he": "בושה",
+   "proof": "הַיְנוּ בּוּשָׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בושה",
+   "target_he": "תפילין",
+   "proof": "בְּחִינַת תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

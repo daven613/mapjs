@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_2_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יָמִין וּשְׂמֹאל",
+   "target_he": "אַף יָדִי יִסְּדָה אָרֶץ וִימִינִי טִפְּחָה שָׁמָיִם",
+   "proof": "וְנִכָּר בֵּין יָמִין לִשְׂמֹאל, בִּבְחִינַת (ישעיהו מ״ח:י״ג): אַף יָדִי יִסְּדָה אָרֶץ וִימִינִי טִפְּחָה שָׁמָיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַכֹּחַ וְהַפֹּעַל",
+   "target_he": "שְׁתֵּי הַיָּדַיִם",
+   "proof": "שֶׁהֵם בְּחִינַת שְׁתֵּי הַיָּדַיִם, שְׁתֵּי הָרוּחוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַכֹּחַ וְהַפֹּעַל",
+   "target_he": "שְׁתֵּי הָרוּחוֹת",
+   "proof": "שֶׁהֵם בְּחִינַת שְׁתֵּי הַיָּדַיִם, שְׁתֵּי הָרוּחוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְתָּקַת הַחֲרוֹן אַף",
+   "target_he": "גְּמַר הַבְּרִיאָה",
+   "proof": "וְכָל זֶה נַעֲשֶׂה עַל יְדֵי הַמְתָּקַת הַחֲרוֹן אַף כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמְתָּקַת הַחֲרוֹן אַף",
+   "target_he": "אַף יָדִי",
+   "proof": "וְזֶה בְּחִינַת אַף יָדִי – אַף דַּיְקָא כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

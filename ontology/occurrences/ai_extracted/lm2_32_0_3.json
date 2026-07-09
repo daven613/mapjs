@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 32,
+ "chunk": "32_0_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "משיח",
+   "target_he": "חוטם",
+   "proof": "כִּי מָשִׁיחַ הוּא בְּחִינוֹת חֹטֶם, בִּבְחִינוֹת רוּחַ אַפֵּינוּ מְשִׁיחַ ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמירה מניאוף",
+   "target_he": "בחינת משיח",
+   "proof": "וְעִקָּר הַדָּבָר שֶׁבּוֹ תָּלוּי בְּחִינוֹת מָשִׁיחַ הוּא שְׁמִירָה מִנִּאוּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ריח ניאוף",
+   "target_he": "בחינת משיח",
+   "proof": "כִּי הוּא פּוֹגֵם בְּחִינַת מָשִׁיחַ שֶׁלּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אנפי אורייתא",
+   "target_he": "ספרים הקדושים שמגלין הפנים של תורה",
+   "proof": "דְּהַיְנוּ הַסְּפָרִים הַקְּדוֹשִׁים שֶׁמְּגַלִּין הַפָּנִים שֶׁל תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוח אלקים",
+   "target_he": "רוחו של משיח",
+   "proof": "רוּחַ אֱלֹקִים – דָּא רוּחוֹ שֶׁל מָשִׁיחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מים",
+   "target_he": "התורה",
+   "proof": "וּמַיִם הוּא הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

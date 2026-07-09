@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_5_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "השתמש עם המטה בשעת תפלתו",
+   "target_he": "וירם משה את ידו",
+   "proof": "וְזֶה בְּחִינַת: וַיָּרֶם משֶׁה אֶת יָדוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ידו",
+   "target_he": "תפלתו",
+   "proof": "יָדוֹ זֶה תְּפִלָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ויך את הסלע במטהו פעמים",
+   "target_he": "לב העליון",
+   "proof": "כִּבְיָכוֹל, הִכָּה צוּר וַיָּזוּבוּ מָיִם (תהילים ע״ח:כ׳) – שֶׁהִכָּה לֵב הָעֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

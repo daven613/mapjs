@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 36,
+ "chunk": "36_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "כְּלָלוּת שֶׁל שִׁבְעִים לָשׁוֹן שֶׁל מִדּוֹתֵיהֶן הָרָעוֹת",
+   "target_he": "תַּאֲוַת נִאוּף",
+   "proof": "וְדַע, שֶׁכְּלָלוּת שֶׁל שִׁבְעִים לָשׁוֹן, שֶׁל מִדּוֹתֵיהֶן הָרָעוֹת הַלָּלוּ, הִיא תַּאֲוַת נִאוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת תַּאֲוַת נִאוּף",
+   "target_he": "שְׁבִירַת כָּל הַתַּאֲווֹת",
+   "proof": "מִי שֶׁמְּשַׁבֵּר הַתַּאֲוָה הַזֹּאת, אֲזַי בְּקַל יָכוֹל לְשַׁבֵּר כָּל הַתַּאֲווֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּלּוּת הַתּוֹרָה",
+   "target_he": "דַּעַת",
+   "proof": "לְפִי שֶׁהוּא כְּלָל שֶׁל הִתְגַּלּוּת הַתּוֹרָה, שֶׁהוּא בְּחִינַת דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֹשֶׁה רַבֵּנוּ",
+   "target_he": "כְּלָלוּת כָּל הַתּוֹרָה",
+   "proof": "מֹשֶׁה רַבֵּינוּ עוֹלֶה בְּגִימַטְרִיָּא תַּרְיַ\"ג... שֶׁהוּא כְּלָלוּת כָּל הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קְלִפָּה",
+   "target_he": "תַּאֲוַת נִאוּף",
+   "proof": "וּמֵחֲמַת שֶׁהוּא בַּקְּלִפָּה, לְפִיכָךְ הוּא מְשֻׁקָּע בַּתַּאֲוָה הַזֹּאת בְּיוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

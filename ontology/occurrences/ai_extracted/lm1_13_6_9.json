@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 13,
+ "chunk": "13_6_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַתּוֹרָה",
+   "target_he": "רְאִיָּה",
+   "proof": "הַתּוֹרָה, שֶׁהִיא בְּחִינַת רְאִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָּל בָּשָׂר יַחְדָּו",
+   "target_he": "לְקִיטַת הַנְּפָשׁוֹת כֻּלָּם",
+   "proof": "כָּל בָּשָׂר יַחְדָּו, זֶה בְּחִינַת לְקִיטַת הַנְּפָשׁוֹת כֻּלָּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְקִיטַת הַנְּפָשׁוֹת כֻּלָּם",
+   "target_he": "לֹקֵחַ נְפָשׁוֹת חָכָם",
+   "proof": "זֶה בְּחִינַת לְקִיטַת הַנְּפָשׁוֹת כֻּלָּם, בִּבְחִינַת לֹקֵחַ נְפָשׁוֹת חָכָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוּחַ נְדִיבָה",
+   "target_he": "כִּי פִי ה' דִּבֵּר",
+   "proof": "כָּל זֶה נַעֲשֶׂה עַל־יְדֵי רוּחַ נְדִיבָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוּחַ נְדִיבָה",
+   "target_he": "פִּי ה'",
+   "proof": "שֶׁהוּא פִּי ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פִּי ה'",
+   "target_he": "צְדָקָה",
+   "proof": "בְּפִיךָ זוֹ צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

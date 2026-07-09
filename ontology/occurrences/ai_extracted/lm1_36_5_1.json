@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 36,
+ "chunk": "36_5_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אות ברית קודש",
+   "target_he": "השגת ותפיסת דיבורו של הצדיק",
+   "proof": "שֶׁאִי אֶפְשָׁר לְשׁוּם אָדָם לְהַשִּׂיג וְלִתְפֹּס בְּדִבּוּרוֹ שֶׁל הַצַּדִּיק, אִם לֹא שֶׁתִּקֵּן תְּחִלָּה אוֹת בְּרִית קֹדֶשׁ כָּרָאוּי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אות ברית קודש",
+   "target_he": "הבנת ותפיסת דיבורו של הצדיק",
+   "proof": "וַאֲזַי יָכוֹל לְהָבִין וְלִתְפֹּס דִּבּוּרוֹ שֶׁל הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אבא ואמא",
+   "target_he": "חכמה ובינה",
+   "proof": "שֶׁהֵם בְּחִינַת חָכְמָה וּבִינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חכמה ובינה",
+   "target_he": "י\"ה",
+   "proof": "שֶׁהֵם י\"ה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "י\"ה",
+   "target_he": "מוחין",
+   "proof": "שֶׁהֵם מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אות ברית קודש",
+   "target_he": "מוחין בשלמות",
+   "proof": "כְּשֶׁתִּקֵּן אוֹת בְּרִית קֹדֶשׁ כָּרָאוּי, אֲזַי הַמֹּחִין שֶׁלּוֹ בִּשְׁלֵמוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוחין בשלמות",
+   "target_he": "הבנת דיבורו של הצדיק",
+   "proof": "וְיָכוֹל לְהָבִין דִּבּוּרוֹ שֶׁל הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

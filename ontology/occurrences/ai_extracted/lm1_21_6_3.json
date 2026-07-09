@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 21,
+ "chunk": "21_6_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מְצֹרָע",
+   "target_he": "סְגִירוּ דִּנְהוֹרָא עִלָּאָה",
+   "proof": "וּמְצֹרָע דָּא סְגִירוּ דִּנְהוֹרָא עִלָּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "סְגִירוּ דִּנְהוֹרָא עִלָּאָה",
+   "target_he": "אוֹר הַפָּנִים",
+   "proof": "הַיְנוּ אוֹר הַפָּנִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סְגִירוּ דִּנְהוֹרָא עִלָּאָה",
+   "target_he": "מֵת",
+   "proof": "כִּי עַל־יְדֵי סְגִירוּ דִּנְהוֹרָא עִלָּאָה הִיא בִּבְחִינַת מֵת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מְצֹרָע",
+   "target_he": "מֵת",
+   "proof": "כִּי מְצֹרָע חָשׁוּב כַּמֵּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּצֵאתוֹ מֵרֶחֶם אִמּוֹ",
+   "target_he": "יִבּוּם",
+   "proof": "אֲשֶׁר בְּצֵאתוֹ מֵרֶחֶם אִמּוֹ – זֶה בְּחִינַת יִבּוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִבּוּם",
+   "target_he": "אִשְׁתּוֹ נַעֲשֵׂית לוֹ אֵם",
+   "proof": "שֶׁעַל־יְדֵי הַיִּבּוּם אִתְּתֵהּ אִמֵּהּ, שֶׁאִשְׁתּוֹ נַעֲשֵׂית לוֹ אֵם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

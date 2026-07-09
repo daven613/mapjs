@@ -1,0 +1,28 @@
+{
+ "book": "lm2",
+ "torah": 60,
+ "chunk": "60_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מִלְחָמוֹת",
+   "target_he": "יַקְרוּת",
+   "proof": "כְּשֶׁיֵּשׁ מִלְחָמוֹת בָּעוֹלָם, הַשֵּׂכֶל מְחַיֵּב שֶׁיִּהְיֶה יַקְרוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁפִיכוּת־דָּמִים",
+   "target_he": "הַקְּלָלָה שֶׁל קַיִן",
+   "proof": "כִּי נִתְעוֹרֵר הַקְּלָלָה שֶׁל קַיִן... עַל־יְדֵי הַשְּׁפִיכוּת־דָּמִים שֶׁיֵּשׁ בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

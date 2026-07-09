@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 80,
+ "chunk": "80_19_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עִקַּר הַקְּדֻשָּׁה",
+   "target_he": "חָכְמָה",
+   "proof": "וְעִקַּר הַקְּדֻשָּׁה הוּא חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חָכְמָה",
+   "target_he": "קֹדֶשׁ",
+   "proof": "כִּי חָכְמָה נִקְרָא קֹדֶשׁ כַּיָּדוּעַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קֹדֶשׁ",
+   "target_he": "רֵאשִׁית",
+   "proof": "כִּי קֹדֶשׁ הוּא בְּחִינַת רֵאשִׁית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רֵאשִׁית",
+   "target_he": "חָכְמָה",
+   "proof": "וְרֵאשִׁית הוּא בְּחִינַת חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

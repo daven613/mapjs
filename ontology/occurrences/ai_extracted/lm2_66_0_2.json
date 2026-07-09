@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 66,
+ "chunk": "66_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יסוד הפשוט",
+   "target_he": "צדיק",
+   "proof": "שֶׁהוּא בְּחִינַת הַצַּדִּיק, בְּחִינַת (משלי י): צַדִּיק יְסוֹד עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדיק",
+   "target_he": "יסוד הפשוט",
+   "proof": "שֶׁהַצַּדִּיק הוּא בְּחִינַת יְסוֹד הַפָּשׁוּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נהר יוצא מעדן",
+   "target_he": "צדיק יסוד עולם",
+   "proof": "נָהָר יֹצֵא מֵעֵדֶן – זֶה בְּחִינַת צַדִּיק יְסוֹד עוֹלָם, בְּחִינַת יְסוֹד הַפָּשׁוּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ארבעה יסודות",
+   "target_he": "ארבעה ראשים",
+   "proof": "שֶׁהֵם בְּחִינַת אַרְבָּעָה רָאשִׁים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מעניש את אחד",
+   "target_he": "הצדיק בעצמו",
+   "proof": "וְעַל־כֵּן אִם הוּא מַעֲנִישׁ אֶת אֶחָד, נוֹגֵעַ אֶת הַצַּדִּיק בְּעַצְמוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

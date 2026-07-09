@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 5,
+ "chunk": "5_2_3",
+ "model": "claude-fable-5",
+ "extractor": "ai:claude-fable-5",
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עוֹלָם הַבָּא שֶׁלּוֹ בְּהַמִּצְוָה בְּעַצְמָהּ",
+   "target_he": "נָבִיא",
+   "proof": "נִמְצָא שֶׁעוֹלָם הַבָּא שֶׁלּוֹ בְּהַמִּצְוָה בְּעַצְמָהּ. וְזֶה בְּחִינַת נָבִיא",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "equation",
+   "source_he": "נָבִיא",
+   "target_he": "שִׁלּוּם שָׂכָר",
+   "proof": "וְזֶה בְּחִינַת נָבִיא, הַיְנוּ שִׁלּוּם שָׂכָר",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׁלּוּם שָׂכָר",
+   "target_he": "זֶה הַדָּבָר",
+   "proof": "הַיְנוּ שִׁלּוּם שָׂכָר, בִּבְחִינַת זֶה הַדָּבָר",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זֶה הַדָּבָר",
+   "target_he": "אַסְפַּקְלַרְיָא הַמְּאִירָה",
+   "proof": "בִּבְחִינַת זֶה הַדָּבָר, בִּבְחִינַת אַסְפַּקְלַרְיָא הַמְּאִירָה",
+   "explicitness": "explicit"
+  }
+ ]
+}

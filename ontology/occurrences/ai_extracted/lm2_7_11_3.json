@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_11_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בַּקָּשַׁת סְלַח נָא",
+   "target_he": "פְּגַם חֻרְבַּן הַבַּיִת",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִתְתַּקֵּן פְּגַם חֻרְבַּן הַבַּיִת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֲנֻכָּה",
+   "target_he": "חֲנֻכַּת־הַבַּיִת",
+   "proof": "נַעֲשֶׂה בְּחִינַת חֲנֻכַּת־הַבַּיִת, בְּחִינַת חֲנֻכָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סְלַח נָא",
+   "target_he": "חֲנֻכָּה",
+   "proof": "נִמְצָא שֶׁחֲנֻכָּה נַעֲשֶׂה עַל־יְדֵי סְלַח נָא כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צֵרוּף חֲנוּכָּה",
+   "target_he": "רָאשֵׁי־תֵבוֹת סְלַח נָא לַעֲוֹן הָעָם הַזֶּה כְּגֹדֶל חַסְדֶּךָ וְכַאֲשֶׁר נָשָׂאתָה",
+   "proof": "כִּי סְלַח נָא לַעֲוֹן הָעָם הַזֶּה כְּגֹדֶל חַסְדֶּךָ וְכַאֲשֶׁר נָשָׂאתָה וְכוּ' – הוּא רָאשֵׁי־תֵבוֹת \"חֲנוּכָּה\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סְלַח נָא",
+   "target_he": "חֲנֻכָּה",
+   "proof": "כִּי חֲנֻכָּה נַעֲשֶׂה עַל־יְדֵי סְלַח נָא וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

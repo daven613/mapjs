@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 76,
+ "chunk": "76_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "צָמְאָה נַפְשִׁי לֵאלֹקִים לְאֵל חָי",
+   "target_he": "צִמָּאוֹן",
+   "proof": "צָמְאָה נַפְשִׁי לֵאלֹקִים לְאֵל חָי – זֶה בְּחִינַת צִמָּאוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָעֲבוֹדָה",
+   "target_he": "רְאִיָּה",
+   "proof": "שֶׁתִּהְיֶה הָעֲבוֹדָה בִּבְחִינַת רְאִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאִיָּה",
+   "target_he": "גְּבוּל וּזְמַן כָּרָאוּי",
+   "proof": "שֶׁאֲזַי הוּא בִּבְחִינַת גְּבוּל וּזְמַן כָּרָאוּי כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאִיָּה",
+   "target_he": "צִמָּאוֹן",
+   "proof": "וַאֲזַי אֵינוֹ בִּבְחִינַת צִמָּאוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

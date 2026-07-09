@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 70,
+ "chunk": "70_17_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הֲקָמַת הַמִּשְׁכָּן",
+   "target_he": "כָּבוֹד שֶׁל מְלָכִים",
+   "proof": "כִּי אָז הָיָה הֲקָמַת הַמִּשְׁכָּן, שֶׁמִּשָּׁם נִמְשָׁךְ הַכָּבוֹד שֶׁל מְלָכִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֲקָמַת הַמִּשְׁכָּן בְּרֹאשׁ חֹדֶשׁ נִיסָן",
+   "target_he": "רֹאשׁ חֹדֶשׁ",
+   "proof": "כִּי זֶה בְּחִינַת רֹאשׁ חֹדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רֹאשׁ חֹדֶשׁ",
+   "target_he": "רָאשִׁים",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִתְחַדְּשִׁים כָּל הָרָאשִׁים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רֹאשׁ חֹדֶשׁ נִיסָן",
+   "target_he": "רֹאשׁ־הַשָּׁנָה לִמְלָכִים",
+   "proof": "וְזֶהוּ בְּחִינַת: רֹאשׁ חֹדֶשׁ נִיסָן רֹאשׁ־הַשָּׁנָה לִמְלָכִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

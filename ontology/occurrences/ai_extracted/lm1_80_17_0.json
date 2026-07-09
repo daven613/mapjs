@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 80,
+ "chunk": "80_17_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עֹז",
+   "target_he": "תּוֹרָה",
+   "proof": "עֹז שֶׁהִיא הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּלֵי שָׁלוֹם",
+   "target_he": "בְּרָכוֹת",
+   "proof": "כְּשֶׁה' יְבָרֵךְ בְּרָכוֹת עַל יְדֵי כְּלֵי שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם",
+   "target_he": "תּוֹרָה",
+   "proof": "אֲזַי – עֹז שֶׁהִיא הַתּוֹרָה גַּם כֵּן לְעַמּוֹ יִתֵּן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

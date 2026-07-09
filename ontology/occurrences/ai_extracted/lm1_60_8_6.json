@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_8_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַבִּטָּחוֹן",
+   "target_he": "כְּלֵי הַהוֹלָדָה",
+   "proof": "אִי אֶפְשָׁר שֶׁיִּהְיֶה הַבִּטָּחוֹן, הַיְנוּ כְּלֵי הַהוֹלָדָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַדִּבּוּר",
+   "target_he": "אַלֻּף",
+   "proof": "שֶׁהוּא בְּחִינַת אַלֻּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אַלֻּף",
+   "target_he": "לְהַתִּיר פֶּה אִלְּמִים",
+   "proof": "שֶׁהוּא רָאשֵׁי־תֵּבוֹת: לְהַתִּיר פֶּה אִלְּמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מִשֹּׁכֶבֶת חֵיקֶךָ",
+   "target_he": "הוֹלָדָה",
+   "proof": "הַיְנוּ שֶׁיִּהְיֶה נַעֲשֶׂה מִזֶּה הוֹלָדָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִשֹּׁכֶבֶת חֵיקֶךָ",
+   "target_he": "וְשָׁכְבָה בְּחֵיקֶךָ",
+   "proof": "בְּחִינַת (מלכים־א א): וְשָׁכְבָה בְּחֵיקֶךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָפָר",
+   "target_he": "הֶעְדֵּר הַדִּבּוּר",
+   "proof": "עָפָר הוּא בְּחִינַת הֶעְדֵּר הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְהַתִּיר פֶּה אִלְּמִים",
+   "target_he": "כּחַ הַדִּבּוּר לְקוֹוֵי ה'",
+   "proof": "וְעַל־יְדֵי־זֶה בָּא כּחַ הַדִּבּוּר לְקוֹוֵי ה'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קוֹוֵי ה'",
+   "target_he": "כְּלֵי הַהוֹלָדָה",
+   "proof": "שֶׁהֵם כְּלֵי הַהוֹלָדָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִתֵּן בְּעָפָר פִּיהוּ",
+   "target_he": "הַהוֹלָדָה",
+   "proof": "כִּי הַהוֹלָדָה תְּלוּיָה, עַל־יְדֵי בְּחִינַת יִתֵּן בְּעָפָר פִּיהוּ הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

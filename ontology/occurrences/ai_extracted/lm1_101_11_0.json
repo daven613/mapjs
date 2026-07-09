@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 101,
+ "chunk": "101_11_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עֲבֵרָה",
+   "target_he": "עַצְמוֹת",
+   "proof": "אָז הָעֲבֵרָה וְהֶעָווֹן נֶחֱקָק עַל עַצְמוֹתָיו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרָה",
+   "target_he": "עֲבֵרָה",
+   "proof": "וְאִי אֶפְשָׁר לוֹ לָצֵאת מִזֶּה, כִּי אִם עַל־יְדֵי הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תּוֹרָה",
+   "target_he": "אַנְפִּין נְהִירִין",
+   "proof": "שֶׁהִיא בְּחִינַת אַנְפִּין נְהִירִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תַּאֲווֹת וּמִדּוֹת",
+   "target_he": "אַנְפִּין חֲשׁוּכִין",
+   "proof": "שֶׁהֵם בְּחִינַת אַנְפִּין חֲשׁוּכִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַנְפִּין חֲשׁוּכִין",
+   "target_he": "עֲבֵרוֹת",
+   "proof": "שֶׁמִּשָּׁם נִמְשָׁכִין כָּל הָעֲבֵרוֹת, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

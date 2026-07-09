@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 9,
+ "chunk": "9_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "חיות",
+   "proof": "כִּי עִקַּר הַחִיּוּת מְקַבְּלִין מֵהַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה בכל כחו",
+   "target_he": "חידוש כחו",
+   "proof": "כִּי כְּשֶׁמִּתְפַּלֵּל בְּכָל כֹּחוֹ וּמַכְנִיס כֹּחוֹ בְּאוֹתִיּוֹת הַתְּפִלָּה, אֲזַי נִתְחַדֵּשׁ כֹּחוֹ שָׁם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חידוש כחו",
+   "target_he": "חדשים לבקרים",
+   "proof": "בִּבְחִינַת (איכה ג׳:כ״ג): חֲדָשִׁים לַבְּקָרִים [רַבָּה אֱמוּנָתֶךָ] וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אמונה",
+   "target_he": "תפילה",
+   "proof": "כִּי אֱמוּנָה הִיא תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

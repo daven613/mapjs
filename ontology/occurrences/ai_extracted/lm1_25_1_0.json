@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 25,
+ "chunk": "25_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "נמשך אחר המדמה",
+   "target_he": "שרירות לב",
+   "proof": "וּכְשֶׁנִּמְשָׁךְ אַחַר הַמְדַמֶּה, זֶה בְּחִינַת שְׁרִירוּת לֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יציאה משרירות הלב ושבירת לב האבן",
+   "target_he": "שמיר",
+   "proof": "וּכְשֶׁיּוֹצֵא מִשְּׁרִירוּת הַלֵּב, וּמְשַׁבֵּר לִבּוֹ הָאֶבֶן – זֶה בְּחִינַת שָׁמִיר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמיר",
+   "target_he": "הכנעת האבן",
+   "proof": "שֶׁעַל יָדוֹ נִכְנָע הָאֶבֶן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

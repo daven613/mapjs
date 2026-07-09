@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_13_14",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אכילה",
+   "target_he": "טומאה",
+   "proof": "שֶׁעַל יָדָהּ בָּא, חַס וְשָׁלוֹם, טֻמְאָה הַנַּ\"ל בַּחֲלוֹם בַּשֵּׁנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תיקון המוחין",
+   "target_he": "תיקון בחינת השינה",
+   "proof": "נִתְתַּקֵּן בְּחִינַת הַשֵּׁנָה עַל־יְדֵי תִּקּוּן הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תיקון המוחין",
+   "target_he": "שינה טובה ומתוקה",
+   "proof": "כִּי עַל־יְדֵי תִּקּוּן הַמֹּחִין גַּם הַשֵּׁנָה... הִיא גַּם כֵּן טוֹבָה וּמְתוּקָה מְאֹד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שינה",
+   "target_he": "הסתלקות הדעת",
+   "proof": "שֶׁהִיא בְּחִינַת הִסְתַּלְּקוּת הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

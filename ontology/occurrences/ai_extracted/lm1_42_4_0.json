@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 42,
+ "chunk": "42_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַשְּׁכִינָה",
+   "target_he": "הָאוֹתִיּוֹת",
+   "proof": "אֲזַי מַלְבִּישׁ אֶת הַשְּׁכִינָה, הַיְנוּ הָאוֹתִיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קוֹל הַנְּגִינָה בְּזַכּוּת וּבִבְהִירוּת גָּדוֹל",
+   "target_he": "הַשְּׁכִינָה מְלֻבֶּשֶׁת בִּלְבוּשִׁין דִּנְהִירִין",
+   "proof": "וְקוֹל הַנְּגִינָה הֵם בְּזַכּוּת וּבִבְהִירוּת גָּדוֹל, אֲזַי מַלְבִּישׁ אֶת הַשְּׁכִינָה... בִּלְבוּשִׁין דִּנְהִירִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשְּׁכִינָה מְלֻבֶּשֶׁת בִּלְבוּשִׁין דִּנְהִירִין",
+   "target_he": "וַחֲמַת הַמֶּלֶךְ שָׁכָכָה",
+   "proof": "וְקֻדְשָׁא בְּרִיךְ הוּא רוֹאֶה אוֹתָהּ, אֲזַי: וַחֲמַת הַמֶּלֶךְ שָׁכָכָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

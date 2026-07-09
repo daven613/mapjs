@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_3_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חיות אש",
+   "target_he": "חוה, אשה",
+   "proof": "חַיּוֹת אֵשׁ – בְּחִינַת חַוָּה, אִשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חיות אש (חוה, אשה)",
+   "target_he": "לשון הקודש",
+   "proof": "הַיְנוּ בְּחִינַת לְשׁוֹן הַקֹּדֶשׁ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מ\"ל מחשמ\"ל",
+   "target_he": "מדורה של שבעין כוכבין",
+   "proof": "וְזֶה בְּחִינַת מ\"ל מֵחַשְׁמַ\"ל, שֶׁהֵם בְּחִינַת מְדוּרָה שֶׁל שִׁבְעִין כּוֹכְבִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לשון הקודש",
+   "target_he": "אש המדורה של שבעין כוכבין",
+   "proof": "שֶׁעַל־יָדוֹ מִתְמַלֵּל וּמִשְׁתַּבֵּר אֵשׁ הַמְּדוּרָה שֶׁל שִׁבְעִין כּוֹכְבִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לשון הקודש",
+   "target_he": "מדורה של שבעין כוכבין",
+   "proof": "שֶׁנִּתְמַלֵּל וְנִתְבַּטֵּל עַל־יְדֵי לְשׁוֹן הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גדר ערוה",
+   "target_he": "קדושה",
+   "proof": "כִּי כָּל מָקוֹם שֶׁאַתָּה מוֹצֵא גֶּדֶר עֶרְוָה אַתָּה מוֹצֵא קְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

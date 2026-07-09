@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 25,
+ "chunk": "25_1_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עִקַּר קִיּוּמוֹ שֶׁל אָדָם לְאַחַר מִיתָתוֹ",
+   "target_he": "שֵׂכֶל הַנִּקְנֶה",
+   "proof": "וְעִקַּר קִיּוּמוֹ שֶׁל אָדָם לְאַחַר מִיתָתוֹ, אֵינוֹ אֶלָּא שֵׂכֶל הַנִּקְנֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֵׂכֶל הַנִּקְנֶה",
+   "target_he": "אֲמָנָה",
+   "proof": "וְזֶה בְּחִינַת אֲמָנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שֵׂכֶל הַנִּקְנֶה",
+   "target_he": "קִיּוּם שֶׁל אָדָם לְאַחַר מוֹתוֹ",
+   "proof": "כִּי שֵׂכֶל הַנִּקְנֶה, הוּא קִיּוּם שֶׁל אָדָם לְאַחַר מוֹתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קָּרְבָּנוֹת",
+   "target_he": "בַּהֲמִיּוּת וְכֹחַ הַדִּמְיוֹן",
+   "proof": "כִּי שָׁם הָיוּ מַקְרִיבִין הַקָּרְבָּנוֹת, שֶׁהֵם הַבַּהֲמִיּוּת וְכֹחַ הַדִּמְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁבִירַת הַדִּמְיוֹן",
+   "target_he": "קָּרְבָּנוֹת",
+   "proof": "שֶׁשְּׁבִירַת הַדִּמְיוֹן הֵם הַקָּרְבָּנוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִּקְדָּשׁ",
+   "target_he": "חָכְמָה",
+   "proof": "וְעִקַּר הַמַּעְיַן הַחָכְמָה מִן הַמִּקְדָּשׁ יָצָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_2_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "חֲרוֹן אַף",
+   "target_he": "עָשָׁן",
+   "proof": "לְהַמְתִּיק הַחֲרוֹן אַף, דְּהַיְנוּ לְהַמְתִּיק הֶעָשָׁן וּלְבָרְרוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בֵּרוּר הֶעָשָׁן",
+   "target_he": "רוּחַ",
+   "proof": "עַד שֶׁיִּהְיֶה נַעֲשֶׂה מִמֶּנּוּ בְּחִינַת רוּחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוּחַ",
+   "target_he": "רוּחַ אֲוִירִי",
+   "proof": "דְּהַיְנוּ רוּחַ אֲוִירִי, שֶׁנַּעֲשֶׂה מֵהִתְבָּרְרוּת הֶעָשָׁן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְבָּרְרוּת הֶעָשָׁן",
+   "target_he": "רוּחַ אֲוִירִי",
+   "proof": "שֶׁנַּעֲשֶׂה מֵהִתְבָּרְרוּת הֶעָשָׁן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוּחַ",
+   "target_he": "הַמְתָּקַת הֶעָשָׁן שֶׁל הַחֲרוֹן אַף",
+   "proof": "וְזֶה הָרוּחַ, שֶׁהוּא הַמְתָּקַת הֶעָשָׁן שֶׁל הַחֲרוֹן אַף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוּחַ",
+   "target_he": "מָשִׁיחַ",
+   "proof": "הוּא בְּחִינַת מָשִׁיחַ, בְּחִינַת (איכה ד׳:כ׳): רוּחַ אַפֵּינוּ מְשִׁיחַ ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_10_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יציאה משלש מדות הנ\"ל",
+   "target_he": "עבודת התפילה",
+   "proof": "וְצָרִיךְ לָצֵאת מִשָּׁלֹשׁ עֲבוֹדוֹת אֵלּוּ... וְאָז זוֹכִין לַעֲבוֹדַת הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עבודת התפילה",
+   "target_he": "התרפאות בכל דבר שבעולם",
+   "proof": "וְאָז זוֹכִין לַעֲבוֹדַת הַתְּפִלָּה, וְאָז יְכוֹלִין לְהִתְרַפְּאוֹת בְּכָל דָּבָר שֶׁבָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שלש מדות הנ\"ל",
+   "target_he": "שלש עבודות",
+   "proof": "דְּהַיְנוּ שָׁלֹשׁ מִדּוֹת הַנַּ\"ל, שֶׁהֵם בְּחִינַת שָׁלֹשׁ עֲבוֹדוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יציאה משלש מדות אלו",
+   "target_he": "התרפאות בכל דבר שבעולם",
+   "proof": "הַיְנוּ כְּשֶׁיּוֹצֵא מִשָּׁלֹשׁ מִדּוֹת אֵלּוּ, אֲזַי: בַּכֹּל מִתְרַפְּאִין – אֲפִלּוּ בְּלֶחֶם וּמַיִם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "היותו חוץ משלש עבודות הנ\"ל",
+   "target_he": "עבודת התפילה",
+   "proof": "כִּי כְּשֶׁהוּא חוּץ מִשָּׁלֹשׁ עֲבוֹדוֹת הַנַּ\"ל, וְאָז זוֹכֶה לַעֲבוֹדַת הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עבודת התפילה",
+   "target_he": "התרפאות בכל דבר שבעולם",
+   "proof": "אֲזַי יָכוֹל לְהִתְרַפְּאוֹת בְּכָל דָּבָר שֶׁבָּעוֹלָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

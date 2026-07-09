@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 50,
+ "chunk": "50_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הפוגם בברית",
+   "target_he": "תפילה בבחינת כל עצמותי תאמרנה",
+   "proof": "כִּי כָּל הַפּוֹגֵם בַּבְּרִית, אֵין יָכוֹל לְהִתְפַּלֵּל בִּבְחִינַת: כָּל עַצְמוֹתַי תֹּאמַרְנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילה",
+   "target_he": "כל עצמותי תאמרנה",
+   "proof": "אֵין יָכוֹל לְהִתְפַּלֵּל בִּבְחִינַת: כָּל עַצְמוֹתַי תֹּאמַרְנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה בבחינת כל עצמותי",
+   "target_he": "תפילתו (קרבנו)",
+   "proof": "וּכְשֶׁאֵין מִתְפַּלֵּל בִּבְחִינַת: כָּל עַצְמוֹתַי, אֲזַי כַּלְבָּא נָחֵת וְאָכֵל קָרְבָּנוֹ, הַיְנוּ תְּפִלָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קרבנו",
+   "target_he": "תפילתו",
+   "proof": "אָכֵל קָרְבָּנוֹ, הַיְנוּ תְּפִלָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טעימת מתיקות בדיבורי התפילה",
+   "target_he": "כל עצמותי תאמרנה",
+   "proof": "וּכְשֶׁמִּתְפַּלֵּל וְטוֹעֵם מְתִיקוּת בְּדִבּוּרֵי הַתְּפִלָּה, זֹאת הַבְּחִינָה נִקְרֵאת: כָּל עַצְמוֹתַי תֹּאמַרְנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

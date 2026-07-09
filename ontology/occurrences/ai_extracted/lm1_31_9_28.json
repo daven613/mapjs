@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_9_28",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "שְׁלֵמוּת כָּל הַדְּבָרִים",
+   "proof": "שְׁלֵמוּת כָּל הַדְּבָרִים הִיא הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "כָּל הַדְּבָרִים חֲסֵרִים",
+   "proof": "וּבִלְתִּי הָאֱמוּנָה כָּל הַדְּבָרִים חֲסֵרִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְתִינַת פְּרוּטָה לְעָנִי",
+   "target_he": "מִתְבָּרֵךְ בְּשֵׁשׁ",
+   "proof": "הַנּוֹתֵן פְּרוּטָה לְעָנִי מִתְבָּרֵךְ בְּשֵׁשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פִּיּוּס הֶעָנִי",
+   "target_he": "בְּאַחַת עֶשְׂרֵה",
+   "proof": "וְהַמְפַיְּסוֹ בְּאַחַת עֶשְׂרֵה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֶׁבַע",
+   "target_he": "שִׁבְעָה כּוֹכְבֵי לֶכֶת",
+   "proof": "כִּי רָאוּי לִהְיוֹת שֶׁבַע וּשְׁתֵּים־עֶשְׂרֵה, כְּנֶגֶד שִׁבְעָה כּוֹכְבֵי לֶכֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁתֵּים־עֶשְׂרֵה",
+   "target_he": "שְׁנֵים־עָשָׂר מַזָּלוֹת",
+   "proof": "וּכְנֶגֶד שְׁנֵים־עָשָׂר מַזָּלוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

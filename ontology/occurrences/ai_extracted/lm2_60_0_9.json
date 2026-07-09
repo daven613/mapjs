@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 60,
+ "chunk": "60_0_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חסדים מצד האב",
+   "target_he": "גילוי תורה",
+   "proof": "מֵחֲמַת שֶׁאֵין לוֹ חֲסָדִים מִצַּד הָאָב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפיסה",
+   "target_he": "תיקון פגם הנ\"ל",
+   "proof": "וְאֵין יָכוֹל לְתַקֵּן פְּגָם הַנַּ\"ל כִּי־אִם עַל־יְדֵי הַתְּפִיסָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תפיסה",
+   "target_he": "תיקון וזיכוך לדיבורים",
+   "proof": "כִּי הַתְּפִיסָה הוּא תִּקּוּן וְזִכּוּךְ לְהַדִּבּוּרִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חסדים מצד עצמו",
+   "target_he": "גילוי תורה",
+   "proof": "וְיָכוֹל רַבִּי עֲקִיבָא לְגַלּוֹת תּוֹרָה עַל־יְדֵי הַחֲסָדִים שֶׁיֵּשׁ לוֹ מִצַּד עַצְמוֹ לְבַד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חסדים מצד עצמו",
+   "target_he": "תיקון פגם הנ\"ל",
+   "proof": "וְעַל־יְדֵי־זֶה יְתַקֵּן פְּגָם הַנַּ\"ל, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

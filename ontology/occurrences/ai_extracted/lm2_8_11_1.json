@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_11_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַטֵּה עֹז",
+   "target_he": "תִּשְׁרֵי",
+   "proof": "וְזֶה בְּחִינַת תִּשְׁרֵי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַתָּה פוֹרַרְתָּ בְעָזְּךָ יָם, שִׁבַּרְתָּ רָאשֵׁי תַנִּינִים עַל הַמָּיִם",
+   "target_he": "תִּשְׁרֵי",
+   "proof": "בְּחִינַת: אַתָּה פוֹרַרְתָּ בְעָזְּךָ יָם, שִׁבַּרְתָּ רָאשֵׁי תַנִּינִים עַל הַמָּיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רָאשֵׁי־תֵבוֹת (יָם שִׁבַּרְתָּ רָאשֵׁי תַנִּינִים)",
+   "target_he": "צֵרוּף תִּשְׁרֵי",
+   "proof": "רָאשֵׁי־תֵבוֹת הוּא צֵרוּף תִּשְׁרֵי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַחֲזָרַת קְדֻשַּׁת הַדַּעַת שֶׁבָּלַע",
+   "target_he": "הַדַּעַת וְהַמֹּחַ בִּשְׁלֵמוּת",
+   "proof": "וְאָז, כְּשֶׁמַּחֲזִיר קְדֻשַּׁת הַדַּעַת שֶׁבָּלַע, אָז הַדַּעַת וְהַמֹּחַ בִּשְׁלֵמוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּן הַדַּעַת וְהַמֹּחַ",
+   "target_he": "רֹאשׁ הַשָּׁנָה",
+   "proof": "וְזֶהוּ בְּחִינַת רֹאשׁ־הַשָּׁנָה; רֹאשׁ דַּיְקָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַטֵּה עֹז",
+   "target_he": "תִּקּוּן הָרֹאשׁ וְהַמֹּחַ",
+   "proof": "בְּחִינַת תִּקּוּן הָרֹאשׁ וְהַמֹּחַ עַל־יְדֵי מַטֵּה עֹז הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

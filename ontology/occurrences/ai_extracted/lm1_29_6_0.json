@@ -1,0 +1,145 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַשְּׁכִינָה",
+   "target_he": "מַדּוּעַ אָדֹם לִלְבוּשֶׁךָ",
+   "proof": "וְהַשְּׁכִינָה הִיא בִּבְחִינַת: מַדּוּעַ אָדֹם לִלְבוּשֶׁךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַדּוּעַ אָדֹם לִלְבוּשֶׁךָ",
+   "target_he": "דַּם נִדָּה",
+   "proof": "בְּחִינַת דַּם נִדָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַדִּבּוּר אָסוּר",
+   "target_he": "נֶאֱלַמְתִּי דּוּמִיָּה",
+   "proof": "אֲזַי הַדִּבּוּר אָסוּר, בִּבְחִינַת (תהילים ל״ט:ג׳): נֶאֱלַמְתִּי דּוּמִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַדָּמִים",
+   "target_he": "דּוּמִיָּה",
+   "proof": "שֶׁמֵּאֵלּוּ הַדָּמִים נַעֲשֶׂה בִּבְחִינַת דּוּמִיָּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַכְּלָלִי",
+   "target_he": "עִקַּר הַדִּבּוּר",
+   "proof": "כִּי עִקַּר הַדִּבּוּר תָּלוּי בַּתִּקּוּן הַכְּלָלִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּן הַכְּלָלִי",
+   "target_he": "וַיַּגֵּד לָכֶם אֶת בְּרִיתוֹ",
+   "proof": "שֶׁהוּא בְּחִינַת: וַיַּגֵּד לָכֶם אֶת בְּרִיתוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּן הַכְּלָלִי",
+   "target_he": "בָּתַר דִּשְׁכִיב רַבִּי שִׁמְעוֹן הֲוָה אָמַר חַד לְחַבְרֵהּ אַל תִּתֵּן אֶת פִּיךָ לַחֲטִיא אֶת בְּשָׂרֶךָ",
+   "proof": "וְזֶה בְּחִינַת: בָּתַר דִּשְׁכִיב רַבִּי שִׁמְעוֹן הֲוָה אָמַר חַד לְחַבְרֵהּ: אַל תִּתֵּן אֶת פִּיךָ לַחֲטִיא אֶת בְּשָׂרֶךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רַבִּי שִׁמְעוֹן",
+   "target_he": "קֶשֶׁת הַבְּרִית",
+   "proof": "כִּי רַבִּי שִׁמְעוֹן הָיָה קֶשֶׁת הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קֶשֶׁת הַבְּרִית",
+   "target_he": "וַיַּגֵּד לָכֶם אֶת בְּרִיתוֹ",
+   "proof": "בְּחִינַת: וַיַּגֵּד לָכֶם אֶת בְּרִיתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּרִיתוֹ",
+   "target_he": "כְּלָלִיּוּת הַגִּידִין",
+   "proof": "הַיְנוּ כְּלָלִיּוּת הַגִּידִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַכְּלָלִי",
+   "target_he": "הַדִּבּוּר אָסוּר",
+   "proof": "וּכְשֶׁאֵין תִּקּוּן הַכְּלָלִי, אֲזַי הַדִּבּוּר אָסוּר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַדִּבּוּר אָסוּר",
+   "target_he": "נֶאֱלַמְתִּי דּוּמִיָּה",
+   "proof": "בִּבְחִינַת: נֶאֱלַמְתִּי דּוּמִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַדִּבּוּר אָסוּר",
+   "target_he": "אַל תִּתֵּן אֶת פִּיךָ",
+   "proof": "בְּחִינַת: אַל תִּתֵּן אֶת פִּיךָ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְדַבֵּר כְּשֶׁאֵין תִּקּוּן הַכְּלָלִי",
+   "target_he": "לֹא תֵלֵךְ רָכִיל בְּעַמֶּךָ",
+   "proof": "וּמִי שֶׁהוּא מְדַבֵּר אָז, כְּשֶׁאֵין תִּקּוּן הַכְּלָלִי, הוּא עוֹבֵר עַל: לֹא תֵלֵךְ רָכִיל בְּעַמֶּךָ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְדַבֵּר כְּשֶׁאֵין תִּקּוּן הַכְּלָלִי",
+   "target_he": "מְגַלֶּה סוֹד",
+   "proof": "וְהוּא הוֹלֵךְ רָכִיל מְגַלֶּה סוֹד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_2_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "הַחָכְמוֹת וְהַקֻּשְׁיוֹת וְהָאֶפִּיקוֹרְסוּת",
+   "proof": "וְהִנֵּה עַל־יְדֵי אֱמוּנָה... עַל־כֵּן הֵם עוֹבְרִים עַל כָּל הַחָכְמוֹת וְהַקֻּשְׁיוֹת וְהָאֶפִּיקוֹרְסוּת הַבָּא מִשָּׁם מֵחָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָכְמָתוֹ יִתְבָּרַךְ",
+   "target_he": "חָלָל הַפָּנוּי",
+   "proof": "אִם־כֵּן שֶׁגַּם הֶחָלָל הַפָּנוּי בְּעַצְמוֹ נִתְהַוָּה מֵחָכְמָתוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מוֹצֵא עֲלֵיהֶם תְּשׁוּבָה",
+   "target_he": "מוֹצֵא בָּהֶם אֶת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "כִּי אִם הָיָה מוֹצֵא עֲלֵיהֶם תְּשׁוּבָה, הַיְנוּ שֶׁהָיָה מוֹצֵא בָּהֶם אֶת הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּבָה",
+   "target_he": "חָלָל הַפָּנוּי",
+   "proof": "כִּי אִם הָיָה מוֹצֵא עֲלֵיהֶם תְּשׁוּבָה... אִם־כֵּן לֹא הָיָה חָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָלָל הַפָּנוּי",
+   "target_he": "הַבְּרִיאָה",
+   "proof": "אִם־כֵּן לֹא הָיָה חָלָל הַפָּנוּי, וְלֹא הָיָה אֶפְשָׁר לְהִתְהַוּוֹת הַבְּרִיאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 219,
+ "chunk": "219_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עֲנָוָה וְשִׁפְלוּת",
+   "target_he": "וַאֲנִי לֹא אֶרְאֶנּוּ",
+   "proof": "שֶׁכְּשֶׁהָאָדָם מַקְטִין וּמַסְתִּיר אֶת עַצְמוֹ בְּמִסְתָּרִים, דְּהַיְנוּ שֶׁמַּסְתִּיר וּמַעֲלִים וּמַקְטִין אֶת עַצְמוֹ בַּעֲנָוָה וְשִׁפְלוּת, אֲזַי: וַאֲנִי לֹא אֶרְאֶנּוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לא",
+   "target_he": "אַיִן וָאֶפֶס",
+   "proof": "בִּבְחִינַת לֹא, שֶׁהוּא בְּחִינַת אַיִן וָאֶפֶס",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לא",
+   "target_he": "עֲנָוָה וְשִׁפְלוּת",
+   "proof": "בְּחִינַת עֲנָוָה וְשִׁפְלוּת, וְכַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_13_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מבזה תלמיד חכם ומזלזל יראי ה'",
+   "target_he": "כבוד",
+   "proof": "כִּי הַמְבַזֶּה תַּלְמִיד־חָכָם וּמְזַלְזֵל יִרְאֵי ה', נִמְצָא שֶׁפּוֹגֵם בַּכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פגם בכבוד",
+   "target_he": "שורש היראה",
+   "proof": "נִמְצָא שֶׁפּוֹגֵם בַּכָּבוֹד, וְאֵינוֹ מַחֲזִירוֹ לְשֹׁרֶשׁ הַיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "החזרה לשורש היראה",
+   "target_he": "שלום",
+   "proof": "וְאֵינוֹ מַחֲזִירוֹ לְשֹׁרֶשׁ הַיִּרְאָה, וַאֲזַי אֵין זוֹכֶה לְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלום",
+   "target_he": "רפואה",
+   "proof": "וַאֲזַי אֵין זוֹכֶה לְשָׁלוֹם, וְעַל כֵּן אֵין רְפוּאָה לְמַכָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מחלוקת",
+   "target_he": "חולאת",
+   "proof": "כִּי כָּל הַחוֹלַאַת בָּאִין עַל־יְדֵי בְּחִינַת מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חולאת",
+   "target_he": "מחלוקת",
+   "proof": "כִּי כָּל הַחוֹלַאַת הֵם בְּחִינַת מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלום בעצמיו",
+   "target_he": "היסודות מתגברין זה על זה",
+   "proof": "שֶׁאֵין שָׁלוֹם בַּעֲצָמָיו, וְהַיְסוֹדוֹת מִתְגַּבְּרִין זֶה עַל זֶה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "היסודות מתגברין זה על זה ואין מתנהגים בשלום",
+   "target_he": "חולאת",
+   "proof": "וְאֵין מִתְנַהֲגִים בְּשָׁלוֹם, בַּמֶּזֶג הַשָּׁוֶה, וְעַל־יְדֵי־זֶה בָּא חוֹלַאַת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פגם בשלום",
+   "target_he": "רפואה",
+   "proof": "וְעַל כֵּן כְּשֶׁמְּבַזֶּה תַּלְמִיד־חָכָם וּפוֹגֵם בַּשָּׁלוֹם, עַל כֵּן אֵין רְפוּאָה לְמַכָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלום",
+   "target_he": "רפואה",
+   "proof": "כִּי עִקַּר הָרְפוּאָה – עַל־יְדֵי הַשָּׁלוֹם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רפואה על ידי שלום",
+   "target_he": "שלום שלום לרחוק ולקרוב אמר ה' ורפאתיו",
+   "proof": "בִּבְחִינַת: שָׁלוֹם שָׁלוֹם לָרָחוֹק וְלַקָּרוֹב אָמַר ה' וּרְפָאתִיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

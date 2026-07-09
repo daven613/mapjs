@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 160,
+ "chunk": "160_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דֹּפֶק הַנּוֹקֵשׁ לַעֲבוֹדַת הַשֵּׁם",
+   "target_he": "קוֹל דּוֹדִי דּוֹפֵק",
+   "proof": "וּמַזְכִּיר אוֹתוֹ לַעֲבוֹדַת הַשֵּׁם יִתְבָּרַךְ, בִּבְחִינַת קוֹל דּוֹדִי דּוֹפֵק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּר",
+   "target_he": "נְשִׁימָה",
+   "proof": "וְהַנְּשִׁימָה בָּא מִן הָאֲוִיר עַל־יְדֵי הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְשִׁימָה",
+   "target_he": "דֶּפֶק",
+   "proof": "כִּי הַדֹּפֶק בָּא מִן הַנְּשִׁימָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּר",
+   "target_he": "דֶּפֶק",
+   "proof": "וּכְפִי הַדִּבּוּר, כֵּן נַעֲשֶׂה הַדֶּפֶק, אִם לְטוֹב אוֹ לְהֶפֶךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

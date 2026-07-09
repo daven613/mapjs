@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_8_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַשָּׂגָה שֶׁל בְּחִינַת מָה וְהַשָּׂגָה שֶׁל בְּחִינַת מְלֹא כָל הָאָרֶץ כְּבוֹדוֹ",
+   "target_he": "הַשָּׂגָה שֶׁל בְּחִינַת בֵּן וְהַשָּׂגָה שֶׁל בְּחִינַת תַּלְמִיד",
+   "proof": "הֵם בְּחִינַת הַשָּׂגָה שֶׁל בְּחִינַת בֵּן וְהַשָּׂגָה שֶׁל בְּחִינַת תַּלְמִיד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תַּלְמִיד",
+   "target_he": "בְּחִינַת בֵּן",
+   "proof": "וְהַתַּלְמִיד הוּא גַם־כֵּן בְּחִינַת בֵּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בֵּן",
+   "target_he": "תַּלְמִיד",
+   "proof": "כִּי הַבֵּן שֶׁהוּא תַּלְמִיד הוּא בְּמַעֲלָה יְתֵרָה מִתַּלְמִיד לְבַד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

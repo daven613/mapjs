@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עֵצוֹת",
+   "target_he": "פֶּלֶא",
+   "proof": "כִּי הָעֵצוֹת הֵם בְּחִינַת פֶּלֶא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֵצוֹת",
+   "target_he": "רְפוּאָה לְהַמַּכּוֹת הַמֻּפְלָאוֹת",
+   "proof": "וְעַל־יְדֵי־זֶה נִתְתַּקֵּן וּמְקַבֵּל רְפוּאָה לְהַמַּכּוֹת הַמֻּפְלָאוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַכּוֹת הַמֻּפְלָאוֹת",
+   "target_he": "וְהִפְלָא ה' אֶת מַכֹּתְךָ",
+   "proof": "שֶׁהֵם בְּחִינַת: וְהִפְלָא ה' אֶת מַכֹּתְךָ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלָּה",
+   "target_he": "פְּלָאוֹת",
+   "proof": "גַּם תְּפִלָּה הִיא בְּחִינַת פְּלָאוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זְכוּת אָבוֹת",
+   "target_he": "נֶגֶד אֲבוֹתָם עָשָׂה פֶלֶא",
+   "proof": "וְכֵן זְכוּת אָבוֹת, בִּבְחִינַת (תהילים ע״ח:י״ב): נֶגֶד אֲבוֹתָם עָשָׂה פֶלֶא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְאָנֹכִי תִּרְגַלְתִּי לְאֶפְרַיִם",
+   "target_he": "עֵצוֹת",
+   "proof": "וְאָנֹכִי תִּרְגַלְתִּי לְאֶפְרַיִם (הושע י״א:ג׳) – זֶה בְּחִינַת עֵצוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קָחֵם עַל זְרוֹעֹתָיו",
+   "target_he": "זְכוּת אָבוֹת",
+   "proof": "קָחֵם עַל זְרוֹעֹתָיו – זֶה בְּחִינַת זְכוּת אָבוֹת, שֶׁהֵם זְרוֹעוֹת עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זְכוּת אָבוֹת",
+   "target_he": "זְרוֹעוֹת עוֹלָם",
+   "proof": "זֶה בְּחִינַת זְכוּת אָבוֹת, שֶׁהֵם זְרוֹעוֹת עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 105,
+ "chunk": "105_23_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרָה",
+   "target_he": "תְּשׁוּבָה",
+   "proof": "עַל יְדֵי תּוֹרָה זוֹכִין לִתְשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרָה",
+   "target_he": "נִשְׁלָם הַדַּעַת",
+   "proof": "עַל יְדֵי תּוֹרָה ... וְנִשְׁלָם הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּבָה וְנִשְׁלָם הַדַּעַת",
+   "target_he": "עוֹרֵר רַחֲמִים אֶצְלוֹ יִתְבָּרַךְ",
+   "proof": "זוֹכִין לִתְשׁוּבָה וְנִשְׁלָם הַדַּעַת, וְאָז זוֹכִין לְעוֹרֵר רַחֲמִים אֶצְלוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רַחֲמִים שֶׁאָנוּ מְעוֹרְרִים",
+   "target_he": "רַחֲמִים הַגְּדוֹלִים",
+   "proof": "שֶׁבְּאֵלּוּ הָרַחֲמִים יְעוֹרֵר בְּעַצְמוֹ אֶת הָרַחֲמִים הַגְּדוֹלִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רַחֲמִים הַגְּדוֹלִים",
+   "target_he": "רַחֲמִים גְּדוֹלִים דְּעַתִּיקָא סְתִימָאָה",
+   "proof": "שֶׁהֵם רַחֲמִים גְּדוֹלִים דְּעַתִּיקָא סְתִימָאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רַחֲמִים הַגְּדוֹלִים",
+   "target_he": "יְשׁוּעָה",
+   "proof": "וּמִשָּׁם יִהְיֶה לָנוּ יְשׁוּעָה בְּוַדַּאי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

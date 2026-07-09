@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תפילה",
+   "target_he": "הר ושדה",
+   "proof": "לְהַעֲלוֹת הַתְּפִלָּה מִבְּחִינַת הַר וְשָׂדֶה לִבְחִינַת בַּיִת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילה",
+   "target_he": "בית",
+   "proof": "לְהַעֲלוֹת הַתְּפִלָּה מִבְּחִינַת הַר וְשָׂדֶה לִבְחִינַת בַּיִת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילה",
+   "target_he": "עיר אלקינו",
+   "proof": "בְּחִינַת עִיר אֱלֹקֵינוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדיקי הדור",
+   "target_he": "התגלות מלכותו לעכו\"ם",
+   "proof": "כְּדֵי שֶׁיִּתְגַּלֶּה מַלְכוּתוֹ גַּם לָעַכּוּ\"ם... אִי אֶפְשָׁר לְהֵעָשׂוֹת כִּי אִם עַל־יְדֵי צַדִּיקֵי הַדּוֹר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חכם",
+   "target_he": "רחמים",
+   "proof": "מִי שֶׁיֵּשׁ לוֹ חוֹלֶה בְּתוֹךְ בֵּיתוֹ, יֵלֵךְ אֵצֶל חָכָם וִיבַקֵּשׁ עָלָיו רַחֲמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

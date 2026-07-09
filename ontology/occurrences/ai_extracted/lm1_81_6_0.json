@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 81,
+ "chunk": "81_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "זה בנגב",
+   "target_he": "צדיק",
+   "proof": "זֶה בַנֶּגֶב – זֶה הוּא בְּחִינַת הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צדיק",
+   "target_he": "בנגב",
+   "proof": "הַיְנוּ הַצַּדִּיק הוּא בַנֶּגֶב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בנגב",
+   "target_he": "פסלת ארץ־ישראל",
+   "proof": "הַיְנוּ פְּסֹלֶת אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פסלת ארץ־ישראל",
+   "target_he": "שיחת חולין",
+   "proof": "הַיְנוּ שִׂיחַת חֻלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שיחת חולין",
+   "target_he": "קישור אתכם",
+   "proof": "וְעַל־יְדֵי־זֶה יָכוֹל לְקַשֵּׁר אֶתְכֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ההר",
+   "target_he": "דעת",
+   "proof": "וַעֲלִיתֶם אֶת הָהָר – הַיְנוּ הַדַּעַת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

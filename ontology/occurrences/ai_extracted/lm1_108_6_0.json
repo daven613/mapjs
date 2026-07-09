@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 108,
+ "chunk": "108_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שבירת הלב",
+   "target_he": "השם חת\"ך",
+   "proof": "וְהַשֵּׁם חֲתַ\"ךְ נַעֲשֶׂה עַל יְדֵי שֶׁמְּשַׁבֵּר אֶת לִבּוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חת\"ך",
+   "target_he": "נסירה",
+   "proof": "וּשְׁנֵי פְּעָמִים \"רוּחַ\" גִּימַטְרִיָּא חֲתַ\"ךְ, וְזֶהוּ בְּחִינוֹת נְסִירָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינות נסירה",
+   "target_he": "בחינות פנים בפנים",
+   "proof": "וְזֶהוּ בְּחִינוֹת נְסִירָה, וּבָא אֶל בְּחִינוֹת פָּנִים בְּפָנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בחינות פנים בפנים",
+   "target_he": "עולה",
+   "proof": "וּבָא אֶל בְּחִינוֹת פָּנִים בְּפָנִים, וְזֶהוּ בְּחִינוֹת עוֹלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

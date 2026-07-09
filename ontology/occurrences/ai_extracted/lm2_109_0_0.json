@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 109,
+ "chunk": "109_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אָרֶץ",
+   "target_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "הַיְנוּ שֶׁהַצַּדִּיקִים אֲמִתִּיִּים יוֹרְשִׁים אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צַדִּיקִים אֲמִתִּיִּים",
+   "target_he": "קְדֻשַּׁת מְקוֹם גְּנִיזָתָם",
+   "proof": "שֶׁזּוֹכִין שֶׁמְּקוֹם גְּנִיזָתָם הוּא קָדוֹשׁ בִּקְדֻשַּׁת אֶרֶץ־יִשְׂרָאֵל מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "פְּגַם הַבְּרִית",
+   "proof": "וְאֶרֶץ־יִשְׂרָאֵל הוּא תִּקּוּן גָּדוֹל לִפְגַם הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

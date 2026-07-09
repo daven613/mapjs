@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 55,
+ "chunk": "55_9_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "רְשָׁעִים",
+   "target_he": "מֵתִים",
+   "proof": "שֶׁבְּחַיֵּיהֶם קְרוּיִין מֵתִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְרֻשַּׁת אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "מַפַּלְתָּן שֶׁל רְשָׁעִים",
+   "proof": "כִּי עִקַּר מַפַּלְתָּן שֶׁל רְשָׁעִים הוּא עַל־יְדֵי יְרֻשַּׁת אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְשָׁכַת קְדֻשַּׁת אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "מַפַּלְתָּן שֶׁל רְשָׁעִים",
+   "proof": "עַל־יְדֵי הַמְשָׁכַת קְדֻשַּׁת אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמְשָׁכַת קְדֻשַּׁת אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "שֵׁב לִימִינִי",
+   "proof": "בִּבְחִינַת שֵׁב לִימִינִי וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "צְבִי",
+   "proof": "וְאֶרֶץ־יִשְׂרָאֵל צְבִי הִיא לְכָל הָאֲרָצוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

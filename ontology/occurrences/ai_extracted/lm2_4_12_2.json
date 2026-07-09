@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_12_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינוֹת הַנַּ\"ל",
+   "target_he": "רְפוּאוֹת",
+   "proof": "וְכָל אֵלּוּ בְּחִינוֹת רְפוּאוֹת נַעֲשִׂים עַל־יְדֵי בְּחִינוֹת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צְדָקָה",
+   "target_he": "פְּתִיחַת פִּי הַמַּכָּה",
+   "proof": "כִּי צְדָקָה הִיא בְּחִינַת פְּתִיחַת פִּי הַמַּכָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חָכְמָה",
+   "target_he": "כֹּחַ הַמּוֹשֵׁךְ",
+   "proof": "חָכְמָה הִיא בְּחִינַת כֹּחַ הַמּוֹשֵׁךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת חָכְמָה",
+   "target_he": "קִּלְקוּל",
+   "proof": "שֶׁבְּחִינַת חָכְמָה מוֹשֶׁכֶת וּמוֹצִיאָה הַקִּלְקוּל מִלִּפְנַי וְלִפְנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

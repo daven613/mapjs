@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חוֹתָם שֶׁהוּא לְמַעְלָה מִזֶּה הַחוֹתָם",
+   "target_he": "יָדַיִם",
+   "proof": "וְיֵשׁ חוֹתָם שֶׁהוּא לְמַעְלָה מִזֶּה הַחוֹתָם, הַיְנוּ בְּחִינוֹת יָדַיִם הַמְקַבְּלִים מוּסָר מֵאֵלּוּ הַמּוֹכִיחִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יָדַיִם",
+   "target_he": "אֱמוּנָה",
+   "proof": "וְהַיָּדַיִם זֶה בְּחִינַת אֱמוּנָה, שֶׁנִּתְקַבֵּל בָּהּ הַמּוּסָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַחוֹתָם",
+   "target_he": "אֱמוּנָה",
+   "proof": "וְזֶה הַחוֹתָם צָרִיךְ שְׁמִירָה יְתֵרָה שֶׁלֹּא יִתְקַלְקֵל, הַיְנוּ שֶׁלֹּא יִתְקַלְקֵל הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חוֹתָם הַחִיצוֹן",
+   "target_he": "חוֹתָם הַפְּנִימִי",
+   "proof": "כִּי כְּשֶׁחַס וְשָׁלוֹם נִתְקַלְקֵל הַחוֹתָם הַחִיצוֹן, יוּכְלוּ לְהִתְקָרֵב לַחוֹתָם הַפְּנִימִי, וִיקַלְקְלוּ הַחוֹתָם הַפְּנִימִי עַל־יְדֵי קִלְקוּל הַחוֹתָם הַחִיצוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חוֹתָם הַפְּנִימִי",
+   "target_he": "אֱמוּנָה",
+   "proof": "שֶׁהוּא הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

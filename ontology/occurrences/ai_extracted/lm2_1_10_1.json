@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_10_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בִּזּוּי אֲנָשִׁים",
+   "target_he": "עֲבוֹדָה",
+   "proof": "בִּזּוּי אֲנָשִׁים הוּא בְּחִינַת עֲבוֹדָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּזּוּי יוֹסֵף",
+   "target_he": "עַבְדוּת",
+   "proof": "עַל שֶׁבִּזּוּ אוֹתוֹ וְלֹא הֶאֱמִינוּ שֶׁהוּא יִהְיֶה מֶלֶךְ, עַל־יְדֵי־זֶה נָפְלוּ לִבְחִינַת עַבְדוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲבוֹדָה זָרָה",
+   "target_he": "עַבְדוּת",
+   "proof": "וְעַל כֵּן נִקְרָאִים בֵּית עֲבָדִים, בְּחִינַת עַבְדוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִירַת הַבְּרִית",
+   "target_he": "עַבְדוּת",
+   "proof": "שְׁמִירַת הַבְּרִית – מִי שֶׁפּוֹגֵם בּוֹ הוּא גַּם כֵּן בִּבְחִינַת עַבְדוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִי שֶׁפּוֹגֵם בַּבְּרִית",
+   "target_he": "חָם",
+   "proof": "בִּבְחִינַת חָם, שֶׁנֶּאֱמַר בּוֹ (בראשית ט׳:כ״ה): אָרוּר כְּנָעַן, עֶבֶד עֲבָדִים יִהְיֶה לְאֶחָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

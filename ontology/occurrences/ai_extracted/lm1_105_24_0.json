@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 105,
+ "chunk": "105_24_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עֹז",
+   "target_he": "תּוֹרָה",
+   "proof": "אֵין עֹז אֶלָּא תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרָה",
+   "target_he": "תְּשׁוּבָה",
+   "proof": "שֶׁעַל יְדֵי זֶה זוֹכִין לִתְשׁוּבָה וּלְדַעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרָה",
+   "target_he": "דַעַת",
+   "proof": "שֶׁעַל יְדֵי זֶה זוֹכִין לִתְשׁוּבָה וּלְדַעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּבָה וְדַעַת",
+   "target_he": "רַחֲמִים אֶצְלוֹ יִתְבָּרַךְ",
+   "proof": "שֶׁעַל־יְדֵי־זֶה מְעוֹרְרִים רַחֲמִים אֶצְלוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רַחֲמִים אֶצְלוֹ יִתְבָּרַךְ",
+   "target_he": "תְּפִלָּתוֹ יִתְבָּרַךְ עָלֵינוּ",
+   "proof": "עַד שֶׁהוּא בְּעַצְמוֹ כִּבְיָכוֹל מִתְפַּלֵּל עָלֵינוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

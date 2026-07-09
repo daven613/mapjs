@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 57,
+ "chunk": "57_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בחינת יעקב",
+   "target_he": "אמונה הנפולה",
+   "proof": "וּלְהָקִים אֱמוּנָה הַנְּפוּלָה הִיא עַל־יְדֵי בְּחִינַת יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בחינת יעקב",
+   "target_he": "נדר",
+   "proof": "בְּחִינַת יַעֲקֹב, הַיְנוּ עַל־יְדֵי נֶדֶר, שֶׁיִּדֹּר אֵיזֶהוּ נֶדֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נדר",
+   "target_he": "אמונת חכמים",
+   "proof": "וְעַל־יְדֵי הַנֶּדֶר יָשׁוּב לֶאֱמוּנַת חֲכָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונת חכמים",
+   "target_he": "הסתלקות החכמים",
+   "proof": "כִּי כְּשֶׁאֵין לוֹ אֱמוּנַת חֲכָמִים, זֶה בְּחִינַת הִסְתַּלְּקוּת הַחֲכָמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הסתלקות החכמים",
+   "target_he": "פלא",
+   "proof": "בְּחִינַת פֶּלֶא, בִּבְחִינוֹת (ישעיהו כ״ט:י״ד): הִנְנִי יוֹסִיף לְהַפְלִיא אֶת הָעָם הַזֶּה הַפְלֵא וָפֶלֶא וְאָבְדָה חָכְמַת חֲכָמָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נדר",
+   "target_he": "הסתלקות החכמים",
+   "proof": "וְתִקּוּנוֹ שֶׁל הַפְלָאָה הַזֹּאת, הַיְנוּ שֶׁל סִלּוּקָן שֶׁל חֲכָמִים, תִּקּוּנוֹ, הַפְלָאָה שֶׁל נֶדֶר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נדר",
+   "target_he": "פלא",
+   "proof": "בִּבְחִינַת (במדבר ו׳:ב׳): כִּי יַפְלִיא לִנְדֹּר נֶדֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נדר",
+   "target_he": "שורש שהחכמים מושרשים שם",
+   "proof": "כִּי עַל־יְדֵי הַנֶּדֶר, הוּא עוֹלֶה לַשֹּׁרֶשׁ שֶׁהַחֲכָמִים מֻשְׁרָשִׁים שָׁם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שורש שהחכמים מושרשים שם",
+   "target_he": "פליאות חכמה",
+   "proof": "הַיְנוּ בְּחִינַת פְּלִיאוֹת חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הכרת מעלות החכמים",
+   "target_he": "אמונה בחכמים",
+   "proof": "וְיוֹדֵעַ וּמַכִּיר מַעֲלוֹת הַחֲכָמִים, וְעַל־יְדֵי־זֶה הוּא שָׁב וּמַאֲמִין בָּהֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

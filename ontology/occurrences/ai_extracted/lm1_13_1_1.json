@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 13,
+ "chunk": "13_1_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּלּוּת מָשִׁיחַ",
+   "target_he": "בִּטּוּל חֶמְדַּת הַמָּמוֹן",
+   "proof": "וְזֶה בְּחִינַת הִתְגַּלּוּת מָשִׁיחַ, שֶׁאֲזַי יִתְבַּטֵּל חֶמְדַּת הַמָּמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בַּיּוֹם הַהוּא יַשְׁלִיךְ הָאָדָם אֶת אֱלִילֵי כַסְפּוֹ וֶאֱלִילֵי זְהָבוֹ",
+   "target_he": "הִתְגַּלּוּת מָשִׁיחַ",
+   "proof": "וְזֶה בְּחִינַת הִתְגַּלּוּת מָשִׁיחַ... כְּמוֹ שֶׁכָּתוּב: בַּיּוֹם הַהוּא יַשְׁלִיךְ הָאָדָם אֶת אֱלִילֵי כַסְפּוֹ וֶאֱלִילֵי זְהָבוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוּחַ אַפֵּינוּ מְשִׁיחַ ה'",
+   "target_he": "בִּטּוּל חֶמְדַּת הַמָּמוֹן",
+   "proof": "וְזֶה בְּחִינַת: רוּחַ אַפֵּינוּ מְשִׁיחַ ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲבוֹדָה זָרָה שֶׁל מָמוֹן",
+   "target_he": "חֲרוֹן־אַף",
+   "proof": "וְכָל זְמַן שֶׁיֵּשׁ עֲבוֹדָה זָרָה זֹאת שֶׁל מָמוֹן בָּעוֹלָם – חֲרוֹן־אַף בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּטּוּל עֲבוֹדָה זָרָה שֶׁל מָמוֹן",
+   "target_he": "בִּטּוּל הַחֲרוֹן־אַף",
+   "proof": "וּכְפִי הַבִּטּוּל שֶׁל עֲבוֹדָה זָרָה זֹאת, כֵּן נִתְבַּטֵּל הַחֲרוֹן־אַף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוּחַ אַפֵּינוּ מְשִׁיחַ ה'",
+   "target_he": "בִּטּוּל הַחֲרוֹן־אַף",
+   "proof": "כֵּן נִתְבַּטֵּל הַחֲרוֹן־אַף, בִּבְחִינַת: רוּחַ אַפֵּינוּ מְשִׁיחַ ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּטּוּל הַחֲרוֹן־אַף",
+   "target_he": "חֶסֶד",
+   "proof": "כֵּן נִתְבַּטֵּל הַחֲרוֹן־אַף... וְנִתְמַשֵּׁךְ חֶסֶד בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְעוֹשֶׂה חֶסֶד לִמְשִׁיחוֹ",
+   "target_he": "חֶסֶד",
+   "proof": "וְנִתְמַשֵּׁךְ חֶסֶד בָּעוֹלָם, בִּבְחִינַת: וְעוֹשֶׂה חֶסֶד לִמְשִׁיחוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֶסֶד",
+   "target_he": "דַּעַת",
+   "proof": "וּכְשֶׁיִּתְגַּלֶּה חֶסֶד הַזֶּה, יִתְמַשֵּׁךְ הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דַּעַת",
+   "target_he": "בִּנְיַן הַבַּיִת",
+   "proof": "יִתְמַשֵּׁךְ הַדַּעַת, שֶׁהִיא בִּנְיַן הַבַּיִת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וַאֲנִי בְּרֹב חַסְדְּךָ אָבוֹא בֵיתֶךָ",
+   "target_he": "דַּעַת",
+   "proof": "בִּבְחִינַת: וַאֲנִי בְּרֹב חַסְדְּךָ אָבוֹא בֵיתֶךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דַּעַת",
+   "target_he": "בַּיִת",
+   "proof": "כִּי הַדַּעַת הוּא בְּחִינַת בַּיִת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דֵעָה",
+   "target_he": "בֵּית־הַמִּקְדָּשׁ",
+   "proof": "מִי שֶׁיֵּשׁ בּוֹ דֵעָה, כְּאִלּוּ נִבְנָה בֵּית־הַמִּקְדָּשׁ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

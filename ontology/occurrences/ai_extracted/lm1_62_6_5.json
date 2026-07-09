@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 62,
+ "chunk": "62_6_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "וַיַּסֵּב",
+   "target_he": "לְשׁוֹן הֲסִבָּה",
+   "proof": "וַיַּסֵּב לְשׁוֹן סְעֻדָּה, הַיְנוּ לְשׁוֹן הֲסִבָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֲמֻשִׁים",
+   "target_he": "חֲמֵשֶׁת מוֹצָאוֹת הַפֶּה",
+   "proof": "וַחֲמֻשִׁים – אֶחָד מֵחֲמִשָּׁה... הַיְנוּ חֲמֵשֶׁת מוֹצָאוֹת הַפֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עָלוּ בְנֵי יִשְׂרָאֵל מֵאֶרֶץ מִצְרָיִם",
+   "target_he": "מֵצַר הַגָּרוֹן",
+   "proof": "עָלוּ בְנֵי יִשְׂרָאֵל מֵאֶרֶץ מִצְרָיִם – מִמֵּצַר הַגָּרוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּר",
+   "target_he": "הַחְזָרַת הָעַכּוּ\"ם לֶאֱמוּנַת יִשְׂרָאֵל",
+   "proof": "עַל־יְדֵי הַדִּבּוּר מַחֲזִיר אֶת הָעַכּוּ\"ם לֶאֱמוּנַת יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה בִּשְׁלֵמוּת",
+   "target_he": "הֻתְּרָה אֲכִילָה",
+   "proof": "עַל־יְדֵי אֱמוּנָה בִּשְׁלֵמוּת, אֲזַי הֻתְּרָה אֲכִילָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִשּׁוּטֵי הָאֱמוּנָה",
+   "target_he": "מִתְקַשְּׁטָא בְּקִשּׁוּטִין דְּלָא הֲווֹ",
+   "proof": "וְזֶה עִקַּר קִשּׁוּטֵי הָאֱמוּנָה, בְּחִינַת מִתְקַשְּׁטָא בְּקִשּׁוּטִין דְּלָא הֲווֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֻתְּרָה אֲכִילָה",
+   "target_he": "וַיַּסֵּב",
+   "proof": "עַל־יְדֵי אֱמוּנָה בִּשְׁלֵמוּת, אֲזַי הֻתְּרָה אֲכִילָה, בְּחִינַת וַיַּסֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

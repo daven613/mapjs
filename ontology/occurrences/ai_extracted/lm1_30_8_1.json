@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_8_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עזות דקדושה",
+   "target_he": "קבלת התורה",
+   "proof": "שֶׁאִי אֶפְשָׁר לְקַבֵּל אֶת הַתּוֹרָה כִּי אִם עַל־יְדֵי זֶה הָעַזּוּת דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עזות דקדושה",
+   "target_he": "לבוא אל התורה",
+   "proof": "כִּי אִי אֶפְשָׁר לָבוֹא אֶל הַתּוֹרָה, כִּי אִם עַל יְדֵי עַזּוּת דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תורה",
+   "target_he": "עוז",
+   "proof": "וּבִשְׁבִיל זֶה הַתּוֹרָה נִקְרֵאת עֹז",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

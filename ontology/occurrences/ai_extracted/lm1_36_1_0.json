@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 36,
+ "chunk": "36_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "יַד שִׁבְעִים לְשׁוֹנוֹת",
+   "target_he": "מִדּוֹתֵיהֶם הָרָעִים",
+   "proof": "תַּחַת יַד שִׁבְעִים לְשׁוֹנוֹת, הַיְנוּ בְּמִדּוֹתֵיהֶם הָרָעִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִדּוֹת רָעוֹת שֶׁל שִׁבְעִים לָשׁוֹן",
+   "target_he": "שִׁבְעִים פָּנִים שֶׁל תּוֹרָה",
+   "proof": "וּמֵחֲמַת הַמִּדּוֹת הָאֵלּוּ הֵם מְרֻחָקִים מִשִּׁבְעִים פָּנִים שֶׁל תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׁבְעִין תֵּבִין שֶׁבְּמִזְמוֹר יַעַנְךָ",
+   "target_he": "לֵדָה",
+   "proof": "שֶׁבְּלֹא זֶה אִי אֶפְשָׁר לָהּ לֵילֵד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

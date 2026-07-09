@@ -1,0 +1,118 @@
+{
+ "book": "lm2",
+ "torah": 9,
+ "chunk": "9_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַנְהִיגֵי הַדּוֹר",
+   "target_he": "רוּחַ",
+   "proof": "וּמַנְהִיגֵי הַדּוֹר הֵם בְּחִינַת רוּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִשְׂרָאֵל",
+   "target_he": "לִבָּא",
+   "proof": "וְיִשְׂרָאֵל הֵם בְּחִינַת לִבָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָאִישׁ הַיִּשְׂרְאֵלִי",
+   "target_he": "לֵב",
+   "proof": "הָאִישׁ הַיִּשְׂרְאֵלִי, שֶׁהוּא בְּחִינַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רְשָׁעִים",
+   "target_he": "עֵרֶב־רַב",
+   "proof": "גַּם יֵשׁ רְשָׁעִים שֶׁהֵם בְּחִינַת עֵרֶב־רַב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עַפְרוּרִיּוּת",
+   "target_he": "מָרָה־שְׁחוֹרָה",
+   "proof": "לְנַפֵּחַ מֵהֶם הָעַפְרוּרִיּוּת, דְּהַיְנוּ מָרָה־שְׁחוֹרָה שֶׁנּוֹפֵל עֲלֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַפְרוּרִיּוּת (מָרָה־שְׁחוֹרָה)",
+   "target_he": "לִדְלֹק וְלִבְעֹר לְהַשֵּׁם יִתְבָּרַךְ",
+   "proof": "שֶׁעַל־יְדֵי זֶה אֵינוֹ יָכוֹל הָאִישׁ הַיִּשְׂרְאֵלִי, שֶׁהוּא בְּחִינַת לֵב, לִדְלֹק וְלִבְעֹר לְהַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְפִילַת עֵרֶב־רַב עַל הַלֵּב",
+   "target_he": "עַפְרוּרִיּוּת",
+   "proof": "וּכְשֶׁהֵם נוֹפְלִים עַל הַלֵּב, דְּהַיְנוּ עַל יִשְׂרָאֵל, זֶה גַם־כֵּן בְּחִינַת עַפְרוּרִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַפְרוּרִיּוּת",
+   "target_he": "לִבְעֹר",
+   "proof": "שֶׁעַל־יְדֵי־זֶה אֵין יָכוֹל לִבְעֹר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִפּוּחַ הָעַפְרוּרִיּוּת מִן הַלֵּב",
+   "target_he": "הִתְחַבְּרוּת חֶלְקֵי הָאֵשׁ שֶׁבְּכָל אֶחָד מִיִּשְׂרָאֵל",
+   "proof": "וְעַל־כֵּן צְרִיכִין מַנְהִיגֵי הַדּוֹר לְנַפֵּחַ הָעַפְרוּרִיּוּת מִן הַלֵּב, דְּהַיְנוּ מִכָּל אֶחָד מִיִּשְׂרָאֵל, וְחוֹזְרִין וְנִתְחַבְּרִין חֶלְקֵי הָאֵשׁ שֶׁבְּכָל אֶחָד וְאֶחָד מִיִּשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִפּוּחַ הָעַפְרוּרִיּוּת מִן הַלֵּב",
+   "target_he": "הִתְקַשְּׁרוּת יִשְׂרָאֵל בְּיַחַד",
+   "proof": "וְנִתְקַשְּׁרִין יִשְׂרָאֵל בְּיַחַד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִשְׂרָאֵל",
+   "target_he": "לֵב",
+   "proof": "וְנַעֲשִׂין בְּחִינַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָּל אֶחָד וְאֶחָד מִיִּשְׂרָאֵל",
+   "target_he": "לֵב",
+   "proof": "וְכָל אֶחָד וְאֶחָד מִיִּשְׂרָאֵל נַעֲשֶׂה בְּחִינַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

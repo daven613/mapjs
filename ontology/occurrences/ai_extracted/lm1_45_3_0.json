@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 45,
+ "chunk": "45_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עיקר גלות מצרים",
+   "target_he": "הדיבור בגלות",
+   "proof": "וְעִקַּר גָּלוּת מִצְרַיִם, שֶׁהָיָה הַדִּבּוּר בְּגָלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הדיבור בגלות",
+   "target_he": "משה כבד פה",
+   "proof": "וּבִשְׁבִיל זֶה הָיָה מֹשֶׁה כְּבַד פֶּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גאולה",
+   "target_he": "בחינת פה",
+   "proof": "וְעַל־יְדֵי גְּאֻלָּה נִתְהַוָּה בְּחִינַת פֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חמישין שערי בינה",
+   "target_he": "הפה",
+   "proof": "נִמְצָא שֶׁעַל־יְדֵי חֲמִשִּׁין שַׁעֲרֵי בִּינָה נִתְהַוָּה הַפֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נתהוות הפה על ידי חמישין שערי בינה",
+   "target_he": "מי שם פה לאדם",
+   "proof": "וְזֶה בְּחִינַת (שמות ד): מִי שָׂם פֶּה לָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מי",
+   "target_he": "חמישין שערי בינה",
+   "proof": "מִי דַּיְקָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

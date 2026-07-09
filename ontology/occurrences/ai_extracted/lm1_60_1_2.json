@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_1_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כָּל הַדְּבָרִים וְהַהַקְדָּמוֹת שֶׁמִּקֹּדֶם",
+   "target_he": "פְּסֹלֶת",
+   "proof": "וְכָל הַדְּבָרִים וְהַהַקְדָּמוֹת שֶׁמִּקֹּדֶם הֵם בְּחִינַת פְּסֹלֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַסִּבּוּבִים",
+   "target_he": "פְּסֹלֶת",
+   "proof": "וְכָל אֵלּוּ הַסִּבּוּבִים הֵם בְּחִינַת פְּסֹלֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַסִּבּוּבִים",
+   "target_he": "עֲשִׁירוּת",
+   "proof": "וְהֵם בְּחִינַת עֲשִׁירוּת שֶׁעַל יָדוֹ בָּאִים אֶל הַהִתְבּוֹנְנוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲשִׁירוּת",
+   "target_he": "הִתְבּוֹנְנוּת",
+   "proof": "שֶׁעַל יָדוֹ בָּאִים אֶל הַהִתְבּוֹנְנוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פְּסֹלֶת שֶׁל לוּחוֹת",
+   "target_he": "הַסִּבּוּבִים",
+   "proof": "כִּי זֶה הַפְּסֹלֶת שֶׁל לוּחוֹת, הֵם בְּחִינַת הַסִּבּוּבִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פְּסֹלֶת שֶׁל לוּחוֹת",
+   "target_he": "עֲשִׁירוּת",
+   "proof": "וְהֵם בְּחִינַת עֲשִׁירוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲשִׁירוּת",
+   "target_he": "הִתְבּוֹנְנוּת",
+   "proof": "שֶׁעַל יָדוֹ בָּאִים אֶל הַהִתְבּוֹנְנוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּסֹלֶת",
+   "target_he": "עֲשִׁירוּת",
+   "proof": "הַפְּסֹלֶת יִהְיֶה שֶׁלְּךָ, מִשָּׁם נִתְעַשֵּׁר מֹשֶׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

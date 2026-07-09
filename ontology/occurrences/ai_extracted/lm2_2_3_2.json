@@ -1,0 +1,127 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_3_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דיבור של צדקה",
+   "target_he": "מדבר בצדקה",
+   "proof": "בִּבְחִינַת (ישעיהו ס״ג:א׳): מְדַבֵּר בִּצְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דיבור של צדקה",
+   "target_he": "היתרון שיש לאדם על החי",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת הַיִּתְרוֹן שֶׁיֵּשׁ לָאָדָם עַל הַחַי, שֶׁהוּא הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "היתרון שיש לאדם על החי",
+   "target_he": "הדיבור",
+   "proof": "הַיִּתְרוֹן שֶׁיֵּשׁ לָאָדָם עַל הַחַי, שֶׁהוּא הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הדיבור",
+   "target_he": "גדר האדם",
+   "proof": "שֶׁהוּא גֶּדֶר הָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הדיבור",
+   "target_he": "צדקה",
+   "proof": "וְהוּא בְּחִינַת צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צדקה",
+   "target_he": "גומל חסד עם הבריות",
+   "proof": "שֶׁהוּא גּוֹמֵל חֶסֶד עִם הַבְּרִיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גמילות חסד",
+   "target_he": "גדר האדם",
+   "proof": "שֶׁזֶּה גֶּדֶר הָאָדָם, שֶׁדַּרְכּוֹ לִגְמֹל חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "נקרא אדם",
+   "proof": "שֶׁעַל יְדֵי צְדָקָה נִקְרָא אָדָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צדקה",
+   "target_he": "גדר האדם",
+   "proof": "כִּי הַצְּדָקָה, שֶׁמִּשָּׁם הַדִּבּוּר, הוּא גֶּדֶר הָאָדָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "הדיבור",
+   "proof": "שֶׁמִּשָּׁם הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הדיבור של צדקה",
+   "target_he": "לא איש דברים אנכי",
+   "proof": "וְזֶה בְּחִינַת: לֹא אִישׁ דְּבָרִים־אָנֹכִי, הַיְנוּ הַדִּבּוּר שֶׁל צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הדיבור של צדקה",
+   "target_he": "טוב איש חונן ומלוה יכלכל דבריו",
+   "proof": "בְּחִינַת (תהילים קי״ב:ה׳): טוֹב אִישׁ חוֹנֵן וּמַלְוֶה יְכַלְכֵּל דְּבָרָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "טוב איש חונן ומלוה יכלכל דבריו",
+   "target_he": "גמילות חסד וצדקה",
+   "proof": "דְּהַיְנוּ גְּמִילוּת חֶסֶד וּצְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

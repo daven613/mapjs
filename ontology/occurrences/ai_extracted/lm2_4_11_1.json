@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_11_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "וּבָא הָאֲרִי וְהַדּוֹב",
+   "target_he": "חַיּוֹת רָעוֹת הַדּוֹרְסִים וְטוֹרְפִים",
+   "proof": "דְּהַיְנוּ חַיּוֹת רָעוֹת הַנַּ\"ל הַדּוֹרְסִים וְטוֹרְפִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חַיּוֹת רָעוֹת",
+   "target_he": "חַכְמֵי הַטֶּבַע",
+   "proof": "שֶׁהֵם חַכְמֵי הַטֶּבַע כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נָשָׂא זֶה מֵהָעֵדֶר",
+   "target_he": "הֶעְדֵר הַגָּמוּר",
+   "proof": "הַיְנוּ מֵהֶעְדֵר הַגָּמוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נָשָׂא וְסִלֵּק זֹאת מֵהֶעְדֵּר הַגָּמוּר",
+   "target_he": "כָּפַר בָּזֶה שֶׁהַשֵּׁם יִתְבָּרַךְ בָּרָא הַכֹּל בִּרְצוֹנוֹ אַחַר הֶעְדֵּר הַגָּמוּר",
+   "proof": "דְּהַיְנוּ שֶׁכָּפַר בָּזֶה, שֶׁהַשֵּׁם יִתְבָּרַךְ בָּרָא הַכֹּל בִּרְצוֹנוֹ אַחַר הֶעְדֵּר הַגָּמוּר, רַק שֶׁהַכֹּל עַל פִּי חִיּוּב הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הֶחֱזַקְתִּי בִּזְקָנוֹ",
+   "target_he": "הֵבַנְתִּי שֶׁכָּל כֹּחוֹ וִינִיקָתוֹ עַל־יְדֵי מֵצַח הַנָּחָשׁ",
+   "proof": "הַיְנוּ שֶׁהֵבַנְתִּי, שֶׁכָּל כֹּחוֹ וִינִיקָתוֹ עַל־יְדֵי מֵצַח הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זִקְנֵי הַדּוֹר שֶׁאֵינָם כָּרָאוּי",
+   "target_he": "מֵצַח הַנָּחָשׁ",
+   "proof": "שֶׁיּוֹנֵק מִזִּקְנֵי הַדּוֹר שֶׁאֵינָם כָּרָאוּי כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֶחֱזַקְתִּי בִּזְקָנוֹ בְּשֹׁרֶשׁ יְנִיקָתוֹ בְּזִקְנֵי הַדּוֹר",
+   "target_he": "הִכְנַעְתִּי וְהִשְׁפַּלְתִּי אֶת חַכְמֵי הַטֶּבַע חַיּוֹת רָעוֹת",
+   "proof": "שֶׁהִכְנַעְתִּי וְהִשְׁפַּלְתִּי אֶת חַכְמֵי הַטֶּבַע, חַיּוֹת רָעוֹת, עַל־יְדֵי שֶׁהֶחֱזַקְתִּי בִּזְקָנוֹ, בְּשֹׁרֶשׁ יְנִיקָ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

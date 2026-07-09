@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 263,
+ "chunk": "263_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יציאה מגדר אדם לגדר בהמה",
+   "target_he": "הִרְכַּבְתָּ אֱנוֹשׁ לְרֹאשֵׁנוּ",
+   "proof": "וְזֶה בְּחִינַת (תהילים ס״ו:י״ב): הִרְכַּבְתָּ אֱנוֹשׁ לְרֹאשֵׁנוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בָּאנוּ בָּאֵשׁ וּבַמַּיִם",
+   "target_he": "חֳלִי הַקַּדַּחַת",
+   "proof": "בָּאנוּ בָּאֵשׁ וּבַמַּיִם – זֶה בְּחִינַת חֳלִי הַקַּדַּחַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֳלִי הַקַּדַּחַת",
+   "target_he": "אֵשׁ וּמַיִם, חֲמִימוּת וּקְרִירוּת",
+   "proof": "שֶׁהוּא אֵשׁ וּמַיִם, חֲמִימוּת וּקְרִירוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילַת מַאֲכַל בְּהֵמָה",
+   "target_he": "יְצִיאָה מִגֶּדֶר אָדָם לְגֶדֶר בְּהֵמָה",
+   "proof": "כִּי כְּשֶׁאוֹכֵל מַאֲכַל בְּהֵמָה כַּנַּ\"ל, נִמְצָא שֶׁיּוֹצֵא מִגֶּדֶר אָדָם לְגֶדֶר בְּהֵמָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְצִיאָה לְגֶדֶר בְּהֵמָה",
+   "target_he": "חֳלִי הַקַּדַּחַת",
+   "proof": "כִּי יָרַד לְגֶדֶר בְּהֵמָה כַּנַּ\"ל, אֲזַי: בָּאנוּ בָּאֵשׁ וּבַמַּיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 51,
+ "chunk": "51_29_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר",
+   "target_he": "עֵינַיִם",
+   "proof": "וּבִשְׁבִיל זֶה הַשֶּׁקֶר מַזִּיק לָעֵינַיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר",
+   "target_he": "הַשְׁגָּחָה",
+   "proof": "כִּי עַל־יְדֵי הַשֶּׁקֶר מְסַלֵּק הַשְׁגָּחַת עֵינֵי הַשֵּׁם יִתְבָּרַךְ, וּפוֹגֵם בָּעֵינַיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֵינַיִם",
+   "target_he": "הַשְׁגָּחָה",
+   "proof": "שֶׁהֵם בִּבְחִינַת הַשְׁגָּחָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִחוּק מֵאֶחָד",
+   "target_he": "שֶׁקֶר",
+   "proof": "כִּי הַשֶּׁקֶר נִמְשָׁךְ מֵרִחוּק מֵאֶחָד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִחוּק מֵאֶחָד",
+   "target_he": "אֲחִיזַת הַטֻּמְאָה",
+   "proof": "שֶׁמִּשָּׁם עִקַּר אֲחִיזַת הַטֻּמְאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "טֻמְאָה",
+   "target_he": "רָע",
+   "proof": "שֶׁהוּא הָרָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רָע",
+   "target_he": "שֶׁקֶר",
+   "proof": "שֶׁהוּא הַשֶּׁקֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר",
+   "target_he": "אֶחָד",
+   "proof": "וְעַל־יְדֵי הַשֶּׁקֶר פּוֹגֵם בְּאֶחָד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר",
+   "target_he": "הַפְרָדַת אַחַר הַבְּרִיאָה מִקֹּדֶם הַבְּרִיאָה",
+   "proof": "עַל כֵּן מְסַלֵּק הַהַשְׁגָּחָה עַל־יְדֵי הַשֶּׁקֶר, וּמַפְרִיד, חַס וְשָׁלוֹם, אַחַר הַבְּרִיאָה מִקֹּדֶם הַבְּרִיאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "הַשְׁגָּחָה",
+   "proof": "אֲבָל עַל־יְדֵי אֱמֶת...עַל־יְדֵי־זֶה מַמְשִׁיךְ הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמֶת",
+   "target_he": "כֻּלּוֹ אֶחָד, כֻּלּוֹ טוֹב",
+   "proof": "שֶׁהוּא בְּחִינַת כֻּלּוֹ אֶחָד, כֻּלּוֹ טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשְׁגָּחָה",
+   "target_he": "הַכֹּל אֶחָד",
+   "proof": "כִּי עַל־יְדֵי הַהַשְׁגָּחָה נִכְלָל אַחַר הַבְּרִיאָה בְּקֹדֶם הַבְּרִיאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

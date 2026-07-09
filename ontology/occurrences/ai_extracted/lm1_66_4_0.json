@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אי אפשר להוציא הדיבור בשלמות",
+   "target_he": "היזעריק",
+   "proof": "שֶׁזֶּה בְּחִינוֹת מַה שֶּׁקּוֹרִין בִּלְשׁוֹן אַשְׁכְּנַז: הֵיזֶרִיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נקודות",
+   "target_he": "דיבור",
+   "proof": "כִּי בְּלֹא נְקֻדּוֹת אִי אֶפְשָׁר לְדַבֵּר שׁוּם אוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נקודות",
+   "target_he": "להוציא מכח אל הפועל",
+   "proof": "וַאֲזַי, כְּשֶׁמַּמְשִׁיכִין נְקֻדּוֹת אֶל הָאוֹתִיּוֹת, וּמוֹצִיאִין הַדִּבּוּר בִּשְׁלֵמוּת, אֲזַי יְכוֹלִין לְהוֹצִיא מִכֹּחַ אֶל הַפֹּעַל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_2_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "תאות ניאוף",
+   "proof": "כְּשֶׁהַדַּעַת נִפְגָּם, חַס וְשָׁלוֹם, כַּנַּ\"ל, מִזֶּה בָּא, חַס וְשָׁלוֹם, תַּאֲוַת נִאוּף כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רחמנות ודעת",
+   "target_he": "תפלה בבחינת רחמים ותחנונים",
+   "proof": "וַאֲזַי כְּשֶׁנִּפְגָּם הָרַחֲמָנוּת וְהַדַּעַת, אֲזַי אִי אֶפְשָׁר לְהִתְפַּלֵּל בִּבְחִינַת רַחֲמִים וְתַחֲנוּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רחמנות ודעת",
+   "target_he": "תפלה בבחינת דין",
+   "proof": "וְאָז הַתְּפִלָּה בִּבְחִינַת דִּין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפלה",
+   "target_he": "דין",
+   "proof": "וְאָז הַתְּפִלָּה בִּבְחִינַת דִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפלה בבחינת דין",
+   "target_he": "הסטרא אחרא בולעת את התפלה",
+   "proof": "וּכְשֶׁהַתְּפִלָּה בִּבְחִינַת דִּין, אָז הַסִּטְרָא־אָחֳרָא בּוֹלַעַת אֶת הַתְּפִלָּה, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יניקת הסטרא אחרא",
+   "target_he": "דינים",
+   "proof": "כִּי עִקָּר יְנִיקַת הַסִּטְרָא־אָחֳרָא הִיא מִבְּחִינַת דִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דינים",
+   "target_he": "מוחין דקטנות",
+   "proof": "שֶׁהֵם מֹחִין דְּקַטְנוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוחין דקטנות",
+   "target_he": "אלקים",
+   "proof": "בְּחִינַת אֱלֹקִים, כַּיָּדוּעַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפלה בבחינת דין",
+   "target_he": "אחיזת הסטרא אחרא בתפלה ובליעתה",
+   "proof": "וְעַל־כֵּן הֵם נֶאֱחָזִין, חַס וְשָׁלוֹם, בִּתְפִלָּה זוֹ שֶׁהִיא בְּחִינַת דִּין, וּבוֹלְעִין אוֹתָהּ, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

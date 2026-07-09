@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 154,
+ "chunk": "154_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מִשְׁפָּט",
+   "target_he": "מַה שֶּׁהָאָדָם שׁוֹפֵט וְדָן עַצְמוֹ עַל כָּל דָּבָר וְדָבָר שֶׁעוֹשֶׂה",
+   "proof": "וּמִשְׁפָּט הוּא מַה שֶּׁהָאָדָם שׁוֹפֵט וְדָן עַצְמוֹ עַל כָּל דָּבָר וְדָבָר שֶׁעוֹשֶׂה, טֶרֶם שֶׁיָּדִינוּ אוֹתוֹ לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁהוּא בְּעַצְמוֹ שׁוֹפֵט אֶת עַצְמוֹ",
+   "target_he": "נִצּוֹל מִדִּין שֶׁלְּמַעְלָה",
+   "proof": "וְעַל־יְדֵי מַה שֶּׁהוּא בְּעַצְמוֹ שׁוֹפֵט אֶת עַצְמוֹ נִצּוֹל מִדִּין שֶׁלְּמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּין לְמַטָּה",
+   "target_he": "דִּין לְמַעְלָה",
+   "proof": "כִּי כְּשֶׁיֵּשׁ דִּין לְמַטָּה אֵין דִּין לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_3_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תיקון הברית",
+   "target_he": "רוח הקודש",
+   "proof": "שֶׁהוּא בְּחִינַת רוּחַ־הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוח הקודש",
+   "target_he": "לא קמה עוד רוח באיש",
+   "proof": "בִּבְחִינַת וְלֹא קָמָה עוֹד רוּחַ בְּאִישׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מקום החתך",
+   "target_he": "חיתוך הדיבור",
+   "proof": "הַיְנוּ חִתּוּךְ הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יראה",
+   "target_he": "אוצר",
+   "proof": "הַיְנוּ הַיִּרְאָה הוּא אוֹצָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראת ה'",
+   "target_he": "עשיה ותיקון של לשון הקודש",
+   "proof": "שֶׁעִקַּר עֲשִׂיָּה וְתִקּוּן שֶׁל לְשׁוֹן הַקֹּדֶשׁ תּוֹלֶה בְּיִרְאַת ה'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "עשיה ותיקון של חטה",
+   "proof": "שֶׁבּוֹ תָּלוּי עֲשִׂיָּה וְתִקּוּן שֶׁל חִטָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אלוקים ירא",
+   "target_he": "דיבור הקודש",
+   "proof": "שֶׁדִּבּוּר הַקֹּדֶשׁ תּוֹלֶה בֶּאֱלֹקִים יְרָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

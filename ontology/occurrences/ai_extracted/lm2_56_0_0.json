@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 56,
+ "chunk": "56_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "לֵב",
+   "target_he": "מָקוֹם",
+   "proof": "כְּשֶׁיֵּשׁ לְהָאָדָם לֵב, אֵין שַׁיָּךְ אֶצְלוֹ מָקוֹם כְּלָל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לֵב",
+   "target_he": "מְקוֹמוֹ שֶׁל עוֹלָם",
+   "proof": "כִּי אַדְּרַבָּא, הוּא מְקוֹמוֹ שֶׁל עוֹלָם וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הִנֵּה מָקוֹם אִתִּי",
+   "target_he": "מְקוֹמוֹ שֶׁל עוֹלָם",
+   "proof": "הִנֵּה מָקוֹם אִתִּי – שֶׁהוּא מְקוֹמוֹ שֶׁל עוֹלָם, וְאֵין הָעוֹלָם מְקוֹמוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

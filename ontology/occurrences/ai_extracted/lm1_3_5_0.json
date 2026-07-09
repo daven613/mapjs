@@ -1,0 +1,44 @@
+{
+ "book": "lm1",
+ "torah": 3,
+ "chunk": "3_5_0",
+ "model": "claude-fable-5",
+ "extractor": "ai:claude-fable-5",
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "לימוד תורה שבעל־פה בלילה",
+   "target_he": "לשמוע נגינה מכל אדם",
+   "proof": "וְהַתִּקּוּן הוּא שֶׁיּוּכַל לִשְׁמֹעַ נְגִינָה מִכָּל אָדָם, הוּא עַל־יְדֵי שֶׁיִּלְמַד בַּלַּיְלָה תּוֹרָה שֶׁבְּעַל־פֶּה",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "equation",
+   "source_he": "תורה שבעל־פה",
+   "target_he": "גמרא",
+   "proof": "שֶׁיִּלְמַד בַּלַּיְלָה תּוֹרָה שֶׁבְּעַל־פֶּה, הַיְנוּ גְּמָרָא",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גמרא",
+   "target_he": "לילה",
+   "proof": "הַיְנוּ גְּמָרָא שֶׁהִיא בְּחִינַת לַיְלָה",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תורה שבכתב",
+   "target_he": "יום",
+   "proof": "כְּשֶׁהָיָה לוֹמֵד תּוֹרָה שֶׁבִּכְתָב הָיָה יוֹדֵעַ שֶׁהוּא יוֹם",
+   "explicitness": "inferred"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תורה שבעל־פה",
+   "target_he": "לילה",
+   "proof": "וּכְשֶׁלָּמַד תּוֹרָה שֶׁבְּעַל־פֶּה הָיָה יוֹדֵעַ שֶׁהוּא לַיְלָה",
+   "explicitness": "inferred"
+  }
+ ]
+}

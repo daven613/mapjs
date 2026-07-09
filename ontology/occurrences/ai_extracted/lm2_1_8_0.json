@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַשְׁפָּעַת הַנְּבוּאָה",
+   "target_he": "הַתְּפִלָּה",
+   "proof": "עַל־יְדֵי הַשְׁפָּעַת הַנְּבוּאָה... עַל־יְדֵי־זֶה נִגְאֶלֶת וְנִפְדֵּית הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְּבוּאָה",
+   "target_he": "הַתְּפִלָּה",
+   "proof": "וְעַל־יְדֵי הַנְּבוּאָה נִגְאֶלֶת הַתְּפִלָּה מִן הַגָּלוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְבוּאָה",
+   "target_he": "הַתְּפִלָּה בִּשְׁלֵמוּת",
+   "proof": "שֶׁעַל־יְדֵי נְבוּאָה הַתְּפִלָּה בִּשְׁלֵמוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כִּי נָבִיא הוּא וְיִתְפַּלֵּל בַּעַדְךָ",
+   "target_he": "נִגְאֶלֶת הַתְּפִלָּה מִן הַגָּלוּת עַל־יְדֵי נְּבוּאָה",
+   "proof": "בִּבְחִינַת (בראשית כ׳:ז׳): כִּי נָבִיא הוּא וְיִתְפַּלֵּל בַּעַדְךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַתְּפִלָּה",
+   "target_he": "בּוֹרֵא נִיב שְׂפָתָיִם",
+   "proof": "כִּי הַתְּפִלָּה הִיא בְּחִינַת (ישעיהו נ״ז:י״ט): בּוֹרֵא נִיב שְׂפָתָיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בּוֹרֵא נִיב שְׂפָתָיִם",
+   "target_he": "נְבוּאָה",
+   "proof": "בְּחִינַת נְבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

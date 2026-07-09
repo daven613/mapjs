@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_6_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קְּלִפּוֹת",
+   "target_he": "כֹּחַ הַמְדַמֶּה",
+   "proof": "שֶׁהַקְּלִפּוֹת שֶׁהֵם בְּחִינַת הַכֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כֹּחַ הַמְדַמֶּה",
+   "target_he": "קְּלִפּוֹת",
+   "proof": "זֶה הַכֹּחַ הַמְדַמֶּה, שֶׁהוּא בְּחִינַת הַקְּלִפּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שׁוֹנֵי הֲלָכוֹת",
+   "target_he": "כֹּחַ הַמְדַמֶּה",
+   "proof": "וְהוֹלֵךְ אֵצֶל הַשּׁוֹנֵי הֲלָכוֹת... כְּדֵי שֶׁיִּהְיֶה נִבְרָא לוֹ גּוּף לְהִתְלַבֵּשׁ בּוֹ עַל יָדָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

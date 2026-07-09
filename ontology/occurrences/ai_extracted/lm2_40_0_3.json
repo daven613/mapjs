@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 40,
+ "chunk": "40_0_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "התרחקות ישראל מהשם יתברך",
+   "target_he": "בחינת ההתפארות",
+   "proof": "יֵשׁ שֶׁנִּתְרַחֵק אֶחָד מֵהַשֵּׁם יִתְבָּרַךְ... שֶׁנִּתְקַלְקֵל וְנִפְגַּם בְּחִינַת הַהִתְפָּאֲרוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צעקת השכינה (קלני מראשי קלני מזרועי)",
+   "target_he": "פגם בחינת ההתפארות",
+   "proof": "הַיְנוּ שֶׁצַּעֲקָתָהּ, שֶׁנִּתְקַלְקֵל וְנִפְגַּם בְּחִינַת הַהִתְפָּאֲרוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התפארות",
+   "target_he": "תפילין",
+   "proof": "וְנִפְגַּם בְּחִינַת הַתְּפִלִּין, שֶׁנַּעֲשִׂין מִן הַהִתְפָּאֲרוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ראש וזרוע",
+   "target_he": "תפילין",
+   "proof": "מֵרֹאשִׁי מִזְּרוֹעִי דַּיְקָא, בְּחִינַת תְּפִלִּין (שֶׁמַּנִּיחִין עַל הָרֹאשׁ וְעַל הַזְּרוֹעַ)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התקרבות ישראל להשם יתברך",
+   "target_he": "התפארותו יתברך",
+   "proof": "רַק כְּשֶׁאֶחָד מִיִּשְׂרָאֵל נִתְקָרֵב לְהַשֵּׁם יִתְבָּרַךְ... אֲזַי נִתְגַּדֵּל וְנִתּוֹסֵף יוֹתֵר הִתְפָּאֲרוּתוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התפארות",
+   "target_he": "תפילין מוחין",
+   "proof": "וְעַל־יְדֵי זֶה הַהִתְפָּאֲרוּת נַעֲשִׂין תְּפִלִּין מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילין מוחין",
+   "target_he": "קדושת ארץ ישראל",
+   "proof": "וּמִזֶּה נַעֲשֶׂה קְדֻשַּׁת אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

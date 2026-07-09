@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 49,
+ "chunk": "49_6_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בְּרֵאשִׁית",
+   "target_he": "בֵּי\"ת רֵאשִׁית",
+   "proof": "וְזֶה בְּחִינַת בְּרֵאשִׁית, בֵּי\"ת רֵאשִׁית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בֵּי\"ת רֵאשִׁית",
+   "target_he": "שְׁנֵי רֵאשִׁית",
+   "proof": "הַיְנוּ שְׁנֵי רֵאשִׁית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁנֵי רֵאשִׁית",
+   "target_he": "רֹאשׁ הַשָּׁנָה וְנִיסָן",
+   "proof": "וְהֵם רֹאשׁ הַשָּׁנָה וְנִיסָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּרֵין דְּרוֹעִין",
+   "target_he": "תִּשְׁרֵי וְנִיסָן",
+   "proof": "וּתְרֵין דְּרוֹעִין, הֵם תִּשְׁרֵי וְנִיסָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תִּשְׁרֵי וְנִיסָן",
+   "target_he": "יְמֵי תְּשׁוּבָה",
+   "proof": "וְהֵם יְמֵי תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּבָה",
+   "target_he": "גְּאֻלָּה",
+   "proof": "וְאֵין הַגְּאֻלָּה אֶלָּא עַל־יְדֵי תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

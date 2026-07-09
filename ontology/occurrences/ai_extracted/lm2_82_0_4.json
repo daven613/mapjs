@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 82,
+ "chunk": "82_0_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מָה",
+   "target_he": "הַשֵּׂכֶל",
+   "proof": "כִּי עִקָּר חִיּוּתָהּ – \"מָה\", הַיְנוּ הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּחִינַת שֶׁלֹּא כְּסֵדֶר",
+   "target_he": "מַלְכוּת, חַוָּה, תַּשְׁרַ\"ק",
+   "proof": "כִּי הוּא בְּתוֹךְ בְּחִינַת שֶׁלֹּא כְּסֵדֶר, הַיְנוּ מַלְכוּת, חַוָּה, תַּשְׁרַ\"ק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָאָדָם",
+   "target_he": "הַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+   "proof": "וּכְשֶׁזֹּאת הַבְּחִינָה חַוָּה הִיא מְקֻשֶּׁרֶת לְהָאָדָם, הַיְנוּ לְהַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חִלּוּק מַלְכוּת לְעַצְמוֹ",
+   "target_he": "שֶׁלֹּא כְּסֵדֶר",
+   "proof": "וּכְשֶׁהוּא מְחַלֵּק אֶת מַלְכוּת לְעַצְמוֹ, אֲזַי הוֹלֵךְ לוֹ שֶׁלֹּא כְּסֵדֶר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת חַוָּה מְקֻשֶּׁרֶת לְהָאָדָם",
+   "target_he": "כְּסֵדֶר",
+   "proof": "וּכְשֶׁזֹּאת הַבְּחִינָה חַוָּה הִיא מְקֻשֶּׁרֶת לְהָאָדָם... אֲזַי הוֹלֵךְ לוֹ כְּסֵדֶר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָאָדָם כְּסֵדֶר",
+   "target_he": "בִּטּוּל בְּחִינוֹת חַוָּה שֶׁלֹּא כְּסֵדֶר",
+   "proof": "נִמְצָא כִּי בְּחִינוֹת חַוָּה שֶׁלֹּא כְּסֵדֶר נִתְבַּטְּלִים עַל־יְדֵי הָאָדָם כְּסֵדֶר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

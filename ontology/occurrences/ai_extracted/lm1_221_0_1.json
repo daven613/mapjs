@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 221,
+ "chunk": "221_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מַעֲשֵׂר",
+   "target_he": "יָד הַגְּדוֹלָה",
+   "proof": "וְעַל־יְדֵי מַעֲשֵׂר נַעֲשֶׂה בְּחִינַת יָד הַגְּדוֹלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יָד הַגְּדוֹלָה",
+   "target_he": "הִסְתַּפְּקוּת",
+   "proof": "כִּי יָד הַגְּדוֹלָה הוּא בְּחִינַת הִסְתַּפְּקוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִסְתַּפְּקוּת",
+   "target_he": "יָד הַגְּדוֹלָה",
+   "proof": "נִמְצָא שֶׁבְּחִינַת הִסְתַּפְּקוּת הוּא בִּבְחִינַת יָד הַגְּדוֹלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַעֲשֵׂר",
+   "target_he": "הִסְתַּפְּקוּת",
+   "proof": "וְעַל־יְדֵי מַעֲשֵׂר הוּא בִּבְחִינַת הִסְתַּפְּקוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַעֲשֵׂר",
+   "target_he": "הִסְתַּפְּקוּת",
+   "proof": "נִמְצָא שֶׁעַל־יְדֵי מַעֲשֵׂר נַעֲשֶׂה בְּחִינַת הִסְתַּפְּקוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הִסְתַּפְּקוּת",
+   "target_he": "יָד הַגְּדוֹלָה",
+   "proof": "שֶׁהוּא בְּחִינַת יָד הַגְּדוֹלָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

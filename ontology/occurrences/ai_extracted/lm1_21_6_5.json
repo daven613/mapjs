@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 21,
+ "chunk": "21_6_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מִרְיָם",
+   "target_he": "שֵׂכֶל הַפָּנִים",
+   "proof": "שֶׁפָּגְמָה בְּשֵׂכֶל הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פְּגָם בְּשֵׂכֶל הַפָּנִים",
+   "target_he": "הַפְּגָם שֶׁל הַמֵּת בְּלֹא בָּנִים",
+   "proof": "שֶׁזֶּהוּ הַפְּגָם שֶׁל הַמֵּת בְּלֹא בָּנִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַמֵּת בְּלֹא בָנִים",
+   "target_he": "מֻכְרָח לָצֵאת שֵׁנִית בְּגִלְגּוּל מֵרֶחֶם אִמּוֹ",
+   "proof": "אֲשֶׁר מֻכְרָח לָצֵאת שֵׁנִית בְּגִלְגּוּל מֵרֶחֶם אִמּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֻכְרָח לָצֵאת שֵׁנִית בְּגִלְגּוּל מֵרֶחֶם אִמּוֹ",
+   "target_he": "אִשְׁתּוֹ נַעֲשֵׂית לוֹ אֵם",
+   "proof": "הַיְנוּ שֶׁאִשְׁתּוֹ נַעֲשֵׂית לוֹ אֵם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אִשְׁתּוֹ נַעֲשֵׂית לוֹ אֵם",
+   "target_he": "וַיֵּאָכֵל חֲצִי בְשָׂרוֹ",
+   "proof": "אֲשֶׁר מֵחֲמַת זֶה: וַיֵּאָכֵל חֲצִי בְשָׂרוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וַיֵּאָכֵל חֲצִי בְשָׂרוֹ",
+   "target_he": "חֲצִי גּוּפוֹ נֶאֱכָל",
+   "proof": "הַיְנוּ חֲצִי גּוּפוֹ נֶאֱכָל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֲצִי גּוּפוֹ נֶאֱכָל",
+   "target_he": "אֵין לוֹ בַּת־זוּג",
+   "proof": "הַיְנוּ שֶׁאֵין לוֹ בַּת־זוּג כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בַּת־זוּג",
+   "target_he": "חֲצִי בְשָׂרוֹ, פְּלַג גּוּפוֹ",
+   "proof": "שֶׁהִיא חֲצִי בְשָׂרוֹ, פְּלַג גּוּפוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

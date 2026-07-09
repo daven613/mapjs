@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 75,
+ "chunk": "75_1_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "פחד",
+   "target_he": "פחד יצחק",
+   "proof": "וּפַחַד הוּא בְּחִינַת (בראשית ל״א:מ״ב): פַּחַד יִצְחָק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פחד יצחק",
+   "target_he": "יראה",
+   "proof": "דְּהַיְנוּ יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "ביטול הגוף לגמרי",
+   "proof": "לְבַטֵּל הַגּוּף לְגַמְרֵי, הוּא עַל־יְדֵי יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יברכנו אלקים",
+   "target_he": "שלום",
+   "proof": "יְבָרְכֵנוּ אֱלֹקִים – זֶה בְּחִינַת שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ויראו אותו",
+   "target_he": "יראה",
+   "proof": "וְיִירְאוּ אֹתוֹ – הַיְנוּ יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "ביטול הגוף לגמרי",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִתְבַּטֵּל הַגּוּף לְגַמְרֵי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דיבורי תורה ותפילה",
+   "target_he": "ביטול הגוף לגמרי",
+   "proof": "עַל־יְדֵי דִּבּוּרֵי תּוֹרָה וּתְפִלָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כל אפסי ארץ",
+   "target_he": "כל הארציות נעשים אפס ואין",
+   "proof": "כָּל אַפְסֵי אָרֶץ, הַיְנוּ שֶׁכָּל הָאַרְצִיּוּת נַעֲשִׂים אֶפֶס וָאַיִן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ביטול הגוף לגמרי",
+   "target_he": "ברכה",
+   "proof": "כִּי נִתְבַּטְּלִין לְגַמְרֵי כַּנַּ\"ל. אֲזַי זוֹכִין לִבְרָכָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ברכה",
+   "target_he": "שלום",
+   "proof": "אֲזַי זוֹכִין לִבְרָכָה, שֶׁהוּא בְּחִינַת שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

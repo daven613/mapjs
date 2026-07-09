@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 115,
+ "chunk": "115_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מְנִיעָה",
+   "target_he": "עָנָן וַעֲרָפֶל",
+   "proof": "וּמְנִיעָה הוּא בְּחִינַת עָנָן וַעֲרָפֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עָנָן וַעֲרָפֶל",
+   "target_he": "חֹשֶׁךְ",
+   "proof": "כִּי עָנָן וַעֲרָפֶל הַיְנוּ חֹשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֹשֶׁךְ",
+   "target_he": "מְנִיעָה",
+   "proof": "חֹשֶׁךְ הוּא לְשׁוֹן מְנִיעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

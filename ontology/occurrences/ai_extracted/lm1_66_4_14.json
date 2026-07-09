@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_4_14",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "חָשַׁךְ",
+   "target_he": "מְנִיעָה",
+   "proof": "חָשַׁךְ לְשׁוֹן מְנִיעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עוֹלָם חָשַׁךְ בַּעֲדוֹ",
+   "target_he": "מְנִיעוֹת",
+   "proof": "וְזֶה עוֹלָם חָשַׁךְ בַּעֲדוֹ, הַיְנוּ כְּשֶׁהוּא בֵּין הָעוֹלָם אֲזַי יֵשׁ לוֹ מְנִיעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִצְרָךְ לַבְּרִיּוֹת",
+   "target_he": "מְנִיעוֹת",
+   "proof": "הַיְנוּ כְּשֶׁנִּצְרָךְ לַבְּרִיּוֹת, אֲזַי יֵשׁ לוֹ מְנִיעוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְנִיעוֹת",
+   "target_he": "לְהִתְפַּלֵּל בֶּאֱמֶת",
+   "proof": "אֲזַי יֵשׁ לוֹ מְנִיעוֹת, וְקָשֶׁה לוֹ לְהִתְפַּלֵּל בֶּאֱמֶת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִצְרָךְ לַבְּרִיּוֹת",
+   "target_he": "לְהִתְפַּלֵּל בֶּאֱמֶת בֵּין אֲלָפִים אֲנָשִׁים",
+   "proof": "אֲבָל מִי שֶׁאֵינוֹ נִצְרָךְ לַבְּרִיּוֹת, שֶׁאֵינוֹ צָרִיךְ לָהֶם לְשׁוּם דָּבָר, יוּכַל לַעֲמֹד בֵּין אֲלָפִים אֲנָשִׁים לְהִתְפַּלֵּל בֶּאֱמֶת לְהַשֵּׁם יִתְבָּרַךְ לְבַדּוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  }
+ ]
+}

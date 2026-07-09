@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_11_16",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַחֲנֵה יִשְׂרָאֵל",
+   "target_he": "קְדֻשַּׁת הַמַּחֲנֶה שֶׁל יִשְׂרָאֵל",
+   "proof": "מַחֲנֵה יִשְׂרָאֵל – זֶה בְּחִינַת קְדֻשַּׁת הַמַּחֲנֶה שֶׁל יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קְדֻשַּׁת הַמַּחֲנֶה שֶׁל יִשְׂרָאֵל",
+   "target_he": "וְהָיָה מַחֲנֶיךָ קָדוֹשׁ",
+   "proof": "בְּחִינַת (דברים כ״ג:ט״ו): וְהָיָה מַחֲנֶיךָ קָדוֹשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִירָה מִתַּאֲוַת נִאוּף",
+   "target_he": "קְדֻשַּׁת מַחֲנֵה יִשְׂרָאֵל",
+   "proof": "וְעִקָּר קְדֻשַּׁת מַחֲנֵה יִשְׂרָאֵל הוּא עַל־יְדֵי שְׁמִירָה מִתַּאֲוַת נִאוּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְמִין",
+   "target_he": "הַדַּעַת דִּקְדֻשָּׁה",
+   "proof": "כִּי עוֹג הָיָה אֲחִיזָתוֹ בְּיָמִין... וְהָיָה יוֹנֵק מִבְּחִינַת הַדַּעַת דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

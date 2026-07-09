@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יום טוב",
+   "target_he": "מקרא קודש",
+   "proof": "כָּל יוֹם טוֹב וְיוֹם טוֹב מַכְרִיז וְקוֹרֵא אֶת הָרָצוֹן בִּבְחִינַת מִקְרָא קֹדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רגל",
+   "target_he": "יראה",
+   "proof": "הַיָּמִים טוֹבִים נִקְרָאִים רֶגֶל, שֶׁהִיא בְּחִינַת יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יום טוב",
+   "target_he": "התגלות הרצון",
+   "proof": "עַל־יְדֵי יוֹם טוֹב, שֶׁהוּא הִתְגַּלּוּת הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יום טוב",
+   "target_he": "יראה",
+   "proof": "עַל־יְדֵי יוֹם טוֹב, שֶׁהוּא הִתְגַּלּוּת הָרָצוֹן, עַל־יְדֵי־זֶה נַעֲשֶׂה יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

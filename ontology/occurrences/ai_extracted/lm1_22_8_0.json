@@ -1,0 +1,145 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַשִּׁמּוּשׁ",
+   "target_he": "בְּחִינַת בָּשָׂר",
+   "proof": "וְלָבוֹא לִבְחִינַת בָּשָׂר הוּא עַל־יְדֵי הַשִּׁמּוּשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׁמּוּשׁ הֶחָכָם",
+   "target_he": "בְּחִינַת בָּשָׂר לְהֶחָכָם",
+   "proof": "עַל־יְדֵי שֶׁמְּשַׁמֵּשׁ אֶת הֶחָכָם, נַעֲשֶׂה בְּחִינַת בָּשָׂר לְהֶחָכָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׁמּוּשׁ הַגּוּף לְהַנְּשָׁמָה בַּעֲשִׂיַּת מִצְוו‍ֹת מַעֲשִׂיּוֹת",
+   "target_he": "בְּחִינַת בָּשָׂר לְהַנְּשָׁמָה",
+   "proof": "וְכֵן עַל־יְדֵי שֶׁמְּשַׁמֵּשׁ הַגּוּף לְהַנְּשָׁמָה בַּעֲשִׂיַּת מִצְוו‍ֹת מַעֲשִׂיּוֹת, נַעֲשֶׂה הַגּוּף בְּחִינַת בָּשָׂר לְהַנְּשָׁמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בָּשָׂר הַנִּמּוֹל",
+   "target_he": "יְרוּשָׁלַיִם",
+   "proof": "מִבָּשָׂר הַנִּמּוֹל הַנַּ\"ל נִשְׁלָם יְרוּשָׁלַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יְרוּשָׁלַיִם",
+   "target_he": "קִרְיָה נֶאֱמָנָה",
+   "proof": "שֶׁהִיא קִרְיָה נֶאֱמָנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קִרְיָה נֶאֱמָנָה",
+   "target_he": "אֱמוּנָה",
+   "proof": "הַיְנוּ שֶׁזּוֹכִין לָבוֹא לֶאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֱמוּנָה",
+   "target_he": "כְּלָלִיּוּת הַקְּדֻשָּׁה",
+   "proof": "שֶׁהִיא כְּלָלִיּוּת הַקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צַדִּיקֵי הַדּוֹר הָאֲמִתִּיִּים",
+   "target_he": "כְּלָלִיּוּת הַקְּדֻשָּׁה",
+   "proof": "שֶׁמְּקַבְּלִין מִצַּדִּיקֵי הַדּוֹר הָאֲמִתִּיִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַזּוּת דִּקְדֻשָּׁה",
+   "target_he": "הִתְקָרְבוּת אֶל הַצַּדִּיקִים",
+   "proof": "שֶׁאִי אֶפְשָׁר לְהִתְקָרֵב אֲלֵיהֶם כִּי אִם עַל־יְדֵי עַזּוּת דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עַזּוּת דִּקְדֻשָּׁה",
+   "target_he": "כָּל הַקּוֹלוֹת דִּקְדֻשָּׁה",
+   "proof": "שֶׁהוּא בְּחִינַת כָּל הַקּוֹלוֹת דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כָּל הַקּוֹלוֹת דִּקְדֻשָּׁה",
+   "target_he": "עַזּוּת דְּסִטְרָא אָחֳרָא",
+   "proof": "שֶׁעַל־יְדֵי־זֶה מְשַׁבְּרִין עַזּוּת דְּסִטְרָא אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עַזּוּת דְּסִטְרָא אָחֳרָא",
+   "target_he": "עַזּוּת הַגּוּף",
+   "proof": "שֶׁהוּא בְּחִינַת עַזּוּת הַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת עַזּוּת דְּסִטְרָא אָחֳרָא",
+   "target_he": "הִתְקָרְבוּת וְהִתְדַּבְּקוּת אֶל הַצַּדִּיקִים",
+   "proof": "וְזוֹכִין לְהִתְקָרֵב וּלְהִתְדַּבֵּק אֲלֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְקָרְבוּת וְהִתְדַּבְּקוּת אֶל הַצַּדִּיקִים",
+   "target_he": "אֱמוּנָה שְׁלֵמָה",
+   "proof": "וְעַל־יְדֵי־זֶה זוֹכִין לֶאֱמוּנָה שְׁלֵמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמוּנָה שְׁלֵמָה",
+   "target_he": "יְרוּשָׁלַיִם קִרְיָה נֶאֱמָנָה",
+   "proof": "שֶׁהוּא בְּחִינַת: יְרוּשָׁלַיִם קִרְיָה נֶאֱמָנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

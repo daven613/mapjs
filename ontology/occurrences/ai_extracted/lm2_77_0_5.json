@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 77,
+ "chunk": "77_0_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "צער",
+   "proof": "שֶׁנִּשְׁתַּלְשֵׁל וּבָא צַעַר יוֹתֵר גָּדוֹל לְמִי שֶׁהוּא בַּר־דַּעַת, בִּבְחִינַת: יוֹסִיף דַּעַת יוֹסִיף מַכְאוֹב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "חכמה",
+   "proof": "וְאִם אֵין יִרְאָה אֵין חָכְמָה (אבות פ\"ג)",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חכמה ודעת",
+   "target_he": "יראה",
+   "proof": "וְעַל־כֵּן כָּל מִי שֶׁזּוֹכֶה לְאֵיזֶה חָכְמָה וָדַעַת, עוֹבֵר עָלָיו יִרְאָה גַם־כֵּן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילין",
+   "target_he": "מוחין",
+   "proof": "כִּי תְּפִלִּין הֵם בְּחִינַת מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רצועה",
+   "target_he": "יראה",
+   "proof": "וְהָרְצוּעָה הִיא בְּחִינַת יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רצועה בישא",
+   "target_he": "יראה נפולה",
+   "proof": "כִּי רְצוּעָה בִּישָׁא הִיא יִרְאָה נְפוּלָה (הקדמת הזוהר דף יא:)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יראה דקדושה",
+   "target_he": "רצועה דקדושה",
+   "proof": "וְכֵן הַיִּרְאָה דִּקְדֻשָּׁה הִיא גַם־כֵּן בְּחִינַת רְצוּעָה דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רצועה",
+   "target_he": "יראה",
+   "proof": "הַיְנוּ שֶׁהָרְצוּעָה שֶׁהִיא הַיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_8_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "זָקֵן כָּרָאוּי",
+   "target_he": "הִתְגַּלּוּת הָרָצוֹן",
+   "proof": "עַל־יְדֵי־זֶה מִתְגַּבֵּר הִתְגַּלּוּת הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זָקֵן שֶׁבִּקְדֻשָּׁה",
+   "target_he": "רָצוֹן",
+   "proof": "שֶׁעַל יְדֵי זָקֵן שֶׁבִּקְדֻשָּׁה מִתְגַּבֵּר הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זָקֵן",
+   "target_he": "זֶה קָנָה חָכְמָה",
+   "proof": "בְּחִינַת: זָקֵן – זֶה קָנָה חָכְמָה וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִתְגַּבֵּר הִתְגַּלּוּת הָרָצוֹן",
+   "target_he": "זָקֵן וּנְשׂוּא פָנִים",
+   "proof": "בִּבְחִינַת (ישעיהו ט׳:י״ד): זָקֵן וּנְשׂוּא פָנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נְשׂוּא פָנִים",
+   "target_he": "בְּחִינַת נְשׂוּא פָנִים",
+   "proof": "שֶׁהוּא בְּחִינַת נְשׂוּא פָנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְשִׂיאַת פָּנִים",
+   "target_he": "רָצוֹן",
+   "proof": "כִּי נְשִׂיאַת פָּנִים הוּא בְּחִינַת רָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְשִׂיאַת פָּנִים שֶׁל יְהוֹשָׁפָט",
+   "target_he": "נִתְרַצָּה אֵלָיו",
+   "proof": "רַק עַל־יְדֵי נְשִׂיאַת פָּנִים שֶׁל יְהוֹשָׁפָט, עַל־יְדֵי־זֶה נִתְרַצָּה אֵלָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְשִׂיאוּת פָּנִים",
+   "target_he": "רָצוֹן",
+   "proof": "נִמְצָא שֶׁנְּשִׂיאוּת פָּנִים הוּא בְּחִינַת רָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְשִׂיאוּת פָּנִים",
+   "target_he": "זָקֵן וּנְשׂוּא פָנִים",
+   "proof": "וְזֶה בְּחִינַת זָקֵן וּנְשׂוּא פָנִים, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

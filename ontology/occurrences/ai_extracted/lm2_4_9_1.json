@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_9_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עֲבוֹדַת הַצְּדָקָה",
+   "target_he": "וְאֶת הָעֹרְבִים צִוִּיתִי",
+   "proof": "כִּי עִקָּר עֲבוֹדַת הַצְּדָקָה הִיא בִּבְחִינַת: וְאֶת הָעֹרְבִים צִוִּיתִי וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת הָאַכְזָרִיּוּת וַהֲפִיכָתָהּ לְרַחֲמָנוּת",
+   "target_he": "בְּחִינַת הָרָצוֹן",
+   "proof": "וּמִזֶּה בְּעַצְמוֹ מִתְגַּבֵּר בְּחִינַת הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֲפִיכַת הָאַכְזָרִיּוּת לְרַחֲמָנוּת",
+   "target_he": "הָרֹגֶז נֶהְפָּךְ לְרָצוֹן",
+   "proof": "מֵאַחַר שֶׁמִּתְגַּבֵּר וּמְהַפֵּךְ אַכְזָרִיּוּת שֶׁבְּטִבְעוֹ לְרַחֲמָנוּת, עַל־יְדֵי־זֶה נִתְהַפֵּךְ הָרֹגֶז לְרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֵצַח הָרָצוֹן",
+   "target_he": "קוֹל הַחַיּוֹת רָעוֹת",
+   "proof": "וַאֲזַי כְּשֶׁנִּכְנָע מֵצַח הַנָּחָשׁ וְנִתְגַּלֶּה בְּחִינַת מֵצַח הָרָצוֹן, אֲזַי נִכְנָעִים וְנוֹפְלִים קוֹל הַחַיּוֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קוֹל הַקְּרִיאָה שֶׁל יוֹם טוֹב",
+   "target_he": "הִתְגַּלּוּת הָרָצוֹן",
+   "proof": "וְנִשְׁמַע קוֹל הַקְּרִיאָה שֶׁל יוֹם טוֹב, שֶׁהוּא הִתְגַּלּוּת הָרָצוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרָצוֹן",
+   "target_he": "יִרְאָה",
+   "proof": "וַאֲזַי כְּשֶׁנִּתְגַּלֶּה הָרָצוֹן, נַעֲשֶׂה יִרְאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַיִּרְאָה",
+   "target_he": "הַחֶסֶד",
+   "proof": "וְעַל־יְדֵי הַיִּרְאָה יְכוֹלִין לְקַבֵּל הַחֶסֶד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַחֶסֶד",
+   "target_he": "עֵסֶק וּמְלָאכָה",
+   "proof": "וּכְשֶׁשּׁוֹפֵעַ הַחֶסֶד, אֲזַי אֵין צְרִיכִין לַעֲשׂוֹת שׁוּם עֵסֶק וּמְלָאכָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַצְּדָקָה",
+   "target_he": "כָּל זֶה",
+   "proof": "וְכָל זֶה נַעֲשֶׂה עַל־יְדֵי הַצְּדָקָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

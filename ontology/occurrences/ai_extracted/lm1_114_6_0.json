@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 114,
+ "chunk": "114_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רשע שחולק על הצדיק",
+   "target_he": "צופה",
+   "proof": "שֶׁהָרָשָׁע שֶׁחוֹלֵק עַל הַצַּדִּיק הוּא רַק צוֹפֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צופה",
+   "target_he": "צפוי וכסוי על הצדיק",
+   "proof": "הַיְנוּ צִפּוּי וְכִסּוּי עַל הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צפוי וכסוי על הצדיק",
+   "target_he": "המשכת שפע",
+   "proof": "כְּדֵי שֶׁיּוּכַל לְהַמְשִׁיךְ שֶׁפַע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

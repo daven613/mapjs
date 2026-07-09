@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 96,
+ "chunk": "96_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת עַל אֵיזֶה צַדִּיק",
+   "target_he": "מַחֲשָׁבָה זָרָה לְצַדִּיק אַחֵר",
+   "proof": "כְּשֶׁיֵּשׁ מַחֲלֹקֶת עַל אֵיזֶה צַדִּיק, נוֹפֵל מַחֲשָׁבָה זָרָה מֵעֵין אוֹתָהּ מַחֲלֹקֶת לְצַדִּיק אַחֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רָצוֹן לְהַעֲלוֹת מַחֲשָׁבָה זָרָה",
+   "target_he": "בַּעֲלֵי הַמַּחֲלֹקֶת",
+   "proof": "וּמֵחֲמַת שֶׁרוֹצֶה לְהַעֲלוֹתָהּ... מְשַׁבֵּר בְּכֹחַ הָרָצוֹן כָּל בַּעֲלֵי הַמַּחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

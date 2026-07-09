@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בְּרִית",
+   "target_he": "חֶסֶד מִתְגַּלֶּה בְּפֻמָּא דְּאַמָּה",
+   "proof": "וּמִי שֶׁהוּא בִּבְחִינַת בְּרִית, אֲזַי חֶסֶד מִתְגַּלֶּה בְּפֻמָּא דְּאַמָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֶסֶד מִתְגַּלֶּה בְּפֻמָּא דְּאַמָּה",
+   "target_he": "לְעוֹלָם אֶשְׁמָר לוֹ חַסְדִּי וּבְרִיתִי נֶאֱמֶנֶת לוֹ",
+   "proof": "בִּבְחִינַת לְעוֹלָם אֶשְׁמָר לוֹ חַסְדִּי וּבְרִיתִי נֶאֱמֶנֶת לוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֶסֶד",
+   "target_he": "אַהֲבָה וְהַהִשְׁתּוֹקְקוּת",
+   "proof": "וּכְשֶׁנִּתְגַּלֶּה הַחֶסֶד, הַיְנוּ הָאַהֲבָה וְהַהִשְׁתּוֹקְקוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַהֲבָה וְהַהִשְׁתּוֹקְקוּת",
+   "target_he": "כִּי חוֹלַת אַהֲבָה אָנִי",
+   "proof": "בִּבְחִינוֹת כִּי חוֹלַת אַהֲבָה אָנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֶסֶד (אַהֲבָה וְהַהִשְׁתּוֹקְקוּת)",
+   "target_he": "עֲשִׂיַּת נְפָשׁוֹת",
+   "proof": "וּכְשֶׁנִּתְגַּלֶּה הַחֶסֶד... אֲזַי הוּא עוֹשֶׂה נְפָשׁוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲשִׂיַּת נְפָשׁוֹת",
+   "target_he": "וְאֶת הַנֶּפֶשׁ אֲשֶׁר עָשׂוּ",
+   "proof": "בְּחִינוֹת וְאֶת הַנֶּפֶשׁ אֲשֶׁר עָשׂוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֲשִׂיַּת נְפָשׁוֹת",
+   "target_he": "עֲשִׂיַּת נְקֻדּוֹת לְאוֹתִיוֹת הַתּוֹרָה",
+   "proof": "הַיְנוּ שֶׁעוֹשֶׂה נְקֻדּוֹת לְאוֹתִיוֹת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְקֻדּוֹת",
+   "target_he": "תְּנוּעָה וּפְעֻלָּה לָאוֹתִיוֹת",
+   "proof": "כִּי אוֹתִיּוֹת בְּלֹא נְקֻדּוֹת, כְּגוּף בְּלֹא נֶפֶשׁ, שֶׁאֵין לָהֶם שׁוּם תְּנוּעָה וּפְעֻלָּה בְּלֹא נֶפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְקֻדּוֹת",
+   "target_he": "כֹּחַ הִצְטָרְפוּת וְזִוּוּג הָאוֹתִיּוֹת בְּרל\"א שְׁעָרִים",
+   "proof": "כֵּן הִצְטָרְפוּת וְזִוּוּגָן שֶׁל הָאוֹתִיּוֹת בְּרל\"א שְׁעָרִים לַעֲשׂוֹת אֵיזֶה פְּעֻלָּה, אֵין לָהֶם כֹּחַ אֶלָּא לְפִי הַנְּקֻדּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נְקֻדּוֹת",
+   "target_he": "אַהֲבָה וְהַכִּסּוּפִין",
+   "proof": "וְהַנְּקֻדּוֹת הֵן הָאַהֲבָה וְהַכִּסּוּפִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַהֲבָה וְהַכִּסּוּפִין",
+   "target_he": "נְקֻדּוֹת הַכָּסֶף",
+   "proof": "בִּבְחִינוֹת נְקֻדּוֹת הַכָּסֶף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כִּסּוּפִין",
+   "target_he": "נֶפֶשׁ",
+   "proof": "וְהַכִּסּוּפִין הֵן הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כִּסּוּפִין",
+   "target_he": "נִכְסְפָה וְגַם כָּלְתָה נַפְשִׁי",
+   "proof": "בִּבְחִינוֹת נִכְסְפָה וְגַם כָּלְתָה נַפְשִׁי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הון יסיף רעים רבים",
+   "target_he": "צדקה שנותן לתלמיד חכם",
+   "proof": "הַיְנוּ עַל־יְדֵי צְדָקָה שֶׁנּוֹתֵן לְתַלְמִיד־חָכָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה שנותן לתלמיד חכם",
+   "target_he": "עשיית גרים",
+   "proof": "שֶׁזֶּה נַעֲשֶׂה עַל־יְדֵי בְּחִינוֹת (משלי י״ט:ד׳): הוֹן יֹסִיף רֵעִים רַבִּים; הַיְנוּ עַל־יְדֵי צְדָקָה שֶׁנּוֹתֵן לְתַלְמִיד־חָכָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תלמיד חכם",
+   "target_he": "כמה נפשות ישראל",
+   "proof": "שֶׁהוּא כָּלוּל מִכַּמָּה נַפְשׁוֹת יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדקה שנותן לתלמיד חכם",
+   "target_he": "כתב",
+   "proof": "כֵּן צָרִיךְ לִשְׁלֹחַ בְּחִינַת כְּתָב לָהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת כתב",
+   "target_he": "שמיעתם אף שהם רחוקים",
+   "proof": "עַד שֶׁיּוּכְלוּ לִשְׁמֹעַ אַף שֶׁהֵם רְחוֹקִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

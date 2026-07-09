@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 82,
+ "chunk": "82_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "חַשְׁמַל",
+   "target_he": "הַשְּׁתִיקָה",
+   "proof": "וְזֶהוּ חַשְׁמַל – חַ\"שׁ מַ\"ל. הַיְנוּ הַשְּׁתִיקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְּׁתִיקָה",
+   "target_he": "מִילָה",
+   "proof": "הַיְנוּ הַשְּׁתִיקָה, שֶׁהִיא בְּחִינַת מִילָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִילָה",
+   "target_he": "בִּטּוּל הַחֶרְפָּה",
+   "proof": "בְּחִינַת מִילָה, בְּחִינַת בִּטּוּל הַחֶרְפָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֶרְפָּה",
+   "target_he": "עָרְלָה",
+   "proof": "בִּטּוּל הַחֶרְפָּה, שֶׁהִיא בְּחִינַת עָרְלָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

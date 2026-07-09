@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 78,
+ "chunk": "78_0_14",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וָאֶתְחַנַּן אֶל ה'",
+   "target_he": "מַתְּנַת חִנָּם",
+   "proof": "וָאֶתְחַנַּן אֶל ה' – בְּחִינַת מַתְּנַת חִנָּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וָאֶתְחַנַּן אֶל ה'",
+   "target_he": "מַתְּנַת חִנָּם",
+   "proof": "וָאֶתְחַנַּן אֶל ה' – הַיְנוּ מַתְּנַת חִנָּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַתְּנַת חִנָּם",
+   "target_he": "עֲשָׂרָה מַאֲמָרוֹת",
+   "proof": "הַיְנוּ בְּחִינַת מַתְּנַת חִנָּם, בְּחִינַת עֲשָׂרָה מַאֲמָרוֹת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַתְּנַת חִנָּם",
+   "target_he": "לָבוֹא וְלִכְבֹּשׁ אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "בַּכֹּחַ הַזֶּה זוֹכִין לָבוֹא וְלִכְבֹּשׁ אֶרֶץ־יִשְׂרָאֵל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

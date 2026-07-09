@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 75,
+ "chunk": "75_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דמים שעדיין לא עבד בהם את השם יתברך",
+   "target_he": "מדת הנצחון והמחלוקת והמלחמה",
+   "proof": "וּמִדָּה זֹאת בָּאָה מִדָּמִים שֶׁעֲדַיִן לֹא עָבַד בָּהֶם אֶת הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דמים",
+   "target_he": "מדת הנצחון",
+   "proof": "כִּי עִקַּר מִדַּת הַנִּצָּחוֹן הוּא מֵהַדָּמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שלום",
+   "target_he": "כלי מחזיק ברכה",
+   "proof": "כִּי לֹא מָצָא הַקָּדוֹשׁ־בָּרוּךְ־הוּא כְּלִי מַחֲזִיק בְּרָכָה אֶלָּא הַשָּׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דבור הרבה בתורה ותפלה",
+   "target_he": "ביטול מדת הנצחון והמחלוקת ורדיפת השלום",
+   "proof": "וְזֶה זוֹכִין עַל־יְדֵי שֶׁיְּדַבֵּר הַרְבֵּה בְּתוֹרָה וּתְפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דבור הרבה בתורה ותפלה",
+   "target_he": "שלום",
+   "proof": "עַל־יְדֵי־זֶה יִזְכֶּה לְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

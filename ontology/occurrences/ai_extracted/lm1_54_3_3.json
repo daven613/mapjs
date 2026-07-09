@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_3_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַשָּׂא וּמַתָּן",
+   "target_he": "נוֹטֶה שָׁמַיִם כַּיְרִיעָה",
+   "proof": "וּמַשָּׂא וּמַתָּן, הִיא בְּחִינַת: נוֹטֶה שָׁמַיִם כַּיְרִיעָה הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַשָּׂא וּמַתָּן",
+   "target_he": "יִחוּד צַדִּיק וּכְנֶסֶת יִשְׂרָאֵל",
+   "proof": "הַיְנוּ בְּחִינַת יִחוּד צַדִּיק וּכְנֶסֶת יִשְׂרָאֵל הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צַדִּיק וּכְנֶסֶת יִשְׂרָאֵל",
+   "target_he": "מַשָּׂא וּמַתָּן",
+   "proof": "כִּי צַדִּיק וּכְנֶסֶת יִשְׂרָאֵל, הֵם בְּחִינַת מַשָּׂא וּמַתָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַצַּדִּיק",
+   "target_he": "מַשָּׂא",
+   "proof": "הַצַּדִּיק נִקְרָא מַשָּׂא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כְּנֶסֶת יִשְׂרָאֵל",
+   "target_he": "מַתָּן",
+   "proof": "וְעַל שֵׁם זֶה נִקְרֵאת כְּנֶסֶת יִשְׂרָאֵל מַתָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַשָּׂא וּמַתָּן",
+   "target_he": "יִחוּד צַדִּיק וּכְנֶסֶת יִשְׂרָאֵל",
+   "proof": "וְיִחוּד שֶׁל צַדִּיק וּכְנֶסֶת יִשְׂרָאֵל נַעֲשֶׂה עַל יְדֵי מַשָּׂא וּמַתָּן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_3_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "פניו",
+   "target_he": "אמת",
+   "proof": "פָּנָיו זֶה בְּחִינַת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמת",
+   "target_he": "שונאיו",
+   "proof": "שֶׁעַל יְדֵי זֶה, מְשַׁלֵּם לְשׂוֹנְאָיו וּמַאֲבִידָן מִן הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פנים",
+   "target_he": "אמת",
+   "proof": "כִּי הַפָּנִים, שֶׁהוּא בְּחִינַת הָאֱמֶת שֶׁל הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פנים",
+   "target_he": "רשעים",
+   "proof": "אֵינוֹ יָכוֹל לִסְבֹּל אֶת הָרְשָׁעִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בחינת הפנים",
+   "target_he": "אמת",
+   "proof": "וּכְשֶׁנִּתְגַּלֶּה בְּחִינַת הַפָּנִים, דְּהַיְנוּ הָאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת הפנים",
+   "target_he": "מפלת הרשעים",
+   "proof": "אֲזַי הוּא מַפֶּלֶת הָרְשָׁעִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמת",
+   "target_he": "מפלתם",
+   "proof": "וְעַל יְדֵי זֶה יִהְיֶה מַפַּלְתָּם לֶעָתִיד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

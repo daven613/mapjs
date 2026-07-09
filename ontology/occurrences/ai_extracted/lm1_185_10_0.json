@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 185,
+ "chunk": "185_10_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מַה שֶּׁרוֹאֶה בָּעֵינַיִם",
+   "target_he": "יִרְאָה הַתַּחְתּוֹנָה",
+   "proof": "הַיְנוּ הַיִּרְאָה הַתַּחְתּוֹנָה שֶׁמְּקַבֵּל עַל־יְדֵי מַה שֶּׁרוֹאֶה בָּעֵינַיִם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאָה הַתַּחְתּוֹנָה",
+   "target_he": "בְּחִינַת אָדָם",
+   "proof": "עַל יְדֵי זֶה נַעֲשֶׂה בְּחִינַת אָדָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֵד",
+   "target_he": "הַשְׁפָּעוֹת",
+   "proof": "הַיְנוּ שֶׁנִּמְשָׁכִין הַשְׁפָּעוֹת עַל יְדֵי אֵד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֵד",
+   "target_he": "יִרְאָה",
+   "proof": "שֶׁהוּא בְּחִינַת יִרְאָה זוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֵם",
+   "target_he": "הַכְּלִי לְקַבֵּל הַשֶּׁפַע",
+   "proof": "וְהַמֵם הוּא הַכְּלִי לְקַבֵּל הַשֶּׁפַע כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

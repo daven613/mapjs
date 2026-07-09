@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_5_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שִׂנְאָה",
+   "target_he": "רוּחַ רָעָה",
+   "proof": "כִּי הַשִּׂנְאָה הִיא בְּחִינַת רוּחַ רָעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּלְבּוּל הָאֲוִיר",
+   "target_he": "שְׁמִיעַת הַדִּבּוּר",
+   "proof": "בִּלְבּוּל הָאֲוִיר, שֶׁעַל־יְדֵי־זֶה אֵין יְכוֹלִין לִשְׁמֹעַ הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַהֲבָה וְרֵעוּת",
+   "target_he": "אֲוִיר הַנָּח וְהַזַּךְ",
+   "proof": "וּלְהֵפֶךְ, אַהֲבָה וְרֵעוּת הוּא בְּחִינַת אֲוִיר הַנָּח וְהַזַּךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲוִיר הַנָּח וְהַזַּךְ",
+   "target_he": "שְׁמִיעַת הַדִּבּוּר לְמֵרָחוֹק",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִשְׁמָע הַדִּבּוּר לְמֵרָחוֹק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "אֲוִיר הַנָּח וְהַזַּךְ",
+   "proof": "וְזֶה נַעֲשֶׂה עַל־יְדֵי צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צְדָקָה",
+   "target_he": "הוֹן יֹסִיף רֵעִים רַבִּים",
+   "proof": "בְּחִינַת הוֹן יֹסִיף רֵעִים רַבִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "רֵעִים וְאוֹהֲבִים",
+   "proof": "שֶׁעַל־יְדֵי צְדָקָה הוּא לוֹקֵחַ לוֹ רֵעִים וְאוֹהֲבִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רֵעִים וְאוֹהֲבִים",
+   "target_he": "אֲוִיר הַנָּח וְהַזַּךְ",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נַעֲשֶׂה בְּחִינַת הָאֲוִיר הַנָּח וְהַזַּךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

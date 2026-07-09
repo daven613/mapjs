@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 119,
+ "chunk": "119_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דֵּעָה",
+   "target_he": "רַחֲמָנוּת",
+   "proof": "כִּי אִם אֵין בּוֹ דֵּעָה אֵין בּוֹ רַחֲמָנוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כַּעַס",
+   "target_he": "רַחֲמָנוּת",
+   "proof": "כִּי כַּעַס בְּחֵיק כְּסִילִים יָנוּחַ",
+   "explicitness": "inferred",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

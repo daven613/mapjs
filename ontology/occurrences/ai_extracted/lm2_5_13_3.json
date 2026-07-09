@@ -1,0 +1,118 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_13_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רֹאשׁ הַשָּׁנָה",
+   "target_he": "תִּקּוּן הַמֹּחִין",
+   "proof": "שֶׁבְּרֹאשׁ הַשָּׁנָה הוּא תִּקּוּן הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַמֹּחִין",
+   "target_he": "תְּפִלִּין דִּמְכַסְיָן עַל מֹחָא",
+   "proof": "וְעַל־יְדֵי תִּקּוּן הַמֹּחִין נַעֲשִׂין בְּחִינַת תְּפִלִּין דִּמְכַסְיָן עַל מֹחָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּפִלִּין",
+   "target_he": "הִתְנוֹצְצוּת הַמֹּחִין",
+   "proof": "כִּי תְּפִלִּין הֵם הִתְנוֹצְצוּת הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלִּין דִּמְכַסְיָן עַל מֹחָא",
+   "target_he": "עֲשֶׂרֶת יְמֵי תְּשׁוּבָה",
+   "proof": "וְזֶהוּ בְּחִינַת עֲשֶׂרֶת יְמֵי תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּשׁוּבָה",
+   "target_he": "אִם תּוֹצִיא יָקָר מִזּוֹלֵל",
+   "proof": "כִּי תְּשׁוּבָה הִיא בְּחִינַת (ירמיה טו): אִם תּוֹצִיא יָקָר מִזּוֹלֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אִם תּוֹצִיא יָקָר מִזּוֹלֵל",
+   "target_he": "תְּפִלִּין שֶׁנִּקְרְאוּ יְקָר",
+   "proof": "וְזֶהוּ בְּחִינַת תְּפִלִּין שֶׁנִּקְרְאוּ יְקָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יְקָר",
+   "target_he": "תְּפִלִּין",
+   "proof": "וִיקָר – אֵלּוּ תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַמֹּחִין",
+   "target_he": "תְּפִלִּין",
+   "proof": "כִּי הַתְּפִלִּין נַעֲשִׂין עַל־יְדֵי תִּקּוּן הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֶחְתִּים בְּשָׂרוֹ",
+   "target_he": "חוֹתָם דִּקְדֻשָּׁה",
+   "proof": "שֶׁהֵם נַעֲשִׂין עַל־יְדֵי שֶׁמְּתַקְּנִין וּמַעֲלִין מִבְּחִינַת הֶחְתִּים בְּשָׂרוֹ לִבְחִינַת חוֹתָם דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חוֹתָם דִּקְדֻשָּׁה",
+   "target_he": "מֹחִין תְּפִלִּין",
+   "proof": "לִבְחִינַת חוֹתָם דִּקְדֻשָּׁה בְּחִינַת מֹחִין תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חוֹתָם דִּקְדֻשָּׁה בְּחִינַת מֹחִין תְּפִלִּין",
+   "target_he": "אִם תּוֹצִיא יָקָר מִזּוֹלֵל",
+   "proof": "וְזֶהוּ בְּחִינַת: אִם תּוֹצִיא יָקָר מִזּוֹלֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אִם תּוֹצִיא יָקָר מִזּוֹלֵל",
+   "target_he": "תְּשׁוּבָה",
+   "proof": "שֶׁהוּא בְּחִינַת תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

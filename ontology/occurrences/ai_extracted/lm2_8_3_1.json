@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תפילה",
+   "target_he": "דין",
+   "proof": "שֶׁאָז הַתְּפִלָּה בִּבְחִינַת דִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תאות ניאוף",
+   "target_he": "תפילה בבחינת דין",
+   "proof": "כִּי כְּשֶׁיֵּשׁ פְּגַם תַּאֲוַת נִאוּף, חַס וְשָׁלוֹם, שֶׁאָז הַתְּפִלָּה בִּבְחִינַת דִּין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה בבחינת דין",
+   "target_he": "סטרא אחרא בולעת אותה",
+   "proof": "וְהַסִּטְרָא־אָחֳרָא בּוֹלַעֲת אוֹתָה, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

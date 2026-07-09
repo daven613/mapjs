@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מעלין אמונה הנפולה",
+   "target_he": "גרים",
+   "proof": "שֶׁעַל יְדֵי שֶׁמַּעֲלִין אֱמוּנָה הַנְּפוּלָה, עַל־יְדֵי־זֶה נַעֲשִׂין גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גרים",
+   "target_he": "ישראל",
+   "proof": "עַל־כֵּן הֵם מַזִּיקִין לְיִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גרים מזיקין לישראל",
+   "target_he": "קשים גרים לישראל כספחת",
+   "proof": "בִּבְחִינַת (קדושין ע:): קָשִׁים גֵּרִים לְיִשְׂרָאֵל כְּסַפַּחַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ספחת",
+   "target_he": "מכות",
+   "proof": "סַפַּחַת – הַיְנוּ מַכּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מכות (ספחת)",
+   "target_he": "מכות מופלאות הנ\"ל",
+   "proof": "בְּחִינַת מַכּוֹת מֻפְלָאוֹת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "מכות מופלאות",
+   "proof": "שֶׁנַּעֲשִׂין עַל־יְדֵי נְפִילַת הָאֱמוּנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

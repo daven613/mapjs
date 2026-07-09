@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בֵּן",
+   "target_he": "מָה",
+   "proof": "כִּי הַבֵּן, שֶׁהוּא בִּבְחִינַת הַהַשָּׂגָה שֶׁל מָה, בְּחִינַת: מֶה חָמִית וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תַּלְמִיד",
+   "target_he": "מְלֹא כָל הָאָרֶץ כְּבוֹדוֹ",
+   "proof": "וְכֵן הַתַּלְמִיד שֶׁהַשָּׂגָתוֹ בְּחִינַת מְלֹא כָל הָאָרֶץ כְּבוֹדוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּחִינַת הַתַּלְמִיד",
+   "target_he": "מְלֹא כָל הָאָרֶץ כְּבוֹדוֹ",
+   "proof": "לְהַרְאוֹת לִבְחִינַת בֵּן גַם־כֵּן קְצָת מֵהַהַשָּׂגָה שֶׁל בְּחִינַת הַתַּלְמִיד, דְּהַיְנוּ בְּחִינַת מְלֹא כָל הָאָרֶץ כְּבוֹדוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּחִינַת הַבֵּן",
+   "target_he": "מָה",
+   "proof": "צָרִיךְ לְהַרְאוֹת לוֹ קְצָת מֵהַהַשָּׂגָה שֶׁל בְּחִינַת הַבֵּן, דְּהַיְנוּ בְּחִינַת מָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת תַּלְמִיד (מְלֹא כָל הָאָרֶץ כְּבוֹדוֹ)",
+   "target_he": "יִרְאָה",
+   "proof": "וְאִם־כֵּן לֹא יִהְיֶה לוֹ יִרְאָה כְּלָל, מֵאַחַר שֶׁאֵינוֹ רוֹאֶה כְּלָל כְּבוֹדוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת בֵּן (מָה)",
+   "target_he": "הִתְבַּטְּלוּת בִּמְצִיאוּת",
+   "proof": "וְאִם־כֵּן יוּכַל לְהִתְבַּטֵּל בִּמְצִיאוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בֵּן כָּלוּל מִבְּחִינַת תַּלְמִיד",
+   "target_he": "יִרְאָה",
+   "proof": "וְעַל־כֵּן צָרִיךְ שֶׁיִּהְיֶה הַבֵּן כָּלוּל מִבְּחִינַת תַּלְמִיד ... כְּדֵי שֶׁיִּהְיֶה לוֹ יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּלְמִיד כָּלוּל מִבְּחִינַת בֵּן",
+   "target_he": "יִרְאָה",
+   "proof": "וְעַל־כֵּן צָרִיךְ לְהַרְאוֹת לוֹ קְצָת מֵהַהַשָּׂגָה שֶׁל בְּחִינַת הַבֵּן ... כְּדֵי שֶׁלֹּא יִתְבַּטֵּל בִּמְצִיאוּת, וְיִהְיֶה לוֹ יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

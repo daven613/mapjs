@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_4_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תורה שבעל פה",
+   "target_he": "מלכות פה",
+   "proof": "שֶׁיַּשְׂכִּיל וְיִשְׁמַע אֶת הַתּוֹרָה שֶׁבְּעַל־פֶּה, הַנִּקְרָא מַלְכוּת־פֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה שבעל פה",
+   "target_he": "שד יהודי",
+   "proof": "יִשְׁמַע תּוֹרָה שֶׁבְּעַל־פֶּה, עַל־יְדֵי־זֶה קְטַלֵהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלמות השכינה",
+   "target_he": "קליפות והשדין",
+   "proof": "כָּל זְמַן שֶׁהִיא אֵינָהּ בִּשְׁלֵמוּת וְיֵשׁ לָהּ אֵיזֶה חִסָּרוֹן, אֲזַי יֵשׁ לָהֶם חִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שכינה",
+   "target_he": "חכמה",
+   "proof": "כְּשֶׁמַּעֲלִין אוֹתָהּ לִבְחִינַת חָכְמָה, שֶׁשָּׁם עִקַּר בִּנְיָנָהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בנין השכינה בשלמות",
+   "target_he": "שד יהודי",
+   "proof": "וּכְשֶׁנִּבְנֵית בִּשְׁלֵמוּת, עַל־יְדֵי־זֶה וּקְטַלֵהּ לְשֵׁד יְהוּדִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

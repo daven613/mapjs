@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_1_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הרגשת העליות וירידות שיש להאילן",
+   "target_he": "גדילת הענפים וחיותם",
+   "proof": "כִּי הָעֲנָפִים מַרְגִּישִׁים כָּל הָעֲלִיּוֹת וִירִידוֹת שֶׁיֵּשׁ לְהָאִילָן, וְעַל כֵּן בַּקַּיִץ הֵם גְּדֵלִים, וְיֵשׁ לָהֶם חִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שורש",
+   "target_he": "חיות",
+   "proof": "כִּי הָאִילָן יוֹנֵק חִיּוּתוֹ מִשָּׁרְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גידין",
+   "target_he": "חללים",
+   "proof": "עַל יְדֵי הַגִּידִין שֶׁיֵּשׁ בּוֹ, שֶׁיּוֹנֵק דֶּרֶךְ שָׁם חִיּוּתוֹ מִשָּׁרְשׁוֹ, דְּהַיְנוּ שֶׁיֵּשׁ בּוֹ חֲלָלִים שֶׁיּוֹנֵק דֶּרֶךְ שָׁם חִיּוּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לחלוחית",
+   "target_he": "חללים",
+   "proof": "בַּחֹרֶף שֶׁנִּתְיַבֵּשׁ הַלַּחְלוּחִית וְנִתְכַּוֵּץ הַחֲלָלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התכווצות החללים",
+   "target_he": "התכווצות הענפים",
+   "proof": "עַל יְדֵי זֶה נִתְכַּוְּצִים גַּם כָּל הָעֲנָפִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התכווצות הענפים",
+   "target_he": "נפילת העלים",
+   "proof": "וּמֵחֲמַת זֶה נוֹפְלִים הֶעָלִים אָז",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

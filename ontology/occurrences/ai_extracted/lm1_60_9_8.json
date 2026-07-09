@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_9_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "סיפורי מעשיות",
+   "target_he": "להתיר פה אילמים, להתיר פה עקרות",
+   "proof": "בִּבְחִינַת: לְהַתִּיר פֶּה אִלְּמִים, לְהַתִּיר פֶּה עֲקָרוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סיפורי מעשיות",
+   "target_he": "הולדה",
+   "proof": "וְעַל יְדֵי זֶה נִמְשָׁךְ הַהוֹלָדָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הולדה",
+   "target_he": "פקידות עקרות",
+   "proof": "וְעַל יְדֵי זֶה נִמְשָׁךְ הַהוֹלָדָה, בְּחִינַת פְּקִידוּת עֲקָרוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סיפורי מעשיות",
+   "target_he": "הולדה",
+   "proof": "כִּי עִקַּר הַהוֹלָדָה נִמְשָׁךְ עַל יְדֵי סִפּוּרֵי מַעֲשִׂיּוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

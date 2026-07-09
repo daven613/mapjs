@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 74,
+ "chunk": "74_0_13",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "פָּנִים",
+   "target_he": "תְּפִלָּה",
+   "proof": "פָּנִים זֶה בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַסְתָּרַת פָּנִים",
+   "target_he": "בִּטּוּל תְּפִלָּה",
+   "proof": "הַיְנוּ כְּשֶׁהוּא הַסְתָּרַת פָּנִים, חַס וְשָׁלוֹם, דְּהַיְנוּ בִּטּוּל תְּפִלָּה, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּטּוּל תְּפִלָּה",
+   "target_he": "דִּין קָשֶׁה",
+   "proof": "דְּהַיְנוּ בִּטּוּל תְּפִלָּה, חַס וְשָׁלוֹם, אָז הוּא דִּין קָשֶׁה, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּין קָשֶׁה",
+   "target_he": "הִסְתַּרְתָּ פָנֶיךָ הָיִיתִי נִבְהָל",
+   "proof": "אָז הוּא דִּין קָשֶׁה, חַס וְשָׁלוֹם, בְּחִינַת: הִסְתַּרְתָּ פָנֶיךָ הָיִיתִי נִבְהָל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

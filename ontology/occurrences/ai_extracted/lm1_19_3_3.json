@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_3_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "רוּחַ־הַקֹּדֶשׁ",
+   "target_he": "לְשׁוֹן הַקֹּדֶשׁ",
+   "proof": "רוּחַ־הַקֹּדֶשׁ הַיְנוּ לְשׁוֹן הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "תַּאֲוַת נִאוּף",
+   "proof": "שֶׁעַל־יְדֵי לְשׁוֹן הַקֹּדֶשׁ נֶאֱסָר וְנִתְקַשֵּׁר הַתַּאֲוָה שֶׁל תַּאֲוַת נִאוּף",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תַּאֲוַת נִאוּף",
+   "target_he": "מְּדוּרָה שֶׁל שִׁבְעִין כּוֹכְבִין",
+   "proof": "הַיְנוּ הַמְּדוּרָה שֶׁל שִׁבְעִין כּוֹכְבִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "שְׁלִיטָה עַל יִשְׂרָאֵל שֶׁל הַמְּדוּרָה",
+   "proof": "שֶׁאֵין לוֹ שְׁלִיטָה עַל יִשְׂרָאֵל עַל־יְדֵי לְשׁוֹן הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "לָשׁוֹן נוֹפֵל עַל לָשׁוֹן",
+   "proof": "בִּבְחִינַת לָשׁוֹן נוֹפֵל עַל לָשׁוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוּחַ־הַקֹּדֶשׁ",
+   "target_he": "רוּחַ שְׁטוּת",
+   "proof": "שֶׁהָרוּחַ שְׁטוּת נִתְבַּטֵּל עַל־יְדֵי רוּחַ־הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

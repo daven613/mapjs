@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 225,
+ "chunk": "225_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "רֵאָה",
+   "target_he": "בִּטָּחוֹן",
+   "proof": "כְּשֶׁהָרֵאָה בִּשְׁלֵמוּת, עַל־יְדֵי־זֶה הַבִּטָּחוֹן בִּשְׁלֵמוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֵׂכֶל",
+   "target_he": "בִּטָּחוֹן",
+   "proof": "כִּי עִקַּר הַבִּטָּחוֹן בִּשְׁלֵמוּת הוּא עַל־יְדֵי הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֵינֵי",
+   "target_he": "שֵׂכֶל",
+   "proof": "עֵינֵי זֶה בְּחִינַת הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

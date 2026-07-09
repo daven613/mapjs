@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 79,
+ "chunk": "79_0_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בִּטּוּל הַזְּמַנִּים",
+   "target_he": "תְּשׁוּבָה",
+   "proof": "שֶׁבִּטּוּל הַזְּמַנִּים וּתְשׁוּבָה הוּא בְּחִינָה אַחַת וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מִלְחֶמֶת עֲמָלֵק",
+   "target_he": "תְּשׁוּבָה",
+   "proof": "מִלְחֶמֶת עֲמָלֵק זֶה תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תַעֲנִית",
+   "target_he": "תְּשׁוּבָה",
+   "proof": "כִּי אָז הָיוּ שְׁרוּיִים בְּתַעֲנִית מֹשֶׁה אַהֲרֹן וְחוּר שֶׁזֶּהוּ בְּחִינַת תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קְרִיעַת יַם־סוּף וּמִלְחֶמֶת עֲמָלֵק",
+   "target_he": "בִּטּוּל הַזְּמַנִּים וּתְשׁוּבָה",
+   "proof": "נִמְצָא שֶׁקְּרִיעַת יַם־סוּף וּמִלְחֶמֶת עֲמָלֵק זֶהוּ בְּחִינַת בִּטּוּל הַזְּמַנִּים וּתְשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּשׁוּבָה",
+   "target_he": "בִּטּוּל הַזְּמַנִּים",
+   "proof": "כִּי עַל־יְדֵי תְּשׁוּבָה, שֶׁהוּא בִּטּוּל הַזְּמַנִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּבָה",
+   "target_he": "הַקּוֹל דִּקְדֻשָּׁה",
+   "proof": "עַל־יְדֵי תְּשׁוּבָה, שֶׁהוּא בִּטּוּל הַזְּמַנִּים, עַל־יְדֵי־זֶה שׁוֹמְעִין הַקּוֹל דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

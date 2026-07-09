@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_4_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חֲבֵרוֹ",
+   "target_he": "תַּלְמִיד",
+   "proof": "נַעֲשֶׂה חֲבֵרוֹ בְּחִינַת תַּלְמִיד אֶצְלוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכְנָסַת דַּעַת וְיִרְאַת שָׁמַיִם בַּחֲבֵרוֹ",
+   "target_he": "בְּחִינַת תַּלְמִיד",
+   "proof": "לְהַכְנִיס דַּעַת וְיִרְאַת שָׁמַיִם בַּחֲבֵרוֹ, שֶׁעַל־יְדֵי־זֶה נַעֲשֶׂה חֲבֵרוֹ בְּחִינַת תַּלְמִיד אֶצְלוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַדִּבּוּר שֶׁהִכְנִיס בַּחֲבֵרוֹ",
+   "target_he": "נֶחֱשָׁב כְּאִלּוּ קַיָּם בָּעוֹלָם",
+   "proof": "אֲזַי יִתְלַבֵּשׁ בְּזֶה הַדִּבּוּר שֶׁהִכְנִיס בַּחֲבֵרוֹ, וְיִהְיֶה נֶחֱשָׁב כְּאִלּוּ הוּא בְּעַצְמוֹ מַמָּשׁ קַיָּם בְּזֶה הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בֵּן",
+   "target_he": "חֲלִיפוֹת לָמוֹ",
+   "proof": "אֲשֶׁר אֵין חֲלִיפוֹת לָמוֹ – חַד אָמַר בֵּן, וְחַד אָמַר תַּלְמִיד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תַּלְמִיד",
+   "target_he": "חֲלִיפוֹת לָמוֹ",
+   "proof": "אֲשֶׁר אֵין חֲלִיפוֹת לָמוֹ – חַד אָמַר בֵּן, וְחַד אָמַר תַּלְמִיד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בֵּן אוֹ תַּלְמִיד",
+   "target_he": "חֲלִיפוֹת",
+   "proof": "נִמְצָא כְּשֶׁנִּשְׁאָר בֵּן אוֹ תַּלְמִיד אַחֲרָיו, אֲזַי יֵשׁ חֲלִיפוֹת לָמוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בֵּן אוֹ תַּלְמִיד",
+   "target_he": "דַּעְתּוֹ נִשְׁאָר אַחֲרָיו",
+   "proof": "מֵאַחַר שֶׁנִּשְׁאָר דַּעְתּוֹ אַחֲרָיו עַל־יְדֵי בֵּן אוֹ תַּלְמִיד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עִקָּר",
+   "target_he": "דַּעַת",
+   "proof": "כִּי עִקָּר הוּא הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַדַּעַת הַנִּשְׁאָר אַחֲרָיו עַל־יְדֵי בֵּן אוֹ תַּלְמִיד",
+   "target_he": "נֶחֱשָׁב כְּאִלּוּ נִשְׁאָר קַיָּם בָּעוֹלָם",
+   "proof": "וּכְשֶׁנִּשְׁאָר הַדַּעַת אַחֲרָיו עַל־יְדֵי בֵּן אוֹ תַּלְמִיד, נֶחֱשָׁב כְּאִלּוּ הוּא מַמָּשׁ נִשְׁאָר קַיָּם בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

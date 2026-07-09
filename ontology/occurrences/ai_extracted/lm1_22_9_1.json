@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_9_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שְׁנֵי הָעֲדָיִים שֶׁהִכְתִּירוּ בְּחוֹרֵב מִנַּעֲשֶׂה וְנִשְׁמַע",
+   "target_he": "בְּרֵאשִׁית בָּרָא",
+   "proof": "הֵם בְּחִינַת בְּרֵאשִׁית בָּרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נַעֲשֶׂה וְנִשְׁמַע",
+   "target_he": "נִסְתָּרוֹת וְנִגְלוֹת",
+   "proof": "כִּי נַעֲשֶׂה וְנִשְׁמַע הוּא בְּחִינַת נִסְתָּרוֹת וְנִגְלוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נַעֲשֶׂה",
+   "target_he": "נִגְלוֹת",
+   "proof": "נַעֲשֶׂה הוּא בְּחִינַת נִגְלוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִשְׁמַע",
+   "target_he": "נִסְתָּרוֹת",
+   "proof": "וְנִשְׁמַע הִיא בְּחִינַת נִסְתָּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נִגְלוֹת",
+   "target_he": "הַמִּצְוו‍ֹת שֶׁאֶפְשָׁר לְכָל אֶחָד לְקַיֵּם לְפִי מַדְרֵגָתוֹ",
+   "proof": "הַיְנוּ הַמִּצְוו‍ֹת שֶׁאֶפְשָׁר לְכָל אֶחָד לְקַיֵּם לְפִי מַדְרֵגָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נִסְתָּרוֹת",
+   "target_he": "מַה שֶּׁהוּא גָבוֹהַּ וְנִסְתָּר מִמֶּנּוּ",
+   "proof": "מַה שֶּׁהוּא גָבוֹהַּ וְנִסְתָּר מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

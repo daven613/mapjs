@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 28,
+ "chunk": "28_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הכנסת תלמידי חכמים צדיקים לתוך ביתו",
+   "target_he": "חסד",
+   "proof": "וְלָבוֹא לְחֶסֶד, אִי אֶפְשָׁר לָבוֹא אֶלָּא עַל־יְדֵי שֶׁיַּכְנִיס תַּלְמִידֵי־חֲכָמִים צַדִּיקִים לְתוֹךְ בֵּיתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "השימוש שעומד עליהם ומשמש אותם",
+   "target_he": "חסד",
+   "proof": "וּבְזֶה הַשִּׁמּוּשׁ שֶׁעוֹמֵד עֲלֵיהֶם וּמְשַׁמֵּשׁ אוֹתָם, זוֹכֶה לַחֶסֶד הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שימוש תלמיד את רבו",
+   "target_he": "חסד",
+   "proof": "כָּל הַמּוֹנֵעַ תַּלְמִידוֹ מִלְּשַׁמְּשׁוֹ כְּאִלּוּ מוֹנֵעַ מִמֶּנּוּ חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התמיד כבש",
+   "target_he": "תיקון האלפין",
+   "proof": "וּבִשְׁבִיל זֶה הָיָה הַתָּמִיד כֶּבֶשׂ, כִּי מִמֶּנּוּ נִתְתַּקְּנוּ הָאַלְפִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כבש",
+   "target_he": "אלוף",
+   "proof": "בִּבְחִינַת: וַאֲנִי כְּכֶבֶשׂ אַלּוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כבוש תחת יד רבו ומשמש אותם",
+   "target_he": "כבש",
+   "proof": "וְזֶה בְּחִינַת כֶּבֶשׂ – שֶׁכָּבוּשׁ תַּחַת יַד רַבּוֹ וּמְשַׁמֵּשׁ אוֹתָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תמיד",
+   "target_he": "ד' אלפין",
+   "proof": "וְזֶה תָּמִד – גִּימַטְרִיָּא ד' אַלְפִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ד' אלפין",
+   "target_he": "תיקון האלפין",
+   "proof": "שֶׁהוּא תִּקּוּן הָאַלְפִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

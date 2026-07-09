@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 92,
+ "chunk": "92_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עשרה קפיטל תהילים",
+   "target_he": "תיקון למקרה־לילה",
+   "proof": "תִּקּוּן לְמִקְרֵה־לַיְלָה, חַס וְשָׁלוֹם, לוֹמַר עֲשָׂרָה קַפִּיטְל תְּהִלִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עשרה קפיטל תהילים",
+   "target_he": "עשרה מיני נגינה",
+   "proof": "כִּי עֲשָׂרָה קַפִּיטְל תְּהִלִּים הֵם כְּנֶגֶד עֲשָׂרָה מִינֵי נְגִינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עשרה מיני נגינה",
+   "target_he": "כח הקליפה והפגם",
+   "proof": "יֵשׁ לָהֶם כֹּחַ לְבַטֵּל כֹּחַ הַקְּלִפָּה וְהַפְּגָם הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 119,
+ "chunk": "119_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שבת",
+   "target_he": "דעת",
+   "proof": "שֶׁהַשַּׁבָּת, שֶׁהוּא בְּחִינוֹת דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת שיש לך מבחינות שבת",
+   "target_he": "רחמים על אחרים",
+   "proof": "עַל יְדֵי הַדַּעַת שֶׁיֵּשׁ לְךָ מִבְּחִינוֹת שַׁבָּת... שֶׁיִּהְיֶה לְךָ רַחֲמִים עַל אֲחֵרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רחמים על אחרים",
+   "target_he": "רחמים עליך מן השמים",
+   "proof": "וְכֵיוָן שֶׁיִּהְיֶה לְךָ רַחֲמִים בְּוַדַּאי יְרַחֲמוּ עָלֶיךָ מִן הַשָּׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

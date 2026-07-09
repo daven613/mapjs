@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_9_30",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הגלגלים",
+   "target_he": "השפע והברכות",
+   "proof": "כִּי כָּל הַשֶּׁפַע וְהַבְּרָכוֹת בָּאִים עַל יְדֵי הַגַּלְגַּלִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "צדקה",
+   "proof": "הַיְנוּ שֶׁחָסֵר הָאֱמוּנָה שֶׁבִּלְעָדֶיהָ הַצְּדָקָה חֲסֵרָה עֲדַיִן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "בחינות הצדקה",
+   "proof": "וְעַל יְדֵי הָאֱמוּנָה נִשְׁלָם וּמְאִירָה בְּחִינוֹת הַצְּדָקָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "צדקה",
+   "proof": "שֶׁעַל יְדֵי הָאֱמוּנָה נֶחֱשֶׁבֶת הַצְּדָקָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "צדקה",
+   "proof": "כִּי בִּלְתִּי הָאֱמוּנָה הִיא חֲסֵרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 60,
+ "chunk": "60_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אדים",
+   "target_he": "גשמים",
+   "proof": "כִּי הַגְּשָׁמִים נַעֲשִׂין עַל־יְדֵי הָאֵדִים הָעוֹלִים מִן הָאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אדים",
+   "target_he": "שפיכות דמים",
+   "proof": "אֲזַי נַעֲשֶׂה מִן הָאֵדִים הַנַּ\"ל שְׁפִיכוּת־דָּמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּעֵת אֵידָם",
+   "target_he": "אדים",
+   "proof": "הַיְנוּ בְּחִינַת אֵדִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּעֵת אֵידָם",
+   "target_he": "אדים",
+   "proof": "בְּחִינַת אֵדִים הַנַּ\"ל, שֶׁעַל־יָדָם נַעֲשֶׂה הַשְּׁפִיכוּת־דָּמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

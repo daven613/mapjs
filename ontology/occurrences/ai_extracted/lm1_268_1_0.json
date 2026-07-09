@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 268,
+ "chunk": "268_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מְמַלֵּא רְצוֹנָהּ",
+   "target_he": "מַמְשֶׁכֶת עַצְמָהּ מִמֶּנּוּ",
+   "proof": "עַל יְדֵי שֶׁמַּמְשֶׁכֶת עַצְמָהּ מִמֶּנּוּ מֵחֲמַת שֶׁאֵין מְמַלֵּא רְצוֹנָהּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַמְשֶׁכֶת עַצְמָהּ מִמֶּנּוּ",
+   "target_he": "נֶחֱלָשׁ כֹּחַ הַנֶּפֶשׁ",
+   "proof": "עַל יְדֵי שֶׁנֵּחֱלָשׁ כֹּחַ הַנֶּפֶשׁ, עַל יְדֵי שֶׁמַּמְשֶׁכֶת עַצְמָהּ מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נֶחֱלָשׁ כֹּחַ הַנֶּפֶשׁ",
+   "target_he": "נֶחֱלָה הָאָדָם",
+   "proof": "וּמִזֶּה נֶחֱלָה הָאָדָם, עַל יְדֵי שֶׁנֵּחֱלָשׁ כֹּחַ הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

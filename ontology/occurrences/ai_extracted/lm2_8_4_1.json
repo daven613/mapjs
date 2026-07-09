@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_4_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עֲנָנֵי דְּשָׁפְכִי מַיָּא",
+   "target_he": "סִּטְרָא־אָחֳרָא",
+   "proof": "עֲנָנֵי דְּשָׁפְכִי מַיָּא, זֶה בְּחִינַת הַסִּטְרָא־אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סִּטְרָא־אָחֳרָא",
+   "target_he": "סַכֹּתָ בְעָנָן לָךְ מֵעֲבֹר תְּפִלָּה",
+   "proof": "שֶׁהִיא בְּחִינַת (איכה ג׳:מ״ד): סַכֹּתָ בְעָנָן לָךְ מֵעֲבֹר תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֲזָרַת הַקְּלִפּוֹת וּשְׁפִיכַת מֵימֵי הַדַּעַת שֶׁבָּלְעוּ",
+   "target_he": "עֲנָנֵי דְּשָׁפְכִי מַיָּא",
+   "proof": "כְּשֶׁחוֹזְרִים וְשׁוֹפְכִים מֵימֵי הַדַּעַת שֶׁבָּלְעוּ, זֶה בְּחִינַת: עֲנָנֵי דְּשָׁפְכִי מַיָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁפִיכַת מֵימֵי הַדַּעַת שֶׁבָּלְעוּ הַקְּלִפּוֹת",
+   "target_he": "הִתְגַּלּוּת כְּבוֹדוֹ יִתְבָּרַךְ",
+   "proof": "כְּשֶׁחוֹזְרִים וְשׁוֹפְכִים מֵימֵי הַדַּעַת שֶׁבָּלְעוּ... וְאָז נִתְגַּלֶּה כְּבוֹדוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּלּוּת כְּבוֹדוֹ יִתְבָּרַךְ",
+   "target_he": "וּכְבוֹד ה' נִרְאָה בְּעָנָן",
+   "proof": "וְאָז נִתְגַּלֶּה כְּבוֹדוֹ יִתְבָּרַךְ, בִּבְחִינוֹת: וּכְבוֹד ה' נִרְאָה בְּעָנָן (שמות ט״ז:י׳)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּלּוּת כְּבוֹדוֹ יִתְבָּרַךְ",
+   "target_he": "רְעָמִים",
+   "proof": "וְזֶהוּ בְּחִינַת רְעָמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גֵּרִים",
+   "target_he": "רְעָמִים",
+   "proof": "כִּי גֵּרִים הֵם בִּבְחִינַת רְעָמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צֵרוּף גֵּרִים",
+   "target_he": "רַעַם גְּבוּרֹתָו מִי יִתְבּוֹנָן",
+   "proof": "וְעַל־כֵּן צֵרוּף גֵּרִים הוּא רָאשֵׁי־תֵבוֹת: רַעַם גְּבוּרֹתָו מִי יִתְבּוֹנָן (איוב כ״ו:י״ד)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

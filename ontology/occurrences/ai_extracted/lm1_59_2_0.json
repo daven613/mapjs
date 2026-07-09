@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 59,
+ "chunk": "59_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שַׁבְּתוֹתַי",
+   "target_he": "עִגּוּלָא וְרִבּוּעַ דִּלְגוֹ",
+   "proof": "שַׁבְּתוֹתַי דָּא עִגּוּלָא וְרִבּוּעַ דִּלְגוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עִגּוּלָא",
+   "target_he": "כִּסֵּא כָבוֹד",
+   "proof": "עִגּוּלָא – בְּחִינַת כִּסֵּא כָבוֹד הַנַּ\"ל, בְּחִינַת: וְרֹאשׁ עָגֹל לַכִּסֵּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רִבּוּעָא",
+   "target_he": "מִשְׁפָּט",
+   "proof": "וְרִבּוּעָא דָּא מִשְׁפָּט, בִּבְחִינַת (שמות כ״ח:ט״ז): רָבוּעַ יִהְיֶה כָּפוּל, הַנֶּאֱמָר בְּחֹשֶׁן הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּטּוּל הָרָע",
+   "target_he": "יוֹם שֶׁכֻּלּוֹ שַׁבָּת",
+   "proof": "וְלֶעָתִיד, שֶׁיִּתְבַּטֵל כָּל הָרָע, בִּבְחִינַת: וְלֹא יֵלְכוּ עוֹד בִּשְׁרִירוּת לִבָּם הָרָע, אֲזַי יִהְיֶה יוֹם שֶׁכֻּלּוֹ שַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עִגּוּלָא וְרִבּוּעָא",
+   "target_he": "בִּטּוּל הָרָע",
+   "proof": "כֵּן עַל־יְדֵי עִגּוּלָא וְרִבּוּעָא הַנַּ\"ל, שֶׁעַל יָדָם נִתְבַּטֵּל הָרָע כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּטּוּל הָרָע",
+   "target_he": "שַׁבְּתוֹתַי",
+   "proof": "עַל יְדֵי זֶה נִתְהַוֶּה בְּחִינַת שַׁבְּתוֹתַי, בְּחִינַת עִגּוּלָא וְרִבּוּעָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

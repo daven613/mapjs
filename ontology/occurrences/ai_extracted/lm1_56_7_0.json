@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שָׁבוּעוֹת",
+   "target_he": "שֵׂכֶל גָּדוֹל וְגָּבוֹהַּ מְאֹד",
+   "proof": "כִּי שָׁבוּעוֹת הוּא בְּחִינַת שֵׂכֶל גָּדוֹל וְגָּבוֹהַּ מְאֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שֵׂכֶל גָּדוֹל וְגָּבוֹהַּ מְאֹד",
+   "target_he": "חֶסֶד עֶלְיוֹן וְרַחֲמִים גְּדוֹלִים",
+   "proof": "שֶׁהוּא חֶסֶד עֶלְיוֹן וְרַחֲמִים גְּדוֹלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גֹּדֶל הַדַּעַת",
+   "target_he": "גֹּדֶל הָרַחֲמִים",
+   "proof": "כִּי גֹּדֶל הָרַחֲמִים תָּלוּי בְּגֹדֶל הַדַּעַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זָקֵן",
+   "target_he": "יִשּׁוּב הַדַּעַת",
+   "proof": "וְזָקֵן הוּא בְּיִשּׁוּב הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִשּׁוּב הַדַּעַת",
+   "target_he": "גֹּדֶל הָרַחֲמִים",
+   "proof": "וּבָזֶה תָּלוּי גֹּדֶל הָרַחֲמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שָׁבוּעוֹת",
+   "target_he": "חֶסֶד עֶלְיוֹן וְרַחֲמִים גְּדוֹלִים",
+   "proof": "וְעַל כֵּן שָׁבוּעוֹת הוּא חֶסֶד עֶלְיוֹן וְרַחֲמִים גְּדוֹלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִקְוֶה שֶׁל שָׁבוּעוֹת",
+   "target_he": "מִקְוֶה שֶׁל שַׁעַר הַחֲמִשִּׁים",
+   "proof": "שֶׁהִיא בְּחִינוֹת מִקְוֶה שֶׁל שַׁעַר הַחֲמִשִּׁים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שַׁעַר הַחֲמִשִּׁים",
+   "target_he": "שַׁעַר הָעֶלְיוֹן מֵחֲמִשִּׁים שַׁעֲרֵי בִּינָה",
+   "proof": "שֶׁהוּא שַׁעַר הָעֶלְיוֹן מֵחֲמִשִּׁים שַׁעֲרֵי בִּינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׁעַר הָעֶלְיוֹן מֵחֲמִשִּׁים שַׁעֲרֵי בִּינָה",
+   "target_he": "שֵׂכֶל וְדַעַת עֶלְיוֹן",
+   "proof": "שֶׁהוּא בְּחִינוֹת שֵׂכֶל וְדַעַת עֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֵׂכֶל וְדַעַת עֶלְיוֹן",
+   "target_he": "חֶסֶד עֶלְיוֹן וְרַחֲמִים גְּדוֹלִים",
+   "proof": "בְּחִינַת חֶסֶד עֶלְיוֹן וְרַחֲמִים גְּדוֹלִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

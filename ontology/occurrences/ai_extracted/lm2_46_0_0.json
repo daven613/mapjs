@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 46,
+ "chunk": "46_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מָמוֹן",
+   "target_he": "נֶפֶשׁ",
+   "proof": "וְהַמָּמוֹן הוּא הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נוֹתֵן מָמוֹנוֹ לִצְדָקָה",
+   "target_he": "מְסִירַת־נֶפֶשׁ",
+   "proof": "נִמְצָא מוֹסֵר נַפְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלָּה",
+   "target_he": "כִּי עָלֶיךָ הֹרַגְנוּ כָּל הַיּוֹם",
+   "proof": "אִיתָא בַּמִּדְרָשׁ הַנֶּעְלָם... שֶׁהִיא בְּחִינַת: כִּי עָלֶיךָ הֹרַגְנוּ כָּל הַיּוֹם וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כִּי עָלֶיךָ הֹרַגְנוּ כָּל הַיּוֹם",
+   "target_he": "מְסִירַת־נֶפֶשׁ",
+   "proof": "הַיְנוּ מְסִירַת־נֶפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּפִלָּה",
+   "target_he": "מְסִירַת־נֶפֶשׁ",
+   "proof": "נִמְצָא שֶׁהוּא מְסִירַת־נֶפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

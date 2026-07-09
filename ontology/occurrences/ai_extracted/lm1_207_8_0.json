@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 207,
+ "chunk": "207_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַצַּדִּיק מַמְתִּיק דִּבּוּרִים שֶׁלָּהֶם",
+   "target_he": "תּוֹרָה",
+   "proof": "כְּשֶׁהַצַּדִּיק מַמְתִּיק דִּבּוּרִים שֶׁלָּהֶם, אֲזַי הוּא חוֹזֵר וְעוֹשֶׂה מֵהַדִּבּוּרִים תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרָה מֵהַדִּבּוּרִים",
+   "target_he": "תּוֹרַת חֶסֶד",
+   "proof": "וַאֲזַי עוֹשֶׂה תּוֹרַת חֶסֶד, הַיְנוּ לְלַמֵּד לַאֲחֵרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְתוֹרַת חֶסֶד עַל לְשׁוֹנָהּ",
+   "target_he": "הַלּוֹמֵד עַל־מְנָת לְלַמְּדָהּ",
+   "proof": "עַל פָּסוּק: וְתוֹרַת חֶסֶד עַל לְשׁוֹנָהּ – זֶה הַלּוֹמֵד עַל־מְנָת לְלַמְּדָהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תּוֹרָה הַנַּעֲשֵׂית מִדִּבּוּרִים אֵלּוּ הַנִּלְמֶדֶת לַאֲחֵרִים",
+   "target_he": "תּוֹרַת חֶסֶד",
+   "proof": "אֶפְשָׁר לוֹ לְלַמֵּד אֲחֵרִים עִמָּהּ, וְנִמְצָא שֶׁהוּא תּוֹרַת חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 250,
+ "chunk": "250_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חטא",
+   "target_he": "נפילה תחת הטבע",
+   "proof": "רַק כְּשֶׁהֵם חוֹטְאִים, חַס וְשָׁלוֹם, אֲזַי נוֹפְלִים אֶל תַּחַת הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חטא",
+   "target_he": "גלות וצער",
+   "proof": "וַאֲזַי יֵשׁ לָהֶם גָּלוּת וָצַעַר, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "צער וגלות",
+   "proof": "וְעִקַּר הַצַּעַר וְהַגָּלוּת שֶׁלָּהֶם הוּא רַק עַל־יְדֵי־זֶה בְּעַצְמוֹ שֶׁאֵין לָהֶם דַּעַת, וְתוֹלִין בַּטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_9_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "סלתא",
+   "target_he": "פרנסה",
+   "proof": "סַלְתָּא זֶה פַּרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כותא דרקיע",
+   "target_he": "תפילה",
+   "proof": "וְאַנְחָהּ בִּתְפִלָּה",
+   "explicitness": "inferred",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה שהוא לצורך הגוף",
+   "target_he": "נשמתו",
+   "proof": "שֶׁשָּׁקַל לַתְּפִלָּה שֶׁהוּא לְצֹרֶךְ הַגּוּף, וְאַנְחָהּ בִּתְפִלָּה, הַכֹּל לְצֹרֶךְ נִשְׁמָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוחניות",
+   "target_he": "גשמיות",
+   "proof": "כִּי מִמֵּילָא כְּשֶׁנִּתְקָן שָׁם בְּרוּחָנִיּוּת, נִתְקָן גַּם בְּגַשְׁמִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

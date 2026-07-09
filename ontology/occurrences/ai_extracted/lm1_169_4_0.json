@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 169,
+ "chunk": "169_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עִבּוּר",
+   "target_he": "דִּין",
+   "proof": "נִמְצָא, שֶׁעִבּוּר הוּא בְּחִינַת דִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לֵדָה",
+   "target_he": "הַמְתָּקַת הַדִּין",
+   "proof": "וְלֵדָה הוּא בְּחִינַת הַמְתָּקַת הַדִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְצִיאַת הַדָּמִים מֵהָרַגְלִין",
+   "target_he": "עִקַּר הַלֵּדָה",
+   "proof": "יוֹצְאִין הַדָּמִים מֵהָרַגְלִין, שֶׁעַל־יְדֵי־זֶה עִקַּר הַלֵּדָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

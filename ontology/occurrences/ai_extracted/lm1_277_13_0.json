@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 277,
+ "chunk": "277_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כְּנַעַן",
+   "target_he": "כָּאן עָנִי",
+   "proof": "נִמְצָא כְּנַעַן הוּא בְּחִינוֹת כָּאן עָנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "כְּנַעַן",
+   "proof": "וְזֶה עַל יְדֵי מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "פַּרְנָסוֹת",
+   "proof": "כִּי מַחֲלֹקֶת אַחַת דּוֹחָה מֵאָה פַּרְנָסוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

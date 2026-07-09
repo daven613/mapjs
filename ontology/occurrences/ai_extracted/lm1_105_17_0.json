@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 105,
+ "chunk": "105_17_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "רחמים פשוטים",
+   "target_he": "רחמים גדולים",
+   "proof": "שֶׁיְּעוֹרְרוּ רַחֲמִים אֵצֶל הָרַחֲמִים הַגְּדוֹלִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רחמים פשוטים",
+   "target_he": "תפלת הקדוש ברוך הוא",
+   "proof": "וְזֶהוּ בְּחִינוֹת תְּפִלַּת הַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תפלת הקדוש ברוך הוא",
+   "target_he": "בחינת הרחמים פשוטים המעוררים הרחמים הגדולים",
+   "proof": "הַיְנוּ שֶׁכִּבְיָכוֹל בְּחִינוֹת הָרַחֲמִים פְּשׁוּטִים מְבַקְּשִׁים וּמִתְפַּלְּלִים וּמְעוֹרְרִים הָרַחֲמִים הַגְּדוֹלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

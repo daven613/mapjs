@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "אריכות ימים",
+   "proof": "נִמְצָא, שֶׁזּוֹכִין עַל־יְדֵי הַיִּרְאָה לַאֲרִיכוּת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אריכות ימים",
+   "target_he": "זקן",
+   "proof": "שֶׁהֵם בְּחִינַת זָקֵן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אריכות ימים",
+   "target_he": "תיקוני עתיק",
+   "proof": "בְּחִינַת תִּקּוּנֵי עַתִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תיקוני עתיק",
+   "target_he": "עשירות",
+   "proof": "שֶׁעַל־יְדֵי־זֶה זוֹכִין לַעֲשִׁירוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הֶפֶךְ שֶׁל עֲשִׁירוּת",
+   "target_he": "עניות",
+   "proof": "דְּהַיְנוּ עֲנִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר הַחֵן וְהֶבֶל הַיֹּפִי",
+   "target_he": "עניות",
+   "proof": "שֶׁבָּא עַל יְדֵי בְּחִינַת: שֶׁקֶר הַחֵן וְהֶבֶל הַיֹּפִי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֶבֶל הַיֹּפִי",
+   "target_he": "חִנּוֹת שֶׁל שֶׁקֶר",
+   "proof": "וְכָל אֵלּוּ הַחִנּוֹת שֶׁל שֶׁקֶר, הֵם בָּאִים עַל־יְדֵי הֶבֶל הַיֹּפִי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמירה מיֹפִי הנשים",
+   "target_he": "תַּאֲווֹת שֶׁל חִנּוֹת שֶׁל שֶׁקֶר",
+   "proof": "מִי שֶׁאֵינוֹ נִשְׁמָר מִיֹפִי הַנָּשִׁים, עַל־יְדֵי־זֶה יֵשׁ לוֹ תַּאֲווֹת שֶׁל אֵלּוּ הַחִנּוֹת שֶׁל שֶׁקֶר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

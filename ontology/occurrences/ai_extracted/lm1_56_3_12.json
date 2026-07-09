@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_3_12",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "תּוֹרָה",
+   "proof": "גַּם שָׁם מְלֻבָּשׁ הַשֵּׁם יִתְבָּרַךְ, הַיְנוּ תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֶׁלֹּא הָיוּ יוֹדְעִין שֶׁהַשֵּׁם יִתְבָּרַךְ נִסְתָּר שָׁם",
+   "target_he": "הַהַסְתָּרוֹת",
+   "proof": "זֶה בְּעַצְמוֹ הוּא בְּחִינַת הַהַסְתָּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְדִיעָה שֶׁהַשֵּׁם יִתְבָּרַךְ נִסְתָּר שָׁם",
+   "target_he": "דַּעַת",
+   "proof": "עַל־יְדֵי־זֶה בְּעַצְמוֹ נִתְהַפְּכָה הַהַסְתָּרָה שֶׁבְּתוֹךְ הַהַסְתָּרָה, וְנַעֲשֶׂה מִמֶּנָּה דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְדִיעָה שֶׁהַשֵּׁם יִתְבָּרַךְ נִסְתָּר שָׁם",
+   "target_he": "הַתּוֹרָה שֶׁנִּסְתָּר כָּאן",
+   "proof": "וְהֻחְזְרָה הַתּוֹרָה שֶׁנִּסְתָּר כָּאן לְדַעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

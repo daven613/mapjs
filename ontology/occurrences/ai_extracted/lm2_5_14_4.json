@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_14_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לֶכְתֵּךְ אַחֲרַי בַּמִּדְבָּר",
+   "target_he": "תִּקּוּן הָאֱמוּנָה",
+   "proof": "זֶה בְּחִינַת תִּקּוּן הָאֱמוּנָה, בִּבְחִינַת לֶכְתֵּךְ אַחֲרַי בַּמִּדְבָּר בְּאֶרֶץ לֹא זְרוּעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶץ לֹא זְרוּעָה",
+   "target_he": "פְּגַם הָאֱמוּנָה",
+   "proof": "אֶרֶץ לֹא זְרוּעָה זֶה בְּחִינַת פְּגַם הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "זְרָעִים",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִתְקַלְקְלוּ הַזְּרָעִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לֶכְתֵּךְ אַחֲרַי בַּמִּדְבָּר",
+   "target_he": "תִּקּוּן הָאֱמוּנָה",
+   "proof": "וְלֶכְתֵּךְ אַחֲרַי בַּמִּדְבָּר זֶה בְּחִינַת תִּקּוּן הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֶרֶץ לֹא זְרוּעָה",
+   "target_he": "נְפִילַת הָאֱמוּנָה",
+   "proof": "וְתִקְּנוּ בְּחִינַת אֶרֶץ לֹא זְרוּעָה, דְּהַיְנוּ נְפִילַת הָאֱמוּנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 48,
+ "chunk": "48_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "כֹּחַ מַעֲשָׂיו",
+   "target_he": "עִקַּר אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "וְעִקַּר אֶרֶץ־יִשְׂרָאֵל עַל־יְדֵי כֹּחַ מַעֲשָׂיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כֹּחַ הַזֶּה",
+   "target_he": "בְּחִינַת סֻכָּה",
+   "proof": "אֲבָל כְּשֶׁכֹּחַ הַזֶּה, הַיְנוּ בְּחִינַת סֻכָּה, נִפְגָּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת סֻכָּה",
+   "target_he": "גּוֹבְרִים אֻמּוֹת הָעוֹלָם",
+   "proof": "כְּשֶׁכֹּחַ הַזֶּה, הַיְנוּ בְּחִינַת סֻכָּה, נִפְגָּם, אֲזַי גּוֹבְרִים אֻמּוֹת הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת סֻכָּה",
+   "target_he": "גּוֹבֵר יְמִין שֶׁקֶר",
+   "proof": "גּוֹבֵר יְמִין שֶׁקֶר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת סֻכָּה",
+   "target_he": "נַעֲשֶׂה מֵ'רַבִּי' 'רִיב'",
+   "proof": "וְנַעֲשֶׂה מֵ\"רַבִּי\" \"רִיב\"",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִיב",
+   "target_he": "אִיהִי רִיב עַל בְּנָהָא",
+   "proof": "וְנַעֲשֶׂה מֵ\"רַבִּי\" \"רִיב\", אֲזַי אִיהִי רִיב עַל בְּנָהָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_9_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תפלה",
+   "target_he": "רפואת העשבים",
+   "proof": "כְּשֶׁזּוֹכִין לִתְפִלָּה, אֵין צְרִיכִין לִרְפוּאַת הָעֲשָׂבִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפלה",
+   "target_he": "דבר ה'",
+   "proof": "כִּי הַתְּפִלָּה הִיא בְּחִינַת דְּבַר ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דבר ה'",
+   "target_he": "שֹׁרֶשׁ הַכֹּל",
+   "proof": "שֶׁהוּא שֹׁרֶשׁ הַכֹּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דבר ה'",
+   "target_he": "נביא",
+   "proof": "וְזֶה בְּחִינַת נָבִיא, רָאשֵׁי תֵבוֹת: בִּדְבַר יְיָ שָׁמַיִם נַעֲשׂוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אלף",
+   "target_he": "רקיע",
+   "proof": "כִּי הָאָלֶף הוּא רָקִיעַ, הַמַּבְדִּיל בֵּין מַיִם לְמַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נבואה",
+   "target_he": "תפלה",
+   "proof": "כִּי עַל־יְדֵי נְבוּאָה זוֹכִין לִתְפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפלה",
+   "target_he": "יִשְׁלַח דְּבָרוֹ וְיִרְפָּאֵם וִימַלֵּט מִשְּׁחִיתוֹתָם",
+   "proof": "וְזֶה בְּחִינַת (תהילים ק״ז:כ׳): יִשְׁלַח דְּבָרוֹ וְיִרְפָּאֵם וִימַלֵּט מִשְּׁחִיתוֹתָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דבר ה'",
+   "target_he": "תפלה",
+   "proof": "הַיְנוּ שֶׁמְּקַבְּלִין כָּל הָרְפוּאוֹת רַק עַל־יְדֵי דְבַר ה', דְּהַיְנוּ תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דבר ה'",
+   "target_he": "רפואות",
+   "proof": "הַיְנוּ שֶׁמְּקַבְּלִין כָּל הָרְפוּאוֹת רַק עַל־יְדֵי דְבַר ה'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שחיתותם",
+   "target_he": "עשבים",
+   "proof": "וִימַלֵּט מִשְּׁחִיתוֹתָם, הַיְנוּ עֲשָׂבִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עשבים",
+   "target_he": "הַקּוֹצֵר לְשַׁחַת",
+   "proof": "בִּבְחִינַת (מנחות עא): הַקּוֹצֵר לְשַׁחַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_6_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הגרים שבאים להתגייר",
+   "target_he": "הרע שנתלש מהם עם הטוב",
+   "proof": "וְזֶה הוּא בְּחִינַת הַגֵּרִים שֶׁבָּאִים לְהִתְגַּיֵּר, שֶׁהֵם בְּחִינַת הָרָע שֶׁנִּתְלָשׁ מֵהֶם עִם הַטּוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הגרים",
+   "target_he": "זה יכתב ידו לה' (ישעיהו מ״ד:ה')",
+   "proof": "וְזֶה בְּחִינַת (ישעיהו מ״ד:ה׳): זֶה יִכְתֹּב יָדוֹ לַה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בעלי תשובה",
+   "target_he": "בחינת הטוב ששב וחוזר למקומו",
+   "proof": "אֵלּוּ בַּעֲלֵי־תְּשׁוּבָה, הַיְנוּ בְּחִינַת הַטּוֹב, שֶׁשָּׁב וְחוֹזֵר לִמְקוֹמוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת כתב",
+   "target_he": "הטוב ששב וחוזר למקומו",
+   "proof": "וְזֶה נַעֲשֶׂה עַל־יְדֵי בְּחִינַת כְּתָב כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בשם ישראל יכנה",
+   "target_he": "הגרים",
+   "proof": "וּבְשֵׁם יִשְׂרָאֵל יְכַנֶּה (שם) – אֵלּוּ הַגֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שיבת הטוב למקומו",
+   "target_he": "גרים",
+   "proof": "כִּי עַל־יְדֵי שֶׁשָּׁב וְחוֹזֵר הַטּוֹב, עַל־יְדֵי־זֶה נַעֲשֶׂה גֵּרִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כתב ישראל",
+   "target_he": "ביאה אל אדמת ישראל",
+   "proof": "הַיְנוּ כְּשֶׁאֵין בְּחִינַת כְּתַב יִשְׂרָאֵל, שֶׁעַל־יָדוֹ נַעֲשִׂין גֵּרִים כַּנַּ\"ל, עַל־יְדֵי־זֶה: וְאֶל אַדְמַת יִשְׂרָאֵל לֹא יָבֹאוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כתב ישראל",
+   "target_he": "שלמות המזבח",
+   "proof": "הַיְנוּ שֶׁאֵין זוֹכִים לִשְׁלֵמוּת הַמִּזְבֵּחַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

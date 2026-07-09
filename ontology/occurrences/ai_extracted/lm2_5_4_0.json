@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "אֱמוּנוֹת כָּזְבִּיּוֹת",
+   "proof": "עַל יְדֵי נְפִילַת הָאֱמוּנָה עַל־יְדֵי־זֶה נַעֲשֶׂה וְנִתְחַזֵּק אֱמוּנוֹת כָּזְבִּיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה הַנְּפוּלָה",
+   "target_he": "גֵּרִים",
+   "proof": "וּכְשֶׁמַּעֲלִין הָאֱמוּנָה הַנְּפוּלָה, מִזֶּה נַעֲשִׂין גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְקִיטַת וּבֵרוּר נְפִילַת הָאֱמוּנָה",
+   "target_he": "כֹּחַ אֱמוּנָתָם",
+   "proof": "כִּי עַל־יְדֵי שֶׁנִּלְקָטִין וְנִבְרָרִין נְפִילַת הָאֱמוּנָה שֶׁמִּשָּׁם יְנִיקַת אֱמוּנָתָם, עַל־יְדֵי־זֶה נֶחֱלָשׁ כֹּחַ אֱמוּנָתָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

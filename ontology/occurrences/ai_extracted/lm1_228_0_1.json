@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 228,
+ "chunk": "228_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מְגַיֵּר גֵּרִים",
+   "target_he": "מְגוּרֵי אָבִיו",
+   "proof": "הָיָה מְגַיֵּר גֵּרִים, בְּחִינַת מְגוּרֵי אָבִיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְגַיֵּר גֵּרִים",
+   "target_he": "לֵישֵׁב בְּשַׁלְוָה",
+   "proof": "עַל־יְדֵי־זֶה לֹא הָיָה יָכוֹל לֵישֵׁב בְּשַׁלְוָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שַׁלְוָה",
+   "target_he": "לַעֲשׂוֹת גֵּרִים",
+   "proof": "וְאִם יִהְיֶה לוֹ שַׁלְוָה לֹא יוּכַל לַעֲשׂוֹת גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

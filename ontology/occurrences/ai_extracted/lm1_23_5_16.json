@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_16",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שָׂמֵחַ בְּחֶלְקוֹ",
+   "target_he": "עִקַּר הָעֲשִׁירוּת",
+   "proof": "שֶׁיִּהְיֶה שָׂמֵחַ בְּחֶלְקוֹ שֶׁזֶּהוּ עִקַּר הָעֲשִׁירוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁבִירַת תַּאֲוַת מָמוֹן",
+   "target_he": "אֱמֶת",
+   "proof": "שְׁבִירַת תַּאֲוַת מָמוֹן, שֶׁהוּא בְּחִינַת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת תַּאֲוַת מָמוֹן",
+   "target_he": "עִקַּר הַהַשְׁפָּעָה",
+   "proof": "כִּי אִם עַל יְדֵי שְׁבִירַת תַּאֲוַת מָמוֹן, שֶׁהוּא בְּחִינַת אֱמֶת, שֶׁמִּשָּׁם עִקַּר הַהַשְׁפָּעָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

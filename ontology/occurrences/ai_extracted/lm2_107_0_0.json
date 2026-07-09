@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 107,
+ "chunk": "107_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תַּאֲוָה הַכְּלָלִית",
+   "target_he": "תַּאֲוַת נִאוּף",
+   "proof": "מֵעִנְיַן מִאוּס וְהַרְחָקַת הַתַּאֲוָה הַכְּלָלִית, שֶׁהִיא תַּאֲוַת נִאוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּאֲוָה",
+   "target_he": "חִיּוּת",
+   "proof": "הֲלֹא אַדְּרַבָּא, הִיא מַפְסֶדֶת וּמַזֶּקֶת הַחִיּוּת מְאֹד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּאֲוָה",
+   "target_he": "כֹּחַ",
+   "proof": "וּמַתֶּשֶׁת כֹּחוֹ שֶׁל אָדָם מְאֹד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

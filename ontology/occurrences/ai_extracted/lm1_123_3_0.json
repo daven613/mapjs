@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 123,
+ "chunk": "123_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "נָבָל",
+   "target_he": "לב נְתִיבוֹת",
+   "proof": "נָבָל – רָאשֵׁי־תֵּבוֹת לב נְתִיבוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לב נְתִיבוֹת",
+   "target_he": "כְּלָלִיּוּת הַתּוֹרָה",
+   "proof": "שֶׁהוּא כְּלָלִיּוּת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לב נְתִיבוֹת",
+   "target_he": "הַחָכְמָה הָאֲמִתִּיוּת",
+   "proof": "וְהִיא הַחָכְמָה הָאֲמִתִּיוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נָבָל",
+   "target_he": "הַתּוֹרָה",
+   "proof": "שֶׁהִיא בְּחִינַת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַתּוֹרָה",
+   "target_he": "נוֹבְלוֹת הַחָכְמָה הָעֶלְיוֹנָה",
+   "proof": "הַנִּקְרֵאת נוֹבְלוֹת הַחָכְמָה הָעֶלְיוֹנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

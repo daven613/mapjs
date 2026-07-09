@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 13,
+ "chunk": "13_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַשֵּׂכֶל",
+   "target_he": "משֶׁה־מָשִׁיחַ",
+   "proof": "כִּי עִקַּר קַבָּלַת הַתּוֹרָה – עַל־יְדֵי הַשֵּׂכֶל, שֶׁהוּא משֶׁה־מָשִׁיחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשֵּׂכֶל",
+   "target_he": "קַבָּלַת הַתּוֹרָה",
+   "proof": "כִּי עִקַּר קַבָּלַת הַתּוֹרָה – עַל־יְדֵי הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת משֶׁה־מָשִׁיחַ",
+   "target_he": "קַבָּלַת תּוֹרָה",
+   "proof": "וּמִי שֶׁיֵּשׁ לוֹ בְּחִינַת משֶׁה־מָשִׁיחַ, יוּכַל לְקַבֵּל תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת משֶׁה־מָשִׁיחַ",
+   "target_he": "הֶאָרַת הַתּוֹרָה לְלַמֵּד שְׁאָר בְּנֵי־אָדָם",
+   "proof": "וְיָכוֹל לְהַמְשִׁיךְ הֶאָרַת הַתּוֹרָה לְלַמֵּד שְׁאָר בְּנֵי־אָדָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִחוּדָא דְּקֻדְשָׁא־בְּרִיךְ־הוּא וּשְׁכִינְתֵּהּ",
+   "target_he": "הִתְגַּלּוּת הַתּוֹרָה",
+   "proof": "כִּי הִתְגַּלּוּת הַתּוֹרָה בָּא מִיִּחוּדָא דְּקֻדְשָׁא־בְּרִיךְ־הוּא וּשְׁכִינְתֵּהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אָבִיךָ",
+   "target_he": "קֻדְשָׁא־בְּרִיךְ־הוּא",
+   "proof": "אָבִיךָ דָּא קֻדְשָׁא־בְּרִיךְ־הוּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אִמֶּךָ",
+   "target_he": "כְּנֶסֶת־יִשְׂרָאֵל",
+   "proof": "וְאִמֶּךָ דָּא כְּנֶסֶת־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַעֲלָאַת נַפְשׁוֹת יִשְׂרָאֵל",
+   "target_he": "מַיִּין נוּקְבִין",
+   "proof": "וְיִחוּדָם – עַל־יְדֵי הַעֲלָאַת נַפְשׁוֹת יִשְׂרָאֵל בִּבְחִינַת מַיִּין נוּקְבִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַעֲלָאַת נַפְשׁוֹת יִשְׂרָאֵל בִּבְחִינַת מַיִּין נוּקְבִין",
+   "target_he": "יִחוּד קֻדְשָׁא־בְּרִיךְ־הוּא וּשְׁכִינְתֵּהּ",
+   "proof": "וְיִחוּדָם – עַל־יְדֵי הַעֲלָאַת נַפְשׁוֹת יִשְׂרָאֵל בִּבְחִינַת מַיִּין נוּקְבִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְקִיחַת הַנְּפָשׁוֹת וְהַעֲלָאָתָן עַל־יְדֵי הֶחָכָם",
+   "target_he": "וְלֹקֵחַ נְפָשׁוֹת חָכָם",
+   "proof": "וְהֶחָכָם יָכוֹל לִקַּח הַנְּפָשׁוֹת וּלְהַעֲלוֹתָם בִּבְחִינַת מַיִּין נוּקְבִין, בִּבְחִינַת וְלֹקֵחַ נְפָשׁוֹת חָכָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִחוּד הַזֶּה",
+   "target_he": "הַתּוֹרָה",
+   "proof": "וְעַל־יְדֵי הַיִּחוּד הַזֶּה נוֹלָד הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲלִיַּת הֶחָכָם עִם הַנְּפָשׁוֹת",
+   "target_he": "עִיר גִּבֹּרִים עָלָה חָכָם",
+   "proof": "וּכְשֶׁעוֹלֶה הֶחָכָם עִם הַנְּפָשׁוֹת, בִּבְחִינַת עִיר גִּבֹּרִים עָלָה חָכָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲלִיַּת הֶחָכָם עִם הַנְּפָשׁוֹת",
+   "target_he": "וַיֹּרֶד עֹז מִבְטֶחָה",
+   "proof": "עַל־יְדֵי זֶה: וַיֹּרֶד עֹז מִבְטֶחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 62,
+ "chunk": "62_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קלקול האמונה",
+   "target_he": "עבודה זרה",
+   "proof": "כִּי קִלְקוּל הָאֱמוּנָה הִיא גַם־כֵּן בְּחִינַת עֲבוֹדָה־זָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סרים מהשם יתברך",
+   "target_he": "עבודה זרה",
+   "proof": "שֶׁתֵּכֶף כְּשֶׁסָּרִים מֵהַשֵּׁם יִתְבָּרַךְ הוּא בְּחִינַת עֲבוֹדָה־זָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מסעי בני ישראל",
+   "target_he": "פגם עבודה זרה",
+   "proof": "הֵם מְכַפְּרִין עַל אֵלֶּה אֱלֹקֶיךָ יִשְׂרָאֵל, הַיְנוּ עַל פְּגַם עֲבוֹדָה־זָרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עבודה זרה",
+   "target_he": "חרון אף",
+   "proof": "וְכָל זְמַן שֶׁיֵּשׁ עֲבוֹדָה־זָרָה בָּעוֹלָם, חֲרוֹן־אַף בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כפרת פגם עבודה זרה",
+   "target_he": "חרון אף",
+   "proof": "נִמְצָא כְּשֶׁנִּתְכַּפֵּר פְּגַם עֲבוֹדָה־זָרָה כַּנַּ\"ל, נִמְתָּק הַחֲרוֹן־אַף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נמתק החרון אף",
+   "target_he": "רחמנות",
+   "proof": "נִמְתָּק הַחֲרוֹן־אַף, וְנִמְשָׁךְ רַחֲמָנוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

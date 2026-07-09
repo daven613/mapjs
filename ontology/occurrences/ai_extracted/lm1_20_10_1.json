@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_10_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כֹּה אָמַר אָחִיךָ יִשְׂרָאֵל",
+   "target_he": "יִתֶּן אֹמֶר הַמְבַשְּׂרוֹת צָבָא רָב",
+   "proof": "בִּבְחִינַת יִתֶּן אֹמֶר הַמְבַשְּׂרוֹת צָבָא רָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּרִית",
+   "target_he": "חֶרֶב",
+   "proof": "וְעַל פְּגַם הַבְּרִית חֶרֶב בָּא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֶרֶב",
+   "target_he": "חֶרֶב נֹקֶמֶת",
+   "proof": "בִּבְחִינַת (ויקרא כ״ו:כ״ה) חֶרֶב נֹקֶמֶת וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַלְאָךְ",
+   "target_he": "משֶׁה",
+   "proof": "פֵּרְשׁוּ חֲכָמֵינוּ זִכְרוֹנָם לִבְרָכָה: זֶה משֶׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 101,
+ "chunk": "101_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מדות רעות",
+   "target_he": "נכנע תחת עכו\"ם",
+   "proof": "וְכָל מִי שֶׁיֵּשׁ בּוֹ מִדּוֹת רָעוֹת, הוּא נִכְנָע תַּחַת אוֹתָם הָעַכּוּ\"ם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עול תורה",
+   "target_he": "עול מלכות ועול דרך ארץ",
+   "proof": "כָּל הַפּוֹרֵק מִמֶּנּוּ עֹל תּוֹרָה, נוֹתְנִין עָלָיו עֹל מַלְכוּת וְעֹל דֶּרֶךְ אֶרֶץ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שעבוד בגשמיות",
+   "target_he": "עול מלכות",
+   "proof": "הַיְנוּ שִׁעְבּוּד בְּגַשְׁמִיּוּת, שֶׁזֶּהוּ בְּחִינַת עֹל מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מדות רעות של העכו\"ם",
+   "target_he": "עול דרך ארץ",
+   "proof": "דְּהַיְנוּ הַמִּדּוֹת רָעוֹת שֶׁל הָעַכּוּ\"ם, שֶׁזֶּהוּ בְּחִינַת עֹל דֶּרֶךְ אֶרֶץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עול תורה",
+   "target_he": "ע' אנפין נהירין",
+   "proof": "עֹל תּוֹרָה, שֶׁהִיא בְּחִינַת ע' אַנְפִּין נְהִירִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עול תורה",
+   "target_he": "ע' אנפין חשוכין",
+   "proof": "כִּי עַל־יְדֵי שֶׁפָּרַק מִמֶּנּוּ עֹל תּוֹרָה... עַל־יְדֵי־זֶה מִתְגַּבְּרִין עָלָיו בְּחִינַת ע' אַנְפִּין חֲשׁוּכִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ע' אנפין חשוכין",
+   "target_he": "השעבוד והמדות רעות של העכו\"ם",
+   "proof": "בְּחִינַת ע' אַנְפִּין חֲשׁוּכִין, שֶׁהֵם הַשִּׁעְבּוּד וְהַמִּדּוֹת רָעוֹת שֶׁל הָעַכּוּ\"ם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

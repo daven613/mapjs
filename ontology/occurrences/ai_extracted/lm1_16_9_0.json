@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 16,
+ "chunk": "16_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עֵשָׂו וְיִשְׁמָעֵאל",
+   "target_he": "עֲנָנִין דִּמְכַסִּין עַל הָעַיְנִין",
+   "proof": "וּתְרֵין אֻמִּין, עֵשָׂו וְיִשְׁמָעֵאל, אִנּוּן תְּרֵין עֲנָנִין דִּמְכַסִּין עַל הָעַיְנִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֵשָׂו וְיִשְׁמָעֵאל",
+   "target_he": "עֵינָיו",
+   "proof": "כְּדֵי שֶׁלֹּא יִתְגַּבְּרוּ הָאֻמִּין עֵשָׂו וְיִשְׁמָעֵאל עַל עֵינָיו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֵשָׂו וְיִשְׁמָעֵאל",
+   "target_he": "חָכְמָתוֹ",
+   "proof": "וְיִתְבַּטֵּל, חַס וְשָׁלוֹם, חָכְמָתוֹ לְגַמְרֵי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

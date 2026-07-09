@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 57,
+ "chunk": "57_1_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יַד הַמַּלְאָךְ",
+   "target_he": "אַסְוָתָא",
+   "proof": "וּכְשֶׁנִּפְגָּם אֵיזֶהוּ יַד הַמַּלְאָךְ, אֲזַי אֵין לָזֶה הָאָדָם אַסְוָתָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַסְוָתָא",
+   "target_he": "מַכָּה אֲשֶׁר לֹא כְתוּבָה בַּתּוֹרָה",
+   "proof": "וְזֶה בְּחִינַת (דברים כ״ח:ס״א): מַכָּה אֲשֶׁר לֹא כְתוּבָה בַּתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַכָּה אֲשֶׁר לֹא כְתוּבָה בַּתּוֹרָה",
+   "target_he": "מִיתַת תַּלְמִיד חָכָם",
+   "proof": "זֶהוּ מִיתַת תַּלְמִיד חָכָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מִיתַת תַּלְמִיד חָכָם",
+   "target_he": "הַמִּיתָה שֶׁתַּלְמִידֵי־חֲכָמִים מְמִיתִין אֵיזֶהוּ אָדָם",
+   "proof": "הַיְנוּ הַמִּיתָה שֶׁתַּלְמִידֵי־חֲכָמִים מְמִיתִין אֵיזֶהוּ אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲבַר עַל דִּבְרֵי רַבָּנָן",
+   "target_he": "חוֹלַאַת שֶׁאֵין לוֹ רְפוּאָה",
+   "proof": "כִּי חוֹלַאַת הַבָּאָה לָאָדָם עַל שֶׁעָבַר עַל דִּבְרֵי רַבָּנָן אֵין לוֹ רְפוּאָה, וְהוּא מֵת מִן הַחוֹלַאַת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַכָּה אֲשֶׁר לֹא כְּתוּבָה בַּתּוֹרָה",
+   "target_he": "מִיתָה",
+   "proof": "זֶה הַמִּיתָה בָּאָה עַל־יְדֵי מַכָּה אֲשֶׁר לֹא כְּתוּבָה בַּתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְזַלְזֵל דִּבְרֵיהֶם וְאֵין מַאֲמִין דִּבְרֵיהֶם",
+   "target_he": "מַכָּה שֶׁאֵין לוֹ רְפוּאָה",
+   "proof": "וְעַל יְדֵי זֶה נֶחֱלֶה בְּמַכָּה שֶׁאֵין לוֹ רְפוּאָה, וּמֵת בָּהּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

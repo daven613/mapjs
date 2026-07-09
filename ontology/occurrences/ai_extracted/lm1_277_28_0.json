@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 277,
+ "chunk": "277_28_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יִרְאוֹת הַנְּפוּלוֹת",
+   "target_he": "מֶשֶׁךְ",
+   "proof": "כִּי גַרְתִּי מֶשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ש\"ך דִּינִים",
+   "target_he": "יִרְאוֹת הַנְּפוּלוֹת",
+   "proof": "שֶׁהֵם בָּאִים מִש\"ך דִּינִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תָּמָר",
+   "target_he": "שְׁתֵּי פְּעָמִים ש\"ך",
+   "proof": "תָּמָר הוּא גַּם כֵּן שְׁתֵּי פְּעָמִים ש\"ך",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

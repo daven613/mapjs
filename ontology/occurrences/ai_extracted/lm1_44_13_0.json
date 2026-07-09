@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 44,
+ "chunk": "44_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הידים",
+   "target_he": "יהי אור ויהי אור",
+   "proof": "כִּי הַיָּדַיִם הֵם בְּחִינוֹת: יְהִי אוֹר, וַיְהִי אוֹר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הידים",
+   "target_he": "ימינא ושמאלא",
+   "proof": "יְמִינָא וּשְׂמָאלָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "האור",
+   "target_he": "אהרן",
+   "proof": "וַיַּבְדֵּל בֵּין הָאוֹר – דָּא אַהֲרֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "החושך",
+   "target_he": "קרח",
+   "proof": "וּבֵין הַחֹשֶׁךְ – דָּא קֹרַח",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הידים",
+   "target_he": "הרג ואבדון",
+   "proof": "גַּם נִתְבַּטֵּל הֶרֶג וַאֲבָדוֹן מֵעוֹלָם, כִּי הַיָּדַיִם הֵם בְּחִינוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הידים",
+   "target_he": "ונתתי שלום בארץ וחרב לא תעבור בארצכם",
+   "proof": "וְזֶה בְּחִינוֹת (ויקרא כו): וְנָתַתִּי שָׁלוֹם בָּאָרֶץ, וְחֶרֶב לֹא תַעֲבֹר בְּאַרְצְכֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

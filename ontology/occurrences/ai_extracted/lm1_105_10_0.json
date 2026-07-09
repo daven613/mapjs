@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 105,
+ "chunk": "105_10_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מֹחִין",
+   "target_he": "חָכְמָה",
+   "proof": "נִקְרָא מֹחִין, הַיְנוּ חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לּוֹמֵד בְּאֹפֶן זֶה",
+   "target_he": "תְּשׁוּבָה גְּמוּרָה",
+   "proof": "וּכְשֶׁלּוֹמֵד בְּאֹפֶן זֶה, אָז הִיא תְּשׁוּבָה גְּמוּרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּבָה גְּמוּרָה",
+   "target_he": "קִשּׁוּר הָאוֹתִיּוֹת וְהַצֵּרוּפִים אֶל שָׁרְשָׁן וְאֶל מְקוֹמָן",
+   "proof": "אָז הִיא תְּשׁוּבָה גְּמוּרָה, וּמְקַשֵּׁר הָאוֹתִיּוֹת וְהַצֵּרוּפִים שֶׁבְּחֶלְקוֹ מִכְּלָלוּת הָעוֹלָמוֹת אֶל שָׁרְשָׁן וְאֶל מְקוֹמָן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִשּׁוּר הָאוֹתִיּוֹת וְהַצֵּרוּפִים אֶל שָׁרְשָׁן וְאֶל מְקוֹמָן",
+   "target_he": "בְּרִיָּה חֲדָשָׁה",
+   "proof": "וְנַעֲשֶׂה בְּרִיָּה חֲדָשָׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּרִיָּה חֲדָשָׁה",
+   "target_he": "דַּעַת שָׁלֵם",
+   "proof": "וְאָז הַדַּעַת שָׁלֵם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת שָׁלֵם",
+   "target_he": "רַחֲמָנוּת",
+   "proof": "וּמִתְעוֹרֵר רַחֲמָנוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 36,
+ "chunk": "36_6_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הפסק הנקודה מהדל\"ת של אחד",
+   "target_he": "אחר",
+   "proof": "כְּשֶׁמַּפְסִיק הַנְּקֻדָּה מֵהַדָּלֶ\"ת שֶׁל אֶחָד... אֲזַי נַעֲשֶׂה אַחֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נקודה",
+   "target_he": "אות ברית",
+   "proof": "וְהַנְּקֻדָּה הִיא אוֹת בְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הכנסת בריתו בזונה",
+   "target_he": "אחר",
+   "proof": "הַיְנוּ כְּשֶׁמַּכְנִיס בְּרִיתוֹ בְּזוֹנָה... אֲזַי נַעֲשֶׂה אַחֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זונה",
+   "target_he": "מלכות הרשעה",
+   "proof": "הַנִּקְרֵאת מַלְכוּת הָרְשָׁעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מלכות הרשעה",
+   "target_he": "אל אחר",
+   "proof": "הַנִּקְרָא אֵל אַחֵר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קידוש עצמו מהתאוה",
+   "target_he": "מלכות שמים",
+   "proof": "אֲבָל מִי שֶׁמְּקַדֵּשׁ אֶת עַצְמוֹ מִזֹּאת הַתַּאֲוָה, אֲזַי הוּא נִתְקַשֵּׁר בְּמַלְכוּת שָׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מלכות שמים",
+   "target_he": "אני",
+   "proof": "הַנִּקְרָא אֲנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

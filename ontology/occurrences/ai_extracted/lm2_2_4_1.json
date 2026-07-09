@@ -1,0 +1,118 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_4_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שְׁלֵמוּת הַדִּבּוּר",
+   "target_he": "לְשׁוֹן הַקֹּדֶשׁ",
+   "proof": "שְׁלֵמוּת הַדִּבּוּר שֶׁהוּא בְּחִינַת לְשׁוֹן הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁלֵמוּת הַדִּבּוּר",
+   "target_he": "שִׂמְחָה שֶׁל שַׁבָּת בְּשֵׁשֶׁת יְמֵי הַחֹל",
+   "proof": "עַל־יְדֵי־זֶה מַמְשִׁיכִין הַשִּׂמְחָה שֶׁל שַׁבָּת לְשֵׁשֶׁת יְמֵי הַחֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְמֵי הַחֹל",
+   "target_he": "עַצְבוּת",
+   "proof": "כִּי יְמֵי הַחֹל הֵם בְּחִינַת עַצְבוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמִּצְווֹת שֶׁעוֹשִׂין בִּימֵי הַחֹל",
+   "target_he": "עַצְבוּת",
+   "proof": "וַאֲפִלּוּ הַמִּצְווֹת שֶׁעוֹשִׂין בִּימֵי הַחֹל הֵם בְּחִינַת עַצְבוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְטַ\"ט",
+   "target_he": "עֶבֶד",
+   "proof": "וּמְטַ\"ט הוּא בְּחִינַת עֶבֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְטַ\"ט",
+   "target_he": "עַצְבוּת",
+   "proof": "וּמְטַ\"ט הוּא בְּחִינַת עֶבֶד, בְּחִינַת עַצְבוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׁבָּת",
+   "target_he": "בֵּן",
+   "proof": "אֲבָל שַׁבָּת הוּא בְּחִינַת בֵּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שַׁבָּת",
+   "target_he": "שִׂמְחָה",
+   "proof": "וְאָז נַיְחָא לְעִלָּאִין וְתַתָּאִין, וְנִתְעוֹרֵר שִׂמְחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה",
+   "target_he": "הַמִּצְווֹת שֶׁל שֵׁשֶׁת יְמֵי הַחֹל",
+   "proof": "וַאֲזַי נִתְרוֹמְמִין וְנִתְעַלִּין כָּל הַמִּצְווֹת שֶׁל שֵׁשֶׁת יְמֵי הַחֹל מִן הָעַצְבוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זֶה יְנַחֲמֵנוּ מִמַּעֲשֵׂנוּ וּמֵעִצְּבוֹן יָדֵינוּ",
+   "target_he": "שַׁבָּת",
+   "proof": "הַיְנוּ בְּחִינַת שַׁבָּת שֶׁהִיא בְּחִינַת בֵּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֹחַ",
+   "target_he": "נַיְחָא דְּעִלָּאִין וְתַתָּאִין",
+   "proof": "בְּחִינַת נֹחַ, נַיְחָא דְּעִלָּאִין וְתַתָּאִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נֹחַ",
+   "target_he": "הַכֹּל",
+   "proof": "שֶׁהוּא מְנַחֵם וּמְשַׂמֵּחַ הַכֹּל מִן הָעַצְבוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

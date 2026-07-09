@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_11_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עִוּוּת הַדִּין",
+   "target_he": "טֻמְאָה",
+   "proof": "שֶׁעוֹשִׂין עִוּוּת הַדִּין, עַל־יְדֵי־זֶה בָּא טֻמְאָה הַנַּ\"ל, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עִוּוּת הַמִּשְׁפָּט",
+   "target_he": "בְּחִינַת אֲהָבוֹת (מִן הַמֶּרְכָּבָה)",
+   "proof": "כִּי עַל־יְדֵי עִוּוּת הַמִּשְׁפָּט... נוֹפְלִין בְּחִינַת אֲהָבוֹת מִן הַמֶּרְכָּבָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִשְׁפָּט",
+   "target_he": "כִּסְאוֹת לְמִשְׁפָּט",
+   "proof": "עַל־יְדֵי עִוּוּת הַמִּשְׁפָּט, שֶׁהוּא בְּחִינַת (תהילים קכ״ב:ה׳): כִּסְאוֹת לְמִשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כִּסְאוֹת לְמִשְׁפָּט",
+   "target_he": "הַמֶּרְכָּבָה",
+   "proof": "כִּי כִסְאוֹת לְמִשְׁפָּט, שֶׁהוּא בְּחִינַת הַמֶּרְכָּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמֶּרְכָּבָה",
+   "target_he": "אַהֲבָה קְדוֹשָׁה",
+   "proof": "שָׁם הוּא בְּחִינַת אַהֲבָה קְדוֹשָׁה, בִּבְחִינַת (שיר השירים ג׳:י׳): מֶרְכָּבוֹ אַרְגָּמָן, תּוֹכוֹ רָצוּף אַהֲבָה מִבְּנוֹת יְרוּשָׁלָיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עִוּוּת הַדִּין",
+   "target_he": "הַמֶּרְכָּבָה",
+   "proof": "וּכְשֶׁנִּפְגָּם הַמֶּרְכָּבָה, בְּחִינַת כִּסְאוֹת לְמִשְׁפָּט, עַל־יְדֵי עִוּוּת הַדִּין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמֶּרְכָּבָה",
+   "target_he": "אֲהָבוֹת נְפוּלוֹת",
+   "proof": "וּכְשֶׁנִּפְגָּם הַמֶּרְכָּבָה... אֲזַי נוֹפְלִים מִשָּׁם אֲהָבוֹת נְפוּלוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲהָבוֹת נְפוּלוֹת",
+   "target_he": "הַחִמּוּם וְהַטֻּמְאָה",
+   "proof": "וְעַל־יְדֵי הָאֲהָבוֹת הַנְּפוּלוֹת בָּא, חַס וְשָׁלוֹם, הַחִמּוּם וְהַטֻּמְאָה הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

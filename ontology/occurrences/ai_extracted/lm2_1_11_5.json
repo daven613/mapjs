@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_11_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "סמך גאולה לתפילה",
+   "target_he": "תפילה (גאולתה מן הגלות)",
+   "proof": "כִּי עַל יְדֵי שֶׁסָּמַךְ גְּאֻלָּה לִתְפִלָּה, הַיְנוּ שֶׁגָּאַל אֶת הַתְּפִלָּה מִן הַגָּלוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גאולת התפילה",
+   "target_he": "גניזת ספר הרפואות",
+   "proof": "עַל־יְדֵי־זֶה גָּנַז סֵפֶר הָרְפוּאוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גאולת התפילה",
+   "target_he": "נפילת הרפואות",
+   "proof": "כִּי כְּשֶׁנִּגְאֶלֶת הַתְּפִלָּה, אָז נוֹפְלִים כָּל הָרְפוּאוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דבר ה'",
+   "target_he": "רפואה (ריפוי)",
+   "proof": "כִּי נִתְרַפְּאִין עַל־יְדֵי דְבַר ה'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גאולת התפילה",
+   "target_he": "כח הרפואות",
+   "proof": "כִּי אֲזַי אֵין כֹּחַ לְשׁוּם רְפוּאָה, כִּי כָל הָעֲשָׂבִים חוֹזְרִים כֹּחָם לְתוֹךְ הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילה",
+   "target_he": "דבר ה'",
+   "proof": "שֶׁהוּא בְּחִינַת דְבַר ה', שֶׁהוּא שָׁרְשָׁם הָעֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אדם העומד להתפלל",
+   "target_he": "דבר ה'",
+   "proof": "שֶׁאֲזַי הוּא בִּבְחִינַת דְבַר ה', שֶׁהוּא שָׁרְשָׁם הָעֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עמידת אדם בתפילה",
+   "target_he": "החזרת כח העשבים לתוך התפילה",
+   "proof": "אֲזַי הֵם מַחֲזִירִין כֹּחָם לְתוֹךְ הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה על חולאת",
+   "target_he": "החזרת כח העשבים המרפאים לתוך התפילה",
+   "proof": "אֲזַי אוֹתָן הָעֲשָׂבִים, שֶׁיֵּשׁ לָהֶם כֹּחַ לְרַפְּאוֹת אוֹתוֹ הַחוֹלַאַת, הֵם מְחֻיָּבִים לְהַחֲזִיר כֹּחָם לְתוֹךְ הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

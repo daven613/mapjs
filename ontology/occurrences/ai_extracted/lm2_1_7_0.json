@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "השתוקקות להתמנות",
+   "proof": "כִּי זֶה הַזּוֹכֶה לְיִרְאָה יֵשׁ לוֹ הִשְׁתּוֹקְקוּת לְהִתְמַנּוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאַת שָׁמַיִם",
+   "target_he": "דְּבָרָיו נִשְׁמָעִין",
+   "proof": "כִּי מִי שֶׁיֵּשׁ בּוֹ יִרְאַת שָׁמַיִם דְּבָרָיו נִשְׁמָעִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דְּבָרָיו נִשְׁמָעִין",
+   "target_he": "הִשְׁתּוֹקְקוּת לְהִתְמַנּוּת",
+   "proof": "וּמֵחֲמַת שֶׁדְּבָרָיו נִשְׁמָעִין, הוּא מִשְׁתּוֹקֵק לְהִתְמַנּוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְמַנּוּת",
+   "target_he": "הַשְׁפָּעַת הַנְּבוּאָה",
+   "proof": "כִּי הַהִתְמַנּוּת מַפְסִיד הַשְׁפָּעַת הַנְּבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְׁפָּעַת הַנְּבוּאָה",
+   "target_he": "מַלְאָךְ",
+   "proof": "בְּחִינוֹת הַמַּלְאָךְ הַנַּ\"ל, הַנַּעֲשֶׂה עַל־יְדֵי הַיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאָה",
+   "target_he": "מַלְאָךְ",
+   "proof": "הַנַּעֲשֶׂה עַל־יְדֵי הַיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צָרְכֵי צִבּוּר",
+   "target_he": "הִתְמַנּוּת",
+   "proof": "כִּי צָרְכֵי צִבּוּר, הַיְנוּ הִתְמַנּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צָרְכֵי צִבּוּר",
+   "target_he": "נְּבוּאָה",
+   "proof": "מְכַלֶּה וּמַפְסִיד הַנְּבוּאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַלְאָךְ",
+   "target_he": "כְּלָאֵם",
+   "proof": "כִּי נַּעֲשֶׂה מֵאוֹתִיּוֹת מַלְאָךְ כְּלָאֵם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 75,
+ "chunk": "75_1_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דמים שלא עבד בהם את השם יתברך",
+   "target_he": "נצחון ומחלוקת",
+   "proof": "שֶׁעַל־יְדֵי הַדָּמִים שֶׁלֹּא עָבַד בָּהֶם אֶת הַשֵּׁם יִתְבָּרַךְ, מִזֶּה בָּא נִצָּחוֹן וּמַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נצחון ומחלוקת",
+   "target_he": "ניצוצות הנפולין",
+   "proof": "כִּי עִקַּר הַנִּצָּחוֹן וְהַמַּחֲלֹקֶת, הוּא מִבְּחִינַת הַנִּיצוֹצוֹת הַנְּפוּלִין הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ניצוצות הנפולין קודם שמחברם ומתקנם",
+   "target_he": "מחלוקת",
+   "proof": "שֶׁאָז הֵם בִּבְחִינַת מַחֲלוֹקֶת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ניצוצות הנפולין קודם שמחברם ומתקנם",
+   "target_he": "דמים",
+   "proof": "וַאֲזַי הֵם בְּחִינַת דָּמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נפש",
+   "target_he": "דמים",
+   "proof": "כִּי הַדִּבּוּר הוּא מֵהַנֶּפֶשׁ, שֶׁהוּא בְּחִינַת דָּמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עבודת השם יתברך בכל טפי הדם",
+   "target_he": "דיבור הרבה בתורה ותפלה",
+   "proof": "וְעַל כֵּן צָרִיךְ לַעֲבֹד אֶת הַשֵּׁם יִתְבָּרַךְ בְּכָל הַטִּפֵּי דָּם שֶׁנִּמְצָאִים בּוֹ, דְּהַיְנוּ שֶׁיְּדַבֵּר הַרְבֵּה בְּתוֹרָה וּתְפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דיבור בתורה ותפלה",
+   "target_he": "נצחון ומחלוקת",
+   "proof": "וַאֲזַי מְבַטֵּל כָּל הַנִּצָּחוֹן וְהַמַּחֲלֹקֶת הַנִּמְשָׁךְ מֵהַנִּיצוֹצוֹת הַנְּפוּלִין הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

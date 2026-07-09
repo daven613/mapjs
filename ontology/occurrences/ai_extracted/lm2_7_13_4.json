@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_13_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "נִנְעַר רַבִּי אֱלִיעֶזֶר",
+   "target_he": "כְּלָלִיּוּת בֵּן בְּתַלְמִיד",
+   "proof": "נִנְעַר רַבִּי אֱלִיעֶזֶר – זֶה בְּחִינַת כְּלָלִיּוּת בֵּן בְּתַלְמִיד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּלָלִיּוּת בֵּן בְּתַלְמִיד",
+   "target_he": "יִרְאָה",
+   "proof": "לְהַרְאוֹת לִבְחִינַת בֵּן בְּחִינַת הַהַשָּׂגָה שֶׁל הַתַּלְמִיד, כְּדֵי שֶׁיִּהְיֶה לוֹ יִרְאָה כַּנַּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רַבִּי אֱלִיעֶזֶר",
+   "target_he": "בֵּן",
+   "proof": "שֶׁרַבִּי אֱלִיעֶזֶר שֶׁהוּא בְּחִינַת בֵּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רַבִּי אֱלִיעֶזֶר",
+   "target_he": "שֵׁנָה",
+   "proof": "שֶׁהוּא בְּחִינַת בֵּן, בְּחִינַת שֵׁנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשָּׂגָתוֹ שֶׁל הַתַּלְמִיד",
+   "target_he": "נֵעוֹר",
+   "proof": "נִכְלָל בִּבְחִינַת תַּלְמִיד, שֶׁהַשָּׂגָתוֹ בְּחִינַת נֵעוֹר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָה",
+   "target_he": "הַשָּׂגָה שֶׁל בְּחִינַת בֵּן",
+   "proof": "זֶה בְּחִינַת הַשָּׂגָה שֶׁל בְּחִינַת בֵּן, שֶׁהוּא בְּחִינַת מָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בֵּן",
+   "target_he": "מָה",
+   "proof": "נִכְלָל בִּבְחִינַת בֵּן, שֶׁהוּא בְּחִינַת מָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַה זֶּה, יְהוֹשֻׁעַ",
+   "target_he": "כְּלָלִיּוּת תַּלְמִיד בְּבֵן",
+   "proof": "זֶה בְּחִינַת כְּלָלִיּוּת תַּלְמִיד בְּבֵן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּלָלִיּוּת תַּלְמִיד בְּבֵן (בְּחִינַת מָה)",
+   "target_he": "יִרְאָה",
+   "proof": "כִּי הַתַּלְמִיד צָרִיךְ שֶׁיִּהְיֶה נִכְלָל בִּבְחִינַת בֵּן, שֶׁהוּא בְּחִינַת מָה, כְּדֵי שֶׁיִּהְיֶה לוֹ יִרְאָה כַּנַּ\"ל. וְזֶה (דברים י׳:י״ב): מָה ה' אֱלֹקֶיךָ שׁוֹאֵל מֵעִמָּךְ כִּי אִם לְיִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַה זֶּה, יְהוֹשֻׁעַ",
+   "target_he": "בְּחִינַת הַשָּׂגָה שֶׁל מָה",
+   "proof": "הַיְנוּ שֶׁרַבִּי אֱלִיעֶזֶר הֵבִיא אֶת רַבִּי יְהוֹשֻׁעַ לִבְחִינַת הַשָּׂגָה שֶׁל מָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 10,
+ "chunk": "10_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יִשּׁוּב־הַדַּעַת",
+   "target_he": "הִתְקָרְבוּת אֶל הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "מַה שֶּׁהָעוֹלָם רְחוֹקִים מֵהַשֵּׁם יִתְבָּרַךְ וְאֵינָם מִתְקָרְבִים אֵלָיו יִתְבָּרַךְ, הוּא רַק מֵחֲמַת שֶׁאֵין לָהֶם יִשּׁוּב־הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מָרָה־שְׁחוֹרָה",
+   "target_he": "יִשּׁוּב הַדַּעַת",
+   "proof": "שֶׁעַל־יְדֵי מָרָה־שְׁחוֹרָה אִי אֶפְשָׁר לְהַנְהִיג אֶת הַמֹּחַ כִּרְצוֹנוֹ, וְעַל־כֵּן קָשֶׁה לוֹ לְיַשֵּׁב דַּעְתּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה",
+   "target_he": "יִשּׁוּב הַדַּעַת",
+   "proof": "רַק עַל־יְדֵי הַשִּׂמְחָה יוּכַל לְהַנְהִיג הַמֹּחַ כִּרְצוֹנוֹ, וְיוּכַל לְיַשֵּׁב דַּעְתּוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שִׂמְחָה",
+   "target_he": "עוֹלָם הַחֵרוּת",
+   "proof": "כִּי שִׂמְחָה הוּא עוֹלָם הַחֵרוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׂמְחָה",
+   "target_he": "כִּי בְשִׂמְחָה תֵצֵאוּ",
+   "proof": "בִּבְחִינַת (ישעיהו נ״ה:י״ב): כִּי בְשִׂמְחָה תֵצֵאוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה",
+   "target_he": "מֹחוֹ וְדַעְתּוֹ בֶּן־חוֹרִין",
+   "proof": "וְעַל־כֵּן כְּשֶׁמְּקַשֵּׁר שִׂמְחָה אֶל הַמֹּחַ, אֲזַי מֹחוֹ וְדַעְתּוֹ בֶּן־חוֹרִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֹחוֹ בְּחֵרוּת",
+   "target_he": "יִשּׁוּב הַדַּעַת",
+   "proof": "מֵאַחַר שֶׁמֹּחוֹ בְּחֵרוּת וְאֵינוֹ בְּגָלוּת... וַאֲזַי יוּכַל לְהַנְהִיג אֶת מֹחוֹ כִּרְצוֹנוֹ וּלְיַשֵּׁב דַּעְתּוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גָּלוּת",
+   "target_he": "יִשּׁוּב הַדַּעַת",
+   "proof": "כִּי עַל־יְדֵי גָּלוּת אֵין הַדַּעַת מְיֻשָּׁב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

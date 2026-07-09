@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_21",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מַרְגָּלִיתָא טָבָא",
+   "target_he": "עֲשִׁירוּת וּמָמוֹן",
+   "proof": "הַיְנוּ עֲשִׁירוּת וּמָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְזוּזָה",
+   "target_he": "חֶמְדַּת הַמָּמוֹן",
+   "proof": "כִּי מְזוּזָה דַּיְקָא מְבַטֵּל חֶמְדַּת הַמָּמוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְזוּזָה",
+   "target_he": "חֶמְדַּת הָעֲשִׁירוּת",
+   "proof": "כִּי מְזוּזָה מְבַטֵּל חֶמְדַּת הָעֲשִׁירוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

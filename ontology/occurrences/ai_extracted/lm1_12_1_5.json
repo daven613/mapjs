@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_1_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תַּלְמִיד־חָכָם שֵׁד יְהוּדִי",
+   "target_he": "נֶעְתָּרוֹת נְשִׁיקוֹת שׂוֹנֵא",
+   "proof": "עָלָיו כָּתוּב (משלי כ״ז:ו׳): נֶעְתָּרוֹת נְשִׁיקוֹת שׂוֹנֵא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּלְמִיד־חָכָם שֵׁד יְהוּדָאִין",
+   "target_he": "הַתַּנָּא",
+   "proof": "כִּי הַתַּנָּא אֵינוֹ יָכוֹל לִסְבֹּל רוּחוֹ שֶׁל תַּלְמִיד־חָכָם שֵׁד יְהוּדָאִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לוֹמְדִין תּוֹרוֹתֵיהֶן שֶׁל צַדִּיקִים",
+   "target_he": "נִתְדַּבֵּק רוּחָם בְּרוּחֵנוּ",
+   "proof": "וּכְשֶׁאָנוּ לוֹמְדִין תּוֹרוֹתֵיהֶן, עַל־יְדֵי־זֶה נִתְדַּבֵּק רוּחָם בְּרוּחֵנוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִתְדַּבֵּק רוּחָם בְּרוּחֵנוּ",
+   "target_he": "נְשִׁיקָה",
+   "proof": "וְזֶה עַל־יְדֵי בְּחִינַת נְשִׁיקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

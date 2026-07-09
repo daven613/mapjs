@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 44,
+ "chunk": "44_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מחיאת כף אל כף",
+   "target_he": "כ\"ח אתוון דבראשית",
+   "proof": "וּכְשֶׁאָנוּ מָחְאָן כַּף אֶל כַּף, בָּזֶה נִתְעוֹרֵר כ\"ח אַתְוָן דִּבְרֵאשִׁית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כ\"ח אתוון דבראשית",
+   "target_he": "כח מעשיו",
+   "proof": "כֹּחַ מַעֲשָׂיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כ\"ח אתוון דבראשית",
+   "target_he": "נחלת גויים",
+   "proof": "וְנִמְצָא שֶׁבְּיָדוֹ לָתֵת לָנוּ נַחֲלַת גּוֹיִם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מחיאת כף אל כף",
+   "target_he": "טיהור אויר ארץ העמים",
+   "proof": "וּבָזֶה יֵשׁ כֹּחַ בְּיָדֵינוּ לְטַהֵר אֲוִיר אֶרֶץ הָעַמִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טיהור אויר ארץ העמים",
+   "target_he": "טיהור אויר המקום שאיש הישראלי מתפלל",
+   "proof": "וְאָז נִטְהָר אֲוִיר הַמָּקוֹם שֶׁאִישׁ הַיִּשְׂרְאֵלִי מִתְפַּלֵּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

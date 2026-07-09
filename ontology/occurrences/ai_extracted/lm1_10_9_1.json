@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_9_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מִינוּת",
+   "target_he": "עֲבוֹדַת אֱלִילִים",
+   "proof": "קֹרַח מִין הָיָה, הַיְנוּ בְּחִינַת הָעֲבוֹדַת אֱלִילִים, מִינוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּרֵי בִּזְעֵי דְּהַוֵי נָפִיק מִנַּיְהוּ קִטְרָא",
+   "target_he": "חֲרוֹן־אַף",
+   "proof": "וְחַזָאִי תְּרֵי בִּזְעֵי דְּהַוֵי נָפִיק מִנַּיְהוּ קִטְרָא – הַיְנוּ בְּחִינַת הַחֲרוֹן־אַף שֶׁגּוֹרְמִים בְּמִינוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִינוּת",
+   "target_he": "חֲרוֹן־אַף",
+   "proof": "הַיְנוּ בְּחִינַת הַחֲרוֹן־אַף שֶׁגּוֹרְמִים בְּמִינוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲבוֹדַת אֱלִילִים",
+   "target_he": "חֲרוֹן־אַף",
+   "proof": "כָּל זְמַן שֶׁעֲבוֹדַת אֱלִילִים בָּעוֹלָם, חֲרוֹן־אַף בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּרֵי בִּזְעֵי",
+   "target_he": "תְּרֵי נִקְבֵי הָאַף",
+   "proof": "וּתְרֵי בִּזְעֵי, זֶה בְּחִינוֹת תְּרֵי נִקְבֵי הָאַף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

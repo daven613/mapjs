@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 101,
+ "chunk": "101_16_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בקרוב עלי מרעים",
+   "target_he": "תרין רעין דלא מתפרשין",
+   "proof": "בִּקְרֹב עָלַי מְרֵעִים – זֶה בְּחִינַת תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תרין רעין דלא מתפרשין",
+   "target_he": "י\"ק",
+   "proof": "שֶׁהֵם בְּחִינַת י\"ק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "י\"ק",
+   "target_he": "חכמת התורה",
+   "proof": "שֶׁהוּא חָכְמַת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חכמת התורה",
+   "target_he": "אדם",
+   "proof": "בְּחִינַת אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לאכול את בשרי",
+   "target_he": "להמית העצמיות שלי",
+   "proof": "צָרִיךְ לֶאֱכֹל אֶת בְּשָׂרִי – הַיְנוּ לֶאֱכֹל וּלְהָמִית הָעַצְמִיּוּת שֶׁלִּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ממית עצמו על התורה",
+   "target_he": "קיום התורה",
+   "proof": "כִּי אֵין הַתּוֹרָה מִתְקַיֶּמֶת אֶלָּא בְּמִי שֶׁמֵּמִית עַצְמוֹ עָלֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

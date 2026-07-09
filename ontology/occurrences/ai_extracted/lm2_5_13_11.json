@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_13_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וְסָלֵק עֲנָנִי",
+   "target_he": "תִּקּוּן הַבְּרִית",
+   "proof": "וְסָלֵק עֲנָנִי, זֶהוּ בְּחִינַת תִּקּוּן הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְהָיְתָה הַקֶּשֶׁת בְּעָנָן",
+   "target_he": "תִּקּוּן הַבְּרִית",
+   "proof": "וְסָלֵק עֲנָנִי, בְּחִינַת וְהָיְתָה הַקֶּשֶׁת בְּעָנָן, בְּחִינַת תִּקּוּן הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָנָן",
+   "target_he": "גֵּרִים",
+   "proof": "עָנָן – רָאשֵׁי תֵבוֹת: נְדִיבֵי עַמִּים נֶאֱסָפוּ, בְּחִינַת גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַגֵּרִים",
+   "target_he": "תִּקּוּן הַבְּרִית",
+   "proof": "כִּי עַל־יְדֵי תִּקּוּן הַגֵּרִים נַעֲשֶׂה תִּקּוּן הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

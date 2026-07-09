@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 60,
+ "chunk": "60_0_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַּלְכוּת",
+   "target_he": "גַּדְלוּת",
+   "proof": "וּמוֹסֶרְךָ לַמַּלְכוּת... לִבְחִינַת גַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גִּלּוּי תּוֹרָה",
+   "target_he": "הִתְגַּלּוּת הַחֲסָדִים",
+   "proof": "וְתִהְיֶה מֻכְרָח בְּעַל־כָּרְחָךָ לְגַלּוֹת תּוֹרָה, שֶׁהִיא הִתְגַּלּוּת הַחֲסָדִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רַבִּי שִׁמְעוֹן בֶּן יוֹחַאי אוֹמֵר תּוֹרָה",
+   "target_he": "רַבִּי עֲקִיבָא בָּא לִבְחִינַת גַּדְלוּת",
+   "proof": "כִּי עַל־יְדֵי שֶׁרַבִּי שִׁמְעוֹן בֶּן יוֹחַאי תַּלְמִידוֹ יֹאמַר תּוֹרָה, עַל־יְדֵי־זֶה יָבִיא אֶת רַבִּי עֲקִיבָא לִבְחִינַת גַּדְלוּת בְּעַל־כָּרְחוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גַּדְלוּת",
+   "target_he": "אֲמִירַת תּוֹרָה",
+   "proof": "וְיֻכְרַח לוֹמַר תּוֹרָה, שֶׁהוּא הִתְגַּלּוּת הַחֲסָדִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֲמִירַת תּוֹרָה",
+   "target_he": "הִתְגַּלּוּת הַחֲסָדִים",
+   "proof": "וְיֻכְרַח לוֹמַר תּוֹרָה, שֶׁהוּא הִתְגַּלּוּת הַחֲסָדִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הִתְגַּלּוּת הַחֲסָדִים",
+   "target_he": "תִּקּוּן פְּגָם הַנַּ\"ל",
+   "proof": "שֶׁהוּא הִתְגַּלּוּת הַחֲסָדִים, שֶׁהוּא תִּקּוּן פְּגָם הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת הַחֲסָדִים",
+   "target_he": "פְּגָם הַנַּ\"ל",
+   "proof": "עַל־יְדֵי הִתְגַּלּוּת הַתּוֹרָה שֶׁמְּגַלֶּה חֲסָדִים, עַל־יְדֵי־זֶה יִתְתַּקֵּן פְּגָם הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

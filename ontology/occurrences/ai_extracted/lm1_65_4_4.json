@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 65,
+ "chunk": "65_4_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "התחדשות התורה",
+   "target_he": "יסורין",
+   "proof": "וְעַל יְדֵי הִתְחַדְּשׁוּת הַתּוֹרָה... עַל יְדֵי זֶה מְקָרְרִין הַיִּסּוּרִין אַחַר כָּךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התחדשות התורה",
+   "target_he": "צמאון הנפש",
+   "proof": "כִּי עַל יְדֵי זֶה מְכַבִּין צִמְאוֹן הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הרגשת היסורין",
+   "target_he": "צמאון הנפש",
+   "proof": "כִּי הַרְגָּשַׁת הַיִּסּוּרִין הוּא בְּחִינַת צִמְאוֹן הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מליחות",
+   "target_he": "צמאון",
+   "proof": "כִּי צִמָּאוֹן הוּא עַל יְדֵי מְלִיחוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מליחות",
+   "target_he": "יסורין",
+   "proof": "וּמְלִיחוּת הוּא בְּחִינַת יִסּוּרִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שכל",
+   "target_he": "גידול הנפש",
+   "proof": "כִּי עִקַּר גִּדּוּל הַנֶּפֶשׁ הוּא עַל־יְדֵי הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שכל בשלמות",
+   "target_he": "פירות",
+   "proof": "וּכְשֶׁהַשֵּׂכֶל בִּשְׁלֵמוּת, אֲזַי הוּא עוֹשֶׂה פֵּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שכל שנפגם",
+   "target_he": "ארץ פרי למלחה",
+   "proof": "אֲבָל כְּשֶׁנִּפְגָּם הַשֵּׂכֶל, אֲזַי הוּא בְּחִינַת אֶרֶץ פְּרִי לִמְלֵחָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שכל בשלמות",
+   "target_he": "יסורין",
+   "proof": "וְהַמְלִיחוּת הוּא בְּחִינַת הַיִּסּוּרִין שֶׁמַּרְגִּישִׁין עַל־יְדֵי שֶׁאֵין הַשֵּׂכֶל בִּשְׁלֵמוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מליחות",
+   "target_he": "צמאון הנפש",
+   "proof": "וְהוּא בְּחִינַת צִמְאוֹן הַנֶּפֶשׁ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עֵצָה",
+   "target_he": "מַיִם עֲמֻקִּים",
+   "proof": "מַיִם עֲמֻקִּים עֵצָה בְּלֵב אִישׁ, וְאִישׁ תְּבוּנוֹת יִדְלֶנָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אִישׁ תְּבוּנוֹת",
+   "target_he": "גִּלּוּי הָעֵצוֹת",
+   "proof": "וְלִדְלוֹת וּלְגַלּוֹת הַמַּיִם הַנַּ\"ל, דְּהַיְנוּ הָעֵצוֹת, לָזֶה צְרִיכִין אִישׁ תְּבוּנוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּבוּנָה",
+   "target_he": "עֵצָה",
+   "proof": "כִּי כְּשֶׁאֵין תְּבוּנָה, עֲצָתוֹ אֲבוּדָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אִישׁ תְּבוּנָה",
+   "target_he": "הִתְגַּלּוּת הָעֵצָה",
+   "proof": "כִּי הִתְגַּלּוּת הָעֵצָה – עַל־יְדֵי אִישׁ תְּבוּנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

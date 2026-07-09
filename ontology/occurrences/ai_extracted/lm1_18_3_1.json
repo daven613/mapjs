@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 18,
+ "chunk": "18_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מִי שֶׁאֵין לוֹ אֱמוּנָה בִּשְׁלֵמוּת וְנִדְמֶה שֶׁיֵּשׁ לוֹ רַחֲמָנוּת עַל הָעוֹלָם וְרוֹצֶה לְהַנְהִיג אֶת הָעוֹלָם",
+   "target_he": "וְהַמַּלְכוּת תֵּהָפֵךְ לְמִינוּת",
+   "proof": "זֶה בְּחִינַת (סוטה מט:): וְהַמַּלְכוּת תֵּהָפֵךְ לְמִינוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִינוּת",
+   "target_he": "מַלְכוּת",
+   "proof": "כִּי מְעַט הַמִּינוּת פּוֹגֵם בַּמַּלְכוּת, בִּבְחִינַת הַהַנְהָגָה, וּמְהַפְּכָהּ לְמִינוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

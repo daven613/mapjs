@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 13,
+ "chunk": "13_4_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַחַיּוֹת",
+   "target_he": "הַתּוֹרָה",
+   "proof": "וְהַחַיּוֹת – הַיְנוּ הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַתּוֹרָה",
+   "target_he": "הַחַיִּים",
+   "proof": "שֶׁהִיא הַחַיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רָצוֹא",
+   "target_he": "הַבָּטָה מֵעֵלָּא לְתַתָּא",
+   "proof": "רָצוֹא – בִּבְחִינַת הַבָּטָה מֵעֵלָּא לְתַתָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וָשׁוֹב",
+   "target_he": "הַכָּאַת הָרְאוּת בַּדָּבָר הַנִּרְאֶה",
+   "proof": "וָשׁוֹב – בִּבְחִינַת הַכָּאַת הָרְאוּת בַּדָּבָר הַנִּרְאֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֲשָׁבַת הַהַבָּטָה",
+   "target_he": "וְהַחַיּוֹת רָצוֹא וָשׁוֹב",
+   "proof": "וְזֶה בְּחִינַת: וְהַחַיּוֹת רָצוֹא וָשׁוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִרְבַת הַתּוֹרָה",
+   "target_he": "קִרְבַת הָרְאוּת",
+   "proof": "וְעַל־יְדֵי שֶׁאֲנַחְנוּ קְרוֹבִים אֶל הַתּוֹרָה, נִמְצָא שֶׁאֲנַחְנוּ קְרוֹבִים אֶל הָרְאוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִרְבַת הָרְאוּת",
+   "target_he": "חֲזָרַת כֹּחַ הָרְאוּת לְעֵינָיו",
+   "proof": "וְעַל־יְדֵי זֶה כֹּחַ הָרְאוּת נֶחֱזָר לְעֵינָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַתּוֹרָה",
+   "target_he": "הַשְׁגָּחָה",
+   "proof": "מֵחֲמַת שֶׁהֵם רְחוֹקִים מֵהַתּוֹרָה, הֵם רְחוֹקִים מֵהַשְׁגָּחָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְׁגָּחָתוֹ עַל הָעַכּוּ\"ם",
+   "target_he": "רָצוֹא",
+   "proof": "נִמְצָא הַשְׁגָּחָתוֹ עַל הָעַכּוּ\"ם בַּחֲצִי הָרְאוּת, בִּבְחִינַת רָצוֹא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

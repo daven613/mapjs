@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_3_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "פַּרְנָסָה",
+   "target_he": "אִשָּׁה",
+   "proof": "כִּי הַפַּרְנָסָה הוּא בְּחִינַת אִשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פַּרְנָסָה שֶׁהוּא בְּעִצָּבוֹן",
+   "target_he": "מוֹצֵא אֲנִי מַר מִמָּוֶת אֶת הָאִשָּׁה",
+   "proof": "וּפַרְנָסָה שֶׁהוּא בְּעִצָּבוֹן, הִיא בְּחִינַת: מוֹצֵא אֲנִי מַר מִמָּוֶת אֶת הָאִשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֶלַח",
+   "target_he": "מְרִירוּתָא דְּעָלְמָא",
+   "proof": "מְרִירוּתָא דְּעָלְמָא שֶׁצָּרִיךְ לְהַמְתִּיקָהּ עַל־יְדֵי מֶלַח, כַּנִּזְכַּר לְעֵיל: אִלְמָלֵא מִלְחָא לָא הֲוֵי יָכִיל עָלְמָא לְמִסְבַּל מְרִירוּתָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טוֹב",
+   "target_he": "צַדִּיק",
+   "proof": "טוֹב – בְּחִינַת צַדִּיק, בְּחִינַת בְּרִית מֶלַח",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טוֹב",
+   "target_he": "בְּרִית מֶלַח",
+   "proof": "טוֹב – בְּחִינַת צַדִּיק, בְּחִינַת בְּרִית מֶלַח",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּרִית מֶלַח",
+   "target_he": "מְרִירוּתָא",
+   "proof": "שֶׁהוּא מַמְתִּיק מְרִירוּתָא, הַיְנוּ תַּאֲוַת וְעִצְּבוֹן הַפַּרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מְרִירוּתָא",
+   "target_he": "תַּאֲוַת וְעִצְּבוֹן הַפַּרְנָסָה",
+   "proof": "הַיְנוּ תַּאֲוַת וְעִצְּבוֹן הַפַּרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פַּרְנָסָה",
+   "target_he": "שְׂמַח זְבוּלוּן בְּצֵאתֶךָ",
+   "proof": "וּפַרְנָסָה שֶׁהוּא בְּחִינַת: שְׂמַח זְבוּלוּן בְּצֵאתֶךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פַּרְנָסָה",
+   "target_he": "מָצָא אִשָּׁה מָצָא טוֹב",
+   "proof": "הוּא בְּחִינַת: מָצָא אִשָּׁה מָצָא טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "טוֹב",
+   "target_he": "צַדִּיק",
+   "proof": "וְאֵין טוֹב אֶלָּא צַדִּיק (יומא לח:)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צַדִּיק",
+   "target_he": "בְּרִית",
+   "proof": "הַיְנוּ בְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כִּי טוֹב הוּא",
+   "target_he": "נוֹלַד מָהוּל",
+   "proof": "וַתֵּרֶא אוֹתוֹ כִּי טוֹב הוּא – שֶׁנּוֹלַד מָהוּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "טוֹב",
+   "target_he": "אוֹר",
+   "proof": "וְאֵין טוֹב אֶלָּא אוֹר (שם)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

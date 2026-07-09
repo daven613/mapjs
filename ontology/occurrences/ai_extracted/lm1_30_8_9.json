@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_8_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קולו של דוד",
+   "target_he": "מלכות",
+   "proof": "שֶׁהֵבִין שָׁאוּל בְּהַקּוֹל, שֶׁהוּא חָזָק בִּבְחִינוֹת הַמַּלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וַיֵּבְךְּ",
+   "target_he": "קוֹל נָמוּךְ שֶׁל בְּכִיָּה",
+   "proof": "וְזֶה בְּחִינוֹת: וַיֵּבְךְּ, שֶׁהָיָה הַקּוֹל נִבְכֶּה, קוֹל נָמוּךְ שֶׁל בְּכִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קול",
+   "target_he": "יְדִיעָה כִּי מָלֹךְ תִּמְלֹךְ",
+   "proof": "כִּי יָדַע זֶה עַל יְדֵי הַקּוֹל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_5_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יראה שלא יוציאו בלעו מפיו",
+   "target_he": "אסיפת ממון",
+   "proof": "כִּי מֵחֲמַת שֶׁהוּא יָרֵא שֶׁלֹּא יוֹצִיאוּ בִּלְעוֹ מִפִּיו... עַל כֵּן הוּא מִתְגַּבֵּר וּמְאַסֵּף מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ניצוצי הקדושה",
+   "target_he": "גוונין עילאין",
+   "proof": "כִּי הֵם בְּחִינַת הַגְּוָנִין עִלָּאִין שֶׁיֵּשׁ בְּזָהָב וָכֶסֶף וּנְחֹשֶׁת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מלכות דסטרא אחרא (אסיפת ממון)",
+   "target_he": "תאות עשירות",
+   "proof": "וְזֶה בְּחִינַת תַּאֲוַת עֲשִׁירוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תאות עשירות",
+   "target_he": "מלכות",
+   "proof": "שֶׁהִיא בְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עמלק",
+   "target_he": "מלכות הרשעה",
+   "proof": "עֲמָלֵק, שֶׁהוּא מַלְכוּת הָרְשָׁעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מחנה דן",
+   "target_he": "מלכות דקדושה",
+   "proof": "רוֹדֵף אֶת מַחֲנֵה דָּן, שֶׁהוּא בְּחִינַת מַלְכוּת דִּקְדֻשָּׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מלכות דקדושה",
+   "target_he": "רדיפת עמלק",
+   "proof": "דְּהַיְנוּ בְּעֵת שֶׁאֵין לָהֶם כֹּחַ מַלְכוּת דִּקְדֻשָּׁה, ... וַיְזַנֵּב בְּךָ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מלכות דקדושה",
+   "target_he": "ירא אלקים",
+   "proof": "שֶׁהִיא בְּחִינַת יְרֵא אֱלֹקִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מלכות דקדושה",
+   "target_he": "מאסף לכל המחנות דקדושה",
+   "proof": "כִּי מַלְכוּת דִּקְדֻשָּׁה, הוּא בְּחִינַת מְאַסֵּף לְכָל הַמַּחֲנוֹת דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מלכות המן עמלק",
+   "target_he": "מאסף ממון",
+   "proof": "וּמַלְכוּת הָמָן עֲמָלֵק, שֶׁהוּא מַלְכוּת הָרְשָׁעָה, הוּא בְּחִינַת מְאַסֵּף מָמוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תאות ממון",
+   "target_he": "תפיסת הניצוצות הקדושה",
+   "proof": "כִּי מִתְגַּבֵּר בְּתַאֲוַת מָמוֹן, כְּדֵי לִתְפֹּס כָּל הַנִּיצוֹצוֹת הַקְּדֻשָּׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

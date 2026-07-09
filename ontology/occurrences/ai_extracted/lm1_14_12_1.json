@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_12_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הדלקת נר חנוכה",
+   "target_he": "הארת הכבוד",
+   "proof": "שֶׁזְּמַן הַדְלָקַת נֵר־חֲנֻכָּה, שֶׁהוּא הֶאָרַת הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יציאת הכוכבים",
+   "target_he": "מצדיקי הרבים ככוכבים",
+   "proof": "יְצִיאַת הַכּוֹכָבִים זֶה בְּחִינַת מַצְדִּיקֵי הָרַבִּים כַּכּוֹכָבִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מצדיקי הרבים ועושין בעלי תשובה וגרים",
+   "target_he": "הכבוד מאיר וחוזר לשרשו",
+   "proof": "שֶׁעַל־יְדֵי־זֶה מֵאִיר הַכָּבוֹד וְחוֹזֵר לְשָׁרְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שרשו של הכבוד",
+   "target_he": "היראה",
+   "proof": "שֶׁהוּא הַיִּרְאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חזרת הכבוד לשרשו",
+   "target_he": "שלום",
+   "proof": "וְעַל־יְדֵי־זֶה זוֹכִין לְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חזרת הכבוד לשרשו",
+   "target_he": "ביטול המחלוקת",
+   "proof": "וְנִתְבַּטֵּל הַמַּחֲלֹקֶת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 21,
+ "chunk": "21_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "סֻכָּה",
+   "target_he": "רוּחַ הַקֹּדֶשׁ",
+   "proof": "וְסֻכָּה הַנַּ\"ל, הַיְנוּ רוּחַ־הַקֹּדֶשׁ הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוּחַ הַקֹּדֶשׁ",
+   "target_he": "שֶׁפַע אֱלֹקִי",
+   "proof": "רוּחַ־הַקֹּדֶשׁ הַנַּ\"ל, שֶׁפַע אֱלֹקִי הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֶׁפַע אֱלֹקִי",
+   "target_he": "מַקִּיפִין",
+   "proof": "הוּא בְּחִינַת מַקִּיפִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֵׂכֶל",
+   "target_he": "מַקִּיף",
+   "proof": "וְהַשֵּׂכֶל הַזֶּה הוּא בְּחִינַת מַקִּיף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַקִּיף",
+   "target_he": "שֵׂכֶל הַפְּנִימִי",
+   "proof": "וְהַשֵּׂכֶל הַפְּנִימִי מְקַבֵּל חִיּוּתוֹ מֵהַמַּקִּיף הַזֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

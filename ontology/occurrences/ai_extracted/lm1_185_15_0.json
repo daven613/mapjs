@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 185,
+ "chunk": "185_15_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַהִשְׁתּוֹקְקוּת לִנְסֹעַ לְהַצַּדִּיק",
+   "target_he": "צִיּוּר וְרֹשֶׁם הַכְּלִי",
+   "proof": "שֶׁעַל יְדֵי הַהִשְׁתּוֹקְקוּת לִנְסֹעַ לְהַצַּדִּיק נַעֲשֶׂה צִיּוּר וְרֹשֶׁם הַכְּלִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צִיּוּר וְרֹשֶׁם הַכְּלִי",
+   "target_he": "יֵרָאֶה אֶל אֱלֹקִים בְּצִיּוֹן",
+   "proof": "וְזֶהוּ בְּחִינַת: יֵרָאֶה אֶל אֱלֹקִים בְּצִיּוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צִיּוֹן",
+   "target_he": "צִיּוּן וְרֹשֶׁם הַכְּלִי",
+   "proof": "צִיּוֹן זֶה בְּחִינַת צִיּוּן וְרֹשֶׁם הַכְּלִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צִיּוּן וְרֹשֶׁם הַכְּלִי",
+   "target_he": "לְהִתְקָרֵב לְהַשֵּׁם יִתְבָּרַךְ",
+   "proof": "שֶׁעַל־יְדֵי־זֶה זוֹכִין אַחַר־כָּךְ לְהִתְקָרֵב לְהַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְהִתְקָרֵב לְהַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "יֵרָאֶה אֶל אֱלֹקִים בְּצִיּוֹן",
+   "proof": "בְּחִינַת: יֵרָאֶה אֶל אֱלֹקִים בְּצִיּוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יֵרָאֶה אֶל אֱלֹקִים בְּצִיּוֹן",
+   "target_he": "צִיּוּן וְרֹשֶׁם הַכְּלִי",
+   "proof": "הַיְנוּ עַל־יְדֵי צִיּוּן וְרֹשֶׁם הַכְּלִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 106,
+ "chunk": "106_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "עניות",
+   "proof": "אֵין עֲנִיּוּת אֶלָּא מִן הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֵין לוֹ שֵׂכֶל",
+   "target_he": "קַטְנוּת הַמֹּחִין",
+   "proof": "וְהוּא נִקְרָא קַטְנוּת הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גַּדְלוּת הַמֹּחִין",
+   "target_he": "הַדִּינִין",
+   "proof": "וּכְשֶׁבָּא לְגַדְלוּת הַמֹּחִין, נִמְתָּקִין כָּל הַדִּינִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גַּדְלוּת הַמֹּחִין",
+   "target_he": "חֲסָדִים וְרַחֲמִים",
+   "proof": "וּמַמְשִׁיךְ עָלָיו חֲסָדִים וְרַחֲמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

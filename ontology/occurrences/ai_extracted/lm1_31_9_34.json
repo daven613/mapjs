@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_9_34",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שֶׁמֶשׁ",
+   "target_he": "בְּרִית",
+   "proof": "שֶׁמֶשׁ הוּא בְּחִינוֹת בְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּרִית",
+   "target_he": "מְאוֹר הַשֶּׁמֶשׁ",
+   "proof": "וְעַל יְדֵי פְּגַם הַבְּרִית אֵין לָנוּ מְאוֹר הַשֶּׁמֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עַכּוּ\"ם",
+   "target_he": "צֵל",
+   "proof": "וְעַכּוּ\"ם נִקְרָאִים צֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צִלְצַל כְּנָפַיִם",
+   "target_he": "וְלֹא יִכָּנֵף עוֹד מוֹרֶיךָ",
+   "proof": "וְזֶהוּ בְּחִינוֹת צִלְצַל כְּנָפָיִם, מִלְּשׁוֹן: וְלֹא יִכָּנֵף עוֹד מוֹרֶיךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וּמַרְפֵּא בִּכְנָפֶיהָ",
+   "target_he": "וְלֹא יִכָּנֵף עוֹד מוֹרֶיךָ",
+   "proof": "וְזֶהוּ: וּמַרְפֵּא בִּכְנָפֶיהָ, הַיְנוּ בְּחִינַת: וְלֹא יִכָּנֵף עוֹד מוֹרֶיךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

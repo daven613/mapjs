@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 135,
+ "chunk": "135_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יוֹם טוֹב",
+   "target_he": "הַגַּדְלוּת",
+   "proof": "כִּי יוֹם־טוֹב מְבַטֵּל הַגַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַגַּדְלוּת",
+   "target_he": "הַקַּטְנוּת",
+   "proof": "כִּי טֶבַע הַקַּטְנוּת שֶׁיִּתְבַּטֵּל לְגַבֵּי הַגַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְקֹרָב לְהַצַּדִּיק",
+   "target_he": "הַגַּדְלוּת",
+   "proof": "וְעַל כֵּן כְּשֶׁמְּקֹרָב לְהַצַּדִּיק נִתְבַּטֵּל הַגַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹר הַגָּדוֹל שֶׁל הַצַּדִּיק",
+   "target_he": "הַגַּדְלוּת",
+   "proof": "כִּי עַל־יְדֵי אוֹר הַגָּדוֹל שֶׁל הַצַּדִּיק נִתְבַּטֵּל לְגַמְרֵי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִתְבַּטֵּל הַגַּדְלוּת עַל־יְדֵי אוֹר הַצַּדִּיק",
+   "target_he": "רָאוּנִי נְעָרִים וְנֶחְבָּאוּ",
+   "proof": "וְהוּא בְּחִינַת רָאוּנִי נְעָרִים וְנֶחְבָּאוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאִיַּת פְּנֵי הַצַּדִּיק",
+   "target_he": "נֶחְבָּאִים הַקְּטַנִּים",
+   "proof": "הַיְנוּ עַל־יְדֵי שֶׁרוֹאִים פְּנֵי הַצַּדִּיק נֶחְבָּאִים הַקְּטַנִּים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גַּדְלוּת",
+   "target_he": "הַקַּטְנוּת",
+   "proof": "כִּי הַקַּטְנוּת נִתְבַּטֵּל לִפְנֵי גַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 61,
+ "chunk": "61_6_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בחינת השכל העליון",
+   "target_he": "המתקת הדינים",
+   "proof": "אִי אֶפְשָׁר לְהַמְתִּיק כִּי־אִם עַל־יְדֵי בְּחִינַת הַשֵּׂכֶל הָעֶלְיוֹן, בְּחִינַת קָדְשֵׁי קֳדָשִׁים, בְּחִינַת אֶבֶן שְׁתִיָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "השכל העליון",
+   "target_he": "קדשי קדשים",
+   "proof": "בְּחִינַת הַשֵּׂכֶל הָעֶלְיוֹן, בְּחִינַת קָדְשֵׁי קֳדָשִׁים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "השכל העליון",
+   "target_he": "אבן שתיה",
+   "proof": "בְּחִינַת קָדְשֵׁי קֳדָשִׁים, בְּחִינַת אֶבֶן שְׁתִיָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלמות התורה על ידי הספרים",
+   "target_he": "קבלת חכמה עילאה",
+   "proof": "וּכְשֶׁהַתּוֹרָה יֵשׁ לָהּ שְׁלֵמוּת עַל יְדֵי הַסְּפָרִים כַּנַּ\"ל, אֲזַי מְקַבֶּלֶת מֵחָכְמָה עִלָּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חכמה עילאה",
+   "target_he": "לוחות האבן",
+   "proof": "בִּבְחִינַת לוּחוֹת הָאֶבֶן, בְּחִינַת אֶבֶן שְׁתִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חכמה עילאה",
+   "target_he": "אבן שתיה",
+   "proof": "בִּבְחִינַת לוּחוֹת הָאֶבֶן, בְּחִינַת אֶבֶן שְׁתִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חכמה עילאה",
+   "target_he": "השפעה בכל החכמות",
+   "proof": "וַאֲזַי מַשְׁפַּעַת בְּכָל הַחָכְמוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "השפעה בכל החכמות",
+   "target_he": "המתקת כל הדינים",
+   "proof": "וְנִמְתָּקִים כָּל הַדִּינִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "המתקת הדינים",
+   "target_he": "יִשְׁלַח עֶזְרְךָ מִקֹּדֶשׁ",
+   "proof": "בִּבְחִינַת (תהלים כ): יִשְׁלַח עֶזְרְךָ מִקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עיקר העזר והישועה",
+   "target_he": "המתקת הדינים",
+   "proof": "שֶׁעִקַּר הָעֵזֶר וְהַיְשׁוּעָה, שֶׁהוּא בְּחִינַת הַמְתָּקַת הַדִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קודש",
+   "target_he": "שכל",
+   "proof": "הַיְנוּ עַל־יְדֵי הַשֵּׂכֶל שֶׁנִּקְרָא קֹדֶשׁ כַּיָּדוּעַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שתיה",
+   "target_he": "הן תוי שדי יענני",
+   "proof": "וְזֶה אוֹתִיּוֹת \"שְׁתִיָּה\", רָאשֵׁי־תֵּבוֹת: הֶן תָּוִי שַׁדַּי יַעֲנֵנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

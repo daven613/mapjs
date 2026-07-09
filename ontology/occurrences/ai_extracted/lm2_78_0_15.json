@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 78,
+ "chunk": "78_0_15",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "איש פשוט הגדול",
+   "target_he": "חיות מהתורה",
+   "proof": "כִּי גַּם אָז הוּא מְקַבֵּל חִיּוּת מֵהַתּוֹרָה כַּנַּ\"ל, עַל־יְדֵי אִישׁ פָּשׁוּט הַגָּדוֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "איש פשוט הגדול",
+   "target_he": "הצדיק הגדול",
+   "proof": "עַל־יְדֵי אִישׁ פָּשׁוּט הַגָּדוֹל, הַיְנוּ הַצַּדִּיק הַגָּדוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הצדיק הגדול",
+   "target_he": "כולם",
+   "proof": "שֶׁהוּא מְחַיֶּה אֶת כֻּלָּם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הצדיק",
+   "target_he": "חיות מהתורה",
+   "proof": "כִּי גַּם הוּא יָכוֹל לַחֲזֹר וְלָשׁוּב וּלְקַבֵּל חִיּוּת מֵהַתּוֹרָה עַל־יְדֵי הַצַּדִּיק הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_1_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "רְפוּאוֹת",
+   "proof": "וְהֵם גְּדֵלִים רַק עַל־יְדֵי אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "גְּשָׁמִים",
+   "proof": "אֵין הַגְּשָׁמִים יוֹרְדִין אֶלָּא בִּזְכוּת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "עֲשָׂבִים",
+   "proof": "שֶׁכְּשֶׁיֵּשׁ אֱמוּנָה, אָז יוֹרְדִין גְּשָׁמִים וְצוֹמְחִים עֲשָׂבִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "רְפוּאָה",
+   "proof": "וַאֲזַי יֵשׁ רְפוּאוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "גְּשָׁמִים",
+   "proof": "אֲבָל עַל־יְדֵי נְפִילַת הָאֱמוּנָה אֵין גְּשָׁמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "רְפוּאָה",
+   "proof": "וַאֲזַי אֵין רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "סֵדֶר הַזְּרָעִים",
+   "proof": "וְסֵדֶר הַזְּרָעִים הוּא עַל־יְדֵי אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

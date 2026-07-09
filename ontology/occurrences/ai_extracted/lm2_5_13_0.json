@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רֹאשׁ הַשָּׁנָה",
+   "target_he": "תִּקּוּן הָאֱמוּנָה",
+   "proof": "כִּי רֹאשׁ הַשָּׁנָה הוּא בְּחִינַת תִּקּוּן הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַף אֱמוּנָתְךָ בִּקְהַל קְדוֹשִׁים",
+   "target_he": "תִּקּוּן הָאֱמוּנָה",
+   "proof": "בִּבְחִינַת (תהלים פט): אַף אֱמוּנָתְךָ בִּקְהַל קְדוֹשִׁים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְקַבְּצוּת כָּל הַקְּהִלּוֹת הַקְּדוֹשׁוֹת",
+   "target_he": "לִקּוּטֵי הָאֱמוּנָה",
+   "proof": "כִּי אָז נִתְקַבְּצִין כָּל הַקְּהִלּוֹת הַקְּדוֹשׁוֹת, וְעַל־יְדֵי־זֶה נִתְלַקְּטִין וְנִתְקַבְּצִין כָּל לִקּוּטֵי הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לִקּוּטֵי הָאֱמוּנָה",
+   "target_he": "תִּקּוּן הַמֹּחִין",
+   "proof": "וְעַל־יְדֵי־זֶה נַעֲשֶׂה תִּקּוּן הַמֹּחִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

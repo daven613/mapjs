@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 34,
+ "chunk": "34_7_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יוד (נקודה)",
+   "target_he": "צדיק",
+   "proof": "לְהַיּוּד, הַיְנוּ נְקֻדָּה, שֶׁהוּא בְּחִינַת צַדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קישור הלב אל הנקודה (צדיק)",
+   "target_he": "אהבות רעות",
+   "proof": "וּכְשֶׁמְּקַשֵּׁר הַלֵּב... לְהַיּוּד... אֲזַי נִתְבַּטֵּל הָאַהֲבוֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אהבות רעות",
+   "target_he": "חרפות",
+   "proof": "הַיְנוּ הַחֲרָפוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חרפות",
+   "target_he": "ערלת לב",
+   "proof": "הַיְנוּ עָרְלַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וא\"ו",
+   "target_he": "לב",
+   "proof": "יָאִיר לְהַוָּאו, שֶׁהוּא בְּחִינַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדיק (יאיר לוא\"ו)",
+   "target_he": "חרפה",
+   "proof": "יָאִיר לְהַוָּאו... וְנִתְבַּטֵּל הַחֶרְפָּה, הַיְנוּ עָרְלַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חרפה",
+   "target_he": "ערלת לב",
+   "proof": "וְנִתְבַּטֵּל הַחֶרְפָּה, הַיְנוּ עָרְלַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כהונה",
+   "target_he": "אהבה",
+   "proof": "כִּי הַכְּהֻנָּה הִיא בְּחִינַת אַהֲבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כהונה (בחינת אהבה)",
+   "target_he": "אברהם",
+   "proof": "כִּי הַכְּהֻנָּה הִיא בְּחִינַת אַהֲבָה, הוּא אַבְרָהָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ברית שלום",
+   "target_he": "צדיק יסוד עולם",
+   "proof": "שׁוֹרָה בִּמְקוֹם בְּרִית שָׁלוֹם, הַיְנוּ: צַדִּיק יְסוֹד עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

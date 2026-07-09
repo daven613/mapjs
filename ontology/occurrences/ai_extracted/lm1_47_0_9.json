@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 47,
+ "chunk": "47_0_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "נְשִׂיאוּת פָּנִים",
+   "target_he": "אֱמֶת",
+   "proof": "וְהִנֵּה נְשִׂיאוּת פָּנִים הוּא בְּחִינוֹת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תִּקּוּן אֱמֶת",
+   "target_he": "הֶאָרַת פָּנִים",
+   "proof": "תִּקּוּן אֱמֶת הוּא הֶאָרַת פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְשֻׁקָּע בַּאֲכִילָה",
+   "target_he": "אֱמֶת",
+   "proof": "כִּי הַמְשֻׁקָּע בַּאֲכִילָה הוּא רָחוֹק מֵאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְשֻׁקָּע בַּאֲכִילָה",
+   "target_he": "הַסְתָּרַת פָּנִים",
+   "proof": "כִּי הוּא בְּהַסְתָּרַת פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַסְתָּרַת פָּנִים",
+   "target_he": "מִדַּת אֱמֶת",
+   "proof": "שֶׁהוּא מִדַּת אֱמֶת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

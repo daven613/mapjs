@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 141,
+ "chunk": "141_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הרגשת כאב חטאיו באמת",
+   "target_he": "מילת ערלת לבבו",
+   "proof": "אִם יִזְכֶּה שֶׁיַּרְגִּישׁ בֶּאֱמֶת כְּאֵב חֲטָאָיו, הַיְנוּ כְּשֶׁיָּמוּל אֶת עָרְלַת לְבָבוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לב ערל ואטום",
+   "target_he": "הרגשת כאב חטאיו באמת",
+   "proof": "כִּי כָּל זְמַן שֶׁלִּבּוֹ עָרֵל וְאָטוּם, אִי אֶפְשָׁר לוֹ לְהַרְגִּישׁ בֶּאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מילת ערלת לבבו",
+   "target_he": "חלל בלב",
+   "proof": "רַק כְּשֶׁיָּמוּל אֶת עָרְלַת לְבָבוֹ, וְיִהְיֶה לוֹ חָלָל בַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חלל בלב",
+   "target_he": "הרגשת גודל כאבו באמת",
+   "proof": "וְיִהְיֶה לוֹ חָלָל בַּלֵּב, וַאֲזַי יַרְגִּישׁ לְבָבוֹ בֶּאֱמֶת גֹּדֶל כְּאֵבוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הרגשת גודל כאבו",
+   "target_he": "צער וחרטה באמת",
+   "proof": "וְיִצְטַעֵר וְיִתְחָרֵט בֶּאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

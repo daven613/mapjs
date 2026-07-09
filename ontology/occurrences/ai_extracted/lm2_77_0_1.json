@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 77,
+ "chunk": "77_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אכילה בקדושה",
+   "target_he": "המתקה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נַעֲשֶׂה הַהַמְתָּקָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אכילה בקדושה",
+   "target_he": "פה בבחינת קומת אדם",
+   "proof": "עַל־יְדֵי־זֶה נַעֲשֶׂה הַפֶּה בִּבְחִינַת קוֹמַת אָדָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פה",
+   "target_he": "קומת אדם",
+   "proof": "מִי שָׂם פֶּה לָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פה",
+   "target_he": "בעל חי",
+   "proof": "אֲזַי פִּיו הוּא בְּחִינַת בַּעַל־חַי מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אכילה בקדושה",
+   "target_he": "פה בבחינת בעל חי",
+   "proof": "כִּי מִי שֶׁאֵין אֲכִילָתוֹ בִּקְדֻשָּׁה, חַס וְשָׁלוֹם, אֲזַי פִּיו הוּא בְּחִינַת בַּעַל־חַי מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אכילה בקדושה",
+   "target_he": "פה לאדם",
+   "proof": "אֲבָל כְּשֶׁאוֹכֵל בִּקְדֻשָּׁה, אֲזַי מֵשִׂים אֶת הַפֶּה לְאָדָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

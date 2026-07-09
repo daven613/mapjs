@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_11_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תפילין רעים",
+   "target_he": "עוות המשפט",
+   "proof": "וְעִוּוּת הַמִּשְׁפָּט נַעֲשֶׂה עַל־יְדֵי בְּחִינַת תְּפִלִּין רָעִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לחות ושמנונית הגוף",
+   "target_he": "תפילין מוחין",
+   "proof": "כִּי הַתְּפִלִּין מֹחִין נַעֲשִׂין עַל־יְדֵי שֶׁמַּעֲלִין הַלֵּחוֹת וְשַׁמְנוּנִית הַגּוּף מִבְּחִינַת הֶחְתִּים בְּשָׂרוֹ לִבְחִינַת חוֹתָם דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טפת עשו וישמעאל",
+   "target_he": "פסולת בהמוחין והתפילין",
+   "proof": "וּכְשֶׁמַּעֲלִין בְּחִינַת אֵלּוּ הַשַּׁמְנוּנִית מִבְּחִינַת הֶחְתִּים בְּשָׂרוֹ אֶל הַמֹּחַ, אֲזַי נִתְעָרֵב פְּסֹלֶת בְּהַמֹּחִין וְהַתְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פסולת בהמוחין",
+   "target_he": "קלקול המשפט",
+   "proof": "וְעַל־יְדֵי־זֶה נַעֲשֶׂה קִלְקוּל הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הפסולת שמתערב ומסבב את המוח",
+   "target_he": "רשע מכתיר את הצדיק",
+   "proof": "בִּבְחִינַת (חבקוק א׳:ד׳): רָשָׁע מַכְתִּיר אֶת הַצַּדִּיק; הַיְנוּ הַפְּסֹלֶת שֶׁמִּתְעָרֵב וּמְסַבֵּב אֶת הַמֹּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טפת עשו וישמעאל",
+   "target_he": "משפט",
+   "proof": "עַל־יְדֵי שֶׁמַּעֲלִין בְּחִינַת טִפַּת עֵשָׂו וְיִשְׁמָעֵאל אֶל הַמֹּחַ, עַל־יְדֵי־זֶה נִתְקַלְקֵל הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "משפט מעוקל",
+   "target_he": "קלקול המשפט",
+   "proof": "וְזֶהוּ: עַל־כֵּן יֵצֵא מִשְׁפָּט מְעֻקָּל, הַיְנוּ קִלְקוּל הַמִּשְׁפָּט כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוח",
+   "target_he": "משפט",
+   "proof": "כִּי הַמִּשְׁפָּט – עַל־יְדֵי הַמֹּחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוח",
+   "target_he": "משפט",
+   "proof": "וְעַל כֵּן כְּשֶׁנִּפְגָּם הַמֹּחַ, נִתְקַלְקֵל הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

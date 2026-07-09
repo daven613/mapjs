@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תּוֹדָה",
+   "target_he": "שַׁעֲשׁוּעַ עוֹלָם הַבָּא",
+   "proof": "וּבְחִינַת תּוֹדָה, שֶׁהוּא שַׁעֲשׁוּעַ עוֹלָם הַבָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תּוֹדָה",
+   "target_he": "הֲלָכוֹת",
+   "proof": "וּבְחִינַת תּוֹדָה, שֶׁהוּא שַׁעֲשׁוּעַ עוֹלָם הַבָּא, זֶה בְּחִינַת הֲלָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֲלָכוֹת",
+   "target_he": "שַׁעֲשׁוּעַ עוֹלָם הַבָּא",
+   "proof": "כִּי הַהֲלָכוֹת שֶׁזּוֹכִין לִלְמֹד... זֶה בְּחִינַת שַׁעֲשׁוּעַ עוֹלָם הַבָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֲלָכָה",
+   "target_he": "שֵׂכֶל וִידִיעָה",
+   "proof": "כִּי כְּשֶׁנִּתְחַדֵּשׁ הֲלָכָה, נִתְחַדֵּשׁ שֵׂכֶל וִידִיעָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דַּעַת",
+   "target_he": "עִקָּר שַׁעֲשׁוּעַ עוֹלָם הַבָּא",
+   "proof": "וְהַדַּעַת הוּא עִקָּר שַׁעֲשׁוּעַ עוֹלָם הַבָּא כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

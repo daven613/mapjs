@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יעקב בן אחותו",
+   "target_he": "כשרות",
+   "proof": "שֶׁיַּעֲקֹב בֶּן אֲחֹתוֹ, בְּחִינַת כַּשְׁרוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימודו",
+   "target_he": "התדבקות רוח התנא ברוחו",
+   "proof": "שֶׁעַל־יְדֵי לִמּוּדוֹ מִתְדַּבֵּק רוּחַ הַתַּנָּא בְּרוּחוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "התדבקות רוח התנא ברוחו",
+   "target_he": "נשיקין",
+   "proof": "זֶה בְּחִינַת נְשִׁיקִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

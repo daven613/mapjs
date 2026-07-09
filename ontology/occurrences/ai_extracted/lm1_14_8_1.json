@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_8_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שלום בעצמיו",
+   "target_he": "תפילה",
+   "proof": "כְּשֶׁיֵּשׁ שָׁלוֹם בַּעֲצָמָיו, אָז יָכוֹל לְהִתְפַּלֵּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "תפילה",
+   "proof": "כִּי עִקַּר הַתְּפִלָּה עַל־יְדֵי הַיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יראה",
+   "target_he": "אשה יראת ה' היא תתהלל",
+   "proof": "בִּבְחִינַת (משלי לא): אִשָּׁה יִרְאַת ה' הִיא תִתְהַלָּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מום",
+   "target_he": "קרבן",
+   "proof": "כֹּל אֲשֶׁר בּוֹ מוּם לֹא יִקְרָב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מום",
+   "target_he": "עבודתו תמה",
+   "proof": "וּכְשֶׁאֵין בּוֹ מוּם ... אֲזַי יִקְרַב לַעֲבֹד עֲבֹדָתוֹ תַּמָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אין בו מום",
+   "target_he": "אתרא דאית דחילא",
+   "proof": "הַיְנוּ בְּאַתְרָא דְּאִית דְּחִילָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "תפילה",
+   "proof": "עַל־יְדֵי הַיִּרְאָה זָכְתָה לִתְפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "שלום הכללי",
+   "proof": "וְעַל־יְדֵי תְּפִלָּה זוֹכֶה לַשָּׁלוֹם הַכְּלָלִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שלום הכללי",
+   "target_he": "שלמות העולמות",
+   "proof": "הַיְנוּ שְׁלֵמוּת הָעוֹלָמוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תפילה",
+   "target_he": "קרבן",
+   "proof": "כִּי עַל שֵׁם זֶה תְּפִלָּה נִקְרָא קָרְבָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

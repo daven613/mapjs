@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַקְּלִפּוֹת",
+   "target_he": "הַכְּסִילוּת",
+   "proof": "אֲזַי נִכְנָעִים הַקְּלִפּוֹת, הַיְנוּ הַכְּסִילוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה בְּכַשְׁרוּת",
+   "target_he": "הַכְּסִילוּת",
+   "proof": "עַל־יְדֵי אֲכִילָה בְּכַשְׁרוּת נִכְנָע הַכְּסִילוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה בְּכַשְׁרוּת",
+   "target_he": "הַשֵּׂכֶל",
+   "proof": "וְנִתְרוֹמֵם הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה",
+   "target_he": "דַעְתּוֹ צְלוּלָה",
+   "proof": "עַל־יְדֵי שֶׁלֹּא אָכַל, לֹא הָיְתָה דַעְתּוֹ צְלוּלָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה",
+   "target_he": "הַכְּסִילוּת",
+   "proof": "כִּי עַל־יְדֵי הָאֲכִילָה נִכְנָע הַכְּסִילוּת וְנִתְגַּדֵּל הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה",
+   "target_he": "הַשֵּׂכֶל",
+   "proof": "כִּי עַל־יְדֵי הָאֲכִילָה נִכְנָע הַכְּסִילוּת וְנִתְגַּדֵּל הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֲכִילָה כְּזוֹלֵל וְסוֹבֵא",
+   "target_he": "פְּגַם הַמִּזְבֵּחַ",
+   "proof": "שֶׁזֶּה בְּחִינַת פְּגַם הַמִּזְבֵּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה כְּזוֹלֵל וְסוֹבֵא",
+   "target_he": "הַכְּסִילוּת",
+   "proof": "אֲזַי יוֹנְקִים הַקְּלִפּוֹת, דְּהַיְנוּ הַכְּסִילוּת, יוֹתֵר מֵהָרָאוּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכְּסִילוּת",
+   "target_he": "הַשֵּׂכֶל",
+   "proof": "וַאֲזַי מִתְגַּבֵּר הַכְּסִילוּת עַל הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

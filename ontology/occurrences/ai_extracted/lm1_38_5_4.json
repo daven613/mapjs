@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 38,
+ "chunk": "38_5_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תפילין",
+   "target_he": "פאר",
+   "proof": "תְּפִלִּין נִקְרָאִין פְּאֵר, שֶׁנֶּאֱמַר: פְּאֵרְךָ חֲבוֹשׁ עָלֶיךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פאר",
+   "target_he": "כללות הגוונין",
+   "proof": "וּפְאֵר הוּא כְּלָלִיּוּת הַגְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כללות הגוונין",
+   "target_he": "התפארות",
+   "proof": "כִּי הַהִתְפָּאֲרוּת – עַל־יְדֵי כְּלָלִיּוּת הַגְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התביישות",
+   "target_he": "כמה גוונין",
+   "proof": "כְּשֶׁאָדָם מִתְבַּיֵּשׁ נַעֲשֶׂה כַּמָּה גְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יראת שמים",
+   "target_he": "בושה",
+   "proof": "אִם יֵשׁ לְאָדָם יִרְאַת שָׁמַיִם, הַיְנוּ בּוּשָׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יראה ובושה",
+   "target_he": "דעת בגדולת הבורא",
+   "proof": "וְנוֹפֵל עָלֵינוּ יִרְאָה וּבוּשָׁה, הַיְנוּ שֶׁנִּמְשָׁךְ עָלֵינוּ דַּעַת בִּגְדֻלַּת הַבּוֹרֵא יִתְבָּרַךְ שְׁמוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דעת אלקים",
+   "target_he": "דעה בגדולת הבורא",
+   "proof": "וְדַעַת אֱלֹקִים תִּמְצָא, הַיְנוּ כְּשֶׁיִּמָּצֵא גַּם לְךָ דֵּעָה בִּגְדֻלַּת הַבּוֹרֵא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דעה בגדולת הבורא",
+   "target_he": "בושה ויראה",
+   "proof": "הַיְנוּ בּוּשָׁה וְיִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יראה הנמשכת עליהם",
+   "target_he": "וְרָאוּ כָל עַמֵּי הָאָרֶץ וְכוּ' וְיָרְאוּ מִמֶּךָּ",
+   "proof": "וְזֶה בְּחִינַת: וְרָאוּ כָל עַמֵּי הָאָרֶץ וְכוּ' וְיָרְאוּ מִמֶּךָּ; הַיְנוּ שֶׁנִּמְשָׁךְ עֲלֵיהֶם גַּם כֵּן יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

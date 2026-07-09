@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 72,
+ "chunk": "72_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "דמים רבים שפכת",
+   "target_he": "לא המתיק הגבורות",
+   "proof": "כִּי דָּמִים רַבִּים שָׁפַכְתָּ, הַיְנוּ שֶׁלֹּא הִמְתִּיק הַגְּבוּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "המתקת הגבורות",
+   "target_he": "בנין הבית",
+   "proof": "הַיְנוּ שֶׁלֹּא הִמְתִּיק הַגְּבוּרוֹת, עַל־כֵּן לֹא זָכָה לִבְנוֹת הַבַּיִת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

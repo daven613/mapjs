@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_10_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אִתְּתָא דְּבָעֵי הַאי גַּבְרָא",
+   "target_he": "אִשָּׁה יִרְאַת ה'",
+   "proof": "הַיְנוּ בְּחִינַת אִשָּׁה יִרְאַת ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּגַם בַּעֲווֹנוֹת",
+   "target_he": "דַּם נִדָּה לַשְּׁכִינָה",
+   "proof": "הַיְנוּ מִי שֶׁפָּגַם בַּעֲווֹנוֹת, וְגָרַם דַּם נִדָּה לַשְּׁכִינָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּם נִדָּה לַשְּׁכִינָה",
+   "target_he": "נָחָשׁ מַשִּׁיךְ לָהּ לְגַבַּהּ",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נָחָשׁ מַשִּׁיךְ לָהּ לְגַבַּהּ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נָחָשׁ מַשִּׁיךְ לָהּ לְגַבַּהּ",
+   "target_he": "פֵּרוּד בֵּין קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "proof": "וְנַעֲשֶׂה פֵּרוּד בֵּין קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְלָא קָיָהֲבִי לֵהּ",
+   "target_he": "שָׁאֹג יִשְׁאַג עַל נָוֵהוּ",
+   "proof": "וְזֶהוּ: וְלָא קָיָהֲבִי לֵהּ – בְּחִינַת שָׁאֹג יִשְׁאַג עַל נָוֵהוּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַמַּדְרֵגָה הַיּוֹתֵר עֶלְיוֹנָה",
+   "target_he": "תִּקּוּן הַכְּלָלִי",
+   "proof": "הוּא הוֹלֵךְ אֶל הַמַּדְרֵגָה הַיּוֹתֵר עֶלְיוֹנָה, הַיְנוּ תִּקּוּן הַכְּלָלִי שֶׁהוּא לְמַעְלָה מֵאִשָּׁה יִרְאַת ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּן הַכְּלָלִי",
+   "target_he": "צַדִּיק מוֹשֵׁל בְּיִרְאַת אֱלֹקִים",
+   "proof": "הַיְנוּ תִּקּוּן הַכְּלָלִי שֶׁהוּא לְמַעְלָה מֵאִשָּׁה יִרְאַת ה', בְּחִינַת (שמואל־ב כג): צַדִּיק מוֹשֵׁל בְּיִרְאַת אֱלֹקִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַצַּדִּיק",
+   "target_he": "בְּחִינוֹת תִּקּוּן הַכְּלָלִי",
+   "proof": "כִּי הַצַּדִּיק שֶׁהוּא בְּחִינוֹת תִּקּוּן הַכְּלָלִי הוּא לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִרְאַת אֱלֹקִים",
+   "target_he": "מַלְכוּת",
+   "proof": "וְהוּא מוֹשֵׁל בְּיִרְאַת אֱלֹקִים, שֶׁהוּא בְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

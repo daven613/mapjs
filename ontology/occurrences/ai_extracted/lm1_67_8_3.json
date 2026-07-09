@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 67,
+ "chunk": "67_8_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שכחה",
+   "target_he": "עננין דמכסיין על עינין",
+   "proof": "וְהַשִּׁכְחָה הוּא בְּחִינַת עֲנָנִין דִּמְכַסְּיָן עַל עֵינִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כבוד",
+   "target_he": "אש",
+   "proof": "וְהַכָּבוֹד הוּא בְּחִינַת אֵשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קריעת הענן",
+   "target_he": "רעמים",
+   "proof": "וַאֲזַי נִקְרָע הֶעָנָן, וּמִזֶּה נַעֲשִׂין בְּחִינַת רְעָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כבוד",
+   "target_he": "רעמים",
+   "proof": "שֶׁעַל־יְדֵי הַכָּבוֹד נַעֲשִׂין רְעָמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קריעת הענן המכסה על העינין",
+   "target_he": "דעת הזקן",
+   "proof": "וַאֲזַי יוֹצְאִין מַיִם רַבִּים, דְּהַיְנוּ שֶׁנִּתְגַּלֶּה דַּעַת הַזָּקֵן, עַל־יְדֵי שֶׁנִּקְרָע הֶעָנָן הַמְכַסֶּה עַל הָעֵינִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מים רבים",
+   "target_he": "דעת הזקן",
+   "proof": "וַאֲזַי יוֹצְאִין מַיִם רַבִּים, דְּהַיְנוּ שֶׁנִּתְגַּלֶּה דַּעַת הַזָּקֵן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מים רבים",
+   "target_he": "מים קרים",
+   "proof": "וְהֵם בְּחִינַת מַיִם קָרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מים קרים",
+   "target_he": "נפש",
+   "proof": "שֶׁעַל יָדָן מְחַיִּין וּמַבְרִיאִים אֶת הַנֶּפֶשׁ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

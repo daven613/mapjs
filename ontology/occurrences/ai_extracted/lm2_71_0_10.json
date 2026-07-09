@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 71,
+ "chunk": "71_0_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "נֹעַם הָעֶלְיוֹן",
+   "proof": "כְּשֶׁשּׁוֹפֵעַ נֹעַם הָעֶלְיוֹן עַל־יְדֵי הַכְּלִי הַנַּעֲשֶׂה עַל־יְדֵי צְדָקָה בִּשְׁבִיל הַהוֹלָדָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נֹעַם הָעֶלְיוֹן",
+   "target_he": "מֹחִין",
+   "proof": "בְּחִינַת הַנֹּעַם הָעֶלְיוֹן שֶׁהוּא הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֹחִין שֶׁל חוּץ־לָאָרֶץ",
+   "target_he": "חוֹבְלִים",
+   "proof": "אֵלּוּ הַמֹּחִין שֶׁל חוּץ־לָאָרֶץ, שֶׁהֵם בְּחִינַת חוֹבְלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "נֹעַם",
+   "proof": "אֵלּוּ הַמֹּחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל, שֶׁהֵם בְּחִינַת נֹעַם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "תִּקּוּן מֹחִין שֶׁל חוּץ־לָאָרֶץ",
+   "proof": "הֵם נוֹפְלִים גַם־כֵּן בְּאֵלּוּ הַמֹּחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל... כְּדֵי לְהִתְתַּקֵּן עַל־יְדֵי־זֶה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

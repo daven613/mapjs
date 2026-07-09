@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_4_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אַהֲבַת מָמוֹן",
+   "target_he": "אֻכָּמָא דְּסִטְרָא אָחֳרָא",
+   "proof": "עַל־יְדֵי אַהֲבַת מָמוֹן, הוּא נוֹפֵל לְאֻכָּמָא דְּסִטְרָא אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֻכָּמָא דְּסִטְרָא אָחֳרָא",
+   "target_he": "שַׁבְּתַאי פָּתְיָא אֻכָּמָא",
+   "proof": "בְּחִינוֹת: שַׁבְּתַאי פָּתְיָא אֻכָּמָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָרָה שְׁחוֹרָה",
+   "target_he": "בְּעִצָּבוֹן תֹּאכֲלֶנָּה",
+   "proof": "מָרָה שְׁחוֹרָה, בְּחִינוֹת בְּעִצָּבוֹן תֹּאכֲלֶנָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַהֲבַת מָמוֹן",
+   "target_he": "עִגּוּלָא וְסִבּוּבִים מִסִּטְרָא אָחֳרָא",
+   "proof": "וְנוֹפֵל לְעִגּוּלָא וְסִבּוּבִים מִסִּטְרָא אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עִגּוּלָא וְסִבּוּבִים מִסִּטְרָא אָחֳרָא",
+   "target_he": "סָבִיב רְשָׁעִים יִתְהַלָּכוּן",
+   "proof": "בְּחִינוֹת סָבִיב רְשָׁעִים יִתְהַלָּכוּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִתְאַוֶּה וּמִשְׁתּוֹקֵק אַחַר הַמָּמוֹן",
+   "target_he": "שָׁטוּ הָעָם וְלָקְטוּ",
+   "proof": "שֶׁהוּא מִתְאַוֶּה וּמִשְׁתּוֹקֵק אַחַר הַמָּמוֹן, בְּחִינוֹת שָׁטוּ הָעָם וְלָקְטוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שָׁטוּ הָעָם וְלָקְטוּ",
+   "target_he": "שְׁטוּתָא",
+   "proof": "שָׁטוּ הָעָם וְלָקְטוּ – בִּשְׁטוּתָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁטוּתָא",
+   "target_he": "הֶפֶךְ הַחָכְמָה",
+   "proof": "בִּשְׁטוּתָא ... הֶפֶךְ הַחָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_9_14",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רבי עקיבא שנכנס בשלום ויצא בשלום",
+   "target_he": "צדיק",
+   "proof": "וְהוּא בְּחִינוֹת צַדִּיק, בְּחִינוֹת רַבִּי עֲקִיבָא שֶׁנִּכְנַס בְּשָׁלוֹם וְיָצָא בְּשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הציץ ומת",
+   "target_he": "עובד אלקים",
+   "proof": "וְזֶה בְּחִינַת הֵצִיץ וָמֵת, בְּחִינוֹת עוֹבֵד אֱלֹקִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ארבע בחינות (רבי עקיבא, בן עזאי, בן זומא, אחר)",
+   "target_he": "צדיק ורשע עובד אלקים ולא עבדו",
+   "proof": "וְאֵלּוּ הָאַרְבַּע בְּחִינוֹת הֵם בְּחִינוֹת צַדִּיק וְרָשָׁע עוֹבֵד אֱלֹקִים וְלֹא עֲבָדוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הציץ ומת, הציץ ונפגע",
+   "target_he": "שנתלהב לבו מאד",
+   "proof": "הַיְנוּ שֶׁנִּתְלַהֵב לִבּוֹ מְאֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התקרבות לצדיק",
+   "target_he": "דרך ישרה לעבודת ה'",
+   "proof": "וְהוּא מְקַבֵּל מִמֶּנּוּ דֶּרֶךְ יְשָׁרָה לַעֲבוֹדַת ה' לְפִי מַדְרֵגָתוֹ וְעֶרְכּוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אור והתלהבות שהאיר בו הצדיק למעלה ממדרגתו",
+   "target_he": "מיתה",
+   "proof": "מִגֹּדֶל הָאוֹר וְהַהִתְלַהֲבוּת שֶׁהֵאִיר בּוֹ הַצַּדִּיק בְּיֶתֶר שְׂאֵת לְמַעְלָה מִמַּדְרֵגָתוֹ, וְעַל יְדֵי זֶה יוּכַל לָמוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

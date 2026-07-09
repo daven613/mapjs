@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 234,
+ "chunk": "234_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "סִפּוּר הַמַּעֲשֶׂה שֶׁל הַצַּדִּיק",
+   "target_he": "לְטַהֵר מַחֲשַׁבְתּוֹ",
+   "proof": "כְּשֶׁרוֹצֶה לְטַהֵר מַחֲשַׁבְתּוֹ עַל־יְדֵי סִפּוּר הַמַּעֲשֶׂה שֶׁל הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "סִּפּוּר",
+   "target_he": "דִּבּוּר",
+   "proof": "וּמֵהַסִּפּוּר שֶׁהוּא דִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַּעֲשֶׂה וּמֵהַסִּפּוּר",
+   "target_he": "מַחֲשָׁבָה",
+   "proof": "נִמְצָא שֶׁנַּעֲשֶׂה אֶצְלוֹ מֵהַמַּעֲשֶׂה וּמֵהַסִּפּוּר שֶׁהוּא דִּבּוּר, נַעֲשֶׂה אֶצְלוֹ מַחֲשָׁבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַעֲשִׂיּוֹת שֶׁל אוֹתוֹ הַצַּדִּיק",
+   "target_he": "מַחֲשָׁבָה",
+   "proof": "כְּדֵי שֶׁיִּהְיֶה מַעֲשִׂיּוֹת שֶׁל אוֹתוֹ הַצַּדִּיק בִּבְחִינַת מַחֲשָׁבָה אֶצְלוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

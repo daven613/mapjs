@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הכבוד שמכבד יראי ה'",
+   "target_he": "החזרת הכבוד לשרשו",
+   "proof": "שֶׁהוּא בְּחִינַת הַחֲזָרַת הַכָּבוֹד לְשָׁרְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "החזרת הכבוד לשרשו",
+   "target_he": "יראה",
+   "proof": "דְּהַיְנוּ לַיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הכבוד שמכבד יראי ה'",
+   "target_he": "שלום",
+   "proof": "עַל־יְדֵי־זֶה זוֹכִין לְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

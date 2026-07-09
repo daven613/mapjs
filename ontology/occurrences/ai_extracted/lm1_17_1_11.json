@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_1_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּלּוּת הַהִתְפָּאֲרוּת",
+   "target_he": "הִתְגַּלּוּת הַיִּרְאָה",
+   "proof": "וְעַל־יְדֵי הִתְגַּלּוּת הַהִתְפָּאֲרוּת, שֶׁזֶּה בְּחִינַת הִתְגַּלּוּת הַיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָרָצוֹן",
+   "target_he": "אַהֲבָה",
+   "proof": "עַל־יְדֵי־זֶה נִתְגַּלֶּה הָרָצוֹן, שֶׁזֶּה בְּחִינַת אַהֲבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת הַהִתְפָּאֲרוּת",
+   "target_he": "הָרָצוֹן",
+   "proof": "עַל־יְדֵי הִתְגַּלּוּת הַהִתְפָּאֲרוּת... עַל־יְדֵי־זֶה נִתְגַּלֶּה הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רְצוֹן הַמֶּלֶךְ וְאַהֲבָתוֹ",
+   "target_he": "אַהֲבָה",
+   "proof": "כְּפִי רְצוֹן הַמֶּלֶךְ וְאַהֲבָתוֹ שֶׁיֵּשׁ לוֹ לְכָל אֶחָד וְאֶחָד, שֶׁזֶּהוּ בְּחִינַת אַהֲבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

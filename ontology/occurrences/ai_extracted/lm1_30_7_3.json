@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_7_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הצדיקים",
+   "target_he": "משיח",
+   "proof": "כִּי הַצַּדִּיקִים הֵם בְּחִינַת מָשִׁיחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "משיח",
+   "target_he": "חוטם",
+   "proof": "שֶׁהוּא בְּחִינַת חֹטֶם, בְּחִינַת (איכה ד): רוּחַ אַפֵּינוּ מְשִׁיחַ ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מורח ודאין",
+   "target_he": "והריחו ביראת ה'",
+   "proof": "כִּי מָשִׁיחַ הוּא מוֹרַח וְדָאִין... בִּבְחִינַת (ישעיה יא): וַהֲרִיחוֹ בְּיִרְאַת ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילות",
+   "target_he": "יראת ה' היא תתהלל",
+   "proof": "הַיְנוּ בִּתְפִלּוֹת, שֶׁהֵן בְּחִינַת (משלי לא): יִרְאַת ה' הִיא תִתְהַלָּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילות שלנו עם הערבובים",
+   "target_he": "צער",
+   "proof": "נִמְצָא שֶׁהַצַּדִּיקִים הֵם סוֹבְלִים צַעַר עַל יְדֵי הַתְּפִלּוֹת שֶׁלָּנוּ, שֶׁמְּבַלְבְּלִין אוֹתָן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

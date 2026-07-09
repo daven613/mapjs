@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 94,
+ "chunk": "94_11_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַנִּיצוֹצוֹת",
+   "target_he": "אוֹתִיּוֹת",
+   "proof": "וְהַנִּיצוֹצוֹת הֵם אוֹתִיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹתִיּוֹת",
+   "target_he": "דִּבּוּרִים",
+   "proof": "וּמֵאוֹתִיּוֹת נַעֲשֶׂה דִּבּוּרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַדִּבּוּרִים",
+   "target_he": "רַב טוּב לְיִשְׂרָאֵל",
+   "proof": "וְעַל־יְדֵי הַדִּבּוּרִים מַשְׁפִּיעַ רַב טוּב לְיִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַעֲלֶה נִיצוֹצוֹת מֵהַדָּבָר",
+   "target_he": "הַדָּבָר נַעֲשֶׂה אֶפֶס",
+   "proof": "וּכְשֶׁמַּעֲלֶה נִיצוֹצוֹת מֵהַדָּבָר, אֲזַי הַדָּבָר הַזֶּה נַעֲשֶׂה אֶפֶס",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַנִּיצוֹצוֹת",
+   "target_he": "הַחִיּוּת שֶׁל הַדָּבָר",
+   "proof": "כִּי הַנִּיצוֹצוֹת הֵם הַחִיּוּת שֶׁל הַדָּבָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מותרות ופסולת ידועה של הקדושה",
+   "target_he": "חכמה חיצונה",
+   "proof": "כָּל חָכְמָה חִיצוֹנָה בָּא מִמּוֹתָרוֹת וּפְסֹלֶת יְדוּעָה שֶׁל הַקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מותרות ופסולת יָדוּעַ",
+   "target_he": "כִּשּׁוּף",
+   "proof": "כֵּן כִּשּׁוּף בָּא מִמּוֹתָרוֹת וּפְסֹלֶת יָדוּעַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת כֵּלִים",
+   "target_he": "אֶפִּיקוֹרְסוּת (חָכְמוֹת חִיצוֹנִיּוֹת)",
+   "proof": "מֵאַחַר שֶׁהֵם בָּאִים מִשְּׁבִירַת כֵּלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מותרות משבירת כלים",
+   "target_he": "אֶפִּיקוֹרְסוּת הַבָּא מֵחָכְמוֹת חִיצוֹנִיּוֹת",
+   "proof": "שֶׁהֵם בָּאִים מִמּוֹתָרוֹת מִשְּׁבִירַת כֵּלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חִיּוּת אֱלֹקוּת",
+   "target_he": "שֵׂכֶל וְאוֹתִיּוֹת שֶׁנִּשְׁבְּרוּ וְנָפְלוּ לְשָׁם",
+   "proof": "כִּי יֵשׁ שָׁם חִיּוּת אֱלֹקוּת, הַיְנוּ שֵׂכֶל וְאוֹתִיּוֹת שֶׁנִּשְׁבְּרוּ וְנָפְלוּ לְשָׁם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

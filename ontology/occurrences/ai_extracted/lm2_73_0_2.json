@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 73,
+ "chunk": "73_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "נעים זמירות ישראל",
+   "target_he": "ספר תהלים",
+   "proof": "וּנְעִים זְמִרוֹת יִשְׂרָאֵל... דְּהַיְנוּ סֵפֶר תְּהִלִּים שֶׁיָּסַד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת נעים זמירות ישראל (ספר תהלים)",
+   "target_he": "עולה של תשובה",
+   "proof": "כִּי עַל־יְדֵי בְּחִינַת נְעִים זְמִירוֹת יִשְׂרָאֵל... עַל־יְדֵי־זֶה הוּקַם עֻלָּהּ שֶׁל תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תהלים",
+   "target_he": "תשובה",
+   "proof": "כִּי עַל־יְדֵי תְּהִלִּים זוֹכִין לִתְשׁוּבָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עיקר התשובה של דוד המלך",
+   "target_he": "ספר תהלים",
+   "proof": "וְעִקָּר הַתְּשׁוּבָה שֶׁל דָּוִד הַמֶּלֶךְ הוּא סֵפֶר תְּהִלִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמירת תהלים",
+   "target_he": "תשובה",
+   "proof": "וְלִזְכּוֹת לִתְשׁוּבָה עַל־יְדֵי אֲמִירַת תְּהִלִּים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

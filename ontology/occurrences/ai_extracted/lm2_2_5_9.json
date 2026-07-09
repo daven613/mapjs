@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_5_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מִקֵּץ",
+   "target_he": "סוֹף",
+   "proof": "מִקֵּץ – הַיְנוּ סוֹף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סוֹף",
+   "target_he": "הֲלָכוֹת",
+   "proof": "בְּחִינַת הֲלָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הֲלָכוֹת",
+   "target_he": "שַׁעֲשׁוּעַ עוֹלָם הַבָּא",
+   "proof": "שֶׁהֵם שַׁעֲשׁוּעַ עוֹלָם הַבָּא שֶׁהוּא בַּסּוֹף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לִמּוּד הֲלָכוֹת",
+   "target_he": "הַיָּמִים שֶׁנֶּחֱשָׁבִין לְשָׁנִים",
+   "proof": "בְּחִינַת הַיָּמִים שֶׁנֶּחֱשָׁבִין לְשָׁנִים עַל־יְדֵי לִמּוּד הֲלָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁנָתַיִם יָמִים",
+   "target_he": "הַיָּמִים שֶׁנֶּחֱשָׁבִין לְשָׁנִים עַל־יְדֵי לִמּוּד הֲלָכוֹת",
+   "proof": "וְזֶהוּ: שְׁנָתַיִם יָמִים, בְּחִינַת הַיָּמִים שֶׁנֶּחֱשָׁבִין לְשָׁנִים עַל־יְדֵי לִמּוּד הֲלָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁנָתַיִם יָמִים",
+   "target_he": "יוֹם יוֹם יִדְרֹשׁוּן",
+   "proof": "בְּחִינַת יוֹם יוֹם יִדְרֹשׁוּן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

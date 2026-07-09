@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 67,
+ "chunk": "67_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בראשית",
+   "target_he": "לעיני כל ישראל",
+   "proof": "בְּרֵאשִׁית – לְעֵינֵי כָּל יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מאור עיניים שהולך אחר הבכיה",
+   "target_he": "ושבו העבים אחר הגשם",
+   "proof": "וְזֶה בְּחִינַת (קהלת י״ב:ב׳): וְשָׁבוּ הֶעָבִים אַחַר הַגָּשֶׁם – זֶה מְאוֹר עֵינַיִם, שֶׁהוֹלֵךְ אַחַר הַבְּכִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בכי",
+   "target_he": "מאור עיניים",
+   "proof": "שֶׁעַל־יְדֵי הַבְּכִי הוֹלֵךְ וּמִסְתַּלֵּק מְאוֹר עֵינַיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הסתלקות מאור העיניים על ידי הבכי",
+   "target_he": "שקיעת האור במערב",
+   "proof": "וְזֶה בְּחִינַת שְׁקִיעַת הָאוֹר בְּמַעֲרָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בכי",
+   "target_he": "מאור העיניים",
+   "proof": "וְכָל זֶה עַל־יְדֵי בְּחִינַת הַבְּכִי, שֶׁעַל־יָדוֹ מִסְתַּלֵּק מְאוֹר הָעֵינַיִם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מערב",
+   "target_he": "רחל מבכה על בניה",
+   "proof": "כִּי מַעֲרָב – רָאשֵׁי־תֵבוֹת: רָחֵל מְבַכָּה עַל בָּנֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "השכינה בוכה ומיללת על ישראל",
+   "target_he": "רחל מבכה על בניה",
+   "proof": "בְּחִינַת (ירמיהו ל״א:ט״ו): רָחֵל מְבַכָּה עַל בָּנֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

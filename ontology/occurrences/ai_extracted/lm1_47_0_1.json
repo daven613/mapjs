@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 47,
+ "chunk": "47_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תַּאֲוַת אֲכִילָה",
+   "target_he": "הַסְתָּרַת פָּנִים",
+   "proof": "עַל־יְדֵי תַּאֲוַת אֲכִילָה הוּא מַסְתִּיר פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הֶאָרַת פָּנִים",
+   "target_he": "תִּקּוּן וֶאֱמֶת",
+   "proof": "וְהֶאָרַת פָּנִים, הוּא תִּקּוּן וֶ\"אֱמֶת\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּן וֶאֱמֶת",
+   "target_he": "יַעֲקֹב",
+   "proof": "בְּחִינַת יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יַעֲקֹב",
+   "target_he": "תְּפִלִּין",
+   "proof": "וְהוּא בְּחִינַת תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יַעֲקֹב",
+   "target_he": "תִּפְאֶרֶת",
+   "proof": "כִּי יַעֲקֹב הוּא תִּפְאֶרֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "עֲשִׁירוּת",
+   "proof": "וְעִקַּר עֲשִׁירוּת בָּא מֵאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלִּין",
+   "target_he": "דַּלּוּת",
+   "proof": "הַיְנוּ שֶׁהַדַּלּוּת בָּא עַל־יְדֵי פְּגַם הַתְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "דַּלּוּת",
+   "proof": "עַל־יְדֵי פְּגַם שֶׁל אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

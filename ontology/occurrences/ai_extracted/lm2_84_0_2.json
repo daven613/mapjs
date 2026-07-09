@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 84,
+ "chunk": "84_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תפילה",
+   "target_he": "מלכות",
+   "proof": "כִּי הַתְּפִלָּה, הַיְנוּ בְּחִינַת מַלְכוּת, בְּחִינַת אֲנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילה",
+   "target_he": "אני",
+   "proof": "כִּי הַתְּפִלָּה, הַיְנוּ בְּחִינַת מַלְכוּת, בְּחִינַת אֲנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "מחשבות של גדלות",
+   "proof": "כְּשֶׁאָדָם מִתְפַּלֵּל, נוֹפְלִים לוֹ מַחֲשָׁבוֹת שֶׁל גַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מלכות הרשעה",
+   "target_he": "תפילה",
+   "proof": "וּכְשֶׁהִיא רוֹצָה לָצֵאת, אֲזַי מִתְאַחֶזֶת בָּהּ מַלְכוּת הָרְשָׁעָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מלכות הרשעה",
+   "target_he": "גדלות",
+   "proof": "הַיְנוּ גַּדְלוּת, שֶׁגַּדְלוּת הִיא מִמַּלְכוּת הָרְשָׁעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה בכח",
+   "target_he": "יציאה מגלות",
+   "proof": "וְזֶה שֶׁמִּתְפַּלְּלִים בְּכֹחַ, בָּזֶה נוֹתֵן כֹּחַ בַּתְּפִלָּה לְהִתְחַזֵּק כְּנֶגֶד מַלְכוּת הָרְשָׁעָה לָצֵאת מִגָּלוּתָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גאוה",
+   "target_he": "מלכות הרשעה",
+   "proof": "כַּד הַגַּאֲוָה, הַיְנוּ מַלְכוּת הָרְשָׁעָה, גּוֹבֶרֶת עַל יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גאוה",
+   "target_he": "ישראל",
+   "proof": "כַּד הַגַּאֲוָה, הַיְנוּ מַלְכוּת הָרְשָׁעָה, גּוֹבֶרֶת עַל יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה בכח",
+   "target_he": "אלקים",
+   "proof": "שֶׁתִּתְפַּלְּלוּ בְּכֹחַ וּתְחַזְּקוּ אֶת אֱלֹקִים, הַיְנוּ בְּחִינַת אֲנִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אלקים",
+   "target_he": "אני",
+   "proof": "וּתְחַזְּקוּ אֶת אֱלֹקִים, הַיְנוּ בְּחִינַת אֲנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

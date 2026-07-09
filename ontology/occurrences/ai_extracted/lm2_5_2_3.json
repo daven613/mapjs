@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_2_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עִקָּר צְמִיחַת הָרְפוּאָה",
+   "target_he": "אָז יִבָּקַע כַּשַּׁחַר אוֹרֶךָ וַאֲרֻכָתְךָ מְהֵרָה תִצְמָח",
+   "proof": "וְאָז, בְּאוֹר הַיּוֹם, הוּא עִקָּר צְמִיחַת הָרְפוּאָה, בִּבְחִינַת (ישעיהו נ״ח:ח׳): אָז יִבָּקַע כַּשַּׁחַר אוֹרֶךָ וַאֲרֻכָתְךָ מְהֵרָה תִצְמָח",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּלּוּת הָעֵצָה",
+   "target_he": "הִתְגַּלּוּת הָאוֹר מִן הַחֹשֶׁךְ",
+   "proof": "עַל יְדֵי הִתְגַּלּוּת הָעֵצָה, שֶׁהִיא בְּחִינַת הִתְגַּלּוּת הָאוֹר מִן הַחֹשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֹשֶׁךְ",
+   "target_he": "לַיְלָה",
+   "proof": "שֶׁנִּדְחֶה הַחֹשֶׁךְ שֶׁהוּא בְּחִינַת לַיְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אוֹר",
+   "target_he": "יוֹם",
+   "proof": "וְנִתְגַּלֶּה הָאוֹר, בְּחִינַת יוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת הָעֵצָה",
+   "target_he": "אֱמוּנָה",
+   "proof": "עַל־יְדֵי־זֶה נִתְגַּדֵּל הָאֱמוּנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "רְפוּאָה",
+   "proof": "וְעַל־יְדֵי־זֶה עִקָּר הָרְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עִקָּר הָרְפוּאָה",
+   "target_he": "אָז יִבָּקַע כַּשַּׁחַר אוֹרֶךָ וַאֲרֻכָתְךָ וְכוּ'",
+   "proof": "וְעַל־יְדֵי־זֶה עִקָּר הָרְפוּאָה, בִּבְחִינַת: אָז יִבָּקַע כַּשַּׁחַר אוֹרֶךָ וַאֲרֻכָתְךָ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

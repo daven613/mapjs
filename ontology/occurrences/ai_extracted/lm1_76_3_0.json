@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 76,
+ "chunk": "76_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הִסְתַּכְּלוּת",
+   "target_he": "כְּלִי",
+   "proof": "הִסְתַּכְּלוּת עוֹשָׂה כְּלִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כְּלִי",
+   "target_he": "גְּבוּל וּזְמַן",
+   "proof": "דְּהַיְנוּ גְּבוּל וּזְמַן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאִיַּית הַדָּבָר",
+   "target_he": "גְּבוּל",
+   "proof": "כִּי מִקֹּדֶם רְאוֹתוֹ הַדָּבָר, הוּא בְּלֹא גְּבוּל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאִיַּית הַדָּבָר",
+   "target_he": "גְּבוּל",
+   "proof": "וּכְשֶׁרוֹאֶה הַדָּבָר, נַעֲשֶׂה לוֹ גְּבוּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאִיָּה",
+   "target_he": "גְּבוּל",
+   "proof": "כִּי מִי שֶׁאֵינוֹ רוֹאֶה אֵין לוֹ גְּבוּל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאִיָּה",
+   "target_he": "שׂבַע",
+   "proof": "מִכָּאן שֶׁסּוּמָא אֵין לוֹ שׂבַע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאוּת",
+   "target_he": "הִלּוּךְ לְנַפְשׁוֹ",
+   "proof": "כִּי בְּכֹחַ הָרְאוּת, עוֹשֶׂה הִלּוּךְ לְנַפְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הִלּוּךְ לְנַפְשׁוֹ",
+   "target_he": "גְּבוּל",
+   "proof": "וְהוּא הַגְּבוּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

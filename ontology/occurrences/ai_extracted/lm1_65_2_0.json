@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 65,
+ "chunk": "65_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עֲשִׂיַּת רְצוֹנוֹ שֶׁל מָקוֹם",
+   "target_he": "עֵינֵי בַּעַל הַשָּׂדֶה",
+   "proof": "אֲזַי מְאִירִין עֵינֵי בַּעַל הַשָּׂדֶה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְאִירִין עֵינֵי בַּעַל הַשָּׂדֶה וְצוֹפִין וְרוֹאִין בְּמָקוֹם שֶׁצָּרִיךְ",
+   "target_he": "שְׂדֵה צוֹפִים",
+   "proof": "וְזֶה בְּחִינַת שְׂדֵה צוֹפִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְצוֹנוֹ יִתְבָּרַךְ",
+   "target_he": "עֵינָיו",
+   "proof": "אֲבָל כְּשֶׁאֵין עוֹשִׂין רְצוֹנוֹ יִתְבָּרַךְ, חַס וְשָׁלוֹם, אֲזַי נִתְחַשְּׁכִים עֵינָיו, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִתְחַשְּׁכִים עֵינָיו",
+   "target_he": "שְׂדֵה בּוֹכִים",
+   "proof": "וְזֶה בְּחִינַת שְׂדֵה בּוֹכִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּכִי",
+   "target_he": "קִלְקוּל הָרְאוּת",
+   "proof": "כִּי בְּכִי הוּא קִלְקוּל הָרְאוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בֶּכִי",
+   "target_he": "רְאוּת",
+   "proof": "זֶה הָרְאוּת, שֶׁהוֹלֵךְ אַחַר הַבֶּכִי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

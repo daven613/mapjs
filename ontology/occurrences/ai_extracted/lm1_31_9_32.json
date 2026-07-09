@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_9_32",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שַׁבָּת",
+   "target_he": "אֱמוּנָה",
+   "proof": "כִּי עַל־יְדֵי שַׁבָּת שֶׁהוּא בְּחִינוֹת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שַׁבָּת",
+   "target_he": "צְדָקָה",
+   "proof": "כִּי עַל־יְדֵי שַׁבָּת שֶׁהוּא בְּחִינוֹת אֱמוּנָה, נִשְׁלָם וּמְאִירָה הַצְּדָקָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "בְּרָכוֹת",
+   "proof": "וְעַל יְדֵיהֶם נִתְמַלְּאוּ הַבְּרָכוֹת שֶׁהָיוּ חֲסֵרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "בְּרָכוֹת",
+   "proof": "כִּי אֱמוּנָה הוּא מְקוֹר הַבְּרָכוֹת, כְּמוֹ שֶׁכָּתוּב: אִישׁ אֱמוּנוֹת רַב בְּרָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֱמוּנָה",
+   "target_he": "מְקוֹר הַבְּרָכוֹת",
+   "proof": "כִּי אֱמוּנָה הוּא מְקוֹר הַבְּרָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שַׁבָּת",
+   "target_he": "מְקוֹר הַבְּרָכָה",
+   "proof": "וְכֵן שַׁבָּת נֶאֱמַר בּוֹ: כִּי הִיא מְקוֹר הַבְּרָכָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

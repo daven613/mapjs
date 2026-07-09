@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 33,
+ "chunk": "33_3_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מְדוֹר הַקְּלִפּוֹת",
+   "target_he": "יְמֵי רַע",
+   "proof": "נִמְצָא, אֲפִלּוּ בִּמְדוֹר הַקְּלִפּוֹת, הַיְנוּ בִּימֵי רַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יְמֵי רַע",
+   "target_he": "מִדּוֹת רָעוֹת וּלְשׁוֹנוֹת עַכּוּ\"ם",
+   "proof": "הַיְנוּ בִּימֵי רַע, שֶׁהֵם מִדּוֹת רָעוֹת וּלְשׁוֹנוֹת עַכּוּ\"ם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אוֹתִיּוֹת הַתּוֹרָה",
+   "target_he": "יְמֵי טוֹב",
+   "proof": "אֵינָם נִתְרָאִים אוֹתִיּוֹת הַתּוֹרָה, הַיְנוּ יְמֵי טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִבּוּי הַלְּבוּשִׁים וְגֹדֶל הַצִּמְצוּם",
+   "target_he": "אוֹתִיּוֹת הַתּוֹרָה",
+   "proof": "אֲבָל מֵחֲמַת רִבּוּי הַלְּבוּשִׁים וְגֹדֶל הַצִּמְצוּם, אֵינָם נִתְרָאִים אוֹתִיּוֹת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְמֵי רַע וְהַחֹשֶׁךְ הַשּׁוֹרֶה עֲלֵיהֶם",
+   "target_he": "אוֹתִיּוֹת הַתּוֹרָה",
+   "proof": "עַל־יְדֵי יְמֵי רַע וְהַחֹשֶׁךְ הַשּׁוֹרֶה עֲלֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

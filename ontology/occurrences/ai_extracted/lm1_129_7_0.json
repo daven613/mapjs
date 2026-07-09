@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 129,
+ "chunk": "129_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "לֶאֱכֹל אֶת בְּשָׂרִי",
+   "target_he": "לְהַכְנִיעַ הַחֹמֶר",
+   "proof": "אֲנִי צָרִיךְ לֶאֱכֹל אֶת בְּשָׂרִי, הַיְנוּ לְהַכְנִיעַ הַחֹמֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילַת הַבָּשָׂר (הַכְנָעַת הַחֹמֶר)",
+   "target_he": "קֵרוּב תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין",
+   "proof": "כְּשֶׁאֲנִי רוֹצֶה שֶׁיִּקְרְבוּ תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין, אֲנִי צָרִיךְ לֶאֱכֹל אֶת בְּשָׂרִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַנֶּפֶשׁ אוֹכֶלֶת הַבָּשָׂר",
+   "target_he": "הַבָּשָׂר מִתְהַפֵּךְ לְמַהוּת הַנֶּפֶשׁ",
+   "proof": "שֶׁצָּרִיךְ שֶׁהַנֶּפֶשׁ תֹּאכַל הַבָּשָׂר, שֶׁתִּתְהַפֵּךְ לְמַהוּתָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

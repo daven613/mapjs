@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 45,
+ "chunk": "45_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אָדָם נִתְעוֹרֵר בַּיָּדַיִם שֶׁלּוֹ",
+   "target_he": "כְּנָפַיִם נִתְעוֹרְרִים",
+   "proof": "שֶׁעַל־יְדֵי שֶׁאָדָם נִתְעוֹרֵר בַּיָּדַיִם שֶׁלּוֹ, אֲזַי [הַכְּנָפַיִם] נִתְעוֹרְרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַכְּנָפַיִם",
+   "target_he": "כַּנְפֵי רֵאָה",
+   "proof": "הַיְנוּ כַּנְפֵי רֵאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כַּנְפֵי רֵאָה",
+   "target_he": "דִּבּוּר",
+   "proof": "שֶׁמִּשָּׁם נִתְהַוֶּה הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

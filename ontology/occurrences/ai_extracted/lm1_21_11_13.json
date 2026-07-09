@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 21,
+ "chunk": "21_11_13",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "גלות",
+   "proof": "וְגַם הַגָּלוּת הוּא רַק מֵחֶסְרוֹן הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "משה",
+   "target_he": "דעת",
+   "proof": "שֶׁהוּא הָיָה בְּחִינַת הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "גאולה",
+   "proof": "כִּי עִקַּר הַגְּאֻלָּה עַל־יְדֵי הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

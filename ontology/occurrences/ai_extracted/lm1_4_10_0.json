@@ -1,0 +1,51 @@
+{
+ "book": "lm1",
+ "torah": 4,
+ "chunk": "4_10_0",
+ "model": "claude-fable-5",
+ "extractor": "ai:claude-fable-5",
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תלמיד חכם",
+   "target_he": "משה",
+   "proof": "וְהַתַּלְמִיד חָכָם הוּא בְּחִינַת משֶׁה",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "משה",
+   "target_he": "אין",
+   "proof": "שֶׁהוּא בְּחִינַת אַיִן, כְּמוֹ שֶׁכָּתוּב: וְהַחָכְמָה מֵאַיִן תִּמָּצֵא",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סיפור כל לבו לפני התלמיד חכם",
+   "target_he": "נכלל באין סוף",
+   "proof": "וּמְסַפֵּר לְפָנָיו כָּל לִבּוֹ... וְעַל יְדֵי זֶה אַתָּה נִכְלָל בָּאֵין סוֹף",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נכלל באין סוף",
+   "target_he": "זרקא",
+   "proof": "וְעַל יְדֵי זֶה אַתָּה נִכְלָל בָּאֵין סוֹף. וְזֶה בְּחִינַת: זַרְקָא",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "equation",
+   "source_he": "זרקא",
+   "target_he": "החזרת המלכות לאין סוף",
+   "proof": "זַרְקָא, דְּאִזְדְּרִיקַת לְאֲתַר דְּאִתְנְטִילַת מִתַּמָּן, שֶׁתַּחֲזִיר אֶת הַמַּלְכוּת לְאֵין סוֹף",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "equation",
+   "source_he": "אין סוף",
+   "target_he": "רצון שבכל הרצונות",
+   "proof": "לְאֵין סוֹף, שֶׁהוּא רָצוֹן שֶׁבְּכָל הָרְצוֹנוֹת",
+   "explicitness": "explicit"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_10_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַנִּסְתָּרֹת לַה' אֱלֹהֵינוּ",
+   "target_he": "נִשְׁמַע",
+   "proof": "זֶה בְּחִינַת נִשְׁמַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַנִּגְלֹת לָנוּ וּלְבָנֵינוּ",
+   "target_he": "נַעֲשֶׂה",
+   "proof": "זֶה בְּחִינַת נַעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִשְׁמַע",
+   "target_he": "נַעֲשֶׂה",
+   "proof": "שֶׁיִּהְיֶה מֵהַנִּשְׁמַע נַעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבְרֵי הַתּוֹרָה שֶׁסְּבִיבוֹת הַמִּצְוָה (וַיְדַבֵּר)",
+   "target_he": "נִשְׁמָע",
+   "proof": "שֶׁהֵם בְּחִינַת נִשְׁמָע כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבְרֵי הַתּוֹרָה",
+   "target_he": "נַעֲשֶׂה",
+   "proof": "יִהְיֶה נַעֲשֶׂה מֵהֶם בְּחִינַת נַעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבְרֵי הַתּוֹרָה",
+   "target_he": "הַנִּסְתָּרוֹת",
+   "proof": "שֶׁהֵם בְּחִינַת הַנִּסְתָּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבְרֵי הַתּוֹרָה",
+   "target_he": "נִשְׁמַע",
+   "proof": "בְּחִינַת נִשְׁמַע כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבְרֵי הַתּוֹרָה",
+   "target_he": "נַעֲשֶׂה",
+   "proof": "יִהְיֶה נַעֲשֶׂה מֵהֶם בְּחִינַת נַעֲשֶׂה, בְּחִינַת נִגְלוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נַעֲשֶׂה",
+   "target_he": "נִגְלוֹת",
+   "proof": "בְּחִינַת נִגְלוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

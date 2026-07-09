@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_5_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עצמי",
+   "target_he": "נשמה",
+   "proof": "עַצְמִי הִיא הַנְּשָׁמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נשמה",
+   "target_he": "עצם האדם",
+   "proof": "הַנְּשָׁמָה, שֶׁהִיא עֶצֶם הָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אני",
+   "target_he": "נשמה",
+   "proof": "מַה שֶּׁנִּקְרָא אֵצֶל הָאָדָם אֲנִי, הוּא הַנְּשָׁמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קול אנחה",
+   "target_he": "עזות דקדושה",
+   "proof": "קוֹל אֲנָחָה, שֶׁהִיא בְּחִינַת עַזּוּת דִּקְדֻשָּׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קול אנחה",
+   "target_he": "עזות גופו",
+   "proof": "וְעַל־יְדֵי קוֹל אֲנָחָה... עַל־יְדֵי־זֶה נִשְׁבָּר עַזּוּת גּוּפוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עזות גופו",
+   "target_he": "קרבת הנשמה לגוף",
+   "proof": "נִשְׁבָּר עַזּוּת גּוּפוֹ, וְאָז מִתְקָרֶבֶת וּמִתְדַּבֶּקֶת הָעֶצֶם לְהַבָּשָׂר, הַיְנוּ הַנְּשָׁמָה לְהַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_6_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וְכָל בְּנֵי בָשָׂר יִקְרְאוּ בִשְׁמֶךָ",
+   "target_he": "תְּשׁוּבָה",
+   "proof": "וְכָל בְּנֵי בָשָׂר יִקְרְאוּ בִשְׁמֶךָ – זֶה בְּחִינַת תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׁדַּי",
+   "target_he": "תְּשׁוּבָה",
+   "proof": "כִּי שַׁדַּי הוּא בְּחִינַת תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׁדַּי",
+   "target_he": "שֶׁיֵּשׁ דַּי בֶּאֱלֹקוּתִי לְכָל בְּרִיָּה",
+   "proof": "כִּי שַׁדַּי הוּא בְּחִינַת: שֶׁיֵּשׁ דַּי בֶּאֱלֹקוּתִי לְכָל בְּרִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְהַפְנוֹת אֵלֶיךָ כָּל רִשְׁעֵי אָרֶץ",
+   "target_he": "הַגֵּרִים",
+   "proof": "לְהַפְנוֹת אֵלֶיךָ כָּל רִשְׁעֵי אָרֶץ – זֶה בְּחִינַת הַגֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יַכִּירוּ וְיֵדְעוּ כָּל יוֹשְׁבֵי תֵבֵל",
+   "target_he": "שְׁלֵמוּת הַדַּעַת",
+   "proof": "יַכִּירוּ וְיֵדְעוּ כָּל יוֹשְׁבֵי תֵבֵל – זֶה בְּחִינַת שְׁלֵמוּת הַדַּעַת שֶׁנַּעֲשֶׂה עַל־יְדֵי זֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כֶּסֶף תּוֹעָפוֹת",
+   "target_he": "הוֹן יֹסִיף רֵעִים רַבִּים",
+   "proof": "שֶׁעַל־יְדֵי בְּחִינַת כֶּסֶף תּוֹעָפוֹת, הַיְנוּ בְּחִינַת: הוֹן יֹסִיף רֵעִים רַבִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֶּסֶף תּוֹעָפוֹת",
+   "target_he": "אֲוִיר מְעוֹפֵף",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נַעֲשֶׂה אֲוִיר מְעוֹפֵף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲוִיר מְעוֹפֵף",
+   "target_he": "שַׁדַּי",
+   "proof": "עַל־יְדֵי־זֶה נַעֲשֶׂה בְּחִינַת שַׁדַּי, הַיְנוּ תְּשׁוּבָה וְגֵרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שַׁדַּי",
+   "target_he": "תְּשׁוּבָה",
+   "proof": "עַל־יְדֵי־זֶה נַעֲשֶׂה בְּחִינַת שַׁדַּי, הַיְנוּ תְּשׁוּבָה וְגֵרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שַׁדַּי",
+   "target_he": "גֵּרִים",
+   "proof": "עַל־יְדֵי־זֶה נַעֲשֶׂה בְּחִינַת שַׁדַּי, הַיְנוּ תְּשׁוּבָה וְגֵרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׁדַּי",
+   "target_he": "תְּשׁוּבָה",
+   "proof": "כִּי שַׁדַּי הוּא בְּחִינַת תְּשׁוּבָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

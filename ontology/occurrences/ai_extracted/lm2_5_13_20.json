@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_13_20",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מְתוּקָה",
+   "target_he": "מַיִּן מְתִיקִין",
+   "proof": "מְתוּקָה דַיְקָא, בְּחִינַת מַיִּן מְתִיקִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תִּקּוּן הַבְּרִית",
+   "target_he": "מַיִּן מְתִיקִין",
+   "proof": "בְּחִינַת תִּקּוּן הַבְּרִית שֶׁהוּא בְּחִינַת מַיִּן מְתִיקִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פְּגַם הַבְּרִית",
+   "target_he": "מַיִּן מְרִירִין",
+   "proof": "הֶפֶךְ פְּגַם הַבְּרִית, שֶׁהוּא בְּחִינַת מַיִּן מְרִירִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַיִּן מְרִירִין",
+   "target_he": "פְּגַם טֻמְאָה",
+   "proof": "שֶׁהוּא בְּחִינַת פְּגַם טֻמְאָה הַנַּ\"ל, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַמֹּחִין",
+   "target_he": "הַשֵּׁנָה מְתוּקָה",
+   "proof": "עַל־יְדֵי תִּקּוּן הַמֹּחִין כַּנַּ\"ל, עַל־יְדֵי־זֶה הַשֵּׁנָה מְתוּקָה בִּבְחִינַת מַיִּן מְתִיקִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַאֲכִילָה",
+   "target_he": "טֻמְאָה",
+   "proof": "שֶׁעַל יָדָהּ בָּא, חַס וְשָׁלוֹם, טֻמְאָה הַנַּ\"ל בַּחֲלוֹם בַּשֵּׁנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַמֹּחִין",
+   "target_he": "בְּחִינַת הַשֵּׁנָה",
+   "proof": "כִּי נִתְתַּקֵּן בְּחִינַת הַשֵּׁנָה עַל־יְדֵי תִּקּוּן הַמֹּחִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשֵּׁנָה",
+   "target_he": "הִסְתַּלְּקוּת הַדַּעַת",
+   "proof": "שֶׁהִיא בְּחִינַת הִסְתַּלְּקוּת הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

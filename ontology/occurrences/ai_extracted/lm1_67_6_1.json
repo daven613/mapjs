@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 67,
+ "chunk": "67_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מְּבִינֵי מַדָּע",
+   "target_he": "מֹּחַ",
+   "proof": "כִּי עִקַּר יְנִיקַת הָאוֹיְבִים הוּא מִן הַמְּבִינֵי מַדָּע, דְּהַיְנוּ מִן הַמֹּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְנִיקַת הָאוֹיְבִים מִן הַמֹּחַ",
+   "target_he": "מֵרֹאשׁ פַּרְעוֹת אוֹיֵב",
+   "proof": "בִּבְחִינַת (דברים ל״ב:מ״ב): מֵרֹאשׁ פַּרְעוֹת אוֹיֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוֹתָרוֹת שֶׁבַּמֹּחַ",
+   "target_he": "שְׂעָרוֹת",
+   "proof": "שֶׁמִּן אֵלּוּ הַמּוֹתָרוֹת שֶׁבַּמֹּחַ יוֹצְאִין הַשְּׂעָרוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׂעָרוֹת",
+   "target_he": "אוֹיְבִים",
+   "proof": "וּמֵהֶם יוֹנְקִים הָאוֹיְבִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוֹתָרוֹת שֶׁבַּמֹּחַ",
+   "target_he": "אוֹיְבִים",
+   "proof": "וְהֵם יוֹנְקִים עַד שֶׁכָּלֶה כָּל הַמּוֹתָרוֹת שֶׁבַּמֹּחַ, וַאֲזַי אֵין לָהֶם יְנִיקָה, וְנוֹפְלִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְפִילַת הַשְּׂעָרוֹת",
+   "target_he": "קְרִיחַת רֹאשׁ זְקֵנִים",
+   "proof": "וְזֶה בְּחִינַת קְרִיחַת רֹאשׁ זְקֵנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֹחָא שָׁקִיט וְשָׁכִיךְ",
+   "target_he": "דַּעַת הַזְּקֵנִים צַח וְצָלוּל",
+   "proof": "כִּי בְּסָבֵי מֹחָא שָׁקִיט וְשָׁכִיךְ... הַיְנוּ שֶׁדַּעַת הַזְּקֵנִים צַח וְצָלוּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוֹתָרוֹת בַּמֹּחַ",
+   "target_he": "שְׂעָרוֹת",
+   "proof": "וְאֵין לָהֶם מוֹתָרוֹת בַּמֹּחַ, וְעַל כֵּן נוֹפְלִים הַשְּׂעָרוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

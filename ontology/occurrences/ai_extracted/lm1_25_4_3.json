@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 25,
+ "chunk": "25_4_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "ממונם של הישראלי",
+   "target_he": "הפאר והחן",
+   "proof": "כִּי עַל מָמוֹנָם שֶׁל הַיִּשְׂרְאֵלִי שׁוֹרֶה הַפְּאֵר וְהַחֵן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עכו\"ם מקבל ממון ישראל",
+   "target_he": "החן והפאר",
+   "proof": "תֵּכֶף וּמִיָּד כְּשֶׁהָעַכּוּ\"ם מְקַבֵּל מָמוֹן יִשְׂרָאֵל, תֵּכֶף וּמִיָּד נִתְעַלֵּם הַחֵן וְהַפְּאֵר בְּתוֹךְ הַמָּמוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "החן והפאר",
+   "target_he": "חֵן בְּעֵינֵי ה'",
+   "proof": "וְזֶה בְּחִינַת (בראשית ו׳:ח׳): חֵן בְּעֵינֵי ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֵינֵי ה'",
+   "target_he": "גְּוָנִין עִלָּאִין",
+   "proof": "עֵינֵי ה' זֶה גְּוָנִין עִלָּאִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גְּוָנִין עִלָּאִין",
+   "target_he": "כֶּסֶף וְזָהָב",
+   "proof": "שֶׁהֵם בְּחִינַת כֶּסֶף וְזָהָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יציאת הממון מיד עכו\"ם ליד הישראלי",
+   "target_he": "הגוונין",
+   "proof": "כְּשֶׁיָּצָא הַמָּמוֹן מִיַּד עַכּוּ\"ם לְיַד הַיִּשְׂרְאֵלִי, תֵּכֶף נִתְגַּלּוּ הַגְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

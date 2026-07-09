@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "איש תבונות",
+   "target_he": "ונשמת שדי תבינם",
+   "proof": "בִּבְחִינַת (איוב ל״ב:ח׳): וְנִשְׁמַת שַׁדַּי תְּבִינֵם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "המשכת רוחניות אלקות לתוך צמצומים",
+   "target_he": "נשמה",
+   "proof": "וְזֶה נַעֲשֶׂה עַל־יְדֵי שֶׁמַּמְשִׁיךְ הַמְשָׁכַת רוּחָנִיּוּת אֱלֹקוּת לְתוֹךְ צִמְצוּמִים... וְעַל־יְדֵי־זֶה מְצַחְצֵחַ הַנְּשָׁמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "המשכת רוחניות אלקות לתוך צמצומים",
+   "target_he": "שדי",
+   "proof": "שֶׁזֶּה בְּחִינַת שַׁדַּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שדי",
+   "target_he": "צמצום",
+   "proof": "שֶׁהוּא בְּחִינַת צִמְצוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בחינת שדי",
+   "target_he": "המשכת רוחניות אלקות לתוך צמצומים",
+   "proof": "שֶׁעַל יְדֵי בְּחִינַת שַׁדַּי, דְּהַיְנוּ הַמְשָׁכַת רוּחָנִיּוּת אֱלֹקוּת לְתוֹךְ צִמְצוּמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת שדי",
+   "target_he": "נשמה",
+   "proof": "שֶׁעַל יְדֵי בְּחִינַת שַׁדַּי, דְּהַיְנוּ הַמְשָׁכַת רוּחָנִיּוּת אֱלֹקוּת לְתוֹךְ צִמְצוּמִים, עַל־יְדֵי־זֶה מְצַחְצֵחַ הַנְּשָׁמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צחצוח הנשמה",
+   "target_he": "איש תבונות",
+   "proof": "עַל־יְדֵי־זֶה מְצַחְצֵחַ הַנְּשָׁמָה, וַאֲזַי הוּא אִישׁ תְּבוּנוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

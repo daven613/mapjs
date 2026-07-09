@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 42,
+ "chunk": "42_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "נְגִינָה",
+   "target_he": "תְּלָת גְּוָנִין דְּקֶשֶׁת",
+   "proof": "הַיְנוּ כְּשֶׁהַנְּגִינָה, שֶׁהֵם תְּלָת גְּוָנִין דְּקֶשֶׁת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּלָת גְּוָנִין",
+   "target_he": "אָבוֹת",
+   "proof": "כִּי הַתְּלָת גְּוָנִין הֵם הָאָבוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אָבוֹת",
+   "target_he": "לְבוּשִׁין דִּשְׁכִינְתָּא",
+   "proof": "וְהֵם לְבוּשִׁין דִּשְׁכִינְתָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְבוּשִׁין נְהִירִין בְּזַכּוּת וּבִבְהִירוּת",
+   "target_he": "זְכוּת הָאָבוֹת",
+   "proof": "וּכְשֶׁהַלְּבוּשִׁין נְהִירִין בְּזַכּוּת וּבִבְהִירוּת, נִקְרָא זְכוּת הָאָבוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זְכוּת הָאָבוֹת",
+   "target_he": "וּרְאִיתִיהָ לִזְכֹּר בְּרִית עוֹלָם",
+   "proof": "אֲזַי: וּרְאִיתִיהָ לִזְכֹּר בְּרִית עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זְכוּת הָאָבוֹת",
+   "target_he": "וַיִּנָּחֶם כְּרֹב חֲסָדָיו",
+   "proof": "אֲזַי: וַיִּנָּחֶם כְּרֹב חֲסָדָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וַיִּנָּחֶם כְּרֹב חֲסָדָיו",
+   "target_he": "וַחֲמַת הַמֶּלֶךְ שָׁכָכָה וְנִמְתָּק הַדִּינִין",
+   "proof": "הַיְנוּ: וַחֲמַת הַמֶּלֶךְ שָׁכָכָה, וְנִמְתָּק הַדִּינִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

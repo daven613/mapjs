@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 65,
+ "chunk": "65_3_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "צער היסורין",
+   "proof": "עִקַּר הַצַּעַר שֶׁיֵּשׁ לָאָדָם מֵהַיִּסּוּרִין שֶׁעוֹבְרִים עָלָיו, חַס וְשָׁלוֹם, הוּא רַק מֵחֲמַת שֶׁלּוֹקְחִין מֵהָאָדָם הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "הסתכלות על התכלית",
+   "proof": "עַד שֶׁאֵין יָכוֹל לְהִסְתַּכֵּל עַל הַתַּכְלִית, שֶׁהוּא כֻּלּוֹ טוֹב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הסתכלות על התכלית",
+   "target_he": "צער וכאב היסורין",
+   "proof": "עַד שֶׁאֵין יָכוֹל לְהִסְתַּכֵּל עַל הַתַּכְלִית...וְאָז מַרְגִּישׁ צַעַר וּכְאֵב הַיִּסּוּרִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "הסתכלות על התכלית",
+   "proof": "כִּי כְּשֶׁיֵּשׁ לוֹ דַּעַת, וּמִסְתַּכֵּל עַל הַתַּכְלִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

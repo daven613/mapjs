@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 35,
+ "chunk": "35_4_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "פַּשְׁטָא",
+   "target_he": "אוֹרַיְתָא",
+   "proof": "שֶׁפְּשָׁטָא אוֹרַיְתָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פַּשְׁטָא",
+   "target_he": "וֶאֱמוּנָתְךָ בַּלֵּילוֹת",
+   "proof": "שֶׁהֵם בְּחִינַת וֶאֱמוּנָתְךָ בַּלֵּילוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פַּשְׁטָא",
+   "target_he": "מֹחִין",
+   "proof": "הֵם נַיְחָא לַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נַיְחָא לַמֹּחִין",
+   "target_he": "הִתְחַדְּשׁוּת הַמֹּחִין",
+   "proof": "וְהַמֹּחִין נִתְחַדְּשׁוּ כְּבָרִאשׁוֹנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זַרְקָא",
+   "target_he": "אִזְדְרִיקַת לַאֲתַר דְּאִתְנְטִילַת מִתַּמָּן",
+   "proof": "וְזֶהוּ זַרְקָא, דְּאִזְדְרִיקַת לַאֲתַר דְּאִתְנְטִילַת מִתַּמָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

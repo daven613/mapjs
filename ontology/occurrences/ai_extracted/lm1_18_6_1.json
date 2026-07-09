@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 18,
+ "chunk": "18_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "אותיות",
+   "proof": "וְאוֹתִיּוֹת נִשְׁלָמִים עַל־יְדֵי אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אמונה",
+   "target_he": "אז אהפוך אל העמים שפה ברורה",
+   "proof": "בִּבְחִינַת (צפניה ג׳:ט׳): אָז אֶהְפֹּךְ אֶל הָעַמִּים שָׂפָה בְרוּרָה וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אמונה",
+   "target_he": "לקרא כלם בשם ה'",
+   "proof": "הַיְנוּ עַל־יְדֵי אֱמוּנָה, שֶׁהוּא בְּחִינַת: לִקְרֹא כֻלָּם בְּשֵׁם ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "שפה ברורה",
+   "proof": "עַל־יְדֵי־זֶה אֶהְפֹּךְ שָׂפָה בְרוּרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שפה ברורה",
+   "target_he": "שלמות הדבור",
+   "proof": "עַל־יְדֵי־זֶה אֶהְפֹּךְ שָׂפָה בְרוּרָה, בְּחִינַת שְׁלֵמוּת הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שלמות האותיות",
+   "target_he": "תכלית של כל הנבראים",
+   "proof": "וּשְׁלֵמוּת הָאוֹתִיּוֹת זֶה בְּחִינַת הַתַּכְלִית שֶׁל כָּל הַנִּבְרָאִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אותיות",
+   "target_he": "כל העולמות",
+   "proof": "כִּי כָּל הָעוֹלָמוֹת נִבְרְאוּ עַל־יְדֵי אוֹתִיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שלמות האותיות",
+   "target_he": "יוד",
+   "proof": "וּשְׁלֵמוּת הָאוֹתִיּוֹת הוּא הַיּוּד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוד",
+   "target_he": "עולם הבא",
+   "proof": "שֶׁהוּא בְּחִינַת עוֹלָם הַבָּא הַנִּבְרָא בְּיוּד (כשרז\"ל מנחות כט:)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יוד",
+   "target_he": "נקודה אחרונה המשלים את תמונת כל אות",
+   "proof": "כִּי הַיּוּד הִיא נְקֻדָּה אַחֲרוֹנָה הַמַּשְׁלִים אֶת תְּמוּנַת כָּל אוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נקודה אחרונה",
+   "target_he": "שלמות האות",
+   "proof": "כִּי כְּשֶׁחָסֵר נְקֻדָּה אַחֲרוֹנָה הַמַּשְׁלִים תְּמוּנַת הָאוֹת, אֲזַי בְּוַדַּאי אֵין שְׁלֵמוּת לָאוֹת וְאֵין לָהּ תְּמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

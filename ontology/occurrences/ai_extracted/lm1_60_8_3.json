@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_8_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קבלת הכח על פי דין ומשפט כפי בטחונו",
+   "target_he": "פתח פיך לאלם אל דין כל בני חלוף",
+   "proof": "וְזֶה בְּחִינַת: פְּתַח פִּיךָ לְאִלֵּם, אֶל דִּין כָּל בְּנֵי חֲלוֹף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קבלת הכח על פי דין ומשפט כפי בטחונו",
+   "target_he": "קוי ה' יחליפו כח",
+   "proof": "בְּחִינַת: קֹוֵי ה' יַחֲלִיפוּ כֹחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פתח פיך",
+   "target_he": "כח הדיבור אל כלי ההולדה",
+   "proof": "שֶׁעַל־יְדֵי פְּתַח פִּיךָ וְכוּ', עַל־יְדֵי־זֶה יוֹצֵא כֹּחַ הַדִּבּוּר אֶל כְּלֵי הַהוֹלָדָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קירבת כלי הדיבור לכלי ההולדה",
+   "target_he": "קבלת כח הדיבור",
+   "proof": "שֶׁיִּהְיוּ כְּלֵי הַדִּבּוּר סְמוּכִין וּקְרוֹבִין אֶל כְּלֵי הַהוֹלָדָה, כְּדֵי שֶׁיּוּכְלוּ לְקַבֵּל כֹּחַ הַדִּבּוּר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ריחוק כלי הדיבור מכלי ההולדה",
+   "target_he": "קרוב אתה בפיהם ורחוק מכליותיהם",
+   "proof": "שֶׁלֹּא יִהְיוּ בִּבְחִינַת (ירמיהו י״ב:ב׳): קָרוֹב אַתָּה בְּפִיהֶם וְרָחוֹק מִכִּלְיוֹתֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כלי הדיבור",
+   "target_he": "כלי ההולדה",
+   "proof": "כִּי הֵם בְּחִינָה אַחַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כח הדיבור",
+   "target_he": "הולדה",
+   "proof": "כִּי עַל יְדֵי כֹּחַ הַדִּבּוּר, נַעֲשֶׂה הַהוֹלָדָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תלות ההולדה בכח הדיבור",
+   "target_he": "ועלהו לתרופה להתיר פה אלמים ולהתיר פה עקרות",
+   "proof": "וְזֶה בְּחִינַת: וְעָלֵהוּ לִתְרוּפָה – לְהַתִּיר פֶּה אִלְּמִים, וּלְהַתִּיר פֶּה עֲקָרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

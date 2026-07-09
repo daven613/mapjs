@@ -1,0 +1,127 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_8_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מנהיג של שקר",
+   "target_he": "אמונות כזביות",
+   "proof": "כִּי כְּשֶׁמִּתְקָרְבִין, חַס וְשָׁלוֹם, לְמַנְהִיג שֶׁל שֶׁקֶר, עַל־יְדֵי־זֶה בָּאִין, חַס וְשָׁלוֹם, לֶאֱמוּנוֹת כָּזְבִּיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מנהיג של שקר",
+   "target_he": "נביא השקר",
+   "proof": "כִּי מַנְהִיג שֶׁל שֶׁקֶר הוּא בְּחִינַת נְבִיא הַשֶּׁקֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נביא השקר",
+   "target_he": "רוח שקר",
+   "proof": "בְּחִינַת (מלכים־א כב): רוּחַ שֶׁקֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מנהיג של שקר",
+   "target_he": "מדמה",
+   "proof": "וְעַל־יְדֵי־זֶה אַדְּרַבָּא, נִתְקַלְקֵל הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מדמה",
+   "target_he": "אמונות כזביות",
+   "proof": "וּבָאִים לֶאֱמוּנוֹת כָּזְבִּיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוח נבואה",
+   "target_he": "תיקון האמונה",
+   "proof": "כִּי עִקָּר תִּקּוּן הָאֱמוּנָה הִיא עַל־יְדֵי בְּחִינַת רוּחַ־נְבוּאָה שֶׁיֵּשׁ לְהַמַּנְהִיג הָאֲמִתִּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוח נבואה",
+   "target_he": "מדמה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִתְבָּרֵר הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מדמה",
+   "target_he": "אמונה",
+   "proof": "וְעַל־יְדֵי־זֶה נִתְתַּקֵּן הָאֱמוּנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נבואה",
+   "target_he": "מדמה",
+   "proof": "אֲבָל בְּלֹא בְּחִינַת נְבוּאָה אֵין הַמְדַמֶּה בָּרוּר וּמְתֻקָּן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מדמה",
+   "target_he": "אמונות כזביות",
+   "proof": "וַאֲזַי הַמְדַמֶּה מְעָרֵב וּמְבַלְבֵּל אֶת הָאָדָם בֶּאֱמוּנוֹת כָּזְבִּיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עירוב ובלבול המדמה",
+   "target_he": "זוהמת הנחש",
+   "proof": "כִּי עֵרוּב וּבִלְבּוּל הַמְדַמֶּה, שֶׁמְּעָרֵב וּמְבַלְבֵּל בֶּאֱמוּנוֹת כָּזְבִּיּוֹת, זֶה בְּחִינַת זֻהֲמַת הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מדמה",
+   "target_he": "מנחשים וקוסמים",
+   "proof": "כִּי כָל הַמְנַחֲשִׁים וְהַקּוֹסְמִים כֻּלָּם הֵם עַל־יְדֵי כֹּחַ הַמְדַמֶּה, שֶׁאֵינוֹ מְבֹרָר וּמְתֻקָּן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אמונות כזביות של שטות ושקר",
+   "target_he": "זוהמת הנחש",
+   "proof": "שֶׁל שְׁטוּת וָשֶׁקֶר שֶׁהֵם זֻהֲמַת הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

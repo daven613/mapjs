@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_4_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תַּלְמִיד",
+   "target_he": "בֵּן",
+   "proof": "וְגַם הַתַּלְמִיד הוּא בְּחִינַת בֵּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לִמּוּד תּוֹרָה",
+   "target_he": "דַּעַת",
+   "proof": "עַל יְדֵי שֶׁלָּמַד עִמּוֹ תּוֹרָה וְהִכְנִיס בּוֹ דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "אָדָם",
+   "proof": "עַל־יְדֵי־זֶה נַּעֲשָׂה אָדָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

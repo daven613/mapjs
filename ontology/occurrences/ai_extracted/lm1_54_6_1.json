@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חִדּוּשֵׁי תּוֹרָה",
+   "target_he": "שָׁמַיִם וָאָרֶץ",
+   "proof": "כִּי עַל־יְדֵי חִדּוּשֵׁי תּוֹרָה נִבְרָאִים שָׁמַיִם וָאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁמַיִם וָאָרֶץ (הַנִּבְרָאִים עַל־יְדֵי חִדּוּשֵׁי תּוֹרָה)",
+   "target_he": "הַהַשְׁפָּעוֹת וְהַבְּרָכוֹת לָעוֹלָם",
+   "proof": "וְעַל־יְדֵי־זֶה בָּאִים כָּל הַהַשְׁפָּעוֹת וְהַבְּרָכוֹת לָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חִדּוּשִׁים עַל־יְדֵי כֹּחַ הַמְדַמֶּה",
+   "target_he": "רְקִיעִין דְּשָׁוְא",
+   "proof": "אֲזַי נִבְרָאִין רְקִיעִין דְּשָׁוְא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְקִיעִין דְּשָׁוְא",
+   "target_he": "רָעָב",
+   "proof": "וְעַל יָדָם בָּא רָעָב לָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבְרֵי תוֹרָה שֶׁבַּחִדּוּשִׁים",
+   "target_he": "שֹׂבַע",
+   "proof": "שֶׁהֵם בְּחִינַת שֹׂבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָרַע גּוֹבֵר וְהַטּוֹב נִתְבַּטֵּל",
+   "target_he": "וְלֹא נוֹדַע כִּי בָאוּ אֶל קִרְבֶּנָה",
+   "proof": "בִּבְחִינַת: וְלֹא נוֹדַע כִּי בָאוּ אֶל קִרְבֶּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּבְּרוּת בְּחִינַת שֶׁבַע שְׁנֵי הָרָעָב עַל בְּחִינַת שֶׁבַע שְׁנֵי הַשָּׂבָע",
+   "target_he": "הִתְגַּבְּרוּת הָרָע עַל הַטּוֹב",
+   "proof": "שֶׁהוּא בְּחִינַת הִתְגַּבְּרוּת הָרָע עַל הַטּוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֵין נִכָּר הַטּוֹב מִפְּנֵי הָרָע",
+   "target_he": "וְלֹא נוֹדַע וְכוּ'",
+   "proof": "בִּבְחִינַת: וְלֹא נוֹדַע וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 283,
+ "chunk": "283_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "לימוד",
+   "target_he": "מחלוקת",
+   "proof": "כִּי עִקַּר הַמַּחֲלֹקֶת הוּא מֵחֲמַת חֶסְרוֹן הַלִּמּוּד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד תורתו לאחרים",
+   "target_he": "טובו גניז בגויה",
+   "proof": "מֵחֲמַת שֶׁאֵין מְלַמֵּד תּוֹרָתוֹ לַאֲחֵרִים וְטוּבֵהּ גְּנִיז בְּגַוֵּהּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "מחלוקת של צדיקים",
+   "proof": "נִמְצָא, שֶׁהַמַּחֲלֹקֶת שֶׁל צַדִּיקִים, הוּא נִמְשָׁךְ מֵהַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

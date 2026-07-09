@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 230,
+ "chunk": "230_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "חכמה",
+   "target_he": "פנים",
+   "proof": "כִּי הַחָכְמָה הוּא בַּפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חכמת רבו",
+   "target_he": "פני רבו",
+   "proof": "כְּשֶׁהַתַּלְמִיד מְקַבֵּל חָכְמַת רַבּוֹ הוּא מְקַבֵּל פָּנָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

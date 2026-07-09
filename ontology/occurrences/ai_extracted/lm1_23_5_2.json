@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בֵּי אַבָּא",
+   "target_he": "עֲבוֹדַת־אֱלִילִים",
+   "proof": "בֵּי אַבָּא זֶה עֲבוֹדַת־אֱלִילִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֲבוֹדַת־אֱלִילִים",
+   "target_he": "חוֹבָה",
+   "proof": "וַעֲבוֹדַת־אֱלִילִים הִיא חוֹבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲבוֹדַת־אֱלִילִים",
+   "target_he": "כַּף חוֹבָה",
+   "proof": "שֶׁמַּכְרַעַת אֶת הַכֹּל לְכַף חוֹבָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תָּלָא לֵהּ פִּתְקָא בְּצַוָּארָא",
+   "target_he": "שְׁטַר צַוָּאָה",
+   "proof": "תָּלָא לֵהּ פִּתְקָא בְּצַוָּארָא – שְׁטַר צַוָּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

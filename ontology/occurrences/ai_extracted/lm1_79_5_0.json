@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 79,
+ "chunk": "79_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שבו איש תחתיו",
+   "target_he": "תחת מדרגתו",
+   "proof": "הַיְנוּ תַּחַת מַדְרֵגָתוֹ שָׁפָל מִמַּה שֶּׁהוּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אל יצא איש ממקומו",
+   "target_he": "למעלה ממדרגתו",
+   "proof": "הַיְנוּ לְמַעְלָה מִמַּדְרֵגָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תשובה שלמה",
+   "target_he": "ראיית שפלותו בשבת",
+   "proof": "וְאֵימָתַי יָכוֹל לִרְאוֹת שִׁפְלוּתוֹ בְּשַׁבָּת, כְּשֶׁעוֹשֶׂה תְּשׁוּבָה שְׁלֵמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תשובה שלמה",
+   "target_he": "שבת",
+   "proof": "שֶׁהִיא שַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ושבת עד ה' אלקיך",
+   "target_he": "שבת",
+   "proof": "אַתְוָון דְּדֵין כְּאַתְוָון דְּדֵין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

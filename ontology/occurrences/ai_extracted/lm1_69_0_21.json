@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 69,
+ "chunk": "69_0_21",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "ממונו",
+   "proof": "עַל יְדֵי צְדָקָה יוּכַל לְתַקֵּן מָמוֹנוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ממונו",
+   "target_he": "אֵשֶׁת נְעוּרָיו",
+   "proof": "יוּכַל לְתַקֵּן מָמוֹנוֹ, בְּחִינוֹת אֵשֶׁת נְעוּרָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "ממון גזלה",
+   "proof": "שֶׁעַל יְדֵי צְדָקָה יוּכַל לְתַקֵּן מָמוֹן גְּזֵלָה שֶׁיֵּשׁ לוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ממון גזלה שיש לו",
+   "target_he": "גזלו על ידי חמדה",
+   "proof": "הַיְנוּ שֶׁגְּזָלוֹ עַל־יְדֵי חֶמְדָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "השבת הגזילה",
+   "target_he": "גזלה ממש",
+   "proof": "כִּי גְּזֵלָה מַמָּשׁ אֵין לָהּ תִּקּוּן עַד שֶׁיָּשִׁיב אֶת הַגְּזֵלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עשיית צרכי רבים בממון שגזל",
+   "target_he": "גזל את הרבים",
+   "proof": "צָרִיךְ לַעֲשׂוֹת בְּהַמָּמוֹן שֶׁגָּזַל צָרְכֵי רַבִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "ממון גזלה על ידי חמדה",
+   "proof": "זֶה יָכוֹל לְתַקֵּן עַל־יְדֵי צְדָקָה, שֶׁעַל־יְדֵי צְדָקָה יִתְקַיֵּם כָּךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יתקיים כך",
+   "target_he": "יתקיים אצלו ממונו",
+   "proof": "הַיְנוּ שֶׁיִּתְקַיֵּם אֶצְלוֹ מָמוֹנוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

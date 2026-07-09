@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_2_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "צְדָקָה",
+   "target_he": "פָּתוֹחַ תִּפְתַּח",
+   "proof": "וּצְדָקָה הִיא תָּמִיד הַתְחָלָה, בִּבְחִינַת (דברים ט\"ו): פָּתוֹחַ תִּפְתַּח",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַתְחָלָה",
+   "target_he": "כָּל הַתְחָלוֹת קָשׁוֹת",
+   "proof": "וְזֶה בְּחִינַת: כָּל הַתְחָלוֹת קָשׁוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַתְחָלַת הַצְּדָקָה",
+   "target_he": "וְאֶת הָעֹרְבִים צִוִּיתִי",
+   "proof": "שֶׁזֶּה בְּחִינַת: וְאֶת הָעֹרְבִים צִוִּיתִי כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "הַפֶּתַח",
+   "proof": "וּסְגֻלַּת כֹּחַ הַצְּדָקָה – לְהַרְחִיב וְלִפְתֹּחַ הַפֶּתַח יוֹתֵר וְיוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צְדָקָה",
+   "target_he": "הַהַתְחָלָה שֶׁל כָּל הַהַתְחָלוֹת",
+   "proof": "כִּי צְדָקָה הִיא הַהַתְחָלָה שֶׁל כָּל הַהַתְחָלוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

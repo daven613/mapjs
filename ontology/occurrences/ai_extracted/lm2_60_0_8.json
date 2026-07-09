@@ -1,0 +1,28 @@
+{
+ "book": "lm2",
+ "torah": 60,
+ "chunk": "60_0_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חִדּוּשֵׁי הַתּוֹרָה",
+   "target_he": "חֲסָדִים",
+   "proof": "כִּי כָל חִדּוּשֵׁי הַתּוֹרָה שֶׁמְּגַלִּין, עַל־יְדֵי־זֶה מְגַלִּין חֲסָדִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמּוֹנֵעַ תַּלְמִידוֹ מִלְּשַׁמְּשׁוֹ",
+   "target_he": "חֶסֶד",
+   "proof": "כָּל הַמּוֹנֵעַ תַּלְמִידוֹ מִלְּשַׁמְּשׁוֹ, כְּאִלּוּ מוֹנֵעַ מִמֶּנּוּ חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

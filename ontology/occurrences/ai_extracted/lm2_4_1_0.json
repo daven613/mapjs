@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וְאֶת הָעֹרְבִים צִוִּיתִי לְכַלְכֶּלְךָ",
+   "target_he": "צְדָקָה",
+   "proof": "זֶה בְּחִינַת צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לְשַׁבֵּר אֶת הָאַכְזָרִיּוּת שֶׁלּוֹ לְהָפְכוֹ לְרַחֲמָנוּת",
+   "target_he": "עִקָּר עֲבוֹדַת הַצְּדָקָה",
+   "proof": "וְזֶהוּ עִקָּר עֲבוֹדַת הַצְּדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁבִירַת הָאַכְזָרִיּוּת וַהֲפִיכָתוֹ לְרַחֲמָנוּת",
+   "target_he": "וְאֶת הָעֹרְבִים צִוִּיתִי לְכַלְכֶּלְךָ",
+   "proof": "וְזֶה בְּחִינַת: וְאֶת הָעֹרְבִים צִוִּיתִי לְכַלְכֶּלְךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

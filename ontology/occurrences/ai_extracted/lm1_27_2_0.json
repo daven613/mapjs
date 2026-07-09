@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 27,
+ "chunk": "27_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הארת־פנים, הדרת־פנים",
+   "target_he": "שלום",
+   "proof": "וְאִי אֶפְשָׁר לָבוֹא לִבְחִינַת שָׁלוֹם, אֶלָּא עַל־יְדֵי הֶאָרַת־פָּנִים, הַדְרַת־פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלום",
+   "target_he": "לעבדו שכם אחד",
+   "proof": "אִתְעָרוּתָא שֶׁל בְּחִינַת (צפניה ג׳:ט׳): לְעָבְדוֹ שְׁכֶם אֶחָד, הוּא עַל־יְדֵי שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת יעקב",
+   "target_he": "שלום",
+   "proof": "וְשָׁלוֹם הוּא עַל־יְדֵי בְּחִינַת יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בחינת יעקב",
+   "target_he": "הארת פנים",
+   "proof": "שֶׁהוּא הֶאָרַת פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הארת פנים",
+   "target_he": "שופריה דיעקב כעין שופריה דאדם",
+   "proof": "בְּחִינַת שׁוּפְרֵהּ דְּיַעֲקֹב כְּעֵין שׁוּפְרֵהּ דְּאָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הארת פנים",
+   "target_he": "מבקשי פניך יעקב",
+   "proof": "וְזֶה בְּחִינַת (תהילים כ״ד:ו׳): מְבַקְשֵׁי פָנֶיךָ יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 13,
+ "chunk": "13_5_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שׁוֹר שֶׁבַּנֶּפֶשׁ",
+   "target_he": "הָאוֹר הַמְצֻחְצָח שֶׁנִּתּוֹסֵף בַּנֶּפֶשׁ מֵחֲמַת הַקִּבּוּץ",
+   "proof": "וּבְחִינַת שׁוֹר שֶׁבַּנֶּפֶשׁ, זֶה הָאוֹר הַמְצֻחְצָח שֶׁנִּתּוֹסֵף בַּנֶּפֶשׁ מֵחֲמַת הַקִּבּוּץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִבּוּץ פִּזּוּרֵי הַנֶּפֶשׁ",
+   "target_he": "הֶאָרַת הַנֶּפֶשׁ",
+   "proof": "שֶׁנִּתְקַבֵּץ פִּזּוּרֵי הַנֶּפֶשׁ, וְאָז מֵאִיר הַנֶּפֶשׁ בְּיוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹר הָרָצוֹן",
+   "target_he": "נֶפֶשׁ רְעֵבָה",
+   "proof": "כִּי כְּשֶׁהָרָצוֹן אֵין מֵאִיר, אָז הַנֶּפֶשׁ בִּבְחִינַת: וְנֶפֶשׁ רְעֵבָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹר",
+   "target_he": "רָעָב",
+   "proof": "כִּי עִקַּר הָרָעָב – מֵחֲמַת הֶעְדֵּר הָאוֹר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָאוֹר שֶׁיִּרְאֶה בְּעֵינָיו",
+   "target_he": "שֹׂבַע",
+   "proof": "כִּי עִקַּר הַשּׂבַע מֵחֲמַת הָאוֹר שֶׁיִּרְאֶה בְּעֵינָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְאִיָּה",
+   "target_he": "מִלּוּי הַנֶּפֶשׁ",
+   "proof": "וְעַל־יְדֵי שֶׁאֵינוֹ רוֹאֶה, אֵין נִתְמַלֵּא נַפְשׁוֹ, הַיְנוּ רְצוֹנוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נַפְשׁוֹ",
+   "target_he": "רְצוֹנוֹ",
+   "proof": "אֵין נִתְמַלֵּא נַפְשׁוֹ, הַיְנוּ רְצוֹנוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צַחְצְחוֹת הָאוֹר",
+   "target_he": "נֶפֶשׁ רְעֵבָה מִלֵּא טוֹב",
+   "proof": "וּכְשֶׁמְּצַחְצֵחַ נַפְשׁוֹ בְּצַחְצְחוֹת הָאוֹר, אֲזַי: וְנֶפֶשׁ רְעֵבָה מִלֵּא טוֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְנֶפֶשׁ רְעֵבָה מִלֵּא טוֹב",
+   "target_he": "וְהִשְׂבִּיעַ בְּצַחְצָחוֹת נַפְשֶׁךָ",
+   "proof": "בִּבְחִינַת (ישעיהו נ״ח:י״א): וְהִשְׂבִּיעַ בְּצַחְצָחוֹת נַפְשֶׁךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שׁוֹר",
+   "target_he": "הִסְתַּכְּלוּת",
+   "proof": "וְזֶה בְּחִינַת שׁוֹר, לְשׁוֹן הִסְתַּכְּלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שׁוֹר",
+   "target_he": "מַרְאֵה עֵינַיִם מֵהֲלָךְ־נָפֶשׁ",
+   "proof": "בְּחִינַת: מַרְאֵה עֵינַיִם מֵהֲלָךְ־נָפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

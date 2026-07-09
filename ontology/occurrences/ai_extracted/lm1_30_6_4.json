@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 30,
+ "chunk": "30_6_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אֲגָג",
+   "target_he": "כְּלָלוּת הָאַרְבַּע מַלְכֻיּוֹת דְּסִטְרָא־אָחֳרָא",
+   "proof": "כִּי אֲגָג הוּא כְּלָלוּת הָאַרְבַּע מַלְכֻיּוֹת דְּסִטְרָא־אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דָּלֶ\"ת",
+   "target_he": "מַלְכוּת דִּקְדֻשָּׁה",
+   "proof": "הַיְנוּ שֶׁחָתַךְ וְהִבְדִּיל אֶת הַדָּלֶ\"ת – שֶׁהִיא בְּחִינַת מַלְכוּת דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וַיְשַׁסֵּף",
+   "target_he": "שָׁבוּעוֹת סֻכּוֹת פֶּסַח",
+   "proof": "וְזֶה וַיְשַׁסֵּף, רָאשֵׁי־תֵּבוֹת שָׁבוּעוֹת סֻכּוֹת פֶּסַח",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלֹשׁ רְגָלִים",
+   "target_he": "מַלְכוּת דִּקְדֻשָּׁה",
+   "proof": "וְהֶעֱלָה אֶת הַמַּלְכוּת דִּקְדֻשָּׁה בְּשָׁלֹשׁ רְגָלִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹר הַפָּנִים שֶׁבְּשָׁלֹשׁ רְגָלִים",
+   "target_he": "חִיּוּתָהּ שֶׁל הַמַּלְכוּת",
+   "proof": "כִּי עִקַּר חִיּוּתָהּ מֵאוֹר הַפָּנִים שֶׁבְּשָׁלֹשׁ רְגָלִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

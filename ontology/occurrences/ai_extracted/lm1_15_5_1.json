@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 15,
+ "chunk": "15_5_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אַקְרוּקְתָא",
+   "target_he": "עֲלִיַּת הַיִּרְאָה לְשָׁרְשָׁהּ",
+   "proof": "וְזֶה בְּחִינַת עֲלִיַּת הַיִּרְאָה לְשָׁרְשָׁהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֲלִיַּת הַיִּרְאָה לְשָׁרְשָׁהּ",
+   "target_he": "דַּעַת",
+   "proof": "הַיְנוּ דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צִפּוֹר",
+   "target_he": "יִרְאָה",
+   "proof": "וְצִפּוֹר הוּא בְּחִינַת יִרְאָה, בְּחִינַת אֶרֶץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צִפּוֹר",
+   "target_he": "אֶרֶץ",
+   "proof": "וְצִפּוֹר הוּא בְּחִינַת יִרְאָה, בְּחִינַת אֶרֶץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דֵּעָה",
+   "target_he": "יִרְאָה",
+   "proof": "וְדֵעָה הִיא שֹׁרֶשׁ הַיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קְרָא בְגָרוֹן",
+   "target_he": "תּוֹרָה שֶׁבְּנִגְלֶה",
+   "proof": "שֶׁזֶּה בְּחִינַת תּוֹרָה שֶׁבְּנִגְלֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲלִיַּת הַיִּרְאָה לִבְחִינַת דַּעַת",
+   "target_he": "תּוֹרָה שֶׁבְּנִגְלֶה",
+   "proof": "כִּי עַל־יְדֵי עֲלִיַּת הַיִּרְאָה לִבְחִינַת דַּעַת, זוֹכִין לַתּוֹרָה שֶׁבְּנִגְלֶה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

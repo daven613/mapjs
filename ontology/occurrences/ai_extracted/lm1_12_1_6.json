@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_1_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רָחֵל",
+   "target_he": "תּוֹרָה שֶׁבְּעַל־פֶּה",
+   "proof": "רָחֵל – בְּחִינַת תּוֹרָה שֶׁבְּעַל־פֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וַיִּשַּׁק יַעֲקֹב",
+   "target_he": "הַתַּנָּא",
+   "proof": "וְזֶה בְּחִינַת: וַיִּשַּׁק יַעֲקֹב – הוּא הַתַּנָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְרָחֵל",
+   "target_he": "הַתּוֹרָה שֶׁבְּעַל־פֶּה שֶׁחִדֵּשׁ",
+   "proof": "לְרָחֵל – הִיא הַתּוֹרָה שֶׁבְּעַל־פֶּה שֶׁחִדֵּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אָדָם כָּשֵׁר לוֹמֵד תּוֹרַת הַתַּנָּא",
+   "target_he": "תַּעֲנוּג גָּדוֹל לְהַתַּנָּא",
+   "proof": "כְּשֶׁאָדָם כָּשֵׁר לוֹמֵד תּוֹרַת הַתַּנָּא, אֲזַי הַתַּנָּא נוֹשֵׁק אוֹתוֹ, וְהוּא נוֹשֵׁק הַתַּנָּא, וְגוֹרֵם תַּעֲנוּג גָּדוֹל לְהַתַּנָּא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לִמּוּדָם שֶׁל הַלּוֹמְדִים שֶׁאֵינָם הֲגוּנִים",
+   "target_he": "רוּחַ־הַקֹּדֶשׁ שֶׁל רָחֵל",
+   "proof": "נִמְצָא שֶׁעַל־יְדֵי לִמּוּדָם שֶׁיִּלְמְדוּ לֹא תִּכָּנֵס רוּחַ־הַקֹּדֶשׁ שֶׁל רָחֵל, שֶׁל תּוֹרָה שֶׁבְּעַל־פֶּה, לִקְבוּרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

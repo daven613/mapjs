@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 251,
+ "chunk": "251_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מִלְחָמוֹת",
+   "target_he": "מַחֲלֹקֶת",
+   "proof": "שֶׁעַל־יְדֵי מִלְחָמוֹת, הַיְנוּ מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִלְחָמוֹת",
+   "target_he": "מַחֲשָׁבוֹת שֶׁל רְשָׁעִים עַל אֲנָשִׁים כְּשֵׁרִים",
+   "proof": "עַל־יְדֵי־זֶה נוֹפְלִים מַחֲשָׁבוֹת שֶׁל רְשָׁעִים עַל אֲנָשִׁים כְּשֵׁרִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַחֲשָׁבוֹת שֶׁל רְשָׁעִים",
+   "target_he": "מַחֲשָׁבוֹת שֶׁל כְּפִירוּת",
+   "proof": "הַיְנוּ מַחֲשָׁבוֹת שֶׁל כְּפִירוּת, שֶׁנּוֹפְלִים עֲלֵיהֶם עַל־יְדֵי־זֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לִמְסֹר הַמִּלְחָמָה עַל ה'",
+   "target_he": "מַחְשְׁבוֹת רְשָׁעִים",
+   "proof": "לִמְסֹר הַמִּלְחָמָה עַל ה', שֶׁה' יִלָּחֵם הַמִּלְחָמָה, עַל־יְדֵי־זֶה מְבַטֵּל מַחְשְׁבוֹת רְשָׁעִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

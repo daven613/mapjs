@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 155,
+ "chunk": "155_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עַצְבוּת וְעַצְלוּת",
+   "target_he": "שֶׁאֵינוֹ מִתְפַּלֵּל כָּרָאוּי",
+   "proof": "מַה שֶּׁאֵינוֹ מִתְפַּלֵּל כָּרָאוּי, הוּא מֵחֲמַת עַצְבוּת וְעַצְלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "עַצְבוּת וְעַצְלוּת",
+   "proof": "הַיְנוּ מֵחֲמַת חֶסְרוֹן אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה שְׁלֵמָה",
+   "target_he": "עַצְבוּת וְעַצְלוּת וּכְבֵדוּת בִּתְפִלָּתוֹ",
+   "proof": "כִּי בְּוַדַּאי אִם הָיָה לוֹ אֱמוּנָה שְׁלֵמָה... בְּוַדַּאי לֹא הָיָה לוֹ שׁוּם עַצְבוּת וְעַצְלוּת וּכְבֵדוּת בִּתְפִלָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה שְׁלֵמָה",
+   "target_he": "מִתְפַּלֵּל כָּרָאוּי",
+   "proof": "וּבְוַדַּאי הָיָה מִתְפַּלֵּל כָּרָאוּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

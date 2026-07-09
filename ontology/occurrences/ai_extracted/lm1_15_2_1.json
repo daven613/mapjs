@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 15,
+ "chunk": "15_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דן ושופט את עצמו",
+   "target_he": "דין למעלה",
+   "proof": "כִּי כְּשֶׁאֵין אָדָם דָּן וְשׁוֹפֵט אֶת עַצְמוֹ, אֲזַי דָּנִין וְשׁוֹפְטִין אוֹתוֹ לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "משפט דלעלא",
+   "target_he": "הדין מתלבש בכל הדברים",
+   "proof": "וּכְשֶׁשּׁוֹפְטִין אֶת הָאָדָם בְּמִשְׁפָּט דִּלְעֵלָּא, אֲזַי הַדִּין נִתְלַבֵּשׁ בְּכָל הַדְּבָרִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שופט את עצמו",
+   "target_he": "התעוררות מעצמו",
+   "proof": "וְאֵין הַיִּרְאָה מִתְלַבֵּשׁ בְּשׁוּם דָּבָר לְעוֹרֵר אֶת הָאָדָם, כִּי הוּא בְּעַצְמוֹ נִתְעוֹרֵר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ושם דרך",
+   "target_he": "שופט ארחותיו",
+   "proof": "מִי שֶׁשָּׂם אָרְחוֹתָיו, הַיְנוּ שֶׁשּׁוֹפֵט אָרְחוֹתָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "משפט ארחותיו",
+   "target_he": "ישע אלקים",
+   "proof": "עַל־יְדֵי־זֶה: אַרְאֶנּוּ בְּיֵשַׁע אֱלֹקִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "משפט",
+   "target_he": "יראה",
+   "proof": "זֶה בְּחִינַת יִרְאָה, כְּמוֹ שֶׁכָּתוּב (קהלת יב): אֶת הָאֱלֹקִים יְרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "משפט",
+   "target_he": "יראה עולה מהקליפה ומהאומות",
+   "proof": "הַיְנוּ בְּחִינַת יִרְאָה עוֹלָה מֵהַקְּלִפָּה וּמֵהָאֻמּוֹת עַל־יְדֵי מִשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

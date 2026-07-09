@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 21,
+ "chunk": "21_4_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַיְשִׁיבָה",
+   "target_he": "הֶעְדֵּר הַבְּחִירָה",
+   "proof": "שֶׁהַיְשִׁיבָה הוּא מוֹרֶה עַל הֶעְדֵּר הַבְּחִירָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוֹשֵׁב בַּשָּׁמַיִם",
+   "target_he": "הֶעְדֵּר הַהִשְׁתַּנּוּת",
+   "proof": "כְּמוֹ יוֹשֵׁב בַּשָּׁמַיִם, שֶׁהוּא מוֹרֶה עַל הֶעְדֵּר הַהִשְׁתַּנּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַתְּנוּעָה",
+   "target_he": "הִשְׁתַּנּוּת מֵרָצוֹן אֶל רָצוֹן",
+   "proof": "כִּי הַתְּנוּעָה מוֹרָה עַל הִשְׁתַּנּוּת מֵרָצוֹן אֶל רָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַיְשִׁיבָה",
+   "target_he": "הֶעְדֵּר הִשְׁתַּנּוּת",
+   "proof": "וְהַיְשִׁיבָה מוֹרָה עַל הֶעְדֵּר הִשְׁתַּנּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הֶעְדֵּר הִשְׁתַּנּוּת",
+   "target_he": "בִּטּוּל הַבְּחִירָה",
+   "proof": "הַיְנוּ בִּטּוּל הַבְּחִירָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עַטְרוֹתֵיהֶם",
+   "target_he": "הַמַּקִּיפִים",
+   "proof": "הַיְנוּ הַמַּקִּיפִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמַּקִּיפִים",
+   "target_he": "הַשִּׂכְלִיּוֹת שֶׁלֹּא הָיָה יָכוֹל לְהָבִין",
+   "proof": "הַיְנוּ הַמַּקִּיפִים יִכָּנְסוּ בְּתוֹךְ הַמֹּחִין לִפְנִים, וְאָז יִכָּנְסוּ כָּל הַשִּׂכְלִיּוֹת שֶׁלֹּא הָיָה יָכוֹל לְהָבִין אוֹתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשִּׂכְלִיּוֹת נִכְנָסוֹת בְּתוֹךְ הַמֹּחִין",
+   "target_he": "יְדִיעָה וְהַשָּׂגָה",
+   "proof": "יִכָּנְסוּ לִפְנִים בְּתוֹךְ הַמֹּחִין, וְיֵדַע וְיַשִּׂיג אוֹתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְדִיעָה וְהַשָּׂגָה",
+   "target_he": "יְצִיאָה מִגֶּדֶר אֱנוֹשִׁי וַעֲלִיָּה לְגֶדֶר מַלְאָךְ",
+   "proof": "וְיֵדַע וְיַשִּׂיג אוֹתָם, וְאָז יֵצֵא מִגֶּדֶר אֱנוֹשִׁי וְיַעֲלֶה לְגֶדֶר מַלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲלִיָּה לְגֶדֶר מַלְאָךְ",
+   "target_he": "בִּטּוּל הַבְּחִירָה",
+   "proof": "וְיַעֲלֶה לְגֶדֶר מַלְאָךְ, וְיִתְבַּטֵּל הַבְּחִירָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

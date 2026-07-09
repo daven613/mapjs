@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_8_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הִתְקַשְּׁרוּת",
+   "target_he": "הוֹלָדָה",
+   "proof": "שֶׁהוּא בִּשְׁבִיל הוֹלָדָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הוֹלָדָה",
+   "target_he": "בִּטָּחוֹן",
+   "proof": "שֶׁהוּא בִּבְחִינַת בִּטָּחוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הוֹלָדָה",
+   "target_he": "כְּלָיוֹת",
+   "proof": "בְּחִינַת כְּלָיוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כְּלָיוֹת",
+   "target_he": "כְּלֵי הַהוֹלָדָה",
+   "proof": "שֶׁהֵם כְּלֵי הַהוֹלָדָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בִּטָּחוֹן",
+   "target_he": "בָּטַח בָּהּ לֵב בַּעְלָהּ",
+   "proof": "וְזֶה בְּחִינַת (משלי ל״א:י״א): בָּטַח בָּהּ לֵב בַּעְלָהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְקַשְּׁרוּת",
+   "target_he": "בִּטָּחוֹן דְּסִטְרָא אָחֳרָא",
+   "proof": "עַל־יְדֵי־זֶה נִתְבַּטֵּל וְנִשְׁבָּר בְּחִינַת הַבִּטָּחוֹן דְּסִטְרָא אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְקַשְּׁרוּת",
+   "target_he": "בִּטָּחוֹן דִּקְדֻשָּׁה",
+   "proof": "כִּי הַבִּטָּחוֹן דִּקְדֻשָּׁה שֶׁנַּעֲשֶׂה עַל־יְדֵי הַהִתְקַשְּׁרוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בִּטָּחוֹן דְּסִטְרָא אָחֳרָא",
+   "target_he": "שְׁבִירַת כְּלִי חֶרֶס",
+   "proof": "שֶׁהוּא בִּבְחִינַת שְׁבִירַת כְּלִי חֶרֶס כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִבְטַח בּוֹגֵד",
+   "target_he": "שְׁבִירַת כְּלִי חֶרֶס",
+   "proof": "שֶׁזֶּה נַעֲשֶׂה עַל־יְדֵי מִבְטַח בּוֹגֵד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

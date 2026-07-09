@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_8_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מוסיפין אור קדושה ודעת בכל יום ויום",
+   "target_he": "מצח הנחש",
+   "proof": "פּוֹגְמִים אֶת יְמֵיהֶם וְאֵין מוֹסִיפִין אוֹר קְדֻשָּׁה וָדַעַת בְּכָל יוֹם וָיוֹם, מִזֶּה יוֹנֵק מֵצַח הַנָּחָשׁ, חָכְמַת הַטֶּבַע הַנַּ״ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "מצח הנחש",
+   "proof": "מִפְּגַם הַדַּעַת הַזֶּה שֶׁל אֵלּוּ הַזְּקֵנִים יוֹנֵק מֵצַח הַנָּחָשׁ, שֶׁהוּא חָכְמַת הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מצח הנחש",
+   "target_he": "חכמת הטבע",
+   "proof": "יוֹנֵק מֵצַח הַנָּחָשׁ, שֶׁהוּא חָכְמַת הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נפילת הדעת והימים",
+   "target_he": "דעת חכמת הטבע שכופרים ברצון",
+   "proof": "וּמִתְגַּבֵּר, חַס וְשָׁלוֹם, דַּעַת חָכְמַת הַטֶּבַע, שֶׁכּוֹפְרִים בָּרָצוֹן עַל־יְדֵי נְפִילַת הַדַּעַת וְהַיָּמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קצר ימים",
+   "target_he": "הזקנים שאינם כראוי",
+   "proof": "קְצַר יָמִים זֶה בְּחִינַת הַזְּקֵנִים שֶׁאֵינָם כָּרָאוּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מוסיפין קדושה ודעת בכל יום",
+   "target_he": "עיקר הזקנה והאריכות ימים",
+   "proof": "שֶׁאֵין מוֹסִיפִין קְדֻשָּׁה וָדַעַת בְּכָל יוֹם, שֶׁזֶּהוּ עִקָּר הַזִּקְנָה וְהָאֲרִיכוּת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פוגמים את ימיהם ואין מאריכין את ימיהם בקדושה ודעת",
+   "target_he": "קצר ימים",
+   "proof": "וּכְשֶׁהַזְּקֵנִים פּוֹגְמִים אֶת יְמֵיהֶם וְאֵין מַאֲרִיכִין אֶת יְמֵיהֶם בִּקְדֻשָּׁה וָדַעַת כַּנַּ״ל, זֶה בְּחִינַת קְצַר יָמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קצר ימים",
+   "target_he": "מצח הנחש",
+   "proof": "וּמִזֶּה יוֹנֵק מֵצַח הַנָּחָשׁ, שֶׁהוּא הֶפֶךְ מֵצַח הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מצח הנחש",
+   "target_he": "הפך מצח הרצון",
+   "proof": "שֶׁהוּא הֶפֶךְ מֵצַח הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שבע רוגז",
+   "target_he": "הפך הרצון",
+   "proof": "וְזֶהוּ: שְׂבַע רֹגֶז – הֶפֶךְ הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

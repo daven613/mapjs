@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_5_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מרדכי",
+   "target_he": "הכפירה בעבודה זרה",
+   "proof": "מָרְדֳּכַי הוּא בְּחִינַת הַכְּפִירָה בַּעֲבוֹדָה זָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הדיבורים אשר הגיד מרדכי",
+   "target_he": "דיבורי אמונה של הצדיק האמת",
+   "proof": "שֶׁהַדִּבּוּרִים אֲשֶׁר הִגִּיד מָרְדֳּכַי... שֶׁהֵם דִּבּוּרֵי אֱמוּנָה שֶׁל הַצַּדִּיק הָאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מרדכי",
+   "target_he": "הצדיק",
+   "proof": "כִּי נִמְצָא בְּסִפְרֵיהֶם הַדִּבּוּרִים קְדוֹשִׁים אֲשֶׁר הִגִּיד מָרְדֳּכַי, שֶׁהוּא בְּחִינַת הַצַּדִּיק כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דיבור הצדיק",
+   "target_he": "הפך אמונתם בספריהם",
+   "proof": "כִּי הַדִּבּוּר שֶׁל הַצַּדִּיק הָלַךְ לְמֵרָחוֹק עַד שֶׁנִּכְתַּב וְנֶחְקַק שָׁם בְּסִפְרֵיהֶם, שֶׁעַל־ יְדֵי־זֶה נִמְצָא בְּסִפְרֵיהֶם הֶפֶךְ אֱמוּנָתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "היפך אמונתם",
+   "target_he": "גרים",
+   "proof": "כְּשֶׁבָּאִים אֵלּוּ הָעַכּוּ\"ם וּמוֹצְאִים שָׁם הֶפֶךְ אֱמוּנָתָם, מִזֶּה נַעֲשִׂים גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

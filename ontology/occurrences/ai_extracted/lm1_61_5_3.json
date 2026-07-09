@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 61,
+ "chunk": "61_5_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "סֵפֶר",
+   "proof": "עַל־יְדֵי הַמַּחֲלֹקֶת נַעֲשֶׂה סֵפֶר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עַל־יְדֵי רִיב וּמַחֲלֹקֶת נַעֲשֶׂה סֵפֶר",
+   "target_he": "וְסֵפֶר כָּתַב אִישׁ רִיבִי",
+   "proof": "וְזֶה בְּחִינַת (איוב ל״א:ל״ה): וְסֵפֶר כָּתַב אִישׁ רִיבִי – שֶׁעַל־יְדֵי רִיב וּמַחֲלֹקֶת נַעֲשֶׂה סֵפֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַחֲלֹקֶת עַל צַדִּיקֵי הַדּוֹר שֶׁאֱמוּנָתָם שְׁלֵמָה",
+   "target_he": "וְהוּא חֵטְא רַבִּים נָשָׂא",
+   "proof": "הוּא בִּבְחִינַת (ישעיהו נ״ג:י״ב): וְהוּא חֵטְא רַבִּים נָשָׂא וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת שֶׁיֵּשׁ עָלָיו",
+   "target_he": "אֱמוּנַת חֲכָמִים אֵצֶל הַהֲמוֹן עָם",
+   "proof": "וְעַל־יְדֵי הַמַּחֲלֹקֶת שֶׁיֵּשׁ עָלָיו, עַל יְדֵי זֶה מְתַקֵּן הָאֱמוּנַת חֲכָמִים אֵצֶל הַהֲמוֹן עָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

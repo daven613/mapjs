@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 78,
+ "chunk": "78_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "רְשָׁעִים בְּחַיֵּיהֶם",
+   "target_he": "מֵתִים",
+   "proof": "רְשָׁעִים בְּחַיֵּיהֶם קְרוּיִים מֵתִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֶבֶל דִּקְדֻשָּׁה",
+   "target_he": "חִיּוּת",
+   "proof": "מֵחֲמַת שֶׁנִּפְסָק מֵחֶבֶל דִּקְדֻשָּׁה, מֵאַיִן יִהְיֶה לוֹ חִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֶלֶךְ זָקֵן וּכְסִיל",
+   "target_he": "רוּחַ שֶׁל שְׁטוּת",
+   "proof": "וְשׁוֹאֵב רוּחַ שֶׁל שְׁטוּת, כִּי דָּבוּק אֶל מֶלֶךְ זָקֵן וּכְסִיל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוּחַ שְׁטוּת",
+   "target_he": "עֲבֵרָה",
+   "proof": "אֵין אָדָם עוֹבֵר עֲבֵרָה אֶלָּא אִם כֵּן נִכְנַס בּוֹ רוּחַ שְׁטוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִצְוָה",
+   "target_he": "רוּחַ הַקֹּדֶשׁ",
+   "proof": "אֲבָל לְהֵפֶךְ, נִכְנַס בּוֹ רוּחַ־הַקֹּדֶשׁ",
+   "explicitness": "inferred",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

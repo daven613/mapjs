@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_3_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בְגָדֶיךָ לְבָנִים",
+   "target_he": "בְּלֹא רְבָב",
+   "proof": "הַיְנוּ בְּלֹא רְבָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּלֹא רְבָב",
+   "target_he": "טָהֳרַת הַשְּׁכִינָה מִנִּדָּתָהּ",
+   "proof": "הַיְנוּ בְּחִינַת טָהֳרַת הַשְּׁכִינָה מִנִּדָּתָהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טָהֳרַת הַשְּׁכִינָה מִנִּדָּתָהּ",
+   "target_he": "דָּם נֶעְכָּר וְנַעֲשֶׂה חָלָב",
+   "proof": "בִּבְחִינַת דָּם נֶעְכָּר וְנַעֲשֶׂה חָלָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲווֹנוֹת הָרְשָׁעִים",
+   "target_he": "אַפְרָשׁוּתָא בֵּין קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּיהּ",
+   "proof": "וְהָרְשָׁעִים בַּעֲווֹנוֹתֵיהֶם גּוֹרְמִין אַפְרָשׁוּתָא בֵּין קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּיהּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲווֹנוֹת הָרְשָׁעִים",
+   "target_he": "דַּם נִדָּה",
+   "proof": "כִּי גּוֹרְמִין לָהּ דַּם נִדָּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּם נִדָּה",
+   "target_he": "עִיר הַדָּמִים",
+   "proof": "וְאָז הִיא נִקְרֵאת עִיר הַדָּמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עִיר הַדָּמִים",
+   "target_he": "אַנְשֵׁי דָּמִים",
+   "proof": "וְעַל־שֵׁם זֶה רְשָׁעִים נִקְרָאִים אַנְשֵׁי דָּמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁסָ\"ה לֹא תַעֲשֶׂה",
+   "target_he": "שְׁסָ\"ה גִּידִים",
+   "proof": "כִּי שְׁסָ\"ה לֹא תַעֲשֶׂה תְּלוּיִים בִּשְׁסָ\"ה גִּידִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לֹא תַעֲשֶׂה שֶׁעוֹבְרִים",
+   "target_he": "דַּם נִדָּה לְהַשְּׁכִינָה",
+   "proof": "וּלְפִי בְּחִינַת לֹא תַעֲשֶׂה שֶׁעוֹבְרִים, כֵּן מְעוֹרְרִים דַּם נִדָּה לְהַשְּׁכִינָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַלָּאוִין",
+   "target_he": "הַגִּידִין",
+   "proof": "הַיְנוּ לְתַקֵּן הַלָּאוִין שֶׁהֵם הַגִּידִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַלָּאוִין",
+   "target_he": "לַבְנוּנִית בַּגִּידִין",
+   "proof": "הַיְנוּ לְתַקֵּן הַלָּאוִין שֶׁהֵם הַגִּידִין, וּלְהַמְשִׁיךְ לָהֶם לַבְנוּנִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

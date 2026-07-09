@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 60,
+ "chunk": "60_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מִלְחָמוֹת וּשְׁפִיכוּת־דָּמִים",
+   "target_he": "אֲדָמָה נוֹתֶנֶת כֹּחָהּ",
+   "proof": "כְּשֶׁיֵּשׁ מִלְחָמוֹת וּשְׁפִיכוּת־דָּמִים, אֲזַי הָאֲדָמָה נוֹתֶנֶת כֹּחָהּ לְשָׁם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֵדִים הָעוֹלִים מִן הָאֲדָמָה",
+   "target_he": "שְׁפִיכוּת־דָּמִים",
+   "proof": "כִּי מִן הָאֵדִים הָעוֹלִים מִמֶּנָּה נַעֲשֶׂה הַשְּׁפִיכוּת־דָּמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁפִיכוּת־דָּמִים",
+   "target_he": "גְּשָׁמִים",
+   "proof": "וְעַל־כֵּן אֵין יוֹרְדִין גְּשָׁמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֵדִים",
+   "target_he": "גְּשָׁמִים",
+   "proof": "כִּי הַגְּשָׁמִים נַעֲשִׂין מִן הָאֵדִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גְּשָׁמִים",
+   "target_he": "מִלְחָמוֹת וּגְיָסוֹת",
+   "proof": "כִּי כְּשֶׁיֵּשׁ גְּשָׁמִים, נִפְסָקִים הַגְּיָסוֹת וְהַמִּלְחָמוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

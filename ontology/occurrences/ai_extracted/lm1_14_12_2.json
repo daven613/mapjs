@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_12_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רֶגֶל",
+   "target_he": "נִרְגָּן מַפְרִיד אַלּוּף",
+   "proof": "רֶגֶל זֶה בְּחִינַת: נִרְגָּן מַפְרִיד אַלּוּף הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִרְגָּן מַפְרִיד אַלּוּף",
+   "target_he": "לֹא רָגַל עַל לְשׁוֹנוֹ",
+   "proof": "בְּחִינַת (תהילים ט״ו:ג׳): לֹא רָגַל עַל לְשׁוֹנוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נֵר־חֲנֻכָּה סָמוּךְ לַפֶּתַח",
+   "target_he": "שָׁלוֹם",
+   "proof": "וְזֶהוּ שֶׁצְּרִיכִין לְהָאִיר וּלְהַדְלִיק נֵר־חֲנֻכָּה סָמוּךְ לַפֶּתַח... עַד שֶׁיִּזְכֶּה לְשָׁלוֹם וִיבַטֵּל וִיכַלֶּה הַ\"נִּרְגָּן מַפְרִיד אַלּוּף\"",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נֵר־חֲנֻכָּה סָמוּךְ לַפֶּתַח",
+   "target_he": "נִרְגָּן מַפְרִיד אַלּוּף",
+   "proof": "וִיבַטֵּל וִיכַלֶּה הַ\"נִּרְגָּן מַפְרִיד אַלּוּף\"",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

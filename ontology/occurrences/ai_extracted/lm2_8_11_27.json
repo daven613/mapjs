@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_11_27",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לְיוֹם חַגֵּנוּ",
+   "target_he": "רֹאשׁ־הַשָּׁנָה",
+   "proof": "לְיוֹם חַגֵּנוּ – הוּא רֹאשׁ־הַשָּׁנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רֹאשׁ־הַשָּׁנָה",
+   "target_he": "אֱמוּנָה",
+   "proof": "זֶה בְּחִינַת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן כֹּחַ הַמְדַמֶּה",
+   "target_he": "אֱמוּנָה",
+   "proof": "שֶׁנִּתְתַּקֵּן עַל־יְדֵי תִּקּוּן כֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כֹּחַ הַמְדַמֶּה",
+   "target_he": "חַג",
+   "proof": "שֶׁהוּא בְּחִינַת חַג",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יְתָאֳרֵהוּ",
+   "target_he": "תְּאָרִים וּשְׁבָחִים",
+   "proof": "יְתָאֳרֵהוּ – הַיְנוּ תְּאָרִים וּשְׁבָחִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּאָרִים וּשְׁבָחִים",
+   "target_he": "כֹּחַ הַמְדַמֶּה",
+   "proof": "שֶׁהֵם בְּחִינַת כֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֹּחַ הַמְדַמֶּה מְבֹרָר וּמְתֻקָּן",
+   "target_he": "לְסַדֵּר שְׁבָחִים וּתְאָרִים לוֹ יִתְבָּרַךְ",
+   "proof": "וְעַל־כֵּן כְּשֶׁהַמְדַמֶּה מְבֹרָר וּמְתֻקָּן, אָז יְכוֹלִים לְסַדֵּר שְׁבָחִים וּתְאָרִים לוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַמְדַמֶּה",
+   "target_he": "יְדִיעַת לְתָאֵר אוֹתוֹ יִתְבָּרַךְ בִּשְׁבָחִים וּתְאָרִים",
+   "proof": "כִּי כְּשֶׁאֵין הַמְדַמֶּה מְתֻקָּן, אֲזַי אֵין יוֹדְעִים כְּלָל לְתָאֵר אוֹתוֹ יִתְבָּרַךְ, כִּבְיָכוֹל, בִּשְׁבָחִים וּתְאָרִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

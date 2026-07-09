@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_4_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַתַּעֲנִיתִים",
+   "target_he": "הֲרָקַת הַשַּׂק",
+   "proof": "אַחַר כָּל הַתַּעֲנִיתִים, שֶׁהוּא הֲרָקַת הַשַּׂק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשַּׂק",
+   "target_he": "הַגּוּף",
+   "proof": "אַחַר כָּל הַתַּעֲנִיתִים, שֶׁהוּא הֲרָקַת הַשַּׂק, בְּחִינַת הַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צְרוֹרוֹת כַּסְפֵּיהֶם",
+   "target_he": "תַּאֲווֹת עַצְמָן",
+   "proof": "הַיְנוּ, לֹא דַּי צְרוֹרוֹת כַּסְפֵּיהֶם, שֶׁהוּא תַּאֲווֹת עַצְמָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֲבִיהֶם",
+   "target_he": "הַתַּאֲווֹת שֶׁל אֲבִיהֶם",
+   "proof": "הַיְנוּ הַתַּאֲווֹת שֶׁל אֲבִיהֶם, גַּם הֵמָּה לֹא נָפְלוּ מֵהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֲרָדָה",
+   "target_he": "לְהִשְׂתָּרֵר וְלִמְלֹךְ",
+   "proof": "כִּי חֲרָדָה נָפְלָה עֲלֵיהֶם, וַאֲזַי לֹא הָיוּ רוֹצִים לְהִשְׂתָּרֵר וְלִמְלֹךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

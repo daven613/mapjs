@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_11_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בֵּית־הַמִּקְדָּשׁ (הַר הַמּוֹרִיָּה)",
+   "target_he": "תַּלְמִיד",
+   "proof": "לָמָּה נִקְרָא שְׁמוֹ הַר הַמּוֹרִיָּה, שֶׁמִּמֶּנּוּ הוֹרָאָה יוֹצְאָה לְיִשְׂרָאֵל – זֶה בְּחִינַת תַּלְמִיד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בֵּית־הַמִּקְדָּשׁ (חֲדַר הַמִּטּוֹת)",
+   "target_he": "בֵּן",
+   "proof": "לָמָּה נִקְרָא שְׁמוֹ חֲדַר הַמִּטּוֹת שֶׁעַל־יָדוֹ פָּרִים וְרָבִים יִשְׂרָאֵל – זֶה בְּחִינַת בֵּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בֵּית־הַמִּקְדָּשׁ (בִּמְקוֹם הַגֹּרֶן)",
+   "target_he": "פַּרְנָסָה",
+   "proof": "וְעַל־כֵּן בֵּית־הַמִּקְדָּשׁ בִּמְקוֹם הַגֹּרֶן, זֶה בְּחִינַת פַּרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "target_he": "פַּרְנָסָה",
+   "proof": "שֶׁנִּמְשָׁךְ עַל־יְדֵי כְּלָלִיּוּת בֵּן וְתַלְמִיד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לֶחֶם־הַפָּנִים",
+   "target_he": "הָאֲכִילָה וְהַפַּרְנָסָה",
+   "proof": "וְזֶה בְּחִינַת לֶחֶם־הַפָּנִים שֶׁהָיָה בְּבֵית־הַמִּקְדָּשׁ, זֶה בְּחִינַת הָאֲכִילָה וְהַפַּרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "target_he": "הָאֲכִילָה וְהַפַּרְנָסָה",
+   "proof": "שֶׁנִּמְשָׁךְ עַל יְדֵי כְּלָלִיּוּת בֵּן וְתַלְמִיד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לֶחֶם־הַפָּנִים",
+   "target_he": "אוֹרוֹת הַמַּקִּיפִים",
+   "proof": "שֶׁבּוֹ נִתְגַּלֶּה אוֹרוֹת הַמַּקִּיפִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אוֹרוֹת הַמַּקִּיפִים",
+   "target_he": "אוֹר הַפָּנִים",
+   "proof": "שֶׁהֵם בְּחִינַת אוֹר הַפָּנִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אוֹר הַפָּנִים",
+   "target_he": "ש\"ע נְהוֹרִין",
+   "proof": "כִּי אוֹר הַפָּנִים זֶה בְּחִינַת ש\"ע נְהוֹרִין, כַּיָּדוּעַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ש\"ע",
+   "target_he": "שְׁתֵּי פְּעָמִים הֶקֵּף",
+   "proof": "וְש\"ע הוּא שְׁתֵּי פְּעָמִים \"הֶקֵּף\", כַּמּוּבָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

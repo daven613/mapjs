@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_13_16",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מַה שְּׁמוֹ",
+   "target_he": "חָכְמָה",
+   "proof": "מַה שְּׁמוֹ, דָּא חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַה שֵׁם בְּנוֹ",
+   "target_he": "תִּפְאֶרֶת",
+   "proof": "מַה שֵׁם בְּנוֹ, דָּא תִּפְאֶרֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תַּלְמִידִים (לִמּוּדֵי ה')",
+   "target_he": "נֶצַח הוֹד",
+   "proof": "תַּלְמִידִים הֵם לִמּוּדֵי ה', דָּא נֶצַח הוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כֹּל",
+   "target_he": "יְסוֹד",
+   "proof": "כֹּל, דָּא יְסוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רֵאָה",
+   "target_he": "אֵיבָרִים הַפְּנִימִיִּים",
+   "proof": "רֵאָה הִיא אֵיבָרִים הַפְּנִימִיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמּוֹנֵעַ הֲלָכָה מִפִּי תַּלְמִיד",
+   "target_he": "חֶסֶד",
+   "proof": "הַמּוֹנֵעַ הֲלָכָה מִפִּי תַּלְמִיד, כְּאִלּוּ מוֹנֵעַ מִמֶּנּוּ חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמּוֹנֵעַ הֲלָכָה מִפִּי תַּלְמִיד",
+   "target_he": "יִרְאַת־שָׁמַיִם",
+   "proof": "וּפוֹרֵק מִמֶּנּוּ יִרְאַת־שָׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

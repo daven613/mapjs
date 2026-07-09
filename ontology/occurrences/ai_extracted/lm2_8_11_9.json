@@ -1,0 +1,127 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_11_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּלּוּת הַכָּבוֹד",
+   "target_he": "כַּבֵּד אֶת ה' מֵהוֹנְךָ",
+   "proof": "הִתְגַּלּוּת הַכָּבוֹד הַנַּ\"ל זֶה בְּחִינַת (משלי ג׳:ט׳): כַּבֵּד אֶת ה' מֵהוֹנְךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רֵאָה",
+   "target_he": "גָּרוֹן",
+   "proof": "וְהַגָּרוֹן יוֹצֵא מֵהָרֵאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְפַּשְׁטוּת הַנְּבוּאָה",
+   "target_he": "רוּחַ שֶׁל כַּנְפֵי רֵאָה",
+   "proof": "הִתְפַּשְׁטוּת הַנְּבוּאָה הַנַּ\"ל, זֶה בְּחִינַת הָרוּחַ שֶׁל כַּנְפֵי רֵאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוּחַ שֶׁל כַּנְפֵי רֵאָה",
+   "target_he": "רוּחַ־נְבוּאָה",
+   "proof": "שֶׁהוּא בְּחִינַת רוּחַ־נְבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוּחַ־נְבוּאָה",
+   "target_he": "רוּחַ ה' דִּבֶּר בִּי",
+   "proof": "בְּחִינַת (שמואל ב כג): רוּחַ ה' דִּבֶּר בִּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּן הַמְדַמֶּה",
+   "target_he": "רֵאָה",
+   "proof": "תִּקּוּן הַמְדַמֶּה הוּא בִּבְחִינַת הָרֵאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רֵאָה",
+   "target_he": "שֵׁנָה וְדִמְיוֹן",
+   "proof": "כִּי שֵׁנָה וְדִמְיוֹן הוּא תָּלוּי בְּהָרֵאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קַר וָלַח",
+   "target_he": "שֵׁנָה וְדִמְיוֹן",
+   "proof": "כִּי עִקָּר שֵׁנָה וְדִמְיוֹן הוּא עַל־יְדֵי קַר וָלַח",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֵת הַגְּשָׁמִים",
+   "target_he": "שֵׁנָה",
+   "proof": "וְעַל־כֵּן בְּעֵת הַגְּשָׁמִים אָז נוֹפֵל שֵׁנָה עַל הָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רֵאָה",
+   "target_he": "קַר וָלַח",
+   "proof": "וְהָרֵאָה הִיא קַר וָלַח",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קַר וָלַח",
+   "target_he": "שֵׁנָה וְדִמְיוֹן",
+   "proof": "שֶׁעַל־יְדֵי־זֶה בָּא שֵׁנָה וְדִמְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דִּמְיוֹן",
+   "target_he": "הַדִּמְיוֹנוֹת הַבָּאִין לָאָדָם בָּעֵת הַשֵּׁנָה",
+   "proof": "הַיְנוּ הַדִּמְיוֹנוֹת הַבָּאִין לָאָדָם בָּעֵת הַשֵּׁנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַדִּמְיוֹנוֹת הַבָּאִין לָאָדָם בָּעֵת הַשֵּׁנָה",
+   "target_he": "כֹּחַ הַמְדַמֶּה",
+   "proof": "שֶׁזֶּה בְּחִינַת כֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

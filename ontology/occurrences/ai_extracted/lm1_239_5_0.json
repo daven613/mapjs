@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 239,
+ "chunk": "239_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חֲמִימוּת",
+   "target_he": "דִּבּוּר",
+   "proof": "כָּל הַדִּבּוּרִים בָּאִים מֵחֲמִימוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֲמִימוּת",
+   "target_he": "דִּבּוּר",
+   "proof": "וְכֵן מִי שֶׁנִּתְקָרֵר וְאֵין בּוֹ חֲמִימוּת אֵין יָכוֹל לְדַבֵּר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּר",
+   "target_he": "שַׁלְהוֹבָא דְּנוּרָא",
+   "proof": "וְהוּא שַׁלְהוֹבָא דְּנוּרָא וְכוּ׳",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

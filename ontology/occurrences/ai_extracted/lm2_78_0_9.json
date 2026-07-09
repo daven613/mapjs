@@ -1,0 +1,28 @@
+{
+ "book": "lm2",
+ "torah": 78,
+ "chunk": "78_0_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "צדיק",
+   "target_he": "איש פשוט",
+   "proof": "וְהַצַּדִּיק, בְּשָׁעָה שֶׁפּוֹרֵשׁ מִן הַתּוֹרָה וְהוּא בְּחִינַת אִישׁ פָּשׁוּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קודם מתן תורה",
+   "target_he": "חיות",
+   "proof": "הוּא מְקַבֵּל חִיּוּת מִבְּחִינָה זוֹ שֶׁל קֹדֶם מַתַּן־תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_8_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לְהַתִּיר פֶּה אִלְמִים",
+   "target_he": "זִוּוּג הַנְּשִׁיקִין",
+   "proof": "בְּחִינַת: לְהַתִּיר פֶּה אִלְמִים, שֶׁהוּא בְּחִינַת זִוּוּג הַנְּשִׁיקִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֹּחַ הַדִּבּוּר",
+   "target_he": "זִוּוּג הַגּוּפָנִי",
+   "proof": "כִּי עַל־יְדֵי כֹּחַ הַדִּבּוּר, בְּחִינַת: לְהַתִּיר פֶּה אִלְמִים, שֶׁהוּא בְּחִינַת זִוּוּג הַנְּשִׁיקִין, עַל־יְדֵי־ זֶה נַעֲשֶׂה זִוּוּג הַגּוּפָנִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זִוּוּג הַגּוּפָנִי",
+   "target_he": "לְהַתִּיר פֶּה עֲקָרוֹת",
+   "proof": "עַל־יְדֵי־ זֶה נַעֲשֶׂה זִוּוּג הַגּוּפָנִי, בְּחִינַת: לְהַתִּיר פֶּה עֲקָרוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

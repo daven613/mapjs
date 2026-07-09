@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 129,
+ "chunk": "129_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אִכְלוּ רֵעִים",
+   "target_he": "תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין",
+   "proof": "אִכְלוּ רֵעִים, הַיְנוּ תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין",
+   "target_he": "מֹחִין הַקְּדוֹשִׁים",
+   "proof": "הַיְנוּ תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין, שֶׁהֵם הַמֹּחִין הַקְּדוֹשִׁים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֹחַ וְדַעַת הַקָּדוֹשׁ",
+   "target_he": "גּוּף",
+   "proof": "שֶׁצְּרִיכִים שֶׁהַמֹּחַ וְהַדַּעַת הַקָּדוֹשׁ יֹאכַל אֶת הַגּוּף, דְּהַיְנוּ שֶׁהַגּוּף יִתְהַפֵּךְ לְמַהוּת הַנְּשָׁמָה הַקְּדוֹשָׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נְשָׁמָה הַקְּדוֹשָׁה",
+   "target_he": "מֹחַ וְדַעַת",
+   "proof": "לְמַהוּת הַנְּשָׁמָה הַקְּדוֹשָׁה, שֶׁהוּא הַמֹּחַ וְהַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְהַפְּכוּת הַגּוּף לְנִשְׁמָה",
+   "target_he": "אֲכִילָה",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת אֲכִילָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מָזוֹן",
+   "target_he": "נִזּוֹן",
+   "proof": "שֶׁהַמָּזוֹן נִתְהַפֵּךְ לַנִּזּוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

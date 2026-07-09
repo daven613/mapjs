@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+   "target_he": "אֱמוּנָה",
+   "proof": "וְזֶה בְּחִינַת מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַשָּׂא וּמַתָּן שֶׁלֹּא בֶּאֱמוּנָה (גֶּזֶל וְתַאֲוַת מָמוֹן)",
+   "target_he": "דָּמִים",
+   "proof": "וְגוֹזֵל אֶת חֲבֵרוֹ – אֲזַי הוּא מְעוֹרֵר דָּמִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דָּמִים הַמְעוֹרָרִים עַל־יְדֵי גֶּזֶל",
+   "target_he": "מַדּוּעַ אָדֹם לִלְבוּשֶׁךָ",
+   "proof": "בִּבְחִינַת: מַדּוּעַ אָדֹם לִלְבוּשֶׁךָ הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מָמוֹן (גֶּזֶל וְתַאֲוַת מָמוֹן)",
+   "target_he": "דַּם נִדָּה לַשְּׁכִינָה",
+   "proof": "וְגוֹרֵם דַּם נִדָּה לַשְּׁכִינָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דַּם נִדָּה לַשְּׁכִינָה",
+   "target_he": "וּזְהָבָם לְנִדָּה",
+   "proof": "בִּבְחִינַת (יחזקאל ז׳:י״ט): וּזְהָבָם לְנִדָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דָּמִים",
+   "target_he": "דַּם נִדָּה עַל־יְדֵי הַמָּמוֹן",
+   "proof": "וְזֶהוּ: דָּמִים תַּרְתֵּי מַשְׁמַע... הַיְנוּ דַּם נִדָּה עַל־יְדֵי הַמָּמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 101,
+ "chunk": "101_17_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אנפין נהירין",
+   "target_he": "חכמות התורה",
+   "proof": "וְזוֹכֶה לְאַנְפִּין נְהִירִין, שֶׁהוּא חָכְמוֹת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חכמות התורה",
+   "target_he": "י\"ה",
+   "proof": "שֶׁהוּא בְּחִינַת י\"ה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "י\"ה",
+   "target_he": "תרין רעין דלא מתפרשין",
+   "proof": "בְּחִינַת תְּרֵין רֵעִין דְּלָא מִתְפָּרְשִׁין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אנפין חשוכין",
+   "target_he": "צרים ואויבים",
+   "proof": "כִּי כָּל הַצָּרִים וְהָאוֹיְבִים שֶׁנֶּאֱחָזִין בְּאַנְפִּין חֲשׁוּכִין, נִכְשָׁלִים וְנוֹפְלִים. כִּי נִתְבַּטְּלִים בְּחִינַת הָאַנְפִּין חֲשׁוּכִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אנפין נהירין",
+   "target_he": "תאוות ומידות רעות",
+   "proof": "כָּל הַצָּרִים וְהָאוֹיְבִים שֶׁנֶּאֱחָזִין בְּאַנְפִּין חֲשׁוּכִין, בְּתַאֲווֹת וּמִדּוֹת רָעוֹת, נִכְשָׁלִים וְנוֹפְלִים, כִּי זָכָה לְאַנְפִּין נְהִירִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

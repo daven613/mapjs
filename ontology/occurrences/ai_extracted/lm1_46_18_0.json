@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 46,
+ "chunk": "46_18_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַמְתָּקַת הַדִּינִים",
+   "target_he": "מֹחִין דְּגַדְלוּת",
+   "proof": "וּכְשֶׁמַּמְתִּיק הַדִּינִים כַּנַּ\"ל, אֲזַי הוּא בְּמֹחִין דְּגַדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֹחִין דְּגַדְלוּת",
+   "target_he": "אֵין לוֹ שִׁכְחָה",
+   "proof": "אֲזַי הוּא בְּמֹחִין דְּגַדְלוּת, וְאֵין לוֹ שִׁכְחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְתָּקַת ג' אֱלֹקִים בְּג' הֲוָיוֹת",
+   "target_he": "אֵין לוֹ שִׁכְחָה",
+   "proof": "דְּהַיְנוּ עַל־יְדֵי שֶׁמַּמְתִּיק ג' אֱלֹקִים בְּג' הֲוָיוֹת כַּנַּ\"ל, אֵין לוֹ שִׁכְחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְתוֹרָתְךָ לֹא שָׁכָחְתִּי",
+   "target_he": "שָׁלֵ\"ו",
+   "proof": "וְעַל כֵּן וְתוֹרָתְךָ לֹא שָׁכָחְתִּי – רָאשֵׁי־תֵּבוֹת שָׁלֵ\"ו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַדִּבּוּר",
+   "target_he": "הִתְגַּלּוּת הַמֹּחִין",
+   "proof": "כִּי הַדִּבּוּר הוּא הִתְגַּלּוּת הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

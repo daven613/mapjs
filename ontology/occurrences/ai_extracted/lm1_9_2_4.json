@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 9,
+ "chunk": "9_2_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רַגְלָיו",
+   "target_he": "תְּפִלָּה",
+   "proof": "רַגְלָיו זֶה בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "חִיּוּת לְכָל שְׁלשָׁה חֶלְקֵי עוֹלָם",
+   "proof": "כִּי עַל־יְדֵי תְּפִלָּתוֹ הָיָה מַשְׁפִּיעַ חִיּוּת לְכָל שְׁלשָׁה חֶלְקֵי עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "שְׁכֶם אֶחָד",
+   "proof": "כִּי כָּל זֶה זָכָה עַל־יְדֵי תְּפִלָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁכֶם",
+   "target_he": "שָׁפָל כּוֹכָב מַלְאָךְ",
+   "proof": "וְזֶה: שְׁכֶ\"ם: שָׁפָל, כּוֹכָב, מַלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 18,
+ "chunk": "18_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אִוֶּלֶת",
+   "target_he": "נְפִילַת חָכְמָתָם",
+   "proof": "עַל־יְדֵי אִוֶּלֶת, הַיְנוּ נְפִילַת חָכְמָתָם, נָפְלָה מַלְכוּתָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אִוֶּלֶת",
+   "target_he": "מַלְכוּתָם",
+   "proof": "עַל־יְדֵי אִוֶּלֶת, הַיְנוּ נְפִילַת חָכְמָתָם, נָפְלָה מַלְכוּתָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "חָכְמָתָם",
+   "proof": "כִּי הָאֱמוּנָה שֶׁסְּבִיב מַלְכוּתֵנוּ מַפִּיל אֶת חָכְמָתָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָתֵנוּ",
+   "target_he": "מַלְכוּת",
+   "proof": "כִּי אֱמוּנָתֵנוּ סוֹבֶבֶת אֶת הַמַּלְכוּת וְשׁוֹמֶרֶת אוֹתָהּ מִלִּגַּע בָּהּ זָר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָתֵנוּ",
+   "target_he": "שִׂנְאַת חֲכָמִים",
+   "proof": "וּמַפִּיל אֶת רוֹדְפֶיהָ לְשִׂנְאַת חֲכָמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִינוּת",
+   "target_he": "אֱמוּנָה",
+   "proof": "אִם לֹא שֶׁתָּקְפָה יַד הַמִּינוּת עַל הָאֱמוּנָה עַד שֶׁמַּפִּיל אֶת הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "מַלְכוּתֵנוּ",
+   "proof": "עַד שֶׁמַּפִּיל אֶת הָאֱמוּנָה, וְאָז יָכוֹל לְקַבֵּל מַלְכוּתֵנוּ, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

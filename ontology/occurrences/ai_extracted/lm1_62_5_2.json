@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 62,
+ "chunk": "62_5_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שַׂר הַמַּשְׁקִים וְאוֹפִים וְטַבָּחִים",
+   "target_he": "קָנֶה וּוֵשֶׁט וּוְרִידִין",
+   "proof": "שֶׁהֵם קָנֶה וּוֵשֶׁט וּוְרִידִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קָנֶה וּוֵשֶׁט וּוְרִידִין",
+   "target_he": "תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה",
+   "proof": "שֶׁהֵם בְּחִינַת תַּאֲווֹת אֲכִילָה וּשְׁתִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פַּרְעֹה",
+   "target_he": "אוֹתִיּוֹת עֹרֶף (מֵאֲחוֹרַיִם)",
+   "proof": "שֶׁהוּא אוֹתִיּוֹת עֹרֶף, הַיְנוּ מֵאֲחוֹרַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְנִיקָתָם מֵהַדִּבּוּרִים",
+   "target_he": "אַחַר הַדְּבָרִים",
+   "proof": "וְעִקַּר יְנִיקָתָם מֵהַדִּבּוּרִים, בְּחִינַת אַחַר הַדְּבָרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּרִים שֶׁאֵינָם זַכִּים",
+   "target_he": "יְנִיקַת קָנֶה וּוֵשֶׁט וּוְרִידִין (הַתַּאֲווֹת)",
+   "proof": "וְעִקַּר יְנִיקָתָם מֵהַדִּבּוּרִים שֶׁאֵינָם זַכִּים כָּל כָּךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

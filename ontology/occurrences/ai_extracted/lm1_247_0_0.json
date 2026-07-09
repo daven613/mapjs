@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 247,
+ "chunk": "247_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תֵּיקוּ",
+   "target_he": "מְחֻסַּר תִּקּוּן",
+   "proof": "שֶׁ\"תֵּיקוּ\" הַנֶּאֱמַר בַּשַּׁ\"ס הוּא בְּחִינַת מְחֻסַּר תִּקּוּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נוּן נִכְפֶּפֶת",
+   "target_he": "קִינוֹת",
+   "proof": "אֲזַי הִיא נִשְׁפֶּלֶת וְנִכְפֶּפֶת, וְנַעֲשֶׂה מִזֶּה בְּחִינַת \"קִינוֹת\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קִינוֹת",
+   "target_he": "תִּיקּוּן",
+   "proof": "שֶׁהוּא אוֹתִיּוֹת \"תִּיקּוּן\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

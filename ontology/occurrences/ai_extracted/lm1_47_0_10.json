@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 47,
+ "chunk": "47_0_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֶרֶץ יִשְׂרָאֵל",
+   "target_he": "הָעוֹלָם",
+   "proof": "כָּל הָעוֹלָם כֻּלּוֹ נִזּוֹן מִשֶּׁפַע שֶׁל אֶרֶץ יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "אֶרֶץ יִשְׂרָאֵל",
+   "proof": "וְאֶרֶץ יִשְׂרָאֵל בְּעַצְמוֹ מְקַבֵּל הַשֶּׁפַע מִן אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמֶת",
+   "target_he": "יַעֲקֹב",
+   "proof": "שֶׁהוּא מִדַּת יַעֲקֹב, כַּנֶּאֱמַר (מיכה ז׳:כ׳): תִּתֵּן אֱמֶת לְיַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִדַּת יַעֲקֹב",
+   "target_he": "תִּפְאֶרֶת",
+   "proof": "וְהוּא מִדַּת תִּפְאֶרֶת, שֶׁהוּא כְּלָלוּת הַגְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תִּפְאֶרֶת",
+   "target_he": "כְּלָלוּת הַגְּוָנִין",
+   "proof": "שֶׁהוּא כְּלָלוּת הַגְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּפְאֶרֶת",
+   "target_he": "שָׁמַיִם, אֵשׁ וּמַיִם",
+   "proof": "וְהוּא בְּחִינוֹת שָׁמַיִם, אֵשׁ וּמַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שָׁמַיִם, אֵשׁ וּמַיִם",
+   "target_he": "כְּלָלוּת הַגְּוָנִין",
+   "proof": "שֶׁהוּא גַּם כֵּן כְּלָלוּת הַגְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

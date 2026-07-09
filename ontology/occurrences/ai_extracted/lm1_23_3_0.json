@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַשְׁמֵד",
+   "target_he": "תַּאֲוַת מָמוֹן",
+   "proof": "וַיֹּאמֶר הַשְׁמֵד, לְשׁוֹן שְׁמָד, לְשׁוֹן עֲבוֹדָה־זָרָה, הַיְנוּ תַּאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נְפִילָה בְּפָנִים דְּסִטְרָא אָחֳרָא",
+   "target_he": "הַשְׁמֵד",
+   "proof": "הוּא מַפִּיל אוֹתָם הָאוֹיְבִים, בְּפָנִים דְּסִטְרָא אָחֳרָא, הַיְנוּ הַשְׁמֵד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צַדִּיק",
+   "target_he": "בְּרִית עוֹלָם",
+   "proof": "כִּי צַדִּיק הוּא בְּרִית עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גֵּרוּשׁ הָאוֹיֵב שֶׁל צַדִּיק",
+   "target_he": "תַּאֲוַת מָמוֹן",
+   "proof": "כְּשֶׁהַקָּדוֹשׁ־בָּרוּךְ־הוּא רוֹצֶה לְגָרֵשׁ אוֹיְבָיו שֶׁל צַדִּיק, הוּא מַפִּיל אֶת הָאוֹיֵב בְּתַאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֶלַח",
+   "target_he": "מָמוֹן חָסֵר",
+   "proof": "כִּי מֶלַח מָמוֹן חָסֵר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּרִית",
+   "target_he": "תַּאֲוַת מָמוֹן שֶׁנִּתְמַעֵט",
+   "proof": "כִּי עִקַּר תַּאֲוַת מָמוֹן שֶׁנִּתְמַעֵט אֵינוֹ אֶלָּא עַל־יְדֵי בְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

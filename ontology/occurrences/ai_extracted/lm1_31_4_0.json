@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דרכי ציון אבלות מבלי באי מועד",
+   "target_he": "גלגלי הרקיע",
+   "proof": "וְזֶהוּ בְּחִינוֹת (איכה א׳:ד׳): דַּרְכֵי צִיּוֹן אֲבֵלוֹת מִבְּלִי בָּאֵי מוֹעֵד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מועד",
+   "target_he": "גלגלי הרקיע",
+   "proof": "מוֹעֵד, זֶה בְּחִינוֹת גַּלְגַּלֵּי הָרָקִיעַ שֶׁעַל יָדָם נֶחֱשָׁב הַזְּמַן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כוכבים ומזלות מאירין",
+   "target_he": "נכשלים",
+   "proof": "שֶׁאֵין כּוֹכָבִים וּמַזָּלוֹת מְאִירִין לָהֶם, וְעַל־יְדֵי־זֶה נִכְשָׁלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

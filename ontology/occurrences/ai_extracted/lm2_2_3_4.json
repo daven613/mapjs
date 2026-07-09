@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_3_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אֵל",
+   "target_he": "תְּפִלָּה",
+   "proof": "אֵל זֶה בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "אֵל (שֵׁם)",
+   "proof": "וְעַל־יְדֵי הַתְּפִלָּה נִקְרָאִין יִשְׂרָאֵל בְּשֵׁם אֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "הַכֹּחַ",
+   "proof": "כִּי עַל־יְדֵי הַתְּפִלָּה, כִּבְיָכוֹל, אָנוּ לוֹקְחִין לְעַצְמֵנוּ הַכֹּחַ מִמֶּנּוּ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "בִּטּוּל גְּזֵרוֹתָיו",
+   "proof": "כִּי אָנוּ מְבַטְּלִין גְּזֵרוֹתָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "בִּטּוּל גְּזֵרוֹתָיו",
+   "proof": "כִּי עַל־יְדֵי הַתְּפִלָּה מְבַטְּלִין גְּזֵרוֹתָיו יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכֹּחַ וּגְבוּרָה",
+   "target_he": "הַדִּבּוּר",
+   "proof": "וּמִשָׁם מֵאִיר הַדִּבּוּר... דְּהַיְנוּ עַל־יְדֵי הַכֹּחַ וּגְבוּרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַכֹּחַ וּגְבוּרָה",
+   "target_he": "אֵל",
+   "proof": "שֶׁזֶּה בְּחִינַת אֵל עַל שֵׁם הַכֹּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

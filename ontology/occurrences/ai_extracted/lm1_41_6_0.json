@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 41,
+ "chunk": "41_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "נדב ואביהוא",
+   "target_he": "נצח והוד",
+   "proof": "נָדָב וַאֲבִיהוּא הֵם נֶצַח וָהוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "התלהבות שבקדושה",
+   "target_he": "יין המשמח",
+   "proof": "וְהִתְלַהֲבוּת שֶׁבִּקְּדֻשָּׁה נִקְרָא יַיִן הַמְשַׂמֵּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יין המשמח",
+   "target_he": "הבכורות",
+   "proof": "שֶׁעַל־יָדוֹ נִמְתָּקִים הַבְּכוֹרוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אש זרה",
+   "target_he": "יין המשכר",
+   "proof": "וְאֵשׁ זָרָה, נִקְרָא יַיִן הַמְשַׁכֵּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יין המשכר",
+   "target_he": "התלהבות היצר",
+   "proof": "הִתְלַהֲבוּת הַיֵּצֶר",
+   "explicitness": "inferred",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יין המשכר",
+   "target_he": "אחיזה להחיצונים",
+   "proof": "וְשָׁם יֵשׁ, חַס וְשָׁלוֹם, אֲחִיזָה לְהַחִיצוֹנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

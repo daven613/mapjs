@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 105,
+ "chunk": "105_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עֹז",
+   "target_he": "תּוֹרָה",
+   "proof": "וְאֵין עֹז אֶלָּא תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרָה",
+   "target_he": "זִמְרָת יָהּ",
+   "proof": "וְעַל יְדֵי הַתּוֹרָה שֶׁיִּלְמוֹד כַּנִּזְכָּר, נַעֲשֶׂה זִמְרָת יָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זִמְרָת יָהּ",
+   "target_he": "הַתְּפִלָּה וְהָרַחֲמִים",
+   "proof": "נַעֲשֶׂה זִמְרָת יָהּ – הַיְנוּ הַתְּפִלָּה וְהָרַחֲמִים שֶׁל הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַתְּפִלָּה וְהָרַחֲמִים",
+   "target_he": "יְשׁוּעָה",
+   "proof": "אָז: וַיְהִי לִי לִישׁוּעָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

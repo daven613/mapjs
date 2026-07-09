@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_6_18",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קימה בחצות לילה",
+   "target_he": "בירור הרוח טובה",
+   "proof": "וְזֶה בְּחִינַת קִימָה בַּחֲצוֹת לַיְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נגון דקדושה הנמשך מכנור של דוד",
+   "target_he": "בירור הרוח טובה",
+   "proof": "שֶׁהוּא בְּחִינַת בֵּרוּר הָרוּחַ טוֹבָה וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נגון בכלי",
+   "target_he": "כנור של דוד",
+   "proof": "שֶׁהוּא בְּחִינַת כִּנּוֹר שֶׁל דָּוִד שֶׁמְּנַגֵּן אָז כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חצות לילה",
+   "target_he": "התעוררות בחינות הנגון דקדושה",
+   "proof": "הַיְנוּ שֶׁבַּחֲצוֹת לַיְלָה אָז נִתְעוֹרֵר בְּחִינוֹת הַנִּגּוּן דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת נגון בכלי",
+   "target_he": "עיקר הבירור",
+   "proof": "כִּי אָז עִקַּר הַבֵּרוּר עַל־יְדֵי בְּחִינַת נִגּוּן בַּכְּלִי הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

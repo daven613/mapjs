@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַדִּבּוּר",
+   "target_he": "הַבְּרִיאָה",
+   "proof": "כִּי הַבְּרִיאָה הָיְתָה עַל־יְדֵי הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַדִּבּוּר",
+   "target_he": "חֲמֵשֶׁת מוֹצָאוֹת הַפֶּה",
+   "proof": "כִּי כְּלָל הַדִּבּוּר הוּא רַק חֲמֵשֶׁת מוֹצָאוֹת הַפֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֲמֵשֶׁת מוֹצָאוֹת הַפֶּה",
+   "target_he": "כָּל הַדְּבָרִים שֶׁל כָּל הַבְּרִיאָה",
+   "proof": "וְעַל יָדָם נִתְהַוּוּ כָּל הַדְּבָרִים שֶׁל כָּל הַבְּרִיאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַדִּבּוּר",
+   "target_he": "הַגְּבוּל שֶׁל כָּל הַדְּבָרִים",
+   "proof": "וְהַדִּבּוּר הוּא הַגְּבוּל שֶׁל כָּל הַדְּבָרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמְּבוּכוֹת הַבָּאִים מֵהֶחָלָל הַפָּנוּי",
+   "target_he": "שְׁתִיקָה",
+   "proof": "וְעַל כֵּן הַמְּבוּכוֹת הַבָּאִים מִשָּׁם, הֵם בִּבְחִינַת שְׁתִיקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

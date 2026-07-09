@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 37,
+ "chunk": "37_3_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תַּעֲנִית",
+   "target_he": "אָדָם",
+   "proof": "עַל־יְדֵי הַתַּעֲנִית נִתְהַוֶּה בְּחִינַת אָדָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "אָדָם",
+   "proof": "שֶׁעַל־יְדֵי צְדָקָה הוּא בִּדְיוּקְנָא דְּאָדָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צְדָקָה",
+   "target_he": "תַּעֲנִית",
+   "proof": "כִּי צְדָקָה וְתַעֲנִית הֵם בְּחִינָה אַחַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תַּעֲנִית",
+   "target_he": "צְדָקָה",
+   "proof": "שֶׁעַל־יְדֵי הַתַּעֲנִית שֶׁהוּא בְּחִינַת צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אָדָם",
+   "target_he": "הַדַּעַת הָאֲמִתִּי שֶׁל הַתּוֹרָה",
+   "proof": "נַעֲשִׂין בְּגֶדֶר אָדָם, שֶׁהוּא הַדַּעַת הָאֲמִתִּי שֶׁל הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַדַּעַת הָאֲמִתִּי שֶׁל הַתּוֹרָה",
+   "target_he": "אוֹר וָנֶפֶשׁ",
+   "proof": "שֶׁהוּא בְּחִינַת אוֹר וָנֶפֶשׁ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַכְנָעַת הַחֹמֶר וְהַגּוּף",
+   "target_he": "בְּהֵמָה",
+   "proof": "כִּי הַכְנָעַת הַחֹמֶר וְהַגּוּף בְּחִינַת בְּהֵמָה וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֶפֶשׁ",
+   "target_he": "אָדָם",
+   "proof": "לְגַבֵּי הַנֶּפֶשׁ שֶׁהוּא בְּחִינַת אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּעֲנִית",
+   "target_he": "הַכְנָעַת הַחֹמֶר וְהַגּוּף",
+   "proof": "הוּא עַל־יְדֵי הַתַּעֲנִית, שֶׁהוּא בְּחִינַת צְדָקָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

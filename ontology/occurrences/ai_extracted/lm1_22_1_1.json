@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_1_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חתימת הדין תורה",
+   "target_he": "מעין חתום",
+   "proof": "וְהֵם מְכַסִּים זֶה הַדִּין־תּוֹרָה וְחוֹתְמִין אוֹתוֹ, בִּבְחִינַת מַעְיָן חָתוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חתימת הדין תורה על ידי לימודי ה'",
+   "target_he": "חתום תורה בלמודי",
+   "proof": "וְזֶה בְּחִינַת חֲתוֹם תּוֹרָה בְּלִמֻּדָי; הַיְנוּ, בְּלִמּוּדֵי ה' נֶחְתָּם הַדִּין־תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חתימה והסתרה בשעת מוסר",
+   "target_he": "ובמסרם יחתם",
+   "proof": "וַאֲפִלּוּ בִּשְׁעַת מוּסָר נִזְהָרִין לְהַחְתִּים וּלְהַסְתִּיר, בִּבְחִינַת וּבְמֹסָרָם יַחְתֹּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לימודי ה'",
+   "target_he": "חותם",
+   "proof": "וְעַל שֵׁם זֶה הֵן בְּחִינַת חוֹתָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תוכחה",
+   "target_he": "המתקת הדין",
+   "proof": "הוֹלְכִים וּמוֹכִיחִים הַדּוֹר, כְּדֵי לְהַחֲזִירָם לְמוּטָב לְהַמְתִּיק הַדִּין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

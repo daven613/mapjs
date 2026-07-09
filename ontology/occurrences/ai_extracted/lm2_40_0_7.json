@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 40,
+ "chunk": "40_0_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "פְּגִיעָה וְהִתְוַעֲדוּת עִם אָדָם שֶׁהָיָה אֵצֶל צַדִּיק אֲמִתִּי עַל רֹאשׁ־הַשָּׁנָה",
+   "target_he": "טַעַם אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "כְּשֶׁפּוֹגֵעַ וּמִתְוַעֵד יַחַד עִם אָדָם שֶׁהָיָה אֵצֶל צַדִּיק אֲמִתִּי עַל רֹאשׁ־הַשָּׁנָה, הוּא מְחֻיָּב לְהַרְגִּישׁ אָז טַעַם אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָאֲוִיר",
+   "target_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "נַעֲשֶׂה גַּם זֶה הָאֲוִיר בִּבְחִינַת אֶרֶץ־יִשְׂרָאֵל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מָמוֹן",
+   "target_he": "חִסָּרוֹן תָּמִיד",
+   "proof": "נִמְצָא שֶׁאֵין מְמַלֵּא תַּאֲוָתוֹ וּרְצוֹנוֹ בְּמָמוֹן לְעוֹלָם, כִּי תָּמִיד חָסֵר לוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְכֶסֶף תוֹעָפוֹת לָךְ",
+   "target_he": "שֶׁפַע כְּפוּלָה",
+   "proof": "אֲבָל יֵשׁ בְּחִינַת שֶׁפַע כְּפוּלָה, בְּחִינַת (איוב כ״ב:כ״ה): וְכֶסֶף תוֹעָפוֹת לָךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תוֹעָפוֹת",
+   "target_he": "לְשׁוֹן כָּפוּל",
+   "proof": "שֶׁהוּא לְשׁוֹן כָּפוּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁפַע כְּפוּלָה",
+   "target_he": "מִילּוּי רְצוֹנוֹ",
+   "proof": "נִמְצָא שֶׁבְּזֶה הַשֶּׁפַע נִתְמַלֵּא רְצוֹנוֹ, מֵאַחַר שֶׁהִיא כְּפוּלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

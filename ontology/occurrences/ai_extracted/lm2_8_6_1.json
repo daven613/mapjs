@@ -1,0 +1,181 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "הִתְגַּלּוּת הַכָּבוֹד",
+   "proof": "עִקָּר הִתְגַּלּוּת הַכָּבוֹד הוּא עַל־יְדֵי הַתְּפִלָּה הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "עֲנָנִים",
+   "proof": "שֶׁעַל־יָדָהּ הָעֲנָנִים, שֶׁהֵם הַסִּטְרָא־אָחֳרָא וְהַקְּלִפּוֹת, כָּלִים וְהוֹלְכִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲנָנִים",
+   "target_he": "סִּטְרָא־אָחֳרָא וְהַקְּלִפּוֹת",
+   "proof": "שֶׁהֵם הַסִּטְרָא־אָחֳרָא וְהַקְּלִפּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲנָנִים כָּלִים",
+   "target_he": "גֵּרִים",
+   "proof": "וְאָז נַעֲשִׂין גֵּרִים, וְנִתְגַּלֶּה הַכָּבוֹד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲנָנִים כָּלִים",
+   "target_he": "הִתְגַּלּוּת הַכָּבוֹד",
+   "proof": "וְאָז נַעֲשִׂין גֵּרִים, וְנִתְגַּלֶּה הַכָּבוֹד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סְלִיחַת הֶעָווֹן",
+   "target_he": "עֲנָנִים כָּלִים וְהוֹלְכִים",
+   "proof": "וְזֶה בְּחִינַת סְלִיחַת הֶעָווֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִבּוּי הַתְּפִלּוֹת",
+   "target_he": "סְלִיחַת הֶעָווֹן",
+   "proof": "שֶׁבָּא עַל־יְדֵי רִבּוּי הַתְּפִלּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִבּוּי הַתְּפִלּוֹת",
+   "target_he": "הַשֶּׁמֶשׁ זוֹרַחַת",
+   "proof": "שֶׁעַל־יְדֵי־זֶה הַשֶּׁמֶשׁ זוֹרַחַת, שֶׁעַל־יָדָהּ בָּא רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשֶּׁמֶשׁ זוֹרַחַת",
+   "target_he": "רְפוּאָה",
+   "proof": "שֶׁעַל־יָדָהּ בָּא רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָווֹן",
+   "target_he": "עָנָן",
+   "proof": "כִּי הֶעָווֹן הוּא בְּחִינַת עָנָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עָנָן",
+   "target_he": "אוֹר הַשֶּׁמֶשׁ",
+   "proof": "שֶׁמַּחֲשִׁיךְ אוֹר הַשֶּׁמֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲווֹנוֹת",
+   "target_he": "חֹשֶׁךְ",
+   "proof": "כִּי טֶבַע הָעֲווֹנוֹת הֵם בְּחִינַת חֹשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חוֹלַאַת",
+   "target_he": "חֹשֶׁךְ/עָווֹן",
+   "proof": "וְזֶה בְּחִינַת הַחוֹלַאַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲווֹנוֹת",
+   "target_he": "חוֹלַאַת",
+   "proof": "כִּי עִקָּר הַחוֹלַאַת בָּאָה מֵעֲווֹנוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עָוֹן",
+   "target_he": "יִסּוּרִין",
+   "proof": "אֵין יִסּוּרִין בְּלֹא עָוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פִּשְׁעָם וַעֲוֹנָם",
+   "target_he": "נְגָעִים",
+   "proof": "וּפָקַדְתִּי בְּשֵׁבֶט פִּשְׁעָם וּבִנְגָעִים עֲוֹנָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲווֹנוֹת",
+   "target_he": "עֲנָנִים",
+   "proof": "כִּי הָעֲווֹנוֹת הֵם בְּחִינַת עֲנָנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲנָנִים",
+   "target_he": "אוֹר הַשֶּׁמֶשׁ",
+   "proof": "שֶׁמַּחֲשִׁיכִים־אוֹר הַשֶּׁמֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשֶּׁמֶשׁ",
+   "target_he": "רְפוּאָה",
+   "proof": "שֶׁעַל־יָדָהּ הָרְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

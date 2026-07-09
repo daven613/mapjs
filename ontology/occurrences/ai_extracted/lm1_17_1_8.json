@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_1_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת הַהִתְפָּאֲרוּת שֶׁמִּתְפָּאֲרִין יִשְׂרָאֵל עִמּוֹ יִתְבָּרַךְ",
+   "target_he": "יִרְאָה",
+   "proof": "נִמְצָא, שֶׁעַל־יְדֵי הִתְגַּלּוּת הַהִתְפָּאֲרוּת שֶׁמִּתְפָּאֲרִין יִשְׂרָאֵל עִמּוֹ יִתְבָּרַךְ, עַל־יְדֵי־זֶה נוֹפֵל יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּלּוּת הַהִתְפָּאֲרוּת שֶׁל הַשֵּׁם יִתְבָּרַךְ שֶׁמִּתְפָּאֵר בְּיִשְׂרָאֵל",
+   "target_he": "תְּפִלִּין שֶׁל הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "שֶׁזֶּה בְּחִינַת תְּפִלִּין שֶׁל הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַהִתְפָּאֲרוּת",
+   "target_he": "יִרְאָה שֶׁל הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "עַל־יְדֵי הַהִתְפָּאֲרוּת הַזֹּאת מִתְגַּלָּה הַיִּרְאָה שֶׁל הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יִרְאָה שֶׁל הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "יִרְאָה מִלְּפָנָיו יִתְבָּרַךְ",
+   "proof": "דְּהַיְנוּ לְיִרְאָה מִלְּפָנָיו יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַהִתְפָּאֲרוּת",
+   "target_he": "יִרְאָה אֲפִלּוּ עַל שִׁנְאֲנֵי שַׁחַק",
+   "proof": "וְעַל־יְדֵי־זֶה נִתְגַּלֶּה הַיִּרְאָה אֲפִלּוּ עַל שִׁנְאֲנֵי שַׁחַק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

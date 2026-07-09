@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יְמֵי הוֹדָאָה",
+   "target_he": "שַׁעֲשׁוּעַ עוֹלָם הַבָּא",
+   "proof": "וִימֵי הוֹדָאָה זֶה בְּחִינַת שַׁעֲשׁוּעַ עוֹלָם הַבָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְהוֹדוֹת וּלְהַלֵּל וּלְהַכִּיר אוֹתוֹ יִתְבָּרַךְ",
+   "target_he": "קְרִיבָה אֵלָיו יִתְבָּרַךְ",
+   "proof": "שֶׁעַל־יְדֵי־זֶה סְמוּכִים וּקְרוֹבִים אֵלָיו יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְדִיעָה וְהַכָּרָה אוֹתוֹ יִתְבָּרַךְ",
+   "target_he": "קִרְבָה אֵלָיו",
+   "proof": "כִּי כָל מַה שֶּׁיּוֹדְעִין וּמַכִּירִין אוֹתוֹ יִתְבָּרַךְ בְּיוֹתֵר, סְמוּכִין אֵלָיו בְּיוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תּוֹדָה וְהוֹדָאָה",
+   "target_he": "קָרְבַּן תּוֹדָה",
+   "proof": "שֶׁלֹּא יִשָּׁאֵר לֶעָתִיד, רַק בְּחִינַת תּוֹדָה וְהוֹדָאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

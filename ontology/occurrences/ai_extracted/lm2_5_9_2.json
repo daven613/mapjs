@@ -1,0 +1,109 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_9_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "צבאות",
+   "target_he": "הנעלם של שדי",
+   "proof": "שֶׁצְּבָאוֹת הוּא הַנֶּעְלָם שֶׁל שַׁדַּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הנעלם של שין דלת יוד",
+   "target_he": "צבאות",
+   "proof": "כִּי הַנֶּעְלָם שֶׁל שִׁין דַלֶת יוּד הוּא בְּגִימַטְרִיָּא צְבָאוֹת עִם הַכּוֹלֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שדי",
+   "target_he": "המוחין",
+   "proof": "כְּשֶׁבְּחִינַת שַׁדַּי שֶׁהוּא הַמֹּחִין נִסְתַּלֵּק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הרשימו",
+   "target_he": "נעלם של שדי",
+   "proof": "וְאֵין נִשְׁאָר רַק הָרְשִׁימוּ, שֶׁהוּא בְּחִינַת נֶעְלָם שֶׁל שַׁדַּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הרשימו",
+   "target_he": "צבאות",
+   "proof": "אֲזַי זֹאת הָרְשִׁימוּ שֶׁהִיא בְּחִינַת נֶעְלָם שֶׁל שַׁדַּי, הִיא בִּבְחִינַת צְבָאוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צבאות",
+   "target_he": "מלאך",
+   "proof": "הִיא בִּבְחִינַת צְבָאוֹת, בְּחִינַת מַלְאָךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ושער ראשה כעמר נקא",
+   "target_he": "התנוצצות המוחין",
+   "proof": "שְׂעַר רֵאשֵׁהּ זֶה בְּחִינַת הִתְנוֹצְצוּת הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "המוחין",
+   "target_he": "שערות",
+   "proof": "כִּי הַשְּׂעָרוֹת יוֹצְאִין מִן הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוחין נקיים וזכים",
+   "target_he": "בחינת מלאך",
+   "proof": "וּכְשֶׁהַמֹּחִין נְקִיִּים וְזַכִּים, אֲזַי נַעֲשֶׂה גַּם מֵהָרְשִׁימוּ בְּחִינַת מַלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עמר",
+   "target_he": "עושה מלאכיו רוחות",
+   "proof": "עֲמַר רָאשֵׁי תֵבוֹת: עֹשֶׂה מַלְאָכָיו רוּחוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הרשימו",
+   "target_he": "מלאכים",
+   "proof": "בְּחִינַת מַלְאָכִים, שֶׁנַּעֲשִׂין עַל־יְדֵי הָרְשִׁימוּ, כְּשֶׁהַמֹּחִין נְקִיִּים וְזַכִּים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

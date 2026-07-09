@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 9,
+ "chunk": "9_2_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "חוק",
+   "target_he": "מזונא",
+   "proof": "וְחֹק לִשָּׁנָא דִמְזוֹנָא הוּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עמידה",
+   "target_he": "תפילה",
+   "proof": "וְאֵין עֲמִידָה אֶלָּא תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עדות",
+   "target_he": "תפילה",
+   "proof": "עֵדוּת זֶה תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עמידה",
+   "target_he": "תפילה",
+   "proof": "וַעֲמִידָה זֶה תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "פרנסת אביהם שבשמים",
+   "proof": "וְגַם יִשְׂרָאֵל מְפַרְנְסִים לַאֲבִיהֶם שֶׁבַּשָּׁמַיִם בִּתְפִלָּתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "פרנסה",
+   "proof": "וּכְפִי שֶׁמְּפַרְנֵס לְאָבִיו שֶׁבַּשָּׁמַיִם בִּתְפִלָּתוֹ, כֵּן נוֹתְנִין לוֹ פַּרְנָסָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

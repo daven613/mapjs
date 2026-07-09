@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הִתְנוֹצְצוּת הָאוֹתִיּוֹת שֶׁבַּאֲכִילָה וּשְׁתִיָּה",
+   "target_he": "אֲכִילָתוֹ וּשְׁתִיָּתוֹ וְכָל תַּעֲנוּגָיו",
+   "proof": "אֲזַי אֲכִילָתוֹ וּשְׁתִיָּתוֹ וְכָל תַּעֲנוּגָיו אֵינוֹ אֶלָּא מֵהִתְנוֹצְצוּת הָאוֹתִיּוֹת שֶׁבַּאֲכִילָה וּשְׁתִיָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וַיֹּאכַל וַיֵּשְׁתְּ וַיִּיטַב לִבּוֹ",
+   "target_he": "הִתְנוֹצְצוּת הָאוֹתִיּוֹת שֶׁבַּאֲכִילָה וּשְׁתִיָּה",
+   "proof": "בִּבְחִינַת (רות ג׳:ז׳): וַיֹּאכַל וַיֵּשְׁתְּ וַיִּיטַב לִבּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וַיִּיטַב לִבּוֹ",
+   "target_he": "בְּחִינַת הִתְנוֹצְצוּת הָאוֹתִיּוֹת שֶׁל ל\"ב אֱלֹקִים",
+   "proof": "וַיִּיטַב לִבּוֹ, הַיְנוּ בְּחִינַת הִתְנוֹצְצוּת הָאוֹתִיּוֹת שֶׁל ל\"ב אֱלֹקִים שֶׁבְּמַעֲשֵׂה בְרֵאשִׁית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "טוֹב",
+   "target_he": "אוֹר",
+   "proof": "אֵין טוֹב אֶלָּא אוֹר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וַיִּיטַב לִבּוֹ",
+   "target_he": "בִּרְכַּת הַמָּזוֹן",
+   "proof": "וְזֶה: וַיִּיטַב לִבּוֹ – זֶה בִּרְכַּת הַמָּזוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְנוֹצְצוּת הָאוֹתִיּוֹת שֶׁיֵּשׁ בְּהָאֲכִילָה וּשְׁתִיָּה",
+   "target_he": "בִּרְכַּת הַמָּזוֹן",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת בִּרְכַּת הַמָּזוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁלֵמוּת לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "הַמָּזוֹן",
+   "proof": "כִּי הַמָּזוֹן נִתְבָּרֵךְ עַל־יְדֵי שְׁלֵמוּת לְשׁוֹן הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

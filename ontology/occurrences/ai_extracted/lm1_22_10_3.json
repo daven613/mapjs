@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_10_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "נִסְתָּר",
+   "target_he": "נִשְׁמָע",
+   "proof": "מִבְּחִינַת נִשְׁמָע, בְּחִינַת נִסְתָּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלָּה",
+   "target_he": "נִשְׁמָע",
+   "proof": "בְּחִינַת נִסְתָּר, בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבְרֵי הַתּוֹרָה שֶׁסְּבִיבוֹת הַמִּצְוָה",
+   "target_he": "נִשְׁמָע",
+   "proof": "בְּחִינַת דִּבְרֵי הַתּוֹרָה שֶׁסְּבִיבוֹת הַמִּצְוָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תּוֹרַת ה'",
+   "target_he": "נִשְׁמָע",
+   "proof": "בְּחִינַת תּוֹרַת ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִגְלֶה",
+   "target_he": "נַעֲשֶׂה",
+   "proof": "בְּחִינַת נַעֲשֶׂה, בְּחִינַת נִגְלֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תּוֹרָה",
+   "target_he": "נַעֲשֶׂה",
+   "proof": "בְּחִינַת נִגְלֶה, בְּחִינַת תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תּוֹרָתוֹ",
+   "target_he": "נַעֲשֶׂה",
+   "proof": "בְּחִינַת תּוֹרָה, בְּחִינַת תּוֹרָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִשְׁמָע",
+   "target_he": "נַעֲשֶׂה",
+   "proof": "יִהְיֶה נַעֲשֶׂה מִזֶּה בְּחִינַת נַעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נַעֲשֶׂה",
+   "target_he": "נִשְׁמָע",
+   "proof": "וִיהִי לוֹ בְּחִינַת נִשְׁמָע וְכוּ' גָּבוֹהַּ יוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּרֵאשִׁית נְקֻדַּת הַבְּרִיאָה",
+   "target_he": "תְּחִלַּת הָאֲצִילוּת",
+   "proof": "שֶׁהוּא תְּחִלַּת הָאֲצִילוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 86,
+ "chunk": "86_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שֶׁמֶשׁ",
+   "target_he": "צְדָקָה",
+   "proof": "וְשֶׁמֶשׁ שֶׁהוּא בְּחִינוֹת צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁמֶשׁ",
+   "target_he": "בְּחִינַת רַגְלִין",
+   "proof": "הוּא נוֹתֵן כֹּחַ לִבְחִינַת רַגְלִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְּדָקָה",
+   "target_he": "הֲלִיכָה",
+   "proof": "הַיְנוּ שֶׁצְּדָקָה עוֹשָׂה לוֹ הֲלִיכָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עוֹשֶׂה צְדָקָה בְּשַׁבָּת",
+   "target_he": "אוֹר הַשֶּׁמֶשׁ",
+   "proof": "שֶׁעוֹשֶׂה צְדָקָה בְּשַׁבָּת, שֶׁהוּא בְּחִינַת אוֹר הַשֶּׁמֶשׁ כְּאוֹר שִׁבְעַת הַיָּמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עוֹשֶׂה צְדָקָה בְּשַׁבָּת",
+   "target_he": "בְּחִינַת שָׁלֹשׁ רַגְלִין",
+   "proof": "הוּא הַנּוֹתֵן כֹּחַ לִבְחִינַת שָׁלֹשׁ רַגְלִין הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

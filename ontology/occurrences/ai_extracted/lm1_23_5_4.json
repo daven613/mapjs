@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תיקון הברית",
+   "target_he": "הסתכלות באלוקות",
+   "proof": "אִי אֶפְשָׁר לָבוֹא אֶלָּא עַד שֶׁיְּתַקֵּן בְּרִיתוֹ... וְאָז יוּכַל לְהִסְתַּכֵּל בָּאֱלֹקוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ברית",
+   "target_he": "תַּאֲוַת מָמוֹן",
+   "proof": "עִקַּר הַתִּקּוּן שֶׁל תַּאֲוַת מָמוֹן, הוּא עַל־יְדֵי בְּרִית",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תיקון ברית",
+   "target_he": "תַּאֲוַת מָמוֹן",
+   "proof": "וּכְשֶׁמְּתַקֵּן בְּרִיתוֹ, אִי אֶפְשָׁר לִפֹּל לְתַאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֶלַח",
+   "target_he": "תַּאֲוַת מָמוֹן",
+   "proof": "כִּי עַל־יְדֵי מֶלַח, תַּאֲוַת מָמוֹן חָסֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

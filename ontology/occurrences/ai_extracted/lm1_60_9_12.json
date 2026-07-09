@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_9_12",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תורה דלעלא",
+   "target_he": "התבוננות הנ\"ל",
+   "proof": "הַיְנוּ תּוֹרָה דִּלְעֵלָּא, שֶׁהִיא בְּחִינַת הִתְבּוֹנְנוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תיקונים הנ\"ל",
+   "target_he": "תיקוני עתיק",
+   "proof": "שֶׁהֵם בְּחִינַת תִּקּוּנֵי עַתִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תיקוני עתיק",
+   "target_he": "אריכות ימים הנ\"ל",
+   "proof": "שֶׁהֵם בְּחִינַת תִּקּוּנֵי עַתִּיק, בְּחִינַת אֲרִיכוּת יָמִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תיקונים הנ\"ל",
+   "target_he": "תורה דלעלא",
+   "proof": "שֶׁהוּא מִתְבַּטֵּל וְאֵינוֹ יָכוֹל לְהִתְקַיֵּם, אִם אֵינוֹ נַעֲשֶׂה עַל יְדֵי בְּחִינַת תִּקּוּנִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אשריך ישראל מי כמוך",
+   "target_he": "אתערותא דלתתא",
+   "proof": "שֶׁהוּא שֶׁבַח שֶׁל יִשְׂרָאֵל הַמִּתְעוֹרְרִים מִלְּמַטָּה, בְּחִינַת: אַשְׁרֶיךָ יִשְׂרָאֵל מִי כָמוֹךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מי כמכה באלים ה'",
+   "target_he": "אתערותא דלעילא",
+   "proof": "וְאַחַר כָּךְ הוּא אִתְעָרוּתָא דִּלְעֵלָּא כַּנַּ\"ל, שֶׁזֶּהוּ בְּחִינַת: מִי כָמוֹכָה בָּאֵלִים ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

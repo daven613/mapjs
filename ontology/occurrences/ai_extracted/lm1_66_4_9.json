@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_4_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "נְקֻדָּה",
+   "target_he": "נֶחֱשָׁק",
+   "proof": "שֶׁהֵם נְקֻדָּה לְמַעְלָה מִנְּקֻדָּה, רָקִיעַ לְמַעְלָה מֵרָקִיעַ, דְּהַיְנוּ נֶחֱשָׁק לְמַעְלָה מִנֶּחֱשָׁק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רָקִיעַ",
+   "target_he": "נֶחֱשָׁק",
+   "proof": "שֶׁהֵם נְקֻדָּה לְמַעְלָה מִנְּקֻדָּה, רָקִיעַ לְמַעְלָה מֵרָקִיעַ, דְּהַיְנוּ נֶחֱשָׁק לְמַעְלָה מִנֶּחֱשָׁק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֵשֶׁק",
+   "target_he": "נְקֻדָּה",
+   "proof": "שֶׁלְּפִי גֹּדֶל הַנֶּחֱשָׁק צָרִיךְ שֶׁיִּהְיֶה גֹּדֶל הַחֵשֶׁק, שֶׁהִיא בְּחִינַת הַנְּקֻדָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נְקֻדָּה",
+   "target_he": "רָקִיעַ",
+   "proof": "שֶׁהִיא בְּחִינַת רָקִיעַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רָקִיעַ",
+   "target_he": "נְקֻדָּה",
+   "proof": "כִּי הַנְּקֻדָּה נַעֲשֵׂית עַל יְדֵי הָרָקִיעַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רָקִיעַ",
+   "target_he": "מְנִיעָה",
+   "proof": "שֶׁהוּא בְּחִינַת מְנִיעָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֶחֱשָׁק",
+   "target_he": "קָמַץ",
+   "proof": "עַד שֶׁיֵּשׁ נֶחֱשָׁק שֶׁהוּא בְּחִינַת קָמַץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קָמַץ",
+   "target_he": "נְקֻדּוֹת קָמַץ",
+   "proof": "קְמִיץ וּסְתִים, שֶׁהוּא בְּחִינַת נְקֻדּוֹת קָמַץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

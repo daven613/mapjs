@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 9,
+ "chunk": "9_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "מְצִיאַת הַפֶּתַח",
+   "proof": "עַל־יְדֵי אֱמֶת זוֹכֶה לִמְצֹא הַפֶּתַח",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר",
+   "target_he": "הַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+   "proof": "עַל־יְדֵי שֶׁקֶר הוּא מְסַלֵּק אֶת הַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁוְא",
+   "target_he": "הַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+   "proof": "כִּי עַל־יְדֵי שָׁוְא מְסַלֵּק אֶת הַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "הַקָּדוֹשׁ־בָּרוּךְ־הוּא שׁוֹכֵן עִמּוֹ",
+   "proof": "אֲבָל עַל־יְדֵי אֱמֶת, הַקָּדוֹשׁ־בָּרוּךְ־הוּא שׁוֹכֵן עִמּוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַקָּדוֹשׁ־בָּרוּךְ־הוּא עִמּוֹ",
+   "target_he": "יְצִיאָה מֵהַחשֶׁךְ הַמּוֹנֵעַ בִּתְפִלָּה",
+   "proof": "וּכְשֶׁהַקָּדוֹשׁ־בָּרוּךְ־הוּא עִמּוֹ, הוּא מֵאִיר לוֹ אֵיךְ לֵיצֵא מֵהַחשֶׁךְ הַמּוֹנֵעַ אוֹתוֹ בִּתְפִלָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 50,
+ "chunk": "50_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "פגם הברית",
+   "target_he": "מיין מרירין",
+   "proof": "מִי שֶׁפָּגַם בִּבְרִיתוֹ, הוּא בִּבְחִינַת מַיִּין מְרִירִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מיין מרירין",
+   "target_he": "ולא יכלו לשתות מים ממרה",
+   "proof": "בִּבְחִינַת: וְלֹא יָכְלוּ לִשְׁתּוֹת מַיִם מִמָּרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פגם הברית",
+   "target_he": "תפילה",
+   "proof": "אֲזַי אֵין יָכוֹל לְהִתְפַּלֵּל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפילה",
+   "target_he": "כל עצמותי תאמרנה",
+   "proof": "בִּבְחִינַת: כָּל עַצְמוֹתַי תֹּאמַרְנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

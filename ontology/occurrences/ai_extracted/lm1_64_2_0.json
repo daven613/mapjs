@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חכמות חיצוניות",
+   "target_he": "שבירת כלים",
+   "proof": "שֶׁהֵם בָּאִים מִמּוֹתָרוֹת, מִבְּחִינוֹת שְׁבִירַת כֵּלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ריבוי האור",
+   "target_he": "שבירת הכלים",
+   "proof": "כִּי מֵחֲמַת רִבּוּי הָאוֹר נִשְׁתַּבְּרוּ הַכֵּלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שבירת הכלים",
+   "target_he": "קליפות",
+   "proof": "וּמִשָּׁם נִתְהַוּוּ הַקְּלִפּוֹת כַּיָּדוּעַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קליפות",
+   "target_he": "חכמות חיצוניות",
+   "proof": "וְחָכְמוֹת חִיצוֹנִיּוֹת בָּאִים מִשָּׁם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חכמות חיצוניות",
+   "target_he": "שבירת כלים",
+   "proof": "הַיְנוּ מִשְּׁבִירַת כֵּלִים, מִמּוֹתְרוֹת פְּסֹלֶת הַקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

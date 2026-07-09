@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 180,
+ "chunk": "180_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שָׁלֹשׁ יָדַיִם שֶׁבַּיְצִירָה",
+   "target_he": "דִּין שֶׁל עוֹלַם הָעֲשִׂיָּה",
+   "proof": "וּכְשֶׁמַּמְתִּיק הַדִּין שֶׁל עוֹלַם הָעֲשִׂיָּה בְּשָׁלֹשׁ יָדַיִם שֶׁבַּיְצִירָה, נִמְתָּק עַל־יְדֵי שֵׁם שֶׁל מ\"ב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שֵׁם שֶׁל מ\"ב",
+   "target_he": "שָׁלֹשׁ פְּעָמִים יָד",
+   "proof": "כִּי מ\"ב בְּגִימַטְרִיָּא שָׁלֹשׁ פְּעָמִים יָד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

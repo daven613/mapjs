@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 91,
+ "chunk": "91_0_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "קישור כל הדיבורים להשם יתברך",
+   "target_he": "תשובה",
+   "proof": "וּמְקַשֵּׁר כָּל הַדִּבּוּרִים לְהַשֵּׁם יִתְבָּרַךְ, וְעַל־יְדֵי־זֶה מְבִיאָם לִידֵי תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מביאם לידי תשובה",
+   "target_he": "וְהֵם תֻּכּוּ לְרַגְלֶךָ יִשָּׂא מִדַּבְּרֹתֶיךָ",
+   "proof": "וְזֶה בְּחִינַת (דברים ל״ג:ג׳): וְהֵם תֻּכּוּ לְרַגְלֶךָ יִשָּׂא מִדַּבְּרֹתֶיךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דיבור תורה בפירוש תיכף עם הרשע",
+   "target_he": "רשע יותר",
+   "proof": "כִּי אִם הָיָה הַצַּדִּיק מְדַבֵּר תֵּכֶף תּוֹרָה בְּפֵרוּשׁ עִם הָרָשָׁע, הָיָה יָכוֹל לְהִתְפַּקֵּר יוֹתֵר וְהָיָה נַעֲשֶׂה רָשָׁע יוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "סם חיים",
+   "proof": "כִּי זָכָה – נַעֲשֶׂה לוֹ סַם חַיִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "סם מות",
+   "proof": "לֹא זָכָה – נַעֲשֶׂה לוֹ סַם מָוֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

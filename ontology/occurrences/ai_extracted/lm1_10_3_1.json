@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "סטרא דמותא",
+   "target_he": "עכו\"ם",
+   "proof": "מְהֻלָּל מְאֹד – מִסִּטְרָא דְּמוֹתָא, שֶׁהוּא בְּחִינַת עַכּוּ\"ם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מאד",
+   "target_he": "מלאך המות",
+   "proof": "מְאֹד – זֶה מַלְאַךְ הַמָּוֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מהולל מהעכו\"ם",
+   "target_he": "גדול ה'",
+   "proof": "כְּשֶׁהוּא מְהֻלָּל מֵהֶם, אֲזַי הוּא גָּדוֹל, כִּי הוּא עִקַּר גְּדֻלָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הר",
+   "target_he": "עיר אלקינו",
+   "proof": "כְּשֶׁבְּחִינַת הַר נַעֲשֶׂה עִיר אֱלֹקֵינוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עיר אלקינו",
+   "target_he": "בית",
+   "proof": "שֶׁהוּא יִשּׁוּב בְּנֵי־אָדָם, בְּחִינַת בַּיִת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "העלאת בחינת התפלה מבחינת הר לבחינת עיר ובית",
+   "target_he": "השגה לעכו\"ם",
+   "proof": "כְּשֶׁמַּעֲלִין אֶת בְּחִינַת הַתְּפִלָּה מִבְּחִינַת הַר לִבְחִינַת עִיר וּבַיִת, שֶׁאָז יֵשׁ גַּם לָעַכּוּ\"ם הַשָּׂגָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ידיעת הרחוקים ממנו יתברך",
+   "target_he": "גדולתו יתברך",
+   "proof": "כְּשֶׁגַּם הָרְחוֹקִים יוֹדְעִים מִמֶּנּוּ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

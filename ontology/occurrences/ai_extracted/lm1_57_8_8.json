@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 57,
+ "chunk": "57_8_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מְבַזֶּה תַּלְמִיד־חָכָם",
+   "target_he": "רְפוּאָה לְמַכָּתוֹ",
+   "proof": "הַמְבַזֶּה תַּלְמִיד־חָכָם אֵין לוֹ רְפוּאָה לְמַכָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַרְכָּבָה",
+   "target_he": "רְפוּאַת הַחוֹלַאַת",
+   "proof": "וְזֹאת הַהַרְכָּבָה יֵשׁ לָהּ כֹּחַ לְרַפְּאוֹת הַחוֹלַאַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

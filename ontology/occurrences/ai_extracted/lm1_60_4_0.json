@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שְׁלֵמוּת הַיִּרְאָה",
+   "target_he": "שָׁלֹשׁ קַוִּין",
+   "proof": "וּשְׁלֵמוּת הַיִּרְאָה הִיא בִּבְחִינַת שָׁלֹשׁ קַוִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִרְאַת הֶחָכָם וְהָרַב שֶׁבַּדּוֹר",
+   "target_he": "מוֹרָא שָׁמַיִם",
+   "proof": "כִּי יִרְאַת הֶחָכָם וְהָרַב שֶׁבַּדּוֹר, הוּא בְּחִינַת מוֹרָא שָׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִרְאַת הָרַב",
+   "target_he": "מוֹרָא רַבָּךְ",
+   "proof": "וְהַתַּלְמִידִים, יֵשׁ לָהֶם יִרְאַת הָרַב, בְּחִינַת מוֹרָא רַבָּךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֲכַם הַדּוֹר שֶׁזּוֹכֶה לְתַלְמִידִים הֲגוּנִים וּלְבָנִים הֲגוּנִים",
+   "target_he": "הַיִּרְאָה בִּשְׁלֵמוּת",
+   "proof": "וּכְשֶׁיֵּשׁ חֲכַם הַדּוֹר, שֶׁזּוֹכֶה לְתַלְמִידִים הֲגוּנִים וּלְבָנִים הֲגוּנִים, אֲזַי הַיִּרְאָה בִּשְׁלֵמוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלֹשׁ יִרְאוֹת אֵלּוּ",
+   "target_he": "הַיִּרְאָה בִּשְׁלֵמוּת",
+   "proof": "שֶׁעַל־יְדֵי שָׁלֹשׁ יִרְאוֹת אֵלּוּ, הַיִּרְאָה בִּשְׁלֵמוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

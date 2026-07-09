@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 20,
+ "chunk": "20_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כְּשֶׁמַּתְחִיל לִכְנֹס לְאֵיזֶה דֶּרֶךְ",
+   "target_he": "הֵרָיוֹן",
+   "proof": "כִּי כְּשֶׁמַּתְחִיל לִכְנֹס לְאֵיזֶה דֶּרֶךְ הוּא בְּחִינַת הֵרָיוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּדֶרֶךְ חָכְמָה הֹרֵיתִיךָ",
+   "target_he": "הֵרָיוֹן",
+   "proof": "בִּבְחִינַת (משלי ד׳:י״א): בְּדֶרֶךְ חָכְמָה הֹרֵיתִיךָ, בְּחִינַת הֵרָיוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוֹצֵא קֹדֶם זְמַנּוֹ",
+   "target_he": "נֶפֶל",
+   "proof": "וּכְשֶׁיּוֹצֵא קֹדֶם זְמַנּוֹ, זֶה בְּחִינַת נֶפֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "נֶפֶל",
+   "proof": "וּפְגָם זֶה נַעֲשֶׂה עַל־יְדֵי מַחֲלֹקֶת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

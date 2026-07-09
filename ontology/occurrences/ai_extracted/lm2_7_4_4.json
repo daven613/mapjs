@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_4_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בני אדם",
+   "target_he": "בני דעה",
+   "proof": "כְּשֶׁהָעוֹלָם מְמֻלָּא מִבְּנֵי אָדָם, הַיְנוּ מִבְּנֵי דֵּעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "אדם",
+   "proof": "כִּי מִי שֶׁאֵין בּוֹ דַּעַת, אֵינוֹ אָדָם כְּלָל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "בני אדם",
+   "proof": "עַל־כֵּן כָּל זְמַן שֶׁאֵין מֵאִיר הַדַּעַת בִּבְנֵי אָדָם, וְאֵינָם יוֹדְעִים וּמַרְגִּישִׁים אֱלֹקוּתוֹ יִתְבָּרַךְ וּמֶמְשַׁלְתּוֹ, אֵינָם בִּכְלַל בְּנֵי אָדָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דעת לדעת את ה'",
+   "target_he": "עיקר גדר האדם",
+   "proof": "מֵאַחַר שֶׁאֵין בָּהֶם דַּעַת לָדַעַת אֶת ה', שֶׁזֶּה עִקָּר גֶּדֶר הָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

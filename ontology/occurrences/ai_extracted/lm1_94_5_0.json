@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 94,
+ "chunk": "94_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַנִּיצוֹצוֹת",
+   "target_he": "אוֹתִיּוֹת",
+   "proof": "וְהַנִּיצוֹצוֹת הֵם אוֹתִיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָאוֹתִיּוֹת",
+   "target_he": "דִּבּוּרִים",
+   "proof": "וְהָאוֹתִיּוֹת נַעֲשִׂים דִּבּוּרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַדִּבּוּר",
+   "target_he": "רַב טוּב לְיִשְׂרָאֵל",
+   "proof": "וְעַל יְדֵי הַדִּבּוּר נִשְׁפָּע רַב טוּב לְיִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

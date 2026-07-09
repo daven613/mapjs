@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_10_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חֲלִישׁוּת הַמַּלְאָךְ",
+   "target_he": "חִמּוּם",
+   "proof": "וְהַחִמּוּם הוּא עַל־יְדֵי חֲלִישׁוּת הַמַּלְאָךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חִמּוּם",
+   "target_he": "גָּלוּת מִצְרַיִם",
+   "proof": "וּמֵחֲמַת זֶה הָיָה גָּלוּת מִצְרַיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גָּלוּת מִצְרַיִם",
+   "target_he": "תִּקּוּן חֵטְא אָדָם הָרִאשׁוֹן",
+   "proof": "שֶׁעִקָּר גָּלוּת מִצְרַיִם הָיָה לְתַקֵּן חֵטְא אָדָם הָרִאשׁוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִיסָן",
+   "target_he": "כֹּחַ הַמַּלְאָךְ",
+   "proof": "נִמְצָא שֶׁבְּנִיסָן נִתְחַזֵּק כֹּחַ הַמַּלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חִזּוּק כֹּחַ הַמַּלְאָךְ בְּנִיסָן",
+   "target_he": "תִּקּוּן חֵטְא אָדָם הָרִאשׁוֹן",
+   "proof": "שֶׁזֶּה בְּחִינַת תִּקּוּן חֵטְא אָדָם הָרִאשׁוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָרָצוֹן שֶׁל הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "וּכְמִצְבְּיֵהּ עָבֵד בְּחֵיל שְׁמַיָּא",
+   "proof": "וַאֲזַי נִתְחַדֵּשׁ הָרָצוֹן שֶׁל הַשֵּׁם יִתְבָּרַךְ, בְּחִינַת (דניאל ד׳:ל״ב): וּכְמִצְבְּיֵהּ עָבֵד בְּחֵיל שְׁמַיָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נִיסָן",
+   "target_he": "זְמַן הַגְּאֻלָּה",
+   "proof": "כִּי אָז, בְּנִיסָן, הוּא זְמַן הַגְּאֻלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

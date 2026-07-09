@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 87,
+ "chunk": "87_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַסּוֹד",
+   "target_he": "סוֹד כַּוָּנַת אֱלוּל",
+   "proof": "הַיְנוּ סוֹד כַּוָּנַת אֱלוּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כַּוָּנַת אֱלוּל",
+   "target_he": "תִּקּוּן הַבְּרִית",
+   "proof": "שֶׁהֵם מְסֻגָּלִים לְתִקּוּן הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַתִּקּוּן",
+   "target_he": "מְצִיאַת הַזִּוּוּג",
+   "proof": "שֶׁעַל־יְדֵי־זֶה מוֹצְאִין הַזִּוּוּג",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַתִּקּוּן הַנַּ\"ל",
+   "target_he": "רָצוֹן אֵלָיו",
+   "proof": "כִּי עַל־יְדֵי הַתִּקּוּן הַנַּ\"ל נַעֲשֶׂה בָּהּ רָצוֹן אֵלָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְטִיָּתָהּ מִמֶּנּוּ",
+   "target_he": "אִי אֶפְשָׁר לִמְצֹא זִוּוּגוֹ",
+   "proof": "כִּי נָטְתָה מִמֶּנּוּ כַּנַּ\"ל, וְעַל־יְדֵי־זֶה אִי אֶפְשָׁר לִמְצֹא זִוּוּגוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כַּוָּנַת אֱלוּל",
+   "target_he": "הַתִּקּוּן לָזֶה",
+   "proof": "עַל־יְדֵי כַּוָּנַת אֱלוּל שֶׁהֵם הַתִּקּוּן לָזֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כַּוָּנַת אֱלוּל",
+   "target_he": "רָצוֹן אֵלָיו",
+   "proof": "עַל־יְדֵי־זֶה חָזַר וְנַעֲשָׂה בָּהּ רָצוֹן אֵלָיו כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

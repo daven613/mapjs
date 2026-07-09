@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_11_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קלקול המשפט",
+   "target_he": "משפט מעוקל",
+   "proof": "וְעַל־יְדֵי קִלְקוּל הַמִּשְׁפָּט, בְּחִינַת מִשְׁפָּט מְעֻקָּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קלקול המשפט",
+   "target_he": "טומאה",
+   "proof": "עַל־יְדֵי־זֶה בָּא, חַס וְשָׁלוֹם, טֻמְאָה הַנַּ\"ל, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מעוקל",
+   "target_he": "עמלק",
+   "proof": "וְזֶה מְעֻקָּל, אוֹתִיּוֹת עֲמָלֵק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עמלק",
+   "target_he": "טומאה",
+   "proof": "שֶׁעַל יָדוֹ בָּא הַטֻּמְאָה הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טומאת עמלק",
+   "target_he": "אֲשֶׁר קָרְךָ בַּדֶּרֶךְ",
+   "proof": "בִּבְחִינַת (דברים כ״ה:י״ח): אֲשֶׁר קָרְךָ בַּדֶּרֶךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גרים",
+   "target_he": "טומאת עמלק",
+   "proof": "הִיא בָּאָה עַל־יְדֵי גֵּרִים, כְּכָל הַמְבֹאָר לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טומאת עמלק",
+   "target_he": "מראה בחלום",
+   "proof": "וְזֶה בְּחִינַת מַרְאֶה בַּחֲלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מראה",
+   "target_he": "רשע מכתיר את הצדיק",
+   "proof": "מַרְאֶה רָאשֵׁי תֵבוֹת: רָשָׁע מַכְתִּיר אֶת הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עוות המשפט",
+   "target_he": "טומאה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה בָּא טֻמְאָה זוֹ כַּנַּ\"ל, עַל־יְדֵי שֶׁנַּעֲשֶׂה עִוּוּת הַמִּשְׁפָּט כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

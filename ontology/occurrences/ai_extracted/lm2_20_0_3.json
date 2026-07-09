@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 20,
+ "chunk": "20_0_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הָאֲנָשִׁים שֶׁנִּתְפַּרְסְמוּ קֹדֶם זְמַנָּם",
+   "target_he": "נְפָלִים",
+   "proof": "שֶׁהֵם בְּחִינַת נְפָלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִפְסָד הַדֶּרֶךְ חָכְמָה בְּעַצְמוֹ",
+   "target_he": "מִיתַת הָאִשָּׁה הָרָה",
+   "proof": "שֶׁזֶּה בְּחִינַת מִיתַת הָאִשָּׁה הָרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עָנוֹשׁ יֵעָנֵשׁ בְּמָמוֹן",
+   "target_he": "עֲנִיּוּת",
+   "proof": "עָנוֹשׁ יֵעָנֵשׁ – בְּמָמוֹן, הַיְנוּ עֲנִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּגָם",
+   "target_he": "עֹנֶשׁ",
+   "proof": "וּלְפִי הַפְּגָם, כֵּן הָעֹנֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

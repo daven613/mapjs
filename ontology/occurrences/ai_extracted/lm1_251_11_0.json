@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 251,
+ "chunk": "251_11_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "קֻדְשָׁא בְּרִיךְ הוּא וְאוֹרַיְתָא וְיִשְׂרָאֵל",
+   "target_he": "חָד",
+   "proof": "וְעַל כֵּן קֻדְשָׁא בְּרִיךְ הוּא וְאוֹרַיְתָא וְיִשְׂרָאֵל כֹּלָּא חָד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "אֱמֶת",
+   "proof": "כִּי הַשֵּׁם יִתְבָּרַךְ אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תוֹרָתוֹ",
+   "target_he": "אֱמֶת",
+   "proof": "וְתוֹרָתוֹ אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יִשְׂרָאֵל",
+   "target_he": "אֱמֶת",
+   "proof": "וְיִשְׂרָאֵל אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "אֶחָד",
+   "proof": "וְכֵיוָן שֶׁכֻּלָּם אֱמֶת – הַכֹּל אֶחָד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

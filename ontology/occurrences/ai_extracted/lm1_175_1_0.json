@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 175,
+ "chunk": "175_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בכיה",
+   "target_he": "בשמך יגילון כל היום",
+   "proof": "וְזֶה בְּכִיָּה הוּא רָאשֵׁי־תֵּבוֹת: בְּשִׁמְךָ יְגִילוּן כָּל הַיּוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמחה בשמו יתברך",
+   "target_he": "בכיה",
+   "proof": "שֶׁעִקַּר הַבְּכִיָּה שֶׁתִּהְיֶה מֵחֲמַת שִׂמְחָה בִּשְׁמוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שם ס\"ג",
+   "target_he": "בכיה",
+   "proof": "כִּי בְּכִיָּה הוּא מִתְעוֹרֵר מִשֵּׁם ס\"ג",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שם ס\"ג",
+   "target_he": "בינה",
+   "proof": "שֶׁהוּא בְּבִינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בכיה",
+   "target_he": "מילוי של ס\"ג",
+   "proof": "וְעַל־כֵּן בְּכִיָּה בְּגִימַטְרִיָּא הַמִּלּוּי שֶׁל ס\"ג",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

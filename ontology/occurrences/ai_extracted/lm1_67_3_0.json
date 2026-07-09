@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 67,
+ "chunk": "67_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תאות אכילה",
+   "target_he": "כבוד",
+   "proof": "וּכְשֶׁפּוֹגֵם בְּתַאֲוַת אֲכִילָה, וְעַל־יְדֵי־זֶה נִפְגָּם הַכָּבוֹד וְאֵין לוֹ פָּנִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כבוד",
+   "target_he": "עזי פנים",
+   "proof": "וְעַל־יְדֵי־זֶה מִתְגַּבְּרִין עַזֵּי פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כבוד",
+   "target_he": "מלכות",
+   "proof": "דְּהַיְנוּ שֶׁנּוֹפֵל הַכָּבוֹד, שֶׁהוּא בְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עזות",
+   "target_he": "מלכותא בלא תגא",
+   "proof": "אֲזַי מִתְגַּבֵּר הָעַזּוּת, שֶׁהוּא מַלְכוּתָא בְּלָא תָגָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מלכות",
+   "target_he": "השלחן שבקדושה",
+   "proof": "הַיְנוּ כְּשֶׁאֵין בְּחִינַת מַלְכוּת, בְּחִינַת הַשֻּׁלְחָן שֶׁבִּקְדֻשָּׁה, בִּשְׁלֵמוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מלכות",
+   "target_he": "עזות",
+   "proof": "הַיְנוּ כְּשֶׁאֵין בְּחִינַת מַלְכוּת, בְּחִינַת הַשֻּׁלְחָן שֶׁבִּקְדֻשָּׁה, בִּשְׁלֵמוּת כַּנַּ\"ל, אֲזַי מִתְגַּבֵּר הָעַזּוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עזי פנים",
+   "target_he": "וְהַכְּלָבִים עַזֵּי נֶפֶשׁ לֹא יָדְעוּ שָׂבְעָה",
+   "proof": "וְזֶה בְּחִינַת (ישעיהו נ״ו:י״א): וְהַכְּלָבִים עַזֵּי נֶפֶשׁ לֹא יָדְעוּ שָׂבְעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תאות אכילה",
+   "target_he": "לא ידעו שבעה",
+   "proof": "הַיְנוּ עַל־יְדֵי תַּאֲוַת אֲכִילָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תאות אכילה",
+   "target_he": "בֶּטֶן רְשָׁעִים תֶּחְסָר",
+   "proof": "בְּחִינַת (משלי י״ג:כ״ה): בֶּטֶן רְשָׁעִים תֶּחְסָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תאות אכילה",
+   "target_he": "עזי פנים",
+   "proof": "עַל־יְדֵי־זֶה מִתְגַּבְּרִים הָעַזֵּי פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עזי פנים",
+   "target_he": "כלבים עזי נפש",
+   "proof": "שֶׁהֵם בְּחִינַת כְּלָבִים עַזֵּי נֶפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כלבים עזי נפש",
+   "target_he": "פְּנֵי הַדּוֹר כִּפְנֵי הַכֶּלֶב",
+   "proof": "בְּחִינַת (סוטה מט:) פְּנֵי הַדּוֹר כִּפְנֵי הַכֶּלֶב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כבוד",
+   "target_he": "רועים ומנהיגים אל הדור",
+   "proof": "שֶׁהֵם נַעֲשִׂים רוֹעִים וּמַנְהִיגִים אֶל הַדּוֹר, כִּי הַכָּבוֹד נָפַל אֲלֵיהֶם, וְיֵשׁ לָהֶם כָּל הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

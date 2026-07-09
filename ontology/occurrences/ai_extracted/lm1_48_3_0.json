@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 48,
+ "chunk": "48_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תפלה",
+   "target_he": "סוכה",
+   "proof": "תְּסֻכֵּנִי בְּבֶטֶן אִמִּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפלה",
+   "target_he": "כֹּחַ הַתְּפִלָּה",
+   "proof": "כָּל עַצְמוֹתַי תֹּאמַרְנָה וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כֹּחַ הַתְּפִלָּה",
+   "target_he": "סֻכָּה",
+   "proof": "בְּגִידִים וַעֲצָמוֹת תְּסוֹכְכֵנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כֹּחַ שֶׁאָדָם מַכְנִיס בַּתֵּבוֹת",
+   "target_he": "כ\"ח אַתְוָן דְּעֻבְדָּא דִּבְרֵאשִׁית",
+   "proof": "הֵם כ\"ח אַתְוָן דְּעֻבְדָּא דִּבְרֵאשִׁית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כ\"ח אַתְוָן",
+   "target_he": "עֲשָׂרָה מַאֲמָרוֹת",
+   "proof": "מְקַבְּלִין כֹּחַ מֵכ\"ח אַתְוָן אֵלּוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 87,
+ "chunk": "87_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יראה",
+   "target_he": "צדק",
+   "proof": "צָרִיךְ לִהְיוֹת לוֹ יִרְאָה, הַנִּקְרָא צֶדֶק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדק",
+   "target_he": "דינים",
+   "proof": "וְהוּא יִשְׁפֹּט תֵּבֵל בְּצֶדֶק לְפִיכָךְ מִתְעוֹרְרִין עָלָיו הַדִּינִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אמת",
+   "target_he": "יראה",
+   "proof": "כְּשֶׁבָּא אֶל הָאֱמֶת, הַיְנוּ אֶל הַיִּרְאָה הַנִּקְרָא אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יראה",
+   "target_he": "אמונה",
+   "proof": "הַיְנוּ אֶל הַיִּרְאָה הַנִּקְרָא אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "דינים",
+   "proof": "אָז כָּל הַדִּינִין נִמְתָּקִין בְּשָׁרְשָׁן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

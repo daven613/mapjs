@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 102,
+ "chunk": "102_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "רַק",
+   "target_he": "מִעוּט",
+   "proof": "כִּי \"רַק\" הוּא מִעוּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כִּסֵּא",
+   "target_he": "מַלְכוּת",
+   "proof": "\"כִּסֵּא\" הוּא מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רַק הַכִּסֵּא",
+   "target_he": "מִעוּט הַמַּלְכוּת",
+   "proof": "רַק הַכִּסֵּא – הַיְנוּ מִעוּט הַמַּלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

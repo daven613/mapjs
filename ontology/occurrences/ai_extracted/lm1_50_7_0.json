@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 50,
+ "chunk": "50_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חוֹלַאַת שֶׁקּוֹרִין \"בְּרֶעכֶנִישׁ\"",
+   "target_he": "מַיִּין מְסָאֳבִין, מַיִּין מְרִירִין",
+   "proof": "מֵחֲמַת קִלְקוּל הַמֹּחַ שֶׁבָּעֲצָמוֹת, בְּחִינַת מַיִּין מְסָאֳבִין, מַיִּין מְרִירִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּאֲוַת נִאוּף",
+   "target_he": "חוֹלַאַת שֶׁקּוֹרִין \"בְּרֶעכֶנִישׁ\"",
+   "proof": "שֶׁבָּא הַחוֹלַאַת הַזֹּאת מֵחֲמַת תַּאֲוַת נִאוּף",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִלְקוּל הַמֹּחַ שֶׁבָּעֲצָמוֹת",
+   "target_he": "חוֹלַאַת שֶׁקּוֹרִין \"בְּרֶעכֶנִישׁ\"",
+   "proof": "וְזֶה מֵחֲמַת קִלְקוּל הַמֹּחַ שֶׁבָּעֲצָמוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

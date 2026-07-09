@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_4_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שְׁלֵמוּת הַדִּבּוּר",
+   "target_he": "לְשׁוֹן־הַקֹּדֶשׁ",
+   "proof": "עַל־יְדֵי שְׁלֵמוּת הַדִּבּוּר, שֶׁהוּא לְשׁוֹן־הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "הַקְּדֻשָּׁה וְהַשִּׂמְחָה שֶׁל שַׁבָּת לְשֵׁשֶׁת יְמֵי הַחֹל",
+   "proof": "אֲזַי מַמְשִׁיכִין עַל יָדוֹ אֶת הַקְּדֻשָּׁה וְהַשִּׂמְחָה שֶׁל שַׁבָּת לְשֵׁשֶׁת יְמֵי הַחֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "הַשִּׂמְחָה שֶׁל שַׁבָּת לְשֵׁשֶׁת יְמֵי הַחֹל",
+   "proof": "עַל־כֵּן נִמְשָׁךְ עַל יָדוֹ הַשִּׂמְחָה שֶׁל שַׁבָּת לְשֵׁשֶׁת יְמֵי הַחֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֵל אֱלֹקִים ה' דִּבֶּר",
+   "target_he": "שִׂמְחָה",
+   "proof": "אֵל אֱלֹקִים ה' דִּבֶּר (עִם הַתֵּבוֹת) מִסְפַּר שִׂמְחָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁלֵמוּת הַדִּבּוּר",
+   "target_he": "שִׂמְחָה",
+   "proof": "כִּי עַל־יְדֵי שְׁלֵמוּת הַדִּבּוּר, שֶׁהוּא לְשׁוֹן־הַקֹּדֶשׁ, נִמְשָׁךְ שִׂמְחָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 51,
+ "chunk": "51_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר",
+   "target_he": "עֵינַיִם",
+   "proof": "כִּי הַשֶּׁקֶר מַזִּיק לָעֵינַיִם בְּגַשְׁמִיּוּת וּבְרוּחָנִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֶׁקֶר מַזִּיק לָעֵינַיִם",
+   "target_he": "וּמְשַׂקְּרוֹת עֵינַיִם",
+   "proof": "בִּבְחִינַת: וּמְשַׂקְּרוֹת עֵינַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

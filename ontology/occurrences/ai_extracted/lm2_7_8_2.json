@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_8_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "גילוי התירוץ בפני התלמיד",
+   "target_he": "מקיף חדש",
+   "proof": "אִם יְגַלֶּה זֶה הַתֵּרוּץ בִּפְנֵי הַתַּלְמִיד, יִכָּנֵס בּוֹ מַקִּיף חָדָשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מקיף חדש",
+   "target_he": "קושיא חזקה ורחבה",
+   "proof": "שֶׁעַל־יָדוֹ יִהְיֶה הַקֻּשְׁיָא חֲזָקָה וּרְחָבָה יוֹתֵר מִבַּתְּחִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קושיא חזקה ורחבה",
+   "target_he": "השגות מקיפים שהם למעלה מהזמן",
+   "proof": "עַד שֶׁיּוּכַל לִכָּנֵס בְּהַשָּׂגוֹת מַקִּיפִים שֶׁהֵם לְמַעְלָה מֵהַזְּמַן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שכל חדש",
+   "target_he": "מקיף",
+   "proof": "נִכְנָס בּוֹ שֵׂכֶל חָדָשׁ שֶׁהוּא בְּחִינַת מַקִּיף כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זהירות בדיבור",
+   "target_he": "קושיות ותירוצים שאין הזמן מספיק לבארם",
+   "proof": "אִם לֹא יִהְיֶה נִזְהָר בִּדְבָרָיו... עַל־יְדֵי־זֶה יִהְיֶה נִכְנָס בְּקֻשְׁיוֹת וְתֵרוּצִים שֶׁאֵין הַזְּמַן מַסְפִּיק לְבָאֲרָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קושיות ותירוצים שאין הזמן מספיק לבארם",
+   "target_he": "מקיפים שהם למעלה מהזמן",
+   "proof": "כִּי הֵם בְּחִינַת מַקִּיפִים שֶׁהֵם לְמַעְלָה מֵהַזְּמַן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

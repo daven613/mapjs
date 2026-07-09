@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 84,
+ "chunk": "84_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וַתְּרָן הָיִיתִי בְּמָמוֹנִי",
+   "target_he": "מִדַּת אַבְרָהָם אָבִינוּ",
+   "proof": "שֶׁזּוֹ הִיא מִדַּת אַבְרָהָם אָבִינוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מִדַּת אַבְרָהָם אָבִינוּ",
+   "target_he": "תַּרְעָא דְּאִיתְקְרִי אַהֲבָה",
+   "proof": "וְהִיא תַּרְעָא דְּאִיתְקְרִי אַהֲבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תַּרְעָא דְּאִיתְקְרִי אַהֲבָה",
+   "target_he": "סִטְרָא דִּימִינָא",
+   "proof": "וְהוּא סִטְרָא דִּימִינָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סִטְרָא דִּימִינָא",
+   "target_he": "מֹחָא חִוָּרָא כְּכַסְפָּא",
+   "proof": "מִסִּטְרָא דִּימִינָא מֹחָא חִוָּרָא כְּכַסְפָּא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כָּל הַמְקַטְרְגִים וְכָל הַנְּחָשִׁים וְעַקְרַבִּים",
+   "target_he": "הַמַּחֲשָׁבוֹת זָרוֹת שֶׁמְּבַלְבְּלִין מַחֲשַׁבְתֵּהּ",
+   "proof": "הַיְנוּ הַמַּחֲשָׁבוֹת זָרוֹת שֶׁמְּבַלְבְּלִין מַחֲשַׁבְתֵּהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סִטְרָא דִּימִינָא",
+   "target_he": "הַמַּחֲשָׁבוֹת זָרוֹת",
+   "proof": "נַעֲשִׂין חִוָּרָא כְּכַסְפָּא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

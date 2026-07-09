@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 85,
+ "chunk": "85_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עיקר נחמותינו",
+   "target_he": "נחמו נחמו",
+   "proof": "וְזֶהוּ עִקָּר נֶחָמוֹתֵינוּ, בְּחִינַת נַחֲמוּ נַחֲמוּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שכבי עד הבקר",
+   "target_he": "עת התחיה",
+   "proof": "שִׁכְבִי עַד הַבֹּקֶר, שֶׁהוּא עֵת הַתְּחִיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "והנה בבקר והנה היא לאה",
+   "target_he": "עצם לוז",
+   "proof": "וְהִנֵּה בַבֹּקֶר וְהִנֵּה הִיא לֵאָה (בראשית כ״ט:כ״ה) – הַיְנוּ עֶצֶם לוּז הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עצם לוז",
+   "target_he": "בנין הגוף",
+   "proof": "וּמִמֶּנּוּ יִתְחַדֵּשׁ בִּנְיַן הַגּוּף בִּשְׁעַת תְּחִיַּת־הַמֵּתִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עצם לוז",
+   "target_he": "הגוף",
+   "proof": "שֶׁעַל־יָדָהּ נִתְבַּנֶּה הַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

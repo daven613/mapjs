@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 6,
+ "chunk": "6_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "זה היום עשה יי",
+   "target_he": "בחינת שמחה של יום טוב",
+   "proof": "רָאשֵׁי־תֵבוֹת: זֶה הַיּוֹם עָשָׂה יְיָ הַיְנוּ בְּחִינַת שִׂמְחָה שֶׁל יוֹם טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זעה טובה",
+   "target_he": "שמחה של יום טוב",
+   "proof": "שֶׁנַּעֲשֶׂה עַל־יְדֵי זֵעָה טוֹבָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זעה",
+   "target_he": "שמחה",
+   "proof": "כִּי עַל־יְדֵי הַזֵּעָה נַעֲשֶׂה שִׂמְחָה, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

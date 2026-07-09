@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_5_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַלְכוּת דִּקְדֻשָּׁה",
+   "target_he": "מָרְדֳּכַי",
+   "proof": "כִּי יֵשׁ כֹּחַ בְּמַלְכוּת דִּקְדֻשָּׁה, שֶׁהוּא בְּחִינַת מָרְדֳּכַי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַלְכוּת דִּקְדֻשָּׁה (מָרְדֳּכַי)",
+   "target_he": "הַמָּמוֹן וְהַנִּיצוֹצוֹת הַקְּדוֹשִׁים",
+   "proof": "לְהוֹצִיא מֵאִתּוֹ כָּל הַמָּמוֹן וְכָל הַנִּיצוֹצוֹת הַקְּדוֹשִׁים שֶׁבָּלַע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אָדָם שֶׁטּוֹב לְפָנָיו",
+   "target_he": "מָרְדֳּכַי",
+   "proof": "כִּי לָאָדָם שֶׁטּוֹב לְפָנָיו נָתַן חָכְמָה וָדַעַת – זֶה מָרְדֳּכַי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָרְדֳּכַי",
+   "target_he": "מַלְכוּת דִּקְדֻשָּׁה",
+   "proof": "הַיְנוּ שֶׁמָּרְדְּכַי, שֶׁהוּא בְּחִינַת מַלְכוּת דִּקְדֻשָּׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מָרְדֳּכַי",
+   "target_he": "חָכְמָה וָדַעַת",
+   "proof": "נָתַן לוֹ חָכְמָה וָדַעַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טוֹב לְפָנָיו",
+   "target_he": "הַתּוֹרָה",
+   "proof": "וְזֶה: טוֹב לְפָנָיו, בְּחִינַת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חוֹטֵא",
+   "target_he": "הָמָן",
+   "proof": "וְלַחוֹטֵא נָתַן עִנְיָן לֶאֱסֹף וְלִכְנֹס – זֶה הָמָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָמָן",
+   "target_he": "מַלְכוּת דְּסִטְרָא אָחֳרָא",
+   "proof": "הַיְנוּ שֶׁהָמָן, שֶׁהוּא בְּחִינַת מַלְכוּת דְּסִטְרָא אָחֳרָא כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לָתֵת לְטוֹב לִפְנֵי אֱלֹקִים",
+   "target_he": "הַתּוֹרָה",
+   "proof": "וְזֶה: לָתֵת לְטוֹב לִפְנֵי אֱלֹקִים – בְּחִינַת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמָּמוֹן וְהַנִּיצוֹצוֹת",
+   "target_he": "תּוֹרָה",
+   "proof": "מוֹצִיא מִמֶּנּוּ כָּל הַמָּמוֹן וְכָל הַנִּיצוֹצוֹת... וְנַעֲשֶׂה מִזֶּה תּוֹרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָעֲשִׁירוּת",
+   "target_he": "תּוֹרָה",
+   "proof": "כִּי מָרְדֳּכַי מוֹצִיא מִמֶּנּוּ כָּל הָעֲשִׁירוּת... וְעוֹשֶׂה מִזֶּה תּוֹרָה, שֶׁנִּקְרֵאת אֵשֶׁת חַיִל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָעֲשִׁירוּת שֶׁמּוֹצִיא מִמֶּנּוּ מָרְדֳּכַי",
+   "target_he": "חַיִל בָּלַע וַיְקִאֶנּוּ",
+   "proof": "בִּבְחִינַת (איוב כ׳:ט״ו): חַיִל בָּלַע וַיְקִאֶנּוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

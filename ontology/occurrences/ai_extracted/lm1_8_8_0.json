@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 8,
+ "chunk": "8_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הרוח־חיים",
+   "target_he": "ורוח אלקים מרחפת על־פני המים",
+   "proof": "כִּי הָרוּחַ־חַיִּים הוּא בְּהַתּוֹרָה, בְּחִינַת: וְרוּחַ אֱלֹקִים מְרַחֶפֶת עַל־פְּנֵי הַמָּיִם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הרוח־חיים",
+   "target_he": "ארך אפים",
+   "proof": "שֶׁהוּא בְּחִינַת אֶרֶךְ אַפַּיִם, מַאֲרִיךְ רוּחֵהּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ארך אפים",
+   "target_he": "הרוח־חיים",
+   "proof": "שֶׁהוּא הֶפֶךְ אֶרֶךְ אַפַּיִם, שֶׁהוּא בְּחִינַת הָרוּחַ־חַיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אנחה",
+   "target_he": "השלמת החסרון",
+   "proof": "שֶׁמַּמְשִׁיכִין עַל־יְדֵי אֲנָחָה לְהַשְׁלִים הַחִסָּרוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הרוח",
+   "target_he": "שלמות החסרון",
+   "proof": "כִּי הָרוּחַ הוּא שְׁלֵמוּת הַחִסָּרוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שלמות החסרון",
+   "target_he": "ויתן לך משאלת לבך",
+   "proof": "בְּחִינַת: וְיִתֶּן לְךָ מִשְׁאֲלֹת לִבֶּךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

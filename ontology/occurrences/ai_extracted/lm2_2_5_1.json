@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_5_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דעה משנה",
+   "target_he": "פעולות משתנות",
+   "proof": "שֶׁכָּל אֶחָד יֵשׁ בּוֹ דֵּעָה מְשֻׁנָּה, בְּחִינַת פְּעֻלּוֹת מִשְׁתַּנּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מסכימים יחד לדעת אחד",
+   "target_he": "אחדות הפשוט",
+   "proof": "וּכְשֶׁהֵם מַסְכִּימִים יַחַד לְדַעַת אֶחָד, נִמְצָא בְּחִינַת פְּעֻלּוֹת מִשְׁתַּנּוֹת נַעֲשֶׂה בְּחִינַת אַחְדוּת הַפָּשׁוּט",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אחדות הפשוט למטה",
+   "target_he": "אחדות הפשוט יתברך למעלה",
+   "proof": "כִּי כְּשֶׁנִּתְגַּלֶּה בְּחִינַת אַחְדוּת הַפָּשׁוּט לְמַטָּה, גַם לְמַעְלָה נִתְגַלֶּה אַחְדוּת הַפָּשׁוּט יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אתה אחד ושמך אחד, ומי כעמך ישראל גוי אחד בארץ",
+   "target_he": "אחדות הפשוט",
+   "proof": "בִּבְחִינַת: אַתָּה אֶחָד וְשִׁמְךָ אֶחָד, וּמִי כְּעַמְּךָ יִשְׂרָאֵל גוֹי אֶחָד בָּאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אחדות שנתגלה בישראל למטה",
+   "target_he": "אחדותו הפשוט יתברך למעלה",
+   "proof": "שֶׁעַל יְדֵי אַחְדוּת שֶׁנִּתְגַּלֶּה בְּיִשְׂרָאֵל לְמַטָּה, נִתְגַלֶּה אַחְדוּתוֹ הַפָּשׁוּט יִתְבָּרַךְ לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

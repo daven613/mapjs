@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_9_16",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בחינות מלאך",
+   "target_he": "קיצוץ בנטיעות",
+   "proof": "וַאֲזַי אֶפְשָׁר לְהַנִּכְנָס וְנִתְקָרֵב אֵלָיו לְקַצֵּץ בִּנְטִיעוֹת עַל־יְדֵי בְּחִינוֹת מַלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינות ה' צבאות",
+   "target_he": "ליכנס וליצא בשלום",
+   "proof": "אוֹ לִכָּנֵס וְלֵיצֵא בְּשָׁלוֹם, עַל יְדֵי בְּחִינוֹת ה' צְבָאוֹת, כְּמוֹ רַבִּי עֲקִיבָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "למדנות",
+   "target_he": "חסידות",
+   "proof": "כִּי אִם אֵינוֹ לַמְדָן, אָמְרוּ רַבּוֹתֵינוּ זִכְרוֹנָם לִבְרָכָה: וְלֹא עַם הָאָרֶץ חָסִיד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חסידות",
+   "target_he": "רשע גמור",
+   "proof": "וְלַמְדָן בִּלְבַד בְּוַדַּאי אֵינוֹ כְּלוּם, כִּי אֶפְשָׁר לִהְיוֹת לַמְדָן וְרָשָׁע גָּמוּר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זכיה",
+   "target_he": "סם מות",
+   "proof": "וְ\"לֹא זָכָה נַעֲשֶׂה לוֹ סַם מָוֶת\"",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "למדן וחסיד",
+   "target_he": "מלאך ה' צבאות",
+   "proof": "וּשְׁתֵּי בְּחִינוֹת אֵלּוּ, הֵם בְּחִינוֹת מַלְאַךְ ה' צְבָאוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "למדן בתורה",
+   "target_he": "מלאך",
+   "proof": "כִּי מַה שֶּׁהוּא לַמְדָן בַּתּוֹרָה, הוּא בְּחִינַת מַלְאָךְ שֶׁהוּא מט\"ט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מלאך",
+   "target_he": "מט\"ט",
+   "proof": "הוּא בְּחִינַת מַלְאָךְ שֶׁהוּא מט\"ט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מט\"ט",
+   "target_he": "משנה",
+   "proof": "דָּא מט\"ט, שֶׁהוּא בְּחִינוֹת מִשְׁנָה, הַמַּבְדִּיל וּמַפְרִישׁ בֵּין מַיִּין דָּכַיִן וּבֵין מַיִּין מְסָאֳבִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

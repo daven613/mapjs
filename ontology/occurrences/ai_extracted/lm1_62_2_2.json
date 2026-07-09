@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 62,
+ "chunk": "62_2_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יְדִיעָה שֶׁמְּלֹא כָל הָאָרֶץ כְּבוֹדוֹ",
+   "target_he": "הִתְלַהֲבוּת בַּתְּפִלָּה",
+   "proof": "וַדַּאי הָיָה מִתְפַּלֵּל בְּהִתְלַהֲבוּת גָּדוֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְדִיעָה שֶׁמְּלֹא כָל הָאָרֶץ כְּבוֹדוֹ",
+   "target_he": "דִּקְדּוּק בַּתְּפִלָּה",
+   "proof": "וְהָיָה מְדַקְדֵּק מְאֹד לְכַוֵּן אֶת דְּבָרָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְדִיעָה",
+   "target_he": "הִתְלַהֲבוּת בַּתְּפִלָּה",
+   "proof": "וּבִשְׁבִיל שֶׁהָאָדָם אֵינוֹ יוֹדֵעַ זֹאת יְדִיעָה בְּלֵב שָׁלֵם, בִּשְׁבִיל זֶה אֵינוֹ מִתְלַהֵב כָּל כָּךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְדִיעָה",
+   "target_he": "דִּקְדּוּק בַּתְּפִלָּה",
+   "proof": "וְאֵינוֹ מְדַקְדֵּק כָּל־כָּךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יֵצֶר הַטּוֹב שֶׁבַּלֵּב",
+   "target_he": "יְדִיעָה",
+   "proof": "וְהַיְדִיעָה הִיא מֵהַיֵּצֶר הַטּוֹב שֶׁבַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יֵצֶר הָרָע שֶׁבַּלֵּב",
+   "target_he": "הַסְתָּרַת הַיְדִיעָה",
+   "proof": "וְהַסְתָּרַת הַיְדִיעָה הִיא מֵהַיֵּצֶר הָרָע שֶׁבַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַסְתָּרַת הַיְדִיעָה",
+   "target_he": "אֶפִּיקוֹרְסוּת",
+   "proof": "וְהַסְתָּרַת הַיְדִיעָה, הֵן הֵן אֶפִּיקוֹרְסוּת וְקֻשְׁיוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַסְתָּרַת הַיְדִיעָה",
+   "target_he": "קֻשְׁיוֹת",
+   "proof": "וְהַסְתָּרַת הַיְדִיעָה, הֵן הֵן אֶפִּיקוֹרְסוּת וְקֻשְׁיוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֶפִּיקוֹרְסוּת וְקֻשְׁיוֹת",
+   "target_he": "נְפִילָה בְּרָעָה",
+   "proof": "שֶׁהַיֵּצֶר הָרָע מַקְשֶׁה אֶת לִבּוֹ לִפֹּל בְּרָעָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

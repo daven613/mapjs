@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 235,
+ "chunk": "235_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַשְּׂחוֹק שֶׁשּׂוֹחֲקִין",
+   "target_he": "שְּׂמָחוֹת נְפוּלוֹת",
+   "proof": "הוּא בְּחִינַת הַשְּׂמָחוֹת נְפוּלוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחַת יוֹם־טוֹב",
+   "target_he": "שְּׂמָחוֹת נְפוּלוֹת",
+   "proof": "הַשְּׂמָחוֹת נְפוּלוֹת מִפְּגַם שִׂמְחַת יוֹם־טוֹב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְּׂמָחוֹת נְפוּלוֹת",
+   "target_he": "בּוּשָׁה",
+   "proof": "וְעַל כֵּן מִתְבַּיֵּשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֲבוֹדַת אֶלִילִים",
+   "target_he": "בֹּשֶׁת",
+   "proof": "כִּי עֲבוֹדַת אֶלִילִים נִקְרָא בֹּשֶׁת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַמְבַזֶּה אֶת הַמּוֹעֲדוֹת",
+   "target_he": "עוֹבֵד עַכּוּ\"ם",
+   "proof": "וְהַמְבַזֶּה אֶת הַמּוֹעֲדוֹת כְּאִלּוּ עוֹבֵד עַכּוּ\"ם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲבוֹדַת אֶלִילִים",
+   "target_he": "בּוּשָׁה",
+   "proof": "עַל־כֵּן בָּאָה עָלָיו בּוּשָׁה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_4_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חלב אשה חצופה",
+   "target_he": "תאוה",
+   "proof": "אִם הַתִּינוֹק יוֹנֵק מֵחֲלֵב אִשָּׁה חֲצוּפָה, אֲזַי מִתְגַּבֵּר בּוֹ תַּאֲוָה זוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חלב אשה חצופה",
+   "target_he": "חמימות בלב",
+   "proof": "אֲזַי מַזִּיק לְהַתִּינוֹק חָלָב הַנַּעֲשֶׂה מֵעֲכִירַת דָּמֶיהָ, וְנוֹלָד לוֹ חֲמִימוּת בְּלִבּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חמימות בלב",
+   "target_he": "התגברות תאוה",
+   "proof": "וְנוֹלָד לוֹ חֲמִימוּת בְּלִבּוֹ, שֶׁהוּא הִתְגַּבְּרוּת תַּאֲוָה זוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חלב אשה כשרה",
+   "target_he": "לב חלל",
+   "proof": "וְכֵן לְהֵפֶךְ, כְּשֶׁיּוֹנֵק חֲלֵב אִשָּׁה כְּשֵׁרָה, אֲזַי לִבּוֹ חָלָל בְּקִרְבּוֹ, וְאֵין לוֹ חֲמִימוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לבי חלל בקרבי",
+   "target_he": "חלב",
+   "proof": "כִּי לִבִּי חָלַל בְּקִרְבִּי – רָאשֵׁי תֵבוֹת חָלָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חלב אשה חצופה",
+   "target_he": "חמימות",
+   "proof": "וּלְהֶפֶךְ, חָלָב אִשָּׁה חֲצוּפָה מוֹלִיד חֲמִימוּת הַרְבֵּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חמימות",
+   "target_he": "חם לבי בקרבי",
+   "proof": "בְּחִינַת: חַם לִבִּי בְּקִרְבִּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

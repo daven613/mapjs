@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 75,
+ "chunk": "75_0_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תַּעֲנוּג שֶׁיֵּשׁ מִן הַדְּבַר מַאֲכָל וּמִשְׁתֶּה",
+   "target_he": "נִיצוֹצוֹת",
+   "proof": "וְהַתַּעֲנוּג שֶׁיֵּשׁ מִן הַדְּבַר מַאֲכָל וּמִשְׁתֶּה הוּא הַנִּיצוֹצוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נִיצוֹצוֹת",
+   "target_he": "אוֹתִיּוֹת",
+   "proof": "וְהַנִּיצוֹצוֹת הֵם אוֹתִיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִיצוֹצוֹת קֹדֶם שֶׁמּוֹצִיא אֶל הַדִּבּוּר",
+   "target_he": "דָּם",
+   "proof": "וְקֹדֶם שֶׁמּוֹצִיא אֶל הַדִּבּוּר, הֵם בְּחִינַת דָּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דָּם",
+   "target_he": "נֶפֶשׁ",
+   "proof": "וְהוּא בְּחִינַת נֶפֶשׁ, כְּמוֹ שֶׁכָּתוּב: כִּי נֶפֶשׁ כָּל בָּשָׂר דָּמוֹ בְּנַפְשׁוֹ הוּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִיצוֹצוֹת כְּשֶׁיָּצְאָה לְדִבּוּר",
+   "target_he": "נַפְשִׁי יָצְאָה בְדַבְּרוֹ",
+   "proof": "וּכְשֶׁיָּצְאָה לְדִבּוּר, הוּא בְּחִינַת: נַפְשִׁי יָצְאָה בְדַבְּרוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִיצוֹצוֹת קֹדֶם הַדִּבּוּר",
+   "target_he": "צוֹלֵעַ עַל יְרֵכוֹ",
+   "proof": "וְקֹדֶם הִיא בְּחִינַת: צוֹלֵעַ עַל יְרֵכוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִיצוֹצוֹת בְּהַיְצִיאָה אֶל הַדִּבּוּר",
+   "target_he": "וַיִּבֶן אֶת הַצֵּלָע",
+   "proof": "וּבְהַיְצִיאָה אֶל הַדִּבּוּר, הֵם בְּחִינַת: וַיִּבֶן אֶת הַצֵּלָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִיצוֹצוֹת קֹדֶם הַדִּבּוּר שֶׁאֵין לָהֶם צֵרוּף",
+   "target_he": "שְׁבָרִים וּמַחֲלֹקֶת",
+   "proof": "וְהֵם בִּבְחִינַת שְׁבָרִים וּמַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צֵרוּף הַנִּיצוֹצוֹת עַל יְדֵי דִּבּוּר",
+   "target_he": "שָׁלוֹם",
+   "proof": "וּבְהוֹצִיאוֹ אֶל הַדִּבּוּר, הוּא בְּצֵרוּף, וְהוּא בְּחִינַת שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לֵוִי הִטִּיחַ דְּבָרִים כְּלַפֵּי מַעְלָה וְאִטְלַע",
+   "target_he": "צוֹלֵעַ עַל יְרֵכוֹ",
+   "proof": "שֶׁהוּא בְּחִינַת צוֹלֵעַ עַל יְרֵכוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הוֹצָאַת הַנִּיצוֹצוֹת בִּדְבָרִים אֲחֵרִים",
+   "target_he": "צוֹלֵעַ עַל יְרֵכוֹ",
+   "proof": "כִּי מִכֹּחַ שֶׁהוֹצִיא הַנִּיצוֹצוֹת בִּדְבָרִים אֲחֵרִים נִשְׁאַר בִּבְחִינַת צוֹלֵעַ עַל יְרֵכוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

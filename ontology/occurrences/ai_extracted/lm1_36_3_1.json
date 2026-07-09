@@ -1,0 +1,109 @@
+{
+ "book": "lm1",
+ "torah": 36,
+ "chunk": "36_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַלְכוּתָא דִּשְׁמַיָּא",
+   "target_he": "גְּבִירְתָּא",
+   "proof": "וּמַלְכוּתָא דִּשְׁמַיָּא הוּא בִּבְחִינַת גְּבִירְתָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אִשָּׁה יִרְאַת ה'",
+   "target_he": "יָם שֶׁל שְׁלֹמֹה",
+   "proof": "אִשָּׁה יִרְאַת ה', שֶׁהִיא בִּבְחִינַת יָם שֶׁל שְׁלֹמֹה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׁפְחָה בִּישָׁא / אִשָּׁה זוֹנָה",
+   "target_he": "מִפְּנֵי שָׂרַי גְּבִרְתִּי אָנֹכִי בּוֹרַחַת",
+   "proof": "שֶׁהִיא בִּבְחִינַת (בראשית טז): מִפְּנֵי שָׂרַי גְּבִרְתִּי אָנֹכִי בּוֹרַחַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אָנֹכִי בּוֹרַחַת",
+   "target_he": "תַּאֲוָה",
+   "proof": "שֶׁהַתַּאֲוָה בּוֹרַחַת וְנִפְרֶדֶת מִמֶּנָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִי שֶׁאֵינוֹ מִשְׁתַּדֵּל לְגָרֵשׁ אֶת הָאִשָּׁה זוֹנָה",
+   "target_he": "שִׁפְחָה תִּירַשׁ גְּבִרְתָּהּ",
+   "proof": "וְאִם אֵינוֹ מִשְׁתַּדֵּל לְגָרֵשׁ אֶת הָאִשָּׁה זוֹנָה, אֲזַי הוּא בִּבְחִינַת (משלי ל׳:כ״ג): שִׁפְחָה תִּירַשׁ גְּבִרְתָּהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קַבָּלַת עֹל מַלְכוּת שָׁמַיִם בְּאֵלּוּ הַפְּסוּקִים",
+   "target_he": "הַפְרָשַׁת הַנְּשָׁמָה מִנִּשְׁמַת עֵרֶב־רַב",
+   "proof": "וּכְשֶׁאָדָם מְקַבֵּל עָלָיו עֹל מַלְכוּת שָׁמַיִם בְּאֵלּוּ הַפְּסוּקִים... וּמַפְרִישׁ אֶת נִשְׁמָתוֹ מִנִּשְׁמַת עֵרֶב־רַב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קַבָּלַת עֹל מַלְכוּת שָׁמַיִם בְּאֵלּוּ הַפְּסוּקִים",
+   "target_he": "כְּלִילַת הַנְּשָׁמָה בִּשְׁנֵים עָשָׂר שִׁבְטֵי יָהּ",
+   "proof": "שֶׁכּוֹלֵל אֶת נִשְׁמָתוֹ בִּשְׁנֵים עָשָׂר שִׁבְטֵי יָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קַבָּלַת עֹל מַלְכוּת שָׁמַיִם",
+   "target_he": "פְּרִידָה מִנִּשְׁמוֹת עֵרֶב־רַב",
+   "proof": "וּבְקַבָּלַת עֹל מַלְכוּת שָׁמַיִם... הוּא נִפְרָד מִנִּשְׁמוֹתֵיהֶן דְּעֵרֶב־רַב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קַבָּלַת עֹל מַלְכוּת שָׁמַיִם",
+   "target_he": "הִכָּלְלוּת בְּנִשְׁמוֹת שִׁבְטֵי יָהּ",
+   "proof": "וְנִכְלָל בְּנִשְׁמוֹת שִׁבְטֵי יָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קַבָּלַת עֹל מַלְכוּת שָׁמַיִם",
+   "target_he": "יָם שֶׁל שְׁלֹמֹה",
+   "proof": "וּבְקַבָּלַת עֹל מַלְכוּת שָׁמַיִם, הוּא בְּחִינַת יָם שֶׁל שְׁלֹמֹה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִכָּלְלוּת בְּנִשְׁמוֹת שִׁבְטֵי יָהּ",
+   "target_he": "אִשָּׁה יִרְאַת ה'",
+   "proof": "וְנִכְלָל בְּנִשְׁמוֹת שִׁבְטֵי יָהּ, בְּחִינַת אִשָּׁה יִרְאַת ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

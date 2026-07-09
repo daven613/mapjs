@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 70,
+ "chunk": "70_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "צדיק",
+   "target_he": "עפר",
+   "proof": "שֶׁהוּא בְּחִינַת עָפָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֹּחַ הַמַּכְרִיחַ",
+   "target_he": "הַרְחָקָה מֵהַצַּדִּיק",
+   "proof": "אַךְ עַל־יְדֵי כֹּחַ הַמַּכְרִיחַ, מַפְסִיקִין וּמַרְחִיקִין מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֹּחַ הַמַּכְרִיחַ",
+   "target_he": "הִתְקָרְבוּת לְהַצַּדִּיק",
+   "proof": "וְאַחַר־כָּךְ, כְּשֶׁיַּפְסִיק כֹּחַ הַמַּכְרִיחַ, יַחֲזֹר וְיַמְשִׁיךְ עַצְמוֹ וְיִתְקָרֵב לְהַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  }
+ ]
+}

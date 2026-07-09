@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 17,
+ "chunk": "17_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "היראה בשלמות",
+   "target_he": "עם דעת",
+   "proof": "הַיִּרְאָה בִּשְׁלֵמוּת, דְּהַיְנוּ עִם דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יראה עם כסילות",
+   "target_he": "הלא יראתך כסלתך",
+   "proof": "בִּבְחִינַת (איוב ד׳:ו׳): הֲלֹא יִרְאָתְךָ כִּסְלָתֶךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שעבוד",
+   "target_he": "כסילות",
+   "proof": "וְעִקָּר הַכְּסִילוּת הוּא מֵחֲמַת הַשִּׁעְבּוּד שֶׁיֵּשׁ בְּחֹל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שעבוד",
+   "target_he": "דעת שלם",
+   "proof": "כִּי עַל־יְדֵי הַשִּׁעְבּוּד אֵין הַדַּעַת שָׁלֵם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שעבוד וגלות",
+   "target_he": "דעת",
+   "proof": "כִּי עַל־יְדֵי שִׁעְבּוּד וְגָלוּת הַדַּעַת מְבֻלְבָּל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שבת",
+   "target_he": "חרות",
+   "proof": "אֲבָל בְּשַׁבָּת הוּא חֵרוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חרות",
+   "target_he": "דעת שלם",
+   "proof": "וּכְשֶׁיֵּשׁ חֵרוּת וְאֵין שִׁעְבּוּד וְגָלוּת, אֲזַי הַדַּעַת שָׁלֵם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שעבוד וגלות",
+   "target_he": "דעת שלם",
+   "proof": "וְאֵין שִׁעְבּוּד וְגָלוּת, אֲזַי הַדַּעַת שָׁלֵם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  }
+ ]
+}

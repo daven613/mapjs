@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 72,
+ "chunk": "72_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הִרְהוּר תְּשׁוּבָה",
+   "target_he": "אִישׁ כָּשֵׁר",
+   "proof": "לִפְעָמִים בָּא לָאָדָם הִרְהוּר תְּשׁוּבָה, וְנַעֲשֶׂה בְּאוֹתוֹ שָׁעָה אִישׁ כָּשֵׁר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יֵּצֶר הָרָע",
+   "target_he": "תְּשׁוּקָה",
+   "proof": "מִתְגַּבֵּר עָלָיו הַיֵּצֶר הָרָע, וְנוֹפֵל מִתְּשׁוּקָתוֹ שֶׁהָיָה לוֹ תְּחִילָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יֵּצֶר הָרָע",
+   "target_he": "חִשְׁק",
+   "proof": "מִתְגַּבֵּר עָלָיו הַיֵּצֶר הָרָע עוֹד יוֹתֵר, וְאוֹבֵד כָּל חִשְׁקוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

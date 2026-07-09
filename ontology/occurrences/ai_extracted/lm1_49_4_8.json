@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 49,
+ "chunk": "49_4_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּלּוּת הַמַּלְכוּת",
+   "target_he": "בֵּיתָא תַּתָּאָה",
+   "proof": "כִּי הִתְגַּלּוּת הַמַּלְכוּת זֶה בְּחִינַת בֵּיתָא תַּתָּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּחִלַּת הַצִּמְצוּם",
+   "target_he": "הֶחָלָל הַפָּנוּי שֶׁבַּלֵּב",
+   "proof": "וּתְחִלַּת הַצִּמְצוּם, שֶׁהוּא הֶחָלָל הַפָּנוּי שֶׁבַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּחִלַּת הַצִּמְצוּם",
+   "target_he": "בֵּיתָא עִלָּאָה",
+   "proof": "זֶה בְּחִינַת בֵּיתָא עִלָּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲלִיַּת בֵּיתָא תַּתָּאָה",
+   "target_he": "תִּקּוּן וַעֲלִיַּת בֵּיתָא עִלָּאָה",
+   "proof": "וְעַל כֵּן אֵין נִשְׁלָם תִּקּוּן וַעֲלִיַּת בֵּיתָא עִלָּאָה, עַד שֶׁעוֹלֶה בֵּיתָא תַּתָּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֲלִיַּת בֵּיתָא תַּתָּאָה",
+   "target_he": "הִתְגַּלּוּת מַלְכוּתוֹ יִתְבָּרַךְ",
+   "proof": "דְּהַיְנוּ עַד שֶׁנִּתְגַּלֶּה מַלְכוּתוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת מַלְכוּתוֹ יִתְבָּרַךְ",
+   "target_he": "עֲלִיָּה לְבֵיתָא עִלָּאָה",
+   "proof": "וְאָז כְּשֶׁנִּתְגַּלֶּה מַלְכוּתוֹ יִתְבָּרַךְ, אָז דַּיְקָא יֵשׁ עֲלִיָּה לְבֵיתָא עִלָּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_1_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תורה שבעל פה",
+   "target_he": "שכינתא",
+   "proof": "וְתוֹרָה שֶׁבְּעַל־פֶּה הַיְנוּ שְׁכִינְתָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מלכות",
+   "target_he": "תורה שבעל פה",
+   "proof": "מַלְכוּת – פֶּה, וְתוֹרָה שֶׁבְּעַל־פֶּה קָרִינַן לָהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שכינה הבאה בתוך תלמיד־חכם שד יהודי",
+   "target_he": "גלות השכינה",
+   "proof": "זֶה נִקְרָא גָּלוּת הַשְּׁכִינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גלות השכינה",
+   "target_he": "פה לדבר עתק על צדיק",
+   "proof": "וְאָז יֵשׁ לוֹ פֶּה לְדַבֵּר עַל צַדִּיק עָתָק",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

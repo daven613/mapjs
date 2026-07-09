@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_2_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שִׁשִּׁים רִבּוֹא בְּכָרֵס אֶחָד",
+   "target_he": "שָׁרְשֵׁי הַנְּשָמוֹת",
+   "proof": "דְּהַיְנוּ בְּחִינַת שָׁרְשֵׁי הַנְּשָמוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁרְשֵׁי הַנְּשָמוֹת",
+   "target_he": "מֶמְשָׁלָה עַל הַמַּלְאָכִים",
+   "proof": "שֶׁעַל־יְדֵי־זֶה יֵשׁ לוֹ כֹּחַ שֶׁיִּהְיֶה לוֹ מֶמְשָׁלָה עַל הַמַּלְאָכִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֶמְשָׁלָה עַל הַמַּלְאָכִים",
+   "target_he": "אֲנָא עֲדִיפְנָא מִנָּךְ",
+   "proof": "בְּחִינַת: אֲנָא עֲדִיפְנָא מִנָּךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

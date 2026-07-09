@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 51,
+ "chunk": "51_14_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בְּחִינַת חִשְּׁבֹנוֹת רַבִּים",
+   "target_he": "עִקַּר הָרָע וְהַטֻּמְאָה",
+   "proof": "אֵין שָׁם בְּחִינַת חִשְּׁבֹנוֹת רַבִּים, שֶׁהוּא עִקַּר הָרָע וְהַטֻּמְאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַטָּהֳרָה",
+   "target_he": "הַמְמֻצָּע בֵּין הַקֹּדֶשׁ וְהַטֻּמְאָה",
+   "proof": "כִּי הַטָּהֳרָה הוּא בְּחִינַת הַמְמֻצָּע בֵּין הַקֹּדֶשׁ וְהַטֻּמְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַטָּהֳרָה",
+   "target_he": "תִּקּוּן הַטֻּמְאָה",
+   "proof": "שֶׁעַל יָדוֹ נִתְתַּקֵּן הַטֻּמְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

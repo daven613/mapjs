@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 8,
+ "chunk": "8_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "גְּנּוּחֵי וְנֹהַ",
+   "target_he": "שְׁלֵמוּת הַחֶסְרוֹנוֹת",
+   "proof": "כִּי הוּא שְׁלֵמוּת הַחֶסְרוֹנוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת הַנְּשִׁימָה",
+   "target_he": "הָעוֹלָם",
+   "proof": "כִּי עַל־יְדֵי בְּחִינַת הַנְּשִׁימָה, שֶׁהוּא הָרוּחַ חַיִּים, נִבְרָא הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַנְּשִׁימָה",
+   "target_he": "הָרוּחַ חַיִּים",
+   "proof": "שֶׁהוּא הָרוּחַ חַיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חִדּוּשׁ הָעוֹלָם",
+   "target_he": "הָרוּחַ",
+   "proof": "וְחִדּוּשׁ הָעוֹלָם יִהְיֶה גַּם־כֵּן בִּבְחִינַת הָרוּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָרוּחַ",
+   "target_he": "חִיּוּת הָאָדָם",
+   "proof": "וְהוּא גַּם כֵּן חִיּוּת הָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חִיּוּת הָאָדָם",
+   "target_he": "הַנְּשִׁימָה",
+   "proof": "כִּי חִיּוּת הָאָדָם הוּא הַנְּשִׁימָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַנְּשִׁימָה",
+   "target_he": "הַחַיִּים",
+   "proof": "אִם תֶּחְסַר הַנְּשִׁימָה – תֶּחְסַר הַחַיִּים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

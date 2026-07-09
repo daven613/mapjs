@@ -1,0 +1,154 @@
+{
+ "book": "lm1",
+ "torah": 57,
+ "chunk": "57_8_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנוֹת חֲכָמִים",
+   "target_he": "חֳלִי עַד אֵין מַרְפֵּא",
+   "proof": "כְּשֶׁאֵין אֱמוּנוֹת חֲכָמִים, וְאֵין שׁוֹמֵעַ לָהֶם... עַל־יְדֵי־זֶה בָּאִים לְחֹלִי עַד אֵין מַרְפֵּא כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְלַמּוֹכִיחַ בַּשַּׁעַר יְקֹשׁוּן",
+   "target_he": "אֵין שׁוֹמֵעַ לָהֶם",
+   "proof": "וְאֵין שׁוֹמֵעַ לָהֶם, בִּבְחִינַת (ישעיהו כ״ט:כ״א): וְלַמּוֹכִיחַ בַּשַּׁעַר יְקֹשׁוּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וַיַּגִּיעוּ עַד שַׁעֲרֵי מָוֶת",
+   "target_he": "חֳלִי עַד אֵין מַרְפֵּא",
+   "proof": "עַל־יְדֵי־זֶה בָּאִים לְחֹלִי עַד אֵין מַרְפֵּא כַּנַּ\"ל, בִּבְחִינַת (תהילים ק״ז:י״ח): וַיַּגִּיעוּ עַד שַׁעֲרֵי מָוֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "שַׁעֲרֵי הַקְּדֻשָּׁה",
+   "proof": "אֲבָל כְּשֶׁיֵּשׁ לָהֶם אֱמוּנָה, אֲזַי נִפְתָּחִים לָהֶם שַׁעֲרֵי הַקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פִּתְחוּ שְׁעָרִים וְכוּ' שׁוֹמֵר אֱמוּנִים",
+   "target_he": "שַׁעֲרֵי הַקְּדֻשָּׁה נִפְתָּחִים",
+   "proof": "אֲזַי נִפְתָּחִים לָהֶם שַׁעֲרֵי הַקְּדֻשָּׁה, בִּבְחִינַת (ישעיהו כ״ו:ב׳): פִּתְחוּ שְׁעָרִים וְכוּ' שׁוֹמֵר אֱמוּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נֶדֶר",
+   "target_he": "הֲקָמַת אֱמוּנָה",
+   "proof": "וַהֲקָמַת אֱמוּנָה הִיא עַל־יְדֵי נֶדֶר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֲקָמַת אֱמוּנָה",
+   "target_he": "נְהִירוּ דַּאֲבָהָן",
+   "proof": "וַהֲקָמַת אֱמוּנָה הִיא עַל־יְדֵי נֶדֶר, וְאָז נָהִיר בִּנְהִירוּ דַּאֲבָהָן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְהִירוּ דַּאֲבָהָן",
+   "target_he": "שַׁעַר דִּקְדֻשָּׁה (פַּעַם שְׁנִיָּה)",
+   "proof": "וְאָז נָהִיר בִּנְהִירוּ דַּאֲבָהָן כַּנַּ\"ל, וְאָז נִבְנֶה פַּעַם שְׁנִיָּה שַׁעַר דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׂאוּ שְׁעָרִים רָאשֵׁיכֶם",
+   "target_he": "שַׁעַר דִּקְדֻשָּׁה (פַּעַם שְׁנִיָּה)",
+   "proof": "וְאָז נִבְנֶה פַּעַם שְׁנִיָּה שַׁעַר דִּקְדֻשָּׁה, בִּבְחִינַת (תהילים כ״ד:ז׳): שְׂאוּ שְׁעָרִים רָאשֵׁיכֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֵלֶּה רָאשֵׁי בֵית אֲבוֹתָם",
+   "target_he": "הָאָבוֹת הֵן הָרָאשִׁים",
+   "proof": "כִּי הָאָבוֹת הֵן הָרָאשִׁים, בִּבְחִינַת (שמות ו׳:י״ד): אֵלֶּה רָאשֵׁי בֵית אֲבוֹתָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּשֶׁזֶּה קָם זֶה נוֹפֵל",
+   "target_he": "נְפִילַת פַּעַם שֵׁנִית שַׁעַר שֶׁל אֲרָם",
+   "proof": "וּכְשֶׁזֶּה קָם זֶה נוֹפֵל, וְזֶה בְּחִינַת נְפִילַת פַּעַם שֵׁנִית שַׁעַר שֶׁל אֲרָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֶאָרוֹת הָאָבוֹת",
+   "target_he": "שַׁבָּת",
+   "proof": "וְעַל־יְדֵי הֶאָרוֹת הָאָבוֹת זוֹכֶה לְשַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שַׁבָּת",
+   "target_he": "הַשְׁבָּתַת אוֹיֵב",
+   "proof": "לְהַשְׁבִּית אוֹיֵב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שַׁבָּת",
+   "target_he": "שָׁלוֹם",
+   "proof": "וְזוֹכֶה לְשָׁלוֹם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם",
+   "target_he": "שַׁעַר דִּקְדֻשָּׁה (פַּעַם שְׁלִישִׁי)",
+   "proof": "וְזוֹכֶה לְשָׁלוֹם כַּנַּ\"ל. וְאָז נִבְנֶה פַּעַם שְׁלִישִׁי שַׁעַר דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וּמִשְׁפָּט שָׁלוֹם שִׁפְטוּ בְּשַׁעֲרֵיכֶם",
+   "target_he": "שַׁעַר דִּקְדֻשָּׁה (פַּעַם שְׁלִישִׁי)",
+   "proof": "וְאָז נִבְנֶה פַּעַם שְׁלִישִׁי שַׁעַר דִּקְדֻשָּׁה, בִּבְחִינַת (זכריה א): וּמִשְׁפָּט שָׁלוֹם שִׁפְטוּ בְּשַׁעֲרֵיכֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

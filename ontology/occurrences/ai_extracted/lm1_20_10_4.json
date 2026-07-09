@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_10_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לא נלך בשדה ובכרם ולא נשתה מי באר",
+   "target_he": "תענוגי העולם הזה",
+   "proof": "זֶה בְּחִינַת תַּעֲנוּגֵי הָעוֹלָם הַזֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֹּחַ הַקְּדֻשָּׁה",
+   "target_he": "לֹא תַעֲבֹר בִּי",
+   "proof": "כָּל זֹאת מֵחֲמַת מִעוּט כֹּחַ הַקְּדֻשָּׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קָדֵשׁ עִיר קְצֵה גְבוּלֶךָ",
+   "target_he": "הַקְּדֻשָּׁה בְּמַדְרֵגָה פְּחוּתָה הַנּוֹגַעַת בִּגְבוּל הַטֻּמְאָה",
+   "proof": "הַיְנוּ מֵחֲמַת שֶׁהַקְּדֻשָּׁה כָּל־כָּךְ בְּמַדְרֵגָה פְּחוּתָה, שֶׁהִיא בִּגְבוּל הַטֻּמְאָה נוֹגַעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַקְּדֻשָּׁה בְּמַדְרֵגָה פְּחוּתָה הַנּוֹגַעַת בִּגְבוּל הַטֻּמְאָה",
+   "target_he": "לֹא תַעֲבֹר בִּי",
+   "proof": "וּבִשְׁבִיל זֶה: וַיֹּאמֶר לֹא תַעֲבֹר בִּי וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

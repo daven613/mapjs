@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_4_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "פני ה'",
+   "target_he": "באורי ודרושי התורה",
+   "proof": "פְּנֵי ה' זֶה בְּחִינַת בֵּאוּרֵי וּדְרוּשֵׁי הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זקן",
+   "target_he": "הדרת פנים",
+   "proof": "זָקֵן זֶה הַדְרַת פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הדרת פנים",
+   "target_he": "שלש עשרה תיקוני דיקנא",
+   "proof": "וְהֵם שְׁלשׁ־עֶשְׂרֵה תִּקּוּנֵי דִּקְנָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שלש עשרה תיקוני דיקנא",
+   "target_he": "שלש עשרה מדות שהתורה נדרשת בהן",
+   "proof": "וְהֵם שְׁלשׁ־עֶשְׂרֵה מִדּוֹת שֶׁהַתּוֹרָה נִדְרֶשֶׁת בָּהֶן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "היותו אצל החכם בשעת ביאור התורה",
+   "target_he": "הרע שלו",
+   "proof": "מִי שֶׁהוּא אֵצֶל הֶחָכָם בִּשְׁעַת בֵּאוּר הַתּוֹרָה, נִמְצָא שֶׁנִּכְנָע הָרָע שֶׁלּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "באורי התורה",
+   "target_he": "פנים",
+   "proof": "שֶׁעַל־יְדֵי בֵּאוּרֵי הַתּוֹרָה, שֶׁהֵם בְּחִינַת פָּנִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נפילה",
+   "target_he": "מריבה",
+   "proof": "מֵחֲמַת הַנְּפִילָה הַנַּ\"ל, מֵחֲמַת זֶה הִתְחִיל הַמְּרִיבָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_11_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מֵצַח הַנָּחָשׁ",
+   "target_he": "קוֹל שַׁאֲגַת הַחַיּוֹת רָעוֹת",
+   "proof": "עַל־יְדֵי־זֶה שֶׁהִכְנִיעַ מֵצַח הַנָּחָשׁ, שֹׁרֶשׁ חָכְמַת הַטֶּבַע, עַל־יְדֵי־זֶה נִכְנְעוּ וְנָפְלוּ קוֹל שַׁאֲגַת הַחַיּוֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֵצַח הַנָּחָשׁ",
+   "target_he": "שֹׁרֶשׁ חָכְמַת הַטֶּבַע",
+   "proof": "מֵצַח הַנָּחָשׁ, שֹׁרֶשׁ חָכְמַת הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קוֹל שַׁאֲגַת הַחַיּוֹת רָעוֹת",
+   "target_he": "קוֹל הַקְּרִיאָה שֶׁל יוֹם טוֹב",
+   "proof": "עַל־יְדֵי־זֶה נִכְנְעוּ וְנָפְלוּ קוֹל שַׁאֲגַת הַחַיּוֹת רָעוֹת... וַאֲזַי נִשְׁמַע קוֹל הַקְּרִיאָה שֶׁל יוֹם טוֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קוֹל הַקְּרִיאָה שֶׁל יוֹם טוֹב",
+   "target_he": "הִתְגַּלּוּת הָרָצוֹן",
+   "proof": "שֶׁהוּא הִתְגַּלּוּת הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קוֹל הַקְּרִיאָה שֶׁל יוֹם טוֹב",
+   "target_he": "יִשְׂמַח צַדִּיק כִּי חָזָה נָקָם",
+   "proof": "וַאֲזַי נִשְׁמַע קוֹל הַקְּרִיאָה שֶׁל יוֹם טוֹב... וַאֲזַי: יִשְׂמַח צַדִּיק כִּי חָזָה נָקָם וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אִתְהֲפִכוּ מַיָּא",
+   "target_he": "שַׁאֲגַת הַחַיּוֹת רָעוֹת",
+   "proof": "וְזֶהוּ אִתְהֲפִכוּ מַיָּא – הַיְנוּ שַׁאֲגַת הַחַיּוֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׁאֲגַת הַחַיּוֹת רָעוֹת",
+   "target_he": "יִתְּכוּ כַמַּיִם שַׁאֲגֹתָי",
+   "proof": "בְּחִינַת (איוב ג׳:כ״ד): יִתְּכוּ כַמַּיִם שַׁאֲגֹתָי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וַהֲווֹ דְּמָא",
+   "target_he": "יִשְׂמַח צַדִּיק כִּי חָזָה נָקָם, פְּעָמָיו יִרְחַץ בְּדַם הָרָשָׁע",
+   "proof": "זֶה בְּחִינַת: יִשְׂמַח צַדִּיק כִּי חָזָה נָקָם, פְּעָמָיו יִרְחַץ בְּדַם הָרָשָׁע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכְנָעַת קוֹל שַׁאֲגַת הַחַיּוֹת רָעוֹת",
+   "target_he": "יִשְׂמַח צַדִּיק כִּי חָזָה נָקָם",
+   "proof": "כִּי עַל־יְדֵי הַכְנָעַת קוֹל שַׁאֲגַת הַחַיּוֹת רָעוֹת, עַל־יְדֵי־זֶה: יִשְׂמַח צַדִּיק כִּי חָזָה נָקָם וְכוּ', כִּי נִשְׁמַע קוֹל הַקְּרִיאָה שֶׁל יוֹם טוֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

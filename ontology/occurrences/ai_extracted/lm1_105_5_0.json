@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 105,
+ "chunk": "105_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "שיתפלל השם יתברך",
+   "proof": "וּבַמֶּה יָכוֹל לָבוֹא שֶׁהוּא יִתְבָּרַךְ יִתְפַּלֵּל, עַל יְדֵי תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הליכה אחר שרירות לבו ותאותו",
+   "target_he": "קישור חלקו והאותיות והצירופים לסטרא אחרא",
+   "proof": "וּכְשֶׁהוּא הוֹלֵךְ אַחַר שְׁרִירוּת לִבּוֹ וְתַאֲוָתוֹ, הוּא מְקַשֵּׁר חֶלְקוֹ וְהָאוֹתִיּוֹת וְהַצֵּרוּפִים לְסִטְרָא אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קישור האותיות והצירופים לסטרא אחרא",
+   "target_he": "בלבול האותיות והצירופים",
+   "proof": "וּמִתְבַּלְבְּלִים הָאוֹתִיּוֹת וְהַצֵּרוּפִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קישור האותיות והצירופים לסטרא אחרא",
+   "target_he": "בלבול הדעת",
+   "proof": "וְהַדַּעַת גַּם כֵּן מִתְבַּלְבֵּל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בלבול הדעת והאותיות והצירופים",
+   "target_he": "גלות השכינה",
+   "proof": "וְהוּא גָּלוּת הַשְּׁכִינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

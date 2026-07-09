@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_10_12",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רברבין וזעירין נחתין בשקולא",
+   "target_he": "ארץ ישראל שנחלקה לשבטים",
+   "proof": "רַבְרְבִין וּזְעִירִין נָחֲתִין בְּשִׁקּוּלָא הַיְנוּ בְּחִינַת אֶרֶץ־יִשְׂרָאֵל שֶׁנֶּחְלְקָה לִשְׁבָטִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ארץ ישראל שנחלקה לשבטים",
+   "target_he": "חיות קטנות עם גדולות",
+   "proof": "שֶׁהֵם בְּחִינַת חַיּוֹת קְטַנּוֹת עִם גְּדֹלוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ארץ ישראל",
+   "target_he": "גיבר תקיף",
+   "proof": "הַיְנוּ כְּשֶׁבָּא לִבְחִינַת אֶרֶץ־יִשְׂרָאֵל, אֲזַי נִקְרָא גִּבָּר תַּקִּיף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נצחון",
+   "target_he": "איש מלחמה",
+   "proof": "אֲבָל אַחַר־כָּךְ כְּשֶׁנּוֹצֵחַ, אָז נִקְרָא אִישׁ מִלְחָמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

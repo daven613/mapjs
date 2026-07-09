@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_11_25",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תִּקְעוּ",
+   "target_he": "הִתְגַּלּוּת הַכָּבוֹד",
+   "proof": "תִּקְעוּ – זֶה בְּחִינַת הִתְגַּלּוּת הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְגַּלּוּת הַכָּבוֹד",
+   "target_he": "וּתְקַעְתִּיו יָתֵד בְּמָקוֹם נֶאֱמָן וְהָיָה לְכִסֵּא כָּבוֹד",
+   "proof": "בְּחִינַת: וּתְקַעְתִּיו יָתֵד בְּמָקוֹם נֶאֱמָן וְהָיָה לְכִסֵּא כָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בַחֹדֶשׁ",
+   "target_he": "חִדּוּשׁ הָעוֹלָם",
+   "proof": "בַחֹדֶשׁ – זֶה בְּחִינַת חִדּוּשׁ הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חִדּוּשׁ הָעוֹלָם",
+   "target_he": "שִׁיר חָדָשׁ",
+   "proof": "בְּחִינַת שִׁיר חָדָשׁ הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שׁוֹפָר",
+   "target_he": "הָרֵם כַּשֹּׁפָר קוֹלֶךָ",
+   "proof": "וְזֶהוּ בְּחִינַת שׁוֹפָר, בְּחִינַת הָרֵם כַּשֹּׁפָר קוֹלֶךָ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הִתְגַּלּוּת הַכָּבוֹד",
+   "target_he": "תִּקְעוּ",
+   "proof": "זוֹכִין עַל־יְדֵי הִתְגַּלּוּת הַכָּבוֹד, שֶׁהוּא בְּחִינַת תִּקְעוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת הַכָּבוֹד",
+   "target_he": "חִדּוּשׁ הָעוֹלָם",
+   "proof": "וְהָדַר מְפָרֵשׁ אֵיךְ זוֹכִין עַל־יְדֵי הִתְגַּלּוּת הַכָּבוֹד... לִבְחִינַת חִדּוּשׁ הָעוֹלָם, בְּחִינַת שִׁיר חָדָשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_1_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הדיבור שמחדש התנא",
+   "target_he": "תורה שבעל פה",
+   "proof": "זֶה הַדִּבּוּר בְּעַצְמוֹ הִיא בְּחִינַת הַתּוֹרָה שֶׁבְּעַל־פֶּה שֶׁחִדֵּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוח ממללא",
+   "target_he": "הדיבור הלומד זה החידוש עכשיו",
+   "proof": "הַיְנוּ עִם הַדִּבּוּר הַלּוֹמֵד זֶה הַחִדּוּשׁ עַכְשָׁו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "התדבקות רוחא ברוחא",
+   "target_he": "נשיקין",
+   "proof": "וְזֹאת הַהִתְדַּבְּקוּת רוּחָא בְּרוּחָא נִקְרָא נְשִׁיקִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד והכנסת החידוש בתוך הפה",
+   "target_he": "התדבקות רוח הצדיק עם רוח הלומד (נשיקין)",
+   "proof": "וּכְשֶׁמַּכְנִיסִין הַלִּמּוּד וְהַחִדּוּשׁ בְּתוֹךְ פֶּה, נִמְצָא שֶׁמְּדַבְּקִין רוּחַ הַצַּדִּיק שֶׁחִדֵּשׁ זֶה הַחִדּוּשׁ עִם רוּחַ מְמַלְּלָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד הלכה שחידשו התנאים",
+   "target_he": "התדבקות רוח התנא עם רוח הלומד",
+   "proof": "כְּשֶׁלּוֹמְדִין אֵיזֶה הֲלָכָה שֶׁחִדְּשׁוּ הַתַּנָּאִים, עַל־יְדֵי־זֶה נִתְדַּבֵּק רוּחַ הַתַּנָּא עִם רוּחַ הַלּוֹמֵד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

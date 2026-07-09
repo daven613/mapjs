@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יֵשׁ הֶבֶל אֲשֶׁר נַעֲשָׂה עַל הָאָרֶץ",
+   "target_he": "גִּלְגּוּלֵי נְפָשׁוֹת",
+   "proof": "וְזֶהוּ: יֵשׁ הֶבֶל אֲשֶׁר נַעֲשָׂה עַל הָאָרֶץ וְכוּ' (קהלת ח׳:י״ד), זֶהוּ בְּחִינַת גִּלְגּוּלֵי נְפָשׁוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִשְׁתּוֹקְקוּת הַמּוּצֵאת בְּהֶבֶל פִּיו",
+   "target_he": "נֶפֶשׁ",
+   "proof": "כְּשֶׁאָדָם מִשְׁתּוֹקֵק לְאֵיזֶה דָּבָר, וּמוֹצִיא הִשְׁתּוֹקְקוּתוֹ אַחַר־כָּךְ בְּהֶבֶל פִּיו כַּנַּ\"ל, אֲזַי נַעֲשֶׂה הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נֶפֶשׁ",
+   "target_he": "רוּחַ מְמַלְּלָא",
+   "proof": "וְהַנֶּפֶשׁ הַזֹּאת, הַיְנוּ הָרוּחַ מְמַלְּלָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נֶפֶשׁ (רוּחַ מְמַלְּלָא) הַהוֹלֶכֶת בָּאֲוִיר",
+   "target_he": "תְּשׁוּקָה אֵצֶל אָדָם אַחֵר",
+   "proof": "הוֹלֶכֶת בָּאֲוִיר, וּמַגִּיעַ לְאָדָם אַחֵר, וּמְעוֹרֶרֶת אֶת הָאָדָם אַחֵר לִתְשׁוּקָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּקָה הַבָּאָה מִצַּדִּיק לְרָשָׁע",
+   "target_he": "הִרְהוּרֵי תְשׁוּבָה",
+   "proof": "אִם הַתְּשׁוּקָה בָּא מִצַּדִּיק לְרָשָׁע, אֲזַי נִתְעוֹרֵר הָרָשָׁע בְּהִרְהוּרֵי תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הֶבֶל פִּיו",
+   "target_he": "נֶפֶשׁ",
+   "proof": "וְהַכֹּל נַעֲשֶׂה עַל־יְדֵי הַהֶבֶל פִּיו, שֶׁהוּא הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קַבָּלַת דִּבּוּר חֲבֵרוֹ",
+   "target_he": "הִתְעוֹרְרוּת לַדָּבָר",
+   "proof": "וּכְשֶׁהוּא מְקַבֵּל דִּבּוּרוֹ, הוּא מְקַבֵּל נַפְשׁוֹ, וְנִתְעוֹרֵר לַדָּבָר הַזֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

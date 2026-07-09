@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 20,
+ "chunk": "20_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "מְפֻרְסָמִים קֹדֶם זְמַנָּם",
+   "proof": "עַל־יְדֵי הַמַּחֲלֹקֶת שֶׁיֵּשׁ בָּעוֹלָם, עַל־יְדֵי־זֶה נַעֲשִׂין מְפֻרְסָמִים קֹדֶם זְמַנָּם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "נִתְפַּרְסֵם קֹדֶם זְמַנּוֹ",
+   "proof": "וְעַל־יְדֵי פְּגַם הַמַּחֲלֹקֶת נִתְפַּרְסֵם קֹדֶם זְמַנּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִתְפַּרְסֵם קֹדֶם זְמַנּוֹ",
+   "target_he": "הֶזֵּק וְהֶפְסֵד",
+   "proof": "וְעַל־יְדֵי־זֶה הֵם גּוֹרְמִים הֶזֵּק וְהֶפְסֵד לְהָאִישׁ הַזֶּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "מִיתָה",
+   "proof": "וַאֲזַי גּוֹרְמִין מִיתָה לְבַעֲלֵי הַמַּחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּגַם הַמַּחֲלֹקֶת",
+   "target_he": "עֲנִיּוּת",
+   "proof": "וְלִפְעָמִים, שֶׁאֵין הַפְּגָם גָּדוֹל כָּל־כָּךְ, אֲזַי גּוֹרְמִין עֲנִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 210,
+ "chunk": "210_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עֵת הַבֹּקֶר",
+   "target_he": "אַבְרָהָם",
+   "proof": "נִמְצָא כְּשֶׁהִגִּיעַ עֵת הַבֹּקֶר בְּחִינַת אַבְרָהָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְאָהַבְתָּ",
+   "target_he": "אַבְרָהָם",
+   "proof": "אָחוּז בִּבְחִינַת וְאָהַבְתָּ, בְּחִינַת אַבְרָהָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+   "target_he": "וְאָהַבְתָּ",
+   "proof": "נִמְצָא עַל יְדֵי מַשָּׂא וּמַתָּן בֶּאֱמוּנָה אָחוּז בִּבְחִינַת וְאָהַבְתָּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+   "target_he": "מְזוֹנוֹתָיו",
+   "proof": "אֲזַי אֵין קָשִׁין לוֹ מְזוֹנוֹתָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

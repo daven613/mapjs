@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 101,
+ "chunk": "101_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "יו\"ד",
+   "target_he": "השכל של התורה",
+   "proof": "כִּי יוּ\"ד הוּא הַשֵּׂכֶל שֶׁל הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הא",
+   "target_he": "אותיות של התורה",
+   "proof": "וְהֵא הוּא אוֹתִיּוֹת שֶׁל הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אותיות של התורה",
+   "target_he": "חמישה חומשי תורה",
+   "proof": "שֶׁהוּא חֲמִשָּׁה חֻמְּשֵׁי תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חמישה חומשי תורה",
+   "target_he": "חמשת מוצאות הפה",
+   "proof": "בְּחִינַת חֲמֵשֶׁת מוֹצָאוֹת הַפֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "התורה",
+   "target_he": "י\"ק",
+   "proof": "שֶׁהִיא בְּחִינַת י\"ק כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

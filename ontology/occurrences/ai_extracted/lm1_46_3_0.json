@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 46,
+ "chunk": "46_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "נפש",
+   "target_he": "דיבור",
+   "proof": "נֶפֶשׁ, זֶה בְּחִינוֹת דִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נפשי יצאה בדברו",
+   "target_he": "תפלה",
+   "proof": "הַיְנוּ בְּחִינוֹת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בכפי",
+   "target_he": "מחיאת הכף",
+   "proof": "בְּכַפִּי – הַיְנוּ בְּחִינוֹת מֶחָאַת הַכַּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מחיאת הכף",
+   "target_he": "ותורתך לא שכחתי",
+   "proof": "עַל־יְדֵי־זֶה, וְתוֹרָתְךָ לֹא שָׁכָחְתִּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ותורתך לא שכחתי",
+   "target_he": "שלו",
+   "proof": "רָאשֵׁי־תֵּבוֹת שָׁלֵו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שלו",
+   "target_he": "המתקת הדינים",
+   "proof": "גִּימַטְרִיָּא שָׁלֹשׁ הֲוָיוֹת וְשָׁלֹשׁ אֱלֹקִים, הַיְנוּ הַמְתָּקַת הַדִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

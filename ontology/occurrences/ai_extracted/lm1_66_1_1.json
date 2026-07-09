@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_1_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "צדיק",
+   "target_he": "שני רוחות",
+   "proof": "יֵשׁ לְהַצַּדִּיק בְּחִינַת שְׁנֵי רוּחוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֹחַ",
+   "target_he": "רוח לעילא ורוח לתתא",
+   "proof": "אֵלֶּה תּוֹלְדוֹת נֹחַ נֹחַ; נֹחַ לְעֵלָּא נֹחַ לְתַתָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוח לעילא ורוח לתתא",
+   "target_he": "חיות למעלה וחיות למטה",
+   "proof": "דְּהַיְנוּ שֶׁיֵּשׁ לוֹ בְּחִינַת חִיּוּת לְמַעְלָה, וְחִיּוּת לְמַטָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 37,
+ "chunk": "37_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הדם",
+   "target_he": "הנפש שבא בגלגול",
+   "proof": "כִּי הַדָּם הוּא הַנֶּפֶשׁ שֶׁבָּא בְּגִלְגּוּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תורה",
+   "target_he": "נפש",
+   "proof": "תּוֹרָה הִיא בְּחִינַת נֶפֶשׁ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שוחטים שאינם מהוגנים",
+   "target_he": "חסרון הפרנסה",
+   "proof": "עִקַּר חֶסְרוֹן הַפַּרְנָסָה שֶׁנִּתְמַעֵט בַּדּוֹרוֹת הַלָּלוּ, אֵין זֶה אֶלָּא עַל־יְדֵי הַשּׁוֹחֲטִים שֶׁאֵינָם מְהֻגָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "קמח",
+   "proof": "אִם אֵין תּוֹרָה, אֵין קֶמַח",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קמח",
+   "target_he": "פרנסה",
+   "proof": "עַל־יְדֵי־זֶה אֵין קֶמַח, הַפַּרְנָסָה נִתְמַעֵט",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

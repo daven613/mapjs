@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 46,
+ "chunk": "46_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יָד",
+   "target_he": "הֲוָיָה",
+   "proof": "כִּי יָד הוּא בְּחִינַת הֲוָיָה, יוּד אוֹתִיּוֹת וְד' אוֹתִיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַכֶּה כַּף אֶל כַּף וּמְחַבֵּר הַיָּדַיִם בַּתְּפִלָה",
+   "target_he": "הַדִּינִין",
+   "proof": "וְעַל כֵּן כְּשֶׁמַכֶּה כַּף אֶל כַּף וּמְחַבֵּר הַיָּדַיִם בַּתְּפִלָה, נִמְתָּקִין הַדִּינִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ג' הַיָּדַיִם",
+   "target_he": "ג' אֱלֹקִים",
+   "proof": "וְעַל־יְדֵי ג' הַיָּדַיִם, שֶׁהוּא ג' הֲוָיוֹת, נִמְתָּקִין הַג' אֱלֹקִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ג' אֱלֹקִים",
+   "target_he": "הַדִּינִין הַיּוֹצְאִין מֵהַגָּרוֹן",
+   "proof": "שֶׁהֵם הַדִּינִין הַיּוֹצְאִין מֵהַגָּרוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גָּרוֹן",
+   "target_he": "ג' אֱלֹקִים",
+   "proof": "שֶׁהוּא בְּגִימַטְרִיָּא ג' אֱלֹקִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

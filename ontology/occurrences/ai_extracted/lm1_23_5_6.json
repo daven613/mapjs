@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אַנְשֵׁי דָּמִים וּמִרְמָה",
+   "target_he": "בַּעַל מַחֲלֹקֶת",
+   "proof": "הַיְנוּ מִי שֶׁהוּא בַּעַל מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בַּעַל מַחֲלֹקֶת",
+   "target_he": "תַּאֲווֹת מָמוֹן",
+   "proof": "מִי שֶׁהוּא בַּעַל מַחֲלֹקֶת, נוֹפֵל לְתַאֲווֹת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּאֲווֹת מָמוֹן",
+   "target_he": "רְדִיפָה אַחַר מוֹתָרוֹת",
+   "proof": "וְיָמָיו כָּלִים בִּרְדִיפָה אַחַר מוֹתָרוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּאֲוַת מָמוֹן",
+   "target_he": "בִּטָּחוֹן בַּה'",
+   "proof": "כִּי הַמְשֻׁקָּע בְּתַאֲוַת מָמוֹן, אֵינוֹ בּוֹטֵחַ בַּה'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּאֲוַת מָמוֹן",
+   "target_he": "עֲבוֹדַת כּוֹכָבִים וּמַזָּלוֹת",
+   "proof": "כִּי הוּא עוֹבֵד כָּל עַכּוּ\"ם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

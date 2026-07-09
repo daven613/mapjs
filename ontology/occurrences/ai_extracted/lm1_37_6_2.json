@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 37,
+ "chunk": "37_6_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שְׁכִינָה",
+   "target_he": "חֶרֶב לַה'",
+   "proof": "כִּי הַשְּׁכִינָה נִקְרֵאת חֶרֶב לַה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֶרֶב לַה'",
+   "target_he": "דִּבּוּר",
+   "proof": "וְהִיא בְּחִינַת דִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּר",
+   "target_he": "חֶרֶב פִּיפִיּוֹת",
+   "proof": "שֶׁהוּא בְּחִינַת חֶרֶב פִּיפִיּוֹת, לְשׁוֹן פֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֶּפֶשׁ הַבָּאָה בְּתוֹךְ הַדִּבּוּר",
+   "target_he": "מַיִּין נוּקְבִין",
+   "proof": "וּכְשֶׁהַנֶּפֶשׁ בָּאָה בְּתוֹךְ חֶרֶב לַה', בְּתוֹךְ הַדִּבּוּר, בִּבְחִינַת מַיִּין נוּקְבִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַיִּין נוּקְבִין",
+   "target_he": "זִיוּוּג שְׁכִינָה",
+   "proof": "אֲזַי הַשְּׁכִינָה מִזְדַּוֶּגֶת עַל־יְדֵי הַמַּיִּין נוּקְבִין שֶׁיֵּשׁ לָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זִיוּוּג",
+   "target_he": "פַּרְנָסָה לְיִשְׂרָאֵל",
+   "proof": "וְעַל־יְדֵי הַזִּוּוּג הִיא מְקַבֶּלֶת פַּרְנָסָה לְיִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 74,
+ "chunk": "74_0_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דין",
+   "target_he": "דינא קדישא",
+   "proof": "שֶׁהַדִּין הוּא בְּחִינַת דִּינָא קַדִּישָׁא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עשו",
+   "target_he": "סיגים",
+   "proof": "וּבְחִינַת עֵשָׂו, הוּא הַסִּיגִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הסיגים",
+   "target_he": "נפש כי תחטא",
+   "proof": "וְהוּא בְּחִינַת (ויקרא ה׳:י״ז): נֶפֶשׁ כִּי תֶחֱטָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יעקב",
+   "target_he": "חכמה",
+   "proof": "וּכְשֶׁבָּא אֶל בְּחִינַת יַעֲקֹב, הוּא הַחָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת יעקב (חכמה)",
+   "target_he": "בחינת הנפש",
+   "proof": "וּכְשֶׁבָּא אֶל בְּחִינַת יַעֲקֹב, הוּא הַחָכְמָה... אָז נִתְרַפֵּא בְּחִינַת הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הדיבור בלא דעה",
+   "target_he": "צדק",
+   "proof": "וְהַדִּבּוּר בְּלֹא דֵּעָה נִקְרָא צֶדֶק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דיבור (כשבא אל בחינת יעקב, החכמה)",
+   "target_he": "צדקה",
+   "proof": "וּכְשֶׁבָּא אֶל בְּחִינַת יַעֲקֹב, הִיא הַחָכְמָה, נִקְרָא צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

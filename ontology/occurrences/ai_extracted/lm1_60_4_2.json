@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_4_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "יִרְאַת הַבֵּן",
+   "target_he": "מוֹרָא אָב וָאֵם",
+   "proof": "וְיִרְאַת הַבֵּן, שֶׁהוּא מוֹרָא אָב וָאֵם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִרְאַת הַבֵּן",
+   "target_he": "נַחֲלַת אָבוֹת",
+   "proof": "צָרִיךְ לְהַמְשִׁיכָהּ בִּבְחִינַת נַחֲלַת אָבוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֶלְקֵי עֲשִׁירוּת",
+   "target_he": "נַחֲלַת אָבוֹת",
+   "proof": "וְצָרִיךְ שֶׁתִּתְפַּשֵּׁט הַיִּרְאָה עַל כָּל חֶלְקֵי עֲשִׁירוּת, שֶׁהֵם נַחֲלַת אָבוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֶלְקֵי עֲשִׁירוּת",
+   "target_he": "שָׁלֹשׁ קַוִּין",
+   "proof": "דְּהַיְנוּ בְּחִינַת שָׁלֹשׁ קַוִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

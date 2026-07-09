@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 62,
+ "chunk": "62_5_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "גלות מצרים",
+   "target_he": "מצר הגרון",
+   "proof": "מַמְשִׁיכִין אֶת הַדִּבּוּר לְגָלוּת מִצְרַיִם, בְּחִינַת מֵצַר הַגָּרוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מצר הגרון",
+   "target_he": "נחר גרוני",
+   "proof": "בְּחִינַת (תהילים ס״ט:ד׳): נִחַר גְּרוֹנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תענית",
+   "target_he": "מימי החסדים",
+   "proof": "וְעַל יְדֵי הַתַּעֲנִית שֶׁמַּרְעִיב אֶת עַצְמוֹ, הוּא מַמְשִׁיךְ מֵימֵי הַחֲסָדִים לְלַחְלֵח הַגָּרוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מימי החסדים",
+   "target_he": "דיבור",
+   "proof": "לְלַחְלֵח הַגָּרוֹן, וְאָז יוּכַל לְדַבֵּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רעב",
+   "target_he": "תענית",
+   "proof": "רָעָב הַיְנוּ בְּחִינַת תַּעֲנִית, שֶׁמַּרְעִיב אֶת עַצְמוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תענית",
+   "target_he": "ויהי רעב בארץ",
+   "proof": "וְזֶה בְּחִינַת (בראשית י״ב:י׳): וַיְהִי רָעָב בָּאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תענית שמרעיב את עצמו",
+   "target_he": "דביקות אחורי הקדושה",
+   "proof": "וְזֶה הוּא דְּבֵקוּת אֲחוֹרֵי הַקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הויה אלקים בבחינת אחוריים",
+   "target_he": "רעב",
+   "proof": "כִּי הֲוָיָה אֱלֹקִים בְּחִינַת אֲחוֹרַיִם – מִסְפַּר רָעָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וירד אברהם מצרימה",
+   "target_he": "הורדת מימי החסדים ללחלח מצר הגרון",
+   "proof": "וַיֵּרֶד אַבְרָהָם מִצְרָיְמָה – הַיְנוּ הוֹרָדוֹת מֵימֵי הַחֲסָדִים לְלַחְלֵח מֵצַר הַגָּרוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מימי החסדים",
+   "target_he": "יציאת הגרון מבחינת נחר גרוני",
+   "proof": "הוֹרָדוֹת מֵימֵי הַחֲסָדִים לְלַחְלֵח מֵצַר הַגָּרוֹן, לְהוֹצִיא אֶת הַגָּרוֹן מִבְּחִינַת נִחַר גְּרוֹנִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

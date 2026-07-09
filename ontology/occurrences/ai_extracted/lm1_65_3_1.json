@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 65,
+ "chunk": "65_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַתַּכְלִית",
+   "target_he": "כַּוָּנַת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "אִם יִסְתַּכֵּל עַל הַתַּכְלִית, הַיְנוּ כַּוָּנַת הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַיִּסּוּרִין",
+   "target_he": "טוֹבוֹת גְּדוֹלוֹת",
+   "proof": "וְאִם כֵּן הַיִּסּוּרִין הֵם טוֹבוֹת גְּדוֹלוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַיִּסּוּרִין",
+   "target_he": "תְּשׁוּבָה",
+   "proof": "אִם לְהַזְכִּירוֹ שֶׁיָּשׁוּב בִּתְשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַיִּסּוּרִין",
+   "target_he": "מֵרוּק עֲווֹנוֹת",
+   "proof": "אִם לְמָרֵק עֲווֹנוֹתָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַיִּסּוּרִין",
+   "target_he": "טוֹבָתוֹ",
+   "proof": "כִּי בְּוַדַּאי כָּל הַיִּסּוּרִין בָּאִים בְּכַוָּנָה מֵהַשֵּׁם יִתְבָּרַךְ לְטוֹבָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִסְתַּכְּלוּת עַל הַתַּכְלִית",
+   "target_he": "שִׂמְחָה",
+   "proof": "רַק אַדְּרַבָּא יִתְמַלֵּא שִׂמְחָה מִגֹּדֶל רֹב הַטּוֹבָה, שֶׁיִּסְתַּכֵּל בְּתַכְלִית הַיִּסּוּרִין הַלָּלוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

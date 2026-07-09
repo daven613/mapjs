@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_6_12",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לאדמתו",
+   "target_he": "המדמה",
+   "proof": "לְאַדְמָתוֹ, הַיְנוּ בְּחִינַת הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בירור הרוח טובה",
+   "target_he": "הכנעת המדמה",
+   "proof": "כִּי לֹא נִכְנָע הַמְדַמֶּה, מֵאַחַר שֶׁאֵינוֹ יָכוֹל לְלַקֵּט וּלְבָרֵר הָרוּחַ טוֹבָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת יד",
+   "target_he": "הכנעת המדמה",
+   "proof": "אֲבָל כְּשֶׁיֵּשׁ לוֹ בְּחִינַת יָד הַנַּ\"ל, הַמְלַקֵּט וּמְבָרֵר בְּחִינַת הָרוּחַ טוֹבָה מִן הָרוּחַ רָעָה, אֲזַי מַכְנִיעַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הכנעת המדמה",
+   "target_he": "וביד הנביאים אדמה",
+   "proof": "בִּבְחִינַת: וּבְיַד הַנְּבִיאִים אֲדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נבואה",
+   "target_he": "יד",
+   "proof": "כִּי עִקַּר בְּחִינַת הַנְּבוּאָה, הוּא מִבְּחִינַת הַיָּד הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יד המברר הרוח טובה מן הרוח רעה",
+   "target_he": "הכנעת המדמה",
+   "proof": "שֶׁמְּבָרֵר הָרוּחַ טוֹבָה מִן הָרוּחַ רָעָה, וְעַל־יְדֵי־זֶה מַכְנִיעַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "המדמה",
+   "target_he": "רוח רעה המעורב ברוח טובה",
+   "proof": "שֶׁהוּא בְּחִינַת רוּחַ רָעָה הַמְעֹרָב בְּרוּחַ טוֹבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

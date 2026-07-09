@@ -1,0 +1,136 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_13_12",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שְׁנָתַיִם יָמִים",
+   "target_he": "תְּקוּפוֹת הַיָּמִים תְּקוּפוֹת הַשָּׁנִים",
+   "proof": "זֶה בְּחִינַת תְּקוּפוֹת הַיָּמִים, תְּקוּפוֹת הַשָּׁנִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּקוּפוֹת הַיָּמִים תְּקוּפוֹת הַשָּׁנִים",
+   "target_he": "עוֹלָם הַבָּא",
+   "proof": "שֶׁהֵם בְּחִינַת עוֹלָם הַבָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עוֹלָם הַבָּא",
+   "target_he": "יוֹם שֶׁכֻּלּוֹ אָרֹךְ",
+   "proof": "שֶׁהוּא יוֹם שֶׁכֻּלּוֹ אָרֹךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יוֹם שֶׁכֻּלּוֹ אָרֹךְ",
+   "target_he": "לְמַעְלָה מֵהַזְּמַן",
+   "proof": "שֶׁהוּא לְמַעְלָה מֵהַזְּמַן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סֵדֶר הַזְּמַנִּים",
+   "target_he": "מַקִּיפִים",
+   "proof": "שֶׁשָּׁם סֵדֶר הַזְּמַנִּים הוּא בְּחִינַת מַקִּיפִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַקִּיפִים",
+   "target_he": "כָּל הַתַּעֲנוּגִים וְהַשַּׁעֲשׁוּעִים שֶׁל עוֹלָם הַבָּא",
+   "proof": "שֶׁהֵם כָּל הַתַּעֲנוּגִים וְהַשַּׁעֲשׁוּעִים שֶׁל עוֹלָם הַבָּא כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פַּרְעֹה",
+   "target_he": "יוֹבֵל",
+   "proof": "וּפַרְעֹה זֶה בְּחִינַת יוֹבֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דְּכָל נְהוֹרִין אִתְפָּרְעִין וְאִתְגַּלְיָן מִנַּהּ",
+   "target_he": "קְבוּרַת מֹשֶׁה",
+   "proof": "וְזֶה בְּחִינַת קְבוּרַת מֹשֶׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קְבוּרַת מֹשֶׁה",
+   "target_he": "מַקִּיפִים",
+   "proof": "שֶׁהוּא בְּחִינַת הַמַּקִּיפִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַקִּיפִים",
+   "target_he": "טְמוּנִים מֵעֵין כֹּל",
+   "proof": "שֶׁהֵם טְמוּנִים מֵעֵין כֹּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֶלְיוֹנִים נִדְמֶה לָהֶם לְמַטָּה וְתַחְתּוֹנִים נִדְמֶה לָהֶם לְמַעְלָה",
+   "target_he": "כֹל",
+   "proof": "זֶה בְּחִינַת כֹל הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כֹל",
+   "target_he": "כִּי כֹל בַּשָּׁמַיִם וּבָאָרֶץ",
+   "proof": "בְּחִינַת: כִּי כֹל בַּשָּׁמַיִם וּבָאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַקִּיפִים",
+   "target_he": "בְּחִינַת כֹל",
+   "proof": "שֶׁצָּרִיךְ הַצַּדִּיק שֶׁזּוֹכֶה לְאֵלּוּ הַמַּקִּיפִים הַנַּ\"ל שֶׁיִּהְיֶה לוֹ בְּחִינַת כֹל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֶׁאֵינָם יוֹדְעִים כְּלָל בִּידִיעָתוֹ יִתְבָּרַךְ",
+   "target_he": "מֶה חָמִית וְכוּ'",
+   "proof": "בְּחִינַת: מֶה חָמִית וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 80,
+ "chunk": "80_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "ירושלים",
+   "target_he": "דיבור",
+   "proof": "כִּי יְרוּשָׁלַיִם הוּא בְּחִינַת דִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדק",
+   "target_he": "הדיבור",
+   "proof": "וְצֶדֶק הוּא בְּחִינַת הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ה'",
+   "target_he": "מוחין",
+   "proof": "וַה' הוּא בְּחִינַת מֹחִין כַּנּוֹדָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כינוס נדחי ישראל",
+   "target_he": "בנין ירושלים",
+   "proof": "אֵימָתַי הוּא נִבְנֶה, כְּשֶׁנִּדְחֵי יִשְׂרָאֵל... וְאַחַר־כָּךְ כּוֹנֵס",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

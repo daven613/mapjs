@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_14_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "רתמא",
+   "target_he": "רותם",
+   "proof": "רִתְמָא הַיְנוּ רֹתֶם, כְּמוֹ שֶׁפֵּרֵשׁ רַשִׁ\"י",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רותם",
+   "target_he": "תיקון המרכבה",
+   "proof": "זֶה בְּחִינַת תִּקּוּן הַמֶּרְכָּבָה, בְּחִינַת (מיכה א׳:י״ג): רְתֹם הַמֶּרְכָּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עיוות המשפט",
+   "target_he": "פגם המרכבה",
+   "proof": "שֶׁהַחֲמִימוּת בָּא מִפְּגַם הַמֶּרְכָּבָה עַל יְדֵי עִוּוּת הַמִּשְׁפָּט כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מרכבה",
+   "target_he": "חמימות",
+   "proof": "שֶׁהַחֲמִימוּת בָּא מִפְּגַם הַמֶּרְכָּבָה עַל יְדֵי עִוּוּת הַמִּשְׁפָּט כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קישור המרכבה",
+   "target_he": "תיקון",
+   "proof": "שֶׁלָּזֶה אֵין תִּקּוּן כִּי אִם עַל יְדֵי קִשּׁוּר הַמֶּרְכָּבָה, בְּחִינַת: רְתֹם הַמֶּרְכָּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ריתמא",
+   "target_he": "תוכו רצוף אהבה מבנות ירושלים",
+   "proof": "וְזֶהוּ רִיתְמָא – רָאשֵׁי תֵבוֹת: תּוֹכוֹ רָצוּף אַהֲבָה מִבְּנוֹת יְרוּשָׁלַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אהבה",
+   "target_he": "חמימות",
+   "proof": "שֶׁמִּנְּפִילַת הָאַהֲבָה הַזֹּאת בָּא הַחֲמִימוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רתם המרכבה",
+   "target_he": "קישור המרכבה",
+   "proof": "וְאֵין תִּקּוּן כִּי אִם עַל יְדֵי בְּחִינַת: רְתֹם הַמֶּרְכָּבָה, הַיְנוּ קִשּׁוּר הַמֶּרְכָּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קישור המרכבה",
+   "target_he": "תיקון",
+   "proof": "וְאֵין תִּקּוּן כִּי אִם עַל יְדֵי בְּחִינַת: רְתֹם הַמֶּרְכָּבָה, הַיְנוּ קִשּׁוּר הַמֶּרְכָּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קישור המרכבה",
+   "target_he": "מרכבו ארגמן תוכו רצוף אהבה מבנות ירושלים",
+   "proof": "בְּחִינַת: מֶרְכָּבוֹ אַרְגָּמָן תּוֹכוֹ רָצוּף אַהֲבָה מִבְּנוֹת יְרוּשָׁלָיִם, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

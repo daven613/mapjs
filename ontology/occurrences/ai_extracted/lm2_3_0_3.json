@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 3,
+ "chunk": "3_0_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חוֹלָם",
+   "target_he": "הַמְתָּקָה",
+   "proof": "הַיְנוּ כִּי חוֹלָם הוּא בְּחִינַת הַמְתָּקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חוֹלָם",
+   "target_he": "שָׁלֹשׁ הֲוָיוֹת",
+   "proof": "שֶׁחוֹלָם – גִּימַטְרִיָּא שָׁלֹשׁ הֲוָיוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלֹשׁ הֲוָיוֹת",
+   "target_he": "שְׁלֹשָׁה אֱלֹקִים שֶׁבַּגָּרוֹן",
+   "proof": "שֶׁהֵם מַמְתִּיקִין שְׁלֹשָׁה אֱלֹקִים שֶׁבַּגָּרוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁלֹשָׁה אֱלֹקִים שֶׁבַּגָּרוֹן",
+   "target_he": "מֹחִין דְּקַטְנוּת",
+   "proof": "שֶׁהֵם מֹחִין דְּקַטְנוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלֹשׁ הֲוָיוֹת",
+   "target_he": "מֹחִין דְּקַטְנוּת שֶׁבַּגָּרוֹן",
+   "proof": "וְנִמְתָּקִין עַל־יְדֵי שָׁלֹשׁ הֲוָיוֹת, גִּימַטְרִיָּא חֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַצֳרִי אֵין בְּגִלְעָד אִם רֹפֵא אֵין שָׁם",
+   "target_he": "רְפוּאוֹת",
+   "proof": "בְּחִינַת (ירמיהו ח׳:כ״ב): הַצֳרִי אֵין בְּגִלְעָד אִם רֹפֵא אֵין שָׁם, הַיְנוּ בְּחִינַת רְפוּאוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְתָּקָה",
+   "target_he": "הִתְרַפְּאוֹת עַל־יְדֵי רְפוּאוֹת",
+   "proof": "שֶׁאַחַר הַהַמְתָּקָה שֶׁהוּא בְּחִינַת וְרַפֹּא בְּחוֹלָם, אֲזַי דַיְקָא יְכוֹלִין לְהִתְרַפְּאוֹת עַל־יְדֵי רְפוּאוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִתְרַפְּאוֹת עַל־יְדֵי רְפוּאוֹת",
+   "target_he": "יְרַפֵּא בְּצֵירֵי",
+   "proof": "שֶׁהוּא בְּחִינַת יְרַפֵּא בְּצֵירֵי כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

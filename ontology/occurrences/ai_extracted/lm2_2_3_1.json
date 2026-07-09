@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_3_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אמת",
+   "target_he": "קיום ושלמות הדיבור",
+   "proof": "עִקָּר קִיּוּם וּשְׁלֵמוּת הַדִּבּוּר הוּא עַל־יְדֵי הָאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלשה שמות",
+   "target_he": "אמת",
+   "proof": "כִּי אֵלּוּ שְׁלֹשָׁה שֵׁמוֹת הֵם מְקוֹר הָאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שלשה שמות",
+   "target_he": "אל אלהים ה' דיבר",
+   "proof": "בִּבְחִינַת (תהלים נ): אֵל־אֱלֹהִים ה' דִּבֶּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלשה שמות",
+   "target_he": "הארת האמת בדיבור",
+   "proof": "וְעַל יָדָם מֵאִיר הָאֱמֶת בְּהַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הארת האמת בדיבור",
+   "target_he": "ריבוע הדיבור",
+   "proof": "דְּהַיְנוּ בְּרִבּוּעַ הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ריבוע הדיבור",
+   "target_he": "ארבעה חלקי הדיבור",
+   "proof": "הַיְנוּ בְּחִינַת אַרְבָּעָה חֶלְקֵי הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גלות ישראל",
+   "target_he": "גלות הדיבור",
+   "proof": "כְּשֶׁהָיוּ יִשְׂרָאֵל בַּגָּלוּת, וְהָיָה הַדִּבּוּר בַּגָּלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לא איש דברים אנכי גם מתמול גם משלשום גם מאז דברך",
+   "target_he": "ריבוע הדיבור, ארבעה חלקי הדיבור",
+   "proof": "זֶה בְּחִינַת רִבּוּעַ הַדִּבּוּר, אַרְבָּעָה חֶלְקֵי הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

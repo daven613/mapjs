@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 96,
+ "chunk": "96_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "חֶרֶב",
+   "target_he": "מִלְחָמָה",
+   "proof": "חֶרֶב – לְשׁוֹן מִלְחָמָה, הַיְנוּ שֶׁנִּתְעוֹרֵר מַחֲלֹקֶת עַל אֵיזֶה צַדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חַרְבָּם",
+   "target_he": "הַמַּחֲשָׁבָה זָרָה שֶׁל אוֹתָהּ הַמַּחֲלֹקֶת",
+   "proof": "חַרְבָּם – הַיְנוּ הַמַּחֲשָׁבָה זָרָה שֶׁל אוֹתָהּ הַמַּחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תָּבוֹא בְלִבָּם",
+   "target_he": "לֵב צַדִּיק זֶה",
+   "proof": "תָּבוֹא בְלִבָּם – הַיְנוּ בְּלֵב צַדִּיק זֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְקַשְּׁתוֹתָם תִּשָּׁבַרְנָה",
+   "target_he": "הַמַּחֲלֹקֶת הַנַּ\"ל",
+   "proof": "וְקַשְּׁתוֹתָם תִּשָּׁבַרְנָה; כְּלוֹמַר, הַמַּחֲלֹקֶת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרָצוֹן לְהַעֲלוֹת הַמַּחֲשָׁבָה זָרָה",
+   "target_he": "הַמַּחֲלֹקֶת",
+   "proof": "וְעַל־יְדֵי שֶׁרוֹצֶה לְהַעֲלוֹתָהּ, בְּכֹחַ הָרָצוֹן הַזֶּה – וְקַשְּׁתוֹתָם תִּשָּׁבַרְנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

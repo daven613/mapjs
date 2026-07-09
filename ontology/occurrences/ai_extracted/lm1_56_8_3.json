@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_8_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מצה",
+   "target_he": "מחלוקת",
+   "proof": "כִּי מַצָּה הִיא בְּחִינַת מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מן",
+   "target_he": "דעת גדול",
+   "proof": "הָיָה בָּהֶם טַעַם מָן, שֶׁהִיא בְּחִינַת דַּעַת גָּדוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דעת גדול",
+   "target_he": "מחלוקת לשם שמים",
+   "proof": "שֶׁהִיא בְּחִינַת דַּעַת גָּדוֹל, שֶׁהִיא בְּחִינַת מַחֲלֹקֶת לְשֵׁם שָׁמַיִם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "מחלוקת לשם שמים",
+   "proof": "כִּי בְּמִצְרַיִם, שֶׁהָיָה הַדַּעַת בְּגָלוּת, בְּוַדַּאי לֹא הָיָה מַחֲלֹקֶת לְשֵׁם שָׁמַיִם, כִּי זֶה תָּלוּי בְּדַעַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הוצאת בחינת המחלוקת מן הגלות מצרים",
+   "target_he": "טעם מן",
+   "proof": "כִּי לְאַחַר שֶׁהוֹצִיאוּ בְּחִינַת הַמַּחֲלֹקֶת מִן הַגָּלוּת מִצְרַיִם, הָיָה בָּהֶם טַעַם מָן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

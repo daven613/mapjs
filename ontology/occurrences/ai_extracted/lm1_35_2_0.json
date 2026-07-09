@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 35,
+ "chunk": "35_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חידוש השכל בכל עת",
+   "target_he": "מעשה בראשית",
+   "proof": "וְזֶה בְּחִינַת: וּבְטוּבוֹ מְחַדֵּשׁ בְּכָל יוֹם תָּמִיד מַעֲשֵׂה בְרֵאשִׁית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חידוש בראשית",
+   "target_he": "חידוש החכמה",
+   "proof": "כִּי חִדּוּשׁ בְּרֵאשִׁית הוּא חִדּוּשׁ הַחָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חידוש השכל",
+   "target_he": "חידוש הנשמה",
+   "proof": "כִּי חִדּוּשׁ הַשֵּׂכֶל הִיא חִדּוּשׁ הַנְּשָׁמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "השכל",
+   "target_he": "הנשמה",
+   "proof": "כִּי הַשֵּׂכֶל הוּא הַנְּשָׁמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשמה",
+   "target_he": "גוף",
+   "proof": "נִמְצָא שֶׁהַנְּשָׁמָה הִיא מְחַיָּה אֶת הַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נשמה",
+   "target_he": "שכל",
+   "proof": "וְהִיא בְּעַצְמָהּ הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

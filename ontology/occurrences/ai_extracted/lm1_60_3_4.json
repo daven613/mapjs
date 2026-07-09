@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_3_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "עניות",
+   "proof": "מִי שֶׁאֵין לוֹ יִרְאָה... עַל־יְדֵי־זֶה בָּא לַעֲנִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הבל היופי",
+   "target_he": "עניות",
+   "proof": "וְאֵינוֹ נִשְׁמָר מִבְּחִינַת הֶבֶל הַיֹּפִי, עַל־יְדֵי־זֶה בָּא לַעֲנִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אריכות הנשימה",
+   "target_he": "עשירות",
+   "proof": "כִּי עֲשִׁירוּת הוּא מֵאֲרִיכוּת הַנְּשִׁימָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הפסק הנשימה",
+   "target_he": "יופי",
+   "proof": "וְיֹפִי הוּא מֵהֶפְסֵק הַנְּשִׁימָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 37,
+ "chunk": "37_4_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הֶבֶל שֶׁאֵין בּוֹ חֵטְא",
+   "target_he": "גִּלּוּי הָאָבוֹת בָּעוֹלָם",
+   "proof": "כְּשֶׁאַתָּה רוֹצֶה שֶׁיִּתְגַּלּוּ עַל יָדְךָ הָאָבוֹת בָּעוֹלָם... צָרִיךְ שֶׁיִּהְיֶה לְךָ הֶבֶל שֶׁאֵין בּוֹ חֵטְא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גִּלּוּי הָאָבוֹת בָּעוֹלָם",
+   "target_he": "דְּחִיַּת הַדִּין וְהַחֹשֶׁךְ שִׁכְחָה וְסִכְלוּת",
+   "proof": "כְּשֶׁאַתָּה רוֹצֶה שֶׁיִּתְגַּלּוּ עַל יָדְךָ הָאָבוֹת בָּעוֹלָם, כְּדֵי לִדְחוֹת הַדִּין, וְהַחֹשֶׁךְ, שִׁכְחָה, וְסִכְלוּת, מִן הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה דְּאֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "כְּלִילָה בַּאֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל",
+   "proof": "וְעַל־יְדֵי צְדָקָה דְּאֶרֶץ־יִשְׂרָאֵל תִּכְלֹל עַצְמְךָ בַּאֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "הֶבֶל הַקָּדוֹשׁ שֶׁאֵין בּוֹ חֵטְא",
+   "proof": "שֶׁהוּא בְּחִינוֹת הֶבֶל הַקָּדוֹשׁ שֶׁאֵין בּוֹ חֵטְא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "גִּלּוּי הָאָבוֹת בָּעוֹלָם",
+   "proof": "עַל־יְדֵי אֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל, וְעַל־יְדֵי הֶבֶל שֶׁאֵין בּוֹ חֵטְא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֶבֶל שֶׁאֵין בּוֹ חֵטְא",
+   "target_he": "גִּלּוּי הָאָבוֹת בָּעוֹלָם",
+   "proof": "וְעַל־יְדֵי הֶבֶל שֶׁאֵין בּוֹ חֵטְא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֶבֶל שֶׁאֵין בּוֹ חֵטְא",
+   "target_he": "הֶבֶל פִּיהֶם שֶׁל תִּינוֹקוֹת",
+   "proof": "שֶׁהִיא בְּחִינַת הֶבֶל פִּיהֶם שֶׁל תִּינוֹקוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּינוֹקוֹת",
+   "target_he": "גִּלּוּי הָאָבוֹת לְהָגֵן",
+   "proof": "שֶׁעַל־יְדֵי הַתִּינוֹקוֹת נִתְגַּלּוּ הָאָבוֹת לְהָגֵן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה דְּאֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "כְּלִילוּת בַּאֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל",
+   "proof": "עַל־יְדֵי צְדָקָה דְּאֶרֶץ־יִשְׂרָאֵל יֻכְלְלוּ בַּאֲוִירָא דְּאֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֲוִיר הַקָּדוֹשׁ",
+   "target_he": "הֶבֶל שֶׁאֵין בּוֹ חֵטְא",
+   "proof": "אֲוִיר הַקָּדוֹשׁ, שֶׁהוּא בְּחִינַת הֶבֶל שֶׁאֵין בּוֹ חֵטְא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

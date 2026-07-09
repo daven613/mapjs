@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 32,
+ "chunk": "32_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כלה",
+   "target_he": "חמש פעמים דין",
+   "proof": "שֶׁהִיא בְּחִינַת חָמֵשׁ פְּעָמִים דִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חמש פעמים דין",
+   "target_he": "ש\"ך",
+   "proof": "גִּימַטְרִיָּא שַׁ\"ךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חמש פעמים דין",
+   "target_he": "נער",
+   "proof": "גִּימַטְרִיָּא נַעַר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רגלין",
+   "target_he": "כלה",
+   "proof": "לְהַמְשִׁיךְ הָאַלְפִין שֶׁבַּלֵּב עַל־יְדֵי הָרַגְלִין לְהַכַּלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אור הלב",
+   "target_he": "נערה בה\"א",
+   "proof": "וְעַל־יְדֵי אוֹר הַלֵּב שֶׁנִּמְשָׁךְ לָהּ, נַעֲשֵׂית נַעֲרָה בְּהֵ\"א",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אור הלב",
+   "target_he": "ה' פעמים אדני",
+   "proof": "וְנַעֲשֵׂית ה' פְּעָמִים \"אֲדֹנָי\"",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

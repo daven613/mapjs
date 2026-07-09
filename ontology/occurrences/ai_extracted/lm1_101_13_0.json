@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 101,
+ "chunk": "101_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אדם",
+   "target_he": "זאת התורה אדם",
+   "proof": "בְּחִינַת: זֹאת הַתּוֹרָה אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אדם",
+   "target_he": "אתם קרויים אדם ואין העכו\"ם קרויים אדם",
+   "proof": "בְּחִינַת: אַתֶּם קְרוּיִים אָדָם וְאֵין הָעַכּוּ\"ם קְרוּיִים אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה",
+   "target_he": "שם אדם",
+   "proof": "כִּי עִקַּר שֵׁם אָדָם זוֹכִין עַל־יְדֵי הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תורה",
+   "target_he": "אנפין נהירין",
+   "proof": "שֶׁהִיא בְּחִינַת אַנְפִּין נְהִירִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אנפין נהירין",
+   "target_he": "ההפך מכל המדות והתאוות רעות",
+   "proof": "שֶׁהִיא הַהֶפֶךְ מִכָּל הַמִּדּוֹת וְהַתַּאֲווֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עכו\"ם",
+   "target_he": "אנפין חשוכין",
+   "proof": "כִּי הֵם בְּחִינַת אַנְפִּין חֲשׁוּכִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מדות רעות ותאוות רעות",
+   "target_he": "אין קרויים אדם",
+   "proof": "כִּי הֵם מְשֻׁקָּעִים בְּכָל הַמִּדּוֹת רָעוֹת וְתַאֲווֹת רָעוֹת עַל כֵּן אֵין קְרוּיִים אָדָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

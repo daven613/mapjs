@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_4_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שְׁתִיקָה",
+   "target_he": "מֹשֶׁה",
+   "proof": "כִּי אָסוּר לִכְנֹס לְשָׁם כִּי־אִם מִי שֶׁהוּא בִּבְחִינוֹת שְׁתִיקָה, בְּחִינַת מֹשֶׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁתִיקָה",
+   "target_he": "גִּדּוּל יָמָיו וּמִדּוֹתָיו",
+   "proof": "כִּי עַל יְדֵי שֶׁאָחַז בְּמַדְרֵגָה זוֹ, בִּבְחִינַת שְׁתִיקָה... עַל־כֵּן הָיָה מְגַדֵּל יָמָיו וּמִדּוֹתָיו שָׁם בֶּחָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַרְבֶּה דְּבָרִים",
+   "target_he": "חֵטְא",
+   "proof": "וְכָל הַמַּרְבֶּה דְּבָרִים מֵבִיא חֵטְא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִבּוּי הָאוֹר",
+   "target_he": "קְּלִפּוֹת",
+   "proof": "כִּי מֵרִבּוּי הָאוֹר נִתְהַוּוּ הַקְּלִפּוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 192,
+ "chunk": "192_12_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הלומד",
+   "target_he": "יֶלֶד",
+   "proof": "הַיְנוּ שֶׁיֵּשׁ בְּחִינוֹת הַלּוֹמֵד יֶלֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַתַּלְמִיד הַשּׁוֹמֵעַ הַדָּבָר מִפִּי הָרַב בְּעֵת שֶׁחִדֵּשׁ",
+   "target_he": "יֶלֶד",
+   "proof": "שֶׁאָז הוּא בְּחִינוֹת יֶלֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַנְּפָשׁוֹת",
+   "target_he": "עִבּוּר",
+   "proof": "עַל יְדֵי מַה שֶּׁמַּעֲלֶה אֶת הַנְּפָשׁוֹת בִּבְחִינוֹת עִבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַעֲלֶה אֶת הַנְּפָשׁוֹת בִּבְחִינוֹת עִבּוּר וּמְחַדֵּשׁ אוֹתָם",
+   "target_he": "הַחִדּוּשִׁים",
+   "proof": "כִּי הַחִדּוּשִׁים נִתְהַוִּים עַל יְדֵי מַה שֶּׁמַּעֲלֶה אֶת הַנְּפָשׁוֹת בִּבְחִינוֹת עִבּוּר וּמְחַדֵּשׁ אוֹתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַתַּלְמִיד",
+   "target_he": "יֶלֶד",
+   "proof": "וְנִמְצָא שֶׁהוּא בְּחִינוֹת יֶלֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

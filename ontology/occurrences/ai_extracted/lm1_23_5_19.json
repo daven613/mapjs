@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_19",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שומר הברית יותר מחבירו",
+   "target_he": "צדיק",
+   "proof": "כִּי הוּא בְּחִינַת צַדִּיק, פָּנִים דִּקְדֻשָּׁה, לְגַבֵּי חֲבֵרוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שומר הברית יותר מחבירו",
+   "target_he": "פנים דקדושה",
+   "proof": "כִּי הוּא בְּחִינַת צַדִּיק, פָּנִים דִּקְדֻשָּׁה, לְגַבֵּי חֲבֵרוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שומר הברית יותר מחבירו",
+   "target_he": "נפילת חבירו",
+   "proof": "וְעַל כֵּן יוּכַל כָּל אֶחָד, שֶׁהוּא שׁוֹמֵר הַבְּרִית יוֹתֵר מֵחֲבֵרוֹ, לְהַפִּיל אֶת חֲבֵרוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פנים דקדושה",
+   "target_he": "נפילה לתאות ממון",
+   "proof": "וְיֵשׁ לוֹ כֹּחַ לְהַפִּיל אוֹתוֹ, וְהַנְּפִילָה הוּא שֶׁמַּפִּילִין אוֹתוֹ לְתַאֲוַת מָמוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ברית",
+   "target_he": "צדיקים",
+   "proof": "כִּי כָּל יִשְׂרָאֵל נִקְרָאִים צַדִּיקִים עַל שֵׁם הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נמולים",
+   "target_he": "צדיקים",
+   "proof": "שֶׁאָמַר שֶׁכָּל יִשְׂרָאֵל עַל־יְדֵי שֶׁהֵם נִמּוֹלִים, עַל כֵּן כֻּלָּם נִקְרָאִים צַדִּיקִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

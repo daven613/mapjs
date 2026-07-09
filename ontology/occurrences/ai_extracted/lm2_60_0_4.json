@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 60,
+ "chunk": "60_0_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אוֹמֵר תּוֹרָה בָּרַבִּים וְשׁוֹמְעִים תַּלְמִידִים שֶׁאֵינָם הֲגוּנִים",
+   "target_he": "עֲצִירַת גְּשָׁמִים",
+   "proof": "עַל־יְדֵי־זֶה בָּא גַם־כֵּן עֲצִירַת גְּשָׁמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּבוֹד הַתּוֹרָה",
+   "target_he": "גְּשָׁמִים",
+   "proof": "כִּי עַל־יְדֵי כְּבוֹד הַתּוֹרָה בָּא גְּשָׁמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּבוֹד הַתּוֹרָה",
+   "target_he": "וּכְבוֹד ה' נִרְאָה בֶּעָנָן",
+   "proof": "בִּבְחִינַת (שמות ט״ז:י׳): וּכְבוֹד ה' נִרְאָה בֶּעָנָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עָנָן",
+   "target_he": "גְּשָׁמִים",
+   "proof": "וְעַל־יְדֵי הֶעָנָן בָּא גְּשָׁמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גְּשָׁמִים הַבָּאִים עַל־יְדֵי הֶעָנָן",
+   "target_he": "אֵל הַכָּבוֹד הִרְעִים, ה' עַל מַיִם רַבִּים",
+   "proof": "וְזֶה בְּחִינַת (תהילים כ״ט:ג׳): אֵל הַכָּבוֹד הִרְעִים, ה' עַל מַיִם רַבִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַיִם רַבִּים",
+   "target_he": "כְּבוֹד הַתּוֹרָה",
+   "proof": "הַיְנוּ בְּחִינַת גְּשָׁמִים שֶׁבָּאִים עַל־יְדֵי כְּבוֹד ה', בְּחִינַת כְּבוֹד הַתּוֹרָה.",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לוֹמֵד תּוֹרָה לְתַלְמִיד שֶׁאֵינוֹ הָגוּן",
+   "target_he": "זוֹרֵק אֶבֶן לְמַרְקוּלִיס",
+   "proof": "שֶׁהוּא כְּזוֹרֵק אֶבֶן לְמַרְקוּלִיס",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַרְקוּלִיס",
+   "target_he": "חִלּוּף הַכָּבוֹד",
+   "proof": "שֶׁמַּרְקוּלִיס פֵּרוּשׁוֹ: מַר קִלּוּס, הַיְנוּ חִלּוּף הַכָּבוֹד.",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לוֹמֵד תּוֹרָה לְתַלְמִיד שֶׁאֵינוֹ הָגוּן",
+   "target_he": "הֶפֶךְ הַכָּבוֹד",
+   "proof": "נִמְצָא כְּשֶׁלּוֹמֵד תּוֹרָה לְתַלְמִיד שֶׁאֵינוֹ הָגוּן, הוּא הֶפֶךְ הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֶפֶךְ הַכָּבוֹד",
+   "target_he": "עֲצִירַת גְּשָׁמִים",
+   "proof": "וְעַל־כֵּן בָּא עַל־יְדֵי־זֶה עֲצִירַת גְּשָׁמִים, הֶפֶךְ הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

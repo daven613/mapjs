@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_1_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "פנים דסטרא אחרא",
+   "target_he": "אנפין חשוכין",
+   "proof": "וְיֵשׁ פָּנִים דְּסִטְרָא אָחֳרָא, שֶׁהֵם אַנְפִּין חֲשׁוֹכִין, מָרָה שְׁחוֹרָה, עֲבוֹדַת אֱלִילִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פנים דסטרא אחרא",
+   "target_he": "מרה שחורה",
+   "proof": "שֶׁהֵם אַנְפִּין חֲשׁוֹכִין, מָרָה שְׁחוֹרָה, עֲבוֹדַת אֱלִילִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פנים דסטרא אחרא",
+   "target_he": "עבודת אלילים",
+   "proof": "שֶׁהֵם אַנְפִּין חֲשׁוֹכִין, מָרָה שְׁחוֹרָה, עֲבוֹדַת אֱלִילִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "יגיעות גדולות",
+   "proof": "וְאֵינָם מַאֲמִינִים שֶׁהַקָּדוֹש־בָּרוּךְ־הוּא יָכוֹל לְפַרְנֵס אֶת הָאָדָם בְּסִבָּה קַלָּה, וְרוֹדְפִים אַחַר פַּרְנָסָתָם בִּיגִיעוֹת גְּדוֹלוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תאות ממון",
+   "target_he": "עצבון",
+   "proof": "וְאֵלּוּ בְּנֵי אָדָם הַנּוֹפְלִים בְּתַאֲוַת מָמוֹן, ... וְהֵם אוֹכְלֵי לֶחֶם בְּעִצָּבוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עצבות",
+   "target_he": "מרה שחורה",
+   "proof": "וְעַצְבוּת הוּא מָרָה שְׁחוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עצבות",
+   "target_he": "פנים דסטרא אחרא",
+   "proof": "אֵלּוּ בְּנֵי אָדָם נִקְשָׁרִים בְּפָנִים דְּסִטְרָא אָחֳרָא, אֱלֹקִים אֲחֵרִים, חֹשֶׁךְ, בְּחִינַת מִיתָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פנים דסטרא אחרא",
+   "target_he": "מיתה",
+   "proof": "אֱלֹקִים אֲחֵרִים, חֹשֶׁךְ, בְּחִינַת מִיתָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וזהבם לנדה",
+   "target_he": "עבודת אלילים",
+   "proof": "וּזְהָבָם לְנִדָּה; הַיְנוּ בְּחִינַת עֲבוֹדַת אֱלִילִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

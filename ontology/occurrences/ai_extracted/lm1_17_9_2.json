@@ -1,0 +1,172 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_9_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מעשים עכורים",
+   "target_he": "שכל",
+   "proof": "שֶׁעַל־יְדֵי הַמַּעֲשִׂים הָעֲכוּרִים גּוֹרְמִים כִּלָּיוֹן וְהֶפְסֵד לְהַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יוסף אינו",
+   "target_he": "הון יסיף רעים רבים",
+   "proof": "יוֹסֵף אֵינֶנּוּ – זֶה בְּחִינַת: הוֹן יֹסִיף רֵעִים רַבִּים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שמעון אינו",
+   "target_he": "ושמעו הולך בכל המדינות",
+   "proof": "וְשִׁמְעוֹן אֵינֶנּוּ – זֶה בְּחִינַת: וְשָׁמְעוֹ הוֹלֵךְ בְּכָל הַמְּדִינוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הון יוסיף",
+   "target_he": "ושמעו הולך בכל המדינות",
+   "proof": "הַנַּעֲשֶׂה עַל־יְדֵי בְּחִינַת הוֹן יֹסִיף כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "את בנימין תקחו",
+   "target_he": "מזבח בחלקו של טורף",
+   "proof": "וְאֶת בִּנְיָמִן תִּקָּחוּ – זֶה בְּחִינַת: מִזְבֵּחַ בְּחֶלְקוֹ שֶׁל טוֹרֵף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מזבח בחלקו של טורף",
+   "target_he": "בנימין",
+   "proof": "שֶׁהוּא בִּנְיָמִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מזבח בחלקו של טורף",
+   "target_he": "שלמות השכל",
+   "proof": "שֶׁעִקַּר שְׁלֵמוּת הַשֵּׂכֶל תָּלוּי בָּזֶה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כלי המעשה",
+   "target_he": "מוח",
+   "proof": "שֶׁעִקַּר הַחִסָּרוֹן שֶׁנִּתְעַכֵּר הַמֹּחַ הוּא תָּלוּי רַק בִּכְלֵי הַמַּעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כלי המעשה",
+   "target_he": "צדקה",
+   "proof": "דְּהַיְנוּ צְדָקָה, שֶׁהִיא תָּלוּי בְּמַעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדקה",
+   "target_he": "והיה מעשה הצדקה",
+   "proof": "בְּחִינַת (ישעיהו ל״ב:י״ז): וְהָיָה מַעֲשֵׂה הַצְּדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "שכל",
+   "proof": "שֶׁעַל־יָדָהּ נִשְׁלָם הַשֵּׂכֶל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "גרים",
+   "proof": "כִּי כְּשֶׁנּוֹתְנִין צְדָקָה, עַל־יְדֵי־זֶה נַעֲשִׂין גֵּרִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גרים",
+   "target_he": "מזבח",
+   "proof": "וְעַל־יְדֵי־ זֶה נִשְׁלָם הַמִּזְבֵּחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מזבח",
+   "target_he": "שולחנו של אדם",
+   "proof": "שֶׁהוּא בְּחִינַת שֻׁלְחָנוֹ שֶׁל אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שולחנו של אדם",
+   "target_he": "לאכול בקדושה",
+   "proof": "דְּהַיְנוּ שֶׁזּוֹכִין לֶאֱכֹל בִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לאכול בקדושה",
+   "target_he": "שכל",
+   "proof": "וַאֲזַי נִשְׁלָם הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שכל",
+   "target_he": "אור הצדיק",
+   "proof": "וַאֲזַי זוֹכִין לִרְאוֹת אוֹר הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אור הצדיק",
+   "target_he": "יראה ואהבה",
+   "proof": "וְעַל־יְדֵי־זֶה מְקַבְּלִין מִמֶּנּוּ יִרְאָה וְאַהֲבָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

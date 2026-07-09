@@ -1,0 +1,118 @@
+{
+ "book": "lm2",
+ "torah": 72,
+ "chunk": "72_0_24",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מִדְבָּר",
+   "target_he": "שִׁפְלוּת",
+   "proof": "מִדְבָּר הַיְנוּ שִׁפְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַתָּנָה",
+   "target_he": "שַׁבָּת",
+   "proof": "עַל־יְדֵי־זֶה: מַתָּנָה, הַיְנוּ שַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׁפְלוּת",
+   "target_he": "מַתָּנָה (שַׁבָּת)",
+   "proof": "מִדְבָּר הַיְנוּ שִׁפְלוּת... עַל־יְדֵי־זֶה: מַתָּנָה, הַיְנוּ שַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׁבָּת",
+   "target_he": "תַּעֲנוּג עוֹלָם הַבָּא",
+   "proof": "כִּי עִקָּר תַּעֲנוּג עוֹלָם הַבָּא, בְּחִינַת שַׁבָּת, בְּחִינַת חַיִּים נִצְחִיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׁבָּת",
+   "target_he": "חַיִּים נִצְחִיִּים",
+   "proof": "בְּחִינַת שַׁבָּת, בְּחִינַת חַיִּים נִצְחִיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׁפְלוּת",
+   "target_he": "תַּעֲנוּג עוֹלָם הַבָּא",
+   "proof": "יִהְיֶה רַק לְהַשִּׁפְלוּת שֶׁל כָּל אֶחָד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "סֶלַע",
+   "target_he": "בְּאֵר",
+   "proof": "סֶלַע זֶה הַבְּאֵר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּאֵר",
+   "target_he": "בֵּאוּרֵי הַתּוֹרָה",
+   "proof": "בְּחִינַת בֵּאוּרֵי הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּאֵר",
+   "target_he": "בְּאֵר חֲפָרוּהָ שָׂרִים",
+   "proof": "בְּחִינַת: בְּאֵר חֲפָרוּהָ שָׂרִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִשָּׁם חָפַר אֹכֶל",
+   "target_he": "בּוּשָׁה",
+   "proof": "וְזֶהוּ: מִשָּׁם חָפַר אֹכֶל – בְּחִינַת בּוּשָׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בֵּאוּרֵי הַתּוֹרָה",
+   "target_he": "בּוּשָׁה",
+   "proof": "כִּי עַל־יְדֵי בֵּאוּרֵי הַתּוֹרָה עַל־יְדֵי־זֶה זוֹכֶה לְבוּשָׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בּוּשָׁה",
+   "target_he": "הוֹשָׁטַת הָאֹכֶל לְפִיו (מְנִיעָה)",
+   "proof": "כִּי הוּא מִתְבַּיֵּשׁ לְהוֹשִׁיט הָאֹכֶל לְפִיו עַל־יְדֵי הַבּוּשָׁה שֶׁבָּאָה אֵלָיו כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

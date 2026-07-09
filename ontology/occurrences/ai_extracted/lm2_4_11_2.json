@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_11_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַפְּלִשְׁתִּי",
+   "target_he": "מֵצַח הַנָּחָשׁ",
+   "proof": "כִּי הוּא גַּם כֵּן בְּחִינָה זוֹ מַמָּשׁ, שֶׁכָּל כֹּחוֹ מִמֵּצַח הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֵצַח הַנָּחָשׁ",
+   "target_he": "וּמִצְחַת נְחֹשֶׁת",
+   "proof": "בְּחִינַת: וּמִצְחַת נְחֹשֶׁת וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וַתִּטְבַּע הָאֶבֶן בְּמִצְחוֹ",
+   "target_he": "מֵצַח הַנָּחָשׁ",
+   "proof": "הַיְנוּ בְּמֵצַח הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֶבֶן שְׁלֵמָה",
+   "target_he": "מֵצַח הַנָּחָשׁ",
+   "proof": "שֶׁהִכְנִיעוֹ עַל־יְדֵי בְּחִינַת (משלי י״א:א׳): אֶבֶן שְׁלֵמָה רְצוֹנוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶבֶן שְׁלֵמָה",
+   "target_he": "רָצוֹן",
+   "proof": "בְּחִינַת רָצוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

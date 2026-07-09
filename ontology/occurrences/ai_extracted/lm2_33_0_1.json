@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 33,
+ "chunk": "33_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "טוֹב מְאֹד",
+   "target_he": "מִיתָה",
+   "proof": "וְהִנֵּה טוֹב מְאֹד – זֶה וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִיתָה",
+   "target_he": "תַּכְלִית הַטּוֹב",
+   "proof": "שֶׁעַל־יָדוֹ בָּאִין לְתַכְלִית הַטּוֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בָּשָׂר",
+   "target_he": "גּוּף",
+   "proof": "שֶׁהַבָּשָׂר, דְּהַיְנוּ הַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_9_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אכילה",
+   "target_he": "שינה",
+   "proof": "וְעַל יְדֵי הָאֲכִילָה בָּא עָלָיו שֵׁנָה וְנַיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הדרא עלה משוניתא",
+   "target_he": "הסבובים והדמיונות",
+   "proof": "הַיְנוּ בְּחִינַת הַסִּבּוּבִים וְהַדִּמְיוֹנוֹת שֶׁמְּחַזְּרִין וְסוֹבְבִין סָבִיב בִּשְׁעַת הַשֵּׁנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עוסק בתורה ועבודה",
+   "target_he": "שינה",
+   "proof": "וּבֶאֱמֶת הַכֹּל הוּא בְּחִינַת שֵׁנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

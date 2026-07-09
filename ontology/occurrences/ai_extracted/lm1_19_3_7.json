@@ -1,0 +1,199 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_3_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שְׁלֵמוּת לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "תִּקּוּן הַבְּרִית",
+   "proof": "שֶׁהוּא תִּקּוּן הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁלֵמוּת לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "אָסַף אֱלֹקִים אֶת חֶרְפָּתִי",
+   "proof": "בִּבְחִינַת (שם ל): אָסַף אֱלֹקִים אֶת חֶרְפָּתִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַבְּרִית",
+   "target_he": "כָּבוֹד",
+   "proof": "כִּי בּוֹ תָּלוּי כָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲרָיִין",
+   "target_he": "בּשֶׁת",
+   "proof": "כִּי אֵין בּשֶׁת אֶלָּא בִּמְקוֹם עֲרָיִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נָחָשׁ",
+   "target_he": "הָרַע הַכּוֹלֵל",
+   "proof": "שֶׁהוּא הָרַע הַכּוֹלֵל הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁלֵמוּת בִּלְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "שְׁלִיטַת נָחָשׁ עַל לְשׁוֹן הַקֹּדֶשׁ",
+   "proof": "כְּשֶׁאֵין שְׁלֵמוּת בִּלְשׁוֹן הַקֹּדֶשׁ, אֲזַי הוּא הוֹלֵךְ וְשׁוֹלֵט עַל לְשׁוֹן הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁלִיטַת נָחָשׁ עַל לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "נָחָשׁ שֻׁלְטָנוּתֵהּ עַל בִּשְׂרָא",
+   "proof": "בִּבְחִינַת: נָחָשׁ שֻׁלְטָנוּתֵהּ עַל בִּשְׂרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בִּשְׂרָא",
+   "target_he": "חַוָּה",
+   "proof": "הַיְנוּ בְּחִינַת חַוָּה הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חַוָּה",
+   "target_he": "בְּשַׂר קֹדֶשׁ",
+   "proof": "שֶׁהִיא בָּשָׂר מִבְּשָׂרוֹ, בִּבְחִינוֹת (חגי ב): בְּשַׂר קֹדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נָחָשׁ הַמַּטִּיל זֻהֲמָא",
+   "target_he": "נָחָשׁ שֶׁפִּתָּה לְחַוָּה וְהֵטִיל בָּהּ זֻהֲמָא",
+   "proof": "וְזֶה בְּחִינַת נָחָשׁ שֶׁפִּתָּה לְחַוָּה וְהֵטִיל בָּהּ זֻהֲמָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נָחָשׁ",
+   "target_he": "זֻהֲמָא",
+   "proof": "וְהֵטִיל בָּהּ זֻהֲמָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זֻהֲמָא",
+   "target_he": "הָרוּחַ סְעָרָה",
+   "proof": "שֶׁהוּא הָרוּחַ סְעָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זֻהֲמָא",
+   "target_he": "הָרוּחַ שְׁטוּת",
+   "proof": "הָרוּחַ שְׁטוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זֻהֲמָא",
+   "target_he": "אֵשֶׁת כְּסִילוּת",
+   "proof": "אֵשֶׁת כְּסִילוּת (משלי ט׳:י״ג)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֵשֶׁת כְּסִילוּת",
+   "target_he": "הָרוּחַ הַקֹּדֶשׁ",
+   "proof": "וְהוֹלֵךְ וּמְפַתֶּה אֶת הָרוּחַ הַקֹּדֶשׁ ... וּמֵטִיל בָּהּ זֻהֲמָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָרוּחַ הַקֹּדֶשׁ",
+   "target_he": "לְשׁוֹן הַקֹּדֶשׁ",
+   "proof": "שֶׁהוּא לְשׁוֹן הַקֹּדֶשׁ, אִשָּׁה חֲכָמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָרוּחַ הַקֹּדֶשׁ",
+   "target_he": "אִשָּׁה חֲכָמָה",
+   "proof": "אִשָּׁה חֲכָמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "חַכְמוֹת נָשִׁים",
+   "proof": "בִּבְחִינַת חַכְמוֹת נָשִׁים (משלי י״ד:א׳)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פִּתּוּי הַנָּחָשׁ בִּלְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "לַפֶּתַח חַטָּאת רֹבֵץ",
+   "proof": "וְזֶה בְּחִינַת (בראשית ד׳:ז׳): לַפֶּתַח חַטָּאת רֹבֵץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לַפֶּתַח",
+   "target_he": "פִּתְחֵי פִיךָ שֶׁל לְשׁוֹן הַקֹּדֶשׁ",
+   "proof": "הַיְנוּ פִּתְחֵי פִיךָ שֶׁל לְשׁוֹן הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פִּתְחֵי פִיךָ שֶׁל לְשׁוֹן הַקֹּדֶשׁ",
+   "target_he": "חַטָּאת",
+   "proof": "שֶׁהַחַטָּאת הַזֶּה רוֹבֵץ לִינֹק מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

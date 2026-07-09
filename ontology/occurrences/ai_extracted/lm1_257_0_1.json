@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 257,
+ "chunk": "257_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מאכל הנאכל יותר מצרכו",
+   "target_he": "האדם",
+   "proof": "וְעַל־יְדֵי־זֶה הוּא מַזִּיק לְהָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שאר המאכלים",
+   "target_he": "האדם",
+   "proof": "נִצְטָרְפִין עִמּוֹ אֲפִלּוּ שְׁאָר הַמַּאֲכָלִים וּמַזִּיקִים לוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְאָכַלְתָּ כְּנַפְשְׁךָ שָׂבְעֲךָ",
+   "target_he": "לֹא יוֹתֵר מִצָּרְכּוֹ",
+   "proof": "וְזֶה: וְאָכַלְתָּ כְּנַפְשְׁךָ שָׂבְעֲךָ – לֹא יוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְאֶל כֶּלְיְךָ לֹא תִתֵּן",
+   "target_he": "שֶׁלֹּא תֹּאכַל יוֹתֵר מִצָּרְכְּךָ",
+   "proof": "וְזֶה: וְאֶל כֶּלְיְךָ לֹא תִתֵּן, הַיְנוּ שֶׁלֹּא תֹּאכַל יוֹתֵר מִצָּרְכְּךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

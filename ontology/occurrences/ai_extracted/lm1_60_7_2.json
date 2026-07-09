@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_7_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שִׂיחָתוֹ וְסִפּוּרָיו בִּבְחִינַת הַלִּמּוּד",
+   "target_he": "שִׂיחָתָן שֶׁל תַּלְמִידֵי־חֲכָמִים צְרִיכִין לִמּוּד",
+   "proof": "וְזֶה בְּחִינַת (ע\"ז יט:): שִׂיחָתָן שֶׁל תַּלְמִידֵי־חֲכָמִים צְרִיכִין לִמּוּד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׂיחָתוֹ",
+   "target_he": "סִפּוּרֵי מַעֲשִׂיּוֹת",
+   "proof": "שֶׁהוּא בְּחִינַת סִפּוּרֵי מַעֲשִׂיּוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְעָלֵהוּ",
+   "target_he": "שִׂיחַת תַּלְמִיד־חָכָם",
+   "proof": "וְעָלֵהוּ, זֶה בְּחִינַת שִׂיחַת תַּלְמִיד־חָכָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לִתְרוּפָה",
+   "target_he": "לְהַתִּיר פֶּה",
+   "proof": "וְזֶהוּ: לִתְרוּפָה – לְהַתִּיר פֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְהַתִּיר פֶּה",
+   "target_he": "מִן הַמֻּתָּר לְפִיךָ",
+   "proof": "הַיְנוּ בְּחִינַת מִן הַמֻּתָּר לְפִיךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂיחַת תַּלְמִידֵי־חֲכָמִים צְרִיכִין לִמּוּד",
+   "target_he": "נִשְׁמָר מִן תַּלְמִידִים שֶׁאֵינָם הֲגוּנִים",
+   "proof": "כִּי כְּשֶׁשִּׂיחָתוֹ הִיא בִּבְחִינַת שִׂיחַת תַּלְמִידֵי־חֲכָמִים צְרִיכִין לִמּוּד, הַיְנוּ לִלְמֹד וּלְלַמֵּד לִשְׁמֹר וְלַעֲשׂוֹת כַּנַּ\"ל, אֲזַי נִשְׁמָר מִן תַּלְמִידִים שֶׁאֵינָם הֲגוּנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִשְׁמָר מִן תַּלְמִידִים שֶׁאֵינָם הֲגוּנִים",
+   "target_he": "מִן הַמֻּתָּר לְפִיךָ",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת מִן הַמֻּתָּר לְפִיךָ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

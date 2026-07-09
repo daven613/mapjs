@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 93,
+ "chunk": "93_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+   "target_he": "מַדְרֵגָה שֶׁלְּמַעְלָה מֵהַזְּמַן",
+   "proof": "גַּם בְּמַשָּׂא וּמַתָּן בֶּאֱמוּנָה, בָּא לְמַדְרֵגָה שֶׁלְּמַעְלָה מֵהַזְּמַן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִשְׂרָאֵל",
+   "target_he": "מַחֲשָׁבָה",
+   "proof": "וְיִשְׂרָאֵל הוּא בְּמַחֲשָׁבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַחֲשָׁבָה",
+   "target_he": "לְמַעְלָה מֵהַזְּמַן",
+   "proof": "וּמַחֲשָׁבָה הוּא לְמַעְלָה מֵהַזְּמַן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

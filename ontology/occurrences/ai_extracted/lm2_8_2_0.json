@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "קוֹל",
+   "proof": "לָבוֹא לָזֶה, לִבְחִינַת קוֹל הַנַּ\"ל, הוּא עַל־יְדֵי תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עִקָּר הַתְּפִלָּה",
+   "target_he": "רַחֲמִים וְתַחֲנוּנִים",
+   "proof": "כִּי עִקָּר הַתְּפִלָּה הִיא רַחֲמִים וְתַחֲנוּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "רַחֲמִים",
+   "proof": "וְעִקָּר הָרַחֲמִים תָּלוּי בְּדַעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "הֶזֵּק וְאַכְזָרִיּוּת",
+   "proof": "כִּי לֶעָתִיד יִגְדַּל הַדַּעַת, וְאָז לֹא יִהְיֶה שׁוּם הֶזֵּק וְאַכְזָרִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "רַחֲמָנוּת",
+   "proof": "כִּי יִתְפַּשֵּׁט הָרַחֲמָנוּת עַל־יְדֵי הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

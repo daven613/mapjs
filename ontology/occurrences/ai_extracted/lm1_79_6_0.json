@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 79,
+ "chunk": "79_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הִרְהוּרֵי תְּשׁוּבָה שֶׁחוֹזֵר לִמְקוֹמוֹ הָרִאשׁוֹן",
+   "target_he": "הַחַיּוֹת רָצוֹא וָשׁוֹב",
+   "proof": "וְזֶהוּ בְּחִינוֹת (יחזקאל א׳:י״ד): הַחַיּוֹת רָצוֹא וָשׁוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הִרְהוּרֵי תְּשׁוּבָה שֶׁחוֹזֵר לִמְקוֹמוֹ הָרִאשׁוֹן",
+   "target_he": "שֵׁשֶׁת יְמֵי חוֹל",
+   "proof": "וְזֶהוּ בְּחִינוֹת שֵׁשֶׁת יְמֵי חוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּשׁוּבָה שְׁלֵמָה",
+   "target_he": "שַׁבָּת",
+   "proof": "אֲבָל תְּשׁוּבָה שְׁלֵמָה הוּא בְּחִינוֹת שַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שַׁבָּת",
+   "target_he": "מְנוּחָה",
+   "proof": "כִּי בָּא שַׁבָּת – בָּא מְנוּחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שַׁבָּת",
+   "target_he": "דְּחִיַּת הָרַע",
+   "proof": "וְנִדְחֶה הָרַע לְגַמְרֵי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

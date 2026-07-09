@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 35,
+ "chunk": "35_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "וְדוֹבֵר אֱמֶת בִּלְבָבוֹ",
+   "target_he": "חַשְׁמַ\"ל (מַלְבּוּשׁ) סְבִיב הָאֱמוּנָה",
+   "proof": "זוֹ הַבְּחִינָה נַעֲשֶׂה חַשְׁמַ\"ל, הַיְנוּ מַלְבּוּשׁ, סְבִיב הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חַשְׁמַ\"ל",
+   "target_he": "מַלְבּוּשׁ",
+   "proof": "נַעֲשֶׂה חַשְׁמַ\"ל, הַיְנוּ מַלְבּוּשׁ, סְבִיב הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אִמָּא",
+   "target_he": "בִּינָה",
+   "proof": "וְהִיא: אִם לַבִּינָה תִקְרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בִּינָה",
+   "target_he": "לֵב",
+   "proof": "וּבִינָה – לִבָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לֵב",
+   "target_he": "חַשְׁמַ\"ל (מַלְבּוּשׁ) סְבִיב הָאֱמוּנָה",
+   "proof": "שֶׁהַלֵּב עוֹשֶׂה חַשְׁמַ\"ל, הַיְנוּ מַלְבּוּשׁ, סְבִיב הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

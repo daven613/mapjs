@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 76,
+ "chunk": "76_19_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מוח",
+   "target_he": "זרע אברהם אוהבי",
+   "proof": "כִּי הַמֹּחַ נִקְרָא זֶרַע אַבְרָהָם אוֹהֲבִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זרע אברהם אוהבי",
+   "target_he": "מדת אהבה",
+   "proof": "שֶׁהִיא מִדַּת אַהֲבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מדת אהבה",
+   "target_he": "שכל צח",
+   "proof": "שֶׁמִּמִּדָּה זֹאת בָּא לְשֵׂכֶל צַח כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

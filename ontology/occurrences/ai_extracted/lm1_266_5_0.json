@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 266,
+ "chunk": "266_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חָכְמָה",
+   "target_he": "מַזִּיק לוֹ",
+   "proof": "אֲבָל כְּשֶׁבּוֹנֶה בְּלֹא שֵׂכֶל, אֲזַי מַזִּיק לוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּגַם הַחָכְמָה",
+   "target_he": "מִתְמַסְכֵּן",
+   "proof": "כִּי זֶה עָנְשׁוֹ עַל שֶׁפָּגַם בַּחָכְמָה... וְעַל כֵּן עָנְשׁוֹ שֶׁמִּתְמַסְכֵּן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִתְמַסְכֵּן",
+   "target_he": "פְּגַם הַחָכְמָה",
+   "proof": "שֶׁזֶּה בְּחִינוֹת פְּגַם הַחָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פְּגַם הַחָכְמָה",
+   "target_he": "חָכְמַת הַמִּסְכֵּן בְּזוּיָה",
+   "proof": "בְּחִינוֹת: חָכְמַת הַמִּסְכֵּן בְּזוּיָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

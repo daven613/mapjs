@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אשת כסילות",
+   "target_he": "כללות הרע של שבעים לשון",
+   "proof": "שֶׁהוּא כְּלָלוּת הָרָע שֶׁל שִׁבְעִים לָשׁוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עץ הדעת טוב ורע",
+   "target_he": "לשון הקודש",
+   "proof": "אֶלָּא עַל־יְדֵי בְּחִינַת עֵץ הַדַּעַת טוֹב וָרָע, שֶׁעַל־יָדוֹ הוּא מְפַתֶּה אֶת הַלְּשׁוֹן הַקֹּדֶשׁ וּמֵטִיל בָּהּ זֻהֲמָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לשון הקודש",
+   "target_he": "אשה חכמה",
+   "proof": "שֶׁהוּא אִשָּׁה חֲכָמָה, שֶׁכֻּלּוֹ טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עץ הדעת",
+   "target_he": "אמצעי בין לשון הקודש ובין לשון של שבעין עממין",
+   "proof": "הוּא אֶמְצָעִי בֵּין לְשׁוֹן הַקֹּדֶשׁ... וּבֵין לָשׁוֹן שֶׁל שִׁבְעִין עֲמָמִין, שֶׁכֻּלּוֹ רַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עץ הדעת טוב ורע",
+   "target_he": "לשון תרגום",
+   "proof": "וְעֵץ הַדַּעַת טוֹב וָרָע, זֶה לְשׁוֹן תַּרְגּוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לשון תרגום",
+   "target_he": "יניקת לשון עממין מלשון הקודש",
+   "proof": "וּלְשׁוֹן עֲמָמִין, כְּשֶׁרוֹצִים לִינֹק מִלְּשׁוֹן הַקֹּדֶשׁ, אִי אֶפְשָׁר לָהֶם לִינֹק מִמֶּנּוּ אֶלָּא עַל־יְדֵי לְשׁוֹן תַּרְגּוּם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

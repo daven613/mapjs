@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 16,
+ "chunk": "16_0_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַמֶּלֶךְ",
+   "target_he": "הַמָּזוֹן",
+   "proof": "וּכְשֶׁנִּמְשָׁךְ הַמָּזוֹן עַל־יְדֵי הַמֶּלֶךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָאֲכִילָה",
+   "target_he": "אִמְרֵי שֶׁפֶר",
+   "proof": "וְגַם בְּהָאֲכִילָה יֵשׁ בֵּרוּרִים, עַד שֶׁמִּתְבָּרֵר וְנַעֲשִׂין מֵהֶם אִמְרֵי שֶׁפֶר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אִמְרֵי שֶׁפֶר",
+   "target_he": "בְּרָכוֹת שֶׁמְּבָרְכִין עֲלֵיהֶם תְּחִלָּה וָסוֹף",
+   "proof": "דְּהַיְנוּ בְּרָכוֹת שֶׁמְּבָרְכִין עֲלֵיהֶם תְּחִלָּה וָסוֹף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֹּחוֹת הָאֲכִילָה",
+   "target_he": "תְּפִלָּה וַעֲבוֹדַת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "וּמִתְפַּלְּלִין וְעוֹבְדִין הַשֵּׁם יִתְבָּרַךְ בְּכֹחוֹת הָאֲכִילָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כֹּחוֹת הָאֲכִילָה",
+   "target_he": "מֵאָשֵׁר שְׁמֵנָה לַחְמוֹ וְהוּא יִתֵּן מַעֲדַנֵּי מֶלֶךְ, נַפְתָּלִי אַיָּלָה שְׁלוּחָה הַנּוֹתֵן אִמְרֵי שָׁפֶר",
+   "proof": "וְזֶה בְּחִינַת (בראשית מ״ט:כ׳-כ״א): מֵאָשֵׁר שְׁמֵנָה לַחְמוֹ וְהוּא יִתֵּן מַעֲדַנֵּי מֶלֶךְ, נַפְתָּלִי אַיָּלָה שְׁלוּחָה הַנּוֹתֵן אִמְרֵי שָׁפֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁמֵנָה לַחְמוֹ",
+   "target_he": "הַפַּרְנָסָה",
+   "proof": "שְׁמֵנָה לַחְמוֹ וְכוּ', דְּהַיְנוּ הַפַּרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַפַּרְנָסָה",
+   "target_he": "מַעֲדַנֵּי מֶלֶךְ",
+   "proof": "שֶׁהִיא בְּחִינַת מַעֲדַנֵּי מֶלֶךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמֶּלֶךְ",
+   "target_he": "הַפַּרְנָסָה",
+   "proof": "כִּי מְקַבְּלִין אוֹתָהּ עַל־יְדֵי הַמֶּלֶךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַנּוֹתֵן אִמְרֵי שָׁפֶר",
+   "target_he": "בְּרָכוֹת וּתְפִלּוֹת וְכַיּוֹצֵא",
+   "proof": "דְּהַיְנוּ אִמְרֵי שָׁפֶר שֶׁל בְּרָכוֹת וּתְפִלּוֹת וְכַיּוֹצֵא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַעֲדַנֵּי מֶלֶךְ",
+   "target_he": "אִמְרֵי שָׁפֶר שֶׁל בְּרָכוֹת וּתְפִלּוֹת",
+   "proof": "שֶׁנַּעֲשִׂין מִן הַבֵּרוּרִים שֶׁל מַעֲדַנֵּי מֶלֶךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

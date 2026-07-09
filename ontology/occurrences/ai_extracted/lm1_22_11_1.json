@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_11_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מכשלה",
+   "target_he": "דברי תורה",
+   "proof": "אֵלּוּ דִּבְרֵי־תּוֹרָה, שֶׁאֵין אָדָם עוֹמֵד עֲלֵיהֶם אֶלָּא אִם כֵּן נִכְשַׁל בָּהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דברי תורה",
+   "target_he": "דבורים שסביבות המצוה",
+   "proof": "דִּבְרֵי־תּוֹרָה הֵם בְּחִינוֹת הַדִּבּוּרִים שֶׁסְּבִיבוֹת הַמִּצְוָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דבורים שסביבות המצוה",
+   "target_he": "וידבר ה' אל משה",
+   "proof": "שֶׁהֵם וַיְדַבֵּר ה' אֶל משֶׁה וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דבורים שסביבות המצוה",
+   "target_he": "נסתר",
+   "proof": "שֶׁהֵם בְּחִינוֹת נִסְתָּר, בְּחִינוֹת נִשְׁמַע, בְּחִינוֹת תְּפִלָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דבורים שסביבות המצוה",
+   "target_he": "נשמע",
+   "proof": "שֶׁהֵם בְּחִינוֹת נִסְתָּר, בְּחִינוֹת נִשְׁמַע, בְּחִינוֹת תְּפִלָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דבורים שסביבות המצוה",
+   "target_he": "תפלה",
+   "proof": "שֶׁהֵם בְּחִינוֹת נִסְתָּר, בְּחִינוֹת נִשְׁמַע, בְּחִינוֹת תְּפִלָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עומד עליהם",
+   "target_he": "תפלה",
+   "proof": "עוֹמֵד עֲלֵיהֶם – זֶה בְּחִינוֹת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עמידה",
+   "target_he": "תפלה",
+   "proof": "כִּי אֵין עֲמִידָה אֶלָּא תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשמע",
+   "target_he": "נעשה",
+   "proof": "וְלַעֲשׂוֹת מֵהַדִּבְרֵי־תּוֹרָה, שֶׁהוּא בְּחִינוֹת נִשְׁמַע, יִהְיֶה נַעֲשֶׂה מִמֶּנּוּ בְּחִינוֹת נַעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נעשה",
+   "target_he": "נשמע גבוה יותר",
+   "proof": "כִּי כְּשֶׁיִּהְיֶה מֵהַנִּשְׁמַע נַעֲשֶׂה יִהְיֶה לוֹ נִשְׁמַע גָּבוֹהַּ מִמֶּנּוּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נכשל",
+   "target_he": "עליה מדרגא לדרגא",
+   "proof": "וְזֶה אִי אֶפְשָׁר אֶלָּא אִם כֵּן נִכְשַׁל בָּהֶם, כִּי לַעֲלוֹת מִדַּרְגָּא לְדַרְגָּא צָרִיךְ יְרִידָה תְּחִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ירידה",
+   "target_he": "מכשול",
+   "proof": "שֶׁהִיא הַמִּכְשׁוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 15,
+ "chunk": "15_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יראה",
+   "target_he": "דעת",
+   "proof": "וְשֹׁרֶשׁ הַיִּרְאָה הוּא דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מנצפ\"ך",
+   "target_he": "דעת דזעיר אנפין",
+   "proof": "שֶׁמַּנְצְפַּ\"ךְ הוּא בְּדַעַת דִּזְעֵיר־אַנְפִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דעת",
+   "target_he": "לב",
+   "proof": "וְעִקַּר הַדַּעַת הוּא בַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יראה",
+   "target_he": "לב",
+   "proof": "גַּם שָׁם עִקַּר הַיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ויראת מאלקיך",
+   "target_he": "שיידע ממי יתיירא",
+   "proof": "הַיְנוּ שֶׁיֵּדַע מִמִּי יִתְיָרֵא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שיידע ממי יתיירא",
+   "target_he": "יראת השם הנכבד",
+   "proof": "הַיְנוּ לְיִרְאָה אֶת הַשֵּׁם הַנִּכְבָּד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יראת השם הנכבד",
+   "target_he": "יראת הרוממות",
+   "proof": "יִרְאַת הָרוֹמְמוּת",
+   "explicitness": "inferred",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

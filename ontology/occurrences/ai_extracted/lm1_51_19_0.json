@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 51,
+ "chunk": "51_19_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַשְׁאָרַת הַהַשְׁגָּחָה",
+   "target_he": "אֲחוֹרֵי כַּתְפֵּהּ",
+   "proof": "וְהָרָע יוֹנֵק מֵהַשְׁאָרַת הַהַשְׁגָּחָה, הַיְנוּ מֵאֲחוֹרֵי כַּתְפֵּהּ, כַּיָּדוּעַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשְׁאָרַת הַהַשְׁגָּחָה",
+   "target_he": "הָרָע",
+   "proof": "וְהָרָע יוֹנֵק מֵהַשְׁאָרַת הַהַשְׁגָּחָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "וְעַל־יְדֵי אֱמֶת הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ עָלָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַשֶּׁקֶר",
+   "target_he": "הָרַע",
+   "proof": "וְעַל־יְדֵי הַשֶּׁקֶר, שֶׁהוּא הָרַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשֶּׁקֶר",
+   "target_he": "הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "וְעַל־יְדֵי הַשֶּׁקֶר, שֶׁהוּא הָרַע, מֵסִיר מִמֶּנּוּ הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲחוֹרֵי כַּתְפָּא",
+   "target_he": "חִיּוּתוֹ",
+   "proof": "וְאֵין חִיּוּתוֹ אֶלָּא מֵאֲחוֹרֵי כַּתְפָּא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

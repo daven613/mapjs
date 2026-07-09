@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_6_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אֹתֹתַי אֵלֶּה בְּקִרְבּוֹ",
+   "target_he": "הִכְבַּדְתִּי אֶת לִבּוֹ",
+   "proof": "הַיְנוּ שֶׁמַּה שֶּׁהִכְבַּדְתִּי אֶת לִבּוֹ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אִי אֶפְשָׁר לִמְצֹא שָׁם אֶת הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "לְמַעַן שִׁיתִי אֹתֹתַי אֵלֶּה בְּקִרְבּוֹ",
+   "proof": "זֶה הָיָה לְמַעַן שִׁיתִי וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָאוֹתִיּוֹת שֶׁל הַבְּרִיאָה בְּקִרְבּוֹ",
+   "target_he": "הַבְּרִיאָה תּוּכַל לְהִתְהַוּוֹת שָׁם",
+   "proof": "הַיְנוּ כְּדֵי שֶׁתּוּכַל הַבְּרִיאָה לְהִתְהַוּוֹת שָׁם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צִמְצוּם אֱלֹקוּתוֹ מִשָּׁם",
+   "target_he": "מָקוֹם לַבְּרִיאָה",
+   "proof": "כִּי אִם לֹא הָיָה מְצַמְצֵם אֱלֹקוּתוֹ מִשָּׁם, לֹא הָיָה מָקוֹם לַבְּרִיאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

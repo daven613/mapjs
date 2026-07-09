@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 79,
+ "chunk": "79_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שבת",
+   "target_he": "שין בת",
+   "proof": "כִּי שַׁבָּת הוּא שִׁין בַּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שי\"ן",
+   "target_he": "תלת גוונין דעינא",
+   "proof": "שִׁי\"ן – תְּלַת גְּוָנִין דְּעֵינָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בת",
+   "target_he": "בת עין",
+   "proof": "בַּ\"ת – בַּת עַיִן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שבת",
+   "target_he": "ראיית שפלותו",
+   "proof": "וְעַל כֵּן בְּשַׁבָּת יָכוֹל לִרְאוֹת שִׁפְלוּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

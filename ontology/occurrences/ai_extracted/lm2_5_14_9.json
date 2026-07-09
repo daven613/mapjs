@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_14_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַמַּאֲכָלִים",
+   "target_he": "עִשְׂבָּא",
+   "proof": "הַיְנוּ שֶׁהַמַּאֲכָלִים הַנַּ\"ל שֶׁהֵם בְּחִינַת עִשְׂבָּא כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמַּאֲכָלִים",
+   "target_he": "סַמַתְּרֵי",
+   "proof": "וַאֲזַי הֵם בְּחִינַת סַמַתְּרֵי, סַם תְּרֵי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "סַם חַיִּים",
+   "target_he": "כֹּחַ הַמַּלְאָךְ",
+   "proof": "סַם חַיִּים וְסַם מָוֶת, דְּהַיְנוּ כֹּחַ הַמַּלְאָךְ וְכֹחַ הַשֵּׁד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "סַם מָוֶת",
+   "target_he": "כֹּחַ הַשֵּׁד",
+   "proof": "סַם חַיִּים וְסַם מָוֶת, דְּהַיְנוּ כֹּחַ הַמַּלְאָךְ וְכֹחַ הַשֵּׁד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַמַּאֲכָלִים",
+   "target_he": "כֹּחַ הַשֵּׁד",
+   "proof": "כִּי קֹדֶם תִּקּוּן הַמַּאֲכָלִים, אֲזַי נִתְעָרֵב בָּהֵן כֹּחַ הַשֵּׁד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

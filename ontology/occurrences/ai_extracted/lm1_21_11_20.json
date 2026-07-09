@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 21,
+ "chunk": "21_11_20",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אלול",
+   "target_he": "שבעת ימי אבלות",
+   "proof": "וְזֶה בְּחִינַת שִׁבְעַת יְמֵי אֲבֵלוּת רַחֲמָנָא לִצְלָן וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שבעת ימי אבלות",
+   "target_he": "עליית נשמתו לאור הפנים",
+   "proof": "כְּדֵי שֶׁיַּעֲלֶה נִשְׁמָתוֹ לְאוֹר הַפָּנִים הַנַּ\"ל וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קר\"ע",
+   "target_he": "ש\"ע נהורין של אור הפנים",
+   "proof": "כִּי קר\"ע בְּגִימַטְרִיָּא ש\"ע נְהוֹרִין שֶׁל אוֹר הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ש\"ע נהורין",
+   "target_he": "ב' פעמים אל במילואו",
+   "proof": "שֶׁהֵם הַגִּימַטְרִיָּא שֶׁל ב' פְּעָמִים אֵל בְּמִלּוּאוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אל",
+   "target_he": "אור הפנים",
+   "proof": "כִּי אֵל הוּא אוֹר הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

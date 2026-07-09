@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 7,
+ "chunk": "7_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חֶסְרוֹן אֱמוּנָה",
+   "target_he": "גָּלוּת",
+   "proof": "עִקַּר הַגָּלוּת אֵינוֹ אֶלָּא בִּשְׁבִיל חֶסְרוֹן אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמוּנָה",
+   "target_he": "תְּפִלָּה",
+   "proof": "וֶאֱמוּנָה הוּא בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלָּה",
+   "target_he": "נִסִּים לְמַעְלָה מֵהַטֶּבַע",
+   "proof": "וְזֶה בְּחִינַת נִסִּים לְמַעְלָה מֵהַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "שִׁנּוּי הַטֶּבַע",
+   "proof": "וְהַתְּפִלָּה מְשַׁנָּה הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

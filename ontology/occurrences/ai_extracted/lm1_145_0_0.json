@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 145,
+ "chunk": "145_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חצי תאותו",
+   "target_he": "מחלוקת",
+   "proof": "זֶה בְּחִינַת מַחֲלֹקֶת, כְּתַרְגּוּמוֹ... וָרֹבּוּ בַּעֲלֵי חִצִּים – בַּעֲלֵי פְּלֻגְתָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲחִיזַת הַתַּאֲוָה מִמַּחֲלֹקֶת",
+   "target_he": "כְּאִלּוּ לֹא מֵת",
+   "proof": "וּמִי שֶׁאוֹחֵז תַּאֲוָתוֹ מִמַּחֲלֹקֶת, בְּוַדַּאי כְּאִלּוּ לֹא מֵת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲמִירַת דְּבַר הֲלָכָה מִשְּׁמוֹ",
+   "target_he": "כְּאִלּוּ לֹא מֵת",
+   "proof": "אֶלָּא שֶׁיִּהְיוּ אוֹמְרִים דְּבַר הֲלָכָה מִשְׁמוֹ וְאָז כְּאִלּוּ לֹא מֵת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "אֲמִירַת הֲלָכָה מִשְּׁמָם",
+   "proof": "אֲבָל עַל־יְדֵי מַחֲלֹקֶת, מָצִינוּ שֶׁלֹּא אָמְרוּ הֲלָכָה מִשְּׁמָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 67,
+ "chunk": "67_0_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בית־המקדש",
+   "target_he": "עינים",
+   "proof": "הַמְּאִירִין לְבֵית־הַמִּקְדָּשׁ שֶׁהוּא בְּחִינַת עֵינַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עינים",
+   "target_he": "מוחין",
+   "proof": "וְזֶה בְּחִינַת מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שם ה' (ארבע אותיות)",
+   "target_he": "ארבעה מוחין",
+   "proof": "כִּי מִתְּחִלָּה נַעֲשֶׂה מִבְּחִינַת שֵׁם ה', שֶׁהוּא אַרְבַּע אוֹתִיּוֹת, בְּחִינַת אַרְבָּעָה מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חכמה, תבונה, ודעת, וכל מלאכה",
+   "target_he": "ארבעה מוחין",
+   "proof": "חָכְמָה, תְּבוּנָה, וְדַעַת, וְכָל מְלָאכָה – זֶה בְּחִינַת אַרְבָּעָה מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שם ה'",
+   "target_he": "חכמה, תבונה, ודעת, וכל מלאכה",
+   "proof": "שֶׁהֵם נַעֲשִׂין מִבְּחִינַת שֵׁם ה'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ארבעה מוחין",
+   "target_he": "תלת גוונין דעינא ובת עין",
+   "proof": "וְאַחַר־כָּךְ נַעֲשֶׂה בְּחִינַת תְּלָת גְּוָנִין דְּעֵינָא וּבַת עַיִן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תלת גוונין דעינא ובת עין",
+   "target_he": "ארבעה יסודות",
+   "proof": "וְאַחַר־כָּךְ אַרְבָּעָה יְסוֹדוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

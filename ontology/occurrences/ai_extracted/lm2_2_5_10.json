@@ -1,0 +1,145 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_5_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "לב",
+   "target_he": "ריאה",
+   "proof": "וּבְשָׁעָה שֶׁהַלֵּב בְּצָרָה גַּם הָרֵאָה בְּצָרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ריאה",
+   "target_he": "קיום הגוף",
+   "proof": "כִּי הָרֵאָה הִיא קִיּוּם הַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ריאה",
+   "target_he": "לחה לבנה",
+   "proof": "כִּי הָרֵאָה מְקַיֶּמֶת הַלֵּחָה לְבָנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ריאה",
+   "target_he": "לחלוחית לגוף",
+   "proof": "וּמַמְשֶׁכֶת הַלַּחְלוּחִית לְהַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תנועות",
+   "target_he": "גוף (יובש)",
+   "proof": "כִּי הַגּוּף יֵשׁ לוֹ תְּנוּעוֹת שֶׁהֵם מְיַבְּשִׁין הַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ריאה",
+   "target_he": "קיום (לחלוחית)",
+   "proof": "וְעַל כֵּן עִקָּר הַקִּיּוּם – עַל־יְדֵי הָרֵאָה, שֶׁמַּמְשֶׁכֶת לַחְלוּחִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לב בצרה",
+   "target_he": "דמים עולין ושוטפין על הלב",
+   "proof": "וּכְשֶׁהַלֵּב בְּצָרָה, שֶׁאָז הַדָּמִים עוֹלִין וְשׁוֹטְפִין עַל הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דמים עולין ושוטפין על הלב",
+   "target_he": "לב דופק בדפיקות גדולות",
+   "proof": "וַאֲזַי הַלֵּב דּוֹפֵק בִּדְפִיקוֹת גְדוֹלוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לב דופק בדפיקות גדולות",
+   "target_he": "ריאה מנשבת נשיבות גדולות",
+   "proof": "אֲזַי הָרֵאָה מְנַשֶּׁבֶת נְשִׁיבוֹת גְּדוֹלוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ריאה מנשבת נשיבות גדולות",
+   "target_he": "ריאה מתייבשת",
+   "proof": "וַאֲזַי נִתְיַבֵּשׁ הָרֵאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ריאה מתייבשת",
+   "target_he": "גוף מתייבש",
+   "proof": "וְעַל־יְדֵי־זֶה נִתְיַבֵּשׁ הַגּוּף, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמן",
+   "target_he": "ריאה (רפואה)",
+   "proof": "וְשֶׁמֶן הוּא רְפוּאָה לְהָרֵאָה, כְּמוֹ שֶׁאוֹמְרִין הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמן",
+   "target_he": "לחלוחית",
+   "proof": "כִּי הַשֶּׁמֶן מְלַחְלֵחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שמן (המלחלח)",
+   "target_he": "שמן הנ\"ל",
+   "proof": "הַיְנוּ בְּחִינַת הַשֶּׁמֶן הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שמן",
+   "target_he": "תיקון הצרה",
+   "proof": "שֶׁהוּא בְּחִינַת תִּקּוּן הַצָּרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

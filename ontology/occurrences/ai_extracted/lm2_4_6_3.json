@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_6_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שָׁלֹשׁ פְּעָמִים בַּשָּׁנָה (הַיָּמִים טוֹבִים)",
+   "target_he": "הָרָצוֹן",
+   "proof": "הַיְנוּ עַל־יְדֵי שָׁלֹשׁ פְּעָמִים בַּשָּׁנָה... שֶׁהֵם הַיָּמִים טוֹבִים, שֶׁעַל יָדָם נִתְגַּלֶּה הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יֵשׁ אֱלֹקִים שֹׁפְטִים בָּאָרֶץ",
+   "target_he": "יֵשׁ אֱלֹקִים שׁוֹפֵט בִּרְצוֹנוֹ",
+   "proof": "דְּהַיְנוּ, שֶׁנִּתְגַּלֶּה שֶׁיֵּשׁ אֱלֹקִים שׁוֹפֵט בִּרְצוֹנוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִשְׂמַח צַדִּיק כִּי חָזָה נָקָם",
+   "target_he": "שִׂמְחַת יוֹם טוֹב",
+   "proof": "וְזֶה בְּחִינַת שִׂמְחַת יוֹם טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת הָרָצוֹן",
+   "target_he": "שִׂמְחַת יוֹם טוֹב",
+   "proof": "עַל־יְדֵי הִתְגַּלּוּת הָרָצוֹן, שֶׁנִּתְגַּלֶּה בְּיוֹם טוֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קוֹל הַקְּרִיאָה",
+   "target_he": "הָרָצוֹן",
+   "proof": "עַל־יְדֵי קוֹל הַקְּרִיאָה, שֶׁהַיּוֹם טוֹב מַכְרִיז וְקוֹרֵא אֶת הָרָצוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

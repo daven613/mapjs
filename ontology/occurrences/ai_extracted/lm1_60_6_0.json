@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מְעוֹרְרִין אֶת בְּנֵי אָדָם מִשְּׁנָתָם",
+   "target_he": "פְּקִידוּת עֲקָרוֹת",
+   "proof": "וּפְקִידוּת עֲקָרוֹת נַעֲשֶׂה עַל־יְדֵי שֶׁמְּעוֹרְרִין אֶת בְּנֵי אָדָם מִשְּׁנָתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְשֵׁנִים אֶת יְמֵיהֶם",
+   "target_he": "עֲבוֹדָתָם",
+   "proof": "כִּי יֵשׁ בְּנֵי אָדָם שֶׁיְּשֵׁנִים אֶת יְמֵיהֶם... אַף עַל פִּי כֵן כָּל עֲבוֹדָתָם אֵין לְהַשֵּׁם יִתְבָּרַךְ נַחַת מֵהֶם, כִּי נִשְׁאָר כָּל עֲבוֹדָתָם לְמַטָּה, וְאֵין יָכוֹל לְהִתְרוֹמֵם וּלְהִתְעַלּוֹת לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חִיּוּת",
+   "target_he": "שֵׂכֶל",
+   "proof": "כִּי עִקַּר הַחִיּוּת הוּא הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲבוֹדָה עִם שֵׂכֶל",
+   "target_he": "חִיּוּת שֶׁתּוּכַל לְהִתְעַלּוֹת",
+   "proof": "וּכְשֶׁהָעֲבוֹדָה הִיא עִם שֵׂכֶל, מְשִׂימִין בָּהּ חִיּוּת שֶׁתּוּכַל לְהִתְעַלּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֹחִין דְּקַטְנוּת",
+   "target_he": "הִתְעַלּוֹת לְמַעְלָה",
+   "proof": "אֲבָל כְּשֶׁנּוֹפֵל לִבְחִינַת מֹחִין דְּקַטְנוּת, בְּחִינַת שֵׁנָה, אֵין יָכוֹל לְהִתְעַלּוֹת לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֹחִין דְּקַטְנוּת",
+   "target_he": "שֵׁנָה",
+   "proof": "כְּשֶׁנּוֹפֵל לִבְחִינַת מֹחִין דְּקַטְנוּת, בְּחִינַת שֵׁנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

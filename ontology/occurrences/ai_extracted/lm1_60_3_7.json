@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_3_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַנְּשִׁימָה",
+   "target_he": "קִיּוּם שַׁמְנוּנִית וְלֵחוֹת שֶׁבַּגּוּף",
+   "proof": "עִקַּר קִיּוּם שַׁמְנוּנִית וְלֵחוֹת שֶׁבַּגּוּף הוּא עַל־יְדֵי הַנְּשִׁימָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַנְּשִׁימָה",
+   "target_he": "קִיּוּם הַשֵּׂכֶל",
+   "proof": "וְעַל־יְדֵי־זֶה קִיּוּם הַשֵּׂכֶל שֶׁיּוּכַל לִדְלֹק בְּהִתְבּוֹנְנוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִיּוּם הַשֵּׂכֶל עַל יְדֵי הַנְּשִׁימָה",
+   "target_he": "נֵר ה' נִשְׁמַת אָדָם",
+   "proof": "וְזֶה בְּחִינַת (משלי כ׳:כ״ז): נֵר ה' נִשְׁמַת אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נֵר ה'",
+   "target_he": "הַשֵּׂכֶל",
+   "proof": "שֶׁעִקַּר קִיּוּם וְתִקּוּן נֵר ה', שֶׁהוּא הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַנְּשִׁימָה",
+   "target_he": "קִיּוּם וְתִקּוּן נֵר ה'",
+   "proof": "שֶׁעִקַּר קִיּוּם וְתִקּוּן נֵר ה', שֶׁהוּא הַשֵּׂכֶל, הוּא עַל יְדֵי הַנְּשִׁימָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִרְאָה",
+   "target_he": "אֲרִיכוּת יָמִים",
+   "proof": "נִמְצָא, שֶׁעַל־יְדֵי יִרְאָה זוֹכִין לַאֲרִיכוּת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲרִיכוּת יָמִים",
+   "target_he": "עֲשִׁירוּת",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִמְשָׁךְ הָעֲשִׁירוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲשִׁירוּת",
+   "target_he": "הִתְבּוֹנְנוּת",
+   "proof": "שֶׁעַל יָדוֹ בָּאִים לְהִתְבּוֹנְנוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

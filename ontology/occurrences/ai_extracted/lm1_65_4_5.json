@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 65,
+ "chunk": "65_4_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עֵינָיו מְאִירוֹת",
+   "target_he": "שְׂדֵה צוֹפִים",
+   "proof": "כְּשֶׁעֵינָיו מְאִירוֹת, בִּבְחִינוֹת שְׂדֵה צוֹפִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַתַּכְלִית",
+   "target_he": "אֶחָד",
+   "proof": "וּמְבִיאוֹ אֶל הַתַּכְלִית, שֶׁהוּא כֻּלּוֹ אֶחָד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רָחוֹק מֵהַתַּכְלִית",
+   "target_he": "שְׁלֵמוּת הַתְּפִלָּה",
+   "proof": "וּכְשֶׁרוֹאֶה בְּאֶחָד שֶׁרָחוֹק מֵהַתַּכְלִית, אֲזַי אֵין תְּפִלָּתוֹ עֲדַיִן בִּשְׁלֵמוּת כָּרָאוּי כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֲבָאָתוֹ אֶל הַתַּכְלִית",
+   "target_he": "עֲשִׂיַּת אֶחָד מִכָּל הַתְּפִלָּה",
+   "proof": "וּמְבִיאוֹ אֶל הַתַּכְלִית, שֶׁהוּא כֻּלּוֹ אֶחָד כַּנַּ\"ל. וַאֲזַי יָכוֹל לַעֲשׂוֹת אֶחָד מִכָּל הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

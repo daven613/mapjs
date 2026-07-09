@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 99,
+ "chunk": "99_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לְהִתְפַּלֵּל בִּדְבֵקוּת",
+   "target_he": "שְׁגוּרָה תְּפִלָּתִי בְּפִי",
+   "proof": "שֶׁהוּא בְּחִינַת: שְׁגוּרָה תְּפִלָּתִי בְּפִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִתְפַּלֵּל בִּדְבֵקוּת",
+   "target_he": "עֲלִיַּת כָּל הַתְּפִלּוֹת",
+   "proof": "מֵחֲמַת שֶׁמִּתְפַּלֵּל בִּדְבֵקוּת, אָז יַעֲלֶה כָּל הַתְּפִלּוֹת שֶׁהִתְפַּלֵּל עַד עַתָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

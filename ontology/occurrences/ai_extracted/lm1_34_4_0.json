@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 34,
+ "chunk": "34_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כָּל אֶחָד וְאֶחָד מִיִּשְׂרָאֵל",
+   "target_he": "צַדִּיק מוֹשֵׁל",
+   "proof": "יֵשׁ בּוֹ בְּחִינַת צַדִּיק מוֹשֵׁל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צַדִּיק מוֹשֵׁל",
+   "target_he": "מְלֹא פוּם",
+   "proof": "שֶׁהוּא בְּחִינַת מְלֹא פוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דָּבָר יָקָר",
+   "target_he": "נְקֻדָּה",
+   "proof": "דָּבָר יָקָר, שֶׁהוּא בְּחִינַת נְקֻדָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינָה הַזֹּאת שֶׁיֵּשׁ בּוֹ יוֹתֵר מֵחֲבֵרוֹ",
+   "target_he": "לֵב חֲבֵרוֹ",
+   "proof": "הוּא מַשְׁפִּיעַ וּמֵאִיר וּמְעוֹרֵר לֵב חֲבֵרוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

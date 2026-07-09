@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 192,
+ "chunk": "192_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רְאִיַּת הַצַּדִּיק בְּעֵת שֶׁשּׁוֹמֵעַ מִמֶּנּוּ דִּבּוּר",
+   "target_he": "וְהָיוּ עֵינֶיךָ רוֹאוֹת אֶת מוֹרֶיךָ",
+   "proof": "וּבִפְרָט כְּשֶׁרוֹאֶה אוֹתוֹ אָז, בִּבְחִינוֹת: וְהָיוּ עֵינֶיךָ רוֹאוֹת אֶת מוֹרֶיךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִיעַת דִּבּוּר מִפִּי הַצַּדִּיק הָאֱמֶת",
+   "target_he": "בְּחִינַת הַפָּנִים שֶׁל הַצַּדִּיק",
+   "proof": "הוּא מְקַבֵּל בְּחִינוֹת הַפָּנִים שֶׁל הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִיעַת דִּבּוּר מִפִּי הַצַּדִּיק הָאֱמֶת",
+   "target_he": "בְּחִינַת שִׂכְלוֹ וְנִשְׁמָתוֹ שֶׁל הַצַּדִּיק",
+   "proof": "וּבְחִינוֹת שִׂכְלוֹ וְנִשְׁמָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קַבָּלַת הַדִּבּוּר שֶׁמְּחַדֵּשׁ הַצַּדִּיק",
+   "target_he": "שִׂכְלוֹ שֶׁל הַצַּדִּיק",
+   "proof": "וְהוּא מְקַבֵּל זֶה הַדִּבּוּר, נִמְצָא שֶׁמְּקַבֵּל שִׂכְלוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

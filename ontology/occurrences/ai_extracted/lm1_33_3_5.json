@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 33,
+ "chunk": "33_3_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "כפיית היצר",
+   "target_he": "הימי רע",
+   "proof": "עַל־יְדֵי שֶׁכּוֹפֶה אֶת יִצְרוֹ, הַיְנוּ הַיְמֵי רַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הרע",
+   "target_he": "לשונות העכו\"ם",
+   "proof": "אֲזַי הָרָע, הַיְנוּ לְשׁוֹנוֹת הָעַכּוּ\"ם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לשונות העכו\"ם",
+   "target_he": "מדות רעות",
+   "proof": "הַיְנוּ מִלְּשׁוֹנוֹת הָעַכּוּ\"ם, הַיְנוּ מִמִּדּוֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מדות רעות",
+   "target_he": "ימי רע",
+   "proof": "הַיְנוּ מִמִּדּוֹת רָעוֹת, הַיְנוּ מִימֵי רַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כפיית היצר",
+   "target_he": "הרע",
+   "proof": "עַל־יְדֵי שֶׁכּוֹפֶה אֶת יִצְרוֹ... אֲזַי הָרָע... נִכְפָּפִין וְנִתְבַּטְּלִין כְּנֶגְדּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הפשטת אותיות התורה מהלבושים הגשמיים",
+   "target_he": "אור אותיות התורה",
+   "proof": "וּכְשֶׁנִּפְשָׁטִין מֵהַלְּבוּשִׁים הַגַּשְׁמִיִּים... אֲזַי מְקַבְּלִין אֵלּוּ אוֹתִיּוֹת הַתּוֹרָה אוֹר רַב יוֹתֵר מִמַּה שֶּׁהָיוּ מְקַבְּלִין מִתְּחִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

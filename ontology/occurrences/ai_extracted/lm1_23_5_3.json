@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תיקון של תאות ממון",
+   "target_he": "תיקון הברית",
+   "proof": "כִּי תִּקּוּן שֶׁל תַּאֲוַת מָמוֹן, הוּא תִּקּוּן הַבְּרִית מֶלַח כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שורש",
+   "target_he": "ממון וההשפעות",
+   "proof": "שֶׁמִּשָּׁם בָּא כָּל הַמָּמוֹן וְכָל הַהַשְׁפָּעוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הסתכלות בשורש",
+   "target_he": "ביטול תאות ממון",
+   "proof": "וְעַל־יְדֵי הִסְתַּכְּלוּתוֹ שָׁם, יִתְבַּטֵּל תַּאֲוָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

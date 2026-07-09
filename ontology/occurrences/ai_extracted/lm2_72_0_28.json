@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 72,
+ "chunk": "72_0_28",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שמיעת תורה מפי צדיק אמיתי",
+   "target_he": "בושה ושפלות",
+   "proof": "כִּי עַל־יְדֵי הַתּוֹרָה שֶׁמַּמְשִׁיךְ הַצַּדִּיק הָאֲמִתִּי, עַל־יְדֵי־זֶה נִמְשָׁךְ בּוּשָׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בושה",
+   "target_he": "תשובה",
+   "proof": "וְעַל־יְדֵי הַבּוּשָׁה, דְּהַיְנוּ תְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בושה",
+   "target_he": "שפלות של משה",
+   "proof": "וְעַל־יְדֵי הַבּוּשָׁה, דְּהַיְנוּ תְּשׁוּבָה, עַל־יְדֵי זֶה נִחְיֶה הַשִּׁפְלוּת שֶׁל מֹשֶׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמיעת תורה מפי מפורסם",
+   "target_he": "גדלות",
+   "proof": "וּבָא עָלָיו גַּדְלוּת עַל־יְדֵי זֶה וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

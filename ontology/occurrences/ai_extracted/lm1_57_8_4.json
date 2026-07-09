@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 57,
+ "chunk": "57_8_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "גּוֹרָל",
+   "target_he": "עֹנֶג שַׁבָּת",
+   "proof": "גּוֹרָל זֶה בְּחִינַת עֹנֶג שַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גּוֹרָל",
+   "target_he": "וְתָנוּחַ וְתַעֲמֹד לְגוֹרָלְךָ לְקֵץ הַיָּמִין",
+   "proof": "בְּחִינַת (דניאל י״ב:י״ג): וְתָנוּחַ וְתַעֲמֹד לְגוֹרָלְךָ לְקֵץ הַיָּמִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְתָנוּחַ",
+   "target_he": "וַיָּנַח בַּיּוֹם הַשְּׁבִיעִי",
+   "proof": "זֶהוּ בְּחִינַת (שמות כ׳:י״א): וַיָּנַח בַּיּוֹם הַשְּׁבִיעִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גּוֹרָל",
+   "target_he": "שַׁבָּת",
+   "proof": "וְגוֹרָל הַזֶּה, שֶׁהוּא שַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גּוֹרָל",
+   "target_he": "מְדָנִים וְצָרִים",
+   "proof": "וְגוֹרָל הַזֶּה, שֶׁהוּא שַׁבָּת, מְבַטֵּל מְדָנִים וְצָרִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גּוֹרָל",
+   "target_he": "בְּחִינַת פֶּה",
+   "proof": "וְעוֹד יֵשׁ לוֹ כֹּחַ, שֶׁבּוֹ נַעֲשֶׂה בְּחִינַת פֶּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גּוֹרָל",
+   "target_he": "הִתְעַצְּמוּת וְהִתְחַבְּרוּת קְנֵה הַחֵית לְגַג הַחֵית",
+   "proof": "בֵּין הִתְעַצְּמוּת וְהִתְחַבְּרוּת קְנֵה הַחֵית לְגַג הַחֵית, הוּא מַפְרִיד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֵא",
+   "target_he": "פֶּה",
+   "proof": "וְנַעֲשֶׂה הֵא מֵחֵית, הַיְנוּ בְּחִינַת פֶּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

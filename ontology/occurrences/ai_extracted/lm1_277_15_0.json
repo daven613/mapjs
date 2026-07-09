@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 277,
+ "chunk": "277_15_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶץ",
+   "target_he": "אֶרֶץ נָתְנָה יְבוּלָהּ",
+   "proof": "אֲזַי הִיא נִקְרֵאת בְּחִינַת אֶרֶץ סְתָם, וַאֲזַי הִיא בְּחִינַת: אֶרֶץ נָתְנָה יְבוּלָהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם",
+   "target_he": "אֶרֶץ סְתָם",
+   "proof": "כְּשֶׁיֵּשׁ שָׁלוֹם, אֲזַי הִיא נִקְרֵאת בְּחִינַת אֶרֶץ סְתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֶרֶץ נָתְנָה יְבוּלָהּ",
+   "target_he": "כֹּחַ לְכָל הָרְפוּאוֹת",
+   "proof": "שֶׁנּוֹתֶנֶת כֹּחוֹתֶיהָ לְכָל יְבוּל הָאָרֶץ, וַאֲזַי יֵשׁ כֹּחַ לְכָל הָרְפוּאוֹת כַּנַּ״ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_6_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַכְנָעַת הַמְדַמֶּה",
+   "target_he": "הָרוּחַ רָעָה, רוּחַ שְׁטוּת",
+   "proof": "שֶׁהוּא בְּחִינַת הָרוּחַ רָעָה, רוּחַ שְׁטוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרוּחַ רָעָה, רוּחַ שְׁטוּת",
+   "target_he": "הָרוּחַ טוֹבָה, רוּחַ נְבוּאָה",
+   "proof": "שֶׁרוֹצֶה לִפְגֹּם וּלְבַלְבֵּל אֶת בְּחִינַת הָרוּחַ טוֹבָה, רוּחַ נְבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשִּׂמְחָה",
+   "target_he": "הַמְדַמֶּה",
+   "proof": "וְהוּא נִכְנָע וְנִתְבַּטֵּל עַל־יְדֵי הַשִּׂמְחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְּנַגֵּן בַּיָּד",
+   "target_he": "הַשִּׂמְחָה",
+   "proof": "הַבָּאָה עַל־יְדֵי הַמְּנַגֵּן בַּיָּד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַצְבוּת",
+   "target_he": "הַמְדַמֶּה",
+   "proof": "כִּי עִקַּר הִתְגַּבְּרוּת הַמְדַמֶּה הוּא עַל־יְדֵי עַצְבוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמְדַמֶּה",
+   "target_he": "עַצְבוּת רוּחַ, רוּחַ נְכֵאָה, רוּחַ רָעָה",
+   "proof": "כִּי הַמְדַמֶּה הוּא בְּחִינַת עַצְבוּת רוּחַ, רוּחַ נְכֵאָה, רוּחַ רָעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְדַמֶּה",
+   "target_he": "הָרוּחַ טוֹבָה, רוּחַ נְבוּאָה",
+   "proof": "שֶׁהוּא מְבַלְבֵּל אֶת הָרוּחַ טוֹבָה, רוּחַ נְבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוּחַ נְבוּאָה",
+   "target_he": "זִכָּרוֹן",
+   "proof": "שֶׁהוּא בְּחִינַת זִכָּרוֹן הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זִכָּרוֹן",
+   "target_he": "לְאַדְבָּקָא מַחֲשַׁבְתָּא בְּעָלְמָא דְּאָתֵי",
+   "proof": "בְּחִינַת לְאַדְבָּקָא מַחֲשַׁבְתָּא בְּעָלְמָא דְּאָתֵי הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה",
+   "target_he": "רוּחַ נְבוּאָה, רוּחַ הַקֹּדֶשׁ",
+   "proof": "וְעַל כֵּן אֵין יְכוֹלִין לְקַבֵּל רוּחַ נְבוּאָה, רוּחַ הַקֹּדֶשׁ, כִּי־אִם עַל־יְדֵי שִׂמְחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׂמְחָה",
+   "target_he": "מְנַגֵּן בַּיָּד",
+   "proof": "שֶׁהוּא בְּחִינַת מְנַגֵּן בַּיָּד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְנַגֵּן בַּיָּד",
+   "target_he": "וְנִגֵּן בְּיָדוֹ וְטוֹב לָךְ",
+   "proof": "בְּחִינַת: וְנִגֵּן בְּיָדוֹ וְטוֹב לָךְ וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

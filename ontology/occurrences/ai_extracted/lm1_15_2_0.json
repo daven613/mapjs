@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 15,
+ "chunk": "15_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מִשְׁפָּט",
+   "target_he": "יִרְאָה",
+   "proof": "וּבַמֶּה מַעֲלִין אֶת הַיִּרְאָה, בִּבְחִינַת מִשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶץ",
+   "target_he": "יִרְאָה",
+   "proof": "וְאֶרֶץ הוּא בְּחִינַת יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁיִּשְׁפֹּט אֶת כָּל עֲסָקָיו",
+   "target_he": "הַפְּחָדִים",
+   "proof": "וּבָזֶה יָסִיר מֵעָלָיו כָּל הַפְּחָדִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁיִּשְׁפֹּט אֶת כָּל עֲסָקָיו",
+   "target_he": "יִרְאָה בָּרָה וּנְקִיָּה",
+   "proof": "וְיַעֲלֶה בְּחִינַת יִרְאָה בָּרָה וּנְקִיָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

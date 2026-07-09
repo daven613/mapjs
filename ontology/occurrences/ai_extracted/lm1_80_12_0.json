@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 80,
+ "chunk": "80_12_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "חָכְמָה",
+   "target_he": "קְדֻשָּׁה",
+   "proof": "כִּי חָכְמָה נִקְרָא קְדֻשָּׁה, כַּנּוֹדָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּר בְּתוֹרָה וּתְפִלָּה בְּחָכְמָה וָשֵׂכֶל",
+   "target_he": "מֹחִין",
+   "proof": "כִּי נִבְנֶה מִזֶּה מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֹחִין",
+   "target_he": "חָכְמָה",
+   "proof": "כִּי נִבְנֶה מִזֶּה מֹחִין, שֶׁהִיא חָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּר",
+   "target_he": "יְרוּשָׁלַיִם",
+   "proof": "וְהַדִּבּוּר, שֶׁהוּא בְּחִינַת יְרוּשָׁלַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

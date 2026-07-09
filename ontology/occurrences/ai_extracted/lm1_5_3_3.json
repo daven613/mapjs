@@ -1,0 +1,58 @@
+{
+ "book": "lm1",
+ "torah": 5,
+ "chunk": "5_3_3",
+ "model": "claude-fable-5",
+ "extractor": "ai:claude-fable-5",
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "קול השופר",
+   "target_he": "שופר של איל",
+   "proof": "וְזֶה בְּחִינַת קוֹל הַשּׁוֹפָר, דָּא שׁוֹפָר שֶׁל אַיִל",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "equation",
+   "source_he": "שופר של איל",
+   "target_he": "אילו של יצחק",
+   "proof": "דָּא שׁוֹפָר שֶׁל אַיִל – אֵילוֹ שֶׁל יִצְחָק",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אילו של יצחק",
+   "target_he": "וְרַעַם גְּבוּרוֹתָו",
+   "proof": "אֵילוֹ שֶׁל יִצְחָק, בְּחִינַת: וְרַעַם גְּבוּרוֹתָו",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "המח",
+   "target_he": "עבי מטרא",
+   "proof": "שֶׁיִּפְגַּע הַקּוֹל בַּמֹּחַ, בְּחִינוֹת עָבֵי מִטְרָא",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הקול הפוגע במח",
+   "target_he": "רעמים",
+   "proof": "שֶׁיִּפְגַּע הַקּוֹל בַּמֹּחַ... וְיִהְיֶה בִּבְחִינַת רְעָמִים",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמיעת תקיעת שופר מאיש ירא וחרד",
+   "target_he": "לא ידאג כל השנה מרעמים",
+   "proof": "וּמִי שֶׁשּׁוֹמֵעַ תְּקִיעַת שׁוֹפָר מֵאִישׁ יָרֵא וְחָרֵד, בְּוַדַּאי לֹא יִדְאַג כָּל הַשָּׁנָה מֵרְעָמִים",
+   "explicitness": "explicit"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קול השופר",
+   "target_he": "קולות וברקים",
+   "proof": "בְּקוֹלוֹת וּבְרָקִים עֲלֵיהֶם נִגְלֵיתָ, וּבְקוֹל שׁוֹפָר עֲלֵיהֶם הוֹפַעְתָּ – שֶׁבְּקוֹל הַשּׁוֹפָר הוֹפִיעַ עֲלֵיהֶם מִקּוֹלוֹת וּבְרָקִים",
+   "explicitness": "explicit"
+  }
+ ]
+}

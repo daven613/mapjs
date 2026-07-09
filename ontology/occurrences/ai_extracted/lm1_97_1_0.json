@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 97,
+ "chunk": "97_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אותיות א\"ל",
+   "target_he": "דד",
+   "proof": "כִּי הַשְּׁנֵי אוֹתִיּוֹת א\"ל, הֵם דָּד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אותיות מ\"י",
+   "target_he": "דד",
+   "proof": "וְהַשְּׁנֵי אוֹתִיּוֹת מ\"י הֵם דָּד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שפע",
+   "target_he": "ה'",
+   "proof": "וְהַשֶּׁפַע נִקְרֵאת ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ה'",
+   "target_he": "שם אלקים",
+   "proof": "וְנִשְׁלָם הַשֵּׁם אֱלֹקִים מִשָּׁלֵם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

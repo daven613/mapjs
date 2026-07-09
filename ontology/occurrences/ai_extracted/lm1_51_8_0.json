@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 51,
+ "chunk": "51_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שֶׁקֶר",
+   "target_he": "רָע",
+   "proof": "וְהִתְהַוּוּת הַשֶּׁקֶר, שֶׁהוּא הָרָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רָע",
+   "target_he": "טֻמְאָה",
+   "proof": "שֶׁהוּא הָרָע, שֶׁהוּא הַטֻּמְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִחוּק מֵאֶחָד",
+   "target_he": "שֶׁקֶר",
+   "proof": "הוּא מֵחֲמַת הָרִחוּק מֵאֶחָד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

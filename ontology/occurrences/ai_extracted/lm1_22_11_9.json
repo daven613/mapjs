@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_11_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קץ כופרא",
+   "target_he": "פגם בעזות",
+   "proof": "קָץ כּוּפְרָא – הוּא בְּחִינַת שֶׁפָּגַם בְּעַזּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כופרא",
+   "target_he": "עזות",
+   "proof": "כּוּפְרָא הוּא בְּחִינַת עַזּוּת, בְּחִינוֹת קוֹלוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כופרא",
+   "target_he": "קולות",
+   "proof": "כּוּפְרָא הוּא בְּחִינַת עַזּוּת, בְּחִינוֹת קוֹלוֹת, כְּמוֹ שֶׁכָּתוּב הַכְּפִירִים שֹׁאֲגִים לַטָּרֶף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עזות",
+   "target_he": "אמונה",
+   "proof": "כִּי עַל־יְדֵי־זֶה שֶׁפָּגַם בְּעַזּוּת, יָכוֹל לָבוֹא לְקִלְקוּל הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תמרי",
+   "target_he": "קלקול האמונה",
+   "proof": "וְזֶה תַּמְרֵי – בְּחִינַת הַהֵמִיר גּוֹי אֱלֹהִים, וְעַמִּי הֵמִיר כְּבוֹדִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עז פנים",
+   "target_he": "גיהנם",
+   "proof": "כִּי עַז פָּנִים לְגֵיהִנֹּם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ששים",
+   "target_he": "גיהנם",
+   "proof": "בְּשִׁשִּׁים – הַיְנוּ גֵּיהִנֹּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עזות פנים דסטרא אחרא",
+   "target_he": "עזות דקדושה",
+   "proof": "וְזֶה שֶׁפָּגַם בְּעַזּוּת דִּקְדֻשָּׁה עַל־יְדֵי עַזּוּת פָּנִים דְּסִטְרָא־אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

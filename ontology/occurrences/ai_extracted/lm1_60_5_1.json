@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_5_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "פְּקִידַת יִצְחָק",
+   "target_he": "תֹקֶף הִתְגַּלּוּת הַיִּרְאָה",
+   "proof": "שֶׁהוּא תֹקֶף הִתְגַּלּוּת הַיִּרְאָה מְאֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פְּקִידַת יִצְחָק",
+   "target_he": "פַּחַד יִצְחָק",
+   "proof": "בְּחִינַת פַּחַד יִצְחָק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פְּקִידַת הָעֲקָרוֹת עִם שָׂרָה",
+   "target_he": "כִּי יָלַדְתִּי בֵן לִזְקֻנָיו",
+   "proof": "וְזֶה בְּחִינַת (בראשית כ״א:ז׳): כִּי יָלַדְתִּי בֵן לִזְקֻנָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לֵדַת יִצְחָק",
+   "target_he": "הִתְגַּלּוּת הַיִּרְאָה",
+   "proof": "כִּי עַל יְדֵי לֵדַת יִצְחָק, שֶׁהוּא הִתְגַּלּוּת הַיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לֵדַת יִצְחָק",
+   "target_he": "אֲרִיכוּת יָמִים",
+   "proof": "עַל יְדֵי זֶה נִמְשָׁךְ אֲרִיכוּת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֲרִיכוּת יָמִים",
+   "target_he": "זָקֵן",
+   "proof": "בְּחִינַת זָקֵן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֲרִיכוּת יָמִים",
+   "target_he": "יִרְאַת ה' תּוֹסִיף יָמִים",
+   "proof": "בִּבְחִינַת: יִרְאַת ה' תּוֹסִיף יָמִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

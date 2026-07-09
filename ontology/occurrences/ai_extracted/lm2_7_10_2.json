@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_10_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מַלְכוּת",
+   "target_he": "פַּרְנָסָה",
+   "proof": "כִּי כָל הַפַּרְנָסָה נִמְשָׁךְ מֵהַמַּלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֶמְשָׁלָה",
+   "target_he": "שַׁיָּכוּת עִם הַמַּלְכוּת",
+   "proof": "צָרִיךְ שֶׁיִּהְיֶה לוֹ קְצָת מֶמְשָׁלָה, כְּדֵי שֶׁיִּהְיֶה לוֹ אֵיזֶה שַׁיָּכוּת עִם הַמַּלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הֲלֹם",
+   "target_he": "מַלְכוּת",
+   "proof": "אֵין הֲלוֹם אֶלָּא מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֶמְשָׁלָה",
+   "target_he": "מַלְכוּת",
+   "proof": "כִּי צָרִיךְ שֶׁיִּהְיֶה לוֹ מֶמְשָׁלָה, בְּחִינַת מַלְכוּת, לְעֵת הָאֹכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֶמְשָׁלָה",
+   "target_he": "פַּרְנָסָה",
+   "proof": "כִּי עַל־יְדֵי־זֶה נִמְשָׁךְ הַפַּרְנָסָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 149,
+ "chunk": "149_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "צדק",
+   "target_he": "דינא",
+   "proof": "כִּי צֶדֶק – דִּינָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "משפט",
+   "target_he": "רחמי",
+   "proof": "וּמִשְׁפָּט – רַחֲמֵי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חצות",
+   "target_he": "המתקת הדינים",
+   "proof": "כִּי הוּא הַמְתָּקַת הַדִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חצות לילה אקום",
+   "target_he": "המתקת הדינים",
+   "proof": "הַתִּקּוּן לָזֶה: חֲצוֹת לַיְלָה אָקוּם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הסתכלות על השמים",
+   "target_he": "הדעת",
+   "proof": "וְעַל־יְדֵי־זֶה נִמְשָׁךְ הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

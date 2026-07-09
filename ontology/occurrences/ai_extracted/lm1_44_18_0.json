@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 44,
+ "chunk": "44_18_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלָּה",
+   "target_he": "אֱמוּנָה",
+   "proof": "וּתְפִלָּה הִיא בְּחִינַת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּמִידִין",
+   "target_he": "כְּפִירוֹת",
+   "proof": "וְנֶגֶד אֱמוּנָה, הֵם הַכְּפִירוֹת... וְתִקּוּנָם עַל־יְדֵי תְּמִידִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֶרֶץ יִשְׂרָאֵל",
+   "target_he": "כְּפִירוֹת",
+   "proof": "וְנֶגֶד אֱמוּנָה, הֵם הַכְּפִירוֹת... עַל יְדֵי אֶרֶץ יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֶחָאַת כַּף",
+   "target_he": "כְּפִירוֹת",
+   "proof": "וְנֶגֶד אֱמוּנָה, הֵם הַכְּפִירוֹת... עַל יְדֵי מֶחָאַת כַּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

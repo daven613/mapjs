@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מְעוֹרֵר בְּנֵי אָדָם מִשְּׁנָתָם עַל־יְדֵי סִפּוּרֵי מַעֲשִׂיּוֹת",
+   "target_he": "וְעָלֵהוּ לִתְרוּפָה",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת: וְעָלֵהוּ לִתְרוּפָה וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סִפּוּרֵי מַעֲשִׂיּוֹת",
+   "target_he": "לְהַתִּיר פֶּה אִלְּמִים",
+   "proof": "עַל־יְדֵי־ זֶה נַעֲשֶׂה בְּחִינַת: לְהַתִּיר פֶּה אִלְּמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 11,
+ "chunk": "11_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קטנים",
+   "target_he": "דשאין",
+   "proof": "כָּל שֶׁכֵּן הַקְּטַנִּים, שֶׁהֵם בְּחִינַת דְּשָׁאִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁמִירָה גְּדוֹלָה",
+   "target_he": "וְשָׁמְרוּ וְכוּ'",
+   "proof": "אַף־עַל־פִּי־כֵן צָרִיךְ שְׁמִירָה גְּדוֹלָה, בְּחִינַת: וְשָׁמְרוּ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְשָׁמְרוּ בְנֵי יִשְׂרָאֵל אֶת הַשַּׁבָּת",
+   "target_he": "בִּיאָה",
+   "proof": "וְשָׁמְרוּ בְ'נֵי יִ'שְׂרָאֵל אֶ'ת הַ'שַּׁבָּת – רָאשֵׁי־תֵּבוֹת בִּיאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 57,
+ "chunk": "57_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "נֶדֶר",
+   "target_he": "פֶּלֶא",
+   "proof": "עַל יְדֵי בְּחִינַת נֶדֶר, שֶׁהוּא בְּחִינוֹת פֶּלֶא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נֶדֶר",
+   "target_he": "אֱמוּנַת חֲכָמִים",
+   "proof": "עַל יְדֵי בְּחִינַת נֶדֶר, שֶׁהוּא בְּחִינוֹת פֶּלֶא, נִתְתַּקֵּן אֱמוּנַת חֲכָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יַעֲקֹב",
+   "target_he": "נֶדֶר",
+   "proof": "וְיַעֲקֹב הוּא בְּחִינוֹת נֶדֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֶדֶר",
+   "target_he": "יַעֲקֹב",
+   "proof": "צָרִיךְ לְהִשְׁתַּמֵּשׁ בְּנֶדֶר, שֶׁהוּא בְּחִינַת יַעֲקֹב כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נֶדֶר",
+   "target_he": "יְדֵי הַמַּלְאָךְ",
+   "proof": "בִּשְׁבִיל לְתַקֵּן יְדֵי הַמַּלְאָךְ, הַנִּקְרָא אֲבִּיר, צָרִיךְ לְהִשְׁתַּמֵּשׁ בְּנֶדֶר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נֶדֶר",
+   "target_he": "אֱמוּנָה",
+   "proof": "הַיְנוּ עַל יְדֵי הַנֶּדֶר נִתְתַּקֵּן הָאֱמוּנָה הַנִּקְרָא רוֹעֶה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֱמוּנָה",
+   "target_he": "רוֹעֶה",
+   "proof": "נִתְתַּקֵּן הָאֱמוּנָה הַנִּקְרָא רוֹעֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 55,
+ "chunk": "55_9_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "פְּנֵי ה' מְכֻסֶּה וּמֻסְתָּר בְּעוֹשֵׂי רַע כְּדֵי לְהַכְרִיתָם",
+   "target_he": "פְּנֵי ה' בְּעוֹשֵׂי רָע לְהַכְרִיתָם",
+   "proof": "בִּבְחִינַת (תהילים ל״ד:י״ז): פְּנֵי ה' בְּעוֹשֵׂי רָע לְהַכְרִיתָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּרִיתוּת רְשָׁעִים",
+   "target_he": "פְּנֵי ה' לְעוֹשֵׂי טוֹב",
+   "proof": "וְעַכְשָׁו, תֵּכֶף כְּשֶׁרוֹאִים בִּכְרִיתוּת רְשָׁעִים, תֵּכֶף נִתְגַּלֶּה פְּנֵי ה' לְעוֹשֵׂי טוֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תָּמִיד",
+   "target_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "כִּי עַל־יְדֵי תָּמִיד, שֶׁהוּא בְּחִינַת אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "מְצִיאַת פְּנֵי ה'",
+   "proof": "עַל יְדֵי אֶרֶץ־יִשְׂרָאֵל תִּזְכּוּ לִמְצֹא פְּנֵי ה'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "רְאִיַּת כְּרִיתוּת רְשָׁעִים",
+   "proof": "כִּי עַל־יְדֵי אֶרֶץ־יִשְׂרָאֵל תִּזְכּוּ לִרְאוֹת בְּהַכְּרִיתוּת רְשָׁעִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

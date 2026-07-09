@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַמָּמוֹן וְהָעֲשִׁירוּת",
+   "target_he": "עָפָר",
+   "proof": "הַיְנוּ שֶׁהַמָּמוֹן וְהָעֲשִׁירוּת, שֶׁהוּא בְּחִינַת עָפָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מָמוֹן",
+   "target_he": "יְמֵי חַיָּיו שֶׁל הָאָדָם",
+   "proof": "כִּי הַמָּמוֹן הִיא אֹכֶלֶת וּמְכַלָּה כָּל יְמֵי חַיָּיו שֶׁל הָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָפָר",
+   "target_he": "עַצְבוּת",
+   "proof": "כִּי עָפָר הוּא בְּחִינַת עַצְבוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עַצְבוּת",
+   "target_he": "תַּאֲוַת מָמוֹן",
+   "proof": "שֶׁהוּא בְּחִינַת תַּאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טְחוֹל",
+   "target_he": "עַצְבוּת",
+   "proof": "וּמֵהַטְּחוֹל נִמְשָׁךְ הָעַצְבוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בחינת מזבח",
+   "target_he": "ביטול כסילות השכל",
+   "proof": "וְהַתִּקּוּן לָזֶה, לְהַכְנִיעַ וּלְבַטֵּל כְּסִילוּת הַשֵּׂכֶל, הוּא עַל־יְדֵי בְּחִינַת מִזְבֵּחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת מזבח",
+   "target_he": "כסילות (קליפות)",
+   "proof": "כִּי עִקַּר יְנִיקַת הַכְּסִילוּת, דְּהַיְנוּ הַקְּלִפּוֹת, הוּא רַק מִבְּחִינַת מִזְבֵּחַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בחינת מזבח",
+   "target_he": "בחינת אכילה",
+   "proof": "הַיְנוּ בְּחִינַת אֲכִילָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אכילה",
+   "target_he": "בלבול הדעת",
+   "proof": "בְּהֶכְרֵחַ שֶׁיִּהְיֶה לוֹ בִּלְבּוּל הַדַּעַת קְצָת אַחַר הָאֲכִילָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אכילה",
+   "target_he": "יניקת הכסילות",
+   "proof": "וְזֶה מֵחֲמַת שֶׁיְּנִיקַת הַכְּסִילוּת הוּא מִשָּׁם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

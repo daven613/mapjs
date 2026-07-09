@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 31,
+ "chunk": "31_9_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַשֻּׁלְחָן אֲשֶׁר לִפְנֵי ה'",
+   "target_he": "פָּנִים",
+   "proof": "לִפְנֵי דַּיְקָא, שֶׁיִּהְיֶה דַּיְקָא בִּבְחִינַת פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן בְּחִינַת רַגְלִין בִּבְחִינַת פָּנִים",
+   "target_he": "כַּפָּרָה",
+   "proof": "שֶׁיְּתַקְּנוּ בְּחִינַת רַגְלִין, בִּבְחִינַת פָּנִים, אֲזַי יִתְכַּפֵּר לָהֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִזְבֵּחַ",
+   "target_he": "כַּפָּרָה",
+   "proof": "כִּי שֻׁלְחָן דּוֹמֶה לְמִזְבֵּחַ שֶׁמְּכַפֵּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת פָּנִים",
+   "target_he": "כַּפָּרָה",
+   "proof": "שֶׁיִּהְיֶה דַּיְקָא בִּבְחִינַת פָּנִים, וַאֲזַי מְכַפֵּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 13,
+ "chunk": "13_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שבירת תאות ממון",
+   "target_he": "השגחה שלמה",
+   "proof": "לְהַמְשִׁיךְ הַשְׁגָּחָה שְׁלֵמָה אִי אֶפְשָׁר אֶלָּא עַד שֶׁיְּשַׁבֵּר תַּאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "תאות ממון",
+   "proof": "וּשְׁבִירָתָהּ הוּא עַל־יְדֵי צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוחא",
+   "target_he": "צדקה",
+   "proof": "רוּחָא זֶה בְּחִינַת צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "חמימות תאות ממון",
+   "proof": "עַל־יָדוֹ מְקָרְרִין חֲמִימוּת תַּאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קירור חמימות תאות ממון",
+   "target_he": "יבצר רוח נגידים",
+   "proof": "וְזֶה בְּחִינַת (תהילים ע״ו:י״ג): יִבְצֹר רוּחַ נְגִידִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוח",
+   "target_he": "תאות הנגידות והעשירות",
+   "proof": "שֶׁהָרוּחַ מְמַעֵט תַּאֲוַת הַנְּגִידוּת וְהָעֲשִׁירוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ניגונא דלוואי",
+   "target_he": "משא ומתן באמונה",
+   "proof": "נִגּוּנָא דְּלֵיוָאֵי זֶה בְּחִינַת מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נגינה",
+   "target_he": "משא ומתן",
+   "proof": "כִּי הַנְּגִינָה זֶה הַמַּשָּׂא וּמַתָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חדוה",
+   "target_he": "שמח בחלקו",
+   "proof": "חֶדְוָה – זֶה שֶׁשָּׂמֵחַ בְּחֶלְקוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חדוה",
+   "target_he": "קטורת",
+   "proof": "וְזֶה בְּחִינַת קְטֹרֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קטורת",
+   "target_he": "ישימו קטורה באפך",
+   "proof": "וְזֶה בְּחִינַת (דברים ל״ג:י׳): יָשִׂימוּ קְטֹרָה בְּאַפֶּךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת קטורת",
+   "target_he": "בזעת אפיך תאכל",
+   "proof": "שֶׁעַל־יְדֵי בְּחִינַת קְטֹרֶת הַנַּ\"ל נִתְבַּטֵּל בְּחִינַת (בראשית ג׳:י״ט): \"בְּזֵעַת אַפֶּךָ תֹּאכַל\"",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

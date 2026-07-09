@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 47,
+ "chunk": "47_0_14",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הסתרת פנים",
+   "target_he": "אמת",
+   "proof": "כִּי הוּא בְּהַסְתָּרַת פָּנִים שֶׁהוּא בְּחִינוֹת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צרה",
+   "target_he": "הסתרת פנים",
+   "proof": "הֵם בִּבְחִינוֹת הַסְתָּרַת פָּנִים, בְּחִינוֹת דִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צרה",
+   "target_he": "דינים",
+   "proof": "הֵם בִּבְחִינוֹת הַסְתָּרַת פָּנִים, בְּחִינוֹת דִּינִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תענית",
+   "target_he": "תאות אכילה",
+   "proof": "וְעַל כֵּן גּוֹזְרִין תַּעֲנִית, לְשַׁבֵּר תַּאֲוַת אֲכִילָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תענית",
+   "target_he": "הארות ונשיאות פנים",
+   "proof": "וַאֲזַי יִהְיֶה בְּחִינוֹת הֶאָרוֹת וּנְשִׂיאוּת פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הארות ונשיאות פנים",
+   "target_he": "המתקת וביטול הדינים",
+   "proof": "שֶׁהוּא בְּחִינוֹת הַמְתָּקַת וּבִטּוּל הַדִּינִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

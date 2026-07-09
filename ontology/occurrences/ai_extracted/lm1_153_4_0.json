@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 153,
+ "chunk": "153_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "פָּנִים",
+   "target_he": "אַנְפִּין נְהִירִין",
+   "proof": "הַיְנוּ אַנְפִּין נְהִירִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַנְפִּין נְהִירִין",
+   "target_he": "מַרְאָה מְלֻטֶּשֶׁת",
+   "proof": "שֶׁהֵם בְּחִינַת מַרְאָה מְלֻטֶּשֶׁת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֶעְדֵּר פָּנִים",
+   "target_he": "אַנְפִּין חֲשׁוּכִין",
+   "proof": "הַיְנוּ שֶׁהוּא בְּחִינַת אַנְפִּין חֲשׁוּכִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פָּנִים",
+   "target_he": "קַבָּלַת פָּנִים",
+   "proof": "אַךְ אִם אֵין לוֹ פָּנִים... אֲזַי אֵין יָכוֹל לְקַבֵּל פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

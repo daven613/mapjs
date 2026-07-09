@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 71,
+ "chunk": "71_0_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "כבוד",
+   "target_he": "פגם וקלקול המוחין של חוץ לארץ",
+   "proof": "כִּי עִקָּר פְּגַם וְקִלְקוּל הַמֹּחִין שֶׁל חוּץ־לָאָרֶץ הוּא עַל־יְדֵי פְּגַם הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כבוד",
+   "target_he": "יניקה ממוחין של ארץ ישראל",
+   "proof": "שֶׁעַל־יְדֵי־זֶה אֵינָם יְכוֹלִים לִינֹק מִמֹּחִין שֶׁל אֶרֶץ יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוחין (שאינם יכולים לינוק ממוחין של ארץ ישראל)",
+   "target_he": "מוחין של חוץ לארץ",
+   "proof": "וַאֲזַי הֵם בְּחִינַת מֹחִין שֶׁל חוּץ־לָאָרֶץ מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קלקולם",
+   "target_he": "בָּז לְדָבָר יֵחָבֶל לוֹ",
+   "proof": "וְזֶה בְּחִינַת (משלי י״ג:י״ג): בָּז לְדָבָר יֵחָבֶל לוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בָּז לְדָבָר",
+   "target_he": "בִּזְיוֹנוֹת",
+   "proof": "בָּז לְדָבָר, הַיְנוּ בִּזְיוֹנוֹת, הֵפֶךְ הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יֵחָבֶל לוֹ",
+   "target_he": "מֹחִין שֶׁל חוּץ־לָאָרֶץ",
+   "proof": "יֵחָבֶל לוֹ, הַיְנוּ מֹחִין שֶׁל חוּץ־לָאָרֶץ שֶׁהֵם בְּחִינַת חוֹבְלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֹחִין שֶׁל חוּץ־לָאָרֶץ",
+   "target_he": "חוֹבְלִים",
+   "proof": "הַיְנוּ מֹחִין שֶׁל חוּץ־לָאָרֶץ שֶׁהֵם בְּחִינַת חוֹבְלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כבוד",
+   "target_he": "המוחין נשארים בבחינת חובלים",
+   "proof": "כִּי עַל־יְדֵי פְּגַם הַכָּבוֹד נִשְׁאָרִין הַמֹּחִין בִּבְחִינַת חוֹבְלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כבוד",
+   "target_he": "קלקול המוחין של חוץ לארץ",
+   "proof": "נִמְצָא שֶׁעִקָּר קִלְקוּל הַמֹּחִין שֶׁל חוּץ־לָאָרֶץ הוּא עַל־יְדֵי פְּגַם הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

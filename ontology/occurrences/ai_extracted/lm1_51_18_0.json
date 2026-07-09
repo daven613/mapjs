@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 51,
+ "chunk": "51_18_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כל זה",
+   "target_he": "שמאל",
+   "proof": "וְכָל זֶה, הַיְנוּ בְּחִינַת שְׂמֹאל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כל זה",
+   "target_he": "טהרה",
+   "proof": "בְּחִינַת טָהֳרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כל זה",
+   "target_he": "הבחירה",
+   "proof": "בְּחִינַת הַבְּחִירָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת שמאל, בחינת טהרה, בחינת הבחירה",
+   "target_he": "הטומאה",
+   "proof": "שֶׁמִּשָּׁם עִקַּר הִשְׁתַּלְשְׁלוּת הַטֻּמְאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הטומאה",
+   "target_he": "הרע וההתנגדות",
+   "proof": "שֶׁהוּא הָרָע וְהַהִתְנַגְּדוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הרע וההתנגדות",
+   "target_he": "שקר",
+   "proof": "בְּחִינַת שֶׁקֶר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אחר הבריאה",
+   "target_he": "כל זה",
+   "proof": "כָּל זֶה נִמְשָׁךְ מִבְּחִינַת אַחַר הַבְּרִיאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הריחוק מאחד",
+   "target_he": "אחיזת השקר",
+   "proof": "עִקַּר אֲחִיזַת הַשֶּׁקֶר... הוּא מֵחֲמַת הָרִחוּק מֵאֶחָד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אחיזת השקר",
+   "target_he": "הטומאה",
+   "proof": "שֶׁהִיא הַטֻּמְאָה וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הריחוק מאחד",
+   "target_he": "אחר הבריאה",
+   "proof": "הַיְנוּ מִבְּחִינַת אַחַר הַבְּרִיאָה וְכַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

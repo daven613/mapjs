@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 71,
+ "chunk": "71_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "מֹחִין שֶׁל חוּץ־לָאָרֶץ",
+   "proof": "וְגַם הַמֹּחִין שֶׁל חוּץ־לָאָרֶץ הֵם מְקַבְּלִים וְיוֹנְקִים גַם־כֵּן מֵהַמֹּחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֵלֶק בְּאֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "מֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "וְכָל אֶחָד כְּפִי חֶלְקוֹ שֶׁיֵּשׁ לוֹ בְּאֶרֶץ־יִשְׂרָאֵל כֵּן הוּא מְקַבֵּל וְיוֹנֵק מֵהַמֹּחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָּל הַמֹּחִין",
+   "target_he": "מֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "נִמְצָא שֶׁכָּל הַמֹּחִין הֵם בְּחִינַת מֹחִין שֶׁל אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

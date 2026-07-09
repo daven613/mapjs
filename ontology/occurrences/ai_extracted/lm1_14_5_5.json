@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_5_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מרבעתא דרישיה פרסא ופלגא",
+   "target_he": "זיווג",
+   "proof": "זֶה בְּחִינַת זִוּוּג, הַנַּעֲשֶׂה בְּרֵאשִׁית הַמַּחֲשָׁבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מרבעתא",
+   "target_he": "זיווג",
+   "proof": "מַרְבַּעְתָּא – לְשׁוֹן זִוּוּג",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זיווג",
+   "target_he": "פרסא ופלגא",
+   "proof": "וְעַל־יְדֵי זִוּוּג הַזֶּה נַעֲשֶׂה פַּרְסָא וּפַלְגָּא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פרסה",
+   "target_he": "המשכת הנשמות לבניהם",
+   "proof": "פַּרְסָה, זֶה רֶמֶז עַל הַמְשָׁכַת הַנְּשָׁמוֹת לִבְנֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "המשכת הנשמות לבניהם",
+   "target_he": "פרסה שלמה",
+   "proof": "זֶה מְכֻנֶּה בְּשֵׁם פַּרְסָה שְׁלֵמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "התנוצצות הנשמות המעוררת את הפושעי ישראל בתשובה ומולידה נשמות גרים",
+   "target_he": "פלגא",
+   "proof": "זֶה מְכֻנֶּה בְּשֵׁם פַּלְגָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בגדים הצואים",
+   "target_he": "חזרתם להקדוש ברוך הוא",
+   "proof": "כִּי אֵלּוּ הַבְּגָדִים הַצּוֹאִים הֵם מוֹנְעִים אוֹתָם מִלַּחֲזֹר לַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הפשטת והשלכת הבגדים הצואים",
+   "target_he": "ביטול המניעות",
+   "proof": "עַל־יְדֵי שֶׁמַּפְשִׁיטִין וּמַשְׁלִיכִין מֵעֲלֵיהֶם הַבְּגָדִים הַצּוֹאִים, נִתְבַּטְּלִים כָּל הַמְּנִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

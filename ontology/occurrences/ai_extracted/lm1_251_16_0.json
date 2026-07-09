@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 251,
+ "chunk": "251_16_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "עֲבוֹדַת אֱלִילִים וּכְפִירוּת",
+   "proof": "נִמְצָא, שֶׁעַל־יְדֵי מַחֲלֹקֶת נַעֲשֶׂה עֲבוֹדַת אֱלִילִים וּכְפִירוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מִלְחָמוֹת",
+   "target_he": "מַחֲלֹקֶת",
+   "proof": "שֶׁעַל יְדֵי הַמִּלְחָמוֹת, הַיְנוּ מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִלְחָמוֹת (מַחֲלֹקֶת)",
+   "target_he": "חָשְׁבוּ רָעוֹת בְּלֵב",
+   "proof": "עַל יָדוֹ חָשְׁבוּ רָעוֹת בְּלֵב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָשְׁבוּ רָעוֹת בְּלֵב",
+   "target_he": "מַחֲשָׁבוֹת רָעוֹת",
+   "proof": "עַל־יְדֵי־זֶה בָּאִים מַחֲשָׁבוֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַחֲשָׁבוֹת רָעוֹת",
+   "target_he": "כְּפִירוּת",
+   "proof": "הַיְנוּ כְּפִירוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

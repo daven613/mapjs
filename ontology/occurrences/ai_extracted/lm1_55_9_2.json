@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 55,
+ "chunk": "55_9_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רצתי אחריו שלש פרסאות",
+   "target_he": "תפלה",
+   "proof": "הַיְנוּ בְּחִינַת הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תפלה",
+   "target_he": "שלש תפלות",
+   "proof": "שֶׁהֵם שָׁלֹשׁ תְּפִלּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלש תפלות",
+   "target_he": "אור שלשת אבות",
+   "proof": "וְעַל יָדָם מִתְנוֹצֵץ אוֹר שְׁלֹשֶׁת אָבוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שלשת אבות",
+   "target_he": "רגלי הכסא",
+   "proof": "שֶׁהֵם בִּבְחִינַת רַגְלֵי הַכִּסֵּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אור שלשת אבות",
+   "target_he": "אור ארץ־ישראל",
+   "proof": "כְּדֵי לְהַמְשִׁיךְ אוֹר אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ארץ־ישראל",
+   "target_he": "צבי",
+   "proof": "שֶׁהִיא בְּחִינַת צְבִי הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בחינת ארץ־ישראל",
+   "target_he": "בטול קולות",
+   "proof": "שֶׁלֹּא הִשִּׂיג בְּחִינַת אֶרֶץ־יִשְׂרָאֵל, בִּטּוּל קוֹלוֹת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

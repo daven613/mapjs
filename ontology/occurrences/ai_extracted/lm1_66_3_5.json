@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_3_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בְּחַיָּי",
+   "target_he": "שֶׁאֵין נִצְרָךְ לַבְּרִיּוֹת",
+   "proof": "הַיְנוּ כְּשֶׁאֵין נִצְרָךְ לַבְּרִיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּחַיָּי",
+   "target_he": "אֲנִי חַי מֵחַיִּים שֶׁלִּי",
+   "proof": "הַיְנוּ שֶׁאֲנִי חַי מֵחַיִּים שֶׁלִּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִצְרָךְ לַבְּרִיּוֹת",
+   "target_he": "חַיָּיו אֵינָם חַיִּים",
+   "proof": "כִּי הַנִּצְרָךְ לַבְּרִיּוֹת חַיָּיו אֵינָם חַיִּים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִצְרָךְ לַבְּרִיּוֹת",
+   "target_he": "לְהַלְּלוֹ וּלְהִתְפַּלֵּל לְפָנָיו בֶּאֱמֶת",
+   "proof": "כְּשֶׁאֵינִי נִצְרָךְ לַבְּרִיּוֹת, וַאֲנִי חַי חַיִּים שֶׁלִּי, אֲזַי אוּכַל לְהַלְּלוֹ וּלְהִתְפַּלֵּל לְפָנָיו בֶּאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִצְרָךְ הָאָדָם לַבְּרִיּוֹת",
+   "target_he": "עוֹלָם חָשַׁךְ בַּעֲדוֹ",
+   "proof": "כֵּיוָן שֶׁנִּצְרָךְ הָאָדָם לַבְּרִיּוֹת, עוֹלָם חָשַׁךְ בַּעֲדוֹ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

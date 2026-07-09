@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 33,
+ "chunk": "33_3_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַתּוֹרָה",
+   "target_he": "דָּבָר",
+   "proof": "כִּי הַתּוֹרָה נִקְרֵאת דָּבָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּבְּרוּת עַל הַיֵּצֶר",
+   "target_he": "מַלְאָכִים",
+   "proof": "אִלֵּין אִנּוּן דְּמִתְגַּבְּרִין עַל יִצְרֵיהוֹן, אִנּוּן דָּמְיָן לְמַלְאָכִין מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲשִׂיַּת דְּבָרוֹ",
+   "target_he": "שְׁמִיעַת קָלִין מִלְּעֵלָּא",
+   "proof": "עֹשֵׂי דְבָרוֹ – דְּעָבְדִין לְהַאי דָּבָר, לִשְׁמֹעַ בְּקוֹל דְּבָרוֹ – אִנּוּן זָכַיִן לְמִשְׁמַע קָלִין מִלְּעֵלָּא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צִמְצוּמִים וּלְבוּשִׁים יְתֵרִים בְּאוֹתִיּוֹת הַתּוֹרָה",
+   "target_he": "הֶעְלֵם וְאִתְכַּסְיָא שֶׁל הַתּוֹרָה",
+   "proof": "וְכָל מַה שֶּׁאוֹתִיּוֹת הַתּוֹרָה נִתְצַמְצֵם וְנִתְלַבְּשִׁים בְּצִמְצוּמִים וּבִלְבוּשִׁים יְתֵרִים, הַתּוֹרָה הוּא בְּהֶעְלֵם וּבְאִתְכַּסְיָא יוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַפְשָׁטַת הָאוֹתִיּוֹת מֵהַלְּבוּשִׁים",
+   "target_he": "בִּנְיַן הַתּוֹרָה",
+   "proof": "וּמִי שֶׁמַּפְשִׁיט אֶת הָאוֹתִיּוֹת הַתּוֹרָה מֵהַלְּבוּשִׁים, הוּא דּוֹמֶה כְּמִי שֶׁבּוֹנֶה אֶת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְמֵי רַע",
+   "target_he": "אוֹתִיּוֹת הַתּוֹרָה",
+   "proof": "מֵחֲמַת הַיְמֵי רַע שֶׁהֶחֱשִׁיךְ עֲלֵיהֶם וְהִלְבִּישׁ אוֹתָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

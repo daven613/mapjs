@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 47,
+ "chunk": "47_0_19",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בּוּשָׁה",
+   "target_he": "כְּלָלִיּוּת הַגְּוָנִין",
+   "proof": "כִּי בְּחִינַת הַבּוּשָׁה הוּא גַּם כֵּן כְּלָלִיּוּת הַגְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בּוּשָׁה",
+   "target_he": "מִדַּת תִּפְאֶרֶת מִמִּדּוֹת הַנְּפוּלִין",
+   "proof": "וְהוּא מִדַּת תִּפְאֶרֶת, מִמִּדּוֹת הַנְּפוּלִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִצְרָךְ לַבְּרִיּוֹת",
+   "target_he": "פָּנָיו מִשְׁתַּנֶּה כִּכְרוּם לְכַמָּה גְּוָנִין",
+   "proof": "כֵּיוָן שֶׁנִּצְרָךְ לַבְּרִיּוֹת פָּנָיו מִשְׁתַּנֶּה כִּכְרוּם ... שֶׁמִּשְׁתַּנֶּה לְכַמָּה גְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִדַּת אֱמֶת",
+   "target_he": "נִצְרָךְ לַבְּרִיּוֹת",
+   "proof": "כִּי כֵּיוָן שֶׁנִּצְרָךְ לַבְּרִיּוֹת, וְהַיְנוּ מִפְּנֵי שֶׁפָּגַם בְּמִדַּת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַסְתָּרַת פָּנִים",
+   "target_he": "מִדַּת אֱמֶת",
+   "proof": "וְהוּא בְּהַסְתָּרַת פָּנִים, שֶׁהוּא מִדַּת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מִדַּת אֱמֶת",
+   "target_he": "כְּלָלוּת הַגְּוָנִין",
+   "proof": "שֶׁהוּא מִדַּת אֱמֶת, כְּלָלוּת הַגְּוָנִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פָּנָיו מִשְׁתַּנִּין כִּכְרוּם לְכַמָּה גְּוָנִין",
+   "target_he": "מִדַּת תִּפְאֶרֶת מִמִּדּוֹת הַנְּפוּלִין",
+   "proof": "וְעַל־כֵּן פָּנָיו מִשְׁתַּנִּין כִּכְרוּם לְכַמָּה גְּוָנִין, שֶׁהוּא גַּם כֵּן מִדַּת תִּפְאֶרֶת מִמִּדּוֹת הַנְּפוּלִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

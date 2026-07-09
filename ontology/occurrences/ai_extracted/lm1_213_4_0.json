@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 213,
+ "chunk": "213_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שליטת הסטרא אחרא (בעל דבר) על האדם וקבלת כח מהשם",
+   "target_he": "סוף אדם למות",
+   "proof": "וַאֲזַי, כְּשֶׁשּׁוֹלֵט עַל הָאָדָם, חַס וְשָׁלוֹם, וּמְקַבֵּל עוֹד כֹּחַ מִזֶּה הַשֵּׁם כַּנַּ\"ל, אֲזַי נַעֲשֶׂה מֵהַשֵּׁם הַנַּ\"ל: סוֹף אָדָם לָמוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "סוף אדם למות",
+   "target_he": "שם סא\"ל",
+   "proof": "שֶׁהוּא רָאשֵׁי־תֵּבוֹת שֵׁם סא\"ל הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמירת עצמן בכח השם הנ\"ל",
+   "target_he": "מכסה ומסתר",
+   "proof": "אֲבָל כְּשֶׁמְּשַׁמְּרִין אֶת עַצְמָן בְּכֹחַ הַשֵּׁם הַנַּ\"ל, אֲזַי הַשֵּׁם הַנַּ\"ל הוּא מִכְסֶה וּמִסְתָּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מכסה ומסתר",
+   "target_he": "אתה סתר לי",
+   "proof": "אֲזַי הַשֵּׁם הַנַּ\"ל הוּא מִכְסֶה וּמִסְתָּר, בְּחִינַת: אַתָּה סֵתֶר לִי, וְגַם מִצַּר תִּצְּרֵנִי וְתִשְׁמְרֵנִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

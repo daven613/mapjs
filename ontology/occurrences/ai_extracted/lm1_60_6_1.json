@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תַּאֲווֹת וּמַעֲשִׂים רָעִים",
+   "target_he": "בְּחִינַת שֵׁנָה",
+   "proof": "וְיֵשׁ שֶׁנָּפְלוּ לִבְחִינַת שֵׁנָה, עַל יְדֵי תַּאֲווֹת וּמַעֲשִׂים רָעִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילַת מַאֲכָל שֶׁלֹּא נִתְבָּרֵר לְמַאֲכַל אָדָם",
+   "target_he": "בְּחִינַת שֵׁנָה",
+   "proof": "כִּי לִפְעָמִים כְּשֶׁאוֹכֵל הָאָדָם מַאֲכָל שֶׁלֹּא נִתְבָּרֵר עֲדַיִן לְמַאֲכַל אָדָם, עַל יְדֵי זֶה נוֹפֵל מֹחוֹ לִבְחִינַת שֵׁנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֲכִילָה בִּקְדֻשָּׁה וּבְטָהֳרָה",
+   "target_he": "לֶחֶם הַפָּנִים",
+   "proof": "וּכְשֶׁאוֹכֵל בִּקְדֻשָּׁה וּבְטָהֳרָה, אֲזַי הוּא בְּחִינַת: לֶחֶם הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַשֵּׂכֶל",
+   "target_he": "הַפָּנִים",
+   "proof": "כִּי הַשֵּׂכֶל הוּא הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה בִּקְדֻשָּׁה",
+   "target_he": "פָּנָיו הַיְנוּ הַשֵּׂכֶל",
+   "proof": "אֲבָל כְּשֶׁאֵין אֲכִילָתוֹ בִּקְדֻשָּׁה, אֲזַי אוֹבֵד פָּנָיו, הַיְנוּ הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה בִּקְדֻשָּׁה",
+   "target_he": "בְּחִינַת שֵׁנָה",
+   "proof": "אֲבָל כְּשֶׁאֵין אֲכִילָתוֹ בִּקְדֻשָּׁה, אֲזַי אוֹבֵד פָּנָיו, הַיְנוּ הַשֵּׂכֶל, וְנוֹפֵל לִבְחִינַת שֵׁנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

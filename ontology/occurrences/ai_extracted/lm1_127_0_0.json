@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 127,
+ "chunk": "127_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַבְּגָדִים",
+   "target_he": "חַשְׁמַ\"ל",
+   "proof": "הַבְּגָדִים הֵם בְּסוֹד הַחַשְׁמַ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חַשְׁמַ\"ל",
+   "target_he": "שְׁמִירָה",
+   "proof": "שֶׁהוּא שְׁמִירָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּגָדִים קְרוּעִים",
+   "target_he": "שְׁמִירָה",
+   "proof": "כִּי הוּא קִלְקוּל הַשְּׁמִירָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

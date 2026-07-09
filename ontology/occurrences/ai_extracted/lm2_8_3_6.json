@@ -1,0 +1,127 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_3_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עמלק",
+   "target_he": "תאוות ניאוף",
+   "proof": "כִּי עֲמָלֵק טִמֵּא אֶת יִשְׂרָאֵל בִּפְגַם תַּאֲוַת נִאוּף",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֲשֶׁר קָרְךָ בַּדֶּרֶךְ",
+   "target_he": "מִקְרֵה־לַיְלָה",
+   "proof": "אֲשֶׁר קָרְךָ בַּדֶּרֶךְ, בְּחִינַת מִקְרֵה־לַיְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עמלק",
+   "target_he": "מִקְרֵה־לַיְלָה",
+   "proof": "שֶׁבָּא עַל־יְדֵי בְּחִינַת עֲמָלֵק",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "עמלק",
+   "proof": "כִּי עֲמָלֵק יוֹנֵק מִבְּחִינַת הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רֵאשִׁית גּוֹיִם עֲמָלֵק",
+   "target_he": "וְהַנָּחָשׁ הָיָה עָרוּם",
+   "proof": "שֶׁזֶּה בְּחִינַת: וְהַנָּחָשׁ הָיָה עָרוּם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "וְהַנָּחָשׁ הָיָה עָרוּם",
+   "target_he": "טֻמְאַת הַתַּאֲוָה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה בָּא, חַס וְשָׁלוֹם, טֻמְאַת הַתַּאֲוָה הַזֹּאת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טֻמְאַת הַתַּאֲוָה",
+   "target_he": "מִלְחֶמֶת עֲמָלֵק",
+   "proof": "וְזֶה בְּחִינַת מִלְחֶמֶת עֲמָלֵק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַתִּקּוּן לְמִלְחֶמֶת עֲמָלֵק",
+   "target_he": "קְרִיעַת יַם־סוּף",
+   "proof": "וְהַתִּקּוּן לָזֶה הוּא בְּחִינַת קְרִיעַת יַם־סוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַתָּה פוֹרַרְתָּ בְעָזְּךָ יָם, שִׁבַּרְתָּ רָאשֵׁי תַנִּינִים עַל הַמָּיִם",
+   "target_he": "קְרִיעַת יַם־סוּף",
+   "proof": "בְּחִינַת: אַתָּה פוֹרַרְתָּ בְעָזְּךָ יָם, שִׁבַּרְתָּ רָאשֵׁי תַנִּינִים עַל הַמָּיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קְרִיעַת יַם־סוּף",
+   "target_he": "מַטֵּה עֹז",
+   "proof": "הַיְנוּ בְּחִינַת מַטֵּה עֹז הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַטֵּה עֹז",
+   "target_he": "מֵימֵי הַדַּעַת",
+   "proof": "שֶׁעַל־יְדֵי־זֶה מוֹצִיאִין מִמֶּנּוּ מֵימֵי הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַטֵּה עֹז",
+   "target_he": "וַיִּשְׁמַע יִתְרוֹ",
+   "proof": "וְעַל־יְדֵי־זֶה: וַיִּשְׁמַע יִתְרוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וַיִּשְׁמַע יִתְרוֹ",
+   "target_he": "גֵּרִים",
+   "proof": "הַיְנוּ בְּחִינַת גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

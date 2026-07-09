@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_11_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עַזּוּת דִּקְדֻשָּׁה",
+   "target_he": "תִּשְׁרֵי",
+   "proof": "וְעַזּוּת דִּקְדֻשָּׁה הוּא בְּחִינַת תִּשְׁרֵי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קוֹלוֹת",
+   "target_he": "עַזּוּת",
+   "proof": "שֶׁהַקּוֹלוֹת כֻּלָּם הֵן בְּחִינַת עַזּוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַזּוּת דִּקְדֻשָּׁה",
+   "target_he": "אֱמוּנָה",
+   "proof": "כִּי עַל־יְדֵי עַזּוּת דִּקְדֻשָּׁה זוֹכִין לֶאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמוּנָה",
+   "target_he": "חוֹתַם הַיְדַיִן",
+   "proof": "שֶׁהוּא בְּחִינַת חוֹתַם הַיְדַיִן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "קַבָּלַת מוּסָר מִמּוֹכִיחֵי הַדּוֹר",
+   "proof": "וְעַל־יְדֵי־זֶה זוֹכִין לְקַבֵּל מוּסָר מִמּוֹכִיחֵי הַדּוֹר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קַבָּלַת מוּסָר מִמּוֹכִיחֵי הַדּוֹר",
+   "target_he": "חוֹתַם הָרַגְלִין",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת חוֹתַם הָרַגְלִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חוֹתַם הַיְדַיִן וְחוֹתַם הָרַגְלִין",
+   "target_he": "שְׁנֵי הַחוֹתָמוֹת, חוֹתָם בְּתוֹךְ חוֹתָם",
+   "proof": "שֶׁהֵם בְּחִינַת שְׁנֵי הַחוֹתָמוֹת, חוֹתָם בְּתוֹךְ חוֹתָם, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

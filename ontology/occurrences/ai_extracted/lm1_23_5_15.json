@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_15",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שֶׁקֶר",
+   "target_he": "עֲבוֹדָה זָרָה",
+   "proof": "עַל־יְדֵי שֶׁקֶר, שֶׁהוּא עֲבוֹדָה זָרָה, תַּאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שֶׁקֶר",
+   "target_he": "תַּאֲוַת מָמוֹן",
+   "proof": "עַל־יְדֵי שֶׁקֶר, שֶׁהוּא עֲבוֹדָה זָרָה, תַּאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁקֶר",
+   "target_he": "קִיּוּם וּמַעֲמָד",
+   "proof": "וְעַל כֵּן עַל־יְדֵי שֶׁקֶר... אֵין לוֹ שׁוּם קִיּוּם וּמַעֲמָד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קִיּוּם וּמַעֲמָד",
+   "target_he": "מָמוֹן (יְקוּם)",
+   "proof": "הַיְנוּ שֶׁאֵין לוֹ מָמוֹן, הַנִּקְרָא יְקוּם וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲבוֹדָה זָרָה",
+   "target_he": "פֵּרִין",
+   "proof": "כִּי עֲבוֹדָה זָרָה, אֵל אַחֵר, אִסְתָּרֵס וְלָא עָבֵד פֵּרִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּאֲוַת מָמוֹן",
+   "target_he": "מִיתָה בַּעֲלֵי חוֹבוֹת",
+   "proof": "אֵלּוּ הָרוֹדְפִים בְּיוֹתֵר אַחַר תַּאֲוַת מָמוֹן, הֵם מֵתִים בַּעֲלֵי חוֹבוֹת, וּמְאוּמָה אֵין בְּיָדָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּאֲוַת מָמוֹן",
+   "target_he": "בַּעֲלֵי חוֹבוֹת בְּחַיֵּיהֶם",
+   "proof": "וַאֲפִלּוּ אִם אֵינָם מֵתִים בַּעֲלֵי חוֹבוֹת, הֵם בְּחַיֵּיהֶם בַּעֲלֵי חוֹבוֹת לְתַאֲוָתָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

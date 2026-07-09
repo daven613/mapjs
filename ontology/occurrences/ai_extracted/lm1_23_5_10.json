@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תַּאֲוַת מָמוֹן",
+   "target_he": "מוֹצֵא אֲנִי מַר מִמָּוֶת אֶת הָאִשָּׁה",
+   "proof": "שֶׁתַּאֲוַת מָמוֹן הוּא בְּחִינַת: מוֹצֵא אֲנִי מַר מִמָּוֶת אֶת הָאִשָּׁה וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מוֹצֵא אֲנִי מַר מִמָּוֶת אֶת הָאִשָּׁה",
+   "target_he": "טְחוֹל",
+   "proof": "וּמוֹצֵא אֲנִי מַר מִמָּוֶת אֶת הָאִשָּׁה, וְדָא טְחוֹל וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פַּרְנָסָה דִּקְדֻשָּׁה",
+   "target_he": "מָצָא אִשָּׁה מָצָא טוֹב",
+   "proof": "אַךְ פַּרְנָסָה דִּקְדֻשָּׁה הוּא בְּחִינַת: מָצָא אִשָּׁה מָצָא טוֹב וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָצָא אִשָּׁה מָצָא טוֹב",
+   "target_he": "צַדִּיק",
+   "proof": "שֶׁהוּא בְּחִינַת הַצַּדִּיק כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

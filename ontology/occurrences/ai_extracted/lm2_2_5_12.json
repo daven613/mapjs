@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_5_12",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מל (ראשי תיבות מזמור לתודה)",
+   "target_he": "ע' קלין של היולדת",
+   "proof": "בְּחִינַת ע' קָלִין שֶׁל הַיּוֹלֶדֶת שֶׁצּוֹעֶקֶת קֹדֶם הַלֵּדָה, כַּמּוּבָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קס\"ח",
+   "target_he": "חסד",
+   "proof": "קס\"ח הוּא חֶסֶד בְּא\"ת ב\"ש",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חסד",
+   "target_he": "הלכות",
+   "proof": "שֶׁעַל יְדֵי הַחֶסֶד, בְּחִינַת הֲלָכוֹת, הַהוֹלָדָה בְּנָקֵל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חסד",
+   "target_he": "הולדה בנקל",
+   "proof": "שֶׁעַל יְדֵי הַחֶסֶד, בְּחִינַת הֲלָכוֹת, הַהוֹלָדָה בְּנָקֵל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קליפה",
+   "target_he": "קישוי לידה",
+   "proof": "כִּי קִשּׁוּי לֵילֵד הוּא עַל־יְדֵי שֶׁיֵּשׁ קְלִפָּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מ\"ג תיבות",
+   "target_he": "בחינת גם",
+   "proof": "כְּנֶגֶד בְּחִינַת גַּם הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

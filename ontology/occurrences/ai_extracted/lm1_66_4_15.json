@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 66,
+ "chunk": "66_4_15",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שהקניטתו",
+   "target_he": "חרון אף",
+   "proof": "שֶׁהִקְנִיטַתּוּ – זֶה בְּחִינַת הַחֲרוֹן אַף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שתי רוחות",
+   "target_he": "שתי רוחות הנ\"ל",
+   "proof": "שְׁתֵּי רוּחוֹת – זֶה בְּחִינַת שְׁתֵּי רוּחוֹת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְתָּקַת הַחֲרוֹן אַף",
+   "target_he": "שְׁתֵּי רוּחוֹת",
+   "proof": "הַנַּעֲשִׂין עַל־יְדֵי הַמְתָּקַת הַחֲרוֹן אַף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פַּרְנָסָה",
+   "target_he": "הוֹצָאָה מִכֹּחַ אֶל הַפֹּעַל",
+   "proof": "וְזֶה תָּלוּי בִּבְחִינַת פַּרְנָסָה, שֶׁעַל יָדָהּ מוֹצִיאִין מִכֹּחַ אֶל הַפֹּעַל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

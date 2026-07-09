@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 55,
+ "chunk": "55_9_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "כְּלָלִיּוּת מַלְאָךְ סנד\"ל בַּמַּלְאָךְ מט\"ט שַׂר הַפָּנִים",
+   "target_he": "כְּלָלִיּוּת עֲשִׂיָּה בִּיצִירָה",
+   "proof": "וְזֶהוּ בְּחִינַת כְּלָלִיּוּת מַלְאָךְ סנד\"ל בַּמַּלְאָךְ מט\"ט שַׂר הַפָּנִים, כְּלָלִיּוּת עֲשִׂיָּה בִּיצִירָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּפִילַת הַפָּסוּק כֹּל הַנְּשָׁמָה",
+   "target_he": "כְּלָלִיּוּת מַלְאָךְ סנד\"ל בַּמַּלְאָךְ מט\"ט שַׂר הַפָּנִים",
+   "proof": "עַל־יְדֵי שֶׁכּוֹפְלִין הַפָּסוּק כֹּל הַנְּשָׁמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַיִן הָרָע",
+   "target_he": "נְשִׁימָה",
+   "proof": "וְעַל־יְדֵי עַיִן הָרָע נִכְפָּל הַנְּשִׁימָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְּשִׁימָה כְּפוּלָה",
+   "target_he": "הַלֵּל כָּפוּל",
+   "proof": "וּכְשֶׁהַנְּשִׁימָה כְּפוּלָה, גַּם הַהַלֵּל צָרִיךְ לִכְפֹּל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מט\"ט שַׂר הַפָּנִים מֵאִיר לַעֲשִׂיָּה",
+   "target_he": "עוֹשֵׂי טוֹב זוֹכִין לִפְּנֵי ה'",
+   "proof": "הַיְנוּ שֶׁעוֹשֵׂי טוֹב זוֹכִין לִפְּנֵי ה' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּרִיתוּת הָרַע עַיִן",
+   "target_he": "כְּפִילַת הַנְּשִׁימָה",
+   "proof": "עַל־יְדֵי כְּרִיתוּת הָרַע עַיִן, שֶׁגָּרְמוּ לִכְפִילַת הַנְּשִׁימָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

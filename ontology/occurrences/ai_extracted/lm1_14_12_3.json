@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_12_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם",
+   "target_he": "תְּפִלָּה",
+   "proof": "וְעַל־יְדֵי הַשָּׁלוֹם זוֹכִין לִתְפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "שָׁלוֹם הַכְּלָלִי",
+   "proof": "וְעַל־יְדֵי־זֶה זוֹכִין לַשָּׁלוֹם הַכְּלָלִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם",
+   "target_he": "מַשָּׂא וּמַתָּן",
+   "proof": "כִּי כָּל הַמַּשָּׂא וּמַתָּן שֶׁבָּעוֹלָם הוּא מֵהֶעְדֵּר הַשָּׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת מַחֲלֹקוֹת",
+   "target_he": "מַשָּׂא וּמַתָּן וְהַסְּחוֹרוֹת",
+   "proof": "נִמְצָא, שֶׁכָּל הַמַּשָּׂא וּמַתָּן וְהַסְּחוֹרוֹת הוּא רַק עַל־יְדֵי בְּחִינַת מַחֲלֹקוֹת, שֶׁאֵין שָׁלוֹם בֵּין הָרְצוֹנוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַחֲלֹקוֹת שֶׁאֵין שָׁלוֹם בֵּין הָרְצוֹנוֹת",
+   "target_he": "וַיְהִי רִיב בֵּין רֹעֵי מִקְנֵה אַבְרָם וּבֵין רֹעֵי מִקְנֵה לוֹט וְהַכְּנַעֲנִי אָז בָּאָרֶץ",
+   "proof": "וְזֶה בְּחִינַת (בראשית י״ג:ז׳): וַיְהִי רִיב בֵּין רֹעֵי מִקְנֵה אַבְרָם וּבֵין רֹעֵי מִקְנֵה לוֹט, וְהַכְּנַעֲנִי אָז בָּאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּנַעֲנִי",
+   "target_he": "סוֹחֵר",
+   "proof": "כְּנַעֲנִי, בְּחִינַת סוֹחֵר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת רִיב וּמַחֲלֹקֶת",
+   "target_he": "סוֹחֲרִים וּמַשָּׂא וּמַתָּן בָּעוֹלָם",
+   "proof": "הַיְנוּ עַל־יְדֵי בְּחִינַת רִיב וּמַחֲלֹקֶת... עַל־יְדֵי־זֶה יֵשׁ סוֹחֲרִים וּמַשָּׂא וּמַתָּן בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

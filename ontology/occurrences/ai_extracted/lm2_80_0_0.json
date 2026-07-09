@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 80,
+ "chunk": "80_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הִתְנַשְּׂאוּת",
+   "target_he": "דֶּשֶׁן",
+   "proof": "כָּל מִי שֶׁרָצָה לִזְכּוֹת בְּהִתְנַשְּׂאוּת, הַנִּקְרָא דֶּשֶׁן, כְּמוֹ שֶׁכָּתוּב: דִּשַּׁנְתָּ בַשֶּׁמֶן רֹאשִׁי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עוֹלִין בַּכֶּבֶשׁ",
+   "target_he": "כִּבְשׁוֹנוֹ שֶׁל עוֹלָם",
+   "proof": "עוֹלִין בַּכֶּבֶשׁ – הַיְנוּ כִּבְשׁוֹנוֹ שֶׁל עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כִּבְשׁוֹנוֹ שֶׁל עוֹלָם",
+   "target_he": "סוֹדוֹת הַתּוֹרָה",
+   "proof": "הַיְנוּ מִי שֶׁיָּדַע וְהִשִּׂיג יוֹתֵר בְּסוֹדוֹת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְדִיעָה וְהַשָּׂגָה יוֹתֵר בְּסוֹדוֹת הַתּוֹרָה",
+   "target_he": "מִנּוּי פַּרְנָס עַל הַצִּבּוּר",
+   "proof": "לָזֶה הָיוּ מְמַנִּין פַּרְנָס עַל הַצִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אַרְבַּע אַמּוֹת",
+   "target_he": "אַרְבַּע אַמּוֹת שֶׁל הֲלָכָה",
+   "proof": "הַיְנוּ אַרְבַּע אַמּוֹת שֶׁל הֲלָכָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קְדִימָה בְּאַרְבַּע אַמּוֹת שֶׁל הֲלָכָה",
+   "target_he": "תְּרוּמַת הַדֶּשֶׁן",
+   "proof": "זָכָה – זֶה הָיָה זוֹכֶה לִתְרוּמַת הַדֶּשֶׁן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּרוּמַת הַדֶּשֶׁן",
+   "target_he": "דִּשַּׁנְתָּ בַשֶּׁמֶן רֹאשִׁי",
+   "proof": "זֶה הָיָה זוֹכֶה לִתְרוּמַת הַדֶּשֶׁן, לִבְחִינוֹת: דִּשַּׁנְתָּ בַשֶּׁמֶן וְכוּ׳",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 234,
+ "chunk": "234_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַעֲשִׂיּוֹת שֶׁל צַדִּיקִים",
+   "target_he": "אוֹר",
+   "proof": "מַעֲשִׂיּוֹת שֶׁל צַדִּיקִים הֵם בְּחִינַת אוֹר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַעֲשִׂיּוֹת שֶׁל רְשָׁעִים",
+   "target_he": "חֹשֶׁךְ",
+   "proof": "מַעֲשִׂיּוֹת שֶׁל רְשָׁעִים הֵם בְּחִינַת חֹשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַבְדָּלָה בֵּין אוֹר לְחֹשֶׁךְ",
+   "target_he": "לְסַפֵּר מַעֲשִׂיּוֹת שֶׁל צַדִּיקִים",
+   "proof": "וּמִי שֶׁיָּכוֹל לְהַבְדִּיל בֵּין אוֹר לְחֹשֶׁךְ יָכוֹל לְסַפֵּר מַעֲשִׂיּוֹת שֶׁל צַדִּיקִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְסַפֵּר מַעֲשִׂיּוֹת שֶׁל צַדִּיקִים",
+   "target_he": "טָהֳרַת הַמַּחֲשָׁבָה",
+   "proof": "וְעַל־יְדֵי־זֶה נִטְהָר מַחֲשַׁבְתּוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

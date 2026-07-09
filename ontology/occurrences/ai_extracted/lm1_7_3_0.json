@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 7,
+ "chunk": "7_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "התקרבות לצדיקים",
+   "target_he": "אמת",
+   "proof": "וְאִי־אֶפְשָׁר לָבוֹא לֶאֱמֶת אֶלָּא עַל־יְדֵי הִתְקָרְבוּת לְצַדִּיקִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קבלת עצת הצדיקים",
+   "target_he": "אמת",
+   "proof": "וְעַל־יְדֵי שֶׁמְּקַבֵּל מֵהֶם עֲצָתָם, נֶחְקָק בּוֹ אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "העצות שמקבל מהצדיקים",
+   "target_he": "נישואין וזיווג",
+   "proof": "כִּי הָעֵצוֹת שֶׁמְּקַבֵּל מֵהֶם הוּא בְּחִינַת נִשּׂוּאִין וְזִוּוּג",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קבלת עצות מרשעים",
+   "target_he": "נישואין בקליפה",
+   "proof": "וּכְשֶׁמְּקַבְּלִין עֵצוֹת מֵרְשָׁעִים, הוּא בְּחִינַת נִשּׂוּאִין בַּקְּלִפָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עצות הנחש",
+   "target_he": "נישואין",
+   "proof": "עֲצוֹת הַנָּחָשׁ שֶׁקִּבְּלָה הוּא בְּחִינַת נִשּׂוּאִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נישואין (עם הנחש)",
+   "target_he": "זוהמא",
+   "proof": "וְעַל־יְדֵי נִשּׂוּאִין הֵטִיל בָּהּ זֻהֲמָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תרי\"ג עטין דקדושה",
+   "target_he": "זוהמא",
+   "proof": "כִּי שָׁם קִבְּלוּ תַּרְיַ\"ג עֵטִין דִּקְדֻשָּׁה... וּבְמַעֲמַד הַר־סִינַי פָּסְקָה זֻהֲמָתָן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תרי\"ג עטין דקדושה",
+   "target_he": "נישואין בקדושה",
+   "proof": "כִּי שָׁם קִבְּלוּ תַּרְיַ\"ג עֵטִין דִּקְדֻשָּׁה, וְהָיְתָה לָהֶם נִשּׂוּאִין בִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כליות",
+   "target_he": "כלי ההולדה כלי הזרע",
+   "proof": "וּכְלָיוֹת הֵם כְּלֵי הַהוֹלָדָה, כְּלֵי הַזֶּרַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קבלת עצה מאדם",
+   "target_he": "זרע",
+   "proof": "נִמְצָא, כְּשֶׁמְּקַבְּלִין עֵצָה מֵאָדָם, כְּאִלּוּ מְקַבְּלִין מִמֶּנּוּ זֶרַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

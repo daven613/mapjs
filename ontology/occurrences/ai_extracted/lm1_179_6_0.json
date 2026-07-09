@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 179,
+ "chunk": "179_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מִצְווֹת וּמַעֲשִׂים טוֹבִים",
+   "target_he": "הַיּוֹם",
+   "proof": "וּכְשֶׁעוֹשֶׂה בְּזֶה הַיּוֹם מִצְווֹת וּמַעֲשִׂים טוֹבִים, אֲזַי מְחַיֶּה הַיּוֹם וּמַמְשִׁיךְ לוֹ חִיּוּת וְשֶׁפַע רַב מִלְּמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִצְווֹת",
+   "target_he": "שֶׁפַע מִלְּמַעְלָה",
+   "proof": "אִם אֵינוֹ עוֹשֶׂה בּוֹ מִצְווֹת, אֲזַי אֵינוֹ יוֹרֵד עָלָיו שֶׁפַע מִלְּמַעְלָה כִּי־אִם בְּצִמְצוּם גָּדוֹל מְאֹד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

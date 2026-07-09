@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 72,
+ "chunk": "72_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַיֵּצֶר הָרָע שֶׁלָּהֶם",
+   "target_he": "הַדָּמִים בְּעַצְמָם, הַדָּם שֶׁבֶּחָלָל הַשְּׂמָאלִי",
+   "proof": "הֵם הַדָּמִים בְּעַצְמָם, הַיְנוּ הַדָּם שֶׁבֶּחָלָל הַשְּׂמָאלִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲכִירַת וּבִלְבּוּל הַדָּמִים",
+   "target_he": "בִּלְבּוּלִים",
+   "proof": "וְעִקַּר בִּלְבּוּלִים שֶׁלָּהֶם, מֵעֲכִירַת וּמִבִּלְבּוּל הַדָּמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

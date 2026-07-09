@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שְׁלֵמוּת",
+   "target_he": "מֵצַח הַנָּחָשׁ",
+   "proof": "מִמַּאֲרִיכֵי יָמִים שֶׁבַּדּוֹר, כְּשֶׁאֵין בָּהֶם שְׁלֵמוּת, מִזֶּה יוֹנֵק מֵצַח הַנָּחָשׁ הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זָקֵן",
+   "target_he": "קָנָה חָכְמָה",
+   "proof": "כִּי זָקֵן – זֶה קָנָה חָכְמָה (קדושין לב:)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זִקְנָה",
+   "target_he": "דַּעְתָּן מִתְיַשֶּׁבֶת",
+   "proof": "זִקְנֵי תַּלְמִידֵי חֲכָמִים, כָּל זְמַן שֶׁמַּזְקִינִין, דַּעְתָּן מִתְיַשֶּׁבֶת עֲלֵיהֶן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

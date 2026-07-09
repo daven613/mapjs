@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 8,
+ "chunk": "8_8_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הָרוּחַ־חַיִּים שֶׁלָּהֶם",
+   "target_he": "צִיצִית",
+   "proof": "עַל־יְדֵי הָרוּחַ־חַיִּים שֶׁלָּהֶם, שֶׁהוּא בְּחִינַת צִיצִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צִיצִית",
+   "target_he": "מִכְּנַף הָאָרֶץ זְמִרֹת שָׁמַעְנוּ",
+   "proof": "בְּחִינַת מִכְּנַף הָאָרֶץ זְמִרֹת שָׁמַעְנוּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כִּנּוֹר שֶׁל חָמֵשׁ נִימִין",
+   "target_he": "הַתּוֹרָה",
+   "proof": "כִּנּוֹר שֶׁל חָמֵשׁ נִימִין – בְּחִינַת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרוּחַ־חַיִּים שֶׁלָּהֶם",
+   "target_he": "רְשָׁעִים",
+   "proof": "כִּי הַצַּדִּיקִים גְּמוּרִים מַכְנִיעִין אוֹתָם וּמַשְׁפִּילִים רְשָׁעִים עֲדֵי אָרֶץ עַל־יְדֵי הָרוּחַ־חַיִּים שֶׁלָּהֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוּחַ הַחַיִּים",
+   "target_he": "רוּחַ שֶׁל הָאֲנָחָה",
+   "proof": "כִּי רוּחַ הַחַיִּים הוּא בְּהָרֵאָה, וּמִשָּׁם הַמְשָׁכַת הָרוּחַ שֶׁל הָאֲנָחָה, כַּיָדוּעַ בְּחוּשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

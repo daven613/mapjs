@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 280,
+ "chunk": "280_10_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "פְּנִימִיּוּת מַחֲשַׁבְתּוֹ",
+   "target_he": "הַתּוֹרָה",
+   "proof": "שֶׁהִיא בְּחִינַת הַתּוֹרָה",
+   "explicitness": "inferred",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פְּנִימִיּוּת הַמֹּחִין דַּעֲשִׂיָּה",
+   "target_he": "הַמַּשָּׂא וּמַתָּן",
+   "proof": "זֶהוּ בְּחִינַת פְּנִימִיּוּת הַמֹּחִין דַּעֲשִׂיָּה, הַיְנוּ שֶׁל הַמַּשָּׂא וּמַתָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמַּשָּׂא וּמַתָּן",
+   "target_he": "עֲשִׂיָּה",
+   "proof": "שֶׁהוּא בְּחִינוֹת עֲשִׂיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲשִׂיָּה",
+   "target_he": "יְצִירָה",
+   "proof": "שֶׁעוֹלָה אֶל הַיְצִירָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יְצִירָה",
+   "target_he": "הַתּוֹרָה",
+   "proof": "דְּהַיְנוּ הַתּוֹרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַלְכוּת דַּעֲשִׂיָּה",
+   "target_he": "הָאֱמוּנָה",
+   "proof": "וּמַלְכוּת דַּעֲשִׂיָּה, הַיְנוּ בְּחִינוֹת הָאֱמוּנָה שֶׁבַּמַּשָּׂא וּמַתָּן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָאֱמוּנָה",
+   "target_he": "הַקְּלִפּוֹת",
+   "proof": "עוֹלָה מִן הַקְּלִפּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָאֱמוּנָה",
+   "target_he": "הַנִּיצוֹצוֹת",
+   "proof": "כִּי הִיא מְבָרֶרֶת הַנִּיצוֹצוֹת מֵהֶם וְעוֹלָה מֵהֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חַבַּ\"ד דַּעֲשִׂיָּה",
+   "target_he": "מַלְכוּת",
+   "proof": "וְעַל יְדֵי שֶׁעָלָה חַבַּ\"ד דַּעֲשִׂיָּה לַיְצִירָה, עַל יְדֵי זֶה יֵשׁ מָקוֹם לַמַּלְכוּת לַעֲלוֹת לַעֲשִׂיָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

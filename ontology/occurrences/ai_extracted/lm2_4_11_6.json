@@ -1,0 +1,127 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_11_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "נָחֵת בַּר אָמוֹרַאי",
+   "target_he": "הֶחָכָם שֶׁבִּקְדֻשָּׁה",
+   "proof": "הַיְנוּ בְּחִינַת הֶחָכָם שֶׁבִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֶחָכָם שֶׁבִּקְדֻשָּׁה",
+   "target_he": "אֱמֹר לַחָכְמָה אֲחוֹתִי אָתְּ",
+   "proof": "בְּחִינַת (משלי ז׳:ד׳): אֱמֹר לַחָכְמָה אֲחוֹתִי אָתְּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תַּנִּינָא",
+   "target_he": "מֵצַח הַנָּחָשׁ",
+   "proof": "הַיְנוּ שֶׁבָּא בְּחִינַת מֵצַח הַנָּחָשׁ, שֹׁרֶשׁ חָכְמַת הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֵצַח הַנָּחָשׁ",
+   "target_he": "שֹׁרֶשׁ חָכְמַת הַטֶּבַע",
+   "proof": "בְּחִינַת מֵצַח הַנָּחָשׁ, שֹׁרֶשׁ חָכְמַת הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַסְּפִינָה",
+   "target_he": "שֹׁרֶשׁ הָרָצוֹן",
+   "proof": "וְרָצָה לִבְלֹעַ הַסְּפִינָה, בְּחִינַת שֹׁרֶשׁ הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֹׁרֶשׁ הָרָצוֹן",
+   "target_he": "כִּי שָׁם חֶלְקַת מְחֹקֵק סָפוּן",
+   "proof": "בְּחִינַת: כִּי שָׁם חֶלְקַת מְחֹקֵק סָפוּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֵצַח הַנָּחָשׁ",
+   "target_he": "שֹׁרֶשׁ הָרָצוֹן",
+   "proof": "כִּי מֵצַח הַנָּחָשׁ רָצָה לְהִתְגַּבֵּר גַּם בְּשֹׁרֶשׁ הָרָצוֹן, לְהַטִּיל פְּגָם וּכְפִירָה שָׁם, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פּוּשְׁקַנְצָא",
+   "target_he": "עוֹרֵב",
+   "proof": "אֲתָא פּוּשְׁקַנְצָא – הַיְנוּ עוֹרֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עוֹרֵב",
+   "target_he": "צְדָקָה",
+   "proof": "שֶׁבָּא בְּחִינַת עוֹרֵב, דְּהַיְנוּ צְדָקָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲבוֹדַת הַצְּדָקָה",
+   "target_he": "עוֹרֵב",
+   "proof": "כִּי עִקָּר עֲבוֹדַת הַצְּדָקָה – בִּבְחִינַת עוֹרֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עוֹרֵב",
+   "target_he": "וְאֶת הָעֹרְבִים צִוִּיתִי",
+   "proof": "בְּחִינַת: וְאֶת הָעֹרְבִים צִוִּיתִי וְכוּ׳",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "רַחֲמָנוּת",
+   "proof": "לַהֲפֹךְ אַכְזָרִיּוּת לְרַחֲמָנוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "מֵצַּח הַנָּחָשׁ",
+   "proof": "וְעַל יְדֵי זֶה מִתְגַּבְּרִים עַל מֵצַּח הַנָּחָשׁ, חָכְמַת הַטֶּבַע כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_9_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "נָחָשׁ",
+   "target_he": "עַצְבוּת רוּחַ",
+   "proof": "וְיֵשׁ נָחָשׁ, שֶׁעַל יָדָהּ בָּא עַצְבוּת רוּחַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נָחָשׁ",
+   "target_he": "ל\"ט מְלָאכוֹת",
+   "proof": "הַיְנוּ בְּחִינַת ל\"ט מְלָאכוֹת, שֶׁהוּא זֻהֲמַת הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ל\"ט מְלָאכוֹת",
+   "target_he": "זֻהֲמַת הַנָּחָשׁ",
+   "proof": "שֶׁהוּא זֻהֲמַת הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זֻהֲמַת הַנָּחָשׁ",
+   "target_he": "עַצְבוּת רוּחַ",
+   "proof": "עַל־יְדֵי־זֶה בָּא עַצְבוּת רוּחַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַצְבוּת רוּחַ",
+   "target_he": "רוּחַ הַדּוֹפֵק",
+   "proof": "וְעַל־יְדֵי עַצְבוּת רוּחַ אֵין הָרוּחַ דּוֹפֵק כְּסִדּוּרוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוּחַ הַדּוֹפֵק",
+   "target_he": "הָאֵיבָרִים",
+   "proof": "וַאֲזַי נַעֲשִׂים הָאֵיבָרִים כְּבֵדִים, מֵחֲמַת שֶׁאֵין רוּחַ הַדּוֹפֵק מְנַשֵּׁב בָּהֶם כְּסֵדֶר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַיָּדַיִם הַכְּבֵדִים",
+   "target_he": "וִידֵי מֹשֶׁה כְּבֵדִים",
+   "proof": "וַאֲזַי הַיָּדַיִם בִּבְחִינַת (שמות י״ז:י״ב): וִידֵי מֹשֶׁה כְּבֵדִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּבֵדוּת הַיָּדַיִם",
+   "target_he": "עִצְּבוֹן יָדַיִם",
+   "proof": "וְזֶה בְּחִינַת עִצְּבוֹן יָדַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַצְבוּת רוּחַ",
+   "target_he": "הַיָּדַיִם",
+   "proof": "כִּי עִקַּר מַזִּיק הָעַצְבוּת רוּחַ לְהַיָּדַיִם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָאֵיבָרִים הַכְּבֵדִים",
+   "target_he": "רוּחַ הַדּוֹפֵק",
+   "proof": "וּכְשֶׁהָאֵיבָרִים כְּבֵדִים, אֲזַי מַכְבִּידִין יוֹתֵר עַל הָרוּחַ הַדּוֹפֵק, וְנֶחֱלָשׁ עוֹד יוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוּחַ הַדּוֹפֵק",
+   "target_he": "הָאֵיבָרִים",
+   "proof": "וְעַל יְדֵי שֶׁנֶּחֱלָשׁ יוֹתֵר הָרוּחַ הַדּוֹפֵק, נַעֲשִׂים הָאֵיבָרִים כְּבֵדִים עוֹד יוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָאֵיבָרִים הַכְּבֵדִים",
+   "target_he": "רוּחַ הַדּוֹפֵק",
+   "proof": "וְכֵן עַל־יְדֵי שֶׁנַּעֲשִׂים הָאֵיבָרִים עוֹד יוֹתֵר כְּבֵדִים, נֶחֱלָשׁ הָרוּחַ הַדּוֹפֵק עוֹד יוֹתֵר וְיוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוּחַ הַדּוֹפֵק",
+   "target_he": "נַפְשׁוֹ",
+   "proof": "וְכֵן חוֹזֶרֶת חֲלִילָה, עַד שֶׁיּוֹצֵאת נַפְשׁוֹ, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

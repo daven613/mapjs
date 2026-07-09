@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_14_14",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "סִתְרֵי תּוֹרָה",
+   "target_he": "חַמּוּקֵי יְרֵכַיִךְ",
+   "proof": "וְסִתְרֵי תּוֹרָה הוּא בְּחִינַת (שיר השירים ז׳:ב׳): חַמּוּקֵי יְרֵכַיִךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבְרֵי תוֹרָה בַּסֵּתֶר",
+   "target_he": "תִּקּוּן הַמִּשְׁפָּט",
+   "proof": "וְעַל יְדֵי זֶה נַעֲשֶׂה תִּקּוּן הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּן הַמִּשְׁפָּט",
+   "target_he": "חַמּוּקֵי יְרֵכַיִךְ כְּמוֹ חֲלָאִים",
+   "proof": "בִּבְחִינַת: חַמּוּקֵי יְרֵכַיִךְ כְּמוֹ חֲלָאִים וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חַמּוּקֵי יְרֵכַיִךְ כְּמוֹ חֲלָאִים",
+   "target_he": "שִׁתִּין",
+   "proof": "שֶׁהֵם הַשִּׁתִּין שֶׁמְּחוֹלְלִין וְיוֹרְדִין עַד הַתְּהוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׁתִּין שֶׁמְּחוֹלְלִין וְיוֹרְדִין עַד הַתְּהוֹם",
+   "target_he": "מִשְׁפָּטֶיךָ תְּהוֹם רַבָּה",
+   "proof": "בְּחִינַת (תהילים ל״ו:ז׳): מִשְׁפָּטֶיךָ תְּהוֹם רַבָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מִשְׁפָּטֶיךָ תְּהוֹם רַבָּה",
+   "target_he": "הַמִּשְׁפָּט שֶׁנָּפַל עַד הַתְּהוֹם",
+   "proof": "הַיְנוּ בְּחִינַת הַמִּשְׁפָּט שֶׁנָּפַל עַד הַתְּהוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָעֻבְדּוֹת הַנַּ\"ל",
+   "target_he": "סִתְרֵי־תוֹרָה",
+   "proof": "שֶׁהֵם בְּחִינַת סִתְרֵי־תוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָעֻבְדּוֹת הַנַּ\"ל",
+   "target_he": "הַמִּשְׁפָּט שֶׁנָּפַל",
+   "proof": "הֵם בּוֹקְעִין וְיוֹרְדִין עַד הַתְּהוֹם וּמַעֲלִין אֶת הַמִּשְׁפָּט מִנְּפִילָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַעֲלִין אֶת הַמִּשְׁפָּט מִנְּפִילָתוֹ",
+   "target_he": "תְּהוֹם אֶל תְּהוֹם קוֹרֵא",
+   "proof": "בִּבְחִינַת (תהילים מ״ב:ח׳): תְּהוֹם אֶל תְּהוֹם קוֹרֵא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּהוֹם אֶל תְּהוֹם קוֹרֵא",
+   "target_he": "הַתְּהוֹמוֹת קוֹרִין זֶה לָזֶה",
+   "proof": "הַיְנוּ, שֶׁהַתְּהוֹמוֹת קוֹרִין זֶה לָזֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

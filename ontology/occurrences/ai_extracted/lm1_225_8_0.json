@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 225,
+ "chunk": "225_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כָּלוּ עֵינַי",
+   "target_he": "הַשֵּׂכֶל",
+   "proof": "בְּחִינַת כָּלוּ עֵינַי, דְּהַיְנוּ הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשֵּׂכֶל",
+   "target_he": "בִּטָּחוֹן",
+   "proof": "כְּשֶׁאֵין הַשֵּׂכֶל בִּשְׁלֵמוּת... וַאֲזַי אֵין לוֹ בִּטָּחוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּטָּחוֹן",
+   "target_he": "חִתּוּךְ הַדִּבּוּר",
+   "proof": "וַאֲזַי אֵין לוֹ בִּטָּחוֹן... אֲזַי נִחַר גְּרוֹנִי, הַיְנוּ שֶׁאֵין לוֹ חִתּוּךְ הַדִּבּוּר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נִחַר גְּרוֹנִי",
+   "target_he": "חִתּוּךְ הַדִּבּוּר",
+   "proof": "אֲזַי נִחַר גְּרוֹנִי, הַיְנוּ שֶׁאֵין לוֹ חִתּוּךְ הַדִּבּוּר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בִּטָּחוֹן",
+   "target_he": "מִקּוֹל הַצִּפְצוּפִים דִּבּוּרִים",
+   "proof": "כְּשֶׁיֵּשׁ לוֹ בִּטָּחוֹן וְעוֹשֶׂה צְדָקָה כַּנַּ\"ל, אֲזַי יָכוֹל לַעֲשׂוֹת מִקּוֹל הַצִּפְצוּפִים דִּבּוּרִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "מִקּוֹל הַצִּפְצוּפִים דִּבּוּרִים",
+   "proof": "כְּשֶׁיֵּשׁ לוֹ בִּטָּחוֹן וְעוֹשֶׂה צְדָקָה כַּנַּ\"ל, אֲזַי יָכוֹל לַעֲשׂוֹת מִקּוֹל הַצִּפְצוּפִים דִּבּוּרִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

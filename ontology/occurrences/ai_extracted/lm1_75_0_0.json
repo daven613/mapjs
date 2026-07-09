@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 75,
+ "chunk": "75_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דמים שעדיין לא עבד בהם השם יתברך",
+   "target_he": "מדת נצחון ומחלוקת ומלחמה",
+   "proof": "וּמֵהֵיכָן בָּא מִדָּה זוֹ, מִדָּמִים שֶׁעֲדַיִן לֹא עָבַד בָּהֶם הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נצחם",
+   "target_he": "דמים",
+   "proof": "וְיֵז נִצְחָם, וּפֵרֵשׁ רַשִׁ\"י: דָּמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלום",
+   "target_he": "ברכה",
+   "proof": "וְלֹא מָצָא הַקָּדוֹשׁ־בָּרוּךְ־הוּא כְּלִי מַחֲזִיק בְּרָכָה לְיִשְׂרָאֵל אֶלָּא הַשָּׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

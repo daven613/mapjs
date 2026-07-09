@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 15,
+ "chunk": "15_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תּוֹרָה",
+   "target_he": "תּוֹרָה שֶׁבְּנִגְלֶה",
+   "proof": "תּוֹרָה קִנְיָן אֶחָד – זֶה בְּחִינַת תּוֹרָה שֶׁבְּנִגְלֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שָׁמַיִם וָאָרֶץ",
+   "target_he": "הַעֲלָאַת הַיִּרְאָה לַדַּעַת",
+   "proof": "שָׁמַיִם וָאָרֶץ קִנְיָן אֶחָד – זֶה בְּחִינַת הַעֲלָאַת הַיִּרְאָה לַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶץ",
+   "target_he": "יִרְאָה",
+   "proof": "אֶרֶץ זֶה בְּחִינַת יִרְאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שָׁמַיִם",
+   "target_he": "דַּעַת",
+   "proof": "וְשָׁמַיִם זֶה בְּחִינַת דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דַּעַת",
+   "target_he": "חִבּוּר",
+   "proof": "כִּי דַּעַת הוּא חִבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שָׁמַיִם",
+   "target_he": "אֵשׁ וּמַיִם מְחֻבָּרִין יַחַד",
+   "proof": "וְזֶה בְּחִינַת שָׁמַיִם – אֵשׁ וּמַיִם מְחֻבָּרִין יַחַד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַבְרָהָם",
+   "target_he": "תְּפִלָּה",
+   "proof": "אַבְרָהָם קִנְיָן אֶחָד – זֶה בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלָּה",
+   "target_he": "שִׁתִּין בָּתֵּי, שִׁשִּׁים הֵמָּה מְלָכוֹת",
+   "proof": "בְּחִינַת שִׁתִּין בָּתֵּי, שִׁשִּׁים הֵמָּה מְלָכוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִשְׂרָאֵל",
+   "target_he": "מִשְׁפָּט",
+   "proof": "יִשְׂרָאֵל קִנְיָן אֶחָד – זֶה בְּחִינַת מִשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִשְׁפָּט",
+   "target_he": "יִרְאָה",
+   "proof": "הַמַּעֲלֶה אֶת הַיִּרְאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

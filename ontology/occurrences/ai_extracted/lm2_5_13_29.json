@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_13_29",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בנו העובד אותו",
+   "target_he": "בן שמשליך עצמו לעבדות",
+   "proof": "הַיְנוּ בְּחִינַת בֵּן שֶׁמַּשְׁלִיךְ עַצְמוֹ לְעַבְדוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בן שמשליך עצמו לעבדות ועושה מעשה עבד",
+   "target_he": "וחמלתי עליו",
+   "proof": "עַל־יְדֵי־זֶה הַשֵּׁם יִתְבָּרַךְ מְרַחֵם עָלָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "וחמלתי עליו",
+   "target_he": "גילוי בחינת צדיק ורע לו רשע וטוב לו",
+   "proof": "וּמַרְאֶה וּמְגַלֶּה לוֹ בְּחִינַת צַדִּיק וְרַע לוֹ, רָשָׁע וְטוֹב לוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "השגת צדיק ורע לו רשע וטוב לו",
+   "target_he": "תיקון המשפט",
+   "proof": "וְזֶה בְּחִינַת תִּקּוּן הַמִּשְׁפָּט; כִּי זוֹכֶה לְהַשִּׂיג צַדִּיק וְרַע לוֹ, רָשָׁע וְטוֹב לוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רבי אמת עם תלמידים",
+   "target_he": "כל הבחינות הנ״ל",
+   "proof": "נִמְצָא שֶׁעַל יְדֵי רַבִּי אֱמֶת עִם תַּלְמִידִים, נַעֲשִׂין וְנִתְתַּקְּנִין כָּל הַבְּחִינוֹת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

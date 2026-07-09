@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 32,
+ "chunk": "32_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שְׂפָתַיִם",
+   "target_he": "נֶצַח וָהוֹד",
+   "proof": "שֶׁעַל־יְדֵי הַשְּׂפָתַיִם, שֶׁהֵם נֶצַח וָהוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׂפָתַיִם",
+   "target_he": "כַּלָּה",
+   "proof": "שֶׁעַל־יְדֵי הַשְּׂפָתַיִם, שֶׁהֵם נֶצַח וָהוֹד, נִפְתָּח וְנִמְתָּק הַכַּלָּה בִּבְחִינַת זִוּוּג",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כַּלָּה",
+   "target_he": "אֲדֹנָי",
+   "proof": "וְנַעֲשֵׂית בְּחִינַת אֲדֹנָי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֲדֹנָי",
+   "target_he": "נַעֲרָה",
+   "proof": "שֶׁהִיא נַעֲרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_1_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַתּוֹרָה",
+   "target_he": "הוֹן",
+   "proof": "עַל כֵּן נִקְרֵאת הַתּוֹרָה הוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַתּוֹרָה",
+   "target_he": "עֲשִׁירוּת",
+   "proof": "כָּל מִי שֶׁעָבַר דֶּרֶךְ יָדָם הַתּוֹרָה, הָיָה לָהֶם עֲשִׁירוּת גָּדוֹל מְאֹד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲשִׁירוּת",
+   "target_he": "הִתְבּוֹנְנוּת",
+   "proof": "כִּי צָרִיךְ עֲשִׁירוּת גָּדוֹל לַהִתְבּוֹנְנוּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

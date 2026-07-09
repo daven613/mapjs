@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 170,
+ "chunk": "170_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "צָרָה",
+   "target_he": "צוּרָה",
+   "proof": "וְעַל־כֵּן נִקְרֵאת צָרָה, לְשׁוֹן צוּרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צָרָה",
+   "target_he": "הַגּוּף נִכְנָע",
+   "proof": "כִּי עַל־יְדֵי הַצָּרָה נִכְנָע הַגּוּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צָרָה",
+   "target_he": "הַצוּרָה מְאִירָה",
+   "proof": "כִּי עַל־יְדֵי הַצָּרָה נִכְנָע הַגּוּף וּמְאִירָה הַצוּרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צוּרָה",
+   "target_he": "נֶפֶשׁ",
+   "proof": "מְאִירָה הַצּוּרָה, הַיְנוּ הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

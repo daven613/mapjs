@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 209,
+ "chunk": "209_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלּוֹת רָעוֹת",
+   "target_he": "תְּפִלָּה הָרָאוּי לְהִתְפַּלֵּל",
+   "proof": "אֲזַי בָּא הַתְּפִלָּה רָעָה וּמְבַלְבֶלֶת אוֹתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלָּה רָעָה הַמִּתְנַגֶּדֶת",
+   "target_he": "תְּפִלּוֹת כְּנֶגֶד",
+   "proof": "וְזֶה בְּחִינַת תְּפִלּוֹת כְּנֶגֶד, שֶׁהִיא מִתְנַגֶּדֶת לוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

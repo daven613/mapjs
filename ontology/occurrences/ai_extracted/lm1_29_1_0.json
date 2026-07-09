@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּר שֶׁאֵינוֹ נִשְׁמָע וְנִתְקַבֵּל",
+   "target_he": "אֵין אֹמֶר וְאֵין דְּבָרִים בְּלִי נִשְׁמָע קוֹלָם",
+   "proof": "אֵינוֹ נִקְרָא דִּבּוּר, בְּחִינַת (תהילים י״ט:ד׳): אֵין אֹמֶר וְאֵין דְּבָרִים בְּלִי נִשְׁמָע קוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טוֹב בְּהַדִּבּוּר",
+   "target_he": "דִּבּוּר נִשְׁמָע וְנִתְקַבֵּל",
+   "proof": "וְעַל כֵּן כְּשֶׁיֵּשׁ טוֹב בְּהַדִּבּוּר, אֲזַי הַדִּבּוּר נִשְׁמָע וְנִתְקַבֵּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טוֹב בְּהַדִּבּוּר",
+   "target_he": "דִּבּוּר נִתְקַבֵּל",
+   "proof": "אֲבָל כְּשֶׁאֵין טוֹב בְּהַדִּבּוּר אֵינוֹ נִתְקַבֵּל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "טוֹב בְּהַדִּבּוּר",
+   "proof": "הוּא עַל־יְדֵי שֶׁלּוֹקְחִין הַדִּבּוּר מֵהַדַּעַת, אֲזַי יֵשׁ בּוֹ טוֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "טוֹב בְּהַדִּבּוּר",
+   "proof": "אֲבָל כְּשֶׁהַדִּבּוּר בְּלֹא דַּעַת, אֲזַי אֵין בּוֹ טוֹב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּר בְּלֹא דַּעַת",
+   "target_he": "גַּם בְּלֹא דַּעַת נֶפֶשׁ לֹא טוֹב",
+   "proof": "בִּבְחִינַת (משלי י״ט:ב׳): גַּם בְּלֹא דַּעַת נֶפֶשׁ לֹא טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נֶפֶשׁ",
+   "target_he": "דִּבּוּר",
+   "proof": "נֶפֶשׁ הוּא הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

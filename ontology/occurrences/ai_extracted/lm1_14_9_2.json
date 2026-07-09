@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_9_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בעותי לא אשכחה",
+   "target_he": "לא מצא כדי פרנסתו",
+   "proof": "הַיְנוּ אַחַר־כָּךְ לֹא מָצָא כְּדֵי פַּרְנָסָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גלגלא דרקיע דהדרא",
+   "target_he": "גלגולין דנשמתין",
+   "proof": "הַיְנוּ גִּלְגּוּלִין דְּנִשְׁמָתִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גלגולין דנשמתין",
+   "target_he": "אין לצדיק כדי פרנסתו",
+   "proof": "הִיא הַגּוֹרֶמֶת שֶׁאֵין לַצַּדִּיק כְּדֵי פַּרְנָסָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

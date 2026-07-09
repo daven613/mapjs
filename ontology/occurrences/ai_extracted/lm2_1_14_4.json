@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_14_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מְקוֹמוֹ שֶׁל עוֹלָם",
+   "target_he": "לְבֵיתְךָ נָאֲוָה קֹדֶשׁ, ה' לְאֹרֶךְ יָמִים",
+   "proof": "וְזֶה בְּחִינַת (תהילים צ״ג:ה׳): לְבֵיתְךָ נָאֲוָה קֹדֶשׁ, ה' לְאֹרֶךְ יָמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לְבֵיתְךָ נָאֲוָה קֹדֶשׁ",
+   "target_he": "קְדֻשָּׁתוֹ לְבֵית הַמִּקְדָּשׁ",
+   "proof": "הַיְנוּ שֶׁהַשֵּׁם יִתְבָּרַךְ הִמְשִׁיךְ רַק קְדֻשָּׁתוֹ לְבֵית הַמִּקְדָּשׁ מֵחֲמַת שֶׁהָיוּ שָׁם דְּבָרִים נָאִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ה' לְאֹרֶךְ יָמִים",
+   "target_he": "יָכוֹל לַעֲשׂוֹת רֹאשׁ הַשָּׁנָה",
+   "proof": "וְעַל כֵּן: ה' לְאֹרֶךְ יָמִים, הַיְנוּ שֶׁהוּא יִתְבָּרַךְ יָכוֹל לַעֲשׂוֹת רֹאשׁ הַשָּׁנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

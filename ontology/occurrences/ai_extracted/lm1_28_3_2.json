@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 28,
+ "chunk": "28_3_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תלמיד־חכם האמתי",
+   "target_he": "בין שמיא לארעא",
+   "proof": "הַיְנוּ הַתַּלְמִיד־חָכָם הָאֲמִתִּי הוּא בֵּין שְׁמַיָּא לְאַרְעָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טינא",
+   "target_he": "לב האבן",
+   "proof": "כִּי טִינָא נִכְנָס בְּלִבָּם שֶׁל אֵלּוּ כַּנַּ״ל, וְנַעֲשֶׂה לִבָּם לֵב הָאֶבֶן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טינא",
+   "target_he": "אלפין הנפולים",
+   "proof": "כִּי הַטִּינָא וְלֵב הָאֶבֶן מֵהָתָם, הַיְנוּ מִבְּחִינַת הָאַלְפִין הַנְּפוּלִים הַנַּ״ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לב האבן",
+   "target_he": "אלפין הנפולים",
+   "proof": "כִּי הַטִּינָא וְלֵב הָאֶבֶן מֵהָתָם, הַיְנוּ מִבְּחִינַת הָאַלְפִין הַנְּפוּלִים הַנַּ״ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תלמידי־חכמים האמתיים",
+   "target_he": "בונה ביתו",
+   "proof": "הַיְנוּ מִי שֶׁבּוֹנֶה בֵּיתוֹ עַל־יְדֵי תַּלְמִידֵי־חֲכָמִים הָאֲמִתִּיִּים, כִּי יֵשׁ לָהֶם עַל מַה שֶּׁיִּסְמֹכוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תלמידי־חכמים אמתיים",
+   "target_he": "יסוד כל דבר",
+   "proof": "כִּי תַּלְמִידֵי־חֲכָמִים אֲמִתִּיִּים הֵם יְסוֹד כָּל דָּבָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

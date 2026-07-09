@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 250,
+ "chunk": "250_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "צער ויסורין",
+   "proof": "הַכֹּל הוּא מֵחֲמַת שֶׁנָּפְלוּ מֵהַדַּעַת וְתוֹלִין הַכֹּל בַּטֶּבַע וּבְמִקְרִים וּבְמַזָּל, וּמֵחֲמַת זֶה יֵשׁ לָהֶם צַעַר וְיִסּוּרִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תלין הכל בטבע ומקרה",
+   "target_he": "יסורים",
+   "proof": "וְתוֹלִין הַכֹּל בְּטֶבַע וּמִקְרֶה, וּמַחֲמַת זֶה בְּעַצְמוֹ יֵשׁ לָהֶם יִסּוּרִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת שהכל בהשגחה",
+   "target_he": "יסורים",
+   "proof": "כִּי אִלּוּ הָיָה לָהֶם דַּעַת שֶׁהַכֹּל בְּהַשְׁגָּחָה. לֹא הָיָה לָהֶם יִסּוּרִים כְּלָל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

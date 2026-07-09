@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 90,
+ "chunk": "90_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "חֲטָאִים",
+   "target_he": "חֶסְרוֹנוֹת",
+   "proof": "כָּל הַחֲטָאִים – הַיְנוּ הַחֶסְרוֹנוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אָנֹכִי אֶשְׂמַח בַּה'",
+   "target_he": "חֲטָאִים",
+   "proof": "אָנֹכִי אֶשְׂמַח בַּה', יִתַּמּוּ וְנִשְׁלְמוּ כָּל הַחֲטָאִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

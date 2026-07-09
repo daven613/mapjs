@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_11_15",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הסטרא־אחרא",
+   "target_he": "עוג",
+   "proof": "בְּחִינַת עוֹג",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יניקת הסטרא־אחרא מהם (מתפילות ישראל)",
+   "target_he": "תפילות ישראל",
+   "proof": "עֲדַיִן הֵם פְּגוּמִים, עַל־יְדֵי שֶׁיֵּשׁ לוֹ יְנִיקָה מֵהֶם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אחיזתו בתפילות ישראל",
+   "target_he": "תפילות ישראל",
+   "proof": "אַף־עַל־פִּי־כֵן הֵם פְּגוּמִים עַל־יְדֵי אֲחִיזָתוֹ בָּהֶם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הסטרא־אחרא (יניקתו בתפילות ישראל)",
+   "target_he": "תפילות ישראל",
+   "proof": "כִּי כְּבָר הֵם פְּגוּמִים עַל־יָדוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

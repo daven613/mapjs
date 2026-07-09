@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 82,
+ "chunk": "82_0_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כסדר",
+   "target_he": "יוד",
+   "proof": "וּבְחִינַת כְּסֵדֶר נִקְרָא יוּד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מלכות",
+   "target_he": "דלת",
+   "proof": "שֶׁמַּלְכוּת הַנִּקְרָא דָּלֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חיות החכמה",
+   "target_he": "יוד",
+   "proof": "וְהַקָּדוֹשׁ־בָּרוּךְ־הוּא מַמְשִׁיךְ לָהּ חִיּוּת הַחָכְמָה, הַנִּקְרָא יוּ\"ד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יוד",
+   "target_he": "כף",
+   "proof": "הַיְנוּ יוּד גִּימַטְרִיָּא כָּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מחלק את הד' לעצמו וממשיך לעצמו חיות ממנה",
+   "target_he": "שלא כסדר",
+   "proof": "וּכְשֶׁמְּחַלֵּק אֶת הד' לְעַצְמוֹ וּמַמְשִׁיךְ לְעַצְמוֹ חִיּוּת מִמֶּנָּה, אֲזַי נַעֲשֵׂית לוֹ שֶׁלֹּא כְּסֵדֶר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלא כסדר",
+   "target_he": "דוי / מחלת לב",
+   "proof": "דַּוָּי – מִיּוּד נַעֲשֶׂה דַּוָּי... כִּי כְּשֶׁהוֹלֵךְ לְאָדָם שֶׁלֹּא כְּסֵדֶר, זֶה לוֹ מַחֲלַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

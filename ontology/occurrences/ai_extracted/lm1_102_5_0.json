@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 102,
+ "chunk": "102_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יראה שבאה לאדם מכח אדם עצמו",
+   "target_he": "צדיק מושל יראת אלקים",
+   "proof": "וְיִרְאָה זוֹ נִקְרָא: צַדִּיק מוֹשֵׁל יִרְאַת אֱלֹקִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה שבאה לאדם מכח אדם עצמו",
+   "target_he": "תפלה נשמעת",
+   "proof": "וּבְיִרְאָה כָּזוֹ הַתְּפִלָּה נִשְׁמַעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה שבאה לאדם מכח אדם עצמו",
+   "target_he": "שפע יורד לעולם",
+   "proof": "וְשֶׁפַע יוֹרֵד לָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה שבאה לאדם מכח אדם עצמו",
+   "target_he": "התגלות מלכותו",
+   "proof": "וְנִתְגַּלֶּה מַלְכוּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

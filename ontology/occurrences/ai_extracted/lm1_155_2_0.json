@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 155,
+ "chunk": "155_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "בִּלְבּוּל הַתְּפִלָּה",
+   "proof": "עִקַּר בִּלְבּוּל הַתְּפִלָּה, הוּא בָּא מֵחֲמַת חֶסְרוֹן אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חֶסְרוֹן אֱמוּנָה",
+   "target_he": "עַצְלוּת וְעַצְבוּת",
+   "proof": "וְעַל־כֵּן נוֹפֵל עָלָיו עַצְלוּת וְעַצְבוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַצְלוּת וְעַצְבוּת",
+   "target_he": "תְּפִלָּתוֹ",
+   "proof": "וּמְבַלְבֵּל אֶת תְּפִלָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "הָעַצְבוּת וְהָעַצְלוּת",
+   "proof": "כִּי עִקַּר הָעַצְבוּת וְהָעַצְלוּת, הוּא מֵחֲמַת חֶסְרוֹן אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

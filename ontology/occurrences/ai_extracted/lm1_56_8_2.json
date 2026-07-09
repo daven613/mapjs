@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_8_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "משה",
+   "target_he": "דעת",
+   "proof": "כִּי מֹשֶׁה הוּא בְּחִינַת הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דעת",
+   "target_he": "מחלוקת לשם שמים",
+   "proof": "שֶׁהוּא בְּחִינַת מַחֲלֹקֶת לְשֵׁם שָׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מחלוקת שמאי הלל",
+   "target_he": "מחלוקת לשם שמים",
+   "proof": "שֶׁהֵם בְּחִינַת מַחֲלֹקֶת לְשֵׁם שָׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "גאולה",
+   "proof": "כִּי עִקַּר הַגְּאֻלָּה – עַל־יְדֵי הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עוגה",
+   "target_he": "מצות",
+   "proof": "וְזֶה בְּחִינַת עוּגָה, דְּהַיְנוּ מַצּוֹת, שֶׁהוֹצִיאוּ מִמִּצְרַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

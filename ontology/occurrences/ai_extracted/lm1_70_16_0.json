@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 70,
+ "chunk": "70_16_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הֲקָמַת הַמִּשְׁכָּן",
+   "target_he": "קְרִיאַת רָאשֵׁי הָעָם",
+   "proof": "כִּי עַל־יְדֵי הֲקָמַת הַמִּשְׁכָּן, קָרָא אֶת כָּל רָאשֵׁי הָעָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רָאשֵׁי הָעָם",
+   "target_he": "אַהֲרֹן וּבָנָיו",
+   "proof": "שֶׁהֵם בְּחִינַת אַהֲרֹן וּבָנָיו וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

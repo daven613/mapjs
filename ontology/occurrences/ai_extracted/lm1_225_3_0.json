@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 225,
+ "chunk": "225_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הָרֵאָה",
+   "target_he": "הַלַּחְלוּחִית",
+   "proof": "עַל־יְדֵי הָרֵאָה נִתְקַיֵּם הַלַּחְלוּחִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַלֵּב",
+   "target_he": "הַלַּחְלוּחִית",
+   "proof": "שֶׁלֹּא יִתְיַבֵּשׁ עַל־יְדֵי הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַלַּחְלוּחִית",
+   "target_he": "הַשֵּׂכֶל",
+   "proof": "וְעַל־יְדֵי־זֶה קִיּוּם הַשֵּׂכֶל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשֵּׂכֶל",
+   "target_he": "נֵר דּוֹלֵק",
+   "proof": "שֶׁהוּא בְּחִינַת נֵר דּוֹלֵק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשֵּׂכֶל",
+   "target_he": "הַבִּטָּחוֹן",
+   "proof": "וְעַל־יְדֵי הַשֵּׂכֶל עַל־יְדֵי־זֶה נַעֲשֶׂה הַבִּטָּחוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁלֵמוּת הָרֵאָה",
+   "target_he": "שְׁלֵמוּת הַבִּטָּחוֹן",
+   "proof": "נִמְצָא שֶׁשְּׁלֵמוּת הַבִּטָּחוֹן הוּא עַל־יְדֵי שְׁלֵמוּת הָרֵאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_12_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עִוּוּת הַמִּשְׁפָּט",
+   "target_he": "טֻמְאָה",
+   "proof": "כְּשֶׁבָּא טֻמְאָה הַנַּ\"ל עַל־יְדֵי עִוּוּת הַמִּשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִשּׁוּר הַמֶּרְכָּבָה",
+   "target_he": "תִּקּוּן",
+   "proof": "אֵין תִּקּוּן רַק עַל־יְדֵי קִשּׁוּר הַמֶּרְכָּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִשּׁוּר הַמֶּרְכָּבָה",
+   "target_he": "מֶרְכָּבוֹ אַרְגָּמָן",
+   "proof": "שֶׁצְּרִיכִין לְקַשֵּׁר הַמֶּרְכָּבָה, בְּחִינַת: מֶרְכָּבוֹ אַרְגָּמָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֶרְכָּבוֹ אַרְגָּמָן",
+   "target_he": "רְפָאֵל וְגַבְרִיאֵל",
+   "proof": "בְּחִינַת: מֶרְכָּבוֹ אַרְגָּמָן, שֶׁהֵם רְפָאֵל וְגַבְרִיאֵל וְכוּ', שֶׁהֵם מַלְאֲכֵי הַמֶּרְכָּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּגַם הַמֶּרְכָּבָה",
+   "target_he": "אֲהָבוֹת הַנְּפוּלוֹת",
+   "proof": "לְתַקֵּן פְּגַם הַמֶּרְכָּבָה הַנַּ\"ל, שֶׁמִּשָּׁם בָּאִין הָאֲהָבוֹת הַנְּפוּלוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִשּׁוּר הַמֶּרְכָּבָה",
+   "target_he": "טֻמְאָה",
+   "proof": "כִּי עַל־יְדֵי קִשּׁוּר הַמֶּרְכָּבָה נִצּוֹלִין מִטֻּמְאָה הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

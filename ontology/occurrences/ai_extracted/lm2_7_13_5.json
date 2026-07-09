@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_13_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יָם הַחָכְמָה",
+   "target_he": "יִרְאָה",
+   "proof": "כִּי נָפַל עָלָיו יִרְאָה, מֵחֲמַת שֶׁנִּכְנַס בְּיָם הַחָכְמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַלְכוּת שֶׁבָּא לְקַבֵּל פַּרְנָסָה",
+   "target_he": "עֵינָיו שֶׁל לִוְיָתָן",
+   "proof": "שֶׁזֶּה בְּחִינַת עֵינָיו שֶׁל לִוְיָתָן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַלְכוּת",
+   "target_he": "יִרְאָה",
+   "proof": "וְעַל־יְדֵי־זֶה נוֹפֵל יִרְאָה, כִּי מַלְכוּת הוּא מְקוֹר הַיִּרְאָה, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַלְכוּת",
+   "target_he": "מְקוֹר הַיִּרְאָה",
+   "proof": "כִּי מַלְכוּת הוּא מְקוֹר הַיִּרְאָה, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

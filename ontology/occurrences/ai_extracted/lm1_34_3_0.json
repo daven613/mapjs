@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 34,
+ "chunk": "34_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וְיוֹסֵף הוּא הַשַּׁלִּיט",
+   "target_he": "מְלָאפוּם",
+   "proof": "וְיוֹסֵף הוּא הַשַּׁלִּיט, הוּא בְּחִינַת מְלָאפוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּרִית",
+   "target_he": "יְסוֹד",
+   "proof": "בְּרִית – מֶרְכָּבָה לַיְסוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מְּלָאפוּם",
+   "target_he": "מְלֹא פוּם",
+   "proof": "כִּי הַמְּלָאפוּם הוּא הָאוֹתִיּוֹת \"מְלֹא פוּם\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כְּלֵי הַשֶּׁפַע",
+   "target_he": "הַפֶּה שֶׁל הַצַּדִּיק",
+   "proof": "שֶׁכְּלֵי הַשֶּׁפַע, הַיְנוּ הַפֶּה שֶׁל הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַדִּבּוּר",
+   "target_he": "כְּלֵי הַשֶּׁפַע",
+   "proof": "אֲבָל מֵחֲמַת שֶׁהַדִּבּוּר הוּא כְּלֵי הַשֶּׁפַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַדִּבּוּר בִּשְׁלֵמוּת וּבִמְלוֹאָהּ",
+   "target_he": "רֹב שֶׁפַע",
+   "proof": "אִם הַדִּבּוּר, הַיְנוּ הַכְּלֵי הַשֶּׁפַע הוּא בִּשְׁלֵמוּת וּבִמְלוֹאָהּ, אֲזַי יְכוֹלִין לְקַבֵּל בָּהֶם רֹב שֶׁפַע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּרִים שֶׁל הַצַּדִּיק בִּשְׁלֵמוּת וּבִמְלוֹאָהּ",
+   "target_he": "הַמְשָׁכַת הַשֶּׁפַע לְיִשְׂרָאֵל",
+   "proof": "וְהַדִּבּוּרִים שֶׁל הַצַּדִּיק בְּוַדַּאי הוּא בִּשְׁלֵמוּת וּבִמְלוֹאָהּ, לָכֵן יָכוֹל לְהַמְשִׁיךְ הַשֶּׁפַע לְיִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

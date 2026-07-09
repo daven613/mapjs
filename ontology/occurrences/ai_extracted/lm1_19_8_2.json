@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_8_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יַרְגִּישׁ וְיִתְעַנֵּג רַק מֵהַצֵּרוּפֵי אוֹתִיּוֹת",
+   "target_he": "וַיֹּאכַל וַיֵּשְׁתְּ",
+   "proof": "אֲבָל שֶׁיַּרְגִּישׁ וְיִתְעַנֵּג רַק מֵהַצֵּרוּפֵי אוֹתִיּוֹת, בִּבְחִינַת וַיֹּאכַל וַיֵּשְׁתְּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מְתִיקוּת",
+   "target_he": "לְרַכֵּךְ",
+   "proof": "וְיוֹדֵעַ שֶׁמְּתִיקוּת – כֹּחוֹ לְרַכֵּךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סְפִירַת חֶסֶד",
+   "target_he": "כֹּחַ שֶׁל הַמְּתִיקוּת וְהָרִכּוּךְ",
+   "proof": "וְיוֹדֵעַ מֵאֵיזֶה סְפִירָה נִמְשָׁךְ זֶה הַכֹּחַ שֶׁל הַמְּתִיקוּת וְהָרִכּוּךְ, כְּגוֹן מִסְּפִירַת חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אוֹת מִכ\"ב אוֹתִיּוֹת",
+   "target_he": "סְפִירַת חֶסֶד",
+   "proof": "וְיוֹדֵעַ אֵיזֶה אוֹת מִכ\"ב אוֹתִיּוֹת שַׁיָּךְ לִסְפִירַת חֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

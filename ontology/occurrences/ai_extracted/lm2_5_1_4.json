@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_1_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הִתְמַזְּגוּת הַיְסוֹדוֹת",
+   "target_he": "רְפוּאָה",
+   "proof": "כִּי עִקָּר הָרְפוּאָה הִיא עַל־יְדֵי הִתְמַזְּגוּת הַיְסוֹדוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַכְרָעַת הַקּוֹל",
+   "target_he": "הִתְמַזְּגוּת הַיְסוֹדוֹת",
+   "proof": "גַּם בְּהַכְרָעַת הַקּוֹל יֵשׁ בְּחִינַת הִתְמַזְּגוּת הַיְסוֹדוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "בְּחִינַת הָאַרְבָּעָה יְסוֹדוֹת",
+   "proof": "וְעַל כֵּן עַל־יְדֵי פְּגַם אֱמוּנָה, שֶׁעַל־יְדֵי־זֶה נִפְגַּם בְּחִינַת הָאַרְבָּעָה יְסוֹדוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת הָאַרְבָּעָה יְסוֹדוֹת",
+   "target_he": "רְפוּאָה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִפְגַּם בְּחִינַת הָאַרְבָּעָה יְסוֹדוֹת... עַל־כֵּן אֵין לוֹ רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת עָפָר",
+   "target_he": "אַרְבָּעָה יְסוֹדוֹת",
+   "proof": "כִּי כֻלָּם מִתְגַּלִּין רַק עַל־יְדֵי בְּחִינַת עָפָר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּחִינַת עָפָר",
+   "target_he": "מָאנָא דְּכֻלְּהוּ",
+   "proof": "בְּחִינַת עָפָר, שֶׁהִיא מָאנָא דְּכֻלְּהוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

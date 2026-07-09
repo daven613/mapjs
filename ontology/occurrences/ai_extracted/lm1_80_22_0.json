@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 80,
+ "chunk": "80_22_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מְסִירַת נֶפֶשׁ עַל קִדּוּשׁ הַשֵּׁם",
+   "target_he": "בְּחִינַת שָׁלוֹם",
+   "proof": "וְתֵכֶף כְּשֶׁמְּרֻצֶּה לִמְסֹר נַפְשׁוֹ עַל קִדּוּשׁ הַשֵּׁם, נִתְעוֹרֵר בְּחִינַת שָׁלוֹם, בְּחִינַת יוֹסֵף כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְסִירַת נֶפֶשׁ עַל קִדּוּשׁ הַשֵּׁם",
+   "target_he": "בְּחִינַת יוֹסֵף",
+   "proof": "וְתֵכֶף כְּשֶׁמְּרֻצֶּה לִמְסֹר נַפְשׁוֹ עַל קִדּוּשׁ הַשֵּׁם, נִתְעוֹרֵר בְּחִינַת שָׁלוֹם, בְּחִינַת יוֹסֵף כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שָׁלוֹם",
+   "target_he": "יוֹסֵף",
+   "proof": "נִתְעוֹרֵר בְּחִינַת שָׁלוֹם, בְּחִינַת יוֹסֵף כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם",
+   "target_he": "לְקַשֵּׁר הַמַּחֲשָׁבָה אֶל הַדִּבּוּר",
+   "proof": "וְעַל־יְדֵי־זֶה יְכוֹלִין לְדַבֵּר, דְּהַיְנוּ לְקַשֵּׁר הַמַּחֲשָׁבָה אֶל הַדִּבּוּר... שֶׁזּוֹכִין לָזֶה עַל־יְדֵי שָׁלוֹם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לְדַבֵּר",
+   "target_he": "לְקַשֵּׁר הַמַּחֲשָׁבָה אֶל הַדִּבּוּר",
+   "proof": "וְעַל־יְדֵי־זֶה יְכוֹלִין לְדַבֵּר, דְּהַיְנוּ לְקַשֵּׁר הַמַּחֲשָׁבָה אֶל הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לְקַשֵּׁר הַמַּחֲשָׁבָה אֶל הַדִּבּוּר",
+   "target_he": "עִקַּר הַקְּדֻשָּׁה",
+   "proof": "שֶׁזֶּה עִקַּר הַקְּדֻשָּׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

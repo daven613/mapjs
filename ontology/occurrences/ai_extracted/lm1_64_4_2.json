@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_4_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "רִבּוּי הָאוֹר",
+   "target_he": "שְׁבִירַת הַכֵּלִים",
+   "proof": "כִּי עַל יְדֵי רִבּוּי הָאוֹר, שֶׁלֹּא הָיוּ הַכֵּלִים יְכוֹלִים לִסְבֹּל רִבּוּי הָאוֹר, נִשְׁתַּבְּרוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת הַכֵּלִים",
+   "target_he": "הִתְהַוּוּת הַקְּלִפּוֹת",
+   "proof": "וּמִשְּׁבִירַת הַכֵּלִים הָיָה הִתְהַוּוּת הַקְּלִפּוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִבּוּי דִּבּוּר",
+   "target_he": "הִתְהַוּוּת הַקְּלִפּוֹת",
+   "proof": "כֵּן אִם אֶחָד מַרְבֶּה לְדַבֵּר, מִזֶּה גּוֹרֵם הִתְהַוּוּת הַקְּלִפּוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רִבּוּי דִּבּוּר",
+   "target_he": "רִבּוּי הָאוֹר",
+   "proof": "כִּי הוּא בְּחִינַת רִבּוּי הָאוֹר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רִבּוּי דִּבּוּר",
+   "target_he": "שְׁבִירַת הַכֵּלִים",
+   "proof": "שֶׁעַל־יְדֵי־זֶה הָיוּ שְׁבִירַת הַכֵּלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

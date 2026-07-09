@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_3_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַמַּלְכוּת",
+   "target_he": "דַּעַת",
+   "proof": "לְתוֹךְ הַמַּלְכוּת, שֶׁהוּא בְּחִינַת דַּעַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַרִיכוּת יָמִים לְתוֹךְ הַמַּלְכוּת",
+   "target_he": "גִּלּוּי הַהַסְתָּרוֹת",
+   "proof": "צָרִיךְ לְגַלּוֹת הַהַסְתָּרוֹת הַנַּ\"ל, וְזֶה עַל־יְדֵי שֶׁמַּמְשִׁיךְ אַרִיכוּת יָמִים לְתוֹךְ הַמַּלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַדַּעַת",
+   "target_he": "יְדִיעָה שֶׁגַּם בְּתוֹךְ הַהַסְתָּרָה מְלֻבָּשׁ הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "וְעַל יְדֵי זֶה הַדַּעַת יוּכַל לֵידַע, שֶׁאֲפִלּוּ בְּתוֹךְ הַהַסְתָּרָה בְּעַצְמָהּ... גַּם שָׁם מְלֻבָּשׁ הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַשֵּׁם יִתְבָּרַךְ הַמְּלֻבָּשׁ בַּהַסְתָּרָה",
+   "target_he": "הַתּוֹרָה",
+   "proof": "גַּם שָׁם מְלֻבָּשׁ הַשֵּׁם יִתְבָּרַךְ, דְּהַיְנוּ הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְדִיעָה שֶׁאֲפִלּוּ בְּתוֹךְ הַהַסְתָּרוֹת יֵשׁ שָׁם הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "גִּלּוּי הַהַסְתָּרוֹת",
+   "proof": "וּמֵאַחַר שֶׁיּוֹדֵעַ שֶׁאֲפִלּוּ בְּתוֹךְ הַהַסְתָּרוֹת יֵשׁ שָׁם הַשֵּׁם יִתְבָּרַךְ, מִזֶּה בְּעַצְמוֹ נִתְגַּלִּין הַהַסְתָּרוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גִּלּוּי הַהַסְתָּרוֹת",
+   "target_he": "תּוֹרָה",
+   "proof": "וְנַעֲשֶׂה מֵהֶם תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

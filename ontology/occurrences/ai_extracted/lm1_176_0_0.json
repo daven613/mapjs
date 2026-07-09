@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 176,
+ "chunk": "176_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הִתְקַשְּׁרוּת לְהַצַּדִּיק הָאֱמֶת",
+   "target_he": "רוּחַ שְׁטוּת",
+   "proof": "לְגָרֵשׁ מִקִּרְבּוֹ הָרוּחַ שְׁטוּת... וְזֶה עַל־יְדֵי שֶׁנִּתְקַשֵּׁר לְהַצַּדִּיק הָאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הִתְקַשְּׁרוּת",
+   "target_he": "אַהֲבַת נֶפֶשׁ",
+   "proof": "וְהִתְקַשְּׁרוּת הַיְנוּ אַהֲבַת נֶפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַהֲבַת נֶפֶשׁ לְהַצַּדִּיק",
+   "target_he": "הִכָּלְלוּת לִבּוֹ בְּלֵב הַצַּדִּיק",
+   "proof": "מַה שֶּׁאוֹהֵב לְהַצַּדִּיק מְאֹד, וְעַל יְדֵי זֶה נִכְלָל לִבּוֹ בְּלֵב הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

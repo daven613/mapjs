@@ -1,0 +1,109 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_10_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלִּין מֹחִין",
+   "target_he": "בְּחִינַת הַמַּלְאָךְ",
+   "proof": "כִּי עַל־יְדֵי תְּפִלִּין מֹחִין נַעֲשֶׂה בְּחִינַת הַמַּלְאָךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה",
+   "target_he": "חִזּוּק לְהַמַּלְאָךְ",
+   "proof": "וְעַל כֵּן צָרִיךְ שִׂמְחָה כְּדֵי לִתֵּן חִזּוּק לְהַמַּלְאָךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תַּעֲנִית",
+   "target_he": "שִׂמְחָה",
+   "proof": "כִּי תַּעֲנִית הוּא בְּחִינַת שִׂמְחָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּעֲנִית",
+   "target_he": "שִׂמְחָה",
+   "proof": "שֶׁעַל יְדֵי תַּעֲנִית נַעֲשֶׂה שִׂמְחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה",
+   "target_he": "חִזּוּק לְהַמַּלְאָךְ",
+   "proof": "וְעַל־יְדֵי הַשִּׂמְחָה נוֹתְנִין חִזּוּק לְהַמַּלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה",
+   "target_he": "בְּחִינַת הַחֲלוֹם רָע",
+   "proof": "וּמְתַקְּנִין וּמַכְנִיעִין אֶת בְּחִינַת הַחֲלוֹם רָע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֲלוֹם רָע",
+   "target_he": "חֲלוֹם עַל־יְדֵי שֵׁד",
+   "proof": "שֶׁהוּא בְּחִינַת חֲלוֹם עַל־יְדֵי שֵׁד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חִזּוּק בְּהַמַּלְאָךְ",
+   "target_he": "חֲלוֹם עַל־יְדֵי שֵׁד",
+   "proof": "שֶׁבָּא עַל־יְדֵי שֶׁאֵין חִזּוּק בְּהַמַּלְאָךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה בִּבְחִינַת שִׂמְחָה",
+   "target_he": "הַמַּלְאָךְ",
+   "proof": "שֶׁעַל־יְדֵי־זֶה מְחַזֵּק אֶת הַמַּלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה בִּבְחִינַת שִׂמְחָה",
+   "target_he": "הַשֵּׁדִים",
+   "proof": "וּמַכְנִיעַ אֶת הַשֵּׁדִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַאֲכָלִים",
+   "target_he": "הַחֲלוֹם",
+   "proof": "שֶׁעַל יָדָם נִתְקַלְקֵל הַחֲלוֹם עַל־יְדֵי הַמַּאֲכָלִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

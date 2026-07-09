@@ -1,0 +1,145 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_2_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עִזֵּי",
+   "target_he": "אֱמוּנָה",
+   "proof": "עִזֵּי זֶה בְּחִינַת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמוּנָה",
+   "target_he": "לָבֵשׁ ה' עֹז הִתְאַזָּר",
+   "proof": "בְּחִינַת (תהילים צ״ג:א׳): לָבֵשׁ ה' עֹז הִתְאַזָּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמוּנָה",
+   "target_he": "וְהָיָה צֶדֶק אֵזוֹר מָתְנָיו, וֶאֱמוּנָה אֵזוֹר",
+   "proof": "בְּחִינַת (ישעיהו י״א:ה׳): וְהָיָה צֶדֶק אֵזוֹר מָתְנָיו, וֶאֱמוּנָה אֵזוֹר וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אִמְרֵי",
+   "target_he": "הָרְפוּאָה",
+   "proof": "וְהָדַר אִמְרֵי – אִמְרֵי בְּחִינַת הָרְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָרְפוּאָה",
+   "target_he": "אָמַר ה' וּרְפָאתִיו",
+   "proof": "בְּחִינַת (שם נז): אָמַר ה' וּרְפָאתִיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אָמַר",
+   "target_he": "אֵשׁ מַיִם רוּחַ",
+   "proof": "וְזֶהוּ אָמַר, רָאשֵׁי תֵבוֹת: אֵשׁ מַיִם רוּחַ, שֶׁמִּשָּׁם הָרְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "הָרְפוּאָה",
+   "proof": "הַיְנוּ מִפְּנֵי מָה עִקָּר הָרְפוּאָה עַל־יְדֵי אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "רְפוּאָה",
+   "proof": "כִּי צָרִיךְ לְהַקְדִּים אֱמוּנָה בִּתְחִלָּה, וְאַחַר כָּךְ זוֹכִין לִרְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּרֵישָׁא חֲשׁוֹכָא וְהָדַר נְהוֹרָא",
+   "target_he": "בְּרִיאַת הָעוֹלָם",
+   "proof": "כִּי זֶה הוּא בְּחִינַת בְּרִיאַת הָעוֹלָם שֶׁבְּרֵישָׁא חֲשׁוֹכָא וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָעֵצָה",
+   "target_he": "גִּדּוּל הָאֱמוּנָה",
+   "proof": "כִּי עִקָּר גִּדּוּל הָאֱמוּנָה – עַל־יְדֵי הָעֵצָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָעֵצָה",
+   "target_he": "מְגַלֶּה עֲמֻקּוֹת מִנִּי חֹשֶׁךְ",
+   "proof": "שֶׁהִיא בְּחִינַת: מְגַלֶּה עֲמֻקּוֹת מִנִּי חֹשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹר הַיּוֹם",
+   "target_he": "אֱמוּנָה בִּשְׁלֵמוּת",
+   "proof": "כִּי אֵין הָאֱמוּנָה נִגְדֶּלֶת בִּשְׁלֵמוּת רַק בְּאוֹר הַיּוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "הָרְפוּאָה",
+   "proof": "וְעַל כֵּן צְרִיכִין לְקַבֵּל הָרְפוּאָה רַק עַל־יְדֵי אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹר הַיּוֹם",
+   "target_he": "צְמִיחַת הָרְפוּאָה",
+   "proof": "כִּי צְמִיחַת הָרְפוּאָה הִיא רַק בְּאוֹר הַיּוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צְמִיחַת הָרְפוּאָה",
+   "target_he": "אָז יִבָּקַע כַּשַּׁחַר אוֹרֶךָ",
+   "proof": "בִּבְחִינַת: אָז יִבָּקַע כַּשַּׁחַר אוֹרֶךָ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

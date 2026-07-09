@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 32,
+ "chunk": "32_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַסֵּפֶר",
+   "target_he": "שֵׁם ה'",
+   "proof": "כִּי הַסֵּפֶר הוּא בְּחִינַת שֵׁם ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שֵׁם ה'",
+   "target_he": "סֵפֶר",
+   "proof": "שֵׁם ה' – דָּא סֵפֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַסֵּפֶר",
+   "target_he": "שְׁמִי שֶׁנִּכְתַּב בִּקְדֻשָּׁה",
+   "proof": "כִּי הַסֵּפֶר הוּא בְּחִינַת שְׁמִי שֶׁנִּכְתַּב בִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_12_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יום הביכורים",
+   "target_he": "התחלה",
+   "proof": "וּבְיוֹם הַבִּכּוּרִים – זֶה בְּחִינַת הַתְחָלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יום הביכורים",
+   "target_he": "צרה כמבכירה",
+   "proof": "וּבְיוֹם הַבִּכּוּרִים – זֶה בְּחִינַת הַתְחָלָה, בְּחִינַת צָרָה כְּמַבְכִּירָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַקְרִיבְכֶם מִנְחָה חֲדָשָׁה לַה'",
+   "target_he": "הַתְחָלַת הַצְּדָקָה",
+   "proof": "בְּהַקְרִיבְכֶם מִנְחָה חֲדָשָׁה לַה' – הַיְנוּ הַתְחָלַת הַצְּדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מנחה חדשה",
+   "target_he": "צדקה חדשה",
+   "proof": "וְזֶה בְּחִינַת מִנְחָה חֲדָשָׁה, בְּחִינַת צְדָקָה חֲדָשָׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מנחה חדשה",
+   "target_he": "התחלת הצדקה",
+   "proof": "וְזֶה בְּחִינַת מִנְחָה חֲדָשָׁה, בְּחִינַת צְדָקָה חֲדָשָׁה, בְּחִינַת הַתְחָלַת הַצְּדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מנחה",
+   "target_he": "צדקה",
+   "proof": "כִּי מִנְחָה בְּחִינַת צְדָקָה, כְּמוֹ שֶׁכָּתוּב: מַגִּישֵׁי מִנְחָה בִּצְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "זקן",
+   "proof": "וְעַל־יְדֵי הַצְּדָקָה נִתְתַּקֵּן בְּחִינַת זָקֵן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שבועותיכם",
+   "target_he": "זקן",
+   "proof": "בְּשָׁבֻעֹתֵיכֶם – זֶה בְּחִינַת זָקֵן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מנחה חדשה",
+   "target_he": "זקן",
+   "proof": "כִּי עַל־יְדֵי בְּחִינַת מִנְחָה חֲדָשָׁה, שֶׁהוּא בְּחִינַת הַתְחָלַת הַצְּדָקָה, נִתְתַּקֵּן בְּחִינַת זָקֵן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זקן",
+   "target_he": "שבועות",
+   "proof": "שֶׁהוּא בְּחִינַת שָׁבוּעוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תיקון בחינת זקן",
+   "target_he": "יניקתו של מצח הנחש",
+   "proof": "נִתְתַּקֵּן בְּחִינַת זָקֵן... וַאֲזַי נִתְבַּטֵּל יְנִיקָתוֹ שֶׁל מֵצַח הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ביטול יניקת מצח הנחש",
+   "target_he": "קול הקריאה של יום טוב",
+   "proof": "וַאֲזַי נִתְבַּטֵּל יְנִיקָתוֹ שֶׁל מֵצַח הַנָּחָשׁ... וְנִשְׁמַע קוֹל הַקְּרִיאָה שֶׁל יוֹם טוֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קול הקריאה של יום טוב",
+   "target_he": "הרצון",
+   "proof": "וְנִשְׁמַע קוֹל הַקְּרִיאָה שֶׁל יוֹם טוֹב, שֶׁמְּגַלֶּה אֶת הָרָצוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מקרא קודש",
+   "target_he": "קול הקריאה של יום טוב",
+   "proof": "מִקְרָא קֹדֶשׁ יִהְיֶה לָכֶם – הַיְנוּ קוֹל הַקְּרִיאָה שֶׁל יוֹם טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

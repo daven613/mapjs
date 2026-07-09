@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_9_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "לָשׁוֹן אֲרַמִּית",
+   "target_he": "עָרְלָה",
+   "proof": "כִּי עַל־יְדֵי לָשׁוֹן אֲרַמִּית, שֶׁהוּא לְשׁוֹן תַּרְגּוּם, מָשְׁכָה וְיָנְקָה הָעָרְלָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עָרְלָה",
+   "target_he": "רַע הַכּוֹלֵל",
+   "proof": "מָשְׁכָה וְיָנְקָה הָעָרְלָה, שֶׁהוּא רַע הַכּוֹלֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לָשׁוֹן אֲרַמִּית",
+   "target_he": "לְשׁוֹן תַּרְגּוּם",
+   "proof": "כִּי עַל־יְדֵי לָשׁוֹן אֲרַמִּית, שֶׁהוּא לְשׁוֹן תַּרְגּוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

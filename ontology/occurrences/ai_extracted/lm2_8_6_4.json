@@ -1,0 +1,127 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_6_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תוספת שכן",
+   "target_he": "ובל יאמר שכן חליתי",
+   "proof": "וְזֶה בְּחִינַת (ישעיה לג) וּבַל יֹאמַר שָׁכֵן חָלִיתִי",
+   "explicitness": "inferred",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שכן",
+   "target_he": "ניצול מהחולאת",
+   "proof": "כִּי עַל־יְדֵי שֶׁנִּתּוֹסֵף שָׁכֵן, עַל־יְדֵי־זֶה נִצּוֹלִין מֵהַחוֹלַאַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שכן",
+   "target_he": "תפלה",
+   "proof": "כִּי עַל־יְדֵי הַשָּׁכֵן נִתְרַבֶּה הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפלה מרובה",
+   "target_he": "נשיאות עוון",
+   "proof": "וַאֲזַי הוּא בְּחִינַת נְשִׂיאוּת עָוֹן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשיאות עוון",
+   "target_he": "רפואה",
+   "proof": "וְעַל־יְדֵי־זֶה בָּא רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשיאות עוון",
+   "target_he": "ביטול החולאת",
+   "proof": "וְנִתְבַּטֵּל הַחוֹלַאַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זכאים (בני הקיבוץ)",
+   "target_he": "נשיאת עוון",
+   "proof": "כִּי כְּשֶׁאֵין בְּנֵי הַקִּבּוּץ זַכָּאִים, אֲזַי אֵין זוֹכִים לִבְחִינַת נְשׂוּא־עָוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשיאת עוון",
+   "target_he": "יסורים (של הצדיק)",
+   "proof": "וְאָז הַצַּדִּיק מֻכְרָח לְקַבֵּל עַל עַצְמוֹ יִסּוּרִין בִּשְׁבִיל יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יסורים (שהצדיק מקבל בשביל ישראל)",
+   "target_he": "אכן חלינו הוא נשא",
+   "proof": "כִּי הוּא מְקַבֵּל יִסּוּרִים בִּשְׁבִיל יִשְׂרָאֵל, בְּחִינַת: אָכֵן חֳלָיֵנוּ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נשיאות עוון (לפעמים)",
+   "target_he": "אכן חלינו הוא נשא",
+   "proof": "וְלִפְעָמִים הוּא חַס וְשָׁלוֹם, בְּחִינַת (שם נג): אָכֵן חֳלָיֵנוּ הוּא נָשָׂא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זכאים ותפלתם הגונה",
+   "target_he": "ניצול הצדיק מחולאת",
+   "proof": "אֲבָל כְּשֶׁהֵם זַכָּאִים וּתְפִלָּתָם הֲגוּנָה, אֲזַי הוּא בְּחִינַת: הָעָם הַיֹּשֵׁב בָּהּ נְשׂוּא עָו‍ֹן, וְאָז נִצּוֹל גַּם הַצַּדִּיק מֵחוֹלַאַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נשיאת עוון (כשהם זכאים)",
+   "target_he": "העם היושב בה נשוא עוון",
+   "proof": "אֲזַי הוּא בְּחִינַת: הָעָם הַיֹּשֵׁב בָּהּ נְשׂוּא עָו‍ֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ניצול הצדיק מחולאת",
+   "target_he": "ובל יאמר שכן חליתי, העם היושב בה נשוא עוון",
+   "proof": "בִּבְחִינַת: וּבַל יֹאמַר שָׁכֵן חָלִיתִי, הָעָם הַיּוֹשֵׁב בָּהּ נְשׂוּא עָווֹן, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

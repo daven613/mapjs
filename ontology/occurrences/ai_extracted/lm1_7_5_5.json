@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 7,
+ "chunk": "7_5_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תפלה",
+   "target_he": "אמונה",
+   "proof": "הַתְּפִלָּה הוּא בְּחִינַת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפלה",
+   "target_he": "נסים",
+   "proof": "וְהוּא בְּחִינַת הַנִּסִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפלה",
+   "target_he": "זכרון",
+   "proof": "וּבִשְׁבִיל זֶה הַתְּפִלָּה מְסֻגָּל לְזִכָּרוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מס (מ\"ם וסמ\"ך)",
+   "target_he": "שכחה",
+   "proof": "כִּי מַס הוּא בְּחִינַת הַשִּׁכְחָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מס",
+   "target_he": "מאה",
+   "proof": "כִּי מַס בְּגִימַטְרִיָּא מֵאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מאה",
+   "target_he": "שר של שכחה",
+   "proof": "וְעַד מֵאָה שׁוֹלֵט הַשַּׂר שֶׁל שִׁכְחָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

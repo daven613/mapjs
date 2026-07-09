@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 239,
+ "chunk": "239_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "דִּבּוּר",
+   "proof": "עַל יְדֵי מַחֲלֹקֶת אִי אֶפְשָׁר לְדַבֵּר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּר",
+   "target_he": "שָׁלוֹם",
+   "proof": "כִּי עִקַּר הַדִּבּוּר הוּא מִשָּׁלוֹם, כְּמוֹ שֶׁכָּתוּב אֲדַבְּרָה נָּא שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַהֲבָה וְשָׁלוֹם",
+   "target_he": "דִּבּוּר בַּתְּפִלָּה",
+   "proof": "כְּדֵי שֶׁעַל־יְדֵי־זֶה שֶׁיֵּשׁ אַהֲבָה וְשָׁלוֹם, עַל־יְדֵי־זֶה יוּכַל לְדַבֵּר בַּתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

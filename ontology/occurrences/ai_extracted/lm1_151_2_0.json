@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 151,
+ "chunk": "151_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "לבנה",
+   "target_he": "מארת חסר ואו",
+   "proof": "סוֹד פְּגִימַת הַלְּבָנָה, שֶׁמִּשָּׁם נִמְשָׁךְ בְּחִינַת מְאֹרֹת חָסֵר וָאו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מארת חסר ואו",
+   "target_he": "אסכרה לרביי",
+   "proof": "שֶׁהוּא אַסְכָּרָה לְרַבְיֵי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ואו",
+   "target_he": "חיות של כל דבר",
+   "proof": "כִּי הַוָּא\"ו הוּא הַחִיּוּת שֶׁל כָּל דָּבָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ואו",
+   "target_he": "חיות",
+   "proof": "וְעַל כֵּן חֶסְרוֹן הַוָּא\"ו מְרַמֵּז עַל חֶסְרוֹן הַחִיּוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חיות",
+   "target_he": "מיתת הבנים קטנים",
+   "proof": "וּמִשָּׁם נִמְשָׁךְ מִיתַת הַבָּנִים קְטַנִּים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

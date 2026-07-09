@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יראה",
+   "target_he": "רצון יראיו יעשה",
+   "proof": "בִּבְחִינַת: רְצוֹן יְרֵאָיו יַעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התגלות הרצון",
+   "target_he": "יראה",
+   "proof": "וְעִקָּר הַיִּרְאָה נַעֲשֶׂה עַל־יְדֵי הִתְגַּלּוּת הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "התגלות הרצון",
+   "target_he": "שהכל מתנהג ברצונו יתברך",
+   "proof": "הַיְנוּ עַל־יְדֵי שֶׁנִּתְגַּלֶּה שֶׁהַכֹּל מִתְנַהֵג בִּרְצוֹנוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חיוב הטבע",
+   "target_he": "יראה",
+   "proof": "וְאֵין שׁוּם חִיּוּב הַטִּבְעִי כְּלָל... עַל־יְדֵי־זֶה נַעֲשֶׂה יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התגלות הרצון",
+   "target_he": "יראה",
+   "proof": "אֲבָל כְּשֶׁאֵין נִתְגַּלֶּה הָרָצוֹן... אֵין שַׁיָּךְ יִרְאָה כְּלָל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חיוב הטבע",
+   "target_he": "שכר ועונש",
+   "proof": "וְסוֹבְרִים שֶׁיֵּשׁ חִיּוּב הַטֶּבַע... כִּי אֵין שָׂכָר וָעֹנֶשׁ כְּלָל, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

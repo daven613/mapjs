@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 225,
+ "chunk": "225_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "צפצוף",
+   "target_he": "הקול היוצא מהקנה",
+   "proof": "דְּהַיְנוּ הַקּוֹל הַיּוֹצֵא מֵהַקָּנֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הקול היוצא מהקנה",
+   "target_he": "קול פשוט וצפצוף",
+   "proof": "שֶׁהוּא רַק קוֹל פָּשׁוּט וְצִפְצוּף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חמישה מוצאות הפה",
+   "target_he": "דיבור",
+   "proof": "שֶׁיִּהְיֶה נַעֲשֶׂה דִּבּוּר עַל־יְדֵי חֲמִשָּׁה מוֹצָאוֹת הַפֶּה שֶׁמְּחַתְּכִים הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 78,
+ "chunk": "78_10_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "נְשִׁימָה",
+   "target_he": "רוּחַ־הַקֹּדֶשׁ",
+   "proof": "וְגַם זֶהוּ בְּחִינַת רוּחַ־הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוֹצִיא וּמַכְנִיס הָרוּחַ",
+   "target_he": "הַחַיּוֹת רָצוֹא וָשׁוֹב",
+   "proof": "וְזֶהוּ בְּחִינַת (יחזקאל א׳:י״ד): הַחַיּוֹת רָצוֹא וָשׁוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דָּבוּק לְמַלְכוּתָא קַדִּישָׁא וּמְדַבֵּר תּוֹרָה אוֹ תְּפִלָּה",
+   "target_he": "רוּחַ הַקְּדֻשָּׁה",
+   "proof": "כְּשֶׁאָדָם דָּבוּק לְמַלְכוּתָא קַדִּישָׁא, וּמְדַבֵּר תּוֹרָה אוֹ תְּפִלָּה, מוֹצִיא וּמַכְנִיס רוּחַ הַקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּקִרְבְּכֶם",
+   "target_he": "קֶרֶב שֶׁלָּכֶם",
+   "proof": "הַיְנוּ קֶרֶב שֶׁלָּכֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְשִׁימָה שֶׁל קְדֻשָּׁה",
+   "target_he": "וְרוּחַ חֲדָשָׁה אֶתֵּן בְּקִרְבְּכֶם",
+   "proof": "כְּשֶׁהוּא נוֹשֵׁם נְשִׁימָה שֶׁל קְדֻשָּׁה, אֲזַי: וְרוּחַ חֲדָשָׁה אֶתֵּן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְרוּחַ חֲדָשָׁה אֶתֵּן",
+   "target_he": "רוּחַ הַקֹּדֶשׁ",
+   "proof": "הַיְנוּ רוּחַ הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

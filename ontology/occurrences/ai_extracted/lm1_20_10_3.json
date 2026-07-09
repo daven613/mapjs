@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_10_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַגָּדָה",
+   "target_he": "תִּקּוּן הַבְּרִית",
+   "proof": "נִקְרֵאת בְּשֵׁם \"הַגָּדָה\", לְהוֹרוֹת עַל תִּקּוּן הַבְּרִית, בִּבְחִינַת (דברים ד׳:י״ג): וַיַּגֵּד לָכֶם אֶת בְּרִיתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יַיִן",
+   "target_he": "תִּקּוּן הַדַּעַת",
+   "proof": "וְעִקַּר הַמִּצְוָה בְּיַיִן, לְהוֹרוֹת עַל תִּקּוּן הַדַּעַת, בִּבְחִינַת: בְּחַמְרָא וְרֵיחָנֵי פָּקְחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּירוֹשׁ",
+   "target_he": "רֹאשׁ",
+   "proof": "וּבִבְחִינַת: תִּירוֹשׁ – זָכָה נַעֲשֶׂה רֹאשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רֹאשׁ",
+   "target_he": "דַּעַת",
+   "proof": "תִּירוֹשׁ – זָכָה נַעֲשֶׂה רֹאשׁ (שם), הַיְנוּ דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

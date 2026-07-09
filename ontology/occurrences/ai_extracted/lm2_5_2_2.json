@@ -1,0 +1,118 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_2_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חֹשֶׁךְ",
+   "target_he": "הֶעְדֵּר הָעֵצָה",
+   "proof": "חֹשֶׁךְ זֶה בְּחִינַת הֶעְדֵּר הָעֵצָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָעֵצָה",
+   "target_he": "עֹמֶק",
+   "proof": "כְּשֶׁנִּתְגַּלֶּה הָעֵצָה, שֶׁהוּא בְּחִינַת עֹמֶק, בְּחִינַת מַיִם עֲמֻקִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָעֵצָה",
+   "target_he": "מַיִם עֲמֻקִּים",
+   "proof": "כְּשֶׁנִּתְגַּלֶּה הָעֵצָה, שֶׁהוּא בְּחִינַת עֹמֶק, בְּחִינַת מַיִם עֲמֻקִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָאוֹר",
+   "target_he": "הָעֵצָה",
+   "proof": "וְכָל מַה שֶׁנִּתְגַּלֶּה יוֹתֵר הָאוֹר, דְּהַיְנוּ הָעֵצָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַחֹשֶׁךְ",
+   "target_he": "הֶעְדֵּר הָעֵצָה",
+   "proof": "וְנִדְחֶה הַחֹשֶׁךְ שֶׁהוּא הֶעְדֵּר הָעֵצָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָאוֹר",
+   "target_he": "אֱמוּנָה",
+   "proof": "וְכָל מַה שֶׁנִּתְגַּלֶּה יוֹתֵר הָאוֹר, דְּהַיְנוּ הָעֵצָה, וְנִדְחֶה הַחֹשֶׁךְ שֶׁהוּא הֶעְדֵּר הָעֵצָה, נִתְגַּדֵּל הָאֱמוּנָה בְּיוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַחֹשֶׁךְ",
+   "target_he": "אֱמוּנָה",
+   "proof": "וְנִדְחֶה הַחֹשֶׁךְ שֶׁהוּא הֶעְדֵּר הָעֵצָה, נִתְגַּדֵּל הָאֱמוּנָה בְּיוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עִקָּר גִּדּוּל הָאֱמוּנָה",
+   "target_he": "וֶאֱמוּנָתְךָ בַּלֵּילוֹת",
+   "proof": "כִּי עִקָּר גִּדּוּל הָאֱמוּנָה הוּא בִּבְחִינַת וֶאֱמוּנָתְךָ בַּלֵּילוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לַיְלָה",
+   "target_he": "אֱמוּנָה",
+   "proof": "דְּהַיְנוּ כָּל מַה שֶּׁנִּדְחֶה וְהוֹלֵךְ חֵלֶק מֵהַלַּיְלָה וְנִתְקָרֵב אֶל אוֹר הַיּוֹם, נִתְגַּדֵּל הָאֱמוּנָה בְּיוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹר הַיּוֹם",
+   "target_he": "אֱמוּנָה",
+   "proof": "דְּהַיְנוּ כָּל מַה שֶּׁנִּדְחֶה וְהוֹלֵךְ חֵלֶק מֵהַלַּיְלָה וְנִתְקָרֵב אֶל אוֹר הַיּוֹם, נִתְגַּדֵּל הָאֱמוּנָה בְּיוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אוֹר הַיּוֹם",
+   "target_he": "אֱמוּנָה בִּשְׁלֵמוּת",
+   "proof": "עַד שֶׁבְּאוֹר הַיּוֹם אָז נִתְגַּדֵּל הָאֱמוּנָה בִּשְׁלֵמוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָאֱמוּנָה בִּשְׁלֵמוּת",
+   "target_he": "חֲדָשִׁים לַבְּקָרִים רַבָּה אֱמוּנָתֶךָ",
+   "proof": "עַד שֶׁבְּאוֹר הַיּוֹם אָז נִתְגַּדֵּל הָאֱמוּנָה בִּשְׁלֵמוּת, בִּבְחִינַת חֲדָשִׁים לַבְּקָרִים רַבָּה אֱמוּנָתֶךָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

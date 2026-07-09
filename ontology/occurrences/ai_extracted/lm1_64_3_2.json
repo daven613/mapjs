@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_3_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "צדיק",
+   "target_he": "משה",
+   "proof": "כִּי־אִם צַדִּיק שֶׁהוּא בְּחִינַת מֹשֶׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "משה",
+   "target_he": "שתיקה",
+   "proof": "כִּי מֹשֶׁה הוּא בְּחִינַת שְׁתִיקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כבד פה",
+   "target_he": "שתיקה",
+   "proof": "בִּבְחִינוֹת שֶׁנִּקְרָא כְּבַד פֶּה (שמות ד׳:י׳), בְּחִינַת שְׁתִיקָה, שֶׁהוּא לְמַעְלָה מִן הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדיק",
+   "target_he": "שתיקה",
+   "proof": "וְעַל־כֵּן הַצַּדִּיק שֶׁהוּא בְּחִינוֹת מֹשֶׁה, בְּחִינוֹת שְׁתִיקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דברי המבוכות",
+   "target_he": "שתיקה",
+   "proof": "שֶׁהֵם בְּחִינוֹת שְׁתִיקָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עיון בדברי המבוכות",
+   "target_he": "העלאת הנשמות שנפלו לשם",
+   "proof": "וְצָרִיךְ דַּוְקָא לְעַיֵּן, כְּדֵי לְהַעֲלוֹת הַנְּשָׁמוֹת שֶׁנָּפְלוּ לְשָׁם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

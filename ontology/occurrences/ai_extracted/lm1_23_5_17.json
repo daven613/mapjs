@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_17",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת תַּאֲוַת מָמוֹן",
+   "target_he": "מָמוֹן",
+   "proof": "אֲשֶׁר רַק עַל־יְדֵי זֶה יְכוֹלִין לְהַרְוִיחַ מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "שֶׁפַע",
+   "proof": "כִּי עִקַּר הַשֶּׁפַע נִמְשָׁךְ מֵאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמֶת",
+   "target_he": "שְׁבִירַת תַּאֲוַת מָמוֹן",
+   "proof": "שֶׁהוּא בְּחִינַת שְׁבִירַת תַּאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

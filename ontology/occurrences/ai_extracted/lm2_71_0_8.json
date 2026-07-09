@@ -1,0 +1,118 @@
+{
+ "book": "lm2",
+ "torah": 71,
+ "chunk": "71_0_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "כְּלִי לְקַבֵּל שַׁלְהוֹבִין דִּרְחִימוּתָא מִנֹּעַם הָעֶלְיוֹן",
+   "proof": "שֶׁעַל־יְדֵי צְדָקָה נַעֲשֶׂה הַכְּלִי לְקַבֵּל עַל־יָדָהּ מִנֹּעַם הָעֶלְיוֹן שַׁלְהוֹבִין דִּרְחִימוּתָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צְדָקָה",
+   "target_he": "נְדִיבוּת לֵב",
+   "proof": "כִּי צְדָקָה הִיא נְדִיבוּת לֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נְדִיבוּת לֵב",
+   "target_he": "שֶׁנִּפְתָּח וְנִתְנַדֵּב הַלֵּב",
+   "proof": "וּנְדִיבוּת לֵב, הַיְנוּ שֶׁנִּפְתָּח וְנִתְנַדֵּב הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְדִיבוּת לֵב",
+   "target_he": "שְׁבִילִין דְּלִבָּא",
+   "proof": "וְעַל־יְדֵי־זֶה נִפְתָּחִין שְׁבִילִין דְּלִבָּא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִילִין דְּלִבָּא",
+   "target_he": "שַׁלְהוֹבִין דִּרְחִימוּתָא",
+   "proof": "וְנַעֲשִׂין כְּלִי לְקַבֵּל שַׁלְהוֹבִין דִּרְחִימוּתָא שֶׁנִּמְשָׁכִין מִנֹּעַם הָעֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה שֶׁל אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "כְּלִי לְקַבֵּל מִנֹּעַם הָעֶלְיוֹן",
+   "proof": "שֶׁעַל־יָדָהּ נַעֲשֶׂה כְּלִי לְקַבֵּל מִנֹּעַם הָעֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּלִי לְקַבֵּל מִנֹּעַם הָעֶלְיוֹן",
+   "target_he": "הַהוֹלָדָה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה הַהוֹלָדָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "הַהוֹלָדָה",
+   "proof": "כִּי עִקָּר הַהוֹלָדָה – עַל־יְדֵי צְדָקָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַהוֹלָדָה עַל־יְדֵי צְדָקָה",
+   "target_he": "זִרְעוּ לָכֶם לִצְדָקָה",
+   "proof": "וְזֶה בְּחִינַת (הושע י׳:י״ב): זִרְעוּ לָכֶם לִצְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַהוֹלָדָה עַל־יְדֵי יַעֲקֹב וְיוֹסֵף",
+   "target_he": "אֵלֶּה תּוֹלְדוֹת יַעֲקֹב יוֹסֵף",
+   "proof": "וְזֶה בְּחִינַת (בראשית ל״ז:ב׳): אֵלֶּה תּוֹלְדוֹת יַעֲקֹב יוֹסֵף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יַעֲקֹב וְיוֹסֵף",
+   "target_he": "הַהוֹלָדָה",
+   "proof": "הַיְנוּ שֶׁעִקָּר הַהוֹלָדָה – עַל־יְדֵי יַעֲקֹב וְיוֹסֵף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יַעֲקֹב",
+   "target_he": "צְדָקָה",
+   "proof": "כִּי יַעֲקֹב הוּא בְּחִינַת צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

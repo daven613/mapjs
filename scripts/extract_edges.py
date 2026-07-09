@@ -19,7 +19,7 @@ Run:  cd ~/dev/new-sefer && MODEL=claude-fable-5 EXTRACT_DEADLINE=<epoch> \
 import asyncio, json, os, sys, time
 from pathlib import Path
 
-MODEL = os.environ.get("MODEL", "claude-fable-5")
+MODEL = os.environ.get("MODEL", "claude-sonnet-5")   # v2 resume: Fable window closed 2026-07-04
 DEADLINE = int(os.environ.get("EXTRACT_DEADLINE", "0")) or None
 MAPJS = Path(__file__).resolve().parent.parent
 NEW_SEFER = Path.home() / "dev" / "new-sefer" / "graph_poc"
@@ -32,13 +32,21 @@ from claude_agent_sdk.types import ClaudeAgentOptions, ResultMessage
 
 SYSTEM_PROMPT = """You extract the relational structure of Likutey Moharan (Rabbi Nachman of
 Breslov) for a knowledge graph. Given ONE passage of the holy text (Hebrew), report ONLY the
-relations the text itself states in THIS passage. Two relation types:
+relations the text itself states in THIS passage. Three relation types:
 
 - bechina (בחינה / "aspect of"): the text identifies concept X as an aspect/manifestation of
-  concept Y ("X הוא בחינת Y", "X הוא בחינת Y", quoting a verse as the aspect of something).
-- eitza (עצה / advice): the text says doing/attaining X brings about or leads to Y (a causal
-  spiritual counsel — "על ידי X זוכין ל-Y", "כשadam does X, then Y").
+  concept Y ("X הוא בחינת Y", quoting a verse as the aspect of something).
+- eitza (עצה / causal counsel): the text says X brings about / leads to / damages Y —
+  BOTH the positive flow ("על ידי X זוכין ל-Y") AND the negative flow: blemish/lack
+  statements ("על ידי פגם ה-X בא Z", "כשאין X..."), and direct-harm statements ("הכעס מביא ל-Z").
 - equation (explicit "שהוא"/"היינו"/"זה" identity): X IS literally equated with Y.
+
+Each eitza edge also carries its polarity and mode:
+- polarity: "builds" (leads to a good/desired Y) or "harms" (causes damage/a bad Z).
+- via: "presence" (X itself / doing X) or "absence" (the LACK/פגם of X).
+  For harms+absence, source_he is the thing whose LACK does the damage (e.g. for
+  "על ידי פגם האמונה באים חלאים": source_he=אמונה, target_he=חלאים, polarity=harms, via=absence).
+- bechina/equation edges: always polarity="neutral", via="presence".
 
 RULES:
 - Extract only what is explicitly in the passage. Do not infer beyond the text. If nothing
@@ -46,13 +54,31 @@ RULES:
 - Use the actual Hebrew concept phrases as they appear. Keep proofs verbatim from the passage.
 - A concept is a noun/noun-phrase (a middah, letter, person, verse, sefirah, body part...),
   not a whole sentence.
+- Direction for eitza is always cause → effect.
 
 OUTPUT ONLY a JSON object:
 {"edges": [
   {"type": "bechina|eitza|equation", "source_he": "...", "target_he": "...",
-   "proof": "<verbatim Hebrew from the passage>", "explicitness": "explicit|inferred"}
+   "proof": "<verbatim Hebrew from the passage>", "explicitness": "explicit|inferred",
+   "polarity": "builds|harms|neutral", "via": "presence|absence"}
 ]}
 No prose. Empty edges list is valid."""
+
+VALID_POLARITY = {"builds", "harms", "neutral"}
+VALID_VIA = {"presence", "absence"}
+
+
+def validate_edges(edges):
+    """Schema-v2 gate: bad enum values reject the whole chunk (retried later), per spec AC3."""
+    for e in edges:
+        if e.get("type") not in ("bechina", "eitza", "equation"):
+            raise ValueError(f"bad type: {e.get('type')}")
+        # tolerate omitted polarity/via on non-eitza by filling the spec defaults
+        if e.get("type") != "eitza":
+            e.setdefault("polarity", "neutral"); e.setdefault("via", "presence")
+        if e.get("polarity") not in VALID_POLARITY or e.get("via") not in VALID_VIA:
+            raise ValueError(f"bad polarity/via: {e.get('polarity')}/{e.get('via')}")
+    return edges
 
 
 def load_chunks():
@@ -109,9 +135,10 @@ async def do_chunk(sem, ch):
                         t = t.split("```")[1]
                         t = t[4:] if t.startswith("json") else t
                     obj = json.loads(t)
-                    edges = obj.get("edges", [])
+                    edges = validate_edges(obj.get("edges", []))
                     rec = {"book": ch["book"], "torah": ch["torah"], "chunk": ch["key"],
-                           "model": MODEL, "extractor": f"ai:{MODEL}", "edges": edges}
+                           "model": MODEL, "extractor": f"ai:{MODEL}", "schema": 2,
+                           "edges": edges}
                     tmp = fn.with_suffix(".tmp")
                     tmp.write_text(json.dumps(rec, ensure_ascii=False, indent=1))
                     tmp.rename(fn)          # atomic — a partial write can never be seen as done
@@ -127,13 +154,12 @@ async def main():
     conc = int(sys.argv[1]) if len(sys.argv) > 1 else 6
     cap = int(sys.argv[2]) if len(sys.argv) > 2 else None
     OUT.mkdir(parents=True, exist_ok=True)
-    chunks = [c for c in load_chunks() if not (OUT / f"{c['book']}_{c['key']}.json").exists()]
-    if cap:
-        chunks = chunks[:cap]
-    total = len(load_chunks())
-    done_before = total - len(chunks)
-    print(f"{len(chunks)} chunks to extract ({done_before}/{total} already done), "
-          f"model={MODEL}, conc={conc}, deadline={'set' if DEADLINE else 'none'}", flush=True)
+    all_chunks = load_chunks()
+    todo = [c for c in all_chunks if not (OUT / f"{c['book']}_{c['key']}.json").exists()]
+    chunks = todo[:cap] if cap else todo
+    print(f"{len(chunks)} chunks this pass ({len(all_chunks)-len(todo)}/{len(all_chunks)} done, "
+          f"{len(todo)} remaining), model={MODEL}, conc={conc}, "
+          f"deadline={'set' if DEADLINE else 'none'}", flush=True)
     if past_deadline():
         print("PAST DEADLINE — nothing to do.", flush=True)
         return

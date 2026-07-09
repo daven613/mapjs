@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 207,
+ "chunk": "207_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תורה שבעל־פה",
+   "target_he": "צדיק הדור",
+   "proof": "כִּי כְּשֶׁמְּדַבְּרִים עַל תּוֹרָה שֶׁבְּעַל־פֶּה, אוֹ כְּשֶׁמְּדַבְּרִים עַל הַצַּדִּיק הַדּוֹר בְּעַצְמוֹ, הוּא דָּבָר אֶחָד מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדיק הדור",
+   "target_he": "תורה שבעל־פה",
+   "proof": "כִּי עִקַּר תּוֹרָה שֶׁבְּעַל־פֶּה הוּא תָּלוּי בְּצַדִּיק הַדּוֹר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שכינתא בין תרין צדיקיא",
+   "target_he": "תורה שבעל־פה",
+   "proof": "שְׁכִינְתָּא בֵּין תְּרֵין צַדִּיקַיָּא יָתֵבָא, שֶׁהוּא הַתּוֹרָה שֶׁבְּעַל־פֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תלמיד־חכם",
+   "target_he": "תורה",
+   "proof": "וְכֵן הַתַּלְמִיד־חָכָם הוּא בְּעַצְמוֹ הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

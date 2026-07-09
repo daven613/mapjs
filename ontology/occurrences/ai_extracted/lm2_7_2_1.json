@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "יישוב",
+   "proof": "וּמִי שֶׁאֵין לוֹ דַּעַת, אֵינוֹ מִן הַיִּשּׁוּב וְאֵינוֹ מְכֻנֶה בְּשֵׁם אָדָם כְּלָל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מי שאין לו דעת",
+   "target_he": "חיה בדמות אדם",
+   "proof": "רַק הוּא בְּחִינַת חַיָּה בִּדְמוּת אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בני אדם",
+   "target_he": "בני דעה",
+   "proof": "הַיְנוּ בְּנֵי דֵּעָה כַּנַּ״ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "משה רבינו",
+   "target_he": "אור הדעת",
+   "proof": "כִּי הוּא פָּתַח לָנוּ אוֹר הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "משה",
+   "target_he": "גילוי שיש אלקים שליט בארץ",
+   "proof": "כִּי מֹשֶׁה פָּתַח אֶת הַדַּעַת וְגִלָּה לָנוּ כִּי יֵשׁ אֱלֹקִים שַׁלִּיט בָּאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 87,
+ "chunk": "87_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "יראת העונש",
+   "target_he": "צדק",
+   "proof": "יִרְאַת הָעֹנֶשׁ נִקְרָא צֶדֶק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יראת הרוממות",
+   "target_he": "אמונה",
+   "proof": "וְיִרְאַת הָרוֹמְמוּת נִקְרָא אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה שלמה שהשם יתברך הוא רב ושליט",
+   "target_he": "יראת הרוממות",
+   "proof": "כִּי מֵחֲמַת שֶׁהוּא מַאֲמִין בֶּאֱמוּנָה שְׁלֵמָה שֶׁהַשֵּׁם יִתְבָּרַךְ הוּא רַב וְשַׁלִּיט עִקָּרָא וְשָׁרְשָׁא דְּכָל עָלְמִין, הוּא יָרֵא מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 179,
+ "chunk": "179_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שָׁלוֹם",
+   "target_he": "צוֹם",
+   "proof": "אֶלָּא כְּשֶׁאֵין שָׁלוֹם – צוֹם. הַיְנוּ כְּשֶׁאֵין שָׁלוֹם וְיֵשׁ מַחֲלֹקֶת, אֲזַי צוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תַּעֲנִית",
+   "target_he": "שָׁלוֹם",
+   "proof": "וְעַל־יְדֵי הַתַּעֲנִית נַעֲשֶׂה שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

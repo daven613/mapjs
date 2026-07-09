@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַכֹּחוֹת הָרוּחָנִיּוֹת",
+   "target_he": "הַמַּלְאָכִים",
+   "proof": "וְאֵלּוּ הַכֹּחוֹת הָרוּחָנִיּוֹת, הַיְנוּ הַמַּלְאָכִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קְדֻשָּׁה שֶׁנִּתּוֹסֵף לְמַעְלָה",
+   "target_he": "הִתְחַדְּשׁוּת הַתּוֹרָה",
+   "proof": "וְהִתְחַדְּשׁוּת הַתּוֹרָה – לְפִי הַקְּדֻשָּׁה שֶׁנִּתּוֹסֵף לְמַעְלָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְבוֹת הַקְּדֻשָּׁה",
+   "target_he": "רִבּוּי הַתּוֹרָה",
+   "proof": "לְפִי רְבוֹת הַקְּדֻשָּׁה, כֵּן נִמְשָׁךְ רִבּוּי הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רֹב הַתּוֹרָה",
+   "target_he": "רִבּוּי הַמַּלְאָכִים",
+   "proof": "וּלְפִי רֹב הַתּוֹרָה, כֵּן רִבּוּי הַמַּלְאָכִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קְדֻשָּׁה",
+   "target_he": "כֹּחַ הַמַּלְאָכִים",
+   "proof": "הַיְנוּ שֶׁלִּפְעָמִים הַקְּדֻשָּׁה כָּל כָּךְ מֻעֶטֶת, עַד שֶׁהַמַּלְאָכִים הַנִּבְרָאִים מֵחִדּוּשֵׁי הַתּוֹרָה הֵם מְעוּטֵי כֹּחַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

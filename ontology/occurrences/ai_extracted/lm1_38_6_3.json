@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 38,
+ "chunk": "38_6_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "נִכְשַׁל בְּאֵשֶׁת אִישׁ",
+   "target_he": "עַזּוּת",
+   "proof": "מִי שֶׁיֵּשׁ בּוֹ עַזּוּת, בְּיָדוּעַ שֶׁנִּכְשַׁל בְּאֵשֶׁת אִישׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲמִידָה עַל הַר סִינַי",
+   "target_he": "זֻהֲמַת הַנָּחָשׁ",
+   "proof": "וְיִשְׂרָאֵל שֶׁעָמְדוּ עַל הַר סִינַי, פָּסְקָה זֻהֲמָתָן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "זֻהֲמָתָן",
+   "target_he": "זֻהֲמַת הַנָּחָשׁ",
+   "proof": "הַיְנוּ זֻהֲמַת הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲמִידָה עַל הַר סִינַי",
+   "target_he": "זֻהֲמָתָן",
+   "proof": "וְעַכּוּ\"ם שֶׁלֹּא עָמְדוּ, לֹא פָּסְקָה זֻהֲמָתָן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּבָה",
+   "target_he": "אוֹת",
+   "proof": "כַּד תָּב בִּתְיוּבְתָּא, וַיָּשֶׂם ה' לְקַיִן אוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_8_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "גילוי התירוץ בפני התלמיד",
+   "target_he": "מקיף אחר (שכל חדש)",
+   "proof": "נִמְצָא שֶׁעַל־יְדֵי שֶׁגִּלָּה הַתֵּרוּץ בִּפְנֵי הַתַּלְמִיד, שֶׁעַל יְדֵי זֶה נִכְנָס בּוֹ מַקִּיף אַחֵר, דְּהַיְנוּ שֵׂכֶל חָדָשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מקיף אחר (שכל חדש)",
+   "target_he": "חזרת הקושיא למקומה ביתר עוז",
+   "proof": "שֶׁעַל־יְדֵי־זֶה חָזְרָה הַקֻּשְׁיָא לִמְקוֹמָהּ בְּיֶתֶר עֹז",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מקיף אחר",
+   "target_he": "תירוץ על הקושיא",
+   "proof": "נִמְצָא שֶׁחוֹזֵר וּמַשִּׂיג מַקִּיף אַחֵר, שֶׁהוּא תֵּרוּץ עַל הַקֻּשְׁיָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מקיף אחר שנכנס בו",
+   "target_he": "שכל חדש",
+   "proof": "נִכְנָס בּוֹ מַקִּיף אַחֵר, דְּהַיְנוּ שֵׂכֶל חָדָשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_2_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "גַּם תַּנִּים חָלְצוּ שַׁד",
+   "target_he": "רַחֲמָנוּת דְּסִטְרָא־אָחָרֳא",
+   "proof": "וְזֶה בְּחִינַת (איכה ד׳:ג׳): גַּם תַּנִּים חָלְצוּ שַׁד – זֶה בְּחִינַת רַחֲמָנוּת דְּסִטְרָא־אָחָרֳא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּשֹׁד מִשַּׁדַּי",
+   "target_he": "רַחֲמָנוּת דְּסִטְרָא־אָחָרֳא",
+   "proof": "בְּחִינַת: כְּשֹׁד מִשַּׁדַּי (ישעיהו י״ג:ו׳)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׁדַּי",
+   "target_he": "רַחֲמָנוּת דִּקְדֻשָּׁה",
+   "proof": "כִּי שַׁדַּי הוּא בְּחִינַת רַחֲמָנוּת דִּקְדֻשָּׁה, בִּבְחִינַת (בראשית מ״ג:י״ד): וְאֵל שַׁדַּי יִתֵּן לָכֶם רַחֲמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְאֵל שַׁדַּי יִתֵּן לָכֶם רַחֲמִים",
+   "target_he": "תְּפִלָּה",
+   "proof": "שֶׁהוּא בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּפִלָּה",
+   "target_he": "שִׁדּוּד הַמַּעֲרָכוֹת",
+   "proof": "שֶׁהוּא שִׁדּוּד הַמַּעֲרָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רַחֲמָנוּת דְּסִטְרָא־אָחָרֳא",
+   "target_he": "בַּת עַמִּי לְאַכְזָר",
+   "proof": "וְעַל־יְדֵי שֹׁד מִשַּׁדַּי, בְּחִינַת הָרַחֲמָנוּת דְּסִטְרָא־אָחָרֳא, בְּחִינַת: גַּם תַּנִּים חָלְצוּ שַׁד – עַל־יְדֵי־זֶה: בַּת עַמִּי לְאַכְזָר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְנִיקָתָם מִן הָרַחֲמָנוּת",
+   "target_he": "אַכְזָרִיּוּת",
+   "proof": "כִּי עַל־יְדֵי־זֶה שֶׁהֵם יוֹנְקִים מִן הָרַחֲמָנוּת, עַל־יְדֵי־זֶה גַּם מְעַט הָרַחֲמָנוּת הַנִּשְׁאָר אֶצְלֵנוּ נִפְגָּם וְנַעֲשֶׂה אַכְזָרִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַכְזָרִיּוּת",
+   "target_he": "דַּעַת",
+   "proof": "וְעַל־יְדֵי־זֶה שֶׁנִּתְקַלְקֵל הָרַחֲמָנוּת וְנַעֲשֶׂה אַכְזָרִיּוּת, נִפְגָּם הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פְּגַם הַדַּעַת",
+   "target_he": "כָּל הַכּוֹעֵס, חָכְמָתוֹ מִסְתַּלֶּקֶת מִמֶּנּוּ",
+   "proof": "בִּבְחִינַת: כָּל הַכּוֹעֵס, חָכְמָתוֹ מִסְתַּלֶּקֶת מִמֶּנּוּ (פסחים סו:)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּגַם הַדַּעַת",
+   "target_he": "קַטְנוּת הַדַּעַת",
+   "proof": "וַאֲזַי נִקְטָן הַדַּעַת וְנַעֲשֶׂה בִּבְחִינַת מֹחִין דְּקַטְנוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דַּעַת קָטָן",
+   "target_he": "מֹחִין דְּקַטְנוּת",
+   "proof": "וְנַעֲשֶׂה בִּבְחִינַת מֹחִין דְּקַטְנוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּגַם הַדַּעַת",
+   "target_he": "יְנִיקַת הַסִּטְרָא־אָחָרֳא",
+   "proof": "וַאֲזַי הֵם יוֹנְקִים, חַס וְשָׁלוֹם, מִפְּגַם הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְנִיקָתָם מִפְּגַם הַדַּעַת",
+   "target_he": "וְהַנָּחָשׁ הָיָה עָרוּם",
+   "proof": "בִּבְחִינַת (בראשית ג׳:א׳): וְהַנָּחָשׁ הָיָה עָרוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְהַנָּחָשׁ הָיָה עָרוּם",
+   "target_he": "דַּעַת דְּסִטְרָא־אָחָרֳא",
+   "proof": "הַיְנוּ דַּעַת דְּסִטְרָא־אָחָרֳא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

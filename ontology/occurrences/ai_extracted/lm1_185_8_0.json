@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 185,
+ "chunk": "185_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שֶׁפַע",
+   "target_he": "כְּלִי",
+   "proof": "וּכְשֶׁנִּמְשָׁךְ הַשֶּׁפַע, צָרִיךְ לַעֲשׂוֹת כְּלִי לְקַבֵּל הַשֶּׁפַע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּלִי",
+   "target_he": "חִיצוֹנִים",
+   "proof": "צָרִיךְ לַעֲשׂוֹת כְּלִי לְקַבֵּל הַשֶּׁפַע, שֶׁלֹּא יִינְקוּ הַחִיצוֹנִים מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּלִי",
+   "target_he": "מֵם סְתוּמָה",
+   "proof": "וְהַכְּלִי הִיא בְּחִינַת מֵם סְתוּמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֵם סְתוּמָה",
+   "target_he": "אוֹתִיּוֹת אָדָם",
+   "proof": "וְזֶה אוֹתִיּוֹת אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 35,
+ "chunk": "35_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "שִׂכְלוֹ",
+   "target_he": "נִשְׁמָתוֹ",
+   "proof": "כְּשֶׁאָדָם מַכְנִיס שִׂכְלוֹ, הַיְנוּ נִשְׁמָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֱמוּנָה",
+   "target_he": "פְּשָׁטָא אוֹרַיְתָא",
+   "proof": "בְּתוֹךְ הָאֱמוּנָה, הַיְנוּ פְּשָׁטָא אוֹרַיְתָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פְּשָׁטָא אוֹרַיְתָא",
+   "target_he": "מַשָּׂא וּמַתָּן",
+   "proof": "הַיְנוּ פְּשָׁטָא אוֹרַיְתָא, הַיְנוּ מַשָּׂא וּמַתָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמוּנָה",
+   "target_he": "חֲדָשִׁים לַבְּקָרִים",
+   "proof": "בְּתוֹךְ הָאֱמוּנָה... בִּבְחִינַת: חֲדָשִׁים לַבְּקָרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמוּנָה",
+   "target_he": "זֹאת יְרוּשָׁלַיִם שַׂמְתִּיהָ בְּתוֹךְ הַגּוֹיִם וּסְבִיבוֹתֶיהָ אֲרָצוֹת",
+   "proof": "כִּי הִיא שׁוֹכֶנֶת בְּתוֹךְ הַחִיצוֹנִים, בְּחִינַת: זֹאת יְרוּשָׁלַיִם שַׂמְתִּיהָ בְּתוֹךְ הַגּוֹיִם וּסְבִיבוֹתֶיהָ אֲרָצוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְרוּשָׁלַיִם",
+   "target_he": "אֱמוּנָה",
+   "proof": "וִירוּשָׁלַיִם הוּא בְּחִינַת אֱמוּנָה, כְּמוֹ שֶׁכָּתוּב: קִרְיָה נֶאֱמָנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְרוּשָׁלַיִם",
+   "target_he": "לַיְלָה",
+   "proof": "וְהוּא בְּחִינַת לַיְלָה, כְּמוֹ שֶׁכָּתוּב: וֶאֱמוּנָתְךָ בַּלֵּילוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יְרוּשָׁלַיִם",
+   "target_he": "פְּשָׁטָא אוֹרַיְתָא",
+   "proof": "וְהוּא פְּשָׁטָא אוֹרַיְתָא, כְּמוֹ שֶׁאָמְרוּ חֲכָמֵינוּ זִכְרוֹנָם לִבְרָכָה: בְּמַחֲשַׁכִּים הוֹשִׁיבַנִי, וְלַחֹשֶׁךְ קָרָא לָיְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְרוּשָׁלַיִם",
+   "target_he": "הַמָּאוֹר הַקָּטֹן",
+   "proof": "וְהִיא בְּחִינַת הַמָּאוֹר הַקָּטֹן, כְּמוֹ שֶׁכָּתוּב: וְאֶת הַמָּאוֹר הַקָּטֹן לְמֶמְשֶׁלֶת הַלַּיְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַלְכוּת",
+   "target_he": "אֱמוּנָה",
+   "proof": "לְהַלְבִּישׁ אֶת הַמַּלְכוּת, הַיְנוּ אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִירַת הָאֱמוּנָה",
+   "target_he": "חִיצוֹנִים",
+   "proof": "אֲזַי צָרִיךְ לִשְׁמֹר הָאֱמוּנָה, שֶׁלֹּא יִינְקוּ מִמֶּנָּה הַחִיצוֹנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חַשְׁמַ\"ל מֵעוֹלַם הַבִּינָה",
+   "target_he": "מַלְכוּת (אֱמוּנָה)",
+   "proof": "וְצָרִיךְ לְהַמְשִׁיךְ בְּחִינַת חַשְׁמַ\"ל מֵעוֹלַם הַבִּינָה, לְהַלְבִּישׁ אֶת הַמַּלְכוּת, הַיְנוּ אֱמוּנָה, שֶׁלֹּא יִינְקוּ מִמֶּנָּה הָעַכּוּ\"ם וְהָאֲרָצוֹת שֶׁסְּבִיבוֹתֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

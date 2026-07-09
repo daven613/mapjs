@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 30,
+ "chunk": "30_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דמעות",
+   "target_he": "חידושים",
+   "proof": "שֶׁיֵּשׁ חִדּוּשִׁים שֶׁנַּעֲשִׂין עַל־יְדֵי דְּמָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דמעות של החידושים",
+   "target_he": "גזרות האומות",
+   "proof": "הֵם עוֹמְדִים כְּנֶגֶד גְּזֵרוֹת הָאֻמּוֹת וּמְבַטְּלָן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דמעות של עשו",
+   "target_he": "כוחם (גזרות האומות)",
+   "proof": "כִּי כָל כֹּחָם הִיא מִן הַדְּמָעוֹת שֶׁל עֵשָׂו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בכיה",
+   "target_he": "בני ישראל כחול הים",
+   "proof": "וְזֶה אוֹתִיּוֹת בְּכִיָּה – רָאשֵׁי־תֵבוֹת: בְּנֵי יִשְׂרָאֵל כְּחוֹל הַיָּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מספר",
+   "target_he": "ספר",
+   "proof": "מִסְפַּר הַיְנוּ מִסֵּפֶר הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בכיה ודמעות",
+   "target_he": "גזרות האומות",
+   "proof": "כֵּן בְּנֵי־יִשְׂרָאֵל מֵגֵן עֲלֵיהֶם הַבְּכִיָּה וְהַדְּמָעוֹת כְּנֶגֶד גְּזֵרוֹת הָאֻמּוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

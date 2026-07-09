@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_3_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שלמות לשון הקודש",
+   "target_he": "רוח אלקים",
+   "proof": "עַל־יְדֵי שֶׁהָיָה לוֹ שְׁלֵמוּת לְשׁוֹן הַקֹּדֶשׁ... עַל כֵּן כָּתוּב בּוֹ: הֲנִמְצָא כָזֶה אִישׁ אֲשֶׁר רוּחַ אֱלֹקִים בּוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוח אלקים",
+   "target_he": "תיקון הברית",
+   "proof": "רוּחַ אֱלֹקִים הַיְנוּ תִּקּוּן הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לשון הקודש",
+   "target_he": "תיקון הברית",
+   "proof": "כִּי בִּלְשׁוֹן הַקֹּדֶשׁ תָּלוּי תִּקּוּן הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תיקון הברית",
+   "target_he": "שלמות לשון הקודש",
+   "proof": "הַיְנוּ תִּקּוּן הַבְּרִית וּשְׁלֵמוּת לְשׁוֹן הַקֹּדֶשׁ הֵם תְּלוּיִים זֶה בָּזֶה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

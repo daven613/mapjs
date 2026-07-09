@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_11_14",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַחֲנֵה יִשְׂרָאֵל",
+   "target_he": "קְדֻשַּׁת הַמַּחֲנֶה שֶׁל יִשְׂרָאֵל",
+   "proof": "מַחֲנֵה יִשְׂרָאֵל – זֶה בְּחִינַת קְדֻשַּׁת הַמַּחֲנֶה שֶׁל יִשְׂרָאֵל, בְּחִינַת (דברים כ״ג:ט״ו): וְהָיָה מַחֲנֶיךָ קָדוֹשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִירָה מִתַּאֲוַת נִאוּף",
+   "target_he": "קְדֻשַּׁת מַחֲנֵה יִשְׂרָאֵל",
+   "proof": "וְעִקָּר קְדֻשַּׁת מַחֲנֵה יִשְׂרָאֵל הוּא עַל־יְדֵי שְׁמִירָה מִתַּאֲוַת נִאוּף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּלָתָא פַּרְסִי",
+   "target_he": "שְׁמִירָה מִתַּאֲוָה זוֹ",
+   "proof": "וְעִקָּר הַשְּׁמִירָה מִתַּאֲוָה זוֹ הוּא עַל־יְדֵי בְּחִינוֹת תְּלָתָא פַּרְסִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּלָתָא פַּרְסִי",
+   "target_he": "תְּלַת מֹחִין",
+   "proof": "הַיְנוּ תְּלַת מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טוּרָא",
+   "target_he": "הַתְּפִלָּה",
+   "proof": "טוּרָא זֶה בְּחִינַת הַתְּפִלָּה, בִּבְחִינַת: וַהֲבִיאוֹתִים־אֶל הַר קָדְשִׁי, וְשִׂמַּחְתִּים בְּבֵית תְּפִלָּתִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שָׁלֹשׁ מֹחִין",
+   "target_he": "הַתְּפִלָּה",
+   "proof": "כִּי הַתְּפִלָּה נִמְשֶׁכֶת גַם־כֵּן מִשָּׁלֹֹשׁ הַמֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

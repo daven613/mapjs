@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 250,
+ "chunk": "250_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַשְׁגָּחָה מִקֵּץ וְסוֹף הָעוֹלָם",
+   "target_he": "נִתְעַלִּים יִשְׂרָאֵל",
+   "proof": "וְעַל־יְדֵי זֹאת הַהַשְׁגָּחָה נִתְעַלִּים יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשְׁגָּחָה מִקֵּץ וְסוֹף הָעוֹלָם",
+   "target_he": "קֵץ וְסוֹף מֵהָעַכּוּ\"ם",
+   "proof": "וְנַעֲשֵׂה קֵץ וְסוֹף מֵהָעַכּוּ\"ם שֶׁהָיָה מְצֵרָה לָהֶם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קֵץ וְסוֹף מֵהָעַכּוּ\"ם",
+   "target_he": "קֵץ בָּא הַקֵּץ",
+   "proof": "וְזֶה בְּחִינַת: קֵץ בָּא הַקֵּץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

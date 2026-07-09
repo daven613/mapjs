@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 63,
+ "chunk": "63_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קְחוּ מִזִּמְרַת הָאָרֶץ בִּכְלֵיכֶם",
+   "target_he": "זֶמֶר וְנִגּוּן",
+   "proof": "קְחוּ מִזִּמְרַת הָאָרֶץ בִּכְלֵיכֶם וְכוּ' (בראשית מ״ג:י״א), בְּחִינַת זֶמֶר וְנִגּוּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׁירָה שֶׁאוֹמֵר כָּל עֵשֶׂב וָעֵשֶׂב",
+   "target_he": "פֶּרֶק שִׁירָה",
+   "proof": "כִּי כָל עֵשֶׂב וָעֵשֶׂב יֵשׁ לוֹ שִׁירָה שֶׁאוֹמֵר, שֶׁזֶּה בְּחִינַת פֶּרֶק שִׁירָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׁירַת הָעֲשָׂבִים",
+   "target_he": "נִגּוּן שֶׁל הָרוֹעֶה",
+   "proof": "וּמִשִּׁירַת הָעֲשָׂבִים נַעֲשֶׂה נִגּוּן שֶׁל הָרוֹעֶה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

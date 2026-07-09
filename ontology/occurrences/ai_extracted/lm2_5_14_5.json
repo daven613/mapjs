@@ -1,0 +1,136 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_14_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אַטְמָא בִּשְׂרָא",
+   "target_he": "גֵּרִים",
+   "proof": "אַטְמָא בִּשְׂרָא זֶה בְּחִינַת גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גֵּרִים",
+   "target_he": "עַרְלֵי בָשָׂר",
+   "proof": "שֶׁהֵם עַרְלֵי בָשָׂר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גֵּרִים",
+   "target_he": "הֶחְתִּים בְּשָׂרוֹ",
+   "proof": "שֶׁעַל יָדָם בָּא בְּחִינַת: הֶחְתִּים בְּשָׂרוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַטְמֵי בִּשְׂרָא",
+   "target_he": "עַרְלֵי־בָשָׂר",
+   "proof": "וְזֶהוּ: אַטְמֵי בִּשְׂרָא – בְּחִינַת עַרְלֵי־בָשָׂר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַטְמֵי בִּשְׂרָא",
+   "target_he": "הֶחְתִּים בְּשָׂרוֹ",
+   "proof": "וּבְחִינַת הֶחְתִּים בְּשָׂרוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲלִיַּת הָאֱמוּנָה הַנְּפוּלָה",
+   "target_he": "גֵּרִים",
+   "proof": "כִּי עַל־יְדֵי עֲלִיַּת הָאֱמוּנָה הַנְּפוּלָה נַעֲשִׂין גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גֵּרִים",
+   "target_he": "חוֹתָם דְּסִטְרָא אָחֳרָא",
+   "proof": "שֶׁעַל יָדָם מִתְגַּבֵּר, חַס וְשָׁלוֹם, חוֹתָם דְּסִטְרָא אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חוֹתָם דְּסִטְרָא אָחֳרָא",
+   "target_he": "הֶחְתִּים בְּשָׂרוֹ",
+   "proof": "בְּחִינַת: הֶחְתִּים בְּשָׂרוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פָּתְחִינָן",
+   "target_he": "תִּקּוּן בְּחִינַת הֶחְתִּים בְּשָׂרוֹ",
+   "proof": "הַיְנוּ שֶׁתִּקַּנְנוּ בְּחִינַת הֶחְתִּים בְּשָׂרוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פָּתְחִינָן",
+   "target_he": "חוֹתָם דִּקְדֻשָּׁה",
+   "proof": "וְנַעֲשָׂה בְּחִינַת חוֹתָם דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חוֹתָם דִּקְדֻשָּׁה",
+   "target_he": "פִּתּוּחֵי חֹתָם קֹדֶשׁ לַה'",
+   "proof": "שֶׁהוּא בְּחִינַת (שמות כ״ח:ל״ו): פִּתּוּחֵי חֹתָם קֹדֶשׁ לַה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פִּתּוּחֵי חֹתָם קֹדֶשׁ לַה'",
+   "target_he": "תִּקּוּן הַמֹּחִין",
+   "proof": "הַיְנוּ בְּחִינַת תִּקּוּן הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נָקְרִינָן",
+   "target_he": "וְשַׂמְתִּיךָ בְּנִקְרַת הַצּוּר",
+   "proof": "זֶה בְּחִינַת: וְשַׂמְתִּיךָ בְּנִקְרַת הַצּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְשַׂמְתִּיךָ בְּנִקְרַת הַצּוּר",
+   "target_he": "צִמְצוּם הַמֹּחִין",
+   "proof": "בְּחִינַת צִמְצוּם הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

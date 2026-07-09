@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 66,
+ "chunk": "66_0_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שְׁאָר עֳנָשִׁים",
+   "target_he": "מִיתָה",
+   "proof": "אֲפִלּוּ שְׁאָר עֳנָשִׁים נִקְרָאִים בְּחִינַת מִיתָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֹנֶשׁ",
+   "target_he": "שֹׁרֶשׁ חִיּוּתוֹ",
+   "proof": "כִּי כְּשֶׁמַּעֲנִישִׁין אֶת אֶחָד, עוֹקְרִין אוֹתוֹ מִשֹּׁרֶשׁ חִיּוּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַשֵּׁם",
+   "target_he": "הַחִיּוּת",
+   "proof": "וְהַשֵּׁם הוּא הַחִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֹנֶשׁ",
+   "target_he": "הַחִיּוּת",
+   "proof": "כִּי עִקָּר הָעֹנֶשׁ נוֹגֵעַ בְּהַחִיּוּת שֶׁהוּא הַשֵּׁם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַחִיּוּת",
+   "target_he": "הַשֵּׁם",
+   "proof": "בְּהַחִיּוּת שֶׁהוּא הַשֵּׁם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֹנֶשׁ לְיִשְׂרָאֵל",
+   "target_he": "עַצְמוֹ יִתְבָּרַךְ",
+   "proof": "כְּשֶׁיֵּשׁ לְיִשְׂרָאֵל אֵיזֶה עֹנֶשׁ, חַס וְשָׁלוֹם, נוֹגֵעַ אֶת עַצְמוֹ יִתְבָּרַךְ, כִּבְיָכוֹל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

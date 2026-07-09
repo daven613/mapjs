@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 78,
+ "chunk": "78_0_17",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תְּמִימוּתוֹ וֶאֱמוּנָתוֹ",
+   "target_he": "שִׂמְחָה גְדוֹלָה",
+   "proof": "וְיוּכַל לָבוֹא לְשִׂמְחָה גְדוֹלָה עַל־יְדֵי תְּמִימוּתוֹ וֶאֱמוּנָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָכְמוֹת",
+   "target_he": "הָאָדָם",
+   "proof": "כִּי חָכְמוֹת מַזִּיקִים מְאֹד לְהָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָכְמָתָן שֶׁל עַצְמָם",
+   "target_he": "הַחֲכָמִים",
+   "proof": "וְהַחֲכָמִים נִלְכָּדִים בְּחָכְמָתָן שֶׁל עַצְמָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַחָכְמָה",
+   "target_he": "הָאָדָם",
+   "proof": "כִּי הַחָכְמָה מַתְעָה אוֹתוֹ מֵחָכְמָה לְחָכְמָה... עַד שֶׁנִּלְכָּד וְנִתְעֶה בְּחָכְמוֹת עַצְמוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִלְכָּד וְנִתְעֶה בְּחָכְמוֹת עַצְמוֹ",
+   "target_he": "לֹכֵד חֲכָמִים בְּעָרְמָם",
+   "proof": "בִּבְחִינַת (איוב ה׳:י״ג): לֹכֵד חֲכָמִים בְּעָרְמָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּעָרְמָם",
+   "target_he": "עַרְמִימוּת וְחָכְמוֹת שֶׁלָּהֶם בְּעַצְמָם",
+   "proof": "בְּעָרְמָם דַּיְקָא, הַיְנוּ בְּעַרְמִימוּת וְחָכְמוֹת שֶׁלָּהֶם בְּעַצְמָם הוּא לוֹכֵד אוֹתָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

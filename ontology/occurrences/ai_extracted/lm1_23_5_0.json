@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מצוות שעושה בלא ממון",
+   "target_he": "צדק",
+   "proof": "וְכָל הַמִּצְווֹת שֶׁאָדָם עוֹשֶׂה אוֹתָם בְּלֹא מָמוֹן, הַיְנוּ שֶׁאֵין רוֹצֶה לְהַפְסִיד מָמוֹן בִּשְׁבִיל הַמִּצְוָה, זֶה הַבְּחִינָה נִקְרָא צֶדֶק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מצוה חביבה עד שאין מרגיש בהפסד ממון",
+   "target_he": "אמונה",
+   "proof": "אֲבָל כְּשֶׁחָבִיב כָּל כָּךְ הַמִּצְוָה, עַד שֶׁאֵין מַרְגִּישׁ בְּהֶפְסֵד מָמוֹן, זֹאת הַבְּחִינָה נִקְרָא אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אמונה",
+   "target_he": "ממון",
+   "proof": "כִּי עִקַּר אֱמוּנָה הוּא בְּמָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מְאֹד",
+   "target_he": "מָמוֹן",
+   "proof": "וְזֶה וֶאֱמוּנָה מְאֹד – זֶה מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שבירת תאות ממון",
+   "target_he": "פנים דקדושה",
+   "proof": "כְּשֶׁמְּשַׁבֵּר תַּאֲוַת מָמוֹן כַּנַּ\"ל, שֶׁשָּׁם פָּנִים דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

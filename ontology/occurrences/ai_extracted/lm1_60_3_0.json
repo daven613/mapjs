@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "זקן",
+   "target_he": "לְהַרְחִיב וּלְהַאֲרִיךְ יָמָיו בְּתוֹסְפוֹת קְדֻשָּׁה",
+   "proof": "דְּהַיְנוּ לְהַרְחִיב וּלְהַאֲרִיךְ יָמָיו בְּתוֹסְפוֹת קְדֻשָּׁה בְּכָל פַּעַם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "זקן",
+   "proof": "הוּא עַל יְדֵי יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "תוספת קדושה",
+   "proof": "שֶׁהַיִּרְאָה מְבִיאָה תּוֹסְפוֹת קְדֻשָּׁה בְּכָל יוֹם וָיוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תוספת קדושה",
+   "target_he": "אריכות ורחבות הימים",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִתְאָרְכִין וְנִתְרַחֲבִין הַיָּמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יראה",
+   "target_he": "יראת ה' תוסיף ימים",
+   "proof": "בִּבְחִינַת (משלי י׳:כ״ז) יִרְאַת ה' תּוֹסִיף יָמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יראת ה' תוסיף ימים",
+   "target_he": "יראת ה' היא אוצרו",
+   "proof": "וְזֶה בְּחִינַת (ישעיהו ל״ג:ו׳): יִרְאַת ה' הִיא אוֹצָרוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יראת ה' היא אוצרו",
+   "target_he": "עשאה כאוצר",
+   "proof": "בְּחִינַת (ברכות סא): עֲשָׂאָהּ כְּאוֹצָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אוצר",
+   "target_he": "קצר מלמעלה ורחב מלמטה",
+   "proof": "שֶׁהוּא קָצָר מִלְּמַעְלָה וְרָחָב מִלְּמַטָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

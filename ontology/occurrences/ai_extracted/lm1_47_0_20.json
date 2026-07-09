@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 47,
+ "chunk": "47_0_20",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וַאֲכַלְתֶּם אָכוֹל וְשָׂבוֹעַ",
+   "target_he": "אֱמֶת",
+   "proof": "וַאֲכַלְתֶּם אָכוֹל וְשָׂבוֹעַ – בִּבְחִינַת אֱמֶת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "נִפְלָאוֹת",
+   "proof": "וְאָז תּוּכְלוּ לַעֲשׂוֹת נִפְלָאוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "לֹא יֵבֹשׁוּ",
+   "proof": "כִּי מֵאַחַר שֶׁאַתֶּם בִּבְחִינוֹת אֱמֶת, כְּלָלוּת הַגְּוָנִין, אֵינְכֶם צְרִיכִין לְהִתְבַּיֵּשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אֱמֶת",
+   "target_he": "כְּלָלוּת הַגְּוָנִין",
+   "proof": "אַתֶּם בִּבְחִינוֹת אֱמֶת, כְּלָלוּת הַגְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בּוּשָׁה",
+   "target_he": "כְּלָלוּת הַגְּוָנִין בְּמִדּוֹת הַנְּפוּלִין",
+   "proof": "אֵינְכֶם צְרִיכִין לְהִתְבַּיֵּשׁ, שֶׁהִיא כְּלָלוּת הַגְּוָנִין בְּמִדּוֹת הַנְּפוּלִין",
+   "explicitness": "inferred",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עֵשֶׂב",
+   "target_he": "ע\"ב שי\"ן",
+   "proof": "עֵשֶׂב הוּא ע\"ב שי\"ן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ע\"ב שי\"ן",
+   "target_he": "שְׁלֹשָׁה אָבוֹת",
+   "proof": "עֵשֶׂב הוּא ע\"ב שי\"ן, תְּלָת רָאשִׁין, שְׁלֹשָׁה אָבוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁלֹשָׁה אָבוֹת",
+   "target_he": "הַגְּוָנִין",
+   "proof": "שְׁלֹשָׁה אָבוֹת, שֶׁהוּא הַגְּוָנִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׁדּוּד הַבַּהֲמִיּוּת",
+   "target_he": "עֵשֶׂב",
+   "proof": "שֶׁתְּשַׂדֵּד הַבַּהֲמִיּוּת שֶׁלְּךָ ... אֲזַי: וְנָתַתִּי עֵשֶׂב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִסְתַּפְּקוּת בְּמֻעָט",
+   "target_he": "עֵשֶׂב",
+   "proof": "לֶאֱכֹל וְלִשְׂבֹּעַ, רַק לְהִסְתַּפֵּק בְּמֻעָט – אֲזַי: וְנָתַתִּי עֵשֶׂב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

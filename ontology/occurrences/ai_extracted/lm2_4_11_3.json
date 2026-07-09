@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 4,
+ "chunk": "4_11_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "ערבתם",
+   "target_he": "עורב",
+   "proof": "וְאֶת עֲרֻבָּתָם תִּקָּח. זֶה בְּחִינַת עוֹרֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עורב",
+   "target_he": "צדקה",
+   "proof": "זֶה בְּחִינַת עוֹרֵב, בְּחִינַת צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עבודת הצדקה",
+   "target_he": "עורב",
+   "proof": "כִּי עִקָּר עֲבוֹדַת הַצְּדָקָה – בִּבְחִינַת עוֹרֵב, בְּחִינַת: וְאֶת הָעֹרְבִים צִוִּיתִי וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "חיות של מצח הנחש",
+   "proof": "כִּי עַל־יְדֵי הַצְּדָקָה הוּא מוֹצִיא הַחִיּוּת שֶׁל מֵצַח הַנָּחָשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זקני הדור",
+   "target_he": "חיות של מצח הנחש",
+   "proof": "שֶׁיּוֹנֵק מִזִּקְנֵי הַדּוֹר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

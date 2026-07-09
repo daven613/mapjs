@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 69,
+ "chunk": "69_0_27",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "נוֹשֵׂא אִשָּׁה שֶׁאֵינָהּ הוֹגֶנֶת לוֹ",
+   "target_he": "בְּחִינַת מוֹתָרוֹת",
+   "proof": "וְעַל־יְדֵי־זֶה הוּא בְּחִינַת מוֹתָרוֹת, בְּחִינַת שְׂעָרוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוֹתָרוֹת",
+   "target_he": "שְׂעָרוֹת",
+   "proof": "וְעַל־יְדֵי־זֶה הוּא בְּחִינַת מוֹתָרוֹת, בְּחִינַת שְׂעָרוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כּוֹפְתוֹ",
+   "target_he": "בְּחִינַת מֹחִין",
+   "proof": "כּוֹפְתוֹ – בְּחִינַת מֹחִין, בְּחִינַת תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כּוֹפְתוֹ",
+   "target_he": "תְּפִלִּין",
+   "proof": "כּוֹפְתוֹ – בְּחִינַת מֹחִין, בְּחִינַת תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֶלֶךְ אָסוּר בָּרְהָטִים",
+   "target_he": "כּוֹפְתוֹ",
+   "proof": "בְּחִינַת (שיר השירים ז׳:ו׳): מֶלֶךְ אָסוּר בָּרְהָטִים, בִּרְהִיטֵי מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רְהִיטֵי מֹחִין",
+   "target_he": "בְּחִינַת תְּפִלִּין",
+   "proof": "בִּרְהִיטֵי מֹחִין, שֶׁהֵם בְּחִינַת תְּפִלִּין, כַּמּוּבָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוֹצְעוֹ",
+   "target_he": "בְּחִינַת מוֹתְרֵי מֹחִין",
+   "proof": "רוֹצְעוֹ – זֶה בְּחִינַת מוֹתְרֵי מֹחִין, בְּחִינַת רְצוּעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוֹצְעוֹ",
+   "target_he": "רְצוּעוֹת",
+   "proof": "רוֹצְעוֹ – זֶה בְּחִינַת מוֹתְרֵי מֹחִין, בְּחִינַת רְצוּעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רְצוּעוֹת",
+   "target_he": "מוֹתְרֵי מֹחִין",
+   "proof": "שֶׁהֵן בְּחִינַת מוֹתְרֵי מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

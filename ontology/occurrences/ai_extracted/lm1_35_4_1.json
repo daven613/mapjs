@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 35,
+ "chunk": "35_4_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "גֹּדֶל הַדְּבֵקוּת",
+   "target_he": "מֹחִין",
+   "proof": "וְנִתְיַגְּעִים הַמֹּחִין שֶׁלּוֹ מֵחֲמַת גֹּדֶל הַדְּבֵקוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּשָׁטָא אוֹרַיְתָא",
+   "target_he": "אֱמוּנָה",
+   "proof": "וּכְשֶׁלּוֹמֵד פְּשָׁטָא אוֹרַיְתָא, אֲזַי הַמֹּחִין שֶׁלּוֹ, הַיְנוּ נִשְׁמָתוֹ, בָּאָה בְּתוֹךְ אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּשָׁטָא אוֹרַיְתָא",
+   "target_he": "מֹחִין",
+   "proof": "וּמִתְחַדְּשִׁים, וּמִתְחַזְּקִים מֵעֲיֵפוּתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֹחִין",
+   "target_he": "נְשָׁמָה",
+   "proof": "הַמֹּחִין שֶׁלּוֹ, הַיְנוּ נִשְׁמָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֱמוּנָה",
+   "target_he": "חֲדָשִׁים לַבְּקָרִים",
+   "proof": "בָּאָה בְּתוֹךְ אֱמוּנָה, בִּבְחִינַת: חֲדָשִׁים לַבְּקָרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

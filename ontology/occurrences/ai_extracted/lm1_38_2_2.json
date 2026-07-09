@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 38,
+ "chunk": "38_2_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "גֶּפֶן",
+   "target_he": "כְּנֶסֶת־יִשְׂרָאֵל",
+   "proof": "גֶּפֶן דָּא כְּנֶסֶת־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַדִּבּוּר שֶׁל הַקְּדֻשָּׁה",
+   "target_he": "סִטְרָא דְּקֵץ כָּל בָּשָׂר",
+   "proof": "לִרְאוֹת לְאַכְפְּיָא סִטְרָא דְּקֵץ כָּל בָּשָׂר תַּחַת הַדִּבּוּר שֶׁל הַקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כּוֹפֵף אֶת רוּחוֹ סְעָרָה",
+   "target_he": "נוֹטֵל מִמֶּנּוּ כָּל הַדִּבּוּרִים שֶׁנָּפְלוּ לְתוֹכוֹ",
+   "proof": "וּכְשֶׁהוּא כּוֹפֵף אֶת רוּחוֹ סְעָרָה, דְּהַיְנוּ שֶׁהוּא נוֹטֵל מִמֶּנּוּ כָּל הַדִּבּוּרִים שֶׁנָּפְלוּ לְתוֹכוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כּוֹפֵף אֶת רוּחוֹ סְעָרָה",
+   "target_he": "דְּמָמָה",
+   "proof": "וּכְשֶׁהוּא כּוֹפֵף אֶת רוּחוֹ סְעָרָה, דְּהַיְנוּ שֶׁהוּא נוֹטֵל מִמֶּנּוּ כָּל הַדִּבּוּרִים שֶׁנָּפְלוּ לְתוֹכוֹ, אָז: יָקֵם סְעָרָה לִדְמָמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

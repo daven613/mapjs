@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 62,
+ "chunk": "62_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָתָם שֶׁל יִשְׂרָאֵל",
+   "target_he": "יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "proof": "שֶׁעַל־יְדֵי אֲכִילָתָם שֶׁל יִשְׂרָאֵל נַעֲשֶׂה יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ אַפִּין בְּאַפִּין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ אַפִּין בְּאַפִּין",
+   "target_he": "וַיֹּאמֶר בֹּעַז לְרוּת לְעֵת הָאֹכֶל גֹּשִׁי הֲלֹם",
+   "proof": "בִּבְחִינַת (רות ב): וַיֹּאמֶר בֹּעַז לְרוּת לְעֵת הָאֹכֶל גֹּשִׁי הֲלֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "גֹּשִׁי הֲלֹם",
+   "target_he": "יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "proof": "גֹּשִׁי הֲלֹם – דָּא יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "target_he": "וַיִּגַּשׁ אֵלָיו יְהוּדָא",
+   "proof": "בְּחִינַת (בראשית מד): וַיִּגַּשׁ אֵלָיו יְהוּדָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וַיִּגַּשׁ אֵלָיו יְהוּדָא",
+   "target_he": "תִּקְרֻבְתָּא מַלְכָּא בְּמַלְכָּא",
+   "proof": "דָּא תִּקְרֻבְתָּא מַלְכָּא בְּמַלְכָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַאֲכָל שֶׁיֵּשׁ בּוֹ תַּעֲרוֹבוֹת",
+   "target_he": "חֵטְא",
+   "proof": "כִּי מַאֲכָל שֶׁיֵּשׁ בּוֹ תַּעֲרוֹבוֹת, עַל־יְדֵי מַאֲכָל כָּזֶה יוּכַל הָאָדָם לַחֲטֹא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_10_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קודשא בריך הוא ושכינתיה",
+   "target_he": "אשה ואיש",
+   "proof": "קֻדְשָׁא־בְּרִיךְ־הוּא וּשְׁכִינְתֵּהּ, שֶׁהוּא בְּחִינַת אִשָּׁה וְאִישׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קודשא בריך הוא ושכינתיה",
+   "target_he": "מרדכי ואסתר",
+   "proof": "בְּחִינַת מָרְדֳּכַי וְאֶסְתֵּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ואלה",
+   "target_he": "תוספות ורבוי",
+   "proof": "בְּחִינַת תּוֹסְפוֹת וְרִבּוּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ואלה",
+   "target_he": "גאוה",
+   "proof": "בְּחִינַת גַּאֲוָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ואלה",
+   "target_he": "עבודה זרה",
+   "proof": "עֲבוֹדָה זָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לא מרבכם",
+   "target_he": "גאוה",
+   "proof": "לֹא מֵרֻבְּכֶם חָשַׁק ה', שֶׁפֵּרוּשׁוֹ גַּאֲוָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוסיף על הראשונים",
+   "target_he": "המן-עמלק",
+   "proof": "וְזֶה בְּחִינַת: מוֹסִיף עַל הָרִאשׁוֹנִים, שֶׁהוּא בְּחִינַת הָמָן־עֲמָלֵק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "המשפטים",
+   "target_he": "רוח",
+   "proof": "הַמִּשְׁפָּטִים – בְּחִינַת רוּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוח",
+   "target_he": "גאוה",
+   "proof": "כִּי עַל־יְדֵי הָרוּחַ נִתְתַּקֵּן הַגַּאֲוָה וְהָעֲבוֹדַת אֱלִילִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוח",
+   "target_he": "עבודת אלילים",
+   "proof": "כִּי עַל־יְדֵי הָרוּחַ נִתְתַּקֵּן הַגַּאֲוָה וְהָעֲבוֹדַת אֱלִילִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

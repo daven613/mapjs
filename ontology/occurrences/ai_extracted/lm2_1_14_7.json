@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_14_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַמַּלְאָךְ הַמַּשְׁפִּיעַ הַנְּבוּאָה",
+   "target_he": "הַמַּלְאָךְ הַגּוֹאֵל",
+   "proof": "דְּהַיְנוּ בְּחִינַת הַמַּלְאָךְ הַגּוֹאֵל וְכוּ', כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמַּלְאָךְ הַנַּ\"ל",
+   "target_he": "הַשְּׁכִינָה",
+   "proof": "כִּי הַמַּלְאָךְ הַנַּ\"ל הוּא בְּחִינַת הַשְּׁכִינָה, כַּמּוּבָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְּׁכִינָה",
+   "target_he": "לְמַטָּה מִנֶּצַח וָהוֹד",
+   "proof": "וְהִיא בִּבְחִינַת לְמַטָּה מִנֶּצַח וָהוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְמַטָּה מִנֶּצַח וָהוֹד",
+   "target_he": "הַנְּבוּאָה",
+   "proof": "שֶׁמִּשָּׁם הַנְּבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשְּׁכִינָה עוֹלָה לְמַעְלָה מִנֶּצַח וָהוֹד",
+   "target_he": "נְבוּאָה",
+   "proof": "דְּהַיְנוּ כְּשֶׁהִיא עוֹלָה לְמַעְלָה מֵהֶם, אֲזַי הִיא דַיְקָא מַשְׁפִּיעַ נְבוּאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_10_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בחינת שדי",
+   "target_he": "כל אלו",
+   "proof": "וְכָל אֵלּוּ מְקַבְּלִין מִבְּחִינַת שַׁדַּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שד",
+   "target_he": "שדי",
+   "proof": "כִּי שֵׁד – עַל שֵׁם שַׁדַּ\"י",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שדה",
+   "target_he": "שדי",
+   "proof": "וְכֵן שָׂדֶה – עַל שֵׁם שַׁדַּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עובד השדה",
+   "target_he": "שדי",
+   "proof": "וְכֵן הָעוֹבֵד הַשָּׂדֶה נִקְרָא עַל שֵׁם שַׁדַּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בחינת המלאך",
+   "target_he": "קבלת השדים את השפע",
+   "proof": "וּכְשֶׁבְּחִינַת הַמַּלְאָךְ חָזָק, אֲזַי אֵין הַשֵּׁדִים מְקַבְּלִין הַשֶּׁפַע רַק דֶּרֶךְ מַעֲבָר לְבַד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

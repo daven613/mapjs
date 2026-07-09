@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 12,
+ "chunk": "12_0_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קָרְבָּן עוֹלָה",
+   "target_he": "הִרְהוּר הַלֵּב",
+   "proof": "וְזֶה בְּחִינַת קָרְבָּן עוֹלָה, שֶׁמְּכַפֵּר עַל הִרְהוּר הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עוֹלָה",
+   "target_he": "הִרְהוּר",
+   "proof": "שֶׁעוֹלָה מְכַפֵּר הַהִרְהוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לִבִּי סְחַרְחַר",
+   "target_he": "קְלִפָּה",
+   "proof": "כִּי יֵשׁ בְּחִינַת (תהלים לח): לִבִּי סְחַרְחַר, כִּי יֵשׁ קְלִפָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קְלִפָּה",
+   "target_he": "לֵב",
+   "proof": "שֶׁהִיא מְעַקֶּמֶת וּמְסַבֶּבֶת הַלֵּב בְּעִקּוּמִים וְסִבּוּבִים וּבִלְבּוּלִים הַרְבֵּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קְלִפָּה",
+   "target_he": "קְלִפַּת נֹגַהּ",
+   "proof": "וְהִיא בְּחִינַת קְלִפַּת נֹגַהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְנֹגַהּ לוֹ סָבִיב",
+   "target_he": "סְחַרְחַר",
+   "proof": "וְעַל־כֵּן נִקְרָא סְחַרְחַר, תַּרְגּוּם שֶׁל סָבִיב: סְחוֹר סְחוֹר, בְּחִינַת (יחזקאל א): וְנֹגַהּ לוֹ סָבִיב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֹגַהּ",
+   "target_he": "תַּרְגּוּם",
+   "proof": "כִּי הִיא בְּחִינַת תַּרְגּוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

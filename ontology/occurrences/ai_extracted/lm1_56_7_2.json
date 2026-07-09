@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_7_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מָן",
+   "target_he": "מִקְוֶה שֶׁל שַׁעַר הַנּוּן",
+   "proof": "וְזֶה בְּחִינַת מָן, בְּחִינַת מִקְוֶה שֶׁל שַׁעַר הַנּוּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִקְוֶה שֶׁל שַׁעַר הַנּוּן",
+   "target_he": "דַּעַת גָּדוֹל",
+   "proof": "שֶׁהוּא בְּחִינַת דַּעַת גָּדוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָן",
+   "target_he": "דַּעַת",
+   "proof": "כִּי הַמָּן – בְּחִינַת דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַאֲמָר פָּתוּחַ",
+   "target_he": "הִתְגַּלּוּת הַדַּעַת",
+   "proof": "מַאֲמָר פָּתוּחַ זֶה בְּחִינַת הִתְגַּלּוּת הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דִּבּוּר",
+   "target_he": "הִתְגַּלּוּת הַדַּעַת",
+   "proof": "כִּי הַדִּבּוּר הוּא הִתְגַּלּוּת הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "דִּבּוּר",
+   "proof": "וּבְמִצְרַיִם, שֶׁהָיָה הַדַּעַת בְּגָלוּת... הָיָה גַּם הַדִּבּוּר בְּגָלוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "דִּבּוּר",
+   "proof": "וּכְשֶׁיָּצְאוּ מִמִּצְרַיִם, שֶׁיָּצָא הַדַּעַת מֵהַגָּלוּת, יָצָא וְנִפְתַּח הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

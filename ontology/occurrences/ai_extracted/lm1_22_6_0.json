@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 22,
+ "chunk": "22_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הֶחָכָם הָאֱמֶת",
+   "target_he": "הַנְּשָׁמָה",
+   "proof": "שֶׁהוּא בְּחִינַת הַנְּשָׁמָה לְהָעָם שֶׁהֵם לְמַטָּה מִמֶּנּוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֶחָכָם",
+   "target_he": "עֶצֶם",
+   "proof": "הוּא בְּחִינַת עֶצֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָעָם",
+   "target_he": "בָּשָׂר",
+   "proof": "וְהָעָם הֵם נֶגְדּוֹ בְּחִינַת בָּשָׂר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת בָּשָׂר",
+   "target_he": "שְׁמִיעַת הַקּוֹל אֲנָחָה",
+   "proof": "וּכְשֶׁהֵם בִּבְחִינַת בָּשָׂר, כְּמוֹ בְּשַׂר הַגּוּף בְּעֶצֶם הָאָדָם, הֵם שׁוֹמְעִים הַקּוֹל אֲנָחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קוֹלוֹ שֶׁל הֶחָכָם",
+   "target_he": "שְׁבִירַת גּוּפָם",
+   "proof": "הַיְנוּ קוֹלוֹ שֶׁל הֶחָכָם, וְשׁוֹבֶרֶת גּוּפָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת הַגּוּף עַל יְדֵי הַקּוֹל",
+   "target_he": "הִתְקָרְבוּת אֲלֵיהֶם",
+   "proof": "וְעַל־יְדֵי־זֶה יוּכַל לִסְמֹךְ לְהִתְקָרֵב אֲלֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת בָּשָׂר",
+   "target_he": "שְׁמִיעַת קוֹל הָאֲנָחָה",
+   "proof": "אַךְ כְּשֶׁאֵינָם בִּבְחִינַת בָּשָׂר, אֵינָם שׁוֹמְעִים כְּלָל קוֹל הָאֲנָחָה הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

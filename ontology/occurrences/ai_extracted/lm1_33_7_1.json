@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 33,
+ "chunk": "33_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חפץ",
+   "target_he": "לב",
+   "proof": "חָפֵץ הוּא בְּחִינַת לֵב, שֶׁהַחֵפֶץ הוּא בַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חיים",
+   "target_he": "דעת",
+   "proof": "חַיִּים הוּא בְּחִינַת דַּעַת, כְּמוֹ שֶׁכָּתוּב מְקוֹר חַיִּים שֵׂכֶל בְּעָלָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קישור הלב אל הדעת",
+   "target_he": "המשכת האהבה מדעת לתוך הימים ולתוך המדות",
+   "proof": "הַיְנוּ כְּשֶׁמְּקַשֵּׁר אֶת הַלֵּב לְהַדַּעַת... אֲזַי לְפִי בְּחִינָתוֹ... הוּא מַמְשִׁיךְ אֶת הָאַהֲבָה מִדַּעַת לְתוֹךְ הַיָּמִים וּלְתוֹךְ הַמִּדּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אור",
+   "target_he": "התורה הגנוזה והצדיקים הגנוזים",
+   "proof": "שֶׁמַּשִּׂיג הָאוֹר, הַיְנוּ הַתּוֹרָה הַגְּנוּזָה, וְהַצַּדִּיקִים הַגְּנוּזִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

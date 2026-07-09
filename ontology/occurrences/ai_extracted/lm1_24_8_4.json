@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 24,
+ "chunk": "24_8_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "כֹּחַ הַמְעַכֵּב",
+   "target_he": "כֶּתֶר",
+   "proof": "וְעַל־יְדֵי כֹּחַ הַמְעַכֵּב, שֶׁהוּא כֹּחַ הַמְיַשֵּׁב וְהַמְסַדֵּר, בְּחִינַת כֶּתֶר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כֹּחַ הַמְעַכֵּב",
+   "target_he": "כֹּחַ הַמְיַשֵּׁב וְהַמְסַדֵּר",
+   "proof": "כֹּחַ הַמְעַכֵּב, שֶׁהוּא כֹּחַ הַמְיַשֵּׁב וְהַמְסַדֵּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרְדִיפָה וְהַמְעַכֵּב",
+   "target_he": "הֵיכָלִין לְאוֹר אֵין סוֹף",
+   "proof": "עַל־יְדֵי שְׁנֵי בְּחִינוֹת אֵלּוּ... וְעַל־יְדֵי־זֶה נַעֲשִׂין הֵיכָלִין לְאוֹר אֵין סוֹף",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְעַכֵּב",
+   "target_he": "הַמֹּחִין",
+   "proof": "כִּי אִם לֹא הָיָה הַמְעַכֵּב הַנַּ\"ל כְּלָל... הָיוּ מִתְבַּטְּלִין הַמֹּחִין לְגַמְרֵי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְעַכֵּב",
+   "target_he": "הָאָדָם",
+   "proof": "כִּי הָיָה הָאָדָם מִתְבַּטֵּל בַּמְּצִיאוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְחִצּוֹת וְהֵיכָלִין",
+   "target_he": "הַשָּׂגַת אוֹר הָאֵין סוֹף בִּבְחִינַת מְטֵי וְלָא מְטֵי",
+   "proof": "עַל־יְדֵי־זֶה נַעֲשִׂין בְּחִינַת מְחִצּוֹת וְהֵיכָלִין הַנַּ\"ל, שֶׁעַל יָדָם מַשִּׂיגִים אוֹר הָאֵין סוֹף רַק בִּבְחִינַת מְטֵי וְלָא מְטֵי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_14_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עשבא",
+   "target_he": "כללות המאכלים",
+   "proof": "עִשְׂבָּא זֶה בְּחִינַת כְּלָלִיּוּת הַמַּאֲכָלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כללות המאכלים",
+   "target_he": "עשבא",
+   "proof": "נִמְצָא שֶׁכְּלָלִיּוּת הַמַּאֲכָלִים הֵם בְּחִינַת עִשְׂבָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מאכלים",
+   "target_he": "חלום",
+   "proof": "שֶׁלֹּא יַזִּיקוּ וְיִפְגְּמוּ אֶת הַחֲלוֹם, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חיזוק המלאך",
+   "target_he": "תיקון המאכלים",
+   "proof": "וְתִקּוּן זֶה, הַיְנוּ תִּקּוּן הַמַּאֲכָלִים, נַעֲשֶׂה עַל־יְדֵי חִזּוּק הַמַּלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התחדשות הרצון",
+   "target_he": "חיזוק המלאך",
+   "proof": "שֶׁנִּתְחַזֵּק עַל־יְדֵי הִתְחַדְּשׁוּת הָרָצוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שמחה",
+   "target_he": "התחדשות הרצון",
+   "proof": "עַל־יְדֵי הַשִּׂמְחָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

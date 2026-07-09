@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 74,
+ "chunk": "74_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "ראשי תיבות של מִמִּצְרַיִם וְלֹא יֵרָאוּ פָנַי רֵיקָם",
+   "target_he": "פורים",
+   "proof": "רָאשֵׁי־תֵבוֹת פּוּרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פורים",
+   "target_he": "הַזְּהִירוּת מֵחָמֵץ בְּפֶסַח",
+   "proof": "כִּי פּוּרִים הוּא דֶּרֶךְ לְפֶסַח, שֶׁיִּהְיוּ יְכוֹלִים לִהְיוֹת נִזְהָרִין מֵחָמֵץ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כָּל הַמִּצְווֹת",
+   "target_he": "זֵכֶר לִיצִיאַת מִצְרָיִם",
+   "proof": "וְעַל־כֵּן כָּל הַמִּצְווֹת הֵם זֵכֶר לִיצִיאַת מִצְרָיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

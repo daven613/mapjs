@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 99,
+ "chunk": "99_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דְּבֵקוּת בַּתְּפִלָּה",
+   "target_he": "תְּפִלָּה מְקֻבֶּלֶת",
+   "proof": "אִם בִּדְבֵקוּת, שֶׁאֲזַי הַתְּפִלָּה שְׁגוּרָה וּמְרֻצָּה בְּפִיו, מְקֻבֶּלֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דְּבֵקוּת בַּתְּפִלָּה",
+   "target_he": "תְּפִלָּה מְקֻבֶּלֶת",
+   "proof": "וְאִם לָאו, חַס וְשָׁלוֹם, לְהֵפֶךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

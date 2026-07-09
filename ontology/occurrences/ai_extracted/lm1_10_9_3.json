@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_9_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "גאוה",
+   "target_he": "עבודה זרה",
+   "proof": "כִּי עַל־יְדֵי בִּטּוּל הַגַּאֲוָה, הַיְנוּ הָעֲבוֹדָה זָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גאוה",
+   "target_he": "חכמה",
+   "proof": "כִּי עַל־יְדֵי בִּטּוּל הַגַּאֲוָה, הַיְנוּ הָעֲבוֹדָה זָרָה, עַל־יְדֵי־זֶה הַחָכְמָה עַל תִּקּוּנָהּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חכמה",
+   "target_he": "חיים וארכות ימים",
+   "proof": "וְעַל־יְדֵי חָכְמָה יִחְיֶה וְיַאֲרִיךְ יָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רמיה",
+   "target_he": "חיים וארכות ימים",
+   "proof": "לֹא יַחֲרֹךְ רְמִיָּה צֵידוֹ – לֹא יִחְיֶה וְלֹא יַאֲרִיךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התקרבות לצדיקים לקבל מהם הרוח",
+   "target_he": "גאוה ועבודה זרה",
+   "proof": "כִּי כְּשֶׁמִּתְקָרֵב אֶת עַצְמוֹ לְצַדִּיקִים כְּדֵי לְקַבֵּל מֵהֶם הָרוּחַ כַּנַּ\"ל, וְעַל־יְדֵי־זֶה נִשְׁבָּר הַגַּאֲוָה וְהָעֲבוֹדָה זָרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

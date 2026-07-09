@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "קישור עצמו עם נשמות הרבים ושפיכת שיחו ותפלתו לפני השם קודם הביאור",
+   "target_he": "הן אל כביר לא ימאס",
+   "proof": "וְקֹדֶם הַבֵּאוּר הוּא מְקַשֵּׁר אֶת עַצְמוֹ עִם נִשְׁמוֹתֵיהֶם וְשׁוֹפֵךְ שִׂיחוֹ וּתְפִלָּתוֹ לִפְנֵי הַשֵּׁם יִתְבָּרַךְ, בְּוַדַּאי: הֵן אֵל כַּבִּיר לֹא יִמְאָס",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלַּת יָחִיד",
+   "target_he": "מואסין בתפלתו",
+   "proof": "אֲבָל תְּפִלַּת יָחִיד, אֶפְשָׁר שֶׁמּוֹאֲסִין בִּתְפִלָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תפלתך בשעה שהצבור מקובצים",
+   "target_he": "וְדִבַּרְתָּ אֶל הַסֶּלַע לְעֵינֵיהֶם",
+   "proof": "וְזֶה בְּחִינַת: וְדִבַּרְתָּ אֶל הַסֶּלַע לְעֵינֵיהֶם – שֶׁתְּפִלָּתְךָ תִּהְיֶה בְּשָׁעָה שֶׁהַצִּבּוּר מְקֻבָּצִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תפלתך בשעה שהצבור מקובצים",
+   "target_he": "הַקְהֵל אֶת הָעָם",
+   "proof": "וְזֶה: הַקְהֵל אֶת הָעָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

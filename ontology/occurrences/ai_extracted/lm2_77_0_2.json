@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 77,
+ "chunk": "77_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אכילה",
+   "target_he": "יראה",
+   "proof": "כִּי עִקָּר הַיִּרְאָה הִיא בָּאָה לָאָדָם בִּשְׁעַת אֲכִילָה דַּיְקָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אכילה",
+   "target_he": "לעת האכל גשי הלום",
+   "proof": "בִּבְחִינַת (רות ב׳:י״ד): לְעֵת הָאֹכֶל גֹּשִׁי הֲלֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הלום",
+   "target_he": "מלכות",
+   "proof": "אֵין הֲלֹם אֶלָּא מַלְכוּת (זבחים קב)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מלכות",
+   "target_he": "יראה",
+   "proof": "שֶׁהִיא בְּחִינַת יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מלכות",
+   "target_he": "אכילה",
+   "proof": "שֶׁעִקָּר הָאֲכִילָה וְהַפַּרְנָסָה נִמְשֶׁכֶת מִבְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מלכות",
+   "target_he": "פרנסה",
+   "proof": "שֶׁעִקָּר הָאֲכִילָה וְהַפַּרְנָסָה נִמְשֶׁכֶת מִבְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

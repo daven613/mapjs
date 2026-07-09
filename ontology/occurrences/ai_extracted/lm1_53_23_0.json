@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 53,
+ "chunk": "53_23_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת השלם",
+   "target_he": "בנים",
+   "proof": "כִּי קָטָן אֵינוֹ מוֹלִיד, כִּי אֵין לוֹ דַּעַת הַשָּׁלֵם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת השלם",
+   "target_he": "בנים",
+   "proof": "אַךְ כְּשֶׁזּוֹכֶה לְדַעַת הַשָּׁלֵם, זוֹכֶה לְבָנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גיור אנשים ונשים",
+   "target_he": "שלמות הדעת",
+   "proof": "עַל־יְדֵי זֶה זָכָה לִשְׁלֵמוּת הַדַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלמות הדעת",
+   "target_he": "הה\"א הנ\"ל",
+   "proof": "וְעַל־יְדֵי־זֶה זָכָה לְהַהֵ\"א הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

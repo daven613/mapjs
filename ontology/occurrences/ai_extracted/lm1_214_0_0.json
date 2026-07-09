@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 214,
+ "chunk": "214_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עסק בתורה כל היום",
+   "target_he": "שליטת הבעל דבר",
+   "proof": "הָיוּ עוֹסְקִים בַּתּוֹרָה כָּל הַיּוֹם, וְלֹא הָיָה שְׁלִיטָה לְהַבַּעַל דָּבָר עֲלֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד כהוגן",
+   "target_he": "כח הבעל דבר",
+   "proof": "דַּע שֶׁאִם הַלִּמּוּד כַּהֹגֶן, בְּוַדַּאי אֵין לוֹ שׁוּם כֹּחַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד כראוי",
+   "target_he": "כח הבעל דבר",
+   "proof": "אֲבָל אִם אֵין הַלִּמּוּד כָּרָאוּי, בִּפְרָט לִמּוּד גְּמָרָא, אִם אֵין הַלִּמּוּד כָּרָאוּי, אֲזַי הוּא מְקַבֵּל יוֹתֵר כֹּחַ מֵהַלִמּוּד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תלמוד",
+   "target_he": "לילית",
+   "proof": "כִּי תַּלְמוּד בְּגִימַטְרִיָּא אוֹתִיּוֹת שֶׁל שְׁמָהּ \"לִילִית\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד התלמוד",
+   "target_he": "לילית",
+   "proof": "עַל־כֵּן יֵשׁ כֹּחַ בְּלִמּוּד הַתַּלְמוּד אוֹ לְהַכְנִיעַ אוֹתָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד התלמוד",
+   "target_he": "לילית",
+   "proof": "אוֹ לְהֶפֶךְ, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

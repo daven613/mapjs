@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 102,
+ "chunk": "102_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אֶגְדַּל מִמֶּךָּ",
+   "target_he": "מִעוּט הַמַּלְכוּת",
+   "proof": "אֶגְדַּל מִמֶּךָּ הַיְנוּ מִעוּט הַמַּלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה שֶׁהִיא בְּיִרְאָה",
+   "target_he": "שֶׁפַע",
+   "proof": "כִּי מִכֹּחַ הַתְּפִלָּה שֶׁהִיא בְּיִרְאָה מוֹרִיד שֶׁפַע בָּעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה שֶׁהִיא בְּיִרְאָה",
+   "target_he": "מַלְכוּת",
+   "proof": "וְנִתְגַּדֵּל מַלְכוּתוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

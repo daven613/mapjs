@@ -1,0 +1,73 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_1_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מְזוֹנָא דְּגוּפָא",
+   "target_he": "מְזוֹנָא דְּנִשְׁמָתָא",
+   "proof": "וְעַל־יְדֵי מְזוֹנָא דְּגוּפָא נֶחֱלָשׁ מְזוֹנָא דְּנִשְׁמָתָא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה וּשְׁתִיָּה",
+   "target_he": "בְּחִינַת עָקֵב דְּסִטְרָא־אַחֲרָא",
+   "proof": "עַל־יְדֵי־זֶה מַגְדִּילִין אֶת בְּחִינַת עָקֵב דְּסִטְרָא־אַחֲרָא, בִּבְחִינַת אוֹכֵל לַחְמִי הִגְדִּיל עָלַי עָקֵב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲכִילָה",
+   "target_he": "הָעֲקֵבִים וְהָרַגְלִין",
+   "proof": "כִּי עַל־יְדֵי הָאֲכִילָה נִתְחַזְּקִין הָעֲקֵבִים וְהָרַגְלִין, בִּבְחִינַת דֹּק בְּכַכֵּי וְתִשְׁכַּח בְּנַגְרֵי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עָקֶב דְּסִטְרָא־אָחָרֳא",
+   "target_he": "בְּחִינַת עָקֶב דִּקְדֻשָּׁה",
+   "proof": "וְאָז כְּשֶׁנִּתְגַּדֵּל, חַס וְשָׁלוֹם, עָקֶב דְּסִטְרָא־אָחָרֳא, עַל־יְדֵי־זֶה נֶחֱלָשׁ, חַס וְשָׁלוֹם, בְּחִינַת עָקֶב דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָקֶב דִּקְדֻשָּׁה",
+   "target_he": "עֵקֶב עֲנָוָה יִרְאַת ה'",
+   "proof": "שֶׁהוּא בְּחִינַת עֵקֶב עֲנָוָה יִרְאַת ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִרְאַת ה'",
+   "target_he": "רֵיחַ",
+   "proof": "שֶׁהִיא בְּחִינַת רֵיחַ, בִּבְחִינַת וַהֲרִיחוֹ בְּיִרְאַת ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רֵיחַ",
+   "target_he": "מְזוֹנָא דְּנִשְׁמָתָא",
+   "proof": "שֶׁהוּא מְזוֹנָא דְּנִשְׁמָתָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

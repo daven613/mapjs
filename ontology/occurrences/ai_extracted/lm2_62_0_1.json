@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 62,
+ "chunk": "62_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עִקָּר רַחֲמָנוּת",
+   "target_he": "וְאֵל שַׁדַּי יִתֵּן לָכֶם רַחֲמִים",
+   "proof": "וְעִקָּר רַחֲמָנוּת הוּא בִּבְחִינַת (בראשית מ״ג:י״ד): וְאֵל שַׁדַּי יִתֵּן לָכֶם רַחֲמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יִשְׂרָאֵל",
+   "target_he": "אֵל שַׁדַּי יִתֵּן לָכֶם רַחֲמִים",
+   "proof": "וְזֶהוּ יִשְׂרָאֵל – רָאשֵׁי־תֵבוֹת: אֵל שַׁדַּי יִתֵּן לָכֶם רַחֲמִים, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַסְעֵי בְנֵי יִשְׂרָאֵל",
+   "target_he": "רַחֲמָנוּת",
+   "proof": "כִּי הָרַחֲמָנוּת נַעֲשָׂה עַל־יְדֵי מַסְעֵי בְנֵי יִשְׂרָאֵל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

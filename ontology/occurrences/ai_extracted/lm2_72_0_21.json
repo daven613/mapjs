@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 72,
+ "chunk": "72_0_21",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַשִּׁפְלוּת שֶׁל מֹשֶׁה",
+   "target_he": "שְׁכִיבָה וּמִיתָה",
+   "proof": "הוּא מֻנָּח וְשׁוֹכֵב אֵצֶל כָּל אֶחָד וְאֶחָד בִּבְחִינַת שְׁכִיבָה וּמִיתָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּשׁוּבָה",
+   "target_he": "חַיִּים נִצְחִיִּים שֶׁל עוֹלָם הַבָּא",
+   "proof": "שֶׁהוּא בְּחִינַת חַיִּים נִצְחִיִּים שֶׁל עוֹלָם הַבָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּבָה",
+   "target_he": "הַשִּׁפְלוּת",
+   "proof": "עַל־יְדֵי הַתְּשׁוּבָה... שֶׁעַל־יְדֵי־זֶה נִחְיֶה הַשִּׁפְלוּת שֶׁל כָּל אֶחָד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

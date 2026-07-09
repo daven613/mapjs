@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 57,
+ "chunk": "57_6_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אכילת שבת",
+   "target_he": "השבתת אויב",
+   "proof": "כִּי פּוֹעֵל בַּאֲכִילָתוֹ, מַה שֶּׁפָּעַל עַל־יְדֵי הַצּוֹם, הַיְנוּ לְהַשְׁבִּית אוֹיֵב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אכילת שבת",
+   "target_he": "קודש",
+   "proof": "כִּי אֲכִילַת שַׁבָּת, קֹדֶשׁ הִיא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אכילת שבת",
+   "target_he": "כבד",
+   "proof": "וְאָז נִכְנָע הַכָּבֵד, וְאָז נִתְבַּטֵּל כֹּחוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נכנע הכבד ונתבטל כחו",
+   "target_he": "וכל שולטני רגזין כלהו ערקין ואתעברו",
+   "proof": "בִּבְחִינַת (תרומה קלה:): וְכָל שׁוּלְטָנֵי רֻגְזִין... כֻּלְּהוּ עָרְקִין וְאִתְעַבְּרוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שולטני רגזין",
+   "target_he": "כבד כועס",
+   "proof": "שֶׁהֵם בְּחִינַת כָּבֵד כּוֹעֵס",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וכלא אהבה",
+   "target_he": "אהבה בתענוגים",
+   "proof": "בִּבְחִינַת (שיר השירים ז׳:ז׳): אַהֲבָה בְּתַעֲנוּגִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עונג שבת",
+   "target_he": "ביטול כח הכבד",
+   "proof": "וְכָל זֶה מֵעֹנֶג שַׁבָּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

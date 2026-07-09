@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 68,
+ "chunk": "68_0_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תלמיד",
+   "target_he": "מוח הרב",
+   "proof": "כִּי הַתַּלְמִיד הוּא מִמֹּחַ הָרַב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בן",
+   "target_he": "מוח האב",
+   "proof": "וְכֵן הַבֵּן נִמְשָׁךְ גַם־כֵּן מִמֹּחַ הָאָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בן או תלמיד",
+   "target_he": "השארות מוחו למטה",
+   "proof": "שֶׁיִּהְיֶה נִשְׁאָר לְמַטָּה מִמֹּחוֹ, וְעַל־כֵּן צָרִיךְ לְהַנִּיחַ בֵּן אוֹ תַּלְמִיד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בנים ותלמידים המולידים בנים ותלמידים",
+   "target_he": "השארות מוחו למטה לעולם ועד",
+   "proof": "כְּדֵי שֶׁיִּהְיֶה נִשְׁאָר מֹחוֹ גַּם לְמַטָּה לְעוֹלָם וָעֶד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

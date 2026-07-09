@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 82,
+ "chunk": "82_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַנֶּעֱלָבִים וְאֵינָם עוֹלְבִים",
+   "target_he": "חַ\"שׁ",
+   "proof": "וְאָז הוּא בְּחִינַת חַ\"שׁ, הוּא שְׁתִיקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁתִיקָה מֵאַהֲבָה",
+   "target_he": "קְדֻשָּׁה",
+   "proof": "אֲבָל כְּשֶׁהוּא מֵאַהֲבָה, אָז הוּא בְּחִינַת חַ\"שׁ נִכְלֶלֶת בַּקְּדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁתִיקָה כְּדֵי לַעֲשׂוֹת יִסּוּרִים לְשֶׁכְּנֶגְדּוֹ",
+   "target_he": "קְלִפָּה",
+   "proof": "וְאָז הוּא בְּחִינַת זוֹ נִכְלָל בַּקְּלִפָּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְאֹהֲבָיו כְּצֵאת הַשֶּׁמֶשׁ בִּגְבוּרָתוֹ",
+   "target_he": "שַׁלְהֶבֶת יָהּ",
+   "proof": "הִיא בְּחִינַת שַׁלְהֶבֶת יָהּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

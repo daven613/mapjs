@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 119,
+ "chunk": "119_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שַׁבָּת",
+   "target_he": "דַּעַת",
+   "proof": "וְשַׁבָּת הוּא בְּחִינוֹת דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְמוֹת הַחֹל",
+   "target_he": "שְׁטוּתָא",
+   "proof": "כָּל יְמוֹת הַחֹל כְּתִיב שָׁטוּ הָעָם וְלָקְטוּ – בִּשְׁטוּתָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שַׁבָּת",
+   "target_he": "דַּעַת",
+   "proof": "אֲבָל בְּשַׁבָּת נִמְשָׁךְ הַדַּעַת לְכָל אֶחָד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

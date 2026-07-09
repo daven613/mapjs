@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_5_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה",
+   "target_he": "בְּחִינַת עֶבֶד",
+   "proof": "לְהַמְשִׁיךְ שִׂמְחָה לִבְחִינַת עֶבֶד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְטַ\"ט",
+   "target_he": "עֶבֶד",
+   "proof": "לְהַמְשִׁיךְ שִׂמְחָה לִבְחִינַת עֶבֶד, בְּחִינַת מְטַ\"ט, בְּחִינַת שֵׁשֶׁת יְמֵי הַחֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֵׁשֶׁת יְמֵי הַחֹל",
+   "target_he": "עֶבֶד",
+   "proof": "שֶׁהֵם בְּחִינַת עֶבֶד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דְּעוּ כִּי ה' הוּא אֱלֹקִים",
+   "target_he": "אַחְדוּת הַפָּשׁוּט",
+   "proof": "וְזֶהוּ: דְּעוּ כִּי ה' הוּא אֱלֹקִים, בְּחִינַת אַחְדוּת הַפָּשׁוּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה שֶׁל שַׁבָּת הַנִּמְשֶׁכֶת לְשֵׁשֶׁת יְמֵי הַחֹל",
+   "target_he": "אַחְדוּת הַפָּשׁוּט",
+   "proof": "שֶׁזֶּה נִתְגַלֶּה עַל־יְדֵי שֶׁנִּמְשָׁךְ הַשִּׂמְחָה שֶׁל שַׁבָּת לְשֵׁשֶׁת יְמֵי הַחֹל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

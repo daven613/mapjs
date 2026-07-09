@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 7,
+ "chunk": "7_5_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "צִיצִית",
+   "target_he": "עֲצַת צַדִּיקִים",
+   "proof": "עַל־יְדֵי צִיצִית יְכוֹלִין לָבוֹא לַעֲצַת צַדִּיקִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲצַת צַדִּיקִים",
+   "target_he": "אֱמֶת",
+   "proof": "יְכוֹלִין לָבוֹא לַעֲצַת צַדִּיקִים, לִבְחִינַת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צִיצִית",
+   "target_he": "אֱמֶת",
+   "proof": "עַל־יְדֵי צִיצִית יְכוֹלִין לָבוֹא ... לִבְחִינַת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "אֱמוּנָה",
+   "proof": "וְעַל־יְדֵי אֱמֶת בָּאִים לֶאֱמוּנָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "גְּאֻלָּה",
+   "proof": "וְעַל־יְדֵי אֱמוּנָה בָּא הַגְּאֻלָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צִיצִית",
+   "target_he": "חֲמָרֵי חִוָּרָא",
+   "proof": "כִּי הַצִּיצִית, שֶׁהֵם חֲמָרֵי חִוָּרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

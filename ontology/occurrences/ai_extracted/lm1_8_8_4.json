@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 8,
+ "chunk": "8_8_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אַלְפֵי",
+   "target_he": "אַלּוּפֵי עֵשָׂו",
+   "proof": "אַלְפֵי – בְּחִינַת אַלּוּפֵי עֵשָׂו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רֶכֶב אֱלֹקִים רִבֹּתַיִם",
+   "target_he": "קַבָּלַת הַתּוֹרָה",
+   "proof": "וְעַל־יְדֵי רֶכֶב אֱלֹקִים רִבֹּתַיִם, בְּחִינַת קַבָּלַת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רֶכֶב אֱלֹקִים רִבֹּתַיִם",
+   "target_he": "רוּחַ־חַיִּים הָרַבָּנִים דִּקְדֻשָּׁה",
+   "proof": "בְּחִינַת קַבָּלַת הַתּוֹרָה, שֶׁמִּשָּׁם מְקַבְּלִין הָרוּחַ־חַיִּים הָרַבָּנִים דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קַבָּלַת הַתּוֹרָה",
+   "target_he": "אַלּוּפֵי עֵשָׂו, רַבְרְבֵי עֵשָׂו",
+   "proof": "הַיְנוּ שֶׁעַל־יְדֵי קַבָּלַת הַתּוֹרָה, שֶׁשָּׁם הָרוּחַ דְּהָרַב דִּקְדֻשָּׁה, עַל־יְדֵי־זֶה נִתְבַּטְּלִין וְנִכְנָעִין אַלּוּפֵי עֵשָׂו, רַבְרְבֵי עֵשָׂו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַלּוּפֵי עֵשָׂו, רַבְרְבֵי עֵשָׂו",
+   "target_he": "הָרַב דִּקְלִפָּה",
+   "proof": "שֶׁהֵם בְּחִינַת הָרַב דִּקְלִפָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

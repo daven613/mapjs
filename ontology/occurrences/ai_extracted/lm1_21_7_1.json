@@ -1,0 +1,127 @@
+{
+ "book": "lm1",
+ "torah": 21,
+ "chunk": "21_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַצְּעָקוֹת",
+   "target_he": "צַעֲקַת הַיּוֹלֶדֶת",
+   "proof": "אֵלּוּ הַצְּעָקוֹת הֵם בְּחִינַת צַעֲקַת הַיּוֹלֶדֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַצְּעָקָה",
+   "target_he": "צַעֲקַת הַשְּׁכִינָה",
+   "proof": "וְהַצְּעָקָה הוּא בִּמְקוֹם צַעֲקַת הַשְּׁכִינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צַעֲקַת הַשְּׁכִינָה",
+   "target_he": "הַמֹּחִין",
+   "proof": "כְּאִלּוּ הַשְּׁכִינָה צוֹעֶקֶת, וְאָז מוֹלֶדֶת הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַצְּעָקָה",
+   "target_he": "הַקּוֹל מְעוֹרֵר הַכַּוָּנָה",
+   "proof": "וְזֶה בְּחִינַת: הַקּוֹל מְעוֹרֵר הַכַּוָּנָה, הַיְנוּ הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַכַּוָּנָה",
+   "target_he": "הַמֹּחִין",
+   "proof": "הַקּוֹל מְעוֹרֵר הַכַּוָּנָה, הַיְנוּ הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַמֹּחִין",
+   "target_he": "תִּכָּלֵם שִׁבְעַת יָמִים",
+   "proof": "וְזֶה בְּחִינַת: תִּכָּלֵם שִׁבְעַת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׁבְעַת יָמִים",
+   "target_he": "שִׁבְעָה קוֹלוֹת שֶׁל דָּוִד",
+   "proof": "שִׁבְעַת יָמִים זֶה בְּחִינַת שִׁבְעָה קוֹלוֹת שֶׁל דָּוִד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שִׁבְעָה קוֹלוֹת שֶׁל דָּוִד",
+   "target_he": "שִׁבְעִין קָלִין",
+   "proof": "שֶׁהֵם שִׁבְעִין קָלִין הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְעָקָה",
+   "target_he": "אוֹר הַפָּנִים",
+   "proof": "שֶׁצָּרִיךְ לִצְעֹק כְּדֵי לְהוֹצִיא אוֹר הַפָּנִים הַנַּ\"ל מֵהֶעְלֵם אֶל הַגִּלּוּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַגִּלּוּי",
+   "target_he": "לֵדָה",
+   "proof": "וְהַגִּלּוּי זֶה בְּחִינַת לֵדָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דָּם נֶעְכָּר וְנַעֲשֶׂה חָלָב",
+   "target_he": "תִּכָּלֵם",
+   "proof": "וְאָז אַחַר הַלֵּדָה, דָּם נֶעְכָּר וְנַעֲשֶׂה חָלָב (בכורות ו:). וְזֶה בְּחִינַת תִּכָּלֵם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אָזֵל סוּמְקָא וְאָתֵי חִוְרָא",
+   "target_he": "דָּם נֶעְכָּר וְנַעֲשֶׂה חָלָב",
+   "proof": "כִּי הַכְּלִמָּה – אָזֵל סוּמְקָא וְאָתֵי חִוְרָא (ב\"מ נח:), הַיְנוּ דָם נֶעְכָּר וְנַעֲשֶׂה חָלָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תֶּשִׁי",
+   "target_he": "צַעֲקָתֵנוּ יוֹדֵעַ תַּעֲלוּמוֹת",
+   "proof": "צוּר יְלָדְךָ תֶּשִׁי – רָאשֵׁי־תֵּבוֹת שֶׁל: צַעֲקָתֵנוּ יוֹדֵעַ תַּעֲלוּמוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 7,
+ "chunk": "7_5_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שׂוֹרֵק",
+   "target_he": "שׁוּרֻק",
+   "proof": "וְזֶה שׂוֹרֵק, הוּא בְּחִינַת שׁוּרֻק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שׁוּרֻק",
+   "target_he": "תְּלָת טִפִּין",
+   "proof": "שֶׁהוּא תְּלָת טִפִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּלָת טִפִּין",
+   "target_he": "תְּלָת מֹחִין",
+   "proof": "וְהוּא תְּלָת מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּלָת מֹחִין",
+   "target_he": "הַשְׁמֵן לֵב וְכוּ' וְאָזְנָיו וְכוּ' וְעֵינָיו וְכוּ'",
+   "proof": "וּתְלָת מֹחִין הוּא בְּחִינַת (ישעיהו ו׳:י׳): הַשְׁמֵן לֵב וְכוּ' וְאָזְנָיו וְכוּ' וְעֵינָיו וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּק עַצְמוֹ לְצַדִּיקִים וְקַבָּלַת עֵצָה מֵהֶם",
+   "target_he": "כְּלָיוֹת יוֹעֲצוֹת",
+   "proof": "אֲבָל כְּשֶׁמְּדַבֵּק עַצְמוֹ לְצַדִּיקִים וּמְקַבֵּל מֵהֶם עֵצָה, אֲזַי הוּא בְּחִינַת כְּלָיוֹת יוֹעֲצוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִרְאֶה בְעֵינָיו וּבְאָזְנָיו יִשְׁמָע וּלְבָבוֹ יָבִין",
+   "target_he": "הַשְּׁלשָׁה מֹחִין",
+   "proof": "וְאָז יִרְאֶה בְעֵינָיו וּבְאָזְנָיו יִשְׁמָע וּלְבָבוֹ יָבִין וְכוּ', שֶׁהֵם בְּחִינַת הַשְּׁלשָׁה מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּק עַצְמוֹ לְצַדִּיקִים וְקַבָּלַת עֵצָה מֵהֶם",
+   "target_he": "רְפוּאָה (וְשָׁב וְרָפָא לוֹ)",
+   "proof": "וְאָז יִרְאֶה בְעֵינָיו וּבְאָזְנָיו יִשְׁמָע וּלְבָבוֹ יָבִין וְכוּ', שֶׁהֵם בְּחִינַת הַשְּׁלשָׁה מֹחִין, וָשָׁב וְרָפָא לוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

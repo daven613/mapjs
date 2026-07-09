@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 120,
+ "chunk": "120_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לומד מתוך הספר",
+   "target_he": "עשייה",
+   "proof": "כְּשֶׁלּוֹמֵד מִתּוֹךְ הַסֵּפֶר, שֶׁהוּא בְּחִינַת עֲשִׂיָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עשייה",
+   "target_he": "נעשה",
+   "proof": "שֶׁהוּא בְּחִינַת עֲשִׂיָּה, שֶׁהוּא בְּחִינַת נַעֲשֶׂה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שומע מפה הצדיק",
+   "target_he": "נשמע",
+   "proof": "כְּשֶׁשּׁוֹמֵעַ מִפֶּה הַצַּדִּיק, הוּא בְּחִינַת נִשְׁמַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_10_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "קְדֻשַּׁת אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "הַשְׁגָּחָתוֹ יִתְבָּרַךְ תָּמִיד",
+   "proof": "וְעִקָּר קְדֻשַּׁת אֶרֶץ־יִשְׂרָאֵל הוּא, שֶׁשָּׁם הוּא הַשְׁגָּחָתוֹ יִתְבָּרַךְ תָּמִיד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְׁגָּחָתוֹ יִתְבָּרַךְ תָּמִיד",
+   "target_he": "תָּמִיד עֵינֵי ה' אֱלֹקֶיךָ בָּהּ מֵרֵאשִׁית הַשָּׁנָה וְעַד אַחֲרִית שָׁנָה",
+   "proof": "בִּבְחִינַת (דברים י״א:י״ב): תָּמִיד עֵינֵי ה' אֱלֹקֶיךָ בָּהּ מֵרֵאשִׁית הַשָּׁנָה וְעַד אַחֲרִית שָׁנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָעוֹלָם כֻּלּוֹ",
+   "target_he": "אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "שֶׁיְּחַדֵּשׁ אֶת כָּל הָעוֹלָם כֻּלּוֹ בִּבְחִינַת אֶרֶץ־יִשְׂרָאֵל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשְׁגָּחָה לְבַד",
+   "target_he": "בִּטּוּל הַטֶּבַע",
+   "proof": "אָז יִתְנַהֵג כָּל הָעוֹלָם כֻּלּוֹ עַל־יְדֵי הַשְׁגָּחָה לְבַד, כְּמוֹ אֶרֶץ־יִשְׂרָאֵל, וְאָז יִתְבַּטֵּל הַטֶּבַע לְגַמְרֵי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשְׁגָּחָה",
+   "target_he": "נִפְלָאוֹת",
+   "proof": "וְיִתְנַהֵג הָעוֹלָם עַל־יְדֵי הַשְׁגָּחָה לְבַד, שֶׁהוּא בְּחִינַת נִפְלָאוֹת, שֶׁלֹּא כְּדֶרֶךְ הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

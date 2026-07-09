@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 8,
+ "chunk": "8_7_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "טלית דקדושה",
+   "target_he": "מקיף",
+   "proof": "כִּי עַל־יְדֵי טַלִּית דִּקְדֻשָּׁה, שֶׁהוּא בִּבְחִינוֹת מַקִּיף",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מקיף",
+   "target_he": "רוח חיים",
+   "proof": "שֶׁהוּא בְּחִינַת הָרוּחַ־חַיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוח חיים",
+   "target_he": "סובב סובב הולך הרוח",
+   "proof": "בְּחִינוֹת (קהלת א׳:ו׳): סוֹבֵב סֹבֵב הוֹלֵךְ הָרוּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טלית דקדושה",
+   "target_he": "טלית דקלפה",
+   "proof": "כִּי עַל־יְדֵי טַלִּית דִּקְדֻשָּׁה... נִכְנָע טַלִּית דִּקְלִפָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "טלית דקלפה",
+   "target_he": "רוח דקלפה",
+   "proof": "נִכְנָע טַלִּית דִּקְלִפָּה, בְּחִינַת הָרוּחַ דִּקְלִפָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נכנע טלית דקלפה",
+   "target_he": "לאחוז בכנפות הארץ ויתנערו רשעים ממנה",
+   "proof": "וְזֶהוּ (איוב ל״ח:י״ג): לֶאֱחוֹז בְּכַנְפוֹת הָאָרֶץ וְיִנָּעֲרוּ רְשָׁעִים מִמֶּנָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ארבע כנפות",
+   "target_he": "רוח חיים דקדושה",
+   "proof": "כִּי עַל־יְדֵי הָאַרְבַּע כְּנָפוֹת, שֶׁהֵם בְּחִינַת הָרוּחַ־חַיִּים דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוח חיים דקדושה",
+   "target_he": "ארבעה ראשים",
+   "proof": "שֶׁהֵם בְּחִינַת הָאַרְבָּעָה רָאשִׁים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ארבע כנפות",
+   "target_he": "וינערו רשעים",
+   "proof": "עַל־יָדָם וְיִנָּעֲרוּ רְשָׁעִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וינערו רשעים",
+   "target_he": "משפיל רשעים עדי ארץ",
+   "proof": "בְּחִינַת מַשְׁפִּיל רְשָׁעִים עֲדֵי אָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

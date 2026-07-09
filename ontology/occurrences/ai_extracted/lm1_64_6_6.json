@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_6_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מָחָר",
+   "target_he": "לֶעָתִיד לָבוֹא",
+   "proof": "מָחָר הוּא בְּחִינַת לֶעָתִיד לָבוֹא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְעָנְתָה בִּי צִדְקָתִי בְּיוֹם מָחָר",
+   "target_he": "קִבּוּל הַשָּׂכָר לֶעָתִיד לָבוֹא",
+   "proof": "בְּחִינַת... וְעָנְתָה בִּי צִדְקָתִי בְּיוֹם מָחָר, הַיְנוּ בְּחִינַת קִבּוּל הַשָּׂכָר לֶעָתִיד לָבוֹא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַצִּמְצוּם",
+   "target_he": "הֶחָלָל הַפָּנוּי",
+   "proof": "בְּחִינַת הֶחָלָל הַפָּנוּי שֶׁהוּא עַל יְדֵי הַצִּמְצוּם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֶחָלָל הַפָּנוּי",
+   "target_he": "אַרְבֶּה",
+   "proof": "וְאָז יֵדְעוּ שֶׁהֶחָלָל הַפָּנוּי הוּא בִּבְחִינַת אַרְבֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לְבוּשׁ",
+   "target_he": "הַצִּמְצוּם שֶׁל חָלָל הַפָּנוּי",
+   "proof": "לְבוּשׁ הוּא בְּחִינַת הַצִּמְצוּם שֶׁל חָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַצִּמְצוּם",
+   "target_he": "הַלְּבוּשִׁין",
+   "proof": "שֶׁעַל יָדוֹ בְּחִינַת הַלְּבוּשִׁין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

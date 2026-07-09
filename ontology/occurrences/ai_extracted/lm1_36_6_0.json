@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 36,
+ "chunk": "36_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַכְּלִי בִּשְׁלֵמוּת",
+   "target_he": "מְאוֹרוֹת מָלֵא",
+   "proof": "אִם הַכְּלִי הוּא בִּשְׁלֵמוּת, אֲזַי הוּא מְקַבֵּל בִּבְחִינַת מְאוֹרוֹת מָלֵא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁלֵמוּת הַכְּלִי",
+   "target_he": "מְאֹרֹת חָסֵר וָאו",
+   "proof": "וְאִם, חַס וְשָׁלוֹם, הַכְּלִי אֵינוֹ בִּשְׁלֵמוּת, אֲזַי הוּא מְקַבֵּל בִּבְחִינַת מְאֹרֹת חָסֵר וָאו, כְּמוֹ שֶׁכָּתוּב מְאֵרַת ה' בְּבֵית רָשָׁע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אוֹר הַפָּשׁוּט הַבָּא מִלְּעֵיל",
+   "target_he": "קְמִיץ וּסְתִים",
+   "proof": "כִּי אוֹר הַפָּשׁוּט הַבָּא מִלְּעֵיל, הוּא בְּחִינַת קְמִיץ וּסְתִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אוֹר לְפִי בְּחִינַת הַכְּלִי הַמְקַבְּלִים",
+   "target_he": "צֵירֵי",
+   "proof": "אַךְ לְפִי בְּחִינַת הַכְּלִי הַמְקַבְּלִים, הוּא בְּחִינַת צֵירֵי, שֶׁנִּצְטַיֵּר הָאוֹר לְפִי בְּחִינַת הַכְּלִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

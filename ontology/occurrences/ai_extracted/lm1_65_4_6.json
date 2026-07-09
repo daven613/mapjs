@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 65,
+ "chunk": "65_4_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "צופים",
+   "target_he": "בעל השדה",
+   "proof": "צוֹפִים זֶה בְּחִינוֹת הַבַּעַל הַשָּׂדֶה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עיניו",
+   "target_he": "שדה צופים",
+   "proof": "כְּשֶׁעֵינָיו בִּבְחִינוֹת שְׂדֵה צוֹפִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שדה צופים",
+   "target_he": "לתקן ולהסתכל על הסמוכים אל התכלית",
+   "proof": "כְּשֶׁעֵינָיו בִּבְחִינוֹת שְׂדֵה צוֹפִים כַּנַּ\"ל, אֲזַי יָכוֹל לְתַקֵּן וּלְהִסְתַּכֵּל עַל אוֹתָם שֶׁהֵם סְמוּכִים אֶל הַתַּכְלִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אותם שהם רחוקים מהתכלית",
+   "target_he": "סוף תיבה",
+   "proof": "וְהֵם בְּחִינוֹת סוֹף תֵּבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צופים",
+   "target_he": "התכלית",
+   "proof": "וְהַצּוֹפִים מְתַקְּנִים אוֹתָם, וּמְבִיאִים אוֹתָם אֶל הַתַּכְלִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רחוקים מהתכלית",
+   "target_he": "שכחו תחילת התיבה",
+   "proof": "הַיְנוּ שֶׁמֵּחֲמַת שֶׁהֵם רְחוֹקִים מֵהַתַּכְלִית, שָׁכְחוּ תְּחִלַּת הַתֵּבָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כוללים תפלתם בבחינת אחד",
+   "target_he": "שכחו תחילת התיבה",
+   "proof": "כִּי אֵינָם כּוֹלְלִים תְּפִלָּתָם בִּבְחִינַת אֶחָד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חזרו ויסדום ותקנו אותם",
+   "target_he": "יהיה כולו אחד",
+   "proof": "וְחָזְרוּ וְיִסְּדוּם וְתִקְּנוּ אוֹתָם, שֶׁיִּהְיֶה כֻּלּוֹ אֶחָד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 75,
+ "chunk": "75_1_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "צוֹלֵעַ עַל יְרֵכוֹ",
+   "target_he": "פְּגַם הָרַגְלִין",
+   "proof": "אֲזַי הֵם בִּבְחִינַת: צוֹלֵעַ עַל יְרֵכוֹ (בראשית ל״ב:ל״ב), שֶׁהוּא בְּחִינַת פְּגַם הָרַגְלִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בּוֹנֶה דִּבּוּר דִּקְדֻשָּׁה מֵהַנִּיצוֹצוֹת",
+   "target_he": "וַיִּבֶן אֶת הַצֵּלָע",
+   "proof": "זֶהוּ בְּחִינַת (שם ב): וַיִּבֶן אֶת הַצֵּלָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "וַיִּבֶן אֶת הַצֵּלָע",
+   "target_he": "צוֹלֵעַ עַל יְרֵכוֹ",
+   "proof": "שֶׁמְּתַקֵּן בְּחִינַת צוֹלֵעַ עַל יְרֵכוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לֵוִי הִטִּיחַ דְּבָרִים כְּלַפֵּי מַעְלָה וְאִטְלַע",
+   "target_he": "צוֹלֵעַ עַל יְרֵכוֹ",
+   "proof": "וְזֶהוּ בְּחִינַת (מגילה כב:): לֵוִי הִטִּיחַ דְּבָרִים כְּלַפֵּי מַעְלָה וְאִטְלַע – זֶה בְּחִינַת צוֹלֵעַ עַל יְרֵכוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פְּגַם הַדִּבּוּר",
+   "target_he": "צוֹלֵעַ עַל יְרֵכוֹ",
+   "proof": "כִּי מֵחֲמַת שֶׁפָּגַם בְּהַדִּבּוּר, עַל כֵּן אִטְלַע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צוֹלֵעַ עַל יְרֵכוֹ",
+   "target_he": "פְּגַם הַדִּבּוּר",
+   "proof": "כִּי נִשְׁאַר בִּבְחִינַת צוֹלֵעַ עַל יְרֵכוֹ, שֶׁהוּא בְּחִינַת פְּגַם הַדִּבּוּר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּר בְּתוֹרָה וּתְפִלָּה",
+   "target_he": "גּוּף בָּטֵל וְאֶפֶס",
+   "proof": "וּצְרִיכִין לְדַבֵּר בְּתוֹרָה וּתְפִלָּה, עַד שֶׁיִּהְיֶה הַגּוּף בָּטֵל וְאֶפֶס",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַגּוּף אֶחָד עִם הַדִּבּוּר",
+   "target_he": "וְהָיוּ לְבָשָׂר אֶחָד",
+   "proof": "וְזֶהוּ בְּחִינַת (בראשית ב׳:כ״ד): וְהָיוּ לְבָשָׂר אֶחָד – שֶׁיְּהֵא הַגּוּף אֶחָד עִם הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְהָיוּ לְבָשָׂר אֶחָד",
+   "target_he": "חַוָּה",
+   "proof": "שֶׁהוּא בְּחִינַת חַוָּה, כְּמוֹ שֶׁכָּתוּב (תהילים י״ט:ג׳): וְלַיְלָה לְלַיְלָה יְחַוֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חַוָּה",
+   "target_he": "הַצֵּלָע",
+   "proof": "שֶׁהִיא בְּחִינַת הַצֵּלָע הַנַּ\"ל, בְּחִינַת: וַיִּבֶן אֶת הַצֵּלָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

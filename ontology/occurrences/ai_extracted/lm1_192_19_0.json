@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 192,
+ "chunk": "192_19_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "זה",
+   "target_he": "אש שחורה על גבי אש לבנה",
+   "proof": "וְזֶה בְּחִינַת: אֵשׁ שְׁחוֹרָה עַל גַּבֵּי אֵשׁ לְבָנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זה",
+   "target_he": "מוחין",
+   "proof": "בְּחִינַת מֹחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זה",
+   "target_he": "ונוזלים מן לבנון",
+   "proof": "בְּחִינוֹת: וְנוֹזְלִים מִן לְבָנוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ונוזלים מן לבנון",
+   "target_he": "ליבונא דמוחא",
+   "proof": "וְנוֹזְלִים מִן לְבָנוֹן – מִן לִבּוּנָא דְּמֹחָא",
+   "explicitness": "inferred",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זה",
+   "target_he": "שחורה אני ונאוה",
+   "proof": "וְזֶה בְּחִינַת: שְׁחוֹרָה אֲנִי וְנָאוָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מה שהוא שחור ושפל אצל העליון",
+   "target_he": "מדרגה התחתונה שלו",
+   "proof": "כִּי מַה שֶּׁהוּא שָׁחֹר וְשָׁפָל אֵצֶל הָעֶלְיוֹן, הַיְנוּ מַדְרֵגָה הַתַּחְתּוֹנָה שֶׁלּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 210,
+ "chunk": "210_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "וְאָהַבְתָּ",
+   "target_he": "פַּרְנָסָה בְּלֹא יְגִיעָה וָטֹרַח",
+   "proof": "וּכְשֶׁמְּקַיֵּם וְאָהַבְתָּ, עַל יְדֵי זֶה יִהְיֶה לוֹ פַּרְנָסָה בְּלֹא יְגִיעָה וָטֹרַח",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זְכוּת אַבְרָהָם",
+   "target_he": "קְרִיעַת יַם סוּף",
+   "proof": "וּקְרִיעַת יַם סוּף הָיָה עַל־יְדֵי זְכוּת אַבְרָהָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זְכוּת אַבְרָהָם",
+   "target_he": "וְאָהַבְתָּ",
+   "proof": "וּקְרִיעַת יַם־סוּף הָיָה עַל־יְדֵי זְכוּת אַבְרָהָם, בְּחִינַת וְאָהַבְתָּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

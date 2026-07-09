@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תַּלְמִידִים שֶׁאֵינָם הֲגוּנִים",
+   "target_he": "הֶזֵּק",
+   "proof": "כְּדֵי שֶׁלֹּא יְהֵא נִדְבָּק בּוֹ מֵהָרַע שֶׁלָּהֶם, שֶׁלֹּא יַזִּיק לוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לוֹמֵד עִם אַחֵר",
+   "target_he": "כְּתִיבָה",
+   "proof": "וּכְשֶׁלּוֹמֵד עִם אַחֵר, הוּא בְּחִינַת כְּתִיבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לָשׁוֹן",
+   "target_he": "לְשׁוֹנִי עֵט סוֹפֵר מָהִיר",
+   "proof": "כִּי הַלָּשׁוֹן הוּא בְּחִינַת: לְשׁוֹנִי עֵט סוֹפֵר מָהִיר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עוֹר בְּהֵמָה טְמֵאָה",
+   "target_he": "תַּלְמִיד שֶׁאֵינוֹ הָגוּן",
+   "proof": "עַל בְּחִינַת עוֹר בְּהֵמָה טְמֵאָה, הַיְנוּ תַּלְמִיד שֶׁאֵינוֹ הָגוּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

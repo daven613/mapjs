@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 177,
+ "chunk": "177_12_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תָּגֵי",
+   "target_he": "כֶּתֶר",
+   "proof": "שֶׁהוּא: תָּגֵי, כֶּתֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דַּל",
+   "target_he": "יַעֲקֹב",
+   "proof": "דַּל, בְּחִינַת יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יַעֲקֹב",
+   "target_he": "עָקֵב",
+   "proof": "שֶׁהוּא עָקֵב בְּחִינַת דַּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָקֵב",
+   "target_he": "דַּל",
+   "proof": "שֶׁהוּא עָקֵב בְּחִינַת דַּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יִשְׂרָאֵל",
+   "target_he": "תָּגֵי",
+   "proof": "וּבְחִינַת יִשְׂרָאֵל הוּא בְּחִינַת תָּגֵי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 19,
+ "chunk": "19_5_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רֹאשׁ מְסִבָּי",
+   "target_he": "נֹגַהּ לוֹ סָבִיב",
+   "proof": "רֹאשׁ מְסִבָּי הוּא בְּחִינַת נֹגַהּ לוֹ סָבִיב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁאָר לְשׁוֹנוֹת הָעַמִּים",
+   "target_he": "מְדוּרָה שֶׁל שִׁבְעִין כּוֹכְבִין",
+   "proof": "וְעַל שְׁאָר לְשׁוֹנוֹת הָעַמִּים, שֶׁהֵם בְּחִינַת מְדוּרָה שֶׁל שִׁבְעִין כּוֹכְבִין הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּחִינַת נֹגַהּ",
+   "target_he": "בְּחִינַת תַּרְגּוּם",
+   "proof": "הַיְנוּ כִּי בְּחִינַת נֹגַהּ, שֶׁהוּא בְּחִינַת תַּרְגּוּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לְשׁוֹן תַּרְגּוּם",
+   "target_he": "שְׁלֵמוּת לְשׁוֹן הַקֹּדֶשׁ",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת שְׁלֵמוּת לְשׁוֹן הַקֹּדֶשׁ עַל־יְדֵי לְשׁוֹן תַּרְגּוּם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁאָר לְשׁוֹנוֹת הָעַמִּים",
+   "target_he": "רַע גָּמוּר",
+   "proof": "וּשְׁאָר לְשׁוֹנוֹת הָעַמִּים, שֶׁהֵם בְּחִינַת רַע גָּמוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

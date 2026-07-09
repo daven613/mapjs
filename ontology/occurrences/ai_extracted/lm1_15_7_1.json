@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 15,
+ "chunk": "15_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "דעת",
+   "proof": "עַל־יְדֵי שֶׁיַּעֲלֶה וִיקַשֵּׁר בְּחִינַת יִרְאָה לִבְחִינַת דַּעַת עַל־יְדֵי בְּחִינַת מִשְׁפָּט",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אלה הדברים אשר תדבר",
+   "target_he": "יראה",
+   "proof": "אֵלֶּה הַדְּבָרִים אֲשֶׁר תְּדַבֵּר – זֶה בְּחִינַת יִרְאָה, הַנִּקְרָא דָּבָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "משה",
+   "target_he": "דעת",
+   "proof": "מֹשֶׁה הוּא בְּחִינַת דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ישראל",
+   "target_he": "משפט",
+   "proof": "שֶׁיִּשְׂרָאֵל שֶׁהֵם בְּחִינַת מִשְׁפָּט כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ישראל",
+   "target_he": "יראה",
+   "proof": "הֵם מַעֲלִין וּמְקַשְּׁרִין (הַיִּרְאָה) לִבְחִינַת משֶׁה, לִבְחִינַת דַּעַת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ישראל",
+   "target_he": "משפט",
+   "proof": "כִּי הֵם בְּחִינַת מִשְׁפָּט, כְּמוֹ שֶׁכָּתוּב: חֻקָּיו וּמִשְׁפָּטָיו לְיִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה המקושרת על ידי משפט לדעת",
+   "target_he": "תורה שבנגלה",
+   "proof": "נִמְצָא, שֶׁעַל־יְדֵי שֶׁמְּקַשְּׁרִין הַיִּרְאָה עַל־יְדֵי מִשְׁפָּט לִבְחִינַת דַּעַת, זוֹכִין לַתּוֹרָה שֶׁל נִגְלֶה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תורה שבנגלה",
+   "target_he": "תפילה",
+   "proof": "וְעַל־יְדֵי תּוֹרָה שֶׁבְּנִגְלֶה זוֹכִין לִתְפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תפילה",
+   "target_he": "סתרי אורייתא",
+   "proof": "וְעַל־יְדֵי תְּפִלָּה זוֹכִין לְסִתְרֵי אוֹרַיְתָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דבר",
+   "target_he": "יראה",
+   "proof": "דָּבָר זֶה בְּחִינַת יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

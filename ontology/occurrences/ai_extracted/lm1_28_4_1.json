@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 28,
+ "chunk": "28_4_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עוֹלַת תָּמִיד",
+   "target_he": "תּוֹלַעַת יַעֲקֹב",
+   "proof": "שֶׁהוּא בְּחִינַת תּוֹלַעַת יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָּל קָרְבָּן עוֹלָה",
+   "target_he": "לֵאָה",
+   "proof": "הִיא בִּבְחִינַת לֵאָה וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עוֹלַת תָּמִיד",
+   "target_he": "דִּינֶיהָ שֶׁל לֵאָה",
+   "proof": "וְלָכֵן בָּא עוֹלַת תָּמִיד כְּנֶגְדָּהּ, כְּדֵי לְמַתֵּק דִּינֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עוֹלַת תָּמִיד",
+   "target_he": "הַתּוֹלַעַת הַטָּמֵא",
+   "proof": "כְּדֵי שֶׁלֹּא יִשְׁלֹט וְיִמְשֹׁל הַתּוֹלַעַת הַטָּמֵא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 275,
+ "chunk": "275_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מִצְוָה",
+   "target_he": "נֵר",
+   "proof": "שֶׁכָּל מִצְוָה וּמִצְוָה שֶׁעוֹשִׂין, נַעֲשֶׂה מִמֶּנָּה נֵר אֶחָד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַנֵּרוֹת הַנַּעֲשִׂין מִן הַמִּצְו‍ֹת",
+   "target_he": "נֵר מִצְוָה",
+   "proof": "וְהַנֵּרוֹת נַעֲשִׂין מִן הַמִּצְו‍ֹת כַּנַּ\"ל, בִּבְחִינַת: נֵר מִצְוָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַנֵּרוֹת",
+   "target_he": "חִפּוּשׂ בְּגִנְזַיָּא דְּמַלְכָּא",
+   "proof": "וְאֵצֶל אֵלּוּ הַנֵּרוֹת מְחַפֶּשֶׂת הַנְּשָׁמָה אַחַר הַהִסְתַּלְּקוּת בְּגִנְזַיָּא דְּמַלְכָּא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חָפְשִׁי מִן הַמִּצְו‍ֹת",
+   "target_he": "בַּמֵּתִים חָפְשִׁי",
+   "proof": "וְזֶה בְּחִינַת: בַּמֵּתִים חָפְשִׁי – כֵּיוָן שֶׁמֵּת אָדָם נַעֲשֶׂה חָפְשִׁי מִן הַמִּצְו‍ֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חָפְשִׁי",
+   "target_he": "בְּחִינַת הַחִפּוּשׂ שֶׁנַּעֲשֶׂה מִן הַמִּצְוו‍ֹת",
+   "proof": "חָפְשִׁי, הַיְנוּ בְּחִינַת הַחִפּוּשׂ שֶׁנַּעֲשֶׂה מִן הַמִּצְוו‍ֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַמִּצְוו‍ֹת",
+   "target_he": "נֵרוֹת",
+   "proof": "כִּי הַמִּצְוו‍ֹת הֵם נֵרוֹת שֶׁעַל־יָדָם הַחִפּוּשׂ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

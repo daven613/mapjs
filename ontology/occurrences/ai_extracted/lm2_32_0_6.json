@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 32,
+ "chunk": "32_0_6",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "רוח־קנאה",
+   "target_he": "רוחו של משיח",
+   "proof": "וְהִנֵּה הָרוּחַ־קִנְאָה שֶׁהוּא בְּחִינַת רוּחוֹ שֶׁל מָשִׁיחַ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אהבה",
+   "target_he": "רוח־קנאה",
+   "proof": "אַךְ דַּע, שֶׁכָּאן בָּא הָרוּחַ־קִנְאָה בִּשְׁבִיל אַהֲבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוח־קנאה",
+   "target_he": "שלום שביניהם",
+   "proof": "יוּכַל לְהִתְקַלְקֵל הַשָּׁלוֹם שֶׁבֵּינֵיהֶם, חַס וְשָׁלוֹם, עַל־יְדֵי הָרוּחַ־קִנְאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קנאה",
+   "target_he": "מחלוקת",
+   "proof": "יְכוֹלָה לְהַטִּיל מַחֲלֹקֶת, חַס וְשָׁלוֹם, עַל־יְדֵי שֶׁמְּקַנֵּא לָהּ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

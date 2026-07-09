@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_8_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קִיְּמוּ",
+   "target_he": "רַגְלַיִן",
+   "proof": "קִיְּמוּ זֶה בְּחִינַת רַגְלַיִן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִבְּלוּ",
+   "target_he": "יָדַיִן",
+   "proof": "וְקִבְּלוּ – זֶה בְּחִינַת יָדַיִן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִיְּמוּ וְקִבְּלוּ",
+   "target_he": "הַתּוֹרָה בְּעַצְמָהּ",
+   "proof": "וְהוּא בְּחִינַת הַתּוֹרָה בְּעַצְמָהּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

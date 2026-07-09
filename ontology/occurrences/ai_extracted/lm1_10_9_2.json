@@ -1,0 +1,154 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_9_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "גבבא דעמרא",
+   "target_he": "עומר",
+   "proof": "וְשָׁקִיל גְּבָבָא דְּעַמְרָא – זֶה בְּחִינַת עֹמֶר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "משיה במיא",
+   "target_he": "שעורים",
+   "proof": "וּמַשְׁיֵהּ בְּמַיָּא – זֶה בְּחִינַת שְׂעוֹרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שעורים",
+   "target_he": "אסתר ברוח הקודש",
+   "proof": "זֶה בְּחִינַת שְׂעוֹרִים, בְּחִינַת אֶסְתֵּר בְּרוּחַ־הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אסתר ברוח הקודש",
+   "target_he": "רגלין",
+   "proof": "שֶׁהוּא בְּחִינַת רַגְלַיִן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רגלין",
+   "target_he": "אפיקי מים",
+   "proof": "כִּי הָרַגְלַיִן הֵם אֲפִיקֵי מַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אפיקי מים",
+   "target_he": "ערבי נחל",
+   "proof": "כִּי הֵם בְּחִינַת עַרְבֵי נַחַל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ערבין",
+   "target_he": "ערבי נחל",
+   "proof": "עָרְבִין זֶה בְּחִינַת עַרְבֵי נַחַל, אֲפִיקֵי מַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ערבי נחל",
+   "target_he": "מרדכי ואסתר",
+   "proof": "הַיְנוּ בְּחִינַת מָרְדֳּכַי וְאֶסְתֵּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מרדכי ואסתר",
+   "target_he": "ידים ורגלים",
+   "proof": "בְּחִינַת יָדַיִם וְרַגְלַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ידים ורגלים",
+   "target_he": "המחאת כף ורקודין",
+   "proof": "בְּחִינַת הַמְחָאַת כַּף וְרִקּוּדִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רומח",
+   "target_he": "רוח מ\"ם",
+   "proof": "רֹמַח דָּא רוּחַ מֵ\"ם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוח מ\"ם",
+   "target_he": "מארבע רוחות באי הרוח",
+   "proof": "שֶׁהוּא מֵאַרְבַּע רוּחוֹת בֹּאִי הָרוּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מ\"ם",
+   "target_he": "ארבע רוחות",
+   "proof": "כִּי הַמֵּ\"ם הִיא אַרְבַּע רוּחוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ארבע רוחות",
+   "target_he": "רוח הצדיק",
+   "proof": "שֶׁהִיא בְּחִינַת רוּחַ הַצַּדִּיק דְּנָשֵׁב בְּיָדַיִן וְרַגְלַיִן כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "ראש הרומח",
+   "target_he": "הצדיק",
+   "proof": "וְרֹאשׁ הָרֹמַח הוּא הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדיק",
+   "target_he": "תוצאות הרוח",
+   "proof": "כִּי מִמֶּנּוּ תּוֹצְאוֹת הָרוּחַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

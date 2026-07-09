@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 33,
+ "chunk": "33_8_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מלכות",
+   "target_he": "אתרוג",
+   "proof": "לְהָאִיר אֶל הַמַּלְכוּת, שֶׁהוּא הָאֶתְרוֹג",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גילוי מלכותו לכל באי עולם",
+   "target_he": "וּמַלְכוּתוֹ בַּכֹּל מָשָׁלָה",
+   "proof": "שֶׁכָּל זֶה הוּא בְּחִינוֹת: וּמַלְכוּתוֹ בַּכֹּל מָשָׁלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדיק שכופה יצרו",
+   "target_he": "גילוי מלכותו לכל באי עולם",
+   "proof": "וְכָל זֶה נַעֲשֶׂה עַל־יְדֵי הַצַּדִּיק שֶׁכּוֹפֶה יִצְרוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדיק שכופה יצרו",
+   "target_he": "לולב",
+   "proof": "שֶׁהוּא בְּחִינַת הַלּוּלָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לולב",
+   "target_he": "צדיק",
+   "proof": "שֶׁהוּא בְּחִינַת צַדִּיק כַּיָּדוּעַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדיק",
+   "target_he": "צַדִּיק כַּתָּמָר יִפְרָח",
+   "proof": "בְּחִינַת: צַדִּיק כַּתָּמָר יִפְרָח",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 43,
+ "chunk": "43_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בלעם",
+   "target_he": "דעת דקליפה",
+   "proof": "נִמְצָא שֶׁבִּלְעָם הוּא דַּעַת דִּקְלִפָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דבוריו",
+   "target_he": "אווירים ארסיים של ניאוף",
+   "proof": "וְעַל־יְדֵי דִּבּוּרָיו הוֹלִיד אֲוִירִים אַרְסִיִּים שֶׁל נִאוּף",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דבריו",
+   "target_he": "התגלות הדעת שלו",
+   "proof": "שֶׁהוּא הִתְגַּלּוּת הַדַּעַת שֶׁלּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דבריו",
+   "target_he": "ניאוף במדין",
+   "proof": "כִּי עַל־יְדֵי דְּבָרָיו, שֶׁהוּא הִתְגַּלּוּת הַדַּעַת שֶׁלּוֹ, הוֹלִיד נִאוּף בְּמִדְיָן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 280,
+ "chunk": "280_18_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וּנְתָנוֹ ה' אֱלֹהֶיךָ בְּיָדֶיךָ",
+   "target_he": "אֱמוּנָה",
+   "proof": "זֶה בְּחִינַת אֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "נִיצוֹצוֹת",
+   "proof": "כִּי עַל יְדֵי אֱמוּנָה מַעֲלִין הַנִּיצוֹצוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

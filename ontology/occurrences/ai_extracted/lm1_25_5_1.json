@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 25,
+ "chunk": "25_5_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת הַדִּמְיוֹן",
+   "target_he": "קָרְבָּנוֹת",
+   "proof": "שֶׁשְּׁבִירַת הַדִּמְיוֹן הֵם הַקָּרְבָּנוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סְמִיכָה עַל הַקָּרְבָּנוֹת",
+   "target_he": "שְׁבִירַת הַדִּמְיוֹן",
+   "proof": "וְזֶה בְּחִינַת סְמִיכָה עַל הַקָּרְבָּנוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּהֵמוֹת",
+   "target_he": "כֹּחַ הַמְדַמֶּה",
+   "proof": "שֶׁהֵם בְּחִינַת כֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֲלִיכָה אַחַר הַמְדַמֶּה שֶׁבַּלֵּב",
+   "target_he": "מַעֲשֵׂה בְּהֵמָה",
+   "proof": "וּכְשֶׁאָדָם הוֹלֵךְ אַחַר הַמְדַמֶּה שֶׁבַּלֵּב... זֶהוּ מַעֲשֵׂה בְּהֵמָה מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֹּחַ הַמְדַמֶּה",
+   "target_he": "חֲטָאִים",
+   "proof": "וְכָל הַחֲטָאִים בָּאִין עַל־יְדֵי כֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֹּחַ הַמְדַמֶּה",
+   "target_he": "תַּאֲווֹת",
+   "proof": "שֶׁמִּשָּׁם נִמְשָׁכִין כָּל הַתַּאֲווֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סְמִיכָה וְוִדּוּי עַל הַקָּרְבָּן",
+   "target_he": "הַמְשָׁכַת הַחֲטָאִים וְכֹחַ הַמְדַמֶּה עַל הַבְּהֵמָה",
+   "proof": "וְעַל־יְדֵי־זֶה נִמְשָׁכִין כָּל הַחֲטָאִים וְכָל כֹּחַ הַמְדַמֶּה עַל הַבְּהֵמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּהֵמָה",
+   "target_he": "מְדַמֶּה",
+   "proof": "שֶׁהִיא בְּחִינַת מְדַמֶּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁחִיטַת הַבְּהֵמָה",
+   "target_he": "הַמְדַמֶּה",
+   "proof": "וְעַל־יְדֵי־זֶה נִכְנָע וְנִשְׁבָּר הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

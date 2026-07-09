@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 75,
+ "chunk": "75_0_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וּבַיּוֹם הַהוּא יַעַמְדוּ רַגְלָיו עַל הַר הַזֵּיתִים",
+   "target_he": "רַגְלִין",
+   "proof": "שֶׁהוּא בְּחִינַת רַגְלִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תּוֹרָה וּתְפִלָּה",
+   "target_he": "עֲמִידָה",
+   "proof": "וְתוֹרָה וּתְפִלָּה, הֵם גַּם כֵּן בְּחִינַת עֲמִידָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תּוֹרָה וּתְפִלָּה",
+   "target_he": "רַגְלִין",
+   "proof": "וְהוּא בְּחִינַת רַגְלִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת רַגְלִין דְּתוֹרָה וּתְפִלָּה",
+   "target_he": "וְעָמְדוּ רַגְלָיו עַל הַר הַזֵּיתִים",
+   "proof": "וְעַל יְדֵי בְּחִינַת רַגְלִין דְּתוֹרָה וּתְפִלָּה נִתְקָרְבוּ בְּחִינַת: וְעָמְדוּ רַגְלָיו עַל הַר הַזֵּיתִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "צֶדֶק",
+   "target_he": "תּוֹרָה וּתְפִלָּה",
+   "proof": "וְצֶדֶק הוּא תּוֹרָה וּתְפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דִּבּוּרִים שֶׁל תּוֹרָה וּתְפִלָּה",
+   "target_he": "בְּחִינוֹת שׁוֹקִין וְרַגְלַיִן",
+   "proof": "כִּי עַל־יְדֵי הַדִּבּוּרִים שֶׁל תּוֹרָה וּתְפִלָּה נַעֲשֶׂה בְּחִינוֹת שׁוֹקִין וְרַגְלַיִן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

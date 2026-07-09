@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 55,
+ "chunk": "55_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אֲדֹנָי",
+   "target_he": "הֵיכָל",
+   "proof": "\"אֲדֹנָי\" זֶהוּ \"הֵיכָל\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עמידת האדם בהיכל המלך בשעת התפילה",
+   "target_he": "אֲדֹנָי שְׂפָתַי תִּפְתָּח",
+   "proof": "וּבִשְׁעַת הַתְּפִלָּה, הָאָדָם עוֹמֵד בְּהֵיכַל הַמֶּלֶךְ, בִּבְחִינַת (שם נא): אֲדֹנָי שְׂפָתַי תִּפְתָּח",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ביטול עצמו",
+   "target_he": "פירוש החרפה והבזוי לכבוד",
+   "proof": "וּמְבַטֵּל אֶת עַצְמוֹ מִכֹּל וָכֹל... בְּוַדַּאי כְּשֶׁשּׁוֹמֵעַ אֵיזֶהוּ חֶרְפָּה וּבִזּוּי, הוּא מְפָרֵשׁ אֶת הַחֶרְפָּה וְהַבִּזּוּי לְפֵרוּשׁ שֶׁל כָּבוֹד לְהַמֶּלֶךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צירוף הבזיונות",
+   "target_he": "כבוד להמלך",
+   "proof": "בְּכֵן צָרִיךְ לַעֲשׂוֹת מִכָּל הַבִּזְיוֹנוֹת צֵרוּפֵי כָּבוֹד לְהַמֶּלֶךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

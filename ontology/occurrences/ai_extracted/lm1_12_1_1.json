@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_1_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תורה שבעל פה",
+   "target_he": "תלמיד חכם",
+   "proof": "שֶׁאֵינוֹ נִקְרָא תַּלְמִיד־חָכָם אֶלָּא עַל־יְדֵי תּוֹרָה שֶׁבְּעַל־פֶּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תלמיד חכם",
+   "target_he": "בקי בגמרא ופוסקים",
+   "proof": "אֶלָּא זֶה שֶׁהוּא בָּקִי בִּגְמָרָא וּפוֹסְקִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "לבן",
+   "proof": "וּכְשֶׁלּוֹמֵד בְּלֹא דַּעַת, נִקְרָא לָבָן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "ערמימיות",
+   "proof": "עַל שֵׁם עַרְמִימִיּוּת שֶׁנִּכְנָס בּוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "שנאה ורדיפת הצדיקים",
+   "proof": "וְשׂוֹנֵא וְרוֹדֵף אֶת הַצַּדִּיקִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

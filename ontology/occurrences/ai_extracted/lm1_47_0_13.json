@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 47,
+ "chunk": "47_0_13",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶץ",
+   "target_he": "אֱמֶת",
+   "proof": "אֶרֶץ, שֶׁהוּא בְּחִינוֹת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶץ",
+   "target_he": "הֶאָרַת פָּנִים",
+   "proof": "וְאָז הוּא בִּבְחִינוֹת הֶאָרַת פָּנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמֶת",
+   "target_he": "מֻפְשָׁט מִתַּאֲוַת אֲכִילָה",
+   "proof": "רַק מֵחֲמַת שֶׁהוּא בִּבְחִינוֹת אֱמֶת, וְהוּא מֻפְשָׁט מִתַּאֲוַת אֲכִילָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִדַּת יַעֲקֹב",
+   "target_he": "הַשְׁפָּעַת אֶרֶץ יִשְׂרָאֵל",
+   "proof": "כִּי הַשְׁפָּעָתָה מִמִּדַּת יַעֲקֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אֶרֶץ הַחַיִּים",
+   "target_he": "תְּפִלִּין",
+   "proof": "וְהוּא גַּם כֵּן בְּחִינוֹת תְּפִלִּין, שֶׁנִּקְרָאִים חַיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִדַּת אֱמֶת",
+   "target_he": "פַּרְנָסָה בְּרֶוַח",
+   "proof": "הָאוֹחֵז בְּמִדַּת אֱמֶת, אֲזַי פַּרְנָסָתוֹ בְּרֶוַח",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כָּל הַיְקוּם",
+   "target_he": "מָמוֹנוֹ שֶׁל אָדָם שֶׁמַּעֲמִידוֹ",
+   "proof": "זֶה מָמוֹנוֹ שֶׁל אָדָם שֶׁמַּעֲמִידוֹ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קֻשְׁטָא",
+   "target_he": "הָאוֹחֵז בְּמִדַּת אֱמֶת",
+   "proof": "קֻשְׁטָא – הָאוֹחֵז בְּמִדַּת אֱמֶת",
+   "explicitness": "inferred",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קָאֵי",
+   "target_he": "מָמוֹנוֹ שֶׁמַּעֲמִידוֹ עַל רַגְלָיו",
+   "proof": "קָאֵי – זֶה מָמוֹנוֹ שֶׁמַּעֲמִידוֹ עַל רַגְלָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

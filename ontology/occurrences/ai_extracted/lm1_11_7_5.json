@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 11,
+ "chunk": "11_7_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "כבוד בשלמות",
+   "target_he": "דיבור",
+   "proof": "שֶׁאִי אֶפְשָׁר לִזְכּוֹת לְדִבּוּר אֶלָּא עַל־יְדֵי כָּבוֹד בִּשְׁלֵמוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עניוות",
+   "target_he": "תכלית הגדלות",
+   "proof": "וְזֶהוּ בְּחִינַת עֲנִיווּת שֶׁהוּא תַּכְלִית הַגַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ענוה",
+   "target_he": "להתכבד ולהתיקר",
+   "proof": "בִּשְׁבִיל לְהִתְכַּבֵּד וּלְהִתְיַקֵּר עַל־יְדֵי הָעֲנָוָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

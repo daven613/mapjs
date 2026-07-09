@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 69,
+ "chunk": "69_0_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מָמוֹן",
+   "target_he": "שְׁלֵמוּתָהּ",
+   "proof": "וְעִקַּר שְׁלֵמוּתָהּ – עַל יְדֵי הַמָּמוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁלֵמוּת",
+   "target_he": "לֵדָה",
+   "proof": "וְכָל זְמַן שֶׁאֵין לָהּ שְׁלֵמוּת, אִי אֶפְשָׁר לָהּ לְהוֹלִיד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָמוֹן",
+   "target_he": "הִתְנוֹצְצוּת אוֹרָהּ",
+   "proof": "כִּי הוּא בְּחִינַת הִתְנוֹצְצוּת אוֹרָהּ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

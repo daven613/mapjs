@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 134,
+ "chunk": "134_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "כל הגדול מחברו",
+   "target_he": "גדול",
+   "proof": "הַיְנוּ שֶׁהוּא גָּדוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גדול",
+   "target_he": "אמירת תורה",
+   "proof": "וְעַל־יְדֵי־זֶה אוֹמֵר תּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

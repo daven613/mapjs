@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_10_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "יוֹסֵף",
+   "target_he": "הַצַּדִּיק",
+   "proof": "כְּתִיב בְּיוֹסֵף, שֶׁהוּא בְּחִינַת הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת יוֹסֵף",
+   "target_he": "הַעֲלָאַת וַהֲרָמַת הַיָּדַיִם וְהָרַגְלַיִם",
+   "proof": "כִּי בִּלְעֲדֵי בְּחִינַת יוֹסֵף, שֶׁהוּא בְּחִינַת הַצַּדִּיק, אִי אֶפְשָׁר לְהַעֲלוֹת וּלְהָרִים הַיָּדַיִם וְהָרַגְלַיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִגְלֶה",
+   "target_he": "יָדַיִם",
+   "proof": "שֶׁנִּגְלֶה הוּא בְּחִינַת יָדַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִסְתָּר",
+   "target_he": "רַגְלַיִן",
+   "proof": "וְנִסְתָּר הוּא בְּחִינַת רַגְלַיִן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נִגְלֶה וְנִסְתָּר",
+   "target_he": "מָרְדֳּכַי וְאֶסְתֵּר",
+   "proof": "בְּחִינַת מָרְדֳּכַי וְאֶסְתֵּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

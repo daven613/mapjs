@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_5_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "נפשות",
+   "proof": "וְעַל־יְדֵי צְדָקָה הוּא לוֹקֵחַ נְפָשׁוֹת, כִּי לוֹקֵחַ לְעַצְמוֹ רֵעִים וְאוֹהֲבִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה",
+   "target_he": "רעים",
+   "proof": "כָּל מַה שֶּׁנּוֹתֵן צְדָקָה לְיוֹתֵר אֲנָשִׁים, עַל־יְדֵי־זֶה הוּא קוֹנֶה לוֹ רֵעִים יוֹתֵר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אהבה שקונה על ידי הצדקה",
+   "target_he": "אויר",
+   "proof": "וְעַל־יְדֵי זֹאת הָאַהֲבָה שֶׁקּוֹנֶה עַל־יְדֵי הַצְּדָקָה, עַל־יְדֵי־זֶה נִזְדַּכֵּךְ הָאֲוִיר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדקה ליותר אנשים ואהבה עם יותר אנשים",
+   "target_he": "אויר הנח והזך",
+   "proof": "וְכָל מַה שֶּׁנּוֹתְנִים לְיוֹתֵר אֲנָשִׁים צְדָקָה, וְקוֹנֶה אַהֲבָה עִם יוֹתֵר אֲנָשִׁים, עַל־יְדֵי־זֶה נִתְרַבֶּה יוֹתֵר הָאֲוִיר הַנָּח וְהַזַּךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אהבה",
+   "target_he": "אתדבקות רוחא ברוחא",
+   "proof": "כִּי אַהֲבָה הוּא אִתְדַּבְּקוּת רוּחָא בְּרוּחָא, דְּהַיְנוּ רוּחַ הָאוֹהֵב בְּרוּחַ הַנֶּאֱהָב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אתדבקות רוחא ברוחא",
+   "target_he": "אויר הנח",
+   "proof": "שֶׁזֶּה בְּחִינַת אֲוִיר הַנָּח, שֶׁרוּחָם נָחִים זֶה מִזֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוח רעה",
+   "target_he": "שנאה",
+   "proof": "כִּי אֵין רוּחַ רָעָה, שֶׁהוּא שִׂנְאָה, שֶׁיַּפְרִיד בֵּינֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_10_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "סִכְּתָא",
+   "target_he": "דִּבְרֵי תוֹרָה",
+   "proof": "הַיְנוּ בְּחִינַת דִּבְרֵי תּוֹרָה, כְּמוֹ שֶׁכָּתוּב: דִּבְרֵי חֲכָמִים כַּדָּרְבוֹנוֹת וּכְמַסְמְרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דָּצָהּ לְתַתָּא",
+   "target_he": "מַדְרֵגוֹת הַתַּחְתּוֹנוֹת",
+   "proof": "הַיְנוּ בְּחִינַת מַדְרֵגוֹת הַתַּחְתּוֹנוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַדְרֵגוֹת הַתַּחְתּוֹנוֹת",
+   "target_he": "בָּתַר דְּאִסְתְּלֵק רַבִּי שִׁמְעוֹן",
+   "proof": "בְּחִינַת: בָּתַר דְּאִסְתְּלֵק רַבִּי שִׁמְעוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַכְּלָלִי",
+   "target_he": "דִּבּוּר",
+   "proof": "כְּשֶׁאֵין תִּקּוּן הַכְּלָלִי... שֶׁאָז הַדִּבּוּר אָסוּר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "וְלָא עָאל",
+   "target_he": "שֶׁלֹּא הָיָה אֶפְשָׁר אָז לְדַבֵּר דִּבְרֵי תּוֹרָה",
+   "proof": "וְלָא עָאל – הַיְנוּ שֶׁלֹּא הָיָה אֶפְשָׁר אָז לְדַבֵּר דִּבְרֵי תּוֹרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דָּצָהּ לְעֵלָּא וְעָאל",
+   "target_he": "בְּיוֹמוֹי דְּרַבִּי שִׁמְעוֹן",
+   "proof": "הַיְנוּ בְּחִינוֹת בְּיוֹמוֹי דְּרַבִּי שִׁמְעוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רַבִּי שִׁמְעוֹן",
+   "target_he": "קֶשֶׁת הַבְּרִית",
+   "proof": "שֶׁהוּא קֶשֶׁת הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קֶשֶׁת הַבְּרִית",
+   "target_he": "תִּקּוּן הַכְּלָלִי",
+   "proof": "שֶׁהוּא תִּקּוּן הַכְּלָלִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן הַכְּלָלִי",
+   "target_he": "דִּבּוּר",
+   "proof": "שֶׁאָז הַדִּבּוּר מֻתָּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

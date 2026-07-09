@@ -1,0 +1,100 @@
+{
+ "book": "lm1",
+ "torah": 34,
+ "chunk": "34_7_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת כֵּלִים",
+   "target_he": "הַיֵּצֶר הָרָע וְהַקְּלִפּוֹת",
+   "proof": "כִּי יָדוּעַ שֶׁהַיֵּצֶר הָרָע וְהַקְּלִפּוֹת נִתְהַוִּים מִן שְׁבִירַת כֵּלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בִּינָה",
+   "target_he": "לֵב",
+   "proof": "הַיְנוּ: בִּינָה – לִבָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְסוֹד דַּאֲצִילוּת",
+   "target_he": "צַדִּיק יְסוֹד עוֹלָם",
+   "proof": "שֶׁהוּא בְּחִינַת: צַדִּיק יְסוֹד עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת כְּלֵי הַחֶסֶד",
+   "target_he": "אַהֲבוֹת רָעוֹת",
+   "proof": "נִמְצָא שֶׁאַהֲבוֹת רָעוֹת בָּאִים מִשְּׁבִירַת כְּלֵי הַחֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֶרְפָּה",
+   "target_he": "עָרְלַת לֵב",
+   "proof": "כִּי הַחֶרְפָּה, הַיְנוּ עָרְלַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עָרְלַת לֵב",
+   "target_he": "אֲהָבוֹת רָעוֹת",
+   "proof": "הַיְנוּ אֲהָבוֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁבִירַת כְּלֵי הַחֶסֶד",
+   "target_he": "חֶרְפָּה",
+   "proof": "נַעֲשֶׂה מִשְּׁבִירַת כְּלֵי הַחֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קִלְקוּל בְּרִית הָאַהֲבָה",
+   "target_he": "שְׁבִירַת כְּלֵי הַחֶסֶד",
+   "proof": "וּכְשֶׁמִּתְקַלְקֵל בְּרִית הָאַהֲבָה בֵּינֵיהֶם, הַיְנוּ בְּחִינַת שְׁבִירַת כְּלֵי הַחֶסֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּרִית הָאַהֲבָה",
+   "target_he": "חֶרְפָּה",
+   "proof": "וּכְשֶׁמִּתְקַלְקֵל בְּרִית הָאַהֲבָה בֵּינֵיהֶם...אֲזַי מְחָרְפֵהוּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַהֲבָה",
+   "target_he": "כִּסּוּי פְּשָׁעִים",
+   "proof": "כִּי הָאַהֲבָה מְכַסָּה עַל כָּל פְּשָׁעִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

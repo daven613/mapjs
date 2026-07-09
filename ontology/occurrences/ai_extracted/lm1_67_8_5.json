@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 67,
+ "chunk": "67_8_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הִסְתַּלְּקוּת הַחָכְמָה מִן הַזְּקֵנִים",
+   "target_he": "זָקֵן שֶׁשָּׁכַח תַּלְמוּדוֹ",
+   "proof": "הַיְנוּ מִבְּחִינַת זָקֵן שֶׁשָּׁכַח תַּלְמוּדוֹ הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִתְפַּלְּלִין בְּלֹא לֵב",
+   "target_he": "הִסְתַּלְּקוּת הַחָכְמָה מִן הַזְּקֵנִים",
+   "proof": "זֶה נַעֲשֶׂה עַל־יְדֵי מַה שֶּׁמִּתְפַּלְּלִין בְּלֹא לֵב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כָּבוֹד לְזָקֵן שֶׁשָּׁכַח תַּלְמוּדוֹ",
+   "target_he": "חָכְמָתוֹ",
+   "proof": "עַל־יְדֵי שֶׁנּוֹתְנִין כָּבוֹד לְזָקֵן שֶׁשָּׁכַח תַּלְמוּדוֹ, שֶׁעַל־יְדֵי־זֶה חוֹזֵר וְנִתְגַּלֶּה חָכְמָתוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כָּבוֹד לְזָקֵן שֶׁשָּׁכַח תַּלְמוּדוֹ",
+   "target_he": "הַפְּגָם שֶׁגָּרַם עַל־יְדֵי שֶׁהִתְפַּלֵּל בְּלִי כַּוָּנַת הַלֵּב",
+   "proof": "נִמְצָא שֶׁבָּזֶה בְּעַצְמוֹ מְתַקֵּן הַפְּגָם שֶׁגָּרַם עַל־יְדֵי שֶׁהִתְפַּלֵּל בְּלִי כַּוָּנַת הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכָּבוֹד שֶׁנּוֹתֵן לָהֶם",
+   "target_he": "חָכְמָתָם",
+   "proof": "כִּי עַכְשָׁו עַל־יְדֵי הַכָּבוֹד שֶׁנּוֹתֵן לָהֶם, חוֹזֵר וְנִתְגַּלֶּה חָכְמָתָם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַכָּבוֹד",
+   "target_he": "מַיִם קָרִים",
+   "proof": "אֲזַי עַל־יְדֵי־זֶה בְּעַצְמוֹ, יוֹצְאִין מַיִם קָרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַיִם קָרִים",
+   "target_he": "נַפְשׁוֹ",
+   "proof": "יוֹצְאִין מַיִם קָרִים, וּמְחַיֶּה אֶת נַפְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה",
+   "target_he": "נַפְשׁוֹ (עֲיֵפָה)",
+   "proof": "שֶׁהָיְתָה עֲיֵפָה עַל־יְדֵי פְּגַם הַתְּפִלָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

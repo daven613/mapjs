@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "נשמה",
+   "target_he": "ביאורי ופירושי התורה",
+   "proof": "שֶׁעַל־יָדָהּ נִתְגַּלֶּה בֵּאוּרֵי וּפֵרוּשֵׁי הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נשמה",
+   "target_he": "מפרשי התורה",
+   "proof": "וְכָל מְפָרְשֵׁי הַתּוֹרָה הֵן מְקַבְּלִין מִזֹּאת הַנְּשָׁמָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דבריו כגחלי אש",
+   "target_he": "קבלת ושאיבת מימי התורה",
+   "proof": "כִּי אִי אֶפְשָׁר לְקַבֵּל וְלִשְׁאֹב מֵימֵי הַתּוֹרָה, אֶלָּא מִי שֶׁדְּבָרָיו כְּגַחֲלֵי־אֵשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דבריו כגחלי אש",
+   "target_he": "הלוא כה דברי כאש",
+   "proof": "בִּבְחִינַת הֲלוֹא כֹה דְבָרִי כָּאֵשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_9_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שופר",
+   "target_he": "התעוררות השינה",
+   "proof": "שֶׁהוּא בְּחִינַת הִתְעוֹרְרוּת הַשֵּׁנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שופר",
+   "target_he": "פקידות עקרות",
+   "proof": "נִמְצָא שֶׁעַל יְדֵי הַשּׁוֹפָר... וְעַל יְדֵי זֶה נַעֲשֶׂה פְּקִידוּת עֲקָרוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שופר",
+   "target_he": "יראה",
+   "proof": "עַל־יְדֵי־זֶה נִתְגַּלֶּה יִרְאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יראה",
+   "target_he": "הבל היופי",
+   "proof": "וְיִרְאָה מַכְנִיעַ אֶת הֶבֶל הַיֹּפִי כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הבלים של השופר",
+   "target_he": "הבל היופי",
+   "proof": "כִּי הֵם בְּחִינַת הֶבֶל הַיֹּפִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שופר",
+   "target_he": "יופי",
+   "proof": "כִּי שׁוֹפָר לְשׁוֹן יֹפִי, בְּחִינַת: שַׁפְּרוּ מַעֲשֵׂיכֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הבלים של השופר",
+   "target_he": "הבל היופי",
+   "proof": "הַיְנוּ, שֶׁעַל יְדֵי הַהֲבָלִים שֶׁל הַשּׁוֹפָר, נִכְנָע הֶבֶל הַיֹּפִי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שופר",
+   "target_he": "התגלות היראה",
+   "proof": "כִּי שׁוֹפָר הוּא בְּחִינַת הִתְגַּלּוּת הַיִּרְאָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

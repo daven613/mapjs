@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 117,
+ "chunk": "117_8_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "הבדלה",
+   "proof": "אם אין דעת הבדלה מנין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הבדלה",
+   "target_he": "דעת",
+   "proof": "נמצא שבמוצאי שבת שיש הבדלה, הוא בבחינת דעת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שינה",
+   "target_he": "הסתלקות הדעת",
+   "proof": "כי השנה הוא הסתלקות הדעת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

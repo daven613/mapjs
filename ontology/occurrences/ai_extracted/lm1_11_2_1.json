@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 11,
+ "chunk": "11_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לא ימוש ספר התורה הזה מפיך",
+   "target_he": "וימש חשך",
+   "proof": "בְּחִינַת וְיָמֵשׁ חשֶׁךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אין משגיחין שיהיה כבוד השם יתברך בשלמות",
+   "target_he": "גדלות",
+   "proof": "הַיְנוּ עַל־יְדֵי גַּדְלוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גדלות",
+   "target_he": "לפתוח פה",
+   "proof": "עַל־יְדֵי־זֶה אֵין יְכוֹלִין לִפְתֹּחַ פֶּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אין יכולין לפתוח פה",
+   "target_he": "סגרו פימו דברו בגאות",
+   "proof": "בִּבְחִינַת (תהילים י״ז:י׳): סָגְרוּ פִּימוֹ דִּבְּרוּ בְגֵאוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גאות",
+   "target_he": "עבודת אלילים",
+   "proof": "כִּי עַל־יְדֵי הַגֵּאוּת, הוּא בְּחִינַת עֲבוֹדַת אֱלִילִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

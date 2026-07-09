@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 6,
+ "chunk": "6_6_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שְׁתִיקָה",
+   "target_he": "כָּבוֹד אֱלֹקִי",
+   "proof": "הַיְנוּ עַל־יְדֵי הַשְּׁתִיקָה זוֹכִין לְכָבוֹד אֱלֹקִי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָּבוֹד אֱלֹקִי",
+   "target_he": "שֶׁמֶן",
+   "proof": "שֶׁהוּא בְּחִינַת שֶׁמֶן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֶׁמֶן",
+   "target_he": "מֶלֶךְ הַכָּבוֹד",
+   "proof": "וְזֶה בְּחִינַת מֶלֶךְ הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

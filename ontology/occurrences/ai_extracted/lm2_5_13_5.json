@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_13_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "סֻכָּה",
+   "target_he": "תִּקּוּן הַמַּלְאָךְ",
+   "proof": "סֻכָּה זֶה בְּחִינַת תִּקּוּן הַמַּלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "סוּכָּה",
+   "target_he": "מַלְאָךְ",
+   "proof": "כִּי סוּכָּה בְּגִימַטְרִיָּא מַלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֲלוֹם עַל־יְדֵי מַלְאָךְ",
+   "target_he": "תִּקּוּן הַמֹּחִין וְהַתְּפִלִּין",
+   "proof": "בְּחִינַת חֲלוֹם עַל־יְדֵי מַלְאָךְ שֶׁנַּעֲשֶׂה עַל־יְדֵי תִּקּוּן הַמֹּחִין וְהַתְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "זְמַן שִׂמְחָתֵנוּ",
+   "target_he": "שִׂמְחָה שֶׁל תְּפִלִּין",
+   "proof": "וְעַל כֵּן סֻכּוֹת הוּא זְמַן שִׂמְחָתֵנוּ, בְּחִינַת שִׂמְחָה שֶׁל תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה שֶׁל תְּפִלִּין",
+   "target_he": "מַלְאָךְ",
+   "proof": "לִתֵּן חִזּוּק לְהַמַּלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַאֲכָלִים",
+   "target_he": "חֲלוֹם",
+   "proof": "כְּדֵי שֶׁלֹּא יַזִּיקוּ הַמַּאֲכָלִים לְקַלְקֵל אֶת הַחֲלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה",
+   "target_he": "מַלְאָךְ",
+   "proof": "וְעַל כֵּן אָז צְרִיכִין שִׂמְחָה לְחַזֵּק אֶת הַמַּלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חִזּוּק הַמַּלְאָךְ",
+   "target_he": "תִּקּוּן הַמַּאֲכָלִים",
+   "proof": "שֶׁזֶּהוּ תִּקּוּן הַמַּאֲכָלִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

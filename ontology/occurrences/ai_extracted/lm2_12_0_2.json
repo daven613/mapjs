@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 12,
+ "chunk": "12_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "עשרה מאמרות",
+   "target_he": "בעשרה מאמרות נברא העולם",
+   "proof": "וְזֶה בְּחִינַת (אבות פ\"ה): בַּעֲשָׂרָה מַאֲמָרוֹת נִבְרָא הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כבוד המלובש בכל מאמר",
+   "target_he": "ובהיכלו כלו אמר כבוד",
+   "proof": "וְזֶה בְּחִינַת (תהילים כ״ט:ט׳): וּבְהֵיכָלוֹ כֻּלּוֹ אֹמֵר כָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גבול הכבוד שלא יתפשט לעברות",
+   "target_he": "וכבודי לאחר לא אתן",
+   "proof": "בִּבְחִינַת (ישעיהו מ״ב:ח׳): וּכְבוֹדִי לְאַחֵר לֹא אֶתֵּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מאמר",
+   "target_he": "בחינת כבוד מיוחד ששרשו הכבוד",
+   "proof": "וּבְכָל מַאֲמָר וּמַאֲמָר יֵשׁ בּוֹ בְּחִינַת כָּבוֹד מְיֻחָד, שֶׁהוּא שָׁרְשׁוֹ, כִּי הַכָּבוֹד הוּא שֹׁרֶשׁ הַכֹּל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כבוד המלובש במאמר",
+   "target_he": "בריאת העולם",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִבְרָא הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

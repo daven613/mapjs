@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 64,
+ "chunk": "64_4_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בֵּין הַחֲכָמִים",
+   "target_he": "חָלָל הַפָּנוּי",
+   "proof": "בֵּין הַחֲכָמִים, הוּא בְּחִינַת חָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בֵּין הַחֲכָמִים דַּיְקָא",
+   "target_he": "פֵּרוּד וּמַחֲלֹקֶת בֵּינֵיהֶם",
+   "proof": "הַיְנוּ שֶׁיֵּשׁ פֵּרוּד וּמַחֲלֹקֶת בֵּינֵיהֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פֵּרוּד וְהַמַּחֲלֹקֶת שֶׁיֵּשׁ בֵּינֵיהֶם",
+   "target_he": "חָלָל הַפָּנוּי",
+   "proof": "עַל יְדֵי הַפֵּרוּד וְהַמַּחֲלֹקֶת שֶׁיֵּשׁ בֵּינֵיהֶם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "חָלָל הַפָּנוּי",
+   "proof": "וְעַל־יְדֵי הַמַּחֲלֹקֶת נַעֲשָׂה בְּחִינוֹת חָלָל הַפָּנוּי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חָלָל הַפָּנוּי",
+   "target_he": "בְּרִיאַת הָעוֹלָם",
+   "proof": "וּבְתוֹךְ הֶחָלָל הַפָּנוּי הַזֶּה נַעֲשָׂה בְּרִיאַת הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּרִיאַת הָעוֹלָם",
+   "target_he": "הַיָּמִים וְהַמִּדּוֹת",
+   "proof": "הַיְנוּ הַיָּמִים וְהַמִּדּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְגַדֵּל יָמַי וּמִדּוֹתַי",
+   "target_he": "בְּרִיאַת הָעוֹלָם",
+   "proof": "שֶׁהָיִיתִי מְגַדֵּל יָמַי וּמִדּוֹתַי, שֶׁהוּא בְּחִינַת בְּרִיאַת הָעוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמַּרְבֶּה דְּבָרִים",
+   "target_he": "חֵטְא",
+   "proof": "וְכָל הַמַּרְבֶּה דְּבָרִים מֵבִיא חֵטְא",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

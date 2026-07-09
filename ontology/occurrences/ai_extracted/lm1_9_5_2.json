@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 9,
+ "chunk": "9_5_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "אמונה",
+   "target_he": "ארץ־ישראל",
+   "proof": "כִּי פָּגַם בֶּאֱמוּנָה, הַיְנוּ אֶרֶץ־יִשְׂרָאֵל, בְּחִינַת נִסִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ארץ־ישראל",
+   "target_he": "נסים",
+   "proof": "הַיְנוּ אֶרֶץ־יִשְׂרָאֵל, בְּחִינַת נִסִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה",
+   "target_he": "מצרים",
+   "proof": "עַל־יְדֵי־זֶה יָרְדוּ אֲבוֹתֵינוּ לְמִצְרַיִם, כִּי פָּגַם בֶּאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ארץ־ישראל",
+   "target_he": "תפילה",
+   "proof": "כִּי הוּא פָּגַם בְּאֶרֶץ־יִשְׂרָאֵל, בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ארץ־ישראל",
+   "target_he": "מצרים",
+   "proof": "וְיָרְדוּ דַּוְקָא יַעֲקֹב וּבָנָיו, כִּי הוּא פָּגַם בְּאֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יעקב ובניו",
+   "target_he": "תפילה",
+   "proof": "וְיָרְדוּ יַעֲקֹב וּבָנָיו, שֶׁהֵם בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יעקב ובניו",
+   "target_he": "שנים עשר שערי תפילה",
+   "proof": "שֶׁהֵם בְּחִינַת שְׁנֵים־עָשָׂר שַׁעֲרֵי תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מצרים",
+   "target_he": "מקום תפילה",
+   "proof": "וּבִשְׁבִיל זֶה אֵין מְקוֹם תְּפִלָּה בְּמִצְרַיִם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

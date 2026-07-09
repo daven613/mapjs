@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 266,
+ "chunk": "266_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דַּדֵּי אָדָם",
+   "target_he": "בִּינָה",
+   "proof": "שֶׁהֵם בִּמְקוֹם בִּינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דַּדֵּי אָדָם",
+   "target_he": "סֻכָּה",
+   "proof": "בְּחִינוֹת סֻכָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִצְוַת סֻכָּה",
+   "target_he": "דַּדֵּי אָדָם",
+   "proof": "כְּשֶׁפּוֹגֵם בְּמִצְוַת סֻכָּה, אֲזַי נוֹפֵל מִבְּחִינוֹת דַּדֵּי אָדָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מִצְוַת סֻכָּה",
+   "target_he": "דַּדֵּי בְהֵמָה",
+   "proof": "וַאֲזַי נוֹפֵל לִבְחִינַת דַּדֵּי בְּהֵמָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְנִיקָה מִשֶּׁפַע הַבְּהֵמָה",
+   "target_he": "חִיּוּת הַבְּהֵמָה",
+   "proof": "וְעַל כֵּן יוֹנֵק אֶת חִיּוּתָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְטִילַת הַשְׁפָּעַת הַבְּהֵמָה",
+   "target_he": "מִיתַת הַבְּהֵמָה",
+   "proof": "וְעַל יְדֵי זֶה הֵם מֵתִים, עַל יְדֵי שֶׁנּוֹטֵל מֵהֶם אֶת הַשְׁפָּעָתָם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 44,
+ "chunk": "44_22_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "תְּפִלּוֹת כְּנֶגֶד",
+   "target_he": "מַּחֲשָׁבוֹת זָרוֹת",
+   "proof": "הַיְנוּ הַמַּחֲשָׁבוֹת זָרוֹת שֶׁהֵם כְּנֶגֶד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מַּחֲשָׁבוֹת זָרוֹת",
+   "target_he": "מַבּוּל",
+   "proof": "וְנִקְרָאִים מַבּוּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַּחֲשָׁבוֹת זָרוֹת",
+   "target_he": "תְּפִלָּה",
+   "proof": "שֶׁהֵם מְבַלְבְּלִין תְּפִלָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

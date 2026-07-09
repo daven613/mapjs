@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_3_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "זכות וצחות ההבל",
+   "target_he": "הולד מלובן ומזורז",
+   "proof": "וּכְפִי זַכּוּת וְצַחוּת הַהֶבֶל, כֵּן הַוָּלָד מְלֻבָּן וּמְזֹרָז",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הבל זך ונקי",
+   "target_he": "טיפה צחה ונקיה",
+   "proof": "כִּי אִם הַהֶבֶל זַךְ וְנָקִי, אֲזַי הַטִּפָּה שֶׁיּוֹצֵאת, שֶׁמְּלֻבָּשׁ שָׁם הַהֶבֶל הַזֶּה, הִיא גַּם כֵּן צָחָה וּנְקִיָּה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טיפה צחה ונקיה",
+   "target_he": "הולד מלובן ומזורז",
+   "proof": "וַאֲזַי הַוָּלָד גַּם כֵּן מְלֻבָּן וּמְזֹרָז",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עכירות בהבל",
+   "target_he": "טיפה",
+   "proof": "וְאִם יֵשׁ עֲכִירוּת בְּתוֹךְ הַהֶבֶל, אֲזַי נִתְעַכֵּר הַטִּפָּה גַּם כֵּן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "התהוות הולד לפי ההבל",
+   "target_he": "אָדָם לַהֶבֶל דָּמָה",
+   "proof": "וְזֶה בְּחִינַת (תהילים קמ״ד:ד׳): אָדָם לַהֶבֶל דָּמָה; כִּי כְּפִי הַהֶבֶל, כֵּן הִתְהַוּוּת הַוָּלָד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "התהוות הולד לפי ההבל",
+   "target_he": "אַךְ הֶבֶל בְּנֵי אָדָם",
+   "proof": "וְזֶה בְּחִינַת (שם סב): אַךְ הֶבֶל בְּנֵי אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 78,
+ "chunk": "78_12_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אותיות התורה או תפילה",
+   "target_he": "גוף האדם",
+   "proof": "אֲבָל כְּשֶׁיִּתְלַבֵּשׁ בְּאוֹתִיּוֹת הַתּוֹרָה אוֹ תְּפִלָּה, מֵגֶנֶת וּמַצֶּלֶת עָלָיו",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לימוד תורה או עשיית מצוה",
+   "target_he": "חיים",
+   "proof": "אֲבָל כְּשֶׁאַחַר כָּךְ לוֹמֵד תּוֹרָה אוֹ עוֹשֶׂה מִצְוָה, הִיא מֵגֶנֶת וּמַצֶּלֶת עָלָיו, וְיָכוֹל לִחְיוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רוח חיים",
+   "target_he": "רוח הקודש",
+   "proof": "שׁוֹאֵב רוּחַ חַיִּים, שֶׁהוּא רוּחַ־הַקֹּדֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מדת מלכות",
+   "target_he": "רוח הקודש",
+   "proof": "מִמִּדַּת מַלְכוּת, שֶׁהוּא שָׁרְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

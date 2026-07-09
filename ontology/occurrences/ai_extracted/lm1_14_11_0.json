@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 14,
+ "chunk": "14_11_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "טוֹב ה' לַכֹּל",
+   "target_he": "תְּפִלָּה",
+   "proof": "טוֹב ה' לַכֹּל – זֶה בְּחִינַת תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה שֶׁהַקָּדוֹשׁ־בָּרוּךְ־הוּא טוֹב לַכֹּל",
+   "target_he": "הִשְׁתַּדְּלוּתוֹ בָּתַר קֻדְשָׁא־בְּרִיךְ־הוּא",
+   "proof": "כְּשֶׁמַּאֲמִין כָּךְ, בְּוַדַּאי יִהְיֶה עִקַּר הִשְׁתַּדְּלוּתוֹ בָּתַר קֻדְשָׁא־בְּרִיךְ־הוּא, וְלֹא יִרְדֹּף אַחַר תַּחְבּוּלוֹת רַבּוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנָה",
+   "target_he": "רְדִיפָה אַחַר תַּחְבּוּלוֹת רַבּוֹת",
+   "proof": "כִּי מִי שֶׁאֵין מַאֲמִין בְּהַקָּדוֹשׁ־בָּרוּךְ־הוּא, צָרִיךְ לְהִשְׁתַּדֵּל אַחַר תַּחְבּוּלוֹת רַבּוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

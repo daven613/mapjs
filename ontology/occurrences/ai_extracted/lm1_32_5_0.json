@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 32,
+ "chunk": "32_5_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "לֵאָה",
+   "target_he": "עָלְמָא דְּאִתְכַּסְיָא",
+   "proof": "הַיְנוּ כִּי לֵאָה הִיא עָלְמָא דְּאִתְכַּסְיָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָלְמָא דְּאִתְכַּסְיָא",
+   "target_he": "לֵב",
+   "proof": "שֶׁהוּא בְּחִינַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֵ\"א מֵהַלֵּב",
+   "target_he": "מִתּוּק שֶׁל הַדִּינִים",
+   "proof": "וּמִשָּׁם הַמִּתּוּק שֶׁל הַדִּינִים, כְּשֶׁמַּמְשִׁיכִין הֵ\"א מֵהַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "book": "lm1",
+ "torah": 35,
+ "chunk": "35_9_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "לִשְׁמֹר אֶת הַמָּאוֹר הַקָּטֹן",
+   "target_he": "מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+   "proof": "כְּשֶׁאַתָּה רוֹצֶה לִשְׁמֹר אֶת הַמָּאוֹר הַקָּטֹן, הַיְנוּ מַשָּׂא וּמַתָּן בֶּאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַנַּנָּס",
+   "target_he": "מָאוֹר הַקָּטֹן",
+   "proof": "לֹא תּוּכַל לִשְׁמֹר אֶת הַנַּנָּס, הַיְנוּ מָאוֹר הַקָּטֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מָאוֹר הַקָּטֹן",
+   "target_he": "יַנּוּקֵי",
+   "proof": "הַיְנוּ מָאוֹר הַקָּטֹן, הַיְנוּ יַנּוּקֵי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַרְקְתָא דִּמְסָאנֵי",
+   "target_he": "מָאוֹר הַקָּטֹן",
+   "proof": "לֹא תּוּכַל לִשְׁמֹר אֶת הַנַּנָּס... אֶלָּא בְּעַרְקְתָא דִּמְסָאנֵי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עַרְקְתָא דִּמְסָאנֵי",
+   "target_he": "רְצוּעוֹת שֶׁל תְּפִלִּין",
+   "proof": "אֶלָּא בְּעַרְקְתָא דִּמְסָאנֵי, הַיְנוּ רְצוּעוֹת שֶׁל תְּפִלִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חַשְׁמַ\"ל",
+   "target_he": "לְהַלְבִּישׁ אֶת הָאֱמוּנָה",
+   "proof": "הַיְנוּ שֶׁתַּמְשִׁיךְ חַשְׁמַ\"ל מִ\"בִּינָה לִבָּא\" לְהַלְבִּישׁ אֶת הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חַשְׁמַ\"ל",
+   "target_he": "יְשַׁמֵּשׁ אֶת שִׁמְעוֹן בֶּן נַנָּס",
+   "proof": "הַיְנוּ בְּחִינַת: יְשַׁמֵּשׁ אֶת שִׁמְעוֹן בֶּן נַנָּס כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יְשַׁמֵּשׁ אֶת שִׁמְעוֹן בֶּן נַנָּס",
+   "target_he": "דּוֹבֵר אֱמֶת בִּלְבָבוֹ",
+   "proof": "הַיְנוּ שֶׁיְּקַיֵּם וְדוֹבֵר אֱמֶת בִּלְבָבוֹ בִּשְׁעַת עֲשִׂיַּת הַמַּשָּׂא וּמַתָּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רְצוּעָה",
+   "target_he": "ש\"ע",
+   "proof": "וּרְצוּעָה גִּמַטְרִיָּא ש\"ע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חַשְׁמַ\"ל הַזֶּה",
+   "target_he": "דּוֹבֵר אֱמֶת בִּלְבָבוֹ",
+   "proof": "שֶׁהוּא בְּחִינַת: דּוֹבֵר אֱמֶת בִּלְבָבוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חַשְׁמַ\"ל הַזֶּה",
+   "target_he": "אֱמוּנָה",
+   "proof": "לִרְמֹז שֶׁעַל יְדֵי הַחַשְׁמַ\"ל הַזֶּה... נִשְׁמָר הָאֱמוּנָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חַשְׁמַ\"ל הַזֶּה",
+   "target_he": "נְשָׁמָה",
+   "proof": "נִשְׁמָר הָאֱמוּנָה, וְהַנְּשָׁמָה, הַיְנוּ הַמֹּחִין שֶׁבְּתוֹכָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "נְשָׁמָה",
+   "target_he": "מֹחִין שֶׁבְּתוֹכָהּ",
+   "proof": "וְהַנְּשָׁמָה, הַיְנוּ הַמֹּחִין שֶׁבְּתוֹכָהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חַשְׁמַ\"ל הַזֶּה",
+   "target_he": "אוֹר הַפָּנִים",
+   "proof": "וּמְקַבֶּלֶת מֵאוֹר הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אוֹר הַפָּנִים",
+   "target_he": "ש\"ע נְהוֹרִין שֶׁל פָּנִים עֶלְיוֹנִים",
+   "proof": "שֶׁהוּא ש\"ע נְהוֹרִין שֶׁל פָּנִים עֶלְיוֹנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תִּקּוּן וֶאֱמֶת",
+   "target_he": "ש\"ע נְהוֹרִין שֶׁל פָּנִים עֶלְיוֹנִים",
+   "proof": "הַנִּמְשָׁכִין מִתִּקּוּן \"וֶאֱמֶת\" כַּיָּדוּעַ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

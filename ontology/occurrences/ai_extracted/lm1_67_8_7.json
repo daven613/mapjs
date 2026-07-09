@@ -1,0 +1,145 @@
+{
+ "book": "lm1",
+ "torah": 67,
+ "chunk": "67_8_7",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מים קרים",
+   "target_he": "נפש",
+   "proof": "כְּשֶׁמְּחַיִּין הַנֶּפֶשׁ עַל־יְדֵי מַיִם קָרִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נפש",
+   "target_he": "עצמות",
+   "proof": "מְחַיִּין גַּם אֶת הָעֲצָמוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פגם הנפש",
+   "target_he": "פגם העצמות",
+   "proof": "כִּי פְּגַם הַנֶּפֶשׁ הוּא פְּגַם הָעֲצָמוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כַּוָּנַת הַלֵּב בַּתְּפִלָּה",
+   "target_he": "עֲיֵפוּת הַנֶּפֶשׁ",
+   "proof": "כִּי עַל־יְדֵי שֶׁאֵין מִתְפַּלְּלִין בְּכַוָּנַת הַלֵּב, שֶׁעַל־יְדֵי־זֶה הוּא עֲיֵפוּת הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲיֵפוּת הַנֶּפֶשׁ",
+   "target_he": "פְּגַם הָעֲצָמוֹת",
+   "proof": "עַל־יְדֵי־זֶה הוּא פְּגַם הָעֲצָמוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּרֵי הַתְּפִלָּה בְּכָל עַצְמוֹתָיו",
+   "target_he": "כָּל עַצְמוֹתַי תֹּאמַרְנָה",
+   "proof": "בִּבְחִינַת (שם לה): כָּל עַצְמוֹתַי תֹּאמַרְנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְחַיֶּה הָעֲצָמוֹת עַל־יְדֵי מַיִם קָרִים",
+   "target_he": "וּמֹחַ עַצְמוֹתָיו יְשֻׁקֶּה",
+   "proof": "בִּבְחִינַת (איוב כ״א:כ״ד): וּמֹחַ עַצְמוֹתָיו יְשֻׁקֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַיִם קָרִים הַמְּחַיֶּה נֶפֶשׁ וְעֲצָמוֹת",
+   "target_he": "מַיִם קָרִים עַל נֶפֶשׁ עֲיֵפָה וּשְׁמוּעָה טוֹבָה מֵאֶרֶץ מֶרְחָק",
+   "proof": "וְזֶה בְּחִינַת (משלי כ״ה:כ״ה): מַיִם קָרִים עַל נֶפֶשׁ עֲיֵפָה, וּשְׁמוּעָה טוֹבָה מֵאֶרֶץ מֶרְחָק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁמוּעָה טוֹבָה",
+   "target_he": "קוֹל הָרְעָמִים",
+   "proof": "שְׁמוּעָה טוֹבָה זֶה בְּחִינַת קוֹל הָרְעָמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קוֹל הָרְעָמִים",
+   "target_he": "הִתְרַחֲקוּת הַנֶּפֶשׁ מִן הַכָּבוֹד",
+   "proof": "שֶׁמַּשְׁמִיעִין עַצְמָן בְּטוֹב, שֶׁהֵם מְתַקְּנִין הִתְרַחֲקוּת הַנֶּפֶשׁ מִן הַכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּן הִתְרַחֲקוּת הַנֶּפֶשׁ מִן הַכָּבוֹד",
+   "target_he": "שְׁמוּעָה טוֹבָה מֵאֶרֶץ מֶרְחָק",
+   "proof": "וְזֶה בְּחִינַת: שְׁמוּעָה טוֹבָה מֵאֶרֶץ מֶרְחָק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁמוּעָה טוֹבָה מֵאֶרֶץ מֶרְחָק",
+   "target_he": "מַיִם קָרִים עַל נֶפֶשׁ עֲיֵפָה",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת מַיִם קָרִים עַל נֶפֶשׁ עֲיֵפָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רְעָמִים",
+   "target_he": "שְׁמוּעָה טוֹבָה",
+   "proof": "שֶׁהֵם בָּאִים מִן הָרְעָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רְעָמִים",
+   "target_he": "שְׁמוּעָה טוֹבָה",
+   "proof": "שֶׁהֵם בְּחִינַת שְׁמוּעָה טוֹבָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁמוּעָה טוֹבָה",
+   "target_he": "שְׁמוּעָה טוֹבָה תְּדַשֶּׁן עָצֶם",
+   "proof": "וְזֶה בְּחִינַת (שם טו): שְׁמוּעָה טוֹבָה תְּדַשֶּׁן עָצֶם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

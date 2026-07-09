@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 71,
+ "chunk": "71_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "פרסום",
+   "target_he": "היזק",
+   "proof": "כִּי מַה שֶּׁהוּא מְפֻרְסָם, הוּא מַזִּיק לוֹ מְאֹד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מפורסם",
+   "target_he": "לָכֵן אֲחַלֶּק לוֹ בָרַבִּים",
+   "proof": "כִּי מֵאַחַר שֶׁהוּא מְפֻרְסָם, עַל־כֵּן הוּא בִּבְחִינוֹת (שם): לָכֵן אֲחַלֶּק לוֹ בָרַבִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פרסום",
+   "target_he": "יסורים בשביל רבים",
+   "proof": "עַל־כֵּן צָרִיךְ לִסְבֹּל יִסּוּרִין בִּשְׁבִיל רַבִּים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 61,
+ "chunk": "61_5_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אמונה בעצמן",
+   "target_he": "מחלוקת",
+   "proof": "וְיֵשׁ שֶׁיֵּשׁ עֲלֵיהֶם מַחֲלֹקֶת מֵחֲמַת שֶׁאֵין לָהֶם אֱמוּנָה בְּעַצְמָן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמונה בחידושים שלהם",
+   "target_he": "התרשלות בחידושים",
+   "proof": "וְעַל־יְדֵי־זֶה שֶׁאֵין לָהֶם אֱמוּנָה בַּחִדּוּשִׁים שֶׁל עַצְמָן, עַל־יְדֵי־זֶה הֵם מִתְרַשְּׁלִין בְּהַחִדּוּשִׁין שֶׁלָּהֶם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מחלוקת",
+   "target_he": "תשובה",
+   "proof": "וְעַל כֵּן בָּא עֲלֵיהֶם מַחֲלֹקֶת, וְעַל־יְדֵי־זֶה הֵם שָׁבִים בִּתְשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תשובה",
+   "target_he": "ספר",
+   "proof": "וְעַל־יְדֵי־זֶה הֵם שָׁבִים בִּתְשׁוּבָה, וְחוֹזְרִים וְנֶחֱשָׁבִים אֶצְלָן חִדּוּשִׁין שֶׁלָּהֶם, וְחוֹזְרִים וּמְחַדְּשִׁים, וְנַעֲשֶׂה מִזֶּה סֵפֶר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שואל ומקשה ומשיב ומתרץ",
+   "target_he": "ספר למעלה",
+   "proof": "שֶׁעַל־יְדֵי־זֶה שֶׁזֶּה שׁוֹאֵל וּמַקְשֶׁה, וְזֶה שָׁב בִּתְשׁוּבָה, וְעַל־יְדֵי־זֶה מֵשִׁיב וּמְתָרֵץ – עַל יְדֵי זֶה נַעֲשֶׂה סֵפֶר לְמַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ספר למעלה",
+   "target_he": "אָז נִדְבְּרוּ יִרְאֵי ה' אִישׁ אֶל רֵעֵהוּ וַיַּקְשֵׁב ה' וַיִּשְׁמַע וַיִכָּתֵב סֵפֶר",
+   "proof": "בִּבְחִינַת (מלאכי ג): אָז נִדְבְּרוּ יִרְאֵי ה' אִישׁ אֶל רֵעֵהוּ וַיַּקְשֵׁב ה' וַיִּשְׁמַע וַיִכָּתֵב סֵפֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

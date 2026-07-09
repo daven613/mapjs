@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 179,
+ "chunk": "179_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תַּעֲנִית",
+   "target_he": "שָׁלוֹם",
+   "proof": "עַל־זֶה צָרִיךְ תַּעֲנִית... וְלַעֲשׂוֹת שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צְדָקָה",
+   "target_he": "שָׁלוֹם",
+   "proof": "מַרְבֶּה צְדָקָה – מַרְבֶּה שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צְדָקָה",
+   "target_he": "תַּעֲנִית",
+   "proof": "צְדָקָה הוּא בְּחִינַת תַּעֲנִית, כִּי עִקַּר הַתַּעֲנִית הוּא צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

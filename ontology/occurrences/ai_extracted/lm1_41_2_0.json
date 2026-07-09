@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 41,
+ "chunk": "41_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "גְּבוּרוֹת מִשֹּׁרֶשׁ הַבִּינָה",
+   "target_he": "בְּרִיחַת הַחִיצוֹנִים",
+   "proof": "וּכְשֶׁמַּמְשִׁיךְ שֹׁרֶשׁ הַגְּבוּרוֹת מִבִּינָה, אָז הַחִיצוֹנִים בּוֹרְחִים מִשָּׁם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "גְּבוּרוֹת מִשֹּׁרֶשׁ הַבִּינָה",
+   "target_he": "בְּכוֹרָה וּבְרָכָה",
+   "proof": "וְהוּא לוֹקֵחַ הַבְּכוֹרָה וְהַבְּרָכָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּכוֹרָה וּבְרָכָה",
+   "target_he": "בִּרְכַּיִם",
+   "proof": "שֶׁזֶּה בְּחִינַת בִּרְכַּיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שֹׁרֶשׁ הַבְּכוֹרוֹת",
+   "target_he": "יַיִן",
+   "proof": "וְשֹׁרֶשׁ הַבְּכוֹרוֹת נִקְרָא יַיִן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יַיִן",
+   "target_he": "יַיִן הַמְשַׂמֵּחַ",
+   "proof": "וְזֶה יַיִן הַמְשַׂמֵּחַ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

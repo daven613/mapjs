@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 101,
+ "chunk": "101_12_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מי שממית עצמו על התורה",
+   "target_he": "התורה מתקיימת",
+   "proof": "אֵין הַתּוֹרָה מִתְקַיֶּמֶת אֶלָּא בְּמִי שֶׁמֵּמִית עַצְמוֹ עָלֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עַצְמִיּוּתוֹ",
+   "target_he": "הַמִּדּוֹת רָעוֹת וְהַתַּאֲווֹת רָעוֹת",
+   "proof": "דְּהַיְנוּ עַצְמִיּוּתוֹ, שֶׁהֵם בְּחִינַת הַמִּדּוֹת רָעוֹת וְהַתַּאֲווֹת רָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמִּדּוֹת רָעוֹת וְהַתַּאֲווֹת רָעוֹת",
+   "target_he": "הַפְּגָמִים הַחֲקוּקִים עַל עַצְמוֹתָיו",
+   "proof": "שֶׁמֵּהֶם כָּל הַפְּגָמִים הַחֲקוּקִים עַל עַצְמוֹתָיו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְיַגְּעוּת בְּהַתּוֹרָה",
+   "target_he": "הֲבָנַת הַתּוֹרָה",
+   "proof": "כִּי צָרִיךְ לְהִתְיַגֵּעַ בְּהַתּוֹרָה עַד שֶׁיִּזְכֶּה לְהָבִין אוֹתָהּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַנְפִּין חֲשׁוּכִין",
+   "target_he": "חַשְׁכוּת וְהַסְתָּרַת הַיְדִיעָה",
+   "proof": "דְּהַיְנוּ שֶׁיֵּצֵא מִבְּחִינַת אַנְפִּין חֲשׁוּכִין, שֶׁהֵם בְּחִינַת חַשְׁכוּת וְהַסְתָּרַת הַיְדִיעָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַנְפִּין נְהִירִין",
+   "target_he": "יְדִיעַת וְהַשָּׂגַת הַתּוֹרָה",
+   "proof": "לִבְחִינַת אַנְפִּין נְהִירִין, שֶׁהֵם בְּחִינַת יְדִיעַת וְהַשָּׂגַת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 6,
+ "chunk": "6_6_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אַוָּזֵי",
+   "target_he": "חֲכָמִים",
+   "proof": "וְרָאָה חֲכָמִים, וְזֶה בְּחִינַת אַוָּזֵי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּשְׁמִיטָן גַּדְפַיְהוּ",
+   "target_he": "מַחֲלֹקֶת וּבִזְיוֹנוֹת",
+   "proof": "זֶה בְּחִינַת מַחֲלֹקֶת וּבִזְיוֹנוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁתִיקָה",
+   "target_he": "כֶּתֶר",
+   "proof": "כִּי הַשְּׁתִיקָה הִיא בְּחִינוֹת כֶּתֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁתִיקָה",
+   "target_he": "חָכְמָה",
+   "proof": "כִּי סְיָג לַחָכְמָה – שְׁתִיקָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

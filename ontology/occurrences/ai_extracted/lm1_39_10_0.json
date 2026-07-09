@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 39,
+ "chunk": "39_10_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וְאָכַלְתָּ וְשָׂבָעְתָּ",
+   "target_he": "שַׁבָּת",
+   "proof": "וְאָכַלְתָּ וְשָׂבָעְתָּ זֶה רֶמֶז עַל שַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׂבִיעָה",
+   "target_he": "שֵׁשֶׁת יָמִים",
+   "proof": "שֶׁמִּמֶּנּוּ נִתְבָּרְכִין שֵׁשֶׁת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

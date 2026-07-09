@@ -1,0 +1,163 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_9_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מַשָּׂא וּמַתָּן",
+   "target_he": "בְּחִינַת בְּגָדִים",
+   "proof": "לְהוֹרוֹת שֶׁיֵּשׁ בּוֹ תִּקּוּן לִבְחִינַת בְּגָדִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַשָּׂא וּמַתָּן",
+   "target_he": "בְּחִינַת דָּמִים",
+   "proof": "לִבְחִינַת דָּמִים הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַשָּׂא",
+   "target_he": "כִּי עֲוֹנוֹתַי עָבְרוּ רֹאשִׁי כְּמַשָּׂא כָבֵד יִכְבְּדוּ מִמֶּנִּי",
+   "proof": "מַשָּׂא, זֶה בְּחִינַת (תהילים ל״ח:ה׳): כִּי עֲוֹנוֹתַי עָבְרוּ רֹאשִׁי כְּמַשָּׂא כָבֵד יִכְבְּדוּ מִמֶּנִּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רֹאשׁ",
+   "target_he": "מֹחִין",
+   "proof": "שֶׁמִּתְגַּבְּרִין עַל הָרֹאשׁ שֶׁהוּא הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁסָ\"ה לָאוִין",
+   "target_he": "מֹחִין",
+   "proof": "שֶׁהֵם הַשְּׁסָ\"ה לָאוִין הַנַּ\"ל, שֶׁמִּתְגַּבְּרִין עַל הָרֹאשׁ שֶׁהוּא הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִתְגַּבְּרוּת הַשְּׁסָ\"ה לָאוִין עַל הַמֹּחִין",
+   "target_he": "לֹא תַעֲמֹד עַל דַּם רֵעֶךָ",
+   "proof": "בִּבְחִינַת: לֹא תַעֲמֹד עַל דַּם רֵעֶךָ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִתְגַּבְּרוּת הַשְּׁסָ\"ה לָאוִין עַל הַמֹּחִין",
+   "target_he": "פְּגַם הַבְּגָדִים",
+   "proof": "וְהוּא בְּחִינַת פְּגַם הַבְּגָדִים הַנַּ\"ל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָבֵד יִכְבְּדוּ",
+   "target_he": "מֶלֶךְ הַכָּבוֹד",
+   "proof": "וְזֶה: כָבֵד יִכְבְּדוּ, הַיְנוּ בְּחִינַת מֶלֶךְ הַכָּבוֹד הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כָּבֵד",
+   "target_he": "דָּמִים",
+   "proof": "כָּבֵד, הַיְנוּ בְּחִינַת הַדָּמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דָּם (שֶׁבַּכָּבֵד)",
+   "target_he": "דַּם נִדָּה",
+   "proof": "שֶׁהַכָּבֵד מָלֵא דָּם, שֶׁהוּא בְּחִינַת דַּם נִדָּה הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַתָּן",
+   "target_he": "תִּקּוּן הַכְּלָלִי",
+   "proof": "וּמַתָּן, הוּא בְּחִינַת תִּקּוּן הַכְּלָלִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תִּקּוּן הַכְּלָלִי",
+   "target_he": "צְדָקָה",
+   "proof": "שֶׁהוּא הַצְּדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צְדָקָה",
+   "target_he": "מַתַּן אָדָם יַרְחִיב לוֹ",
+   "proof": "בְּחִינַת (משלי י״ח:ט״ז): מַתַּן אָדָם יַרְחִיב לוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צְדָקָה",
+   "target_he": "קֶשֶׁת הַבְּרִית",
+   "proof": "בְּחִינַת קֶשֶׁת הַבְּרִית, שֶׁהוּא הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קֶשֶׁת הַבְּרִית",
+   "target_he": "צַדִּיק",
+   "proof": "בְּחִינַת קֶשֶׁת הַבְּרִית, שֶׁהוּא הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צַדִּיק",
+   "target_he": "צַדִּיק חוֹנֵן וְנוֹתֵן",
+   "proof": "בְּחִינַת (תהילים ל״ז:כ״א): צַדִּיק חוֹנֵן וְנוֹתֵן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בְּפִיךָ",
+   "target_he": "צְדָקָה",
+   "proof": "בְּפִיךָ – זוֹ צְדָקָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

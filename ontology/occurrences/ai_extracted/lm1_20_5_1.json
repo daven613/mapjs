@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_5_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "המטה",
+   "target_he": "ממשלת עוזו שיש לו ממצוות ומעשים טובים שלו",
+   "proof": "שֶׁיִּקַּח מֶמְשֶׁלֶת עֻזּוֹ שֶׁיֵּשׁ לוֹ מִמִּצְווֹת וּמִמַּעֲשִׂים טוֹבִים שֶׁלּוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַטֵּה־עֹז",
+   "target_he": "הַכְנָעַת רִשְׁעָתָם",
+   "proof": "צָרִיךְ מַטֵּה־עֹז כְּדֵי לְהַכְנִיעַ רִשְׁעָתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דִּבּוּר",
+   "target_he": "נַחַת",
+   "proof": "אֵין דִּבּוּר אֶלָּא נַחַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַסֶּלַע",
+   "target_he": "לֵב הָעֶלְיוֹן",
+   "proof": "אֶל הַסֶּלַע, הַיְנוּ לֵב הָעֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַקָּהָל בִּשְׁעַת מַעֲשֶׂה",
+   "target_he": "קִשּׁוּר עַצְמוֹ עִם נִשְׁמָתָם",
+   "proof": "שֶׁיִּהְיֶה הַקָּהָל בִּשְׁעַת מַעֲשֶׂה, כְּדֵי שֶׁיְּקַשֵּׁר אֶת עַצְמוֹ עִם נִשְׁמָתָם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

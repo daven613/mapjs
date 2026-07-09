@@ -1,0 +1,127 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_8_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בֵּן",
+   "target_he": "דָּרֵי מַעְלָה",
+   "proof": "נִמְצָא שֶׁבֵּן וְתַלְמִיד הֵם בְּחִינוֹת דָּרֵי מַעְלָה וְדָרֵי מַטָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תַּלְמִיד",
+   "target_he": "דָּרֵי מַטָּה",
+   "proof": "נִמְצָא שֶׁבֵּן וְתַלְמִיד הֵם בְּחִינוֹת דָּרֵי מַעְלָה וְדָרֵי מַטָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דָּרֵי מַעְלָה",
+   "target_he": "הַהַשָּׂגָה שֶׁל מָה",
+   "proof": "הַיְנוּ הַהַשָּׂגָה שֶׁל מָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מֶה חָמִית מַה פִּשְׁפַּשְׁתְּ",
+   "target_he": "הַהַשָּׂגָה שֶׁל מָה",
+   "proof": "בְּחִינַת: מֶה חָמִית מַה פִּשְׁפַּשְׁתְּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אַיֵּה מְקוֹם כְּבוֹדוֹ",
+   "target_he": "הַהַשָּׂגָה שֶׁל מָה",
+   "proof": "בְּחִינַת: אַיֵּה מְקוֹם כְּבוֹדוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כִּי לֹא יִרְאַנִי הָאָדָם",
+   "target_he": "הַהַשָּׂגָה שֶׁל מָה",
+   "proof": "בְּחִינַת: כִּי לֹא יִרְאַנִי הָאָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַהַשָּׂגָה שֶׁל מָה",
+   "target_he": "הַשָּׂגַת הַבֵּן",
+   "proof": "זֶה בְּחִינַת הַשָּׂגַת הַבֵּן, הַשָּׂגַת דָּרֵי מַעְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וָאֶרְאֶה אֶת ה'",
+   "target_he": "הַשָּׂגָה שֶׁל מְלֹא כָל הָאָרֶץ כְּבוֹדוֹ",
+   "proof": "בְּחִינַת: וָאֶרְאֶה אֶת ה'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשָּׂגָה שֶׁל מְלֹא כָל הָאָרֶץ כְּבוֹדוֹ",
+   "target_he": "הַשָּׂגַת הַתַּלְמִיד",
+   "proof": "זֶה בְּחִינַת הַשָּׂגַת הַתַּלְמִיד, הַשָּׂגַת דָּרֵי מַטָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בֵּן הַנִּמְשָׁךְ כֻּלּוֹ מִמֹּחַ הָאָב",
+   "target_he": "הַשָּׂגַת אָבִיו",
+   "proof": "כִּי הַבֵּן שֶׁהוּא נִמְשָׁךְ כֻּלּוֹ מִמֹּחַ הָאָב, עַל־כֵּן זוֹכֶה לְהַשָּׂגַת אָבִיו מַמָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַשָּׂגַת אָבִיו",
+   "target_he": "מָה",
+   "proof": "שֶׁהוּא בְּחִינַת מָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מָה",
+   "target_he": "הַהַשָּׂגָה שֶׁל הָרַבִּי וְהֶחָכָם שֶׁבַּדּוֹר",
+   "proof": "שֶׁהוּא הַהַשָּׂגָה שֶׁל הָרַבִּי וְהֶחָכָם שֶׁבַּדּוֹר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַהַשָּׂגָה שֶׁל דָּרֵי מַטָּה",
+   "target_he": "מְלֹא כָל הָאָרֶץ כְּבוֹדוֹ",
+   "proof": "שֶׁהוּא בְּחִינַת מְלֹא כָל הָאָרֶץ כְּבוֹדוֹ וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

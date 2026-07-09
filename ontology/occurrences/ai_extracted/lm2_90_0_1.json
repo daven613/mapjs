@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 90,
+ "chunk": "90_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "קבלה באהבה",
+   "target_he": "אינך רואה פני גיהנום",
+   "proof": "כִּי עַל־יְדֵי־זֶה אֵינְךָ רוֹאֶה פְּנֵי גֵיהִנֹּם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כְּלִי חֶרֶס",
+   "target_he": "שַׁעַר הַחַרְסִית",
+   "proof": "שֶׁהוּא בְּחִינַת שַׁעַר הַחַרְסִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שַׁעַר הַחַרְסִית",
+   "target_he": "פִּתְחָהּ שֶׁל גֵּיהִנֹּם",
+   "proof": "שֶׁהוּא בְּחִינַת פִּתְחָהּ שֶׁל גֵּיהִנֹּם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

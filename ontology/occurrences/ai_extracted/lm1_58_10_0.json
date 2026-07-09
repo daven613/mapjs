@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 58,
+ "chunk": "58_10_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "וְדַבֵּר דָּבָר",
+   "target_he": "שְׁמִירַת הַדִּבּוּר",
+   "proof": "בִּבְחִינַת: וְדַבֵּר דָּבָר – שֶׁלֹּא יְהֵא דִּבּוּרְךָ שֶׁל שַׁבָּת כְּדִבּוּרְךָ שֶׁל חֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִירַת הַדִּבּוּר",
+   "target_he": "שַׁבָּת",
+   "proof": "כִּי שַׁבָּת תָּלוּי בִּשְׁמִירַת הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִירַת הַפֶּה",
+   "target_he": "קַבָּלַת בְּחִינַת שַׁבָּת",
+   "proof": "כְּשֶׁהַדּוֹר אֵינָם שׁוֹמְרִים אֶת פִּיהֶם, אֲזַי אֵין יְכֹלֶת בְּיָדָם לְקַבֵּל בְּחִינַת שַׁבָּת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁמִירַת הַפֶּה",
+   "target_he": "הֶאָרַת הַתְּשׁוּבָה",
+   "proof": "וְאָז, כְּשֶׁאֵינָם שׁוֹמְרִים אֶת פִּיהֶם, אֲזַי אַף־עַל־פִּי שֶׁפִּקְחֵי הַדּוֹר מַשְׁפִּיעִים אֶת הַשַּׁבָּת, אֶת הַתְּשׁוּבָה הַנַּ\"ל, נִתְקַלְקֵל אֶצְלָם הֶאָרַת הַתְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֶאָרַת הַתְּשׁוּבָה",
+   "target_he": "הַהוֹד וְהָדָר וְהַגְּדֻלָּה",
+   "proof": "נִתְקַלְקֵל אֶצְלָם הֶאָרַת הַתְּשׁוּבָה, וְאָז נִתְקַלְקֵל הַהוֹד וְהָדָר וְהַגְּדֻלָּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַהוֹד וְהָדָר וְהַגְּדֻלָּה",
+   "target_he": "גַּאֲוָה",
+   "proof": "וְאָז נִתְקַלְקֵל הַהוֹד וְהָדָר וְהַגְּדֻלָּה הַבָּאָה לִכְשֵׁרֵי הַדּוֹר, וְנִתְגָּאִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

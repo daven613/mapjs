@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 78,
+ "chunk": "78_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בַּמֶּה שֶּׁפָּגַם יְתַקֵּן",
+   "target_he": "וִדּוּי דְּבָרִים",
+   "proof": "בַּמֶּה שֶּׁפָּגַם יְתַקֵּן, הַיְנוּ וִדּוּי דְּבָרִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "וִדּוּי דְּבָרִים",
+   "target_he": "שִׁיבַת הַדְּבָרִים שֶׁפָּגַם אֶל שָׁרְשָׁם",
+   "proof": "שֶׁיָּשׁוּבוּ כָּל הַדְּבָרִים שֶׁפָּגַם אֶל שָׁרְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׁיבַת הַדְּבָרִים אֶל שָׁרְשָׁם",
+   "target_he": "יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "proof": "וְזֶהוּ בְּחִינַת יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַדִּבּוּר",
+   "target_he": "הַשְּׁכִינָה",
+   "proof": "כִּי מְיַחֵד הַדִּבּוּר, שֶׁהוּא בְּחִינַת הַשְּׁכִינָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

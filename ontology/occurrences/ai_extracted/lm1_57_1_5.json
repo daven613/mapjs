@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 57,
+ "chunk": "57_1_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "פָּגַם בַּיָּדַיִם",
+   "target_he": "רְפוּאָה",
+   "proof": "חָשַׁב דִּילְמָא פָּגַם, חַס וְשָׁלוֹם, בַּיָּדַיִם הַנַּ\"ל, וּבִשְׁבִיל זֶה אֵין לוֹ רְפוּאָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לֹא פָּגַם בַּיָּדַיִם",
+   "target_he": "לִחְיוֹת וְלָקוּם מֵחָלְיוֹ",
+   "proof": "וְלֹא פָּגַם בַּיָּדַיִם, בִּשְׁבִיל זֶה הָיָה יָכוֹל לִחְיוֹת וְלָקוּם מֵחָלְיוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֵין מַאֲמִין בְּתַלְמִידֵי חֲכָמִים",
+   "target_he": "יָקוּם וְלֹא יַאֲמִין בַּחַיִּין",
+   "proof": "כִּי עַל יְדֵי שֶׁאֵין מַאֲמִין בְּתַלְמִידֵי חֲכָמִים הַנִּקְרָאִים חַיִּים... יָקוּם וְלֹא יַאֲמִין בַּחַיִּין",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תַלְמִידֵי חֲכָמִים",
+   "target_he": "חַיִּים",
+   "proof": "תַלְמִידֵי חֲכָמִים הַנִּקְרָאִים חַיִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_3_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "התורה",
+   "target_he": "שמו של הקדוש ברוך הוא",
+   "proof": "כִּי הַתּוֹרָה הִיא שְׁמוֹ שֶׁל הַקָּדוֹשׁ־בָּרוּךְ־הוּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "השם",
+   "target_he": "הכלי של הדבר",
+   "proof": "וְהַשֵּׁם הוּא הַכְּלִי שֶׁל הַדָּבָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "התורה",
+   "target_he": "מדות",
+   "proof": "כִּי הַתּוֹרָה הִיא בְּחִינַת מִדּוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אותיות ותבות ופסוקים ופרשיות וסדרים",
+   "target_he": "מדות",
+   "proof": "שֶׁהֵם בְּחִינַת מִדּוֹת, שֶׁבָּהֶם נִגְבָּל הַחִיּוּת בְּמִדָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התורה",
+   "target_he": "החיות",
+   "proof": "וְעַל־כֵּן עַל־יְדֵי הַתּוֹרָה, שֶׁהוּא שְׁמוֹ שֶׁל הַקָּדוֹשׁ־בָּרוּךְ־הוּא, שֶׁהוּא בְּחִינַת מִדּוֹת, יְכוֹלִים לְקַבֵּל אֶת הַחִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התורה",
+   "target_he": "החיים",
+   "proof": "כִּי עַל־יְדֵי הַתּוֹרָה קוֹרִים אֶת הַחַיִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "התורה",
+   "target_he": "החיות לתוך המדות",
+   "proof": "וּמַמְשִׁיכִין אֶת הַחִיּוּת לְתוֹךְ הַמִּדּוֹת, שֶׁהֵם בְּחִינַת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "המדות",
+   "target_he": "ימים",
+   "proof": "שֶׁהֵם בְּחִינַת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

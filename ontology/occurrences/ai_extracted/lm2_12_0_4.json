@@ -1,0 +1,82 @@
+{
+ "book": "lm2",
+ "torah": 12,
+ "chunk": "12_0_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אַיֵּה מְקוֹם כְּבוֹדוֹ",
+   "target_he": "הַכָּבוֹד עֶלְיוֹן שֶׁל הַמַּאֲמָר הָעֶלְיוֹן",
+   "proof": "כִּי \"אַיֵּה\" מְקוֹם כְּבוֹדוֹ – זֶה בְּחִינַת הַכָּבוֹד עֶלְיוֹן שֶׁל הַמַּאֲמָר הָעֶלְיוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַמַּאֲמָר הָעֶלְיוֹן",
+   "target_he": "הַמַּאֲמָר סָתוּם בְּרֵאשִׁית",
+   "proof": "דְּהַיְנוּ הַמַּאֲמָר סָתוּם בְּרֵאשִׁית כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמַּאֲמָר הָעֶלְיוֹן",
+   "target_he": "חִיּוּת לַמְּקוֹמוֹת הָאֵלּוּ",
+   "proof": "שֶׁמִּשָּׁם נִמְשָׁךְ חִיּוּת לַמְּקוֹמוֹת הָאֵלּוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַכָּבוֹד הָעֶלְיוֹן",
+   "target_he": "אַיֵּה",
+   "proof": "בָּזֶה בְּעַצְמוֹ הוּא חוֹזֵר וְעוֹלֶה אֶל הַכָּבוֹד הָעֶלְיוֹן, שֶׁהוּא בְּחִינַת \"אַיֵּה\"",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַסְתָּרָתוֹ וְהֶעְלֵמוֹ שֶׁל בְּחִינַת אַיֵּה",
+   "target_he": "מְקוֹמוֹת הַלָּלוּ",
+   "proof": "שֶׁמִּגֹּדֶל הַסְתָּרָתוֹ וְהֶעְלֵמוֹ הוּא מְחַיֶּה מְקוֹמוֹת הַלָּלוּ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְפִילָה לִבְחִינַת מְקוֹמוֹת הַמְטֻנָּפִים",
+   "target_he": "סְפֵקוֹת וְהִרְהוּרִים וּבִלְבּוּלִים גְּדוֹלִים",
+   "proof": "וְנוֹפֵל לִסְפֵקוֹת וְהִרְהוּרִים וּבִלְבּוּלִים גְּדוֹלִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁאֵלַת וּבַקָּשַׁת אַיֵּה מְקוֹם כְּבוֹדוֹ",
+   "target_he": "תִּקּוּנוֹ וַעֲלִיָּתוֹ",
+   "proof": "וְזֶה זֶה עִקָּר תִּקּוּנוֹ וַעֲלִיָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בַּקָּשַׁת אַיֵּה מְקוֹם כְּבוֹדוֹ",
+   "target_he": "דְּבֵקוּת עַצְמוֹ לְשָׁם",
+   "proof": "וַאֲזַי מְבַקֵּשׁ \"אַיֵּה\" מְקוֹם כְּבוֹדוֹ. וּבָזֶה חוֹזֵר וּמְדַבֵּק עַצְמוֹ לְשָׁם",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

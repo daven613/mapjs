@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 170,
+ "chunk": "170_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַיִּסּוּרִין",
+   "target_he": "צָרוֹת",
+   "proof": "כִּי כָּל הַיִּסּוּרִין נִקְרָאִים צָרוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִּסּוּרִין",
+   "target_he": "נִכְנָע גּוּפוֹ",
+   "proof": "אַךְ עַל־יְדֵי הַיִּסּוּרִין נִכְנָע גּוּפוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נִכְתָּת הַגּוּף עַל־יְדֵי הַצָּרוֹת",
+   "target_he": "מְאִירָה וְנִתְגַּדְּלָה הַנֶּפֶשׁ",
+   "proof": "וּכְשֶׁנִּכְתָּת הַגּוּף עַל־יְדֵי הַצָּרוֹת, עַל־יְדֵי־זֶה מְאִירָה וְנִתְגַּדְּלָה הַנֶּפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִכָּנַע הַחֹמֶר",
+   "target_he": "הַצּוּרָה",
+   "proof": "כִּי בְּהִכָּנַע הַחֹמֶר תִּגְדַּל הַצּוּרָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

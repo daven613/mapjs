@@ -1,0 +1,91 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דמים שוטפין על הלב",
+   "target_he": "פגם האמת",
+   "proof": "כִּי מִתְּחִלָּה כְּשֶׁהַדָּמִים שׁוֹטְפִין עַל הַלֵּב הוּא בְּחִינַת פְּגַם הָאֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "פגם האמת",
+   "target_he": "אנשי דמים ישנאו תם",
+   "proof": "בִּבְחִינַת (משלי כ״ט:י׳): אַנְשֵׁי דָּמִים יִשְׂנְאוּ תָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יציאה מהצרה",
+   "target_he": "תודה הלכה",
+   "proof": "אֲבָל אַחַר כָּךְ כְּשֶׁיּוֹצְאִין מֵהַצָּרָה, שֶׁזֶּה בְּחִינַת תּוֹדָה הֲלָכָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מאיר האמת",
+   "target_he": "תתן אמת ליעקב חסד לאברהם",
+   "proof": "אֲזַי מֵאִיר הָאֱמֶת, בִּבְחִינַת (מיכה ז׳:כ׳): תִּתֵּן אֱמֶת לְיַעֲקֹב, חֶסֶד לְאַבְרָהָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חסד לאברהם",
+   "target_he": "הלכות",
+   "proof": "חֶסֶד לְאַבְרָהָם – הַיְנוּ הֲלָכוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תודה הלכה",
+   "target_he": "אור האמת",
+   "proof": "וּכְשֶׁזּוֹכִין לִבְחִינַת תּוֹדָה הֲלָכָה, עַל־יְדֵי־זֶה נִתְגַלֶּה אוֹר הָאֱמֶת וּמֵאִיר בְּהַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "חסד לאברהם",
+   "target_he": "שלמות הדיבור",
+   "proof": "עַל־יְדֵי־זֶה מֵאִיר הָאֱמֶת וּמַשְׁלִים הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמת",
+   "target_he": "שלמות הדיבור",
+   "proof": "כִּי עִקָּר שְׁלֵמוּת הַדִּבּוּר – עַל־יְדֵי אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמת",
+   "target_he": "קיום השקר",
+   "proof": "וַאֲפִלּוּ שֶׁקֶר אֵין לוֹ קִיּוּם רַק עַל־יְדֵי אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

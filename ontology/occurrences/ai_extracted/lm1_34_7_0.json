@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 34,
+ "chunk": "34_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "לב",
+   "target_he": "ואו",
+   "proof": "וּכְשֶׁהַלֵּב, הַיְנוּ בְּחִינַת וָאו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "ואו",
+   "target_he": "לוחות",
+   "proof": "בְּחִינַת וָאו, בְּחִינַת לוּחוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אהבות רעות",
+   "target_he": "חרפות ובזיונות",
+   "proof": "מְשֻׁקָּע בְּאַהֲבוֹת רָעוֹת, הַיְנוּ חֲרָפוֹת וּבִזְיוֹנוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "לב משוקע באהבות רעות",
+   "target_he": "ערלת לב",
+   "proof": "הַנִּקְרָא עָרְלַת לֵב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לב משוקע באהבות רעות",
+   "target_he": "שברי לוחות",
+   "proof": "אֲזַי הוּא בִּבְחִינַת שִׁבְרֵי לוּחוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חרפה",
+   "target_he": "ערלה",
+   "proof": "וְחֶרְפָּה הוּא בְּחִינַת עָרְלָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

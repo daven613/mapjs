@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 194,
+ "chunk": "194_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דיבור",
+   "target_he": "כבוד",
+   "proof": "עִקַּר הַכָּבוֹד הוּא רַק מֵהַדִּבּוּר... וְעַל כֵּן אֵינוֹ מְקַבֵּל כָּבוֹד כִּי אִם מֵהַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דיבור",
+   "target_he": "היכל המלך",
+   "proof": "וְהַדִּבּוּר הוּא הֵיכַל הַמֶּלֶךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אדני",
+   "target_he": "דיבור",
+   "proof": "כִּי הֵיכָל גִּימַטְרִיָּא אֲדֹנָי, בְּחִינַת הַדִּבּוּר, כְּמוֹ שֶׁכָּתוּב אֲדֹנָי שְׂפָתַי תִּפְתָּח",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

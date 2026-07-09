@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 29,
+ "chunk": "29_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּר שֶׁיִּהְיֶה נִשְׁמָע וְנִתְקַבֵּל",
+   "target_he": "עֹשֵׂי דְבָרוֹ לִשְׁמֹעַ בְּקוֹל דְבָרוֹ",
+   "proof": "בִּבְחִינַת: עֹשֵׂי דְבָרוֹ לִשְׁמֹעַ בְּקוֹל דְבָרוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "צַדִּיקוֹ שֶׁל עוֹלָם",
+   "proof": "שֶׁהוּא צַדִּיקוֹ שֶׁל עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צַדִּיקוֹ שֶׁל עוֹלָם",
+   "target_he": "צַדִּיק ה' בְּכָל דְּרָכָיו",
+   "proof": "בְּחִינַת (תהילים קמ״ה:י״ז): צַדִּיק ה' בְּכָל דְּרָכָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֶׁבַח",
+   "target_he": "הַדִּבּוּר",
+   "proof": "וְעַל־יְדֵי־זֶה נַעֲשֶׂה הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַדִּבּוּר",
+   "target_he": "לִשְׁמֹעַ",
+   "proof": "בִּבְחִינַת: לִשְׁמֹעַ וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בָּרְכוּ ה' מַלְאָכָיו",
+   "target_he": "הַשֶּׁבַח שֶׁמְּשַׁבְּחִין תְּחִלָּה אֶת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "הַיְנוּ הַשֶּׁבַח שֶׁמְּשַׁבְּחִין תְּחִלָּה אֶת הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשֶּׁבַח",
+   "target_he": "עֹשֵׂי דְבָרוֹ לִשְׁמֹעַ בְּקוֹל דְּבָרוֹ",
+   "proof": "וְאַחַר־כָּךְ עַל־יְדֵי־זֶה: עוֹשֵׂי דְבָרוֹ לִשְׁמֹעַ בְּקוֹל דְּבָרוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֹשֵׂי דְבָרוֹ לִשְׁמֹעַ בְּקוֹל דְּבָרוֹ",
+   "target_he": "הַדִּבּוּר שֶׁהוּא נִשְׁמָע וְנִתְקַבֵּל",
+   "proof": "שֶׁעוֹשִׂין הַדִּבּוּר שֶׁהוּא נִשְׁמָע וְנִתְקַבֵּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

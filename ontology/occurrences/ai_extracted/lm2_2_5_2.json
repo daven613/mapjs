@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_5_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַעֲשֶׂה דְּרַבִּי אֱלִיעֶזֶר הַגָּדוֹל בְּתַנּוּר שֶׁל עַכְנַאי",
+   "target_he": "רִבּוּעַ הַדִּבּוּר",
+   "proof": "וְזֶה בְּחִינַת מַעֲשֶׂה דְּרַבִּי אֱלִיעֶזֶר הַגָּדוֹל בְּתַנּוּר שֶׁל עַכְנַאי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הֲלָכוֹת",
+   "target_he": "שְׁלֵמוּת רִבּוּעַ הַדִּבּוּר",
+   "proof": "שֶׁזּוֹכִין לָזֶה עַל־יְדֵי הֲלָכוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חָרוּב, אַמַּת הַמַּיִם, כָּתְלֵי בֵּית הַמִּדְרָשׁ, בַּת קוֹל",
+   "target_he": "רִבּוּעַ הַדִּבּוּר",
+   "proof": "כִּי אֵלּוּ אַרְבָּעָה דְּבָרִים הֵם בְּחִינַת רִבּוּעַ הַדִּבּוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אַרְבָּעָה דְּבָרִים",
+   "target_he": "אַרְבָּעָה חֶלְקֵי הַדִּבּוּר",
+   "proof": "דְּהַיְנוּ אַרְבָּעָה חֶלְקֵי הַדִּבּוּר הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁלֵמוּת דִּבּוּר",
+   "target_he": "שִׁנּוּי הַטֶּבַע כִּרְצוֹנוֹ",
+   "proof": "דְּהַיְנוּ לְשַׁנּוֹת הַטֶּבַע כִּרְצוֹנוֹ עַל־יְדֵי שְׁלֵמוּת דִּבּוּרוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

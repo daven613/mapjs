@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 67,
+ "chunk": "67_6_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בִּינָה יְתֵרָה",
+   "target_he": "מוֹתְרוֹת הַמֹּחִין",
+   "proof": "בִּינָה יְתֵרָה, הַיְנוּ בְּחִינַת מוֹתְרוֹת הַמֹּחִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוֹתְרוֹת הַמֹּחִין",
+   "target_he": "הַשְּׂעָרוֹת",
+   "proof": "שֶׁמִּשָּׁם יוֹנְקִין הַשְּׂעָרוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַשְּׂעָרוֹת",
+   "target_he": "הָאוֹיְבִים",
+   "proof": "שֶׁמִּשָּׁם יְנִיקַת הָאוֹיְבִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מוֹתָרוֹת שֶׁבַּמֹּחַ",
+   "target_he": "בִּינָה יְתֵרָה",
+   "proof": "שֶׁזֶּה בְּחִינַת בִּינָה יְתֵרָה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מוֹתָרוֹת שֶׁבַּמֹּחַ",
+   "target_he": "שְׂעָרוֹת קְלוּעִין",
+   "proof": "כִּי עַל־יְדֵי מוֹתָרוֹת שֶׁבַּמֹּחַ, שֶׁזֶּה בְּחִינַת בִּינָה יְתֵרָה כַּנַּ\"ל, מִזֶּה בָּא שְׂעָרוֹת קְלוּעִין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׂעָרוֹת קְלוּעִין",
+   "target_he": "שֶׁקְּלָעָהּ לְחַוָּה",
+   "proof": "בְּחִינַת שֶׁקְּלָעָהּ לְחַוָּה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַכָּבוֹד",
+   "target_he": "חַוָּה",
+   "proof": "כִּי הַכָּבוֹד הוּא בְּחִינַת חַוָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חַוָּה",
+   "target_he": "הַצֵּלָע",
+   "proof": "שֶׁהִיא הַצֵּלָע הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חַוָּה",
+   "target_he": "אֵם כָּל חָי",
+   "proof": "שֶׁהִיא בְּחִינַת (בראשית ג): אֵם כָּל חָי כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׂעָרוֹת קְלוּעִין",
+   "target_he": "וְאֶת נֶפֶשׁ אֹיְבֶיךָ יְקַלְּעֶנָּה בְּתוֹךְ כַּף הַקָּלַע",
+   "proof": "וְזֶה בְּחִינַת (שמואל־א כה): וְאֶת נֶפֶשׁ אֹיְבֶיךָ יְקַלְּעֶנָּה בְּתוֹךְ כַּף הַקָּלַע; בְּחִינַת שְׂעָרוֹת קְלוּעִין הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׂעָרוֹת קְלוּעִין",
+   "target_he": "הִתְחַבְּרוּת הַשּׂוֹנְאִים",
+   "proof": "הַיְנוּ בְּחִינַת הִתְחַבְּרוּת הַשּׂוֹנְאִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְחַבְּרוּת הַשּׂוֹנְאִים",
+   "target_he": "מַפַּלְתָּם",
+   "proof": "שֶׁעַל־יְדֵי־זֶה הוּא מַפַּלְתָּם כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

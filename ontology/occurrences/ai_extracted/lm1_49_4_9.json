@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 49,
+ "chunk": "49_4_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "יְרוּשָׁלַיִם שֶׁלְּמַעְלָה",
+   "target_he": "בִּינָה לִבָּא",
+   "proof": "שֶׁהִיא בִּינָה לִבָּא וְכוּ' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יְרוּשָׁלַיִם שֶׁלְּמַטָּה",
+   "target_he": "הִתְגַּלּוּת מַלְכוּתוֹ יִתְבָּרַךְ",
+   "proof": "שֶׁהוּא בְּחִינַת הִתְגַּלּוּת מַלְכוּתוֹ יִתְבָּרַךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּנִיַּת יְרוּשָׁלַיִם שֶׁלְּמַטָּה",
+   "target_he": "תְּפִלָּה",
+   "proof": "וְכָל זֶה הוּא בְּחִינַת תְּפִלָּה, שֶׁהִיא עֲבוֹדָה שֶׁבַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תְּפִלָּה",
+   "target_he": "עֲבוֹדָה שֶׁבַּלֵּב",
+   "proof": "שֶׁהִיא עֲבוֹדָה שֶׁבַּלֵּב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תְּפִלָּה שֶׁבַּלֵּב",
+   "target_he": "הִתְגַּלּוּת מַלְכוּתוֹ",
+   "proof": "כִּי תְּפִלָּה שֶׁבַּלֵּב, הִיא בְּחִינַת הִתְגַּלּוּת מַלְכוּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

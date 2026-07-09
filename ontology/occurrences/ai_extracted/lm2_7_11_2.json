@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_11_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בְּזֶה הַחֵטְא",
+   "target_he": "חֻרְבַּן הַבַּיִת",
+   "proof": "כִּי יָדַע שֶׁבְּזֶה הַחֵטְא תָּלוּי חֻרְבַּן הַבַּיִת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַחֵטְא",
+   "target_he": "כָּל הַחֲטָאִים",
+   "proof": "שֶׁהוּא כּוֹלֵל כָּל הַחֲטָאִים כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בַּקָּשָׁתוֹ",
+   "target_he": "חֲנֻכַּת־הַבַּיִת",
+   "proof": "וּכְשֶׁזָּכָה לִפְעֹל בַּקָּשָׁתוֹ, מִזֶּה נַעֲשֶׂה בְּחִינַת חֲנֻכַּת־הַבַּיִת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בַּקָּשָׁתוֹ",
+   "target_he": "חֲנֻכָּה",
+   "proof": "בְּחִינַת חֲנֻכָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

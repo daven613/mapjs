@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 8,
+ "chunk": "8_7_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מתי מדבר",
+   "target_he": "הרשעים שאינם דבקים בצדיקים",
+   "proof": "הַיְנוּ שֶׁהֶרְאָה לוֹ הָרְשָׁעִים, שֶׁאֵינָם דְּבֵקִים בַּצַּדִּיקִים, וְהֵם נִקְרָאִין מֵתֵי מִדְבָּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוח צפונית",
+   "target_he": "רוח החיים דקדושה",
+   "proof": "הַיְנוּ בְּחִינַת רוּחַ הַחַיִּים דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רוח החיים דקדושה",
+   "target_he": "רוח צפונית שהיתה מנשבת בכינור של דוד",
+   "proof": "שֶׁהִיא בְּחִינַת רוּחַ צְפוֹנִית שֶׁהָיְתָה מְנַשֶּׁבֶת בַּכִּנּוֹר שֶׁל דָּוִד כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דביקות בצדיקים",
+   "target_he": "רוח דקדושה",
+   "proof": "וְהָרְשָׁעִים הַלָּלוּ, שֶׁאֵינָם דְּבֵקִים בַּצַּדִּיקִים, וְאֵין לָהֶם הָרוּחַ דִּקְדֻשָּׁה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "book": "lm2",
+ "torah": 83,
+ "chunk": "83_0_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מצות עשה של איש ישראלי שהוא צדיק",
+   "target_he": "איבר מן החי",
+   "proof": "אֲזַי הִיא בְּחִינַת אֵיבָר מִן הַחַי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "בושה",
+   "target_he": "שפיכות דמים",
+   "proof": "שֶׁהִיא שְׁפִיכוּת־דָּמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שפיכות דמים",
+   "target_he": "שחיטה",
+   "proof": "בְּחִינַת שְׁחִיטָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שחיטה",
+   "target_he": "איבר מן החי",
+   "proof": "שֶׁהִיא מְטַהֶרֶת הָאֵיבָר מִן הַחַי",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בושה",
+   "target_he": "טעימת השם יתברך מהמצוות עשה",
+   "proof": "צָרִיךְ שֶׁיָּבוֹא עָלָיו בּוּשָׁה...וַאֲזַי יוּכַל הַשֵּׁם יִתְבָּרַךְ לִטְעֹם מֵהַמִּצְווֹת עֲשֵׂה שֶׁלּוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מצוות",
+   "target_he": "מטעמים",
+   "proof": "כִּי הַמִּצְווֹת נִקְרָאִים מַטְעַמִּים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

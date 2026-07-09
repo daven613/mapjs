@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_7_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הָרָע",
+   "target_he": "הַטּוֹב (הַעֲלָמָה יְתֵרָה)",
+   "proof": "אֲזַי הֵם מִתְגַּבְּרִים עַל הַטּוֹב בְּיוֹתֵר וּמְבִיאִים אוֹתוֹ לְתוֹךְ הַעֲלָמָה יְתֵרָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַעֲלָמָה יְתֵרָה",
+   "target_he": "פְּנִימִיּוּת מַחֲשַׁבְתָּם",
+   "proof": "וּמְבִיאִים אוֹתוֹ לְתוֹךְ הַעֲלָמָה יְתֵרָה, דְּהַיְנוּ שֶׁמְּבִיאִים אוֹתוֹ לְתוֹךְ פְּנִימִיּוּת מַחֲשַׁבְתָּם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "פְּנִימִיּוּת מַחֲשַׁבְתָּם",
+   "target_he": "מַחֲשָׁבוֹת עַל הַטּוֹב",
+   "proof": "דְּהַיְנוּ שֶׁמַּתְחִילִים לַחֲשֹׁב מַחֲשָׁבוֹת עַל זֶה הַטּוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲשָׁבוֹת עַל הַטּוֹב",
+   "target_he": "הַטּוֹב בְּתוֹךְ הֶעְלֵם וְהֶסְתֵּר יוֹתֵר",
+   "proof": "וְעַל־יְדֵי־זֶה מַכְנִיסִים אֶת הַטּוֹב בְּתוֹךְ הֶעְלֵם וְהֶסְתֵּר יוֹתֵר בִּפְנִימִיּוּת מַחֲשַׁבְתָּם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הוֹלָדָה שֶׁמּוֹלִידִים",
+   "target_he": "יְצִיאַת הַטּוֹב",
+   "proof": "וַאֲזַי יוֹצֵא הַטּוֹב עַל־יְדֵי הוֹלָדָה שֶׁמּוֹלִידִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "זֶרַע הַיִּלּוּדִים",
+   "target_he": "יְצִיאַת הַטּוֹב",
+   "proof": "וְעַל כֵּן יוֹצֵא הַטּוֹב בְּזֶרַע הַיִּלּוּדִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַיִּלּוּדִים",
+   "target_he": "גֵּרִים",
+   "proof": "וַאֲזַי יוֹצֵא הַטּוֹב עַל־יְדֵי הַיִּלּוּדִים, וְנַעֲשׂוּ גֵּרִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

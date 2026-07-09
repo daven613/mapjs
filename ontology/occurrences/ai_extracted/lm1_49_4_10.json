@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 49,
+ "chunk": "49_4_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מַחֲשָׁבוֹת רָעוֹת",
+   "target_he": "עִקַּר הַיֵּצֶר הָרָע",
+   "proof": "כִּי מַחֲשָׁבוֹת רָעוֹת הֵם עִקַּר הַיֵּצֶר הָרָע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַחֲשָׁבוֹת רָעוֹת",
+   "target_he": "יְצִירָה לְבִישׁ",
+   "proof": "בְּחִינַת יְצִירָה לְבִישׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַחֲשָׁבוֹת טוֹבוֹת",
+   "target_he": "יֵצֶר טוֹב",
+   "proof": "שֶׁהֵם בְּחִינַת יֵצֶר טוֹב",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַחֲשָׁבוֹת טוֹבוֹת",
+   "target_he": "מַעֲשִׂים טוֹבִים וּמִדּוֹת טוֹבוֹת",
+   "proof": "וְלִזְכּוֹת לַעֲשׂוֹת עַל־יְדֵי־זֶה מַעֲשִׂים טוֹבִים וּמִדּוֹת טוֹבוֹת וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_5_14",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "ק\"ם קלין",
+   "target_he": "קלני מראשי קלני מזרועי",
+   "proof": "שֶׁק\"ם קָלִין הֵם שְׁתֵּי פְּעָמִים ע', הַיְנוּ: קַלַּנִי מֵרֹאשִׁי קַלַּנִי מִזְּרוֹעִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קלני מראשי קלני מזרועי",
+   "target_he": "שני מיני קולות",
+   "proof": "שֶׁהֵם בְּחִינַת שְׁנֵי מִינֵי קוֹלוֹת, מֵרֹאשִׁי וּמִזְּרוֹעִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "קלני",
+   "target_he": "קול",
+   "proof": "קַלַּנִי – לְשׁוֹן קוֹל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קול",
+   "target_he": "ע' קלין של היולדת",
+   "proof": "וְכָל קוֹל הוּא בְּחִינַת ע' קָלִין שֶׁל הַיּוֹלֶדֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שבירת תאות ממון",
+   "target_he": "אמת",
+   "proof": "נִמְשָׁכִין רַק מִשְּׁבִירַת תַּאֲוַת מָמוֹן, שֶׁהִיא בְּחִינַת אֱמֶת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שבירת תאות ממון",
+   "target_he": "כל הרווח וכל הממון וכל ההשפעות",
+   "proof": "כִּי בֶּאֱמֶת כָּל הָרֶוַח הַמְכֻנֶּה בְּשֵׁם לֵדָה, וְכָל הַמָּמוֹן וְכָל הַהַשְׁפָּעוֹת נִמְשָׁכִין רַק מִשְּׁבִירַת תַּאֲוַת מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שבירת תאות ממון",
+   "target_he": "קשטא קאי",
+   "proof": "וְזֶהוּ בְּחִינַת: קֻשְׁטָא קָאֵי (שבת קד)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "את כל היקום אשר ברגליהם",
+   "target_he": "ממונו של אדם שמעמידו על רגליו",
+   "proof": "זֶה מָמוֹנוֹ שֶׁל אָדָם שֶׁמַּעֲמִידוֹ עַל רַגְלָיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אמת",
+   "target_he": "עיקר המעמד פרנסה, ממונו של אדם שמעמידו על רגליו",
+   "proof": "וְעַל כֵּן עִקַּר הַמַּעֲמַד פַּרְנָסָה, הַיְנוּ מָמוֹנוֹ שֶׁל אָדָם שֶׁמַּעֲמִידוֹ עַל רַגְלָיו, הוּא עַל־יְדֵי אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אמת",
+   "target_he": "קשטא קאי",
+   "proof": "וְזֶה בְּחִינַת קֻשְׁטָא קָאֵי, הַיְנוּ עַל־יְדֵי אֱמֶת יֵשׁ לוֹ מָמוֹן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אמת",
+   "target_he": "עמידה",
+   "proof": "שֶׁהוּא בִּחִינַת עֲמִידָה, שֶׁמַּעֲמִידוֹ עַל רַגְלָיו כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שקר",
+   "target_he": "עבודה זרה",
+   "proof": "כִּי שֶׁקֶר הוּא עֲבוֹדָה זָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

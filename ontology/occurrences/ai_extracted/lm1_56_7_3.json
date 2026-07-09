@@ -1,0 +1,136 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_7_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת הַדַּעַת",
+   "target_he": "נֶאֱמָנוּת הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "וְעַל יְדֵי הִתְגַּלּוּת הַדַּעַת, נִתְפַּשֵּׁט נֶאֱמָנוּת הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֶאֱמָנוּת הַשֵּׁם",
+   "target_he": "נֶאֱמָן פָּשׁוּט",
+   "proof": "וְזֶה בְּחִינַת נֶאֱמָן פָּשׁוּט",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "נֶאֱמָנוּת",
+   "proof": "אֲבָל בְּמִצְרַיִם, שֶׁהָיָה הַדַּעַת בְּגָלוּת, לֹא נִתְפַּשֵּׁט וְנִתְגַּלָּה נֶאֱמָנוּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "נֶאֱמָנוּת",
+   "proof": "שֶׁעַל יְדֵי שֶׁלֹּא נִתְגַּלָּה הַדַּעַת בְּמִצְרַיִם, עַל־יְדֵי־זֶה לֹא נִכַּר נֶאֱמָנוּתוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "חֶסֶד",
+   "proof": "כִּי הַחֶסֶד תָּלוּי בְּדַעַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֶאֱמָנוּת הַשֵּׁם",
+   "target_he": "אָנֹכִי",
+   "proof": "וְזֶה בְּחִינַת אָנֹכִי – יְ'הִיבָא, כְּ'תִיבָא, נֶ'אֱמָנִים אֲ'מָרֶיהָ (שבת קה)",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְתִינַת הַתּוֹרָה",
+   "target_he": "מַאֲמָר",
+   "proof": "שֶׁעַל יְדֵי נְתִינַת הַתּוֹרָה נִפְתַּח הַמַּאֲמָר וְנִתְגַּלֶּה הַדַּעַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "נְתִינַת הַתּוֹרָה",
+   "target_he": "דַּעַת",
+   "proof": "שֶׁעַל יְדֵי נְתִינַת הַתּוֹרָה נִפְתַּח הַמַּאֲמָר וְנִתְגַּלֶּה הַדַּעַת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דַּעַת",
+   "target_he": "נֶאֱמָנוּת",
+   "proof": "וְעַל־יְדֵי־זֶה נִתְפַּשֵּׁט נֶאֱמָנוּתוֹ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֶאֱמָנוּת",
+   "target_he": "נֶאֱמָנִים אֲמָרֶיהָ",
+   "proof": "וְזֶה בְּחִינַת: נֶאֱמָנִים אֲמָרֶיהָ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נֶאֱמָנוּת",
+   "target_he": "נֶאֱמָן פָּשׁוּט מַאֲמָר פָּתוּחַ",
+   "proof": "בְּחִינַת נֶאֱמָן פָּשׁוּט מַאֲמָר פָּתוּחַ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָן",
+   "target_he": "מַאֲמָר נֶאֱמָן",
+   "proof": "וְזֶה בְּחִינַת מָן – רָאשֵׁי־תֵבוֹת מַ'אֲמַר נֶ'אֱמָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָן",
+   "target_he": "מַאֲמָר פָּתוּחַ נֶאֱמָן פָּשׁוּט",
+   "proof": "בְּחִינַת מַאֲמָר פָּתוּחַ נֶאֱמָן פָּשׁוּט כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מָן",
+   "target_he": "דַּעַת גָּדוֹל",
+   "proof": "כִּי הַמָּן הוּא בְּחִינַת דַּעַת גָּדוֹל כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

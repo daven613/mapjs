@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 101,
+ "chunk": "101_1_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "בְּיָהּ ה' צוּר עוֹלָמִים",
+   "target_he": "בְּרֵאשִׁית בָּרָא",
+   "proof": "כִּי בְּיָהּ ה' צוּר עוֹלָמִים הַיְנוּ בְּרֵאשִׁית בָּרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תּוֹרָה",
+   "target_he": "רֵאשִׁית",
+   "proof": "כִּי בַּתּוֹרָה שֶׁנִּקְרֵאת רֵאשִׁית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרָה",
+   "target_he": "עוֹלָמִים",
+   "proof": "כִּי בַּתּוֹרָה שֶׁנִּקְרֵאת רֵאשִׁית בָּרָא עוֹלָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

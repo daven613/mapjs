@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 11,
+ "chunk": "11_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "כָּבוֹד",
+   "target_he": "דִּבּוּר",
+   "proof": "אַךְ לַדִּבּוּר שֶׁיָּאִיר לוֹ, אִי אֶפְשָׁר לִזְכּוֹת כִּי אִם עַל־יְדֵי כָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עֲנָוָה וְקַטְנוּת",
+   "target_he": "כְּבוֹד הַשֵּׁם יִתְבָּרַךְ בִּשְׁלֵמוּת",
+   "proof": "שֶׁיִּהְיֶה כְּבוֹדוֹ לְאַיִן נֶגֶד כְּבוֹד הַשֵּׁם יִתְבָּרַךְ, הַיְנוּ עַל־יְדֵי עֲנָוָה וְקַטְנוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "דִּבּוּר",
+   "target_he": "כָּבוֹד",
+   "proof": "כִּי עִקַּר בְּחִינַת הַדִּבּוּר הוּא מִכָּבוֹד",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֶלֶךְ הַכָּבוֹד",
+   "target_he": "מַלְכוּת פֶּה",
+   "proof": "מִי הוּא זֶה מֶלֶךְ הַכָּבוֹד – הַיְנוּ מַלְכוּת פֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

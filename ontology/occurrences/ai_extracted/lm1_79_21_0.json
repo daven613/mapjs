@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 79,
+ "chunk": "79_21_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "שִׁפְלוּת",
+   "target_he": "אַל יֵצֵא אִישׁ מִמְּקוֹמוֹ",
+   "proof": "עַל־יְדֵי שֶׁזּוֹכִין לְשִׁפְלוּת... אַל יֵצֵא אִישׁ מִמְּקוֹמוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שִׁפְלוּת",
+   "target_he": "שְׁבוּ אִישׁ תַּחְתָּיו",
+   "proof": "שֶׁזֶּהוּ בְּחִינוֹת: שְׁבוּ אִישׁ תַּחְתָּיו",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אַל יֵצֵא אִישׁ מִמְּקוֹמוֹ",
+   "target_he": "שֶׁלֹּא יִדְחוּהוּ מִפַּרְנָסָתוֹ",
+   "proof": "עַל־יְדֵי־זֶה אַל יֵצֵא אִישׁ מִמְּקוֹמוֹ, כִּי שׁוּם אָדָם לֹא יוּכַל לְהוֹצִיאוֹ מִמְּקוֹמוֹ, דְּהַיְנוּ לִדְחוֹתוֹ מִפַּרְנָסָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מְקוֹמוֹ",
+   "target_he": "פַּרְנָסָתוֹ",
+   "proof": "לְהוֹצִיאוֹ מִמְּקוֹמוֹ, דְּהַיְנוּ לִדְחוֹתוֹ מִפַּרְנָסָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

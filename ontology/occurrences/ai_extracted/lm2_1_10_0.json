@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 1,
+ "chunk": "1_10_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "קִלְקוּל הָאֱמוּנָה",
+   "target_he": "עֲבוֹדָה זָרָה",
+   "proof": "שֶׁאֵין הָאֱמוּנָה בִּשְׁלֵמוּת הוּא גַּם כֵּן בְּחִינַת עֲבוֹדָה זָרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בַּז לְכָל אָדָם, עֲבוֹדָה זָרָה, שְׁמִירַת הַבְּרִית",
+   "target_he": "עֲבוֹדוֹת דְּסִטְרָא אָחֳרָא",
+   "proof": "כִּי כָל שָׁלֹשׁ מִדּוֹת אֵלּוּ הֵם בְּחִינַת עֲבוֹדוֹת דְּסִטְרָא אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בַּז לְכָל אָדָם, עֲבוֹדָה זָרָה, שְׁמִירַת הַבְּרִית",
+   "target_he": "עֲבוֹדַת הַתְּפִלָּה",
+   "proof": "וּמַפְסִידִין עֲבוֹדַת הַתְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

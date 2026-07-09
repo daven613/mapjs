@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_4_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "מוֹרָא שֶׁל הָרַב",
+   "target_he": "מוֹרָא שָׁמַיִם",
+   "proof": "דְּהַיְנוּ מוֹרָא שֶׁל הָרַב, שֶׁהוּא מוֹרָא שָׁמַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְבּוֹנְנוּת גְּדֻלַּת הַבּוֹרֵא",
+   "target_he": "יִרְאָתוֹ שֶׁל הָרַב",
+   "proof": "כִּי עִקַּר יִרְאָתוֹ שֶׁל הָרַב, הוּא עַל־יְדֵי הִתְבּוֹנְנוּת גְּדֻלַּת הַבּוֹרֵא יִתְבָּרַךְ שְׁמוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יִרְאַת הַתַּלְמִיד",
+   "target_he": "מוֹרָא רַבָּךְ",
+   "proof": "וְיִרְאַת הַתַּלְמִיד, דְּהַיְנוּ מוֹרָא רַבָּךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַלִּמּוּד שֶׁמְּקַבֵּל מֵהָרַב",
+   "target_he": "מוֹרָא רַבָּךְ",
+   "proof": "שֶׁהוּא עַל יְדֵי הַלִּמּוּד שֶׁמְּקַבֵּל מֵהָרַב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הַלִּמּוּד",
+   "target_he": "שָׁלֹשׁ קַוִּין",
+   "proof": "שֶׁהוּא גַּם כֵּן בְּחִינַת שָׁלֹשׁ קַוִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שָׁלֹשׁ קַוִּין",
+   "target_he": "אוֹרַיְתָא תְּלִיתָאָה",
+   "proof": "הַיְנוּ בְּחִינַת אוֹרַיְתָא תְּלִיתָאָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

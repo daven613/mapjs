@@ -1,0 +1,100 @@
+{
+ "book": "lm2",
+ "torah": 45,
+ "chunk": "45_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שבת",
+   "target_he": "נקודה הפנימיות",
+   "proof": "דַּע, כִּי שַׁבָּת הִיא נְקֻדָּה הַפְּנִימִיוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כל הששה ימים",
+   "target_he": "העגולים סביב הנקודה",
+   "proof": "שֶׁהֵם בְּחִינַת הָעִגּוּלִים סְבִיב הַנְּקֻדָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הרשעים המתהלכים סביב הנקודה",
+   "target_he": "סביב רשעים יתהלכון",
+   "proof": "בִּבְחִינַת (תהלים יב): סָבִיב רְשָׁעִים יִתְהַלָּכוּן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדיק",
+   "target_he": "שבת",
+   "proof": "וְהַצַּדִּיק הוּא בְּחִינַת שַׁבָּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צדיק",
+   "target_he": "נקודה פנימיות",
+   "proof": "בְּחִינַת הַנְּקֻדָּה פְּנִימִיוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שבת",
+   "target_he": "ששת הימים",
+   "proof": "וּמִמֶּנָּהּ יוֹנְקִים כָּל הַשִּׁשָּׁה יָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "צדיק",
+   "target_he": "הכל",
+   "proof": "שֶׁמִּמֶּנּוּ יוֹנְקִים הַכֹּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קליפות",
+   "target_he": "התקרבות לנקודה הפנימית",
+   "proof": "וְהַקְּלִפּוֹת מוֹלִיכִין אֶת הָרְשָׁעִים סְבִיב הַנְּקֻדָּה...וְאֵינָם מַנִּיחִים אוֹתָם לְהִתְקָרֵב לִפְנִים אֶל הַנְּקֻדָּה הַפְּנִימִית",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "היותם בתוך העגולים",
+   "target_he": "תקוה להתקרב אל הנקודה",
+   "proof": "וְכָל זְמַן שֶׁהֵם עֲדַיִן בְּתוֹךְ הָעִגּוּלִים, עֲדַיִן יֵשׁ לָהֶם תִּקְוָה לְהִתְקָרֵב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יציאה לגמרי מן העגולים",
+   "target_he": "התקרבות אל הנקודה",
+   "proof": "אֲבָל מִי שֶׁכְּבָר יָצָא לְגַמְרֵי, חַס וְשָׁלוֹם, מִן הָעִגּוּלִים...אֲזַי אִי אֶפְשָׁר לוֹ לְהִתְקָרֵב כְּלָל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

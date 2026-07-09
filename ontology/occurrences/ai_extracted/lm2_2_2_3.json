@@ -1,0 +1,46 @@
+{
+ "book": "lm2",
+ "torah": 2,
+ "chunk": "2_2_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עשה אנגריא בתלמידי חכמים וביטל אותם מן ההלכות",
+   "target_he": "חלה את רגליו",
+   "proof": "כִּי עַל־יְדֵי שֶׁעָשָׂה אַנְגַּרְיָא בְּתַלְמִידֵי חֲכָמִים וּבִטֵּל אוֹתָם מִן הַהֲלָכוֹת, עַל־יְדֵי־זֶה חָלָה אֶת רַגְלָיו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הלכות",
+   "target_he": "תיקון וקיום הרגלין",
+   "proof": "כִּי הַהֲלָכוֹת הֵם בְּחִינַת תִּקּוּן וְקִיּוּם הָרַגְלִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הלכות",
+   "target_he": "תהלוכות הדמים",
+   "proof": "כִּי הַהֲלָכוֹת הֵם בְּחִינַת תַּהֲלוּכוֹת הַדָּמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "ביטול תלמידי חכמים מן ההלכות",
+   "target_he": "חלה את רגליו",
+   "proof": "וְאָסָא שֶׁפָּגַם בָּזֶה וּבִטֵּל אֶת הַתַּלְמִידֵי חֲכָמִים מִן הַהֲלָכוֹת, עַל־כֵּן חָלָה אֶת רַגְלָיו",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

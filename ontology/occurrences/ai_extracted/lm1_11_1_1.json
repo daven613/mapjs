@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 11,
+ "chunk": "11_1_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "תֶּבֶן",
+   "target_he": "תְּבוּנָה",
+   "proof": "תֶּבֶן זֶה בְּחִינַת תְּבוּנָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲפָרַיִם",
+   "target_he": "עָפָר",
+   "proof": "אַתָּה מַכְנִיס לַעֲפָרַיִם – זֶה בְּחִינַת עָפָר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "עָפָר",
+   "target_he": "מַדְרֵגָה פְּחוּתָה",
+   "proof": "הַיְנוּ מַדְרֵגָה פְּחוּתָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

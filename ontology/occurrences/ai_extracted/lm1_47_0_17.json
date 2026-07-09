@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 47,
+ "chunk": "47_0_17",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "אִמְרֵי אֱמֶת",
+   "target_he": "אִמְרֵי צִיּוֹן, אִמְרֵי אֶרֶץ־יִשְׂרָאֵל",
+   "proof": "הַיְנוּ עַל יְדֵי אִמְרֵי אֱמֶת, שֶׁהוּא בְּחִינַת אִמְרֵי צִיּוֹן, אִמְרֵי אֶרֶץ־יִשְׂרָאֵל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אִמְרֵי צִיּוֹן, אִמְרֵי אֶרֶץ־יִשְׂרָאֵל",
+   "target_he": "אֱמֶת",
+   "proof": "שֶׁהוּא בְּחִינַת אֱמֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דְּבָרִים הָאֲמִתִּיִּים",
+   "target_he": "בְּרִיאַת שָׁמַיִם וָאָרֶץ",
+   "proof": "כִּי בַּדְּבָרִים הָאֲמִתִּיִּים, יוּכַל לִבְרֹא שָׁמַיִם וָאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בְּרִיאַת שָׁמַיִם וָאָרֶץ חֲדָשִׁים",
+   "target_he": "עֲשִׂיַּת מוֹפְתִים בַּשָּׁמַיִם וּבָאָרֶץ",
+   "proof": "וְכֵיוָן שֶׁיָּכוֹל לִבְרֹא שָׁמַיִם וָאָרֶץ חֲדָשִׁים, יוּכַל לַעֲשׂוֹת מוֹפְתִים בַּשָּׁמַיִם וּבָאָרֶץ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יְכֹלֶת הַצַּדִּיק לִבְרֹא שָׁמַיִם חֲדָשִׁים",
+   "target_he": "שִׁנּוּי כָּל הַגַּלְגַּלִּים",
+   "proof": "וְכֵיוָן שֶׁהַצַּדִּיק יָכוֹל לִבְרֹא שָׁמַיִם חֲדָשִׁים, אֲזַי הוּא מְשַׁנֶּה כָּל הַגַּלְגַּלִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׁנּוּי הַגַּלְגַּלִּים",
+   "target_he": "טֶבַע חָדָשׁ",
+   "proof": "אֲזַי הוּא מְשַׁנֶּה כָּל הַגַּלְגַּלִּים, וְעוֹשֶׂה טֶבַע חָדָשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טֶבַע חָדָשׁ",
+   "target_he": "מוֹפְתִים",
+   "proof": "וְעַל־כֵּן בְּוַדַּאי הוּא יָכוֹל לַעֲשׂוֹת מוֹפְתִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מוֹפְתִים",
+   "target_he": "שִׁנּוּי הַטֶּבַע",
+   "proof": "שֶׁהֵם שִׁנּוּי הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

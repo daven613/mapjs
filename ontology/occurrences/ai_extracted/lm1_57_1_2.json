@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 57,
+ "chunk": "57_1_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "פוגם באמונת חכמים ופורץ גדרם",
+   "target_he": "אין רפואה למכתו",
+   "proof": "וּמִי שֶׁפּוֹגֵם בֶּאֱמוּנַת חֲכָמִים, וּפוֹרֵץ גִּדְרָם, אֲזַי אֵין רְפוּאָה לְמַכָּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אין רפואה למכתו",
+   "target_he": "דלמא חויא דרבנן טרקיה שאין לו אסותא",
+   "proof": "בִּבְחִינוֹת (שבת קי): דִּלְמָא חִוְיָא דְּרַבָּנָן טְרַקֵהּ, שֶׁאֵין לוֹ אַסְוָתָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הפורץ גדרם",
+   "target_he": "הידים מן המלאכים",
+   "proof": "כִּי הַפּוֹרֵץ גִּדְרָם, עַל־יְדֵי־זֶה מֵסִיר הַיָּדַיִם מִן הַמַּלְאָכִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הסרת הידים מן המלאכים",
+   "target_he": "הסרתו מדרך דברי רבנן",
+   "proof": "לְפִי בְּחִינוֹת הֲסָרָתוֹ מִדֶּרֶךְ דִּבְרֵי רַבָּנָן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הסרתו מדרך דברי רבנן",
+   "target_he": "לא תסור מן הדבר אשר יגידו לך ימין ושמאל",
+   "proof": "וְזֶהוּ (דברים י״ז:י״א): לא תָסוּר מִן הַדָּבָר אֲשֶׁר יַגִּידוּ לְךָ יָמִין וּשְׂמֹאל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סר מדרך דברי רבנן לימין",
+   "target_he": "ימין המלאך ואין לו כח לקבל",
+   "proof": "אִם סָר מִדֶּרֶךְ דִּבְרֵי רַבָּנָן לְיָמִין, בָּזֶה סָר יְמִין הַמַּלְאָךְ, וְאֵין לוֹ כֹּחַ לְקַבֵּל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "סר לשמאל מדרך דברי רבנן",
+   "target_he": "יד שמאל מהמלאך ואין לו כח להשפיע",
+   "proof": "וְאִם סָר לִשְׂמֹאל, בָּזֶה סָר יַד שְׂמֹאל מֵהַמַּלְאָךְ, וְאֵין לוֹ כֹּחַ לְהַשְׁפִּיעַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

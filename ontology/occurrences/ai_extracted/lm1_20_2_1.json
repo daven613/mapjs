@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 20,
+ "chunk": "20_2_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לֵב",
+   "target_he": "סֶלַע",
+   "proof": "וְלֵב הַנַּ\"ל הוּא בְּחִינַת סֶלַע",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סֶלַע",
+   "target_he": "צוּר",
+   "proof": "וְסֶלַע הוּא בְּחִינַת צוּר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "צוּר",
+   "target_he": "לֵב",
+   "proof": "וְהוּא בְּחִינַת לֵב, בְּחִינַת: צוּר לְבָבִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לֵב",
+   "target_he": "דִּבּוּר",
+   "proof": "שֶׁמִּשָּׁם הַדִּבּוּר, בִּבְחִינַת (מגילה יח): מִלֵּי בְּסֶלַע",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לֵב",
+   "target_he": "דִּבּוּרִים חַמִּים",
+   "proof": "וְהַלֵּב נִכְמָר בְּרַחֲמִים וּמַשְׁפִּיעַ דִּבּוּרִים חַמִּים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה בְּבַקָּשָׁה",
+   "target_he": "בֵּאוּר",
+   "proof": "צָרִיךְ לוֹ לִקַּח מֵהַלֵּב הַנַּ\"ל בִּתְפִלָּה בְּבַקָּשָׁה כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּפִלָּה לִפְנֵי הַשֵּׁם יִתְבָּרַךְ",
+   "target_he": "לֵב הָעֶלְיוֹן לְהַשְׁפִּיעַ דִּבּוּרִים כְּגַחֲלֵי־אֵשׁ",
+   "proof": "צָרִיךְ לוֹ מִתְּחִלָּה לִשְׁפֹּךְ תְּפִלָּתוֹ לִפְנֵי הַשֵּׁם יִתְבָּרַךְ, כְּדֵי לְעוֹרֵר לֵב הָעֶלְיוֹן לְהַשְׁפִּיעַ עָלָיו דִּבּוּרִים כְּגַחֲלֵי־אֵשׁ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "מֵימָיו (שֶׁל הַצּוּר)",
+   "target_he": "בֵּאוּרֵי הַתּוֹרָה",
+   "proof": "כִּי אַחַר־כָּךְ נִפְתָּח הַצּוּר וַיָּזוּבוּ מֵימָיו; הַיְנוּ בֵּאוּרֵי הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

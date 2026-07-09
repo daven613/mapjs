@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 61,
+ "chunk": "61_5_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֱמוּנַת חֲכָמִים",
+   "target_he": "מַחֲלֹקֶת",
+   "proof": "כִּי מִשָּׁם נִמְשַׁךְ הַמַּחֲלֹקֶת, עַל־יְדֵי שֶׁפָּגַם בֶּאֱמוּנַת חֲכָמִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תְּשׁוּבָה",
+   "target_he": "אֱמוּנַת חֲכָמִים",
+   "proof": "וּלְפִי הַתְּשׁוּבָה, לְפִי הַמַּחֲלֹקֶת, כֵּן הוּא חוֹזֵר וְשָׁב אֶל אֱמוּנַת חֲכָמִים",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

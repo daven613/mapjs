@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 169,
+ "chunk": "169_12_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שִׂמְחָה",
+   "target_he": "וְשָׁמַר ה' לְךָ אֶת הַבְּרִית",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת: וְשָׁמַר ה' לְךָ אֶת הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שִׂמְחָה",
+   "target_he": "שְׁמִירַת הַבְּרִית",
+   "proof": "כִּי כְּשֶׁתִּזְכֶּה לְשִׂמְחָה, אֲזַי הַשֵּׁם יִתְבָּרַךְ בְּעַצְמוֹ יִשְׁמֹר לְךָ אֶת הַבְּרִית",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עַצְבוּת",
+   "target_he": "פְּגַם הַבְּרִית",
+   "proof": "כִּי עִקַּר פְּגַם הַבְּרִית הוּא עַל־יְדֵי עַצְבוּת כַּיָּדוּעַ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

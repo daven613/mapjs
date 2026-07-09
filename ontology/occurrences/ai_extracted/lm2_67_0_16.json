@@ -1,0 +1,109 @@
+{
+ "book": "lm2",
+ "torah": 67,
+ "chunk": "67_0_16",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "זֶה הָרֹאשׁ שֶׁהוּא הַפְּאֵר",
+   "target_he": "שֵׁם ה'",
+   "proof": "זֶה הָרֹאשׁ שֶׁהוּא הַפְּאֵר, בְּחִינַת שֵׁם ה' כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרֹאשׁ שֶׁהוּא הַפְּאֵר (שֵׁם ה')",
+   "target_he": "שְׁמוֹת הַטֻּמְאָה שֶׁל הַחִיצוֹנִים",
+   "proof": "כְּשֶׁנִּסְתַּלֵּק וְנִתְעַלֵּם זֶה הָרֹאשׁ שֶׁהוּא הַפְּאֵר... אֲזַי מִתְגַּבְּרִין, חַס וְשָׁלוֹם, שְׁמוֹת הַטֻּמְאָה שֶׁל הַחִיצוֹנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁמוֹת הַטֻּמְאָה שֶׁל הַחִיצוֹנִים",
+   "target_he": "הַמְפֻרְסָמִים שֶׁל שֶׁקֶר",
+   "proof": "שֶׁזֶּה בְּחִינַת הַמְפֻרְסָמִים שֶׁל שֶׁקֶר כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הֵם (שְׁמוֹת הַטֻּמְאָה שֶׁל הַחִיצוֹנִים)",
+   "target_he": "רֹאשׁ שֶׁל הַסִּטְרָא־אָחֳרָא",
+   "proof": "וְהֵם בְּחִינַת רֹאשׁ שֶׁל הַסִּטְרָא־אָחֳרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רֹאשׁ כָּל חוּצוֹת",
+   "target_he": "רֹאשׁ דְּסִטְרָא־אָחָרֳא",
+   "proof": "בְּחִינַת רֹאשׁ כָּל חוּצוֹת, שֶׁזֶּהוּ בְּחִינַת רֹאשׁ דְּסִטְרָא־אָחָרֳא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רֹאשׁ דְּסִטְרָא־אָחָרֳא",
+   "target_he": "מְפֻרְסָמִים שֶׁל שֶׁקֶר",
+   "proof": "שֶׁזֶּהוּ בְּחִינַת רֹאשׁ דְּסִטְרָא־אָחָרֳא, בְּחִינַת מְפֻרְסָמִים שֶׁל שֶׁקֶר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְפֻרְסָמִים שֶׁל שֶׁקֶר",
+   "target_he": "שֵׁם הַטֻּמְאָה שֶׁל הַחִיצוֹנִים",
+   "proof": "בְּחִינַת מְפֻרְסָמִים שֶׁל שֶׁקֶר, בְּחִינַת שֵׁם הַטֻּמְאָה שֶׁל הַחִיצוֹנִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רֹאשׁ בַּיִת",
+   "target_he": "מִתְגַּלְגְּלִים בַּחוּצוֹת",
+   "proof": "כִּי נִתְעַלֵּם, חַס וְשָׁלוֹם, בְּחִינַת רֹאשׁ בַּיִת, וַאֲזַי אֵין בַּיִת, וּמִתְגַּלְגְּלִים בַּחוּצוֹת, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הָרֹאשׁ בַּיִת",
+   "target_he": "הַצַּדִּיק הָאֲמִתִּי",
+   "proof": "כִּי נִסְתַּלֵּק וְנִתְעַלֵּם הָרֹאשׁ בַּיִת, דְּהַיְנוּ הַצַּדִּיק הָאֲמִתִּי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרֹאשׁ בַּיִת",
+   "target_he": "יִשְׂרָאֵל קְדוֹשִׁים מִתְגַּלְגְּלִים בְּרֹאשׁ כָּל חוּצוֹת",
+   "proof": "דְּהַיְנוּ שֶׁיִּשְׂרָאֵל קְדוֹשִׁים מִתְגַּלְגְּלִים, חַס וְשָׁלוֹם, בְּרֹאשׁ כָּל חוּצוֹת, כִּי נִסְתַּלֵּק וְנִתְעַלֵּם הָרֹאשׁ בַּיִת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הָרֹאשׁ בַּיִת",
+   "target_he": "הַהֵפֶךְ",
+   "proof": "כִּי נִסְתַּלֵּק וְנִתְעַלֵּם הָרֹאשׁ בַּיִת... וְנִתְגַּבֵּר, חַס וְשָׁלוֹם, הַהֵפֶךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

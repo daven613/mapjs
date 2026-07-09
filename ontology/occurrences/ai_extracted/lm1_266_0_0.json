@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 266,
+ "chunk": "266_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "אֵינָן נִזְהָרִין בְּמִצְוַת סֻכָּה כָּרָאוּי",
+   "target_he": "מִיתוֹת בְּהֵמוֹת וְחַיּוֹת בְּלֹא זְמַנָּן",
+   "proof": "מִיתוֹת בְּהֵמוֹת וְחַיּוֹת בְּלֹא זְמַנָּן, הוּא עַל־יְדֵי שֶׁאֵינָן נִזְהָרִין בְּמִצְוַת סֻכָּה כָּרָאוּי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סֻכָּה",
+   "target_he": "אִמָּא דִּמְסַכְּכָא עַל בְּנִין",
+   "proof": "כִּי סֻכָּה בְּחִינוֹת אִמָּא דִּמְסַכְּכָא עַל בְּנִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "סֻכָּה",
+   "target_he": "אִם לַבִּינָה תִּקְרָא",
+   "proof": "בְּחִינוֹת: אִם לַבִּינָה תִּקְרָא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

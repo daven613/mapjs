@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 6,
+ "chunk": "6_7_9",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "בָּקִי",
+   "target_he": "שֵׁם יב\"ק",
+   "proof": "כִּי בָּקִי הוּא בְּחִינַת שֵׁם יב\"ק הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שֵׁם יב\"ק",
+   "target_he": "בָּקִי",
+   "proof": "שֶׁהוּא אוֹתִיּוֹת בָּקִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שְׁתֵּי פְּעָמִים בָּקִי",
+   "target_he": "דֶּרֶךְ הַתְּשׁוּבָה",
+   "proof": "עַל־יְדֵי־זֶה זוֹכֶה לְדֶרֶךְ הַתְּשׁוּבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׁתֵּי פְּעָמִים בָּקִי",
+   "target_he": "שְׁתֵּי פְּעָמִים יב\"ק",
+   "proof": "שֶׁהֵם בְּחִינַת שְׁתֵּי פְּעָמִים יב\"ק הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שְׁתֵּי פְּעָמִים יב\"ק",
+   "target_he": "דֶּרֶךְ",
+   "proof": "עוֹלֶה בְּגִימַטְרִיָּא דֶּרֶךְ כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "סֶגּוֹל דְקס\"א וְחִירִיק דְס\"ג",
+   "target_he": "שְׁתֵּי פְּעָמִים יב\"ק",
+   "proof": "שֶׁהֵם בְּגִימַטְרִיָּא שְׁתֵּי פְּעָמִים יב\"ק, כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

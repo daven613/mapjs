@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 3,
+ "chunk": "3_0_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "וְרַפֹּא יְרַפֵּא",
+   "target_he": "פִּדְיוֹן נֶפֶשׁ",
+   "proof": "וְזֶהוּ וְרַפֹּא יְרַפֵּא (עִם שְׁתֵּי הַתֵּבוֹת) מִסְפַּר פִּדְיוֹן נֶפֶשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פִּדְיוֹן",
+   "target_he": "רְפוּאָה",
+   "proof": "כִּי עִקָּר הָרְפוּאָה – עַל־יְדֵי פִּדְיוֹן דַּוְקָא",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַמְתָּקַת הַדִּין",
+   "target_he": "רְפוּאָה",
+   "proof": "עַל־יְדֵי שֶׁמַּמְתִּיקִין הַדִּין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פִּדְיוֹן",
+   "target_he": "רְשׁוּת לְהָרוֹפֵא לְרַפְּאוֹת",
+   "proof": "הַיְנוּ אַחַר הַפִּדְיוֹן, אָז דַּיְקָא יֵשׁ לוֹ רְשׁוּת לְהָרוֹפֵא לְרַפְּאוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פִּדְיוֹן",
+   "target_he": "רְשׁוּת לְהָרוֹפֵא לְרַפְּאוֹת",
+   "proof": "כִּי קֹדֶם הַפִּדְיוֹן אֵין רְשׁוּת לְהָרוֹפֵא לְרַפְּאוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

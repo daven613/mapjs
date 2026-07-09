@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 179,
+ "chunk": "179_13_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "תענית",
+   "target_he": "שלום",
+   "proof": "כִּי כְּשֶׁיֵּשׁ שָׁלוֹם, הַיְנוּ עַל־יְדֵי הַתַּעֲנִית כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שלום",
+   "target_he": "ששון ושמחה",
+   "proof": "כְּשֶׁיֵּשׁ שָׁלוֹם – שָׂשׂוֹן וְשִׂמְחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שמחה",
+   "target_he": "שמחנו כימות עניתנו",
+   "proof": "בְּחִינַת: שַׂמְּחֵנוּ כִּימוֹת עִנִּיתָנוּ, כְּפִי יְמֵי הַתַּעֲנִית כֵּן הַשִּׂמְחָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

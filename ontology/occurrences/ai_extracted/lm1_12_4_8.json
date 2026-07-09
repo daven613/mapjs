@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 12,
+ "chunk": "12_4_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "חִיּוּת גַּשְׁמִי",
+   "target_he": "לִמּוּד שֶׁלֹּא לִשְׁמָהּ",
+   "proof": "וּמֵחֲמַת שֶׁצָּרִיךְ לְהַמְשִׁיךְ חִיּוּת גַּשְׁמִי לָעוֹלָם, מַפִּילִין אוֹתוֹ לְלִמּוּד שֶׁלֹּא לִשְׁמָהּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לִמּוּד שֶׁלֹּא לִשְׁמָהּ",
+   "target_he": "לִמּוּד בְּחִינַת לִשְׁמָהּ",
+   "proof": "אֲזַי נוֹטְלִין מִמֶּנּוּ לִמּוּד בְּחִינַת לִשְׁמָהּ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תּוֹרָתוֹ",
+   "target_he": "וּפֹשְׁעִים יִכָּשְׁלוּ",
+   "proof": "וְעַל־יְדֵי־זֶה יֵשׁ בְּתוֹרָתוֹ בְּחִינַת: וּפֹשְׁעִים יִכָּשְׁלוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

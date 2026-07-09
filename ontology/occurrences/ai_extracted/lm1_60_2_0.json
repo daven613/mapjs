@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "בְּחִינַת תִּקּוּנֵי עַתִּיק",
+   "target_he": "עֲשִׁירוּת",
+   "proof": "וְלָבוֹא לָעֲשִׁירוּת הַזֹּאת הוּא עַל יְדֵי בְּחִינַת תִּקּוּנֵי עַתִּיק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּנֵי עַתִּיק",
+   "target_he": "אֲרִיכוּת יָמִים",
+   "proof": "הוּא עַל יְדֵי בְּחִינַת תִּקּוּנֵי עַתִּיק, בְּחִינַת אֲרִיכוּת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תִּקּוּנֵי עַתִּיק",
+   "target_he": "זָקֵן",
+   "proof": "בְּחִינַת אֲרִיכוּת יָמִים, בְּחִינַת זָקֵן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אֲרִיכוּת יָמִים",
+   "target_he": "עֲשִׁירוּת שֶׁל הַהִתְבּוֹנְנוּת",
+   "proof": "כִּי צָרִיךְ אֲרִיכוּת יָמִים כְּדֵי לְקַבֵּל בְּתוֹכוֹ אֶת הָעֲשִׁירוּת שֶׁל הַהִתְבּוֹנְנוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "יָמָיו מִתְרַחֲבִין בְּתוֹסְפוֹת קְדֻשָּׁה",
+   "target_he": "אֲרִיכוּת יָמִים",
+   "proof": "וְכֵן בְּכָל פַּעַם וּפַעַם יִהְיוּ יָמָיו מִתְרַחֲבִין בְּתוֹסְפוֹת קְדֻשָּׁה, וְזֶה בְּחִינַת אֲרִיכוּת יָמִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_2_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שמים",
+   "target_he": "אש ומים",
+   "proof": "שָׁמַיִם זֶה בְּחִינַת אֵשׁ וּמַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "אש ומים",
+   "target_he": "יראה ואהבה",
+   "proof": "הַיְנוּ יִרְאָה וְאַהֲבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אור הצדיק",
+   "target_he": "יראה ואהבה",
+   "proof": "שֶׁמִּמֶּנּוּ מְקַבְּלִין יִרְאָה וְאַהֲבָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אור הצדיק",
+   "target_he": "יראה ואהבה",
+   "proof": "דְּהַיְנוּ שֶׁנֶּחֱשָׁךְ אֶצְלוֹ הַיִּרְאָה וְהָאַהֲבָה – זֶה מֵחֲמַת שֶׁנֶּחֱשָׁךְ אֶצְלוֹ אוֹר הַצַּדִּיק",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אורו הגדול של הצדיק",
+   "target_he": "תכלית הטוב",
+   "proof": "שֶׁעַל־יָדוֹ יוּכַל לָבוֹא לְתַכְלִית הַטּוֹב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

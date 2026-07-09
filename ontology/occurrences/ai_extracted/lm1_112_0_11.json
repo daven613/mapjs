@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 112,
+ "chunk": "112_0_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עֲמִידָה",
+   "target_he": "תְּפִלָּה",
+   "proof": "וְקָם – אֵין עֲמִידָה אֶלָּא תְּפִלָּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שֵׁבֶט מִיִּשְׂרָאֵל",
+   "target_he": "לְהַעֲלוֹת תְּפִלָּתוֹ לְשַׁעַר שִׁבְטוֹ",
+   "proof": "וְהַיְנוּ: שֵׁבֶט מִיִּשְׂרָאֵל – שֶׁצָּרִיךְ לְהַעֲלוֹת תְּפִלָּתוֹ לְשַׁעַר שִׁבְטוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הַגָּעַת הַתְּפִלָּה לְשַׁעַר שֵׁבֶט אַחֵר",
+   "target_he": "עֲלִיַּת הַתְּפִלָּה",
+   "proof": "כִּי אִם יַגִּיעַ לְשַׁעַר שֵׁבֶט אַחֵר לֹא יוּכַל לַעֲלוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

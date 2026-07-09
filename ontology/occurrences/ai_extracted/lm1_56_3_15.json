@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 56,
+ "chunk": "56_3_15",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מָרְדְּכָי",
+   "target_he": "מַלְכוּת",
+   "proof": "מָרְדְּכָי – זֶה בְּחִינַת הַמַּלְכוּת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וּבְכָל יוֹם וָיוֹם",
+   "target_he": "תּוֹרָה",
+   "proof": "וּבְכָל יוֹם וָיוֹם – זֶה בְּחִינַת הַתּוֹרָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֲצַר בֵּית",
+   "target_he": "חִיצוֹנִיּוּת וּפְנִימִיּוּת",
+   "proof": "חֲצַר בֵּית – זֶה בְּחִינַת חִיצוֹנִיּוּת וּפְנִימִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תּוֹרָה",
+   "target_he": "חִיּוּת לְהַיָּמִים וְהַמִּדּוֹת",
+   "proof": "שֶׁעַל יָדָהּ מַמְשִׁיכִין הַחִיּוּת לְהַיָּמִים וְהַמִּדּוֹת כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "חֲצַר בֵּית הַנָּשִׁים",
+   "target_he": "שֶׁנָּשׁוּ וְקָפְצוּ מִמְּקוֹמוֹ שֶׁל עוֹלָם",
+   "proof": "חֲצַר בֵּית הַנָּשִׁים – מִלְּשׁוֹן שֶׁנָּשׁוּ וְקָפְצוּ מִמְּקוֹמוֹ שֶׁל עוֹלָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַנָּשִׁים",
+   "target_he": "שִׁכְחָה",
+   "proof": "הַנָּשִׁים – לְשׁוֹן שִׁכְחָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 51,
+ "chunk": "51_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מלוח",
+   "target_he": "דמעות",
+   "proof": "מַלּוּחַ, זֶה בְּחִינַת דְּמָעוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "דמעות",
+   "target_he": "מים מלוחים",
+   "proof": "שֶׁהֵם מַיִם מְלוּחִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שיחה",
+   "target_he": "דמעות",
+   "proof": "שֶׁבָּא עַל־יְדֵי שִׂיחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

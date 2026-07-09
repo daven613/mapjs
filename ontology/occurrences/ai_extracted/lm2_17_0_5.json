@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 17,
+ "chunk": "17_0_5",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עושה טוב",
+   "target_he": "הנהגה בהשגחה",
+   "proof": "כִּי כְּשֶׁהָאָדָם עוֹשֶׂה טוֹב, אֲזַי מַנְהִיג אוֹתוֹ בְּהַשְׁגָּחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "טוב",
+   "target_he": "הנהגה על פי הטבע",
+   "proof": "וּכְשֶׁהוּא אֵינוֹ טוֹב... אֲזַי מַנִּיחַ אוֹתוֹ עַל הַטֶּבַע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "האדם מתנהג כראוי",
+   "target_he": "כעס",
+   "proof": "כִּי כְּשֶׁהָיָה רוֹאֶה יִתְבָּרַךְ, שֶׁאֵין הָאָדָם מִתְנַהֵג כָּרָאוּי, הָיָה כּוֹעֵס",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כעס",
+   "target_he": "הסרת ההשגחה",
+   "proof": "הָיָה כּוֹעֵס, וְהָיָה מֵסִיר הַהַשְׁגָּחָה לְגַמְרֵי",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "טבע",
+   "target_he": "השגחה",
+   "proof": "כִּי בֶּאֱמֶת גַּם הַטֶּבַע הִיא הַשְׁגָּחָתוֹ יִתְבָּרַךְ... דְּהַיְנוּ הַטֶּבַע שֶׁבֶּאֱמֶת הִיא הַשְׁגָּחָתוֹ יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

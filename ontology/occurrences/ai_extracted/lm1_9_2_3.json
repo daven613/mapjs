@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 9,
+ "chunk": "9_2_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מטה",
+   "target_he": "זווג",
+   "proof": "וּמִטָּה הוּא בְּחִינַת זִוּוּג",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מטה",
+   "target_he": "פרנסה",
+   "proof": "גַּם מַטֶּה הִיא בְּחִינַת פַּרְנָסָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שנים עשר מטות",
+   "target_he": "זווג",
+   "proof": "כִּי שְׁנֵים־עָשָׂר מַטּוֹת גּוֹרְמִין זִוּוּג וּמְפַרְנְסִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שנים עשר מטות",
+   "target_he": "פרנסה",
+   "proof": "כִּי שְׁנֵים־עָשָׂר מַטּוֹת גּוֹרְמִין זִוּוּג וּמְפַרְנְסִין כַּנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

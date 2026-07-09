@@ -1,0 +1,46 @@
+{
+ "book": "lm1",
+ "torah": 250,
+ "chunk": "250_15_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "יִסּוּרִין וָצַעַר",
+   "target_he": "בְּחִינוֹת הַשְׁגָּחָה",
+   "proof": "כִּי מֵאַחַר שֶׁיֵּשׁ לוֹ יִסּוּרִין וָצַעַר, עַל־כֵּן הוּא צָרִיךְ לִבְחִינוֹת הַשְׁגָּחָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דְּמָעוֹת",
+   "target_he": "חֶלְקֵי הַהַשְׁגָּחָה וְהָרְאוּת",
+   "proof": "וְעַל־כֵּן מוֹרִידִין דְּמָעוֹת כְּדֵי לְהַמְשִׁיךְ עַל יָדָם חֶלְקֵי הַהַשְׁגָּחָה וְהָרְאוּת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "וְשָׁבוּ הֶעָבִים אַחַר הַגָּשֶׁם",
+   "target_he": "הָרְאוּת שֶׁהוֹלֵךְ אַחַר הַבֶּכִי",
+   "proof": "בִּבְחִינוֹת: וְשָׁבוּ הֶעָבִים אַחַר הַגָּשֶׁם – זֶה הָרְאוּת, שֶׁהוֹלֵךְ אַחַר הַבֶּכִי",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דְּמָעוֹת",
+   "target_he": "הָרְאוּת",
+   "proof": "הַיְנוּ שֶׁהֵם מְחַסְּרִים הָרְאוּת וְנוֹטְלִים חֵלֶק מֵהָרְאוּת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

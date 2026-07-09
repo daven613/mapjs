@@ -1,0 +1,37 @@
+{
+ "book": "lm2",
+ "torah": 7,
+ "chunk": "7_13_11",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "לִוְיָתָן",
+   "target_he": "מַלְכוּת",
+   "proof": "לִוְיָתָן זֶה בְּחִינַת מַלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כְּנִיסַת מַלְכוּת בְּיָם הַחָכְמָה",
+   "target_he": "יִרְאָה",
+   "proof": "וְעַל־יְדֵי־זֶה נוֹפֵל יִרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מַלְכוּת",
+   "target_he": "יִרְאָה",
+   "proof": "כִּי מַלְכוּת הוּא מְקוֹר הַיִּרְאָה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "book": "lm2",
+ "torah": 5,
+ "chunk": "5_9_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "הַמֹּחִין נְקִיִּים וְזַכִּים",
+   "target_he": "חֲלוֹם עַל־יְדֵי שֵׁד",
+   "proof": "אֲבָל כְּשֶׁאֵין הַמֹּחִין נְקִיִּים וְזַכִּים, אֲזַי נַעֲשֶׂה מִבְּחִינַת שְׂעָרוֹת בְּחִינַת (ישעיה יג): וּשְׂעִירִים יְרַקְּדוּ שָׁם, בְּחִינַת חֲלוֹם עַל־יְדֵי שֵׁד",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שְׂעָרוֹת",
+   "target_he": "וּשְׂעִירִים יְרַקְּדוּ שָׁם",
+   "proof": "נַעֲשֶׂה מִבְּחִינַת שְׂעָרוֹת בְּחִינַת (ישעיה יג): וּשְׂעִירִים יְרַקְּדוּ שָׁם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֲלוֹם עַל־יְדֵי מַלְאָךְ",
+   "target_he": "אָדָם",
+   "proof": "כִּי חֲלוֹם עַל־יְדֵי מַלְאָךְ זֶה בְּחִינַת אָדָם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אָדָם",
+   "target_he": "נַעֲשֶׂה אָדָם בְּצַלְמֵנוּ כִּדְמוּתֵנוּ",
+   "proof": "בְּחִינַת (בראשית א): נַעֲשֶׂה אָדָם בְּצַלְמֵנוּ כִּדְמוּתֵנוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כִּדְמוּתֵנוּ",
+   "target_he": "כֹּחַ הַמְדַמֶּה",
+   "proof": "כִּדְמוּתֵנוּ – זֶה כֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כֹּחַ הַמְדַמֶּה",
+   "target_he": "בְּצַלְמֵנוּ",
+   "proof": "שֶׁהוּא בְּצַלְמֵנוּ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כֹּחַ הַמְדַמֶּה",
+   "target_he": "מַלְאָךְ",
+   "proof": "בִּבְחִינַת מַלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "כֹּחַ הַמְדַמֶּה",
+   "target_he": "חֲלוֹם עַל־יְדֵי מַלְאָךְ",
+   "proof": "בְּחִינַת חֲלוֹם עַל־יְדֵי מַלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֵׁנָה",
+   "target_he": "הַמֹּחַ",
+   "proof": "כִּי בִּשְׁעַת שֵׁנָה הַמֹּחַ מִסְתַּלֵּק",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מֹּחִין זַכִּים",
+   "target_he": "כֹּחַ הַמְדַמֶּה בִּבְחִינַת מַלְאָךְ",
+   "proof": "וּכְשֶׁהַמֹּחִין זַכִּים, אֲזַי גַּם הַכֹּחַ הַמְדַמֶּה שֶׁנִּשְׁאָר הוּא בִּבְחִינַת מַלְאָךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֲלוֹם עַל יְדֵי שֵׁד",
+   "target_he": "בְּהֵמָה",
+   "proof": "אֲבָל חֲלוֹם עַל יְדֵי שֵׁד זֶה בְּחִינַת בְּהֵמָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "בְּהֵמָה",
+   "target_he": "וְשֹׁד בְּהֵמוֹת יְחִיתַן",
+   "proof": "בִּבְחִינַת (חבקוק ב): וְשֹׁד בְּהֵמוֹת יְחִיתַן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "חֲלוֹם עַל יְדֵי שֵׁד",
+   "target_he": "אָדָם בִּיקָר בַּל יָלִין",
+   "proof": "וְזֶה בְּחִינַת (תהלים מט): אָדָם בִּיקָר בַּל יָלִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

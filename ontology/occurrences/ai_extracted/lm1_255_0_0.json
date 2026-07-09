@@ -1,0 +1,28 @@
+{
+ "book": "lm1",
+ "torah": 255,
+ "chunk": "255_0_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "נפילה מהאמונה",
+   "proof": "כְּשֶׁהָאָדָם הוּא מַאֲמִין בְּהַצַּדִּיק בְּלִי שׁוּם דַּעַת, אֶפְשָׁר לוֹ לִפֹּל מֵהָאֱמוּנָה, כִּי מֵאֱמוּנָה לְבַד אֶפְשָׁר לִפֹּל",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "דעת",
+   "target_he": "אמונה",
+   "proof": "אֲבָל אִם יֵשׁ לוֹ גַּם דַּעַת, שֶׁמֵּבִין גַּם בְּהַדַּעַת, אֲזַי אִי אֶפְשָׁר לוֹ לִפֹּל",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

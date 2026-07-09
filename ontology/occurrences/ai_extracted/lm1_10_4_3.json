@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 10,
+ "chunk": "10_4_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "הַגּוּף",
+   "target_he": "שַׂק",
+   "proof": "וְהַגּוּף נִקְרָא שַׂק",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "בַּעֲלֵי־גַּאֲוָה",
+   "target_he": "תַּאֲוָתוֹ שֶׁל הַשֵּׁם יִתְבָּרַךְ",
+   "proof": "אֲבָל אֵלּוּ הַבַּעֲלֵי־גַּאֲוָה מְעַכְּבִים תַּאֲוָתוֹ שֶׁל הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קִדּוּשׁ אָבִיו בִּשְׁעַת זִוּוּג",
+   "target_he": "תַּאֲוַת אֲבִיהֶם הַקְּשׁוּרָה בְּגוּפָם",
+   "proof": "מֵחֲמַת שֶׁלֹּא נִתְקַדֵּשׁ אָבִיו בִּשְׁעַת זִוּוּג...גַּם זֶה קָשׁוּר בְּגוּפָם עֲדַיִן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  }
+ ]
+}

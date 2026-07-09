@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 75,
+ "chunk": "75_0_1",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "מַחֲלֹקֶת",
+   "target_he": "הָעוֹשֶׂה שָׁלוֹם",
+   "proof": "וּבְמַחֲלֹקֶת יֵשׁ בְּחִינַת הָעוֹשֶׂה שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "הָעוֹשֶׂה שָׁלוֹם",
+   "target_he": "הַעֲלָאַת מַיִּין נוּקְבִין",
+   "proof": "וְהוּא בְּחִינַת הַעֲלָאַת מַיִּין נוּקְבִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "קֻשְׁיָא",
+   "target_he": "מַחֲלֹקֶת",
+   "proof": "הוּא בְּחִינוֹת מַחֲלֹקֶת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תֵּרוּץ",
+   "target_he": "הָעוֹשֶׂה שָׁלוֹם",
+   "proof": "וְהַתֵּרוּץ הוּא בְּחִינַת הָעוֹשֶׂה שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "תֵּרוּץ",
+   "target_he": "הַעֲלָאַת מַיִּין נוּקְבִין",
+   "proof": "וְהוּא הַעֲלָאַת מַיִּין נוּקְבִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "שָׁלוֹם",
+   "target_he": "הַעֲלָאַת מַיִּין נוּקְבִין",
+   "proof": "וְהוּא הַעֲלָאַת מַיִּין נוּקְבִין לְמָקוֹם אַחֵר",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "תוֹרָה וּתְפִלָּה",
+   "target_he": "הַעֲלָאַת מַיִּין נוּקְבִין",
+   "proof": "וְתוֹרָה וּתְפִלָּה, הוּא גַּם כֵּן בְּחִינַת הַעֲלָאַת מַיִּין נוּקְבִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַעֲלָאַת מַיִּין נוּקְבִין",
+   "target_he": "שָׁלוֹם",
+   "proof": "שֶׁהוּא שָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

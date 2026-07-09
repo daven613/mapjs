@@ -1,0 +1,64 @@
+{
+ "book": "lm1",
+ "torah": 41,
+ "chunk": "41_9_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "עַמּוּדִים",
+   "target_he": "רַגְלִין",
+   "proof": "וְאֵלּוּ עַמּוּדִים, הַיְנוּ רַגְלִין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "רַגְלִין",
+   "target_he": "עֲקֵבַיִם",
+   "proof": "הַיְנוּ עֲקֵבַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֲקֵבַיִם",
+   "target_he": "דִּין",
+   "proof": "הֵם בְּחִינַת דִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֹׁרֶשׁ הַדִּינִים",
+   "target_he": "בִּינָה",
+   "proof": "וְשֹׁרֶשׁ הַדִּינִים בַּבִּינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שֹׁרֶשׁ",
+   "target_he": "דִּין",
+   "proof": "וְאֵין דִּין נִמְתָּק אֶלָּא בְּשָׁרְשׁוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "שֵׁם מ\"ב",
+   "target_he": "בִּינָה",
+   "proof": "וְשֵׁם מ\"ב בַּבִּינָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

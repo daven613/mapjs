@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 23,
+ "chunk": "23_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "שדי",
+   "target_he": "ברית",
+   "proof": "כִּי שַׁדַּי הוּא בְּחִינַת בְּרִית",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מזוזה",
+   "target_he": "פרנסה",
+   "proof": "וְכֶסֶף תּוֹעָפוֹת לָךְ – עַל־יְדֵי־זֶה פַּרְנָסָתוֹ מְעוֹפֶפֶת לָךְ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מזוזה",
+   "target_he": "חמדת הממון",
+   "proof": "כִּי עַל־יְדֵי מְזוּזָה נִתְבַּטֵּל חֶמְדַּת הַמָּמוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

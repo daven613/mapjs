@@ -1,0 +1,118 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_6_4",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חלום פרעה",
+   "target_he": "כח המדמה",
+   "proof": "הַיְנוּ חֲלוֹם פַּרְעֹה, שֶׁהוּא בְּחִינַת כֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כח המדמה",
+   "target_he": "כח בטל",
+   "proof": "שֶׁהוּא בְּחִינַת כֹּחַ הַמְדַמֶּה, כֹּחַ בָּטֵל",
+   "explicitness": "inferred",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אחד",
+   "target_he": "אהבה",
+   "proof": "כִּי אֶחָד הוּא בְּחִינַת אַהֲבָה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "אהבה נפולה",
+   "target_he": "נדמו עמי מבלי הדעת",
+   "proof": "הַיְנוּ מֵאַהֲבָה נְפוּלָה כַּנַּ\"ל, בְּחִינַת: נִדְמוּ עַמִּי מִבְּלִי הַדָּעַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לשון הרע",
+   "target_he": "מוציא דבה הוא כסיל",
+   "proof": "שֶׁבָּא עַל־יְדֵי לְשׁוֹן הָרָע, שֶׁהוּא בְּחִינַת: מוֹצִיא דִּבָּה הוּא כְּסִיל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "כח המדמה",
+   "target_he": "כח הבהמיות",
+   "proof": "וְאָז מִתְגַּבֵּר עָלָיו כֹּחַ הַמְדַמֶּה, שֶׁהוּא כֹּחַ הַבַּהֲמִיּוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לשון הרע",
+   "target_he": "הסתלקות הדעת",
+   "proof": "עַל־יְדֵי הִסְתַּלְּקוּת הַדַּעַת, שֶׁבָּא עַל־יְדֵי לְשׁוֹן הָרָע",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הסתלקות הדעת",
+   "target_he": "אהבת השם יתברך",
+   "proof": "עַל־יְדֵי־זֶה נוֹפֵל מֵאַהֲבַת הַשֵּׁם יִתְבָּרַךְ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הסתלקות הדעת",
+   "target_he": "אהבות בהמיות",
+   "proof": "נוֹפֵל מֵאַהֲבַת הַשֵּׁם יִתְבָּרַךְ, לָאַהֲבוֹת הַבַּהֲמִיּוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "אהבות בהמיות",
+   "target_he": "כח המדמה",
+   "proof": "לָאַהֲבוֹת הַבַּהֲמִיּוֹת, וְאָז מִתְגַּבֵּר עָלָיו כֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כח המדמה",
+   "target_he": "זכרון",
+   "proof": "וְעַל־יְדֵי הַכֹּחַ הַמְדַמֶּה, נִפְגָּם הַזִּכָּרוֹן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כח המדמה",
+   "target_he": "שכחה",
+   "proof": "וְעַל־יְדֵי הַכֹּחַ הַמְדַמֶּה, נִפְגָּם הַזִּכָּרוֹן וְנוֹפֵל לְשִׁכְחָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

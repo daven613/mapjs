@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 17,
+ "chunk": "17_1_10",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "הַהִתְפָּאֲרוּת שֶׁמִּתְפָּאֵר בְּיִשְׂרָאֵל",
+   "target_he": "יוֹם הֻלֶּדֶת הַמֶּלֶךְ",
+   "proof": "שֶׁזֶּה בְּחִינַת יוֹם הֻלֶּדֶת הַמֶּלֶךְ, יוֹם גְּנוּסְיָא דְּמַלְכָּא",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "יוֹם הֻלֶּדֶת הַמַּלְכוּת",
+   "target_he": "שֶׁנּוֹלַד בְּחִינַת הַמַּלְכוּת",
+   "proof": "דְּהַיְנוּ שֶׁנּוֹלַד בְּחִינַת הַמַּלְכוּת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "יִשְׂרָאֵל שֶׁמְּקַבְּלִין מַלְכוּתוֹ",
+   "target_he": "בְּחִינַת הַמַּלְכוּת",
+   "proof": "כִּי עִקַּר בְּחִינַת הַמַּלְכוּת הוּא רַק עַל־יְדֵי יִשְׂרָאֵל, שֶׁמְּקַבְּלִין מַלְכוּתוֹ",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת הַהִתְפָּאֲרוּת שֶׁל יִשְׂרָאֵל",
+   "target_he": "הִתְפַּעֲלוּת נֶפֶשׁ הָרוֹאֶה",
+   "proof": "דְּהַיְנוּ שֶׁנִּתְגַּלֶּה הַהִתְפָּאֲרוּת שֶׁל יִשְׂרָאֵל, אָז מִתְפַּעֵל נֶפֶשׁ הָרוֹאֶה",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּלּוּת הַהִתְפָּאֲרוּת שֶׁל יִשְׂרָאֵל",
+   "target_he": "יִרְאָתוֹ הַנּוֹפֶלֶת עַל כֻּלָּם וַאֲפִלּוּ עַל שִׁנְאֲנֵי שַׁחַק",
+   "proof": "וְנִתְגַּלֶּה וְנוֹפֵל יִרְאָתוֹ עַל כֻּלָּם, וַאֲפִלּוּ עַל שִׁנְאֲנֵי שַׁחַק",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "גַּאֲוָתוֹ וְתִפְאַרְתּוֹ הַנִּגְלִים עַל יִשְׂרָאֵל",
+   "target_he": "עַל יִשְׂרָאֵל גַּאֲוָתוֹ",
+   "proof": "וְזֶה בְּחִינַת (תהילים ס״ח:ל״ה): עַל יִשְׂרָאֵל גַּאֲוָתוֹ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עֹז",
+   "target_he": "יִרְאָה",
+   "proof": "עֹז זֶה בְּחִינַת יִרְאָה כַּנִּזְכָּר לְעֵיל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "equation",
+   "source_he": "הַתְּפִלִּין",
+   "target_he": "עֹז",
+   "proof": "מִנַּיִן שֶׁהַתְּפִלִּין הֵם עֹז וְכוּ'",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

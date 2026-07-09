@@ -1,0 +1,73 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_4_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "עין",
+   "target_he": "זכרון",
+   "proof": "כִּי עִקַּר הַזִּכָּרוֹן תּוֹלֶה בָּעַיִן",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רע עין",
+   "target_he": "שכחה",
+   "proof": "כִּי הַשִּׁכְחָה בָּא עַל־יְדֵי רַע עַיִן",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מיתת הלב",
+   "target_he": "שכחה",
+   "proof": "עַל־יְדֵי מִיתַת הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "רע עין",
+   "target_he": "מיתת הלב",
+   "proof": "כִּי רַע עַיִן וּמִיתַת הַלֵּב הֵם בְּחִינָה אַחַת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מיתת הלב",
+   "target_he": "שברי לוחות",
+   "proof": "וּמִיתַת הַלֵּב הִיא בְּחִינַת שִׁבְרֵי לוּחוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "לב",
+   "target_he": "לוחות",
+   "proof": "לֵב, הוּא בְּחִינַת לוּחוֹת",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "שברי לוחות",
+   "target_he": "שכחה",
+   "proof": "וְשִׁכְחָה הִיא עַל־יְדֵי שִׁבְרֵי לוּחוֹת",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}

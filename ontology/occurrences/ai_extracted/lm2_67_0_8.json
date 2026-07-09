@@ -1,0 +1,118 @@
+{
+ "book": "lm2",
+ "torah": 67,
+ "chunk": "67_0_8",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "פִּרְסוּם מִי שֶׁאֵין בּוֹ שֵׁם ה' כְּלָל",
+   "target_he": "שֵׁם ה'",
+   "proof": "כְּשֶׁנִּתְפַּרְסֵם, חַס וְשָׁלוֹם, מִי שֶׁאֵין בּוֹ שֵׁם ה' כְּלָל... כִּבְיָכוֹל, נִתְמַעֵט וְנִתְעַלֵּם שֵׁם ה'",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְעַלְּמוּת שֵׁם ה'",
+   "target_he": "בַּעֲלֵי שֵׁמוֹת וְקֵדָרִיִּים",
+   "proof": "כִּבְיָכוֹל, נִתְמַעֵט וְנִתְעַלֵּם שֵׁם ה', וַאֲזַי נִתְגַּדְּלִין בָּעוֹלָם בַּעֲלֵי שֵׁמוֹת וְקֵדָרִיִּים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְעַלְּמוּת שֵׁם ה'",
+   "target_he": "מְאוֹרֵי אוֹר",
+   "proof": "כִּי נִתְעַלֵּם שֵׁם ה', חַס וְשָׁלוֹם. וַאֲזַי נִסְתַּלְּקִין וְנִכְנָעִין מְאוֹרֵי אוֹר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְאוֹרֵי אוֹר",
+   "target_he": "מְאוֹר הָעֵינַיִם",
+   "proof": "שֶׁהֵם בְּחִינַת מְאוֹר הָעֵינַיִם",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְאוֹר הָעֵינַיִם",
+   "target_he": "תְּלָת גְּוָנִין דְּעֵינָא וּבַת עַיִן",
+   "proof": "בְּחִינַת תְּלָת גְּוָנִין דְּעֵינָא וּבַת עַיִן",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִכָּנְעוּת מְאוֹרֵי אוֹר",
+   "target_he": "מְאוֹרֵי אֵשׁ",
+   "proof": "וּכְשֶׁנִּכְנָעִין מְאוֹרֵי אוֹר, אֲזַי מִתְגַּבְּרִין מְאוֹרֵי אֵשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מְאוֹרֵי אֵשׁ",
+   "target_he": "שְׂרֵפוֹת בָּעוֹלָם",
+   "proof": "וּמִזֶּה בָּאִין שְׂרֵפוֹת בָּעוֹלָם, חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְגַּבְּרוּת שֵׁם הַמְפֻרְסָמִים שֶׁל שֶׁקֶר",
+   "target_he": "שֵׁם ה'",
+   "proof": "עַל־יְדֵי שֶׁמִּתְגַּבְּרִין וְנִתְגַּדְּלִין בְּשֵׁם אֵלּוּ הַמְפֻרְסָמִים שֶׁל שֶׁקֶר, שֶׁעַל־יְדֵי־זֶה נִתְעַלֵּם שֵׁם ה', חַס וְשָׁלוֹם",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִתְעַלְּמוּת שֵׁם ה'",
+   "target_he": "מְאוֹרֵי אוֹר",
+   "proof": "שֶׁעַל־יְדֵי־זֶה נִתְעַלֵּם שֵׁם ה', חַס וְשָׁלוֹם, וְנִכְנָעִים מְאוֹרֵי אוֹר",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "הִכָּנְעוּת מְאוֹרֵי אוֹר",
+   "target_he": "מְאוֹרֵי אֵשׁ",
+   "proof": "וְנִכְנָעִים מְאוֹרֵי אוֹר, וּמִתְגַּבְּרִין מְאוֹרֵי אֵשׁ",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מְאוֹרֵי אֵשׁ",
+   "target_he": "מִמָּרוֹם שָׁלַח אֵשׁ",
+   "proof": "בְּחִינַת: מִמָּרוֹם שָׁלַח אֵשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מִמָּרוֹם שָׁלַח אֵשׁ",
+   "target_he": "שְׂרֵפַת בֵּית־הַמִּקְדָּשׁ",
+   "proof": "שֶׁזֶּה בְּחִינַת שְׂרֵפַת בֵּית־הַמִּקְדָּשׁ",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

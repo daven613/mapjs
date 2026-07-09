@@ -1,0 +1,37 @@
+{
+ "book": "lm1",
+ "torah": 54,
+ "chunk": "54_6_3",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "bechina",
+   "source_he": "חלום",
+   "target_he": "כח המדמה",
+   "proof": "מַה שֶּׁהַחֲלוֹם שֶׁהוּא בְּחִינַת כֹּחַ הַמְדַמֶּה",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "נָכוֹן הַדָּבָר מֵעִם הָאֱלֹהִים וּמְמַהֵר הָאֱלֹהִים לַעֲשׂוֹתוֹ",
+   "target_he": "אֲשֶׁר בָּרָא אֱלֹקִים לַעֲשׂוֹת",
+   "proof": "זֶה בְּחִינַת: אֲשֶׁר בָּרָא אֱלֹקִים לַעֲשׂוֹת הַנַּ\"ל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "כֹּחַ הַמְדַמֶּה",
+   "target_he": "הַשּׁוֹנֵה הֲלָכוֹת",
+   "proof": "הִשְׁתַּדְּלוּתוֹ לִשְׁרוֹת עַל הַשּׁוֹנֵה הֲלָכוֹת",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  }
+ ]
+}

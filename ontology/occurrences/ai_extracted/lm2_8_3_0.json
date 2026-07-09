@@ -1,0 +1,55 @@
+{
+ "book": "lm2",
+ "torah": 8,
+ "chunk": "8_3_0",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "equation",
+   "source_he": "פְּלִילוֹת עִם קוֹנוֹ",
+   "target_he": "תְּפִלָּה בִּבְחִינַת דִּין",
+   "proof": "שֶׁעָשָׂה פְּלִילוֹת עִם קוֹנוֹ; הַיְנוּ תְּפִלָּה בִּבְחִינַת דִּין",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "מַעֲשֵׂה זִמְרִי",
+   "target_he": "כִּי הִיא זִמָּה וְהוּא עָוֹן פְּלִילִים",
+   "proof": "כִּי קִנֵּא עַל מַעֲשֵׂה זִמְרִי, שֶׁהוּא בְּחִינַת (איוב ל״א:י״א): כִּי הִיא זִמָּה וְהוּא עָוֹן פְּלִילִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "עָווֹן",
+   "target_he": "תְּפִלָּה בִּבְחִינַת דִּין",
+   "proof": "הַיְנוּ שֶׁהוּא עָווֹן שֶׁצְּרִיכִין לָזֶה תְּפִלָּה בִּבְחִינַת דִּין",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָווֹן",
+   "target_he": "פְּלִילִים",
+   "proof": "שֶׁהוּא בְּחִינַת פְּלִילִים",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  },
+  {
+   "type": "bechina",
+   "source_he": "עָווֹן",
+   "target_he": "וַיַעֲמֹד פִּנְחָס וַיְפַלֵּל",
+   "proof": "בְּחִינַת: וַיַעֲמֹד פִּנְחָס וַיְפַלֵּל",
+   "explicitness": "explicit",
+   "polarity": "neutral",
+   "via": "presence"
+  }
+ ]
+}

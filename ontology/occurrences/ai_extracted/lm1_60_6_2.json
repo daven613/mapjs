@@ -1,0 +1,82 @@
+{
+ "book": "lm1",
+ "torah": 60,
+ "chunk": "60_6_2",
+ "model": "claude-sonnet-5",
+ "extractor": "ai:claude-sonnet-5",
+ "schema": 2,
+ "edges": [
+  {
+   "type": "eitza",
+   "source_he": "מאכל",
+   "target_he": "לב",
+   "proof": "כִּי עִקַּר הַמַּאֲכָל הוּא לְהַחֲיוֹת הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מאכל מבורר",
+   "target_he": "לב",
+   "proof": "וּכְשֶׁאֵין הַמַּאֲכָל מְבֹרָר... אֲזַי מֵבִיא רֹעַ אֶל הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "קדושה באכילה",
+   "target_he": "לב",
+   "proof": "וְאֵין אוֹכֵל אוֹתוֹ בִּקְדֻשָּׁה – אֲזַי מֵבִיא רֹעַ אֶל הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "absence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "רוע הלב",
+   "target_he": "פנים",
+   "proof": "וְעַל יְדֵי רֹעַ הַלֵּב נִתְקַלְקֵל הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "תיקון הלב",
+   "target_he": "בקשת הפנים",
+   "proof": "בַּקָּשַׁת הַפָּנִים... הוּא תָּלוּי בְּתִקּוּן הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "builds",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "מאכל שאין מבורר",
+   "target_he": "לב",
+   "proof": "עַל יְדֵי מַאֲכָל שֶׁאֵין מְבֹרָר, שֶׁעַל יָדוֹ נִתְקַלְקֵל הַלֵּב",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "לב",
+   "target_he": "פנים",
+   "proof": "עַל־יְדֵי־זֶה אוֹבֵד הַפָּנִים",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  },
+  {
+   "type": "eitza",
+   "source_he": "פנים",
+   "target_he": "שינה",
+   "proof": "וְנוֹפֵל לִבְחִינַת שֵׁנָה",
+   "explicitness": "explicit",
+   "polarity": "harms",
+   "via": "presence"
+  }
+ ]
+}
