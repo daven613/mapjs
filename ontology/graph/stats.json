@@ -1,73 +1,114 @@
 {
  "concept_nodes": 3588,
  "statement_nodes": 627,
- "edges": 3939,
+ "phrase_nodes": 4803,
+ "nodes_total": 9018,
+ "edges": 12328,
  "edges_by_type": {
-  "bechina": 2114,
-  "eitza": 1825
+  "bechina": 5346,
+  "eitza": 5106,
+  "equation": 1876
  },
- "total_occurrences": 4148,
- "unresolved_occurrences": 0,
+ "edges_by_polarity": {
+  "neutral": 7222,
+  "builds": 4132,
+  "harms": 974
+ },
+ "edges_by_via": {
+  "presence": 12000,
+  "absence": 328
+ },
+ "attestations_by_polarity_via": {
+  "neutral/presence": 8821,
+  "builds/presence": 4646,
+  "harms/presence": 705,
+  "harms/absence": 337,
+  "builds/absence": 11
+ },
+ "legacy_occurrences": 4148,
+ "legacy_unresolved": 0,
+ "ai_chunks": 3880,
+ "ai_chunks_zero_contribution": 1187,
+ "ai": {
+  "chunks_empty_extraction": 764,
+  "candidate": 16007,
+  "skipped_islands": 5627,
+  "merged": 10372,
+  "phrase_endpoint": 6385,
+  "self_loops_dropped": 8
+ },
+ "ai_resolution_ladder": {
+  "src_unresolved": 8704,
+  "tgt_unresolved": 8935,
+  "src_exact": 5949,
+  "tgt_exact": 5806,
+  "tgt_article": 486,
+  "src_article": 594,
+  "tgt_skel": 753,
+  "src_skel": 726,
+  "src_skel_article": 34,
+  "tgt_skel_article": 27
+ },
  "top_hubs": [
   {
    "id": "c:tefillah-2",
-   "degree": 103
+   "degree": 293
   },
   {
    "id": "c:emunah-2",
-   "degree": 86
+   "degree": 288
   },
   {
    "id": "c:noun-instruction",
-   "degree": 72
+   "degree": 222
   },
   {
    "id": "c:mitzvah-charity",
-   "degree": 72
-  },
-  {
-   "id": "c:chokhmah-tata'ah",
-   "degree": 64
-  },
-  {
-   "id": "c:displaced-sparks-letters",
-   "degree": 47
-  },
-  {
-   "id": "c:will-see-will",
-   "degree": 45
-  },
-  {
-   "id": "c:simchah",
-   "degree": 45
-  },
-  {
-   "id": "c:like-moses-joseph",
-   "degree": 38
-  },
-  {
-   "id": "c:emet",
-   "degree": 38
-  },
-  {
-   "id": "c:brit-organ-procreation",
-   "degree": 37
-  },
-  {
-   "id": "c:yaakov",
-   "degree": 34
+   "degree": 200
   },
   {
    "id": "c:five-kindnesses-five",
-   "degree": 34
+   "degree": 194
+  },
+  {
+   "id": "c:chokhmah-tata'ah",
+   "degree": 186
+  },
+  {
+   "id": "c:displaced-sparks-letters",
+   "degree": 137
+  },
+  {
+   "id": "c:simchah",
+   "degree": 129
   },
   {
    "id": "c:dibbur-2",
-   "degree": 32
+   "degree": 125
+  },
+  {
+   "id": "c:emet",
+   "degree": 120
+  },
+  {
+   "id": "c:sekhel-2",
+   "degree": 120
+  },
+  {
+   "id": "c:kingship",
+   "degree": 109
+  },
+  {
+   "id": "c:holy-day-rest",
+   "degree": 104
+  },
+  {
+   "id": "c:nefesh",
+   "degree": 102
   },
   {
    "id": "c:shalom",
-   "degree": 32
+   "degree": 101
   }
  ]
 }
