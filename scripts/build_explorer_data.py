@@ -2,7 +2,11 @@
 """Bundle the compiled graph into one compact JSON the explorer loads (self-contained, offline).
 
 nodes: id, he (canonical Hebrew), gloss, kind, deg (degree)
-edges: s, t, ty (bechina|eitza|equation), w (weight), p (one sample proof, trimmed)
+edges: s, t, ty (bechina|eitza|equation), w (weight), p (one sample proof, trimmed),
+       pol (builds|harms|neutral), via (presence|absence), ref (torah refs)
+
+Proof/ref lookups span both evidence layers: legacy_human.jsonl and ai_compiled.jsonl
+(the latter written by compile_graph.py from the merged ai_extracted chunks).
 """
 import json, collections
 from pathlib import Path
@@ -11,8 +15,13 @@ MAPJS = Path(__file__).resolve().parent.parent
 G = MAPJS / "ontology/graph"
 nodes = json.loads((G / "nodes.json").read_text())
 edges = json.loads((G / "edges.json").read_text())
-occ = {json.loads(l)["id"]: json.loads(l)
-       for l in (MAPJS / "ontology/occurrences/legacy_human.jsonl").open()}
+occ = {}
+for src in ("legacy_human.jsonl", "ai_compiled.jsonl"):
+    p = MAPJS / "ontology/occurrences" / src
+    if p.exists():
+        for l in p.open():
+            o = json.loads(l)
+            occ[o["id"]] = o
 
 deg = collections.Counter()
 for e in edges:
@@ -48,7 +57,8 @@ for e in edges:
             node_refs[e["source"]].add(r)
             node_refs[e["target"]].add(r)
     out_edges.append({"s": e["source"], "t": e["target"], "ty": e["type"],
-                      "w": e["weight"], "p": proof, "ref": sorted(refs)})
+                      "w": e["weight"], "p": proof, "ref": sorted(refs),
+                      "pol": e.get("polarity", "neutral"), "via": e.get("via", "presence")})
 
 def refsort(r):
     b, t = r.split(":"); return (0 if b == "I" else 1, int(t))

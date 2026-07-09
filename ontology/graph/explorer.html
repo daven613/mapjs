@@ -32,6 +32,7 @@
     color:var(--ink);padding:8px 10px;border-radius:8px;font-size:13px;outline:none;font-family:inherit}
   .inputs textarea{resize:vertical;min-height:54px;line-height:1.4}
   .inputs input:focus,.inputs textarea:focus,.inputs select:focus{border-color:var(--accent)}
+  .inputs input.picked{border-color:var(--eitza);background:#16241d}
   .inputs .go{background:var(--accent);color:#12131a;border:none;font-weight:600;cursor:pointer;padding:8px}
   .inputs label{font-size:10.5px;color:var(--faint);text-transform:uppercase;letter-spacing:.07em;margin-bottom:-3px}
   .ac{position:relative}
@@ -85,6 +86,7 @@
   .conn .he{font-family:var(--hebrew);font-size:16px;direction:rtl}
   .conn .en{font-size:12px;color:var(--dim);margin-top:2px}
   .conn .w{margin-left:auto;font-size:10px;color:var(--faint);flex:none}
+  .conn .polh{font-size:9.5px;color:#ff5d5d;border:1px solid #ff5d5d55;border-radius:8px;padding:1px 6px;margin:0 6px;flex:none;align-self:center}
   .conn .proof{font-family:var(--hebrew);font-size:13px;direction:rtl;color:var(--dim);margin-top:6px;
     line-height:1.55;border-top:1px dashed var(--line);padding-top:6px;display:none}
   .conn.open .proof{display:block}
@@ -113,6 +115,7 @@
       <span><i style="background:var(--bechina)"></i>bechina · aspect</span>
       <span><i style="background:var(--eitza)"></i>eitza · advice</span>
       <span><i style="background:var(--equation)"></i>equation</span>
+      <span><i style="background:#ff5d5d"></i>harms (dashed = via absence/פגם)</span>
     </div>
     <div id="tip"></div>
   </div>
@@ -122,6 +125,9 @@
 const TYCOL={bechina:'#5aa9ff',eitza:'#37d093',equation:'#f0b429'};
 let NODES=[],EDGES=[],TORAHS=[],byId={},adj={},idf={},tokx={};
 let mode='explore',focus=null,hist=[],view={nodes:[],edges:[],path:null},sim={},anim=null,hover=null;
+let savedProjection=null;   // {picks:[ids], res} — lets the user leave to explore a concept and come back
+let traceData=null,traceSegIdx=null;   // loaded story-trace JSON (scripts/segment_project.py + story write-up)
+function exploreConcept(id){ setMode('explore'); go(id); drawCrumbs(); }  // non-destructive: savedProjection survives
 const cv=document.getElementById('c'),ctx=cv.getContext('2d'),tip=document.getElementById('tip');
 const $=id=>document.getElementById(id);
 
@@ -180,6 +186,7 @@ const MODES=[
   ['torah','By Torah','everything from one teaching'],
   ['match','Match text','paste text → closest concepts'],
   ['project','Project chain','map a causal narrative into a Torah'],
+  ['trace','Story trace','load a CLI-generated trace: sequence → segments → narrative'],
 ];
 function buildModes(){
   $('modes').innerHTML='';
@@ -191,6 +198,7 @@ function setMode(m){
   renderInputs();
   if(m==='explore'||m==='aspects'||m==='advice'||m==='effects'){ if(focus)go(focus); }
   else if(m==='torah'){ runTorah($('torahSel').value); }
+  else if(m==='trace'){ renderTraceList(); }
   else { $('list').innerHTML=''; }
 }
 let stageN=3;
@@ -225,10 +233,26 @@ function renderInputs(){
       <div style="display:flex;gap:6px"><button id="addStg" style="flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:8px;padding:6px;cursor:pointer">+ concept</button>
       <button id="delStg" style="flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:8px;padding:6px;cursor:pointer">– concept</button></div>
       <button class="go" id="runp">Project into the map</button>`;
-    renderStages();
+    // if a projection is already in progress, repopulate the pickers so leaving & returning never loses it
+    if(savedProjection&&savedProjection.picks.length){
+      stageN=savedProjection.picks.length;renderStages();
+      savedProjection.picks.forEach((id,i)=>{const el=$('ac_stg_'+i);if(el){el.value=byId[id]?(byId[id].he||id):id;el.dataset.id=id;}});
+    } else renderStages();
     $('addStg').onclick=()=>{const v=saveStages();stageN=Math.min(6,stageN+1);renderStages();restoreStages(v);};
     $('delStg').onclick=()=>{const v=saveStages();stageN=Math.max(2,stageN-1);renderStages();restoreStages(v);};
     $('runp').onclick=runProject;
+  } else if(mode==='trace'){
+    I.innerHTML=`<label>Load a story trace (CLI output)</label>
+      <input type="file" id="traceFile" accept="application/json">
+      <button class="go" id="loadBundled">Load bundled example</button>`;
+    $('traceFile').onchange=e=>{const f=e.target.files[0];if(!f)return;
+      const r=new FileReader();
+      r.onload=()=>{try{traceData=JSON.parse(r.result);traceSegIdx=null;renderTraceList();showTraceOverview();}
+        catch(err){setStatus('failed to parse trace JSON: '+err.message);}};
+      r.readAsText(f);};
+    $('loadBundled').onclick=()=>{fetch('./story_trace.json').then(r=>r.json())
+      .then(d=>{traceData=d;traceSegIdx=null;renderTraceList();showTraceOverview();})
+      .catch(err=>setStatus('no bundled example at ./story_trace.json: '+err.message));};
   } else {
     I.innerHTML=`<label>Search concept</label>${acField('q')}`;
     wireAc('q',true);
@@ -239,13 +263,21 @@ function wireAc(id,browse){
   const inp=$('ac_'+id),menu=$('acm_'+id);let sel=-1,cur=[];
   const close=()=>{menu.classList.remove('show');sel=-1;};
   inp.addEventListener('input',()=>{
+    delete inp.dataset.id;inp.classList.remove('picked');       // editing invalidates any prior pick
     const q=inp.value.trim().toLowerCase();
     if(!q){close(); if(browse)listBrowse(); return;}
-    cur=NODES.filter(n=>n.kind!=='statement'&&((n.he&&n.he.toLowerCase().includes(q))||(n.gloss&&n.gloss.toLowerCase().includes(q))))
-      .sort((a,b)=>b.deg-a.deg).slice(0,30);
-    menu.innerHTML=cur.map((n,i)=>`<div class="acitem" data-i="${i}"><span class="he">${n.he||''}</span><span class="en">${n.gloss||''}</span></div>`).join('');
-    menu.classList.add('show');sel=-1;
-    [...menu.children].forEach(el=>el.onclick=()=>{ pick(cur[+el.dataset.i]); });
+    const qesc=q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');const wb=new RegExp('\\b'+qesc);
+    const score=n=>{const he=(n.he||'').toLowerCase(),gl=(n.gloss||'').toLowerCase();
+      let s; if(he===q)s=100;else if(he.startsWith(q))s=82;else if(he.includes(q))s=64;
+      else if(gl.startsWith(q))s=54;else if(wb.test(gl))s=42;else if(gl.includes(q))s=22;else return -1;
+      return s+Math.min(15,(n.deg||0)/40);};                    // relevance first, degree as tiebreak
+    cur=NODES.filter(n=>n.kind!=='statement').map(n=>[n,score(n)]).filter(x=>x[1]>=0)
+      .sort((a,b)=>b[1]-a[1]).slice(0,30).map(x=>x[0]);
+    if(!cur.length){close(); if(browse)listResults([],'No matches'); return;}
+    menu.innerHTML=cur.map((n,i)=>`<div class="acitem" data-i="${i}"><span class="he">${n.he||''}</span><span class="en">${(n.gloss||'').slice(0,60)}</span></div>`).join('');
+    menu.classList.add('show');sel=0;paint();
+    // select on mousedown+preventDefault so the input never blurs mid-click (fixes the "click doesn't fill" race)
+    [...menu.children].forEach(el=>el.addEventListener('mousedown',ev=>{ev.preventDefault();pick(cur[+el.dataset.i]);}));
     if(browse) listResults(cur,'Matches');
   });
   inp.addEventListener('keydown',e=>{
@@ -256,7 +288,7 @@ function wireAc(id,browse){
     else if(e.key==='Escape')close();
   });
   function paint(){[...menu.children].forEach((el,i)=>el.classList.toggle('sel',i===sel));}
-  function pick(n){ inp.value=n.he+' — '+(n.gloss||'').slice(0,30); inp.dataset.id=n.id; close();
+  function pick(n){ inp.value=n.he+' — '+(n.gloss||'').slice(0,30); inp.dataset.id=n.id; inp.classList.add('picked'); close();
     if(browse) go(n.id); }
   inp.addEventListener('blur',()=>setTimeout(close,150));
 }
@@ -298,28 +330,55 @@ function runMatch(){
 }
 // ---------- structural projection (validated in scripts/project_test.py) ----------
 function hopCost(e,home){ if((e.ref||[]).includes(home))return 0.12; return e.ty==='eitza'?1.6:2.0; }
-// cheapest a->b path with >=1 forward causal (eitza) hop; strict=home keeps it in-chapter
+// cheapest a->b path with >=1 forward causal (eitza) hop; strict=home keeps it in-chapter.
+// returns [cost, nodes, hops] where each hop = {from,to,e,kind,hc}
 function causalPath(a,b,home,strict){
-  if(a===b)return[0,[a]];
+  if(a===b)return[0,[a],[]];
   const key=(id,c)=>id+'|'+c; const dist={},prev={},h=[[0,a,0]]; dist[key(a,0)]=0; let guard=0;
-  while(h.length&&guard++<20000){
+  while(h.length&&guard++<40000){
     let mi=0;for(let i=1;i<h.length;i++)if(h[i][0]<h[mi][0])mi=i;
     const [c,node,caused]=h.splice(mi,1)[0];
     if(c>(dist[key(node,caused)]??1e9))continue;
-    if(node===b&&caused){const path=[[node,caused]];let k=key(node,caused);
-      while(prev[k]){path.push(prev[k]);k=key(prev[k][0],prev[k][1]);}path.reverse();
-      return[c,path.map(p=>p[0])];}
+    if(node===b&&caused){
+      const hops=[];let k=key(node,caused);
+      while(prev[k]){const p=prev[k];hops.unshift({from:p.from,to:p.node,e:p.e,kind:p.kind,hc:p.hc});k=key(p.from,p.fc);}
+      return[c,[a].concat(hops.map(hh=>hh.to)),hops];
+    }
     (adj[node]?.all||[]).forEach(x=>{
       if(x.dir!=='out'&&x.ty==='eitza')return;                 // eitza only forward (cause->effect)
       if(strict&&!(x.e.ref||[]).includes(strict))return;
       const kind=x.ty==='eitza'?'cause':'reframe';
       const nc=caused||kind==='cause'?1:0;
-      const cost=c+hopCost(x.e,home)+(kind==='reframe'?0.15:0);
+      const hc=hopCost(x.e,home)+(kind==='reframe'?0.15:0);
       const nk=key(x.o,nc);
-      if(cost<(dist[nk]??1e9)){dist[nk]=cost;prev[nk]=[node,caused];h.push([cost,x.o,nc]);}
+      if(c+hc<(dist[nk]??1e9)){dist[nk]=c+hc;prev[nk]={from:node,fc:caused,node:x.o,e:x.e,kind,hc};h.push([c+hc,x.o,nc]);}
     });
   }
-  return[null,null];
+  return[null,null,null];
+}
+// the parallel/mapping path: how a source concept X reaches its anchor A through aspect (bechina) edges.
+// undirected (aspects are mutual); in-home hops are near-free. returns [{from,to,e}] or null if unreachable.
+function aspectPath(a,b,home){
+  if(a===b)return[];
+  const dist={},prev={},h=[[0,a]];dist[a]=0;let guard=0;
+  while(h.length&&guard++<30000){
+    let mi=0;for(let i=1;i<h.length;i++)if(h[i][0]<h[mi][0])mi=i;
+    const [c,node]=h.splice(mi,1)[0];
+    if(c>(dist[node]??1e9))continue;
+    if(node===b){const hops=[];let k=b;while(prev[k]){hops.unshift(prev[k]);k=prev[k].from;}return hops;}
+    (adj[node]?.all||[]).forEach(x=>{
+      if(x.ty!=='bechina')return;                                // aspect links only
+      const w=(x.e.ref||[]).includes(home)?0.12:1.2;             // in-home cheap, else weighty
+      const nc=c+w; if(nc<(dist[x.o]??1e9)){dist[x.o]=nc;prev[x.o]={from:node,to:x.o,e:x.e};h.push([nc,x.o]);}
+    });
+  }
+  return null;
+}
+// when no aspect-edge path exists, expose WHY two concepts were matched: their shared meaning-terms
+function sharedTerms(x,a,topn){
+  const sx=tokx[x]||new Set(),sa=tokx[a]||new Set(),ov=[];
+  sx.forEach(w=>{if(sa.has(w)&&w.length>1)ov.push([w,idf[w]||0.5]);});
+  return ov.sort((p,q)=>q[1]-p[1]).slice(0,topn||8).map(p=>p[0]);
 }
 // concept-to-concept parallel: A parallels X if A==X, or a bechina-aspect of X, or gloss-akin
 function glossSim(x,a){const q={};tokens((byId[x].gloss||'')+' '+(byId[x].he||'')).forEach(w=>q[w]=(q[w]||0)+1);return scoreOne(q,a);}
@@ -329,38 +388,55 @@ function parallels(x,pool,topn){
     if(s>0)scored.push([a,s]);});
   return scored.sort((p,q)=>q[1]-p[1]).slice(0,topn||6);
 }
-// project a picked concept sequence onto a parallel causal chain, in-Torah preferred
+// aspect reachability: hops from x to every concept reachable over bechina edges (single Dijkstra)
+function aspectDist(x){
+  const dist={};dist[x]=0;const h=[[0,x]];let guard=0;
+  while(h.length&&guard++<60000){
+    let mi=0;for(let i=1;i<h.length;i++)if(h[i][0]<h[mi][0])mi=i;
+    const [c,node]=h.splice(mi,1)[0];
+    if(c>(dist[node]??1e9))continue;
+    (adj[node]?.all||[]).forEach(e=>{if(e.ty!=='bechina')return;const nc=c+1;
+      if(nc<(dist[e.o]??1e9)){dist[e.o]=nc;h.push([nc,e.o]);}});
+  }
+  return dist;
+}
+// project a picked sequence onto a parallel causal chain: each pick maps onto an ASPECT-REACHABLE anchor,
+// so the X→A mapping is a real path of aspect-links (gloss-similarity is only a flagged last resort).
 function project(conceptIds){
+  const dists=conceptIds.map(aspectDist);            // aspect reach per pick
   const cover={};
-  conceptIds.forEach(x=>{const seen=new Set();(byId[x].refs||[]).forEach(r=>seen.add(r));
-    (adj[x]?adj[x].bechina:[]).forEach(nb=>(byId[nb].refs||[]).forEach(r=>seen.add(r)));
+  conceptIds.forEach((x,idx)=>{const seen=new Set();
+    Object.keys(dists[idx]).forEach(a=>{if(dists[idx][a]<=6)(byId[a].refs||[]).forEach(r=>seen.add(r));});
     seen.forEach(r=>cover[r]=(cover[r]||0)+1);});
-  const homes=Object.keys(cover).filter(r=>cover[r]>=2).sort((a,b)=>cover[b]-cover[a]).slice(0,16);
+  const homes=Object.keys(cover).filter(r=>cover[r]>=Math.min(2,conceptIds.length)).sort((a,b)=>cover[b]-cover[a]).slice(0,24);
   let best=null;
   homes.forEach(home=>{
     const pool=conceptsIn[home]||[]; if(!pool.length)return;
-    const candk=conceptIds.map(x=>parallels(x,pool,6));
+    // candidates for each pick = pool concepts reachable via aspect-links (cost ∝ aspect distance),
+    // falling back to gloss-similar concepts (heavier cost, flagged) only if nothing is reachable.
+    const candk=conceptIds.map((x,idx)=>{const d=dists[idx];
+      let cand=pool.filter(a=>d[a]!==undefined&&d[a]<=6).map(a=>[a, a===x?0:0.2*d[a]]);
+      if(!cand.length)cand=parallels(x,pool,4).map(([a],k)=>[a, 1.2+0.1*k]);   // soft semantic fallback
+      return cand.sort((p,q)=>p[1]-q[1]).slice(0,6);});
     if(candk.some(c=>!c.length))return;
-    const maxs=Math.max(...candk.flat().map(x=>x[1]))||1;
-    const semc=candk.map(c=>{const m={};c.forEach(([cid,sc])=>m[cid]=1-sc/maxs);return m;});
     let loc=null;
-    (function dfs(i,used,chain,links,cost){
+    (function dfs(i,used,chain,links,pcosts,cost){
       if(loc&&cost>=loc.cost)return;
-      if(i===conceptIds.length){loc={cost,home,chain:chain.slice(),links:links.slice()};return;}
-      for(const [cid] of candk[i]){ if(used.has(cid))continue;
-        if(i===0)dfs(1,new Set([cid]),[cid],[],semc[0][cid]);
-        else{const [pc,nodes]=causalPath(chain[chain.length-1],cid,home,home);
+      if(i===conceptIds.length){loc={cost,home,chain:chain.slice(),links:links.slice(),pcosts:pcosts.slice()};return;}
+      for(const [cid,pcost] of candk[i]){ if(used.has(cid))continue;
+        if(i===0)dfs(1,new Set([cid]),[cid],[],[pcost],pcost);
+        else{const [pc,nodes,hops]=causalPath(chain[chain.length-1],cid,home,home);
           if(pc===null)continue;const u=new Set(used);u.add(cid);
-          dfs(i+1,u,chain.concat(cid),links.concat([[pc,nodes]]),cost+semc[i][cid]+pc);}
+          dfs(i+1,u,chain.concat(cid),links.concat([{cost:pc,nodes,hops}]),pcosts.concat(pcost),cost+pcost+pc);}
       }
-    })(0,new Set(),[],[],0);
+    })(0,new Set(),[],[],[],0);
     if(loc&&(!best||loc.cost<best.cost))best=loc;
   });
   if(!best){ // cross-Torah fallback: map each to itself, connect with penalty
     const chain=conceptIds.slice();const links=[];let cost=0,ok=true;
-    for(let i=0;i<chain.length-1;i++){const [pc,nodes]=causalPath(chain[i],chain[i+1],null);
-      if(pc===null){ok=false;break;}cost+=pc+2;links.push([pc,nodes]);}
-    if(ok)best={cost,home:null,chain,links};
+    for(let i=0;i<chain.length-1;i++){const [pc,nodes,hops]=causalPath(chain[i],chain[i+1],null);
+      if(pc===null){ok=false;break;}cost+=pc+2;links.push({cost:pc+2,nodes,hops});}
+    if(ok)best={cost,home:null,chain,links,pcosts:chain.map(()=>0)};
   }
   return best;
 }
@@ -369,44 +445,218 @@ function restoreStages(v){v.forEach((o,i)=>{const el=$('ac_stg_'+i);if(el){el.va
 function runProject(){
   const picks=[];for(let i=0;i<stageN;i++){const el=$('ac_stg_'+i);if(el&&el.dataset.id)picks.push(el.dataset.id);}
   if(picks.length<2){setStatus('pick at least two concepts from the dropdowns');return;}
+  runProjectFor(picks);
+}
+// core of runProject(), factored out so "Story trace" mode can drive it with a
+// precomputed pick list (one story segment) instead of reading the stage inputs.
+function runProjectFor(picks){
   const res=project(picks);
   if(!res){setStatus('no projection found for those concepts');$('detail').innerHTML='<div class="dhead"><div class="meta">No projection found.</div></div>';return;}
-  const stages=picks.map(id=>byId[id].he);
-  const nodes=res.chain.slice(),edges=[],pathNodes=new Set(res.chain);
-  res.links.forEach(([c,ns])=>{for(let i=0;i<ns.length-1;i++){nodes.push(ns[i],ns[i+1]);
-    const e=EDGES.find(e=>(e.s===ns[i]&&e.t===ns[i+1])||(e.s===ns[i+1]&&e.t===ns[i]));if(e)edges.push(e);}
-    ns.forEach(x=>pathNodes.add(x));});
-  view={path:[...pathNodes],edges,nodes:[...new Set(nodes)],center:null,proj:res};
+  // --- causal spine (real concept ids): chain anchors + bridges, joined by eitza hops ---
+  const spineNodes=res.chain.slice(),edges=[],hopCostOf={};
+  res.links.forEach(l=>(l.hops||[]).forEach(h=>{edges.push(h.e);spineNodes.push(h.from,h.to);hopCostOf[h.from+'>'+h.to]=h.hc;}));
+  // --- mapping: EVERY pick becomes a top-row node (synthetic id) with a dashed path down to its anchor,
+  //     so all N picks always show, even one that already appears in the teaching (a "self" mapping). ---
+  const topNodes=[],mapPaths=[],mapNodes=new Set(),realOf={},mapInfo={};
+  picks.forEach((pid,i)=>{const anchor=res.chain[i];const topId='pk#'+i;realOf[topId]=pid;
+    topNodes.push({id:topId,real:pid,idx:i+1});
+    const hops=(pid===anchor)?[]:(aspectPath(pid,anchor,res.home)||null);
+    const kind=(pid===anchor)?'self':(hops&&hops.length?'aspect':'shared');
+    mapInfo[topId]={idx:i+1,pcost:(res.pcosts||[])[i]||0,nhops:hops?hops.length:0,kind};
+    const seq=[topId],segEdges=[];
+    if(hops&&hops.length){hops.forEach((h,k)=>{const last=k===hops.length-1;
+      const to=last?anchor:('mp#'+i+'#'+k);if(!last){realOf[to]=h.to;mapNodes.add(to);}
+      seq.push(to);segEdges.push(h.e);});}
+    else{seq.push(anchor);segEdges.push(null);}
+    mapPaths.push({idx:i+1,seq,segEdges,kind,topId});
+  });
+  view={proj:res,edges,nodes:[...new Set(spineNodes)],path:res.chain.slice(),center:null,
+        anchors:new Set(res.chain),anchorIdx:Object.fromEntries(res.chain.map((id,i)=>[id,i+1])),
+        hopCostOf,topNodes,mapPaths,mapNodes,realOf,mapInfo,picks:picks.slice()};
+  savedProjection={picks:picks.slice(),res,fromTrace:(mode==='trace'&&traceSegIdx!=null)?{segIdx:traceSegIdx}:null};
   layoutProject(res); drawProjectDetail(picks,res); drawCrumbs();
   setStatus(res.home?`projected onto LM ${res.home.replace(':',' · ')} · weight ${res.cost.toFixed(2)}`:`cross-Torah projection · weight ${res.cost.toFixed(2)}`);
 }
+
+// ---------- story trace (scripts/story_to_map: sequence -> segments -> narrative) ----------
+function renderTraceList(){
+  const L=$('list');
+  if(!traceData){L.innerHTML='<div class="sec">No trace loaded</div><div class="empty" style="padding:8px 10px">Use the file picker above, or "Load bundled example".</div>';return;}
+  const seq=traceData.sequence||[],segs=traceData.segments||[],bridges=traceData.bridges||[],unk=traceData.unknown_resolutions||[];
+  const segOf=i=>segs.findIndex(s=>s.slots.includes(i));
+  let html=`<div class="sec"><span>${traceData.input?.title||'Story trace'}</span><span>${seq.length} beats</span></div>`;
+  html+=`<div style="padding:2px 10px 10px;line-height:2.2">`;
+  seq.forEach((s,i)=>{
+    const known=s.status==='known';
+    const segIdx=segOf(i);
+    const hue=segIdx<0?'var(--faint)':['#37d093','#5aa9ff','#f0b429','#c9a4ff','#ff7ac2'][segIdx%5];
+    html+=`<span style="display:inline-block;margin:2px 4px 2px 0;padding:3px 9px;border-radius:12px;font-size:11px;
+      border:1px ${known?'solid':'dashed'} ${hue};color:${known?'var(--ink)':hue}">${known?(s.he||s.phrase||s.id||'?'):'?'}</span>`;
+  });
+  html+=`</div>`;
+  html+=`<div class="sec"><span>Segments</span><span>${segs.length}</span></div>`;
+  segs.forEach((seg,i)=>{
+    const home=seg.project?.home;
+    html+=`<div class="item" data-seg="${i}"><span class="he">Segment ${i+1}${traceSegIdx===i?' ●':''}</span>
+      <span class="en">LM ${home?home.replace(':',' · '):'cross-Torah'} · ${seg.ids.length} concepts</span>
+      <span class="dg">${(seg.project?.cost||0).toFixed(2)}</span></div>`;
+  });
+  if(bridges.length){
+    html+=`<div class="sec"><span>Bridges</span><span>${bridges.length}</span></div>`;
+    bridges.forEach(b=>{html+=`<div class="item" style="cursor:default"><span class="en">${b.note}</span><span class="w">+${b.penalty.toFixed(2)}</span></div>`;});
+  }
+  if(unk.length){
+    html+=`<div class="sec"><span>Unresolved slots</span><span>${unk.length}</span></div>`;
+    unk.forEach((u,i)=>{const an=byId[u.anchor]||{};
+      html+=`<div class="item" data-unk="${i}"><span class="he">?</span>
+        <span class="en">${u.direction==='prior'?'what precedes':'what follows'} ${an.he||u.anchor}</span></div>`;});
+  }
+  html+=`<div class="item" data-narr="1"><span class="he">📖 full narrative</span></div>`;
+  L.innerHTML=html;
+  L.querySelectorAll('[data-seg]').forEach(el=>el.onclick=()=>selectTraceSegment(+el.dataset.seg));
+  L.querySelectorAll('[data-unk]').forEach(el=>el.onclick=()=>showUnknownDetail(+el.dataset.unk));
+  L.querySelectorAll('[data-narr]').forEach(el=>el.onclick=()=>showTraceOverview());
+}
+function selectTraceSegment(i){
+  if(!traceData)return;
+  traceSegIdx=i;
+  const seg=traceData.segments[i];
+  runProjectFor(seg.ids.slice());
+  const D=$('detail'),note=(traceData.narrative_by_segment||[])[i]||'';
+  D.innerHTML=`<div class="dhead" style="border-bottom:2px solid var(--accent)">
+     <div class="meta" style="color:var(--dim)">Story trace · segment ${i+1} of ${traceData.segments.length}</div>
+     ${note?`<div class="en" style="margin-top:6px">${note}</div>`:''}</div>`+D.innerHTML;
+  renderTraceList();
+}
+function showTraceOverview(){
+  if(!traceData)return;
+  traceSegIdx=null; view={edges:[],nodes:[],path:null,center:null}; sim={}; resize(); redraw(); drawCrumbs();
+  const D=$('detail'),inp=traceData.input||{};
+  D.innerHTML=`<div class="dhead"><div class="he" style="font-size:20px">${inp.title||'Story trace'}</div>
+      <div class="meta">${inp.type||''}</div></div>
+    <div class="grp"><h3>Input</h3><div class="en" style="line-height:1.6">${(inp.text_summary||'').replace(/\n/g,'<br>')}</div></div>
+    ${traceData.process_notes?`<div class="grp"><h3>The AI's process</h3><div class="en" style="line-height:1.7">${traceData.process_notes.replace(/\n/g,'<br>')}</div></div>`:''}
+    <div class="grp"><h3>Elaboration</h3><div class="en" style="line-height:1.8">${(traceData.narrative||'').replace(/\n/g,'<br>')}</div></div>`;
+  D.scrollTop=0;
+  renderTraceList();
+}
+function showUnknownDetail(i){
+  if(!traceData)return;
+  const u=traceData.unknown_resolutions[i],D=$('detail'),an=byId[u.anchor]||{};
+  let html=`<div class="dhead"><div class="he" style="font-size:20px">${u.direction==='prior'?'? → ':''}${an.he||u.anchor}${u.direction==='next'?' → ?':''}</div>
+    <div class="meta">unresolved slot · ranked candidates from LM ${u.home||'—'} — attested edges near the anchor, never invented</div></div>`;
+  (u.candidates||[]).forEach(c=>{
+    html+=`<div class="conn open" data-go="${c.id}" style="border-left:3px solid ${c.in_home?'var(--eitza)':'var(--faint)'}">
+      <div class="row"><span class="he">${c.he||''}</span><span class="w">${c.in_home?'in teaching':'other teaching'}</span></div>
+      <div class="en">${c.gloss||''}</div>
+      ${c.ref&&c.ref.length?`<div class="rf">LM ${c.ref.slice(0,4).map(r=>r.replace(':',' · ')).join(', ')}</div>`:''}
+      ${c.proof?`<div class="proof" style="display:block">${c.proof}…</div>`:''}</div>`;
+  });
+  D.innerHTML=html;D.scrollTop=0;
+  D.querySelectorAll('.conn[data-go]').forEach(c=>c.onclick=()=>exploreConcept(c.dataset.go));
+}
 function layoutProject(res){
   resize();const[W,H]=stageWH();sim={};const chain=res.chain,n=chain.length,padX=W*0.12,gap=(W-2*padX)/Math.max(1,n-1);
-  chain.forEach((id,i)=>{sim[id]={x:padX+gap*i,y:H*0.5,id,fixed:true};});
-  // place intermediate reframe nodes between anchors
-  res.links.forEach(([c,ns],li)=>{const x0=sim[chain[li]].x,x1=sim[chain[li+1]].x;
-    ns.forEach((id,k)=>{if(!sim[id])sim[id]={x:x0+(x1-x0)*(k/(ns.length-1||1)),y:H*0.5+40*Math.sin(k+li),id};});});
+  const spineY=H*0.70,topY=H*0.18;                              // picks up top, causal chain along the bottom
+  chain.forEach((id,i)=>{sim[id]={x:padX+gap*i,y:spineY,id,fixed:true};});
+  // bridge nodes between anchors, on the spine (slight wiggle so they read distinctly)
+  res.links.forEach((l,li)=>{const ns=(l.nodes||[]).slice(1,-1);const x0=sim[chain[li]].x,x1=sim[chain[li+1]].x;
+    ns.forEach((id,k)=>{if(!sim[id])sim[id]={x:x0+(x1-x0)*((k+1)/(ns.length+1)),y:spineY-30*(1+(k%2)),id};});});
+  // each stage's mapping: top pick node, then aspect intermediates strung down to the anchor
+  (view.mapPaths||[]).forEach(mp=>{const i=mp.idx-1;const a=sim[chain[i]];const ax=a?a.x:padX+gap*i;
+    sim[mp.seq[0]]={x:ax,y:topY,id:mp.seq[0]};                  // top pick node
+    const mids=mp.seq.slice(1,-1);                              // aspect intermediates (anchor already placed)
+    mids.forEach((id,k)=>{sim[id]={x:ax+(k%2?24:-24),y:topY+((a?a.y:spineY)-topY)*((k+1)/(mids.length+1)),id};});});
   redraw();
+}
+// a short English name pulled from the gloss: the name sits before the em-dash; drop parenthetical transliterations
+function shortEn(id){
+  const g=(byId[id]&&byId[id].gloss)||'';
+  if(!g||g[0]==='[')return (id||'').replace('c:','').replace(/-/g,' ');   // missing/blocked gloss → readable slug
+  const strip=t=>t.replace(/\s*\([^)]*\)/g,'').replace(/\s+/g,' ').trim(); // remove "(ta'anit)" style parentheticals
+  let s=strip(g.split(/\s[—–-]\s/)[0]);                                    // text before the em/en dash = the name
+  if(!s||s.length>46)s=strip(g.split(/[;,]/)[0]);                          // fallback: first clause
+  return s.length>46?s.slice(0,46).replace(/\s\S*$/,'')+'…':s;             // cap on a word boundary
+}
+function cLbl(id){return `<b style="font-family:var(--hebrew);direction:rtl">${(byId[id]&&byId[id].he)||id}</b> <span style="color:var(--faint)">(${shortEn(id)})</span>`;}
+const ORD=['first','second','third','fourth','fifth','sixth','seventh'];
+function mapDesc(x,a,home){if(x===a)return 'it appears here directly';const ap=aspectPath(x,a,home);
+  if(ap&&ap.length)return `through ${ap.length} aspect-link${ap.length!==1?'s':''}`;return 'by shared meaning (a semantic match, not a graph path)';}
+function projectNarrative(picks,res){
+  const teach=res.home?('לקוטי מוהר"ן '+res.home.replace(':',' · ')):'a cross-teaching chain';
+  let n=`<div class="grp"><h3>In plain words</h3><div class="en" style="line-height:1.8;font-size:12.5px;color:var(--ink)">`;
+  n+=`This chain lives inside <b>${teach}</b>${res.home?' — a single teaching, so each cause-and-effect step is near-free.':'.'}<br><br>`;
+  n+=`You started with ${cLbl(picks[0])}. `;
+  n+=(picks[0]===res.chain[0])?`It appears in this teaching directly. `
+     :`It maps onto ${cLbl(res.chain[0])} ${mapDesc(picks[0],res.chain[0],res.home)} <span style="color:var(--faint)">(mapping cost ${(res.pcosts[0]||0).toFixed(2)})</span>. `;
+  for(let i=0;i<res.links.length;i++){
+    const hops=res.links[i].hops||[];
+    let s=cLbl(hops.length?hops[0].from:res.chain[i]);
+    hops.forEach((h,k)=>{const verb=h.kind==='cause'?'leads to':'is reframed as';s+=(k===0?' ':', which ')+verb+' '+cLbl(h.to);});
+    n+=`<br><br>From there the teaching's own logic runs: ${s}. `;
+    const np=picks[i+1];
+    n+=`That is where your ${ORD[i+1]||('#'+(i+2))} concept, ${cLbl(np)}, lands`;
+    n+=(np===res.chain[i+1])?' (it appears here directly).':` — mapped ${mapDesc(np,res.chain[i+1],res.home)} <span style="color:var(--faint)">(mapping cost ${(res.pcosts[i+1]||0).toFixed(2)})</span>.`;
+  }
+  n+=`<br><br><span style="color:var(--faint)">Total weight ${res.cost.toFixed(2)} — lower means a tighter, more faithful fit.</span></div></div>`;
+  return n;
 }
 function drawProjectDetail(picks,res){
   const D=$('detail');
+  const linkSum=res.links.reduce((s,l)=>s+l.cost,0),parSum=(res.pcosts||[]).reduce((s,x)=>s+x,0);
   let html=`<div class="dhead"><div class="he" style="font-size:20px">${res.home?'לקוטי מוהר"ן '+res.home.replace(':',' · '):'Cross-Torah projection'}</div>
-    <div class="meta">${res.chain.length}-concept projection · weight ${res.cost.toFixed(2)} ${res.home?'· stays in one teaching':'· crosses teachings'}</div></div>`;
-  html+=`<div class="grp"><h3>Your concepts → parallels in the text</h3>`;
-  res.chain.forEach((cid,i)=>{const o=byId[cid],p=byId[picks[i]],same=picks[i]===cid;
+    <div class="meta">${picks.length} concepts → a ${res.home?'single-teaching':'cross-teaching'} cause-effect chain</div>
+    <div class="meta" style="margin-top:8px;line-height:1.7">
+      <b>Total weight ${res.cost.toFixed(2)}</b> &nbsp;=&nbsp; parallels ${parSum.toFixed(2)} + hops ${linkSum.toFixed(2)}<br>
+      <span style="color:var(--faint)">lower = better · same-teaching hop ≈ 0.12 (near-free) · cross-teaching hop ≥ 1.6</span></div></div>`;
+  // plain-English walkthrough first — the story before the mechanics
+  html+=projectNarrative(picks,res);
+  // legend of node roles
+  html+=`<div class="grp"><h3>How to read this</h3><div class="en" style="line-height:1.6">
+    <span style="color:#37b3a4">●</span> <b>your picks</b> (top row)&nbsp;·&nbsp;
+    <span style="color:var(--accent)">●</span> <b>anchors</b> they map onto &nbsp;·&nbsp;
+    <span style="color:var(--path)">●</span> <b>bridges</b> linking the anchors causally.<br>
+    <span style="color:#8a7bd8">- -</span> dashed = the projection mapping (∥ + cost) &nbsp;·&nbsp; <span style="color:var(--eitza)">→</span> solid = a causal hop (+ cost).<br>
+    ${picks.length} picks map onto ${res.chain.length} anchors, joined by ${new Set(res.links.flatMap(l=>(l.hops||[]).map(h=>h.to)).concat(res.chain)).size - res.chain.length} bridge concepts.</div></div>`;
+  res.chain.forEach((cid,i)=>{
+    const o=byId[cid],p=byId[picks[i]],same=picks[i]===cid,pc=(res.pcosts||[])[i]||0;
+    html+=`<div class="grp"><h3><span style="color:var(--accent);font-size:13px">${i+1}</span> map your pick onto the teaching</h3>`;
     html+=`<div class="conn" data-go="${cid}">
-      <div class="row"><span class="he" style="color:var(--accent)">${p.he||''}</span>
-        <span class="arrowlbl" style="margin:0 6px">${same?'is in this teaching':'∥ parallels →'}</span>
-        ${same?'':`<span class="he">${o.he||''}</span>`}</div>
-      <div class="en">${o.gloss||''}</div>`;
-    if(i<res.links.length){const [c,ns]=res.links[i];
-      const chainHe=ns.map(x=>`<span class="pathlnk" data-go="${x}" style="cursor:pointer;border-bottom:1px solid var(--line2)">${byId[x].he}</span>`).join(' <span class="op" style="color:var(--faint)">→</span> ');
-      html+=`<div class="rf" style="color:var(--eitza);margin-top:7px;direction:rtl">⟶ causes ${c<0.5?'(same teaching, near-free)':'(cost '+c.toFixed(2)+')'}:<br>${chainHe}</div>`;}
+      <div class="row"><span class="he" style="color:#37b3a4">${p.he||''}</span>
+        <span class="arrowlbl" style="margin:0 6px">${same?'✓ appears in this teaching directly (cost 0)':'∥ maps onto → '}</span>
+        ${same?'':`<span class="he" style="color:var(--accent)">${o.he||''}</span> <span class="w">total ∥ ${pc.toFixed(2)}</span>`}</div>
+      <div class="en">${o.gloss||''}</div></div>`;
+    if(!same){const aps=aspectPath(picks[i],cid,res.home);
+      if(aps&&aps.length){
+        html+=`<div style="margin:4px 0 2px;font-size:11px;color:var(--bechina)">∥ mapping path &nbsp;·&nbsp; ${aps.length} aspect-link${aps.length!==1?'s':''} — every step from ${p.he||''} to ${o.he||''}</div>`;
+        aps.forEach(h=>{const inHome=(h.e.ref||[]).includes(res.home);
+          html+=`<div class="conn open" style="border-left:3px solid var(--bechina)">
+            <div class="row" style="direction:rtl"><span class="he pathlnk" data-go="${h.from}">${byId[h.from].he}</span>
+              <span class="op" style="color:var(--bechina);direction:ltr;margin:0 4px">≈ aspect ≈</span>
+              <span class="he pathlnk" data-go="${h.to}">${byId[h.to].he}</span></div>
+            <div class="rf">bechina (shared aspect)${inHome?' · in LM '+res.home.replace(':','·'):(h.e.ref&&h.e.ref.length?' · '+h.e.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):'')}</div>
+            ${h.e.p?`<div class="proof" style="display:block">${h.e.p}…</div>`:'<div class="rf" style="color:var(--faint)">(no proof quote recorded)</div>'}</div>`;});
+      } else {const terms=sharedTerms(picks[i],cid,8);
+        html+=`<div class="conn open" style="border-left:3px solid var(--faint)">
+          <div class="rf" style="color:var(--dim)">No aspect-edge path in the graph between these two — they were matched by <b>shared meaning</b> (similarity of the two descriptions). This is the one soft, non-derived step; judge it yourself:</div>
+          ${terms.length?`<div class="proof" style="display:block">shared terms: ${terms.join(' · ')}</div>`:'<div class="rf" style="color:var(--faint)">(no strong shared terms)</div>'}</div>`;}
+    }
+    if(i<res.links.length){const l=res.links[i],hops=l.hops||[];
+      html+=`<div style="margin:4px 0 2px;font-size:11px;color:var(--eitza)">⟶ causal path to concept ${i+2} &nbsp;·&nbsp; ${hops.length} hop${hops.length!==1?'s':''} &nbsp;·&nbsp; cost ${l.cost.toFixed(2)}</div>`;
+      hops.forEach(h=>{const col=h.kind==='cause'?'var(--eitza)':'var(--bechina)';
+        const inHome=(h.e.ref||[]).includes(res.home);
+        html+=`<div class="conn open" style="border-left:3px solid ${col}">
+          <div class="row" style="direction:rtl"><span class="he pathlnk" data-go="${h.from}">${byId[h.from].he}</span>
+            <span class="op" style="color:${col};direction:ltr;margin:0 4px">${h.kind==='cause'?'—causes→':'≈aspect≈'}</span>
+            <span class="he pathlnk" data-go="${h.to}">${byId[h.to].he}</span>
+            <span class="w" style="direction:ltr">${h.hc.toFixed(2)}</span></div>
+          <div class="rf">${h.kind==='cause'?'eitza (cause→effect)':'bechina (reframe)'} · ${inHome?'in LM '+res.home.replace(':','·')+' — near-free':'crosses teaching — weighty'}${h.e.ref&&h.e.ref.length?' · '+h.e.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):''}</div>
+          ${h.e.p?`<div class="proof" style="display:block">${h.e.p}…</div>`:'<div class="rf" style="color:var(--faint)">(no proof quote recorded for this edge)</div>'}</div>`;});
+    }
     html+=`</div>`;});
-  html+=`</div>`;
   D.innerHTML=html;D.scrollTop=0;
-  D.querySelectorAll('.conn').forEach(c=>c.onclick=ev=>{if(ev.target.classList.contains('pathlnk'))return;setMode('explore');go(c.dataset.go);});
-  D.querySelectorAll('.pathlnk').forEach(el=>el.onclick=()=>{setMode('explore');go(el.dataset.go);});
+  D.querySelectorAll('.conn[data-go]').forEach(c=>c.onclick=ev=>{if(ev.target.classList.contains('pathlnk'))return;exploreConcept(c.dataset.go);});
+  D.querySelectorAll('.pathlnk').forEach(el=>el.onclick=ev=>{ev.stopPropagation();exploreConcept(el.dataset.go);});
 }
 // weighted shortest path (cost = 1/weight so stronger, better-attested links are "closer")
 function runPath(){
@@ -496,23 +746,53 @@ function redraw(){
   const pathEdge=new Set((view.path?view.edges:[]).map(e=>e.s+'|'+e.t+'|'+e.ty));
   (view.edges||[]).forEach(e=>{const A=sim[e.s],B=sim[e.t];if(!A||!B)return;
     const onPath=pathEdge.has(e.s+'|'+e.t+'|'+e.ty);
-    ctx.strokeStyle=onPath?'#ff7ac2':(TYCOL[e.ty]||'#667');
+    ctx.strokeStyle=onPath?'#ff7ac2':(e.pol==='harms'?'#ff5d5d':(TYCOL[e.ty]||'#667'));
     ctx.globalAlpha=hover&&hover!==e.s&&hover!==e.t?0.12:(onPath?0.95:0.5);
     ctx.lineWidth=onPath?3.5:Math.min(5,1+Math.log2(e.w+1));
+    if(e.via==='absence')ctx.setLineDash([4,3]);
     ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.stroke();
+    ctx.setLineDash([]);
     if(e.ty==='eitza'){drawArrow(A,B,onPath);}
+    // hop price label (projection mode)
+    if(view.hopCostOf){const hc=view.hopCostOf[e.s+'>'+e.t]??view.hopCostOf[e.t+'>'+e.s];
+      if(hc!==undefined){ctx.globalAlpha=1;ctx.fillStyle='#0b0f14';const mx=(A.x+B.x)/2,my=(A.y+B.y)/2;
+        ctx.font='10px sans-serif';const t=hc.toFixed(2);const w=ctx.measureText(t).width+6;
+        ctx.fillRect(mx-w/2,my-7,w,14);ctx.fillStyle=hc<0.5?'#37d093':'#f0b429';ctx.textAlign='center';ctx.fillText(t,mx,my+3);}}
   });
   ctx.globalAlpha=1;
-  Object.values(sim).forEach(s=>{const n=byId[s.id]||{};const isC=s.id===view.center;
+  // projection mapping: dashed path from every top pick node down to its anchor, through aspect waypoints
+  if(view.mapPaths){view.mapPaths.forEach(mp=>{const seq=mp.seq;const info=view.mapInfo[mp.topId]||{};
+    const dim=hover&&!seq.includes(hover);
+    ctx.save();ctx.setLineDash([5,5]);ctx.strokeStyle=info.kind==='shared'?'#7d8796':'#8a7bd8';
+    ctx.globalAlpha=dim?0.13:0.85;ctx.lineWidth=2;
+    let P=sim[seq[0]];ctx.beginPath();if(P)ctx.moveTo(P.x,P.y);
+    for(let k=1;k<seq.length;k++){const Q=sim[seq[k]];if(Q&&P)ctx.lineTo(Q.x,Q.y);P=Q||P;}
+    ctx.stroke();ctx.restore();ctx.globalAlpha=1;
+    const A=sim[seq[0]],B=sim[seq[seq.length-1]];if(!A||!B)return;
+    const mx=(A.x+B.x)/2,my=(A.y+B.y)/2;
+    const t=info.kind==='self'?'appears here':info.kind==='shared'?('shared meaning · '+(info.pcost||0).toFixed(2))
+            :(info.nhops+' aspect'+(info.nhops>1?'s':'')+' · '+(info.pcost||0).toFixed(2));
+    ctx.font='10px sans-serif';const w=ctx.measureText(t).width+8;
+    ctx.fillStyle='#0b0f14';ctx.fillRect(mx-w/2,my-7,w,14);
+    ctx.fillStyle=info.kind==='shared'?'#aab3c0':'#b9a8ff';ctx.textAlign='center';ctx.fillText(t,mx,my+3);});}
+  ctx.globalAlpha=1;
+  const anchors=view.anchors,aidx=view.anchorIdx||{},mapNodes=view.mapNodes,realOf=view.realOf||{},topIdx={};
+  (view.topNodes||[]).forEach(t=>topIdx[t.id]=t.idx);
+  Object.values(sim).forEach(s=>{const realId=realOf[s.id]||s.id;const n=byId[realId]||{};
+    const isC=s.id===view.center,isTop=topIdx[s.id]!==undefined,isAnchor=anchors&&anchors.has(s.id),
+      isMap=mapNodes&&mapNodes.has(s.id);
+    const isBridge=view.mapPaths&&!isTop&&!isAnchor&&!isMap&&!isC;   // causal waypoint on the spine
     const onP=pathSet&&pathSet.has(s.id),isFoci=view.twoFoci&&view.twoFoci.includes(s.id);
-    const r=nodeR({id:s.id});
-    ctx.beginPath();ctx.arc(s.x,s.y,isC||isFoci?14:r,0,7);
-    ctx.fillStyle=isC?'#c9a4ff':onP?'#ff7ac2':isFoci?'#c9a4ff':(n.kind==='statement'?'#3a4553':'#2f6fb3');
+    const big=isC||isFoci||isAnchor||isTop,r=big?14:(isBridge?10:isMap?9:nodeR({id:s.id}));
+    ctx.beginPath();ctx.arc(s.x,s.y,r,0,7);
+    ctx.fillStyle=isTop?'#37b3a4':isC?'#c9a4ff':isAnchor?'#c9a4ff':isBridge?'#ff7ac2':isMap?'#8a7bd8':onP?'#ff7ac2':isFoci?'#c9a4ff':(n.kind==='statement'?'#3a4553':'#2f6fb3');
     ctx.fill();
-    if(isC||hover===s.id||isFoci){ctx.lineWidth=2;ctx.strokeStyle='#fff';ctx.stroke();}
-    ctx.fillStyle=isC||isFoci?'#fff':'#c8d3df';ctx.textAlign='center';
-    ctx.font=(isC?'600 18':'13')+'px "Frank Ruhl Libre",serif';
-    ctx.fillText((n.he||'').slice(0,16),s.x,s.y-(isC||isFoci?18:r)-6);
+    if(big||hover===s.id){ctx.lineWidth=2;ctx.strokeStyle='#fff';ctx.stroke();}
+    const badge=isTop?topIdx[s.id]:(isAnchor?aidx[s.id]:null);
+    if(badge){ctx.fillStyle=isTop?'#04201d':'#12131a';ctx.font='700 12px sans-serif';ctx.textAlign='center';ctx.fillText(badge,s.x,s.y+4);}
+    ctx.fillStyle=big?'#fff':(onP?'#ffc7e6':'#c8d3df');ctx.textAlign='center';
+    ctx.font=(isC?'600 18':big?'600 14':'13')+'px "Frank Ruhl Libre",serif';
+    ctx.fillText((n.he||'').slice(0,16)+(isTop?' (your pick)':''),s.x,s.y-r-6);
   });
 }
 function drawArrow(A,B,hot){const ang=Math.atan2(B.y-A.y,B.x-A.x),r=(byId[B.id]?12:8),
@@ -525,15 +805,23 @@ function drawArrow(A,B,hot){const ang=Math.atan2(B.y-A.y,B.x-A.x),r=(byId[B.id]?
 cv.addEventListener('mousemove',ev=>{const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
   let hit=null;Object.values(sim).forEach(s=>{if(Math.hypot(s.x-mx,s.y-my)<nodeR({id:s.id})+5)hit=s;});
   hover=hit?hit.id:null;
-  if(hit){const n=byId[hit.id]||{};tip.style.display='block';tip.style.left=Math.min(mx+14,r.width-310)+'px';
+  if(hit){const rid=(view.realOf&&view.realOf[hit.id])||hit.id;const n=byId[rid]||{};tip.style.display='block';tip.style.left=Math.min(mx+14,r.width-310)+'px';
     tip.style.top=(my+14)+'px';tip.innerHTML=`<div class="he">${n.he||''}</div><div class="en">${n.gloss||'—'}</div>`;}
   else tip.style.display='none';
   cv.style.cursor=hit?'pointer':'default';redraw();});
 cv.addEventListener('click',ev=>{const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
   let hit=null;Object.values(sim).forEach(s=>{if(Math.hypot(s.x-mx,s.y-my)<nodeR({id:s.id})+5)hit=s;});
-  if(hit){ if(['explore','aspects','advice','effects'].includes(mode))go(hit.id);
-           else drawDetail(hit.id); }});
+  if(hit){const rid=(view.realOf&&view.realOf[hit.id])||hit.id;
+           if(mode==='project'||mode==='trace')exploreConcept(rid);
+           else if(['explore','aspects','advice','effects'].includes(mode))go(rid);
+           else drawDetail(rid); }});
 function drawCrumbs(){const c=$('crumbs');c.innerHTML='';
+  // a standing return-ticket to the last projection, so exploring a concept never strands the user
+  if(savedProjection&&mode!=='project'&&mode!=='trace'){const b=document.createElement('div');b.className='crumb';
+    b.style.color='#12131a';b.style.background='var(--accent)';b.style.borderColor='var(--accent)';b.style.fontWeight='600';
+    b.textContent=savedProjection.fromTrace?'↩ back to story trace':'↩ back to projection';
+    b.onclick=()=>{if(savedProjection.fromTrace){setMode('trace');selectTraceSegment(savedProjection.fromTrace.segIdx);}
+      else{setMode('project');runProject();}};c.appendChild(b);}
   hist.slice(-6).forEach(h=>{const b=document.createElement('div');b.className='crumb';b.textContent=byId[h].he||h;
     b.onclick=()=>{focus=h;hist=hist.slice(0,hist.indexOf(h));if(['explore','aspects','advice','effects'].includes(mode))go(h);else drawDetail(h);};c.appendChild(b);});
   if(focus){const b=document.createElement('div');b.className='crumb';b.style.color='var(--ink)';b.style.borderColor='var(--accent)';b.textContent=byId[focus].he||focus;c.appendChild(b);}}
@@ -556,8 +844,13 @@ function drawDetail(id){
    .forEach(([ty,label,col])=>{const outs=g[ty].out,ins=g[ty].in;if(!outs.length&&!ins.length)return;
     html+=`<div class="grp"><h3><i style="background:${col}"></i>${label} · ${outs.length+ins.length}</h3>`;
     const rows=(arr,dir)=>arr.map(a=>{const o=byId[a.o]||{};
-      const verb=ty==='eitza'?(dir==='out'?'leads to →':'← comes from'):(dir==='out'?'aspect of →':'← has aspect');
-      return `<div class="conn" data-go="${o.id}"><div class="row"><span class="he">${o.he||''}</span><span class="w">×${a.e.w}</span></div>
+      const harms=a.e.pol==='harms',lack=a.e.via==='absence';
+      const verb=ty==='eitza'?(harms?(lack?(dir==='out'?'its lack brings →':'← comes from lack of')
+                                          :(dir==='out'?'brings (harm) →':'← harmed by'))
+                                    :(dir==='out'?'leads to →':'← comes from'))
+                             :(dir==='out'?'aspect of →':'← has aspect');
+      const badge=harms?`<span class="polh">${lack?'harms · פגם':'harms'}</span>`:'';
+      return `<div class="conn" data-go="${o.id}"><div class="row"><span class="he">${o.he||''}</span>${badge}<span class="w">×${a.e.w}</span></div>
         <div class="en"><span class="arrowlbl">${verb}</span> ${o.gloss||''}</div>
         ${a.e.ref&&a.e.ref.length?`<div class="rf">LM ${a.e.ref.slice(0,4).map(r=>r.replace(':','·')).join(', ')}</div>`:''}
         ${a.e.p?`<div class="proof">${a.e.p}…</div>`:''}</div>`;}).join('');
