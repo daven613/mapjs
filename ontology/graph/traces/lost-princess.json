@@ -1,0 +1,623 @@
+{
+  "input": {
+    "title": "The Lost Princess (Ma'aseh Me'Aveidat Bat Melech) — first of Rebbe Nachman's Sipurei Ma'asiyot",
+    "type": "story",
+    "text_summary": "A king has six sons and one beloved daughter. In a moment of anger he cries out, \"may the Evil One take you\" — and that very night she is gone, swallowed into exile. The king regrets bitterly and sends his most faithful minister to find and redeem her. The minister searches for years, refusing all comfort, sustained only by his faith that she can still be found. Along the way he gives charity, prays, and follows fading hints toward her. The tale (as Rebbe Nachman told it) breaks off before the ending — the minister has not yet redeemed her when the story stops, with the promise that the final redemption will unfold the same way."
+  },
+  "sequence": [
+    {
+      "slot": 0,
+      "status": "known",
+      "id": "c:king-sovereign-ruler",
+      "he": "מלך",
+      "phrase": "a king had a beloved, only daughter"
+    },
+    {
+      "slot": 1,
+      "status": "known",
+      "id": "c:forgetter-called-loses",
+      "he": "אבדה",
+      "phrase": "in a moment of anger he banishes her — she becomes an aveidah, a lost thing, swallowed into a place with no way back"
+    },
+    {
+      "slot": 2,
+      "status": "known",
+      "id": "c:dim'ot",
+      "he": "דמעות",
+      "phrase": "the one sent to find her weeps through the long search"
+    },
+    {
+      "slot": 3,
+      "status": "known",
+      "id": "c:emunah-2",
+      "he": "אמונה",
+      "phrase": "he is sustained only by unwavering faith that she can still be found"
+    },
+    {
+      "slot": 4,
+      "status": "known",
+      "id": "c:mitzvah-charity",
+      "he": "צדקה",
+      "phrase": "he gives charity along the way, as the seeking itself becomes an act of kindness"
+    },
+    {
+      "slot": 5,
+      "status": "known",
+      "id": "c:tefillah-2",
+      "he": "תפלה",
+      "phrase": "the yearning is poured out as prayer"
+    },
+    {
+      "slot": 6,
+      "status": "known",
+      "id": "c:ge-ulah-redemption",
+      "he": "גאולה",
+      "phrase": "the tale reaches toward redemption — and there the storyteller breaks off, unresolved"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "slots": [
+        0,
+        1
+      ],
+      "ids": [
+        "c:king-sovereign-ruler",
+        "c:forgetter-called-loses"
+      ],
+      "project": {
+        "cost": 1.12,
+        "home": "I:10",
+        "chain": [
+          {
+            "id": "c:like-moses-joseph",
+            "he": "צדיק",
+            "gloss": "the tzaddik (צַדִּיק) — the righteous person/saintly leader, guardian of the covenant (like Moses, Joseph); the noun 'righteous one,' not the abstract quality of righteousness (צֶדֶק)",
+            "kind": "concept",
+            "deg": 38,
+            "refs": [
+              "I:2",
+              "I:4",
+              "I:5",
+              "I:10",
+              "I:17",
+              "I:22",
+              "I:23",
+              "I:26",
+              "I:29",
+              "I:30",
+              "I:31",
+              "I:33",
+              "I:34",
+              "I:42",
+              "I:55",
+              "I:63",
+              "I:70",
+              "I:81",
+              "I:114",
+              "I:135",
+              "I:140",
+              "I:211",
+              "II:40",
+              "II:66",
+              "II:67"
+            ]
+          },
+          {
+            "id": "c:emunah-2",
+            "he": "אמונה",
+            "gloss": "Faith (emunah) — the noun אֱמוּנָה: belief/trust in God and His providence, the spiritual faculty of faith (identified in Likutey Moharan with prayer, malchut, the Land of Israel, Shabbat, and the rectified imagination); not אֻמָּנוּת (craft), אָמְנָה (pact), or אֹמְנָה (nurture/guardianship) as independent senses — even where the 'omen/nurturing' etymology (וַיְהִי אֹמֵן אֶת הֲדַסָּה) is cited, it is invoked as an aspect of emunah itself",
+            "kind": "concept",
+            "deg": 86,
+            "refs": [
+              "I:7",
+              "I:9",
+              "I:10",
+              "I:18",
+              "I:22",
+              "I:23",
+              "I:24",
+              "I:28",
+              "I:31",
+              "I:35",
+              "I:44",
+              "I:55",
+              "I:57",
+              "I:62",
+              "I:64",
+              "I:87",
+              "I:94",
+              "I:129",
+              "I:155",
+              "I:280",
+              "II:5",
+              "II:8",
+              "II:19",
+              "II:44",
+              "II:81",
+              "II:83",
+              "II:87"
+            ]
+          }
+        ],
+        "mappings": [
+          {
+            "pick": "c:king-sovereign-ruler",
+            "anchor": "c:like-moses-joseph",
+            "kind": "aspect",
+            "pcost": 0.2,
+            "hops": [
+              {
+                "from": "c:king-sovereign-ruler",
+                "to": "c:like-moses-joseph",
+                "proof": "וְזֶה פֵּרוּשׁ (יְשַׁעְיָה ל\"ג): \"מֶלֶךְ בְּיָפְיוֹ תֶּחֱזֶינָה עֵינֶיךָ\", הַיְנוּ כְּשֶׁתִּזְכֶּה לִרְאוֹת מֶלֶךְ בְּיָפְיוֹ, דְּהַיְנוּ הַצַּדִּיק בְּיָפְיוֹ וְתִפְאַרְתּוֹ, דְּהַיְנוּ בְּעֵת הַקִּבּוּץ, שֶׁאֲזַי הוּא יָפְיוֹ וְתִפְאַרְתּ",
+                "ref": [
+                  "II:40"
+                ]
+              }
+            ],
+            "shared_terms": []
+          },
+          {
+            "pick": "c:forgetter-called-loses",
+            "anchor": "c:emunah-2",
+            "kind": "aspect",
+            "pcost": 0.8,
+            "hops": [
+              {
+                "from": "c:forgetter-called-loses",
+                "to": "c:shikhchah",
+                "proof": "שִּׁכְחָה הִיא בְּחִינַת אֲבֵדָה, כְּמוֹ שֶׁקָּרְאוּ רַבּוֹתֵינוּ, זִכְרוֹנָם לִבְרָכָה, אֶת הַשּׁוֹכֵחַ אוֹבֵד, כְּמַאֲמָרָם, זִכְרוֹנָם לִבְרָכָה (אָבוֹת פֶּרֶק ה'): 'מָהִיר לִשְׁמֹעַ וּמָהִיר לְאַבֵּד' וְכוּ'",
+                "ref": [
+                  "I:188"
+                ]
+              },
+              {
+                "from": "c:shikhchah",
+                "to": "c:guf",
+                "proof": "וְגוּף וָנֶפֶשׁ, הֵם בְּחִינַת אָדָם וּבְהֵמָה, חֹמֶר וְצוּרָה, חָכְמָה וְסִכְלוּת, בְּחִינַת אוֹר וָחֹשֶׁךְ. כְּמוֹ שֶׁכָּתוּב (קֹהֶלֶת ב'): \"כְּיִתְרוֹן אוֹר מִן הַחֹשֶׁךְ\" וְכוּ', וּכְמוֹ שֶׁאָמְרוּ (רַבּוֹתֵינוּ, זִכְרוֹנָם לִבְרָכָה, ב",
+                "ref": [
+                  "I:37"
+                ]
+              },
+              {
+                "from": "c:guf",
+                "to": "c:eretz-yar'ah",
+                "proof": "אַרְעָא זֶה בְּחִינַת גּוּף, רְקִיעָא זֶה בְּחִינַת נְשָׁמָה, כְּמוֹ שֶׁכָּתוּב (תְּהִלִּים נ): \"יִקְרָא אֶל הַשָּׁמַיִם מֵעָל\" זֶה הַנְּשָׁמָה, \"וְאֶל הָאָרֶץ\" זֶה הַגּוּף (סַנְהֶדְרִין צא:).",
+                "ref": [
+                  "I:14"
+                ]
+              },
+              {
+                "from": "c:eretz-yar'ah",
+                "to": "c:emunah-2",
+                "proof": "אֶרֶץ הוּא בְחִינַת אֱמוּנָה, כְּמוֹ שֶׁכָּתוּב (תְּהִלִּים ל\"ז): \"שְׁכָן אֶרֶץ וּרְעֵה אֱמוּנָה\".",
+                "ref": [
+                  "I:129"
+                ]
+              }
+            ],
+            "shared_terms": []
+          }
+        ],
+        "links": [
+          {
+            "cost": 0.12,
+            "hops": [
+              {
+                "from": "c:like-moses-joseph",
+                "to": "c:emunah-2",
+                "kind": "cause",
+                "hc": 0.12,
+                "proof": "נִמְצָא, שֶׁעַל־יְדֵי הַצַּדִּיק, הַיְנוּ בְּחִינַת רוּחַ שֶׁבַּלֵּב, נִתְגַּלֶּה הֶאָרַת הַיָּדַיִם וְהָרַגְלַיִם, הַיְנוּ בְּחִינַת רִקּוּדִין וְהַמְחָאַת כַּף, וְנִתְבַּטֵּל הַגַּאֲוָה וְהַכְּפִירוֹת, וְנִתְרַבֶּה הָאֱמוּנָה, וְאָז נִתְק",
+                "ref": [
+                  "I:10"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "segment_index": 1,
+      "slots": [
+        2,
+        3
+      ],
+      "ids": [
+        "c:dim'ot",
+        "c:emunah-2"
+      ],
+      "project": {
+        "cost": 0.52,
+        "home": "I:7",
+        "chain": [
+          {
+            "id": "c:emunah",
+            "he": "ארץ ישראל",
+            "gloss": "Eretz Yisrael — the Land of Israel as a spiritual reality in Likutey Moharan: the locus and embodiment of faith (emunah), prayer, miracles, Divine providence (hashgachah) beyond nature, patience (erech apayim), and the totality of holiness; both the physical Holy Land one merits to reach and its mystical aspect (bechinat Eretz Yisrael)",
+            "kind": "concept",
+            "deg": 28,
+            "refs": [
+              "I:7",
+              "I:9",
+              "I:20",
+              "I:44",
+              "I:47",
+              "I:55",
+              "I:155",
+              "I:234",
+              "II:8"
+            ]
+          },
+          {
+            "id": "c:emunah-2",
+            "he": "אמונה",
+            "gloss": "Faith (emunah) — the noun אֱמוּנָה: belief/trust in God and His providence, the spiritual faculty of faith (identified in Likutey Moharan with prayer, malchut, the Land of Israel, Shabbat, and the rectified imagination); not אֻמָּנוּת (craft), אָמְנָה (pact), or אֹמְנָה (nurture/guardianship) as independent senses — even where the 'omen/nurturing' etymology (וַיְהִי אֹמֵן אֶת הֲדַסָּה) is cited, it is invoked as an aspect of emunah itself",
+            "kind": "concept",
+            "deg": 86,
+            "refs": [
+              "I:7",
+              "I:9",
+              "I:10",
+              "I:18",
+              "I:22",
+              "I:23",
+              "I:24",
+              "I:28",
+              "I:31",
+              "I:35",
+              "I:44",
+              "I:55",
+              "I:57",
+              "I:62",
+              "I:64",
+              "I:87",
+              "I:94",
+              "I:129",
+              "I:155",
+              "I:280",
+              "II:5",
+              "II:8",
+              "II:19",
+              "II:44",
+              "II:81",
+              "II:83",
+              "II:87"
+            ]
+          }
+        ],
+        "mappings": [
+          {
+            "pick": "c:dim'ot",
+            "anchor": "c:emunah",
+            "kind": "aspect",
+            "pcost": 0.4,
+            "hops": [
+              {
+                "from": "c:dim'ot",
+                "to": "c:hashgachah",
+                "proof": "דְּמָעוֹת הֵם בְּחִינוֹת הַשְׁגָּחָה, כְּמָה שֶׁאָמְרוּ רַבּוֹתֵינוּ, זִכְרוֹנָם לִבְרָכָה (שַׁבָּת קנא:): עַל פָּסוּק (קֹהֶלֶת י\"ב): \"וְשָׁבוּ הֶעָבִים אַחַר הַגָּשֶׁם\", 'זֶה הָרְאוּת שֶׁהוֹלֵךְ אַחַר הַבֶּכִי', נִמְצָא שֶׁהַדְּמָעוֹת הֵם ",
+                "ref": [
+                  "I:250"
+                ]
+              },
+              {
+                "from": "c:hashgachah",
+                "to": "c:emunah",
+                "proof": "חִדּוּשׁ הָעוֹלָם בִּבְחִינַת הָרֵאָה, זֶה בְּחִינַת (תְּהִלִּים ק\"ד): \"תְּשַׁלַּח רוּחֲךָ יִבָּרֵאוּן וּתְחַדֵּשׁ פְּנֵי אֲדָמָה\", בְּחִינַת הָרוּחַ שֶׁל כַּנְפֵי רֵאָה. וְהַחִדּוּשׁ הָעוֹלָם הוּא בִּבְחִינַת הַשְׁגָּחָה, בְּחִינַת אֶרֶץ י",
+                "ref": [
+                  "II:8"
+                ]
+              }
+            ],
+            "shared_terms": []
+          },
+          {
+            "pick": "c:emunah-2",
+            "anchor": "c:emunah-2",
+            "kind": "self",
+            "pcost": 0,
+            "hops": [],
+            "shared_terms": []
+          }
+        ],
+        "links": [
+          {
+            "cost": 0.12,
+            "hops": [
+              {
+                "from": "c:emunah",
+                "to": "c:emunah-2",
+                "kind": "cause",
+                "hc": 0.12,
+                "proof": "וְעִקַּר אֱמוּנָה, בְּחִינַת תְּפִלָּה, בְּחִינַת נִסִּים, אֵינוֹ אֶלָּא בְּאֶרֶץ־יִשְׂרָאֵל, כְּמוֹ שֶׁכָּתוּב (תְּהִלִּים ל\"ז): \"שְׁכָן אֶרֶץ וּרְעֵה אֱמוּנָה\". וְשָׁם עִקַּר עֲלִיּוֹת הַתְּפִלּוֹת, כְּמוֹ שֶׁכָּתוּב (בְּרֵאשִׁית כ\"ח): \"ו",
+                "ref": [
+                  "I:7"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "segment_index": 2,
+      "slots": [
+        4,
+        5,
+        6
+      ],
+      "ids": [
+        "c:mitzvah-charity",
+        "c:tefillah-2",
+        "c:ge-ulah-redemption"
+      ],
+      "project": {
+        "cost": 0.64,
+        "home": "I:7",
+        "chain": [
+          {
+            "id": "c:emet",
+            "he": "אמת",
+            "gloss": "Truth (emet) — the divine attribute and spiritual quality of truthfulness/veracity, the aspect of Jacob ('titen emet le-Yaakov'), opposed to falsehood (sheker), through which one attains faith, blessing, and God's indwelling presence",
+            "kind": "concept",
+            "deg": 38,
+            "refs": [
+              "I:7",
+              "I:9",
+              "I:23",
+              "I:47",
+              "I:51",
+              "I:54",
+              "I:66",
+              "I:86",
+              "I:92",
+              "I:155",
+              "I:251",
+              "II:2"
+            ]
+          },
+          {
+            "id": "c:emunah-2",
+            "he": "אמונה",
+            "gloss": "Faith (emunah) — the noun אֱמוּנָה: belief/trust in God and His providence, the spiritual faculty of faith (identified in Likutey Moharan with prayer, malchut, the Land of Israel, Shabbat, and the rectified imagination); not אֻמָּנוּת (craft), אָמְנָה (pact), or אֹמְנָה (nurture/guardianship) as independent senses — even where the 'omen/nurturing' etymology (וַיְהִי אֹמֵן אֶת הֲדַסָּה) is cited, it is invoked as an aspect of emunah itself",
+            "kind": "concept",
+            "deg": 86,
+            "refs": [
+              "I:7",
+              "I:9",
+              "I:10",
+              "I:18",
+              "I:22",
+              "I:23",
+              "I:24",
+              "I:28",
+              "I:31",
+              "I:35",
+              "I:44",
+              "I:55",
+              "I:57",
+              "I:62",
+              "I:64",
+              "I:87",
+              "I:94",
+              "I:129",
+              "I:155",
+              "I:280",
+              "II:5",
+              "II:8",
+              "II:19",
+              "II:44",
+              "II:81",
+              "II:83",
+              "II:87"
+            ]
+          },
+          {
+            "id": "c:ge-ulah-redemption",
+            "he": "גאולה",
+            "gloss": "Ge'ulah — the Redemption: the national-messianic deliverance of Israel from exile, brought about through repentance and faith (as in 'in Nissan they are destined to be redeemed')",
+            "kind": "concept",
+            "deg": 3,
+            "refs": [
+              "I:0",
+              "I:7",
+              "I:49"
+            ]
+          }
+        ],
+        "mappings": [
+          {
+            "pick": "c:mitzvah-charity",
+            "anchor": "c:emet",
+            "kind": "aspect",
+            "pcost": 0.2,
+            "hops": [
+              {
+                "from": "c:mitzvah-charity",
+                "to": "c:emet",
+                "proof": "צְדָקָה הוּא בְּחִינַת אֱמֶת",
+                "ref": [
+                  "I:251"
+                ]
+              }
+            ],
+            "shared_terms": []
+          },
+          {
+            "pick": "c:tefillah-2",
+            "anchor": "c:emunah-2",
+            "kind": "aspect",
+            "pcost": 0.2,
+            "hops": [
+              {
+                "from": "c:tefillah-2",
+                "to": "c:emunah-2",
+                "proof": "וֶאֱמוּנָה הוּא בְּחִינַת תְּפִלָּה, כְּמוֹ שֶׁכָּתוּב (שְׁמוֹת י\"ז): \"וַיְהִי יָדָיו אֱמוּנָה\", וְתַרְגּוּמוֹ: 'פְּרִישָׂן בִּצְלוֹ'.",
+                "ref": [
+                  "I:7",
+                  "II:83"
+                ]
+              }
+            ],
+            "shared_terms": []
+          },
+          {
+            "pick": "c:ge-ulah-redemption",
+            "anchor": "c:ge-ulah-redemption",
+            "kind": "self",
+            "pcost": 0,
+            "hops": [],
+            "shared_terms": []
+          }
+        ],
+        "links": [
+          {
+            "cost": 0.12,
+            "hops": [
+              {
+                "from": "c:emet",
+                "to": "c:emunah-2",
+                "kind": "cause",
+                "hc": 0.12,
+                "proof": "כִּי אֵין אֱמוּנָה בְּלֹא אֱמֶת, כַּמּוּבָא בַּזֹּהַר (בָּלָק קצ\"ח:): הַיְנוּ צֶדֶק הַיְנוּ אֱמוּנָה וְכוּ', [וּמַסִּיק שָׁם אֱמוּנָה אִתְקְרִיאַת כַּד אִתְחַבַּר בָּהּ אֱמֶת, נִמְצָא שֶׁעִקַּר אֱמוּנָה עַל־יְדֵי אֱמֶת] וֶאֱמֶת הוּא אוֹר הַ",
+                "ref": [
+                  "I:23",
+                  "I:7"
+                ]
+              }
+            ]
+          },
+          {
+            "cost": 0.12,
+            "hops": [
+              {
+                "from": "c:emunah-2",
+                "to": "c:ge-ulah-redemption",
+                "kind": "cause",
+                "hc": 0.12,
+                "proof": "וְשָׁמַעְתִּי בַּת־קוֹל שֶׁאוֹמֶרֶת, אוֹי לִי שֶׁנִּשְׁבַּעְתִּי. פֵּרֵשׁ רַבֵּנוּ שְׁמוּאֵל: עַל הַגָּלוּת, הַיְנוּ, עַל־יְדֵי צִיצִית יְכוֹלִין לָבוֹא לַעֲצַת צַדִּיקִים, לִבְחִינַת אֱמֶת; וְעַל־יְדֵי אֱמֶת בָּאִים לֶאֱמוּנָה כַּנַּ\"ל; וְ",
+                "ref": [
+                  "I:7"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "bridges": [
+    {
+      "from_segment": 0,
+      "to_segment": 1,
+      "from_id": "c:forgetter-called-loses",
+      "to_id": "c:dim'ot",
+      "penalty": 2.5,
+      "note": "segment 0 closes in LM I:10, segment 1 opens a new teaching (LM I:7) — a real jump between teachings, not a graph-attested hop"
+    },
+    {
+      "from_segment": 1,
+      "to_segment": 2,
+      "from_id": "c:emunah-2",
+      "to_id": "c:mitzvah-charity",
+      "penalty": 0.0,
+      "note": "both halves land in LM I:7 — split only by the 2-6 concept limit on a single projection call, not a real teaching change"
+    }
+  ],
+  "unknown_resolutions": [
+    {
+      "ok": true,
+      "anchor": "c:ge-ulah-redemption",
+      "home": "I:7",
+      "direction": "prior",
+      "candidates": [
+        {
+          "id": "c:emunah-2",
+          "he": "אמונה",
+          "gloss": "Faith (emunah) — the noun אֱמוּנָה: belief/trust in God and His providence, the spiritual faculty of faith (identified in Likutey Moharan with prayer, malchut, the Land of Israel, Shabbat, and the rectified imagination); not אֻמָּנוּת (craft), אָמְנָה (pact), or אֹמְנָה (nurture/guardianship) as independent senses — even where the 'omen/nurturing' etymology (וַיְהִי אֹמֵן אֶת הֲדַסָּה) is cited, it is invoked as an aspect of emunah itself",
+          "proof": "וְשָׁמַעְתִּי בַּת־קוֹל שֶׁאוֹמֶרֶת, אוֹי לִי שֶׁנִּשְׁבַּעְתִּי. פֵּרֵשׁ רַבֵּנוּ שְׁמוּאֵל: עַל הַגָּלוּת, הַיְנוּ, עַל־יְדֵי צִיצִית יְכוֹלִין לָבוֹא לַעֲצַת צַדִּיקִים, לִבְחִינַת אֱמֶת; וְעַל־יְדֵי אֱמֶת בָּאִים לֶאֱמוּנָה כַּנַּ\"ל; וְ",
+          "ref": [
+            "I:7"
+          ],
+          "in_home": true
+        },
+        {
+          "id": "c:displaced-sparks-letters",
+          "he": "תשובה",
+          "gloss": "Teshuvah — repentance: the spiritual act of returning to God from sin, restoring oneself (and the displaced sparks/letters) to their divine source; the penitential movement of 'returning to Hashem' (וְשַׁבְתָּ עַד ה' אֱלֹקֶיךָ). Not תשובה in the sense of a reply/answer to a question.",
+          "proof": "וְזֶה בְּחִינַת בְּרֵאשִׁית, בֵּי\"ת רֵאשִׁית, הַיְנוּ שְׁנֵי רֵאשִׁית. וְהֵם רֹאשׁ הַשָּׁנָה וְנִיסָן, שֶׁגַּם נִיסָן הוּא רֹאשׁ־הַשָּׁנָה. וְאִיתָא בַּתִּקּוּנִים (תִּקּוּן כ\"א מ\"ה.): 'וְהִיא נִקְרֵאת קַבָּלָה, כַּד אִיהִי בֵּין תְּרֵין דּ",
+          "ref": [
+            "I:49"
+          ],
+          "in_home": false
+        },
+        {
+          "id": "c:sefer-hazohar-book",
+          "he": "ספר הזהר",
+          "gloss": "Sefer HaZohar — the Book of the Zohar, the foundational kabbalistic work attributed to Rabbi Shimon bar Yochai, through which Torah will not be forgotten from Israel",
+          "proof": "רַבִּי שִׁמְעוֹן בֶּן יוֹחַאי. הִבְטִיחַ שֶׁלֹּא תִּשְׁתַּכַּח תּוֹרָה מִיִּשְֹרָאֵל עַל יָדוֹ. כַּמּוּבָא בְּדִבְרֵי רַבּוֹתֵינוּ, זִכְרוֹנָם לִבְרָכָה (שַׁבָּת קלח:): 'כְּשֶׁנִּכְנְסוּ רַבּוֹתֵינוּ לַכֶּרֶם בְּיַבְנֶה אָמְרוּ: עֲתִידָה תּ",
+          "ref": [
+            "I:0"
+          ],
+          "in_home": false
+        }
+      ],
+      "note": "ranked in-home first; these are attested eitza edges near the anchor, not invented",
+      "slot": null,
+      "label": "what could come before the reach toward redemption"
+    },
+    {
+      "ok": true,
+      "anchor": "c:emunah-2",
+      "home": "I:7",
+      "direction": "prior",
+      "candidates": [
+        {
+          "id": "c:emet",
+          "he": "אמת",
+          "gloss": "Truth (emet) — the divine attribute and spiritual quality of truthfulness/veracity, the aspect of Jacob ('titen emet le-Yaakov'), opposed to falsehood (sheker), through which one attains faith, blessing, and God's indwelling presence",
+          "proof": "כִּי אֵין אֱמוּנָה בְּלֹא אֱמֶת, כַּמּוּבָא בַּזֹּהַר (בָּלָק קצ\"ח:): הַיְנוּ צֶדֶק הַיְנוּ אֱמוּנָה וְכוּ', [וּמַסִּיק שָׁם אֱמוּנָה אִתְקְרִיאַת כַּד אִתְחַבַּר בָּהּ אֱמֶת, נִמְצָא שֶׁעִקַּר אֱמוּנָה עַל־יְדֵי אֱמֶת] וֶאֱמֶת הוּא אוֹר הַ",
+          "ref": [
+            "I:23",
+            "I:7"
+          ],
+          "in_home": true
+        },
+        {
+          "id": "c:emunah",
+          "he": "ארץ ישראל",
+          "gloss": "Eretz Yisrael — the Land of Israel as a spiritual reality in Likutey Moharan: the locus and embodiment of faith (emunah), prayer, miracles, Divine providence (hashgachah) beyond nature, patience (erech apayim), and the totality of holiness; both the physical Holy Land one merits to reach and its mystical aspect (bechinat Eretz Yisrael)",
+          "proof": "וְעִקַּר אֱמוּנָה, בְּחִינַת תְּפִלָּה, בְּחִינַת נִסִּים, אֵינוֹ אֶלָּא בְּאֶרֶץ־יִשְׂרָאֵל, כְּמוֹ שֶׁכָּתוּב (תְּהִלִּים ל\"ז): \"שְׁכָן אֶרֶץ וּרְעֵה אֱמוּנָה\". וְשָׁם עִקַּר עֲלִיּוֹת הַתְּפִלּוֹת, כְּמוֹ שֶׁכָּתוּב (בְּרֵאשִׁית כ\"ח): \"ו",
+          "ref": [
+            "I:7"
+          ],
+          "in_home": true
+        },
+        {
+          "id": "c:longings",
+          "he": "שאנו מבקשים ומתגעגעים לארץ־ישראל",
+          "gloss": "our seeking and yearning for Eretz Yisrael — the practice of praying for kisufin/ga'agu'im (longings) for the Land of Israel, a segulah against anger and sadness",
+          "proof": "וְצָרִיךְ כָּל אָדָם לְבַקֵּשׁ מֵהַשֵּׁם יִתְבָּרַךְ שֶׁיִּהְיֶה לוֹ כִּסּוּפִין וְגַעְגּוּעִים לְאֶרֶץ־ יִשְׂרָאֵל, וְגַם שֶׁיִּהְיֶה גַּעְגּוּעִים לְכָל הַצַּדִּיקִים לְאֶרֶץ־יִשְׂרָאֵל. וְהוּא סְגֻלָּה לְהַכַּעַס וְלָעַצְבוּת, כִּי 'כָּל",
+          "ref": [
+            "I:155"
+          ],
+          "in_home": false
+        }
+      ],
+      "note": "ranked in-home first; these are attested eitza edges near the anchor, not invented",
+      "slot": null,
+      "label": "what could come before faith itself"
+    }
+  ],
+  "process_notes": "Beats were distilled from the story's plot arc, then each resolved to a concept id via tmap.py search/match. Several thematically \"obvious\" picks (e.g. the princess-as-Shechinah motif, the wildman-guide, the bow of true desire) turned out to be low-degree leaf nodes in the graph with no attested causal (eitza) edge to their neighbors — the graph correctly refused to project them, per the map's own discipline: shared meaning is not a graph connection. The 7-concept sequence actually used here was rebuilt around concepts verified pairwise-connected in the correct causal direction (eitza edges are directed; reversing an attested pair breaks the projection). scripts/segment_project.py's DP then split it into 3 contiguous single-teaching segments — the 2-6 concept limit on a single project() call forces at least one cut, and the algorithm found the cut points that minimize total cost, correctly recognizing that the second cut (between faith and charity) costs nothing extra because both halves land in the same teaching (LM I:7) anyway — only the first cut is a real cross-teaching jump (LM I:10 → I:7).",
+  "narrative_by_segment": [
+    "The king and the loss open in LM I:10 (cost 1.12) — the teaching where kingship's own wrath and its most drastic consequence, a lost/forgotten thing (aveidah), sit together. This is the very Hebrew word the story is named for.",
+    "Tears and faith close together in LM I:7 (cost 0.52) — a teaching whose causal spine runs from truth (emet) into faith (emunah), the exact resource the search draws on.",
+    "Charity, prayer, and the reach toward redemption land in the same teaching, LM I:7 (cost 0.64) — so the bridge from segment 2 to segment 3 is free: the story never actually leaves this teaching's world, it's only the 2-6 concept cap on one projection call that forced the cut."
+  ],
+  "narrative": "The whole arc — loss, weeping, faith, charity, prayer, and the unfinished reach toward redemption — is attested almost entirely inside one teaching, Likutey Moharan I:7, with only one real jump: from the opening scene of a king's wrath and his lost daughter (LM I:10) into the sustained search (LM I:7). That single cross-teaching hop costs 2.5 in this model's terms — real, but small next to the six-fold richness of what's attested once you're inside I:7 itself: there, the map's own words state \"אֵין אֱמוּנָה בְּלֹא אֱמֶת\" — there is no faith without truth — and separately identifies exile's cure with truth, faith, and prayer in a single line ('by tzitzit one can come to the tzaddikim's counsel, to the aspect of truth; and through truth one comes to faith'). That is, when asked what could precede the minister's faith, the map's own attested edges (not an invented reading) answer: truth. And when asked what could precede the reach toward redemption, the same teaching answers: faith. The story never gives the ending — the minister has not yet found her when Rebbe Nachman breaks off — and the graph mirrors this exactly: c:ge-ulah-redemption has zero outgoing (effect) edges in the whole corpus. There is nothing attested as coming AFTER redemption in this teaching; the chain simply stops there, same as the tale itself, with the traditional coda: 'and so it will be with the final redemption.'"
+}

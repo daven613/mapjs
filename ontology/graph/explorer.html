@@ -144,7 +144,9 @@ fetch('./explorer_data.json').then(r=>r.json()).then(d=>{
   buildTokenIndex();
   buildModes(); setMode('explore');
   const start=NODES.filter(n=>n.kind!=='statement').sort((a,b)=>b.deg-a.deg)[0];
-  go(start.id);
+  go(start.id);                                    // a sensible default focus behind the trace UI
+  const traceSlug=parseTraceSlug();                // deep-link: explorer.html?trace=<slug>
+  if(traceSlug){setMode('trace');loadTraceUrl('./traces/'+traceSlug+'.json','no trace file at ./traces/'+traceSlug+'.json');}
 });
 function tokens(s){return (s||'').toLowerCase().match(/[a-z]{3,}|[א-ת]{2,}/g)||[];}
 let ctxx={},conceptsIn={};
@@ -247,12 +249,10 @@ function renderInputs(){
       <button class="go" id="loadBundled">Load bundled example</button>`;
     $('traceFile').onchange=e=>{const f=e.target.files[0];if(!f)return;
       const r=new FileReader();
-      r.onload=()=>{try{traceData=JSON.parse(r.result);traceSegIdx=null;renderTraceList();showTraceOverview();}
+      r.onload=()=>{try{applyTrace(JSON.parse(r.result));}
         catch(err){setStatus('failed to parse trace JSON: '+err.message);}};
       r.readAsText(f);};
-    $('loadBundled').onclick=()=>{fetch('./story_trace.json').then(r=>r.json())
-      .then(d=>{traceData=d;traceSegIdx=null;renderTraceList();showTraceOverview();})
-      .catch(err=>setStatus('no bundled example at ./story_trace.json: '+err.message));};
+    $('loadBundled').onclick=()=>loadTraceUrl('./story_trace.json','no bundled example at ./story_trace.json');
   } else {
     I.innerHTML=`<label>Search concept</label>${acField('q')}`;
     wireAc('q',true);
@@ -479,6 +479,26 @@ function runProjectFor(picks){
 }
 
 // ---------- story trace (scripts/story_to_map: sequence -> segments -> narrative) ----------
+// shared entry point: swap in a parsed trace and render it. Used by the file picker,
+// the "Load bundled example" button, and the ?trace= URL param — one code path, no duplication.
+function applyTrace(d){traceData=d;traceSegIdx=null;renderTraceList();showTraceOverview();}
+// fetch a trace JSON and hand it to applyTrace; on any failure surface a clear, non-fatal status
+// (the page stays usable — you can still switch modes or load a different trace).
+function loadTraceUrl(url,label){
+  return fetch(url).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
+    .then(applyTrace)
+    .catch(err=>{const msg=(label||'could not load trace')+': '+err.message;
+      setStatus(msg);
+      $('list').innerHTML=`<div class="sec">Trace not loaded</div><div class="empty" style="padding:8px 10px">${msg}</div>`;});
+}
+// ?trace=SLUG on the URL → load ./traces/SLUG.json into story-trace mode at startup.
+// SLUG is sanitized to [a-z0-9-_] so it can never escape the traces/ directory.
+function parseTraceSlug(){
+  const m=/[?&]trace=([^&]*)/.exec(location.search);if(!m)return null;
+  let raw;try{raw=decodeURIComponent(m[1]);}catch(_){raw=m[1];}
+  const slug=raw.toLowerCase().replace(/[^a-z0-9_-]/g,'');
+  return slug||null;
+}
 function renderTraceList(){
   const L=$('list');
   if(!traceData){L.innerHTML='<div class="sec">No trace loaded</div><div class="empty" style="padding:8px 10px">Use the file picker above, or "Load bundled example".</div>';return;}
