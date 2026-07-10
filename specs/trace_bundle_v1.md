@@ -39,15 +39,35 @@ the causal flow runs over statement-node edges the concept-level traversal skips
 have no eitza-bearing path between them, only an attested aspect identification). See
 `specs/interpretation_v1.md` §Stage 3.
 
-The explorer handles this automatically: when the live `project(segment.ids)` returns `null` (or
-throws), it renders the segment **from the stored `segment.project` block instead** — the same
-visual language (chain anchors, mapping kinds, link hops with their proof quotes + refs), with a
-visible `attested chain · stored provenance` tag and a status line to distinguish it from a live
-projection. **No schema change and no marker field are needed** — the fallback is triggered purely
-by the live recompute failing, and the validator accepts the same bundle either way. The stored
-`project` block (which is provenance/audit for a live-projectable segment) simply becomes the
-render source when the segment is not projectable, so its `chain` / `mappings` / `links.hops` must
-carry real proofs + refs (already required — see below).
+The explorer handles this automatically: it prefers the stored `segment.project` block whenever the
+live recompute is absent **or disagrees** with the verified reading — rendered in the same visual
+language (chain anchors, mapping kinds, link hops with their proof quotes + refs), with a visible
+`attested chain · stored provenance` tag and a status line to distinguish it from a live projection.
+**No schema change and no marker field are needed** — the choice is made purely from the live result,
+and the validator accepts the same bundle either way. The stored `project` block (which is
+provenance/audit for a live-projectable segment) simply becomes the render source when live is
+untrustworthy, so its `chain` / `mappings` / `links.hops` must carry real proofs + refs (already
+required — see below).
+
+**The live-vs-stored decision (in `selectTraceSegment`).** `project(segment.ids)` is computed once,
+then compared to the stored block. The live result is used **only when it agrees**; otherwise the
+stored block wins and the divergence is shown, not hidden (the tag/status extends to e.g.
+`… · live recompute disagreed (LM I·23 @ 18.83)`):
+
+| condition | rendered from |
+|---|---|
+| live is `null` / throws | **stored** (genuinely non-projectable chain) |
+| live `cost` > `max(3·stored.cost, stored.cost + 2)` | **stored** — a blown-up cost is a bad fit, same home or not (the `+2` floor keeps a near-zero stored cost from over-triggering on a normal live cost) |
+| live `home` ≠ stored `home` **and** live `cost` ≥ stored `cost` | **stored** — a different-teaching fit that isn't even cheaper is a wrong-teaching fit |
+| live `home` ≠ stored `home` but live `cost` < stored `cost` | **live** — a genuinely cheaper alternative projection is legitimate (e.g. the Lost Princess: live I:54 @ 0.84 beats stored I:10 @ 1.12) |
+| same home at sane cost | **live** (primary path, unchanged) |
+| no stored block at all | **live** (may be `null` → honest "no projection") |
+
+This matters because `project()` returning *non-null* does not mean it is *right*: it can land on the
+wrong teaching at an absurd cost (observed: a chain whose verified home is I:282 mis-projected onto
+I:23 at cost 18.83). Null-only fallback would let that garbage fit shadow the real reading. Basing
+the demotion on cost (not home difference alone) keeps a cheaper legitimate alternative live while
+still rejecting the blown-up mis-fit.
 
 A minimal example lives at `ontology/graph/traces/chain-fallback-demo.json`: the attested aspect
 junction `c:merkavah-creatures → c:rulership` in LM I:13 (Proverbs 8:16, *"bi sarim yasoru"*),

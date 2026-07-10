@@ -494,9 +494,9 @@ function applyProjection(picks,res,opt){
         hopCostOf,topNodes,mapPaths,mapNodes,realOf,mapInfo,picks:picks.slice(),stored:!!opt.stored};
   savedProjection={picks:picks.slice(),res,fromTrace:(mode==='trace'&&traceSegIdx!=null)?{segIdx:traceSegIdx}:null,stored:!!opt.stored};
   layoutProject(res);
-  if(opt.stored)drawStoredProjectDetail(picks,res,opt.seg); else drawProjectDetail(picks,res);
+  if(opt.stored)drawStoredProjectDetail(picks,res,opt.seg,opt.disagree); else drawProjectDetail(picks,res);
   drawCrumbs();
-  if(opt.stored)setStatus(`attested chain (stored provenance)${res.home?' · LM '+res.home.replace(':',' · '):' · cross-Torah'} · weight ${(res.cost||0).toFixed(2)}`);
+  if(opt.stored)setStatus(`attested chain (stored provenance)${res.home?' · LM '+res.home.replace(':',' · '):' · cross-Torah'} · weight ${(res.cost||0).toFixed(2)}${opt.disagree?' · live recompute disagreed ('+opt.disagree+')':''}`);
   else setStatus(res.home?`projected onto LM ${res.home.replace(':',' · ')} · weight ${res.cost.toFixed(2)}`:`cross-Torah projection · weight ${res.cost.toFixed(2)}`);
 }
 // synthesize a graph-edge shape from a stored hop so the shared renderer can draw it.
@@ -515,12 +515,13 @@ function buildStoredRes(seg){
   const pcosts=(p.mappings||[]).map(m=>m.pcost||0);
   return {home:(p.home!==undefined?p.home:null),cost:(p.cost!=null?p.cost:0),chain,links,pcosts,mappings:p.mappings||[],stored:true};
 }
-// fallback path for a segment whose ids don't project in-page: render its stored provenance.
-function runStoredProjectFor(picks,seg){
+// fallback path for a segment whose ids don't project in-page (or whose live projection disagreed
+// with the verified reading): render its stored provenance. `disagree` describes the divergence, if any.
+function runStoredProjectFor(picks,seg,disagree){
   const res=buildStoredRes(seg);
   if(!res.chain.length){setStatus('this segment has no stored provenance to render');
     $('detail').innerHTML='<div class="dhead"><div class="meta">No projection, and no stored provenance in this segment.</div></div>';return false;}
-  applyProjection(picks,res,{stored:true,seg});
+  applyProjection(picks,res,{stored:true,seg,disagree:disagree||null});
   return true;
 }
 
@@ -587,13 +588,30 @@ function selectTraceSegment(i){
   if(!traceData)return;
   traceSegIdx=i;
   const seg=traceData.segments[i];
-  // Live projection is primary. Some legitimate readings are CHAIN-based, not projectable
-  // (their spine was verified hop-by-hop but the ids don't project in-page) — for those,
-  // project() returns null/throws, so fall back to rendering the segment's stored provenance.
+  // Live projection is primary, but only when it AGREES with the stored provenance. Two failure
+  // modes both demote the live result to the stored block: (1) project() returns null/throws (a
+  // genuinely non-projectable chain), or (2) project() returns a WRONG fit — a different home
+  // teaching, or the same home at a blown-up cost — which would otherwise silently shadow the
+  // hop-by-hop-verified reading. The stored block wins those, and the divergence is shown, not hidden.
   let live=null; try{live=project(seg.ids.slice());}catch(_){live=null;}
-  if(live)runProjectFor(seg.ids.slice(),live);
-  else if(seg.project)runStoredProjectFor(seg.ids.slice(),seg);
-  else runProjectFor(seg.ids.slice(),null);   // no stored block either → show the honest "no projection"
+  const stored=seg.project;
+  let useLive=!!live, disagree=null;
+  if(live&&stored){
+    const lh=live.home||null, sh=(stored.home!==undefined?stored.home:null),
+          sc=(stored.cost!=null?stored.cost:0), lc=(live.cost||0);
+    // A non-null live result is not necessarily RIGHT. Demote it to the verified stored reading when:
+    //  - its cost is blown up (>3× stored, or +2 so a near-zero stored cost doesn't over-trigger) — a
+    //    bad fit whether or not the home matches; or
+    //  - it lands on a DIFFERENT teaching and isn't even cheaper (a wrong-teaching fit).
+    // A different home at a genuinely lower cost is a legitimate alternative projection — keep it live
+    // (this is what happens for the Lost Princess: live I:54 @ 0.84 beats the stored I:10 @ 1.12).
+    const blown=lc>Math.max(3*sc,sc+2);
+    const wrongTeaching=(lh!==sh)&&(lc>=sc);
+    if(blown||wrongTeaching){useLive=false;disagree=`LM ${lh?lh.replace(':','·'):'cross-Torah'} @ ${lc.toFixed(2)}`;}
+  }
+  if(useLive)runProjectFor(seg.ids.slice(),live);
+  else if(stored)runStoredProjectFor(seg.ids.slice(),seg,disagree);
+  else runProjectFor(seg.ids.slice(),live);   // no stored block → live (may be null → honest "no projection")
   const D=$('detail'),note=(traceData.narrative_by_segment||[])[i]||'';
   D.innerHTML=`<div class="dhead" style="border-bottom:2px solid var(--accent)">
      <div class="meta" style="color:var(--dim)">Story trace · segment ${i+1} of ${traceData.segments.length}</div>
@@ -747,13 +765,16 @@ function storedProofBlock(h,defCol){
     <div class="rf">${kindLbl}${h.ref&&h.ref.length?' · LM '+h.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):''} · stored provenance</div>
     ${h.proof?`<div class="proof" style="display:block">${h.proof}…</div>`:'<div class="rf" style="color:var(--faint)">(no proof quote recorded)</div>'}</div>`;
 }
-function drawStoredProjectDetail(picks,res,seg){
+function drawStoredProjectDetail(picks,res,seg,disagree){
   const D=$('detail'),p=(seg&&seg.project)||{},chainIds=res.chain;
+  const why=disagree
+    ? `The in-page recompute disagreed with this verified reading (${disagree}), so the bundle's stored provenance is shown instead — a spine verified hop-by-hop, every junction carrying its source quote + reference.`
+    : `These concepts don't project in-page, so this is rendered from the bundle's stored provenance — a spine verified hop-by-hop, every junction carrying its source quote + reference.`;
   let html=`<div class="dhead"><div class="he" style="font-size:20px">${res.home?'לקוטי מוהר"ן '+res.home.replace(':',' · '):'Cross-Torah chain'}</div>
     <div class="meta">${picks.length} concept${picks.length!==1?'s':''} → an attested cause-effect chain</div>
-    <div style="margin-top:8px"><span style="display:inline-block;font-size:11px;padding:2px 9px;border-radius:8px;background:#3a2d16;border:1px solid var(--equation);color:var(--equation);font-weight:600">attested chain · stored provenance</span></div>
+    <div style="margin-top:8px"><span style="display:inline-block;font-size:11px;padding:2px 9px;border-radius:8px;background:#3a2d16;border:1px solid var(--equation);color:var(--equation);font-weight:600">attested chain · stored provenance${disagree?' · live recompute disagreed ('+disagree+')':''}</span></div>
     <div class="meta" style="margin-top:8px;line-height:1.7"><b>Total weight ${(res.cost||0).toFixed(2)}</b><br>
-      <span style="color:var(--faint)">These concepts don't project in-page, so this is rendered from the bundle's stored provenance — a spine verified hop-by-hop, every junction carrying its source quote + reference.</span></div></div>`;
+      <span style="color:var(--faint)">${why}</span></div></div>`;
   picks.forEach((pid,i)=>{
     const m=(p.mappings||[]).find(mm=>mm.pick===pid)||(p.mappings||[])[i]||{};
     const anchor=m.anchor||chainIds[i];const pk=byId[pid]||{},an=byId[anchor]||{};
