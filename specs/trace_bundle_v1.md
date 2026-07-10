@@ -30,6 +30,29 @@ graph and every projection hop carries a proof quote and a source reference.
 - The overview shows `input.title` / `input.type` / `input.text_summary`, `process_notes`, and
   `narrative`. Selecting segment *i* also shows `narrative_by_segment[i]`.
 
+## Chain-based (non-projectable) segments — the stored-provenance fallback
+
+Some legitimate readings are **chain-based, not projection-based**: their spine was verified
+hop-by-hop (e.g. with `tmap chain`) — every junction attested with a proof + ref — but the id
+sequence does not *project* in-page. `project()` returns `null` for such ids (typically because
+the causal flow runs over statement-node edges the concept-level traversal skips, or the concepts
+have no eitza-bearing path between them, only an attested aspect identification). See
+`specs/interpretation_v1.md` §Stage 3.
+
+The explorer handles this automatically: when the live `project(segment.ids)` returns `null` (or
+throws), it renders the segment **from the stored `segment.project` block instead** — the same
+visual language (chain anchors, mapping kinds, link hops with their proof quotes + refs), with a
+visible `attested chain · stored provenance` tag and a status line to distinguish it from a live
+projection. **No schema change and no marker field are needed** — the fallback is triggered purely
+by the live recompute failing, and the validator accepts the same bundle either way. The stored
+`project` block (which is provenance/audit for a live-projectable segment) simply becomes the
+render source when the segment is not projectable, so its `chain` / `mappings` / `links.hops` must
+carry real proofs + refs (already required — see below).
+
+A minimal example lives at `ontology/graph/traces/chain-fallback-demo.json`: the attested aspect
+junction `c:merkavah-creatures → c:rulership` in LM I:13 (Proverbs 8:16, *"bi sarim yasoru"*),
+whose two ids are confirmed non-projectable in-page.
+
 ## Top-level fields
 
 | field | required | type | notes |

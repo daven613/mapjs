@@ -449,9 +449,21 @@ function runProject(){
 }
 // core of runProject(), factored out so "Story trace" mode can drive it with a
 // precomputed pick list (one story segment) instead of reading the stage inputs.
-function runProjectFor(picks){
-  const res=project(picks);
-  if(!res){setStatus('no projection found for those concepts');$('detail').innerHTML='<div class="dhead"><div class="meta">No projection found.</div></div>';return;}
+// Optional `precomputed` lets the caller pass a project() result it already has
+// (story-trace mode computes it once to decide live-vs-stored, see selectTraceSegment).
+function runProjectFor(picks,precomputed){
+  let res=precomputed;
+  if(res===undefined){try{res=project(picks);}catch(_){res=null;}}
+  if(!res){setStatus('no projection found for those concepts');$('detail').innerHTML='<div class="dhead"><div class="meta">No projection found.</div></div>';return false;}
+  applyProjection(picks,res,{stored:false});
+  return true;
+}
+// build the projection view + layout + detail from a res object. Shared by the LIVE path
+// (res from project()) and the STORED path (res built from a bundle's segment.project block).
+// The only thing that differs is where each pick's mapping hops come from and how the detail
+// panel is drawn — everything about the canvas view is identical, so both modes look the same.
+function applyProjection(picks,res,opt){
+  opt=opt||{};
   // --- causal spine (real concept ids): chain anchors + bridges, joined by eitza hops ---
   const spineNodes=res.chain.slice(),edges=[],hopCostOf={};
   res.links.forEach(l=>(l.hops||[]).forEach(h=>{edges.push(h.e);spineNodes.push(h.from,h.to);hopCostOf[h.from+'>'+h.to]=h.hc;}));
@@ -460,8 +472,15 @@ function runProjectFor(picks){
   const topNodes=[],mapPaths=[],mapNodes=new Set(),realOf={},mapInfo={};
   picks.forEach((pid,i)=>{const anchor=res.chain[i];const topId='pk#'+i;realOf[topId]=pid;
     topNodes.push({id:topId,real:pid,idx:i+1});
-    const hops=(pid===anchor)?[]:(aspectPath(pid,anchor,res.home)||null);
-    const kind=(pid===anchor)?'self':(hops&&hops.length?'aspect':'shared');
+    let hops,kind;
+    if(opt.stored){                                        // take the mapping straight from stored provenance
+      const m=(res.mappings||[]).find(mm=>mm.pick===pid)||(res.mappings||[])[i]||{};
+      kind=m.kind||(pid===anchor?'self':'shared');
+      hops=(kind==='self')?[]:((m.hops&&m.hops.length)?m.hops.map(h=>({from:h.from,to:h.to,e:synthHopEdge(h,'bechina')})):null);
+    } else {                                               // live: recompute the aspect-link path in-page
+      hops=(pid===anchor)?[]:(aspectPath(pid,anchor,res.home)||null);
+      kind=(pid===anchor)?'self':(hops&&hops.length?'aspect':'shared');
+    }
     mapInfo[topId]={idx:i+1,pcost:(res.pcosts||[])[i]||0,nhops:hops?hops.length:0,kind};
     const seq=[topId],segEdges=[];
     if(hops&&hops.length){hops.forEach((h,k)=>{const last=k===hops.length-1;
@@ -472,10 +491,37 @@ function runProjectFor(picks){
   });
   view={proj:res,edges,nodes:[...new Set(spineNodes)],path:res.chain.slice(),center:null,
         anchors:new Set(res.chain),anchorIdx:Object.fromEntries(res.chain.map((id,i)=>[id,i+1])),
-        hopCostOf,topNodes,mapPaths,mapNodes,realOf,mapInfo,picks:picks.slice()};
-  savedProjection={picks:picks.slice(),res,fromTrace:(mode==='trace'&&traceSegIdx!=null)?{segIdx:traceSegIdx}:null};
-  layoutProject(res); drawProjectDetail(picks,res); drawCrumbs();
-  setStatus(res.home?`projected onto LM ${res.home.replace(':',' · ')} · weight ${res.cost.toFixed(2)}`:`cross-Torah projection · weight ${res.cost.toFixed(2)}`);
+        hopCostOf,topNodes,mapPaths,mapNodes,realOf,mapInfo,picks:picks.slice(),stored:!!opt.stored};
+  savedProjection={picks:picks.slice(),res,fromTrace:(mode==='trace'&&traceSegIdx!=null)?{segIdx:traceSegIdx}:null,stored:!!opt.stored};
+  layoutProject(res);
+  if(opt.stored)drawStoredProjectDetail(picks,res,opt.seg); else drawProjectDetail(picks,res);
+  drawCrumbs();
+  if(opt.stored)setStatus(`attested chain (stored provenance)${res.home?' · LM '+res.home.replace(':',' · '):' · cross-Torah'} · weight ${(res.cost||0).toFixed(2)}`);
+  else setStatus(res.home?`projected onto LM ${res.home.replace(':',' · ')} · weight ${res.cost.toFixed(2)}`:`cross-Torah projection · weight ${res.cost.toFixed(2)}`);
+}
+// synthesize a graph-edge shape from a stored hop so the shared renderer can draw it.
+// eitza (cause) hops are directed; aspect/reframe are bechina.
+function synthHopEdge(h,defTy){
+  const ty=h.kind==='cause'?'eitza':(h.kind==='reframe'?'bechina':(defTy||'bechina'));
+  return {s:h.from,t:h.to,ty,ref:h.ref||[],p:h.proof||'',w:1};
+}
+// turn a bundle's segment.project block into a res object shaped like project()'s output,
+// so a NON-projectable segment still renders from its verified, stored provenance.
+function buildStoredRes(seg){
+  const p=(seg&&seg.project)||{};
+  const chain=(p.chain||[]).map(c=>(c&&typeof c==='object')?c.id:c);
+  const links=(p.links||[]).map(l=>{const hs=(l.hops||[]).map(h=>({from:h.from,to:h.to,kind:h.kind,hc:(h.hc!=null?h.hc:0),e:synthHopEdge(h,'eitza')}));
+    return {cost:(l.cost!=null?l.cost:0),hops:hs,nodes:hs.length?[hs[0].from].concat(hs.map(x=>x.to)):[]};});
+  const pcosts=(p.mappings||[]).map(m=>m.pcost||0);
+  return {home:(p.home!==undefined?p.home:null),cost:(p.cost!=null?p.cost:0),chain,links,pcosts,mappings:p.mappings||[],stored:true};
+}
+// fallback path for a segment whose ids don't project in-page: render its stored provenance.
+function runStoredProjectFor(picks,seg){
+  const res=buildStoredRes(seg);
+  if(!res.chain.length){setStatus('this segment has no stored provenance to render');
+    $('detail').innerHTML='<div class="dhead"><div class="meta">No projection, and no stored provenance in this segment.</div></div>';return false;}
+  applyProjection(picks,res,{stored:true,seg});
+  return true;
 }
 
 // ---------- story trace (scripts/story_to_map: sequence -> segments -> narrative) ----------
@@ -541,7 +587,13 @@ function selectTraceSegment(i){
   if(!traceData)return;
   traceSegIdx=i;
   const seg=traceData.segments[i];
-  runProjectFor(seg.ids.slice());
+  // Live projection is primary. Some legitimate readings are CHAIN-based, not projectable
+  // (their spine was verified hop-by-hop but the ids don't project in-page) — for those,
+  // project() returns null/throws, so fall back to rendering the segment's stored provenance.
+  let live=null; try{live=project(seg.ids.slice());}catch(_){live=null;}
+  if(live)runProjectFor(seg.ids.slice(),live);
+  else if(seg.project)runStoredProjectFor(seg.ids.slice(),seg);
+  else runProjectFor(seg.ids.slice(),null);   // no stored block either → show the honest "no projection"
   const D=$('detail'),note=(traceData.narrative_by_segment||[])[i]||'';
   D.innerHTML=`<div class="dhead" style="border-bottom:2px solid var(--accent)">
      <div class="meta" style="color:var(--dim)">Story trace · segment ${i+1} of ${traceData.segments.length}</div>
@@ -672,6 +724,52 @@ function drawProjectDetail(picks,res){
             <span class="w" style="direction:ltr">${h.hc.toFixed(2)}</span></div>
           <div class="rf">${h.kind==='cause'?'eitza (cause→effect)':'bechina (reframe)'} · ${inHome?'in LM '+res.home.replace(':','·')+' — near-free':'crosses teaching — weighty'}${h.e.ref&&h.e.ref.length?' · '+h.e.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):''}</div>
           ${h.e.p?`<div class="proof" style="display:block">${h.e.p}…</div>`:'<div class="rf" style="color:var(--faint)">(no proof quote recorded for this edge)</div>'}</div>`;});
+    }
+    html+=`</div>`;});
+  D.innerHTML=html;D.scrollTop=0;
+  D.querySelectorAll('.conn[data-go]').forEach(c=>c.onclick=ev=>{if(ev.target.classList.contains('pathlnk'))return;exploreConcept(c.dataset.go);});
+  D.querySelectorAll('.pathlnk').forEach(el=>el.onclick=ev=>{ev.stopPropagation();exploreConcept(el.dataset.go);});
+}
+// Detail panel for a STORED-provenance segment (project() returned null). Same visual language as
+// drawProjectDetail — mappings + causal hops with their proof quotes and refs — but every field is
+// read straight from the bundle's segment.project block (no in-page recompute), and a visible tag
+// marks it "attested chain · stored provenance" so the two modes stay distinguishable.
+function storedProofBlock(h,defCol){
+  const f=byId[h.from]||{},t=byId[h.to]||{};
+  const col=defCol||(h.kind==='cause'?'var(--eitza)':'var(--bechina)');
+  const op=h.kind==='cause'?'—causes→':'≈ aspect ≈';
+  const kindLbl=h.kind==='cause'?'eitza (cause→effect)':'bechina (aspect/reframe)';
+  return `<div class="conn open" style="border-left:3px solid ${col}">
+    <div class="row" style="direction:rtl"><span class="he pathlnk" data-go="${h.from}">${f.he||h.from}</span>
+      <span class="op" style="color:${col};direction:ltr;margin:0 4px">${op}</span>
+      <span class="he pathlnk" data-go="${h.to}">${t.he||h.to}</span>
+      ${h.hc!=null?`<span class="w" style="direction:ltr">${(+h.hc).toFixed(2)}</span>`:''}</div>
+    <div class="rf">${kindLbl}${h.ref&&h.ref.length?' · LM '+h.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):''} · stored provenance</div>
+    ${h.proof?`<div class="proof" style="display:block">${h.proof}…</div>`:'<div class="rf" style="color:var(--faint)">(no proof quote recorded)</div>'}</div>`;
+}
+function drawStoredProjectDetail(picks,res,seg){
+  const D=$('detail'),p=(seg&&seg.project)||{},chainIds=res.chain;
+  let html=`<div class="dhead"><div class="he" style="font-size:20px">${res.home?'לקוטי מוהר"ן '+res.home.replace(':',' · '):'Cross-Torah chain'}</div>
+    <div class="meta">${picks.length} concept${picks.length!==1?'s':''} → an attested cause-effect chain</div>
+    <div style="margin-top:8px"><span style="display:inline-block;font-size:11px;padding:2px 9px;border-radius:8px;background:#3a2d16;border:1px solid var(--equation);color:var(--equation);font-weight:600">attested chain · stored provenance</span></div>
+    <div class="meta" style="margin-top:8px;line-height:1.7"><b>Total weight ${(res.cost||0).toFixed(2)}</b><br>
+      <span style="color:var(--faint)">These concepts don't project in-page, so this is rendered from the bundle's stored provenance — a spine verified hop-by-hop, every junction carrying its source quote + reference.</span></div></div>`;
+  picks.forEach((pid,i)=>{
+    const m=(p.mappings||[]).find(mm=>mm.pick===pid)||(p.mappings||[])[i]||{};
+    const anchor=m.anchor||chainIds[i];const pk=byId[pid]||{},an=byId[anchor]||{};
+    const same=(pid===anchor)||m.kind==='self';
+    html+=`<div class="grp"><h3><span style="color:var(--accent);font-size:13px">${i+1}</span> map your pick onto the teaching</h3>`;
+    html+=`<div class="conn" data-go="${anchor}"><div class="row"><span class="he" style="color:#37b3a4">${pk.he||''}</span>
+      <span class="arrowlbl" style="margin:0 6px">${same?'✓ appears in this teaching directly':'∥ maps onto → '}</span>
+      ${same?'':`<span class="he" style="color:var(--accent)">${an.he||''}</span> <span class="w">${m.kind||'aspect'} · ∥ ${(m.pcost||0).toFixed(2)}</span>`}</div>
+      <div class="en">${an.gloss||''}</div></div>`;
+    if(m.hops&&m.hops.length){
+      html+=`<div style="margin:4px 0 2px;font-size:11px;color:var(--bechina)">∥ mapping path · ${m.hops.length} aspect-link${m.hops.length!==1?'s':''} (stored)</div>`;
+      m.hops.forEach(h=>{html+=storedProofBlock({...h,kind:h.kind||'reframe'},'var(--bechina)');});
+    }
+    if(i<(p.links||[]).length){const l=p.links[i],hops=l.hops||[];
+      html+=`<div style="margin:6px 0 2px;font-size:11px;color:var(--eitza)">⟶ causal path to concept ${i+2} · ${hops.length} hop${hops.length!==1?'s':''} · cost ${(l.cost||0).toFixed(2)}</div>`;
+      hops.forEach(h=>{html+=storedProofBlock(h);});
     }
     html+=`</div>`;});
   D.innerHTML=html;D.scrollTop=0;

@@ -1,0 +1,88 @@
+{
+  "input": {
+    "title": "Attested-chain fallback demo (bechina junction, LM I:13)",
+    "type": "test",
+    "text_summary": "A minimal synthetic bundle whose segment ids do NOT project in-page (project() returns null), used to exercise the explorer's stored-provenance fallback. The single hop is a real, attested aspect-identification from Likutey Moharan I:13."
+  },
+  "sequence": [
+    {
+      "slot": 0,
+      "status": "known",
+      "id": "c:merkavah-creatures",
+      "he": "שור שבתורה",
+      "phrase": "the 'ox' among the Merkavah's creatures"
+    },
+    {
+      "slot": 1,
+      "status": "known",
+      "id": "c:rulership",
+      "he": "בי שרים ישרו",
+      "phrase": "through Me princes rule"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "slots": [
+        0,
+        1
+      ],
+      "ids": [
+        "c:merkavah-creatures",
+        "c:rulership"
+      ],
+      "project": {
+        "home": "I:13",
+        "cost": 0.12,
+        "chain": [
+          {
+            "id": "c:merkavah-creatures"
+          },
+          {
+            "id": "c:rulership"
+          }
+        ],
+        "mappings": [
+          {
+            "pick": "c:merkavah-creatures",
+            "anchor": "c:merkavah-creatures",
+            "kind": "self",
+            "pcost": 0.0,
+            "hops": [],
+            "shared_terms": []
+          },
+          {
+            "pick": "c:rulership",
+            "anchor": "c:rulership",
+            "kind": "self",
+            "pcost": 0.0,
+            "hops": [],
+            "shared_terms": []
+          }
+        ],
+        "links": [
+          {
+            "cost": 0.12,
+            "hops": [
+              {
+                "from": "c:merkavah-creatures",
+                "to": "c:rulership",
+                "kind": "reframe",
+                "hc": 0.12,
+                "proof": "וְשׁוֹר שֶׁבַּתּוֹרָה זֶה בְּחִינַת (מִשְׁלֵי ח): \"בִּי שָׂרִים יָשׂרוּ\";",
+                "ref": [
+                  "I:13"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "narrative_by_segment": [
+    "This junction is attested in Likutey Moharan I:13: the 'ox' among the four creatures of the Merkavah is identified, through the verse 'through Me princes rule' (Proverbs 8:16), with rulership. The identification is a real, sourced aspect-link — but these two concepts do not project in-page, so the explorer renders the segment from its stored provenance."
+  ],
+  "narrative": "A minimal demonstration of the attested-chain fallback. When a segment's concepts cannot be projected in-page, the explorer renders the segment from the bundle's stored, hop-by-hop-verified provenance — every junction still carrying its Hebrew source quote and its Likutey Moharan reference.",
+  "process_notes": "Test fixture for the stored-provenance fallback. ids: c:merkavah-creatures, c:rulership. Verified in-browser that project([...]) === null for this pair (both are bechina-only, degree-1 nodes with no eitza path, so no causal projection exists in-page). The single hop is the attested bechina edge from LM I:13 (proof: Proverbs 8:16, 'bi sarim yasoru')."
+}
