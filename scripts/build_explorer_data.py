@@ -3,7 +3,14 @@
 
 nodes: id, he (canonical Hebrew), gloss, kind, deg (degree)
 edges: s, t, ty (bechina|eitza|equation), w (weight), p (one sample proof, trimmed),
-       pol (builds|harms|neutral), via (presence|absence), ref (torah refs)
+       pol (builds|harms|neutral), via (presence|absence), ref (torah refs),
+       prov ("v"=vetted / "a"=speculative — see below)
+
+Provenance: an edge is VETTED ("v") if at least one of its proof occurrence ids is a
+legacy_human record (id contains "legacy"); otherwise it rests only on AI-extracted
+occurrences (occ:ai:*) and is SPECULATIVE ("a"). This is the split the explorer's
+provenance toggle reads — Shmuel never hand-reviewed the AI edges, so the flag lets him
+browse a vetted-only map and see the speculative ones marked.
 
 Proof/ref lookups span both evidence layers: legacy_human.jsonl and ai_compiled.jsonl
 (the latter written by compile_graph.py from the merged ai_extracted chunks).
@@ -56,9 +63,11 @@ for e in edges:
             refs.add(r)
             node_refs[e["source"]].add(r)
             node_refs[e["target"]].add(r)
+    prov = "v" if any("legacy" in pid for pid in e.get("proofs", [])) else "a"
     out_edges.append({"s": e["source"], "t": e["target"], "ty": e["type"],
                       "w": e["weight"], "p": proof, "ref": sorted(refs),
-                      "pol": e.get("polarity", "neutral"), "via": e.get("via", "presence")})
+                      "pol": e.get("polarity", "neutral"), "via": e.get("via", "presence"),
+                      "prov": prov})
 
 def refsort(r):
     b, t = r.split(":"); return (0 if b == "I" else 1, int(t))

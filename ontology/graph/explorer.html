@@ -27,6 +27,17 @@
     padding:6px 9px;border-radius:7px;font-size:11.5px;cursor:pointer}
   .modes button:hover{color:var(--ink)}
   .modes button.on{background:var(--accent);border-color:var(--accent);color:#12131a;font-weight:600}
+  /* ---- provenance toggle ---- */
+  #prov{padding:2px 12px 4px;border-bottom:1px solid var(--line);margin-bottom:2px}
+  .provbtns{display:flex;gap:5px}
+  .provbtns button{flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--dim);
+    padding:5px 6px;border-radius:7px;font-size:11px;cursor:pointer}
+  .provbtns button:hover{color:var(--ink)}
+  .provbtns button.on{background:var(--eitza);border-color:var(--eitza);color:#04201d;font-weight:600}
+  .provbtns button[data-p="ai"].on{background:var(--equation);border-color:var(--equation);color:#2a1e05}
+  .provcount{font-size:10.5px;color:var(--dim);padding:5px 2px 2px;line-height:1.5}
+  .ai{font-size:9px;letter-spacing:.05em;color:var(--equation);border:1px solid #f0b42966;
+    border-radius:6px;padding:0 5px;margin-left:6px;vertical-align:middle;flex:none}
   .inputs{padding:6px 12px 8px;display:flex;flex-direction:column;gap:7px}
   .inputs input,.inputs textarea,.inputs select{width:100%;background:var(--panel2);border:1px solid var(--line);
     color:var(--ink);padding:8px 10px;border-radius:8px;font-size:13px;outline:none;font-family:inherit}
@@ -104,6 +115,7 @@
   <div id="rail">
     <div class="brand"><h1>Torah Map</h1><p>Likutey Moharan — concept graph</p></div>
     <div class="modes" id="modes"></div>
+    <div class="prov" id="prov"></div>
     <div class="inputs" id="inputs"></div>
     <div class="listwrap" id="list"></div>
   </div>
@@ -116,6 +128,7 @@
       <span><i style="background:var(--eitza)"></i>eitza · advice</span>
       <span><i style="background:var(--equation)"></i>equation</span>
       <span><i style="background:#ff5d5d"></i>harms (dashed = via absence/פגם)</span>
+      <span><i style="background:var(--equation);opacity:.55"></i>faded/dashed = AI-speculative edge</span>
     </div>
     <div id="tip"></div>
   </div>
@@ -124,6 +137,31 @@
 <script>
 const TYCOL={bechina:'#5aa9ff',eitza:'#37d093',equation:'#f0b429'};
 let NODES=[],EDGES=[],TORAHS=[],byId={},adj={},idf={},tokx={};
+// ---- provenance filter: 'all' | 'vetted' | 'ai' ----
+// Every real edge carries e.prov ("v"=vetted [backed by a legacy_human proof], "a"=speculative
+// [AI-extracted only]). The toggle rebuilds `adj` from the passing edges so ALL graph traversals
+// (explore/aspects/advice/effects/path/common/project) honour it automatically; the canvas and
+// EDGES-scan modes (torah/common) also consult edgePasses(). Synthesized edges (trace mode) carry
+// no prov and are always shown, so a filter never hides an attested, stored-provenance chain.
+let PROV='all';
+const PROVCOUNT={v:0,a:0,total:0};
+function edgePasses(e){
+  if(PROV==='all')return true;
+  const pv=e&&e.prov; if(pv!=='v'&&pv!=='a')return true;   // unknown provenance always visible
+  return PROV==='vetted'?pv==='v':pv==='a';
+}
+function aiTag(e){return (e&&e.prov==='a')?'<span class="ai">AI</span>':'';}
+// (re)build the adjacency index from edges that pass the current provenance filter
+function buildAdj(){
+  NODES.forEach(n=>{adj[n.id]={all:[],bechina:[],eitzaOut:[],eitzaIn:[]};});
+  EDGES.forEach(e=>{
+    if(!adj[e.s]||!adj[e.t])return;
+    if(!edgePasses(e))return;
+    adj[e.s].all.push({o:e.t,ty:e.ty,dir:'out',e}); adj[e.t].all.push({o:e.s,ty:e.ty,dir:'in',e});
+    if(e.ty==='bechina'){adj[e.s].bechina.push(e.t);adj[e.t].bechina.push(e.s);}
+    else if(e.ty==='eitza'){adj[e.s].eitzaOut.push(e.t);adj[e.t].eitzaIn.push(e.s);}
+  });
+}
 let mode='explore',focus=null,hist=[],view={nodes:[],edges:[],path:null},sim={},anim=null,hover=null;
 let savedProjection=null;   // {picks:[ids], res} — lets the user leave to explore a concept and come back
 let traceData=null,traceSegIdx=null;   // loaded story-trace JSON (scripts/segment_project.py + story write-up)
@@ -147,6 +185,7 @@ function currentURLParams(){
   else if(mode==='path'||mode==='common'){ if(lastAB.a)p.a=lastAB.a; if(lastAB.b)p.b=lastAB.b; }
   else if(mode==='torah'){ if(lastTorah)p.ref=lastTorah; }
   else if(mode==='trace'){ if(traceSlug)p.trace=traceSlug; if(traceSegIdx!=null)p.seg=traceSegIdx; }
+  if(PROV!=='all')p.prov=PROV;   // composes with every mode's params
   return p;
 }
 function buildURL(params){
@@ -178,6 +217,10 @@ async function applyURLState(){
   restoringURL=true;
   try{
     const q=new URLSearchParams(location.search);
+    // 0) provenance filter FIRST, so adj is filtered before any mode traversal runs below
+    const pv=q.get('prov'); const nprov=(pv==='vetted'||pv==='ai')?pv:'all';
+    if(nprov!==PROV){ PROV=nprov; buildAdj(); }
+    updateProvUI();
     // 1) an embedded bundle in #b= is the trace source (decoded once per distinct hash)
     const hb=parseHashBundle();
     if(hb && (!traceData || location.hash!==appliedHash)){
@@ -217,15 +260,12 @@ function setABInputs(a,b){ [['a',a],['b',b]].forEach(([f,id])=>{const el=$('ac_'
 // ---------- load + index ----------
 fetch('./explorer_data.json').then(r=>r.json()).then(d=>{
   NODES=d.nodes; EDGES=d.edges; TORAHS=d.torahs||[];
-  NODES.forEach(n=>{byId[n.id]=n; adj[n.id]={all:[],bechina:[],eitzaOut:[],eitzaIn:[]};});
-  EDGES.forEach(e=>{
-    if(!adj[e.s]||!adj[e.t])return;
-    adj[e.s].all.push({o:e.t,ty:e.ty,dir:'out',e}); adj[e.t].all.push({o:e.s,ty:e.ty,dir:'in',e});
-    if(e.ty==='bechina'){adj[e.s].bechina.push(e.t);adj[e.t].bechina.push(e.s);}
-    else if(e.ty==='eitza'){adj[e.s].eitzaOut.push(e.t);adj[e.t].eitzaIn.push(e.s);}
-  });
+  NODES.forEach(n=>{byId[n.id]=n;});
+  EDGES.forEach(e=>{PROVCOUNT.total++; if(e.prov==='v')PROVCOUNT.v++; else PROVCOUNT.a++;});
+  buildAdj();                                      // adj honours PROV (starts 'all'; applyURLState may switch it)
   buildTokenIndex();
   buildModes();
+  buildProv();
   applyURLState();                                 // reproduce whatever the URL describes (params and/or #b= bundle)
   addEventListener('popstate',()=>applyURLState()); // back/forward reproduces the view
 });
@@ -275,6 +315,42 @@ function buildModes(){
   $('modes').innerHTML='';
   MODES.forEach(([k,label])=>{const b=document.createElement('button');b.textContent=label;b.dataset.m=k;
     b.title=MODES.find(m=>m[0]===k)[2]; b.onclick=()=>setMode(k); $('modes').appendChild(b);});
+}
+// ---------- provenance toggle ----------
+function buildProv(){
+  const P=$('prov'); if(!P)return;
+  P.innerHTML=`<div class="provbtns">
+    <button data-p="all" title="show every edge">All</button>
+    <button data-p="vetted" title="only edges with a hand-vetted (legacy) proof">Vetted only</button>
+    <button data-p="ai" title="only AI-extracted, un-reviewed edges">Speculative only</button></div>
+    <div class="provcount" id="provcount"></div>`;
+  P.querySelectorAll('button').forEach(b=>b.onclick=()=>setProv(b.dataset.p,true));
+  updateProvUI();
+}
+function updateProvUI(){
+  const P=$('prov'); if(!P)return;
+  P.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.p===PROV));
+  const fmt=n=>n.toLocaleString('en-US'),pc=$('provcount');
+  if(pc)pc.innerHTML=`<b style="color:var(--eitza)">${fmt(PROVCOUNT.v)}</b> vetted / ${fmt(PROVCOUNT.total)} total`
+    +(PROV==='vetted'?` · <b style="color:var(--eitza)">showing vetted only</b>`
+     :PROV==='ai'?` · <b style="color:var(--equation)">showing ${fmt(PROVCOUNT.a)} speculative</b>`
+     :` · <span style="color:var(--faint)">${fmt(PROVCOUNT.a)} AI-speculative shown faded</span>`);
+}
+// switch provenance filter: rebuild adj from passing edges, refresh the current view, sync URL
+function setProv(p,push){
+  if(p!=='all'&&p!=='vetted'&&p!=='ai')p='all';
+  PROV=p; buildAdj(); updateProvUI(); syncURL(!!push); refreshView();
+}
+// re-run whatever the active mode is currently showing, so the view reflects the new filter.
+// Reads remembered state (focus / lastAB / view.picks / lastMatchQ / lastTorah) rather than the DOM.
+function refreshView(){
+  if(mode==='explore'||mode==='aspects'||mode==='advice'||mode==='effects'){ if(focus&&byId[focus])go(focus); }
+  else if(mode==='path'){ if(lastAB.a&&lastAB.b)runPath(); }
+  else if(mode==='common'){ if(lastAB.a&&lastAB.b)runCommon(); }
+  else if(mode==='torah'){ if(lastTorah)runTorah(lastTorah); }
+  else if(mode==='match'){ if(lastMatchQ&&$('matchbox'))runMatch(); }
+  else if(mode==='project'){ if(view&&view.picks&&view.picks.length>=2)runProjectFor(view.picks.slice()); }
+  else if(mode==='trace'){ if(traceData){ if(traceSegIdx!=null)selectTraceSegment(traceSegIdx); else redraw(); } }
 }
 function setMode(m){
   mode=m;[...$('modes').children].forEach(b=>b.classList.toggle('on',b.dataset.m===m));
@@ -396,7 +472,7 @@ function go(id){ if(!byId[id])return;
 }
 function runTorah(ref){
   if(!ref)return; focus=null; lastTorah=ref;
-  const es=EDGES.filter(e=>(e.ref||[]).includes(ref));
+  const es=EDGES.filter(e=>(e.ref||[]).includes(ref)&&edgePasses(e));
   const ns=new Set(); es.forEach(e=>{ns.add(e.s);ns.add(e.t);});
   view={edges:es.slice(0,120),nodes:[...ns],path:null,center:null};
   layoutForce([...ns].slice(0,80),es); drawTorahDetail(ref,es,ns); drawCrumbs();
@@ -812,7 +888,7 @@ function drawProjectDetail(picks,res){
             <div class="row" style="direction:rtl"><span class="he pathlnk" data-go="${h.from}">${byId[h.from].he}</span>
               <span class="op" style="color:var(--bechina);direction:ltr;margin:0 4px">≈ aspect ≈</span>
               <span class="he pathlnk" data-go="${h.to}">${byId[h.to].he}</span></div>
-            <div class="rf">bechina (shared aspect)${inHome?' · in LM '+res.home.replace(':','·'):(h.e.ref&&h.e.ref.length?' · '+h.e.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):'')}</div>
+            <div class="rf">bechina (shared aspect)${inHome?' · in LM '+res.home.replace(':','·'):(h.e.ref&&h.e.ref.length?' · '+h.e.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):'')}${aiTag(h.e)}</div>
             ${h.e.p?`<div class="proof" style="display:block">${h.e.p}…</div>`:'<div class="rf" style="color:var(--faint)">(no proof quote recorded)</div>'}</div>`;});
       } else {const terms=sharedTerms(picks[i],cid,8);
         html+=`<div class="conn open" style="border-left:3px solid var(--faint)">
@@ -828,7 +904,7 @@ function drawProjectDetail(picks,res){
             <span class="op" style="color:${col};direction:ltr;margin:0 4px">${h.kind==='cause'?'—causes→':'≈aspect≈'}</span>
             <span class="he pathlnk" data-go="${h.to}">${byId[h.to].he}</span>
             <span class="w" style="direction:ltr">${h.hc.toFixed(2)}</span></div>
-          <div class="rf">${h.kind==='cause'?'eitza (cause→effect)':'bechina (reframe)'} · ${inHome?'in LM '+res.home.replace(':','·')+' — near-free':'crosses teaching — weighty'}${h.e.ref&&h.e.ref.length?' · '+h.e.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):''}</div>
+          <div class="rf">${h.kind==='cause'?'eitza (cause→effect)':'bechina (reframe)'} · ${inHome?'in LM '+res.home.replace(':','·')+' — near-free':'crosses teaching — weighty'}${h.e.ref&&h.e.ref.length?' · '+h.e.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):''}${aiTag(h.e)}</div>
           ${h.e.p?`<div class="proof" style="display:block">${h.e.p}…</div>`:'<div class="rf" style="color:var(--faint)">(no proof quote recorded for this edge)</div>'}</div>`;});
     }
     html+=`</div>`;});
@@ -912,7 +988,7 @@ function runCommon(){
   const na=new Set((adj[a]?.all||[]).map(x=>x.o)), nb=new Set((adj[b]?.all||[]).map(x=>x.o));
   const common=[...na].filter(x=>nb.has(x));
   const nodes=[a,b,...common], es=[];
-  EDGES.forEach(e=>{ const inA=(e.s===a||e.t===a),inB=(e.s===b||e.t===b);
+  EDGES.forEach(e=>{ if(!edgePasses(e))return; const inA=(e.s===a||e.t===a),inB=(e.s===b||e.t===b);
     if((inA&&common.includes(e.s===a?e.t:e.s))||(inB&&common.includes(e.s===b?e.t:e.s)))es.push(e);});
   view={edges:es,nodes,path:null,center:null,twoFoci:[a,b]};
   layoutForce(nodes,es,[a,b]); drawCommonDetail(a,b,common); drawCrumbs();
@@ -976,11 +1052,14 @@ function redraw(){
   const pathSet=view.path?new Set(view.path):null;
   const pathEdge=new Set((view.path?view.edges:[]).map(e=>e.s+'|'+e.t+'|'+e.ty));
   (view.edges||[]).forEach(e=>{const A=sim[e.s],B=sim[e.t];if(!A||!B)return;
+    if(!edgePasses(e))return;                              // never draw a filtered-out edge
+    const spec=e.prov==='a';                               // AI-speculative → faded + dashed (mainly visible in 'All')
     const onPath=pathEdge.has(e.s+'|'+e.t+'|'+e.ty);
     ctx.strokeStyle=onPath?'#ff7ac2':(e.pol==='harms'?'#ff5d5d':(TYCOL[e.ty]||'#667'));
-    ctx.globalAlpha=hover&&hover!==e.s&&hover!==e.t?0.12:(onPath?0.95:0.5);
+    let alpha=hover&&hover!==e.s&&hover!==e.t?0.12:(onPath?0.95:0.5);
+    if(spec)alpha*=0.5; ctx.globalAlpha=alpha;
     ctx.lineWidth=onPath?3.5:Math.min(5,1+Math.log2(e.w+1));
-    if(e.via==='absence')ctx.setLineDash([4,3]);
+    if(spec)ctx.setLineDash([3,4]); else if(e.via==='absence')ctx.setLineDash([4,3]);
     ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.stroke();
     ctx.setLineDash([]);
     if(e.ty==='eitza'){drawArrow(A,B,onPath);}
@@ -1081,7 +1160,7 @@ function drawDetail(id){
                                     :(dir==='out'?'leads to →':'← comes from'))
                              :(dir==='out'?'aspect of →':'← has aspect');
       const badge=harms?`<span class="polh">${lack?'harms · פגם':'harms'}</span>`:'';
-      return `<div class="conn" data-go="${o.id}"><div class="row"><span class="he">${o.he||''}</span>${badge}<span class="w">×${a.e.w}</span></div>
+      return `<div class="conn" data-go="${o.id}"><div class="row"><span class="he">${o.he||''}</span>${badge}${aiTag(a.e)}<span class="w">×${a.e.w}</span></div>
         <div class="en"><span class="arrowlbl">${verb}</span> ${o.gloss||''}</div>
         ${a.e.ref&&a.e.ref.length?`<div class="rf">LM ${a.e.ref.slice(0,4).map(r=>r.replace(':','·')).join(', ')}</div>`:''}
         ${a.e.p?`<div class="proof">${a.e.p}…</div>`:''}</div>`;}).join('');
@@ -1097,7 +1176,7 @@ function drawPathDetail(chain,edges){
   chain.forEach((id,i)=>{html+=`<span class="lnk" data-go="${id}">${byId[id].he}</span>`;
     if(i<edges.length){const e=edges[i];html+=`<span class="op">—${e.ty==='eitza'?'leads to':'aspect'}→</span>`;}});
   html+='</div></div>';
-  edges.forEach((e,i)=>{html+=`<div class="grp"><h3><i style="background:${TYCOL[e.ty]}"></i>${byId[chain[i]].he} → ${byId[chain[i+1]].he}</h3>
+  edges.forEach((e,i)=>{html+=`<div class="grp"><h3><i style="background:${TYCOL[e.ty]}"></i>${byId[chain[i]].he} → ${byId[chain[i+1]].he}${aiTag(e)}</h3>
     <div class="conn open"><div class="en">${byId[chain[i]].gloss||''}</div>
     ${e.ref&&e.ref.length?`<div class="rf">LM ${e.ref.slice(0,4).map(r=>r.replace(':','·')).join(', ')}</div>`:''}
     ${e.p?`<div class="proof">${e.p}…</div>`:''}</div></div>`;});
