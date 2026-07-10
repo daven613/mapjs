@@ -51,3 +51,15 @@ stretch; that's what the study-mode chains are for.
 The 590-candidate list regenerates with the script in this file's git history (filter:
 eitza edges, both endpoint glosses matching the everyday-vocabulary regex). Raising the
 whitelist quality (a `familiar: true` node tag, curated by Shmuel) is the v2 move.
+
+## Worked exemplars of the because-formula (v1.3, 2026-07-10)
+
+**Deepfakes** — article: afraid *because* images can lie. Map (all I:51): שקר מזיק
+לעינים (falsehood damages the eyes) · שקר, שהוא בחינת דמעות (falsehood IS tears — the
+salt water that blurs the eye) · falsehood removes השגחת השם (the watchful care). The
+chapter itself joins fake-seeing, crying, and lost protection.
+
+**Congressman absent** — article: gone 117 days *because* of depression. Map: עיקר
+גלותה כשעצבות גוברים עליה (I:24) — sadness exiles presence. Effects side (I:57): when
+faith in the sages is lacking, that itself is the sages' departure — the article's
+"drawing speculation" is that faith draining; the loop from both sides.

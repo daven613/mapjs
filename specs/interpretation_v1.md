@@ -101,17 +101,28 @@ one. Rubric (score each 0–2; publish threshold ≥ 7/10, hard gates regardless
 | **One-breath test** | the load-bearing move states in one plain sentence a stranger nods at | needs a paragraph of setup |
 
 Hard gates:
-- **THE ONE-EDGE RULE (v1.2 — Shmuel's calibration, 2026-07-10, overrides everything
-  below for news):** the default public product is a SINGLE attested edge, both
-  endpoints everyday-literal, which the news event *instantiates* (is a live case of) —
-  the Hormuz descent ("anger damages livelihood", one hop, fight→money lost) was the
-  only pilot reading Shmuel found clear; every multi-hop, hinged, or figurative reading
-  — including individually-verified ones — read to him as "making stuff up."
-  Multi-hop chains and figurative edges are STUDY MODE: keep them in bundles and
-  process notes, but a public narrative may carry at most one hop, literally read.
-  Work from `interpretations_work/clear-laws-catalog.md` (the mined single-edge law
-  inventory) — match event → law, not story → chain. If no law fits literally, publish
-  nothing rather than a stretch.
+- **THE BECAUSE-FORMULA (v1.3 — Shmuel's calibration, 2026-07-10, overrides everything
+  below for news):** the news item must contain its own causal claim — "A because B" —
+  and the entire work is: *"the article says A causes B; Rebbe Nachman already said
+  that: X causes Y (quote, ref); here's the connection."* Three or four sentences.
+  Match the article's stated because to an attested because — never construct an arc
+  from story beats. The Hormuz descent (fight→money lost ↔ "anger damages livelihood",
+  I:66) is the exemplar; multi-hop/hinged/figurative constructions read as "making
+  stuff up" even when every hop verified.
+  - Depth is allowed — "one edge" is NOT the rule; **self-explanatory is the rule.**
+    A chain qualifies if each step needs no explanation, or if one umbrella
+    explanation covers the whole cluster (Shmuel's **packages** concept — planned:
+    curated umbrella concepts that license many edges under one easy explanation).
+  - **Strengthen the identification inside the same chapter**: when matching the
+    article's terms to map concepts (fake images ↔ sheker), look for the teaching's
+    own neighboring references (I:51 holds falsehood + eyes + tears + lost
+    watchfulness together) — same-chapter reinforcement is what makes the
+    identification feel found, not forced.
+  - Work from `interpretations_work/clear-laws-catalog.md` first. If nothing fits
+    self-explanatorily, publish nothing rather than a stretch.
+  - Output length: the two worked exemplars (deepfakes/I:51, congressman/I:24+I:57,
+    recorded in the catalog) are the size ceiling. Writing too much is itself a
+    failure mode.
 - **Opposites-gate:** a reading whose key move equates opposites ("X and not-X are
   really the same") is beautiful and usually unpublishable. Allowed ONLY if it passes
   the one-breath test cleanly; otherwise take a runner-up reading. Beauty ≠ clarity.
