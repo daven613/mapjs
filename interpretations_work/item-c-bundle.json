@@ -1,0 +1,431 @@
+{
+  "input": {
+    "title": "The Narrow Channel — Iran fires on ships in the Strait of Hormuz",
+    "type": "news",
+    "text_summary": "Democracy Now! headlines, 2026-07-07: Iran fired on two ships in the Strait of Hormuz amid the Iran war. Shipping was disrupted and insurance/gas prices fluctuated worldwide within hours. Emotional center: a quarrel far away makes everyone's bread more expensive — the world's sustenance flows through one narrow channel, and wrath closes it. Guardrail: live conflict involving real nations; this reading is pattern-level only, no party judged, no side taken."
+  },
+  "sequence": [
+    {
+      "slot": 0,
+      "status": "known",
+      "id": "c:ka'as",
+      "he": "כעס",
+      "phrase": "a quarrel flares — wrath enters the marketplace, the shipping lane, the world"
+    },
+    {
+      "slot": 1,
+      "status": "known",
+      "id": "c:parnasah-livelihood-material",
+      "he": "פרנסה",
+      "phrase": "livelihood thins; the channel narrows — insurance spikes, gas gets pricier a world away"
+    },
+    {
+      "slot": 2,
+      "status": "unknown",
+      "phrase": "the hinge: not answered with more wrath, but met with peace — a free choice, not a rule of nature"
+    },
+    {
+      "slot": 3,
+      "status": "known",
+      "id": "c:shalom",
+      "he": "שלום",
+      "phrase": "peace is chosen"
+    },
+    {
+      "slot": 4,
+      "status": "known",
+      "id": "c:tefillah-2",
+      "he": "תפלה",
+      "phrase": "real prayer becomes possible again"
+    },
+    {
+      "slot": 5,
+      "status": "known",
+      "id": "c:parnasah-livelihood-material",
+      "he": "פרנסה",
+      "phrase": "sustenance is given back"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "slots": [
+        0,
+        1
+      ],
+      "ids": [
+        "c:ka'as",
+        "c:parnasah-livelihood-material"
+      ],
+      "project": {
+        "home": "I:66",
+        "cost": 0.12,
+        "chain": [
+          {
+            "id": "c:ka'as",
+            "he": "כעס",
+            "gloss": "anger/wrath (ka'as) — the emotion of rage; in lm1:68 human anger rooted in Gevurot sharing a source with money (\"from the north\"), and in lm1:18 God's anger (kaʿaso) expressed as concealment of the Divine face",
+            "kind": "concept",
+            "deg": 31,
+            "refs": [
+              "I:18",
+              "I:21",
+              "I:43",
+              "I:57",
+              "I:59",
+              "I:66",
+              "I:68",
+              "I:69",
+              "I:119",
+              "I:155",
+              "II:17"
+            ]
+          },
+          {
+            "id": "c:parnasah-livelihood-material",
+            "he": "פרנסה",
+            "gloss": "parnasah — livelihood/material sustenance: the provision of food and one's earthly means of support, granted by God (the noun פַּרְנָסָה, including suffixed forms like פַּרְנָסָתוֹ 'his livelihood')",
+            "kind": "concept",
+            "deg": 50,
+            "refs": [
+              "I:4",
+              "I:9",
+              "I:14",
+              "I:23",
+              "I:29",
+              "I:31",
+              "I:37",
+              "I:66",
+              "I:183",
+              "II:5",
+              "II:7",
+              "II:16",
+              "II:77"
+            ]
+          }
+        ],
+        "mappings": [
+          {
+            "pick": "c:ka'as",
+            "anchor": "c:ka'as",
+            "kind": "self",
+            "pcost": 0,
+            "hops": [],
+            "shared_terms": []
+          },
+          {
+            "pick": "c:parnasah-livelihood-material",
+            "anchor": "c:parnasah-livelihood-material",
+            "kind": "self",
+            "pcost": 0,
+            "hops": [],
+            "shared_terms": []
+          }
+        ],
+        "links": [
+          {
+            "cost": 0.12,
+            "hops": [
+              {
+                "from": "c:ka'as",
+                "to": "c:parnasah-livelihood-material",
+                "kind": "cause",
+                "hc": 0.12,
+                "proof": "כִּי כַּעַס מַזִּיק לְפַרְנָסָה",
+                "ref": [
+                  "I:66"
+                ],
+                "polarity": "harms",
+                "via": "presence"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "segment_index": 1,
+      "slots": [
+        3,
+        4
+      ],
+      "ids": [
+        "c:shalom",
+        "c:tefillah-2"
+      ],
+      "project": {
+        "home": "I:14",
+        "cost": 0.12,
+        "chain": [
+          {
+            "id": "c:shalom",
+            "he": "שלום",
+            "gloss": "Peace (shalom) — the spiritual quality of harmony that unites and reconciles opposites (e.g., chasadim and gevurot, mind and speech, disputing parties), associated with Yosef, Da'at, and healing; not a greeting, payment (shillum), or completeness (shalem) in another sense",
+            "kind": "concept",
+            "deg": 101,
+            "refs": [
+              "I:14",
+              "I:27",
+              "I:33",
+              "I:40",
+              "I:56",
+              "I:57",
+              "I:62",
+              "I:75",
+              "I:80",
+              "I:179",
+              "I:239",
+              "I:277"
+            ]
+          },
+          {
+            "id": "c:tefillah-2",
+            "he": "תפלה",
+            "gloss": "Prayer (tefillah, תְּפִלָּה) — the devotional act of addressing God in praise and petition, the 'service of the heart' (standing worship / the Amidah's eighteen blessings), identified with faith and the power to change nature; NOT the homograph tiflah (תִּפְלָה, 'unseemliness/folly') or tafel ('unseasoned')",
+            "kind": "concept",
+            "deg": 293,
+            "refs": [
+              "I:2",
+              "I:5",
+              "I:7",
+              "I:8",
+              "I:9",
+              "I:10",
+              "I:14",
+              "I:15",
+              "I:20",
+              "I:22",
+              "I:30",
+              "I:31",
+              "I:38",
+              "I:42",
+              "I:44",
+              "I:46",
+              "I:48",
+              "I:49",
+              "I:50",
+              "I:54",
+              "I:55",
+              "I:66",
+              "I:67",
+              "I:74",
+              "I:75",
+              "I:97",
+              "I:102",
+              "I:105",
+              "I:112",
+              "I:216",
+              "I:234",
+              "I:250",
+              "I:282",
+              "II:1",
+              "II:2",
+              "II:5",
+              "II:8",
+              "II:11",
+              "II:19",
+              "II:46",
+              "II:83",
+              "II:84",
+              "II:92",
+              "II:102",
+              "II:111"
+            ]
+          }
+        ],
+        "mappings": [
+          {
+            "pick": "c:shalom",
+            "anchor": "c:shalom",
+            "kind": "self",
+            "pcost": 0,
+            "hops": [],
+            "shared_terms": []
+          },
+          {
+            "pick": "c:tefillah-2",
+            "anchor": "c:tefillah-2",
+            "kind": "self",
+            "pcost": 0,
+            "hops": [],
+            "shared_terms": []
+          }
+        ],
+        "links": [
+          {
+            "cost": 0.12,
+            "hops": [
+              {
+                "from": "c:shalom",
+                "to": "c:tefillah-2",
+                "kind": "cause",
+                "hc": 0.12,
+                "proof": "וְעַל־יְדֵי הַשָּׁלוֹם זוֹכִין לִתְפִלָּה",
+                "ref": [
+                  "I:14"
+                ],
+                "polarity": "builds",
+                "via": "presence"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "segment_index": 2,
+      "slots": [
+        4,
+        5
+      ],
+      "ids": [
+        "c:tefillah-2",
+        "c:parnasah-livelihood-material"
+      ],
+      "project": {
+        "home": "I:9",
+        "cost": 0.12,
+        "chain": [
+          {
+            "id": "c:tefillah-2",
+            "he": "תפלה",
+            "gloss": "Prayer (tefillah, תְּפִלָּה) — the devotional act of addressing God in praise and petition, the 'service of the heart' (standing worship / the Amidah's eighteen blessings), identified with faith and the power to change nature; NOT the homograph tiflah (תִּפְלָה, 'unseemliness/folly') or tafel ('unseasoned')",
+            "kind": "concept",
+            "deg": 293,
+            "refs": [
+              "I:2",
+              "I:5",
+              "I:7",
+              "I:8",
+              "I:9",
+              "I:10",
+              "I:14",
+              "I:15",
+              "I:20",
+              "I:22",
+              "I:30",
+              "I:31",
+              "I:38",
+              "I:42",
+              "I:44",
+              "I:46",
+              "I:48",
+              "I:49",
+              "I:50",
+              "I:54",
+              "I:55",
+              "I:66",
+              "I:67",
+              "I:74",
+              "I:75",
+              "I:97",
+              "I:102",
+              "I:105",
+              "I:112",
+              "I:216",
+              "I:234",
+              "I:250",
+              "I:282",
+              "II:1",
+              "II:2",
+              "II:5",
+              "II:8",
+              "II:11",
+              "II:19",
+              "II:46",
+              "II:83",
+              "II:84",
+              "II:92",
+              "II:102",
+              "II:111"
+            ]
+          },
+          {
+            "id": "c:parnasah-livelihood-material",
+            "he": "פרנסה",
+            "gloss": "parnasah — livelihood/material sustenance: the provision of food and one's earthly means of support, granted by God (the noun פַּרְנָסָה, including suffixed forms like פַּרְנָסָתוֹ 'his livelihood')",
+            "kind": "concept",
+            "deg": 50,
+            "refs": [
+              "I:4",
+              "I:9",
+              "I:14",
+              "I:23",
+              "I:29",
+              "I:31",
+              "I:37",
+              "I:66",
+              "I:183",
+              "II:5",
+              "II:7",
+              "II:16",
+              "II:77"
+            ]
+          }
+        ],
+        "mappings": [
+          {
+            "pick": "c:tefillah-2",
+            "anchor": "c:tefillah-2",
+            "kind": "self",
+            "pcost": 0,
+            "hops": [],
+            "shared_terms": []
+          },
+          {
+            "pick": "c:parnasah-livelihood-material",
+            "anchor": "c:parnasah-livelihood-material",
+            "kind": "self",
+            "pcost": 0,
+            "hops": [],
+            "shared_terms": []
+          }
+        ],
+        "links": [
+          {
+            "cost": 0.12,
+            "hops": [
+              {
+                "from": "c:tefillah-2",
+                "to": "c:parnasah-livelihood-material",
+                "kind": "cause",
+                "hc": 0.12,
+                "proof": "וּכְפִי שֶׁמְּפַרְנֵס לְאָבִיו שֶׁבַּשָּׁמַיִם בִּתְפִלָּתוֹ, כֵּן נוֹתְנִין לוֹ פַּרְנָסָתוֹ",
+                "ref": [
+                  "I:9"
+                ],
+                "polarity": "builds",
+                "via": "presence"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "bridges": [
+    {
+      "from_segment": 0,
+      "to_segment": 1,
+      "from_id": "c:parnasah-livelihood-material",
+      "to_id": "c:shalom",
+      "penalty": 2.5,
+      "note": "the hinge (sequence slot 2, status unknown): the descent (I:66, anger damages livelihood) does not resolve into the ascent through any graph edge — the map attests no cause from a harmed state into peace. The turn is the person's free choice, named as such; segment 0 closes in LM I:66, segment 1 opens a new teaching, LM I:14."
+    },
+    {
+      "from_segment": 1,
+      "to_segment": 2,
+      "from_id": "c:tefillah-2",
+      "to_id": "c:tefillah-2",
+      "penalty": 0.0,
+      "note": "both halves are individually attested and tmap-chain-verified complete (I:14: shalom -> tefillah-2; I:9: tefillah-2 -> parnasah) — split only because each hop's home teaching differs (I:14 vs I:9), not because the chain has a gap. c:tefillah-2 is the shared anchor across both, so the penalty is near-zero."
+    }
+  ],
+  "narrative": "This week a war narrowed the world to one stretch of water. Ships were fired on in a strait a huge share of the planet's fuel passes through; insurance spiked, gas got pricier a world away, and sailors working it went out afraid. A quarrel far off, and everyone's bread costs more.\n\nRebbe Nachman, an 18th-century Hasidic teacher, names the first half of it bluntly: anger damages livelihood. Where wrath rules, sustenance thins — in a household, a marketplace, a shipping lane; not a verdict on this war, just the same narrowing at every scale. He also traces the way back: peace makes real prayer possible — that is, to my eye, a quarrel costs more than money, it costs the composure needed to ask for what's missing — and prayer, in turn, sustains a person to begin with: feed your dependence on God through it, and sustenance is fed back. Peace opens prayer; prayer, as I read it, opens the channel everything else flows through. The strait, he would say, was never only made of water. (Likutey Moharan I:66, I:14, I:9)\n\nYou don't control that strait. But you have one of your own — a channel your household's peace flows through, and anger closes it fastest. So today: make the one call or send the one text that ends a standing argument with someone you live near. Applying it plainly might mean a spouse, a neighbor, a partner you've stopped speaking to. Peace first; everything else opens from there.",
+  "narrative_by_segment": [
+    "The descent is attested in a single teaching, Likutey Moharan I:66 (cost 0.12): anger damages livelihood — a direct harms/presence eitza edge running straight from anger onto sustenance. No bridging concept needed; this is the story's own harmed outcome (parnasah) reached in one attested hop from its own cause (ka'as).",
+    "The ascent opens in Likutey Moharan I:14 (cost 0.12): through peace one merits prayer — a builds/presence eitza edge. Peace is the hinge's fruit; prayer is what peace makes possible.",
+    "The ascent closes in Likutey Moharan I:9 (cost 0.12): as one sustains his Father in Heaven with prayer, so is his sustenance given to him — a builds/presence eitza edge that returns the arc to the very concept the descent damaged, parnasah, closing the chain."
+  ],
+  "process_notes": "Rejected: c:machloket-shammai-ve (only machloket concept; deg 1, wrong register — dispute-for-Heaven's-sake); c:milchamah-war-defined (deg 4, no useful parnassah chains); c:tzedakah-power-opening / c:segulah (II:4 \"charity widens all openings\" — tempting for the strait image, but its openings are entrances into divine service, not parnassah; using it would stretch the gloss — rejected on faithfulness). Missing-concept observation: the story's central image, מיצר/strait (and צינור/channel of shefa), has NO concept in the map — the min-ha-meitzar move was unavailable; candidate for future extraction. Discovery loop that worked: polarity-filtered edge scan on the harmed outcome (harms edges touching parnassah) surfaced c:ka'as -> parnassah instantly — for news, query the harmed OUTCOME first, not the actors' actions. Ascent found via `why c:shalom c:parnasah-livelihood-material` (top chain cost 3.2, both hops attested). Runner-up ascent kept for alternates: tefillah alone (I:9) without the shalom front-link — simpler but loses the hinge (peace as the choice). Writer-supplied-image flag: \"channel,\" used twice in the public narrative (once flagged inline with \"as I read it,\" once bare in the takeaway), is a bridge image the writer supplied to connect the story's strait to the attested shalom->tefillah->parnasah spine — no map concept exists for מיצר/strait or צינור/channel-of-shefa, so neither use is attested; it rides on the honesty of the \"he would say\" line, not on any proof text. Query-honesty note: the naive direct query `chain c:shalom c:parnasah-livelihood-material` (skipping tefillah-2) returns {\"attested\": false, \"complete\": false} — this file never claims that direct hop; the published spine correctly routes shalom -> tefillah-2 -> parnasah, both legs individually tmap-chain-verified complete and attested. Hinge honesty: sequence slot 2 (the turn from wrath to peace) is deliberately status=\"unknown\" with no candidate resolution — the map attests no edge from a harm state to a builds state; the turn is the person's free choice, carried only by the bridge note, not by any graph hop."
+}

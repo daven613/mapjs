@@ -1,0 +1,157 @@
+{
+  "input": {
+    "title": "When Your Face Can Be Made to Lie",
+    "type": "news",
+    "text_summary": "Meta launched an AI-imaging tool (\"Muse\") in July 2026 that lets Instagram users generate AI images from other users' public photos without their explicit approval, sharpening deepfake fears. The tool takes a photo posted in good faith and remakes it into a scene that never happened, and the result looks convincingly real. Once such synthetic images circulate, a viewer can no longer be sure whether any given photo depicts something that actually occurred. The underlying anxiety is not the new technology itself but what happens once faces can be fabricated: seeing stops being reliable evidence of what is true."
+  },
+  "sequence": [
+    {
+      "slot": 0,
+      "status": "known",
+      "id": "c:koach-ha-medammeh",
+      "he": "כח המדמה",
+      "phrase": "a new AI tool remakes photos posted in good faith into scenes that never happened (story-supplied — the map does not attest imagination as falsehood's cause; chain c:koach-ha-medammeh c:sheker is attested:false)"
+    },
+    {
+      "slot": 1,
+      "status": "known",
+      "id": "c:sheker",
+      "he": "שקר",
+      "phrase": "once the fake exists, it is falsehood wearing a true face"
+    },
+    {
+      "slot": 2,
+      "status": "known",
+      "id": "c:ein-mishpat",
+      "he": "עינים",
+      "phrase": "the eyes — everyone's, not just the person depicted — are damaged, physically and spiritually"
+    },
+    {
+      "slot": 3,
+      "status": "known",
+      "id": "c:hashgachah-2",
+      "he": "השגחת השם יתברך",
+      "phrase": "the watchful care of God withdraws while falsehood circulates, and returns once a person guards against it"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ids": [
+        "c:sheker",
+        "c:ein-mishpat",
+        "c:hashgachah-2"
+      ],
+      "project": {
+        "home": "I:51",
+        "cost": 1.5,
+        "chain": [
+          {
+            "id": "c:sheker",
+            "he": "שקר",
+            "gloss": "falsehood/the lie (sheker) — untruth as a spiritual force opposed to emet (truth), characterized as manifold ('many calculations'), linked to idolatry and to tears/salty water",
+            "kind": "concept",
+            "deg": 28,
+            "refs": [
+              "I:9",
+              "I:23",
+              "I:51",
+              "I:117"
+            ]
+          },
+          {
+            "id": "c:hashgachah-2",
+            "he": "השגחת השם יתברך",
+            "gloss": "The watchful providence of God, blessed be He — His supervising 'gaze' (hashgachah) over the world, aroused through Israel in whom He glories, which in Likutey Moharan II:40 generates the holiness of the Land of Israel",
+            "kind": "concept",
+            "deg": 7,
+            "refs": [
+              "I:13",
+              "I:51",
+              "II:40"
+            ]
+          }
+        ],
+        "mappings": [
+          {
+            "pick": "c:sheker",
+            "anchor": "c:sheker",
+            "kind": "self",
+            "pcost": 0,
+            "hops": []
+          },
+          {
+            "pick": "c:ein-mishpat",
+            "anchor": "c:sheker",
+            "kind": "aspect",
+            "pcost": 0.5,
+            "hops": [
+              {
+                "from": "c:sheker",
+                "to": "c:ein-mishpat",
+                "proof": "כִּי הַשֶּׁקֶר מַזִּיק לָעֵינַיִם בְּגַשְׁמִיּוּת וּבְרוּחָנִיּוּת",
+                "ref": [
+                  "I:51"
+                ]
+              }
+            ]
+          },
+          {
+            "pick": "c:hashgachah-2",
+            "anchor": "c:hashgachah-2",
+            "kind": "self",
+            "pcost": 0,
+            "hops": []
+          }
+        ],
+        "links": [
+          {
+            "cost": 0.5,
+            "hops": [
+              {
+                "from": "c:sheker",
+                "to": "c:hashgachah-2",
+                "kind": "cause",
+                "hc": 0.5,
+                "proof": "וְעַל־יְדֵי הַשֶּׁקֶר, שֶׁהוּא הָרַע, מֵסִיר מִמֶּנּוּ הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ",
+                "ref": [
+                  "I:51"
+                ],
+                "polarity": "harms",
+                "via": "presence"
+              }
+            ]
+          },
+          {
+            "cost": 0.5,
+            "hops": [
+              {
+                "from": "c:sheker",
+                "to": "c:hashgachah-2",
+                "kind": "cause",
+                "hc": 0.5,
+                "proof": "יִשְׁמֹר עַצְמוֹ מִשֶּׁקֶר, וְעַל־יְדֵי־זֶה הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ עָלָיו",
+                "ref": [
+                  "I:51"
+                ],
+                "polarity": "builds",
+                "via": "absence"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "narrative": "Your own face can be made to testify against you. A new tool lets anyone take a photo\nyou posted in good faith and remake it into a scene that never happened — and the fake\nwill look every bit as true as the real one did. People already feel that little online\ncan be trusted; once faces themselves can be forged, every photo you see starts carrying\na silent question mark.\n\nThe 18th-century Hasidic teacher Rebbe Nachman named this exact damage two hundred years\nbefore the first fabricated photograph: \"falsehood damages the eyes — physically and\nspiritually.\" To my eye, the striking thing is what he doesn't say — that the lie harms\nthe person it's told about. He says it harms the eyes, everyone's. Once falsehood is\nloose in the world, seeing itself stops working, and truth can no longer even be spoken.\nIt also drives away something else: the watchful care of God. When nothing visible can\nbe trusted, even the sense of being watched over goes dark (Likutey Moharan I:51).\n\nBut the same teaching turns the sentence around: guard yourself from falsehood, and\nthrough that, God's watchful care is upon you. So today, before you repost a striking\nphoto, stop and ask one question — would you stake your own word on it being real? If\nnot, let it go no further. In a world of manufactured faces, a person whose word stays\ntrue becomes the thing the eyes can still rest on.",
+  "narrative_by_segment": [
+    "Your own face can be made to testify against you. A new tool lets anyone take a photo\nyou posted in good faith and remake it into a scene that never happened — and the fake\nwill look every bit as true as the real one did. People already feel that little online\ncan be trusted; once faces themselves can be forged, every photo you see starts carrying\na silent question mark.\n\nThe 18th-century Hasidic teacher Rebbe Nachman named this exact damage two hundred years\nbefore the first fabricated photograph: \"falsehood damages the eyes — physically and\nspiritually.\" To my eye, the striking thing is what he doesn't say — that the lie harms\nthe person it's told about. He says it harms the eyes, everyone's. Once falsehood is\nloose in the world, seeing itself stops working, and truth can no longer even be spoken.\nIt also drives away something else: the watchful care of God. When nothing visible can\nbe trusted, even the sense of being watched over goes dark (Likutey Moharan I:51).\n\nBut the same teaching turns the sentence around: guard yourself from falsehood, and\nthrough that, God's watchful care is upon you. So today, before you repost a striking\nphoto, stop and ask one question — would you stake your own word on it being real? If\nnot, let it go no further. In a world of manufactured faces, a person whose word stays\ntrue becomes the thing the eyes can still rest on."
+  ],
+  "process_notes": "Search pollution lesson: צלם returned only substring homographs (אֶצְלָם \"among them\") — no usable tzelem-Elokim concept surfaced; dropped that framing rather than force it. Rejected readings: c:mefursamim-shel-sheker (famous men of falsehood, deg 4) — tempting for the celebrity/Instagram angle but drifts toward judging persons (news guardrail) and off the emotional center; I:2's c:kilkul-ha-mishpat → קלקול לעינין (corrupted judgment → corrupted sight) — real runner-up, same eyes theme through a judicial lens, kept as the bundle alternate; II:8/I:54 medameh readings — the imagination angle is thematically obvious but its link to sheker is unattested, and anchoring there loses the emotional center (anchor gate). advice c:emet candidates (mamon I:66, breaking food-craving I:47) — off-center for this story.\nChain evidence (re-verified for this bundle via `tmap chain`): c:sheker→c:ein-mishpat attested TRUE, harms/presence, I:51, proof \"כִּי הַשֶּׁקֶר מַזִּיק לָעֵינַיִם בְּגַשְׁמִּיּות וּבְרוּחָנִּיּות\"; c:sheker→c:hashgachah-2 attested TRUE, harms/presence, I:51, proof \"וְעַל־יְדֵי הַשֶּׁקֶר, שֶׁהוּא הָרַע, מֵסִיר מִמֶּנּוּ הַשְׁגָּחת הַשֵּׁם יִתְבָּרָךְ\"; the same pair c:sheker→c:hashgachah-2 also carries a builds/absence edge, I:51, proof \"יִשְׁמֹר עַצְמוֹ מִשֶּׁקֶר, וְעַל־יְדֵי־זֶה הַשְׁגָּחת הַשֵּׁם יִתְבָּרָךְ עָלָיוְ\" — the polarity pair the takeaway is built on. c:koach-ha-medammeh→c:sheker re-verified attested FALSE (`tmap chain`, complete:false) — kept story-side; the entry beat carries the id but is excluded from segment.ids so the live re-projection never crosses that unattested edge.\nBundle shaping note: the project chain is built by hand from the two verified `tmap chain` calls rather than taken from `tmap project`'s auto-picked alternative (which routes sheker→hashgachah→truth→emet→hashgachah-2 through a different, unrelated builds/presence proof, same I:51) — that auto path is real but is not the reading this piece tells, so it was not used. The segment's chain anchors on [c:sheker, c:hashgachah-2] with two parallel links carrying the harms/presence and builds/absence proofs on the same edge — the polarity pair. c:ein-mishpat is carried as a third id, mapped as an aspect branch off c:sheker with its own attested proof, since no attested edge runs ein-mishpat→hashgachah-2 directly and chaining through it would fabricate a hop. This makes links count (2) exceed chain-1 (1) — an expected, harmless validator warning, not an error."
+}

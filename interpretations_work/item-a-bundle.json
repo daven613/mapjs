@@ -1,0 +1,92 @@
+{
+  "input": {
+    "title": "117 Days of Silence, and the Way Back",
+    "type": "news",
+    "text_summary": "Rep. Tom Kean Jr. returned to the House floor on 2026-07-07 after a 117-day absence during which he missed votes and offered no public explanation, drawing speculation. In his return remarks he disclosed he had been hospitalized for clinical depression. He did not explain his way back; he spoke his way back. Source: Democracy Now! headlines, 2026-07-07."
+  },
+  "sequence": [
+    {"slot": 0, "status": "known", "id": "c:atzvut", "he": "עצבות", "phrase": "117 days of silence — a private collapse, hidden"},
+    {"slot": 1, "status": "unknown", "phrase": "the hinge: he stops hiding and starts searching for what's still good in himself"},
+    {"slot": 2, "status": "known", "id": "c:nekudot-tovot", "he": "נקדות טובות", "phrase": "searches and gathers the good points still in himself"},
+    {"slot": 3, "status": "known", "id": "c:niggunim-2", "he": "נגונים", "phrase": "the gathered good becomes song"},
+    {"slot": 4, "status": "known", "id": "c:simchah", "he": "שמחה", "phrase": "joy"},
+    {"slot": 5, "status": "known", "id": "c:tefillah-2", "he": "תפלה", "phrase": "opens back into prayer — he can speak again"},
+    {"slot": 6, "status": "known", "id": "s:0417", "he": "לחפש ולבקש בעצמו", "phrase": "Rebbe Nachman's charge: carry this teaching, always"},
+    {"slot": 7, "status": "known", "id": "c:displaced-sparks-letters", "he": "תשובה", "phrase": "and through it, he returns"},
+    {"slot": 8, "status": "known", "id": "s:0033", "he": "לכף זכות", "phrase": "the wider principle: judge any person favorably by finding the good in him"},
+    {"slot": 9, "status": "known", "id": "s:0034", "he": "מכף חובה לכף זכות", "phrase": "raising him from guilt to merit, until he returns"},
+    {"slot": 10, "status": "known", "id": "c:azamra-lm-theme", "he": "מעט טוב בעצמו", "phrase": "and so too, a person must find this also in himself"},
+    {"slot": 11, "status": "known", "id": "s:0065", "he": "יוצא מכף חובה לכף זכות", "phrase": "the same search, turned inward"}
+  ],
+  "segments": [
+    {
+      "slots": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "ids": ["c:nekudot-tovot", "c:niggunim-2", "c:simchah", "c:tefillah-2", "s:0417", "c:displaced-sparks-letters", "s:0033", "s:0034", "c:azamra-lm-theme", "s:0065"],
+      "segment_index": 0,
+      "project": {
+        "home": "I:282",
+        "cost": 0.6,
+        "chain": ["c:nekudot-tovot", "c:niggunim-2", "c:simchah", "c:tefillah-2", "s:0417", "c:displaced-sparks-letters", "s:0033", "s:0034", "c:azamra-lm-theme", "s:0065"],
+        "mappings": [
+          {"pick": "c:nekudot-tovot", "anchor": "c:nekudot-tovot", "kind": "self", "pcost": 0, "hops": []},
+          {"pick": "c:niggunim-2", "anchor": "c:niggunim-2", "kind": "self", "pcost": 0, "hops": []},
+          {"pick": "c:simchah", "anchor": "c:simchah", "kind": "self", "pcost": 0, "hops": []},
+          {"pick": "c:tefillah-2", "anchor": "c:tefillah-2", "kind": "self", "pcost": 0, "hops": []},
+          {"pick": "s:0417", "anchor": "s:0417", "kind": "self", "pcost": 0, "hops": []},
+          {"pick": "c:displaced-sparks-letters", "anchor": "c:displaced-sparks-letters", "kind": "self", "pcost": 0, "hops": []},
+          {"pick": "s:0033", "anchor": "s:0033", "kind": "self", "pcost": 0, "hops": []},
+          {"pick": "s:0034", "anchor": "s:0034", "kind": "self", "pcost": 0, "hops": []},
+          {"pick": "c:azamra-lm-theme", "anchor": "c:azamra-lm-theme", "kind": "self", "pcost": 0, "hops": []},
+          {"pick": "s:0065", "anchor": "s:0065", "kind": "self", "pcost": 0, "hops": []}
+        ],
+        "links": [
+          {
+            "cost": 0.12,
+            "hops": [
+              {"from": "c:nekudot-tovot", "to": "c:niggunim-2", "kind": "cause", "hc": 0.12,
+               "proof": "וְכֵן יְחַפֵּשׂ וִילַקֵּט עוֹד הַנְּקֻדּוֹת טוֹבוֹת, וְעַל־יְדֵי־זֶה נַעֲשִׂין נִגּוּנִים כַּמְבֹאָר בְּמָקוֹם אַחֵר (בְּמַאֲמַר וַיְּהִי מִקֵּץ בְּסִימָן נ\"ד), בְּחִינַת מְנַגֵּן בִּכְלֵי זֶמֶר, שֶׁהוּא בְּחִינַת שֶׁמְּלַקֵּט הָרוּחַ טוֹבָ",
+               "ref": ["I:282"]}
+            ]
+          },
+          {
+            "cost": 0.12,
+            "hops": [
+              {"from": "c:simchah", "to": "c:tefillah-2", "kind": "cause", "hc": 0.12,
+               "proof": "וְעַל יְדֵי הַשִֹּמְחָה \"יַחַד הָרִים יְרַנֵּנוּ\" רִנָּה: לְשׁוֹן תְּפִלָּה, כְּמוֹ שֶׁכָּתוּב (מְלָכִים - א' ח): \"לִשְׁמֹעַ אֶל הָרִנָּה\" וְכוּ'. הָרִים בְּחִינַת צַדִּיקִים (ט), הַיְנוּ עַל יְדֵי שִׂמְחַת הַלֵּב יְכוֹלִין לְהִתְפַּלֵּל וּ",
+               "ref": ["I:282", "I:5"]}
+            ]
+          },
+          {
+            "cost": 0.12,
+            "hops": [
+              {"from": "s:0417", "to": "c:displaced-sparks-letters", "kind": "cause", "hc": 0.12,
+               "proof": "[וְהִזְהִיר רַבֵּנוּ, זִכְרוֹנוֹ לִבְרָכָה, מְאֹד לֵילֵךְ עִם הַתּוֹרָה הַזֹּאת, כִּי הוּא יְסוֹד גָּדוֹל לְכָל מִי שֶׁרוֹצֶה לְהִתְקָרֵב לְהַשֵּׁם יִתְבָּרַךְ, וּלְבַל יֹאבַד עוֹלָמוֹ לְגַמְרֵי חַס וְשָׁלוֹם, כִּי רֹב בְּנֵי אָדָם שֶׁרְחוֹ",
+               "ref": ["I:282"]}
+            ]
+          },
+          {
+            "cost": 0.12,
+            "hops": [
+              {"from": "s:0033", "to": "s:0034", "kind": "cause", "hc": 0.12,
+               "proof": "דַּע כִּי צָרִיךְ לָדוּן אֶת כָּל אָדָם לְכַף זְכוּת, וַאֲפִלּוּ מִי שֶׁהוּא רָשָׁע גָּמוּר, צָרִיךְ לְחַפֵּשׂ וְלִמְצֹא בּוֹ אֵיזֶה מְעַט טוֹב, שֶׁבְּאוֹתוֹ הַמְּעַט אֵינוֹ רָשָׁע, וְעַל יְדֵי זֶה שֶׁמּוֹצֵא בּוֹ מְעַט טוֹב, וְדָן אוֹתוֹ ל",
+               "ref": ["I:282"]}
+            ]
+          },
+          {
+            "cost": 0.12,
+            "hops": [
+              {"from": "c:azamra-lm-theme", "to": "s:0065", "kind": "cause", "hc": 0.12,
+               "proof": "וְכֵן צָרִיךְ הָאָדָם לִמְצֹא גַּם בְּעַצְמוֹ, כִּי זֶה יָדוּעַ שֶׁצָּרִיךְ הָאָדָם לִזָּהֵר מְאֹד לִהְיוֹת בְּשִׂמְחָה תָּמִיד, וּלְהַרְחִיק הָעַצְבוּת מְאֹד מְאֹד (כַּמְבֹאָר אֶצְלֵנוּ כַּמָּה פְּעָמִים). וַאֲפִלּוּ כְּשֶׁמַּתְחִיל לְהִסְ",
+               "ref": ["I:282"]}
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "narrative": "For 117 days, a congressman simply vanished — missed votes, no explanation, the kind of silence that lets people assume the worst. Colleagues wondered if he'd quit on them. He hadn't. He'd been hospitalized for clinical depression, ashamed enough to disappear rather than say so.\n\nThen he stood on the House floor and said it anyway.\n\nThat return traces an old path. An 18th-century Hasidic teacher, Rebbe Nachman, built a teaching around this exact moment — a person looking inward and finding nothing good to say for himself. Search anyway, he teaches. Find one point that's still good. Then another. Gather them, and — startlingly — they become song: the small good still in you turns into something you can sing. That joy opens a person back into prayer, and from there, the teaching goes, he can be brought all the way back.\n\nTo my eye, the same move runs underneath: judge people favorably by hunting for the bit of good even in someone who looks entirely lost — then turn that same hunt on yourself.\n\nThe way back rarely starts when the darkness lifts. It starts when you find the little in yourself still worth speaking for — and speak. Tonight, name one thing you did right today, out loud, to one person who'll hear it.",
+  "narrative_by_segment": [
+    "For 117 days, a congressman simply vanished — missed votes, no explanation, the kind of silence that lets people assume the worst. Colleagues wondered if he'd quit on them. He hadn't. He'd been hospitalized for clinical depression, ashamed enough to disappear rather than say so.\n\nThen he stood on the House floor and said it anyway.\n\nThat return traces an old path. An 18th-century Hasidic teacher, Rebbe Nachman, built a teaching around this exact moment — a person looking inward and finding nothing good to say for himself. Search anyway, he teaches. Find one point that's still good. Then another. Gather them, and — startlingly — they become song: the small good still in you turns into something you can sing. That joy opens a person back into prayer, and from there, the teaching goes, he can be brought all the way back.\n\nTo my eye, the same move runs underneath: judge people favorably by hunting for the bit of good even in someone who looks entirely lost — then turn that same hunt on yourself.\n\nThe way back rarely starts when the darkness lifts. It starts when you find the little in yourself still worth speaking for — and speak. Tonight, name one thing you did right today, out loud, to one person who'll hear it."
+  ],
+  "process_notes": "Home teaching: Likutey Moharan I:282 (Azamra), single home, no bridges. Descent (atzvut → darkened countenance) is story-supplied; the map's only confirmed fact here is that c:atzvut and c:simchah share refs I:23/I:24 (topical overlap), not a verified causal edge — the descent stage carries no spine hop. Hinge (search for the good) is the person's free choice, left unattested by design. Ascent spine: five independently `tmap chain`-verified single-hop edges within I:282 — c:nekudot-tovot→c:niggunim-2 (search/gather good points → melodies), c:simchah→c:tefillah-2 (joy → prayer; also attested at I:5), s:0417→c:displaced-sparks-letters (the bundled charge-statement → teshuvah), s:0033→s:0034 (dan lekaf zechut: judge any person, even a rasha gamur, favorably by finding a bit of good in him, raising him from guilt to merit), and c:azamra-lm-theme→s:0065 (the text's own pivot: 'and so too must a person find this also in himself'). These five edges do NOT chain into one continuous graph path — `project` fails to find a connected projection across the full concept set (confirmed 2026-07-10, both at 6 and at 10 ids), and `tmap chain s:0034 c:azamra-lm-theme` / `tmap chain s:0034 s:0065` both return attested:false. The reading is honestly five separate attested spokes off the same home teaching, not one chain; the segment's stored project block reflects this (5 links against a 10-anchor chain — the count mismatch is intentional and documented, not an oversight). The public narrative's 'to my eye' paragraph marks the one synthesis move (others→self) as the analyst's reading, not an attested hop. Explainability score 9/10: single teaching, familiar anchors, no opposites move, clean one-breath test; -1 for the statement-node-heavy spine and the non-contiguous chain, both surfaced here rather than smoothed in the prose. Rejected readings: II:8 projection (cost 2.9, all-aspect mappings, unfamiliar anchors — failed Directness+Familiarity); I:9 projection (cost 1.24 but anchor 'angelic living creatures' failed Familiarity; emotional center lost). Runner-up kept as an alternate: II:73, 'one who wants teshuvah should be regular in reciting Tehillim' — clear, but weaker fit to the emotional center than Azamra."
+}
