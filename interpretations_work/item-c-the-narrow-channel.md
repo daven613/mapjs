@@ -32,28 +32,16 @@ an analogy about a pattern, at every scale from a household to a sea lane.
   prayer is what feeds the world."* Score 9/10 (−1: the ascent spans two teachings,
   I:14 → I:9).
 
-## Public narrative (≤250 words)
+## Public narrative (because-formula, v1.3)
 
-This week a war narrowed the world to one stretch of water. Ships were fired on in a
-strait a huge share of the planet's fuel passes through; insurance spiked, gas got
-pricier a world away, and sailors working it went out afraid. A quarrel far off,
-and everyone's bread costs more.
+A war has narrowed shipping through one strait — and gas is pricier a world away
+because the fighting there is choking off supply. Rebbe Nachman, the 18th-century
+Hasidic teacher, already said that: anger damages livelihood, plainly, as its own
+law — where wrath rules, sustenance thins, in a household, a marketplace, or a
+shipping lane (Likutey Moharan I:66). It's the same narrowing at every scale: not a
+verdict on this war, just the pattern it's running on.
 
-Rebbe Nachman, an 18th-century Hasidic teacher, names the first half of it bluntly:
-anger damages livelihood. Where wrath rules, sustenance thins — in a household, a
-marketplace, a shipping lane; not a verdict on this war, just the same narrowing at
-every scale. He also traces the way back: peace makes real prayer possible — that is,
-to my eye, a quarrel costs more than money, it costs the composure needed to ask for
-what's missing — and prayer, in turn, sustains a person to begin with: feed your
-dependence on God through it, and sustenance is fed back. Peace opens
-prayer; prayer, as I read it, opens the channel everything else flows through. The
-strait, he would say, was never only made of water. (Likutey Moharan I:66, I:14, I:9)
-
-You don't control that strait. But you have one of your own — a channel your
-household's peace flows through, and anger closes it fastest. So today: make the one
-call or send the one text that ends a standing argument with someone you live near.
-Applying it plainly might mean a spouse, a neighbor, a partner you've stopped speaking
-to. Peace first; everything else opens from there.
+*Public narrative rewritten to v1.3 because-formula 2026-07-10.*
 
 ## Process notes (analyst register)
 Rejected: `c:machloket-shammai-ve` (only machloket concept; deg 1, wrong register —

@@ -35,27 +35,17 @@ trusted anymore.*
   working."* Score 9/10 (−1: the entry step technology → falsehood is story-supplied,
   not map-attested — labeled as such).
 
-## Public narrative (≤250 words)
+## Public narrative (because-formula, v1.3)
 
-Your own face can be made to testify against you. A new tool lets anyone take a photo
-you posted in good faith and remake it into a scene that never happened — and the fake
-will look every bit as true as the real one did. People already feel that little online
-can be trusted; once faces themselves can be forged, every photo you see starts carrying
-a silent question mark.
+A new tool can remake any photo you posted into a scene that never happened — and
+people are afraid because a lie can now wear a true face. Rebbe Nachman, the
+18th-century Hasidic teacher, already said that: falsehood damages the eyes
+themselves, physically and spiritually — and in the very same passage calls
+falsehood a kind of tears, the salt water that blurs sight, and says it drives away
+the sense of being watched over by God. One chapter, three ways of saying the same
+thing: once a lie is loose, seeing stops working (Likutey Moharan I:51).
 
-The 18th-century Hasidic teacher Rebbe Nachman named this exact damage two hundred years
-before the first fabricated photograph: "falsehood damages the eyes — physically and
-spiritually." To my eye, the striking thing is what he doesn't say — that the lie harms
-the person it's told about. He says it harms the eyes, everyone's. Once falsehood is
-loose in the world, seeing itself stops working, and truth can no longer even be spoken.
-It also drives away something else: the watchful care of God. When nothing visible can
-be trusted, even the sense of being watched over goes dark (Likutey Moharan I:51).
-
-But the same teaching turns the sentence around: guard yourself from falsehood, and
-through that, God's watchful care is upon you. So today, before you repost a striking
-photo, stop and ask one question — would you stake your own word on it being real? If
-not, let it go no further. In a world of manufactured faces, a person whose word stays
-true becomes the thing the eyes can still rest on.
+*Public narrative rewritten to v1.3 because-formula 2026-07-10.*
 
 ## Process notes (analyst register)
 Search pollution lesson: צלם returned only substring homographs (אֶצְלָם "among them")

@@ -49,28 +49,16 @@ aloud and returning.*
   bridge is an analyst synthesis of two verified edges, not one attested chain hop —
   flagged honestly above rather than smoothed over in the prose).
 
-## Public narrative (217 words)
+## Public narrative (because-formula, v1.3)
 
-For 117 days, a congressman simply vanished — missed votes, no explanation, the kind
-of silence that lets people assume the worst. Colleagues wondered if he'd quit on them.
-He hadn't. He'd been hospitalized for clinical depression, ashamed enough to disappear
-rather than say so.
+A congressman was gone from the House floor for 117 days — because, he said on his
+return, he'd been hospitalized for depression. Rebbe Nachman, the 18th-century Hasidic
+teacher, already said that: sadness is what exiles the felt presence of God, more than
+any actual wrongdoing. He names the mirror effect too — when trust in one's guides runs
+out, that missing trust is itself the departure people sense, exactly the vacuum the
+speculation about him filled while he stayed silent (Likutey Moharan I:24, I:57).
 
-Then he stood on the House floor and said it anyway.
-
-That return traces an old path. An 18th-century Hasidic teacher, Rebbe Nachman, built a
-teaching around this exact moment — a person looking inward and finding nothing good to
-say for himself. Search anyway, he teaches. Find one point that's still good. Then
-another. Gather them, and — startlingly — they become song: the small good still in you
-turns into something you can sing. That joy opens a person back into prayer, and from
-there, the teaching goes, he can be brought all the way back.
-
-To my eye, the same move runs underneath: judge people favorably by hunting for the bit
-of good even in someone who looks entirely lost — then turn that same hunt on yourself.
-
-The way back rarely starts when the darkness lifts. It starts when you find the little
-in yourself still worth speaking for — and speak. Tonight, name one thing you did right
-today, out loud, to one person who'll hear it.
+*Public narrative rewritten to v1.3 because-formula 2026-07-10.*
 
 ## Process notes (analyst register)
 Rejected readings: II:8 projection (cost 2.9, all-aspect mappings, unfamiliar anchors —
