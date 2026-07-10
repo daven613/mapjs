@@ -127,9 +127,92 @@ let NODES=[],EDGES=[],TORAHS=[],byId={},adj={},idf={},tokx={};
 let mode='explore',focus=null,hist=[],view={nodes:[],edges:[],path:null},sim={},anim=null,hover=null;
 let savedProjection=null;   // {picks:[ids], res} — lets the user leave to explore a concept and come back
 let traceData=null,traceSegIdx=null;   // loaded story-trace JSON (scripts/segment_project.py + story write-up)
+let traceSlug=null;                     // slug when a trace loaded from ?trace= (null for #b= hash or file loads)
+let lastMatchQ='',lastAB={a:null,b:null},lastTorah=null;   // remembered inputs, so the URL can carry them
+let restoringURL=false,appliedHash=null;                   // guards while reproducing a view from the URL
 function exploreConcept(id){ setMode('explore'); go(id); drawCrumbs(); }  // non-destructive: savedProjection survives
 const cv=document.getElementById('c'),ctx=cv.getContext('2d'),tip=document.getElementById('tip');
 const $=id=>document.getElementById(id);
+
+// ---------- URL state: the whole flow lives in the URL ----------
+// Readable query params for every mode (?mode=…&focus=…&picks=…&q=…&a=&b=&ref=&trace=&seg=),
+// kept in sync via history.replaceState as you interact and parsed back on load so opening the URL
+// reproduces the same view. A self-contained trace can also ride in the #b= hash (see below).
+// `restoringURL` suppresses the sync while we reproduce a view, so restoring never rewrites the URL.
+function currentURLParams(){
+  const p={mode};
+  if(mode==='explore'||mode==='aspects'||mode==='advice'||mode==='effects'){ if(focus)p.focus=focus; }
+  else if(mode==='project'){ if(view&&view.picks&&view.picks.length)p.picks=view.picks.join(','); }
+  else if(mode==='match'){ if(lastMatchQ)p.q=lastMatchQ; }
+  else if(mode==='path'||mode==='common'){ if(lastAB.a)p.a=lastAB.a; if(lastAB.b)p.b=lastAB.b; }
+  else if(mode==='torah'){ if(lastTorah)p.ref=lastTorah; }
+  else if(mode==='trace'){ if(traceSlug)p.trace=traceSlug; if(traceSegIdx!=null)p.seg=traceSegIdx; }
+  return p;
+}
+function buildURL(params){
+  const qs=new URLSearchParams();
+  Object.keys(params).forEach(k=>{const v=params[k];if(v!==undefined&&v!==null&&v!=='')qs.set(k,v);});
+  return location.pathname+(qs.toString()?'?'+qs.toString():'')+location.hash;   // preserve #b= bundle
+}
+function syncURL(push){
+  if(restoringURL)return;
+  const url=buildURL(currentURLParams());
+  if(url===location.pathname+location.search+location.hash)return;   // unchanged → no history churn
+  try{ if(push)history.pushState(null,'',url); else history.replaceState(null,'',url); }catch(_){}
+}
+// ---- self-contained trace in the hash: #b=<base64url(deflate(bundle-json))> ----
+function b64urlToBytes(s){ s=s.replace(/-/g,'+').replace(/_/g,'/'); while(s.length%4)s+='='; const bin=atob(s);
+  const b=new Uint8Array(bin.length); for(let i=0;i<bin.length;i++)b[i]=bin.charCodeAt(i); return b; }
+async function inflateBundle(b64){                                   // 'deflate' = zlib (RFC 1950), matches Python zlib.compress
+  const stream=new Blob([b64urlToBytes(b64)]).stream().pipeThrough(new DecompressionStream('deflate'));
+  const buf=await new Response(stream).arrayBuffer();
+  return JSON.parse(new TextDecoder().decode(buf));
+}
+function parseHashBundle(){ const m=/[#&]b=([^&]+)/.exec(location.hash||''); return m?m[1]:null; }
+// minimal shape check before trusting an embedded bundle (full validation lives in scripts/make_trace.py)
+function validTraceShape(b){ return !!(b&&typeof b==='object'&&b.input&&Array.isArray(b.sequence)&&Array.isArray(b.segments)&&b.segments.length); }
+function defaultFocus(){ const s=NODES.filter(n=>n.kind!=='statement').sort((a,b)=>b.deg-a.deg)[0]; return s&&s.id; }
+
+// Reproduce the view the current URL describes. Runs on first load and on back/forward (popstate).
+async function applyURLState(){
+  restoringURL=true;
+  try{
+    const q=new URLSearchParams(location.search);
+    // 1) an embedded bundle in #b= is the trace source (decoded once per distinct hash)
+    const hb=parseHashBundle();
+    if(hb && (!traceData || location.hash!==appliedHash)){
+      try{ const b=await inflateBundle(hb);
+        if(validTraceShape(b)){ applyTrace(b); traceSlug=null; appliedHash=location.hash; }
+        else setStatus('embedded trace (#b=) failed the minimal shape check'); }
+      catch(e){ setStatus('could not decode embedded trace (#b=): '+e.message); }
+    }
+    // 2) ?trace=slug (file-based) if no embedded bundle already gave us the trace
+    const slug=parseTraceSlug();
+    if(!hb && slug && traceSlug!==slug){ setMode('trace');
+      await loadTraceUrl('./traces/'+slug+'.json','no trace file at ./traces/'+slug+'.json');
+      if(traceData)traceSlug=slug; }
+    // 3) apply mode + its params
+    const m=q.get('mode');
+    if(m) applyModeFromParams(m,q);
+    else if(traceData){ setMode('trace'); const seg=parseInt(q.get('seg'),10); if(!isNaN(seg))selectTraceSegment(seg); else showTraceOverview(); }
+    else { setMode('explore'); const f=defaultFocus(); if(f)go(f); }
+  } finally { restoringURL=false; }
+}
+function applyModeFromParams(m,q){
+  const known=['explore','aspects','advice','effects','path','common','torah','match','project','trace'];
+  if(!known.includes(m)){ setMode('explore'); const f=defaultFocus(); if(f)go(f); return; }
+  setMode(m);
+  if(m==='explore'||m==='aspects'||m==='advice'||m==='effects'){ const f=q.get('focus'); go(f&&byId[f]?f:defaultFocus()); }
+  else if(m==='project'){ const picks=(q.get('picks')||'').split(',').map(s=>s.trim()).filter(x=>byId[x]); if(picks.length>=2){ fillStages(picks); runProjectFor(picks); } }
+  else if(m==='match'){ const text=q.get('q')||''; if(text){ const mb=$('matchbox'); if(mb)mb.value=text; lastMatchQ=text; runMatch(); } }
+  else if(m==='path'||m==='common'){ const a=q.get('a'),b=q.get('b'); if(a&&b&&byId[a]&&byId[b]){ setABInputs(a,b); lastAB={a,b}; (m==='path'?runPath:runCommon)(); } }
+  else if(m==='torah'){ const ref=q.get('ref'); if(ref){ const sel=$('torahSel'); if(sel)sel.value=ref; runTorah(ref); } }
+  else if(m==='trace'){ if(traceData){ const seg=parseInt(q.get('seg'),10); if(!isNaN(seg))selectTraceSegment(seg); else showTraceOverview(); } }
+}
+// repopulate a mode's inputs so the UI matches a restored view
+function fillStages(picks){ stageN=Math.max(2,Math.min(6,picks.length)); renderStages();
+  picks.forEach((id,i)=>{const el=$('ac_stg_'+i); if(el){el.value=byId[id]?(byId[id].he+' — '+((byId[id].gloss||'').slice(0,30))):id; el.dataset.id=id; el.classList.add('picked');}}); }
+function setABInputs(a,b){ [['a',a],['b',b]].forEach(([f,id])=>{const el=$('ac_'+f); if(el){el.value=byId[id]?(byId[id].he+' — '+((byId[id].gloss||'').slice(0,30))):id; el.dataset.id=id; el.classList.add('picked');}}); }
 
 // ---------- load + index ----------
 fetch('./explorer_data.json').then(r=>r.json()).then(d=>{
@@ -142,11 +225,9 @@ fetch('./explorer_data.json').then(r=>r.json()).then(d=>{
     else if(e.ty==='eitza'){adj[e.s].eitzaOut.push(e.t);adj[e.t].eitzaIn.push(e.s);}
   });
   buildTokenIndex();
-  buildModes(); setMode('explore');
-  const start=NODES.filter(n=>n.kind!=='statement').sort((a,b)=>b.deg-a.deg)[0];
-  go(start.id);                                    // a sensible default focus behind the trace UI
-  const traceSlug=parseTraceSlug();                // deep-link: explorer.html?trace=<slug>
-  if(traceSlug){setMode('trace');loadTraceUrl('./traces/'+traceSlug+'.json','no trace file at ./traces/'+traceSlug+'.json');}
+  buildModes();
+  applyURLState();                                 // reproduce whatever the URL describes (params and/or #b= bundle)
+  addEventListener('popstate',()=>applyURLState()); // back/forward reproduces the view
 });
 function tokens(s){return (s||'').toLowerCase().match(/[a-z]{3,}|[א-ת]{2,}/g)||[];}
 let ctxx={},conceptsIn={};
@@ -198,6 +279,7 @@ function buildModes(){
 function setMode(m){
   mode=m;[...$('modes').children].forEach(b=>b.classList.toggle('on',b.dataset.m===m));
   renderInputs();
+  syncURL(true);   // a mode change is a new history entry; the dispatch below fills in params via replace
   if(m==='explore'||m==='aspects'||m==='advice'||m==='effects'){ if(focus)go(focus); }
   else if(m==='torah'){ runTorah($('torahSel').value); }
   else if(m==='trace'){ renderTraceList(); }
@@ -310,23 +392,26 @@ function go(id){ if(!byId[id])return;
   view={focus:id,center:id,edges:shown.map(x=>x.e),nodes:[id].concat(shown.map(x=>x.o)),path:null,ego:shown};
   layoutEgo(id,shown); drawDetail(id); drawCrumbs();
   setStatus(`${nb.length} ${mode==='explore'?'connections':mode} · showing ${shown.length}`);
+  syncURL(false);
 }
 function runTorah(ref){
-  if(!ref)return; focus=null;
+  if(!ref)return; focus=null; lastTorah=ref;
   const es=EDGES.filter(e=>(e.ref||[]).includes(ref));
   const ns=new Set(); es.forEach(e=>{ns.add(e.s);ns.add(e.t);});
   view={edges:es.slice(0,120),nodes:[...ns],path:null,center:null};
   layoutForce([...ns].slice(0,80),es); drawTorahDetail(ref,es,ns); drawCrumbs();
   setStatus(`LM ${ref.replace(':',' · ')} — ${es.length} edges, ${ns.size} concepts`);
+  syncURL(false);
 }
 function runMatch(){
-  const q=$('matchbox').value;
+  const q=$('matchbox').value; lastMatchQ=q;
   const scored=matchList(q,40);
-  if(!scored.length){setStatus('no concept matched that text');$('list').innerHTML='<div class="sec">No matches</div>';return;}
+  if(!scored.length){setStatus('no concept matched that text');$('list').innerHTML='<div class="sec">No matches</div>';syncURL(false);return;}
   const max=scored[0][1];
   listResults(scored.map(x=>byId[x[0]]),'Closest concepts',scored.map(x=>Math.round(100*x[1]/max)+'%'));
   go(scored[0][0]);
   setStatus(`best match: ${byId[scored[0][0]].he} (${scored.length} candidates)`);
+  syncURL(false);
 }
 // ---------- structural projection (validated in scripts/project_test.py) ----------
 function hopCost(e,home){ if((e.ref||[]).includes(home))return 0.12; return e.ty==='eitza'?1.6:2.0; }
@@ -446,6 +531,7 @@ function runProject(){
   const picks=[];for(let i=0;i<stageN;i++){const el=$('ac_stg_'+i);if(el&&el.dataset.id)picks.push(el.dataset.id);}
   if(picks.length<2){setStatus('pick at least two concepts from the dropdowns');return;}
   runProjectFor(picks);
+  syncURL(false);   // ?mode=project&picks=… (view.picks is set by runProjectFor)
 }
 // core of runProject(), factored out so "Story trace" mode can drive it with a
 // precomputed pick list (one story segment) instead of reading the stage inputs.
@@ -617,6 +703,7 @@ function selectTraceSegment(i){
      <div class="meta" style="color:var(--dim)">Story trace · segment ${i+1} of ${traceData.segments.length}</div>
      ${note?`<div class="en" style="margin-top:6px">${note}</div>`:''}</div>`+D.innerHTML;
   renderTraceList();
+  syncURL(false);   // ?mode=trace&trace=…&seg=i
 }
 function showTraceOverview(){
   if(!traceData)return;
@@ -629,6 +716,7 @@ function showTraceOverview(){
     <div class="grp"><h3>Elaboration</h3><div class="en" style="line-height:1.8">${(traceData.narrative||'').replace(/\n/g,'<br>')}</div></div>`;
   D.scrollTop=0;
   renderTraceList();
+  syncURL(false);   // trace overview → drop &seg=
 }
 function showUnknownDetail(i){
   if(!traceData)return;
@@ -801,6 +889,7 @@ function drawStoredProjectDetail(picks,res,seg,disagree){
 function runPath(){
   const a=idOf('a'),b=idOf('b');
   if(!a||!b){setStatus('pick both concepts from the dropdown');return;}
+  lastAB={a,b};
   const prev={},cost={},pq=[{id:a,c:0}]; cost[a]=0;
   while(pq.length){
     pq.sort((x,y)=>x.c-y.c); const {id,c}=pq.shift();
@@ -808,16 +897,18 @@ function runPath(){
     (adj[id]?.all||[]).forEach(x=>{ const nc=c+1/Math.max(1,x.e.w);
       if(cost[x.o]===undefined||nc<cost[x.o]){cost[x.o]=nc;prev[x.o]={from:id,e:x.e};pq.push({id:x.o,c:nc});}});
   }
-  if(cost[b]===undefined){setStatus('no path found between them');drawTwoDetail(a,b,null);return;}
+  if(cost[b]===undefined){setStatus('no path found between them');drawTwoDetail(a,b,null);syncURL(false);return;}
   const chain=[],edges=[]; let cur=b;
   while(cur!==a){const p=prev[cur];chain.unshift(cur);edges.unshift(p.e);cur=p.from;} chain.unshift(a);
   view={path:chain,edges,nodes:chain,center:null};
   layoutPath(chain,edges); drawPathDetail(chain,edges); drawCrumbs();
   setStatus(`path found — ${chain.length-1} steps`);
+  syncURL(false);
 }
 function runCommon(){
   const a=idOf('a'),b=idOf('b');
   if(!a||!b){setStatus('pick both concepts');return;}
+  lastAB={a,b};
   const na=new Set((adj[a]?.all||[]).map(x=>x.o)), nb=new Set((adj[b]?.all||[]).map(x=>x.o));
   const common=[...na].filter(x=>nb.has(x));
   const nodes=[a,b,...common], es=[];
@@ -826,6 +917,7 @@ function runCommon(){
   view={edges:es,nodes,path:null,center:null,twoFoci:[a,b]};
   layoutForce(nodes,es,[a,b]); drawCommonDetail(a,b,common); drawCrumbs();
   setStatus(common.length?`${common.length} shared concept(s)`:'no direct common ground');
+  syncURL(false);
 }
 
 // ---------- list rendering ----------

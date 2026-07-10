@@ -226,6 +226,7 @@ hop kind, or an odd `home`/`status` value.
 python3 scripts/make_trace.py BUNDLE.json                # validate + install, print URL
 python3 scripts/make_trace.py BUNDLE.json --check        # validate only
 python3 scripts/make_trace.py BUNDLE.json --slug my-story # explicit slug
+python3 scripts/make_trace.py BUNDLE.json --url-only     # self-contained #b= URL, no file written
 cat BUNDLE.json | python3 scripts/make_trace.py -        # from stdin
 ```
 
@@ -239,3 +240,39 @@ http://localhost:8890/explorer.html?trace=<slug>&t=<epoch>
 `<slug>` is re-sanitized in the browser to `[a-z0-9_-]`, so it can never escape the `traces/`
 directory. The `&t=<epoch>` cache-buster is belt-and-suspenders atop the server's no-store headers
 (`scripts/serve_explorer.sh`).
+
+## The whole flow lives in the URL
+
+The explorer keeps its full state in the URL (via `history.replaceState`, and `pushState` on mode
+changes) so a view can be bookmarked or shared and reopened identically. On load — and on
+back/forward (`popstate`) — it parses the URL and reproduces the view. Two forms compose:
+
+**Readable query params** — one grammar per mode:
+
+| mode | params | example |
+|---|---|---|
+| explore / aspects / advice / effects | `focus=<id>` | `?mode=explore&focus=c:simchah` |
+| project | `picks=<id,id,…>` | `?mode=project&picks=c:atzvut,c:simchah,c:emunah-2` |
+| match | `q=<text>` | `?mode=match&q=joy%20heals` |
+| path / common | `a=<id>&b=<id>` | `?mode=path&a=c:atzvut&b=c:simchah` |
+| torah | `ref=<REF>` | `?mode=torah&ref=I:10` |
+| trace | `trace=<slug>&seg=<N>` | `?mode=trace&trace=lost-princess&seg=1` |
+
+`?trace=<slug>` (without `mode=`) still works and is equivalent to `?mode=trace&trace=<slug>`; add
+`&seg=N` to open directly on a segment. Ids are validated against the graph on load; unknown ones
+fall back gracefully (e.g. to a default focus) rather than erroring.
+
+**Self-contained trace in the hash** — `#b=<base64url(deflate(bundle-json))>` embeds an entire
+bundle in the URL, no `traces/` file needed. `make_trace.py --url-only` prints it:
+
+```
+http://localhost:8890/explorer.html#b=<base64url(deflate(bundle-json))>
+```
+
+The compression is raw zlib (`zlib.compress` on the Python side; `DecompressionStream('deflate')`
+in the browser — both RFC 1950, verified to round-trip), then URL-safe base64 with padding
+stripped. On load, if `#b=` is present the explorer decompresses it, runs a minimal shape check,
+and hands it to the same code path as `?trace=`. The query params and the `#b=` hash coexist: you
+can deep-link to a specific segment of an embedded bundle (`…?mode=trace&seg=0#b=…`). If the
+generated URL would exceed ~30 000 characters `make_trace.py` warns and recommends the file form;
+the explorer renders whatever it is given.

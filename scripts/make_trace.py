@@ -12,10 +12,13 @@ Usage:
     cat BUNDLE.json | python3 scripts/make_trace.py -         # read from stdin
     python3 scripts/make_trace.py BUNDLE.json --slug my-story  # explicit slug
     python3 scripts/make_trace.py BUNDLE.json --check          # validate only, do not write
+    python3 scripts/make_trace.py BUNDLE.json --url-only       # print a self-contained #b= URL, no file written
 
 On success it writes ontology/graph/traces/<slug>.json and prints the deep-link URL
     http://localhost:8890/explorer.html?trace=<slug>&t=<epoch>
-so a CLI session can hand a reviewer a clickable, proof-backed interpretation.
+so a CLI session can hand a reviewer a clickable, proof-backed interpretation. With --url-only it
+instead prints a fully self-contained URL that carries the whole bundle in the #b= hash (no file):
+    http://localhost:8890/explorer.html#b=<base64url(deflate(bundle-json))>
 
 The validation rules are derived from what explorer.html's story-trace renderer actually
 consumes (renderTraceList / selectTraceSegment / showTraceOverview / showUnknownDetail and the
@@ -293,6 +296,8 @@ def main(argv=None):
     ap.add_argument("bundle", help="path to the bundle JSON, or '-' for stdin")
     ap.add_argument("--slug", help="install slug (default: derived from input.title)")
     ap.add_argument("--check", action="store_true", help="validate only; do not write or print a URL")
+    ap.add_argument("--url-only", action="store_true",
+                    help="print a SELF-CONTAINED URL with the whole bundle in the #b= hash (no traces/ file written)")
     ap.add_argument("--port", type=int, default=DEFAULT_PORT, help=f"port for the printed URL (default {DEFAULT_PORT})")
     args = ap.parse_args(argv)
 
@@ -332,6 +337,20 @@ def main(argv=None):
           + f"  [{title}]", file=sys.stderr)
 
     if args.check:
+        return 0
+
+    # ---- self-contained URL: embed the whole bundle in the #b= hash ----
+    # deflate (zlib, RFC 1950 — matches the explorer's DecompressionStream('deflate')) then
+    # url-safe base64 (no padding). The explorer decodes #b= on load exactly like ?trace=.
+    if args.url_only:
+        import zlib, base64
+        raw = json.dumps(bundle, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+        b64 = base64.urlsafe_b64encode(zlib.compress(raw, 9)).decode("ascii").rstrip("=")
+        url = f"http://localhost:{args.port}/explorer.html#b={b64}"
+        if len(url) > 30000:
+            print(f"warning  self-contained URL is {len(url)} chars (> ~30k) — some browsers/tools may truncate it; "
+                  f"prefer the file form (drop --url-only) for a bundle this large", file=sys.stderr)
+        print(url)
         return 0
 
     # ---- resolve slug + write ----
