@@ -102,6 +102,34 @@ Tool: `python3 /home/smiles/dev/mapjs/scripts/tmap.py <command> [--pretty]` — 
 - "How are X and Y connected?" → `path A B`, and `common A B` for shared ground.
 - "What does Torah N teach?" → `torah I:N`, summarize its causal spine.
 
+## Workflow: interpreting a news item / story → a shareable map link
+The full crystallized pipeline lives in `specs/interpretation_v1.md` — READ IT before
+running this workflow; it carries field-tested rules this summary compresses. The loop:
+1. **Distill** the item into 3–6 universal dynamics ordered in time; name the emotional
+   center (what an ordinary reader feels). Dynamics, not actors; never judge real people.
+2. **Split at the hinge**: descent (what went wrong — query `harms` edges touching the
+   OUTCOME concept, i.e. what the reader feels was lost) and ascent (the remedy — eitza
+   `builds` chains). The hinge is the person's free choice; the map attests each side
+   separately, never across.
+3. **Resolve** ids (`search`/`match`; substring-polluted results → rephrase, don't force).
+   **Query** (`project`, bisect broken arcs, `torah REF` + assemble when flow rides
+   statement nodes). **Verify every spine hop with `chain`** — attested:true or it's out.
+4. **Gate for explainability** (spec Stage 4): familiar anchors, ≤1 aspect hop, no
+   opposites move unless it passes the one-breath test, emotional center preserved.
+   Look for polarity pairs (same edge harms/presence + builds/absence) — problem and
+   remedy in one sentence. Nothing passes → publish the honest miss.
+5. **Narrate in two registers** (spec Stage 5 + v1.1 rules): public text ≤250 words,
+   no inline book codes, no Hebrew script in the flow, writer's gloss audibly the
+   writer's, one concrete do-today takeaway earned by THIS story, real stakes honored
+   before any inward pivot. Analyst detail goes in process_notes.
+6. **Emit the bundle**: shape per `specs/trace_bundle_v1.md`, then
+   `python3 scripts/make_trace.py <bundle.json> --slug <slug>` → validates, installs,
+   prints `http://localhost:8890/explorer.html?trace=<slug>&t=<epoch>`. THE URL IS THE
+   DELIVERABLE — the explorer renders the reading clickable with every proof.
+Worked pilots (read one before your first run): `interpretations_work/item-a-*.md`
+(chain-based single home), `item-b-*.md` (polarity pair), `item-c-*.md` (hinge bridge +
+multi-teaching ascent), each with its judge feedback file alongside.
+
 ## Discipline (hard rules)
 - **Never invent connections**: if the graph lacks an edge, say so — absence is data.
   Node NAMES and glosses are identity, not connectivity: two nodes whose Hebrew looks
