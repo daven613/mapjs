@@ -3,455 +3,231 @@
   "missing": [
    {
     "concept_he": "יאוש / אין שום יאוש בעולם כלל",
-    "concept_en": "despair (yiush) and its prohibition — 'there is no despair in the world at all'",
-    "refs": "LM II:78; also LM II:48",
-    "why": "Zero hits for יאוש/מתיאש/despair anywhere in the 3,588-concept vocab. This is arguably the most famous single line in Likutey Moharan and the causal hinge of the whole hitchazkut cluster (despair as the harms-edge, its negation as the eitza). Its absence is a major hole: atzvut (c:atzvut) and marah shechorah (c:marah-shechorah-black) exist, but their terminal state yiush does not."
-   },
-   {
-    "concept_he": "התחזקות / לחזק את עצמו",
-    "concept_en": "hitchazkut — self-strengthening, refusing to fall from one's own descents; includes the 'great stubbornness' (עקשנות גדול) required in avodah",
-    "refs": "LM II:48 (העיקר... צריך להתחזק; עקשנות גדול בעבודת ה'); LM II:78; LM I:282 as its method",
-    "why": "Zero hits for התחזקות/חזוק עצמו/עקשנות. The only chizzuk nodes are c:chizzuk-ha-lev (a different concept: heart containing intellect) and strengthening-the-dream-angel nodes (LM I:54 context). Hitchazkut is named in this audit's own domain list and is the organizing concept of LM II:48/II:78 — it must be a node so despair->harms and hitchazkut->builds edges have an anchor."
-   },
-   {
-    "concept_he": "תמימות ופשיטות",
-    "concept_en": "temimut u-peshitut — wholehearted simplicity in serving God, casting away sophistication",
-    "refs": "LM II:19 (העיקר הוא תמימות ופשיטות); LM II:78 (better to be a 'prostak'); LM II:5",
-    "why": "Zero hits for תמימות or פשיטות as an avodah trait. Existing 'simple' nodes are all other senses: achdut pashut (c:achdut-pashut), sekhel pashut (c:binah-2), or ha-pashut (c:kamitz-setim), ben tam (c:gen-3), tzaddik ha-pashut (c:tzaddik-ha-pashut). The devotional-quality concept of LM II:19 is absent."
-   },
-   {
-    "concept_he": "אמונה פשוטה",
-    "concept_en": "emunah peshutah — simple faith, relying on faith alone and discarding chakirot/philosophy",
-    "refs": "LM II:19; LM I:62 context (chakirot vs emunah); cf. c:ikkar-hasagat-ha gloss which already invokes 'simple faith'",
-    "why": "37 emunah nodes exist (emunah shelemah, emunat chakhamim, fallen faith, etc.) but none for simple faith as opposed to speculative inquiry — a distinct, load-bearing concept in LM II:19 and throughout Part II. Note node c:ikkar-hasagat-ha's gloss even says 'achieved through simple faith', so edges already want this target."
-   },
-   {
-    "concept_he": "מצוה גדולה להיות בשמחה תמיד / להפך יגון ואנחה לשמחה",
-    "concept_en": "the great mitzvah to be in joy always; transforming sorrow (yagon va'anachah) into joy; including milei di-shtuta (jesting/silliness) as a means to joy",
-    "refs": "LM II:24",
-    "why": "Zero hits for יגון, 'בשמחה תמיד', or מילי דשטותא. The registry has generic simchah (c:simchah) and many I:54/I:24-derived joy nodes, but LM II:24 — the flagship counsel that constant joy is a mitzvah, that sicknesses stem from broken joy, and that sorrow must be chased down and turned into joy — has no node. Without it the central simchah eitza-edge of Part II has nowhere to land."
-   },
-   {
-    "concept_he": "הודאה",
-    "concept_en": "hoda'ah — thanksgiving/acknowledgment to God as a practice, the delight of the World to Come ('yemei hoda'ah')",
-    "refs": "LM II:2 (עיקר שעשוע עולם הבא הוא הודאה); cf. chatzot node c:six-hours-night whose gloss mentions 'lament and thanksgiving'",
-    "why": "Zero hits for הודאה/הודיה as a standalone concept. Only two Azamra clause-nodes (c:ability-pray-sing, c:ability-sing-thank) mention lehodot in passing. LM II:2 makes hoda'ah itself the substance of olam haba and pairs it with halakhah — a core practice concept missing entirely."
-   }
-  ],
-  "fragmented": [
-   {
-    "theme": "Hitbodedut practice itself",
-    "node_ids": "c:room-field, c:hitbodedut-practice-secluding, c:devotional-practice-hitbodedut, c:speaking-between-oneself",
-    "note": "Four ids for the one practice of secluded conversation with God (LM II:25, I:52, II:100, I:156 contexts): התבודדות (c:room-field — note the id also mismatches its content), מתבודד ומפרש שיחתו בינו לבין קונו, שצריך כל אחד לדבר בינו לבין קונו, מה שמדברים בינו לבין קונו. The last three are the same definitional phrase and should merge into the main hitbodedut node."
-   },
-   {
-    "theme": "Teshuvah upon teshuvah (LM I:6)",
-    "node_ids": "c:teshuvah-al-teshuvato, c:teshuvah-first-teshuvah, c:teshuvah-sheniyah-second",
-    "note": "Three nodes for the single LM I:6 concept of the second repentance done over one's first repentance (kevod olam haba). Same teaching, same referent."
-   },
-   {
-    "theme": "Walking the ways of teshuvah / baki be-ratzo u-ve-shov (LM I:6)",
-    "node_ids": "c:holekh-darkhei-ha, c:ascent-im-esak, c:baki-ratzo-baki",
-    "note": "הולך בדרכי התשובה / לילך בדרכי התשובה / זוכה לדרך התשובה — three near-identical forms of one LM I:6 concept (double expertise in ascent and descent)."
-   },
-   {
-    "theme": "Bringing others back in teshuvah (Jer 15:19)",
-    "node_ids": "c:jer-2, c:jer-5",
-    "note": "להחזיר בני אדם בתשובה appears twice with essentially identical Hebrew and the same 'extracting the precious from the vile' gloss — an exact duplicate pair. Related near-triple: gerim u-ba'alei teshuvah drawn near (c:gerim, c:glory-splendor, c:drawing-converts-ba; LM I:14/I:17 hitpa'arut theme)."
-   },
-   {
-    "theme": "Simchah shel mitzvah (LM I:5, I:24, I:169 contexts)",
-    "node_ids": "c:asiyat-ha-mitzvot, c:viduy-devarim-2, c:yirah, c:eleven-incense-spices, c:eleven-incense-spices-2",
-    "note": "Five near-duplicates for joy-in-mitzvah-performance: עשית המצוות בשמחה, שמחה של מצוה, שמחת המצוות, עושה המצוה בשמחה, שמחת המצוה. At most two distinct textual anchors (I:5 tefillin/decree-discernment and I:24 kelipot-elevation); should collapse to one or two. Note ids c:viduy-devarim-2 and c:yirah also mismatch their content."
-   },
-   {
-    "theme": "Festival joy (simchat Yom Tov)",
-    "node_ids": "c:yom-tov, c:essence-root-festival, c:clause, c:deut-14",
-    "note": "שמחת יום טוב, עקר שמחת יום טוב, יש לו שמחת יום טוב, שמחה של יום טוב — four nodes, two of which are self-described as mere construct-head/clause variants ('a predication that a person has festival joy'). Classic verse-fragment/clause nodes masquerading as concepts; merge into one."
-   },
-   {
-    "theme": "Niggun-by-hand sorting good spirit from evil spirit (LM I:54)",
-    "node_ids": "c:ve-nigen-yado, c:niggun-ve-simchah, c:simchah-2",
-    "note": "שמחה הבאה על־ידי המנגן ביד / נגון ושמחה / נגון ביד שהוא בחינת שמחה — three nodes for the one LM I:54 ve-nigen-be-yado concept."
-   },
-   {
-    "theme": "Azamra — finding good points (LM I:282)",
-    "node_ids": "c:azamra-lm-theme, c:sadness, c:ability-pray-sing, c:ability-sing-thank, c:ruach-tovah",
-    "note": "The single Azamra complex is spread across: seeking a bit of good in oneself (c:azamra-lm-theme) vs enlivening oneself to joy via good points (c:sadness) — near-dupes; ability to pray/sing/thank via good points (c:ability-pray-sing) vs ability to sing and thank via the 'od' (c:ability-sing-thank) — near-dupes. c:ruach-tovah (nekudot tovot) is legitimately distinct but its id mismatches."
-   },
-   {
-    "theme": "Viduy devarim before the talmid chakham (LM I:4)",
-    "node_ids": "c:vidui-devarim, c:viduy-devarim, c:practice-recounting-before",
-    "note": "Two ids differing only in transliteration (vidui/viduy!) plus יספר לפני התלמיד חכם הינו ודוי דברים — three nodes for one LM I:4 practice; c:viduy-devarim (confession before the scholar) vs c:vidui-devarim (confession generally) is at best a hair-split."
-   },
-   {
-    "theme": "Fallen faith and its rectification (LM II:5, I:57)",
-    "node_ids": "c:gerim-2, c:specifically-faith-sages, c:emunah-nefulah; c:nitakken-ha-emunah, c:tikkun-ha-emunah; c:kibbutzei-ha-emunah, c:chelkei-ha-emunah, c:likkutei-ha-emunah; c:your-faithfulness-nights, c:etzot-3, c:tikkun-fallen-faith",
-    "note": "Four sub-clusters of near-dupes: raising fallen faith (three: שמעלין אמונה הנפולה / להקים אמונה הנפולה / וכשמעלין האמונה הנפולה), tikkun ha-emunah (two: נתתקן האמונה / תקון האמונה — identical glosses), gathering the portions of faith (three), and faith growing via waters-of-counsel (three). Each sub-cluster should be one node. Also junk clause-fragments c:when-has-faith / c:when-has-faith-2 ('when one has faith', 'when one has faith of that specific kind') duplicating c:emunah-2."
-   },
-   {
-    "theme": "Masa u-matan be-emunah (business in faith)",
-    "node_ids": "c:masa-matan-be'emunah, c:conducts-business-faith, c:ha-chayim, c:pshat-torah",
-    "note": "Four nodes: the practice, the agent-of-the-practice (explicitly 'the one who conducts... not the activity itself'), אמונה במשא ומתן, and כשאדם עוסק במשא ומתן באמונה. The agent-node and the כשאדם clause-node are fragments of the first."
-   },
-   {
-    "theme": "Azut duplicate pairs",
-    "node_ids": "c:sitra-achra + c:azut-ha-guf; c:action-performed-upon + c:azut-ha-guf-2; c:mefursamim + c:brazenness; c:more-azut-di + c:azut-le-daber",
-    "note": "Four duplicate pairs: azut ha-guf (c:sitra-achra) vs azut de-sitra-achra glossed as azut ha-guf (c:azut-ha-guf — id/content also crossed); breaking the body's brazenness twice (LM I:22); recognizing mefursamim-through-azut twice (Master-of-Prayer theme); boldness to speak with one's rav twice (LM I:271 / II:? — same concept)."
-   },
-   {
-    "theme": "LM I:75 speech of Torah and prayer",
-    "node_ids": "c:dibbur, c:speech-holiness, c:words-utterances-torah, c:raising-feminine-waters, c:feminine-waters, c:eitza-2, c:likutey-moharan-8, c:they-shall-flesh",
-    "note": "Eight nodes all citing LM I:75 for speaking abundantly in Torah/tefillah (converting blood to holy speech, raising mayin nukvin, nullifying machloket): דבור של תורה ותפלה vs its 'of holiness' qualified head vs דבורי תורה ותפלה is triple-counting; the two mayin-nukvin nodes duplicate each other; the eitza (c:eitza-2) vs blood-to-speech (c:likutey-moharan-8) vs body-nullified (c:they-shall-flesh) duplicate the same counsel. Also duplicate pair c:koach-ha-tefillah vs c:praying-all-strength (LM I:48 praying with all one's strength into the letters)."
-   },
-   {
-    "theme": "Amirat Tehillim for teshuvah (LM II:73) and Tikkun HaKlali",
-    "node_ids": "c:tehillim, c:amirat-tehillim-recitation, c:regularly-accustomed-reciting; c:specific-list-ten, c:tikkun-haklali-3",
-    "note": "c:tehillim's gloss already IS 'amirat Tehillim as segulah for teshuvah (LM II:73)', duplicated by c:amirat-tehillim-recitation and again by the habituation-variant c:regularly-accustomed-reciting. Separately, the Ten Psalms of Tikkun HaKlali appear twice (c:specific-list-ten, c:tikkun-haklali-3)."
-   },
-   {
-    "theme": "The sigh (anachah) — borderline",
-    "node_ids": "c:anachah-2, c:anachah, c:ha-noah-veha, c:azut-di-kedushah-6",
-    "note": "Four sigh-nodes. c:anachah (breath-lengthening, LM I:8) and c:azut-di-kedushah-6 (kol anachah as azut, LM I:22) have distinct anchors and may stand; c:ha-noah-veha (the groan and sigh as quasi-death) vs the generic c:anachah-2 look mergeable. Flag for review rather than automatic merge. Note c:azut-di-kedushah-6's id mismatches (it is the sigh, not azut itself)."
-   }
-  ]
- },
- {
-  "missing": [
-   {
-    "concept_he": "תלמידי חכמים שדין יהודאין",
-    "concept_en": "Torah scholars who are 'Jewish demons' (demonic scholars whose Torah harms)",
-    "refs": "LM I:12; LM I:28",
-    "why": "A signature LM concept in the tzaddik/Torah-study domain: Torah received from these scholars damages the learner, and they are the root of opposition to true tzaddikim. Grep for שדין returns nothing; the registry has rav-de-klipah (c:yesh-li-rav) and mefursamim-shel-sheker but not this distinct concept."
-   },
-   {
-    "concept_he": "יאוש / אין שום יאוש בעולם כלל",
-    "concept_en": "despair / 'there is no despair in the world at all'",
+    "concept_en": "Despair (yeush) and its prohibition — 'there is no despair in the world at all'",
     "refs": "LM II:78",
-    "why": "Central to the hitbodedut/tefillah practice cluster (despair as the blocker of prayer and of finding one's good points). Grep for יאוש returns zero hits anywhere in the 3,588 concepts."
+    "why": "Zero hits for יאוש/תתיאש anywhere in 3,588 concepts. This is arguably THE flagship hitchazkut dictum of Likutey Moharan (II:78, Gevalt-ye'ush section). Both the harmful state (yeush) and the counsel against it are absent; sadness (atzvut) exists but despair does not."
    },
    {
     "concept_he": "התחזקות",
-    "concept_en": "self-strengthening / spiritual encouragement after a fall",
-    "refs": "LM II:48; LM I:282 (context)",
-    "why": "The classic LM II:48 counsel (when one falls from his level he must strengthen himself and begin anew) is absent — grep for התחזקות returns zero. Its companion nekudot-tovot nodes exist, but the hitchazkut concept itself does not."
+    "concept_en": "Hitchazkut — spiritual self-strengthening / never giving up",
+    "refs": "LM I:282, II:48, II:78",
+    "why": "Zero hits for התחזקות. Only two narrow nodes exist (c:chizzuk-ha-lev 'strengthening the heart', c:likutey-moharan-ii 'strengthening the angel'). The general practice-concept that names an entire pillar of Breslov avodah — explicitly listed in this audit's domain scope — has no node."
    },
    {
-    "concept_he": "תורה שבכתב",
-    "concept_en": "the Written Torah",
-    "refs": "paired with Oral Torah passim, e.g. LM I:20",
-    "why": "The registry has תורה שבעל פה (c:torah-be'al-peh) and תורה שבנגלה (c:torah-nigleh) but no Written-Torah node at all (grep שבכתב is empty), leaving the standard written/oral pair one-legged."
+    "concept_he": "תמימות ופשיטות",
+    "concept_en": "Temimut u-peshitut — simplicity and wholeheartedness in serving God, without sophistication (chochmot)",
+    "refs": "LM II:19, II:78, II:5",
+    "why": "Zero hits for תמימות/פשיטות as concepts; the only hit is the Psalms epithet 'temimei darekh' (c:ps-11). LM II:19 states explicitly that the essence of serving God is temimut u-peshitut without any chochmot — a core avodah counsel with no node."
    },
    {
-    "concept_he": "קימת חצות",
-    "concept_en": "rising at midnight (chatzot practice)",
-    "refs": "Sichot HaRan 301; cf. LM II:67 (chatzot as mourning)",
-    "why": "Only the time-of-night node exists (c:six-hours-night חצות). The practice of rising at chatzot — a core Breslov eitzah tied to tefillah and mourning the Mikdash — has no node; grep for קימת חצות and תקון חצות is empty."
-   }
-  ],
-  "fragmented": [
-   {
-    "theme": "hitkarvut / hitkashrut la-tzaddik (drawing close and binding to the tzaddik)",
-    "node_ids": "c:drawing-close-tzaddikim, c:emet-2, c:im, c:tzam'ah-nafshi, c:tzaddikim, c:tzaddik-2, c:devotional-practice-binding, c:hitkashrut-truly-binding, c:hitkashrut, c:binding-attaching-oneself, c:attached-tzaddik-believing",
-    "note": "At least 11 ids for one counsel (LM I:2, I:9, I:123 'the essence is to bind oneself to the tzaddik of the generation'). התקרבות לצדיקים appears verbatim under two different ids (c:drawing-close-tzaddikim and c:emet-2); c:im's id has nothing to do with its content התקשרות לצדיקים. Should collapse to 2-3 nodes (hitkarvut, hitkashrut, hitdabkut) at most."
+    "concept_he": "לעשות מהתורות תפלות",
+    "concept_en": "Turning Torah teachings into prayers",
+    "refs": "LM II:25 (end); cf. Sichot HaRan 145",
+    "why": "Zero hits for any form (תורות תפלות, נעשה מהתורה, etc.). This is the signature practice appended to the main hitbodedut teaching — Rebbe Nachman calls the resulting prayers 'sha'ashuim gedolim' before God. A first-order eitza missing entirely."
    },
    {
-    "theme": "sipurei maasiyot of tzaddikim (telling tales of the righteous)",
-    "node_ids": "c:practice-telling-recounting, c:nominal-construct, c:tales-object, c:tzaddikim-2, c:sippurei-ma-asiyot, c:impression, c:ve-alehu-li, c:remembering-barren-women",
-    "note": "Six near-identical concept nodes (לספר מעשיות של צדיקים / ספורי מעשיות של צדיקים / מעשיות של צדיקים / ספורי מעשיות / ספורים מצדיקים) for one concept (LM I:234), plus two duplicate nodes for 'awakening people from sleep via stories' (LM I:60). c:nominal-construct and c:impression are also id/content mismatches."
+    "concept_he": "ירידה / ירידה תכלית העליה",
+    "concept_en": "Spiritual descent / fall, and descent-for-the-sake-of-ascent",
+    "refs": "LM I:22, II:78; cf. I:6 (ratzo va-shov)",
+    "why": "Zero hits for ירידה; נפיל hits are epilepsy and 'their brazenness falls'. The graph has c:baki-ratzo-baki (the expertise of descent, LM I:6/II:78) but the descent-state itself — the thing every hitchazkut edge should act on — has no node, so 'fall -> hitchazkut -> return' chains cannot be expressed."
    },
    {
-    "theme": "eitzat ha-tzaddikim (counsel of the tzaddikim)",
-    "node_ids": "c:eitzah, c:etzah, c:etzah-2, c:etzot, c:eitza",
-    "note": "c:eitzah (עצת הצדיקים) and c:etzah (עצת צדיקים) are flat duplicates (LM I:7: eitzah as depth/zivug; I:143). c:etzah-2 (עצה) and c:etzot overlap; c:eitza is an id mismatch — its Hebrew is ילמד ש\"ס (learn Shas), not eitzah."
-   },
-   {
-    "theme": "dibbur shel Torah u-tefillah / holy speech",
-    "node_ids": "c:dibbur, c:speech-holiness, c:words-utterances-torah, c:dibbur-2, c:speech, c:ha-dibbur-ha, c:dibbur-4, c:dibbur-3",
-    "note": "Three ids for the identical concept 'speech of Torah and prayer' (דבור של תורה ותפלה / דבור דקדשה של תורה ותפלה / דבורי תורה ותפלה — LM I:19, I:34); plus a generic-dibbur cluster (c:dibbur-2 דבור, c:speech שלמות הדבור, c:ha-dibbur-ha דבור הקדוש, c:dibbur-4). c:dibbur-3's Hebrew is שרה — a bechina of dibbur, not dibbur itself; wrong to slug it dibbur."
-   },
-   {
-    "theme": "tefillah core node",
-    "node_ids": "c:tefillah, c:tefillah-2, c:tefillot-plural-tefillah, c:prayer",
-    "note": "c:tefillah-2 (תפלה) vs c:tefillot-plural-tefillah (תפלות) should merge; worse, c:tefillah's actual Hebrew is פרה (cow — the parah adumah bechina of LM?) and c:prayer's Hebrew is הצעקה (the cry, LM I:21?) — both slug/content mismatches sitting on top of the real prayer node."
-   },
-   {
-    "theme": "mecha'at kapayim — clapping hands in prayer",
-    "node_ids": "c:mecha'at-kaf-kapayim, c:wings-speech-unification, c:hamcha'at-kaf, c:clapping-palm-palm, c:shelav, c:clapping-prayer-nullifies",
-    "note": "Five-plus ids for one practice (LM I:44, I:45, I:46: clapping in prayer nullifies machloket / stray thoughts): מחאת כפים, מחאת כפים בתפלה, המחאת כף, כשמכה כף אל כף בשעת התפלה, כשמכה כף אל כף ומחבר הידים בתפלה."
-   },
-   {
-    "theme": "niggun / neginah core and 'ten kinds of melody'",
-    "node_ids": "c:niggun, c:neginah, c:neginah-2, c:kol-ha-niggun; c:asarah-minei-zimrah, c:numerical-value-2, c:ten-kinds-melody; c:menagen-ba-yad, c:music-making-hand, c:simchah-2, c:ve-nigen-yado; c:shir-chadash, c:shir-chadash-2",
-    "note": "Four separate frag clusters in the melody theme: (a) נגון vs נגינה generic nodes; (b) 'ten kinds of melody' three times — עשרה מיני זמרה / עשרה מיני נגונא / עשרה מיני נגינה (LM I:205, II:92 / Tikkun HaKlali); (c) playing by hand (נגון ביד, LM I:54) four times; (d) שיר חדש duplicated exactly (LM II:8)."
-   },
-   {
-    "theme": "machloket core",
-    "node_ids": "c:contradictory-ideas, c:machaloket, c:machloket, c:notzot-yinatzu, c:strife-rectified-nullified",
-    "note": "The bare concept מחלקת lives at c:contradictory-ideas (slug mismatch); c:machaloket is actually the EFFECT 'nullifying machloket'; c:machloket's Hebrew is אחדות שנתגלה בישראל — unity, the opposite of its id (polarity-inversion hazard for any edge attached to it). Legitimate distinct nodes (machloket le-shem shamayim, Shammai/Hillel, mei merivah) exist alongside; the generic node needs consolidation. Refs: LM I:64 (machloket as briat ha-olam), I:46."
-   },
-   {
-    "theme": "tzaddik core / manhig amiti",
-    "node_ids": "c:like-moses-joseph, c:ha-tzaddik, c:tzaddik, c:true-tzaddik-singular, c:ha-manhig-ha, c:manhig-ha'amiti",
-    "note": "צדיק (c:like-moses-joseph — slug mismatch) vs הצדיק (c:ha-tzaddik) are one concept; c:tzaddik itself carries an unrelated sentence (שיגלה חכמתו ותבונתו לתלמידיו). המנהיג האמתי is duplicated at c:ha-manhig-ha and c:manhig-ha'amiti (LM I:10?, II:7 'the true leader of all Israel')."
-   },
-   {
-    "theme": "vidui devarim (verbal confession before a talmid chacham)",
-    "node_ids": "c:vidui-devarim, c:viduy-devarim, c:practice-recounting-before",
-    "note": "Same concept (LM I:4: vidui devarim before a talmid chacham) under two transliteration-variant ids plus a third phrasal node יספר לפני התלמיד חכם הינו ודוי דברים."
-   },
-   {
-    "theme": "anachah (the holy sigh)",
-    "node_ids": "c:anachah, c:anachah-2, c:ha-noah-veha",
-    "note": "LM I:8 / I:109 sigh-as-lengthened-breath duplicated: c:anachah (אנחה הוא אריכת הנשימה), c:anachah-2 (אנחה), plus fragment c:ha-noah-veha (נה והאנחה)."
-   },
-   {
-    "theme": "hitbodedut",
-    "node_ids": "c:room-field, c:hitbodedut-practice-secluding",
-    "note": "LM II:25 split in two: c:room-field carries the bare term התבודדות (slug describes the room/field detail, not the concept) while c:hitbodedut-practice-secluding carries the definition sentence. Should be one node with the practice slug."
-   },
-   {
-    "theme": "nekudot tovot (finding good points, Azamra)",
-    "node_ids": "c:nekudot-tovot, c:motzeh-atzmo-eizeh, c:ruach-tovah, c:matza-tov-finding",
-    "note": "LM I:282 spread over: finding a good point in oneself (c:motzeh-atzmo-eizeh), gathering more good points (c:nekudot-tovot), and c:ruach-tovah whose Hebrew is actually נקדות טובות — a slug/content mismatch duplicating the same concept."
-   },
-   {
-    "theme": "chiddushei Torah",
-    "node_ids": "c:novel-torah-insights, c:aramaic-novelties-torah",
-    "note": "חדושי תורה and חדושין דאוריתא are Hebrew/Aramaic forms of the same concept (LM I:20, I:60 context) and should be one node with the Aramaic as a form."
-   },
-   {
-    "theme": "lashon hakodesh",
-    "node_ids": "c:hebrew, c:shlemut",
-    "note": "לשון הקדש (c:hebrew) vs שלמות לשון הקדש (c:shlemut, LM I:19) — the second may be a defensible distinct bechina (perfection of the holy tongue), but the slugs are both wrong for their content and the pair needs an explicit relation or a merge. Note also lashon hara's canonical node is c:human — a severe id/content mismatch worth fixing while consolidating this cluster."
-   }
-  ]
- },
- {
-  "missing": [
-   {
-    "concept_he": "חנוכה / נר חנוכה / ימי חנוכה",
-    "concept_en": "Chanukah — the festival and its lights",
-    "refs": "LM I:14 (end — the drawn-down kavod/shalom is 'bechinat ner chanukah'); LM II:2 ('yemei Chanukah hem yemei hoda'ah'); LM II:7 (delivered on Chanukah)",
-    "why": "The word חנוכה appears NOWHERE in any canonical_he or forms field. The only adjacent node is c:chanukah whose Hebrew is the generic הדלקת הנר (candle-lighting) — so the festival itself, its lights, and 'days of thanksgiving' are all unrepresented despite anchoring at least three teachings across both parts. Every other major mo'ed (RH, YK, Sukkot, Pesach, Shavuot, Purim, Yom Tov) has a node."
+    "concept_he": "גשר צר מאד / והעיקר לא להתפחד כלל",
+    "concept_en": "The very narrow bridge — the counsel not to fear at all",
+    "refs": "LM II:48",
+    "why": "Zero hits for גשר צר or לא להתפחד. One of the most-cited dicta of LM II:48 (hitchazkut domain): the world as a narrow bridge and fearlessness as the essential response. Neither the image nor the counsel exists as a concept."
    },
    {
     "concept_he": "הודאה",
-    "concept_en": "hoda'ah — thanksgiving/acknowledgment as a practice and state",
-    "refs": "LM II:2 (hoda'ah = the delight of olam ha-ba; Chanukah as days of hoda'ah)",
-    "why": "Zero hits for הודאה/הודיה as a concept; only sentence fragments about singing praise (c:ability-pray-sing, c:ability-sing-thank). It is the load-bearing cause-node of LM II:2 and the natural head for the missing Chanukah cluster."
+    "concept_en": "Hoda'ah — thanksgiving/gratitude as a devotional mode (the delight of Olam Haba)",
+    "refs": "LM II:2 ('ימי חנוכה הם ימי הודאה')",
+    "why": "Zero hits for הודאה/הודיה as a standalone concept; להודות appears only bundled inside c:ability-pray-sing. LM II:2 makes hoda'ah itself a central category (days of thanksgiving = the sha'ashua of the World to Come), distinct from prayer-of-petition."
    },
    {
-    "concept_he": "מקוה / טבילת מקוה",
-    "concept_en": "mikveh — ritual immersion as such",
-    "refs": "LM I:56 (the mikveh teaching; the two existing specializations derive from it)",
-    "why": "Only two specialized nodes exist — c:sha'ar-hanun (מקוה של שער החמשים) and c:per-shavuot-kavvanot (מקוה של שבועות). There is no parent node for immersion itself (טבילה also has zero hits), so any generic eitza-edge 'mikveh purifies / sweetens dinim' has no target. This is a physical practice central to Breslov praxis with direct LM attestation."
-   },
-   {
-    "concept_he": "תאות אכילה",
-    "concept_en": "the lust for eating (base concept)",
-    "refs": "attested by its own derivative nodes: c:shevirat-ta'avat-akhilah (שבירת תאות אכילה), c:ta'avat-akhilah-2 (נתתקן תאות אכילה), c:satisfied-whatever-eats (fragment)",
-    "why": "The registry has the BREAKING of the food-lust and its RECTIFICATION, but no node for the lust itself — unlike money-lust, which has both תאות ממון (tmp:0014) and its breaking (tmp:0013). Asymmetric gap: harms-polarity edges from ta'avat akhilah (e.g. dimmed face, LM's shevirat-akhilah context) currently have no source node."
+    "concept_he": "שיחה בלשון שמדברים בו (לשון אשכנז)",
+    "concept_en": "Conducting hitbodedut in one's spoken vernacular (Yiddish)",
+    "refs": "LM II:25",
+    "why": "Zero hits for לשון אשכנז. LM II:25 makes the vernacular requirement a defining condition of hitbodedut ('because the heart is drawn after the language one is accustomed to'). Lower priority than the items above but a distinct, explicit counsel of the core hitbodedut teaching."
    }
   ],
   "fragmented": [
    {
-    "theme": "שמירת הברית — guarding the covenant",
-    "node_ids": "c:shmirat-ha-brit, c:sexual-purity, c:shmirat-ha-brit-2, c:ni'uf, c:ni'uf-adultery, c:guarding-against-lust, c:nocturnal-emission",
-    "note": "Seven ids for one concept. c:shmirat-ha-brit (שמירת הברית בשתי בחינות) and c:sexual-purity (על־ידי שמירת הברית בשני הבחינות הנ\"ל) are the SAME phrase from LM I:11 (the two aspects: zivug from Shabbat to Shabbat, etc.). c:ni'uf-adultery (שמירה מנאוף), c:guarding-against-lust (שמירה מתאוה נאוף) and c:nocturnal-emission (שמירה מתאות נאוף) are one 'guarding from the lust' concept — and c:nocturnal-emission's slug does not match its Hebrew at all."
+    "theme": "Hitbodedut — the practice itself",
+    "node_ids": "c:room-field, c:hitbodedut-practice-secluding, c:devotional-practice-hitbodedut, c:basis-hitbodedut-outdoors",
+    "note": "Three ids for the same practice: c:room-field (התבודדות — note id/content mismatch, slug says room-field), c:hitbodedut-practice-secluding (מתבודד ומפרש שיחתו בינו לבין קונו), c:devotional-practice-hitbodedut (שצריך כל אחד לדבר בינו לבין קונו). All are LM II:25's one concept. c:basis-hitbodedut-outdoors (praying in the field, LM II:11) is legitimately distinct and can stay."
    },
    {
-    "theme": "פגם הברית — the rebav-on-garment sign",
-    "node_ids": "c:pegam-ha-brit, c:pgam-ha-brit, c:stain-grease-spot, c:stain-one's-clothing, c:has-blemished-covenant",
-    "note": "c:pegam-ha-brit and c:pgam-ha-brit are two ids differing only in slug vowel; worse, c:pgam-ha-brit's Hebrew is actually נמצא רבב על בגדיו, duplicating c:stain-grease-spot (הכתם והרבב שנמצא על בגדו) and c:stain-one's-clothing (פגם הבגדים) — the talmid-chacham-with-a-stain motif (cf. LM I:29 citing Shabbat 114a) is spread across four nodes."
+    "theme": "Azamra — finding the good points (LM I:282)",
+    "node_ids": "c:ruach-tovah, c:azamra-lm-theme, c:nekudot-tovot, c:motzeh-atzmo-eizeh",
+    "note": "Four near-duplicates of 'searching out and finding nekudot tovot in oneself': c:ruach-tovah (נקדות טובות — also an id/content mismatch), c:azamra-lm-theme (מעט טוב), c:nekudot-tovot (יחפש וילקט עוד הנקדות טובות), c:motzeh-atzmo-eizeh (שמוצא בעצמו איזה נקדה טובה). c:dan-le-khaf (judging others favorably) is a distinct facet and should remain separate."
    },
    {
-    "theme": "תקון הברית / תקון הכללי",
-    "node_ids": "c:brit-organ-procreation, c:elul-kavanot, c:sexual-purity-2",
-    "note": "c:brit-organ-procreation (תקון הברית), c:elul-kavanot (תקון לפגם הברית) and c:sexual-purity-2 (תקון הכללי, שהוא תקון הברית) all denote the covenant's rectification; the tikkun-haklali=tikkun-habrit equation node should merge into or equate with the base, and both slugs (brit-organ-procreation, elul-kavanot) mislabel their content."
+    "theme": "Simchah shel mitzvah — joy in performing commandments",
+    "node_ids": "c:viduy-devarim-2, c:yirah, c:eleven-incense-spices-2, c:asiyat-ha-mitzvot, c:eleven-incense-spices, c:simchat-torah-mitzvah",
+    "note": "At least five ids for one concept: שמחה של מצוה / שמחת המצוות / שמחת המצוה / עשית המצוות בשמחה / עושה המצוה בשמחה. Also flagrant id/content mismatches: c:yirah carries שמחת המצוות and c:viduy-devarim-2 carries שמחה של מצוה — slugs from entirely different concepts."
    },
    {
-    "theme": "תאות ממון — the money-lust complex",
-    "node_ids": "tmp:0013, tmp:0014, tmp:0015, tmp:0016, tmp:1768, tmp:2094, tmp:1878, tmp:2223",
-    "note": "The lust itself is split between תאות ממון (tmp:0014) and תאות עשירות (tmp:1768) — same vice (LM I:23, I:68). Its removal is split three ways: שבירת (tmp:0013), נתתקן (tmp:0016), נתבטל חמדת הממון (tmp:2094 — LM I:23 via mezuzah). tmp:0015 is an explicit rectification-statement fragment, not a concept. tmp:1878 (משקע בתאות ממון) and tmp:2223 (ממון של המשקעים בממון) both encode the sunk-in-money state (anpin chashukhin, LM I:23)."
+    "theme": "Festival joy (simchat yom tov)",
+    "node_ids": "c:yom-tov, c:deut-14, c:essence-root-festival, c:clause",
+    "note": "Four ids: שמחת יום טוב, שמחה של יום טוב, עקר שמחת יום טוב, יש לו שמחת יום טוב. The last (c:clause) is a predication-fragment masquerading as a concept — a known failure mode. Two at most are defensible (the joy, and its 'essence')."
    },
    {
-    "theme": "משא ומתן באמונה — faithful commerce",
-    "node_ids": "tmp:0050, tmp:0728, tmp:1057, tmp:0051",
-    "note": "משא ומתן באמונה (tmp:0050), אמונה במשא ומתן (tmp:0728), and the sentence-form כשאדם עוסק במשא ומתן באמונה (tmp:1057, the tamid/incense equivalence) are one practice; tmp:0051 (העושה משא ומתן באמונה) is its agent-nominalization. At minimum 0050/0728/1057 should be one id."
+    "theme": "Hitgalut ha-ratzon — revelation of the Divine Will via festivals (LM II:4)",
+    "node_ids": "c:hitgalut-ha-ratzon, c:hitgalut-ha-ratzon-2, c:hitgalut-ha-ratzon-3, c:revelation-ratzon-unmodified, c:revelation-divine-supernal, c:ratzon-2, c:yom-tov-embodiment, c:regel-yom-tov, c:festivals-agents-revelation",
+    "note": "Nine ids circling one teaching: התגלות הרצון, נתגלה הרצון, נתגלה הרצון העליון, התגלות הרצון על ידי ימים טובים, יום טוב שהוא התגלות הרצון, etc. Worst fragmentation cluster found in this domain — should collapse to roughly two concepts (the revelation itself; yom tov as its vehicle)."
    },
    {
-    "theme": "פרנסה בלא יגיעה — effortless livelihood",
-    "node_ids": "tmp:1296, tmp:2306, tmp:2308",
-    "note": "Three nodes for the same reward-state: פרנסה בלא יגיעה וטרח (tmp:1296, a sentence fragment), פרנסה בלי טרח (tmp:2306, via tikkun ha-brit), פרנסה בנקל (tmp:2308, via da'at — 'the less da'at, the more toil'). 1296 is a verbatim near-duplicate of 2306. Compare also tmp:1895's trailing 'ועל כן הפרנסה בנקל' fragment."
+    "theme": "Azut di-kedushah — holy boldness",
+    "node_ids": "c:azut-di-kedushah, c:azut-di-kedushah-4, c:azut-di-kedushah-5, c:more-azut-di, c:azut-d'kedushah, c:azut-di-kedushah-2",
+    "note": "Five near-duplicates of the LM I:22 concept (עזות דקדשה, עזות דקדשה שיש בו, מקבל עזות דקדשה, עזות יותר, מתגברין בעזות גדול). Separately, c:azut-di-kedushah-2 is a WRONG-CONTENT node: its Hebrew is שמחה וחדוה (joy and gladness) — an id/content mismatch that will corrupt any edge attached to it. c:azut-le-daber (boldness to speak with one's teacher) is legitimately distinct."
    },
    {
-    "theme": "ענג שבת — Shabbat delight",
-    "node_ids": "c:oneg-shabbat-mitzvah, c:subduing-liver-enemy, c:az-titanag-al, c:tastes-delight-shabbat, c:ta-anug-ve",
-    "note": "c:oneg-shabbat-mitzvah (ענג שבת) and c:subduing-liver-enemy (עונג שבת) are the identical concept under two spellings — and the latter's slug is flatly wrong for its content. c:az-titanag-al (עולה ומתענג בענג שבת), c:tastes-delight-shabbat (מי שטועם טעם ענג שבת) and c:ta-anug-ve (תענוג והשמחה של שבת) are experiencer-fragments of the same node. c:oneg-akhilat-shabbat is legitimately distinct (eating-specific)."
+    "theme": "Azut ha-guf / azut de-sitra-achra — profane brazenness, with SWAPPED ids",
+    "node_ids": "c:sitra-achra, c:azut-ha-guf, c:azut-ha-guf-2, c:action-performed-upon",
+    "note": "The ids are crossed: c:sitra-achra carries עזות הגוף while c:azut-ha-guf carries עזות דסטרא אחרא — each slug matches the other node's content. Additionally c:action-performed-upon (משבר עזות הגוף) and c:azut-ha-guf-2 (כשמשבר עזות ותקיפות הגוף) duplicate 'breaking the body's brazenness'."
    },
    {
-    "theme": "המשכת קדשת שבת לימי החול",
-    "node_ids": "c:drawing-shabbat-sanctity, c:drawing-shabbat-holiness",
-    "note": "להמשיך קדשת שבת לקדש ימי החל vs שממשיכין קדשה של שבת לששת ימי החל — the same eitza duplicated. c:drawing-joy-shabbat (simchah variant) is arguably distinct but should at least be linked."
+    "theme": "Teshuvah shelemah and walking the ways of teshuvah (LM I:6)",
+    "node_ids": "c:teshuvah-shelemah, c:performs-complete-repentance, c:leading-complete-teshuvah, c:holekh-darkhei-ha, c:ascent-im-esak, c:baki-ratzo-baki",
+    "note": "Two sub-clusters: complete repentance appears as the state (c:teshuvah-shelemah), the agent (c:performs-complete-repentance, עושה תשובה שלמה), and embedded in c:leading-complete-teshuvah; 'walking the ways/paths of teshuvah' appears as c:holekh-darkhei-ha (הולך בדרכי התשובה), c:ascent-im-esak (לילך בדרכי התשובה), and inside c:baki-ratzo-baki (זוכה לדרך התשובה) — same LM I:6 concept in verb-form variants."
    },
    {
-    "theme": "שמחת יום טוב + יום טוב כהתגלות הרצון",
-    "node_ids": "c:yom-tov, c:essence-root-festival, c:clause, c:deut-14; c:regel-yom-tov, c:ratzon-2, c:yom-tov-embodiment",
-    "note": "Simchat yom tov appears four times: c:yom-tov (שמחת יום טוב), c:essence-root-festival (עקר שמחת יום טוב), c:clause (יש לו שמחת יום טוב — a clause, and a meaningless slug), c:deut-14 (שמחה של יום טוב). Separately, yom-tov-as-revelation-of-ratzon (LM II:4) is triplicated: c:regel-yom-tov, c:ratzon-2 (התגלות הרצון שנתגלה ביום טוב), c:yom-tov-embodiment (יום טוב שהוא התגלות הרצון)."
+    "theme": "Tefillah be-koach — praying with force (LM I:5, I:8)",
+    "node_ids": "c:tefillah-koach, c:koach-ha-tefillah, c:re'amim-2",
+    "note": "c:tefillah-koach (תפלה בכח) and c:koach-ha-tefillah (כח התפלה מה שמתפללין בכח) are the same concept; c:re'amim-2 (קול שאדם מוציא בכח בתפלתו — the voice brought out with force becoming thunder, LM I:5) is the same act under its proof-text framing. Related pair c:tefillah-sekhel-tzach / c:sekhel-tzach (praying with lucid mind vs the ability to do so) is a borderline duplicate of the same kind."
    },
    {
-    "theme": "צדקה — giving to many / opening the petach",
-    "node_ids": "c:practice-giving-tzedakah, c:kol-mah-noten, c:segulah, c:practice-giving-tzedakah-2, c:mitzvah-charity, c:alms",
-    "note": "c:practice-giving-tzedakah (כל מה שמרבה לתן צדקה ליותר אנשים) and c:kol-mah-noten (שכל מה שנותן צדקה ליותר אנשים) are verbatim duplicates. c:segulah (הצדקה פותחת ומרחבת הפתח) and c:practice-giving-tzedakah-2 (כשעושין איזהו פתח... ונותנין צדקה) both encode LM II:4's tzedakah-opens-the-opening. c:alms (הנותן צדקה) is the agent-form of c:mitzvah-charity (צדקה)."
+    "theme": "Clapping during prayer (LM I:44-46)",
+    "node_ids": "c:wings-speech-unification, c:clapping-palm-palm",
+    "note": "מחאת כפים בתפלה and כשמכה כף אל כף בשעת התפלה are one practice under two phrasings; the second is a temporal-clause fragment. The id c:wings-speech-unification also does not name its content."
    },
    {
-    "theme": "אוירא דארץ ישראל / המשכת קדשת ארץ ישראל",
-    "node_ids": "c:avira-de-eretz, c:ketubot, c:like-breath-schoolchildren, c:amidah-2, c:sanctity-land-israel, c:drawing-down-holiness, c:sit-my-right-2, c:inheriting-inheritance-land",
-    "note": "avira d'Eretz Yisrael machkim is spread over c:avira-de-eretz plus three sentence-fragments (c:ketubot, c:like-breath-schoolchildren, c:amidah-2) and overlaps c:sanctity-land-israel (ארץ ישראל מקדשת ואוירה מחכים). Drawing/inheriting EY's kedushah: c:drawing-down-holiness, c:sit-my-right-2 (ירשת א\"י על־ידי המשכת קדשת א\"י — which fuses two nodes into one id), c:inheriting-inheritance-land. Note also c:emunah's Hebrew is ארץ ישראל — an id/content collapse of the tefillah=emunah=EY equation (LM I:7) that this cluster should absorb."
+    "theme": "Raising fallen faith (emunah nefulah)",
+    "node_ids": "c:gerim-2, c:specifically-faith-sages, c:emunah-nefulah, c:tikkun-fallen-faith",
+    "note": "Four near-duplicates: שמעלין אמונה הנפולה, להקים אמונה הנפולה, וכשמעלין האמונה הנפולה, לחתר ולמצא המים שמשם גדלה האמונה. Adjacent second cluster of 'gathering the scattered portions of faith': c:likkutei-ha-emunah, c:kibbutzei-ha-emunah, c:chelkei-ha-emunah — three ids for one concept. Third mini-cluster: c:tikkun-ha-emunah / c:nitakken-ha-emunah / c:festival-compass (אמונה שנתתקן) duplicate 'rectified faith' as act vs state."
    },
    {
-    "theme": "תפלין = מחין",
-    "node_ids": "c:intellects-brain-lights, c:mochin-2, c:shiv'ah-ro'im, c:phylacteries",
-    "note": "Three near-identical nodes for the tefillin=mochin equation: c:intellects-brain-lights (תפלין מחין), c:mochin-2 (תפלין, מחין — differs only by a comma), c:shiv'ah-ro'im (תפלין מחין שהם בבחינת שבעה רועים). Should be one equation node hanging off c:phylacteries."
+    "theme": "Kisufin — holy yearnings (LM I:31)",
+    "node_ids": "c:kisufin, c:kisufin-ve-hishtokekut, c:nekudot-2, c:ratzon-kisufin-will",
+    "note": "c:kisufin (הכסופין) and c:kisufin-ve-hishtokekut (כסופין וההשתוקקות) duplicate the base concept; c:nekudot-2 (הכסופין והחשק) largely overlaps. c:ratzon-kisufin-will (ratzon identified with kisufin) is an equation-type reading and could stand if kept as an equation edge rather than a node."
    },
    {
-    "theme": "אכילה בקדושה / שלחן שבקדושה",
-    "node_ids": "c:akhilah-bi-kedushah, c:via-lust-eating, c:yoma, c:sekhel-via-shikkul, c:mizbeach-ke-tikkuno",
-    "note": "Eating-in-holiness is split across c:akhilah-bi-kedushah (אכילה בקדשה), c:via-lust-eating (שלחן שבקדשה — slug unrelated), c:yoma (שלחן, דהינו על־ידי אכילה בקדשה — a fragment filed under a tractate-name id), c:sekhel-via-shikkul (שלחן — slug suggests the shikul/sekhel homograph was intended, likely a wrong-homograph node), and c:mizbeach-ke-tikkuno (kashrut fragment). The shulchan-as-mizbeach motif needs one shulchan node and one akhilah-bi-kedushah node."
-   },
-   {
-    "theme": "מחאת כף ורקודין בתפלה — clapping and dancing",
-    "node_ids": "c:hamcha'at-kaf, c:clapping-palm-palm, c:shelav, c:fifty-gates, c:rikudin-ve-hamcha'at, c:rikkudin, c:machol-dance-circle",
-    "note": "Clapping in prayer (LM I:44-46) is quadruplicated: c:hamcha'at-kaf (המחאת כף), c:clapping-palm-palm (כשמכה כף אל כף בשעת התפלה), c:shelav (כשמכה כף אל כף ומחבר הידים בתפלה — same phrase, mismatched slug), c:fifty-gates (מכה כף אל כף — slug names a different concept entirely). Dancing (LM I:10) likewise: c:rikkudin, c:rikudin-ve-hamcha'at (the pair), c:machol-dance-circle (שמחה והרקודין), plus fragments c:raglin and c:yoma-3."
+    "theme": "Binding joy to the mind",
+    "node_ids": "c:mekasher-ha-simchah, c:ke-mekasher-simchah",
+    "note": "שמקשר השמחה למחו ודעתו and כשמקשר שמחה אל המח — identical act, one phrased as agent-clause and one as when-clause fragment. Clear merge."
    }
   ]
  },
  {
   "missing": [
    {
-    "concept_he": "היכלי התמורות",
-    "concept_en": "Heikhalei ha-Temurot (Chambers of Exchanges)",
-    "refs": "LM I:24:8; LM I:245",
-    "why": "Famous LM kabbalistic structure: everyone must pass through the Chambers of Exchanges before true Torah attainment, and getting stuck there is the danger (I:245); I:24 names them explicitly. Attested verbatim (היכלי/היכלות התמורות) in data/torah_texts lm1#24, lm1#245, lm1#152, yet no vocab node contains תמור at all. Vocab has only c:heikhal-ha-kodesh."
-   },
-   {
-    "concept_he": "חשמל / לבוש החשמל",
-    "concept_en": "chashmal — the protective garment (malbush = chashmal in gematria) from which all destroyers flee",
-    "refs": "LM I:21 (מלבוש בגימטריא חשמל ומהחשמ\"ל בורחים כל המשחיתים); also lm1 torahs 35, 41, 82",
-    "why": "Attested in 4 torahs of Part I; a named kabbalistic protection-structure tied to the makifin/malbush complex. No vocab node contains חשמל; the levush nodes (c:levush, c:aramaic-plural-levush) do not carry the chashmal identification."
-   },
-   {
     "concept_he": "אריך אנפין",
-    "concept_en": "Arich Anpin (the Long Countenance partzuf), including its kelipah counterpart",
-    "refs": "LM I:95 (via Etz Chaim, Shaar Arich Anpin — achorayim de-MaH); LM I:242 (אריך אנפין בקלפה, the 'long face' of the kelipah causing inescapable hirhur)",
-    "why": "The partzuf itself is missing: vocab has Zeir Anpin (c:zeira-de-anpin), Atik, Abba/Imma, but every אריך hit in vocab is the homograph מאריך רוחו (erekh apayim). I:242's arich-anpin-of-the-kelipah is a distinct harms-polarity concept with an explicit counsel (tzedakah saves from it)."
+    "concept_en": "Arich Anpin — the partzuf of the 'Long Face' / Erech Apayim, seat of the higher mercy",
+    "refs": "LM II:7 (erech apayim / ma'arich rucheih complex); Idra passages cited in LM",
+    "why": "The partzuf ladder is otherwise complete in the registry (Atik c:ancient-2, Ze'ir Anpin c:zeira-de-anpin, Abba c:av-abba, Imma c:paired-abba-chokhmah, Leah/Rachel), and erech-apayim derivative nodes exist (c:aramaic-erekh-apayim, c:ma-arikh-rucho), but the partzuf itself has no node. If the corpus attests it only inside Zohar citations this may be a legitimate absence — verify against corpus before adding."
    },
    {
-    "concept_he": "נוקבא",
-    "concept_en": "Nukva — the feminine/receiver aspect (the one who receives delight is called nukva)",
-    "refs": "LM I:73 (מי שמקבל תענוג מאחר נקרא נוקבא — even HKBH becomes nukva relative to Israel's prayer); LM I:69 (הנפש בחינת נוקבא בין הקלפות); LM I:48 (Shemini Atzeret — the nukva retains the drop)",
-    "why": "Attested in 5 torahs; vocab has only mayin nukvin (c:man, c:feminine-waters) and the verse-phrase c:zohar-lekh-lekha-2. Caution for the builder: נוקבא דפרדשקא in LM I:2 means 'nostril' — a homograph that must NOT be merged into this node."
+    "concept_he": "רחמים גדולים (דעתיקא)",
+    "concept_en": "The 'great mercy' of Atika — the higher, unbounded mercy contrasted with plain mercy of Ze'ir Anpin",
+    "refs": "LM II:7 ('כי מרחמם ינהגם') — the explicit contrast rachamim stam vs rachamim gedolim",
+    "why": "The registry holds exactly one pole of an explicit LM contrast: c:rachamim-stam-ze (רחמים סתם דזעיר אנפין, line 2924) exists, but its counterpart from the same torah does not (grep for רחמים גדולים returns nothing). A contrast captured on one side only will produce broken/one-legged edges."
    },
    {
-    "concept_he": "אצילות (ובריאה כעולם)",
-    "concept_en": "the World of Atzilut (and Beriah as a world) in the four-worlds ladder",
-    "refs": "LM I:24 (וכן עולין העולמות עד למעלה עד אצילות); אצילות also in lm1 22, 34, 64, 180; עולם הבריאה lm1#180",
-    "why": "Vocab has Yetzirah (c:atzilut-beriah-yetzirah — whose id misleadingly names all three), Asiyah (c:asiyah-action-deed), and yesod-de-Atzilut (c:yesod-atzilut-sefirah), but no node for Atzilut itself; Beriah exists only as 'creation' (kodem-ha-beriah, beri'ah-bekoach/befoal), not as the world."
+    "concept_he": "עולם האצילות; עולם הבריאה",
+    "concept_en": "The worlds of Atzilut and Beriah (of the four worlds ABiYA)",
+    "refs": "ABiYA passim in LM; Atzilut attested indirectly by c:yesod-atzilut-sefirah (יסוד דאצילות)",
+    "why": "Of the four worlds only Yetzirah (c:atzilut-beriah-yetzirah) and Asiyah (c:asiyah-action-deed) have nodes. The id 'atzilut-beriah-yetzirah' itself proves the source named all three worlds, yet the node's Hebrew is only יצירה — Atzilut and Beriah were dropped in extraction. Atzilut survives only inside the composite יסוד דאצילות; Beriah-as-world has no node at all (only beriah = 'creation' nodes: c:kodem-ha-beriah, c:beri'ah-koach, c:amon-uman-craftsman)."
    },
    {
-    "concept_he": "עשר ספירות",
-    "concept_en": "the ten sefirot as a totality/structure",
-    "refs": "LM II:7 (התורה הזאת מדברת מכל העשר ספירות); LM I:24 (למעלה מהספירות)",
-    "why": "Individual sefirot are in the vocab but no node for the ten-sefirot array itself, which LM II:7's own summary uses as the organizing frame of the entire teaching. No vocab canonical_he contains ספירות."
+    "concept_he": "נוקבא (דזעיר אנפין)",
+    "concept_en": "Nukva — the feminine partzuf, counterpart of Ze'ir Anpin",
+    "refs": "Zoharic citations throughout LM; cf. registry's העלאת מיין נוקבין (c:man)",
+    "why": "Ze'ir Anpin has a node but his partzuf-counterpart does not; the term survives only inside the phrase mayin nukvin. Malkhut/Shekhinah/Rachel nodes cover the semantics, so if added it should be aliased or equated to those rather than left as an orphan — but a Zohar-quoting edge that says 'nukva' currently has nothing to resolve to."
    },
    {
-    "concept_he": "קומה שלמה",
-    "concept_en": "komah shelemah — a complete stature/full spiritual structure (mitzvot as the complete komah animating olam-shanah-nefesh)",
-    "refs": "LM I:5 (כי המצוות הם קומה שלמה והם מחיין את כל הקומות... עולם שנה נפש); also lm1 2, 54, 59, 139, 178, 277; lm2 122",
-    "why": "Attested in 8 torahs across both parts — a recurring structural concept. Vocab has only the contrast term c:ketanei-komah (קטני קומה); the positive concept is absent."
+    "concept_he": "עלמא דאתגליא",
+    "concept_en": "Alma d'Itgalya — the Revealed World, pair of alma d'itkasya",
+    "refs": "The Leah/Rachel = itkasya/itgalya pairing in LM's Zohar usage; registry's own c:alma-d'itkasya (line 1186) and c:alma-d'itkasya-hidden (Leah, line 527) presuppose it",
+    "why": "Half of a fixed Zoharic pair is registered (עלמא דאתכסיא has a full node, and Leah is glossed by it) while the revealed half is entirely absent — Rachel's node (c:rachel-matriarch-rachel) glosses her as Oral Torah without the itgalya term. Any edge contrasting the two worlds cannot currently be expressed."
    },
    {
-    "concept_he": "אחורים (של השם)",
-    "concept_en": "achorayim — the 'back' spelling of the Divine Name (yud, yud-heh, yud-heh-vav...)",
-    "refs": "LM I:62 (fasting = writing Havayah in achorayim, concealing the back of kedushah so the chitzonim cannot suckle); LM I:95 (אחורים דמ\"ה תסיר מ\"ה נשאר פ\"ה)",
-    "why": "A named kabbalistic device carrying an explicit eitza (taanit) and mechanism in I:62; no vocab node contains אחורים."
+    "concept_he": "כנסת ישראל",
+    "concept_en": "Knesset Yisrael — the supernal Community of Israel, kabbalistically identified with Malkhut/Shekhinah",
+    "refs": "Passim in LM; attested in-registry only inside the phrase-node c:yichud-2 (יחוד צדיק וכנסת ישראל)",
+    "why": "One of the most frequent kabbalistic entities in LM's Zohar-inflected idiom has no standalone node; it exists only embedded in one yichud phrase. Edges where Knesset Yisrael is itself the cause/effect (receiving from the tzaddik, being built, being in exile) have no target concept."
    },
    {
-    "concept_he": "עלית העולמות",
-    "concept_en": "aliyat ha-olamot — the ascent of the worlds (lower world's inner sefirot become the higher world's keter)",
-    "refs": "LM I:24 (מפנימיות מלכות דיצירה נעשה כתר דעשיה וכן עולין העולמות עד אצילות); LM I:234 (עלית העולמות)",
-    "why": "The dynamic process, distinct from the static c:ha-olamot-worlds (העולמות); it is the causal payoff of simcha-shel-mitzvah in I:24, so its absence breaks that eitza chain."
-   },
-   {
-    "concept_he": "מטי ולא מטי",
-    "concept_en": "mati ve-lo mati — reaching-and-not-reaching, the oscillating apprehension of Or Ein Sof through kelim/heikhalot",
-    "refs": "LM I:24 (נעשין בחינת כלים והיכלות... להשיג על ידם בבחינת מטי ולא מטי אור האין־סוף)",
-    "why": "Named Zoharic/Lurianic mode of apprehension that is the explicit effect-node of the me'akev/kelim mechanism in I:24; absent from vocab."
-   },
-   {
-    "concept_he": "מרכבה",
-    "concept_en": "the Merkavah (Divine Chariot; e.g. brit as merkavah to Yesod, tzaddikim as the merkavah)",
-    "refs": "LM I:34 (ברית — מרכבה ליסוד); also lm2 5, 23, 69",
-    "why": "Vocab has only kishur ha-merkavah (c:raphael-gabriel-etc, c:merkavo-argaman — binding the chariot); the merkavah itself, which I:34 uses as the identity underlying the whole malei-pum derivation, has no node."
-   },
-   {
-    "concept_he": "עגולים",
-    "concept_en": "igulim — 'circles' (the encompassing/circular configuration, identified with emunah: ואמונתך סביבותיך)",
-    "refs": "LM I:7 (דמיא לעגלא שהוא בחינת עגולים בחינת אמונה); LM II:45",
-    "why": "Named Lurianic configuration (igulim vs yosher) explicitly equated with emunah in I:7, feeding that torah's tefillah/emunah chain; no vocab node contains עגולים."
+    "concept_he": "י\"ג מדות הרחמים",
+    "concept_en": "The Thirteen Attributes of Mercy (and the associated tikkunei dikna)",
+    "refs": "Recurs in LM's Elul/Selichot and Mikha 7:18-19 expositions; the registry's Idra-derived nodes (c:naso 'chesed at pma d'amah', c:tikkun-4 'sa'ara be-igula Tikkun 70', c:zaken 'תקוני עתיק') orbit this structure",
+    "why": "Grep for מדות הרחמים / שלש עשרה מדות / דיקנא returns nothing, yet several existing nodes are fragments of exactly this apparatus (beard-tikkunim of Atik). The organizing concept the fragments hang from is missing."
    }
   ],
   "fragmented": [
    {
-    "theme": "Mochin and its states (mochin / gadlut / katnut / tikkun / zakhim / tefillin=mochin / telat mochin)",
-    "node_ids": "c:chochmah-binah-daat (מחין), c:aramaic-plural-brain (מוחין), c:kabbalistic (מחין דגדלות), c:mochin (גדלות המחין), c:kabbalistic-mentalities-greatness (שיבוא למחין דגדלות), c:mochin-3 (מחין דקטנות), c:katnut-ha-mochin (קטנות המחין), c:sleep (תקון המחין), c:essence-of (עקר תקון המחין), c:mochin-zakhim (מוחין זכים), c:holiness-purity-thought (למחין זכים), c:brains-mentalities (כשהמחין זכים), c:intellects-brain-lights / c:mochin-2 / c:shiv'ah-ro'im (תפלין מחין x3), c:kabbalistic-mochin-triad / c:three-parasangs (תלת מחין x2)",
-    "note": "Worst fragmentation in the domain: ~17 ids for ~6 concepts. Outright duplicate pairs: מחין/מוחין; מחין דגדלות = גדלות המחין; מחין דקטנות = קטנות המחין (LM I:74, I:76, I:234, II:8, II:22, II:38 use these interchangeably); תקון המחין = עקר תקון המחין; three תפלין-מחין nodes; two תלת-מחין nodes. Also ids c:sleep, c:essence-of, c:kabbalistic are slug/content mismatches."
+    "theme": "Mochin (generic) — two nodes for one word, plus duplicated 'three mochin'",
+    "node_ids": "c:chochmah-binah-daat (מחין, line 29), c:aramaic-plural-brain (מוחין, line 65); c:kabbalistic-mochin-triad (תלת מחין, 790), c:mechitzah-perusah (משלש המחין, 995)",
+    "note": "מחין and מוחין are one term in defective vs plene spelling and should be one node with two forms. Separately, 'the three mochin' is duplicated (telat mochin / meshalesh ha-mochin — same triad Chokhmah-Binah-Da'at, LM I:21/I:29 idiom). Note id anomalies: c:mechitzah-perusah slug has nothing to do with its content."
    },
    {
-    "theme": "Yichud Kudsha Brich Hu u-Shekhinteh (the supernal union)",
-    "node_ids": "c:yichud (יחוד קדשא בריך הוא ושכינתה), c:apin-b'apin (same + אפין באפין), c:zivvuga-de-kudsha (זווגא דקדשא־בריך־הוא ושכינתה), c:merited-joseph-ben (זווגא דקדשה), c:zivvug-holy-shekhinah (לפי הזווג שגורם בתפלתו)",
-    "note": "One concept split 4-5 ways (yichud vs zivvuga is Hebrew/Aramaic of the same union; apin-b'apin is at most a mode of it). Attested LM I:9, I:62, I:78, I:178, I:260, II:91. Edges pointing at the union will be split across these, breaking cause-effect aggregation."
+    "theme": "Mochin d'gadlut / d'katnut — each state registered twice",
+    "node_ids": "gadlut: c:kabbalistic (מחין דגדלות, 316) + c:mochin (גדלות המחין, 375); katnut: c:mochin-3 (מחין דקטנות, 89) + c:katnut-ha-mochin (קטנות המחין, 714)",
+    "note": "Aramaic-genitive and Hebrew-construct forms of the identical concept each got their own node. The slug family is also incoherent: c:mochin holds gadlut, c:mochin-3 holds katnut, c:mochin-2 holds tefillin-as-mochin, and the bare-word ids c:kabbalistic / c:kabbalistic-brains-intellects are meaningless slugs."
    },
    {
-    "theme": "Yichuda ila'ah / yichuda tata'ah",
-    "node_ids": "c:aramaic-kabbalistic-zohar (יחודא עלאה), c:aramaic-3 (יחודא תתאה), c:zohar-bereishit (יחודא עלאה ויחודא תתאה)",
-    "note": "The pair-node duplicates both member nodes; LM I:11 (the core Shema/echad teaching, also I:49, II:32) treats them as two named unifications — the combined node should dissolve into the two. The ids (aramaic-3, zohar-bereishit) are also meaningless slugs."
+    "theme": "Makifim (LM I:21) — the surrounding-lights complex split across 6+ nodes, with three id/content mismatches",
+    "node_ids": "c:kabbalistic-makif-plural (מקיפים, 51), c:tallit (מקיף, 549), c:makkifim (2737), c:makifin-3 (להכניס המקיפין לפנים, 2478), c:sage-makifim-entering (3317), c:sekhel-makif-nikhnas (3318); mismatched ids: c:makifin (holds רצועה), c:makifin-2 (holds חפה), c:makifim (1886, holds 'emptying of the brain')",
+    "note": "The singular/plural makif nodes should merge, and the 'makifim entering within' action exists in at least four phrase variants (2478/2737/3317/3318). Worse, the ids makifin, makifin-2, makifim are squatting on unrelated content (strap, chuppah, emptied brain) — the prior audit's id/slug-mismatch failure mode, exactly."
    },
    {
-    "theme": "Tzimtzum / chalal ha-panui",
-    "node_ids": "c:chalal-ha-panui (חלל הפנוי), c:chalal-ha-panui-2 (canonical_he = צמצום), c:chalal-ha-panui-3 (צמצום האור לצדדין), c:when-chalal-found (חלל), c:levushin (canonical_he = צמצום של חלל הפנוי)",
-    "note": "Five ids for the LM I:64 tzimtzum/vacated-space complex; at most two concepts are real (tzimtzum the act, chalal ha-panui the result). c:levushin is additionally an id/content mismatch (levushin is a different concept entirely)."
+    "theme": "Tzimtzum / Chalal ha-Panui (LM I:64) — tzimtzum hidden under chalal ids",
+    "node_ids": "c:chalal-ha-panui (חלל הפנוי, 108), c:chalal-ha-panui-2 (holds צמצום, 169), c:chalal-ha-panui-3 (holds צמצום האור לצדדין, 1769), c:when-chalal-found (חלל, 729)",
+    "note": "Tzimtzum — a distinct cause in LM I:64's causal chain (tzimtzum → chalal → creation) — has no id of its own; it lives as chalal-ha-panui-2/-3. The two tzimtzum nodes should merge under a c:tzimtzum id, and bare chalal (729) likely duplicates 108."
    },
    {
-    "theme": "Hamtakat ha-dinim (sweetening judgments) + pidyon",
-    "node_ids": "c:hamtakah (המתקה), c:hamtakat-ha-dinim (המתקת הדינים), c:chokhmah (canonical_he = נמתק הדין!), c:plural-dinim (נמתק הדינים), c:even-shetiyah-holy (נמתקים כל הדינים), c:dinim-3 (נמתקין כל הדינים ונתכפרין), c:redemption-money-ritual (פדיון וההמתקה), c:redemption-money-ritual-2 (המתקה והפדיון), c:payment (פדיון כי הוא המתקת הדינים)",
-    "note": "Nine ids for essentially two concepts (hamtakat hadinim; pidyon-as-hamtakah). נמתק הדין attested lm1#74, #169. c:chokhmah is a severe id/content mismatch — its slug claims the sefirah Chokhmah while its content is sweetened din; anything linking to 'chokhmah' by id will hit the wrong node. The two redemption-money-ritual nodes are mirror-order duplicates."
+    "theme": "Atik / Atika / Atik Yomin — one partzuf, three nodes",
+    "node_ids": "c:ancient-2 (עתיק, 516), c:atika-kadisha (עתיקא, 1213), c:dan (עתיק יומין, 1753)",
+    "note": "Hebrew, Aramaic, and the Daniel 7:9 form of the same partzuf each got a node; c:dan is additionally a mismatched slug (named for the biblical ref, not the concept). c:pesachim (דברים שכסה עתיק יומין, 1512) is a legitimate separate phrase-concept but should alias-link to the merged Atik."
    },
    {
-    "theme": "Orot makifin (encompassing lights/intellects)",
-    "node_ids": "c:kabbalistic-makif-plural (מקיפים), c:makkifim (שלמות הדעת כשנעשה ממקיפים), c:makifin-3 (להכניס המקיפין לפנים), c:attaining-makifim-meriting (זוכה להשיג את המקיפים), c:entering-makifim-need (שלא יבוא למקיפים שאין צריכין להשיגם), c:sage-makifim-entering (נכנסים המקיפים שלו לפנים)",
-    "note": "Six ids around one LM I:21 / II:7 structure; makifin-3 and sage-makifim-entering are the same event (makifin entering penim), and the bare-concept node exists twice (kabbalistic-makif-plural vs makkifim)."
+    "theme": "Malkhut of the Other Side — evil-kingship registered under three near-synonyms plus phrase spinoffs",
+    "node_ids": "c:malkhut-ha-resha'ah (מלכות הרשעה, 214), c:malkhut-sitra-achra (מלכות דסטרא אחרא, 765), c:malkhut-ha-resha'ah-2 (holds לבנה דסטרא אחרא, 2471), c:sitra-achra's-dominion (1692), c:nitbatel-malkhutam-memshaltam (2770)",
+    "note": "malkhut ha-resha'ah and malkhut d'sitra achra are one concept in LM's usage and should merge (or be equation-linked). c:malkhut-ha-resha'ah-2 is an id mismatch — it actually holds 'moon of the sitra achra'. The two 'its dominion is nullified' phrase nodes (1692, 2770) duplicate one effect-concept."
    },
    {
-    "theme": "Atik / Atika / Atik Yomin (the partzuf)",
-    "node_ids": "c:ancient-2 (עתיק), c:atika-kadisha (עתיקא), c:dan (עתיק יומין), c:pesachim (דברים שכסה עתיק יומין)",
-    "note": "Three ids for the single partzuf (attested lm1 13, 16, 21, 33, 49, 105, 156); c:dan and c:pesachim are also slug mismatches (tractate/verse names as ids), and c:pesachim is a Talmudic-phrase fragment (Pesachim 119a) rather than a distinct concept from Atik Yomin."
+    "theme": "Tikkun/elevation of Malkhut — one eitza-effect theme scattered over ~8 phrase nodes",
+    "node_ids": "c:pass-through-fire (תקון המלכות, 1304), c:hear-lord-voice (מלכות נתתקן, 2591), c:rectifying-elevating-malkhut (2645), c:kingship-structure (2644), c:metzora-purification (בנין המלכות דקדושה, 687), c:fallen-kingship (2260), c:elevating-malkhut-holiness (2786), c:exodus-malkhut-among (2366), c:sefirah-malkhut (שרש המלכות, 1215)",
+    "note": "At minimum 1304/2591 (tikkun ha-malkhut / malkhut nittaken) and 2260/2786/2366 (raising Malkhut out of the kelipot/sitra achra/akum) are duplicate clusters. Ids pass-through-fire, hear-lord-voice, metzora-purification are slug/content mismatches."
    },
    {
-    "theme": "Chokhmah tata'ah = Malkhut",
-    "node_ids": "c:chokhmah-tata'ah (canonical_he = מלכות!), c:aramaic-tata'ah-lower (חכמה תתאה), c:chokhmah-tata'ah-2 (חכמה המנהגת את העולם), c:sefirah-kingship-identified (מלכות בשפלות ובקטנות)",
-    "note": "The identity chokhmah-tata'ah=malkhut (LM I:22, I:30, I:286, II:91) got split into a node whose id says chokhmah-tata'ah but whose Hebrew is מלכות, plus two more chokhmah-tata'ah nodes. Should be one equation-edge between a Malkhut node and one chokhmah-tata'ah node, not three overlapping nodes."
+    "theme": "Yichud Kudsha Brich Hu u-Shekhinteh — the central supernal union split Hebrew/Aramaic",
+    "node_ids": "c:yichud (יחוד קדשא בריך הוא ושכינתה, 231), c:zivvuga-de-kudsha (זווגא דקדשא־בריך־הוא ושכינתה, 2299), c:apin-b'apin (231's content + אפין באפין, 1369), c:yichud-3 (3374)",
+    "note": "231 and 2299 are the same unification in yichud- vs zivug- wording and should merge or be equation-linked; apin b'apin (1369) is a legitimate modality but should hang off the merged node; c:yichud-3 ('a great yichud is made above') is a vague duplicate effect."
    },
    {
-    "theme": "Raising fallen Malkhut/kingship from the kelipot",
-    "node_ids": "c:fallen-kingship (העלה את המלכות מבין הסטרא אחרא), c:exodus-malkhut-among (יוצא המלכות מבין הקלפות ונתבטל ממשלתם), c:divine-kingship (מלכות דקדשה בגלות), c:away (להעלות את הכבוד והמלכות מהם), c:metzora-purification (בנין המלכות דקדושה)",
-    "note": "The exile-and-elevation-of-Malkhut theme is scattered over 5 sentence-length ids (several are verse/action fragments, e.g. c:away, c:exodus-malkhut-among); should collapse to ~2 concepts: malkhut-dikdusha-in-exile (state) and raising/building malkhut-dikdusha (act)."
+    "theme": "Ha'alat Mayin Nukvin — duplicated",
+    "node_ids": "c:man (העלאת מיין נוקבין, 139), c:feminine-waters (העלאת מיין נוקבין של תורה ותפלה, 943)",
+    "note": "943 is 139 plus a 'of Torah and prayer' qualifier — same kabbalistic act, should be one node (943 at most a form). Also note c:man is a dangerously ambiguous English-word id."
    },
    {
-    "theme": "Chasadim and gevurot (including the five-and-five)",
-    "node_ids": "c:paired-divine-attributes (חסדים וגבורות), c:divine-benevolence-water (חסד וגבורה), c:connecting-them-peace (התחברות חסדים וגבורות), c:achdut-shel-chesed (אחדות של חסד וגבורה), c:severities-left (לשתף הגבורות בחסדים), c:five-chasadim-five (חמשה חסדים), c:tikkun-haklali (canonical_he = חמשה חסדים וחמש גבורות)",
-    "note": "The pair concept exists twice (singular/plural forms) and the joining-of-chasadim-and-gevurot exists three times (hitchabrut/achdut/leshatef — LM I:154, I:205, II:7). Separately, the id c:tikkun-haklali carries the Hebrew 'five chasadim and five gevurot' — a serious id/content mismatch, since tikkun-haklali (the ten psalms) is its own major concept that edges will try to target by that slug."
+    "theme": "Tikkun HaKlali — content scattered across three nodes while the canonical id holds a different concept",
+    "node_ids": "c:tikkun-haklali (holds חמשה חסדים וחמש גבורות, 2336), c:tikkun-haklali-2 (תקון הכללי, 87), c:tikkun-haklali-3 (עשרה קפיטל תהלים, 1357), c:sexual-purity-2 (תקון הכללי שהוא תקון הברית, 2873)",
+    "note": "LM I:29 / II:92. The id c:tikkun-haklali was hijacked by the five-chasadim/five-gevurot concept; the real Tikkun HaKlali is fragmented over -2 (general rectification), -3 (the ten psalms — arguably a distinct referent, but 87 and 2873 are one concept). Related shuffle: c:five-kindnesses-five holds דעת while חמשה חסדים sits at c:five-chasadim-five (1162) — a three-way id/content rotation across lines 5, 1162, 2336."
+   },
+   {
+    "theme": "Chokhmah Ila'ah / Tata'ah (LM I:30) — pair node plus singles plus a mismatched equation node",
+    "node_ids": "c:chokhmah-ila'ah (170), c:aramaic-tata'ah-lower (חכמה תתאה, 182), c:torah-supernal-world (the pair חכמה עלאה וחכמה תתאה, 678), c:chokhmah-tata'ah (holds מלכות, 6), c:chokhmah-tata'ah-2 (חכמה המנהגת את העולם, 2330)",
+    "note": "The paired node 678 duplicates 170+182 (paired-terms nodes coexisting with their components is a recurring pattern — cf. חכמה ובינה 517, נצח והוד 196, חסד וגבורה 741). Separately c:chokhmah-tata'ah's Hebrew is מלכות — the LM equation 'Malkhut = lower Chokhmah' was baked into a node id instead of an equation edge; the actual chokhmah-tata'ah content sits at 182 under an aramaic- slug."
+   },
+   {
+    "theme": "Kishur ha-Merkavah — duplicated",
+    "node_ids": "c:raphael-gabriel-etc (קשור המרכבה, 555), c:merkavo-argaman (קשור המרכבה שצריכין לקשר המרכבה, 3249)",
+    "note": "Same 'binding of the Chariot' practice (the four-angels bedtime formation); 3249 is a wordier variant of 555 and both slugs are mismatched to content."
+   },
+   {
+    "theme": "Inclusion in Ein Sof — id mismatch plus near-duplicates",
+    "node_ids": "c:light (holds אין סוף, 232), c:nikhlal (אתה נכלל באין סוף, 1478), c:ein-sof (holds דבקות של אדם באין סוף, 1722)",
+    "note": "The canonical id c:ein-sof holds the derivative concept (devekut to Ein Sof) while Ein Sof itself sits under c:light — inverted assignment. 1478 (being incorporated into Ein Sof, LM I:4) and 1722 are near-duplicates that should merge or be explicitly distinguished (momentary bittul vs ongoing devekut)."
    }
   ]
  },
@@ -459,99 +235,299 @@
   "missing": [
    {
     "concept_he": "יאוש",
-    "concept_en": "despair / giving up (yeush)",
-    "refs": "LM II:78 (אין שום יאוש בעולם כלל); cf. LM II:48 on falls and persistence",
-    "why": "Zero hits for יאוש/להתיאש in any id, canonical_he, form, or gloss across all 3,588 concepts. This is one of the most famous negative states in all of Likutey Moharan — the direct counterpart of chizuk/simchah nodes that do exist (עצבות, מרה שחורה, לב נשבר are all present). A polarity-tagged cause-effect map of LM without yeush is missing a hub node."
+    "concept_en": "Ye'ush — despair/giving up hope",
+    "refs": "LM II:78 (\"אין שום יאוש בעולם כלל\"); despair as the Baal Davar's chief weapon per Meshivat Nefesh",
+    "why": "Zero hits for יאוש/despair anywhere in the 3,588-term vocab. This is arguably THE signature negative state of Breslov thought — the thing Rebbe Nachman's most famous line negates. Its absence also implies the harms-edges from falling/aging teachings can't land anywhere. (Its positive counterpart התחזקות also has zero hits — same gap from the other side.)"
    },
    {
-    "concept_he": "תאות אכילה",
-    "concept_en": "the lust for eating / gluttony (base concept)",
-    "refs": "LM I:62:5 (eating without holiness damages the daat); LM I:54 (context of guarding what enters); parallel to LM I:23 (תאות ממון) and I:36 (תאות נאוף) which DO have base nodes",
-    "why": "The registry has שבירת תאות אכילה (c:shevirat-ta'avat-akhilah), נתתקן תאות אכילה (c:ta'avat-akhilah-2), and a verse fragment (c:satisfied-whatever-eats), but no base node for the taavah itself. The other two of LM's canonical taavah triad — תאות ממון (c:lust-money) and תאות נאוף (c:desire-base) — both have base nodes; the breaking/rectification nodes here point at a concept that does not exist."
+    "concept_he": "עצלות",
+    "concept_en": "Atzlut — laziness/sluggishness (standalone)",
+    "refs": "LM I:189 — \"עיקר נשיכת הנחש הוא עצבות ועצלות\"; also paired with כבדות in the hitbodedut teachings",
+    "why": "Exists only fused inside the compound node c:dust-serpent's-food (עצבות ועצלות). Atzvut has its own node (c:atzvut) but atzlut does not, so any teaching addressing laziness alone (as distinct from sadness) has no target node."
    },
    {
-    "concept_he": "מקרה לילה",
-    "concept_en": "nocturnal emission (keri)",
-    "refs": "LM I:205 (cause and remedy of mikreh lailah); LM II:92 (the Ten Psalms / Tikkun HaKlali context)",
-    "why": "No node carries מקרה לילה or קרי in Hebrew or forms. Telling symptom: two node IDS are named for it — c:nocturnal-emission (Hebrew is actually שמירה מתאות נאוף) and c:nocturnal-emission-2 (Hebrew is מתקן ומכניע מלחמת עמלק) — i.e. the slug survived some merge but the concept itself was lost. Given Tikkun HaKlali's centrality in Breslov, this is a required node."
+    "concept_he": "אפיקורסות הבאה מחלל הפנוי",
+    "concept_en": "The second, unanswerable heresy — kushiyot arising from the Vacated Space",
+    "refs": "LM I:64 — two kinds of kefirot: one from the 'broken vessels' of leftover wisdom (answerable, and one MUST answer it), and one from the chalal ha-panui, on which \"כל באיה לא ישובון\" — crossed only by emunah and silence",
+    "why": "The registry has generic heresy nodes (c:apikorsut, c:avodah-zarah=כפירות, c:ps-18=מינות) and c:chalal-ha-panui itself, but the crucial LM I:64 distinction — the unanswerable heresy whose only counsel is faith/silence — is absent. Without it the two opposite eitzot (answer the heresy vs. do NOT engage it) collapse into one node and contradict each other."
    },
    {
-    "concept_he": "אפיקורסות / כפירות",
-    "concept_en": "heresy / heretical denial (base concept)",
-    "refs": "LM I:64:2 — the two kinds of apikorsut (from shevirat ha-kelim, answerable; from the chalal ha-panui, unanswerable); LM II:52",
-    "why": "The concept exists only inside counsel-sentence fragments: c:apikorsut = יודע להשיב על אפיקורסות שבלבו (a counsel, not the force) and c:fittingness-there-unanswerable = שיהיו עליו יתברך קשיות (a fragment). There is no clean node for אפיקורסות itself, nor for LM I:64's key distinction of קשיות שאי אפשר ליישב originating in the chalal ha-panui — even though c:chalal-ha-panui exists and needs that edge target. כפירה appears only as כפירה בעבודה זרה (which is a POSITIVE concept — denying idolatry)."
+    "concept_he": "בעל דבר",
+    "concept_en": "The Baal Davar — the personified Adversary/tempter",
+    "refs": "Pervasive in Rebbe Nachman's own idiom (Sichot HaRan 232–233; Meshivat Nefesh throughout); verify occurrences in the LM corpus text before adding",
+    "why": "Zero hits for בעל דבר in any spelling. The registry has yetzer hara, Sitra Achra, and kelipot, but the distinctively Breslov adversary-figure who fights specifically against hitbodedut, longing, and starting anew is missing. Flagging with a verification caveat since it may be concentrated in Sichot rather than LM proper."
+   },
+   {
+    "concept_he": "היכלי התמורות",
+    "concept_en": "Heikhalei ha-Temurot — the Chambers of Exchanges where truth and falsehood are swapped",
+    "refs": "Cited constantly in Breslov literature as an LM concept (cf. the exchanged-children motif); exact LM locus should be verified in the corpus — the vocab's only related node is c:temurah-exchange (תמר בסטרא אחרא) and the rogez→ratzon transformation node",
+    "why": "grep for תמורות returns nothing. The 'exchanges' realm — the Sitra Achra mechanism that swaps good for evil and produces false leaders/false conviction — has no node, even though the map already contains its downstream concepts (mefursamim shel sheker, rav dikelipah)."
    }
   ],
   "fragmented": [
    {
-    "theme": "Sitra achra core — IDs scrambled across the cluster",
-    "node_ids": "c:dispute, c:sitra-achra, c:azut-ha-guf, c:embodied-avimelekh, c:sitra-demota, c:sitra-de-mota",
-    "note": "The base term סטרא אחרא lives under c:dispute; meanwhile c:sitra-achra actually holds עזות הגוף, and c:azut-ha-guf holds עזות דסטרא אחרא — the two contents are swapped relative to their slugs (LM I:22 material). סטרא דמסאבא sits under c:embodied-avimelekh. And c:sitra-demota (סטרא דמותא) vs c:sitra-de-mota (verse fragment 'זה תנצל מבחינת חמץ, שהיא סטרא דמותא') are hyphen-twin ids for one concept (LM I:5's chametz/sitra-de-mota). Any edge audit touching the SA cluster is unreliable until these are re-keyed and merged."
+    "theme": "Pride/arrogance base trait",
+    "node_ids": "c:ga'avah, c:gadlut, c:ge'ut",
+    "note": "Three separate base-trait nodes for one vice; LM uses גאוה/גדלות/גאות interchangeably (e.g. LM I:11, I:168). The nullification/act variants (c:ga'avah-2, c:gadlus-self-aggrandizement, c:kavod-4) can stay as events, but the underlying trait should be one concept."
    },
    {
-    "theme": "Kelipot — base concept split across five nodes",
-    "node_ids": "c:kelipot-husks-shells, c:klipah, c:husks-impurity, c:kelipot, c:other-side-husks, c:bechinat-libi-secharchar",
-    "note": "c:kelipot-husks-shells (קלפות) is the real base; c:klipah is a verse fragment (שעמד בנסיון ושבר הקלפה שקדמה לפרי); c:husks-impurity is the event יתבטלו הקלפות; c:kelipot is שלש קלפות הנ\"ל (the three impure kelipot — defensible as separate, but slug claims the generic term); c:other-side-husks is another fragment. Also c:bechinat-libi-secharchar actually holds קלפת נגה (kelipat nogah) — a major standalone concept hidden under an unrelated slug."
+    "theme": "Constricted/expanded consciousness duplicated pairs",
+    "node_ids": "c:mochin-3 (מחין דקטנות) vs c:katnut-ha-mochin (קטנות המחין); c:kabbalistic (מחין דגדלות) vs c:mochin (גדלות המחין)",
+    "note": "Both katnut and gadlut mochin exist twice under trivially inverted Hebrew word order. Also c:kabbalistic is a junk slug."
    },
    {
-    "theme": "Protection-from-niuf — four near-duplicate counsel nodes",
-    "node_ids": "c:ni'uf, c:ni'uf-adultery, c:guarding-against-lust, c:nocturnal-emission, c:covering-arayot",
-    "note": "Four nodes say the same thing: c:ni'uf (נצול מנאוף וזוכה לשמירת הברית), c:ni'uf-adultery (שמירה מנאוף), c:guarding-against-lust (שמירה מתאוה נאוף), c:nocturnal-emission (שמירה מתאות נאוף). Meanwhile the base concept נאוף itself sits under the mismatched slug c:covering-arayot. Should be one 'shemirah from niuf' node (or edges into c:desire-base with via=absence), and the base re-keyed. Cf. LM I:36."
+    "theme": "Kelipat Nogah",
+    "node_ids": "c:kelipat-nogah (נגה) vs c:bechinat-libi-secharchar (קלפת נגה)",
+    "note": "Straight duplicate; additionally c:bechinat-libi-secharchar is an id/content mismatch — 'libi secharchar' (לבי סחרחר, Ps 38:11) has nothing to do with its Hebrew term קלפת נגה."
    },
    {
-    "theme": "Hirhurei niuf — duplicate 'saved from' nodes",
-    "node_ids": "c:adulterous-fantasies, c:charity-2, c:avi-avot-hatum'ah, c:kaneh, c:great-tikkun-hirhurim",
-    "note": "c:adulterous-fantasies (מועלת מאד להנצל מהרהורי נאוף) and c:charity-2 (מצלת מהרהורים של נאוף) are the same effect-node twice, both actually counsel-sentence fragments. The base הרהורים של נאוף hides under c:avi-avot-hatum'ah — a slug that means something else entirely (avi avot ha-tumah). c:kaneh (הרהורים רעים) likely also belongs to this cluster."
+    "theme": "Chalal ha-panui / tzimtzum cluster",
+    "node_ids": "c:chalal-ha-panui, c:chalal-ha-panui-2 (Hebrew is actually צמצום), c:chalal-ha-panui-3 (צמצום האור לצדדין), c:levushin (Hebrew is צמצום של חלל הפנוי), c:when-chalal-found",
+    "note": "Five overlapping nodes; two carry mismatched ids (c:chalal-ha-panui-2 is tzimtzum, c:levushin is not levushin at all). Should resolve to at most two concepts: tzimtzum and chalal ha-panui (LM I:64)."
    },
    {
-    "theme": "Taavat mamon — base, state, synonym, and two 'rectified' nodes",
-    "node_ids": "c:lust-money, c:lust-money-2, c:money-hoarding-sitra, c:itzavon, c:desire-money-rectified, c:menstrual-blood-money, c:shevirat-ta'avat-mamon",
-    "note": "c:lust-money (תאות ממון) is the base; c:lust-money-2 (משקע בתאות ממון) is a state-duplicate; c:money-hoarding-sitra (תאות עשירות) is the same lust under LM I:23's other name; c:itzavon holds a fragment about המשקעים בממון. And there are two rectification nodes: c:desire-money-rectified (נתתקן תאות ממון) and c:menstrual-blood-money (נתתקן דם נדה, תאות ממון) — the latter fusing LM I:29's dam-niddah↔mamon identification into a compound. Refs: LM I:23, I:68, I:29."
+    "theme": "Heresy/denial cluster",
+    "node_ids": "c:avodah-zarah (Hebrew is כפירות!), c:ps-18 (מינות), c:apikorsut, c:kefirot-equated-idolatry, c:idolatry-heresies-denials, c:kefirah-ba-avodah",
+    "note": "kefirot/minut/apikorsut are scattered across nodes with junk or wrong ids — worst offender c:avodah-zarah whose Hebrew is כפירות, guaranteeing edge misrouting between idolatry and heresy (which LM I:23/LM II:44 do distinguish)."
    },
    {
-    "theme": "Kaas (anger) — eight overlapping nodes",
-    "node_ids": "c:ka'as, c:kevishat-ka'as, c:yad-va-shem, c:lm-8, c:tikkun-ha-ka, c:nitbatel-ha-ka, c:sweetening-anger-compassion, c:breaking",
-    "note": "Base כעס exists, but subduing it appears three times (c:kevishat-ka'as כבישת כעס, c:yad-va-shem שיכבש כעסו, c:lm-8 שישמר מכעס), rectification twice (c:tikkun-ha-ka, c:nitbatel-ha-ka), and the LM I:18 anger-sweetened-by-rachmanut move twice (c:sweetening-anger-compassion ימתיק הכעס ברחמנות vs c:breaking כפי הפרת הכעס ברחמנות — same teaching, same proof-text family; cf. also LM I:68 on kaas damaging wealth)."
+    "theme": "Azut haguf / azut de-Sitra Achra — crossed ids plus duplicate breaking-events",
+    "node_ids": "c:sitra-achra (Hebrew עזות הגוף) vs c:azut-ha-guf (Hebrew עזות דסטרא אחרא); c:action-performed-upon (משבר עזות הגוף) vs c:azut-ha-guf-2 (כשמשבר עזות ותקיפות הגוף)",
+    "note": "The ids c:sitra-achra and c:azut-ha-guf are effectively swapped against their Hebrew contents (and c:sitra-achra squats on the name the real Other-Side node c:dispute should own). The two 'breaking the body's azut' events (LM I:22, via the sigh/kol anachah) are near-duplicates."
    },
    {
-    "theme": "Azut de-kedushah — four slug variants of one concept",
-    "node_ids": "c:azut-di-kedushah, c:azut-d'kedushah, c:azut-di-kedushah-4, c:azut-di-kedushah-5, c:more-azut-di, c:kol-oz",
-    "note": "עזות דקדשה appears under four ids differing only in transliteration/suffix: c:azut-di-kedushah (עזות דקדשה), c:azut-d'kedushah (fragment: מתגברין בעזות גדול כנגדם), c:azut-di-kedushah-4 (עזות דקדשה שיש בו), c:azut-di-kedushah-5 (מקבל עזות דקדשה מהשם יתברך), plus c:more-azut-di (עזות יותר). One concept (LM I:22, I:147, I:30:8) fragmented into micro-variants; its dark counterpart עזות דסטרא אחרא / עזות הגוף is in the swapped-id mess noted above."
+    "theme": "Guarding from ta'avat niuf / mikreh lailah",
+    "node_ids": "c:guarding-against-lust (שמירה מתאוה נאוף) vs c:nocturnal-emission (שמירה מתאות נאוף); c:mikreh-lo-tahor (תקון גדול מאד למקרה) vs c:tikkun-haklali-4 (תקון למקרה־לילה)",
+    "note": "Same phrase split by a one-letter spelling variant; c:nocturnal-emission's id doesn't match its content (it is shemirah, not the emission). The two tikkun-le-mikreh nodes (LM I:205 / Tikkun HaKlali) duplicate one remedy-concept."
    },
    {
-    "theme": "Ruach shetut — duplicate banish-events",
-    "node_ids": "c:ruach-shetut-per, c:spirit-folly, c:spirit-folly-3, c:predicated",
-    "note": "c:spirit-folly (שמגרש במהירות הרוח שטות מקרבו) and c:spirit-folly-3 (לגרש מקרבו הרוח שטות) are the same expulsion-event twice; c:predicated (רוח שטות נתבטל) is a third event-shadow of the base c:ruach-shetut-per. Sotah 3a's ruach shetut as expounded in LM — one base node plus edges suffices."
+    "theme": "Emunot kozviyot nullification",
+    "node_ids": "c:bitul-emunot-kozviyot vs c:bittul-emunot-kozviyot",
+    "note": "Two ids differing only by transliteration (bitul/bittul) for the same בטול אמונות כזביות (LM II:5); the second just appends the positive clause."
    },
    {
-    "theme": "Koach hamedameh — spelling-twin ids",
-    "node_ids": "c:koach-ha-medammeh, c:koach-ha-medameh, c:koach-ha-medammeh-2, c:eye-guarded-power, c:tikkun, c:paired-phrase",
-    "note": "c:koach-ha-medammeh (כח המדמה) and c:koach-ha-medameh (המדמה) differ by one letter in the slug and are the same faculty (LM I:25, II:8 — the imagination as the seat of false belief). Plus separate guarded-heart / guarded-eye event nodes (c:koach-ha-medammeh-2, c:eye-guarded-power) and two tikkun nodes (c:tikkun תקון המדמה, c:paired-phrase תקון המדמה והאמונה)."
+    "theme": "Ruach shtut expulsion",
+    "node_ids": "c:spirit-folly (שמגרש במהירות הרוח שטות מקרבו) vs c:spirit-folly-3 (לגרש מקרבו הרוח שטות)",
+    "note": "Same expulsion-of-the-spirit-of-folly act as two nodes (and the numbering implies a vanished c:spirit-folly-2)."
    },
    {
-    "theme": "Machloket — base under wrong slug plus event-shadows",
-    "node_ids": "c:contradictory-ideas, c:machaloket, c:contentiousness-winning, c:notzot-yinatzu, c:meraglim-regel-foot, c:responsa",
-    "note": "The base concept מחלקת sits under c:contradictory-ideas, while c:machaloket holds only the event מבטל המחלקת. c:contentiousness-winning (לבטל מדת הנצחון והמחלקת ולרדף אחר השלום) overlaps it, c:notzot-yinatzu (מחלקת ובזיונות) and c:meraglim-regel-foot (בעלי לשון הרע ומחלקת) are compound fragments, c:responsa a sentence fragment. Also note מדת הנצחון (the drive to win, a distinct LM negative trait) exists only inside the compound."
+    "theme": "Crossed id pairs in the impurity domain",
+    "node_ids": "c:sitra-dimsa'ava (Hebrew אבימלך) vs c:embodied-avimelekh (Hebrew סטרא דמסאבא); c:avi-avot-hatum'ah (Hebrew הרהורים של נאוף) vs c:classically-corpse (Hebrew אבי אבות הטמאה)",
+    "note": "Two pairs where each node's id names the OTHER node's content — classic swap from the prior audit's failure-mode list. Any edge written against the id will point at the wrong concept."
    },
    {
-    "theme": "Ra ayin (evil eye) — base under odd slug, duplicate rescue nodes",
-    "node_ids": "c:between-your-eyes, c:saved-evil-eye, c:ra-ayin",
-    "note": "Base רע עין is under c:between-your-eyes; c:saved-evil-eye (האדם נצול מרע עין הזה) and c:ra-ayin (נצול הצדיק מרע עין של הרשע) are two 'saved-from' event nodes — and the slug c:ra-ayin, which should hold the base, holds a rescue-event instead. LM I:54 (ra ayin and shikhchah)."
+    "theme": "Subjugation/nullification of the kelipot=kesilut",
+    "node_ids": "c:husks-impurity (יתבטלו הקלפות), c:nikhna-im-ha (נכנעים הקלפות הינו הכסילות), c:kesilut-kelipot's-folly (נכנע הכסילות ונתגדל השכל), c:mizbe'ach-2 (להכניע ולבטל כסילות השכל)",
+    "note": "Four event-nodes for the one outcome 'the kelipot/foolishness are subdued and intellect grows'; splits the incoming eitza edges across interchangeable targets."
+   }
+  ]
+ },
+ {
+  "missing": [
+   {
+    "concept_he": "תלמיד חכם שד יהודי (תלמידי חכמים שדין יהודאין)",
+    "concept_en": "Torah scholar who is a 'Jewish demon' — the unworthy scholar whose Torah one must not receive",
+    "refs": "LM I:28:1 (cf. Zohar III:253a); echoed in LM I:12 on receiving Torah from a qualified scholar",
+    "why": "Zero hits for יהודאין / שד יהודי anywhere in vocab.tsv (c:shedim at line 3253 is a different teaching about angels vs. demons). This is a famous, load-bearing LM concept: the warning against hearing Torah from such scholars is the negative pole of the whole receiving-Torah-from-the-tzaddik cluster, which is otherwise richly represented (c:tipei-ha-sekhel, c:receives-counsel-sages)."
    },
    {
-    "theme": "Ekev de-sitra-achra — same subjugation twice",
-    "node_ids": "c:ekev, c:nikhna-bechinat-ekev",
-    "note": "c:ekev (מכניע עקב דסטרא אחרא) and c:nikhna-bechinat-ekev (נכנע בחינת עקב דסטרא אחרא) are the active and passive voicing of one event on one concept (the 'heel' of the SA). Merge to one node; the underlying עקב דסטרא אחרא itself has no base node either."
+    "concept_he": "ברית הלשון (המכוון כנגד ברית המעור)",
+    "concept_en": "The covenant of the tongue, paired with the covenant of the flesh (Sefer Yetzirah)",
+    "refs": "LM I:19 (shemirat ha-brit brings shlemut leshon ha-kodesh); Sefer Yetzirah 1:3 quoted there",
+    "why": "Zero hits for ברית הלשון or ברית המעור. The registry has both endpoints — tikkun/pegam ha-brit (c:brit-organ-procreation, c:pegam-ha-brit) and leshon ha-kodesh/shlemut ha-dibbur (c:hebrew, c:shlemut) — but the explicit linking concept that carries LM I:19's brit-speech causation is absent, leaving the eitza edge between the two clusters without its attested middle term."
    },
    {
-    "theme": "Machshavot zarot — base vs rescue vs compound",
-    "node_ids": "c:machshavot-zarot, c:machshavot-zarot-2, c:mental-faculties, c:zedonot-na'asin-ke",
-    "note": "c:machshavot-zarot (מחשבות זרות שבתפלה, LM I:72) vs c:machshavot-zarot-2 (נצול ממחשבות זרות — a rescue event) vs c:mental-faculties (compound fragment לפנות את המחין מחכמות חיצוניות וממחשבות זרות). The plain concept מחשבות זרות outside prayer has no base node; the -2 suffix signals an unmerged near-duplicate."
+    "concept_he": "התבודדות בלשון שמדברים בו (לשון אשכנז)",
+    "concept_en": "Hitbodedut in one's spoken vernacular (Yiddish), which more easily breaks the heart",
+    "refs": "LM II:25",
+    "why": "Zero hits for אשכנז or לשון שמדברים. The hitbodedut cluster is well represented (c:room-field, c:hitbodedut-practice-secluding, c:lishpokh-sicho-bi), but the operative counsel of LM II:25 — that the practice must be in the vernacular because leshon ashkenaz draws the heart — is the teaching's central mechanism and is missing as a node."
+   }
+  ],
+  "fragmented": [
+   {
+    "theme": "Binding/attachment to the tzaddikim (hitkashrut/hitkarvut/hitdabkut)",
+    "node_ids": "c:im, c:drawing-close-tzaddikim, c:hitkashrut-truly-binding, c:tzam'ah-nafshi, c:tzaddikim",
+    "note": "Five ids for one counsel (LM I:2, I:123): התקשרות לצדיקים, התקרבות לצדיקים, התקשרות באמת לצדיקים אמתיים, התדבקות בצדיקים, להתקרב ולהתדבק אליהם. At most two concepts (bind vs. draw near) are defensible; also note c:im and c:tzaddikim are id/slug mismatches."
    },
    {
-    "theme": "Gaavah — event-shadow nodes",
-    "node_ids": "c:ga'avah, c:ga'avah-2, c:ga'avah-3, c:gerim-9",
-    "note": "c:ga'avah (גאוה) is the base; c:ga'avah-2 (נתבטל הגאוה) and c:ga'avah-3 (הפך הגאוה) are its nullification/inversion events carrying numbered-suffix ids — the classic sign of an unmerged cluster; c:gerim-9 (תקון הגאוה וההתפארות שמביאין הגרים, LM I:14 material) is a counsel-sentence fragment on the same trait."
+    "theme": "Counsel of the tzaddikim (etzat tzaddikim)",
+    "node_ids": "c:etzah, c:eitzah, c:etzot, c:receives-counsel-sages",
+    "note": "c:etzah (עצת צדיקים) and c:eitzah (עצת הצדיקים) are a flat duplicate pair differing only by definite article; c:etzot (העצות שמקבל מהם) and c:receives-counsel-sages (עצה מחכמי הדור) are the same concept from the receiver's side. Merge to one, or one plus a receiving-act node."
+   },
+   {
+    "theme": "The tzaddik / the true tzaddik / tzaddik of the generation",
+    "node_ids": "c:like-moses-joseph, c:ha-tzaddik, c:true-tzaddik-singular, c:tzaddik-ha-dor, c:tzaddikei-ha-dor",
+    "note": "צדיק, הצדיק, and צדיק האמת are three nodes for what LM treats as one figure (the singular true tzaddik); tzaddik-ha-dor vs tzaddikei-ha-dor is a defensible singular/plural split, but the first three should collapse. c:like-moses-joseph is also an id/content mismatch (id describes a gloss detail, content is just צדיק)."
+   },
+   {
+    "theme": "Telling stories of tzaddikim (sippurei ma'asiyot) and awakening-from-sleep thereby",
+    "node_ids": "c:tzaddikim-2, c:practice-telling-recounting, c:tales-object, c:nominal-construct, c:ve-alehu-li, c:remembering-barren-women",
+    "note": "Four nodes for the telling (ספורי מעשיות / לספר מעשיות של צדיקים / מעשיות של צדיקים / ספורי מעשיות של צדיקים) — act vs. object justifies two at most. Additionally c:ve-alehu-li and c:remembering-barren-women are near-identical 'awakening people from their sleep' effects (LM I:60). c:tzaddikim-2's id also mismatches its content."
+   },
+   {
+    "theme": "Dibbur singular/plural/holy variants",
+    "node_ids": "c:dibbur-2, c:plural-dibbur, c:plural-indefinite, c:ha-dibbur-ha",
+    "note": "c:dibbur-2 (דבור, with form דבורים) already absorbs the plural, yet c:plural-dibbur (דיבורים) exists as a separate node; c:plural-indefinite (דבורים קדושים) vs c:ha-dibbur-ha (דבור הקדוש) is another number-only split of 'holy speech'. Two concepts (dibbur; holy dibbur) would suffice."
+   },
+   {
+    "theme": "Speech/words of Torah-and-prayer",
+    "node_ids": "c:dibbur, c:words-utterances-torah, c:speech-holiness, c:raising-feminine-waters, c:they-shall-flesh, c:lm-5, c:eitza-2",
+    "note": "Seven ids circle one concept: דבור של תורה ותפלה, דבורי תורה ותפלה, דבור דקדשה של תורה ותפלה, כל הדבורים שמדברים בתורה ותפלה, לדבר בתורה ותפלה, מדבר בהתורה בדבורים, שידבר הרבה בתורה ותפלה. The thing vs. the counsel-to-do-it justifies two nodes, not seven. c:they-shall-flesh also has corrupted doubled Hebrew text (לדבר בתורה ותפלהלדבר בתורה ותפל)."
+   },
+   {
+    "theme": "Shlemut ha-dibbur / leshon ha-kodesh (LM I:19)",
+    "node_ids": "c:shlemut-ha-dibbur, c:speech, c:dibbur-bi-shleimut, c:shlemut, c:hebrew, c:holy-tongue-connection, c:leshon-ha-kodesh",
+    "note": "שלמות הדבור appears twice verbatim (c:shlemut-ha-dibbur, c:speech) plus דבור בשלמות (c:dibbur-bi-shleimut); שלמות לשון הקדש (c:shlemut) duplicates the equation. Worst pair: c:holy-tongue-connection (שהלשון הקדש מקשר לשבת) and c:leshon-ha-kodesh (לשון הקדש, שהוא מקשר לשבת) are the identical LM I:19 claim as two nodes."
+   },
+   {
+    "theme": "Binding thought to speech in prayer",
+    "node_ids": "c:mochin-chasadim, c:thought, c:praying-while-binding, c:machashavah",
+    "note": "Four nodes for one practice: לקשר המחשבה אל הדבור, התחברות המח והדבור, מתפלל באפן שמקשר המחשבה להדבור, המחשבה שמקשר להדבור כנ\"ל. The last one even carries the anaphoric כנ\"ל, showing it was scraped from running text rather than being a distinct concept."
+   },
+   {
+    "theme": "Clapping the hands in prayer (LM I:44-46)",
+    "node_ids": "c:wings-speech-unification, c:clapping-palm-palm, c:shelav",
+    "note": "מחאת כפים בתפלה, כשמכה כף אל כף בשעת התפלה, and כשמכה כף אל כף ומחבר הידים בתפלה are one act split across three ids (three adjacent torot on the same practice). One node with per-lesson edges is the right shape; c:wings-speech-unification and c:shelav are also id/content mismatches."
+   },
+   {
+    "theme": "Praying with strength / putting koach into the letters",
+    "node_ids": "c:tefillah-koach, c:koach-ha-tefillah, c:praying-all-strength, c:prayer-letters, c:re'amim-2",
+    "note": "תפלה בכח, כח התפלה מה שמתפללין בכח, מתפלל בכל כחו ומכניס כחו באותיות התפלה, plus the effect node נתחדש כחו שם — the first three are one concept (LM I:5's thunders context, cf. c:re'amim-2 קול שאדם מוציא בכח בתפלתו which is the same act again as a 'voice' node)."
+   },
+   {
+    "theme": "Niggun / neginah and the ten kinds of melody",
+    "node_ids": "c:niggun, c:neginah, c:kol-ha-niggun, c:play-well-teruah, c:numerical-value-2, c:ten-kinds-melody",
+    "note": "נגון vs נגינה is a lexical variant, not two concepts; קול הנגון vs קול נגינה likewise. Clearest duplicate: עשרה מיני נגונא (c:numerical-value-2, Aramaic) vs עשרה מיני נגינה (c:ten-kinds-melody, Hebrew) — the identical Tikkunei-Zohar concept behind Sefer Tehillim (LM I:54, II:92), currently two nodes."
+   },
+   {
+    "theme": "The menagen (musician) and playing by hand/instrument (LM I:54, II:24)",
+    "node_ids": "c:menagen-musician-singer, c:menagen-ba-yad, c:menagen-bikhlei-zemer, c:ruach-prophecy-joy, c:ve-nigen-yado",
+    "note": "Five nodes for the musician and his hand-on-instrument playing: מנגן, מנגן ביד, מנגן בכלי זמר, שמנגן ביד על הכלי זמר, שמחה הבאה על־ידי המנגן ביד. LM I:54 uses these interchangeably for one figure gathering the good ruach; two nodes at most (the musician; the joy effect)."
+   },
+   {
+    "theme": "Holy voice(s) — kol dikdushah",
+    "node_ids": "c:singular-2, c:kolot-di-kedushah, c:holy-boldness, c:kolot",
+    "note": "קול דקדשה, קולות דקדשה, כל הקולות דקדשה, and קולות are number/quantifier variants of one LM II:5 concept (the holy voices = azut dikdushah). c:holy-boldness's id also belongs to the azut node, not the voices node."
+   },
+   {
+    "theme": "Machloket base cluster and its nullification",
+    "node_ids": "c:contradictory-ideas, c:machloket, c:machaloket, c:strife-rectified-nullified",
+    "note": "מבטל המחלקת (c:machaloket) vs נתתקן המחלקת (c:strife-rectified-nullified) are the same effect stated as act vs. result. Separately, c:machloket is a hard id/content mismatch — the node id says machloket but its Hebrew is אחדות שנתגלה בישראל למטה (the opposite pole), while the actual מחלקת noun lives under c:contradictory-ideas. This trio will silently corrupt any machloket-centered query."
+   },
+   {
+    "theme": "Lashon hara / dibbur hara",
+    "node_ids": "c:human, c:ps-34",
+    "note": "לשון הרע (c:human — note the meaningless id 'human') and דבור הרע (c:ps-34 — id points at a Psalms citation) are treated by LM as the same vice (evil speech; cf. LM I:3, I:54 and the meraglim node c:meraglim-regel-foot). Either merge or add an equation edge; both current ids are also slug/content mismatches flagged by the prior audit's failure-mode list."
+   },
+   {
+    "theme": "Shir pashut kaful meshulash meruba (LM II:8)",
+    "node_ids": "c:simple-double-triple, c:simple-double-triple-2",
+    "note": "c:simple-double-triple's Hebrew is bare שיר while c:simple-double-triple-2 holds the full שיר פשוט כפול משלש מרבע — the ids themselves admit they are the same concept twice. Merge, keeping שיר as a form."
+   }
+  ]
+ },
+ {
+  "missing": [
+   {
+    "concept_he": "חנוכה / נר חנוכה",
+    "concept_en": "Chanukah / the Chanukah lamp",
+    "refs": "LM II:2 (yemei Chanukah yemei hoda'ah — Chanukah as days of thanksgiving/hoda'ah); LM II:7 (delivered on Chanukah, the lamp tied to drawing rachamim/da'at); LM 1:14 (the kavod teaching is applied at its close to hadlakat ner Chanukah)",
+    "why": "Zero hits for חנוכה anywhere in the 3,588-row vocab, even though every other festival (Pesach, Shavuot, Purim, Sukkot/Hoshana Rabba, RH, YK) has nodes. Chanukah carries first-class eitzot in LM (lighting the lamp -> hoda'ah, kavod, da'at). This is the clearest domain gap found."
+   },
+   {
+    "concept_he": "אתרוג (והדס)",
+    "concept_en": "etrog (and hadas) — completing the four species",
+    "refs": "Sukkot four-species material in LM; registry itself attests the set via c:lulav-palm-branch (לולב) and c:hoshana-rabba (ערבה, glossed 'resembling lips')",
+    "why": "Two of the four species are registered (lulav, aravah) and Hoshana Rabba has a node, but אתרוג and הדס have zero hits. A four-species teaching cannot project onto the graph with half the set missing."
+   },
+   {
+    "concept_he": "מקוה / טבילת מקוה",
+    "concept_en": "mikveh / ritual immersion (base concept)",
+    "refs": "LM 1:56 (mikveh = Fiftieth Gate — already attested indirectly by the registry's own composite c:sha'ar-hanun 'מקוה של שער החמשים'); mikveh as sweetening of dinim and companion of Tikkun HaKlali",
+    "why": "Only two hyper-specific composites exist (c:sha'ar-hanun 'mikveh of the 50th gate', c:per-shavuot-kavvanot 'mikveh of Shavuot'). There is no base מקוה/טבילה node for the practical counsel itself, so ordinary immersion edges have no target."
+   },
+   {
+    "concept_he": "הבדלה / קידוש של שבת",
+    "concept_en": "kiddush and havdalah of Shabbat",
+    "refs": "Shabbat-liturgy practice; registry has bigdei Shabbat, oneg Shabbat, dibbur shel Shabbat, akhilat Shabbat — but no kiddush/havdalah",
+    "why": "Lower confidence than the items above (kiddush/havdalah are less load-bearing in LM proper), but notable: the Shabbat practical cluster is otherwise dense and these two ritual acts have zero hits (קידוש matches only kiddush-Hashem/kiddushin nodes)."
+   }
+  ],
+  "fragmented": [
+   {
+    "theme": "Eretz Yisrael core node hiding under a wrong id + kedushah/avira/inheritance splinters",
+    "node_ids": "c:emunah, c:kedushat-eretz-yisrael, c:sanctity-land-israel, c:avira-de-eretz, c:amidah-2, c:ketubot, c:like-breath-schoolchildren, c:inheriting-inheritance-land, c:sit-my-right-2, c:drawing-down-holiness",
+    "note": "The base Eretz-Yisrael node is c:emunah (Hebrew: ארץ ישראל) — a flagrant id/content mismatch (the real emunah node is c:emunah-2). Then kedushat EY is split (c:kedushat-eretz-yisrael vs c:sanctity-land-israel 'ארץ ישראל מקדשת ואוירה מחכים'), avira de-EY is spread over 4 nodes (c:avira-de-eretz, c:amidah-2, c:ketubot, c:like-breath-schoolchildren), and yerushat-EY-by-drawing-its-kedushah over 3 (c:inheriting-inheritance-land, c:sit-my-right-2, c:drawing-down-holiness). Also tzedakah-of-EY is a plain dup: c:tzedakah-2 (צדקה דארץ ישראל) vs c:charity-intellect (צדקה של ארץ ישראל)."
+   },
+   {
+    "theme": "Ta'avat mamon (money-lust) and its breaking/tikkun",
+    "node_ids": "c:lust-money, c:lust-money-2, c:money-hoarding-sitra, c:chemdat-ha-mamon, c:shevirat-ta'avat-mamon, c:desire-money-rectified, c:menstrual-blood-money, c:all-money-rectified",
+    "note": "One LM concept (ta'avat mamon, e.g. LM 1:23, 1:68) split ~8 ways: the lust itself (c:lust-money), being sunk in it (c:lust-money-2 'משקע בתאות ממון'), its synonym ta'avat ashirut (c:money-hoarding-sitra), chemdat ha-mamon (c:chemdat-ha-mamon), plus three separate 'נתתקן' rectification nodes (c:desire-money-rectified, c:menstrual-blood-money, c:all-money-rectified) alongside c:shevirat-ta'avat-mamon. Should collapse to concept + tikkun."
+   },
+   {
+    "theme": "Parnasah duplicates (exact reversed-phrase pairs)",
+    "node_ids": "c:livelihood-2, c:parnassah-nikhpelet, c:manna-bread-heaven, c:parnasah-without-toil, c:less-da'at-more, c:increase-compassion-peace, c:drawing-down-parnasah, c:ability-draw-down",
+    "note": "Three near-certain dup pairs: (1) c:livelihood-2 'נתרבה ונכפל פרנסתו' vs c:parnassah-nikhpelet 'נכפל ונתרבה פרנסתו' — same phrase word-swapped; (2) c:manna-bread-heaven 'פרנסה בלי טרח' vs c:parnasah-without-toil 'פרנסה בלא יגיעה וטרח' (and the id 'manna-bread-heaven' mismatches its content); (3) c:drawing-down-parnasah vs c:ability-draw-down (both 'להמשיך הפרנסה' via Malkhut). Also parnasah-be-nakel lives inside a run-on fragment node c:increase-compassion-peace as well as c:less-da'at-more (another mismatched id)."
+   },
+   {
+    "theme": "Oneg Shabbat spelling-variant duplicates",
+    "node_ids": "c:oneg-shabbat-mitzvah, c:subduing-liver-enemy, c:oneg-akhilat-shabbat, c:ta-anug-ve, c:az-titanag-al",
+    "note": "c:oneg-shabbat-mitzvah (ענג שבת) and c:subduing-liver-enemy (עונג שבת) are the same concept under plene/defective spellings — and the latter's id describes an edge-effect (subduing the liver, LM 1:57), not the concept. c:ta-anug-ve and c:az-titanag-al are further shards of Shabbat-delight; c:oneg-akhilat-shabbat overlaps c:eating-shabbat-partaking."
+   },
+   {
+    "theme": "Drawing Shabbat holiness into the six weekdays",
+    "node_ids": "c:drawing-shabbat-sanctity, c:drawing-shabbat-holiness",
+    "note": "c:drawing-shabbat-sanctity 'להמשיך קדשת שבת לקדש ימי החל' and c:drawing-shabbat-holiness 'שממשיכין קדשה של שבת לששת ימי החל' are the identical counsel twice. (c:drawing-joy-shabbat, the simchah variant, is arguably distinct.)"
+   },
+   {
+    "theme": "Eating in holiness / the holy table (shulchan)",
+    "node_ids": "c:akhilah-bi-kedushah, c:practice-eating-fear, c:yoma, c:via-lust-eating, c:komat-adam, c:tza'ar",
+    "note": "akhilah bi-kedushah is split between c:akhilah-bi-kedushah and c:practice-eating-fear ('שאוכל עם יראת שמים בקדשה ובטהרה'). The shulchan-shebikdushah symbol is duplicated across c:yoma and c:via-lust-eating — and BOTH ids mismatch their content (id 'yoma' holds shulchan; id 'via-lust-eating' holds שלחן שבקדשה). c:komat-adam and c:tza'ar are effect-shards of the same akhilah-bi-kedushah teaching."
+   },
+   {
+    "theme": "Ta'avat akhilah (food-lust) and its rectification",
+    "node_ids": "c:shevirat-ta'avat-akhilah, c:ta'avat-akhilah-2, c:satisfied-whatever-eats",
+    "note": "Breaking food-lust (c:shevirat-ta'avat-akhilah), its rectified state (c:ta'avat-akhilah-2 'נתתקן תאות אכילה'), and c:satisfied-whatever-eats ('תשבעו ולא תהיו משקעים בתאות אכילה' — a sentence-fragment node) all orbit one concept; note there is no base 'תאות אכילה' node at all, only the breaking/rectifying of it, while the parallel lusts (mamon, ni'uf) have base nodes."
+   },
+   {
+    "theme": "Brit: pegam / shmirah / tikkun each split 3-5 ways, plus polluted brit-N id family",
+    "node_ids": "c:pegam-ha-brit, c:has-blemished-covenant, c:pgam-ha-brit, c:brit-organ-procreation, c:tikkun-ha-milah, c:elul-kavanot, c:sexual-purity-2, c:shmirat-ha-brit, c:sexual-purity, c:shmirat-ha-brit-2, c:ni'uf, c:supernal-unification, c:brit, c:brit-2, c:brit-3, c:brit-4, c:tikkun-ha-brit",
+    "note": "pegam ha-brit: c:pegam-ha-brit + c:has-blemished-covenant, while c:pgam-ha-brit actually holds the revav-stain proof-text (LM 1:29 territory) — id collides with the concept it merely evidences. tikkun ha-brit: c:brit-organ-procreation (תקון הברית) vs c:tikkun-ha-milah (תקון המילה) vs c:elul-kavanot (תקון לפגם הברית — id mismatch) vs c:sexual-purity-2 (Tikkun HaKlali as tikkun ha-brit). shmirat ha-brit: 5 nodes. And the brit-N id family is noise: c:brit=שבת וברית, c:brit-2=grasping the tzaddik's speech, c:brit-3=חצים, c:tikkun-ha-brit=דרך הנשר בשמים — ids promising brit content that hold other concepts."
+   },
+   {
+    "theme": "Clapping hands in prayer (LM 1:44-45)",
+    "node_ids": "c:mecha'at-kaf-kapayim, c:hamcha'at-kaf, c:wings-speech-unification, c:clapping-palm-palm, c:shelav, c:great-hand, c:fifty-gates, c:clapping-prayer-nullifies, c:rikudin-ve-hamcha'at",
+    "note": "One practice — clapping during prayer (LM 1:44: it makes avira de-EY and expels machshavot zarot) — appears as at least 7 standalone nodes (מחאת כפים, המחאת כף, מחאת כפים בתפלה, כשמכה כף אל כף בשעת התפלה, כשמכה כף אל כף ומחבר הידים, בשעת הכאה שנתחברים, מכה כף אל כף). Ids c:shelav, c:great-hand, c:fifty-gates are also content mismatches."
+   },
+   {
+    "theme": "Tefillin = mochin",
+    "node_ids": "c:intellects-brain-lights, c:mochin-2, c:embodied-tefillin, c:mentalities-brains, c:shiv'ah-ro'im",
+    "note": "c:intellects-brain-lights (תפלין מחין) and c:mochin-2 (תפלין, מחין) are the same equation node twice (comma-variant Hebrew). c:embodied-tefillin (content is actually הגדלת השכל) and c:mentalities-brains (rectifying mochin/tefillin) shard the same identity; c:shiv'ah-ro'im extends it."
+   },
+   {
+    "theme": "Pidyon (redemption-money) + sweetening",
+    "node_ids": "c:redemption-money-ritual, c:redemption-money-ritual-2",
+    "note": "c:redemption-money-ritual 'פדיון וההמתקה' vs c:redemption-money-ritual-2 'המתקה והפדיון' — the identical pidyon-sweetens-dinim concept with the conjuncts reversed."
+   },
+   {
+    "theme": "Aravah / Hoshana Rabba — ids swapped between two nodes",
+    "node_ids": "c:aravah, c:hoshana-rabba",
+    "note": "c:aravah holds הושענא רבא (the day) and c:hoshana-rabba holds ערבה (the willow). Contents are fine as two concepts but the ids are crossed — any slug-based tooling will resolve each to the other."
+   },
+   {
+    "theme": "Masa u-matan be-emunah (honest commerce)",
+    "node_ids": "c:masa-matan-be'emunah, c:ha-chayim, c:conducts-business-faith, c:pshat-torah",
+    "note": "Four nodes for one counsel: משא ומתן באמונה, אמונה במשא ומתן, העושה משא ומתן באמונה, כשאדם עוסק במשא ומתן באמונה. Ids c:ha-chayim and c:pshat-torah are also content mismatches. (Base c:zevulun's-going-out = משא ומתן can stay as the neutral activity.)"
+   },
+   {
+    "theme": "Eleven incense spices vs simchat ha-mitzvah — dup pair plus swapped ids",
+    "node_ids": "c:incense, c:incense-2, c:eleven-incense-spices, c:eleven-incense-spices-2",
+    "note": "The eleven ketoret spices are duplicated (c:incense 'אחד עשר סממני הקטרת' vs c:incense-2 'עולים כל הניצוצות על ידי אחד עשר סממני הקטרת'), while the ids c:eleven-incense-spices / c:eleven-incense-spices-2 actually hold simchat-ha-mitzvah content — the two themes' ids and contents are cross-wired, and simchat ha-mitzvah itself is duplicated across them."
+   },
+   {
+    "theme": "shabbat-N id family holds non-Shabbat content",
+    "node_ids": "c:shabbat, c:shabbat-2, c:shabbat-3, c:shabbat-4, c:holy-day-rest, c:rosh-hashanah, c:sukkah, c:chametz, c:terremah-check",
+    "note": "The real Shabbat base node is c:holy-day-rest (שבת), but the c:shabbat id holds the fragment בשבת, c:shabbat-2 holds הספד (eulogy), c:shabbat-3 holds נחש הטיל זהמא, c:shabbat-4 holds סדר הזרעים. Same pattern elsewhere in this domain: c:rosh-hashanah holds שופר (the RH node is c:head-year), c:sukkah holds טפח (the sukkah node is c:mitzvah-structure-sukkot), c:chametz holds תקון הכעס על ידי התענית (real chametz is c:noun-leaven), c:terumah holds חלה. Slug-keyed queries in the physical-mitzvot domain will systematically hit the wrong concept. (Ignore the placeholder 'c:terremah-check' — the affected ids are c:shabbat, c:shabbat-2, c:shabbat-3, c:shabbat-4, c:rosh-hashanah, c:sukkah, c:chametz, c:terumah.)"
    }
   ]
  }
