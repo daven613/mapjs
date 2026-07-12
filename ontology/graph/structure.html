@@ -1,0 +1,216 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Torah Map — Data Structure</title>
+<style>
+:root {
+  --surface:#fcfcfb; --surface2:#f3f2ef; --ink:#0b0b0b; --ink2:#52514e; --ink3:#8a8984;
+  --line:#e4e2dc; --accent:#2a78d6; --good:#0ca30c; --crit:#d03b3b; --neutral:#6b6a66; --warnbg:#fdf3e7;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --surface:#1a1a19; --surface2:#242422; --ink:#ffffff; --ink2:#c3c2b7; --ink3:#8a8984;
+  --line:#3a3936; --accent:#3987e5; --neutral:#9a9994; --warnbg:#33291c;
+} }
+:root[data-theme="dark"] {
+  --surface:#1a1a19; --surface2:#242422; --ink:#ffffff; --ink2:#c3c2b7; --ink3:#8a8984;
+  --line:#3a3936; --accent:#3987e5; --neutral:#9a9994; --warnbg:#33291c;
+}
+:root[data-theme="light"] {
+  --surface:#fcfcfb; --surface2:#f3f2ef; --ink:#0b0b0b; --ink2:#52514e; --ink3:#8a8984;
+  --line:#e4e2dc; --accent:#2a78d6; --neutral:#6b6a66; --warnbg:#fdf3e7;
+}
+body { background:var(--surface); color:var(--ink); font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;
+  margin:0; padding:24px clamp(12px,4vw,48px) 60px; }
+h1 { font-size:1.5rem; margin:0 0 4px; }
+h2 { font-size:1.2rem; margin:44px 0 10px; border-top:1px solid var(--line); padding-top:22px; }
+.sub { color:var(--ink2); max-width:75ch; }
+.he { direction:rtl; unicode-bidi:isolate; }
+code, .mono { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.85em; }
+
+/* pipeline diagram */
+.pipe { display:flex; flex-direction:column; gap:0; margin:18px 0; max-width:980px; }
+.pipe-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.pbox { border:1.5px solid var(--line); border-radius:12px; padding:12px 16px; background:var(--surface2); }
+.pbox h4 { margin:0 0 4px; font-size:.95rem; }
+.pbox p { margin:0; font-size:.83rem; color:var(--ink2); }
+.pbox .cnt { color:var(--accent); font-weight:700; }
+.pbox.wide { grid-column:1 / -1; }
+.pbox.hub { border-color:var(--accent); }
+.arrow { text-align:center; color:var(--ink3); font-size:1.2rem; line-height:1.6; }
+.arrow2 { display:grid; grid-template-columns:1fr 1fr; }
+.lane-label { font-size:.75rem; text-transform:uppercase; letter-spacing:.05em; color:var(--ink3); margin-bottom:4px; }
+
+/* annotated records */
+.rec { border:1px solid var(--line); border-radius:12px; overflow-x:auto; margin:14px 0; max-width:980px; }
+.rec-head { background:var(--surface2); padding:8px 14px; font-weight:600; font-size:.9rem; border-bottom:1px solid var(--line); }
+.rec-head .mono { color:var(--ink3); font-weight:400; margin-left:8px; }
+.frow { display:grid; grid-template-columns:minmax(110px,150px) minmax(190px,1.2fr) minmax(220px,2fr); gap:14px;
+  padding:7px 14px; border-bottom:1px solid var(--line); min-width:640px; }
+.frow:last-child { border-bottom:none; }
+.frow .k { font-family:ui-monospace,Menlo,monospace; font-size:.82rem; color:var(--accent); }
+.frow .v { font-family:ui-monospace,Menlo,monospace; font-size:.82rem; word-break:break-word; }
+.frow .a { font-size:.82rem; color:var(--ink2); }
+.frow.dim .k,.frow.dim .v { color:var(--ink3); }
+
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; max-width:980px; }
+.card { border:1px solid var(--line); border-radius:12px; padding:12px 16px; }
+.card h4 { margin:0 0 6px; }
+.card .n { font-size:1.4rem; font-weight:700; }
+.card p { font-size:.85rem; color:var(--ink2); margin:6px 0 0; }
+.badge { display:inline-block; padding:1px 9px; border-radius:999px; font-size:.78rem; font-weight:600; color:#fff; }
+.b-good { background:var(--good); } .b-crit { background:var(--crit); } .b-neu { background:var(--neutral); }
+
+table.combos { border-collapse:collapse; margin:14px 0; }
+.combos th, .combos td { border:1px solid var(--line); padding:7px 12px; font-size:.87rem; text-align:left; }
+.combos th { background:var(--surface2); font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--ink3); }
+.combos td.n { text-align:right; font-variant-numeric:tabular-nums; }
+.combos .he { font-size:1.02em; }
+
+.callout { border-left:4px solid var(--accent); background:var(--surface2); border-radius:0 10px 10px 0;
+  padding:12px 18px; margin:16px 0; max-width:940px; }
+.callout.warn { border-left-color:var(--crit); background:var(--warnbg); }
+.callout h4 { margin:0 0 4px; font-size:.95rem; }
+.callout p, .callout li { font-size:.88rem; color:var(--ink2); margin:4px 0; }
+.ladder { counter-reset:rung; max-width:940px; padding-left:0; }
+.ladder li { list-style:none; border:1px solid var(--line); border-radius:10px; padding:10px 16px 10px 52px;
+  margin:8px 0; position:relative; font-size:.9rem; }
+.ladder li::before { counter-increment:rung; content:counter(rung); position:absolute; left:14px; top:10px;
+  width:24px; height:24px; border-radius:50%; background:var(--accent); color:#fff; font-weight:700;
+  display:flex; align-items:center; justify-content:center; font-size:.8rem; }
+.ladder li.fail::before { content:"✕"; background:var(--crit); }
+.ladder li b { display:block; }
+.ladder li span { color:var(--ink2); font-size:.86rem; }
+ul.plain { max-width:940px; } ul.plain li { margin-bottom:8px; font-size:.9rem; }
+@media (max-width:1100px) {
+  .frow { grid-template-columns:minmax(110px,160px) 1fr; min-width:0; }
+  .frow .a { grid-column:1 / -1; padding-left:8px; border-left:2px solid var(--line); }
+  .pipe-row { grid-template-columns:1fr; }
+  .arrow2 { grid-template-columns:1fr; }
+  .arrow2 .arrow:last-child { display:none; }
+  .combos { display:block; overflow-x:auto; }
+}
+</style></head><body>
+
+<h1>Torah Map — Data Structure <span style="color:var(--ink3);font-weight:400;font-size:.85em">מבנה הנתונים</span></h1>
+<p class="sub">Everything in the map is one of <b>three files</b>: a concept registry, occurrence lists (the proofs), and a compiled
+graph (nodes + edges) deterministically rebuilt from the first two. This page shows each record type field-by-field,
+how a raw Hebrew phrase becomes (or fails to become) a graph edge, and where the good/bad distinction lives.</p>
+
+<h2>1 · The pipeline — how text becomes graph</h2>
+<div class="pipe">
+  <div class="pipe-row">
+    <div><div class="lane-label">Your hand extraction</div>
+      <div class="pbox"><h4>legacy_human.jsonl</h4>
+      <p><span class="cnt">4,148</span> curated occurrences — each a relation you extracted by hand with a verbatim proof quote. Imported as <code>occ:legacy:N</code>.</p></div></div>
+    <div><div class="lane-label">AI extraction daemon (v1+v2)</div>
+      <div class="pbox"><h4>ai_extracted/*.json → ai_compiled.jsonl</h4>
+      <p><span class="cnt">3,880</span> chunk files over all of Likutey Moharan → <span class="cnt">16,007</span> candidate edges, each with a verbatim proof. Imported as <code>occ:ai:&lt;chunk&gt;:N</code>.</p></div></div>
+  </div>
+  <div class="arrow2"><div class="arrow">↓</div><div class="arrow">↓</div></div>
+  <div class="pipe-row"><div class="pbox wide hub"><h4>Endpoint resolution — registry lookup</h4>
+    <p>Each occurrence's Hebrew surface forms are matched against <b>concepts_final.json</b> (<span class="cnt">3,588</span> canonical concepts; identity = the gloss) through a strict 4-rung lexical ladder (§4). No fuzzy matching, ever.</p></div></div>
+  <div class="arrow">↓</div>
+  <div class="pipe-row"><div class="pbox wide hub"><h4>compile_graph.py → nodes.json + edges.json</h4>
+    <p><span class="cnt">9,018</span> nodes · <span class="cnt">12,328</span> edges. Deterministic and re-runnable: fix the registry or the policy, recompile, nothing is lost — the occurrence files stay the source of truth.</p></div></div>
+</div>
+
+<h2>2 · Node kinds — three, not one</h2>
+<div class="cards">
+  <div class="card"><h4><code>c:</code> concept</h4><div class="n">3,588</div>
+    <p>A canonical Likutey Moharan concept. The only kind that carries a gloss and participates in search/match. All meaning lives here.</p></div>
+  <div class="card"><h4><code>p:</code> AI statement stub</h4><div class="n">4,803</div>
+    <p>A Hebrew surface form from AI extraction that failed the resolution ladder. Traversable and provable, but excluded from search — a placeholder, not a concept.</p></div>
+  <div class="card"><h4><code>s:</code> legacy statement stub</h4><div class="n">627</div>
+    <p>Same mechanism, from your original hand layer (proposition targets like verse-phrases). Existed before the AI merge.</p></div>
+</div>
+
+<div class="rec"><div class="rec-head">Anatomy: a concept node <span class="mono">nodes.json</span></div>
+  <div class="frow"><div class="k">id</div><div class="v">"c:shetikah"</div><div class="a">stable slug — <b>the join key everything else points at</b>. The audit's worst bugs are slugs that don't match the content below.</div></div>
+  <div class="frow"><div class="k">canonical_he</div><div class="v he">שתיקה</div><div class="a">the canonical Hebrew term. This — not the id — is what resolution matches against.</div></div>
+  <div class="frow"><div class="k">gloss_en</div><div class="v">"silence (shetikah) — restraint of speech…"</div><div class="a"><b>identity = gloss</b>: two nodes are the same concept iff they mean the same thing, per the registry's merge policy.</div></div>
+  <div class="frow"><div class="k">forms</div><div class="v he">["שתיקה", "השתיקה"]</div><div class="a">alternate surface spellings that also resolve to this node.</div></div>
+  <div class="frow dim"><div class="k">n_occ</div><div class="v">14</div><div class="a">how many occurrences mention it.</div></div>
+  <div class="frow dim"><div class="k">provenance</div><div class="v">{"cluster":"cl:0055","source":"refig"}</div><div class="a">how the registry created it: singleton · adjudication · refig · homograph_split · user_ruling.</div></div>
+</div>
+
+<div class="rec"><div class="rec-head">Anatomy: a statement stub <span class="mono">nodes.json</span></div>
+  <div class="frow"><div class="k">id</div><div class="v">"p:0051"</div><div class="a">numbered, meaningless — deduped by normalized surface text.</div></div>
+  <div class="frow"><div class="k">kind</div><div class="v">"statement"</div><div class="a">marks it as a stub. Concepts have no kind field.</div></div>
+  <div class="frow"><div class="k">text_he</div><div class="v he">קישור האותיות והצירופים לסטרא אחרא</div><div class="a">the raw surface that failed resolution. <b>No gloss, no English, no identity</b> — that's the whole problem.</div></div>
+  <div class="frow dim"><div class="k">src</div><div class="v">"ai"</div><div class="a">which pipeline coined it.</div></div>
+</div>
+
+<h2>3 · Edge anatomy — where all the semantics live</h2>
+<div class="rec"><div class="rec-head">One edge record <span class="mono">edges.json</span></div>
+  <div class="frow"><div class="k">source</div><div class="v">"c:da'at"</div><div class="a">cause side (for eitza). Direction convention: for harms/absence the source is the thing whose <i>lack</i> does the damage.</div></div>
+  <div class="frow"><div class="k">target</div><div class="v">"c:zikaron"</div><div class="a">effect side.</div></div>
+  <div class="frow"><div class="k">type</div><div class="v">"eitza"</div><div class="a"><b>eitza</b> = directed cause→effect counsel · <b>bechina</b> = aspect/parallel (undirected) · <b>equation</b> = explicit identity ("X, shehu Y").</div></div>
+  <div class="frow"><div class="k">polarity</div><div class="v">"harms"</div><div class="a"><span class="badge b-good">builds / טוב</span> <span class="badge b-crit">harms / רע</span> <span class="badge b-neu">neutral</span> — is the flow producing good or damage.</div></div>
+  <div class="frow"><div class="k">via</div><div class="v">"absence"</div><div class="a"><b>presence</b> = the thing itself acts · <b>absence</b> = its lack/blemish acts (the פגם pattern).</div></div>
+  <div class="frow"><div class="k">weight</div><div class="v">1</div><div class="a">= number of attesting occurrences. Nothing is averaged or voted: weight only accumulates.</div></div>
+  <div class="frow"><div class="k">proofs</div><div class="v">["occ:ai:lm1_54_5_0:7"]</div><div class="a">every attestation kept, by id — mixed human + AI lists mean you and the daemon independently found it.</div></div>
+</div>
+
+<div class="callout"><h4>Edge identity = (source, target, type, polarity, via)</h4>
+<p>Occurrences that agree on all five aggregate into one edge and stack weight. Consequence: if the text attests both
+"X brings Y" <i>and</i> "X damages Y", the graph keeps <b>two parallel edges</b>, each with its own proofs — nothing is
+discarded. Also a consequence: a polarity-inversion extraction error creates a <i>new wrong edge</i> rather than corrupting
+the right one, so cleanup is deletion, never repair.</p></div>
+
+<table class="combos"><thead><tr><th>type</th><th>polarity</th><th>via</th><th>reading</th><th>pattern in the text</th><th>count</th></tr></thead><tbody>
+<tr><td>eitza</td><td><span class="badge b-good">builds</span></td><td>presence</td><td>doing/attaining X brings good Y</td><td class="he">על ידי X זוכין ל-Y</td><td class="n">4,121</td></tr>
+<tr><td>eitza</td><td><span class="badge b-crit">harms</span></td><td>presence</td><td>X itself causes damage Z</td><td class="he">הכעס מזיק / מביא ל-Z</td><td class="n">657</td></tr>
+<tr><td>eitza</td><td><span class="badge b-crit">harms</span></td><td>absence</td><td>the LACK/blemish of X causes Z</td><td class="he">על ידי פגם ה-X בא Z</td><td class="n">317</td></tr>
+<tr><td>eitza</td><td><span class="badge b-good">builds</span></td><td>absence</td><td>refraining from X brings good Y</td><td class="he">על ידי שבירת התאוה זוכין…</td><td class="n">11</td></tr>
+<tr><td>bechina</td><td><span class="badge b-neu">neutral</span></td><td>presence</td><td>X is an aspect/parallel of Y</td><td class="he">X בחינת Y</td><td class="n">5,346</td></tr>
+<tr><td>equation</td><td><span class="badge b-neu">neutral</span></td><td>presence</td><td>X is explicitly identified with Y</td><td class="he">X, שהוא Y / היינו</td><td class="n">1,876</td></tr>
+</tbody></table>
+
+<div class="rec"><div class="rec-head">The proof behind an edge <span class="mono">ai_compiled.jsonl · one occurrence</span></div>
+  <div class="frow"><div class="k">id</div><div class="v">"occ:ai:lm1_51_17_0:5"</div><div class="a">chunk-addressed — you can always find the exact passage.</div></div>
+  <div class="frow"><div class="k">source_surface</div><div class="v he">שמאל</div><div class="a"><b>what the extractor actually saw</b>, before resolution. Compare with the resolved node to catch resolution mistakes.</div></div>
+  <div class="frow"><div class="k">target_surface</div><div class="v he">טומאה</div><div class="a">same, effect side.</div></div>
+  <div class="frow"><div class="k">proof</div><div class="v he">עִקַּר אֲחִיזַת הַטֻּמְאָה הוּא מִבְּחִינַת שְׂמָאלָא</div><div class="a">verbatim quote — the edge's entire evidentiary basis. If this doesn't carry the claim, the edge is wrong.</div></div>
+  <div class="frow"><div class="k">explicitness</div><div class="v">"explicit"</div><div class="a">explicit (8,959 in AI layer) vs inferred (28).</div></div>
+  <div class="frow dim"><div class="k">extractor</div><div class="v">"ai:claude-sonnet-5"</div><div class="a">who extracted; your layer has none/legacy ids.</div></div>
+  <div class="frow dim"><div class="k">anchor</div><div class="v">{"book":"lm1","torah":51}</div><div class="a">LM I:51 — the source location.</div></div>
+</div>
+
+<h2>4 · The resolution ladder — surface → concept, or stub</h2>
+<p class="sub">Deterministic and lexical only. No gloss-similarity, no embeddings — a previous incident
+(<span class="he">פגם האמונה</span> substring-matching <span class="he">אמונה</span>) is the corruption class this design forbids.
+At every rung, a form owned by two concepts is treated as <i>unresolved</i> rather than guessing a winner.</p>
+<ol class="ladder">
+  <li><b>exact</b><span>NFC-normalize, strip niqqud + te'amim, maqaf→space, normalize geresh/gershayim → match against every concept's forms + canonical_he.</span></li>
+  <li><b>article</b><span>same, after stripping a leading ה from each word (התורה → תורה).</span></li>
+  <li><b>skeleton</b><span>plene/defective folding (drop י/ו) — accepted only if the skeleton maps to exactly ONE concept in the whole registry.</span></li>
+  <li><b>skeleton + article</b><span>rungs 2 then 3 combined.</span></li>
+  <li class="fail"><b>no match → policy fork</b><span>one endpoint resolved → the other becomes a <code>p:</code> stub (edge kept, half-connected). NEITHER resolved → edge not stored ("skipped island"; the chunk file still holds it, so a recompile after an alias pass recovers them).</span></li>
+</ol>
+<div class="callout warn"><h4>The structural bottleneck: 6,089 of 8,389 AI-only edges (73%) have a stub endpoint</h4>
+<p>The extractor quotes phrases the way the text says them (<span class="he">קדשת ארץ ישראל</span>, inflected and construct forms);
+the ladder only accepts near-exact lexical matches. So most new edges dangle off placeholder nodes. This is by design —
+a wrong guess corrupts, a stub just waits — but it means the planned <b>verified alias pass</b>
+(~982 recurring unresolved forms) is the single highest-leverage fix in the project.</p></div>
+
+<h2>5 · Where good and evil live — and where they don't</h2>
+<div class="cards">
+  <div class="card"><h4>Stored today: on the edge</h4>
+    <p><code>polarity × via</code> per edge captures both attested harm shapes: a bad thing acting
+    (<span class="he">כעס מזיק</span> — harms/presence) and a good thing missing (<span class="he">פגם האמונה מביא חלאים</span> — harms/absence)
+    without any node having to be "both good and bad".</p></div>
+  <div class="card"><h4>Not stored: node character</h4>
+    <p>No field says <span class="he">כעס</span> is a bad concept and <span class="he">אמונה</span> a good one. A bad↔bad bechina
+    (<span class="he">כעס ↔ חמץ</span>) is indistinguishable from a good↔good one. Your "bad begets bad" intuition has no home in the schema.</p></div>
+  <div class="card"><h4>Proposed: derived node character</h4>
+    <p>Computable from the edge signature — sources of harms/<i>presence</i> ⇒ bad node; sources of harms/<i>absence</i> ⇒ good node;
+    "mixed" nodes get flagged for review (genuine dual concepts or extraction errors). A recompute step, not a schema break.</p></div>
+</div>
+
+<h2>6 · Standing design decisions you may want to revisit</h2>
+<ul class="plain">
+  <li><b>Legacy eitza edges were all imported as builds/presence.</b> Correct for the overwhelming majority (the hand layer was curated as the good-flow map), but any hand edge that was really a harm-flow is mislabeled by policy. A cheap backfill pass re-classifying from their proofs was spec'd and never run.</li>
+  <li><b>Bechina/equation edges are coerced to neutral/presence.</b> "The lack of X parallels the lack of its bechinot" stays a query-time inference in tmap rather than stored data.</li>
+  <li><b>Concept identity = gloss.</b> All the audit's slug/content-mismatch bugs are violations of this rule by the AI canonicalization — the rule itself is sound; the fixes are renames/merges in the registry followed by a recompile.</li>
+  <li><b>The graph is a build artifact.</b> nodes.json/edges.json are never edited by hand; every fix goes into the registry or occurrence layer and flows through compile_graph.py. That's why aggressive cleanup is safe.</li>
+</ul>
+
+</body></html>

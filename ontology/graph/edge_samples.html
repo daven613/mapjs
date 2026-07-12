@@ -1,0 +1,722 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Torah Map — AI Edge Sample Sheet</title>
+<style>
+:root {
+  --surface:#fcfcfb; --surface2:#f3f2ef; --ink:#0b0b0b; --ink2:#52514e; --ink3:#8a8984;
+  --line:#e4e2dc; --bar:#2a78d6;
+  --good:#0ca30c; --crit:#d03b3b; --neutral:#6b6a66; --warnbg:#fdf3e7;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --surface:#1a1a19; --surface2:#242422; --ink:#ffffff; --ink2:#c3c2b7; --ink3:#8a8984;
+  --line:#3a3936; --bar:#3987e5; --good:#0ca30c; --crit:#d03b3b; --neutral:#9a9994; --warnbg:#33291c;
+} }
+:root[data-theme="dark"] {
+  --surface:#1a1a19; --surface2:#242422; --ink:#ffffff; --ink2:#c3c2b7; --ink3:#8a8984;
+  --line:#3a3936; --bar:#3987e5; --neutral:#9a9994; --warnbg:#33291c;
+}
+:root[data-theme="light"] {
+  --surface:#fcfcfb; --surface2:#f3f2ef; --ink:#0b0b0b; --ink2:#52514e; --ink3:#8a8984;
+  --line:#e4e2dc; --bar:#2a78d6; --neutral:#6b6a66; --warnbg:#fdf3e7;
+}
+body { background:var(--surface); color:var(--ink); font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;
+  margin:0; padding:24px clamp(12px,4vw,48px); }
+h1 { font-size:1.5rem; margin:0 0 4px; }
+h2 { font-size:1.15rem; margin:40px 0 6px; border-top:1px solid var(--line); padding-top:20px; }
+h3 { font-size:.95rem; margin:0 0 10px; color:var(--ink2); font-weight:600; }
+.sub { color:var(--ink2); max-width:70ch; }
+.he { font-size:1.08em; }
+.he-title { color:var(--ink3); font-weight:400; font-size:.9em; margin-inline-start:8px; }
+.tiles { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0; }
+.tile { background:var(--surface2); border:1px solid var(--line); border-radius:10px; padding:12px 18px; min-width:150px; flex:1; }
+.tile .n { font-size:1.6rem; font-weight:700; font-variant-numeric:tabular-nums; }
+.tile .t { color:var(--ink2); font-size:.82rem; }
+.tile.warn { background:var(--warnbg); }
+.charts { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:20px 36px; margin:8px 0 12px; }
+.chart { min-width:0; }
+.bar-row { display:grid; grid-template-columns:minmax(120px,220px) 1fr 60px; gap:10px; align-items:center; padding:3px 0; }
+.bar-row:hover .bar-fill { opacity:.8; }
+.bar-label { font-size:.82rem; color:var(--ink2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.bar-track { height:12px; }
+.bar-fill { height:12px; background:var(--bar); border-radius:0 4px 4px 0; min-width:2px; }
+.bar-val { font-size:.82rem; color:var(--ink); font-variant-numeric:tabular-nums; text-align:right; }
+.note { color:var(--ink2); max-width:90ch; font-size:.9rem; }
+.tbl-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:10px; }
+table { border-collapse:collapse; width:100%; min-width:900px; }
+th { text-align:left; font-size:.75rem; text-transform:uppercase; letter-spacing:.04em; color:var(--ink3);
+  padding:8px 10px; border-bottom:1px solid var(--line); background:var(--surface2); position:sticky; top:0; }
+td { padding:10px; border-bottom:1px solid var(--line); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td.node { width:22%; }
+td.node.stub .slug { color:var(--crit); }
+.slug { font-family:ui-monospace,Menlo,monospace; font-size:.78rem; color:var(--ink3); }
+td .he { font-weight:600; margin:2px 0; }
+.gloss { font-size:.8rem; color:var(--ink2); }
+.surface { font-size:.78rem; color:var(--ink3); margin-top:3px; }
+td.rel { white-space:nowrap; width:1%; }
+.badge { display:inline-block; padding:2px 9px; border-radius:999px; font-size:.78rem; font-weight:600; color:#fff; }
+.pol-builds { background:var(--good); }
+.pol-harms { background:var(--crit); }
+.pol-neutral { background:var(--neutral); }
+.via { font-size:.78rem; color:var(--ink3); margin-top:4px; }
+td.proof { width:32%; }
+.meta { font-size:.78rem; color:var(--ink3); margin-top:4px; }
+.tag { border:1px solid var(--line); border-radius:4px; padding:0 4px; }
+td.verdict { white-space:nowrap; width:1%; }
+.v { border:1px solid var(--line); background:var(--surface2); color:var(--ink2); border-radius:6px;
+  width:28px; height:28px; cursor:pointer; margin-right:3px; font-size:.9rem; }
+tr.saved-good .v.good { background:var(--good); color:#fff; border-color:var(--good); }
+tr.saved-bad .v.bad { background:var(--crit); color:#fff; border-color:var(--crit); }
+tr.saved-unsure .v.unsure { background:var(--neutral); color:#fff; border-color:var(--neutral); }
+#exportbar { position:sticky; bottom:0; background:var(--surface2); border-top:1px solid var(--line);
+  margin:32px -48px -24px; padding:10px 48px; display:flex; gap:14px; align-items:center; }
+#exportbar button { padding:6px 14px; border-radius:8px; border:1px solid var(--line); background:var(--surface);
+  color:var(--ink); cursor:pointer; font-weight:600; }
+#counts { color:var(--ink2); font-size:.85rem; }
+ol li { margin-bottom:10px; max-width:95ch; }
+@media (max-width:1100px) {
+  table { min-width:0; }
+  thead { display:none; }
+  tr { display:grid; grid-template-columns:auto 1fr 1fr; gap:4px 16px;
+       padding:12px; border-bottom:1px solid var(--line); }
+  td { border-bottom:none; padding:2px 0; }
+  td.verdict { grid-column:1; grid-row:1 / span 2; }
+  td.rel { grid-column:2 / span 2; grid-row:1; }
+  td.node { width:auto; }
+  td.proof { grid-column:2 / span 2; width:auto; background:var(--surface2);
+             border-radius:8px; padding:8px 10px; margin-top:4px; }
+}
+</style>
+
+<h1>AI Edge Sample Sheet <span class="he-title" dir="rtl">דגימת הקשרים החדשים</span></h1>
+<p class="sub">Random samples (fixed seed, not cherry-picked) from the 8,389 AI-only edges — the connections the extraction daemon
+added that have <b>no proof from your hand-extracted layer</b> — one table per kind, plus the both-attested set for comparison.
+Every row shows the full record: slugs, Hebrew, gloss, extractor surface form, relation attributes, verbatim proof, source ref, weight.
+Mark verdicts as you read; export them at the bottom and I'll apply the rulings.</p>
+
+<div class="tiles">
+<div class="tile"><div class="n">12,328</div><div class="t">edges total</div></div>
+<div class="tile"><div class="n">8,389</div><div class="t">AI-only (never hand-reviewed)</div></div>
+<div class="tile"><div class="n">2,290</div><div class="t">strong pool: both concepts resolved, explicit proofs</div></div>
+<div class="tile warn"><div class="n">6,089</div><div class="t">AI-only edges with an unresolved p: endpoint (73%)</div></div>
+</div>
+<div class="charts"><div class="chart"><h3>All 12,328 edges by type · polarity · via</h3><div class="bar-row" title="bechina · neutral · presence: 5,346">
+  <div class="bar-label">bechina · neutral · presence</div>
+  <div class="bar-track"><div class="bar-fill" style="width:100.0%"></div></div>
+  <div class="bar-val">5,346</div></div><div class="bar-row" title="eitza · builds · presence: 4,121">
+  <div class="bar-label">eitza · builds · presence</div>
+  <div class="bar-track"><div class="bar-fill" style="width:77.1%"></div></div>
+  <div class="bar-val">4,121</div></div><div class="bar-row" title="equation · neutral · presence: 1,876">
+  <div class="bar-label">equation · neutral · presence</div>
+  <div class="bar-track"><div class="bar-fill" style="width:35.1%"></div></div>
+  <div class="bar-val">1,876</div></div><div class="bar-row" title="eitza · harms · presence: 657">
+  <div class="bar-label">eitza · harms · presence</div>
+  <div class="bar-track"><div class="bar-fill" style="width:12.3%"></div></div>
+  <div class="bar-val">657</div></div><div class="bar-row" title="eitza · harms · absence: 317">
+  <div class="bar-label">eitza · harms · absence</div>
+  <div class="bar-track"><div class="bar-fill" style="width:5.9%"></div></div>
+  <div class="bar-val">317</div></div><div class="bar-row" title="eitza · builds · absence: 11">
+  <div class="bar-label">eitza · builds · absence</div>
+  <div class="bar-track"><div class="bar-fill" style="width:0.6%"></div></div>
+  <div class="bar-val">11</div></div></div><div class="chart"><h3>Provenance — who attested the edge</h3><div class="bar-row" title="ai-only: 8,389">
+  <div class="bar-label">ai-only</div>
+  <div class="bar-track"><div class="bar-fill" style="width:100.0%"></div></div>
+  <div class="bar-val">8,389</div></div><div class="bar-row" title="human-only: 2,815">
+  <div class="bar-label">human-only</div>
+  <div class="bar-track"><div class="bar-fill" style="width:33.6%"></div></div>
+  <div class="bar-val">2,815</div></div><div class="bar-row" title="both: 1,124">
+  <div class="bar-label">both</div>
+  <div class="bar-track"><div class="bar-fill" style="width:13.4%"></div></div>
+  <div class="bar-val">1,124</div></div></div><div class="chart"><h3>AI-only edges: endpoint resolution</h3><div class="bar-row" title="one side p-stub: 6,089">
+  <div class="bar-label">one side p-stub</div>
+  <div class="bar-track"><div class="bar-fill" style="width:100.0%"></div></div>
+  <div class="bar-val">6,089</div></div><div class="bar-row" title="both concepts: 2,300">
+  <div class="bar-label">both concepts</div>
+  <div class="bar-track"><div class="bar-fill" style="width:37.8%"></div></div>
+  <div class="bar-val">2,300</div></div></div><div class="chart"><h3>AI proof explicitness (occurrence level)</h3><div class="bar-row" title="explicit: 8,959">
+  <div class="bar-label">explicit</div>
+  <div class="bar-track"><div class="bar-fill" style="width:100.0%"></div></div>
+  <div class="bar-val">8,959</div></div><div class="bar-row" title="inferred: 28">
+  <div class="bar-label">inferred</div>
+  <div class="bar-track"><div class="bar-fill" style="width:0.6%"></div></div>
+  <div class="bar-val">28</div></div></div></div>
+<section id="builds_presence">
+<h2>Builds · presence — &quot;through X one merits Y&quot; <span class="he-title" dir="rtl">על ידי X זוכין ל-Y</span></h2>
+<p class="note">AI-only eitza edges, polarity builds/presence, both endpoints resolved concepts, all proofs explicit. <b>Pool: 560 edges; showing a random 15 (seed 613, not cherry-picked).</b></p>
+<div class="tbl-wrap"><table>
+<thead><tr><th>verdict</th><th>source / cause</th><th>relation</th><th>target / effect</th><th>proof (verbatim) · provenance</th></tr></thead>
+<tbody><tr data-eid="builds_presence:c:holy-day-rest→c:shalom">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:holy-day-rest</div><div class="he" dir="rtl">שבת</div><div class="gloss">Shabbat, the seventh-day Sabbath (the holy day of rest, שַׁבָּת) — which testifies to God&#x27;s unity and the creation of the world, and serves </div><div class="surface">surface: <span dir="rtl">שַׁבָּת</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:shalom</div><div class="he" dir="rtl">שלום</div><div class="gloss">Peace (shalom) — the spiritual quality of harmony that unites and reconciles opposites (e.g., chasadim and gevurot, mind and speech, disputi</div><div class="surface">surface: <span dir="rtl">שָׁלוֹם</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְזוֹכֶה לְשָׁלוֹם כַּנַּ&quot;ל</div>
+<div class="meta">LM I:57 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:five-kindnesses-five→c:emunah-2">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:five-kindnesses-five</div><div class="he" dir="rtl">דעת</div><div class="gloss">Da&#x27;at — the noun &quot;knowledge/awareness&quot; as the unifying mental faculty and sefirah of Knowledge: holy consciousness that joins Chesed and Gev</div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:emunah-2</div><div class="he" dir="rtl">אמונה</div><div class="gloss">Faith (emunah) — the noun אֱמוּנָה: belief/trust in God and His providence, the spiritual faculty of faith (identified in Likutey Moharan wi</div></td>
+<td class="proof"><div class="he" dir="rtl">אֲבָל אִם יֵשׁ לוֹ גַּם דַּעַת, שֶׁמֵּבִין גַּם בְּהַדַּעַת, אֲזַי אִי אֶפְשָׁר לוֹ לִפֹּל</div>
+<div class="meta">LM I:255 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:shetikah→c:machashavah-2">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:shetikah</div><div class="he" dir="rtl">שתיקה</div><div class="gloss">silence (shetikah) — the noun for keeping silent / restraint of speech: remaining quiet in the face of insult and disgrace, and the meta-ver</div><div class="surface">surface: <span dir="rtl">שְׁתִיקָה</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:machashavah-2</div><div class="he" dir="rtl">מחשבה</div><div class="gloss">thought (machashavah) — the mental faculty and its contents, cognition arising in the mind, as distinct from speech and deed</div><div class="surface">surface: <span dir="rtl">מַחֲשָׁבָה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְעַל יְדֵי הַשְּׁתִיקָה זוֹ נִתְעַלֶּה הַמַּחֲשָׁבָה</div>
+<div class="meta">LM I:251 <span class="tag">explicit</span> · weight 2 · 2 AI</div></td></tr><tr data-eid="builds_presence:c:neshimah→c:shamnunit-ha-guf-3">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:neshimah</div><div class="he" dir="rtl">נשימה</div><div class="gloss">breathing (neshimah) — the respiratory breath of the lung, which raises and sustains the body&#x27;s fat/oiliness to fuel the brain and Da&#x27;at (as</div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:shamnunit-ha-guf-3</div><div class="he" dir="rtl">שמנונית הגוף</div><div class="gloss">the fat/oiliness of the body (shamnunit ha-guf) — the bodily fat that serves as fuel for the intellect, which burns like a candle upon it, r</div></td>
+<td class="proof"><div class="he" dir="rtl">גַּם עַל־יְדֵי הַנְּשִׁימָה נִתְקַיֵּם כָּל הַשַּׁמְנוּנִית שֶׁל הַגּוּף</div>
+<div class="meta">LM II:8 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:emunah-2→c:medicinal-remedies-cures">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:emunah-2</div><div class="he" dir="rtl">אמונה</div><div class="gloss">Faith (emunah) — the noun אֱמוּנָה: belief/trust in God and His providence, the spiritual faculty of faith (identified in Likutey Moharan wi</div><div class="surface">surface: <span dir="rtl">אֱמוּנָה</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:medicinal-remedies-cures</div><div class="he" dir="rtl">רפואות</div><div class="gloss">medicinal remedies / cures (רְפוּאוֹת, plural of רְפוּאָה) — healing agents for bodily illness, such as herbal medicines; not &#x27;healing&#x27; as a</div><div class="surface">surface: <span dir="rtl">רְפוּאוֹת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְהֵם גְּדֵלִים רַק עַל־יְדֵי אֱמוּנָה</div>
+<div class="meta">LM II:5 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:novel-torah-insights→c:plural-chesed">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:novel-torah-insights</div><div class="he" dir="rtl">חדושי תורה</div><div class="gloss">Novel Torah insights (chiddushei Torah / chiddushin de-Oraita) — original interpretations or innovations newly generated in Torah study, as </div><div class="surface">surface: <span dir="rtl">חִדּוּשֵׁי הַתּוֹרָה</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:plural-chesed</div><div class="he" dir="rtl">חסדים</div><div class="gloss">chasadim — the kabbalistic kindnesses (plural of chesed): the supernal lights/forces of divine benevolence associated with the right side an</div><div class="surface">surface: <span dir="rtl">חֲסָדִים</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי כָל חִדּוּשֵׁי הַתּוֹרָה שֶׁמְּגַלִּין, עַל־יְדֵי־זֶה מְגַלִּין חֲסָדִים</div>
+<div class="meta">LM II:60 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:ha-tzaddik→c:yosef-rosh-bayit">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:ha-tzaddik</div><div class="he" dir="rtl">הצדיק</div><div class="gloss">THE Tzaddik (ha-tzaddik) — the singular true tzaddik of the generation, the &#x27;head&#x27; (rosh) of the Jewish people from whom all the generations</div><div class="surface">surface: <span dir="rtl">הַצַּדִּיק</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:yosef-rosh-bayit</div><div class="he" dir="rtl">קיום הבית המקדש</div><div class="gloss">the endurance/sustenance of the Beit HaMikdash — the Temple&#x27;s standing, maintained through the tzaddik (Yosef, rosh bayit)</div><div class="surface">surface: <span dir="rtl">קִיּוּם הַבֵּית־הַמִּקְדָּשׁ</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי עַל־יָדוֹ קִיּוּם הַבֵּית־הַמִּקְדָּשׁ</div>
+<div class="meta">LM II:67 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:ha-tzaddik→c:he&#x27;arat-ha-yadayim">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:ha-tzaddik</div><div class="he" dir="rtl">הצדיק</div><div class="gloss">THE Tzaddik (ha-tzaddik) — the singular true tzaddik of the generation, the &#x27;head&#x27; (rosh) of the Jewish people from whom all the generations</div><div class="surface">surface: <span dir="rtl">הַצַּדִּיק</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:he&#x27;arat-ha-yadayim</div><div class="he" dir="rtl">הארת הידים</div><div class="gloss">The illumination/radiance of the hands (he&#x27;arat ha-yadayim) — the spiritual light revealed in the hands through the spirit (ruach) of the tz</div><div class="surface">surface: <span dir="rtl">הֶאָרַת הַיָּדַיִם</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְנִתְגַּלָּה הֶאָרַת הַיָּדַיִם</div>
+<div class="meta">LM I:10 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:exodus-6→c:na&#x27;aseh">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:exodus-6</div><div class="he" dir="rtl">נשמע</div><div class="gloss">&quot;nishma&quot; — &quot;we will hear&quot;, the second term of Israel&#x27;s declaration at Sinai &quot;na&#x27;aseh ve-nishma&quot; (Exodus 24:7), used as the aspect of the hid</div><div class="surface">surface: <span dir="rtl">נִשְׁמַע</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:na&#x27;aseh</div><div class="he" dir="rtl">נעשה</div><div class="gloss">&quot;We will do&quot; (na&#x27;aseh) — Israel&#x27;s declaration at Sinai/Horeb (Exodus 24:7, &quot;na&#x27;aseh ve-nishma&quot;), signifying the revealed commandments one kn</div><div class="surface">surface: <span dir="rtl">נַעֲשֶׂה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁיִּהְיֶה מֵהַנִּשְׁמַע נַעֲשֶׂה</div>
+<div class="meta">LM I:22 <span class="tag">explicit</span> · weight 4 · 4 AI</div></td></tr><tr data-eid="builds_presence:c:kanfei-re-ah→c:he&#x27;arat-ha-yadayim">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:kanfei-re-ah</div><div class="he" dir="rtl">כנפי ראה</div><div class="gloss">kanfei re&#x27;ah — the lobes/&#x27;wings&#x27; of the lungs that fan the heart lest it burn the body, symbol of the Torah cooling the heart&#x27;s fire</div><div class="surface">surface: <span dir="rtl">כַּנְפֵי הָרֵאָה</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:he&#x27;arat-ha-yadayim</div><div class="he" dir="rtl">הארת הידים</div><div class="gloss">The illumination/radiance of the hands (he&#x27;arat ha-yadayim) — the spiritual light revealed in the hands through the spirit (ruach) of the tz</div><div class="surface">surface: <span dir="rtl">הֶאָרַת הַיָּדַיִם</span></div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁמִּשָּׁם נִמְשָׁךְ בְּחִינַת הֶאָרַת הַיָּדַיִם כַּנַּ&quot;ל</div>
+<div class="meta">LM II:7 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:shalom→c:noun-instruction">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:shalom</div><div class="he" dir="rtl">שלום</div><div class="gloss">Peace (shalom) — the spiritual quality of harmony that unites and reconciles opposites (e.g., chasadim and gevurot, mind and speech, disputi</div><div class="surface">surface: <span dir="rtl">שָׁלוֹם</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:noun-instruction</div><div class="he" dir="rtl">תורה</div><div class="gloss">The Torah — God&#x27;s revealed teaching/law (the noun תּוֹרָה, &#x27;instruction&#x27;), encompassing Written and Oral Torah and its study (עסק התורה); id</div><div class="surface">surface: <span dir="rtl">תּוֹרָה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">אֲזַי – עֹז שֶׁהִיא הַתּוֹרָה גַּם כֵּן לְעַמּוֹ יִתֵּן</div>
+<div class="meta">LM I:80 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:holy-day-rest→c:yosef-rosh-bayit">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:holy-day-rest</div><div class="he" dir="rtl">שבת</div><div class="gloss">Shabbat, the seventh-day Sabbath (the holy day of rest, שַׁבָּת) — which testifies to God&#x27;s unity and the creation of the world, and serves </div><div class="surface">surface: <span dir="rtl">שַׁבָּת</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:yosef-rosh-bayit</div><div class="he" dir="rtl">קיום הבית המקדש</div><div class="gloss">the endurance/sustenance of the Beit HaMikdash — the Temple&#x27;s standing, maintained through the tzaddik (Yosef, rosh bayit)</div><div class="surface">surface: <span dir="rtl">קִיּוּם הַבֵּית־הַמִּקְדָּשׁ</span></div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁקִּיּוּמוֹ עַל־יְדֵי שַׁבָּת</div>
+<div class="meta">LM II:67 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:mitzvah-charity→c:chokhmah-tata&#x27;ah">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:mitzvah-charity</div><div class="he" dir="rtl">צדקה</div><div class="gloss">tzedakah — charitable giving; the act of giving money/alms to the poor or to the deserving (the mitzvah of charity, צְדָקָה), as a spiritual</div><div class="surface">surface: <span dir="rtl">צְדָקָה</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:chokhmah-tata&#x27;ah</div><div class="he" dir="rtl">מלכות</div><div class="gloss">Malkhut/kingship — the abstract noun מַלְכוּת denoting the sefirah of Kingship/divine sovereignty: the &#x27;lower wisdom&#x27; (chokhmah tata&#x27;ah) tha</div><div class="surface">surface: <span dir="rtl">מַלְכוּת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">מַעֲלִין וּמַצִּילִין אוֹתָהּ מִבְּחִינַת רַגְלֶיהָ יוֹרְדוֹת מָוֶת</div>
+<div class="meta">LM I:67 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:zuzim→c:parnasah-livelihood-material">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:zuzim</div><div class="he" dir="rtl">מזוזה</div><div class="gloss">mezuzah — the parchment scroll affixed to the doorpost (the mitzvah of &#x27;you shall write them on the doorposts of your house&#x27;), which in Liku</div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:parnasah-livelihood-material</div><div class="he" dir="rtl">פרנסה</div><div class="gloss">parnasah — livelihood/material sustenance: the provision of food and one&#x27;s earthly means of support, granted by God (the noun פַּרְנָסָה, in</div></td>
+<td class="proof"><div class="he" dir="rtl">וְכֶסֶף תּוֹעָפוֹת לָךְ – עַל־יְדֵי־זֶה פַּרְנָסָתוֹ מְעוֹפֶפֶת לָךְ</div>
+<div class="meta">LM I:23 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_presence:c:dvar-hashem-word→c:medicinal-remedies-cures">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:dvar-hashem-word</div><div class="he" dir="rtl">דבר ה</div><div class="gloss">Dvar Hashem — &#x27;the word of the Lord&#x27; as the supernal root of all creation (&#x27;by the word of Hashem the heavens were made&#x27;), identified with p</div><div class="surface">surface: <span dir="rtl">דבר ה&#x27;</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:medicinal-remedies-cures</div><div class="he" dir="rtl">רפואות</div><div class="gloss">medicinal remedies / cures (רְפוּאוֹת, plural of רְפוּאָה) — healing agents for bodily illness, such as herbal medicines; not &#x27;healing&#x27; as a</div></td>
+<td class="proof"><div class="he" dir="rtl">הַיְנוּ שֶׁמְּקַבְּלִין כָּל הָרְפוּאוֹת רַק עַל־יְדֵי דְבַר ה&#x27;</div>
+<div class="meta">LM II:1 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr></tbody></table></div></section><section id="harms_absence">
+<h2>Harms · absence — &quot;the lack/blemish of X causes Z&quot; <span class="he-title" dir="rtl">על ידי פגם ה-X בא Z</span></h2>
+<p class="note">The new diagnostic layer: the LACK of the (good) source damages the target. Your hand layer had none of these. <b>Pool: 91 edges; showing a random 12 (seed 613, not cherry-picked).</b></p>
+<div class="tbl-wrap"><table>
+<thead><tr><th>verdict</th><th>source / cause</th><th>relation</th><th>target / effect</th><th>proof (verbatim) · provenance</th></tr></thead>
+<tbody><tr data-eid="harms_absence:c:israel→c:phylacteries">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:israel</div><div class="he" dir="rtl">התפארות</div><div class="gloss">hitpa&#x27;arut — God&#x27;s glorying/taking pride (in Israel), the divine self-adornment from which the tefillin-pe&#x27;er and divine &#x27;eyes&#x27; of providenc</div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:phylacteries</div><div class="he" dir="rtl">תפלין</div><div class="gloss">tefillin (phylacteries) — the leather boxes containing Torah passages bound on the head and arm; in Likutey Moharan the aspect of &#x27;pe&#x27;er&#x27; (g</div><div class="surface">surface: <span dir="rtl">תפילין</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְנִפְגַּם בְּחִינַת הַתְּפִלִּין, שֶׁנַּעֲשִׂין מִן הַהִתְפָּאֲרוּת כַּנַּ&quot;ל</div>
+<div class="meta">LM II:40 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_absence:c:noun-instruction→c:chayim">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:noun-instruction</div><div class="he" dir="rtl">תורה</div><div class="gloss">The Torah — God&#x27;s revealed teaching/law (the noun תּוֹרָה, &#x27;instruction&#x27;), encompassing Written and Oral Torah and its study (עסק התורה); id</div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:chayim</div><div class="he" dir="rtl">חיים</div><div class="gloss">Life (chayim) — vitality/aliveness as a spiritual quality and state, the plural noun חַיִּים meaning &quot;life&quot; (including eternal life of the W</div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי בְּלֹא תּוֹרָה אִי אֶפְשָׁר לִחְיוֹת</div>
+<div class="meta">LM I:78 <span class="tag">explicit</span> · weight 2 · 2 AI</div></td></tr><tr data-eid="harms_absence:c:five-kindnesses-five→c:poverty-condition-poor">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:five-kindnesses-five</div><div class="he" dir="rtl">דעת</div><div class="gloss">Da&#x27;at — the noun &quot;knowledge/awareness&quot; as the unifying mental faculty and sefirah of Knowledge: holy consciousness that joins Chesed and Gev</div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:poverty-condition-poor</div><div class="he" dir="rtl">עניות</div><div class="gloss">poverty (עֲנִיּוּת) — the state/condition of being poor and materially destitute, as a spiritual consequence (e.g., of idle talk, evil speec</div></td>
+<td class="proof"><div class="he" dir="rtl">אֵין עֲנִיּוּת אֶלָּא מִן הַדַּעַת</div>
+<div class="meta">LM I:106 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_absence:c:galgalta-de-mocha→c:dibbur-2">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:galgalta-de-mocha</div><div class="he" dir="rtl">שמיעה</div><div class="gloss">shemi&#x27;ah — hearing, the faculty by which the heart is aroused: the forceful voice strikes the brain (galgalta de-mocha) producing thunder th</div><div class="surface">surface: <span dir="rtl">שְׁמִיעָה</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:dibbur-2</div><div class="he" dir="rtl">דבור</div><div class="gloss">Speech/utterance (dibbur) — the faculty and act of spoken word, the divine speech that is &#x27;the breath of His mouth,&#x27; the aspect of Malchut-o</div><div class="surface">surface: <span dir="rtl">דִּבּוּר</span></div></td>
+<td class="proof"><div class="he" dir="rtl">דְּהַיְנוּ מֵחֲמַת שֶׁאֵינוֹ שׁוֹמֵעַ אֵינוֹ יָכוֹל לְדַבֵּר</div>
+<div class="meta">LM I:60 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_absence:c:emunah-2→c:refu&#x27;ah">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:emunah-2</div><div class="he" dir="rtl">אמונה</div><div class="gloss">Faith (emunah) — the noun אֱמוּנָה: belief/trust in God and His providence, the spiritual faculty of faith (identified in Likutey Moharan wi</div><div class="surface">surface: <span dir="rtl">אֱמוּנָה</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:refu&#x27;ah</div><div class="he" dir="rtl">רפואה</div><div class="gloss">healing / medicinal remedy (refu&#x27;ah) — the cure of illness, whether bodily or spiritual, effected through means such as peace, faith, herbs,</div><div class="surface">surface: <span dir="rtl">רְפוּאָה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וַאֲזַי אֵין רְפוּאָה</div>
+<div class="meta">LM II:5 <span class="tag">explicit</span> · weight 2 · 2 AI</div></td></tr><tr data-eid="harms_absence:c:mishpat→c:malakhim-angels-fiery">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:mishpat</div><div class="he" dir="rtl">משפט</div><div class="gloss">judgment (mishpat) — the divine/personal attribute of judgment: weighing and judging one&#x27;s own deeds and affairs (self-judgment that averts </div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:malakhim-angels-fiery</div><div class="he" dir="rtl">מלאכים</div><div class="gloss">malakhim — angels, the fiery beings to which heart-enthusiasm corresponds (&#x27;vayera elav malakh Hashem be-labat esh&#x27;), whose fire burns the e</div></td>
+<td class="proof"><div class="he" dir="rtl">הֵן בַּמַּלְאָכִים הַנַּעֲשִׂים עַל־יְדֵי מִשְׁפָּט הַנַּ&quot;ל</div>
+<div class="meta">LM I:59 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_absence:c:neshimah→c:chayim">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:neshimah</div><div class="he" dir="rtl">נשימה</div><div class="gloss">breathing (neshimah) — the respiratory breath of the lung, which raises and sustains the body&#x27;s fat/oiliness to fuel the brain and Da&#x27;at (as</div><div class="surface">surface: <span dir="rtl">הַנְּשִׁימָה</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:chayim</div><div class="he" dir="rtl">חיים</div><div class="gloss">Life (chayim) — vitality/aliveness as a spiritual quality and state, the plural noun חַיִּים meaning &quot;life&quot; (including eternal life of the W</div><div class="surface">surface: <span dir="rtl">הַחַיִּים</span></div></td>
+<td class="proof"><div class="he" dir="rtl">אִם תֶּחְסַר הַנְּשִׁימָה – תֶּחְסַר הַחַיִּים</div>
+<div class="meta">LM I:8 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_absence:c:tevunah-tintzrekha-proverbs→c:etzah-2">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:tevunah-tintzrekha-proverbs</div><div class="he" dir="rtl">תבונה</div><div class="gloss">tevunah — understanding/discernment (&#x27;tevunah tintzrekha,&#x27; Proverbs 2), the Torah insights Moshe sought to instill in Israel</div><div class="surface">surface: <span dir="rtl">תְּבוּנָה</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:etzah-2</div><div class="he" dir="rtl">עצה</div><div class="gloss">counsel/advice (etzah) — guidance received for one&#x27;s path, esp. the spiritual counsel of the tzaddikim (the 613 counsels, counsel as seed/un</div><div class="surface">surface: <span dir="rtl">עֵצָה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי כְּשֶׁאֵין תְּבוּנָה, עֲצָתוֹ אֲבוּדָה</div>
+<div class="meta">LM II:5 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_absence:c:zikaron→c:zikaron-2">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:zikaron</div><div class="he" dir="rtl">זכרון</div><div class="gloss">memory / remembrance (zikaron) — the spiritual faculty of retention and recall, the capacity to keep one&#x27;s awareness attached (e.g., to the </div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:zikaron-2</div><div class="he" dir="rtl">בן זכר</div><div class="gloss">ben zakhar — a male son/child, the offspring whose birth depends on unblemished memory (zikaron), forfeited by forgetfulness (as with Avshal</div></td>
+<td class="proof"><div class="he" dir="rtl">וְעַל כֵּן לֹא הִנִּיחַ בֵּן זָכָר (שם ועיין סוטה יא), כִּי פָּגַם בַּזִּכָּרוֹן</div>
+<div class="meta">LM I:54 <span class="tag">explicit</span> · weight 2 · 2 AI</div></td></tr><tr data-eid="harms_absence:c:levush→c:gadlut">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:levush</div><div class="he" dir="rtl">לבוש</div><div class="gloss">garment (levush) — the kabbalistic &#x27;garment&#x27;/clothing: an outer covering that veils and mediates inner spiritual light (e.g., the chashmal, </div><div class="surface">surface: <span dir="rtl">לְבוּשׁ</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:gadlut</div><div class="he" dir="rtl">גדלות</div><div class="gloss">Arrogance (gadlut) — haughty self-aggrandizement, the negative character trait of pride identified in Likutey Moharan 11 with idolatry (the </div><div class="surface">surface: <span dir="rtl">גַּדְלוּת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">מִנְּפִילַת הַלְּבוּשׁ הַזֶּה נִתְהַוָּה הַגַּדְלוּת</div>
+<div class="meta">LM I:11 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_absence:c:five-kindnesses-five→c:poor-person-pauper">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:five-kindnesses-five</div><div class="he" dir="rtl">דעת</div><div class="gloss">Da&#x27;at — the noun &quot;knowledge/awareness&quot; as the unifying mental faculty and sefirah of Knowledge: holy consciousness that joins Chesed and Gev</div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:poor-person-pauper</div><div class="he" dir="rtl">עני</div><div class="gloss">poor person / pauper (עָנִי, fem. עֲנִיָּה) — one who possesses nothing of their own and must receive from others; used kabbalistically for </div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי אֵין עָנִי אֶלָּא מִן הַדַּעַת</div>
+<div class="meta">LM I:56 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_absence:c:kingship→c:nefesh">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:kingship</div><div class="he" dir="rtl">כבוד</div><div class="gloss">Kavod (כָּבוֹד) — glory/honor, especially the Divine glory: identified with Malkhut (kingship), likened to fire, garments/externality, and l</div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:nefesh</div><div class="he" dir="rtl">נפש</div><div class="gloss">soul (nefesh) — the animating life-force/soul of a person, lowest of the triad nefesh–ruach–neshamah; includes plural nefashot (souls); not </div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁהָיְתָה עֲיֵפָה עַל־יְדֵי שֶׁנִּתְרַחֲקָה מִן הַכָּבוֹד</div>
+<div class="meta">LM I:67 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr></tbody></table></div></section><section id="harms_presence">
+<h2>Harms · presence — &quot;X itself damages Z&quot; <span class="he-title" dir="rtl">X מזיק / מביא ל-Z</span></h2>
+<p class="note">The source itself is the damaging agent — these are the inherently &quot;evil&quot; sources. <b>Pool: 142 edges; showing a random 12 (seed 613, not cherry-picked).</b></p>
+<div class="tbl-wrap"><table>
+<thead><tr><th>verdict</th><th>source / cause</th><th>relation</th><th>target / effect</th><th>proof (verbatim) · provenance</th></tr></thead>
+<tbody><tr data-eid="harms_presence:c:me&#x27;orei→c:me&#x27;orei-eish">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:me&#x27;orei</div><div class="he" dir="rtl">מאורי אור</div><div class="gloss">&quot;Luminaries of light&quot; (me&#x27;orei or) — the supernal holy luminaries drawn from the Name of God, the aspect of Shabbat and of the light of the </div><div class="surface">surface: <span dir="rtl">מְאוֹרֵי אוֹר</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:me&#x27;orei-eish</div><div class="he" dir="rtl">מאורי אש</div><div class="gloss">The &#x27;luminaries of fire&#x27; (me&#x27;orei eish) — the kabbalistic forces of harsh judgment (dinim) that prevail when the &#x27;luminaries of light&#x27; (me&#x27;o</div><div class="surface">surface: <span dir="rtl">מְאוֹרֵי אֵשׁ</span></div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁכְּשֶׁיֵּשׁ כֹּחַ לִמְאוֹרֵי אוֹר, אֲזַי נִכְנָעִין מְאוֹרֵי אֵשׁ</div>
+<div class="meta">LM II:67 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_presence:c:simchah→c:kelipot-husks-shells">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:simchah</div><div class="he" dir="rtl">שמחה</div><div class="gloss">Joy / gladness (simchah) — the spiritual-emotional state of joyfulness in serving God, the antithesis of sadness and depression (atzvut, mar</div><div class="surface">surface: <span dir="rtl">שִׂמְחָה</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:kelipot-husks-shells</div><div class="he" dir="rtl">קלפות</div><div class="gloss">kelipot — the &#x27;husks&#x27; or shells of impurity in Kabbalah: parasitic forces of evil that surround and conceal holiness the way a peel surround</div><div class="surface">surface: <span dir="rtl">קְּלִפּוֹת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְאָז יִכְלוּ הַקְּלִפּוֹת לְגַמְרֵי</div>
+<div class="meta">LM I:24 <span class="tag">explicit</span> · weight 2 · 2 AI</div></td></tr><tr data-eid="harms_presence:c:sheker→c:god-possessed-attribute">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:sheker</div><div class="he" dir="rtl">שקר</div><div class="gloss">falsehood/the lie (sheker) — untruth as a spiritual force opposed to emet (truth), characterized as manifold (&#x27;many calculations&#x27;), linked t</div><div class="surface">surface: <span dir="rtl">שֶׁקֶר</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:god-possessed-attribute</div><div class="he" dir="rtl">הקדוש ברוך הוא</div><div class="gloss">The Holy One, blessed be He (God Himself, not a possessed attribute)</div><div class="surface">surface: <span dir="rtl">הַקָּדוֹשׁ־בָּרוּךְ־הוּא</span></div></td>
+<td class="proof"><div class="he" dir="rtl">עַל־יְדֵי שֶׁקֶר הוּא מְסַלֵּק אֶת הַקָּדוֹשׁ־בָּרוּךְ־הוּא</div>
+<div class="meta">LM I:9 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_presence:c:shining→c:anpin-chashukhin-3">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:shining</div><div class="he" dir="rtl">אנפין נהירין</div><div class="gloss">anpin nehirin — the Zoharic/Aramaic term &quot;illuminated (shining) faces,&quot; the radiant countenance of holiness: the luminous face associated wi</div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:anpin-chashukhin-3</div><div class="he" dir="rtl">תאוות ומדות רעות</div><div class="gloss">ta&#x27;avot u-middot ra&#x27;ot — lusts and evil character traits, the &#x27;darkened faces&#x27; (anpin chashukhin) deriving from the seventy nations</div><div class="surface">surface: <span dir="rtl">תאוות ומידות רעות</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כָּל הַצָּרִים וְהָאוֹיְבִים שֶׁנֶּאֱחָזִין בְּאַנְפִּין חֲשׁוּכִין, בְּתַאֲווֹת וּמִדּוֹת רָעוֹת, נִכְשָׁלִים וְנוֹפְלִים, כִּי זָכָה לְאַנְפִּין נְהִירִין כַּנַּ&quot;ל</div>
+<div class="meta">LM I:101 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_presence:c:paralleling-diminishing-moon→c:five-kindnesses-five">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:paralleling-diminishing-moon</div><div class="he" dir="rtl">גלות השכינה</div><div class="gloss">the exile of the Shekhinah — the kabbalistic state in which the Divine Presence (Shekhinah, identified with Lower Wisdom / Malkhut) is estra</div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:five-kindnesses-five</div><div class="he" dir="rtl">דעת</div><div class="gloss">Da&#x27;at — the noun &quot;knowledge/awareness&quot; as the unifying mental faculty and sefirah of Knowledge: holy consciousness that joins Chesed and Gev</div></td>
+<td class="proof"><div class="he" dir="rtl">וְעַל־יְדֵי־זֶה אֵין הַדַּעַת מְיֻשָּׁב כַּנַּ&quot;ל</div>
+<div class="meta">LM I:105 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_presence:c:sheker→c:ein-mishpat">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:sheker</div><div class="he" dir="rtl">שקר</div><div class="gloss">falsehood/the lie (sheker) — untruth as a spiritual force opposed to emet (truth), characterized as manifold (&#x27;many calculations&#x27;), linked t</div><div class="surface">surface: <span dir="rtl">שֶׁקֶר</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:ein-mishpat</div><div class="he" dir="rtl">עינים</div><div class="gloss">eyes (עֵינַיִם/Aram. עֵינִין) — the paired organ of sight, used by Rabbi Nachman as the symbolic seat of perception: guarded vision (tzitzit</div><div class="surface">surface: <span dir="rtl">עֵינַיִם</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי הַשֶּׁקֶר מַזִּיק לָעֵינַיִם בְּגַשְׁמִיּוּת וּבְרוּחָנִיּוּת</div>
+<div class="meta">LM I:51 <span class="tag">explicit</span> · weight 2 · 2 AI</div></td></tr><tr data-eid="harms_presence:c:amalek-biblical-nation→c:desire-base">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:amalek-biblical-nation</div><div class="he" dir="rtl">עמלק</div><div class="gloss">Amalek (עֲמָלֵק) — the biblical nation/archetype of heresy, here specifically as the spiritual force of philosophical denial and godless int</div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:desire-base</div><div class="he" dir="rtl">תאות נאוף</div><div class="gloss">The lust of adultery/illicit sexual desire (the desire itself, as a base concept)</div><div class="surface">surface: <span dir="rtl">תאוות ניאוף</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי עֲמָלֵק טִמֵּא אֶת יִשְׂרָאֵל בִּפְגַם תַּאֲוַת נִאוּף</div>
+<div class="meta">LM II:8 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_presence:c:emunah-2→c:human-2">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:emunah-2</div><div class="he" dir="rtl">אמונה</div><div class="gloss">Faith (emunah) — the noun אֱמוּנָה: belief/trust in God and His providence, the spiritual faculty of faith (identified in Likutey Moharan wi</div><div class="surface">surface: <span dir="rtl">אֱמוּנָה</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:human-2</div><div class="he" dir="rtl">חרון אף</div><div class="gloss">charon af — &#x27;fierce anger&#x27;/burning wrath, the divine (and human) attribute of anger that must be sweetened, imaged as smoke rising from the </div><div class="surface">surface: <span dir="rtl">חֲרוֹן אַף</span></div></td>
+<td class="proof"><div class="he" dir="rtl">עַל־יְדֵי אֱמוּנָה, שֶׁהוּא הֶפֶךְ עֲבוֹדָה זָרָה, נִתְבַּטֵּל הַחֲרוֹן אַף</div>
+<div class="meta">LM I:155 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_presence:c:contradictory-ideas→c:avodah-zarah">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:contradictory-ideas</div><div class="he" dir="rtl">מחלקת</div><div class="gloss">machaloket — dispute, strife, controversy; the state of division/quarrel between parties (or contradictory ideas), opposed to peace (shalom)</div><div class="surface">surface: <span dir="rtl">מַחֲלֹקֶת</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:avodah-zarah</div><div class="he" dir="rtl">כפירות</div><div class="gloss">kefirot — heresies/denials of God, defined as an aspect of idolatry (avodah zarah)</div><div class="surface">surface: <span dir="rtl">כְּפִירוֹת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי עַל־יְדֵי הַמַּחֲלֹקֶת בָּאִין כְּפִירוֹת כַּנַּ&quot;ל</div>
+<div class="meta">LM I:62 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_presence:c:between-your-eyes→c:shikhchah">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:between-your-eyes</div><div class="he" dir="rtl">רע עין</div><div class="gloss">ra ayin — the evil eye, equated with death of the heart; the cause of forgetfulness that destroys memory (&#x27;between your eyes&#x27;)</div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:shikhchah</div><div class="he" dir="rtl">שכחה</div><div class="gloss">forgetfulness (shikhchah) — the noun denoting the state or force of forgetting, the loss of memory/awareness (especially of Torah learning a</div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי הַשִּׁכְחָה בָּא עַל־יְדֵי רַע עַיִן</div>
+<div class="meta">LM I:54 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="harms_presence:c:ka&#x27;as→c:nefesh">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:ka&#x27;as</div><div class="he" dir="rtl">כעס</div><div class="gloss">anger/wrath (ka&#x27;as) — the emotion of rage; in lm1:68 human anger rooted in Gevurot sharing a source with money (&quot;from the north&quot;), and in lm</div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:nefesh</div><div class="he" dir="rtl">נפש</div><div class="gloss">soul (nefesh) — the animating life-force/soul of a person, lowest of the triad nefesh–ruach–neshamah; includes plural nefashot (souls); not </div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי הַכַּעַס פּוֹגֵם בְּנַפְשׁוֹ</div>
+<div class="meta">LM I:59 <span class="tag">explicit</span> · weight 2 · 2 AI</div></td></tr><tr data-eid="harms_presence:c:galut→c:yishuv-ha-da">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:galut</div><div class="he" dir="rtl">גלות</div><div class="gloss">exile (galut) — the collective banishment/diaspora state of Israel away from the Land of Israel (e.g., the Egyptian exile), caused in Likute</div><div class="surface">surface: <span dir="rtl">גָּלוּת</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:yishuv-ha-da</div><div class="he" dir="rtl">ישוב הדעת</div><div class="gloss">yishuv ha-da&#x27;at — settled mind/composure of thought, the deliberate mental clarity whose lack keeps people far from God</div><div class="surface">surface: <span dir="rtl">יִשּׁוּב הַדַּעַת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי עַל־יְדֵי גָּלוּת אֵין הַדַּעַת מְיֻשָּׁב</div>
+<div class="meta">LM II:10 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr></tbody></table></div></section><section id="builds_absence">
+<h2>Builds · absence — &quot;refraining from X brings Y&quot; <span class="he-title" dir="rtl">על ידי שבירת/מניעת X זוכין ל-Y</span></h2>
+<p class="note">Rarest kind (11 total in the whole graph). <b>Pool: 11 edges; showing a random 6 (seed 613, not cherry-picked).</b></p>
+<div class="tbl-wrap"><table>
+<thead><tr><th>verdict</th><th>source / cause</th><th>relation</th><th>target / effect</th><th>proof (verbatim) · provenance</th></tr></thead>
+<tbody><tr data-eid="builds_absence:p:1308→c:avodah-zarah">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node stub"><div class="slug">p:1308</div><div class="he" dir="rtl">מַחֲשַׁבְתָּם הָרָעָה</div><div class="gloss"></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:avodah-zarah</div><div class="he" dir="rtl">כפירות</div><div class="gloss">kefirot — heresies/denials of God, defined as an aspect of idolatry (avodah zarah)</div><div class="surface">surface: <span dir="rtl">הַכְּפִירוֹת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">נִתְבַּטֵּל מַחֲשַׁבְתָּם הָרָעָה, וְנִתְבַּטְּלִין כָּל הַכְּפִירוֹת</div>
+<div class="meta">LM I:251 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_absence:c:sheker→c:hashgachah-2">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:sheker</div><div class="he" dir="rtl">שקר</div><div class="gloss">falsehood/the lie (sheker) — untruth as a spiritual force opposed to emet (truth), characterized as manifold (&#x27;many calculations&#x27;), linked t</div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:hashgachah-2</div><div class="he" dir="rtl">השגחת השם יתברך</div><div class="gloss">The watchful providence of God, blessed be He — His supervising &#x27;gaze&#x27; (hashgachah) over the world, aroused through Israel in whom He glorie</div></td>
+<td class="proof"><div class="he" dir="rtl">יִשְׁמֹר עַצְמוֹ מִשֶּׁקֶר, וְעַל־יְדֵי־זֶה הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ עָלָיו</div>
+<div class="meta">LM I:51 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_absence:p:0588→c:kingship">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node stub"><div class="slug">p:0588</div><div class="he" dir="rtl">גשמיות</div><div class="gloss"></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:kingship</div><div class="he" dir="rtl">כבוד</div><div class="gloss">Kavod (כָּבוֹד) — glory/honor, especially the Divine glory: identified with Malkhut (kingship), likened to fire, garments/externality, and l</div></td>
+<td class="proof"><div class="he" dir="rtl">עַל־יְדֵי שֶׁאֵינָם עוֹשִׂים צֵל לְהַפְסִיק, כִּי אֵין לָהֶם שׁוּם גַּשְׁמִיּוּת</div>
+<div class="meta">LM I:172 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_absence:p:3656→c:complete-da-whole">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node stub"><div class="slug">p:3656</div><div class="he" dir="rtl">שעבוד וגלות</div><div class="gloss"></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:complete-da-whole</div><div class="he" dir="rtl">דעת השלם</div><div class="gloss">complete da&#x27;at (דַּעַת שָׁלֵם / הַדַּעַת הַשָּׁלֵם) — the whole, perfected state of the faculty of knowledge/awareness, mature consciousness</div><div class="surface">surface: <span dir="rtl">דעת שלם</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְאֵין שִׁעְבּוּד וְגָלוּת, אֲזַי הַדַּעַת שָׁלֵם</div>
+<div class="meta">LM II:17 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_absence:c:ga&#x27;avah→c:sekhel-2">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:ga&#x27;avah</div><div class="he" dir="rtl">גאוה</div><div class="gloss">pride/arrogance (ga&#x27;avah) — the negative character trait of haughtiness and self-aggrandizement, condemned as gassut ha-ruach and linked by </div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via absence</div></td>
+<td class="node"><div class="slug">c:sekhel-2</div><div class="he" dir="rtl">חכמה</div><div class="gloss">Chokhmah — wisdom/intellect (sekhel): the divine wisdom and illuminating intellect present in every thing, identified with the sefirah Chokh</div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי עַל־יְדֵי בִּטּוּל הַגַּאֲוָה, הַיְנוּ הָעֲבוֹדָה זָרָה, עַל־יְדֵי־זֶה הַחָכְמָה עַל תִּקּוּנָהּ כַּנַּ&quot;ל</div>
+<div class="meta">LM I:10 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="builds_absence:c:zuhamat-ha-nachash→p:2543">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:zuhamat-ha-nachash</div><div class="he" dir="rtl">זהמת הנחש</div><div class="gloss">the filth/contamination of the primordial Serpent (zuhamat ha-nachash) — the spiritual defilement injected into humanity by the Serpent in E</div><div class="surface">surface: <span dir="rtl">זוהמת הנחש</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via absence</div></td>
+<td class="node stub"><div class="slug">p:2543</div><div class="he" dir="rtl">ידים ושמים (נתנשאין הידים, נזדכך השמים)</div><div class="gloss"></div></td>
+<td class="proof"><div class="he" dir="rtl">וַאֲזַי כְּשֶׁמְּבַטֵּל בְּחִינַת זֻהֲמַת הַנָּחָשׁ ... וַאֲזַי נִתְנַשְּׂאִין הַיָּדַיִם, וְנִזְדַּכֵּךְ הַשָּׁמַיִם</div>
+<div class="meta">LM I:56 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr></tbody></table></div></section><section id="bechina">
+<h2>Bechina (parallel/aspect) — polarity-free by design <span class="he-title" dir="rtl">בחינה</span></h2>
+<p class="note">Structural parallels. Tagged neutral: the comparison itself is not a good/bad flow even when both concepts are bad (כעס↔חמץ). <b>Pool: 862 edges; showing a random 10 (seed 613, not cherry-picked).</b></p>
+<div class="tbl-wrap"><table>
+<thead><tr><th>verdict</th><th>source / cause</th><th>relation</th><th>target / effect</th><th>proof (verbatim) · provenance</th></tr></thead>
+<tbody><tr data-eid="bechina:c:ps-24→c:bayit">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:ps-24</div><div class="he" dir="rtl">עיר אלקינו</div><div class="gloss">ir Elokeinu — &#x27;the city of our God&#x27; (Ps 48), the aspect of &#x27;house&#x27; to which prayer is elevated from mountain and field, revealing God&#x27;s king</div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:bayit</div><div class="he" dir="rtl">בית</div><div class="gloss">house (bayit) — the noun &#x27;house/dwelling structure&#x27; used symbolically for an enclosed, settled domain of holiness: the Temple/house of praye</div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁהוּא יִשּׁוּב בְּנֵי־אָדָם, בְּחִינַת בַּיִת</div>
+<div class="meta">LM I:10 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="bechina:c:kol-ha-niggun→c:kol-yaakov-voice">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:kol-ha-niggun</div><div class="he" dir="rtl">קול הנגון</div><div class="gloss">the voice/sound of melody (kol ha-niggun) — the audible sound produced by musical song, which in LM 1:22 is the aspect of teruah/shofar and </div><div class="surface">surface: <span dir="rtl">קוֹל הַנִּגּוּן</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:kol-yaakov-voice</div><div class="he" dir="rtl">קול יעקב</div><div class="gloss">kol Yaakov — the voice of Jacob, the holy voice/song that subdues the grip of Esau&#x27;s power</div><div class="surface">surface: <span dir="rtl">קוֹל יַעֲקֹב</span></div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁהוּא בְּחִינַת קוֹל יַעֲקֹב</div>
+<div class="meta">LM II:8 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="bechina:c:head-year→c:chochmah-binah-daat">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:head-year</div><div class="he" dir="rtl">ראש השנה</div><div class="gloss">Rosh Hashanah — the Jewish New Year festival on 1 Tishrei, the annual day of judgment and shofar-blowing (the &#x27;head of the year&#x27;), homiletic</div><div class="surface">surface: <span dir="rtl">רֹאשׁ הַשָּׁנָה</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:chochmah-binah-daat</div><div class="he" dir="rtl">מחין</div><div class="gloss">Mochin — the kabbalistic &#x27;brains&#x27;: the supernal intellective faculties (Chochmah-Binah-Daat consciousness) that descend into and illuminate </div><div class="surface">surface: <span dir="rtl">מֹחִין</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי נַעֲשֶׂה וְנִתְתַּקֵּן בְּחִינַת מֹחִין כַּנַּ&quot;ל</div>
+<div class="meta">LM II:5 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="bechina:c:sleep-slumber-mind→c:sleep-rosh-hashanah">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:sleep-slumber-mind</div><div class="he" dir="rtl">שנה</div><div class="gloss">sleep (שֵׁנָה) — the state of slumber in which the mind/soul rests and is renewed; used by Rabbi Nachman both literally (bodily sleep induce</div><div class="surface">surface: <span dir="rtl">שֵׁנָה</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:sleep-rosh-hashanah</div><div class="he" dir="rtl">עוסק בדיני ממונות</div><div class="gloss">osek be-dinei mamonot — engagement in monetary law/judgments, equated with the plain sense of Torah and honest commerce (the &#x27;sleep&#x27; aspect </div><div class="surface">surface: <span dir="rtl">עוֹסֵק בְּדִינֵי מָמוֹנוֹת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">בְּחִינַת עוֹסֵק בְּדִינֵי מָמוֹנוֹת</div>
+<div class="meta">LM I:35 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="bechina:c:five-chasadim-five→c:mitzvah-charity">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:five-chasadim-five</div><div class="he" dir="rtl">חמשה חסדים</div><div class="gloss">the five Chasadim — the five kindnesses of Da&#x27;at embodied in tzedakah (charity is chesed, &#x27;reap according to kindness&#x27;), by which tzedek is </div><div class="surface">surface: <span dir="rtl">חֲמִשָּׁה חֲסָדִים</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:mitzvah-charity</div><div class="he" dir="rtl">צדקה</div><div class="gloss">tzedakah — charitable giving; the act of giving money/alms to the poor or to the deserving (the mitzvah of charity, צְדָקָה), as a spiritual</div><div class="surface">surface: <span dir="rtl">צְדָקָה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כְּנֶגֶד הַחֲמִשָּׁה חֲסָדִים, שֶׁהוּא בְּחִינַת צְדָקָה כַּנַּ&quot;ל</div>
+<div class="meta">LM I:67 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="bechina:c:ta&#x27;anit→c:simchah">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:ta&#x27;anit</div><div class="he" dir="rtl">תענית</div><div class="gloss">Fasting (ta&#x27;anit) — the religious-ascetic practice of abstaining from eating and drinking as a devotional act, which weakens the body&#x27;s four</div><div class="surface">surface: <span dir="rtl">תַּעֲנִית</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:simchah</div><div class="he" dir="rtl">שמחה</div><div class="gloss">Joy / gladness (simchah) — the spiritual-emotional state of joyfulness in serving God, the antithesis of sadness and depression (atzvut, mar</div><div class="surface">surface: <span dir="rtl">שִׂמְחָה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי תַּעֲנִית הוּא בְּחִינַת שִׂמְחָה</div>
+<div class="meta">LM II:5 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="bechina:c:holy-day-rest→c:koach-ha-re&#x27;ut">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:holy-day-rest</div><div class="he" dir="rtl">שבת</div><div class="gloss">Shabbat, the seventh-day Sabbath (the holy day of rest, שַׁבָּת) — which testifies to God&#x27;s unity and the creation of the world, and serves </div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:koach-ha-re&#x27;ut</div><div class="he" dir="rtl">כח הראות</div><div class="gloss">the power/faculty of sight (koach ha-re&#x27;ut) — the visual capacity of the eye, which in LM II:67 is drawn from the divine Name (the four lett</div></td>
+<td class="proof"><div class="he" dir="rtl">הוּא בְּחִינַת כֹּחַ הָרְאוּת</div>
+<div class="meta">LM II:67 <span class="tag">explicit</span> · weight 2 · 2 AI</div></td></tr><tr data-eid="bechina:c:gadlut→c:genesis-7">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:gadlut</div><div class="he" dir="rtl">גדלות</div><div class="gloss">Arrogance (gadlut) — haughty self-aggrandizement, the negative character trait of pride identified in Likutey Moharan 11 with idolatry (the </div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:genesis-7</div><div class="he" dir="rtl">&quot;ותפקחנה עיני שניהם&quot;</div><div class="gloss">&#x27;And the eyes of both were opened&#x27; (Genesis 3:7) — verse assigned to the brain-aspect of the eyes (aynin), the moach manifest in sight</div><div class="surface">surface: <span dir="rtl">ותפקחנה עיני שניהם</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וּכְשֶׁבָּא לְגַדְלוּת, הוּא בְּחִינַת (בראשית ג׳:ז׳): וַתִּפָּקַחְנָה עֵינֵי שְׁנֵיהֶם</div>
+<div class="meta">LM I:74 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="bechina:c:lo-taturu-acharei→c:ein-mishpat">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:lo-taturu-acharei</div><div class="he" dir="rtl">שמירת ציצית</div><div class="gloss">shmirat tzitzit — the guarding afforded by the tzitzit fringes over the eyes, protecting from the serpent&#x27;s counsel and from adultery (&#x27;lo t</div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:ein-mishpat</div><div class="he" dir="rtl">עינים</div><div class="gloss">eyes (עֵינַיִם/Aram. עֵינִין) — the paired organ of sight, used by Rabbi Nachman as the symbolic seat of perception: guarded vision (tzitzit</div></td>
+<td class="proof"><div class="he" dir="rtl">וּשְׁמִירַת צִיצִית, שֶׁהוּא בְּחִינַת עֵינַיִם</div>
+<div class="meta">LM I:7 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="bechina:c:pauper→c:emunah">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:pauper</div><div class="he" dir="rtl">ארץ כנען</div><div class="gloss">Eretz Kena&#x27;an — the Land of Canaan expounded as &#x27;ka&#x27;an ani&#x27; (here is a pauper), the state of poverty caused by machloket (strife)</div><div class="surface">surface: <span dir="rtl">אֶרֶץ כְּנַעַן</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:emunah</div><div class="he" dir="rtl">ארץ ישראל</div><div class="gloss">Eretz Yisrael — the Land of Israel as a spiritual reality in Likutey Moharan: the locus and embodiment of faith (emunah), prayer, miracles, </div><div class="surface">surface: <span dir="rtl">אֶרֶץ יִשְׂרָאֵל</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְאֶרֶץ יִשְׂרָאֵל יֵשׁ לָהּ שְׁתֵּי בְּחִינוֹת: לִפְעָמִים נִקְרֵאת אֶרֶץ כְּנַעַן</div>
+<div class="meta">LM I:277 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr></tbody></table></div></section><section id="equation">
+<h2>Equation (explicit identity) <span class="he-title" dir="rtl">שהוא / היינו</span></h2>
+<p class="note">The text explicitly identifies the two (&quot;X, shehu Y&quot;). <b>Pool: 630 edges; showing a random 8 (seed 613, not cherry-picked).</b></p>
+<div class="tbl-wrap"><table>
+<thead><tr><th>verdict</th><th>source / cause</th><th>relation</th><th>target / effect</th><th>proof (verbatim) · provenance</th></tr></thead>
+<tbody><tr data-eid="equation:c:koach-mah→c:noun-instruction">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:koach-mah</div><div class="he" dir="rtl">מה</div><div class="gloss">&#x27;Mah&#x27; (מָה, &quot;what&quot;) — the kabbalistic aspect/divine name Mah (Havayah spelled with alephs, gematria 45 = Adam), denoting self-nullification,</div><div class="surface">surface: <span dir="rtl">מָה</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">equation · via presence</div></td>
+<td class="node"><div class="slug">c:noun-instruction</div><div class="he" dir="rtl">תורה</div><div class="gloss">The Torah — God&#x27;s revealed teaching/law (the noun תּוֹרָה, &#x27;instruction&#x27;), encompassing Written and Oral Torah and its study (עסק התורה); id</div><div class="surface">surface: <span dir="rtl">תּוֹרָה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">בְּחִינַת מָה, הַיְנוּ תּוֹרָה</div>
+<div class="meta">LM I:56 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="equation:c:ha-tzaddik→c:ruach-ba-lev">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:ha-tzaddik</div><div class="he" dir="rtl">הצדיק</div><div class="gloss">THE Tzaddik (ha-tzaddik) — the singular true tzaddik of the generation, the &#x27;head&#x27; (rosh) of the Jewish people from whom all the generations</div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">equation · via presence</div></td>
+<td class="node"><div class="slug">c:ruach-ba-lev</div><div class="he" dir="rtl">רוח שבלב</div><div class="gloss">the &#x27;spirit within the heart&#x27; (ruach she-ba-lev) — the animating spirit dwelling in the heart, identified in Likutey Moharan I:10 with the t</div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁעַל־יְדֵי הַצַּדִּיק, הַיְנוּ בְּחִינַת רוּחַ שֶׁבַּלֵּב</div>
+<div class="meta">LM I:10 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="equation:c:ahavah-2→c:avraham">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:ahavah-2</div><div class="he" dir="rtl">אהבה</div><div class="gloss">Love (ahavah) — the spiritual quality/emotion of love: the attribute (middah) of Abraham corresponding to Chesed, the attachment of spirit t</div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">equation · via presence</div></td>
+<td class="node"><div class="slug">c:avraham</div><div class="he" dir="rtl">כהן</div><div class="gloss">kohen — the priest (Aaronide priest of the Temple service; includes the verbal form &#x27;to serve as priest&#x27;), which Likutey Moharan treats as t</div></td>
+<td class="proof"><div class="he" dir="rtl">הַנִּקְרָא כֹּהֵן</div>
+<div class="meta">LM I:34 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="equation:c:zot-ha-torah→c:dibbur-2">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:zot-ha-torah</div><div class="he" dir="rtl">אדם</div><div class="gloss">Adam / man — the archetypal human being (אָדָם), the pinnacle of creation identified with Torah (&quot;zot ha-Torah adam&quot;), speech, Israel, and t</div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">equation · via presence</div></td>
+<td class="node"><div class="slug">c:dibbur-2</div><div class="he" dir="rtl">דבור</div><div class="gloss">Speech/utterance (dibbur) — the faculty and act of spoken word, the divine speech that is &#x27;the breath of His mouth,&#x27; the aspect of Malchut-o</div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁהוּא בְּחִינַת דִּבּוּר כַּנַּ&quot;ל</div>
+<div class="meta">LM I:225 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="equation:c:sekhel-2→c:firstness">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:sekhel-2</div><div class="he" dir="rtl">חכמה</div><div class="gloss">Chokhmah — wisdom/intellect (sekhel): the divine wisdom and illuminating intellect present in every thing, identified with the sefirah Chokh</div><div class="surface">surface: <span dir="rtl">חָכְמָה</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">equation · via presence</div></td>
+<td class="node"><div class="slug">c:firstness</div><div class="he" dir="rtl">קדש</div><div class="gloss">Kodesh (קֹדֶשׁ) — &#x27;holiness / the holy&#x27; as an abstract substantive noun: the sacred quality or domain itself (not the verb &#x27;to sanctify,&#x27; no</div><div class="surface">surface: <span dir="rtl">קֹדֶשׁ</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי חָכְמָה נִקְרָא קֹדֶשׁ כַּיָּדוּעַ</div>
+<div class="meta">LM I:80 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="equation:c:seated-upon-throne→c:dan">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:seated-upon-throne</div><div class="he" dir="rtl">יושב על הכסא</div><div class="gloss">&#x27;the one seated upon the throne&#x27; — the enthroned figure of the Chariot vision identified as Atik Yomin (Daniel 7:9 &#x27;and the Ancient of Days </div><div class="surface">surface: <span dir="rtl">יוֹשֵׁב עַל הַכִּסֵּא</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">equation · via presence</div></td>
+<td class="node"><div class="slug">c:dan</div><div class="he" dir="rtl">עתיק יומין</div><div class="gloss">Atik Yomin — the &#x27;Ancient of Days&#x27; (Dan. 7:9), the highest partzuf of Keter, here the one who sits upon the throne above the four chayot</div><div class="surface">surface: <span dir="rtl">עַתִּיק־יוֹמִין</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְיוֹשֵׁב עַל הַכִּסֵּא הוּא עַתִּיק־יוֹמִין</div>
+<div class="meta">LM I:13 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="equation:c:leshon-targum-leshon→c:kelipat-nogah">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:leshon-targum-leshon</div><div class="he" dir="rtl">תרגום</div><div class="gloss">Targum — the Aramaic translation-language (leshon Targum / leshon Arami), the intermediate tongue mixed of good and evil, corresponding to t</div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">equation · via presence</div></td>
+<td class="node"><div class="slug">c:kelipat-nogah</div><div class="he" dir="rtl">נגה</div><div class="gloss">Nogah (kelipat Nogah) — the fourth, translucent &#x27;glowing&#x27; husk of the kabbalistic kelipot (from Ezekiel 1:4, &#x27;a radiance surrounding it&#x27;); t</div><div class="surface">surface: <span dir="rtl">נוגה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁהוּא נֹגַהּ</div>
+<div class="meta">LM I:19 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="equation:c:deut-15→c:asarah-ma&#x27;amarot">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:deut-15</div><div class="he" dir="rtl">מתנת חנם</div><div class="gloss">matnat chinam — an unearned free gift; what Moshe requested via &#x27;va-etchanan&#x27; (Deut. 3:23) in pleading to enter the Land of Israel</div><div class="surface">surface: <span dir="rtl">מַתְּנַת חִנָּם</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">equation · via presence</div></td>
+<td class="node"><div class="slug">c:asarah-ma&#x27;amarot</div><div class="he" dir="rtl">עשרה מאמרות</div><div class="gloss">the Ten Utterances (asarah ma&#x27;amarot) — the ten divine sayings of Genesis 1 through which the world was created and is sustained, the &#x27;tools</div><div class="surface">surface: <span dir="rtl">עֲשָׂרָה מַאֲמָרוֹת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">הַיְנוּ בְּחִינַת מַתְּנַת חִנָּם, בְּחִינַת עֲשָׂרָה מַאֲמָרוֹת הַנַּ&quot;ל</div>
+<div class="meta">LM II:78 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr></tbody></table></div></section><section id="pstub">
+<h2>One endpoint unresolved (p: statement stub) <span class="he-title" dir="rtl">צד אחד לא זוהה</span></h2>
+<p class="note">The extractor&#x27;s Hebrew surface could not be matched to a canonical concept, so it became a stub node. These carry real proofs but weak slugs — the alias pass targets them. Check the SURFACE column: is the resolution failure justified? <b>Pool: 6,089 edges; showing a random 10 (seed 613, not cherry-picked).</b></p>
+<div class="tbl-wrap"><table>
+<thead><tr><th>verdict</th><th>source / cause</th><th>relation</th><th>target / effect</th><th>proof (verbatim) · provenance</th></tr></thead>
+<tbody><tr data-eid="pstub:c:hebrew→p:0824">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:hebrew</div><div class="he" dir="rtl">לשון הקדש</div><div class="gloss">Leshon HaKodesh — the Holy Tongue (Hebrew) as the sacred language through which the world was created; identified in Likutey Moharan 19 with</div><div class="surface">surface: <span dir="rtl">לשון הקודש</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node stub"><div class="slug">p:0824</div><div class="he" dir="rtl">רוממנו מכל הלשונות</div><div class="gloss"></div></td>
+<td class="proof"><div class="he" dir="rtl">וְעַל־יְדֵי לְשׁוֹן הַקֹּדֶשׁ רוֹמְמָנוּ מִכָּל הַלְּשׁוֹנוֹת</div>
+<div class="meta">LM I:19 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="pstub:c:zaken-2→p:1432">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:zaken-2</div><div class="he" dir="rtl">זקן</div><div class="gloss">elder (zaken) — the aged sage as a spiritual aspect: one whose days are lengthened and expanded with added holiness, identified with Atik/ti</div><div class="surface">surface: <span dir="rtl">זָקֵן</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node stub"><div class="slug">p:1432</div><div class="he" dir="rtl">וַה&#x27; בֵּרַךְ אֶת אַבְרָהָם בַּכֹּל</div><div class="gloss"></div></td>
+<td class="proof"><div class="he" dir="rtl">עַל־יְדֵי זָקֵן הַנַּ&quot;ל, עַל־יְדֵי־זֶה: וַה&#x27; בֵּרַךְ אֶת אַבְרָהָם בַּכֹּל</div>
+<div class="meta">LM I:27 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="pstub:p:2228→c:oneg-shabbat-mitzvah">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node stub"><div class="slug">p:2228</div><div class="he" dir="rtl">צְעִיקַת שַׁבָּת</div><div class="gloss"></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:oneg-shabbat-mitzvah</div><div class="he" dir="rtl">ענג שבת</div><div class="gloss">oneg Shabbat — the mitzvah-delight of the Sabbath (עֹנֶג שַׁבָּת), the sanctified pleasure/enjoyment of Shabbat, exemplified by holy Sabbath</div><div class="surface">surface: <span dir="rtl">עֹנֶג שַׁבָּת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְזֶה שֶׁצּוֹעֲקִין &quot;שַׁבָּת&quot;, שֶׁעַל־יְדֵי־זֶה זוֹכִין לְעֹנֶג שַׁבָּת</div>
+<div class="meta">LM I:49 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="pstub:p:0754→c:brit-organ-procreation">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node stub"><div class="slug">p:0754</div><div class="he" dir="rtl">ונוזלים מן לבנון</div><div class="gloss"></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:brit-organ-procreation</div><div class="he" dir="rtl">תקון הברית</div><div class="gloss">Tikkun ha-brit — the rectification and guarding of the covenant of sexual holiness (the brit/organ of procreation): repairing pgam ha-brit a</div><div class="surface">surface: <span dir="rtl">תיקון הברית</span></div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁזֶּה בְּחִינַת תִּקּוּן הַבְּרִית</div>
+<div class="meta">LM I:29 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="pstub:c:kavod-bi-shelemut→p:0226">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:kavod-bi-shelemut</div><div class="he" dir="rtl">כבוד בשלמות</div><div class="gloss">Complete honor/glory (kavod bi-shelemut) — the perfected, unblemished honor of God, attained when a person utterly nullifies his own honor a</div><div class="surface">surface: <span dir="rtl">כָּבוֹד בִּשְׁלֵמוּת</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node stub"><div class="slug">p:0226</div><div class="he" dir="rtl">צִפָּרְתָּא</div><div class="gloss"></div><div class="surface">surface: <span dir="rtl">צִפַּרְתָּא</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְעַל־יְדֵי כָּבוֹד בִּשְׁלֵמוּת זוֹכִין לְצִפַּרְתָּא</div>
+<div class="meta">LM I:11 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="pstub:c:dim&#x27;ot→p:2325">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:dim&#x27;ot</div><div class="he" dir="rtl">דמעות</div><div class="gloss">tears (dim&#x27;ot) — the salty water wept from the eyes, associated with speech/prayer and bearing a portion of eyesight/providence</div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">equation · via presence</div></td>
+<td class="node stub"><div class="slug">p:2325</div><div class="he" dir="rtl">מים מלוחים</div><div class="gloss"></div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁהֵם מַיִם מְלוּחִים</div>
+<div class="meta">LM I:51 <span class="tag">explicit</span> · weight 2 · 2 AI</div></td></tr><tr data-eid="pstub:c:nachash→p:2388">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:nachash</div><div class="he" dir="rtl">נחש</div><div class="gloss">The serpent (nachash) — the primordial snake of Eden as the mystical archetype (bechinah) of evil: the cursed force of servitude/Canaan, cun</div><div class="surface">surface: <span dir="rtl">נָחָשׁ</span></div></td>
+<td class="rel"><span class="badge pol-harms">▼ harms / רע</span><div class="via">eitza · via presence</div></td>
+<td class="node stub"><div class="slug">p:2388</div><div class="he" dir="rtl">עצבות רוח</div><div class="gloss"></div><div class="surface">surface: <span dir="rtl">עַצְבוּת רוּחַ</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְיֵשׁ נָחָשׁ, שֶׁעַל יָדָהּ בָּא עַצְבוּת רוּחַ</div>
+<div class="meta">LM I:56 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="pstub:p:4675→c:hashra-ha-shekhinah">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node stub"><div class="slug">p:4675</div><div class="he" dir="rtl">וּתְרוּעַת מֶלֶךְ בּוֹ</div><div class="gloss"></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">equation · via presence</div></td>
+<td class="node"><div class="slug">c:hashra-ha-shekhinah</div><div class="he" dir="rtl">השראת השכינה</div><div class="gloss">hashra&#x27;at ha-Shekhinah — the indwelling of the Divine Presence, signified by &#x27;teruah of the King&#x27; (Targum: &#x27;the Shekhinah of their King is a</div><div class="surface">surface: <span dir="rtl">הַשְׁרָאַת הַשְּׁכִינָה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">הַיְנוּ הַשְׁרָאַת הַשְּׁכִינָה, בְּחִינַת נְבוּאָה</div>
+<div class="meta">LM II:8 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="pstub:c:knesset-yisrael→p:4354">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:knesset-yisrael</div><div class="he" dir="rtl">ישראל</div><div class="gloss">Israel — the Jewish people as a collective spiritual entity (Knesset Yisrael), the nation called &#x27;adam,&#x27; bearers/supporters of the Torah; no</div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node stub"><div class="slug">p:4354</div><div class="he" dir="rtl">כל המקומות השפלים והנפולים</div><div class="gloss"></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי יִשְׂרָאֵל הֵם מְרִימִין וּמַעֲלִין כָּל הַמְּקוֹמוֹת הַשְּׁפָלִים וְהַנְּפוּלִים</div>
+<div class="meta">LM II:76 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr><tr data-eid="pstub:p:4139→c:phylacteries">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node stub"><div class="slug">p:4139</div><div class="he" dir="rtl">אמרות טהורות</div><div class="gloss"></div><div class="surface">surface: <span dir="rtl">אֲמָרוֹת טְהוֹרוֹת</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:phylacteries</div><div class="he" dir="rtl">תפלין</div><div class="gloss">tefillin (phylacteries) — the leather boxes containing Torah passages bound on the head and arm; in Likutey Moharan the aspect of &#x27;pe&#x27;er&#x27; (g</div><div class="surface">surface: <span dir="rtl">תְּפִלִּין</span></div></td>
+<td class="proof"><div class="he" dir="rtl">בְּחִינַת תְּפִלִּין שֶׁהֵם בְּחִינַת שִׁבְעָה רוֹעִים</div>
+<div class="meta">LM II:5 <span class="tag">explicit</span> · weight 1 · 1 AI</div></td></tr></tbody></table></div></section><section id="both">
+<h2>Attested by BOTH you and the AI (merged) <span class="he-title" dir="rtl">אתה + AI</span></h2>
+<p class="note">For comparison: edges where the AI independently re-found a hand-extracted edge. It merged as extra proof/weight instead of creating a duplicate. 1,124 such edges. <b>Pool: 1,124 edges; showing a random 10 (seed 613, not cherry-picked).</b></p>
+<div class="tbl-wrap"><table>
+<thead><tr><th>verdict</th><th>source / cause</th><th>relation</th><th>target / effect</th><th>proof (verbatim) · provenance</th></tr></thead>
+<tbody><tr data-eid="both:c:emunah-2→c:shabbat-4">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:emunah-2</div><div class="he" dir="rtl">אמונה</div><div class="gloss">Faith (emunah) — the noun אֱמוּנָה: belief/trust in God and His providence, the spiritual faculty of faith (identified in Likutey Moharan wi</div><div class="surface">surface: <span dir="rtl">אֱמוּנָה</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:shabbat-4</div><div class="he" dir="rtl">וסדר הזרעים</div><div class="gloss">seder zera&#x27;im — the &#x27;Order of Seeds&#x27; arrangement of plantings by time and place, identified with emunah (Shabbat 31a), the ordering that emp</div><div class="surface">surface: <span dir="rtl">סֵדֶר הַזְּרָעִים</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְסֵדֶר הַזְּרָעִים הוּא עַל־יְדֵי אֱמוּנָה</div>
+<div class="meta">LM II:5 <span class="tag">explicit</span> · weight 2 · 1 human + 1 AI</div></td></tr><tr data-eid="both:c:terutz→c:ha-oseh-shalom">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:terutz</div><div class="he" dir="rtl">תרוץ</div><div class="gloss">resolution (terutz) — the answer that resolves a kushya (textual/learning difficulty), reconciling apparently contradictory statements; not </div><div class="surface">surface: <span dir="rtl">תֵּרוּץ</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:ha-oseh-shalom</div><div class="he" dir="rtl">העושה שלום</div><div class="gloss">&quot;the one who makes peace&quot; (ha-oseh shalom, הָעוֹשֶׂה שָׁלוֹם) — the liturgical/scriptural epithet for the peacemaker, invoked in Likutey Moh</div><div class="surface">surface: <span dir="rtl">הָעוֹשֶׂה שָׁלוֹם</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וְהַתֵּרוּץ הוּא בְּחִינַת הָעוֹשֶׂה שָׁלוֹם</div>
+<div class="meta">LM I:75 <span class="tag">explicit</span> · weight 4 · 2 human + 2 AI</div></td></tr><tr data-eid="both:c:tefillah-2→c:nissim-plural-nes">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:tefillah-2</div><div class="he" dir="rtl">תפלה</div><div class="gloss">Prayer (tefillah, תְּפִלָּה) — the devotional act of addressing God in praise and petition, the &#x27;service of the heart&#x27; (standing worship / t</div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:nissim-plural-nes</div><div class="he" dir="rtl">נסים</div><div class="gloss">miracles (nissim, plural of nes) — supernatural events above and contrary to the course of nature, wrought through prayer and faith and cent</div></td>
+<td class="proof"><div class="he" dir="rtl">וְהוּא בְּחִינַת הַנִּסִּים</div>
+<div class="meta">LM I:7 <span class="tag">explicit</span> · weight 4 · 2 human + 2 AI</div></td></tr><tr data-eid="both:c:sleep-slumber-mind→c:zoharic">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:sleep-slumber-mind</div><div class="he" dir="rtl">שנה</div><div class="gloss">sleep (שֵׁנָה) — the state of slumber in which the mind/soul rests and is renewed; used by Rabbi Nachman both literally (bodily sleep induce</div><div class="surface">surface: <span dir="rtl">שֵׁנָה</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:zoharic</div><div class="he" dir="rtl">לאדבקא מחשבתא בעלמא דאתי בכלליות</div><div class="gloss">The Aramaic (Zoharic) devotional formula לְאַדְבָּקָא מַחֲשַׁבְתָּא בְּעָלְמָא דְּאָתֵי — &#x27;to attach/bind one&#x27;s thought to the World to Come</div><div class="surface">surface: <span dir="rtl">לְאַדְבָּקָא מַחֲשַׁבְתָּא בְּעָלְמָא דְּאָתֵי בִּכְלָלִיּוּת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">כִּי הַשֵּׁנָה הִיא בְּחִינַת לְאַדְבָּקָא מַחֲשַׁבְתָּא בְּעָלְמָא דְּאָתֵי בִּכְלָלִיּוּת כַּנַּ&quot;ל</div>
+<div class="meta">LM I:54 <span class="tag">explicit</span> · weight 2 · 1 human + 1 AI</div></td></tr><tr data-eid="both:c:kelaliyut-ben-ve→c:parnasah-livelihood-material">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:kelaliyut-ben-ve</div><div class="he" dir="rtl">כלליות בן ותלמיד</div><div class="gloss">the inclusiveness/unification of the aspects of &#x27;son&#x27; and &#x27;student&#x27; (kelaliyut ben ve-talmid) — the merging of these two modes of receiving </div><div class="surface">surface: <span dir="rtl">כְּלָלִיּוּת בֵּן וְתַלְמִיד</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:parnasah-livelihood-material</div><div class="he" dir="rtl">פרנסה</div><div class="gloss">parnasah — livelihood/material sustenance: the provision of food and one&#x27;s earthly means of support, granted by God (the noun פַּרְנָסָה, in</div><div class="surface">surface: <span dir="rtl">פַּרְנָסָה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁנִּמְשָׁךְ עַל־יְדֵי כְּלָלִיּוּת בֵּן וְתַלְמִיד כַּנַּ&quot;ל</div>
+<div class="meta">LM II:7 <span class="tag">explicit</span> · weight 4 · 1 human + 3 AI</div></td></tr><tr data-eid="both:c:tefillah-2→c:panim">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:tefillah-2</div><div class="he" dir="rtl">תפלה</div><div class="gloss">Prayer (tefillah, תְּפִלָּה) — the devotional act of addressing God in praise and petition, the &#x27;service of the heart&#x27; (standing worship / t</div><div class="surface">surface: <span dir="rtl">תְּפִלָּה</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:panim</div><div class="he" dir="rtl">פנים</div><div class="gloss">face, countenance (panim, פָּנִים) — the frontal visage/presence, used as the kabbalistic aspect of revealed divine presence and illuminatio</div><div class="surface">surface: <span dir="rtl">פָּנִים</span></div></td>
+<td class="proof"><div class="he" dir="rtl">וּתְפִלָּה הוּא בְּחִינַת פָּנִים</div>
+<div class="meta">LM I:74 <span class="tag">explicit</span> · weight 2 · 1 human + 1 AI</div></td></tr><tr data-eid="both:c:blow-thrust→c:he&#x27;der-ha-dibbur">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:blow-thrust</div><div class="he" dir="rtl">תקיעה</div><div class="gloss">tekiah — the single long, unbroken shofar blast (one of the three shofar sounds alongside shevarim and teruah), from the root ת-ק-ע (to blow</div><div class="surface">surface: <span dir="rtl">תְּקִיעָה</span></div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:he&#x27;der-ha-dibbur</div><div class="he" dir="rtl">העדר הדבור</div><div class="gloss">the absence/privation of speech (he&#x27;der ha-dibbur) — the state of speech being withheld or lacking, silence as the negation of the faculty o</div><div class="surface">surface: <span dir="rtl">הֶעְדֵּר הַדִּבּוּר</span></div></td>
+<td class="proof"><div class="he" dir="rtl">תְּקִיעָה הוּא בְּחִינַת הֶעְדֵּר הַדִּבּוּר, בְּחִינַת (משלי ו׳:א׳-ב׳): תָּקַעְתָּ לַזָּר כַּפֶּיךָ נוֹקַשְׁתָּ בְּאִמְרֵי פִיךָ</div>
+<div class="meta">LM I:60 <span class="tag">explicit</span> · weight 2 · 1 human + 1 AI</div></td></tr><tr data-eid="both:c:hashgachah-2→c:kedushat-eretz-yisrael">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:hashgachah-2</div><div class="he" dir="rtl">השגחת השם יתברך</div><div class="gloss">The watchful providence of God, blessed be He — His supervising &#x27;gaze&#x27; (hashgachah) over the world, aroused through Israel in whom He glorie</div><div class="surface">surface: <span dir="rtl">הַשְׁגָּחַת הַשֵּׁם יִתְבָּרַךְ</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:kedushat-eretz-yisrael</div><div class="he" dir="rtl">קדשת ארץ ישראל</div><div class="gloss">The holiness of the Land of Israel (kedushat Eretz Yisrael) — the sacred quality inhering in the Land (expressed as &#x27;the air of the Land of </div><div class="surface">surface: <span dir="rtl">קְדֻשַּׁת אֶרֶץ־יִשְׂרָאֵל</span></div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁעַל־יְדֵי־זֶה נַעֲשֶׂה קְדֻשַּׁת אֶרֶץ־יִשְׂרָאֵל</div>
+<div class="meta">LM II:40 <span class="tag">explicit</span> · weight 3 · 2 human + 1 AI</div></td></tr><tr data-eid="both:c:nevuah→c:tefillah-bi-shleimut">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:nevuah</div><div class="he" dir="rtl">נבואה</div><div class="gloss">Prophecy (nevuah) — the divine prophetic inspiration/spirit drawn from the &#x27;place whence the prophets draw,&#x27; encompassing the ten levels of </div><div class="surface">surface: <span dir="rtl">נְבוּאָה</span></div></td>
+<td class="rel"><span class="badge pol-builds">▲ builds / טוב</span><div class="via">eitza · via presence</div></td>
+<td class="node"><div class="slug">c:tefillah-bi-shleimut</div><div class="he" dir="rtl">התפלה בשלמות</div><div class="gloss">Prayer in its completeness (tefillah bi-shleimut) — the perfected state of prayer through which one heals via dvar Hashem in all things</div><div class="surface">surface: <span dir="rtl">הַתְּפִלָּה בִּשְׁלֵמוּת</span></div></td>
+<td class="proof"><div class="he" dir="rtl">שֶׁעַל־יְדֵי נְבוּאָה הַתְּפִלָּה בִּשְׁלֵמוּת</div>
+<div class="meta">LM II:1 <span class="tag">explicit</span> · weight 2 · 1 human + 1 AI</div></td></tr><tr data-eid="both:c:li→c:torah-supernal-world">
+<td class="verdict"><button class="v good" title="good — I agree">✓</button><button class="v bad" title="bad — reject">✗</button><button class="v unsure" title="unsure">?</button></td>
+<td class="node"><div class="slug">c:li</div><div class="he" dir="rtl">לי</div><div class="gloss">&quot;li&quot; (לִי, &#x27;for Me&#x27;) — the word from Psalms 94:16 &#x27;Who will rise up for Me (li) against evildoers,&#x27; cited in Sotah 13b at Moshe&#x27;s death, hom</div></td>
+<td class="rel"><span class="badge pol-neutral">◆ neutral</span><div class="via">bechina · via presence</div></td>
+<td class="node"><div class="slug">c:torah-supernal-world</div><div class="he" dir="rtl">חכמה עלאה וחכמה תתאה</div><div class="gloss">the paired kabbalistic terms Chokhmah Ila&#x27;ah and Chokhmah Tata&#x27;ah — Upper Wisdom (Torah/supernal world) and Lower Wisdom (Malkhut/worldly wi</div><div class="surface">surface: <span dir="rtl">חכמה עילאה וחכמה תתאה</span></div></td>
+<td class="proof"><div class="he" dir="rtl">לִי דַּיְקָא, בְּחִינַת חָכְמָה עִלָּאָה וְחָכְמָה תַּתָּאָה</div>
+<div class="meta">LM II:91 <span class="tag">explicit</span> · weight 2 · 1 human + 1 AI</div></td></tr></tbody></table></div></section>
+<section id="risks"><h2>Structural risks to weigh while you review</h2><ol>
+<li><b>73% of AI-only edges touch an unresolved stub.</b> 6,089 of 8,389 have a p: endpoint — real proof, but one side never matched a canonical concept. Until the alias pass runs, most of the AI layer is only half-connected to your concept vocabulary, and some of these are hidden duplicates of your hand edges.</li>
+<li><b>Node good/bad character is not stored.</b> Polarity lives on edges only. A bad↔bad bechina (כעס↔חמץ) and a good↔good one look identical. Your proposal: derive node character from the edge signature (harms-via-presence source ⇒ bad node; harms-via-absence source ⇒ good node) and flag "mixed" nodes for review.</li>
+<li><b>All your legacy eitza edges were imported as builds/presence.</b> Any hand edge that was really a harm-flow is mislabeled right now, by policy not by extraction.</li>
+<li><b>Edge identity is (source, target, type, polarity, via).</b> A polarity-inversion error (like the 6 wrong ones in the audit) therefore creates a NEW edge instead of colliding with the correct one — errors add noise but never overwrite good data. The reverse also holds: fixing them is a delete, not an edit.</li>
+<li><b>Concept-flag errors poison edges by reference.</b> An edge into c:emunah is an edge into whatever that node actually is (currently Eretz Yisrael). The 299 concept flags matter more than any single edge verdict.</li>
+</ol></section>
+
+<div id="exportbar">
+  <button id="copy">Copy verdicts JSON</button>
+  <button id="clear">Clear all verdicts</button>
+  <span id="counts"></span>
+</div>
+
+<script>
+const KEY='edge_sample_verdicts_v1';
+let V=JSON.parse(localStorage.getItem(KEY)||'{}');
+function paint(){
+  let g=0,b=0,u=0;
+  document.querySelectorAll('tr[data-eid]').forEach(tr=>{
+    tr.classList.remove('saved-good','saved-bad','saved-unsure');
+    const v=V[tr.dataset.eid];
+    if(v){ tr.classList.add('saved-'+v); if(v==='good')g++; else if(v==='bad')b++; else u++; }
+  });
+  document.getElementById('counts').textContent=
+    `${g} good · ${b} bad · ${u} unsure · ${Object.keys(V).length} of ${document.querySelectorAll('tr[data-eid]').length} judged`;
+}
+document.querySelectorAll('tr[data-eid]').forEach(tr=>{
+  tr.querySelectorAll('.v').forEach(btn=>{
+    const val=btn.classList.contains('good')?'good':btn.classList.contains('bad')?'bad':'unsure';
+    btn.onclick=()=>{ if(V[tr.dataset.eid]===val) delete V[tr.dataset.eid]; else V[tr.dataset.eid]=val;
+      localStorage.setItem(KEY,JSON.stringify(V)); paint(); };
+  });
+});
+document.getElementById('copy').onclick=async()=>{
+  await navigator.clipboard.writeText(JSON.stringify(V,null,1));
+  document.getElementById('copy').textContent='Copied ✓';
+  setTimeout(()=>document.getElementById('copy').textContent='Copy verdicts JSON',1500);
+};
+document.getElementById('clear').onclick=()=>{ if(confirm('Clear all verdicts?')){V={};localStorage.setItem(KEY,'{}');paint();} };
+paint();
+</script>
+</html>
