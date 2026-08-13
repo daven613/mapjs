@@ -67,7 +67,11 @@
   canvas{display:block;width:100%;height:100%}
   #legend{position:absolute;left:14px;bottom:12px;display:flex;gap:13px;font-size:11px;
     background:#0b0f14cc;border:1px solid var(--line);padding:7px 11px;border-radius:10px}
-  #legend span{display:flex;align-items:center;gap:6px;color:var(--dim)}
+  #legend{flex-wrap:wrap;max-width:58%}
+  #legend span{display:flex;align-items:center;gap:6px;color:var(--dim);white-space:nowrap}
+  #hints{position:absolute;right:14px;bottom:12px;font-size:10.5px;color:var(--faint);
+    background:#0b0f14cc;border:1px solid var(--line);padding:7px 11px;border-radius:10px;
+    max-width:40%;text-align:right;line-height:1.6}
   #legend i{width:11px;height:3px;border-radius:2px}
   #crumbs{position:absolute;left:14px;top:12px;display:flex;gap:6px;flex-wrap:wrap;max-width:62%}
   .crumb{background:#0b0f14cc;border:1px solid var(--line);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;color:var(--dim)}
@@ -77,6 +81,53 @@
     padding:6px 9px;border-radius:8px;font-size:12px;max-width:300px;display:none;z-index:10}
   #tip .he{font-family:var(--hebrew);font-size:15px;direction:rtl}
   #tip .en{color:var(--dim);font-size:11.5px;margin-top:2px}
+  #tip.edge{max-width:430px}
+  #tip .ty{font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);margin-bottom:4px}
+  #tip .pf{font-family:var(--hebrew);font-size:14px;direction:rtl;color:var(--ink);margin-top:6px;
+    line-height:1.7;border-top:1px dashed var(--line);padding-top:6px}
+  #tip .rf{font-size:10px;color:var(--faint);margin-top:5px}
+  #tip .vb{font-family:sans-serif;font-size:10.5px;color:var(--faint);direction:ltr}
+  /* ---- help ---- */
+  .brand #helpBtn,.brand #langBtn{margin-top:10px;background:var(--panel2);border:1px solid var(--line2);color:var(--dim);
+    font:inherit;font-size:11.5px;padding:5px 11px;border-radius:20px;cursor:pointer}
+  .brand #langBtn{margin-inline-start:6px}
+  .brand #helpBtn:hover,.brand #langBtn:hover{border-color:var(--accent);color:var(--ink)}
+  /* ---- Hebrew (RTL): panels flip, the canvas stage does not ---- */
+  .rtl #rail,.rtl #detail,.rtl #helpwrap,.rtl #railtip,.rtl #tip{direction:rtl}
+  .rtl #legend,.rtl #hints{direction:rtl}
+  .rtl .en{direction:ltr;unicode-bidi:isolate}
+  .rtl #status{direction:rtl}
+  /* the gloss is English prose: isolate it LTR, right-aligned to sit with the RTL panel.
+     (:lang(he) was wrong here — with <html lang=he> it matches every element.) */
+  .rtl .dhead .gloss,.rtl .dhead .id{direction:ltr;unicode-bidi:isolate;text-align:right}
+  #railtip{position:fixed;display:none;z-index:60;max-width:330px;background:#0b0f14f7;
+    border:1px solid var(--line2);border-radius:10px;padding:10px 12px;font-size:12px;line-height:1.5;
+    box-shadow:0 10px 30px #0009;pointer-events:none}
+  #railtip .d{color:var(--dim);margin-top:4px}
+  #railtip .e{color:var(--ink);margin-top:7px;border-top:1px dashed var(--line);padding-top:7px;font-size:11.5px}
+  #railtip .m{color:var(--faint);margin-top:7px;font-size:10.5px}
+  #helpwrap{position:fixed;inset:0;z-index:80;background:#05070ad9;display:none;overflow:auto;padding:34px 18px}
+  #helpwrap.on{display:block}
+  #help{max-width:860px;margin:0 auto;background:var(--panel);border:1px solid var(--line2);
+    border-radius:16px;padding:30px 34px 38px;box-shadow:0 24px 70px #000a}
+  #help h2{margin:0;font-size:22px}
+  #help h3{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);
+    margin:26px 0 10px;border-top:1px solid var(--line);padding-top:16px}
+  #help p{line-height:1.65;color:var(--ink);font-size:13.5px;margin:9px 0}
+  #help .lead{color:var(--dim)}
+  #help .close{position:sticky;top:0;float:right;background:var(--panel2);border:1px solid var(--line2);
+    color:var(--dim);border-radius:8px;padding:4px 11px;cursor:pointer;font:inherit;font-size:12px}
+  #help .close:hover{color:var(--ink);border-color:var(--accent)}
+  #help table{border-collapse:collapse;width:100%;font-size:13px;margin-top:6px}
+  #help td{padding:7px 10px;border-top:1px solid var(--line);vertical-align:top;line-height:1.55}
+  #help td:first-child{white-space:nowrap;color:var(--ink);width:1%;font-weight:600}
+  #help .he{font-family:var(--hebrew);font-size:15px;direction:rtl;unicode-bidi:isolate}
+  #help .eg{color:var(--dim);font-size:12.5px;margin-top:3px}
+  #help .key{display:inline-block;border:1px solid var(--line2);border-radius:5px;padding:0 6px;
+    font-size:11px;color:var(--dim);background:var(--panel2)}
+  #help .swatch{display:inline-block;width:22px;height:3px;border-radius:2px;vertical-align:middle;margin-right:7px}
+  #help .note{background:var(--panel2);border:1px solid var(--line);border-right:3px solid var(--accent);
+    border-radius:10px;padding:13px 15px;margin-top:12px;font-size:13px;line-height:1.6}
   /* ---- detail ---- */
   #detail{background:var(--panel);border-left:1px solid var(--line);overflow:auto}
   .dhead{padding:18px 20px 14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:2}
@@ -103,6 +154,17 @@
   .conn.open .proof{display:block}
   .conn .rf{font-size:10px;color:var(--faint);margin-top:4px}
   .arrowlbl{font-size:10px;color:var(--faint)}
+  /* ---- connection (edge) detail ---- */
+  .etag{display:inline-block;font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;
+    padding:2px 9px;border-radius:20px;border:1px solid;margin-right:6px}
+  .epair{display:flex;align-items:center;gap:11px;flex-wrap:wrap;font-family:var(--hebrew);
+    direction:rtl;font-size:23px;line-height:1.45;margin-top:13px}
+  .epair .lnk{cursor:pointer;border-bottom:1px solid var(--line2)}
+  .epair .lnk:hover{color:var(--accent)}
+  .epair .op{font-family:sans-serif;font-size:11px;color:var(--faint);direction:ltr}
+  .eproof{font-family:var(--hebrew);font-size:17px;direction:rtl;line-height:1.9;color:var(--ink);
+    background:var(--panel2);border:1px solid var(--line);border-right:3px solid var(--accent);
+    border-radius:10px;padding:14px 16px}
   .empty{color:var(--faint);font-size:12.5px;padding:8px 4px}
   .pathrow{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-family:var(--hebrew);direction:rtl;font-size:15px;line-height:1.9}
   .pathrow .lnk{cursor:pointer;color:var(--ink);border-bottom:1px solid var(--line2)}
@@ -113,7 +175,9 @@
 <body>
 <div id="app">
   <div id="rail">
-    <div class="brand"><h1>Torah Map</h1><p>Likutey Moharan — concept graph</p></div>
+    <div class="brand"><h1>Torah Map</h1><p>Likutey Moharan — concept graph</p>
+      <button id="helpBtn" title="How to read this map (?)">? &nbsp;Help &amp; guide</button>
+      <button id="langBtn" title="English / עברית"></button></div>
     <div class="modes" id="modes"></div>
     <div class="prov" id="prov"></div>
     <div class="inputs" id="inputs"></div>
@@ -130,10 +194,14 @@
       <span><i style="background:#ff5d5d"></i>harms (dashed = via absence/פגם)</span>
       <span><i style="background:var(--equation);opacity:.55"></i>faded/dashed = AI-speculative edge</span>
     </div>
+    <div id="hints">scroll = zoom · drag background = pan · double-click = reset
+      &nbsp;|&nbsp; drag a node to pin it · shift-click to release</div>
     <div id="tip"></div>
   </div>
   <div id="detail"></div>
 </div>
+<div id="railtip"></div>
+<div id="helpwrap"><div id="help"></div></div>
 <script>
 const TYCOL={bechina:'#5aa9ff',eitza:'#37d093',equation:'#f0b429'};
 let NODES=[],EDGES=[],TORAHS=[],byId={},adj={},idf={},tokx={};
@@ -163,6 +231,16 @@ function buildAdj(){
   });
 }
 let mode='explore',focus=null,hist=[],view={nodes:[],edges:[],path:null},sim={},anim=null,hover=null;
+let hoverEdge=null,selEdge=null;   // the connection under the cursor / the one pinned open in the panel
+let drag=null,dragged=false;       // node being dragged; `dragged` swallows the click a drag ends with
+let pan=null,panned=false;         // background pan, same click-swallowing trick
+let hoverSeg=null,selSeg=null;     // dashed mapping segment under the cursor / pinned open
+// The camera: graph coords -> screen = p*k + offset. Layouts keep working in graph coords and
+// never need to know the view has moved.
+let cam={x:0,y:0,k:1};
+const applyCam=()=>ctx.setTransform(devicePixelRatio*cam.k,0,0,devicePixelRatio*cam.k,
+                                    devicePixelRatio*cam.x,devicePixelRatio*cam.y);
+const toWorld=(mx,my)=>[(mx-cam.x)/cam.k,(my-cam.y)/cam.k];
 let savedProjection=null;   // {picks:[ids], res} — lets the user leave to explore a concept and come back
 let traceData=null,traceSegIdx=null;   // loaded story-trace JSON (scripts/segment_project.py + story write-up)
 let traceSlug=null;                     // slug when a trace loaded from ?trace= (null for #b= hash or file loads)
@@ -170,7 +248,121 @@ let lastMatchQ='',lastAB={a:null,b:null},lastTorah=null;   // remembered inputs,
 let restoringURL=false,appliedHash=null;                   // guards while reproducing a view from the URL
 function exploreConcept(id){ setMode('explore'); go(id); drawCrumbs(); }  // non-destructive: savedProjection survives
 const cv=document.getElementById('c'),ctx=cv.getContext('2d'),tip=document.getElementById('tip');
+// small hover card for the rail controls — the native title tooltip is too slow and too plain
+// to carry an example, and an example is the thing that makes a mode click.
+function showRailTip(el,html){const t=document.getElementById('railtip'); if(!t)return;
+  t.innerHTML=html; t.style.display='block';
+  const r=el.getBoundingClientRect();
+  t.style.top=Math.min(r.top,innerHeight-t.offsetHeight-10)+'px'; t.style.left=(r.right+10)+'px';}
+function hideRailTip(){const t=document.getElementById('railtip'); if(t)t.style.display='none';}
 const $=id=>document.getElementById(id);
+
+// ---------- language ----------
+// Default Hebrew. ?lang=en|he overrides (handy for tests); the toggle persists via localStorage.
+let UILANG='he';
+try{ const q=new URLSearchParams(location.search).get('lang');
+  UILANG=(q==='en'||q==='he')?q:((localStorage.getItem('tm_lang'))||'he'); }catch(_){ UILANG='he'; }
+if(UILANG!=='en'&&UILANG!=='he')UILANG='he';
+// English string -> Hebrew. Missing key = English shown; the verification sweep hunts those down.
+const HE={
+ 'Torah Map':'מפת התורה',
+ 'Likutey Moharan — concept graph':'ליקוטי מוהר"ן — מפת מושגים',
+ 'Help & guide':'עזרה ומדריך',
+ 'How to read this map (?)':'איך לקרוא את המפה (?)',
+ 'click Help for the full guide':'לחץ על עזרה למדריך המלא',
+ 'connections':'קשרים','concepts':'מושגים','sources':'מקורות',
+ 'Search concept':'חיפוש מושג',
+ 'type Hebrew or English…':'הקלד בעברית או באנגלית…',
+ 'From concept':'ממושג','To concept':'אל מושג','Concept A':'מושג א׳','Concept B':'מושג ב׳',
+ 'Trace path':'מצא נתיב','Find common ground':'מצא מכנה משותף',
+ 'Teaching (Likutey Moharan)':'תורה (ליקוטי מוהר"ן)',
+ 'Paste any text — Hebrew or English':'הדבק טקסט כלשהו — עברית או אנגלית',
+ 'e.g. joy heals the broken heart and draws down abundance…':'למשל: השמחה מרפאת את הלב השבור וממשיכה שפע…',
+ 'Find closest concepts':'מצא מושגים קרובים',
+ 'Pick concepts in causal order — X → Y → Z':'בחר מושגים בסדר סיבתי — X ← Y ← Z',
+ '+ concept':'+ מושג','– concept':'– מושג','Project into the map':'הטל אל המפה',
+ 'Load a story trace (CLI output)':'טען מעקב סיפור (פלט CLI)',
+ 'Load bundled example':'טען דוגמה מובנית',
+ 'Most connected':'המקושרים ביותר','Matches':'התאמות','No matches':'אין התאמות',
+ 'Closest concepts':'המושגים הקרובים',
+ 'Story trace':'מעקב סיפור','Segments':'מקטעים','Bridges':'גשרים','Unresolved slots':'משבצות לא פתורות',
+ 'No trace loaded':'לא נטען מעקב','beats':'פעימות',
+ 'Use the file picker above, or "Load bundled example".':'השתמש בבוחר הקבצים למעלה, או ב"טען דוגמה מובנית".',
+ 'pick at least two concepts from the dropdowns':'בחר לפחות שני מושגים מהרשימות',
+ 'no projection found for those concepts':'לא נמצאה הטלה למושגים אלה',
+ 'pick both concepts from the dropdown':'בחר את שני המושגים מהרשימה',
+ 'pick both concepts':'בחר את שני המושגים',
+ 'no path found between them':'לא נמצא נתיב ביניהם',
+ 'no concept matched that text':'שום מושג לא תאם את הטקסט',
+ 'showing':'מוצגים','edges':'קשרים','steps':'צעדים','candidates':'מועמדים',
+ 'best match':'ההתאמה הטובה ביותר','path found':'נמצא נתיב',
+ 'cross-Torah':'חוצה־תורות','Segment':'מקטע',
+ 'All':'הכול','Vetted only':'מאומת בלבד','Speculative only':'משוער בלבד',
+ 'show every edge':'הצג כל קשר',
+ 'only edges with a hand-vetted (legacy) proof':'רק קשרים עם הוכחה שנבדקה ביד',
+ 'only AI-extracted, un-reviewed edges':'רק קשרי AI שלא נבדקו',
+};
+Object.assign(HE,{
+ 'leads to →':'מוביל אל','← comes from':'נובע מן','aspect of →':'בחינה של','← has aspect':'יש לו בחינת',
+ 'its lack brings →':'העדרו מביא','← comes from lack of':'נובע מהעדר',
+ 'brings (harm) →':'מביא (נזק)','← harmed by':'ניזוק על ידי',
+ 'harms':'מזיק','harms · פגם':'מזיק · פגם',
+ 'Advice — eitza':'עצה','Aspect — bechina':'בחינה','Equation':'משוואה',
+ 'No edges recorded yet.':'עוד לא נרשמו קשרים.',
+ 'no gloss':'אין הסבר','statement':'היגד',
+ 'The chain':'השרשרת','leads to':'מוביל אל','aspect':'בחינה',
+ 'Common ground':'המכנה המשותף',
+ 'No directly shared concepts. Try Path to find an indirect chain.':'אין מושגים משותפים ישירים. נסה "נתיב" למציאת שרשרת עקיפה.',
+ 'no path found':'לא נמצא נתיב','deg':'דרגה',
+ 'Concepts in this teaching':'המושגים בתורה זו','advice':'עצות','aspect edges':'קשרי בחינה',
+ 'Why these are connected':'מקור הקשר','The two concepts':'שני המושגים',
+ 'No quote was recorded for this connection.':'לא נרשם ציטוט לקשר זה.',
+ 'no quote recorded for this connection':'לא נרשם ציטוט לקשר זה',
+ 'click the line for the full connection':'לחץ על הקו לקשר המלא',
+ 'mapping · no aspect hop':'מיפוי · ללא צעד בחינה','maps onto':'ממופה אל',
+ 'How this step was made':'כיצד נעשה הצעד',
+ 'appears here':'מופיע כאן','shared meaning':'משמעות משותפת',
+ ' (your pick)':' (הבחירה שלך)','via פגם':'דרך פגם',
+});
+function T(s){ return UILANG==='he'&&HE[s]!==undefined?HE[s]:s; }
+// count phrases that pluralize differently in the two languages
+function nConn(n){return UILANG==='he'?(n===1?'קשר אחד':n+' קשרים'):n+' connection'+(n!==1?'s':'');}
+function nSrc(n){return UILANG==='he'?(n===1?'מקור אחד':n+' מקורות'):n+' source'+(n!==1?'s':'');}
+function nTimes(n){return UILANG==='he'?(n===1?'פעם אחת':n+' פעמים'):n+' time'+(n!==1?'s':'');}
+function nAspects(n){return UILANG==='he'?(n===1?'בחינה אחת':n+' בחינות'):n+' aspect'+(n!==1?'s':'');}
+// Hebrew mode cards: label / short (button tooltip) / long (hover card) / eg (worked example)
+const HEM={
+ explore:{label:'עיון',short:'כל הקשרים של מושג',
+  long:'כל מה שמושג אחד נוגע בו, בשני הכיוונים. נקודת ההתחלה.',
+  eg:'חפש תפלה ותקבל כל בחינה שהיא שייכת אליה וכל עצה שמובילה אליה.'},
+ aspects:{label:'בחינות',short:'בחינה — היבטים עמוקים יותר',
+  long:'בחינה — "X היא בחינת Y". היחס שאומר שדבר זה הוא באמת פנים של דבר אחר.',
+  eg:'תפלה היא בחינת מלכות.'},
+ advice:{label:'עצות',short:'עצה — מה מוביל אליו',
+  long:'עצה — מה מוביל אל המושג שבחרת. קרא זאת כך: עשה את אלה, ותגיע לכאן.',
+  eg:'שאל מה מוביל לשמחה ותקבל את העצות שהטקסט אומר שמביאות אותה.'},
+ effects:{label:'תוצאות',short:'עצה — לאן זה מוביל',
+  long:'אותו יחס של עצה, קדימה: מה המושג הזה מביא.',
+  eg:'מתפלה — לאן מובילה התפלה עצמה?'},
+ path:{label:'נתיב',short:'שרשרת סיבה ותוצאה בין שניים',
+  long:'שרשרת הסיבה־ותוצאה החזקה ביותר שהמפה מוצאת בין שני מושגים, צעד אחר צעד.',
+  eg:'מתפלה לשמחה: כל צעד הוא קשר אמיתי שאפשר ללחוץ עליו ולקרוא.'},
+ common:{label:'משותף',short:'המכנה המשותף של שני מושגים',
+  long:'מה משותף לשני מושגים — המושגים ששניהם מתחברים אליהם.',
+  eg:'תן שני מושגים שמרגישים קשורים וראה מה באמת עומד ביניהם.'},
+ torah:{label:'לפי תורה',short:'הכול מתוך תורה אחת',
+  long:'כל מה שנשאב מתורה אחת בליקוטי מוהר"ן, כתמונה אחת.',
+  eg:'תורה ד׳ (קמא) מציירת 141 מושגים; האשכולות מראים איך התורה בנויה.'},
+ match:{label:'התאמת טקסט',short:'הדבק טקסט ← המושגים הקרובים',
+  long:'הדבק קטע כלשהו וקבל את המושגים הקרובים אליו ביותר — כניסה למפה מתוך מילים ולא מתוך מונח.',
+  eg:'הדבק פסקה שאתה לומד וראה מאילו מושגים היא עשויה.'},
+ project:{label:'הטלת שרשרת',short:'הטל נרטיב סיבתי על תורה',
+  long:'בחר מושגים בסדר סיבתי — X מוביל ל־Y מוביל ל־Z — והמפה מוצאת תורה הנושאת את אותה תבנית, ומראה כיצד כל בחירה שלך ממופה אליה.',
+  eg:'הקווים המקווקווים הם המיפוי. לחץ על כל קטע כדי לקרוא את קשר הבחינה שמאחוריו.'},
+ trace:{label:'מעקב סיפור',short:'טען קובץ מעקב מכלי ה־CLI',
+  long:'טוען קובץ מעקב שנוצר בכלי שורת הפקודה: רצף, מקטעים, והנרטיב שנכתב מהם.',
+  eg:'השתמש בבוחר הקבצים, או בדוגמה המובנית, כדי לראות את הפורמט.'},
+};
 
 // ---------- URL state: the whole flow lives in the URL ----------
 // Readable query params for every mode (?mode=…&focus=…&picks=…&q=…&a=&b=&ref=&trace=&seg=),
@@ -268,6 +460,30 @@ fetch('./explorer_data.json').then(r=>r.json()).then(d=>{
   buildProv();
   applyURLState();                                 // reproduce whatever the URL describes (params and/or #b= bundle)
   addEventListener('popstate',()=>applyURLState()); // back/forward reproduces the view
+  $('helpBtn').onclick=openHelp;
+  // language toggle: persist + reload — the URL carries the whole view, so the same screen
+  // comes back in the other language. In English mode the page is byte-for-byte the old one.
+  $('langBtn').textContent=UILANG==='he'?'English':'עברית';
+  $('langBtn').onclick=()=>{ try{localStorage.setItem('tm_lang',UILANG==='he'?'en':'he');}catch(_){ }
+    const u=new URL(location.href); u.searchParams.delete('lang');
+    history.replaceState(null,'',u.toString()); location.reload(); };
+  if(UILANG==='he'){
+    document.documentElement.lang='he'; document.body.classList.add('rtl');
+    document.title='מפת התורה — עיון במושגים';
+    const bh=document.querySelector('.brand h1'),bp=document.querySelector('.brand p');
+    if(bh)bh.textContent=T('Torah Map'); if(bp)bp.textContent=T('Likutey Moharan — concept graph');
+    $('helpBtn').innerHTML='? &nbsp;'+T('Help & guide'); $('helpBtn').title=T('How to read this map (?)');
+    const LG=$('legend'); if(LG)LG.innerHTML='<span><i style="background:var(--bechina)"></i>בחינה</span>'
+      +'<span><i style="background:var(--eitza)"></i>עצה</span>'
+      +'<span><i style="background:var(--equation)"></i>משוואה</span>'
+      +'<span><i style="background:#ff5d5d"></i>מזיק (מקווקו = דרך העדר/פגם)</span>'
+      +(PROVCOUNT.a?'<span><i style="background:var(--equation);opacity:.55"></i>מעומעם/מקווקו = קשר AI משוער</span>':'');
+    const HN=$('hints'); if(HN)HN.innerHTML='גלילה = זום · גרירת רקע = הזזה · לחיצה כפולה = איפוס'
+      +' &nbsp;|&nbsp; גרירת מושג מקבעת אותו · Shift+לחיצה משחררת';
+  }
+  $('helpwrap').onclick=e=>{if(e.target.id==='helpwrap')closeHelp();};   // click the backdrop to dismiss
+  addEventListener('keydown',e=>{if(e.key==='Escape')closeHelp();
+    else if(e.key==='?'&&!/^(INPUT|TEXTAREA|SELECT)$/.test((e.target.tagName||'')))openHelp();});
 });
 function tokens(s){return (s||'').toLowerCase().match(/[a-z]{3,}|[א-ת]{2,}/g)||[];}
 let ctxx={},conceptsIn={};
@@ -300,29 +516,62 @@ function matchList(text,topn,pool){
 
 // ---------- modes ----------
 const MODES=[
-  ['explore','Explore','all connections of a concept'],
-  ['aspects','Aspects','bechina — deeper aspects'],
-  ['advice','Advice','eitza — what leads TO it'],
-  ['effects','Effects','eitza — what it leads to'],
-  ['path','Path','cause-effect chain between two'],
-  ['common','Common','shared ground of two concepts'],
-  ['torah','By Torah','everything from one teaching'],
-  ['match','Match text','paste text → closest concepts'],
-  ['project','Project chain','map a causal narrative into a Torah'],
-  ['trace','Story trace','load a CLI-generated trace: sequence → segments → narrative'],
+  ['explore','Explore','all connections of a concept',
+   'Everything one concept touches, in both directions. The place to start.',
+   'Search \u05ea\u05e4\u05dc\u05d4 (prayer) and you get every aspect it belongs to and every piece of advice that leads to it.'],
+  ['aspects','Aspects','bechina — deeper aspects',
+   'Bechina \u2014 \u201cX is an aspect of Y\u201d. The relation that says this thing is really a face of that thing.',
+   '\u05ea\u05e4\u05dc\u05d4 is an aspect of \u05de\u05dc\u05db\u05d5\u05ea (kingship).'],
+  ['advice','Advice','eitza — what leads TO it',
+   'Eitza \u2014 what leads TO the concept you name. Read it as: do these, and you arrive here.',
+   'Ask what leads to \u05e9\u05de\u05d7\u05d4 (joy) and you get the practices the text says produce it.'],
+  ['effects','Effects','eitza — what it leads to',
+   'The same eitza relation read forwards: what this concept brings about.',
+   'From \u05ea\u05e4\u05dc\u05d4, what does prayer itself lead to?'],
+  ['path','Path','cause-effect chain between two',
+   'The strongest chain of cause and effect the map can find between two concepts, step by step.',
+   'From \u05ea\u05e4\u05dc\u05d4 to \u05e9\u05de\u05d7\u05d4: each hop is a real connection you can click and read.'],
+  ['common','Common','shared ground of two concepts',
+   'What two concepts have in common \u2014 the concepts that both of them connect to.',
+   'Give it two concepts that feel related and see what actually sits between them.'],
+  ['torah','By Torah','everything from one teaching',
+   'Everything drawn from a single teaching of Likutey Moharan, as one picture.',
+   'LM I\u00b74 draws 141 concepts; the clusters show you how that teaching is organised.'],
+  ['match','Match text','paste text → closest concepts',
+   'Paste any passage and get the concepts closest to it, so you can enter the map from words rather than from a term.',
+   'Paste a paragraph you are learning and see which concepts it is made of.'],
+  ['project','Project chain','map a causal narrative into a Torah',
+   'Pick concepts in causal order \u2014 X leads to Y leads to Z \u2014 and the map finds a teaching carrying that shape, then shows how each of your picks maps onto it.',
+   'The dashed lines are the mapping. Click any leg to read the aspect link behind it.'],
+  ['trace','Story trace','load a CLI-generated trace: sequence → segments → narrative',
+   'Loads a trace file produced by the command-line tools: a sequence, its segments, and the narrative written from them.',
+   'Use the file picker, or the bundled example, to see the format.'],
 ];
 function buildModes(){
   $('modes').innerHTML='';
-  MODES.forEach(([k,label])=>{const b=document.createElement('button');b.textContent=label;b.dataset.m=k;
-    b.title=MODES.find(m=>m[0]===k)[2]; b.onclick=()=>setMode(k); $('modes').appendChild(b);});
+  MODES.forEach(([k,label,short,long,eg])=>{
+    const M=(UILANG==='he'&&HEM[k])||{label,short,long,eg};
+    const b=document.createElement('button');b.textContent=M.label;b.dataset.m=k;
+    b.title=M.short; b.onclick=()=>setMode(k);
+    b.onmouseenter=()=>showRailTip(b,`<b>${M.label}</b><div class="d">${M.long||M.short}</div>`
+      +(M.eg?`<div class="e">${M.eg}</div>`:'')+`<div class="m">${T('click Help for the full guide')}</div>`);
+    b.onmouseleave=hideRailTip;
+    $('modes').appendChild(b);});
 }
 // ---------- provenance toggle ----------
 function buildProv(){
   const P=$('prov'); if(!P)return;
+  if(!PROVCOUNT.a){            // single-provenance data (the hand-vetted export): caption, no toggle
+    const fmt=n=>n.toLocaleString('en-US');
+    P.innerHTML=UILANG==='he'
+      ?`<div class="provcount"><b style="color:var(--eitza)">${fmt(PROVCOUNT.total)}</b> קשרים &middot; <b style="color:var(--eitza)">${fmt(NODES.length)}</b> מושגים &middot; כולם נבדקו ביד מול הטקסט</div>`
+      :`<div class="provcount"><b style="color:var(--eitza)">${fmt(PROVCOUNT.total)}</b> connections &middot; <b style="color:var(--eitza)">${fmt(NODES.length)}</b> concepts &middot; every one hand-vetted against the text</div>`;
+    return;
+  }
   P.innerHTML=`<div class="provbtns">
-    <button data-p="all" title="show every edge">All</button>
-    <button data-p="vetted" title="only edges with a hand-vetted (legacy) proof">Vetted only</button>
-    <button data-p="ai" title="only AI-extracted, un-reviewed edges">Speculative only</button></div>
+    <button data-p="all" title="${T('show every edge')}">${T('All')}</button>
+    <button data-p="vetted" title="${T('only edges with a hand-vetted (legacy) proof')}">${T('Vetted only')}</button>
+    <button data-p="ai" title="${T('only AI-extracted, un-reviewed edges')}">${T('Speculative only')}</button></div>
     <div class="provcount" id="provcount"></div>`;
   P.querySelectorAll('button').forEach(b=>b.onclick=()=>setProv(b.dataset.p,true));
   updateProvUI();
@@ -331,10 +580,15 @@ function updateProvUI(){
   const P=$('prov'); if(!P)return;
   P.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.p===PROV));
   const fmt=n=>n.toLocaleString('en-US'),pc=$('provcount');
-  if(pc)pc.innerHTML=`<b style="color:var(--eitza)">${fmt(PROVCOUNT.v)}</b> vetted / ${fmt(PROVCOUNT.total)} total`
+  if(pc)pc.innerHTML=(UILANG==='he'
+    ?`<b style="color:var(--eitza)">${fmt(PROVCOUNT.v)}</b> מאומתים / ${fmt(PROVCOUNT.total)} סה"כ`
+      +(PROV==='vetted'?` · <b style="color:var(--eitza)">מוצגים מאומתים בלבד</b>`
+       :PROV==='ai'?` · <b style="color:var(--equation)">מוצגים ${fmt(PROVCOUNT.a)} משוערים</b>`
+       :` · <span style="color:var(--faint)">${fmt(PROVCOUNT.a)} משוערי־AI מוצגים מעומעמים</span>`)
+    :`<b style="color:var(--eitza)">${fmt(PROVCOUNT.v)}</b> vetted / ${fmt(PROVCOUNT.total)} total`
     +(PROV==='vetted'?` · <b style="color:var(--eitza)">showing vetted only</b>`
      :PROV==='ai'?` · <b style="color:var(--equation)">showing ${fmt(PROVCOUNT.a)} speculative</b>`
-     :` · <span style="color:var(--faint)">${fmt(PROVCOUNT.a)} AI-speculative shown faded</span>`);
+     :` · <span style="color:var(--faint)">${fmt(PROVCOUNT.a)} AI-speculative shown faded</span>`));
 }
 // switch provenance filter: rebuild adj from passing edges, refresh the current view, sync URL
 function setProv(p,push){
@@ -373,26 +627,26 @@ function renderStages(){
 function renderInputs(){
   const I=$('inputs');
   if(mode==='path'||mode==='common'){
-    I.innerHTML=`<label>${mode==='path'?'From concept':'Concept A'}</label>${acField('a')}
-      <label>${mode==='path'?'To concept':'Concept B'}</label>${acField('b')}
-      <button class="go" id="run2">${mode==='path'?'Trace path':'Find common ground'}</button>`;
+    I.innerHTML=`<label>${T(mode==='path'?'From concept':'Concept A')}</label>${acField('a')}
+      <label>${T(mode==='path'?'To concept':'Concept B')}</label>${acField('b')}
+      <button class="go" id="run2">${T(mode==='path'?'Trace path':'Find common ground')}</button>`;
     wireAc('a'); wireAc('b');
     $('run2').onclick=()=>{ mode==='path'?runPath():runCommon(); };
   } else if(mode==='torah'){
-    I.innerHTML=`<label>Teaching (Likutey Moharan)</label>
+    I.innerHTML=`<label>${T('Teaching (Likutey Moharan)')}</label>
       <select id="torahSel">${TORAHS.map(t=>`<option value="${t}">LM ${t.replace(':',' · ')}</option>`).join('')}</select>`;
     $('torahSel').onchange=e=>runTorah(e.target.value);
   } else if(mode==='match'){
-    I.innerHTML=`<label>Paste any text — Hebrew or English</label>
-      <textarea id="matchbox" placeholder="e.g. joy heals the broken heart and draws down abundance…"></textarea>
-      <button class="go" id="runm">Find closest concepts</button>`;
+    I.innerHTML=`<label>${T('Paste any text — Hebrew or English')}</label>
+      <textarea id="matchbox" placeholder="${T('e.g. joy heals the broken heart and draws down abundance…')}"></textarea>
+      <button class="go" id="runm">${T('Find closest concepts')}</button>`;
     $('runm').onclick=runMatch;
     $('matchbox').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.metaKey||e.ctrlKey))runMatch();});
   } else if(mode==='project'){
-    I.innerHTML=`<label>Pick concepts in causal order — X → Y → Z</label><div id="stages"></div>
-      <div style="display:flex;gap:6px"><button id="addStg" style="flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:8px;padding:6px;cursor:pointer">+ concept</button>
-      <button id="delStg" style="flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:8px;padding:6px;cursor:pointer">– concept</button></div>
-      <button class="go" id="runp">Project into the map</button>`;
+    I.innerHTML=`<label>${T('Pick concepts in causal order — X → Y → Z')}</label><div id="stages"></div>
+      <div style="display:flex;gap:6px"><button id="addStg" style="flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:8px;padding:6px;cursor:pointer">${T('+ concept')}</button>
+      <button id="delStg" style="flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:8px;padding:6px;cursor:pointer">${T('– concept')}</button></div>
+      <button class="go" id="runp">${T('Project into the map')}</button>`;
     // if a projection is already in progress, repopulate the pickers so leaving & returning never loses it
     if(savedProjection&&savedProjection.picks.length){
       stageN=savedProjection.picks.length;renderStages();
@@ -402,9 +656,9 @@ function renderInputs(){
     $('delStg').onclick=()=>{const v=saveStages();stageN=Math.max(2,stageN-1);renderStages();restoreStages(v);};
     $('runp').onclick=runProject;
   } else if(mode==='trace'){
-    I.innerHTML=`<label>Load a story trace (CLI output)</label>
+    I.innerHTML=`<label>${T('Load a story trace (CLI output)')}</label>
       <input type="file" id="traceFile" accept="application/json">
-      <button class="go" id="loadBundled">Load bundled example</button>`;
+      <button class="go" id="loadBundled">${T('Load bundled example')}</button>`;
     $('traceFile').onchange=e=>{const f=e.target.files[0];if(!f)return;
       const r=new FileReader();
       r.onload=()=>{try{applyTrace(JSON.parse(r.result));}
@@ -412,11 +666,11 @@ function renderInputs(){
       r.readAsText(f);};
     $('loadBundled').onclick=()=>loadTraceUrl('./story_trace.json','no bundled example at ./story_trace.json');
   } else {
-    I.innerHTML=`<label>Search concept</label>${acField('q')}`;
+    I.innerHTML=`<label>${T('Search concept')}</label>${acField('q')}`;
     wireAc('q',true);
   }
 }
-function acField(id){return `<div class="ac"><input id="ac_${id}" autocomplete="off" placeholder="type Hebrew or English…"><div class="acmenu" id="acm_${id}"></div></div>`;}
+function acField(id){return `<div class="ac"><input id="ac_${id}" autocomplete="off" placeholder="${T('type Hebrew or English…')}"><div class="acmenu" id="acm_${id}"></div></div>`;}
 function wireAc(id,browse){
   const inp=$('ac_'+id),menu=$('acm_'+id);let sel=-1,cur=[];
   const close=()=>{menu.classList.remove('show');sel=-1;};
@@ -431,12 +685,12 @@ function wireAc(id,browse){
       return s+Math.min(15,(n.deg||0)/40);};                    // relevance first, degree as tiebreak
     cur=NODES.filter(n=>n.kind!=='statement').map(n=>[n,score(n)]).filter(x=>x[1]>=0)
       .sort((a,b)=>b[1]-a[1]).slice(0,30).map(x=>x[0]);
-    if(!cur.length){close(); if(browse)listResults([],'No matches'); return;}
+    if(!cur.length){close(); if(browse)listResults([],T('No matches')); return;}
     menu.innerHTML=cur.map((n,i)=>`<div class="acitem" data-i="${i}"><span class="he">${n.he||''}</span><span class="en">${(n.gloss||'').slice(0,60)}</span></div>`).join('');
     menu.classList.add('show');sel=0;paint();
     // select on mousedown+preventDefault so the input never blurs mid-click (fixes the "click doesn't fill" race)
     [...menu.children].forEach(el=>el.addEventListener('mousedown',ev=>{ev.preventDefault();pick(cur[+el.dataset.i]);}));
-    if(browse) listResults(cur,'Matches');
+    if(browse) listResults(cur,T('Matches'));
   });
   inp.addEventListener('keydown',e=>{
     if(!menu.classList.contains('show'))return;
@@ -450,7 +704,7 @@ function wireAc(id,browse){
     if(browse) go(n.id); }
   inp.addEventListener('blur',()=>setTimeout(close,150));
 }
-function listBrowse(){ listResults(NODES.filter(n=>n.kind!=='statement').sort((a,b)=>b.deg-a.deg).slice(0,60),'Most connected'); }
+function listBrowse(){ listResults(NODES.filter(n=>n.kind!=='statement').sort((a,b)=>b.deg-a.deg).slice(0,60),T('Most connected')); }
 function idOf(field){const el=$('ac_'+field); return el&&el.dataset.id;}
 
 // ---------- search modes ----------
@@ -467,7 +721,7 @@ function go(id){ if(!byId[id])return;
   const shown=nb.slice(0,36);
   view={focus:id,center:id,edges:shown.map(x=>x.e),nodes:[id].concat(shown.map(x=>x.o)),path:null,ego:shown};
   layoutEgo(id,shown); drawDetail(id); drawCrumbs();
-  setStatus(`${nb.length} ${mode==='explore'?'connections':mode} · showing ${shown.length}`);
+  setStatus(`${nb.length} ${mode==='explore'?T('connections'):((UILANG==='he'&&HEM[mode])?HEM[mode].label:mode)} · ${T('showing')} ${shown.length}`);
   syncURL(false);
 }
 function runTorah(ref){
@@ -476,17 +730,17 @@ function runTorah(ref){
   const ns=new Set(); es.forEach(e=>{ns.add(e.s);ns.add(e.t);});
   view={edges:es.slice(0,120),nodes:[...ns],path:null,center:null};
   layoutForce([...ns].slice(0,80),es); drawTorahDetail(ref,es,ns); drawCrumbs();
-  setStatus(`LM ${ref.replace(':',' · ')} — ${es.length} edges, ${ns.size} concepts`);
+  setStatus(`LM ${ref.replace(':',' · ')} — ${es.length} ${T('edges')}, ${ns.size} ${T('concepts')}`);
   syncURL(false);
 }
 function runMatch(){
   const q=$('matchbox').value; lastMatchQ=q;
   const scored=matchList(q,40);
-  if(!scored.length){setStatus('no concept matched that text');$('list').innerHTML='<div class="sec">No matches</div>';syncURL(false);return;}
+  if(!scored.length){setStatus(T('no concept matched that text'));$('list').innerHTML='<div class="sec">'+T('No matches')+'</div>';syncURL(false);return;}
   const max=scored[0][1];
-  listResults(scored.map(x=>byId[x[0]]),'Closest concepts',scored.map(x=>Math.round(100*x[1]/max)+'%'));
+  listResults(scored.map(x=>byId[x[0]]),T('Closest concepts'),scored.map(x=>Math.round(100*x[1]/max)+'%'));
   go(scored[0][0]);
-  setStatus(`best match: ${byId[scored[0][0]].he} (${scored.length} candidates)`);
+  setStatus(`${T('best match')}: ${byId[scored[0][0]].he} (${scored.length} ${T('candidates')})`);
   syncURL(false);
 }
 // ---------- structural projection (validated in scripts/project_test.py) ----------
@@ -605,7 +859,7 @@ function saveStages(){const v=[];for(let i=0;i<stageN;i++){const el=$('ac_stg_'+
 function restoreStages(v){v.forEach((o,i)=>{const el=$('ac_stg_'+i);if(el){el.value=o.t;if(o.id)el.dataset.id=o.id;}});}
 function runProject(){
   const picks=[];for(let i=0;i<stageN;i++){const el=$('ac_stg_'+i);if(el&&el.dataset.id)picks.push(el.dataset.id);}
-  if(picks.length<2){setStatus('pick at least two concepts from the dropdowns');return;}
+  if(picks.length<2){setStatus(T('pick at least two concepts from the dropdowns'));return;}
   runProjectFor(picks);
   syncURL(false);   // ?mode=project&picks=… (view.picks is set by runProjectFor)
 }
@@ -616,7 +870,7 @@ function runProject(){
 function runProjectFor(picks,precomputed){
   let res=precomputed;
   if(res===undefined){try{res=project(picks);}catch(_){res=null;}}
-  if(!res){setStatus('no projection found for those concepts');$('detail').innerHTML='<div class="dhead"><div class="meta">No projection found.</div></div>';return false;}
+  if(!res){setStatus(T('no projection found for those concepts'));$('detail').innerHTML='<div class="dhead"><div class="meta">No projection found.</div></div>';return false;}
   applyProjection(picks,res,{stored:false});
   return true;
 }
@@ -658,8 +912,12 @@ function applyProjection(picks,res,opt){
   layoutProject(res);
   if(opt.stored)drawStoredProjectDetail(picks,res,opt.seg,opt.disagree); else drawProjectDetail(picks,res);
   drawCrumbs();
-  if(opt.stored)setStatus(`attested chain (stored provenance)${res.home?' · LM '+res.home.replace(':',' · '):' · cross-Torah'} · weight ${(res.cost||0).toFixed(2)}${opt.disagree?' · live recompute disagreed ('+opt.disagree+')':''}`);
-  else setStatus(res.home?`projected onto LM ${res.home.replace(':',' · ')} · weight ${res.cost.toFixed(2)}`:`cross-Torah projection · weight ${res.cost.toFixed(2)}`);
+  if(opt.stored)setStatus(UILANG==='he'
+    ?`שרשרת מתועדת (מקור שמור)${res.home?' · LM '+res.home.replace(':',' · '):' · '+T('cross-Torah')} · משקל ${(res.cost||0).toFixed(2)}${opt.disagree?' · חישוב חי לא הסכים ('+opt.disagree+')':''}`
+    :`attested chain (stored provenance)${res.home?' · LM '+res.home.replace(':',' · '):' · cross-Torah'} · weight ${(res.cost||0).toFixed(2)}${opt.disagree?' · live recompute disagreed ('+opt.disagree+')':''}`);
+  else setStatus(UILANG==='he'
+    ?(res.home?`הוטל על LM ${res.home.replace(':',' · ')} · משקל ${res.cost.toFixed(2)}`:`הטלה חוצת־תורות · משקל ${res.cost.toFixed(2)}`)
+    :(res.home?`projected onto LM ${res.home.replace(':',' · ')} · weight ${res.cost.toFixed(2)}`:`cross-Torah projection · weight ${res.cost.toFixed(2)}`));
 }
 // synthesize a graph-edge shape from a stored hop so the shared renderer can draw it.
 // eitza (cause) hops are directed; aspect/reframe are bechina.
@@ -710,10 +968,10 @@ function parseTraceSlug(){
 }
 function renderTraceList(){
   const L=$('list');
-  if(!traceData){L.innerHTML='<div class="sec">No trace loaded</div><div class="empty" style="padding:8px 10px">Use the file picker above, or "Load bundled example".</div>';return;}
+  if(!traceData){L.innerHTML='<div class="sec">'+T('No trace loaded')+'</div><div class="empty" style="padding:8px 10px">'+T('Use the file picker above, or "Load bundled example".')+'</div>';return;}
   const seq=traceData.sequence||[],segs=traceData.segments||[],bridges=traceData.bridges||[],unk=traceData.unknown_resolutions||[];
   const segOf=i=>segs.findIndex(s=>s.slots.includes(i));
-  let html=`<div class="sec"><span>${traceData.input?.title||'Story trace'}</span><span>${seq.length} beats</span></div>`;
+  let html=`<div class="sec"><span dir="auto">${traceData.input?.title||T('Story trace')}</span><span>${seq.length} ${T('beats')}</span></div>`;
   html+=`<div style="padding:2px 10px 10px;line-height:2.2">`;
   seq.forEach((s,i)=>{
     const known=s.status==='known';
@@ -723,24 +981,24 @@ function renderTraceList(){
       border:1px ${known?'solid':'dashed'} ${hue};color:${known?'var(--ink)':hue}">${known?(s.he||s.phrase||s.id||'?'):'?'}</span>`;
   });
   html+=`</div>`;
-  html+=`<div class="sec"><span>Segments</span><span>${segs.length}</span></div>`;
+  html+=`<div class="sec"><span>${T('Segments')}</span><span>${segs.length}</span></div>`;
   segs.forEach((seg,i)=>{
     const home=seg.project?.home;
-    html+=`<div class="item" data-seg="${i}"><span class="he">Segment ${i+1}${traceSegIdx===i?' ●':''}</span>
+    html+=`<div class="item" data-seg="${i}"><span class="he">${T('Segment')} ${i+1}${traceSegIdx===i?' ●':''}</span>
       <span class="en">LM ${home?home.replace(':',' · '):'cross-Torah'} · ${seg.ids.length} concepts</span>
       <span class="dg">${(seg.project?.cost||0).toFixed(2)}</span></div>`;
   });
   if(bridges.length){
-    html+=`<div class="sec"><span>Bridges</span><span>${bridges.length}</span></div>`;
+    html+=`<div class="sec"><span>${T('Bridges')}</span><span>${bridges.length}</span></div>`;
     bridges.forEach(b=>{html+=`<div class="item" style="cursor:default"><span class="en">${b.note}</span><span class="w">+${b.penalty.toFixed(2)}</span></div>`;});
   }
   if(unk.length){
-    html+=`<div class="sec"><span>Unresolved slots</span><span>${unk.length}</span></div>`;
+    html+=`<div class="sec"><span>${T('Unresolved slots')}</span><span>${unk.length}</span></div>`;
     unk.forEach((u,i)=>{const an=byId[u.anchor]||{};
       html+=`<div class="item" data-unk="${i}"><span class="he">?</span>
         <span class="en">${u.direction==='prior'?'what precedes':'what follows'} ${an.he||u.anchor}</span></div>`;});
   }
-  html+=`<div class="item" data-narr="1"><span class="he">📖 full narrative</span></div>`;
+  html+=`<div class="item" data-narr="1"><span class="he">📖 ${UILANG==='he'?'הנרטיב המלא':'full narrative'}</span></div>`;
   L.innerHTML=html;
   L.querySelectorAll('[data-seg]').forEach(el=>el.onclick=()=>selectTraceSegment(+el.dataset.seg));
   L.querySelectorAll('[data-unk]').forEach(el=>el.onclick=()=>showUnknownDetail(+el.dataset.unk));
@@ -776,7 +1034,7 @@ function selectTraceSegment(i){
   else runProjectFor(seg.ids.slice(),live);   // no stored block → live (may be null → honest "no projection")
   const D=$('detail'),note=(traceData.narrative_by_segment||[])[i]||'';
   D.innerHTML=`<div class="dhead" style="border-bottom:2px solid var(--accent)">
-     <div class="meta" style="color:var(--dim)">Story trace · segment ${i+1} of ${traceData.segments.length}</div>
+     <div class="meta" style="color:var(--dim)">${UILANG==='he'?`מעקב סיפור · מקטע ${i+1} מתוך ${traceData.segments.length}`:`Story trace · segment ${i+1} of ${traceData.segments.length}`}</div>
      ${note?`<div class="en" style="margin-top:6px">${note}</div>`:''}</div>`+D.innerHTML;
   renderTraceList();
   syncURL(false);   // ?mode=trace&trace=…&seg=i
@@ -785,11 +1043,11 @@ function showTraceOverview(){
   if(!traceData)return;
   traceSegIdx=null; view={edges:[],nodes:[],path:null,center:null}; sim={}; resize(); redraw(); drawCrumbs();
   const D=$('detail'),inp=traceData.input||{};
-  D.innerHTML=`<div class="dhead"><div class="he" style="font-size:20px">${inp.title||'Story trace'}</div>
-      <div class="meta">${inp.type||''}</div></div>
-    <div class="grp"><h3>Input</h3><div class="en" style="line-height:1.6">${(inp.text_summary||'').replace(/\n/g,'<br>')}</div></div>
-    ${traceData.process_notes?`<div class="grp"><h3>The AI's process</h3><div class="en" style="line-height:1.7">${traceData.process_notes.replace(/\n/g,'<br>')}</div></div>`:''}
-    <div class="grp"><h3>Elaboration</h3><div class="en" style="line-height:1.8">${(traceData.narrative||'').replace(/\n/g,'<br>')}</div></div>`;
+  D.innerHTML=`<div class="dhead"><div class="he" style="font-size:20px">${inp.title||T('Story trace')}</div>
+      <div class="meta"><span class="en">${inp.type||''}</span></div></div>
+    <div class="grp"><h3>${UILANG==='he'?'קלט':'Input'}</h3><div class="en" style="line-height:1.6">${(inp.text_summary||'').replace(/\n/g,'<br>')}</div></div>
+    ${traceData.process_notes?`<div class="grp"><h3>${UILANG==='he'?'תהליך העבודה של ה־AI':"The AI's process"}</h3><div class="en" style="line-height:1.7">${traceData.process_notes.replace(/\n/g,'<br>')}</div></div>`:''}
+    <div class="grp"><h3>${UILANG==='he'?'הרחבה':'Elaboration'}</h3><div class="en" style="line-height:1.8">${(traceData.narrative||'').replace(/\n/g,'<br>')}</div></div>`;
   D.scrollTop=0;
   renderTraceList();
   syncURL(false);   // trace overview → drop &seg=
@@ -832,11 +1090,36 @@ function shortEn(id){
   if(!s||s.length>46)s=strip(g.split(/[;,]/)[0]);                          // fallback: first clause
   return s.length>46?s.slice(0,46).replace(/\s\S*$/,'')+'…':s;             // cap on a word boundary
 }
-function cLbl(id){return `<b style="font-family:var(--hebrew);direction:rtl">${(byId[id]&&byId[id].he)||id}</b> <span style="color:var(--faint)">(${shortEn(id)})</span>`;}
+function cLbl(id){return `<b style="font-family:var(--hebrew);direction:rtl">${(byId[id]&&byId[id].he)||id}</b> <span class="en" style="color:var(--faint)">(${shortEn(id)})</span>`;}
 const ORD=['first','second','third','fourth','fifth','sixth','seventh'];
-function mapDesc(x,a,home){if(x===a)return 'it appears here directly';const ap=aspectPath(x,a,home);
+const ORD_HE=['הראשון','השני','השלישי','הרביעי','החמישי','השישי','השביעי'];
+function mapDesc(x,a,home){
+  if(UILANG==='he'){
+    if(x===a)return 'מופיע כאן ישירות';const aph=aspectPath(x,a,home);
+    if(aph&&aph.length)return `דרך ${aph.length===1?'קשר בחינה אחד':aph.length+' קשרי בחינה'}`;
+    return 'לפי משמעות משותפת (התאמה סמנטית, לא נתיב בגרף)';}
+  if(x===a)return 'it appears here directly';const ap=aspectPath(x,a,home);
   if(ap&&ap.length)return `through ${ap.length} aspect-link${ap.length!==1?'s':''}`;return 'by shared meaning (a semantic match, not a graph path)';}
 function projectNarrative(picks,res){
+  if(UILANG==='he'){
+    const teach=res.home?('לקוטי מוהר"ן '+res.home.replace(':',' · ')):'שרשרת חוצת־תורות';
+    let n=`<div class="grp"><h3>במילים פשוטות</h3><div style="line-height:1.9;font-size:13px;color:var(--ink)">`;
+    n+=`השרשרת הזו חיה בתוך <b>${teach}</b>${res.home?' — תורה אחת, ולכן כל צעד של סיבה־ותוצאה כמעט חינם.':'.'}<br><br>`;
+    n+=`התחלת עם ${cLbl(picks[0])}. `;
+    n+=(picks[0]===res.chain[0])?`המושג מופיע בתורה זו ישירות. `
+       :`הוא ממופה אל ${cLbl(res.chain[0])} ${mapDesc(picks[0],res.chain[0],res.home)} <span style="color:var(--faint)">(עלות מיפוי ${(res.pcosts[0]||0).toFixed(2)})</span>. `;
+    for(let i=0;i<res.links.length;i++){
+      const hops=res.links[i].hops||[];
+      let s=cLbl(hops.length?hops[0].from:res.chain[i]);
+      hops.forEach((h,k)=>{const verb=h.kind==='cause'?'מוביל אל':'מנוסח מחדש כ־';s+=(k===0?' ':', ש')+verb+' '+cLbl(h.to);});
+      n+=`<br><br>משם רץ ההגיון של התורה עצמה: ${s}. `;
+      const np=picks[i+1];
+      n+=`שם נוחת המושג ${ORD_HE[i+1]||('#'+(i+2))} שלך, ${cLbl(np)}`;
+      n+=(np===res.chain[i+1])?' (מופיע כאן ישירות).':` — מופה ${mapDesc(np,res.chain[i+1],res.home)} <span style="color:var(--faint)">(עלות מיפוי ${(res.pcosts[i+1]||0).toFixed(2)})</span>.`;
+    }
+    n+=`<br><br><span style="color:var(--faint)">משקל כולל ${res.cost.toFixed(2)} — נמוך יותר פירושו התאמה הדוקה ונאמנה יותר.</span></div></div>`;
+    return n;
+  }
   const teach=res.home?('לקוטי מוהר"ן '+res.home.replace(':',' · ')):'a cross-teaching chain';
   let n=`<div class="grp"><h3>In plain words</h3><div class="en" style="line-height:1.8;font-size:12.5px;color:var(--ink)">`;
   n+=`This chain lives inside <b>${teach}</b>${res.home?' — a single teaching, so each cause-and-effect step is near-free.':'.'}<br><br>`;
@@ -858,7 +1141,13 @@ function projectNarrative(picks,res){
 function drawProjectDetail(picks,res){
   const D=$('detail');
   const linkSum=res.links.reduce((s,l)=>s+l.cost,0),parSum=(res.pcosts||[]).reduce((s,x)=>s+x,0);
-  let html=`<div class="dhead"><div class="he" style="font-size:20px">${res.home?'לקוטי מוהר"ן '+res.home.replace(':',' · '):'Cross-Torah projection'}</div>
+  let html=UILANG==='he'
+   ?`<div class="dhead"><div class="he" style="font-size:20px">${res.home?'לקוטי מוהר"ן '+res.home.replace(':',' · '):'הטלה חוצת־תורות'}</div>
+    <div class="meta">${picks.length} מושגים ← שרשרת סיבה־ותוצאה ${res.home?'בתורה אחת':'חוצת־תורות'}</div>
+    <div class="meta" style="margin-top:8px;line-height:1.7">
+      <b>משקל כולל ${res.cost.toFixed(2)}</b> &nbsp;=&nbsp; מקבילות ${parSum.toFixed(2)} + צעדים ${linkSum.toFixed(2)}<br>
+      <span style="color:var(--faint)">נמוך = טוב יותר · צעד באותה תורה ≈ 0.12 (כמעט חינם) · צעד חוצה־תורות ≥ 1.6</span></div></div>`
+   :`<div class="dhead"><div class="he" style="font-size:20px">${res.home?'לקוטי מוהר"ן '+res.home.replace(':',' · '):'Cross-Torah projection'}</div>
     <div class="meta">${picks.length} concepts → a ${res.home?'single-teaching':'cross-teaching'} cause-effect chain</div>
     <div class="meta" style="margin-top:8px;line-height:1.7">
       <b>Total weight ${res.cost.toFixed(2)}</b> &nbsp;=&nbsp; parallels ${parSum.toFixed(2)} + hops ${linkSum.toFixed(2)}<br>
@@ -866,7 +1155,14 @@ function drawProjectDetail(picks,res){
   // plain-English walkthrough first — the story before the mechanics
   html+=projectNarrative(picks,res);
   // legend of node roles
-  html+=`<div class="grp"><h3>How to read this</h3><div class="en" style="line-height:1.6">
+  html+=UILANG==='he'
+   ?`<div class="grp"><h3>איך לקרוא את זה</h3><div style="line-height:1.7">
+    <span style="color:#37b3a4">●</span> <b>הבחירות שלך</b> (השורה העליונה)&nbsp;·&nbsp;
+    <span style="color:var(--accent)">●</span> <b>עוגנים</b> שאליהם הן ממופות &nbsp;·&nbsp;
+    <span style="color:var(--path)">●</span> <b>גשרים</b> המקשרים את העוגנים סיבתית.<br>
+    <span style="color:#8a7bd8">- -</span> מקווקו = מיפוי ההטלה (∥ + עלות) &nbsp;·&nbsp; <span style="color:var(--eitza)">←</span> מלא = צעד סיבתי (+ עלות).<br>
+    ${picks.length} בחירות ממופות אל ${res.chain.length} עוגנים, מחוברים על ידי ${new Set(res.links.flatMap(l=>(l.hops||[]).map(h=>h.to)).concat(res.chain)).size - res.chain.length} מושגי גשר.</div></div>`
+   :`<div class="grp"><h3>How to read this</h3><div class="en" style="line-height:1.6">
     <span style="color:#37b3a4">●</span> <b>your picks</b> (top row)&nbsp;·&nbsp;
     <span style="color:var(--accent)">●</span> <b>anchors</b> they map onto &nbsp;·&nbsp;
     <span style="color:var(--path)">●</span> <b>bridges</b> linking the anchors causally.<br>
@@ -874,37 +1170,43 @@ function drawProjectDetail(picks,res){
     ${picks.length} picks map onto ${res.chain.length} anchors, joined by ${new Set(res.links.flatMap(l=>(l.hops||[]).map(h=>h.to)).concat(res.chain)).size - res.chain.length} bridge concepts.</div></div>`;
   res.chain.forEach((cid,i)=>{
     const o=byId[cid],p=byId[picks[i]],same=picks[i]===cid,pc=(res.pcosts||[])[i]||0;
-    html+=`<div class="grp"><h3><span style="color:var(--accent);font-size:13px">${i+1}</span> map your pick onto the teaching</h3>`;
+    html+=`<div class="grp"><h3><span style="color:var(--accent);font-size:13px">${i+1}</span> ${UILANG==='he'?'מיפוי הבחירה שלך אל התורה':'map your pick onto the teaching'}</h3>`;
     html+=`<div class="conn" data-go="${cid}">
       <div class="row"><span class="he" style="color:#37b3a4">${p.he||''}</span>
-        <span class="arrowlbl" style="margin:0 6px">${same?'✓ appears in this teaching directly (cost 0)':'∥ maps onto → '}</span>
-        ${same?'':`<span class="he" style="color:var(--accent)">${o.he||''}</span> <span class="w">total ∥ ${pc.toFixed(2)}</span>`}</div>
+        <span class="arrowlbl" dir="auto" style="margin:0 6px">${same?(UILANG==='he'?'✓ מופיע בתורה זו ישירות (עלות 0)':'✓ appears in this teaching directly (cost 0)'):(UILANG==='he'?'∥ ממופה אל ':'∥ maps onto → ')}</span>
+        ${same?'':`<span class="he" style="color:var(--accent)">${o.he||''}</span> <span class="w">${UILANG==='he'?'סה"כ':'total'} ∥ ${pc.toFixed(2)}</span>`}</div>
       <div class="en">${o.gloss||''}</div></div>`;
     if(!same){const aps=aspectPath(picks[i],cid,res.home);
       if(aps&&aps.length){
-        html+=`<div style="margin:4px 0 2px;font-size:11px;color:var(--bechina)">∥ mapping path &nbsp;·&nbsp; ${aps.length} aspect-link${aps.length!==1?'s':''} — every step from ${p.he||''} to ${o.he||''}</div>`;
+        html+=UILANG==='he'
+          ?`<div style="margin:4px 0 2px;font-size:11px;color:var(--bechina)">∥ נתיב מיפוי &nbsp;·&nbsp; ${aps.length===1?'קשר בחינה אחד':aps.length+' קשרי בחינה'} — כל צעד מ${p.he||''} אל ${o.he||''}</div>`
+          :`<div style="margin:4px 0 2px;font-size:11px;color:var(--bechina)">∥ mapping path &nbsp;·&nbsp; ${aps.length} aspect-link${aps.length!==1?'s':''} — every step from ${p.he||''} to ${o.he||''}</div>`;
         aps.forEach(h=>{const inHome=(h.e.ref||[]).includes(res.home);
           html+=`<div class="conn open" style="border-left:3px solid var(--bechina)">
             <div class="row" style="direction:rtl"><span class="he pathlnk" data-go="${h.from}">${byId[h.from].he}</span>
-              <span class="op" style="color:var(--bechina);direction:ltr;margin:0 4px">≈ aspect ≈</span>
+              <span class="op" style="color:var(--bechina);direction:ltr;margin:0 4px">≈ ${UILANG==='he'?'בחינה':'aspect'} ≈</span>
               <span class="he pathlnk" data-go="${h.to}">${byId[h.to].he}</span></div>
-            <div class="rf">bechina (shared aspect)${inHome?' · in LM '+res.home.replace(':','·'):(h.e.ref&&h.e.ref.length?' · '+h.e.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):'')}${aiTag(h.e)}</div>
-            ${h.e.p?`<div class="proof" style="display:block">${h.e.p}…</div>`:'<div class="rf" style="color:var(--faint)">(no proof quote recorded)</div>'}</div>`;});
+            <div class="rf">${UILANG==='he'?'בחינה (בחינה משותפת)':'bechina (shared aspect)'}${inHome?' · '+(UILANG==='he'?'ב־':'in ')+'LM '+res.home.replace(':','·'):(h.e.ref&&h.e.ref.length?' · '+h.e.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):'')}${aiTag(h.e)}</div>
+            ${h.e.p?`<div class="proof" style="display:block">${h.e.p}…</div>`:`<div class="rf" style="color:var(--faint)">${UILANG==='he'?'(לא נרשם ציטוט הוכחה)':'(no proof quote recorded)'}</div>`}</div>`;});
       } else {const terms=sharedTerms(picks[i],cid,8);
         html+=`<div class="conn open" style="border-left:3px solid var(--faint)">
-          <div class="rf" style="color:var(--dim)">No aspect-edge path in the graph between these two — they were matched by <b>shared meaning</b> (similarity of the two descriptions). This is the one soft, non-derived step; judge it yourself:</div>
-          ${terms.length?`<div class="proof" style="display:block">shared terms: ${terms.join(' · ')}</div>`:'<div class="rf" style="color:var(--faint)">(no strong shared terms)</div>'}</div>`;}
+          <div class="rf" style="color:var(--dim)" dir="auto">${UILANG==='he'
+            ?'אין נתיב קשרי־בחינה בגרף בין השניים — הם הותאמו לפי <b>משמעות משותפת</b> (דמיון בין שני התיאורים). זהו הצעד הרך היחיד שאינו נגזר מן הטקסט; שפוט אותו בעצמך:'
+            :'No aspect-edge path in the graph between these two — they were matched by <b>shared meaning</b> (similarity of the two descriptions). This is the one soft, non-derived step; judge it yourself:'}</div>
+          ${terms.length?`<div class="proof" style="display:block">${UILANG==='he'?'מונחים משותפים':'shared terms'}: ${terms.join(' · ')}</div>`:`<div class="rf" style="color:var(--faint)">${UILANG==='he'?'(אין מונחים משותפים חזקים)':'(no strong shared terms)'}</div>`}</div>`;}
     }
     if(i<res.links.length){const l=res.links[i],hops=l.hops||[];
-      html+=`<div style="margin:4px 0 2px;font-size:11px;color:var(--eitza)">⟶ causal path to concept ${i+2} &nbsp;·&nbsp; ${hops.length} hop${hops.length!==1?'s':''} &nbsp;·&nbsp; cost ${l.cost.toFixed(2)}</div>`;
+      html+=UILANG==='he'
+        ?`<div style="margin:4px 0 2px;font-size:11px;color:var(--eitza)">⟵ נתיב סיבתי אל מושג ${i+2} &nbsp;·&nbsp; ${hops.length===1?'צעד אחד':hops.length+' צעדים'} &nbsp;·&nbsp; עלות ${l.cost.toFixed(2)}</div>`
+        :`<div style="margin:4px 0 2px;font-size:11px;color:var(--eitza)">⟶ causal path to concept ${i+2} &nbsp;·&nbsp; ${hops.length} hop${hops.length!==1?'s':''} &nbsp;·&nbsp; cost ${l.cost.toFixed(2)}</div>`;
       hops.forEach(h=>{const col=h.kind==='cause'?'var(--eitza)':'var(--bechina)';
         const inHome=(h.e.ref||[]).includes(res.home);
         html+=`<div class="conn open" style="border-left:3px solid ${col}">
           <div class="row" style="direction:rtl"><span class="he pathlnk" data-go="${h.from}">${byId[h.from].he}</span>
-            <span class="op" style="color:${col};direction:ltr;margin:0 4px">${h.kind==='cause'?'—causes→':'≈aspect≈'}</span>
+            <span class="op" style="color:${col};direction:ltr;margin:0 4px">${UILANG==='he'?(h.kind==='cause'?'← גורם —':'≈ בחינה ≈'):(h.kind==='cause'?'—causes→':'≈aspect≈')}</span>
             <span class="he pathlnk" data-go="${h.to}">${byId[h.to].he}</span>
             <span class="w" style="direction:ltr">${h.hc.toFixed(2)}</span></div>
-          <div class="rf">${h.kind==='cause'?'eitza (cause→effect)':'bechina (reframe)'} · ${inHome?'in LM '+res.home.replace(':','·')+' — near-free':'crosses teaching — weighty'}${h.e.ref&&h.e.ref.length?' · '+h.e.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):''}${aiTag(h.e)}</div>
+          <div class="rf">${UILANG==='he'?(h.kind==='cause'?'עצה (סיבה←תוצאה)':'בחינה (ניסוח מחדש)'):(h.kind==='cause'?'eitza (cause→effect)':'bechina (reframe)')} · ${UILANG==='he'?(inHome?'ב־LM '+res.home.replace(':','·')+' — כמעט חינם':'חוצה תורה — כבד'):(inHome?'in LM '+res.home.replace(':','·')+' — near-free':'crosses teaching — weighty')}${h.e.ref&&h.e.ref.length?' · '+h.e.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):''}${aiTag(h.e)}</div>
           ${h.e.p?`<div class="proof" style="display:block">${h.e.p}…</div>`:'<div class="rf" style="color:var(--faint)">(no proof quote recorded for this edge)</div>'}</div>`;});
     }
     html+=`</div>`;});
@@ -919,37 +1221,43 @@ function drawProjectDetail(picks,res){
 function storedProofBlock(h,defCol){
   const f=byId[h.from]||{},t=byId[h.to]||{};
   const col=defCol||(h.kind==='cause'?'var(--eitza)':'var(--bechina)');
-  const op=h.kind==='cause'?'—causes→':'≈ aspect ≈';
-  const kindLbl=h.kind==='cause'?'eitza (cause→effect)':'bechina (aspect/reframe)';
+  const op=UILANG==='he'?(h.kind==='cause'?'← גורם —':'≈ בחינה ≈'):(h.kind==='cause'?'—causes→':'≈ aspect ≈');
+  const kindLbl=UILANG==='he'?(h.kind==='cause'?'עצה (סיבה←תוצאה)':'בחינה (בחינה/ניסוח מחדש)'):(h.kind==='cause'?'eitza (cause→effect)':'bechina (aspect/reframe)');
   return `<div class="conn open" style="border-left:3px solid ${col}">
     <div class="row" style="direction:rtl"><span class="he pathlnk" data-go="${h.from}">${f.he||h.from}</span>
       <span class="op" style="color:${col};direction:ltr;margin:0 4px">${op}</span>
       <span class="he pathlnk" data-go="${h.to}">${t.he||h.to}</span>
       ${h.hc!=null?`<span class="w" style="direction:ltr">${(+h.hc).toFixed(2)}</span>`:''}</div>
-    <div class="rf">${kindLbl}${h.ref&&h.ref.length?' · LM '+h.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):''} · stored provenance</div>
-    ${h.proof?`<div class="proof" style="display:block">${h.proof}…</div>`:'<div class="rf" style="color:var(--faint)">(no proof quote recorded)</div>'}</div>`;
+    <div class="rf">${kindLbl}${h.ref&&h.ref.length?' · LM '+h.ref.slice(0,3).map(r=>r.replace(':','·')).join(', '):''} · ${UILANG==='he'?'מקור שמור':'stored provenance'}</div>
+    ${h.proof?`<div class="proof" style="display:block">${h.proof}…</div>`:`<div class="rf" style="color:var(--faint)">${UILANG==='he'?'(לא נרשם ציטוט הוכחה)':'(no proof quote recorded)'}</div>`}</div>`;
 }
 function drawStoredProjectDetail(picks,res,seg,disagree){
   const D=$('detail'),p=(seg&&seg.project)||{},chainIds=res.chain;
-  const why=disagree
+  const why=UILANG==='he'
+    ?(disagree
+      ? `החישוב שבדף לא הסכים עם הקריאה המאומתת הזו (${disagree}), ולכן מוצג המקור השמור של החבילה — שדרה שאומתה צעד־צעד, וכל צומת נושא את הציטוט והמקור שלו.`
+      : `המושגים האלה אינם מוטלים בתוך הדף, ולכן זה מוצג מן המקור השמור של החבילה — שדרה שאומתה צעד־צעד, וכל צומת נושא את הציטוט והמקור שלו.`)
+    :(disagree
     ? `The in-page recompute disagreed with this verified reading (${disagree}), so the bundle's stored provenance is shown instead — a spine verified hop-by-hop, every junction carrying its source quote + reference.`
-    : `These concepts don't project in-page, so this is rendered from the bundle's stored provenance — a spine verified hop-by-hop, every junction carrying its source quote + reference.`;
-  let html=`<div class="dhead"><div class="he" style="font-size:20px">${res.home?'לקוטי מוהר"ן '+res.home.replace(':',' · '):'Cross-Torah chain'}</div>
-    <div class="meta">${picks.length} concept${picks.length!==1?'s':''} → an attested cause-effect chain</div>
-    <div style="margin-top:8px"><span style="display:inline-block;font-size:11px;padding:2px 9px;border-radius:8px;background:#3a2d16;border:1px solid var(--equation);color:var(--equation);font-weight:600">attested chain · stored provenance${disagree?' · live recompute disagreed ('+disagree+')':''}</span></div>
-    <div class="meta" style="margin-top:8px;line-height:1.7"><b>Total weight ${(res.cost||0).toFixed(2)}</b><br>
+    : `These concepts don't project in-page, so this is rendered from the bundle's stored provenance — a spine verified hop-by-hop, every junction carrying its source quote + reference.`);
+  let html=`<div class="dhead"><div class="he" style="font-size:20px">${res.home?'לקוטי מוהר"ן '+res.home.replace(':',' · '):(UILANG==='he'?'שרשרת חוצת־תורות':'Cross-Torah chain')}</div>
+    <div class="meta">${UILANG==='he'?`${picks.length} מושגים ← שרשרת סיבה־ותוצאה מתועדת`:`${picks.length} concept${picks.length!==1?'s':''} → an attested cause-effect chain`}</div>
+    <div style="margin-top:8px"><span style="display:inline-block;font-size:11px;padding:2px 9px;border-radius:8px;background:#3a2d16;border:1px solid var(--equation);color:var(--equation);font-weight:600">${UILANG==='he'?'שרשרת מתועדת · מקור שמור':'attested chain · stored provenance'}${disagree?(UILANG==='he'?' · חישוב חי לא הסכים ('+disagree+')':' · live recompute disagreed ('+disagree+')'):''}</span></div>
+    <div class="meta" style="margin-top:8px;line-height:1.7"><b>${UILANG==='he'?'משקל כולל':'Total weight'} ${(res.cost||0).toFixed(2)}</b><br>
       <span style="color:var(--faint)">${why}</span></div></div>`;
   picks.forEach((pid,i)=>{
     const m=(p.mappings||[]).find(mm=>mm.pick===pid)||(p.mappings||[])[i]||{};
     const anchor=m.anchor||chainIds[i];const pk=byId[pid]||{},an=byId[anchor]||{};
     const same=(pid===anchor)||m.kind==='self';
-    html+=`<div class="grp"><h3><span style="color:var(--accent);font-size:13px">${i+1}</span> map your pick onto the teaching</h3>`;
+    html+=`<div class="grp"><h3><span style="color:var(--accent);font-size:13px">${i+1}</span> ${UILANG==='he'?'מיפוי הבחירה שלך אל התורה':'map your pick onto the teaching'}</h3>`;
     html+=`<div class="conn" data-go="${anchor}"><div class="row"><span class="he" style="color:#37b3a4">${pk.he||''}</span>
-      <span class="arrowlbl" style="margin:0 6px">${same?'✓ appears in this teaching directly':'∥ maps onto → '}</span>
-      ${same?'':`<span class="he" style="color:var(--accent)">${an.he||''}</span> <span class="w">${m.kind||'aspect'} · ∥ ${(m.pcost||0).toFixed(2)}</span>`}</div>
+      <span class="arrowlbl" dir="auto" style="margin:0 6px">${same?(UILANG==='he'?'✓ מופיע בתורה זו ישירות':'✓ appears in this teaching directly'):(UILANG==='he'?'∥ ממופה אל ':'∥ maps onto → ')}</span>
+      ${same?'':`<span class="he" style="color:var(--accent)">${an.he||''}</span> <span class="w">${UILANG==='he'?(m.kind==='shared'?'משותף':'בחינה'):(m.kind||'aspect')} · ∥ ${(m.pcost||0).toFixed(2)}</span>`}</div>
       <div class="en">${an.gloss||''}</div></div>`;
     if(m.hops&&m.hops.length){
-      html+=`<div style="margin:4px 0 2px;font-size:11px;color:var(--bechina)">∥ mapping path · ${m.hops.length} aspect-link${m.hops.length!==1?'s':''} (stored)</div>`;
+      html+=UILANG==='he'
+        ?`<div style="margin:4px 0 2px;font-size:11px;color:var(--bechina)">∥ נתיב מיפוי · ${m.hops.length===1?'קשר בחינה אחד':m.hops.length+' קשרי בחינה'} (שמור)</div>`
+        :`<div style="margin:4px 0 2px;font-size:11px;color:var(--bechina)">∥ mapping path · ${m.hops.length} aspect-link${m.hops.length!==1?'s':''} (stored)</div>`;
       m.hops.forEach(h=>{html+=storedProofBlock({...h,kind:h.kind||'reframe'},'var(--bechina)');});
     }
     if(i<(p.links||[]).length){const l=p.links[i],hops=l.hops||[];
@@ -964,7 +1272,7 @@ function drawStoredProjectDetail(picks,res,seg,disagree){
 // weighted shortest path (cost = 1/weight so stronger, better-attested links are "closer")
 function runPath(){
   const a=idOf('a'),b=idOf('b');
-  if(!a||!b){setStatus('pick both concepts from the dropdown');return;}
+  if(!a||!b){setStatus(T('pick both concepts from the dropdown'));return;}
   lastAB={a,b};
   const prev={},cost={},pq=[{id:a,c:0}]; cost[a]=0;
   while(pq.length){
@@ -973,17 +1281,17 @@ function runPath(){
     (adj[id]?.all||[]).forEach(x=>{ const nc=c+1/Math.max(1,x.e.w);
       if(cost[x.o]===undefined||nc<cost[x.o]){cost[x.o]=nc;prev[x.o]={from:id,e:x.e};pq.push({id:x.o,c:nc});}});
   }
-  if(cost[b]===undefined){setStatus('no path found between them');drawTwoDetail(a,b,null);syncURL(false);return;}
+  if(cost[b]===undefined){setStatus(T('no path found between them'));drawTwoDetail(a,b,null);syncURL(false);return;}
   const chain=[],edges=[]; let cur=b;
   while(cur!==a){const p=prev[cur];chain.unshift(cur);edges.unshift(p.e);cur=p.from;} chain.unshift(a);
   view={path:chain,edges,nodes:chain,center:null};
   layoutPath(chain,edges); drawPathDetail(chain,edges); drawCrumbs();
-  setStatus(`path found — ${chain.length-1} steps`);
+  setStatus(`${T('path found')} — ${chain.length-1} ${T('steps')}`);
   syncURL(false);
 }
 function runCommon(){
   const a=idOf('a'),b=idOf('b');
-  if(!a||!b){setStatus('pick both concepts');return;}
+  if(!a||!b){setStatus(T('pick both concepts'));return;}
   lastAB={a,b};
   const na=new Set((adj[a]?.all||[]).map(x=>x.o)), nb=new Set((adj[b]?.all||[]).map(x=>x.o));
   const common=[...na].filter(x=>nb.has(x));
@@ -992,7 +1300,7 @@ function runCommon(){
     if((inA&&common.includes(e.s===a?e.t:e.s))||(inB&&common.includes(e.s===b?e.t:e.s)))es.push(e);});
   view={edges:es,nodes,path:null,center:null,twoFoci:[a,b]};
   layoutForce(nodes,es,[a,b]); drawCommonDetail(a,b,common); drawCrumbs();
-  setStatus(common.length?`${common.length} shared concept(s)`:'no direct common ground');
+  setStatus(common.length?(UILANG==='he'?`${common.length} מושגים משותפים`:`${common.length} shared concept(s)`):(UILANG==='he'?'אין מכנה משותף ישיר':'no direct common ground'));
   syncURL(false);
 }
 
@@ -1008,6 +1316,8 @@ function listResults(items,label,badges){
 // ---------- layouts ----------
 function stageWH(){const s=$('stage');return[s.clientWidth,s.clientHeight];}
 function resize(){const[W,H]=stageWH();cv.width=W*devicePixelRatio;cv.height=H*devicePixelRatio;
+  cam={x:0,y:0,k:1}; homeCam={x:0,y:0,k:1};  // every new layout is composed for the full stage
+  simGen++;                                 // any relax loop still in flight belongs to the old view
   ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);}
 addEventListener('resize',()=>{resize();redraw();});
 function nodeR(n){return n.id===view.center?15:6+Math.min(9,Math.sqrt((byId[n.id]?byId[n.id].deg:1))*1.3);}
@@ -1016,7 +1326,7 @@ function layoutEgo(center,nb){
   sim={};sim[center]={x:cx,y:cy,id:center,fixed:true};
   nb.forEach((x,i)=>{const a=(i/nb.length)*Math.PI*2-Math.PI/2;
     sim[x.o]={x:cx+Math.cos(a)*R*(0.7+0.55*Math.random()),y:cy+Math.sin(a)*R*(0.7+0.55*Math.random()),id:x.o};});
-  relax(60,view.edges);
+  relax(130,view.edges,{fit:true});
 }
 function layoutForce(nodes,edges,foci){
   resize();const[W,H]=stageWH();sim={};
@@ -1024,31 +1334,96 @@ function layoutForce(nodes,edges,foci){
     sim[id]={x:W/2+Math.cos(a)*Math.min(W,H)*0.34*(0.6+Math.random()*0.6),
              y:H/2+Math.sin(a)*Math.min(W,H)*0.34*(0.6+Math.random()*0.6),id};});
   if(foci){foci.forEach((f,i)=>{if(sim[f]){sim[f].x=W*(i?0.68:0.32);sim[f].y=H/2;sim[f].fixed=true;}});}
-  relax(120,edges);
+  relax(120,edges,{fit:true});
 }
 function layoutPath(chain,edges){
   resize();const[W,H]=stageWH();sim={};const n=chain.length,padX=W*0.12,gap=(W-2*padX)/Math.max(1,n-1);
   chain.forEach((id,i)=>{sim[id]={x:padX+gap*i,y:H/2+(i%2?38:-38)*Math.sin(i),id,fixed:true};});
   relax(0,edges);
 }
-function relax(iters,edges){
-  cancelAnimationFrame(anim);let it=0;
+// ---------- layout physics: ForceAtlas2 ----------
+// The previous loop pulled every edge toward a fixed 150px rest length, so it produced even
+// spacing BY CONSTRUCTION — whatever shape the graph actually had, the picture came out as a
+// uniform scatter. ForceAtlas2 (what the original sigma app ran) makes structure visible:
+//   repulsion  = rep * (deg_i)(deg_j) / d   — hubs clear room; their leaves pack in tight
+//   attraction = d / deg_source             — a hub does not drag its whole neighbourhood in
+//   gravity    = grav * deg * d             — "strong gravity": pull grows with distance, so
+//                                             nothing escapes to the far corners of the page
+// deg is degree WITHIN the drawn view, which is what the eye is actually reading.
+let FA2={rep:26, grav:0.055, attr:0.22, slow:2.2, cool:0.975, maxStep:26, pad:78,
+         collide:38, collideK:6,    // preventOverlap: keeps clusters dense but never overlapping
+         swing:3.0};                // swinging damping: brakes oscillation, not travel
+                                    // (measured: cuts drag shake ~85% with no layout cost)
+let homeCam={x:0,y:0,k:1};                 // the framed view; double-click returns here
+let simGen=0;                              // bumped whenever a layout rebuilds sim
+function relax(iters,edges,opt){
+  cancelAnimationFrame(anim);
+  opt=opt||{};
+  const ks=Object.keys(sim);
+  const deg={}; ks.forEach(k=>deg[k]=1);
+  (edges||[]).forEach(e=>{if(sim[e.s]&&sim[e.t]){deg[e.s]++;deg[e.t]++;}});
+  const[W,H]=stageWH(),cx=W/2,cy=H/2;
+  let it=0,temp=opt.temp||1;
+  const myGen=simGen;
   (function step(){
-    const ks=Object.keys(sim);
-    if(edges){edges.forEach(e=>{const A=sim[e.s],B=sim[e.t];if(!A||!B)return;
-      let dx=B.x-A.x,dy=B.y-A.y,d=Math.hypot(dx,dy)||1,f=(d-150)/d*0.02;
-      if(!A.fixed){A.x+=dx*f;A.y+=dy*f;}if(!B.fixed){B.x-=dx*f;B.y-=dy*f;}});}
-    for(let i=0;i<ks.length;i++)for(let j=i+1;j<ks.length;j++){const A=sim[ks[i]],B=sim[ks[j]];
-      let dx=B.x-A.x,dy=B.y-A.y,d=Math.hypot(dx,dy)||1;if(d<95){const f=(95-d)/d*0.5;
-        if(!B.fixed){B.x+=dx*f;B.y+=dy*f;}if(!A.fixed){A.x-=dx*f;A.y-=dy*f;}}}
+    if(myGen!==simGen)return;                     // a newer layout has taken over; stand down
+    if(opt.noCool&&!drag&&!pan)return;            // the drag that owned this loop is over
+    const fx={},fy={}; ks.forEach(k=>{fx[k]=0;fy[k]=0;});
+    for(let i=0;i<ks.length;i++)for(let j=i+1;j<ks.length;j++){
+      const a=ks[i],b=ks[j],A=sim[a],B=sim[b];
+      if(!A||!B)continue;
+      let dx=A.x-B.x,dy=A.y-B.y,d=Math.hypot(dx,dy);
+      if(d<0.5){dx=Math.random()-0.5;dy=Math.random()-0.5;d=0.5;}   // co-incident nodes need a nudge
+      let f=FA2.rep*deg[a]*deg[b]/d;
+      if(d<FA2.collide)f+=FA2.collideK*(FA2.collide-d);   // short range only: stops nodes touching
+      fx[a]+=dx/d*f; fy[a]+=dy/d*f; fx[b]-=dx/d*f; fy[b]-=dy/d*f;
+    }
+    (edges||[]).forEach(e=>{const A=sim[e.s],B=sim[e.t]; if(!A||!B)return;
+      const dx=B.x-A.x,dy=B.y-A.y,d=Math.hypot(dx,dy)||1;
+      const f=FA2.attr*d/deg[e.s];
+      fx[e.s]+=dx/d*f; fy[e.s]+=dy/d*f; fx[e.t]-=dx/d*f; fy[e.t]-=dy/d*f;});
+    ks.forEach(k=>{const A=sim[k]; if(!A)return; const dx=cx-A.x,dy=cy-A.y,d=Math.hypot(dx,dy)||1;
+      const f=FA2.grav*deg[k]*d;
+      fx[k]+=dx/d*f; fy[k]+=dy/d*f;});
+    ks.forEach(k=>{const A=sim[k]; if(!A||A.fixed)return;
+      let vx=fx[k]/FA2.slow,vy=fy[k]/FA2.slow;
+      // swinging = how far this frame's force turned against the last one. A node crossing the
+      // canvas has low swinging and keeps its speed; a node vibrating in place has high swinging
+      // and is damped, so it eases in instead of shimmering.
+      const sw=Math.hypot(fx[k]-(A.pfx||0),fy[k]-(A.pfy||0));
+      const damp=1/(1+FA2.swing*Math.sqrt(sw));
+      vx*=damp; vy*=damp; A.pfx=fx[k]; A.pfy=fy[k];
+      const m=Math.hypot(vx,vy)||1,lim=FA2.maxStep*temp;      // cooled step cap: cannot explode
+      if(m>lim){vx=vx/m*lim;vy=vy/m*lim;}
+      A.x+=vx; A.y+=vy;});
+    if(!opt.noCool)temp*=FA2.cool;
     redraw();
     if(it++<iters)anim=requestAnimationFrame(step);
+    else if(opt.fit)fitView();
   })();
+}
+// Frame whatever the physics produced. The forces decide the SHAPE; this decides the scale, so
+// a layout can neither collapse to a dot nor sprawl off the page — it is always sized to fill
+// the stage with a margin.
+function fitView(){
+  const ks=Object.keys(sim); if(!ks.length)return;
+  let x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
+  ks.forEach(k=>{const s=sim[k];
+    if(!isFinite(s.x)||!isFinite(s.y))return;
+    x0=Math.min(x0,s.x);x1=Math.max(x1,s.x);y0=Math.min(y0,s.y);y1=Math.max(y1,s.y);});
+  if(!isFinite(x0))return;
+  const[W,H]=stageWH(),p=FA2.pad;
+  const k=Math.max(0.3,Math.min(1.9,Math.min((W-2*p)/Math.max(1,x1-x0),(H-2*p)/Math.max(1,y1-y0))));
+  cam.k=k; cam.x=W/2-((x0+x1)/2)*k; cam.y=H/2-((y0+y1)/2)*k;
+  homeCam={x:cam.x,y:cam.y,k:cam.k};
+  redraw();
 }
 
 // ---------- render ----------
 function redraw(){
-  const[W,H]=stageWH();ctx.clearRect(0,0,W,H);
+  const[W,H]=stageWH();
+  ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);ctx.clearRect(0,0,W,H);
+  applyCam();                              // everything below draws in graph coords
   const pathSet=view.path?new Set(view.path):null;
   const pathEdge=new Set((view.path?view.edges:[]).map(e=>e.s+'|'+e.t+'|'+e.ty));
   (view.edges||[]).forEach(e=>{const A=sim[e.s],B=sim[e.t];if(!A||!B)return;
@@ -1059,9 +1434,11 @@ function redraw(){
     let alpha=hover&&hover!==e.s&&hover!==e.t?0.12:(onPath?0.95:0.5);
     if(spec)alpha*=0.5; ctx.globalAlpha=alpha;
     ctx.lineWidth=onPath?3.5:Math.min(5,1+Math.log2(e.w+1));
+    const hotE=edgeKey(e)===edgeKey(selEdge)||edgeKey(e)===edgeKey(hoverEdge);
+    if(hotE){ctx.globalAlpha=1;ctx.lineWidth+=3;ctx.shadowColor=ctx.strokeStyle;ctx.shadowBlur=14;}
     if(spec)ctx.setLineDash([3,4]); else if(e.via==='absence')ctx.setLineDash([4,3]);
     ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.stroke();
-    ctx.setLineDash([]);
+    ctx.setLineDash([]);ctx.shadowBlur=0;
     if(e.ty==='eitza'){drawArrow(A,B,onPath);}
     // hop price label (projection mode)
     if(view.hopCostOf){const hc=view.hopCostOf[e.s+'>'+e.t]??view.hopCostOf[e.t+'>'+e.s];
@@ -1078,14 +1455,20 @@ function redraw(){
     let P=sim[seq[0]];ctx.beginPath();if(P)ctx.moveTo(P.x,P.y);
     for(let k=1;k<seq.length;k++){const Q=sim[seq[k]];if(Q&&P)ctx.lineTo(Q.x,Q.y);P=Q||P;}
     ctx.stroke();ctx.restore();ctx.globalAlpha=1;
+    const HS=hoverSeg||selSeg;                       // pick out the one segment being inspected
+    if(HS&&HS.mp===mp){const P1=sim[seq[HS.k]],Q1=sim[seq[HS.k+1]];
+      if(P1&&Q1){ctx.save();ctx.setLineDash([5,5]);ctx.lineWidth=4.5;ctx.globalAlpha=1;
+        ctx.strokeStyle='#fff';ctx.shadowColor='#c9a4ff';ctx.shadowBlur=14;
+        ctx.beginPath();ctx.moveTo(P1.x,P1.y);ctx.lineTo(Q1.x,Q1.y);ctx.stroke();ctx.restore();}}
     const A=sim[seq[0]],B=sim[seq[seq.length-1]];if(!A||!B)return;
     const mx=(A.x+B.x)/2,my=(A.y+B.y)/2;
-    const t=info.kind==='self'?'appears here':info.kind==='shared'?('shared meaning · '+(info.pcost||0).toFixed(2))
-            :(info.nhops+' aspect'+(info.nhops>1?'s':'')+' · '+(info.pcost||0).toFixed(2));
+    const t=info.kind==='self'?T('appears here'):info.kind==='shared'?(UILANG==='he'?(info.pcost||0).toFixed(2)+' · '+T('shared meaning'):T('shared meaning')+' · '+(info.pcost||0).toFixed(2))
+            :(UILANG==='he'?(info.pcost||0).toFixed(2)+' · '+nAspects(info.nhops):nAspects(info.nhops)+' · '+(info.pcost||0).toFixed(2));
     ctx.font='10px sans-serif';const w=ctx.measureText(t).width+8;
     ctx.fillStyle='#0b0f14';ctx.fillRect(mx-w/2,my-7,w,14);
     ctx.fillStyle=info.kind==='shared'?'#aab3c0':'#b9a8ff';ctx.textAlign='center';ctx.fillText(t,mx,my+3);});}
   ctx.globalAlpha=1;
+  const labelQ=[];
   const anchors=view.anchors,aidx=view.anchorIdx||{},mapNodes=view.mapNodes,realOf=view.realOf||{},topIdx={};
   (view.topNodes||[]).forEach(t=>topIdx[t.id]=t.idx);
   Object.values(sim).forEach(s=>{const realId=realOf[s.id]||s.id;const n=byId[realId]||{};
@@ -1098,11 +1481,33 @@ function redraw(){
     ctx.fillStyle=isTop?'#37b3a4':isC?'#c9a4ff':isAnchor?'#c9a4ff':isBridge?'#ff7ac2':isMap?'#8a7bd8':onP?'#ff7ac2':isFoci?'#c9a4ff':(n.kind==='statement'?'#3a4553':'#2f6fb3');
     ctx.fill();
     if(big||hover===s.id){ctx.lineWidth=2;ctx.strokeStyle='#fff';ctx.stroke();}
+    if(s.pin){ctx.beginPath();ctx.arc(s.x,s.y,r+4.5,0,7);ctx.setLineDash([2,3]);
+      ctx.lineWidth=1.5;ctx.strokeStyle='#c9a4ff';ctx.stroke();ctx.setLineDash([]);}
     const badge=isTop?topIdx[s.id]:(isAnchor?aidx[s.id]:null);
     if(badge){ctx.fillStyle=isTop?'#04201d':'#12131a';ctx.font='700 12px sans-serif';ctx.textAlign='center';ctx.fillText(badge,s.x,s.y+4);}
-    ctx.fillStyle=big?'#fff':(onP?'#ffc7e6':'#c8d3df');ctx.textAlign='center';
+    labelQ.push({s,n,r,isC,isTop,big,onP,
+      pri:(isC?1e9:0)+(isTop||isAnchor?1e8:0)+(hover===s.id?1e7:0)+((byId[realId]||{}).deg||0)});
+  });
+  drawLabels(labelQ);
+}
+// Second pass: labels, most important first, each skipped if it would sit on one already drawn.
+// Hubs and anything you are pointing at always win; the crowd of leaf nodes yields.
+function drawLabels(Q){
+  const placed=[];
+  Q.sort((a,b)=>b.pri-a.pri).forEach(L=>{
+    const{s,n,r,isC,isTop,big,onP}=L;
     ctx.font=(isC?'600 18':big?'600 14':'13')+'px "Frank Ruhl Libre",serif';
-    ctx.fillText((n.he||'').slice(0,16)+(isTop?' (your pick)':''),s.x,s.y-r-6);
+    // 16 chars cut the tail off 52% of names with nothing to show for it. Show the name; if it
+    // really is too long, mark the cut so it reads as shortened rather than as a typo.
+    const full=n.he||'', t=(full.length>26?full.slice(0,26)+'\u2026':full)+(isTop?T(' (your pick)'):'');
+    if(!t)return;
+    const w=ctx.measureText(t).width, h=(isC?18:big?14:13);
+    const x0=s.x-w/2, y0=s.y-r-6-h, x1=s.x+w/2, y1=s.y-r-4;
+    const clash=placed.some(p=>x0<p.x1&&x1>p.x0&&y0<p.y1&&y1>p.y0);
+    if(clash&&!isC&&!isTop&&hover!==s.id)return;      // crowded out — the node itself still shows
+    placed.push({x0,y0,x1,y1});
+    ctx.fillStyle=big?'#fff':(onP?'#ffc7e6':'#c8d3df');ctx.textAlign='center';
+    ctx.fillText(t,s.x,s.y-r-6);
   });
 }
 function drawArrow(A,B,hot){const ang=Math.atan2(B.y-A.y,B.x-A.x),r=(byId[B.id]?12:8),
@@ -1111,25 +1516,382 @@ function drawArrow(A,B,hot){const ang=Math.atan2(B.y-A.y,B.x-A.x),r=(byId[B.id]?
   ctx.moveTo(ex,ey);ctx.lineTo(ex-Math.cos(ang-0.4)*s,ey-Math.sin(ang-0.4)*s);
   ctx.lineTo(ex-Math.cos(ang+0.4)*s,ey-Math.sin(ang+0.4)*s);ctx.closePath();ctx.fill();ctx.globalAlpha=1;}
 
+
+// ---------- the guide ----------
+// Built from MODES and from the loaded data, so it can never describe a version of the map that
+// is not the one in front of you — in particular the provenance paragraph, which differs between
+// the full dataset and a hand-vetted export.
+function buildHelp(){
+  const fmt=n=>n.toLocaleString('en-US');
+  const v=PROVCOUNT.v, a=PROVCOUNT.a, tot=PROVCOUNT.total;
+  if(UILANG==='he'){
+    const provenance = a
+      ? `<p>מתוך ${fmt(tot)} הקשרים כאן, <b>${fmt(v)}</b> מגובים בציטוט שמישהו בדק מול הטקסט.
+          שאר <b>${fmt(a)}</b> הוצעו על ידי בינה מלאכותית וטרם נבדקו — הם מצוירים מעומעמים
+          ומקווקוים. התייחס אליהם כהצעות, לא כמקורות.</p>`
+      : `<p>כל אחד ואחד מ־${fmt(tot)} הקשרים כאן מגובה בציטוט מן הטקסט שנבדק ביד.
+          אין בעותק הזה שום ניחוש מכונה.</p>`;
+    const modes = MODES.map(([k])=>{const M=HEM[k]||{};
+      return `<tr><td>${M.label||k}</td><td>${M.long||M.short||''}${M.eg?`<div class="eg">${M.eg}</div>`:''}</td></tr>`;}).join('');
+    $('help').innerHTML=`<button class="close" id="helpClose">סגור &nbsp;esc</button>
+      <h2>איך לקרוא את המפה</h2>
+      <p class="lead">מפה של המושגים בליקוטי מוהר"ן והקשרים שהטקסט עצמו מותח ביניהם:
+        ${fmt(NODES.length)} מושגים המחוברים ב־${fmt(EDGES.length)} קשרים מתוך
+        ${fmt(TORAHS.length)} תורות.</p>
+
+      <h3>מתחילים כאן</h3>
+      <p>הקלד מושג בתיבת החיפוש — עברית או אנגלית, שתיהן עובדות — ובחר אותו מהרשימה.
+        המפה מצטיירת מחדש סביבו, והחלונית מנגד מסבירה אותו ומונה את כל מה שהוא מתחבר אליו.
+        לחיצה על כל מושג במפה מעבירה אליו.</p>
+
+      <h3>שני היחסים שהכול בנוי מהם</h3>
+      <table>
+        <tr><td><span class="swatch" style="background:#5aa9ff"></span>בחינה</td>
+            <td>"X היא בחינת Y" — הדרך של הטקסט לומר שדבר זה הוא באמת פנים של דבר אחר.
+                <div class="eg"><span class="he">תפלה</span> היא בחינת <span class="he">מלכות</span>.</div></td></tr>
+        <tr><td><span class="swatch" style="background:#37d093"></span>עצה</td>
+            <td>"X מוביל אל Y" — כיוון של תנועה, ולכן הקווים האלה נושאים חץ.
+                <div class="eg">קרא אחורה — מה מביא לכאן; קדימה — מה זה מחולל.</div></td></tr>
+        <tr><td><span class="swatch" style="background:#ff5d5d"></span>מזיק</td>
+            <td>אותו קשר כשהוא הרסני. מקווקו פירושו שהוא פועל <i>דרך העדר</i> —
+                חסרונו של האחד פוגם באחר (<span class="he">פגם</span>).</td></tr>
+      </table>
+      <p class="eg">עיגול גדול יותר = מושג עם יותר קשרים. קו עבה יותר = קשר שמופיע יותר פעמים.</p>
+
+      <h3>קריאת קשר — החלק החשוב</h3>
+      <p><b>העבר את העכבר על כל קו</b> ותקבל את הציטוט מליקוטי מוהר"ן שמחבר בין שני
+        המושגים, עם המקור. <b>לחץ על הקו</b> והקשר כולו נפתח מנגד: שני המושגים, היחס
+        במילים, הציטוט המלא, וכל המקומות שבהם הוא מופיע. כך בודקים את המפה במקום להאמין לה.</p>
+      <div class="note">אם לקשר אין ציטוט מאחוריו, המפה אומרת זאת במילים במקום להציג
+        חלונית ריקה. ב<b>הטלת שרשרת</b>, קטע מקווקו בלי ציטוט פירושו ששני המושגים הותאמו
+        לפי משמעות משותפת ולא לפי דבר שהטקסט אומר — זו הסקה של המפה, והיא מסומנת.</div>
+
+      <h3>תנועה במפה</h3>
+      <table>
+        <tr><td><span class="key">גלילה</span></td><td>זום, לכיוון הסמן.</td></tr>
+        <tr><td><span class="key">גרירת רקע</span></td><td>הזזה.</td></tr>
+        <tr><td><span class="key">לחיצה כפולה</span></td><td>חזרה לתצוגה הממוסגרת.</td></tr>
+        <tr><td><span class="key">גרירת מושג</span></td><td>הזז אותו וקבע אותו שם — שאר הגרף
+          זורם סביב המיקום שבחרת. כך מפרידים קווים חופפים.</td></tr>
+        <tr><td><span class="key">Shift+לחיצה</span></td><td>שחרור מושג מקובע חזרה לפריסה.</td></tr>
+        <tr><td><span class="key">לחיצה על מושג</span></td><td>הפיכתו למרכז וציור מחדש סביבו.</td></tr>
+      </table>
+      <p class="eg">למיקום עצמו אין משמעות: הפריסה מקרבת מושגים מקושרים ומרחיקה מרכזים,
+        כך שאשכולות הם קבוצות שבאמת הולכות יחד בטקסט. ימין/שמאל ומעלה/מטה אינם אומרים דבר.</p>
+
+      <h3>המצבים</h3>
+      <table>${modes}</table>
+
+      <h3>מאין זה בא, ומה זה לא</h3>
+      ${provenance}
+      <p>שמות המושגים הם העברית של הטקסט. ההסברים למושגים באנגלית — לכ־${Math.round(100*NODES.filter(n=>(n.gloss||'').trim()).length/Math.max(1,NODES.length))}%
+        מהמושגים יש הסבר. את שפת הממשק מחליפים בכפתור <b>English</b> שלמעלה.</p>
+      <p class="eg">זהו עזר לימוד ואינדקס — לא פוסק ולא תחליף ללימוד הטקסט. כל קשר מפנה
+        למקורו, כדי שתוכל ללכת ולראות.</p>
+
+      <h3>המדריך המאויר</h3>
+      <p>גרסה ארוכה של דף זה, עם צילומי מסך ודוגמאות, נמצאת ברשת:
+        <a href="https://claude.ai/code/artifact/e7473ad3-926d-4ea1-a8cd-734c060f4f2a"
+           target="_blank" rel="noopener">המדריך למפת התורה</a>.
+        <span class="eg">הקישור דורש חיבור לאינטרנט — כל השאר עובד גם בלעדיו.</span></p>`;
+    $('helpClose').onclick=closeHelp;
+    return;
+  }
+  const provenance = a
+    ? `<p>Of the ${fmt(tot)} connections here, <b>${fmt(v)}</b> are backed by a quotation someone
+        checked against the text. The other <b>${fmt(a)}</b> were proposed by AI and have not been
+        reviewed — they are drawn faded and dashed. Treat them as suggestions, not as sources.</p>`
+    : `<p>Every one of the ${fmt(tot)} connections here is backed by a quotation from the text,
+        checked by hand. Nothing in this copy is machine-guessed.</p>`;
+  const modes = MODES.map(([k,label,short,long,eg])=>
+    `<tr><td>${label}</td><td>${long||short}${eg?`<div class="eg">${eg}</div>`:''}</td></tr>`).join('');
+  $('help').innerHTML=`<button class="close" id="helpClose">Close &nbsp;esc</button>
+    <h2>How to read this map</h2>
+    <p class="lead">A map of the concepts in Likutey Moharan and how the text connects them:
+      ${fmt(NODES.length)} concepts joined by ${fmt(EDGES.length)} connections drawn from
+      ${fmt(TORAHS.length)} teachings.</p>
+
+    <h3>Start here</h3>
+    <p>Type a concept into the search box on the left — Hebrew or English both work — and pick it
+      from the list. The map redraws around it, and the panel on the right explains it and lists
+      everything it connects to. Click any concept on the map to travel to it.</p>
+
+    <h3>The two relations everything is built from</h3>
+    <table>
+      <tr><td><span class="swatch" style="background:#5aa9ff"></span>bechina</td>
+          <td><b>aspect</b> — “X is an aspect of Y”. The text’s way of saying that this thing is
+              really a face of that thing.
+              <div class="eg"><span class="he">תפלה</span> is an aspect of <span class="he">מלכות</span>.</div></td></tr>
+      <tr><td><span class="swatch" style="background:#37d093"></span>eitza</td>
+          <td><b>advice</b> — “X leads to Y”. A direction of travel, so these lines carry an arrow.
+              <div class="eg">Read it forwards as effects, backwards as advice.</div></td></tr>
+      <tr><td><span class="swatch" style="background:#ff5d5d"></span>harms</td>
+          <td>The same connection turned destructive. Dashed means it works <i>through absence</i>
+              — the lack of the one damages the other (<span class="he">פגם</span>).</td></tr>
+    </table>
+    <p class="eg">A bigger circle means a concept with more connections. Line thickness is how many
+      times the connection is attested.</p>
+
+    <h3>Reading a connection — the important part</h3>
+    <p><b>Hover any line</b> and you get the quotation from Likutey Moharan that puts those two
+      concepts together, with its citation. <b>Click the line</b> and the whole connection opens on
+      the right: both concepts, the relation spelled out, the full quote, and every place it is
+      attested. This is how you check the map rather than trust it.</p>
+    <div class="note">If a connection has no quotation behind it, the map says so in those words
+      rather than showing you an empty panel. In <b>Project chain</b>, a dashed leg with no quote
+      means the two concepts were matched on shared meaning, not by anything the text states —
+      that is the map inferring, and it is marked.</div>
+
+    <h3>Moving around</h3>
+    <table>
+      <tr><td><span class="key">scroll</span></td><td>Zoom, toward the pointer.</td></tr>
+      <tr><td><span class="key">drag background</span></td><td>Pan.</td></tr>
+      <tr><td><span class="key">double-click</span></td><td>Back to the framed view.</td></tr>
+      <tr><td><span class="key">drag a node</span></td><td>Move it and pin it there — the rest of the
+        graph flows around your placement. Use it to pull apart lines that overlap.</td></tr>
+      <tr><td><span class="key">shift-click</span></td><td>Release a pinned node back to the layout.</td></tr>
+      <tr><td><span class="key">click a node</span></td><td>Make it the centre and redraw around it.</td></tr>
+    </table>
+    <p class="eg">Positions are not meaningful in themselves: the layout pulls connected concepts
+      together and pushes hubs apart, so clusters are groups that genuinely hang together in the
+      text. Left/right and up/down mean nothing.</p>
+
+    <h3>The modes</h3>
+    <table>${modes}</table>
+
+    <h3>Where this comes from, and what it is not</h3>
+    ${provenance}
+    <p>Concept names are the Hebrew of the text. The explanations are in English — about
+      ${Math.round(100*NODES.filter(n=>(n.gloss||'').trim()).length/Math.max(1,NODES.length))}%
+      of concepts have one. The interface is English only; there is no language switch.</p>
+    <p class="eg">This is a reading aid, not a posek and not a substitute for the text. Every
+      connection points back to its source so you can go and look.</p>
+
+    <h3>The illustrated guide</h3>
+    <p>A longer version of this page, with screenshots and worked examples, is online at
+      <a href="https://claude.ai/code/artifact/e7473ad3-926d-4ea1-a8cd-734c060f4f2a"
+         target="_blank" rel="noopener">the Torah Map guide</a>.
+      <span class="eg">That link needs an internet connection \u2014 everything above works without one.</span></p>`;
+  $('helpClose').onclick=closeHelp;
+}
+function openHelp(){buildHelp();$('helpwrap').classList.add('on');}
+function closeHelp(){$('helpwrap').classList.remove('on');}
+
+// ---------- node + edge picking ----------
+// Closest node under the cursor (both the hover and the click path used to inline this).
+function nodeAt(mx,my){
+  const[wx,wy]=toWorld(mx,my),slack=5/cam.k;   // 5 screen px of slack, whatever the zoom
+  let best=null,bd=Infinity;
+  Object.values(sim).forEach(s=>{const d=Math.hypot(s.x-wx,s.y-wy);
+    if(d<nodeR({id:s.id})+slack&&d<bd){bd=d;best=s;}});
+  return best;
+}
+// Keep the force loop alive while a node is being moved, so its neighbours drift out of the way
+// instead of the graph sitting frozen. relax() cancels its own frame, so re-calling is safe.
+function stir(n){relax(n||26,view.edges,{temp:0.22});}
+const DRAG_MIN=3;   // px of travel before a press counts as a drag rather than a click
+
+// ---------- edge picking ----------
+// Perpendicular distance from the cursor to segment AB. This is the whole reason a line
+// can be hovered: nodes are circles (cheap), edges are segments (this).
+function segDist(px,py,ax,ay,bx,by){
+  const dx=bx-ax,dy=by-ay,L=dx*dx+dy*dy;
+  let t=L?((px-ax)*dx+(py-ay)*dy)/L:0; t=t<0?0:t>1?1:t;
+  return Math.hypot(px-(ax+dx*t),py-(ay+dy*t));
+}
+const EDGE_TOL=7;                                       // px of slack — a 1px line is unclickable
+// Nearest drawn edge within EDGE_TOL. Mirrors redraw()'s skip rules exactly, so a line that
+// isn't on screen can never be picked.
+function edgeAt(mx,my){
+  const[wx,wy]=toWorld(mx,my);
+  let best=null,bd=EDGE_TOL/cam.k;               // ditto: constant slack on screen
+  (view.edges||[]).forEach(e=>{const A=sim[e.s],B=sim[e.t];
+    if(!A||!B||!edgePasses(e))return;
+    const d=segDist(wx,wy,A.x,A.y,B.x,B.y); if(d<bd){bd=d;best=e;}});
+  return best;
+}
+function edgeKey(e){return e?e.s+'|'+e.t+'|'+e.ty:null;}
+// The dashed spine in Project chain: one hoverable segment per aspect hop. segEdges[k] is the
+// real edge joining seq[k] to seq[k+1] (null when a pick maps to its anchor with no hop between).
+function mapSegAt(mx,my){
+  const[wx,wy]=toWorld(mx,my);
+  let best=null,bd=EDGE_TOL/cam.k;
+  (view.mapPaths||[]).forEach(mp=>{
+    for(let k=0;k+1<mp.seq.length;k++){
+      const A=sim[mp.seq[k]],B=sim[mp.seq[k+1]]; if(!A||!B)continue;
+      const d=segDist(wx,wy,A.x,A.y,B.x,B.y);
+      if(d<bd){bd=d;best={mp,k,e:(mp.segEdges||[])[k]||null};}
+    }});
+  return best;
+}
+function edgeLabel(e){return UILANG==='he'
+  ?(e.ty==='eitza'?'עצה':e.ty==='equation'?'משוואה':'בחינה')
+  :(e.ty==='eitza'?'Advice \u00b7 eitza':e.ty==='equation'?'Equation':'Aspect \u00b7 bechina');}
+// the relation in plain English, matching the wording the list rows already use
+function edgeVerb(e){
+  const harms=e.pol==='harms',lack=e.via==='absence';
+  if(UILANG==='he'){
+    if(e.ty==='eitza')return harms?(lack?'העדרו מביא':'מביא (נזק)'):'מוביל אל';
+    if(e.ty==='equation')return 'שווה ל';
+    return 'היא בחינת';
+  }
+  if(e.ty==='eitza')return harms?(lack?'its lack brings \u2192':'brings (harm) \u2192'):'leads to \u2192';
+  if(e.ty==='equation')return 'equals';
+  return 'is an aspect of \u2192';
+}
+
 // ---------- interaction ----------
+// Zoom about the pointer: the graph point under the cursor must not move, which is the whole
+// difference between zoom that feels right and zoom that feels like the map is running away.
+cv.addEventListener('wheel',ev=>{
+  ev.preventDefault();
+  const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
+  const k2=Math.max(0.2,Math.min(8,cam.k*Math.exp(-ev.deltaY*0.0015)));
+  cam.x=mx-(mx-cam.x)*(k2/cam.k); cam.y=my-(my-cam.y)*(k2/cam.k); cam.k=k2;
+  tip.style.display='none'; redraw();
+},{passive:false});
+// Double-click the background to get back to the composed view.
+cv.addEventListener('dblclick',ev=>{
+  const r=cv.getBoundingClientRect();
+  if(nodeAt(ev.clientX-r.left,ev.clientY-r.top))return;
+  cam={x:homeCam.x,y:homeCam.y,k:homeCam.k}; redraw();
+});
+// Press on a node to pick it up. Pinning happens on pick-up, not on release, so the node
+// stops being shoved around by the simulation the moment you take hold of it.
+cv.addEventListener('mousedown',ev=>{
+  const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
+  const hit=nodeAt(mx,my);
+  ev.preventDefault();                                  // no text-selection drag on the canvas
+  if(!hit){                                             // empty background: pan the view
+    pan={sx:mx,sy:my,cx:cam.x,cy:cam.y}; panned=false;
+    tip.style.display='none'; cv.style.cursor='grabbing'; return;}
+  const[wx,wy]=toWorld(mx,my);
+  drag={id:hit.id,ox:hit.x-wx,oy:hit.y-wy,sx:mx,sy:my,wasFixed:!!hit.fixed};
+  dragged=false; hit.fixed=true;                        // hold it still; only a real drag PINS it
+  tip.style.display='none'; cv.style.cursor='grabbing';
+  relax(1e9,view.edges,{temp:0.3,noCool:true});         // ONE loop for the whole drag
+});
+// Release wherever you dropped it — it stays there (that is the point) and everything else settles.
+addEventListener('mouseup',()=>{
+  if(pan){pan=null; cv.style.cursor='default'; return;}
+  if(!drag)return;
+  const s=sim[drag.id];
+  if(!dragged&&s)s.fixed=drag.wasFixed;                 // a click that never moved leaves nothing behind
+  drag=null; cv.style.cursor='default'; relax(90,view.edges,{temp:0.4});   // ease to a stop
+});
 cv.addEventListener('mousemove',ev=>{const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
-  let hit=null;Object.values(sim).forEach(s=>{if(Math.hypot(s.x-mx,s.y-my)<nodeR({id:s.id})+5)hit=s;});
+  if(pan){
+    if(Math.hypot(mx-pan.sx,my-pan.sy)>DRAG_MIN)panned=true;
+    if(panned){cam.x=pan.cx+(mx-pan.sx); cam.y=pan.cy+(my-pan.sy); redraw();}
+    return;}
+  if(drag){const s=sim[drag.id],[wx,wy]=toWorld(mx,my);
+    // a press only becomes a drag past DRAG_MIN px — below that it is still a click
+    if(!dragged&&Math.hypot(mx-drag.sx,my-drag.sy)>DRAG_MIN&&s){dragged=true;s.pin=true;}
+    if(dragged&&s){s.x=wx+drag.ox;s.y=wy+drag.oy;}     // the drag loop is already redrawing
+    return;}
+  const hit=nodeAt(mx,my);
   hover=hit?hit.id:null;
-  if(hit){const rid=(view.realOf&&view.realOf[hit.id])||hit.id;const n=byId[rid]||{};tip.style.display='block';tip.style.left=Math.min(mx+14,r.width-310)+'px';
-    tip.style.top=(my+14)+'px';tip.innerHTML=`<div class="he">${n.he||''}</div><div class="en">${n.gloss||'—'}</div>`;}
+  hoverEdge=hit?null:edgeAt(mx,my);            // a node under the cursor always beats a line
+  hoverSeg=(hit||hoverEdge)?null:mapSegAt(mx,my);   // ...and a real edge beats a dashed mapping line
+  if(hoverSeg&&hoverSeg.e)hoverEdge=hoverSeg.e;     // it has a real edge behind it: treat it as one
+  const show=(w,html)=>{tip.style.display='block';tip.className=w>320?'edge':'';
+    tip.style.left=Math.max(6,Math.min(mx+14,r.width-w))+'px';
+    tip.style.top=Math.max(6,Math.min(my+14,r.height-130))+'px';tip.innerHTML=html;};
+  if(hit){const rid=(view.realOf&&view.realOf[hit.id])||hit.id;const n=byId[rid]||{};
+    show(310,`<div class="he">${n.he||''}</div><div class="en">${n.gloss||'\u2014'}</div>`);}
+  else if(hoverSeg&&!hoverSeg.e){              // a mapping with no hop behind it — say why, don't go blank
+    const info=view.mapInfo[hoverSeg.mp.topId]||{};
+    show(430,`<div class="ty">${T('mapping · no aspect hop')}</div>
+      <div class="en" dir="auto">${UILANG==='he'
+        ? (info.kind==='self'
+          ? 'הבחירה הזו כבר מופיעה בתורה — היא־היא העוגן; לא היה צורך בגישור.'
+          : `הותאם לפי משמעות משותפת ולא לפי קשר בחינה רשום, בעלות ${(info.pcost||0).toFixed(2)}. אין ציטוט מאחורי צעד זה.`)
+        : (info.kind==='self'
+        ? 'This pick already appears in the teaching, so it <b>is</b> its own anchor \u2014 nothing had to be bridged.'
+        : `Matched by shared meaning rather than by a recorded aspect link, at a cost of ${(info.pcost||0).toFixed(2)}. No quote backs this step.`)}</div>`);}
+  else if(hoverEdge){const e=hoverEdge,a=byId[e.s]||{},b=byId[e.t]||{};
+    const rf=(e.ref||[]).slice(0,4).map(x=>'LM '+x.replace(':','\u00b7')).join(', ');
+    show(430,`<div class="ty">${edgeLabel(e)}${e.pol==='harms'?' \u00b7 harms':''}</div>
+      <div class="he">${a.he||''} <span class="vb">${edgeVerb(e)}</span> ${b.he||''}</div>
+      ${e.p?`<div class="pf">${e.p}</div>`:`<div class="en">${T('no quote recorded for this connection')}</div>`}
+      <div class="rf">${rf?rf+' \u00b7 ':''}${T('click the line for the full connection')}</div>`);}
   else tip.style.display='none';
-  cv.style.cursor=hit?'pointer':'default';redraw();});
+  cv.style.cursor=hit?'grab':((hoverEdge||hoverSeg)?'pointer':'default');redraw();});
 cv.addEventListener('click',ev=>{const r=cv.getBoundingClientRect(),mx=ev.clientX-r.left,my=ev.clientY-r.top;
-  let hit=null;Object.values(sim).forEach(s=>{if(Math.hypot(s.x-mx,s.y-my)<nodeR({id:s.id})+5)hit=s;});
-  if(hit){const rid=(view.realOf&&view.realOf[hit.id])||hit.id;
+  if(dragged){dragged=false;return;}            // the click that ends a drag must not navigate
+  if(panned){panned=false;return;}              // ditto for the click that ends a pan
+  const hit=nodeAt(mx,my);
+  if(hit&&ev.shiftKey){                         // shift-click hands a pinned node back to the physics
+    hit.fixed=(hit.id===view.center)||!!(view.twoFoci&&view.twoFoci.includes(hit.id));
+    hit.pin=false; stir(70); return;}
+  if(hit){ selEdge=null; selSeg=null;
+           const rid=(view.realOf&&view.realOf[hit.id])||hit.id;
            if(mode==='project'||mode==='trace')exploreConcept(rid);
            else if(['explore','aspects','advice','effects'].includes(mode))go(rid);
-           else drawDetail(rid); }});
+           else drawDetail(rid);
+           return; }
+  const e=edgeAt(mx,my);
+  const seg=e?null:mapSegAt(mx,my);
+  selEdge=e||(seg&&seg.e)||null;                // clicking bare stage clears the pin
+  selSeg=seg||null;
+  if(selEdge)drawEdgeDetail(selEdge,seg);
+  else if(seg)drawMapSegDetail(seg);
+  redraw();});
+
+// A mapping step with no aspect hop behind it. It still deserves an answer to "how did it get here?",
+// even when the honest answer is "nothing in the text links these — they were matched on meaning".
+function drawMapSegDetail(seg){
+  const info=view.mapInfo[seg.mp.topId]||{},D=$('detail');
+  const a=byId[(view.realOf||{})[seg.mp.seq[0]]]||{},b=byId[seg.mp.seq[seg.mp.seq.length-1]]||{};
+  D.innerHTML=`<div class="dhead">
+      <div><span class="etag" style="color:#7d8796;border-color:#7d879666">${T('mapping · no aspect hop')}</span></div>
+      <div class="epair"><span class="lnk" data-go="${a.id||''}">${a.he||''}</span>
+        <span class="op" dir="auto">${T('maps onto')}</span><span class="lnk" data-go="${b.id||''}">${b.he||''}</span></div>
+      <div class="meta">${UILANG==='he'?'עלות התאמה':'match cost'} ${(info.pcost||0).toFixed(2)}</div></div>
+    <div class="grp"><h3><i style="background:#7d8796"></i>${T('How this step was made')}</h3>
+      <div class="empty" dir="auto">${UILANG==='he'
+        ? (info.kind==='self'
+          ? 'הבחירה הזו כבר מופיעה בתורה, ולכן היא העוגן של עצמה — לא היה מה לגשר.'
+          : 'אין קשר בחינה רשום המחבר בין השניים. הם הותאמו לפי משמעות משותפת, ולכן אין ציטוט מן הטקסט מאחורי הצעד הזה.')
+        : (info.kind==='self'
+        ? 'This pick already appears in the teaching, so it is its own anchor \u2014 there was nothing to bridge.'
+        : 'No recorded aspect link joins these two. They were matched on shared meaning, so there is no quote from the text behind this step.')}</div></div>`;
+  D.scrollTop=0;
+  D.querySelectorAll('[data-go]').forEach(el=>{if(el.dataset.go)el.onclick=()=>{selSeg=null;exploreConcept(el.dataset.go);};});
+}
+
+// The connection itself, as a first-class thing you can read: what kind of link it is,
+// which two concepts it joins, and — the point — the quote from the text that attests it.
+function drawEdgeDetail(e,seg){
+  const a=byId[e.s]||{},b=byId[e.t]||{},D=$('detail');
+  const col=e.pol==='harms'?'#ff5d5d':(TYCOL[e.ty]||'#667'),refs=e.ref||[];
+  const info=seg?(view.mapInfo[seg.mp.topId]||{}):null;
+  const stepNote=seg?`<div class="meta" style="color:var(--accent)">${UILANG==='he'
+    ?`שלב ${seg.k+1} מתוך ${seg.mp.seq.length-1} בנתיב המקווקו מבחירה ${info.idx||seg.mp.idx} אל העוגן שלה`
+    :`step ${seg.k+1} of ${seg.mp.seq.length-1} on the dashed path from pick ${info.idx||seg.mp.idx} down to its anchor`}</div>`:'';
+  D.innerHTML=`<div class="dhead">${stepNote}
+      <div><span class="etag" style="color:${col};border-color:${col}66">${edgeLabel(e)}</span>${
+        e.pol==='harms'?`<span class="etag" style="color:#ff5d5d;border-color:#ff5d5d66">${T('harms')}${e.via==='absence'?' \u00b7 '+T('via פגם'):''}</span>`:''}</div>
+      <div class="epair"><span class="lnk" data-go="${a.id}">${a.he||''}</span>
+        <span class="op">${edgeVerb(e)}</span><span class="lnk" data-go="${b.id}">${b.he||''}</span></div>
+      <div class="meta">${UILANG==='he'?'מופיע':'attested'} ${nTimes(e.w)}${refs.length?` \u00b7 ${nSrc(refs.length)}`:''}</div>
+      ${refChips(refs)}</div>
+    <div class="grp"><h3><i style="background:${col}"></i>${T('Why these are connected')}</h3>
+      ${e.p?`<div class="eproof">${e.p}</div>`
+           :`<div class="empty">${T('No quote was recorded for this connection.')}</div>`}</div>
+    <div class="grp"><h3>${T('The two concepts')}</h3>
+      <div class="conn" data-go="${a.id}"><div class="row"><span class="he">${a.he||''}</span></div>
+        <div class="en">${a.gloss||''}</div></div>
+      <div class="conn" data-go="${b.id}"><div class="row"><span class="he">${b.he||''}</span></div>
+        <div class="en">${b.gloss||''}</div></div></div>`;
+  D.scrollTop=0; wireRefs(D);
+  D.querySelectorAll('[data-go]').forEach(el=>el.onclick=()=>{selEdge=null;exploreConcept(el.dataset.go);});
+}
 function drawCrumbs(){const c=$('crumbs');c.innerHTML='';
   // a standing return-ticket to the last projection, so exploring a concept never strands the user
   if(savedProjection&&mode!=='project'&&mode!=='trace'){const b=document.createElement('div');b.className='crumb';
     b.style.color='#12131a';b.style.background='var(--accent)';b.style.borderColor='var(--accent)';b.style.fontWeight='600';
-    b.textContent=savedProjection.fromTrace?'↩ back to story trace':'↩ back to projection';
+    b.textContent=savedProjection.fromTrace?(UILANG==='he'?'↪ חזרה למעקב הסיפור':'↩ back to story trace'):(UILANG==='he'?'↪ חזרה להטלה':'↩ back to projection');
     b.onclick=()=>{if(savedProjection.fromTrace){setMode('trace');selectTraceSegment(savedProjection.fromTrace.segIdx);}
       else{setMode('project');runProject();}};c.appendChild(b);}
   hist.slice(-6).forEach(h=>{const b=document.createElement('div');b.className='crumb';b.textContent=byId[h].he||h;
@@ -1141,42 +1903,43 @@ function setStatus(t){$('status').textContent=t;}
 function refChips(refs){return refs&&refs.length?`<div class="refs">${refs.slice(0,20).map(r=>`<span class="r" data-t="${r}">LM ${r.replace(':','·')}</span>`).join('')}</div>`:'';}
 function wireRefs(D){D.querySelectorAll('.refs .r').forEach(el=>el.onclick=()=>{setMode('torah');$('torahSel').value=el.dataset.t;runTorah(el.dataset.t);});}
 function head(n){return `<div class="dhead"><div class="he">${n.he||''}</div>
-   <div class="id">${n.id}${n.kind==='statement'?' · statement':''}</div>
-   <div class="gloss">${n.gloss||'<span style="color:var(--faint)">no gloss</span>'}</div>
-   <div class="meta">${n.deg} connection${n.deg!==1?'s':''}${n.refs&&n.refs.length?` · ${n.refs.length} source${n.refs.length!==1?'s':''}`:''}</div>
+   <div class="id">${n.id}${n.kind==='statement'?' · '+T('statement'):''}</div>
+   <div class="gloss">${n.gloss||`<span style="color:var(--faint)">${T('no gloss')}</span>`}</div>
+   <div class="meta">${nConn(n.deg)}${n.refs&&n.refs.length?` · ${nSrc(n.refs.length)}`:''}</div>
    ${refChips(n.refs)}</div>`;}
 function drawDetail(id){
   const n=byId[id],D=$('detail');
   const g={bechina:{out:[],in:[]},eitza:{out:[],in:[]},equation:{out:[],in:[]}};
   (adj[id]?.all||[]).forEach(a=>{(g[a.ty]||g.bechina)[a.dir].push(a);});
   let html=head(n);
-  [['eitza','Advice — eitza','var(--eitza)'],['bechina','Aspect — bechina','var(--bechina)'],['equation','Equation','var(--equation)']]
+  [['eitza',T('Advice — eitza'),'var(--eitza)'],['bechina',T('Aspect — bechina'),'var(--bechina)'],['equation',T('Equation'),'var(--equation)']]
    .forEach(([ty,label,col])=>{const outs=g[ty].out,ins=g[ty].in;if(!outs.length&&!ins.length)return;
     html+=`<div class="grp"><h3><i style="background:${col}"></i>${label} · ${outs.length+ins.length}</h3>`;
     const rows=(arr,dir)=>arr.map(a=>{const o=byId[a.o]||{};
       const harms=a.e.pol==='harms',lack=a.e.via==='absence';
-      const verb=ty==='eitza'?(harms?(lack?(dir==='out'?'its lack brings →':'← comes from lack of')
+      const verb=T(ty==='eitza'?(harms?(lack?(dir==='out'?'its lack brings →':'← comes from lack of')
                                           :(dir==='out'?'brings (harm) →':'← harmed by'))
                                     :(dir==='out'?'leads to →':'← comes from'))
-                             :(dir==='out'?'aspect of →':'← has aspect');
-      const badge=harms?`<span class="polh">${lack?'harms · פגם':'harms'}</span>`:'';
+                             :(dir==='out'?'aspect of →':'← has aspect'));
+      const badge=harms?`<span class="polh">${T(lack?'harms · פגם':'harms')}</span>`:'';
       return `<div class="conn" data-go="${o.id}"><div class="row"><span class="he">${o.he||''}</span>${badge}${aiTag(a.e)}<span class="w">×${a.e.w}</span></div>
-        <div class="en"><span class="arrowlbl">${verb}</span> ${o.gloss||''}</div>
+        <div class="en"><span class="arrowlbl" dir="auto">${verb}</span> ${o.gloss||''}</div>
         ${a.e.ref&&a.e.ref.length?`<div class="rf">LM ${a.e.ref.slice(0,4).map(r=>r.replace(':','·')).join(', ')}</div>`:''}
         ${a.e.p?`<div class="proof">${a.e.p}…</div>`:''}</div>`;}).join('');
     html+=rows(outs,'out')+rows(ins,'in')+`</div>`;});
-  if(!(adj[id]?.all||[]).length)html+=`<div class="grp"><div class="empty">No edges recorded yet.</div></div>`;
+  if(!(adj[id]?.all||[]).length)html+=`<div class="grp"><div class="empty">${T('No edges recorded yet.')}</div></div>`;
   D.innerHTML=html;D.scrollTop=0;wireRefs(D);
   D.querySelectorAll('.conn').forEach(c=>{c.onclick=ev=>{if(ev.target.classList.contains('he')){go(c.dataset.go);return;}c.classList.toggle('open');};
     c.ondblclick=()=>go(c.dataset.go);});
 }
 function drawPathDetail(chain,edges){
-  const D=$('detail');let html=`<div class="dhead"><div class="he" style="font-size:20px">${byId[chain[0]].he} → ${byId[chain[chain.length-1]].he}</div>
-    <div class="meta">${chain.length-1}-step chain · strongest-link path</div></div><div class="grp"><h3>The chain</h3><div class="pathrow">`;
+  const AR=UILANG==='he'?'←':'→';
+  const D=$('detail');let html=`<div class="dhead"><div class="he" style="font-size:20px">${byId[chain[0]].he} ${AR} ${byId[chain[chain.length-1]].he}</div>
+    <div class="meta">${UILANG==='he'?`שרשרת בת ${chain.length-1} צעדים · נתיב החוליה החזקה`:`${chain.length-1}-step chain · strongest-link path`}</div></div><div class="grp"><h3>${T('The chain')}</h3><div class="pathrow">`;
   chain.forEach((id,i)=>{html+=`<span class="lnk" data-go="${id}">${byId[id].he}</span>`;
-    if(i<edges.length){const e=edges[i];html+=`<span class="op">—${e.ty==='eitza'?'leads to':'aspect'}→</span>`;}});
+    if(i<edges.length){const e=edges[i];html+=UILANG==='he'?`<span class="op" dir="rtl">— ${T(e.ty==='eitza'?'leads to':'aspect')} ←</span>`:`<span class="op">—${e.ty==='eitza'?'leads to':'aspect'}→</span>`;}});
   html+='</div></div>';
-  edges.forEach((e,i)=>{html+=`<div class="grp"><h3><i style="background:${TYCOL[e.ty]}"></i>${byId[chain[i]].he} → ${byId[chain[i+1]].he}${aiTag(e)}</h3>
+  edges.forEach((e,i)=>{html+=`<div class="grp"><h3><i style="background:${TYCOL[e.ty]}"></i><span dir="auto">${byId[chain[i]].he} ${AR} ${byId[chain[i+1]].he}</span>${aiTag(e)}</h3>
     <div class="conn open"><div class="en">${byId[chain[i]].gloss||''}</div>
     ${e.ref&&e.ref.length?`<div class="rf">LM ${e.ref.slice(0,4).map(r=>r.replace(':','·')).join(', ')}</div>`:''}
     ${e.p?`<div class="proof">${e.p}…</div>`:''}</div></div>`;});
@@ -1185,21 +1948,21 @@ function drawPathDetail(chain,edges){
 }
 function drawCommonDetail(a,b,common){
   const D=$('detail');let html=`<div class="dhead"><div class="he" style="font-size:20px">${byId[a].he} ∩ ${byId[b].he}</div>
-    <div class="meta">${common.length} shared concept${common.length!==1?'s':''}</div></div>`;
-  html+=`<div class="grp"><h3>Common ground</h3>`;
-  if(!common.length)html+=`<div class="empty">No directly shared concepts. Try Path to find an indirect chain.</div>`;
+    <div class="meta">${UILANG==='he'?(common.length===1?'מושג משותף אחד':common.length+' מושגים משותפים'):common.length+' shared concept'+(common.length!==1?'s':'')}</div></div>`;
+  html+=`<div class="grp"><h3>${T('Common ground')}</h3>`;
+  if(!common.length)html+=`<div class="empty">${T('No directly shared concepts. Try Path to find an indirect chain.')}</div>`;
   common.map(id=>byId[id]).sort((x,y)=>y.deg-x.deg).forEach(o=>{html+=`<div class="conn" data-go="${o.id}">
-    <div class="row"><span class="he">${o.he||''}</span><span class="w">deg ${o.deg}</span></div><div class="en">${o.gloss||''}</div></div>`;});
+    <div class="row"><span class="he">${o.he||''}</span><span class="w">${T('deg')} ${o.deg}</span></div><div class="en">${o.gloss||''}</div></div>`;});
   html+='</div>';D.innerHTML=html;D.scrollTop=0;
   D.querySelectorAll('.conn').forEach(c=>c.onclick=()=>{setMode('explore');go(c.dataset.go);});
 }
-function drawTwoDetail(a,b){$('detail').innerHTML=`<div class="dhead"><div class="he" style="font-size:20px">${byId[a].he} … ${byId[b].he}</div><div class="meta">no path found</div></div>`;}
+function drawTwoDetail(a,b){$('detail').innerHTML=`<div class="dhead"><div class="he" style="font-size:20px">${byId[a].he} … ${byId[b].he}</div><div class="meta">${T('no path found')}</div></div>`;}
 function drawTorahDetail(ref,es,ns){
   const D=$('detail');const be=es.filter(e=>e.ty==='bechina').length,ei=es.filter(e=>e.ty==='eitza').length;
   let html=`<div class="dhead"><div class="he" style="font-size:22px">לקוטי מוהר"ן ${ref.replace(':',' · ')}</div>
-    <div class="meta">${ns.size} concepts · ${ei} advice · ${be} aspect edges</div></div><div class="grp"><h3>Concepts in this teaching</h3>`;
+    <div class="meta">${ns.size} ${T('concepts')} · ${ei} ${T('advice')} · ${be} ${T('aspect edges')}</div></div><div class="grp"><h3>${T('Concepts in this teaching')}</h3>`;
   [...ns].map(id=>byId[id]).filter(Boolean).sort((x,y)=>y.deg-x.deg).forEach(o=>{html+=`<div class="conn" data-go="${o.id}">
-    <div class="row"><span class="he">${o.he||''}</span><span class="w">deg ${o.deg}</span></div><div class="en">${o.gloss||''}</div></div>`;});
+    <div class="row"><span class="he">${o.he||''}</span><span class="w">${T('deg')} ${o.deg}</span></div><div class="en">${o.gloss||''}</div></div>`;});
   html+='</div>';D.innerHTML=html;D.scrollTop=0;
   D.querySelectorAll('.conn').forEach(c=>c.onclick=()=>{setMode('explore');go(c.dataset.go);});
 }

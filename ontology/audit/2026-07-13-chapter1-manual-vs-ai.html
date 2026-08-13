@@ -1,0 +1,1900 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Torah Map — Chapter 1 Manual vs AI Audit (Human Review)</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg:#10131a; --panel:#181d27; --panel2:#222938; --ink:#edf1f8; --muted:#a7b2c4;
+  --line:#334055; --green:#5ee1a7; --amber:#f5c56b; --red:#ff817d; --blue:#88b8ff;
+}
+* { box-sizing:border-box }
+body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.55 system-ui,sans-serif }
+main { max-width:1180px; margin:auto; padding:34px 18px 70px }
+h1 { margin:0 0 8px; font-size:clamp(28px,4vw,42px) }
+.lead, .notice p { color:var(--muted); max-width:920px }
+.notice { background:#1a2230; border-left:4px solid var(--blue); padding:14px 16px; border-radius:8px; margin:20px 0 }
+.stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin:22px 0 }
+.stat { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px }
+.stat strong { display:block; font-size:28px }
+.stat span { color:var(--muted); font-size:13px }
+.tabs { display:flex; flex-wrap:wrap; gap:8px; position:sticky; top:0; background:#10131af2; padding:12px 0; z-index:2; border-bottom:1px solid var(--line) }
+.tabs button { border:1px solid var(--line); background:var(--panel2); color:var(--ink); border-radius:999px; padding:8px 12px; cursor:pointer }
+.tabs button.on { outline:2px solid var(--blue) }
+.panel { display:none }.panel.on { display:block }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px; margin:14px 0 }
+.card header { display:flex; gap:8px; flex-wrap:wrap; align-items:center }
+.num { color:var(--muted); font-weight:700; width:34px }
+.tag { font-size:12px; font-weight:700; border-radius:999px; padding:2px 9px; text-transform:capitalize }
+.ai_only { background:#3a2a10; color:#ffe6b0 }
+.manual_only { background:#1f3558; color:#d9ebff }
+.overlap { background:#174033; color:#d7ffef }
+.flagged { background:#4a2328; color:#ffd7d5 }
+.concept { background:#35285d; color:#ece2ff }
+.ok { background:#174033; color:#d7ffef }
+.warn { background:#664d1b; color:#fff0c9 }
+.bad { background:#4a2328; color:#ffd7d5 }
+.meta { color:var(--muted); font-size:13px }
+.relation { display:grid; grid-template-columns:1fr 34px 1fr; gap:10px; margin:14px 0 }
+.relation > div { background:var(--panel2); border-radius:8px; padding:10px }
+.relation b { font-size:18px; display:block }
+.arrow { text-align:center; color:var(--green); font-size:26px }
+blockquote { margin:0; padding:12px 14px; border-right:4px solid var(--blue); background:#141a24; font-size:18px; line-height:1.75 }
+.note { color:var(--muted); font-size:14px; margin:8px 0 0 }
+</style></head><body><main>
+<h1>Chapter 1 — Manual vs AI (Human-Reviewed)</h1>
+<p class="lead">Likutey Moharan <b>Part I, Torah 1</b> only (<code>book=lm1</code>, <code>torah=1</code>). Proof completeness was read by a human — not by Hebrew letter matching. Hashem spelled as ה׳, השם, יתברך, הקדוש־ברוך־הוא counts; so do וי״ו/ואו variants when the proof clearly names both sides of the link.</p>
+<div class="notice">
+  <p><b>Important correction from the prior report.</b> The old page used skeleton matching and falsely flagged many good proofs (including Divine-Name variants). It also accidentally mixed in <b>141 edges from LM II:1</b> because both share <code>torah=1</code>. This version filters to <code>lm1</code> only.</p>
+  <p><b>Proof verdicts.</b> <i>Complete</i> = both endpoints legible in the stored quote. <i>Context dependent</i> = one side is only via pronoun/כנ״ל/prior sentence. <i>Incomplete</i> = even on reading, an endpoint is genuinely absent.</p>
+</div>
+<div class="stats">
+  <div class="stat"><strong>69</strong><span>manual edges</span></div>
+  <div class="stat"><strong>58</strong><span>AI edges (lm1 only)</span></div>
+  <div class="stat"><strong>13</strong><span>overlap (type+surfaces)</span></div>
+  <div class="stat"><strong>45</strong><span>AI-only connections</span></div>
+  <div class="stat"><strong>56</strong><span>manual-only (strict)</span></div>
+  <div class="stat"><strong>67</strong><span>manual proofs complete</span></div>
+  <div class="stat"><strong>2</strong><span>manual flagged on reading</span></div>
+  <div class="stat"><strong>48</strong><span>AI proofs complete</span></div>
+  <div class="stat"><strong>10</strong><span>AI flagged on reading</span></div>
+  <div class="stat"><strong>32</strong><span>AI-only concept surfaces</span></div>
+</div>
+<div class="tabs" id="tabs">
+  <button class="on" data-panel="overview">Overview</button>
+  <button data-panel="ai_only">AI only (45)</button>
+  <button data-panel="manual_only">Manual only (56)</button>
+  <button data-panel="overlap">Overlap (13)</button>
+  <button data-panel="flagged_manual">Manual proof flags (2)</button>
+  <button data-panel="flagged_ai">AI proof flags (10)</button>
+  <button data-panel="concepts">AI-only concepts (32)</button>
+</div>
+<section class="panel on" id="overview">
+  <h2>What I actually read</h2>
+  <ul>
+    <li>Manual: 67 complete · 1 context-dependent · 1 incomplete</li>
+    <li>AI (lm1): 48 complete · 9 context-dependent · 1 incomplete</li>
+    <li>The automated report claimed 8 manual proof gaps and 87 AI gaps — that was wrong. On human reading: 2 manual and 10 AI edges need attention.</li>
+    <li>Example false positive the code made: <code>occ:legacy:3265</code> and <code>occ:ai:lm1_1_0_9:6</code> — Hashem appears as הַקָּדוֹשׁ־בָּרוּךְ־הוּא / הַשֵּׁם יִתְבָּרַךְ, which is obviously the same node.</li>
+  </ul>
+</section>
+<section class="panel" id="ai_only"><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">001</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_10:7</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַשֵּׂכֶל</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חֵי&quot;ת</b></div>
+  </div>
+  <blockquote dir="rtl">לְקַבֵּל מִן הַשֵּׂכֶל, שֶׁהוּא בְּחִינַת חֵי&quot;ת</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">002</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_6:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַתּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">יַעֲלַת חֵן</b></div>
+  </div>
+  <blockquote dir="rtl">וְעַל כֵּן נִקְרֵאת הַתּוֹרָה יַעֲלַת חֵן (משלי ה׳:י״ט)</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">003</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_9:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">היצר הרע המתלבש עצמו במצוות</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">צוציתא דנורא חיורתא</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי מִתְּחִלָּה הַיֵּצֶר הָרָע מִתְלַבֵּשׁ עַצְמוֹ בְּמִצְווֹת וּמַטְעֶה אֶת הָאָדָם כְּאִלּוּ מְסִיתוֹ לַעֲשוֹת מִצְוָה. וְזֶהוּ בְּחִינַת צוּצִיתָא דְּנוּרָא חִוַּרְתָּא</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">004</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_0:2</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">התורה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">אַיֶּלֶת אֲהָבִים וְיַעֲלַת חֵן</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי הַתּוֹרָה נִקְרֵאת (משלי ה׳:י״ט): אַיֶּלֶת אֲהָבִים וְיַעֲלַת חֵן</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">005</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_9:7</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">התורה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">וי&quot;ו</b></div>
+  </div>
+  <blockquote dir="rtl">וְהַתּוֹרָה הִיא בְּחִינַת וָי&quot;ו, כִּי הַלּוּחוֹת אָרְכָּן וָי&quot;ו וְרָחְבָּן וָי&quot;ו</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">006</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_6:6</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חֵן</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">ת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת ת, הַיְנוּ עַל־יְדֵי שֶׁנִּתְחַבְּרוּ וְנִתְקַשְּׁרוּ הַחֵי&quot;ת וְהַנּוּ&quot;ן וְנַעֲשָׂה בְּחִינַת &quot;חֵן&quot;, עַל־יְדֵי־זֶה נַעֲשֶׂה בְּחִינַת תָּי&quot;ו</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">007</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_5:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חָכְמָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">אוֹת ח</b></div>
+  </div>
+  <blockquote dir="rtl">חִיּוּת מִן הַחָכְמָה, שֶׁהִיא בְּחִינַת ח</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="context_dependent">
+  <header>
+    <span class="num">008</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_10:2</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יַעֲקֹב אִישׁ תָּם</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הַשֵּׂכֶל</b></div>
+  </div>
+  <blockquote dir="rtl">שֶׁהוּא בְּחִינַת הַשֵּׂכֶל כַּנַּ&quot;ל</blockquote>
+  <p class="note"><b>Human review:</b> Proof is שֶׁהוּא בְּחִינַת הַשֵּׂכֶל כַּנַ״ל — יַעֲקֹב אִישׁ תָּם is not in the quote.</p>
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">009</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_3:4</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">מַלְכוּת</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">לְבָנָה</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת לְבָנָה, כִּי הַלְּבָנָה אֵין לָהּ אוֹר מֵעַצְמָהּ כִּי אִם מַה שֶּׁמְּקַבֶּלֶת מֵהַשֶּׁמֶשׁ</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">010</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_5:2</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">מַלְכוּת</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">אוֹת נ</b></div>
+  </div>
+  <blockquote dir="rtl">וַאֲזַי מְקַבֶּלֶת הַמַּלְכוּת, שֶׁהִיא בְּחִינַת נ</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">011</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_4:7</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">מלכות</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">עניה ודלה דלית לה מגרמה כלום</b></div>
+  </div>
+  <blockquote dir="rtl">בְּחִינַת מַלְכוּת, שֶׁהִיא בְּחִינַת עֲנִיָּה וְדַלָּה דְּלֵית לָהּ מִגַּרְמָהּ כְּלוּם, כִּי אִם מַה שֶּׁמְּקַבֶּלֶת מֵחָכְמָה</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">012</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_4:10</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">מלכות דסטרא אחרא</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">לא יחפץ כסיל בתבונה</b></div>
+  </div>
+  <blockquote dir="rtl">בְּחִינַת מַלְכוּת דְּסִטְרָא־אָחֳרָא, שֶׁאֵינָהּ חֲפֵצָה בְּחָכְמָה וָשֵׂכֶל, בְּחִינַת לֹא יַחְפֹּץ כְּסִיל בִּתְבוּנָה וְכוּ&#x27; כַּנַּ&quot;ל</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">013</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_7:0</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">נחת</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חן</b></div>
+  </div>
+  <blockquote dir="rtl">נַחַת דַּיְקָא, הַיְנוּ בְּחִינַת חֵן הַנַּ&quot;ל וְהַת הַנַּ&quot;ל</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">014</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_7:1</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">נחת</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">ת</b></div>
+  </div>
+  <blockquote dir="rtl">נַחַת דַּיְקָא, הַיְנוּ בְּחִינַת חֵן הַנַּ&quot;ל וְהַת הַנַּ&quot;ל</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">015</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_2:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">שכל</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">שמש</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת שֶׁמֶשׁ, כִּי הַשֵּׂכֶל הוּא מֵאִיר לוֹ בְּכָל דְּרָכָיו כְּמוֹ הַשֶּׁמֶשׁ</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="context_dependent">
+  <header>
+    <span class="num">016</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_2:4</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">שמש</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">אורח צדיקים כאור נוגה</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת: וְאֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ הוֹלֵךְ וָאוֹר עַד נְכוֹן הַיּוֹם</blockquote>
+  <p class="note"><b>Human review:</b> Only the verse אֹרַח צַדִּיקִים… is quoted; שֶׁמֶשׁ is carried by כַּנַ״ל from the prior sentence.</p>
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">017</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_10:1</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תְמִימֵי דָרֶךְ</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">יַעֲקֹב אִישׁ תָּם</b></div>
+  </div>
+  <blockquote dir="rtl">תְמִימֵי דָרֶךְ בְּחִינַת (בראשית כ״ה:כ״ז): יַעֲקֹב אִישׁ תָּם</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">018</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_6:8</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַחֵן</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חֲקִיקַת מָקוֹם בְּלֵב הַמִּתְבַּקֵּשׁ</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי עַל־יְדֵי הַחֵן נֶחְקָק וְנִרְשָׁם מָקוֹם בְּלֵב הַמִּתְבַּקֵּשׁ</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="context_dependent">
+  <header>
+    <span class="num">019</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_8:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַשֵּׂכֶל</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הִתְקָרְבוּת לְהַשֵּׁם יִתְבָּרַךְ</b></div>
+  </div>
+  <blockquote dir="rtl">וּמְקָרֵב אוֹתוֹ לְהַשֵּׁם יִתְבָּרַךְ</blockquote>
+  <p class="note"><b>Human review:</b> הַשֵּׁם יִתְבָּרַךְ is explicit on the target side; השכל is the unstated subject of מְקָרֵב.</p>
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">020</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_10:4</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַתּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">לְהִסְתַּכֵּל עַל הַשֵּׂכֶל שֶׁיֵּשׁ בְּכָל דָּבָר</b></div>
+  </div>
+  <blockquote dir="rtl">לִזְכּוֹת לְהִסְתַּכֵּל עַל הַשֵּׂכֶל שֶׁיֵּשׁ בְּכָל דָּבָר... זֶה זוֹכִין עַל־יְדֵי הַתּוֹרָה</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">021</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_6:1</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַתּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חֵן</b></div>
+  </div>
+  <blockquote dir="rtl">אֲבָל עַל־יְדֵי הַתּוֹרָה, שֶׁעַל־יְדֵי־זֶה נִתְחַבְּרִין וְנִתְקַשְּׁרִין הַנ וְהַח כַּנַּ&quot;ל וְנַעֲשֶׂה חֵן</blockquote>
+  <p class="note"><b>Human review:</b> הַתּוֹרָה and חֵן both explicit, with the nun-chet join spelled out.</p>
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">022</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_6:4</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַתּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">דִּבְרֵי חֵן</b></div>
+  </div>
+  <blockquote dir="rtl">וַאֲזַי זוֹכֶה שֶׁדְּבָרָיו הֵם דִּבְרֵי חֵן</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">023</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_7:4</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">השכל</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חן</b></div>
+  </div>
+  <blockquote dir="rtl">וְעַל כֵּן יַעֲקֹב, שֶׁהוּא בְּחִינַת הַשֵּׂכֶל כַּנַּ&quot;ל, עַל כֵּן זָכָה לְחֵן, כְּמוֹ שֶׁכָּתוּב: כִּי חַנַּנִי אֱלֹקִים וְכוּ&#x27;</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">024</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_0:0</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">התורה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">קבלת כל התפלות והבקשות</b></div>
+  </div>
+  <blockquote dir="rtl">דַּע כִּי עַל יְדֵי הַתּוֹרָה נִתְקַבְּלִים כָּל הַתְּפִלּוֹת וְכָל הַבַּקָּשׁוֹת</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">025</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_0:1</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">התורה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">עליית החן והחשיבות של ישראל</b></div>
+  </div>
+  <blockquote dir="rtl">אֲבָל עַל־יְדֵי הַתּוֹרָה נִתְעַלֶּה הַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="context_dependent">
+  <header>
+    <span class="num">026</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_0:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">התורה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חן על לומדיה</b></div>
+  </div>
+  <blockquote dir="rtl">שֶׁמַּעֲלָה חֵן עַל לוֹמְדֶיהָ (ערובין נד:)</blockquote>
+  <p class="note"><b>Human review:</b> Proof is only שֶׁמַּעֲלָה חֵן עַל לוֹמְדֶיהָ — חֵן is there, but הַתּוֹרָה is the prior sentence&#x27;s subject, not in this snippet.</p>
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">027</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_9:5</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">התורה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הכנעת היצר הרע</b></div>
+  </div>
+  <blockquote dir="rtl">הַיְנוּ שֶׁעִקַּר הַכְנָעָתוֹ שֶׁל הַיֵּצֶר־הָרָע הוּא עַל־יְדֵי הַתּוֹרָה</blockquote>
+  <p class="note"><b>Human review:</b> הַתּוֹרָה and הַיֵּצֶר־הָרָע both in the causal line.</p>
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">028</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_6:2</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חִבּוּר הַנּוּ&quot;ן וְהַחֵי&quot;ת</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חֵן</b></div>
+  </div>
+  <blockquote dir="rtl">עַל־יְדֵי שֶׁנִּתְחַבְּרוּ וְנִתְקַשְּׁרוּ הַחֵי&quot;ת וְהַנּוּ&quot;ן וְנַעֲשָׂה בְּחִינַת &quot;חֵן&quot;</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">029</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_10:9</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חֵן</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">נִתְקַבְּלִים דְּבָרָיו</b></div>
+  </div>
+  <blockquote dir="rtl">וַאֲזַי נַעֲשֶׂה חֵן, וְנִתְקַבְּלִים דְּבָרָיו כַּנַּ&quot;ל</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">030</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_10:10</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חֵן</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">נִתְעַלֶּה הַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל</b></div>
+  </div>
+  <blockquote dir="rtl">וַאֲזַי נִתְעַלֶּה הַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="context_dependent">
+  <header>
+    <span class="num">031</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_6:0</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חֵן</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">קבלת כל התפילות והבקשות</b></div>
+  </div>
+  <blockquote dir="rtl">וְעַל־יְדֵי־זֶה נִתְקַבְּלִים כָּל הַתְּפִלּוֹת וְהַבַּקָּשׁוֹת</blockquote>
+  <p class="note"><b>Human review:</b> תְּפִלּוֹת/בַּקָּשׁוֹת appear, but חֵן is only in the prior clause (&#x27;עַל יְדֵי זֶה&#x27;).</p>
+</article><article class="card" data-badge="ai_only" data-proof="context_dependent">
+  <header>
+    <span class="num">032</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_5:6</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">קִימַת מַלְכוּת דִּקְדֻשָּׁה (כְּשֶׁזֶּה קָם)</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">נוֹפֵל וְנִתְבַּטֵּל מַלְכוּת הָרְשָׁעָה</b></div>
+  </div>
+  <blockquote dir="rtl">וּכְשֶׁזֶּה קָם, זֶה נוֹפֵל, וַאֲזַי נוֹפֵל וְנִתְבַּטֵּל מַלְכוּת הָרְשָׁעָה</blockquote>
+  <p class="note"><b>Human review:</b> מַלְכוּת דִּקְדֻשָּׁה is only &#x27;זֶה קָם&#x27;; מַלְכוּת הָרְשָׁעָה is named on the fall side.</p>
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">033</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_10:8</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">קַבָּלַת הַמַּלְכוּת מִן הַשֵּׂכֶל</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חֵן</b></div>
+  </div>
+  <blockquote dir="rtl">לְקַבֵּל מִן הַשֵּׂכֶל, שֶׁהוּא בְּחִינַת חֵי&quot;ת, וַאֲזַי נַעֲשֶׂה חֵן</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">034</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_10:0</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">אַשְׁרֵי</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הִסְתַּכְּלוּת</b></div>
+  </div>
+  <blockquote dir="rtl">אַשְׁרֵי לְשׁוֹן הִסְתַּכְּלוּת</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">035</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_2:0</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">בכורה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">ראשית</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי יַעֲקֹב זָכָה לַבְּכוֹרָה, שֶׁהוּא רֵאשִׁית</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">036</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_1:1</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַשֵּׂכֶל</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">אוֹר גָּדוֹל</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי הַשֵּׂכֶל הוּא אוֹר גָּדוֹל, וּמֵאִיר לוֹ בְּכָל דְּרָכָיו, כְּמוֹ שֶׁכָּתוּב: חָכְמַת אָדָם תָּאִיר פָּנָיו</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">037</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_8:1</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הָדָר</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">אוֹר</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶהוּ הָדָר לוֹ, תִּרְגֵּם אוּנְקֶלוּס: זִיו לֵיהּ, לְשׁוֹן אוֹר</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">038</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_4:1</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הבכורה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">השכל</b></div>
+  </div>
+  <blockquote dir="rtl">וַיִּבֶז עֵשָׂו אֶת הַבְּכוֹרָה, דְּהַיְנוּ הַשֵּׂכֶל כַּנַּ&quot;ל</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">039</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_9:6</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">התורה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">שמותיו של הקדוש־ברוך־הוא</b></div>
+  </div>
+  <blockquote dir="rtl">הַתּוֹרָה, שֶׁהִיא כֻּלָּהּ שְׁמוֹתָיו שֶׁל הַקָּדוֹשׁ־בָּרוּךְ־הוּא.</blockquote>
+  <p class="note"><b>Human review:</b> הַתּוֹרָה and שְׁמוֹתָיו שֶׁל הַקָּדוֹשׁ־בָּרוּךְ־הוּא — Divine Name spelled differently from node label, same referent.</p>
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">040</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_7:6</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יעקב</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">יוסף</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי יַעֲקֹב וְיוֹסֵף כְּחַדָּא חֲשִׁיבֵי</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">041</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_4:8</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יצר הרע</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מלך זקן וכסיל</b></div>
+  </div>
+  <blockquote dir="rtl">וְיֵצֶר הָרָע נִקְרָא מֶלֶךְ זָקֵן וּכְסִיל</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">042</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_4:5</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יצר טוב</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מסכן וחכם</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי הַיֵּצֶר טוֹב נִקְרָא מִסְכֵּן וְחָכָם</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">043</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_9:4</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">צוציתא דנורא חיורתא</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">אש לבנה</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶהוּ בְּחִינַת צוּצִיתָא דְּנוּרָא חִוַּרְתָּא, אֵשׁ לְבָנָה</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">044</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_8:0</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">שׁוֹרוֹ</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הִסְתַּכְּלוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶהוּ שׁוֹרוֹ – לְשׁוֹן הִסְתַּכְּלוּת</blockquote>
+  
+</article><article class="card" data-badge="ai_only" data-proof="complete">
+  <header>
+    <span class="num">045</span>
+    <span class="tag ai_only">ai only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">equation · neutral · presence · chunk ai · occ:ai:lm1_1_0_6:7</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תָּי&quot;ו</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">לְשׁוֹן חֲקִיקָה וּרְשִׁימָה</b></div>
+  </div>
+  <blockquote dir="rtl">נַעֲשֶׂה בְּחִינַת תָּי&quot;ו, שֶׁהוּא לְשׁוֹן חֲקִיקָה וּרְשִׁימָה, כְּמוֹ שֶׁכָּתוּב (יחזקאל ט׳:ד׳): וְהִתְוִיתָ תָּו</blockquote>
+  
+</article></section>
+<section class="panel" id="manual_only"><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">001</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_4 · occ:legacy:1392</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">&quot;מִסְכֵּן וְחָכָם&quot;</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">יֵצֶר טוֹב</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת יֵצֶר טוֹב וְיֵצֶר הָרָע. כִּי הַיֵּצֶר טוֹב נִקְרָא &quot;מִסְכֵּן וְחָכָם&quot; (קֹהֶלֶת ד), (ג) בְּחִינַת מַלְכוּת, שֶׁהִיא בְּחִינַת עֲנִיָּה וְדַלָּה דְּלֵית לָהּ מִגַּרְמָהּ כְּלוּם כִּי אִם מַה שֶּׁמְּקַבֶּלֶת מֵחָכְמָה.</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">002</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_4 · occ:legacy:1853</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">&quot;מִסְכֵּן וְחָכָם&quot;</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַלְכוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת יֵצֶר טוֹב וְיֵצֶר הָרָע. כִּי הַיֵּצֶר טוֹב נִקְרָא &quot;מִסְכֵּן וְחָכָם&quot; (קֹהֶלֶת ד), (ג) בְּחִינַת מַלְכוּת, שֶׁהִיא בְּחִינַת עֲנִיָּה וְדַלָּה דְּלֵית לָהּ מִגַּרְמָהּ כְּלוּם כִּי אִם מַה שֶּׁמְּקַבֶּלֶת מֵחָכְמָה.</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">003</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:188</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">אַלְוָתָא</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">וָאו</b></div>
+  </div>
+  <blockquote dir="rtl">וְהַתּוֹרָה הִיא בְּחִינַת וָאו. כִּי הַלּוּחוֹת, אָרְכָּן וָי&quot;ו וְרָחְבָּן וָי&quot;ו (בָּבָא בַּתְרָא יד.). וְזֶהוּ בְּחִינַת אַלְוָתָא, דְּהַיְנוּ מַקְלוֹת דְּחָקִיק עָלֵהּ אֶהְיֶה וְכוּ&#x27;,</blockquote>
+  <p class="note"><b>Human review:</b> אַלְוָתָא and וָאו are both explicit (&#x27;וְהַתּוֹרָה הִיא בְּחִינַת וָאו… וְזֶהוּ בְּחִינַת אַלְוָתָא&#x27;).</p>
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">004</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_10 · occ:legacy:noid_711</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">אַשְׁרֵי</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הִסְתַּכְּלוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶהוּ: &quot;אַשְׁרֵי תְמִימֵי דָרֶךְ&quot;. אַשְׁרֵי לְשׁוֹן הִסְתַּכְּלוּת.</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">005</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_2 · occ:legacy:2656</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">בְּכוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">רֵאשִׁית</b></div>
+  </div>
+  <blockquote dir="rtl">יַעֲקב כִּי יַעֲקב זָכָה לַבְּכוֹרָה שֶׁהוּא רֵאשִׁית</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">006</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:1969</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">בַּעַל - עֲבֵרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מְשֻׁגָּע</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי בַּעַל - עֲבֵרָה הוּא מְשֻׁגָּע, כְּמוֹ שֶׁאָמְרוּ רַבּוֹתֵינוּ, זִכְרוֹנָם לִבְרָכָה (סוֹטָה ג.): &#x27;אֵין אָדָם עוֹבֵר עֲבֵרָה אֶלָא אִם כֵּן נִכְנַס בּוֹ רוּחַ - שְׁטוּת&#x27;.</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">007</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:1391</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">גַּלָּא</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">יֵצֶר הָרָע</b></div>
+  </div>
+  <blockquote dir="rtl">גַּלָּא הוּא הַיֵצֶר הָרָע: דְּמַטְבַּע לִסְפִינְתָּא הוּא הַחֵן וְהַחֲשִׁיבוּת</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">008</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_4 · occ:legacy:1855</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">דַלָּה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַלְכוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת יֵצֶר טוֹב וְיֵצֶר הָרָע. כִּי הַיֵּצֶר טוֹב נִקְרָא &quot;מִסְכֵּן וְחָכָם&quot; (קֹהֶלֶת ד), (ג) בְּחִינַת מַלְכוּת, שֶׁהִיא בְּחִינַת עֲנִיָּה וְדַלָּה דְּלֵית לָהּ מִגַּרְמָהּ כְּלוּם כִּי אִם מַה שֶּׁמְּקַבֶּלֶת מֵחָכְמָה.</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">009</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_3 · occ:legacy:1856</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">דְּלֵית לָהּ מִגַּרְמָהּ כְּלוּם</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַלְכוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶהוּ בְּחִינַת מַלְכוּת, דְּלֵית לָהּ מִגַּרְמָהּ כְּלוּם, אֶלָּא מַה שֶּׁמְקַבֶּלֶת מִן הַחֵית, שֶׁהִיא בְּחִינַת חָכְמָה, בְּחִינַת שֶׁמֶשׁ כַּנַּ&quot;ל</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">010</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_5 · occ:legacy:3102</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">דַּרְכֵי ה&#x27;</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">תּוֹרָה</b></div>
+  </div>
+  <blockquote dir="rtl">כְּמוֹ שֶׁכָּתוּב (הוֹשֵׁעַ י&quot;ד): &quot;כִּי יְשָׁרִים דַּרְכֵי ה&#x27;, צַדִּיקִים יֵלְכוּ בָם, וּפֹשְׁעִים יִכָּשְׁלוּ בָם&quot;. הַיְנוּ עַל - יְדֵי דַּרְכֵי ה&#x27;, הַיְנוּ הַתּוֹרָה</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">011</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_8 · occ:legacy:1588</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הִסְתַּכְּלוּת</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">לְהִסְתַּכֵּל בְּהַשֵֹּכֶל שֶׁיֵּשׁ בְּכָל דָּבָר</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶהוּ &#x27;שׁוֹרוֹ&#x27; לְשׁוֹן הִסְתַּכְּלוּת, כִּי צְרִיכִין לְהִסְתַּכֵּל בְּהַשֵֹּכֶל שֶׁיֵּשׁ בְּכָל דָּבָר כַּנַּ&quot;ל</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">012</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:1857</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַחֵן וְהַחֲשִׁיבוּת</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַלְכוּת</b></div>
+  </div>
+  <blockquote dir="rtl">הַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל, בְּחִינַת מַלְכוּת דִּקְדֻשָּׁה:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">013</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:1858</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַחֵן וְהַחֲשִׁיבוּת</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַלְכוּת</b></div>
+  </div>
+  <blockquote dir="rtl">הַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל, בְּחִינַת מַלְכוּת דִּקְדֻשָּׁה:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">014</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:1939</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַתּוֹרָה שֶׁעוֹסְקִין</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַקְלוֹת וְשֵׁמוֹת</b></div>
+  </div>
+  <blockquote dir="rtl">הַתּוֹרָה שֶׁעוֹסְקִין הוּא בְּחִינַת מַקְלוֹת וְשֵׁמוֹת, שֶׁבָּזֶה מַכִּין וּמַכְנִיעִין אֶת הַיֵּצֶר הָרָע וּמְגָרְשִׁין מִן הָאָדָם אֶת הַשִּׁגָּעוֹן וְהָרוּחַ שְׁטוּת שֶׁנִּכְנַס בּוֹ, בְּחִינַת &#x27;וּמָחִינָן לֵיהּ בְּאַלְוָתָא, דְּחָקִיק עָלֵיהּ שֵׁמוֹת&#x27; וְכוּ&#x27;</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">015</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:2968</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַתּוֹרָה שֶׁעוֹסְקִין</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַקְלוֹת וְשֵׁמוֹת</b></div>
+  </div>
+  <blockquote dir="rtl">הַתּוֹרָה שֶׁעוֹסְקִין הוּא בְּחִינַת מַקְלוֹת וְשֵׁמוֹת, שֶׁבָּזֶה מַכִּין וּמַכְנִיעִין אֶת הַיֵּצֶר הָרָע וּמְגָרְשִׁין מִן הָאָדָם אֶת הַשִּׁגָּעוֹן וְהָרוּחַ שְׁטוּת שֶׁנִּכְנַס בּוֹ, בְּחִינַת &#x27;וּמָחִינָן לֵיהּ בְּאַלְוָתָא, דְּחָקִיק עָלֵיהּ שֵׁמוֹת&#x27; וְכוּ&#x27;</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">016</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_5 · occ:legacy:1644</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">וְצָרִיךְ כָּל אֶחָד לִתֵּן כֹּחַ לִבְחִינַת מַלְכוּת דִּקְדֻשָּׁה לְהִתְגַּבֵּר עַל מַלְכוּת דְּסִטְרָא אָחֳרָא</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">&#x27;לְעוֹלָם יַרְגִּיז אָדָם יֵצֶר טוֹב עַל יֵצֶר הָרָע&#x27;</b></div>
+  </div>
+  <blockquote dir="rtl">וְצָרִיךְ כָּל אֶחָד לִתֵּן כֹּחַ לִבְחִינַת מַלְכוּת דִּקְדֻשָּׁה לְהִתְגַּבֵּר עַל מַלְכוּת דְּסִטְרָא אָחֳרָא. וּכְמוֹ שֶׁאָמְרוּ רַבּוֹתֵינוּ, זִכְרוֹנָם לִבְרָכָה (בְּרָכוֹת ה.): &#x27;לְעוֹלָם יַרְגִּיז אָדָם יֵצֶר טוֹב עַל יֵצֶר הָרָע&#x27;.</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">017</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:1938</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">וָּי&quot;ו</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַקֵּל</b></div>
+  </div>
+  <blockquote dir="rtl">וְהַוָּי&quot;ו הוּא צוּרַת מַקֵּל</blockquote>
+  <p class="note"><b>Human review:</b> וָי״ו and מַקֵּל both in the quote.</p>
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">018</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_3 · occ:legacy:1128</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חֵית</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חִיּוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת חֵית לְשׁוֹן חִיּוּת (א). כִּי הַחָכְמָה וְהַשֵֹּכֶל הוּא הַחִיּוּת שֶׁל כָּל דָּבָר, כְּמוֹ שֶׁכָּתוּב (קֹהֶלֶת ז): &quot;הַחָכְמָה תְחַיֶּה&quot; וְכוּ&#x27;</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">019</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_3 · occ:legacy:1130</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חָכְמָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חִיּוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת חֵית לְשׁוֹן חִיּוּת (א). כִּי הַחָכְמָה וְהַשֵֹּכֶל הוּא הַחִיּוּת שֶׁל כָּל דָּבָר, כְּמוֹ שֶׁכָּתוּב (קֹהֶלֶת ז): &quot;הַחָכְמָה תְחַיֶּה&quot; וְכוּ&#x27;:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">020</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_4 · occ:legacy:81</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יֵצֶר הָרָע</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">&quot;מֶלֶךְ זָקֵן וּכְסִיל&quot;</b></div>
+  </div>
+  <blockquote dir="rtl">וְיֵצֶר הָרָע נִקְרָא &quot;מֶלֶךְ זָקֵן וּכְסִיל&quot; (שָׁם), בְּחִינַת מַלְכוּת דְּסִטְרָא אָחֳרָא, שֶׁאֵינָהּ חֲפֵצָה בְּחָכְמָה וָשֵׂכֶל, בְּחִינַת &quot;לֹא יַחְפֹּץ כְּסִיל בִּתְבוּנָה&quot; וְכוּ&#x27;, כַּנַּ&quot;ל:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">021</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_10 · occ:legacy:3138</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יַעֲקֹב</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">תָּם</b></div>
+  </div>
+  <blockquote dir="rtl">תְמִימֵי דָרֶךְ בְּחִינַת (בְּרֵאשִׁית כ&quot;ה): &quot;יַעֲקֹב אִישׁ תָּם&quot;; שֶׁהוּא בְּחִינַת הַשֵֹּכֶל כַּנַּ&quot;ל.</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">022</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_10 · occ:legacy:1383</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">לִזְכּוֹת לְהִסְתַּכֵּל עַל הַשֵֹּכֶל שֶׁיֵּשׁ בְּכָל דָּבָר</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">יַעֲקֹב</b></div>
+  </div>
+  <blockquote dir="rtl">הַיְנוּ לִזְכּוֹת לְהִסְתַּכֵּל עַל הַשֵֹּכֶל שֶׁיֵּשׁ בְּכָל דָּבָר, שֶׁהוּא בְּחִינַת &quot;יַעֲקֹב אִישׁ תָּם&quot; </blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">023</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:3103</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">לּוּחוֹת</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">תּוֹרָה</b></div>
+  </div>
+  <blockquote dir="rtl">וְהַתּוֹרָה הִיא בְּחִינַת וָאו (ז). כִּי הַלּוּחוֹת, אָרְכָּן וָי&quot;ו וְרָחְבָּן וָי&quot;ו (בָּבָא בַּתְרָא יד.).</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">024</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_4 · occ:legacy:2452</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">מִי שֶׁאֵינוֹ מְקַשֵּׁר עַצְמוֹ אֶל הַשֵֹּכֶל וְהַחָכְמָה וְהַחִיּוּת, שֶׁיֵּשׁ בְּכָל דָּבָר</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">עֵשָׂו</b></div>
+  </div>
+  <blockquote dir="rtl">אֲבָל מִי שֶׁאֵינוֹ מְקַשֵּׁר עַצְמוֹ אֶל הַשֵֹּכֶל וְהַחָכְמָה וְהַחִיּוּת, שֶׁיֵּשׁ בְּכָל דָּבָר, זֶה בְּחִינַת עֵשָׂו שֶׁבִּזָּה אֶת הַבְּכוֹרָה, כְּמוֹ שֶׁכָּתוּב (בְּרֵאשִׁית כ&quot;ה): &quot;וַיִּבֶז עֵשָׂו אֶת הַבְּכוֹרָה&quot;;</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">025</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:472</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">מַלְאָךְ מַזִּיק</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">אֵשׁ לְבָנָה</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי מִתְּחִלָּה הַיֵּצֶר הָרָע מִתְלַבֵּשׁ עַצְמוֹ בְּמִצְווֹת וּמַטְעֶה אֶת הָאָדָם כְּאִלּוּ מְסִיתוֹ לַעֲשוֹת מִצְוָה. וְזֶהוּ בְּחִינַת צוּצִיתָא דְּנוּרָא חִוַּרְתָּא אֵשׁ לְבָנָה, אַף - עַל - פִּי - כֵן מַלְאָךְ מַזִּיק הוּא:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">026</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:1196</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">סְפִינְתָּא</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הַחֵן וְהַחֲשִׁיבוּת</b></div>
+  </div>
+  <blockquote dir="rtl">לִסְפִינְתָּא הוּא הַחֵן וְהַחֲשִׁיבוּת, לְשׁוֹן סָפוּן וְחָשׁוּב,</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">027</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:1233</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">סְפִינְתָּא</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הַחֵן וְהַחֲשִׁיבוּת</b></div>
+  </div>
+  <blockquote dir="rtl">לִסְפִינְתָּא הוּא הַחֵן וְהַחֲשִׁיבוּת, לְשׁוֹן סָפוּן וְחָשׁוּב,</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">028</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:2322</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">סְפִינְתָּא</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">סָפוּן</b></div>
+  </div>
+  <blockquote dir="rtl">דְּמַטְבַּע לִסְפִינְתָּא הוּא הַחֵן וְהַחֲשִׁיבוּת, לְשׁוֹן סָפוּן וְחָשׁוּב</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">029</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_4 · occ:legacy:1861</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">עֲנִיָּה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַלְכוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת יֵצֶר טוֹב וְיֵצֶר הָרָע. כִּי הַיֵּצֶר טוֹב נִקְרָא &quot;מִסְכֵּן וְחָכָם&quot; (קֹהֶלֶת ד), (ג) בְּחִינַת מַלְכוּת, שֶׁהִיא בְּחִינַת עֲנִיָּה וְדַלָּה דְּלֵית לָהּ מִגַּרְמָהּ כְּלוּם כִּי אִם מַה שֶּׁמְּקַבֶּלֶת מֵחָכְמָה.</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">030</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_5 · occ:legacy:1870</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">פֹשְׁעִים</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַלְכוּת הָרְשָׁעָה</b></div>
+  </div>
+  <blockquote dir="rtl">&quot;וּפֹשְׁעִים יִכָּשְׁלוּ בָם&quot; בְּחִינַת מַלְכוּת הָרְשָׁעָה, בְּחִינַת הַיֵּצֶר הָרָע, שֶׁנּוֹפֵל וְנִכְנָע עַל - יְדֵי הַתּוֹרָה, כַּנַּ&quot;ל</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">031</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:473</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">צוּצִיתָא דְּנוּרָא חִוַּרְתָּא</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">אֵשׁ לְבָנָה</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי מִתְּחִלָּה הַיֵּצֶר הָרָע מִתְלַבֵּשׁ עַצְמוֹ בְּמִצְווֹת וּמַטְעֶה אֶת הָאָדָם כְּאִלּוּ מְסִיתוֹ לַעֲשוֹת מִצְוָה. וְזֶהוּ בְּחִינַת צוּצִיתָא דְּנוּרָא חִוַּרְתָּא אֵשׁ לְבָנָה, אַף - עַל - פִּי - כֵן מַלְאָךְ מַזִּיק הוּא:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">032</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:2007</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">צוּצִיתָא דְּנוּרָא חִוַּרְתָּא</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מִתְּחִלָּה הַיֵּצֶר הָרָע מִתְלַבֵּשׁ עַצְמוֹ בְּמִצְווֹת</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי מִתְּחִלָּה הַיֵּצֶר הָרָע מִתְלַבֵּשׁ עַצְמוֹ בְּמִצְווֹת וּמַטְעֶה אֶת הָאָדָם כְּאִלּוּ מְסִיתוֹ לַעֲשוֹת מִצְוָה. וְזֶהוּ בְּחִינַת צוּצִיתָא דְּנוּרָא חִוַּרְתָּא אֵשׁ לְבָנָה, אַף - עַל - פִּי - כֵן מַלְאָךְ מַזִּיק הוּא</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">033</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_3 · occ:legacy:1129</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">שֵֹּכֶל</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חִיּוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת חֵית לְשׁוֹן חִיּוּת (א). כִּי הַחָכְמָה וְהַשֵֹּכֶל הוּא הַחִיּוּת שֶׁל כָּל דָּבָר, כְּמוֹ שֶׁכָּתוּב (קֹהֶלֶת ז): &quot;הַחָכְמָה תְחַיֶּה&quot; וְכוּ&#x27;:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">034</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:2721</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">שִּׁגָּעוֹן</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">רוּחַ שְׁטוּת</b></div>
+  </div>
+  <blockquote dir="rtl">שֶׁבָּזֶה מַכִּין וּמַכְנִיעִין אֶת הַיֵּצֶר הָרָע וּמְגָרְשִׁין מִן הָאָדָם אֶת הַשִּׁגָּעוֹן וְהָרוּחַ שְׁטוּת שֶׁנִּכְנַס בּוֹ, </blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">035</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_2 · occ:legacy:1164</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">שֶׁמֶשׁ</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">שֵֹּכֶל</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת שֶׁמֶשׁ. כִּי הַשֵֹּכֶל הוּא מֵאִיר לוֹ בְּכָל דְּרָכָיו כְּמוֹ הַשֶּׁמֶשׁ.</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">036</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_10 · occ:legacy:1381</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תְמִימֵי דָרֶךְ</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">יַעֲקֹב</b></div>
+  </div>
+  <blockquote dir="rtl">תְמִימֵי דָרֶךְ בְּחִינַת (בְּרֵאשִׁית כ&quot;ה): &quot;יַעֲקֹב אִישׁ תָּם&quot;; שֶׁהוּא בְּחִינַת הַשֵֹּכֶל כַּנַּ&quot;ל. הַיְנוּ לִזְכּוֹת לְהִסְתַּכֵּל עַל הַשֵֹּכֶל שֶׁיֵּשׁ בְּכָל דָּבָר, שֶׁהוּא בְּחִינַת &quot;יַעֲקֹב אִישׁ תָּם&quot; </blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">037</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_6 · occ:legacy:1225</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תָּ&quot;ו</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חֲקִיקָה וּרְשִׁימָה</b></div>
+  </div>
+  <blockquote dir="rtl">תָּ&quot;ו, שֶׁהוּא לְשׁוֹן חֲקִיקָה וּרְשִׁימָה, כְּמוֹ שֶׁכָּתוּב (יְחֶזְקֵאל &quot;ט): &quot;וְהִתְוִיתָ תָּ&quot;ו&quot;,</blockquote>
+  <p class="note"><b>Human review:</b> תָ״ו glossed as לְשׁוֹן חֲקִיקָה וּרְשִׁימָה in the same breath.</p>
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">038</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_6 · occ:legacy:2794</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תָּ&quot;ו</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חֲקִיקָה וּרְשִׁימָה</b></div>
+  </div>
+  <blockquote dir="rtl">תָּ&quot;ו, שֶׁהוּא לְשׁוֹן חֲקִיקָה וּרְשִׁימָה, כְּמוֹ שֶׁכָּתוּב (יְחֶזְקֵאל &quot;ט): &quot;וְהִתְוִיתָ תָּ&quot;ו&quot;,</blockquote>
+  <p class="note"><b>Human review:</b> Duplicate of occ:legacy:1225 — both endpoints present.</p>
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">039</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:189</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">וָאו</b></div>
+  </div>
+  <blockquote dir="rtl">וְהַתּוֹרָה הִיא בְּחִינַת וָאו. כִּי הַלּוּחוֹת, אָרְכָּן וָי&quot;ו וְרָחְבָּן וָי&quot;ו (בָּבָא בַּתְרָא יד.).</blockquote>
+  <p class="note"><b>Human review:</b> תּוֹרָה and וָאו both named directly.</p>
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">040</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_9 · occ:legacy:2967</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">שֵׁמוֹת</b></div>
+  </div>
+  <blockquote dir="rtl">שֵׁמוֹת, בְּחִינַת הַתּוֹרָה</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">041</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_6 · occ:legacy:2055</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חֵן</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">נֶחְקָק וְנִרְשָׁם מָקוֹם בְּלֵב הַמִּתְבַּקֵּשׁ לְקַבֵּל הַבַּקָּשָׁה</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת ת. הַיְנוּ עַל - יְדֵי שֶׁנִּתְחַבְּרוּ וְנִתְקַשְּׁרוּ הַחֵי&quot;ת וְהַנּוּ&quot;ן וְנַעֲשָׂה בְּחִינַת חֵ&quot;ן עַל - יְדֵי - זֶה נַעֲשֶׂה בְּחִינַת תָּ&quot;ו, שֶׁהוּא לְשׁוֹן חֲקִיקָה וּרְשִׁימָה, כְּמוֹ שֶׁכָּתוּב (יְחֶזְקֵאל &quot;ט): &quot;וְהִתְוִיתָ תָּ&quot;ו&quot;, כִּי עַל - יְדֵי הַחֵן נֶחְקָק וְנִרְשָׁם מָקוֹם בְּלֵב הַמִּתְבַּקֵּשׁ לְקַבֵּל הַבַּקָּשָׁה, כִּי עַל - יְדֵי הַחֵן נִתְקַבְּלוּ דְּבָרָיו. נִמְצָא, שֶׁבְּחִינַת הַחֵ&quot;ן חָקַק מָקוֹם בְּלֵב זֶה שֶׁמְּבַקְּשִׁין מִמֶּנּוּ, כְּדֵי שֶׁיִּכָּנְסוּ דְּבָרָיו בְּלִבּוֹ, וִיקַבֵּל בַּקָשָׁתוֹ. וְהַחֲקִיקָה וּרְשִׁימָה זֶה בְּחִינַת תָּ&quot;ו כַּנַּ&quot;ל:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">042</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_0 · occ:legacy:2590</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חֵן</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">נִתְקַבְּלִים כָּל הַתְּפִלּוֹת וְכָל הַבַּקָּשׁוֹת</b></div>
+  </div>
+  <blockquote dir="rtl">דַּע, כִּי עַל יְדֵי הַתּוֹרָה נִתְקַבְּלִים כָּל הַתְּפִלּוֹת וְכָל הַבַּקָּשׁוֹת, שֶׁאָנוּ מְבַקְּשִׁים וּמִתְפַּלְּלִים. וְהַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל נִתְעַלֶּה וְנִתְרוֹמֵם בִּפְנֵי כָּל מִי שֶׁצְּרִיכִין, הֵן בְּרוּחָנִי הֵן בְּגַשְׁמִי. כִּי עַכְשָׁו בָּעֲווֹנוֹתֵינוּ הָרַבִּים חֵן וַחֲשִׁיבוּת הָאֲמִיתִּי שֶׁל יִשְׂרָאֵל נָפַל, כִּי עַכְשָׁו עִקַּר הַחֲשִׁיבוּת וְהַחֵן הוּא אֶצְלָם. אֲבָל עַל - יְדֵי הַתּוֹרָה נִתְעַלֶּה הַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל, כִּי הַתּוֹרָה נִקְרֵאת (מִשְׁלֵי ה): &quot;אַיֶּלֶת אֲהָבִים וְיַעֲלַת חֵן&quot;; שֶׁמַּעֲלָה חֵן עַל לוֹמְדֶיהָ (עֵרוּבִין נ&quot;ד:). וְעַל - יְדֵי - זֶה נִתְקַבְּלִין כָּל הַתְּפִלּוֹת וְהַבַּקָּשׁוֹת:
+ 
+ ----------
+ 
+וְעַל - יְדֵי - זֶה נִתְקַבְּלִים כָּל הַתְּפִלּוֹת וְהַבַּקָּשׁוֹת, כִּי עִקָּר מַה שֶּׁאֵין נִתְקַבְּלִין הַבַּקָּשׁוֹת הוּא מֵחֲמַת שֶׁאֵין לְהַדְּבָרִים חֵן, וְאֵין נִכְנָסִין בַּלֵּב שֶׁל זֶה שֶׁמְּבַקְּשִׁין מִמֶּנּוּ, כְּאִלּוּ אֵין בְּלִבּוֹ מָקוֹם שֶׁיִּכָּנְסוּ הַדְּבָרִים בְּלִבּוֹ, מֵחֲמַת שֶׁאֵין לְהַמְבַקֵּשׁ חֵן, שֶׁיִּכָּנְסוּ הַדְּבָרִים בְּלִבּוֹ שֶׁל זֶה, שֶׁמְּבַקְּשִׁין מִמֶּנּוּ. אֲבָל עַל - יְדֵי הַתּוֹרָה, שֶׁעַל - יְדֵי - זֶה נִתְחַבְּרִין וְנִתְקַשְּׁרִין הַנ וְהַח כַּנַּ&quot;ל, וְנַעֲשֶׂה חֵן, וְעַל כֵּן נִקְרֵאת הַתּוֹרָה (מִשְׁלֵי ה): &quot;יַעֲלַת חֵן&quot;, וַאֲזַי זוֹכֶה שֶׁדְּבָרָיו הֵם דִּבְרֵי חֵן, וַאֲזַי נִתְקַבְּלִין דְּבָרָיו וּבַקָּשׁוֹתָיו, כְּמוֹ מִי שֶׁמְּדַבֵּר דִּבְרֵי חֵן, שֶׁנִּכְנָסִין הַדְּבָרִים בְּלֵב הַמִּתְבַּקֵּשׁ, דְּהַיְנוּ זֶה שֶׁמְּבַקְּשִׁין מִמֶּנּוּ:
+ 
+ ----------
+ 
+ וְזֶה בְּחִינַת ת. הַיְנוּ עַל - יְדֵי שֶׁנִּתְחַבְּרוּ וְנִתְקַשְּׁרוּ הַחֵי&quot;ת וְהַנּוּ&quot;ן וְנַעֲשָׂה בְּחִינַת חֵ&quot;ן עַל - יְדֵי - זֶה נַעֲשֶׂה בְּחִינַת תָּ&quot;ו, שֶׁהוּא לְשׁוֹן חֲקִיקָה וּרְשִׁימָה, כְּמוֹ שֶׁכָּתוּב (יְחֶזְקֵאל &quot;ט): &quot;וְהִתְוִיתָ תָּ&quot;ו&quot;, כִּי עַל - יְדֵי הַחֵן נֶחְקָק וְנִרְשָׁם מָקוֹם בְּלֵב הַמִּתְבַּקֵּשׁ לְקַבֵּל הַבַּקָּשָׁה, כִּי עַל - יְדֵי הַחֵן נִתְקַבְּלוּ דְּבָרָיו. נִמְצָא, שֶׁבְּחִינַת הַחֵ&quot;ן חָקַק מָקוֹם בְּלֵב זֶה שֶׁמְּבַקְּשִׁין מִמֶּנּוּ, כְּדֵי שֶׁיִּכָּנְסוּ דְּבָרָיו בְּלִבּוֹ, וִיקַבֵּל בַּקָשָׁתוֹ. וְהַחֲקִיקָה וּרְשִׁימָה זֶה בְּחִינַת תָּ&quot;ו כַּנַּ&quot;ל:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">043</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_6 · occ:legacy:3065</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חֵן</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">תָּ&quot;ו</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת ת. הַיְנוּ עַל - יְדֵי שֶׁנִּתְחַבְּרוּ וְנִתְקַשְּׁרוּ הַחֵי&quot;ת וְהַנּוּ&quot;ן וְנַעֲשָׂה בְּחִינַת חֵ&quot;ן עַל - יְדֵי - זֶה נַעֲשֶׂה בְּחִינַת תָּ&quot;ו, שֶׁהוּא לְשׁוֹן חֲקִיקָה וּרְשִׁימָה, כְּמוֹ שֶׁכָּתוּב (יְחֶזְקֵאל &quot;ט): &quot;וְהִתְוִיתָ תָּ&quot;ו&quot;, כִּי עַל - יְדֵי הַחֵן נֶחְקָק וְנִרְשָׁם מָקוֹם בְּלֵב הַמִּתְבַּקֵּשׁ לְקַבֵּל הַבַּקָּשָׁה, כִּי עַל - יְדֵי הַחֵן נִתְקַבְּלוּ דְּבָרָיו. נִמְצָא, שֶׁבְּחִינַת הַחֵ&quot;ן חָקַק מָקוֹם בְּלֵב זֶה שֶׁמְּבַקְּשִׁין מִמֶּנּוּ, כְּדֵי שֶׁיִּכָּנְסוּ דְּבָרָיו בְּלִבּוֹ, וִיקַבֵּל בַּקָשָׁתוֹ. וְהַחֲקִיקָה וּרְשִׁימָה זֶה בְּחִינַת תָּ&quot;ו כַּנַּ&quot;ל:</blockquote>
+  <p class="note"><b>Human review:</b> Long proof names חֵן and תָ״ו explicitly.</p>
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">044</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_1 · occ:legacy:1466</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חָכְמָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">כְּדֵי שֶׁיָּאִיר לוֹ הַשֵֹּכֶל, שֶׁיֵּשׁ בְּכָל דָּבָר, לְהִתְקָרֵב לְהַשֵּׁם יִתְבָּרַךְ עַל - יְדֵי אוֹתוֹ הַדָּבָר</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי אִישׁ הַיִּשְׂרְאֵלִי צָרִיךְ תָּמִיד לְהִסְתַּכֵּל בְּהַשֵֹּכֶל שֶׁל כָּל דָּבָר, וּלְקַשֵּׁר עַצְמוֹ אֶל הַחָכְמָה וְהַשֵֹּכֶל שֶׁיֵּשׁ בְּכָל דָּבָר, כְּדֵי שֶׁיָּאִיר לוֹ הַשֵֹּכֶל, שֶׁיֵּשׁ בְּכָל דָּבָר, לְהִתְקָרֵב לְהַשֵּׁם יִתְבָּרַךְ עַל - יְדֵי אוֹתוֹ הַדָּבָר. כִּי הַשֵֹּכֶל הוּא אוֹר גָּדוֹל וּמֵאִיר לוֹ בְּכָל דְּרָכָיו, כְּמוֹ שֶׁכָּתוּב (קֹהֶלֶת ח): &quot;חָכְמַת אָדָם תָּאִיר פָּנָיו&quot;:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">045</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_3 · occ:legacy:1158</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">מַלְכוּת</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">שֵֹּכֶל</b></div>
+  </div>
+  <blockquote dir="rtl">אַךְ מֵחֲמַת שֶׁאוֹר הַשֵֹּכֶל גָּדוֹל מְאֹד, אִי אֶפְשָׁר לִזְכּוֹת אֵלָיו כִּי אִם עַל - יְדֵי בְּחִינַת נוּן שֶׁהוּא בְּחִינַת מַלְכוּת,</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">046</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_5 · occ:legacy:2045</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">מַלְכוּת</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">נוֹפֵל וְנִתְבַּטֵּל מַלְכוּת הָרְשָׁעָה</b></div>
+  </div>
+  <blockquote dir="rtl">וַאֲזַי מְקַבֶּלֶת הַמַּלְכוּת, שֶׁהִיא בְּחִינַת נ, חִיּוּת מִן הַחָכְמָה, שֶׁהִיא בְּחִינַת ח, וְנִתְחַבֵּר וְנִתְקַשֵּׁר הַח וְהַנ, וְנַעֲשֶׂה אוֹר הַלְּבָנָה כְּאוֹר הַחַמָּה: וּכְשֶׁזֶּה קָם, זֶה נוֹפֵל. וַאֲזַי נוֹפֵל וְנִתְבַּטֵּל מַלְכוּת הָרְשָׁעָה, כְּמוֹ שֶׁכָּתוּב (הוֹשֵׁעַ י&quot;ד): &quot;כִּי יְשָׁרִים דַּרְכֵי ה&#x27;, צַדִּיקִים יֵלְכוּ בָם, וּפֹשְׁעִים יִכָּשְׁלוּ בָם&quot;. הַיְנוּ עַל - יְדֵי דַּרְכֵי ה&#x27;, הַיְנוּ הַתּוֹרָה, עַל - יְדֵי - זֶה הַצַּדִּיקִים, שֶׁדְּבֵקִים בַּמַּלְכוּת דִּקְדֻשָּׁה, הֵם נִתְחַזְּקִים וּמְקַבְּלִים כֹּחַ עַל - יְדֵי - זֶה. &quot;וּפֹשְׁעִים יִכָּשְׁלוּ בָם&quot; בְּחִינַת מַלְכוּת הָרְשָׁעָה, בְּחִינַת הַיֵּצֶר הָרָע, שֶׁנּוֹפֵל וְנִכְנָע עַל - יְדֵי הַתּוֹרָה, כַּנַּ&quot;ל</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="incomplete">
+  <header>
+    <span class="num">047</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag bad">Endpoint missing even on reading</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_5 · occ:legacy:1195</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">שֵֹּכֶל</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חֵן</b></div>
+  </div>
+  <blockquote dir="rtl">וַאֲזַי מְקַבֶּלֶת הַמַּלְכוּת, שֶׁהִיא בְּחִינַת נ, חִיּוּת מִן הַחָכְמָה, שֶׁהִיא בְּחִינַת ח, וְנִתְחַבֵּר וְנִתְקַשֵּׁר הַח וְהַנ, וְנַעֲשֶׂה אוֹר הַלְּבָנָה כְּאוֹר הַחַמָּה: וּכְשֶׁזֶּה קָם, זֶה נוֹפֵל. וַאֲזַי נוֹפֵל וְנִתְבַּטֵּל מַלְכוּת הָרְשָׁעָה, כְּמוֹ שֶׁכָּתוּב (הוֹשֵׁעַ י&quot;ד): &quot;כִּי יְשָׁרִים דַּרְכֵי ה&#x27;, צַדִּיקִים יֵלְכוּ בָם, וּפֹשְׁעִים יִכָּשְׁלוּ בָם&quot;. הַיְנוּ עַל - יְדֵי דַּרְכֵי ה&#x27;, הַיְנוּ הַתּוֹרָה, עַל - יְדֵי - זֶה הַצַּדִּיקִים, שֶׁדְּבֵקִים בַּמַּלְכוּת דִּקְדֻשָּׁה, הֵם נִתְחַזְּקִים וּמְקַבְּלִים כֹּחַ עַל - יְדֵי - זֶה. &quot;וּפֹשְׁעִים יִכָּשְׁלוּ בָם&quot; בְּחִינַת מַלְכוּת הָרְשָׁעָה, בְּחִינַת הַיֵּצֶר הָרָע, שֶׁנּוֹפֵל וְנִכְנָע עַל - יְדֵי הַתּוֹרָה, כַּנַּ&quot;ל:</blockquote>
+  <p class="note"><b>Human review:</b> Stored src/tgt are שֵּׂכֶל→חֵן, but this proof span is about דַּרְכֵי ה׳/תּוֹרָה and מַלְכוּת הָרְשָׁעָה. Neither שֵּׂכֶל nor חֵן appear in the quote.</p>
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">048</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_1 · occ:legacy:1465</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">שֵֹּכֶל</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">כְּדֵי שֶׁיָּאִיר לוֹ הַשֵֹּכֶל, שֶׁיֵּשׁ בְּכָל דָּבָר, לְהִתְקָרֵב לְהַשֵּׁם יִתְבָּרַךְ עַל - יְדֵי אוֹתוֹ הַדָּבָר</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי אִישׁ הַיִּשְׂרְאֵלִי צָרִיךְ תָּמִיד לְהִסְתַּכֵּל בְּהַשֵֹּכֶל שֶׁל כָּל דָּבָר, וּלְקַשֵּׁר עַצְמוֹ אֶל הַחָכְמָה וְהַשֵֹּכֶל שֶׁיֵּשׁ בְּכָל דָּבָר, כְּדֵי שֶׁיָּאִיר לוֹ הַשֵֹּכֶל, שֶׁיֵּשׁ בְּכָל דָּבָר, לְהִתְקָרֵב לְהַשֵּׁם יִתְבָּרַךְ עַל - יְדֵי אוֹתוֹ הַדָּבָר. כִּי הַשֵֹּכֶל הוּא אוֹר גָּדוֹל וּמֵאִיר לוֹ בְּכָל דְּרָכָיו, כְּמוֹ שֶׁכָּתוּב (קֹהֶלֶת ח): &quot;חָכְמַת אָדָם תָּאִיר פָּנָיו&quot;:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">049</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_9 · occ:legacy:854</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הַכְנָעָתוֹ שֶׁל הַיֵּצֶר - הָרָע</b></div>
+  </div>
+  <blockquote dir="rtl">וּמָחִינָן לֵיהּ בְּאַלְוָתָא דְּחָקִיק עָלֵהּ אֶהְיֶה וְכוּ&#x27;, הַיְנוּ שֶׁעִקַּר הַכְנָעָתוֹ שֶׁל הַיֵּצֶר - הָרָע הוּא עַל - יְדֵי הַתּוֹרָה, שֶׁהִיא כֻּלָּהּ שְׁמוֹתָיו שֶׁל הַקָּדוֹשׁ - בָּרוּךְ - הוּא. וְהַתּוֹרָה הִיא בְּחִינַת וָאו (ז). כִּי הַלּוּחוֹת, אָרְכָּן וָי&quot;ו וְרָחְבָּן וָי&quot;ו (בָּבָא בַּתְרָא יד.). וְזֶהוּ בְּחִינַת אַלְוָתָא, דְּהַיְנוּ מַקְלוֹת דְּחָקִיק עָלֵהּ אֶהְיֶה וְכוּ&#x27;, הַיְנוּ שֵׁמוֹת, בְּחִינַת הַתּוֹרָה, שֶׁהִיא בְּחִינַת וָי&quot;ו, וְהַוָּי&quot;ו הוּא צוּרַת מַקֵּל, וְהִיא כֻּלָּהּ שְׁמוֹתָיו שֶׁל הַשֵּׁם יִתְבָּרַךְ, הַיְנוּ שֶׁהַתּוֹרָה הַקְּדוֹשָׁה הִיא מַכְנִיעַ אֶת הַיֵּצֶר הָרָע שֶׁרוֹצֶה לַעֲשׂוֹת אֶת הָאָדָם מְשֻׁגָּע מַמָּשׁ, חַס וְשָׁלוֹם. כִּי בַּעַל - עֲבֵרָה הוּא מְשֻׁגָּע, כְּמוֹ שֶׁאָמְרוּ רַבּוֹתֵינוּ, זִכְרוֹנָם לִבְרָכָה (סוֹטָה ג.): &#x27;אֵין אָדָם עוֹבֵר עֲבֵרָה אֶלָא אִם כֵּן נִכְנַס בּוֹ רוּחַ - שְׁטוּת&#x27;. וּכְמוֹ שֶׁהַמְּשֻׁגָּעִים צְרִיכִים לְהַכּוֹתָם וְלָשׂוּם עֲלֵיהֶם שֵׁמוֹת, כְּמוֹ כֵן מַמָּשׁ הַתּוֹרָה שֶׁעוֹסְקִין הוּא בְּחִינַת מַקְלוֹת וְשֵׁמוֹת, שֶׁבָּזֶה מַכִּין וּמַכְנִיעִין אֶת הַיֵּצֶר הָרָע וּמְגָרְשִׁין מִן הָאָדָם אֶת הַשִּׁגָּעוֹן וְהָרוּחַ שְׁטוּת שֶׁנִּכְנַס בּוֹ, בְּחִינַת &#x27;וּמָחִינָן לֵיהּ בְּאַלְוָתָא, דְּחָקִיק עָלֵיהּ שֵׁמוֹת&#x27; וְכוּ&#x27;, כַּנַּ&quot;ל: (ח):</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">050</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_0 · occ:legacy:1197</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חֵן</b></div>
+  </div>
+  <blockquote dir="rtl">דַּע, כִּי עַל יְדֵי הַתּוֹרָה נִתְקַבְּלִים כָּל הַתְּפִלּוֹת וְכָל הַבַּקָּשׁוֹת, שֶׁאָנוּ מְבַקְּשִׁים וּמִתְפַּלְּלִים. וְהַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל נִתְעַלֶּה וְנִתְרוֹמֵם בִּפְנֵי כָּל מִי שֶׁצְּרִיכִין, הֵן בְּרוּחָנִי הֵן בְּגַשְׁמִי. כִּי עַכְשָׁו בָּעֲווֹנוֹתֵינוּ הָרַבִּים חֵן וַחֲשִׁיבוּת הָאֲמִיתִּי שֶׁל יִשְׂרָאֵל נָפַל, כִּי עַכְשָׁו עִקַּר הַחֲשִׁיבוּת וְהַחֵן הוּא אֶצְלָם. אֲבָל עַל - יְדֵי הַתּוֹרָה נִתְעַלֶּה הַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל, כִּי הַתּוֹרָה נִקְרֵאת (מִשְׁלֵי ה): &quot;אַיֶּלֶת אֲהָבִים וְיַעֲלַת חֵן&quot;; שֶׁמַּעֲלָה חֵן עַל לוֹמְדֶיהָ (עֵרוּבִין נ&quot;ד:). וְעַל - יְדֵי - זֶה נִתְקַבְּלִין כָּל הַתְּפִלּוֹת וְהַבַּקָּשׁוֹת:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">051</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_0 · occ:legacy:1234</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חֲשִׁיבוּת</b></div>
+  </div>
+  <blockquote dir="rtl">דַּע, כִּי עַל יְדֵי הַתּוֹרָה נִתְקַבְּלִים כָּל הַתְּפִלּוֹת וְכָל הַבַּקָּשׁוֹת, שֶׁאָנוּ מְבַקְּשִׁים וּמִתְפַּלְּלִים. וְהַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל נִתְעַלֶּה וְנִתְרוֹמֵם בִּפְנֵי כָּל מִי שֶׁצְּרִיכִין, הֵן בְּרוּחָנִי הֵן בְּגַשְׁמִי. כִּי עַכְשָׁו בָּעֲווֹנוֹתֵינוּ הָרַבִּים חֵן וַחֲשִׁיבוּת הָאֲמִיתִּי שֶׁל יִשְׂרָאֵל נָפַל, כִּי עַכְשָׁו עִקַּר הַחֲשִׁיבוּת וְהַחֵן הוּא אֶצְלָם. אֲבָל עַל - יְדֵי הַתּוֹרָה נִתְעַלֶּה הַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל, כִּי הַתּוֹרָה נִקְרֵאת (מִשְׁלֵי ה): &quot;אַיֶּלֶת אֲהָבִים וְיַעֲלַת חֵן&quot;; שֶׁמַּעֲלָה חֵן עַל לוֹמְדֶיהָ (עֵרוּבִין נ&quot;ד:). וְעַל - יְדֵי - זֶה נִתְקַבְּלִין כָּל הַתְּפִלּוֹת וְהַבַּקָּשׁוֹת:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">052</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_10 · occ:legacy:1589</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">לִזְכּוֹת לְהִסְתַּכֵּל עַל הַשֵֹּכֶל שֶׁיֵּשׁ בְּכָל דָּבָר</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶהוּ: &quot;אַשְׁרֵי תְמִימֵי דָרֶךְ&quot;. אַשְׁרֵי לְשׁוֹן הִסְתַּכְּלוּת. תְמִימֵי דָרֶךְ בְּחִינַת (בְּרֵאשִׁית כ&quot;ה): &quot;יַעֲקֹב אִישׁ תָּם&quot;; שֶׁהוּא בְּחִינַת הַשֵֹּכֶל כַּנַּ&quot;ל. הַיְנוּ לִזְכּוֹת לְהִסְתַּכֵּל עַל הַשֵֹּכֶל שֶׁיֵּשׁ בְּכָל דָּבָר, שֶׁהוּא בְּחִינַת &quot;יַעֲקֹב אִישׁ תָּם&quot; זֶה זוֹכִין עַל - יְדֵי הַתּוֹרָה:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">053</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_5 · occ:legacy:1862</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַלְכוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וְצָרִיךְ כָּל אֶחָד לִתֵּן כֹּחַ לִבְחִינַת מַלְכוּת דִּקְדֻשָּׁה לְהִתְגַּבֵּר עַל מַלְכוּת דְּסִטְרָא אָחֳרָא. וּכְמוֹ שֶׁאָמְרוּ רַבּוֹתֵינוּ, זִכְרוֹנָם לִבְרָכָה (בְּרָכוֹת ה.): &#x27;לְעוֹלָם יַרְגִּיז אָדָם יֵצֶר טוֹב עַל יֵצֶר הָרָע&#x27;. וְעַל - יְדֵי מַה נוֹתֵן כֹּחַ לַמַּלְכוּת דִּקְדֻשָּׁה? עַל - יְדֵי הַתּוֹרָה, שֶׁהוּא עוֹסֵק בְּכֹחַ (כְּמוֹ שֶׁאָמְרוּ רַבּוֹתֵינוּ, זִכְרוֹנָם לִבְרָכָה, שָׁם: &#x27;לְעוֹלָם יַרְגִּיז וְכוּ&#x27; אִי אָזִיל - מוּטָב, וְאִם לָאו יַעֲסֹק בַּתּוֹרָה&#x27;). וּכְמוֹ שֶׁאָמְרוּ רַבּוֹתֵינוּ, זִכְרוֹנָם לִבְרָכָה (קִדּוּשִׁין ל:): &#x27;אִם פָּגַע בְּךָ מְנֻוָּל זֶה, מָשְׁכֵהוּ לְבֵית - הַמִּדְרָשׁ&#x27;. כִּי עַל - יְדֵי הַתּוֹרָה נוֹתֵן כֹּחַ לַמַּלְכוּת דִּקְדֻשָּׁה</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">054</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_5 · occ:legacy:1863</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַלְכוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וַאֲזַי מְקַבֶּלֶת הַמַּלְכוּת, שֶׁהִיא בְּחִינַת נ, חִיּוּת מִן הַחָכְמָה, שֶׁהִיא בְּחִינַת ח, וְנִתְחַבֵּר וְנִתְקַשֵּׁר הַח וְהַנ, וְנַעֲשֶׂה אוֹר הַלְּבָנָה כְּאוֹר הַחַמָּה: וּכְשֶׁזֶּה קָם, זֶה נוֹפֵל. וַאֲזַי נוֹפֵל וְנִתְבַּטֵּל מַלְכוּת הָרְשָׁעָה, כְּמוֹ שֶׁכָּתוּב (הוֹשֵׁעַ י&quot;ד): &quot;כִּי יְשָׁרִים דַּרְכֵי ה&#x27;, צַדִּיקִים יֵלְכוּ בָם, וּפֹשְׁעִים יִכָּשְׁלוּ בָם&quot;. הַיְנוּ עַל - יְדֵי דַּרְכֵי ה&#x27;, הַיְנוּ הַתּוֹרָה, עַל - יְדֵי - זֶה הַצַּדִּיקִים, שֶׁדְּבֵקִים בַּמַּלְכוּת דִּקְדֻשָּׁה, הֵם נִתְחַזְּקִים וּמְקַבְּלִים כֹּחַ עַל - יְדֵי - זֶה. &quot;וּפֹשְׁעִים יִכָּשְׁלוּ בָם&quot; בְּחִינַת מַלְכוּת הָרְשָׁעָה, בְּחִינַת הַיֵּצֶר הָרָע, שֶׁנּוֹפֵל וְנִכְנָע עַל - יְדֵי הַתּוֹרָה, כַּנַּ&quot;ל:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">055</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_10 · occ:legacy:2050</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">נוֹתֵן כֹּחַ לַמַּלְכוּת דִּקְדֻשָּׁה בְּחִינַת נוּ&quot;ן, לְקַבֵּל מִן הַשֵֹּכֶל, שֶׁהוּא בְּחִינַת חֵי&quot;ת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶהוּ: הַהוֹלְכִים בְּתוֹרַת ה&#x27;. כִּי עַל - יְדֵי שֶׁלּוֹמֵד תּוֹרָה בְּכֹחַ, עַל - יְדֵי - זֶה נוֹתֵן כֹּחַ לַמַּלְכוּת דִּקְדֻשָּׁה בְּחִינַת נוּ&quot;ן, לְקַבֵּל מִן הַשֵֹּכֶל, שֶׁהוּא בְּחִינַת חֵי&quot;ת, וַאֲזַי נַעֲשֶׂה חֵן וְנִתְקַבְּלִים דְּבָרָיו כַּנַּ&quot;ל, וַאֲזַי נִתְעַלֶּה הַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל, וְכָל הַתְּפִלּוֹת וְהַבַּקָּשׁוֹת נִתְקַבְּלִים:</blockquote>
+  
+</article><article class="card" data-badge="manual_only" data-proof="complete">
+  <header>
+    <span class="num">056</span>
+    <span class="tag manual_only">manual only</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_0 · occ:legacy:2591</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">תּוֹרָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">נִתְקַבְּלִים כָּל הַתְּפִלּוֹת וְכָל הַבַּקָּשׁוֹת</b></div>
+  </div>
+  <blockquote dir="rtl">דַּע, כִּי עַל יְדֵי הַתּוֹרָה נִתְקַבְּלִים כָּל הַתְּפִלּוֹת וְכָל הַבַּקָּשׁוֹת, שֶׁאָנוּ מְבַקְּשִׁים וּמִתְפַּלְּלִים. וְהַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל נִתְעַלֶּה וְנִתְרוֹמֵם בִּפְנֵי כָּל מִי שֶׁצְּרִיכִין, הֵן בְּרוּחָנִי הֵן בְּגַשְׁמִי. כִּי עַכְשָׁו בָּעֲווֹנוֹתֵינוּ הָרַבִּים חֵן וַחֲשִׁיבוּת הָאֲמִיתִּי שֶׁל יִשְׂרָאֵל נָפַל, כִּי עַכְשָׁו עִקַּר הַחֲשִׁיבוּת וְהַחֵן הוּא אֶצְלָם. אֲבָל עַל - יְדֵי הַתּוֹרָה נִתְעַלֶּה הַחֵן וְהַחֲשִׁיבוּת שֶׁל יִשְׂרָאֵל, כִּי הַתּוֹרָה נִקְרֵאת (מִשְׁלֵי ה): &quot;אַיֶּלֶת אֲהָבִים וְיַעֲלַת חֵן&quot;; שֶׁמַּעֲלָה חֵן עַל לוֹמְדֶיהָ (עֵרוּבִין נ&quot;ד:). וְעַל - יְדֵי - זֶה נִתְקַבְּלִין כָּל הַתְּפִלּוֹת וְהַבַּקָּשׁוֹת:</blockquote>
+  
+</article></section>
+<section class="panel" id="overlap"><article class="card" data-badge="overlap" data-proof="context_dependent">
+  <header>
+    <span class="num">001</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_7:7</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">בכור</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">השכל</b></div>
+  </div>
+  <blockquote dir="rtl">בְּכוֹר הוּא בְּחִינַת הַשֵּׂכֶל כַּנַּ&quot;ל</blockquote>
+  <p class="note"><b>Human review:</b> בְּכוֹר → השכל via כַּנַ״ל.</p>
+</article><article class="card" data-badge="overlap" data-proof="complete">
+  <header>
+    <span class="num">002</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_3:6</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חֵית</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חָכְמָה</b></div>
+  </div>
+  <blockquote dir="rtl">מַה שֶּׁמְקַבֶּלֶת מִן הַחֵית, שֶׁהִיא בְּחִינַת חָכְמָה</blockquote>
+  
+</article><article class="card" data-badge="overlap" data-proof="complete">
+  <header>
+    <span class="num">003</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_3:7</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חָכְמָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">שֶׁמֶשׁ</b></div>
+  </div>
+  <blockquote dir="rtl">שֶׁהִיא בְּחִינַת חָכְמָה, בְּחִינַת שֶׁמֶשׁ כַּנַּ&quot;ל</blockquote>
+  
+</article><article class="card" data-badge="overlap" data-proof="complete">
+  <header>
+    <span class="num">004</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_7:5</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יוסף</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">יעקב</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי יוֹסֵף הָיָה כָּלוּל בְּיוֹתֵר מִבְּחִינַת יַעֲקֹב, כְּמוֹ שֶׁכָּתוּב: אֵלֶּה תֹּלְדוֹת יַעֲקֹב־יוֹסֵף</blockquote>
+  
+</article><article class="card" data-badge="overlap" data-proof="context_dependent">
+  <header>
+    <span class="num">005</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_2:2</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יעקב</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חכמה</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת: וַיַּעַקְבֵנִי זֶה פַעֲמַיִם, וְתַרְגּוּם אוּנְקֵלוּס: וְחַכְּמַנִי</blockquote>
+  <p class="note"><b>Human review:</b> Verse+targum fragment identifies wisdom with Yaakov via וַיַּעַקְבֵנִי / וְחַכְּמַנִי, but יַעֲקֹב is not named in the stored proof line.</p>
+</article><article class="card" data-badge="overlap" data-proof="context_dependent">
+  <header>
+    <span class="num">006</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_7:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יעקב</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">השכל</b></div>
+  </div>
+  <blockquote dir="rtl">וְעַל כֵּן יַעֲקֹב, שֶׁהוּא בְּחִינַת הַשֵּׂכֶל כַּנַּ&quot;ל</blockquote>
+  <p class="note"><b>Human review:</b> יעקב named; השכל via כַּנַ״ל only.</p>
+</article><article class="card" data-badge="overlap" data-proof="complete">
+  <header>
+    <span class="num">007</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_4:9</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יצר הרע</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מלכות דסטרא אחרא</b></div>
+  </div>
+  <blockquote dir="rtl">וְיֵצֶר הָרָע נִקְרָא מֶלֶךְ זָקֵן וּכְסִיל, בְּחִינַת מַלְכוּת דְּסִטְרָא־אָחֳרָא</blockquote>
+  
+</article><article class="card" data-badge="overlap" data-proof="complete">
+  <header>
+    <span class="num">008</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_4:6</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יצר טוב</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מלכות</b></div>
+  </div>
+  <blockquote dir="rtl">כִּי הַיֵּצֶר טוֹב נִקְרָא מִסְכֵּן וְחָכָם, בְּחִינַת מַלְכוּת</blockquote>
+  
+</article><article class="card" data-badge="overlap" data-proof="complete">
+  <header>
+    <span class="num">009</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_3:5</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">לְבָנָה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַלְכוּת</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶהוּ בְּחִינַת מַלְכוּת, דְּלֵית לָהּ מִגַּרְמָהּ כְּלוּם, אֶלָּא מַה שֶּׁמְקַבֶּלֶת מִן הַחֵית</blockquote>
+  
+</article><article class="card" data-badge="overlap" data-proof="incomplete">
+  <header>
+    <span class="num">010</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag bad">Endpoint missing even on reading</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_4:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">מי שאינו מקשר עצמו אל השכל והחכמה והחיות שיש בכל דבר</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מלכות הרשעה</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת מַלְכוּת הָרְשָׁעָה</blockquote>
+  <p class="note"><b>Human review:</b> Proof is only וְזֶה בְּחִינַת מַלְכוּת הָרְשָׁעָה — the long source phrase about not binding to sekhel is absent.</p>
+</article><article class="card" data-badge="overlap" data-proof="complete">
+  <header>
+    <span class="num">011</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_4:4</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">מלכות הרשעה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">לבנה דסטרא אחרא</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת מַלְכוּת הָרְשָׁעָה, בְּחִינַת לְבָנָה דְּסִטְרָא אָחֳרָא, שֶׁעָלֶיהָ נֶאֱמַר: וְחָפְרָה הַלְּבָנָה וְכוּ&#x27;</blockquote>
+  
+</article><article class="card" data-badge="overlap" data-proof="complete">
+  <header>
+    <span class="num">012</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_3:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">נוּן</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מַלְכוּת</b></div>
+  </div>
+  <blockquote dir="rtl">בְּחִינַת נוּן שֶׁהוּא בְּחִינַת מַלְכוּת, כְּמוֹ שֶׁכָּתוּב: לִפְנֵי שֶׁמֶשׁ יִנּוֹן שְׁמוֹ, וּפֵרֵשׁ רַשִׁ&quot;י: לְשׁוֹן מַלְכוּת</blockquote>
+  
+</article><article class="card" data-badge="overlap" data-proof="complete">
+  <header>
+    <span class="num">013</span>
+    <span class="tag overlap">overlap</span>
+    <span class="tag ok">Both endpoints in proof (human)</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_2:1</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">ראשית</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חכמה</b></div>
+  </div>
+  <blockquote dir="rtl">שֶׁהוּא רֵאשִׁית, שֶׁהוּא בְּחִינַת חָכְמָה, כְּמוֹ שֶׁכָּתוּב: רֵאשִׁית חָכְמָה</blockquote>
+  
+</article></section>
+<section class="panel" id="flagged_manual"><article class="card" data-badge="flagged" data-proof="context_dependent">
+  <header>
+    <span class="num">001</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">bechina · neutral · presence · chunk 1_0_7 · occ:legacy:1382</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יוֹסֵף</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">יַעֲקֹב</b></div>
+  </div>
+  <blockquote dir="rtl">וְדַוְקָא יוֹסֵף הָיָה יָכוֹל לְבָרְכוֹ בְּחֵן, כִּי יוֹסֵף הָיָה כָּלוּל בְּיוֹתֵר מִבְּחִינַת יַעֲקֹב, כְּמוֹ שֶׁכָּתוּב (שָׁם ל&quot;ז): &quot;אֵלֶּה תֹּלְדוֹת יַעֲקֹב - יוֹסֵף&quot;; כִּי הוּא הָיָה עִקַּר תּוֹלְדוֹתָיו. כִּי יַעֲקֹב וְיוֹסֵף כְּחַדָּא חֲשִׁיבֵי,</blockquote>
+  <p class="note"><b>Human review:</b> Proof ends mid-thought (&#x27;כְּחַדָּא חֲשִׁיבֵי&#x27;) without stating the equation יעקב=יוסף in this span — though the surrounding manual gloss carries it.</p>
+</article><article class="card" data-badge="flagged" data-proof="incomplete">
+  <header>
+    <span class="num">002</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag bad">Endpoint missing even on reading</span>
+    <span class="meta">eitza · builds · presence · chunk 1_0_5 · occ:legacy:1195</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">שֵֹּכֶל</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חֵן</b></div>
+  </div>
+  <blockquote dir="rtl">וַאֲזַי מְקַבֶּלֶת הַמַּלְכוּת, שֶׁהִיא בְּחִינַת נ, חִיּוּת מִן הַחָכְמָה, שֶׁהִיא בְּחִינַת ח, וְנִתְחַבֵּר וְנִתְקַשֵּׁר הַח וְהַנ, וְנַעֲשֶׂה אוֹר הַלְּבָנָה כְּאוֹר הַחַמָּה: וּכְשֶׁזֶּה קָם, זֶה נוֹפֵל. וַאֲזַי נוֹפֵל וְנִתְבַּטֵּל מַלְכוּת הָרְשָׁעָה, כְּמוֹ שֶׁכָּתוּב (הוֹשֵׁעַ י&quot;ד): &quot;כִּי יְשָׁרִים דַּרְכֵי ה&#x27;, צַדִּיקִים יֵלְכוּ בָם, וּפֹשְׁעִים יִכָּשְׁלוּ בָם&quot;. הַיְנוּ עַל - יְדֵי דַּרְכֵי ה&#x27;, הַיְנוּ הַתּוֹרָה, עַל - יְדֵי - זֶה הַצַּדִּיקִים, שֶׁדְּבֵקִים בַּמַּלְכוּת דִּקְדֻשָּׁה, הֵם נִתְחַזְּקִים וּמְקַבְּלִים כֹּחַ עַל - יְדֵי - זֶה. &quot;וּפֹשְׁעִים יִכָּשְׁלוּ בָם&quot; בְּחִינַת מַלְכוּת הָרְשָׁעָה, בְּחִינַת הַיֵּצֶר הָרָע, שֶׁנּוֹפֵל וְנִכְנָע עַל - יְדֵי הַתּוֹרָה, כַּנַּ&quot;ל:</blockquote>
+  <p class="note"><b>Human review:</b> Stored src/tgt are שֵּׂכֶל→חֵן, but this proof span is about דַּרְכֵי ה׳/תּוֹרָה and מַלְכוּת הָרְשָׁעָה. Neither שֵּׂכֶל nor חֵן appear in the quote.</p>
+</article></section>
+<section class="panel" id="flagged_ai"><article class="card" data-badge="flagged" data-proof="context_dependent">
+  <header>
+    <span class="num">001</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_0:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">התורה</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חן על לומדיה</b></div>
+  </div>
+  <blockquote dir="rtl">שֶׁמַּעֲלָה חֵן עַל לוֹמְדֶיהָ (ערובין נד:)</blockquote>
+  <p class="note"><b>Human review:</b> Proof is only שֶׁמַּעֲלָה חֵן עַל לוֹמְדֶיהָ — חֵן is there, but הַתּוֹרָה is the prior sentence&#x27;s subject, not in this snippet.</p>
+</article><article class="card" data-badge="flagged" data-proof="context_dependent">
+  <header>
+    <span class="num">002</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_10:2</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יַעֲקֹב אִישׁ תָּם</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הַשֵּׂכֶל</b></div>
+  </div>
+  <blockquote dir="rtl">שֶׁהוּא בְּחִינַת הַשֵּׂכֶל כַּנַּ&quot;ל</blockquote>
+  <p class="note"><b>Human review:</b> Proof is שֶׁהוּא בְּחִינַת הַשֵּׂכֶל כַּנַ״ל — יַעֲקֹב אִישׁ תָּם is not in the quote.</p>
+</article><article class="card" data-badge="flagged" data-proof="context_dependent">
+  <header>
+    <span class="num">003</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_2:2</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יעקב</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חכמה</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת: וַיַּעַקְבֵנִי זֶה פַעֲמַיִם, וְתַרְגּוּם אוּנְקֵלוּס: וְחַכְּמַנִי</blockquote>
+  <p class="note"><b>Human review:</b> Verse+targum fragment identifies wisdom with Yaakov via וַיַּעַקְבֵנִי / וְחַכְּמַנִי, but יַעֲקֹב is not named in the stored proof line.</p>
+</article><article class="card" data-badge="flagged" data-proof="context_dependent">
+  <header>
+    <span class="num">004</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_2:4</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">שמש</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">אורח צדיקים כאור נוגה</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת: וְאֹרַח צַדִּיקִים כְּאוֹר נֹגַהּ הוֹלֵךְ וָאוֹר עַד נְכוֹן הַיּוֹם</blockquote>
+  <p class="note"><b>Human review:</b> Only the verse אֹרַח צַדִּיקִים… is quoted; שֶׁמֶשׁ is carried by כַּנַ״ל from the prior sentence.</p>
+</article><article class="card" data-badge="flagged" data-proof="context_dependent">
+  <header>
+    <span class="num">005</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_5:6</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">קִימַת מַלְכוּת דִּקְדֻשָּׁה (כְּשֶׁזֶּה קָם)</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">נוֹפֵל וְנִתְבַּטֵּל מַלְכוּת הָרְשָׁעָה</b></div>
+  </div>
+  <blockquote dir="rtl">וּכְשֶׁזֶּה קָם, זֶה נוֹפֵל, וַאֲזַי נוֹפֵל וְנִתְבַּטֵּל מַלְכוּת הָרְשָׁעָה</blockquote>
+  <p class="note"><b>Human review:</b> מַלְכוּת דִּקְדֻשָּׁה is only &#x27;זֶה קָם&#x27;; מַלְכוּת הָרְשָׁעָה is named on the fall side.</p>
+</article><article class="card" data-badge="flagged" data-proof="context_dependent">
+  <header>
+    <span class="num">006</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_6:0</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">חֵן</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">קבלת כל התפילות והבקשות</b></div>
+  </div>
+  <blockquote dir="rtl">וְעַל־יְדֵי־זֶה נִתְקַבְּלִים כָּל הַתְּפִלּוֹת וְהַבַּקָּשׁוֹת</blockquote>
+  <p class="note"><b>Human review:</b> תְּפִלּוֹת/בַּקָּשׁוֹת appear, but חֵן is only in the prior clause (&#x27;עַל יְדֵי זֶה&#x27;).</p>
+</article><article class="card" data-badge="flagged" data-proof="context_dependent">
+  <header>
+    <span class="num">007</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_7:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">יעקב</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">השכל</b></div>
+  </div>
+  <blockquote dir="rtl">וְעַל כֵּן יַעֲקֹב, שֶׁהוּא בְּחִינַת הַשֵּׂכֶל כַּנַּ&quot;ל</blockquote>
+  <p class="note"><b>Human review:</b> יעקב named; השכל via כַּנַ״ל only.</p>
+</article><article class="card" data-badge="flagged" data-proof="context_dependent">
+  <header>
+    <span class="num">008</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_7:7</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">בכור</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">השכל</b></div>
+  </div>
+  <blockquote dir="rtl">בְּכוֹר הוּא בְּחִינַת הַשֵּׂכֶל כַּנַּ&quot;ל</blockquote>
+  <p class="note"><b>Human review:</b> בְּכוֹר → השכל via כַּנַ״ל.</p>
+</article><article class="card" data-badge="flagged" data-proof="context_dependent">
+  <header>
+    <span class="num">009</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag warn">Needs surrounding sentence / כנ״ל</span>
+    <span class="meta">eitza · builds · presence · chunk ai · occ:ai:lm1_1_0_8:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">הַשֵּׂכֶל</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הִתְקָרְבוּת לְהַשֵּׁם יִתְבָּרַךְ</b></div>
+  </div>
+  <blockquote dir="rtl">וּמְקָרֵב אוֹתוֹ לְהַשֵּׁם יִתְבָּרַךְ</blockquote>
+  <p class="note"><b>Human review:</b> הַשֵּׁם יִתְבָּרַךְ is explicit on the target side; השכל is the unstated subject of מְקָרֵב.</p>
+</article><article class="card" data-badge="flagged" data-proof="incomplete">
+  <header>
+    <span class="num">010</span>
+    <span class="tag flagged">flagged</span>
+    <span class="tag bad">Endpoint missing even on reading</span>
+    <span class="meta">bechina · neutral · presence · chunk ai · occ:ai:lm1_1_0_4:3</span>
+  </header>
+  <div class="relation">
+    <div><b dir="rtl">מי שאינו מקשר עצמו אל השכל והחכמה והחיות שיש בכל דבר</b></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מלכות הרשעה</b></div>
+  </div>
+  <blockquote dir="rtl">וְזֶה בְּחִינַת מַלְכוּת הָרְשָׁעָה</blockquote>
+  <p class="note"><b>Human review:</b> Proof is only וְזֶה בְּחִינַת מַלְכוּת הָרְשָׁעָה — the long source phrase about not binding to sekhel is absent.</p>
+</article></section>
+<section class="panel" id="concepts"><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>אלת אהבם עלת חן</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>אר</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>אר גדל</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>ארח צדקם כאר נגה</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>את ח</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>את נ</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>דבר חן</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>הבכרה</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>הדר</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>החן</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>הכנעת הצר הרע</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>הצר הרע המתלבש עצמ במצת</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>התקרבת להשם תברך</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>התרה</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>חבר הנן החת</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>חן על למדה</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>חקקת מקם בלב המתבקש</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>לא חפץ כסל בתבנה</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>להסתכל על השכל שש בכל דבר</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>לשן חקקה רשמה</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>נחת</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>נתעלה החן החשבת של שראל</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>נתקבלם דבר</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>עלת החן החשבת של שראל</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>עלת חן</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>ענה דלה דלת לה מגרמה כלם</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>עקב אש תם</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>קבלת המלכת מן השכל</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>קבלת כל התפלת הבקשת</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>קמת מלכת דקדשה כשזה קם</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>שמת של הקדש ברך הא</code></p></article><article class="card"><header><span class="tag concept">AI surface not in manual set</span></header>
+<p><code>שר</code></p></article></section>
+<script>
+document.getElementById('tabs').addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-panel]');
+  if (!btn) return;
+  document.querySelectorAll('.tabs button').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === btn.dataset.panel));
+});
+</script>
+</main></body></html>

@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Torah Map — Independent AI Edge Sample Audit</title>
+<style>
+:root { color-scheme: dark; --bg:#12151c; --panel:#1b202a; --panel2:#242b37; --ink:#edf1f8; --muted:#a9b4c5; --line:#3b4658; --green:#5ee1a7; --amber:#f5c56b; --red:#ff817d; --blue:#88b8ff; }
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,sans-serif} main{max-width:1120px;margin:auto;padding:36px 20px 60px} h1{margin:0;font-size:clamp(27px,4vw,42px)} h2{margin-top:38px} .lead{color:var(--muted);max-width:850px;font-size:17px} .notice{background:#202936;border-left:4px solid var(--blue);padding:14px 16px;border-radius:6px;margin:22px 0} .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0} .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px} .stat strong{display:block;font-size:26px} .filters{position:sticky;top:0;background:#12151cf0;padding:12px 0;z-index:1;border-bottom:1px solid var(--line)} button{margin:3px;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:var(--panel2);color:var(--ink);cursor:pointer} button.on{outline:2px solid var(--blue)} .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:17px;margin:14px 0} .card header{display:flex;gap:8px;align-items:center;flex-wrap:wrap} .number{font-weight:800;color:var(--muted);width:26px} .tag{font-size:12px;font-weight:700;border-radius:999px;padding:2px 8px;text-transform:capitalize} .supported{background:#1b5c46;color:#d6ffe9} .weak{background:#664d1b;color:#fff0c9} .wrong{background:#682f32;color:#ffe0df} .clear{background:#214d70;color:#dceeff} .partial{background:#4b426c;color:#eee8ff} .unclear{background:#4a4a4d;color:#eee} .meta,footer{color:var(--muted);font-size:13px} .relation{display:grid;grid-template-columns:1fr 30px 1fr;gap:10px;align-items:center;margin-top:15px} .relation>div{background:var(--panel2);padding:10px;border-radius:8px;min-width:0} .relation b{font-size:18px;display:block} code{color:#b7d5ff;display:block;font-size:12px;overflow-wrap:anywhere} .relation p{color:var(--muted);font-size:13px;margin:5px 0 0} .arrow{font-size:28px;text-align:center;color:var(--green)} .raw{margin-top:12px;color:var(--muted)} .raw span{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.06em} blockquote{margin:12px 0;padding:12px 16px;border-right:4px solid var(--blue);background:#171d27;font-size:18px;line-height:1.8} .finding,.action{margin:10px 0} .action b{color:var(--green)} footer{border-top:1px solid var(--line);padding-top:9px;margin-top:13px} .hidden{display:none} @media(max-width:680px){.stats{grid-template-columns:1fr}.relation{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}}
+</style></head><body><main>
+<h1>Independent AI Edge Sample Audit</h1>
+<p class="lead">30 AI-only connections reviewed one by one against the exact stored proof quote and the current endpoint labels. This report is a small diagnostic sample, not an estimate of the full graph's accuracy.</p>
+<div class="notice"><b>Review standard.</b> <i>Supported</i> means the displayed proof itself states the relation in the stored direction/type. <i>Weak</i> means it may be true in surrounding context, but the stored proof omits an endpoint, uses an unresolved pronoun, or the endpoint overgeneralizes the text. <i>Wrong</i> means the proof's plain reading contradicts the stored causal/polarity encoding. <i>Clear / partial / unclear</i> evaluates whether a reader can understand both current endpoint labels, not whether the underlying teaching is important.</div>
+<div class="stats"><div class="stat"><strong>30</strong>AI-only edges</div><div class="stat"><strong>19 supported · 9 weak · 2 wrong</strong>proof support</div><div class="stat"><strong>12 clear · 14 partial · 4 unclear</strong>endpoint clarity</div></div>
+<h2>Method</h2><ul><li>Source population: 8,389 compiled edges marked AI-only in <code>ontology/graph/explorer_data.json</code>.</li><li>Sampling: deterministic FNV-1a ordering within five strata: 5 bechina, 5 equation, 8 eitza/builds/presence, 6 eitza/harms/presence, and 6 eitza/harms/absence.</li><li>Every row was matched back to its original <code>ontology/occurrences/ai_extracted/*.json</code> extraction record. No legacy proof or external interpretation was used to upgrade a weak proof.</li><li>Important limitation: a weak result is not a claim that the teaching is false—only that this stored evidence snippet cannot independently carry this graph assertion.</li></ul>
+<h2>Findings</h2><div class="filters"><b>Show:</b><button class="on" data-filter="all">all 30</button><button data-filter="supported">supported</button><button data-filter="weak">weak</button><button data-filter="wrong">wrong</button><button data-filter="clear">clear nodes</button><button data-filter="partial">partial nodes</button><button data-filter="unclear">unclear nodes</button></div>
+<article class="card" data-verdict="supported" data-clarity="partial">
+  <header><span class="number">01</span> <span class="tag supported">supported</span> <span class="tag partial">partial</span>
+    <span class="meta">bechina · neutral · presence · II:9</span></header>
+  <div class="relation"><div><b dir="rtl">רשעים</b><code>c:wicked</code><p>resha&#x27;im (the wicked) — the wicked identified as the aspect of efer (ashes), in contrast to holy dust/afar</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">עֵרֶב־רַב</b><code>p:4800</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">רְשָׁעִים → עֵרֶב־רַב</b></div>
+  <blockquote dir="rtl">גַּם יֵשׁ רְשָׁעִים שֶׁהֵם בְּחִינַת עֵרֶב־רַב</blockquote>
+  <p class="finding"><b>Finding:</b> The proof explicitly says that some wicked people are an aspect of the erev rav. The stored source gloss is stale/misleading (it mentions ashes), and the target has no English gloss.</p>
+  <p class="action"><b>Recommended action:</b> Keep the edge; repair the source gloss and add a target gloss.</p>
+  <footer>lm2_9_0_2.json · edge 3 · chunk 9_0_2</footer>
+</article><article class="card" data-verdict="supported" data-clarity="clear">
+  <header><span class="number">02</span> <span class="tag supported">supported</span> <span class="tag clear">clear</span>
+    <span class="meta">bechina · neutral · presence · I:31</span></header>
+  <div class="relation"><div><b dir="rtl">פני ה&#x27;</b><code>c:penei-hashem-face</code><p>penei Hashem — the &#x27;face of God&#x27; as symbol of Torah explanations and homiletic discourses, linked to the elder&#x27;s beard and the thirteen hermeneutical middot/tikkunei dikna</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">פנים</b><code>c:panim</code><p>face, countenance (panim, פָּנִים) — the frontal visage/presence, used as the kabbalistic aspect of revealed divine presence and illumination (as in &#x27;hiding of the face&#x27;, &#x27;the face of the land&#x27;), to which prayer, truth, wealth, and Torah explanations are likened; not פְּנִים &#x27;interior/inside&#x27;</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">פְּנֵי ה&#x27; → פָּנִים</b></div>
+  <blockquote dir="rtl">שֶׁאָז נִתְגַּלִּין פְּנֵי ה&#x27;, בְּחִינַת פָּנִים</blockquote>
+  <p class="finding"><b>Finding:</b> The phrase explicitly identifies the revelation of פני ה׳ with פנים. This is a narrow but real bechina link.</p>
+  <p class="action"><b>Recommended action:</b> Keep.</p>
+  <footer>lm1_31_9_2.json · edge 2 · chunk 31_9_2</footer>
+</article><article class="card" data-verdict="weak" data-clarity="unclear">
+  <header><span class="number">03</span> <span class="tag weak">weak</span> <span class="tag unclear">unclear</span>
+    <span class="meta">bechina · neutral · presence · I:277</span></header>
+  <div class="relation"><div><b dir="rtl">צֶדֶק לְפָנָיו יְהַלֵּךְ</b><code>p:1395</code><p>No English gloss stored.</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">צדק</b><code>c:noun-2</code><p>Tzedek — &#x27;righteousness/justice&#x27; (the noun צֶדֶק), used by Rabbi Nachman as a scriptural-kabbalistic term (e.g., &#x27;tzedek tedaberun&#x27;, &#x27;tzedek yikra&#x27;ehu le-raglo&#x27;) identified variously with Malkhut, garments, speech of Torah and prayer, and feet; not the verb צָדַק (&#x27;to be right&#x27;), not צְדָקָה (&#x27;charity&#x27;), and not the planet Jupiter</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">צֶדֶק לְפָנָיו יְהַלֵּךְ → צֶדֶק</b></div>
+  <blockquote dir="rtl">וְזֶה בְּחִינוֹת: צֶדֶק לְפָנָיו יְהַלֵּךְ</blockquote>
+  <p class="finding"><b>Finding:</b> The quote only introduces the verse phrase as a bechina; it does not say in the quoted span that the whole phrase is an aspect of the abstract node צדק. The source is a verse fragment, not a legible concept label.</p>
+  <p class="action"><b>Recommended action:</b> Keep only with a longer proof that states the intended correspondence, or demote to review.</p>
+  <footer>lm1_277_23_0.json · edge 0 · chunk 277_23_0</footer>
+</article><article class="card" data-verdict="supported" data-clarity="partial">
+  <header><span class="number">04</span> <span class="tag supported">supported</span> <span class="tag partial">partial</span>
+    <span class="meta">bechina · neutral · presence · I:59</span></header>
+  <div class="relation"><div><b dir="rtl">הֵיכָל</b><code>p:2449</code><p>No English gloss stored.</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">כבוד</b><code>c:kingship</code><p>Kavod (כָּבוֹד) — glory/honor, especially the Divine glory: identified with Malkhut (kingship), likened to fire, garments/externality, and light; the honor of Heaven that is elevated through humility and revealed through the supernal delight (not כָּבֵד &#x27;liver/heavy&#x27;)</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">הֵיכָל → הַכָּבוֹד</b></div>
+  <blockquote dir="rtl">וְהֵיכָל, זֶה בְּחִינַת הַכָּבוֹד שֶׁנִּתְכַּבֵּד הַשֵּׁם יִתְבָּרַךְ</blockquote>
+  <p class="finding"><b>Finding:</b> והיכל, זה בחינת הכבוד is an explicit aspect statement. The source is understandable in Hebrew but has no explanatory gloss.</p>
+  <p class="action"><b>Recommended action:</b> Keep; add a gloss for היכל in this usage.</p>
+  <footer>lm1_59_0_1.json · edge 1 · chunk 59_0_1</footer>
+</article><article class="card" data-verdict="supported" data-clarity="partial">
+  <header><span class="number">05</span> <span class="tag supported">supported</span> <span class="tag partial">partial</span>
+    <span class="meta">bechina · neutral · presence · I:234</span></header>
+  <div class="relation"><div><b dir="rtl">מחין דקטנות</b><code>c:mochin-3</code><p>mochin d&#x27;katnut — constricted/immature consciousness; the kabbalistic state of diminished mental faculties (mochin) associated with harsh judgments (dinim), confusion, forgetfulness, and spiritual sleep, opposite of mochin d&#x27;gadlut (expanded consciousness)</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">דינין</b><code>p:0574</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">מֹחִין דְּקַטְנוּת → דִּינִין</b></div>
+  <blockquote dir="rtl">כִּי מֹחִין דְּקַטְנוּת הֵם בְּחִינַת דִּינִין</blockquote>
+  <p class="finding"><b>Finding:</b> The proof directly says that mochin d&#x27;katnut are an aspect of dinim. The technical terms are valid, though the target is not glossed.</p>
+  <p class="action"><b>Recommended action:</b> Keep; gloss the target.</p>
+  <footer>lm1_234_6_0.json · edge 2 · chunk 234_6_0</footer>
+</article><article class="card" data-verdict="supported" data-clarity="clear">
+  <header><span class="number">06</span> <span class="tag supported">supported</span> <span class="tag clear">clear</span>
+    <span class="meta">equation · neutral · presence · I:286</span></header>
+  <div class="relation"><div><b dir="rtl">משפט</b><code>c:mishpat</code><p>judgment (mishpat) — the divine/personal attribute of judgment: weighing and judging one&#x27;s own deeds and affairs (self-judgment that averts judgment from above), identified with the middle pillar (amuda de-emtza&#x27;ita), Jacob, and Aaron; the sefirotic quality of balanced justice, paired with tzedakah</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מִשְׁפְּטֵי וְדִינֵי הַתּוֹרָה</b><code>p:1480</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">מִשְׁפָּט → מִשְׁפְּטֵי וְדִינֵי הַתּוֹרָה</b></div>
+  <blockquote dir="rtl">הַיְנוּ עַל־יְדֵי מִשְׁפָּט, שֶׁהוּא מִשְׁפְּטֵי וְדִינֵי הַתּוֹרָה</blockquote>
+  <p class="finding"><b>Finding:</b> The quote defines mishpat as the judgments and laws of the Torah. Equation is appropriate.</p>
+  <p class="action"><b>Recommended action:</b> Keep.</p>
+  <footer>lm1_286_3_0.json · edge 3 · chunk 286_3_0</footer>
+</article><article class="card" data-verdict="supported" data-clarity="partial">
+  <header><span class="number">07</span> <span class="tag supported">supported</span> <span class="tag partial">partial</span>
+    <span class="meta">equation · neutral · presence · I:62</span></header>
+  <div class="relation"><div><b dir="rtl">פרעה</b><code>c:par&#x27;oh</code><p>Pharaoh (Par&#x27;oh), the king of Egypt of the Exodus narrative — the proper name, homiletically expounded by Rabbi Nachman via the roots of nullification/disruption (tafri&#x27;u) and revelation (hitgalut) as a symbol for forces of emptiness (e.g., the Vacated Space, the imaginative faculty); not any common noun sharing the letters פרעה</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">אוֹתִיּוֹת עֹרֶף (מֵאֲחוֹרַיִם)</b><code>p:2873</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">פַּרְעֹה → אוֹתִיּוֹת עֹרֶף (מֵאֲחוֹרַיִם)</b></div>
+  <blockquote dir="rtl">שֶׁהוּא אוֹתִיּוֹת עֹרֶף, הַיְנוּ מֵאֲחוֹרַיִם</blockquote>
+  <p class="finding"><b>Finding:</b> The proof explicitly gives the letter-play: Pharaoh is the letters of oref/backwards. The target needs a user-facing gloss.</p>
+  <p class="action"><b>Recommended action:</b> Keep; gloss the wordplay target.</p>
+  <footer>lm1_62_5_2.json · edge 2 · chunk 62_5_2</footer>
+</article><article class="card" data-verdict="weak" data-clarity="clear">
+  <header><span class="number">08</span> <span class="tag weak">weak</span> <span class="tag clear">clear</span>
+    <span class="meta">equation · neutral · presence · I:38</span></header>
+  <div class="relation"><div><b dir="rtl">חמשת מוצאות הפה</b><code>c:chameshet-motza&#x27;ot-ha</code><p>the five articulation points of the mouth (chameshet motza&#x27;ot ha-peh) — the five phonetic organs (throat, palate, tongue, teeth, lips) from which all letters/speech issue, the physiological source of the power of speech</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">גבורות</b><code>c:plural-gevurah</code><p>Gevurot — the Kabbalistic &#x27;severities/mighty forces&#x27; (plural of Gevurah): the divine powers of judgment and constriction on the left side (side of Isaac/din), which manifest as forceful voice and thunder, as the five gevurot in da&#x27;at emerging as speech, and which require sweetening at their root</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">חמשת מוצאות הפה → הגבורות</b></div>
+  <blockquote dir="rtl">שֶׁהֵם הַגְּבוּרוֹת</blockquote>
+  <p class="finding"><b>Finding:</b> The proof is only שהם הגבורות (they are the gevurot). It does not name the five mouth articulation points, so the antecedent is outside the displayed proof.</p>
+  <p class="action"><b>Recommended action:</b> Extend the proof to include the antecedent, then keep as an equation.</p>
+  <footer>lm1_38_3_0.json · edge 5 · chunk 38_3_0</footer>
+</article><article class="card" data-verdict="supported" data-clarity="clear">
+  <header><span class="number">09</span> <span class="tag supported">supported</span> <span class="tag clear">clear</span>
+    <span class="meta">equation · neutral · presence · I:280</span></header>
+  <div class="relation"><div><b dir="rtl">משא ומתן</b><code>c:zevulun&#x27;s-going-out</code><p>Masa u&#x27;matan — business dealings / commerce, the worldly activity of buying, selling, and trade (Zevulun&#x27;s &#x27;going out&#x27;), which Rabbi Nachman homiletically re-reads as &#x27;carrying and giving&#x27; (lifting fallen sparks and returning them, the union of tzaddik and Knesset Yisrael); not physical burden-carrying or a prophetic &#x27;massa&#x27; (oracle)</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">תורה</b><code>c:noun-instruction</code><p>The Torah — God&#x27;s revealed teaching/law (the noun תּוֹרָה, &#x27;instruction&#x27;), encompassing Written and Oral Torah and its study (עסק התורה); identified with the Divine Name and with &#x27;zot ha-Torah adam&#x27; — not any other sense of the letters ת-ו-ר-ה</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">הַמַּשָּׂא וּמַתָּן → תּוֹרָה</b></div>
+  <blockquote dir="rtl">שֶׁכָּל הַמַּשָּׂא וּמַתָּן הוּא תּוֹרָה</blockquote>
+  <p class="finding"><b>Finding:</b> The sentence says that all business dealings are Torah. It directly supports the stored equation.</p>
+  <p class="action"><b>Recommended action:</b> Keep.</p>
+  <footer>lm1_280_2_0.json · edge 0 · chunk 280_2_0</footer>
+</article><article class="card" data-verdict="supported" data-clarity="unclear">
+  <header><span class="number">10</span> <span class="tag supported">supported</span> <span class="tag unclear">unclear</span>
+    <span class="meta">equation · neutral · presence · I:14</span></header>
+  <div class="relation"><div><b dir="rtl">מרבעתא</b><code>p:0385</code><p>No English gloss stored.</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">זווג</b><code>c:marital</code><p>zivug — coupling/union: the kabbalistic (and marital) act of pairing and uniting two entities (e.g., the supernal union of masculine and feminine aspects, the joining of souls or letters), from the root ז-ו-ג &#x27;to pair&#x27;</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">מרבעתא → זיווג</b></div>
+  <blockquote dir="rtl">מַרְבַּעְתָּא – לְשׁוֹן זִוּוּג</blockquote>
+  <p class="finding"><b>Finding:</b> The text explicitly glosses מרבעתא as a term for zivug. The relation is supported, but the source is opaque Aramaic and has no gloss for a reader.</p>
+  <p class="action"><b>Recommended action:</b> Keep; add a concise English explanation of מרבעתא.</p>
+  <footer>lm1_14_5_5.json · edge 1 · chunk 14_5_5</footer>
+</article><article class="card" data-verdict="wrong" data-clarity="partial">
+  <header><span class="number">11</span> <span class="tag wrong">wrong</span> <span class="tag partial">partial</span>
+    <span class="meta">eitza · builds · presence · I:31</span></header>
+  <div class="relation"><div><b dir="rtl">צדקה</b><code>c:mitzvah-charity</code><p>tzedakah — charitable giving; the act of giving money/alms to the poor or to the deserving (the mitzvah of charity, צְדָקָה), as a spiritual practice and rectification; not the abstract quality of righteousness (צֶדֶק) nor a proper name</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">עיכוב בדרך</b><code>p:1725</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">צדקה → עיכוב בדרך</b></div>
+  <blockquote dir="rtl">וְעַל כֵּן, עַל יְדֵי הַצְּדָקָה שֶׁנּוֹתֵן, יְבַטֵּל עִכּוּבוֹ שֶׁיֵּשׁ לוֹ בְּהַדֶּרֶךְ</blockquote>
+  <p class="finding"><b>Finding:</b> The proof says charity cancels/removes a delay on the road. The stored builds edge reads as charity producing the delay, so the target direction/polarity is wrong for this schema.</p>
+  <p class="action"><b>Recommended action:</b> Replace with a representation for removing/preventing the delay, or omit until that semantics is modeled.</p>
+  <footer>lm1_31_9_33.json · edge 2 · chunk 31_9_33</footer>
+</article><article class="card" data-verdict="weak" data-clarity="unclear">
+  <header><span class="number">12</span> <span class="tag weak">weak</span> <span class="tag unclear">unclear</span>
+    <span class="meta">eitza · builds · presence · I:56</span></header>
+  <div class="relation"><div><b dir="rtl">נשיאת הלב אל הידים</b><code>p:2527</code><p>No English gloss stored.</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">שמים</b><code>c:shamayim</code><p>the heavens / sky (shamayim), the celestial firmament — homiletically read in Likutey Moharan as the fusion of fire (esh) and water (mayim), hence signifying awe-and-love, Tiferet, the tzaddik, etc.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">נשיאת הלב אל הידים → שמים</b></div>
+  <blockquote dir="rtl">כִּי מִזֶּה נִזְדַּכֵּךְ הַשָּׁמַיִם</blockquote>
+  <p class="finding"><b>Finding:</b> מזה (from this) leaves the source outside the quote. The stored source, lifting the heart to the hands, is not textually visible in the proof.</p>
+  <p class="action"><b>Recommended action:</b> Extend the proof to name the source; otherwise flag as context-dependent.</p>
+  <footer>lm1_56_9_3.json · edge 6 · chunk 56_9_3</footer>
+</article><article class="card" data-verdict="supported" data-clarity="partial">
+  <header><span class="number">13</span> <span class="tag supported">supported</span> <span class="tag partial">partial</span>
+    <span class="meta">eitza · builds · presence · I:23</span></header>
+  <div class="relation"><div><b dir="rtl">אמת</b><code>c:emet</code><p>Truth (emet) — the divine attribute and spiritual quality of truthfulness/veracity, the aspect of Jacob (&#x27;titen emet le-Yaakov&#x27;), opposed to falsehood (sheker), through which one attains faith, blessing, and God&#x27;s indwelling presence</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">שֶׁפַע</b><code>p:1203</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">אֱמֶת → שֶׁפַע</b></div>
+  <blockquote dir="rtl">כִּי עִקַּר הַשֶּׁפַע נִמְשָׁךְ מֵאֱמֶת</blockquote>
+  <p class="finding"><b>Finding:</b> The proof directly says that the essential flow of abundance is drawn from truth. The target is a raw Hebrew phrase without a gloss.</p>
+  <p class="action"><b>Recommended action:</b> Keep; gloss shefa.</p>
+  <footer>lm1_23_5_17.json · edge 1 · chunk 23_5_17</footer>
+</article><article class="card" data-verdict="supported" data-clarity="partial">
+  <header><span class="number">14</span> <span class="tag supported">supported</span> <span class="tag partial">partial</span>
+    <span class="meta">eitza · builds · presence · I:9</span></header>
+  <div class="relation"><div><b dir="rtl">תפלה</b><code>c:tefillah-2</code><p>Prayer (tefillah, תְּפִלָּה) — the devotional act of addressing God in praise and petition, the &#x27;service of the heart&#x27; (standing worship / the Amidah&#x27;s eighteen blessings), identified with faith and the power to change nature; NOT the homograph tiflah (תִּפְלָה, &#x27;unseemliness/folly&#x27;) or tafel (&#x27;unseasoned&#x27;)</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חִיּוּת לְכָל שְׁלשָׁה חֶלְקֵי עוֹלָם</b><code>p:3566</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">תְּפִלָּה → חִיּוּת לְכָל שְׁלשָׁה חֶלְקֵי עוֹלָם</b></div>
+  <blockquote dir="rtl">כִּי עַל־יְדֵי תְּפִלָּתוֹ הָיָה מַשְׁפִּיעַ חִיּוּת לְכָל שְׁלשָׁה חֶלְקֵי עוֹלָם</blockquote>
+  <p class="finding"><b>Finding:</b> The proof explicitly says that through his prayer he influenced vitality to all three parts of the world. The output is clear in Hebrew but stored as an unglossed phrase node.</p>
+  <p class="action"><b>Recommended action:</b> Keep; give the phrase node an English gloss or consolidate it into a named concept.</p>
+  <footer>lm1_9_2_4.json · edge 1 · chunk 9_2_4</footer>
+</article><article class="card" data-verdict="weak" data-clarity="partial">
+  <header><span class="number">15</span> <span class="tag weak">weak</span> <span class="tag partial">partial</span>
+    <span class="meta">eitza · builds · presence · I:18</span></header>
+  <div class="relation"><div><b dir="rtl">עטרה</b><code>c:atarah</code><p>crown (atarah) — a royal diadem/coronet used as a symbolic aspect of honor and kingship (e.g., the crown of precious stones identified with compassion, and the crown made for the King from beautiful words)</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מִדַּת מַלְכוּת וּמַנְהִיג</b><code>p:0723</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">עֲטָרָה → מִדַּת מַלְכוּת וּמַנְהִיג</b></div>
+  <blockquote dir="rtl">שֶׁמְּעַטֵּר אוֹתָם בְּמִדַּת מַלְכוּת וּמַנְהִיג</blockquote>
+  <p class="finding"><b>Finding:</b> The proof says he crowns them with kingship and leadership, but does not name the source concept atarah. The relation relies on unquoted context/root-word interpretation.</p>
+  <p class="action"><b>Recommended action:</b> Use a proof that names atarah, or classify it as a contextual inference.</p>
+  <footer>lm1_18_2_4.json · edge 5 · chunk 18_2_4</footer>
+</article><article class="card" data-verdict="weak" data-clarity="unclear">
+  <header><span class="number">16</span> <span class="tag weak">weak</span> <span class="tag unclear">unclear</span>
+    <span class="meta">eitza · builds · presence · I:66</span></header>
+  <div class="relation"><div><b dir="rtl">פי שנים</b><code>c:pi-shenayim-2</code><p>the double portion (pi shenayim) of the firstborn&#x27;s birthright (Deut. 21:17), homiletically read as &#x27;two mouths&#x27; — prayer&#x27;s twofold speech comprising praise of the Omnipresent and petition for one&#x27;s needs, linked to the double-edged sword (cherev pifiyot)</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">עֻבְדּוֹת וּצְדָקוֹת יוֹתֵר מֵרַבּוֹ</b><code>p:2974</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">פִּי שְׁנַיִם → עֻבְדּוֹת וּצְדָקוֹת יוֹתֵר מֵרַבּוֹ</b></div>
+  <blockquote dir="rtl">וְיַעֲשֶׂה עֻבְדּוֹת וּצְדָקוֹת יוֹתֵר מֵרַבּוֹ</blockquote>
+  <p class="finding"><b>Finding:</b> The proof says that he will perform more deeds and charities than his teacher, but the source פי שנים is absent from the displayed quote.</p>
+  <p class="action"><b>Recommended action:</b> Extend the proof to include the double-portion clause.</p>
+  <footer>lm1_66_1_8.json · edge 3 · chunk 66_1_8</footer>
+</article><article class="card" data-verdict="supported" data-clarity="clear">
+  <header><span class="number">17</span> <span class="tag supported">supported</span> <span class="tag clear">clear</span>
+    <span class="meta">eitza · builds · presence · I:32</span></header>
+  <div class="relation"><div><b dir="rtl">שמחת הלב</b><code>c:simchat-ha-lev</code><p>joy of the heart (simchat ha-lev) — inner gladness seated in the heart itself, the heart&#x27;s rejoicing (as in &#x27;wine gladdens the heart of man&#x27;), which requires uprightness of heart and empowers prayer and dance</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">רִקּוּד</b><code>p:1751</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">שִׂמְחַת הַלֵּב → רִקּוּד</b></div>
+  <blockquote dir="rtl">שֶׁעַל־יְדֵי שִׂמְחַת הַלֵּב מְרַקְּדִין</blockquote>
+  <p class="finding"><b>Finding:</b> על ידי שמחת הלב מרקדין directly states that joy of the heart brings dancing.</p>
+  <p class="action"><b>Recommended action:</b> Keep.</p>
+  <footer>lm1_32_2_0.json · edge 7 · chunk 32_2_0</footer>
+</article><article class="card" data-verdict="supported" data-clarity="partial">
+  <header><span class="number">18</span> <span class="tag supported">supported</span> <span class="tag partial">partial</span>
+    <span class="meta">eitza · builds · presence · I:69</span></header>
+  <div class="relation"><div><b dir="rtl">ענפים</b><code>c:anafim-branches-wife</code><p>anafim — &#x27;branches&#x27; of the wife&#x27;s soul-tree: the sparkling and spreading of her soul&#x27;s light, symbolizing the money allotted to a man with his spouse</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">פֵּרוֹת</b><code>p:3095</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">עֲנָפִים → פֵּרוֹת</b></div>
+  <blockquote dir="rtl">וְהָעֲנָפִים עוֹשִׂים פֵּרוֹת</blockquote>
+  <p class="finding"><b>Finding:</b> The sentence directly says that branches make fruit. It is clear literally, though this node&#x27;s fuller symbolic meaning is not visible in the endpoint label.</p>
+  <p class="action"><b>Recommended action:</b> Keep; improve the contextual gloss if this is a symbolic branch concept.</p>
+  <footer>lm1_69_0_13.json · edge 4 · chunk 69_0_13</footer>
+</article><article class="card" data-verdict="supported" data-clarity="clear">
+  <header><span class="number">19</span> <span class="tag supported">supported</span> <span class="tag clear">clear</span>
+    <span class="meta">eitza · harms · presence · I:74</span></header>
+  <div class="relation"><div><b dir="rtl">מחין דקטנות</b><code>c:mochin-3</code><p>mochin d&#x27;katnut — constricted/immature consciousness; the kabbalistic state of diminished mental faculties (mochin) associated with harsh judgments (dinim), confusion, forgetfulness, and spiritual sleep, opposite of mochin d&#x27;gadlut (expanded consciousness)</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">דין</b><code>c:gevurah</code><p>din — divine judgment/severity: the kabbalistic attribute of strict judgment (Gevurah), the constricting harsh force opposed to mercy (rachamim/chesed), associated with the name Elohim, Malkhut, and Isaac (not a courtroom lawsuit, legal ruling, or the verb &#x27;to judge&#x27;)</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">מֹחִין דְּקַטְנוּת → דִּין</b></div>
+  <blockquote dir="rtl">וּלְהַמְתִּיק הַדִּין שֶׁבָּא מִבְּחִינַת מֹחִין דְּקַטְנוּת</blockquote>
+  <p class="finding"><b>Finding:</b> The proof says that the din comes from mochin d&#x27;katnut. This supports a harms/presence causal edge.</p>
+  <p class="action"><b>Recommended action:</b> Keep.</p>
+  <footer>lm1_74_0_12.json · edge 2 · chunk 74_0_12</footer>
+</article><article class="card" data-verdict="wrong" data-clarity="clear">
+  <header><span class="number">20</span> <span class="tag wrong">wrong</span> <span class="tag clear">clear</span>
+    <span class="meta">eitza · harms · presence · I:7</span></header>
+  <div class="relation"><div><b dir="rtl">ציצית</b><code>c:tekhelet-blue-thread</code><p>tzitzit — the ritual fringes (with the tekhelet blue thread) worn on a four-cornered garment per Numbers 15, which in Likutey Moharan function as the aspect of guarding the eyes/covenant, protection from adultery and the serpent&#x27;s counsel, and the aspect of tzimtzum/encompassing lights</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">עֲרָיוֹת</b><code>p:0807</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">ציצית → עריות</b></div>
+  <blockquote dir="rtl">כִּי צִיצִית מְכַסָּה עַל עֲרָיִין</blockquote>
+  <p class="finding"><b>Finding:</b> ציצית מכסה על עריות says tzitzit protects/covers against forbidden relations; it does not say tzitzit produces or damages them. The harms/presence encoding reverses the ordinary reading.</p>
+  <p class="action"><b>Recommended action:</b> Do not store this as a harms edge from tzitzit to arayot; model prevention explicitly or retain it only as quoted evidence.</p>
+  <footer>lm1_7_4_0.json · edge 5 · chunk 7_4_0</footer>
+</article><article class="card" data-verdict="supported" data-clarity="clear">
+  <header><span class="number">21</span> <span class="tag supported">supported</span> <span class="tag clear">clear</span>
+    <span class="meta">eitza · harms · presence · I:72</span></header>
+  <div class="relation"><div><b dir="rtl">יצר הרע</b><code>c:yetzer-hara</code><p>the Evil Inclination (yetzer hara) — the personified inner drive toward evil that entices a person to sin (opposed to the yetzer tov), identified in Likutey Moharan with strict judgment, folly (&#x27;the old and foolish king&#x27;), and the kingdom of the Sitra Achra</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חשק</b><code>c:cheshek-intense-desire</code><p>cheshek — intense desire/yearning, the longing that all obstacles exist to intensify and that forms the vowel-points bringing potential into actuality</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">יֵּצֶר הָרָע → חִשְׁק</b></div>
+  <blockquote dir="rtl">מִתְגַּבֵּר עָלָיו הַיֵּצֶר הָרָע עוֹד יוֹתֵר, וְאוֹבֵד כָּל חִשְׁקוֹ</blockquote>
+  <p class="finding"><b>Finding:</b> The proof says the evil inclination intensifies and the person loses all desire. It supports a harmful effect, though a loss-of-desire endpoint would make the negative effect more explicit.</p>
+  <p class="action"><b>Recommended action:</b> Keep, but consider naming the target as loss of cheshek rather than cheshek itself.</p>
+  <footer>lm1_72_0_0.json · edge 2 · chunk 72_0_0</footer>
+</article><article class="card" data-verdict="weak" data-clarity="partial">
+  <header><span class="number">22</span> <span class="tag weak">weak</span> <span class="tag partial">partial</span>
+    <span class="meta">eitza · harms · presence · I:95</span></header>
+  <div class="relation"><div><b dir="rtl">פה</b><code>c:peh-2</code><p>the mouth (peh) — the bodily/spiritual organ of speech, as in the mouth formed through clapping the palms and the mouth that &#x27;speaks wisdom&#x27; (Ps. 49:4); not the adverb פֹּה (&#x27;here&#x27;)</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">בִּזּוּי</b><code>p:3544</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">פֶּה → בִּזּוּי</b></div>
+  <blockquote dir="rtl">הַיְנוּ שֶׁבְּנֵי אָדָם פּוֹתְחִים אֶת פִּיהֶם וְאוֹמְרִים: חֲזֹר לַאֲחוֹרֶיךָ, וּמְבַזִּים אוֹתוֹ</blockquote>
+  <p class="finding"><b>Finding:</b> The proof describes people opening their mouths and insulting him. It supports a concrete act of verbal contempt, but the generic node פה overgeneralizes that act into &#x27;mouth causes contempt.&#x27;</p>
+  <p class="action"><b>Recommended action:</b> Use an endpoint/source such as insulting speech, or retain only with a more precise concept label.</p>
+  <footer>lm1_95_2_0.json · edge 2 · chunk 95_2_0</footer>
+</article><article class="card" data-verdict="weak" data-clarity="clear">
+  <header><span class="number">23</span> <span class="tag weak">weak</span> <span class="tag clear">clear</span>
+    <span class="meta">eitza · harms · presence · I:38</span></header>
+  <div class="relation"><div><b dir="rtl">קץ כל בשר</b><code>c:ketz-kol-basar</code><p>&quot;the end of all flesh&quot; (ketz kol basar, Genesis 6:13) — the destructive force / great accuser that brings an end to all flesh, identified in Likutey Moharan 38 with the stormy wind (ruach se&#x27;arah), the serpent&#x27;s contamination, and &quot;after the things,&quot; which sucks vitality from unrectified speech</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">דין</b><code>c:gevurah</code><p>din — divine judgment/severity: the kabbalistic attribute of strict judgment (Gevurah), the constricting harsh force opposed to mercy (rachamim/chesed), associated with the name Elohim, Malkhut, and Isaac (not a courtroom lawsuit, legal ruling, or the verb &#x27;to judge&#x27;)</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">קץ כל בשר → דין</b></div>
+  <blockquote dir="rtl">וּלְעוֹרֵר דִּין</blockquote>
+  <p class="finding"><b>Finding:</b> ולעורר דין is an infinitive fragment (&#x27;to arouse judgment&#x27;) and does not name קץ כל בשר. The source is supplied by omitted context.</p>
+  <p class="action"><b>Recommended action:</b> Extend the quote to include the source clause.</p>
+  <footer>lm1_38_2_1.json · edge 7 · chunk 38_2_1</footer>
+</article><article class="card" data-verdict="weak" data-clarity="clear">
+  <header><span class="number">24</span> <span class="tag weak">weak</span> <span class="tag clear">clear</span>
+    <span class="meta">eitza · harms · presence · I:23</span></header>
+  <div class="relation"><div><b dir="rtl">תאות ממון</b><code>c:lust-money</code><p>the lust for money itself</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">רְדִיפָה אַחַר מוֹתָרוֹת</b><code>p:1218</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">תַּאֲווֹת מָמוֹן → רְדִיפָה אַחַר מוֹתָרוֹת</b></div>
+  <blockquote dir="rtl">וְיָמָיו כָּלִים בִּרְדִיפָה אַחַר מוֹתָרוֹת</blockquote>
+  <p class="finding"><b>Finding:</b> The quote says that his days are consumed pursuing luxuries, but it does not mention lust for money. The asserted source is outside the proof span.</p>
+  <p class="action"><b>Recommended action:</b> Extend the proof to include the money-lust antecedent.</p>
+  <footer>lm1_23_5_6.json · edge 2 · chunk 23_5_6</footer>
+</article><article class="card" data-verdict="supported" data-clarity="clear">
+  <header><span class="number">25</span> <span class="tag supported">supported</span> <span class="tag clear">clear</span>
+    <span class="meta">eitza · harms · absence · I:60</span></header>
+  <div class="relation"><div><b dir="rtl">אכילה בקדשה</b><code>c:akhilah-bi-kedushah</code><p>eating in holiness (akhilah bi-kedushah) — the spiritual practice of consuming food in sanctity and fear of Heaven, which sweetens daily suffering and harsh judgments and elevates the mouth from an animal state to the stature of Adam</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">פָּנָיו הַיְנוּ הַשֵּׂכֶל</b><code>p:2752</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">אֲכִילָה בִּקְדֻשָּׁה → פָּנָיו הַיְנוּ הַשֵּׂכֶל</b></div>
+  <blockquote dir="rtl">אֲבָל כְּשֶׁאֵין אֲכִילָתוֹ בִּקְדֻשָּׁה, אֲזַי אוֹבֵד פָּנָיו, הַיְנוּ הַשֵּׂכֶל</blockquote>
+  <p class="finding"><b>Finding:</b> The proof explicitly says that when eating is not holy, one loses one&#x27;s face, namely intellect. It matches harms/absence exactly.</p>
+  <p class="action"><b>Recommended action:</b> Keep.</p>
+  <footer>lm1_60_6_1.json · edge 4 · chunk 60_6_1</footer>
+</article><article class="card" data-verdict="supported" data-clarity="partial">
+  <header><span class="number">26</span> <span class="tag supported">supported</span> <span class="tag partial">partial</span>
+    <span class="meta">eitza · harms · absence · I:24</span></header>
+  <div class="relation"><div><b dir="rtl">הַמְעַכֵּב</b><code>p:1270</code><p>No English gloss stored.</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">מחין</b><code>c:chochmah-binah-daat</code><p>Mochin — the kabbalistic &#x27;brains&#x27;: the supernal intellective faculties (Chochmah-Binah-Daat consciousness) that descend into and illuminate the mind, as in &#x27;mochin de-gadlut&#x27;; the plural Aramaic/mystical term for the mental lights, not the anatomical brain per se nor any other homograph</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">הַמְעַכֵּב → הַמֹּחִין</b></div>
+  <blockquote dir="rtl">כִּי אִם לֹא הָיָה הַמְעַכֵּב הַנַּ&quot;ל כְּלָל... הָיוּ מִתְבַּטְּלִין הַמֹּחִין לְגַמְרֵי</blockquote>
+  <p class="finding"><b>Finding:</b> The proof explicitly says that without the restraining force, the mochin would be entirely annulled. The source is a technical phrase node without a helpful gloss.</p>
+  <p class="action"><b>Recommended action:</b> Keep; add a plain-language gloss for the restraining force.</p>
+  <footer>lm1_24_8_4.json · edge 3 · chunk 24_8_4</footer>
+</article><article class="card" data-verdict="supported" data-clarity="clear">
+  <header><span class="number">27</span> <span class="tag supported">supported</span> <span class="tag clear">clear</span>
+    <span class="meta">eitza · harms · absence · I:31</span></header>
+  <div class="relation"><div><b dir="rtl">נקדות</b><code>c:nekudot-4</code><p>vowel points (nekudot) — the Hebrew vocalization marks that animate and combine the letters, serving as the letters&#x27; soul/vitality (as opposed to dots in general, drops, or the verb &#x27;to punctuate&#x27;)</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הָאוֹתִיּוֹת כְּגֹלֶם וְאֵין לָהֶם שׁוּם תְּנוּעָה וְחִיּוּת</b><code>p:1739</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">נְקֻדּוֹת → הָאוֹתִיּוֹת כְּגֹלֶם וְאֵין לָהֶם שׁוּם תְּנוּעָה וְחִיּוּת</b></div>
+  <blockquote dir="rtl">וּבְלִי הַנְּקֻדּוֹת הֵם כְּגֹלֶם, וְאֵין לָהֶם שׁוּם תְּנוּעָה וְחִיּוּת</blockquote>
+  <p class="finding"><b>Finding:</b> Without vowel points, the letters are like a golem with no motion or life. This directly matches harms/absence.</p>
+  <p class="action"><b>Recommended action:</b> Keep.</p>
+  <footer>lm1_31_9_7.json · edge 6 · chunk 31_9_7</footer>
+</article><article class="card" data-verdict="weak" data-clarity="partial">
+  <header><span class="number">28</span> <span class="tag weak">weak</span> <span class="tag partial">partial</span>
+    <span class="meta">eitza · harms · absence · I:152</span></header>
+  <div class="relation"><div><b dir="rtl">אמונה</b><code>c:emunah-2</code><p>Faith (emunah) — the noun אֱמוּנָה: belief/trust in God and His providence, the spiritual faculty of faith (identified in Likutey Moharan with prayer, malchut, the Land of Israel, Shabbat, and the rectified imagination); not אֻמָּנוּת (craft), אָמְנָה (pact), or אֹמְנָה (nurture/guardianship) as independent senses — even where the &#x27;omen/nurturing&#x27; etymology (וַיְהִי אֹמֵן אֶת הֲדַסָּה) is cited, it is invoked as an aspect of emunah itself</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">הִתְקָרְבוּת אֶל שָׁרְשָׁם</b><code>p:0468</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">אֱמוּנָה → הִתְקָרְבוּת אֶל שָׁרְשָׁם</b></div>
+  <blockquote dir="rtl">וַאֲזַי אֵין יְכוֹלִין לִכְנֹס, דְּהַיְנוּ לְהִתְקָרֵב אֶל שָׁרְשָׁם</blockquote>
+  <p class="finding"><b>Finding:</b> The quote says &#x27;then they cannot enter/approach their root,&#x27; but does not name emunah or its lack. The causal attribution depends on prior context.</p>
+  <p class="action"><b>Recommended action:</b> Extend the proof to include the faith clause.</p>
+  <footer>lm1_152_1_0.json · edge 1 · chunk 152_1_0</footer>
+</article><article class="card" data-verdict="supported" data-clarity="partial">
+  <header><span class="number">29</span> <span class="tag supported">supported</span> <span class="tag partial">partial</span>
+    <span class="meta">eitza · harms · absence · I:18</span></header>
+  <div class="relation"><div><b dir="rtl">אמונה</b><code>c:emunah-2</code><p>Faith (emunah) — the noun אֱמוּנָה: belief/trust in God and His providence, the spiritual faculty of faith (identified in Likutey Moharan with prayer, malchut, the Land of Israel, Shabbat, and the rectified imagination); not אֻמָּנוּת (craft), אָמְנָה (pact), or אֹמְנָה (nurture/guardianship) as independent senses — even where the &#x27;omen/nurturing&#x27; etymology (וַיְהִי אֹמֵן אֶת הֲדַסָּה) is cited, it is invoked as an aspect of emunah itself</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">חרון־אף והסתרתו</b><code>p:0720</code><p>No English gloss stored.</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">אמונה → חרון־אף והסתרתו</b></div>
+  <blockquote dir="rtl">אָז גַּם כֵּן הַחֲרוֹן־אַף וְהַסְתָּרָתוֹ לְפִי הִתְמַעֲטוּת הָאֱמוּנָה</blockquote>
+  <p class="finding"><b>Finding:</b> The proof explicitly relates wrath and concealment to the diminution of faith, matching a harms/absence edge. The target is a bundled phrase without an English gloss.</p>
+  <p class="action"><b>Recommended action:</b> Keep; gloss or split the bundled effect if queries need the two outcomes separately.</p>
+  <footer>lm1_18_2_2.json · edge 6 · chunk 18_2_2</footer>
+</article><article class="card" data-verdict="supported" data-clarity="partial">
+  <header><span class="number">30</span> <span class="tag supported">supported</span> <span class="tag partial">partial</span>
+    <span class="meta">eitza · harms · absence · I:67</span></header>
+  <div class="relation"><div><b dir="rtl">כבוד</b><code>c:kingship</code><p>Kavod (כָּבוֹד) — glory/honor, especially the Divine glory: identified with Malkhut (kingship), likened to fire, garments/externality, and light; the honor of Heaven that is elevated through humility and revealed through the supernal delight (not כָּבֵד &#x27;liver/heavy&#x27;)</p></div>
+    <div class="arrow">→</div>
+    <div><b dir="rtl">נפש</b><code>c:nefesh</code><p>soul (nefesh) — the animating life-force/soul of a person, lowest of the triad nefesh–ruach–neshamah; includes plural nefashot (souls); not to be confused with any other reading of the letters נפש</p></div></div>
+  <div class="raw"><span>Extracted as</span><b dir="rtl">כבוד → נפש</b></div>
+  <blockquote dir="rtl">שֶׁהָיְתָה עֲיֵפָה עַל־יְדֵי שֶׁנִּתְרַחֲקָה מִן הַכָּבוֹד</blockquote>
+  <p class="finding"><b>Finding:</b> The proof says that the nefesh became weary through separation from kavod. It supports the absence relation, but the node id c:kingship is misleading for a Hebrew label of kavod.</p>
+  <p class="action"><b>Recommended action:</b> Keep the claim; rename/alias the node id so it does not read as a different concept.</p>
+  <footer>lm1_67_8_4.json · edge 3 · chunk 67_8_4</footer>
+</article>
+</main><script>
+const buttons=[...document.querySelectorAll('button')], cards=[...document.querySelectorAll('.card')];
+buttons.forEach(button=>button.onclick=()=>{const filter=button.dataset.filter;buttons.forEach(item=>item.classList.toggle('on',item===button));cards.forEach(card=>card.classList.toggle('hidden',filter!=='all'&&card.dataset.verdict!==filter&&card.dataset.clarity!==filter));});
+</script></body></html>
